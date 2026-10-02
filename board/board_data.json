@@ -405,6 +405,17 @@
    "auto": true,
    "pos": "A secret never sits in a step. Where a step needs one, Your Steps makes it on your device and stores nothing.",
    "why": "The steps database is readable by anyone the page is shared with. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
+  },
+  {
+   "id": "q-no-bundled-permission",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "daemon test",
+   "auto": true,
+   "pos": "A question never asks you, in the same answer, to approve a change and to lift a permission check that refused it. Each one is its own decision.",
+   "why": "Four of the daemon reads flagged this in pass five's migration question, whatever happens to the feature. Source: .specify/specs/daemon-subagents/spec.md, result section (six-faces-council, branch feature/daemon-subagents)"
   }
  ],
  "questions": [
@@ -568,6 +579,38 @@
      "v": "no",
      "label": "No, keep it a step",
      "c": "Step seven stays, and each future migration is a step on your list that needs a computer."
+    }
+   ]
+  },
+  {
+   "id": "daemon-subagents-purpose",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "q": "What are the daemon subagents for? I built them to read the council's own arguments, and they failed the test I set before running them: neither position you later reversed got flagged.",
+   "why_you": "Your ask was one line, and the record does not say what the subagents should do. The test suggests my reading was the wrong one. Your list also named six daemons and the Player but not the Emotional Body; say in the steer box if you left it out on purpose.",
+   "not_before": "The test ran tonight. Before it, the council's reading of your ask looked settled.",
+   "options": [
+    {
+     "v": "read-the-council",
+     "label": "Read the council's arguments, and retest",
+     "c": "Keep the design. Its strongest signal was five daemons flagging the caution you then overrode on flirtcraft. The next three passes become the new test, with the pass mark set before each one."
+    },
+    {
+     "v": "help-a-face-draft",
+     "label": "Help each face while it drafts",
+     "c": "Before a face argues, it reads its own daemon cells and names which one is near. This prevents rather than audits, and it costs no extra subagents per pass."
+    },
+    {
+     "v": "play-the-daemons",
+     "label": "Play the daemons for a person",
+     "c": "Subagents that voice a player's daemons, for your products such as bars-engine's daemon pages or friendcraft's read deck, instead of for the council."
+    },
+    {
+     "v": "stop",
+     "label": "Stop here",
+     "c": "The agent files stay on their branch and nothing else changes."
     }
    ]
   }

@@ -1,0 +1,39 @@
+{
+  "id": "2026-10-02-six-faces-council-daemon-subagents-falsify",
+  "date": "2026-10-02",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Subagents for the six faces, based on the daemons (Wendell: 'Protector controller skeptic fixer victim damaged self and player')",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": ".specify/specs/daemon-subagents/spec.md",
+  "pipeline_stage": "falsify",
+  "falsification_test": {
+    "pass_mark": "each of two later-reversed positions flagged by at least one daemon; stood positions flagged less often",
+    "result": "failed",
+    "flagged_reversed": 0,
+    "of_reversed": 2
+  },
+  "unregistered_signals": [
+    "five of seven daemons flagged the Shaman's caution in flirtcraft pass one, which Wendell then overrode with merge-now",
+    "four reads flagged pass five's question for bundling a permission lift with a decision"
+  ],
+  "positions": {
+    "q-no-bundled-permission": "council"
+  },
+  "questions": {
+    "daemon-subagents-purpose": {
+      "options": [
+        "read-the-council",
+        "help-a-face-draft",
+        "play-the-daemons",
+        "stop"
+      ],
+      "choice": null
+    }
+  },
+  "built": [
+    ".claude/agents/daemon-*.md (eight files) on branch feature/daemon-subagents, unmerged"
+  ],
+  "outcome": "stopped at falsify; unruled"
+}
