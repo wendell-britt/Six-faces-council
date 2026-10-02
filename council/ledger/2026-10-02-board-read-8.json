@@ -1,0 +1,46 @@
+{
+  "id": "2026-10-02-six-faces-council-board-read-8",
+  "date": "2026-10-02",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Pass five's pipeline positions, and whether flirtcraft's production builds create the tables themselves.",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "fc-migrate-on-deploy": {
+      "choice": "yes",
+      "saved_at": "2026-10-02T23:16:53Z"
+    }
+  },
+  "positions": {
+    "fc-no-secret-in-chat": "stands",
+    "pipe-stages": "stands",
+    "pipe-three-outputs": "stands",
+    "pipe-step-test": "stands",
+    "pipe-ship": "stands",
+    "pipe-forward-only": "stands",
+    "pipe-no-secrets": "stands",
+    "pipe-steps-page": "overrule"
+  },
+  "overruled": [
+    "pipe-steps-page"
+  ],
+  "steers": {
+    "pipe-steps-page": "I think a tab on this board is quite useful "
+  },
+  "lessons": {
+    "architect": {
+      "wendell": "I think a tab on this board is quite useful",
+      "lesson": "One place to look beats separating surfaces by the rhythm of use. Steps live on the board as a tab; the Diplomat's dissent was right.",
+      "source": "pass five, position pipe-steps-page, overruled at board read 8",
+      "folded_into": "council/faces.yaml architect.lessons"
+    }
+  },
+  "acted_on": [
+    "Opened wendell-britt/flirtcraft#6: production builds apply pending migrations; tested in seven cases against PostgreSQL 16",
+    "Added a Your steps tab to the board; the flirtcraft database list copied into the board's store",
+    "The separate Your Steps page now points to the board tab; it is not deleted",
+    "council/pipeline.yaml, the hook rule, both skill copies and the README name the board tab as the place for steps"
+  ]
+}

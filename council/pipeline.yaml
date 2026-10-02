@@ -26,10 +26,10 @@ templates: council/spec-kit/            # spec.md, plan.md, tasks.md, synced fro
 # Three typed outputs, kept apart. A pass never mixes them.
 outputs:
   questions: the Council Board, https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
-  steps: Your Steps, the checklist page named in steps_page below
+  steps: the Your steps tab on the same board, named in steps_page below
   product: a pull request per feature, on its own branch
 
-steps_page: https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS
+steps_page: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps   # the Your steps tab; Wendell overruled a separate page at board read 8
 
 # The reach test, applied to actions. A step goes to Wendell's checklist only if he is the only one
 # who can do it: his accounts, his money, his name, his eyes on the result, or a permission he holds.
@@ -73,7 +73,7 @@ stages:
     produces: plan.md and tasks.md, every task tagged [claude] or [wendell]
     gate: >
       Every [wendell] task passes step_test and has the full step_shape. Those tasks are published to
-      the steps page as one list for the feature before any build starts that depends on them.
+      the steps tab as one list for the feature before any build starts that depends on them.
 
   - id: build
     owners: [architect]
@@ -85,7 +85,7 @@ stages:
     produces: the definition of done, checked; a walk-through for a person where the feature has one
     gate: >
       The falsification test passed. Any check only Wendell can make (his account, his eyes) is a
-      list on the steps page, and the feature is not done until he ticks it.
+      list on the steps tab, and the feature is not done until he ticks it.
 
   - id: ship
     owners: [regent]

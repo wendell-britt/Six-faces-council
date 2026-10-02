@@ -1006,6 +1006,46 @@
     "decision": "stands",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
+   },
+   "fc-no-secret-in-chat": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "pipe-stages": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "pipe-three-outputs": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "pipe-step-test": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "pipe-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "pipe-forward-only": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "pipe-no-secrets": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "pipe-steps-page": {
+    "decision": "overrule",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
    }
   },
   "questions": {
@@ -1038,6 +1078,12 @@
     "label": "A second database of its own",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
+   },
+   "fc-migrate-on-deploy": {
+    "decision": "yes",
+    "label": "Yes, production builds migrate (flirtcraft #6)",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
    }
   },
   "causes": {
@@ -1170,6 +1216,11 @@
    "text": "Do research on the developmental levels the faces are built off of. Spiral dynamics and integral theory and see if there are any projects that also use agents in this way",
    "savedAt": "2026-10-02T16:20:19.620Z",
    "record": "ledger/2026-10-02-board-read-1.json"
+  },
+  {
+   "text": "On pipe-steps-page: I think a tab on this board is quite useful",
+   "savedAt": "2026-10-02T23:17:32.159Z",
+   "record": "council/ledger/2026-10-02-board-read-8.json"
   }
  ],
  "steer_recorded_through": "2026-10-02T16:20:19.620Z"

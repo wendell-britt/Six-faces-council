@@ -89,7 +89,11 @@ faces:
     delivers: [observations, risks, recommendations, structure]
     sees: testing, evidence, achievement, mechanism
     agreeableness: neutral
-    lessons: []
+    lessons:
+      - date: 2026-10-02
+        source: council/passes/6FACE_PASS5_2026-10-02.md, position pipe-steps-page, overruled at board read 8
+        wendell: I think a tab on this board is quite useful
+        lesson: One place to look beats separating surfaces by the rhythm of use. The Diplomat's dissent was right.
 
   challenger:
     altitude: red

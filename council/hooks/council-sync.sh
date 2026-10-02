@@ -27,7 +27,7 @@ origin="$(git config --get remote.origin.url 2>/dev/null | sed -E 's#^.*github\.
 rule="Standing rule: before you ask Wendell a question whose answer changes what gets built, run it through the six-faces reach test (skill six-faces). Answer it from the record if you can. A question that survives goes to the council board with options, and the chat reply says it is there."
 # The feature pipeline (council/pipeline.yaml), asked for by Wendell on 2026-10-02: "Things that need
 # building should go through a production pipeline managed by the 6 faces".
-pipeline_rule="Standing rule: a new feature starts as a spec kit in .specify/specs/<name>/ from council/spec-kit/ and runs the six-faces pipeline in council/pipeline.yaml. A step only Wendell can take goes on his Your Steps list (https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS), never into chat."
+pipeline_rule="Standing rule: a new feature starts as a spec kit in .specify/specs/<name>/ from council/spec-kit/ and runs the six-faces pipeline in council/pipeline.yaml. A step only Wendell can take goes on the Your steps tab on the council board (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps), never into chat."
 lessons() { grep -c '^      - date:' council/faces.yaml 2>/dev/null || echo 0; }
 
 if [ "$origin" = "$home_repo" ] && [ -z "${COUNCIL_SOURCE_BASE:-}" ]; then

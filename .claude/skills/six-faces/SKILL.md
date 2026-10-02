@@ -70,11 +70,11 @@ do not run it; `scope` in the file says which is which.
 2. **Each stage has owning faces and a gate** (intake, spec, falsify, plan, build, verify, ship, close). A
    stage's output passes its gate before the next stage starts. The clarifying questions of a spec kit
    interview go through the reach test like any other question.
-3. **Three outputs, kept apart.** Questions go to the board. Steps only Wendell can take go to Your Steps.
+3. **Three outputs, kept apart.** Questions go to the board. Steps only Wendell can take go to the board's Your steps tab.
    Product goes to a pull request.
 4. **Steps.** Every `[wendell]` task passes the step test (only he can take it) and carries the full step
    shape: do, where, enter, check, device, and whether it is safe to stop after. Publish the feature's steps
-   as one list with `ArtifactData` to the steps page named in `pipeline.yaml`: a `lists/<feature>` document
+   as one list with `ArtifactData` to the board's store, named as `steps_page` in `pipeline.yaml`: a `lists/<feature>` document
    (title, repo, why, source, order, created) and `steps/<feature>-<nn>` documents (list, n, do, where, href,
    enter, generate, check, device, stopSafe, optional, done). A secret is never written to a step. A step
    that needs one sets `generate` to its length, and the page makes it on his device without storing it.

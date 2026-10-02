@@ -1,7 +1,7 @@
 <title>Council Board</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
 <style>
-/* Layout: two views. Open is the default and holds only work waiting on Wendell; Resolved holds every decision, grouped, compact. */
+/* Layout: three views. Open is the default and holds only work waiting on Wendell; Resolved holds every decision, grouped, compact. */
 :root{
   --bg:#f6f5f1; --fg:#1d1f1e; --muted:#5d625f; --line:#d9d8d1; --panel:#ffffff;
   --accent:#1f6f6a; --accent-ink:#ffffff; --accent-soft:#e1efed; --warn:#9a4b1e; --warn-bg:#f8e9df; --ok:#2f7a3b;
@@ -63,14 +63,47 @@ textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);
 .done .w{grid-column:1 / -1;font-size:.8rem;color:var(--muted)}
 .done .w.pending{color:var(--warn)}
 code{font-family:var(--mono);font-size:.86em}
+/* Your steps tab: the steps only Wendell can take, numbered because the order is real. Prefixed st- to stay clear of the board's classes. */
+.st-list{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px;margin:18px 0}
+.st-list header{display:grid;gap:4px;margin-bottom:10px}
+.st-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.st-repo{border:1px solid var(--muted);border-radius:3px;padding:0 6px}
+.st-count{font-variant-numeric:tabular-nums}
+.st-bar{height:4px;background:var(--line);border-radius:2px;overflow:hidden;margin-top:6px}
+.st-bar i{display:block;height:100%;background:var(--accent)}
+.st-why{color:var(--muted);font-size:.93rem;margin:0}
+.st-src{color:var(--muted);font-size:.8rem;margin:0}
+ol.st-steps{list-style:none;margin:0;padding:0}
+.st-step{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 12px;padding:14px 0;border-top:1px solid var(--line)}
+.st-tick{width:44px;height:44px;border:2px solid var(--accent);border-radius:6px;background:var(--panel);font:600 1.1rem var(--body);cursor:pointer;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums;color:var(--accent)}
+.st-step.st-done .st-tick{background:var(--accent);color:var(--accent-ink)}
+.st-body{min-width:0;display:grid;gap:6px}
+.st-do{font-weight:600;font-size:1.02rem;margin:0}
+.st-step.st-done .st-do{color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}
+.st-row{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:8px;font-size:.93rem;align-items:baseline}
+.st-row > span:first-child{font-family:var(--mono);font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.st-val{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-width:0}
+.st-val code{background:var(--accent-soft);padding:3px 7px;border-radius:3px;overflow-wrap:anywhere}
+.st-btn{font:inherit;font-size:.85rem;padding:5px 10px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
+.st-btn.st-solid{background:var(--accent);color:var(--accent-ink)}
+.st-chips{display:flex;flex-wrap:wrap;gap:6px}
+.st-chip{font-size:.74rem;padding:1px 8px;border-radius:10px;background:var(--accent-soft);color:var(--fg)}
+.st-chip.st-safe{background:var(--accent-soft);color:var(--ok)}
+.st-chip.st-opt{background:var(--warn-bg);color:var(--warn)}
+.st-note{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem}
+.st-step details{font-size:.9rem}
+.st-step summary{cursor:pointer;color:var(--muted)}
+.st-step textarea{margin-top:6px}
+.st-state{font-size:.8rem;color:var(--muted);min-height:1.2em}
 </style>
 
 <h1>Council Board</h1>
 <p class="lede">Work from the six faces that waits on you. Anything you decide moves to Resolved, and Claude records it when you next say you saved.</p>
-<p class="lede">Steps only you can take, such as a setting in Vercel, are on <a href="https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS" target="_blank" rel="noopener">Your Steps</a>.</p>
+<p class="lede">Steps only you can take, such as a setting in Vercel, are on the Your steps tab. Tick each one as you go; Claude reads the ticks.</p>
 
 <div class="tabs" role="tablist">
   <button class="tab" role="tab" id="tab-open" aria-selected="true" aria-controls="view-open">Open<b id="n-open">0</b></button>
+  <button class="tab" role="tab" id="tab-steps" aria-selected="false" aria-controls="view-steps">Your steps<b id="n-steps">0</b></button>
   <button class="tab" role="tab" id="tab-resolved" aria-selected="false" aria-controls="view-resolved">Resolved<b id="n-resolved">0</b></button>
 </div>
 <div class="banner" id="banner">This view cannot save. Your choices stay on screen only.</div>
@@ -87,6 +120,13 @@ code{font-family:var(--mono);font-size:.86em}
   <div id="open-t"></div>
   <div id="open-p"></div>
   <div id="open-c"></div>
+</section>
+
+<section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
+  <p class="lede" style="margin-top:14px">Only the steps nobody else can take, because they need your accounts, your money or your eyes. Each one says where to go, what to enter, and how you will know it worked.</p>
+  <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
+  <div id="steps-todo"></div>
+  <div id="steps-done"></div>
 </section>
 
 <section id="view-resolved" role="tabpanel" aria-labelledby="tab-resolved" hidden>
@@ -211,15 +251,15 @@ function render(){
 }
 
 function show(which){
-  const open = which !== 'resolved';
-  document.getElementById('tab-open').setAttribute('aria-selected', String(open));
-  document.getElementById('tab-resolved').setAttribute('aria-selected', String(!open));
-  document.getElementById('view-open').hidden = !open;
-  document.getElementById('view-resolved').hidden = open;
+  for (const v of ['open','steps','resolved']){
+    document.getElementById('tab-'+v).setAttribute('aria-selected', String(v === which));
+    document.getElementById('view-'+v).hidden = v !== which;
+  }
 }
 document.getElementById('tab-open').addEventListener('click', () => { show('open'); try { history.replaceState(null, '', '#open'); } catch (e) {} });
 document.getElementById('tab-resolved').addEventListener('click', () => { show('resolved'); try { history.replaceState(null, '', '#resolved'); } catch (e) {} });
-show(location.hash === '#resolved' ? 'resolved' : 'open');
+document.getElementById('tab-steps').addEventListener('click', () => { show('steps'); try { history.replaceState(null, '', '#steps'); } catch (e) {} });
+show(['#resolved','#steps'].includes(location.hash) ? location.hash.slice(1) : 'open');
 
 const openView = document.getElementById('view-open');
 openView.addEventListener('change', e => {
@@ -264,6 +304,94 @@ document.getElementById('ctx-save').addEventListener('click', async () => {
   catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
 });
 
+// ---- Your steps ----
+let stLists = {}, stSteps = {};
+const stDrafts = {}, stSecrets = {};
+const stHref = h => /^https:\/\//.test(h || '') ? h : '';
+const stOf = id => Object.entries(stSteps).filter(([,s]) => s.list === id).sort((a,b) => (a[1].n||0) - (b[1].n||0));
+const stReq = arr => arr.filter(([,s]) => !s.optional && !s.retired);
+const stFinished = id => { const r = stReq(stOf(id)); return r.length > 0 && r.every(([,s]) => s.done); };
+function stStep(id, s){
+  if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
+  const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}</div></div>` : '';
+  const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
+  const gen = s.generate ? `<div class="st-row"><span>Secret</span><div class="st-val"><button type="button" class="st-btn st-solid" data-gen="${id}" data-len="${Number(s.generate)||48}">Make a new secret</button><code id="sg-${id}" ${stSecrets[id]?'':'hidden'}>${esc(stSecrets[id]||'')}</code><button type="button" class="st-btn" data-copy="sg-${id}" id="sgc-${id}" ${stSecrets[id]?'':'hidden'}>Copy</button></div></div><p class="st-src">It is made on this device and never saved anywhere. Paste it straight in, and make a new one if you lose it.</p>` : '';
+  const check = s.check ? `<div class="st-row"><span>Check</span><div class="st-val">${esc(s.check)}</div></div>` : '';
+  const chips = [`<span class="st-chip">${s.device === 'computer' ? 'Needs a computer' : 'Works on a phone'}</span>`];
+  if (s.stopSafe) chips.push('<span class="st-chip st-safe">Safe to stop after this</span>');
+  if (s.optional) chips.push('<span class="st-chip st-opt">Optional</span>');
+  return `<li class="st-step${s.done?' st-done':''}" id="s-${id}">
+    <button type="button" class="st-tick" data-tick="${id}" aria-pressed="${!!s.done}" aria-label="Step ${esc(s.n)}: ${s.done?'done, tap to undo':'tap when done'}">${s.done?'✓':esc(s.n)}</button>
+    <div class="st-body">
+      <p class="st-do">${esc(s.do)}</p>
+      ${where}${enter}${gen}${check}
+      <div class="st-chips">${chips.join('')}</div>
+      ${s.note ? `<div class="st-note">Your note: ${esc(s.note)}</div>` : ''}
+      <details><summary>Stuck, or something looks different?</summary>
+        <textarea id="sn-${id}" placeholder="Say what you see. Claude reads it.">${esc(stDrafts[id] ?? s.note ?? '')}</textarea>
+        <button type="button" class="st-btn" data-note="${id}">Save note</button> <span class="st-state" id="sns-${id}"></span>
+      </details>
+    </div>
+  </li>`;
+}
+function stList(id, l){
+  const all = stOf(id), req = stReq(all), n = req.filter(([,s]) => s.done).length;
+  const pct = req.length ? Math.round(100 * n / req.length) : 0;
+  return `<article class="st-list" id="l-${id}"><header>
+    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${n} of ${req.length} done</span></div>
+    <h2 style="margin:0">${esc(l.title)}</h2>
+    ${l.why ? `<p class="st-why">${esc(l.why)}</p>` : ''}${l.source ? `<p class="st-src">From ${esc(l.source)}</p>` : ''}
+    <div class="st-bar" aria-hidden="true"><i style="width:${pct}%"></i></div></header>
+    <ol class="st-steps">${all.map(([sid, s]) => stStep(sid, s)).join('')}</ol></article>`;
+}
+function renderSteps(){
+  const active = document.activeElement && document.activeElement.id;
+  const ids = Object.keys(stLists).sort((a,b) => (stLists[a].order||0) - (stLists[b].order||0) || String(stLists[a].created||'').localeCompare(String(stLists[b].created||'')));
+  const todo = ids.filter(id => !stFinished(id)), done = ids.filter(id => stFinished(id));
+  document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
+  document.getElementById('steps-done').innerHTML = section('Finished', '', done.map(id => stList(id, stLists[id])).join(''));
+  document.getElementById('steps-empty').hidden = todo.length > 0;
+  document.getElementById('n-steps').textContent = todo.length;
+  if (active){ const el = document.getElementById(active); if (el && el.closest('#view-steps')) el.focus(); }
+}
+function stSecret(len){
+  const bytes = new Uint8Array(Math.ceil(len * 3 / 4) + 3); crypto.getRandomValues(bytes);
+  return btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'').slice(0, len);
+}
+const stepsView = document.getElementById('view-steps');
+stepsView.addEventListener('input', e => { if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value; });
+stepsView.addEventListener('click', async e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.copy){
+    const el = document.getElementById(t.dataset.copy); if (!el) return;
+    try { await navigator.clipboard.writeText(el.textContent); t.textContent = 'Copied'; setTimeout(() => { t.textContent = 'Copy'; }, 1500); }
+    catch (err){ const r = document.createRange(); r.selectNodeContents(el); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); t.textContent = 'Selected, copy it'; }
+    return;
+  }
+  if (t.dataset.gen){
+    const id = t.dataset.gen; stSecrets[id] = stSecret(Number(t.dataset.len) || 48);
+    const code = document.getElementById('sg-' + id), copy = document.getElementById('sgc-' + id);
+    code.textContent = stSecrets[id]; code.hidden = false; copy.hidden = false; return;
+  }
+  if (t.dataset.tick){
+    const id = t.dataset.tick, s = stSteps[id]; if (!s) return;
+    if (!db){ document.getElementById('banner').classList.add('on'); return; }
+    const done = !s.done, at = done ? new Date().toISOString() : null;
+    stSteps[id] = {...s, done, doneAt: at}; renderSteps();
+    try { await db.doc('steps/' + id).update({done, doneAt: at}); }
+    catch (err){ stSteps[id] = s; renderSteps(); const st = document.getElementById('sns-' + id); if (st) st.textContent = 'Could not save the tick (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (t.dataset.note){
+    const id = t.dataset.note, st = document.getElementById('sns-' + id);
+    const text = (document.getElementById('sn-' + id).value || '').trim();
+    if (!db){ st.textContent = 'Not saved in this view.'; return; }
+    try { await db.doc('steps/' + id).update({note: text, noteAt: new Date().toISOString()}); delete stDrafts[id]; st.textContent = 'Saved. Claude reads it.'; }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+  }
+});
+renderSteps();
+
 render();
 (async () => {
   db = window.claude && window.claude.use ? await window.claude.use('db') : null;
@@ -275,5 +403,7 @@ render();
     }, () => {});
   }
   db.doc('steer/general').onSnapshot(d => { liveSteer = d.exists ? d.data() : null; render(); }, () => {});
+  db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; renderSteps(); }, () => {});
+  db.collection('steps').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stSteps = next; renderSteps(); }, () => {});
 })();
 </script>
