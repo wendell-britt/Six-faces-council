@@ -298,6 +298,38 @@
    "auto": true,
    "pos": "It worked if every pass mark in the handoff holds and the jitter the kit adds is below shipped, shown as one row in the existing tables, then a side-by-side clip on the preview page for you to watch.",
    "why": "The pass marks are yours, in the handoff; 'below shipped, ideally zero' is in root-game's rules; the clip follows open issue 5. Source: root-game council/6FACE_PASS1_2026-10-02.md (branch council/pass1-hands)"
+  },
+  {
+   "id": "fc-pr5-merges",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "flirtcraft 2",
+   "auto": true,
+   "pos": "Pull request #5 merges on the next board read unless you flip this. It makes a failed server reply say so, instead of telling the visitor their signal dropped.",
+   "why": "A reproduced defect: your sign-in at 22:32 showed 'Nothing reached the network' while the server had failed. It changes error text in five places, and the checks and tests pass. Source: flirtcraft 6FACE_PASS2_2026-10-02.md (branch fix/honest-server-errors, pull request #5)"
+  },
+  {
+   "id": "council-reach-trigger",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "flirtcraft 2",
+   "auto": true,
+   "pos": "Every session in every council repo now prints the reach-test rule at start, and the skill says to use it before asking you anything that changes what gets built.",
+   "why": "Your words this evening: 'In theory these questions should've triggered the game master agents yes?' The rule itself was already in faces.yaml; nothing fired it. Pushed to the home repo; a repo picks it up at its second session from now. Source: flirtcraft 6FACE_PASS2_2026-10-02.md (branch fix/honest-server-errors, pull request #5)"
+  },
+  {
+   "id": "fc-no-secret-in-chat",
+   "faces": [
+    "regent"
+   ],
+   "pass": "flirtcraft 2",
+   "auto": true,
+   "pos": "No database address or secret is pasted into chat. You enter them in Vercel.",
+   "why": "The address is a password, and the reserved list keeps credentials with you. Source: flirtcraft 6FACE_PASS2_2026-10-02.md (branch fix/honest-server-errors, pull request #5)"
   }
  ],
  "questions": [
@@ -406,6 +438,39 @@
      "v": "hold",
      "label": "Hold",
      "c": "Nothing changes on any main branch until you say."
+    }
+   ]
+  },
+  {
+   "id": "flirtcraft-database-home",
+   "faces": [
+    "regent",
+    "architect",
+    "diplomat"
+   ],
+   "q": "Flirtcraft sign-in fails on the live site because production has no database. Where should its database live, and should the intake skip its email step until one exists? The council recommends a second database of its own.",
+   "why_you": "It creates a resource on your account and spends from quotas shared with bars-engine, and money is reserved to you. A database address is a password, so only you can enter it in Vercel.",
+   "not_before": "Pass one asked when to merge, and you chose merge now knowing this step would fail. Today's sign-in at 22:32 made it the blocker. These questions also went to you in chat first, without the council; that is fixed.",
+   "options": [
+    {
+     "v": "own-database",
+     "label": "A second database of its own (recommended)",
+     "c": "A separate restore and no path to wiping bars-engine. It draws on the same Prisma allowance and bills through the Vercel account, which is on the hobby plan. Then in Vercel: Storage, create or connect it to flirtcraft for Production, check DATABASE_URL is the plain postgresql:// address, add AUTH_SECRET (32+ random characters) and RESEND_API_KEY if you have it."
+    },
+    {
+     "v": "share-bars-engine",
+     "label": "Share bars-engine's server, in its own flirtcraft schema",
+     "c": "One restore for both apps and one connection ceiling. The least-privilege role and its proof must run first. The same Vercel settings follow."
+    },
+    {
+     "v": "not-yet-skip-ask",
+     "label": "Not yet, and the intake skips its email step meanwhile",
+     "c": "Strangers get their reading without the failure. Sign-in stays broken. The council builds the skip as its own pull request. The Regent dissents: the ask is your ruled design."
+    },
+    {
+     "v": "not-yet-unchanged",
+     "label": "Not yet, intake unchanged",
+     "c": "Every visitor who reaches the email step fails there, with an honest message once pull request #5 merges."
     }
    ]
   }
