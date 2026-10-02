@@ -16,6 +16,8 @@ synthesises without deciding, and Wendell rules on a board.
   it has.
 - `council/tools/voice_lint.py` is the house voice lint, shared with every council repo.
 - `board/` builds the board Wendell rules on: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
+- `docs/council-explainer.html` is the plain explainer, published at
+  https://claude.ai/artifact/QBxhTQHYb4xRpUjszrX64Z
 - `council/ledger/` holds the records of decisions about the council itself. Records about a
   project stay in that project's repo.
 
