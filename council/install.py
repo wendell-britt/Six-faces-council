@@ -26,6 +26,8 @@ from pathlib import Path
 HOME = Path(__file__).resolve().parent.parent
 SHARED = ["council/faces.yaml", "council/pipeline.yaml", "council/spec-kit/spec.md", "council/spec-kit/plan.md",
           "council/spec-kit/tasks.md", ".claude/skills/six-faces/SKILL.md", "council/tools/voice_lint.py"]
+SHARED += [f".claude/agents/daemon-{d}.md" for d in ("protector", "controller", "skeptic", "fixer", "victim",
+                                                   "damaged-self", "emotional-body", "player")]
 HOOK_CMD = '"$CLAUDE_PROJECT_DIR"/council/hooks/council-sync.sh'
 TERMS_HEADER = """# Term registry for this repo. The repo's glossary, if it has one, stays the canon; this file indexes
 # terms the council has harvested or tested, with their state, source and usage. States: harvested,

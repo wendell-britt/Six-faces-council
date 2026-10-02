@@ -84,3 +84,69 @@ cannot see it. So the design answers a question the record did not show needed a
 
 **Status:** stopped at the falsify stage. Nothing is wired into the pass shape. The eight agent files stay
 on the branch `feature/daemon-subagents`, unmerged.
+
+## Version two, after Wendell's board answer of 23:45
+
+**His answer:** "help each face while it drafts", with this steer:
+
+> "The daemons exist to solve problems in the faces domain. They are designed to protect the player but
+> also all work for the players enjoyment. They should be able to ask questions and help with specific
+> problems"
+
+**What changes.** Version one read a daemon as a defense to be caught. Wendell reads it as a helper in a
+face's domain, working for the Player. So a face dispatches a daemon while it drafts, on one specific
+problem. The daemon works that problem from its aim at the face's altitude, says what it protects the
+Player from and what it makes more enjoyable, asks at most two questions, and names where it would
+overreach. The Player says what it wants from the problem. Its questions go through the reach test like
+any other.
+
+| Decision | Choice | Whose |
+|---|---|---|
+| When a daemon runs | While a face drafts, on a problem the face names; not after the pass | Wendell (board, 23:45) |
+| What a daemon is for | Solving problems in the face's domain, protecting the Player, and the Player's enjoyment | Wendell (board steer) |
+| Who the Player is | Named by the caller for each problem: Wendell for council work, or the person a product serves | Council |
+| How many per face | As many as the face's problem needs, usually one to three; never all eight by default | Council |
+| Overreach | Each daemon names where its cell's distortion would show up in this problem, so the face can stop it there | Council, from the cells' own `does` |
+
+## How we will know version two failed
+
+- **The cheap test, run before building further:** the Challenger's open proposal from flirtcraft pass one,
+  "A failed production deploy should notify someone", is a real and unbuilt problem. The Challenger
+  dispatches four daemons on it (the Protector, the Controller, the Skeptic and the Fixer) and the Player.
+  The Player is Wendell. A separate judge then receives the four daemon outputs with the names removed and
+  the order shuffled, plus the four Challenger cells, and matches each output to its cell.
+- **Pass mark, set before the run:** the judge matches all four outputs to the right cells, and at least
+  three of the four propose a concrete move that none of the others proposes.
+- **The result that stops the work:** the judge cannot tell the outputs apart, or the moves repeat each
+  other. Either would make eight subagents one subagent with eight names.
+
+## Result of the version two test, 2026-10-02
+
+**It passed against the pass mark set before the run.**
+
+- The judge matched all four outputs to the right daemons: A was the Fixer, B the Skeptic, C the
+  Controller, and D the Protector.
+- All four proposed a move that none of the others proposed. The Fixer proposed turning on the notice
+  Vercel or GitHub may already offer before building anything. The Skeptic proposed letting a failing
+  preview block the merge. The Controller proposed a sign-in request after each deploy, to catch run-time
+  failures. The Protector proposed an alert when production recovers, repeated at an interval Wendell
+  picks.
+
+**The result has one caveat.** The judge's reasons quote each output's overreach line most often, and that
+line restates the daemon's own distortion. So the match test partly measures that section. The second
+test, distinct moves, does not depend on it, and it also passed.
+
+**What the run found for the open problem itself.** Every daemon asked the same question: which channel
+Wendell actually reads on his phone, and whether Vercel already sent failure emails that went unread. That
+belongs to the deploy-alert proposal from flirtcraft pass one, which nobody has started. It is noted here
+and not sent to the board, because nobody asked to build that alert.
+
+## Definition of done, version two
+
+- [x] The cheap test passes, and its result is recorded here.
+- [x] Eight agent definitions in `.claude/agents/`, synced to every council repo by the hook and installed by
+  `council/install.py`. A scratch copy of root-game picked them up on its second sync.
+- [x] The skill's pass shape tells a face how to send its daemons while it drafts, and what to do when
+  friendcraft cannot be attached.
+- [x] Nothing on Wendell's steps list.
+- [ ] Ships as a board position that merges on the next board read unless he flips it.

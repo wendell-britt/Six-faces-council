@@ -17,6 +17,18 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
 4. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game NPC. Each
    delivers what its entry lists, in bold-led paragraphs with a subject and a finite verb. Each
    applies its standing test where one exists.
+   **While it drafts, a face may send its daemons to work a specific problem in its domain.** Wendell,
+   2026-10-02: *"The daemons exist to solve problems in the faces domain. They are designed to protect
+   the player but also all work for the players enjoyment. They should be able to ask questions and help
+   with specific problems."* The subagents are `daemon-protector`, `daemon-controller`, `daemon-skeptic`,
+   `daemon-fixer`, `daemon-victim`, `daemon-damaged-self`, `daemon-emotional-body` and `daemon-player`.
+   Pass each one the face, the one problem, who the Player is (Wendell for council work, or the person a
+   product serves), and the path to friendcraft's `decks/shared/`. Send only the daemons the problem
+   needs, usually one to three. Each returns what it sees, what it would do, what it protects the Player
+   from and makes more enjoyable, at most two questions, and where it would overreach. The face uses
+   what helps, says which daemon it came from, and stops a daemon where its overreach line says. A
+   daemon's questions go through the reach test like any other. Friendcraft is private; when this
+   session cannot attach it read-only, skip the daemons and say so in the pass.
 5. **Verdicts table.** One row per face, one column per question.
 6. **Dissent check.** State whether the pass was unanimous. A unanimous pass is a flag, not a result;
    say so in the pass.

@@ -153,6 +153,10 @@ faces:
 
 council_lessons:   # rulings on sessions' output that bind every face; from friendcraft CLAUDE.md and the board
   - date: 2026-10-02
+    wendell: The daemons exist to solve problems in the faces domain. They are designed to protect the player but also all work for the players enjoyment. They should be able to ask questions and help with specific problems
+    lesson: A daemon is a helper in a face's domain before it is a defense to be caught. A face sends one to work a specific problem, for the Player's protection and enjoyment.
+    source: board steer on daemon-subagents-purpose, read 9; version one of the daemon subagents failed its test as audits
+  - date: 2026-10-02
     wendell: In theory these questions should've triggered the game master agents yes?
     lesson: A question about to go to Wendell is itself the trigger for the reach test. It goes through the council, and what survives goes to the board.
     source: flirtcraft 6FACE_PASS2_2026-10-02.md; position council-reach-trigger stood on the board, read 7
