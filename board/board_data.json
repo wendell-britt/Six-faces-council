@@ -330,6 +330,81 @@
    "auto": true,
    "pos": "No database address or secret is pasted into chat. You enter them in Vercel.",
    "why": "The address is a password, and the reserved list keeps credentials with you. Source: flirtcraft 6FACE_PASS2_2026-10-02.md (branch fix/honest-server-errors, pull request #5)"
+  },
+  {
+   "id": "pipe-stages",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "5",
+   "auto": true,
+   "pos": "A new feature runs eight stages, each with owning faces and a gate: intake, spec, falsify, plan, build, verify, ship, close. It lives in council/pipeline.yaml, syncs to every council repo, and starts from a spec kit in .specify/specs/.",
+   "why": "Your request this evening. The stages follow the spec kit bars-engine already uses, with 421 specs. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
+  },
+  {
+   "id": "pipe-three-outputs",
+   "faces": [
+    "architect"
+   ],
+   "pass": "5",
+   "auto": true,
+   "pos": "A pass has three outputs, each with its own place: questions go to this board, steps only you can take go to Your Steps, and product goes to a pull request.",
+   "why": "The board's rule that questions and product stay apart, extended to actions. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
+  },
+  {
+   "id": "pipe-step-test",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "5",
+   "auto": true,
+   "pos": "Only a step you alone can take reaches your list: your accounts, your money, your eyes. Each one says what to do, where, what to enter, how you will know it worked, phone or computer, and whether it is safe to stop after.",
+   "why": "The reach test, applied to actions, so the list never becomes a second inbox. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
+  },
+  {
+   "id": "pipe-steps-page",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "5",
+   "auto": true,
+   "pos": "Your steps live on their own page, Your Steps, not as a tab on this board. The Diplomat dissents: one place to look would be kinder.",
+   "why": "A step is done inside another app, such as Vercel; this board is read to decide. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
+  },
+  {
+   "id": "pipe-ship",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "5",
+   "auto": true,
+   "pos": "A finished feature goes on this board as a position that merges on the next board read unless you flip it. A feature touching money, a live paywall, prose or a person's name ships only on a question you answer.",
+   "why": "Precedent: flirtcraft #5 stood and merged tonight; the reserved list. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
+  },
+  {
+   "id": "pipe-forward-only",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "5",
+   "auto": true,
+   "pos": "Existing specs are not retrofitted, a fix that changes no behaviour skips the spec, and a repo's own spec rules win. bars-engine keeps its Verification Quests; friendcraft's manuscript never runs the pipeline.",
+   "why": "bars-engine's 421 specs; its protocols; canonical prose is reserved. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
+  },
+  {
+   "id": "pipe-no-secrets",
+   "faces": [
+    "regent"
+   ],
+   "pass": "5",
+   "auto": true,
+   "pos": "A secret never sits in a step. Where a step needs one, Your Steps makes it on your device and stores nothing.",
+   "why": "The steps database is readable by anyone the page is shared with. Source: council/passes/6FACE_PASS5_2026-10-02.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -471,6 +546,28 @@
      "v": "not-yet-unchanged",
      "label": "Not yet, intake unchanged",
      "c": "Every visitor who reaches the email step fails there, with an honest message once pull request #5 merges."
+    }
+   ]
+  },
+  {
+   "id": "fc-migrate-on-deploy",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "q": "Should flirtcraft's production builds create the database tables themselves?",
+   "why_you": "It changes how the live site deploys, and this session's permission check refused to make that change without you. If you choose yes, allow it when the session asks.",
+   "not_before": "Migrations were manual because the database might be shared with bars-engine. Your answer at 22:43, a database of its own, removed that risk.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "Yes, production builds migrate",
+     "c": "Step seven on your flirtcraft list disappears, and every later migration ships with its merge. Previews never migrate."
+    },
+    {
+     "v": "no",
+     "label": "No, keep it a step",
+     "c": "Step seven stays, and each future migration is a step on your list that needs a computer."
     }
    ]
   }
@@ -899,6 +996,16 @@
     "decision": "stands",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+   },
+   "council-reach-trigger": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
+   },
+   "fc-pr5-merges": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
    }
   },
   "questions": {
@@ -925,6 +1032,12 @@
     "label": "A new repo of its own: wendell-britt/six-faces-council",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+   },
+   "flirtcraft-database-home": {
+    "decision": "own-database",
+    "label": "A second database of its own",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
    }
   },
   "causes": {

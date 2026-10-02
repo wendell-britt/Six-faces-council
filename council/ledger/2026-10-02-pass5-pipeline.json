@@ -1,0 +1,49 @@
+{
+  "id": "2026-10-02-six-faces-council-pass5-pipeline",
+  "date": "2026-10-02",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "How do we introduce spec kit discipline for new features, with a checklist for Wendell's own steps and a production pipeline run by the six faces?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": "council/passes/6FACE_PASS5_2026-10-02.md",
+  "faces_present": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat",
+    "sage"
+  ],
+  "dissent": true,
+  "dissent_note": "The Diplomat would put the steps on the board as a tab; the Architect keeps a separate page. Stands as a position he can flip.",
+  "positions": {
+    "pipe-stages": "council",
+    "pipe-three-outputs": "council",
+    "pipe-step-test": "council",
+    "pipe-steps-page": "council",
+    "pipe-ship": "council",
+    "pipe-forward-only": "council",
+    "pipe-no-secrets": "council"
+  },
+  "questions": {
+    "fc-migrate-on-deploy": {
+      "options": [
+        "yes",
+        "no"
+      ],
+      "choice": null
+    }
+  },
+  "built": [
+    "council/pipeline.yaml",
+    "council/spec-kit/spec.md, plan.md, tasks.md",
+    "Your Steps page, https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS",
+    "skill section 'The feature pipeline'; hook prints the pipeline rule and syncs the new files"
+  ],
+  "falsification_tests": [
+    "The next feature reaches a build only after its steps are on the list, and he never has to ask in chat what to do",
+    "He can finish the flirtcraft database list from a phone up to step seven"
+  ],
+  "outcome": "unruled"
+}

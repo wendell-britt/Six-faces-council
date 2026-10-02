@@ -1,0 +1,101 @@
+# The feature pipeline: how a new feature goes from Wendell's ask to the live site, run by the six
+# faces. Read by the six-faces skill. Synced to every council repo with faces.yaml.
+#
+# Designed in council/passes/6FACE_PASS5_2026-10-02.md at Wendell's request on 2026-10-02:
+#   "steps I have to do myself should generate a step by step checklist I can run from. Things that
+#    need building should go through a production pipeline managed by the 6 faces"
+# This file is the council's design, not a ruling of Wendell's. Each part stands as a position on
+# the board until he flips it.
+
+scope:
+  runs_for: >
+    A new feature: behaviour a person can see or use, or data the product keeps, that did not exist
+    before. It starts when Wendell asks for one, or when a pass proposes one and he says yes.
+  not_for:
+    - A fix to behaviour that already exists. That gets a pass if it needs one, and a pull request.
+    - Manuscript prose in friendcraft. Canonical prose is reserved; the repo's own rules govern it.
+  repo_rules_win: >
+    Where a repo has its own spec kit rules, they win on conventions. bars-engine keeps its template,
+    its Verification Quests and its Build/Infra Blocker Protocol; the pipeline adds its sections to
+    that template instead of replacing it.
+
+where: .specify/specs/<feature-name>/   # spec.md, plan.md, tasks.md, as bars-engine already does
+
+templates: council/spec-kit/            # spec.md, plan.md, tasks.md, synced from the home repo
+
+# Three typed outputs, kept apart. A pass never mixes them.
+outputs:
+  questions: the Council Board, https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
+  steps: Your Steps, the checklist page named in steps_page below
+  product: a pull request per feature, on its own branch
+
+steps_page: https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS
+
+# The reach test, applied to actions. A step goes to Wendell's checklist only if he is the only one
+# who can do it: his accounts, his money, his name, his eyes on the result, or a permission he holds.
+# Anything a session can do itself, it does.
+step_test: >
+  Only Wendell can take this step, because it needs his account, his money, his name, his judgement
+  of the result, or a permission he holds. A step a session can take is never put on his list.
+
+step_shape:   # every step on the checklist carries all of these
+  do: one action, in plain words, starting with a verb
+  where: the exact page, menu path or link where it happens
+  enter: what to type or choose, never a secret; a secret is generated on the page and never stored
+  check: how he knows it worked, as something he will see
+  device: phone or computer
+  stop_safe: whether he can stop after this step and pick up later without harm
+
+stages:
+  - id: intake
+    owners: [shaman, diplomat]
+    produces: spec.md Purpose and user stories, with the ask quoted in Wendell's words
+    gate: >
+      The ask is quoted, and who it is for is named. Every clarifying question goes through the reach
+      test first; the spec kit interview's questions are answered from the record where it can.
+
+  - id: spec
+    owners: [architect, regent]
+    produces: spec.md design decisions, contracts, acceptance
+    gate: >
+      Each design decision says whose it is: Wendell's (cited), a source's (named) or the council's
+      (marked). Anything on the reserved list becomes a board question, never a decision.
+
+  - id: falsify
+    owners: [challenger]
+    produces: spec.md section "How we will know it failed"
+    gate: >
+      One cheap test, run before the build, that could show the design is wrong, and the result that
+      would stop the work. Root-game's rule, made general: confirm with a cheap test before building.
+
+  - id: plan
+    owners: [architect, regent]
+    produces: plan.md and tasks.md, every task tagged [claude] or [wendell]
+    gate: >
+      Every [wendell] task passes step_test and has the full step_shape. Those tasks are published to
+      the steps page as one list for the feature before any build starts that depends on them.
+
+  - id: build
+    owners: [architect]
+    produces: a pull request on its own branch
+    gate: The repo's own checks pass, and the preview builds where the repo has one.
+
+  - id: verify
+    owners: [regent, diplomat]
+    produces: the definition of done, checked; a walk-through for a person where the feature has one
+    gate: >
+      The falsification test passed. Any check only Wendell can make (his account, his eyes) is a
+      list on the steps page, and the feature is not done until he ticks it.
+
+  - id: ship
+    owners: [regent]
+    produces: a board position "merges on the next board read unless flipped"
+    gate: >
+      Precedent: flirtcraft pull request #5 merged this way, its position standing on 2026-10-02.
+      A feature that touches a reserved item (money, a live paywall, prose, a person's name) ships
+      only on a board question he answers.
+
+  - id: close
+    owners: [sage]
+    produces: a ledger record, tasks.md ticked, lessons_pending for anything he ruled
+    gate: Every face's contribution is named, and the dissent is listed.

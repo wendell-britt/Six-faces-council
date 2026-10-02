@@ -57,6 +57,32 @@ Read the store with `ArtifactData`: collections `positions`, `questions`, and th
 that face's entry in `faces.yaml`, quoted, with the source. A ruling that changes a term, a
 structure or a date goes in the repo's decision log where one exists.
 
+## The feature pipeline
+
+A new feature runs the pipeline in `council/pipeline.yaml`. Wendell asked for it on 2026-10-02:
+*"steps I have to do myself should generate a step by step checklist I can run from. Things that need
+building should go through a production pipeline managed by the 6 faces."* Fixes and manuscript prose
+do not run it; `scope` in the file says which is which.
+
+1. **Spec kit first.** Scaffold `.specify/specs/<feature>/` from `council/spec-kit/`. In a repo with its own
+   template, use that one and add the three council sections: the ask, whose decision, and how we will know
+   it failed. The repo's own rules win on conventions.
+2. **Each stage has owning faces and a gate** (intake, spec, falsify, plan, build, verify, ship, close). A
+   stage's output passes its gate before the next stage starts. The clarifying questions of a spec kit
+   interview go through the reach test like any other question.
+3. **Three outputs, kept apart.** Questions go to the board. Steps only Wendell can take go to Your Steps.
+   Product goes to a pull request.
+4. **Steps.** Every `[wendell]` task passes the step test (only he can take it) and carries the full step
+   shape: do, where, enter, check, device, and whether it is safe to stop after. Publish the feature's steps
+   as one list with `ArtifactData` to the steps page named in `pipeline.yaml`: a `lists/<feature>` document
+   (title, repo, why, source, order, created) and `steps/<feature>-<nn>` documents (list, n, do, where, href,
+   enter, generate, check, device, stopSafe, optional, done). A secret is never written to a step. A step
+   that needs one sets `generate` to its length, and the page makes it on his device without storing it.
+5. **Read his ticks.** The page records `done`, `doneAt` and `note` on each step. Read the list before any
+   work that waits on a step. A note is a report from him; answer it in the next reply or in the pass.
+6. **Ship.** A feature whose gates pass goes on the board as a position that merges on the next board read
+   unless he flips it. A feature that touches a reserved item ships only on a board question he answers.
+
 ## One home, every repo
 
 The council has one home: the repo named in `council/source.txt`, `wendell-britt/six-faces-council` since 2026-10-02.

@@ -1,0 +1,38 @@
+{
+  "id": "2026-10-02-six-faces-council-board-read-7",
+  "date": "2026-10-02",
+  "project": "six-faces-council",
+  "cause": "incident-reliability",
+  "question": "Flirtcraft pass two: where its database lives, and whether pass two's positions stand.",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "flirtcraft-database-home": {
+      "choice": "own-database",
+      "saved_at": "2026-10-02T22:43:32Z"
+    }
+  },
+  "positions": {
+    "council-reach-trigger": "stands",
+    "fc-pr5-merges": "stands"
+  },
+  "unsaved_positions": {
+    "fc-no-secret-in-chat": "not saved; stands by default and stays open on the board"
+  },
+  "overruled": [],
+  "steers": {},
+  "lessons": {
+    "council": {
+      "wendell": "In theory these questions should've triggered the game master agents yes?",
+      "lesson": "A question about to go to Wendell is itself the trigger for the reach test. It goes through the council, and what survives goes to the board.",
+      "source": "flirtcraft 6FACE_PASS2_2026-10-02.md; position council-reach-trigger stood at 22:43",
+      "folded_into": "council/faces.yaml council_lessons"
+    }
+  },
+  "acted_on": [
+    "Merged wendell-britt/flirtcraft#5 as 9e1c034",
+    "Published the first list on Your Steps (https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS): Give flirtcraft its own database, nine steps",
+    "Tried to make flirtcraft's production build run migrations; the session's permission check refused it, and it went to the board as a question"
+  ]
+}

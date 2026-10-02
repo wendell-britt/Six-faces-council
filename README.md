@@ -14,6 +14,11 @@ synthesises without deciding, and Wendell rules on a board.
 - `council/hooks/council-sync.sh` runs when a session opens in any council repo. It pulls the
   definition file, the skill, the voice lint and itself from here, and tells the session which copy
   it has.
+- `council/pipeline.yaml` is the feature pipeline: eight stages, the faces that own each one, and the gate
+  between them. `council/spec-kit/` holds the spec, plan and tasks templates a new feature starts from.
+- `steps/steps.html` builds Your Steps, the checklist of steps only Wendell can take:
+  https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS. Sessions add lists to its database; the page holds no rows.
+- `council/passes/` holds the council's passes on its own design, from pass five on.
 - `council/tools/voice_lint.py` is the house voice lint, shared with every council repo.
 - `board/` builds the board Wendell rules on: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
 - `docs/council-explainer.html` is the plain explainer, published at

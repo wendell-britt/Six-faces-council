@@ -147,7 +147,11 @@ faces:
           ruling before synthesising. The intake synthesis rested on "the card text is already
           public" after Wendell had ruled the subscription sells the cards.
 
-council_lessons:   # rulings on sessions' output that bind every face; all from friendcraft CLAUDE.md
+council_lessons:   # rulings on sessions' output that bind every face; from friendcraft CLAUDE.md and the board
+  - date: 2026-10-02
+    wendell: In theory these questions should've triggered the game master agents yes?
+    lesson: A question about to go to Wendell is itself the trigger for the reach test. It goes through the council, and what survives goes to the board.
+    source: flirtcraft 6FACE_PASS2_2026-10-02.md; position council-reach-trigger stood on the board, read 7
   - date: 2026-08-23
     wendell: Nonsense. People should be doing this with their friendships and relationships. Justify it first.
     lesson: Before a claim about how people generally work goes in, say whose claim it is. A received idea is stated as a claim and defended, or it does not appear.

@@ -52,6 +52,14 @@ Wendell works in interfaces more than in chat. Chat is for context and steering.
   ruling once he gives it. A repo session pastes it into a ledger later. A ruling or steer in his own
   words is a lesson for that face, so quote it exactly in the block.
 
+## Steps only Wendell can take
+
+A pass or a feature that needs an action only he can take (his account, his money, his eyes) writes it as a
+step: do, where, enter, check, phone or computer, and whether it is safe to stop after. Where the session can
+write to his Your Steps page (https://claude.ai/artifact/GGqXQLNtUreZEBB1Y4Z9yS), the steps go there as one
+list. Otherwise they go in the record block, numbered, for a repo session to publish. A secret never goes
+into a step or into chat.
+
 ## The term pass
 
 When he asks for terms, harvest names already in use in the conversation or the documents he gives
