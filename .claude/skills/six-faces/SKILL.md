@@ -22,13 +22,18 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
    the player but also all work for the players enjoyment. They should be able to ask questions and help
    with specific problems."* The subagents are `daemon-protector`, `daemon-controller`, `daemon-skeptic`,
    `daemon-fixer`, `daemon-victim`, `daemon-damaged-self`, `daemon-emotional-body` and `daemon-player`.
-   Pass each one the face, the one problem, who the Player is (Wendell for council work, or the person a
-   product serves), and the path to friendcraft's `decks/shared/`. Send only the daemons the problem
-   needs, usually one to three. Each returns what it sees, what it would do, what it protects the Player
-   from and makes more enjoyable, at most two questions, and where it would overreach. The face uses
-   what helps, says which daemon it came from, and stops a daemon where its overreach line says. A
-   daemon's questions go through the reach test like any other. Friendcraft is private; when this
-   session cannot attach it read-only, skip the daemons and say so in the pass.
+   They run on the smallest model, which is part of the design: the faces think, and the daemons do the
+   focused legwork cheaply. Each reads its definition from `council/daemons/daemons.yaml`, a trimmed copy of
+   Wendell's friendcraft canon, so it runs in any council repo. Pass each one the face, the one problem, and
+   who the Player is (Wendell for council work, or the person a product serves). Send only the daemons the
+   problem needs, usually one to three. Each works the five moves in its own domain: Wake Up (see what is
+   there), Open Up (brainstorm every possible move, unjudged, as Wendell's Idea Storm does), Clean Up (clear
+   what blocks the work and compost what does not serve), Grow Up (the test, measurement or reading that
+   makes the next attempt better, with web research where it helps), and Show Up (distill to at most five
+   moves). Each also says what it protects the Player from and makes more enjoyable, asks at most two
+   questions, and names where it would overreach. The face uses what helps, says which daemon it came
+   from, and stops a daemon where its overreach line says. A daemon's questions go through the reach test
+   like any other.
 5. **Verdicts table.** One row per face, one column per question.
 6. **Dissent check.** State whether the pass was unanimous. A unanimous pass is a flag, not a result;
    say so in the pass.

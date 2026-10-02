@@ -150,3 +150,35 @@ and not sent to the board, because nobody asked to build that alert.
   friendcraft cannot be attached.
 - [x] Nothing on Wendell's steps list.
 - [ ] Ships as a board position that merges on the next board read unless he flips it.
+
+## Version three, after Wendell's message of 2026-10-02, late evening
+
+> "We can copy over from friendcraft. They need to be able to run independently
+>
+> We also need to brainstorm and fine tune what these agents can do based on current research if creating
+> agents for game design pipelines and for coding work in general. Let's have the 6 game masters do research
+> on this topic and use the sub agents (at lower models- this is also a scheme to be more effective and deft
+> with token usage)
+>
+> Let's see if we can integrate the brainstorm skill. It seems each of the subagents would have access to a
+> coding scoped version of the 5 basic moves (wake up open up clean up grow up and show up) in their own
+> domains"
+
+| Decision | Choice | Whose |
+|---|---|---|
+| The definitions | Copied, trimmed, into `council/daemons/daemons.yaml` and synced to every council repo; `refresh.py` updates the copy from a friendcraft clone | Wendell ("copy over from friendcraft") |
+| The model | `model: haiku` in each subagent; the faces stay on the session's model | Wendell ("lower models"); haiku is the council's pick of the lower ones |
+| The five moves | Each daemon runs Wake Up, Open Up, Clean Up, Grow Up and Show Up, scoped to code and design work, in its own domain | Wendell (the moves); the council (the coding scope) |
+| The brainstorm | Open Up is the Idea Storm from bars-engine's `BrainstormFlow`, every possible move unjudged; Show Up is its Distill, at most five carried forward and the rest composted | The record. No brainstorm skill file exists in any repo or on the account, so the council used bars-engine's flow and will ask if he meant another |
+| Research | The subagents get web search and web fetch | Council, from his ask for research |
+
+## How we will know the lower-model scheme failed
+
+- **The cheap test, set before the research pass runs:** seven daemon subagents on the smallest model each
+  research one question for a face and cite sources. A separate check on the session's model then opens
+  three cited links per report, chosen before reading the reports (the first, the middle and the last
+  citation), and records whether each link exists and supports the claim it is cited for.
+- **Pass mark:** at least 17 of the 21 checked citations exist and support their claim, and every report
+  follows the five moves.
+- **The result that stops the scheme:** fewer than 17 supported citations, which would make the cheap model
+  a source of invented research. The fix would then be the next model up, and the test reruns.
