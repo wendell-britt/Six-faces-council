@@ -1,0 +1,24 @@
+{
+  "id": "2026-10-02-six-faces-council-board-read-6",
+  "date": "2026-10-02",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Where should the council's home live, and do pass four's positions and root-game's first pass stand?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {"council-home": {"choice": "new-repo", "saved_at": "2026-10-02T22:04:38Z"}},
+  "positions": {
+    "x-one-home": "stands", "x-lessons-home": "stands", "x-records-local": "stands", "x-install": "stands",
+    "rg-ruler-first": "stands", "rg-trace-second": "stands", "rg-segments": "stands", "rg-worked": "stands"
+  },
+  "overruled": [],
+  "steers": {},
+  "lessons": {},
+  "acted_on": [
+    "Creating wendell-britt/six-faces-council through the GitHub app was refused (403); Wendell creates the empty repo",
+    "Home contents prepared: council files, tools, portable skill, board source",
+    "Every council repo's council/source.txt points here"
+  ],
+  "note": "First record kept in the new home. Earlier council-design records stay in johnair01/bars-engine."
+}
