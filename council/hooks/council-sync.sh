@@ -21,10 +21,15 @@ ref="${source_spec#*@}"
 [ "$ref" = "$source_spec" ] && ref=main
 
 origin="$(git config --get remote.origin.url 2>/dev/null | sed -E 's#^.*github\.com[:/]##; s#\.git$##')"
+# Printed at every session start, because the moment the reach test exists for is the moment a session
+# is about to ask Wendell something, and no trigger phrase marks it (Wendell, 2026-10-02: "In theory
+# these questions should've triggered the game master agents yes?").
+rule="Standing rule: before you ask Wendell a question whose answer changes what gets built, run it through the six-faces reach test (skill six-faces). Answer it from the record if you can. A question that survives goes to the council board with options, and the chat reply says it is there."
 lessons() { grep -c '^      - date:' council/faces.yaml 2>/dev/null || echo 0; }
 
 if [ "$origin" = "$home_repo" ] && [ -z "${COUNCIL_SOURCE_BASE:-}" ]; then
   echo "Six-faces council: this repo is the home copy ($home_repo). $(lessons) face lessons in council/faces.yaml. Lessons and lens changes are made here."
+  echo "$rule"
   exit 0
 fi
 
@@ -55,4 +60,5 @@ elif [ -n "$changed" ]; then
 else
   echo "Six-faces council: up to date with $label. $(lessons) face lessons."
 fi
+echo "$rule"
 exit 0

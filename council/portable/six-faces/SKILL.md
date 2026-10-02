@@ -1,6 +1,6 @@
 ---
 name: six-faces
-description: Convene Wendell's six Game Master faces (Shaman, Architect, Challenger, Regent, Diplomat, Sage) as a council on a decision, or run a term pass on emergent terms. Use when Wendell says "get the six on this", "six-face pass", "let the faces weigh in", "what would the faces say", asks for a term or naming pass, or wants a decision argued from the Integral altitudes. Reads faces.yaml; never improvises a lens.
+description: Convene Wendell's six Game Master faces (Shaman, Architect, Challenger, Regent, Diplomat, Sage) as a council on a decision, or run a term pass on emergent terms. Use when Wendell says "get the six on this", "six-face pass", "let the faces weigh in", "what would the faces say", asks for a term or naming pass, or wants a decision argued from the Integral altitudes. Reads faces.yaml; never improvises a lens. Also use it before asking Wendell any question whose answer changes what gets built: the question goes through the reach test first, and what survives goes to the board.
 ---
 
 # Six faces, as a council (portable copy)
