@@ -1,0 +1,5 @@
+# Merge drivers for the board, set up by council/hooks/council-sync.sh and the steward workflow.
+# board_data.json merges row by row (council/tools/board_merge.py).
+board/board_data.json merge=boardjson
+# council-board.html is built from board_data.json; a merge keeps one side and the page is rebuilt after.
+board/council-board.html merge=ours linguist-generated

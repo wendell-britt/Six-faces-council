@@ -30,6 +30,12 @@ rule="Standing rule: before you ask Wendell a question whose answer changes what
 pipeline_rule="Standing rule: a new feature starts as a spec kit in .specify/specs/<name>/ from council/spec-kit/ and runs the six-faces pipeline in council/pipeline.yaml. A step only Wendell can take goes on the Your steps tab on the council board (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps), never into chat."
 lessons() { grep -c '^      - date:' council/faces.yaml 2>/dev/null || echo 0; }
 
+# Merge drivers named in .gitattributes: the board's rows merge by id, and the built page is rebuilt.
+if [ -f council/tools/board_merge.py ]; then
+  git config merge.boardjson.driver "python3 council/tools/board_merge.py %O %A %B" 2>/dev/null
+  git config merge.ours.driver true 2>/dev/null
+fi
+
 if [ "$origin" = "$home_repo" ] && [ -z "${COUNCIL_SOURCE_BASE:-}" ]; then
   echo "Six-faces council: this repo is the home copy ($home_repo). $(lessons) face lessons in council/faces.yaml. Lessons and lens changes are made here."
   echo "$rule"
