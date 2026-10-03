@@ -21,6 +21,8 @@ synthesises without deciding, and Wendell rules on a board.
   standalone page, which now points to the tab.
 - `council/strands.py` lists a repo's open strands and where two would touch the same file. Sense and respond
   starts there.
+- `council/census.py` lists every branch main has not merged, with its last commit and a recommendation (keep,
+  review, or retire as an archive tag) for Wendell to rule on. It only reads.
 - `council/passes/` holds the council's passes on its own design, from pass five on.
 - `council/tools/voice_lint.py` is the house voice lint, shared with every council repo.
 - `board/` builds the board Wendell rules on: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
