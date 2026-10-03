@@ -760,6 +760,145 @@
    "auto": true,
    "pos": "The council gathers research notes, not prose, for the five ke standoff moves in Chapter 4: each restraining edge, its compound, the Control and Generate routes, and the cost of each, from canon you have already ruled. This stands unless you flip it.",
    "why": "Notes are not canonical prose, and Chapter 4 needs them whenever it is written. Source: the Guide's tab Council: What Next (2026-10-03), in the Art of War artifact."
+  },
+  {
+   "id": "mh-scope-only",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "Sprout's maker and shared hall land as scope only. No code for either starts before the slice's playtest gate passes, and the generators plan stays the current work. This stands unless you flip it.",
+   "why": "Sprout's CLAUDE.md says to work one task at a time, and the roadmap says no phase starts before its gate. The Regent's cast, Divergence, warns that going deeper and pushing forward at once cancel. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-input-chosen",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "What a player brings from their life is chosen, never typed into a story generator. The player picks one of Sprout's five channels and its need (Metal and a distinction, say), or skips, and can delete it with one action. This stands unless you flip it.",
+   "why": "Flirtcraft already works this way: the player confirms a posture with 'that is where I am, draw' (GRAMMAR.md:415-448). It is pass one's motif layer, built from your own vocabulary, and all three of pass one's imagined Players named privacy as a dealbreaker. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-motifs-five-channels",
+   "faces": [
+    "architect"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "The first list of real-life themes is Sprout's five channels and their needs: Fire needs an accounting, Water reconnection, Wood aliveness, Metal a distinction, Earth space. This answers pass one's question 3 from the record; flip it and that question comes back.",
+   "why": "You wrote that table (design.md:434-440, Proposed), and design.md:473 already notes the fork where ring weeds stand for blockers in the player's own life. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-one-quest",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "A course bonus, a player's SideQuest and a quest an AI agent drafts are one quest object, carrying its source, its channel, its review state and its maker's chosen name if they opt in. It ends as a BAR with a name and a date. Ink is the first candidate script format. This stands unless you flip it.",
+   "why": "The book's move: a BAR becomes 'one quest with a name and a date in it' (MTGOA ch3.md:905). Ink is MIT, checked in this pass. Pass one's position p2. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-two-clocks",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "The farm keeps Sprout's one clock, so nothing advances while the game is closed. The shared hall is a separate place with live time. This stands unless you flip it.",
+   "why": "One clock is Decided (design.md:303). A player is on the farm or in the hall, so neither clock breaks the other. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-maker-toolchain",
+   "faces": [
+    "architect"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "The maker is Sprout's existing toolchain made safe for players: the schema-built database editor, Tiled maps and the scripted generators, hosted in the browser, with validators gating every save. Player-made content uses only Sprout's own generated kit. This stands unless you flip it.",
+   "why": "You decided on RPG Maker-style tools in the web prototype (design.md:65). Today the editor runs on one machine and no map editor exists. Third-party art is not cleared for release (docs/license-audit.md). Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-no-rpgmaker-base",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "RPG Maker MZ is not the base for player-made content. This stands unless you flip it.",
+   "why": "Its licence forbids redistributing the engine without written consent (rpgmakerweb.com/eula), and design.md:65 already ruled it out. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-gate-zero",
+   "faces": [
+    "regent",
+    "challenger",
+    "sage"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "Before any build, Gate 0 runs three tests that need no code, each with its bar written before it runs: the reflection paper test, a maker test where someone outside the team makes one prop, map or quest and a second person plays it, and a hall test with practitioners over three sessions. This stands unless you flip it.",
+   "why": "Pass one's paper test, the Player daemon's maker test and the Skeptic's hall falsifier. The Challenger dissents on the hall itself and would cut it from the first build; this gate is how the Sage carries that dissent. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh-pass1-stand",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sprout maker 2",
+   "auto": true,
+   "pos": "Pass one's positions p3 to p7 stand: no shared space before consent and review work; AI agents wear a permanent badge and ask consent per person per session; no streaks, guilt messages or fake urgency; practitioners see aggregates by default; no quest from a transcript goes live without human review. This stands unless you flip it.",
+   "why": "They were settled on pass one's own page, which saved your overrules only in your browser, so this row puts them where your flip is recorded. Source: sprout docs/maker-and-hall/6FACE_PASS1_2026-10-03.md. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-slice-tab",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "The maker runs now as its own strand, and its first deliverable speeds your playtest: a slice tab in the database editor, so you can change the slice's text, edge numbers and playtest questions between sessions without editing a file. It refuses an invalid save. This stands unless you flip it.",
+   "why": "Your overrule: 'designed to streamline the playtest that we're doing.' The playtest kit names confusing text and the edge's width as the first changes to make, and no schema covers data/slice.json today. No open strand touches the editor. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-gate-zero-retired",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "Gate 0 is retired, and its two steps are off your list. It resolved no blocker that was still open: you answered whether to test the hall when you chose one live class, and your overrule on the intake changed what a reflection test would measure. The live class stays as the hall's first milestone. This stands unless you flip it.",
+   "why": "Your question: 'what blocker is this resolving?' The honest answer is none that was still open. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-intake-output",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "The intake's output is one move for the player's week, in their channel's domain. Fear leaves with one opportunity or threat to name; Anger with one boundary or goal; Sadness with one connection to make; Neutral with one practical need met or one pause taken; Joy with one act of delight or play. The farm verb rehearses it in the game, and a card outside the game says it plainly when they leave. This stands unless you flip it.",
+   "why": "Your overrule of chosen input and your five domains. The playtest kit already ends with a card outside the game, which is where you said the information can live. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-decision-log",
+   "faces": [
+    "regent"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "Your Calrunia ruling and the five domains are in Sprout's decision log (docs/decisions/calrunia-and-domains.md). design.md is not edited: adding a domain column to the channel table is yours to do. This stands unless you flip it.",
+   "why": "Sprout's CLAUDE.md: do not change story or game rules; design.md's lines are yours to update. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
   }
  ],
  "questions": [
@@ -1576,6 +1715,169 @@
      "c": "Today's text stays for all 19."
     }
    ]
+  },
+  {
+   "id": "mh-calrunia-hall",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout maker 2",
+   "q": "Is Sprout's shared hall aboard the Calrunia? In the book the Calrunia is a ship-school that 'puts in at worlds' and 'is the ship, not the setting'. Sprout's design says 'in Calrunia' as if it named the world.",
+   "why_you": "This is story and world canon, which is yours. The answer decides the hall's map and its kayfabe: whether a course is a class aboard and a player-made campaign is another port.",
+   "not_before": "No pass had read both the book (AUTHORS_NOTE.md:31-34, 89) and Sprout (design.md:283) before.",
+   "options": [
+    {
+     "v": "ship",
+     "label": "The hall is the ship; Sprout's world is one port",
+     "c": "Practitioners teach aboard, recruits carry what they learn back down, and player campaigns are other ports. design.md:283 needs your rewording."
+    },
+    {
+     "v": "world",
+     "label": "Calrunia is Sprout's world",
+     "c": "The book and the game use the name differently, and the hall needs its own frame inside the world."
+    },
+    {
+     "v": "later",
+     "label": "Decide later",
+     "c": "The hall is scoped without a frame, and its map waits on your answer."
+    }
+   ]
+  },
+  {
+   "id": "mh-course-bonus",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout maker 2",
+   "q": "Can a course bonus change what is playable in Sprout? You want courses that give in-game bonuses. Flirtcraft's rule is 'Nothing purchasable may change what is playable'.",
+   "why_you": "Money is reserved to you, and the answer decides how bonuses are built.",
+   "not_before": "Pass one never read Flirtcraft's rule (ROADMAP.md:68), so it did not see the collision.",
+   "options": [
+    {
+     "v": "practice",
+     "label": "Bonuses come from doing the practice and change story or look only",
+     "c": "Flirtcraft's rule carries into Sprout, and any course, paid or free, can grant them."
+    },
+    {
+     "v": "free",
+     "label": "Only free courses grant play bonuses",
+     "c": "Paid courses add teaching and story but nothing that changes play."
+    },
+    {
+     "v": "paid",
+     "label": "Paid courses may grant play bonuses",
+     "c": "Flirtcraft's rule does not carry into Sprout, and balance has to absorb purchased advantages."
+    }
+   ]
+  },
+  {
+   "id": "mh-first-for",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "sprout maker 2",
+   "q": "Who must Sprout's first shared version work for? This is pass one's question 1. Your answer on pass one's page was saved only in your browser, so no session can read it.",
+   "why_you": "It turns on who you can reach and which business you are building.",
+   "not_before": "Asked on pass one's page, which could not record answers.",
+   "options": [
+    {
+     "v": "player",
+     "label": "The player alone",
+     "c": "The solo mirror ships first, with no hall yet."
+    },
+    {
+     "v": "practitioner",
+     "label": "The practitioner with a class",
+     "c": "One space a coach invites clients into, with a light mirror inside it; client protections come first."
+    },
+    {
+     "v": "both",
+     "label": "Both, tested in one live class before any build (council recommends)",
+     "c": "Costs your time and no code, and tells you which build is right."
+    }
+   ]
+  },
+  {
+   "id": "mh-hosting",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout maker 2",
+   "q": "One hosted world, or worlds practitioners host? This is pass one's question 2, asked again because its answer was saved only in your browser.",
+   "why_you": "Ownership and openness are your values and your business call.",
+   "not_before": "Asked on pass one's page, which could not record answers.",
+   "options": [
+    {
+     "v": "one",
+     "label": "One hosted world you run",
+     "c": "Simplest, one privacy surface, a truly shared plot; you carry all hosting and safety duty."
+    },
+    {
+     "v": "open",
+     "label": "Open-source worlds anyone can host",
+     "c": "Practitioners own their spaces and data; privacy promises cannot be guaranteed on others' servers."
+    },
+    {
+     "v": "first",
+     "label": "One hosted world first, code and quest format published later (council recommends)",
+     "c": "Keeps it simple now and leaves hosting open; commits you to keep the quest format stable."
+    }
+   ]
+  },
+  {
+   "id": "mh-therapy",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "sprout maker 2",
+   "q": "Where does Sprout stand on therapy, given players will bring grief, caregiving and burnout? This is pass one's question 4, asked again because its answer was saved only in your browser.",
+   "why_you": "It is a risk stance, and it depends on whether you have clinician partners.",
+   "not_before": "Asked on pass one's page, which could not record answers.",
+   "options": [
+    {
+     "v": "never",
+     "label": "Story and practice, never therapy (council recommends)",
+     "c": "Crisis resources go to the player and nobody else is alerted; no diagnosis words anywhere."
+    },
+    {
+     "v": "clinicians",
+     "label": "Licensed clinicians as reviewers or partners",
+     "c": "Stronger claims and safer content; slower, and it costs money, which is yours to rule on."
+    }
+   ]
+  },
+  {
+   "id": "mh3-card-in-playtest",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "sprout maker 3",
+   "q": "Should this round of the slice playtest try the intake's output card? The slice's exit test asks whether a playtester can say why the edge changed without being told, and a card that names the five channels would tell them.",
+   "why_you": "You run the playtest and decide what it measures. The answer changes what the slice tab builds first.",
+   "not_before": "The output card did not exist until your overrule on the intake.",
+   "options": [
+    {
+     "v": "next",
+     "label": "Not this round; try the card in the next one",
+     "c": "The exit test stays clean. The slice tab builds text and numbers first."
+    },
+    {
+     "v": "now",
+     "label": "Yes, this round",
+     "c": "The card is built first, and the exit answers are read knowing the card came after them."
+    },
+    {
+     "v": "half",
+     "label": "Half the playtesters see it",
+     "c": "You compare the two halves, and each half is smaller."
+    }
+   ]
   }
  ],
  "causes": [
@@ -2203,6 +2505,71 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+   },
+   "mh-scope-only": {
+    "decision": "overrule",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-motifs-five-channels": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-two-clocks": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-maker-toolchain": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-no-rpgmaker-base": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-gate-zero": {
+    "decision": "overrule",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-pass1-stand": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-input-chosen": {
+    "decision": "overrule",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-one-quest": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh3-slice-tab": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "mh3-gate-zero-retired": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "mh3-intake-output": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "mh3-decision-log": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
    }
   },
   "questions": {
@@ -2374,6 +2741,42 @@
     "label": "Deferred: lower priority, and the work needs redoing once he is back in practice",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-20.json (six-faces-council)"
+   },
+   "mh-calrunia-hall": {
+    "decision": "world",
+    "label": "Calrunia is Sprout's world",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-course-bonus": {
+    "decision": "practice",
+    "label": "Bonuses come from doing the practice and change story or look only",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-first-for": {
+    "decision": "both",
+    "label": "Both, tested in one live class before any build (council recommends)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-hosting": {
+    "decision": "first",
+    "label": "One hosted world first, code and quest format published later (council recommends)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-therapy": {
+    "decision": "never",
+    "label": "Story and practice, never therapy (council recommends)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh3-card-in-playtest": {
+    "decision": "half",
+    "label": "Half the playtesters see it",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
    }
   },
   "causes": {
