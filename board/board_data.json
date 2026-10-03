@@ -3121,6 +3121,12 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-26.json (six-faces-council)"
+   },
+   "fm-build": {
+    "decision": "stands",
+    "label": "Merged by you",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-27.json (six-faces-council)"
    }
   },
   "questions": {

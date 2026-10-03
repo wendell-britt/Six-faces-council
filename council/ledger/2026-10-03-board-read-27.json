@@ -1,0 +1,19 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-27",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "The five moves build",
+ "convened_by": "wendell",
+ "invoked_from": "github",
+ "positions": {
+  "fm-build": {
+   "choice": "stands",
+   "how": "Wendell merged #19 at 2026-10-03T20:17Z after asking for its link"
+  }
+ },
+ "acted_on": [
+  "Routine trig_01M3SsNPPTDRts82YEu2uzox renamed 'Council: daily re-weigh and move' and given the move step",
+  "One run fired at once to check the loop end to end"
+ ]
+}
