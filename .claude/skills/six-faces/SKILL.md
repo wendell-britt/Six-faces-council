@@ -95,6 +95,14 @@ comes back to the Open tab when its date passes. Record it in `resolved` with `d
 pattern of what he puts off is data about priority (Wendell, board read 20, 2026-10-03). The rules are
 in `defer` in `council/pipeline.yaml`.
 
+**A deferred item comes back on a spaced schedule, with new context** (Wendell, 2026-10-03). Each deferral of
+the same item waits longer than the last: a week the first time, then twice the last wait. Start every board
+read with `python3 council/due.py`. For each item it lists as due, read its brief of what changed, have each
+face cast and write one line, and write the result onto the row as `review` in `board_data.json` on main,
+with a recommendation of take it up, defer again, retire, or reshape the question. Record a new deferral with
+`python3 council/due.py record`, which keeps every earlier one in `history`. The spec is
+`.specify/specs/spaced-deferral/spec.md`.
+
 **Deferral.** Each question and position row has a Defer button with a return date: in a week, in a
 month, or when Wendell asks. A deferred row waits on the Resolved tab and comes back to the Open tab
 when its date passes. Record it in `resolved` with `decision: deferred` and `until`, and do not ask
