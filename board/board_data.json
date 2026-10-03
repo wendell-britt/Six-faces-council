@@ -1372,6 +1372,21 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+   },
+   "test-root-ruler": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)"
+   },
+   "root-unpack-first": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)"
+   },
+   "root-pass-mark": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)"
    }
   },
   "questions": {

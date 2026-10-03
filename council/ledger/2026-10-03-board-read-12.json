@@ -1,0 +1,22 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-12",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "project-steering",
+  "question": "Does the council's first test run on root-game's first step?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "positions": {
+    "test-root-ruler": "stands",
+    "root-unpack-first": "stands",
+    "root-pass-mark": "stands"
+  },
+  "unsaved_positions": {
+    "test-flirtcraft-alert-second": "not saved; stands by default",
+    "separate-scorecards": "not saved; stands by default"
+  },
+  "acted_on": [
+    "Started the root-game test: unpack, gates one to three"
+  ]
+}
