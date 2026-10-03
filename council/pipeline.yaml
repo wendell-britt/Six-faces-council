@@ -31,6 +31,21 @@ outputs:
 
 steps_page: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps   # the Your steps tab; Wendell overruled a separate page at board read 8
 
+# Deferral. Wendell asked for it at board read 20 (2026-10-03), on the oracle drafts: "We need to be
+# able to defer projects so they don't get trapped on the board, but we are also collecting data
+# about priority". Any question or position row on the board has a Defer button with a return date.
+defer:
+  until: [week, month, ask]   # in a week, in a month, or when Wendell asks for it back
+  board: a deferred row leaves the Open tab and waits in the Deferred section of the Resolved tab.
+    It returns to the Open tab by itself when its date passes. A row deferred until he asks returns
+    only when he asks.
+  council: the council does not ask about a deferred item again before its date, and does not
+    re-raise it under a new id. Work on it stops where it stands; an open pull request stays open
+    and is marked deferred.
+  record: each deferral goes in the board read's ledger record and in resolved, with decision
+    deferred, the until date, and his steer. stats.py counts deferrals per project, because a
+    deferral is data about priority.
+
 # The reach test, applied to actions. A step goes to Wendell's checklist only if he is the only one
 # who can do it: his accounts, his money, his name, his eyes on the result, or a permission he holds.
 # Anything a session can do itself, it does.

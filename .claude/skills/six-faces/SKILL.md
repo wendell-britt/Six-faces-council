@@ -88,6 +88,20 @@ Read the store with `ArtifactData`: collections `positions`, `questions`, and th
 that face's entry in `faces.yaml`, quoted, with the source. A ruling that changes a term, a
 structure or a date goes in the repo's decision log where one exists.
 
+**A deferred item waits until its date.** Each question and position row has a Defer button with a
+return date: in a week, in a month, or when Wendell asks. A deferred row waits on the Resolved tab and
+comes back to the Open tab when its date passes. Record it in `resolved` with `decision: deferred` and
+`until`, and do not ask about it again before then. Every deferral stays in the ledger, because the
+pattern of what he puts off is data about priority (Wendell, board read 20, 2026-10-03). The rules are
+in `defer` in `council/pipeline.yaml`.
+
+**Deferral.** Each question and position row has a Defer button with a return date: in a week, in a
+month, or when Wendell asks. A deferred row waits on the Resolved tab and comes back to the Open tab
+when its date passes. Record it in `resolved` with `decision: deferred` and `until`, and do not ask
+about it again before then. Every deferral stays in the ledger, because the pattern of what he puts
+off is data about priority (Wendell, board read 20, 2026-10-03). The rules are in `defer` in
+`council/pipeline.yaml`.
+
 ## The feature pipeline
 
 A new feature runs the pipeline in `council/pipeline.yaml`. Wendell asked for it on 2026-10-02:

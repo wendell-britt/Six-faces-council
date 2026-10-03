@@ -67,6 +67,10 @@ council is one page, the Council Board: https://claude.ai/artifact/DxyShVS8tmvJy
   quote his steers where they bear on the question. Say in the pass that the board was read and
   when. If the board cannot be read in this session, say so in the reply and treat every question
   as unchecked against it.
+- **A deferred row waits until its date.** A row Wendell deferred sits in the Deferred section of the
+  Resolved tab with a return date, or with none if it waits until he asks. Do not ask about it again,
+  under its own id or a new one, before that date. The deferral itself is data about what he ranks
+  lower, so keep it in the record block.
 - **Add to the board through the home repo.** The board page is built from `board/board_data.json`
   in the home repo (`wendell-britt/six-faces-council`). A session without that repo does not
   republish the board, because the next build from the repo would overwrite the change. Write the

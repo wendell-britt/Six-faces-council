@@ -51,6 +51,10 @@ textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);
 .steer{flex:1 1 260px;min-width:0;display:grid;gap:6px}
 .save{font:inherit;font-size:.9rem;padding:6px 14px;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
 .state{font-size:.82rem;color:var(--muted);margin-top:6px;min-height:1.2em}
+.defer{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.85rem;color:var(--muted)}
+.defer select{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
+.defer button{font:inherit;font-size:.85rem;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
+.duenote{font-size:.85rem;color:var(--muted);margin:10px 0 0}
 .opts{display:grid;gap:8px;margin-top:4px}
 .opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;max-width:72ch}
 .opt:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
@@ -120,6 +124,7 @@ ol.st-steps{list-style:none;margin:0;padding:0}
   <div id="open-t"></div>
   <div id="open-p"></div>
   <div id="open-c"></div>
+  <p class="duenote" id="open-deferred" hidden></p>
 </section>
 
 <section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
@@ -131,6 +136,7 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 
 <section id="view-resolved" role="tabpanel" aria-labelledby="tab-resolved" hidden>
   <p class="lede" style="margin-top:14px">Every decision so far, with where it was recorded. To reopen one, say so in the context box on the Open tab.</p>
+  <div id="res-d"></div>
   <div id="res-q"></div>
   <div id="res-t"></div>
   <div id="res-c"></div>
@@ -156,9 +162,18 @@ function status(kind, id){
   if (r) return 'recorded';
   return 'open';
 }
-const isOpen = (kind, id) => status(kind, id) === 'open';
+const isOpen = (kind, id) => status(kind, id) === 'open' || (typeof isDueBack === 'function' && isDueBack(kind, id));
 
 function section(title, lede, html){ return html ? `<h2>${title}</h2>${lede?`<p class="lede">${lede}</p>`:''}${html}` : ''; }
+
+/* Deferring, Wendell 2026-10-03: "We need to be able to defer projects so they don't get trapped on the board,
+   but we are also collecting data about priority". A deferred item leaves the Open tab, keeps its steer, and
+   comes back by itself when its date passes. Each deferral is recorded in the ledger as priority data. */
+const UNTIL = [['week','in a week'],['month','in a month'],['ask','when I ask']];
+const deferCtl = (kind, id) => `<div class="defer"><span>Not now:</span><select id="du-${kind}-${id}" aria-label="Bring it back">${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
+const today = () => new Date().toISOString().slice(0,10);
+const isDeferredNow = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && (!r.until || r.until > today())); };
+const isDueBack = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && r.until && r.until <= today() && !live[kind][id]); };
 
 function qRow(q){
   const st = local.questions[q.id] || {choice:'', steer:''};
@@ -170,6 +185,7 @@ function qRow(q){
     <div class="opts">${q.options.map(o => `<label class="opt"><input type="radio" name="q-${q.id}" value="${esc(o.v)}" id="q-${q.id}-${esc(o.v)}"${st.choice===o.v?' checked':''}> <b>${esc(o.label)}</b><br><span class="oc">${esc(o.c)}</span></label>`).join('')}</div>
     <div class="ctl"><div class="steer"><textarea id="qs-${q.id}" placeholder="Steer, in your words">${esc(st.steer)}</textarea></div>
     <div><button type="button" class="save" data-kind="questions" data-id="${q.id}">Save</button><div class="state" id="st-questions-${q.id}"></div></div></div>
+    ${deferCtl('questions', q.id)}
   </section>`;
 }
 const TACT = [['adopt','Adopt'],['not_yet','Not yet'],['retire','Retire'],['not_a_term','Not a term']];
@@ -195,6 +211,7 @@ function pRow(p){
     <div class="ctl"><div class="seg" role="group" aria-label="Status"><button type="button" data-pick="positions" data-id="${p.id}" data-v="stands" aria-pressed="${st.status==='stands'}">Stands</button><button type="button" class="o" data-pick="positions" data-id="${p.id}" data-v="overrule" aria-pressed="${st.status==='overrule'}">Overrule</button></div>
     <div class="steer"><textarea id="ps-${p.id}" placeholder="Steer: what the face should carry forward">${esc(st.steer)}</textarea></div>
     <div><button type="button" class="save" data-kind="positions" data-id="${p.id}">Save</button><div class="state" id="st-positions-${p.id}"></div></div></div>
+    ${deferCtl('positions', p.id)}
   </section>`;
 }
 function cRow(c){
@@ -208,13 +225,14 @@ function doneRow(kind, item, title){
   const s = status(kind, item.id), r = R[kind][item.id], l = live[kind][item.id];
   let dec, where;
   if (s === 'saved'){
-    dec = kind==='questions' ? (item.options.find(o=>o.v===l.choice)||{}).label || 'Steer only'
+    dec = l.deferred ? 'Deferred, back ' + ((UNTIL.find(u=>u[0]===l.until)||[0,'when you ask'])[1])
+        : kind==='questions' ? (item.options.find(o=>o.v===l.choice)||{}).label || 'Steer only'
         : kind==='terms' ? (LABEL[l.action]||l.action) + (l.rename?` as "${l.rename}"`:'')
         : kind==='causes' ? (l.kept ? 'Kept' : `Renamed "${l.name}"`)
         : LABEL[l.status]||l.status;
     where = `<div class="w pending">Saved, waiting to be recorded. Tell Claude you saved.</div>`;
   } else {
-    dec = r.label || LABEL[r.decision] || r.decision;
+    dec = r.decision === 'deferred' ? (r.until ? 'Deferred until ' + r.until : 'Deferred until you ask') : (r.label || LABEL[r.decision] || r.decision);
     where = `<div class="w">Recorded ${esc(r.recorded)} · <code>${esc(r.record.replace('ledger/',''))}</code></div>`;
   }
   const cls = /retire|overrul/i.test(dec) ? 'd retire' : 'd';
@@ -233,10 +251,19 @@ function render(){
   const nOpen = oq.length + ot.length + op.length + oc.length;
   document.getElementById('open-empty').hidden = nOpen > 0;
   document.getElementById('n-open').textContent = nOpen;
+  const nDef = DATA.questions.filter(q => isDeferredNow('questions', q.id) || (live.questions[q.id]||{}).deferred).length
+             + DATA.positions.filter(p => isDeferredNow('positions', p.id) || (live.positions[p.id]||{}).deferred).length;
+  const dn = document.getElementById('open-deferred'); dn.hidden = !nDef;
+  dn.textContent = nDef ? `${nDef} deferred. They wait on the Resolved tab and come back when their date passes.` : '';
 
-  const rq = DATA.questions.filter(q => !isOpen('questions', q.id));
+  const deferred = kind => item => (isDeferredNow(kind, item.id) && !live[kind][item.id]) || (live[kind][item.id]||{}).deferred;
+  const dq = DATA.questions.filter(q => !isOpen('questions', q.id) && deferred('questions')(q));
+  const dp = DATA.positions.filter(p => !isOpen('positions', p.id) && deferred('positions')(p));
+  document.getElementById('res-d').innerHTML = section('Deferred', 'Not now, not gone. Each comes back to the Open tab when its date passes, and every deferral is kept as data about priority.',
+    dq.map(q => doneRow('questions', q, esc(q.q))).join('') + dp.map(p => doneRow('positions', p, esc(p.pos))).join(''));
+  const rq = DATA.questions.filter(q => !isOpen('questions', q.id) && !deferred('questions')(q));
   const rt = DATA.terms.filter(t => !isOpen('terms', t.id));
-  const rp = DATA.positions.filter(p => !isOpen('positions', p.id));
+  const rp = DATA.positions.filter(p => !isOpen('positions', p.id) && !deferred('positions')(p));
   const rc = DATA.causes.filter(c => !isOpen('causes', c.id));
   document.getElementById('res-q').innerHTML = section('Questions', '', rq.map(q => doneRow('questions', q, esc(q.q))).join(''));
   document.getElementById('res-t').innerHTML = section('Terms', '', rt.map(t => doneRow('terms', t, `<b>${esc(t.term)}</b> <span class="lede">· ${esc(t.repo)}</span>`)).join(''));
@@ -244,7 +271,7 @@ function render(){
   document.getElementById('res-p').innerHTML = section('Positions', '', rp.map(p => doneRow('positions', p, esc(p.pos))).join(''));
   const steers = DATA.steers_recorded.map(s => `<div class="done"><div class="t">${esc(s.text)}</div><div class="d">Steer</div><div class="w">Recorded · <code>${esc(s.record.replace('ledger/',''))}</code></div></div>`).join('');
   document.getElementById('res-s').innerHTML = section('Steers', '', steers);
-  document.getElementById('n-resolved').textContent = rq.length + rt.length + rp.length + rc.length + DATA.steers_recorded.length;
+  document.getElementById('n-resolved').textContent = dq.length + dp.length + rq.length + rt.length + rp.length + rc.length + DATA.steers_recorded.length;
 
   const ctx = document.getElementById('ctx');
   if (document.activeElement !== ctx) ctx.value = (liveSteer && liveSteer.savedAt > DATA.steer_recorded_through) ? (liveSteer.text || '') : '';
@@ -274,6 +301,15 @@ openView.addEventListener('click', async e => {
     if (k === 'positions') local.positions[id] = {...(local.positions[id] || {steer:''}), status:b.dataset.v};
     b.parentElement.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
     if (k === 'positions') document.getElementById('p-'+id).classList.toggle('over', b.dataset.v === 'overrule');
+    return;
+  }
+  if (b.dataset.defer){
+    const kind = b.dataset.defer, id = b.dataset.id, st = document.getElementById(`st-${kind}-${id}`);
+    const steerEl = document.getElementById((kind === 'questions' ? 'qs-' : 'ps-') + id);
+    const body = {deferred:true, until:document.getElementById(`du-${kind}-${id}`).value, steer:steerEl ? steerEl.value : '', savedAt:new Date().toISOString()};
+    if (!db){ st.textContent = 'Not saved in this view.'; return; }
+    try { await db.doc(`${kind}/${id}`).set(body); live[kind][id] = body; render(); }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
     return;
   }
   if (!b.dataset.kind) return;
