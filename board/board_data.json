@@ -1271,6 +1271,38 @@
    "auto": true,
    "pos": "The daily session's first Wake up found nine unticked boxes in four specs on work that has shipped: fm-levels, #16, the routine's move step, the first routine fire, sd-ship, the oracle drafts' history, the spaced-deferral ledger, daemons-ship and iching-ship. A research note lists each box beside the record it rests on, and three boxes that are still open. The next Clean up run ticks the nine. This merges at your next board read unless you flip it.",
    "why": "A session that reads tasks.md for work would see nine jobs already done, and Open up would count finished work as abandoned. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/21"
+  },
+  {
+   "id": "cost-quiet-wakes",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "10",
+   "auto": true,
+   "pos": "A session drops its watch on a pull request once the pull request merges, closes, or is left to the steward and your label, and it keeps a safety check-in only where checks run that GitHub does not report. A wake that needs nothing still rereads the whole session, so fewer wakes cost less. This stands unless you flip it.",
+   "why": "Many of tonight's wakes in this session were notifications that needed nothing from it. Source: council/passes/6FACE_PASS10_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "cost-daily-script",
+   "faces": [
+    "architect"
+   ],
+   "pass": "10",
+   "auto": true,
+   "pos": "The daily session's next Grow up run builds one script for the steps that need no judgment: pulling main, the due check, the day's plan, the board build, the voice check and the publish merge. Its first run made 39 tool calls, and each one rereads the run's context. This stands unless you flip it.",
+   "why": "Grow up is your move for raising throughput, and this is throughput the record measured. Source: council/passes/6FACE_PASS10_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "cost-per-row",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "10",
+   "auto": true,
+   "pos": "Every daily record carries its cost, read after the run from the run's own record, and every report a session gives you names what that session cost. Level proposals cite cost per row that stood, so a model or level change rests on what each useful row cost. This stands unless you flip it.",
+   "why": "The first daily run cost $2.55 for one row that is still waiting. Without the cost in the same record as the rows, the level rule cannot weigh tokens, which your overrule of fm-one-row asked for. Source: council/passes/6FACE_PASS10_2026-10-03.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -2483,7 +2515,30 @@
     {
      "v": "smaller",
      "label": "Try the smaller model",
-     "c": "The council starts a new standing session on the smaller model and points the routine at it. The fresh-session run on the smaller model cost $0.54, though it did less. Each run's record shows whether the work holds up, and the switch back is one change."
+     "c": "The council starts a new standing session on the smaller model and points the routine at it. The smaller model halves input, output and cache writes, but rereading costs the same $0.20 per million tokens on both, so the first run would have cost about $1.56 instead of $2.21 at the same token counts, near 30% less. If the smaller model needs more turns, the saving shrinks. Each run's record shows cost per row, and the switch back is one change."
+    }
+   ]
+  },
+  {
+   "id": "cost-session-shape",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "10",
+   "q": "Should council work move into short sessions that hand off through the repo, starting with this one?",
+   "why_you": "It changes where you talk to the council. This session has cost $196.44 over two days, and at 679,000 tokens of context every tool call rereads about $0.14 before it does anything.",
+   "not_before": "The costs were first read together tonight, in pass ten.",
+   "options": [
+    {
+     "v": "short",
+     "label": "Short sessions, starting now",
+     "c": "This session writes a handoff into the repo and takes on no new work. For your next board read you open a new session in the council's repo and say updated. A fresh session starts near 67,000 tokens, a tenth of this one. It forgets this chat, so whatever it needs has to be in the repo, the board or the handoff."
+    },
+    {
+     "v": "keep",
+     "label": "Keep this session as the home thread",
+     "c": "Nothing changes for you. Each message keeps costing at least $0.14 before any work, and more as the thread grows, until the platform summarizes it."
     }
    ]
   }
