@@ -45,7 +45,9 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
    questions, and names where it would overreach. The face uses what helps, says which daemon it came
    from, and stops a daemon where its overreach line says. A daemon's questions go through the reach test
    like any other. Before reading a report, the face saves it and runs `python3 council/daemons/check_report.py
-   <report> [--research]`; a report that fails goes back to its daemon once. No daemon hands work to another.
+   <report> [--research]`; a report that fails goes back to its daemon once. A report that passes is kept: `python3 council/daemons/save_report.py
+   <report> --pass <id> --daemon <name> --face <face>` copies it to `council/daemons/reports/` with a JSON sidecar of
+   its claim, quote and link pairs, unlabelled until a person reads them. No daemon hands work to another.
    The face, not the daemon, judges a report, and spot-checks its links when the report is research. The pass
    record carries the subagents' token count.
 6. **Verdicts table.** One row per face, one column per question.
