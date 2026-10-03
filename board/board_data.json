@@ -2550,6 +2550,26 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh3-slice-tab": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "mh3-gate-zero-retired": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "mh3-intake-output": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "mh3-decision-log": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
    }
   },
   "questions": {
@@ -2744,6 +2764,12 @@
     "label": "Story and practice, never therapy (council recommends)",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh3-card-in-playtest": {
+    "decision": "half",
+    "label": "Half the playtesters see it",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
    }
   },
   "causes": {
