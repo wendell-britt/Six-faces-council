@@ -2311,6 +2311,52 @@
      "c": "Maker work stays on what speeds the playtest, and the map tab starts once the round's logs are read."
     }
    ]
+  },
+  {
+   "id": "dy-access",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "daily",
+   "q": "The first daily run wrote its research note and then could not save it, because the scheduled session has no access to the council's repo. How should the daily session get that access?",
+   "why_you": "Both ways spend your account differently, and one needs a step from you. The answer decides how the daily session is set up.",
+   "not_before": "The first run, fired by hand at 20:18 UTC today, was the first time a scheduled session tried to push.",
+   "options": [
+    {
+     "v": "standing",
+     "label": "One standing session, woken each day",
+     "c": "The council starts one session with the repo attached, and the routine wakes that session each day instead of starting a new one. You have no step. Its memory grows between summaries, so its runs cost more than a fresh one, and the records will show by how much."
+    },
+    {
+     "v": "routine-page",
+     "label": "You attach the repo to the routine",
+     "c": "Every run stays a fresh session, near the first run's 54 cents. You add the council's repo on the routine's page in claude.ai, and it goes on your steps tab. I could not open that page from here, so the step may need adjusting."
+    }
+   ]
+  },
+  {
+   "id": "dy-network",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "daily",
+   "q": "The cloud environment blocks most research sites, so Wake up research can quote little from outside. Should the environment allow them?",
+   "why_you": "The network setting is yours to change, and it decides what every session in this environment can reach.",
+   "not_before": "The first daily run found it today: it named Wikipedia, arXiv and supermemo.guru as blocked.",
+   "options": [
+    {
+     "v": "keep",
+     "label": "Keep the network as it is",
+     "c": "Research quotes what the network reaches and names blocked sources as leads, as the first run did."
+    },
+    {
+     "v": "allow",
+     "label": "Allow research sites",
+     "c": "You add the sites under Allowed domains in the environment's settings, keeping the package-manager list. It goes on your steps tab with the exact place to do it."
+    }
+   ]
   }
  ],
  "causes": [
