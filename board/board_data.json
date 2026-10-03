@@ -3804,6 +3804,12 @@
     "label": "Council and build tooling only (said in chat; asset and story pipelines a later pass)",
     "recorded": "2026-10-03",
     "record": "ledger/2026-10-03-jev-pass.json"
+   },
+   "cost-jev": {
+    "decision": "retired",
+    "label": "Answered from the record: Jev is TypeSafe's Jev, which selects, scores and verifies without generating text (rows jev-select-only to jev-spec-first, another session's pass). The question failed the reach test.",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)"
    }
   },
   "causes": {
