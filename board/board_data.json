@@ -974,6 +974,47 @@
    "auto": true,
    "pos": "The council's home repo gets a working-rules file that every session loads on every turn. It says every question for you goes on this board, and a chat reply only names the new rows. For council work, friendcraft's rule that a reply ends with \"the ask, stated as a question\" means naming the board rows that wait on you; that reading is the session's. This merges at your next board read unless you flip it.",
    "why": "You asked what happened. The board rule reached the session only once, at its start. friendcraft's rule reached it on every turn, and when the long session was summarized, the summary kept friendcraft's rule and dropped the board's. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/15"
+  },
+  {
+   "id": "sm-no-verdict",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout story 1",
+   "auto": true,
+   "pos": "In Sprout's story mirror, no reading of the player is a bad ending, and no character's line says something is wrong with the player. A Fire player who takes from the well hears what that path gave them and what it costs, never that they are a taker. This stands unless you flip it.",
+   "why": "Your ruling on the maker and hall: story and practice, never therapy. The Shaman's standing test asks whether a line says something is wrong with them or something about what they have learned. Source: sprout docs/story-mirror/6FACE_PASS1_2026-10-03.md (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "sm-reading-first",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout story 1",
+   "auto": true,
+   "pos": "The reading (which play counts toward each channel, and toward taking or returning) is written down and brought to you before any character's lines are drafted. It adds tracked counts and no new rules. This stands unless you flip it.",
+   "why": "If writers draft first, each one invents their own reading. Sprout's CLAUDE.md keeps game rules yours, and the reading changes none. Source: sprout docs/story-mirror/6FACE_PASS1_2026-10-03.md (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "sm-report-gate",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout story 1",
+   "auto": true,
+   "pos": "No voiced scene is marked decided until the mirror-player report shows two opposite players (a Fire player who takes, a Water player who returns) hearing clearly different stories at that scene. A scene that needs more than seven voices gets cut back. This stands unless you flip it.",
+   "why": "The Challenger's falsification test: if opposite players hear the same story, the mirror has failed whatever the data says. Source: sprout docs/story-mirror/6FACE_PASS1_2026-10-03.md (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "sm-show-in-fiction",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "sprout story 1",
+   "auto": true,
+   "pos": "Inside the game's story, characters never name the player's reading out loud. They show it through who speaks and what they notice. At the end of each act, outside the story, a card names the player's pattern in the real-life domains' words (Fire: boundaries and goals, and so on). This stands unless you flip it.",
+   "why": "design.md says play teaches 'with no lesson screen', and Yun names borrowed mana 'once and without emphasis'. Your chosen-input ruling says 'when players leave the game- they know how to apply what they learned to real life'. The two read together give this. Source: sprout docs/story-mirror/6FACE_PASS1_2026-10-03.md (branch claude/project-thread-1754kb)"
   }
  ],
  "questions": [
@@ -1997,6 +2038,71 @@
      "v": "daily",
      "label": "Every day",
      "c": "Everything except the one-hour and six-hour rungs comes back prepared. It uses your account seven times a week."
+    }
+   ]
+  },
+  {
+   "id": "sm-moment",
+   "faces": [
+    "architect"
+   ],
+   "pass": "sprout story 1",
+   "q": "For Sprout's story mirror: what is one moment you already picture? A player who plays a certain way, and what they hear at a certain point.",
+   "why_you": "Only you hold the picture. It becomes the first case the mirror-player checker must reproduce, so it decides what gets tested and drafted first.",
+   "not_before": "You chose the story as a mirror today, on a card in the project thread.",
+   "options": [
+    {
+     "v": "mine",
+     "label": "I'll write my own in the steer box",
+     "c": "Your moment becomes the first test case, word for word."
+    },
+    {
+     "v": "fire-hearing",
+     "label": "Draft: a Fire player who takes hears Elder Calloway at the hearing",
+     "c": "Calloway accuses that player of hunger at the exile hearing. A Water player would hear grief named there instead."
+    },
+    {
+     "v": "water-report",
+     "label": "Draft: a Water player who returns hears Old Tam read the first report",
+     "c": "Old Tam reads the first shipping report as a letter to the forest, not a tally."
+    },
+    {
+     "v": "later",
+     "label": "Decide later",
+     "c": "The council drafts the reading's definition first and holds the test case."
+    }
+   ]
+  },
+  {
+   "id": "sm-act1-voices",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "sprout story 1",
+   "q": "Who carries Earth and Fire in Sprout's Act I? Old Tam already carries Water, Mother Ede carries Wood, and Cael and Mira carry Metal.",
+   "why_you": "Tying characters to elements is story canon, which is yours. The answer decides who speaks in every Act I scene where the player's leading channel is Earth or Fire.",
+   "not_before": "The cast table by element was first drafted today. The record rules out Master Yun for Earth, because he keeps the Argyran (Metal) stream.",
+   "options": [
+    {
+     "v": "halloran-brannock",
+     "label": "Halloran for Earth, Brannock for Fire",
+     "c": "Both are already Earth and Fire by their bouts, so nothing in the cast changes, but both need more lines than they have."
+    },
+    {
+     "v": "halloran-sorrel",
+     "label": "Halloran for Earth, Sorrel for Fire",
+     "c": "The rival gets a fixed element, which narrows bout 6 and 8's design, where Sorrel counters whatever the player is."
+    },
+    {
+     "v": "sorrel-mirror",
+     "label": "Sorrel mirrors whichever element leads",
+     "c": "Sorrel's last bout already uses the player's own elements. Halloran and Brannock stand in when Sorrel is away."
+    },
+    {
+     "v": "three-voices",
+     "label": "Act I has three voices; Earth and Fire start in Act II",
+     "c": "The Challenger's choice: less Act I writing, but a player leading from Earth or Fire hears nobody recognize them until the forest."
     }
    ]
   }
