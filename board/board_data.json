@@ -1154,6 +1154,17 @@
    "auto": true,
    "pos": "The hearing draft assumes that what Sorrel exposes at the wall is the player's bond with a forest spirit. Every voiced line is written to that. This stands unless you flip it and say what Sorrel exposes.",
    "why": "design.md does not say what is exposed. Every player has a spirit ally from milestone 5, settlers may not enter the forest, and the well kills a bonded spirit, so the bond is the one secret every player carries into bout 8. Source: sprout story/scenes/m6_hearing.json (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "fm-build",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "9",
+   "auto": true,
+   "pos": "The daily session's move step merges at your next board read unless you flip this. From the next daily run on, each run takes one of your five moves after the re-weigh, at level one, in the home repo only, inside the limits you let stand. At that read the session adds your merge label to the pull request, and then fires one run to check the whole loop.",
+   "why": "Every gate in the spec is met: you ruled on all six of pass nine's rows, and #16 merged. Tested on scratch data: the rotation, a level-up proposal after five rows stood, an overrule proposal, and a refusal of extra rows. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/19"
   }
  ],
  "questions": [
