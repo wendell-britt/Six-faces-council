@@ -3060,6 +3060,21 @@
     "recorded": "2026-10-03",
     "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
    },
+   "sm-reading-signals": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-reading-no-loans": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-reading-recent": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+   },
    "mh4-map-feel": {
     "decision": "stands",
     "recorded": "2026-10-03",
