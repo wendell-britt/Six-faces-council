@@ -8,7 +8,9 @@ CLAUDE.md, this file and the board.
 
 - **The board** (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) waits on Wendell for: `dy-model`,
   `dy-limit-wording` (#20), `dy-research-handoff`, `dy-2026-10-03-wake` (#21), `cost-quiet-wakes`,
-  `cost-daily-script`, `cost-per-row`, `cost-short-rule` (#24) and `cost-jev`. Read the store for answers saved
+  `cost-daily-script`, `cost-per-row`, `cost-short-rule` (#24). `cost-jev` is retired: Jev is TypeSafe's Jev, and another session's `jev-` rows and
+  its trial spec (`jev-spec-first`, bars-engine) carry that work. Wendell named Jev beside short sessions as a way to
+  save tokens; once the trial reports, the short-sessions rule can say where Jev takes judging work off the large model. Read the store for answers saved
   after 2026-10-03T22:40Z, record them in a ledger record, and republish.
 - **Pull requests:** #20, #21 and #24 wait only on Wendell's ruling and the steward. Merge none; add the
   `automerge` label only when he says to merge.
