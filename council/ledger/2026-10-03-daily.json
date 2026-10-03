@@ -17,9 +17,16 @@
  ],
  "usage": {
   "session": "session_011mcRZ4vDnnis99dnptvdmu",
-  "input_tokens": 6,
-  "output_tokens": 1303,
-  "cost_usd": 0.41
+  "model": "claude-opus-5-5",
+  "input_tokens": 6522,
+  "output_tokens": 17435,
+  "cache_read_tokens": 4528759,
+  "cache_write_tokens": 116798,
+  "cost_usd": 2.21,
+  "after_run": {
+   "what": "checking pull request #21's steward check",
+   "cost_usd": 0.34
+  }
  },
- "usage_note": "get_session's running total for the whole session at 21:25 UTC, setup turn included; it could not be split by turn, and it read before this turn's later work was counted (cache reads 196026, cache writes 42757)"
+ "usage_note": "Corrected 2026-10-03 21:50 UTC from the run's own result event (list_events, kind result, modelUsage). The run first recorded $0.41, read from get_session before its turn was counted."
 }
