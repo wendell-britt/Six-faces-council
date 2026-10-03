@@ -963,6 +963,17 @@
    "auto": true,
    "pos": "The council gains a lesson from your words of 2026-10-03, \"These questions shouldn’t be showing up here\": every question for you goes on this board, and a chat reply only says that the board has new rows. A session that writes a question in chat has skipped the reach test. It goes into faces.yaml at your next board read unless you flip it.",
    "why": "Three questions reached you in chat today. The rule already existed in the skill, \"The board is the only home for positions and questions\", and the session did not apply it. Source: your message in chat, 2026-10-03."
+  },
+  {
+   "id": "home-claude-md",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "8",
+   "auto": true,
+   "pos": "The council's home repo gets a working-rules file that every session loads on every turn. It says every question for you goes on this board, and a chat reply only names the new rows. For council work, friendcraft's rule that a reply ends with \"the ask, stated as a question\" means naming the board rows that wait on you; that reading is the session's. This merges at your next board read unless you flip it.",
+   "why": "You asked what happened. The board rule reached the session only once, at its start. friendcraft's rule reached it on every turn, and when the long session was summarized, the summary kept friendcraft's rule and dropped the board's. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/15"
   }
  ],
  "questions": [
