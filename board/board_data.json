@@ -1977,6 +1977,24 @@
     "label": "Bring the oracle work onto current main",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "fc-binds-yes": {
+    "decision": "fix-first",
+    "label": "Fix the 30 hits first, and show me each one before and after",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)"
+   },
+   "fc-storefront-yes": {
+    "decision": "merge",
+    "label": "Merge it as built, analytics and all",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)"
+   },
+   "fcm-oracle-yes": {
+    "decision": "lint-then-read",
+    "label": "Clear the lint hits first, then show me the source changes in batches",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)"
    }
   },
   "causes": {

@@ -1,0 +1,32 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-16",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "The binds lint, the storefront's analytics, and how the oracle rewrites are read",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "fc-binds-yes": {
+      "choice": "fix-first",
+      "saved_at": "2026-10-03T01:20:47Z"
+    },
+    "fc-storefront-yes": {
+      "choice": "merge",
+      "saved_at": "2026-10-03T01:20:58Z"
+    },
+    "fcm-oracle-yes": {
+      "choice": "lint-then-read",
+      "saved_at": "2026-10-03T01:21:15Z"
+    }
+  },
+  "steps": {
+    "council-retire-branches": "none ticked yet"
+  },
+  "acted_on": [
+    "Rewrite only the 30 flagged binds sentences; show each before and after; merge flirtcraft#7 on Wendell's yes to the list",
+    "flirtcraft#8 merges as built, HeyCatch included, once #7 has merged",
+    "Clear the oracle port's lint hits in a separate commit, then show the source changes file by file"
+  ]
+}
