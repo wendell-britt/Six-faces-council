@@ -1495,6 +1495,60 @@
      "c": "The pilot tests the reader's path from Player to Game Master directly, with people who finished in 2020 helping to host people starting now."
     }
    ]
+  },
+  {
+   "id": "fcm-oracle-reread",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "q": "The council re-read batches 3 to 13 with the editorial pass. Of 198 changes, 24 survive whole. Most are prompts that became answerable from the drawer's own week: \"How many of the last five times we saw each other did I set up?\" replaces \"What has actually come back to me here?\" The other 174 fail or only split a sentence, and main's text stays for them. Each survivor is listed with today's text, the new text and what the card asks: https://github.com/wendell-britt/friendcraft-manuacript/blob/strand/oracle-port/review/batches/REREAD_2026-10-03.md",
+   "why_you": "It is your oracle's prose.",
+   "not_before": "The re-read finished tonight. The council checked every survivor itself and overturned two of the readers' verdicts.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "Yes to all 24",
+     "c": "The 24 go onto the cards. The oracle branch is cut down to them, plus the translation analysis, the reference images and the tools, and comes back as one pull request."
+    },
+    {
+     "v": "some",
+     "label": "Some yes, some no",
+     "c": "Write the numbers you reject (such as b13-086) in the note. The rest go in the same way."
+    },
+    {
+     "v": "none",
+     "label": "None",
+     "c": "Main's text stays everywhere. Only the non-prose parts of the branch come over."
+    }
+   ]
+  },
+  {
+   "id": "fcm-oracle-parts",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "q": "In 19 more changes, one clause is better and the rest is not. For example, in \"Asking gets the answer. Watching gets a better guess.\" the second sentence says something main's card does not. The council has not combined these clauses with main's text, because new wording is yours. What should happen to them? They are in the same file, under Survive in part.",
+   "why_you": "Combining a clause with the old sentence writes new card text, which is yours to write or to ask for.",
+   "not_before": "The re-read found them tonight. Pass seven's dissent was about this: the Diplomat wanted drafts and the Challenger refused.",
+   "options": [
+    {
+     "v": "draft",
+     "label": "Draft the 19 as full sentences for me to read",
+     "c": "The council writes each one as a proposal, before and after, and nothing goes in without your yes."
+    },
+    {
+     "v": "mine",
+     "label": "I will write them myself",
+     "c": "The clauses stay in the file for you."
+    },
+    {
+     "v": "drop",
+     "label": "Drop them",
+     "c": "Main's text stays for all 19."
+    }
+   ]
   }
  ],
  "causes": [
