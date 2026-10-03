@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-19",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "editorial",
+  "question": "The oracle re-read's survivors",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "fcm-oracle-reread": {
+      "choice": "yes",
+      "saved_at": "2026-10-03T04:15:41Z"
+    },
+    "fcm-oracle-parts": {
+      "choice": "draft",
+      "saved_at": "2026-10-03T04:15:55Z"
+    }
+  },
+  "steps": {
+    "council-retire-branches": "none ticked yet"
+  },
+  "acted_on": [
+    "The 24 survivors go onto the cards on a fresh branch from main, with the branch's non-prose parts",
+    "The 19 partial survivors are drafted as full sentences for Wendell to read"
+  ]
+}

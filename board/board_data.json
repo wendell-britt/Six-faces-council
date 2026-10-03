@@ -2328,6 +2328,18 @@
     "label": "Re-read batches 3 to 13 with the editorial pass, and bring only what passes",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+   },
+   "fcm-oracle-reread": {
+    "decision": "yes",
+    "label": "Yes to all 24",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)"
+   },
+   "fcm-oracle-parts": {
+    "decision": "draft",
+    "label": "Draft the 19 as full sentences for me to read",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)"
    }
   },
   "causes": {
