@@ -49,8 +49,12 @@ defer:
   # deferred come back and the council can weigh in on them in new context." Spec:
   # .specify/specs/spaced-deferral/. The numbers are the council's (pass eight, position sd-intervals).
   spaced:
-    first_days: 7     # the first spaced deferral of an item
-    growth: 2         # each later deferral waits this many times the last wait, whatever that wait was
+    # Wendell, 2026-10-03: "The spaced repetition of deferrals should start with 1 hr to 6 hours to 24 hours
+    # to 3 days to a week to 2 weeks to a month". It replaced the council's week-then-double (pass eight).
+    ladder_hours: [1, 6, 24, 72, 168, 336, 720]
+    step: >
+      A spaced deferral waits the first rung longer than the item's last wait, so a wait he set by hand
+      counts. Past the top rung it stays at a month. Both readings are the session's, not his.
     retire_after: none   # no cap; the Challenger's dissent is in pass eight
     history: every deferral of an item stays in history on its resolved entry, also after he takes it up.
       Record one with python3 council/due.py record, which computes the date the way the board does.
@@ -58,8 +62,11 @@ defer:
     when: >
       once a week, in a scheduled session that starts fresh (Wendell, board question sd-when,
       2026-10-03, "On its own"), and also at the start of every board read. Either way,
-      python3 council/due.py lists what is due and what changed in each item's project since he
-      deferred it. A week with nothing due ends there, with nothing written and nothing published.
+      python3 council/due.py --ahead 7 lists what is due now or within the coming week, and what
+      changed in each item's project since he deferred it (Wendell, 2026-10-03: "they should prepare
+      items due in the coming week"). A week with nothing due ends there, with nothing written and
+      nothing published. An item on a rung shorter than a week can come back before any run reaches
+      it, and then it waits on the Open tab with a note until a session re-weighs it.
     routine: "'Council: re-weigh due deferrals', Mondays 15:45 UTC"
     how: each face casts and writes one line on what changed. The council recommends one of take it up,
       defer again, retire, or reshape the question. All of it is written onto the row as review, on main,

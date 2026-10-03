@@ -175,20 +175,24 @@ function section(title, lede, html){ return html ? `<h2>${title}</h2>${lede?`<p 
    comes back by itself when its date passes. Each deferral is recorded in the ledger as priority data. */
 const UNTIL = [['week','in a week'],['month','in a month'],['ask','when I ask']];
 /* Spaced repetition, Wendell 2026-10-03: "We want to use spaced repetition so that tasks that are deferred come back and
-   the council can weigh in on them in new context." The numbers are the council's (pass eight, position sd-intervals):
-   the first spaced deferral waits a week, and each later deferral of the same item doubles the last wait.
-   council/due.py holds the same rule, and the session that records a deferral uses it. */
-const FIRST_DAYS = 7, GROWTH = 2;
+   the council can weigh in on them in new context." The ladder is Wendell's, the same day: "1 hr to 6 hours to 24 hours to
+   3 days to a week to 2 weeks to a month". A spaced deferral steps to the first rung longer than the item's last wait, and
+   past the top it stays at a month; those two readings are the session's. council/due.py holds the same ladder, and the
+   session that records a deferral uses it. */
+const LADDER = [1, 6, 24, 72, 168, 336, 720];
+const HUMAN = {1:'1 hour', 6:'6 hours', 24:'1 day', 72:'3 days', 168:'1 week', 336:'2 weeks', 720:'1 month'};
+const human = h => HUMAN[h] || (h < 24 ? h + ' hours' : Math.round(h / 24) + ' days');
 const deferrals = r => r ? (r.history || (r.decision === 'deferred' ? [{recorded:r.recorded, until:r.until}] : [])) : [];
-const waitOf = d => d.days || (d.recorded && d.until ? Math.round((Date.parse(d.until) - Date.parse(d.recorded)) / 864e5) : 0);
+const waitOf = d => d.hours || (d.days ? d.days * 24 : 0) || ((d.saved_at || d.recorded) && d.until ? Math.round((Date.parse(d.until) - Date.parse(d.saved_at || d.recorded)) / 36e5) : 0);
 const TIMES = ['', 'once', 'twice', 'three times', 'four times', 'five times', 'six times', 'seven times', 'eight times', 'nine times', 'ten times'];
 const times = n => TIMES[n] || n + ' times';
-const nextDays = (kind, id) => { const w = deferrals(R[kind][id]).map(waitOf).filter(Boolean); return w.length ? w[w.length - 1] * GROWTH : FIRST_DAYS; };
-const deferCtl = (kind, id) => `<div class="defer"><select id="du-${kind}-${id}" aria-label="Bring it back"><option value="spaced" data-days="${nextDays(kind, id)}">bring back in ${nextDays(kind, id)} days (spaced)</option>${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
-const today = () => new Date().toISOString().slice(0,10);
-const isDeferredNow = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && (!r.until || r.until > today())); };
+const nextHours = (kind, id) => { const w = deferrals(R[kind][id]).map(waitOf).filter(Boolean); return w.length ? (LADDER.find(r => r > w[w.length - 1]) || LADDER[LADDER.length - 1]) : LADDER[0]; };
+const deferCtl = (kind, id) => `<div class="defer"><select id="du-${kind}-${id}" aria-label="Bring it back"><option value="spaced" data-hours="${nextHours(kind, id)}">bring back in ${human(nextHours(kind, id))} (spaced)</option>${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
+// An until is a UTC time, or a date alone for the first deferrals; a date alone sorts before that day's times, so it is due from midnight.
+const now = () => new Date().toISOString();
+const isDeferredNow = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && (!r.until || r.until > now())); };
 // A store row older than the ledger record is the one the record already holds, so only a newer save (status 'saved') counts.
-const isDueBack = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && r.until && r.until <= today() && status(kind, id) !== 'saved'); };
+const isDueBack = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && r.until && r.until <= now() && status(kind, id) !== 'saved'); };
 const savedDefer = (kind, id) => status(kind, id) === 'saved' && !!live[kind][id].deferred;
 
 /* An item back from a deferral carries the council's re-weigh as `review` on its row: what changed while it
@@ -256,14 +260,14 @@ function doneRow(kind, item, title){
   const s = status(kind, item.id), r = R[kind][item.id], l = live[kind][item.id];
   let dec, where;
   if (s === 'saved'){
-    dec = l.deferred ? 'Deferred, back ' + (l.until === 'spaced' ? `in ${l.days} days` : (UNTIL.find(u=>u[0]===l.until)||[0,'when you ask'])[1])
+    dec = l.deferred ? 'Deferred, back ' + (l.until === 'spaced' ? `in ${human(l.hours)}` : (UNTIL.find(u=>u[0]===l.until)||[0,'when you ask'])[1])
         : kind==='questions' ? (item.options.find(o=>o.v===l.choice)||{}).label || 'Steer only'
         : kind==='terms' ? (LABEL[l.action]||l.action) + (l.rename?` as "${l.rename}"`:'')
         : kind==='causes' ? (l.kept ? 'Kept' : `Renamed "${l.name}"`)
         : LABEL[l.status]||l.status;
     where = `<div class="w pending">Saved, waiting to be recorded. Tell Claude you saved.</div>`;
   } else {
-    dec = r.decision === 'deferred' ? (r.until ? 'Deferred until ' + r.until : 'Deferred until you ask') : (r.label || LABEL[r.decision] || r.decision);
+    dec = r.decision === 'deferred' ? (r.until ? 'Deferred until ' + (r.until.length > 10 ? new Date(r.until).toLocaleString([], {dateStyle:'medium', timeStyle:'short'}) : r.until) : 'Deferred until you ask') : (r.label || LABEL[r.decision] || r.decision);
     where = `<div class="w">Recorded ${esc(r.recorded)} · <code>${esc(r.record.replace('ledger/',''))}</code></div>`;
   }
   const cls = /retire|overrul/i.test(dec) ? 'd retire' : 'd';
@@ -338,7 +342,7 @@ openView.addEventListener('click', async e => {
     const steerEl = document.getElementById((kind === 'questions' ? 'qs-' : 'ps-') + id);
     const sel = document.getElementById(`du-${kind}-${id}`);
     const body = {deferred:true, until:sel.value, steer:steerEl ? steerEl.value : '', savedAt:new Date().toISOString()};
-    if (sel.value === 'spaced') body.days = Number(sel.selectedOptions[0].dataset.days);
+    if (sel.value === 'spaced') body.hours = Number(sel.selectedOptions[0].dataset.hours);
     if (!db){ st.textContent = 'Not saved in this view.'; return; }
     try { await db.doc(`${kind}/${id}`).set(body); live[kind][id] = body; render(); }
     catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
