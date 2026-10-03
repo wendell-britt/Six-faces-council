@@ -3527,6 +3527,12 @@
     "label": "Overruled: roles go through a character creation pipeline",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+   },
+   "dy-2026-10-03-wake": {
+    "decision": "stands",
+    "label": "Merged on your word in chat",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-daily-wake-ruling.json (six-faces-council)"
    }
   },
   "questions": {
