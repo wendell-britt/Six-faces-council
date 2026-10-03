@@ -659,6 +659,34 @@
    "pass": "census",
    "pos": "The 5 active branches stay as they are: the 4 in root-game, including the held ruler draft, and bars-engine's podcast page from 2026-09-30.",
    "why": "Each had a commit this week, so another session may be working on it. Keeping them changes nothing. Source: council/census/CENSUS_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "census-fix-ship",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "census",
+   "pos": "The census fix merges: it reads the full history first and never skips a branch. This merges on your next board read unless you flip it.",
+   "why": "The first census ran on partial history. It called 30 merged branches unmerged and left out 14 others, three of them with open pull requests. Source: six-faces-council#5"
+  },
+  {
+   "id": "stale-keep-list",
+   "faces": [
+    "regent"
+   ],
+   "pass": "census",
+   "pos": "Of the 49 old branches, 12 are kept: the Inner Garden ontology handoff, the TTV charge and vault work, the emotional-alchemy service layer, the demo checkout mode, the serverless asset budget spec, the library query tools, the ally consult spec, the trigram archetype gap spec, the card-to-carousel spec, the BAR asset sprint, and in emotional-first-aid the Chapter 1 drafts and the writing skill. 8 more stay because an open pull request sits on them, and 2 stay because they share no history with main (both are Casey's Birthday Deck). The other 27 are retired once you rule on how to archive. This stands unless you flip it.",
+   "why": "You chose to have the council read them first. Six daemons read them, and the Regent checked each verdict and moved one from retire to keep. Source: council/census/READING_2026-10-03.md and RECENT_REVIEW_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "cleanup-later",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "census",
+   "pos": "Two cleanups wait until archiving works: 9 open pull requests on old branches, and 114 branches across the repos that are fully merged into main. The council will bring each to you then. This stands unless you flip it.",
+   "why": "Both are tidying and change nothing tonight. Asking now would put seven questions on your board instead of five. Source: council/census/READING_2026-10-03.md and RECENT_REVIEW_2026-10-03.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -1009,6 +1037,140 @@
     {
      "v": "leave",
      "label": "Leave them",
+     "c": "Nothing changes."
+    }
+   ]
+  },
+  {
+   "id": "archive-method",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "q": "GitHub refuses tag pushes from this session, so none of the 40 retirements you approved has run. How should the council archive a branch?",
+   "why_you": "You approved retiring as tags. Any other way changes what you approved.",
+   "not_before": "The refusal came when the first tag was pushed tonight. Nothing was removed: each removal waited for its tag.",
+   "options": [
+    {
+     "v": "archive-branch",
+     "label": "Rename each one to archive/<name> instead of a tag",
+     "c": "The work stays as a branch under archive/, and the council's tools skip that prefix. GitHub's branch list still shows them, grouped under archive/. This session pushes branches, but it has not yet tried removing one, and the council will tell you if that is refused too."
+    },
+    {
+     "v": "your-step",
+     "label": "You run one command from a computer",
+     "c": "The council writes the command as a step on Your steps tab. It tags and removes all 40 in one go, and it needs a computer with git."
+    },
+    {
+     "v": "wait",
+     "label": "Wait for a session that can push tags",
+     "c": "Nothing moves until then. The branches stay as they are."
+    }
+   ]
+  },
+  {
+   "id": "fc-front-door",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "q": "Flirtcraft's storefront from 2026-09-11 (hero, about, pricing, privacy, terms and your ratified founder section) is spread over four branches. It no longer merges cleanly, because main changed the sign-in and billing code since. What should the council do?",
+   "why_you": "It changes what strangers see on your live site.",
+   "not_before": "The council's review ran tonight.",
+   "options": [
+    {
+     "v": "rebuild",
+     "label": "Bring it onto current main and show me a preview",
+     "c": "One new strand takes the storefront and the search page's own commits, keeps main's newer sign-in and billing code, and goes to a preview link. Nothing goes live until you say yes on the board. The four old branches are retired after."
+    },
+    {
+     "v": "retire",
+     "label": "Retire all four",
+     "c": "The storefront stays in the archive. The live site keeps its current front page."
+    },
+    {
+     "v": "leave",
+     "label": "Leave them",
+     "c": "Nothing changes."
+    }
+   ]
+  },
+  {
+   "id": "fc-binds",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "q": "Flirtcraft's binds work (54 commits on how each oracle card is read) merges cleanly into main. Should it go in?",
+   "why_you": "It changes the readings your players get.",
+   "not_before": "The council's review ran tonight.",
+   "options": [
+    {
+     "v": "merge",
+     "label": "Merge it after its checks pass on a preview",
+     "c": "The council runs its tests and the bind checker, opens a pull request with a preview link, and merges once you say yes."
+    },
+    {
+     "v": "leave",
+     "label": "Leave it for now",
+     "c": "Nothing changes."
+    },
+    {
+     "v": "retire",
+     "label": "Retire it",
+     "c": "It stays in the archive."
+    }
+   ]
+  },
+  {
+   "id": "fcm-exchange",
+   "faces": [
+    "diplomat"
+   ],
+   "q": "Friendcraft's hosted exchange, which lets a friend outside your organization open it, merges cleanly and does not touch the book. Should it go in?",
+   "why_you": "It is your book's repo, and deploying it later is your call.",
+   "not_before": "The council's review ran tonight.",
+   "options": [
+    {
+     "v": "merge",
+     "label": "Merge it",
+     "c": "The files land in deck/hosted/ undeployed. Deploying is a separate step with its own instructions."
+    },
+    {
+     "v": "leave",
+     "label": "Leave it",
+     "c": "Nothing changes."
+    },
+    {
+     "v": "retire",
+     "label": "Retire it",
+     "c": "It stays in the archive."
+    }
+   ]
+  },
+  {
+   "id": "fcm-oracle",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "q": "A friendcraft branch holds 33 commits of flirtcraft oracle rewrites and 64 reference card images. It conflicts with main's newer voice kit in three files. What should the council do?",
+   "why_you": "It is your book's repo and your oracle's prose.",
+   "not_before": "The council's review ran tonight.",
+   "options": [
+    {
+     "v": "port",
+     "label": "Bring the oracle work onto current main",
+     "c": "One new strand carries the rewrites and images over, keeps main's newer voice kit, and comes back to you as a pull request with every prose change shown before and after."
+    },
+    {
+     "v": "retire",
+     "label": "Retire it",
+     "c": "It stays in the archive."
+    },
+    {
+     "v": "leave",
+     "label": "Leave it",
      "c": "Nothing changes."
     }
    ]

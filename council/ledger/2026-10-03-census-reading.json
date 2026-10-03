@@ -1,0 +1,1095 @@
+{
+ "id": "2026-10-03-census-reading",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "council-design",
+ "question": "Board read 14 acted on: retire the landed branches, read the stale ones, review the recent ones",
+ "convened_by": "wendell",
+ "source": "council/ledger/2026-10-03-board-read-14.json",
+ "retire_landed": {
+  "approved": 41,
+  "held": [
+   "bars-engine codex/day12-hold-resource-question: open pull request #230"
+  ],
+  "attempted": "friendcraft-manuacript, 6 branches",
+  "result": "GitHub refused every tag push from this session with HTTP 403. The script removes a branch only after its tag is confirmed, so nothing was removed.",
+  "log": [
+   "claude/quadrant-tags TAG-FAILED 60344f9a0b3893eab8f7ce4f5f4ce6a2c80abbff",
+   "claude/mvp-definition TAG-FAILED b8727ecd7f096d699e75c7f1c4d7e6a36fbc967a",
+   "claude/pass-five TAG-FAILED bafa5a1037ab2464b4a0a02ff539b8f5fe7ad65e",
+   "claude/card-lint-and-fragments TAG-FAILED f9e29d874f2213db0b4fcc7a561e5902ac8dcfb2",
+   "claude/revoke-beats TAG-FAILED 50c3a889f76db10fa8cd101dd4b701672a225290",
+   "claude/ruling-41-and-propagation-plan TAG-FAILED 51f469c2a41eca5776df72c4201417a8d618615e"
+  ]
+ },
+ "census_fix": {
+  "pr": "six-faces-council#5",
+  "finding": "Shallow clones made 30 merged bars-engine branches look unmerged and skipped 14 others."
+ },
+ "stale_reading": {
+  "report": "council/census/READING_2026-10-03.md",
+  "daemons": "6 Protectors for the Regent, model haiku",
+  "verdicts": {
+   "bars-engine::claude/goodbye-yellow-brick-road-party-642drq": [
+    "RETIRE",
+    "Party one-shot with Oracle card integration",
+    "main has src/lib/goodbye-party/",
+    6
+   ],
+   "bars-engine::codex/card-to-carousel-brief-spec": [
+    "KEEP",
+    "Feature spec for card-to-carousel brief contracts",
+    "spec folder missing on main",
+    6
+   ],
+   "bars-engine::claude/awaken-page-updates-4cepg4": [
+    "RETIRE",
+    "Allyship Deck price change from $10 to $22",
+    "offers file absent; looks abandoned",
+    6
+   ],
+   "bars-engine::claude/loving-fermat-q9nrmk": [
+    "RETIRE",
+    "Fix swapped Partiful links; Chapter One capture marked coming soon",
+    "files exist on main",
+    6
+   ],
+   "bars-engine::codex/wip-trigram-archetype-gap": [
+    "KEEP",
+    "Spec and architecture docs for the trigram archetype gap",
+    "not on main",
+    6
+   ],
+   "bars-engine::feat/41-45-clean": [
+    "HOLD",
+    "Campaign hierarchy wiring and walkable sprite demo fallback",
+    "PR #73 open",
+    6
+   ],
+   "bars-engine::feat/handbook-wiki-port": [
+    "HOLD",
+    "Handbook subpages plus forge and wiki API",
+    "PR #61 open",
+    6
+   ],
+   "emotional-first-aid::claude/nbj-write-clearly-integration-kxr4ph": [
+    "KEEP",
+    "Writing-clarity skill for emotional-first-aid with an installer",
+    "skill missing on main",
+    6
+   ],
+   "bars-engine::codex-valkyrie-party-card-mail": [
+    "UNREAD",
+    "Casey's Birthday Deck quest project: party data, icons, game files",
+    "no shared history",
+    2
+   ],
+   "bars-engine::feat/ttv-charge-blockers": [
+    "HOLD",
+    "Tap the Vein charge assessment and blocker reporting",
+    "PR #200 open",
+    2
+   ],
+   "bars-engine::revert-185-codex/mastering-allyship-book-cta": [
+    "RETIRE",
+    "Reverts PR #185, which main kept",
+    "main kept chapter-one access",
+    2
+   ],
+   "bars-engine::claude/new-session-s8urv0": [
+    "RETIRE",
+    "Superpower quiz reveal redesign, Crossing link, Gumroad pricing",
+    "quiz styles and gumroad on main",
+    2
+   ],
+   "bars-engine::codex/inner-garden-emulator-shell-spec": [
+    "RETIRE",
+    "Spec kit for the Inner Garden emulator shell",
+    "later Calrunia orientation spec covers it",
+    2
+   ],
+   "bars-engine::claude/upbeat-maxwell-lrkg7h": [
+    "KEEP",
+    "Payment-free demo mode for the buy-to-unlock funnel",
+    "demo files not on main",
+    2
+   ],
+   "bars-engine::sprint/bar-asset-pipeline-001": [
+    "KEEP",
+    "An earlier council investigation set, strand runtime guards, an I Ching prompt deck migration and a CYOA composer spec (the daemon called it merged; 28 of its files are not on main)",
+    "28 added files absent on main",
+    2
+   ],
+   "bars-engine::feat/wsp-chapter-spoke-template": [
+    "RETIRE",
+    "Vitest setup",
+    "vitest config on main",
+    2
+   ],
+   "bars-engine::spec/ally-integration-consult": [
+    "KEEP",
+    "Spec for the Six Faces ally campaign consult",
+    "spec folder absent on main",
+    5
+   ],
+   "bars-engine::codex/card-to-carousel-brief": [
+    "HOLD",
+    "Card-to-carousel UI flow",
+    "PR #190 open",
+    5
+   ],
+   "bars-engine::claude/dazzling-wright-d19dkh": [
+    "RETIRE",
+    "Login redeem returnTo fix",
+    "fix on main",
+    5
+   ],
+   "bars-engine::claude/busy-brahmagupta-a644qp": [
+    "RETIRE",
+    "Revert of the Plant 3-2-1 flow",
+    "main kept the flow",
+    5
+   ],
+   "bars-engine::codex/wip-library-queryable-library": [
+    "KEEP",
+    "Library tooling scripts: drift, index, next, query",
+    "scripts absent on main",
+    5
+   ],
+   "bars-engine::claude/launch-followups-backlog": [
+    "RETIRE",
+    "Paywall integration and entitlement schema",
+    "paywall specs on main",
+    5
+   ],
+   "bars-engine::feature/living-memory-phase1": [
+    "RETIRE",
+    "MemoryNode and memory event schema",
+    "memory models on main",
+    5
+   ],
+   "bars-engine::cursor/iching-quest-widget-integration-0dfb": [
+    "RETIRE",
+    "I Ching widget, quest modifiers, BAR wallet, lifecycle metrics (235 days old)",
+    "none of it on main; main went another way",
+    5
+   ],
+   "bars-engine::fix/iching-king-wen-and-face-collapse": [
+    "RETIRE",
+    "King Wen table fix and organization network spec",
+    "both on main",
+    3
+   ],
+   "bars-engine::wip/ttv-charge-vault-nursery": [
+    "KEEP",
+    "TTV charge system, vault compost modal, safe return, passage editing",
+    "charge features absent on main",
+    3
+   ],
+   "bars-engine::codex/allyship-deck-sprint-publication": [
+    "RETIRE",
+    "Book CTA landing, gated Chapter 1 reader, compound emotions",
+    "all on main",
+    3
+   ],
+   "bars-engine::codex/lenses-onboarding-implementation": [
+    "HOLD",
+    "Lenses onboarding UI",
+    "PR #156 open",
+    3
+   ],
+   "bars-engine::codex/inner-garden-chapter-1": [
+    "HOLD",
+    "Playable Inner Garden Chapter 1",
+    "PR #140 open",
+    3
+   ],
+   "bars-engine::claude/sleepy-ride-f7ptcl": [
+    "RETIRE",
+    "Book launch event suite spec; retiring Bruised Banana",
+    "not on main; small, would start fresh",
+    3
+   ],
+   "bars-engine::feat/phase-2-clash-model": [
+    "HOLD",
+    "Phase 2 BAR Clash domain model",
+    "PR #70 open",
+    3
+   ],
+   "bars-engine::merge/book-os-origin-fork-close": [
+    "RETIRE",
+    "Book OS sections editor and fork import",
+    "on main",
+    3
+   ],
+   "bars-engine::codex/mtgoa-allyship-rpg-docs": [
+    "UNREAD",
+    "Casey's Birthday Deck and Library: test harnesses, oracle deck data, Valkyrie party docs",
+    "no shared history",
+    1
+   ],
+   "bars-engine::claude/new-session-1rz5cp": [
+    "KEEP",
+    "Serverless asset budget spec kit",
+    "named in the backlog, spec absent",
+    1
+   ],
+   "bars-engine::claude/inner-garden-bars-handoff-kx6lw9": [
+    "KEEP",
+    "Inner Garden ontology library, handoffs and reconciliation docs (54 commits)",
+    "game files on main, ontology absent",
+    1
+   ],
+   "bars-engine::cursor/pma-phase-b-continued-7a07": [
+    "HOLD",
+    "PMA Phase B and humane notifications",
+    "PR #164 open",
+    1
+   ],
+   "bars-engine::codex/inner-garden-control-hotfix": [
+    "RETIRE",
+    "Inner Garden mobile control fixes",
+    "same files on main",
+    1
+   ],
+   "bars-engine::claude/confident-curie-5y53ft": [
+    "RETIRE",
+    "Slider text editor overlay fix",
+    "fix on main",
+    1
+   ],
+   "bars-engine::feat/41-45-shipping": [
+    "RETIRE",
+    "Campaign hierarchy and walkable sprite demo",
+    "both on main",
+    1
+   ],
+   "bars-engine::feat/book-os-origin-fork-close": [
+    "RETIRE",
+    "Book OS sections and fork import",
+    "26 of 30 files match main",
+    1
+   ],
+   "emotional-first-aid::setup/publishing-base-v0.1": [
+    "KEEP",
+    "Chapter 1 drafts v0.1 to v0.5.1, editorial pipeline, story-sourcing protocol (43 commits)",
+    "main has only README and council files",
+    1
+   ],
+   "bars-engine::codex/mtgoa-open-up-check": [
+    "RETIRE",
+    "MTGOA course intake flow",
+    "course pages on main",
+    4
+   ],
+   "bars-engine::claude/allyship-deck-json-3y53vd": [
+    "RETIRE",
+    "Export script for the allyship deck JSON",
+    "not on main; regenerable",
+    4
+   ],
+   "bars-engine::claude/allyship-practice-atlas-z8i5k9": [
+    "KEEP",
+    "Emotional-alchemy service layer: deck-draw reveal, crisis resources, alchemy session",
+    "those files absent on main",
+    4
+   ],
+   "bars-engine::feat/canonical-321-and-brainstorm": [
+    "RETIRE",
+    "Persist the 3-2-1 flow; wire TTV to brainstorm and garden",
+    "components on main",
+    4
+   ],
+   "bars-engine::codex/wip-inner-garden-calrunia": [
+    "RETIRE",
+    "Calrunia world-building docs (WIP)",
+    "not on main; paused",
+    4
+   ],
+   "bars-engine::claude/allyship-deck": [
+    "RETIRE",
+    "Style-frame prompt for allyship card art",
+    "not on main",
+    4
+   ],
+   "bars-engine::feat/rpg-exp5-play-shell": [
+    "RETIRE",
+    "Experimental vertical slice, 643 new files of specs",
+    "later specs on main",
+    4
+   ],
+   "bars-engine::cursor/bars-enging-cursor-migration-2fa5": [
+    "RETIRE",
+    "Story-clock quest infrastructure: cube engine, archetype registry, quest forensics (229 days)",
+    "absent on main",
+    4
+   ]
+  },
+  "face_corrections": [
+   "sprint/bar-asset-pipeline-001 moved from retire to keep: 28 of its files are absent from main"
+  ],
+  "shape_checks": "Protector 1 failed (missing Open Up and Grow Up) and passed on its one retry; the others passed."
+ },
+ "recent_review": {
+  "report": "council/census/RECENT_REVIEW_2026-10-03.md",
+  "daemons": "2 Fixers for the Diplomat, model haiku",
+  "face_corrections": [
+   "front-door-seo holds 9 commits of its own, not superseded",
+   "new-session-y0181b conflicts in 3 files; the Fixer said nothing would be overwritten",
+   "front-door-fold conflicts in 2 files"
+  ]
+ },
+ "casts": [
+  {
+   "agent": "regent:protector-1",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    8,
+    7,
+    6
+   ],
+   "changing_lines": [
+    6
+   ],
+   "n": 48,
+   "name": "The Well",
+   "cn": "井",
+   "pinyin": "jǐng",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    0
+   ],
+   "shows": "What you want is there and your reach is broken.",
+   "image": "☴ wind beneath ☵ water. Wood going down into water and drawing it back up: a bucket on a rope.",
+   "situation": "The town moves and the well stays. The old text is severe about the mechanics — the rope too short, the jug broken before it clears the rim — because a source counts as a source only while the apparatus works. The water underneath keeps coming. Everything that fails here is apparatus.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 57,
+    "name": "Persuasion",
+    "cn": "巽",
+    "pinyin": "xùn",
+    "lines": [
+     0,
+     1,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "An effect is already happening that you have not admitted to.",
+    "image": "☴ wind beneath ☴ wind. A yielding line at the base of each half, and the figure gets in everywhere.",
+    "situation": "Wind repeated. The character means to enter, to kneel, to go underneath. The old counsel calls the success small and advises having somewhere to go and someone to see, and the mode throughout is gradual: a thing that works by getting under.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "regent:protector-2",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    6,
+    8,
+    8,
+    7,
+    9,
+    7
+   ],
+   "changing_lines": [
+    1,
+    5
+   ],
+   "n": 12,
+   "name": "Stalemate",
+   "cn": "否",
+   "pinyin": "pǐ",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are seeking one game and wearing the face of the other.",
+   "image": "☷ earth beneath ☰ heaven. Each half is already where it wants to be, so nothing crosses the middle.",
+   "situation": "Heaven rises and it is already on top. Earth settles and it is already at the bottom. Both halves are content and the figure has no traffic in it. Obstruction here comes from satisfaction rather than from conflict, which is what makes it durable.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 21,
+    "name": "Bite",
+    "cn": "噬嗑",
+    "pinyin": "shì kè",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "An object is lodged in here, and nothing closes until you say it.",
+    "image": "☳ thunder beneath ☲ fire. An open mouth with one firm line lodged across the middle of it.",
+    "situation": "Something is stuck between the jaws and the figure stays open until it is dealt with. The old counsel here is legal — this is the hexagram of judgement, where the obstruction gets named and bitten through. Thunder and lightning in one stroke: the noise and the clarity together.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "regent:protector-3",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    8,
+    7,
+    8,
+    7
+   ],
+   "changing_lines": [],
+   "n": 21,
+   "name": "Bite",
+   "cn": "噬嗑",
+   "pinyin": "shì kè",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shows": "An object is lodged in here, and nothing closes until you say it.",
+   "image": "☳ thunder beneath ☲ fire. An open mouth with one firm line lodged across the middle of it.",
+   "situation": "Something is stuck between the jaws and the figure stays open until it is dealt with. The old counsel here is legal — this is the hexagram of judgement, where the obstruction gets named and bitten through. Thunder and lightning in one stroke: the noise and the clarity together.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   }
+  },
+  {
+   "agent": "regent:protector-4",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    7,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 15,
+   "name": "Understatement",
+   "cn": "謙",
+   "pinyin": "qiān",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "shows": "What you are underplaying had better be there.",
+   "image": "☶ mountain beneath ☷ earth. A mountain sitting below ground level.",
+   "situation": "Height in the low position. The figure has real elevation and puts it underneath, which is the only configuration in the set the tradition calls good in every line. What makes it work is that the height is genuine — a low place with nothing in it is just a low place.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   }
+  },
+  {
+   "agent": "regent:protector-5",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    6,
+    6,
+    6,
+    6,
+    8,
+    9
+   ],
+   "changing_lines": [
+    1,
+    2,
+    3,
+    4,
+    6
+   ],
+   "n": 23,
+   "name": "Erosion",
+   "cn": "剝",
+   "pinyin": "bō",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "The ground under this is going and you have not said so.",
+   "image": "☷ earth beneath ☶ mountain. Five yielding lines have risen through the figure, leaving one firm line at the top.",
+   "situation": "A mountain wearing down into the ground it stands on. The process is slow, structural, and well advanced by the time anyone can see it. The counsel is to stay still and decline any move, because the season has already set its direction and takes whatever effort you spend against it.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 34,
+    "name": "Vigour",
+    "cn": "大壯",
+    "pinyin": "dà zhuàng",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "Force is available here and unaimed.",
+    "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+    "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "regent:protector-6",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    7,
+    7,
+    6,
+    7
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 14,
+   "name": "Noon",
+   "cn": "大有",
+   "pinyin": "dà yǒu",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "There is a lot here, and all of it is visible.",
+   "image": "☰ heaven beneath ☲ fire. The sun at the top of the sky, with the whole day's strength under it.",
+   "situation": "Great possession: everything visible at once, in full light. The single yielding line sits fifth and holds the rest, which is the classical point — abundance is held by the soft place in it. The warning attached is about pride, since noon is also the moment the light starts down.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 1,
+    "name": "Unbroken",
+    "cn": "乾",
+    "pinyin": "qián",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "Every line here sends, and the return has nowhere to land.",
+    "image": "☰ heaven beneath ☰ heaven. Six unbroken lines, and no place in the figure that yields.",
+    "situation": "Every line is pushing and every line is capable. This is the most able configuration in the set, and it has nowhere to put anything that arrives. The tradition walks a dragon up through six stages for exactly this reason — force has to learn timing, because force alone already knows everything else.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "diplomat:fixer-flirtcraft",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    8,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 60,
+   "name": "Measure",
+   "cn": "節",
+   "pinyin": "jié",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "shows": "You are past what you can hold and you have not said where the edge is.",
+   "image": "☱ lake beneath ☵ water. A lake with more water above it than the basin holds.",
+   "situation": "The character is the joint of a bamboo, the node that divides the stalk into lengths and makes it strong. Limitation as structure. The old text warns at once against bitter limitation, since a rule too harsh to keep gets broken and takes the rest of them with it.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   }
+  },
+  {
+   "agent": "diplomat:fixer-friendcraft",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    9,
+    7,
+    8
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 47,
+   "name": "Drained",
+   "cn": "困",
+   "pinyin": "kùn",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The explaining continues and the basin is dry.",
+   "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+   "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 29,
+    "name": "Depths",
+    "cn": "坎",
+    "pinyin": "kǎn",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "The bottom of this has another bottom under it.",
+    "image": "☵ water beneath ☵ water. One firm line trapped between two yielding ones, and then the same again above it.",
+    "situation": "Repeated danger: the pit, and past it another pit. The old counsel is about consistency, because water goes into every hollow, fills it, and moves on, being water the whole way through. What carries you across a run of these is doing the same thing each time.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  }
+ ],
+ "subagent_tokens": {
+  "protectors": [
+   86145,
+   83100,
+   84403,
+   90428,
+   70213,
+   80041
+  ],
+  "protector_1_retry": 88058,
+  "fixers": [
+   84686,
+   76539
+  ]
+ }
+}
