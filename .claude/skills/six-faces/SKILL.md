@@ -104,6 +104,12 @@ with a recommendation of take it up, defer again, retire, or reshape the questio
 `python3 council/due.py record`, which keeps every earlier one in `history`. The spec is
 `.specify/specs/spaced-deferral/spec.md`.
 
+**The daily session takes up one of Wendell's five moves each day** (Wake up, Open up, Clean up, Grow up,
+Show up; his steer, 2026-10-03). `python3 council/daily.py` says the level, the move and the limits, and
+`council/daily.yaml` holds them; the level changes only by his ruling on the board. A session that reads the
+board records each daily run's token use with `daily.py usage`, and puts any proposal `daily.py` prints on the
+board. The rules are `five_moves` in `council/pipeline.yaml`.
+
 **Deferral.** Each question and position row has a Defer button with a return date: in a week, in a
 month, or when Wendell asks. A deferred row waits on the Resolved tab and comes back to the Open tab
 when its date passes. Record it in `resolved` with `decision: deferred` and `until`, and do not ask
