@@ -170,7 +170,7 @@ function section(title, lede, html){ return html ? `<h2>${title}</h2>${lede?`<p 
    but we are also collecting data about priority". A deferred item leaves the Open tab, keeps its steer, and
    comes back by itself when its date passes. Each deferral is recorded in the ledger as priority data. */
 const UNTIL = [['week','in a week'],['month','in a month'],['ask','when I ask']];
-const deferCtl = (kind, id) => `<div class="defer"><span>Not now:</span><select id="du-${kind}-${id}" aria-label="Bring it back">${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
+const deferCtl = (kind, id) => `<div class="defer"><select id="du-${kind}-${id}" aria-label="Bring it back">${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
 const today = () => new Date().toISOString().slice(0,10);
 const isDeferredNow = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && (!r.until || r.until > today())); };
 // A store row older than the ledger record is the one the record already holds, so only a newer save (status 'saved') counts.
@@ -256,11 +256,11 @@ function render(){
   const deferred = kind => item => (isDeferredNow(kind, item.id) && status(kind, item.id) !== 'saved') || savedDefer(kind, item.id);
   const nDef = DATA.questions.filter(deferred('questions')).length + DATA.positions.filter(deferred('positions')).length;
   const dn = document.getElementById('open-deferred'); dn.hidden = !nDef;
-  dn.textContent = nDef ? `${nDef} deferred. They wait on the Resolved tab and come back when their date passes.` : '';
+  dn.textContent = nDef ? `You deferred ${nDef === 1 ? 'one item' : nDef + ' items'}. Each waits on the Resolved tab and comes back when its date passes.` : '';
 
   const dq = DATA.questions.filter(q => !isOpen('questions', q.id) && deferred('questions')(q));
   const dp = DATA.positions.filter(p => !isOpen('positions', p.id) && deferred('positions')(p));
-  document.getElementById('res-d').innerHTML = section('Deferred', 'Not now, not gone. Each comes back to the Open tab when its date passes, and every deferral is kept as data about priority.',
+  document.getElementById('res-d').innerHTML = section('Deferred', 'Each item here comes back to the Open tab when its date passes. Every deferral stays in the record as data about priority.',
     dq.map(q => doneRow('questions', q, esc(q.q))).join('') + dp.map(p => doneRow('positions', p, esc(p.pos))).join(''));
   const rq = DATA.questions.filter(q => !isOpen('questions', q.id) && !deferred('questions')(q));
   const rt = DATA.terms.filter(t => !isOpen('terms', t.id));
