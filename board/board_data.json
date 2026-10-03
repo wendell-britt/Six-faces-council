@@ -1015,6 +1015,49 @@
    "auto": true,
    "pos": "Inside the game's story, characters never name the player's reading out loud. They show it through who speaks and what they notice. At the end of each act, outside the story, a card names the player's pattern in the real-life domains' words (Fire: boundaries and goals, and so on). This stands unless you flip it.",
    "why": "design.md says play teaches 'with no lesson screen', and Yun names borrowed mana 'once and without emphasis'. Your chosen-input ruling says 'when players leave the game- they know how to apply what they learned to real life'. The two read together give this. Source: sprout docs/story-mirror/6FACE_PASS1_2026-10-03.md (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "fm-rotation",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "9",
+   "auto": true,
+   "pos": "After the re-weigh, each daily run takes up one of your five moves, in your order: Wake up, Open up, Clean up, Grow up, Show up, one a day in rotation. When the day's move finds nothing, the run does research instead. This stands unless you flip it.",
+   "why": "Your steer on sd-autonomy-pass named the moves and said \"We can always do research as “something new”\". One move a day is the council's choice. Source: council/passes/6FACE_PASS9_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "fm-limits",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "9",
+   "auto": true,
+   "pos": "The daily session never merges into main, never acts on the reserved list, never changes another session's rows or branches, and never retires or deletes anything. Every change it makes goes on its own branch with a pull request, and a project with a deferral waiting is skipped until its date. This stands unless you flip it.",
+   "why": "Merging stays with you under the pipeline's ship stage and #16. The reserved list is in faces.yaml, and the deferral rule is the council lesson you ruled today. Source: council/passes/6FACE_PASS9_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "fm-one-row",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "9",
+   "auto": true,
+   "pos": "Each daily run adds at most one row to this board: a change that merges at your next board read unless you flip it, or a finding for you to read. The number is the council's, and flipping this lets you set your own.",
+   "why": "A session that added ten rows a day would bury the board, and you read it on your phone. Source: council/passes/6FACE_PASS9_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "fm-after-16",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "9",
+   "auto": true,
+   "pos": "The move step is built after the other session's pull request #16 merges. That pull request keeps every open branch current with main, so three sessions writing to this repo do not collide on the board's data. This stands unless you flip it.",
+   "why": "The Challenger's dissent in the pass: the Sprout session, the steward and the daily session would all write here. Source: council/passes/6FACE_PASS9_2026-10-03.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -2103,6 +2146,34 @@
      "v": "three-voices",
      "label": "Act I has three voices; Earth and Fire start in Act II",
      "c": "The Challenger's choice: less Act I writing, but a player leading from Earth or Fire hears nobody recognize them until the forest."
+    }
+   ]
+  },
+  {
+   "id": "fm-repos",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "9",
+   "q": "Which repos may the daily session work in on its own?",
+   "why_you": "bars-engine belongs to johnair01, and three of its open pull requests are his. Work in another person's repo while you are away is your call. The answer decides where the session looks for work.",
+   "not_before": "The session did no work of its own until pass nine.",
+   "options": [
+    {
+     "v": "all",
+     "label": "All six council repos",
+     "c": "bars-engine included. Its ten open pull requests, three of them johnair01's, become work the session can find and bring to the board."
+    },
+    {
+     "v": "not-bars",
+     "label": "All except bars-engine",
+     "c": "The session works in the five repos you own. bars-engine waits for a session you open."
+    },
+    {
+     "v": "home",
+     "label": "Only the council's home repo, for now",
+     "c": "The session improves the council's own tools first, and you widen its reach later."
     }
    ]
   }

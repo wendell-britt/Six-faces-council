@@ -1,0 +1,94 @@
+{
+ "id": "2026-10-03-six-faces-council-pass9-five-moves",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "What the daily session may take up on its own",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source_doc": "council/passes/6FACE_PASS9_2026-10-03.md",
+ "faces_present": [
+  "shaman",
+  "architect",
+  "challenger",
+  "regent",
+  "diplomat",
+  "sage"
+ ],
+ "dissent": true,
+ "dissent_note": "The Challenger: no code from the daily session until #16 merges. Taken up as position fm-after-16.",
+ "casts": [
+  {
+   "agent": "shaman",
+   "n": 21,
+   "name": "Bite",
+   "changing_lines": [
+    3,
+    4,
+    6
+   ],
+   "becomes": 36
+  },
+  {
+   "agent": "architect",
+   "n": 2,
+   "name": "Bearing",
+   "changing_lines": [
+    1,
+    5
+   ],
+   "becomes": 3
+  },
+  {
+   "agent": "challenger",
+   "n": 9,
+   "name": "Restraint"
+  },
+  {
+   "agent": "regent",
+   "n": 38,
+   "name": "Estrangement",
+   "changing_lines": [
+    2,
+    3
+   ],
+   "becomes": 30
+  },
+  {
+   "agent": "diplomat",
+   "n": 61,
+   "name": "Incubation",
+   "changing_lines": [
+    1,
+    3,
+    6
+   ],
+   "becomes": 48
+  },
+  {
+   "agent": "sage",
+   "n": 23,
+   "name": "Erosion",
+   "changing_lines": [
+    3
+   ],
+   "becomes": 52
+  }
+ ],
+ "iching_grade": {
+  "pass": "3 of 3",
+  "result": "one cast changed an output (Stillness gave the one-row limit its reason)",
+  "verdict": "across passes seven to nine, casts shaped framing more than conclusions; none shows the cast rather than the rules did it"
+ },
+ "positions": [
+  "fm-rotation",
+  "fm-limits",
+  "fm-one-row",
+  "fm-after-16"
+ ],
+ "questions": [
+  "fm-repos"
+ ],
+ "pull_request": "https://github.com/wendell-britt/Six-faces-council/pull/17",
+ "subagent_tokens": 0
+}
