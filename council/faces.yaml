@@ -82,6 +82,11 @@ faces:
         source: .specify/specs/iching-casting/spec.md, position iching-cast-first, steer at board read 11
         wendell: We don't need them evenly. We actually want to do a simulation of the coin method and then map to the reading
         lesson: A cast follows the oracle's own method, the coins and their changing lines, not a uniform draw that only looks fair.
+      - date: 2026-10-03
+        source: sprout council/ledger/2026-10-03-maker-and-hall-board-read.json, position mh-input-chosen overruled
+        wendell: >
+          Whatever intake we do needs to output something that is VERY useful and directly applicable to th eplayers life. That information doesn't need to be in the game PER SE, but it needs to be present in gameplay enough that when players leave the game- they know how to apply what they learned to real life.
+        lesson: Obliqueness is a manner of telling inside the game, never a reason to withhold what the player came for. The player leaves with a move they can use.
 
   architect:
     altitude: orange
@@ -114,6 +119,11 @@ faces:
         source: council/passes/6FACE_PASS6_2026-10-03.md, position dm-no-chains, steer at board read 10
         wendell: This we could explore. I don't see it's utility now but I imagine the diplomat would appreciate the collaboration
         lesson: A rule against chaining daemons stands for now, as an open question rather than a settled one. Daemons working together is worth exploring when a use appears, and the Diplomat is the face that would want it.
+      - date: 2026-10-03
+        source: sprout council/ledger/2026-10-03-maker-and-hall-board-read.json, position mh-gate-zero overruled
+        wendell: >
+          These tests are a little weenie. I don't quite understand the purpose or how it moves us forward- what blocker is this resolving?
+        lesson: A test names the open blocker it resolves and the decision it unlocks. A cheap test that resolves nothing open is not rigour.
 
   regent:
     altitude: amber
@@ -125,7 +135,12 @@ faces:
     delivers: [phase_gates, definition_of_done, non_negotiables]
     sees: order, duty, sacrifice for a shared truth
     agreeableness: firm
-    lessons: []
+    lessons:
+      - date: 2026-10-03
+        source: sprout council/ledger/2026-10-03-maker-and-hall-board-read.json, position mh-scope-only overruled
+        wendell: >
+          this is a parallel process, but it's also designed to streamline the playtest that we're doing.
+        lesson: Work that serves the gate in front of it runs beside that gate, not behind it. Before sequencing new work after a gate, ask whether it speeds the gate.
 
   diplomat:
     altitude: green

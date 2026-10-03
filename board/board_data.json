@@ -857,6 +857,48 @@
    "auto": true,
    "pos": "Pass one's positions p3 to p7 stand: no shared space before consent and review work; AI agents wear a permanent badge and ask consent per person per session; no streaks, guilt messages or fake urgency; practitioners see aggregates by default; no quest from a transcript goes live without human review. This stands unless you flip it.",
    "why": "They were settled on pass one's own page, which saved your overrules only in your browser, so this row puts them where your flip is recorded. Source: sprout docs/maker-and-hall/6FACE_PASS1_2026-10-03.md. Source: sprout docs/maker-and-hall/6FACE_PASS2_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-slice-tab",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "The maker runs now as its own strand, and its first deliverable speeds your playtest: a slice tab in the database editor, so you can change the slice's text, edge numbers and playtest questions between sessions without editing a file. It refuses an invalid save. This stands unless you flip it.",
+   "why": "Your overrule: 'designed to streamline the playtest that we're doing.' The playtest kit names confusing text and the edge's width as the first changes to make, and no schema covers data/slice.json today. No open strand touches the editor. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-gate-zero-retired",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "Gate 0 is retired, and its two steps are off your list. It resolved no blocker that was still open: you answered whether to test the hall when you chose one live class, and your overrule on the intake changed what a reflection test would measure. The live class stays as the hall's first milestone. This stands unless you flip it.",
+   "why": "Your question: 'what blocker is this resolving?' The honest answer is none that was still open. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-intake-output",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "The intake's output is one move for the player's week, in their channel's domain. Fear leaves with one opportunity or threat to name; Anger with one boundary or goal; Sadness with one connection to make; Neutral with one practical need met or one pause taken; Joy with one act of delight or play. The farm verb rehearses it in the game, and a card outside the game says it plainly when they leave. This stands unless you flip it.",
+   "why": "Your overrule of chosen input and your five domains. The playtest kit already ends with a card outside the game, which is where you said the information can live. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh3-decision-log",
+   "faces": [
+    "regent"
+   ],
+   "pass": "sprout maker 3",
+   "auto": true,
+   "pos": "Your Calrunia ruling and the five domains are in Sprout's decision log (docs/decisions/calrunia-and-domains.md). design.md is not edited: adding a domain column to the channel table is yours to do. This stands unless you flip it.",
+   "why": "Sprout's CLAUDE.md: do not change story or game rules; design.md's lines are yours to update. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
   }
  ],
  "questions": [
@@ -1808,6 +1850,34 @@
      "c": "Stronger claims and safer content; slower, and it costs money, which is yours to rule on."
     }
    ]
+  },
+  {
+   "id": "mh3-card-in-playtest",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "sprout maker 3",
+   "q": "Should this round of the slice playtest try the intake's output card? The slice's exit test asks whether a playtester can say why the edge changed without being told, and a card that names the five channels would tell them.",
+   "why_you": "You run the playtest and decide what it measures. The answer changes what the slice tab builds first.",
+   "not_before": "The output card did not exist until your overrule on the intake.",
+   "options": [
+    {
+     "v": "next",
+     "label": "Not this round; try the card in the next one",
+     "c": "The exit test stays clean. The slice tab builds text and numbers first."
+    },
+    {
+     "v": "now",
+     "label": "Yes, this round",
+     "c": "The card is built first, and the exit answers are read knowing the card came after them."
+    },
+    {
+     "v": "half",
+     "label": "Half the playtesters see it",
+     "c": "You compare the two halves, and each half is smaller."
+    }
+   ]
   }
  ],
  "causes": [
@@ -2435,6 +2505,51 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+   },
+   "mh-scope-only": {
+    "decision": "overrule",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-motifs-five-channels": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-two-clocks": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-maker-toolchain": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-no-rpgmaker-base": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-gate-zero": {
+    "decision": "overrule",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-pass1-stand": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-input-chosen": {
+    "decision": "overrule",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-one-quest": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
    }
   },
   "questions": {
@@ -2599,6 +2714,36 @@
     "label": "Draft the 19 as full sentences for me to read",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)"
+   },
+   "mh-calrunia-hall": {
+    "decision": "world",
+    "label": "Calrunia is Sprout's world",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-course-bonus": {
+    "decision": "practice",
+    "label": "Bonuses come from doing the practice and change story or look only",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-first-for": {
+    "decision": "both",
+    "label": "Both, tested in one live class before any build (council recommends)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-hosting": {
+    "decision": "first",
+    "label": "One hosted world first, code and quest format published later (council recommends)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+   },
+   "mh-therapy": {
+    "decision": "never",
+    "label": "Story and practice, never therapy (council recommends)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
    }
   },
   "causes": {
