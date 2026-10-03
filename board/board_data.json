@@ -1236,8 +1236,8 @@
    ],
    "pass": "daily",
    "auto": true,
-   "pos": "One line in the daily session's limits changes from \"never merge into main\" to \"never merge a pull request into main\", noting that board and ledger records still go to main directly. The rule is the same and now reads one way. This merges at your next board read unless you flip it.",
-   "why": "The standing session's first check read the old line against the council's rule that board data is written on main. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/20"
+   "pos": "Two small fixes to the daily session's rules merge at your next board read unless you flip this. One line in its limits changes from \"never merge into main\" to \"never merge a pull request into main\", noting that board and ledger records still go to main directly. Its cost is read after a run ends, from the run's own record, because the first run read its cost mid-run and recorded $0.41 for a run that cost $2.21.",
+   "why": "The standing session's first check read the old line against the council's rule that board data is written on main, and its first run recorded the wrong cost. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/20"
   },
   {
    "id": "sm-crossing-voices",
@@ -2461,6 +2461,29 @@
      "v": "allow",
      "label": "Allow research sites",
      "c": "You add the sites under Allowed domains in the environment's settings, keeping the package-manager list. It goes on your steps tab with the exact place to do it."
+    }
+   ]
+  },
+  {
+   "id": "dy-model",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "daily",
+   "q": "The standing session runs on the larger model, and its first full run cost $2.21. Which model should the daily session use?",
+   "why_you": "It is your money every day, and the level rule weighs useful work against token use. The answer decides whether the council starts a new standing session on the smaller model.",
+   "not_before": "The first full run finished at 21:26 UTC today, and its cost was only read correctly at 21:50.",
+   "options": [
+    {
+     "v": "larger",
+     "label": "Keep the larger model",
+     "c": "Runs cost about what the first did, around $2 a day, and the work stays at the quality of today's note: nine done-but-unticked boxes found and quoted."
+    },
+    {
+     "v": "smaller",
+     "label": "Try the smaller model",
+     "c": "The council starts a new standing session on the smaller model and points the routine at it. The fresh-session run on the smaller model cost $0.54, though it did less. Each run's record shows whether the work holds up, and the switch back is one change."
     }
    ]
   }
