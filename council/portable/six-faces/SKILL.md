@@ -22,25 +22,27 @@ the pass used. If Wendell has ruled since either copy, his newer words win.
 
 ## The shape of a pass
 
-1. **Header.** The date, who called it, and the question in his words.
-2. **Anchor.** The design intent in one or two sentences.
-3. **Every agent casts the I Ching first.** Wendell, 2026-10-03: *"all agents should be casting the I Ching
+1. **Read the board first.** Before writing anything, read the Council Board as the next section
+   says. A pass that has not read the board does not start.
+2. **Header.** The date, who called it, and the question in his words.
+3. **Anchor.** The design intent in one or two sentences.
+4. **Every agent casts the I Ching first.** Wendell, 2026-10-03: *"all agents should be casting the I Ching
    and using its wisdom to inform their decisions (not unlike flirtcraft)"*. Where code runs, use
    `council/iching/cast.py`. Where it does not, cast by the three-coin method (three tosses a line, heads 3 and
    tails 2, six lines from the bottom up) with the fairest random source this chat has, and say how it was
    drawn. Lines totalling 6 or 9 are changing and give the hexagram it becomes. Each face opens with its hexagram and how its wisdom bears on the
    question; the cast informs, and the evidence still has to hold.
-4. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game character.
+5. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game character.
    Each delivers what its entry lists, in short paragraphs with a subject and a finite verb. Where this
    session can run subagents, a face may send its daemons (`daemon-protector` and the others) to work one
    specific problem in its domain, for the Player, through the five moves. Where it cannot, the face reads
    the daemon's entry in `council/daemons/daemons.yaml` itself, or skips it and says so.
-5. **Verdicts table.** One row per face.
-6. **Dissent check.** Say whether the pass was unanimous. Treat a unanimous pass as a warning sign
+6. **Verdicts table.** One row per face.
+7. **Dissent check.** Say whether the pass was unanimous. Treat a unanimous pass as a warning sign
    and say so in the pass.
-7. **Sage.** The Sage synthesises. It names each face's contribution, lists the dissent, and never
+8. **Sage.** The Sage synthesises. It names each face's contribution, lists the dissent, and never
    decides. Wendell decides.
-8. **Outputs, typed apart.** *Positions* are what the council resolved, each with the reason it did
+9. **Outputs, typed apart.** *Positions* are what the council resolved, each with the reason it did
    not need Wendell. *Questions* are only what passes the reach test below.
 
 ## The reach test
@@ -52,14 +54,30 @@ with options, the consequence of each, why only he can answer, and why it was no
 
 ## Where it lands without a repo
 
-Wendell works in interfaces more than in chat. Chat is for context and steering.
+Wendell works in interfaces more than in chat. Chat is for context and steering. His interface for the
+council is one page, the Council Board: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
 
-- Put the pass in an artifact page, with positions he can flip and questions he can answer. The
-  page's first view holds only unresolved work; decided items move to a second, resolved view.
-- End the chat reply with what changed and the link.
-- Close with a short **record block**: the date, the question, each face's one-line verdict, and his
-  ruling once he gives it. A repo session pastes it into a ledger later. A ruling or steer in his own
-  words is a lesson for that face, so quote it exactly in the block.
+- **The board is the only home for positions and questions.** Never put a pass, its positions or its
+  questions in a new artifact page, a copy of the board, or a Claude Doc. A second page splits what he
+  rules on, and he cannot see it from the board.
+- **Read the board before writing.** Read the page with the Artifact tool's `read` action. Where
+  `ArtifactData` is available, also read the store's `positions` and `questions` collections and the
+  `steer/general` document, which hold his flips, answers and steers. Use what you read: do not
+  re-ask a question that is open or resolved there, do not contradict a ruling recorded there, and
+  quote his steers where they bear on the question. Say in the pass that the board was read and
+  when. If the board cannot be read in this session, say so in the reply and treat every question
+  as unchecked against it.
+- **Add to the board through the home repo.** The board page is built from `board/board_data.json`
+  in the home repo (`wendell-britt/six-faces-council`). A session without that repo does not
+  republish the board, because the next build from the repo would overwrite the change. Write the
+  new positions and questions as rows in `board_data.json`'s shape inside the record block: a
+  position has `id`, `faces`, `pos` and `why`; a question has `id`, `faces`, `q`, `options`,
+  `why_you` and `not_before`. A repo session adds them, rebuilds and republishes to the same URL.
+- End the chat reply with what changed, the board link, and a plain note that the new rows wait in
+  the record block for a repo session to put on the board.
+- Close with a short **record block**: the date, the question, each face's one-line verdict, the
+  board rows, and his ruling once he gives it. A repo session pastes it into a ledger later. A ruling
+  or steer in his own words is a lesson for that face, so quote it exactly in the block.
 
 ## Steps only Wendell can take
 
