@@ -1111,6 +1111,38 @@
    "auto": true,
    "pos": "The reading weighs recent play more than old play: each act counts fully and earlier acts count half, so a player who changes their ways hears the world change with them. This stands unless you flip it.",
    "why": "design.md: 'Earth and well are habits, not classes, and the player can move between them.' The half weight is a placeholder for playtests. Source: sprout docs/story-mirror/reading.md (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "mh4-map-feel",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout maker 4",
+   "auto": false,
+   "pos": "Your clip is the target feel for Sprout's map editor: each edge's exit is the control, the map redraws on every change, pinned pieces never move, and one click reskins the layout. It saves Tiled JSON.",
+   "why": "You named the clip as the ergonomics you want. Sprout's rules require Tiled JSON (CLAUDE.md), and the planner already never moves a pinned feature (docs/generators-plan.md:145). Source: sprout docs/maker-and-hall/6FACE_PASS4_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh4-map-order",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout maker 4",
+   "auto": false,
+   "pos": "The map editor is built in three pieces, in order: a live map tab over the existing planner, then routes carved between exits (path, river, waterfall at a ledge), then the theme swap.",
+   "why": "Pass two's Gate 2 already includes a browser map editor. Sprout's generator has exits, ledges, rivers and a planner (G5, G9 to G11), and all ten maps build in about a tenth of a second, fast enough to redraw live. Source: sprout docs/maker-and-hall/6FACE_PASS4_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "mh4-map-verifier",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout maker 4",
+   "auto": false,
+   "pos": "Every redraw passes the walk checker, so a change that breaks the walk shows the broken door instead of a map.",
+   "why": "Sprout's map research names generators that make tiles with no walk as the failure to avoid (docs/map-topology-research.md:14). The checker exists (docs/generators-plan.md:143). Source: sprout docs/maker-and-hall/6FACE_PASS4_2026-10-03.md (branch claude/project-thread-f7m3zi)"
   }
  ],
  "questions": [
@@ -2229,6 +2261,34 @@
      "c": "The session improves the council's own tools first, and you widen its reach later."
     }
    ]
+  },
+  {
+   "id": "mh4-map-when",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sprout maker 4",
+   "q": "When should the live map tab start?",
+   "why_you": "Only you order your own attention, and no rule in the record settles it: the map tab does not serve the slice playtest, and nothing forbids it either. The answer decides what is built next.",
+   "not_before": "Your clip arrived today.",
+   "options": [
+    {
+     "v": "now",
+     "label": "Now, as the next maker task",
+     "c": "The map tab is built next, beside the playtest. The Architect and the Shaman lean here, while the generator is fresh."
+    },
+    {
+     "v": "after-card",
+     "label": "After you read the output card's moves",
+     "c": "The map tab waits until you have rewritten or approved the five moves, so one result waits on you at a time. The Diplomat leans here."
+    },
+    {
+     "v": "after-playtest",
+     "label": "After the slice playtest round",
+     "c": "Maker work stays on what speeds the playtest, and the map tab starts once the round's logs are read."
+    }
+   ]
   }
  ],
  "causes": [
@@ -2999,6 +3059,21 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-reading-signals": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-reading-no-loans": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-reading-recent": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
    }
   },
   "questions": {
