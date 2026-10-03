@@ -1079,6 +1079,38 @@
    "auto": true,
    "pos": "The Diplomat gains a lesson from your overrule of fm-one-row: a limit on what an agent may take up is a starting level, and it rises as the record shows useful work and careful token use. It goes into faces.yaml at your next board read unless you flip it.",
    "why": "The skill says an overrule on a face's row becomes that face's lesson, and faces.yaml changes only by your ruling. Source: council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+  },
+  {
+   "id": "sm-reading-signals",
+   "faces": [
+    "architect"
+   ],
+   "pass": "sprout story reading",
+   "auto": true,
+   "pos": "In Sprout's reading, time spent with an ally feeds the ally's element, and planting a crop in its own season feeds that season's element, alongside the five farm verbs and the channel the player fights from. This stands unless you flip it.",
+   "why": "Both reuse ties design.md already makes: each ally has an element, and each season has one. The farm verbs follow the five villages' garden verbs exactly. Source: sprout docs/story-mirror/reading.md (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "sm-reading-no-loans",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "sprout story reading",
+   "auto": true,
+   "pos": "Loans and repayments do not move the ledger lean between taking and returning. Well grounding, coin-bought strength, standing weeds and bare harvests count as taking; earth grounding, resting monsters, compost, clearing weeds and the rites count as returning. This stands unless you flip it.",
+   "why": "design.md: the standing ledger turns the forest's debt into each citizen's, 'a debt that was never theirs'. Borrowing is done to the player, not taken from the forest. Source: sprout docs/story-mirror/reading.md (branch claude/project-thread-1754kb)"
+  },
+  {
+   "id": "sm-reading-recent",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout story reading",
+   "auto": true,
+   "pos": "The reading weighs recent play more than old play: each act counts fully and earlier acts count half, so a player who changes their ways hears the world change with them. This stands unless you flip it.",
+   "why": "design.md: 'Earth and well are habits, not classes, and the player can move between them.' The half weight is a placeholder for playtests. Source: sprout docs/story-mirror/reading.md (branch claude/project-thread-1754kb)"
   }
  ],
  "questions": [
