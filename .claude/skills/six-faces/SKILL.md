@@ -88,6 +88,29 @@ Read the store with `ArtifactData`: collections `positions`, `questions`, and th
 that face's entry in `faces.yaml`, quoted, with the source. A ruling that changes a term, a
 structure or a date goes in the repo's decision log where one exists.
 
+**A deferred item waits until its date.** Each question and position row has a Defer button with a
+return date: in a week, in a month, or when Wendell asks. A deferred row waits on the Resolved tab and
+comes back to the Open tab when its date passes. Record it in `resolved` with `decision: deferred` and
+`until`, and do not ask about it again before then. Every deferral stays in the ledger, because the
+pattern of what he puts off is data about priority (Wendell, board read 20, 2026-10-03). The rules are
+in `defer` in `council/pipeline.yaml`.
+
+**A deferred item comes back on a spaced schedule, with new context** (Wendell, 2026-10-03). Each deferral of
+the same item waits for the next rung of Wendell's ladder: 1 hour, 6 hours, 1 day, 3 days, 1 week, 2 weeks, then
+a month. A scheduled session re-weighs every Monday on its own, and every board read also starts with
+`python3 council/due.py --ahead 7`, so items due in the coming week arrive prepared. For each item it lists, read its brief of what changed, have each
+face cast and write one line, and write the result onto the row as `review` in `board_data.json` on main,
+with a recommendation of take it up, defer again, retire, or reshape the question. Record a new deferral with
+`python3 council/due.py record`, which keeps every earlier one in `history`. The spec is
+`.specify/specs/spaced-deferral/spec.md`.
+
+**Deferral.** Each question and position row has a Defer button with a return date: in a week, in a
+month, or when Wendell asks. A deferred row waits on the Resolved tab and comes back to the Open tab
+when its date passes. Record it in `resolved` with `decision: deferred` and `until`, and do not ask
+about it again before then. Every deferral stays in the ledger, because the pattern of what he puts
+off is data about priority (Wendell, board read 20, 2026-10-03). The rules are in `defer` in
+`council/pipeline.yaml`.
+
 ## The feature pipeline
 
 A new feature runs the pipeline in `council/pipeline.yaml`. Wendell asked for it on 2026-10-02:

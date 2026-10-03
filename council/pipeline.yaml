@@ -31,6 +31,48 @@ outputs:
 
 steps_page: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps   # the Your steps tab; Wendell overruled a separate page at board read 8
 
+# Deferral. Wendell asked for it at board read 20 (2026-10-03), on the oracle drafts: "We need to be
+# able to defer projects so they don't get trapped on the board, but we are also collecting data
+# about priority". Any question or position row on the board has a Defer button with a return date.
+defer:
+  until: [week, month, ask]   # in a week, in a month, or when Wendell asks for it back
+  board: a deferred row leaves the Open tab and waits in the Deferred section of the Resolved tab.
+    It returns to the Open tab by itself when its date passes. A row deferred until he asks returns
+    only when he asks.
+  council: the council does not ask about a deferred item again before its date, and does not
+    re-raise it under a new id. Work on it stops where it stands; an open pull request stays open
+    and is marked deferred.
+  record: each deferral goes in the board read's ledger record and in resolved, with decision
+    deferred, the until date, and his steer. stats.py counts deferrals per project, because a
+    deferral is data about priority.
+  # Spaced repetition. Wendell, 2026-10-03: "We want to use spaced repetition so that tasks that are
+  # deferred come back and the council can weigh in on them in new context." Spec:
+  # .specify/specs/spaced-deferral/. The numbers are the council's (pass eight, position sd-intervals).
+  spaced:
+    # Wendell, 2026-10-03: "The spaced repetition of deferrals should start with 1 hr to 6 hours to 24 hours
+    # to 3 days to a week to 2 weeks to a month". It replaced the council's week-then-double (pass eight).
+    ladder_hours: [1, 6, 24, 72, 168, 336, 720]
+    step: >
+      A spaced deferral waits the first rung longer than the item's last wait, so a wait he set by hand
+      counts. Past the top rung it stays at a month. Both readings are the session's, not his.
+    retire_after: none   # no cap; the Challenger's dissent is in pass eight
+    history: every deferral of an item stays in history on its resolved entry, also after he takes it up.
+      Record one with python3 council/due.py record, which computes the date the way the board does.
+  reweigh:
+    when: >
+      once a week, in a scheduled session that starts fresh (Wendell, board question sd-when,
+      2026-10-03, "On its own"), and also at the start of every board read. Either way,
+      python3 council/due.py --ahead 7 lists what is due now or within the coming week, and what
+      changed in each item's project since he deferred it (Wendell, 2026-10-03: "they should prepare
+      items due in the coming week"). A week with nothing due ends there, with nothing written and
+      nothing published. An item on a rung shorter than a week can come back before any run reaches
+      it, and then it waits on the Open tab with a note until a session re-weighs it.
+    routine: "'Council: re-weigh due deferrals', Mondays 15:45 UTC"
+    how: each face casts and writes one line on what changed. The council recommends one of take it up,
+      defer again, retire, or reshape the question. All of it is written onto the row as review, on main,
+      before the item reaches the Open tab. When nothing changed, the review says so in one line.
+    reach: a re-weigh is not a new question. It goes to him on the item's own row, never under a new id.
+
 # The reach test, applied to actions. A step goes to Wendell's checklist only if he is the only one
 # who can do it: his accounts, his money, his name, his eyes on the result, or a permission he holds.
 # Anything a session can do itself, it does.

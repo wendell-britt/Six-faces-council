@@ -1,0 +1,35 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-20",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "subject_project": "friendcraft-manuacript",
+ "cause": "editorial",
+ "question": "The 19 oracle drafts",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "questions": {
+  "fcm-oracle-drafts": {
+   "choice": "deferred",
+   "until": "2026-11-03",
+   "saved_at": "2026-10-03T18:08:52Z",
+   "until_chosen_by": "the session, because he named no date; a month, so it comes back by itself rather than waiting on him to ask"
+  }
+ },
+ "steers": {
+  "fcm-oracle-drafts": "I'm blocked on this because I've been out of the practice too long. It seems we would need to go back and do the work again which I'm happy to do but this one is lower priority. We need to be able to defer projects so they don't get trapped on the board, but we are also collecting data about priority"
+ },
+ "not_read": "The mh- and mh3- rows saved 18:01 to 18:23 belong to the Sprout Plot / Calrunia session and are left to it.",
+ "acted_on": [
+  "The board gained a Defer button with a return date on every question and position row (#10), and a fix so a deferred row does come back on its date (#11)",
+  "pipeline.yaml and both six-faces skills say the council does not re-ask a deferred item before its date",
+  "stats.py counts deferrals per project, and no longer crashes on a pass record that lists its rows before a ruling",
+  "friendcraft #26 stays open as a draft, marked deferred until 2026-11-03"
+ ],
+ "lessons": {
+  "face": "council",
+  "wendell": "I'm blocked on this because I've been out of the practice too long. It seems we would need to go back and do the work again which I'm happy to do but this one is lower priority. We need to be able to defer projects so they don't get trapped on the board, but we are also collecting data about priority",
+  "lesson": "When Wendell cannot take up a project yet, the council defers it with a return date, rather than leaving it open on the board or closing it, and asks nothing about it before that date. The ledger keeps every deferral, because the pattern of what he defers is data about priority.",
+  "status": "ruled yes in chat on 2026-10-03; recorded in faces.yaml council_lessons"
+ }
+}

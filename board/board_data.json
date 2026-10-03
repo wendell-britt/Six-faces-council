@@ -899,6 +899,38 @@
    "auto": true,
    "pos": "Your Calrunia ruling and the five domains are in Sprout's decision log (docs/decisions/calrunia-and-domains.md). design.md is not edited: adding a domain column to the channel table is yours to do. This stands unless you flip it.",
    "why": "Sprout's CLAUDE.md: do not change story or game rules; design.md's lines are yours to update. Source: sprout docs/maker-and-hall/6FACE_PASS3_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "sd-ship",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "8",
+   "auto": true,
+   "pos": "Spaced deferral merges on your next board read unless you flip this. Each deferral of the same item waits longer than the one before, and an item that comes back first gets the council's reading of what changed while it waited.",
+   "why": "Your ask in chat on 2026-10-03. The test run before the board was built passed: as if deferred on 2026-10-02, the flirtcraft deploy alert came back with eight changes, and two of them would change a face's verdict. Source: council/passes/6FACE_PASS8_2026-10-03.md (six-faces-council, pull request #13)"
+  },
+  {
+   "id": "sd-intervals",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "8",
+   "auto": true,
+   "pos": "The first spaced deferral of an item waits 7 days, and each later one waits twice the last wait. The oracle drafts waited 31 days, so their next spaced wait is 62. These numbers are the council's, and flipping this lets you set your own. A week, a month and \"when I ask\" stay on the list.",
+   "why": "You asked for spaced repetition and did not set its numbers. No cap retires an item by itself; the Challenger wanted one and is overruled in the pass, because a cap would be a number set on your behalf. Source: council/passes/6FACE_PASS8_2026-10-03.md (six-faces-council, pull request #13)"
+  },
+  {
+   "id": "sd-review",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "8",
+   "auto": true,
+   "pos": "When a deferred item's date passes, the council re-weighs it before you see it. The row shows your last steer in your words, what changed with its source, one line from each face under a fresh cast, and one recommendation: take it up, defer again, retire, or reshape the question. If nothing changed, the row says so in one line.",
+   "why": "Your words: \"the council can weigh in on them in new context.\" The fixed shape keeps a return from repeating the old case in new words. Source: council/passes/6FACE_PASS8_2026-10-03.md (six-faces-council, pull request #13)"
   }
  ],
  "questions": [
@@ -1878,6 +1910,29 @@
      "c": "You compare the two halves, and each half is smaller."
     }
    ]
+  },
+  {
+   "id": "sd-when",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "8",
+   "q": "When should the council re-weigh an item whose date has passed?",
+   "why_you": "A weekly session runs on your account and uses it every week. The answer decides whether the council builds a scheduled session.",
+   "not_before": "Nothing came back from a deferral until spaced deferral was built today.",
+   "options": [
+    {
+     "v": "next-read",
+     "label": "In the next session that reads the board",
+     "c": "Nothing runs on its own. An item can wait on the Open tab with a note saying the council has not re-weighed it yet, until you next say updated."
+    },
+    {
+     "v": "weekly",
+     "label": "In a weekly scheduled session",
+     "c": "Once a week a session checks for due items, re-weighs them and republishes the board, so each item reaches you with its reading done. It uses your account each week, including weeks when nothing is due. The Diplomat would choose this."
+    }
+   ]
   }
  ],
  "causes": [
@@ -2570,6 +2625,22 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "sd-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+   },
+   "sd-intervals": {
+    "decision": "overrule",
+    "label": "Overruled: his ladder, 1 hour to 1 month",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+   },
+   "sd-review": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
    }
   },
   "questions": {
@@ -2735,6 +2806,23 @@
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)"
    },
+   "fcm-oracle-drafts": {
+    "decision": "deferred",
+    "until": "2026-11-03",
+    "label": "Deferred: lower priority, and the work needs redoing once he is back in practice",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-20.json (six-faces-council)",
+    "project": "friendcraft-manuacript",
+    "history": [
+     {
+      "recorded": "2026-10-03",
+      "saved_at": "2026-10-03T18:08:52Z",
+      "until": "2026-11-03",
+      "days": 31,
+      "steer": "I'm blocked on this because I've been out of the practice too long. It seems we would need to go back and do the work again which I'm happy to do but this one is lower priority. We need to be able to defer projects so they don't get trapped on the board, but we are also collecting data about priority"
+     }
+    ]
+   },
    "mh-calrunia-hall": {
     "decision": "world",
     "label": "Calrunia is Sprout's world",
@@ -2770,6 +2858,12 @@
     "label": "Half the playtesters see it",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "sd-when": {
+    "decision": "weekly",
+    "label": "In a weekly scheduled session, preparing the coming week",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
    }
   },
   "causes": {

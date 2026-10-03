@@ -1,0 +1,91 @@
+{
+ "id": "2026-10-03-six-faces-council-pass8-spaced-deferral",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "Spaced repetition for deferred board items, re-weighed in new context",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source_doc": "council/passes/6FACE_PASS8_2026-10-03.md",
+ "wendell": "We want to use spaced repetition so that tasks that are deferred come back and the council can weigh in on them in new context.",
+ "faces_present": [
+  "shaman",
+  "architect",
+  "challenger",
+  "regent",
+  "diplomat",
+  "sage"
+ ],
+ "dissent": true,
+ "dissent_note": "The Challenger would cap the schedule and ask him to retire or take up an item after repeated deferrals; set down because a cap is a number inferred on his behalf.",
+ "casts": [
+  {
+   "agent": "shaman",
+   "n": 28,
+   "name": "Overload"
+  },
+  {
+   "agent": "architect",
+   "n": 57,
+   "name": "Persuasion",
+   "changing_lines": [
+    2,
+    4,
+    6
+   ],
+   "becomes": 31
+  },
+  {
+   "agent": "challenger",
+   "n": 2,
+   "name": "Bearing",
+   "changing_lines": [
+    2,
+    3,
+    5
+   ],
+   "becomes": 48
+  },
+  {
+   "agent": "regent",
+   "n": 47,
+   "name": "Drained",
+   "changing_lines": [
+    4
+   ],
+   "becomes": 29
+  },
+  {
+   "agent": "diplomat",
+   "n": 55,
+   "name": "Fullness"
+  },
+  {
+   "agent": "sage",
+   "n": 10,
+   "name": "Footing",
+   "changing_lines": [
+    2,
+    3,
+    5
+   ],
+   "becomes": 30
+  }
+ ],
+ "cast_grade": "Two casts changed a face's output (Bearing put the numbers on the board; Depths sent a second look that found an overclaim). Neither is shown to depend on the cast rather than the rules in force. Weak evidence; second of three.",
+ "falsify": {
+  "test": "due.py brief on the flirtcraft deploy alert as if deferred on 2026-10-02",
+  "pass_mark": "at least one change a face could use",
+  "result": "passed: 8 changes, 2 verdict-changing; found and fixed same-day records listed from before a deferral"
+ },
+ "positions": [
+  "sd-ship",
+  "sd-intervals",
+  "sd-review"
+ ],
+ "questions": [
+  "sd-when"
+ ],
+ "pull_request": "https://github.com/wendell-britt/Six-faces-council/pull/13",
+ "subagent_tokens": 0
+}
