@@ -931,6 +931,38 @@
    "auto": true,
    "pos": "When a deferred item's date passes, the council re-weighs it before you see it. The row shows your last steer in your words, what changed with its source, one line from each face under a fresh cast, and one recommendation: take it up, defer again, retire, or reshape the question. If nothing changed, the row says so in one line.",
    "why": "Your words: \"the council can weigh in on them in new context.\" The fixed shape keeps a return from repeating the old case in new words. Source: council/passes/6FACE_PASS8_2026-10-03.md (six-faces-council, pull request #13)"
+  },
+  {
+   "id": "sd-autonomy-pass",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "8",
+   "auto": true,
+   "pos": "The council runs its next pass on what the scheduled session may take up on its own while you are away, and where its limits are. The pass brings positions and questions here, and the session takes up nothing new until you rule on them. This stands unless you flip it.",
+   "why": "Your steer on sd-when: \"It should be able to check in it’s own and eventually find work to do that pushes the needle even if I’m unavailable\". Running a pass needs nothing from you, and the limits it proposes come to you as rows. Source: council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+  },
+  {
+   "id": "lesson-challenger-ladder",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "8",
+   "auto": true,
+   "pos": "The Challenger gains a lesson from your overrule of sd-intervals: a deferral can mean \"not right now\" as well as \"not this month\". The council set its numbers in weeks, and your ladder starts at an hour. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "The skill says an overrule on a face's row becomes that face's lesson, and faces.yaml changes only by your ruling, so it waits here for you. Source: council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+  },
+  {
+   "id": "lesson-board-not-chat",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "pass": "8",
+   "auto": true,
+   "pos": "The council gains a lesson from your words of 2026-10-03, \"These questions shouldn’t be showing up here\": every question for you goes on this board, and a chat reply only says that the board has new rows. A session that writes a question in chat has skipped the reach test. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "Three questions reached you in chat today. The rule already existed in the skill, \"The board is the only home for positions and questions\", and the session did not apply it. Source: your message in chat, 2026-10-03."
   }
  ],
  "questions": [
@@ -1931,6 +1963,29 @@
      "v": "weekly",
      "label": "In a weekly scheduled session",
      "c": "Once a week a session checks for due items, re-weighs them and republishes the board, so each item reaches you with its reading done. It uses your account each week, including weeks when nothing is due. The Diplomat would choose this."
+    }
+   ]
+  },
+  {
+   "id": "sd-daily",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "8",
+   "q": "Your ladder starts at an hour, and the re-weigh runs on Mondays. Should it run every day instead?",
+   "why_you": "A daily session uses your account every day, including days with nothing due. The answer decides how often the scheduled session runs.",
+   "not_before": "The ladder you set at board read 22 starts at an hour, so most short deferrals now come back before a Monday run reaches them.",
+   "options": [
+    {
+     "v": "weekly",
+     "label": "Keep Mondays",
+     "c": "Deferrals of a week or more come back prepared. One of an hour, a day or three days usually comes back with a note that the council has not looked yet, until you open a session."
+    },
+    {
+     "v": "daily",
+     "label": "Every day",
+     "c": "Everything except the one-hour and six-hour rungs comes back prepared. It uses your account seven times a week."
     }
    ]
   }
