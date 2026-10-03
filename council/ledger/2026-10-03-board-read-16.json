@@ -28,5 +28,12 @@
     "Rewrite only the 30 flagged binds sentences; show each before and after; merge flirtcraft#7 on Wendell's yes to the list",
     "flirtcraft#8 merges as built, HeyCatch included, once #7 has merged",
     "Clear the oracle port's lint hits in a separate commit, then show the source changes file by file"
-  ]
+  ],
+  "done": {
+    "fc-binds-yes": "flirtcraft strand/binds 1a4e5e5: 7 hits fixed; 23 hits in quoted Legge and Wilhelm text left as quoted; the earlier count of player-facing hits was wrong (only 1). Asked on the board as fc-binds-seven.",
+    "fcm-oracle-yes": "friendcraft strand/oracle-port dc0acb5 (lint pass: 62 hits in 43 YAML fields, 66 in docs; built decks regenerated from the sources) and 9d538da (21 reading batches). 256 tests pass. 25 hits left in quoted translations. Batch 01 asked on the board as fcm-oracle-batch-01.",
+    "worker_tokens": {
+      "oracle_lint_sonnet": 271363
+    }
+  }
 }

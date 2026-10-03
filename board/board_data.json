@@ -1282,6 +1282,33 @@
      "c": "Nothing merges yet."
     }
    ]
+  },
+  {
+   "id": "fcm-oracle-batch-01",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "q": "Oracle batch 1 of 13 card files: the image and situation lines for the sixteen hexagram cards written so far. The branch rewrote them in what its commit calls the Wilhelm and Liu style, about half as long as today's: images from 24 words to 12, situations from 30 to 14. It holds 45 changes, and the lint pass touched 11 of them. Each change shows today's text and the new text in full: https://github.com/wendell-britt/friendcraft-manuacript/blob/strand/oracle-port/review/batches/01-shared-situations.md",
+   "why_you": "It is your oracle's prose. Nothing in it merges without your yes.",
+   "not_before": "The lint pass and the batches were finished tonight. All 256 of the repo's tests pass on the branch. The full list of 21 batches is in review/batches/README.md on the same branch.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "Yes to all 45",
+     "c": "This file's changes are kept. Batch 2 comes next."
+    },
+    {
+     "v": "some",
+     "label": "Some yes, some no",
+     "c": "Write the change numbers you reject in the note. The council keeps the rest, puts today's text back for those, and sends batch 2."
+    },
+    {
+     "v": "no",
+     "label": "No to this file",
+     "c": "Today's text stays for all sixteen cards. Batch 2 comes next."
+    }
+   ]
   }
  ],
  "causes": [
