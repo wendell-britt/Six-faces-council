@@ -70,7 +70,9 @@ council is one page, the Council Board: https://claude.ai/artifact/DxyShVS8tmvJy
 - **A deferred row waits until its date.** A row Wendell deferred sits in the Deferred section of the
   Resolved tab with a return date, or with none if it waits until he asks. Do not ask about it again,
   under its own id or a new one, before that date. The deferral itself is data about what he ranks
-  lower, so keep it in the record block.
+  lower, so keep it in the record block. Each deferral of the same item waits longer than the last, and when
+  one comes back the council re-weighs it before he sees it: what changed since he deferred it, one line per
+  face under a fresh cast, and a recommendation. A repo session does this with `council/due.py`.
 - **Add to the board through the home repo.** The board page is built from `board/board_data.json`
   in the home repo (`wendell-britt/six-faces-council`). A session without that repo does not
   republish the board, because the next build from the repo would overwrite the change. Write the

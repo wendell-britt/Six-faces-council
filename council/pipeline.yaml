@@ -45,6 +45,26 @@ defer:
   record: each deferral goes in the board read's ledger record and in resolved, with decision
     deferred, the until date, and his steer. stats.py counts deferrals per project, because a
     deferral is data about priority.
+  # Spaced repetition. Wendell, 2026-10-03: "We want to use spaced repetition so that tasks that are
+  # deferred come back and the council can weigh in on them in new context." Spec:
+  # .specify/specs/spaced-deferral/. The numbers are the council's (pass eight, position sd-intervals).
+  spaced:
+    first_days: 7     # the first spaced deferral of an item
+    growth: 2         # each later deferral waits this many times the last wait, whatever that wait was
+    retire_after: none   # no cap; the Challenger's dissent is in pass eight
+    history: every deferral of an item stays in history on its resolved entry, also after he takes it up.
+      Record one with python3 council/due.py record, which computes the date the way the board does.
+  reweigh:
+    when: >
+      once a week, in a scheduled session that starts fresh (Wendell, board question sd-when,
+      2026-10-03, "On its own"), and also at the start of every board read. Either way,
+      python3 council/due.py lists what is due and what changed in each item's project since he
+      deferred it. A week with nothing due ends there, with nothing written and nothing published.
+    routine: "'Council: re-weigh due deferrals', Mondays 15:45 UTC"
+    how: each face casts and writes one line on what changed. The council recommends one of take it up,
+      defer again, retire, or reshape the question. All of it is written onto the row as review, on main,
+      before the item reaches the Open tab. When nothing changed, the review says so in one line.
+    reach: a re-weigh is not a new question. It goes to him on the item's own row, never under a new id.
 
 # The reach test, applied to actions. A step goes to Wendell's checklist only if he is the only one
 # who can do it: his accounts, his money, his name, his eyes on the result, or a permission he holds.
