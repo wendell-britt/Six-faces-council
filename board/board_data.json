@@ -1549,6 +1549,33 @@
      "c": "Main's text stays for all 19."
     }
    ]
+  },
+  {
+   "id": "fcm-oracle-drafts",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "q": "The council drafted the 19 partial survivors. Each draft keeps today's text and adds only the clause that survived. Where today's text presumed the reader's stage, the draft states the same point as a law, for example: \"What is missing here is answerable. Asking gets the answer, and watching only gets a better guess.\" All 19 are quoted in the chat, and here with today's text beside each one: https://github.com/wendell-britt/friendcraft-manuacript/blob/strand/oracle-drafts/review/batches/DRAFTS_2026-10-03.md",
+   "why_you": "These are new sentences on your cards, so each one needs your yes.",
+   "not_before": "You asked for the drafts at board read 19. They pass the engine's lint and every test.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "Yes to all 19",
+     "c": "They go onto the cards (friendcraft pull request #26)."
+    },
+    {
+     "v": "some",
+     "label": "Some yes, some no",
+     "c": "Write the numbers (1 to 19) you reject in the note. Those keep today's text, and the rest go in."
+    },
+    {
+     "v": "none",
+     "label": "None",
+     "c": "Today's text stays for all 19."
+    }
+   ]
   }
  ],
  "causes": [
