@@ -2629,12 +2629,13 @@
    "sd-ship": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
    },
    "sd-intervals": {
-    "decision": "stands",
+    "decision": "overrule",
+    "label": "Overruled: his ladder, 1 hour to 1 month",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
    },
    "sd-review": {
     "decision": "stands",
@@ -2860,9 +2861,9 @@
    },
    "sd-when": {
     "decision": "weekly",
-    "label": "In a weekly scheduled session",
+    "label": "In a weekly scheduled session, preparing the coming week",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
    }
   },
   "causes": {

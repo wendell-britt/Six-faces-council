@@ -1,0 +1,51 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-22",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "The deferral ladder, preparing the coming week, and what the weekly session may do",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "positions": {
+  "sd-ship": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:14:15Z"
+  },
+  "sd-intervals": {
+   "choice": "overrule",
+   "answered_in": "chat",
+   "wendell": "The spaced repetition of deferrals should start with 1 hr to 6 hours to 24 hours to 3 days to a week to 2 weeks to a month"
+  }
+ },
+ "questions": {
+  "sd-when": {
+   "choice": "weekly",
+   "saved_at": "2026-10-03T19:14:07Z",
+   "note": "answered 'On its own' in chat at board read 21; the board save carries a steer and no choice"
+  }
+ },
+ "steers": {
+  "sd-when": "It should be able to check in it’s own and eventually find work to do that pushes the needle even if I’m unavailable",
+  "sd-intervals": "The spaced repetition of deferrals should start with 1 hr to 6 hours to 24 hours to 3 days to a week to 2 weeks to a month",
+  "sd-ahead": "Yes they should prepare items due in the coming week"
+ },
+ "overruled": [
+  "sd-intervals"
+ ],
+ "acted_on": [
+  "six-faces-council #14 merged (7f551dd): his ladder in due.py and the board; due.py --ahead 7",
+  "Routine trig_01M3SsNPPTDRts82YEu2uzox now runs due.py --ahead 7 and skips items already prepared"
+ ],
+ "open": {
+  "sd-when steer": "Finding work that pushes the needle while he is unavailable is a larger feature than the weekly re-weigh. Put to him in chat: whether to run a pass on what the weekly session may take up on its own, and within which limits."
+ },
+ "lessons_pending": [
+  {
+   "face": "challenger",
+   "wendell": "The spaced repetition of deferrals should start with 1 hr to 6 hours to 24 hours to 3 days to a week to 2 weeks to a month",
+   "lesson": "A deferral can mean 'not right now' as well as 'not this month'. The council set its spaced numbers in weeks, and his ladder starts at an hour.",
+   "status": "pending his ruling; faces.yaml changes only by his ruling"
+  }
+ ]
+}
