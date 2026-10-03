@@ -1,0 +1,19 @@
+{
+ "id": "2026-10-03-board-read-15-acted",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "council-design",
+ "question": "What was done on board read 15",
+ "source": "council/ledger/2026-10-03-board-read-15.json",
+ "done": {
+  "census-fix": "six-faces-council#5 merged",
+  "archive-method": "six-faces-council#6 merged: council/retire_branches.sh and council/census/RETIRE_2026-10-03.tsv (67 branches). The Your steps list council-retire-branches has 4 steps. Tested on local repos.",
+  "fcm-exchange": "friendcraft-manuacript#22 merged (cd79c65). It touches nothing under manuscript/. Its two lint hits already exist in main's exchange page.",
+  "fc-binds": "flirtcraft#7 opened from strand/binds. binds, tests, types and build pass; the Vercel preview is ready. 30 hard lint hits in lib/binds.json sentences that Wendell kept; asked on the board as fc-binds-yes.",
+  "fc-front-door": "flirtcraft#8 opened from strand/storefront, stacked on strand/binds because they share 5 files. Conflicts: package.json and lib/useEntitlement.ts against main; nine against front-door-seo, all resolved to the fold's later versions per its commit 165d428. Tests, types and build pass; the preview is ready. HeyCatch receives player emails at sign-in; asked on the board as fc-storefront-yes.",
+  "fcm-oracle": "friendcraft-manuacript#23 opened from strand/oracle-port by a sonnet worker. 290 distinct rewrites, 815 occurrences; at least 260 new hard lint hits; review/oracle-port-before-after.md is 11,641 lines. Asked on the board as fcm-oracle-yes."
+ },
+ "worker_tokens": {
+  "oracle_port_sonnet": 128572
+ }
+}

@@ -1174,6 +1174,87 @@
      "c": "Nothing changes."
     }
    ]
+  },
+  {
+   "id": "fc-binds-yes",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "q": "Flirtcraft's binds work is on a preview and passes its tests and build: https://flirtcraft-git-strand-binds-wendells-projects-9c1b16dc.vercel.app. Its 246 card sentences, which you read and kept in batches, have 30 hits from flirtcraft's own voice lint, such as the banned word \"thing\" and sentences starting with \"But\". What should happen?",
+   "why_you": "They are sentences you kept, and the lint is your rule. Only you can say which one wins.",
+   "not_before": "The checks ran tonight on the merged copy. Pull request: https://github.com/wendell-britt/flirtcraft/pull/7",
+   "options": [
+    {
+     "v": "fix-first",
+     "label": "Fix the 30 hits first, and show me each one before and after",
+     "c": "The council rewrites only the flagged sentences and shows you the old and new text for each one. It merges when you say yes to that list."
+    },
+    {
+     "v": "merge",
+     "label": "Merge it as kept",
+     "c": "The sentences go live as you read them. The 30 hits stay on record for a later pass."
+    },
+    {
+     "v": "leave",
+     "label": "Leave it open for now",
+     "c": "Nothing changes on the live site."
+    }
+   ]
+  },
+  {
+   "id": "fc-storefront-yes",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "q": "The storefront is rebuilt on current main and passes its tests and build: https://flirtcraft-git-strand-storefront-wendells-projects-9c1b16dc.vercel.app. As built on 2026-09-11, it sends each player's email address to HeyCatch analytics when they sign in. Should it go live?",
+   "why_you": "It changes what strangers see on your site, and it sends player emails to a third party.",
+   "not_before": "The rebuild ran tonight. It sits on top of the binds work because the two share five files. Pull request: https://github.com/wendell-britt/flirtcraft/pull/8",
+   "options": [
+    {
+     "v": "merge",
+     "label": "Merge it as built, analytics and all",
+     "c": "It goes live after the binds work. Player emails go to HeyCatch at sign-in."
+    },
+    {
+     "v": "merge-no-email",
+     "label": "Merge it, but HeyCatch gets no email addresses",
+     "c": "The council removes the email from the analytics identity and keeps the anonymous id. It goes live after the binds work."
+    },
+    {
+     "v": "leave",
+     "label": "Leave it open for now",
+     "c": "Nothing changes on the live site."
+    }
+   ]
+  },
+  {
+   "id": "fcm-oracle-yes",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "q": "The oracle rewrites are on current main. They hold 290 different rewrites of card text, and the before-and-after file runs to 11,641 lines. Under main's newer voice lint they add at least 260 hard hits, mostly banned words, fragments and empty heads. How do you want to read them?",
+   "why_you": "It is your oracle's prose, and every change needs your eyes.",
+   "not_before": "The port ran tonight. Pull request: https://github.com/wendell-britt/friendcraft-manuacript/pull/23",
+   "options": [
+    {
+     "v": "lint-then-read",
+     "label": "Clear the lint hits first, then show me the source changes in batches",
+     "c": "The council fixes the hits in a separate commit and then shows you the 252 source changes one file at a time, each old and new. The built decks follow from the sources."
+    },
+    {
+     "v": "read-now",
+     "label": "I will read the file as it is",
+     "c": "The review file is the record. You say yes or no by file."
+    },
+    {
+     "v": "retire",
+     "label": "Retire the rewrites",
+     "c": "They stay in the archive. Main keeps its current oracle text."
+    }
+   ]
   }
  ],
  "causes": [
