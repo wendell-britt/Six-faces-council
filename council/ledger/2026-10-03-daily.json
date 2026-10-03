@@ -1,0 +1,25 @@
+{
+ "id": "2026-10-03-daily",
+ "date": "2026-10-03",
+ "recorded_at": "2026-10-03T21:25:43+00:00",
+ "project": "six-faces-council",
+ "cause": "daily-move",
+ "convened_by": "routine",
+ "invoked_from": "claude-code",
+ "level": 1,
+ "move": "wake",
+ "found": "Nine unticked boxes in four specs on work that has shipped, and three still open",
+ "finished": "Research note council/research/2026-10-03-unticked-done-work.md",
+ "branch": "daily/2026-10-03-wake",
+ "pull_request": "https://github.com/wendell-britt/Six-faces-council/pull/21",
+ "rows": [
+  "dy-2026-10-03-wake"
+ ],
+ "usage": {
+  "session": "session_011mcRZ4vDnnis99dnptvdmu",
+  "input_tokens": 6,
+  "output_tokens": 1303,
+  "cost_usd": 0.41
+ },
+ "usage_note": "get_session's running total for the whole session at 21:25 UTC, setup turn included; it could not be split by turn, and it read before this turn's later work was counted (cache reads 196026, cache writes 42757)"
+}

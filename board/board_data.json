@@ -1260,6 +1260,17 @@
    "auto": true,
    "pos": "The brother's first breadcrumb is a tended sapling in a ring of stones where no path runs. It carries the mark of all five rites: a fire kept to its ring, stones wet from carried water, a branch pruned, one fruit left as a share, and bare ground left fallow. Each player notices their own channel's mark first, and an overused player also notices the mark of the channel that checks theirs. This stands unless you flip it and say what the breadcrumb is.",
    "why": "design.md says only that the brother leaves the first breadcrumb. The five rites are his teaching (the five villages), the cave trial asks for five tokens, and the mirror rule says the leading voice recognizes and the checker challenges. Source: sprout story/scenes/m7_crossing.json (pull request https://github.com/wendell-britt/sprout/pull/7)"
+  },
+  {
+   "id": "dy-2026-10-03-wake",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "daily",
+   "auto": true,
+   "pos": "The daily session's first Wake up found nine unticked boxes in four specs on work that has shipped: fm-levels, #16, the routine's move step, the first routine fire, sd-ship, the oracle drafts' history, the spaced-deferral ledger, daemons-ship and iching-ship. A research note lists each box beside the record it rests on, and three boxes that are still open. The next Clean up run ticks the nine. This merges at your next board read unless you flip it.",
+   "why": "A session that reads tasks.md for work would see nine jobs already done, and Open up would count finished work as abandoned. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/21"
   }
  ],
  "questions": [
