@@ -617,6 +617,28 @@
    "auto": true,
    "pos": "The council's own scorecard: the pass mark and the casts held, but the spec was written after the work and the pass mark repeated a window mix. From the next test on, the spec is written before the first command runs.",
    "why": "Council scorecard, test one (six-faces-council council/ledger/2026-10-03-council-test-1-scorecard.json)."
+  },
+  {
+   "id": "root-ruler-hold",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sense and respond",
+   "auto": true,
+   "pos": "Root-game pull request #4 stays open and unmerged. Another session's branch, active tonight, already unpacked the same files and built the next task, and #4 collides with it on 11 files. #4's findings travel to that strand in the pull request's description: the mixed windows, the smoothing value, and single-gate contact counts.",
+   "why": "Sense and respond, and transcend and include: the other strand's 184 commits are the higher level, and the ruler findings are kept for it rather than merged over it. Source: council/strands.py run on 2026-10-03; strand/sense-and-respond (six-faces-council)"
+  },
+  {
+   "id": "sense-respond-ship",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "sense and respond",
+   "auto": true,
+   "pos": "Your two principles are written into the council in your words, with the working rules: sense open strands before picking work, start a parallel strand for each emergent need, sequence strands that touch the same file, write board and ledger on main only, and keep earlier work when moving up. This merges on your next board read unless you flip it.",
+   "why": "Your message tonight. The collision check found real collisions on its first run. Source: council/strands.py run on 2026-10-03; strand/sense-and-respond (six-faces-council)"
   }
  ],
  "questions": [
@@ -866,6 +888,33 @@
      "v": "readings-where-private",
      "label": "Your readings only where flirtcraft is attached",
      "c": "Sessions with flirtcraft read your words from it; every other session uses the traditional parts. Nothing is published."
+    }
+   ]
+  },
+  {
+   "id": "stale-strands",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "q": "Your repos hold many unmerged branches from earlier sessions: 104 in bars-engine (2,009 pairs touching the same files), 5 in flirtcraft from mid-September, and 3 besides mine in root-game, one active tonight. What should the council do with them?",
+   "why_you": "They are other sessions' work, some of it months old, and deciding what to keep is yours. Transcend and include rules out deleting any of it.",
+   "not_before": "Nothing could see them until the collision check ran tonight.",
+   "options": [
+    {
+     "v": "leave",
+     "label": "Leave them; only check new work against them",
+     "c": "Nothing changes. Each new strand runs the check, and collisions get sequenced as they come up."
+    },
+    {
+     "v": "census",
+     "label": "Have the council write a census with recommendations",
+     "c": "Per repo: each branch, its last commit, what it holds, and a keep, merge or retire recommendation for you to rule on. Nothing is merged or deleted without your ruling."
+    },
+    {
+     "v": "retire-stale",
+     "label": "Retire anything older than a month as an archive tag",
+     "c": "Branches unchanged for 30 days become tags, so nothing is lost and the open list shrinks to live work. The census comes first so you see the list."
     }
    ]
   }
@@ -1419,6 +1468,12 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)"
+   },
+   "root-ruler-ship": {
+    "decision": "retire",
+    "label": "Retired: an open root-game strand had moved past this work; superseded by root-ruler-hold",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-sense-and-respond.json (six-faces-council)"
    }
   },
   "questions": {
