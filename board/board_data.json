@@ -1303,6 +1303,17 @@
    "auto": true,
    "pos": "Every daily record carries its cost, read after the run from the run's own record, and every report a session gives you names what that session cost. Level proposals cite cost per row that stood, so a model or level change rests on what each useful row cost. This stands unless you flip it.",
    "why": "The first daily run cost $2.55 for one row that is still waiting. Without the cost in the same record as the rows, the level rule cannot weigh tokens, which your overrule of fm-one-row asked for. Source: council/passes/6FACE_PASS10_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "cost-short-rule",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "10",
+   "auto": true,
+   "pos": "Your short-sessions ruling becomes a rule in the council's CLAUDE.md, which every session reads on every turn: one session does one piece of work, ends at a natural boundary with anything open written in council/HANDOFF.md, drops its pull request watches when the work is done, and names its cost at the end. This merges at your next board read unless you flip it.",
+   "why": "Your words at board read 29: \"Ok this is important and maybe one of the rules that will save us the most\". Pull request: https://github.com/wendell-britt/Six-faces-council/pull/24"
   }
  ],
  "questions": [
