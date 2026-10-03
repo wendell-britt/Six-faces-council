@@ -131,6 +131,9 @@ from colliding."* Both are in `council/faces.yaml` under `principles`, and the w
   planned strand before it starts. Board data, ledger records and lessons are written on main only.
 - **Keep the lower level.** A later version keeps the earlier one's record; superseded work is retired with its
   reason, never deleted; a corrected figure sits beside its original.
+- **Census before cleanup.** `python3 council/census.py` sorts a repo's unmerged branches into active, recent,
+  stale and landed, and recommends for each. Retiring a branch means tagging it `archive/<branch>` before the
+  branch goes, so the work stays reachable. Nothing is tagged or removed without Wendell's ruling.
 
 ## One home, every repo
 
