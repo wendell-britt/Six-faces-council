@@ -73,6 +73,20 @@ defer:
       before the item reaches the Open tab. When nothing changed, the review says so in one line.
     reach: a re-weigh is not a new question. It goes to him on the item's own row, never under a new id.
 
+# The daily session's five moves (Wendell, 2026-10-03; pass nine; board reads 24 to 26). Settings and level:
+# council/daily.yaml. Script: council/daily.py. Spec: .specify/specs/five-moves/spec.md.
+five_moves:
+  when: every daily run, after the re-weigh of deferred items
+  how: >
+    python3 council/daily.py prints the level, today's move and the limits. The run does that move in the
+    repos daily.yaml names, finishes one change on a branch daily/<date>-<move> with a pull request and no
+    automerge label, adds at most as many board rows as its level, each with id dy-<date>-<move>, and records
+    itself with python3 council/daily.py record. When the move finds nothing, the run does research instead.
+  board_read: >
+    A session that reads the board also reads each daily run's token use from its session record
+    (list_triggers for the run's session id, then get_session's usage) and writes it with
+    python3 council/daily.py usage. When daily.py prints PROPOSE, that session puts the proposal on the board.
+
 # The reach test, applied to actions. A step goes to Wendell's checklist only if he is the only one
 # who can do it: his accounts, his money, his name, his eyes on the result, or a permission he holds.
 # Anything a session can do itself, it does.

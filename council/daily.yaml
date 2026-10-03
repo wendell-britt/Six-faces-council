@@ -1,0 +1,27 @@
+# The daily session's five moves (spec: .specify/specs/five-moves/spec.md; pass nine; board reads 24 to 26).
+# The moves and their order are Wendell's (steer on sd-autonomy-pass, 2026-10-03). The level changes only by his
+# ruling on the board (position fm-levels); add a line to `levels` when he rules, never otherwise.
+
+moves:
+  - {id: wake,  name: Wake up,  his_words: "Wake up to new opportunities or work"}
+  - {id: open,  name: Open up,  his_words: "find out what's been abandoned in the larger work corpus"}
+  - {id: clean, name: Clean up, his_words: "remove tech debt literally organizing things"}
+  - {id: grow,  name: Grow up,  his_words: "increase out throughout or quality capacity- operating from higher levels"}
+  - {id: show,  name: Show up,  his_words: "ship finished work"}
+fallback: "research, his \"something new\" (\"We can always do research as “something new”\")"
+
+repos: [wendell-britt/six-faces-council]   # fm-repos, board read 25: the home repo only, for now
+
+level: 1            # rows the session may add to the board per run, as the level number (fm-levels)
+levels:
+  - {level: 1, date: 2026-10-03, record: council/ledger/2026-10-03-board-read-26.json, position: fm-levels}
+
+propose_level_up_after_stood: 5   # the council's number, from fm-levels: the last five rows all stood
+
+limits:   # fm-limits, stood at board read 25
+  - never merge into main, and never add the automerge label
+  - never act on the reserved list in council/faces.yaml
+  - never change another session's board rows or branches
+  - never retire or delete anything
+  - skip a project with a deferral waiting until its date
+  - every change goes on its own branch, daily/<date>-<move>, with a pull request
