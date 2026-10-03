@@ -2049,6 +2049,18 @@
     "label": "Clear the lint hits first, then show me the source changes in batches",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)"
+   },
+   "fc-binds-seven": {
+    "decision": "yes",
+    "label": "Yes to all seven, merge the binds",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-17.json (six-faces-council)"
+   },
+   "fcm-oracle-batch-01": {
+    "decision": "no",
+    "label": "No to this file",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-17.json (six-faces-council)"
    }
   },
   "causes": {

@@ -1,0 +1,27 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-17",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "The seven binds fixes, and oracle batch 1",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "fc-binds-seven": {
+      "choice": "yes",
+      "saved_at": "2026-10-03T01:57:38Z"
+    },
+    "fcm-oracle-batch-01": {
+      "choice": "no",
+      "saved_at": "2026-10-03T01:57:53Z"
+    }
+  },
+  "steps": {
+    "council-retire-branches": "none ticked yet"
+  },
+  "acted_on": [
+    "Merge flirtcraft#7 (binds), then flirtcraft#8 (storefront) onto main",
+    "Put main's decks/shared/situations.yaml back on strand/oracle-port, rebuild the built decks, and send batch 2"
+  ]
+}
