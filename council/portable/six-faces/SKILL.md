@@ -70,7 +70,8 @@ council is one page, the Council Board: https://claude.ai/artifact/DxyShVS8tmvJy
 - **A deferred row waits until its date.** A row Wendell deferred sits in the Deferred section of the
   Resolved tab with a return date, or with none if it waits until he asks. Do not ask about it again,
   under its own id or a new one, before that date. The deferral itself is data about what he ranks
-  lower, so keep it in the record block. Each deferral of the same item waits longer than the last, and when
+  lower, so keep it in the record block. Each deferral of the same item waits for the next rung of his ladder
+  (1 hour, 6 hours, 1 day, 3 days, 1 week, 2 weeks, a month), and when
   one comes back the council re-weighs it before he sees it: what changed since he deferred it, one line per
   face under a fresh cast, and a recommendation. A repo session does this with `council/due.py`.
 - **Add to the board through the home repo.** The board page is built from `board/board_data.json`
