@@ -1401,6 +1401,80 @@
    "auto": true,
    "pos": "Every daemon report that passes the shape check is now kept, with a JSON sidecar of its claim, quote and link pairs, unlabelled until a person reads them. Merged as six-faces-council#22. This stands unless you flip it.",
    "why": "Raw daemon reports were never stored, so the trial had at most four real labelled pairs and no testable real mismatches. You chose option A: save every report from now on. Source: council/daemons/save_report.py; bars-engine#256"
+  },
+  {
+   "id": "cave-chamber-scenes",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout story cave",
+   "auto": true,
+   "pos": "Each of the brother's cave's eight chambers has one scene, attached by its lesson and chamber number to the chamber the map planner builds. The story check fails if a chamber is out of order or has no scene. This stands unless you flip it.",
+   "why": "The map work writes each chamber with its lesson so game data can read it (sprout docs/decisions/dungeon-length.md). Your ask was to tie the maps and the story together, and this is the tie. Source: sprout docs/story-mirror/6FACE_PASS2_2026-10-03.md (pull request https://github.com/wendell-britt/sprout/pull/8)"
+  },
+  {
+   "id": "cave-act2-voices",
+   "faces": [
+    "regent"
+   ],
+   "pass": "sprout story cave",
+   "auto": true,
+   "pos": "In Act II, Orrin carries Earth, Pip carries Metal, Old Roe carries Water, Fenn carries Wood, and Dren and Kasha carry Fire. They are the cave's voices. This stands unless you flip it.",
+   "why": "design.md names each of them at their village's gate, and the reading's voice table already proposed this row. No line says which family Dren or Kasha belongs to. Source: sprout docs/story-mirror/6FACE_PASS2_2026-10-03.md (pull request https://github.com/wendell-britt/sprout/pull/8)"
+  },
+  {
+   "id": "cave-echoes",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "sprout story cave",
+   "auto": true,
+   "pos": "The voices in the chambers are the cave's echoes of people the player met. Nobody is really there, and the brother does not speak until the heart. This stands unless you flip it.",
+   "why": "design.md leaves open whether the brother speaks more than a few lines, so the chambers keep him silent. Like Yoda's cave, the cave gives back what the player carries in. Source: sprout docs/story-mirror/6FACE_PASS2_2026-10-03.md (pull request https://github.com/wendell-britt/sprout/pull/8)"
+  },
+  {
+   "id": "cave-reading-once",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout story cave",
+   "auto": true,
+   "pos": "The reading is taken once at the cave mouth and holds for all eight chambers, so the player hears one coherent portrait. This stands unless you flip it.",
+   "why": "The Player daemon asked this. The reading is kept per act (sprout docs/story-mirror/reading.md), and the cave closes Act II. Source: sprout docs/story-mirror/6FACE_PASS2_2026-10-03.md (pull request https://github.com/wendell-britt/sprout/pull/8)"
+  },
+  {
+   "id": "cave-cycle-roles",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout story cave",
+   "auto": true,
+   "pos": "In each village's chamber, the voice recognizes the player when its element leads, challenges an overused leader it checks, goes silent when its element is the one the player neglects, and otherwise speaks as feeding, fed by or checked by the player's way, by the five-element cycles. When the voice is silent, the player's own habit fills the silence. This stands unless you flip it.",
+   "why": "The mirror is built on the generating and controlling cycles (sprout docs/story-pipeline.md). The first draft failed your report gate: two players who both neglect Metal heard the same silence. The habit lines fixed it, and the Challenger dissents on how many lines that adds. Source: sprout docs/story-mirror/6FACE_PASS2_2026-10-03.md (pull request https://github.com/wendell-britt/sprout/pull/8)"
+  },
+  {
+   "id": "cave-legend-villages",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "sprout story cave",
+   "auto": true,
+   "pos": "The One Who Stood is Meridia's legend, the One Who Cut the Cord the colony's, the One Who Wept Lamenth's, the One Who Walks and Things Grow Virelune's, and the One Who Lit the First Fire Pyrakanth's. The last chamber shows the player's own village's legend first and wears the neglected village's nearly smooth. What each legend says is not written. This stands unless you flip it.",
+   "why": "design.md lists the legends in the same order as the five villages. That is an inference from the order, so it is a position you can flip, and the legends' content stays yours. Source: sprout docs/story-mirror/6FACE_PASS2_2026-10-03.md (pull request https://github.com/wendell-britt/sprout/pull/8)"
+  },
+  {
+   "id": "mh-card-moves",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "chat",
+   "auto": true,
+   "pos": "The output card's five moves are approved as worded and are no longer placeholders.",
+   "why": "Your words in chat: 'The 5 moves I already approved'. Source: sprout council/ledger/2026-10-03-output-card-moves-ruling.json"
   }
  ],
  "questions": [
@@ -3533,6 +3607,17 @@
     "label": "Merged on your word in chat",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-daily-wake-ruling.json (six-faces-council)"
+   },
+   "mh-card-moves": {
+    "decision": "stands",
+    "label": "Approved in chat",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-output-card-moves-ruling.json (sprout)"
+   },
+   "mh5-cave-lessons": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-chat-ruling-5.json (sprout)"
    }
   },
   "questions": {
