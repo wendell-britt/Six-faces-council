@@ -1,0 +1,67 @@
+{
+  "id": "2026-10-03-six-faces-council-pass6-daemon-research",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "What should daemon subagents do, from current research on agents for game design and code, run on lower models?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": "council/passes/6FACE_PASS6_2026-10-03.md",
+  "faces_present": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat",
+    "sage"
+  ],
+  "dissent": false,
+  "dissent_note": "Unanimous on the fine-tunes; recorded as a flag. The model question carries the split.",
+  "subagents": {
+    "model": "haiku",
+    "count": 7,
+    "tokens_each_approx": [
+      64812,
+      67437,
+      70053,
+      70891,
+      71484,
+      72324,
+      72925
+    ],
+    "checker": {
+      "model": "session",
+      "tokens": 105224
+    }
+  },
+  "falsification_test": {
+    "pass_mark": "17 of 21 spot-checked citations exist and support their claim; every report follows the five moves",
+    "result": "failed",
+    "supported": 15,
+    "of": 21,
+    "invented_sources": 0,
+    "format_failures": [
+      "protector"
+    ],
+    "missing_links": [
+      "skeptic"
+    ]
+  },
+  "positions": {
+    "dm-report-shape": "council",
+    "dm-no-chains": "council",
+    "dm-question-decision": "council",
+    "dm-tokens": "council"
+  },
+  "questions": {
+    "daemon-model": {
+      "options": [
+        "small-plus-check",
+        "middle",
+        "split"
+      ],
+      "choice": null
+    }
+  },
+  "outcome": "unruled"
+}

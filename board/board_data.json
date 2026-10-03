@@ -416,6 +416,69 @@
    "auto": true,
    "pos": "A question never asks you, in the same answer, to approve a change and to lift a permission check that refused it. Each one is its own decision.",
    "why": "Four of the daemon reads flagged this in pass five's migration question, whatever happens to the feature. Source: .specify/specs/daemon-subagents/spec.md, result section (six-faces-council, branch feature/daemon-subagents)"
+  },
+  {
+   "id": "daemons-ship",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "daemon subagents",
+   "auto": true,
+   "pos": "The daemon subagents merge on your next board read unless you flip this. While a face drafts, it can send one to three daemons to work a specific problem in its domain, for the Player. Each one says what it sees, what it would do, what it protects you from and makes more enjoyable, its questions, and where it would overreach.",
+   "why": "Your answer on the board, and its test passed: a blind judge matched four daemon outputs on the deploy-alert problem to the right daemons, and each proposed a move the others did not. Nothing touches a reserved item. Source: .specify/specs/daemon-subagents/spec.md (six-faces-council, pull request)"
+  },
+  {
+   "id": "dm-report-shape",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Every daemon report uses fixed headings (the five moves, For the Player, questions, overreach, Sources), and a script checks the headings and links before the face reads it. A failing report goes back once.",
+   "why": "The smallest model dropped the moves once and the links once. The Sage's research: judge outside the daemon. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-no-chains",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "No daemon hands work to another. The face reads every report itself.",
+   "why": "The Skeptic's research on handoff failures in multi-agent pipelines; the design already works this way. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-question-decision",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Each daemon question names the decision its answer would change, so the face can run the reach test on it in one step.",
+   "why": "HiL-Bench: agents are poor at deciding when to ask. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-tokens",
+   "faces": [
+    "architect"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Every pass record carries the subagents' token count, so the saving from the smaller model can be shown, not assumed.",
+   "why": "Each research daemon used about 64,000 to 73,000 tokens tonight. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-quote-the-source",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Every linked number or finding in a daemon report carries a short quote from its source, so the face can check the match in one search instead of reading the whole paper.",
+   "why": "The Skeptic's rerun linked real papers to the wrong claims twice in four checks. A quote makes a mismatch visible. Source: .specify/specs/daemon-subagents/spec.md, the Skeptic's rerun (six-faces-council, pull request #1)"
   }
  ],
  "questions": [
@@ -611,6 +674,33 @@
      "v": "stop",
      "label": "Stop here",
      "c": "The agent files stay on their branch and nothing else changes."
+    }
+   ]
+  },
+  {
+   "id": "daemon-model",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "q": "The daemons ran their research on the smallest model and failed the citation test I set first: 15 of 21 checked citations held up, where 17 were needed. No source was invented. One report left out its links, and one left out the five moves. How should the daemons run? After your note, the Skeptic reran with your rule and cited 11 sources, but two of the four I checked were real papers attached to the wrong claim. The shape check cannot catch that; only a spot check by the face can.",
+   "why_you": "It trades your money against reliability, and the lower-model scheme is yours.",
+   "not_before": "The test ran tonight.",
+   "options": [
+    {
+     "v": "small-plus-check",
+     "label": "Keep the smallest model, with the check and one retry",
+     "c": "Cheapest. A report that fails the shape or link check goes back once. The test reruns on the next research pass."
+    },
+    {
+     "v": "middle",
+     "label": "Move to the middle model",
+     "c": "The fix I set before the test. About three times the price per token, and the test reruns."
+    },
+    {
+     "v": "split",
+     "label": "Smallest for focused work, middle for research",
+     "c": "Research needs links and gets the middle model; a problem inside the repo stays cheap."
     }
    ]
   }
@@ -1089,6 +1179,41 @@
     "decision": "overrule",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "q-no-bundled-permission": {
+    "decision": "stands",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)"
+   },
+   "daemons-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-no-chains": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-question-decision": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-quote-the-source": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-report-shape": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-tokens": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
    }
   },
   "questions": {
@@ -1127,6 +1252,18 @@
     "label": "Yes, production builds migrate (flirtcraft #6)",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+   },
+   "daemon-subagents-purpose": {
+    "decision": "help-a-face-draft",
+    "label": "Help each face while it drafts",
+    "recorded": "2026-10-02",
+    "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)"
+   },
+   "daemon-model": {
+    "decision": "split",
+    "label": "Smallest for focused work, middle for research",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
    }
   },
   "causes": {
@@ -1264,6 +1401,16 @@
    "text": "On pipe-steps-page: I think a tab on this board is quite useful",
    "savedAt": "2026-10-02T23:17:32.159Z",
    "record": "council/ledger/2026-10-02-board-read-8.json"
+  },
+  {
+   "text": "On daemon-subagents-purpose: The daemons exist to solve problems in the faces domain. They are designed to protect the player but also all work for the players enjoyment. They should be able to ask questions and help with specific problems",
+   "savedAt": "2026-10-02T23:45:55.300Z",
+   "record": "council/ledger/2026-10-02-board-read-9.json"
+  },
+  {
+   "text": "On dm-no-chains: This we could explore. I don't see it's utility now but I imagine the diplomat would appreciate the collaboration",
+   "savedAt": "2026-10-03T00:04:51.972Z",
+   "record": "council/ledger/2026-10-03-board-read-10.json"
   }
  ],
  "steer_recorded_through": "2026-10-02T16:20:19.620Z"

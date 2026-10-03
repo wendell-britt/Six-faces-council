@@ -1,0 +1,33 @@
+{
+  "id": "2026-10-02-six-faces-council-board-read-9",
+  "date": "2026-10-02",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "What are the daemon subagents for, and does the no-bundled-permission position stand?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "daemon-subagents-purpose": {
+      "choice": "help-a-face-draft",
+      "saved_at": "2026-10-02T23:45:55Z"
+    }
+  },
+  "positions": {
+    "q-no-bundled-permission": "stands"
+  },
+  "steers": {
+    "daemon-subagents-purpose": "The daemons exist to solve problems in the faces domain. They are designed to protect the player but also all work for the players enjoyment. They should be able to ask questions and help with specific problems "
+  },
+  "lessons": {
+    "council": {
+      "wendell": "The daemons exist to solve problems in the faces domain. They are designed to protect the player but also all work for the players enjoyment. They should be able to ask questions and help with specific problems",
+      "folded_into": "council/faces.yaml council_lessons"
+    }
+  },
+  "acted_on": [
+    "Rewrote the eight daemon subagents as helpers a face sends on a specific problem while it drafts",
+    "Version two test passed: a blind judge matched four daemon outputs to their daemons, and all four proposed a distinct move (spec, version two result)",
+    "Wired the daemons into the skill's pass shape, the sync hook and the installer; pull request in the home repo"
+  ]
+}
