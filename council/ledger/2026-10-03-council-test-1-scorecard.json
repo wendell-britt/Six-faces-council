@@ -1,0 +1,50 @@
+{
+  "id": "2026-10-03-council-test-1-scorecard",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "project-steering",
+  "question": "How did the council's process do on its first real test (root-game, make the ruler whole)?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": "root-game .specify/specs/ruler-whole/spec.md; council/passes/6FACE_PASS7_2026-10-03.md",
+  "scorecard": {
+    "verdict_is_a_command": {
+      "result": "held",
+      "note": "All three gates ran as commands; the result needed no judgement"
+    },
+    "pass_mark_set_before_work": {
+      "result": "held",
+      "note": "Set in pass seven; the work did not move it"
+    },
+    "pass_mark_was_right": {
+      "result": "failed",
+      "note": "It put all of HANDOFF.md's figures on the first 4,000 frames, repeating root-game pass one; the run showed two windows"
+    },
+    "spec_before_build": {
+      "result": "failed",
+      "note": "The spec kit was written after the work, against the pipeline's order"
+    },
+    "casts": {
+      "result": "held",
+      "note": "The Well led to the reach check that found the archives"
+    },
+    "daemons": {
+      "result": "mixed",
+      "note": "Both picked the test that worked; both failed the shape check and were not sent back"
+    },
+    "steps_list": {
+      "result": "untested",
+      "note": "Nothing needed Wendell, as the Diplomat's dissent predicted; the second test (flirtcraft alert) covers it"
+    },
+    "found_something_real": {
+      "result": "held",
+      "note": "Two ruler faults that would have misjudged the next task"
+    }
+  },
+  "game_scorecard": "kept separately in root-game .specify/specs/ruler-whole/spec.md (separate-scorecards)",
+  "positions": {
+    "root-ruler-ship": "council",
+    "root-name-the-window": "council",
+    "council-spec-first": "council"
+  }
+}

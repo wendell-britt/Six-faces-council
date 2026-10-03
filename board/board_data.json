@@ -585,6 +585,38 @@
    "auto": true,
    "pos": "The council and the game keep separate scorecards: the council is graded on its process, and root-game on its own pass marks.",
    "why": "The Sage under Stalemate: seeking one game while wearing the face of the other. Source: council/passes/6FACE_PASS7_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "root-ruler-ship",
+   "faces": [
+    "regent"
+   ],
+   "pass": "test 1",
+   "auto": true,
+   "pos": "Root-game's ruler work merges on your next board read unless you flip this: the code unpacked as files, single-gate contacts in eval.js, and the two faults stated in HANDOFF.md.",
+   "why": "All three gates passed. Nothing in the engine or the pages changed. Source: root-game .specify/specs/ruler-whole/spec.md, pull request #4"
+  },
+  {
+   "id": "root-name-the-window",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "test 1",
+   "auto": true,
+   "pos": "Every root-game pass mark from now names its window, and the next task compares on matching windows: on the first 4,000 frames, shipped arms through is 2.0% / 6.7%, not 1.3% / 4.8%.",
+   "why": "The test found HANDOFF.md mixing the first 4,000 frames and the full recording in one table. Source: root-game .specify/specs/ruler-whole/spec.md, pull request #4"
+  },
+  {
+   "id": "council-spec-first",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "test 1",
+   "auto": true,
+   "pos": "The council's own scorecard: the pass mark and the casts held, but the spec was written after the work and the pass mark repeated a window mix. From the next test on, the spec is written before the first command runs.",
+   "why": "Council scorecard, test one (six-faces-council council/ledger/2026-10-03-council-test-1-scorecard.json)."
   }
  ],
  "questions": [
