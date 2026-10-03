@@ -13,9 +13,9 @@ Wendell in chat. His words: "These questions shouldn't be showing up here".
 - A chat reply says what changed and names the new board rows with the link. It ends without a question.
 - A question that comes up mid-build, outside a pass, is still a council question. Put it through the reach test
   and onto the board like any other.
-- In a session that also loads friendcraft's CLAUDE.md, its "the ask, stated as a question" means, for council
-  work, naming the board rows that wait on him. That reading is the session's, and position `home-claude-md` puts it
-  to him.
+- The board process supersedes any repo rule that puts the ask in the reply (Wendell, 2026-10-03: "This process
+  also superseded friendcraft so we need to change that rule there too"). friendcraft's CLAUDE.md now says the same
+  (friendcraft-manuacript #27).
 - An answer he gives in chat counts as a ruling. Record it the way a board answer is recorded. A chat answer does not
   make the next question a chat question.
 
