@@ -23,5 +23,9 @@
   "acted_on": [
     "The 24 survivors go onto the cards on a fresh branch from main, with the branch's non-prose parts",
     "The 19 partial survivors are drafted as full sentences for Wendell to read"
-  ]
+  ],
+  "done": {
+    "fcm-oracle-reread": "friendcraft #25 merged (07f1ac7): the 24 survivors plus the branch's non-prose parts. #23 closed as replaced. Each field verified before and after; rebuilt decks differ from main in exactly those fields.",
+    "fcm-oracle-parts": "friendcraft #26 open (strand/oracle-drafts): 19 drafts, engine validate ok, engine lint 0, tests pass. Asked on the board as fcm-oracle-drafts."
+  }
 }
