@@ -20,11 +20,15 @@ jobs:
   steward:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 0
       - run: python3 -m pip install --quiet pyyaml
-      - run: python3 .github/scripts/steward.py
+      # Runs main's copy of the steward, so a pull request cannot change what the steward does to other
+      # branches. Until this workflow has reached main there is nothing to run.
+      - run: |
+          if [ -f .github/scripts/steward.py ]; then python3 .github/scripts/steward.py
+          else echo "main has no steward yet; nothing to do"; fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
