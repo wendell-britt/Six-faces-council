@@ -1,0 +1,31 @@
+{
+ "id": "2026-10-03-first-daily-run-blocked",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "daily-move",
+ "convened_by": "routine",
+ "invoked_from": "claude-code",
+ "session": "cse_018L1dS4KJd8YpKmNnKkmma2",
+ "fired_by": "hand, to check the loop",
+ "usage": {
+  "input_tokens": 33892,
+  "output_tokens": 8653,
+  "cache_read_tokens": 1157268,
+  "cost_usd": 0.54,
+  "model": "claude-sonnet-5-5"
+ },
+ "reweigh": "nothing deferred is due by 2026-10-10",
+ "move": null,
+ "attempted_move": "wake",
+ "made": "council/research/2026-10-03-spaced-ladder-tuning.md on branch daily/2026-10-03-wake, never pushed; lost with the container",
+ "obeyed_limits": "yes: home repo only, no merge, no label, no reserved item; it did not work around the block",
+ "blocked": [
+  "git push returned 403: the routine's sessions start with no repositories attached, so the git proxy holds no credential for wendell-britt/six-faces-council",
+  "the environment's network blocked most research sites (it named wikipedia, arxiv and supermemo.guru), so the note quoted one outside source"
+ ],
+ "not_counted": "No daily.py record was written, so the rotation still starts at Wake up.",
+ "board_rows": [
+  "dy-access",
+  "dy-network"
+ ]
+}
