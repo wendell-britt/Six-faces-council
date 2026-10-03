@@ -1314,6 +1314,93 @@
    "auto": true,
    "pos": "Your short-sessions ruling becomes a rule in the council's CLAUDE.md, which every session reads on every turn: one session does one piece of work, ends at a natural boundary with anything open written in council/HANDOFF.md, drops its pull request watches when the work is done, and names its cost at the end. This merges at your next board read unless you flip it.",
    "why": "Your words at board read 29: \"Ok this is important and maybe one of the rules that will save us the most\". Pull request: https://github.com/wendell-britt/Six-faces-council/pull/24"
+  },
+  {
+   "id": "mh5-cave-lessons",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "sprout maker 5",
+   "auto": true,
+   "pos": "The brother's cave has eight lesson chambers between the mouth and the heart, in this order: the crossing (feeding yourself from the ring), the changed (the monsters were settlement people), then the five rites in the trial's generating order (pruning, honest boundaries, leaving space, leaving a share, returning), and last the five villages' legends of him. Encounters per chamber are placeholders, 16 in all, until the XP curve sets how many encounters and levels come before the heart. This stands unless you flip it.",
+   "why": "You ruled that a dungeon's length comes from its encounters and levels and asked for at least eight chambers, each on an Act II lesson. Each lesson is named in design.md's Act II milestones 7 to 13, and the rites keep the order design.md gives the trial's movements. Source: sprout docs/decisions/dungeon-length.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "jev-select-only",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "jev",
+   "auto": true,
+   "pos": "TypeSafe's Jev selects, scores and verifies, and never generates text. Generation stays with the existing model paths. This stands unless you flip it.",
+   "why": "Generation is already covered by `generateObject` in bars-engine, and the community's allergy is to generated text. A Choice or Noul fits a fixed set of options or a yes/no check. Source: six-faces-council#22 and bars-engine#256; council/passes/6FACE_PASS_jev_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)"
+  },
+  {
+   "id": "jev-fallback",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "jev",
+   "auto": true,
+   "pos": "Every Jev call has a deterministic fallback, and the non-AI path stays first-class. This stands unless you flip it.",
+   "why": "bars-engine's `quest-alignment-ai.ts` already returns to deterministic assembly when the model is off, and the project's dual-track principle says features degrade gracefully. Source: six-faces-council#22 and bars-engine#256; council/passes/6FACE_PASS_jev_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)"
+  },
+  {
+   "id": "jev-candidates-only",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "jev",
+   "auto": true,
+   "pos": "A Jev probability is a candidate. It never closes an edit, a check or a decision. This stands unless you flip it.",
+   "why": "The editorial pass already says a counter hit never closes an edit. A fast judge makes the rate-driven failure of 2026-10-03 cheaper to repeat. Source: six-faces-council#22 and bars-engine#256; council/passes/6FACE_PASS_jev_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)"
+  },
+  {
+   "id": "jev-reserved",
+   "faces": [
+    "regent"
+   ],
+   "pass": "jev",
+   "auto": true,
+   "pos": "Reserved items never go through Jev: canonical prose, consent and release, money, anything that names a person, and the definition file. This stands unless you flip it.",
+   "why": "`faces.yaml` reserved list. Source: six-faces-council#22 and bars-engine#256; council/passes/6FACE_PASS_jev_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)"
+  },
+  {
+   "id": "jev-no-player-text",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "jev",
+   "auto": true,
+   "pos": "No player-written text goes to a third-party model on this plan. This holds until you rule otherwise. This stands unless you flip it.",
+   "why": "Your ruling on jev-reach, option A, and the board's mh-input-chosen position. TypeSafe's documentation index has no data-handling page. Its legal page says the Privacy Policy commits not to train on user data and that enterprise customers can have zero data retention; the retention terms are unread. Source: six-faces-council#22 and bars-engine#256; council/passes/6FACE_PASS_jev_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)"
+  },
+  {
+   "id": "jev-spec-first",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "jev",
+   "auto": true,
+   "pos": "The first Jev trial's spec is written before any command runs, and names its window and its labelled set. The spec is .specify/specs/jev-quote-claim-check/. This stands unless you flip it.",
+   "why": "council-spec-first and root-name-the-window. The Skeptic daemon's falsification is applied: only real mismatches count toward the pass, the labelled set is split, a Choice arm runs beside the Noul, and the baseline sees the same input as Jev. Source: six-faces-council#22 and bars-engine#256; council/passes/6FACE_PASS_jev_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)"
+  },
+  {
+   "id": "daemon-reports-saved",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev",
+   "auto": true,
+   "pos": "Every daemon report that passes the shape check is now kept, with a JSON sidecar of its claim, quote and link pairs, unlabelled until a person reads them. Merged as six-faces-council#22. This stands unless you flip it.",
+   "why": "Raw daemon reports were never stored, so the trial had at most four real labelled pairs and no testable real mismatches. You chose option A: save every report from now on. Source: council/daemons/save_report.py; bars-engine#256"
   }
  ],
  "questions": [
@@ -2569,6 +2656,34 @@
      "c": "The council adds it to the short-sessions rule in your words."
     }
    ]
+  },
+  {
+   "id": "jev-reach",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "jev",
+   "q": "How far may Jev reach?",
+   "why_you": "It concerns consent and what a player shares, which the reserved list keeps with you, and TypeSafe publishes no data-handling terms to check against.",
+   "not_before": "Jev was new on 2026-10-03.",
+   "options": [
+    {
+     "v": "tooling",
+     "label": "Council and build tooling only, with no player data",
+     "c": "The first trial can start now, and bars-engine's game paths stay untouched."
+    },
+    {
+     "v": "nonpersonal",
+     "label": "Also non-personal bars-engine content",
+     "c": "Unlocks routing and triage of quest metadata and specs, and needs a disclosure line in the public docs."
+    },
+    {
+     "v": "player",
+     "label": "Player text too, after the terms are read",
+     "c": "The largest reach. It conflicts with the community's allergy until the terms and a consent flow exist."
+    }
+   ]
   }
  ],
  "causes": [
@@ -3683,6 +3798,12 @@
     "label": "Short sessions, starting now",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)"
+   },
+   "jev-reach": {
+    "decision": "tooling",
+    "label": "Council and build tooling only (said in chat; asset and story pipelines a later pass)",
+    "recorded": "2026-10-03",
+    "record": "ledger/2026-10-03-jev-pass.json"
    }
   },
   "causes": {
