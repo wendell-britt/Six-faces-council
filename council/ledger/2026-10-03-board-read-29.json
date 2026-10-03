@@ -1,0 +1,21 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-29",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "Session shape",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "questions": {
+  "cost-session-shape": {
+   "choice": "short",
+   "answered_in": "chat",
+   "wendell": "Ok this is important and maybe one of the rules that will save us the most. I know Claude’s projects does short conversational threads and then archives if we can achieve that level of discipline OR use projects more effectively between that and Jev we can save a lot of tokens"
+  }
+ },
+ "unclear": "'Jev' is not a name or tool the council's records mention; row cost-jev asks him what it is.",
+ "acted_on": [
+  "council/HANDOFF.md written; this session takes on no new work",
+  "CLAUDE.md rule 'Short sessions' proposed in a pull request with position cost-short-rule"
+ ]
+}

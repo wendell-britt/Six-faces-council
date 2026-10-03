@@ -2541,6 +2541,23 @@
      "c": "Nothing changes for you. Each message keeps costing at least $0.14 before any work, and more as the thread grows, until the platform summarizes it."
     }
    ]
+  },
+  {
+   "id": "cost-jev",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "10",
+   "q": "Your ruling on short sessions mentions \"Jev\" alongside Claude's projects. What is Jev?",
+   "why_you": "The council's records do not mention it, and guessing would put a wrong tool into the rule.",
+   "not_before": "You named it tonight.",
+   "options": [
+    {
+     "v": "see-steer",
+     "label": "Answer in the steer box",
+     "c": "The council adds it to the short-sessions rule in your words."
+    }
+   ]
   }
  ],
  "causes": [
@@ -3649,6 +3666,12 @@
     "label": "Allow research sites (on your steps tab)",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-28.json (six-faces-council)"
+   },
+   "cost-session-shape": {
+    "decision": "short",
+    "label": "Short sessions, starting now",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)"
    }
   },
   "causes": {
