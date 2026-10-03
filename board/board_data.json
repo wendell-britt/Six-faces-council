@@ -1303,6 +1303,17 @@
    "auto": true,
    "pos": "Every daily record carries its cost, read after the run from the run's own record, and every report a session gives you names what that session cost. Level proposals cite cost per row that stood, so a model or level change rests on what each useful row cost. This stands unless you flip it.",
    "why": "The first daily run cost $2.55 for one row that is still waiting. Without the cost in the same record as the rows, the level rule cannot weigh tokens, which your overrule of fm-one-row asked for. Source: council/passes/6FACE_PASS10_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "mh5-cave-lessons",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "sprout maker 5",
+   "auto": true,
+   "pos": "The brother's cave has eight lesson chambers between the mouth and the heart, in this order: the crossing (feeding yourself from the ring), the changed (the monsters were settlement people), then the five rites in the trial's generating order (pruning, honest boundaries, leaving space, leaving a share, returning), and last the five villages' legends of him. Encounters per chamber are placeholders, 16 in all, until the XP curve sets how many encounters and levels come before the heart. This stands unless you flip it.",
+   "why": "You ruled that a dungeon's length comes from its encounters and levels and asked for at least eight chambers, each on an Act II lesson. Each lesson is named in design.md's Act II milestones 7 to 13, and the rites keep the order design.md gives the trial's movements. Source: sprout docs/decisions/dungeon-length.md (branch claude/project-thread-f7m3zi)"
   }
  ],
  "questions": [
