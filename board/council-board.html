@@ -173,7 +173,9 @@ const UNTIL = [['week','in a week'],['month','in a month'],['ask','when I ask']]
 const deferCtl = (kind, id) => `<div class="defer"><span>Not now:</span><select id="du-${kind}-${id}" aria-label="Bring it back">${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
 const today = () => new Date().toISOString().slice(0,10);
 const isDeferredNow = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && (!r.until || r.until > today())); };
-const isDueBack = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && r.until && r.until <= today() && !live[kind][id]); };
+// A store row older than the ledger record is the one the record already holds, so only a newer save (status 'saved') counts.
+const isDueBack = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && r.until && r.until <= today() && status(kind, id) !== 'saved'); };
+const savedDefer = (kind, id) => status(kind, id) === 'saved' && !!live[kind][id].deferred;
 
 function qRow(q){
   const st = local.questions[q.id] || {choice:'', steer:''};
@@ -251,12 +253,11 @@ function render(){
   const nOpen = oq.length + ot.length + op.length + oc.length;
   document.getElementById('open-empty').hidden = nOpen > 0;
   document.getElementById('n-open').textContent = nOpen;
-  const nDef = DATA.questions.filter(q => isDeferredNow('questions', q.id) || (live.questions[q.id]||{}).deferred).length
-             + DATA.positions.filter(p => isDeferredNow('positions', p.id) || (live.positions[p.id]||{}).deferred).length;
+  const deferred = kind => item => (isDeferredNow(kind, item.id) && status(kind, item.id) !== 'saved') || savedDefer(kind, item.id);
+  const nDef = DATA.questions.filter(deferred('questions')).length + DATA.positions.filter(deferred('positions')).length;
   const dn = document.getElementById('open-deferred'); dn.hidden = !nDef;
   dn.textContent = nDef ? `${nDef} deferred. They wait on the Resolved tab and come back when their date passes.` : '';
 
-  const deferred = kind => item => (isDeferredNow(kind, item.id) && !live[kind][item.id]) || (live[kind][item.id]||{}).deferred;
   const dq = DATA.questions.filter(q => !isOpen('questions', q.id) && deferred('questions')(q));
   const dp = DATA.positions.filter(p => !isOpen('positions', p.id) && deferred('positions')(p));
   document.getElementById('res-d').innerHTML = section('Deferred', 'Not now, not gone. Each comes back to the Open tab when its date passes, and every deferral is kept as data about priority.',
