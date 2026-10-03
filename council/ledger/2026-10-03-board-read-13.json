@@ -1,0 +1,28 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-13",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Sense and respond positions, the root-game hold, test one's positions, and the stale strands",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "stale-strands": {
+      "choice": "census",
+      "saved_at": "2026-10-03T00:42:59Z"
+    }
+  },
+  "positions": {
+    "council-spec-first": "stands",
+    "root-name-the-window": "stands",
+    "root-ruler-hold": "stands",
+    "sense-respond-ship": "stands",
+    "separate-scorecards": "stands",
+    "test-flirtcraft-alert-second": "stands"
+  },
+  "acted_on": [
+    "Merged six-faces-council#3 (sense and respond)",
+    "Census of open strands in every council repo"
+  ]
+}

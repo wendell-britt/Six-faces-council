@@ -1474,6 +1474,36 @@
     "label": "Retired: an open root-game strand had moved past this work; superseded by root-ruler-hold",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-sense-and-respond.json (six-faces-council)"
+   },
+   "council-spec-first": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+   },
+   "root-name-the-window": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+   },
+   "root-ruler-hold": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+   },
+   "sense-respond-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+   },
+   "separate-scorecards": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+   },
+   "test-flirtcraft-alert-second": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
    }
   },
   "questions": {
@@ -1530,6 +1560,12 @@
     "label": "Copy the readings; the flirting applications stay in flirtcraft (said in chat)",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-iching-readings-chat.json (six-faces-council)"
+   },
+   "stale-strands": {
+    "decision": "census",
+    "label": "A census with recommendations, nothing merged or deleted without your ruling",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
    }
   },
   "causes": {
