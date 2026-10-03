@@ -9,9 +9,9 @@ once. --research also requires at least three links. Exit 0 passes, exit 1 fails
 import re
 import sys
 
-HEADINGS = ["Wake Up", "Open Up", "Clean Up", "Grow Up", "Show Up", "For the Player", "Your questions",
+HEADINGS = ["The cast", "Wake Up", "Open Up", "Clean Up", "Grow Up", "Show Up", "For the Player", "Your questions",
             "Where you would overreach", "Sources"]
-PLAYER = ["What I want here", "What the superpower does with it", "What would make it fun", "Show Up",
+PLAYER = ["The cast", "What I want here", "What the superpower does with it", "What would make it fun", "Show Up",
           "My question", "Sources"]
 
 

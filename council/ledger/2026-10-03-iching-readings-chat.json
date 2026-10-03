@@ -1,0 +1,23 @@
+{
+  "id": "2026-10-03-six-faces-council-iching-readings-chat",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Should the council's casts carry flirtcraft's own card readings?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "chat",
+  "questions": {
+    "iching-card-readings": {
+      "choice": "copy-readings",
+      "said_in": "chat",
+      "wendell": "The valuable parts for flirtcraft are their flirting applications so it fine to have this in the public repo"
+    }
+  },
+  "positions": {
+    "iching-which-fields": "council"
+  },
+  "acted_on": [
+    "Copied name, shows, image and situation for all 64 into council/iching/hexagrams.yaml; flirtation, drill and the craft names stay in flirtcraft"
+  ]
+}

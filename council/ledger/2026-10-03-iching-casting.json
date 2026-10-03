@@ -1,0 +1,63 @@
+{
+  "id": "2026-10-03-six-faces-council-iching-casting",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Every agent casts the I Ching and uses its wisdom to inform decisions (not unlike flirtcraft)",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": ".specify/specs/iching-casting/spec.md",
+  "casts": [
+    {
+      "agent": "protector-run-1",
+      "n": 1
+    },
+    {
+      "agent": "protector-run-2",
+      "n": 18
+    },
+    {
+      "agent": "protector-run-3",
+      "n": 5
+    }
+  ],
+  "falsification_test": {
+    "pass_mark": "a blind judge matches three reports to their three casts",
+    "result": "passed",
+    "matched": 3,
+    "of": 3,
+    "chance": "1 in 6",
+    "judge_confidence": "medium-low",
+    "tightening": "cast sections removed before judging"
+  },
+  "subagents": {
+    "model": "haiku",
+    "count": 3,
+    "tokens_each_approx": [
+      67867,
+      65868,
+      69852
+    ],
+    "judge": {
+      "model": "session",
+      "tokens": 72307
+    }
+  },
+  "positions": {
+    "iching-cast-first": "council",
+    "iching-informs": "council",
+    "iching-grade": "council",
+    "iching-ship": "council"
+  },
+  "questions": {
+    "iching-card-readings": {
+      "options": [
+        "traditional-only",
+        "copy-readings",
+        "readings-where-private"
+      ],
+      "choice": null
+    }
+  },
+  "outcome": "unruled"
+}
