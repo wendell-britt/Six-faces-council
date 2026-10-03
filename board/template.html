@@ -55,6 +55,10 @@ textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);
 .defer select{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
 .defer button{font:inherit;font-size:.85rem;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
 .duenote{font-size:.85rem;color:var(--muted);margin:10px 0 0}
+.review{background:var(--accent-soft);border-radius:6px;padding:10px 12px;margin:6px 0 10px;max-width:72ch}
+.review h3{font-family:var(--display);font-weight:500;font-size:1rem;margin:0 0 6px}
+.review ul{margin:4px 0 8px;padding-left:18px;font-size:.92rem}
+.review p{font-size:.92rem;margin:0 0 6px}
 .opts{display:grid;gap:8px;margin-top:4px}
 .opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;max-width:72ch}
 .opt:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
@@ -170,18 +174,42 @@ function section(title, lede, html){ return html ? `<h2>${title}</h2>${lede?`<p 
    but we are also collecting data about priority". A deferred item leaves the Open tab, keeps its steer, and
    comes back by itself when its date passes. Each deferral is recorded in the ledger as priority data. */
 const UNTIL = [['week','in a week'],['month','in a month'],['ask','when I ask']];
-const deferCtl = (kind, id) => `<div class="defer"><select id="du-${kind}-${id}" aria-label="Bring it back">${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
+/* Spaced repetition, Wendell 2026-10-03: "We want to use spaced repetition so that tasks that are deferred come back and
+   the council can weigh in on them in new context." The numbers are the council's (pass eight, position sd-intervals):
+   the first spaced deferral waits a week, and each later deferral of the same item doubles the last wait.
+   council/due.py holds the same rule, and the session that records a deferral uses it. */
+const FIRST_DAYS = 7, GROWTH = 2;
+const deferrals = r => r ? (r.history || (r.decision === 'deferred' ? [{recorded:r.recorded, until:r.until}] : [])) : [];
+const waitOf = d => d.days || (d.recorded && d.until ? Math.round((Date.parse(d.until) - Date.parse(d.recorded)) / 864e5) : 0);
+const TIMES = ['', 'once', 'twice', 'three times', 'four times', 'five times', 'six times', 'seven times', 'eight times', 'nine times', 'ten times'];
+const times = n => TIMES[n] || n + ' times';
+const nextDays = (kind, id) => { const w = deferrals(R[kind][id]).map(waitOf).filter(Boolean); return w.length ? w[w.length - 1] * GROWTH : FIRST_DAYS; };
+const deferCtl = (kind, id) => `<div class="defer"><select id="du-${kind}-${id}" aria-label="Bring it back"><option value="spaced" data-days="${nextDays(kind, id)}">bring back in ${nextDays(kind, id)} days (spaced)</option>${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
 const today = () => new Date().toISOString().slice(0,10);
 const isDeferredNow = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && (!r.until || r.until > today())); };
 // A store row older than the ledger record is the one the record already holds, so only a newer save (status 'saved') counts.
 const isDueBack = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && r.until && r.until <= today() && status(kind, id) !== 'saved'); };
 const savedDefer = (kind, id) => status(kind, id) === 'saved' && !!live[kind][id].deferred;
 
+/* An item back from a deferral carries the council's re-weigh as `review` on its row: what changed while it
+   waited, each face's line under a fresh cast, and what the council recommends. council/due.py gathers the
+   changes; the session that reads the board writes the review. */
+function reviewBox(kind, item){
+  const h = deferrals(R[kind][item.id]), last = h[h.length - 1] || {}, r = item.review;
+  if (!r) return isDueBack(kind, item.id) ? `<p class="duenote">You deferred this ${times(h.length)}, and its date has passed. The council re-weighs it in the next session that reads the board.</p>` : '';
+  return `<div class="review"><h3>Since you deferred this</h3>
+    <p>You deferred it ${times(h.length)}, most recently on ${esc(last.recorded)}${last.steer ? `: “${esc(last.steer)}”` : '.'}</p>
+    ${(r.changed||[]).length ? `<ul>${r.changed.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : '<p>Nothing in the record changed while it waited.</p>'}
+    ${(r.faces||[]).map(f => `<p><b>${esc(f.face)}</b>${f.cast ? ` <span class="oc">under ${esc(f.cast)}</span>` : ''}: ${esc(f.line)}</p>`).join('')}
+    ${r.recommend ? `<p><b>The council recommends:</b> ${esc(r.recommend)}</p>` : ''}</div>`;
+}
+
 function qRow(q){
   const st = local.questions[q.id] || {choice:'', steer:''};
   return `<section class="row" id="q-${q.id}">
     <div class="meta">${chips(q.faces)}<span>question</span></div>
     <p class="pos">${esc(q.q)}</p>
+    ${reviewBox('questions', q)}
     <p class="why"><span>why only you</span> ${esc(q.why_you)}</p>
     <p class="why"><span>why not before</span> ${esc(q.not_before)}</p>
     <div class="opts">${q.options.map(o => `<label class="opt"><input type="radio" name="q-${q.id}" value="${esc(o.v)}" id="q-${q.id}-${esc(o.v)}"${st.choice===o.v?' checked':''}> <b>${esc(o.label)}</b><br><span class="oc">${esc(o.c)}</span></label>`).join('')}</div>
@@ -209,6 +237,7 @@ function pRow(p){
   return `<section class="row${st.status==='overrule'?' over':''}" id="p-${p.id}">
     <div class="meta">${chips(p.faces)}<span>${esc(p.pass==='flirtcraft'?'flirtcraft':(p.pass==='research'?'research':'pass '+p.pass))}</span></div>
     <p class="pos">${esc(p.pos)}</p>
+    ${reviewBox('positions', p)}
     <p class="why"><span>why it did not reach you</span> ${esc(p.why)}</p>
     <div class="ctl"><div class="seg" role="group" aria-label="Status"><button type="button" data-pick="positions" data-id="${p.id}" data-v="stands" aria-pressed="${st.status==='stands'}">Stands</button><button type="button" class="o" data-pick="positions" data-id="${p.id}" data-v="overrule" aria-pressed="${st.status==='overrule'}">Overrule</button></div>
     <div class="steer"><textarea id="ps-${p.id}" placeholder="Steer: what the face should carry forward">${esc(st.steer)}</textarea></div>
@@ -227,7 +256,7 @@ function doneRow(kind, item, title){
   const s = status(kind, item.id), r = R[kind][item.id], l = live[kind][item.id];
   let dec, where;
   if (s === 'saved'){
-    dec = l.deferred ? 'Deferred, back ' + ((UNTIL.find(u=>u[0]===l.until)||[0,'when you ask'])[1])
+    dec = l.deferred ? 'Deferred, back ' + (l.until === 'spaced' ? `in ${l.days} days` : (UNTIL.find(u=>u[0]===l.until)||[0,'when you ask'])[1])
         : kind==='questions' ? (item.options.find(o=>o.v===l.choice)||{}).label || 'Steer only'
         : kind==='terms' ? (LABEL[l.action]||l.action) + (l.rename?` as "${l.rename}"`:'')
         : kind==='causes' ? (l.kept ? 'Kept' : `Renamed "${l.name}"`)
@@ -307,7 +336,9 @@ openView.addEventListener('click', async e => {
   if (b.dataset.defer){
     const kind = b.dataset.defer, id = b.dataset.id, st = document.getElementById(`st-${kind}-${id}`);
     const steerEl = document.getElementById((kind === 'questions' ? 'qs-' : 'ps-') + id);
-    const body = {deferred:true, until:document.getElementById(`du-${kind}-${id}`).value, steer:steerEl ? steerEl.value : '', savedAt:new Date().toISOString()};
+    const sel = document.getElementById(`du-${kind}-${id}`);
+    const body = {deferred:true, until:sel.value, steer:steerEl ? steerEl.value : '', savedAt:new Date().toISOString()};
+    if (sel.value === 'spaced') body.days = Number(sel.selectedOptions[0].dataset.days);
     if (!db){ st.textContent = 'Not saved in this view.'; return; }
     try { await db.doc(`${kind}/${id}`).set(body); live[kind][id] = body; render(); }
     catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
