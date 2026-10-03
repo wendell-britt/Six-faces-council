@@ -1,0 +1,30 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-18",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "editorial",
+  "question": "Friendcraft pass seven: the remaining oracle batches and three positions",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "oracle-remaining": {
+      "choice": "reread",
+      "saved_at": "2026-10-03T03:07:47Z"
+    }
+  },
+  "positions": {
+    "council-editorial-pass": "stands",
+    "oracle-b2-no": "stands",
+    "sc009-corpora": "stands"
+  },
+  "steps": {
+    "council-retire-branches": "none ticked yet"
+  },
+  "acted_on": [
+    "Merge six-faces-council#7 (the editorial pass)",
+    "Restore main's translate.yaml on strand/oracle-port",
+    "Build the SC-009 check against Wilhelm/Baynes and Liu",
+    "Re-read oracle batches 3 to 13 with the editorial pass and bring only what survives"
+  ]
+}

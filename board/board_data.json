@@ -2107,6 +2107,21 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "council-editorial-pass": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+   },
+   "oracle-b2-no": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+   },
+   "sc009-corpora": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
    }
   },
   "questions": {
@@ -2253,6 +2268,12 @@
     "label": "Revisit batches 1 and 2 with the game masters and the editorial skill",
     "recorded": "2026-10-03",
     "record": "friendcraft council/ledger/2026-10-03-friendcraft-manuacript-6face-pass7.json"
+   },
+   "oracle-remaining": {
+    "decision": "reread",
+    "label": "Re-read batches 3 to 13 with the editorial pass, and bring only what passes",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
    }
   },
   "causes": {
