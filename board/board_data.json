@@ -3225,6 +3225,33 @@
     "label": "Merged by you",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-27.json (six-faces-council)"
+   },
+   "mh5-plan": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+   },
+   "mh5-kit-art": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+   },
+   "mh5-built-once": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+   },
+   "mh5-palette-check": {
+    "decision": "overrule",
+    "label": "Overruled: measure real SNES screens first",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+   },
+   "mh5-reserved": {
+    "decision": "overrule",
+    "label": "Overruled: roles go through a character creation pipeline",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
    }
   },
   "questions": {
