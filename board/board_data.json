@@ -1143,6 +1143,17 @@
    "auto": false,
    "pos": "Every redraw passes the walk checker, so a change that breaks the walk shows the broken door instead of a map.",
    "why": "Sprout's map research names generators that make tiles with no walk as the failure to avoid (docs/map-topology-research.md:14). The checker exists (docs/generators-plan.md:143). Source: sprout docs/maker-and-hall/6FACE_PASS4_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "sm-hearing-exposes-bond",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout story hearing",
+   "auto": true,
+   "pos": "The hearing draft assumes that what Sorrel exposes at the wall is the player's bond with a forest spirit. Every voiced line is written to that. This stands unless you flip it and say what Sorrel exposes.",
+   "why": "design.md does not say what is exposed. Every player has a spirit ally from milestone 5, settlers may not enter the forest, and the well kills a bonded spirit, so the bond is the one secret every player carries into bout 8. Source: sprout story/scenes/m6_hearing.json (branch claude/project-thread-1754kb)"
   }
  ],
  "questions": [
@@ -3074,6 +3085,21 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "mh4-map-feel": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+   },
+   "mh4-map-order": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+   },
+   "mh4-map-verifier": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
    }
   },
   "questions": {
@@ -3321,6 +3347,12 @@
     "label": "Halloran for Earth, Brannock for Fire",
     "recorded": "2026-10-03",
     "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "mh4-map-when": {
+    "decision": "now",
+    "label": "Now, as the next maker task",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
    }
   },
   "causes": {
