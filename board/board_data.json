@@ -521,6 +521,16 @@
    "auto": true,
    "pos": "Casting merges on your next board read unless you flip this.",
    "why": "The test passed and nothing touches a reserved item. Source: .specify/specs/iching-casting/spec.md (six-faces-council, branch feature/iching-casting)"
+  },
+  {
+   "id": "iching-which-fields",
+   "faces": [
+    "regent"
+   ],
+   "pass": "I Ching",
+   "auto": true,
+   "pos": "The council copies each hexagram's name, what it shows, its image and its situation. It leaves the flirtation line, the drill and the craft names in flirtcraft, as the flirting applications.",
+   "why": "Your words in chat: 'The valuable parts for flirtcraft are their flirting applications so it fine to have this in the public repo.' The split follows the card's own fields. Source: council/iching/hexagrams.yaml"
   }
  ],
  "questions": [
@@ -1333,6 +1343,12 @@
     "label": "Smallest for focused work, middle for research",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "iching-card-readings": {
+    "decision": "copy-readings",
+    "label": "Copy the readings; the flirting applications stay in flirtcraft (said in chat)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-iching-readings-chat.json (six-faces-council)"
    }
   },
   "causes": {

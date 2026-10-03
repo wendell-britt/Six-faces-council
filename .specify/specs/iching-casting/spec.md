@@ -22,7 +22,7 @@ what it informed go into the pass and the ledger.
 | Who casts | Every agent: each of the six faces, and each daemon a face sends | Wendell ("all agents") |
 | How a cast is drawn | One hexagram drawn evenly from the 64, as flirtcraft's draw does, with a cryptographic random source | Wendell ("not unlike flirtcraft"); the council read flirtcraft's draw |
 | What the cast carries | Number, Chinese name, pinyin, lines, and the two trigrams with their traditional names and qualities, from `council/iching/hexagrams.yaml` | Council. The table was read from flirtcraft's `lib/decks.json` and checked line by line against the trigrams |
-| Flirtcraft's card readings | Not copied. Wendell ruled on 2026-09-09 that the subscription sells the cards, and the council's repo is public. Whether to bring them in is a board question | Wendell's ruling; board |
+| Flirtcraft's card readings | Copied: each hexagram's name, what it shows, its image and its situation. The flirting applications stay in flirtcraft: the flirtation line, the drill and the craft names | Wendell, 2026-10-03: "The valuable parts for flirtcraft are their flirting applications so it fine to have this in the public repo" |
 | Daemons | The face casts for each daemon it sends and passes the cast in, so daemons stay read-only | Council, from pass six's capability position |
 | Inform, not decide | A cast shapes how an agent frames and weighs its argument. The evidence the agent cites still has to hold | Wendell ("inform their decisions") |
 

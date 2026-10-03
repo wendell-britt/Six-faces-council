@@ -14,7 +14,7 @@ names: the superpower that arrives at that altitude.
 ## What to report
 
 - **The cast:** the face casts the I Ching for you and passes the hexagram in. Say in one or two sentences
-  how its traditional wisdom bears on what you want here. Wendell, 2026-10-03: "all agents should be
+  how its reading and traditional wisdom bear on what you want here. Wendell, 2026-10-03: "all agents should be
   casting the I Ching and using its wisdom to inform their decisions".
 - **What I want here:** one or two sentences, without a case for it.
 - **What the superpower does with it:** the move your cell's superpower would make on this problem.

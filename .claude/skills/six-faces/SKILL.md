@@ -17,8 +17,9 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
 4. **Every agent casts the I Ching first.** Wendell, 2026-10-03: *"all agents should be casting the I Ching
    and using its wisdom to inform their decisions (not unlike flirtcraft)"*. Run `python3 council/iching/cast.py
    shaman architect challenger regent diplomat sage`, one hexagram each, drawn evenly from the 64 as flirtcraft
-   draws. Each face opens its section with its hexagram and one or two sentences on how its traditional
-   wisdom bears on the question, and lets it shape how the face frames and weighs its argument. The cast
+   draws. Each cast carries Wendell's reading from flirtcraft (its name, what it shows, its image and its
+   situation) beside the traditional lines and trigrams. Each face opens its section with its hexagram and
+   one or two sentences on how its reading bears on the question, and lets it shape how the face frames and weighs its argument. The cast
    informs; the evidence a face cites still has to hold. When a face sends a daemon, the face casts for it
    (`cast.py daemon-skeptic`) and passes the hexagram in, so daemons stay read-only. The pass header lists
    every cast, and the ledger record carries them under `casts` (`cast.py --json`).

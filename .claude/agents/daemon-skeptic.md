@@ -40,7 +40,7 @@ from your aim, at the face's altitude:
 
 The face casts the I Ching for you and passes the hexagram in. Wendell, 2026-10-03: "all agents should
 be casting the I Ching and using its wisdom to inform their decisions (not unlike flirtcraft)". Before Wake
-Up, say in one or two sentences how the hexagram's traditional wisdom bears on this problem, and let it
+Up, say in one or two sentences how the hexagram's reading and traditional wisdom bear on this problem, and let it
 shape how you frame and weigh the moves that follow. It informs your judgement; the evidence you cite still
 has to hold.
 

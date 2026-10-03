@@ -35,7 +35,9 @@ def cast(agents, seed=None):
     for agent in agents:
         h = hexes[rng.randrange(64)]
         lo, up = tri[h["lower"]], tri[h["upper"]]
-        out.append({"agent": agent, "n": h["n"], "cn": h["cn"], "pinyin": h["pinyin"], "lines": h["lines"],
+        out.append({"agent": agent, "n": h["n"], "name": h.get("name"), "cn": h["cn"], "pinyin": h["pinyin"],
+                    "lines": h["lines"], "shows": h.get("shows"), "image": h.get("image"),
+                    "situation": h.get("situation"),
                     "lower": {"trigram": h["lower"], **{k: lo[k] for k in ("symbol", "name", "quality")}},
                     "upper": {"trigram": h["upper"], **{k: up[k] for k in ("symbol", "name", "quality")}}})
     return out
@@ -55,10 +57,11 @@ def main(argv):
         print(json.dumps(casts, ensure_ascii=False))
         return 0
     for c in casts:
-        print(f"{c['agent']}: hexagram {c['n']}, {c['cn']} ({c['pinyin']})")
+        print(f"{c['agent']}: hexagram {c['n']}, {c['name']}, {c['cn']} ({c['pinyin']})")
         print(figure(c["lines"]))
         print(f"  {c['upper']['symbol']} {c['upper']['trigram']}, {c['upper']['name']} ({c['upper']['quality']}), above")
-        print(f"  {c['lower']['symbol']} {c['lower']['trigram']}, {c['lower']['name']} ({c['lower']['quality']}), below\n")
+        print(f"  {c['lower']['symbol']} {c['lower']['trigram']}, {c['lower']['name']} ({c['lower']['quality']}), below")
+        print(f"  Shows: {c['shows']}\n  Image: {c['image']}\n  Situation: {c['situation']}\n")
     return 0
 
 
