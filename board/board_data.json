@@ -687,6 +687,36 @@
    "pass": "census",
    "pos": "Two cleanups wait until archiving works: 9 open pull requests on old branches, and 114 branches across the repos that are fully merged into main. The council will bring each to you then. This stands unless you flip it.",
    "why": "Both are tidying and change nothing tonight. Asking now would put seven questions on your board instead of five. Source: council/census/READING_2026-10-03.md and RECENT_REVIEW_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "oracle-b2-no",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "friendcraft pass 7",
+   "pos": "Batch 2's nine changes do not go in, and main's text stays. This takes effect on your next board read unless you flip it.",
+   "why": "Your steer says they are not good enough. Every one of them came from a pass that split 142 sentences at \"and\" to bring a rate from 21% to 6%. On the Grieving card the split kept the clause you caught on 2026-08-31 and gave it its own sentence. Source: friendcraft preproduction/6FACE_PASS7_2026-10-03.md"
+  },
+  {
+   "id": "council-editorial-pass",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "friendcraft pass 7",
+   "pos": "The council's skill gains an editorial pass. Each face runs one of the house-voice instruments: who is in it, the counters as candidates only, the source check, your rulings with their sentences, the ELI5 and stance questions, and what the card tells the player to do. A counter hit never closes an edit, and the council writes no replacement prose of yours unless you ask. This merges on your next board read unless you flip it.",
+   "why": "You asked for the game masters and the editorial skill to be integrated. The skill's own words already set the rule: \"A counter finds candidates; only a person approves them.\" Pull request: https://github.com/wendell-britt/Six-faces-council/pull/7"
+  },
+  {
+   "id": "sc009-corpora",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "friendcraft pass 7",
+   "pos": "The deck's paraphrase test (SC-009) adds Wilhelm/Baynes and Liu to the texts it compares against, so the deck itself catches copied phrasing. This is built on your next board read unless you flip it.",
+   "why": "The Skeptic found 13 of batch 1's 31 new lines closely paraphrase Wilhelm or Liu, and hexagram 6 copies Wilhelm word for word. SC-009 checks only bars-engine's own rendering, so the branch passed it. FR-010 is your rule. Source: friendcraft preproduction/6FACE_PASS7_2026-10-03.md"
   }
  ],
  "questions": [
@@ -1339,6 +1369,33 @@
      "v": "stop",
      "label": "No, and retire the rest of the rewrites",
      "c": "The council stops the batches, keeps today's oracle text everywhere, and retires the branch to the archive."
+    }
+   ]
+  },
+  {
+   "id": "oracle-remaining",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "q": "Pass seven found the oracle rewrites mechanical by construction. Sessions turned your rulings into rates and drove the rates down, and the lint pass the council offered did the same. What happens to batches 3 to 21? The pass is here: https://github.com/wendell-britt/friendcraft-manuacript/blob/main/preproduction/6FACE_PASS7_2026-10-03.md",
+   "why_you": "It is your oracle's prose and your reading time.",
+   "not_before": "Until this pass, the council did not know the rewrites were made by counters.",
+   "options": [
+    {
+     "v": "reread",
+     "label": "Re-read batches 3 to 13 with the editorial pass, and bring only what passes",
+     "c": "Each surviving change comes with one sentence on what its card tells the player to do. The council expects few to survive."
+    },
+    {
+     "v": "stop",
+     "label": "Stop, and retire the prose rewrites",
+     "c": "Main keeps today's card text. The translation analysis, the reference images and the tools, which are not card prose, come over as one small pull request."
+    },
+    {
+     "v": "read",
+     "label": "Read them as they are",
+     "c": "The batches come to the board one at a time, as before."
     }
    ]
   }
@@ -2093,6 +2150,12 @@
     "label": "No to this file",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-17.json (six-faces-council)"
+   },
+   "fcm-oracle-batch-02": {
+    "decision": "steer",
+    "label": "Revisit batches 1 and 2 with the game masters and the editorial skill",
+    "recorded": "2026-10-03",
+    "record": "friendcraft council/ledger/2026-10-03-friendcraft-manuacript-6face-pass7.json"
    }
   },
   "causes": {
