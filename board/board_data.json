@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-03",
  "positions": [
   {
    "id": "build",
@@ -639,6 +639,26 @@
    "auto": true,
    "pos": "Your two principles are written into the council in your words, with the working rules: sense open strands before picking work, start a parallel strand for each emergent need, sequence strands that touch the same file, write board and ledger on main only, and keep earlier work when moving up. This merges on your next board read unless you flip it.",
    "why": "Your message tonight. The collision check found real collisions on its first run. Source: council/strands.py run on 2026-10-03; strand/sense-and-respond (six-faces-council)"
+  },
+  {
+   "id": "census-ship",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "census",
+   "auto": true,
+   "pos": "The census tool joins the council and syncs to every repo. It only reads: it lists unmerged branches and recommends keep, review or retire. This merges on your next board read unless you flip it.",
+   "why": "You chose the census at board read 13. Its first run counted 31 already-merged branches as unmerged, and the fix for that is in the tool now. Source: six-faces-council#4"
+  },
+  {
+   "id": "census-keep-active",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "census",
+   "pos": "The 5 active branches stay as they are: the 4 in root-game, including the held ruler draft, and bars-engine's podcast page from 2026-09-30.",
+   "why": "Each had a commit this week, so another session may be working on it. Keeping them changes nothing. Source: council/census/CENSUS_2026-10-03.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -915,6 +935,81 @@
      "v": "retire-stale",
      "label": "Retire anything older than a month as an archive tag",
      "c": "Branches unchanged for 30 days become tags, so nothing is lost and the open list shrinks to live work. The census comes first so you see the list."
+    }
+   ]
+  },
+  {
+   "id": "census-landed",
+   "faces": [
+    "regent"
+   ],
+   "q": "41 branches hold work that is already in main: 35 in bars-engine and 6 in friendcraft. Should the council retire them?",
+   "why_you": "They are other sessions' branches, and you ruled that nothing is retired without your say.",
+   "not_before": "The census ran tonight. Its first run missed branches merged by squashing, and the fixed run found these.",
+   "options": [
+    {
+     "v": "retire",
+     "label": "Retire all 41 as archive tags",
+     "c": "Each branch becomes a tag named archive/<branch>, then the branch is removed. The work stays reachable, and the open list shrinks by 41."
+    },
+    {
+     "v": "leave",
+     "label": "Leave them",
+     "c": "Nothing changes. The collision check keeps listing them."
+    }
+   ]
+  },
+  {
+   "id": "census-stale",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "q": "70 branches hold work that is not in main and have had no commit for over a month: 68 in bars-engine, from June to early September, and 2 in emotional-first-aid from August. What should happen to them?",
+   "why_you": "Some of this may be work you still want. Only you know which.",
+   "not_before": "The census ran tonight.",
+   "options": [
+    {
+     "v": "retire",
+     "label": "Retire all 70 as archive tags",
+     "c": "Nothing is lost: any of them can be brought back from its tag. The open list drops to live work."
+    },
+    {
+     "v": "read-first",
+     "label": "Have the council read them first and flag any worth keeping",
+     "c": "Daemons read the branches in parallel on the small model, and the council brings you a short list to keep. The rest are retired as tags. This costs a research pass."
+    },
+    {
+     "v": "leave",
+     "label": "Leave them",
+     "c": "Nothing changes."
+    }
+   ]
+  },
+  {
+   "id": "census-recent",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "q": "7 branches from the last month hold work that is not in main. 5 are in flirtcraft: the front door, the founder panel, the search page and the HeyCatch analysis. 2 are in friendcraft: the exchange port and the hexagram rewrites. What should the council do with them?",
+   "why_you": "Merging them changes your live site and your book's repo. Three of the flirtcraft branches are one line of work.",
+   "not_before": "The census ran tonight.",
+   "options": [
+    {
+     "v": "review",
+     "label": "Have the council review each one and propose merge or retire",
+     "c": "For each branch you get what it holds, how far main has moved past it, and a merge-or-retire proposal. Nothing merges until you say yes on the board. Anything that touches the manuscript waits for your approval."
+    },
+    {
+     "v": "retire",
+     "label": "Retire all 7 as archive tags",
+     "c": "The work stays in the tags. Any of it can come back later as a new strand."
+    },
+    {
+     "v": "leave",
+     "label": "Leave them",
+     "c": "Nothing changes."
     }
    ]
   }
