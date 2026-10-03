@@ -1058,6 +1058,27 @@
    "auto": true,
    "pos": "The move step is built after the other session's pull request #16 merges. That pull request keeps every open branch current with main, so three sessions writing to this repo do not collide on the board's data. This stands unless you flip it.",
    "why": "The Challenger's dissent in the pass: the Sprout session, the steward and the daily session would all write here. Source: council/passes/6FACE_PASS9_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "fm-levels",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "9",
+   "auto": true,
+   "pos": "The daily session starts at level one, one board row per run, and level two allows two. Each run's record carries its token use and cost, read from the session record after it ends, and whether its row stood when you ruled. When its last five rows have all stood, the council proposes the next level here with those numbers, and you rule each level change. When you overrule one of its rows, the council proposes whether it stays at its level or drops one. The numbers are the council's, and this stands unless you flip it.",
+   "why": "Your steer on fm-one-row: \"I think we should increase the amount over time as a function of how much we trust the agent to pick up useful work on its own and in alignment with ecological token usage. This is essentially a level progression. More skillful agents get more capacity and resource\". A session's token use is readable after each run, so the record can show both. Source: council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+  },
+  {
+   "id": "lesson-diplomat-levels",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "9",
+   "auto": true,
+   "pos": "The Diplomat gains a lesson from your overrule of fm-one-row: a limit on what an agent may take up is a starting level, and it rises as the record shows useful work and careful token use. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "The skill says an overrule on a face's row becomes that face's lesson, and faces.yaml changes only by your ruling. Source: council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
   }
  ],
  "questions": [
@@ -2905,6 +2926,27 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+   },
+   "fm-rotation": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+   },
+   "fm-limits": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+   },
+   "fm-after-16": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+   },
+   "fm-one-row": {
+    "decision": "overrule",
+    "label": "Overruled: capacity grows by level",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
    }
   },
   "questions": {
@@ -3134,6 +3176,12 @@
     "label": "Every day",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+   },
+   "fm-repos": {
+    "decision": "home",
+    "label": "Only the council's home repo, for now",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
    }
   },
   "causes": {

@@ -32,8 +32,8 @@ row on the board, and stops.
 | Nothing found | The run does research instead | Wendell: "We can always do research as "something new"" |
 | What a move may do | Wake up writes a research note with quoted sources. Open up lists abandoned work it found. Clean up and Grow up change code or files on a strand branch, with a pull request. Show up brings finished work to mergeable and names it on the board | Council, position `fm-limits`, from his definitions |
 | Never | Merge into main, act on the reserved list, change another session's rows or branches, retire or delete anything, or work on a project with a deferral waiting | Council, position `fm-limits`, from the pipeline's ship stage, `reserved` in faces.yaml and the council lesson of 2026-10-03 |
-| Board rows | At most one per run | Council, position `fm-one-row`; the number is the council's |
-| Repos | Question `fm-repos` | Wendell; bars-engine is owned by johnair01 |
+| Board rows | By level: level one is one row per run, and he rules each level change on the record of rows that stood and tokens used | Wendell, overrule of `fm-one-row`: "This is essentially a level progression. More skillful agents get more capacity and resource"; the numbers in position `fm-levels` are the council's |
+| Repos | The council's home repo only, for now | Wendell, `fm-repos`, board read 25 |
 | When the build starts | After six-faces-council #16 merges | Council, position `fm-after-16`, from the Challenger's dissent |
 
 ## Contracts
@@ -56,7 +56,8 @@ because another person owns that repo.
 
 ## Definition of done
 
-- [ ] Wendell rules on `fm-rotation`, `fm-limits`, `fm-one-row`, `fm-after-16` and `fm-repos`.
+- [x] Wendell rules on `fm-rotation`, `fm-limits`, `fm-one-row`, `fm-after-16` and `fm-repos` (board read 25).
+- [ ] Wendell rules on `fm-levels`.
 - [ ] #16 merges.
 - [ ] The daily routine's instructions gain the move step, and `plan.md` and `tasks.md` are written.
 - [ ] The first run of each move is read and recorded here.
