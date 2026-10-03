@@ -1309,6 +1309,38 @@
      "c": "Today's text stays for all sixteen cards. Batch 2 comes next."
     }
    ]
+  },
+  {
+   "id": "fcm-oracle-batch-02",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "q": "Oracle batch 2 of 13 card files: the ten translate cards, which move a player from one feeling to another. It has 9 changes, and 6 of them only split a sentence at \"and\". For example, \"What is under the grab is fear, and arriving at plain fear is the whole of this move\" becomes \"What is under the grab is fear. Arriving at plain fear is the whole of this move.\" Two change the words: \"the part worth them hearing, and it is the part that lands\" becomes \"is worth them hearing. It is what lands\", and \"This does not get argued out of\" becomes \"Flatness does not get argued out of\". All 9 are quoted in the chat and here: https://github.com/wendell-britt/friendcraft-manuacript/blob/strand/oracle-port/review/batches/02-shared-translate.md",
+   "why_you": "It is your oracle's prose. Batch 1 was a no, so the council also asks whether to keep going.",
+   "not_before": "Batch 1's no is done: main's text is back for the sixteen cards, and all 256 tests pass.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "Yes to all 9",
+     "c": "This file's changes are kept. Batch 3 comes next."
+    },
+    {
+     "v": "some",
+     "label": "Some yes, some no",
+     "c": "Write the numbers you reject in the note. The rest are kept, and batch 3 comes next."
+    },
+    {
+     "v": "no",
+     "label": "No to this file",
+     "c": "Today's text stays. Batch 3 comes next."
+    },
+    {
+     "v": "stop",
+     "label": "No, and retire the rest of the rewrites",
+     "c": "The council stops the batches, keeps today's oracle text everywhere, and retires the branch to the archive."
+    }
+   ]
   }
  ],
  "causes": [
