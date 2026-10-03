@@ -468,6 +468,17 @@
    "auto": true,
    "pos": "Every pass record carries the subagents' token count, so the saving from the smaller model can be shown, not assumed.",
    "why": "Each research daemon used about 64,000 to 73,000 tokens tonight. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-quote-the-source",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Every linked number or finding in a daemon report carries a short quote from its source, so the face can check the match in one search instead of reading the whole paper.",
+   "why": "The Skeptic's rerun linked real papers to the wrong claims twice in four checks. A quote makes a mismatch visible. Source: .specify/specs/daemon-subagents/spec.md, the Skeptic's rerun (six-faces-council, pull request #1)"
   }
  ],
  "questions": [
@@ -672,7 +683,7 @@
     "architect",
     "regent"
    ],
-   "q": "The daemons ran their research on the smallest model and failed the citation test I set first: 15 of 21 checked citations held up, where 17 were needed. No source was invented. One report left out its links, and one left out the five moves. How should the daemons run?",
+   "q": "The daemons ran their research on the smallest model and failed the citation test I set first: 15 of 21 checked citations held up, where 17 were needed. No source was invented. One report left out its links, and one left out the five moves. How should the daemons run? After your note, the Skeptic reran with your rule and cited 11 sources, but two of the four I checked were real papers attached to the wrong claim. The shape check cannot catch that; only a spot check by the face can.",
    "why_you": "It trades your money against reliability, and the lower-model scheme is yours.",
    "not_before": "The test ran tonight.",
    "options": [

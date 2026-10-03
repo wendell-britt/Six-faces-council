@@ -46,7 +46,8 @@ before the face reads your report, and a report that fails goes back to you once
   reach test before any of them reaches Wendell.
 - **Where you would overreach:** one sentence on how your cell's distortion would show up here, so the face
   knows where to stop you.
-- **Sources:** a numbered list of links. Mark each factual claim above with its number, such as [2]. Write
+- **Sources:** a numbered list of links. Mark each factual claim above with its number, such as [2], and give
+  each linked number or finding a short quote from its source. Write
   "None" if the problem needed no reading.
 
 ## Where your definition lives

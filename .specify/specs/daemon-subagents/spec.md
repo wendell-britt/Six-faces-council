@@ -191,3 +191,21 @@ unclear. The Skeptic cited no links, which counts as 3 failures, and the Protect
 moves. The research and the fine-tunes it led to are in `council/passes/6FACE_PASS6_2026-10-03.md`. The fix
 set before the test was the next model up; a cheaper fix, a shape-and-link check with one retry, is built
 and sits beside it on the board for Wendell to choose.
+
+## The Skeptic's rerun, 2026-10-03
+
+Wendell: *"Big fail on the skeptic because as the skeptical one they'd want to back up their work with
+links"*. That rule went into the Skeptic's own file, and it reran the same question on the same model.
+
+- **The links came back.** The rerun cites 11 sources, numbered against its claims, and passes
+  `check_report.py --research`. The first run cited none.
+- **A new failure showed up: real documents attached to the wrong claim.** The spot check used the same rule
+  as before (first, middle and last link). The first (Agyn, 72.2% on SWE-bench) holds up. The middle (a
+  study finding that more agents is not always better) holds up in content, though its exact page could not
+  be opened. The last does not: it links Anthropic's Claude Opus 4.6 system card for a finding that comes
+  from Anthropic's June 2025 post on its multi-agent research system. One more link was checked because it
+  looked wrong, and it was: the "10.7 point gain from interface design" is from the SWE-agent paper (arXiv
+  2405.15793), and the report links SWE-Bench Pro instead.
+- **What this means for the model question.** On the small model, the rule fixed the missing links and
+  exposed misattribution, which no shape check can catch. Only a face's spot check finds it. That evidence
+  sits beside the model question on the board.
