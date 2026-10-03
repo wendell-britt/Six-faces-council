@@ -1599,6 +1599,16 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+   },
+   "census-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+   },
+   "census-keep-active": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
    }
   },
   "questions": {
@@ -1661,6 +1671,24 @@
     "label": "A census with recommendations, nothing merged or deleted without your ruling",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+   },
+   "census-landed": {
+    "decision": "retire",
+    "label": "Retire all 41 as archive tags",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+   },
+   "census-stale": {
+    "decision": "read-first",
+    "label": "The council reads them first and flags any worth keeping",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+   },
+   "census-recent": {
+    "decision": "review",
+    "label": "The council reviews each and proposes merge or retire",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
    }
   },
   "causes": {

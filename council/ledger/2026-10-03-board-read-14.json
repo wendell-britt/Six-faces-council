@@ -1,0 +1,34 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-14",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "The census: landed, stale and recent branches; the census tool; the active branches",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "census-landed": {
+      "choice": "retire",
+      "saved_at": "2026-10-03T00:53:18Z"
+    },
+    "census-stale": {
+      "choice": "read-first",
+      "saved_at": "2026-10-03T00:53:16Z"
+    },
+    "census-recent": {
+      "choice": "review",
+      "saved_at": "2026-10-03T00:53:11Z"
+    }
+  },
+  "positions": {
+    "census-ship": "stands",
+    "census-keep-active": "stands"
+  },
+  "acted_on": [
+    "Merge six-faces-council#4 (census tool)",
+    "Retire the 41 landed branches as archive tags",
+    "Daemons read the 70 stale branches and bring a keep list",
+    "The council reviews the 7 recent branches and proposes merge or retire for each"
+  ]
+}
