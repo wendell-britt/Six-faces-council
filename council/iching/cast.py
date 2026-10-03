@@ -7,9 +7,14 @@ Usage:
   python3 council/iching/cast.py --seed 7 shaman                     repeatable, for tests only
 
 Wendell, 2026-10-03: "all agents should be casting the I Ching and using its wisdom to inform their
-decisions (not unlike flirtcraft)". Flirtcraft draws one hexagram evenly from the 64 and reads it with its
-two trigrams, so this does the same. Each agent gets its own cast. A face casts for the daemons it sends,
-and passes each daemon its hexagram, so the daemons stay read-only.
+decisions (not unlike flirtcraft)", and on the board: "We don't need them evenly. We actually want to do a
+simulation of the coin method and then map to the reading".
+
+Each line is three coin tosses, heads 3 and tails 2, built from the bottom up. A total of 6 is an old yin line
+and 9 an old yang line; both are changing. 7 is young yang and 8 young yin. The lines give the primary
+hexagram. When any line is changing, those lines flip and give the hexagram it becomes, and the cast maps to
+both readings. Each agent gets its own cast. A face casts for the daemons it sends, and passes each daemon
+its cast, so the daemons stay read-only.
 """
 import json
 import random
