@@ -19,6 +19,8 @@ synthesises without deciding, and Wendell rules on a board.
 - The board's Your steps tab is the checklist of steps only Wendell can take. Sessions add lists to the
   board's database (`lists` and `steps`); the page holds no rows. `steps/steps.html` is the retired
   standalone page, which now points to the tab.
+- `council/strands.py` lists a repo's open strands and where two would touch the same file. Sense and respond
+  starts there.
 - `council/passes/` holds the council's passes on its own design, from pass five on.
 - `council/tools/voice_lint.py` is the house voice lint, shared with every council repo.
 - `board/` builds the board Wendell rules on: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
