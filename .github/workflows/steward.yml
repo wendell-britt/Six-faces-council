@@ -1,0 +1,30 @@
+# Keeps open pull requests up to date with main and checks them. Merging into main stays with Wendell.
+name: steward
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  statuses: write
+concurrency:
+  group: steward
+  cancel-in-progress: false
+jobs:
+  steward:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - run: python3 -m pip install --quiet pyyaml
+      - run: python3 .github/scripts/steward.py
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
