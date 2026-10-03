@@ -19,6 +19,20 @@ Wendell in chat. His words: "These questions shouldn't be showing up here".
 - An answer he gives in chat counts as a ruling. Record it the way a board answer is recorded. A chat answer does not
   make the next question a chat question.
 
+## Short sessions
+
+Wendell, 2026-10-03: "Ok this is important and maybe one of the rules that will save us the most. I know Claude’s
+projects does short conversational threads and then archives if we can achieve that level of discipline OR use
+projects more effectively between that and Jev we can save a lot of tokens"
+
+- One session does one piece of work: a board read, a pass, or a feature. Every tool call rereads the whole
+  session, so a long session pays for its past on every step (pass ten measured $0.14 a call at 679,000 tokens).
+- End at a natural boundary. Record the work in the repo and on the board, put anything left open in
+  `council/HANDOFF.md`, and stop. The next piece of work starts in a new thread that reads this file,
+  HANDOFF.md and the board.
+- Drop a pull request watch once the pull request merges or waits only on Wendell's label.
+- Name the session's cost in its last report, read from the platform after the work, never mid-turn.
+
 ## Where the rest lives
 
 - The council's skill: `.claude/skills/six-faces/SKILL.md`. The pipeline: `council/pipeline.yaml`.
