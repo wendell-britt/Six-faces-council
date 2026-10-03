@@ -12,8 +12,8 @@ He has no steps. His decision is position `fm-build` on the board.
 
 - [x] [claude] `council/daily.yaml` and `council/daily.py`, tested on scratch data.
 - [x] [claude] `five_moves` in `council/pipeline.yaml`, and the skill.
-- [ ] [claude] At the board read where `fm-build` stands, add the `automerge` label.
-- [ ] [claude] After the merge: the routine's instructions gain the move step.
+- [x] [claude] `fm-build`: Wendell merged #19 himself on 2026-10-03.
+- [x] [claude] After the merge: the routine's instructions gain the move step.
 - [ ] [claude] Fire the routine once and read what it did.
 
 ## Verify and ship
