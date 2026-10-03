@@ -1,0 +1,838 @@
+about: 'The 64 hexagrams in the King Wen order: number, Chinese name, pinyin, lines from the bottom up (1 unbroken,
+  0 broken), and the two trigrams, lower then upper. These are the I Ching''s own traditional facts. They were read
+  from flirtcraft''s lib/decks.json and checked line by line against the trigrams. Flirtcraft''s card readings,
+  which its subscription sells, are not copied here.'
+trigrams:
+  heaven:
+    symbol: ☰
+    lines:
+    - 1
+    - 1
+    - 1
+    name: The Creative
+    quality: strong
+  lake:
+    symbol: ☱
+    lines:
+    - 1
+    - 1
+    - 0
+    name: The Joyous
+    quality: joyful
+  fire:
+    symbol: ☲
+    lines:
+    - 1
+    - 0
+    - 1
+    name: The Clinging
+    quality: light, and what it depends on
+  thunder:
+    symbol: ☳
+    lines:
+    - 1
+    - 0
+    - 0
+    name: The Arousing
+    quality: movement
+  wind:
+    symbol: ☴
+    lines:
+    - 0
+    - 1
+    - 1
+    name: The Gentle
+    quality: penetrating
+  water:
+    symbol: ☵
+    lines:
+    - 0
+    - 1
+    - 0
+    name: The Abysmal
+    quality: danger
+  mountain:
+    symbol: ☶
+    lines:
+    - 0
+    - 0
+    - 1
+    name: Keeping Still
+    quality: rest
+  earth:
+    symbol: ☷
+    lines:
+    - 0
+    - 0
+    - 0
+    name: The Receptive
+    quality: yielding
+hexagrams:
+- n: 1
+  cn: 乾
+  pinyin: qián
+  lines:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  lower: heaven
+  upper: heaven
+- n: 2
+  cn: 坤
+  pinyin: kūn
+  lines:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  lower: earth
+  upper: earth
+- n: 3
+  cn: 屯
+  pinyin: zhūn
+  lines:
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  lower: thunder
+  upper: water
+- n: 4
+  cn: 蒙
+  pinyin: méng
+  lines:
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  lower: water
+  upper: mountain
+- n: 5
+  cn: 需
+  pinyin: xū
+  lines:
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  lower: heaven
+  upper: water
+- n: 6
+  cn: 訟
+  pinyin: sòng
+  lines:
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  lower: water
+  upper: heaven
+- n: 7
+  cn: 師
+  pinyin: shī
+  lines:
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  lower: water
+  upper: earth
+- n: 8
+  cn: 比
+  pinyin: bǐ
+  lines:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  lower: earth
+  upper: water
+- n: 9
+  cn: 小畜
+  pinyin: xiǎo chù
+  lines:
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  lower: heaven
+  upper: wind
+- n: 10
+  cn: 履
+  pinyin: lǚ
+  lines:
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  lower: lake
+  upper: heaven
+- n: 11
+  cn: 泰
+  pinyin: tài
+  lines:
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  lower: heaven
+  upper: earth
+- n: 12
+  cn: 否
+  pinyin: pǐ
+  lines:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  lower: earth
+  upper: heaven
+- n: 13
+  cn: 同人
+  pinyin: tóng rén
+  lines:
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  lower: fire
+  upper: heaven
+- n: 14
+  cn: 大有
+  pinyin: dà yǒu
+  lines:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  lower: heaven
+  upper: fire
+- n: 15
+  cn: 謙
+  pinyin: qiān
+  lines:
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  lower: mountain
+  upper: earth
+- n: 16
+  cn: 豫
+  pinyin: yù
+  lines:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  lower: earth
+  upper: thunder
+- n: 17
+  cn: 隨
+  pinyin: suí
+  lines:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 0
+  lower: thunder
+  upper: lake
+- n: 18
+  cn: 蠱
+  pinyin: gǔ
+  lines:
+  - 0
+  - 1
+  - 1
+  - 0
+  - 0
+  - 1
+  lower: wind
+  upper: mountain
+- n: 19
+  cn: 臨
+  pinyin: lín
+  lines:
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  lower: lake
+  upper: earth
+- n: 20
+  cn: 觀
+  pinyin: guān
+  lines:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  lower: earth
+  upper: wind
+- n: 21
+  cn: 噬嗑
+  pinyin: shì kè
+  lines:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  lower: thunder
+  upper: fire
+- n: 22
+  cn: 賁
+  pinyin: bì
+  lines:
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  lower: fire
+  upper: mountain
+- n: 23
+  cn: 剝
+  pinyin: bō
+  lines:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  lower: earth
+  upper: mountain
+- n: 24
+  cn: 復
+  pinyin: fù
+  lines:
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  lower: thunder
+  upper: earth
+- n: 25
+  cn: 無妄
+  pinyin: wú wàng
+  lines:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  lower: thunder
+  upper: heaven
+- n: 26
+  cn: 大畜
+  pinyin: dà chù
+  lines:
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  - 1
+  lower: heaven
+  upper: mountain
+- n: 27
+  cn: 頤
+  pinyin: yí
+  lines:
+  - 1
+  - 0
+  - 0
+  - 0
+  - 0
+  - 1
+  lower: thunder
+  upper: mountain
+- n: 28
+  cn: 大過
+  pinyin: dà guò
+  lines:
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  lower: wind
+  upper: lake
+- n: 29
+  cn: 坎
+  pinyin: kǎn
+  lines:
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 0
+  lower: water
+  upper: water
+- n: 30
+  cn: 離
+  pinyin: lí
+  lines:
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  lower: fire
+  upper: fire
+- n: 31
+  cn: 咸
+  pinyin: xián
+  lines:
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  lower: mountain
+  upper: lake
+- n: 32
+  cn: 恆
+  pinyin: héng
+  lines:
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  lower: wind
+  upper: thunder
+- n: 33
+  cn: 遯
+  pinyin: dùn
+  lines:
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  lower: mountain
+  upper: heaven
+- n: 34
+  cn: 大壯
+  pinyin: dà zhuàng
+  lines:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  - 0
+  lower: heaven
+  upper: thunder
+- n: 35
+  cn: 晉
+  pinyin: jìn
+  lines:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  lower: earth
+  upper: fire
+- n: 36
+  cn: 明夷
+  pinyin: míng yí
+  lines:
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  lower: fire
+  upper: earth
+- n: 37
+  cn: 家人
+  pinyin: jiā rén
+  lines:
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  lower: fire
+  upper: wind
+- n: 38
+  cn: 睽
+  pinyin: kuí
+  lines:
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  lower: lake
+  upper: fire
+- n: 39
+  cn: 蹇
+  pinyin: jiǎn
+  lines:
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  lower: mountain
+  upper: water
+- n: 40
+  cn: 解
+  pinyin: xiè
+  lines:
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  lower: water
+  upper: thunder
+- n: 41
+  cn: 損
+  pinyin: sǔn
+  lines:
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  lower: lake
+  upper: mountain
+- n: 42
+  cn: 益
+  pinyin: yì
+  lines:
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  lower: thunder
+  upper: wind
+- n: 43
+  cn: 夬
+  pinyin: guài
+  lines:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 0
+  lower: heaven
+  upper: lake
+- n: 44
+  cn: 姤
+  pinyin: gòu
+  lines:
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  lower: wind
+  upper: heaven
+- n: 45
+  cn: 萃
+  pinyin: cuì
+  lines:
+  - 0
+  - 0
+  - 0
+  - 1
+  - 1
+  - 0
+  lower: earth
+  upper: lake
+- n: 46
+  cn: 升
+  pinyin: shēng
+  lines:
+  - 0
+  - 1
+  - 1
+  - 0
+  - 0
+  - 0
+  lower: wind
+  upper: earth
+- n: 47
+  cn: 困
+  pinyin: kùn
+  lines:
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  lower: water
+  upper: lake
+- n: 48
+  cn: 井
+  pinyin: jǐng
+  lines:
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  lower: wind
+  upper: water
+- n: 49
+  cn: 革
+  pinyin: gé
+  lines:
+  - 1
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  lower: fire
+  upper: lake
+- n: 50
+  cn: 鼎
+  pinyin: dǐng
+  lines:
+  - 0
+  - 1
+  - 1
+  - 1
+  - 0
+  - 1
+  lower: wind
+  upper: fire
+- n: 51
+  cn: 震
+  pinyin: zhèn
+  lines:
+  - 1
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  lower: thunder
+  upper: thunder
+- n: 52
+  cn: 艮
+  pinyin: gèn
+  lines:
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  lower: mountain
+  upper: mountain
+- n: 53
+  cn: 漸
+  pinyin: jiàn
+  lines:
+  - 0
+  - 0
+  - 1
+  - 0
+  - 1
+  - 1
+  lower: mountain
+  upper: wind
+- n: 54
+  cn: 歸妹
+  pinyin: guī mèi
+  lines:
+  - 1
+  - 1
+  - 0
+  - 1
+  - 0
+  - 0
+  lower: lake
+  upper: thunder
+- n: 55
+  cn: 豐
+  pinyin: fēng
+  lines:
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  - 0
+  lower: fire
+  upper: thunder
+- n: 56
+  cn: 旅
+  pinyin: lǚ
+  lines:
+  - 0
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  lower: mountain
+  upper: fire
+- n: 57
+  cn: 巽
+  pinyin: xùn
+  lines:
+  - 0
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  lower: wind
+  upper: wind
+- n: 58
+  cn: 兌
+  pinyin: duì
+  lines:
+  - 1
+  - 1
+  - 0
+  - 1
+  - 1
+  - 0
+  lower: lake
+  upper: lake
+- n: 59
+  cn: 渙
+  pinyin: huàn
+  lines:
+  - 0
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  lower: water
+  upper: wind
+- n: 60
+  cn: 節
+  pinyin: jié
+  lines:
+  - 1
+  - 1
+  - 0
+  - 0
+  - 1
+  - 0
+  lower: lake
+  upper: water
+- n: 61
+  cn: 中孚
+  pinyin: zhōng fú
+  lines:
+  - 1
+  - 1
+  - 0
+  - 0
+  - 1
+  - 1
+  lower: lake
+  upper: wind
+- n: 62
+  cn: 小過
+  pinyin: xiǎo guò
+  lines:
+  - 0
+  - 0
+  - 1
+  - 1
+  - 0
+  - 0
+  lower: mountain
+  upper: thunder
+- n: 63
+  cn: 既濟
+  pinyin: jì jì
+  lines:
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  lower: fire
+  upper: water
+- n: 64
+  cn: 未濟
+  pinyin: wèi jì
+  lines:
+  - 0
+  - 1
+  - 0
+  - 1
+  - 0
+  - 1
+  lower: water
+  upper: fire

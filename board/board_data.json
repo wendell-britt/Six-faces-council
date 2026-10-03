@@ -479,6 +479,48 @@
    "auto": true,
    "pos": "Every linked number or finding in a daemon report carries a short quote from its source, so the face can check the match in one search instead of reading the whole paper.",
    "why": "The Skeptic's rerun linked real papers to the wrong claims twice in four checks. A quote makes a mismatch visible. Source: .specify/specs/daemon-subagents/spec.md, the Skeptic's rerun (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "iching-cast-first",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "I Ching",
+   "auto": true,
+   "pos": "Every face casts one hexagram before it argues, and casts for each daemon it sends. Each opens with its hexagram and how its traditional wisdom bears on the question. Casts are drawn evenly from the 64, as flirtcraft draws, and recorded in the pass and the ledger.",
+   "why": "Your ask tonight. The test passed: a blind judge matched three reports to their casts with the cast sections removed. Source: .specify/specs/iching-casting/spec.md (six-faces-council, branch feature/iching-casting)"
+  },
+  {
+   "id": "iching-informs",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "I Ching",
+   "auto": true,
+   "pos": "A cast shapes how an agent frames and weighs its argument. The evidence the agent cites still has to hold.",
+   "why": "Your words: 'using its wisdom to inform their decisions'. Source: .specify/specs/iching-casting/spec.md (six-faces-council, branch feature/iching-casting)"
+  },
+  {
+   "id": "iching-grade",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "I Ching",
+   "auto": true,
+   "pos": "For the next three passes, the Challenger grades whether any cast changed an output, because one test with a one-in-six chance of a lucky pass is a start, not proof.",
+   "why": "The judge's confidence in tonight's test was medium to low, and the reports reached similar moves. Source: .specify/specs/iching-casting/spec.md (six-faces-council, branch feature/iching-casting)"
+  },
+  {
+   "id": "iching-ship",
+   "faces": [
+    "regent"
+   ],
+   "pass": "I Ching",
+   "auto": true,
+   "pos": "Casting merges on your next board read unless you flip this.",
+   "why": "The test passed and nothing touches a reserved item. Source: .specify/specs/iching-casting/spec.md (six-faces-council, branch feature/iching-casting)"
   }
  ],
  "questions": [
@@ -701,6 +743,33 @@
      "v": "split",
      "label": "Smallest for focused work, middle for research",
      "c": "Research needs links and gets the middle model; a problem inside the repo stays cheap."
+    }
+   ]
+  },
+  {
+   "id": "iching-card-readings",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "q": "Should the council's casts carry flirtcraft's own card readings? Today a cast carries the I Ching's traditional parts: number, Chinese name, lines, and the two trigrams. Your readings of the 64 are richer and in your voice.",
+   "why_you": "You ruled on 2026-09-09 that the subscription sells the cards, and the council's repo is public. Copying the readings there would publish what flirtcraft sells.",
+   "not_before": "The casting feature was built tonight, and it raised the conflict.",
+   "options": [
+    {
+     "v": "traditional-only",
+     "label": "Traditional parts only",
+     "c": "What is built now. The agents read each hexagram from their own knowledge of its traditional meaning."
+    },
+    {
+     "v": "copy-readings",
+     "label": "Copy your card readings into the council",
+     "c": "Agents read each hexagram in your words, and all 64 readings become public on GitHub."
+    },
+    {
+     "v": "readings-where-private",
+     "label": "Your readings only where flirtcraft is attached",
+     "c": "Sessions with flirtcraft read your words from it; every other session uses the traditional parts. Nothing is published."
     }
    ]
   }

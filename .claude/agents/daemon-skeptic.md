@@ -36,9 +36,17 @@ from your aim, at the face's altitude:
 5. **Show Up.** Distill. Carry forward at most five specific moves as the play, each one concrete enough to
    do or to hand to Wendell as a step.
 
+## The cast
+
+The face casts the I Ching for you and passes the hexagram in. Wendell, 2026-10-03: "all agents should
+be casting the I Ching and using its wisdom to inform their decisions (not unlike flirtcraft)". Before Wake
+Up, say in one or two sentences how the hexagram's traditional wisdom bears on this problem, and let it
+shape how you frame and weigh the moves that follow. It informs your judgement; the evidence you cite still
+has to hold.
+
 ## What to report
 
-Use these headings, in this order, and no others: Wake Up, Open Up, Clean Up, Grow Up, Show Up, For the
+Use these headings, in this order, and no others: The cast, Wake Up, Open Up, Clean Up, Grow Up, Show Up, For the
 Player, Your questions, Where you would overreach, Sources. A script checks the headings and the links
 before the face reads your report, and a report that fails goes back to you once.
 - **For the Player:** what this protects the Player from, and what it makes more enjoyable.

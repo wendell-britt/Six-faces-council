@@ -14,7 +14,15 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
 1. **Header.** Date, who called it, the question in his words, and what pass this is on the subject.
 2. **Scorecard.** Grade the tests the previous pass set. Set new ones, dated, at the end.
 3. **Anchor.** The design intent in one or two sentences. Unchanged unless Wendell changed it.
-4. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game NPC. Each
+4. **Every agent casts the I Ching first.** Wendell, 2026-10-03: *"all agents should be casting the I Ching
+   and using its wisdom to inform their decisions (not unlike flirtcraft)"*. Run `python3 council/iching/cast.py
+   shaman architect challenger regent diplomat sage`, one hexagram each, drawn evenly from the 64 as flirtcraft
+   draws. Each face opens its section with its hexagram and one or two sentences on how its traditional
+   wisdom bears on the question, and lets it shape how the face frames and weighs its argument. The cast
+   informs; the evidence a face cites still has to hold. When a face sends a daemon, the face casts for it
+   (`cast.py daemon-skeptic`) and passes the hexagram in, so daemons stay read-only. The pass header lists
+   every cast, and the ledger record carries them under `casts` (`cast.py --json`).
+5. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game NPC. Each
    delivers what its entry lists, in bold-led paragraphs with a subject and a finite verb. Each
    applies its standing test where one exists.
    **While it drafts, a face may send its daemons to work a specific problem in its domain.** Wendell,
@@ -38,12 +46,12 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
    <report> [--research]`; a report that fails goes back to its daemon once. No daemon hands work to another.
    The face, not the daemon, judges a report, and spot-checks its links when the report is research. The pass
    record carries the subagents' token count.
-5. **Verdicts table.** One row per face, one column per question.
-6. **Dissent check.** State whether the pass was unanimous. A unanimous pass is a flag, not a result;
+6. **Verdicts table.** One row per face, one column per question.
+7. **Dissent check.** State whether the pass was unanimous. A unanimous pass is a flag, not a result;
    say so in the pass.
-7. **Sage.** The Sage synthesises. It names each face's contribution or says which it dropped, lists
+8. **Sage.** The Sage synthesises. It names each face's contribution or says which it dropped, lists
    the dissent, and never decides. The Sage does not rule; Wendell ruled this on 2026-10-02.
-8. **Outputs, typed apart.** *Positions*: what the council resolved, each with the citation for why it
+9. **Outputs, typed apart.** *Positions*: what the council resolved, each with the citation for why it
    did not need Wendell. *Questions*: only what passed the reach test below, each with owner face,
    options, the consequence of each, why only he can answer, and why it was not asked before.
 

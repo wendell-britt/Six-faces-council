@@ -24,17 +24,22 @@ the pass used. If Wendell has ruled since either copy, his newer words win.
 
 1. **Header.** The date, who called it, and the question in his words.
 2. **Anchor.** The design intent in one or two sentences.
-3. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game character.
+3. **Every agent casts the I Ching first.** Wendell, 2026-10-03: *"all agents should be casting the I Ching
+   and using its wisdom to inform their decisions (not unlike flirtcraft)"*. Where code runs, use
+   `council/iching/cast.py`. Where it does not, draw one of the 64 hexagrams evenly by the fairest method this
+   chat has, and say how it was drawn. Each face opens with its hexagram and how its wisdom bears on the
+   question; the cast informs, and the evidence still has to hold.
+4. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game character.
    Each delivers what its entry lists, in short paragraphs with a subject and a finite verb. Where this
    session can run subagents, a face may send its daemons (`daemon-protector` and the others) to work one
    specific problem in its domain, for the Player, through the five moves. Where it cannot, the face reads
    the daemon's entry in `council/daemons/daemons.yaml` itself, or skips it and says so.
-4. **Verdicts table.** One row per face.
-5. **Dissent check.** Say whether the pass was unanimous. Treat a unanimous pass as a warning sign
+5. **Verdicts table.** One row per face.
+6. **Dissent check.** Say whether the pass was unanimous. Treat a unanimous pass as a warning sign
    and say so in the pass.
-6. **Sage.** The Sage synthesises. It names each face's contribution, lists the dissent, and never
+7. **Sage.** The Sage synthesises. It names each face's contribution, lists the dissent, and never
    decides. Wendell decides.
-7. **Outputs, typed apart.** *Positions* are what the council resolved, each with the reason it did
+8. **Outputs, typed apart.** *Positions* are what the council resolved, each with the reason it did
    not need Wendell. *Questions* are only what passes the reach test below.
 
 ## The reach test
