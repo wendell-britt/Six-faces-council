@@ -1,0 +1,36 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-10",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "How the daemons run, and whether pass six's positions and the daemon subagents ship.",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "daemon-model": {
+      "choice": "split",
+      "saved_at": "2026-10-03T00:04:10Z"
+    }
+  },
+  "positions": {
+    "daemons-ship": "stands",
+    "dm-no-chains": "stands",
+    "dm-question-decision": "stands",
+    "dm-quote-the-source": "stands",
+    "dm-report-shape": "stands",
+    "dm-tokens": "stands"
+  },
+  "steers": {
+    "dm-no-chains": "This we could explore. I don't see it's utility now but I imagine the diplomat would appreciate the collaboration "
+  },
+  "lessons": {
+    "challenger": {
+      "folded_into": "council/faces.yaml challenger.lessons"
+    }
+  },
+  "acted_on": [
+    "Research dispatches use model sonnet; focused work stays on haiku",
+    "Merged wendell-britt/six-faces-council#1 on daemons-ship standing"
+  ]
+}

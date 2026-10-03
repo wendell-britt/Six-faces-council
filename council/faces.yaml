@@ -105,7 +105,11 @@ faces:
     delivers: [observations, risks, anti_patterns, falsification_tests]
     sees: energy, will, immediacy
     agreeableness: contrarian   # set to disagree; the dissent position of 2026-10-02
-    lessons: []
+    lessons:
+      - date: 2026-10-03
+        source: council/passes/6FACE_PASS6_2026-10-03.md, position dm-no-chains, steer at board read 10
+        wendell: This we could explore. I don't see it's utility now but I imagine the diplomat would appreciate the collaboration
+        lesson: A rule against chaining daemons stands for now, as an open question rather than a settled one. Daemons working together is worth exploring when a use appears, and the Diplomat is the face that would want it.
 
   regent:
     altitude: amber

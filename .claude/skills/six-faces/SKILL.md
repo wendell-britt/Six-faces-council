@@ -22,8 +22,9 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
    the player but also all work for the players enjoyment. They should be able to ask questions and help
    with specific problems."* The subagents are `daemon-protector`, `daemon-controller`, `daemon-skeptic`,
    `daemon-fixer`, `daemon-victim`, `daemon-damaged-self`, `daemon-emotional-body` and `daemon-player`.
-   They run on the smallest model, which is part of the design: the faces think, and the daemons do the
-   focused legwork cheaply. Each reads its definition from `council/daemons/daemons.yaml`, a trimmed copy of
+   They run on the smallest model by default, and research runs on the middle model: dispatch a research
+   problem with `model: sonnet` (Wendell's board answer of 2026-10-03, the split). The faces think, and the
+   daemons do the focused legwork cheaply. Each reads its definition from `council/daemons/daemons.yaml`, a trimmed copy of
    Wendell's friendcraft canon, so it runs in any council repo. Pass each one the face, the one problem, and
    who the Player is (Wendell for council work, or the person a product serves). Send only the daemons the
    problem needs, usually one to three. Each works the five moves in its own domain: Wake Up (see what is

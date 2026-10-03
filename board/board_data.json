@@ -1184,6 +1184,36 @@
     "decision": "stands",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)"
+   },
+   "daemons-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-no-chains": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-question-decision": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-quote-the-source": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-report-shape": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "dm-tokens": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
    }
   },
   "questions": {
@@ -1228,6 +1258,12 @@
     "label": "Help each face while it drafts",
     "recorded": "2026-10-02",
     "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)"
+   },
+   "daemon-model": {
+    "decision": "split",
+    "label": "Smallest for focused work, middle for research",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
    }
   },
   "causes": {
@@ -1370,6 +1406,11 @@
    "text": "On daemon-subagents-purpose: The daemons exist to solve problems in the faces domain. They are designed to protect the player but also all work for the players enjoyment. They should be able to ask questions and help with specific problems",
    "savedAt": "2026-10-02T23:45:55.300Z",
    "record": "council/ledger/2026-10-02-board-read-9.json"
+  },
+  {
+   "text": "On dm-no-chains: This we could explore. I don't see it's utility now but I imagine the diplomat would appreciate the collaboration",
+   "savedAt": "2026-10-03T00:04:51.972Z",
+   "record": "council/ledger/2026-10-03-board-read-10.json"
   }
  ],
  "steer_recorded_through": "2026-10-02T16:20:19.620Z"
