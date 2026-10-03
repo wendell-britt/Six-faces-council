@@ -717,6 +717,49 @@
    "pass": "friendcraft pass 7",
    "pos": "The deck's paraphrase test (SC-009) adds Wilhelm/Baynes and Liu to the texts it compares against, so the deck itself catches copied phrasing. This is built on your next board read unless you flip it.",
    "why": "The Skeptic found 13 of batch 1's 31 new lines closely paraphrase Wilhelm or Liu, and hexagram 6 copies Wilhelm word for word. SC-009 checks only bars-engine's own rendering, so the branch passed it. FR-010 is your rule. Source: friendcraft preproduction/6FACE_PASS7_2026-10-03.md"
+  },
+  {
+   "id": "gn-verify",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "guide next",
+   "auto": true,
+   "pos": "The council checks the Guide's before-print list against public sources now: the trigrams' Earlier Heaven placements, their yin and yang assignments, their Later Heaven elements, and the Shuo Gua's body correspondence for Duì, all in Legge, and the Clausewitz fog-of-war attribution. This stands unless you flip it.",
+   "why": "These are facts in public sources, not preferences, and checking them needs nothing from you. Source: the Guide's tab Council: What Next (2026-10-03), in the Art of War artifact."
+  },
+  {
+   "id": "gn-rule17",
+   "faces": [
+    "regent"
+   ],
+   "pass": "guide next",
+   "auto": true,
+   "pos": "The council runs rule 17's regression. The gate essays' grade lines and the Polarity section get rewritten to say which quadrant's test each claim meets, instead of judging practice by measurement. This stands unless you flip it.",
+   "why": "Rule 17 was written from your words of 2026-10-01, \"We use the models because they work,\" so applying it follows a ruling rather than making one. Source: the Guide's tab Council: What Next (2026-10-03), in the Art of War artifact."
+  },
+  {
+   "id": "gn-hold-template",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "guide next",
+   "auto": true,
+   "pos": "Part Three's Chapters 2 through 6 wait until you have read Chapter 1, Listening, which is the template they copy. The council drafts nothing that copies the template before then. This stands unless you flip it.",
+   "why": "Canonical prose is reserved to you, and four corrections this week each rippled across many tabs: Wood's lead in ten places, the second circle's order in four essays, guilt as a verdict in two tabs, and the builder's two layers. A template copied five times before you read it multiplies any correction by five. The Diplomat dissents: a hold may cost momentum the work runs on. Source: the Guide's tab Council: What Next (2026-10-03), in the Art of War artifact."
+  },
+  {
+   "id": "gn-ke-notes",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "guide next",
+   "auto": true,
+   "pos": "The council gathers research notes, not prose, for the five ke standoff moves in Chapter 4: each restraining edge, its compound, the Control and Generate routes, and the cost of each, from canon you have already ruled. This stands unless you flip it.",
+   "why": "Notes are not canonical prose, and Chapter 4 needs them whenever it is written. Source: the Guide's tab Council: What Next (2026-10-03), in the Art of War artifact."
   }
  ],
  "questions": [
@@ -1396,6 +1439,60 @@
      "v": "read",
      "label": "Read them as they are",
      "c": "The batches come to the board one at a time, as before."
+    }
+   ]
+  },
+  {
+   "id": "gn-proof",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "q": "Is the final proof edit of Mastering the Game of Allyship finished? The record from September says it blocks author copies, the backers' books, and launch events.",
+   "why_you": "Only you know where the proof stands, and the answer decides whether the book campaign's quests can be dated and whether the first circle can use the printed book.",
+   "not_before": "The workbench was drafted as if the book could print, and nobody checked that against the September record until this pass.",
+   "options": [
+    {
+     "v": "done",
+     "label": "It's done",
+     "c": "The council dates the backer fulfillment and the first circle pilot, and the book campaign moves from design to running."
+    },
+    {
+     "v": "close",
+     "label": "It's close, and I'll give a date",
+     "c": "The council holds the book campaign's dates until yours, and finishing the proof goes on Your steps as the first step."
+    },
+    {
+     "v": "stalled",
+     "label": "It's stalled",
+     "c": "The proof becomes the book campaign's first quest, and the Guide's drafting yields to it until it moves."
+    }
+   ]
+  },
+  {
+   "id": "gn-pilot",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "q": "Who is invited to the first paid circle you host? The eight people who answered the 2020 feedback questionnaire finished the course, said what helped, and one said support from people who had been through it was the biggest opportunity.",
+   "why_you": "Inviting named people and setting a price are reserved to you, and the answer decides who the circle kit is first tested on.",
+   "not_before": "The feedback was first read in this conversation, so the pilot had no candidates before today.",
+   "options": [
+    {
+     "v": "respondents",
+     "label": "The 2020 respondents first",
+     "c": "The pilot starts with people who know the method and can compare versions. Their words aren't used publicly without their consent."
+    },
+    {
+     "v": "open",
+     "label": "An open call to readers",
+     "c": "The pilot tests the kit on newcomers, which is who it is for, and the book campaign gains new mandate evidence."
+    },
+    {
+     "v": "both",
+     "label": "Respondents co-host, readers play",
+     "c": "The pilot tests the reader's path from Player to Game Master directly, with people who finished in 2020 helping to host people starting now."
     }
    ]
   }
