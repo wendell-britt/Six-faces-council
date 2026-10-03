@@ -2819,6 +2819,21 @@
     "label": "Stands, and friendcraft's rule changed too",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-23.json (six-faces-council)"
+   },
+   "lesson-board-not-chat": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+   },
+   "lesson-challenger-ladder": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+   },
+   "sd-autonomy-pass": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
    }
   },
   "questions": {
@@ -3042,6 +3057,12 @@
     "label": "In a weekly scheduled session, preparing the coming week",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+   },
+   "sd-daily": {
+    "decision": "daily",
+    "label": "Every day",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
    }
   },
   "causes": {

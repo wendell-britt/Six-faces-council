@@ -114,6 +114,10 @@ faces:
         source: council/passes/6FACE_PASS6_2026-10-03.md, position dm-no-chains, steer at board read 10
         wendell: This we could explore. I don't see it's utility now but I imagine the diplomat would appreciate the collaboration
         lesson: A rule against chaining daemons stands for now, as an open question rather than a settled one. Daemons working together is worth exploring when a use appears, and the Diplomat is the face that would want it.
+      - date: 2026-10-03
+        source: position sd-intervals overruled in chat, board read 22; lesson position lesson-challenger-ladder stood at board read 24
+        wendell: "The spaced repetition of deferrals should start with 1 hr to 6 hours to 24 hours to 3 days to a week to 2 weeks to a month"
+        lesson: A deferral can mean "not right now" as well as "not this month". The council set its spaced numbers in weeks, and his ladder starts at an hour.
 
   regent:
     altitude: amber
@@ -174,6 +178,10 @@ principles:   # Wendell's rulings on how the council works, held alongside the l
     source: chat, 2026-10-03
 
 council_lessons:   # rulings on sessions' output that bind every face; from friendcraft CLAUDE.md and the board
+  - date: 2026-10-03
+    wendell: "These questions shouldn’t be showing up here"
+    lesson: Every question for Wendell goes on the board, and a chat reply only says that the board has new rows. A session that writes a question in chat has skipped the reach test.
+    source: chat, 2026-10-03; lesson position lesson-board-not-chat stood at board read 24; home CLAUDE.md (#15) and friendcraft CLAUDE.md (#27) carry the rule
   - date: 2026-10-03
     wendell: "I'm blocked on this because I've been out of the practice too long. It seems we would need to go back and do the work again which I'm happy to do but this one is lower priority. We need to be able to defer projects so they don't get trapped on the board, but we are also collecting data about priority"
     lesson: When Wendell cannot take up a project yet, the council defers it with a return date, rather than leaving it open on the board or closing it, and asks nothing about it before that date. The ledger keeps every deferral, because the pattern of what he defers is data about priority.
