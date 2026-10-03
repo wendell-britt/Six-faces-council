@@ -1255,6 +1255,33 @@
      "c": "They stay in the archive. Main keeps its current oracle text."
     }
    ]
+  },
+  {
+   "id": "fc-binds-seven",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "q": "The binds lint pass is done, and there were fewer real hits than the council told you. Only 1 of the 30 was in a sentence a player reads. 23 sit inside the quoted Legge and Wilhelm translations, and the council left those as quoted. Say yes or no to the 7 fixes. The one a player reads, card 9, Restraint: before, \"You are following a rule you never checked, and it is still deciding things.\" After, \"You are following a rule you never checked, and it is still deciding what you do.\" The other six are internal notes: \"Observable in the message.\" became \"It is observable in the message.\", with the same change for the exchange and for card 46; \"Observable in the mismatch.\" became \"The mismatch is observable.\"; the shape label \"one organising thing\" became \"one organiser\"; and the file's note \"the one thing that did was his asking\" became \"what did stop them was his asking\".",
+   "why_you": "You read and kept these sentences, so a change to them is yours to approve.",
+   "not_before": "The council said last time that 30 player-facing sentences had hits. That was wrong: the card screen shows only the bind sentence. Pull request: https://github.com/wendell-britt/flirtcraft/pull/7",
+   "options": [
+    {
+     "v": "yes",
+     "label": "Yes to all seven, merge the binds",
+     "c": "The binds go live, and the storefront follows straight after, as you ruled."
+    },
+    {
+     "v": "bind-no",
+     "label": "Yes to the six notes, no to the card 9 change",
+     "c": "Card 9 keeps \"deciding things\". The rest merges, and the storefront follows."
+    },
+    {
+     "v": "hold",
+     "label": "Hold, I want to look first",
+     "c": "Nothing merges yet."
+    }
+   ]
   }
  ],
  "causes": [
