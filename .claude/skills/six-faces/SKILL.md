@@ -152,6 +152,38 @@ current, updated, or local because GitHub was unreachable. Commit synced files w
 - **A repo without the council gets it with** `python3 council/install.py <path>` run at home. That
   adds it to `council/repos.yaml`. Commit the new files in the target and merge them.
 
+## The editorial pass
+
+Wendell, 2026-10-03, on oracle rewrites that sessions had made: *"We need to revisit batch one and 2 now we have the
+game masters we can integrate the work with the editorial skill so we can teach why these changes aren't really good
+enough. A bit too mechanical and don't get at the essence of the problem"*. Friendcraft's pass seven
+(`preproduction/6FACE_PASS7_2026-10-03.md`) found why. Each of his rulings named a reader problem in one sentence. A
+session turned the ruling into a rate across the corpus, drove the rate down, and reported success, and the reader
+problem stayed.
+
+Run this pass on any edit to prose a reader reads, before it reaches him. The instruments are the house-voice skill's
+(`.claude/skills/house-voice/SKILL.md` and `reference.md`) and the no-ai-slop skill's. Each face owns one of them.
+
+| Face | Instrument | Daemon it may send |
+|---|---|---|
+| Shaman | Who is in it; the felt read of a person holding the page or card | Emotional Body |
+| Architect | The counters, as candidates only: every hit becomes a question for a reading | Controller |
+| Challenger | Strip the image; the source check against any text the prose may copy; what would show it false | Skeptic |
+| Regent | Wendell's rulings, each with the sentence it was about; the spec's obligations | Protector |
+| Diplomat | The ELI5 first; the stance pass's five questions; every change shown whole, before and after | Fixer |
+| Sage | One sentence on what the page or card tells the reader to do, and whether each edit serves it | none |
+
+- **A counter hit never closes an edit.** `SKILL.md` says it: *"A counter finds candidates; only a person approves
+  them."* A lint pass that fixes hits by rule is the failure this section exists to stop. On 2026-10-03 one turned
+  *"Danger."* into *"Danger is present."*
+- **A ruling travels with its sentence.** Quote the sentence Wendell was reading when he ruled. Applied without it, a
+  ruling becomes a rate.
+- **Done means the readings were run.** For each changed sentence: the ELI5 exists, the six diagnostic checks in
+  `reference.md` §2 are answered, the stance pass is answered, and Wendell sees the sentence whole. A clean lint is
+  necessary and never enough.
+- **The council writes no replacement prose of his unless he asks for it.** It diagnoses, and a deletion may be shown.
+  New wording is his, or it is a draft he asked for.
+
 ## The term pass
 
 Run it when Wendell asks for terms, when a pass coins a word, or when the harvest grows. The full
