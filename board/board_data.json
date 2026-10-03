@@ -1771,6 +1771,21 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+   },
+   "census-fix-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "stale-keep-list": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "cleanup-later": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
    }
   },
   "questions": {
@@ -1851,6 +1866,36 @@
     "label": "The council reviews each and proposes merge or retire",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+   },
+   "archive-method": {
+    "decision": "your-step",
+    "label": "You run one command from a computer",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "fc-front-door": {
+    "decision": "rebuild",
+    "label": "Bring it onto current main and show me a preview",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "fc-binds": {
+    "decision": "merge",
+    "label": "Merge it after its checks pass on a preview",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "fcm-exchange": {
+    "decision": "merge",
+    "label": "Merge it",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+   },
+   "fcm-oracle": {
+    "decision": "port",
+    "label": "Bring the oracle work onto current main",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
    }
   },
   "causes": {

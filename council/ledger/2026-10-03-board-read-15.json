@@ -1,0 +1,45 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-15",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "The archive method, four recent-branch proposals, the census fix, the keep list, and the later cleanups",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "questions": {
+    "archive-method": {
+      "choice": "your-step",
+      "saved_at": "2026-10-03T01:07:27Z"
+    },
+    "fc-front-door": {
+      "choice": "rebuild",
+      "saved_at": "2026-10-03T01:07:42Z"
+    },
+    "fc-binds": {
+      "choice": "merge",
+      "saved_at": "2026-10-03T01:08:19Z"
+    },
+    "fcm-exchange": {
+      "choice": "merge",
+      "saved_at": "2026-10-03T01:08:03Z"
+    },
+    "fcm-oracle": {
+      "choice": "port",
+      "saved_at": "2026-10-03T01:08:00Z"
+    }
+  },
+  "positions": {
+    "census-fix-ship": "stands",
+    "stale-keep-list": "stands",
+    "cleanup-later": "stands"
+  },
+  "acted_on": [
+    "Merged six-faces-council#5 (census fix)",
+    "A Your steps list: one command that archives and removes the 67 approved branches",
+    "friendcraft: merge the hosted exchange",
+    "flirtcraft: binds pull request with a preview, merged on Wendell's yes",
+    "flirtcraft: storefront rebuilt on current main, stacked on the binds work because they share five files",
+    "friendcraft: port the oracle rewrites onto current main"
+  ]
+}
