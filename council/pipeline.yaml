@@ -60,14 +60,14 @@ defer:
       Record one with python3 council/due.py record, which computes the date the way the board does.
   reweigh:
     when: >
-      once a week, in a scheduled session that starts fresh (Wendell, board question sd-when,
-      2026-10-03, "On its own"), and also at the start of every board read. Either way,
+      every day, in a scheduled session that starts fresh (Wendell, board questions sd-when,
+      "On its own", and sd-daily, "Every day", 2026-10-03), and also at the start of every board read. Either way,
       python3 council/due.py --ahead 7 lists what is due now or within the coming week, and what
       changed in each item's project since he deferred it (Wendell, 2026-10-03: "they should prepare
       items due in the coming week"). A week with nothing due ends there, with nothing written and
       nothing published. An item on a rung shorter than a week can come back before any run reaches
       it, and then it waits on the Open tab with a note until a session re-weighs it.
-    routine: "'Council: re-weigh due deferrals', Mondays 15:45 UTC"
+    routine: "'Council: re-weigh due deferrals', every day 15:45 UTC (board read 24, sd-daily)"
     how: each face casts and writes one line on what changed. The council recommends one of take it up,
       defer again, retire, or reshape the question. All of it is written onto the row as review, on main,
       before the item reaches the Open tab. When nothing changed, the review says so in one line.

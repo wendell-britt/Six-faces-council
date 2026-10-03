@@ -1,0 +1,43 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-24",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "Daily re-weigh, two lessons, and the autonomy pass",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "questions": {
+  "sd-daily": {
+   "choice": "daily",
+   "saved_at": "2026-10-03T19:29:39Z"
+  }
+ },
+ "positions": {
+  "lesson-board-not-chat": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:32:41Z"
+  },
+  "lesson-challenger-ladder": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:32:33Z"
+  },
+  "sd-autonomy-pass": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:32:13Z"
+  }
+ },
+ "steers": {
+  "sd-autonomy-pass": "We can always do research as “something new”\n\nThis is the wake up portion of the basic moves.\n\nWake up to new opportunities or work\n\nOpen up- find out what’s been abandoned in the larger work corpus \nClean up remove tech debt literally organizing things \n\nGrow up- increase out throughout or quality capacity- operating from higher levels \n\nShow up- ship finished work\n"
+ },
+ "not_read": "sm- rows (sm-moment, sm-act1-voices, sm-no-verdict, sm-reading-first, sm-report-gate, sm-show-in-fiction) belong to another session and are left to it.",
+ "lessons_recorded": [
+  "challenger: a deferral can mean not right now",
+  "council: questions go on the board, never in chat"
+ ],
+ "acted_on": [
+  "Routine trig_01M3SsNPPTDRts82YEu2uzox moved from Mondays to every day, 15:45 UTC",
+  "faces.yaml: one Challenger lesson, one council lesson",
+  "Pass nine convened on what the scheduled session may take up on its own, framed by his five moves"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-25",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "Pass nine's limits for the daily session",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "questions": {
+  "fm-repos": {
+   "choice": "home",
+   "saved_at": "2026-10-03T19:46:54Z"
+  }
+ },
+ "positions": {
+  "fm-rotation": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:47:01Z"
+  },
+  "fm-limits": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:47:08Z"
+  },
+  "fm-after-16": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:48:17Z"
+  },
+  "fm-one-row": {
+   "choice": "overrule",
+   "saved_at": "2026-10-03T19:48:11Z"
+  }
+ },
+ "steers": {
+  "fm-one-row": "I think we should increase the amount over time as a function of how much we trust the agent to pick up useful work on its own and in alignment with ecological token usage. This is essentially a level progression. More skillful agents get more capacity and resource "
+ },
+ "overruled": [
+  "fm-one-row"
+ ],
+ "finding": "A session's token use and cost are readable after a run: get_session returns usage (input, output and cache tokens, cost_usd). This session read its own at 2026-10-03T19:48Z: 2,472,086 input tokens, 1,755,283 output tokens, 484,610,743 cache-read tokens, $182.23 over two days.",
+ "acted_on": [
+  "fm-repos: the daily session works in the council's home repo only",
+  "fm-one-row replaced by proposal fm-levels, with lesson position lesson-diplomat-levels"
+ ]
+}

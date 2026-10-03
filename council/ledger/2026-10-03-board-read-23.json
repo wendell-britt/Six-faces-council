@@ -1,0 +1,25 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-23",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "Why questions reached Wendell in chat, and the rule that stops it",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "positions": {
+  "home-claude-md": {
+   "choice": "stands",
+   "answered_in": "chat",
+   "wendell": "This process also superseded friendcraft so we need to change that rule there too"
+  }
+ },
+ "steers": {
+  "home-claude-md": "This process also superseded friendcraft so we need to change that rule there too"
+ },
+ "cause_found": "The board rule reached the session only through the session-start hook and the skill. friendcraft's CLAUDE.md, loaded every turn, ended each reply with the ask stated as a question. The long session's summary kept friendcraft's rule and dropped the board's. Five questions reached him in chat.",
+ "acted_on": [
+  "six-faces-council #15 merged (259e68b): home CLAUDE.md with the board rule",
+  "friendcraft-manuacript #27 merged (37f55f6): CLAUDE.md's reporting rule now sends questions to the board; decision log entry"
+ ]
+}

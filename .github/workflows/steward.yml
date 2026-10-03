@@ -1,0 +1,35 @@
+# Keeps open pull requests up to date with main, checks them, and merges the ones labelled "automerge".
+# See docs/merging.md.
+name: steward
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, ready_for_review]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  statuses: write
+concurrency:
+  group: steward
+  cancel-in-progress: false
+jobs:
+  steward:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+      - run: python3 -m pip install --quiet pyyaml
+      # Runs main's copy of the steward, so a pull request cannot change what the steward does to other
+      # branches. Until this workflow has reached main there is nothing to run.
+      - run: |
+          if [ -f .github/scripts/steward.py ]; then python3 .github/scripts/steward.py
+          else echo "main has no steward yet; nothing to do"; fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

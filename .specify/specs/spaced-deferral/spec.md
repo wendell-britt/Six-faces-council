@@ -130,5 +130,5 @@ Lessons carry only a date, so a lesson from the same day is marked "same day".
 - [x] `council/pipeline.yaml` and both skills say a session runs `due.py` at every board read and re-weighs each
   due item before it reaches him.
 - [x] Ships as board position `sd-ship`. It stood at board read 21, and the PR merged.
-- [x] The weekly session is scheduled: "Council: re-weigh due deferrals", Mondays 15:45 UTC.
+- [x] The weekly session is scheduled: "Council: re-weigh due deferrals", every day at 15:45 UTC (Mondays until board read 24).
 - [ ] The first real re-weigh, the oracle drafts on 2026-11-03, is recorded here.
