@@ -1,0 +1,18 @@
+{
+ "id": "2026-10-03-standing-session-first-run",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "daily-move",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "findings": [
+  "Firing a routine by hand (fire_trigger) starts a fresh session even when the routine wakes a standing session; that session (session_013RW73YRXo4HZu2DWsaQGns) had no repo and stopped after 30 seconds, $0.13.",
+  "The standing session ran the daily instructions when sent them directly at 21:23 UTC: Wake up, research note in #21, row dy-2026-10-03-wake, every limit held.",
+  "It recorded its cost as $0.41 from get_session mid-turn; its result event shows $2.21 on claude-opus-5-5, plus $0.34 checking #21. The record is corrected.",
+  "A routine that wakes a standing session can have its instructions changed only from inside that session, so the routine was replaced: trig_01F8fDdkjYEeMCfdozj6w3tt replaces trig_01AzRP3ka2LTd6Vkqqnq9DtH, same schedule and session, and no longer asks the run to record its own cost.",
+  "The fix to where cost is read (pipeline.yaml five_moves, daily.py) rides #20."
+ ],
+ "board_rows": [
+  "dy-model"
+ ]
+}
