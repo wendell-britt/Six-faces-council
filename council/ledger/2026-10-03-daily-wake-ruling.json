@@ -1,0 +1,19 @@
+{
+ "id": "2026-10-03-six-faces-council-daily-wake-ruling",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "daily-move",
+ "question": "The first Wake up run's research note (pull request #21)",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "positions": {
+  "dy-2026-10-03-wake": {
+   "choice": "stands",
+   "answered_in": "chat",
+   "wendell": "Merge pr 21"
+  }
+ },
+ "acted_on": [
+  "six-faces-council #21 marked ready and merged (79eb47a) by the standing daily session on his word; steward green on e95efbc"
+ ]
+}
