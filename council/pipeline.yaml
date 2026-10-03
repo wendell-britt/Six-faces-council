@@ -67,7 +67,7 @@ defer:
       items due in the coming week"). A week with nothing due ends there, with nothing written and
       nothing published. An item on a rung shorter than a week can come back before any run reaches
       it, and then it waits on the Open tab with a note until a session re-weighs it.
-    routine: "'Council: daily re-weigh and move', every day 15:45 UTC (board read 24, sd-daily; the move step from board read 27)"
+    routine: "'Council: daily re-weigh and move', every day 15:45 UTC, waking the standing session session_011mcRZ4vDnnis99dnptvdmu (board read 28, dy-access)"
     how: each face casts and writes one line on what changed. The council recommends one of take it up,
       defer again, retire, or reshape the question. All of it is written onto the row as review, on main,
       before the item reaches the Open tab. When nothing changed, the review says so in one line.

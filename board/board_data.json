@@ -1217,6 +1217,17 @@
    "auto": false,
    "pos": "Looks for roles such as healer, elder and hunter may be built from the character parts. Named characters and each village's own buildings wait on you and the story.",
    "why": "Anything that names a person is reserved (council/faces.yaml). Each village's own pieces are designed with its story (docs/generators-plan.md, \"A village's own pieces\"). Source: sprout docs/maker-and-hall/6FACE_PASS5_2026-10-03.md (branch claude/project-thread-f7m3zi)"
+  },
+  {
+   "id": "dy-research-handoff",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "daily",
+   "auto": true,
+   "pos": "Research the cloud cannot reach goes to your Mac through the handoff queue another session is building (the steps list \"Handoffs: check the bridge from your phone to your Mac\"). Once that bridge works, a Wake up run that hits a blocked source or a login adds the research to the queue, and a session on your Mac, with your browser and logins, finishes it. The council builds nothing for this before the bridge passes its own check. This stands unless you flip it.",
+   "why": "Your steer on dy-network: \"Sounds like we need a way to push research to environments that have access to the browser and my credentials\". Building on the existing bridge keeps one route between your phone and your Mac. Source: council/ledger/2026-10-03-board-read-28.json (six-faces-council)"
   }
  ],
  "questions": [
@@ -3505,6 +3516,18 @@
     "label": "Now, as the next maker task",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+   },
+   "dy-access": {
+    "decision": "standing",
+    "label": "One standing session, woken each day",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-28.json (six-faces-council)"
+   },
+   "dy-network": {
+    "decision": "allow",
+    "label": "Allow research sites (on your steps tab)",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-28.json (six-faces-council)"
    }
   },
   "causes": {
