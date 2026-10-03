@@ -3059,6 +3059,21 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "mh4-map-feel": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+   },
+   "mh4-map-order": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+   },
+   "mh4-map-verifier": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
    }
   },
   "questions": {
@@ -3306,6 +3321,12 @@
     "label": "Halloran for Earth, Brannock for Fire",
     "recorded": "2026-10-03",
     "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "mh4-map-when": {
+    "decision": "now",
+    "label": "Now, as the next maker task",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
    }
   },
   "causes": {
