@@ -8,9 +8,9 @@ CLAUDE.md, this file and the board.
 
 - **The board** (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) waits on Wendell for: `dy-model`,
   `dy-limit-wording` (#20), `dy-research-handoff`, `dy-2026-10-03-wake` (#21), `cost-quiet-wakes`,
-  `cost-daily-script`, `cost-per-row`, `cost-short-rule` (#22) and `cost-jev`. Read the store for answers saved
+  `cost-daily-script`, `cost-per-row`, `cost-short-rule` (#24) and `cost-jev`. Read the store for answers saved
   after 2026-10-03T22:40Z, record them in a ledger record, and republish.
-- **Pull requests:** #20, #21 and #22 wait only on Wendell's ruling and the steward. Merge none; add the
+- **Pull requests:** #20, #21 and #24 wait only on Wendell's ruling and the steward. Merge none; add the
   `automerge` label only when he says to merge.
 - **The daily session:** routine `trig_01F8fDdkjYEeMCfdozj6w3tt` wakes the standing session
   `session_011mcRZ4vDnnis99dnptvdmu` at 15:45 UTC. 2026-10-04 is the first scheduled wake; check whether it reached
