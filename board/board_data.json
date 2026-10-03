@@ -2367,6 +2367,13 @@
     "label": "Draft the 19 as full sentences for me to read",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)"
+   },
+   "fcm-oracle-drafts": {
+    "decision": "deferred",
+    "until": "2026-11-03",
+    "label": "Deferred: lower priority, and the work needs redoing once he is back in practice",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-20.json (six-faces-council)"
    }
   },
   "causes": {
