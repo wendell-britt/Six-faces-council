@@ -114,6 +114,24 @@ do not run it; `scope` in the file says which is which.
 6. **Ship.** A feature whose gates pass goes on the board as a position that merges on the next board read
    unless he flips it. A feature that touches a reserved item ships only on a board question he answers.
 
+## Sense and respond, transcend and include
+
+Wendell, 2026-10-03: *"Sense and respond is one of the principles we want to hold in addition to transcend and
+include. This practically means doing work in parallel that's responding to an emergent need and to keep the
+work from the lower level as we move to higher levels. This will make the work more inclusive and the handoffs
+from colliding."* Both are in `council/faces.yaml` under `principles`, and the working rules are `strands` and
+`transcend_and_include` in `council/pipeline.yaml`.
+
+- **Sense first.** Before a pass picks work in a repo, run `python3 council/strands.py` there and read each open
+  strand's latest commits. Main is not the whole picture: on 2026-10-03 the council chose root-game work that an
+  open branch had already moved past, because it read only main.
+- **Respond in parallel.** A need found mid-work becomes its own strand, with its own branch, small spec, ledger
+  record and declared files. The finding is stated where it was found, and the fix lives in the new strand.
+- **No collisions.** Two strands that touch the same file are sequenced. `strands.py --touch <files>` checks a
+  planned strand before it starts. Board data, ledger records and lessons are written on main only.
+- **Keep the lower level.** A later version keeps the earlier one's record; superseded work is retired with its
+  reason, never deleted; a corrected figure sits beside its original.
+
 ## One home, every repo
 
 The council has one home: the repo named in `council/source.txt`, `wendell-britt/six-faces-council` since 2026-10-02.

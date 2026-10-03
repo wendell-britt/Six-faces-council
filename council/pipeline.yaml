@@ -99,3 +99,26 @@ stages:
     owners: [sage]
     produces: a ledger record, tasks.md ticked, lessons_pending for anything he ruled
     gate: Every face's contribution is named, and the dissent is listed.
+
+# Sense and respond, and transcend and include (Wendell, 2026-10-03; council/faces.yaml principles).
+strands:
+  what: >
+    A strand is one unit of work with its own branch, its own small spec, its own ledger record, and a declared fork
+    space: the files it may touch. The name and idea come from bars-engine's BARS Strand System.
+  emergent_need: >
+    When work finds a need it was not about (a broken setting, a wrong figure, a missing tool), the need becomes its
+    own strand, started in parallel. The finding is stated where it was found; the fix lives in the new strand.
+  branch: strand/<name>, or feature/<name> for a feature that runs the full pipeline
+  fork_space: >
+    Declared when the strand starts, as the files it may touch. Before a strand starts, run
+    python3 council/strands.py in the repo: any overlap with an open strand's files is sequenced, never run at once.
+  the_record_lives_on_main: >
+    Board data, ledger records and lessons are written on main, never on a strand's branch, because they are shared
+    by every strand. A strand's branch carries only its own work.
+  handoff: Each strand's pull request says what it touches, what it depends on, and what it found but left for another strand.
+
+transcend_and_include:
+  versions: A design's later version keeps the earlier version's section in its spec, with what it got wrong.
+  retire_not_delete: Superseded positions, terms and files are retired with their reason and date, and kept readable.
+  keep_the_original: A corrected figure is written beside the original and its window or setting, never over it.
+  synthesis: The Sage names what the synthesis keeps from each face, and which face's work it set down and why.

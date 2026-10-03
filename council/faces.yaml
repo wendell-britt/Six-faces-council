@@ -159,6 +159,20 @@ faces:
           ruling before synthesising. The intake synthesis rested on "the card text is already
           public" after Wendell had ruled the subscription sells the cards.
 
+principles:   # Wendell's rulings on how the council works, held alongside the lens-not-ladder standing
+  - name: transcend and include
+    wendell: to keep the work from the lower level as we move to higher levels
+    means: >
+      A later version keeps the earlier one's record visible. A synthesis names what it keeps from each face. Superseded
+      work is retired with its reason, never deleted. A corrected figure sits beside the original it corrects.
+  - name: sense and respond
+    wendell: Sense and respond is one of the principles we want to hold in addition to transcend and include. This practically means doing work in parallel that's responding to an emergent need
+    means: >
+      A need that emerges mid-work gets its own strand and runs in parallel. It is never folded into the work that found
+      it, and it never stops that work.
+    why: This will make the work more inclusive and the handoffs from colliding
+    source: chat, 2026-10-03
+
 council_lessons:   # rulings on sessions' output that bind every face; from friendcraft CLAUDE.md and the board
   - date: 2026-10-02
     wendell: The daemons exist to solve problems in the faces domain. They are designed to protect the player but also all work for the players enjoyment. They should be able to ask questions and help with specific problems
