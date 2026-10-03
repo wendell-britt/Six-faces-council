@@ -29,4 +29,10 @@ files, for the owning session to resolve.
 A session pushing to a branch the steward has updated gets a rejected push. It runs
 `git pull --no-rebase origin <branch>` and pushes again.
 
-Merging into main stays with Wendell.
+## Merging into main: Wendell's label
+
+Wendell ruled on 2026-10-03 ("On your label"): a pull request merges into main when it carries the
+`automerge` label, is not a draft, and its steward checks pass. The steward then merges it with a merge
+commit and brings the other open branches up to the new main. Adding the label is Wendell's yes.
+A session adds it only when he says to merge that pull request, and never on its own judgement.
+Without the label, a pull request waits for Wendell to merge it by hand.

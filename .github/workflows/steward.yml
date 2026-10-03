@@ -1,10 +1,11 @@
-# Keeps open pull requests up to date with main and checks them. Merging into main stays with Wendell.
+# Keeps open pull requests up to date with main, checks them, and merges the ones labelled "automerge".
+# See docs/merging.md.
 name: steward
 on:
   push:
     branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
+    types: [opened, synchronize, reopened, labeled, ready_for_review]
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:

@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Keep every open pull request mergeable with main.
+"""Keep every open pull request mergeable with main, and merge the ones Wendell has labelled.
 
 Runs in the steward workflow (.github/workflows/steward.yml). For each open pull request whose branch
 lives in this repo:
 1. If main has moved ahead, merge main into the branch with a merge commit (never a rebase), using the
    merge drivers in .gitattributes, rebuild the board page if the repo has one, and push.
 2. Run the checks and post the result as the "steward" commit status on the branch head.
-Merging into main stays with Wendell. If main cannot be merged in cleanly, the branch is left untouched
+3. If the pull request carries the "automerge" label, is not a draft, and the checks pass, merge it with
+   a merge commit. The label is Wendell's yes (his ruling, 2026-10-03: "On your label"); a session adds it
+   only when he says to merge. If main cannot be merged in cleanly, the branch is left untouched
 and the pull request gets one comment naming the files, for the session that owns the branch to resolve.
 """
 import json
@@ -16,6 +18,7 @@ import sys
 
 REPO = os.environ["GITHUB_REPOSITORY"]
 CONFLICT_MARK = "<!-- steward:conflict -->"
+LABEL = "automerge"
 
 
 def sh(*args, check=True):
@@ -76,6 +79,7 @@ def note_conflict(number, files):
 
 
 def tend(pr):
+    """Bring one pull request up to date, check it, and merge it if labelled. Returns True if merged."""
     head = pr["headRefName"]
     sh("git", "fetch", "-q", "origin", "main", head)
     sh("git", "checkout", "-q", "-B", "steward-work", f"origin/{head}")
@@ -89,18 +93,26 @@ def tend(pr):
             print(f"#{pr['number']}: conflict in {files}")
             note_conflict(pr["number"], files or ["(unknown)"])
             set_status(pr["headRefOid"], [f"main does not merge cleanly: {', '.join(files)}"])
-            return
+            return False
         if os.path.exists("board/build_board.py"):
             sh("python3", "board/build_board.py")
             sh("git", "add", "board/council-board.html")
             sh("git", "commit", "-q", "--amend", "--no-edit")
         if sh("git", "push", "-q", "origin", f"HEAD:{head}", check=False).returncode:
             print(f"#{pr['number']}: branch moved while merging; the next run picks it up")
-            return
+            return False
         print(f"#{pr['number']}: merged main into {head}")
+    sha = sh("git", "rev-parse", "HEAD").stdout.strip()
     problems = checks()
-    set_status(sh("git", "rev-parse", "HEAD").stdout.strip(), problems)
+    set_status(sha, problems)
     print(f"#{pr['number']}: {'; '.join(problems) or 'checks pass'}")
+    if LABEL in {l["name"] for l in pr["labels"]} and not pr["isDraft"] and not problems:
+        r = sh("gh", "pr", "merge", str(pr["number"]), "--merge", "--match-head-commit", sha, check=False)
+        if r.returncode == 0:
+            print(f"#{pr['number']}: merged into main")
+            return True
+        print(f"#{pr['number']}: merge refused: {r.stderr.strip()}")
+    return False
 
 
 def main():
@@ -115,14 +127,24 @@ def main():
     if os.path.exists(".gitattributes"):
         sh("cp", ".gitattributes", os.path.join(sh("git", "rev-parse", "--git-dir").stdout.strip(), "info", "attributes"))
     sh("git", "config", "merge.ours.driver", "true")
-    prs = gh_json("pr", "list", "--state", "open", "--json", "number,headRefName,headRefOid,isCrossRepository")
-    for pr in sorted(prs, key=lambda p: p["number"]):
-        if pr["isCrossRepository"]:
-            continue
-        try:
-            tend(pr)
-        except RuntimeError as e:
-            print(f"#{pr['number']}: {e}", file=sys.stderr)
+    sh("gh", "label", "create", LABEL, "--color", "0e8a16", "--force",
+       "--description", "Wendell's yes: the steward merges this once its checks pass", check=False)
+    # A merge moves main, and a push or merge made by this workflow starts no new run, so after each
+    # merge go round again to bring the other branches up to the new main.
+    for _ in range(10):
+        prs = gh_json("pr", "list", "--state", "open", "--json", "number,headRefName,headRefOid,isDraft,labels,isCrossRepository")
+        merged = False
+        for pr in sorted(prs, key=lambda p: p["number"]):
+            if pr["isCrossRepository"]:
+                continue
+            try:
+                if tend(pr):
+                    merged = True
+                    break
+            except RuntimeError as e:
+                print(f"#{pr['number']}: {e}", file=sys.stderr)
+        if not merged:
+            return
 
 
 if __name__ == "__main__":
