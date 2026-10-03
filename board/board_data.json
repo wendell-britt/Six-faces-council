@@ -427,6 +427,47 @@
    "auto": true,
    "pos": "The daemon subagents merge on your next board read unless you flip this. While a face drafts, it can send one to three daemons to work a specific problem in its domain, for the Player. Each one says what it sees, what it would do, what it protects you from and makes more enjoyable, its questions, and where it would overreach.",
    "why": "Your answer on the board, and its test passed: a blind judge matched four daemon outputs on the deploy-alert problem to the right daemons, and each proposed a move the others did not. Nothing touches a reserved item. Source: .specify/specs/daemon-subagents/spec.md (six-faces-council, pull request)"
+  },
+  {
+   "id": "dm-report-shape",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Every daemon report uses fixed headings (the five moves, For the Player, questions, overreach, Sources), and a script checks the headings and links before the face reads it. A failing report goes back once.",
+   "why": "The smallest model dropped the moves once and the links once. The Sage's research: judge outside the daemon. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-no-chains",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "No daemon hands work to another. The face reads every report itself.",
+   "why": "The Skeptic's research on handoff failures in multi-agent pipelines; the design already works this way. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-question-decision",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Each daemon question names the decision its answer would change, so the face can run the reach test on it in one step.",
+   "why": "HiL-Bench: agents are poor at deciding when to ask. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
+  },
+  {
+   "id": "dm-tokens",
+   "faces": [
+    "architect"
+   ],
+   "pass": "6",
+   "auto": true,
+   "pos": "Every pass record carries the subagents' token count, so the saving from the smaller model can be shown, not assumed.",
+   "why": "Each research daemon used about 64,000 to 73,000 tokens tonight. Source: council/passes/6FACE_PASS6_2026-10-03.md (six-faces-council, pull request #1)"
   }
  ],
  "questions": [
@@ -622,6 +663,33 @@
      "v": "stop",
      "label": "Stop here",
      "c": "The agent files stay on their branch and nothing else changes."
+    }
+   ]
+  },
+  {
+   "id": "daemon-model",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "q": "The daemons ran their research on the smallest model and failed the citation test I set first: 15 of 21 checked citations held up, where 17 were needed. No source was invented. One report left out its links, and one left out the five moves. How should the daemons run?",
+   "why_you": "It trades your money against reliability, and the lower-model scheme is yours.",
+   "not_before": "The test ran tonight.",
+   "options": [
+    {
+     "v": "small-plus-check",
+     "label": "Keep the smallest model, with the check and one retry",
+     "c": "Cheapest. A report that fails the shape or link check goes back once. The test reruns on the next research pass."
+    },
+    {
+     "v": "middle",
+     "label": "Move to the middle model",
+     "c": "The fix I set before the test. About three times the price per token, and the test reruns."
+    },
+    {
+     "v": "split",
+     "label": "Smallest for focused work, middle for research",
+     "c": "Research needs links and gets the middle model; a problem inside the repo stays cheap."
     }
    ]
   }

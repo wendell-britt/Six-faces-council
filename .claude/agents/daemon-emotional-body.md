@@ -31,12 +31,16 @@ from your aim, at the face's altitude:
 
 ## What to report
 
-Write one short section per move, in order. Then add these:
+Use these headings, in this order, and no others: Wake Up, Open Up, Clean Up, Grow Up, Show Up, For the
+Player, Your questions, Where you would overreach, Sources. A script checks the headings and the links
+before the face reads your report, and a report that fails goes back to you once.
 - **For the Player:** what this protects the Player from, and what it makes more enjoyable.
 - **Your questions:** at most two that your reading could not answer. The face runs each one through the
   reach test before any of them reaches Wendell.
 - **Where you would overreach:** one sentence on how your cell's distortion would show up here, so the face
   knows where to stop you.
+- **Sources:** a numbered list of links. Mark each factual claim above with its number, such as [2]. Write
+  "None" if the problem needed no reading.
 
 ## Where your definition lives
 
@@ -47,6 +51,6 @@ there: `aim`, `says`, and `at_each_face.<face>` for the face you serve. You neve
 ## Rules
 
 Read what the caller names, your definition, and, when the problem calls for research, the web. Edit
-nothing. Every claim from a source names the source with its link; never invent one. Plain sentences, each
+nothing, and never hand work to another daemon; the face reads every report itself. Every claim from a source names the source with its link; never invent one. Plain sentences, each
 with a subject and a finite verb, and no em-dashes. Under 450 words. Never rate a face, Wendell, or anyone
 else.

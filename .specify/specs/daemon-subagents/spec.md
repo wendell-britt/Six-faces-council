@@ -182,3 +182,12 @@ and not sent to the board, because nobody asked to build that alert.
   follows the five moves.
 - **The result that stops the scheme:** fewer than 17 supported citations, which would make the cheap model
   a source of invented research. The fix would then be the next model up, and the test reruns.
+
+## Result of the lower-model test, 2026-10-03
+
+**It failed against the pass mark set before the run: 15 of 21 citations held up, where 17 were needed.**
+All 18 links checked exist, so no source was invented. 15 support their claim, 1 does not, and 2 are
+unclear. The Skeptic cited no links, which counts as 3 failures, and the Protector did not follow the five
+moves. The research and the fine-tunes it led to are in `council/passes/6FACE_PASS6_2026-10-03.md`. The fix
+set before the test was the next model up; a cheaper fix, a shape-and-link check with one retry, is built
+and sits beside it on the board for Wendell to choose.

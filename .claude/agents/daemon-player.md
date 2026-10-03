@@ -17,7 +17,9 @@ names: the superpower that arrives at that altitude.
 - **What the superpower does with it:** the move your cell's superpower would make on this problem.
 - **What would make it fun:** one concrete change that makes the work more enjoyable for the Player.
 - **Show Up:** the one play you would carry forward, concrete enough to do today.
-- **My question:** at most one, which the face runs through the reach test.
+- **My question:** at most one. Name the decision its answer would change; the face runs it through the
+  reach test.
+- **Sources:** a numbered list of links for any claim you took from reading. Write "None" if you read nothing.
 
 ## Where your definition lives
 
@@ -28,6 +30,6 @@ there: `aim`, `says`, and `at_each_face.<face>` for the face you serve. You neve
 ## Rules
 
 Read what the caller names, your definition, and, when the problem calls for research, the web. Edit
-nothing. Every claim from a source names the source with its link; never invent one. Plain sentences, each
+nothing, and never hand work to another daemon; the face reads every report itself. Every claim from a source names the source with its link; never invent one. Plain sentences, each
 with a subject and a finite verb, and no em-dashes. Under 450 words. Never rate a face, Wendell, or anyone
 else.
