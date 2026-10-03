@@ -1,0 +1,39 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-28",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "How the daily session gets repo access and network reach",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "questions": {
+  "dy-access": {
+   "choice": "standing",
+   "saved_at": "2026-10-03T20:42:18Z"
+  },
+  "dy-network": {
+   "choice": "allow",
+   "saved_at": "2026-10-03T20:43:02Z"
+  }
+ },
+ "positions": {
+  "fm-build": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T20:41:08Z",
+   "note": "already merged by him at 20:17Z"
+  }
+ },
+ "steers": {
+  "dy-network": "Sounds like we need a way to push research to environments that have access to the browser and my credentials "
+ },
+ "not_read": "mh5- rows belong to another session and are left to it.",
+ "related": "Steps list chat-handoff (another session's, game-masters-guide) builds a handoff queue from his phone to his Mac through Dispatch. Research that needs his browser and logins should use that bridge rather than a second one.",
+ "acted_on": [
+  "Standing session session_011mcRZ4vDnnis99dnptvdmu created with the home repo attached",
+  "Steps list council-research-network on the Your steps tab: add en.wikipedia.org, arxiv.org and supermemo.guru to the environment's allowed domains",
+  "Routine trig_01AzRP3ka2LTd6Vkqqnq9DtH wakes the standing session every day at 15:45 UTC",
+  "Routine trig_01M3SsNPPTDRts82YEu2uzox disabled and kept, with its first run's record",
+  "The standing session's first check found the daily limits' 'never merge into main' read against CLAUDE.md's 'board data on main'. The routine's instructions now say it means never merge a pull request."
+ ]
+}
