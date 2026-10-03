@@ -1,0 +1,28 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-21",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "Spaced deferral: when the council re-weighs",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "questions": {
+  "sd-when": {
+   "choice": "weekly",
+   "answered_in": "chat",
+   "wendell": "On its own"
+  }
+ },
+ "positions": {
+  "sd-ship": "stands",
+  "sd-intervals": "stands",
+  "sd-review": "stands"
+ },
+ "note": "He answered sd-when in chat; the store held no saves after 18:23Z, so the three positions stood unflipped.",
+ "acted_on": [
+  "six-faces-council #13 merged (1bea6e8)",
+  "Routine trig_01M3SsNPPTDRts82YEu2uzox, 'Council: re-weigh due deferrals', Mondays 15:45 UTC, a fresh session each run. It stores no connectors; it uses only built-in tools and git.",
+  "The safety-net check-in on #13 was cancelled when it merged"
+ ]
+}

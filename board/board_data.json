@@ -2625,6 +2625,21 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "sd-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
+   },
+   "sd-intervals": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
+   },
+   "sd-review": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
    }
   },
   "questions": {
@@ -2842,6 +2857,12 @@
     "label": "Half the playtesters see it",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+   },
+   "sd-when": {
+    "decision": "weekly",
+    "label": "In a weekly scheduled session",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
    }
   },
   "causes": {
