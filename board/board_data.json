@@ -2947,6 +2947,26 @@
     "label": "Overruled: capacity grows by level",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+   },
+   "sm-no-verdict": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-reading-first": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-report-gate": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-show-in-fiction": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
    }
   },
   "questions": {
@@ -3182,6 +3202,18 @@
     "label": "Only the council's home repo, for now",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+   },
+   "sm-moment": {
+    "decision": "fire-hearing",
+    "label": "Draft: a Fire player who takes hears Elder Calloway at the hearing",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+   },
+   "sm-act1-voices": {
+    "decision": "halloran-brannock",
+    "label": "Halloran for Earth, Brannock for Fire",
+    "recorded": "2026-10-03",
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
    }
   },
   "causes": {
