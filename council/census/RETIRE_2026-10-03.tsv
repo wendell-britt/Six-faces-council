@@ -1,0 +1,69 @@
+# Branches Wendell approved for retiring: board read 14 (census-landed) and board read 15 (stale-keep-list stands).
+# repo<TAB>branch<TAB>commit it must still point at<TAB>why
+johnair01/bars-engine	fix/bars-core-face-meta-lockstep	cae9510d380064220564016ff92f82eee57f89e5	landed: its work is already in main
+johnair01/bars-engine	fix/bars-core-face-trigram-guard	9e2002d88565d393619d820ca5a99d23f81fd95b	landed: its work is already in main
+johnair01/bars-engine	fix/gm-face-union-sweep	bee9ad3bd29d45d70b9f3298258889fc8000c078	landed: its work is already in main
+johnair01/bars-engine	fix/gm-face-meta-consolidation	bda40b7f01c6c3585f523a7b6be3e103ead856e9	landed: its work is already in main
+johnair01/bars-engine	fix/scene-gmvoice-canonical-faces	4aa2cfeceda6b5a58c94447354d58e4380666cd5	landed: its work is already in main
+johnair01/bars-engine	fix/gm-face-trigram-consistency	42276633bf69ca968b3c5bde9b50792382d95c08	landed: its work is already in main
+johnair01/bars-engine	fix/quiz-face-vs-superpower-copy	7681ddd82f2657a86e11fad322f6bb130ef1112b	landed: its work is already in main
+johnair01/bars-engine	claude/day-13-course-content-aw1kah	8be119cbf96464f024c8e3e63301420615d40419	landed: its work is already in main
+johnair01/bars-engine	claude/vitest-registration-guard	5376a65ad29eeeb3b9a0aca5d00f3b961d0764cc	landed: its work is already in main
+johnair01/bars-engine	codex/day11-resource-ledger	e1f9d4562aab3f9e2028746cb2cf1e837d3004c4	landed: its work is already in main
+johnair01/bars-engine	feat/mtgoa-day11-starting-hand	203c2a5e04ac62c30f12d2914ada89c0e0b8ca38	landed: its work is already in main
+johnair01/bars-engine	feat/mtgoa-day10-campaign-handoff	ad566c3d707785d60f4c35f188359a6195e6026c	landed: its work is already in main
+johnair01/bars-engine	feat/mtgoa-day8-bottleneck-321	637f95de09614ebe558f1d981e6af46b4e49b5ac	landed: its work is already in main
+johnair01/bars-engine	fix/day6-test-strings	6586218a7309d542883e899359a8c1e9825a14ef	landed: its work is already in main
+johnair01/bars-engine	codex/day6-wake-up-design	3e3aff730a1e9fdcacb4d0dfa3c0ef4903938b5e	landed: its work is already in main
+johnair01/bars-engine	codex/mtgoa-organization-network	d58bb193c98635a19795870fe9048a591250d1a4	landed: its work is already in main
+johnair01/bars-engine	codex/mtgoa-course-og-images	4a0402c2ca79f1e20930ed644971539b1fccd563	landed: its work is already in main
+johnair01/bars-engine	codex/mtgoa-daily-drip-banner	5739ea767c6060cf27bc8038c8b99b12e6c0b314	landed: its work is already in main
+johnair01/bars-engine	codex/mtgoa-server-clock-label	128ac642c9644ab1bafdb437e4523a5872fde94e	landed: its work is already in main
+johnair01/bars-engine	codex/mtgoa-clean-up-check	71bc2df4a3faf5e978b7d70e422de506c7606763	landed: its work is already in main
+johnair01/bars-engine	codex/mtgoa-course-gating	e08e9383f23eba6450433e2bb7ff23fa5f52cb94	landed: its work is already in main
+johnair01/bars-engine	codex/mtgoa-week-two	54187e46740dbb484b6f00a2b9f45c040a41e7ff	landed: its work is already in main
+johnair01/bars-engine	codex/open-up-design-handoff	0d8971cf6f45bf3f9e7a0381c8791229ecb16ae6	landed: its work is already in main
+johnair01/bars-engine	feat/ally-universal-minimum	a5f10e5603c0eed2b51ed93eaa5560a5fb5f261b	landed: its work is already in main
+johnair01/bars-engine	fix/ally-walk-findings	e27b4fb6e0f0783d6812721c5f0e0fb8603daf8b	landed: its work is already in main
+johnair01/bars-engine	ci/check-every-pr	811bc4183235c0f7a7a53773306a4de8f32df5f8	landed: its work is already in main
+johnair01/bars-engine	feat/ally-attribution	1b648e564bbf6c7f87d68d18b237cb4c66bfa9fd	landed: its work is already in main
+johnair01/bars-engine	feat/ally-content-tokens	4214838058ccd92567093cdbd5093fd4a634f3f2	landed: its work is already in main
+johnair01/bars-engine	feat/ally-funnel-notes	c0d6bed81743cee039f91eb8072b9e155819669b	landed: its work is already in main
+johnair01/bars-engine	feat/ally-jim-integration	4df600a91495f59d871fdcc235dabbde5de10958	landed: its work is already in main
+johnair01/bars-engine	feat/ally-test-mode	47d9756767f16b2e866dac5b490a527c9dab2bc2	landed: its work is already in main
+johnair01/bars-engine	agent/redirect-home-to-allyship-sales	334af33f3104c074f310b48ef78069d9d70b2847	landed: its work is already in main
+johnair01/bars-engine	claude/deck-card-ratio-bar-interaction-fgn66t	3d52f52d32f6f9c5ae0b3ff9d8a1266b5827d0e4	landed: its work is already in main
+johnair01/bars-engine	claude/lpi-book-sellable	88650ca4f621c74690b8217b4c7d8363d3b4fb7c	landed: its work is already in main
+wendell-britt/friendcraft-manuacript	claude/quadrant-tags	60344f9a0b3893eab8f7ce4f5f4ce6a2c80abbff	landed: its work is already in main
+wendell-britt/friendcraft-manuacript	claude/mvp-definition	b8727ecd7f096d699e75c7f1c4d7e6a36fbc967a	landed: its work is already in main
+wendell-britt/friendcraft-manuacript	claude/pass-five	bafa5a1037ab2464b4a0a02ff539b8f5fe7ad65e	landed: its work is already in main
+wendell-britt/friendcraft-manuacript	claude/card-lint-and-fragments	f9e29d874f2213db0b4fcc7a561e5902ac8dcfb2	landed: its work is already in main
+wendell-britt/friendcraft-manuacript	claude/revoke-beats	50c3a889f76db10fa8cd101dd4b701672a225290	landed: its work is already in main
+wendell-britt/friendcraft-manuacript	claude/ruling-41-and-propagation-plan	51f469c2a41eca5776df72c4201417a8d618615e	landed: its work is already in main
+johnair01/bars-engine	claude/goodbye-yellow-brick-road-party-642drq	af7414fbc8b15a8b42c09f96e592ae3b5b80c83e	stale: Party one-shot with Oracle card integration
+johnair01/bars-engine	claude/awaken-page-updates-4cepg4	cc017a60e17c8fe49f37fd2b7d4e57a19beea91e	stale: Allyship Deck price change from $10 to $22
+johnair01/bars-engine	claude/loving-fermat-q9nrmk	3a8837d8e082a01b1527da07648214254f570fa3	stale: Fix swapped Partiful links; Chapter One capture marked coming soon
+johnair01/bars-engine	revert-185-codex/mastering-allyship-book-cta	19aeebee41dcab4490e4dfa792c0299575d77961	stale: Reverts PR #185, which main kept
+johnair01/bars-engine	claude/new-session-s8urv0	8a36b5aeb9658603da81dd7224e53c1ba59633f4	stale: Superpower quiz reveal redesign, Crossing link, Gumroad pricing
+johnair01/bars-engine	codex/inner-garden-emulator-shell-spec	e17b7459f3ec81758af0904e66f1cc9149e80aed	stale: Spec kit for the Inner Garden emulator shell
+johnair01/bars-engine	feat/wsp-chapter-spoke-template	0a5182b0618a0ae4e0fcdd04977b5d2c0c29a1e7	stale: Vitest setup
+johnair01/bars-engine	claude/dazzling-wright-d19dkh	bf19de7fb72f17ad794c0e14d3b65a621b261839	stale: Login redeem returnTo fix
+johnair01/bars-engine	claude/busy-brahmagupta-a644qp	f8990b70885d90adfb52d5e3eef866d49cd3808f	stale: Revert of the Plant 3-2-1 flow
+johnair01/bars-engine	claude/launch-followups-backlog	f5b337fecc45f257c1b259d71ac05d5572b3c672	stale: Paywall integration and entitlement schema
+johnair01/bars-engine	feature/living-memory-phase1	2100e5e59912b641e22b5b550eb8ac28cbcded2e	stale: MemoryNode and memory event schema
+johnair01/bars-engine	cursor/iching-quest-widget-integration-0dfb	2ac6c647ca3d94bd7c946c88c79995ccb31478b3	stale: I Ching widget, quest modifiers, BAR wallet, lifecycle metrics (235 days old)
+johnair01/bars-engine	fix/iching-king-wen-and-face-collapse	83406df0e5fb533a8d727d6e8d932d6565a89719	stale: King Wen table fix and organization network spec
+johnair01/bars-engine	codex/allyship-deck-sprint-publication	ad0fbcda3b54e3bb286754a53e121904a6c563cb	stale: Book CTA landing, gated Chapter 1 reader, compound emotions
+johnair01/bars-engine	claude/sleepy-ride-f7ptcl	7aa3ef06b2163aaa6540df5cc2bcb9a33508dbb2	stale: Book launch event suite spec; retiring Bruised Banana
+johnair01/bars-engine	merge/book-os-origin-fork-close	24d3047a7158ef0d104b7402baeed8efe9c81fca	stale: Book OS sections editor and fork import
+johnair01/bars-engine	codex/inner-garden-control-hotfix	3387a5eb60860c8971f536acffb3562091d25ee0	stale: Inner Garden mobile control fixes
+johnair01/bars-engine	claude/confident-curie-5y53ft	1c91cfcd4a14800026aaca72d7e72187a32af5a5	stale: Slider text editor overlay fix
+johnair01/bars-engine	feat/41-45-shipping	9908e35cca329005a3428a914b938e0c91336cb7	stale: Campaign hierarchy and walkable sprite demo
+johnair01/bars-engine	feat/book-os-origin-fork-close	c1f44ec781b9b4ef9f36e7991d8ba4e00f57758c	stale: Book OS sections and fork import
+johnair01/bars-engine	codex/mtgoa-open-up-check	ef3f3f9ffff32318dc78953d7bc5cf9f3983e205	stale: MTGOA course intake flow
+johnair01/bars-engine	claude/allyship-deck-json-3y53vd	b2847db5734fa9410b9acd2fd538a16f9a72fbe6	stale: Export script for the allyship deck JSON
+johnair01/bars-engine	feat/canonical-321-and-brainstorm	f6c6155de56e1b8a8dada1898d2a5b279d848702	stale: Persist the 3-2-1 flow; wire TTV to brainstorm and garden
+johnair01/bars-engine	codex/wip-inner-garden-calrunia	0bfc817196eb5913c41b5c3d3d8b2d1b26a15ce6	stale: Calrunia world-building docs (WIP)
+johnair01/bars-engine	claude/allyship-deck	9464337df71ad7d20ad74e1961232152b89bed8a	stale: Style-frame prompt for allyship card art
+johnair01/bars-engine	feat/rpg-exp5-play-shell	ba41ea16c81e22ba54cf2c972624766f1ca984a7	stale: Experimental vertical slice, 643 new files of specs
+johnair01/bars-engine	cursor/bars-enging-cursor-migration-2fa5	f2e557ed560ba95f758f0e73c91d77e894d1ce95	stale: Story-clock quest infrastructure: cube engine, archetype registry, quest forensics (229 days)
