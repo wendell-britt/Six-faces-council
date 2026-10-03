@@ -55,8 +55,12 @@ defer:
     history: every deferral of an item stays in history on its resolved entry, also after he takes it up.
       Record one with python3 council/due.py record, which computes the date the way the board does.
   reweigh:
-    when: at the start of every board read, python3 council/due.py lists what is due and what changed in
-      each item's project since he deferred it
+    when: >
+      once a week, in a scheduled session that starts fresh (Wendell, board question sd-when,
+      2026-10-03, "On its own"), and also at the start of every board read. Either way,
+      python3 council/due.py lists what is due and what changed in each item's project since he
+      deferred it. A week with nothing due ends there, with nothing written and nothing published.
+    routine: "'Council: re-weigh due deferrals', Mondays 15:45 UTC"
     how: each face casts and writes one line on what changed. The council recommends one of take it up,
       defer again, retire, or reshape the question. All of it is written onto the row as review, on main,
       before the item reaches the Open tab. When nothing changed, the review says so in one line.

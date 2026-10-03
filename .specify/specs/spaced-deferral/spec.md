@@ -49,7 +49,7 @@ council's recommendation. If nothing changed, the box says so in one line.
 | New context | `council/due.py` reads, for the item's project: the changes that landed on its main branch, the council's ledger records, and the lessons ruled, all since the moment he deferred | Council |
 | Since when | The exact time he pressed Defer (`saved_at`), compared with the time each ledger record was committed. A lesson carries only a date, so a same-day lesson is marked "same day" | Council, from the cheap test below |
 | The re-weigh | Each face casts and writes one line on what changed, and the council recommends one of: take it up, defer again, retire, or reshape the question | Council, under the reach test and the iching-cast-first position |
-| Who re-weighs, and when | Question `sd-when` on the board: at the next session that reads the board, or a weekly scheduled session | Wendell (it uses his account) |
+| Who re-weighs, and when | A weekly scheduled session, and also any session that reads the board | Wendell, question `sd-when`, 2026-10-03: "On its own" |
 | History | Every deferral of an item stays in its `history`, also after he takes it up | Wendell, the deferral lesson ("we are also collecting data about priority") |
 
 ## Contracts
@@ -114,5 +114,6 @@ Lessons carry only a date, so a lesson from the same day is marked "same day".
   says the council has not re-weighed it yet. Checked by rendering a test board in a headless browser.
 - [x] `council/pipeline.yaml` and both skills say a session runs `due.py` at every board read and re-weighs each
   due item before it reaches him.
-- [ ] Ships as board position `sd-ship`, merging on the next board read unless he flips it.
+- [x] Ships as board position `sd-ship`. It stood at board read 21, and the PR merged.
+- [x] The weekly session is scheduled: "Council: re-weigh due deferrals", Mondays 15:45 UTC.
 - [ ] The first real re-weigh, the oracle drafts on 2026-11-03, is recorded here.
