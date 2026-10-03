@@ -28,7 +28,7 @@ SHARED = ["council/faces.yaml", "council/pipeline.yaml", "council/spec-kit/spec.
           "council/spec-kit/tasks.md", ".claude/skills/six-faces/SKILL.md", "council/tools/voice_lint.py"]
 SHARED += [f".claude/agents/daemon-{d}.md" for d in ("protector", "controller", "skeptic", "fixer", "victim",
                                                    "damaged-self", "emotional-body", "player")]
-SHARED += ["council/daemons/daemons.yaml", "council/daemons/check_report.py", "council/iching/hexagrams.yaml",
+SHARED += ["council/daemons/daemons.yaml", "council/daemons/check_report.py", "council/daemons/save_report.py", "council/iching/hexagrams.yaml",
            "council/iching/cast.py", "council/strands.py", "council/census.py"]
 HOOK_CMD = '"$CLAUDE_PROJECT_DIR"/council/hooks/council-sync.sh'
 TERMS_HEADER = """# Term registry for this repo. The repo's glossary, if it has one, stays the canon; this file indexes
