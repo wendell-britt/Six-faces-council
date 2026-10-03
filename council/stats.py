@@ -68,7 +68,7 @@ def report(recs: list[dict], where: str) -> int:
 
     by_project, by_cause, by_convener = Counter(), Counter(), Counter()
     pos_outcomes, q_outcomes, doc_outcomes, by_source = Counter(), Counter(), Counter(), Counter()
-    faces_seen = Counter()
+    faces_seen, deferrals = Counter(), Counter()
     steers, overrules = 0, 0
     for r in recs:
         by_project[r.get("project", "?")] += 1
@@ -79,12 +79,21 @@ def report(recs: list[dict], where: str) -> int:
             doc_outcomes[r["outcome"]] += 1
         for f in r.get("faces_present") or []:
             faces_seen[f] += 1
-        for v in (r.get("positions") or {}).values():
+        # A pass record may list the row ids it put on the board before any ruling; those count as open.
+        rows = r.get("positions") or {}
+        for v in (rows.values() if isinstance(rows, dict) else ["open"] * len(rows)):
+            v = v.get("choice") if isinstance(v, dict) else v
             pos_outcomes[v] += 1
+            if v == "deferred":
+                deferrals[r.get("subject_project") or r.get("project", "?")] += 1
         overrules += len(r.get("overruled") or [])
         steers += len(r.get("steers") or {})
-        for q in (r.get("questions") or {}).values():
-            q_outcomes["answered" if q.get("choice") else "open"] += 1
+        rows = r.get("questions") or {}
+        for q in (rows.values() if isinstance(rows, dict) else [{}] * len(rows)):
+            choice = q.get("choice") if isinstance(q, dict) else q
+            q_outcomes["deferred" if choice == "deferred" else "answered" if choice else "open"] += 1
+            if choice == "deferred":
+                deferrals[r.get("subject_project") or r.get("project", "?")] += 1
 
     def table(title: str, c: Counter) -> None:
         print(title)
@@ -100,6 +109,8 @@ def report(recs: list[dict], where: str) -> int:
     table("faces present in documents", faces_seen)
     table("position outcomes", pos_outcomes)
     table("question outcomes", q_outcomes)
+    # A deferral is data about priority (Wendell, board read 20): what he puts off, counted per project.
+    table("deferrals by project", deferrals)
     print(f"overrules {overrules}\nsteers {steers}\n")
 
     faces = ROOT / "council" / "faces.yaml"
