@@ -3100,6 +3100,16 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+   },
+   "fm-levels": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-26.json (six-faces-council)"
+   },
+   "lesson-diplomat-levels": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-26.json (six-faces-council)"
    }
   },
   "questions": {

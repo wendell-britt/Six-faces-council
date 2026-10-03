@@ -157,7 +157,11 @@ faces:
     sees: feeling, care, inclusion
     note: Torbert's "Diplomat" is a conformist logic at amber and is never cited for this face. The Torbert logic at green is the Individualist.
     agreeableness: accommodating
-    lessons: []
+    lessons:
+      - date: 2026-10-03
+        source: position fm-one-row overruled, board read 25; lesson position lesson-diplomat-levels stood at board read 26
+        wendell: "I think we should increase the amount over time as a function of how much we trust the agent to pick up useful work on its own and in alignment with ecological token usage. This is essentially a level progression. More skillful agents get more capacity and resource"
+        lesson: A limit on what an agent may take up is a starting level. It rises as the record shows useful work and careful token use.
 
   sage:
     altitude: teal

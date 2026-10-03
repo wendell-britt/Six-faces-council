@@ -1,0 +1,29 @@
+{
+ "id": "2026-10-03-six-faces-council-board-read-26",
+ "date": "2026-10-03",
+ "project": "six-faces-council",
+ "cause": "project-steering",
+ "question": "The level progression",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "positions": {
+  "fm-levels": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:57:06Z"
+  },
+  "lesson-diplomat-levels": {
+   "choice": "stands",
+   "saved_at": "2026-10-03T19:57:11Z"
+  }
+ },
+ "not_read": "mh4- and sm- rows belong to other sessions and are left to them.",
+ "lessons_recorded": [
+  "diplomat: a limit is a starting level"
+ ],
+ "noted": "#16 merged at 19:56Z: a pull request now merges into main only on Wendell's automerge label, which a session adds only when he says to merge.",
+ "acted_on": [
+  "faces.yaml: the Diplomat's first lesson",
+  "The five-moves build starts: every gate in its spec is met"
+ ]
+}
