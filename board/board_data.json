@@ -531,6 +531,60 @@
    "auto": true,
    "pos": "The council copies each hexagram's name, what it shows, its image and its situation. It leaves the flirtation line, the drill and the craft names in flirtcraft, as the flirting applications.",
    "why": "Your words in chat: 'The valuable parts for flirtcraft are their flirting applications so it fine to have this in the public repo.' The split follows the card's own fields. Source: council/iching/hexagrams.yaml"
+  },
+  {
+   "id": "test-root-ruler",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "7",
+   "auto": true,
+   "pos": "The council's first real test is root-game's first step on the hands: make the ruler whole, run through the pipeline. The council starts it on your next board read unless you flip this.",
+   "why": "Both daemons chose it on their own: the Skeptic because its verdict is a command that passes or fails, the Player because it is your game and ends in a clip you can feel. Source: council/passes/6FACE_PASS7_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "root-unpack-first",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "7",
+   "auto": true,
+   "pos": "The first move is to unpack root-game's handoff archive into the repo as files, on a branch, so every later change can be reviewed.",
+   "why": "The code and tests are inside root-handoff.zip; unpacked, the self-test passes tonight. Root-game's own CLAUDE.md already assumes the files are there. Source: council/passes/6FACE_PASS7_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "root-pass-mark",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "7",
+   "auto": true,
+   "pos": "The test passes when the self-test passes, the shipped baseline reproduces drawn jitter 4.41 / 10.88 and arms through 1.3% / 4.8%, and eval.js reports single-gate contacts against HANDOFF.md.",
+   "why": "Root-game pass one's gate and HANDOFF.md's own numbers. Source: council/passes/6FACE_PASS7_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "test-flirtcraft-alert-second",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "pass": "7",
+   "auto": true,
+   "pos": "The second test is the flirtcraft deploy alert, because it exercises your steps list, which no test has touched yet.",
+   "why": "The Diplomat's dissent, sequenced by the Sage. Source: council/passes/6FACE_PASS7_2026-10-03.md (six-faces-council)"
+  },
+  {
+   "id": "separate-scorecards",
+   "faces": [
+    "sage"
+   ],
+   "pass": "7",
+   "auto": true,
+   "pos": "The council and the game keep separate scorecards: the council is graded on its process, and root-game on its own pass marks.",
+   "why": "The Sage under Stalemate: seeking one game while wearing the face of the other. Source: council/passes/6FACE_PASS7_2026-10-03.md (six-faces-council)"
   }
  ],
  "questions": [

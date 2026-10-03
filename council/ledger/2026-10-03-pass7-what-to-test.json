@@ -1,0 +1,121 @@
+{
+  "id": "2026-10-03-six-faces-council-pass7-what-to-test",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "project-steering",
+  "question": "What's a good thing to test the council on?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": "council/passes/6FACE_PASS7_2026-10-03.md",
+  "faces_present": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat",
+    "sage"
+  ],
+  "dissent": true,
+  "dissent_note": "The Diplomat would test on the flirtcraft deploy alert, which exercises the steps list; the Sage sequences it second.",
+  "casts": [
+    {
+      "agent": "shaman",
+      "n": 48,
+      "name": "The Well"
+    },
+    {
+      "agent": "architect",
+      "n": 60,
+      "name": "Measure",
+      "changing_lines": [
+        1
+      ],
+      "becomes": 29
+    },
+    {
+      "agent": "challenger",
+      "n": 60,
+      "name": "Measure",
+      "changing_lines": [
+        1,
+        3
+      ],
+      "becomes": 48
+    },
+    {
+      "agent": "regent",
+      "n": 48,
+      "name": "The Well",
+      "changing_lines": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "becomes": 24
+    },
+    {
+      "agent": "diplomat",
+      "n": 53,
+      "name": "Emergence",
+      "changing_lines": [
+        5,
+        6
+      ],
+      "becomes": 15
+    },
+    {
+      "agent": "sage",
+      "n": 12,
+      "name": "Stalemate",
+      "changing_lines": [
+        5
+      ],
+      "becomes": 35
+    },
+    {
+      "agent": "daemon-skeptic",
+      "n": 25,
+      "name": "Candour",
+      "changing_lines": [
+        1,
+        5
+      ],
+      "becomes": 35
+    },
+    {
+      "agent": "daemon-player",
+      "n": 38,
+      "name": "Estrangement",
+      "changing_lines": [
+        2
+      ],
+      "becomes": 21
+    }
+  ],
+  "subagents": {
+    "model": "haiku",
+    "count": 2,
+    "tokens_each_approx": [
+      67780,
+      73794
+    ],
+    "shape_check": "both failed; not sent back, recorded as a deviation from dm-report-shape"
+  },
+  "iching_grade": {
+    "pass": 1,
+    "of": 3,
+    "cast_changed_output": true,
+    "how": "The Well led to checking reach; the check found root-game's code inside archives and produced the unpack-first position",
+    "bias": "one session wrote all six faces and graded them"
+  },
+  "positions": {
+    "test-root-ruler": "council",
+    "root-unpack-first": "council",
+    "root-pass-mark": "council",
+    "test-flirtcraft-alert-second": "council",
+    "separate-scorecards": "council"
+  },
+  "questions": {},
+  "outcome": "positions only"
+}
