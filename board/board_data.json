@@ -1293,6 +1293,31 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+   },
+   "iching-cast-first": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+   },
+   "iching-grade": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+   },
+   "iching-informs": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+   },
+   "iching-ship": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+   },
+   "iching-which-fields": {
+    "decision": "stands",
+    "recorded": "2026-10-03",
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
    }
   },
   "questions": {
@@ -1496,6 +1521,11 @@
    "text": "On dm-no-chains: This we could explore. I don't see it's utility now but I imagine the diplomat would appreciate the collaboration",
    "savedAt": "2026-10-03T00:04:51.972Z",
    "record": "council/ledger/2026-10-03-board-read-10.json"
+  },
+  {
+   "text": "On iching-cast-first: We don't need them evenly. We actually want to do a simulation of the coin method and then map to the reading",
+   "savedAt": "2026-10-03T00:19:53.066Z",
+   "record": "council/ledger/2026-10-03-board-read-11.json"
   }
  ],
  "steer_recorded_through": "2026-10-02T16:20:19.620Z"

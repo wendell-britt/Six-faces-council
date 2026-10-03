@@ -78,6 +78,10 @@ faces:
           assume a block, but if there IS a block we should assume self-sabotage, with the given
           choice to skip if that's not a frame that works for the user.
         lesson: An offer is not a requirement. Removing a repetition is not protection.
+      - date: 2026-10-03
+        source: .specify/specs/iching-casting/spec.md, position iching-cast-first, steer at board read 11
+        wendell: We don't need them evenly. We actually want to do a simulation of the coin method and then map to the reading
+        lesson: A cast follows the oracle's own method, the coins and their changing lines, not a uniform draw that only looks fair.
 
   architect:
     altitude: orange

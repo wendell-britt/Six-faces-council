@@ -26,8 +26,9 @@ the pass used. If Wendell has ruled since either copy, his newer words win.
 2. **Anchor.** The design intent in one or two sentences.
 3. **Every agent casts the I Ching first.** Wendell, 2026-10-03: *"all agents should be casting the I Ching
    and using its wisdom to inform their decisions (not unlike flirtcraft)"*. Where code runs, use
-   `council/iching/cast.py`. Where it does not, draw one of the 64 hexagrams evenly by the fairest method this
-   chat has, and say how it was drawn. Each face opens with its hexagram and how its wisdom bears on the
+   `council/iching/cast.py`. Where it does not, cast by the three-coin method (three tosses a line, heads 3 and
+   tails 2, six lines from the bottom up) with the fairest random source this chat has, and say how it was
+   drawn. Lines totalling 6 or 9 are changing and give the hexagram it becomes. Each face opens with its hexagram and how its wisdom bears on the
    question; the cast informs, and the evidence still has to hold.
 4. **Six faces, in the order `faces.yaml` gives.** Each speaks as its face, not as a game character.
    Each delivers what its entry lists, in short paragraphs with a subject and a finite verb. Where this

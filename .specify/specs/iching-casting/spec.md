@@ -20,7 +20,7 @@ what it informed go into the pass and the ledger.
 | Decision | Choice | Whose |
 |---|---|---|
 | Who casts | Every agent: each of the six faces, and each daemon a face sends | Wendell ("all agents") |
-| How a cast is drawn | One hexagram drawn evenly from the 64, as flirtcraft's draw does, with a cryptographic random source | Wendell ("not unlike flirtcraft"); the council read flirtcraft's draw |
+| How a cast is drawn | The three-coin method, simulated with a cryptographic random source: three tosses a line, six lines from the bottom up, changing lines giving the hexagram it becomes. The first version drew evenly from the 64; Wendell changed it on the board | Wendell, board read 11: "We don't need them evenly. We actually want to do a simulation of the coin method and then map to the reading" |
 | What the cast carries | Number, Chinese name, pinyin, lines, and the two trigrams with their traditional names and qualities, from `council/iching/hexagrams.yaml` | Council. The table was read from flirtcraft's `lib/decks.json` and checked line by line against the trigrams |
 | Flirtcraft's card readings | Copied: each hexagram's name, what it shows, its image and its situation. The flirting applications stay in flirtcraft: the flirtation line, the drill and the craft names | Wendell, 2026-10-03: "The valuable parts for flirtcraft are their flirting applications so it fine to have this in the public repo" |
 | Daemons | The face casts for each daemon it sends and passes the cast in, so daemons stay read-only | Council, from pass six's capability position |

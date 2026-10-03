@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cast the I Ching for one agent or several: one hexagram each, drawn evenly from the 64.
+"""Cast the I Ching for one agent or several, by the three-coin method, and map the cast to its reading.
 
 Usage:
   python3 council/iching/cast.py shaman architect daemon-skeptic     one cast per agent named
@@ -22,24 +22,35 @@ import yaml
 TABLE = Path(__file__).resolve().parent / "hexagrams.yaml"
 
 
-def figure(lines):
-    # top line first, the way a hexagram is drawn
-    return "\n".join("━━━━━━━" if x else "━━━ ━━━" for x in reversed(lines))
+LINE = {6: (0, True, "old yin, changing"), 7: (1, False, "young yang"), 8: (0, False, "young yin"),
+        9: (1, True, "old yang, changing")}
+
+
+def reading(h, tri):
+    lo, up = tri[h["lower"]], tri[h["upper"]]
+    return {"n": h["n"], "name": h.get("name"), "cn": h["cn"], "pinyin": h["pinyin"], "lines": h["lines"],
+            "shows": h.get("shows"), "image": h.get("image"), "situation": h.get("situation"),
+            "lower": {"trigram": h["lower"], **{k: lo[k] for k in ("symbol", "name", "quality")}},
+            "upper": {"trigram": h["upper"], **{k: up[k] for k in ("symbol", "name", "quality")}}}
 
 
 def cast(agents, seed=None):
     data = yaml.safe_load(TABLE.read_text())
-    hexes, tri = data["hexagrams"], data["trigrams"]
+    tri = data["trigrams"]
+    by_lines = {tuple(h["lines"]): h for h in data["hexagrams"]}
     rng = random.Random(seed) if seed is not None else secrets.SystemRandom()
     out = []
     for agent in agents:
-        h = hexes[rng.randrange(64)]
-        lo, up = tri[h["lower"]], tri[h["upper"]]
-        out.append({"agent": agent, "n": h["n"], "name": h.get("name"), "cn": h["cn"], "pinyin": h["pinyin"],
-                    "lines": h["lines"], "shows": h.get("shows"), "image": h.get("image"),
-                    "situation": h.get("situation"),
-                    "lower": {"trigram": h["lower"], **{k: lo[k] for k in ("symbol", "name", "quality")}},
-                    "upper": {"trigram": h["upper"], **{k: up[k] for k in ("symbol", "name", "quality")}}})
+        tosses = [[rng.choice((2, 3)) for _ in range(3)] for _ in range(6)]  # bottom line first
+        values = [sum(t) for t in tosses]
+        primary = [LINE[v][0] for v in values]
+        changing = [i + 1 for i, v in enumerate(values) if LINE[v][1]]
+        becomes = [1 - b if LINE[v][1] else b for b, v in zip(primary, values)]
+        c = {"agent": agent, "method": "three coins", "tosses": tosses, "values": values,
+             "changing_lines": changing, **reading(by_lines[tuple(primary)], tri)}
+        if changing:
+            c["becomes"] = reading(by_lines[tuple(becomes)], tri)
+        out.append(c)
     return out
 
 
@@ -57,11 +68,22 @@ def main(argv):
         print(json.dumps(casts, ensure_ascii=False))
         return 0
     for c in casts:
-        print(f"{c['agent']}: hexagram {c['n']}, {c['name']}, {c['cn']} ({c['pinyin']})")
-        print(figure(c["lines"]))
+        print(f"{c['agent']}: hexagram {c['n']}, {c['name']}, {c['cn']} ({c['pinyin']}), cast with three coins")
+        for pos in range(6, 0, -1):
+            v = c["values"][pos - 1]
+            mark = {6: "━━━ ━━━  x", 7: "━━━━━━━", 8: "━━━ ━━━", 9: "━━━━━━━  o"}[v]
+            print(f"  {mark:<12} line {pos}: {v}, {LINE[v][2]}")
         print(f"  {c['upper']['symbol']} {c['upper']['trigram']}, {c['upper']['name']} ({c['upper']['quality']}), above")
         print(f"  {c['lower']['symbol']} {c['lower']['trigram']}, {c['lower']['name']} ({c['lower']['quality']}), below")
-        print(f"  Shows: {c['shows']}\n  Image: {c['image']}\n  Situation: {c['situation']}\n")
+        print(f"  Shows: {c['shows']}\n  Image: {c['image']}\n  Situation: {c['situation']}")
+        if c["changing_lines"]:
+            b = c["becomes"]
+            lines = ", ".join(str(x) for x in c["changing_lines"])
+            print(f"  Changing lines: {lines}. It becomes hexagram {b['n']}, {b['name']}, {b['cn']} ({b['pinyin']}).")
+            print(f"  Becomes, shows: {b['shows']}\n  Becomes, situation: {b['situation']}")
+        else:
+            print("  No changing lines.")
+        print()
     return 0
 
 

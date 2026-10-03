@@ -16,8 +16,9 @@ A face carries them into its argument. Do not restate a lens from memory; the fi
 3. **Anchor.** The design intent in one or two sentences. Unchanged unless Wendell changed it.
 4. **Every agent casts the I Ching first.** Wendell, 2026-10-03: *"all agents should be casting the I Ching
    and using its wisdom to inform their decisions (not unlike flirtcraft)"*. Run `python3 council/iching/cast.py
-   shaman architect challenger regent diplomat sage`, one hexagram each, drawn evenly from the 64 as flirtcraft
-   draws. Each cast carries Wendell's reading from flirtcraft (its name, what it shows, its image and its
+   shaman architect challenger regent diplomat sage`, one cast each by the three-coin method (Wendell on the
+   board: "We actually want to do a simulation of the coin method and then map to the reading"). Changing
+   lines give the hexagram it becomes, and the cast maps to both readings. Each cast carries Wendell's reading from flirtcraft (its name, what it shows, its image and its
    situation) beside the traditional lines and trigrams. Each face opens its section with its hexagram and
    one or two sentences on how its reading bears on the question, and lets it shape how the face frames and weighs its argument. The cast
    informs; the evidence a face cites still has to hold. When a face sends a daemon, the face casts for it

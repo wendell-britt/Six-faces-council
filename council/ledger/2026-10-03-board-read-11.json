@@ -1,0 +1,29 @@
+{
+  "id": "2026-10-03-six-faces-council-board-read-11",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Do the I Ching positions stand, and does casting ship?",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+  "positions": {
+    "iching-cast-first": "stands",
+    "iching-grade": "stands",
+    "iching-informs": "stands",
+    "iching-ship": "stands",
+    "iching-which-fields": "stands"
+  },
+  "steers": {
+    "iching-cast-first": "We don't need them evenly. We actually want to do a simulation of the coin method and then map to the reading "
+  },
+  "lessons": {
+    "shaman": {
+      "folded_into": "council/faces.yaml shaman.lessons"
+    }
+  },
+  "acted_on": [
+    "cast.py now simulates the three-coin method; changing lines give the hexagram it becomes, mapped to both readings; line odds checked at 1:3:3:1 over 120,000 lines",
+    "Merged wendell-britt/six-faces-council#2 on iching-ship standing"
+  ]
+}
