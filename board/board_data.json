@@ -3776,6 +3776,55 @@
      "c": "Say what still reads wrong in the steer box. A new sheet comes back to you before anything is animated."
     }
    ]
+  },
+  {
+   "id": "cc-builds-eye",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout character creation 8",
+   "q": "Do these four body types in the robe go forward? They are slender, average, broad and round, in five skin tones, and every frame fits the 32 px figure width that the doors are built to.",
+   "why_you": "Only your eye can judge the look. The second sheet measured 44 px wide, so its sleeves would not have passed a door. On this sheet the flow comes from narrow shoulders that widen to the hem, and from sleeves that hang over the skirt to the knee. The sleeves no longer reach outward. The tool fails any frame wider than 32 px. The Chinese tells stay: the crossed collar, the thin sash with jade, and the crown and jade pin. The sheet is /mnt/project-files/character-creation/builds-design.png (sprout pull request #14). The seated cultivator you sent, which might suit a regent, is saved beside it in references/.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Approve the four builds",
+     "c": "The robe is drawn for every action frame in all four builds, and the player creator offers the build and the skin tone."
+    },
+    {
+     "v": "redraw",
+     "label": "Redraw them",
+     "c": "Say what is off in the steer box, such as a build that reads the same as another. A new sheet comes back before anything is animated."
+    }
+   ]
+  },
+  {
+   "id": "cc-topknot-door",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout character creation 8",
+   "q": "How should the topknot fit the doors? The approved topknot starts four rows above the old hair, so every figure wearing it stands 52 to 54 px tall. The doors are 50 px tall, and the figure in the size rule is 49.",
+   "why_you": "The size rule is yours: \"the player figure is 32 by 49 px and every building's door must be at least that size\" (sprout CLAUDE.md). Each fix below changes either approved art or that rule. The size check reads the fixed 49 px in profiles/snes.json, not the drawn figure, so it never caught this.",
+   "options": [
+    {
+     "v": "overhang",
+     "label": "Hair may overhang",
+     "c": "The rule measures the body, not the hair, so a head may pass in front of the lintel. The rule and the check are rewritten to say so."
+    },
+    {
+     "v": "taller-doors",
+     "label": "Raise the doors",
+     "c": "The figure becomes 32 by 54 in the rule, and every door is redrawn at least 54 px tall."
+    },
+    {
+     "v": "lower-bun",
+     "label": "Lower the bun",
+     "c": "The topknot is redrawn about four rows lower, so the figure fits 50 px, and it comes back to you through the gate."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5336,6 +5385,12 @@
     "label": "Redraw: it reads Japanese, not Chinese (said in chat)",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round6.json (pull request #14)"
+   },
+   "cc-hanfu-eye": {
+    "decision": "redraw",
+    "label": "Redraw: play with body types and fit the doorframes (said in chat)",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round7.json (pull request #14)"
    }
   },
   "causes": {
@@ -5619,6 +5674,14 @@
      "n": 7,
      "questions": [
       "cc-hanfu-eye"
+     ],
+     "positions": []
+    },
+    {
+     "n": 8,
+     "questions": [
+      "cc-builds-eye",
+      "cc-topknot-door"
      ],
      "positions": []
     }
