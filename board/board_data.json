@@ -2240,6 +2240,17 @@
    "auto": true,
    "pos": "The grid is rebuilt as a labyrinth on the study's rules. The five streams close a ring in the generating order, and each stream's end runs into the next one's start. Each stream is a home you walk without keys. A small hub inside the ring is a shortcut near four streams, with water left off it, as Auron is in FFX. Locks sit at the seams and before capstones in four key tiers, and the last rank's key opens the hub's capstone. A check holds all of this, and the map is drawn. This stands unless you flip it.",
    "why": "sprout tools/draft-grid.mjs, data/grid.json (136 nodes), .specify/specs/ranks-and-badges/grid-map.svg, and tools/test-ranks.mjs (668 checks pass; a broken seam, a fifth hub link, a swapped chamber, or a node raising a gate level each fail). Source: sprout .specify/specs/ranks-and-badges/research/sphere-grid-study.md (pull request #17)"
+  },
+  {
+   "id": "dy-2026-10-04-open",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "daily",
+   "auto": true,
+   "pos": "The daily session's Open up run found 23 answers you saved on this board that main never recorded. Twenty are outside today's ranks-and-badges battle. Two are positions for pull requests that should have merged and are still open: dy-limit-wording (#20, which you saved as standing 19 hours ago) and cost-short-rule (#24). The note lists each save, and proposes a check at the start of every board read that compares your saves with the resolved list. This merges at your next board read unless you flip it.",
+   "why": "The rows belong to other sessions, so the daily run recorded none of them and merged nothing. sync_board.py brings rows from the page to main, but it does not read your saves, so it missed these. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/36"
   }
  ],
  "questions": [
