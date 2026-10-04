@@ -4816,10 +4816,10 @@
     "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
    },
    "fr-belief-readings": {
-    "decision": "deferred",
-    "until": "2026-10-04T02:27:56Z",
-    "label": "Deferred 1 hour, until 2026-10-04T02:27:56Z",
+    "decision": "overrule",
+    "label": "Overruled (after a deferral)",
     "recorded": "2026-10-04",
+    "saved_at": "2026-10-04T02:33:00Z",
     "record": "council/ledger/2026-10-04-feature-request-scene-staging-round-1.json (six-faces-council)",
     "history": [
      {
