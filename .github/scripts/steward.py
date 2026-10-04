@@ -6,8 +6,8 @@ lives in this repo:
 1. If main has moved ahead, merge main into the branch with a merge commit (never a rebase), using the
    merge drivers in .gitattributes, rebuild the board page if the repo has one, and push.
 2. Run the checks and post the result as the "steward" commit status on the branch head.
-3. If the pull request carries the "automerge" label, is not a draft, and the checks pass, merge it with
-   a merge commit. The label is Wendell's yes (his ruling, 2026-10-03: "On your label"); a session adds it
+3. If the pull request carries the "automerge" label, or changes only board data and ledger records without
+   removing a row (Wendell, 2026-10-04), is not a draft, and the checks pass, merge it with a merge commit. The label is Wendell's yes (his ruling, 2026-10-03: "On your label"); a session adds it
    only when he says to merge. If main cannot be merged in cleanly, the branch is left untouched
 and the pull request gets one comment naming the files, for the session that owns the branch to resolve.
 """
@@ -19,6 +19,10 @@ import sys
 REPO = os.environ["GITHUB_REPOSITORY"]
 CONFLICT_MARK = "<!-- steward:conflict -->"
 LABEL = "automerge"
+# Board-only pull requests merge without the label (Wendell, 2026-10-04: "make sure we're automatically merging when we
+# add rows"): every changed file is board data or a ledger record, the checks pass, and no row on main is removed.
+BOARD_ONLY = ("board/board_data.json", "board/council-board.html")
+BOARD_ONLY_PREFIX = ("council/ledger/",)
 
 
 def sh(*args, check=True):
@@ -78,6 +82,23 @@ def note_conflict(number, files):
     sh("gh", "api", f"repos/{REPO}/issues/{number}/comments", "-f", f"body={body}")
 
 
+def board_only():
+    """True when the branch, against main, changes only board data and ledger records and removes no board row."""
+    files = sh("git", "diff", "--name-only", "origin/main...HEAD").stdout.split()
+    if not files or not all(f in BOARD_ONLY or f.startswith(BOARD_ONLY_PREFIX) for f in files):
+        return False
+    def ids(text):
+        d = json.loads(text)
+        return {(k, r["id"]) for k in ("positions", "questions", "terms", "causes") for r in d.get(k, []) if isinstance(r, dict) and "id" in r}
+    main_rows = sh("git", "show", "origin/main:board/board_data.json", check=False).stdout
+    if not main_rows:
+        return True
+    try:
+        return ids(main_rows) <= ids(open("board/board_data.json", encoding="utf-8").read())
+    except (ValueError, OSError):
+        return False
+
+
 def tend(pr):
     """Bring one pull request up to date, check it, and merge it if labelled. Returns True if merged."""
     head = pr["headRefName"]
@@ -106,7 +127,8 @@ def tend(pr):
     problems = checks()
     set_status(sha, problems)
     print(f"#{pr['number']}: {'; '.join(problems) or 'checks pass'}")
-    if LABEL in {l["name"] for l in pr["labels"]} and not pr["isDraft"] and not problems:
+    labelled = LABEL in {l["name"] for l in pr["labels"]}
+    if (labelled or board_only()) and not pr["isDraft"] and not problems:
         r = sh("gh", "pr", "merge", str(pr["number"]), "--merge", "--match-head-commit", sha, check=False)
         if r.returncode == 0:
             print(f"#{pr['number']}: merged into main")

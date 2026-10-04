@@ -73,7 +73,8 @@ the board.
   `preproduction/` in friendcraft).
 - Positions, questions and terms go to the board, so Wendell flips, answers and steers there. The
   board's top page holds only unresolved work; everything decided moves to its Resolved view (Wendell,
-  2026-10-02). Add rows to `board/board_data.json` in the home repo, run `python3 board/build_board.py`,
+  2026-10-02). Add rows with `python3 board/sync_board.py --live <saved live page> --rows <rows.json> --push` in the home
+  repo (it brings the live page's rows onto main first, then builds and pushes; docs/merging.md), or edit `board/board_data.json` on main, run `python3 board/build_board.py`,
   and publish `board/council-board.html` to the same URL the ledger records carry.
 - When a board read is recorded in the ledger, add each decided item to `resolved` in
   `board_data.json` with its decision and the ledger file, rebuild, and republish. A saved but
