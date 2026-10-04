@@ -1,7 +1,7 @@
 # The feature request move
 
 A move the council runs together when a feature request comes up. It turns an ask into a well-scoped project and a
-spec kit. It runs in chat with Wendell, and it updates the Council Board when it is done.
+spec kit. Wendell plays it on the Council Board as a battle, and the board is updated as each turn saves.
 
 ## The ask, in his words
 
@@ -16,10 +16,18 @@ Wendell, 2026-10-04, in the Sprout Game project thread that started this move:
 
 > The output of a process like this should be a well scoped project and spec kit
 
-**This move is the one place a council question reaches him in chat.** The board rule in CLAUDE.md still holds for
-everything else. Inside a run of this move, the 2 step is a dialogue, so its questions go to him in the thread, one
-round at a time, and each answer is recorded as a ruling. When the run closes, its positions, any question left open,
-and the spec kit's link go to the board. A question that comes up outside a run still goes to the board.
+**The dialogue runs on the board, never in chat.** The first version of this move sent the 2 step's questions to
+him in the thread. He overruled that the same day, when a run asked him in chat: *"This should've ended up on the
+board and not in front of me"* (Wendell, 2026-10-04; board position `frm-questions-to-board`). A thread reply says
+what changed and links the board, with no question in it.
+
+**On the board, a run is a battle.** Wendell, 2026-10-04: *"Yeah I'd like it to be kind of like a minigame. The the
+board is the world map and emergent new feature is like a pokemon battle [...] I through the battle and at the end the
+board is updated"*. The Open tab shows each run as an encounter. Playing it opens a battle screen where the work is
+the creature: the 3 step is its introduction, each question of the round is a turn whose options are the moves, and
+each position is a turn he lets stand or overrules. Every turn saves to the board's store exactly as the row's own
+Save button does, so a board read records it like any other row. Running away saves nothing more, and the encounter
+waits on the map. The creature's look comes from the run's id and one of the five elements, which are the session's design.
 
 ## The grammar: Mastering Allyship's three questions
 
@@ -55,7 +63,7 @@ correct in the 2 step. It is written before the 2 step opens, as `request.md` in
 
 ### 2: Talk to it (second person, the dialogue)
 
-This is the back and forth in chat, where the council and Wendell understand the needs of the work in depth and the
+This is the back and forth, played as the battle on the board, where the council and Wendell understand the needs of the work in depth and the
 charge around it. Every face casts the I Ching at the start (`python3 council/iching/cast.py ... --json`), as in a
 pass. Four unpacking questions belong here:
 
@@ -71,6 +79,11 @@ Rules for the dialogue:
 
 - One round at a time. A round asks at most three questions, each answerable in a word or a line, each with the
   council's recommended answer marked. Anything the record can answer is stated as a position, not asked.
+- A round goes on the board as question and position rows, plus an entry in `battles` in `board/board_data.json`
+  naming them: `{id, name, repo, element, record, intro, rounds: [{n, questions, positions}]}`. The rows are written
+  through `board/sync_board.py` on main, like any board row. The next round adds `{n: 2, ...}` to the same battle.
+- When Wendell says he saved, read the store and record his turns in `request.md` under the round, quoted, as
+  rulings, and in a ledger record.
 - The council talks to the work as well as to Wendell. A face may write a short exchange with the work in the
   second person ("You want to be playable. What do you need first?") where that surfaces a need the record misses.
 - Each answer of his is recorded in `request.md` under the round, quoted, as a ruling.
@@ -114,8 +127,8 @@ board as a position until he flips it.
 2. The spec kit beside it: `spec.md`, `plan.md`, `tasks.md`, with the pipeline's three council sections filled.
 3. A ledger record in the home repo's `council/ledger/`, with the casts, his rulings, and any lesson for a face under
    `lessons_pending`.
-4. Board rows, on main: a position for each point the run resolved (each with the citation for why it did not need
-   him), a question for anything left open, and the `[wendell]` steps on the Your steps tab.
+4. Board rows, on main: the battle entry, a position for each point the run resolved (each with the citation for
+   why it did not need him), a question for anything left open, and the `[wendell]` steps on the Your steps tab.
 5. A pull request in the feature's repo with the spec kit.
 
 ## Where it sits
@@ -128,3 +141,4 @@ for, and the feature goes on from `plan`. `feature_request` in `council/pipeline
 | Date | Feature | Repo | Record |
 |---|---|---|---|
 | 2026-10-04 | Scene staging: a scene script becomes a playable, animated slice | wendell-britt/sprout | `.specify/specs/scene-staging/request.md` |
+| 2026-10-04 | Character creation: looks for the people of the world | wendell-britt/sprout | `.specify/specs/character-creation/request.md` |
