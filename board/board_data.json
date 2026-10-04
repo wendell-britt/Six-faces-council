@@ -4080,6 +4080,11 @@
     "decision": "stands",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "rg-shared-cloth-pass": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
    }
   },
   "questions": {
@@ -4369,6 +4374,24 @@
     "label": "Big Heart enters canon as what the Damaged Self is waiting for",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "rg-front-legs": {
+    "decision": "varies",
+    "label": "The gap between the front legs changes with the move",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+   },
+   "rg-cloth-squash": {
+    "decision": "squash",
+    "label": "The clothes squash flat onto each wearer's own leg where the legs press them",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+   },
+   "rg-hard-mode": {
+    "decision": "lag",
+    "label": "Hard mode stays, and the give is drawn a beat after the hit",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
    }
   },
   "causes": {
