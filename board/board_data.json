@@ -3711,6 +3711,28 @@
      "c": "Say what is off in the steer box. It is redrawn and comes back to you before anything else is drawn."
     }
    ]
+  },
+  {
+   "id": "cc-robe-eye",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout character creation 6",
+   "q": "Does this robe go into the robe set? It is the second piece we drew: a long robe closed to the ankle, wide sleeves that hang and flare below the elbow, a crossed collar, a sash, and pale trim at the cuffs and hem.",
+   "why_you": "The quality gate's last step is your eye: only your approval puts art we drew into the game. This is a design sheet, one standing frame per view in three colourways (indigo, maroon, and a white priest's robe). Every frame stays within the 15-colour budget. The sheet is /mnt/project-files/character-creation/robe-design.png (sprout pull request #14). Once you approve the design, it is drawn for every walk, slash and thrust frame and comes back to you as a game part you can check frame by frame.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Approve the design",
+     "c": "The robe is drawn for every action frame and comes back to you as a game part. Each role's mark comes after that."
+    },
+    {
+     "v": "redraw",
+     "label": "Redraw it",
+     "c": "Say what is off in the steer box, such as the sleeves, the collar or the colours. A new sheet comes back to you before anything is animated."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5259,6 +5281,12 @@
     "label": "Poignance and triumph, beside wonder",
     "recorded": "2026-10-04",
     "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "cc-topknot-eye": {
+    "decision": "approve",
+    "label": "Approve it: the topknot is every role's hair",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round5.json (pull request #14)"
    }
   },
   "causes": {
@@ -5528,6 +5556,13 @@
      "n": 5,
      "questions": [
       "cc-topknot-eye"
+     ],
+     "positions": []
+    },
+    {
+     "n": 6,
+     "questions": [
+      "cc-robe-eye"
      ],
      "positions": []
     }
