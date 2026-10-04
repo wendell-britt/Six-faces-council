@@ -1,0 +1,58 @@
+{
+ "id": "2026-10-04-jev-asset-board-read",
+ "date": "2026-10-04",
+ "project": "six-faces-council",
+ "cause": "feature-design",
+ "question": "The Jev asset pass: eight positions and the asset-trial numbers question",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "Council Board store, answers saved 2026-10-04T00:16Z to 00:18Z; rows from pull request #25 (branch council/jev-asset-board-rows)",
+ "positions": {
+  "jev-asset-scope": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:15.092Z"
+  },
+  "jev-card-art-deprecated": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:19.593Z"
+  },
+  "jev-lore-candidate": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:22.526Z"
+  },
+  "jev-licensing-not-live": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:24.993Z"
+  },
+  "sprites-pre-august-discard": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:28.977Z"
+  },
+  "jev-images-backlog": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:31.445Z"
+  },
+  "jev-asset-recount": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:36.747Z"
+  },
+  "jev-asset-beat-script": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:18:40.612Z"
+  }
+ },
+ "questions": {
+  "jev-asset-numbers": {
+   "choice": null,
+   "sent_back": true,
+   "savedAt": "2026-10-04T00:16:12.051Z",
+   "wendell": "I don’t know how to answer this. We should have the 6 game masters weigh in on it. This should also be a feature. If I’m stumped I can send something back to the game masters to research best practices"
+  }
+ },
+ "acted_on": [
+  "The eight positions are recorded as standing.",
+  "jev-asset-numbers stays open: its send-back was run (pull request #25 rewrote the question from the council's research), and it waits on his choice.",
+  "His ask that sending a question back be a feature is drafted as a spec on branch council/board-send-back-spec."
+ ],
+ "outcome": "eight stand; one sent back and re-asked"
+}

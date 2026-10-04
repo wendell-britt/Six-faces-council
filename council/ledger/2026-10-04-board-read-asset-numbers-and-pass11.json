@@ -1,0 +1,32 @@
+{
+ "id": "2026-10-04-board-read-asset-numbers-and-pass11",
+ "date": "2026-10-04",
+ "project": "six-faces-council",
+ "cause": "feature-design",
+ "question": "The asset trial's scoring, and two pass eleven positions",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "Council Board store; Wendell said 'Ok updated the board' at 2026-10-04T00:42Z",
+ "questions": {
+  "jev-asset-numbers": {
+   "choice": "calibrate",
+   "savedAt": "2026-10-04T00:36:40.559Z",
+   "answered_in": "board"
+  }
+ },
+ "positions": {
+  "bm-interview-block": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:42:13.657Z"
+  },
+  "bm-sprout-emotional-body": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:42:22.488Z"
+  }
+ },
+ "acted_on": [
+  "Recorded only. The two sample sizes for option C are still Wendell's numbers; the council does not pick them.",
+  "bm-sprout-emotional-body calls for one sentence in sprout docs/design.md; it is left to the session that owns pass eleven."
+ ],
+ "outcome": "calibrate chosen; two stand"
+}

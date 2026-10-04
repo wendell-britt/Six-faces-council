@@ -1,0 +1,24 @@
+{
+ "id": "2026-10-04-pass11-board-read-2",
+ "date": "2026-10-04",
+ "project": "six-faces-council",
+ "cause": "feature-design",
+ "question": "Pass eleven follow-ups: the daemon re-brief and the Big Heart line",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "Council Board store; Wendell said 'Updated the board' at 2026-10-04T00:30Z",
+ "positions": {
+  "bm-brief-ship": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:28:20.859Z"
+  },
+  "bm-big-heart-line": {
+   "status": "stands",
+   "savedAt": "2026-10-04T00:28:30.991Z"
+  }
+ },
+ "acted_on": [
+  "Both positions are recorded as standing. Merging pull request #28 and writing the line into The Library are left to the session that owns pass eleven."
+ ],
+ "outcome": "two stand"
+}
