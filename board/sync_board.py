@@ -31,7 +31,7 @@ ROOT = HERE.parent
 DATA = HERE / "board_data.json"
 TEMPLATE = HERE / "template.html"
 TAG = '<script id="board-data" type="application/json">'
-LISTS = ("positions", "questions", "terms", "causes")
+LISTS = ("positions", "questions", "terms", "causes", "battles")
 LATER = ("updated", "steer_recorded_through")
 
 
