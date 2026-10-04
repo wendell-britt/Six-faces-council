@@ -6293,6 +6293,21 @@
       "pr-structure-not-names",
       "pr-rules-unchanged"
      ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "pr-who-confers"
+     ],
+     "positions": [
+      "pr-test-result",
+      "pr-pace-by-level",
+      "pr-act3-sources",
+      "pr-gets-us",
+      "pr-feels-now",
+      "pr-what-true",
+      "pr-reservations"
+     ]
     }
    ]
   }
