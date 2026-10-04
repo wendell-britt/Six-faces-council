@@ -6782,9 +6782,19 @@
    "text": "On pr-grid-built (said in chat): On the council board I need to be able to “go back” if I overrule without context (like I just did) \n\nThe context is here. The sphere grid works because it acts as a labyrinth not hub and spoke. The path spirals and fractals. We need to do a study of how the sphere grid operates to get a clearer picture of this",
    "savedAt": "2026-10-04T14:19:48Z",
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
+  },
+  {
+   "text": "On pr-branch-emphasis: Branches aren’t based on stats like the sphere grid branches unlock moves and the specific build of stats that would support the subtype of the type of character you’re building as you traverse the path ",
+   "savedAt": "2026-10-04T14:20:54.344Z",
+   "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council); acted on in sprout council/ledger/2026-10-04-ranks-and-badges-round5.json (pull request #17)"
+  },
+  {
+   "text": "On pr-labyrinth-scale: Something between a and c. The cycle inward connects to the world ring concept- the idea of fighting inner demons for development resonates and using the spoils of those fights for advancement ",
+   "savedAt": "2026-10-04T16:25:21.599Z",
+   "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council); acted on in sprout council/ledger/2026-10-04-ranks-and-badges-round5.json (pull request #17)"
   }
  ],
- "steer_recorded_through": "2026-10-04T14:19:48Z",
+ "steer_recorded_through": "2026-10-04T16:25:21.599Z",
  "battles": [
   {
    "id": "fr-scene-staging",
@@ -7070,6 +7080,16 @@
      "positions": [
       "pr-study-findings",
       "pr-labyrinth-grid"
+     ]
+    },
+    {
+     "n": 6,
+     "questions": [],
+     "positions": [
+      "pr-inward-labyrinth",
+      "pr-subtype-arms",
+      "pr-inner-demons",
+      "pr-design-applied"
      ]
     }
    ]
