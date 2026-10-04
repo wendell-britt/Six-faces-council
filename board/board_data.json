@@ -5852,6 +5852,162 @@
     "label": "Overruled: a labyrinth, not a hub and spoke (steer given in chat)",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
+   },
+   "dy-limit-wording": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "dy-research-handoff": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "cost-quiet-wakes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "cost-daily-script": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "cost-per-row": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "cost-short-rule": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "daemon-reports-saved": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "gn-verify": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "gn-rule17": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "gn-hold-template": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "gn-ke-notes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "sm-hearing-exposes-bond": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "tr-builder-not-layers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "jev-select-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "jev-fallback": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "jev-candidates-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "jev-reserved": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "jev-no-player-text": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "jev-spec-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "rg-stance-by-move": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-branch-emphasis": {
+    "decision": "overrule",
+    "label": "Overruled: branches unlock moves and the stat build for a subtype, not one stat each",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-design-text": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-units-mapping": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-study-findings": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-labyrinth-grid": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "dy-2026-10-04-open": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
    }
   },
   "questions": {
@@ -6339,6 +6495,36 @@
     "label": "Cross between branches with keys",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+   },
+   "gn-pilot": {
+    "decision": "open",
+    "label": "An open call to readers",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "gn-proof": {
+    "decision": "done",
+    "label": "It's done",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "dy-model": {
+    "decision": "smaller",
+    "label": "Try the smaller model",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "cc-topknot-door": {
+    "decision": "overhang",
+    "label": "Hair may overhang",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-labyrinth-scale": {
+    "decision": "steer",
+    "label": "Between A and C: the inward cycle joins the world ring; fighting inner demons, and their spoils pay for advancement",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
    }
   },
   "causes": {
@@ -6473,6 +6659,11 @@
     "decision": "adopt",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "encounter-quest-adventure-campaign": {
+    "decision": "adopt",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
    }
   }
  },
