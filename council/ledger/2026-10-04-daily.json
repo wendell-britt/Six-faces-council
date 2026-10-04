@@ -1,0 +1,18 @@
+{
+ "id": "2026-10-04-daily",
+ "date": "2026-10-04",
+ "recorded_at": "2026-10-04T15:48:31+00:00",
+ "project": "six-faces-council",
+ "cause": "daily-move",
+ "convened_by": "routine",
+ "invoked_from": "claude-code",
+ "level": 1,
+ "move": "open",
+ "found": "23 answers Wendell saved on the board that main never recorded; #20 and #24 open on saves that stood",
+ "finished": "Finding note council/research/2026-10-04-saved-but-never-recorded.md",
+ "branch": "daily/2026-10-04-open",
+ "pull_request": "https://github.com/wendell-britt/Six-faces-council/pull/36",
+ "rows": [
+  "dy-2026-10-04-open"
+ ]
+}
