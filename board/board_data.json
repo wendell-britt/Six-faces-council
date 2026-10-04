@@ -2174,6 +2174,50 @@
    "auto": true,
    "pos": "The rank table is built as data: seven ranks with names left blank, and the 46 badges today's counters can earn. A check fails any rank that can be reached an act early, that leaves no electives, or that asks more than the game offers by then. It passes, and it catches a forest rank moved into Act I. Every number is a placeholder. This stands unless you flip it.",
    "why": "sprout data/ranks.json, data/badges.json and tools/test-ranks.mjs (npm run test:ranks), pull request #17. The spec's Definition of done asked for this before any screen."
+  },
+  {
+   "id": "pr-grid-built",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout ranks and badges 4",
+   "auto": true,
+   "pos": "The grid is built as data: a centre and five branches of eight nodes. Entering a branch takes its refiner's endorsement and a key. The first key comes with the first endorsement and the three forest ranks give one each, so a player holds four keys and never enters all five branches. Over the game a player earns 55 points; one branch costs 20 and the whole grid 100, so a player finishes a subclass and never buys everything. Two scripted players with the same points end with different builds. This stands unless you flip it.",
+   "why": "sprout data/grid.json and tools/test-ranks.mjs (npm run test:ranks, 219 checks pass). Giving a node a gate level, or unlocking a crossing, fails the check. Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 3 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-branch-emphasis",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout ranks and badges 4",
+   "auto": true,
+   "pos": "Each branch leans on one stat, so a build reads as a subclass: wood the ring's size, fire maximum HP, earth the composure ceiling, metal talisman slots, and water talisman sub-boards. These are what Root level already sets, plus the talisman boards that live inside the grid. The pairings and every amount are placeholders until a playtest. This stands unless you flip it.",
+   "why": "docs/design.md, \"What Root level sets\" (maximum HP, the composure ceiling, talisman slots, the ring's size), and pr-reservations. Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 3 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-units-mapping",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges 4",
+   "auto": true,
+   "pos": "Your four units name today's content this way. An encounter is one fight, bout, spirit negotiation or scene. A quest is a bounty, a village's problem or a milestone's task. An adventure is a village's whole arc, the cave, or the last rank's trial. A campaign is the main story, and post-story play adds others. This stands unless you flip it.",
+   "why": "Your steer on pr-last-rank-adventure: \"The whole game uses these terms not just the last adventure\". Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 3 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-design-text",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "sprout ranks and badges 4",
+   "auto": true,
+   "pos": "The proposed design.md text for ranks, badges, the grid and the units of play goes into design.md on your next board read unless you flip it. It adds a block after Root level in the Systems reference and a short block at the top of Story structure, and every sentence cites the ruling it comes from.",
+   "why": "sprout .specify/specs/ranks-and-badges/design-text.md (pull request #17). Sprout's rules change design.md only on your word, so this waits for a board read."
   }
  ],
  "questions": [
@@ -5711,6 +5755,36 @@
     "label": "Overruled: the last rank asks an adventure",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-supply-implications": {
+    "decision": "stands",
+    "label": "Stands: more badges than any rank asks",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+   },
+   "pr-two-ladders": {
+    "decision": "stands",
+    "label": "Stands: two ladders",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+   },
+   "pr-last-rank-adventure": {
+    "decision": "stands",
+    "label": "Stands, with your steer: the units name the whole game",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+   },
+   "pr-five-branches": {
+    "decision": "stands",
+    "label": "Stands: five branches",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+   },
+   "pr-rank-table-built": {
+    "decision": "stands",
+    "label": "Stands: the rank table and its check",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
    }
   },
   "questions": {
@@ -6192,6 +6266,12 @@
     "label": "Two ladders: the refiners confer the forest's",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-branch-crossing": {
+    "decision": "keys",
+    "label": "Cross between branches with keys",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
    }
   },
   "causes": {
@@ -6647,6 +6727,16 @@
       "pr-last-rank-adventure",
       "pr-five-branches",
       "pr-rank-table-built"
+     ]
+    },
+    {
+     "n": 4,
+     "questions": [],
+     "positions": [
+      "pr-grid-built",
+      "pr-branch-emphasis",
+      "pr-units-mapping",
+      "pr-design-text"
      ]
     }
    ]
