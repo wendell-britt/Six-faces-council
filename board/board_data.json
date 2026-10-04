@@ -1648,6 +1648,17 @@
    "auto": true,
    "pos": "Sprout's design doc gains one sentence beside the six gates: \"The Emotional Body is not a gate. The farm loop is Emotional Alchemy, so the Emotional Body is the world the player works in.\" It goes in on your next board read unless you flip it or reword it.",
    "why": "The book seats seven daemons and the final bout has six gates, so a later session could add a seventh to match. The design doc is yours, so the sentence is shown whole first. Source: sprout docs/design.md, the final bout; MTGOA Daemons — Breakdown."
+  },
+  {
+   "id": "rg-shared-cloth-pass",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "root-game cloth",
+   "auto": true,
+   "pos": "Root-game's next cloth step is the shared pass, on the preview page first: both fighters' cloth collides in one pass, and the partner's cloth stops being collision shapes in each fighter's own step. It goes ahead whatever the two cloth questions decide.",
+   "why": "The prototype measured it: the skirts settle when the bodies are still (under 1 cm a step, against 3.8 cm), and the cloth step falls from 33.5 ms to about 4 ms. It does not depend on the stance or the squashing. The preview comes first, as root-game's rules require. Source: root-game research/CLOTH_INTERVIEW_2026-10-04.md"
   }
  ],
  "questions": [
@@ -3033,6 +3044,126 @@
     ],
     "unchecked": "The intervals were recomputed and match. Four more sources in the full report (council/daemons/reports/) rest on search summaries and are not relied on here."
    }
+  },
+  {
+   "id": "rg-front-legs",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "root-game cloth",
+   "q": "In push hands as you practise it, how close are the two partners' front thighs? In the game they stand 3 cm apart, skin to skin, and the front shins 4.8 cm.",
+   "why_you": "The stance is Root's, and root-game's rules keep the drawn body from changing it; how the art stands is a fact only you hold. The answer decides whether the clothes must squash between the legs or whether Root's stance changes.",
+   "not_before": "The 3 cm gap was first measured on 2026-10-04, when the cloth prototype found that the crossings sit between the front legs.",
+   "options": [
+    {
+     "v": "touching",
+     "label": "A. Nearly touching, as the game has them",
+     "c": "The stance stays. The clothes there cannot fit at their cut, so they have to squash where the legs press them (the next question)."
+    },
+    {
+     "v": "hand",
+     "label": "B. About a hand's width apart, 8 to 10 cm",
+     "c": "Root's stance changes so the front legs stand further apart. The clothes may then fit as they are, and the squashing work may not be needed."
+    },
+    {
+     "v": "varies",
+     "label": "C. It changes with the move",
+     "c": "Root's stance would need a rule for the gap by move. The squashing work is probably still needed for the close moments."
+    }
+   ],
+   "research": {
+    "title": "What the cloth prototype found",
+    "lead": "Almost all the cloth that passes through cloth sits in the gap between the two front legs, and that gap is too narrow for the clothes as they are cut.",
+    "sections": [
+     {
+      "h": "Where the crossings are",
+      "items": [
+       "238 crossing edges at rest in the first meeting: 127 within 12 cm of both front legs, 97 at one front leg, 14 anywhere else.",
+       "Most sit 0.5 to 0.6 m up, at the thighs; the pelvis is at 0.63 m."
+      ]
+     },
+     {
+      "h": "Why no collision method fixed it",
+      "items": [
+       "The front thighs are 3.0 cm apart skin to skin.",
+       "Each trouser leg is cut 1.8 cm off the thigh, and its top rows are held by the body.",
+       "Each skirt sits outside its own trousers.",
+       "So each side needs about 3 cm and both sides about 6 cm, in a 3 cm gap. Every collision variant crossed 222 to 232 times."
+      ]
+     },
+     {
+      "h": "What the prototype did fix",
+      "items": [
+       "One shared cloth pass for both fighters makes the skirts settle when the bodies are still (under 1 cm a step, against 3.8 cm today).",
+       "It cuts the cloth step from 33.5 ms to about 4 ms on the test machine."
+      ]
+     }
+    ],
+    "recommend": "No recommendation: this is about how the art is practised.",
+    "sources": [
+     {
+      "text": "root-game research/CLOTH_INTERVIEW_2026-10-04.md, the prototype's answers",
+      "url": "https://github.com/wendell-britt/root-game/blob/claude/root-game-handoffs-m1l78d/research/CLOTH_INTERVIEW_2026-10-04.md"
+     }
+    ]
+   }
+  },
+  {
+   "id": "rg-cloth-squash",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "root-game cloth",
+   "q": "Where the two front legs press the clothes between them, should the clothes squash flat onto each wearer's own leg?",
+   "why_you": "It changes how every garment is built, including the trouser rows now fixed to the body, and how the clothes look up close. How the clothes should look is yours.",
+   "not_before": "It only became a choice on 2026-10-04, when the prototype showed that no collision method can part clothes cut 6 cm thick in a 3 cm gap.",
+   "options": [
+    {
+     "v": "squash",
+     "label": "A. Yes, squash them where pressed",
+     "c": "Each garment, its held rows included, presses onto its own leg down to a few millimetres where the partner's leg pushes it. This is the answer of the Pixar paper Untangling Cloth for cloth caught between two bodies. It is new garment work."
+    },
+    {
+     "v": "hide",
+     "label": "B. No, leave the crossing where the camera cannot see it",
+     "c": "Nothing changes in the garments. The cloth check would count only what shows on screen, which first needs a visibility check that does not exist yet."
+    },
+    {
+     "v": "after-stance",
+     "label": "C. The stance question is answered first",
+     "c": "If the legs should stand a hand apart, the squashing may not be needed at all."
+    }
+   ]
+  },
+  {
+   "id": "rg-hard-mode",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "root-game finish",
+   "q": "Does Hard mode stay in the game? In Hard the answer has no time to give way before the attack lands, so the moves read as strikes there.",
+   "why_you": "It is how your game should feel at its hardest. On 2026-10-03 you said: \"We may need to remove hard mode entirely\". That left it open, and no work goes into Hard until you rule.",
+   "not_before": "Raised in the finish pass on 2026-10-03. It is on the board now because the open questions belong here, not in chat.",
+   "options": [
+    {
+     "v": "remove",
+     "label": "A. Hard mode goes",
+     "c": "The push-hands look you approved holds in every mode that remains, and the full-fight checks drop Hard."
+    },
+    {
+     "v": "strike",
+     "label": "B. Keep Hard with the strike timing",
+     "c": "Hard is the fast-reaction mode and looks like strikes, as it does today."
+    },
+    {
+     "v": "lag",
+     "label": "C. Keep Hard, and draw the give a beat after the hit",
+     "c": "Hard looks like push hands, but what you see lags what the game scored by about 0.15 s."
+    }
+   ]
   }
  ],
  "causes": [
@@ -4066,6 +4197,11 @@
     "label": "Stands: Sprout's design doc gains the Emotional Body sentence as shown",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
+   },
+   "rg-shared-cloth-pass": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
    }
   },
   "questions": {
@@ -4361,6 +4497,24 @@
     "label": "C: a calibration run teaches first; the mark is fixed in a dated file before a separate scored run",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
+   },
+   "rg-front-legs": {
+    "decision": "varies",
+    "label": "The gap between the front legs changes with the move",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+   },
+   "rg-cloth-squash": {
+    "decision": "squash",
+    "label": "The clothes squash flat onto each wearer's own leg where the legs press them",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+   },
+   "rg-hard-mode": {
+    "decision": "lag",
+    "label": "Hard mode stays, and the give is drawn a beat after the hit",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
    }
   },
   "causes": {
