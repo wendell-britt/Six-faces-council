@@ -1845,6 +1845,61 @@
    "auto": true,
    "pos": "Your round 2 answers are in. Healers now dress as doctors in trousers, and clergy as priests in robes and capes. Every role has two garment options. A blind judge who was not told how many people each role had named 12 of 12. Healer against porter is now the weak pair. Triumph passes, because one command builds a hall of 24. Wonder fails, because the judge found nothing Taoist and called every figure's cyan eyes \"fantasy or anime\". Next, each role gets one mark tied to what the story is doing now, drawn through the quality gate for your eye. Healer and porter come first, and the eyes are remapped to dark brown. This stands unless you flip it.",
    "why": "Your answers: wonder and triumph; \"Healer is separate from clergy. Doctors versus priests\"; the cc-what-true overrule. The sheet is /mnt/project-files/character-creation/role-looks-round2.png. Source: sprout .specify/specs/character-creation/request.md, \"Retest after round 2\" (pull request #11)"
+  },
+  {
+   "id": "fr-staging-gets-us",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "feature request: scene staging, round 2",
+   "auto": true,
+   "pos": "What this gets us. Inside: wonder for you, a scene that plays in a way you did not have to picture, and wonder for the player, fear's gold state, in a cave where people who are not there speak. Outside: you review a scene by watching it, the player sees each lesson happen in a place instead of reading it, all ten scripts become playable, and the brother's heart scene is written for a stage that exists. This stands unless you flip it.",
+   "why": "Your picks on fr-staging-lead (maker) and fr-staging-feel (wonder). Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "fr-staging-feels-now",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "feature request: scene staging, round 2",
+   "auto": true,
+   "pos": "How it feels now. For the player, the cave is a walk through eight empty chambers. For you, ten scripts read only on paper, and the heart scene waits on staging. This stands unless you flip it.",
+   "why": "node story/mirror.mjs prints all ten scenes, and slice/main.js has no other people on the map and no scene trigger. Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "fr-staging-what-true",
+   "faces": [
+    "architect",
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "feature request: scene staging, round 2",
+   "auto": true,
+   "pos": "What would have to be true. For your wonder, the stager makes the choices you did not script (where a figure stands, which way it walks in, where the camera sits), and the same script always gives the same staging, so a surprise can be kept or pinned. For the player's wonder, a figure arrives and leaves with no explanation, the hint is visible on screen, and the scene follows design.md's event rules: one event at a time, with the clock paused. Everything fits the 16 by 14 tile screen with the chamber in view. This stands unless you flip it.",
+   "why": "Your pick of auto on fr-staging-auto, the cave scenes' assumptions (nobody in the cave is really there), docs/design.md line 307, and docs/decisions/screen-size.md. Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "fr-staging-reservations",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "feature request: scene staging, round 2",
+   "auto": true,
+   "pos": "Reservations. \"I'm not ready\" (more scripts before anything moves) is answered by staging chamber 1 first. \"I'm not capable\" (a new cutscene engine) is answered by building on the planner's chamber rectangles, say() and playAction(). \"I don't belong\" is live: the genre's habit is RPG Maker's event commands, and this game's scenes are one event voiced by the reading. The cheap test checks it. This stands unless you flip it.",
+   "why": "The move's table of the six beliefs, applied to the record. Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "fr-staging-test",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "feature request: scene staging, round 2",
+   "auto": true,
+   "pos": "The cheap test, run next: a first stager places chamber 1's figures from the script and its chamber alone, then a script checks all eight chambers. Each figure stands on floor, each walk path reaches its mark, the farmer and the speaker are both on screen, and the dialogue box covers neither. A chamber that cannot hold its scene shows the design is wrong. This stands unless you flip it.",
+   "why": "The falsify stage of council/pipeline.yaml, and fr-staging-chamber1. The cave chambers are small: chamber 1 is 8 by 5 tiles. Source: sprout .specify/specs/scene-staging/request.md"
   }
  ],
  "questions": [
@@ -3561,6 +3616,44 @@
      "c": "The test checks for poignance alone."
     }
    ]
+  },
+  {
+   "id": "fr-staging-feel-more",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "feature request: scene staging, round 2",
+   "q": "You picked wonder for chamber 1's first play. Which other feelings, up to two, belong beside it?",
+   "why_you": "You answered before the board took more than one pick, and your steer on character creation asked for up to three. Wonder is already recorded. Only you hold this. The council has no recommendation.",
+   "not_before": "Multi-pick went live on the board on 2026-10-04, after you answered fr-staging-feel.",
+   "max": 2,
+   "options": [
+    {
+     "v": "poignance",
+     "label": "Poignance",
+     "c": "The test also checks that the traveller's words carry what Cael's parting carried."
+    },
+    {
+     "v": "bliss",
+     "label": "Bliss",
+     "c": "The test also checks that timing, movement and boxes flow."
+    },
+    {
+     "v": "triumph",
+     "label": "Triumph",
+     "c": "The test also checks that a script plays with no hand placement."
+    },
+    {
+     "v": "peace",
+     "label": "Peace",
+     "c": "The test also checks that every later scene will play the same way."
+    },
+    {
+     "v": "wonder-only",
+     "label": "Wonder only",
+     "c": "The test checks for wonder alone."
+    }
+   ]
   }
  ],
  "causes": [
@@ -4671,6 +4764,36 @@
     "label": "Stands",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+   },
+   "fr-staging-chamber1": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-mirror-player": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-slice": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-belief-readings": {
+    "decision": "deferred",
+    "until": "2026-10-04T02:27:56Z",
+    "label": "Deferred 1 hour, until 2026-10-04T02:27:56Z",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-feature-request-scene-staging-round-1.json (six-faces-council)",
+    "history": [
+     {
+      "recorded": "2026-10-04",
+      "saved_at": "2026-10-04T01:27:56Z",
+      "until": "2026-10-04T02:27:56Z",
+      "hours": 1
+     }
+    ]
    }
   },
   "questions": {
@@ -5008,6 +5131,24 @@
     "label": "Wonder and triumph, beside poignance",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+   },
+   "fr-staging-lead": {
+    "decision": "maker",
+    "label": "You as maker; the player's chamber 1 is the acceptance test",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-feel": {
+    "decision": "wonder",
+    "label": "Wonder (picked before multi-pick; more asked in round 2)",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-auto": {
+    "decision": "auto",
+    "label": "The stager places everything, with pins",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
    }
   },
   "causes": {
@@ -5193,6 +5334,19 @@
       "fr-staging-chamber1",
       "fr-staging-mirror-player",
       "fr-staging-slice"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "fr-staging-feel-more"
+     ],
+     "positions": [
+      "fr-staging-gets-us",
+      "fr-staging-feels-now",
+      "fr-staging-what-true",
+      "fr-staging-reservations",
+      "fr-staging-test"
      ]
     }
    ]

@@ -89,10 +89,60 @@
    "words": "Yeah I'd like it to be kind of like a minigame. The the board is the world map and emergent new feature is like a pokemon battle\n\nI through the battle and at the end the board is updated",
    "where": "scene staging thread, 2026-10-04T01:22Z",
    "effect": "runs are played as battles on the board"
+  },
+  {
+   "row": "questions/fr-staging-lead",
+   "decision": "maker",
+   "saved_at": "2026-10-04T01:26:13Z",
+   "via": "board battle fr-scene-staging"
+  },
+  {
+   "row": "questions/fr-staging-feel",
+   "decision": "wonder",
+   "saved_at": "2026-10-04T01:26:28Z",
+   "via": "board battle fr-scene-staging",
+   "note": "Single pick, saved before the board took several; round 2 asks for up to two more (fr-staging-feel-more)."
+  },
+  {
+   "row": "questions/fr-staging-auto",
+   "decision": "auto",
+   "saved_at": "2026-10-04T01:26:44Z",
+   "via": "board battle fr-scene-staging"
+  },
+  {
+   "row": "positions/fr-staging-chamber1",
+   "decision": "stands"
+  },
+  {
+   "row": "positions/fr-staging-mirror-player",
+   "decision": "stands"
+  },
+  {
+   "row": "positions/fr-staging-slice",
+   "decision": "stands"
+  },
+  {
+   "row": "positions/fr-belief-readings",
+   "decision": "deferred",
+   "until": "spaced",
+   "hours": 1,
+   "saved_at": "2026-10-04T01:27:56Z"
   }
  ],
  "retired": {
   "fr-dialogue-on-board": "duplicate of frm-questions-to-board, which the character creation run posted first"
  },
- "outcome": "round 1 posted; waiting on his turns"
+ "outcome": "Round 1 played on the board 2026-10-04: maker leads, wonder, the stager places everything with pins; the three positions stand; fr-belief-readings deferred an hour. Round 2 posted: fr-staging-feel-more and four positions answering the 2 step's unpacking questions, plus the cheap test (fr-staging-test).",
+ "round_2": {
+  "questions": [
+   "fr-staging-feel-more"
+  ],
+  "positions": [
+   "fr-staging-gets-us",
+   "fr-staging-feels-now",
+   "fr-staging-what-true",
+   "fr-staging-reservations",
+   "fr-staging-test"
+  ]
+ }
 }
