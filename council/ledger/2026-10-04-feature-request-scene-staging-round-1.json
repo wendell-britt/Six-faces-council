@@ -1,0 +1,98 @@
+{
+ "id": "2026-10-04-feature-request-scene-staging-round-1",
+ "date": "2026-10-04",
+ "project": "sprout",
+ "source_doc": "sprout .specify/specs/scene-staging/request.md",
+ "move": "council/moves/feature-request.md",
+ "asked": "Wendell, 2026-10-04: \"So this is a good opportunity to test out a feature request process.\"",
+ "casts": [
+  {
+   "agent": "shaman",
+   "n": 62,
+   "name": "Overstep",
+   "changing_lines": [
+    1,
+    4
+   ],
+   "becomes": "Nightfall"
+  },
+  {
+   "agent": "architect",
+   "n": 48,
+   "name": "The Well",
+   "changing_lines": [
+    4
+   ],
+   "becomes": "Overload"
+  },
+  {
+   "agent": "challenger",
+   "n": 15,
+   "name": "Understatement",
+   "changing_lines": [
+    1,
+    2,
+    4
+   ],
+   "becomes": "Vigour"
+  },
+  {
+   "agent": "regent",
+   "n": 50,
+   "name": "The Cauldron",
+   "changing_lines": [
+    2
+   ],
+   "becomes": "Passing Through"
+  },
+  {
+   "agent": "diplomat",
+   "n": 36,
+   "name": "Nightfall",
+   "changing_lines": [
+    1,
+    3
+   ],
+   "becomes": "Bearing"
+  },
+  {
+   "agent": "sage",
+   "n": 29,
+   "name": "Depths",
+   "changing_lines": [
+    1,
+    6
+   ],
+   "becomes": "Incubation"
+  }
+ ],
+ "round": 1,
+ "questions_posted": [
+  "fr-staging-lead",
+  "fr-staging-feel",
+  "fr-staging-auto"
+ ],
+ "positions_posted": [
+  "fr-staging-chamber1",
+  "fr-staging-mirror-player",
+  "fr-staging-slice",
+  "fr-belief-readings",
+  "fr-dialogue-on-board"
+ ],
+ "rulings": [
+  {
+   "words": "This should've ended up on the board and not in front of me",
+   "where": "character creation thread, 2026-10-04T01:21Z",
+   "effect": "the move's dialogue runs on the board (frm-questions-to-board)"
+  },
+  {
+   "words": "Yeah I'd like it to be kind of like a minigame. The the board is the world map and emergent new feature is like a pokemon battle\n\nI through the battle and at the end the board is updated",
+   "where": "scene staging thread, 2026-10-04T01:22Z",
+   "effect": "runs are played as battles on the board"
+  }
+ ],
+ "retired": {
+  "fr-dialogue-on-board": "duplicate of frm-questions-to-board, which the character creation run posted first"
+ },
+ "outcome": "round 1 posted; waiting on his turns"
+}
