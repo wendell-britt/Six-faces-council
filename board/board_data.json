@@ -2262,6 +2262,49 @@
    "auto": true,
    "pos": "Every board read now runs board/unrecorded.py, which lists each answer you saved that main has not recorded, and records all of them, not only the battle it came for. Pull request #37 merges at your next board read unless you flip this.",
    "why": "You stood dy-2026-10-04-open, which found 23 saves no session had read and proposed this check. All of them are recorded now, and #20 and #24 carry the merge label because their positions stood. Source: council/ledger/2026-10-04-board-read-saved-answers.json; six-faces-council#37"
+  },
+  {
+   "id": "pr-inward-labyrinth",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout ranks and badges 6",
+   "auto": true,
+   "pos": "The grid now sits between A and C, as you said. The five streams still close the outer ring in the generating order, and each stream winds inward toward the hub, which now sits at the spiral's end. The cycle still turns at three scales: the streams around the grid, the chambers along a path, and the five nodes in each chamber. Each stream is still a home you walk without keys, and water stays off the hub. This stands unless you flip it.",
+   "why": "You steered pr-labyrinth-scale to \"Something between a and c\". The build is in sprout tools/draft-grid.mjs and data/grid.json (241 nodes), drawn in .specify/specs/ranks-and-badges/grid-map.svg; tools/test-ranks.mjs passes 1,446 checks, and a hub link from a middle chamber fails it. Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 5 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-subtype-arms",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout ranks and badges 6",
+   "auto": true,
+   "pos": "Each stream is a type, and after its gate chamber it forks into two subtypes, taken from the relation table design.md already uses. The generating arm feeds and covers, as an ally covers the one it generates. The controlling arm checks and strikes, as controlling hits hard. Every chamber's lead node and each arm's capstone unlock a move, and the other nodes give that subtype's own pair of stats: ten subtypes, ten different pairs. A whole game's points finish one arm of your home but not both, so the subtype is a choice. The moves' names and effects wait on fight design. This stands unless you flip it.",
+   "why": "Your steer on pr-branch-emphasis: branches \"unlock moves and the specific build of stats that would support the subtype\". docs/design.md, the spirit fight's relation table and \"Each ally covers the one whose element it generates\". The check: 55 points walk one arm (at most 50) but not both (at least 94). Source: sprout .specify/specs/ranks-and-badges/request.md (pull request #17)"
+  },
+  {
+   "id": "pr-inner-demons",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "sprout ranks and badges 6",
+   "auto": true,
+   "pos": "Inner demons are fought in the world ring, as its weeds grown into a fight, because design.md already says the weeds are inner material not yet cleaned up. Each inner demon belongs to one of the five elements, and its spoils carry it. Points from Root level and ranks pay the way to a node, and spoils of the node's element activate it, as Final Fantasy X pairs sphere levels with spheres. When inner demons appear, how hard they are and what each drops wait on fight design. This stands unless you flip it.",
+   "why": "Your steer on pr-labyrinth-scale: \"fighting inner demons for development resonates and using the spoils of those fights for advancement\". docs/design.md, \"The ring\": weeds \"represent inner material that has not been cleaned up\". Every node in data/grid.json now names the spoils that activate it. Source: sprout .specify/specs/ranks-and-badges/request.md (pull request #17)"
+  },
+  {
+   "id": "pr-design-applied",
+   "faces": [
+    "regent"
+   ],
+   "pass": "sprout ranks and badges 6",
+   "auto": true,
+   "pos": "design.md now carries the units of play, at the top of the acts section, and the ranks, badges and grid block after the level curve, reconciled with your two steers. What you decided is marked Decided. The two arms, inner demons in the ring, and the pairing of points with spoils are marked Proposed and follow the three positions above. This stands unless you flip it.",
+   "why": "pr-design-text and pr-units-mapping stood at the 16:35 board read, with the instruction to reconcile the text with your steers first. Source: sprout docs/design.md and .specify/specs/ranks-and-badges/design-text.md (pull request #17)"
   }
  ],
  "questions": [
@@ -6739,9 +6782,19 @@
    "text": "On pr-grid-built (said in chat): On the council board I need to be able to “go back” if I overrule without context (like I just did) \n\nThe context is here. The sphere grid works because it acts as a labyrinth not hub and spoke. The path spirals and fractals. We need to do a study of how the sphere grid operates to get a clearer picture of this",
    "savedAt": "2026-10-04T14:19:48Z",
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
+  },
+  {
+   "text": "On pr-branch-emphasis: Branches aren’t based on stats like the sphere grid branches unlock moves and the specific build of stats that would support the subtype of the type of character you’re building as you traverse the path ",
+   "savedAt": "2026-10-04T14:20:54.344Z",
+   "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council); acted on in sprout council/ledger/2026-10-04-ranks-and-badges-round5.json (pull request #17)"
+  },
+  {
+   "text": "On pr-labyrinth-scale: Something between a and c. The cycle inward connects to the world ring concept- the idea of fighting inner demons for development resonates and using the spoils of those fights for advancement ",
+   "savedAt": "2026-10-04T16:25:21.599Z",
+   "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council); acted on in sprout council/ledger/2026-10-04-ranks-and-badges-round5.json (pull request #17)"
   }
  ],
- "steer_recorded_through": "2026-10-04T14:19:48Z",
+ "steer_recorded_through": "2026-10-04T16:25:21.599Z",
  "battles": [
   {
    "id": "fr-scene-staging",
@@ -7027,6 +7080,16 @@
      "positions": [
       "pr-study-findings",
       "pr-labyrinth-grid"
+     ]
+    },
+    {
+     "n": 6,
+     "questions": [],
+     "positions": [
+      "pr-inward-labyrinth",
+      "pr-subtype-arms",
+      "pr-inner-demons",
+      "pr-design-applied"
      ]
     }
    ]
