@@ -1518,6 +1518,136 @@
    "auto": true,
    "pos": "The site credits the Big Mind process and Voice Dialogue by name on an about-the-method page. The product's own title does not use the founder's name for his process. This stands unless you flip it.",
    "why": "The source is a workshop transcript by the process's founder, so it is material to learn from and credit, never text to publish. Source: council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "bm-brief-ship",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "The daemon re-brief merges on your next board read unless you flip this. Each of the seven agents now opens with its essence, ally form and wild form from the book, and the Damaged Self carries your Big Heart ruling.",
+   "why": "Position bm-daemon-brief stood on 2026-10-04. Only the agent files change; daemons.yaml and friendcraft's cells do not. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/28"
+  },
+  {
+   "id": "bm-big-heart-line",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "This line goes into the Breakdown under the Damaged Self, after its essence: \"**What it waits for:** Big Heart: to be held and let be. The Fixer tries to resolve what is meant to be witnessed.\" The second sentence is yours, from your Fixer facilitator notes. It goes in at the next session that can write The Library unless you flip it or reword it in the steer box.",
+   "why": "You chose 'canon' on bm-big-heart, whose option said the Breakdown gains one line. Canonical prose is yours, so the line is shown whole before it lands. Source: BigMind_Compiled.txt, Fixer section 5; council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "jev-asset-scope",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Jev's asset scope is admin art and the docs about it, for the people cocreating the world. Player uploads are out. This stands unless you flip it.",
+   "why": "Your words: 'Just admin art. This is for the people who will be cocreating the game world.' Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "jev-card-art-deprecated",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Card art is marked for deprecation, so the card-art prompt-completeness trial is retired. This stands unless you flip it.",
+   "why": "Your words: 'Card art is not. That can more or less be signaled for deprecation.' Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "jev-lore-candidate",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Lore stands. A check of lore against Sprout's world is a candidate trial that raises flags for a reader and never edits, ranks or approves, because lore is canonical prose. This stands unless you flip it.",
+   "why": "Your words: 'Lore stands but we want to make sure it's aligned with what's going on with the sprout game'. Canonical prose is on the reserved list. Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "jev-licensing-not-live",
+   "faces": [
+    "regent"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Licensing is not live, so the provenance trial waits and nothing is built for it now. This stands unless you flip it.",
+   "why": "Your words: 'Licensing isn't a live concern right now'. Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "sprites-pre-august-discard",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Sprites made before August are marked for discard and the research is kept. The marking is in records and docs, and no file is deleted by the council. This stands unless you flip it.",
+   "why": "Your words: 'most things made before August should probably be marked to be thrown out as well but the research should be kept'. Deleting files is a separate decision. Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "jev-images-backlog",
+   "faces": [
+    "architect"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Whether Jev accepts images goes on bars-engine's backlog as a research item, entry JEVI. This stands unless you flip it.",
+   "why": "Your words: 'I don't know if Jev accepts images. Let's add that to the backlog to find out'. Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "jev-asset-recount",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "The asset docs-versus-code trial's known positives are recounted after the pre-August marking, and the count is stated before any run. Two of the five known drifts concern sprites, so the live count is between two and five. This stands unless you flip it.",
+   "why": "The labelled set is the trial's ruler, and a ruler changes when the things it measures are discarded. Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "jev-asset-beat-script",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "The asset trial has to beat a constant-extraction script on the numeric drifts to earn its place. This stands unless you flip it.",
+   "why": "Two of the five known drifts are plain numbers a script catches. Same bar as the quote-to-claim trial's baseline. Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "bm-interview-block",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "Every daemon report now opens with the Big Mind interview before the five moves: its job on this problem, how it would do it, the hours it costs you, the pay you get, and who it works for. It ships in the same pull request as the re-brief and merges on your next board read unless you flip it.",
+   "why": "The faces never collected a daemon's cost and benefit before. The hours and the pay give them both, in the source's own questions. The report check now requires the heading, and a report without it fails. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/28"
+  },
+  {
+   "id": "bm-sprout-emotional-body",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "Sprout's design doc gains one sentence beside the six gates: \"The Emotional Body is not a gate. The farm loop is Emotional Alchemy, so the Emotional Body is the world the player works in.\" It goes in on your next board read unless you flip it or reword it.",
+   "why": "The book seats seven daemons and the final bout has six gates, so a later session could add a seventh to match. The design doc is yours, so the sentence is shown whole first. Source: sprout docs/design.md, the final bout; MTGOA Daemons — Breakdown."
   }
  ],
  "questions": [
@@ -2829,6 +2959,35 @@
      "c": "Nothing changes now, and the Sprout beat waits."
     }
    ]
+  },
+  {
+   "id": "jev-asset-numbers",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "jev asset",
+   "q": "How should the asset docs-versus-code trial be scored, and how many agreeing statements will you label?",
+   "why_you": "You sent this back (2026-10-04): you did not know how to answer and asked the game masters to research best practice. This is the result. In plain words: a pass mark is the line you draw before the test, such as this much caught means it passed. A sample size is how many labelled items you test on. With few items the answer is fuzzy, like judging a baker from five cookies. Your own numbers: you have five known mismatches, and two to five stay live after the sprite marking. If the model catches all five, the true catch rate could still be as low as about 48%. If it misses one, the best guess is 80%, and the true rate could be anywhere from about 28% to 99%. Those two ranges overlap almost completely, so five items cannot tell finds-everything from finds-four-of-five. No pass mark can fix that, so the mark should be about what the trial can show. The other half is false flags, which need agreeing statements that a person labels. If the model flags none of the agreeing statements you label, the true false-flag rate is probably under: about 26% with 10 statements, 14% with 20, 9.5% with 30, 6% with 50, 3% with 100. Sources checked by the council: the rule of three (https://en.wikipedia.org/wiki/Rule_of_three_(statistics)), a paper on planning an evaluation experiment (https://arxiv.org/abs/2411.00640) and one on pre-registration for prediction work (https://arxiv.org/abs/2311.18807). The intervals were recomputed and match. Four other sources in the full report (council/daemons/reports/) rest on search summaries and are not relied on here. The council's recommendation, marked as the council's and not yours: C. The research found one practice repeated across sources: fix the mark in a dated file before the scored run and run it once, because a mark chosen after seeing results has been tuned on the answers. C does that. The sample sizes are your numbers, and the council does not pick them.",
+   "not_before": "The rulings that shrink the known positives came on 2026-10-03.",
+   "options": [
+    {
+     "v": "strict",
+     "label": "A. Jev finds every known live drift and clears no fewer than the script does; a small sample you label in an evening",
+     "c": "Lets you conclude: the model caught what it was set to catch and matched the script on a few items. Does not let you conclude: a trustworthy catch rate, since one miss and no misses cannot be told apart with five items. One miss ends the trial."
+    },
+    {
+     "v": "allow-one",
+     "label": "B. Jev finds all but one known live drift and adds at least one the script missed; a medium sample",
+     "c": "Lets you conclude: adding one the script missed is a solid result even with few items. Finding all but one fits a true catch rate anywhere from about 28% to 99%, so it is a weak result on its own."
+    },
+    {
+     "v": "calibrate",
+     "label": "C. A calibration run teaches first and sets no mark; you fix the mark in a dated file before a separate scored run",
+     "c": "Lets you conclude: nothing was tuned on the answers, because the mark was fixed first. Needs two separate piles of labelled agreeing statements (a teaching pile and a scoring pile) and your two numbers. Report counts with ranges, not bare percentages."
+    }
+   ]
   }
  ],
  "causes": [
@@ -3726,6 +3885,70 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-chat-ruling-5.json (sprout)"
+   },
+   "cave-chamber-scenes": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-echoes": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-reading-once": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-legend-villages": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-act2-voices": {
+    "decision": "stands",
+    "label": "Stands: the voices return as people of their lineage who look like them",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-cycle-roles": {
+    "decision": "overrule",
+    "label": "Overruled: a similar scene for everyone, with hints by reading",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "sm-crossing-voices": {
+    "decision": "stands",
+    "label": "Stands: Act I's cast voices the crossing, and Cael parts at first light",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)"
+   },
+   "sm-crossing-breadcrumb": {
+    "decision": "stands",
+    "label": "Stands: the breadcrumb is a tended sapling carrying all five rites' marks",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)"
+   },
+   "bm-daemon-brief": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "bm-rule-reach": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "bm-safety": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "bm-credit": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
    }
   },
   "questions": {
@@ -4009,6 +4232,12 @@
     "label": "Answered from the record: Jev is TypeSafe's Jev, which selects, scores and verifies without generating text (rows jev-select-only to jev-spec-first, another session's pass). The question failed the reach test.",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)"
+   },
+   "bm-big-heart": {
+    "decision": "canon",
+    "label": "Big Heart enters canon as what the Damaged Self is waiting for",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
    }
   },
   "causes": {
@@ -4133,6 +4362,16 @@
     "decision": "not_yet",
     "recorded": "2026-10-02",
     "record": "ledger/2026-10-02-board-read-5.json"
+   },
+   "sighting": {
+    "decision": "adopt",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "meet-your-daemons": {
+    "decision": "adopt",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
    }
   }
  },
