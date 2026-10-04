@@ -3511,6 +3511,44 @@
      "c": "The stager writes a first staging, and the edited file becomes the source from then on."
     }
    ]
+  },
+  {
+   "id": "cc-feeling-more",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout character creation 2",
+   "q": "You picked poignance for a hall full of role looks. Which other feelings, up to two, belong beside it?",
+   "why_you": "Your steer on cc-feeling: \"We should be able to chose up to 3 options here\". The board now takes up to three picks, and poignance is already recorded. Only you hold this. The council has no recommendation.",
+   "not_before": "Multi-pick went live on the board on 2026-10-04, after you answered cc-feeling.",
+   "max": 2,
+   "options": [
+    {
+     "v": "wonder",
+     "label": "Wonder",
+     "c": "The test checks that the looks feel like nowhere else."
+    },
+    {
+     "v": "bliss",
+     "label": "Bliss",
+     "c": "The test checks that the hall feels warm and alive."
+    },
+    {
+     "v": "triumph",
+     "label": "Triumph",
+     "c": "The test checks that the maker produces a full hall in one run."
+    },
+    {
+     "v": "peace",
+     "label": "Peace",
+     "c": "The test checks that every look sits in the world without jarring."
+    },
+    {
+     "v": "poignance-only",
+     "label": "Poignance only",
+     "c": "The test checks for poignance alone."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5129,7 +5167,9 @@
     },
     {
      "n": 2,
-     "questions": [],
+     "questions": [
+      "cc-feeling-more"
+     ],
      "positions": [
       "cc-gets-us",
       "cc-feels-now",
