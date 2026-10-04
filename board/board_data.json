@@ -2216,8 +2216,30 @@
    ],
    "pass": "sprout ranks and badges 4",
    "auto": true,
-   "pos": "The proposed design.md text for ranks, badges, the grid and the units of play goes into design.md on your next board read unless you flip it. It adds a block after Root level in the Systems reference and a short block at the top of Story structure, and every sentence cites the ruling it comes from.",
+   "pos": "The proposed design.md text for ranks, badges, the grid and the units of play goes into design.md on your next board read unless you flip it. It adds a block after Root level in the Systems reference and a short block at the top of Story structure, and every sentence cites the ruling it comes from. Its grid paragraph now describes the labyrinth, not the hub and spoke you overruled.",
    "why": "sprout .specify/specs/ranks-and-badges/design-text.md (pull request #17). Sprout's rules change design.md only on your word, so this waits for a board read."
+  },
+  {
+   "id": "pr-study-findings",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "sprout ranks and badges 5",
+   "auto": true,
+   "pos": "What the sphere grid study found. FFX's standard grid is a ring of seven tracks: each character's section runs into the next, and the last runs back into the first. A locked hub inside the ring is a shortcut that touches six of the seven, not a start. Inside a section the path is long and mostly linear. The labyrinth feeling comes from the closed ring, from locked rewards you can see early, and from rare keys at the seams. The expert grid, where everyone starts in the middle, is the hub and spoke, and the grid you overruled had copied it. This stands unless you flip it.",
+   "why": "Final Fantasy Wiki, \"Sphere Grid\": Auron's section \"runs into Tidus' grid, thus closing the circle\"; Chad Birch, GameInternals (2011): \"stretches of over 50 nodes without any branches at all\". Source: sprout .specify/specs/ranks-and-badges/research/sphere-grid-study.md (pull request #17)"
+  },
+  {
+   "id": "pr-labyrinth-grid",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges 5",
+   "auto": true,
+   "pos": "The grid is rebuilt as a labyrinth on the study's rules. The five streams close a ring in the generating order, and each stream's end runs into the next one's start. Each stream is a home you walk without keys. A small hub inside the ring is a shortcut near four streams, with water left off it, as Auron is in FFX. Locks sit at the seams and before capstones in four key tiers, and the last rank's key opens the hub's capstone. A check holds all of this, and the map is drawn. This stands unless you flip it.",
+   "why": "sprout tools/draft-grid.mjs, data/grid.json (136 nodes), .specify/specs/ranks-and-badges/grid-map.svg, and tools/test-ranks.mjs (668 checks pass; a broken seam, a fifth hub link, a swapped chamber, or a node raising a gate level each fail). Source: sprout .specify/specs/ranks-and-badges/research/sphere-grid-study.md (pull request #17)"
   }
  ],
  "questions": [
@@ -4460,6 +4482,34 @@
      "c": "Every branch joins at the centre with no keys. Points alone limit a build, so builds drift toward the same best nodes, and the subclass feeling is weaker."
     }
    ]
+  },
+  {
+   "id": "pr-labyrinth-scale",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout ranks and badges 5",
+   "q": "How should the grid carry the spiral and the fractal you see in the sphere grid?",
+   "why_you": "The study found that no source calls FFX's grid fractal or a spiral: it is a ring of long, mostly linear tracks, drawn so that it winds. Your sense of the grid is the target, and only you can say which form of it you meant.",
+   "not_before": "Raised by round 5 of the ranks and badges run on 2026-10-04, after the sphere grid study.",
+   "options": [
+    {
+     "v": "three-scales",
+     "label": "A. The cycle at three scales (recommended, built)",
+     "c": "The five-element cycle turns as the ring of streams, as the five chambers of each stream, and as the five-node loop of each chamber. The grid is truly self-similar, and it teaches the cycle at every scale."
+    },
+    {
+     "v": "ffx-tracks",
+     "label": "B. FFX's own way",
+     "c": "Each stream is one long winding track with a few side branches, and the spiral lives in the drawing. Closest to the original; choices come rarely, as the study found in FFX."
+    },
+    {
+     "v": "inward-spiral",
+     "label": "C. A spiral inward",
+     "c": "Each stream winds inward toward the hub, so going deeper means going toward the centre, and the hub's capstone sits at the spiral's end. The fractal is left out."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5785,6 +5835,12 @@
     "label": "Stands: the rank table and its check",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+   },
+   "pr-grid-built": {
+    "decision": "overrule",
+    "label": "Overruled: a labyrinth, not a hub and spoke (steer given in chat)",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
    }
   },
   "questions": {
@@ -6459,9 +6515,14 @@
    "text": "On pr-last-rank-adventure: The whole game uses these terms not just the last adventure ",
    "savedAt": "2026-10-04T14:08:47.914Z",
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+  },
+  {
+   "text": "On pr-grid-built (said in chat): On the council board I need to be able to “go back” if I overrule without context (like I just did) \n\nThe context is here. The sphere grid works because it acts as a labyrinth not hub and spoke. The path spirals and fractals. We need to do a study of how the sphere grid operates to get a clearer picture of this",
+   "savedAt": "2026-10-04T14:19:48Z",
+   "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
   }
  ],
- "steer_recorded_through": "2026-10-04T14:08:47.914Z",
+ "steer_recorded_through": "2026-10-04T14:19:48Z",
  "battles": [
   {
    "id": "fr-scene-staging",
@@ -6737,6 +6798,16 @@
       "pr-branch-emphasis",
       "pr-units-mapping",
       "pr-design-text"
+     ]
+    },
+    {
+     "n": 5,
+     "questions": [
+      "pr-labyrinth-scale"
+     ],
+     "positions": [
+      "pr-study-findings",
+      "pr-labyrinth-grid"
      ]
     }
    ]
