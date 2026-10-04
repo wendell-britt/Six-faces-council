@@ -19,7 +19,7 @@ levels:
 propose_level_up_after_stood: 5   # the council's number, from fm-levels: the last five rows all stood
 
 limits:   # fm-limits, stood at board read 25
-  - never merge into main, and never add the automerge label
+  - never merge a pull request into main, and never add the automerge label (board data, ledger records and reviews still go to main directly, as CLAUDE.md says)
   - never act on the reserved list in council/faces.yaml
   - never change another session's board rows or branches
   - never retire or delete anything
