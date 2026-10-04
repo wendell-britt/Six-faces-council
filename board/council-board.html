@@ -230,9 +230,15 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;
 const chips = fs => (fs||[]).map(f => `<span class="chip ${esc(f)}">${esc(f)}</span>`).join('');
 const LABEL = {stands:'Stands', overrule:'Overruled', adopt:'Adopted', retire:'Retired', not_yet:'Not yet', not_a_term:'Not a term', kept:'Kept'};
 
+/* A store row counts as a new save when it is later than the save the record holds. A deferral's record carries its
+   save time in history, so a save later the same day counts; before 2026-10-04 a record held only a date, so a
+   same-day save after a deferral looked already recorded, and Wendell's overrule of fr-belief-readings seemed not to
+   save ("it didn't let me save"). Records with only a date still compare against the end of that day. */
+const recordedAt = r => { const h = r.history || [], t = r.saved_at || (h.length && h[h.length - 1].saved_at);
+  return t ? Date.parse(t) + 999 : Date.parse(r.recorded + 'T23:59:59Z'); };
 function status(kind, id){
   const s = live[kind][id], r = R[kind][id];
-  if (s && (!r || (s.savedAt && s.savedAt > r.recorded + 'T23:59:59'))) return 'saved';
+  if (s && (!r || (s.savedAt && Date.parse(s.savedAt) > recordedAt(r)))) return 'saved';
   if (r) return 'recorded';
   return 'open';
 }
@@ -384,8 +390,10 @@ function render(){
 
   const dq = DATA.questions.filter(q => !isOpen('questions', q.id) && deferred('questions')(q));
   const dp = DATA.positions.filter(p => !isOpen('positions', p.id) && deferred('positions')(p));
-  document.getElementById('res-d').innerHTML = section('Deferred', 'Each item here comes back to the Open tab when its date passes. Every deferral stays in the record as data about priority.',
-    dq.map(q => doneRow('questions', q, esc(q.q))).join('') + dp.map(p => doneRow('positions', p, esc(p.pos))).join(''));
+  // A deferred item keeps its controls, so it can be decided before its date passes (Wendell, 2026-10-04).
+  const later = (kind, item, title, row) => doneRow(kind, item, title).replace(/<\/div>$/, `<details class="w"><summary>Decide it now</summary>${row(item)}</details></div>`);
+  document.getElementById('res-d').innerHTML = section('Deferred', 'Each item here comes back to the Open tab when its date passes. Every deferral stays in the record as data about priority. Open one to decide it now.',
+    dq.map(q => later('questions', q, esc(q.q), qRow)).join('') + dp.map(p => later('positions', p, esc(p.pos), pRow)).join(''));
   const rq = DATA.questions.filter(q => !isOpen('questions', q.id) && !deferred('questions')(q));
   const rt = DATA.terms.filter(t => !isOpen('terms', t.id));
   const rp = DATA.positions.filter(p => !isOpen('positions', p.id) && !deferred('positions')(p));
@@ -413,7 +421,8 @@ document.getElementById('tab-resolved').addEventListener('click', () => { show('
 document.getElementById('tab-steps').addEventListener('click', () => { show('steps'); try { history.replaceState(null, '', '#steps'); } catch (e) {} });
 show(['#resolved','#steps'].includes(location.hash) ? location.hash.slice(1) : 'open');
 
-const openView = document.getElementById('view-open');
+// The Open tab's rows, and deferred rows opened on the Resolved tab, share these handlers.
+const openView = {addEventListener: (t, f) => ['view-open', 'view-resolved'].forEach(v => document.getElementById(v).addEventListener(t, f))};
 openView.addEventListener('change', e => {
   const r = e.target; if (r.type !== 'radio' && r.type !== 'checkbox') return;
   const id = r.name.slice(2), q = DATA.questions.find(x => x.id === id) || {};
