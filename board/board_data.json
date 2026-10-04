@@ -3994,6 +3994,78 @@
     "decision": "stands",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "jev-asset-scope": {
+    "decision": "stands",
+    "label": "Stands: Jev's asset scope is admin art for the world's cocreators",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "jev-card-art-deprecated": {
+    "decision": "stands",
+    "label": "Stands: card art is marked for deprecation and its trial retired",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "jev-lore-candidate": {
+    "decision": "stands",
+    "label": "Stands: a lore-against-Sprout check raises flags only",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "jev-licensing-not-live": {
+    "decision": "stands",
+    "label": "Stands: licensing is not live, so the provenance trial waits",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "sprites-pre-august-discard": {
+    "decision": "stands",
+    "label": "Stands: sprites made before August are marked for discard, research kept",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "jev-images-backlog": {
+    "decision": "stands",
+    "label": "Stands: whether Jev accepts images goes on the backlog",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "jev-asset-recount": {
+    "decision": "stands",
+    "label": "Stands: the trial's known drifts are recounted after the sprite marking",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "jev-asset-beat-script": {
+    "decision": "stands",
+    "label": "Stands: the asset trial has to beat a constant-extraction script",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "bm-brief-ship": {
+    "decision": "stands",
+    "label": "Stands: the daemon re-brief (#28) merges",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)"
+   },
+   "bm-big-heart-line": {
+    "decision": "stands",
+    "label": "Stands: the Big Heart line goes into the Breakdown as shown",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)"
+   },
+   "bm-interview-block": {
+    "decision": "stands",
+    "label": "Stands: daemon reports open with the Big Mind interview",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
+   },
+   "bm-sprout-emotional-body": {
+    "decision": "stands",
+    "label": "Stands: Sprout's design doc gains the Emotional Body sentence as shown",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
    }
   },
   "questions": {
@@ -4283,6 +4355,12 @@
     "label": "Big Heart enters canon as what the Damaged Self is waiting for",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "jev-asset-numbers": {
+    "decision": "calibrate",
+    "label": "C: a calibration run teaches first; the mark is fixed in a dated file before a separate scored run",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
    }
   },
   "causes": {
