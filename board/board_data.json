@@ -1912,6 +1912,29 @@
    "auto": true,
    "pos": "Every look, your player's included, is now built from one Taoist cultivation robe set, and a role is a way of wearing it. The nearest the store-safe LPC parts come is a crossed-collar top, a long robe or tied trousers, a sash, and a mantle for the formal roles. A blind judge named 8 of 12 people from that and rated it 2 of 5 as robes, so it falls under the stop line. We draw the set ourselves through the quality gate, one piece at a time for your eye: the topknot first, then the long wide-sleeved robe, then one mark per role. This stands unless you flip it.",
    "why": "Your overrule of cc-retest-2 and your context note: \"Everyone in the character creation should be building out a Taoist cultivation robe set\". The judge: \"No figure has wide sleeves, and no robe falls long to the ankle. There are no topknots or hair buns.\" The sheet is /mnt/project-files/character-creation/role-looks-robe-set.png. Source: sprout .specify/specs/character-creation/request.md, \"Round 3\" (pull request #11)"
+  },
+  {
+   "id": "fr-staging-test-result",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "feature request: scene staging, the test",
+   "auto": true,
+   "pos": "The cheap test passed. A throwaway stager placed all eight cave scenes from their scripts alone: every mark on chamber floor, every walk path reaching its mark in 5 to 10 steps, everyone on one 16 by 14 screen, the dialogue box clear, and the same staging twice. It also found that no chamber holds the prop its scene describes, such as the ring of stones, and every hint is a change to that prop. So the staging places props too, and the hint is the prop's variant for the reading.",
+   "why": "node tools/test-staging.mjs on 2026-10-04. Source: sprout .specify/specs/scene-staging/ (pull request #12)"
+  },
+  {
+   "id": "fr-staging-build-order",
+   "faces": [
+    "architect",
+    "shaman",
+    "sage"
+   ],
+   "pass": "feature request: scene staging, the test",
+   "auto": true,
+   "pos": "The build goes in this order: the stager writing one staging record per scene for all eight, chamber 1's ring with its five hint variants as placeholder tiles, a scene player in the slice for chamber 1, then you watch chamber 1 play, then the other seven chambers with no hand edits, then figure looks from the character creation run. This stands unless you flip it.",
+   "why": "Your rulings: maker leads, the stager places everything with pins, chamber 1 first. The spec kit sets this order. Source: sprout .specify/specs/scene-staging/ (pull request #12)"
   }
  ],
  "questions": [
@@ -5401,6 +5424,14 @@
       "fr-staging-what-true",
       "fr-staging-reservations",
       "fr-staging-test"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [],
+     "positions": [
+      "fr-staging-test-result",
+      "fr-staging-build-order"
      ]
     }
    ]
