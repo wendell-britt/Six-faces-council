@@ -1946,6 +1946,38 @@
    "auto": true,
    "pos": "Root-game's stance by move: Kào and Zhǒu, the shoulder and the elbow strikes, stand close (the front legs 3 cm apart, the clothes squashed between). Every other gate and listening leave space for the clothes, 6 cm asked for. It stays behind a switch on the preview until its marks pass. This stands unless you flip it.",
    "why": "Your ruling on rg-front-legs (C, it changes with the move) left which moves stand close. The record answers it: Kào brings the two chests within 10-20 cm (root-game research/6FACE_CORNERS_RANGE_2026-10-01.md), and the elbow strikes from the same range; the other gates are worked at the hands. Built and measured: the other gates now stand 4.4 cm apart at the median (3.0 before), but on the drawn bodies two of nine meetings gain jumps, so it is off by default. Source: root-game HANDOFF.md, queue item 2; engine/kit_engine.js, STANCE BY MOVE"
+  },
+  {
+   "id": "tr-foreign",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "sprout character creation 13",
+   "auto": true,
+   "pos": "The traveler reads as foreign in three ways: no topknot, because every settler wears one; cloth in dusty violet and saffron, which no nation's cloth uses; and travel gear, a scarf and a satchel or shawl. Every outfit keeps the approved tunic's working shape, trousers into boots with the hands free, so it can swing every tool. This stands unless you flip it.",
+   "why": "Your words: \"they Will have their own character sprite so that it's obvious they are different from the other sprites.\" The topknot and the five nations' cloth are already the settlement's marks (sprout character-parts/nations.json). Source: sprout tools/draft-traveler.mjs"
+  },
+  {
+   "id": "tr-outfits-open",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "sprout character creation 13",
+   "auto": true,
+   "pos": "There is one outfit per gender: the jacket, the wrap dress and the long coat. The creator names each outfit by what it is and offers all three to every player, so nobody is locked to one by the gender they pick. This stands unless you flip it.",
+   "why": "Your words: \"the ability to choose from outfits for 3 genders.\" Keeping the choice open costs nothing to build. Source: sprout tools/draft-traveler.mjs"
+  },
+  {
+   "id": "tr-builds-narrow",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout character creation 13",
+   "auto": true,
+   "pos": "Builds change the body's width below the neck, and the head stays the same. The door rule caps every figure at 32 px wide, so slender and broad differ by 4 px and round widens only at the middle. Height is left alone, so the doors still fit. This stands unless you flip it.",
+   "why": "Your words: \"multiple body types\". The 32 by 49 figure is your rule (sprout CLAUDE.md), and the widest frame on the sheet is exactly 32 px. The same pass works on every frame of every action. Source: sprout tools/draft-traveler.mjs"
   }
  ],
  "questions": [
@@ -3801,6 +3833,29 @@
      "v": "lower-bun",
      "label": "Lower the bun",
      "c": "The topknot is redrawn about four rows lower, so the figure fits 50 px, and it comes back to you through the gate."
+    }
+   ]
+  },
+  {
+   "id": "tr-eye",
+   "faces": [
+    "shaman",
+    "diplomat",
+    "architect"
+   ],
+   "pass": "sprout character creation 13",
+   "q": "Does the traveler sheet read as someone from another land, with three outfits and four builds you want to build from? The sheet is /mnt/project-files/character-creation/traveler-design.png.",
+   "why_you": "Your eye is the gate for every piece of the look. Rows are the jacket, the wrap dress and the long coat; columns are slender, average, broad and round, each facing down and left.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three outfits and four builds become composer parts for walk, slash and thrust, and the creator offers them with the five skins."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
   }
