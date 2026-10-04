@@ -4487,6 +4487,36 @@
     "label": "Duplicate of frm-questions-to-board",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-feature-request-scene-staging-round-1.json (six-faces-council)"
+   },
+   "frm-questions-to-board": {
+    "decision": "stands",
+    "label": "Stands: feature request questions go to the board",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-no-names": {
+    "decision": "stands",
+    "label": "Stands: role looks never name a person",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-store-safe": {
+    "decision": "stands",
+    "label": "Stands: every role look is store-safe",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-budget": {
+    "decision": "stands",
+    "label": "Stands: 15 colors and the 32 by 49 box",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-wardrobe-gate": {
+    "decision": "stands",
+    "label": "Stands: new clothing passes the gate and your eye",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
    }
   },
   "questions": {
@@ -4800,6 +4830,24 @@
     "label": "Hard mode stays, and the give is drawn a beat after the hit",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
+   },
+   "cc-body": {
+    "decision": "lpc-first",
+    "label": "LPC parts first, store-safe only",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-creator-scope": {
+    "decision": "both-now",
+    "label": "Both now: the player's creator is in scope",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-feeling": {
+    "decision": "poignance",
+    "label": "Poignance; he wants to pick up to three",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
    }
   },
   "causes": {
