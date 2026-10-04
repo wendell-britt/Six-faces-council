@@ -3950,6 +3950,29 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-eye-6",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout character creation 18",
+   "q": "Do her legs and the narrower hem now make the triangle you asked for? Every sheet saves from the download page, https://claude.ai/artifact/8j3eF4VV1XpQUZZyn3BtWf.",
+   "why_you": "Your steer: \"Feminine legs can be closer and the dress opening at the bottom can be narrower with the legs instead of going straight down they can move toward a point kind of triangular\". From the front, the hem is now under half the shoulder width, and below it the legs sit together and narrow to a 3 px foot each. From the side the stride is 2 px shorter.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three genders, their outfits and the four builds become composer parts for walk, slash and thrust, and the creator asks for a gender first."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5576,6 +5599,12 @@
     "label": "Steered in chat: bring the dress in to two thirds of the shoulders; feet straight down, close together",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-eye-5": {
+    "decision": "steer",
+    "label": "Steered in chat: legs closer, hem narrower, legs tapering to a point",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "causes": {
@@ -5920,6 +5949,13 @@
      "n": 17,
      "questions": [
       "tr-eye-5"
+     ],
+     "positions": []
+    },
+    {
+     "n": 18,
+     "questions": [
+      "tr-eye-6"
      ],
      "positions": []
     }
