@@ -5360,6 +5360,11 @@
    "text": "On iching-cast-first: We don't need them evenly. We actually want to do a simulation of the coin method and then map to the reading",
    "savedAt": "2026-10-03T00:19:53.066Z",
    "record": "council/ledger/2026-10-03-board-read-11.json"
+  },
+  {
+   "text": "Context: Everyone in the character creation should be building out a Taoist cultivation robe set and so our roles have to fit into that aesthetic ",
+   "savedAt": "2026-10-04T02:01:00.077Z",
+   "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
   }
  ],
  "steer_recorded_through": "2026-10-02T16:20:19.620Z",
@@ -5441,6 +5446,13 @@
      "questions": [],
      "positions": [
       "cc-retest-2"
+     ]
+    },
+    {
+     "n": 4,
+     "questions": [],
+     "positions": [
+      "cc-robe-set"
      ]
     }
    ]
