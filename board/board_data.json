@@ -3803,28 +3803,6 @@
      "c": "The topknot is redrawn about four rows lower, so the figure fits 50 px, and it comes back to you through the gate."
     }
    ]
-  },
-  {
-   "id": "cc-roles-eye",
-   "faces": [
-    "shaman",
-    "diplomat"
-   ],
-   "pass": "sprout character creation 12",
-   "q": "Does this rule for the roles' dress go forward: the nation sets the colours, and the role sets the cut, which cloth is the body, and one mark?",
-   "why_you": "Only your eye can judge whether the roles read apart. The sheet has a row for each nation (Pyrakanth, Meridia, Lamenth, Argyra, Virelune) and two columns for each role, facing down and then left. The roles are student, hunter, porter, healer, clergy and elder. Each nation's colours come from its cloth in root-game's fight kit, so the world and the fight screen dress a nation alike. Student, hunter and porter wear the tunic. Healer, clergy and elder wear the long robe. The student is in the main cloth with no mark. The hunter is in the dark cloth with a shoulder mantle. The porter is in the pale cloth and carries a woven bamboo back-basket, redrawn after you found the first pack hard to read. The healer is in the main cloth with an apron. The clergy wear the pale cloth as an open robe with dark front bands. The elder is in the dark cloth with a capelet. Every figure keeps to 15 colours and 30 px wide. The sheet is /mnt/project-files/character-creation/roles-design.png (sprout pull request #15).",
-   "options": [
-    {
-     "v": "approve",
-     "label": "Approve the rule and the marks",
-     "c": "Each role's robe or tunic is drawn for every action, and the role builder dresses each person in their nation's colours."
-    },
-    {
-     "v": "redraw",
-     "label": "Redraw some roles",
-     "c": "Say in the steer box which roles read too alike or what a role should wear. A new sheet comes back before anything is animated."
-    }
-   ]
   }
  ],
  "causes": [
@@ -5403,6 +5381,12 @@
     "label": "Approve the tunic (said in chat)",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round10.json (pull request #14)"
+   },
+   "cc-roles-eye": {
+    "decision": "approve",
+    "label": "Approve the rule and the marks (said in chat)",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round12.json (pull request #15)"
    }
   },
   "causes": {
