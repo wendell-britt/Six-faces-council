@@ -2251,6 +2251,17 @@
    "auto": true,
    "pos": "The daily session's Open up run found 23 answers you saved on this board that main never recorded. Twenty are outside today's ranks-and-badges battle. Two are positions for pull requests that should have merged and are still open: dy-limit-wording (#20, which you saved as standing 19 hours ago) and cost-short-rule (#24). The note lists each save, and proposes a check at the start of every board read that compares your saves with the resolved list. This merges at your next board read unless you flip it.",
    "why": "The rows belong to other sessions, so the daily run recorded none of them and merged nothing. sync_board.py brings rows from the page to main, but it does not read your saves, so it missed these. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/36"
+  },
+  {
+   "id": "brd-unrecorded-check",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "board read",
+   "auto": true,
+   "pos": "Every board read now runs board/unrecorded.py, which lists each answer you saved that main has not recorded, and records all of them, not only the battle it came for. Pull request #37 merges at your next board read unless you flip this.",
+   "why": "You stood dy-2026-10-04-open, which found 23 saves no session had read and proposed this check. All of them are recorded now, and #20 and #24 carry the merge label because their positions stood. Source: council/ledger/2026-10-04-board-read-saved-answers.json; six-faces-council#37"
   }
  ],
  "questions": [
