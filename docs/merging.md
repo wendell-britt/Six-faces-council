@@ -29,6 +29,26 @@ files, for the owning session to resolve.
 A session pushing to a branch the steward has updated gets a rejected push. It runs
 `git pull --no-rebase origin <branch>` and pushes again.
 
+## Board rows reach main automatically (Wendell, 2026-10-04)
+
+His words: "make sure we're automatically merging when we add rows. Or at the least we need a remediation path that
+gives us that ability". On 2026-10-04 root-game's cloth rows sat on a branch main never took, and the live page held
+rows and a template change main did not have, because sessions published from branches. A rebuild from main would
+have dropped them. Two paths now close that:
+
+- **The normal path: `board/sync_board.py`, straight to main.** Save the live page with the Artifact tool's read
+  action, then run `python3 board/sync_board.py --live <saved page> --rows <rows.json> --push -m "<message>"`. It
+  fast-forwards to origin/main, brings over every row the live page has and main lacks (the live version wins where
+  both differ; nothing is removed), adds the new rows and resolved entries, rebuilds the page, commits and pushes to
+  main, merging again if main moved. Then publish `board/council-board.html`. `--check` reports without writing. A
+  template that differs between the live page and main is reported, and `--take-live-template` takes the live one.
+- **The safety net: the steward merges board-only pull requests without the label.** A pull request whose files,
+  against main, are only `board/board_data.json`, `board/council-board.html` and `council/ledger/*` merges once its
+  checks pass, provided no row on main is removed. Every other pull request still waits for the `automerge` label.
+
+**Remediation**, when the live page and main disagree: run `sync_board.py --check --live <saved page>` to see the
+difference, then the same command without `--check` and with `--push` to bring main up to the live page.
+
 ## Merging into main: Wendell's label
 
 Wendell ruled on 2026-10-03 ("On your label"): a pull request merges into main when it carries the
