@@ -162,6 +162,13 @@
    "row": "positions/fr-staging-test",
    "decision": "stands",
    "via": "board battle fr-scene-staging"
+  },
+  {
+   "row": "positions/fr-belief-readings",
+   "decision": "overrule",
+   "saved_at": "2026-10-04T02:33:00Z",
+   "steer": "",
+   "note": "Overruled after deferring it; the board hid the save until Six-faces-council #33. With no steer, the council's production readings of the six beliefs stop standing, and the move's table returns to his own examples until a new reading is ruled."
   }
  ],
  "retired": {
@@ -192,5 +199,11 @@
    "fr-staging-test-result",
    "fr-staging-build-order"
   ]
- }
+ },
+ "lessons_pending": [
+  {
+   "face": "sage",
+   "lesson": "The council's production readings of the six beliefs were overruled without a steer; propose new readings only with evidence from a run, not from the retired Appendix G alone."
+  }
+ ]
 }
