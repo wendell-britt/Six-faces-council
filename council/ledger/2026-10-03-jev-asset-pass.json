@@ -1,0 +1,52 @@
+{
+  "id": "2026-10-03-jev-asset-pass",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "feature-design",
+  "question": "Where Jev fits in the asset pipeline, and the pass mark and sample size for its first trial.",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": "council/passes/6FACE_PASS_jev_asset_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)",
+  "faces_present": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat",
+    "sage"
+  ],
+  "casts": {
+    "shaman": "3->11",
+    "architect": "44->64",
+    "challenger": "32",
+    "regent": "4->64",
+    "diplomat": "49->1",
+    "sage": "48"
+  },
+  "dissent": true,
+  "dissent_note": "The Challenger and the Shaman split on a descriptive-only first run; the Diplomat dissents on scale.",
+  "rulings": {
+    "scope": "Just admin art. This is for the people who will be cocreating the game world.",
+    "card-art": "Card art is not. That can more or less be signaled for deprecation.",
+    "lore": "Lore stands but we want to make sure it's aligned with what's going on with the sprout game",
+    "licensing": "Licensing isn't a live concern right now",
+    "sprites": "most things made before August should probably be marked to be thrown out as well but the research should be kept",
+    "images": "I don't know if Jev accepts images. Let's add that to the backlog to find out"
+  },
+  "questions": {
+    "jev-asset-numbers": {
+      "options": [
+        "strict",
+        "allow-one",
+        "calibrate"
+      ],
+      "choice": null
+    }
+  },
+  "subagents": {
+    "model": "sonnet",
+    "count": 1,
+    "note": "the scope brief, written before this pass; tokens approx 157466"
+  },
+  "outcome": "unruled"
+}
