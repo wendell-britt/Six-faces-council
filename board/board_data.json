@@ -3803,28 +3803,6 @@
      "c": "The topknot is redrawn about four rows lower, so the figure fits 50 px, and it comes back to you through the gate."
     }
    ]
-  },
-  {
-   "id": "cc-tunic-eye",
-   "faces": [
-    "shaman",
-    "architect"
-   ],
-   "pass": "sprout character creation 9",
-   "q": "Does this working tunic go forward as the dress for the player and the working roles? It falls to the knee over trousers tucked into boots, with the hands bare, and it is drawn on the walk, slash and thrust frames.",
-   "why_you": "Only your eye can judge the look. You asked for a split with Jedi robes: boots and hands showing, and a body that can animate with tools and weapons. The tunic is painted onto the frames the game already animates, so every action, the tool and weapon poses included, wears it the same way. The Chinese tells stay: the crossed collar, the thin sash with its jade, and the crown and jade pin. Every frame keeps to 15 colours and to 30 px wide against the 32 px figure. The long robes stay as dress for NPCs. The sheet is /mnt/project-files/character-creation/tunic-design.png (sprout pull request #14). Your two Jedi sheets are saved in references/.",
-   "options": [
-    {
-     "v": "approve",
-     "label": "Approve the tunic",
-     "c": "The tunic goes into the composer as a clothing part for every action, in the four element colourways, and the player creator offers it."
-    },
-    {
-     "v": "redraw",
-     "label": "Redraw it",
-     "c": "Say what is off in the steer box, such as the tunic's length or the boots. A new sheet comes back before it joins the composer."
-    }
-   ]
   }
  ],
  "causes": [
@@ -5397,6 +5375,12 @@
     "label": "Long robes are NPC dress; the player needs boots and free hands that animate with tools (said in chat)",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round9.json (pull request #14)"
+   },
+   "cc-tunic-eye": {
+    "decision": "approve",
+    "label": "Approve the tunic (said in chat)",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round10.json (pull request #14)"
    }
   },
   "causes": {
