@@ -2043,6 +2043,82 @@
    "auto": true,
    "pos": "Nothing in design.md changes until you answer round 1. The cave's encounter count and the XP per level wait on pr-ranks-vs-levels. This stands unless you flip it.",
    "why": "sprout CLAUDE.md: do not change game rules, balance or story. Dungeon length rule (2026-10-03) ties cave length to encounters and levels. Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-test-result",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges test",
+   "auto": true,
+   "pos": "The cheap test found that Scouting's badge counts do not pace. Counting only badges the design already earns, Act I alone supplies 28 (bouts 8, bounties 12, gates 8), more than Eagle's 21. Act III adds no new source at all.",
+   "why": "node .specify/specs/ranks-and-badges/test/badge-supply.mjs. Two counts are assumptions (gates finished in Act I, tools in Act II); without the gates Act I still supplies 20. Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-pace-by-level",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "auto": true,
+   "pos": "Each rank is paced by a Root level minimum, as your choice to group the levels allows. Badges are asked by kind (skill, gate, service) and by element, not as a raw count, so a rank asks for breadth and the level carries the pace. This stands unless you flip it.",
+   "why": "The test result above, your pr-ranks-vs-levels answer, and pillar 4, \"Everything teaches the cycle\" (docs/design.md). Source: sprout .specify/specs/ranks-and-badges/spec.md"
+  },
+  {
+   "id": "pr-act3-sources",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "auto": true,
+   "pos": "The top rank asks for a project, as Scouting's Eagle does, and that project is Act III's to write. The rank table leaves it open until story work names it. This stands unless you flip it.",
+   "why": "Act III supplies no badge source in the test. Scouting's Eagle asks a service project (Wikipedia, Ranks in Scouts BSA). Story is yours, so the council names the slot and not its content. Source: sprout .specify/specs/ranks-and-badges/spec.md"
+  },
+  {
+   "id": "pr-gets-us",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "auto": true,
+   "pos": "What this gets us. Inside: triumph at a rank that could have been missed, wonder at grid nodes still out of reach, and poignance in who stands at the ceremony. Outside: a rank and badges that say what the player practised and gave, builds that differ by choice, and a rank-up that plays as a scene. This stands unless you flip it.",
+   "why": "Your picks on pr-feeling: triumph, wonder, poignance. Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-feels-now",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "auto": true,
+   "pos": "How it feels now, the council's reading. The player has nothing to feel yet: the slice has gate levels and no ranks. For you, progression has been scattered across four sections of design.md, and your message is the first to tie them into one ladder. This stands unless you flip it.",
+   "why": "slice/main.js and docs/design.md (Root level, the bouts, talismans, loot). You have not said how it feels to you; a steer here corrects it. Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-what-true",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "auto": true,
+   "pos": "What would have to be true. Triumph needs a requirement that could fail, and the test shows a raw count cannot. Wonder needs grid nodes the player can see but not yet reach. Poignance needs a person at the ceremony who watched the player earn it. This stands unless you flip it.",
+   "why": "The test result, and the gold states you picked. Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-reservations",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "auto": true,
+   "pos": "The reservation is your example \"The product needs a new feature\": a rank grid beside the talisman grid would be a second board, and design.md's risk table cuts talisman grids first. The spec keeps one grid: the player's own nodes, with each talisman as a sub-board inside it. This stands unless you flip it.",
+   "why": "docs/design.md, risks (\"talisman grids to lists\" is the first cut). Source: sprout .specify/specs/ranks-and-badges/spec.md"
   }
  ],
  "questions": [
@@ -4229,6 +4305,34 @@
      "c": "The test checks that the ceremony feels warm and shared."
     }
    ]
+  },
+  {
+   "id": "pr-who-confers",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "q": "Who confers a rank after the settlement has exiled the player?",
+   "why_you": "The ranks belong to Argyra's amber culture, and the exile ends Act I, but most ranks fall in Acts II and III. Who stands at the ceremony is story, and story is yours. Poignance, your third pick, lives in that person.",
+   "not_before": "Raised by round 2 of the ranks and badges run on 2026-10-04, once you chose to group the ranks across all three acts.",
+   "options": [
+    {
+     "v": "colony",
+     "label": "A. The colony (recommended)",
+     "c": "One ladder runs through the whole game. The colonists believe they kept Argyra's culture in exile, so they keep its ranks too, and Cael's people confer them."
+    },
+    {
+     "v": "forest",
+     "label": "B. The forest's refiners",
+     "c": "The settlement's ladder ends at the exile, and the five refiners confer a second ladder of their own, as forest talismans replace settlement ones."
+    },
+    {
+     "v": "lapse",
+     "label": "C. The rank lapses and is re-earned",
+     "c": "Rank goes dark at the exile like settlement talismans, and the player earns it again in the forest. That costs the player a loss they did not choose."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5434,6 +5538,36 @@
     "label": "Stands: builds change width only, within 32 px",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "pr-mmo-later": {
+    "decision": "stands",
+    "label": "Stands: real-life badges are a later MMO strand",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+   },
+   "pr-talismans-are-the-loadout": {
+    "decision": "stands",
+    "label": "Stands: talismans are the loadout",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+   },
+   "pr-merit-from-practice": {
+    "decision": "stands",
+    "label": "Stands: merit badges from practice and service, never bought",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+   },
+   "pr-structure-not-names": {
+    "decision": "stands",
+    "label": "Stands: Scouting's structure, in-world names",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+   },
+   "pr-rules-unchanged": {
+    "decision": "stands",
+    "label": "Stands: design.md unchanged until you rule",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
    }
   },
   "questions": {
@@ -5885,6 +6019,24 @@
     "label": "Approved in chat: \"Yes perfect\"",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "pr-ranks-vs-levels": {
+    "decision": "group",
+    "label": "Ranks group Root level's numbers",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+   },
+   "pr-grid-spend": {
+    "decision": "grid-beside-practice",
+    "label": "A grid, beside practice",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+   },
+   "pr-feeling": {
+    "decision": "triumph, wonder, poignance",
+    "label": "Triumph, wonder and poignance",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
    }
   },
   "causes": {
