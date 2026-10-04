@@ -52,6 +52,17 @@ Add a third response to a board question or position, beside answering and defer
 **The return (written into `board_data.json` by a session):**
 
 ```json
+"research": {  // as built, 2026-10-04; the first draft's eli5, worked_example and findings fields became lead and sections
+  "title": "...", "lead": "<two sentences, plain>",
+  "sections": [ { "h": "<heading>", "p": "<optional sentence>", "items": ["<short line>"] } ],
+  "recommend": "<the council's recommendation, marked as the council's>",
+  "sources": [ { "text": "...", "url": "..." } ], "unchecked": "<sources not relied on, and why>"
+}
+```
+
+The earlier draft, kept for the record:
+
+```json
 "research": {
   "asked": "2026-10-04",
   "eli5": "<one sentence a five-year-old can follow>",
@@ -66,6 +77,15 @@ Add a third response to a board question or position, beside answering and defer
 
 A page that cannot save shows the existing banner and keeps the choice on screen only, as the board does today.
 
+## What the first by-hand run found (2026-10-04)
+
+The cheap test ran on `jev-asset-numbers`. It found two defects in the design, both fixed in the requirements below.
+
+1. **A saved steer hid the item.** The board treats any saved item as no longer open, and a steer with no choice counts as saved (`status()` in `board/template.html`). Wendell's "I'm stumped" steer moved the question to Resolved, where only the title and his steer show, so he could not see the research. The send-back control must keep the item on the Open tab until he rules, and a sent-back state must not count as saved.
+2. **One paragraph was unreadable.** The first version put the research in a single `why_you` paragraph. Wendell: "readability on the information that came back. Really hard to parse". The board now renders a `research` block (lead, labelled sections with lists, the recommendation set apart, sources folded away), checked at desktop and phone width. The contract below describes that shape, which differs from the first draft of this spec.
+
+The test is not complete: he has not yet said whether he can answer from the new box.
+
 ## Reserved items
 
 None are decided here. A sent-back item that touches a reserved item (money, a person's name, canonical prose, consent) returns research only, and the ruling stays his.
@@ -77,9 +97,9 @@ None are decided here. A sent-back item that touches a reserved item (money, a p
 
 ## Definition of done
 
-- [ ] A button on questions and positions writes a `sent-back` state, and the row shows it.
+- [ ] A button on questions and positions writes a `sent-back` state, the row shows it, and the item stays on the Open tab until he rules (a steer-only save does not hide it).
 - [ ] A session that reads the board finds sent-back rows with no research block and runs the research once per request.
-- [ ] The research box renders beside the "Since you deferred this" box, with sources opening in a new tab.
+- [x] The research box renders beside the "Since you deferred this" box, with sources opening in a new tab. (Built 2026-10-04 as `researchBox` in `board/template.html`.)
 - [ ] The row's research cost is recorded from the run's own record.
 - [ ] The cheap test above has been run on `jev-asset-numbers` and its result is written into this spec.
 - [ ] Only Wendell can confirm: the box reads well on his phone and he can answer from it. This goes on his steps list.
