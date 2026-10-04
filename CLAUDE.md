@@ -32,6 +32,15 @@ projects more effectively between that and Jev we can save a lot of tokens"
   HANDOFF.md and the board.
 - Drop a pull request watch once the pull request merges or waits only on Wendell's label.
 - Name the session's cost in its last report, read from the platform after the work, never mid-turn.
+- Hand off before the context passes about 200,000 tokens, even mid-feature. The 4 October usage audit found
+  84% of spend was rereading context (`/mnt/project-files/usage-audit/audit-2026-10-04.md`). An art review
+  gets one thread per round.
+- Long jobs (Root renders, batches, test loops, sprite rebuilds) run in the background and write a short summary
+  file. The thread reads that summary once when the job ends. It does not check in on the job while it runs.
+- Clerical work runs on Sonnet when the model can be chosen: recording board answers, landing rows, merges,
+  steward work, packaging, and rebuilds once the design is settled. Root's solver work, council passes, new
+  design and first story drafts stay on Opus. Fable runs only when Wendell asks for it by name. Sonnet saves
+  about a quarter, not half, because rereading context costs the same on both models.
 
 ## Where the rest lives
 
