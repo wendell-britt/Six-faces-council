@@ -3904,6 +3904,29 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-eye-4",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout character creation 16",
+   "q": "Do the dress, the narrower shoulders and the slim nonbinary body read as you asked? Watch /mnt/project-files/character-creation/traveler-walk.gif (male, female, nonbinary, facing down and left), and the builds are in traveler-design.png beside it.",
+   "why_you": "Your steer: \"Narrower shoulders in the feminine model and have their robe taper bring the arms in to match. The nonbinary version is very slim but less harrowing waist than the feminine version keep the legs the same as the masculine\". The female figure now wears a saffron dress with a scoop neck, a violet belt and an A-line skirt to mid-calf; her shoulders lose 3 pixels and the arms come in with them; the bust shows from the front and stands off the chest from the side; her hair falls over the shoulders and down the back. The nonbinary body loses 2 pixels from shoulder to waist, with no cinch and the male legs.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three genders, their outfits and the four builds become composer parts for walk, slash and thrust, and the creator asks for a gender first."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5518,6 +5541,12 @@
     "label": "Steered in chat: research it; wider hips, thinner waist, bust, legs that pass each other",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-eye-3": {
+    "decision": "steer",
+    "label": "Steered in chat: narrower female shoulders and arms, a dress, a fuller bust, longer hair and lashes; a slim nonbinary body with the male legs",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "causes": {
@@ -5848,6 +5877,13 @@
      "n": 15,
      "questions": [
       "tr-eye-3"
+     ],
+     "positions": []
+    },
+    {
+     "n": 16,
+     "questions": [
+      "tr-eye-4"
      ],
      "positions": []
     }
