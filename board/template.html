@@ -114,6 +114,49 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-step summary{cursor:pointer;color:var(--muted)}
 .st-step textarea{margin-top:6px}
 .st-state{font-size:.8rem;color:var(--muted);min-height:1.2em}
+/* Battles, Wendell 2026-10-04: "The the board is the world map and emergent new feature is like a pokemon battle [...] I
+   through the battle and at the end the board is updated". A feature request run is an encounter on the Open tab; its
+   questions and positions are played as turns in a battle screen, and each turn saves to the same store as a row. bt- prefix. */
+.bt-map{margin:18px 0 8px}
+.bt-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.bt-tile{display:grid;grid-template-columns:56px minmax(0,1fr);gap:10px;align-items:center;text-align:left;font:inherit;color:var(--fg);background:var(--panel);border:2px solid var(--line);border-radius:8px;padding:10px;cursor:pointer}
+.bt-tile:hover{border-color:var(--accent)}
+.bt-tile.bt-won{opacity:.6}
+.bt-tile b{display:block;font-family:var(--display);font-size:1.02rem}
+.bt-tile small{color:var(--muted);font-size:.8rem}
+.bt-mon{image-rendering:pixelated;display:block}
+.bt-screen{position:fixed;inset:0;z-index:20;background:var(--bg);overflow:auto;padding:16px;display:none}
+.bt-screen.on{display:block}
+.bt-stage{max-width:640px;margin:0 auto;display:grid;gap:12px}
+.bt-field{position:relative;border:2px solid var(--fg);border-radius:8px;min-height:250px;background:linear-gradient(var(--accent-soft) 0 58%, var(--panel) 58%);overflow:hidden}
+.bt-hud{position:absolute;background:var(--panel);border:2px solid var(--fg);border-radius:6px;padding:6px 10px;min-width:190px;max-width:62%}
+.bt-hud.bt-foe{top:12px;left:12px}
+.bt-hud.bt-you{bottom:12px;right:12px}
+.bt-hud b{font-family:var(--mono);font-size:.86rem;letter-spacing:.04em;text-transform:uppercase}
+.bt-lv{float:right;font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-left:8px}
+.bt-hp{display:flex;gap:6px;align-items:center;font-family:var(--mono);font-size:.72rem;margin-top:4px}
+.bt-bar{flex:1;height:7px;border:1px solid var(--fg);border-radius:4px;overflow:hidden;background:var(--bg)}
+.bt-bar i{display:block;height:100%;background:var(--ok);transition:width .6s}
+.bt-bar i.bt-low{background:var(--warn)}
+.bt-sprite{position:absolute;top:22px;right:30px}
+.bt-party{position:absolute;bottom:20px;left:14px;display:flex;flex-wrap:wrap;gap:4px;max-width:46%}
+.bt-party .chip{font-size:.68rem}
+.bt-box{border:3px double var(--fg);border-radius:8px;background:var(--panel);padding:12px 14px;min-height:96px}
+.bt-say{margin:0 0 6px;font-size:1rem;max-width:none}
+.bt-sub{color:var(--muted);font-size:.88rem;margin:0 0 6px}
+.bt-moves{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}
+.bt-move{font:inherit;text-align:left;padding:10px 12px;border:2px solid var(--fg);border-radius:6px;background:var(--bg);color:var(--fg);cursor:pointer}
+.bt-move:hover,.bt-move:focus-visible{border-color:var(--accent);background:var(--accent-soft)}
+.bt-move b{display:block}
+.bt-move span{color:var(--muted);font-size:.86rem}
+.bt-move.bt-over{border-color:var(--warn)}
+.bt-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.bt-link{font:inherit;font-size:.88rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:4px 0;text-decoration:underline}
+.bt-steer{margin-top:8px}
+.bt-log{font-size:.85rem;color:var(--muted);margin:0;padding-left:18px}
+@keyframes bt-hit{0%,100%{transform:none}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.bt-hit{animation:bt-hit .35s}
+@media (prefers-reduced-motion: reduce){.bt-hit{animation:none}.bt-bar i{transition:none}}
 </style>
 
 <h1>Council Board</h1>
@@ -128,6 +171,7 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 <div class="banner" id="banner">This view cannot save. Your choices stay on screen only.</div>
 
 <section id="view-open" role="tabpanel" aria-labelledby="tab-open">
+  <div id="bt-map" class="bt-map" hidden></div>
   <div class="context">
     <h2 style="margin-top:0">Context for the agents</h2>
     <p class="lede">Anything every face should carry into the next pass, or anything you want reopened.</p>
@@ -158,6 +202,20 @@ ol.st-steps{list-style:none;margin:0;padding:0}
   <div id="res-p"></div>
   <div id="res-s"></div>
 </section>
+
+<div class="bt-screen" id="bt-screen" role="dialog" aria-modal="true" aria-labelledby="bt-name">
+  <div class="bt-stage">
+    <div class="bt-field" id="bt-field">
+      <div class="bt-hud bt-foe"><b id="bt-name"></b><span class="bt-lv" id="bt-lv"></span>
+        <div class="bt-hp">HP <div class="bt-bar"><i id="bt-hp"></i></div><span id="bt-hpn"></span></div></div>
+      <div class="bt-sprite" id="bt-sprite"></div>
+      <div class="bt-party" id="bt-party"></div>
+      <div class="bt-hud bt-you"><b>The council</b><span class="bt-lv">six faces</span>
+        <div class="bt-hp">turns <div class="bt-bar"><i id="bt-turns"></i></div><span id="bt-turnn"></span></div></div>
+    </div>
+    <div class="bt-box" id="bt-box" aria-live="polite"></div>
+  </div>
+</div>
 
 <script id="board-data" type="application/json">__DATA__</script>
 <script>
@@ -301,15 +359,15 @@ function doneRow(kind, item, title){
 }
 
 function render(){
-  const oq = DATA.questions.filter(q => isOpen('questions', q.id));
+  const oq = DATA.questions.filter(q => isOpen('questions', q.id) && !inBattle.questions.has(q.id));
   const ot = DATA.terms.filter(t => isOpen('terms', t.id));
-  const op = DATA.positions.filter(p => isOpen('positions', p.id));
+  const op = DATA.positions.filter(p => isOpen('positions', p.id) && !inBattle.positions.has(p.id));
   const oc = DATA.causes.filter(c => isOpen('causes', c.id));
   document.getElementById('open-q').innerHTML = section('Questions only you can answer', 'Each passed the reach test: its face could not answer it from the record, and your answer changes what gets built.', oq.map(qRow).join(''));
   document.getElementById('open-t').innerHTML = section('Terms', 'The council recommends; you decide. Adopt puts the term in that repo’s glossary as proposed. Nothing locks until you say so.', ot.map(tRow).join(''));
   document.getElementById('open-p').innerHTML = section('Positions', 'Each stands unless you overrule it. A steer becomes that face’s lesson.', op.map(pRow).join(''));
   document.getElementById('open-c').innerHTML = section('Causes to name', '', oc.map(cRow).join(''));
-  const nOpen = oq.length + ot.length + op.length + oc.length;
+  const nOpen = oq.length + ot.length + op.length + oc.length + renderMap();
   document.getElementById('open-empty').hidden = nOpen > 0;
   document.getElementById('n-open').textContent = nOpen;
   const deferred = kind => item => (isDeferredNow(kind, item.id) && status(kind, item.id) !== 'saved') || savedDefer(kind, item.id);
@@ -401,6 +459,128 @@ document.getElementById('ctx-save').addEventListener('click', async () => {
   try { await db.doc('steer/general').set({text, savedAt:new Date().toISOString()}); st.textContent = 'Saved. Tell Claude you saved.'; }
   catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
 });
+
+// ---- Battles ----
+/* Wendell, 2026-10-04: "I'd like it to be kind of like a minigame. The the board is the world map and emergent new
+   feature is like a pokemon battle [...] I through the battle and at the end the board is updated". A battle is a
+   feature request run (council/moves/feature-request.md): DATA.battles lists each one with its rounds, and each round
+   names question and position rows that already exist on the board. A turn saves exactly what the row's own Save
+   saves, so a board read records a battle like any other row. Rows in a battle are left off the Open lists, so each
+   lives in one place. Running away saves nothing, and the battle waits on the map. The creature is drawn from the
+   battle's id, and its element only picks its colours: both are the session's design, not a ruling. */
+const BATTLES = DATA.battles || [];
+const inBattle = {questions:new Set(), positions:new Set()};
+BATTLES.forEach(b => (b.rounds||[]).forEach(r => { (r.questions||[]).forEach(id => inBattle.questions.add(id)); (r.positions||[]).forEach(id => inBattle.positions.add(id)); }));
+const PAL = {wood:['#2f7a3b','#9fd18b','#1d3b22'], fire:['#b3331f','#f2a65a','#4a160d'], earth:['#a9741a','#ead08f','#4a3410'],
+  metal:['#6d7a86','#dfe6ec','#2a3138'], water:['#1f5f8b','#8cc7e8','#0f2a3d']};
+function monster(id, element, px){
+  let h = 2166136261; for (const c of id) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+  const rnd = () => (h = Math.imul(h ^ (h >>> 15), 2246822519) >>> 0, h / 4294967296);
+  const [body, light, ink] = PAL[element] || PAL.earth, N = 10, cells = [];
+  for (let y = 0; y < N; y++) for (let x = 0; x < N / 2; x++) {
+    const edge = Math.abs(x - N / 2 + .5) + Math.abs(y - N / 2 + .5) * .8, r = rnd();
+    const fill = edge < 3 ? (r < .85 ? body : light) : edge < 5 ? (r < .55 ? body : r < .7 ? light : null) : (r < .12 ? body : null);
+    if (fill) { cells.push([x, y, fill]); cells.push([N - 1 - x, y, fill]); }
+  }
+  const eyeY = 3 + Math.floor(rnd() * 2); cells.push([3, eyeY, ink], [6, eyeY, ink]);
+  return `<svg class="bt-mon" width="${px}" height="${px}" viewBox="0 0 ${N} ${N}" aria-hidden="true" shape-rendering="crispEdges">${cells.map(([x,y,f]) => `<rect x="${x}" y="${y}" width="1" height="1" fill="${f}"/>`).join('')}</svg>`;
+}
+const bTurns = b => (b.rounds||[]).flatMap(r => [...(r.questions||[]).map(id => ({kind:'questions', id, round:r.n})), ...(r.positions||[]).map(id => ({kind:'positions', id, round:r.n}))])
+  .filter(t => DATA[t.kind].some(x => x.id === t.id));
+const bOpen = b => bTurns(b).filter(t => isOpen(t.kind, t.id));
+const bRound = b => Math.max(1, ...(b.rounds||[]).map(r => r.n || 1));
+
+function renderMap(){
+  const el = document.getElementById('bt-map');
+  if (!BATTLES.length){ el.hidden = true; return 0; }
+  el.hidden = false;
+  const active = BATTLES.filter(b => bOpen(b).length);
+  el.innerHTML = `<h2>Encounters</h2><p class="lede">Each one is a feature request. Play it through: every answer saves as you go, and the board updates when it ends.</p>
+    <div class="bt-tiles">${BATTLES.map(b => { const open = bOpen(b).length, all = bTurns(b).length;
+      return `<button type="button" class="bt-tile${open ? '' : ' bt-won'}" data-battle="${esc(b.id)}">${monster(b.id, b.element, 56)}
+        <span><b>${esc(b.name)}</b><small>${esc(b.repo || '')} · round ${bRound(b)} · ${open ? `${open} of ${all} turns left` : 'understood'}</small></span></button>`; }).join('')}</div>`;
+  return active.length;
+}
+
+let bt = null;   // {b, queue, i, log, steer}
+const $b = id => document.getElementById(id);
+function btHud(){
+  const all = bTurns(bt.b).length, left = bOpen(bt.b).length, done = bt.i;
+  const hp = $b('bt-hp'); hp.style.width = (all ? left / all * 100 : 0) + '%'; hp.classList.toggle('bt-low', left / Math.max(all,1) < .34);
+  $b('bt-hpn').textContent = `${left}/${all}`;
+  $b('bt-turns').style.width = (bt.queue.length ? done / bt.queue.length * 100 : 100) + '%';
+  $b('bt-turnn').textContent = `${Math.min(done, bt.queue.length)}/${bt.queue.length}`;
+}
+function btSay(html){ $b('bt-box').innerHTML = html; const f = $b('bt-box').querySelector('button,textarea'); if (f) f.focus(); }
+function openBattle(id){
+  const b = BATTLES.find(x => x.id === id); if (!b) return;
+  bt = {b, queue: bOpen(b), i: 0, log: []};
+  $b('bt-name').textContent = b.name; $b('bt-lv').textContent = 'Rd ' + bRound(b);
+  $b('bt-sprite').innerHTML = monster(b.id, b.element, 112);
+  $b('bt-party').innerHTML = chips(['shaman','architect','challenger','regent','diplomat','sage']);
+  $b('bt-screen').classList.add('on'); document.body.style.overflow = 'hidden'; btHud();
+  if (!bt.queue.length) return btEnd();
+  btSay(`<p class="bt-say">A wild <b>${esc(b.name)}</b> appeared!</p>
+    ${b.intro ? `<p class="bt-sub">${esc(b.intro)}</p>` : ''}
+    ${b.record ? `<p class="bt-sub">Its full description: <code>${esc(b.record)}</code></p>` : ''}
+    <div class="bt-row"><button type="button" class="save" data-bt="next">Fight</button><button type="button" class="bt-link" data-bt="run">Run (nothing is saved)</button></div>`);
+}
+function btTurn(){
+  btHud();
+  if (bt.i >= bt.queue.length) return btEnd();
+  const t = bt.queue[bt.i], row = DATA[t.kind].find(x => x.id === t.id), who = (row.faces||[])[0] || 'sage';
+  if (t.kind === 'questions'){
+    btSay(`<p class="bt-sub">${chips(row.faces)} ask:</p><p class="bt-say">${esc(row.q)}</p>
+      <p class="bt-sub">${esc(row.why_you)}</p>
+      <div class="bt-moves">${row.options.map(o => `<button type="button" class="bt-move" data-bt="pick" data-v="${esc(o.v)}"><b>${esc(o.label)}</b><span>${esc(o.c)}</span></button>`).join('')}</div>
+      <textarea class="bt-steer" id="bt-steer" placeholder="Say it in your words instead, or as well (optional)"></textarea>
+      <div class="bt-row"><button type="button" class="bt-link" data-bt="steeronly">Answer with these words only</button><button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
+  } else {
+    btSay(`<p class="bt-sub">${chips(row.faces)} play a position:</p><p class="bt-say">${esc(row.pos)}</p>
+      <p class="bt-sub">${esc(row.why)}</p>
+      <div class="bt-moves"><button type="button" class="bt-move" data-bt="stand"><b>Let it stand</b><span>The council goes ahead on it.</span></button>
+      <button type="button" class="bt-move bt-over" data-bt="overrule"><b>Overrule</b><span>The council drops it; your words below become that face's lesson.</span></button></div>
+      <textarea class="bt-steer" id="bt-steer" placeholder="Steer: what the face should carry forward (optional)"></textarea>
+      <div class="bt-row"><span></span><button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
+  }
+}
+async function btSave(body){
+  const t = bt.queue[bt.i];
+  body.steer = ($b('bt-steer') || {}).value || ''; body.savedAt = new Date().toISOString(); body.via = 'battle:' + bt.b.id;
+  if (t.kind === 'questions' && !body.choice && !body.steer.trim()) { btSay($b('bt-box').innerHTML.replace('<textarea', '<p class="bt-sub" style="color:var(--warn)">Write your words first.</p><textarea')); return; }
+  if (db){
+    try { await db.doc(`${t.kind}/${t.id}`).set(body); live[t.kind][t.id] = body; }
+    catch (err){ btSay(`<p class="bt-say">That turn did not save (${esc(err && err.code || 'error')}).</p><div class="bt-row"><button type="button" class="save" data-bt="retry">Try the turn again</button><button type="button" class="bt-link" data-bt="run">Run</button></div>`); return; }
+  } else live[t.kind][t.id] = body;   // a view without the store plays on, and says so at the end
+  const row = DATA[t.kind].find(x => x.id === t.id);
+  const said = t.kind === 'questions' ? ((row.options.find(o => o.v === body.choice) || {}).label || 'In your words') : (body.status === 'overrule' ? 'Overruled' : 'Stands');
+  bt.log.push(`${t.kind === 'questions' ? row.q : row.pos} · ${said}`);
+  bt.i++;
+  const f = $b('bt-field'); f.classList.remove('bt-hit'); void f.offsetWidth; f.classList.add('bt-hit');
+  btHud(); render();
+  btSay(`<p class="bt-say">${body.status === 'overrule' ? 'You overruled it.' : 'It’s super effective!'} <b>${esc(said)}</b></p>
+    <div class="bt-row"><button type="button" class="save" data-bt="next">${bt.i < bt.queue.length ? 'Next turn' : 'Finish'}</button></div>`);
+}
+function btEnd(){
+  btHud(); const left = bOpen(bt.b).length;
+  btSay(left ? `<p class="bt-say"><b>${esc(bt.b.name)}</b> is still standing, with ${left} ${left === 1 ? 'turn' : 'turns'} left.</p>`
+    : `<p class="bt-say"><b>${esc(bt.b.name)}</b> was understood!</p><p class="bt-sub">${db ? 'Your answers are on the board. Tell Claude you saved, and the council writes the next round or the spec kit.' : 'This view cannot save, so your answers stay on screen only.'}</p>`
+    + (bt.log.length ? `<ul class="bt-log">${bt.log.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : '')
+    + `<div class="bt-row"><button type="button" class="save" data-bt="run">Back to the map</button></div>`);
+}
+function closeBattle(){ $b('bt-screen').classList.remove('on'); document.body.style.overflow = ''; bt = null; render(); }
+document.addEventListener('click', e => {
+  const tile = e.target.closest('[data-battle]'); if (tile) return openBattle(tile.dataset.battle);
+  const b = e.target.closest('[data-bt]'); if (!b || !bt) return;
+  const a = b.dataset.bt;
+  if (a === 'run') return closeBattle();
+  if (a === 'next' || a === 'retry') return btTurn();
+  if (a === 'pick') return btSave({choice: b.dataset.v});
+  if (a === 'steeronly') return btSave({choice: ''});
+  if (a === 'stand') return btSave({status: 'stands'});
+  if (a === 'overrule') return btSave({status: 'overrule'});
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && bt) closeBattle(); });
 
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
