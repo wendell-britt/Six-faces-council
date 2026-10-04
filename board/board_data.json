@@ -6359,6 +6359,21 @@
    "text": "Context: Everyone in the character creation should be building out a Taoist cultivation robe set and so our roles have to fit into that aesthetic ",
    "savedAt": "2026-10-04T02:01:00.077Z",
    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
+  },
+  {
+   "text": "On pr-act3-sources: Let’s call the project a quest. We also want to think about the game in terms of encounters quests adventures and campaigns  \n\nA project would be an adventure (which is a series of quests and encounters) to attain the last rank \n\nThis also allows for post main story progress to continue ",
+   "savedAt": "2026-10-04T13:36:38.006Z",
+   "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+  },
+  {
+   "text": "On pr-reservations: Nodes in final fantasy branch off in different paths to simulate the idea of different subclasses for the character. I want to preserve that feeling ",
+   "savedAt": "2026-10-04T13:38:13.955Z",
+   "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+  },
+  {
+   "text": "On pr-test-result: I need to know what the implications of this are. We want to steal the scouting structure but we’ll let the games needs decided how many badges. Paper Mario also has a lot of badges as well. And the available badges in BSA is larger than the required amount ",
+   "savedAt": "2026-10-04T13:40:06.741Z",
+   "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
   }
  ],
  "steer_recorded_through": "2026-10-04T13:40:06.741Z",
