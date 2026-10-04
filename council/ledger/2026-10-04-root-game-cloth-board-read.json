@@ -1,0 +1,18 @@
+{
+ "id": "2026-10-04-root-game-cloth-board-read",
+ "date": "2026-10-04",
+ "project": "root-game",
+ "source_doc": "root-game research/CLOTH_INTERVIEW_2026-10-04.md",
+ "read_at": "2026-10-04T00:50:28Z",
+ "positions": {
+  "rg-shared-cloth-pass": "stands"
+ },
+ "questions": {
+  "rg-front-legs": "varies",
+  "rg-cloth-squash": "squash",
+  "rg-hard-mode": "lag"
+ },
+ "terms": {},
+ "steers": [],
+ "outcome": "ruled"
+}
