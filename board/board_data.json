@@ -1626,6 +1626,28 @@
    "auto": true,
    "pos": "The asset trial has to beat a constant-extraction script on the numeric drifts to earn its place. This stands unless you flip it.",
    "why": "Two of the five known drifts are plain numbers a script catches. Same bar as the quote-to-claim trial's baseline. Source: council/passes/6FACE_PASS_jev_asset_2026-10-03.md and the scope brief (bars-engine#256)"
+  },
+  {
+   "id": "bm-interview-block",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "Every daemon report now opens with the Big Mind interview before the five moves: its job on this problem, how it would do it, the hours it costs you, the pay you get, and who it works for. It ships in the same pull request as the re-brief and merges on your next board read unless you flip it.",
+   "why": "The faces never collected a daemon's cost and benefit before. The hours and the pay give them both, in the source's own questions. The report check now requires the heading, and a report without it fails. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/28"
+  },
+  {
+   "id": "bm-sprout-emotional-body",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "Sprout's design doc gains one sentence beside the six gates: \"The Emotional Body is not a gate. The farm loop is Emotional Alchemy, so the Emotional Body is the world the player works in.\" It goes in on your next board read unless you flip it or reword it.",
+   "why": "The book seats seven daemons and the final bout has six gates, so a later session could add a seventh to match. The design doc is yours, so the sentence is shown whole first. Source: sprout docs/design.md, the final bout; MTGOA Daemons — Breakdown."
   }
  ],
  "questions": [
