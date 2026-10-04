@@ -3689,6 +3689,28 @@
      "c": "The test checks for wonder alone."
     }
    ]
+  },
+  {
+   "id": "cc-topknot-eye",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "sprout character creation 5",
+   "q": "Does the topknot go into the robe set? It is the first robe set piece we drew ourselves: hair drawn back tight from a high hairline into a bound knot on the crown.",
+   "why_you": "The quality gate's last step is your eye: only your approval puts art we drew into the game. Its script checks pass. Against LPC's hair it has less single-pixel strand texture and a stronger light from the left. The standing sheet is /mnt/project-files/character-creation/topknot-standing-4x.png, and every frame of walk, slash and thrust is in /mnt/project-files/character-creation/topknot-review.png (sprout pull request #13).",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Approve it",
+     "c": "The topknot becomes the robe set's hair for every role and for your player's creator, and the long wide-sleeved robe comes next."
+    },
+    {
+     "v": "redraw",
+     "label": "Redraw it",
+     "c": "Say what is off in the steer box. It is redrawn and comes back to you before anything else is drawn."
+    }
+   ]
   }
  ],
  "causes": [
@@ -4870,6 +4892,12 @@
     "decision": "stands",
     "recorded": "2026-10-04",
     "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "cc-robe-set": {
+    "decision": "stands",
+    "label": "Stands: we draw the robe set ourselves, the topknot first",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
    }
   },
   "questions": {
