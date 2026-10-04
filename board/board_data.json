@@ -1713,6 +1713,60 @@
    "auto": true,
    "pos": "New clothing for the world (a wrapped robe, a sash, a topknot, a field hat) goes through the art quality gate and your eye before any look wears it, as the sweep hairstyle did. This stands unless you flip it.",
    "why": "Your ruling on the rig research, 2026-10-02: only your approval puts Claude-drawn art in the game (sprout docs/decisions/character-base.md). Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "fr-dialogue-on-board",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "feature request move",
+   "auto": true,
+   "pos": "The feature request move's dialogue rounds go on this board as question rows, not in thread chat. A thread reply names the new rows and links here, with no questions.",
+   "why": "Your words on 2026-10-04, when round 1 was asked in chat: \"This should've ended up on the board and not in front of me\". The move's procedure is corrected to match. Source: council/moves/feature-request.md (six-faces-council)"
+  },
+  {
+   "id": "fr-staging-chamber1",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "feature request: scene staging",
+   "auto": true,
+   "pos": "Scene staging's first test is chamber 1 of the cave played end to end in the slice. Then all eight chambers run through the same stager with no hand edits, which proves it automatic.",
+   "why": "The map planner already builds and names all eight chambers, and each cave scene names its chamber, so they share a key. The Shaman's cast: doing slightly too much. Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "fr-staging-mirror-player",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "feature request: scene staging",
+   "auto": true,
+   "pos": "Until the game computes a reading from play, the stager plays a scene for a mirror player chosen in the URL, as story/mirror.mjs does on paper.",
+   "why": "docs/story-pipeline.md step 2 keeps the reading's definition as its own decision, so scene staging does not make it. Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "fr-staging-slice",
+   "faces": [
+    "regent"
+   ],
+   "pass": "feature request: scene staging",
+   "auto": true,
+   "pos": "The stager builds on the slice, not the old prototype.",
+   "why": "docs/slice-plan.md, Decisions: the prototype is not touched. Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "fr-belief-readings",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "feature request move",
+   "auto": true,
+   "pos": "The council's production readings of the six beliefs: not ready is prerequisite chasing; not capable is reaching for a new engine or tool; not good enough is polish loops; not worthy is not asking for a playtest; insignificant is changes too small to show; don't belong is copying genre habits or hiding the teaching.",
+   "why": "You asked for better-fitting examples than your parentheses, which you said are not canon. Daemon pairings come from the retired Appendix G, which calls them starting points. Source: council/moves/feature-request.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -3304,6 +3358,89 @@
      "v": "peace",
      "label": "Peace",
      "c": "The test checks that every look sits in the world without jarring."
+    }
+   ]
+  },
+  {
+   "id": "fr-staging-lead",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "feature request: scene staging, round 1",
+   "q": "Whose need leads scene staging: yours as the maker who wants a scene script to play itself, or the player's as they meet the cave?",
+   "why_you": "The record says who is helped (the maker and the player) but not whose need wins when they pull apart. That changes what the first build optimises: authoring speed, or how the scene feels in play.",
+   "not_before": "The feature request move started on 2026-10-04. This is its first round, moved here from the thread because the dialogue belongs on the board.",
+   "options": [
+    {
+     "v": "maker",
+     "label": "A. You as maker (council's recommendation)",
+     "c": "The first build makes any scene play from its script with no hand placement. The player's experience in chamber 1 is the acceptance test."
+    },
+    {
+     "v": "player",
+     "label": "B. The player",
+     "c": "The first build polishes chamber 1 as a moment, and automation for the other seven chambers comes after."
+    }
+   ]
+  },
+  {
+   "id": "fr-staging-feel",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "feature request: scene staging, round 1",
+   "q": "What do you want to feel the first time chamber 1 plays from its script?",
+   "why_you": "Only you hold your own satisfaction. The council reads the player's as wonder, fear's gold state, in a surreal cave. Yours sets what the test of done looks for.",
+   "not_before": "First round of the feature request move, 2026-10-04.",
+   "options": [
+    {
+     "v": "wonder",
+     "label": "Wonder",
+     "c": "Done means the scene surprises you: it plays in a way you did not have to picture."
+    },
+    {
+     "v": "poignance",
+     "label": "Poignance",
+     "c": "Done means the lesson lands: the traveller's words carry what Cael's parting carried."
+    },
+    {
+     "v": "bliss",
+     "label": "Bliss",
+     "c": "Done means it is a pleasure to watch: timing, movement and boxes flow."
+    },
+    {
+     "v": "triumph",
+     "label": "Triumph",
+     "c": "Done means the pipeline works: write a script, it plays, no hands."
+    },
+    {
+     "v": "peace",
+     "label": "Peace",
+     "c": "Done means you can stop worrying about staging: every later scene will just work."
+    }
+   ]
+  },
+  {
+   "id": "fr-staging-auto",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "feature request: scene staging, round 1",
+   "q": "Should the stager place everything itself, with pins for overrides, or produce a draft that a person edits?",
+   "why_you": "This is how you want to work on scenes, which only you can say, and it decides whether the stager is a compiler or an editor.",
+   "not_before": "First round of the feature request move, 2026-10-04.",
+   "options": [
+    {
+     "v": "auto",
+     "label": "A. Places everything, with pins (council's recommendation)",
+     "c": "Like the map planner: the same script always gives the same staging, and a pinned mark stays where you put it."
+    },
+    {
+     "v": "draft",
+     "label": "B. A draft a person edits",
+     "c": "The stager writes a first staging, and the edited file becomes the source from then on."
     }
    ]
   }
