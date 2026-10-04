@@ -4201,7 +4201,7 @@
    "rg-shared-cloth-pass": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
    }
   },
   "questions": {
@@ -4502,19 +4502,19 @@
     "decision": "varies",
     "label": "The gap between the front legs changes with the move",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
    },
    "rg-cloth-squash": {
     "decision": "squash",
     "label": "The clothes squash flat onto each wearer's own leg where the legs press them",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
    },
    "rg-hard-mode": {
     "decision": "lag",
     "label": "Hard mode stays, and the give is drawn a beat after the hit",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council, branch council/root-game-cloth-board-rows)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
    }
   },
   "causes": {
