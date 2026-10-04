@@ -36,6 +36,8 @@ projects more effectively between that and Jev we can save a lot of tokens"
 ## Where the rest lives
 
 - The council's skill: `.claude/skills/six-faces/SKILL.md`. The pipeline: `council/pipeline.yaml`.
-- Board data, ledger records and lessons are written on main only. `council/faces.yaml` changes only by his ruling.
+- Board data, ledger records and lessons are written on main only. Rows reach main through `board/sync_board.py`
+  (see docs/merging.md), which also brings over anything the live page has that main lacks; a board-only pull request
+  merges without the label (Wendell, 2026-10-04). `council/faces.yaml` changes only by his ruling.
 - Deferred items: run `python3 council/due.py --ahead 7` at the start of every board read.
 - Run `python3 council/tools/voice_lint.py` on anything he reads. Never alter his quoted words.

@@ -1,0 +1,63 @@
+{
+  "id": "2026-10-03-jev-pass",
+  "date": "2026-10-03",
+  "project": "six-faces-council",
+  "cause": "feature-design",
+  "question": "How, and whether, to integrate TypeSafe's Jev model into the council's and bars-engine's workflows.",
+  "convened_by": "wendell",
+  "invoked_from": "claude-code",
+  "source_doc": "council/passes/6FACE_PASS_jev_2026-10-03.md (bars-engine, branch claude/inspiring-bhabha-f752d0)",
+  "faces_present": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat",
+    "sage"
+  ],
+  "casts": {
+    "shaman": "8->20",
+    "architect": "34->55",
+    "challenger": "6",
+    "regent": "15",
+    "diplomat": "46->11",
+    "sage": "4->38"
+  },
+  "dissent": true,
+  "dissent_note": "The Challenger held out for a bake-off before any wiring; the Diplomat wanted the first test kept small and the pace faster.",
+  "verdicts": {
+    "shaman": "Tooling yes; no player text without Wendell's say-so.",
+    "architect": "Select, score and verify only, with a deterministic fallback.",
+    "challenger": "Bake-off against Wendell's rulings first (dissent).",
+    "regent": "Candidates only; the reserved list holds.",
+    "diplomat": "Staged and disclosed; keep the first test small (dissent on pace).",
+    "sage": "A measured trial in council tooling first."
+  },
+  "ruling": {
+    "jev-reach": {
+      "choice": "tooling",
+      "wendell": "Council and build tooling for now but I'd be curious about asset and story pipeline work too"
+    },
+    "daemon-report-window": {
+      "choice": "A",
+      "wendell": "A"
+    }
+  },
+  "findings": [
+    "The raw daemon reports were never stored; at most four real labelled pairs with quotes exist and no testable real mismatches. save_report.py (six-faces-council#22) keeps them from now on.",
+    "The Skeptic daemon's falsification of the trial spec: constructed mismatches are too easy, the threshold must be tuned on a separate half, a Choice arm should run beside the Noul, and the baseline must see what Jev sees. All four are applied."
+  ],
+  "subagents": {
+    "model": "sonnet",
+    "count": 1,
+    "tokens_each_approx": [
+      101627
+    ]
+  },
+  "followups": [
+    "Scope the asset and story pipelines as a later pass, after the first trial reports; story prose is canonical and reserved.",
+    "Wendell reads TypeSafe's Data Processing Agreement and Privacy Policy before any report text is sent (T6a).",
+    "Rebuild the portable skill zip with package_skill.py."
+  ],
+  "outcome": "ruled"
+}
