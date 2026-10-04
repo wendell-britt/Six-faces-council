@@ -2216,7 +2216,7 @@
    ],
    "pass": "sprout ranks and badges 4",
    "auto": true,
-   "pos": "The proposed design.md text for ranks, badges, the grid and the units of play goes into design.md on your next board read unless you flip it. It adds a block after Root level in the Systems reference and a short block at the top of Story structure, and every sentence cites the ruling it comes from.",
+   "pos": "The proposed design.md text for ranks, badges, the grid and the units of play goes into design.md on your next board read unless you flip it. It adds a block after Root level in the Systems reference and a short block at the top of Story structure, and every sentence cites the ruling it comes from. Its grid paragraph now describes the labyrinth, not the hub and spoke you overruled.",
    "why": "sprout .specify/specs/ranks-and-badges/design-text.md (pull request #17). Sprout's rules change design.md only on your word, so this waits for a board read."
   }
  ],
@@ -6459,9 +6459,14 @@
    "text": "On pr-last-rank-adventure: The whole game uses these terms not just the last adventure ",
    "savedAt": "2026-10-04T14:08:47.914Z",
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+  },
+  {
+   "text": "On pr-grid-built (said in chat): On the council board I need to be able to “go back” if I overrule without context (like I just did) \n\nThe context is here. The sphere grid works because it acts as a labyrinth not hub and spoke. The path spirals and fractals. We need to do a study of how the sphere grid operates to get a clearer picture of this",
+   "savedAt": "2026-10-04T14:19:48Z",
+   "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
   }
  ],
- "steer_recorded_through": "2026-10-04T14:08:47.914Z",
+ "steer_recorded_through": "2026-10-04T14:19:48Z",
  "battles": [
   {
    "id": "fr-scene-staging",
