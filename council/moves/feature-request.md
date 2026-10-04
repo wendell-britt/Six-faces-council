@@ -81,7 +81,7 @@ Rules for the dialogue:
   council's recommended answer marked. Anything the record can answer is stated as a position, not asked.
 - A round goes on the board as question and position rows, plus an entry in `battles` in `board/board_data.json`
   naming them: `{id, name, repo, element, record, intro, rounds: [{n, questions, positions}]}`. The rows are written
-  through `board/sync_board.py` on main, like any board row. The next round adds `{n: 2, ...}` to the same battle.
+  through `board/sync_board.py` on main, like any board row. The next round passes the same battle in `--rows` with only its new round, `{n: 2, ...}`; `sync_board.py` merges a battle's rounds by number, so an older live page never drops a round.
 - When Wendell says he saved, read the store and record his turns in `request.md` under the round, quoted, as
   rulings, and in a ledger record.
 - The council talks to the work as well as to Wendell. A face may write a short exchange with the work in the
