@@ -167,7 +167,7 @@
  "retired": {
   "fr-dialogue-on-board": "duplicate of frm-questions-to-board, which the character creation run posted first"
  },
- "outcome": "Round 1 played on the board 2026-10-04: maker leads, wonder, the stager places everything with pins; the three positions stand; fr-belief-readings deferred an hour. Round 2 posted: fr-staging-feel-more and four positions answering the 2 step's unpacking questions, plus the cheap test (fr-staging-test). Round 2 played 2026-10-04 01:59Z: poignance and triumph beside wonder; all five positions stand. The 2 step closes; the 1 step (spec kit and the cheap test) starts.",
+ "outcome": "Round 1 played on the board 2026-10-04: maker leads, wonder, the stager places everything with pins; the three positions stand; fr-belief-readings deferred an hour. Round 2 posted: fr-staging-feel-more and four positions answering the 2 step's unpacking questions, plus the cheap test (fr-staging-test). Round 2 played 2026-10-04 01:59Z: poignance and triumph beside wonder; all five positions stand. The 2 step closes; the 1 step (spec kit and the cheap test) starts. The 1 step ran: the cheap test passed and the spec kit is in sprout #12. Round 3 posts the result and the build order as positions.",
  "round_2": {
   "questions": [
    "fr-staging-feel-more"
@@ -178,6 +178,19 @@
    "fr-staging-what-true",
    "fr-staging-reservations",
    "fr-staging-test"
+  ]
+ },
+ "test": {
+  "command": "node tools/test-staging.mjs (sprout)",
+  "date": "2026-10-04",
+  "result": "pass, all eight chambers",
+  "finding": "no chamber holds its scene's prop; props and their hint variants join the staging record"
+ },
+ "spec_kit": "sprout .specify/specs/scene-staging/{spec,plan,tasks}.md (pull request #12)",
+ "round_3": {
+  "positions": [
+   "fr-staging-test-result",
+   "fr-staging-build-order"
   ]
  }
 }
