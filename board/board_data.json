@@ -3975,6 +3975,18 @@
     "label": "Stands: the asset trial has to beat a constant-extraction script",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+   },
+   "bm-brief-ship": {
+    "decision": "stands",
+    "label": "Stands: the daemon re-brief (#28) merges",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)"
+   },
+   "bm-big-heart-line": {
+    "decision": "stands",
+    "label": "Stands: the Big Heart line goes into the Breakdown as shown",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)"
    }
   },
   "questions": {
