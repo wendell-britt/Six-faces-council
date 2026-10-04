@@ -58,6 +58,21 @@ def read_live(path):
     return data, template + "\n"
 
 
+def merge_battle(base, other):
+    """A battle grows by rounds. Keep every round either side has, by its number; where both have a round, the
+    other side's copy wins. Fields other than rounds take the other side's value. On 2026-10-04 a live page that
+    was one publish behind replaced main's copy of fr-ranks-and-badges whole, and round 2 vanished from the board."""
+    out = json.loads(json.dumps(base))
+    rounds = {r.get("n"): r for r in out.get("rounds", [])}
+    for r in other.get("rounds", []):
+        rounds[r.get("n")] = r
+    for k, v in other.items():
+        if k != "rounds":
+            out[k] = v
+    out["rounds"] = [rounds[n] for n in sorted(rounds, key=lambda n: (n is None, n))]
+    return out
+
+
 def union(main, live, report, path="$"):
     """Main plus everything on live: live's version wins where both have a row, nothing is removed."""
     out = json.loads(json.dumps(main))
@@ -75,8 +90,10 @@ def union(main, live, report, path="$"):
                     out[k].append(r)
                     report.append(f"from live: {k} {rid} (new)")
                 elif out[k][have[rid]] != r:
-                    out[k][have[rid]] = r
-                    report.append(f"from live: {k} {rid} (changed)")
+                    new = merge_battle(out[k][have[rid]], r) if k == "battles" else r
+                    if new != out[k][have[rid]]:
+                        out[k][have[rid]] = new
+                        report.append(f"from live: {k} {rid} (changed)")
         elif isinstance(v, dict) and isinstance(out.get(k), dict):
             out[k] = union(out[k], v, report, f"{path}.{k}") if k != "resolved" else merge_resolved(out[k], v, report)
         elif k not in out:
@@ -105,6 +122,13 @@ def add_rows(data, rows, report):
     for k in LISTS:
         have = {r["id"]: r for r in data.get(k, [])}
         for r in rows.get(k, []):
+            if r["id"] in have and k == "battles":
+                cur = data[k].index(have[r["id"]])
+                new = merge_battle(have[r["id"]], r)
+                if new != have[r["id"]]:
+                    data[k][cur] = new
+                    report.append(f"added: {k} {r['id']} (rounds merged)")
+                continue
             if r["id"] in have:
                 if have[r["id"]] != r:
                     sys.exit(f"--rows: {k} {r['id']} already exists with different content; change the id or edit it in place")
