@@ -3726,6 +3726,38 @@
     "decision": "stands",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-maker-and-hall-chat-ruling-5.json (sprout)"
+   },
+   "cave-chamber-scenes": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-echoes": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-reading-once": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-legend-villages": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-act2-voices": {
+    "decision": "stands",
+    "label": "Stands: the voices return as people of their lineage who look like them",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "cave-cycle-roles": {
+    "decision": "overrule",
+    "label": "Overruled: a similar scene for everyone, with hints by reading",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
    }
   },
   "questions": {
