@@ -59,6 +59,17 @@ textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);
 .review h3{font-family:var(--display);font-weight:500;font-size:1rem;margin:0 0 6px}
 .review ul{margin:4px 0 8px;padding-left:18px;font-size:.92rem}
 .review p{font-size:.92rem;margin:0 0 6px}
+.research{background:var(--accent-soft);border-radius:6px;padding:12px 14px;margin:8px 0 12px;max-width:72ch}
+.research h3{font-family:var(--display);font-weight:500;font-size:1.02rem;margin:0 0 8px}
+.research h4{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px;font-weight:600}
+.research p{font-size:.95rem;margin:0 0 6px}
+.research p.lead{font-size:1.02rem}
+.research ul{margin:2px 0 6px;padding-left:20px;font-size:.95rem}
+.research li{margin:3px 0}
+.research .rec{border-left:3px solid var(--accent);padding-left:10px}
+.research details{margin-top:10px;font-size:.88rem}
+.research summary{cursor:pointer;color:var(--muted)}
+.research a{color:var(--accent);overflow-wrap:anywhere}
 .opts{display:grid;gap:8px;margin-top:4px}
 .opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;max-width:72ch}
 .opt:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
@@ -208,12 +219,27 @@ function reviewBox(kind, item){
     ${r.recommend ? `<p><b>The council recommends:</b> ${esc(r.recommend)}</p>` : ''}</div>`;
 }
 
+// Research the council returned when Wendell sent a question back (spec: .specify/specs/board-send-back/).
+// Short lead first, then lists. Every field is optional; sources open in a new tab.
+function researchBox(item){
+  const r = item.research; if (!r) return '';
+  const ul = xs => xs && xs.length ? `<ul>${xs.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+  const sec = (h, body) => body ? `<h4>${esc(h)}</h4>${body}` : '';
+  return `<div class="research"><h3>${esc(r.title || 'Research you asked for')}</h3>
+    ${r.lead ? `<p class="lead">${esc(r.lead)}</p>` : ''}
+    ${(r.sections||[]).map(s => sec(s.h, (s.p ? `<p>${esc(s.p)}</p>` : '') + ul(s.items))).join('')}
+    ${r.recommend ? sec('What the council recommends', `<p class="rec">${esc(r.recommend)}</p>`) : ''}
+    ${(r.sources||[]).length || r.unchecked ? `<details><summary>Sources the council checked</summary>${ul((r.sources||[]).map(s => s.text))}${(r.sources||[]).map(s => `<p><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a></p>`).join('')}${r.unchecked ? `<p>${esc(r.unchecked)}</p>` : ''}</details>` : ''}
+  </div>`;
+}
+
 function qRow(q){
   const st = local.questions[q.id] || {choice:'', steer:''};
   return `<section class="row" id="q-${q.id}">
     <div class="meta">${chips(q.faces)}<span>question</span></div>
     <p class="pos">${esc(q.q)}</p>
     ${reviewBox('questions', q)}
+    ${researchBox(q)}
     <p class="why"><span>why only you</span> ${esc(q.why_you)}</p>
     <p class="why"><span>why not before</span> ${esc(q.not_before)}</p>
     <div class="opts">${q.options.map(o => `<label class="opt"><input type="radio" name="q-${q.id}" value="${esc(o.v)}" id="q-${q.id}-${esc(o.v)}"${st.choice===o.v?' checked':''}> <b>${esc(o.label)}</b><br><span class="oc">${esc(o.c)}</span></label>`).join('')}</div>
