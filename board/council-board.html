@@ -150,6 +150,7 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .bt-move b{display:block}
 .bt-move span{color:var(--muted);font-size:.86rem}
 .bt-move.bt-over{border-color:var(--warn)}
+.bt-move[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 2px var(--accent)}
 .bt-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
 .bt-link{font:inherit;font-size:.88rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:4px 0;text-decoration:underline}
 .bt-steer{margin-top:8px}
@@ -291,6 +292,11 @@ function researchBox(item){
   </div>`;
 }
 
+/* Multi-select, Wendell on the board, 2026-10-04 (cc-feeling): "We should be able to chose up to 3 options here." A
+   question with max above 1 takes up to that many picks. It saves choices in order, and choice as the first, so a reader
+   of the old shape still finds one answer. */
+const picks = st => st.choices || (st.choice ? [st.choice] : []);
+const pickLabel = (q, l) => picks(l).map(v => (q.options.find(o => o.v === v) || {}).label || v).join(', ');
 function qRow(q){
   const st = local.questions[q.id] || {choice:'', steer:''};
   return `<section class="row" id="q-${q.id}">
@@ -300,7 +306,8 @@ function qRow(q){
     ${researchBox(q)}
     <p class="why"><span>why only you</span> ${esc(q.why_you)}</p>
     <p class="why"><span>why not before</span> ${esc(q.not_before)}</p>
-    <div class="opts">${q.options.map(o => `<label class="opt"><input type="radio" name="q-${q.id}" value="${esc(o.v)}" id="q-${q.id}-${esc(o.v)}"${st.choice===o.v?' checked':''}> <b>${esc(o.label)}</b><br><span class="oc">${esc(o.c)}</span></label>`).join('')}</div>
+    ${q.max > 1 ? `<p class="why"><span>pick</span> up to ${q.max}</p>` : ''}
+    <div class="opts">${q.options.map(o => `<label class="opt"><input type="${q.max > 1 ? 'checkbox' : 'radio'}" name="q-${q.id}" value="${esc(o.v)}" id="q-${q.id}-${esc(o.v)}"${picks(st).includes(o.v)?' checked':''}> <b>${esc(o.label)}</b><br><span class="oc">${esc(o.c)}</span></label>`).join('')}</div>
     <div class="ctl"><div class="steer"><textarea id="qs-${q.id}" placeholder="Steer, in your words">${esc(st.steer)}</textarea></div>
     <div><button type="button" class="save" data-kind="questions" data-id="${q.id}">Save</button><div class="state" id="st-questions-${q.id}"></div></div></div>
     ${deferCtl('questions', q.id)}
@@ -345,7 +352,7 @@ function doneRow(kind, item, title){
   let dec, where;
   if (s === 'saved'){
     dec = l.deferred ? 'Deferred, back ' + (l.until === 'spaced' ? `in ${human(l.hours)}` : (UNTIL.find(u=>u[0]===l.until)||[0,'when you ask'])[1])
-        : kind==='questions' ? (item.options.find(o=>o.v===l.choice)||{}).label || 'Steer only'
+        : kind==='questions' ? pickLabel(item, l) || 'Steer only'
         : kind==='terms' ? (LABEL[l.action]||l.action) + (l.rename?` as "${l.rename}"`:'')
         : kind==='causes' ? (l.kept ? 'Kept' : `Renamed "${l.name}"`)
         : LABEL[l.status]||l.status;
@@ -408,8 +415,13 @@ show(['#resolved','#steps'].includes(location.hash) ? location.hash.slice(1) : '
 
 const openView = document.getElementById('view-open');
 openView.addEventListener('change', e => {
-  const r = e.target; if (r.type !== 'radio') return;
-  const id = r.name.slice(2); local.questions[id] = {...(local.questions[id]||{steer:''}), choice:r.value};
+  const r = e.target; if (r.type !== 'radio' && r.type !== 'checkbox') return;
+  const id = r.name.slice(2), q = DATA.questions.find(x => x.id === id) || {};
+  if (r.type === 'checkbox'){
+    const on = [...r.closest('.opts').querySelectorAll('input:checked')].map(x => x.value);
+    if (on.length > q.max){ r.checked = false; on.splice(on.indexOf(r.value), 1); }
+    local.questions[id] = {...(local.questions[id]||{steer:''}), choice:on[0]||'', choices:on};
+  } else local.questions[id] = {...(local.questions[id]||{steer:''}), choice:r.value};
 });
 openView.addEventListener('click', async e => {
   const b = e.target.closest('button'); if (!b) return;
@@ -438,7 +450,7 @@ openView.addEventListener('click', async e => {
   if (kind === 'questions'){
     const q = local.questions[id] || {choice:''}; const steer = document.getElementById('qs-'+id).value;
     if (!q.choice && !steer.trim()){ st.textContent = 'Pick an option or write a steer first.'; return; }
-    body = {choice:q.choice||'', steer};
+    body = {choice:q.choice||'', steer}; if (q.choices) body.choices = q.choices;
   } else if (kind === 'terms'){
     const t = DATA.terms.find(x => x.id === id), l = local.terms[id] || {};
     body = {action:l.action || t.rec, rename:document.getElementById('tr-'+id).value.trim(), steer:document.getElementById('ts-'+id).value};
@@ -532,7 +544,9 @@ function btTurn(){
   if (t.kind === 'questions'){
     btSay(`<p class="bt-sub">${chips(row.faces)} ask:</p><p class="bt-say">${esc(row.q)}</p>
       <p class="bt-sub">${esc(row.why_you)}</p>
-      <div class="bt-moves">${row.options.map(o => `<button type="button" class="bt-move" data-bt="pick" data-v="${esc(o.v)}"><b>${esc(o.label)}</b><span>${esc(o.c)}</span></button>`).join('')}</div>
+      ${row.max > 1 ? `<p class="bt-sub">Pick up to ${row.max} moves, then use them.</p>` : ''}
+      <div class="bt-moves">${row.options.map(o => `<button type="button" class="bt-move" data-bt="${row.max > 1 ? 'toggle' : 'pick'}" data-v="${esc(o.v)}"${row.max > 1 ? ' aria-pressed="false"' : ''}><b>${esc(o.label)}</b><span>${esc(o.c)}</span></button>`).join('')}</div>
+      ${row.max > 1 ? `<div class="bt-row"><button type="button" class="save" data-bt="usepicks">Use these moves</button></div>` : ''}
       <textarea class="bt-steer" id="bt-steer" placeholder="Say it in your words instead, or as well (optional)"></textarea>
       <div class="bt-row"><button type="button" class="bt-link" data-bt="steeronly">Answer with these words only</button><button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
   } else {
@@ -553,7 +567,7 @@ async function btSave(body){
     catch (err){ btSay(`<p class="bt-say">That turn did not save (${esc(err && err.code || 'error')}).</p><div class="bt-row"><button type="button" class="save" data-bt="retry">Try the turn again</button><button type="button" class="bt-link" data-bt="run">Run</button></div>`); return; }
   } else live[t.kind][t.id] = body;   // a view without the store plays on, and says so at the end
   const row = DATA[t.kind].find(x => x.id === t.id);
-  const said = t.kind === 'questions' ? ((row.options.find(o => o.v === body.choice) || {}).label || 'In your words') : (body.status === 'overrule' ? 'Overruled' : 'Stands');
+  const said = t.kind === 'questions' ? (pickLabel(row, body) || 'In your words') : (body.status === 'overrule' ? 'Overruled' : 'Stands');
   bt.log.push(`${t.kind === 'questions' ? row.q : row.pos} · ${said}`);
   bt.i++;
   const f = $b('bt-field'); f.classList.remove('bt-hit'); void f.offsetWidth; f.classList.add('bt-hit');
@@ -577,6 +591,15 @@ document.addEventListener('click', e => {
   if (a === 'next' || a === 'retry') return btTurn();
   if (a === 'pick') return btSave({choice: b.dataset.v});
   if (a === 'steeronly') return btSave({choice: ''});
+  if (a === 'toggle'){
+    const row = DATA.questions.find(x => x.id === bt.queue[bt.i].id), on = b.getAttribute('aria-pressed') === 'true';
+    if (!on && $b('bt-box').querySelectorAll('[data-bt="toggle"][aria-pressed="true"]').length >= row.max) return;
+    b.setAttribute('aria-pressed', String(!on)); return;
+  }
+  if (a === 'usepicks'){
+    const v = [...$b('bt-box').querySelectorAll('[data-bt="toggle"][aria-pressed="true"]')].map(x => x.dataset.v);
+    return btSave(v.length ? {choice: v[0], choices: v} : {choice: ''});
+  }
   if (a === 'stand') return btSave({status: 'stands'});
   if (a === 'overrule') return btSave({status: 'overrule'});
 });
