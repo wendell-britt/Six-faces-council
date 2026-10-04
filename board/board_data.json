@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03",
+ "updated": "2026-10-04",
  "positions": [
   {
    "id": "build",
@@ -1475,6 +1475,49 @@
    "auto": true,
    "pos": "The output card's five moves are approved as worded and are no longer placeholders.",
    "why": "Your words in chat: 'The 5 moves I already approved'. Source: sprout council/ledger/2026-10-03-output-card-moves-ruling.json"
+  },
+  {
+   "id": "bm-daemon-brief",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "The eight daemon agents get a new opening: each brief starts with the daemon's essence and its allied form from the book, and reads its aim line in daemons.yaml as where it overreaches. The cells and daemons.yaml stay as they are. This is built on a branch on your next board read unless you flip it.",
+   "why": "Your steer on the daemons' purpose says they protect the Player and work for the Player's enjoyment, and the book rules that a daemon's definition is its essence. Today the aim lines are wild forms, such as the Protector's 'Keep you out of range of anything that could actually land'. Source: council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "bm-rule-reach",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "bars-engine's working rules gain the board rule: every question for you goes through the reach test and onto this board, never into chat. Sessions and the workers they start in bars-engine then carry it.",
+   "why": "Your words: 'If you need rulings from me this should've gone to the council?' A session in bars-engine put four questions in chat because bars-engine's CLAUDE.md never carried the rule. A worker sees only its prompt and the CLAUDE.md of its repo. Source: council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "bm-safety",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "The free daemon experience on your coaching site is story and practice. It meets the Protector and two or three more daemons, stops before the Damaged Self, and carries a crisis link. The deeper voices belong to a facilitated session. This stands unless you flip it.",
+   "why": "Your answer on Sprout's therapy question was 'never': story and practice, never therapy. The source itself warns against reaching the deepest voices without a foundation. Source: council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "bm-credit",
+   "faces": [
+    "regent"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "The site credits the Big Mind process and Voice Dialogue by name on an about-the-method page. The product's own title does not use the founder's name for his process. This stands unless you flip it.",
+   "why": "The source is a workshop transcript by the process's founder, so it is material to learn from and credit, never text to publish. Source: council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -2758,6 +2801,34 @@
      "c": "The largest reach. It conflicts with the community's allergy until the terms and a consent flow exist."
     }
    ]
+  },
+  {
+   "id": "bm-big-heart",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "11",
+   "q": "Does Big Heart enter the book's canon as what the Damaged Self is waiting for? In the Big Mind source, the yin side of compassion holds the Damaged Self and lets it be, without fixing it, and the source frames this as what it had looked for everywhere. Sprout's design still says the Damaged Self's need is not confirmed.",
+   "why_you": "The daemon canon is canonical prose, which the reserved list keeps with you, and the answer decides Sprout's open Damaged Self beat.",
+   "not_before": "The Big Mind source was first read against the canon on 2026-10-03.",
+   "options": [
+    {
+     "v": "canon",
+     "label": "Add it to canon (council recommends)",
+     "c": "The Breakdown gains one line under the Damaged Self, and Sprout's Damaged Self gate can be drafted as a gate the player opens by staying with it, for your ruling."
+    },
+    {
+     "v": "facilitation",
+     "label": "Keep it for facilitation only",
+     "c": "Big Heart appears in coaching sessions and the site, the book stays as written, and Sprout's beat stays open."
+    },
+    {
+     "v": "later",
+     "label": "Decide after the book's proof edit",
+     "c": "Nothing changes now, and the Sprout beat waits."
+    }
+   ]
   }
  ],
  "causes": [
@@ -3041,6 +3112,43 @@
    "why": "Plainly false said flatly.",
    "flag": null,
    "source": "CLAUDE.md § A fourth variant"
+  },
+  {
+   "id": "sighting",
+   "term": "sighting",
+   "repo": "bars-engine",
+   "whose": "a session, 2026-10-03",
+   "rec": "adopt",
+   "register": [
+    "product",
+    "book"
+   ],
+   "plain": "One person's daemon caught in one situation, tagged with which of the seven it is and the feeling that was live.",
+   "eli5": "It is like spotting a bird: the bird is one kind, and you saw it on one day in one tree.",
+   "usage": "Her third sighting this month was the Controller, in Fire, before a sales call.",
+   "replaces": "daemon instance; a bars-engine Daemon record; a Daemon Capture",
+   "collisions": [],
+   "why": "Today 'daemon' names three things, the seven, a bars-engine record of a named shadow, and a captured pattern, and nothing ties the last two to one of the seven.",
+   "flag": null,
+   "source": "council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "meet-your-daemons",
+   "term": "Meet Your Daemons",
+   "repo": "bars-engine",
+   "whose": "a session, 2026-10-03",
+   "rec": "adopt",
+   "register": [
+    "product"
+   ],
+   "plain": "The free twelve-minute experience on your coaching site: it interviews the Protector and two or three more daemons and gives the visitor a Daemon Card.",
+   "eli5": "You meet the helpers inside you and find out which one is driving.",
+   "usage": "Try Meet Your Daemons before our first call.",
+   "replaces": "a working title, 'The Interview'",
+   "collisions": [],
+   "why": "The title must avoid the founder's name for his process. The Diplomat dissents: the name belongs with the questions. Other options: The Interview, or a name of yours.",
+   "flag": null,
+   "source": "council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
   }
  ],
  "resolved": {
