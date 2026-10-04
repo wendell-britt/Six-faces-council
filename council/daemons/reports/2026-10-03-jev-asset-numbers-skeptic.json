@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-03",
+  "pass": "jev-asset-numbers",
+  "daemon": "skeptic",
+  "face": "challenger",
+  "cast": "3 -> 11",
+  "model": "sonnet",
+  "tokens": "114224",
+  "report": "2026-10-03-jev-asset-numbers-skeptic.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Rule of three: \"the interval from 0 to 3/n is a 95% confidence interval\" when no event occurs in n subjects [1]."
+      ],
+      "url": "https://en.wikipedia.org/wiki/Rule_of_three_(statistics",
+      "quote": "the interval from 0 to 3/n is a 95% confidence interval",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "The exact Clopper-Pearson interval is \"usually conservative\" (coverage \"may be well above 95%\"), while Wilson \"can be safely employed with small samples\" [2]."
+      ],
+      "url": "https://en.wikipedia.org/wiki/Binomial_proportion_confidence_interval",
+      "quote": "is usually conservative",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Practitioner guidance suggests about 100 labelled examples (50 pass, 50 fail), split train 10-20%, dev 40-45%, test 40-45%, with the judge run \"once on held-out test set\" [3]."
+      ],
+      "url": "https://skills.sh/hamelsmu/evals-skills/validate-evaluator",
+      "quote": "~100 traces with binary Pass/Fail labels",
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "Another source says that below 60 labels the intervals get wide [4].",
+        "Source [4] is a search summary, so treat it as unlinked beyond that page."
+      ],
+      "url": "https://arxiv.org/pdf/2605.16354",
+      "quote": "Augmenting Human Evaluation with LLM Judges: How Many Human Reviews Do You Need?",
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "planning an evaluation experiment\" [5]."
+      ],
+      "url": "https://arxiv.org/abs/2411.00640",
+      "quote": "planning an evaluation experiment",
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [
+        "It also says new evals \"should contain at least 1,000 questions\" for good signal [6], which this trial cannot reach, so its results will be wide.",
+        "Paired comparison on the same items is \"a 'free' reduction in estimator variance\" [6]."
+      ],
+      "url": "https://arxiv.org/html/2411.00640v1",
+      "quote": "at least 1,000 questions",
+      "label": "unlabelled"
+    },
+    {
+      "n": 7,
+      "claims": [
+        "A threshold chosen from a sweep over test outcomes means the threshold \"has seen the test set\" [7].",
+        "C: protects against tuning on the scored items [7][8]."
+      ],
+      "url": "https://christophermeiklejohn.com/series/the-machine-in-the-lab/the-holdout-is-a-one-way-door/",
+      "quote": "has seen the test set",
+      "label": "unlabelled"
+    },
+    {
+      "n": 8,
+      "claims": [
+        "Pre-registration is proposed for predictive modeling because of \"data-dependent decision-making\" and \"unintentional re-use of test data\" [8].",
+        "C: protects against tuning on the scored items [7][8]."
+      ],
+      "url": "https://arxiv.org/abs/2311.18807",
+      "quote": "adapting pre-registration practices from explanatory modeling to predictive modeling",
+      "label": "unlabelled"
+    },
+    {
+      "n": 9,
+      "claims": [
+        "Injected positives have a \"realism gap\": they \"do not necessarily appear similar to organic bugs\" [9], so they can test the plumbing and cannot stand in for real misses."
+      ],
+      "url": "https://arxiv.org/pdf/2208.11088",
+      "quote": "Evaluating Synthetic Bugs",
+      "label": "unlabelled"
+    },
+    {
+      "n": 10,
+      "claims": [
+        "Static analysis reports show false-positive shares of 76% in one industry set [10], and say tools with many false positives waste time and erode trust [10]."
+      ],
+      "url": "https://arxiv.org/pdf/2601.18844",
+      "quote": "Reducing False Positives in Static Bug Detection with LLMs",
+      "label": "unlabelled"
+    },
+    {
+      "n": 11,
+      "claims": [
+        "For judge validation, a small human-labelled set gives the judge's true and false positive rates and the method should carry that uncertainty forward [11]."
+      ],
+      "url": "https://www.alphaxiv.org/abs/2601.20913.md",
+      "quote": "small, high-quality human-labelled calibration set",
+      "label": "unlabelled"
+    }
+  ]
+}
