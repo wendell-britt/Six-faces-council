@@ -87,7 +87,9 @@ the board.
 ## After Wendell answers on the board
 
 Read the store with `ArtifactData`: collections `positions`, `questions`, and the document
-`steer/general`. Write a ledger record. An overrule or a steer on a face's row becomes a lesson in
+`steer/general`. Save `positions`, `questions` and `terms` with `out_dir` and run
+`python3 board/unrecorded.py <dir>`: record every save it lists, not only the rows of the battle you
+came for (Wendell stood `dy-2026-10-04-open`). Write a ledger record. An overrule or a steer on a face's row becomes a lesson in
 that face's entry in `faces.yaml`, quoted, with the source. A ruling that changes a term, a
 structure or a date goes in the repo's decision log where one exists.
 
