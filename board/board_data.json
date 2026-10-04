@@ -4481,6 +4481,12 @@
     "decision": "stands",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
+   },
+   "fr-dialogue-on-board": {
+    "decision": "retire",
+    "label": "Duplicate of frm-questions-to-board",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-feature-request-scene-staging-round-1.json (six-faces-council)"
    }
   },
   "questions": {
@@ -4958,5 +4964,54 @@
    "record": "council/ledger/2026-10-03-board-read-11.json"
   }
  ],
- "steer_recorded_through": "2026-10-02T16:20:19.620Z"
+ "steer_recorded_through": "2026-10-02T16:20:19.620Z",
+ "battles": [
+  {
+   "id": "fr-scene-staging",
+   "name": "Scene Staging",
+   "repo": "sprout",
+   "element": "wood",
+   "record": "sprout .specify/specs/scene-staging/request.md",
+   "intro": "It wants a scene script to play itself: the people of a scene stand, walk and speak in the chamber the script names, with no hand placement. Today the cave's eight chambers are built and named on the map, and the slice can walk and show a line of text, but nobody else stands on the map and nothing starts a scene.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "fr-staging-lead",
+      "fr-staging-feel",
+      "fr-staging-auto"
+     ],
+     "positions": [
+      "fr-staging-chamber1",
+      "fr-staging-mirror-player",
+      "fr-staging-slice"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-character-creation",
+   "name": "Character Creation",
+   "repo": "sprout",
+   "element": "earth",
+   "record": "sprout .specify/specs/character-creation/request.md",
+   "intro": "It wants the people of the world to have looks of their own: healers, elders, hunters and villagers built from the character parts, inside the sprite budget.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "cc-body",
+      "cc-creator-scope",
+      "cc-feeling"
+     ],
+     "positions": [
+      "cc-no-names",
+      "cc-store-safe",
+      "cc-budget",
+      "cc-wardrobe-gate"
+     ]
+    }
+   ]
+  }
+ ]
 }
