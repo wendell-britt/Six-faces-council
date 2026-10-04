@@ -3770,6 +3770,26 @@
     "label": "Stands: the breadcrumb is a tended sapling carrying all five rites' marks",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)"
+   },
+   "bm-daemon-brief": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "bm-rule-reach": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "bm-safety": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "bm-credit": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
    }
   },
   "questions": {
@@ -4053,6 +4073,12 @@
     "label": "Answered from the record: Jev is TypeSafe's Jev, which selects, scores and verifies without generating text (rows jev-select-only to jev-spec-first, another session's pass). The question failed the reach test.",
     "recorded": "2026-10-03",
     "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)"
+   },
+   "bm-big-heart": {
+    "decision": "canon",
+    "label": "Big Heart enters canon as what the Damaged Self is waiting for",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
    }
   },
   "causes": {
@@ -4177,6 +4203,16 @@
     "decision": "not_yet",
     "recorded": "2026-10-02",
     "record": "ledger/2026-10-02-board-read-5.json"
+   },
+   "sighting": {
+    "decision": "adopt",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "meet-your-daemons": {
+    "decision": "adopt",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
    }
   }
  },
