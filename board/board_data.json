@@ -1518,6 +1518,28 @@
    "auto": true,
    "pos": "The site credits the Big Mind process and Voice Dialogue by name on an about-the-method page. The product's own title does not use the founder's name for his process. This stands unless you flip it.",
    "why": "The source is a workshop transcript by the process's founder, so it is material to learn from and credit, never text to publish. Source: council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "bm-brief-ship",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "The daemon re-brief merges on your next board read unless you flip this. Each of the seven agents now opens with its essence, ally form and wild form from the book, and the Damaged Self carries your Big Heart ruling.",
+   "why": "Position bm-daemon-brief stood on 2026-10-04. Only the agent files change; daemons.yaml and friendcraft's cells do not. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/28"
+  },
+  {
+   "id": "bm-big-heart-line",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "11",
+   "auto": true,
+   "pos": "This line goes into the Breakdown under the Damaged Self, after its essence: \"**What it waits for:** Big Heart: to be held and let be. The Fixer tries to resolve what is meant to be witnessed.\" The second sentence is yours, from your Fixer facilitator notes. It goes in at the next session that can write The Library unless you flip it or reword it in the steer box.",
+   "why": "You chose 'canon' on bm-big-heart, whose option said the Breakdown gains one line. Canonical prose is yours, so the line is shown whole before it lands. Source: BigMind_Compiled.txt, Fixer section 5; council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
   }
  ],
  "questions": [
