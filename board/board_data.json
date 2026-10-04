@@ -5126,6 +5126,18 @@
       "cc-budget",
       "cc-wardrobe-gate"
      ]
+    },
+    {
+     "n": 2,
+     "questions": [],
+     "positions": [
+      "cc-gets-us",
+      "cc-feels-now",
+      "cc-what-true",
+      "cc-reservations",
+      "cc-test-result",
+      "cc-next-build"
+     ]
     }
    ]
   }
