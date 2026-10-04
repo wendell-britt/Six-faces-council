@@ -1,0 +1,172 @@
+{
+ "id": "2026-10-04-board-read-saved-answers",
+ "date": "2026-10-04",
+ "project": "six-faces-council",
+ "cause": "board-read",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "read_at": "2026-10-04T16:35:00Z",
+ "trigger": "Wendell, 2026-10-04T16:27Z: \"Updated the board\"",
+ "positions": {
+  "dy-limit-wording": {
+   "status": "stands",
+   "saved_at": "2026-10-03T20:54:09.485Z"
+  },
+  "dy-research-handoff": {
+   "status": "stands",
+   "saved_at": "2026-10-03T20:54:03.119Z"
+  },
+  "cost-quiet-wakes": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:39:47.442Z"
+  },
+  "cost-daily-script": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:39:56.310Z"
+  },
+  "cost-per-row": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:39:59.111Z"
+  },
+  "cost-short-rule": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:00.909Z"
+  },
+  "daemon-reports-saved": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:33.002Z"
+  },
+  "gn-verify": {
+   "status": "stands",
+   "saved_at": "2026-10-03T02:08:21.190Z"
+  },
+  "gn-rule17": {
+   "status": "stands",
+   "saved_at": "2026-10-03T02:08:26.671Z"
+  },
+  "gn-hold-template": {
+   "status": "stands",
+   "saved_at": "2026-10-03T02:08:29.873Z"
+  },
+  "gn-ke-notes": {
+   "status": "stands",
+   "saved_at": "2026-10-03T02:08:32.739Z"
+  },
+  "sm-hearing-exposes-bond": {
+   "status": "stands",
+   "saved_at": "2026-10-03T20:09:42.404Z"
+  },
+  "tr-builder-not-layers": {
+   "status": "stands",
+   "saved_at": "2026-10-04T13:28:46.638Z"
+  },
+  "jev-select-only": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:11.386Z"
+  },
+  "jev-fallback": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:17.985Z"
+  },
+  "jev-candidates-only": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:20.622Z"
+  },
+  "jev-reserved": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:24.255Z"
+  },
+  "jev-no-player-text": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:27.402Z"
+  },
+  "jev-spec-first": {
+   "status": "stands",
+   "saved_at": "2026-10-03T23:40:30.369Z"
+  },
+  "rg-stance-by-move": {
+   "status": "stands",
+   "saved_at": "2026-10-04T03:44:46.111Z"
+  },
+  "pr-branch-emphasis": {
+   "status": "overrule",
+   "saved_at": "2026-10-04T14:20:54.344Z",
+   "steer": "Branches aren’t based on stats like the sphere grid branches unlock moves and the specific build of stats that would support the subtype of the type of character you’re building as you traverse the path "
+  },
+  "pr-design-text": {
+   "status": "stands",
+   "saved_at": "2026-10-04T14:21:23.080Z"
+  },
+  "pr-units-mapping": {
+   "status": "stands",
+   "saved_at": "2026-10-04T14:21:12.362Z"
+  },
+  "pr-study-findings": {
+   "status": "stands",
+   "saved_at": "2026-10-04T16:26:02.162Z"
+  },
+  "pr-labyrinth-grid": {
+   "status": "stands",
+   "saved_at": "2026-10-04T16:27:17.548Z"
+  },
+  "dy-2026-10-04-open": {
+   "status": "stands",
+   "saved_at": "2026-10-04T16:27:36.911Z"
+  }
+ },
+ "questions": {
+  "gn-pilot": {
+   "choice": "open",
+   "saved_at": "2026-10-03T02:07:59.414Z"
+  },
+  "gn-proof": {
+   "choice": "done",
+   "saved_at": "2026-10-03T02:07:36.700Z"
+  },
+  "dy-model": {
+   "choice": "smaller",
+   "saved_at": "2026-10-03T22:18:35.149Z"
+  },
+  "cc-topknot-door": {
+   "choice": "overhang",
+   "saved_at": "2026-10-04T04:20:12.950Z"
+  },
+  "pr-labyrinth-scale": {
+   "choice": "steer",
+   "saved_at": "2026-10-04T16:25:21.599Z",
+   "steer": "Something between a and c. The cycle inward connects to the world ring concept- the idea of fighting inner demons for development resonates and using the spoils of those fights for advancement "
+  }
+ },
+ "terms": {
+  "encounter-quest-adventure-campaign": {
+   "action": "adopt",
+   "saved_at": "2026-10-04T14:09:32.167Z"
+  }
+ },
+ "steers": [
+  {
+   "row": "pr-branch-emphasis",
+   "text": "Branches aren’t based on stats like the sphere grid branches unlock moves and the specific build of stats that would support the subtype of the type of character you’re building as you traverse the path ",
+   "savedAt": "2026-10-04T14:20:54.344Z"
+  },
+  {
+   "row": "pr-labyrinth-scale",
+   "text": "Something between a and c. The cycle inward connects to the world ring concept- the idea of fighting inner demons for development resonates and using the spoils of those fights for advancement ",
+   "savedAt": "2026-10-04T16:25:21.599Z"
+  }
+ ],
+ "acted_on": [
+  "Today's ranks-and-badges answers (pr-branch-emphasis overruled with a steer, pr-design-text, pr-units-mapping, pr-study-findings, pr-labyrinth-grid stand; pr-labyrinth-scale answered by steer) recorded here and handed to the ranks-and-badges thread for round 6",
+  "The 20 saves the daily run found unrecorded (council/research/2026-10-04-saved-but-never-recorded.md) recorded, with four question saves the note did not count (gn-pilot, gn-proof, dy-model, cc-topknot-door) and the term encounter-quest-adventure-campaign",
+  "dy-limit-wording and cost-short-rule stood, and both positions say their pull request merges at the next board read: #20 and #24 get the automerge label",
+  "dy-2026-10-04-open stood: the finding note lands on main, and a check comparing saves with resolved entries is proposed as its own pull request"
+ ],
+ "lessons_pending": [
+  {
+   "face": "regent",
+   "lesson": "A board read records every save, not only the rows of the battle that triggered it. On 2026-10-03 five saves made two minutes after board read 29 sat unread for 17 hours, and two pull requests that should have merged stayed open."
+  }
+ ],
+ "outcome": "ruled"
+}

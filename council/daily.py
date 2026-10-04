@@ -10,8 +10,10 @@ needle even if I'm unavailable." Spec: .specify/specs/five-moves/spec.md. Settin
 
 The move rotates in Wendell's order by the number of runs recorded, so a missed day does not skip a move.
 A row the session adds to the board has the id dy-<date>-<move>, so its standing can be read back here.
-The token figures come from the session record (get_session's usage), which a session that holds the
-claude-code-remote tools reads after a run ends; `usage` writes them into that run's record.
+The token figures come from the run's own result event (list_events with kinds result: modelUsage and
+total_cost_usd), which a session holding the claude-code-remote tools reads after the run ends; `usage`
+writes them into that run's record. A run does not record its own cost, because get_session read during a
+turn misses that turn.
 """
 
 import argparse

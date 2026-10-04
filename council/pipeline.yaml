@@ -83,9 +83,11 @@ five_moves:
     automerge label, adds at most as many board rows as its level, each with id dy-<date>-<move>, and records
     itself with python3 council/daily.py record. When the move finds nothing, the run does research instead.
   board_read: >
-    A session that reads the board also reads each daily run's token use from its session record
-    (list_triggers for the run's session id, then get_session's usage) and writes it with
-    python3 council/daily.py usage. When daily.py prints PROPOSE, that session puts the proposal on the board.
+    A session that reads the board also reads each daily run's token use and cost from that run's own
+    result event (list_events with kinds result on the standing session; modelUsage and
+    total_cost_usd) and writes it with python3 council/daily.py usage. A run does not record its own
+    cost: get_session read during a turn misses that turn, and the first run recorded $0.41 for a
+    turn that cost $2.21. When daily.py prints PROPOSE, that session puts the proposal on the board.
 
 # The reach test, applied to actions. A step goes to Wendell's checklist only if he is the only one
 # who can do it: his accounts, his money, his name, his eyes on the result, or a permission he holds.
