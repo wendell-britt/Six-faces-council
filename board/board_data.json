@@ -3881,6 +3881,29 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-eye-3",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout character creation 15",
+   "q": "Does the female body now read as you asked, standing and walking? Watch /mnt/project-files/character-creation/traveler-walk.gif (male, female, nonbinary, facing down and left), and the builds are in traveler-design.png beside it.",
+   "why_you": "Your steer: \"women should have wider hips thinner waists breasts and legs that move past each other instead of being bow legged like the masculine sprites\". The research is in character-creation/references/gender-in-sprites.md: women's legs come in toward the midline in gait studies, and pixel animators drop the bust a pixel on the contact frame. The 32 px door width caps the hips on the broad and round builds.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three genders, their outfits and the four builds become composer parts for walk, slash and thrust, and the creator asks for a gender first."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5489,6 +5512,12 @@
     "label": "Steered: needs the gendered options, male, female and nonbinary",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-eye-2": {
+    "decision": "steer",
+    "label": "Steered in chat: research it; wider hips, thinner waist, bust, legs that pass each other",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "causes": {
@@ -5812,6 +5841,13 @@
      "n": 14,
      "questions": [
       "tr-eye-2"
+     ],
+     "positions": []
+    },
+    {
+     "n": 15,
+     "questions": [
+      "tr-eye-3"
      ],
      "positions": []
     }
