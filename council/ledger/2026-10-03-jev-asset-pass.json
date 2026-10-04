@@ -48,5 +48,13 @@
     "count": 1,
     "note": "the scope brief, written before this pass; tokens approx 157466"
   },
-  "outcome": "unruled"
+  "outcome": "unruled",
+  "steers": [
+    {
+      "on": "jev-asset-numbers",
+      "saved": "2026-10-04T00:16:12Z",
+      "wendell": "I don’t know how to answer this. We should have the 6 game masters weigh in on it. This should also be a feature. If I’m stumped I can send something back to the game masters to research best practices",
+      "note": "A steer-only save moved the question from Open to Resolved, where the research text is not shown. The saved record was cleared on 2026-10-04 so the question returns to Open; this ledger keeps the steer."
+    }
+  ]
 }
