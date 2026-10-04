@@ -3927,6 +3927,29 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-eye-5",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout character creation 17",
+   "q": "Do the narrower dress and the straight feet read as you asked? Every sheet saves from the download page, https://claude.ai/artifact/8j3eF4VV1XpQUZZyn3BtWf, and the files are in /mnt/project-files/character-creation/.",
+   "why_you": "Your steer: \"Dress needs to come in a lot. Right now the dress opening is shoulder length it should be about 2/3 that. Also she’s duck footed. The feet should be pointed straight down with little space between the feet\". The hem is now two thirds of the shoulder width, arms included, and from the front her boots point straight down, a pixel apart. The side view keeps its walking stride.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three genders, their outfits and the four builds become composer parts for walk, slash and thrust, and the creator asks for a gender first."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5547,6 +5570,12 @@
     "label": "Steered in chat: narrower female shoulders and arms, a dress, a fuller bust, longer hair and lashes; a slim nonbinary body with the male legs",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-eye-4": {
+    "decision": "steer",
+    "label": "Steered in chat: bring the dress in to two thirds of the shoulders; feet straight down, close together",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "causes": {
@@ -5884,6 +5913,13 @@
      "n": 16,
      "questions": [
       "tr-eye-4"
+     ],
+     "positions": []
+    },
+    {
+     "n": 17,
+     "questions": [
+      "tr-eye-5"
      ],
      "positions": []
     }
