@@ -1935,6 +1935,17 @@
    "auto": true,
    "pos": "The build goes in this order: the stager writing one staging record per scene for all eight, chamber 1's ring with its five hint variants as placeholder tiles, a scene player in the slice for chamber 1, then you watch chamber 1 play, then the other seven chambers with no hand edits, then figure looks from the character creation run. This stands unless you flip it.",
    "why": "Your rulings: maker leads, the stager places everything with pins, chamber 1 first. The spec kit sets this order. Source: sprout .specify/specs/scene-staging/ (pull request #12)"
+  },
+  {
+   "id": "rg-stance-by-move",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "root-game queue",
+   "auto": true,
+   "pos": "Root-game's stance by move: Kào and Zhǒu, the shoulder and the elbow strikes, stand close (the front legs 3 cm apart, the clothes squashed between). Every other gate and listening leave space for the clothes, 6 cm asked for. It stays behind a switch on the preview until its marks pass. This stands unless you flip it.",
+   "why": "Your ruling on rg-front-legs (C, it changes with the move) left which moves stand close. The record answers it: Kào brings the two chests within 10-20 cm (root-game research/6FACE_CORNERS_RANGE_2026-10-01.md), and the elbow strikes from the same range; the other gates are worked at the hands. Built and measured: the other gates now stand 4.4 cm apart at the median (3.0 before), but on the drawn bodies two of nine meetings gain jumps, so it is off by default. Source: root-game HANDOFF.md, queue item 2; engine/kit_engine.js, STANCE BY MOVE"
   }
  ],
  "questions": [
