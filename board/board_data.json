@@ -1978,6 +1978,17 @@
    "auto": true,
    "pos": "Builds change the body's width below the neck, and the head stays the same. The door rule caps every figure at 32 px wide, so slender and broad differ by 4 px and round widens only at the middle. Height is left alone, so the doors still fit. This stands unless you flip it.",
    "why": "Your words: \"multiple body types\". The 32 by 49 figure is your rule (sprout CLAUDE.md), and the widest frame on the sheet is exactly 32 px. The same pass works on every frame of every action. Source: sprout tools/draft-traveler.mjs"
+  },
+  {
+   "id": "tr-builder-not-layers",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout character creation 23",
+   "auto": true,
+   "pos": "The traveler is built per choice by a tool that dresses composed frames (sprout tools/build-traveler.mjs), not as more layers in the composer. One call per choice writes the walk, slash and thrust sheets the game loads. This stands unless you flip it.",
+   "why": "A build widens or narrows the body itself, and the female body is LPC's female body, so neither can be a layer laid over the others. Source: sprout tools/build-traveler.mjs (pull request #16)."
   }
  ],
  "questions": [
@@ -4047,6 +4058,29 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-eye-9",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout character creation 23",
+   "q": "Do the three travelers read right through the walk, the slash and the thrust, in all four directions, and in each other's outfits? Every sheet saves from the download page, https://claude.ai/artifact/8j3eF4VV1XpQUZZyn3BtWf.",
+   "why_you": "Your approval of the walk (\"Yes perfect\") said the genders, outfits and builds become parts for walk, slash and thrust. Each gender now swings and pushes in all four directions, the female on LPC's female slash and thrust. From behind, the long hair falls as one, and the jacket shows only its strap. Every outfit fits every gender, and every gender, outfit and build passes 15 colours and the 32 px door width when walking (36 of 36 checked). A swing reaches past 32 px, as LPC's own slash does.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build the creator",
+     "c": "The creator's screens come next: gender first, then outfit, build, skin and hair, each choice shown walking."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -6077,6 +6111,15 @@
       "tr-eye-8"
      ],
      "positions": []
+    },
+    {
+     "n": 23,
+     "questions": [
+      "tr-eye-9"
+     ],
+     "positions": [
+      "tr-builder-not-layers"
+     ]
     }
    ]
   }
