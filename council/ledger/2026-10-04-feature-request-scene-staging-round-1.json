@@ -169,12 +169,24 @@
    "saved_at": "2026-10-04T02:33:00Z",
    "steer": "",
    "note": "Overruled after deferring it; the board hid the save until Six-faces-council #33. With no steer, the council's production readings of the six beliefs stop standing, and the move's table returns to his own examples until a new reading is ruled."
+  },
+  {
+   "row": "positions/fr-staging-test-result",
+   "decision": "stands",
+   "saved_at": "2026-10-04T02:32:06Z",
+   "via": "board battle fr-scene-staging"
+  },
+  {
+   "row": "positions/fr-staging-build-order",
+   "decision": "stands",
+   "saved_at": "2026-10-04T02:32:11Z",
+   "via": "board battle fr-scene-staging"
   }
  ],
  "retired": {
   "fr-dialogue-on-board": "duplicate of frm-questions-to-board, which the character creation run posted first"
  },
- "outcome": "Round 1 played on the board 2026-10-04: maker leads, wonder, the stager places everything with pins; the three positions stand; fr-belief-readings deferred an hour. Round 2 posted: fr-staging-feel-more and four positions answering the 2 step's unpacking questions, plus the cheap test (fr-staging-test). Round 2 played 2026-10-04 01:59Z: poignance and triumph beside wonder; all five positions stand. The 2 step closes; the 1 step (spec kit and the cheap test) starts. The 1 step ran: the cheap test passed and the spec kit is in sprout #12. Round 3 posts the result and the build order as positions.",
+ "outcome": "Round 1 played on the board 2026-10-04: maker leads, wonder, the stager places everything with pins; the three positions stand; fr-belief-readings deferred an hour. Round 2 posted: fr-staging-feel-more and four positions answering the 2 step's unpacking questions, plus the cheap test (fr-staging-test). Round 2 played 2026-10-04 01:59Z: poignance and triumph beside wonder; all five positions stand. The 2 step closes; the 1 step (spec kit and the cheap test) starts. The 1 step ran: the cheap test passed and the spec kit is in sprout #12. Round 3 posts the result and the build order as positions. Round 3 played 2026-10-04 02:32Z: both positions stand. The run is complete; the build goes on from the plan stage.",
  "round_2": {
   "questions": [
    "fr-staging-feel-more"
