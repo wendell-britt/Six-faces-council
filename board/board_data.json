@@ -4024,6 +4024,29 @@
      "c": "Say what in the steer box."
     }
    ]
+  },
+  {
+   "id": "tr-eye-8",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout character creation 22",
+   "q": "Does the female traveler now walk the way you asked, on LPC's female body with the saffron dress drawn over it? Every sheet saves from the download page, https://claude.ai/artifact/8j3eF4VV1XpQUZZyn3BtWf.",
+   "why_you": "Your board answer: \"Use LPC's female body\", with our saffron dress drawn over it. Below the neck, front and side, the female figure is now LPC's female walk, so the legs stride as the men's do. The dress, belt and hem are drawn over it, the legs below the hem are in dark stockings and boots, and the hip sway stays. The four builds no longer change her body's width, because LPC's female body comes in one width; that waits until after you approve the walk.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three genders, their outfits and the four builds become composer parts for walk, slash and thrust (the female from LPC's female rows), and the creator asks for a gender first."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5662,6 +5685,18 @@
     "label": "Steered in chat: three-quarter legs in the side view, hip sway, a three-quarter bust",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-eye-7": {
+    "decision": "approve",
+    "label": "Build it",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-walk-base": {
+    "decision": "lpc-female",
+    "label": "Use LPC's female body",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "causes": {
@@ -6027,6 +6062,13 @@
      "n": 21,
      "questions": [
       "tr-walk-base"
+     ],
+     "positions": []
+    },
+    {
+     "n": 22,
+     "questions": [
+      "tr-eye-8"
      ],
      "positions": []
     }
