@@ -4009,6 +4009,18 @@
     "label": "Stands: the Big Heart line goes into the Breakdown as shown",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)"
+   },
+   "bm-interview-block": {
+    "decision": "stands",
+    "label": "Stands: daemon reports open with the Big Mind interview",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
+   },
+   "bm-sprout-emotional-body": {
+    "decision": "stands",
+    "label": "Stands: Sprout's design doc gains the Emotional Body sentence as shown",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
    }
   },
   "questions": {
@@ -4298,6 +4310,12 @@
     "label": "Big Heart enters canon as what the Damaged Self is waiting for",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+   },
+   "jev-asset-numbers": {
+    "decision": "calibrate",
+    "label": "C: a calibration run teaches first; the mark is fixed in a dated file before a separate scored run",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
    }
   },
   "causes": {
