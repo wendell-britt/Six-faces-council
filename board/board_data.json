@@ -2119,6 +2119,61 @@
    "auto": true,
    "pos": "The reservation is your example \"The product needs a new feature\": a rank grid beside the talisman grid would be a second board, and design.md's risk table cuts talisman grids first. The spec keeps one grid: the player's own nodes, with each talisman as a sub-board inside it. This stands unless you flip it.",
    "why": "docs/design.md, risks (\"talisman grids to lists\" is the first cut). Source: sprout .specify/specs/ranks-and-badges/spec.md"
+  },
+  {
+   "id": "pr-supply-implications",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout ranks and badges 3",
+   "auto": true,
+   "pos": "The implications you asked for. The game offers more badges than any rank asks, as Scouting and Paper Mario do. So the pace comes from each rank's Root level minimum, not from scarcity. A rank asks so many skill, gate and service badges and so many elements, and the rest are the player's electives, which say who they are. The game's content sizes the catalogue: today's counters give 46, and a new encounter, quest or village can add one without rebalancing a rank. Badges past the last rank keep counting, as Scouting's Eagle Palms do, which rewards post-story play. This stands unless you flip it.",
+   "why": "Your steer on pr-test-result. Scouts BSA's Eagle asks 21 merit badges and offers over 130 (Wikipedia, Merit badge (Boy Scouts of America)). Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 2 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-two-ladders",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout ranks and badges 3",
+   "auto": true,
+   "pos": "Ranks 1 to 4 are the settlement's and follow Scouting's Trail to First Class: bouts and Root level, no merit badges. That ladder ends at the exile and stays on the player's record. Ranks 5 to 7 are the forest's and follow Star, Life and Eagle. A refiner endorses the player once that village's problem is solved, and the last rank asks all five, with the five refiners together as its review. This stands unless you flip it.",
+   "why": "Your pr-who-confers answer (forest). design.md: solving a village's problem frees its refiner from the wound they hold. Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 2 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-last-rank-adventure",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges 3",
+   "auto": true,
+   "pos": "The last rank asks an adventure, a series of quests and encounters, in your terms. The rank table holds a slot for it, which story fills, and the player can finish it after the main story. This stands unless you flip it.",
+   "why": "Your steer on pr-act3-sources. Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 2 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-five-branches",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout ranks and badges 3",
+   "auto": true,
+   "pos": "The grid keeps one surface, with talismans as sub-boards inside it, and its nodes branch into five paths, one for each refiner's stream. A refiner's endorsement opens that branch, so a build reads as a subclass, as Final Fantasy X's paths do. The branches' names and nodes come later, after pr-branch-crossing. This stands unless you flip it.",
+   "why": "Your steer on pr-reservations, and pr-two-ladders. The node list is the next build step. Source: sprout .specify/specs/ranks-and-badges/request.md, \"What his round 2 changes\" (pull request #17)"
+  },
+  {
+   "id": "pr-rank-table-built",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "sprout ranks and badges 3",
+   "auto": true,
+   "pos": "The rank table is built as data: seven ranks with names left blank, and the 46 badges today's counters can earn. A check fails any rank that can be reached an act early, that leaves no electives, or that asks more than the game offers by then. It passes, and it catches a forest rank moved into Act I. Every number is a placeholder. This stands unless you flip it.",
+   "why": "sprout data/ranks.json, data/badges.json and tools/test-ranks.mjs (npm run test:ranks), pull request #17. The spec's Definition of done asked for this before any screen."
   }
  ],
  "questions": [
@@ -4333,6 +4388,34 @@
      "c": "Rank goes dark at the exile like settlement talismans, and the player earns it again in the forest. That costs the player a loss they did not choose."
     }
    ]
+  },
+  {
+   "id": "pr-branch-crossing",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout ranks and badges 3",
+   "q": "How freely should a player move between the grid's five branches?",
+   "why_you": "You asked that the grid keep Final Fantasy X's feeling of subclasses. How hard it is to leave a branch decides whether a build reads as a subclass or as a stat list, and that is balance, which is yours.",
+   "not_before": "Raised by round 3 of the ranks and badges run on 2026-10-04, after your steer on pr-reservations.",
+   "options": [
+    {
+     "v": "keys",
+     "label": "A. Cross with a key (recommended)",
+     "c": "Every player starts at the centre. Crossing into a second branch takes a key earned in play, as Final Fantasy X's lock spheres work, so a build feels like a subclass and can still change."
+    },
+    {
+     "v": "one-branch",
+     "label": "B. One branch only",
+     "c": "The first refiner to endorse the player sets their branch, and the others stay shut. A build is a fixed subclass, and a second play-through is the way to see another."
+    },
+    {
+     "v": "open",
+     "label": "C. Open crossing",
+     "c": "Every branch joins at the centre with no keys. Points alone limit a build, so builds drift toward the same best nodes, and the subclass feeling is weaker."
+    }
+   ]
   }
  ],
  "causes": [
@@ -4653,6 +4736,24 @@
    "why": "The title must avoid the founder's name for his process. The Diplomat dissents: the name belongs with the questions. Other options: The Interview, or a name of yours.",
    "flag": null,
    "source": "council/passes/6FACE_PASS11_2026-10-04.md (six-faces-council)"
+  },
+  {
+   "id": "encounter-quest-adventure-campaign",
+   "term": "encounter, quest, adventure, campaign",
+   "repo": "sprout",
+   "whose": "Wendell, 2026-10-04",
+   "rec": "adopt",
+   "register": [
+    "product"
+   ],
+   "plain": "The game's four units of play, smallest to largest. A quest holds encounters, an adventure is a series of quests and encounters, and a campaign holds adventures.",
+   "eli5": "A fight is an encounter, a job is a quest, a trip made of jobs is an adventure, and the whole story is a campaign.",
+   "usage": "The last rank asks an adventure, which the player can finish after the main story.",
+   "replaces": "\"project\", the council's word for the last rank's task",
+   "collisions": [],
+   "why": "Your steer on pr-act3-sources.",
+   "flag": null,
+   "source": "sprout .specify/specs/ranks-and-badges/request.md"
   }
  ],
  "resolved": {
@@ -5568,6 +5669,48 @@
     "label": "Stands: design.md unchanged until you rule",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+   },
+   "pr-pace-by-level": {
+    "decision": "stands",
+    "label": "Stands: pace by Root level",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-gets-us": {
+    "decision": "stands",
+    "label": "Stands: what it gets us",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-feels-now": {
+    "decision": "stands",
+    "label": "Stands: how it feels now",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-what-true": {
+    "decision": "stands",
+    "label": "Stands: what would have to be true",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-reservations": {
+    "decision": "stands",
+    "label": "Stands, with your steer: the grid branches into subclass paths",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-test-result": {
+    "decision": "overrule",
+    "label": "Overruled: a badge surplus is intended; implications in pr-supply-implications",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+   },
+   "pr-act3-sources": {
+    "decision": "overrule",
+    "label": "Overruled: the last rank asks an adventure",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
    }
   },
   "questions": {
@@ -6043,6 +6186,12 @@
     "label": "Build the creator",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (main)"
+   },
+   "pr-who-confers": {
+    "decision": "forest",
+    "label": "Two ladders: the refiners confer the forest's",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
    }
   },
   "causes": {
@@ -6212,7 +6361,7 @@
    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
   }
  ],
- "steer_recorded_through": "2026-10-04T02:01:00.077Z",
+ "steer_recorded_through": "2026-10-04T13:40:06.741Z",
  "battles": [
   {
    "id": "fr-scene-staging",
@@ -6465,6 +6614,19 @@
       "pr-feels-now",
       "pr-what-true",
       "pr-reservations"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [
+      "pr-branch-crossing"
+     ],
+     "positions": [
+      "pr-supply-implications",
+      "pr-two-ladders",
+      "pr-last-rank-adventure",
+      "pr-five-branches",
+      "pr-rank-table-built"
      ]
     }
    ]
