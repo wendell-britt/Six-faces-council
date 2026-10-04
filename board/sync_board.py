@@ -94,6 +94,14 @@ def union(main, live, report, path="$"):
                     if new != out[k][have[rid]]:
                         out[k][have[rid]] = new
                         report.append(f"from live: {k} {rid} (changed)")
+        elif isinstance(v, list) and isinstance(out.get(k), list):
+            # A list without ids, such as steers_recorded, grows on both sides: keep main's entries and add live's
+            # missing ones. On 2026-10-04 the live page's older steers_recorded replaced main's whole and three of
+            # Wendell's round 2 steers vanished, as the battle's round 2 had before merge_battle.
+            for r in v:
+                if r not in out[k]:
+                    out[k].append(r)
+                    report.append(f"from live: {k} (entry added)")
         elif isinstance(v, dict) and isinstance(out.get(k), dict):
             out[k] = union(out[k], v, report, f"{path}.{k}") if k != "resolved" else merge_resolved(out[k], v, report)
         elif k not in out:
