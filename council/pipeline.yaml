@@ -102,6 +102,27 @@ step_shape:   # every step on the checklist carries all of these
   device: phone or computer
   stop_safe: whether he can stop after this step and pick up later without harm
 
+# The feature request move (Wendell, 2026-10-04): the front door to the stages below. It runs in chat as a
+# dialogue and updates the board when it is done. Procedure: council/moves/feature-request.md.
+feature_request:
+  ask: >
+    "This should be a move the council does together when something like this pops up." "This should be something
+    we can run in chat that updates the board after we are done. It's a form of the 6 unpacking questions and a
+    developmental use of 321" "The output of a process like this should be a well scoped project and spec kit"
+    (Wendell, 2026-10-04, Sprout Game project thread)
+  grammar: [who is being helped, what satisfaction they are looking for, what altitudes the help needs]
+  steps:
+    "3": third person. The council describes the wanted work journalistically and answers what we are trying to
+      create and what life is like now, from the record, in request.md.
+    "2": second person. The dialogue in chat, one round of at most three questions at a time, covering what it gets
+      us, how it feels now, what would have to be true, and which self-sabotaging beliefs are at play.
+    "1": first person. The aligned actions from the six faces' analyses, the spec kit, and the cheapest test that
+      could show the design wrong. The result is the next run's "life now".
+  chat_exception: Inside a run, the 2 step's questions go to Wendell in the thread. Everything else still goes to the
+    board, and the run's positions and open questions go there when it closes.
+  produces: request.md and the spec kit in .specify/specs/<feature>/, a ledger record, board rows, and a pull request
+  covers_stages: [intake, spec, falsify]
+
 stages:
   - id: intake
     owners: [shaman, diplomat]
