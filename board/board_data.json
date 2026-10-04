@@ -4794,6 +4794,31 @@
       "hours": 1
      }
     ]
+   },
+   "fr-staging-gets-us": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-feels-now": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-what-true": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-reservations": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-test": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
    }
   },
   "questions": {
@@ -5147,6 +5172,12 @@
    "fr-staging-auto": {
     "decision": "auto",
     "label": "The stager places everything, with pins",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-feel-more": {
+    "decision": "poignance,triumph",
+    "label": "Poignance and triumph, beside wonder",
     "recorded": "2026-10-04",
     "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
    }
