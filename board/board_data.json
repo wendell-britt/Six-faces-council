@@ -3778,28 +3778,6 @@
    ]
   },
   {
-   "id": "cc-builds-eye",
-   "faces": [
-    "shaman",
-    "architect"
-   ],
-   "pass": "sprout character creation 8",
-   "q": "Do these four body types in the robe go forward? They are slender, average, broad and round, in five skin tones, and every frame fits the 32 px figure width that the doors are built to.",
-   "why_you": "Only your eye can judge the look. The second sheet measured 44 px wide, so its sleeves would not have passed a door. On this sheet the flow comes from narrow shoulders that widen to the hem, and from sleeves that hang over the skirt to the knee. The sleeves no longer reach outward. The tool fails any frame wider than 32 px. The Chinese tells stay: the crossed collar, the thin sash with jade, and the crown and jade pin. The sheet is /mnt/project-files/character-creation/builds-design.png (sprout pull request #14). The seated cultivator you sent, which might suit a regent, is saved beside it in references/.",
-   "options": [
-    {
-     "v": "approve",
-     "label": "Approve the four builds",
-     "c": "The robe is drawn for every action frame in all four builds, and the player creator offers the build and the skin tone."
-    },
-    {
-     "v": "redraw",
-     "label": "Redraw them",
-     "c": "Say what is off in the steer box, such as a build that reads the same as another. A new sheet comes back before anything is animated."
-    }
-   ]
-  },
-  {
    "id": "cc-topknot-door",
    "faces": [
     "architect",
@@ -3823,6 +3801,28 @@
      "v": "lower-bun",
      "label": "Lower the bun",
      "c": "The topknot is redrawn about four rows lower, so the figure fits 50 px, and it comes back to you through the gate."
+    }
+   ]
+  },
+  {
+   "id": "cc-tunic-eye",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout character creation 9",
+   "q": "Does this working tunic go forward as the dress for the player and the working roles? It falls to the knee over trousers tucked into boots, with the hands bare, and it is drawn on the walk, slash and thrust frames.",
+   "why_you": "Only your eye can judge the look. You asked for a split with Jedi robes: boots and hands showing, and a body that can animate with tools and weapons. The tunic is painted onto the frames the game already animates, so every action, the tool and weapon poses included, wears it the same way. The Chinese tells stay: the crossed collar, the thin sash with its jade, and the crown and jade pin. Every frame keeps to 15 colours and to 30 px wide against the 32 px figure. The long robes stay as dress for NPCs. The sheet is /mnt/project-files/character-creation/tunic-design.png (sprout pull request #14). Your two Jedi sheets are saved in references/.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Approve the tunic",
+     "c": "The tunic goes into the composer as a clothing part for every action, in the four element colourways, and the player creator offers it."
+    },
+    {
+     "v": "redraw",
+     "label": "Redraw it",
+     "c": "Say what is off in the steer box, such as the tunic's length or the boots. A new sheet comes back before it joins the composer."
     }
    ]
   }
@@ -5391,6 +5391,12 @@
     "label": "Redraw: play with body types and fit the doorframes (said in chat)",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round7.json (pull request #14)"
+   },
+   "cc-builds-eye": {
+    "decision": "redraw",
+    "label": "Long robes are NPC dress; the player needs boots and free hands that animate with tools (said in chat)",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round9.json (pull request #14)"
    }
   },
   "causes": {
@@ -5682,6 +5688,13 @@
      "questions": [
       "cc-builds-eye",
       "cc-topknot-door"
+     ],
+     "positions": []
+    },
+    {
+     "n": 9,
+     "questions": [
+      "cc-tunic-eye"
      ],
      "positions": []
     }
