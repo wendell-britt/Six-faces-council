@@ -152,10 +152,12 @@ Wendell, 2026-10-04: *"This should be a move the council does together when some
 feature request comes up, the council runs the move in `council/moves/feature-request.md` before the pipeline's
 stages. It asks Mastering Allyship's three questions (who is being helped, what satisfaction they want, what
 altitudes the help needs) and runs the six unpacking questions as a 3-2-1: the council describes the work in the
-third person in `request.md`, talks it through with Wendell in chat, then embodies it by writing the spec kit and
-running the cheapest test that could prove it wrong. **Its 2 step is the one place council questions go to him in
-chat**, one round of at most three at a time, each with a recommendation. When the run closes, its positions and
-open questions go to the board. It covers the `intake`, `spec` and `falsify` stages.
+third person in `request.md`, talks it through with Wendell, then embodies it by writing the spec kit and running
+the cheapest test that could prove it wrong. **The dialogue runs on the board, never in chat** (Wendell, 2026-10-04:
+*"This should've ended up on the board and not in front of me"*). Each round of at most three questions, each with a
+recommendation, is played as a battle: the Open tab shows the run as an encounter, and each turn saves like a row
+(*"The the board is the world map and emergent new feature is like a pokemon battle"*). It covers the `intake`,
+`spec` and `falsify` stages.
 
 ## Sense and respond, transcend and include
 
