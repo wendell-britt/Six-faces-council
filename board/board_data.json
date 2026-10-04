@@ -3858,6 +3858,29 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-eye-2",
+   "faces": [
+    "shaman",
+    "diplomat",
+    "architect"
+   ],
+   "pass": "sprout character creation 14",
+   "q": "Do male, female and nonbinary now read as you want? Each row is one gender in its own outfit and body shape: male in the jacket, female in the wrap dress, nonbinary in the long coat. Columns are slender, average, broad and round. The sheet is /mnt/project-files/character-creation/traveler-design.png.",
+   "why_you": "Your steer on the first sheet: \"Needs the gendered options. Male female and nonbinary\". At 32 px wide the body's shape changes only a pixel or two, so the face and hair carry more: female figures get a lash at each eye and longer hair. Every outfit and hairstyle stays open to every player.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three genders, their outfits and the four builds become composer parts for walk, slash and thrust, and the creator asks for a gender first."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5045,6 +5068,24 @@
     "label": "Stands: we draw the robe set ourselves, the topknot first",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
+   },
+   "tr-foreign": {
+    "decision": "stands",
+    "label": "Stands: no topknot, violet and saffron, travel gear",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-outfits-open": {
+    "decision": "stands",
+    "label": "Stands: every outfit open to every player",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-builds-narrow": {
+    "decision": "stands",
+    "label": "Stands: builds change width only, within 32 px",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "questions": {
@@ -5442,6 +5483,12 @@
     "label": "Approve the rule and the marks (said in chat)",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round12.json (pull request #15)"
+   },
+   "tr-eye": {
+    "decision": "steer",
+    "label": "Steered: needs the gendered options, male, female and nonbinary",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "causes": {
@@ -5760,6 +5807,13 @@
       "tr-outfits-open",
       "tr-builds-narrow"
      ]
+    },
+    {
+     "n": 14,
+     "questions": [
+      "tr-eye-2"
+     ],
+     "positions": []
     }
    ]
   }
