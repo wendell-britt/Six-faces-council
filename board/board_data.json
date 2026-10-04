@@ -1659,6 +1659,60 @@
    "auto": true,
    "pos": "Root-game's next cloth step is the shared pass, on the preview page first: both fighters' cloth collides in one pass, and the partner's cloth stops being collision shapes in each fighter's own step. It goes ahead whatever the two cloth questions decide.",
    "why": "The prototype measured it: the skirts settle when the bodies are still (under 1 cm a step, against 3.8 cm), and the cloth step falls from 33.5 ms to about 4 ms. It does not depend on the stance or the squashing. The preview comes first, as root-game's rules require. Source: root-game research/CLOTH_INTERVIEW_2026-10-04.md"
+  },
+  {
+   "id": "frm-questions-to-board",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sprout character creation",
+   "auto": true,
+   "pos": "A feature request run's questions go to this board, not to chat. The run's dialogue rounds are posted here as question rows, and the thread reply says what changed and links the board.",
+   "why": "Your words on 2026-10-04, after round 1 of the character creation run went to you in chat: \"This should've ended up on the board and not in front of me\". This overrules the move's chat exception (six-faces-council council/moves/feature-request.md, \"This move is the one place a council question reaches him in chat\")."
+  },
+  {
+   "id": "cc-no-names",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "sprout character creation",
+   "auto": true,
+   "pos": "Role looks never name a person. The character pipeline makes \"a healer\", never Mother Ede. This stands unless you flip it.",
+   "why": "mh5-reserved: named characters wait on you and the story, and anything naming a person is reserved (council/faces.yaml). Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-store-safe",
+   "faces": [
+    "regent"
+   ],
+   "pass": "sprout character creation",
+   "auto": true,
+   "pos": "Every role look is store-safe: no bangs, ponytail or pixie hair, which are CC-BY-SA or GPL only. This stands unless you flip it.",
+   "why": "Your ruling on 2026-10-02 that \"own\" means store-safe with credit (sprout docs/decisions/character-base.md, \"Step back\"; docs/license-audit.md:57). Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-budget",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout character creation",
+   "auto": true,
+   "pos": "Every role look passes the 15-color sprite palette and fits the 32 by 49 figure box, as compose-character already checks. This stands unless you flip it.",
+   "why": "Sprout's CLAUDE.md SNES rules and profiles/snes.json scale. Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-wardrobe-gate",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "sprout character creation",
+   "auto": true,
+   "pos": "New clothing for the world (a wrapped robe, a sash, a topknot, a field hat) goes through the art quality gate and your eye before any look wears it, as the sweep hairstyle did. This stands unless you flip it.",
+   "why": "Your ruling on the rig research, 2026-10-02: only your approval puts Claude-drawn art in the game (sprout docs/decisions/character-base.md). Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
   }
  ],
  "questions": [
@@ -3162,6 +3216,94 @@
      "v": "lag",
      "label": "C. Keep Hard, and draw the give a beat after the hit",
      "c": "Hard looks like push hands, but what you see lags what the game scored by about 0.15 s."
+    }
+   ]
+  },
+  {
+   "id": "cc-body",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "sprout character creation",
+   "q": "Which body should the role looks (healer, elder, hunter, villagers) be built on first?",
+   "why_you": "Two bodies exist. The LPC parts work today, and you ruled on 2026-10-02 that our own drawn body replaces them. Which one carries the first role looks decides what gets built now and what waits.",
+   "not_before": "Raised by the character creation run on 2026-10-04. The record does not say which body role looks use.",
+   "options": [
+    {
+     "v": "lpc-first",
+     "label": "A. LPC parts first, store-safe only (recommended)",
+     "c": "Role looks can exist soon from the 42 LPC shapes already cut. They are written against the character spec, so our own body replaces LPC later without redoing the roles."
+    },
+    {
+     "v": "own-only",
+     "label": "B. Our own body only",
+     "c": "Every look is ours from the start, but nothing walks until the back view is drawn, and nothing acts until the actions are drawn."
+    },
+    {
+     "v": "both",
+     "label": "C. Both at once",
+     "c": "Each role is built twice, which doubles the art and the checks."
+    }
+   ]
+  },
+  {
+   "id": "cc-creator-scope",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout character creation",
+   "q": "Is the player's own character creator part of this work, or only the people of the world?",
+   "why_you": "design.md names a layered character creator for the player. Including it changes the scope and adds a screen the player uses.",
+   "not_before": "Raised by the character creation run on 2026-10-04.",
+   "options": [
+    {
+     "v": "world-first",
+     "label": "A. The world's people first (recommended)",
+     "c": "Halls and scenes get people sooner. The creator comes later and uses the same wardrobe."
+    },
+    {
+     "v": "both-now",
+     "label": "B. Both now",
+     "c": "The player's creator and the world's looks are built together, which makes a larger first piece of work."
+    }
+   ]
+  },
+  {
+   "id": "cc-feeling",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout character creation",
+   "q": "What do you want to feel the first time you see a hall full of role looks?",
+   "why_you": "The feature request move asks what satisfaction the work is for, and only you hold yours. The answer sets what the cheap test checks for. The council has no recommendation.",
+   "not_before": "Raised by the character creation run on 2026-10-04.",
+   "options": [
+    {
+     "v": "wonder",
+     "label": "Wonder",
+     "c": "The test checks that the looks feel like nowhere else."
+    },
+    {
+     "v": "poignance",
+     "label": "Poignance",
+     "c": "The test checks that the people feel lived-in, with histories."
+    },
+    {
+     "v": "bliss",
+     "label": "Bliss",
+     "c": "The test checks that the hall feels warm and alive."
+    },
+    {
+     "v": "triumph",
+     "label": "Triumph",
+     "c": "The test checks that the maker produces a full hall in one run."
+    },
+    {
+     "v": "peace",
+     "label": "Peace",
+     "c": "The test checks that every look sits in the world without jarring."
     }
    ]
   }
