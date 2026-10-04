@@ -2969,7 +2969,7 @@
    ],
    "pass": "jev asset",
    "q": "How should the asset docs-versus-code trial be scored, and how many agreeing statements will you label?",
-   "why_you": "You sent this back (2026-10-04): you did not know how to answer and asked the game masters to research best practice. This is the result. In plain words: a pass mark is the line you draw before the test, such as this much caught means it passed. A sample size is how many labelled items you test on. With few items the answer is fuzzy, like judging a baker from five cookies. Your own numbers: you have five known mismatches, and two to five stay live after the sprite marking. If the model catches all five, the true catch rate could still be as low as about 48%. If it misses one, the best guess is 80%, and the true rate could be anywhere from about 28% to 99%. Those two ranges overlap almost completely, so five items cannot tell finds-everything from finds-four-of-five. No pass mark can fix that, so the mark should be about what the trial can show. The other half is false flags, which need agreeing statements that a person labels. If the model flags none of the agreeing statements you label, the true false-flag rate is probably under: about 26% with 10 statements, 14% with 20, 9.5% with 30, 6% with 50, 3% with 100. Sources checked by the council: the rule of three (https://en.wikipedia.org/wiki/Rule_of_three_(statistics)), a paper on planning an evaluation experiment (https://arxiv.org/abs/2411.00640) and one on pre-registration for prediction work (https://arxiv.org/abs/2311.18807). The intervals were recomputed and match. Four other sources in the full report (council/daemons/reports/) rest on search summaries and are not relied on here. The council's recommendation, marked as the council's and not yours: C. The research found one practice repeated across sources: fix the mark in a dated file before the scored run and run it once, because a mark chosen after seeing results has been tuned on the answers. C does that. The sample sizes are your numbers, and the council does not pick them.",
+   "why_you": "You sent this back on 2026-10-04 because you did not know how to answer. The research is in the box above. The sample sizes are your numbers, and the council does not pick them.",
    "not_before": "The rulings that shrink the known positives came on 2026-10-03.",
    "options": [
     {
@@ -2987,7 +2987,52 @@
      "label": "C. A calibration run teaches first and sets no mark; you fix the mark in a dated file before a separate scored run",
      "c": "Lets you conclude: nothing was tuned on the answers, because the mark was fixed first. Needs two separate piles of labelled agreeing statements (a teaching pile and a scoring pile) and your two numbers. Report counts with ranges, not bare percentages."
     }
-   ]
+   ],
+   "research": {
+    "title": "Research you asked for: how to score the asset trial",
+    "lead": "A pass mark is the line you draw before the test. A sample size is how many labelled items you test on. With few items the answer is fuzzy, like judging a baker from five cookies.",
+    "sections": [
+     {
+      "h": "Your numbers: 5 known mismatches",
+      "items": [
+       "If the model catches all 5, the true catch rate could still be as low as about 48%.",
+       "If it misses 1, the best guess is 80%, and the true rate could be anywhere from about 28% to 99%.",
+       "Those two ranges nearly overlap, so five items cannot tell finds-everything from finds-four-of-five."
+      ]
+     },
+     {
+      "h": "False flags: needs agreeing statements you label",
+      "p": "If the model flags none of your labelled agreeing statements, the true false-flag rate is probably under:",
+      "items": [
+       "10 statements: about 26%",
+       "20 statements: about 14%",
+       "30 statements: about 9.5%",
+       "50 statements: about 6%",
+       "100 statements: about 3%"
+      ]
+     },
+     {
+      "h": "What that means",
+      "p": "No pass mark can fix five items, so the mark should be about what the trial can show."
+     }
+    ],
+    "recommend": "The council's recommendation, which is C and is not your ruling: fix the mark in a dated file before the scored run, then run once. A mark chosen after seeing results has been tuned on the answers. The sample sizes stay yours.",
+    "sources": [
+     {
+      "text": "The rule of three, for the interval when nothing is flagged",
+      "url": "https://en.wikipedia.org/wiki/Rule_of_three_(statistics)"
+     },
+     {
+      "text": "A paper on planning an evaluation experiment",
+      "url": "https://arxiv.org/abs/2411.00640"
+     },
+     {
+      "text": "A paper on pre-registration for prediction work",
+      "url": "https://arxiv.org/abs/2311.18807"
+     }
+    ],
+    "unchecked": "The intervals were recomputed and match. Four more sources in the full report (council/daemons/reports/) rest on search summaries and are not relied on here."
+   }
   }
  ],
  "causes": [
