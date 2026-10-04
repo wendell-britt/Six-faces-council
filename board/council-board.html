@@ -488,7 +488,11 @@ document.getElementById('ctx-save').addEventListener('click', async () => {
    names question and position rows that already exist on the board. A turn saves exactly what the row's own Save
    saves, so a board read records a battle like any other row. Rows in a battle are left off the Open lists, so each
    lives in one place. Running away saves nothing, and the battle waits on the map. The creature is drawn from the
-   battle's id, and its element only picks its colours: both are the session's design, not a ruling. */
+   battle's id, and its element only picks its colours: both are the session's design, not a ruling.
+   Going back, Wendell 2026-10-04: "On the council board I need to be able to “go back” if I overrule without context
+   (like I just did)". Every saved turn can be replayed: from the turn just played, from the previous turn, and from the
+   list at the end of a battle, including one already understood. A replayed turn shows the earlier answer and its
+   words, saves over it, and keeps the earlier answer in the row's `previous` field so the board read sees both. */
 const BATTLES = DATA.battles || [];
 const inBattle = {questions:new Set(), positions:new Set()};
 BATTLES.forEach(b => (b.rounds||[]).forEach(r => { (r.questions||[]).forEach(id => inBattle.questions.add(id)); (r.positions||[]).forEach(id => inBattle.positions.add(id)); }));
@@ -540,36 +544,52 @@ function openBattle(id){
   $b('bt-sprite').innerHTML = monster(b.id, b.element, 112);
   $b('bt-party').innerHTML = chips(['shaman','architect','challenger','regent','diplomat','sage']);
   $b('bt-screen').classList.add('on'); document.body.style.overflow = 'hidden'; btHud();
-  if (!bt.queue.length) return btEnd();
+  if (!bt.queue.length) { bt.queue = btReview(b); bt.i = bt.queue.length; return btEnd(); }
   btSay(`<p class="bt-say">A wild <b>${esc(b.name)}</b> appeared!</p>
     ${b.intro ? `<p class="bt-sub">${esc(b.intro)}</p>` : ''}
     ${b.record ? `<p class="bt-sub">Its full description: <code>${esc(b.record)}</code></p>` : ''}
     <div class="bt-row"><button type="button" class="save" data-bt="next">Fight</button><button type="button" class="bt-link" data-bt="run">Run (nothing is saved)</button></div>`);
 }
+// the latest round's turns, which a board read has not recorded yet: the ones that can still be changed
+const btReview = b => bTurns(b).filter(t => t.round === bRound(b) && live[t.kind][t.id] && !resolvedOf(t.kind, t.id));
+const resolvedOf = (kind, id) => ((DATA.resolved || {})[kind] || {})[id];
+const btWas = t => live[t.kind][t.id] || null;
+function btBack(){
+  const was = btWas(bt.queue[bt.i]);
+  if (!was) return '';
+  const row = DATA[bt.queue[bt.i].kind].find(x => x.id === bt.queue[bt.i].id);
+  const said = bt.queue[bt.i].kind === 'questions' ? (pickLabel(row, was) || 'In your words') : (was.status === 'overrule' ? 'Overruled' : 'Stands');
+  return `<p class="bt-sub">You answered <b>${esc(said)}</b>${was.steer ? ` and wrote: “${esc(was.steer)}”` : ''}. A new answer saves over it, and the board keeps the earlier one.</p>`;
+}
 function btTurn(){
   btHud();
   if (bt.i >= bt.queue.length) return btEnd();
-  const t = bt.queue[bt.i], row = DATA[t.kind].find(x => x.id === t.id), who = (row.faces||[])[0] || 'sage';
+  const t = bt.queue[bt.i], row = DATA[t.kind].find(x => x.id === t.id), who = (row.faces||[])[0] || 'sage', was = btWas(t);
+  const backLink = bt.i > 0 ? `<button type="button" class="bt-link" data-bt="prev">Go back a turn</button>` : '<span></span>';
   if (t.kind === 'questions'){
     btSay(`<p class="bt-sub">${chips(row.faces)} ask:</p><p class="bt-say">${esc(row.q)}</p>
       <p class="bt-sub">${esc(row.why_you)}</p>
       ${row.max > 1 ? `<p class="bt-sub">Pick up to ${row.max} moves, then use them.</p>` : ''}
       <div class="bt-moves">${row.options.map(o => `<button type="button" class="bt-move" data-bt="${row.max > 1 ? 'toggle' : 'pick'}" data-v="${esc(o.v)}"${row.max > 1 ? ' aria-pressed="false"' : ''}><b>${esc(o.label)}</b><span>${esc(o.c)}</span></button>`).join('')}</div>
       ${row.max > 1 ? `<div class="bt-row"><button type="button" class="save" data-bt="usepicks">Use these moves</button></div>` : ''}
-      <textarea class="bt-steer" id="bt-steer" placeholder="Say it in your words instead, or as well (optional)"></textarea>
-      <div class="bt-row"><button type="button" class="bt-link" data-bt="steeronly">Answer with these words only</button><button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
+      ${btBack()}
+      <textarea class="bt-steer" id="bt-steer" placeholder="Say it in your words instead, or as well (optional)">${esc(was && was.steer || '')}</textarea>
+      <div class="bt-row"><button type="button" class="bt-link" data-bt="steeronly">Answer with these words only</button>${backLink}<button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
   } else {
     btSay(`<p class="bt-sub">${chips(row.faces)} play a position:</p><p class="bt-say">${esc(row.pos)}</p>
       <p class="bt-sub">${esc(row.why)}</p>
       <div class="bt-moves"><button type="button" class="bt-move" data-bt="stand"><b>Let it stand</b><span>The council goes ahead on it.</span></button>
       <button type="button" class="bt-move bt-over" data-bt="overrule"><b>Overrule</b><span>The council drops it; your words below become that face's lesson.</span></button></div>
-      <textarea class="bt-steer" id="bt-steer" placeholder="Steer: what the face should carry forward (optional)"></textarea>
-      <div class="bt-row"><span></span><button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
+      ${btBack()}
+      <textarea class="bt-steer" id="bt-steer" placeholder="Steer: what the face should carry forward (optional)">${esc(was && was.steer || '')}</textarea>
+      <div class="bt-row">${backLink}<button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
   }
 }
 async function btSave(body){
   const t = bt.queue[bt.i];
   body.steer = ($b('bt-steer') || {}).value || ''; body.savedAt = new Date().toISOString(); body.via = 'battle:' + bt.b.id;
+  const was = btWas(t);
+  if (was) body.previous = {status: was.status || null, choice: was.choice || null, choices: was.choices || null, steer: was.steer || '', savedAt: was.savedAt || null};
   if (t.kind === 'questions' && !body.choice && !body.steer.trim()) { btSay($b('bt-box').innerHTML.replace('<textarea', '<p class="bt-sub" style="color:var(--warn)">Write your words first.</p><textarea')); return; }
   if (db){
     try { await db.doc(`${t.kind}/${t.id}`).set(body); live[t.kind][t.id] = body; }
@@ -582,14 +602,23 @@ async function btSave(body){
   const f = $b('bt-field'); f.classList.remove('bt-hit'); void f.offsetWidth; f.classList.add('bt-hit');
   btHud(); render();
   btSay(`<p class="bt-say">${body.status === 'overrule' ? 'You overruled it.' : 'It’s super effective!'} <b>${esc(said)}</b></p>
-    <div class="bt-row"><button type="button" class="save" data-bt="next">${bt.i < bt.queue.length ? 'Next turn' : 'Finish'}</button></div>`);
+    <div class="bt-row"><button type="button" class="save" data-bt="next">${bt.i < bt.queue.length ? 'Next turn' : 'Finish'}</button><button type="button" class="bt-link" data-bt="prev">Go back and change it</button></div>`);
 }
 function btEnd(){
   btHud(); const left = bOpen(bt.b).length;
   btSay(left ? `<p class="bt-say"><b>${esc(bt.b.name)}</b> is still standing, with ${left} ${left === 1 ? 'turn' : 'turns'} left.</p>`
     : `<p class="bt-say"><b>${esc(bt.b.name)}</b> was understood!</p><p class="bt-sub">${db ? 'Your answers are on the board. Tell Claude you saved, and the council writes the next round or the spec kit.' : 'This view cannot save, so your answers stay on screen only.'}</p>`
     + (bt.log.length ? `<ul class="bt-log">${bt.log.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : '')
+    + btReviewList()
     + `<div class="bt-row"><button type="button" class="save" data-bt="run">Back to the map</button></div>`);
+}
+function btReviewList(){
+  const list = btReview(bt.b);
+  if (!list.length) return '';
+  return `<p class="bt-sub">Change a turn of round ${bRound(bt.b)} before the council reads it:</p><div class="bt-moves">${list.map((t, k) => {
+    const row = DATA[t.kind].find(x => x.id === t.id), was = live[t.kind][t.id];
+    const said = t.kind === 'questions' ? (pickLabel(row, was) || 'In your words') : (was.status === 'overrule' ? 'Overruled' : 'Stands');
+    return `<button type="button" class="bt-move" data-bt="goto" data-k="${k}"><b>${esc(said)}</b><span>${esc(t.kind === 'questions' ? row.q : row.pos)}</span></button>`; }).join('')}</div>`;
 }
 function closeBattle(){ $b('bt-screen').classList.remove('on'); document.body.style.overflow = ''; bt = null; render(); }
 document.addEventListener('click', e => {
@@ -598,6 +627,8 @@ document.addEventListener('click', e => {
   const a = b.dataset.bt;
   if (a === 'run') return closeBattle();
   if (a === 'next' || a === 'retry') return btTurn();
+  if (a === 'prev'){ bt.i = Math.max(0, bt.i - 1); return btTurn(); }
+  if (a === 'goto'){ bt.queue = btReview(bt.b); bt.i = Number(b.dataset.k) || 0; return btTurn(); }
   if (a === 'pick') return btSave({choice: b.dataset.v});
   if (a === 'steeronly') return btSave({choice: ''});
   if (a === 'toggle'){
