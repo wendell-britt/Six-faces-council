@@ -3744,6 +3744,38 @@
      "c": "Say what is off in the steer box, such as the sleeves, the collar or the colours. A new sheet comes back to you before anything is animated."
     }
    ]
+  },
+  {
+   "id": "cc-hanfu-eye",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout character creation 7",
+   "q": "Does the second robe sheet read as Chinese cultivation dress? It has a hem to the floor, sleeves that hang near the knee, a thin sash with a jade pendant, and a crown and jade pin on the topknot. It shows two cuts: a crossed collar that sweeps to the side of the waist, and an outer robe open over a pale inner robe.",
+   "why_you": "Only your eye can say whether it reads right. It follows your references: the hanfu video, your photos and the oracle deck's art, which /oracle and Valkyrie's party both use. It also follows sourced tells, chiefly the thin sash in place of the broad belt that read as an obi. The rows are the deck's five element colours. Wood, earth and water wear the crossed collar; fire and metal wear the open robe. Every frame stays within 15 colours. The sheet is /mnt/project-files/character-creation/hanfu-design.png, and the research with its sources is /mnt/project-files/character-creation/references/chinese-vs-japanese-tells.md (sprout pull request #14).",
+   "options": [
+    {
+     "v": "crossed",
+     "label": "Approve, crossed collar",
+     "c": "The crossed collar becomes the robe for every role. Each role's mark comes after the animated robe."
+    },
+    {
+     "v": "open",
+     "label": "Approve, open robe",
+     "c": "The open outer robe over an inner robe becomes the robe for every role."
+    },
+    {
+     "v": "both",
+     "label": "Approve both, by role",
+     "c": "Each role gets one cut or the other, and the role sheet shows which."
+    },
+    {
+     "v": "redraw",
+     "label": "Redraw it",
+     "c": "Say what still reads wrong in the steer box. A new sheet comes back to you before anything is animated."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5298,6 +5330,12 @@
     "label": "Approve it: the topknot is every role's hair",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round5.json (pull request #14)"
+   },
+   "cc-robe-eye": {
+    "decision": "redraw",
+    "label": "Redraw: it reads Japanese, not Chinese (said in chat)",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round6.json (pull request #14)"
    }
   },
   "causes": {
@@ -5574,6 +5612,13 @@
      "n": 6,
      "questions": [
       "cc-robe-eye"
+     ],
+     "positions": []
+    },
+    {
+     "n": 7,
+     "questions": [
+      "cc-hanfu-eye"
      ],
      "positions": []
     }
