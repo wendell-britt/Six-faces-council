@@ -6022,7 +6022,7 @@
    },
    "brd-unrecorded-check": {
     "decision": "stands",
-    "label": "Stands: Wendell merged #37 himself (chat, 2026-10-04 16:37 UTC: \"37 is merged\")",
+    "label": "Stands: Wendell said in chat that #37 merges (2026-10-04 16:37 UTC: \"37 is merged\"); merged on the automerge label",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
    }
