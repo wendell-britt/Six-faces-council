@@ -3973,6 +3973,29 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-eye-7",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout character creation 20",
+   "q": "Do the three-quarter side view, the hip sway and the smaller bust read as you asked? Every sheet saves from the download page, https://claude.ai/artifact/8j3eF4VV1XpQUZZyn3BtWf.",
+   "why_you": "Your steer: \"in the profile it’s a 3/4 profile in the chest and profile in the legs. so we need to think about how to make the legs not look so small. And have a proper movement with a bit of hip sway\". From the side, each leg is now 6 px wide, the far leg set back in shadow and the feet turned forward. Over the walk the hips, skirt and legs shift a pixel and back. The near breast stands a pixel off the chest, and the far one shows as a shade.",
+   "options": [
+    {
+     "v": "approve",
+     "label": "Build it",
+     "c": "The three genders, their outfits and the four builds become composer parts for walk, slash and thrust, and the creator asks for a gender first."
+    },
+    {
+     "v": "steer",
+     "label": "Change it first",
+     "c": "Say what to change in the steer box, and a new sheet comes back to you."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5605,6 +5628,12 @@
     "label": "Steered in chat: legs closer, hem narrower, legs tapering to a point",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+   },
+   "tr-eye-6": {
+    "decision": "steer",
+    "label": "Steered in chat: three-quarter legs in the side view, hip sway, a three-quarter bust",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
    }
   },
   "causes": {
@@ -5956,6 +5985,13 @@
      "n": 18,
      "questions": [
       "tr-eye-6"
+     ],
+     "positions": []
+    },
+    {
+     "n": 20,
+     "questions": [
+      "tr-eye-7"
      ],
      "positions": []
     }
