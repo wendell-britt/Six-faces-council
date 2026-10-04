@@ -3996,6 +3996,34 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "tr-walk-base",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout character creation 21",
+   "q": "Should the female traveler walk on LPC's female body, with our dress drawn over it? The reference is /mnt/project-files/character-creation/references/lpc-female-walk-reference.gif (LPC's female walk, bare, in a slit dress and in a bodice).",
+   "why_you": "Your words: \"the legs should move not unlike the men where it looks like they are walking. Can we find feminine walking sprites to reference off of? Are there dress walking sprites in LPC?\" Yes: LPC's generator has a female body with a full walk, offered under OGA-BY 3.0, the same terms as the male body we use now, and dresses that walk on it (bodice, slit dress, kimono, five skirts). An earlier note said the female body was share-alike only; that was wrong and is corrected in gender-in-sprites.md. Reshaping the male walk keeps fighting its stride. This adds LPC art to the game, so it is yours to decide.",
+   "options": [
+    {
+     "v": "lpc-female",
+     "label": "Use LPC's female body",
+     "c": "The female traveler takes LPC's female walk (and its slash and thrust rows), credited like the male body, with our saffron dress drawn over it. Its walk already moves like a woman's."
+    },
+    {
+     "v": "redraw",
+     "label": "Redraw on our base",
+     "c": "Keep the male base and redraw the female legs by hand, frame by frame, from LPC's walk as a reference. Nothing new from LPC ships, and it takes longer."
+    },
+    {
+     "v": "steer",
+     "label": "Something else",
+     "c": "Say what in the steer box."
+    }
+   ]
   }
  ],
  "causes": [
@@ -5992,6 +6020,13 @@
      "n": 20,
      "questions": [
       "tr-eye-7"
+     ],
+     "positions": []
+    },
+    {
+     "n": 21,
+     "questions": [
+      "tr-walk-base"
      ],
      "positions": []
     }
