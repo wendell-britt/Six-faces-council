@@ -4860,6 +4860,16 @@
     "label": "Overruled: everyone wears one Taoist cultivation robe set; roles fit inside it",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round3.json (pull request #11)"
+   },
+   "fr-staging-test-result": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "fr-staging-build-order": {
+    "decision": "stands",
+    "recorded": "2026-10-04",
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
    }
   },
   "questions": {
