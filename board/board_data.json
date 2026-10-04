@@ -6019,6 +6019,12 @@
     "label": "Stands",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "brd-unrecorded-check": {
+    "decision": "stands",
+    "label": "Stands: Wendell merged #37 himself (chat, 2026-10-04 16:37 UTC: \"37 is merged\")",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
    }
   },
   "questions": {
