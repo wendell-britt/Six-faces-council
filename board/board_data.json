@@ -1833,6 +1833,18 @@
    "auto": true,
    "pos": "The build goes in this order: more than one garment option per role, then one silhouette mark per role (a headpiece for clergy, a satchel for healers, a pack for porters, a headband for students) drawn through the quality gate to your eye, then map npc features that name a role, then your player's creator over the same wardrobe, then a blind retest at game size. This stands unless you flip it.",
    "why": "The judge's fix: \"Give each role one prop or silhouette mark.\" Two healers today share every garment. cc-creator-scope puts the creator in scope now. Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-retest-2",
+   "faces": [
+    "challenger",
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout character creation 3",
+   "auto": true,
+   "pos": "Your round 2 answers are in. Healers now dress as doctors in trousers, and clergy as priests in robes and capes. Every role has two garment options. A blind judge who was not told how many people each role had named 12 of 12. Healer against porter is now the weak pair. Triumph passes, because one command builds a hall of 24. Wonder fails, because the judge found nothing Taoist and called every figure's cyan eyes \"fantasy or anime\". Next, each role gets one mark tied to what the story is doing now, drawn through the quality gate for your eye. Healer and porter come first, and the eyes are remapped to dark brown. This stands unless you flip it.",
+   "why": "Your answers: wonder and triumph; \"Healer is separate from clergy. Doctors versus priests\"; the cc-what-true overrule. The sheet is /mnt/project-files/character-creation/role-looks-round2.png. Source: sprout .specify/specs/character-creation/request.md, \"Retest after round 2\" (pull request #11)"
   }
  ],
  "questions": [
@@ -4623,6 +4635,42 @@
     "label": "Stands: new clothing passes the gate and your eye",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-gets-us": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+   },
+   "cc-feels-now": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+   },
+   "cc-what-true": {
+    "decision": "overrule",
+    "label": "Overruled: a role's mark ties it to the story's current point, not a past",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+   },
+   "cc-reservations": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+   },
+   "cc-test-result": {
+    "decision": "stands",
+    "label": "Stands: healers and clergy stay separate, doctors and priests",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+   },
+   "cc-next-build": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
    }
   },
   "questions": {
@@ -4954,6 +5002,12 @@
     "label": "Poignance; he wants to pick up to three",
     "recorded": "2026-10-04",
     "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+   },
+   "cc-feeling-more": {
+    "decision": "wonder+triumph",
+    "label": "Wonder and triumph, beside poignance",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
    }
   },
   "causes": {
@@ -5177,6 +5231,13 @@
       "cc-reservations",
       "cc-test-result",
       "cc-next-build"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [],
+     "positions": [
+      "cc-retest-2"
      ]
     }
    ]
