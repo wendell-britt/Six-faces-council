@@ -108,8 +108,9 @@ The six beliefs are Mastering Allyship's. The pairings with daemons come from th
 (`mtgoa-manuscript/specs/retired/APPENDIX_G_BELIEF_TO_SUPERPOWER_MAP.md`), which calls them starting points. Wendell's
 examples of 2026-10-04 were offered as examples, not canon: *"Everything the parenthesis are examples of how self
 sabotage might manifest in a production pipeline or organization and not "canon" we might need to brainstorm better
-fit exponents of the self-sabotage"*. The production column below is the council's proposal, and it stands on the
-board as a position until he flips it.
+fit exponents of the self-sabotage"*. The production column below was the council's proposal (board position
+`fr-belief-readings`). He overruled it on the board on 2026-10-04 with no steer, so it no longer stands: a run names
+the beliefs it finds by his own examples, and a new production reading goes to the board with evidence from a run.
 
 | Belief | His example | How it shows in a production pipeline (the council's) | Daemon most active | The aligned standard |
 |---|---|---|---|---|
