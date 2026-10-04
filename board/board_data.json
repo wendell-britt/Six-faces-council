@@ -3758,6 +3758,18 @@
     "label": "Overruled: a similar scene for everyone, with hints by reading",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+   },
+   "sm-crossing-voices": {
+    "decision": "stands",
+    "label": "Stands: Act I's cast voices the crossing, and Cael parts at first light",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)"
+   },
+   "sm-crossing-breadcrumb": {
+    "decision": "stands",
+    "label": "Stands: the breadcrumb is a tended sapling carrying all five rites' marks",
+    "recorded": "2026-10-04",
+    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)"
    }
   },
   "questions": {
