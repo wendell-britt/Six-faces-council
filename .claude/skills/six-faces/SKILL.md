@@ -146,6 +146,17 @@ do not run it; `scope` in the file says which is which.
 6. **Ship.** A feature whose gates pass goes on the board as a position that merges on the next board read
    unless he flips it. A feature that touches a reserved item ships only on a board question he answers.
 
+## The feature request move
+
+Wendell, 2026-10-04: *"This should be a move the council does together when something like this pops up."* When a
+feature request comes up, the council runs the move in `council/moves/feature-request.md` before the pipeline's
+stages. It asks Mastering Allyship's three questions (who is being helped, what satisfaction they want, what
+altitudes the help needs) and runs the six unpacking questions as a 3-2-1: the council describes the work in the
+third person in `request.md`, talks it through with Wendell in chat, then embodies it by writing the spec kit and
+running the cheapest test that could prove it wrong. **Its 2 step is the one place council questions go to him in
+chat**, one round of at most three at a time, each with a recommendation. When the run closes, its positions and
+open questions go to the board. It covers the `intake`, `spec` and `falsify` stages.
+
 ## Sense and respond, transcend and include
 
 Wendell, 2026-10-03: *"Sense and respond is one of the principles we want to hold in addition to transcend and
