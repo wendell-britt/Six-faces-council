@@ -1900,6 +1900,18 @@
    "auto": true,
    "pos": "The cheap test, run next: a first stager places chamber 1's figures from the script and its chamber alone, then a script checks all eight chambers. Each figure stands on floor, each walk path reaches its mark, the farmer and the speaker are both on screen, and the dialogue box covers neither. A chamber that cannot hold its scene shows the design is wrong. This stands unless you flip it.",
    "why": "The falsify stage of council/pipeline.yaml, and fr-staging-chamber1. The cave chambers are small: chamber 1 is 8 by 5 tiles. Source: sprout .specify/specs/scene-staging/request.md"
+  },
+  {
+   "id": "cc-robe-set",
+   "faces": [
+    "architect",
+    "challenger",
+    "shaman"
+   ],
+   "pass": "sprout character creation 4",
+   "auto": true,
+   "pos": "Every look, your player's included, is now built from one Taoist cultivation robe set, and a role is a way of wearing it. The nearest the store-safe LPC parts come is a crossed-collar top, a long robe or tied trousers, a sash, and a mantle for the formal roles. A blind judge named 8 of 12 people from that and rated it 2 of 5 as robes, so it falls under the stop line. We draw the set ourselves through the quality gate, one piece at a time for your eye: the topknot first, then the long wide-sleeved robe, then one mark per role. This stands unless you flip it.",
+   "why": "Your overrule of cc-retest-2 and your context note: \"Everyone in the character creation should be building out a Taoist cultivation robe set\". The judge: \"No figure has wide sleeves, and no robe falls long to the ankle. There are no topknots or hair buns.\" The sheet is /mnt/project-files/character-creation/role-looks-robe-set.png. Source: sprout .specify/specs/character-creation/request.md, \"Round 3\" (pull request #11)"
   }
  ],
  "questions": [
@@ -4819,6 +4831,12 @@
     "decision": "stands",
     "recorded": "2026-10-04",
     "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+   },
+   "cc-retest-2": {
+    "decision": "overrule",
+    "label": "Overruled: everyone wears one Taoist cultivation robe set; roles fit inside it",
+    "recorded": "2026-10-04",
+    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json (pull request #11)"
    }
   },
   "questions": {
@@ -5342,6 +5360,11 @@
    "text": "On iching-cast-first: We don't need them evenly. We actually want to do a simulation of the coin method and then map to the reading",
    "savedAt": "2026-10-03T00:19:53.066Z",
    "record": "council/ledger/2026-10-03-board-read-11.json"
+  },
+  {
+   "text": "Context: Everyone in the character creation should be building out a Taoist cultivation robe set and so our roles have to fit into that aesthetic ",
+   "savedAt": "2026-10-04T02:01:00.077Z",
+   "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
   }
  ],
  "steer_recorded_through": "2026-10-02T16:20:19.620Z",
@@ -5423,6 +5446,13 @@
      "questions": [],
      "positions": [
       "cc-retest-2"
+     ]
+    },
+    {
+     "n": 4,
+     "questions": [],
+     "positions": [
+      "cc-robe-set"
      ]
     }
    ]
