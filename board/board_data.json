@@ -3359,7 +3359,8 @@
      "label": "Peace",
      "c": "The test checks that every look sits in the world without jarring."
     }
-   ]
+   ],
+   "max": 3
   },
   {
    "id": "fr-staging-lead",
@@ -3390,7 +3391,7 @@
     "shaman"
    ],
    "pass": "feature request: scene staging, round 1",
-   "q": "What do you want to feel the first time chamber 1 plays from its script?",
+   "q": "What do you want to feel the first time chamber 1 plays from its script? Pick up to three.",
    "why_you": "Only you hold your own satisfaction. The council reads the player's as wonder, fear's gold state, in a surreal cave. Yours sets what the test of done looks for.",
    "not_before": "First round of the feature request move, 2026-10-04.",
    "options": [
@@ -3419,7 +3420,8 @@
      "label": "Peace",
      "c": "Done means you can stop worrying about staging: every later scene will just work."
     }
-   ]
+   ],
+   "max": 3
   },
   {
    "id": "fr-staging-auto",
