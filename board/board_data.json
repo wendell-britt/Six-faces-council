@@ -1989,6 +1989,60 @@
    "auto": true,
    "pos": "The traveler is built per choice by a tool that dresses composed frames (sprout tools/build-traveler.mjs), not as more layers in the composer. One call per choice writes the walk, slash and thrust sheets the game loads. This stands unless you flip it.",
    "why": "A build widens or narrows the body itself, and the female body is LPC's female body, so neither can be a layer laid over the others. Source: sprout tools/build-traveler.mjs (pull request #16)."
+  },
+  {
+   "id": "pr-mmo-later",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges",
+   "auto": true,
+   "pos": "Badges for real-life challenges are a later strand for the MMO. This run scopes the single-player ranks, badges and grid, and only keeps a badge's record shape open for a real-world source. This stands unless you flip it.",
+   "why": "Your message names real-life badges \"for the larger MMO version\". Real-life challenges touch consent and release, which are reserved (council/faces.yaml). Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-talismans-are-the-loadout",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout ranks and badges",
+   "auto": true,
+   "pos": "Paper Mario's part, wearing badges from a budget, is the talisman system the design already decides: talismans equip into slots that Root sets. The run adds no second equipment system. Earned badges are records and gates, not gear. This stands unless you flip it.",
+   "why": "docs/design.md, Talismans (Decided) and the Proposed grid; the risk table already lists talisman grids as the first cut if scope shrinks. Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-merit-from-practice",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sprout ranks and badges",
+   "auto": true,
+   "pos": "Merit badges are awarded from counters the game already keeps: tool and gate levels by proper use, bouts and village gates won (the Pokémon badges), bounties, and healing the forest (the service a rank asks for). No badge is ever bought. This stands unless you flip it.",
+   "why": "Pillar 3, \"Skill is bought only with skillful play\", and pillar 2, \"Giving back pays\" (docs/design.md). Scouting's Star, Life and Eagle ask for merit badges and service hours (Wikipedia, Ranks in Scouts BSA). Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-structure-not-names",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges",
+   "auto": true,
+   "pos": "The ladder borrows Scouting's structure (skill, merit badges, service, a review board, a ceremony) but not its names or uniforms. The ranks get in-world names from story work, fitting the settlement's amber culture and the Chinese cultivation look. This stands unless you flip it.",
+   "why": "Your look ruling of 2026-10-04 (Chinese cultivation, not borrowed dress), and Scouting America's rank names and badges are its marks, so using them is a release risk; names in canon are reserved to you. Source: sprout .specify/specs/ranks-and-badges/request.md"
+  },
+  {
+   "id": "pr-rules-unchanged",
+   "faces": [
+    "regent"
+   ],
+   "pass": "sprout ranks and badges",
+   "auto": true,
+   "pos": "Nothing in design.md changes until you answer round 1. The cave's encounter count and the XP per level wait on pr-ranks-vs-levels. This stands unless you flip it.",
+   "why": "sprout CLAUDE.md: do not change game rules, balance or story. Dungeon length rule (2026-10-03) ties cave length to encounters and levels. Source: sprout .specify/specs/ranks-and-badges/request.md"
   }
  ],
  "questions": [
@@ -4081,6 +4135,100 @@
      "c": "Say what to change in the steer box, and a new sheet comes back to you."
     }
    ]
+  },
+  {
+   "id": "pr-ranks-vs-levels",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "sprout ranks and badges",
+   "q": "Should the Scouting-style ranks group Root level's numbers, or replace them?",
+   "why_you": "You said the ranks and levels correspond to Scouting's ranks. design.md decides one overall player level (Root level, 1 to 40 across the acts). Only you know whether you meant ranks on top of the levels or ranks as the levels, and the answer changes the level curve and the cave's encounter count.",
+   "not_before": "Raised by the ranks and badges run on 2026-10-04, the day you described the mechanic.",
+   "options": [
+    {
+     "v": "group",
+     "label": "A. Ranks group the levels (recommended)",
+     "c": "Root level keeps its numbers and gates. Each rank, about seven of them, needs a Root level plus merit badges and service, and is conferred in a scene. The cave's encounter math is unchanged."
+    },
+    {
+     "v": "replace",
+     "label": "B. Ranks are the levels",
+     "c": "About seven ranks and no numbered levels. The decided Root level, its gates, the level curve and the cave's encounter count are all redone."
+    },
+    {
+     "v": "parallel",
+     "label": "C. Two tracks",
+     "c": "Root level and rank rise separately, from different sources. More for the player to read, and both gate the plot."
+    }
+   ]
+  },
+  {
+   "id": "pr-grid-spend",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout ranks and badges",
+   "q": "What does a rank-up or level-up give: points to spend on a grid, or fixed gains?",
+   "why_you": "You said stats are a function of how the player spends accumulated resources, like the sphere grid. design.md proposes that Root level sets HP, the composure ceiling, talisman slots and ring size directly, and decides that gates and tools level only by practice. Choosing spending changes what the player builds.",
+   "not_before": "Raised by the ranks and badges run on 2026-10-04.",
+   "options": [
+    {
+     "v": "grid-beside-practice",
+     "label": "A. A grid, beside practice (recommended)",
+     "c": "Levels and ranks give points the player spends on a grid of nodes: HP, composure, talisman slots, gate caps. Gates and tools still level by practice, as decided, so skill is never bought."
+    },
+    {
+     "v": "fixed",
+     "label": "B. Fixed gains",
+     "c": "Root level sets the stats as design.md proposes, and the only grid is the talisman grid. Two players' builds differ only by talismans."
+    },
+    {
+     "v": "grid-everything",
+     "label": "C. Everything on the grid",
+     "c": "Gates also rise only by spending on the grid. This overturns the decided rule that gates level by practice."
+    }
+   ]
+  },
+  {
+   "id": "pr-feeling",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout ranks and badges",
+   "q": "What should earning a rank feel like to the player? Pick up to three.",
+   "why_you": "The feature request move asks what satisfaction the work is for, and only you hold yours. The answer sets what the cheap test checks for. The council leans to triumph, but has no recommendation.",
+   "not_before": "Raised by the ranks and badges run on 2026-10-04.",
+   "max": 3,
+   "options": [
+    {
+     "v": "triumph",
+     "label": "Triumph",
+     "c": "The test checks that a rank feels won, against a real requirement."
+    },
+    {
+     "v": "peace",
+     "label": "Peace",
+     "c": "The test checks that the build feels like the player's own, settled and right."
+    },
+    {
+     "v": "wonder",
+     "label": "Wonder",
+     "c": "The test checks that the grid feels like a map with places still unknown."
+    },
+    {
+     "v": "poignance",
+     "label": "Poignance",
+     "c": "The test checks that a rank carries who helped the player get there."
+    },
+    {
+     "v": "bliss",
+     "label": "Bliss",
+     "c": "The test checks that the ceremony feels warm and shared."
+    }
+   ]
   }
  ],
  "causes": [
@@ -6119,6 +6267,31 @@
      ],
      "positions": [
       "tr-builder-not-layers"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-ranks-and-badges",
+   "name": "Ranks and Badges",
+   "repo": "sprout",
+   "element": "metal",
+   "record": "sprout .specify/specs/ranks-and-badges/request.md",
+   "intro": "It wants progression to be a rank ladder like Scouting's, with badges won like Pokémon's and worn like Paper Mario's, and a grid where the player spends what play earned, like Final Fantasy X.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "pr-ranks-vs-levels",
+      "pr-grid-spend",
+      "pr-feeling"
+     ],
+     "positions": [
+      "pr-mmo-later",
+      "pr-talismans-are-the-loadout",
+      "pr-merit-from-practice",
+      "pr-structure-not-names",
+      "pr-rules-unchanged"
      ]
     }
    ]
