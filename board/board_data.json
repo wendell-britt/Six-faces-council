@@ -1767,6 +1767,72 @@
    "auto": true,
    "pos": "The council's production readings of the six beliefs: not ready is prerequisite chasing; not capable is reaching for a new engine or tool; not good enough is polish loops; not worthy is not asking for a playtest; insignificant is changes too small to show; don't belong is copying genre habits or hiding the teaching.",
    "why": "You asked for better-fitting examples than your parentheses, which you said are not canon. Daemon pairings come from the retired Appendix G, which calls them starting points. Source: council/moves/feature-request.md (six-faces-council)"
+  },
+  {
+   "id": "cc-gets-us",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout character creation 2",
+   "auto": true,
+   "pos": "What this gets us. Inside: poignance, so a person in this world looks like they belong to someone and to a history. Outside: halls and scenes with people in them, roles the player reads on sight, a crowd that varies, and a player who starts as someone from here. This stands unless you flip it.",
+   "why": "Your pick on cc-feeling, and your steer naming Water's gold \"Meaning Purpose and Connection\" (mh-motifs-five-channels). Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-feels-now",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout character creation 2",
+   "auto": true,
+   "pos": "How it feels now. For the player: empty halls and four leftover looks from the prototype. For you: wariness of looks invented with no reason behind them. This stands unless you flip it.",
+   "why": "Your overrule of mh5-reserved: \"to make sure we aren't doing random nonsense\". character-parts/looks.json holds four looks. Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-what-true",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout character creation 2",
+   "auto": true,
+   "pos": "What would have to be true. Every choice in a role spec cites design.md, so no look is arbitrary. Each role carries one mark a silhouette shows, so it reads without colour. Later, each person carries one mark of history, which is where poignance comes from. This stands unless you flip it.",
+   "why": "Your \"random nonsense\" overrule, and the test below, where roles read by colour alone. Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-reservations",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "sprout character creation 2",
+   "auto": true,
+   "pos": "Reservations. \"I'm not ready\" (waiting on our own body) is answered by building on LPC first. \"I'm not capable\" (a new creator engine) is answered by building on the existing composer. \"I don't belong\" is live: LPC's medieval wardrobe dresses a Taoist world, and the test confirms it. This stands unless you flip it.",
+   "why": "The move's table of the six beliefs, applied to the record and the test. Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-test-result",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout character creation test",
+   "auto": true,
+   "pos": "The cheap test passed narrowly. Six roles from design.md (healer, elder, hunter, clergy, dojo student, market porter), two people each from store-safe LPC parts, all within 15 colors. A blind judge named 12 of 12, but called healer against clergy \"close to a coin flip\", because only skirt colour separates them.",
+   "why": "node tools/build-roles.mjs; the sheet is /mnt/project-files/character-creation/role-looks-test.png. The judge was told each role had two people and matched pairs by identical outfits. Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
+  },
+  {
+   "id": "cc-next-build",
+   "faces": [
+    "architect",
+    "shaman",
+    "sage"
+   ],
+   "pass": "sprout character creation test",
+   "auto": true,
+   "pos": "The build goes in this order: more than one garment option per role, then one silhouette mark per role (a headpiece for clergy, a satchel for healers, a pack for porters, a headband for students) drawn through the quality gate to your eye, then map npc features that name a role, then your player's creator over the same wardrobe, then a blind retest at game size. This stands unless you flip it.",
+   "why": "The judge's fix: \"Give each role one prop or silhouette mark.\" Two healers today share every garment. cc-creator-scope puts the creator in scope now. Source: sprout .specify/specs/character-creation/request.md (pull request #11)"
   }
  ],
  "questions": [
