@@ -2501,6 +2501,39 @@
    "why": "council/moves/feature-request.md: the 2 step ends when the grammar and unpacking questions each have an answer he has seen. Short sessions rule (six-faces-council CLAUDE.md). Source: sprout .specify/specs/act-zero/request.md",
    "pass": "sprout act zero 3",
    "auto": true
+  },
+  {
+   "id": "ya-test-result",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout act zero 4",
+   "auto": true,
+   "pos": "The falsify test failed. A scripted player ran the encounter loop with one named block through all three modes for the whole game. Five checks held: every node spent gold of its element, the prompted card never pays, marking twenty steps a day pays what one does, switching mode keeps everything, and story mode with no block still walks. Four failed. Points from Root level and ranks, not gold, held the grid on 223 of the 226 days it was held, so the encounter loop and real steps moved nothing. With spoils of the node's element, naming a block slowed the road at any rate. Act 0 is not built until ya-road-gold is answered. This stands unless you flip it.",
+   "why": "Run 2026-10-05: node tools/test-act-zero.mjs, rates in data/road.json (all placeholders). The table and the sweep are in the record. Source: sprout .specify/specs/act-zero/request.md, 'The test, and what it showed'"
+  },
+  {
+   "id": "ya-gold-binds",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout act zero 4",
+   "auto": true,
+   "pos": "Gold, not points, holds the grid, so the road moves at the speed of alchemy. The rates are set so it does: at about one-eighth of a gold per charge against the grid's spoils (or the spoils eight times larger), with a real step worth twice a charge and one paying step a real day. Integrated play then walks further than story play, by less than half again. These are placeholders until fight design sets what each inner demon drops. This stands unless you flip it.",
+   "why": "The test: at one gold a charge the whole game earns 250 gold and 54 points, so points run out first. At 0.12 gold a charge and 0.24 a step, with gold that activates any node, every check passed. ya-grid-pace and ya-mode3-gold, both standing. Source: sprout .specify/specs/act-zero/request.md"
+  },
+  {
+   "id": "ya-story-entry",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "sprout act zero 4",
+   "auto": true,
+   "pos": "The mode is chosen on the title screen, before Act 0, not at its end. Story mode then skips the intake, as you said it would, and opens on the short pull scene. The life questions are asked the first time a player switches to prompted or integrated play, at a save. Everything earned carries over. This amends where ya-three-modes put the choice. This stands unless you flip it.",
+   "why": "Your steer on ya-real-steps: 'the full story game (no outside action needed and skipped act 0)'. ya-pull-scene: 'Story mode opens on a short version of this scene'. ya-three-modes put the choice at the end of Act 0, which a story player would never reach. Source: sprout .specify/specs/act-zero/spec.md"
   }
  ],
  "questions": [
@@ -4891,6 +4924,29 @@
      "v": "both",
      "label": "C. Both, Lenses for where and Allyship for how",
      "c": "The player names a life area from the Lenses domains and the kind of action from the four Allyship domains. Two picks per goal. Please paste the Lenses domains in the steer box."
+    }
+   ]
+  },
+  {
+   "id": "ya-road-gold",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout act zero 4",
+   "q": "How should the gold from a player's block reach the grid?",
+   "why_you": "You stood pr-inner-demons (spoils of the node's element activate it) and ya-grid-pace (the road is as long as the blocks the player alchemises). The test shows the two cannot both hold: every chamber of the grid asks for all five elements in turn, so a player who names one block is short of the other four. Choosing between your two rulings is yours.",
+   "not_before": "Raised by the Act 0 falsify test on 2026-10-05 (sprout tools/test-act-zero.mjs).",
+   "options": [
+    {
+     "v": "gold-is-gold",
+     "label": "A. Gold is gold (recommended)",
+     "c": "Grounding any charge, or a real step, yields gold that activates any node; the node's element still sets its stats. Lead becomes gold, as the alchemy says. It amends pr-inner-demons. In the test this passed every check: integrated play walked 31 nodes, story and prompted play 25, and doubling the named block's charges moved the grid from 25 to 32."
+    },
+    {
+     "v": "element-spoils",
+     "label": "B. Keep spoils of the node's element",
+     "c": "pr-inner-demons stays as it stands. The named block flavours the encounters and the cards but does not pace the road, and integrated play's step gold is paid in whichever element the next node needs rather than the block's. In the test, as stood, a named block slowed the road (14.7 nodes against 20.5 with none)."
     }
    ]
   }
@@ -7484,6 +7540,17 @@
       "ya-allyship-read",
       "ya-modes-wording",
       "ya-dialogue-closed"
+     ]
+    },
+    {
+     "n": 4,
+     "questions": [
+      "ya-road-gold"
+     ],
+     "positions": [
+      "ya-test-result",
+      "ya-gold-binds",
+      "ya-story-entry"
      ]
     }
    ]
