@@ -2459,6 +2459,48 @@
    "why": "The six beliefs with your examples (six-faces-council council/moves/feature-request.md). The Regent's cast this run was 28, Overload: 'This is carrying more than what holds it up.' Source: sprout .specify/specs/act-zero/request.md",
    "pass": "sprout act zero 2",
    "auto": true
+  },
+  {
+   "id": "ya-life-domains",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pos": "Act 0 asks the player to choose the life domains their goals sit in, from a short list of life domains in your Lenses sense: relationships, career, money, creativity, and a few more for the first build (health, home, community, a placeholder list until the Lenses domains are formalized). The player chooses which ones and how many, up to three goals. Each goal names its block from the six beliefs, by picking. This stands unless you flip it.",
+   "why": "Your answer on ya-domains, C with the steer: 'it's about life domains, Relationships, Career, Money, Creativity etc. I think players can choose which ones'. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
+  },
+  {
+   "id": "ya-allyship-read",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "pos": "The player does not pick an Allyship domain. The game reads it: how the player tends to act across play (gathering, organizing, acting directly or raising awareness) is read the way the story mirror reads the channel, and each aligned action is offered in that domain. A goal in career might get a direct-action step for one player and an organizing step for another. This stands unless you flip it.",
+   "why": "Your steer: 'they don't get to choose in the same way re: allyship'. The story mirror already reads the player from play (story-mirror reading.md, approved 2026-10-03). The four domains: mtgoa appendices/APPENDIX_A_FOUR_ALLYSHIP_DOMAINS.md. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
+  },
+  {
+   "id": "ya-modes-wording",
+   "faces": [
+    "regent"
+   ],
+   "pos": "Correction to ya-three-modes: story mode asks for no action outside the game, but Act 0 still asks about the player's life outside it. Prompted and integrated modes use those answers for their steps. The answers stay on the device in every mode. This stands unless you flip it.",
+   "why": "Your steer on ya-three-modes: '\"and asks for nothing outside the game.\" well they ask for information about the players life outside of the game.' Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
+  },
+  {
+   "id": "ya-dialogue-closed",
+   "faces": [
+    "sage"
+   ],
+   "pos": "The dialogue is complete. All three grammar questions and all four unpacking questions now have answers you have seen. Next is the 1 step: the spec kit (spec.md, plan.md, tasks.md) and the cheapest test that could prove the design wrong. The council proposes this test: a scripted player runs the encounter loop with one named block through all three modes, and the grid's pace and gold come out as designed. It runs in a new short thread. This stands unless you flip it.",
+   "why": "council/moves/feature-request.md: the 2 step ends when the grammar and unpacking questions each have an answer he has seen. Short sessions rule (six-faces-council CLAUDE.md). Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
   }
  ],
  "questions": [
@@ -7422,6 +7464,16 @@
       "ya-feels-now",
       "ya-what-true",
       "ya-reservations"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [],
+     "positions": [
+      "ya-life-domains",
+      "ya-allyship-read",
+      "ya-modes-wording",
+      "ya-dialogue-closed"
      ]
     }
    ]
