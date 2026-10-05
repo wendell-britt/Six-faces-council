@@ -2305,6 +2305,17 @@
    "auto": true,
    "pos": "design.md now carries the units of play, at the top of the acts section, and the ranks, badges and grid block after the level curve, reconciled with your two steers. What you decided is marked Decided. The two arms, inner demons in the ring, and the pairing of points with spoils are marked Proposed and follow the three positions above. This stands unless you flip it.",
    "why": "pr-design-text and pr-units-mapping stood at the 16:35 board read, with the instruction to reconcile the text with your steers first. Source: sprout docs/design.md and .specify/specs/ranks-and-badges/design-text.md (pull request #17)"
+  },
+  {
+   "id": "dy-2026-10-05-clean",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "daily",
+   "auto": true,
+   "pos": "The daily session's Clean up run ticks nine boxes in five specs whose work has shipped, each with the record it rests on, as the Wake up note of 3 October proposed. Three boxes stay open because their work has not happened yet. This merges at your next board read unless you flip it.",
+   "why": "A session that reads the specs for work no longer sees nine finished jobs as open. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/39"
   }
  ],
  "questions": [
