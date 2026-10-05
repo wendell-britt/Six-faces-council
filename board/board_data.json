@@ -7125,9 +7125,19 @@
    "text": "On ya-intake (overruled): I think we need to think about domains a bit more. These are what the different channels teach you and flavors their starting village, but the domains should be more aligned with the Allyship domains or the LEnses Domains (which I can provide context on)",
    "savedAt": "2026-10-05T21:08:24.524Z",
    "record": "sprout .specify/specs/act-zero/request.md (round 1 answers) and council/ledger/2026-10-05-act-zero-round2.json (pull request #20)"
+  },
+  {
+   "text": "On ya-domains (C): The lenses domains haven't been formalized, but if the Allyship Domains are about helping other people the lenses domains could be seen about helping one's self. But really it's about life domains, Relationships, Career, Money, Creativity etc. I think players can choose which ones where they don't get to choose in the same way re: allyship",
+   "savedAt": "2026-10-05T21:17:40.188Z",
+   "record": "sprout .specify/specs/act-zero/request.md (round 2 answers) and council/ledger/2026-10-05-act-zero-round3.json (pull request #20)"
+  },
+  {
+   "text": "On ya-three-modes: \"and asks for nothing outside the game.\" well they ask for information about the players life outside of the game.",
+   "savedAt": "2026-10-05T21:18:14.404Z",
+   "record": "sprout .specify/specs/act-zero/request.md (round 2 answers) and council/ledger/2026-10-05-act-zero-round3.json (pull request #20)"
   }
  ],
- "steer_recorded_through": "2026-10-05T21:10:18.115Z",
+ "steer_recorded_through": "2026-10-05T21:19:22.469Z",
  "battles": [
   {
    "id": "fr-scene-staging",
