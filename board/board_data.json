@@ -2316,6 +2316,191 @@
    "auto": true,
    "pos": "The daily session's Clean up run ticks nine boxes in five specs whose work has shipped, each with the record it rests on, as the Wake up note of 3 October proposed. Three boxes stay open because their work has not happened yet. This merges at your next board read unless you flip it.",
    "why": "A session that reads the specs for work no longer sees nine finished jobs as open. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/39"
+  },
+  {
+   "id": "ya-in-scope",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pos": "Real-life integration now belongs to this game, not to a later fork: Act 0, the Yellow Brick Road on the grid, and encounters that move charge toward real goals. design.md's note in 'The ring' that put inner charge blockers from personal life in a future fork is superseded for these three. Real-life badges stay with the MMO (pr-mmo-later). This stands unless you flip it.",
+   "why": "Your message today: 'this means the game really needs a design pass on how to using the random encounters [...] into metabolizing charge towards taking aligned action toward their goals.' docs/design.md, 'The ring', had scoped it out. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero",
+   "auto": true
+  },
+  {
+   "id": "ya-intake",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pos": "Act 0 asks the player to name the life they want by picking, not typing: a goal in each of up to three of the five domains (Fire, boundaries and goals; Water, meaning, purpose and connection; Earth, mindfulness and practical needs; Metal, opportunities and threats; Wood, delight and play), and for each goal the block in its way from the six self-sabotaging beliefs. Each block becomes lead, carrying its element and its manager part, the same six parts the founder's final bout is built from. No free text appears in the game world. This stands unless you flip it.",
+   "why": "The domains are ruled (docs/decisions/calrunia-and-domains.md). The final bout's six gates are the six manager parts (docs/design.md:215). The slice's output card already asks by picking, not typing (data/slice.json). Picking keeps the SNES scope and keeps a person's words out of shared text. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero",
+   "auto": true
+  },
+  {
+   "id": "ya-act0-shape",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pos": "Act 0 comes before Act I and outside the ten seasons, and it is short (30 to 60 minutes, a placeholder). It holds the character creator, the intake, and the pull. It teaches movement, menus and one practice exchange of push hands in the player's own world, and nothing more: the farm, dojo and fight loops still open one at a time in Act I's order. Act 0 adds no milestone to the 19. Its picks seed the story mirror's reading, and the events stay fixed. This stands unless you flip it.",
+   "why": "Pillar 1, one loop at a time, is decided (docs/design.md, 'Design pillars'). The 19 milestones stay fixed under story as mirror (docs/story-pipeline.md). The creator is built (slice/creator.html, sprout PR #19). Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero",
+   "auto": true
+  },
+  {
+   "id": "ya-grid-pace",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pos": "The grid moves at the speed of alchemising blocks. This is pr-inner-demons with one change: an inner demon is the charge of a block the player named in Act 0, and its spoils are the gold. Points from Root level and ranks still pay the way to a node, but no node activates without gold of its element, so the road on the grid is exactly as long as the blocks the player has alchemised. If you overrule pr-inner-demons, this position falls with it. This stands unless you flip it.",
+   "why": "Your message: progression 'charts their yellow brick road, and they can only move at the speed of alchemizing blocks.' pr-inner-demons (fr-ranks-and-badges round 6) already pairs points with spoils, as Final Fantasy X pairs sphere levels with spheres; every node in data/grid.json names its spoils. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero",
+   "auto": true
+  },
+  {
+   "id": "ya-encounter-loop",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pos": "A random encounter in the forest, the world ring or the strip is a charge from one of the player's named blocks, drawn more often from the elements of their blocks. The loop is the Yellow Brick Road in small: the charge appears (lead), the player rests it with the element that controls it (play), grounds the excess into the earth rather than the well, and the grounding yields gold of that element plus a card naming one aligned action on the goal the block stood in front of. The card takes the slice card's form. Resting never kills, as decided. This stands unless you flip it.",
+   "why": "Wild fights, resting and grounding are decided (docs/design.md, 'The forest, spirits and allies'). The relation table is the type chart (Proposed, same section). The slice's 'One for your week' card is approved, with its five moves (data/slice.json, 2026-10-03). Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero",
+   "auto": true
+  },
+  {
+   "id": "ya-first-friend",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pos": "The traveler arrives in Argyra at the start of Act I, so Sorrel Vane is the first friend the traveler makes there, and bout 1 is still friendly, between friends. design.md's 'old friend' becomes 'first friend' in three places. The exile still lands as a betrayal by a friend. This stands unless you flip it.",
+   "why": "The traveler reads as foreign to Argyra (board tr-foreign), and Act 0 brings them from another world, so 'an old friend from an elders' family' (docs/design.md, 'The cast') no longer fits. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero",
+   "auto": true
+  },
+  {
+   "id": "ya-three-modes",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pos": "The game has three modes of play, as you named them, and the player can switch between them at any save. Story mode skips Act 0's intake and asks for nothing outside the game. Prompted mode works out one aligned action at each save from the latest gold and the goal it serves, and when the player comes back it shows what was at stake. Integrated mode lets real steps count as play (ya-mode3-gold). The player chooses a mode at the end of Act 0, and switching keeps the save and everything earned. Nothing the player tells the game about their life leaves their device. This stands unless you flip it.",
+   "why": "Your steer on ya-real-steps: 'there would be different modes of play [...] Having the 3 options means players won't have an incentive to cook the books [...] the modeas can be shifted in the middle fo play throughs'. You chose option A, kept on the device. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-mode3-gold",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pos": "In integrated mode, a real step the player marks done turns into gold of its element at the next save: the same gold an encounter gives, spent on the grid in the same way. A real step is worth more gold than one encounter, because real action is the highest-skill play. A daily cap (a placeholder) keeps the grid's pace, and the game never checks or judges the step. This stands unless you flip it.",
+   "why": "Your steer: 'real work action is the highest killed play avaiable' and mode 3 'metabolize[s] their outer work into ingame success'. ya-grid-pace and pr-inner-demons, both standing, make gold the only thing that activates a node. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-pull-scene",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pos": "Act 0 ends on the brother's breadcrumb. In the player's own world it shows up as something small and out of place that belongs to Calrunia, and stepping through is the player's choice. The game never names him there, and the cave (milestone 13) pays it off when the traveler finds who called. Story mode opens on a short version of this scene, so the call is part of every playthrough. This stands unless you flip it.",
+   "why": "You chose ya-the-pull A. docs/design.md, 'The brother': 'He can only use people who choose it', and his teachings are breadcrumbs toward the centre of the forest. Your cave steer asked for surreal, not on the nose (cave-act2-voices). Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-gets-us",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pos": "What it gets us. Inside: triumph, wonder and poignance, the three you want while the council designs and builds this, with every gold state a brick on the road. Outside, for the player: a named life after the game, a named block on each goal, an encounter loop that turns each block into gold, and, by mode, a step already taken in their life. For you as maker, the game becomes the teaching. This stands unless you flip it.",
+   "why": "Your answer on ya-feeling, and your steer of 2026-10-03 on mh-input-chosen: 'This is the highest value thing [...] when players leave the game- they know how to apply what they learned to real life.' Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-feels-now",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pos": "How it feels to live here now. For the player: the game ends at the founder's walk, and only the slice's one card ('One for your week') ties it to their week. For you: the purpose you named as the highest value on 2026-10-03 sat in a later fork, in design.md's note on the ring. This stands unless you flip it.",
+   "why": "docs/design.md, 'The ring' (the fork note); data/slice.json, playtest.card; mh-input-chosen, overruled with that steer. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-what-true",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pos": "What would have to be true. The player has to feel safe naming a block, so it stays on their device and they pick it rather than write it. They have to choose to come, as the brother asks. They have to meet their block in a form that is surreal rather than literal, as the cave does. Each step has to be small enough to take this week. In Mastering Allyship's terms, the Protector holds the door, and the other daemons are reached only through it, so safety comes first. This stands unless you flip it.",
+   "why": "mtgoa appendices/APPENDIX_A_FOUR_ALLYSHIP_DOMAINS.md, 'The Table Turned Around': 'Their Protector holds the door [...] how far it lets you in decides which of them you ever reach.' cave-act2-voices steer; the slice card's moves are one step each. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-reservations",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pos": "Reservations, named by your own examples. 'I'm not ready' (busywork getting in the way of the major impacts): one message asked for three features, so the first build is the smallest playable one, the encounter loop with one block. 'I don't belong' (the users aren't going to accept what we have): some players will not want life work in a game, and story mode is the answer. This stands unless you flip it.",
+   "why": "The six beliefs with your examples (six-faces-council council/moves/feature-request.md). The Regent's cast this run was 28, Overload: 'This is carrying more than what holds it up.' Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-life-domains",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pos": "Act 0 asks the player to choose the life domains their goals sit in, from a short list of life domains in your Lenses sense: relationships, career, money, creativity, and a few more for the first build (health, home, community, a placeholder list until the Lenses domains are formalized). The player chooses which ones and how many, up to three goals. Each goal names its block from the six beliefs, by picking. This stands unless you flip it.",
+   "why": "Your answer on ya-domains, C with the steer: 'it's about life domains, Relationships, Career, Money, Creativity etc. I think players can choose which ones'. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
+  },
+  {
+   "id": "ya-allyship-read",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "pos": "The player does not pick an Allyship domain. The game reads it: how the player tends to act across play (gathering, organizing, acting directly or raising awareness) is read the way the story mirror reads the channel, and each aligned action is offered in that domain. A goal in career might get a direct-action step for one player and an organizing step for another. This stands unless you flip it.",
+   "why": "Your steer: 'they don't get to choose in the same way re: allyship'. The story mirror already reads the player from play (story-mirror reading.md, approved 2026-10-03). The four domains: mtgoa appendices/APPENDIX_A_FOUR_ALLYSHIP_DOMAINS.md. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
+  },
+  {
+   "id": "ya-modes-wording",
+   "faces": [
+    "regent"
+   ],
+   "pos": "Correction to ya-three-modes: story mode asks for no action outside the game, but Act 0 still asks about the player's life outside it. Prompted and integrated modes use those answers for their steps. The answers stay on the device in every mode. This stands unless you flip it.",
+   "why": "Your steer on ya-three-modes: '\"and asks for nothing outside the game.\" well they ask for information about the players life outside of the game.' Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
+  },
+  {
+   "id": "ya-dialogue-closed",
+   "faces": [
+    "sage"
+   ],
+   "pos": "The dialogue is complete. All three grammar questions and all four unpacking questions now have answers you have seen. Next is the 1 step: the spec kit (spec.md, plan.md, tasks.md) and the cheapest test that could prove the design wrong. The council proposes this test: a scripted player runs the encounter loop with one named block through all three modes, and the grid's pace and gold come out as designed. It runs in a new short thread. This stands unless you flip it.",
+   "why": "council/moves/feature-request.md: the 2 step ends when the grammar and unpacking questions each have an answer he has seen. Short sessions rule (six-faces-council CLAUDE.md). Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 3",
+   "auto": true
   }
  ],
  "questions": [
@@ -4586,6 +4771,128 @@
      "c": "Each stream winds inward toward the hub, so going deeper means going toward the centre, and the hub's capstone sits at the spiral's end. The fractal is left out."
     }
    ]
+  },
+  {
+   "id": "ya-feeling",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "sprout act zero",
+   "max": 3,
+   "q": "What should walking the Yellow Brick Road feel like to the player? Pick up to three.",
+   "why_you": "The feature request move asks what satisfaction the work is for, and only you hold yours. The answer sets what the cheap test checks for, and what Act 0 promises. The council leans to triumph and peace, but has no recommendation.",
+   "not_before": "Raised by the Act 0 and Yellow Brick Road run on 2026-10-05.",
+   "options": [
+    {
+     "v": "triumph",
+     "label": "Triumph",
+     "c": "The test checks that an alchemised block feels won, against a real obstacle the player named."
+    },
+    {
+     "v": "peace",
+     "label": "Peace",
+     "c": "The test checks that the player ends a session settled, with one clear step and nothing nagging."
+    },
+    {
+     "v": "wonder",
+     "label": "Wonder",
+     "c": "The test checks that the pull into Calrunia and the road ahead feel like a world opening."
+    },
+    {
+     "v": "poignance",
+     "label": "Poignance",
+     "c": "The test checks that leaving the game, like Dorothy leaving Oz, carries what the player found there."
+    },
+    {
+     "v": "bliss",
+     "label": "Bliss",
+     "c": "The test checks that the walk feels warm and shared with the allies who walked it."
+    }
+   ]
+  },
+  {
+   "id": "ya-real-steps",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sprout act zero",
+   "q": "How does the real-world step work, and what does the game keep of the player's life?",
+   "why_you": "The player's goals and blocks are their own life, and consent and release are reserved to you (council/faces.yaml). The answer sets whether the game stores life answers, where, and whether real life can unlock play. Not asked before because real-life integration was out of scope until your message today.",
+   "not_before": "Raised by the Act 0 and Yellow Brick Road run on 2026-10-05.",
+   "options": [
+    {
+     "v": "offered-local",
+     "label": "A. Offered, never gating, kept on the device (recommended)",
+     "c": "At each save the game offers one aligned action for a named goal, like the slice's 'One for your week' card. The player may mark it done; nothing in play depends on it, so nobody is rewarded for lying. Answers stay on the player's device and are never sent."
+    },
+    {
+     "v": "gating",
+     "label": "B. Real steps unlock play",
+     "c": "Marking a real step done unlocks grid nodes or gold. It ties the game hard to life, and it pays a player to tick boxes, which breaks pillar 3 (skill is bought only with skillful play)."
+    },
+    {
+     "v": "at-the-end",
+     "label": "C. Only at the end",
+     "c": "Play stays in Calrunia. The credits return the player home and hand them their road: the goals, the blocks they alchemised, and one step each. Nothing is asked between sessions."
+    }
+   ]
+  },
+  {
+   "id": "ya-the-pull",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "sprout act zero",
+   "q": "What pulls the traveler out of their world and into Calrunia?",
+   "why_you": "This is story, and story is yours. It sets Act 0's last scene and who the traveler first owes. Not asked before because Act 0 did not exist.",
+   "not_before": "Raised by the Act 0 and Yellow Brick Road run on 2026-10-05.",
+   "options": [
+    {
+     "v": "brothers-call",
+     "label": "A. The brother's call, answered by choice (recommended)",
+     "c": "The brother 'can only use people who choose it' and leaves breadcrumbs (design.md, 'The brother'). In Act 0 his breadcrumbs reach the player's world, and stepping through is the player's choice. It makes the brother the hidden reason the traveler is there, paid off in the cave."
+    },
+    {
+     "v": "storm",
+     "label": "B. An accident, like Dorothy's storm",
+     "c": "The player is swept in with no choice. Closest to Oz; nobody in Calrunia meant it, so the traveler owes no one."
+    },
+    {
+     "v": "the-game",
+     "label": "C. The game is the door",
+     "c": "In Act 0 the player starts a game called Sprout Plot on a screen, and it takes them in. Playful and honest about being a game, but it sits outside the world's own story."
+    }
+   ]
+  },
+  {
+   "id": "ya-domains",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "pass": "sprout act zero 2",
+   "q": "Which domains does Act 0 ask the player's goals in?",
+   "why_you": "You overruled ya-intake: the five channel domains flavour what each channel teaches and its starting village, and the intake should follow the Allyship domains or the Lenses domains. The Allyship domains are in the record; the Lenses domains are not in any repo, so only you hold them. The rest of the intake stands as drafted: the player picks a goal and the block in its way from the six beliefs, and types nothing.",
+   "not_before": "Raised by your steer on ya-intake, 2026-10-05.",
+   "options": [
+    {
+     "v": "allyship",
+     "label": "A. Mastering Allyship's four domains (recommended until we see Lenses)",
+     "c": "Gather Resources, Skillful Organizing, Direct Action, Raise Awareness (mtgoa Appendix A). A goal names the kind of action the player wants to take in their life. The book's daemon affinity table already links each domain to the blocks."
+    },
+    {
+     "v": "lenses",
+     "label": "B. The Lenses domains",
+     "c": "The intake asks in the Lenses domains. Please paste or describe them in the steer box, and the council builds the intake from them in round 3."
+    },
+    {
+     "v": "both",
+     "label": "C. Both, Lenses for where and Allyship for how",
+     "c": "The player names a life area from the Lenses domains and the kind of action from the four Allyship domains. Two picks per goal. Please paste the Lenses domains in the steer box."
+    }
+   ]
   }
  ],
  "causes": [
@@ -6803,9 +7110,34 @@
    "text": "On pr-labyrinth-scale: Something between a and c. The cycle inward connects to the world ring concept- the idea of fighting inner demons for development resonates and using the spoils of those fights for advancement ",
    "savedAt": "2026-10-04T16:25:21.599Z",
    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council); acted on in sprout council/ledger/2026-10-04-ranks-and-badges-round5.json (pull request #17)"
+  },
+  {
+   "text": "On ya-feeling: Really walking the yellow brick road should afford all 6 feelings because they are all gold bricks, but triumph wonder and poignance are the ones I want to feel in designing and implementing this",
+   "savedAt": "2026-10-05T21:03:26.996Z",
+   "record": "sprout .specify/specs/act-zero/request.md (round 1 answers) and council/ledger/2026-10-05-act-zero-round2.json (pull request #20)"
+  },
+  {
+   "text": "On ya-real-steps: honestly I think all three are necessary. [...] different modes of play that players can switch throuh [...] the modeas can be shifted in the middle fo play throughs",
+   "savedAt": "2026-10-05T21:06:20.284Z",
+   "record": "sprout .specify/specs/act-zero/request.md (round 1 answers) and council/ledger/2026-10-05-act-zero-round2.json (pull request #20)"
+  },
+  {
+   "text": "On ya-intake (overruled): I think we need to think about domains a bit more. These are what the different channels teach you and flavors their starting village, but the domains should be more aligned with the Allyship domains or the LEnses Domains (which I can provide context on)",
+   "savedAt": "2026-10-05T21:08:24.524Z",
+   "record": "sprout .specify/specs/act-zero/request.md (round 1 answers) and council/ledger/2026-10-05-act-zero-round2.json (pull request #20)"
+  },
+  {
+   "text": "On ya-domains (C): The lenses domains haven't been formalized, but if the Allyship Domains are about helping other people the lenses domains could be seen about helping one's self. But really it's about life domains, Relationships, Career, Money, Creativity etc. I think players can choose which ones where they don't get to choose in the same way re: allyship",
+   "savedAt": "2026-10-05T21:17:40.188Z",
+   "record": "sprout .specify/specs/act-zero/request.md (round 2 answers) and council/ledger/2026-10-05-act-zero-round3.json (pull request #20)"
+  },
+  {
+   "text": "On ya-three-modes: \"and asks for nothing outside the game.\" well they ask for information about the players life outside of the game.",
+   "savedAt": "2026-10-05T21:18:14.404Z",
+   "record": "sprout .specify/specs/act-zero/request.md (round 2 answers) and council/ledger/2026-10-05-act-zero-round3.json (pull request #20)"
   }
  ],
- "steer_recorded_through": "2026-10-04T16:25:21.599Z",
+ "steer_recorded_through": "2026-10-05T21:19:22.469Z",
  "battles": [
   {
    "id": "fr-scene-staging",
@@ -7101,6 +7433,57 @@
       "pr-subtype-arms",
       "pr-inner-demons",
       "pr-design-applied"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-act-zero",
+   "name": "Act 0 and the Yellow Brick Road",
+   "repo": "sprout",
+   "element": "fire",
+   "record": "sprout .specify/specs/act-zero/request.md",
+   "intro": "It wants the game to begin in the player's own world, ask what life they want after the game, pull them into Calrunia, and turn every forest encounter into lead becoming gold, so the grid charts their road and they walk it home.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "ya-feeling",
+      "ya-real-steps",
+      "ya-the-pull"
+     ],
+     "positions": [
+      "ya-in-scope",
+      "ya-intake",
+      "ya-act0-shape",
+      "ya-grid-pace",
+      "ya-encounter-loop",
+      "ya-first-friend"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "ya-domains"
+     ],
+     "positions": [
+      "ya-three-modes",
+      "ya-mode3-gold",
+      "ya-pull-scene",
+      "ya-gets-us",
+      "ya-feels-now",
+      "ya-what-true",
+      "ya-reservations"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [],
+     "positions": [
+      "ya-life-domains",
+      "ya-allyship-read",
+      "ya-modes-wording",
+      "ya-dialogue-closed"
      ]
     }
    ]
