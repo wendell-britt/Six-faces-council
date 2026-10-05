@@ -2382,6 +2382,83 @@
    "why": "The traveler reads as foreign to Argyra (board tr-foreign), and Act 0 brings them from another world, so 'an old friend from an elders' family' (docs/design.md, 'The cast') no longer fits. Source: sprout .specify/specs/act-zero/request.md",
    "pass": "sprout act zero",
    "auto": true
+  },
+  {
+   "id": "ya-three-modes",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pos": "The game has three modes of play, as you named them, and the player can switch between them at any save. Story mode skips Act 0's intake and asks for nothing outside the game. Prompted mode works out one aligned action at each save from the latest gold and the goal it serves, and when the player comes back it shows what was at stake. Integrated mode lets real steps count as play (ya-mode3-gold). The player chooses a mode at the end of Act 0, and switching keeps the save and everything earned. Nothing the player tells the game about their life leaves their device. This stands unless you flip it.",
+   "why": "Your steer on ya-real-steps: 'there would be different modes of play [...] Having the 3 options means players won't have an incentive to cook the books [...] the modeas can be shifted in the middle fo play throughs'. You chose option A, kept on the device. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-mode3-gold",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pos": "In integrated mode, a real step the player marks done turns into gold of its element at the next save: the same gold an encounter gives, spent on the grid in the same way. A real step is worth more gold than one encounter, because real action is the highest-skill play. A daily cap (a placeholder) keeps the grid's pace, and the game never checks or judges the step. This stands unless you flip it.",
+   "why": "Your steer: 'real work action is the highest killed play avaiable' and mode 3 'metabolize[s] their outer work into ingame success'. ya-grid-pace and pr-inner-demons, both standing, make gold the only thing that activates a node. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-pull-scene",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pos": "Act 0 ends on the brother's breadcrumb. In the player's own world it shows up as something small and out of place that belongs to Calrunia, and stepping through is the player's choice. The game never names him there, and the cave (milestone 13) pays it off when the traveler finds who called. Story mode opens on a short version of this scene, so the call is part of every playthrough. This stands unless you flip it.",
+   "why": "You chose ya-the-pull A. docs/design.md, 'The brother': 'He can only use people who choose it', and his teachings are breadcrumbs toward the centre of the forest. Your cave steer asked for surreal, not on the nose (cave-act2-voices). Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-gets-us",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pos": "What it gets us. Inside: triumph, wonder and poignance, the three you want while the council designs and builds this, with every gold state a brick on the road. Outside, for the player: a named life after the game, a named block on each goal, an encounter loop that turns each block into gold, and, by mode, a step already taken in their life. For you as maker, the game becomes the teaching. This stands unless you flip it.",
+   "why": "Your answer on ya-feeling, and your steer of 2026-10-03 on mh-input-chosen: 'This is the highest value thing [...] when players leave the game- they know how to apply what they learned to real life.' Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-feels-now",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pos": "How it feels to live here now. For the player: the game ends at the founder's walk, and only the slice's one card ('One for your week') ties it to their week. For you: the purpose you named as the highest value on 2026-10-03 sat in a later fork, in design.md's note on the ring. This stands unless you flip it.",
+   "why": "docs/design.md, 'The ring' (the fork note); data/slice.json, playtest.card; mh-input-chosen, overruled with that steer. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-what-true",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pos": "What would have to be true. The player has to feel safe naming a block, so it stays on their device and they pick it rather than write it. They have to choose to come, as the brother asks. They have to meet their block in a form that is surreal rather than literal, as the cave does. Each step has to be small enough to take this week. In Mastering Allyship's terms, the Protector holds the door, and the other daemons are reached only through it, so safety comes first. This stands unless you flip it.",
+   "why": "mtgoa appendices/APPENDIX_A_FOUR_ALLYSHIP_DOMAINS.md, 'The Table Turned Around': 'Their Protector holds the door [...] how far it lets you in decides which of them you ever reach.' cave-act2-voices steer; the slice card's moves are one step each. Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
+  },
+  {
+   "id": "ya-reservations",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pos": "Reservations, named by your own examples. 'I'm not ready' (busywork getting in the way of the major impacts): one message asked for three features, so the first build is the smallest playable one, the encounter loop with one block. 'I don't belong' (the users aren't going to accept what we have): some players will not want life work in a game, and story mode is the answer. This stands unless you flip it.",
+   "why": "The six beliefs with your examples (six-faces-council council/moves/feature-request.md). The Regent's cast this run was 28, Overload: 'This is carrying more than what holds it up.' Source: sprout .specify/specs/act-zero/request.md",
+   "pass": "sprout act zero 2",
+   "auto": true
   }
  ],
  "questions": [
@@ -4744,6 +4821,34 @@
      "v": "the-game",
      "label": "C. The game is the door",
      "c": "In Act 0 the player starts a game called Sprout Plot on a screen, and it takes them in. Playful and honest about being a game, but it sits outside the world's own story."
+    }
+   ]
+  },
+  {
+   "id": "ya-domains",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "pass": "sprout act zero 2",
+   "q": "Which domains does Act 0 ask the player's goals in?",
+   "why_you": "You overruled ya-intake: the five channel domains flavour what each channel teaches and its starting village, and the intake should follow the Allyship domains or the Lenses domains. The Allyship domains are in the record; the Lenses domains are not in any repo, so only you hold them. The rest of the intake stands as drafted: the player picks a goal and the block in its way from the six beliefs, and types nothing.",
+   "not_before": "Raised by your steer on ya-intake, 2026-10-05.",
+   "options": [
+    {
+     "v": "allyship",
+     "label": "A. Mastering Allyship's four domains (recommended until we see Lenses)",
+     "c": "Gather Resources, Skillful Organizing, Direct Action, Raise Awareness (mtgoa Appendix A). A goal names the kind of action the player wants to take in their life. The book's daemon affinity table already links each domain to the blocks."
+    },
+    {
+     "v": "lenses",
+     "label": "B. The Lenses domains",
+     "c": "The intake asks in the Lenses domains. Please paste or describe them in the steer box, and the council builds the intake from them in round 3."
+    },
+    {
+     "v": "both",
+     "label": "C. Both, Lenses for where and Allyship for how",
+     "c": "The player names a life area from the Lenses domains and the kind of action from the four Allyship domains. Two picks per goal. Please paste the Lenses domains in the steer box."
     }
    ]
   }
@@ -7287,6 +7392,21 @@
       "ya-grid-pace",
       "ya-encounter-loop",
       "ya-first-friend"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "ya-domains"
+     ],
+     "positions": [
+      "ya-three-modes",
+      "ya-mode3-gold",
+      "ya-pull-scene",
+      "ya-gets-us",
+      "ya-feels-now",
+      "ya-what-true",
+      "ya-reservations"
      ]
     }
    ]
