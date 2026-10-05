@@ -22,3 +22,12 @@ CLAUDE.md, this file and the board.
   command are unticked.
 - **Deferred:** the oracle drafts come back 2026-11-03 (`council/due.py`).
 - **Costs measured so far:** pass ten, `council/passes/6FACE_PASS10_2026-10-03.md`.
+
+## Open on 2026-10-05, from the standing daily session
+
+- **The standing session is past the short-sessions limit.** `session_011mcRZ4vDnnis99dnptvdmu` read 331,329 tokens
+  of context at the start of today's run (get_session, 15:46 UTC). CLAUDE.md now says to hand off before about
+  200,000. Wendell chose one standing session (`dy-access`, board read 28) because a fresh routine session had no
+  repo access; the short-sessions rule came later. A board read should weigh the two: the routine could fire a
+  fresh session once the repo is attached to it, or the standing session could be replaced by a new one.
+  Nothing has been changed; the routine still wakes this session.
