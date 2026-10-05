@@ -18,6 +18,6 @@ He has no steps. His decisions are on the board: question `sd-when`, and positio
 ## Verify and ship
 
 - [x] [claude] Definition of done in spec.md, checked.
-- [ ] [claude] Board position `sd-ship`: merges on the next board read unless flipped.
-- [ ] [claude] After merge, on main: the oracle drafts' resolved entry gains `history` and `project`.
-- [ ] [claude] Ledger record written; this file ticked.
+- [x] [claude] Board position `sd-ship`: merges on the next board read unless flipped. It stood (board read 22).
+- [x] [claude] After merge, on main: the oracle drafts' resolved entry gains `history` and `project`.
+- [x] [claude] Ledger record written (`council/ledger/2026-10-03-board-read-22.json`); this file ticked.

@@ -57,7 +57,7 @@ because another person owns that repo.
 ## Definition of done
 
 - [x] Wendell rules on `fm-rotation`, `fm-limits`, `fm-one-row`, `fm-after-16` and `fm-repos` (board read 25).
-- [ ] Wendell rules on `fm-levels`.
-- [ ] #16 merges.
-- [ ] The daily routine's instructions gain the move step, and `plan.md` and `tasks.md` are written.
+- [x] Wendell rules on `fm-levels` (stands, board read 26).
+- [x] #16 merges (4de3aa8).
+- [x] The daily routine's instructions gain the move step, and `plan.md` and `tasks.md` are written (board read 27, 0fa2fea).
 - [ ] The first run of each move is read and recorded here.
