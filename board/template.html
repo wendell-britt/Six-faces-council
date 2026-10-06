@@ -95,6 +95,10 @@ code{font-family:var(--mono);font-size:.86em}
 ol.st-steps{list-style:none;margin:0;padding:0}
 .st-step{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 12px;padding:14px 0;border-top:1px solid var(--line)}
 .st-tick{width:44px;height:44px;border:2px solid var(--accent);border-radius:6px;background:var(--panel);font:600 1.1rem var(--body);cursor:pointer;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums;color:var(--accent)}
+.st-closed{border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
+.st-closed > summary,.st-finished > summary{cursor:pointer;color:var(--muted);font-weight:500;padding:10px 0}
+.st-finished{margin:18px 0}
+.st-finished > summary{font-family:var(--display);font-size:1.15rem;color:var(--fg)}
 .st-step.st-done .st-tick{background:var(--accent);color:var(--accent-ink)}
 .st-body{min-width:0;display:grid;gap:6px}
 .st-do{font-weight:600;font-size:1.02rem;margin:0}
@@ -690,7 +694,12 @@ function stDueText(v){
   return `${stFmt(v)}, in ${n} days`;
 }
 const stOverdue = s => !s.done && !s.retired && !s.optional && (stDaysLeft(s.due) ?? 0) < 0;
-const stFinished = id => { const r = stReq(stOf(id)); return r.length > 0 && r.every(([,s]) => s.done); };
+/* Wendell, 2026-10-06: "Completed actions or Cancelled steps should move into completed and then should also be collapsible".
+   A step is closed when it is done or withdrawn (retired). A list is finished when it has steps and none of its required ones
+   is still open, so a list whose steps were all withdrawn leaves the open list too. Closed steps sit in a collapsed group. */
+const stClosed = s => !!(s.done || s.retired);
+const stFinished = id => { const all = stOf(id); return all.length > 0 && stReq(all).every(([,s]) => s.done); };
+const stOpenGroups = new Set();
 function stStep(id, s){
   if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
@@ -725,12 +734,16 @@ function stList(id, l){
   const pct = req.length ? Math.round(100 * n / req.length) : 0;
   const next = req.filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0];
   const nextTxt = next ? `<span class="${stDaysLeft(next) < 0 ? 'st-due-over' : ''}">Next due ${esc(stFmt(next))}</span>` : '';
+  const open = all.filter(([,s]) => !stClosed(s)), closed = all.filter(([,s]) => stClosed(s));
+  const withdrawn = all.filter(([,s]) => s.retired).length;
+  const count = req.length ? `${n} of ${req.length} done` : 'Nothing left to do';
+  const closedHtml = closed.length ? `<details class="st-closed" data-group="g-${id}"${stOpenGroups.has('g-' + id) ? ' open' : ''}><summary>Completed (${closed.length})</summary><ol class="st-steps">${closed.map(([sid, s]) => stStep(sid, s)).join('')}</ol></details>` : '';
   return `<article class="st-list" id="l-${id}"><header>
-    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${n} of ${req.length} done</span>${nextTxt}${(() => { const pc = req.filter(([,s]) => !s.done && s.device === 'computer').length; return pc ? `<span class="st-chip st-pc">${pc} need${pc === 1 ? 's' : ''} a computer</span>` : ''; })()}</div>
+    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${count}${withdrawn ? `, ${withdrawn} withdrawn` : ''}</span>${nextTxt}${(() => { const pc = req.filter(([,s]) => !s.done && s.device === 'computer').length; return pc ? `<span class="st-chip st-pc">${pc} need${pc === 1 ? 's' : ''} a computer</span>` : ''; })()}</div>
     <h2 style="margin:0">${esc(l.title)}</h2>
     ${l.why ? `<p class="st-why">${esc(l.why)}</p>` : ''}${l.source ? `<p class="st-src">From ${esc(l.source)}</p>` : ''}
     <div class="st-bar" aria-hidden="true"><i style="width:${pct}%"></i></div></header>
-    <ol class="st-steps">${all.map(([sid, s]) => stStep(sid, s)).join('')}</ol></article>`;
+    ${open.length ? `<ol class="st-steps">${open.map(([sid, s]) => stStep(sid, s)).join('')}</ol>` : ''}${closedHtml}</article>`;
 }
 function renderSteps(){
   const active = document.activeElement && document.activeElement.id;
@@ -739,7 +752,7 @@ function renderSteps(){
   const ids = Object.keys(stLists).sort((a,b) => nextDue(a).localeCompare(nextDue(b)) || (stLists[a].order||0) - (stLists[b].order||0) || String(stLists[a].created||'').localeCompare(String(stLists[b].created||'')));
   const todo = ids.filter(id => !stFinished(id)), done = ids.filter(id => stFinished(id));
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
-  document.getElementById('steps-done').innerHTML = section('Finished', '', done.map(id => stList(id, stLists[id])).join(''));
+  document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
   document.getElementById('steps-empty').hidden = todo.length > 0;
   document.getElementById('n-steps').textContent = todo.length;
   const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
@@ -756,6 +769,8 @@ function stSecret(len){
   return btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'').slice(0, len);
 }
 const stepsView = document.getElementById('view-steps');
+// Remember which Completed groups are open, since every save redraws the tab.
+stepsView.addEventListener('toggle', e => { const g = e.target.dataset && e.target.dataset.group; if (!g) return; if (e.target.open) stOpenGroups.add(g); else stOpenGroups.delete(g); }, true);
 stepsView.addEventListener('input', e => { if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value; });
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;

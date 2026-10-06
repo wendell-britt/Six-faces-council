@@ -44,15 +44,21 @@ have dropped them. Two paths now close that:
   template that differs between the live page and main is reported, and `--take-live-template` takes the live one.
 - **The safety net: the steward merges board-only pull requests without the label.** A pull request whose files,
   against main, are only `board/board_data.json`, `board/council-board.html` and `council/ledger/*` merges once its
-  checks pass, provided no row on main is removed. Every other pull request still waits for the `automerge` label.
+  checks pass, provided no row on main is removed, even from a `daily/` branch.
 
 **Remediation**, when the live page and main disagree: run `sync_board.py --check --live <saved page>` to see the
 difference, then the same command without `--check` and with `--push` to bring main up to the live page.
 
-## Merging into main: Wendell's label
+## Merging into main: automatic once checks pass (Wendell, 2026-10-06)
 
-Wendell ruled on 2026-10-03 ("On your label"): a pull request merges into main when it carries the
-`automerge` label, is not a draft, and its steward checks pass. The steward then merges it with a merge
-commit and brings the other open branches up to the new main. Adding the label is Wendell's yes.
-A session adds it only when he says to merge that pull request, and never on its own judgement.
-Without the label, a pull request waits for Wendell to merge it by hand.
+His words: "having to manually put the label isn't working for me. Is there a way to automate this part of the
+process?" This replaces his label ruling of 2026-10-03 ("On your label"). The steward now merges a pull request
+into main, with a merge commit, as soon as it is not a draft and its steward checks pass. A session marks its pull
+request ready only after its own tests pass, so ready means "tested and done".
+
+Three cases still stop a merge:
+- **A draft.** A pull request that is still being built stays a draft.
+- **The `hold` label.** Anyone can add it to keep a pull request open, and removing it lets the steward merge.
+- **A change Wendell reviews himself.** A pull request that changes `council/faces.yaml` (which changes only by his
+  ruling), or that comes from the daily session's `daily/` branches (its limits make its changes proposals), still
+  waits for his `automerge` label. Board-only pull requests merge either way, as above.
