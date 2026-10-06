@@ -3400,6 +3400,81 @@
    "auto": true,
    "pos": "The playtest checks Welcome's cost first. A bot that Welcomes before every answer beats answer spam in 5 of 5 fights, but it ends each fight at 8 of 20 HP, and HP carries between fights, so a second fight often knocks it down. The numbers stay as they are until the playtest. This stands unless you flip it.",
    "why": "tools/test-wave.mjs's bot test, and a two-fight play in Chromium where the bot started the second fight at 8 HP and was knocked down. Sprout #26."
+  },
+  {
+   "id": "loop-fix-labels",
+   "faces": [
+    "architect"
+   ],
+   "pass": "flirtcraft loop 1",
+   "auto": true,
+   "pos": "The run's progress rail names each screen for what it does, and the engine says 16 of the 64 cards are internal, as the deck does. This stands unless you flip it.",
+   "why": "The rail calls the 'Where you are' screen Situation and the move screen Charge (app/page.tsx:30), and lib/engine/loop.ts says 15 where the deck has 16. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+  },
+  {
+   "id": "loop-draw-means-drawn",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "flirtcraft loop 1",
+   "auto": true,
+   "pos": "The move screen draws the move first, as the engine's rule says, and shows the other three after. This stands unless you flip it.",
+   "why": "The screen says the move 'is drawn' because habit routes the charge the same way every time, then offers all four as a menu. lib/engine/loop.ts:105-108 is the rule. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+  },
+  {
+   "id": "loop-one-move",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "flirtcraft loop 1",
+   "auto": true,
+   "pos": "The commit screen names the card's drill as the move, then lists the trigram moves as who it goes to and the translate and transcend moves as how to hold it. No card text changes. This stands unless you flip it.",
+   "why": "The front door promises 'one move to go and make tonight', and a run on a split card (43 of 64) deals five, each with its own mark. Shaman lesson, 2026-10-03: the player leaves with a move they can use. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+  },
+  {
+   "id": "loop-posture-once",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "flirtcraft loop 1",
+   "auto": true,
+   "pos": "The stance screen and the 'Where you are' screen become one, so the run is six steps. Naming where you are still comes before the draw. This stands unless you flip it.",
+   "why": "The same sentence shows on two screens in a row, and the code records collapsing them as open. GRAMMAR.md §7a's reason for the screen is kept. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+  },
+  {
+   "id": "orient-bridge",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "flirtcraft loop 1",
+   "auto": true,
+   "pos": "Orienting new players runs the pipeline as a feature: the front door says what a rep is in three beats (get a move here, make it out there, bring back what came back), the wall acknowledges the rep they just played, the free run's plain words become the paid run's subtitles, and the ledger says once what grows. It shares its words with the fr-demo orientation in sprout. This stands unless you flip it.",
+   "why": "You asked for it in the Flirtcraft thread on 6 October. Nothing in the paid app says what the game is, and a first paid run meets about twenty terms the free run never used. Regent lesson, 2026-10-03: work that serves a gate runs beside it. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+  },
+  {
+   "id": "orient-on-your-own",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "flirtcraft loop 1",
+   "auto": true,
+   "pos": "The front door says a rep can be run on your own as well as with somebody. This stands unless you flip it.",
+   "why": "The hero says 'on somebody real', while 16 cards and all inner work serve a player with nobody at hand tonight. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+  },
+  {
+   "id": "orient-reflection-to-wall",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "pass": "flirtcraft loop 1",
+   "auto": true,
+   "pos": "The free run's reflection keeps sending the player to the wall, rather than dealing the first paid card on the same screen. This stands unless you flip it.",
+   "why": "The daemon-player asked. Your ruling of 2026-09-09 answers it: 'Give them the intake and then they sign up to use it again OR to go deeper.' Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
   }
  ],
  "questions": [
@@ -6318,6 +6393,52 @@
      "v": "flirtcraft",
      "label": "C. Keep the Flirtcraft coordinator",
      "c": "Nothing changes. The work keeps showing up as a thread in the Flirtcraft project."
+    }
+   ]
+  },
+  {
+   "id": "orient-first-paid-run",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "flirtcraft loop 1",
+   "q": "How should a new subscriber meet the seven steps of the paid run?",
+   "why_you": "The record has no ruling on pacing a subscriber's first runs, and the faces split: the Architect would introduce screens one at a time, the Regent wants nothing a subscriber pays for out of sight.",
+   "not_before": "Nobody had audited the jump from the free run to the paid run until this pass.",
+   "options": [
+    {
+     "v": "all",
+     "label": "A. All seven from the first run, each new screen with one plain sentence said once (recommended)",
+     "c": "Nothing is hidden, and the plain sentence is not shown again after the first time."
+    },
+    {
+     "v": "unlock",
+     "label": "B. The screens unlock over the first runs",
+     "c": "The first paid run is shorter, and the later steps arrive as the ledger fills."
+    }
+   ]
+  },
+  {
+   "id": "orient-terms",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "flirtcraft loop 1",
+   "q": "Should a first paid run show the Chinese and element names?",
+   "why_you": "The dressing is your design, and the Shaman and the Challenger split on it.",
+   "not_before": "No earlier pass looked at a first paid run through a newcomer's eyes.",
+   "options": [
+    {
+     "v": "subtitles",
+     "label": "A. Yes, as subtitles under a plain sentence (recommended)",
+     "c": "The rite stays visible, and a newcomer is never stuck on a word."
+    },
+    {
+     "v": "tap",
+     "label": "B. No, only when the player taps to see them",
+     "c": "The first run reads plainest, and the dressing is found later."
     }
    ]
   }
@@ -9893,6 +10014,32 @@
      "questions": [],
      "positions": [
       "pod-art-recolor"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-orient-new-players",
+   "name": "Orienting New Players",
+   "repo": "flirtcraft",
+   "element": "wood",
+   "record": "flirtcraft 6FACE_PASS3_2026-10-06.md",
+   "intro": "It wants a stranger to understand the Flirtcraft game and leave each rep with one move to make. Today the free run teaches the loop in plain words, and the paid seven-step run deals up to five moves and about twenty unexplained terms. The six audited the loop and the jump between the two.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "orient-first-paid-run",
+      "orient-terms"
+     ],
+     "positions": [
+      "loop-fix-labels",
+      "loop-draw-means-drawn",
+      "loop-one-move",
+      "loop-posture-once",
+      "orient-bridge",
+      "orient-on-your-own",
+      "orient-reflection-to-wall"
      ]
     }
    ]
