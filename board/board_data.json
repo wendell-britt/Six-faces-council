@@ -3103,6 +3103,39 @@
    "auto": true,
    "pos": "Integrating a daemon deepens the player's relationship with it, and the gift grows with the relationship. The first integrations give loot for the sphere grid. A deeper relationship teaches that daemon's move, usable in later fights. The deepest makes it a companion that walks with the player and acts in fights. The demo ships the first two rungs; companions come after the demo. How many integrations each rung takes is a placeholder (the council's: 1 for loot, 3 for the move, 6 for a companion). This stands unless you flip it.",
    "why": "Your steer on wave-integrate-gift: 'all 3 but in order of relationship to the daemon. I think it starts out as loot for the sphere grid. Then it leads to moves. And the highest level is as a companion.' Leaving companions out of the demo keeps companion art and behaviour off the demo's list (demo-scope A)."
+  },
+  {
+   "id": "pod-art-ma",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The council drafts three podcast covers in Mastering Allyship's look, taken from its live site's colors, type and layout in the bars-engine repo, and brings them back as a question for you to pick one. Each is a 3000 by 3000 pixel square that stays readable as a small thumbnail.",
+   "why": "Your steer on pod-art-drafts: \"I think it should be more like Mastering Allyship. That’s the most robust one and flirtcraft really hasn’t gotten a design pass yet\". Source: council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+  },
+  {
+   "id": "pod-ep1-from-audio",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "Once you attach the episode 1 audio in the podcast thread, the council drafts the show description, the episode title and the episode notes from it, and brings the title back as a question. Getting the audio there is the first two steps of the Spotify list on the Your steps tab.",
+   "why": "You chose \"Draft them from the audio\" on pod-ep1-details. Claude's cloud sessions can't open zoom.us, so the file has to come from you. Source: council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+  },
+  {
+   "id": "board-auto-pickup",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "Saving on the board will wake Claude. A Send to Claude button on the board starts a board read in a new thread, which records your answers and passes each one to the thread that owns it. The daily run also runs board/unrecorded.py, so any answer nobody picked up is caught within a day.",
+   "why": "Your question in the podcast thread: \"What triggers you to check the board and how can we automate that?\" Nothing does today. Your podcast answers sat unread for half an hour, and the daily run of 2026-10-04 found 23 saves no session had read. Source: board/unrecorded.py (six-faces-council)"
   }
  ],
  "questions": [
