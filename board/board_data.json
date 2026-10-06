@@ -5949,22 +5949,22 @@
    "pass": "podcast",
    "q": "Which cover should the Flirtcraft podcast use? The council recommends A, Neon hex.",
    "why_you": "The cover is the show's face on Spotify and under your name, and choosing between looks is a matter of taste only you hold.",
-   "not_before": "The three drafts were made today, 2026-10-06, in Mastering Allyship's look as you steered on pod-art-drafts. They are attached in the Podcast cover designs thread and saved in the project files under podcast/covers.",
+   "not_before": "Redrawn today, 2026-10-06, after your steer on pod-art-ma at board read 2002: \"one strong color change so people can differentiate it from MTGOA\". Mastering Allyship's orange to pink to violet glow is now flirt red on all three; the layouts, the night background, the light streaks and the gold stay. They are attached in the Podcast cover designs thread and saved in the project files under podcast/covers, with the first versions kept beside them.",
    "options": [
     {
      "v": "a-neon-hex",
      "label": "A, Neon hex (recommended)",
-     "c": "The Mastering Allyship book cover's own layout: rainbow light streaks, the glowing orange to violet hexagon, and FLIRT CRAFT inside it under 'Mastering the game of'. It reads as a sibling of the book. The council makes the final file and adds it to your Spotify steps."
+     "c": "The Mastering Allyship book cover's layout with a flirt red hexagon: rainbow light streaks, FLIRT CRAFT inside the glowing red hexagon under 'Mastering the game of'. Kin to the book by shape, told apart by color. The council makes the final file and adds it to your Spotify steps."
     },
     {
      "v": "b-two-signals",
      "label": "B, Two signals",
-     "c": "A pink and a blue hexagon overlapping, the overlap lit gold, with FLIRTCRAFT across both: two people meeting. Fewer streaks and the cleanest at thumbnail size."
+     "c": "A red and a blue hexagon overlapping, the overlap lit gold, with FLIRTCRAFT across both: two people meeting. Fewer streaks and the cleanest at thumbnail size."
     },
     {
      "v": "c-level-select",
      "label": "C, Level select",
-     "c": "Type first: FLIRT in white and CRAFT in the orange to violet gradient, a small gold FC hexagon badge, and light streaks rising from the bottom. The boldest title of the three."
+     "c": "Type first: FLIRT in white and CRAFT in a red gradient, a small gold FC hexagon badge, and light streaks rising from the bottom. The boldest title of the three."
     },
     {
      "v": "steer",

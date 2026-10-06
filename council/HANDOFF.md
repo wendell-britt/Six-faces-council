@@ -56,6 +56,7 @@ CLAUDE.md, this file and the board.
 - **Cover art (`pod-art-ma`):** three drafts done 2026-10-06, question `pod-cover-pick` on the board (round 3).
   Files: `/mnt/project-files/podcast/covers/` (3000x3000 JPEGs, plus `covers.html` and `render.js` that drew them;
   render with Playwright at deviceScaleFactor 3).
+  Recolored to flirt red (#ff5a5f to #d4003a) the same day; first versions in `covers/v1-mastering-allyship-colors/`.
   Board read 2002 (2026-10-06): Wendell steered pod-art-ma toward "one strong color change so people can
   differentiate it from MTGOA"; `pod-art-recolor` stands, so the cover thread redraws the three in a new color, then
   updates `pod-cover-pick`'s options before he picks. The look came from bars-engine (johnair01/bars-engine, public):
