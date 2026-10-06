@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "read_at": "2026-10-06T20:40:00Z",
+  "note": "Board read on Wendell's \"Updated the board\" in the board pickup thread. All three answers are fr-demo round 9; the WAVE battle thread acts on them.",
+  "answers": {
+    "wave-trigram-moves": {
+      "kind": "position",
+      "savedAt": "2026-10-06T20:37:06.298Z",
+      "steer": "",
+      "via": "battle:fr-demo",
+      "status": "stands"
+    },
+    "wave-welcome-listen": {
+      "kind": "position",
+      "savedAt": "2026-10-06T20:37:34.604Z",
+      "steer": "",
+      "via": "battle:fr-demo",
+      "status": "stands"
+    },
+    "wave-seize-validate": {
+      "kind": "position",
+      "savedAt": "2026-10-06T20:37:56.720Z",
+      "steer": "",
+      "via": "battle:fr-demo",
+      "status": "stands"
+    }
+  },
+  "fr-demo": "Round 9: wave-trigram-moves, wave-welcome-listen and wave-seize-validate all stood, with no steer.",
+  "next": "The WAVE battle thread builds the battle on the round 9 positions."
+}
