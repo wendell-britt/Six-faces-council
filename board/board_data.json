@@ -2841,6 +2841,113 @@
    "auto": true,
    "pos": "The one-shipment plan written earlier today in the MTGOA project (about $3,200, all backers at once, public launch around December 1) is superseded by rolling batches. It stays on file with a note pointing to this pass. This stands unless you flip it.",
    "why": "Your message chose rolling batches. Transcend and include keeps the earlier plan visible rather than deleting it. Source: /mnt/project-files/launch/SHIPPING_PLAN_2026-10-06.md in the MTGOA project"
+  },
+  {
+   "id": "board-all-work",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "All work in the Flirtcraft project goes through this board from now on. A thread that starts new work adds its rows here and names them in its reply.",
+   "why": "Your words in the podcast thread on 2026-10-06: \"All work moving forward in the project should go to the council board\". A chat answer counts as a ruling under the working rules."
+  },
+  {
+   "id": "pod-page-merges",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The podcast page merges on your next board read unless you flip this. It adds /podcast to the site, linked from the header and the footer, with episode 1 marked coming soon, a space for the player, and listen buttons that stay hidden until each link exists.",
+   "why": "Your ask: a place on the site for people to check out the podcast. Type check and the service-worker tests pass, and the preview is https://flirtcraft-git-claude-project-f439b3-wendells-projects-9c1b16dc.vercel.app/podcast. It names only you, as the about page already does. Source: flirtcraft pull request #9"
+  },
+  {
+   "id": "pod-art-drafts",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The council drafts three cover designs for the podcast in Flirtcraft's own look (the serif wordmark, ink on warm paper, the gold accent) and brings them back as a question for you to pick one. Each is a 3000 by 3000 pixel square, which both Spotify and Apple Podcasts accept, and stays readable as a small thumbnail.",
+   "why": "Your ask to create podcast art. The look is already ruled in the live site's design, so the council can draft without asking you first; choosing the cover is yours. Source: flirtcraft app/globals.css"
+  },
+  {
+   "id": "pod-upload-yours",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "Uploading episode 1 needs your sign-in, so the council prepares everything else: the show description, the episode title and notes, and the cover. Once you choose a host, the clicks that are yours go on the Your steps tab, and the page's player and listen links are wired from the links you get.",
+   "why": "Creating an account and publishing under your name are reserved to you. Source: the reserved list (position reserved)."
+  },
+  {
+   "id": "fcm-p8-no-new-features",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Friendcraft gets no new game feature and no new oracle prose work until one person who is not you has played a full exchange, or this board shows why not. This stands unless you flip it.",
+   "why": "Your game spec says it: 'One feature, then no more features.' Forty days after the two tracks opened, no friend has played and the work since 2026-09-22 went to the council and the oracle. Source: preproduction/6FACE_PASS8_2026-10-06.md (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-ruling-39",
+   "faces": [
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Ruling 39 is recorded as answered yes: the friend opens a link. The decision log is written once this stands. This stands unless you flip it.",
+   "why": "You merged the hosted exchange at board read 15, and the game spec says that design 'assumes yes and cannot proceed on no'. Source: TRACK_GAME.md 4c (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-self-test",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Once the link is live, you send one test card to your own phone and answer it there, the way a friend would, before the first real send. The Challenger dissents: the first real exchange is the test. Flip this and the first send goes straight to a friend.",
+   "why": "The game spec's first build step was to check whether a received card feels like a gift, and nothing records it being done. Source: TRACK_GAME.md 4c, build order (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-nine-calls",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "The nine book questions from 22 August (the voyage structure, Fred as the boat, the seven blockers and the rest) come back as one row each in the next Friendcraft pass, after the council checks which ones later work already answered. This stands unless you flip it.",
+   "why": "Some are likely stale: ruling 16 closed on 9 September, and the oracle branch already answered rulings 3 and 12 in code. Source: 6FACE_OPEN_RULINGS_PASS2_2026-08-22.md and BRANCH_READ_ORACLE_2026-08-27.md (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-steven-outside",
+   "faces": [
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Your message to Steven stays outside this plan. The council does not say whom you send the first link to.",
+   "why": "Ruled in pass three: a re-entry sent because a track needs it is what the book warns about. Naming a person is reserved to you. Source: TWO_TRACKS.md 6 (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-efa-outside",
+   "faces": [
+    "sage"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Emotional First Aid stays outside this plan. This stands unless you flip it.",
+   "why": "Its repo holds a README and the council install, with no manuscript and no spec, and you asked about Friendcraft's app and book. Source: emotional-first-aid git log"
   }
  ],
  "questions": [
@@ -5395,6 +5502,141 @@
      "v": "kdp-direct",
      "label": "Send backer copies straight from KDP, using the $10.40 allowance for KDP's shipping",
      "c": "About 12 a month instead of 7 or 8, so the queue ends around late 2028. Copies arrive unsigned in Amazon boxes, and the 128 pins go out in a separate mailing."
+    }
+   ]
+  },
+  {
+   "id": "pod-host",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "podcast",
+   "q": "Where should the Flirtcraft podcast be hosted? The council recommends Spotify for Creators.",
+   "why_you": "It needs your account, and the host decides where listeners find the show and who holds its feed.",
+   "not_before": "Episode 1 was recorded today, 2026-10-06, so hosting only became real now.",
+   "options": [
+    {
+     "v": "spotify-creators",
+     "label": "Spotify for Creators (recommended)",
+     "c": "It is free, puts the show on Spotify directly, and gives an RSS feed you can submit to Apple Podcasts and others. The council writes your setup steps for it."
+    },
+    {
+     "v": "other-host",
+     "label": "Another podcast host, such as Buzzsprout or Transistor",
+     "c": "Most charge monthly and give more analytics. Name it in the steer box and the council writes steps for that one."
+    },
+    {
+     "v": "already",
+     "label": "It is already uploaded somewhere",
+     "c": "Put the link in the steer box and the council wires the player into the page."
+    }
+   ]
+  },
+  {
+   "id": "pod-ep1-details",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "podcast",
+   "q": "What is episode 1 called, and what is it about?",
+   "why_you": "Only you know what was said on the recording. The title and summary go on the site and on Spotify.",
+   "not_before": "The page went up today with the placeholder title \"Episode 1\".",
+   "options": [
+    {
+     "v": "steer",
+     "label": "I will write the title and a line about it in the steer box (recommended)",
+     "c": "The council uses your words as written on the page and in the upload."
+    },
+    {
+     "v": "draft-from-audio",
+     "label": "Draft them from the audio",
+     "c": "You attach the audio in the podcast thread and the council drafts a title, summary and show notes for you to approve."
+    }
+   ]
+  },
+  {
+   "id": "fcm-p8-exchange-live",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "q": "The Friendcraft exchange is built and merged, but no friend can open it because it is not on the public web. How should it get there?",
+   "why_you": "A public web address and a storage service that may bill you are money and an outward act, and both are reserved to you.",
+   "not_before": "Board read 15 asked only whether to merge it. The Vercel refusal was found on 22 September, before this board existed.",
+   "options": [
+    {
+     "v": "dashboard",
+     "label": "I make an empty Vercel project and a Blob store, and the council uploads the three files (recommended)",
+     "c": "The link works the day you do the two steps written in deck/hosted/README.md. The council puts the steps on Your steps. Blob storage bills at your plan's rates."
+    },
+    {
+     "v": "council-tries",
+     "label": "The council tries to create the project itself with this session's Vercel connection",
+     "c": "If the connection can now create projects, nothing more is needed from you. If Vercel refuses again, the first option comes back to this board."
+    },
+    {
+     "v": "flirtcraft",
+     "label": "Host it inside flirtcraft's existing Vercel project",
+     "c": "No new project is needed. The friend's link carries flirtcraft's address, and the Architect dissents because the invitation then arrives under another product's name."
+    }
+   ]
+  },
+  {
+   "id": "fcm-p8-ruling-14",
+   "faces": [
+    "architect",
+    "regent",
+    "challenger"
+   ],
+   "pass": "friendcraft pass 8",
+   "q": "The book's outline was built on 22 August, before most of today's canon existed. Should it be rebuilt from the canon, patched, or left until a friend has played?",
+   "why_you": "It is the structure of your book, and the book track says replacing the outline should be your ruling, never a slow drift.",
+   "not_before": "It was asked in files on 22 and 27 August, before this board existed, and never here.",
+   "options": [
+    {
+     "v": "rederive",
+     "label": "Rebuild it from the canon, as a proposal for me to read (recommended by four faces)",
+     "c": "A session drafts a new outline. The old one stays in force until you approve the new one, and the first sections start from whichever you approve."
+    },
+    {
+     "v": "patch",
+     "label": "Patch the old outline to add Open Up",
+     "c": "Drafting can start on the existing slots straight away. The book track warns the book then argues for a structure it does not use."
+    },
+    {
+     "v": "hold",
+     "label": "Leave it until the first friend has played (the Challenger)",
+     "c": "No outline work until a real exchange gives the book its first worked example. Part 0 can still be drafted, because it needs no interview."
+    }
+   ]
+  },
+  {
+   "id": "fcm-p8-part-zero",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "friendcraft pass 8",
+   "q": "How should the first three sections of the book's opening part (your own story) get drafted?",
+   "why_you": "Book prose is reserved to you, and how you like to write is something only you know.",
+   "not_before": "The book track was waiting on the outline question, and nobody asked how drafting would happen once that closed.",
+   "options": [
+    {
+     "v": "talk-then-draft",
+     "label": "I talk a section through in a thread, a session drafts it from my words, and I rewrite it",
+     "c": "The draft starts from your own sentences, and you see every line before and after before anything goes in the manuscript."
+    },
+    {
+     "v": "i-write",
+     "label": "I write the first page myself, and the council reads it with the editorial pass",
+     "c": "The voice is yours from the first line. The council only reads and comments."
+    },
+    {
+     "v": "draft-from-repo",
+     "label": "A session drafts from my material already in the repo, and I rewrite",
+     "c": "Drafting starts without your time. The risk is the one pass seven found: a session writing your prose to a rule."
     }
    ]
   }
@@ -8503,6 +8745,29 @@
       "ship-address-per-batch",
       "ship-sales-alongside",
       "ship-plan-superseded"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-podcast-launch",
+   "name": "Launching the Podcast",
+   "repo": "flirtcraft",
+   "element": "fire",
+   "record": "flirtcraft pull request #9",
+   "intro": "It wants the Flirtcraft podcast heard: episode 1 on Spotify with its own cover art, and a page on the Flirtcraft site where people find it. The page is built and waits on a preview; the host, the cover and the episode's title are open.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "pod-host",
+      "pod-ep1-details"
+     ],
+     "positions": [
+      "pod-page-merges",
+      "pod-art-drafts",
+      "pod-upload-yours",
+      "board-all-work"
      ]
     }
    ]
