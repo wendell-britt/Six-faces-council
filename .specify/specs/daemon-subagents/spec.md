@@ -149,7 +149,7 @@ and not sent to the board, because nobody asked to build that alert.
 - [x] The skill's pass shape tells a face how to send its daemons while it drafts, and what to do when
   friendcraft cannot be attached.
 - [x] Nothing on Wendell's steps list.
-- [ ] Ships as a board position that merges on the next board read unless he flips it.
+- [x] Ships as a board position that merges on the next board read unless he flips it (`daemons-ship` stood, board read 10).
 
 ## Version three, after Wendell's message of 2026-10-02, late evening
 
