@@ -126,15 +126,6 @@
    "subagent_tokens": 28479
   }
  ],
- "positions": [
-  "wave-exchange",
-  "wave-ack-break",
-  "wave-feeling-word",
-  "wave-charge-build"
- ],
- "questions": [
-  "wave-checkin-depth"
- ],
  "dissent": true,
  "dissent_notes": [
   "Challenger: Acknowledge's glance before Welcome should cost the player their guard (position keeps it soft)",
@@ -145,5 +136,17 @@
   "Bot test on the built battle with four policies (always Acknowledge, Acknowledge before Welcome, release early, full WAVE): full WAVE beats Acknowledge-before-Welcome on HP left in at least four of five fights, and a full-WAVE fight lasts four to eight exchanges; due at the build's first report",
   "A playtest note from Wendell on whether choosing the feeling word felt like naming or like a form"
  ],
- "next": "After the round 7 read, build the WAVE battle from sprout main on a fresh branch in a new thread."
+ "next": "After the round 7 read, build the WAVE battle from sprout main on a fresh branch in a new thread.",
+ "withdrawn": "Not posted to the board. Another session posted the same research as fr-demo round 8 (wave-spirit-from-charge, wave-acknowledge-turn; /mnt/project-files/demo/wave-acknowledge-research.md) at 20:09, before this pass published. Its positions cover this pass's four; this record stays as a second opinion for the round 8 read.",
+ "positions_drafted": [
+  "wave-exchange",
+  "wave-ack-break",
+  "wave-feeling-word",
+  "wave-charge-build"
+ ],
+ "questions_drafted": [
+  "wave-checkin-depth"
+ ],
+ "positions": [],
+ "questions": []
 }
