@@ -1,0 +1,28 @@
+{
+ "id": "2026-10-06-board-read-demo-round-2",
+ "date": "2026-10-06",
+ "project": "six-faces-council",
+ "cause": "board-read",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "read_at": "2026-10-06T18:28:00Z",
+ "trigger": "Wendell, 2026-10-06: \"Updated the board\"",
+ "found_by": "board/unrecorded.py",
+ "positions": {
+  "demo-argyra-city": {
+   "status": "stands",
+   "saved_at": "2026-10-06T18:02:42.375Z",
+   "via": "battle:fr-demo"
+  },
+  "demo-daemon-count": {
+   "status": "stands",
+   "saved_at": "2026-10-06T18:03:00.967Z",
+   "via": "battle:fr-demo"
+  }
+ },
+ "acted_on": [
+  "#39 and #40 merged by the steward on their automerge labels (89d5116, a825d87)",
+  "fr-demo round 2: demo-argyra-city and demo-daemon-count stand; the demo battle's own thread takes them into round 3"
+ ]
+}
