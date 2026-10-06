@@ -3281,6 +3281,50 @@
    "auto": true,
    "pos": "Neutrality's job is the one your book gives it: detachment and perspective, the view that lets you see the whole. Its two questions are 'What are you stepping back from?' and 'From there, what can you see of the whole?'. The questions are the council's wording. This stands unless you flip it.",
    "why": "You asked for help with Neutrality's job, and your book already answers it: 'Neutrality's job is detachment and perspective—the view that lets you see the whole' (Mastering the Game of Allyship, compiled 29 May 2026). Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md, addendum"
+  },
+  {
+   "id": "oag-body-figure",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "ontology game body map",
+   "auto": true,
+   "pos": "The body figure in the ontology game has no sex, age, skin colour or face, stands with its arms a little away from its sides, and is clay-coloured on the game's dark background. Any player should be able to read it as their own body. This stands unless you flip it.",
+   "why": "Your message of 20:11 asks for 'a simulation of a person' that players point to on their own body; nothing in the record sets a look, so the figure stays neutral and any later look changes only build_figure.py. Source: bars-engine content/ontology-game/body/build_figure.py (pull request #261)"
+  },
+  {
+   "id": "oag-body-sides",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "ontology game body map",
+   "auto": true,
+   "pos": "Left and right on the figure are the figure's own, as if it were the player facing you, and the figure says so under it. A tap is named by the nearest of 44 places on the front, back, top and sides, such as 'my lower back' or 'my left shoulder blade'.",
+   "why": "A mirror would flip sides when the player turns the figure to its back, and the turn is needed to reach the back. Source: bars-engine content/ontology-game/body/body-map.js (pull request #261)"
+  },
+  {
+   "id": "oag-body-device-only",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "ontology game body map",
+   "auto": true,
+   "pos": "Body marks stay on the player's device, like the rest of the game's site progress, and keep only the place, the texture, the channel and the time, never the player's words. They are not in the code a client sends a coach yet; adding them is one change if you want coaches to see them. The guided demo saves no marks, and the player can clear them.",
+   "why": "Pull request #260 stores progress in the browser only and keeps belief text out of the coach code; the body map follows the same line. Source: bars-engine content/ontology-game/site-shim.js and body/body-map.js (pull requests #260 and #261)"
+  },
+  {
+   "id": "oag-body-over-time",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "ontology game body map",
+   "auto": true,
+   "pos": "'Where it has lived' shows every mark on the figure coloured by texture, older ones fainter, with a slider back through time, the places ranked by how often charge showed up there, and each sitting's path in order. One page load counts as one sitting. It opens from the scan screen once a mark exists, and on its own at masteringallyship.com/ontology-game/body.",
+   "why": "Your words: 'track somatically where their charge lives on their body and how it changes over time'. Source: bars-engine content/ontology-game/body/body-test.mjs, 20 checks passing (pull request #261)"
   }
  ],
  "questions": [
