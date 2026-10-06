@@ -1,11 +1,11 @@
-# Keeps open pull requests up to date with main, checks them, and merges the ones labelled "automerge".
+# Keeps open pull requests up to date with main, checks them, and merges the ready ones once their checks pass.
 # See docs/merging.md.
 name: steward
 on:
   push:
     branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened, labeled, ready_for_review]
+    types: [opened, synchronize, reopened, labeled, unlabeled, ready_for_review]
   schedule:
     - cron: "17 * * * *"
   workflow_dispatch:

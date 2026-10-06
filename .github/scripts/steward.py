@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
-"""Keep every open pull request mergeable with main, and merge the ones Wendell has labelled.
+"""Keep every open pull request mergeable with main, and merge the ready ones once their checks pass.
 
 Runs in the steward workflow (.github/workflows/steward.yml). For each open pull request whose branch
 lives in this repo:
 1. If main has moved ahead, merge main into the branch with a merge commit (never a rebase), using the
    merge drivers in .gitattributes, rebuild the board page if the repo has one, and push.
 2. Run the checks and post the result as the "steward" commit status on the branch head.
-3. If the pull request carries the "automerge" label, or changes only board data and ledger records without
-   removing a row (Wendell, 2026-10-04), is not a draft, and the checks pass, merge it with a merge commit. The label is Wendell's yes (his ruling, 2026-10-03: "On your label"); a session adds it
-   only when he says to merge. If main cannot be merged in cleanly, the branch is left untouched
+3. If the pull request is not a draft and the checks pass, merge it with a merge commit. Wendell, 2026-10-06:
+   "having to manually put the label isn't working for me. Is there a way to automate this part of the process?"
+   This replaces his label ruling of 2026-10-03 ("On your label"). Two things still stop a merge: the "hold" label,
+   which anyone can add to keep a pull request open, and a change Wendell reviews himself: council/faces.yaml, which
+   changes only by his ruling, and the daily session's daily/ branches. Those still wait for his "automerge" label. If main cannot be merged in cleanly, the branch is left untouched
 and the pull request gets one comment naming the files, for the session that owns the branch to resolve.
 """
 import json
@@ -19,6 +21,10 @@ import sys
 REPO = os.environ["GITHUB_REPOSITORY"]
 CONFLICT_MARK = "<!-- steward:conflict -->"
 LABEL = "automerge"
+HOLD = "hold"
+# Files that change only by Wendell's ruling (CLAUDE.md, "Where the rest lives"). A pull request touching one still
+# waits for his "automerge" label.
+RESERVED = ("council/faces.yaml",)
 # Board-only pull requests merge without the label (Wendell, 2026-10-04: "make sure we're automatically merging when we
 # add rows"): every changed file is board data or a ledger record, the checks pass, and no row on main is removed.
 BOARD_ONLY = ("board/board_data.json", "board/council-board.html")
@@ -105,8 +111,13 @@ def board_only():
         return False
 
 
+def touches_reserved():
+    files = sh("git", "diff", "--name-only", "origin/main...HEAD").stdout.split()
+    return [f for f in files if f in RESERVED]
+
+
 def tend(pr):
-    """Bring one pull request up to date, check it, and merge it if labelled. Returns True if merged."""
+    """Bring one pull request up to date, check it, and merge it if it is ready. Returns True if merged."""
     head = pr["headRefName"]
     sh("git", "fetch", "-q", "origin", "main", head)
     sh("git", "checkout", "-q", "-B", "steward-work", f"origin/{head}")
@@ -133,8 +144,15 @@ def tend(pr):
     problems = checks()
     set_status(sha, problems)
     print(f"#{pr['number']}: {'; '.join(problems) or 'checks pass'}")
-    labelled = LABEL in {l["name"] for l in pr["labels"]}
-    if (labelled or board_only()) and not pr["isDraft"] and not problems:
+    labels = {l["name"] for l in pr["labels"]}
+    reserved = touches_reserved()
+    if reserved and LABEL not in labels:
+        print(f"#{pr['number']}: changes {', '.join(reserved)}; waits for Wendell's {LABEL} label")
+    # The daily session's pull requests keep waiting for his label: its limits (fm-limits, stood at board read 25)
+    # say its changes are proposals he reviews.
+    daily = head.startswith("daily/")
+    ready = HOLD not in labels and (LABEL in labels or ((not reserved and not daily) or board_only()))
+    if ready and not pr["isDraft"] and not problems:
         r = sh("gh", "pr", "merge", str(pr["number"]), "--merge", "--match-head-commit", sha, check=False)
         if r.returncode == 0:
             print(f"#{pr['number']}: merged into main")
@@ -156,7 +174,9 @@ def main():
         sh("cp", ".gitattributes", os.path.join(sh("git", "rev-parse", "--git-dir").stdout.strip(), "info", "attributes"))
     sh("git", "config", "merge.ours.driver", "true")
     sh("gh", "label", "create", LABEL, "--color", "0e8a16", "--force",
-       "--description", "Wendell's yes: the steward merges this once its checks pass", check=False)
+       "--description", "Wendell's yes, needed only for a change to council/faces.yaml", check=False)
+    sh("gh", "label", "create", HOLD, "--color", "b60205", "--force",
+       "--description", "Keeps this pull request open: the steward does not merge it", check=False)
     # A merge moves main, and a push or merge made by this workflow starts no new run, so after each
     # merge go round again to bring the other branches up to the new main.
     for _ in range(10):
