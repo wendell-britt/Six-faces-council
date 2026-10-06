@@ -79,6 +79,11 @@ CLAUDE.md, this file and the board.
   `wave-seize-validate` stand unless he flips them; the build then takes Root's rules from sprout
   `root-fight/index.html`. All three stood at board read 2038 (ef6c341), so the WAVE build can start in a new
   thread on sprout #24's branch.
+  Round 10 (`council/ledger/2026-10-06-demo-round10-build.json`): the WAVE battle is built in sprout #26 (sprout #24
+  had merged, so it is a new branch, `claude/project-thread-eb8lu4`). Rules in `slice/wave.js`, tests in
+  `npm run test:wave`. The build's own choices are positions `wave-offer-opens`, `wave-exhale-ends`, `wave-urges-all`
+  and `wave-welcome-cost`, standing unless he flips them. Next: his playtest of `?road`; Welcome's cost against
+  carried HP is the first balance check.
 
 ## Open on 2026-10-06, from the board pickup thread
 
