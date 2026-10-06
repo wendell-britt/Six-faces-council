@@ -30,6 +30,7 @@ What the first firings showed, 2026-10-06:
   target fired once into a fresh session with no repository (it stalled asking to add one), then into the coordinator
   itself. The prompt covers both: a fresh session finds the coordinator by its title with `list_sessions` and passes
   the message on.
+- The firing at 20:01 UTC reached the coordinator, which started a Board read thread.
 - A firing's `text` arrives as a second message after the prompt, so the prompt must not wait for it. The rows are in
   `pickup/last` too.
 - Only the conversation a routine posts into can change its prompt. To change this one, delete it and create a new
@@ -40,4 +41,4 @@ What the first firings showed, 2026-10-06:
 
 The daily routine (`trig_01F8fDdkjYEeMCfdozj6w3tt`) gets a step 1b: save the store, run `board/unrecorded.py`, and
 if anything is unrecorded, fire the pickup routine and write `pickup/last` with `via: "daily"`. Only the standing
-daily session can change that prompt, so the thread asked it to on 2026-10-06; `get_trigger` shows whether it did.
+daily session can change that prompt; the thread asked it to, and it did, on 2026-10-06.

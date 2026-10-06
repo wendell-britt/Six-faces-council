@@ -57,6 +57,5 @@ CLAUDE.md, this file and the board.
   masteringallyship.com, so take the look from bars-engine's site code. Three 3000x3000 drafts, then a board question.
 - **Board pickup (`board-auto-pickup`):** built on 2026-10-06; docs/pickup.md has how it works. The board's Send to
   Claude button fires routine `trig_01DpRsDM94Cnv2neyDVkBNMb`, which wakes the coordinator to start a board-read
-  thread. Open: the daily routine's step 1b waits on the standing daily session applying it (asked by
-  send_message; check with `get_trigger trig_01F8fDdkjYEeMCfdozj6w3tt`), and the routine names the coordinator's
-  session, so when the coordinator is replaced, check it still arrives.
+  thread; its first firing did, at 20:01 UTC. The daily routine has step 1b, the safety net. Open: the routine
+  names the coordinator's session, so when the coordinator is replaced, check it still arrives.
