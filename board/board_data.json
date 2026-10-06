@@ -9223,8 +9223,8 @@
    "name": "Launching the Podcast",
    "repo": "flirtcraft",
    "element": "fire",
-   "record": "flirtcraft pull request #9",
-   "intro": "It wants the Flirtcraft podcast heard: episode 1 on Spotify with its own cover art, and a page on the Flirtcraft site where people find it. The page is built and waits on a preview; the host, the cover and the episode's title are open.",
+   "record": "flirtcraft pull request #9 (merged)",
+   "intro": "It wants the Flirtcraft podcast heard: episode 1 on Spotify with its own cover art, and a page on the Flirtcraft site where people find it. The page is live at /podcast. Spotify for Creators hosts the show, the cover follows Mastering Allyship's look, and the episode's title is drafted from the audio.",
    "rounds": [
     {
      "n": 1,
@@ -9239,6 +9239,15 @@
       "board-all-work",
       "steps-phone-view",
       "pod-zoom-phone"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [],
+     "positions": [
+      "pod-art-ma",
+      "pod-ep1-from-audio",
+      "board-auto-pickup"
      ]
     }
    ]
