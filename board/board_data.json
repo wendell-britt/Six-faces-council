@@ -3169,6 +3169,28 @@
    "auto": true,
    "pos": "The Send to Claude button is on the board. Once you save anything, a bar at the bottom offers it; pressing it wakes the project's Claude, which starts a board read. The daily run checks for anything nobody sent and passes it on the same way.",
    "why": "It carries out board-auto-pickup, which stood. Its first firing at 20:01 UTC started a board read in the project. The first time you press it, the page asks to use your Claude Code Remote connection; allow it. Source: six-faces-council#44, docs/pickup.md"
+  },
+  {
+   "id": "wave-spirit-from-charge",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 8",
+   "auto": true,
+   "pos": "In prompted and integrated modes the daemon is made from the charge the player brings, not drawn from a table. The first Welcome asks which feeling is moving and how strong it is (a little, a lot, too much). The feeling sets the daemon's type on the chart, as wave-offered-feeling has it, and the strength sets its HP and how hard it pushes. The second Welcome asks what the charge is pushing them to do, in the daemons' aims put plainly, such as 'get away from it', 'fix it', 'explain it' or 'pass it to someone'. That answer decides which daemon it is. The belief of the block it came from is the line it speaks. Story mode keeps the random table. How many urges show at once is a placeholder until a playtest. This stands unless you flip it.",
+   "why": "Your steer on wave-acknowledge: 'we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing'. Yale's Mood Meter locates a feeling with two questions, what it is and how much energy it has. Each daemon in daemons.yaml is defined by its aim, what it does with the feeling, so the urge picks the daemon and the feeling picks its type. Research: /mnt/project-files/demo/wave-acknowledge-research.md"
+  },
+  {
+   "id": "wave-acknowledge-turn",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 8",
+   "auto": true,
+   "pos": "The battle runs one move each, and the daemon shows its next push before the player chooses, as Slay the Spire shows an enemy's intent. Acknowledge is the battle's main attack and it always lands. The player names the feeling in one word, picked from three the game offers inside the feeling they gave, and every one of the three is right. The hit then shows the daemon's name and type. Its strength follows the type chart and how much Welcome has shown. An Acknowledge made while the daemon winds up a big push stops that push and gives the player another turn, as hitting a weakness does in Shin Megami Tensei, so reading the daemon pays in turns. The word the player chose goes on the daemon's page in the Witness Book. This replaces wave-acknowledge. This stands unless you flip it.",
+   "why": "Your steer: 'we want it to feel like turn based battle'. Slay the Spire's shown intent and Shin Megami Tensei's extra turns are what make their turns a puzzle to read. Lieberman's 2007 study found that putting a feeling into a word calmed the amygdala, so the word names the player's feeling and no answer is wrong. The bot test from round 5 still applies. Research: /mnt/project-files/demo/wave-acknowledge-research.md"
   }
  ],
  "questions": [
@@ -9343,6 +9365,14 @@
      "questions": [],
      "positions": [
       "wave-ack-research"
+     ]
+    },
+    {
+     "n": 8,
+     "questions": [],
+     "positions": [
+      "wave-spirit-from-charge",
+      "wave-acknowledge-turn"
      ]
     }
    ]
