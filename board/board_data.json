@@ -5850,6 +5850,40 @@
      "c": "Each integration raises one stat tied to that daemon. Cheapest to build, but gives the player nothing new to do."
     }
    ]
+  },
+  {
+   "id": "fcm-p8c-domain",
+   "faces": [
+    "architect",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "friendcraft pass 8, read 2",
+   "q": "Which address should Friendcraft have? friendcraft.com and friendcraft.club are taken. These are free, with Vercel's prices today:",
+   "why_you": "Buying a domain is money, which is reserved to you. Nothing is bought until you choose one here.",
+   "not_before": "You chose its own address on fcm-p8b-exchange-where, and the prices were looked up after that (Vercel, 2026-10-06).",
+   "options": [
+    {
+     "v": "friendcraft.app",
+     "label": "friendcraft.app: $9.99 the first year, then $15 a year (recommended)",
+     "c": "It matches flirtcraft.app, so the two read as one family. The council buys it in Vercel once you choose this and shows you the final quote first."
+    },
+    {
+     "v": "playfriendcraft.com",
+     "label": "playfriendcraft.com: $11.25 a year",
+     "c": "A .com address that some people trust more, with a longer name to type."
+    },
+    {
+     "v": "friendcraft.co",
+     "label": "friendcraft.co: $29.99 the first year, then $24.80 a year",
+     "c": "A short name, and people sometimes type .com by mistake and land on the taken friendcraft.com."
+    },
+    {
+     "v": "later",
+     "label": "Buy nothing until the redesign is ready",
+     "c": "The name stays unbought, and someone else could register it meanwhile."
+    }
+   ]
   }
  ],
  "causes": [
@@ -7736,21 +7770,21 @@
    },
    "fcm-p8b-redesign": {
     "decision": "stands",
-    "label": "Stands",
+    "label": "Stands: design pass in its own thread",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    },
    "fcm-p8b-interview": {
     "decision": "stands",
-    "label": "Stands",
+    "label": "Stands: story interview in its own thread",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    },
    "fcm-p8b-outline": {
     "decision": "stands",
-    "label": "Stands",
+    "label": "Stands: outline rebuild in its own thread",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    },
    "wave-damage": {
     "decision": "stands",
@@ -8399,7 +8433,7 @@
     "decision": "own-address",
     "label": "Give Friendcraft its own address",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    },
    "wave-integrate-gift": {
     "decision": "steer",
