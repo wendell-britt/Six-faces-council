@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-06",
+  "pass": "council/passes/6FACE_PASS12_2026-10-06.md",
+  "battle": "fr-book-shipping",
+  "repo": "mtgoa",
+  "called_by": "Wendell, MTGOA project thread, 2026-10-06T18:56:45Z",
+  "question": "This should be going through our 6 game masters process and land on the council board.\n\nWe’re doing rolling shipping through KDP in batches in alignment with the plan for /ally/mom",
+  "board_read_at": "2026-10-06T18:58:00Z",
+  "casts": {
+    "shaman": "35 Sunrise -> 21 Bite",
+    "architect": "9 Restraint -> 29 Depths",
+    "challenger": "15 Understatement -> 53 Emergence",
+    "regent": "64 Almost -> 19 Spring",
+    "diplomat": "34 Vigour -> 1 Unbroken",
+    "sage": "50 The Cauldron -> 57 Persuasion"
+  },
+  "verdicts": {
+    "shaman": "Batches are right; name the cadence to every backer before batch one and announce each batch on its day.",
+    "architect": "One monthly batch split 50/50 per the budget; Gumroad preorders ship from the new-sales half; the pace levers are Wendell's.",
+    "challenger": "Ship batch one and read its real cost; the budget's pace means a 2029 tail. Dissents: recycle from batch one.",
+    "regent": "Follow the budget, announce per batch, confirm addresses per batch; the backer order is reserved.",
+    "diplomat": "One message to backers with a reply path; releases welcomed, never asked. Dissents: hold signed sales until the first backer batch lands."
+  },
+  "unanimous": false,
+  "rows": {
+    "positions": ["ship-batches-monthly", "ship-gumroad-first", "ship-say-cadence", "ship-address-per-batch", "ship-sales-alongside", "ship-plan-superseded"],
+    "questions": ["ship-order", "ship-pace"],
+    "steps_list": "book-shipping"
+  },
+  "ruling": null
+}
