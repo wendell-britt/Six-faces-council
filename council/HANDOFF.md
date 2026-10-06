@@ -31,3 +31,17 @@ CLAUDE.md, this file and the board.
   repo access; the short-sessions rule came later. A board read should weigh the two: the routine could fire a
   fresh session once the repo is attached to it, or the standing session could be replaced by a new one.
   Nothing has been changed; the routine still wakes this session.
+
+## Open on 2026-10-06, from the Friendcraft next-steps thread (friendcraft pass 8)
+
+- **Three pieces of work, each its own thread.** Wendell's board answers (friendcraft
+  `council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json`) set them:
+  `fcm-p8b-redesign` (Friendcraft's design pass: work like flirtcraft, BARs for friendship development, rethink the
+  basic moves with emotional alchemy; start with a six-face pass), `fcm-p8b-interview` (the council interviews him
+  about his own stories for Part 0, one story per thread), and `fcm-p8b-outline` (re-derive the book outline from
+  `canon/` as a proposal). They stand unless he flips them on the board.
+- **Waiting on him:** `fcm-p8b-exchange-where` (today's exchange at flirtcraft.app/friend now, wait for the
+  redesign, or its own address).
+- **Lessons pending** for the Challenger and the Shaman are in that ledger record, for `collect_lessons.py`.
+- friendcraft-manuacript #28 holds the pass, the ledger records and the decision-log entry (rulings 14 and 39
+  closed).
