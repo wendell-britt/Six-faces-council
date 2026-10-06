@@ -90,10 +90,12 @@ CLAUDE.md, this file and the board.
 - **Send works again** (2026-10-06 23:24 UTC, on Wendell's word in chat): the board declares `db` and `mcp`
   (Claude Code Remote, `fire_trigger`). Republish without `capabilities` so the grant carries forward.
   `PICKUP_TRIGGER` is `trig_01L138vKTaN9MSJoFKRmaBNx`, which wakes the council project's coordinator.
-- **Still open:** Wendell chose a fresh session per Send (`pickup-where` A). A project cannot create one; make it from
-  a session outside a project, then swap the id in `PICKUP_TRIGGER`. The daily routine's step 1b still fires the old
-  routine `trig_01DpRsDM94Cnv2neyDVkBNMb` into the Flirtcraft coordinator; only the standing daily session can change
-  that prompt to the new id.
+- **The fresh-session routine exists but is not in use:** the daily session made
+  `trig_01Q9mMcVwR4MCqHQzUHwcmiS` (2026-10-06 23:30 UTC, outside any project). Its environment shows no repository,
+  and the first daily routine failed the same way, so `PICKUP_TRIGGER` stays on `trig_01L138vKTaN9MSJoFKRmaBNx`,
+  which Wendell's Send reached at 23:26. Once Wendell attaches wendell-britt/six-faces-council to that routine on its
+  claude.ai page, fire it once with nothing unrecorded, then swap the id in `PICKUP_TRIGGER` and docs/pickup.md.
+  The daily routine's step 1b now reads `PICKUP_TRIGGER`, so it follows the swap.
 - **Work the answers begin:** `wave-acknowledge-turn` overruled (steer: a trigram move is the acknowledgement,
   welcoming is listening) for the WAVE thread; `oag-faces-names` chose plain words, steer: a popup page per face,
   for the ontology game thread.

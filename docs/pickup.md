@@ -27,8 +27,9 @@ button and the daily run fire it. It wakes the coordinator of the 6 face game ma
 
 Wendell chose a fresh session per Send (`pickup-where`, board read 2004) so the pickup belongs to no project. A
 routine made from a project cannot start fresh sessions (create_trigger refuses `create_new_session_on_fire` there),
-so the council project's coordinator carries it until a fresh-session routine is made outside a project, from a
-plain Claude Code session or the routines page. Its environment must carry the council repo.
+so the council project's coordinator carries it. The standing daily session made the fresh-session routine
+`trig_01Q9mMcVwR4MCqHQzUHwcmiS` outside a project; it goes into `PICKUP_TRIGGER` once its environment carries the
+council repo and one test firing has worked. The daily routine's step 1b fires whatever `PICKUP_TRIGGER` names.
 
 The page lost its `mcp` grant once, through a republish that passed `capabilities` with only `db`; the button then
 showed "This view cannot reach Claude". Wendell restored it on 2026-10-06 (`pickup-send-permission`, then in chat at 23:23
