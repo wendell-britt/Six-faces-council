@@ -7664,6 +7664,96 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "pod-page-merges": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "pod-art-drafts": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "pod-upload-yours": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "board-all-work": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "steps-phone-view": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "pod-zoom-phone": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "fcm-p8b-redesign": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "fcm-p8b-interview": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "fcm-p8b-outline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "wave-damage": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "wave-reveal": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "wave-naming": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "wave-record": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "wave-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "wave-release-grounds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
    }
   },
   "questions": {
@@ -8259,6 +8349,30 @@
     "label": "Build a way for the council to interview me about these stories",
     "recorded": "2026-10-06",
     "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "pod-host": {
+    "decision": "spotify-creators",
+    "label": "Spotify for Creators",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "pod-ep1-details": {
+    "decision": "draft-from-audio",
+    "label": "Draft them from the audio",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "fcm-p8b-exchange-where": {
+    "decision": "own-address",
+    "label": "Give Friendcraft its own address",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "wave-integrate-gift": {
+    "decision": "steer",
+    "label": "Steered",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
    }
   },
   "causes": {

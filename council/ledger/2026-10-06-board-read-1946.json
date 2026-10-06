@@ -1,0 +1,146 @@
+{
+ "date": "2026-10-06",
+ "read_at": "2026-10-06T19:47:00Z",
+ "note": "Board read on Wendell's \"Update the board\" in the WAVE battle brainstorm thread. fr-demo round 5 belongs to that thread; the fr-podcast-launch and fcm-p8b rows belong to their own threads, which act on the steers.",
+ "answers": {
+  "pod-host": {
+   "kind": "question",
+   "savedAt": "2026-10-06T19:22:06.681Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "choice": "spotify-creators"
+  },
+  "pod-ep1-details": {
+   "kind": "question",
+   "savedAt": "2026-10-06T19:22:14.416Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "choice": "draft-from-audio"
+  },
+  "pod-page-merges": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:22:18.535Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "pod-art-drafts": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:22:55.781Z",
+   "steer": "I think it should be more like Mastering Allyship. That’s the most robust one and flirtcraft really hasn’t gotten a design pass yet ",
+   "via": "battle:fr-podcast-launch",
+   "status": "overrule"
+  },
+  "pod-upload-yours": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:23:04.822Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "board-all-work": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:23:10.407Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "steps-phone-view": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:23:16.526Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "pod-zoom-phone": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:23:21.359Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "fcm-p8b-exchange-where": {
+   "kind": "question",
+   "savedAt": "2026-10-06T19:28:21.864Z",
+   "steer": "",
+   "choice": "own-address"
+  },
+  "fcm-p8b-redesign": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:28:26.670Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "fcm-p8b-interview": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:28:32.637Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "fcm-p8b-outline": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:28:36.866Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "wave-integrate-gift": {
+   "kind": "question",
+   "savedAt": "2026-10-06T19:42:34.717Z",
+   "steer": "I think all 3 but in order of relationship to the daemon.\n\nI think it starts out as loot for the sphere grid \n\nThen it leads to moves \n\nAnd the highest level is as a companion ",
+   "via": "battle:fr-demo",
+   "choice": ""
+  },
+  "wave-damage": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:42:49.719Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-reveal": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:43:58.583Z",
+   "steer": "Very close. I think for this to be exactly how I want it at least in one game mode the player has to offer the feeling associated with the charge IN THEM. In the story game the charges can be randomized as player are learning the mechanics of metabolizing charge ",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-naming": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:44:46.476Z",
+   "steer": "I don’t know how we’d come up with the daemon names or how this would connect in replay ability. It’s an interesting concept built strays too far from what makes pokemon work ",
+   "via": "battle:fr-demo",
+   "status": "overrule"
+  },
+  "wave-record": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:44:57.726Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-order": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:45:31.979Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-release-grounds": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:45:41.126Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  }
+ },
+ "fr-demo": "Round 5: wave-damage, wave-record, wave-order and wave-release-grounds stood. wave-reveal stood with a steer: in at least one game mode the player offers the feeling of the charge in themselves; in the story game charges stay random while players learn to metabolize charge. wave-naming overruled: naming the daemon from a list strays too far from what makes Pokemon work and does not serve replay. wave-integrate-gift steered: all three, in order of the relationship to the daemon: loot for the sphere grid first, then moves, then a companion at the highest level.",
+ "lessons_pending": [
+  {
+   "face": "architect",
+   "source": "position wave-naming overruled, fr-demo round 5",
+   "wendell": "I don’t know how we’d come up with the daemon names or how this would connect in replay ability. It’s an interesting concept built strays too far from what makes pokemon work ",
+   "lesson": "A mechanic borrowed from the book must still play like the genre it sits in. Before inventing a new verb for a battle, check what makes the reference game replayable and keep it."
+  }
+ ],
+ "next": "Round 6 positions: the Acknowledge step without a naming quiz, the offered-feeling mode, and the integration ladder (grid loot, moves, companion). Then build the battle on sprout#24."
+}
