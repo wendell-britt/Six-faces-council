@@ -31,8 +31,8 @@ so the council project's coordinator carries it until a fresh-session routine is
 plain Claude Code session or the routines page. Its environment must carry the council repo.
 
 The page lost its `mcp` grant once, through a republish that passed `capabilities` with only `db`; the button then
-showed "This view cannot reach Claude". Wendell said yes to restoring it on 2026-10-06 (`pickup-send-permission`); the
-publish with the grant still needs his approval in the session that makes it. Once restored, republish without
+showed "This view cannot reach Claude". Wendell restored it on 2026-10-06 (`pickup-send-permission`, then in chat at 23:23
+UTC, because the publish with a connector grant needs his word in the session that makes it). Republish without
 `capabilities`.
 
 What the first firings showed, 2026-10-06:

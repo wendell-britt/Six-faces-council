@@ -87,11 +87,9 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-06, from the board pickup thread
 
-- **Send still cannot fire.** Wendell answered yes to `pickup-send-permission` (board read 2004), but publishing the
-  board with the `mcp` grant was refused twice by the session's permission check, which wants the grant approved in
-  the session itself. Once he allows it, republish with
-  `{"db": {}, "mcp": {"servers": [{"server": "Claude Code Remote", "tools": ["fire_trigger"]}]}}`. `PICKUP_TRIGGER`
-  is already `trig_01L138vKTaN9MSJoFKRmaBNx`, which wakes the council project's coordinator. See docs/pickup.md.
+- **Send works again** (2026-10-06 23:24 UTC, on Wendell's word in chat): the board declares `db` and `mcp`
+  (Claude Code Remote, `fire_trigger`). Republish without `capabilities` so the grant carries forward.
+  `PICKUP_TRIGGER` is `trig_01L138vKTaN9MSJoFKRmaBNx`, which wakes the council project's coordinator.
 - **Still open:** Wendell chose a fresh session per Send (`pickup-where` A). A project cannot create one; make it from
   a session outside a project, then swap the id in `PICKUP_TRIGGER`. The daily routine's step 1b still fires the old
   routine `trig_01DpRsDM94Cnv2neyDVkBNMb` into the Flirtcraft coordinator; only the standing daily session can change
