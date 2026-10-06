@@ -2699,6 +2699,83 @@
    "auto": true,
    "pos": "More inner moves come later from the grid, as your ranks ruling has it: branches unlock moves. The 3-2-1 and the Five-Move Form are the next sets, and a player carries four moves at a time and swaps them at the ring. The demo ships WAVE only. This stands unless you flip it.",
    "why": "fr-ranks-and-badges round 5 steer: 'branches unlock MOVES plus a subtype's stat build'. The 3-2-1 and the Five-Move Form are practices the book already teaches (APPENDIX_C_KEY_TERMS.md)."
+  },
+  {
+   "id": "oag-map-output",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "ontology game 1",
+   "auto": true,
+   "pos": "The Ontology Alchemy Game ends with a map of the player's route, drawn on the five-element wheel. Each channel visited gets a numbered stop with its face and where it landed. Flow Forward draws a solid arrow and Tempering a dashed one; a dead end draws a stub, a thread set aside a hollow mark, Go Deeper a ring, and each WAVE block a small loop. The map leads the Cycle Complete screen, with the last belief the player held beneath it and a button to save it as an image. This stands unless you flip it.",
+   "why": "Your note of 6 October: 'the output should be a map of where the player has gone'. The game already keeps every stop it draws. Source: bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md (pull request #260)"
+  },
+  {
+   "id": "oag-map-private",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "ontology game 1",
+   "auto": true,
+   "pos": "The belief under the map is drawn on screen and in the saved image only. The game never stores it. This stands unless you flip it.",
+   "why": "The game's private mode stores no belief text (ruled 24 September). Source: bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md"
+  },
+  {
+   "id": "oag-wave-breath",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "ontology game 1",
+   "auto": true,
+   "pos": "Each WAVE step is one guided breath, four seconds in and six out, and its continue button appears when the exhale ends. The breath lengths are the council's placeholder numbers. This stands unless you flip it.",
+   "why": "Your note: 'one is supposed to breathe through all the steps'. Pace stays an offer rather than a lock, per the Shaman's lesson of 9 September. Source: bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md"
+  },
+  {
+   "id": "oag-wave-ladder",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "ontology game 1",
+   "auto": true,
+   "pos": "The A in WAVE becomes a ladder: Acknowledge, Allow, Accept, Appreciate, one breath per rung, climbed in order. The player may stop at any rung with 'This is as far as I can honestly go today', and stopping counts as a complete WAVE. This stands unless you flip it.",
+   "why": "Your note named the four rungs and said each can be blocked. The live game offered a choice of three. Source: bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md"
+  },
+  {
+   "id": "oag-wave-blocks",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger"
+   ],
+   "pass": "ontology game 1",
+   "auto": true,
+   "pos": "Every WAVE step and every rung offers 'Something's in the way'. Choosing it opens the self-sabotage frame with a skip, then the block work, then returns the player to the exact step where the block came up, with the outer charge unchanged. Blocks can nest, and each one returns to its own step. This stands unless you flip it.",
+   "why": "Your note: 'it should route them back to where they started when the block emerged'. The frame is your ruling of 9 September: 'if there IS a block we should assume self-sabotage, with the given choice to skip'. Source: bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md"
+  },
+  {
+   "id": "oag-wave-depth",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "ontology game 1",
+   "auto": true,
+   "pos": "At three nested blocks the game names the pattern once and keeps stop and pause in reach. It does not cap the depth. This stands unless you flip it.",
+   "why": "The game already reflects back at three named threads (23 September); three is the council's number. Source: bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md"
+  },
+  {
+   "id": "oag-book-untouched",
+   "faces": [
+    "regent"
+   ],
+   "pass": "ontology game 1",
+   "auto": true,
+   "pos": "The book's WAVE stays Welcome, Acknowledge, Validate, Exhale until you edit the manuscript. The game uses your four-rung A and says so in a code comment. This stands unless you flip it.",
+   "why": "Canonical prose is reserved to you. Source: Mastering the Game of Allyship appendices/APPENDIX_C_KEY_TERMS.md; bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md"
   }
  ],
  "questions": [
@@ -5168,6 +5245,34 @@
      "v": "later",
      "label": "C. No editor yet",
      "c": "Scripts and the stager only; you review by watching and steering in words. Cheapest now; the editor waits until there are enough scenes to need it."
+    }
+   ]
+  },
+  {
+   "id": "oag-block-work",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "ontology game 1",
+   "q": "How should the game work a blocked WAVE step?",
+   "why_you": "It is a choice about what the practice is. The record holds the game's own block cycle, and your self-sabotage ruling points toward meeting the voice in the way. The Shaman dissents from the other faces here.",
+   "not_before": "The blocked step did not exist until your note of 6 October. Meanwhile the build runs on A, and B or C would replace only the block work, not the return or the map.",
+   "options": [
+    {
+     "v": "cycle",
+     "label": "A. Through the game's own cycle (recommended)",
+     "c": "The player finds the block in the body, names its channel and face, holds a true belief until it shifts, then returns to the step. It builds now on the engine the game already has."
+    },
+    {
+     "v": "small-wave",
+     "label": "B. Through a smaller WAVE on the block",
+     "c": "The player welcomes and breathes with what is in the way, then returns. Quicker and gentler, and it never names a channel or a face."
+    },
+    {
+     "v": "daemon",
+     "label": "C. By meeting the voice that is blocking",
+     "c": "A short interview with the daemon in the way (its job, who it works for, whether it will step aside), then the return. Closest to Big Mind, and it waits on the daemon ontology you have not ruled yet."
     }
    ]
   }
