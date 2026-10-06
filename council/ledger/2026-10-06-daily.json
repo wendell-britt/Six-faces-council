@@ -1,0 +1,18 @@
+{
+ "id": "2026-10-06-daily",
+ "date": "2026-10-06",
+ "recorded_at": "2026-10-06T15:48:17+00:00",
+ "project": "six-faces-council",
+ "cause": "daily-move",
+ "convened_by": "routine",
+ "invoked_from": "claude-code",
+ "level": 1,
+ "move": "grow",
+ "found": "No tests covered the board merge code, which lost rows twice on 2026-10-04",
+ "finished": "Twelve regression tests in tests/test_board_merge.py, run by the steward's checks",
+ "branch": "daily/2026-10-06-grow",
+ "pull_request": "https://github.com/wendell-britt/Six-faces-council/pull/40",
+ "rows": [
+  "dy-2026-10-06-grow"
+ ]
+}
