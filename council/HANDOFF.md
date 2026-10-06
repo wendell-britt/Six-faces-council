@@ -45,3 +45,18 @@ CLAUDE.md, this file and the board.
 - **Lessons pending** for the Challenger and the Shaman are in that ledger record, for `collect_lessons.py`.
 - friendcraft-manuacript #28 holds the pass, the ledger records and the decision-log entry (rulings 14 and 39
   closed).
+
+## Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)
+
+- **Podcast page:** flirtcraft #9 merged (b5284f5). The player and the Listen on Spotify button go in by setting
+  `embedUrl` and the Spotify `href` in flirtcraft `lib/podcast.ts` once Wendell pastes the episode link (step 5 of
+  Your steps list `podcast-spotify`).
+- **Episode 1 copy (`pod-ep1-from-audio`):** waits on step 2, Wendell attaching the audio in the Podcast page thread.
+  Then draft the show description, title and notes, and put the title on the board as a question.
+- **Cover art (`pod-art-ma`):** needs its own thread with bars-engine added; this container's proxy refuses
+  masteringallyship.com, so take the look from bars-engine's site code. Three 3000x3000 drafts, then a board question.
+- **Board pickup (`board-auto-pickup`):** build in its own thread once the row stands. Plan: a poke-only routine
+  (`create_trigger`, `create_new_session_on_fire`, no cron) that runs a board read with `board/unrecorded.py`; a Send
+  to Claude button in `board/template.html` that fires it through the `mcp` capability (connector Claude Code Remote,
+  tool `fire_trigger`), shown after a save; and a `board/unrecorded.py` step added to the daily routine's prompt
+  (`trig_01F8fDdkjYEeMCfdozj6w3tt`). Read the `fire_trigger` schema before writing the page call.
