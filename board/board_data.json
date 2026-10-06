@@ -3136,6 +3136,28 @@
    "auto": true,
    "pos": "Saving on the board will wake Claude. A Send to Claude button on the board starts a board read in a new thread, which records your answers and passes each one to the thread that owns it. The daily run also runs board/unrecorded.py, so any answer nobody picked up is caught within a day.",
    "why": "Your question in the podcast thread: \"What triggers you to check the board and how can we automate that?\" Nothing does today. Your podcast answers sat unread for half an hour, and the daily run of 2026-10-04 found 23 saves no session had read. Source: board/unrecorded.py (six-faces-council)"
+  },
+  {
+   "id": "pod-art-recolor",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The council redraws the three covers with one strong color change from Mastering Allyship's orange to violet, keeping each layout, so the show reads as its own and still as a sibling of the book. The new drafts replace the old ones in pod-cover-pick before you pick. This stands unless you flip it.",
+   "why": "Your steer on pod-art-ma: \"I think it should make one strong color change so people can differentiate it from MTGOA.\" Source: council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+  },
+  {
+   "id": "wave-ack-research",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 7",
+   "auto": true,
+   "pos": "The council researches two questions before Acknowledge comes back: what makes a turn-based battle feel like one, and how a game can generate a spirit that matches the charge the player is feeling right now. It brings Acknowledge back as a new position built on that research. The offered-feeling mode and the integration ladder go ahead meanwhile. This stands unless you flip it.",
+   "why": "Your overrule of wave-acknowledge: \"I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing\". Source: council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
   }
  ],
  "questions": [
@@ -5917,6 +5939,66 @@
      "c": "The name stays unbought, and someone else could register it meanwhile."
     }
    ]
+  },
+  {
+   "id": "pod-cover-pick",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast",
+   "q": "Which cover should the Flirtcraft podcast use? The council recommends A, Neon hex.",
+   "why_you": "The cover is the show's face on Spotify and under your name, and choosing between looks is a matter of taste only you hold.",
+   "not_before": "Redrawn today, 2026-10-06, after your steer on pod-art-ma at board read 2002: \"one strong color change so people can differentiate it from MTGOA\". Mastering Allyship's orange to pink to violet glow is now flirt red on all three; the layouts, the night background, the light streaks and the gold stay. They are attached in the Podcast cover designs thread and saved in the project files under podcast/covers, with the first versions kept beside them.",
+   "options": [
+    {
+     "v": "a-neon-hex",
+     "label": "A, Neon hex (recommended)",
+     "c": "The Mastering Allyship book cover's layout with a flirt red hexagon: rainbow light streaks, FLIRT CRAFT inside the glowing red hexagon under 'Mastering the game of'. Kin to the book by shape, told apart by color. The council makes the final file and adds it to your Spotify steps."
+    },
+    {
+     "v": "b-two-signals",
+     "label": "B, Two signals",
+     "c": "A red and a blue hexagon overlapping, the overlap lit gold, with FLIRTCRAFT across both: two people meeting. Fewer streaks and the cleanest at thumbnail size."
+    },
+    {
+     "v": "c-level-select",
+     "label": "C, Level select",
+     "c": "Type first: FLIRT in white and CRAFT in a red gradient, a small gold FC hexagon badge, and light streaks rising from the bottom. The boldest title of the three."
+    },
+    {
+     "v": "steer",
+     "label": "None yet, I will steer in the box",
+     "c": "Say what to change, or which parts of each to combine, and the council redraws."
+    }
+   ]
+  },
+  {
+   "id": "fcm-p8d-buy",
+   "faces": [
+    "regent"
+   ],
+   "pass": "friendcraft pass 8, read 3",
+   "q": "Buy friendcraft.app now on these terms? Vercel quotes $9.99 for one year, charged to the default card on file for your Vercel team. Sales tax and any fees are added at charge time and appear on the invoice. The purchase cannot be refunded. It renews every year at the price then current, until you turn auto-renew off on the Vercel domains page. Full terms: https://vercel.com/legal/terms. The card is listed at https://vercel.com/wendells-projects-9c1b16dc/~/settings/billing.",
+   "why_you": "Vercel requires your own yes on the final quote before it charges the card, and money is reserved to you.",
+   "not_before": "You chose friendcraft.app on fcm-p8c-domain. Vercel gave this quote on 2026-10-06.",
+   "options": [
+    {
+     "v": "buy",
+     "label": "Buy it on these terms (recommended)",
+     "c": "The council registers friendcraft.app in Vercel with a fresh quote at the same price, using the registrant contact Vercel already holds for your team. If Vercel needs contact details it lacks, that comes back to you as a row."
+    },
+    {
+     "v": "buy-no-renew",
+     "label": "Buy it, with auto-renew off",
+     "c": "Same purchase, and the address lapses after a year unless you renew it by hand."
+    },
+    {
+     "v": "wait",
+     "label": "Not yet",
+     "c": "Nothing is charged, and the name stays open for anyone to register."
+    }
+   ]
   }
  ],
  "causes": [
@@ -7854,6 +7936,42 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "pod-art-ma": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "pod-ep1-from-audio": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "board-auto-pickup": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "wave-acknowledge": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "wave-offered-feeling": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "wave-integrate-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
    }
   },
   "questions": {
@@ -8473,6 +8591,24 @@
     "label": "Steered",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "fcm-p8c-domain": {
+    "decision": "friendcraft.app",
+    "label": "friendcraft.app",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8d-buy": {
+    "decision": "buy",
+    "label": "Buy it on these terms",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
+   },
+   "pod-cover-pick": {
+    "decision": "b-two-signals",
+    "label": "B, Two signals",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
    }
   },
   "causes": {
@@ -9190,6 +9326,13 @@
       "wave-offered-feeling",
       "wave-integrate-ladder"
      ]
+    },
+    {
+     "n": 7,
+     "questions": [],
+     "positions": [
+      "wave-ack-research"
+     ]
     }
    ]
   },
@@ -9248,6 +9391,20 @@
       "pod-art-ma",
       "pod-ep1-from-audio",
       "board-auto-pickup"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [
+      "pod-cover-pick"
+     ],
+     "positions": []
+    },
+    {
+     "n": 4,
+     "questions": [],
+     "positions": [
+      "pod-art-recolor"
      ]
     }
    ]

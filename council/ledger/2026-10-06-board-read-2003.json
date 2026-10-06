@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-06",
+ "read_at": "2026-10-06T20:04:00Z",
+ "note": "Board read on Wendell's \"Updated the board\" in the WAVE battle thread. Board read 2002 (council/ledger/2026-10-06-board-read-2002.json) had already recorded fr-demo round 6 and three podcast rows and posted wave-ack-research; this read records the two answers saved after it: fcm-p8d-buy and pod-cover-pick. Their own threads act on them.",
+ "answers": {
+  "fcm-p8d-buy": {
+   "kind": "question",
+   "savedAt": "2026-10-06T20:02:37.196Z",
+   "steer": "",
+   "choice": "buy"
+  },
+  "pod-cover-pick": {
+   "kind": "question",
+   "savedAt": "2026-10-06T20:02:41.910Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "choice": "b-two-signals"
+  }
+ },
+ "next": "See board read 2002: the WAVE thread researches Acknowledge and spirit generation (wave-ack-research)."
+}
