@@ -1,0 +1,133 @@
+{
+ "date": "2026-10-06",
+ "battle": "fr-demo",
+ "round": 5,
+ "repo": "sprout",
+ "kind": "pass",
+ "record": "/mnt/project-files/demo/wave-battle-brainstorm.md",
+ "called_by": "Wendell's round 4 overrules (ledger 2026-10-06-board-read-1907.json): a full brainstorm of the WAVE battle",
+ "casts": [
+  {
+   "agent": "shaman",
+   "n": 43,
+   "name": "Unsaid",
+   "values": [
+    7,
+    7,
+    9,
+    7,
+    9,
+    8
+   ],
+   "changing_lines": [
+    3,
+    5
+   ]
+  },
+  {
+   "agent": "architect",
+   "n": 19,
+   "name": "Spring",
+   "values": [
+    7,
+    7,
+    8,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": []
+  },
+  {
+   "agent": "challenger",
+   "n": 63,
+   "name": "Arrived",
+   "values": [
+    7,
+    8,
+    7,
+    8,
+    7,
+    6
+   ],
+   "changing_lines": [
+    6
+   ]
+  },
+  {
+   "agent": "regent",
+   "n": 57,
+   "name": "Persuasion",
+   "values": [
+    8,
+    7,
+    7,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": []
+  },
+  {
+   "agent": "diplomat",
+   "n": 51,
+   "name": "Shock",
+   "values": [
+    7,
+    8,
+    8,
+    7,
+    8,
+    8
+   ],
+   "changing_lines": []
+  },
+  {
+   "agent": "sage",
+   "n": 30,
+   "name": "Burning",
+   "values": [
+    9,
+    6,
+    7,
+    7,
+    6,
+    9
+   ],
+   "changing_lines": [
+    1,
+    2,
+    5,
+    6
+   ]
+  }
+ ],
+ "daemons": [
+  {
+   "daemon": "player",
+   "face": "shaman",
+   "report": "council/daemons/reports/2026-10-06-sprout-demo-5-player.md",
+   "subagent_tokens": 34451
+  }
+ ],
+ "positions": [
+  "wave-damage",
+  "wave-reveal",
+  "wave-naming",
+  "wave-record",
+  "wave-order",
+  "wave-release-grounds"
+ ],
+ "questions": [
+  "wave-integrate-gift"
+ ],
+ "dissent": true,
+ "dissent_notes": [
+  "Challenger: a wrong name should cost HP (position takes the Shaman's turn-only cost)",
+  "Diplomat: allow integration on a double Validate without the right name (position requires the name)"
+ ],
+ "tests_set": [
+  "Bot test on the built battle: full WAVE beats Acknowledge spam on HP left and finishes before knockdown in at least four of five fights; due at the round 6 read"
+ ],
+ "next": "After the round 5 read, build the WAVE battle on sprout#24's branch in a new thread."
+}

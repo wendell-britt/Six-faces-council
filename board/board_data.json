@@ -8953,6 +8953,20 @@
       "enc-wave-set",
       "enc-moves-from-grid"
      ]
+    },
+    {
+     "n": 5,
+     "questions": [
+      "wave-integrate-gift"
+     ],
+     "positions": [
+      "wave-damage",
+      "wave-reveal",
+      "wave-naming",
+      "wave-record",
+      "wave-order",
+      "wave-release-grounds"
+     ]
     }
    ]
   },
