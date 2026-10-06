@@ -3281,6 +3281,17 @@
    "auto": true,
    "pos": "Neutrality's job is the one your book gives it: detachment and perspective, the view that lets you see the whole. Its two questions are 'What are you stepping back from?' and 'From there, what can you see of the whole?'. The questions are the council's wording. This stands unless you flip it.",
    "why": "You asked for help with Neutrality's job, and your book already answers it: 'Neutrality's job is detachment and perspective—the view that lets you see the whole' (Mastering the Game of Allyship, compiled 29 May 2026). Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md, addendum"
+  },
+  {
+   "id": "pickup-send-restored",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "board pickup",
+   "auto": true,
+   "pos": "The Send to Claude button is back. The live board had lost its permission to use your Claude Code Remote connector, so it could only tell you to say so in chat. It is republished with that permission, and every rebuild now prints the permissions a republish must pass.",
+   "why": "Your screenshot of 6 October showed the fallback line. The live page declared only its store, while docs/pickup.md says it declares the store and the connector; a republish that named only the store dropped the connector. The first Send asks you once to allow the connector."
   }
  ],
  "questions": [
@@ -6148,6 +6159,34 @@
      "v": "colours",
      "label": "C. The colours, as now",
      "c": "Magenta, Red, Amber, Orange, Green, Teal, with the new introduction above them. The names stay as they are, and the introduction does all the explaining."
+    }
+   ]
+  },
+  {
+   "id": "pickup-where",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "board pickup",
+   "q": "Where should a Send from the board start the work?",
+   "why_you": "You asked for the board to reach the council from any space with the repo. Today every Send wakes the Flirtcraft project's coordinator, so the work shows up in that project only. Where you want to see it happen is your call.",
+   "not_before": "The pickup routine has fired into the Flirtcraft coordinator since 6 October. Meanwhile it keeps doing that.",
+   "options": [
+    {
+     "v": "fresh",
+     "label": "A. A fresh session for each Send, carrying the council repo (recommended)",
+     "c": "It runs the same however you opened the board and belongs to no project. You hear about it by phone notification, the board updates, and the session is short, as the short-sessions rule wants."
+    },
+    {
+     "v": "council-project",
+     "label": "B. This council project's coordinator",
+     "c": "Each Send starts a thread in the 6 face game master council project, where you can follow and steer it. Other projects stop picking up board saves."
+    },
+    {
+     "v": "flirtcraft",
+     "label": "C. Keep the Flirtcraft coordinator",
+     "c": "Nothing changes. The work keeps showing up as a thread in the Flirtcraft project."
     }
    ]
   }
