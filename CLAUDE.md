@@ -30,7 +30,9 @@ projects more effectively between that and Jev we can save a lot of tokens"
 - End at a natural boundary. Record the work in the repo and on the board, put anything left open in
   `council/HANDOFF.md`, and stop. The next piece of work starts in a new thread that reads this file,
   HANDOFF.md and the board.
-- Drop a pull request watch once the pull request merges or waits only on Wendell's label.
+- Drop a pull request watch once the pull request merges. Pull requests merge by themselves once they are ready and
+  their checks pass (docs/merging.md, Wendell, 2026-10-06); only a `council/faces.yaml` change or a daily branch
+  waits for his label.
 - Name the session's cost in its last report, read from the platform after the work, never mid-turn.
 - Hand off before the context passes about 200,000 tokens, even mid-feature. The 4 October usage audit found
   84% of spend was rereading context (`/mnt/project-files/usage-audit/audit-2026-10-04.md`). An art review
