@@ -7112,6 +7112,102 @@
     "label": "Overruled",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)"
+   },
+   "ship-address-per-batch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-wave-blocks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-wave-depth": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "ship-gumroad-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "ship-plan-superseded": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-map-private": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-wave-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "enc-moves-from-grid": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "ship-batches-monthly": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "enc-inner-moves": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "enc-wave-set": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "ship-sales-alongside": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-wave-breath": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "ship-say-cadence": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-book-untouched": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-map-output": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
    }
   },
   "questions": {
@@ -7671,6 +7767,24 @@
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
     "label": "A. The brother's call, answered by choice (recommended)"
+   },
+   "ship-order": {
+    "decision": "steer",
+    "label": "Answered with a steer",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "ship-pace": {
+    "decision": "recycle",
+    "label": "Put part of every $40 sale back into backer copies",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "oag-block-work": {
+    "decision": "steer",
+    "label": "Answered with a steer",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
    }
   },
   "causes": {
