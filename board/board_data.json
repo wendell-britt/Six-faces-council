@@ -3070,6 +3070,39 @@
    "auto": true,
    "pos": "Exhale's release is the grounding. The player chooses the earth (gold later, and the card) or the well (pays now), and the separate grounding menu after the fight goes away. Release pays coin and integration pays lasting skill, so neither is the lazy pick. This stands unless you flip it.",
    "why": "The grounding ritual and 'the well pays now and the earth pays later' are in design.md; sprout#24 grounds after every fight. Design.md principle 3: skill is bought only with skillful play."
+  },
+  {
+   "id": "wave-acknowledge",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 6",
+   "auto": true,
+   "pos": "Acknowledge drops the naming choice. It is the battle's main attack, as a Pokémon move is: the player picks it, it lands, and the game shows the daemon's name and type when the hit lands, so the name comes from the game and never from a quiz. Its strength follows the type chart: the more Welcome has shown and the better the player's stance answers the charge's feeling, the harder it hits. Replay comes from the matchups, from which daemon carries which belief, and from filling the record. This replaces wave-naming. This stands unless you flip it.",
+   "why": "Your overrule of wave-naming: 'I don't know how we'd come up with the daemon names or how this would connect in replay ability... strays too far from what makes pokemon work.' In Pokémon the game names the foe and the player's skill is in the matchup."
+  },
+  {
+   "id": "wave-offered-feeling",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "sprout demo 6",
+   "auto": true,
+   "pos": "In prompted and integrated modes, the player offers the feeling the charge raises in them. When a charge appears, the first Welcome asks which of the five feelings is moving in them right now, and the charge takes the element of the feeling they choose, so the battle works the feeling the player actually has. In story mode charges stay random, so a player learns how charge is metabolized before bringing their own. The demo's first charges on the strip are random in every mode, and the offer opens after the first grounding. This stands unless you flip it.",
+   "why": "Your steer on wave-reveal: 'at least in one game mode the player has to offer the feeling associated with the charge IN THEM. In the story game the charges can be randomized as player are learning the mechanics of metabolizing charge.' The three modes stood as ya-three-modes. When the offer opens is the council's choice."
+  },
+  {
+   "id": "wave-integrate-ladder",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "sprout demo 6",
+   "auto": true,
+   "pos": "Integrating a daemon deepens the player's relationship with it, and the gift grows with the relationship. The first integrations give loot for the sphere grid. A deeper relationship teaches that daemon's move, usable in later fights. The deepest makes it a companion that walks with the player and acts in fights. The demo ships the first two rungs; companions come after the demo. How many integrations each rung takes is a placeholder (the council's: 1 for loot, 3 for the move, 6 for a companion). This stands unless you flip it.",
+   "why": "Your steer on wave-integrate-gift: 'all 3 but in order of relationship to the daemon. I think it starts out as loot for the sphere grid. Then it leads to moves. And the highest level is as a companion.' Leaving companions out of the demo keeps companion art and behaviour off the demo's list (demo-scope A)."
   }
  ],
  "questions": [
