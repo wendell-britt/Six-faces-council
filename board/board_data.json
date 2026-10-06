@@ -5950,6 +5950,33 @@
      "c": "Say what to change, or which parts of each to combine, and the council redraws."
     }
    ]
+  },
+  {
+   "id": "fcm-p8d-buy",
+   "faces": [
+    "regent"
+   ],
+   "pass": "friendcraft pass 8, read 3",
+   "q": "Buy friendcraft.app now on these terms? Vercel quotes $9.99 for one year, charged to the default card on file for your Vercel team. Sales tax and any fees are added at charge time and appear on the invoice. The purchase cannot be refunded. It renews every year at the price then current, until you turn auto-renew off on the Vercel domains page. Full terms: https://vercel.com/legal/terms. The card is listed at https://vercel.com/wendells-projects-9c1b16dc/~/settings/billing.",
+   "why_you": "Vercel requires your own yes on the final quote before it charges the card, and money is reserved to you.",
+   "not_before": "You chose friendcraft.app on fcm-p8c-domain. Vercel gave this quote on 2026-10-06.",
+   "options": [
+    {
+     "v": "buy",
+     "label": "Buy it on these terms (recommended)",
+     "c": "The council registers friendcraft.app in Vercel with a fresh quote at the same price, using the registrant contact Vercel already holds for your team. If Vercel needs contact details it lacks, that comes back to you as a row."
+    },
+    {
+     "v": "buy-no-renew",
+     "label": "Buy it, with auto-renew off",
+     "c": "Same purchase, and the address lapses after a year unless you renew it by hand."
+    },
+    {
+     "v": "wait",
+     "label": "Not yet",
+     "c": "Nothing is charged, and the name stays open for anyone to register."
+    }
+   ]
   }
  ],
  "causes": [
@@ -8506,6 +8533,12 @@
     "label": "Steered",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "fcm-p8c-domain": {
+    "decision": "friendcraft.app",
+    "label": "friendcraft.app",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    }
   },
   "causes": {
