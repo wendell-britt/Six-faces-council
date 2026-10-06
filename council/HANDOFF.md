@@ -112,3 +112,14 @@ CLAUDE.md, this file and the board.
   `fr-demo` orientation in sprout. Test 1 (a cold reader names their one move at the commit screen) can ride the WAVE
   `?road` playtest.
 - **Not started:** the book outline Wendell named after the audit. It is its own thread.
+
+## Open on 2026-10-06, from board read 2330
+
+- **WAVE battle (`fr-demo` round 10):** `wave-offer-opens`, `wave-urges-all` and `wave-welcome-cost` stood.
+  `wave-exhale-ends` was overruled with a steer: an Exhale can end a fight as a coup de grace, or offer an "express"
+  move, a way to express the emotional energy being worked with. The WAVE thread reworks Exhale in sprout #26
+  (`slice/wave.js`) and brings it back as a new position. Lessons pending for the Challenger and the Regent in
+  `council/ledger/2026-10-06-board-read-2330.json`.
+- **Morning brief to the board:** Wendell's context note, 23:26 UTC: "I want to make sure the work from the morning
+  brief is coming into the council board as well". Nothing in the three repos names a morning brief, so the next
+  session that takes this finds where that brief is produced and routes its items to the board through the reach test.
