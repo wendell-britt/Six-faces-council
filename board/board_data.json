@@ -2666,6 +2666,39 @@
    "auto": true,
    "pos": "There are two ways to rest a daemon: subdue it with the stance that controls its element, or steady it by feeding it the generating stance until it settles. Either way the grounding follows, and daemons take no offering. HP carries from fight to fight and refills at the farm, as design.md proposes for the center. This stands unless you flip it.",
    "why": "design.md's spirit fight has feeding raise satisfaction, but it ends a fight only on dismissal or an offering, and the offering wins an ally, which a daemon is not in the demo. The steadied form is one of the three daemon forms in demo-daemon-count. Source: wendell-britt/sprout#24"
+  },
+  {
+   "id": "enc-inner-moves",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 4",
+   "auto": true,
+   "pos": "A daemon battle plays like a Pokémon battle. Each turn the player picks one of four moves, each move takes HP from the daemon, and the daemon strikes back. Every move is an inner move, and its line walks the player through it as they choose it, so doing the move in the game is doing it. At zero HP the daemon is rested and the grounding follows. Wood, Fire, Earth, Metal and Water stances stay with the spirit negotiation. This stands unless you flip it.",
+   "why": "Your steer on enc-steady-rests: 'more like pokemon battles where the moves do HP to the daemon and each of the moves is an inner move the player can do to get the emotional alchemy effects in themselves.' Source: council/ledger/2026-10-06-demo-round3.json"
+  },
+  {
+   "id": "enc-wave-set",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "sprout demo 4",
+   "auto": true,
+   "pos": "The demo's four moves are WAVE's four steps. Welcome takes a little HP and names the daemon and the belief it carries. Acknowledge takes steady HP. Validate takes HP and weakens the daemon's next strike. Exhale takes a little HP and gives some of the player's HP back. Playing all four in order in one battle lands a bonus hit, so the battle teaches the practice in its order. The numbers are placeholders. This stands unless you flip it.",
+   "why": "You named WAVE. Mastering the Game of Allyship defines it as Welcome, Acknowledge, Validate, Exhale, a short practice for charge already in the body (mtgoa-manuscript appendices/APPENDIX_C_KEY_TERMS.md). Each effect is drawn from the step's own word."
+  },
+  {
+   "id": "enc-moves-from-grid",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout demo 4",
+   "auto": true,
+   "pos": "More inner moves come later from the grid, as your ranks ruling has it: branches unlock moves. The 3-2-1 and the Five-Move Form are the next sets, and a player carries four moves at a time and swaps them at the ring. The demo ships WAVE only. This stands unless you flip it.",
+   "why": "fr-ranks-and-badges round 5 steer: 'branches unlock MOVES plus a subtype's stat build'. The 3-2-1 and the Five-Move Form are practices the book already teaches (APPENDIX_C_KEY_TERMS.md)."
   }
  ],
  "questions": [
@@ -6834,6 +6867,24 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-demo-round2.json (six-faces-council)"
+   },
+   "enc-first-block": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)"
+   },
+   "enc-who-carries": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)"
+   },
+   "enc-steady-rests": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)"
    }
   },
   "questions": {
@@ -8047,6 +8098,15 @@
       "enc-first-block",
       "enc-who-carries",
       "enc-steady-rests"
+     ]
+    },
+    {
+     "n": 4,
+     "questions": [],
+     "positions": [
+      "enc-inner-moves",
+      "enc-wave-set",
+      "enc-moves-from-grid"
      ]
     }
    ]
