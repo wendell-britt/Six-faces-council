@@ -1,0 +1,132 @@
+{
+ "date": "2026-10-06",
+ "read_at": "2026-10-06T20:40:00Z",
+ "note": "Board read on Wendell's \"Update the board\" in the board pickup thread. Records the 20 answers saved after board read 2003, among them pickup-send-permission (yes) and pickup-where (fresh), which this thread acts on.",
+ "answers": {
+  "oag-faces-names": {
+   "kind": "question",
+   "savedAt": "2026-10-06T20:17:16.950Z",
+   "steer": "There should even be a popup page that allows the player to learn more about each of them",
+   "choice": "plain"
+  },
+  "oag-block-size": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:17:23.925Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-block-carry": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:17:31.876Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-appreciate-input": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:17:38.010Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-trailhead": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:17:45.279Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-words-private": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:17:51.330Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-faces-primer": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:17:58.264Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "board-auto-pickup-live": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:18:00.498Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "pod-art-recolor": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:18:07.190Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "pickup-send-permission": {
+   "kind": "question",
+   "savedAt": "2026-10-06T20:26:23.850Z",
+   "steer": "",
+   "choice": "yes"
+  },
+  "pickup-where": {
+   "kind": "question",
+   "savedAt": "2026-10-06T20:27:06.484Z",
+   "steer": "",
+   "choice": "fresh"
+  },
+  "oag-channel-job": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:27:18.379Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-neutrality-job": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:27:25.179Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "wave-ack-research": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:27:31.075Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-spirit-from-charge": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:27:42.705Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "oag-body-figure": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:28:23.283Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-body-sides": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:28:32.084Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-body-device-only": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:28:37.913Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "oag-body-over-time": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:28:43.430Z",
+   "steer": "",
+   "status": "stands"
+  },
+  "wave-acknowledge-turn": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:32:10.560Z",
+   "steer": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I’m looking for. Specifically. \n\nUsing a move IS acknowledging the spirit welcoming is like listening. ",
+   "via": "battle:fr-demo",
+   "status": "overrule"
+  }
+ },
+ "next": "The board pickup thread restores the page's Claude Code Remote grant and replaces the pickup routine with a fresh-session routine. wave-acknowledge-turn is overruled with a steer (using a trigram move is the acknowledgement; welcoming is listening): the WAVE thread takes it. oag-faces-names chose plain words with a steer for a page per face: the ontology game thread takes it. The rest stand."
+}

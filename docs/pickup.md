@@ -20,10 +20,19 @@ A republish that omits `capabilities` keeps both. A republish that passes `capab
 
 ## The pickup routine
 
-`trig_01DpRsDM94Cnv2neyDVkBNMb`, "Council board: pick up Wendell's answers", has no schedule; only the button and the
-daily run fire it. It wakes the project's coordinator (`session_01Pr39SkWLw8gNQ525dLbqZQ`), which starts one thread
-for a board read: save the store, run `board/unrecorded.py`, record through `board/sync_board.py`, republish, and ask
-for a thread per piece of work.
+`trig_01L138vKTaN9MSJoFKRmaBNx`, "Council board: pick up Wendell's saves (council project)", has no schedule; only the
+button and the daily run fire it. It wakes the coordinator of the 6 face game master council project
+(`session_016Yw4J6vYgt5h3grAHh7NmK`), which starts one thread for a board read. It replaced
+`trig_01DpRsDM94Cnv2neyDVkBNMb`, which woke the Flirtcraft project's coordinator, on 2026-10-06.
+
+Wendell chose a fresh session per Send (`pickup-where`, board read 2004) so the pickup belongs to no project. A
+routine made from a project cannot start fresh sessions (create_trigger refuses `create_new_session_on_fire` there),
+so the council project's coordinator carries it until a fresh-session routine is made outside a project, from a
+plain Claude Code session or the routines page. Its environment must carry the council repo.
+
+The page lost its `mcp` grant once, through a republish that passed `capabilities` with only `db`; the button then
+showed "This view cannot reach Claude". Wendell restored it on 2026-10-06 (`pickup-send-permission`). Republish
+without `capabilities`.
 
 What the first firings showed, 2026-10-06:
 - A routine made in a project thread with no target fires into that thread. One made with the coordinator as its

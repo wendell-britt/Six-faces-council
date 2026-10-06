@@ -270,7 +270,7 @@ const live = {positions:{}, questions:{}, causes:{}, terms:{}};
 let liveSteer = null, db = null;
 // Send to Claude: the routine it fires, the last send (pickup/last in the store), and steps changed before this date
 // are never counted, so ticks Claude already read do not light the bar.
-const PICKUP_TRIGGER = 'trig_01DpRsDM94Cnv2neyDVkBNMb', PICKUP_SINCE = '2026-10-06T20:00:00Z';
+const PICKUP_TRIGGER = 'trig_01L138vKTaN9MSJoFKRmaBNx', PICKUP_SINCE = '2026-10-06T20:00:00Z';
 let mcp = null, lastSent = null, sendBusy = false, sendNote = '', sendNoteTimer = 0;
 let sendClosed = (() => { try { return localStorage.getItem('board-send-closed'); } catch { return null; } })();
 const local = {positions:{}, questions:{}, terms:{}, causes:{}};

@@ -82,11 +82,12 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-06, from the board pickup thread
 
-- **The Send button cannot fire.** The live board declares only `db`; the `mcp` grant docs/pickup.md describes was
-  dropped by an earlier republish, so the page shows "This view cannot reach Claude". Restoring it grants the page a
-  connector, which needs Wendell's word: board question `pickup-send-permission`. On a yes, republish with
-  `{"db": {}, "mcp": {"servers": [{"server": "Claude Code Remote", "tools": ["fire_trigger"]}]}}`, and every later
-  republish omits `capabilities` so the grant carries forward.
-- **Where a Send lands:** `pickup-where`. Today the routine wakes the Flirtcraft project's coordinator. On A, replace
-  `trig_01DpRsDM94Cnv2neyDVkBNMb` with a fresh-session routine created from a thread whose environment carries the
-  council repo, and put the new id in `PICKUP_TRIGGER` and the daily routine's step 1b.
+- **Send works again** (board read 2004): the board carries the `mcp` grant, and `PICKUP_TRIGGER` is
+  `trig_01L138vKTaN9MSJoFKRmaBNx`, which wakes the council project's coordinator. See docs/pickup.md.
+- **Still open:** Wendell chose a fresh session per Send (`pickup-where` A). A project cannot create one; make it from
+  a session outside a project, then swap the id in `PICKUP_TRIGGER`. The daily routine's step 1b still fires the old
+  routine `trig_01DpRsDM94Cnv2neyDVkBNMb` into the Flirtcraft coordinator; only the standing daily session can change
+  that prompt to the new id.
+- **Work the answers begin:** `wave-acknowledge-turn` overruled (steer: a trigram move is the acknowledgement,
+  welcoming is listening) for the WAVE thread; `oag-faces-names` chose plain words, steer: a popup page per face,
+  for the ontology game thread.
