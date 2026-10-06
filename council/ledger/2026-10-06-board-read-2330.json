@@ -1,0 +1,76 @@
+{
+ "date": "2026-10-06",
+ "read_at": "2026-10-06T23:40:00Z",
+ "note": "Board read on two Send to Claude presses (about 23:26 and 23:30 UTC). The first Send carried the four fr-demo round 10 positions as stood, the context box and a ticked body map step; the second re-sent the four positions after Wendell changed wave-exhale-ends to overrule. Each answer is recorded at its latest save; the first save is kept beside it.",
+ "answers": {
+  "wave-offer-opens": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:29:22.796Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands",
+   "first_save": {
+    "savedAt": "2026-10-06T23:21:39.938Z",
+    "status": "stands"
+   }
+  },
+  "wave-exhale-ends": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:30:15.492Z",
+   "steer": "Exhale can end a fight as a coup de gras or it offer an “express” move- a way to express the emotional energy that is being worked with  ",
+   "via": "battle:fr-demo",
+   "status": "overrule",
+   "first_save": {
+    "savedAt": "2026-10-06T23:22:00.203Z",
+    "status": "stands"
+   }
+  },
+  "wave-urges-all": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:30:23.821Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands",
+   "first_save": {
+    "savedAt": "2026-10-06T23:22:15.416Z",
+    "status": "stands"
+   }
+  },
+  "wave-welcome-cost": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:30:34.609Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands",
+   "first_save": {
+    "savedAt": "2026-10-06T23:22:42.960Z",
+    "status": "stands"
+   }
+  }
+ },
+ "steer_general": {
+  "savedAt": "2026-10-06T23:26:42.567Z",
+  "text": "I want to make sure the work from the morning brief is coming into the council board as well"
+ },
+ "steps": {
+  "oag-body-map-02": "ticked done 2026-10-06T20:39:37Z: Wendell said in the body map thread (coaching practice project) what to change or to put it live. That thread acts on it."
+ },
+ "fr-demo": "Round 10: wave-offer-opens, wave-urges-all and wave-welcome-cost stood. wave-exhale-ends overruled: an Exhale can end a fight as a coup de grace, or it can offer an express move, a way to express the emotional energy being worked with. It is not only an ending gated on emptying the charge.",
+ "lessons_pending": [
+  {
+   "face": "challenger",
+   "date": "2026-10-06",
+   "source": "position wave-exhale-ends overruled, fr-demo round 10",
+   "wendell": "Exhale can end a fight as a coup de gras or it offer an “express” move- a way to express the emotional energy that is being worked with  ",
+   "lesson": "Guarding a move against being a shortcut can strip its meaning. Before limiting a move for balance, ask what the move expresses for the player; Exhale is the release of the charge, and can be an expression as well as an ending."
+  },
+  {
+   "face": "regent",
+   "date": "2026-10-06",
+   "source": "position wave-exhale-ends overruled, fr-demo round 10",
+   "wendell": "Exhale can end a fight as a coup de gras or it offer an “express” move- a way to express the emotional energy that is being worked with  ",
+   "lesson": "A rule that names only when a move ends the fight leaves out what the move is for. Write each move's purpose for the player before its stop condition."
+  }
+ ],
+ "next": "The WAVE battle thread reworks Exhale in sprout #26 (slice/wave.js): a coup de grace that can end the fight, or an express move that lets the player express the charge, and brings it back as a new position. The context note asks that the morning brief's work reach the council board; the next session that touches the morning brief or the daily routine finds where that brief is produced and routes its items to the board through the reach test."
+}

@@ -9473,9 +9473,14 @@
    "text": "On ship-order: \"The people who raise their hand first with an updated address get their books faster \"",
    "savedAt": "2026-10-06T19:06:08.051Z",
    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+  },
+  {
+   "text": "I want to make sure the work from the morning brief is coming into the council board as well",
+   "savedAt": "2026-10-06T23:26:42.567Z",
+   "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
   }
  ],
- "steer_recorded_through": "2026-10-05T21:19:22.469Z",
+ "steer_recorded_through": "2026-10-06T23:26:42.567Z",
  "battles": [
   {
    "id": "fr-scene-staging",
