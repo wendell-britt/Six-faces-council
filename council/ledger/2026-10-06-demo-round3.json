@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06",
+  "battle": "fr-demo",
+  "repo": "sprout",
+  "record": "/mnt/project-files/demo/demo-scope-map.md; wendell-britt/sprout#24",
+  "read_at": "2026-10-06T18:47:00Z",
+  "answers": {
+    "enc-first-block": {
+      "kind": "position",
+      "status": "stands",
+      "savedAt": "2026-10-06T18:45:15.713Z"
+    },
+    "enc-who-carries": {
+      "kind": "position",
+      "status": "overrule",
+      "savedAt": "2026-10-06T18:45:36.261Z",
+      "steer": "I think all the beliefs can be applied to each of the daemons "
+    },
+    "enc-steady-rests": {
+      "kind": "position",
+      "status": "overrule",
+      "savedAt": "2026-10-06T18:46:32.167Z",
+      "steer": "This should be more like pokemon battles where the moves do HP to the daemon and each of the moves is an inner move the player can do to get the emotional alchemy effects in themselves. WAVE is a good example of this."
+    }
+  },
+  "applied": {
+    "enc-who-carries": "sprout#24: every charge's daemon is drawn from the encounter table; the charge still names its block."
+  },
+  "next": "Round 4 posts the daemon battle as positions: inner moves that do HP, WAVE as the demo's four moves. The build follows in a new thread."
+}
