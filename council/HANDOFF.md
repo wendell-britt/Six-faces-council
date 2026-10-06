@@ -53,8 +53,11 @@ CLAUDE.md, this file and the board.
   Your steps list `podcast-spotify`).
 - **Episode 1 copy (`pod-ep1-from-audio`):** waits on step 2, Wendell attaching the audio in the Podcast page thread.
   Then draft the show description, title and notes, and put the title on the board as a question.
-- **Cover art (`pod-art-ma`):** needs its own thread with bars-engine added; this container's proxy refuses
-  masteringallyship.com, so take the look from bars-engine's site code. Three 3000x3000 drafts, then a board question.
+- **Cover art (`pod-art-ma`):** three drafts done 2026-10-06, question `pod-cover-pick` on the board (round 3).
+  Files: `/mnt/project-files/podcast/covers/` (3000x3000 JPEGs, plus `covers.html` and `render.js` that drew them;
+  render with Playwright at deviceScaleFactor 3). The look came from bars-engine (johnair01/bars-engine, public):
+  `public/mastering-allyship/cover-front.png` and `src/styles/bars-tokens.css`. Once he picks, add the file to the
+  `podcast-spotify` steps.
 - **Board pickup (`board-auto-pickup`):** build in its own thread once the row stands. Plan: a poke-only routine
   (`create_trigger`, `create_new_session_on_fire`, no cron) that runs a board read with `board/unrecorded.py`; a Send
   to Claude button in `board/template.html` that fires it through the `mcp` capability (connector Claude Code Remote,
