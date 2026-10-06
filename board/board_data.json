@@ -3158,6 +3158,17 @@
    "auto": true,
    "pos": "The council researches two questions before Acknowledge comes back: what makes a turn-based battle feel like one, and how a game can generate a spirit that matches the charge the player is feeling right now. It brings Acknowledge back as a new position built on that research. The offered-feeling mode and the integration ladder go ahead meanwhile. This stands unless you flip it.",
    "why": "Your overrule of wave-acknowledge: \"I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing\". Source: council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+  },
+  {
+   "id": "board-auto-pickup-live",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The Send to Claude button is on the board. Once you save anything, a bar at the bottom offers it; pressing it wakes the project's Claude, which starts a board read. The daily run checks for anything nobody sent and passes it on the same way.",
+   "why": "It carries out board-auto-pickup, which stood. Its first firing at 20:01 UTC started a board read in the project. The first time you press it, the page asks to use your Claude Code Remote connection; allow it. Source: six-faces-council#44, docs/pickup.md"
   }
  ],
  "questions": [
