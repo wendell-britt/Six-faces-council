@@ -108,9 +108,10 @@ CLAUDE.md, this file and the board.
   `orient-bridge`, `orient-on-your-own`, `orient-reflection-to-wall`) stand unless he flips them; two questions wait on
   him (`orient-first-paid-run`, `orient-terms`).
 - **Next, once they stand:** one flirtcraft pull request for the fixes (rail labels, draw first, 16 internal cards,
-  one named move, posture once); `orient-bridge` starts the pipeline with a spec kit and shares its words with the
-  `fr-demo` orientation in sprout. Test 1 (a cold reader names their one move at the commit screen) can ride the WAVE
-  `?road` playtest.
+  one named move, posture once); `orient-bridge` starts the pipeline with a spec kit inside flirtcraft. It is not tied
+  to the sprout demo: Wendell ruled in chat, "The wave battle thread really shouldn't be in this project"
+  (flirtcraft `council/ledger/2026-10-06-loop-pass1-ruling.json`, Regent lesson pending). Test 1 (a cold reader names
+  their one move at the commit screen) runs with the next stranger who plays flirtcraft.
 - **Not started:** the book outline Wendell named after the audit. It is its own thread.
 
 ## Open on 2026-10-06, from board read 2330
