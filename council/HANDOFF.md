@@ -55,7 +55,10 @@ CLAUDE.md, this file and the board.
   Then draft the show description, title and notes, and put the title on the board as a question.
 - **Cover art (`pod-art-ma`):** three drafts done 2026-10-06, question `pod-cover-pick` on the board (round 3).
   Files: `/mnt/project-files/podcast/covers/` (3000x3000 JPEGs, plus `covers.html` and `render.js` that drew them;
-  render with Playwright at deviceScaleFactor 3). The look came from bars-engine (johnair01/bars-engine, public):
+  render with Playwright at deviceScaleFactor 3).
+  Board read 2002 (2026-10-06): Wendell steered pod-art-ma toward "one strong color change so people can
+  differentiate it from MTGOA"; `pod-art-recolor` stands, so the cover thread redraws the three in a new color, then
+  updates `pod-cover-pick`'s options before he picks. The look came from bars-engine (johnair01/bars-engine, public):
   `public/mastering-allyship/cover-front.png` and `src/styles/bars-tokens.css`. Once he picks, add the file to the
   `podcast-spotify` steps.
 - **Board pickup (`board-auto-pickup`):** build in its own thread once the row stands. Plan: a poke-only routine
@@ -63,3 +66,11 @@ CLAUDE.md, this file and the board.
   to Claude button in `board/template.html` that fires it through the `mcp` capability (connector Claude Code Remote,
   tool `fire_trigger`), shown after a save; and a `board/unrecorded.py` step added to the daily routine's prompt
   (`trig_01F8fDdkjYEeMCfdozj6w3tt`). Read the `fire_trigger` schema before writing the page call.
+
+## Open on 2026-10-06, from board read 2002
+
+- **WAVE battle (`fr-demo` round 7):** Wendell overruled `wave-acknowledge` and asked for research: the battle must
+  feel turn based, and the system should generate a spirit that matches the charge the player is feeling.
+  `wave-ack-research` stands; the WAVE thread does the research and brings Acknowledge back as a new position.
+  `wave-offered-feeling` and `wave-integrate-ladder` stood. Lesson pending for the Architect in
+  `council/ledger/2026-10-06-board-read-2002.json`.

@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-06",
+  "read_at": "2026-10-06T20:05:00Z",
+  "note": "Board read on Send to Claude. The fr-podcast-launch rows belong to the podcast threads and fr-demo round 6 to the WAVE battle thread; each acts on its steer.",
+  "answers": {
+    "pod-art-ma": {
+      "kind": "position",
+      "savedAt": "2026-10-06T19:52:34.490Z",
+      "steer": "I think it should make one strong color change so people can differentiate it from MTGOA.",
+      "via": "battle:fr-podcast-launch",
+      "status": "stands"
+    },
+    "pod-ep1-from-audio": {
+      "kind": "position",
+      "savedAt": "2026-10-06T19:52:38.862Z",
+      "steer": "",
+      "via": "battle:fr-podcast-launch",
+      "status": "stands"
+    },
+    "board-auto-pickup": {
+      "kind": "position",
+      "savedAt": "2026-10-06T19:52:49.331Z",
+      "steer": "",
+      "via": "battle:fr-podcast-launch",
+      "status": "stands"
+    },
+    "wave-acknowledge": {
+      "kind": "position",
+      "savedAt": "2026-10-06T19:53:47.781Z",
+      "steer": "I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing",
+      "via": "battle:fr-demo",
+      "status": "overrule"
+    },
+    "wave-offered-feeling": {
+      "kind": "position",
+      "savedAt": "2026-10-06T19:53:59.095Z",
+      "steer": "",
+      "via": "battle:fr-demo",
+      "status": "stands"
+    },
+    "wave-integrate-ladder": {
+      "kind": "position",
+      "savedAt": "2026-10-06T19:54:09.144Z",
+      "steer": "",
+      "via": "battle:fr-demo",
+      "status": "stands"
+    }
+  },
+  "fr-podcast-launch": "pod-art-ma stood with a steer: make one strong color change so people can tell the podcast from Mastering the Game of Allyship. pod-ep1-from-audio and board-auto-pickup stood. pod-cover-pick is still open; the cover thread redraws the drafts first (pod-art-recolor).",
+  "fr-demo": "Round 6: wave-offered-feeling and wave-integrate-ladder stood. wave-acknowledge overruled: research more. The battle must feel turn based, and the system should generate a spirit in alignment with the emergent charge the player is experiencing (wave-ack-research).",
+  "lessons_pending": [
+    {
+      "face": "architect",
+      "source": "position wave-acknowledge overruled, fr-demo round 6",
+      "wendell": "I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing",
+      "lesson": "A battle step is judged by turn-based feel and by whether the spirit answers the charge the player actually brings. Research how the genre generates its foes before proposing the move that meets them."
+    }
+  ],
+  "next": "The cover thread redraws the three covers with one strong color change and updates pod-cover-pick. The WAVE thread researches Acknowledge and spirit generation and brings back a new position. board-auto-pickup is built in its own thread."
+}
