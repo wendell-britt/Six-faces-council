@@ -6633,6 +6633,162 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "dy-2026-10-05-clean": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "dy-2026-10-06-grow": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-design-applied": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-inner-demons": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-inward-labyrinth": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "pr-subtype-arms": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-act0-shape": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-allyship-read": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-dialogue-closed": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-encounter-loop": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-feels-now": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-first-friend": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-gets-us": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-gold-binds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-grid-pace": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-in-scope": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-intake": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-life-domains": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-mode3-gold": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-modes-wording": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-pull-scene": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-reservations": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-story-entry": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-test-result": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-three-modes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "ya-what-true": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
    }
   },
   "questions": {
@@ -7162,6 +7318,36 @@
     "label": "A. A timeline that writes beats into the script",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "ya-domains": {
+    "decision": "both",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "label": "C. Both, Lenses for where and Allyship for how"
+   },
+   "ya-feeling": {
+    "decision": "triumph",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "label": "Triumph"
+   },
+   "ya-real-steps": {
+    "decision": "offered-local",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "label": "A. Offered, never gating, kept on the device (recommended)"
+   },
+   "ya-road-gold": {
+    "decision": "gold-is-gold",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "label": "A. Gold is gold (recommended)"
+   },
+   "ya-the-pull": {
+    "decision": "brothers-call",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "label": "A. The brother's call, answered by choice (recommended)"
    }
   },
   "causes": {
