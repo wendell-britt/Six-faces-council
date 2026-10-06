@@ -2885,6 +2885,69 @@
    "auto": true,
    "pos": "Uploading episode 1 needs your sign-in, so the council prepares everything else: the show description, the episode title and notes, and the cover. Once you choose a host, the clicks that are yours go on the Your steps tab, and the page's player and listen links are wired from the links you get.",
    "why": "Creating an account and publishing under your name are reserved to you. Source: the reserved list (position reserved)."
+  },
+  {
+   "id": "fcm-p8-no-new-features",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Friendcraft gets no new game feature and no new oracle prose work until one person who is not you has played a full exchange, or this board shows why not. This stands unless you flip it.",
+   "why": "Your game spec says it: 'One feature, then no more features.' Forty days after the two tracks opened, no friend has played and the work since 2026-09-22 went to the council and the oracle. Source: preproduction/6FACE_PASS8_2026-10-06.md (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-ruling-39",
+   "faces": [
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Ruling 39 is recorded as answered yes: the friend opens a link. The decision log is written once this stands. This stands unless you flip it.",
+   "why": "You merged the hosted exchange at board read 15, and the game spec says that design 'assumes yes and cannot proceed on no'. Source: TRACK_GAME.md 4c (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-self-test",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Once the link is live, you send one test card to your own phone and answer it there, the way a friend would, before the first real send. The Challenger dissents: the first real exchange is the test. Flip this and the first send goes straight to a friend.",
+   "why": "The game spec's first build step was to check whether a received card feels like a gift, and nothing records it being done. Source: TRACK_GAME.md 4c, build order (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-nine-calls",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "The nine book questions from 22 August (the voyage structure, Fred as the boat, the seven blockers and the rest) come back as one row each in the next Friendcraft pass, after the council checks which ones later work already answered. This stands unless you flip it.",
+   "why": "Some are likely stale: ruling 16 closed on 9 September, and the oracle branch already answered rulings 3 and 12 in code. Source: 6FACE_OPEN_RULINGS_PASS2_2026-08-22.md and BRANCH_READ_ORACLE_2026-08-27.md (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-steven-outside",
+   "faces": [
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Your message to Steven stays outside this plan. The council does not say whom you send the first link to.",
+   "why": "Ruled in pass three: a re-entry sent because a track needs it is what the book warns about. Naming a person is reserved to you. Source: TWO_TRACKS.md 6 (friendcraft-manuacript)"
+  },
+  {
+   "id": "fcm-p8-efa-outside",
+   "faces": [
+    "sage"
+   ],
+   "pass": "friendcraft pass 8",
+   "auto": true,
+   "pos": "Emotional First Aid stays outside this plan. This stands unless you flip it.",
+   "why": "Its repo holds a README and the council install, with no manuscript and no spec, and you asked about Friendcraft's app and book. Source: emotional-first-aid git log"
   }
  ],
  "questions": [
@@ -5490,6 +5553,90 @@
      "v": "draft-from-audio",
      "label": "Draft them from the audio",
      "c": "You attach the audio in the podcast thread and the council drafts a title, summary and show notes for you to approve."
+    }
+   ]
+  },
+  {
+   "id": "fcm-p8-exchange-live",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "q": "The Friendcraft exchange is built and merged, but no friend can open it because it is not on the public web. How should it get there?",
+   "why_you": "A public web address and a storage service that may bill you are money and an outward act, and both are reserved to you.",
+   "not_before": "Board read 15 asked only whether to merge it. The Vercel refusal was found on 22 September, before this board existed.",
+   "options": [
+    {
+     "v": "dashboard",
+     "label": "I make an empty Vercel project and a Blob store, and the council uploads the three files (recommended)",
+     "c": "The link works the day you do the two steps written in deck/hosted/README.md. The council puts the steps on Your steps. Blob storage bills at your plan's rates."
+    },
+    {
+     "v": "council-tries",
+     "label": "The council tries to create the project itself with this session's Vercel connection",
+     "c": "If the connection can now create projects, nothing more is needed from you. If Vercel refuses again, the first option comes back to this board."
+    },
+    {
+     "v": "flirtcraft",
+     "label": "Host it inside flirtcraft's existing Vercel project",
+     "c": "No new project is needed. The friend's link carries flirtcraft's address, and the Architect dissents because the invitation then arrives under another product's name."
+    }
+   ]
+  },
+  {
+   "id": "fcm-p8-ruling-14",
+   "faces": [
+    "architect",
+    "regent",
+    "challenger"
+   ],
+   "pass": "friendcraft pass 8",
+   "q": "The book's outline was built on 22 August, before most of today's canon existed. Should it be rebuilt from the canon, patched, or left until a friend has played?",
+   "why_you": "It is the structure of your book, and the book track says replacing the outline should be your ruling, never a slow drift.",
+   "not_before": "It was asked in files on 22 and 27 August, before this board existed, and never here.",
+   "options": [
+    {
+     "v": "rederive",
+     "label": "Rebuild it from the canon, as a proposal for me to read (recommended by four faces)",
+     "c": "A session drafts a new outline. The old one stays in force until you approve the new one, and the first sections start from whichever you approve."
+    },
+    {
+     "v": "patch",
+     "label": "Patch the old outline to add Open Up",
+     "c": "Drafting can start on the existing slots straight away. The book track warns the book then argues for a structure it does not use."
+    },
+    {
+     "v": "hold",
+     "label": "Leave it until the first friend has played (the Challenger)",
+     "c": "No outline work until a real exchange gives the book its first worked example. Part 0 can still be drafted, because it needs no interview."
+    }
+   ]
+  },
+  {
+   "id": "fcm-p8-part-zero",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "friendcraft pass 8",
+   "q": "How should the first three sections of the book's opening part (your own story) get drafted?",
+   "why_you": "Book prose is reserved to you, and how you like to write is something only you know.",
+   "not_before": "The book track was waiting on the outline question, and nobody asked how drafting would happen once that closed.",
+   "options": [
+    {
+     "v": "talk-then-draft",
+     "label": "I talk a section through in a thread, a session drafts it from my words, and I rewrite it",
+     "c": "The draft starts from your own sentences, and you see every line before and after before anything goes in the manuscript."
+    },
+    {
+     "v": "i-write",
+     "label": "I write the first page myself, and the council reads it with the editorial pass",
+     "c": "The voice is yours from the first line. The council only reads and comments."
+    },
+    {
+     "v": "draft-from-repo",
+     "label": "A session drafts from my material already in the repo, and I rewrite",
+     "c": "Drafting starts without your time. The risk is the one pass seven found: a session writing your prose to a rule."
     }
    ]
   }
