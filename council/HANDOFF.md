@@ -99,3 +99,16 @@ CLAUDE.md, this file and the board.
 - **Work the answers begin:** `wave-acknowledge-turn` overruled (steer: a trigram move is the acknowledgement,
   welcoming is listening) for the WAVE thread; `oag-faces-names` chose plain words, steer: a popup page per face,
   for the ontology game thread.
+
+## Open on 2026-10-06, from the Flirtcraft loop audit thread (battle `fr-orient-new-players`)
+
+- **The pass:** flirtcraft `6FACE_PASS3_2026-10-06.md` and `council/ledger/2026-10-06-loop-pass1.json`, in flirtcraft
+  #10. The readable page is https://claude.ai/artifact/1QydwJABFethDKW34vwBsR.
+- **On the board:** seven positions (`loop-fix-labels`, `loop-draw-means-drawn`, `loop-one-move`, `loop-posture-once`,
+  `orient-bridge`, `orient-on-your-own`, `orient-reflection-to-wall`) stand unless he flips them; two questions wait on
+  him (`orient-first-paid-run`, `orient-terms`).
+- **Next, once they stand:** one flirtcraft pull request for the fixes (rail labels, draw first, 16 internal cards,
+  one named move, posture once); `orient-bridge` starts the pipeline with a spec kit and shares its words with the
+  `fr-demo` orientation in sprout. Test 1 (a cold reader names their one move at the commit screen) can ride the WAVE
+  `?road` playtest.
+- **Not started:** the book outline Wendell named after the audit. It is its own thread.
