@@ -7770,21 +7770,21 @@
    },
    "fcm-p8b-redesign": {
     "decision": "stands",
-    "label": "Stands: design pass in its own thread",
+    "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
    },
    "fcm-p8b-interview": {
     "decision": "stands",
-    "label": "Stands: story interview in its own thread",
+    "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
    },
    "fcm-p8b-outline": {
     "decision": "stands",
-    "label": "Stands: outline rebuild in its own thread",
+    "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
    },
    "wave-damage": {
     "decision": "stands",
@@ -8433,7 +8433,7 @@
     "decision": "own-address",
     "label": "Give Friendcraft its own address",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
    },
    "wave-integrate-gift": {
     "decision": "steer",
