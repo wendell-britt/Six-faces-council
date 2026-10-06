@@ -137,3 +137,12 @@ CLAUDE.md, this file and the board.
   answers or lets the positions stand.
 - **For the app, not the book:** GRAMMAR.md §12g renamed fear's gold to wonder; `lib/decks.json` still says
   excitement in both fear cultivate rungs.
+
+## Open on 2026-10-06, from the WAVE teaching pass (`fr-demo` round 11)
+
+- **On the board:** question `wave-teacher` (A Master Yun recommended, B Captain Rue, C Cael) waits on Wendell;
+  positions `wave-taught-fight`, `wave-straight-first`, `wave-corners-from-spirits`, `wave-gates-in-the-world`
+  (a story draft, Proposed) and `wave-buttons-image-first` stand unless he flips them. Pass:
+  `/mnt/project-files/demo/wave-teaching-pass.md`; ledger `council/ledger/2026-10-06-demo-round11-pass.json`.
+- **Next:** after the read, the WAVE build on sprout #25 (draft) adds the taught fight, the gate ladder, the corner
+  unlocks and the image-first buttons, then reruns the bot test with the straight four only. Sprout #26 is closed.

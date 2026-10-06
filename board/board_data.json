@@ -10136,6 +10136,19 @@
       "wave-urges-all",
       "wave-welcome-cost"
      ]
+    },
+    {
+     "n": 11,
+     "questions": [
+      "wave-teacher"
+     ],
+     "positions": [
+      "wave-taught-fight",
+      "wave-straight-first",
+      "wave-corners-from-spirits",
+      "wave-gates-in-the-world",
+      "wave-buttons-image-first"
+     ]
     }
    ]
   },

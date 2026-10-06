@@ -1,0 +1,704 @@
+{
+ "date": "2026-10-06",
+ "battle": "fr-demo",
+ "round": 11,
+ "repo": "sprout",
+ "kind": "pass",
+ "note": "Council pass on Wendell's phone playtest of the WAVE battle (sprout #25): a teacher scene, trigrams rooted in the world's magic and how that differs from the settlement's push hands, and moves unlocked from basic to advanced. Round 10 on the board already held the build's positions, so this pass is round 11.",
+ "wendell": "Ok the user experience for the fight is pretty bad. It’s hard to know how to use the fight interface. We need a demo of someone teaching the character how to fight AND ALSO the trigrams need to be connected to the magic system of the world. It’s too abstract to make sense as it is now. We need a way to be able to integrate what the trigrams mean in the lore of the world. Specifically as it differs from the push hands of the settlement. \n\nAlso all 8 from the start seems like too much it would need to be a progression from\n Basic moves to advanced moves",
+ "pass_file": "/mnt/project-files/demo/wave-teaching-pass.md",
+ "positions": [
+  "wave-taught-fight",
+  "wave-straight-first",
+  "wave-corners-from-spirits",
+  "wave-gates-in-the-world",
+  "wave-buttons-image-first"
+ ],
+ "questions": [
+  "wave-teacher"
+ ],
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 42,
+   "name": "Windfall",
+   "cn": "益",
+   "pinyin": "yì",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "More is arriving than you put in.",
+   "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+   "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    9,
+    9,
+    7,
+    8,
+    8,
+    7
+   ],
+   "changing_lines": [
+    1,
+    2
+   ],
+   "n": 26,
+   "name": "Reserves",
+   "cn": "大畜",
+   "pinyin": "dà chù",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shows": "You have been storing this and never named the day.",
+   "image": "☰ heaven beneath ☶ mountain. The whole creative force held under a mountain and kept there.",
+   "situation": "Great accumulation. A large power restrained by something larger, so the holding builds it instead of souring it. The old counsel says to eat away from home and that crossing the great water is favourable, which reads as an instruction: the store was built for elsewhere, and now is when to spend it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 52,
+    "name": "Stillness",
+    "cn": "艮",
+    "pinyin": "gèn",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "The move is to stop while the wanting is still running.",
+    "image": "☶ mountain beneath ☶ mountain. A firm line rests at the top of each half, and both halves have stopped.",
+    "situation": "Keeping still. The old text works up the body — the toes, the calves, the waist, the trunk, the jaws — and says to still the back until the self drops out of view, after which you can cross your own courtyard alone. Stillness here is a practice with a sequence to it.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 19,
+   "name": "Spring",
+   "cn": "臨",
+   "pinyin": "lín",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "This is rising, and the window has an edge on it.",
+   "image": "☱ lake beneath ☷ earth. Two firm lines rising at the base, with the ground open above them.",
+   "situation": "Something is coming up and there is room above it. The old text puts a date on it, saying trouble arrives in the eighth month, which turns the reading into a clock: this is favourable and it is favourable now. Spring approaches, and the approach is the whole of it.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    9,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 33,
+   "name": "Retreat",
+   "cn": "遯",
+   "pinyin": "dùn",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Leaving is available, and the timing decides what you keep.",
+   "image": "☶ mountain beneath ☰ heaven. Two yielding lines have come up underneath, and the firm lines are moving off.",
+   "situation": "Withdrawal in good order, at the moment that keeps it from becoming a rout. The old text calls it favourable and adds that the small is favourable too, which is the qualification: you keep something by leaving early with it.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 12,
+    "name": "Stalemate",
+    "cn": "否",
+    "pinyin": "pǐ",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are seeking one game and wearing the face of the other.",
+    "image": "☷ earth beneath ☰ heaven. Each half is already where it wants to be, so nothing crosses the middle.",
+    "situation": "Heaven rises and it is already on top. Earth settles and it is already at the bottom. Both halves are content and the figure has no traffic in it. Obstruction here comes from satisfaction rather than from conflict, which is what makes it durable.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    7,
+    9,
+    6
+   ],
+   "changing_lines": [
+    5,
+    6
+   ],
+   "n": 45,
+   "name": "Gathering",
+   "cn": "萃",
+   "pinyin": "cuì",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "You are in a room and you may have forgotten why you came.",
+   "image": "☷ earth beneath ☱ lake. Water collecting on open ground and pooling wherever it can.",
+   "situation": "Assembly. The old text puts a king at the temple and calls for a great offering, so this gathering has a centre and a price. Where numbers collect, the commentary says to keep your weapons in repair, because crowds bring what crowds bring.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 35,
+    "name": "Sunrise",
+    "cn": "晉",
+    "pinyin": "jìn",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "This is becoming visible faster than you planned.",
+    "image": "☷ earth beneath ☲ fire. The sun clearing the horizon, with open ground under it.",
+    "situation": "Advance, and the light getting higher. The old text gives a prince horses in quantity and three audiences in a single day, so the figure is about recognition arriving quickly. Everything in it is going up.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    8,
+    9,
+    7,
+    6
+   ],
+   "changing_lines": [
+    2,
+    4,
+    6
+   ],
+   "n": 58,
+   "name": "Banter",
+   "cn": "兌",
+   "pinyin": "duì",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The exchange is already the whole of it.",
+   "image": "☱ lake beneath ☱ lake. An open line at the top of each half, one above the other: two mouths.",
+   "situation": "Joy, and specifically joy that gets exchanged. Two lakes side by side feed each other, and the old commentary makes learning the model — friends talking and practising together, the form of pleasure that keeps producing more of itself. The yielding line sits on the outside, so the openness is at the surface.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 42,
+    "name": "Windfall",
+    "cn": "益",
+    "pinyin": "yì",
+    "lines": [
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "shows": "More is arriving than you put in.",
+    "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+    "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "daemon-player",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    9,
+    7,
+    8,
+    9
+   ],
+   "changing_lines": [
+    3,
+    6
+   ],
+   "n": 30,
+   "name": "Burning",
+   "cn": "離",
+   "pinyin": "lí",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "You keep saying the same true sentence, and it is consuming its subject.",
+   "image": "☲ fire beneath ☲ fire. A yielding line held between two firm ones, twice over, and the whole figure is light.",
+   "situation": "Fire exists by holding to what it burns, which is why the character carries both brightness and clinging. The old counsel is to care for the cow — the docile thing that keeps producing. Radiance here is maintained by feeding it.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 51,
+    "name": "Shock",
+    "cn": "震",
+    "pinyin": "zhèn",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "shows": "It went off, and it will go off again.",
+    "image": "☳ thunder beneath ☳ thunder. One firm line arriving at the bottom, and then arriving again above it.",
+    "situation": "The shock comes, and then it comes a second time. The old text keeps a wonderful detail through it: laughing words, ha ha, and the man who keeps the sacrificial wine in the cup. Terror arrives from a hundred miles off, and the one still holding the ladle is the one who inherits.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  }
+ ],
+ "daemons": [
+  {
+   "daemon": "daemon-player",
+   "face": "diplomat",
+   "check": "PASS"
+  }
+ ],
+ "subagent_tokens": 23970,
+ "source_read": "sprout root-fight/index.html LESSONS and TRI; docs/design.md (push hands, the brother, the villages, Decided: the spirit fight, milestones 2 and 4, the cast)",
+ "unanimous": true,
+ "tests": [
+  "A cold phone player finishes the taught fight without outside help and says what Welcome does",
+  "That player Welcomes unprompted in the first real charge",
+  "Bot test rerun with the four straight gates only: full WAVE beats answer spam on HP left, four times in five"
+ ],
+ "product": "https://github.com/wendell-britt/sprout/pull/25 (draft; waits on this round's read)",
+ "lessons_pending": [],
+ "next": "Read round 11 on the board. Then the WAVE build on sprout #25 adds the taught fight, the gate ladder, the corner unlocks and image-first buttons; the five demo spirits follow."
+}
