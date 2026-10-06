@@ -3258,6 +3258,50 @@
    "auto": true,
    "pos": "The first time a player picks a face in a session, the screen opens with a short introduction: there are six ways of knowing a feeling, none ranks above another here, and the player picks the one that sounds most like how this feels or the one the body leans toward. Each face card also shows its question, such as 'Where is the presence you're reaching for?'. Later picks show one short line. This stands unless you flip it.",
    "why": "Your note: 'The 6 levels are useful but they come as a bit abrupt if peopel aren't familiar with them'. The questions already exist in the game. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md"
+  },
+  {
+   "id": "wave-exchange",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 7",
+   "auto": true,
+   "pos": "Every turn is an exchange. The charge shows its next move first, as its feeling's icon and its line, then the player picks one WAVE command, and then the charge acts back where the player sees it land. Welcome and Validate take no HP; each banks one breath, shown on screen, which Acknowledge spends for a harder hit or Exhale spends to integrate. This stands unless you flip it.",
+   "why": "Your overrule of wave-acknowledge: 'we want it to feel like turn based battle'. The research: Slay the Spire and Into the Breach show the foe's plan before the player acts, and Octopath banks points to spend. Source: /mnt/project-files/demo/wave-ack-research.md; daemon report council/daemons/reports/2026-10-06-sprout-demo-7-player.md (six-faces-council)"
+  },
+  {
+   "id": "wave-ack-break",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout demo 7",
+   "auto": true,
+   "pos": "Acknowledge comes back as the main move, pressed and never a quiz. Before Welcome has shown the feeling it glances: a small hit and no name. After, it lands as a Break: the daemon's name in large type, the spirit staggers and loses its next turn, and the main HP hit falls, harder when the stance controls the revealed feeling. The Challenger dissents: the glance should also cost the player their guard. This stands unless you flip it.",
+   "why": "Persona's One More and Octopath's Break turn found information into a hit that costs the foe its turn, and Undertale's ACT shows a non-violent move can carry a battle. Gating on Welcome keeps wave-reveal and stops Acknowledge spam. Source: /mnt/project-files/demo/wave-ack-research.md"
+  },
+  {
+   "id": "wave-feeling-word",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout demo 7",
+   "auto": true,
+   "pos": "When Acknowledge lands, the game names the daemon and the player names the feeling, picking from three finer words for the feeling shown (fear: wary, dread, uneasy) or giving a word of their own. No word is wrong. The word becomes the spirit's given name, such as 'Wary, the Protector', and returns in its lines and on its Witness Book page. Skipping lets the game pick, and story mode always lets the game pick. This stands unless you flip it.",
+   "why": "The book: 'name it to yourself, in one word'. Your round 5 overrule kept the foe's name with the game, as in Pokémon. Affect labeling research: putting a feeling into words 'diminished the response of the amygdala' (Lieberman 2007). Source: council/daemons/reports/2026-10-06-sprout-demo-7-emotional-body.md (six-faces-council)"
+  },
+  {
+   "id": "wave-charge-build",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout demo 7",
+   "auto": true,
+   "pos": "In prompted and integrated modes the spirit is built from fixed parts. The feeling the player offers sets its element, palette and moves. The belief comes from the player's own intake picks and sets its line and what it pushes on. The daemon is rolled, since any daemon carries any belief. No model reads the player, no free text is parsed, and every answer stays on the device. Story mode rolls every part. This stands unless you flip it.",
+   "why": "Your words: 'generate a spirit in alignment with the emergent charge the player is experiencing'. Games that do this well build from parts the player recognises (Sea of Solitude, Celeste's Badeline); reading the player silently or by a model risks misreading them. Keeps wave-offered-feeling, enc-who-carries and ya-real-steps A. Source: /mnt/project-files/demo/wave-ack-research.md"
   }
  ],
  "questions": [
@@ -6125,6 +6169,34 @@
      "v": "colours",
      "label": "C. The colours, as now",
      "c": "Magenta, Red, Amber, Orange, Green, Teal, with the new introduction above them. The names stay as they are, and the introduction does all the explaining."
+    }
+   ]
+  },
+  {
+   "id": "wave-checkin-depth",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "sprout demo 7",
+   "q": "How much should the check-in ask before a charge the player brings?",
+   "why_you": "The record holds the feeling, and the book's Wake Up names where it sits, but how much a stranger on a phone is asked to disclose in the first hour is your call. The answer decides the screens, any body-spot art, and how much one spirit differs from another.",
+   "not_before": "The inputs past the feeling came from this round's research into your overrule of wave-acknowledge.",
+   "options": [
+    {
+     "v": "feeling-strength",
+     "label": "A. Feeling and how strong (recommended)",
+     "c": "Two taps, each skippable. Strength sets the spirit's HP and size. Where it sits and the thought are offered later, on demand."
+    },
+    {
+     "v": "feeling-only",
+     "label": "B. Feeling only, as ruled",
+     "c": "It needs nothing new built, and every spirit of one element looks alike, so the spirit matches the charge less closely."
+    },
+    {
+     "v": "full",
+     "label": "C. Feeling, strength, where it sits, and the thought",
+     "c": "Closest to the book's Wake Up. Four screens before each charge the player brings, plus body-spot art on every spirit."
     }
    ]
   }
