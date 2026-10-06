@@ -8218,6 +8218,109 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "oag-block-size": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-block-carry": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-appreciate-input": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-trailhead": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-words-private": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-faces-primer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "board-auto-pickup-live": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "pod-art-recolor": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-channel-job": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-neutrality-job": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "wave-ack-research": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "wave-spirit-from-charge": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-body-figure": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-body-sides": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-body-device-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "oag-body-over-time": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "wave-acknowledge-turn": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "steer": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I’m looking for. Specifically. \n\nUsing a move IS acknowledging the spirit welcoming is like listening. ",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
    }
   },
   "questions": {
@@ -8855,6 +8958,25 @@
     "label": "B, Two signals",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
+   },
+   "oag-faces-names": {
+    "decision": "plain",
+    "label": "A, Plain words, with the colour as a tag",
+    "steer": "There should even be a popup page that allows the player to learn more about each of them",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "pickup-send-permission": {
+    "decision": "yes",
+    "label": "A, Yes, restore it",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "pickup-where": {
+    "decision": "fresh",
+    "label": "A, A fresh session for each Send, carrying the council repo",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
    }
   },
   "causes": {
