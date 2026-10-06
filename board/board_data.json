@@ -3358,6 +3358,48 @@
    "auto": true,
    "pos": "Validate and Exhale take Root's seize (拿 na). After a right answer the player can keep holding it. Holding is Validate: the player stays with the spirit while its charge drains, and the hold writes its Witness Book page (wave-record). Letting go in the bright window is Exhale. A plain release grounds the charge (wave-release-grounds). Holding from the stance the spirit's feeling feeds is Root's borrowing (借 jie), and an Exhale from there integrates the daemon. Hold too long and the spirit slips free and strikes. This stands unless you flip it.",
    "why": "Root's seize: 'keep holding the answer as it lands and you hold the stumbling attacker while their composure drains. Release while the bar is bright to issue... Seize from the stance their channel feeds and you borrow their force' (root-fight/index.html). With moves as Acknowledge and listening as Welcome, seize is the council's reading of the two remaining steps."
+  },
+  {
+   "id": "wave-offer-opens",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout demo 10",
+   "auto": true,
+   "pos": "When the player brings their own charge, the three questions come before the battle starts, as its opening Welcome: which feeling is moving, how strong it is, and what it is pushing them to do. The spirit then starts with its stance known, so the first Welcome in the battle shows the gate coming. This stands unless you flip it.",
+   "why": "wave-spirit-from-charge put the questions in the first two Welcomes, and wave-welcome-listen gave those Welcomes to the stance and the gate. Asking first keeps both: the spirit is made from the player's answers, and every Welcome in the fight is listening. Built in sprout #26 (slice/main.js, startEncounter)."
+  },
+  {
+   "id": "wave-exhale-ends",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout demo 10",
+   "auto": true,
+   "pos": "An Exhale ends the fight only when it empties the charge. With charge left, it issues and the fight goes on, and the player answers the next strike. This stands unless you flip it.",
+   "why": "wave-damage has Exhale end the fight, and Root's issue is a strike into a weak moment, not an ending. If any Exhale ended it, one right answer and one hold would finish every fight. Built in sprout #26 (slice/wave.js)."
+  },
+  {
+   "id": "wave-urges-all",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "sprout demo 10",
+   "auto": true,
+   "pos": "All eight urges show at once when the player says what the charge is pushing them to do, so the one they feel is always there. The wording of each is a placeholder from its daemon's aim. This stands unless you flip it.",
+   "why": "wave-spirit-from-charge left how many show as a placeholder until a playtest. A random four could leave out the true one. Built in sprout #26 (data/daemons.json, urge)."
+  },
+  {
+   "id": "wave-welcome-cost",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout demo 10",
+   "auto": true,
+   "pos": "The playtest checks Welcome's cost first. A bot that Welcomes before every answer beats answer spam in 5 of 5 fights, but it ends each fight at 8 of 20 HP, and HP carries between fights, so a second fight often knocks it down. The numbers stay as they are until the playtest. This stands unless you flip it.",
+   "why": "tools/test-wave.mjs's bot test, and a two-fight play in Chromium where the bot started the second fight at 8 HP and was knocked down. Sprout #26."
   }
  ],
  "questions": [
@@ -9768,6 +9810,16 @@
       "wave-trigram-moves",
       "wave-welcome-listen",
       "wave-seize-validate"
+     ]
+    },
+    {
+     "n": 10,
+     "questions": [],
+     "positions": [
+      "wave-offer-opens",
+      "wave-exhale-ends",
+      "wave-urges-all",
+      "wave-welcome-cost"
      ]
     }
    ]
