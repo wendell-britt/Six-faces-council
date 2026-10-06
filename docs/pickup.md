@@ -35,6 +35,9 @@ What the first firings showed, 2026-10-06:
   `pickup/last` too.
 - Only the conversation a routine posts into can change its prompt. To change this one, delete it and create a new
   one from a project thread, then put the new id in `PICKUP_TRIGGER` and in the daily routine's step 1b.
+- That firing's board read ran while another thread was doing one, and both recorded the same six saves. Their
+  merge put conflict markers into main's `board_data.json` (fixed in 2b06dea). A board read that starts while
+  another runs should wait for it and then read only what is still unrecorded.
 - When the coordinator is replaced, check that this routine still reaches it (`get_trigger`, `last_run`).
 
 ## The daily safety net
