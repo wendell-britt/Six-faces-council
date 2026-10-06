@@ -9529,15 +9529,9 @@
     },
     {
      "n": 7,
-     "questions": [
-      "wave-checkin-depth"
-     ],
+     "questions": [],
      "positions": [
-      "wave-ack-research",
-      "wave-exchange",
-      "wave-ack-break",
-      "wave-feeling-word",
-      "wave-charge-build"
+      "wave-ack-research"
      ]
     },
     {
