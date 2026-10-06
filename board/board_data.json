@@ -2600,6 +2600,17 @@
    "auto": true,
    "pos": "The order of work: the encounter loop on the strip (Act 0's next task), the five demo spirits, the scene player and stager with a camera vocabulary, the settlement map and interiors, quests with schedules and the orientation walk, the scene editor, then packaging. Each is its own thread and ends with something you can play. This stands unless you flip it.",
    "why": "Every later step needs a loop to sit in, and the orientation and milestones are scenes, so the scene player comes before the town. Source: /mnt/project-files/demo/demo-scope-map.md"
+  },
+  {
+   "id": "dy-2026-10-06-grow",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "daily",
+   "auto": true,
+   "pos": "The board sync lost your rows twice on 4 October, a battle's round 2 and three of your steers. The daily session's Grow up run adds twelve tests that pin how sync_board.py and the git merge driver combine rows from two sessions, and the steward now runs them on every pull request. Run against the code from before each fix, the tests fail on exactly those two losses. This merges at your next board read unless you flip it.",
+   "why": "A future change to either merge file that would drop a row turns the steward red before it reaches main. It changes no board behaviour. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/40"
   }
  ],
  "questions": [
