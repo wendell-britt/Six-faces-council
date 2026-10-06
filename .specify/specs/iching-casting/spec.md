@@ -65,4 +65,4 @@ Challenger grades whether any cast changed an output.
 - [x] `council/iching/hexagrams.yaml` and `cast.py`, synced to every council repo and installed by `install.py`.
 - [x] The skill's pass shape: every face casts first, and casts for each daemon it sends.
 - [x] Each daemon report opens with a section on its cast, and `check_report.py` requires it.
-- [ ] Ships as a board position that merges on the next board read unless Wendell flips it.
+- [x] Ships as a board position that merges on the next board read unless Wendell flips it (`iching-ship` stood, board read 11).
