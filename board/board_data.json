@@ -2841,6 +2841,50 @@
    "auto": true,
    "pos": "The one-shipment plan written earlier today in the MTGOA project (about $3,200, all backers at once, public launch around December 1) is superseded by rolling batches. It stays on file with a note pointing to this pass. This stands unless you flip it.",
    "why": "Your message chose rolling batches. Transcend and include keeps the earlier plan visible rather than deleting it. Source: /mnt/project-files/launch/SHIPPING_PLAN_2026-10-06.md in the MTGOA project"
+  },
+  {
+   "id": "board-all-work",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "All work in the Flirtcraft project goes through this board from now on. A thread that starts new work adds its rows here and names them in its reply.",
+   "why": "Your words in the podcast thread on 2026-10-06: \"All work moving forward in the project should go to the council board\". A chat answer counts as a ruling under the working rules."
+  },
+  {
+   "id": "pod-page-merges",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The podcast page merges on your next board read unless you flip this. It adds /podcast to the site, linked from the header and the footer, with episode 1 marked coming soon, a space for the player, and listen buttons that stay hidden until each link exists.",
+   "why": "Your ask: a place on the site for people to check out the podcast. Type check and the service-worker tests pass, and the preview is https://flirtcraft-git-claude-project-f439b3-wendells-projects-9c1b16dc.vercel.app/podcast. It names only you, as the about page already does. Source: flirtcraft pull request #9"
+  },
+  {
+   "id": "pod-art-drafts",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The council drafts three cover designs for the podcast in Flirtcraft's own look (the serif wordmark, ink on warm paper, the gold accent) and brings them back as a question for you to pick one. Each is a 3000 by 3000 pixel square, which both Spotify and Apple Podcasts accept, and stays readable as a small thumbnail.",
+   "why": "Your ask to create podcast art. The look is already ruled in the live site's design, so the council can draft without asking you first; choosing the cover is yours. Source: flirtcraft app/globals.css"
+  },
+  {
+   "id": "pod-upload-yours",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "Uploading episode 1 needs your sign-in, so the council prepares everything else: the show description, the episode title and notes, and the cover. Once you choose a host, the clicks that are yours go on the Your steps tab, and the page's player and listen links are wired from the links you get.",
+   "why": "Creating an account and publishing under your name are reserved to you. Source: the reserved list (position reserved)."
   }
  ],
  "questions": [
@@ -5395,6 +5439,57 @@
      "v": "kdp-direct",
      "label": "Send backer copies straight from KDP, using the $10.40 allowance for KDP's shipping",
      "c": "About 12 a month instead of 7 or 8, so the queue ends around late 2028. Copies arrive unsigned in Amazon boxes, and the 128 pins go out in a separate mailing."
+    }
+   ]
+  },
+  {
+   "id": "pod-host",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "podcast",
+   "q": "Where should the Flirtcraft podcast be hosted? The council recommends Spotify for Creators.",
+   "why_you": "It needs your account, and the host decides where listeners find the show and who holds its feed.",
+   "not_before": "Episode 1 was recorded today, 2026-10-06, so hosting only became real now.",
+   "options": [
+    {
+     "v": "spotify-creators",
+     "label": "Spotify for Creators (recommended)",
+     "c": "It is free, puts the show on Spotify directly, and gives an RSS feed you can submit to Apple Podcasts and others. The council writes your setup steps for it."
+    },
+    {
+     "v": "other-host",
+     "label": "Another podcast host, such as Buzzsprout or Transistor",
+     "c": "Most charge monthly and give more analytics. Name it in the steer box and the council writes steps for that one."
+    },
+    {
+     "v": "already",
+     "label": "It is already uploaded somewhere",
+     "c": "Put the link in the steer box and the council wires the player into the page."
+    }
+   ]
+  },
+  {
+   "id": "pod-ep1-details",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "podcast",
+   "q": "What is episode 1 called, and what is it about?",
+   "why_you": "Only you know what was said on the recording. The title and summary go on the site and on Spotify.",
+   "not_before": "The page went up today with the placeholder title \"Episode 1\".",
+   "options": [
+    {
+     "v": "steer",
+     "label": "I will write the title and a line about it in the steer box (recommended)",
+     "c": "The council uses your words as written on the page and in the upload."
+    },
+    {
+     "v": "draft-from-audio",
+     "label": "Draft them from the audio",
+     "c": "You attach the audio in the podcast thread and the council drafts a title, summary and show notes for you to approve."
     }
    ]
   }
@@ -8503,6 +8598,29 @@
       "ship-address-per-batch",
       "ship-sales-alongside",
       "ship-plan-superseded"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-podcast-launch",
+   "name": "Launching the Podcast",
+   "repo": "flirtcraft",
+   "element": "fire",
+   "record": "flirtcraft pull request #9",
+   "intro": "It wants the Flirtcraft podcast heard: episode 1 on Spotify with its own cover art, and a page on the Flirtcraft site where people find it. The page is built and waits on a preview; the host, the cover and the episode's title are open.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "pod-host",
+      "pod-ep1-details"
+     ],
+     "positions": [
+      "pod-page-merges",
+      "pod-art-drafts",
+      "pod-upload-yours",
+      "board-all-work"
      ]
     }
    ]
