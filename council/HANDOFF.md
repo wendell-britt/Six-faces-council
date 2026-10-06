@@ -123,3 +123,16 @@ CLAUDE.md, this file and the board.
 - **Morning brief to the board:** Wendell's context note, 23:26 UTC: "I want to make sure the work from the morning
   brief is coming into the council board as well". Nothing in the three repos names a morning brief, so the next
   session that takes this finds where that brief is produced and routes its items to the board through the reach test.
+
+## Open on 2026-10-06, from the Flirtcraft book outline thread (battle `fr-book`)
+
+- **Outline drafted:** flirtcraft `book/OUTLINE.md` (flirtcraft #11, docs only, marked ready), page
+  https://claude.ai/artifact/Gojd8ok8fbtDqcJoysmwCr. Seven parts, twenty-seven chapters, built on one rep, crafts in
+  the order of service. Drafted from the record, not a full six-face pass. Prose stays Wendell's.
+- **On the board:** question `book-oracle-in-print` waits on him; positions `book-spine-one-rep`,
+  `book-crafts-service-order`, `book-binds-after-crafts`, `book-part-zero-stories` and `book-plain-first` stand
+  unless he flips them.
+- **Next, each its own thread:** the Part 0 interview (one story per thread, as `fcm-p8b-interview`), once he
+  answers or lets the positions stand.
+- **For the app, not the book:** GRAMMAR.md §12g renamed fear's gold to wonder; `lib/decks.json` still says
+  excitement in both fear cultivate rungs.
