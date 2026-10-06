@@ -2948,6 +2948,28 @@
    "auto": true,
    "pos": "Emotional First Aid stays outside this plan. This stands unless you flip it.",
    "why": "Its repo holds a README and the council install, with no manuscript and no spec, and you asked about Friendcraft's app and book. Source: emotional-first-aid git log"
+  },
+  {
+   "id": "steps-phone-view",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "Your steps gets an \"I'm on my Phone / Computer\" switch, and this merges on your next board read unless you flip it. On Phone, every step that needs a computer folds to one line with its due date, each list counts its computer-only steps, and a line says how many you can do now.",
+   "why": "Your words on 2026-10-06: \"be able to tag activities as needing a computer\". Every step already carried a phone or computer tag, so no step changes. Source: six-faces-council pull request #43"
+  },
+  {
+   "id": "pod-zoom-phone",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "Every podcast step that needs the Zoom recording or an audio upload is marked Needs a computer until a phone route is proven. The council tests the Zoom share link's download on a phone with you before it changes any step.",
+   "why": "The Zoom connector cannot reach zoom.us from Claude's cloud sessions (the Anastasia's campaign list, 2026-10-06), and no phone download has been tried yet."
   }
  ],
  "questions": [
