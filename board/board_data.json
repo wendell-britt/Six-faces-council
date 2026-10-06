@@ -3258,6 +3258,29 @@
    "auto": true,
    "pos": "The first time a player picks a face in a session, the screen opens with a short introduction: there are six ways of knowing a feeling, none ranks above another here, and the player picks the one that sounds most like how this feels or the one the body leans toward. Each face card also shows its question, such as 'Where is the presence you're reaching for?'. Later picks show one short line. This stands unless you flip it.",
    "why": "Your note: 'The 6 levels are useful but they come as a bit abrupt if peopel aren't familiar with them'. The questions already exist in the game. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md"
+  },
+  {
+   "id": "oag-channel-job",
+   "faces": [
+    "architect",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "After a player names a channel, the face screen asks how the emotion is doing its job, using your questions for Anger, Sadness, Fear and Joy with your book's job line above them. A face can be picked only once every question is answered. The answers show in the list under the map and are never stored. This stands unless you flip it.",
+   "why": "Your message of 20:16: 'when a player chooses an emotional Chanel they have to explain how the emotion is doing its job'. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md, addendum (pull request #260)"
+  },
+  {
+   "id": "oag-neutrality-job",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "Neutrality's job is the one your book gives it: detachment and perspective, the view that lets you see the whole. Its two questions are 'What are you stepping back from?' and 'From there, what can you see of the whole?'. The questions are the council's wording. This stands unless you flip it.",
+   "why": "You asked for help with Neutrality's job, and your book already answers it: 'Neutrality's job is detachment and perspective—the view that lets you see the whole' (Mastering the Game of Allyship, compiled 29 May 2026). Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md, addendum"
   }
  ],
  "questions": [
