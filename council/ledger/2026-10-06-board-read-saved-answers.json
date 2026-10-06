@@ -1,0 +1,205 @@
+{
+ "id": "2026-10-06-board-read-saved-answers",
+ "date": "2026-10-06",
+ "project": "six-faces-council",
+ "cause": "board-read",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "source": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "read_at": "2026-10-06T17:52:00Z",
+ "trigger": "Wendell, 2026-10-06: \"Board updated\"",
+ "found_by": "board/unrecorded.py",
+ "positions": {
+  "dy-2026-10-05-clean": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:09:41.781Z"
+  },
+  "dy-2026-10-06-grow": {
+   "status": "stands",
+   "saved_at": "2026-10-06T17:45:01.414Z"
+  },
+  "pr-design-applied": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:10:18.115Z",
+   "via": "battle:fr-ranks-and-badges"
+  },
+  "pr-inner-demons": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:10:09.932Z",
+   "via": "battle:fr-ranks-and-badges"
+  },
+  "pr-inward-labyrinth": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:09:49.380Z",
+   "via": "battle:fr-ranks-and-badges"
+  },
+  "pr-subtype-arms": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:09:56.714Z",
+   "via": "battle:fr-ranks-and-badges"
+  },
+  "ya-act0-shape": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:08:38.932Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-allyship-read": {
+   "status": "stands",
+   "saved_at": "2026-10-06T01:00:00.197Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-dialogue-closed": {
+   "status": "stands",
+   "saved_at": "2026-10-06T01:00:21.068Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-encounter-loop": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:09:09.916Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-feels-now": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:18:55.037Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-first-friend": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:09:21.016Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-gets-us": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:18:45.919Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-gold-binds": {
+   "status": "stands",
+   "saved_at": "2026-10-06T01:01:18.278Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-grid-pace": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:08:53.198Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-in-scope": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:07:38.801Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-intake": {
+   "status": "overrule",
+   "saved_at": "2026-10-05T21:08:24.524Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-life-domains": {
+   "status": "stands",
+   "saved_at": "2026-10-06T00:59:41.997Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-mode3-gold": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:18:25.371Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-modes-wording": {
+   "status": "stands",
+   "saved_at": "2026-10-06T01:00:09.514Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-pull-scene": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:18:35.903Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-reservations": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:19:22.469Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-story-entry": {
+   "status": "stands",
+   "saved_at": "2026-10-06T01:01:28.579Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-test-result": {
+   "status": "stands",
+   "saved_at": "2026-10-06T01:01:04.160Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-three-modes": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:18:14.404Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-what-true": {
+   "status": "stands",
+   "saved_at": "2026-10-05T21:19:09.171Z",
+   "via": "battle:fr-act-zero"
+  }
+ },
+ "questions": {
+  "ya-domains": {
+   "choice": "both",
+   "saved_at": "2026-10-05T21:17:40.188Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-feeling": {
+   "choice": "triumph",
+   "saved_at": "2026-10-05T21:03:26.996Z",
+   "choices": [
+    "triumph",
+    "wonder",
+    "poignance"
+   ],
+   "via": "battle:fr-act-zero"
+  },
+  "ya-real-steps": {
+   "choice": "offered-local",
+   "saved_at": "2026-10-05T21:06:20.284Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-road-gold": {
+   "choice": "gold-is-gold",
+   "saved_at": "2026-10-06T01:00:45.539Z",
+   "via": "battle:fr-act-zero"
+  },
+  "ya-the-pull": {
+   "choice": "brothers-call",
+   "saved_at": "2026-10-05T21:06:34.144Z",
+   "via": "battle:fr-act-zero"
+  }
+ },
+ "steers": [
+  {
+   "row": "ya-intake",
+   "text": "I think we need to think about domains a bit more. These are what the different channels teach you and flavors their starting village, but the domains should be more aligned with the Allyship domains or the LEnses Domains (which I can provide context on) ",
+   "savedAt": "2026-10-05T21:08:24.524Z"
+  },
+  {
+   "row": "ya-three-modes",
+   "text": "\"and asks for nothing outside the game.\" well they ask for information about the players life outside of the game. ",
+   "savedAt": "2026-10-05T21:18:14.404Z"
+  },
+  {
+   "row": "ya-domains",
+   "text": "The lenses domains haven't been formalized, but if the Allyship Domains are about helping other people the lenses domains could be seen about helping one's self. But really it's about life domains, Relationships, Career, Money, Creativity etc. I think players can choose which ones where they don't get to choose in the same way re: allyship",
+   "savedAt": "2026-10-05T21:17:40.188Z"
+  },
+  {
+   "row": "ya-feeling",
+   "text": "Really walking the yellow brick road should afford all 6 feelings because they are all gold bricks, but triumph wonder and poignance are the ones I want to feel in designing and implementing this",
+   "savedAt": "2026-10-05T21:03:26.996Z"
+  },
+  {
+   "row": "ya-real-steps",
+   "text": "honestly I think all three are necessary. IT doesn't violate because real work action is the highest killed play avaiable\n\nIt does bring into awarness that there would be different modes of play that players can switch throuh 1) the full story game (no outside action needed and skipped act 0) , 2) semi immersive game that calculates and aligned action at each save point and prompts the player when they come back into the game, what the stakes are 3) Where you can actually have players metabolize their outer work into ingame success. Having the 3 options means players won't have an incentive to cook the books, just aligmed with which type of play makes sense for where they are at, and the modeas can be shifted in the middle fo play throughs",
+   "savedAt": "2026-10-05T21:06:20.284Z"
+  }
+ ],
+ "acted_on": [
+  "dy-2026-10-05-clean and dy-2026-10-06-grow stood, and both say their pull request merges at the next board read: #39 and #40 get the automerge label",
+  "Act 0 (fr-act-zero) answers from rounds 1 to 4 and ranks-and-badges (fr-ranks-and-badges) round 6 answers recorded here; the round 4 and round 6 answers, with their steers, wait on those battles' own threads for the next round"
+ ]
+}
