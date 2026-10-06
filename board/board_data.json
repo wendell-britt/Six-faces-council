@@ -3136,6 +3136,28 @@
    "auto": true,
    "pos": "Saving on the board will wake Claude. A Send to Claude button on the board starts a board read in a new thread, which records your answers and passes each one to the thread that owns it. The daily run also runs board/unrecorded.py, so any answer nobody picked up is caught within a day.",
    "why": "Your question in the podcast thread: \"What triggers you to check the board and how can we automate that?\" Nothing does today. Your podcast answers sat unread for half an hour, and the daily run of 2026-10-04 found 23 saves no session had read. Source: board/unrecorded.py (six-faces-council)"
+  },
+  {
+   "id": "pod-art-recolor",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The council redraws the three covers with one strong color change from Mastering Allyship's orange to violet, keeping each layout, so the show reads as its own and still as a sibling of the book. The new drafts replace the old ones in pod-cover-pick before you pick. This stands unless you flip it.",
+   "why": "Your steer on pod-art-ma: \"I think it should make one strong color change so people can differentiate it from MTGOA.\" Source: council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+  },
+  {
+   "id": "wave-ack-research",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 7",
+   "auto": true,
+   "pos": "The council researches two questions before Acknowledge comes back: what makes a turn-based battle feel like one, and how a game can generate a spirit that matches the charge the player is feeling right now. It brings Acknowledge back as a new position built on that research. The offered-feeling mode and the integration ladder go ahead meanwhile. This stands unless you flip it.",
+   "why": "Your overrule of wave-acknowledge: \"I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing\". Source: council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
   }
  ],
  "questions": [
@@ -7914,6 +7936,42 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   },
+   "pod-art-ma": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "pod-ep1-from-audio": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "board-auto-pickup": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "wave-acknowledge": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "wave-offered-feeling": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+   },
+   "wave-integrate-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
    }
   },
   "questions": {
@@ -9256,6 +9314,13 @@
       "wave-offered-feeling",
       "wave-integrate-ladder"
      ]
+    },
+    {
+     "n": 7,
+     "questions": [],
+     "positions": [
+      "wave-ack-research"
+     ]
     }
    ]
   },
@@ -9322,6 +9387,13 @@
       "pod-cover-pick"
      ],
      "positions": []
+    },
+    {
+     "n": 4,
+     "questions": [],
+     "positions": [
+      "pod-art-recolor"
+     ]
     }
    ]
   }
