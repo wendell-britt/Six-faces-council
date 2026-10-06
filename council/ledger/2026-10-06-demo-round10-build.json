@@ -1,0 +1,14 @@
+{
+ "date": "2026-10-06",
+ "battle": "fr-demo",
+ "round": 10,
+ "repo": "sprout",
+ "kind": "positions",
+ "note": "The WAVE build. Sprout #26 builds the standing positions wave-trigram-moves, wave-welcome-listen, wave-seize-validate, wave-spirit-from-charge, wave-offered-feeling and wave-integrate-ladder. The build's own choices go on the board as positions that stand unless Wendell flips them.",
+ "positions": ["wave-offer-opens", "wave-exhale-ends", "wave-urges-all", "wave-welcome-cost"],
+ "questions": [],
+ "product": "https://github.com/wendell-britt/sprout/pull/26",
+ "source_read": "sprout root-fight/index.html: 'How it works', GATE next cycles, judge(), SEIZE, HABITS; council/daemons/daemons.yaml aims",
+ "tests": "npm run test:wave (42 checks, bot test 5 of 5); check:data, test:encounters, test:act-zero, test:slice, test:ranks, test:maps pass; two strip fights played in Chromium",
+ "lessons_pending": []
+}
