@@ -1,0 +1,49 @@
+{
+ "date": "2026-10-06",
+ "read_at": "2026-10-06T20:40:00Z",
+ "battle": "fr-demo",
+ "round": 9,
+ "repo": "sprout",
+ "kind": "positions",
+ "note": "The fr-demo saves below were recorded first by board read 2004 (council/ledger/2026-10-06-board-read-2004.json), which handed wave-acknowledge-turn's steer to the WAVE thread. They are copied here so this round's positions carry their source.",
+ "answers": {
+  "wave-ack-research": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:27:31.075Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-spirit-from-charge": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:27:42.705Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-acknowledge-turn": {
+   "kind": "position",
+   "savedAt": "2026-10-06T20:32:10.560Z",
+   "steer": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I’m looking for. Specifically. \n\nUsing a move IS acknowledging the spirit welcoming is like listening. ",
+   "via": "battle:fr-demo",
+   "status": "overrule"
+  }
+ },
+ "positions": [
+  "wave-trigram-moves",
+  "wave-welcome-listen",
+  "wave-seize-validate"
+ ],
+ "questions": [],
+ "record": "/mnt/project-files/demo/wave-acknowledge-research.md, round 9",
+ "source_read": "sprout root-fight/index.html: ROOT rules, TRI gate table, 'How it works', lessons listen and identify, SEIZE",
+ "lessons_pending": [
+  {
+   "face": "architect",
+   "source": "position wave-acknowledge-turn overruled, fr-demo round 8",
+   "wendell": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I’m looking for.",
+   "lesson": "Before researching other games for a mechanic, look in Wendell's own: Root already had shown strikes, extra turns from reading and a type chart."
+  }
+ ],
+ "next": "Once round 9 stands, the WAVE build goes on sprout #24's branch: Root's trigram answer as Acknowledge, Welcome as the hold, seize as Validate and Exhale."
+}
