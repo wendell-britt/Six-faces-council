@@ -74,3 +74,8 @@ CLAUDE.md, this file and the board.
   `wave-ack-research` stands; the WAVE thread does the research and brings Acknowledge back as a new position.
   `wave-offered-feeling` and `wave-integrate-ladder` stood. Lesson pending for the Architect in
   `council/ledger/2026-10-06-board-read-2002.json`.
+  Done 2026-10-06 (round 8, `council/ledger/2026-10-06-demo-round8-research.json`, research in
+  `/mnt/project-files/demo/wave-acknowledge-research.md`): positions `wave-spirit-from-charge` and
+  `wave-acknowledge-turn` are on the board and stand unless he flips them. Then the WAVE build goes on sprout #24's
+  branch: Welcome asks feeling and strength, then the urge; the daemon's next push is shown; Acknowledge always lands,
+  with an extra turn when it catches a wind-up.

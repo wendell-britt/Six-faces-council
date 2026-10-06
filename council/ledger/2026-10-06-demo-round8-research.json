@@ -1,0 +1,28 @@
+{
+ "date": "2026-10-06",
+ "battle": "fr-demo",
+ "round": 8,
+ "repo": "sprout",
+ "kind": "research",
+ "record": "/mnt/project-files/demo/wave-acknowledge-research.md",
+ "called_by": "wave-ack-research (board read 2002): Wendell overruled wave-acknowledge, \"I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing\"",
+ "code_read": "sprout pull request #24 head b4e8ab7: slice/encounter.js draws the daemon from a flat weighted table (data/encounters.json) and wears the first block's element; slice/fight.js runs stance, Listen or Offer, then the foe pushes. WAVE moves not built yet.",
+ "sources": [
+  "Slay the Spire enemy intents (LessWrong review)",
+  "Shin Megami Tensei Press Turn system (Siliconera)",
+  "Undertale ACT and MERCY (Giant Bomb)",
+  "Persona 4 shadows and acceptance (Superjump)",
+  "Yale RULER Mood Meter, two axes",
+  "Lieberman et al. 2007, Psychological Science 18(5), affect labeling",
+  "SPARX, GNATs (TIME on the trial)"
+ ],
+ "positions": ["wave-spirit-from-charge", "wave-acknowledge-turn"],
+ "questions": [],
+ "replaces": {"wave-acknowledge": "wave-acknowledge-turn"},
+ "faces_note": "Research round, not a full six-face pass: no casts or daemon subagents were run.",
+ "tests_set": [
+  "The round 5 bot test carries over: full WAVE beats Acknowledge spam on HP left and finishes before knockdown in at least four of five fights",
+  "Playtest: how many urges the second Welcome shows at once"
+ ],
+ "next": "Once both positions stand, the WAVE build thread builds Welcome's two asks, the shown push, and Acknowledge on sprout #24's branch."
+}
