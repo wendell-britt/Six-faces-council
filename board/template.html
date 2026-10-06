@@ -118,6 +118,16 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-step summary{cursor:pointer;color:var(--muted)}
 .st-step textarea{margin-top:6px}
 .st-state{font-size:.8rem;color:var(--muted);min-height:1.2em}
+/* Where you are (Wendell, 2026-10-06: "be able to tag activities as needing a computer"). On a phone, steps that need a
+   computer fold to one line so the list shows what can be done now. The choice is kept on this device only. */
+.st-where{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:14px 0 4px}
+.st-where .seg button{padding:8px 14px}
+.st-sum{font-size:.9rem;color:var(--muted);margin:0}
+.st-chip.st-pc{background:var(--warn-bg);color:var(--warn);font-weight:600}
+.st-step.st-later{grid-template-columns:44px minmax(0,1fr);opacity:.62;padding:8px 0}
+.st-step.st-later .st-tick{width:28px;height:28px;font-size:.85rem;border-width:1px}
+.st-step.st-later .st-do{font-weight:500;font-size:.95rem}
+.st-later-note{font-size:.85rem;color:var(--warn);margin:0}
 /* Due dates (Wendell, 2026-10-06): every step has a deadline, so a step that slips shows up as charge to work with. */
 .st-due-over{color:var(--warn);font-weight:600}
 .st-charge{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem;margin:0}
@@ -198,6 +208,14 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 
 <section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
   <p class="lede" style="margin-top:14px">Only the steps nobody else can take, because they need your accounts, your money or your eyes. Each one says where to go, what to enter, how you will know it worked, and when it is due.</p>
+  <div class="st-where" id="st-where">
+    <span class="st-sum">I'm on my</span>
+    <div class="seg" role="group" aria-label="Which device you are on">
+      <button type="button" data-where="phone" aria-pressed="false">Phone</button>
+      <button type="button" data-where="computer" aria-pressed="false">Computer</button>
+    </div>
+    <p class="st-sum" id="st-where-sum"></p>
+  </div>
   <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
   <div id="steps-todo"></div>
   <div id="steps-done"></div>
@@ -657,6 +675,9 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && bt) closeB
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
 const stDrafts = {}, stSecrets = {};
+// Which device Wendell is on. Starts from the screen (a touch screen counts as a phone) and keeps his choice on this device.
+let stWhere = (() => { try { const v = localStorage.getItem('st-where'); if (v === 'phone' || v === 'computer') return v; } catch {} return matchMedia('(pointer: coarse)').matches ? 'phone' : 'computer'; })();
+const stLater = s => stWhere === 'phone' && s.device === 'computer' && !s.done && !s.retired;
 const stHref = h => /^https:\/\//.test(h || '') ? h : '';
 const stOf = id => Object.entries(stSteps).filter(([,s]) => s.list === id).sort((a,b) => (a[1].n||0) - (b[1].n||0));
 const stReq = arr => arr.filter(([,s]) => !s.optional && !s.retired);
@@ -680,6 +701,7 @@ const stClosed = s => !!(s.done || s.retired);
 const stFinished = id => { const all = stOf(id); return all.length > 0 && stReq(all).every(([,s]) => s.done); };
 const stOpenGroups = new Set();
 function stStep(id, s){
+  if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
   const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}</div></div>` : '';
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
@@ -689,7 +711,7 @@ function stStep(id, s){
   const due = s.due && !s.done ? `<div class="st-row"><span>Due</span><div class="st-val${over ? ' st-due-over' : ''}">${esc(stDueText(s.due))}</div></div>` : '';
   const charge = over ? `<p class="st-charge">This one slipped. Whatever is in the way is charge to metabolize: name it in the note below, or move the date and say why. Claude reads both.</p>` : '';
   const moved = (s.moved || []).length ? `<p class="st-src">Date moved ${s.moved.length} time${s.moved.length === 1 ? '' : 's'}.</p>` : '';
-  const chips = [`<span class="st-chip">${s.device === 'computer' ? 'Needs a computer' : 'Works on a phone'}</span>`];
+  const chips = [s.device === 'computer' ? '<span class="st-chip st-pc">Needs a computer</span>' : '<span class="st-chip">Works on a phone</span>'];
   if (s.stopSafe) chips.push('<span class="st-chip st-safe">Safe to stop after this</span>');
   if (s.optional) chips.push('<span class="st-chip st-opt">Optional</span>');
   return `<li class="st-step${s.done?' st-done':''}" id="s-${id}">
@@ -717,7 +739,7 @@ function stList(id, l){
   const count = req.length ? `${n} of ${req.length} done` : 'Nothing left to do';
   const closedHtml = closed.length ? `<details class="st-closed" data-group="g-${id}"${stOpenGroups.has('g-' + id) ? ' open' : ''}><summary>Completed (${closed.length})</summary><ol class="st-steps">${closed.map(([sid, s]) => stStep(sid, s)).join('')}</ol></details>` : '';
   return `<article class="st-list" id="l-${id}"><header>
-    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${count}${withdrawn ? `, ${withdrawn} withdrawn` : ''}</span>${nextTxt}</div>
+    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${count}${withdrawn ? `, ${withdrawn} withdrawn` : ''}</span>${nextTxt}${(() => { const pc = req.filter(([,s]) => !s.done && s.device === 'computer').length; return pc ? `<span class="st-chip st-pc">${pc} need${pc === 1 ? 's' : ''} a computer</span>` : ''; })()}</div>
     <h2 style="margin:0">${esc(l.title)}</h2>
     ${l.why ? `<p class="st-why">${esc(l.why)}</p>` : ''}${l.source ? `<p class="st-src">From ${esc(l.source)}</p>` : ''}
     <div class="st-bar" aria-hidden="true"><i style="width:${pct}%"></i></div></header>
@@ -733,6 +755,13 @@ function renderSteps(){
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
   document.getElementById('steps-empty').hidden = todo.length > 0;
   document.getElementById('n-steps').textContent = todo.length;
+  const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
+  const pc = open.filter(([,s]) => s.device === 'computer').length;
+  document.querySelectorAll('[data-where]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.where === stWhere)));
+  document.getElementById('st-where').hidden = open.length === 0;
+  document.getElementById('st-where-sum').textContent = stWhere === 'phone'
+    ? `${open.length - pc} you can do now, ${pc} waiting for a computer.`
+    : `${open.length} open, ${pc} of them need a computer.`;
   if (active){ const el = document.getElementById(active); if (el && el.closest('#view-steps')) el.focus(); }
 }
 function stSecret(len){
@@ -745,6 +774,10 @@ stepsView.addEventListener('toggle', e => { const g = e.target.dataset && e.targ
 stepsView.addEventListener('input', e => { if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value; });
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.where){
+    stWhere = t.dataset.where; try { localStorage.setItem('st-where', stWhere); } catch {}
+    renderSteps(); return;
+  }
   if (t.dataset.copy){
     const el = document.getElementById(t.dataset.copy); if (!el) return;
     try { await navigator.clipboard.writeText(el.textContent); t.textContent = 'Copied'; setTimeout(() => { t.textContent = 'Copy'; }, 1500); }
