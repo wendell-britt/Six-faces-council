@@ -3191,6 +3191,73 @@
    "auto": true,
    "pos": "The battle runs one move each, and the daemon shows its next push before the player chooses, as Slay the Spire shows an enemy's intent. Acknowledge is the battle's main attack and it always lands. The player names the feeling in one word, picked from three the game offers inside the feeling they gave, and every one of the three is right. The hit then shows the daemon's name and type. Its strength follows the type chart and how much Welcome has shown. An Acknowledge made while the daemon winds up a big push stops that push and gives the player another turn, as hitting a weakness does in Shin Megami Tensei, so reading the daemon pays in turns. The word the player chose goes on the daemon's page in the Witness Book. This replaces wave-acknowledge. This stands unless you flip it.",
    "why": "Your steer: 'we want it to feel like turn based battle'. Slay the Spire's shown intent and Shin Megami Tensei's extra turns are what make their turns a puzzle to read. Lieberman's 2007 study found that putting a feeling into a word calmed the amygdala, so the word names the player's feeling and no answer is wrong. The bot test from round 5 still applies. Research: /mnt/project-files/demo/wave-acknowledge-research.md"
+  },
+  {
+   "id": "oag-block-size",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "The block screen asks 'How big is it?' on a slider from 1 to 10, with a picture word beside the number: a pebble, a stone, a rock, a boulder or a wall. The slider starts unset and is optional. When the player comes back to the step, the game asks again how big it is now, and the route list under the map shows both numbers. The scale and the words are the council's placeholders. This stands unless you flip it.",
+   "why": "Your note of 6 October: 'We want to use a slider to talk about the size of the block'. The Challenger set the unset start, so a default never answers for the player. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md (pull request #260)"
+  },
+  {
+   "id": "oag-block-carry",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "The block screen names exactly what was blocked: the step, and the feeling the player was with (where it sat, its texture, its channel). It asks for the player's own words for what is in the way, optionally. The bar at the top carries the step and those words through the block work, and the step the player returns to shows them again with the size. This stands unless you flip it.",
+   "why": "Your note: 'carry forward on the page when something is blocked what exactly was blocked for them'. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md"
+  },
+  {
+   "id": "oag-appreciate-input",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "The Appreciate rung has an optional box: 'What can you appreciate about what showed up?', with the line 'You may not find anything to appreciate today, and that's all right.' The player goes on with or without writing, and anything written shows in the list under the map. This stands unless you flip it.",
+   "why": "Your note: 'appreciate needs an input and it's optional as people aren't always able to appreciate what shows up'. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md"
+  },
+  {
+   "id": "oag-trailhead",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "The first body scan of a cycle marks where the trip began: where the player felt it, its texture, the first channel and face, and an optional line, 'What brought you here today?'. A bar at the top shows that start on every screen of the trip, and inside a block a second line says which step the player goes back to. Cycle Complete opens by taking the player back to the start and asking what is there now (shifted, the same, or something else), and the map marks the start with a flag. This stands unless you flip it.",
+   "why": "Your note: 'breadcrumb them back to what started them on the journey'. The closing check is the council's reading of 'back'. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md"
+  },
+  {
+   "id": "oag-words-private",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "The player's words for a block, the Appreciate line and the 'what brought you here' line are treated like the belief: shown on screen and in the saved map image, never stored. This stands unless you flip it.",
+   "why": "The game's private mode stores no belief text (ruled 24 September), and these lines are the same kind of text. The browser test checks storage for all three. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md"
+  },
+  {
+   "id": "oag-faces-primer",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "ontology game 2",
+   "auto": true,
+   "pos": "The first time a player picks a face in a session, the screen opens with a short introduction: there are six ways of knowing a feeling, none ranks above another here, and the player picks the one that sounds most like how this feels or the one the body leans toward. Each face card also shows its question, such as 'Where is the presence you're reaching for?'. Later picks show one short line. This stands unless you flip it.",
+   "why": "Your note: 'The 6 levels are useful but they come as a bit abrupt if peopel aren't familiar with them'. The questions already exist in the game. Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md"
   }
  ],
  "questions": [
@@ -6030,6 +6097,34 @@
      "v": "wait",
      "label": "Not yet",
      "c": "Nothing is charged, and the name stays open for anyone to register."
+    }
+   ]
+  },
+  {
+   "id": "oag-faces-names",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "ontology game 2",
+   "q": "Which names should a newcomer see first on the six faces in the ontology game?",
+   "why_you": "The names are the words a coach and a client share for the six faces, and those words are yours. The Shaman would lead with the game masters, the Diplomat with plain words.",
+   "not_before": "The game showed only colours, and the abruptness was first named in your note of 6 October. Meanwhile the preview ships A, and B or C changes only the labels on the face cards.",
+   "options": [
+    {
+     "v": "plain",
+     "label": "A. Plain words, with the colour as a tag (recommended)",
+     "c": "Presence, Power, Order, Understanding, Perspectives, Systems. A client reads them without an introduction, and the colour still matches what a coach sees in a shared code."
+    },
+    {
+     "v": "game-masters",
+     "label": "B. The six game masters, with the colour as a tag",
+     "c": "Shaman, Challenger, Regent, Architect, Diplomat, Sage. The faces become characters a player can meet and match your book and the council, though a newcomer meets six new names."
+    },
+    {
+     "v": "colours",
+     "label": "C. The colours, as now",
+     "c": "Magenta, Red, Amber, Orange, Green, Teal, with the new introduction above them. The names stay as they are, and the introduction does all the explaining."
     }
    ]
   }
