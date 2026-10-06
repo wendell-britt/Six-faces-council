@@ -3301,8 +3301,8 @@
    ],
    "pass": "ontology game body map",
    "auto": true,
-   "pos": "Left and right on the figure are the figure's own, as if it were the player facing you, and the figure says so under it. A tap is named by the nearest of 44 places on the front, back, top and sides, such as 'my lower back' or 'my left shoulder blade'.",
-   "why": "A mirror would flip sides when the player turns the figure to its back, and the turn is needed to reach the back. Source: bars-engine content/ontology-game/body/body-map.js (pull request #261)"
+   "pos": "Left and right on the figure are the figure's own, as if it were the player facing you, and the figure says so under it. A tap is named by the nearest of 79 places on the front, back, top and sides. The first tap zooms into that part of the body (head and neck, chest, belly, back, an arm or a leg) so a second tap can fine-tune, from 'my throat' to 'my left cheek'.",
+   "why": "A mirror would flip sides when the player turns the figure to its back, and the turn is needed to reach the back. The zoom is your message of 20:30: 'click a section and be able to zoom in to fine tune'. Source: bars-engine content/ontology-game/body/body-map.js (pull request #261)"
   },
   {
    "id": "oag-body-device-only",
