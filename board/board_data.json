@@ -3325,6 +3325,39 @@
    "auto": true,
    "pos": "'Where it has lived' shows every mark on the figure coloured by texture, older ones fainter, with a slider back through time, the places ranked by how often charge showed up there, and each sitting's path in order. One page load counts as one sitting. It opens from the scan screen once a mark exists, and on its own at masteringallyship.com/ontology-game/body.",
    "why": "Your words: 'track somatically where their charge lives on their body and how it changes over time'. Source: bars-engine content/ontology-game/body/body-test.mjs, 20 checks passing (pull request #261)"
+  },
+  {
+   "id": "wave-trigram-moves",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 9",
+   "auto": true,
+   "pos": "Acknowledge is not a separate button. The player fights with Root's eight trigram moves, and using a move is acknowledging the spirit. Each turn the spirit strikes with a trigram from its stance, and the player answers with a stance and a trigram, as in Root. The right answer is the gate that follows the strike in Root's cycles (Péng, Lǚ, Jǐ, Àn, and Cǎi, Zhǒu, Liè, Kào): it leads the push into emptiness, takes HP from the charge, and gives the player the next move. Any other answer lets the push land. The player's stance against the spirit's stance is the type chart, by the restraining cycle Root already uses. The daemon's name and type show when the first right answer lands. Each daemon strikes with habits drawn from its aim, as Root's nations do, so learning a daemon's habits is the replay; the habit table is a placeholder. This replaces wave-acknowledge-turn. This stands unless you flip it.",
+   "why": "Your overrule of wave-acknowledge-turn: 'I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I'm looking for. Specifically. Using a move IS acknowledging the spirit welcoming is like listening.' Root's rules: sprout root-fight/index.html, 'How it works'. Research: /mnt/project-files/demo/wave-acknowledge-research.md, round 9"
+  },
+  {
+   "id": "wave-welcome-listen",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 9",
+   "auto": true,
+   "pos": "Welcome is listening, as Root's lessons teach it: 聽 (ting) is knowing a move has begun, and 懂 (dong) is knowing which gate is coming. A player who Welcomes spends the turn not answering, and the spirit's strike plays slowly and holds before it lands, as on Root's easy tier. As wave-damage has it, that turn's push lands in full. The first Welcome shows the spirit's stance, which is its feeling and element. The second shows which gate is coming, so the next answer can be right. A player who answers without Welcoming reads the strike from the body alone, as on Root's hard tier. The feeling and urge the player offers (wave-spirit-from-charge) still make the spirit. This stands unless you flip it.",
+   "why": "Your words: 'welcoming is like listening.' Root's Listen and Name the gate lessons teach 聽 and 懂 (root-fight/index.html, lessons 'listen' and 'identify'), and its easy tier holds each strike before it lands."
+  },
+  {
+   "id": "wave-seize-validate",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "sprout demo 9",
+   "auto": true,
+   "pos": "Validate and Exhale take Root's seize (拿 na). After a right answer the player can keep holding it. Holding is Validate: the player stays with the spirit while its charge drains, and the hold writes its Witness Book page (wave-record). Letting go in the bright window is Exhale. A plain release grounds the charge (wave-release-grounds). Holding from the stance the spirit's feeling feeds is Root's borrowing (借 jie), and an Exhale from there integrates the daemon. Hold too long and the spirit slips free and strikes. This stands unless you flip it.",
+   "why": "Root's seize: 'keep holding the answer as it lands and you hold the stumbling attacker while their composure drains. Release while the bar is bright to issue... Seize from the stance their channel feeds and you borrow their force' (root-fight/index.html). With moves as Acknowledge and listening as Welcome, seize is the council's reading of the two remaining steps."
   }
  ],
  "questions": [
@@ -9708,6 +9741,15 @@
      "positions": [
       "wave-spirit-from-charge",
       "wave-acknowledge-turn"
+     ]
+    },
+    {
+     "n": 9,
+     "questions": [],
+     "positions": [
+      "wave-trigram-moves",
+      "wave-welcome-listen",
+      "wave-seize-validate"
      ]
     }
    ]
