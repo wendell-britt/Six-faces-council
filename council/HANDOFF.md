@@ -79,6 +79,10 @@ CLAUDE.md, this file and the board.
   `wave-acknowledge-turn` are on the board and stand unless he flips them. Then the WAVE build goes on sprout #24's
   branch: Welcome asks feeling and strength, then the urge; the daemon's next push is shown; Acknowledge always lands,
   with an extra turn when it catches a wind-up.
+  Round 9 (`council/ledger/2026-10-06-demo-round9.json`): `wave-spirit-from-charge` stood, `wave-acknowledge-turn`
+  was overruled for Root's trigrams. New positions `wave-trigram-moves`, `wave-welcome-listen` and
+  `wave-seize-validate` stand unless he flips them; the build then takes Root's rules from sprout
+  `root-fight/index.html`.
 
 ## Open on 2026-10-06, from the board pickup thread
 
