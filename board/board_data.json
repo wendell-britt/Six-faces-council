@@ -3475,6 +3475,59 @@
    "auto": true,
    "pos": "The free run's reflection keeps sending the player to the wall, rather than dealing the first paid card on the same screen. This stands unless you flip it.",
    "why": "The daemon-player asked. Your ruling of 2026-09-09 answers it: 'Give them the intake and then they sign up to use it again OR to go deeper.' Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+  },
+  {
+   "id": "book-spine-one-rep",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "flirtcraft book outline",
+   "auto": true,
+   "pos": "The Flirtcraft book is built on one rep: Part I teaches a rep (get a move here, make it out there, bring back what came back) before any term, and every chapter ends with a rep the reader can run tonight without the app, alone or with somebody. This stands unless you flip it.",
+   "why": "You asked for the outline after the loop audit, whose finding was one move out, one answer back (fr-orient-new-players). Drafted from the record in the book outline thread, not a full six-face pass. Source: flirtcraft book/OUTLINE.md"
+  },
+  {
+   "id": "book-crafts-service-order",
+   "faces": [
+    "architect"
+   ],
+   "pass": "flirtcraft book outline",
+   "auto": true,
+   "pos": "Part II gives each of the eight crafts a chapter, in the order of the five steps of service (Approach, Probe, Present, Listen, End), and every chapter has the same parts: what the craft does, the myth and what it sounds like, the notice move, the do move, the brake, the version for a night alone, and one scene. This stands unless you flip it.",
+   "why": "Your ruling of 2026-09-11 that flirting is service gave the crafts an order (GRAMMAR.md §11). Source: flirtcraft book/OUTLINE.md"
+  },
+  {
+   "id": "book-binds-after-crafts",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "flirtcraft book outline",
+   "auto": true,
+   "pos": "Binds come after all eight crafts, in their own part, since a bind pairs two crafts the reader already knows. This stands unless you flip it.",
+   "why": "GRAMMAR.md §0a and §12v: a card names the relationship between two myths, and a bind turns a character judgement into two rules. Source: flirtcraft book/OUTLINE.md"
+  },
+  {
+   "id": "book-part-zero-stories",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "flirtcraft book outline",
+   "auto": true,
+   "pos": "Part 0 answers why a book about allyship leads to a flirting game, from your own stories, gathered by interview one story per thread as Friendcraft's Part 0 is. This stands unless you flip it.",
+   "why": "Both cold readers asked that question (flirtcraft FOUNDER_SIX_FACES.md §7), and your answer on fcm-p8b-interview set the interview method for Friendcraft. Source: flirtcraft book/OUTLINE.md"
+  },
+  {
+   "id": "book-plain-first",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "flirtcraft book outline",
+   "auto": true,
+   "pos": "In the book every term enters with one plain sentence, and the trigram names, elements and Chinese terms follow as subtitles, matching what you settle for the app on orient-terms. This stands unless you flip it.",
+   "why": "The loop audit found about twenty unexplained terms on a first paid run, and GRAMMAR.md §12x keeps theory words out of the copy. Source: flirtcraft book/OUTLINE.md"
   }
  ],
  "questions": [
@@ -6439,6 +6492,34 @@
      "v": "tap",
      "label": "B. No, only when the player taps to see them",
      "c": "The first run reads plainest, and the dressing is found later."
+    }
+   ]
+  },
+  {
+   "id": "book-oracle-in-print",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "flirtcraft book outline",
+   "q": "How much of the sixty-four cards goes in the printed Flirtcraft book? The council recommends A.",
+   "why_you": "The subscription sells the cards (flirtcraft README: /api/decks now refuses a stranger), so printing them is a money decision, and money is reserved to you. The record holds no ruling on what a book gives away.",
+   "not_before": "Nobody had outlined the book until today, 2026-10-06.",
+   "options": [
+    {
+     "v": "names-binds",
+     "label": "A. Every card's name and bind sentence; the moves, the draw and the ledger stay in the app (recommended)",
+     "c": "The book works as an oracle a reader can cast with three coins, and the app still sells the practice: the moves per face, the run and the ledger."
+    },
+    {
+     "v": "full",
+     "label": "B. All sixty-four in full, moves included",
+     "c": "The book is a complete game on its own, and the app sells only convenience and the ledger."
+    },
+    {
+     "v": "core",
+     "label": "C. Only the eight crafts and the eight deepening cards",
+     "c": "The book teaches the crafts and points to the app for the other fifty-six cards."
     }
    ]
   }
@@ -10069,6 +10150,29 @@
       "orient-bridge",
       "orient-on-your-own",
       "orient-reflection-to-wall"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-book",
+   "name": "Writing the Book",
+   "repo": "flirtcraft",
+   "element": "fire",
+   "record": "flirtcraft book/OUTLINE.md",
+   "intro": "It wants a Flirtcraft book that teaches the game in the game's own loop and words. The outline is drafted: seven parts and twenty-seven chapters, built on one rep, with the eight crafts in the order of service.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "book-oracle-in-print"
+     ],
+     "positions": [
+      "book-spine-one-rep",
+      "book-crafts-service-order",
+      "book-binds-after-crafts",
+      "book-part-zero-stories",
+      "book-plain-first"
      ]
     }
    ]
