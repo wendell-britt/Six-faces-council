@@ -7941,61 +7941,37 @@
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-<<<<<<< HEAD
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
-=======
     "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
->>>>>>> 40d45671d5ea10df06dbeabbfe06a7267db75078
    },
    "pod-ep1-from-audio": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-<<<<<<< HEAD
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
-=======
     "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
->>>>>>> 40d45671d5ea10df06dbeabbfe06a7267db75078
    },
    "board-auto-pickup": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-<<<<<<< HEAD
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
-=======
     "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
->>>>>>> 40d45671d5ea10df06dbeabbfe06a7267db75078
    },
    "wave-acknowledge": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-<<<<<<< HEAD
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
-=======
     "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
->>>>>>> 40d45671d5ea10df06dbeabbfe06a7267db75078
    },
    "wave-offered-feeling": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-<<<<<<< HEAD
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
-=======
     "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
->>>>>>> 40d45671d5ea10df06dbeabbfe06a7267db75078
    },
    "wave-integrate-ladder": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-<<<<<<< HEAD
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
-=======
     "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
->>>>>>> 40d45671d5ea10df06dbeabbfe06a7267db75078
    }
   },
   "questions": {
