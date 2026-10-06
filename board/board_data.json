@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-04",
+ "updated": "2026-10-06",
  "positions": [
   {
    "id": "build",
@@ -2534,6 +2534,72 @@
    "auto": true,
    "pos": "The mode is chosen on the title screen, before Act 0, not at its end. Story mode then skips the intake, as you said it would, and opens on the short pull scene. The life questions are asked the first time a player switches to prompted or integrated play, at a save. Everything earned carries over. This amends where ya-three-modes put the choice. This stands unless you flip it.",
    "why": "Your steer on ya-real-steps: 'the full story game (no outside action needed and skipped act 0)'. ya-pull-scene: 'Story mode opens on a short version of this scene'. ya-three-modes put the choice at the end of Act 0, which a story player would never reach. Source: sprout .specify/specs/act-zero/spec.md"
+  },
+  {
+   "id": "demo-spirit-count",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 1",
+   "auto": true,
+   "pos": "The full game has 25 spirit species: five elements across five regions (the strip and near forest, then one region per Act II village), each with three moods. The demo ships the first five, one per element, all on the strip and near forest. This stands unless you flip it.",
+   "why": "design.md: spirits differ by element, gate affinity, need and region; one spirit per element with three states is the inventory's floor. Today there is one record (data/spirits.json, first_earth). Source: /mnt/project-files/demo/demo-scope-map.md"
+  },
+  {
+   "id": "demo-settlement-size",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout demo 1",
+   "auto": true,
+   "pos": "Argyra outdoors is 3 by 3 screens (48 by 42 tiles), about a 12 second walk across, entered from the farm in the south with the wall and gate in the north. Each screen holds one landmark, and there are seven interiors: dojo, healers' hall, elders' hall with the quiet room, tea house, market, tournament hall and shipping office. This stands unless you flip it.",
+   "why": "The 16 by 14 screen (docs/decisions/screen-size.md) and the pacing research: a town is measured in screens with one sight worth stopping for on every screen; Cerulean is about 3 by 4 screens (docs/village-pacing-research.md). The buildings are design.md's map list."
+  },
+  {
+   "id": "demo-open-settlement",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "sprout demo 1",
+   "auto": true,
+   "pos": "The whole settlement is walkable from day one, and each building's activity opens with its loop in the Act I order. The gate stays shut until the founding day. This stands unless you flip it.",
+   "why": "design.md, Act I loop order: each step needs a clearly marked stretch where the player does only that loop; milestone 4: the founding-day ceremony opens the gate."
+  },
+  {
+   "id": "demo-quests",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "sprout demo 1",
+   "auto": true,
+   "pos": "The demo has 12 settlement quests, two per Act I loop and two that run across loops, each given by a named cast member and holding one to three encounters, plus NPC schedules so the town moves through the day and the season. Voicing follows the story mirror. This stands unless you flip it.",
+   "why": "The units of play (encounter, quest, adventure, campaign) stood as pr-units-mapping; story as mirror keeps events fixed and varies voicing. data/bounties.json and data/bouts.json are empty today."
+  },
+  {
+   "id": "demo-orientation",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "sprout demo 1",
+   "auto": true,
+   "pos": "The orientation is the first in-game day: wake on the farm, Old Tam walks the player to the shipping bin and then through the settlement past each building, each named for what opens later, ending at the dojo door. No menu is taught before the player can use it. This stands unless you flip it.",
+   "why": "Act 0 is the tutorial and character creation (fr-act-zero); Old Tam is the first voice (design.md, the cast); the Act I loop order adds one loop at a time."
+  },
+  {
+   "id": "demo-order",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "sprout demo 1",
+   "auto": true,
+   "pos": "The order of work: the encounter loop on the strip (Act 0's next task), the five demo spirits, the scene player and stager with a camera vocabulary, the settlement map and interiors, quests with schedules and the orientation walk, the scene editor, then packaging. Each is its own thread and ends with something you can play. This stands unless you flip it.",
+   "why": "Every later step needs a loop to sit in, and the orientation and milestones are scenes, so the scene player comes before the town. Source: /mnt/project-files/demo/demo-scope-map.md"
   }
  ],
  "questions": [
@@ -4947,6 +5013,62 @@
      "v": "element-spoils",
      "label": "B. Keep spoils of the node's element",
      "c": "pr-inner-demons stays as it stands. The named block flavours the encounters and the cards but does not pace the road, and integrated play's step gold is paid in whichever element the next node needs rather than the block's. In the test, as stood, a named block slowed the road (14.7 nodes against 20.5 with none)."
+    }
+   ]
+  },
+  {
+   "id": "demo-scope",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sprout demo 1",
+   "q": "Which part of the game should the first playable demo cover?",
+   "why_you": "Who the demo is for and how far a stranger should get are yours; the record holds the slice and the acts but no demo. The answer sets every number in the scope map: how many spirits, scenes, quests and maps get built first.",
+   "not_before": "Raised by your message of 2026-10-06 asking what a working demo would take.",
+   "options": [
+    {
+     "v": "act0-to-m5",
+     "label": "A. Act 0 through the first call (recommended)",
+     "c": "About an hour. Pulled into Calrunia, life in the settlement, hunter status, the strip, the first ally and the ring opening. Needs the five first spirits, the settlement, 12 quests and about 8 scenes. No Act II content."
+    },
+    {
+     "v": "taste-of-act2",
+     "label": "B. Act 0, a short Act I, and a taste of Act II",
+     "c": "Compresses Act I to its loops and ends at the crossing, one village and cave chamber 1. Shows more of the world, but needs a village, cave art and Act II spirits on top of A, and the exile lands without the time spent earning it."
+    },
+    {
+     "v": "act0-strip",
+     "label": "C. Act 0 and the strip only",
+     "c": "About twenty minutes: the pull, the creator, the intake and the encounter loop on the strip with the five spirits. Fastest to ship; no settlement, quests or orientation walk yet."
+    }
+   ]
+  },
+  {
+   "id": "demo-scene-editor",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout demo 1",
+   "q": "How should the scene editor let you change a staged scene?",
+   "why_you": "You asked for a scene editor, and your staging ruling (fr-staging-lead) asked for scenes from a script with no hand placement. Whether the editor keeps that rule or lets you place by hand is your preference, and it decides what the editor writes.",
+   "not_before": "Raised by your message of 2026-10-06; the staging spec has no editor.",
+   "options": [
+    {
+     "v": "beats",
+     "label": "A. A timeline that writes beats into the script (recommended)",
+     "c": "You watch a scene, scrub it, and add a camera move, a mark or a pause; the change is saved in the script as a beat, and the stager stays the one placer, so an edit survives every rebuild."
+    },
+    {
+     "v": "hand-place",
+     "label": "B. Hand placement, like RPG Maker's event editor",
+     "c": "You drag figures and the camera on the map and the positions are saved. Full control, but every map change can break a placed scene, and it amends your no-hand-placement ruling."
+    },
+    {
+     "v": "later",
+     "label": "C. No editor yet",
+     "c": "Scripts and the stager only; you review by watching and steering in words. Cheapest now; the editor waits until there are enough scenes to need it."
     }
    ]
   }
@@ -7551,6 +7673,31 @@
       "ya-test-result",
       "ya-gold-binds",
       "ya-story-entry"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-demo",
+   "name": "A demo people can play",
+   "repo": "sprout",
+   "element": "earth",
+   "record": "/mnt/project-files/demo/demo-scope-map.md",
+   "intro": "It wants a working demo strangers can try: more spirits and a number for them, a settlement that feels alive with quests and an orientation, and a scene editor for cinematic 2D cutscenes.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "demo-scope",
+      "demo-scene-editor"
+     ],
+     "positions": [
+      "demo-spirit-count",
+      "demo-settlement-size",
+      "demo-open-settlement",
+      "demo-quests",
+      "demo-orientation",
+      "demo-order"
      ]
     }
    ]
