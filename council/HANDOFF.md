@@ -82,7 +82,8 @@ CLAUDE.md, this file and the board.
   Round 9 (`council/ledger/2026-10-06-demo-round9.json`): `wave-spirit-from-charge` stood, `wave-acknowledge-turn`
   was overruled for Root's trigrams. New positions `wave-trigram-moves`, `wave-welcome-listen` and
   `wave-seize-validate` stand unless he flips them; the build then takes Root's rules from sprout
-  `root-fight/index.html`.
+  `root-fight/index.html`. All three stood at board read 2038 (ef6c341), so the WAVE build can start in a new
+  thread on sprout #24's branch.
 
 ## Open on 2026-10-06, from the board pickup thread
 
