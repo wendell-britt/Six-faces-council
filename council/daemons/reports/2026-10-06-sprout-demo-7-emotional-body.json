@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-06",
+  "pass": "sprout-demo-7",
+  "daemon": "emotional-body",
+  "face": "diplomat",
+  "cast": "42",
+  "model": "sonnet",
+  "tokens": "28479",
+  "report": "2026-10-06-sprout-demo-7-emotional-body.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Labeling \"diminished the response of the amygdala\" [1].",
+        "The effect came from words on emotional images [1], so a chosen word may matter more than a typed sentence."
+      ],
+      "url": "https://collaborate.princeton.edu/en/publications/putting-feelings-into-words-affect-labeling-disrupts-amygdala-act/",
+      "quote": "diminished the response of the amygdala and other limbic regions",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Body maps are \"statistically separable\" per emotion across 701 participants [2]."
+      ],
+      "url": "https://www.aalto.fi/news/finnish-research-team-reveals-how-emotions-are-mapped-in-the-body",
+      "quote": "statistically separable bodily sensation maps",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "The Mood Meter pairs pleasantness with energy, which is intensity [3]."
+      ],
+      "url": "https://rulerapproach.org/wp-content/uploads/2025/07/Families_MoodMeter_Overview.pdf",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "How We Feel starts with a check-in, then tags causes [4]."
+      ],
+      "url": "https://medicine.yale.edu/news-article/the-how-we-feel-app-helping-emotions-work-for-us-not-against-us/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "Granularity, the precision of emotion-making, is linked to better coping [5].",
+        "The game maps \"five feelings\" to elements, yet Barrett's framework resists basic emotions [5]."
+      ],
+      "url": "https://en.wikipedia.org/wiki/Emotional_granularity",
+      "quote": "higher emotional granularity is a protective factor",
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [
+        "Sea of Solitude's monstrous look \"serves as a mirror of their emotions\" [6]."
+      ],
+      "url": "https://play19.playfestival.de/en/?p=4138",
+      "quote": "based on human emotions",
+      "label": "unlabelled"
+    },
+    {
+      "n": 7,
+      "claims": [
+        "Badeline personifies the hero's anxiety, and Madeline learns to \"function with it\" instead of beating it [7]."
+      ],
+      "url": "https://en.wikipedia.org/wiki/Madeline_(Celeste",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 8,
+      "claims": [
+        "Nemesis names an enemy from what happened in play [8]."
+      ],
+      "url": "https://www.pcgamer.com/uk/why-hasnt-anyone-copied-shadow-of-mordors-nemesis-system",
+      "quote": "given a unique name",
+      "label": "unlabelled"
+    }
+  ]
+}

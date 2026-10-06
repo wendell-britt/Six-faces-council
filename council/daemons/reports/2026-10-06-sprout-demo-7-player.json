@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-06",
+  "pass": "sprout-demo-7",
+  "daemon": "player",
+  "face": "architect",
+  "cast": "55",
+  "model": "sonnet",
+  "tokens": "21935",
+  "report": "2026-10-06-sprout-demo-7-player.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [],
+      "url": "https://roytang.net/2019/02/slay-the-spire/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [],
+      "url": "https://games.gg/into-the-breach/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [],
+      "url": "https://undertale.fandom.com/wiki/Encounter",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [],
+      "url": "https://megatenwiki.com/wiki/One_More",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [],
+      "url": "https://megatenwiki.com/wiki/Press_Turn_System",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [],
+      "url": "https://en.wikipedia.org/wiki/Octopath_Traveler",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 7,
+      "claims": [],
+      "url": "https://en.wikipedia.org/wiki/Darkest_Dungeon",
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}

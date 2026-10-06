@@ -1,0 +1,149 @@
+{
+ "date": "2026-10-06",
+ "battle": "fr-demo",
+ "round": 7,
+ "repo": "sprout",
+ "kind": "pass",
+ "record": "/mnt/project-files/demo/wave-ack-research.md",
+ "called_by": "Wendell's overrule of wave-acknowledge at board read 2002 (wave-ack-research): research turn-based feel and charge-matched spirit generation",
+ "casts": [
+  {
+   "agent": "shaman",
+   "n": 23,
+   "name": "Erosion",
+   "values": [
+    6,
+    8,
+    8,
+    6,
+    8,
+    9
+   ],
+   "changing_lines": [
+    1,
+    4,
+    6
+   ]
+  },
+  {
+   "agent": "architect",
+   "n": 42,
+   "name": "Windfall",
+   "values": [
+    7,
+    6,
+    8,
+    6,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2,
+    4
+   ]
+  },
+  {
+   "agent": "challenger",
+   "n": 43,
+   "name": "Unsaid",
+   "values": [
+    7,
+    7,
+    7,
+    7,
+    9,
+    8
+   ],
+   "changing_lines": [
+    5
+   ]
+  },
+  {
+   "agent": "regent",
+   "n": 17,
+   "name": "Following",
+   "values": [
+    7,
+    8,
+    8,
+    7,
+    7,
+    6
+   ],
+   "changing_lines": [
+    6
+   ]
+  },
+  {
+   "agent": "diplomat",
+   "n": 48,
+   "name": "The Well",
+   "values": [
+    8,
+    7,
+    7,
+    8,
+    7,
+    6
+   ],
+   "changing_lines": [
+    6
+   ]
+  },
+  {
+   "agent": "sage",
+   "n": 1,
+   "name": "Unbroken",
+   "values": [
+    7,
+    9,
+    9,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2,
+    3
+   ]
+  }
+ ],
+ "daemons": [
+  {
+   "daemon": "player",
+   "face": "architect",
+   "cast": 55,
+   "model": "sonnet",
+   "report": "council/daemons/reports/2026-10-06-sprout-demo-7-player.md",
+   "subagent_tokens": 21935
+  },
+  {
+   "daemon": "emotional-body",
+   "face": "diplomat",
+   "cast": 42,
+   "model": "sonnet",
+   "report": "council/daemons/reports/2026-10-06-sprout-demo-7-emotional-body.md",
+   "subagent_tokens": 28479
+  }
+ ],
+ "positions": [
+  "wave-exchange",
+  "wave-ack-break",
+  "wave-feeling-word",
+  "wave-charge-build"
+ ],
+ "questions": [
+  "wave-checkin-depth"
+ ],
+ "dissent": true,
+ "dissent_notes": [
+  "Challenger: Acknowledge's glance before Welcome should cost the player their guard (position keeps it soft)",
+  "Diplomat: cap the check-in at two inputs as a position; Architect and Shaman hold the book's 'where it sits' belongs in it; sent to Wendell as wave-checkin-depth"
+ ],
+ "link_spot_check": "blocked: the egress proxy returned 403 on Wikipedia and Princeton; claims lean only on quoted lines",
+ "tests_set": [
+  "Bot test on the built battle with four policies (always Acknowledge, Acknowledge before Welcome, release early, full WAVE): full WAVE beats Acknowledge-before-Welcome on HP left in at least four of five fights, and a full-WAVE fight lasts four to eight exchanges; due at the build's first report",
+  "A playtest note from Wendell on whether choosing the feeling word felt like naming or like a form"
+ ],
+ "next": "After the round 7 read, build the WAVE battle from sprout main on a fresh branch in a new thread."
+}
