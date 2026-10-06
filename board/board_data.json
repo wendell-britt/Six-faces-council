@@ -3528,6 +3528,62 @@
    "auto": true,
    "pos": "In the book every term enters with one plain sentence, and the trigram names, elements and Chinese terms follow as subtitles, matching what you settle for the app on orient-terms. This stands unless you flip it.",
    "why": "The loop audit found about twenty unexplained terms on a first paid run, and GRAMMAR.md §12x keeps theory words out of the copy. Source: flirtcraft book/OUTLINE.md"
+  },
+  {
+   "id": "wave-taught-fight",
+   "faces": [
+    "regent",
+    "diplomat",
+    "shaman"
+   ],
+   "pos": "Before the strip, the player plays a taught fight that cannot be lost. The teacher shows each beat once on their own body, then hands over, and one input opens per beat: listen (Welcome), take a stance, answer one gate with its name shown, then by sight, hold (Validate), and let go (Exhale). Each beat has a pass mark, as Root's lessons do, and the teacher says what each move is for before its rule, in WAVE words: Welcome is 'listen before you answer', and only then 'it costs you the push'. This stands unless you flip it.",
+   "why": "Your playtest steer asks for someone to teach the fight. Root's lesson list (root-fight/index.html, LESSONS) already teaches one input at a time with pass marks, and the Regent's lesson from board read 2330 puts a move's purpose before its stop condition. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
+   "auto": true,
+   "pass": "sprout demo 11"
+  },
+  {
+   "id": "wave-straight-first",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pos": "The battle opens with Welcome, the five stances and the four straight gates (Péng, Lǚ, Jǐ, Àn). The dojo teaches two of them, then all four, before the strip, and early spirits strike only with gates the player holds. The full game keeps all eight; this is the teaching order, not a cap. This stands unless you flip it.",
+   "why": "Your words: 'all 8 from the start seems like too much it would need to be a progression from Basic moves to advanced moves'. Root's own lessons teach the straight four before the corner four, and taijiquan teaches push hands the same way. The build reruns the bot test with the straight four only. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
+   "auto": true,
+   "pass": "sprout demo 11"
+  },
+  {
+   "id": "wave-corners-from-spirits",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pos": "The four corner gates (Cǎi, Zhǒu, Liè, Kào) are learned from spirits. Once the straight four are learned, a spirit may strike with one corner gate the player has not learned. Welcoming it shows that gate's weather, and Validating it writes the answering gate into the Witness Book and unlocks it. In the full game each village then deepens its own style. This stands unless you flip it.",
+   "why": "The demo ends at milestone 5, before the grid's chambers have move names, so an unlock from the spirits stays inside the demo's own loop. It uses the Witness Book that round 5 built. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
+   "auto": true,
+   "pass": "sprout demo 11"
+  },
+  {
+   "id": "wave-gates-in-the-world",
+   "faces": [
+    "shaman",
+    "regent",
+    "diplomat"
+   ],
+   "pos": "The trigrams are the eight ways qi moves, as the Meridian Hall taught: Heaven rises, Earth receives, Water flows to the low place, Fire clings, Wind gets in, Lake gathers, Thunder splits, Mountain stays still. The settlement's dojo teaches only the straight four, on bodies, by their body names, fuelled by mana the Well lends. On a person the aim is to find the root and uproot it, which is how the founder keeps people in hand. A spirit is forest qi gathered around a feeling and has no root to take, so on the strip the same gates answer its weather and let its push spend itself. That is the brother's use, and it frees. The corner four are the forest's sudden weathers, which the settlement stopped teaching. This is a council draft of story, marked Proposed: it stands unless you flip it, and enters design.md only if it stands.",
+   "why": "design.md already makes push hands the world's magic (the brother built it to teach listening; each village teaches a style as its magic; the founder controls with it, the brother frees) and says the spirit fight is not push hands. The draft names what each gate means in both places. The trigram qualities follow the I Ching's Discussion of the Trigrams. The full table is in the pass. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
+   "auto": true,
+   "pass": "sprout demo 11"
+  },
+  {
+   "id": "wave-buttons-image-first",
+   "faces": [
+    "diplomat"
+   ],
+   "pos": "Each answer button shows its trigram's image and a plain verb first, such as '☰ Heaven, rise', with the gate's name second. The spirit's strike shows as its weather, so reading a strike is reading weather, not reading a name. This stands unless you flip it.",
+   "why": "Your words: 'It's too abstract to make sense as it is now.' The battle shows bare Root gate names today. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
+   "auto": true,
+   "pass": "sprout demo 11"
   }
  ],
  "questions": [
@@ -6520,6 +6576,34 @@
      "v": "core",
      "label": "C. Only the eight crafts and the eight deepening cards",
      "c": "The book teaches the crafts and points to the app for the other fifty-six cards."
+    }
+   ]
+  },
+  {
+   "id": "wave-teacher",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "sprout demo 11",
+   "q": "Who teaches the traveler to fight?",
+   "why_you": "Who speaks the first lesson is casting and story. The record names a teacher for push hands (Master Yun at the dojo) but nobody for the spirit fight. The answer sets the scene's cast, where it happens, and its lines.",
+   "not_before": "Your playtest of the WAVE battle on 2026-10-06 asked for a teacher for the first time.",
+   "options": [
+    {
+     "v": "yun",
+     "label": "A. Master Yun (recommended)",
+     "c": "He teaches push hands on a body at the dojo, then walks the player to the strip edge and shows on a tame charge that a spirit is met differently. One voice carries the difference, and he already heads the dojo where gate practice starts."
+    },
+    {
+     "v": "rue",
+     "label": "B. Captain Rue",
+     "c": "The hunters' captain teaches the strip as hunters fight it: rest the charge and ground it. The settlement's way of seeing stays whole, and the forest's meaning is left for Act II to show."
+    },
+    {
+     "v": "cael",
+     "label": "C. Cael",
+     "c": "A trainer and secretly one of the brother's refiners teaches the brother's meaning from the start. The difference from the dojo is plainest, but the player hears the forest's way before the story has earned it."
     }
    ]
   }
