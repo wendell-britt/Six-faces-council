@@ -2633,6 +2633,39 @@
    "auto": true,
    "pos": "The daemons join the bestiary as their own family beside the forest spirits: 8 daemons (the seven and the Player at their centre) in 5 elements and 3 forms, about 120 designs in the full game, on top of the 25 spirit species. The three forms follow the spirits' moods: charged, steadied and allied. The demo ships each of the 8 daemons in one form, wearing the element of the block the player named in the intake, so a demo player meets their own daemons on the strip. This stands unless you flip it.",
    "why": "Your steer on demo-spirit-count: 'We need to also include the daemons. 8 x 5 x 3 (approximately)'. Eight reads as the seven daemons and the Player; three as the moods design.md gives every spirit. Act 0's encounters metabolise charge from the player's named block (fr-act-zero, ya-encounter-loop), so the daemons are what the strip's encounters are."
+  },
+  {
+   "id": "enc-first-block",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout demo 3",
+   "auto": true,
+   "pos": "On the strip, every daemon wears the first named block's element, so each of the eight has one form in the demo. A player who names up to three blocks meets all eight in that one element. In story mode no block is named, so a daemon wears its own charge's element. This stands unless you flip it.",
+   "why": "Your ruling on demo-daemon-count says each daemon ships in one form, in the named block's element. With up to three blocks, the ruling did not say which one, and the first block is also where the first charge after the intake comes from (slice/road.js). The rule is one data field, formElement in data/encounters.json, so flipping it is a one-word change. Source: wendell-britt/sprout#24"
+  },
+  {
+   "id": "enc-who-carries",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "sprout demo 3",
+   "auto": true,
+   "pos": "A charge from a named block comes as that block's daemon: \"I'm not ready\" comes as the Protector. A charge from no named block comes as any of the eight daemons at equal odds, including the Skeptic and the Damaged Self, whom no belief names. This stands unless you flip it.",
+   "why": "demo-daemon-count says players meet their own daemons on the strip, and data/intake.json already names a daemon for each belief. The equal odds are a placeholder in data/encounters.json. Source: wendell-britt/sprout#24"
+  },
+  {
+   "id": "enc-steady-rests",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "sprout demo 3",
+   "auto": true,
+   "pos": "There are two ways to rest a daemon: subdue it with the stance that controls its element, or steady it by feeding it the generating stance until it settles. Either way the grounding follows, and daemons take no offering. HP carries from fight to fight and refills at the farm, as design.md proposes for the center. This stands unless you flip it.",
+   "why": "design.md's spirit fight has feeding raise satisfaction, but it ends a fight only on dismissal or an offering, and the offering wins an ally, which a daemon is not in the demo. The steadied form is one of the three daemon forms in demo-daemon-count. Source: wendell-britt/sprout#24"
   }
  ],
  "questions": [
@@ -7995,6 +8028,15 @@
      "positions": [
       "demo-argyra-city",
       "demo-daemon-count"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [],
+     "positions": [
+      "enc-first-block",
+      "enc-who-carries",
+      "enc-steady-rests"
      ]
     }
    ]
