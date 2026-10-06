@@ -55,8 +55,8 @@ CLAUDE.md, this file and the board.
   Then draft the show description, title and notes, and put the title on the board as a question.
 - **Cover art (`pod-art-ma`):** needs its own thread with bars-engine added; this container's proxy refuses
   masteringallyship.com, so take the look from bars-engine's site code. Three 3000x3000 drafts, then a board question.
-- **Board pickup (`board-auto-pickup`):** build in its own thread once the row stands. Plan: a poke-only routine
-  (`create_trigger`, `create_new_session_on_fire`, no cron) that runs a board read with `board/unrecorded.py`; a Send
-  to Claude button in `board/template.html` that fires it through the `mcp` capability (connector Claude Code Remote,
-  tool `fire_trigger`), shown after a save; and a `board/unrecorded.py` step added to the daily routine's prompt
-  (`trig_01F8fDdkjYEeMCfdozj6w3tt`). Read the `fire_trigger` schema before writing the page call.
+- **Board pickup (`board-auto-pickup`):** built on 2026-10-06; docs/pickup.md has how it works. The board's Send to
+  Claude button fires routine `trig_01DpRsDM94Cnv2neyDVkBNMb`, which wakes the coordinator to start a board-read
+  thread. Open: the daily routine's step 1b waits on the standing daily session applying it (asked by
+  send_message; check with `get_trigger trig_01F8fDdkjYEeMCfdozj6w3tt`), and the routine names the coordinator's
+  session, so when the coordinator is replaced, check it still arrives.

@@ -177,10 +177,20 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 @keyframes bt-hit{0%,100%{transform:none}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
 .bt-hit{animation:bt-hit .35s}
 @media (prefers-reduced-motion: reduce){.bt-hit{animation:none}.bt-bar i{transition:none}}
+/* Send to Claude (board-auto-pickup, 2026-10-06). Wendell's answers sat unread for 25 minutes because nothing tells a
+   session the board was saved. Once anything is saved and not yet sent, this bar offers one button that fires the
+   project's pickup routine through the Claude Code Remote connector, and a Claude records and acts on the answers. */
+.send{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--panel);border-top:2px solid var(--accent);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:none}
+.send.on{display:block}
+body.has-send{padding-bottom:120px}
+.send-in{max-width:860px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
+.send-in p{margin:0;font-size:.92rem;flex:1 1 240px}
+.send-in .save{padding:8px 16px;font-weight:600}
+.send-in .save:disabled{opacity:.6;cursor:default}
 </style>
 
 <h1>Council Board</h1>
-<p class="lede">Work from the six faces that waits on you. Anything you decide moves to Resolved, and Claude records it when you next say you saved.</p>
+<p class="lede">Work from the six faces that waits on you. Anything you decide moves to Resolved. When you have saved, press Send to Claude at the bottom, and Claude records it and starts the work.</p>
 <p class="lede">Steps only you can take, such as a setting in Vercel, are on the Your steps tab. Tick each one as you go; Claude reads the ticks.</p>
 
 <div class="tabs" role="tablist">
@@ -231,6 +241,10 @@ ol.st-steps{list-style:none;margin:0;padding:0}
   <div id="res-s"></div>
 </section>
 
+<div class="send" id="send" role="region" aria-label="Send to Claude" aria-live="polite">
+  <div class="send-in"><p id="send-msg"></p><button type="button" class="save" id="send-btn" hidden>Send to Claude</button></div>
+</div>
+
 <div class="bt-screen" id="bt-screen" role="dialog" aria-modal="true" aria-labelledby="bt-name">
   <div class="bt-stage">
     <div class="bt-field" id="bt-field">
@@ -251,6 +265,10 @@ const DATA = JSON.parse(document.getElementById('board-data').textContent);
 const R = DATA.resolved;
 const live = {positions:{}, questions:{}, causes:{}, terms:{}};
 let liveSteer = null, db = null;
+// Send to Claude: the routine it fires, the last send (pickup/last in the store), and steps changed before this date
+// are never counted, so ticks Claude already read do not light the bar.
+const PICKUP_TRIGGER = 'trig_01DpRsDM94Cnv2neyDVkBNMb', PICKUP_SINCE = '2026-10-06T20:00:00Z';
+let mcp = null, lastSent = null, sendBusy = false, sendNote = '', sendNoteTimer = 0;
 const local = {positions:{}, questions:{}, terms:{}, causes:{}};
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -389,7 +407,7 @@ function doneRow(kind, item, title){
         : kind==='terms' ? (LABEL[l.action]||l.action) + (l.rename?` as "${l.rename}"`:'')
         : kind==='causes' ? (l.kept ? 'Kept' : `Renamed "${l.name}"`)
         : LABEL[l.status]||l.status;
-    where = `<div class="w pending">Saved, waiting to be recorded. Tell Claude you saved.</div>`;
+    where = `<div class="w pending">Saved, waiting to be recorded. Send to Claude picks it up.</div>`;
   } else {
     dec = r.decision === 'deferred' ? (r.until ? 'Deferred until ' + (r.until.length > 10 ? new Date(r.until).toLocaleString([], {dateStyle:'medium', timeStyle:'short'}) : r.until) : 'Deferred until you ask') : (r.label || LABEL[r.decision] || r.decision);
     where = `<div class="w">Recorded ${esc(r.recorded)} · <code>${esc(r.record.replace('ledger/',''))}</code></div>`;
@@ -410,6 +428,7 @@ function render(){
   const nOpen = oq.length + ot.length + op.length + oc.length + renderMap();
   document.getElementById('open-empty').hidden = nOpen > 0;
   document.getElementById('n-open').textContent = nOpen;
+  renderSend();
   const deferred = kind => item => (isDeferredNow(kind, item.id) && status(kind, item.id) !== 'saved') || savedDefer(kind, item.id);
   const nDef = DATA.questions.filter(deferred('questions')).length + DATA.positions.filter(deferred('positions')).length;
   const dn = document.getElementById('open-deferred'); dn.hidden = !nDef;
@@ -504,7 +523,7 @@ openView.addEventListener('click', async e => {
 document.getElementById('ctx-save').addEventListener('click', async () => {
   const st = document.getElementById('ctx-state'), text = document.getElementById('ctx').value;
   if (!db){ st.textContent = 'Not saved in this view.'; return; }
-  try { await db.doc('steer/general').set({text, savedAt:new Date().toISOString()}); st.textContent = 'Saved. Tell Claude you saved.'; }
+  try { await db.doc('steer/general').set({text, savedAt:new Date().toISOString()}); st.textContent = 'Saved.'; }
   catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
 });
 
@@ -634,7 +653,7 @@ async function btSave(body){
 function btEnd(){
   btHud(); const left = bOpen(bt.b).length;
   btSay(left ? `<p class="bt-say"><b>${esc(bt.b.name)}</b> is still standing, with ${left} ${left === 1 ? 'turn' : 'turns'} left.</p>`
-    : `<p class="bt-say"><b>${esc(bt.b.name)}</b> was understood!</p><p class="bt-sub">${db ? 'Your answers are on the board. Tell Claude you saved, and the council writes the next round or the spec kit.' : 'This view cannot save, so your answers stay on screen only.'}</p>`
+    : `<p class="bt-say"><b>${esc(bt.b.name)}</b> was understood!</p><p class="bt-sub">${db ? 'Your answers are on the board. Press Send to Claude below, and the council writes the next round or the spec kit.' : 'This view cannot save, so your answers stay on screen only.'}</p>`
     + (bt.log.length ? `<ul class="bt-log">${bt.log.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : '')
     + btReviewList()
     + `<div class="bt-row"><button type="button" class="save" data-bt="run">Back to the map</button></div>`);
@@ -746,6 +765,7 @@ function stList(id, l){
     ${open.length ? `<ol class="st-steps">${open.map(([sid, s]) => stStep(sid, s)).join('')}</ol>` : ''}${closedHtml}</article>`;
 }
 function renderSteps(){
+  renderSend();
   const active = document.activeElement && document.activeElement.id;
   // Lists with the soonest open due date come first; lists without one keep their order after them.
   const nextDue = id => stReq(stOf(id)).filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0] || '9999';
@@ -817,12 +837,70 @@ stepsView.addEventListener('click', async e => {
     catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
   }
 });
+// ---- Send to Claude ----
+/* What counts as unsent: a row saved and not yet recorded, the context box saved since the last record, and a step
+   ticked, noted or moved; each only when it is later than the last send. */
+function pendingSaves(){
+  const since = (lastSent && lastSent.sentAt) || '';
+  const after = t => !t || t > since;
+  const out = [];
+  for (const kind of ['questions', 'positions', 'terms', 'causes'])
+    for (const id of Object.keys(live[kind])) if (status(kind, id) === 'saved' && after(live[kind][id].savedAt)) out.push(kind + '/' + id);
+  if (liveSteer && (liveSteer.text || '').trim() && liveSteer.savedAt > (DATA.steer_recorded_through || '') && after(liveSteer.savedAt)) out.push('steer/general');
+  for (const id of Object.keys(stSteps)){
+    const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at)].filter(Boolean).sort().pop();
+    if (t && t > PICKUP_SINCE && after(t)) out.push('steps/' + id);
+  }
+  return out;
+}
+function renderSend(){
+  const bar = document.getElementById('send'); if (!bar) return;
+  const list = db ? pendingSaves() : [], btn = document.getElementById('send-btn'), msg = document.getElementById('send-msg');
+  const on = !!(list.length || sendNote);
+  bar.classList.toggle('on', on); document.body.classList.toggle('has-send', on);
+  if (!on) return;
+  const n = list.length, what = n === 1 ? 'One answer is' : n + ' answers are';
+  btn.hidden = !mcp || !n; btn.disabled = sendBusy;
+  if (sendNote) msg.textContent = sendNote;
+  else msg.textContent = mcp ? `${what} saved and not yet sent. Send ${n === 1 ? 'it' : 'them'}, and a Claude records ${n === 1 ? 'it' : 'them'} and starts the work.`
+    : `${what} saved. This view cannot reach Claude, so tell Claude in chat that you saved.`;
+}
+function sendError(err){
+  const code = err && err.code;
+  if (code === 'needs_reauth') return 'Claude Code Remote needs signing in again: reconnect it in claude.ai Settings, Connectors, then send again.';
+  if (code === 'server_not_connected' || code === 'selection_required') return 'This page cannot find your Claude Code Remote connector. Add it in claude.ai Settings, Connectors, or tell Claude in chat that you saved.';
+  if (code === 'not_in_manifest' || code === 'not_granted' || code === 'capability_disabled') return 'Sending is turned off for this page. Allow Claude Code Remote in the page’s Permissions menu, or tell Claude in chat that you saved.';
+  if (code === 'blocked_by_policy' || code === 'approval_required') return 'Your organization blocks sending from this page. Tell Claude in chat that you saved.';
+  if (code === 'tool_error') return 'The pickup routine refused the send (' + ((err && err.message) || 'no reason given') + '). Tell Claude in chat that you saved.';
+  // server_unavailable, upstream_error, cancelled and anything new: the routine may have fired, so a second press is the viewer's call.
+  return 'It may not have gone through (' + (code || 'error') + '). Check the project for a new message before sending again.';
+}
+function flashSend(text){
+  sendNote = text; clearTimeout(sendNoteTimer);
+  sendNoteTimer = setTimeout(() => { sendNote = ''; renderSend(); }, 12000);
+  renderSend();
+}
+document.getElementById('send-btn').addEventListener('click', async () => {
+  const list = pendingSaves(); if (sendBusy || !mcp || !list.length) return;
+  sendBusy = true; sendNote = 'Sending…'; renderSend();
+  const at = new Date().toISOString();
+  const text = `Wendell pressed Send to Claude on the Council Board at ${at}. Saved since the last send: ${list.join(', ')}.`;
+  try {
+    await mcp.callTool('Claude Code Remote', 'fire_trigger', {trigger_id: PICKUP_TRIGGER, text});
+    lastSent = {sentAt: at, rows: list};
+    try { await db.doc('pickup/last').set(lastSent); } catch {}
+    sendBusy = false; flashSend('Sent. A Claude in your project is picking them up now.');
+  } catch (err){ sendBusy = false; flashSend(sendError(err)); }
+});
+
 renderSteps();
 
 render();
 (async () => {
   db = window.claude && window.claude.use ? await window.claude.use('db') : null;
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
+  window.claude.use('mcp').then(m => { mcp = m; renderSend(); }, () => {});
+  db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
   for (const kind of ['positions','questions','causes','terms']){
     db.collection(kind).onSnapshot(snap => {
       snap.docs.forEach(d => { if (d.exists) live[kind][d.id] = d.data(); });
