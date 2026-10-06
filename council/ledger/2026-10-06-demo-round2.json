@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-06",
+  "battle": "fr-demo",
+  "repo": "sprout",
+  "record": "/mnt/project-files/demo/demo-scope-map.md",
+  "read_at": "2026-10-06T18:27:29Z",
+  "answers": {
+    "demo-argyra-city": {"kind": "position", "status": "stands", "savedAt": "2026-10-06T18:02:42.375Z"},
+    "demo-daemon-count": {"kind": "position", "status": "stands", "savedAt": "2026-10-06T18:03:00.967Z"}
+  },
+  "closed": "Every fr-demo row is resolved. The demo scope is set; building starts with the encounter loop on the strip in a new thread."
+}
