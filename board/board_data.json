@@ -3281,17 +3281,6 @@
    "auto": true,
    "pos": "Neutrality's job is the one your book gives it: detachment and perspective, the view that lets you see the whole. Its two questions are 'What are you stepping back from?' and 'From there, what can you see of the whole?'. The questions are the council's wording. This stands unless you flip it.",
    "why": "You asked for help with Neutrality's job, and your book already answers it: 'Neutrality's job is detachment and perspective—the view that lets you see the whole' (Mastering the Game of Allyship, compiled 29 May 2026). Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md, addendum"
-  },
-  {
-   "id": "pickup-send-restored",
-   "faces": [
-    "regent",
-    "architect"
-   ],
-   "pass": "board pickup",
-   "auto": true,
-   "pos": "The Send to Claude button is back. The live board had lost its permission to use your Claude Code Remote connector, so it could only tell you to say so in chat. It is republished with that permission, and every rebuild now prints the permissions a republish must pass.",
-   "why": "Your screenshot of 6 October showed the fallback line. The live page declared only its store, while docs/pickup.md says it declares the store and the connector; a republish that named only the store dropped the connector. The first Send asks you once to allow the connector."
   }
  ],
  "questions": [
@@ -6159,6 +6148,29 @@
      "v": "colours",
      "label": "C. The colours, as now",
      "c": "Magenta, Red, Amber, Orange, Green, Teal, with the new introduction above them. The names stay as they are, and the introduction does all the explaining."
+    }
+   ]
+  },
+  {
+   "id": "pickup-send-permission",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "board pickup",
+   "q": "Give the board back its permission to fire the pickup routine through your Claude Code Remote connector?",
+   "why_you": "The live board lost that permission, which is why it told you to say so in chat. Granting a page access to one of your connectors needs your word, so no session republished it with the permission.",
+   "not_before": "The page declared only its store on 6 October, while docs/pickup.md says it declares the store and the connector. Meanwhile saves still reach Claude through the daily run or a chat message.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "A. Yes, restore it (recommended)",
+     "c": "The board is republished with the store and the fire_trigger tool only. The first Send asks you once to allow the connector, and then the button works from wherever you open the board."
+    },
+    {
+     "v": "no",
+     "label": "B. No, keep chat and the daily run",
+     "c": "The board keeps saying to tell Claude in chat, and the daily run still sweeps up anything unsent."
     }
    ]
   },
