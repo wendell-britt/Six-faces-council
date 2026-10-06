@@ -3004,6 +3004,72 @@
    "auto": true,
    "pos": "The book's outline is rebuilt from the canon in its own thread, as a proposal. The old outline stays in force until you approve the new one.",
    "why": "You chose to rebuild it on fcm-p8-ruling-14. Recorded as ruling 14 closed in the decision log. Source: canon/DECISION_LOG.md, 2026-10-06 (friendcraft-manuacript)"
+  },
+  {
+   "id": "wave-damage",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "sprout demo 5",
+   "auto": true,
+   "pos": "Welcome and Validate take no HP. Acknowledge lands the battle's main HP hit when the name is right, and Exhale ends the fight. Welcoming costs the player their guard for that turn, so they take the daemon's strike in full: noticing costs a moment and buys sight. This stands unless you flip it.",
+   "why": "Your steer on enc-inner-moves: 'Not all moves take HP away.' The book's WAVE has no attack in it: Welcome stops pushing the charge away, Acknowledge names it, Validate grants it, Exhale lets go (mtgoa-manuscript manuscript/ch3.md, Open Up). The pass: /mnt/project-files/demo/wave-battle-brainstorm.md"
+  },
+  {
+   "id": "wave-reveal",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout demo 5",
+   "auto": true,
+   "pos": "A charge starts as a grey shadow. The first Welcome shows its feeling, which is its element (joy is Wood, anger Fire, neutrality Earth, fear Metal, sadness Water). A second Welcome lets the player hear the belief it carries. A right Acknowledge shows which daemon it is. The player's element stance works as the type chart only once the feeling shows, so Welcoming first pays. A charge from a block the player named starts with its feeling known. This stands unless you flip it.",
+   "why": "Your steer on enc-wave-set: 'welcome allows the player to see what the opponent actually is... by going through the game the players see what type of enemy is emerging.' The feelings and elements are paired in design.md's village table; enc-first-block stood."
+  },
+  {
+   "id": "wave-naming",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 5",
+   "auto": true,
+   "pos": "Acknowledge offers three daemon names, narrowed from the eight by what Welcome has shown. A right name drops the daemon's disguise and lands the hit. A wrong name costs the turn and shows a tell, and never costs HP, so the player names from what they have seen and does not guess for safety. This stands unless you flip it.",
+   "why": "Your steer: 'the acknowledge phase would be where the spirit would get a name.' The book: 'name it to yourself, in one word.' The Challenger dissented (a wrong name should cost HP); the Shaman's side holds because a punished name turns naming into a quiz."
+  },
+  {
+   "id": "wave-record",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "sprout demo 5",
+   "auto": true,
+   "pos": "Validate writes the daemon's page in a record the council calls the Witness Book, a working name expected to be cut. Each page fills in stages: seen, named, witnessed, then how many times released or integrated, with the beliefs and feelings that daemon came carrying and the line the player used to validate it. Read after an hour, it shows the player their own pattern, such as the Protector coming four times as fear saying 'I'm not ready'. The demo has eight pages, one per daemon. This stands unless you flip it.",
+   "why": "Your steer: 'Validate would add it to a record of spirits the player has encountered and is working through like a pokedex.' The Shaman's lesson of 2026-10-03: the player leaves with something they can use in their life."
+  },
+  {
+   "id": "wave-order",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout demo 5",
+   "auto": true,
+   "pos": "Any step can be played on any turn, and each works best after the one before it. Naming with nothing shown picks from all eight. Validating before a name writes a nameless page. Exhaling early can only release, for a smaller reward. Integrating needs all four steps and the right name. The battle teaches WAVE's order without locking it. This stands unless you flip it.",
+   "why": "The Shaman's lesson of 2026-09-09: an offer is not a requirement. Your steers name four jobs in WAVE's order."
+  },
+  {
+   "id": "wave-release-grounds",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "sprout demo 5",
+   "auto": true,
+   "pos": "Exhale's release is the grounding. The player chooses the earth (gold later, and the card) or the well (pays now), and the separate grounding menu after the fight goes away. Release pays coin and integration pays lasting skill, so neither is the lazy pick. This stands unless you flip it.",
+   "why": "The grounding ritual and 'the well pays now and the earth pays later' are in design.md; sprout#24 grounds after every fight. Design.md principle 3: skill is bought only with skillful play."
   }
  ],
  "questions": [
@@ -5721,6 +5787,34 @@
      "v": "own-address",
      "label": "Give Friendcraft its own address",
      "c": "You buy or choose a domain, and the redesign launches there. Buying a domain is money, so the council brings you the price first."
+    }
+   ]
+  },
+  {
+   "id": "wave-integrate-gift",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 5",
+   "q": "What does integrating a daemon give the player?",
+   "why_you": "Whether daemons are caught and kept, Pokémon style, is your call about what the game is, and the record does not say. The answer decides whether the next build makes a move set, a companion system or stats.",
+   "not_before": "Integration first appeared in your round 4 steer: 'Exhale could be release the spirit OR integrate the spirit (express)'.",
+   "options": [
+    {
+     "v": "gift-move",
+     "label": "A. A gift move (recommended)",
+     "c": "The daemon's aim, made conscious, becomes one move the player can use in later daemon fights and spirit negotiations, such as the Protector's guard used on purpose. Integrating the same daemon again strengthens it. Fits the move set the battle already has."
+    },
+    {
+     "v": "companion",
+     "label": "B. A companion",
+     "c": "The integrated daemon walks with the player and acts once per fight, like a caught Pokémon. Needs companion art, behaviour and a party screen on top of A's work."
+    },
+    {
+     "v": "stat",
+     "label": "C. A lasting stat",
+     "c": "Each integration raises one stat tied to that daemon. Cheapest to build, but gives the player nothing new to do."
     }
    ]
   }
