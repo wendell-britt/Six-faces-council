@@ -79,3 +79,14 @@ CLAUDE.md, this file and the board.
   `wave-acknowledge-turn` are on the board and stand unless he flips them. Then the WAVE build goes on sprout #24's
   branch: Welcome asks feeling and strength, then the urge; the daemon's next push is shown; Acknowledge always lands,
   with an extra turn when it catches a wind-up.
+
+## Open on 2026-10-06, from the board pickup thread
+
+- **The Send button cannot fire.** The live board declares only `db`; the `mcp` grant docs/pickup.md describes was
+  dropped by an earlier republish, so the page shows "This view cannot reach Claude". Restoring it grants the page a
+  connector, which needs Wendell's word: board question `pickup-send-permission`. On a yes, republish with
+  `{"db": {}, "mcp": {"servers": [{"server": "Claude Code Remote", "tools": ["fire_trigger"]}]}}`, and every later
+  republish omits `capabilities` so the grant carries forward.
+- **Where a Send lands:** `pickup-where`. Today the routine wakes the Flirtcraft project's coordinator. On A, replace
+  `trig_01DpRsDM94Cnv2neyDVkBNMb` with a fresh-session routine created from a thread whose environment carries the
+  council repo, and put the new id in `PICKUP_TRIGGER` and the daily routine's step 1b.
