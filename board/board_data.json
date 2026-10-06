@@ -2776,6 +2776,71 @@
    "auto": true,
    "pos": "The book's WAVE stays Welcome, Acknowledge, Validate, Exhale until you edit the manuscript. The game uses your four-rung A and says so in a code comment. This stands unless you flip it.",
    "why": "Canonical prose is reserved to you. Source: Mastering the Game of Allyship appendices/APPENDIX_C_KEY_TERMS.md; bars-engine content/ontology-game/6FACE_PASS1_2026-10-06.md"
+  },
+  {
+   "id": "ship-batches-monthly",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "book shipping",
+   "auto": true,
+   "pos": "Backer books ship in one batch a month, bought from the /ally/mom budget's $100 print line and split by its own rule: half the copies go to Kickstarter backers, signed, with a pin where one is owed, and half become signed stock for $40 sales. The $10.40 allowance pays each backer's mailer. This stands unless you flip it.",
+   "why": "Your words: “We’re doing rolling shipping through KDP in batches in alignment with the plan for /ally/mom”. The budget's lines: bars-engine src/lib/family-support/financial-snapshot.ts lines 44–51. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
+  },
+  {
+   "id": "ship-gumroad-first",
+   "faces": [
+    "architect"
+   ],
+   "pass": "book shipping",
+   "auto": true,
+   "pos": "The 12 people who bought a physical book preorder on Gumroad between July 16 and September 7 ship in batch one, from the new-sales half. They do not wait in the backer queue. This stands unless you flip it.",
+   "why": "They are sales already paid, about $650 in all, which covers their own copies, and the budget puts new sales in their own half. The count comes from Gumroad's sale emails; the dashboard is the authoritative number. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
+  },
+  {
+   "id": "ship-say-cadence",
+   "faces": [
+    "shaman",
+    "diplomat",
+    "regent"
+   ],
+   "pass": "book shipping",
+   "auto": true,
+   "pos": "Before batch one, every backer gets one message: what is happening, their place in the queue, the cadence, and a way to reply that confirms their address or takes the ebook only. Each batch is then announced on the day it is ordered. The council drafts the message and you approve it before it goes out in your name. This stands unless you flip it.",
+   "why": "The August update promised “I'll tell you the day the press run is ordered, on the day it's ordered.” Under batches that promise holds per batch. The Shaman: a pace nobody names reads as being forgotten. Taking the ebook only is offered as a free choice, never asked for. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
+  },
+  {
+   "id": "ship-address-per-batch",
+   "faces": [
+    "regent"
+   ],
+   "pass": "book shipping",
+   "auto": true,
+   "pos": "Each backer's address is confirmed two weeks before their batch, not once for everyone. This stands unless you flip it.",
+   "why": "The addresses on file date from 2022, and at the budget's pace the queue runs up to 35 months, longer than many addresses last. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
+  },
+  {
+   "id": "ship-sales-alongside",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "book shipping",
+   "auto": true,
+   "pos": "Signed $40 sales start with batch one. They are not held until backers are served. The Diplomat dissents: it would hold signed sales until the first backer batch has landed, so no stranger holds a signed copy before any backer does. This stands unless you flip it.",
+   "why": "The budget's half-and-half split is your answer on fairness between backers and new readers, and the new-sales half is what earns. Your open call to readers for the first circle (gn-pilot) also needs the book on sale. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
+  },
+  {
+   "id": "ship-plan-superseded",
+   "faces": [
+    "sage"
+   ],
+   "pass": "book shipping",
+   "auto": true,
+   "pos": "The one-shipment plan written earlier today in the MTGOA project (about $3,200, all backers at once, public launch around December 1) is superseded by rolling batches. It stays on file with a note pointing to this pass. This stands unless you flip it.",
+   "why": "Your message chose rolling batches. Transcend and include keeps the earlier plan visible rather than deleting it. Source: /mnt/project-files/launch/SHIPPING_PLAN_2026-10-06.md in the MTGOA project"
   }
  ],
  "questions": [
@@ -5273,6 +5338,63 @@
      "v": "daemon",
      "label": "C. By meeting the voice that is blocking",
      "c": "A short interview with the daemon in the way (its job, who it works for, whether it will step aside), then the return. Closest to Big Mind, and it waits on the daemon ontology you have not ruled yet."
+    }
+   ]
+  },
+  {
+   "id": "ship-order",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "book shipping",
+   "q": "In what order do the 247 Kickstarter backers get their books across the batches?",
+   "why_you": "The order decides which named people wait longest, and anything that names a person is reserved to you. Nothing in the record ranks the backers.",
+   "not_before": "One shipment needed no order. Rolling batches, chosen today, do.",
+   "options": [
+    {
+     "v": "backer-number",
+     "label": "By backer number, earliest pledge first (recommended)",
+     "c": "Every backer can check their place against their own pledge, and the message before batch one tells each person roughly which month is theirs."
+    },
+    {
+     "v": "deepest-first",
+     "label": "The 61 course and coaching backers first, then by backer number",
+     "c": "The people owed the most get their books first, about eight months in. Everyone else starts after them, which the message has to say plainly."
+    },
+    {
+     "v": "lottery",
+     "label": "A fresh draw each batch",
+     "c": "Nobody's place is fixed by when they pledged. Nobody can know their month in advance, so the message can only give the cadence."
+    }
+   ]
+  },
+  {
+   "id": "ship-pace",
+   "faces": [
+    "challenger",
+    "architect",
+    "sage"
+   ],
+   "pass": "book shipping",
+   "q": "At the budget's pace of 7 or 8 backer books a month, the last backer gets a book in mid to late 2029. Do you keep that pace?",
+   "why_you": "Each faster option moves money between budget lines or slows paying back the family contribution, and money is reserved to you. It may also need the Volunteer CFO's agreement under the /ally/mom terms.",
+   "not_before": "The per-copy figures and the queue length were first put side by side in this pass. The $0.50 to $1.50 a copy for shipping a batch is the council's estimate, and batch one's KDP cart gives the real number.",
+   "options": [
+    {
+     "v": "keep",
+     "label": "Keep the budget's pace, and raise it at the weekly review as income arrives (recommended)",
+     "c": "Batch one ships as budgeted and the message tells backers the cadence. The Challenger dissents: it would recycle sale revenue from batch one."
+    },
+    {
+     "v": "recycle",
+     "label": "Put part of every $40 sale back into backer copies",
+     "c": "The queue shortens with every sale, and family repayment slows by the same amount. The council asks you for the share in the next round."
+    },
+    {
+     "v": "kdp-direct",
+     "label": "Send backer copies straight from KDP, using the $10.40 allowance for KDP's shipping",
+     "c": "About 12 a month instead of 7 or 8, so the queue ends around late 2028. Copies arrive unsigned in Amazon boxes, and the 128 pins go out in a separate mailing."
     }
    ]
   }
@@ -8212,6 +8334,31 @@
       "enc-inner-moves",
       "enc-wave-set",
       "enc-moves-from-grid"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-book-shipping",
+   "name": "Shipping the Book",
+   "repo": "mtgoa",
+   "element": "earth",
+   "record": "council/passes/6FACE_PASS12_2026-10-06.md",
+   "intro": "It wants the backers who funded Mastering the Game of Allyship to get their books in rolling KDP batches, paced by the /ally/mom budget, and told the truth about the wait.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "ship-order",
+      "ship-pace"
+     ],
+     "positions": [
+      "ship-batches-monthly",
+      "ship-gumroad-first",
+      "ship-say-cadence",
+      "ship-address-per-batch",
+      "ship-sales-alongside",
+      "ship-plan-superseded"
      ]
     }
    ]
