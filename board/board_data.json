@@ -6789,6 +6789,18 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+   },
+   "demo-argyra-city": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-demo-round-2.json (six-faces-council)"
+   },
+   "demo-daemon-count": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-demo-round-2.json (six-faces-council)"
    }
   },
   "questions": {
