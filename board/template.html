@@ -114,6 +114,11 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-step summary{cursor:pointer;color:var(--muted)}
 .st-step textarea{margin-top:6px}
 .st-state{font-size:.8rem;color:var(--muted);min-height:1.2em}
+/* Due dates (Wendell, 2026-10-06): every step has a deadline, so a step that slips shows up as charge to work with. */
+.st-due-over{color:var(--warn);font-weight:600}
+.st-charge{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem;margin:0}
+.st-move{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}
+.st-move input{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
 /* Battles, Wendell 2026-10-04: "The the board is the world map and emergent new feature is like a pokemon battle [...] I
    through the battle and at the end the board is updated". A feature request run is an encounter on the Open tab; its
    questions and positions are played as turns in a battle screen, and each turn saves to the same store as a row. bt- prefix. */
@@ -188,7 +193,7 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 </section>
 
 <section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
-  <p class="lede" style="margin-top:14px">Only the steps nobody else can take, because they need your accounts, your money or your eyes. Each one says where to go, what to enter, and how you will know it worked.</p>
+  <p class="lede" style="margin-top:14px">Only the steps nobody else can take, because they need your accounts, your money or your eyes. Each one says where to go, what to enter, how you will know it worked, and when it is due.</p>
   <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
   <div id="steps-todo"></div>
   <div id="steps-done"></div>
@@ -651,6 +656,19 @@ const stDrafts = {}, stSecrets = {};
 const stHref = h => /^https:\/\//.test(h || '') ? h : '';
 const stOf = id => Object.entries(stSteps).filter(([,s]) => s.list === id).sort((a,b) => (a[1].n||0) - (b[1].n||0));
 const stReq = arr => arr.filter(([,s]) => !s.optional && !s.retired);
+// A due date is a plain YYYY-MM-DD in Wendell's local day. Days left are counted in whole local days.
+const stToday = () => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); };
+const stDay = v => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(v || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; };
+const stDaysLeft = v => { const d = stDay(v); return d ? Math.round((d - stToday()) / 86400000) : null; };
+const stFmt = v => { const d = stDay(v); return d ? d.toLocaleDateString(undefined, {weekday:'short', day:'numeric', month:'short'}) : ''; };
+function stDueText(v){
+  const n = stDaysLeft(v); if (n === null) return '';
+  if (n < 0) return `Overdue by ${-n} day${n === -1 ? '' : 's'} (was ${stFmt(v)})`;
+  if (n === 0) return `Today, ${stFmt(v)}`;
+  if (n === 1) return `Tomorrow, ${stFmt(v)}`;
+  return `${stFmt(v)}, in ${n} days`;
+}
+const stOverdue = s => !s.done && !s.retired && !s.optional && (stDaysLeft(s.due) ?? 0) < 0;
 const stFinished = id => { const r = stReq(stOf(id)); return r.length > 0 && r.every(([,s]) => s.done); };
 function stStep(id, s){
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
@@ -658,6 +676,10 @@ function stStep(id, s){
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
   const gen = s.generate ? `<div class="st-row"><span>Secret</span><div class="st-val"><button type="button" class="st-btn st-solid" data-gen="${id}" data-len="${Number(s.generate)||48}">Make a new secret</button><code id="sg-${id}" ${stSecrets[id]?'':'hidden'}>${esc(stSecrets[id]||'')}</code><button type="button" class="st-btn" data-copy="sg-${id}" id="sgc-${id}" ${stSecrets[id]?'':'hidden'}>Copy</button></div></div><p class="st-src">It is made on this device and never saved anywhere. Paste it straight in, and make a new one if you lose it.</p>` : '';
   const check = s.check ? `<div class="st-row"><span>Check</span><div class="st-val">${esc(s.check)}</div></div>` : '';
+  const over = stOverdue(s);
+  const due = s.due && !s.done ? `<div class="st-row"><span>Due</span><div class="st-val${over ? ' st-due-over' : ''}">${esc(stDueText(s.due))}</div></div>` : '';
+  const charge = over ? `<p class="st-charge">This one slipped. Whatever is in the way is charge to metabolize: name it in the note below, or move the date and say why. Claude reads both.</p>` : '';
+  const moved = (s.moved || []).length ? `<p class="st-src">Date moved ${s.moved.length} time${s.moved.length === 1 ? '' : 's'}.</p>` : '';
   const chips = [`<span class="st-chip">${s.device === 'computer' ? 'Needs a computer' : 'Works on a phone'}</span>`];
   if (s.stopSafe) chips.push('<span class="st-chip st-safe">Safe to stop after this</span>');
   if (s.optional) chips.push('<span class="st-chip st-opt">Optional</span>');
@@ -665,12 +687,13 @@ function stStep(id, s){
     <button type="button" class="st-tick" data-tick="${id}" aria-pressed="${!!s.done}" aria-label="Step ${esc(s.n)}: ${s.done?'done, tap to undo':'tap when done'}">${s.done?'✓':esc(s.n)}</button>
     <div class="st-body">
       <p class="st-do">${esc(s.do)}</p>
-      ${where}${enter}${gen}${check}
+      ${where}${enter}${gen}${check}${due}${charge}
       <div class="st-chips">${chips.join('')}</div>
       ${s.note ? `<div class="st-note">Your note: ${esc(s.note)}</div>` : ''}
-      <details><summary>Stuck, or something looks different?</summary>
-        <textarea id="sn-${id}" placeholder="Say what you see. Claude reads it.">${esc(stDrafts[id] ?? s.note ?? '')}</textarea>
+      <details${over ? ' open' : ''}><summary>Stuck, or something looks different?</summary>
+        <textarea id="sn-${id}" placeholder="Say what you see, or what feels in the way. Claude reads it.">${esc(stDrafts[id] ?? s.note ?? '')}</textarea>
         <button type="button" class="st-btn" data-note="${id}">Save note</button> <span class="st-state" id="sns-${id}"></span>
+        ${s.done ? '' : `<div class="st-move"><label for="sd-${id}">Move the date to</label><input type="date" id="sd-${id}" value="${esc(s.due || '')}"><button type="button" class="st-btn" data-move="${id}">Move</button></div>${moved}`}
       </details>
     </div>
   </li>`;
@@ -678,8 +701,10 @@ function stStep(id, s){
 function stList(id, l){
   const all = stOf(id), req = stReq(all), n = req.filter(([,s]) => s.done).length;
   const pct = req.length ? Math.round(100 * n / req.length) : 0;
+  const next = req.filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0];
+  const nextTxt = next ? `<span class="${stDaysLeft(next) < 0 ? 'st-due-over' : ''}">Next due ${esc(stFmt(next))}</span>` : '';
   return `<article class="st-list" id="l-${id}"><header>
-    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${n} of ${req.length} done</span></div>
+    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${n} of ${req.length} done</span>${nextTxt}</div>
     <h2 style="margin:0">${esc(l.title)}</h2>
     ${l.why ? `<p class="st-why">${esc(l.why)}</p>` : ''}${l.source ? `<p class="st-src">From ${esc(l.source)}</p>` : ''}
     <div class="st-bar" aria-hidden="true"><i style="width:${pct}%"></i></div></header>
@@ -687,7 +712,9 @@ function stList(id, l){
 }
 function renderSteps(){
   const active = document.activeElement && document.activeElement.id;
-  const ids = Object.keys(stLists).sort((a,b) => (stLists[a].order||0) - (stLists[b].order||0) || String(stLists[a].created||'').localeCompare(String(stLists[b].created||'')));
+  // Lists with the soonest open due date come first; lists without one keep their order after them.
+  const nextDue = id => stReq(stOf(id)).filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0] || '9999';
+  const ids = Object.keys(stLists).sort((a,b) => nextDue(a).localeCompare(nextDue(b)) || (stLists[a].order||0) - (stLists[b].order||0) || String(stLists[a].created||'').localeCompare(String(stLists[b].created||'')));
   const todo = ids.filter(id => !stFinished(id)), done = ids.filter(id => stFinished(id));
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
   document.getElementById('steps-done').innerHTML = section('Finished', '', done.map(id => stList(id, stLists[id])).join(''));
@@ -721,6 +748,17 @@ stepsView.addEventListener('click', async e => {
     stSteps[id] = {...s, done, doneAt: at}; renderSteps();
     try { await db.doc('steps/' + id).update({done, doneAt: at}); }
     catch (err){ stSteps[id] = s; renderSteps(); const st = document.getElementById('sns-' + id); if (st) st.textContent = 'Could not save the tick (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (t.dataset.move){
+    const id = t.dataset.move, s = stSteps[id], st = document.getElementById('sns-' + id);
+    const v = (document.getElementById('sd-' + id).value || '').trim();
+    if (!s || !/^\d{4}-\d{2}-\d{2}$/.test(v) || v === s.due){ if (st) st.textContent = 'Pick a new date first.'; return; }
+    if (!db){ st.textContent = 'Not saved in this view.'; return; }
+    // Each move keeps the date it replaced, so how often a step slips is part of the record.
+    const moved = [...(s.moved || []), {from: s.due || null, to: v, at: new Date().toISOString()}];
+    try { await db.doc('steps/' + id).update({due: v, moved}); st.textContent = 'Date moved. Claude reads it.'; }
+    catch (err){ st.textContent = 'Could not move the date (' + (err && err.code || 'error') + ').'; }
     return;
   }
   if (t.dataset.note){

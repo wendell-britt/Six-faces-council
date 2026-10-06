@@ -141,7 +141,10 @@ do not run it; `scope` in the file says which is which.
    shape: do, where, enter, check, device, and whether it is safe to stop after. Publish the feature's steps
    as one list with `ArtifactData` to the board's store, named as `steps_page` in `pipeline.yaml`: a `lists/<feature>` document
    (title, repo, why, source, order, created) and `steps/<feature>-<nn>` documents (list, n, do, where, href,
-   enter, generate, check, device, stopSafe, optional, done). A secret is never written to a step. A step
+   enter, generate, check, device, stopSafe, optional, due, done). Every step carries `due`, a YYYY-MM-DD
+   date (Wendell, 2026-10-06: deadlines let him metabolize the blocking charge a step raises). The page shows it,
+   flags a step past it, and lets him move it; each move is kept in `moved`. Read a slipped step's note and
+   moves before the work that waits on it. A secret is never written to a step. A step
    that needs one sets `generate` to its length, and the page makes it on his device without storing it.
 5. **Read his ticks.** The page records `done`, `doneAt` and `note` on each step. Read the list before any
    work that waits on a step. A note is a report from him; answer it in the next reply or in the pass.
