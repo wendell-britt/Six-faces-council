@@ -8535,6 +8535,30 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-2038.json (six-faces-council)"
+   },
+   "wave-offer-opens": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+   },
+   "wave-urges-all": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+   },
+   "wave-welcome-cost": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+   },
+   "wave-exhale-ends": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
    }
   },
   "questions": {
