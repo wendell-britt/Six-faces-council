@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-06",
+  "battle": "fr-demo",
+  "repo": "sprout",
+  "record": "/mnt/project-files/demo/demo-scope-map.md",
+  "read_at": "2026-10-06T17:48:06Z",
+  "answers": {
+    "demo-scope": {"kind": "question", "choice": "act0-to-m5", "savedAt": "2026-10-06T17:45:13.065Z"},
+    "demo-scene-editor": {"kind": "question", "choice": "beats", "savedAt": "2026-10-06T17:45:28.016Z"},
+    "demo-spirit-count": {"kind": "position", "status": "stands", "steer": "We need to also include the daemons. 8 x 5 x 3 (approximately)", "savedAt": "2026-10-06T17:46:25.138Z"},
+    "demo-settlement-size": {"kind": "position", "status": "overrule", "steer": "I think argyra should be bigger. Think saffron city from pokemon. The idea is that there will be MANY NPCs and side quests ", "savedAt": "2026-10-06T17:47:21.377Z"},
+    "demo-open-settlement": {"kind": "position", "status": "stands", "savedAt": "2026-10-06T17:47:29.008Z"},
+    "demo-quests": {"kind": "position", "status": "stands", "savedAt": "2026-10-06T17:47:38.125Z"},
+    "demo-orientation": {"kind": "position", "status": "stands", "savedAt": "2026-10-06T17:47:43.692Z"},
+    "demo-order": {"kind": "position", "status": "stands", "savedAt": "2026-10-06T17:47:54.381Z"}
+  },
+  "round2": {"questions": [], "positions": ["demo-argyra-city", "demo-daemon-count"]},
+  "reach_test": "Both steers were answerable from the record plus his words, so round 2 carries positions only."
+}
