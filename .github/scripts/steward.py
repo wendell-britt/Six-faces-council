@@ -63,6 +63,12 @@ def checks():
         pass
     leftover = sh("git", "grep", "-lE", "^(<<<<<<<|>>>>>>>) ", "--", ".", check=False).stdout.split()
     problems += [f"conflict markers left in {p}" for p in leftover]
+    # The board merge tests: a change to sync_board.py or board_merge.py that would drop a row fails here.
+    if os.path.isdir("tests"):
+        r = sh("python3", "-m", "unittest", "discover", "-s", "tests", check=False)
+        if r.returncode:
+            last = (r.stderr.strip().splitlines() or ["unknown failure"])[-1]
+            problems.append(f"tests fail (python3 -m unittest discover -s tests): {last}")
     return problems
 
 
