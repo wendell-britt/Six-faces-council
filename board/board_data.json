@@ -2611,6 +2611,28 @@
    "auto": true,
    "pos": "The board sync lost your rows twice on 4 October, a battle's round 2 and three of your steers. The daily session's Grow up run adds twelve tests that pin how sync_board.py and the git merge driver combine rows from two sessions, and the steward now runs them on every pull request. Run against the code from before each fix, the tests fail on exactly those two losses. This merges at your next board read unless you flip it.",
    "why": "A future change to either merge file that would drop a row turns the steward red before it reaches main. It changes no board behaviour. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/40"
+  },
+  {
+   "id": "demo-argyra-city",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout demo 2",
+   "auto": true,
+   "pos": "Argyra is a city on Saffron's model: 5 by 4 screens outdoors (80 by 56 tiles), about a 20 second walk across, walled, with the farm gate in the south and the forest gate in the north. It has six districts (the dojo quarter, the market, the healers' and clergy quarter, the elders' quarter, homes, and the founder's square) and about 24 interiors, one of them a tall building of several floors, the standing ledger's offices. About 40 named townspeople keep daily schedules. Besides the 12 loop quests, 20 side quests come from them in the demo. All of it is walkable from day one, as demo-open-settlement stood. This stands unless you flip it.",
+   "why": "Your steer on demo-settlement-size: 'I think argyra should be bigger. Think saffron city from pokemon. The idea is that there will be MANY NPCs and side quests'. Saffron is Kanto's largest city, walled with a gate on each side and a many-floored Silph Co. tower. The pacing rule still holds: one sight worth stopping for on every screen (sprout docs/village-pacing-research.md); 20 seconds sits below Pelican Town's 25 to 30."
+  },
+  {
+   "id": "demo-daemon-count",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 2",
+   "auto": true,
+   "pos": "The daemons join the bestiary as their own family beside the forest spirits: 8 daemons (the seven and the Player at their centre) in 5 elements and 3 forms, about 120 designs in the full game, on top of the 25 spirit species. The three forms follow the spirits' moods: charged, steadied and allied. The demo ships each of the 8 daemons in one form, wearing the element of the block the player named in the intake, so a demo player meets their own daemons on the strip. This stands unless you flip it.",
+   "why": "Your steer on demo-spirit-count: 'We need to also include the daemons. 8 x 5 x 3 (approximately)'. Eight reads as the seven daemons and the Player; three as the moods design.md gives every spirit. Act 0's encounters metabolise charge from the player's named block (fr-act-zero, ya-encounter-loop), so the daemons are what the strip's encounters are."
   }
  ],
  "questions": [
@@ -6575,6 +6597,42 @@
     "label": "Stands: Wendell said in chat that #37 merges (2026-10-04 16:37 UTC: \"37 is merged\"); merged on the automerge label",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "demo-spirit-count": {
+    "decision": "stands",
+    "label": "Stands, with a steer: include the daemons, 8 x 5 x 3 (approximately); see demo-daemon-count",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "demo-settlement-size": {
+    "decision": "overrule",
+    "label": "Overruled: Argyra should be bigger, like Saffron City, with many NPCs and side quests; see demo-argyra-city",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "demo-open-settlement": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "demo-quests": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "demo-orientation": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "demo-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
    }
   },
   "questions": {
@@ -7092,6 +7150,18 @@
     "label": "Between A and C: the inward cycle joins the world ring; fighting inner demons, and their spoils pay for advancement",
     "recorded": "2026-10-04",
     "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+   },
+   "demo-scope": {
+    "decision": "act0-to-m5",
+    "label": "A. Act 0 through the first call",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+   },
+   "demo-scene-editor": {
+    "decision": "beats",
+    "label": "A. A timeline that writes beats into the script",
+    "recorded": "2026-10-06",
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
    }
   },
   "causes": {
@@ -7709,6 +7779,14 @@
       "demo-quests",
       "demo-orientation",
       "demo-order"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [],
+     "positions": [
+      "demo-argyra-city",
+      "demo-daemon-count"
      ]
     }
    ]
