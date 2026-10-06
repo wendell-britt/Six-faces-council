@@ -187,6 +187,9 @@ body.has-send{padding-bottom:120px}
 .send-in p{margin:0;font-size:.92rem;flex:1 1 240px}
 .send-in .save{padding:8px 16px;font-weight:600}
 .send-in .save:disabled{opacity:.6;cursor:default}
+/* Close (Wendell, 2026-10-06: "needs to be able to be dismissed so we can access the button underneath"). Closing hides
+   the bar until something new is saved; on this device only. */
+.send-x{font:inherit;font-size:1.3rem;line-height:1;width:44px;height:44px;flex:0 0 44px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--muted);cursor:pointer}
 </style>
 
 <h1>Council Board</h1>
@@ -242,7 +245,7 @@ body.has-send{padding-bottom:120px}
 </section>
 
 <div class="send" id="send" role="region" aria-label="Send to Claude" aria-live="polite">
-  <div class="send-in"><p id="send-msg"></p><button type="button" class="save" id="send-btn" hidden>Send to Claude</button></div>
+  <div class="send-in"><p id="send-msg"></p><button type="button" class="save" id="send-btn" hidden>Send to Claude</button><button type="button" class="send-x" id="send-x" aria-label="Close this bar">×</button></div>
 </div>
 
 <div class="bt-screen" id="bt-screen" role="dialog" aria-modal="true" aria-labelledby="bt-name">
@@ -269,6 +272,7 @@ let liveSteer = null, db = null;
 // are never counted, so ticks Claude already read do not light the bar.
 const PICKUP_TRIGGER = 'trig_01DpRsDM94Cnv2neyDVkBNMb', PICKUP_SINCE = '2026-10-06T20:00:00Z';
 let mcp = null, lastSent = null, sendBusy = false, sendNote = '', sendNoteTimer = 0;
+let sendClosed = (() => { try { return localStorage.getItem('board-send-closed'); } catch { return null; } })();
 const local = {positions:{}, questions:{}, terms:{}, causes:{}};
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -856,7 +860,8 @@ function pendingSaves(){
 function renderSend(){
   const bar = document.getElementById('send'); if (!bar) return;
   const list = db ? pendingSaves() : [], btn = document.getElementById('send-btn'), msg = document.getElementById('send-msg');
-  const on = !!(list.length || sendNote);
+  const sig = list.join(',');
+  const on = !!(sendNote || (list.length && sig !== sendClosed));
   bar.classList.toggle('on', on); document.body.classList.toggle('has-send', on);
   if (!on) return;
   const n = list.length, what = n === 1 ? 'One answer is' : n + ' answers are';
@@ -880,6 +885,11 @@ function flashSend(text){
   sendNoteTimer = setTimeout(() => { sendNote = ''; renderSend(); }, 12000);
   renderSend();
 }
+document.getElementById('send-x').addEventListener('click', () => {
+  sendClosed = (db ? pendingSaves() : []).join(','); sendNote = ''; clearTimeout(sendNoteTimer);
+  try { localStorage.setItem('board-send-closed', sendClosed); } catch {}
+  renderSend();
+});
 document.getElementById('send-btn').addEventListener('click', async () => {
   const list = pendingSaves(); if (sendBusy || !mcp || !list.length) return;
   sendBusy = true; sendNote = 'Sending…'; renderSend();
