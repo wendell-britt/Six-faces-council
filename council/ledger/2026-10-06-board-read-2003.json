@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-06",
+ "read_at": "2026-10-06T20:04:00Z",
+ "note": "Board read on Wendell's \"Updated the board\" in the WAVE battle brainstorm thread. fr-demo round 6 belongs to that thread; the fr-podcast-launch and fcm-p8d rows belong to their own threads, which act on them.",
+ "answers": {
+  "pod-art-ma": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:52:34.490Z",
+   "steer": "I think it should make one strong color change so people can differentiate it from MTGOA. \n",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "pod-ep1-from-audio": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:52:38.862Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "board-auto-pickup": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:52:49.331Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "status": "stands"
+  },
+  "wave-acknowledge": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:53:47.781Z",
+   "steer": "I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing",
+   "via": "battle:fr-demo",
+   "status": "overrule"
+  },
+  "wave-offered-feeling": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:53:59.095Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-integrate-ladder": {
+   "kind": "position",
+   "savedAt": "2026-10-06T19:54:09.144Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "fcm-p8d-buy": {
+   "kind": "question",
+   "savedAt": "2026-10-06T20:02:37.196Z",
+   "steer": "",
+   "choice": "buy"
+  },
+  "pod-cover-pick": {
+   "kind": "question",
+   "savedAt": "2026-10-06T20:02:41.910Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch",
+   "choice": "b-two-signals"
+  }
+ },
+ "fr-demo": "Round 6: wave-offered-feeling and wave-integrate-ladder stood. wave-acknowledge overruled: \"I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing\".",
+ "next": "A research thread on the Acknowledge step: how turn-based battles (Pokemon and kin) make a foe that is generated from the player state still feel like a turn-based fight, and how the generated spirit can follow the charge the player is experiencing. Its result goes on the board as fr-demo round 7. Then build the battle on sprout#24."
+}
