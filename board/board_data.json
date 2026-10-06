@@ -2970,6 +2970,40 @@
    "auto": true,
    "pos": "Every podcast step that needs the Zoom recording or an audio upload is marked Needs a computer until a phone route is proven. The council tests the Zoom share link's download on a phone with you before it changes any step.",
    "why": "The Zoom connector cannot reach zoom.us from Claude's cloud sessions (the Anastasia's campaign list, 2026-10-06), and no phone download has been tried yet."
+  },
+  {
+   "id": "fcm-p8b-redesign",
+   "faces": [
+    "architect",
+    "shaman",
+    "sage"
+   ],
+   "pass": "friendcraft pass 8, read",
+   "auto": true,
+   "pos": "Friendcraft gets a design pass of its own before anyone is invited. It works like flirtcraft, tracks how a friendship develops with BARs, and rethinks the basic moves now that emotional alchemy exists. It runs as its own thread, starting with a six-face pass on the design. This stands unless you flip it.",
+   "why": "Your two overrules on fcm-p8-self-test and fcm-p8-no-new-features. Source: friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+  },
+  {
+   "id": "fcm-p8b-interview",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "friendcraft pass 8, read",
+   "auto": true,
+   "pos": "The council builds a way to interview you about your own stories for the book's opening part: one story per thread, one question at a time, and a draft made only from your answers, which you then rewrite. It runs as its own thread. This stands unless you flip it.",
+   "why": "This follows your steer on fcm-p8-part-zero. Book prose stays yours: nothing enters the manuscript until you approve it. Source: the same ledger record"
+  },
+  {
+   "id": "fcm-p8b-outline",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "friendcraft pass 8, read",
+   "auto": true,
+   "pos": "The book's outline is rebuilt from the canon in its own thread, as a proposal. The old outline stays in force until you approve the new one.",
+   "why": "You chose to rebuild it on fcm-p8-ruling-14. Recorded as ruling 14 closed in the decision log. Source: canon/DECISION_LOG.md, 2026-10-06 (friendcraft-manuacript)"
   }
  ],
  "questions": [
@@ -5661,6 +5695,34 @@
      "c": "Drafting starts without your time. The risk is the one pass seven found: a session writing your prose to a rule."
     }
    ]
+  },
+  {
+   "id": "fcm-p8b-exchange-where",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "friendcraft pass 8, read",
+   "q": "It can go on flirtcraft.app. Flirtcraft's Vercel project owns flirtcraft.app and already deploys, so the exchange could live at a path such as flirtcraft.app/friend with no new project and no new storage. The Architect's only objection was that the friend would see flirtcraft's name. Now that Friendcraft is getting a design pass to work like flirtcraft, should today's exchange go live there now, or wait for the redesign?",
+   "why_you": "Putting it on your live domain is an outward act, and whether a friend should see today's version or the redesigned one is your call.",
+   "not_before": "Your steer on the first question asked about flirtcraft.app, and the council had not checked the domain until now (Vercel's domain list for the flirtcraft project, 2026-10-06).",
+   "options": [
+    {
+     "v": "now-on-flirtcraft",
+     "label": "Put today's exchange at flirtcraft.app/friend now, while the redesign runs (recommended)",
+     "c": "A preview link comes to this board first. A friend can play the current version, and what breaks feeds the redesign."
+    },
+    {
+     "v": "wait",
+     "label": "Wait, and launch the exchange as part of the redesign",
+     "c": "No friend plays until the design pass is done. Nothing goes on flirtcraft.app yet."
+    },
+    {
+     "v": "own-address",
+     "label": "Give Friendcraft its own address",
+     "c": "You buy or choose a domain, and the redesign launches there. Buying a domain is money, so the council brings you the price first."
+    }
+   ]
   }
  ],
  "causes": [
@@ -7472,6 +7534,42 @@
     "label": "Stands",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "fcm-p8-no-new-features": {
+    "decision": "overrule",
+    "label": "Overruled: rethink the basic moves now that emotional alchemy and flirtcraft exist",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8-ruling-39": {
+    "decision": "stands",
+    "label": "Stands: ruling 39 closed yes",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8-self-test": {
+    "decision": "overrule",
+    "label": "Overruled: Friendcraft needs more design first, working like flirtcraft with BARs",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8-nine-calls": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8-steven-outside": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8-efa-outside": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    }
   },
   "questions": {
@@ -8049,6 +8147,24 @@
     "label": "Answered with a steer",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+   },
+   "fcm-p8-exchange-live": {
+    "decision": "steer",
+    "label": "Asked whether it can go on flirtcraft.app; answered in fcm-p8b-exchange-where",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8-ruling-14": {
+    "decision": "rederive",
+    "label": "Rebuild the outline from the canon, as a proposal",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+   },
+   "fcm-p8-part-zero": {
+    "decision": "steer",
+    "label": "Build a way for the council to interview me about these stories",
+    "recorded": "2026-10-06",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    }
   },
   "causes": {
