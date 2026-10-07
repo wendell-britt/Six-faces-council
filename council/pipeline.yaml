@@ -204,3 +204,20 @@ transcend_and_include:
   retire_not_delete: Superseded positions, terms and files are retired with their reason and date, and kept readable.
   keep_the_original: A corrected figure is written beside the original and its window or setting, never over it.
   synthesis: The Sage names what the synthesis keeps from each face, and which face's work it set down and why.
+
+retro:   # pass 13 (council/passes/6FACE_PASS13_2026-10-07.md); all five positions stood and proc-rule-retire was answered A, 2026-10-07
+  subject: the council's own record, meaning his overrules, steers and deferrals, the plumbing incidents, and lessons_pending
+    across every registered repo (collect_lessons.py). Resolved entries carry faces and pass (proc-record-face), so an
+    overrule can be traced to the face that made the row.
+  when: the daily session's Grow up day. The first one runs by hand in its own thread (proc-first-retro-by-hand); if the
+    overrules show no repeating face and reason, the rhythm is dropped.
+  lessons: each pending lesson goes on the board as a lesson position with the sentence he was answering, and folds into
+    faces.yaml when it stands (proc-fold-lessons).
+  retire: when a mechanism replaces a prose rule in CLAUDE.md, the skill or docs/pickup.md, the retro may retire the rule
+    as a board position that stands unless he flips it. The rule moves to an incident log with its reason, so it stays
+    readable and no session pays to reread it (proc-rule-retire A). This is the retro's exception to the daily run's
+    "never retire or delete anything".
+  done: a process change ships with a mechanism, a test that would show it failed, its incident in the log, and the rule
+    line count before and after (pass 13, Regent).
+  scorecard: every pass, a council pass included, opens by grading the tests the last pass on its subject set
+    (proc-scorecard-always).
