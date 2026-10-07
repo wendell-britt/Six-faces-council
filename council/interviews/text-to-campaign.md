@@ -112,4 +112,33 @@ Answers (Wendell, 2026-10-07, in the thread):
    demo rounds), real people, or one then the other? And what counts as proof it taught: the skill shown in the
    game, or shown in a real conversation afterwards?
 
+Answers (Wendell, 2026-10-07, in the thread):
+
+> Texts can propose daemons of their own. We want to only do this if they don't fit into the existing structure OR as
+> a subclass of daemon
+>
+> Parallel milestones but the idea of milestones is the same as sprout is essentially me writing the emotional
+> alchemy text through game design
+>
+> Council daemon playtesters, me, and any other play testers I bring in for feedback
+>
+> Specifically if I can get authors to donate their books the authors can be play testers as well
+
+- A text may propose a daemon only when a habit fits none of the existing daemons, or as a subclass of one. The
+  translation table comes first; a new daemon is the exception and must say why no existing one fits.
+- A text's milestones run as a parallel track beside Sprout's story milestones. They are the same kind of thing:
+  Sprout is Wendell's emotional alchemy text written as game design. So Sprout is this process's first worked
+  example, run on his own text, and its design record is a reference for steps 1 to 3.
+- Playtesters: the council's daemon playtesters, Wendell, and anyone he brings in.
+- Authors who donate their books can playtest their own campaign. That ties the process to permission from the
+  author for each text it uses beyond private testing (inferred; not yet asked).
+- Still open from round 4: what counts as proof that a campaign taught the technique.
+
+### Round 5 (2026-10-07)
+
+1. **Proof.** What tells you a campaign taught the technique: the author recognising their technique in play, the
+   player doing it in a real conversation afterwards, a check inside the game, or a mix?
+2. **Holes (step 2).** Is a hole a skill the text assumes but never teaches? Egan, for one, assumes the helper can
+   manage their own reactions while listening. Sprout's core loop would fill that with emotional alchemy.
+
 Answers: waiting.
