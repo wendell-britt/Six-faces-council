@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "positions": [
   {
    "id": "build",
@@ -10449,6 +10449,23 @@
      "positions": [
       "wave-move-names",
       "wave-qi-made-visible"
+     ]
+    },
+    {
+     "n": 13,
+     "questions": [
+      "battle-fight-and-magic"
+     ],
+     "positions": [
+      "battle-face-off-screen",
+      "battle-four-commands",
+      "battle-hidden-first",
+      "battle-turns",
+      "magic-is-the-alchemy",
+      "magic-from-teachers",
+      "magic-grows",
+      "spirit-five-stats",
+      "spirit-growth-by-training"
      ]
     }
    ]
