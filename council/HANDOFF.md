@@ -164,3 +164,11 @@ CLAUDE.md, this file and the board.
 - **Pickup routine:** the coordinator was asked to update its prompt so a fresh session never calls `add_repo`
   (docs/pickup.md, "The lost Send"). Check with `get_trigger trig_01L138vKTaN9MSJoFKRmaBNx` that the prompt carries
   that paragraph. Waiting on Wendell: a line in the project instructions pre-authorizing the board read thread.
+
+## Open on 2026-10-07, from the pickup hostile review
+
+- **`pickup-pull-model` waits on Wendell.** council/research/2026-10-07-pickup-hostile-review.md finds the pickup
+  chain itself is the cause of the Send failures and recommends pull over push: every council session syncs the
+  board's store into main first, with a claim and expiry on `pickup/last`, a daily alarm that does not fire the same
+  routine, and the spare routines `trig_01DpRsDM94Cnv2neyDVkBNMb` and `trig_01Q9mMcVwR4MCqHQzUHwcmiS` switched off.
+  Nothing is built or switched off until he answers. `pickup-mechanism-before-rule` stands unless he flips it.
