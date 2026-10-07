@@ -3923,6 +3923,104 @@
    "auto": true,
    "pos": "The push design's history leaves docs/pickup.md for a new incident log, docs/incidents.md, which no session is told to read. pickup.md keeps the pull model, the Send button and the routine. The four rule files go from 638 lines to 588. This stands unless you flip it.",
    "why": "Your answer A on proc-rule-retire: a rule a mechanism replaced is retired as a position and moves to an incident log. The pull model replaced every rule in those sections, including \"a board read that starts while another runs should wait\". Source: council/passes/6FACE_RETRO1_2026-10-07.md, Regent (six-faces-council)"
+  },
+  {
+   "id": "ds-intersect",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "Daemons are the player's own charges and spirits are the forest's. Each spirit needs what its element's village rite gives, and that same rite answers a daemon at its gate: the Earth spirit needs space, and leaving space loosens the Controller; the Water spirit needs something returned, and the return gives the Victim a witness; the Fire spirit needs the obstacle named, and honest boundaries give the Skeptic proof. Holding a spirit teaches the corner move that answers its paired daemon, so befriending a spirit teaches what your own daemon needed. This stands unless you flip it.",
+   "why": "design.md's channel table and 'The ring and the gates' (Decided) already pair them. The Wood and Metal pairs fit more loosely and are marked for story work. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-strategies",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "A daemon strikes with its habit trigrams, shows its wind-up, and plays its urge as a trick: the Protector wards, the Controller waits to build a bigger push, the Skeptic cancels an answer it did not see you listen for, the Fixer heals itself, the Victim grows stronger from each hit, the Damaged Self turns Fight back on itself, the Emotional Body swaps the feeling it wears, and the Player mirrors your last move. A spirit strikes with its element's moves, never feints, and its push text hints its need. Fight subdues either one; only Magic integrates a daemon or satisfies a spirit. This stands unless you flip it.",
+   "why": "Each trick is read from the daemon's urge in data/daemons.json; the spirit fight is design.md's. The tricks are the council's and wait on a playtest. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-two-meetings",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "Each daemon is met twice: first on the strip in a simple wild form, unlocked by practice, then at its story gate at the milestone design.md already gives it. No gate moves. This stands unless you flip it.",
+   "why": "If the strip unlocked by milestone, the demo (Act 0 to milestone 5) would hold only the Protector, against demo-daemon-count, which stood. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-tiers",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "Three tiers per daemon. Tier 1 uses one habit with its wind-up shown every time. Tier 2 adds a second habit and the urge's trick, after one integration. Tier 3 feints, and comes at its gate. One sprite per daemon, recoloured for the feeling it wears. This stands unless you flip it.",
+   "why": "Your words: 'start with simple versions'. The Controller daemon's research: Pokemon's route-by-route reveal, Dragon Quest's she-slime as a stronger recolour, Final Fantasy X's recolours, Monster Rancher's top two or three stats. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-unlock-by-integration",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "The next daemon joins the strip when the player integrates the newest one with a right Magic answer. Wins and Fight never unlock one. The strip's equal weights are replaced by the unlocked list. This stands unless you flip it.",
+   "why": "Unlocking by wins invites grinding one easy daemon. Only Magic integrates (battle-fight-and-magic, round 13). Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-element-keyed",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "Your starting element colours the scaling. Every daemon is first met wearing your own element, neutral on the type chart, so its habit is the only lesson. Later meetings walk the generating cycle from your element, and the feeling that controls yours comes last. Where Act 0 gives a first block, the block's feeling stands in for the channel. Every player meets all eight daemons in all five elements, and players of different elements meet a differently coloured strip. This stands unless you flip it.",
+   "why": "design.md's bout set already scales this way: bout 1 is the player's own channel, bout 6 the feeling that controls it. enc-first-block stays. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-hunters-watch",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "The guild is the Hunters' watch house (a working name), one interior at the wall-and-gate screen, the demo's eighth. Pip trains the player there on practice doubles of the daemons during milestones 1 to 3; when he is reported lost at milestone 4 his ring stands empty. From milestone 4 Captain Rue teaches the strip's rules (rest what comes out, ground it into the well) and keeps a board of every daemon met and its urge. This stands unless you flip it.",
+   "why": "Your ask for training inside the guild. The record has the Hunters under Captain Rue and Pip but no building; only hunters may work the strip (design.md). Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-gate-teachers",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "The forest's way is taught at the gate, not on the strip, because only hunters may stand there. Mother Ede, who treats the changed at the south gate at night, teaches what a spirit is and that the Well kills it before milestone 5, so her dismissal lesson at milestone 5 lands on a warned player. The Hunters teach the well; Ede teaches the earth. The player hears both and chooses. This stands unless you flip it.",
+   "why": "design.md: the bridge cast supports the player in Act I, and earth and well are habits the player moves between (Decided). The Protector daemon's warning that an unwarned player can lose an ally to the Well. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ds-pace",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "sprout demo 14",
+   "auto": true,
+   "pos": "The strip adds one voice at a time. Milestones 1 to 3: practice doubles in the watch house, no HP at stake. Milestone 4: the strip opens with the first daemon only, at tier 1. Each integration adds the next daemon. Milestone 5: the first spirit joins the strip beside the daemons. Milestone 6 and after: each daemon's gate at its story milestone, and the other four spirits in the forest in Act II. This stands unless you flip it.",
+   "why": "The Player daemon's report, and design.md's milestones 4 to 6. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
   }
  ],
  "questions": [
@@ -7120,6 +7218,34 @@
      "v": "c",
      "label": "C, never retire",
      "c": "Rules only grow. The retro fixes with mechanisms and leaves every sentence in place."
+    }
+   ]
+  },
+  {
+   "id": "ds-daemon-order",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout demo 14",
+   "q": "Which order should the daemons unlock in on the strip?",
+   "why_you": "Your words, 'the order of how the daemons are discovered and developed', fit two orders the record holds: your book's eight gates and the story's gate milestones. They give different strip tables and a different place for the Emotional Body, which has no story gate. The answer sets the encounter table's unlock list.",
+   "not_before": "The strip had no unlock order until today; all eight daemons sat at equal weight.",
+   "options": [
+    {
+     "v": "book",
+     "label": "A. Your book's journey to the center (recommended)",
+     "c": "Protector, Controller, Skeptic, Fixer, Emotional Body, Victim, Damaged Self, then the Player last. It places the Emotional Body, and its first two match the story's first two gates."
+    },
+    {
+     "v": "story",
+     "label": "B. The story's gate order",
+     "c": "Protector, Controller, Fixer, Skeptic, Victim, Damaged Self, then the Player, with the Emotional Body placed after the Victim by the council. The strip previews each gate in the order the story reaches it."
+    },
+    {
+     "v": "player-first",
+     "label": "C. The player's own belief or element picks the first",
+     "c": "The strip starts with the daemon that matches this player's charge, then runs the book's order round from it. Every player still meets all eight, starting where their charge is loudest."
     }
    ]
   }
@@ -13263,6 +13389,23 @@
       "magic-grows",
       "spirit-five-stats",
       "spirit-growth-by-training"
+     ]
+    },
+    {
+     "n": 14,
+     "questions": [
+      "ds-daemon-order"
+     ],
+     "positions": [
+      "ds-intersect",
+      "ds-strategies",
+      "ds-two-meetings",
+      "ds-tiers",
+      "ds-unlock-by-integration",
+      "ds-element-keyed",
+      "ds-hunters-watch",
+      "ds-gate-teachers",
+      "ds-pace"
      ]
     }
    ]
