@@ -230,4 +230,18 @@ Answers (Wendell, 2026-10-07, in the thread):
 2. **The first test's size.** Is the first run a thin slice (one milestone, one teacher, one spirit, one daemon's
    translation, one BAR badge), played through step 4 before the rest of the book is translated?
 
-Answers: waiting.
+Answers (Wendell, 2026-10-07, in the thread):
+
+> The translating into game content gets around the copywriting. Official permission means we can say that this is
+> a licensed application, using the techniques in game design means designing it in the game world such that we
+> are still within fair use (as though the content were developed based off of my notes of the text and my own
+> applications of the text)
+
+- Copyrighted texts are fine to translate. The campaign is game content built from Wendell's notes on the text and
+  his own applications of it, set in the game world. Author permission adds the right to call it a licensed
+  application.
+- Guardrail that follows (inferred; Claude's reading, not legal advice): techniques and ideas are free to use, the
+  author's wording is not. The teacher NPC speaks in the game's own words, no passages are quoted at length, and
+  the book's title and the author's name appear only as a credit until there is a licence. Before anything is sold
+  or published, a lawyer should look at it.
+- Question 2 (the thin slice) is still open.
