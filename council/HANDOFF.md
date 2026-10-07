@@ -68,8 +68,13 @@ CLAUDE.md, this file and the board.
 - **Podcast page:** flirtcraft #9 merged (b5284f5). The player and the Listen on Spotify button go in by setting
   `embedUrl` and the Spotify `href` in flirtcraft `lib/podcast.ts` once Wendell pastes the episode link (step 5 of
   Your steps list `podcast-spotify`).
-- **Episode 1 copy (`pod-ep1-from-audio`):** waits on step 2, Wendell attaching the audio in the Podcast page thread.
-  Then draft the show description, title and notes, and put the title on the board as a question.
+- **Episode 1 copy (done 2026-10-07):** show description, title and notes are in `/mnt/project-files/podcast/episode-1.md`;
+  Wendell uploaded and published the episode (step 4 ticked). Step 5, the Spotify link, is still open. The
+  Podcast Thumbnail Studio is at https://claude.ai/artifact/RAiZ3keBiE6BvDD6YKA9S8 (`pod-thumb-studio`).
+- **Book harvest (2026-10-07, battle `fr-book` round 2):** flirtcraft #12 (draft) adds `book/podcast/episode-01.md`
+  (20 ideas, conflicts with the app) and `book/podcast/README.md` (the recipe for the next episode). Questions
+  `book-golds-satisfactions` and `book-permission-remedy` wait on Wendell; `fc-fear-rung-wonder` is a small decks.json
+  fix to build once it stands. Mark #12 ready once he has seen it; it merges by itself after that.
 - **Cover art (done):** Wendell picked cover B, Two signals, at 20:02 on 2026-10-06, in the flirt red (#ff5a5f to
   #d4003a) his `pod-art-ma` steer asked for. The final file is `/mnt/project-files/podcast/covers/flirtcraft-podcast-cover.jpg`
   (3000x3000), and step 4 of Your steps list `podcast-spotify` names it. The other drafts, `covers.html` and
