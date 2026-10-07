@@ -193,4 +193,21 @@ Answers (Wendell, 2026-10-07, in the thread):
 2. **Who runs the steps.** Does a model draft each step and you review it (like bars-engine's book quest review),
    or are some steps done by hand? The community's allergy to AI and bars-engine's non-AI track may bear on which.
 
+Answers (Wendell, 2026-10-07, in the thread):
+
+> Teacher NPC that carries the voice. If there is an existing character that can hold that voice prioritize that.
+>
+> What do you mean by carry out the step?
+
+- Each text gets a teacher NPC who carries the author's voice. An existing character who can hold that voice comes
+  first; a new character only when none can.
+- Question 2 was unclear. Restated in round 7b.
+
+### Round 7b (2026-10-07)
+
+2. **Who does the work of each step, restated.** For *The Skilled Helper*, someone has to read the book and write
+   the list of milestones, lessons and beliefs (step 1), draft the story and the teacher's lines (step 2), and write
+   the daemon translation table and the spirits (step 3). For each, who writes the first draft (a model, Wendell,
+   or the author), and who checks it before it goes into the game?
+
 Answers: waiting.
