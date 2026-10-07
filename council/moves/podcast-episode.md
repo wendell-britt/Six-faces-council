@@ -58,7 +58,10 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
    transcript, each 10 to 60 seconds, with its start and end time, its words and why it stands on its own, and at
    least one of them is the guest's. The moments are one question on the board. Once he picks, and the episode's
    video is in a folder on his Mac that the session can reach, the session cuts each clip there with ffmpeg,
-   vertical at 1080 by 1920, with the words on screen. It writes an Instagram, a Facebook and an X caption for each
+   vertical at 1080 by 1920, with the words on screen. A clip cut from a Zoom recording keeps Zoom's
+   "Recording Started" chapter, which makes players show the whole meeting's length (episode 1's 19-second clip
+   showed as 48 minutes), so every cut drops it: `ffmpeg -i in.mp4 -map 0:v -map 0:a -map_chapters -1 -c copy
+   out.mp4`, then `ffprobe` checks the length. It writes an Instagram, a Facebook and an X caption for each
    clip in `podcast/<episode>/clips-and-captions.md`, and a Your steps list that posts them on the rhythm in the
    project files' `podcast/episode-marketing-plan.md`: the episode on day 0, then one clip on days 2, 5 and 9.
 
