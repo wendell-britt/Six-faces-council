@@ -4107,6 +4107,70 @@
    "auto": true,
    "pos": "Step 1 on The Skilled Helper's introduction is drafted: six milestones (such as naming a small annoyance before it becomes a blowup), eleven lessons, ten beliefs the author holds and seven he wants a helper to take on, and seven named techniques, three of them taught here. Every item paraphrases and cites its page. This stands unless you flip it. Add your own applications of the text here as a steer, and step 2 starts from both.",
    "why": "ttc-applications A (the model drafts, you add your applications). The Shaman checked it: the beliefs are the author's own, and the section's obstacles (guilt, resistance, blind spots) are left for step 3 to take from the emotional alchemy canon. It covers the preface, the guide and Chapter 1 to p. 15, where the uploaded copy ends. Source: sprout campaigns/skilled-helper/introduction/extract.yaml (pull request #28)"
+  },
+  {
+   "id": "oag-sketch-order",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "A blocked W.A.V.E. step now runs your sketch in order: 1 the blocker's sensation, 2 its element, how the element does its job, and an EA practice, 3 the daemon in the way and its job, 4 the six game masters' gate (pick the face, hold the belief it gives, see if it shifts), then Release, then back to the step. This stands unless you flip it.",
+   "why": "Your sketch and message of 7 October, 19:45. It also carries out your answer on oag-block-work, \"Mix of a and c\". Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md (pull request #263)"
+  },
+  {
+   "id": "oag-daemon-step",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "Step 3 shows the seven daemons with your book's essence line for each, plus an \"I'm not sure\" card. It asks the daemon's job right now (required), who it works for (optional), and whether it will step aside. \"Not yet\" is accepted with thanks, and the player still goes on to the gate. This stands unless you flip it.",
+   "why": "The seven and their essences are your canon (MTGOA Daemons, Breakdown; position bm-daemon-brief). The three questions are adapted from the interview in the Daemons from Big Mind proposal, without the Big Mind name. Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md (pull request #263)"
+  },
+  {
+   "id": "oag-gate",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "The six game masters' gate is the face pick, made after the daemon, with the belief, the hold and the shift check behind it. Inside a block the gate does not ask the element's job again and runs no second practice. This stands unless you flip it.",
+   "why": "Your message: \"A 4th step would be adding the 6 game master gate as well\". The six faces are the six game masters. Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md (pull request #263)"
+  },
+  {
+   "id": "oag-release",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "A shift at the gate goes to a Release screen: one breath, the belief shown, then \"Return to\" the blocked step. A block that does not shift keeps \"Go back anyway\". This stands unless you flip it.",
+   "why": "Your sketch draws Release, then \"Return to original block\". Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md (pull request #263)"
+  },
+  {
+   "id": "oag-restart",
+   "faces": [
+    "architect"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "Every W.A.V.E. Exhale now offers \"Still blocked? Start the W.A.V.E. again\", which goes back to Welcome on the same charge. This stands unless you flip it.",
+   "why": "Your sketch draws \"Restart until unblocked\" from Exhale back to the initial resistance. Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md (pull request #263)"
+  },
+  {
+   "id": "oag-record",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "A \"Your record\" screen, linked from the start and from Cycle Complete, lists every block worked (its words, sensation, element and job, practice, daemon and job, the gate's face, the belief, released or not) and every completed cycle's beliefs. It stays in the player's browser, behind a switch that starts off, with an Erase button, and never enters the coach code. This stands unless you flip it; question oag-record asks whether the switch is the right line.",
+   "why": "Your message: \"This program is to help peopel keep track of charges and their resolutions and emergent beliefs\". Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md (pull request #263)"
   }
  ],
  "questions": [
@@ -7381,6 +7445,78 @@
      "v": "wait-for-pages",
      "label": "B. Wait for the rest of Chapter 1",
      "c": "You attach pp. 15 to the end of Chapter 1 in a thread, step 1 adds them to this file, and step 2 waits until then. The introduction is whole, and nothing moves until you attach the pages."
+    }
+   ]
+  },
+  {
+   "id": "oag-ea-practice",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "ontology game 3",
+   "q": "Where should the EA practice run when a player works a block?",
+   "why_you": "\"EA practice\" is your term, and the record does not say which practice it names. The Challenger dissents from the other faces here.",
+   "not_before": "The sketch is from 7 October. Meanwhile the build runs on A; B changes only the order of two screens.",
+   "options": [
+    {
+     "v": "element",
+     "label": "A. At step 2, with the element (recommended)",
+     "c": "After saying how the element does its job, the player picks W.A.V.E., Simple Breaths or Sedona and breathes with it, then meets the daemon. This follows where you drew it."
+    },
+    {
+     "v": "gate",
+     "label": "B. Once, after the gate's belief",
+     "c": "Step 2 names the element and its job only. The one practice runs after holding the belief, as in the main cycle. Fewer screens per block."
+    }
+   ]
+  },
+  {
+   "id": "oag-record",
+   "faces": [
+    "regent"
+   ],
+   "pass": "ontology game 3",
+   "q": "Should the record of charges and beliefs be on for every player?",
+   "why_you": "It changes your 24 September boundary, which keeps belief text out of storage.",
+   "not_before": "The tracker was first asked for on 7 October. Meanwhile the build runs on A, so nothing is stored unless a player switches it on.",
+   "options": [
+    {
+     "v": "switch",
+     "label": "A. A switch that starts off (recommended)",
+     "c": "Nothing is stored unless the player turns the record on. Their words and beliefs then stay in their browser, with an Erase button."
+    },
+    {
+     "v": "always",
+     "label": "B. On for everyone, with Erase",
+     "c": "Every player keeps a record from their first block. The 24 September boundary is lifted for the record only."
+    },
+    {
+     "v": "no-text",
+     "label": "C. Keep the shape, not the words",
+     "c": "The record keeps element, daemon, face and whether it released, and leaves words and beliefs on screen only."
+    }
+   ]
+  },
+  {
+   "id": "oag-main-order",
+   "faces": [
+    "architect"
+   ],
+   "pass": "ontology game 3",
+   "q": "Should the game's main cycle also run in your sketch's order?",
+   "why_you": "Your sketch shows the W.A.V.E. process, and whether it is the whole game is your design call.",
+   "not_before": "The sketch is from 7 October. Meanwhile only block work follows it.",
+   "options": [
+    {
+     "v": "blocks",
+     "label": "A. Block work only, for now (recommended)",
+     "c": "The main cycle keeps channel, job, face, belief and practice. Only a blocked W.A.V.E. step runs the four steps."
+    },
+    {
+     "v": "whole",
+     "label": "B. The whole game",
+     "c": "Every cycle runs sensation, element and practice, daemon, gate and release. The demo and the route map change with it."
     }
    ]
   }
