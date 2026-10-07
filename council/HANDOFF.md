@@ -115,8 +115,9 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-06, from the Flirtcraft loop audit thread (battle `fr-orient-new-players`)
 
-- **The pass:** flirtcraft `6FACE_PASS3_2026-10-06.md` and `council/ledger/2026-10-06-loop-pass1.json`, in flirtcraft
-  #10. The readable page is https://claude.ai/artifact/1QydwJABFethDKW34vwBsR.
+- **The pass:** flirtcraft `6FACE_PASS3_2026-10-06.md` and `council/ledger/2026-10-06-loop-pass1.json`, merged in
+  flirtcraft #10 (2026-10-07). Board read 2349 recorded every row: all seven positions stood, both questions took A.
+  The audit thread is closed; the build below is a new thread. The readable page is https://claude.ai/artifact/1QydwJABFethDKW34vwBsR.
 - **On the board:** seven positions (`loop-fix-labels`, `loop-draw-means-drawn`, `loop-one-move`, `loop-posture-once`,
   `orient-bridge`, `orient-on-your-own`, `orient-reflection-to-wall`) stand unless he flips them; two questions wait on
   him (`orient-first-paid-run`, `orient-terms`).
