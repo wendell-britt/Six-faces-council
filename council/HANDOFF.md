@@ -60,6 +60,11 @@ CLAUDE.md, this file and the board.
   `podcast/ep01-isaac-holze/clips-and-captions.md`. Your steps list `podcast-ep1-clips` posts them. Waiting on
   `pod1-isaac-handle`. Episode 2's clips need step 6 once it is on YouTube; `Downloads/02-how-would-you-like-to-feel.mp4`
   (53 s) looks like one already cut.
+- **Clip length** (2026-10-07): `pod-clip-length` stands unless flipped: one or two clips of 60 to 90 seconds per
+  episode, one or two of 30 to 60, none under 30. Research in the MTGOA project files at
+  `podcast/reels-research-2026-10-07.md`. Next, in a new thread: recut episode 1 longer from
+  `~/Downloads/GMT20260916-192430_Recording_640x360.mp4` (only 640x360; ask whether a full-size recording exists)
+  and its VTT, with moments proposed on the board per step 6 of the move. Clip 1 is due to post on 2026-10-08.
 - **Leftover on his Mac:** `~/Downloads/podcast/_claude_work/` holds four wav files and a png from finding the clips.
   Deleting needs his permission in a session; he can bin the folder himself.
 
