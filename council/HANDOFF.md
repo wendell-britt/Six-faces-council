@@ -62,6 +62,7 @@ CLAUDE.md, this file and the board.
   `podcast/ep01-isaac-holze/clips-and-captions.md`. Your steps list `podcast-ep1-clips` posts them. Waiting on
   `pod1-isaac-handle`. Episode 2's clips need step 6 once it is on YouTube; `Downloads/02-how-would-you-like-to-feel.mp4`
   (53 s) looks like one already cut.
+- **Episode 2 clips** (2026-10-07): moments are in `/mnt/project-files/podcast/ep02-tom-hurlburt/clip-moments.md`, and board question `pod2-clip-moments` recommends A, B, C, D. Next thread: read his answer, cut the picks from `~/Downloads/GMT20260925-170846_Recording_640x360.mp4` per step 6 of the podcast move (9:16, words on screen, chapters stripped), write `clips-and-captions.md`, and make a Your steps list on the day 0/2/5/9 rhythm. The move doc still says "10 to 60 seconds"; bring it in line with `pod-clip-length`. The episode's YouTube link is not on record yet.
 - **Clip length** (2026-10-07): `pod-clip-length` stands unless flipped: one or two clips of 60 to 90 seconds per
   episode, one or two of 30 to 60, none under 30. Research in the MTGOA project files at
   `podcast/reels-research-2026-10-07.md`. Next, in a new thread: recut episode 1 longer from
@@ -268,5 +269,6 @@ CLAUDE.md, this file and the board.
 - **Applied:** his board answers on `oag-ea-practice`, `oag-main-order`, `oag-daemon-step` (overruled) and `oag-record`
   (A), in bars-engine #264, a draft that stacks on #263 and targets its branch. The positions the build added stand
   unless he flips them: `oag-open-up-tools`, `oag-open-up-marks`, `oag-wave-first`, `oag-dig-deeper`.
-- **Next:** #263 merges first, then #264 retargets to main and can be marked ready. Pass 3's test 10 (he plays one
-  blocked step against his sketch) is still open on his steps list.
+- **Merged 2026-10-07 23:50 UTC** on his word ("ok let's merge both of those"): #264 into #263's branch, then #263
+  into main, with the 21:06 steers (`oag-clean-up-moves`). Pass 3's test 10 (he plays one blocked step against his
+  sketch) is still open on his steps list.
