@@ -166,4 +166,31 @@ Answers (Wendell, 2026-10-07, in the thread):
    driver's seat"), or the limiting beliefs that block practice, which would become daemons and inner blocks? Or
    both, sorted into two lists?
 
+Answers (Wendell, 2026-10-07, in the thread):
+
+> I do think a BAR artifact is really good proof. A player in the game can collect these artifacts as well. If done
+> in a coaching container the coach validates the BARs
+>
+> We're pulling out the authors beliefs and the beliefs they want the readers to install by reading the text. The
+> blocking beliefs will all be the self-sabotage beliefs of mastering allyship and other emotional alchemy based
+> texts (like flirtcraft)
+
+- Outer-world proof is a BAR. Players collect their BARs in the game. In a coaching container the coach validates
+  each BAR; outside one, the BAR stands on the player's word (inferred; not yet asked who validates outside
+  coaching).
+- Step 1 pulls the author's beliefs and the beliefs the author wants readers to take on. It does not pull blocking
+  beliefs from the text.
+- Blocking beliefs come from one shared source: the self-sabotage beliefs of *Mastering Allyship* and other
+  emotional alchemy texts such as flirtcraft. bars-engine already carries a list in its quest grammar
+  (`src/lib/quest-grammar/emotional-alchemy.ts`, the shadow voices: not ready, not worthy, not good enough, not
+  capable, insignificant, don't belong; unpacking question Q6). So the text supplies the technique and the beliefs
+  to install, and the emotional alchemy canon supplies the blocks, the same way it supplies the daemons.
+
+### Round 7 (2026-10-07)
+
+1. **Teachers (step 2).** Does each text get its own teacher NPC who carries the author's voice (an Egan-like
+   mentor), or do Sprout's existing cast (Pip, Captain Rue, Mother Ede) teach the text's track?
+2. **Who runs the steps.** Does a model draft each step and you review it (like bars-engine's book quest review),
+   or are some steps done by hand? The community's allergy to AI and bars-engine's non-AI track may bear on which.
+
 Answers: waiting.
