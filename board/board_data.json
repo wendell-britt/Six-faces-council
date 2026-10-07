@@ -12032,6 +12032,158 @@
      "shaman"
     ],
     "pass": "texts to campaigns, step 1"
+   },
+   "oag-sketch-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:16:16.498Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-daemon-step": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:16:56.164Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "steer": "We should be telling them what the daemon's job is. They don't provide that info. Who it works for is also something that's supplied to them",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:17:08.898Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-release": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:17:15.882Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-restart": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:17:19.898Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-record": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:17:24.481Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "ontology game 3"
+   },
+   "pod-thumb-studio": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:37:39.444Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "podcast"
+   },
+   "book-pod-harvest": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:38:27.956Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "podcast episode 1 harvest"
+   },
+   "book-relationships-chapter": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:38:33.214Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "podcast episode 1 harvest"
+   },
+   "book-birthday-game": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:38:45.314Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "podcast episode 1 harvest"
+   },
+   "book-names-in-print": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:38:52.614Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "podcast episode 1 harvest"
+   },
+   "book-channels-term": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:39:01.800Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "podcast episode 1 harvest"
+   },
+   "fc-fear-rung-wonder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:39:08.674Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "podcast episode 1 harvest"
    }
   },
   "questions": {
@@ -13329,6 +13481,66 @@
      "architect"
     ],
     "pass": "texts to campaigns, step 1"
+   },
+   "oag-ea-practice": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:13:47.875Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "steer": "I don't think one should do a WAVE after saying how the element does it's job. The EA practice should be one connected to the element they choose. Maybe this connects with WAVE, but it should be tools specifically made for that move. It needs to be an open up move so they can feel it more, and should be able to have the players mark if they are experiencing blocks re: opening up to that emotion",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-record": {
+    "decision": "switch",
+    "label": "A switch that starts off",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:14:17.580Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-main-order": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:16:09.369Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "steer": "The whole game is based on WAVE based on my feedback and the feedback of people who've played it. Everything is downstream from wave so if WAVE is blocked one can diagnoze by digging deeper until the block releases and they can go back to the work that brought them to the practice in the first place.",
+    "faces": [
+     "architect"
+    ],
+    "pass": "ontology game 3"
+   },
+   "book-golds-satisfactions": {
+    "decision": "both",
+    "label": "Both: the golds stay charge ladders, and the book also names them as satisfactions in your voice",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:38:12.441Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "podcast episode 1 harvest"
+   },
+   "book-permission-remedy": {
+    "decision": "both",
+    "label": "Both: name the myth, then offer the dojo as a place where permission is given",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T20:38:19.491Z",
+    "record": "council/ledger/2026-10-07-pull-203908.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "podcast episode 1 harvest"
    }
   },
   "causes": {

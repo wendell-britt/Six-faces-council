@@ -1,0 +1,128 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T20:39:08.674Z",
+ "answers": {
+  "oag-ea-practice": {
+   "kind": "question",
+   "choice": "",
+   "savedAt": "2026-10-07T20:13:47.875Z",
+   "steer": "I don't think one should do a WAVE after saying how the element does it's job. The EA practice should be one connected to the element they choose. Maybe this connects with WAVE, but it should be tools specifically made for that move. It needs to be an open up move so they can feel it more, and should be able to have the players mark if they are experiencing blocks re: opening up to that emotion"
+  },
+  "oag-record": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:17:24.481Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "oag-main-order": {
+   "kind": "question",
+   "choice": "",
+   "savedAt": "2026-10-07T20:16:09.369Z",
+   "steer": "The whole game is based on WAVE based on my feedback and the feedback of people who've played it. Everything is downstream from wave so if WAVE is blocked one can diagnoze by digging deeper until the block releases and they can go back to the work that brought them to the practice in the first place. "
+  },
+  "oag-sketch-order": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:16:16.498Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "oag-daemon-step": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:16:56.164Z",
+   "status": "overrule",
+   "steer": "We should be telling them what the daemon's job is. They don't provide that info. Who it works for is also something that's supplied to them "
+  },
+  "oag-gate": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:17:08.898Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "oag-release": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:17:15.882Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "oag-restart": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:17:19.898Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pod-thumb-studio": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:37:39.444Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  },
+  "book-golds-satisfactions": {
+   "kind": "question",
+   "choice": "both",
+   "savedAt": "2026-10-07T20:38:12.441Z",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-permission-remedy": {
+   "kind": "question",
+   "choice": "both",
+   "savedAt": "2026-10-07T20:38:19.491Z",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-pod-harvest": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:38:27.956Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-relationships-chapter": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:38:33.214Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-birthday-game": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:38:45.314Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-names-in-print": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:38:52.614Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-channels-term": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:39:01.800Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "fc-fear-rung-wonder": {
+   "kind": "position",
+   "savedAt": "2026-10-07T20:39:08.674Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/oag-ea-practice: Steer only (steer: \"I don't think one should do a WAVE after saying how the element does it's job. The EA practice should be one connected to the element they choose. Maybe this connects with WAVE, but it should be tools specifically made for that move. It needs to be an open up move so they can feel it more, and should be able to have the players mark if they are experiencing blocks re: opening up to that emotion\")",
+  "questions/oag-record: A switch that starts off",
+  "questions/oag-main-order: Steer only (steer: \"The whole game is based on WAVE based on my feedback and the feedback of people who've played it. Everything is downstream from wave so if WAVE is blocked one can diagnoze by digging deeper until the block releases and they can go back to the work that brought them to the practice in the first place.\")",
+  "positions/oag-daemon-step: Overruled (steer: \"We should be telling them what the daemon's job is. They don't provide that info. Who it works for is also something that's supplied to them\")",
+  "questions/book-golds-satisfactions: Both: the golds stay charge ladders, and the book also names them as satisfactions in your voice",
+  "questions/book-permission-remedy: Both: name the myth, then offer the dojo as a place where permission is given"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
