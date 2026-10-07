@@ -53,6 +53,15 @@ CLAUDE.md, this file and the board.
 - **Episode 2 with Tom Hurlburt** waits on `pod2-title` and `pod2-thumb-pick`. The copy and the drafts are in the MTGOA
   project files under `podcast/ep02-tom-hurlburt/`. If he picks "Put us in it", redraw his pick with a still from the
   video as `photo` in `spec.json`. Then Your steps list `podcast-ep2-youtube` takes it to YouTube.
+- **Picked (board read of 2026-10-07):** the aging parents title and thumbnail A; the description stands.
+- **Episode marketing** (2026-10-07): the plan is in the MTGOA project files at `podcast/episode-marketing-plan.md`
+  and the move's new step 6. Episode 1's three clips (Isaac Holze) are renamed copies in
+  `~/Downloads/podcast/ep01-clips/` on Wendell's Mac, with `captions.md`; the same captions are in
+  `podcast/ep01-isaac-holze/clips-and-captions.md`. Your steps list `podcast-ep1-clips` posts them. Waiting on
+  `pod1-isaac-handle`. Episode 2's clips need step 6 once it is on YouTube; `Downloads/02-how-would-you-like-to-feel.mp4`
+  (53 s) looks like one already cut.
+- **Leftover on his Mac:** `~/Downloads/podcast/_claude_work/` holds four wav files and a png from finding the clips.
+  Deleting needs his permission in a session; he can bin the folder himself.
 
 ## Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)
 

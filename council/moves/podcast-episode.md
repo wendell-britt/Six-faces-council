@@ -1,8 +1,9 @@
 # The podcast episode move
 
 A move the council runs once per podcast episode. It turns a recording into what the episode needs to go out: a
-title, a description with chapters, and a YouTube thumbnail. Wendell picks the title and the thumbnail on the
-Council Board, and uploading stays on his Your steps list.
+title, a description with chapters, a YouTube thumbnail and three short clips for Instagram, Facebook and X.
+Wendell picks the title, the thumbnail and the clip moments on the Council Board, and uploading and posting stay on
+his Your steps list.
 
 ## The ask, in his words
 
@@ -22,7 +23,7 @@ It runs when Wendell attaches an episode's transcript, audio or video in a proje
 recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes use it too (battle
 `fr-podcast-launch`, position `pod-ep1-from-audio`).
 
-## The five steps
+## The six steps
 
 1. **Read the recording.** The session reads the whole transcript. A Zoom VTT has the speaker on each cue, and a
    few `grep` calls on phrases give chapter times. Claude's cloud sessions cannot open zoom.us
@@ -52,10 +53,18 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
 5. **Write his steps.** Uploading needs his YouTube account, so the session writes a Your steps list: open the
    video in YouTube Studio, paste the title and description, upload the picked thumbnail, and publish. A custom
    thumbnail needs a channel with phone verification, so the list says so where that applies.
+6. **Pick and cut the clips.** Added on 2026-10-07, when Wendell asked for episode 1's clips and said "I think we
+   need a strategy for marketing episodes that have been created". The session proposes three clip moments from the
+   transcript, each 10 to 60 seconds, with its start and end time, its words and why it stands on its own, and at
+   least one of them is the guest's. The moments are one question on the board. Once he picks, and the episode's
+   video is in a folder on his Mac that the session can reach, the session cuts each clip there with ffmpeg,
+   vertical at 1080 by 1920, with the words on screen. It writes an Instagram, a Facebook and an X caption for each
+   clip in `podcast/<episode>/clips-and-captions.md`, and a Your steps list that posts them on the rhythm in the
+   project files' `podcast/episode-marketing-plan.md`: the episode on day 0, then one clip on days 2, 5 and 9.
 
 ## What it leaves alone
 
-- It never publishes, schedules or uploads anything. Publishing under his name is reserved to him.
+- It never publishes, schedules, uploads or posts anything, and it never messages a guest. Publishing under his name is reserved to him.
 - It writes no quote of a guest that the recording does not hold, and it keeps a guest's family and health details
   out of public copy unless the guest offered them for that purpose.
 - A guest named in the copy is a person named in public, which is on the reserved list. The description therefore
