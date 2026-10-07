@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T18:15:08.268Z",
+ "answers": {
+  "proc-rule-retire": {
+   "kind": "question",
+   "choice": "a",
+   "savedAt": "2026-10-07T18:14:44.081Z",
+   "steer": ""
+  },
+  "proc-first-retro-by-hand": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:14:46.683Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "proc-fold-lessons": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:14:50.695Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "proc-record-face": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:14:54.199Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "proc-retro-pass": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:15:02.535Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "proc-scorecard-always": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:15:08.268Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/proc-rule-retire: A, retire as a position"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
