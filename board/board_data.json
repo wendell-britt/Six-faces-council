@@ -4096,6 +4096,17 @@
    "auto": true,
    "pos": "In the first slice you validate the BARs, as the coach. Who validates a BAR outside a coaching container waits until someone outside your testing plays.",
    "why": "Your round 4 answer (council playtesters, you, your testers) and round 6 (the coach validates the BARs). Source: council/interviews/text-to-campaign.md"
+  },
+  {
+   "id": "ttc-extract-intro",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 1",
+   "auto": true,
+   "pos": "Step 1 on The Skilled Helper's introduction is drafted: six milestones (such as naming a small annoyance before it becomes a blowup), eleven lessons, ten beliefs the author holds and seven he wants a helper to take on, and seven named techniques, three of them taught here. Every item paraphrases and cites its page. This stands unless you flip it. Add your own applications of the text here as a steer, and step 2 starts from both.",
+   "why": "ttc-applications A (the model drafts, you add your applications). The Shaman checked it: the beliefs are the author's own, and the section's obstacles (guilt, resistance, blind spots) are left for step 3 to take from the emotional alchemy canon. It covers the preface, the guide and Chapter 1 to p. 15, where the uploaded copy ends. Source: sprout campaigns/skilled-helper/introduction/extract.yaml (pull request #28)"
   }
  ],
  "questions": [
@@ -7348,6 +7359,28 @@
      "v": "text-only",
      "label": "C. The text alone",
      "c": "The model drafts from the introduction with no applications from you. Cheapest, and the round 8 basis is thinnest."
+    }
+   ]
+  },
+  {
+   "id": "ttc-intro-pages",
+   "faces": [
+    "architect"
+   ],
+   "pass": "texts to campaigns, step 1",
+   "q": "Should the introduction wait for the rest of Chapter 1, or close at p. 15?",
+   "why_you": "The uploaded copy in bars-engine stops at p. 15, two bullets into the section on the helper. The rest of Chapter 1 (seven more ingredients, the uncertainties, the shadow side) and Chapter 2 exist only in your copy of the book. Your answer sets where this section ends.",
+   "not_before": "Nobody knew the upload was cut short until step 1 read it today.",
+   "options": [
+    {
+     "v": "close-at-15",
+     "label": "A. Close the introduction at p. 15 (recommended)",
+     "c": "Step 2 starts now on what is there. When you attach the rest of Chapter 1 and Chapter 2 in a thread, they run as the next section and add to this one's teacher."
+    },
+    {
+     "v": "wait-for-pages",
+     "label": "B. Wait for the rest of Chapter 1",
+     "c": "You attach pp. 15 to the end of Chapter 1 in a thread, step 1 adds them to this file, and step 2 waits until then. The introduction is whole, and nothing moves until you attach the pages."
     }
    ]
   }
