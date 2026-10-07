@@ -125,6 +125,9 @@ def apply(data, new, general, ledger_rel):
                  "saved_at": doc["savedAt"], "record": record}
         if steer:
             entry["steer"] = steer
+        for k in ("faces", "pass"):  # proc-record-face: so an overrule can be traced to the face that made the row
+            if (n["row"] or {}).get(k):
+                entry[k] = n["row"][k]
         data.setdefault("resolved", {}).setdefault(kind, {})[rid] = entry
         if kind == "questions" or ans in ("overrule", "retire") or steer or n["row"] is None:
             work.append(f"{kind}/{rid}: {entry['label']}" + (f' (steer: "{steer}")' if steer else "")
