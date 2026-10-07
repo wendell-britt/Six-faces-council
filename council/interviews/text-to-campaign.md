@@ -244,4 +244,17 @@ Answers (Wendell, 2026-10-07, in the thread):
   author's wording is not. The teacher NPC speaks in the game's own words, no passages are quoted at length, and
   the book's title and the author's name appear only as a credit until there is a licence. Before anything is sold
   or published, a lawyer should look at it.
-- Question 2 (the thin slice) is still open.
+
+> First run should be a thin slice. We want to be able to test it with the first chapter or even ingest the
+> introduction and see how that develops and or changes a game map
+
+- The first run is a thin slice: the first chapter, or even only the introduction, of *The Skilled Helper*.
+- What it should show includes how the text develops or changes a game map. A text shapes the world, not only the
+  quests in it.
+
+### Round 9 (2026-10-07)
+
+1. **The map.** When a text's introduction is ingested, what should it do to the map: add a new place (where its
+   teacher lives), change places that already exist, or both?
+
+Answers: waiting.
