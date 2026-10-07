@@ -3584,6 +3584,29 @@
    "why": "Your words: 'It's too abstract to make sense as it is now.' The battle shows bare Root gate names today. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
    "auto": true,
    "pass": "sprout demo 11"
+  },
+  {
+   "id": "wave-move-names",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pos": "The eight moves get plain English names, each a force of nature and a verb: Sky Lift (Péng ☰), Earth Yield (Lǚ ☷), River Fill (Jǐ ☵), Flame Follow (Àn ☲), Wind Draw (Cǎi ☴), Lake Gather (Zhǒu ☱), Thunder Split (Liè ☳) and Mountain Stand (Kào ☶). The battle screen shows only the English name and the trigram's glyph. The Chinese gate name appears once, when the teacher first teaches a move, and stays on its Witness Book page for players who want it. Each name says what the move does to the spirit's push: lift it so it cannot land, yield so it passes, fill the gap it leaves, follow it as it turns, draw it down, gather it close, split it in two, stand still so it meets weight. This replaces wave-buttons-image-first and stands unless you flip it.",
+   "why": "Your words: 'we still need to do translate work so that the moves mean something to America players who aren't studying Chinese'. The verbs come from the round 11 trigram table; the names pair each trigram's image with what the gate does. Source: Wendell's chat steer in the WAVE teaching thread, 2026-10-07 00:00 (council/ledger/2026-10-07-demo-round12-chat.json)",
+   "auto": true,
+   "pass": "sprout demo 12"
+  },
+  {
+   "id": "wave-qi-made-visible",
+   "faces": [
+    "shaman",
+    "architect",
+    "diplomat"
+   ],
+   "pos": "The spirit fight is neigong turned outward, and it looks like bending. In the settlement, push hands works on bodies: two people, hands touching, nothing visible but the push. On the strip the player works qi itself outside the body, so every move shows qi moving as its force: Sky Lift raises a column of air, River Fill pours water into the gap, Thunder Split cracks light through the push, and the spirit's strike arrives as its own weather. The five stances color the player's qi by element. Cultivation shows here more than anywhere: as a move levels by use, its effect grows larger and steadier on screen. Push hands stays plain body-to-body at the dojo, so the difference shows the first time the player steps onto the strip. This stands unless you flip it.",
+   "why": "Your words: 'This is externalized neigong and so the relationship with the spirits have the push pulley Taichi but this is where the cultivation vibe kicks in the most. We want the game to be fun to play and have an avatar the last airbender feel'. design.md already says stances act as elements, the way bending does in Avatar, and that practiced gate levels are permanent. Source: Wendell's chat steer in the WAVE teaching thread, 2026-10-07 00:00 (council/ledger/2026-10-07-demo-round12-chat.json)",
+   "auto": true,
+   "pass": "sprout demo 12"
   }
  ],
  "questions": [
