@@ -7375,804 +7375,1521 @@
    "build": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "sage"
+    ],
+    "pass": 1
    },
    "ledger": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": 1
    },
    "ceding": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": 1
    },
    "reserved": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": 1
    },
    "model": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": 1
    },
    "six": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "sage"
+    ],
+    "pass": 1
    },
    "outputs": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "architect"
+    ],
+    "pass": 2
    },
    "reach": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "sage",
+     "regent",
+     "challenger"
+    ],
+    "pass": 2
    },
    "chat": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": 2
    },
    "interface": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-1.json"
+    "record": "ledger/2026-10-02-board-read-1.json",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": 2
    },
    "colours": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "research"
    },
    "torbert": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "research"
    },
    "standing": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "research"
    },
    "lens": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "sage",
+     "shaman"
+    ],
+    "pass": "research"
    },
    "dissent": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "research"
    },
    "kin": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "research"
    },
    "verify": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "research"
    },
    "fc-build-generate": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-4.json"
+    "record": "ledger/2026-10-02-board-read-4.json",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "flirtcraft"
    },
    "fc-door-shut": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-4.json"
+    "record": "ledger/2026-10-02-board-read-4.json",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "flirtcraft"
    },
    "fc-silent-failure": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-4.json"
+    "record": "ledger/2026-10-02-board-read-4.json",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "flirtcraft"
    },
    "x-one-home": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "4"
    },
    "x-lessons-home": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "4"
    },
    "x-records-local": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "4"
    },
    "x-install": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "4"
    },
    "rg-ruler-first": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "root-game 1"
    },
    "rg-trace-second": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "root-game 1"
    },
    "rg-segments": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "root-game 1"
    },
    "rg-worked": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "root-game 1"
    },
    "council-reach-trigger": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "flirtcraft 2"
    },
    "fc-pr5-merges": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "flirtcraft 2"
    },
    "fc-no-secret-in-chat": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "flirtcraft 2"
    },
    "pipe-stages": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "5"
    },
    "pipe-three-outputs": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "5"
    },
    "pipe-step-test": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "5"
    },
    "pipe-ship": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "5"
    },
    "pipe-forward-only": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "5"
    },
    "pipe-no-secrets": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "5"
    },
    "pipe-steps-page": {
     "decision": "overrule",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "5"
    },
    "q-no-bundled-permission": {
     "decision": "stands",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "daemon test"
    },
    "daemons-ship": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "daemon subagents"
    },
    "dm-no-chains": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "6"
    },
    "dm-question-decision": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "6"
    },
    "dm-quote-the-source": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "6"
    },
    "dm-report-shape": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "6"
    },
    "dm-tokens": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "6"
    },
    "iching-cast-first": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "I Ching"
    },
    "iching-grade": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "I Ching"
    },
    "iching-informs": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "I Ching"
    },
    "iching-ship": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "I Ching"
    },
    "iching-which-fields": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-11.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "I Ching"
    },
    "test-root-ruler": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "7"
    },
    "root-unpack-first": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "7"
    },
    "root-pass-mark": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-12.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "7"
    },
    "root-ruler-ship": {
     "decision": "retire",
     "label": "Retired: an open root-game strand had moved past this work; superseded by root-ruler-hold",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-sense-and-respond.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-sense-and-respond.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "test 1"
    },
    "council-spec-first": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "test 1"
    },
    "root-name-the-window": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "test 1"
    },
    "root-ruler-hold": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sense and respond"
    },
    "sense-respond-ship": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "sense and respond"
    },
    "separate-scorecards": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "7"
    },
    "test-flirtcraft-alert-second": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "7"
    },
    "census-ship": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "census"
    },
    "census-keep-active": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "census"
    },
    "census-fix-ship": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "census"
    },
    "stale-keep-list": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "census"
    },
    "cleanup-later": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "census"
    },
    "council-editorial-pass": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "friendcraft pass 7"
    },
    "oracle-b2-no": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "friendcraft pass 7"
    },
    "sc009-corpora": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "friendcraft pass 7"
    },
    "mh-scope-only": {
     "decision": "overrule",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-motifs-five-channels": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-two-clocks": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-maker-toolchain": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-no-rpgmaker-base": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-gate-zero": {
     "decision": "overrule",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "regent",
+     "challenger",
+     "sage"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-pass1-stand": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-input-chosen": {
     "decision": "overrule",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-one-quest": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh3-slice-tab": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout maker 3"
    },
    "mh3-gate-zero-retired": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout maker 3"
    },
    "mh3-intake-output": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout maker 3"
    },
    "mh3-decision-log": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout maker 3"
    },
    "sd-ship": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "8"
    },
    "sd-intervals": {
     "decision": "overrule",
     "label": "Overruled: his ladder, 1 hour to 1 month",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "8"
    },
    "sd-review": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-21.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "8"
    },
    "home-claude-md": {
     "decision": "stands",
     "label": "Stands, and friendcraft's rule changed too",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-23.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-23.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "8"
    },
    "lesson-board-not-chat": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "8"
    },
    "lesson-challenger-ladder": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "8"
    },
    "sd-autonomy-pass": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "8"
    },
    "fm-rotation": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "9"
    },
    "fm-limits": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "9"
    },
    "fm-after-16": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "9"
    },
    "fm-one-row": {
     "decision": "overrule",
     "label": "Overruled: capacity grows by level",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "9"
    },
    "sm-no-verdict": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout story 1"
    },
    "sm-reading-first": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout story 1"
    },
    "sm-report-gate": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout story 1"
    },
    "sm-show-in-fiction": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "sprout story 1"
    },
    "sm-reading-signals": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "sprout story reading"
    },
    "sm-reading-no-loans": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "sprout story reading"
    },
    "sm-reading-recent": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-reading-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout story reading"
    },
    "mh4-map-feel": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout maker 4"
    },
    "mh4-map-order": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout maker 4"
    },
    "mh4-map-verifier": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout maker 4"
    },
    "fm-levels": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-26.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-26.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "9"
    },
    "lesson-diplomat-levels": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-26.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-26.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "9"
    },
    "fm-build": {
     "decision": "stands",
     "label": "Merged by you",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-27.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-27.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "9"
    },
    "mh5-plan": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout maker 5"
    },
    "mh5-kit-art": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "sprout maker 5"
    },
    "mh5-built-once": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout maker 5"
    },
    "mh5-palette-check": {
     "decision": "overrule",
     "label": "Overruled: measure real SNES screens first",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout maker 5"
    },
    "mh5-reserved": {
     "decision": "overrule",
     "label": "Overruled: roles go through a character creation pipeline",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-4.json (sprout)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "sprout maker 5"
    },
    "dy-2026-10-03-wake": {
     "decision": "stands",
     "label": "Merged on your word in chat",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-daily-wake-ruling.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-daily-wake-ruling.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "daily"
    },
    "mh-card-moves": {
     "decision": "stands",
     "label": "Approved in chat",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-output-card-moves-ruling.json (sprout)"
+    "record": "council/ledger/2026-10-03-output-card-moves-ruling.json (sprout)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "chat"
    },
    "mh5-cave-lessons": {
     "decision": "stands",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-chat-ruling-5.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-chat-ruling-5.json (sprout)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "sprout maker 5"
    },
    "cave-chamber-scenes": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout story cave"
    },
    "cave-echoes": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "sprout story cave"
    },
    "cave-reading-once": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout story cave"
    },
    "cave-legend-villages": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "sprout story cave"
    },
    "cave-act2-voices": {
     "decision": "stands",
     "label": "Stands: the voices return as people of their lineage who look like them",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout story cave"
    },
    "cave-cycle-roles": {
     "decision": "overrule",
     "label": "Overruled: a similar scene for everyone, with hints by reading",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-cave-chambers-board-read.json (sprout)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout story cave"
    },
    "sm-crossing-voices": {
     "decision": "stands",
     "label": "Stands: Act I's cast voices the crossing, and Cael parts at first light",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout story crossing"
    },
    "sm-crossing-breadcrumb": {
     "decision": "stands",
     "label": "Stands: the breadcrumb is a tended sapling carrying all five rites' marks",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-04-crossing-board-read.json (sprout)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout story crossing"
    },
    "bm-daemon-brief": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "11"
    },
    "bm-rule-reach": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "11"
    },
    "bm-safety": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "11"
    },
    "bm-credit": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "11"
    },
    "jev-asset-scope": {
     "decision": "stands",
     "label": "Stands: Jev's asset scope is admin art for the world's cocreators",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "jev asset"
    },
    "jev-card-art-deprecated": {
     "decision": "stands",
     "label": "Stands: card art is marked for deprecation and its trial retired",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "jev asset"
    },
    "jev-lore-candidate": {
     "decision": "stands",
     "label": "Stands: a lore-against-Sprout check raises flags only",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "jev asset"
    },
    "jev-licensing-not-live": {
     "decision": "stands",
     "label": "Stands: licensing is not live, so the provenance trial waits",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "jev asset"
    },
    "sprites-pre-august-discard": {
     "decision": "stands",
     "label": "Stands: sprites made before August are marked for discard, research kept",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "jev asset"
    },
    "jev-images-backlog": {
     "decision": "stands",
     "label": "Stands: whether Jev accepts images goes on the backlog",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "architect"
+    ],
+    "pass": "jev asset"
    },
    "jev-asset-recount": {
     "decision": "stands",
     "label": "Stands: the trial's known drifts are recounted after the sprite marking",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "jev asset"
    },
    "jev-asset-beat-script": {
     "decision": "stands",
     "label": "Stands: the asset trial has to beat a constant-extraction script",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-jev-asset-board-read.json"
+    "record": "council/ledger/2026-10-04-jev-asset-board-read.json",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "jev asset"
    },
    "bm-brief-ship": {
     "decision": "stands",
     "label": "Stands: the daemon re-brief (#28) merges",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "11"
    },
    "bm-big-heart-line": {
     "decision": "stands",
     "label": "Stands: the Big Heart line goes into the Breakdown as shown",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-pass11-board-read-2.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "11"
    },
    "bm-interview-block": {
     "decision": "stands",
     "label": "Stands: daemon reports open with the Big Mind interview",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "11"
    },
    "bm-sprout-emotional-body": {
     "decision": "stands",
     "label": "Stands: Sprout's design doc gains the Emotional Body sentence as shown",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "11"
    },
    "rg-shared-cloth-pass": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "root-game cloth"
    },
    "fr-dialogue-on-board": {
     "decision": "retire",
     "label": "Duplicate of frm-questions-to-board",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-feature-request-scene-staging-round-1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-feature-request-scene-staging-round-1.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "feature request move"
    },
    "frm-questions-to-board": {
     "decision": "stands",
     "label": "Stands: feature request questions go to the board",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-no-names": {
     "decision": "stands",
     "label": "Stands: role looks never name a person",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-store-safe": {
     "decision": "stands",
     "label": "Stands: every role look is store-safe",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-budget": {
     "decision": "stands",
     "label": "Stands: 15 colors and the 32 by 49 box",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-wardrobe-gate": {
     "decision": "stands",
     "label": "Stands: new clothing passes the gate and your eye",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-gets-us": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout character creation 2"
    },
    "cc-feels-now": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout character creation 2"
    },
    "cc-what-true": {
     "decision": "overrule",
     "label": "Overruled: a role's mark ties it to the story's current point, not a past",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout character creation 2"
    },
    "cc-reservations": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "sprout character creation 2"
    },
    "cc-test-result": {
     "decision": "stands",
     "label": "Stands: healers and clergy stay separate, doctors and priests",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "sprout character creation test"
    },
    "cc-next-build": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)",
+    "faces": [
+     "architect",
+     "shaman",
+     "sage"
+    ],
+    "pass": "sprout character creation test"
    },
    "fr-staging-chamber1": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "feature request: scene staging"
    },
    "fr-staging-mirror-player": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "feature request: scene staging"
    },
    "fr-staging-slice": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "feature request: scene staging"
    },
    "fr-belief-readings": {
     "decision": "overrule",
@@ -8187,1142 +8904,2083 @@
       "until": "2026-10-04T02:27:56Z",
       "hours": 1
      }
-    ]
+    ],
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "feature request move"
    },
    "fr-staging-gets-us": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "feature request: scene staging, round 2"
    },
    "fr-staging-feels-now": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "feature request: scene staging, round 2"
    },
    "fr-staging-what-true": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "architect",
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "feature request: scene staging, round 2"
    },
    "fr-staging-reservations": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "feature request: scene staging, round 2"
    },
    "fr-staging-test": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "feature request: scene staging, round 2"
    },
    "cc-retest-2": {
     "decision": "overrule",
     "label": "Overruled: everyone wears one Taoist cultivation robe set; roles fit inside it",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json (pull request #11)",
+    "faces": [
+     "challenger",
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout character creation 3"
    },
    "fr-staging-test-result": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "feature request: scene staging, the test"
    },
    "fr-staging-build-order": {
     "decision": "stands",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "architect",
+     "shaman",
+     "sage"
+    ],
+    "pass": "feature request: scene staging, the test"
    },
    "cc-robe-set": {
     "decision": "stands",
     "label": "Stands: we draw the robe set ourselves, the topknot first",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json",
+    "faces": [
+     "architect",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "sprout character creation 4"
    },
    "tr-foreign": {
     "decision": "stands",
     "label": "Stands: no topknot, violet and saffron, travel gear",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "sprout character creation 13"
    },
    "tr-outfits-open": {
     "decision": "stands",
     "label": "Stands: every outfit open to every player",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "sprout character creation 13"
    },
    "tr-builds-narrow": {
     "decision": "stands",
     "label": "Stands: builds change width only, within 32 px",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout character creation 13"
    },
    "pr-mmo-later": {
     "decision": "stands",
     "label": "Stands: real-life badges are a later MMO strand",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "pr-talismans-are-the-loadout": {
     "decision": "stands",
     "label": "Stands: talismans are the loadout",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "pr-merit-from-practice": {
     "decision": "stands",
     "label": "Stands: merit badges from practice and service, never bought",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "pr-structure-not-names": {
     "decision": "stands",
     "label": "Stands: Scouting's structure, in-world names",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "pr-rules-unchanged": {
     "decision": "stands",
     "label": "Stands: design.md unchanged until you rule",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "pr-pace-by-level": {
     "decision": "stands",
     "label": "Stands: pace by Root level",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout ranks and badges 2"
    },
    "pr-gets-us": {
     "decision": "stands",
     "label": "Stands: what it gets us",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout ranks and badges 2"
    },
    "pr-feels-now": {
     "decision": "stands",
     "label": "Stands: how it feels now",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout ranks and badges 2"
    },
    "pr-what-true": {
     "decision": "stands",
     "label": "Stands: what would have to be true",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "sprout ranks and badges 2"
    },
    "pr-reservations": {
     "decision": "stands",
     "label": "Stands, with your steer: the grid branches into subclass paths",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "sprout ranks and badges 2"
    },
    "pr-test-result": {
     "decision": "overrule",
     "label": "Overruled: a badge surplus is intended; implications in pr-supply-implications",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "sprout ranks and badges test"
    },
    "pr-act3-sources": {
     "decision": "overrule",
     "label": "Overruled: the last rank asks an adventure",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "sprout ranks and badges 2"
    },
    "pr-supply-implications": {
     "decision": "stands",
     "label": "Stands: more badges than any rank asks",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout ranks and badges 3"
    },
    "pr-two-ladders": {
     "decision": "stands",
     "label": "Stands: two ladders",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout ranks and badges 3"
    },
    "pr-last-rank-adventure": {
     "decision": "stands",
     "label": "Stands, with your steer: the units name the whole game",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "sprout ranks and badges 3"
    },
    "pr-five-branches": {
     "decision": "stands",
     "label": "Stands: five branches",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout ranks and badges 3"
    },
    "pr-rank-table-built": {
     "decision": "stands",
     "label": "Stands: the rank table and its check",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "sprout ranks and badges 3"
    },
    "pr-grid-built": {
     "decision": "overrule",
     "label": "Overruled: a labyrinth, not a hub and spoke (steer given in chat)",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout ranks and badges 4"
    },
    "dy-limit-wording": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "daily"
    },
    "dy-research-handoff": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "daily"
    },
    "cost-quiet-wakes": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "10"
    },
    "cost-daily-script": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "10"
    },
    "cost-per-row": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "10"
    },
    "cost-short-rule": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "10"
    },
    "daemon-reports-saved": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev"
    },
    "gn-verify": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "guide next"
    },
    "gn-rule17": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "guide next"
    },
    "gn-hold-template": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "guide next"
    },
    "gn-ke-notes": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "guide next"
    },
    "sm-hearing-exposes-bond": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout story hearing"
    },
    "tr-builder-not-layers": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout character creation 23"
    },
    "jev-select-only": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "jev"
    },
    "jev-fallback": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "jev"
    },
    "jev-candidates-only": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "jev"
    },
    "jev-reserved": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "jev"
    },
    "jev-no-player-text": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "jev"
    },
    "jev-spec-first": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "jev"
    },
    "rg-stance-by-move": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "root-game queue"
    },
    "pr-branch-emphasis": {
     "decision": "overrule",
     "label": "Overruled: branches unlock moves and the stat build for a subtype, not one stat each",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout ranks and badges 4"
    },
    "pr-design-text": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "sprout ranks and badges 4"
    },
    "pr-units-mapping": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "sprout ranks and badges 4"
    },
    "pr-study-findings": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "sprout ranks and badges 5"
    },
    "pr-labyrinth-grid": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout ranks and badges 5"
    },
    "dy-2026-10-04-open": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "daily"
    },
    "brd-unrecorded-check": {
     "decision": "stands",
     "label": "Stands: Wendell said in chat that #37 merges (2026-10-04 16:37 UTC: \"37 is merged\"); merged on the automerge label",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "board read"
    },
    "demo-spirit-count": {
     "decision": "stands",
     "label": "Stands, with a steer: include the daemons, 8 x 5 x 3 (approximately); see demo-daemon-count",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 1"
    },
    "demo-settlement-size": {
     "decision": "overrule",
     "label": "Overruled: Argyra should be bigger, like Saffron City, with many NPCs and side quests; see demo-argyra-city",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout demo 1"
    },
    "demo-open-settlement": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "sprout demo 1"
    },
    "demo-quests": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "sprout demo 1"
    },
    "demo-orientation": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout demo 1"
    },
    "demo-order": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "sprout demo 1"
    },
    "dy-2026-10-05-clean": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "daily"
    },
    "dy-2026-10-06-grow": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "daily"
    },
    "pr-design-applied": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout ranks and badges 6"
    },
    "pr-inner-demons": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "sprout ranks and badges 6"
    },
    "pr-inward-labyrinth": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout ranks and badges 6"
    },
    "pr-subtype-arms": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout ranks and badges 6"
    },
    "ya-act0-shape": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-allyship-read": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "shaman"
+    ],
+    "pass": "sprout act zero 3"
    },
    "ya-dialogue-closed": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "sprout act zero 3"
    },
    "ya-encounter-loop": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-feels-now": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "sprout act zero 2"
    },
    "ya-first-friend": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-gets-us": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout act zero 2"
    },
    "ya-gold-binds": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout act zero 4"
    },
    "ya-grid-pace": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-in-scope": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-intake": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-life-domains": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "sprout act zero 3"
    },
    "ya-mode3-gold": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout act zero 2"
    },
    "ya-modes-wording": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout act zero 3"
    },
    "ya-pull-scene": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "sprout act zero 2"
    },
    "ya-reservations": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "sprout act zero 2"
    },
    "ya-story-entry": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "sprout act zero 4"
    },
    "ya-test-result": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "sprout act zero 4"
    },
    "ya-three-modes": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout act zero 2"
    },
    "ya-what-true": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "sprout act zero 2"
    },
    "demo-argyra-city": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round2.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round2.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout demo 2"
    },
    "demo-daemon-count": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round2.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round2.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout demo 2"
    },
    "enc-first-block": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout demo 3"
    },
    "enc-who-carries": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "sprout demo 3"
    },
    "enc-steady-rests": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round3.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "sprout demo 3"
    },
    "ship-address-per-batch": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "book shipping"
    },
    "oag-wave-blocks": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger"
+    ],
+    "pass": "ontology game 1"
    },
    "oag-wave-depth": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "ontology game 1"
    },
    "ship-gumroad-first": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "book shipping"
    },
    "ship-plan-superseded": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "book shipping"
    },
    "oag-map-private": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "ontology game 1"
    },
    "oag-wave-ladder": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ontology game 1"
    },
    "enc-moves-from-grid": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout demo 4"
    },
    "ship-batches-monthly": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "book shipping"
    },
    "enc-inner-moves": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout demo 4"
    },
    "enc-wave-set": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "sprout demo 4"
    },
    "ship-sales-alongside": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "book shipping"
    },
    "oag-wave-breath": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "ontology game 1"
    },
    "ship-say-cadence": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat",
+     "regent"
+    ],
+    "pass": "book shipping"
    },
    "oag-book-untouched": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "ontology game 1"
    },
    "oag-map-output": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "ontology game 1"
    },
    "fcm-p8-no-new-features": {
     "decision": "overrule",
     "label": "Overruled: rethink the basic moves now that emotional alchemy and flirtcraft exist",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "fcm-p8-ruling-39": {
     "decision": "stands",
     "label": "Stands: ruling 39 closed yes",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "fcm-p8-self-test": {
     "decision": "overrule",
     "label": "Overruled: Friendcraft needs more design first, working like flirtcraft with BARs",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "fcm-p8-nine-calls": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "fcm-p8-steven-outside": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "fcm-p8-efa-outside": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "sage"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "pod-page-merges": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "podcast"
    },
    "pod-art-drafts": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "podcast"
    },
    "pod-upload-yours": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "podcast"
    },
    "board-all-work": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "podcast"
    },
    "steps-phone-view": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "podcast"
    },
    "pod-zoom-phone": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "podcast"
    },
    "fcm-p8b-redesign": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman",
+     "sage"
+    ],
+    "pass": "friendcraft pass 8, read"
    },
    "fcm-p8b-interview": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "friendcraft pass 8, read"
    },
    "fcm-p8b-outline": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "friendcraft pass 8, read"
    },
    "wave-damage": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "sprout demo 5"
    },
    "wave-reveal": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout demo 5"
    },
    "wave-naming": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout demo 5"
    },
    "wave-record": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "sprout demo 5"
    },
    "wave-order": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout demo 5"
    },
    "wave-release-grounds": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "sprout demo 5"
    },
    "pod-art-ma": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "podcast"
    },
    "pod-ep1-from-audio": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "podcast"
    },
    "board-auto-pickup": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "podcast"
    },
    "wave-acknowledge": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 6"
    },
    "wave-offered-feeling": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "sprout demo 6"
    },
    "wave-integrate-ladder": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2002.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "sprout demo 6"
    },
    "oag-block-size": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger"
+    ],
+    "pass": "ontology game 2"
    },
    "oag-block-carry": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "ontology game 2"
    },
    "oag-appreciate-input": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "ontology game 2"
    },
    "oag-trailhead": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "ontology game 2"
    },
    "oag-words-private": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "ontology game 2"
    },
    "oag-faces-primer": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "ontology game 2"
    },
    "board-auto-pickup-live": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "podcast"
    },
    "pod-art-recolor": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "podcast"
    },
    "oag-channel-job": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "ontology game 2"
    },
    "oag-neutrality-job": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "ontology game 2"
    },
    "wave-ack-research": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 7"
    },
    "wave-spirit-from-charge": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout demo 8"
    },
    "oag-body-figure": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "ontology game body map"
    },
    "oag-body-sides": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ontology game body map"
    },
    "oag-body-device-only": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "ontology game body map"
    },
    "oag-body-over-time": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "ontology game body map"
    },
    "wave-acknowledge-turn": {
     "decision": "overrule",
     "label": "Overruled",
     "steer": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I’m looking for. Specifically. \n\nUsing a move IS acknowledging the spirit welcoming is like listening. ",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 8"
    },
    "wave-trigram-moves": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2038.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2038.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 9"
    },
    "wave-welcome-listen": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2038.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2038.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout demo 9"
    },
    "wave-seize-validate": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2038.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2038.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "sprout demo 9"
    },
    "wave-offer-opens": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout demo 10"
    },
    "wave-urges-all": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "sprout demo 10"
    },
    "wave-welcome-cost": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout demo 10"
    },
    "wave-exhale-ends": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "sprout demo 10"
    },
    "wave-buttons-image-first": {
     "decision": "overrule",
     "label": "Overruled",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-demo-round12-chat.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-demo-round12-chat.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "sprout demo 11"
    },
    "wave-taught-fight": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "sprout demo 11"
    },
    "wave-straight-first": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 11"
    },
    "wave-corners-from-spirits": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout demo 11"
    },
    "wave-gates-in-the-world": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout demo 11"
    },
    "wave-move-names": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "sprout demo 12"
    },
    "wave-qi-made-visible": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout demo 12"
    },
    "loop-fix-labels": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "loop-draw-means-drawn": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "loop-one-move": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "loop-posture-once": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "orient-bridge": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "orient-on-your-own": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "orient-reflection-to-wall": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "book-spine-one-rep": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "flirtcraft book outline"
    },
    "book-crafts-service-order": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "flirtcraft book outline"
    },
    "book-binds-after-crafts": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "flirtcraft book outline"
    },
    "book-part-zero-stories": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "flirtcraft book outline"
    },
    "book-plain-first": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "flirtcraft book outline"
    },
    "pickup-mechanism-before-rule": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "pickup review"
    },
    "dy-2026-10-07-show": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "daily"
    },
    "pod-move-thumbnails": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:24:01.342Z",
-    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "podcast ep 2"
    },
    "pod2-description": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:24:06.634Z",
-    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "podcast ep 2"
    },
    "battle-face-off-screen": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:38:28.207Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout demo 13"
    },
    "battle-four-commands": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:38:38.040Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat",
+     "regent"
+    ],
+    "pass": "sprout demo 13"
    },
    "battle-hidden-first": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:38:59.641Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout demo 13"
    },
    "battle-turns": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:39:07.358Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout demo 13"
    },
    "magic-is-the-alchemy": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:39:16.874Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout demo 13"
    },
    "magic-from-teachers": {
     "decision": "stands",
@@ -9330,77 +10988,133 @@
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:40:00.310Z",
     "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
-    "steer": "I think this should also be integrated into the \"sphere grid\" that we are making. Some moves can be learned on the developmental grd"
+    "steer": "I think this should also be integrated into the \"sphere grid\" that we are making. Some moves can be learned on the developmental grd",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "sprout demo 13"
    },
    "magic-grows": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:40:12.808Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout demo 13"
    },
    "spirit-five-stats": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:40:25.891Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "sprout demo 13"
    },
    "spirit-growth-by-training": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:40:32.425Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman",
+     "regent"
+    ],
+    "pass": "sprout demo 13"
    },
    "pod-promo-rhythm": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:55:23.853Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "podcast marketing"
    },
    "pod-move-clips": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:55:31.187Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "podcast marketing"
    },
    "proc-first-retro-by-hand": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T18:14:46.683Z",
-    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "process pass 13"
    },
    "proc-fold-lessons": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T18:14:50.695Z",
-    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "process pass 13"
    },
    "proc-record-face": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T18:14:54.199Z",
-    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "process pass 13"
    },
    "proc-retro-pass": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T18:15:02.535Z",
-    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent",
+     "shaman"
+    ],
+    "pass": "process pass 13"
    },
    "proc-scorecard-always": {
     "decision": "stands",
     "label": "Stands",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T18:15:08.268Z",
-    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "process pass 13"
    }
   },
   "questions": {
@@ -9408,163 +11122,270 @@
     "decision": "synthesise",
     "label": "Synthesise only",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-2.json"
+    "record": "ledger/2026-10-02-board-read-2.json",
+    "faces": [
+     "sage",
+     "regent"
+    ]
    },
    "flirtcraft-deploy": {
     "decision": "merge-now",
     "label": "Merge now (merged as 0986d5e)",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-board-read-5.json"
+    "record": "ledger/2026-10-02-board-read-5.json",
+    "faces": [
+     "regent",
+     "diplomat"
+    ]
    },
    "merge-branches": {
     "decision": "all-now",
     "label": "Merge all five now (said in chat)",
     "recorded": "2026-10-02",
-    "record": "ledger/2026-10-02-chat-merge.json"
+    "record": "ledger/2026-10-02-chat-merge.json",
+    "faces": [
+     "regent",
+     "challenger"
+    ]
    },
    "council-home": {
     "decision": "new-repo",
     "label": "A new repo of its own: wendell-britt/six-faces-council",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-6.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ]
    },
    "flirtcraft-database-home": {
     "decision": "own-database",
     "label": "A second database of its own",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-7.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect",
+     "diplomat"
+    ]
    },
    "fc-migrate-on-deploy": {
     "decision": "yes",
     "label": "Yes, production builds migrate (flirtcraft #6)",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-8.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ]
    },
    "daemon-subagents-purpose": {
     "decision": "help-a-face-draft",
     "label": "Help each face while it drafts",
     "recorded": "2026-10-02",
-    "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)"
+    "record": "council/ledger/2026-10-02-board-read-9.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "shaman"
+    ]
    },
    "daemon-model": {
     "decision": "split",
     "label": "Smallest for focused work, middle for research",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-10.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ]
    },
    "iching-card-readings": {
     "decision": "copy-readings",
     "label": "Copy the readings; the flirting applications stay in flirtcraft (said in chat)",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-iching-readings-chat.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-iching-readings-chat.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ]
    },
    "stale-strands": {
     "decision": "census",
     "label": "A census with recommendations, nothing merged or deleted without your ruling",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-13.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ]
    },
    "census-landed": {
     "decision": "retire",
     "label": "Retire all 41 as archive tags",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ]
    },
    "census-stale": {
     "decision": "read-first",
     "label": "The council reads them first and flags any worth keeping",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ]
    },
    "census-recent": {
     "decision": "review",
     "label": "The council reviews each and proposes merge or retire",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-14.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ]
    },
    "archive-method": {
     "decision": "your-step",
     "label": "You run one command from a computer",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ]
    },
    "fc-front-door": {
     "decision": "rebuild",
     "label": "Bring it onto current main and show me a preview",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ]
    },
    "fc-binds": {
     "decision": "merge",
     "label": "Merge it after its checks pass on a preview",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ]
    },
    "fcm-exchange": {
     "decision": "merge",
     "label": "Merge it",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ]
    },
    "fcm-oracle": {
     "decision": "port",
     "label": "Bring the oracle work onto current main",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-15.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ]
    },
    "fc-binds-yes": {
     "decision": "fix-first",
     "label": "Fix the 30 hits first, and show me each one before and after",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ]
    },
    "fc-storefront-yes": {
     "decision": "merge",
     "label": "Merge it as built, analytics and all",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ]
    },
    "fcm-oracle-yes": {
     "decision": "lint-then-read",
     "label": "Clear the lint hits first, then show me the source changes in batches",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-16.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "shaman"
+    ]
    },
    "fc-binds-seven": {
     "decision": "yes",
     "label": "Yes to all seven, merge the binds",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-17.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-17.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat"
+    ]
    },
    "fcm-oracle-batch-01": {
     "decision": "no",
     "label": "No to this file",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-17.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-17.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "shaman"
+    ]
    },
    "fcm-oracle-batch-02": {
     "decision": "steer",
     "label": "Revisit batches 1 and 2 with the game masters and the editorial skill",
     "recorded": "2026-10-03",
-    "record": "friendcraft council/ledger/2026-10-03-friendcraft-manuacript-6face-pass7.json"
+    "record": "friendcraft council/ledger/2026-10-03-friendcraft-manuacript-6face-pass7.json",
+    "faces": [
+     "sage",
+     "shaman"
+    ]
    },
    "oracle-remaining": {
     "decision": "reread",
     "label": "Re-read batches 3 to 13 with the editorial pass, and bring only what passes",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-18.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat"
+    ]
    },
    "fcm-oracle-reread": {
     "decision": "yes",
     "label": "Yes to all 24",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat"
+    ]
    },
    "fcm-oracle-parts": {
     "decision": "draft",
     "label": "Draft the 19 as full sentences for me to read",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-19.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ]
    },
    "fcm-oracle-drafts": {
     "decision": "deferred",
@@ -9581,205 +11402,369 @@
       "days": 31,
       "steer": "I'm blocked on this because I've been out of the practice too long. It seems we would need to go back and do the work again which I'm happy to do but this one is lower priority. We need to be able to defer projects so they don't get trapped on the board, but we are also collecting data about priority"
      }
+    ],
+    "faces": [
+     "diplomat",
+     "sage"
     ]
    },
    "mh-calrunia-hall": {
     "decision": "world",
     "label": "Calrunia is Sprout's world",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-course-bonus": {
     "decision": "practice",
     "label": "Bonuses come from doing the practice and change story or look only",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-first-for": {
     "decision": "both",
     "label": "Both, tested in one live class before any build (council recommends)",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-hosting": {
     "decision": "first",
     "label": "One hosted world first, code and quest format published later (council recommends)",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh-therapy": {
     "decision": "never",
     "label": "Story and practice, never therapy (council recommends)",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read.json (sprout)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "sprout maker 2"
    },
    "mh3-card-in-playtest": {
     "decision": "half",
     "label": "Half the playtesters see it",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-2.json (sprout)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "sprout maker 3"
    },
    "sd-when": {
     "decision": "weekly",
     "label": "In a weekly scheduled session, preparing the coming week",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-22.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "8"
    },
    "sd-daily": {
     "decision": "daily",
     "label": "Every day",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-24.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "8"
    },
    "fm-repos": {
     "decision": "home",
     "label": "Only the council's home repo, for now",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-25.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "9"
    },
    "sm-moment": {
     "decision": "fire-hearing",
     "label": "Draft: a Fire player who takes hears Elder Calloway at the hearing",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "sprout story 1"
    },
    "sm-act1-voices": {
     "decision": "halloran-brannock",
     "label": "Halloran for Earth, Brannock for Fire",
     "recorded": "2026-10-03",
-    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)"
+    "record": "sprout council/ledger/2026-10-03-story-mirror-board-read.json (branch claude/project-thread-1754kb)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "sprout story 1"
    },
    "mh4-map-when": {
     "decision": "now",
     "label": "Now, as the next maker task",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)"
+    "record": "council/ledger/2026-10-03-maker-and-hall-board-read-3.json (sprout)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout maker 4"
    },
    "dy-access": {
     "decision": "standing",
     "label": "One standing session, woken each day",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-28.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-28.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "daily"
    },
    "dy-network": {
     "decision": "allow",
     "label": "Allow research sites (on your steps tab)",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-28.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-28.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "daily"
    },
    "cost-session-shape": {
     "decision": "short",
     "label": "Short sessions, starting now",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "10"
    },
    "jev-reach": {
     "decision": "tooling",
     "label": "Council and build tooling only (said in chat; asset and story pipelines a later pass)",
     "recorded": "2026-10-03",
-    "record": "ledger/2026-10-03-jev-pass.json"
+    "record": "ledger/2026-10-03-jev-pass.json",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "jev"
    },
    "cost-jev": {
     "decision": "retired",
     "label": "Answered from the record: Jev is TypeSafe's Jev, which selects, scores and verifies without generating text (rows jev-select-only to jev-spec-first, another session's pass). The question failed the reach test.",
     "recorded": "2026-10-03",
-    "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)"
+    "record": "council/ledger/2026-10-03-board-read-29.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "10"
    },
    "bm-big-heart": {
     "decision": "canon",
     "label": "Big Heart enters canon as what the Damaged Self is waiting for",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-pass11-board-read.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "11"
    },
    "jev-asset-numbers": {
     "decision": "calibrate",
     "label": "C: a calibration run teaches first; the mark is fixed in a dated file before a separate scored run",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-asset-numbers-and-pass11.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "jev asset"
    },
    "rg-front-legs": {
     "decision": "varies",
     "label": "The gap between the front legs changes with the move",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "root-game cloth"
    },
    "rg-cloth-squash": {
     "decision": "squash",
     "label": "The clothes squash flat onto each wearer's own leg where the legs press them",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "root-game cloth"
    },
    "rg-hard-mode": {
     "decision": "lag",
     "label": "Hard mode stays, and the give is drawn a beat after the hit",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-root-game-cloth-board-read.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "root-game finish"
    },
    "cc-body": {
     "decision": "lpc-first",
     "label": "LPC parts first, store-safe only",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-creator-scope": {
     "decision": "both-now",
     "label": "Both now: the player's creator is in scope",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-feeling": {
     "decision": "poignance",
     "label": "Poignance; he wants to pick up to three",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round1.json (pull request #11)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout character creation"
    },
    "cc-feeling-more": {
     "decision": "wonder+triumph",
     "label": "Wonder and triumph, beside poignance",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round2.json (pull request #11)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout character creation 2"
    },
    "fr-staging-lead": {
     "decision": "maker",
     "label": "You as maker; the player's chamber 1 is the acceptance test",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "feature request: scene staging, round 1"
    },
    "fr-staging-feel": {
     "decision": "wonder",
     "label": "Wonder (picked before multi-pick; more asked in round 2)",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "feature request: scene staging, round 1"
    },
    "fr-staging-auto": {
     "decision": "auto",
     "label": "The stager places everything, with pins",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "feature request: scene staging, round 1"
    },
    "fr-staging-feel-more": {
     "decision": "poignance,triumph",
     "label": "Poignance and triumph, beside wonder",
     "recorded": "2026-10-04",
-    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json"
+    "record": "ledger/2026-10-04-feature-request-scene-staging-round-1.json",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "feature request: scene staging, round 2"
    },
    "cc-topknot-eye": {
     "decision": "approve",
     "label": "Approve it: the topknot is every role's hair",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round5.json (pull request #14)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round5.json (pull request #14)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "sprout character creation 5"
    },
    "cc-robe-eye": {
     "decision": "redraw",
     "label": "Redraw: it reads Japanese, not Chinese (said in chat)",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round6.json (pull request #14)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round6.json (pull request #14)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout character creation 6"
    },
    "cc-hanfu-eye": {
     "decision": "redraw",
     "label": "Redraw: play with body types and fit the doorframes (said in chat)",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round7.json (pull request #14)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round7.json (pull request #14)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout character creation 7"
    },
    "cc-builds-eye": {
     "decision": "redraw",
@@ -9803,325 +11788,596 @@
     "decision": "steer",
     "label": "Steered: needs the gendered options, male, female and nonbinary",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "diplomat",
+     "architect"
+    ],
+    "pass": "sprout character creation 13"
    },
    "tr-eye-2": {
     "decision": "steer",
     "label": "Steered in chat: research it; wider hips, thinner waist, bust, legs that pass each other",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "diplomat",
+     "architect"
+    ],
+    "pass": "sprout character creation 14"
    },
    "tr-eye-3": {
     "decision": "steer",
     "label": "Steered in chat: narrower female shoulders and arms, a dress, a fuller bust, longer hair and lashes; a slim nonbinary body with the male legs",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout character creation 15"
    },
    "tr-eye-4": {
     "decision": "steer",
     "label": "Steered in chat: bring the dress in to two thirds of the shoulders; feet straight down, close together",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout character creation 16"
    },
    "tr-eye-5": {
     "decision": "steer",
     "label": "Steered in chat: legs closer, hem narrower, legs tapering to a point",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout character creation 17"
    },
    "tr-eye-6": {
     "decision": "steer",
     "label": "Steered in chat: three-quarter legs in the side view, hip sway, a three-quarter bust",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout character creation 18"
    },
    "tr-eye-7": {
     "decision": "approve",
     "label": "Build it",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout character creation 20"
    },
    "tr-walk-base": {
     "decision": "lpc-female",
     "label": "Use LPC's female body",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "sprout character creation 21"
    },
    "tr-eye-8": {
     "decision": "approve",
     "label": "Approved in chat: \"Yes perfect\"",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (pull request #16)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout character creation 22"
    },
    "pr-ranks-vs-levels": {
     "decision": "group",
     "label": "Ranks group Root level's numbers",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "pr-grid-spend": {
     "decision": "grid-beside-practice",
     "label": "A grid, beside practice",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "pr-feeling": {
     "decision": "triumph, wonder, poignance",
     "label": "Triumph, wonder and poignance",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round1.json (pull request #17)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout ranks and badges"
    },
    "tr-eye-9": {
     "decision": "approve",
     "label": "Build the creator",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (main)"
+    "record": "sprout council/ledger/2026-10-04-character-creation-round13.json (main)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout character creation 23"
    },
    "pr-who-confers": {
     "decision": "forest",
     "label": "Two ladders: the refiners confer the forest's",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "sprout ranks and badges 2"
    },
    "pr-branch-crossing": {
     "decision": "keys",
     "label": "Cross between branches with keys",
     "recorded": "2026-10-04",
-    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
+    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout ranks and badges 3"
    },
    "gn-pilot": {
     "decision": "open",
     "label": "An open call to readers",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ]
    },
    "gn-proof": {
     "decision": "done",
     "label": "It's done",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ]
    },
    "dy-model": {
     "decision": "smaller",
     "label": "Try the smaller model",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "daily"
    },
    "cc-topknot-door": {
     "decision": "overhang",
     "label": "Hair may overhang",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout character creation 8"
    },
    "pr-labyrinth-scale": {
     "decision": "steer",
     "label": "Between A and C: the inward cycle joins the world ring; fighting inner demons, and their spoils pay for advancement",
     "recorded": "2026-10-04",
-    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)"
+    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout ranks and badges 5"
    },
    "demo-scope": {
     "decision": "act0-to-m5",
     "label": "A. Act 0 through the first call",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout demo 1"
    },
    "demo-scene-editor": {
     "decision": "beats",
     "label": "A. A timeline that writes beats into the script",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-demo-round1.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout demo 1"
    },
    "ya-domains": {
     "decision": "both",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
-    "label": "C. Both, Lenses for where and Allyship for how"
+    "label": "C. Both, Lenses for where and Allyship for how",
+    "faces": [
+     "sage",
+     "diplomat"
+    ],
+    "pass": "sprout act zero 2"
    },
    "ya-feeling": {
     "decision": "triumph",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
-    "label": "Triumph"
+    "label": "Triumph",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-real-steps": {
     "decision": "offered-local",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
-    "label": "A. Offered, never gating, kept on the device (recommended)"
+    "label": "A. Offered, never gating, kept on the device (recommended)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout act zero"
    },
    "ya-road-gold": {
     "decision": "gold-is-gold",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
-    "label": "A. Gold is gold (recommended)"
+    "label": "A. Gold is gold (recommended)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout act zero 4"
    },
    "ya-the-pull": {
     "decision": "brothers-call",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-saved-answers.json (six-faces-council)",
-    "label": "A. The brother's call, answered by choice (recommended)"
+    "label": "A. The brother's call, answered by choice (recommended)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "sprout act zero"
    },
    "ship-order": {
     "decision": "steer",
     "label": "Answered with a steer",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "book shipping"
    },
    "ship-pace": {
     "decision": "recycle",
     "label": "Put part of every $40 sale back into backer copies",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect",
+     "sage"
+    ],
+    "pass": "book shipping"
    },
    "oag-block-work": {
     "decision": "steer",
     "label": "Answered with a steer",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "ontology game 1"
    },
    "fcm-p8-exchange-live": {
     "decision": "steer",
     "label": "Asked whether it can go on flirtcraft.app; answered in fcm-p8b-exchange-where",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "fcm-p8-ruling-14": {
     "decision": "rederive",
     "label": "Rebuild the outline from the canon, as a proposal",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "architect",
+     "regent",
+     "challenger"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "fcm-p8-part-zero": {
     "decision": "steer",
     "label": "Build a way for the council to interview me about these stories",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "friendcraft pass 8"
    },
    "pod-host": {
     "decision": "spotify-creators",
     "label": "Spotify for Creators",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "podcast"
    },
    "pod-ep1-details": {
     "decision": "draft-from-audio",
     "label": "Draft them from the audio",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "podcast"
    },
    "fcm-p8b-exchange-where": {
     "decision": "own-address",
     "label": "Give Friendcraft its own address",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "friendcraft pass 8, read"
    },
    "wave-integrate-gift": {
     "decision": "steer",
     "label": "Steered",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-1946.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "sprout demo 5"
    },
    "fcm-p8c-domain": {
     "decision": "friendcraft.app",
     "label": "friendcraft.app",
     "recorded": "2026-10-06",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "architect",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "friendcraft pass 8, read 2"
    },
    "fcm-p8d-buy": {
     "decision": "buy",
     "label": "Bought: Wendell bought friendcraft.app in Vercel on 2026-10-07",
     "recorded": "2026-10-07",
-    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "friendcraft pass 8, read 3"
    },
    "pod-cover-pick": {
     "decision": "b-two-signals",
     "label": "B, Two signals",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "podcast"
    },
    "oag-faces-names": {
     "decision": "plain",
     "label": "A, Plain words, with the colour as a tag",
     "steer": "There should even be a popup page that allows the player to learn more about each of them",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "ontology game 2"
    },
    "pickup-send-permission": {
     "decision": "yes",
     "label": "A, Yes, restore it",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "board pickup"
    },
    "pickup-where": {
     "decision": "fresh",
     "label": "A, A fresh session for each Send, carrying the council repo",
     "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+    "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "board pickup"
    },
    "wave-teacher": {
     "decision": "yun",
     "label": "A. Master Yun",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "sprout demo 11"
    },
    "orient-first-paid-run": {
     "decision": "all",
     "label": "A, All seven from the first run, each new screen with one plain sentence said once",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "orient-terms": {
     "decision": "subtitles",
     "label": "A, Yes, as subtitles under a plain sentence",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "flirtcraft loop 1"
    },
    "book-oracle-in-print": {
     "decision": "names-binds",
     "label": "A, Every card's name and bind sentence; the moves, the draw and the ledger stay in the app",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "flirtcraft book outline"
    },
    "pickup-pull-model": {
     "decision": "pull",
     "label": "A. Pull, don't push (recommended)",
     "recorded": "2026-10-07",
-    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect",
+     "regent"
+    ],
+    "pass": "pickup review"
    },
    "pod2-title": {
     "decision": "aging-parents",
     "label": "How Do You Become an Ally to Your Aging Parents? (with Tom Hurlburt)",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:23:48.091Z",
-    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "podcast ep 2"
    },
    "pod2-thumb-pick": {
     "decision": "a",
     "label": "A, the question: \"How long do you want to feel this?\"",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:23:54.808Z",
-    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "podcast ep 2"
    },
    "battle-fight-and-magic": {
     "decision": "gear",
     "label": "Fight with weapons as gear",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:38:22.559Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "sprout demo 13"
    },
    "pod1-isaac-handle": {
     "decision": "tag",
     "label": "Tag him only",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:55:10.370Z",
-    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "podcast marketing"
    },
    "proc-rule-retire": {
     "decision": "a",
     "label": "A, retire as a position",
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T18:14:44.081Z",
-    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "process pass 13"
    }
   },
   "causes": {

@@ -199,7 +199,11 @@ CLAUDE.md, this file and the board.
   answer is a retro pass: the six faces read the council's own record (overrules, steers, deferrals, incidents,
   unfolded lessons) on the daily session's Grow up day. Positions `proc-retro-pass`, `proc-first-retro-by-hand`,
   `proc-fold-lessons`, `proc-record-face` and `proc-scorecard-always` stand unless he flips them; `proc-rule-retire`
-  waits on him.
-- **Next:** once those rows are read, the first retro runs by hand in its own thread, on the 32 overrules, the 9
-  pending lessons and the 6 pickup incidents. `proc-record-face` (pull.py copies faces and pass onto resolved
-  entries) is a small change for any session that touches pull.py.
+  went to him.
+- **Read at 18:15 UTC:** all five positions stood and `proc-rule-retire` was answered A (retire as a position, rule
+  moves to an incident log). `retro` in `council/pipeline.yaml` holds the rules. `proc-record-face` is done: pull.py
+  copies faces and pass onto resolved entries, and every existing resolved row that still has its row was backfilled.
+  The overrules by face, counting each face on a row: Challenger 17, Architect 15, Shaman 11, Regent 9, Diplomat 6,
+  Sage 4.
+- **Next:** the first retro runs by hand in its own thread, on the 32 overrules, the 9
+  pending lessons and the 6 pickup incidents.
