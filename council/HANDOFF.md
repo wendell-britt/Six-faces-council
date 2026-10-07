@@ -252,3 +252,11 @@ CLAUDE.md, this file and the board.
 - **Next:** once he answers, a new thread runs step 1 on *The Skilled Helper*'s introduction, on Sonnet, and writes
   `extract.yaml` in Sprout. It needs the introduction's text: the copy uploaded to bars-engine if a session can reach
   it, or pages he attaches.
+
+## Open on 2026-10-07, from the ontology game steers thread
+
+- **Applied:** his board answers on `oag-ea-practice`, `oag-main-order`, `oag-daemon-step` (overruled) and `oag-record`
+  (A), in bars-engine #264, a draft that stacks on #263 and targets its branch. The positions the build added stand
+  unless he flips them: `oag-open-up-tools`, `oag-open-up-marks`, `oag-wave-first`, `oag-dig-deeper`.
+- **Next:** #263 merges first, then #264 retargets to main and can be marked ready. Pass 3's test 10 (he plays one
+  blocked step against his sketch) is still open on his steps list.
