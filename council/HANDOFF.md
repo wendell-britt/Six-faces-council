@@ -225,3 +225,11 @@ CLAUDE.md, this file and the board.
   and Shaman, flirtcraft Regent) wait for a session that can read those repos. The script now names unread repos.
 - **Retired:** the push design's history moved from `docs/pickup.md` to `docs/incidents.md`. The four rule files are at
   588 lines; retro 1's test 4 holds them there.
+
+## Open on 2026-10-07, from the texts-into-campaigns interview
+
+- **The interview is done.** `council/interviews/text-to-campaign.md` holds Wendell's answers and a summary of the
+  process. The next piece of work, in a new thread, is the spec, starting with the thin slice: *The Skilled
+  Helper*'s introduction or first chapter, run through steps 1 to 4 in Sprout's world.
+- **Unasked:** who validates an outer-world BAR outside a coaching container; what the spec's home repo is (Sprout
+  or bars-engine).

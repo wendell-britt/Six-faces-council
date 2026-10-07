@@ -31,6 +31,31 @@ Started 2026-10-07 in the project thread "Texts into game campaigns".
 - **Council lesson:** ground a design in Wendell's named references and his own work (Root, the Allyship domains,
   *Mastering Allyship*) before inventing.
 
+## The process, as the interview settled it
+
+This summary is for the session that writes the spec. Every line traces to an answer below.
+
+- **Input.** Personal development texts or notes, chiefly public domain and free texts. Copyrighted texts are
+  translated as game content built from Wendell's notes and applications (round 8). The first text is
+  *The Skilled Helper*; the first run is a thin slice, its introduction or first chapter (rounds 1, 8).
+- **Step 1, extract.** Milestones, lessons, and the author's beliefs plus the beliefs the author wants readers to
+  take on (round 6). bars-engine's unapproved quest drafts and `book-integration-analysis/` are raw material.
+- **Step 2, story.** The text lives in Sprout's world by default, and a book may get a world of its own (round 2). One
+  teacher NPC carries the author's voice; an existing character first (round 7). The player learns by helping
+  villagers and spirits (rounds 2, 3). The text's milestones run as a parallel track to Sprout's; Sprout is the
+  first worked example of this process, made from Wendell's emotional alchemy text (round 4). The text adds or
+  changes every asset its teachings need in play, and may add a place (round 9).
+- **Holes.** Whatever the text assumes and never teaches. The main one is emotional alchemy and removing inner
+  blocks, which Sprout's core loop supplies; this is the thesis of the whole process (round 5).
+- **Step 3, encounters.** A text yields spirits and maps onto the shared daemons through a translation table. It
+  proposes a new daemon only when none fits, or as a subclass (rounds 1, 3, 4). Blocking beliefs come from the
+  emotional alchemy canon (*Mastering Allyship*, flirtcraft), never from the text (round 6).
+- **Who writes.** A model drafts every step, Wendell validates, the author approves when reachable; that approval is
+  the licensing pitch (rounds 7, 8).
+- **Step 4, test.** The council's daemon playtesters, Wendell, his testers, and donating authors (round 4). Taught
+  means used in the game and then proven in the outer world with a BAR, collected in the game and validated by the
+  coach in a coaching container (rounds 5, 6).
+
 ## Questions and answers
 
 ### Round 1 (2026-10-07)
@@ -109,7 +134,7 @@ Answers (Wendell, 2026-10-07, in the thread):
    become one of Sprout's story milestones, or does it sit beside them as a separate track (a skill ladder for
    Egan's stages)?
 2. **The test in step 4.** Who plays first: the council's daemon playtesters (simulated players, as in the Sprout
-   demo rounds), real people, or one then the other? And what counts as proof it taught: the skill shown in the
+   demo rounds), real people, or one then the other? What counts as proof it taught: the skill shown in the
    game, or shown in a real conversation afterwards?
 
 Answers (Wendell, 2026-10-07, in the thread):
@@ -126,7 +151,7 @@ Answers (Wendell, 2026-10-07, in the thread):
 
 - A text may propose a daemon only when a habit fits none of the existing daemons, or as a subclass of one. The
   translation table comes first; a new daemon is the exception and must say why no existing one fits.
-- A text's milestones run as a parallel track beside Sprout's story milestones. They are the same kind of thing:
+- A text's milestones run as a parallel track beside Sprout's story milestones. They work the same way:
   Sprout is Wendell's emotional alchemy text written as game design. So Sprout is this process's first worked
   example, run on his own text, and its design record is a reference for steps 1 to 3.
 - Playtesters: the council's daemon playtesters, Wendell, and anyone he brings in.
@@ -257,4 +282,12 @@ Answers (Wendell, 2026-10-07, in the thread):
 1. **The map.** When a text's introduction is ingested, what should it do to the map: add a new place (where its
    teacher lives), change places that already exist, or both?
 
-Answers: waiting.
+Answers (Wendell, 2026-10-07, in the thread):
+
+> It can add a new place but at the very least it needs to add or modify any assets that would use the teachings in
+> gameplay.
+
+- A text may add a new place. At the least, it must add or change every asset the teachings need in play (the
+  teacher, the villagers and spirits who come for help, the items, the map pieces where the technique gets used).
+
+The interview ended here.
