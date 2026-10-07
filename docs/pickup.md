@@ -40,7 +40,50 @@ A republish that omits `capabilities` keeps both. A republish that passes `capab
 
 ## The pickup routine
 
-`trig_01L138vKTaN9MSJoFKRmaBNx` has no schedule; the Send button fires it, and it wakes the council project's
-coordinator, which starts one board read thread. That thread pulls, then acts. A session the routine reaches that is
-not the coordinator never calls `add_repo` (it restarts the container) and never does the board read itself.
-Republish the board without `capabilities`, so the `mcp` grant carries forward.
+`trig_01L138vKTaN9MSJoFKRmaBNx` has no schedule; the Send button fires it. A board read always runs in a thread that
+the council project's coordinator starts, and that thread pulls, then acts. Republish the board without
+`capabilities`, so the `mcp` grant carries forward.
+
+### Where a Send lands (2026-10-07, 20:37 Send)
+
+The routine is bound to the coordinator (`persistent_session_id`), but a Send does not reliably wake it. At 20:37 UTC
+the button's `fire_trigger` started a new session titled "⚡ Council board: pick up Wendell's saves (council project)"
+(origin `force_run_trigger`) while the binding pointed at the live coordinator. The same happened once on 2026-10-06.
+So plan for every Send landing in a fresh session that has no `start_thread_session` tool.
+
+What broke was the fallback. The prompt told that session to find the coordinator and `send_message` it. Coordinators
+are recycled and get a new session id each time (`session_016Yw4J6vYgt5h3grAHh7NmK`, then
+`session_0141631xFabQPhsk4de2UWtb`), so a search by title finds old ones too. It picked the archived "Game master
+agents system" session, the send failed as inactive, and the fresh session posted a failure line in the project chat.
+
+That failure line is what got the board read started: the coordinator is woken by every project-chat post, and it
+started board read 2037 a minute later. A project-chat post is the one route from a routine session that reaches
+whichever session is coordinator now, so the fallback is that post, on purpose:
+
+- A routine session with no `start_thread_session` tool never searches for the coordinator, never calls
+  `send_message` or `add_repo`, and does no board read. It posts one line in the project chat with `post_message`:
+  "Board Send at <time UTC>: <rows from the payload>. Starting a board read." Then it ends its turn.
+- The coordinator treats that line like the routine firing into itself: it starts one board read thread on that
+  post, with no further project-chat line.
+- Nothing names a coordinator session id, so a recycled coordinator needs no change here. Rebinding the routine after
+  a recycle still helps on the Sends that do reach it directly.
+
+The routine prompt that carries this, set by the coordinator (only the conversation a routine posts into can edit it):
+
+    This is a Council Board pickup. Wendell saved answers on the Council Board
+    (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) and pressed Send to Claude. A second message names the
+    rows; do not wait for it.
+
+    If you have the start_thread_session tool, you are the coordinator of the "6 face game master council" project.
+    Start one thread now for a board read, with no project-chat line beyond the thread's own. Brief it to work in
+    repo wendell-britt/six-faces-council on main and follow its CLAUDE.md: save the board's store with ArtifactData
+    (positions, questions, terms, causes, steer) into one folder, run python3 board/pull.py <folder>
+    --push, republish board/council-board.html without passing capabilities, and act on the "needs work" list
+    pull.py prints (ask you for a thread for each new piece of work). pull.py is safe to run twice. If pull.py
+    records nothing, the thread says so in one line and resolves itself.
+
+    If you do not have start_thread_session, you are a session this routine started, and the coordinator will hear
+    you only through the project chat. Do not look for the coordinator, and do not call send_message, add_repo or
+    any repo or board tool. Call mcp__hearthbot__post_message once with one line: "Board Send at <time UTC>:
+    <the rows named in the second message, or 'rows in pickup/last'>. Starting a board read." Then end your turn
+    with no other message. Nothing is lost if this fails: the next council session's pull records the saves.
