@@ -4182,6 +4182,69 @@
    "auto": true,
    "pos": "One Podcast Thumbnail Studio serves every show: Flirtcraft in its cover's look (night, light rain, the red and blue hexagons, Jost), Mastering Allyship unchanged, and a Friendcraft placeholder until that show has a cover. Episode 1's thumbnail is already made from it. The old MTGOA Thumbnail Studio stays as it was.",
    "why": "Your ask in the podcast thread: \"We need our own version of a thumbnail creator for this show. We can extend the thumbnail creator that we made for the Mastering the Game of Allyship Podcast\", with Friendcraft as a placeholder. Source: https://claude.ai/artifact/RAiZ3keBiE6BvDD6YKA9S8"
+  },
+  {
+   "id": "book-pod-harvest",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "auto": true,
+   "pos": "Each podcast episode gets a harvest in flirtcraft book/podcast: its ideas and metaphors with timestamped quotes, where each meets the app and the outline, and what conflicts. Episode 1 found 20 ideas, and README.md is the recipe for the next episode. This merges as a draft for the book unless you flip it.",
+   "why": "Your ask: \"take the transcript and find out how to use it for the flirtcraft book\", with podcasts developing your voice alongside the game. Source: flirtcraft pull request #12"
+  },
+  {
+   "id": "book-relationships-chapter",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "auto": true,
+   "pos": "Flirting inside a relationship gets its own chapter in Part VII of the outline. It is also where the book answers the pickup-artist worry. This stands unless you flip it.",
+   "why": "Nothing in the repo covers it yet, and in the episode it is how you answer \"how am I not reinventing pickup artistry\", the same worry a cold reader raised in FOUNDER_SIX_FACES.md section 7. Source: flirtcraft book/podcast/episode-01.md"
+  },
+  {
+   "id": "book-birthday-game",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "auto": true,
+   "pos": "The birthday game goes in as a named practice, framed as a guess the player knows is a guess. This stands unless you flip it.",
+   "why": "Every mark in the app reads only the player's own conduct, and GRAMMAR.md section 12k allows a projection the player knows is a projection. Source: flirtcraft book/podcast/episode-01.md"
+  },
+  {
+   "id": "book-names-in-print",
+   "faces": [
+    "regent"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "auto": true,
+   "pos": "SlutCon may be named in print as a public event. QC is named and quoted only after he signs a release, and everyone else named in the episode stays out of the book. This stands unless you flip it.",
+   "why": "The reserved list keeps consent, release and anything naming a person with you, and the release rule already covers guests. Source: flirtcraft book/podcast/episode-01.md, care notes"
+  },
+  {
+   "id": "book-channels-term",
+   "faces": [
+    "sage"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "auto": true,
+   "pos": "The book calls the five \"channels\", as the app does. Your word \"stances\" from the episode stays in your quoted voice, because in the app a stance is one of the 12 postures.",
+   "why": "GRAMMAR.md lines 678 to 679 rejected the taijiquan steps as a basis for mapping, and the stance deck already uses the word. Source: flirtcraft book/podcast/episode-01.md"
+  },
+  {
+   "id": "fc-fear-rung-wonder",
+   "faces": [
+    "architect"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "auto": true,
+   "pos": "Both fear cultivate rungs in lib/decks.json end at wonder instead of excitement, to match GRAMMAR.md section 12g and the outline. This gets fixed in a small flirtcraft change unless you flip it.",
+   "why": "The episode, GRAMMAR.md section 12g and OUTLINE.md line 113 all say wonder. The deck is the one holdout. Source: flirtcraft book/podcast/episode-01.md"
   }
  ],
  "questions": [
@@ -7528,6 +7591,57 @@
      "v": "whole",
      "label": "B. The whole game",
      "c": "Every cycle runs sensation, element and practice, daemon, gate and release. The demo and the route map change with it."
+    }
+   ]
+  },
+  {
+   "id": "book-golds-satisfactions",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "q": "In the book, are the five golds also satisfactions a reader flirts for? The council recommends A.",
+   "why_you": "On the podcast you described the five as satisfactions you flirt for, and peace as \"the full enemy of flirting\". GRAMMAR.md lines 728 to 743 answer what a player wants only through the eight crafts, with the golds as where a charge ends up. Your newer words and the recorded ruling differ, and only you can say which the book teaches.",
+   "not_before": "The episode was recorded on 2026-10-05 and harvested on 2026-10-07.",
+   "options": [
+    {
+     "v": "both",
+     "label": "A. Both: the golds stay charge ladders, and the book also names them as satisfactions in your voice (recommended)",
+     "c": "The book keeps the app's grammar and adds your podcast framing as a way in, with a note on how they meet."
+    },
+    {
+     "v": "ladders",
+     "label": "B. Charge ladders only, as the app has them",
+     "c": "The podcast framing stays in the episode and does not enter the book."
+    },
+    {
+     "v": "satisfactions",
+     "label": "C. Satisfactions first, and the app follows",
+     "c": "GRAMMAR.md and the intake model get reworked so the golds answer what a player wants."
+    }
+   ]
+  },
+  {
+   "id": "book-permission-remedy",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "podcast episode 1 harvest",
+   "q": "Does the book teach giving permission, through a container such as a dojo, as a remedy? The council recommends A.",
+   "why_you": "QC's reason for going to SlutCon was that he had never had permission to bring romantic energy into a conversation. The deck names waiting for permission as the Breaking myth (lib/decks.json script-breaking). Whether the book only debunks the wait or also offers a place that grants permission changes a chapter, and the record does not say.",
+   "not_before": "The episode was recorded on 2026-10-05 and harvested on 2026-10-07.",
+   "options": [
+    {
+     "v": "both",
+     "label": "A. Both: name the myth, then offer the dojo as a place where permission is given (recommended)",
+     "c": "The book adds a section to Part VII on practice containers, with your dojo and symposium distinction."
+    },
+    {
+     "v": "myth",
+     "label": "B. Only the myth",
+     "c": "The book teaches that nobody issues permission, and the dojo stays out."
     }
    ]
   }
