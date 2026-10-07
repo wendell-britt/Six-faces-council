@@ -150,3 +150,7 @@ CLAUDE.md, this file and the board.
   mean something to America players"). Positions `wave-move-names` (Sky Lift, Earth Yield, River Fill, Flame Follow,
   Wind Draw, Lake Gather, Thunder Split, Mountain Stand) and `wave-qi-made-visible` (neigong turned outward, bending
   feel) stand unless he flips them. Ledger `council/ledger/2026-10-07-demo-round12-chat.json`.
+- **Rounds 11 and 12 read (2026-10-07 01:07):** all seven positions stood and `wave-teacher` is A, Master Yun
+  (`council/ledger/2026-10-07-board-read-0107.json`). Nothing in fr-demo waits on Wendell. Next, in a new thread: the
+  WAVE build on sprout #25 with Yun's taught fight, the straight four first, corner unlocks from spirits, the English
+  move names and visible qi; the trigram lore goes into design.md as Proposed.

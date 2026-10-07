@@ -1,0 +1,65 @@
+{
+ "date": "2026-10-07",
+ "read_at": "2026-10-07T01:08:00Z",
+ "battle": "fr-demo",
+ "rounds": [
+  11,
+  12
+ ],
+ "repo": "sprout",
+ "kind": "board-read",
+ "answers": {
+  "wave-taught-fight": {
+   "kind": "position",
+   "savedAt": "2026-10-07T00:44:14.879Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-straight-first": {
+   "kind": "position",
+   "savedAt": "2026-10-07T00:44:22.543Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-corners-from-spirits": {
+   "kind": "position",
+   "savedAt": "2026-10-07T00:44:33.299Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-gates-in-the-world": {
+   "kind": "position",
+   "savedAt": "2026-10-07T00:44:55.459Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-move-names": {
+   "kind": "position",
+   "savedAt": "2026-10-07T00:45:02.716Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-qi-made-visible": {
+   "kind": "position",
+   "savedAt": "2026-10-07T00:45:13.362Z",
+   "steer": "",
+   "via": "battle:fr-demo",
+   "status": "stands"
+  },
+  "wave-teacher": {
+   "kind": "question",
+   "savedAt": "2026-10-07T00:44:03.089Z",
+   "choice": "yun",
+   "steer": "",
+   "via": "battle:fr-demo"
+  }
+ },
+ "note": "Every round 11 and 12 row stood with no steer, and wave-teacher was answered A, Master Yun. The general steer (morning brief, 23:26) was already recorded by board read 2330.",
+ "lessons_pending": [],
+ "next": "The WAVE build on sprout #25 (draft), in a new thread: Master Yun's taught fight (dojo, then the strip edge), the straight four first, corner gates unlocked by Validating a spirit, the English move names, qi shown as each move's force, and the trigram lore entered in design.md as Proposed. Rerun the bot test with the straight four only. Then step 2, the five demo spirits."
+}

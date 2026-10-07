@@ -8753,6 +8753,42 @@
     "label": "Overruled",
     "recorded": "2026-10-07",
     "record": "council/ledger/2026-10-07-demo-round12-chat.json (six-faces-council)"
+   },
+   "wave-taught-fight": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+   },
+   "wave-straight-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+   },
+   "wave-corners-from-spirits": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+   },
+   "wave-gates-in-the-world": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+   },
+   "wave-move-names": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+   },
+   "wave-qi-made-visible": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
    }
   },
   "questions": {
@@ -9409,6 +9445,12 @@
     "label": "A, A fresh session for each Send, carrying the council repo",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)"
+   },
+   "wave-teacher": {
+    "decision": "yun",
+    "label": "A. Master Yun",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
    }
   },
   "causes": {
