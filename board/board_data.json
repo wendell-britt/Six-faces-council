@@ -9366,6 +9366,41 @@
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:55:31.187Z",
     "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+   },
+   "proc-first-retro-by-hand": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:14:46.683Z",
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+   },
+   "proc-fold-lessons": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:14:50.695Z",
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+   },
+   "proc-record-face": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:14:54.199Z",
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+   },
+   "proc-retro-pass": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:15:02.535Z",
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
+   },
+   "proc-scorecard-always": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:15:08.268Z",
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
    }
   },
   "questions": {
@@ -10080,6 +10115,13 @@
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T17:55:10.370Z",
     "record": "council/ledger/2026-10-07-pull-175531.json (six-faces-council)"
+   },
+   "proc-rule-retire": {
+    "decision": "a",
+    "label": "A, retire as a position",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:14:44.081Z",
+    "record": "council/ledger/2026-10-07-pull-181508.json (six-faces-council)"
    }
   },
   "causes": {
