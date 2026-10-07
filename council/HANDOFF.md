@@ -167,9 +167,15 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-07, from the pickup hostile review
 
-- **`pickup-pull-model` waits on Wendell.** council/research/2026-10-07-pickup-hostile-review.md finds the pickup
-  chain itself is the cause of the Send failures and recommends pull over push: every council session syncs the
-  board's store into main first, with a claim and expiry on `pickup/last`, a daily alarm that does not fire the same
-  routine, and the spare routines `trig_01DpRsDM94Cnv2neyDVkBNMb` and `trig_01Q9mMcVwR4MCqHQzUHwcmiS` switched off.
-  Nothing is built or switched off until he answers. `pickup-mechanism-before-rule` stands unless he flips it.
-- **Answered at board read 1714 (2026-10-07 17:14):** `pickup-pull-model` is A, pull, and `pickup-mechanism-before-rule` stood (`council/ledger/2026-10-07-board-read-1714.json`). The Hostile review of board pickup thread builds it: `board/pull.py`, the claim with an expiry, the separate daily alarm, and the two spare routines switched off. This Send did not rewrite `pickup/last` (it still held the 00:45 rows), which the claim should cover.
+- **Pull is built** (six-faces-council #46): `board/pull.py <store folder> --push` records every save main lacks and
+  is safe to run twice. CLAUDE.md, the session-start hook and the skill point every session at it. Run against the
+  store after board read 1714, it found nothing new, so it agrees with what that read recorded.
+- **Dropped from the review's plan, on purpose:** the claim with an expiry. Two pulls at once write the same resolved
+  entries and the same ledger file, so there is nothing to lock. The separate alarm is also dropped: the daily run
+  now records saves itself, so a broken Send chain no longer takes the safety net with it.
+- **Switched off:** `trig_01DpRsDM94Cnv2neyDVkBNMb` and `trig_01Q9mMcVwR4MCqHQzUHwcmiS` (17:17 UTC).
+- **Waiting on the sessions that own the prompts:** the coordinator was sent the new prompt for
+  `trig_01L138vKTaN9MSJoFKRmaBNx` (pull, then act; never add_repo), and the standing daily session the new step 1b
+  for `trig_01F8fDdkjYEeMCfdozj6w3tt` (run pull.py, do not fire the pickup routine). Check both with `get_trigger`.
+- **Small bug seen at board read 1714:** the 17:12 Send fired the routine but did not rewrite `pickup/last` (it still
+  held the 00:45 rows), so the Send bar may not hide. Under pull nothing depends on that doc.
