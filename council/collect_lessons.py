@@ -30,13 +30,14 @@ def get(url: str):
         return json.loads(r.read())
 
 
-def remote_records(repo: str) -> list[dict]:
+def remote_records(repo: str) -> list[dict] | None:
+    """The repo's ledger records, or None when the repo cannot be read (retro 1: a silent skip undercounted)."""
     out = []
     for d in ("council/ledger",):
         try:
             items = get(f"https://api.github.com/repos/{repo}/contents/{d}")
         except Exception:
-            continue
+            return None
         for it in items:
             if it.get("type") == "file" and it["name"].endswith(".json"):
                 try:
@@ -56,8 +57,12 @@ def main(argv: list[str]) -> int:
     local = "--local" in argv
     faces = (ROOT / "council/faces.yaml").read_text()
     found = 0
+    unread = []
     for repo in registry():
         recs = local_records(repo) if local else remote_records(repo)
+        if recs is None:
+            unread.append(repo)
+            continue
         for rec in recs:
             for l in rec.get("lessons_pending") or []:
                 words = (l.get("wendell") or "").strip()
@@ -66,7 +71,9 @@ def main(argv: list[str]) -> int:
                 found += 1
                 print(f"{repo} {rec.get('id')}: {l.get('face')} | {words} | {l.get('lesson')}")
     print(f"{found} pending lesson(s) not yet in faces.yaml.")
-    return 0
+    for repo in unread:
+        print(f"could not read {repo}: its pending lessons are not counted")
+    return 1 if unread else 0
 
 
 if __name__ == "__main__":

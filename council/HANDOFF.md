@@ -208,3 +208,20 @@ CLAUDE.md, this file and the board.
   Sage 4.
 - **Next:** the first retro runs by hand in its own thread, on the 32 overrules, the 9
   pending lessons and the 6 pickup incidents.
+
+## Open on 2026-10-07, from retro 1
+
+- **Retro 1** (`council/passes/6FACE_RETRO1_2026-10-07.md`, ledger `council/ledger/2026-10-07-retro1.json`) found three
+  repeating patterns in the 32 overrules: the Architect's designs not playing like the game he named (or missing the
+  answer already in his own work), one-to-one rules where he wanted a shared frame with variety inside, and gates in
+  front of design work. The third recurred after its lessons were folded on 2026-10-03. The retro rhythm holds.
+- **On the board, standing unless he flips them:** `retro1-rhythm-holds`, `lesson-architect-sources`,
+  `lesson-challenger-shared-frame`, `lesson-challenger-gate-release`, `lesson-regent-purpose-first`,
+  `lesson-diplomat-plain-names`, `lesson-sage-evidence-readings`, `retro1-lessons-closed`,
+  `retro1-retire-pickup-history`. **Next:** the board read after he answers folds each standing lesson into
+  `faces.yaml` (his ruling is the board answer), with his quoted words and the source rows.
+- **Not reached:** `collect_lessons.py` could not read friendcraft-manuacript, flirtcraft, root-game or
+  emotional-first-aid from that session (GitHub 403 through the proxy). Their pending lessons (friendcraft Challenger
+  and Shaman, flirtcraft Regent) wait for a session that can read those repos. The script now names unread repos.
+- **Retired:** the push design's history moved from `docs/pickup.md` to `docs/incidents.md`. The four rule files are at
+  588 lines; retro 1's test 4 holds them there.
