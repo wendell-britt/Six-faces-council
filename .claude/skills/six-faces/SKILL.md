@@ -86,10 +86,11 @@ the board.
 
 ## After Wendell answers on the board
 
-Read the store with `ArtifactData`: collections `positions`, `questions`, and the document
-`steer/general`. Save `positions`, `questions` and `terms` with `out_dir` and run
-`python3 board/unrecorded.py <dir>`: record every save it lists, not only the rows of the battle you
-came for (Wendell stood `dy-2026-10-04-open`). Write a ledger record. An overrule or a steer on a face's row becomes a lesson in
+Save the store with `ArtifactData` (collections `positions`, `questions`, `terms`, `causes` and
+`steer`, `out_dir` one folder) and run `python3 board/pull.py <dir> --push` in the home repo. It records
+every save main lacks, not only the rows of the battle you came for, writes the ledger record, and pushes
+to main; running it twice changes nothing (Wendell, `pickup-pull-model`, 2026-10-07). Then republish
+the board without passing capabilities, and act on the `needs work` list it prints. An overrule or a steer on a face's row becomes a lesson in
 that face's entry in `faces.yaml`, quoted, with the source. A ruling that changes a term, a
 structure or a date goes in the repo's decision log where one exists.
 

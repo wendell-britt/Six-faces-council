@@ -27,6 +27,9 @@ origin="$(git config --get remote.origin.url 2>/dev/null | sed -E 's#^.*github\.
 rule="Standing rule: before you ask Wendell a question whose answer changes what gets built, run it through the six-faces reach test (skill six-faces). Answer it from the record if you can. A question that survives goes to the council board with options, and the chat reply says it is there."
 # The feature pipeline (council/pipeline.yaml), asked for by Wendell on 2026-10-02: "Things that need
 # building should go through a production pipeline managed by the 6 faces".
+# Saved board answers reach main by pull (Wendell, pickup-pull-model, 2026-10-07): the board's store is the record,
+# and any session about to act on a ruling records what is new first.
+pull_rule="Standing rule: before acting on a ruling, save the council board's store with ArtifactData and run python3 board/pull.py <dir> --push in the home repo (wendell-britt/six-faces-council). It records every saved answer main lacks and is safe to run twice."
 pipeline_rule="Standing rule: a new feature starts as a spec kit in .specify/specs/<name>/ from council/spec-kit/ and runs the six-faces pipeline in council/pipeline.yaml. A step only Wendell can take goes on the Your steps tab on the council board (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps), never into chat."
 lessons() { grep -c '^      - date:' council/faces.yaml 2>/dev/null || echo 0; }
 
@@ -40,6 +43,7 @@ if [ "$origin" = "$home_repo" ] && [ -z "${COUNCIL_SOURCE_BASE:-}" ]; then
   echo "Six-faces council: this repo is the home copy ($home_repo). $(lessons) face lessons in council/faces.yaml. Lessons and lens changes are made here."
   echo "$rule"
   echo "$pipeline_rule"
+echo "$pull_rule"
   exit 0
 fi
 
@@ -72,4 +76,5 @@ else
 fi
 echo "$rule"
 echo "$pipeline_rule"
+echo "$pull_rule"
 exit 0
