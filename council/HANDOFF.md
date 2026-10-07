@@ -55,8 +55,10 @@ CLAUDE.md, this file and the board.
   video as `photo` in `spec.json`. Then Your steps list `podcast-ep2-youtube` takes it to YouTube.
 - **Picked (board read of 2026-10-07):** the aging parents title and thumbnail A; the description stands.
 - **Episode marketing** (2026-10-07): the plan is in the MTGOA project files at `podcast/episode-marketing-plan.md`
-  and the move's new step 6. Episode 1's three clips (Isaac Holze) are renamed copies in
-  `~/Downloads/podcast/ep01-clips/` on Wendell's Mac, with `captions.md`; the same captions are in
+  and the move's new step 6. Episode 1's three clips (Isaac Holze) were recut on 2026-10-07 to 50, 70 and 52
+  seconds with no words on screen (`pod-clip-no-words`) and sit in `~/Downloads/podcast/ep01-clips/` on Wendell's
+  Mac under the old names, with `captions.md`; the short versions are in `_claude_work/ep01-clips-short/`. The same
+  captions are in
   `podcast/ep01-isaac-holze/clips-and-captions.md`. Your steps list `podcast-ep1-clips` posts them. Waiting on
   `pod1-isaac-handle`. Episode 2's clips need step 6 once it is on YouTube; `Downloads/02-how-would-you-like-to-feel.mp4`
   (53 s) looks like one already cut.
