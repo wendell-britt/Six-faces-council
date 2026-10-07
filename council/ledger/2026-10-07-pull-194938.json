@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T19:49:38.409Z",
+ "answers": {
+  "ttc-intro-pages": {
+   "kind": "question",
+   "choice": "wait-for-pages",
+   "savedAt": "2026-10-07T19:49:30.658Z",
+   "steer": ""
+  },
+  "ttc-extract-intro": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:49:38.409Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/ttc-intro-pages: Wait for the rest of Chapter 1"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

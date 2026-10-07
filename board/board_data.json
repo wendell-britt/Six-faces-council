@@ -11759,6 +11759,18 @@
      "regent"
     ],
     "pass": "texts to campaigns 1"
+   },
+   "ttc-extract-intro": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:49:38.409Z",
+    "record": "council/ledger/2026-10-07-pull-194938.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 1"
    }
   },
   "questions": {
@@ -13045,6 +13057,17 @@
      "shaman"
     ],
     "pass": "texts to campaigns 1"
+   },
+   "ttc-intro-pages": {
+    "decision": "wait-for-pages",
+    "label": "Wait for the rest of Chapter 1",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:49:30.658Z",
+    "record": "council/ledger/2026-10-07-pull-194938.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "texts to campaigns, step 1"
    }
   },
   "causes": {
