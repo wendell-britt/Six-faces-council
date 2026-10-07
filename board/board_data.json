@@ -7732,6 +7732,39 @@
      "c": "The book teaches that nobody issues permission, and the dojo stays out."
     }
    ]
+  },
+  {
+   "id": "pod2-clip-moments",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "podcast ep 2",
+   "q": "Which moments from episode 2 should become its clips? The council recommends A, B, C and D.",
+   "why_you": "The clips go out under your name, and which moments carry the episode is a matter of taste only you hold. The six moments, with times and opening lines, are in the project files at podcast/ep02-tom-hurlburt/clip-moments.md.",
+   "not_before": "Episode 2's upload steps were ticked on 2026-10-07, and clip 1 of episode 1 is live.",
+   "options": [
+    {
+     "v": "abcd",
+     "label": "A, B, C and D (recommended)",
+     "c": "How would you like to feel (77 s), allow the purpose (79 s, Tom), how long do you want to feel this way (38 s, Tom), and charity as domination (59 s)."
+    },
+    {
+     "v": "abce",
+     "label": "Swap D for E, the bad guy",
+     "c": "Are you willing to be the bad guy (70 s) replaces charity. Its end is cut before the coaching pitch at 55:33."
+    },
+    {
+     "v": "abcf",
+     "label": "Swap D for F, the warehouse sale",
+     "c": "The warehouse sale of consciousness (43 s) replaces charity. Its joke about incontinence reads oddly out of context."
+    },
+    {
+     "v": "all",
+     "label": "All six",
+     "c": "Six clips on the posting rhythm instead of four, which stretches episode 2 over about three weeks."
+    }
+   ]
   }
  ],
  "causes": [
