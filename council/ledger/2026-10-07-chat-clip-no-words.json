@@ -1,0 +1,15 @@
+{
+ "date": "2026-10-07",
+ "kind": "chat-ruling",
+ "answers": {
+  "pod-clip-no-words": {
+   "kind": "position",
+   "savedAt": "2026-10-07T21:37:34Z",
+   "status": "stands",
+   "steer": "we don't want to have the words on screen. Instragram is going to take care of that. Add this to our rules and process around creating these types of clips"
+  }
+ },
+ "steer": null,
+ "needs_work": [],
+ "note": "Wendell's ruling in the episode 1 recut thread, recorded as a board answer per CLAUDE.md. Applied the same day: episode 1 clips recut with no words on screen; move step 6, the marketing plan and the Your steps list podcast-ep1-clips updated."
+}

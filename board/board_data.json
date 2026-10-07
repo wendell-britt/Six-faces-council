@@ -3775,8 +3775,8 @@
    ],
    "pass": "podcast marketing",
    "auto": true,
-   "pos": "The podcast episode move gains a sixth step. The council proposes three clip moments from the transcript, at least one of them the guest's, and you pick them here. It then cuts them on your Mac with ffmpeg, vertical with the words on screen, writes the Instagram, Facebook and X captions, and puts the posting on your Your steps list. It never posts and never messages a guest. This stands unless you flip it.",
-   "why": "Episode 1's clips were finished but never posted, and two of the three have no words on screen. Source: council/moves/podcast-episode.md (six-faces-council #48)"
+   "pos": "The podcast episode move gains a sixth step. The council proposes three or four clip moments from the transcript, at least one of them the guest's, and you pick them here. It then cuts them on your Mac with ffmpeg, vertical with no words on screen, writes the Instagram, Facebook and X captions, and puts the posting on your Your steps list. It never posts and never messages a guest. This stands unless you flip it.",
+   "why": "Episode 1's clips were finished but never posted. The words come from Instagram's auto captions, not the video (your ruling of 2026-10-07, row pod-clip-no-words). Source: council/moves/podcast-episode.md"
   },
   {
    "id": "proc-retro-pass",
@@ -4298,8 +4298,19 @@
    ],
    "pass": "podcast marketing",
    "auto": true,
-   "pos": "Podcast clips run longer from now on: one or two of 60 to 90 seconds per episode for the strongest stories, and one or two of 30 to 60 seconds for sharp lines, with nothing under 30 seconds. Each opens with its strongest line, because Instagram now measures who leaves in the first three seconds. Episode 1's clips get recut from the source recording on these lengths. This stands unless you flip it.",
+   "pos": "Podcast clips run longer from now on: one or two of 60 to 90 seconds per episode for the strongest stories, and one or two of 30 to 60 seconds for sharp lines, with nothing under 30 seconds. Each opens with its strongest line, because Instagram now measures who leaves in the first three seconds. Episode 1's clips were recut on these lengths on 2026-10-07: 50, 70 and 52 seconds. This stands unless you flip it.",
    "why": "Your ask today: \"pull in 90 second clips rather than the shorter ones\". Socialinsider's 6 million Reels show under 30 seconds getting about half the views of 45 seconds to 3 minutes, and Instagram recommends Reels up to 3 minutes since March 2025. Source: project files podcast/reels-research-2026-10-07.md"
+  },
+  {
+   "id": "pod-clip-no-words",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "podcast marketing",
+   "auto": true,
+   "pos": "Podcast clips carry no words burned into the video. You turn on Instagram's auto captions when posting and check them against the words in the episode's captions file. Your ruling in chat, recorded here.",
+   "why": "Your words in the episode 1 recut thread, 2026-10-07: \"we don't want to have the words on screen. Instragram is going to take care of that. Add this to our rules and process around creating these types of clips\". Source: council/moves/podcast-episode.md step 6; project files podcast/episode-marketing-plan.md"
   },
   {
    "id": "oag-clean-up-moves",
@@ -12325,6 +12336,18 @@
      "architect"
     ],
     "pass": "ontology game 3"
+   },
+   "pod-clip-no-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:37:34Z",
+    "record": "council/ledger/2026-10-07-chat-clip-no-words.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "podcast marketing"
    }
   },
   "questions": {
