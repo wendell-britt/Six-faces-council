@@ -4245,6 +4245,50 @@
    "auto": true,
    "pos": "Both fear cultivate rungs in lib/decks.json end at wonder instead of excitement, to match GRAMMAR.md section 12g and the outline. This gets fixed in a small flirtcraft change unless you flip it.",
    "why": "The episode, GRAMMAR.md section 12g and OUTLINE.md line 113 all say wonder. The deck is the one holdout. Source: flirtcraft book/podcast/episode-01.md"
+  },
+  {
+   "id": "oag-open-up-tools",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "At step 2 of block work, after the job questions, the player opens up to that emotion with one of two tools made for it. Anger: Return to the Body or Find the Felt Thread. Sadness: Find the Felt Thread or Make It Real. Fear: Find the Felt Thread or Return to the Body. Joy: Happy Apples or Make It Real. Neutrality: Find the Felt Thread or Happy Apples. Each tool shows three steps that turn toward the feeling, then one breath. The steps are the council's wording. This stands unless you flip it.",
+   "why": "Your answer on oag-ea-practice: 'tools specifically made for that move. It needs to be an open up move so they can feel it more'. Each tool is one the taxonomy rates strong for Open Up and strong for the channel (Anger's second is rated useful when anger has somatic heat). Source: bars-engine docs/EMOTIONAL_ALCHEMY_TOOL_TAXONOMY.md, Compact Matrices 1 and 3; content/ontology-game/6FACE_PASS3_2026-10-07.md, addendum (pull request #264)"
+  },
+  {
+   "id": "oag-open-up-marks",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "After opening up, the player can mark what got in the way: it doesn't feel safe to feel this; I'm not allowed to feel this; I can't find it in my body; it's too much, too fast; I'd rather think about it than feel it. A marked block can be worked as a block of its own, which releases back to the same screen. The marks go in Your record when it is on. The five marks are the council's placeholders. This stands unless you flip it.",
+   "why": "Your answer on oag-ea-practice: 'should be able to have the players mark if they are experiencing blocks re: opening up to that emotion'. Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md, addendum (pull request #264)"
+  },
+  {
+   "id": "oag-wave-first",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "Every cycle begins with W.A.V.E. The entry screen has one button, 'Begin with W.A.V.E.', and the random opener is gone from play. The practice picker after a belief in the main cycle stays, with W.A.V.E. first. This stands unless you flip it.",
+   "why": "Your answer on oag-main-order: 'Everything is downstream from wave'. Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md, addendum (pull request #264)"
+  },
+  {
+   "id": "oag-dig-deeper",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "ontology game 3",
+   "auto": true,
+   "pos": "Inside block work, a belief that does not shift at the gate offers 'Dig deeper: work what's keeping it from shifting'. That opens a block inside the block, and its Release comes back to the gate. 'Go back anyway' stays. This stands unless you flip it.",
+   "why": "Your answer on oag-main-order: 'if WAVE is blocked one can diagnoze by digging deeper until the block releases and they can go back to the work that brought them to the practice in the first place'. The way back already runs through each block's step and the closing return to the start (oag-trailhead). Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md, addendum (pull request #264)"
   }
  ],
  "questions": [
