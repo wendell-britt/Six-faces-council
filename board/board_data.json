@@ -4171,6 +4171,17 @@
    "auto": true,
    "pos": "A \"Your record\" screen, linked from the start and from Cycle Complete, lists every block worked (its words, sensation, element and job, practice, daemon and job, the gate's face, the belief, released or not) and every completed cycle's beliefs. It stays in the player's browser, behind a switch that starts off, with an Erase button, and never enters the coach code. This stands unless you flip it; question oag-record asks whether the switch is the right line.",
    "why": "Your message: \"This program is to help peopel keep track of charges and their resolutions and emergent beliefs\". Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md (pull request #263)"
+  },
+  {
+   "id": "pod-thumb-studio",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "One Podcast Thumbnail Studio serves every show: Flirtcraft in its cover's look (night, light rain, the red and blue hexagons, Jost), Mastering Allyship unchanged, and a Friendcraft placeholder until that show has a cover. Episode 1's thumbnail is already made from it. The old MTGOA Thumbnail Studio stays as it was.",
+   "why": "Your ask in the podcast thread: \"We need our own version of a thumbnail creator for this show. We can extend the thumbnail creator that we made for the Mastering the Game of Allyship Podcast\", with Friendcraft as a placeholder. Source: https://claude.ai/artifact/RAiZ3keBiE6BvDD6YKA9S8"
   }
  ],
  "questions": [
