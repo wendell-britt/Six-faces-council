@@ -1,0 +1,23 @@
+{
+ "id": "2026-10-07-daily",
+ "date": "2026-10-07",
+ "recorded_at": "2026-10-07T15:48:21+00:00",
+ "project": "six-faces-council",
+ "cause": "daily-move",
+ "convened_by": "routine",
+ "invoked_from": "claude-code",
+ "level": 1,
+ "move": "show",
+ "found": "No open pull request and no unmerged branch with work missing from main; the five-moves spec's last two boxes open",
+ "finished": "five-moves spec records each move's first run; its last two boxes ticked",
+ "branch": "daily/2026-10-07-show",
+ "pull_request": "https://github.com/wendell-britt/Six-faces-council/pull/45",
+ "rows": [
+  "dy-2026-10-07-show"
+ ],
+ "pickup_check": {
+  "unrecorded": 0,
+  "steps_changed": 0,
+  "passed_on": 0
+ }
+}

@@ -3722,6 +3722,17 @@
    "why": "Your words: 'monster rancher can be used for inspiration'. design.md already decides that spirits grow by sparring and never by working, and already saves each ally's level and satisfaction. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
    "auto": true,
    "pass": "sprout demo 13"
+  },
+  {
+   "id": "dy-2026-10-07-show",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "daily",
+   "auto": true,
+   "pos": "The daily session's Show up run closes the five-moves spec. Each move has now run once, and the spec records what each found and finished, with its pull request and board row. The four earlier rows all stood. This merges at your next board read unless you flip it.",
+   "why": "It changes no code. Show up found nothing else to ship: no open pull request, and no branch with work missing from main. Pull request: https://github.com/wendell-britt/Six-faces-council/pull/45"
   }
  ],
  "questions": [
