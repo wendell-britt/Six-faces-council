@@ -9044,6 +9044,18 @@
     "label": "Stands",
     "recorded": "2026-10-07",
     "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "pickup-mechanism-before-rule": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
+   },
+   "dy-2026-10-07-show": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
    }
   },
   "questions": {
@@ -9724,6 +9736,12 @@
     "label": "A, Every card's name and bind sentence; the moves, the draw and the ledger stay in the app",
     "recorded": "2026-10-07",
     "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "pickup-pull-model": {
+    "decision": "pull",
+    "label": "A. Pull, don't push (recommended)",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
    }
   },
   "causes": {
