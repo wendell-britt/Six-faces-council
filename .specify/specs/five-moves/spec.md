@@ -60,4 +60,26 @@ because another person owns that repo.
 - [x] Wendell rules on `fm-levels` (stands, board read 26).
 - [x] #16 merges (4de3aa8).
 - [x] The daily routine's instructions gain the move step, and `plan.md` and `tasks.md` are written (board read 27, 0fa2fea).
-- [ ] The first run of each move is read and recorded here.
+- [x] The first run of each move is read and recorded here (below, 2026-10-07).
+
+## The first run of each move
+
+Each move has now run once, from the standing daily session at level 1, with one board row per run. Every row so far
+has stood. The stop condition above (more rows flipped or ignored than stood after two weeks) has not been met.
+
+| Date | Move | What it found | What it finished | Row |
+|---|---|---|---|---|
+| 2026-10-03 | Wake up | Nine unticked spec boxes on work that had shipped, and three still open | A research note, `council/research/2026-10-03-unticked-done-work.md` (#21) | `dy-2026-10-03-wake`, stood |
+| 2026-10-04 | Open up | 23 answers Wendell saved on the board that main never recorded; #20 and #24 open on saves that had stood | A finding note, `council/research/2026-10-04-saved-but-never-recorded.md` (#36), which led to `board/unrecorded.py` | `dy-2026-10-04-open`, stood |
+| 2026-10-05 | Clean up | The nine boxes from the Wake up note | Nine boxes ticked in five spec files, each with its record (#39) | `dy-2026-10-05-clean`, stood |
+| 2026-10-06 | Grow up | No tests covered the board merge code, which lost rows twice on 2026-10-04 | Twelve regression tests in `tests/test_board_merge.py`, run by the steward (#40) | `dy-2026-10-06-grow`, stood |
+| 2026-10-07 | Show up | No open pull request and no unmerged branch with work missing from main; this spec's last two boxes open | This section, and both boxes ticked | `dy-2026-10-07-show`, waiting |
+
+What the five runs show:
+- The moves fed each other. Wake up found the work, Clean up did it, Open up found a gap, and the fix became a tool
+  another session built. Grow up then protected the board from the failure that had lost rows.
+- Every run stayed in the home repo and changed no code a board read depends on, except the steward's test step in
+  #40.
+- Each run's record is `council/ledger/<date>-daily.json`. Their costs are recorded by the session that reads the
+  board, from each turn's result event.
+

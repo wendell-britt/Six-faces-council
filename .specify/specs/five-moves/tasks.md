@@ -18,4 +18,4 @@ He has no steps. His decision is position `fm-build` on the board.
 
 ## Verify and ship
 
-- [ ] [claude] Ledger record written; this file ticked.
+- [x] [claude] Ledger record written (one per run, `council/ledger/2026-10-03-daily.json` to `2026-10-07-daily.json`); this file ticked.
