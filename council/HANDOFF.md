@@ -192,3 +192,14 @@ CLAUDE.md, this file and the board.
   for `trig_01F8fDdkjYEeMCfdozj6w3tt` (run pull.py, do not fire the pickup routine). Check both with `get_trigger`.
 - **Small bug seen at board read 1714:** the 17:12 Send fired the routine but did not rewrite `pickup/last` (it still
   held the 00:45 rows), so the Send bar may not hide. Under pull nothing depends on that doc.
+
+## Open on 2026-10-07, from the process improvement thread (pass 13)
+
+- **Pass 13** (`council/passes/6FACE_PASS13_2026-10-07.md`) asked how to use the process to improve the process. Its
+  answer is a retro pass: the six faces read the council's own record (overrules, steers, deferrals, incidents,
+  unfolded lessons) on the daily session's Grow up day. Positions `proc-retro-pass`, `proc-first-retro-by-hand`,
+  `proc-fold-lessons`, `proc-record-face` and `proc-scorecard-always` stand unless he flips them; `proc-rule-retire`
+  waits on him.
+- **Next:** once those rows are read, the first retro runs by hand in its own thread, on the 32 overrules, the 9
+  pending lessons and the 6 pickup incidents. `proc-record-face` (pull.py copies faces and pass onto resolved
+  entries) is a small change for any session that touches pull.py.

@@ -1,0 +1,600 @@
+{
+ "date": "2026-10-07",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "six-faces-council",
+ "record": "council/passes/6FACE_PASS13_2026-10-07.md",
+ "called_by": "Wendell, council project thread, 2026-10-07T17:56:52Z: \"Specifically I'm looking at what the 6 game masters would say the next step of improving the process might be? How do we use the process to improve the process\"",
+ "convened_by": "wendell",
+ "invoked_from": "claude-code",
+ "pulled_first": "council/ledger/2026-10-07-pull-175531.json",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    8,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 63,
+   "name": "Arrived",
+   "cn": "既濟",
+   "pinyin": "jì jì",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "shows": "This is finished, which is when it starts moving.",
+   "image": "☲ fire beneath ☵ water. Every line in the figure sits in its correct place, with the water above the fire.",
+   "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    9,
+    6,
+    6,
+    7,
+    8
+   ],
+   "changing_lines": [
+    2,
+    3,
+    4
+   ],
+   "n": 29,
+   "name": "Depths",
+   "cn": "坎",
+   "pinyin": "kǎn",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "shows": "The bottom of this has another bottom under it.",
+   "image": "☵ water beneath ☵ water. One firm line trapped between two yielding ones, and then the same again above it.",
+   "situation": "Repeated danger: the pit, and past it another pit. The old counsel is about consistency, because water goes into every hollow, fills it, and moves on, being water the whole way through. What carries you across a run of these is doing the same thing each time.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 31,
+    "name": "Mutuality",
+    "cn": "咸",
+    "pinyin": "xián",
+    "lines": [
+     0,
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    "shows": "The movement here arrived because you stopped.",
+    "image": "☶ mountain beneath ☱ lake. The mountain holds a hollow at its summit; the lake settles into it.",
+    "situation": "Stillness underneath, openness above. Influence runs both ways here only because the lower party stopped moving long enough to be shaped. The classical note is that this works because the young man takes the position beneath the young woman.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    9,
+    9,
+    8,
+    7,
+    9,
+    8
+   ],
+   "changing_lines": [
+    1,
+    2,
+    5
+   ],
+   "n": 58,
+   "name": "Banter",
+   "cn": "兌",
+   "pinyin": "duì",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The exchange is already the whole of it.",
+   "image": "☱ lake beneath ☱ lake. An open line at the top of each half, one above the other: two mouths.",
+   "situation": "Joy, and specifically joy that gets exchanged. Two lakes side by side feed each other, and the old commentary makes learning the model — friends talking and practising together, the form of pleasure that keeps producing more of itself. The yielding line sits on the outside, so the openness is at the surface.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 16,
+    "name": "Anticipation",
+    "cn": "豫",
+    "pinyin": "yù",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "shows": "The good part has started and the event has not.",
+    "image": "☷ earth beneath ☳ thunder. Thunder coming up out of the ground, the sound arriving before the storm.",
+    "situation": "Stored energy at the point of release. The character carries both readiness and delight, and the old commentary attaches music to it — the thing that gathers a crowd before anything has happened. Preparation and pleasure are the same motion here.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 45,
+   "name": "Gathering",
+   "cn": "萃",
+   "pinyin": "cuì",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "You are in a room and you may have forgotten why you came.",
+   "image": "☷ earth beneath ☱ lake. Water collecting on open ground and pooling wherever it can.",
+   "situation": "Assembly. The old text puts a king at the temple and calls for a great offering, so this gathering has a centre and a price. Where numbers collect, the commentary says to keep your weapons in repair, because crowds bring what crowds bring.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    9
+   ],
+   "changing_lines": [
+    6
+   ],
+   "n": 1,
+   "name": "Unbroken",
+   "cn": "乾",
+   "pinyin": "qián",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Every line here sends, and the return has nowhere to land.",
+   "image": "☰ heaven beneath ☰ heaven. Six unbroken lines, and no place in the figure that yields.",
+   "situation": "Every line is pushing and every line is capable. This is the most able configuration in the set, and it has nowhere to put anything that arrives. The tradition walks a dragon up through six stages for exactly this reason — force has to learn timing, because force alone already knows everything else.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 43,
+    "name": "Unsaid",
+    "cn": "夬",
+    "pinyin": "guài",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "shows": "One sentence is still unsaid, and it is going anyway.",
+    "image": "☰ heaven beneath ☱ lake. Five firm lines have risen and a single yielding one is left at the top.",
+    "situation": "Resolution. The old counsel is precise and full of caution: announce it truthfully in the king's court, know the danger you are in, and reach for words well before weapons. The last soft thing is on its way out, and the manner of its going is the entire subject.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    8,
+    9,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2,
+    4
+   ],
+   "n": 10,
+   "name": "Footing",
+   "cn": "履",
+   "pinyin": "lǚ",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are stepping onto ground that matters, and the play is what makes it safe.",
+   "image": "☱ lake beneath ☰ heaven. A small soft thing placed directly under the largest hard one.",
+   "situation": "The old line is about treading on a tiger's tail and coming away whole, which happens through the quality of the step. Conduct is the entire content here. Where you put your weight, in what order, at what speed, decides whether the ground holds.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 42,
+    "name": "Windfall",
+    "cn": "益",
+    "pinyin": "yì",
+    "lines": [
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "shows": "More is arriving than you put in.",
+    "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+    "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  }
+ ],
+ "daemons": [],
+ "daemons_note": "None sent; each face's problem was answerable from the record on main.",
+ "dissent": true,
+ "dissent_notes": [
+  "Architect wanted council/retro.py built with the first retro; Challenger held that the hand pass comes first and the script only from what it needed. The Sage ordered them: hand first.",
+  "Challenger makes the retro rhythm conditional on the hand pass finding a repeating face and reason."
+ ],
+ "voice_lint": "one hard finding left on purpose: 'room' in the Regent's cast text (hexagram 45), which is Wendell's flirtcraft reading quoted as cast.py prints it",
+ "tests_set": [
+  "Two or more of the 32 overrules share a face and a reason; if not, the retro rhythm is dropped.",
+  "No lessons_pending entry older than seven days (the council's number) at the next retro.",
+  "The line count of CLAUDE.md, the skill, pipeline.yaml and docs/pickup.md (619 on 2026-10-07) is no higher after the retro's changes.",
+  "Every resolved position recorded after proc-record-face lands carries its faces."
+ ],
+ "positions": [
+  "proc-retro-pass",
+  "proc-first-retro-by-hand",
+  "proc-fold-lessons",
+  "proc-record-face",
+  "proc-scorecard-always"
+ ],
+ "questions": [
+  "proc-rule-retire"
+ ],
+ "next": "After the board read on these rows, the first retro runs by hand in a new thread: the 32 overrules, the 9 pending lessons (collect_lessons.py) and the 6 pickup incidents."
+}

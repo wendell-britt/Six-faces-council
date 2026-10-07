@@ -3777,6 +3777,60 @@
    "auto": true,
    "pos": "The podcast episode move gains a sixth step. The council proposes three clip moments from the transcript, at least one of them the guest's, and you pick them here. It then cuts them on your Mac with ffmpeg, vertical with the words on screen, writes the Instagram, Facebook and X captions, and puts the posting on your Your steps list. It never posts and never messages a guest. This stands unless you flip it.",
    "why": "Episode 1's clips were finished but never posted, and two of the three have no words on screen. Source: council/moves/podcast-episode.md (six-faces-council #48)"
+  },
+  {
+   "id": "proc-retro-pass",
+   "faces": [
+    "architect",
+    "regent",
+    "shaman"
+   ],
+   "pass": "process pass 13",
+   "auto": true,
+   "pos": "The council holds a retro pass whose subject is its own record: your overrules, steers and deferrals, the plumbing incidents, and the lessons not yet folded in. The six faces read it the way they read a feature. It runs on the daily session's Grow up day, so it needs no new routine, and it is framed as what was learned. Lessons it finds come to you as lesson positions; fixes come as mechanisms in pull requests. This stands unless you flip it.",
+   "why": "Your ask today: \"How do we use the process to improve the process\". The record holds 32 overrules and 9 lessons waiting since 2026-10-04, and no step reads them back; every process change so far started with you noticing (pass 13, council/passes/6FACE_PASS13_2026-10-07.md)."
+  },
+  {
+   "id": "proc-first-retro-by-hand",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "process pass 13",
+   "auto": true,
+   "pos": "The first retro runs next, by hand, in its own thread, on the 32 overrules, the 9 pending lessons and the 6 pickup incidents. If the overrules show no repeating face and reason, the retro rhythm is dropped and the council only folds lessons. A script that counts comes after, built from what the hand pass needed. This stands unless you flip it.",
+   "why": "The Challenger's test names its blocker, as your mh-gate-zero overrule asked: the unfolded lessons and the overrules nobody has traced to a face. The Architect wanted the script first and dissents."
+  },
+  {
+   "id": "proc-fold-lessons",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "process pass 13",
+   "auto": true,
+   "pos": "The first retro puts the nine pending lessons on the board as lesson positions, each with the sentence you were answering beside the lesson, and they fold into faces.yaml when they stand. You see which of your rulings changed which face. This stands unless you flip it.",
+   "why": "lesson-challenger-ladder and lesson-diplomat-levels set this practice. faces.yaml changes only by your ruling, so a lesson reaches it through the board."
+  },
+  {
+   "id": "proc-record-face",
+   "faces": [
+    "architect"
+   ],
+   "pass": "process pass 13",
+   "auto": true,
+   "pos": "board/pull.py copies each position's faces and pass onto its resolved entry when it records your answer, so an overrule can be traced to the face that made the position. This stands unless you flip it.",
+   "why": "None of the 349 resolved positions carries its face today, and stats.py shows 26 of 139 ledger records with no cause. The retro's first question cannot be answered without it. The change is clerical and takes no judgment."
+  },
+  {
+   "id": "proc-scorecard-always",
+   "faces": [
+    "regent"
+   ],
+   "pass": "process pass 13",
+   "auto": true,
+   "pos": "Every pass, including a pass about the council itself, opens by grading the tests the last pass on its subject set. Pass 13 set four for the first retro. This stands unless you flip it.",
+   "why": "Step 2 of the skill's pass shape. Passes 10, 11 and 12 skipped it, so nothing they set was ever checked."
   }
  ],
  "questions": [
@@ -6947,6 +7001,33 @@
      "v": "none",
      "label": "Neither",
      "c": "The caption names him, and nothing reaches him."
+    }
+   ]
+  },
+  {
+   "id": "proc-rule-retire",
+   "faces": [
+    "regent"
+   ],
+   "pass": "process pass 13",
+   "q": "When a mechanism replaces a prose rule in CLAUDE.md, the skill or docs/pickup.md, may the retro retire that rule? The council recommends A.",
+   "why_you": "The working rules quote your rulings. The daily run's limits say \"never retire or delete anything\", while transcend and include allows retiring with a reason. The record contradicts itself, and how much of your rulebook the council may prune is yours to say.",
+   "not_before": "No pass had the council's own rules as its subject before pass 13 (2026-10-07). The hostile review counted five prose rules guarding one button.",
+   "options": [
+    {
+     "v": "a",
+     "label": "A, retire as a position (recommended)",
+     "c": "Each retirement goes on the board as a position that stands unless you flip it. The rule moves to an incident log with its reason, so it stays readable but no session pays to reread it."
+    },
+    {
+     "v": "b",
+     "label": "B, ask each time",
+     "c": "Each retirement is a board question you answer. The rules shrink only as fast as you answer."
+    },
+    {
+     "v": "c",
+     "label": "C, never retire",
+     "c": "Rules only grow. The retro fixes with mechanisms and leaves every sentence in place."
     }
    ]
   }
