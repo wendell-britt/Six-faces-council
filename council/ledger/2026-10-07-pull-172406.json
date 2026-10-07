@@ -1,0 +1,41 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T17:24:06.634Z",
+ "answers": {
+  "pod2-title": {
+   "kind": "question",
+   "choice": "aging-parents",
+   "savedAt": "2026-10-07T17:23:48.091Z",
+   "steer": "",
+   "via": "battle:fr-mtgoa-podcast-ep2"
+  },
+  "pod2-thumb-pick": {
+   "kind": "question",
+   "choice": "a",
+   "savedAt": "2026-10-07T17:23:54.808Z",
+   "steer": "",
+   "via": "battle:fr-mtgoa-podcast-ep2"
+  },
+  "pod-move-thumbnails": {
+   "kind": "position",
+   "savedAt": "2026-10-07T17:24:01.342Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-mtgoa-podcast-ep2"
+  },
+  "pod2-description": {
+   "kind": "position",
+   "savedAt": "2026-10-07T17:24:06.634Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-mtgoa-podcast-ep2"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/pod2-title: How Do You Become an Ally to Your Aging Parents? (with Tom Hurlburt)",
+  "questions/pod2-thumb-pick: A, the question: \"How long do you want to feel this?\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
