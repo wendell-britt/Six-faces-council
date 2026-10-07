@@ -12313,6 +12313,18 @@
      "architect"
     ],
     "pass": "ontology game 3"
+   },
+   "oag-clean-up-moves": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:21:39.982Z",
+    "record": "council/ledger/2026-10-07-pull-212139.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "ontology game 3"
    }
   },
   "questions": {
