@@ -9144,6 +9144,20 @@
     "label": "Stands",
     "recorded": "2026-10-07",
     "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
+   },
+   "pod-move-thumbnails": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T17:24:01.342Z",
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
+   },
+   "pod2-description": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T17:24:06.634Z",
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
    }
   },
   "questions": {
@@ -9830,6 +9844,20 @@
     "label": "A. Pull, don't push (recommended)",
     "recorded": "2026-10-07",
     "record": "council/ledger/2026-10-07-board-read-1714.json (six-faces-council)"
+   },
+   "pod2-title": {
+    "decision": "aging-parents",
+    "label": "How Do You Become an Ally to Your Aging Parents? (with Tom Hurlburt)",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T17:23:48.091Z",
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
+   },
+   "pod2-thumb-pick": {
+    "decision": "a",
+    "label": "A, the question: \"How long do you want to feel this?\"",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T17:23:54.808Z",
+    "record": "council/ledger/2026-10-07-pull-172406.json (six-faces-council)"
    }
   },
   "causes": {
