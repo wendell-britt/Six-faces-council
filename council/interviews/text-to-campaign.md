@@ -40,4 +40,29 @@ Started 2026-10-07 in the project thread "Texts into game campaigns".
 2. **The first text and who plays it.** Is the first run Anastasia's coaching transcript, played by Anastasia, or a
    published text (*Mastering the Game of Allyship*, say) played by many?
 
+Answers (Wendell, 2026-10-07, in the thread):
+
+> Texts should product spirits and daemons- they will probably be integrated as we keep developing
+>
+> The first text really should be one of the texts in the bars-engine attempt. Integral Life Practice and Skilled
+> Helper are good first texts
+
+- Step 3 makes both: a text yields spirits and daemons. He expects the two to merge as Sprout develops.
+- The first text is *Integral Life Practice* or *The Skilled Helper*. Default taken: *The Skilled Helper* first,
+  because its three stages and named micro-skills (tuning in, primary and advanced empathy, probing, summarizing,
+  invitations to self-challenge) give step 4 something countable to test. Flip it and *Integral Life Practice* goes
+  first.
+- bars-engine already holds a step 1 draft of both: `.specify/specs/book-integration-analysis/diplomat-books.md`
+  (*The Skilled Helper*, mapped to the Diplomat) and `shaman-books.md` (*Integral Life Practice*, mapped to the
+  Shaman, including the 3-2-1 Shadow Process). `scripts/ingest-books-to-npc-constitutions.ts` makes the same
+  pairing. The quest extractor gave *The Skilled Helper* zero quests from 262,000 words.
+
+### Round 2 (2026-10-07)
+
+1. **Where the campaign lives.** Does each text become a region or arc inside Sprout's world (the village, the
+   forest, its cast), or its own campaign that borrows only Sprout's loop?
+2. **Helped or helping.** *The Skilled Helper* teaches someone to help another person. Does the player learn by
+   being helped (an NPC walks them through the three stages), by helping (the player listens to and probes an NPC,
+   daemon or spirit), or one then the other?
+
 Answers: waiting.
