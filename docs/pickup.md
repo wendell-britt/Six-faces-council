@@ -4,6 +4,26 @@ Wendell, 2026-10-06, in the podcast thread: "What triggers you to check the boar
 Nothing did. His podcast answers sat unread for 25 minutes, and the daily run of 2026-10-04 found 23 saves no session
 had read. Board row `board-auto-pickup` set out the fix; this is how it works.
 
+## Pull, not push (2026-10-07)
+
+Wendell chose `pickup-pull-model` A after the hostile review (council/research/2026-10-07-pickup-hostile-review.md).
+The board's store is the record of his answers. `board/pull.py` copies every save main lacks into `board_data.json`
+and a ledger record, rebuilds, and pushes to main. It takes no judgment, runs the same twice, and any session with
+the repo can run it: the board read a Send starts, the daily run, and any session about to act on a ruling (CLAUDE.md,
+the session-start hook, the skill). A Send that never arrives now costs a delay until the next session pulls; it
+cannot strand an answer. What pull.py lists under `needs work` (a question's pick, an overrule, a steer) is what the
+session acts on.
+
+Two runs at once are safe: resolved entries join by id through the board merge driver, and the ledger file is named
+after the newest save it records, so two runs that see the same saves write the same file. That replaces the
+"a board read that starts while another runs should wait" rule below.
+
+The routines after the change: `trig_01L138vKTaN9MSJoFKRmaBNx` stays as the Send target, and its prompt shrinks to
+"start a board read thread; it pulls, then acts". `trig_01DpRsDM94Cnv2neyDVkBNMb` (the Flirtcraft coordinator) and
+`trig_01Q9mMcVwR4MCqHQzUHwcmiS` (fresh session, no repo) are switched off, which reverses `pickup-where`. The daily
+routine's step 1b runs pull.py itself instead of firing the pickup routine, so the safety net no longer depends on the
+chain it backs up. The sections below are the history of the push design.
+
 ## The Send to Claude button
 
 `board/template.html` shows a bar at the bottom of the board once anything is saved and not yet sent: a row saved and
