@@ -1,0 +1,80 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T18:41:59.070Z",
+ "answers": {
+  "retro1-rhythm-holds": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:31:30.783Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lesson-architect-sources": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:31:39.802Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lesson-challenger-shared-frame": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:31:58.216Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lesson-challenger-gate-release": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:32:09.304Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lesson-regent-purpose-first": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:32:15.915Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lesson-diplomat-plain-names": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:32:24.497Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lesson-sage-evidence-readings": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:32:30.866Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "retro1-lessons-closed": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:32:35.700Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "retro1-retire-pickup-history": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:32:42.300Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ds-daemon-order": {
+   "kind": "question",
+   "choice": "book",
+   "savedAt": "2026-10-07T18:41:44.100Z",
+   "steer": "",
+   "via": "battle:fr-demo"
+  },
+  "ds-intersect": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:41:59.070Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/ds-daemon-order: Your book's journey to the center"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
