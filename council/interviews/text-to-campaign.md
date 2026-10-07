@@ -55,7 +55,9 @@ Answers (Wendell, 2026-10-07, in the thread):
 - bars-engine already holds a step 1 draft of both: `.specify/specs/book-integration-analysis/diplomat-books.md`
   (*The Skilled Helper*, mapped to the Diplomat) and `shaman-books.md` (*Integral Life Practice*, mapped to the
   Shaman, including the 3-2-1 Shadow Process). `scripts/ingest-books-to-npc-constitutions.ts` makes the same
-  pairing. The quest extractor gave *The Skilled Helper* zero quests from 262,000 words.
+  pairing. `library-quest-pipeline` recorded zero quests for *The Skilled Helper*
+  (262,000 words); `scripts/analyze-books-local.ts` later broadened the filter that had skipped the whole book.
+  Wendell, round 2: drafts were created and never approved, so the quests are there.
 
 ### Round 2 (2026-10-07)
 
@@ -64,5 +66,28 @@ Answers (Wendell, 2026-10-07, in the thread):
 2. **Helped or helping.** *The Skilled Helper* teaches someone to help another person. Does the player learn by
    being helped (an NPC walks them through the three stages), by helping (the player listens to and probes an NPC,
    daemon or spirit), or one then the other?
+
+Answers (Wendell, 2026-10-07, in the thread):
+
+> I believe they created quest drafts that didn't make it into approved but quests are there
+>
+> The campaign will live in sprout game world but we want to have the ability to create different game worlds for
+> each book if we so choose.
+>
+> The player learns from helping
+
+- Step 1 has raw material: bars-engine's unapproved quest drafts for *The Skilled Helper*. They live in the
+  database, behind `src/actions/book-quest-review.ts`, and have not been read in this interview yet.
+- The first campaign lives in Sprout's world. The process must also allow a separate world per book.
+- The player learns by helping: the player is the helper, and someone in the world is the one helped.
+
+### Round 3 (2026-10-07)
+
+1. **Who comes for help.** Villagers, spirits, or both? Sprout's spirits already carry a need (Earth needs space,
+   Water something returned, Fire the obstacle named), which reads like Egan's preferred picture.
+2. **Daemons as the helper's own habits.** Egan's helper failures look like Sprout's daemons: the Fixer gives advice
+   before the story is told, the Controller steers, the Skeptic interrogates instead of probing, the Victim takes
+   on the other's distress. Is a daemon encounter in this campaign practice at catching one of those habits in
+   yourself while you help?
 
 Answers: waiting.
