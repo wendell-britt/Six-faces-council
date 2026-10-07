@@ -265,5 +265,6 @@ CLAUDE.md, this file and the board.
 - **Applied:** his board answers on `oag-ea-practice`, `oag-main-order`, `oag-daemon-step` (overruled) and `oag-record`
   (A), in bars-engine #264, a draft that stacks on #263 and targets its branch. The positions the build added stand
   unless he flips them: `oag-open-up-tools`, `oag-open-up-marks`, `oag-wave-first`, `oag-dig-deeper`.
-- **Next:** #263 merges first, then #264 retargets to main and can be marked ready. Pass 3's test 10 (he plays one
-  blocked step against his sketch) is still open on his steps list.
+- **Merged 2026-10-07 23:50 UTC** on his word ("ok let's merge both of those"): #264 into #263's branch, then #263
+  into main, with the 21:06 steers (`oag-clean-up-moves`). Pass 3's test 10 (he plays one blocked step against his
+  sketch) is still open on his steps list.
