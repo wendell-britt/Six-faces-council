@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-07",
+  "pass": "sprout-demo-13",
+  "daemon": "player",
+  "face": "diplomat",
+  "cast": "61 -> 27",
+  "model": null,
+  "tokens": "43630",
+  "report": "2026-10-07-sprout-demo-13-player.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [],
+      "url": "https://www.rpgfan.com/review/final-fantasy-iv/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [],
+      "url": "https://squareenix.fandom.com/wiki/Final_Fantasy_VI",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [],
+      "url": null,
+      "quote": "Decided: the spirit fight",
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}

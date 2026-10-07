@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-07",
+  "pass": "sprout-demo-13",
+  "daemon": "controller",
+  "face": "architect",
+  "cast": "48 -> 57",
+  "model": "sonnet",
+  "tokens": "29173",
+  "report": "2026-10-07-sprout-demo-13-controller.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Drills and errantry raise them [1][2].",
+        "Skill is hit chance and Speed is dodge [1]."
+      ],
+      "url": "https://memoxwashere.altervista.org/monster-rancher-2-dx-complete-guide/",
+      "quote": "six different characteristics: Life, Power, Defense, Skill, Speed and Intelligence.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Drills and errantry raise them [1][2].",
+        "Diet affects Loyalty through Spoil and Fear, tracked separately [2]."
+      ],
+      "url": "https://legendcup.com/mr2trainingplanner.php",
+      "quote": "6 light drills... 4 heavy drills",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Core stats cap at 128 [3]."
+      ],
+      "url": "https://finalfantasy.fandom.com/wiki/Final_Fantasy_VI_stats",
+      "quote": "Strength doubled and added to the Attack stat.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "ATB: a gauge fills, the unit acts, the gauge empties [4]."
+      ],
+      "url": "https://en.wikipedia.org/wiki/Active_Time_Battle",
+      "quote": "An ATB gauge fills up over time, and once filled that unit may act.",
+      "label": "unlabelled"
+    }
+  ]
+}
