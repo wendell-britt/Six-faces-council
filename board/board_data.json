@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06",
+ "updated": "2026-10-07",
  "positions": [
   {
    "id": "build",
@@ -3607,6 +3607,17 @@
    "why": "Your words: 'This is externalized neigong and so the relationship with the spirits have the push pulley Taichi but this is where the cultivation vibe kicks in the most. We want the game to be fun to play and have an avatar the last airbender feel'. design.md already says stances act as elements, the way bending does in Avatar, and that practiced gate levels are permanent. Source: Wendell's chat steer in the WAVE teaching thread, 2026-10-07 00:00 (council/ledger/2026-10-07-demo-round12-chat.json)",
    "auto": true,
    "pass": "sprout demo 12"
+  },
+  {
+   "id": "pickup-mechanism-before-rule",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "pickup review",
+   "auto": true,
+   "pos": "When something in the council's plumbing breaks, the first fix asked for is a mechanism that makes the failure impossible or loud, before any new sentence goes into CLAUDE.md, a routine prompt or docs/pickup.md. A design question that depends on how routines, sessions or permissions behave gets one test firing before it reaches you as a recommendation. This stands unless you flip it.",
+   "why": "Your ask today for root cause, not patches. Five prose rules now guard one button, and pickup-where's recommended option was the exact shape that lost the 23:49 Send, chosen before anyone had tested it. Source: council/research/2026-10-07-pickup-hostile-review.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -6627,6 +6638,35 @@
      "v": "cael",
      "label": "C. Cael",
      "c": "A trainer and secretly one of the brother's refiners teaches the brother's meaning from the start. The difference from the dojo is plainest, but the player hears the forest's way before the story has earned it."
+    }
+   ]
+  },
+  {
+   "id": "pickup-pull-model",
+   "faces": [
+    "challenger",
+    "architect",
+    "regent"
+   ],
+   "pass": "pickup review",
+   "q": "How should your saved board answers reach the record on main?",
+   "why_you": "It reopens your pickup-where ruling (a fresh session per Send), and that ruling is yours to flip. The review found the delivery chain itself is the cause: six breaks in about thirty-six hours, each at a different hop, while every answer sat safe in the board's store the whole time.",
+   "not_before": "The failures only showed up as a pattern after the lost Send of 23:49 on 2026-10-06, and you asked for the root cause today. Meanwhile Send keeps working as patched.",
+   "options": [
+    {
+     "v": "pull",
+     "label": "A. Pull, don't push (recommended)",
+     "c": "Every council session starts by syncing the board's store into main with one script, safe to run twice. Send only means 'start the work my answers open'. A missed Send costs delay, never a stuck answer. Add a claim with an expiry so two reads can't double-record, a daily alarm in project chat that doesn't use the same routine, and switch off the two spare pickup routines, the fresh-session one included."
+    },
+    {
+     "v": "harden",
+     "label": "B. Keep Send as the delivery, harden it",
+     "c": "Send still carries the answers into a board read. Add the claim with an expiry, the separate alarm, and switch off the spare routines. Fewer changes, but a recycled or refused coordinator still strands answers until someone notices."
+    },
+    {
+     "v": "leave",
+     "label": "C. Leave it as patched today",
+     "c": "The routine prompt's new rule (never add a repo, hand off to the coordinator) stands. The next break will be at a hop nobody has patched yet."
     }
    ]
   }
