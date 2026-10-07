@@ -13761,6 +13761,18 @@
      "regent"
     ],
     "pass": "podcast episode 1 harvest"
+   },
+   "pod2-clip-moments": {
+    "decision": "abcd",
+    "label": "A, B, C and D",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T23:50:47.263Z",
+    "record": "council/ledger/2026-10-07-pull-235047.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "podcast ep 2"
    }
   },
   "causes": {
