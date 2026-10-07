@@ -54,16 +54,23 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
    video in YouTube Studio, paste the title and description, upload the picked thumbnail, and publish. A custom
    thumbnail needs a channel with phone verification, so the list says so where that applies.
 6. **Pick and cut the clips.** Added on 2026-10-07, when Wendell asked for episode 1's clips and said "I think we
-   need a strategy for marketing episodes that have been created". The session proposes three clip moments from the
-   transcript, each 10 to 60 seconds, with its start and end time, its words and why it stands on its own, and at
-   least one of them is the guest's. The moments are one question on the board. Once he picks, and the episode's
-   video is in a folder on his Mac that the session can reach, the session cuts each clip there with ffmpeg,
-   vertical at 1080 by 1920, with the words on screen. A clip cut from a Zoom recording keeps Zoom's
-   "Recording Started" chapter, which makes players show the whole meeting's length (episode 1's 19-second clip
-   showed as 48 minutes), so every cut drops it: `ffmpeg -i in.mp4 -map 0:v -map 0:a -map_chapters -1 -c copy
-   out.mp4`, then `ffprobe` checks the length. It writes an Instagram, a Facebook and an X caption for each
-   clip in `podcast/<episode>/clips-and-captions.md`, and a Your steps list that posts them on the rhythm in the
-   project files' `podcast/episode-marketing-plan.md`: the episode on day 0, then one clip on days 2, 5 and 9.
+   need a strategy for marketing episodes that have been created". The session proposes three or four clip moments
+   from the transcript, each with its start and end time, its words and why it stands on its own, and at least one of
+   them is the guest's. Lengths follow board row `pod-clip-length`: one or two of 60 to 90 seconds for the strongest
+   stories, one or two of 30 to 60 seconds for sharp lines, none under 30, and each opens on its strongest line. The
+   moments are one question on the board. Once he picks, and the episode's video is in a folder on his Mac that the
+   session can reach, the session cuts each clip there with ffmpeg, vertical at 1080 by 1920, with no words burned
+   into the video. Wendell, 2026-10-07: "we don't want to have the words on screen. Instragram is going to take care
+   of that." He turns on Instagram's auto captions when posting, so his Your steps list says to, and the captions
+   file carries the clip's words for checking them (row `pod-clip-no-words`). A clip cut from a Zoom recording keeps
+   Zoom's "Recording Started" chapter, which makes players show the whole meeting's length (episode 1's 19-second
+   clip showed as 48 minutes), so every cut drops it: `ffmpeg -i in.mp4 -map 0:v -map 0:a -map_chapters -1 -c copy
+   out.mp4`, then `ffprobe` checks the length. A cut that re-encodes (to reframe to vertical or join two spans) drops
+   it with `-map_chapters -1`, and ends the audio chain with `asetpts=N/SR/TB`, or the audio track reports a fraction
+   of its real length (episode 1's 50-second recut first read as 12 seconds). It writes an Instagram, a Facebook and
+   an X caption for each clip in `podcast/<episode>/clips-and-captions.md`, and a Your steps list that posts them on
+   the rhythm in the project files' `podcast/episode-marketing-plan.md`: the episode on day 0, then one clip on days
+   2, 5 and 9.
 
 ## What it leaves alone
 
