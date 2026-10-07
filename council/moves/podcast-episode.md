@@ -67,10 +67,15 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
    clip showed as 48 minutes), so every cut drops it: `ffmpeg -i in.mp4 -map 0:v -map 0:a -map_chapters -1 -c copy
    out.mp4`, then `ffprobe` checks the length. A cut that re-encodes (to reframe to vertical or join two spans) drops
    it with `-map_chapters -1`, and ends the audio chain with `asetpts=N/SR/TB`, or the audio track reports a fraction
-   of its real length (episode 1's 50-second recut first read as 12 seconds). It writes an Instagram, a Facebook and
-   an X caption for each clip in `podcast/<episode>/clips-and-captions.md`, and a Your steps list that posts them on
-   the rhythm in the project files' `podcast/episode-marketing-plan.md`: the episode on day 0, then one clip on days
-   2, 5 and 9.
+   of its real length (episode 1's 50-second recut first read as 12 seconds). Each clip also gets an Instagram cover,
+   designed like the YouTube thumbnails and never a frame from the video (Wendell, 2026-10-07: "This is essentially
+   working as a youtube thumbnail but for the clips and for instagram"): `council/podcast/render_reel_covers.mjs`
+   renders one 1080 by 1920 cover per clip from a spec beside the episode's files, with the words and drawing inside
+   the middle 3:4 that the profile grid shows, plus a contact sheet. The covers go to him in the thread, so he can
+   save them to his phone and pick each one as the Reel's cover ("Edit cover", then "Add from camera roll"). It
+   writes an Instagram, a Facebook and an X caption for each clip in `podcast/<episode>/clips-and-captions.md`, and a
+   Your steps list that posts them on the rhythm in the project files' `podcast/episode-marketing-plan.md`: the
+   episode on day 0, then one clip on days 2, 5 and 9.
 
 ## What it leaves alone
 
