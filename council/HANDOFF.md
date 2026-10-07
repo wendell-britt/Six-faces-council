@@ -107,12 +107,8 @@ CLAUDE.md, this file and the board.
 - **Send works again** (2026-10-06 23:24 UTC, on Wendell's word in chat): the board declares `db` and `mcp`
   (Claude Code Remote, `fire_trigger`). Republish without `capabilities` so the grant carries forward.
   `PICKUP_TRIGGER` is `trig_01L138vKTaN9MSJoFKRmaBNx`, which wakes the council project's coordinator.
-- **The fresh-session routine exists but is not in use:** the daily session made
-  `trig_01Q9mMcVwR4MCqHQzUHwcmiS` (2026-10-06 23:30 UTC, outside any project). Its environment shows no repository,
-  and the first daily routine failed the same way, so `PICKUP_TRIGGER` stays on `trig_01L138vKTaN9MSJoFKRmaBNx`,
-  which Wendell's Send reached at 23:26. Once Wendell attaches wendell-britt/six-faces-council to that routine on its
-  claude.ai page, fire it once with nothing unrecorded, then swap the id in `PICKUP_TRIGGER` and docs/pickup.md.
-  The daily routine's step 1b now reads `PICKUP_TRIGGER`, so it follows the swap.
+- **Closed 2026-10-07:** the fresh-session routine `trig_01Q9mMcVwR4MCqHQzUHwcmiS` is switched off and the pickup
+  moved to pull (see "from the pickup hostile review" below). No repo needs attaching and no id needs swapping.
 - **Work the answers begin:** `wave-acknowledge-turn` overruled (steer: a trigram move is the acknowledgement,
   welcoming is listening) for the WAVE thread; `oag-faces-names` chose plain words, steer: a popup page per face,
   for the ontology game thread.
