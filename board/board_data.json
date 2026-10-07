@@ -3607,6 +3607,110 @@
    "why": "Your words: 'This is externalized neigong and so the relationship with the spirits have the push pulley Taichi but this is where the cultivation vibe kicks in the most. We want the game to be fun to play and have an avatar the last airbender feel'. design.md already says stances act as elements, the way bending does in Avatar, and that practiced gate levels are permanent. Source: Wendell's chat steer in the WAVE teaching thread, 2026-10-07 00:00 (council/ledger/2026-10-07-demo-round12-chat.json)",
    "auto": true,
    "pass": "sprout demo 12"
+  },
+  {
+   "id": "battle-face-off-screen",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pos": "The battle looks like a Super NES Final Fantasy battle: the spirit on the left, the traveler's sprite on the right facing it, one window along the bottom and one message line at the top. The window shows the command list and the traveler's HP and mana. The spirit shows no numbers; its look and its push text show how charged it is. This stands unless you flip it.",
+   "why": "Your words: 'a battle screen in the style of final fantasy snes games where the player sprite is facing off against the spirit'. design.md's SNES profile already sets the screen. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "battle-four-commands",
+   "faces": [
+    "architect",
+    "diplomat",
+    "regent"
+   ],
+   "pos": "The command list holds at most four commands: Fight, Magic, Listen and Item. Listen is Welcome and works like Final Fantasy's Libra: the first use shows the spirit's stance and feeling, the second its coming weather. Hold appears in place of the list only after a right Magic answer. If you answer B on battle-fight-and-magic, Fight leaves the list. This stands unless you flip it.",
+   "why": "Your words: 'the user interface is a bit much'. Final Fantasy's own menu is four short commands. wave-welcome-listen and wave-seize-validate keep their rules; only where they appear changes. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "battle-hidden-first",
+   "faces": [
+    "diplomat",
+    "architect",
+    "shaman"
+   ],
+   "pos": "A new player's first real fight shows three commands (Fight, Magic, Listen) and two moves under Magic. Hidden at first: choosing a stance (the traveler stands in their channel's stance until Master Yun teaches Change stance, which then sits inside Magic), the corner moves, the hold bar until a right answer opens it, the Witness Book (opened after the fight) and the Chinese names (Witness Book only). This replaces the on-screen stance row in wave-straight-first; the teaching order stands. This stands unless you flip it.",
+   "why": "Your words: 'It's still a bit too much to understand for new people'. The Player daemon's cut list asks for the same. The first real fight is not a one-button fight, because wave-taught-fight already teaches one input at a time. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "battle-turns",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pos": "The battle stays turn-based, one action each, with the spirit's wind-up shown before the traveler chooses. The demo has no Active Time Battle clock. This stands unless you flip it.",
+   "why": "A clock adds a second thing to read on a phone screen that is already too much, and design.md keeps complexity down. The build already works this way. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "magic-is-the-alchemy",
+   "faces": [
+    "shaman",
+    "architect",
+    "diplomat"
+   ],
+   "pos": "The Magic menu holds emotional alchemy. Each entry is a move by its English name (Sky Lift, Earth Yield and the rest), costs mana the Well lends, and answers the spirit's weather. A right answer sends the push into emptiness; holding writes the Witness Book page; letting go releases or integrates. WAVE is the order the menu teaches: Listen, answer, Hold, Let go. This stands unless you flip it.",
+   "why": "Your words: 'have the wuxing emotional alchemy be the magic system'. Every WAVE row that stood (wave-trigram-moves, wave-welcome-listen, wave-seize-validate, wave-move-names) carries over. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "magic-from-teachers",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pos": "Moves arrive with people, as magic arrives with Rosa and Rydia in Final Fantasy IV. Master Yun teaches Listen and the four straight moves, then Hold and Let go at the strip edge. Spirits teach the four corner moves. Each village's refiner teaches that village's style as a stance in Act II. Integrated daemons give their gift moves. Each teacher names the feeling a move meets before its rule. This stands unless you flip it.",
+   "why": "Your words: 'have the player learn the moves from various characters'. The record already names Yun (wave-teacher), the corners from spirits (wave-corners-from-spirits), the five villages' styles (design.md) and gift moves (wave-integrate-ladder). Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "magic-grows",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pos": "The magic grows four ways, all earned in play. Practice raises a move's level from 1 to 5, and a higher level shows a bigger qi effect. Forest ranks give the keys that open a village's stream on the grid. Grid branches unlock deeper moves, paid by points and inner demons' spoils. Integration deepens a daemon's gift. Nothing is bought. This stands unless you flip it.",
+   "why": "Your words: 'a magic system that grows over time'. design.md already decides gate levels by practice, forest ranks, grid branches that unlock moves, and that skill is bought only with skillful play. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "spirit-five-stats",
+   "faces": [
+    "architect",
+    "challenger",
+    "diplomat"
+   ],
+   "pos": "Every spirit and daemon has five stats: HP, Power (how hard its push lands), Guard (how much Fight it shrugs off), Magic (how strong its weather is and how well it resists Magic) and Speed (who acts first). Its element is its type. Each element grows one stat fastest: Earth HP, Fire Power, Metal Guard, Water Magic, Wood Speed. Stats show on the Witness Book page and an ally's status screen, never in the fight. Names and numbers are drafts. This stands unless you flip it.",
+   "why": "Your question: 'What stats to spirits have'. The Controller daemon's research proposed five; design.md says everything teaches the cycle. Today every daemon has the same placeholder numbers (HP 16), so none differ. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
+  },
+  {
+   "id": "spirit-growth-by-training",
+   "faces": [
+    "architect",
+    "shaman",
+    "regent"
+   ],
+   "pos": "Allies grow as Monster Rancher monsters do, by how you train them. Sparring in the ring is the drill: each spar trains one stat you pick, and fighting other spirits in the forest raises level. Work never raises a stat. Satisfaction does the job of Monster Rancher's loyalty: sparring that listens raises it, sparring by Fight alone lowers it. No lifespan and no death; a neglected ally steps back. This stands unless you flip it.",
+   "why": "Your words: 'monster rancher can be used for inspiration'. design.md already decides that spirits grow by sparring and never by working, and already saves each ally's level and satisfaction. Source: /mnt/project-files/demo/battle-magic-pass.md (fr-demo round 13)",
+   "auto": true,
+   "pass": "sprout demo 13"
   }
  ],
  "questions": [
@@ -6627,6 +6731,34 @@
      "v": "cael",
      "label": "C. Cael",
      "c": "A trainer and secretly one of the brother's refiners teaches the brother's meaning from the start. The difference from the dojo is plainest, but the player hears the forest's way before the story has earned it."
+    }
+   ]
+  },
+  {
+   "id": "battle-fight-and-magic",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "sprout demo 13",
+   "q": "Should the battle have a plain Fight command beside the alchemy?",
+   "why_you": "You named this as your own struggle, and it decides what the battle is. A weapon adds a rule beside design.md's Decided spirit fight, where stances act as elements. The record holds the rules around it but not your preference. The answer decides whether the Fight command, a staff sprite and a three-way bot test get built.",
+   "not_before": "Your steer to make the battle a Final Fantasy battle with a regular attack came today, 2026-10-07, after playing the taught fight.",
+   "options": [
+    {
+     "v": "staff",
+     "label": "A. Fight with a hunter's staff, alchemy as Magic (recommended)",
+     "c": "One staff at the strip, none sold in the demo. Fight always lands and costs nothing, but the spirit's push lands back; only Magic listens, holds and integrates. Reads as Final Fantasy from turn one. Ships only if Fight spam loses to full WAVE in the bot test."
+    },
+    {
+     "v": "magic-only",
+     "label": "B. Magic only, in Final Fantasy's menu",
+     "c": "No Fight. The first command is Sky Lift, taught by Yun, and it always lands. Every action stays alchemy and the anchor stands as written, but a new player has no plain button to lean on."
+    },
+    {
+     "v": "gear",
+     "label": "C. Fight with weapons as gear",
+     "c": "Swords and staves with stats, bought and found, as in Final Fantasy. Most familiar and the most to build. Bought weapons would lapse at the exile like settlement talismans, and they compete with talismans as the loadout."
     }
    ]
   }
