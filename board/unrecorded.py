@@ -1,4 +1,7 @@
-"""List the answers Wendell saved on the board that main has not recorded.
+"""Superseded by board/pull.py (pickup-pull-model, 2026-10-07), whose report mode prints the same list and which records
+it. Kept because older routine prompts still name it.
+
+List the answers Wendell saved on the board that main has not recorded.
 
 The daily run of 2026-10-04 found 23 saves no session had read (council/research/2026-10-04-saved-but-never-recorded.md);
 two of them should have merged pull requests. sync_board.py brings the page's rows to main but never reads the saves.

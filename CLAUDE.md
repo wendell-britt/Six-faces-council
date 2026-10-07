@@ -47,6 +47,9 @@ projects more effectively between that and Jev we can save a lot of tokens"
 ## Where the rest lives
 
 - The council's skill: `.claude/skills/six-faces/SKILL.md`. The pipeline: `council/pipeline.yaml`.
+- Before acting on any ruling, pull the board: save its store with ArtifactData and run `python3 board/pull.py
+  <dir> --push`. Saved answers reach main this way, from any session, safe to run twice; the Send button only asks
+  for the work to start (Wendell, `pickup-pull-model`, 2026-10-07; docs/pickup.md).
 - Board data, ledger records and lessons are written on main only. Rows reach main through `board/sync_board.py`
   (see docs/merging.md), which also brings over anything the live page has that main lacks; a board-only pull request
   merges without the label (Wendell, 2026-10-04). `council/faces.yaml` changes only by his ruling.
