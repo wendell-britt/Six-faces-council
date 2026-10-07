@@ -210,4 +210,24 @@ Answers (Wendell, 2026-10-07, in the thread):
    the daemon translation table and the spirits (step 3). For each, who writes the first draft (a model, Wendell,
    or the author), and who checks it before it goes into the game?
 
+Answers (Wendell, 2026-10-07, in the thread):
+
+> The model writes I validate and if we have access to the writer (which we won't especially for public domain and
+> free texts which this is designed to ingest) we can get their final approval. The final approval is a way to pitch
+> to authors deals for licensing
+
+- A model writes every step's first draft. Wendell validates it.
+- When the author can be reached, the author gives final approval. Usually they can't be: the process is designed
+  to ingest public domain and free texts.
+- Author approval doubles as the pitch for a licensing deal.
+- Tension to resolve: the two first texts, *The Skilled Helper* and *Integral Life Practice*, are in copyright,
+  and the process is designed for public domain and free texts.
+
+### Round 8 (2026-10-07)
+
+1. **The first text and copyright.** Does *The Skilled Helper* run as a private test until there is a licensing
+   deal, or should the first campaign anyone else plays come from a public domain text?
+2. **The first test's size.** Is the first run a thin slice (one milestone, one teacher, one spirit, one daemon's
+   translation, one BAR badge), played through step 4 before the rest of the book is translated?
+
 Answers: waiting.
