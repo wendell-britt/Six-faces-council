@@ -233,3 +233,17 @@ CLAUDE.md, this file and the board.
   Helper*'s introduction or first chapter, run through steps 1 to 4 in Sprout's world.
 - **Unasked:** who validates an outer-world BAR outside a coaching container; what the spec's home repo is (Sprout
   or bars-engine).
+
+## Open on 2026-10-07, from texts-to-campaigns pass 1
+
+- **The steward move is written:** `council/moves/text-to-campaign.md`, from
+  `council/passes/6FACE_PASS_text-to-campaign1_2026-10-07.md` (ledger `council/ledger/2026-10-07-text-to-campaign-pass1.json`).
+  One section at a time, each of the four steps its own thread with one drafting face and one checking face, one file
+  per step, all six at the section's close.
+- **On the board, standing unless he flips them:** `ttc-move`, `ttc-section-unit`, `ttc-two-faces`,
+  `ttc-model-by-step`, `ttc-validate-by-position`, `ttc-files-in-sprout` (answers the spec's home: Sprout),
+  `ttc-slice-bar-validator` (answers the outside-coaching validator for slice one; the general case waits).
+- **Waiting on him:** `ttc-applications`, how his own applications of the text enter step 1.
+- **Next:** once he answers, a new thread runs step 1 on *The Skilled Helper*'s introduction, on Sonnet, and writes
+  `extract.yaml` in Sprout. It needs the introduction's text: the copy uploaded to bars-engine if a session can reach
+  it, or pages he attaches.
