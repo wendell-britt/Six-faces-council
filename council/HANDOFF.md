@@ -73,8 +73,11 @@ CLAUDE.md, this file and the board.
   Podcast Thumbnail Studio is at https://claude.ai/artifact/RAiZ3keBiE6BvDD6YKA9S8 (`pod-thumb-studio`).
 - **Book harvest (2026-10-07, battle `fr-book` round 2):** flirtcraft #12 (draft) adds `book/podcast/episode-01.md`
   (20 ideas, conflicts with the app) and `book/podcast/README.md` (the recipe for the next episode). Questions
-  `book-golds-satisfactions` and `book-permission-remedy` wait on Wendell; `fc-fear-rung-wonder` is a small decks.json
-  fix to build once it stands. Mark #12 ready once he has seen it; it merges by itself after that.
+  `book-golds-satisfactions` and `book-permission-remedy` came back "both" on 2026-10-07; #12 merged the same day.
+  flirtcraft #13 (draft) folds every `fr-book` round 2 answer into `book/OUTLINE.md` (ch 19 satisfactions, new
+  ch 27 relationships and ch 28 where permission is given) and changes fear's gold to wonder in `lib/decks.json`.
+  **Open:** decks.json is generated from the vault, so the vault needs the same four strings (GRAMMAR.md §12g)
+  or the next regeneration brings excitement back.
 - **Cover art (done):** Wendell picked cover B, Two signals, at 20:02 on 2026-10-06, in the flirt red (#ff5a5f to
   #d4003a) his `pod-art-ma` steer asked for. The final file is `/mnt/project-files/podcast/covers/flirtcraft-podcast-cover.jpg`
   (3000x3000), and step 4 of Your steps list `podcast-spotify` names it. The other drafts, `covers.html` and
