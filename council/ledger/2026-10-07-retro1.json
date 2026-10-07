@@ -1,0 +1,1028 @@
+{
+ "date": "2026-10-07",
+ "repo": "six-faces-council",
+ "kind": "retro",
+ "cause": "council-design",
+ "project": "six-faces-council",
+ "record": "council/passes/6FACE_RETRO1_2026-10-07.md",
+ "called_by": "proc-first-retro-by-hand, stood at the board read of 2026-10-07 18:15 UTC; started by the council project coordinator at 18:22 UTC",
+ "convened_by": "council",
+ "invoked_from": "claude-code",
+ "pulled_first": "board/pull.py: every saved answer already recorded",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    7,
+    6,
+    7
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 64,
+   "name": "Almost",
+   "cn": "未濟",
+   "pinyin": "wèi jì",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shows": "You are nearly there, and the last stride is where it gets wet.",
+   "image": "☵ water beneath ☲ fire. Every line sits in the wrong place, and the fire is climbing away from the water.",
+   "situation": "Before completion. Everything is out of position, and the figure is the last of the sixty-four, so the book ends one step short on purpose. The old image is a young fox crossing the ice and wetting its tail at the very end. Care is wanted exactly where the crossing looks finished.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 6,
+    "name": "Divergence",
+    "cn": "訟",
+    "pinyin": "sòng",
+    "lines": [
+     0,
+     1,
+     0,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are going deeper and pushing forward at once, and the two cancel.",
+    "image": "☵ water beneath ☰ heaven. Heaven rises, water sinks. The two halves are travelling apart.",
+    "situation": "Two forces inside one figure heading opposite ways, so the friction here is structural. The counsel is to stop at the halfway point and to decline the great river, because a dispute carried to its end costs more than whatever was in dispute.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    8,
+    9,
+    7
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 61,
+   "name": "Incubation",
+   "cn": "中孚",
+   "pinyin": "zhōng fú",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "What is true here is still inside the shell.",
+   "image": "☱ lake beneath ☴ wind. Two yielding lines at the centre with firm ones closed around them: a hollow held warm.",
+   "situation": "The character shows a bird's claw over its young. The old image is a crane calling in the shade with its young answering, a signal that carries without being aimed anywhere. The counsel says pigs and fishes bring good fortune, which the commentary reads as sincerity reaching even the dullest creature.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 41,
+    "name": "Spending",
+    "cn": "損",
+    "pinyin": "sǔn",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    "shows": "This has a price and you have yet to name it.",
+    "image": "☱ lake beneath ☶ mountain. The lake has been dug deeper so that the mountain can stand higher.",
+    "situation": "Something has been taken from the base and added to the top. The old text asks how the offering should be made and answers that two small bowls will do, since the sacrifice counts by sincerity. Decrease that you choose is a different event from decrease that happens to you.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 2,
+   "name": "Bearing",
+   "cn": "坤",
+   "pinyin": "kūn",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "The whole weight of this is yours, unasked.",
+   "image": "☷ earth beneath ☷ earth. Six broken lines. Every one of them has a gap at the centre.",
+   "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    7,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 31,
+   "name": "Mutuality",
+   "cn": "咸",
+   "pinyin": "xián",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "shows": "The movement here arrived because you stopped.",
+   "image": "☶ mountain beneath ☱ lake. The mountain holds a hollow at its summit; the lake settles into it.",
+   "situation": "Stillness underneath, openness above. Influence runs both ways here only because the lower party stopped moving long enough to be shaped. The classical note is that this works because the young man takes the position beneath the young woman.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    9,
+    7,
+    8
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 49,
+   "name": "Molting",
+   "cn": "革",
+   "pinyin": "gé",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "shows": "A skin is coming off you, and the new one is soft.",
+   "image": "☲ fire beneath ☱ lake. Fire underneath water, two things in one figure that undo each other.",
+   "situation": "The character means hide, the animal skin, and by extension the shedding of one. The old text ties the change to a named day and says belief arrives after the change has happened. A molt gets trusted in retrospect.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 63,
+    "name": "Arrived",
+    "cn": "既濟",
+    "pinyin": "jì jì",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "shows": "This is finished, which is when it starts moving.",
+    "image": "☲ fire beneath ☵ water. Every line in the figure sits in its correct place, with the water above the fire.",
+    "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    7,
+    8,
+    6
+   ],
+   "changing_lines": [
+    6
+   ],
+   "n": 40,
+   "name": "Thaw",
+   "cn": "解",
+   "pinyin": "xiè",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "The knot just loosened, and the window is short.",
+   "image": "☵ water beneath ☳ thunder. The storm has broken and the rain is already coming down.",
+   "situation": "Release after held pressure. The old counsel is unusual in its urgency: if there is somewhere to go, go early; if the going is finished, come back and be quiet. Either way the instruction is speed, because a window a storm opens closes again.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 64,
+    "name": "Almost",
+    "cn": "未濟",
+    "pinyin": "wèi jì",
+    "lines": [
+     0,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "You are nearly there, and the last stride is where it gets wet.",
+    "image": "☵ water beneath ☲ fire. Every line sits in the wrong place, and the fire is climbing away from the water.",
+    "situation": "Before completion. Everything is out of position, and the figure is the last of the sixty-four, so the book ends one step short on purpose. The old image is a young fox crossing the ice and wetting its tail at the very end. Care is wanted exactly where the crossing looks finished.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  }
+ ],
+ "scorecard": {
+  "pass13-test1-pattern": "passed: three patterns repeat (reference-play with his-own-work, one-to-one, gate-before-design)",
+  "pass13-test2-lessons-wait": "due at the next retro; all nine moved to the board",
+  "pass13-test3-rule-lines": "passed: 638 before, 588 after (CLAUDE.md 57, SKILL.md 262, pipeline.yaml 223, docs/pickup.md 46)",
+  "pass13-test4-faces-on-resolve": "holds: nothing recorded since proc-record-face landed"
+ },
+ "patterns": {
+  "reference-play": [
+   "pr-branch-emphasis",
+   "demo-settlement-size",
+   "wave-naming",
+   "wave-acknowledge",
+   "enc-steady-rests"
+  ],
+  "his-own-work": [
+   "wave-acknowledge-turn",
+   "ya-intake",
+   "pod-art-drafts",
+   "pr-act3-sources"
+  ],
+  "one-to-one": [
+   "cave-cycle-roles",
+   "enc-who-carries",
+   "cc-retest-2",
+   "wave-exhale-ends",
+   "enc-inner-moves",
+   "pr-branch-emphasis"
+  ],
+  "gate-before-design": [
+   "mh-scope-only",
+   "mh-gate-zero",
+   "fcm-p8-no-new-features",
+   "fcm-p8-self-test"
+  ],
+  "council-number": [
+   "sd-intervals",
+   "fm-one-row",
+   "mh5-palette-check"
+  ]
+ },
+ "overrules": [
+  {
+   "id": "pipe-steps-page",
+   "recorded": "2026-10-02",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "5",
+   "steer": "I think a tab on this board is quite useful",
+   "patterns": []
+  },
+  {
+   "id": "mh-scope-only",
+   "recorded": "2026-10-03",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "sprout maker 2",
+   "steer": "this is a parallel process, but it's also designed to streamline the playtest that we're doing.",
+   "patterns": [
+    "gate-before-design"
+   ]
+  },
+  {
+   "id": "mh-gate-zero",
+   "recorded": "2026-10-03",
+   "faces": [
+    "regent",
+    "challenger",
+    "sage"
+   ],
+   "pass": "sprout maker 2",
+   "steer": "These tests are a little weenie. I don't quite understand the purpose or how it moves us forward- what blocker is this resolving?",
+   "patterns": [
+    "gate-before-design"
+   ]
+  },
+  {
+   "id": "mh-input-chosen",
+   "recorded": "2026-10-03",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout maker 2",
+   "steer": "This is the highest value thing. Whatever intake we do needs to output something that is VERY useful and directly applicable to th eplayers life. That information doesn't need to be in the game PER SE, but it needs to be present in gameplay enough that when players leave the game- they know how to apply what they learned to real life.",
+   "patterns": []
+  },
+  {
+   "id": "sd-intervals",
+   "recorded": "2026-10-03",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "8",
+   "steer": "Overruled: his ladder, 1 hour to 1 month",
+   "patterns": [
+    "council-number"
+   ]
+  },
+  {
+   "id": "fm-one-row",
+   "recorded": "2026-10-03",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "9",
+   "steer": "I think we should increase the amount over time as a function of how much we trust the agent to pick up useful work on its own and in alignment with ecological token usage. This is essentially a level progression. More skillful agents get more capacity and resource",
+   "patterns": [
+    "council-number"
+   ]
+  },
+  {
+   "id": "mh5-palette-check",
+   "recorded": "2026-10-03",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout maker 5",
+   "steer": "I need to investigate these limits. I’d want to pull screenshots from SNES games and see how this connects to that. My intuition says this might be too strict",
+   "patterns": [
+    "council-number"
+   ]
+  },
+  {
+   "id": "mh5-reserved",
+   "recorded": "2026-10-03",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "sprout maker 5",
+   "steer": "Sounds like these roles need to go through a character creation pipeline to make sure we aren’t doing random nonsense",
+   "patterns": []
+  },
+  {
+   "id": "cave-cycle-roles",
+   "recorded": "2026-10-04",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout story cave",
+   "steer": "This is a bit too strict. I think the game offers different hints based on the read but we want peopel to have a similar experience",
+   "patterns": [
+    "one-to-one"
+   ]
+  },
+  {
+   "id": "cc-what-true",
+   "recorded": "2026-10-04",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout character creation 2",
+   "steer": "We don’t need a mark of history so much as a connection to beauty purpose meaning of the current story pint",
+   "patterns": []
+  },
+  {
+   "id": "fr-belief-readings",
+   "recorded": "2026-10-04",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "feature request move",
+   "steer": "Overruled (after a deferral)",
+   "patterns": []
+  },
+  {
+   "id": "cc-retest-2",
+   "recorded": "2026-10-04",
+   "faces": [
+    "challenger",
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout character creation 3",
+   "steer": "I think what I’m running into is that everyone in the world should",
+   "patterns": [
+    "one-to-one"
+   ]
+  },
+  {
+   "id": "pr-test-result",
+   "recorded": "2026-10-04",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges test",
+   "steer": "I need to know what the implications of this are. We want to steal the scouting structure but we’ll let the games needs decided how many badges. Paper Mario also has a lot of badges as well. And the available badges in BSA is larger than the required amount",
+   "patterns": []
+  },
+  {
+   "id": "pr-act3-sources",
+   "recorded": "2026-10-04",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "sprout ranks and badges 2",
+   "steer": "Let’s call the project a quest. We also want to think about the game in terms of encounters quests adventures and campaigns  \n\nA project would be an adventure (which is a series of quests and encounters) to attain the last rank \n\nThis also allows for post main story progress to continue",
+   "patterns": [
+    "his-own-work"
+   ]
+  },
+  {
+   "id": "pr-grid-built",
+   "recorded": "2026-10-04",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout ranks and badges 4",
+   "steer": "The context is here. The sphere grid works because it acts as a labyrinth not hub and spoke. The path spirals and fractals. We need to do a study of how the sphere grid operates to get a clearer picture of this",
+   "patterns": []
+  },
+  {
+   "id": "pr-branch-emphasis",
+   "recorded": "2026-10-04",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "sprout ranks and badges 4",
+   "steer": "Branches aren’t based on stats like the sphere grid branches unlock moves and the specific build of stats that would support the subtype of the type of character you’re building as you traverse the path",
+   "patterns": [
+    "reference-play",
+    "one-to-one"
+   ]
+  },
+  {
+   "id": "demo-settlement-size",
+   "recorded": "2026-10-06",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout demo 1",
+   "steer": "I think argyra should be bigger. Think saffron city from pokemon. The idea is that there will be MANY NPCs and side quests",
+   "patterns": [
+    "reference-play"
+   ]
+  },
+  {
+   "id": "ya-intake",
+   "recorded": "2026-10-06",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout act zero",
+   "steer": "I think we need to think about domains a bit more. These are what the different channels teach you and flavors their starting village, but the domains should be more aligned with the Allyship domains or the LEnses Domains (which I can provide context on)",
+   "patterns": [
+    "his-own-work"
+   ]
+  },
+  {
+   "id": "enc-who-carries",
+   "recorded": "2026-10-06",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "sprout demo 3",
+   "steer": "I think all the beliefs can be applied to each of the daemons",
+   "patterns": [
+    "one-to-one"
+   ]
+  },
+  {
+   "id": "enc-steady-rests",
+   "recorded": "2026-10-06",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "sprout demo 3",
+   "steer": "This should be more like pokemon battles where the moves do HP to the daemon and each of the moves is an inner move the player can do to get the emotional alchemy effects in themselves. WAVE is a good example of this.",
+   "patterns": [
+    "reference-play"
+   ]
+  },
+  {
+   "id": "oag-wave-depth",
+   "recorded": "2026-10-06",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "ontology game 1",
+   "steer": "I do think we should cap the depth so players don’t get lost in the minutiae. We can have a notice that lets them know they are going in too deep and they might next external support about it and maybe a link to booking a call with me",
+   "patterns": []
+  },
+  {
+   "id": "enc-moves-from-grid",
+   "recorded": "2026-10-06",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout demo 4",
+   "steer": "This is close but a little too clunky. The spirit is there but I want to think more deeply about it",
+   "patterns": []
+  },
+  {
+   "id": "enc-inner-moves",
+   "recorded": "2026-10-06",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 4",
+   "steer": "Not all moves take HP away. I think if we are going to use WAVE as the main loop we should explore what each step does as it connects to the basic integral moves \n\n(Wake up open up clean up grow up and show up )",
+   "patterns": [
+    "one-to-one"
+   ]
+  },
+  {
+   "id": "enc-wave-set",
+   "recorded": "2026-10-06",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "sprout demo 4",
+   "steer": "I think welcome allows the player to see what the opponent actually is. We need a way for a random charge to emerge and by going through the game the players see what type of enemy is emerging\n\nFor instance the acknowledge phase would be where the spirit would get a name\n\nValidate would add it to a record of spirits the player has encountered and is working through like a pokedex \n\nExhale could be release the spirit OR integrate the spirit (express)\n\nI think I want to do a full brainstorm on how these mechanics could work",
+   "patterns": []
+  },
+  {
+   "id": "fcm-p8-no-new-features",
+   "recorded": "2026-10-06",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "friendcraft pass 8",
+   "steer": "We may need to rethink the basic friendcraft moves now that emotional alchemy has been developed and flirtcraft",
+   "patterns": [
+    "gate-before-design"
+   ]
+  },
+  {
+   "id": "fcm-p8-self-test",
+   "recorded": "2026-10-06",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "friendcraft pass 8",
+   "steer": "Ah yess I see the issue. Friendcraft needs more design. It’s the least scoped of the projects. I’d like it to work like flirtcraft and use BARs to track friendship development",
+   "patterns": [
+    "gate-before-design"
+   ]
+  },
+  {
+   "id": "pod-art-drafts",
+   "recorded": "2026-10-06",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast",
+   "steer": "I think it should be more like Mastering Allyship. That’s the most robust one and flirtcraft really hasn’t gotten a design pass yet",
+   "patterns": [
+    "his-own-work"
+   ]
+  },
+  {
+   "id": "wave-naming",
+   "recorded": "2026-10-06",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "sprout demo 5",
+   "steer": "I don’t know how we’d come up with the daemon names or how this would connect in replay ability. It’s an interesting concept built strays too far from what makes pokemon work",
+   "patterns": [
+    "reference-play"
+   ]
+  },
+  {
+   "id": "wave-acknowledge",
+   "recorded": "2026-10-06",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 6",
+   "steer": "I think we should do more research on this. The key is we want it to feel like turn based battle, but we also want the system to generate a spirit in alignment with the emergent charge the player is experiencing",
+   "patterns": [
+    "reference-play"
+   ]
+  },
+  {
+   "id": "wave-acknowledge-turn",
+   "recorded": "2026-10-06",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "sprout demo 8",
+   "steer": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I’m looking for. Specifically. \n\nUsing a move IS acknowledging the spirit welcoming is like listening.",
+   "patterns": [
+    "his-own-work"
+   ]
+  },
+  {
+   "id": "wave-exhale-ends",
+   "recorded": "2026-10-06",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "sprout demo 10",
+   "steer": "Exhale can end a fight as a coup de gras or it offer an “express” move- a way to express the emotional energy that is being worked with",
+   "patterns": [
+    "one-to-one"
+   ]
+  },
+  {
+   "id": "wave-buttons-image-first",
+   "recorded": "2026-10-07",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "sprout demo 11",
+   "steer": "Overruled",
+   "patterns": []
+  }
+ ],
+ "lessons_disposed": {
+  "architect wave-naming, wave-acknowledge, wave-acknowledge-turn": "lesson-architect-sources",
+  "challenger wave-exhale-ends": "lesson-challenger-shared-frame",
+  "regent wave-exhale-ends": "lesson-regent-purpose-first",
+  "diplomat wave-buttons-image-first": "lesson-diplomat-plain-names",
+  "sage fr-belief-readings": "lesson-sage-evidence-readings",
+  "regent board read records every save (2026-10-04)": "retro1-lessons-closed: replaced by board/pull.py",
+  "sage pass 11 entry (no lesson text)": "retro1-lessons-closed: council-reach-trigger carries it"
+ },
+ "not_reached": "collect_lessons.py could not read friendcraft-manuacript, flirtcraft, root-game or emotional-first-aid from this session (GitHub 403 through the proxy); their pending lessons (friendcraft Challenger and Shaman, flirtcraft Regent, per HANDOFF.md) wait for a session that can read them",
+ "positions_posted": [
+  "retro1-rhythm-holds",
+  "lesson-architect-sources",
+  "lesson-challenger-shared-frame",
+  "lesson-challenger-gate-release",
+  "lesson-regent-purpose-first",
+  "lesson-diplomat-plain-names",
+  "lesson-sage-evidence-readings",
+  "retro1-lessons-closed",
+  "retro1-retire-pickup-history"
+ ],
+ "questions_posted": [],
+ "subagent_tokens": 0
+}
