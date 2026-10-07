@@ -11446,6 +11446,102 @@
      "architect"
     ],
     "pass": "sprout demo 14"
+   },
+   "ds-strategies": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:42:39.129Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "steer": "The spirits also have a mandate to destroy the player. Its strategy is how it goes about doing that",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 14"
+   },
+   "ds-two-meetings": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:42:47.494Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "sprout demo 14"
+   },
+   "ds-tiers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:43:00.116Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout demo 14"
+   },
+   "ds-unlock-by-integration": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:43:41.731Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout demo 14"
+   },
+   "ds-element-keyed": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:44:00.852Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout demo 14"
+   },
+   "ds-hunters-watch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:44:14.131Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "sprout demo 14"
+   },
+   "ds-gate-teachers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:44:28.427Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "sprout demo 14"
+   },
+   "ds-pace": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T18:44:39.411Z",
+    "record": "council/ledger/2026-10-07-pull-184439.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "sprout demo 14"
    }
   },
   "questions": {
