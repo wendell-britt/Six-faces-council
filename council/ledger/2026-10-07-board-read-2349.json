@@ -1,0 +1,120 @@
+{
+ "date": "2026-10-07",
+ "read_at": "2026-10-07T14:55:00Z",
+ "battles": [
+  "fr-orient-new-players",
+  "fr-book"
+ ],
+ "repo": "flirtcraft",
+ "kind": "board-read",
+ "answers": {
+  "orient-first-paid-run": {
+   "kind": "question",
+   "choice": "all",
+   "savedAt": "2026-10-06T23:47:30.871Z",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "orient-terms": {
+   "kind": "question",
+   "choice": "subtitles",
+   "savedAt": "2026-10-06T23:47:39.119Z",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "book-oracle-in-print": {
+   "kind": "question",
+   "choice": "names-binds",
+   "savedAt": "2026-10-06T23:49:05.187Z",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "loop-fix-labels": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:47:56.444Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "loop-draw-means-drawn": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:48:01.881Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "loop-one-move": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:48:07.191Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "loop-posture-once": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:48:10.509Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "orient-bridge": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:48:22.055Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "orient-on-your-own": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:48:27.093Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "orient-reflection-to-wall": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:48:33.195Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-orient-new-players"
+  },
+  "book-spine-one-rep": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:49:18.160Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-crafts-service-order": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:49:24.675Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-binds-after-crafts": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:49:29.209Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-part-zero-stories": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:49:37.660Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  },
+  "book-plain-first": {
+   "kind": "position",
+   "savedAt": "2026-10-06T23:49:43.896Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-book"
+  }
+ },
+ "note": "Wendell saved these between 23:47 and 23:49 UTC on 2026-10-06 and pressed Send to Claude. That firing of the pickup routine (trig_01L138vKTaN9MSJoFKRmaBNx) started a fresh session (session_01Q7kmX3qFH2GW6KRBpRwsTN, origin force_run_trigger) instead of reaching the coordinator. The fresh session had no repository, called add_repo, and each add_repo restarted its container, which killed the board read worker; it ran five container epochs between 23:49 and 13:02 and recorded nothing. This read records the saves on 2026-10-07. Every position stood with no steer; each question took the recommended option. The four wave rows saved at 23:30 were recorded by board read 2330, so nothing is recorded twice.",
+ "lessons_pending": [],
+ "next": "Flirtcraft: the first paid run shows all seven screens with one plain sentence each, trigram and Chinese terms as subtitles (fr-orient-new-players build). The book: the Part 0 interview, one story per thread, as fcm-p8b-interview; book/OUTLINE.md keeps cards' names and bind sentences in print, moves stay in the app."
+}

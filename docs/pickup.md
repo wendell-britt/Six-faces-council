@@ -56,3 +56,21 @@ What the first firings showed, 2026-10-06:
 The daily routine (`trig_01F8fDdkjYEeMCfdozj6w3tt`) gets a step 1b: save the store, run `board/unrecorded.py`, and
 if anything is unrecorded, fire the pickup routine and write `pickup/last` with `via: "daily"`. Only the standing
 daily session can change that prompt; the thread asked it to, and it did, on 2026-10-06.
+
+## The lost Send of 2026-10-06 23:49 (fixed 2026-10-07)
+
+The 23:49 Send fired the pickup routine into a fresh session (`session_01Q7kmX3qFH2GW6KRBpRwsTN`, origin
+`force_run_trigger`) rather than the coordinator. That session had no repository, so it called `add_repo`, and adding a
+repository restarts the container, which killed the board read it had started as a worker. It went round that loop for
+five container epochs until 13:02 the next day and recorded nothing. Board read 2349 (2026-10-07) recorded the fifteen
+saves. Two rules follow:
+
+- A session the routine reaches that is not the coordinator never calls `add_repo` and never does the board read
+  itself. It finds the coordinator and passes the message on, or starts a thread, since threads carry the project's
+  repositories. The routine's prompt says so once the coordinator updates it (only the conversation the routine posts
+  into can change its prompt).
+- A board read always runs in a thread, never in a worker of the session the routine fired.
+
+The other failure that night, at 23:31, was the coordinator's auto mode refusing to start a thread on a routine
+firing, because a firing is not Wendell typing. A standing line in the project's instructions that the pickup routine
+may always start a board read thread removes that refusal; Wendell adds it in Project settings.

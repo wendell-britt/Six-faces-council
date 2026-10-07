@@ -154,3 +154,13 @@ CLAUDE.md, this file and the board.
   (`council/ledger/2026-10-07-board-read-0107.json`). Nothing in fr-demo waits on Wendell. Next, in a new thread: the
   WAVE build on sprout #25 with Yun's taught fight, the straight four first, corner unlocks from spirits, the English
   move names and visible qi; the trigram lore goes into design.md as Proposed.
+
+## Open on 2026-10-07, from the board read rerun (board read 2349)
+
+- **Recorded:** the fifteen saves of 2026-10-06 23:47 to 23:49 that the lost Send left (fr-orient-new-players: two
+  questions, seven positions; fr-book: one question, five positions), all on the recommended options
+  (`council/ledger/2026-10-07-board-read-2349.json`). Next for the book: the Part 0 interview, one story per thread.
+  Next for orient: the first paid run shows all seven screens, terms as subtitles under a plain sentence.
+- **Pickup routine:** the coordinator was asked to update its prompt so a fresh session never calls `add_repo`
+  (docs/pickup.md, "The lost Send"). Check with `get_trigger trig_01L138vKTaN9MSJoFKRmaBNx` that the prompt carries
+  that paragraph. Waiting on Wendell: a line in the project instructions pre-authorizing the board read thread.
