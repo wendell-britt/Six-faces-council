@@ -1,0 +1,35 @@
+{
+ "date": "2026-10-07",
+ "read_at": "2026-10-07T17:14:00Z",
+ "kind": "board-read",
+ "repo": "six-faces-council",
+ "answers": {
+  "pickup-pull-model": {
+   "kind": "question",
+   "savedAt": "2026-10-07T17:10:54.382Z",
+   "choice": "pull",
+   "steer": ""
+  },
+  "pickup-mechanism-before-rule": {
+   "kind": "position",
+   "savedAt": "2026-10-07T17:11:04.618Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dy-2026-10-07-show": {
+   "kind": "position",
+   "savedAt": "2026-10-07T17:11:11.517Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steps": {
+  "anastasia-campaign": "steps 1 and 2 ticked at 17:11 and 17:12 UTC: the Zoom transcript is downloaded and attached in the Anastasia's campaign thread of the coaching practice project"
+ },
+ "note": "Wendell saved these at 17:10 to 17:12 UTC and pressed Send. pickup/last was not rewritten by this Send (it still holds the 00:45 rows); the coordinator started this read in a thread. pickup-pull-model took the recommended option, A, which reopens pickup-where: saves are pulled into main by every council session, Send only starts the work.",
+ "done": {
+  "dy-2026-10-07-show": "Pull request #45 had already merged into main (e6274cf) before this read; nothing waits on it."
+ },
+ "lessons_pending": [],
+ "next": "The pull model gets built: board/pull.py from unrecorded.py, a claim with an expiry on pickup/last, a daily alarm in project chat that does not use the pickup routine, and the spare routines trig_01DpRsDM94Cnv2neyDVkBNMb and trig_01Q9mMcVwR4MCqHQzUHwcmiS switched off. The Hostile review of board pickup thread is building it."
+}

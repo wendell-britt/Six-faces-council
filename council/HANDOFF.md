@@ -172,3 +172,4 @@ CLAUDE.md, this file and the board.
   board's store into main first, with a claim and expiry on `pickup/last`, a daily alarm that does not fire the same
   routine, and the spare routines `trig_01DpRsDM94Cnv2neyDVkBNMb` and `trig_01Q9mMcVwR4MCqHQzUHwcmiS` switched off.
   Nothing is built or switched off until he answers. `pickup-mechanism-before-rule` stands unless he flips it.
+- **Answered at board read 1714 (2026-10-07 17:14):** `pickup-pull-model` is A, pull, and `pickup-mechanism-before-rule` stood (`council/ledger/2026-10-07-board-read-1714.json`). The Hostile review of board pickup thread builds it: `board/pull.py`, the claim with an expiry, the separate daily alarm, and the two spare routines switched off. This Send did not rewrite `pickup/last` (it still held the 00:45 rows), which the claim should cover.
