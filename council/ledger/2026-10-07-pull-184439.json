@@ -1,0 +1,68 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T18:44:39.411Z",
+ "answers": {
+  "ds-strategies": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:42:39.129Z",
+   "status": "stands",
+   "steer": "The spirits also have a mandate to destroy the player. Its strategy is how it goes about doing that ",
+   "via": "battle:fr-demo"
+  },
+  "ds-two-meetings": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:42:47.494Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  },
+  "ds-tiers": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:43:00.116Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  },
+  "ds-unlock-by-integration": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:43:41.731Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  },
+  "ds-element-keyed": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:44:00.852Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  },
+  "ds-hunters-watch": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:44:14.131Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  },
+  "ds-gate-teachers": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:44:28.427Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  },
+  "ds-pace": {
+   "kind": "position",
+   "savedAt": "2026-10-07T18:44:39.411Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-demo"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "positions/ds-strategies: Stands (steer: \"The spirits also have a mandate to destroy the player. Its strategy is how it goes about doing that\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
