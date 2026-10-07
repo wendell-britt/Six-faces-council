@@ -3755,6 +3755,28 @@
    "auto": true,
    "pos": "Episode 2's YouTube description, its 20 chapters and the short description for Spotify and Apple Podcasts are drafted from the transcript. They name Tom and his town, as he offered, and leave out his partner's name and his parents' medical details. Three links are placeholders: the Big Mind video, the book and your website. The draft stands unless you flip it or steer it.",
    "why": "The copy is the council's to draft, and it names a person in public, so it waits on you here instead of going out. Tom may want to see it first. Source: project files podcast/ep02-tom-hurlburt/episode-copy.md"
+  },
+  {
+   "id": "pod-promo-rhythm",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "podcast marketing",
+   "auto": true,
+   "pos": "Each episode goes out on day 0 with one post on Instagram, Facebook and X, then one clip on days 2, 5 and 9. Each clip is an Instagram Reel shared to Facebook from the same upload, and posted on X. The guest gets their clips and captions on day 0, and one line goes in the next backer update. After day 9 you note each clip's views, saves and shares, and after three episodes the council changes the plan from those numbers. Episode 1 starts now, from day 2. This stands unless you flip it.",
+   "why": "Your ask today: \"I think we need a strategy for marketing episodes that have been created\". One person posting by hand can keep this rhythm, and there are no numbers yet to plan from. Source: project files podcast/episode-marketing-plan.md; your steps list podcast-ep1-clips"
+  },
+  {
+   "id": "pod-move-clips",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "podcast marketing",
+   "auto": true,
+   "pos": "The podcast episode move gains a sixth step. The council proposes three clip moments from the transcript, at least one of them the guest's, and you pick them here. It then cuts them on your Mac with ffmpeg, vertical with the words on screen, writes the Instagram, Facebook and X captions, and puts the posting on your Your steps list. It never posts and never messages a guest. This stands unless you flip it.",
+   "why": "Episode 1's clips were finished but never posted, and two of the three have no words on screen. Source: council/moves/podcast-episode.md (six-faces-council #48)"
   }
  ],
  "questions": [
@@ -6898,6 +6920,33 @@
      "v": "faces",
      "label": "Put us in it: I will attach a still from the video",
      "c": "The council redraws your pick with you and Tom on the right. It waits until a still arrives in the podcast thread."
+    }
+   ]
+  },
+  {
+   "id": "pod1-isaac-handle",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "podcast marketing",
+   "q": "Should episode 1's Isaac clip invite Isaac as an Instagram collaborator? The council recommends the collab invite.",
+   "why_you": "Tagging or inviting a guest is a message to a person under your name, and you know Isaac. The council does not have his handle, so if you pick a tag, steer with it.",
+   "not_before": "The clip goes out on 2026-10-15 (step 4 of podcast-ep1-clips).",
+   "options": [
+    {
+     "v": "collab",
+     "label": "Invite him as a collaborator (recommended)",
+     "c": "The Reel shows on his profile too once he accepts, so his followers see it."
+    },
+    {
+     "v": "tag",
+     "label": "Tag him only",
+     "c": "He gets a notice and can share it himself."
+    },
+    {
+     "v": "none",
+     "label": "Neither",
+     "c": "The caption names him, and nothing reaches him."
     }
    ]
   }
