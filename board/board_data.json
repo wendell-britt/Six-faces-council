@@ -3831,6 +3831,98 @@
    "auto": true,
    "pos": "Every pass, including a pass about the council itself, opens by grading the tests the last pass on its subject set. Pass 13 set four for the first retro. This stands unless you flip it.",
    "why": "Step 2 of the skill's pass shape. Passes 10, 11 and 12 skipped it, so nothing they set was ever checked."
+  },
+  {
+   "id": "retro1-rhythm-holds",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The first retro found three patterns that repeat across faces and reasons in your 32 overrules, so the retro keeps its rhythm on the daily session's Grow up day. This stands unless you flip it.",
+   "why": "Pass 13's test 1: if the overrules showed no repeating face and reason, the rhythm would be dropped. They do. The retro also caught a lesson that was followed in letter and missed (lesson-challenger-gate-release). Source: council/passes/6FACE_RETRO1_2026-10-07.md (six-faces-council)"
+  },
+  {
+   "id": "lesson-architect-sources",
+   "faces": [
+    "architect"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The Architect gains a lesson from seven of your overrules: look in your own systems first (Root, the Allyship domains, Mastering Allyship), then the game you name, played the way it plays, and invent last. It folds in the three Architect lessons waiting since 2026-10-06. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "Your words: \"strays too far from what makes pokemon work\" (wave-naming), \"we want it to feel like turn based battle\" (wave-acknowledge), \"Think saffron city from pokemon\" (demo-settlement-size), \"Branches aren't based on stats like the sphere grid\" (pr-branch-emphasis), and \"we can use the trigrams as moves\" (wave-acknowledge-turn), with ya-intake and pod-art-drafts pointing to your own work. Source: council/passes/6FACE_RETRO1_2026-10-07.md, Architect (six-faces-council)"
+  },
+  {
+   "id": "lesson-challenger-shared-frame",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The Challenger gains a lesson from six of your overrules: before giving each piece exactly one job, give everyone a shared frame and put the variety inside it. One belief per daemon, every move takes HP, one stat per branch and one garment set per role were all overruled. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "Your words: \"all the beliefs can be applied to each of the daemons\" (enc-who-carries), \"Not all moves take HP away\" (enc-inner-moves), \"we want peopel to have a similar experience\" (cave-cycle-roles), and Exhale as \"a coup de gras or ... an express move\" (wave-exhale-ends). It folds in the Challenger's pending lesson from wave-exhale-ends. Source: council/passes/6FACE_RETRO1_2026-10-07.md, Challenger (six-faces-council)"
+  },
+  {
+   "id": "lesson-challenger-gate-release",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The Challenger gains a lesson, with the Regent: gate a release on a test, never the design work that comes before it. Three overrules held design behind a test, and the third came after the lessons of 2026-10-03 had been folded. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "Your words: \"this is a parallel process\" (mh-scope-only), \"These tests are a little weenie\" (mh-gate-zero), and \"We may need to rethink the basic friendcraft moves\" (fcm-p8-no-new-features), with \"Friendcraft needs more design\" on fcm-p8-self-test. Friendcraft pass 8 obeyed both earlier lessons in letter. Source: council/passes/6FACE_RETRO1_2026-10-07.md, Challenger (six-faces-council)"
+  },
+  {
+   "id": "lesson-regent-purpose-first",
+   "faces": [
+    "regent"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The Regent gains a lesson from your overrule of wave-exhale-ends: a rule that names only when a move ends the fight leaves out what the move is for. Write what each move does for the player before its stop condition. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "Your words: \"Exhale can end a fight as a coup de gras or it offer an express move- a way to express the emotional energy that is being worked with\". Pending since 2026-10-06 in council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+  },
+  {
+   "id": "lesson-diplomat-plain-names",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The Diplomat gains a lesson from your steer on wave-buttons-image-first: putting the foreign name second is not translation. A move's name on the play screen is in the player's own language, and the source name is lore they can look up. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "Your words: \"we still need to do translate work so that the moves mean something to America players who aren't studying Chinese\". Pending since 2026-10-07 in council/ledger/2026-10-07-demo-round12-chat.json (six-faces-council)"
+  },
+  {
+   "id": "lesson-sage-evidence-readings",
+   "faces": [
+    "sage"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The Sage gains a lesson from fr-belief-readings, which you overruled with no steer after deferring it: new production readings of the six beliefs come with evidence from a run, not from the retired Appendix G alone. It goes into faces.yaml at your next board read unless you flip it.",
+   "why": "The only one of the 32 overrules with no steer, so the lesson is the council's reading of it, marked as such. Pending since 2026-10-04 in council/ledger/2026-10-04-feature-request-scene-staging-round-1.json (six-faces-council)"
+  },
+  {
+   "id": "retro1-lessons-closed",
+   "faces": [
+    "regent"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "Two waiting lessons close without going into faces.yaml. The Regent's \"a board read records every save\" is now board/pull.py, a mechanism. The Sage's pass 11 entry holds your words (\"If you need rulings from me this should've gone to the council?\") and no lesson, and council-reach-trigger already carries it. This stands unless you flip it.",
+   "why": "pickup-mechanism-before-rule stood: a mechanism comes before a sentence. Source: council/passes/6FACE_RETRO1_2026-10-07.md, Regent (six-faces-council)"
+  },
+  {
+   "id": "retro1-retire-pickup-history",
+   "faces": [
+    "regent"
+   ],
+   "pass": "retro 1",
+   "auto": true,
+   "pos": "The push design's history leaves docs/pickup.md for a new incident log, docs/incidents.md, which no session is told to read. pickup.md keeps the pull model, the Send button and the routine. The four rule files go from 638 lines to 588. This stands unless you flip it.",
+   "why": "Your answer A on proc-rule-retire: a rule a mechanism replaced is retired as a position and moves to an incident log. The pull model replaced every rule in those sections, including \"a board read that starts while another runs should wait\". Source: council/passes/6FACE_RETRO1_2026-10-07.md, Regent (six-faces-council)"
   }
  ],
  "questions": [
