@@ -1,0 +1,15 @@
+{
+ "date": "2026-10-07",
+ "kind": "chat-ruling",
+ "answers": {
+  "pod-clip-covers": {
+   "kind": "position",
+   "savedAt": "2026-10-07T21:55:59Z",
+   "status": "stands",
+   "steer": "don't want a frame from the video for the cover photo. This is essentially working as a youtube thumbnail but for the clips and for instagram"
+  }
+ },
+ "steer": null,
+ "needs_work": [],
+ "note": "Wendell's ruling in the episode 1 recut thread, recorded as a board answer per CLAUDE.md. Applied the same day: three designed covers for episode 1's clips; move step 6 and render_reel_covers.mjs (#58); Your steps list podcast-ep1-clips names each cover."
+}
