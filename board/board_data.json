@@ -9786,9 +9786,9 @@
    },
    "fcm-p8d-buy": {
     "decision": "buy",
-    "label": "Buy it on these terms",
-    "recorded": "2026-10-06",
-    "record": "council/ledger/2026-10-06-board-read-2003.json (six-faces-council)"
+    "label": "Bought: Wendell bought friendcraft.app in Vercel on 2026-10-07",
+    "recorded": "2026-10-07",
+    "record": "friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json"
    },
    "pod-cover-pick": {
     "decision": "b-two-signals",
