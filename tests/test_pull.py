@@ -19,7 +19,7 @@ spec.loader.exec_module(pull)
 
 DATA = {
     "updated": "2026-10-06",
-    "positions": [{"id": "p-old"}, {"id": "p-new"}],
+    "positions": [{"id": "p-old"}, {"id": "p-new", "faces": ["architect", "sage"], "pass": "pass 13"}],
     "questions": [{"id": "q-one", "options": [{"v": "a", "label": "A. Apples (recommended)"},
                                               {"v": "b", "label": "B. Bananas"}]},
                   {"id": "q-many", "options": [{"v": "x", "label": "Wonder"}, {"v": "y", "label": "Bliss"}]},
@@ -63,6 +63,13 @@ class PullTest(unittest.TestCase):
         self.assertIn("p-new", led["answers"])
         self.assertTrue(any("p-new" in w for w in led["needs_work"]))
         self.assertIsNone(self.pull(), "a second run must find nothing")
+
+    def test_resolved_entry_carries_faces_and_pass(self):
+        # proc-record-face, 2026-10-07: an overrule must be traceable to the face that made the position
+        self.save("positions", "p-new", {"status": "overrule", "savedAt": "2026-10-07T10:00:00Z"})
+        self.pull()
+        e = self.data["resolved"]["positions"]["p-new"]
+        self.assertEqual((e["faces"], e["pass"]), (["architect", "sage"], "pass 13"))
 
     def test_flip_after_recording_is_caught(self):
         self.save("positions", "p-old", {"status": "overrule", "savedAt": "2026-10-07T09:00:00Z"})
