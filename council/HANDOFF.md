@@ -46,6 +46,14 @@ CLAUDE.md, this file and the board.
 - friendcraft-manuacript #28 holds the pass, the ledger records and the decision-log entry (rulings 14 and 39
   closed).
 
+## Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)
+
+- **The podcast episode move** merged in #47: `council/moves/podcast-episode.md` and
+  `council/podcast/render_thumbnails.mjs`. Every episode of either show runs it.
+- **Episode 2 with Tom Hurlburt** waits on `pod2-title` and `pod2-thumb-pick`. The copy and the drafts are in the MTGOA
+  project files under `podcast/ep02-tom-hurlburt/`. If he picks "Put us in it", redraw his pick with a still from the
+  video as `photo` in `spec.json`. Then Your steps list `podcast-ep2-youtube` takes it to YouTube.
+
 ## Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)
 
 - **Podcast page:** flirtcraft #9 merged (b5284f5). The player and the Listen on Spotify button go in by setting
