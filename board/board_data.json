@@ -11644,6 +11644,88 @@
      "challenger"
     ],
     "pass": "sprout demo 14"
+   },
+   "ttc-move": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:38:05.058Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "texts to campaigns 1"
+   },
+   "ttc-section-unit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:38:11.508Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "texts to campaigns 1"
+   },
+   "ttc-two-faces": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:38:16.434Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "texts to campaigns 1"
+   },
+   "ttc-model-by-step": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:38:24.602Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "texts to campaigns 1"
+   },
+   "ttc-validate-by-position": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:38:28.331Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat",
+     "regent"
+    ],
+    "pass": "texts to campaigns 1"
+   },
+   "ttc-files-in-sprout": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:38:35.413Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "texts to campaigns 1"
+   },
+   "ttc-slice-bar-validator": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:38:52.836Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "texts to campaigns 1"
    }
   },
   "questions": {
@@ -12919,6 +13001,17 @@
      "regent"
     ],
     "pass": "sprout demo 14"
+   },
+   "ttc-applications": {
+    "decision": "steer",
+    "label": "The model drafts, you add your applications when you validate",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T19:37:57.917Z",
+    "record": "council/ledger/2026-10-07-pull-193852.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "texts to campaigns 1"
    }
   },
   "causes": {

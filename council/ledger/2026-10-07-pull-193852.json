@@ -1,0 +1,60 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T19:38:52.836Z",
+ "answers": {
+  "ttc-applications": {
+   "kind": "question",
+   "choice": "steer",
+   "savedAt": "2026-10-07T19:37:57.917Z",
+   "steer": ""
+  },
+  "ttc-move": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:38:05.058Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-section-unit": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:38:11.508Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-two-faces": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:38:16.434Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-model-by-step": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:38:24.602Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-validate-by-position": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:38:28.331Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-files-in-sprout": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:38:35.413Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-slice-bar-validator": {
+   "kind": "position",
+   "savedAt": "2026-10-07T19:38:52.836Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/ttc-applications: The model drafts, you add your applications when you validate"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
