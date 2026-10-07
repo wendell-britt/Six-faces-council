@@ -8789,6 +8789,78 @@
     "label": "Stands",
     "recorded": "2026-10-07",
     "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+   },
+   "loop-fix-labels": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "loop-draw-means-drawn": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "loop-one-move": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "loop-posture-once": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "orient-bridge": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "orient-on-your-own": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "orient-reflection-to-wall": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "book-spine-one-rep": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "book-crafts-service-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "book-binds-after-crafts": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "book-part-zero-stories": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "book-plain-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
    }
   },
   "questions": {
@@ -9451,6 +9523,24 @@
     "label": "A. Master Yun",
     "recorded": "2026-10-07",
     "record": "council/ledger/2026-10-07-board-read-0107.json (six-faces-council)"
+   },
+   "orient-first-paid-run": {
+    "decision": "all",
+    "label": "A, All seven from the first run, each new screen with one plain sentence said once",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "orient-terms": {
+    "decision": "subtitles",
+    "label": "A, Yes, as subtitles under a plain sentence",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
+   },
+   "book-oracle-in-print": {
+    "decision": "names-binds",
+    "label": "A, Every card's name and bind sentence; the moves, the draw and the ledger stay in the app",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-board-read-2349.json (six-faces-council)"
    }
   },
   "causes": {
