@@ -146,3 +146,7 @@ CLAUDE.md, this file and the board.
   `/mnt/project-files/demo/wave-teaching-pass.md`; ledger `council/ledger/2026-10-06-demo-round11-pass.json`.
 - **Next:** after the read, the WAVE build on sprout #25 (draft) adds the taught fight, the gate ladder, the corner
   unlocks and the image-first buttons, then reruns the bot test with the straight four only. Sprout #26 is closed.
+- **Round 12 (chat steer, 2026-10-07 00:00):** `wave-buttons-image-first` overruled ("translate work so that the moves
+  mean something to America players"). Positions `wave-move-names` (Sky Lift, Earth Yield, River Fill, Flame Follow,
+  Wind Draw, Lake Gather, Thunder Split, Mountain Stand) and `wave-qi-made-visible` (neigong turned outward, bending
+  feel) stand unless he flips them. Ledger `council/ledger/2026-10-07-demo-round12-chat.json`.

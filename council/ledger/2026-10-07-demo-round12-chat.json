@@ -1,0 +1,32 @@
+{
+ "date": "2026-10-07",
+ "battle": "fr-demo",
+ "round": 12,
+ "repo": "sprout",
+ "kind": "chat-ruling",
+ "note": "Wendell answered in the WAVE teaching thread's chat; a chat answer counts as a ruling. It steers wave-buttons-image-first (the Chinese gate names still read as foreign) and adds the neigong and Avatar frame. Round 12 positions carry it.",
+ "answers": {
+  "wave-buttons-image-first": {
+   "kind": "position",
+   "via": "chat",
+   "status": "overrule",
+   "steer": "Ok but we still need to do translate work so that the moves mean something to America players who aren’t studying Chinese \n\nThis is externalized neigong and so the relationship with the spirits have the push pulley Taichi but this is where the cultivation vibe kicks in the most. \n\nWe want the game to be fun to play and have an avatar the last airbender feel",
+   "at": "2026-10-07T00:00:35Z"
+  }
+ },
+ "positions": [
+  "wave-move-names",
+  "wave-qi-made-visible"
+ ],
+ "questions": [],
+ "lessons_pending": [
+  {
+   "face": "diplomat",
+   "date": "2026-10-07",
+   "source": "wave-buttons-image-first steered in chat, fr-demo round 11",
+   "wendell": "we still need to do translate work so that the moves mean something to America players who aren’t studying Chinese",
+   "lesson": "Putting the foreign name second is not translation. A move's name on the play screen is in the player's own language; the source name is lore the player can look up."
+  }
+ ],
+ "next": "The WAVE build on sprout #25 uses the English move names and shows qi as the move's force, after the round 11 and 12 read."
+}

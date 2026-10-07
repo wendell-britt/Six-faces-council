@@ -8747,6 +8747,12 @@
     "label": "Overruled",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
+   },
+   "wave-buttons-image-first": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-07",
+    "record": "council/ledger/2026-10-07-demo-round12-chat.json (six-faces-council)"
    }
   },
   "questions": {
@@ -10171,6 +10177,14 @@
       "wave-corners-from-spirits",
       "wave-gates-in-the-world",
       "wave-buttons-image-first"
+     ]
+    },
+    {
+     "n": 12,
+     "questions": [],
+     "positions": [
+      "wave-move-names",
+      "wave-qi-made-visible"
      ]
     }
    ]
