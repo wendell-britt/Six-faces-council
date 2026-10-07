@@ -141,4 +141,29 @@ Answers (Wendell, 2026-10-07, in the thread):
 2. **Holes (step 2).** Is a hole a skill the text assumes but never teaches? Egan, for one, assumes the helper can
    manage their own reactions while listening. Sprout's core loop would fill that with emotional alchemy.
 
+Answers (Wendell, 2026-10-07, in the thread):
+
+> A campaign taught the technique of they are able to use it in the game context AND d they are able Tod
+> demonstrate mastery by using the techniques in the outer world and proving it (merit badge style)
+>
+> 10) yes. Emotional alchemy and removing inner blocks is the fundamental technique that I believe is the reason
+> many people don't out personal development books into practice
+
+- Proof needs both: the player uses the technique in the game, and then shows mastery in the outer world with
+  proof, merit badge style. In-game success alone does not count.
+- Sprout's merit badges today come only from in-game counters (`pr-merit-from-practice`). An outer-world badge
+  is new and needs a way to verify it.
+- A hole is a skill the text assumes and never teaches. The main hole in most texts is emotional alchemy and
+  removing inner blocks, which Wendell believes is why people don't put personal development books into practice.
+  Sprout's core loop fills it. This is the process's thesis: every campaign carries the text's techniques plus the
+  emotional alchemy needed to actually use them.
+
+### Round 6 (2026-10-07)
+
+1. **Who verifies an outer-world badge?** The player's own word with a written reflection (a BAR in bars-engine),
+   a witness such as the person they helped, or a reviewer such as the author or a coach?
+2. **"Beliefs" in step 1.** Are they the author's beliefs the player comes to hold (Egan's "the client is in the
+   driver's seat"), or the limiting beliefs that block practice, which would become daemons and inner blocks? Or
+   both, sorted into two lists?
+
 Answers: waiting.
