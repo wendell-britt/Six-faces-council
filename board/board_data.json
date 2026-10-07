@@ -12239,6 +12239,69 @@
      "architect"
     ],
     "pass": "podcast episode 1 harvest"
+   },
+   "pod-clip-length": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:01:34.681Z",
+    "record": "council/ledger/2026-10-07-pull-210618.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "podcast marketing"
+   },
+   "oag-dig-deeper": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:01:56.423Z",
+    "record": "council/ledger/2026-10-07-pull-210618.json (six-faces-council)",
+    "steer": "The buttons need to be more ergonomic. But yes this stands",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-wave-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:02:31.218Z",
+    "record": "council/ledger/2026-10-07-pull-210618.json (six-faces-council)",
+    "steer": "The beginning wave is an opening up move that allows what’s alive for the user to emerge. After that first wave we can have the player dig deeper into what they want to work on specifically",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-open-up-marks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:02:42.303Z",
+    "record": "council/ledger/2026-10-07-pull-210618.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "ontology game 3"
+   },
+   "oag-open-up-tools": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:06:18.301Z",
+    "record": "council/ledger/2026-10-07-pull-210618.json (six-faces-council)",
+    "steer": "This is a good first start but it is a sign that we need to continue work on operationalizing the emotional alchemy moves \n\nThe EA move for each of the channels is a clean up move as clean up moves are for dissolving and Alchemizing blocks\n\nFire transforms and burns away (anger)\nWater releases and flows and dissolves (sadness)\nJoy and happy apples is right on board. The general moves for happy apples can apply to all the channels as an opening up move \n\nMetal is about getting clarity and sharpening awareness (fear)\n\nAnd earth is about resting and receiving (neutrality) this is essentially basic mindfulness",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "ontology game 3"
    }
   },
   "questions": {

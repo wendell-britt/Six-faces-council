@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-07",
+ "kind": "board-pull",
+ "newest_save": "2026-10-07T21:06:18.301Z",
+ "answers": {
+  "pod-clip-length": {
+   "kind": "position",
+   "savedAt": "2026-10-07T21:01:34.681Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "oag-dig-deeper": {
+   "kind": "position",
+   "savedAt": "2026-10-07T21:01:56.423Z",
+   "status": "stands",
+   "steer": "The buttons need to be more ergonomic. But yes this stands "
+  },
+  "oag-wave-first": {
+   "kind": "position",
+   "savedAt": "2026-10-07T21:02:31.218Z",
+   "status": "stands",
+   "steer": "The beginning wave is an opening up move that allows what’s alive for the user to emerge. After that first wave we can have the player dig deeper into what they want to work on specifically "
+  },
+  "oag-open-up-marks": {
+   "kind": "position",
+   "savedAt": "2026-10-07T21:02:42.303Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "oag-open-up-tools": {
+   "kind": "position",
+   "savedAt": "2026-10-07T21:06:18.301Z",
+   "status": "overrule",
+   "steer": "This is a good first start but it is a sign that we need to continue work on operationalizing the emotional alchemy moves \n\nThe EA move for each of the channels is a clean up move as clean up moves are for dissolving and Alchemizing blocks\n\nFire transforms and burns away (anger)\nWater releases and flows and dissolves (sadness)\nJoy and happy apples is right on board. The general moves for happy apples can apply to all the channels as an opening up move \n\nMetal is about getting clarity and sharpening awareness (fear)\n\nAnd earth is about resting and receiving (neutrality) this is essentially basic mindfulness "
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "positions/oag-dig-deeper: Stands (steer: \"The buttons need to be more ergonomic. But yes this stands\")",
+  "positions/oag-wave-first: Stands (steer: \"The beginning wave is an opening up move that allows what’s alive for the user to emerge. After that first wave we can have the player dig deeper into what they want to work on specifically\")",
+  "positions/oag-open-up-tools: Overruled (steer: \"This is a good first start but it is a sign that we need to continue work on operationalizing the emotional alchemy moves \n\nThe EA move for each of the channels is a clean up move as clean up moves are for dissolving and Alchemizing blocks\n\nFire transforms and burns away (anger)\nWater releases and flows and dissolves (sadness)\nJoy and happy apples is right on board. The general moves for happy apples can apply to all the channels as an opening up move \n\nMetal is about getting clarity and sharpening awareness (fear)\n\nAnd earth is about resting and receiving (neutrality) this is essentially basic mindfulness\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
