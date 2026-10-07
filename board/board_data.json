@@ -4313,6 +4313,17 @@
    "why": "Your words in the episode 1 recut thread, 2026-10-07: \"we don't want to have the words on screen. Instragram is going to take care of that. Add this to our rules and process around creating these types of clips\". Source: council/moves/podcast-episode.md step 6; project files podcast/episode-marketing-plan.md"
   },
   {
+   "id": "pod-clip-covers",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast marketing",
+   "auto": true,
+   "pos": "Every clip gets an Instagram cover designed like the YouTube thumbnails, never a frame from the video. Episode 1's three covers lead with the clip's line: \"There's no mirror for your awareness except relationship\", \"Allyship works at touch distance\" and Isaac's \"The most caring are being told they're the worst people\". They stand unless you steer the wording here.",
+   "why": "Your words in the episode 1 recut thread, 2026-10-07: \"don't want a frame from the video for the cover photo. This is essentially working as a youtube thumbnail but for the clips and for instagram\". The covers keep their words inside the middle 3:4 the profile grid shows. Source: project files podcast/ep01-isaac-holze/covers/; council/podcast/render_reel_covers.mjs (#58)"
+  },
+  {
    "id": "oag-clean-up-moves",
    "faces": [
     "shaman",
@@ -12345,6 +12356,18 @@
     "record": "council/ledger/2026-10-07-chat-clip-no-words.json (six-faces-council)",
     "faces": [
      "diplomat",
+     "architect"
+    ],
+    "pass": "podcast marketing"
+   },
+   "pod-clip-covers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-07",
+    "saved_at": "2026-10-07T21:55:59Z",
+    "record": "council/ledger/2026-10-07-chat-clip-covers.json (six-faces-council)",
+    "faces": [
+     "shaman",
      "architect"
     ],
     "pass": "podcast marketing"
