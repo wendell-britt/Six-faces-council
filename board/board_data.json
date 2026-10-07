@@ -4021,6 +4021,81 @@
    "auto": true,
    "pos": "The strip adds one voice at a time. Milestones 1 to 3: practice doubles in the watch house, no HP at stake. Milestone 4: the strip opens with the first daemon only, at tier 1. Each integration adds the next daemon. Milestone 5: the first spirit joins the strip beside the daemons. Milestone 6 and after: each daemon's gate at its story milestone, and the other four spirits in the forest in Act II. This stands unless you flip it.",
    "why": "The Player daemon's report, and design.md's milestones 4 to 6. Source: /mnt/project-files/demo/daemons-and-spirits-pass.md (fr-demo round 14)"
+  },
+  {
+   "id": "ttc-move",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "texts to campaigns 1",
+   "auto": true,
+   "pos": "The council stewards the texts-to-campaign pipeline with one move: one section of a text at a time, through your four steps, each step its own short thread that writes one file the next step reads. This stands unless you flip it.",
+   "why": "The interview's summary, and five bars-engine specs that already tried this on books. Source: council/moves/text-to-campaign.md; council/passes/6FACE_PASS_text-to-campaign1_2026-10-07.md"
+  },
+  {
+   "id": "ttc-section-unit",
+   "faces": [
+    "architect"
+   ],
+   "pass": "texts to campaigns 1",
+   "auto": true,
+   "pos": "The unit of work is one section of one text, starting with The Skilled Helper's introduction. The book is read once per section, at step 1, and later sections build on the teacher and translation table the earlier ones left.",
+   "why": "Your round 8 answer asked for a thin slice. bars-engine ran the whole 262,000-word book as one job and got zero quests; its targeted-extraction spec fixed that by section. Source: library-quest-pipeline, book-quest-targeted-extraction (bars-engine)"
+  },
+  {
+   "id": "ttc-two-faces",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "texts to campaigns 1",
+   "auto": true,
+   "pos": "Each step has one face that drafts and one that checks: extract (Architect, Shaman), story (Shaman, Diplomat), encounters (Architect, Challenger), test (Challenger, Regent). All six meet once per section, when it closes.",
+   "why": "council/pipeline.yaml gives each stage one or two owners; CLAUDE.md's short-sessions rule. A six-face pass on every step would reread the record four times. Source: council/moves/text-to-campaign.md"
+  },
+  {
+   "id": "ttc-model-by-step",
+   "faces": [
+    "architect"
+   ],
+   "pass": "texts to campaigns 1",
+   "auto": true,
+   "pos": "Extraction runs on Sonnet; the story and a text's first translation table run on Opus; later tables run on Sonnet; daemon playtesters run on the smallest model. Each step thread names its cost, and the first section's close proposes a budget from the four costs.",
+   "why": "CLAUDE.md's model split: reading and recording on Sonnet, new design and first story drafts on Opus. No budget number before one is measured (council lesson). Source: council/moves/text-to-campaign.md"
+  },
+  {
+   "id": "ttc-validate-by-position",
+   "faces": [
+    "challenger",
+    "diplomat",
+    "regent"
+   ],
+   "pass": "texts to campaigns 1",
+   "auto": true,
+   "pos": "You validate each step's file here, as a position that stands unless you flip it, and the next step does not wait for you. Anyone outside your own testing playing the content, and the author's name on a player's screen, wait for your answer as a question.",
+   "why": "Your round 7b answer, 'The model writes I validate'. The March drafts sat unapproved in an admin page (round 2). Retro 1: gate a release on a test, never the design work before it. Each step thread pulls the board first, so a flip reaches the next step."
+  },
+  {
+   "id": "ttc-files-in-sprout",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "texts to campaigns 1",
+   "auto": true,
+   "pos": "The move lives in the council's home repo. The spec and each section's four files live in Sprout, under campaigns/<text>/<section>/. This answers the interview's open question on the spec's home.",
+   "why": "Your rounds 2 and 4: the campaign lives in Sprout's world, and Sprout is the first worked example. The podcast move set the pattern of a move at home and the product beside it."
+  },
+  {
+   "id": "ttc-slice-bar-validator",
+   "faces": [
+    "regent"
+   ],
+   "pass": "texts to campaigns 1",
+   "auto": true,
+   "pos": "In the first slice you validate the BARs, as the coach. Who validates a BAR outside a coaching container waits until someone outside your testing plays.",
+   "why": "Your round 4 answer (council playtesters, you, your testers) and round 6 (the coach validates the BARs). Source: council/interviews/text-to-campaign.md"
   }
  ],
  "questions": [
@@ -7246,6 +7321,33 @@
      "v": "player-first",
      "label": "C. The player's own belief or element picks the first",
      "c": "The strip starts with the daemon that matches this player's charge, then runs the book's order round from it. Every player still meets all eight, starting where their charge is loudest."
+    }
+   ]
+  },
+  {
+   "id": "ttc-applications",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "texts to campaigns 1",
+   "q": "How should your own applications of The Skilled Helper go into step 1?",
+   "why_you": "Round 8 says the content is built 'as though the content were developed based off of my notes of the text and my own applications of the text'. A model can draft notes on the text, but only you hold your applications. Your answer sets what step 1 reads.",
+   "not_before": "The interview settled who writes each step (round 7b), not what the writing is made from.",
+   "options": [
+    {
+     "v": "steer",
+     "label": "A. The model drafts, you add your applications when you validate (recommended)",
+     "c": "Step 1 reads the introduction once and drafts the notes. You add your applications as a steer on its position here, and step 2 starts from both. You will need to attach the introduction's pages in a thread if the uploaded copy in bars-engine cannot be reached."
+    },
+    {
+     "v": "notes-first",
+     "label": "B. Your notes first",
+     "c": "You write or dictate notes on the introduction, and step 1 works from those alone. The content is most clearly yours, and step 1 waits on you."
+    },
+    {
+     "v": "text-only",
+     "label": "C. The text alone",
+     "c": "The model drafts from the introduction with no applications from you. Cheapest, and the round 8 basis is thinnest."
     }
    ]
   }
