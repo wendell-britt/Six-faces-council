@@ -90,4 +90,26 @@ Answers (Wendell, 2026-10-07, in the thread):
    on the other's distress. Is a daemon encounter in this campaign practice at catching one of those habits in
    yourself while you help?
 
+Answers (Wendell, 2026-10-07, in the thread):
+
+> Both spirits and villagers
+>
+> I think as a translation as Egan this holds, but we want to keep them separate so we can see how daemons connect
+> to other texts
+
+- Both villagers and spirits come to the player for help.
+- The daemons-as-helper-habits mapping holds as a translation of Egan. The daemons stay their own set, kept apart
+  from any one text, so the next text can be mapped onto the same daemons and the links compared. Reading taken:
+  each text gets a translation table (this text's version of each daemon) and never redefines a daemon. Flip it if
+  a text should be able to add a new daemon.
+
+### Round 4 (2026-10-07)
+
+1. **Milestones.** Sprout's story already runs on numbered milestones (1 to 6 in the demo). Does a text's milestone
+   become one of Sprout's story milestones, or does it sit beside them as a separate track (a skill ladder for
+   Egan's stages)?
+2. **The test in step 4.** Who plays first: the council's daemon playtesters (simulated players, as in the Sprout
+   demo rounds), real people, or one then the other? And what counts as proof it taught: the skill shown in the
+   game, or shown in a real conversation afterwards?
+
 Answers: waiting.
