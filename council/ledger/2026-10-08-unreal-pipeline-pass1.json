@@ -1,0 +1,556 @@
+{
+ "date": "2026-10-08",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "unreal pipeline",
+ "record": "council/passes/6FACE_PASS_unreal-pipeline1_2026-10-08.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's message in the Sprout Game project, 2026-10-08T19:56Z, quoting the rewind02 tweet; thread started by the project coordinator",
+ "pulled_first": "not pulled: the pass acts on no earlier ruling; the live page was merged in by board/sync_board.py --live",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    9,
+    7,
+    7,
+    9,
+    7,
+    7
+   ],
+   "changing_lines": [
+    1,
+    4
+   ],
+   "n": 1,
+   "name": "Unbroken",
+   "cn": "乾",
+   "pinyin": "qián",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Every line here sends, and the return has nowhere to land.",
+   "image": "☰ heaven beneath ☰ heaven. Six unbroken lines, and no place in the figure that yields.",
+   "situation": "Every line is pushing and every line is capable. This is the most able configuration in the set, and it has nowhere to put anything that arrives. The tradition walks a dragon up through six stages for exactly this reason — force has to learn timing, because force alone already knows everything else.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 57,
+    "name": "Persuasion",
+    "cn": "巽",
+    "pinyin": "xùn",
+    "lines": [
+     0,
+     1,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "An effect is already happening that you have not admitted to.",
+    "image": "☴ wind beneath ☴ wind. A yielding line at the base of each half, and the figure gets in everywhere.",
+    "situation": "Wind repeated. The character means to enter, to kneel, to go underneath. The old counsel calls the success small and advises having somewhere to go and someone to see, and the mode throughout is gradual: a thing that works by getting under.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 37,
+   "name": "Household",
+   "cn": "家人",
+   "pinyin": "jiā rén",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "An arrangement has formed here without being discussed.",
+   "image": "☲ fire beneath ☴ wind. Fire making its own draught, with the wind coming out of the flame.",
+   "situation": "The family. The old text begins with correctness inside the house and works outward, and the commentary's point is structural: positions held properly within produce order without. Wind out of fire — what happens in here goes out there.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    7,
+    9,
+    7
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 12,
+   "name": "Stalemate",
+   "cn": "否",
+   "pinyin": "pǐ",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are seeking one game and wearing the face of the other.",
+   "image": "☷ earth beneath ☰ heaven. Each half is already where it wants to be, so nothing crosses the middle.",
+   "situation": "Heaven rises and it is already on top. Earth settles and it is already at the bottom. Both halves are content and the figure has no traffic in it. Obstruction here comes from satisfaction rather than from conflict, which is what makes it durable.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 35,
+    "name": "Sunrise",
+    "cn": "晉",
+    "pinyin": "jìn",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "This is becoming visible faster than you planned.",
+    "image": "☷ earth beneath ☲ fire. The sun clearing the horizon, with open ground under it.",
+    "situation": "Advance, and the light getting higher. The old text gives a prince horses in quantity and three audiences in a single day, so the figure is about recognition arriving quickly. Everything in it is going up.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    7,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 55,
+   "name": "Fullness",
+   "cn": "豐",
+   "pinyin": "fēng",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "This is at its peak and you are saving some of it.",
+   "image": "☲ fire beneath ☳ thunder. Light and movement together, both at the top of their range.",
+   "situation": "Abundance at the peak. The old text puts the sun at midday and says at once that what is full begins to wane, then fills the lines with eclipse — stars visible at noon, a curtain thick enough to show the polestar. The eclipse imagery sits inside the abundance itself.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    7,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 33,
+   "name": "Retreat",
+   "cn": "遯",
+   "pinyin": "dùn",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Leaving is available, and the timing decides what you keep.",
+   "image": "☶ mountain beneath ☰ heaven. Two yielding lines have come up underneath, and the firm lines are moving off.",
+   "situation": "Withdrawal in good order, at the moment that keeps it from becoming a rout. The old text calls it favourable and adds that the small is favourable too, which is the qualification: you keep something by leaving early with it.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    9,
+    6,
+    8,
+    7
+   ],
+   "changing_lines": [
+    3,
+    4
+   ],
+   "n": 22,
+   "name": "Adornment",
+   "cn": "賁",
+   "pinyin": "bì",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shows": "You have dressed this, and the dressing is doing real work.",
+   "image": "☲ fire beneath ☶ mountain. A fire at the base of a hill, throwing light up the whole face of it.",
+   "situation": "Form applied to something already standing. The mountain gets lit and the rock stays rock. The tradition runs this figure upward toward plainness and gives the top line as white adornment, which is form that has run out of ornament.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 21,
+    "name": "Bite",
+    "cn": "噬嗑",
+    "pinyin": "shì kè",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "An object is lodged in here, and nothing closes until you say it.",
+    "image": "☳ thunder beneath ☲ fire. An open mouth with one firm line lodged across the middle of it.",
+    "situation": "Something is stuck between the jaws and the figure stays open until it is dealt with. The old counsel here is legal — this is the hexagram of judgement, where the obstruction gets named and bitten through. Thunder and lightning in one stroke: the noise and the clarity together.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  }
+ ],
+ "positions": [
+  "up-short-sessions",
+  "up-gpu-by-script",
+  "up-repo",
+  "up-cost-stop"
+ ],
+ "questions": [
+  "up-game-pick",
+  "up-meshy-plan"
+ ],
+ "plan": "/mnt/project-files/unreal-pipeline/plan.md",
+ "subagent_tokens": 0,
+ "tests_dated": [
+  "By the end of build session 1: each of the Blender, Unreal and Meshy bridges has done one small action on Wendell's machine.",
+  "By the end of the first slice: its measured cost sits beside this pass's estimate of $90 to $210."
+ ]
+}
