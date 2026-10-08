@@ -38,7 +38,6 @@ The 00:25 board read took 30 steps and $1.54 because every step rereads a sessio
 4. Act on the `needs work` list, one thread per piece of work.
 5. One reply. No question in it.
 
-Run it on Sonnet. pull.py now unshallows a shallow cloud checkout before it pulls, which failed with "refusing to merge 
 unrelated histories" on the 2026-10-08 trial.
 
 ## The Send to Claude button
