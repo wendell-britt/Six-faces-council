@@ -272,3 +272,12 @@ CLAUDE.md, this file and the board.
 - **Merged 2026-10-07 23:50 UTC** on his word ("ok let's merge both of those"): #264 into #263's branch, then #263
   into main, with the 21:06 steers (`oag-clean-up-moves`). Pass 3's test 10 (he plays one blocked step against his
   sketch) is still open on his steps list.
+
+## Open on 2026-10-08, from the outreach-on-board pass
+
+- **Build the Outreach tab** once the board read after 2026-10-08 lets `outreach-on-board`, `outreach-chases-live`,
+  `outreach-old-page` and `outreach-no-send` stand (pass: `council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md`).
+  Copy `contacts` and `shows` from https://claude.ai/artifact/LSrgR62X3GWJ9ryvbCrV9L into the board's store with their
+  ids (ArtifactData batch, 50 per call); add the tab and the live Podcast chases list to `board/template.html`; repoint
+  the Morning brief routine (`trig_01KkW95XDC3xrnYxmBLbjmX2`) outreach section to the board's store; republish the old
+  page as a pointer; withdraw the steps of list `podcast-outreach-chase`. Run the pass's dated tests by 2026-10-15.

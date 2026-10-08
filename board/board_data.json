@@ -4344,6 +4344,48 @@
    "auto": true,
    "pos": "The council's cloud environment keeps a list of allowed sites and does not open to the whole internet. The research run gets en.wikipedia.org, arxiv.org and supermemo.guru added to that list, and any later site is added the same way. This stands unless you flip it.",
    "why": "Your note on step 1 of the research network list: 'would it make sense to just make the network environment to full access?' Full access is one setting and never needs touching again. The cost: council sessions read pages written by strangers and hold a GitHub token that can push to main, so with full access a page that tricks a session can send that token or your board data to any site. With a list, it can reach only the sites on it. Also found: this project has no cloud environment of its own yet, so the steps now start in Project settings. Source: code.claude.com/docs/en/cloud-environments#network-access"
+  },
+  {
+   "id": "outreach-on-board",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "outreach on the board 1",
+   "auto": true,
+   "pos": "Podcast Outreach moves onto this board as an Outreach tab: the same view (show filters, status picker, add a contact, add a show), with its 76 contacts and its shows copied into the board's store. Your changes then land on the contact itself, with no session carrying them across. This stands unless you flip it.",
+   "why": "You named this option in your note on podcast-outreach-chase-01, and your board read 8 ruling ('I think a tab on this board is quite useful') picks a tab over a second page. Two pages cannot write each other's store, so the other option needs a session to copy every note. Source: council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md"
+  },
+  {
+   "id": "outreach-chases-live",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "outreach on the board 1",
+   "auto": true,
+   "pos": "Your steps gets a standing Podcast chases list, built live from the contacts by the morning brief's rules: flagged by hand, next touch today or past, or pitched five or more days ago, plus recordings in the next three days. Each chase has three buttons (Sent, Booked, Not now), a next-touch date and a note, and saving writes the contact. A chase leaves the list when its rule stops firing. Today's hand-made chase list is withdrawn once this ships. This stands unless you flip it.",
+   "why": "Your note asked the council how to bring these steps in. Computing them from the contacts means nothing is copied and nothing falls out of date. The rules are already yours, in the outreach page's code and the morning brief. Source: council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md"
+  },
+  {
+   "id": "outreach-old-page",
+   "faces": [
+    "regent"
+   ],
+   "pass": "outreach on the board 1",
+   "auto": true,
+   "pos": "The old Podcast Outreach page becomes a short pointer to the Outreach tab, and its store is kept as it is. The morning brief reads contacts from the board's store instead. This stands unless you flip it.",
+   "why": "The council keeps the lower level when it moves up (transcend_and_include, council/pipeline.yaml). The page is private, so nobody else loses a link. Source: council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md"
+  },
+  {
+   "id": "outreach-no-send",
+   "faces": [
+    "regent"
+   ],
+   "pass": "outreach on the board 1",
+   "auto": true,
+   "pos": "Saving a chase or editing a contact does not light the Send to Claude bar. A note that asks the council for something still goes on a step or in the context box, as now. This stands unless you flip it.",
+   "why": "A chase needs no face, and every Send starts a paid session (CLAUDE.md, short sessions; docs/pickup.md). The Challenger dissents on scope: the Event Pipeline page does not follow onto the board without its own pass. Source: council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md"
   }
  ],
  "questions": [
