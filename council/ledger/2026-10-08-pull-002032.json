@@ -1,0 +1,34 @@
+{
+ "date": "2026-10-08",
+ "kind": "board-pull",
+ "newest_save": "2026-10-08T00:20:32.562Z",
+ "answers": {
+  "pod-ep1-clip-pick": {
+   "kind": "question",
+   "choice": "set-02-03-06-07",
+   "savedAt": "2026-10-08T00:20:03.262Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  },
+  "pod-ep1-clip-covers": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:20:09.478Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  },
+  "pod-ep1-clip-cut": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:20:32.562Z",
+   "status": "stands",
+   "steer": "Let's add the podcast logo to the top like the Mastering Allyship ones do ",
+   "via": "battle:fr-podcast-launch"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/pod-ep1-clip-pick: 02, 03, 06 and 07",
+  "positions/pod-ep1-clip-cut: Stands (steer: \"Let's add the podcast logo to the top like the Mastering Allyship ones do\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

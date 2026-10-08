@@ -12571,6 +12571,31 @@
      "regent"
     ],
     "pass": "outreach on the board 1"
+   },
+   "pod-ep1-clip-covers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:20:09.478Z",
+    "record": "council/ledger/2026-10-08-pull-002032.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "podcast clips"
+   },
+   "pod-ep1-clip-cut": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:20:32.562Z",
+    "record": "council/ledger/2026-10-08-pull-002032.json (six-faces-council)",
+    "steer": "Let's add the podcast logo to the top like the Mastering Allyship ones do",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "podcast clips"
    }
   },
   "questions": {
@@ -13940,6 +13965,18 @@
      "diplomat"
     ],
     "pass": "podcast ep 2"
+   },
+   "pod-ep1-clip-pick": {
+    "decision": "set-02-03-06-07",
+    "label": "02, 03, 06 and 07",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:20:03.262Z",
+    "record": "council/ledger/2026-10-08-pull-002032.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "podcast clips"
    }
   },
   "causes": {
