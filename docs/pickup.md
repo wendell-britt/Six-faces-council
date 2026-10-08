@@ -24,6 +24,23 @@ The routines after the change: `trig_01L138vKTaN9MSJoFKRmaBNx` stays as the Send
 routine's step 1b runs pull.py itself instead of firing the pickup routine, so the safety net no longer depends on the
 chain it backs up. The push design's history and its incidents are in docs/incidents.md (retro 1).
 
+## A board read in five steps (2026-10-08, board-read-slim)
+
+The 00:25 board read took 30 steps and $1.54 because every step rereads a session that opens at about 102,000 tokens.
+`board/read.py` folds the plumbing into one command, so a read is:
+
+1. One message with five parallel ArtifactData `list` calls (positions, questions, terms, causes, steer), one
+   `out_dir`. The store lands in files; it is never read into the conversation, and the page is never read.
+2. `python3 board/read.py <dir>`: pull.py with `--push`, `council/due.py --ahead 7`, and a last line that says
+   whether to republish. Add `--dry` to report without writing.
+3. If it says REPUBLISH, one Artifact call on `board/council-board.html`, no capabilities. When every save was
+   already recorded there is nothing to republish.
+4. Act on the `needs work` list, one thread per piece of work.
+5. One reply. No question in it.
+
+Run it on Sonnet. pull.py now unshallows a shallow cloud checkout before it pulls, which failed with "refusing to merge 
+unrelated histories" on the 2026-10-08 trial.
+
 ## The Send to Claude button
 
 `board/template.html` shows a bar at the bottom of the board once anything is saved and not yet sent: a row saved and
