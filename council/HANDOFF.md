@@ -4,6 +4,19 @@ The council works in short sessions (Wendell, 2026-10-03, board read 29). A sess
 in the repo and on the board, writes anything left open here, and ends. The next session starts by reading
 CLAUDE.md, this file and the board.
 
+## Open on 2026-10-08, cutting session cost (advisor thread)
+
+Costs of every council session, read from the platform: project files `usage-audit/sessions-2026-10-08.md`. A
+session opens at about 102,000 tokens before doing any work (first_request_input_tokens of the 00:25 board read).
+- **Slim the board read** (`board-read-slim`): one new thread, on Sonnet. Store through ArtifactData into a file,
+  never the whole page into the conversation; fold the scriptable steps into one script; measure steps and cost
+  against the 00:25 read (30 steps, 2.66M tokens reread, $1.54).
+- **Plugins** (`plugins-trim`): waits on Wendell. On an answer, write the exact removal clicks on Your steps.
+- **Sonnet threads** (`threads-on-sonnet`): written into project memory for the coordinator.
+- **Still to measure:** what else fills the opening 102,000 (CLAUDE.md files of the attached repos, the hook output,
+  the platform prompt), and how much of a typical thread is command output (the Jev trimmer signal,
+  project files `reviews/2026-10-08-jev.md`).
+
 ## Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed off
 
 - **The board** (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) waits on Wendell for: `dy-model`,
@@ -14,10 +27,8 @@ CLAUDE.md, this file and the board.
   after 2026-10-03T22:40Z, record them in a ledger record, and republish.
 - **Pull requests:** #20, #21 and #24 wait only on Wendell's ruling and the steward. Merge none; add the
   `automerge` label only when he says to merge.
-- **The daily session:** routine `trig_01F8fDdkjYEeMCfdozj6w3tt` wakes the standing session
-  `session_011mcRZ4vDnnis99dnptvdmu` at 15:45 UTC. 2026-10-04 is the first scheduled wake; check whether it reached
-  the standing session (a hand-fired run started a fresh session instead). Record each run's cost from its result
-  event with `council/daily.py usage`, never from get_session mid-turn.
+- **The daily session:** stopped on 2026-10-08 (`daily-stopped`). Routine `trig_01F8fDdkjYEeMCfdozj6w3tt` is
+  switched off, not deleted; board reads already run pull.py and due.py.
 - **Your steps tab:** the flirtcraft database (steps 1 to 4 ticked 2026-10-08; 5 to 9 open) and the branch retire
   command are unticked. The research-sites steps were withdrawn on 2026-10-08 once `net-research-webfetch` stood.
 - **Deferred:** the oracle drafts come back 2026-11-03 (`council/due.py`).
