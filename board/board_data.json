@@ -4386,6 +4386,28 @@
    "auto": true,
    "pos": "Saving a chase or editing a contact does not light the Send to Claude bar. A note that asks the council for something still goes on a step or in the context box, as now. This stands unless you flip it.",
    "why": "A chase needs no face, and every Send starts a paid session (CLAUDE.md, short sessions; docs/pickup.md). The Challenger dissents on scope: the Event Pipeline page does not follow onto the board without its own pass. Source: council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md"
+  },
+  {
+   "id": "pod-ep1-clip-covers",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "podcast clips",
+   "auto": true,
+   "pos": "Episode 1's clip covers are made in the Podcast Thumbnail Studio, which now has a 9:16 clip cover format for all three shows. Each cover leads with the clip's own line in the Two Signals red, never a frame from the video. They stand unless you steer the look here.",
+   "why": "Your ask on 2026-10-07: 'create a cover image for the clips like in the Mastering the Game of Allyship Podcast'. The words stay inside the middle 3:4 the grid shows and clear of the platform buttons, per pod-clip-covers. Source: studio https://claude.ai/artifact/RAiZ3keBiE6BvDD6YKA9S8; project files podcast/clips/covers/"
+  },
+  {
+   "id": "pod-ep1-clip-cut",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "podcast clips",
+   "auto": true,
+   "pos": "The clips are cut by one script from the Zoom video: vertical 1080x1920, the full frame over a blurred copy of itself, no burned-in words, half a second of padding each end, and each clip's length checked after the cut. Each platform adds its own captions.",
+   "why": "The Mastering Allyship clip layout and the podcast move's cut rules (council/moves/podcast-episode.md). Tested on a stand-in video: the right size, sound, and length. Source: project files podcast/clips/cut_clips.sh"
   }
  ],
  "questions": [
@@ -7816,6 +7838,39 @@
      "v": "all",
      "label": "All six",
      "c": "Six clips on the posting rhythm instead of four, which stretches episode 2 over about three weeks."
+    }
+   ]
+  },
+  {
+   "id": "pod-ep1-clip-pick",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "podcast clips",
+   "q": "Which clips from episode 1 with QC should go out first? The council recommends the set of four with two of QC's.",
+   "why_you": "Which moments carry the show under your name is a matter of taste only you hold, and the clips that go out are the ones QC is seen in.",
+   "not_before": "Eight moments are cut from the transcript, each with its cover made (project files podcast/clips/covers/, the list in podcast/clips/clips.md). Covers: 01 birthday game, 02 permission to flirt (QC), 03 Hot Girl Summer, 04 ruining her day, 05 minus infinity points (QC), 06 what a crush is, 07 flirt even more (QC), 08 dojo, not symposium.",
+   "options": [
+    {
+     "v": "set-02-03-06-07",
+     "label": "02, 03, 06 and 07 (recommended)",
+     "c": "QC's permission line opens the run, then Hot Girl Summer, what a crush is, and QC's 'a relationship is just when you flirt even more'. Two clips are QC's, and they post on days 2, 5, 9 and 12."
+    },
+    {
+     "v": "set-01-04-05-08",
+     "label": "01, 04, 05 and 08",
+     "c": "The birthday game, ruining her day, QC's minus infinity points, and the dojo line. More of the method, less of the hook."
+    },
+    {
+     "v": "all-eight",
+     "label": "All eight",
+     "c": "All eight are cut and posted over about three weeks, the recommended four first."
+    },
+    {
+     "v": "steer",
+     "label": "None yet, I will steer in the box",
+     "c": "Name the clips you want, or a moment not on the list, and the council cuts that instead."
     }
    ]
   }
@@ -14775,6 +14830,16 @@
      "questions": [],
      "positions": [
       "pod-thumb-studio"
+     ]
+    },
+    {
+     "n": 6,
+     "questions": [
+      "pod-ep1-clip-pick"
+     ],
+     "positions": [
+      "pod-ep1-clip-covers",
+      "pod-ep1-clip-cut"
      ]
     }
    ]
