@@ -279,9 +279,12 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-08, from the outreach-on-board pass
 
-- **Build the Outreach tab** once the board read after 2026-10-08 lets `outreach-on-board`, `outreach-chases-live`,
-  `outreach-old-page` and `outreach-no-send` stand (pass: `council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md`).
-  Copy `contacts` and `shows` from https://claude.ai/artifact/LSrgR62X3GWJ9ryvbCrV9L into the board's store with their
-  ids (ArtifactData batch, 50 per call); add the tab and the live Podcast chases list to `board/template.html`; repoint
-  the Morning brief routine (`trig_01KkW95XDC3xrnYxmBLbjmX2`) outreach section to the board's store; republish the old
-  page as a pointer; withdraw the steps of list `podcast-outreach-chase`. Run the pass's dated tests by 2026-10-15.
+- **Built** (`council/ledger/2026-10-08-outreach-tab-build.json`): the board has an Outreach tab and a live Podcast
+  chases list on Your steps, both on the board's own `contacts` and `shows`, copied from
+  https://claude.ai/artifact/LSrgR62X3GWJ9ryvbCrV9L with their ids. The Morning brief routine
+  (`trig_01KkW95XDC3xrnYxmBLbjmX2`) reads the board's contacts. The old page is a pointer; its store is kept untouched.
+  Step `podcast-outreach-chase-01` is withdrawn.
+- **Dated checks, by 2026-10-15:** a chase Wendell saves shows on the contact at once; the first weekday morning brief
+  after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower
+  on his phone. If the board is slow, the Challenger's fallback is a second page inside the same artifact.
+- **Not in scope:** the Event Pipeline stays on its own page until a pass of its own (the Challenger's dissent).

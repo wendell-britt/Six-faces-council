@@ -26,6 +26,9 @@ p{margin:0 0 10px;max-width:68ch}
 .tab{font:inherit;font-weight:500;padding:8px 14px;border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);cursor:pointer}
 .tab[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
 .tab b{font-variant-numeric:tabular-nums;margin-left:4px}
+.tab{white-space:nowrap}
+.st-where[hidden]{display:none}
+@media (max-width:560px){ .tab{padding:8px 6px;font-size:.94rem} .tabs{gap:0;overflow-x:auto} }
 .banner{display:none;background:var(--warn-bg);color:var(--warn);padding:10px 12px;border-radius:4px;margin:12px 0;font-size:.92rem}
 .banner.on{display:block}
 .context{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;margin:16px 0 8px}
@@ -190,6 +193,38 @@ body.has-send{padding-bottom:120px}
 /* Close (Wendell, 2026-10-06: "needs to be able to be dismissed so we can access the button underneath"). Closing hides
    the bar until something new is saved; on this device only. */
 .send-x{font:inherit;font-size:1.3rem;line-height:1;width:44px;height:44px;flex:0 0 44px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--muted);cursor:pointer}
+/* Outreach (outreach-on-board, 2026-10-08). The Podcast Outreach page's contacts and shows live in this board's store,
+   so a chase saved on Your steps writes the contact itself and no session carries it across. */
+.oc-shows{display:flex;flex-wrap:wrap;gap:4px;margin:14px 0 4px}
+.oc-shows button{font:inherit;font-size:.88rem;padding:6px 10px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--muted);cursor:pointer}
+.oc-shows button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.oc-tally{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin:6px 0 0}
+.oc-row{padding:14px 0 14px 12px;border-top:1px solid var(--line);box-shadow:inset 3px 0 0 var(--line)}
+.oc-row.go{box-shadow:inset 3px 0 0 var(--ok)}
+.oc-row.flag{box-shadow:inset 3px 0 0 var(--warn)}
+.oc-head{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.oc-who{font-weight:600;font-size:1.02rem;margin:0}
+.oc-who a{color:inherit}
+.oc-role{font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.oc-why{color:var(--muted);font-size:.93rem;margin:6px 0 0}
+.oc-notes{font-size:.88rem;margin:4px 0 0;white-space:pre-line}
+.oc-meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-family:var(--mono);font-size:.76rem;color:var(--muted);margin-top:8px}
+.oc-flag{color:var(--warn);font-weight:600;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;display:inline-block}
+.oc-pick{font:inherit;font-size:.82rem;padding:3px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
+.oc-add{border-top:1px solid var(--line);margin-top:18px;padding-top:12px}
+.oc-add summary{cursor:pointer;color:var(--muted);font-weight:500}
+.oc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.oc-grid label{display:grid;gap:3px;font-size:.82rem;color:var(--muted);min-width:0}
+.oc-grid .full{grid-column:1/-1}
+.oc-grid input,.oc-grid select{width:100%;font:inherit;font-size:.95rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:7px 8px}
+@media (max-width:560px){ .oc-grid{grid-template-columns:1fr} }
+.ch-form{display:grid;gap:8px;margin-top:4px}
+.ch-acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ch-acts button{font:inherit;font-size:.95rem;min-height:44px;padding:6px 8px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
+.ch-acts button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.ch-line{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ch-line input[type=date]{font:inherit;font-size:.95rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:6px 8px}
+.ch-line input[type=text]{flex:1 1 200px;width:auto}
 </style>
 
 <h1>Council Board</h1>
@@ -199,6 +234,7 @@ body.has-send{padding-bottom:120px}
 <div class="tabs" role="tablist">
   <button class="tab" role="tab" id="tab-open" aria-selected="true" aria-controls="view-open">Open<b id="n-open">0</b></button>
   <button class="tab" role="tab" id="tab-steps" aria-selected="false" aria-controls="view-steps">Your steps<b id="n-steps">0</b></button>
+  <button class="tab" role="tab" id="tab-outreach" aria-selected="false" aria-controls="view-outreach">Outreach<b id="n-outreach">0</b></button>
   <button class="tab" role="tab" id="tab-resolved" aria-selected="false" aria-controls="view-resolved">Resolved<b id="n-resolved">0</b></button>
 </div>
 <div class="banner" id="banner">This view cannot save. Your choices stay on screen only.</div>
@@ -230,8 +266,37 @@ body.has-send{padding-bottom:120px}
     <p class="st-sum" id="st-where-sum"></p>
   </div>
   <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
+  <div id="steps-chase"></div>
   <div id="steps-todo"></div>
   <div id="steps-done"></div>
+</section>
+
+<section id="view-outreach" role="tabpanel" aria-labelledby="tab-outreach" hidden>
+  <p class="lede" style="margin-top:14px">Everyone you are asking onto a show, and where each ask stands. Anyone due a chase is also on Your steps under Podcast chases, and saving a chase there updates the row here.</p>
+  <div class="oc-shows" id="oc-shows" role="group" aria-label="Show"></div>
+  <p class="oc-tally" id="oc-tally"></p>
+  <div id="oc-empty" class="empty" hidden>No one on the list yet.</div>
+  <div id="oc-rows"></div>
+  <details class="oc-add"><summary>Add someone</summary>
+    <form class="oc-grid" id="oc-add">
+      <label class="full">Name<input id="oa-name" required autocomplete="off"></label>
+      <label>Host or guest<select id="oa-role"><option>Guest</option><option>Host</option></select></label>
+      <label>Show<input id="oa-show" list="oc-showlist" autocomplete="off"><datalist id="oc-showlist"></datalist></label>
+      <label class="full">Contact or link<input id="oa-contact" autocomplete="off" placeholder="https://…"></label>
+      <label class="full">Why them<input id="oa-why" autocomplete="off"></label>
+      <label>Status<select id="oa-status"></select></label>
+      <label>Last touch<input id="oa-last" type="date"></label>
+      <label>Next touch<input id="oa-next" type="date"></label>
+      <label>Notes<input id="oa-notes" autocomplete="off"></label>
+      <div class="ctl full"><button class="save" type="submit">Add to the list</button><div class="state" id="oa-state"></div></div>
+    </form>
+  </details>
+  <details class="oc-add"><summary>Add a show</summary>
+    <form class="oc-grid" id="oc-addshow">
+      <label class="full">Show name<input id="os-name" required autocomplete="off"></label>
+      <div class="ctl full"><button class="save" type="submit">Add the show</button><div class="state" id="os-state"></div></div>
+    </form>
+  </details>
 </section>
 
 <section id="view-resolved" role="tabpanel" aria-labelledby="tab-resolved" hidden>
@@ -461,7 +526,7 @@ function render(){
 }
 
 function show(which){
-  for (const v of ['open','steps','resolved']){
+  for (const v of ['open','steps','outreach','resolved']){
     document.getElementById('tab-'+v).setAttribute('aria-selected', String(v === which));
     document.getElementById('view-'+v).hidden = v !== which;
   }
@@ -469,7 +534,8 @@ function show(which){
 document.getElementById('tab-open').addEventListener('click', () => { show('open'); try { history.replaceState(null, '', '#open'); } catch (e) {} });
 document.getElementById('tab-resolved').addEventListener('click', () => { show('resolved'); try { history.replaceState(null, '', '#resolved'); } catch (e) {} });
 document.getElementById('tab-steps').addEventListener('click', () => { show('steps'); try { history.replaceState(null, '', '#steps'); } catch (e) {} });
-show(['#resolved','#steps'].includes(location.hash) ? location.hash.slice(1) : 'open');
+document.getElementById('tab-outreach').addEventListener('click', () => { show('outreach'); try { history.replaceState(null, '', '#outreach'); } catch (e) {} });
+show(['#resolved','#steps','#outreach'].includes(location.hash) ? location.hash.slice(1) : 'open');
 
 // The Open tab's rows, and deferred rows opened on the Resolved tab, share these handlers.
 const openView = {addEventListener: (t, f) => ['view-open', 'view-resolved'].forEach(v => document.getElementById(v).addEventListener(t, f))};
@@ -777,8 +843,10 @@ function renderSteps(){
   const todo = ids.filter(id => !stFinished(id)), done = ids.filter(id => stFinished(id));
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
-  document.getElementById('steps-empty').hidden = todo.length > 0;
-  document.getElementById('n-steps').textContent = todo.length;
+  const chases = ocChases();
+  document.getElementById('steps-chase').innerHTML = chList(chases);
+  document.getElementById('steps-empty').hidden = todo.length > 0 || chases.length > 0;
+  document.getElementById('n-steps').textContent = todo.length + (chases.some(c => c.chase) ? 1 : 0);
   const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
   const pc = open.filter(([,s]) => s.device === 'computer').length;
   document.querySelectorAll('[data-where]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.where === stWhere)));
@@ -841,6 +909,156 @@ stepsView.addEventListener('click', async e => {
     catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
   }
 });
+// ---- Outreach and Podcast chases (outreach-on-board, outreach-chases-live, outreach-no-send; 2026-10-08) ----
+/* The contacts and shows came over from the Podcast Outreach page with their ids. A chase is computed from a contact by
+   the morning brief's three rules, so nothing is copied and a chase leaves the list when its rule stops firing. Saving
+   a chase writes the contact and nothing else: contacts are not in pendingSaves, so the Send bar stays dark. */
+let ocContacts = {}, ocShows = {}, ocFilter = 'All';
+const OC_STATUSES = ['Identified', 'Pitched', 'Followed up', 'Booked', 'Recorded', 'Published', 'Shared', 'Declined'];
+const OC_GO = new Set(['Booked', 'Recorded', 'Published', 'Shared']);
+const OC_FOLLOW_UP_DAYS = 5;
+const ocIso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const ocPlus = n => { const d = stToday(); d.setDate(d.getDate() + n); return ocIso(d); };
+const ocHttp = u => /^https?:\/\//i.test(String(u || '').trim());
+// Which of the brief's rules fire for a contact, in its order; empty when none.
+function ocWhy(c){
+  const out = [], days = stDaysLeft(c.nextTouch), since = stDaysLeft(c.lastTouch);
+  if (String(c.flag || '').toUpperCase().includes('FOLLOW UP NOW')) out.push('Flagged to follow up now');
+  if (days !== null && days <= 0) out.push(days === 0 ? 'Next touch is today' : `Next touch was ${stFmt(c.nextTouch)}`);
+  if (c.status === 'Pitched' && since !== null && -since >= OC_FOLLOW_UP_DAYS) out.push(`Pitched ${-since} days ago`);
+  return out;
+}
+const ocNeeds = c => ocWhy(c).length > 0;
+// A Booked contact whose next touch is in the next three days is a recording coming up, not a chase.
+const ocRecording = c => { const d = stDaysLeft(c.nextTouch); return c.status === 'Booked' && d !== null && d > 0 && d <= 3; };
+function ocChases(){
+  return Object.entries(ocContacts).map(([id, c]) => ({id, c, why: ocWhy(c), chase: ocNeeds(c), rec: !ocNeeds(c) && ocRecording(c)}))
+    .filter(x => x.chase || x.rec)
+    .sort((a, b) => (b.chase - a.chase) || String(a.c.name || '').localeCompare(String(b.c.name || '')));
+}
+const chDraft = {};
+const CH_ACTS = [['sent', 'Sent'], ['booked', 'Booked'], ['notnow', 'Not now']];
+function chItem({id, c, why, rec}){
+  const d = chDraft[id] || {}, date = d.date || ocPlus(OC_FOLLOW_UP_DAYS);
+  const last = String(c.notes || '').split('\n')[0];
+  const acts = rec ? [['recorded', 'Recorded']] : CH_ACTS;
+  return `<li class="st-step" id="ch-${esc(id)}"><span class="st-tick" aria-hidden="true">${rec ? '●' : '!'}</span><div class="st-body">
+    <p class="st-do">${ocHttp(c.contact) ? `<a href="${esc(c.contact)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}</p>
+    <div class="st-chips"><span class="st-chip">${esc(c.show || 'No show')}</span><span class="st-chip">${esc(c.status || 'Identified')}</span>${rec ? `<span class="st-chip st-safe">Recording ${esc(stFmt(c.nextTouch))}</span>` : why.map(w => `<span class="st-chip st-opt">${esc(w)}</span>`).join('')}</div>
+    ${c.why ? `<p class="st-why">${esc(c.why)}</p>` : ''}
+    <div class="st-row"><span>Last</span><span>${c.lastTouch ? esc(stFmt(c.lastTouch)) : 'No touch on record'}${last ? `. ${esc(last)}` : ''}</span></div>
+    <div class="ch-form">
+      <div class="ch-acts" role="group" aria-label="What happened with ${esc(c.name)}" style="grid-template-columns:repeat(${acts.length},minmax(0,1fr))">${acts.map(([v, l]) => `<button type="button" data-ch-act="${v}" data-ch="${esc(id)}" aria-pressed="${d.act === v}">${l}</button>`).join('')}</div>
+      <div class="ch-line"><label class="st-sum" for="chd-${esc(id)}">Next touch</label><input type="date" id="chd-${esc(id)}" value="${esc(date)}"></div>
+      <div class="ch-line"><input type="text" id="chn-${esc(id)}" placeholder="A note, if any" value="${esc(d.note || '')}"><button type="button" class="save" data-ch-save="${esc(id)}">Save</button></div>
+      <div class="st-state" id="chs-${esc(id)}" aria-live="polite"></div>
+    </div></div></li>`;
+}
+function chList(items){
+  if (!items.length) return '';
+  const n = items.filter(x => x.chase).length, r = items.length - n;
+  const count = [n ? `${n} to chase` : '', r ? `${r} recording${r === 1 ? '' : 's'} coming up` : ''].filter(Boolean).join(', ');
+  return `<article class="st-list" id="l-podcast-chases"><header>
+    <div class="st-meta"><span class="st-repo">Outreach</span><span class="st-count">${count}</span></div>
+    <h2 style="margin:0">Podcast chases</h2>
+    <p class="st-why">Each of these is a message from you to someone who knows you. Say what happened and the row on the Outreach tab updates; the chase leaves this list once it is no longer due.</p></header>
+    <ol class="st-steps">${items.map(chItem).join('')}</ol></article>`;
+}
+async function chSave(id){
+  const c = ocContacts[id], st = document.getElementById('chs-' + id); if (!c) return;
+  const d = chDraft[id] || {};
+  d.date = document.getElementById('chd-' + id).value || ''; d.note = (document.getElementById('chn-' + id).value || '').trim();
+  chDraft[id] = d;
+  if (!d.act){ st.textContent = 'Pick what happened first.'; return; }
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  const today = ocIso(stToday()), label = {sent: 'Sent', booked: 'Booked', notnow: 'Not now', recorded: 'Recorded'}[d.act];
+  let status = c.status || 'Identified';
+  if (d.act === 'sent') status = status === 'Identified' ? 'Pitched' : (status === 'Pitched' || status === 'Followed up') ? 'Followed up' : status;
+  if (d.act === 'booked') status = 'Booked';
+  if (d.act === 'recorded') status = 'Recorded';
+  const line = `${today}: ${label}${d.date && d.act !== 'recorded' ? `, next touch ${d.date}` : ''}.${d.note ? ' ' + d.note : ''}`;
+  const patch = {status, lastTouch: today, nextTouch: d.act === 'recorded' ? '' : d.date, flag: '', notes: c.notes ? line + '\n' + c.notes : line};
+  st.textContent = 'Saving…';
+  try { await db.doc('contacts/' + id).update(patch); delete chDraft[id]; ocContacts[id] = {...c, ...patch}; renderOutreach(); renderSteps(); }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+}
+stepsView.addEventListener('input', e => {
+  const m = /^ch([dn])-(.+)$/.exec(e.target.id || ''); if (!m) return;
+  const d = chDraft[m[2]] = chDraft[m[2]] || {};
+  if (m[1] === 'd') d.date = e.target.value; else d.note = e.target.value;
+});
+stepsView.addEventListener('click', e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.chAct){
+    const id = t.dataset.ch, d = chDraft[id] = chDraft[id] || {};
+    d.act = d.act === t.dataset.chAct ? '' : t.dataset.chAct;
+    d.date = document.getElementById('chd-' + id).value; d.note = document.getElementById('chn-' + id).value;
+    renderSteps(); const b = document.querySelector(`[data-ch="${CSS.escape(id)}"][data-ch-act="${t.dataset.chAct}"]`); if (b) b.focus();
+  }
+  if (t.dataset.chSave) chSave(t.dataset.chSave);
+});
+// The Outreach tab: the old page's view, writing this board's store.
+function ocShowNames(){
+  const names = Object.values(ocShows).sort((a, b) => ((a.order ?? 999) - (b.order ?? 999)) || String(a.name || '').localeCompare(String(b.name || ''))).map(s => s.name).filter(Boolean);
+  Object.values(ocContacts).forEach(c => { if (c.show && !names.includes(c.show)) names.push(c.show); });
+  return names;
+}
+function renderOutreach(){
+  const all = Object.entries(ocContacts), names = ocShowNames();
+  const tabs = ['All', ...names, ...(all.some(([, c]) => !c.show) ? ['Unsorted'] : [])];
+  if (!tabs.includes(ocFilter)) ocFilter = 'All';
+  document.getElementById('n-outreach').textContent = all.filter(([, c]) => ocNeeds(c)).length;
+  document.getElementById('oc-shows').innerHTML = tabs.length > 1 ? tabs.map(n => `<button type="button" data-oc-show="${esc(n)}" aria-pressed="${n === ocFilter}">${esc(n)}</button>`).join('') : '';
+  document.getElementById('oc-showlist').innerHTML = names.map(n => `<option value="${esc(n)}">`).join('');
+  const shown = all.filter(([, c]) => ocFilter === 'All' || (ocFilter === 'Unsorted' ? !c.show : c.show === ocFilter))
+    .sort((a, b) => (ocNeeds(b[1]) - ocNeeds(a[1])) || String(a[1].name || '').localeCompare(String(b[1].name || '')));
+  document.getElementById('oc-tally').textContent = all.length ? `${shown.length} ${shown.length === 1 ? 'contact' : 'contacts'}, ${shown.filter(([, c]) => ocNeeds(c)).length} to chase` : '';
+  document.getElementById('oc-empty').hidden = shown.length > 0;
+  document.getElementById('oc-empty').textContent = ocFilter === 'All' ? 'No one on the list yet.' : `Nobody on ${ocFilter} yet.`;
+  document.getElementById('oc-rows').innerHTML = shown.map(([id, c]) => {
+    const need = ocNeeds(c), tone = need ? 'flag' : OC_GO.has(c.status) ? 'go' : '';
+    return `<div class="oc-row ${tone}"><div class="oc-head">
+      <p class="oc-who">${ocHttp(c.contact) ? `<a href="${esc(c.contact)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}</p>
+      <span class="oc-role">${esc([c.role, c.show].filter(Boolean).join(' · '))}</span>
+      <select class="oc-pick" data-oc-status="${esc(id)}" aria-label="Status for ${esc(c.name)}">${OC_STATUSES.map(s => `<option${s === c.status ? ' selected' : ''}>${s}</option>`).join('')}</select></div>
+      ${c.why ? `<p class="oc-why">${esc(c.why)}</p>` : ''}${c.notes ? `<p class="oc-notes">${esc(c.notes)}</p>` : ''}
+      <div class="oc-meta"><span>Last touch ${c.lastTouch ? esc(stFmt(c.lastTouch)) : 'none'}</span><span>Next touch ${c.nextTouch ? esc(stFmt(c.nextTouch)) : 'none'}</span>${c.contact && !ocHttp(c.contact) ? `<span>${esc(c.contact)}</span>` : ''}</div>
+      ${need ? `<span class="oc-flag">Follow up now</span>` : ''}</div>`;
+  }).join('');
+}
+const ocView = document.getElementById('view-outreach');
+document.getElementById('oa-status').innerHTML = OC_STATUSES.map(s => `<option>${s}</option>`).join('');
+ocView.addEventListener('click', e => { const t = e.target.closest('[data-oc-show]'); if (t){ ocFilter = t.dataset.ocShow; renderOutreach(); } });
+ocView.addEventListener('change', async e => {
+  const id = e.target.dataset && e.target.dataset.ocStatus; if (!id) return;
+  const c = ocContacts[id], v = e.target.value; if (!c) return;
+  if (!db){ document.getElementById('banner').classList.add('on'); return; }
+  ocContacts[id] = {...c, status: v}; renderOutreach(); renderSteps();
+  try { await db.doc('contacts/' + id).update({status: v}); } catch { ocContacts[id] = c; renderOutreach(); renderSteps(); }
+});
+const ocSlug = n => (String(n).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'contact') + '-' + Math.random().toString(36).slice(2, 7);
+document.getElementById('oc-add').addEventListener('submit', async e => {
+  e.preventDefault();
+  const st = document.getElementById('oa-state'), v = k => document.getElementById('oa-' + k).value.trim(), name = v('name');
+  if (!name) return;
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  const rec = {name, role: v('role'), show: v('show'), contact: v('contact'), why: v('why'), status: v('status'), lastTouch: v('last'), nextTouch: v('next'), notes: v('notes'), flag: ''};
+  st.textContent = 'Saving…';
+  try { await db.doc('contacts/' + ocSlug(name)).set(rec); st.textContent = name + ' added.'; e.target.reset(); }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
+document.getElementById('oc-addshow').addEventListener('submit', async e => {
+  e.preventDefault();
+  const st = document.getElementById('os-state'), name = document.getElementById('os-name').value.trim();
+  if (!name) return;
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  if (ocShowNames().includes(name)){ st.textContent = name + ' is already a show.'; return; }
+  st.textContent = 'Saving…';
+  try { await db.doc('shows/' + ocSlug(name)).set({name, order: Object.keys(ocShows).length + 1}); st.textContent = name + ' added.'; e.target.reset(); }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
+renderOutreach();
+
 // ---- Send to Claude ----
 /* What counts as unsent: a row saved and not yet recorded, the context box saved since the last record, and a step
    ticked, noted or moved; each only when it is later than the last send. */
@@ -919,6 +1137,8 @@ render();
   }
   db.doc('steer/general').onSnapshot(d => { liveSteer = d.exists ? d.data() : null; render(); }, () => {});
   db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; renderSteps(); }, () => {});
+  db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; renderOutreach(); renderSteps(); }, () => {});
+  db.collection('shows').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocShows = next; renderOutreach(); }, () => {});
   db.collection('steps').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stSteps = next; renderSteps(); }, () => {});
 })();
 </script>
