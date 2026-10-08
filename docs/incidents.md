@@ -93,5 +93,5 @@ Rules that follow:
   coordinator starts one fresh thread, once. If that thread also stops, the coordinator posts one line and waits for
   the next Send, since the next session's pull records the saves anyway.
 - Before starting a retry, check main for the rows named in the message (`python3 board/unrecorded.py`). If they are
-  recorded there is nothing to retry; say so and stop. That check costs one cheap call, not a read.
+  recorded there is nothing to retry; say so and stop. That check costs a few thousand tokens, not a retried read.
 - A thread unsubscribes from a pull request the moment it merges (CLAUDE.md, short sessions).

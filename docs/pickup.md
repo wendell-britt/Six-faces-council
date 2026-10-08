@@ -41,7 +41,7 @@ The 00:25 board read took 30 steps and $1.54 because every step rereads a sessio
 unrelated histories" on the 2026-10-08 trial.
 
 Reads that stop (2026-10-08): a read is never resumed. It is idempotent, so a stopped one is replaced by one fresh
-thread, and only after `python3 board/unrecorded.py` shows rows main still lacks. It runs in a thread from
+thread, and only after `python3 board/read.py <dir> --dry` shows rows main still lacks. It runs in a thread from
 `start_thread_session`, never in an Agent worker of the coordinator. The reason is in docs/incidents.md.
 
 ## The Send to Claude button
