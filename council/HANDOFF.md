@@ -62,7 +62,7 @@ CLAUDE.md, this file and the board.
   `podcast/ep01-isaac-holze/clips-and-captions.md`. Your steps list `podcast-ep1-clips` posts them. Waiting on
   `pod1-isaac-handle`. Episode 2's clips need step 6 once it is on YouTube; `Downloads/02-how-would-you-like-to-feel.mp4`
   (53 s) looks like one already cut.
-- **Episode 2 clips** (2026-10-07): moments are in `/mnt/project-files/podcast/ep02-tom-hurlburt/clip-moments.md`, and board question `pod2-clip-moments` recommends A, B, C, D. Next thread: read his answer, cut the picks from `~/Downloads/GMT20260925-170846_Recording_640x360.mp4` per step 6 of the podcast move (9:16, words on screen, chapters stripped), write `clips-and-captions.md`, and make a Your steps list on the day 0/2/5/9 rhythm. The move doc still says "10 to 60 seconds"; bring it in line with `pod-clip-length`. The episode's YouTube link is not on record yet.
+- **Episode 2 clips** (2026-10-08): cut. Wendell picked A, B, C, D on `pod2-clip-moments`. Four clips (37, 59, 74 and 72 s, no words, chapters stripped) are in `~/Downloads/podcast/ep02-clips/` on his Mac with `captions.md`; the same file and the four covers are in `/mnt/project-files/podcast/ep02-tom-hurlburt/` (`clips-and-captions.md`, `covers/`). Your steps list `podcast-ep2-clips` posts them on Oct 9, 12, 16 and 19, between episode 1's days. The episode's YouTube link is still not on record; the captions carry `[episode link]`.
 - **Clip length** (2026-10-07): `pod-clip-length` stands unless flipped: one or two clips of 60 to 90 seconds per
   episode, one or two of 30 to 60, none under 30. Research in the MTGOA project files at
   `podcast/reels-research-2026-10-07.md`. Next, in a new thread: recut episode 1 longer from

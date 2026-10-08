@@ -67,7 +67,9 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
    file carries the clip's words for checking them (row `pod-clip-no-words`). A clip cut from a Zoom recording keeps
    Zoom's "Recording Started" chapter, which makes players show the whole meeting's length (episode 1's 19-second
    clip showed as 48 minutes), so every cut drops it: `ffmpeg -i in.mp4 -map 0:v -map 0:a -map_chapters -1 -c copy
-   out.mp4`, then `ffprobe` checks the length. A cut that re-encodes (to reframe to vertical or join two spans) drops
+   out.mp4`, then `ffprobe` checks the length. Cut points sit in a pause between words: the Zoom transcript times whole sentences, so a
+   clip that opens mid-sentence finds its word with a speech model's word timings (episode 2 used sherpa-onnx's
+   zipformer, downloaded from its GitHub release) and an audio level check around the cut. A cut that re-encodes (to reframe to vertical or join two spans) drops
    it with `-map_chapters -1`, and ends the audio chain with `asetpts=N/SR/TB`, or the audio track reports a fraction
    of its real length (episode 1's 50-second recut first read as 12 seconds). Each clip also gets an Instagram cover,
    designed like the YouTube thumbnails and never a frame from the video (Wendell, 2026-10-07: "This is essentially
