@@ -10,7 +10,7 @@
 // its caption and buttons over the video. The contact sheet shows each cover at full height, as the grid crops it,
 // and at grid size on a phone.
 //
-// A clip picks a motif (mirror, distance, quote) and its words. *Stars* in a headline get the pink-to-gold.
+// A clip picks a motif (mirror, distance, hourglass, downhill, space, quote) and its words. *Stars* in a headline get the pink-to-gold.
 
 import { createRequire } from 'node:module';
 import fs from 'node:fs';
@@ -67,6 +67,44 @@ const motifs = {
       <circle cx="540" cy="692" r="13" fill="#e6b93f"/>
     </svg>
     <div class="glow" style="width:520px;height:360px;left:280px;top:560px;background:radial-gradient(ellipse,rgba(230,185,63,.30),transparent 70%)"></div>`,
+
+  // An hourglass half run: the question is about duration, and the answer belongs to the one feeling it.
+  hourglass: () => `
+    <svg width="${W}" height="${H}" style="position:absolute;inset:0">
+      <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff5fa8"/><stop offset="1" stop-color="#e6b93f"/></linearGradient></defs>
+      <path d="M400 400 H680 M400 840 H680" stroke="#cbc2d8" stroke-opacity=".6" stroke-width="10" stroke-linecap="round"/>
+      <path d="M420 400 C 420 540, 530 580, 530 620 C 530 660, 420 700, 420 840 M660 400 C 660 540, 550 580, 550 620 C 550 660, 660 700, 660 840"
+        fill="none" stroke="#cbc2d8" stroke-opacity=".6" stroke-width="8" stroke-linecap="round"/>
+      <path d="M470 500 Q540 530 610 500 Q590 560 540 600 Q490 560 470 500 Z" fill="url(#g)" opacity=".9"/>
+      <path d="M540 610 V790" stroke="#e6b93f" stroke-width="5" stroke-dasharray="3 12" stroke-linecap="round"/>
+      <path d="M450 830 Q540 740 630 830 Z" fill="url(#g)" opacity=".9"/>
+    </svg>
+    <div class="glow" style="width:620px;height:560px;left:230px;top:340px;background:radial-gradient(ellipse,rgba(230,185,63,.22),transparent 70%)"></div>`,
+
+  // Help that only flows one way: a stack of arrows down from a high step, nothing coming back up.
+  downhill: () => `
+    <svg width="${W}" height="${H}" style="position:absolute;inset:0">
+      <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ff5fa8"/><stop offset="1" stop-color="#e6b93f"/></linearGradient></defs>
+      <path d="M180 470 H460 V860 H900" fill="none" stroke="#cbc2d8" stroke-opacity=".55" stroke-width="9" stroke-linejoin="round"/>
+      <circle cx="320" cy="420" r="40" fill="none" stroke="#ecd9f6" stroke-width="8"/>
+      <circle cx="720" cy="810" r="40" fill="none" stroke="#ecd9f6" stroke-width="8"/>
+      <g stroke="url(#g)" stroke-width="9" stroke-linecap="round" fill="none">
+        <path d="M380 480 C 520 520, 600 620, 660 760"/><path d="M640 735 L662 768 L690 742"/>
+      </g>
+      <path d="M680 880 C 600 960, 420 900, 330 520" fill="none" stroke="#cbc2d8" stroke-opacity=".35" stroke-width="6" stroke-dasharray="4 18" stroke-linecap="round"/>
+    </svg>
+    <div class="glow" style="width:640px;height:420px;left:330px;top:540px;background:radial-gradient(ellipse,rgba(255,95,168,.20),transparent 70%)"></div>`,
+
+  // An empty space with its border held open, and one small light arriving in it.
+  space: () => `
+    <svg width="${W}" height="${H}" style="position:absolute;inset:0">
+      <defs><radialGradient id="r"><stop offset="0" stop-color="#ffe08a"/><stop offset=".5" stop-color="#e6b93f" stop-opacity=".7"/><stop offset="1" stop-color="#e6b93f" stop-opacity="0"/></radialGradient></defs>
+      <circle cx="540" cy="650" r="210" fill="none" stroke="#cbc2d8" stroke-opacity=".5" stroke-width="7" stroke-dasharray="6 20" stroke-linecap="round"/>
+      <circle cx="540" cy="650" r="270" fill="none" stroke="#ff5fa8" stroke-opacity=".35" stroke-width="4"/>
+      <circle cx="590" cy="600" r="70" fill="url(#r)"/>
+      <circle cx="590" cy="600" r="14" fill="#ffe08a"/>
+    </svg>
+    <div class="glow" style="width:760px;height:620px;left:160px;top:310px;background:radial-gradient(ellipse,rgba(217,168,240,.16),transparent 70%)"></div>`,
 
   // A line from the episode, quoted.
   quote: () => `
