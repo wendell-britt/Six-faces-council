@@ -4431,6 +4431,18 @@
    "auto": true,
    "pos": "No repo gets an advisor setting. The swarm half of the tweet already runs here: the daemons are on Haiku, research and clerical work on Sonnet, passes on Opus. Flip this to try an Opus advisor on Sonnet build sessions in one repo, measured against the usage audit. This stands unless you flip it.",
    "why": "The advisor is real (code.claude.com/docs/en/advisor), but a cloud thread can only get it from a repo settings file, which reaches every session in that repo, its Opus passes and Haiku daemons included. Each call rereads the whole session at Opus rates with no cache, and the 4 October audit found 84% of spend was rereading. The tweet's --subagents flag, worker pool and JEV layer are not in the docs. Source: project files reviews/2026-10-08-advisor-tool.md"
+  },
+  {
+   "id": "jev-no-session-routing",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "Jev research",
+   "auto": true,
+   "pos": "Jev does not pick the model for council sessions. Its next step is the quote-check trial already on the board, once the 34 saved claim-and-quote pairs are labelled. A Jev trimmer for long command output is the candidate after that, built to flag output rather than delete it. This stands unless you flip it.",
+   "why": "The Claude Code router add-on swaps models turn by turn, and each swap throws away the prompt cache (code.claude.com/docs/en/prompt-caching), while the 4 October audit found 84% of spend was rereading context. It also runs only on a local CLI and sends your messages to TypeSafe. Trimming new output keeps the cache and shrinks every later reread. Deleting by a probability would break jev-candidates-only. Source: project files reviews/2026-10-08-jev.md"
   }
  ],
  "questions": [
