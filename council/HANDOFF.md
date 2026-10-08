@@ -18,7 +18,8 @@ CLAUDE.md, this file and the board.
   `session_011mcRZ4vDnnis99dnptvdmu` at 15:45 UTC. 2026-10-04 is the first scheduled wake; check whether it reached
   the standing session (a hand-fired run started a fresh session instead). Record each run's cost from its result
   event with `council/daily.py usage`, never from get_session mid-turn.
-- **Your steps tab:** research sites (`council-research-network`), the flirtcraft database, and the branch retire
+- **Your steps tab:** research sites (`council-research-network`; retire it once `net-research-webfetch` stands, see
+  `council/ledger/2026-10-08-net-research-pass1.json`), the flirtcraft database, and the branch retire
   command are unticked.
 - **Deferred:** the oracle drafts come back 2026-11-03 (`council/due.py`).
 - **Costs measured so far:** pass ten, `council/passes/6FACE_PASS10_2026-10-03.md`.
