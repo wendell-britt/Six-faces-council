@@ -21,6 +21,7 @@ set -euo pipefail
 
 W=1080 H=1920
 PAD=${PAD:-0.5}
+PRESET=${PRESET:-medium}  # x264 speed; "fast" for a long clip on a slow machine
 LOGO_H=${LOGO_H:-440}
 LOGO_Y=${LOGO_Y:-328}
 
@@ -84,7 +85,7 @@ while IFS=$'\t' read -ra f; do
   ((nologo == 0)) && inputs+=(-i "$logo")
   ffmpeg -nostdin -hide_banner -loglevel error -y "${inputs[@]}" \
     -filter_complex "$vf" -map '[v]' -map '[aout]' -map_chapters -1 -map_metadata -1 \
-    -c:v libx264 -preset medium -crf 20 -r 30 -c:a aac -b:a 160k -ar 48000 -movflags +faststart "$dest"
+    -c:v libx264 -preset "$PRESET" -crf 20 -r 30 -c:a aac -b:a 160k -ar 48000 -movflags +faststart "$dest"
 
   vlen=$(ffprobe -v error -select_streams v:0 -show_entries stream=duration -of csv=p=0 "$dest")
   alen=$(ffprobe -v error -select_streams a:0 -show_entries stream=duration -of csv=p=0 "$dest")
