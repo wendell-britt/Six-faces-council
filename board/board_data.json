@@ -4333,6 +4333,17 @@
    "auto": true,
    "pos": "Step 2 of block work now opens up with Happy Apples for every channel, with the marks after it, and then runs a clean up move made for each emotion: Burn it away for Anger (Fire), Let it flow for Sadness (Water), Happy Apples for Joy (Wood), Sharpen it for Fear (Metal), and Rest and receive for Neutrality (Earth). Each move has three steps and one breath. The verbs are yours; the steps are the council's wording. This stands unless you flip it.",
    "why": "Your overrule of oag-open-up-tools: 'The EA move for each of the channels is a clean up move as clean up moves are for dissolving and Alchemizing blocks', with the move you named for each element, and 'The general moves for happy apples can apply to all the channels as an opening up move'. Source: bars-engine content/ontology-game/6FACE_PASS3_2026-10-07.md, addendum 2 (pull request #264)"
+  },
+  {
+   "id": "net-allowlist-not-full",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "board read 2358",
+   "auto": true,
+   "pos": "The council's cloud environment keeps a list of allowed sites and does not open to the whole internet. The research run gets en.wikipedia.org, arxiv.org and supermemo.guru added to that list, and any later site is added the same way. This stands unless you flip it.",
+   "why": "Your note on step 1 of the research network list: 'would it make sense to just make the network environment to full access?' Full access is one setting and never needs touching again. The cost: council sessions read pages written by strangers and hold a GitHub token that can push to main, so with full access a page that tricks a session can send that token or your board data to any site. With a list, it can reach only the sites on it. Also found: this project has no cloud environment of its own yet, so the steps now start in Project settings. Source: code.claude.com/docs/en/cloud-environments#network-access"
   }
  ],
  "questions": [
