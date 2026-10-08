@@ -1,0 +1,16 @@
+{
+ "date": "2026-10-08",
+ "kind": "board-pull",
+ "newest_save": "2026-10-08T00:24:48.470Z",
+ "answers": {
+  "net-research-webfetch": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:24:48.470Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
