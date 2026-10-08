@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-08",
+ "kind": "board-pull",
+ "newest_save": "2026-10-08T19:11:23.587Z",
+ "answers": {
+  "plugins-trim": {
+   "kind": "question",
+   "choice": "remove-business",
+   "savedAt": "2026-10-08T19:10:55.174Z",
+   "steer": ""
+  },
+  "jev-no-session-routing": {
+   "kind": "position",
+   "savedAt": "2026-10-08T19:11:02.429Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "daily-stopped": {
+   "kind": "position",
+   "savedAt": "2026-10-08T19:11:07.680Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "threads-on-sonnet": {
+   "kind": "position",
+   "savedAt": "2026-10-08T19:11:12.094Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "board-read-slim": {
+   "kind": "position",
+   "savedAt": "2026-10-08T19:11:20.826Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "advisor-not-repo-wide": {
+   "kind": "position",
+   "savedAt": "2026-10-08T19:11:23.587Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/plugins-trim: Remove the business plugins"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
