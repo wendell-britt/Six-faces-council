@@ -4408,6 +4408,17 @@
    "auto": true,
    "pos": "The clips are cut by one script from the Zoom video: vertical 1080x1920, the full frame over a blurred copy of itself, no burned-in words, half a second of padding each end, and each clip's length checked after the cut. Each platform adds its own captions.",
    "why": "The Mastering Allyship clip layout and the podcast move's cut rules (council/moves/podcast-episode.md). Tested on a stand-in video: the right size, sound, and length. Source: project files podcast/clips/cut_clips.sh"
+  },
+  {
+   "id": "net-research-webfetch",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "research network 1",
+   "auto": true,
+   "pos": "Council research reads through WebFetch and WebSearch, which reach public sites without any list. The cloud environment stays as it is, no site gets added by hand, and the research-sites steps leave Your steps. A file that has to be downloaded goes to Remote Control on your Mac. This stands unless you flip it.",
+   "why": "Your overrule of net-allowlist-not-full: 'Allows sites will bee too cumbersome to manage everytime we do research'. Tested today on this project's built-in environment: WebFetch read Wikipedia, arXiv (page and PDF), supermemo.guru, Gutenberg and integralworld.net, while the shell reached none it tried. The old row was wrong about the token: GitHub's token never enters a session (docs, GitHub proxy). Limits: quotes stop at 125 characters, and nothing behind a login. Source: council/passes/6FACE_PASS_net-research1_2026-10-08.md"
   }
  ],
  "questions": [
