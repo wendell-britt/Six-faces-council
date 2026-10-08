@@ -67,3 +67,31 @@ saves. Two rules follow:
 The other failure that night, at 23:31, was the coordinator's auto mode refusing to start a thread on a routine
 firing, because a firing is not Wendell typing. A standing line in the project's instructions that the pickup routine
 may always start a board read thread removes that refusal; Wendell adds it in Project settings.
+
+### The stalled reads of 2026-10-07 22:31 to 2026-10-08 11:48 (fixed 2026-10-08)
+
+The 22:31 Send's board read was stopped by container restarts four times and paused at 11:48 with six saves unconfirmed
+(wave-exhale-ends, wave-offer-opens, wave-urges-all, wave-welcome-cost, steer/general, steps/oag-body-map-02). Every
+retry paid the opening load again (about 120,000 to 140,000 tokens). All six were already on main (ledger
+`2026-10-06-board-read-2330`), so the retries recorded nothing new.
+
+What the record shows: the project chat has no thread card for that read, and `list_thread_sessions` has no thread for
+it between 21:22 and 23:54, while every read that finished that night has a card ("Board read 2106", "2354"). The read
+ran as a worker inside the coordinator's own session, which is the case the 23:49 rule above forbids. A worker dies
+when its parent's container is replaced, and nothing was saved between steps, so each death meant a restart from the
+opening load. The coordinator then "resumed" it, paying again.
+
+Another leak sat beside it: a thread that has finished is woken by a webhook for any pull request it still watches
+(the Ontology game steers thread was restarted at 23:48 by a merge on bars-engine #264, rereading 363,000 cached tokens
+to answer with no_reply_needed).
+
+Rules that follow:
+
+- A board read runs in a thread started with `start_thread_session`, on Sonnet. Never in an `Agent` worker, never in
+  the coordinator's or a routine session's own turns. If no thread card appeared, the read did not run as one.
+- A stopped read is never resumed. The read is idempotent (`board/read.py` records only what main lacks), so the
+  coordinator starts one fresh thread, once. If that thread also stops, the coordinator posts one line and waits for
+  the next Send, since the next session's pull records the saves anyway.
+- Before starting a retry, check main for the rows named in the message (`python3 board/unrecorded.py`). If they are
+  recorded there is nothing to retry; say so and stop. That check costs a few thousand tokens, not a retried read.
+- A thread unsubscribes from a pull request the moment it merges (CLAUDE.md, short sessions).
