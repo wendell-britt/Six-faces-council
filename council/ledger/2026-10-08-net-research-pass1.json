@@ -1,0 +1,647 @@
+{
+ "date": "2026-10-08",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "project-steering",
+ "project": "council research network",
+ "record": "council/passes/6FACE_PASS_net-research1_2026-10-08.md",
+ "called_by": "Wendell",
+ "invoked_from": "overrule of position net-allowlist-not-full, saved 2026-10-08T00:14:51Z, recorded by council/ledger/2026-10-08-pull-001515.json; started by the project coordinator",
+ "pulled_first": "board/pull.py at 00:15: every saved answer was recorded",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    6,
+    7,
+    9,
+    8,
+    7
+   ],
+   "changing_lines": [
+    2,
+    4
+   ],
+   "n": 30,
+   "name": "Burning",
+   "cn": "離",
+   "pinyin": "lí",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "You keep saying the same true sentence, and it is consuming its subject.",
+   "image": "☲ fire beneath ☲ fire. A yielding line held between two firm ones, twice over, and the whole figure is light.",
+   "situation": "Fire exists by holding to what it burns, which is why the character carries both brightness and clinging. The old counsel is to care for the cow — the docile thing that keeps producing. Radiance here is maintained by feeding it.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 26,
+    "name": "Reserves",
+    "cn": "大畜",
+    "pinyin": "dà chù",
+    "lines": [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "You have been storing this and never named the day.",
+    "image": "☰ heaven beneath ☶ mountain. The whole creative force held under a mountain and kept there.",
+    "situation": "Great accumulation. A large power restrained by something larger, so the holding builds it instead of souring it. The old counsel says to eat away from home and that crossing the great water is favourable, which reads as an instruction: the store was built for elsewhere, and now is when to spend it.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 44,
+   "name": "Serendipity",
+   "cn": "姤",
+   "pinyin": "gòu",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are building on one piece of evidence.",
+   "image": "☴ wind beneath ☰ heaven. One soft line has entered beneath five hard ones.",
+   "situation": "Wind under heaven touches everything without choosing what it touches. The smallest possible arrival at the base of something large and already settled. It does not feel small. That is what makes it worth watching rather than seizing.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    9,
+    8,
+    8,
+    9,
+    8
+   ],
+   "changing_lines": [
+    2,
+    5
+   ],
+   "n": 29,
+   "name": "Depths",
+   "cn": "坎",
+   "pinyin": "kǎn",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "shows": "The bottom of this has another bottom under it.",
+   "image": "☵ water beneath ☵ water. One firm line trapped between two yielding ones, and then the same again above it.",
+   "situation": "Repeated danger: the pit, and past it another pit. The old counsel is about consistency, because water goes into every hollow, fills it, and moves on, being water the whole way through. What carries you across a run of these is doing the same thing each time.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 2,
+    "name": "Bearing",
+    "cn": "坤",
+    "pinyin": "kūn",
+    "lines": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "The whole weight of this is yours, unasked.",
+    "image": "☷ earth beneath ☷ earth. Six broken lines. Every one of them has a gap at the centre.",
+    "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    9,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 9,
+   "name": "Restraint",
+   "cn": "小畜",
+   "pinyin": "xiǎo chù",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "A small rule you never revisited is holding all of this.",
+   "image": "☰ heaven beneath ☴ wind. One yielding line holding five firm ones, the way weather is held by wind.",
+   "situation": "A small force restrains a large one here, and the large one is permitting it. The single yielding line's whole strength is position. The tradition reads the restraint as accumulation: force that cannot discharge yet is being stored.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 61,
+    "name": "Incubation",
+    "cn": "中孚",
+    "pinyin": "zhōng fú",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     1,
+     1
+    ],
+    "shows": "What is true here is still inside the shell.",
+    "image": "☱ lake beneath ☴ wind. Two yielding lines at the centre with firm ones closed around them: a hollow held warm.",
+    "situation": "The character shows a bird's claw over its young. The old image is a crane calling in the shade with its young answering, a signal that carries without being aimed anywhere. The counsel says pigs and fishes bring good fortune, which the commentary reads as sincerity reaching even the dullest creature.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    9,
+    8,
+    6,
+    8,
+    7
+   ],
+   "changing_lines": [
+    2,
+    4
+   ],
+   "n": 4,
+   "name": "Fog",
+   "cn": "蒙",
+   "pinyin": "méng",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "You are guessing where you could ask.",
+   "image": "☵ water beneath ☶ mountain. A spring at the foot of a peak, with mist over all of it.",
+   "situation": "Something is genuinely obscured, and the obscured thing is the one looking. The frame is a young person who has yet to learn, and the instruction runs toward the asker: the teacher answers the first question honestly and goes quiet by the third, because a question put three times has stopped being a question.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 35,
+    "name": "Sunrise",
+    "cn": "晉",
+    "pinyin": "jìn",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "This is becoming visible faster than you planned.",
+    "image": "☷ earth beneath ☲ fire. The sun clearing the horizon, with open ground under it.",
+    "situation": "Advance, and the light getting higher. The old text gives a prince horses in quantity and three audiences in a single day, so the figure is about recognition arriving quickly. Everything in it is going up.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    7,
+    9,
+    8,
+    7
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 14,
+   "name": "Noon",
+   "cn": "大有",
+   "pinyin": "dà yǒu",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "There is a lot here, and all of it is visible.",
+   "image": "☰ heaven beneath ☲ fire. The sun at the top of the sky, with the whole day's strength under it.",
+   "situation": "Great possession: everything visible at once, in full light. The single yielding line sits fifth and holds the rest, which is the classical point — abundance is held by the soft place in it. The warning attached is about pride, since noon is also the moment the light starts down.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 26,
+    "name": "Reserves",
+    "cn": "大畜",
+    "pinyin": "dà chù",
+    "lines": [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "You have been storing this and never named the day.",
+    "image": "☰ heaven beneath ☶ mountain. The whole creative force held under a mountain and kept there.",
+    "situation": "Great accumulation. A large power restrained by something larger, so the holding builds it instead of souring it. The old counsel says to eat away from home and that crossing the great water is favourable, which reads as an instruction: the store was built for elsewhere, and now is when to spend it.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  }
+ ],
+ "tests": {
+  "shell_curl": {
+   "en.wikipedia.org": "blocked",
+   "arxiv.org": "blocked",
+   "supermemo.guru": "blocked",
+   "www.nytimes.com": "blocked"
+  },
+  "webfetch": {
+   "en.wikipedia.org": "read",
+   "arxiv.org/abs": "read",
+   "arxiv.org/pdf": "read, quote cut at 125 characters",
+   "supermemo.guru": "read",
+   "www.gutenberg.org": "read",
+   "www.integralworld.net": "read",
+   "plato.stanford.edu": "reached, the page was a 404"
+  },
+  "environment": "built-in, no settings",
+  "when": "2026-10-08 about 00:25 UTC"
+ },
+ "positions": {
+  "net-research-webfetch": "new; stands unless he flips it"
+ },
+ "questions": {},
+ "daemons": "none sent; subagent tokens 0",
+ "supersedes": "net-allowlist-not-full (overruled). Its claim that a tricked session could send the GitHub token was wrong: the token stays in the GitHub proxy.",
+ "lessons_pending": [
+  {
+   "face": "regent",
+   "wendell": "Allows sites will bee too cumbersome to manage everytime we do research\n\nIs there another way?",
+   "lesson": "Before proposing a setting he must keep up by hand, test the routes a session already has. WebFetch reached the sites the shell could not, and the per-site list was never needed.",
+   "date": "2026-10-08",
+   "source": "council/ledger/2026-10-08-pull-001515.json",
+   "status": "pending his ruling; faces.yaml changes only by his ruling"
+  },
+  {
+   "face": "challenger",
+   "wendell": "Allows sites will bee too cumbersome to manage everytime we do research\n\nIs there another way?",
+   "lesson": "Check a stated risk against the docs before it decides a row. The row said a page could send the GitHub token, and the token never enters a session.",
+   "date": "2026-10-08",
+   "source": "council/ledger/2026-10-08-pull-001515.json",
+   "status": "pending his ruling; faces.yaml changes only by his ruling"
+  }
+ ],
+ "next": "Next board read, if the row stands: delete steps list council-research-network from the board store (lists/ and steps/), and drop it from HANDOFF.md."
+}
