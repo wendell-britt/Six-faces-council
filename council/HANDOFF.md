@@ -62,7 +62,7 @@ CLAUDE.md, this file and the board.
   `podcast/ep01-isaac-holze/clips-and-captions.md`. Your steps list `podcast-ep1-clips` posts them. Waiting on
   `pod1-isaac-handle`. Episode 2's clips need step 6 once it is on YouTube; `Downloads/02-how-would-you-like-to-feel.mp4`
   (53 s) looks like one already cut.
-- **Episode 2 clips** (2026-10-07): moments are in `/mnt/project-files/podcast/ep02-tom-hurlburt/clip-moments.md`, and board question `pod2-clip-moments` recommends A, B, C, D. Next thread: read his answer, cut the picks from `~/Downloads/GMT20260925-170846_Recording_640x360.mp4` per step 6 of the podcast move (9:16, words on screen, chapters stripped), write `clips-and-captions.md`, and make a Your steps list on the day 0/2/5/9 rhythm. The move doc still says "10 to 60 seconds"; bring it in line with `pod-clip-length`. The episode's YouTube link is not on record yet.
+- **Episode 2 clips** (2026-10-08): cut. Wendell picked A, B, C, D on `pod2-clip-moments`. Four clips (37, 59, 74 and 72 s, no words, chapters stripped) are in `~/Downloads/podcast/ep02-clips/` on his Mac with `captions.md`; the same file and the four covers are in `/mnt/project-files/podcast/ep02-tom-hurlburt/` (`clips-and-captions.md`, `covers/`). Your steps list `podcast-ep2-clips` posts them on Oct 9, 12, 16 and 19, between episode 1's days. The episode's YouTube link is still not on record; the captions carry `[episode link]`.
 - **Clip length** (2026-10-07): `pod-clip-length` stands unless flipped: one or two clips of 60 to 90 seconds per
   episode, one or two of 30 to 60, none under 30. Research in the MTGOA project files at
   `podcast/reels-research-2026-10-07.md`. Next, in a new thread: recut episode 1 longer from
@@ -279,9 +279,12 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-08, from the outreach-on-board pass
 
-- **Build the Outreach tab** once the board read after 2026-10-08 lets `outreach-on-board`, `outreach-chases-live`,
-  `outreach-old-page` and `outreach-no-send` stand (pass: `council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md`).
-  Copy `contacts` and `shows` from https://claude.ai/artifact/LSrgR62X3GWJ9ryvbCrV9L into the board's store with their
-  ids (ArtifactData batch, 50 per call); add the tab and the live Podcast chases list to `board/template.html`; repoint
-  the Morning brief routine (`trig_01KkW95XDC3xrnYxmBLbjmX2`) outreach section to the board's store; republish the old
-  page as a pointer; withdraw the steps of list `podcast-outreach-chase`. Run the pass's dated tests by 2026-10-15.
+- **Built** (`council/ledger/2026-10-08-outreach-tab-build.json`): the board has an Outreach tab and a live Podcast
+  chases list on Your steps, both on the board's own `contacts` and `shows`, copied from
+  https://claude.ai/artifact/LSrgR62X3GWJ9ryvbCrV9L with their ids. The Morning brief routine
+  (`trig_01KkW95XDC3xrnYxmBLbjmX2`) reads the board's contacts. The old page is a pointer; its store is kept untouched.
+  Step `podcast-outreach-chase-01` is withdrawn.
+- **Dated checks, by 2026-10-15:** a chase Wendell saves shows on the contact at once; the first weekday morning brief
+  after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower
+  on his phone. If the board is slow, the Challenger's fallback is a second page inside the same artifact.
+- **Not in scope:** the Event Pipeline stays on its own page until a pass of its own (the Challenger's dissent).
