@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "positions": [
   {
    "id": "build",
@@ -12457,6 +12457,65 @@
      "architect"
     ],
     "pass": "podcast marketing"
+   },
+   "net-allowlist-not-full": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:14:51.453Z",
+    "record": "council/ledger/2026-10-08-pull-001515.json (six-faces-council)",
+    "steer": "Allows sites will bee too cumbersome to manage everytime we do research\n\nIs there another way?",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "board read 2358"
+   },
+   "outreach-on-board": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:14:56.015Z",
+    "record": "council/ledger/2026-10-08-pull-001515.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "outreach on the board 1"
+   },
+   "outreach-chases-live": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:15:03.151Z",
+    "record": "council/ledger/2026-10-08-pull-001515.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "outreach on the board 1"
+   },
+   "outreach-old-page": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:15:09.519Z",
+    "record": "council/ledger/2026-10-08-pull-001515.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "outreach on the board 1"
+   },
+   "outreach-no-send": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:15:15.786Z",
+    "record": "council/ledger/2026-10-08-pull-001515.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "outreach on the board 1"
    }
   },
   "questions": {

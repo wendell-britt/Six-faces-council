@@ -1,0 +1,42 @@
+{
+ "date": "2026-10-08",
+ "kind": "board-pull",
+ "newest_save": "2026-10-08T00:15:15.786Z",
+ "answers": {
+  "net-allowlist-not-full": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:14:51.453Z",
+   "status": "overrule",
+   "steer": "Allows sites will bee too cumbersome to manage everytime we do research\n\nIs there another way?"
+  },
+  "outreach-on-board": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:14:56.015Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "outreach-chases-live": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:15:03.151Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "outreach-old-page": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:15:09.519Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "outreach-no-send": {
+   "kind": "position",
+   "savedAt": "2026-10-08T00:15:15.786Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "positions/net-allowlist-not-full: Overruled (steer: \"Allows sites will bee too cumbersome to manage everytime we do research\n\nIs there another way?\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
