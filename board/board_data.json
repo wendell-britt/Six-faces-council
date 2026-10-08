@@ -12607,6 +12607,18 @@
      "regent"
     ],
     "pass": "podcast clips"
+   },
+   "net-research-webfetch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T00:24:48.470Z",
+    "record": "council/ledger/2026-10-08-pull-002448.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "research network 1"
    }
   },
   "questions": {
