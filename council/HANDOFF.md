@@ -93,8 +93,11 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   Podcast Thumbnail Studio is at https://claude.ai/artifact/RAiZ3keBiE6BvDD6YKA9S8 (`pod-thumb-studio`).
 - **Book harvest (2026-10-07, battle `fr-book` round 2):** flirtcraft #12 (draft) adds `book/podcast/episode-01.md`
   (20 ideas, conflicts with the app) and `book/podcast/README.md` (the recipe for the next episode). Questions
-  `book-golds-satisfactions` and `book-permission-remedy` wait on Wendell; `fc-fear-rung-wonder` is a small decks.json
-  fix to build once it stands. Mark #12 ready once he has seen it; it merges by itself after that.
+  `book-golds-satisfactions` and `book-permission-remedy` came back "both" on 2026-10-07; #12 merged the same day.
+  flirtcraft #13 (draft) folds every `fr-book` round 2 answer into `book/OUTLINE.md` (ch 19 satisfactions, new
+  ch 27 relationships and ch 28 where permission is given) and changes fear's gold to wonder in `lib/decks.json`.
+  **Open:** decks.json is generated from the vault, so the vault needs the same four strings (GRAMMAR.md §12g)
+  or the next regeneration brings excitement back.
 - **Episode 1 clips (2026-10-08, round 6):** Wendell picked 02, 03, 06 and 07 (`pod-ep1-clip-pick`). They are cut
   in `/mnt/project-files/podcast/clips/video/` (1080x1920, lengths checked) with covers in `covers/` and captions in
   `clips-and-captions.md`. The source video is `/mnt/project-files/GMT20261005-171810_Recording_640x360.mp4`. The
