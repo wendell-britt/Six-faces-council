@@ -4419,6 +4419,18 @@
    "auto": true,
    "pos": "Council research reads through WebFetch and WebSearch, which reach public sites without any list. The cloud environment stays as it is, no site gets added by hand, and the research-sites steps leave Your steps. A file that has to be downloaded goes to Remote Control on your Mac. This stands unless you flip it.",
    "why": "Your overrule of net-allowlist-not-full: 'Allows sites will bee too cumbersome to manage everytime we do research'. Tested today on this project's built-in environment: WebFetch read Wikipedia, arXiv (page and PDF), supermemo.guru, Gutenberg and integralworld.net, while the shell reached none it tried. The old row was wrong about the token: GitHub's token never enters a session (docs, GitHub proxy). Limits: quotes stop at 125 characters, and nothing behind a login. Source: council/passes/6FACE_PASS_net-research1_2026-10-08.md"
+  },
+  {
+   "id": "advisor-not-repo-wide",
+   "faces": [
+    "architect",
+    "regent",
+    "challenger"
+   ],
+   "pass": "advisor tool",
+   "auto": true,
+   "pos": "No repo gets an advisor setting. The swarm half of the tweet already runs here: the daemons are on Haiku, research and clerical work on Sonnet, passes on Opus. Flip this to try an Opus advisor on Sonnet build sessions in one repo, measured against the usage audit. This stands unless you flip it.",
+   "why": "The advisor is real (code.claude.com/docs/en/advisor), but a cloud thread can only get it from a repo settings file, which reaches every session in that repo, its Opus passes and Haiku daemons included. Each call rereads the whole session at Opus rates with no cache, and the 4 October audit found 84% of spend was rereading. The tweet's --subagents flag, worker pool and JEV layer are not in the docs. Source: project files reviews/2026-10-08-advisor-tool.md"
   }
  ],
  "questions": [
