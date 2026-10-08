@@ -4443,6 +4443,39 @@
    "auto": true,
    "pos": "Jev does not pick the model for council sessions. Its next step is the quote-check trial already on the board, once the 34 saved claim-and-quote pairs are labelled. A Jev trimmer for long command output is the candidate after that, built to flag output rather than delete it. This stands unless you flip it.",
    "why": "The Claude Code router add-on swaps models turn by turn, and each swap throws away the prompt cache (code.claude.com/docs/en/prompt-caching), while the 4 October audit found 84% of spend was rereading context. It also runs only on a local CLI and sends your messages to TypeSafe. Trimming new output keeps the cache and shrinks every later reread. Deleting by a probability would break jev-candidates-only. Source: project files reviews/2026-10-08-jev.md"
+  },
+  {
+   "id": "daily-stopped",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "session costs",
+   "auto": true,
+   "pos": "The daily routine is switched off, not deleted. Its safety-net pull and the deferred-item check already run at the start of every board read, so nothing it guarded is lost. The daily move (research, clean-up, a test) stops; when you want one, it goes on the board as an ask and runs in its own short thread.",
+   "why": "Your words: 'The daily session I think just needs to stop all together and get folded into the council board if it's that expensive'. The standing daily session cost $53 and had grown to 763,000 tokens since 3 October, the largest single cost on record. Routine trig_01F8fDdkjYEeMCfdozj6w3tt, enabled false at 01:47 UTC on 8 October. Source: project files usage-audit/sessions-2026-10-08.md"
+  },
+  {
+   "id": "threads-on-sonnet",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "session costs",
+   "auto": true,
+   "pos": "The coordinator starts board reads, recording, merges, rebuilds and steward work on Sonnet whenever it can choose a thread's model. Passes, new design and first drafts stay on Opus. Every one of the last 31 sessions ran on Opus, board reads included.",
+   "why": "Your words: 'we need to figure out how to be more diligent about spinning up sonnet agents for thread work'. The rule was already in CLAUDE.md and nothing applied it. Written into project memory, which the coordinator reads at start. Sonnet saves about a quarter, since rereading costs the same per token on both. Source: project files usage-audit/sessions-2026-10-08.md"
+  },
+  {
+   "id": "board-read-slim",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "session costs",
+   "auto": true,
+   "pos": "A fresh thread slims the board read: the store comes through ArtifactData into a file and pull.py, never the whole board page into the conversation, and the steps a script can do go into one script, so a read takes a handful of steps instead of thirty. It is measured against today's numbers.",
+   "why": "The 00:25 board read started at 102,416 tokens before any work and took 30 steps, rereading 2.66 million tokens for $1.54. Each extra step rereads the whole session, so steps cost more than words. Source: that session's result event; project files usage-audit/sessions-2026-10-08.md"
   }
  ],
  "questions": [
@@ -7906,6 +7939,34 @@
      "v": "steer",
      "label": "None yet, I will steer in the box",
      "c": "Name the clips you want, or a moment not on the list, and the council cuts that instead."
+    }
+   ]
+  },
+  {
+   "id": "plugins-trim",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "session costs",
+   "q": "Which account plugins should come off so every session starts smaller? The council recommends removing the business plugins the council never uses.",
+   "why_you": "Plugins belong to your whole Claude account, so removing one also removes it from your Mastering Allyship and other work. Only you know which of those you use there.",
+   "not_before": "Every session opens with about 102,000 tokens before doing any work. Part of that is the list of every installed skill and agent: sales (37 skills), small-business (about 45), marketing, finance, Apollo, brand-voice, customer-support, design, product-management and productivity. The council uses none of them. By this session's own estimate they make up roughly 15,000 to 25,000 of the 102,000, and every step of every session rereads them. Small-business also adds a second copy of Gmail, Calendar and Drive.",
+   "options": [
+    {
+     "v": "remove-business",
+     "label": "Remove the business plugins (recommended)",
+     "c": "Sales, small-business, marketing, finance, Apollo, brand-voice, customer-support, design, product-management and productivity come off your account. You can add any back later from the plugin list. Your steps gets the exact clicks."
+    },
+    {
+     "v": "remove-some",
+     "label": "Remove some, keep the ones I use",
+     "c": "Name the ones to keep in the box, and Your steps lists the rest to remove."
+    },
+    {
+     "v": "keep",
+     "label": "Keep them all",
+     "c": "Nothing changes, and the council cuts what it controls: CLAUDE.md length, the repos each session loads, and the board read."
     }
    ]
   }
