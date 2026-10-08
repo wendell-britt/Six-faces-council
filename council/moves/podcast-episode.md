@@ -60,7 +60,9 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
    stories, one or two of 30 to 60 seconds for sharp lines, none under 30, and each opens on its strongest line. The
    moments are one question on the board. Once he picks, and the episode's video is in a folder on his Mac that the
    session can reach, the session cuts each clip there with ffmpeg, vertical at 1080 by 1920, with no words burned
-   into the video. Wendell, 2026-10-07: "we don't want to have the words on screen. Instragram is going to take care
+   into the video. `council/podcast/cut_clips.sh` does the cut: the full frame over a blurred copy of itself, the show's
+   logo at the top (Wendell, 2026-10-08: "Let's add the podcast logo to the top like the Mastering Allyship ones
+   do"), half a second of padding each end, and each clip's length checked. Wendell, 2026-10-07: "we don't want to have the words on screen. Instragram is going to take care
    of that." He turns on Instagram's auto captions when posting, so his Your steps list says to, and the captions
    file carries the clip's words for checking them (row `pod-clip-no-words`). A clip cut from a Zoom recording keeps
    Zoom's "Recording Started" chapter, which makes players show the whole meeting's length (episode 1's 19-second
