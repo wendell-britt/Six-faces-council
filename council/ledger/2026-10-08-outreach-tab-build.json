@@ -1,0 +1,23 @@
+{
+ "date": "2026-10-08",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "build",
+ "cause": "council-design",
+ "project": "podcast outreach",
+ "record": "council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md",
+ "called_by": "board read 0015 (2382fe2): outreach-on-board, outreach-chases-live, outreach-old-page and outreach-no-send stood",
+ "built": [
+  "Copied 76 contacts and 4 shows from the Podcast Outreach store (https://claude.ai/artifact/LSrgR62X3GWJ9ryvbCrV9L) into the board's store with their ids, two ArtifactData batches; the old store is untouched.",
+  "board/template.html: an Outreach tab (show filters, status picker, add someone, add a show) writing contacts and shows in the board's store.",
+  "board/template.html: a standing Podcast chases list at the top of Your steps, computed live from contacts by the morning brief's three rules, plus Booked contacts recording within three days. Sent, Booked or Not now, a next-touch date defaulting to five days out, and one note line; saving writes the contact (status, lastTouch, nextTouch, flag cleared, dated note prepended).",
+  "Chase saves write only contacts, which pendingSaves never reads, so the Send bar stays dark (outreach-no-send).",
+  "Morning brief routine trig_01KkW95XDC3xrnYxmBLbjmX2: outreach section reads the board's contacts; it still writes only state/current.",
+  "Tabs fit a 390px phone with four tabs (smaller padding under 560px); .st-where[hidden] now hides."
+ ],
+ "tested": "Headless Chromium at 390 and 1200 wide with a stub store seeded from the copied contacts: 76 rows, 9 show filters, 4 chases (Mattias Lehman, Peregrine, Tom Hurlburt, whoreborealis), saving Mattias as Sent wrote status Followed up, lastTouch 2026-10-08, nextTouch 2026-10-13 and a dated note, the chase left the list, the Send bar stayed off, no page errors, no sideways scroll on Open, Your steps or Outreach.",
+ "tests_dated": [
+  "By 2026-10-15: a chase Wendell saves on the board shows on the contact in the Outreach tab at once, with no session run.",
+  "By 2026-10-15: the first weekday morning brief after the build lists its chases from the board's store.",
+  "First phone check: the board opens no slower with the contacts in its store."
+ ]
+}
