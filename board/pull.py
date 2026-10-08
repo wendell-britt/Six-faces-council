@@ -155,6 +155,8 @@ def main():
     if a.push:
         if git("status", "--porcelain", "--untracked-files=no").stdout.strip():
             sys.exit("the work tree has changes of its own; commit or stash them first")
+        if git("rev-parse", "--is-shallow-repository").stdout.strip() == "true":
+            git("fetch", "-q", "--unshallow", "origin")  # a shallow cloud checkout cannot merge main (board-read-slim)
         git("checkout", "-q", "main")
         git("pull", "-q", "--no-rebase", "origin", "main")
     data = json.loads(DATA.read_text(encoding="utf-8"))

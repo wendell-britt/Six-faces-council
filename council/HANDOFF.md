@@ -8,7 +8,8 @@ CLAUDE.md, this file and the board.
 
 Costs of every council session, read from the platform: project files `usage-audit/sessions-2026-10-08.md`. A
 session opens at about 102,000 tokens before doing any work (first_request_input_tokens of the 00:25 board read).
-- **Slim the board read** (`board-read-slim`): one new thread, on Sonnet. Store through ArtifactData into a file,
+- **Slim the board read** (`board-read-slim`): built 2026-10-08, `board/read.py`, steps in docs/pickup.md. Next
+  real read measures it against 30 steps and $1.54. Original brief: one new thread, on Sonnet. Store through ArtifactData into a file,
   never the whole page into the conversation; fold the scriptable steps into one script; measure steps and cost
   against the 00:25 read (30 steps, 2.66M tokens reread, $1.54).
 - **Plugins** (`plugins-trim`): waits on Wendell. On an answer, write the exact removal clicks on Your steps.
