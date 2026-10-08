@@ -4476,6 +4476,47 @@
    "auto": true,
    "pos": "A fresh thread slims the board read: the store comes through ArtifactData into a file and pull.py, never the whole board page into the conversation, and the steps a script can do go into one script, so a read takes a handful of steps instead of thirty. It is measured against today's numbers.",
    "why": "The 00:25 board read started at 102,416 tokens before any work and took 30 steps, rereading 2.66 million tokens for $1.54. Each extra step rereads the whole session, so steps cost more than words. Source: that session's result event; project files usage-audit/sessions-2026-10-08.md"
+  },
+  {
+   "id": "up-short-sessions",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "unreal pipeline",
+   "auto": true,
+   "pos": "The first 3D build runs as about six short Remote Control sessions on your computer, each ending in a HANDOFF.md, not as the tweet's single four-hour session.",
+   "why": "The tweet's 19% of a weekly Max plan is about $230 to $250 of your week at list prices, matching what a long session costs here: 84% of spend is rereading. Short sessions come to an estimated $90 to $210. Source: usage-audit/audit-2026-10-04.md; CLAUDE.md short-sessions rule; unreal-pipeline/plan.md"
+  },
+  {
+   "id": "up-gpu-by-script",
+   "faces": [
+    "architect"
+   ],
+   "pass": "unreal pipeline",
+   "auto": true,
+   "pos": "The first session reads your computer's operating system, GPU and memory with a script and sets the graphics budget from them, so you are not asked.",
+   "why": "The tweet's step 4 is 'tell it your GPU'. A script on the machine answers it, so the reach test fails. Source: unreal-pipeline/plan.md"
+  },
+  {
+   "id": "up-repo",
+   "faces": [
+    "architect"
+   ],
+   "pass": "unreal pipeline",
+   "auto": true,
+   "pos": "A new repository, wendell-britt/calrunia-3d, holds the 3D game's design, Meshy prompts, Blender and Unreal scripts, asset manifest and handoff. Unreal's large binary files stay on your computer until the slice is worth keeping.",
+   "why": "Cloud threads can then read the state and plan each session; the asset manifest carries Sprout's rule that game data names asset ids, never paths. Source: sprout CLAUDE.md; unreal-pipeline/plan.md"
+  },
+  {
+   "id": "up-cost-stop",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "unreal pipeline",
+   "auto": true,
+   "pos": "Each 3D build session's cost is read from the platform when it ends. If the first slice passes $200 at list prices, the build stops and reports before going on.",
+   "why": "The council's estimate is $90 to $210; a stop keeps one bad session from becoming the week. Source: usage-audit/audit-2026-10-04.md"
   }
  ],
  "questions": [
@@ -7967,6 +8008,77 @@
      "v": "keep",
      "label": "Keep them all",
      "c": "Nothing changes, and the council cuts what it controls: CLAUDE.md length, the repos each session loads, and the board read."
+    }
+   ]
+  },
+  {
+   "id": "up-game-pick",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "unreal pipeline",
+   "q": "Which 3D game should the Unreal, Blender and Meshy pipeline build first? The council recommends the Cave of Lessons.",
+   "why_you": "This is a new game from the ontology, and which one is your preference. It changes every asset, room and script the first build makes.",
+   "not_before": "This is the council's first pass on the 3D pipeline, from your message of 8 October quoting the rewind02 tweet. The plan is in the project files at unreal-pipeline/plan.md; each idea is described there.",
+   "options": [
+    {
+     "v": "cave",
+     "label": "The Cave of Lessons (recommended)",
+     "c": "A third-person walk through the act II cave: three rooms in the first slice, each on one act II lesson, with one daemon you pass by its lesson. Mostly environments and props, which Meshy and Blender do well, and the design already exists."
+    },
+    {
+     "v": "arena",
+     "label": "Spirit push-hands arena",
+     "c": "The externalized neigong fights from the WAVE playtest, in 3D with the Avatar feel. The most exciting and the hardest: it needs the hand contact Root is still solving, rebuilt in Unreal's physics, so the first build costs more and may stall."
+    },
+    {
+     "v": "garden",
+     "label": "The five-element garden",
+     "c": "Sprout's farming loop in 3D, with alchemy changing the land by season. Many small props and a slower loop to test."
+    },
+    {
+     "v": "court",
+     "label": "The daemons' court",
+     "c": "A small social game meeting the seven daemons with Allyship's three questions. The least 3D, the most dialogue, so it tests the pipeline least."
+    },
+    {
+     "v": "road",
+     "label": "Escort on the Calrunian road",
+     "c": "An allyship journey helping a traveller across open terrain. Needs large terrain and a companion that navigates, which is more Unreal work up front."
+    }
+   ]
+  },
+  {
+   "id": "up-meshy-plan",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "unreal pipeline",
+   "q": "Which Meshy plan should the 3D pipeline use? The council recommends Pro for one month.",
+   "why_you": "Money is reserved to you. Meshy is billed apart from your Claude plan.",
+   "not_before": "This is the first pass on the 3D pipeline. Figures are from Meshy's pricing docs (about 20 credits a model, 10 for texturing) and third-party reviews (Pro about $20 a month for 1,000 credits, Studio about $60 for 4,000); check meshy.ai before paying. The first slice needs roughly 1,000 to 2,000 credits.",
+   "options": [
+    {
+     "v": "pro",
+     "label": "Pro, one month (recommended)",
+     "c": "About $20. Enough for the first props and the character if retries stay low; models are yours privately, so this game's art starts with a clear licence. If credits run out the build pauses and reports."
+    },
+    {
+     "v": "studio",
+     "label": "Studio, one month",
+     "c": "About $60 and about 4,000 credits, room for the whole slice with retries and the next rooms."
+    },
+    {
+     "v": "free",
+     "label": "Free plan",
+     "c": "100 credits a month, models under CC BY 4.0 (credit Meshy on any release), limited downloads, and API access appears to need a paid plan, so Claude cannot drive it directly. The slice would take months of credits."
+    },
+    {
+     "v": "none",
+     "label": "No Meshy",
+     "c": "Props are modelled in Blender by script and from free kits whose licences need checking. Slower and plainer, with no Meshy cost."
     }
    ]
   }
