@@ -86,15 +86,11 @@ CLAUDE.md, this file and the board.
   ch 27 relationships and ch 28 where permission is given) and changes fear's gold to wonder in `lib/decks.json`.
   **Open:** decks.json is generated from the vault, so the vault needs the same four strings (GRAMMAR.md §12g)
   or the next regeneration brings excitement back.
-- **Episode 1 clips (2026-10-08, round 6):** eight moments with QC are in `/mnt/project-files/podcast/clips/`
-  (`clips.md`, `clips.tsv`), each with a 1080x1920 cover in `covers/` made in the studio's new "Clip cover 9:16"
-  format (`pod-ep1-clip-covers`; source `podcast/thumbnails/thumbnail-studio-source.html`). Question
-  `pod-ep1-clip-pick` recommends 02, 03, 06, 07, and he picked them (board read 0020). They are cut, with the
-  Flirtcraft cover on top as his `pod-ep1-clip-cut` steer asked, into `~/Downloads/podcast/flirtcraft-ep01-clips/` on
-  his Mac from `GMT20261005-171810_Recording_640x360.mp4`, by `council/podcast/cut_clips.sh`: 02 is 42 s, 03 59 s,
-  06 77 s and 07 39 s. The times came from the VTT (`podcast/_claude_work/fc-ep1/clips.tsv`), because this project
-  cannot see the other project's `clips.tsv`. Next thread: check the clip starts and ends against that file and the
-  cover quotes, write `clips-and-captions.md`, and tick step 1 of `flirtcraft-ep1-clips`.
+- **Episode 1 clips (2026-10-08, round 6):** Wendell picked 02, 03, 06 and 07 (`pod-ep1-clip-pick`). They are cut
+  in `/mnt/project-files/podcast/clips/video/` (1080x1920, lengths checked) with covers in `covers/` and captions in
+  `clips-and-captions.md`. The source video is `/mnt/project-files/GMT20261005-171810_Recording_640x360.mp4`. The
+  cover quotes come from Zoom's captions and have not been checked by ear. Your steps list `flirtcraft-ep1-clips`
+  posts them; `[episode link]` and `[QC's handle]` in the captions wait on the Spotify link and his handle.
 - **Cover art (done):** Wendell picked cover B, Two signals, at 20:02 on 2026-10-06, in the flirt red (#ff5a5f to
   #d4003a) his `pod-art-ma` steer asked for. The final file is `/mnt/project-files/podcast/covers/flirtcraft-podcast-cover.jpg`
   (3000x3000), and step 4 of Your steps list `podcast-spotify` names it. The other drafts, `covers.html` and
