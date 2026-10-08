@@ -83,6 +83,13 @@ CLAUDE.md, this file and the board.
   (20 ideas, conflicts with the app) and `book/podcast/README.md` (the recipe for the next episode). Questions
   `book-golds-satisfactions` and `book-permission-remedy` wait on Wendell; `fc-fear-rung-wonder` is a small decks.json
   fix to build once it stands. Mark #12 ready once he has seen it; it merges by itself after that.
+- **Episode 1 clips (2026-10-08, round 6):** eight moments with QC are in `/mnt/project-files/podcast/clips/`
+  (`clips.md`, `clips.tsv`), each with a 1080x1920 cover in `covers/` made in the studio's new "Clip cover 9:16"
+  format (`pod-ep1-clip-covers`; source `podcast/thumbnails/thumbnail-studio-source.html`). Question
+  `pod-ep1-clip-pick` recommends 02, 03, 06, 07. Waiting on the Zoom MP4 (Your steps list `flirtcraft-ep1-clips`,
+  step 1). Next thread: read his pick, run `bash cut_clips.sh <mp4>` (vertical, blurred fill, no words, chapters
+  stripped, length checked; `pod-ep1-clip-cut`), check the cover quotes against the audio, write
+  `clips-and-captions.md`, and fix the steps if he picked another set.
 - **Cover art (done):** Wendell picked cover B, Two signals, at 20:02 on 2026-10-06, in the flirt red (#ff5a5f to
   #d4003a) his `pod-art-ma` steer asked for. The final file is `/mnt/project-files/podcast/covers/flirtcraft-podcast-cover.jpg`
   (3000x3000), and step 4 of Your steps list `podcast-spotify` names it. The other drafts, `covers.html` and
