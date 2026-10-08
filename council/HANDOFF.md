@@ -86,10 +86,12 @@ CLAUDE.md, this file and the board.
 - **Episode 1 clips (2026-10-08, round 6):** eight moments with QC are in `/mnt/project-files/podcast/clips/`
   (`clips.md`, `clips.tsv`), each with a 1080x1920 cover in `covers/` made in the studio's new "Clip cover 9:16"
   format (`pod-ep1-clip-covers`; source `podcast/thumbnails/thumbnail-studio-source.html`). Question
-  `pod-ep1-clip-pick` recommends 02, 03, 06, 07. Waiting on the Zoom MP4 (Your steps list `flirtcraft-ep1-clips`,
-  step 1). Next thread: read his pick, run `bash cut_clips.sh <mp4>` (vertical, blurred fill, no words, chapters
-  stripped, length checked; `pod-ep1-clip-cut`), check the cover quotes against the audio, write
-  `clips-and-captions.md`, and fix the steps if he picked another set.
+  `pod-ep1-clip-pick` recommends 02, 03, 06, 07, and he picked them (board read 0020). They are cut, with the
+  Flirtcraft cover on top as his `pod-ep1-clip-cut` steer asked, into `~/Downloads/podcast/flirtcraft-ep01-clips/` on
+  his Mac from `GMT20261005-171810_Recording_640x360.mp4`, by `council/podcast/cut_clips.sh`: 02 is 42 s, 03 59 s,
+  06 77 s and 07 39 s. The times came from the VTT (`podcast/_claude_work/fc-ep1/clips.tsv`), because this project
+  cannot see the other project's `clips.tsv`. Next thread: check the clip starts and ends against that file and the
+  cover quotes, write `clips-and-captions.md`, and tick step 1 of `flirtcraft-ep1-clips`.
 - **Cover art (done):** Wendell picked cover B, Two signals, at 20:02 on 2026-10-06, in the flirt red (#ff5a5f to
   #d4003a) his `pod-art-ma` steer asked for. The final file is `/mnt/project-files/podcast/covers/flirtcraft-podcast-cover.jpg`
   (3000x3000), and step 4 of Your steps list `podcast-spotify` names it. The other drafts, `covers.html` and

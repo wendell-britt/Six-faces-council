@@ -14,14 +14,16 @@
 # dropped and the audio chain ends with asetpts=N/SR/TB, or players report the wrong length. Each clip's video and
 # audio length is checked after the cut, and a clip outside 30 to 90 seconds is flagged (pod-clip-length).
 #
-# The logo sits centred, below the strip Instagram covers with the account name, and above the video. LOGO_H and
-# LOGO_TOP move it; --no-logo cuts without one.
+# The logo sits where the Mastering Allyship clips have it (podcast/_claude_work/ep02/render.py on his Mac): 440
+# pixels tall, centred in the band above the video at y=328. LOGO_H and LOGO_Y move it; --no-logo cuts without one.
+# Loudness is normalised to -14 LUFS, as those clips are.
 set -euo pipefail
 
 W=1080 H=1920
 PAD=${PAD:-0.5}
-LOGO_H=${LOGO_H:-340}
-LOGO_TOP=${LOGO_TOP:-210}
+PRESET=${PRESET:-medium}  # x264 speed; "fast" for a long clip on a slow machine
+LOGO_H=${LOGO_H:-440}
+LOGO_Y=${LOGO_Y:-328}
 
 usage() { sed -n '4,5p' "$0" | sed 's/^# *//' >&2; exit 2; }
 
@@ -66,9 +68,9 @@ fi
 
 vf="[0:v]split[a][b];[a]scale=$W:$H:force_original_aspect_ratio=increase,crop=$W:$H,gblur=sigma=40,eq=brightness=-0.08[bg];[b]scale=$W:-2[fg];[bg][fg]overlay=(W-w)/2:(H-h)/2"
 if ((nologo == 0)); then
-  vf+="[base];[1:v]scale=-1:$LOGO_H,format=rgba[logo];[base][logo]overlay=(W-w)/2:$LOGO_TOP:eof_action=repeat"
+  vf+="[base];[1:v]scale=-1:$LOGO_H,format=rgba[logo];[base][logo]overlay=(W-w)/2:$LOGO_Y-h/2:eof_action=repeat"
 fi
-vf+=",format=yuv420p[v];[0:a]asetpts=N/SR/TB[aout]"
+vf+=",format=yuv420p[v];[0:a]loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo,asetpts=N/SR/TB[aout]"
 
 made=0 flagged=0
 while IFS=$'\t' read -ra f; do
@@ -83,7 +85,7 @@ while IFS=$'\t' read -ra f; do
   ((nologo == 0)) && inputs+=(-i "$logo")
   ffmpeg -nostdin -hide_banner -loglevel error -y "${inputs[@]}" \
     -filter_complex "$vf" -map '[v]' -map '[aout]' -map_chapters -1 -map_metadata -1 \
-    -c:v libx264 -preset medium -crf 20 -r 30 -c:a aac -b:a 160k -ar 48000 -movflags +faststart "$dest"
+    -c:v libx264 -preset "$PRESET" -crf 20 -r 30 -c:a aac -b:a 160k -ar 48000 -movflags +faststart "$dest"
 
   vlen=$(ffprobe -v error -select_streams v:0 -show_entries stream=duration -of csv=p=0 "$dest")
   alen=$(ffprobe -v error -select_streams a:0 -show_entries stream=duration -of csv=p=0 "$dest")
