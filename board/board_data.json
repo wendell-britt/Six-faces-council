@@ -12704,6 +12704,68 @@
      "regent"
     ],
     "pass": "research network 1"
+   },
+   "jev-no-session-routing": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T19:11:02.429Z",
+    "record": "council/ledger/2026-10-08-pull-191123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "Jev research"
+   },
+   "daily-stopped": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T19:11:07.680Z",
+    "record": "council/ledger/2026-10-08-pull-191123.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "session costs"
+   },
+   "threads-on-sonnet": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T19:11:12.094Z",
+    "record": "council/ledger/2026-10-08-pull-191123.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "session costs"
+   },
+   "board-read-slim": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T19:11:20.826Z",
+    "record": "council/ledger/2026-10-08-pull-191123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "session costs"
+   },
+   "advisor-not-repo-wide": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T19:11:23.587Z",
+    "record": "council/ledger/2026-10-08-pull-191123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent",
+     "challenger"
+    ],
+    "pass": "advisor tool"
    }
   },
   "questions": {
@@ -14085,6 +14147,18 @@
      "diplomat"
     ],
     "pass": "podcast clips"
+   },
+   "plugins-trim": {
+    "decision": "remove-business",
+    "label": "Remove the business plugins",
+    "recorded": "2026-10-08",
+    "saved_at": "2026-10-08T19:10:55.174Z",
+    "record": "council/ledger/2026-10-08-pull-191123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "session costs"
    }
   },
   "causes": {
