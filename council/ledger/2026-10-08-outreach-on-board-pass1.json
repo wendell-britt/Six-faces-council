@@ -1,0 +1,632 @@
+{
+ "date": "2026-10-08",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "podcast outreach",
+ "record": "council/passes/6FACE_PASS_outreach-on-board1_2026-10-08.md",
+ "called_by": "Wendell",
+ "invoked_from": "note on board step podcast-outreach-chase-01, 2026-10-07T23:55:18Z, started by the project coordinator",
+ "pulled_first": "board/pull.py: every saved answer was already recorded",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    6,
+    8,
+    7,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [
+    1
+   ],
+   "n": 53,
+   "name": "Emergence",
+   "cn": "漸",
+   "pinyin": "jiàn",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "This has stages, and you are trying to skip one.",
+   "image": "☶ mountain beneath ☴ wind. A tree taking hold on a mountainside, advancing at the rate roots allow.",
+   "situation": "Gradual progress, by stages that cannot be skipped. The old text tracks wild geese across six landings — the shore, the rock, the plateau, the tree, the summit — and each is a place the bird stands on before the next. Speed here is set by the ground.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 37,
+    "name": "Household",
+    "cn": "家人",
+    "pinyin": "jiā rén",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "An arrangement has formed here without being discussed.",
+    "image": "☲ fire beneath ☴ wind. Fire making its own draught, with the wind coming out of the flame.",
+    "situation": "The family. The old text begins with correctness inside the house and works outward, and the commentary's point is structural: positions held properly within produce order without. Wind out of fire — what happens in here goes out there.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    6,
+    7,
+    9
+   ],
+   "changing_lines": [
+    4,
+    6
+   ],
+   "n": 59,
+   "name": "Dispersal",
+   "cn": "渙",
+   "pinyin": "huàn",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "What you were holding rigid is coming apart.",
+   "image": "☵ water beneath ☴ wind. Wind crossing water and breaking the surface up.",
+   "situation": "Dissolution. Wind scatters what had frozen or clotted, and the old counsel sends the king to the temple and across the great water, so the scattering gets treated as an opening. What disperses here is rigidity.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 47,
+    "name": "Drained",
+    "cn": "困",
+    "pinyin": "kùn",
+    "lines": [
+     0,
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    "shows": "The explaining continues and the basin is dry.",
+    "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+    "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    6,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 2,
+   "name": "Bearing",
+   "cn": "坤",
+   "pinyin": "kūn",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "The whole weight of this is yours, unasked.",
+   "image": "☷ earth beneath ☷ earth. Six broken lines. Every one of them has a gap at the centre.",
+   "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 15,
+    "name": "Understatement",
+    "cn": "謙",
+    "pinyin": "qiān",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    "shows": "What you are underplaying had better be there.",
+    "image": "☶ mountain beneath ☷ earth. A mountain sitting below ground level.",
+    "situation": "Height in the low position. The figure has real elevation and puts it underneath, which is the only configuration in the set the tradition calls good in every line. What makes it work is that the height is genuine — a low place with nothing in it is just a low place.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    7,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [
+    2
+   ],
+   "n": 43,
+   "name": "Unsaid",
+   "cn": "夬",
+   "pinyin": "guài",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "shows": "One sentence is still unsaid, and it is going anyway.",
+   "image": "☰ heaven beneath ☱ lake. Five firm lines have risen and a single yielding one is left at the top.",
+   "situation": "Resolution. The old counsel is precise and full of caution: announce it truthfully in the king's court, know the danger you are in, and reach for words well before weapons. The last soft thing is on its way out, and the manner of its going is the entire subject.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 49,
+    "name": "Molting",
+    "cn": "革",
+    "pinyin": "gé",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    "shows": "A skin is coming off you, and the new one is soft.",
+    "image": "☲ fire beneath ☱ lake. Fire underneath water, two things in one figure that undo each other.",
+    "situation": "The character means hide, the animal skin, and by extension the shedding of one. The old text ties the change to a named day and says belief arrives after the change has happened. A molt gets trusted in retrospect.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 28,
+   "name": "Overload",
+   "cn": "大過",
+   "pinyin": "dà guò",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "shows": "This is carrying more than what holds it up.",
+   "image": "☴ wind beneath ☱ lake. Four firm lines packed into the middle, with one yielding line at either end.",
+   "situation": "The ridgepole sags. All the weight is central and both supports are thin, so the structure carries more than its ends can take. The old text says it is favourable to have somewhere to go, which is the right counsel for a thing about to break: move.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    6,
+    9,
+    7,
+    8
+   ],
+   "changing_lines": [
+    3,
+    4
+   ],
+   "n": 47,
+   "name": "Drained",
+   "cn": "困",
+   "pinyin": "kùn",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The explaining continues and the basin is dry.",
+   "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+   "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 48,
+    "name": "The Well",
+    "cn": "井",
+    "pinyin": "jǐng",
+    "lines": [
+     0,
+     1,
+     1,
+     0,
+     1,
+     0
+    ],
+    "shows": "What you want is there and your reach is broken.",
+    "image": "☴ wind beneath ☵ water. Wood going down into water and drawing it back up: a bucket on a rope.",
+    "situation": "The town moves and the well stays. The old text is severe about the mechanics — the rope too short, the jug broken before it clears the rim — because a source counts as a source only while the apparatus works. The water underneath keeps coming. Everything that fails here is apparatus.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  }
+ ],
+ "casts_note": "one three-coin cast per face, cast.py --json",
+ "positions_posted": [
+  "outreach-on-board",
+  "outreach-chases-live",
+  "outreach-old-page",
+  "outreach-no-send"
+ ],
+ "questions_posted": [],
+ "dropped": [],
+ "dissent": "Challenger on scope: would keep the board to council work if a write-back path existed; the Event Pipeline page does not follow without its own pass",
+ "unanimous": false,
+ "daemons_sent": [],
+ "subagent_tokens": 0,
+ "tests_set": [
+  {
+   "by": "2026-10-15",
+   "test": "A chase saved on the board shows on the contact in the Outreach tab at once, with no session run",
+   "unlocks": "withdrawing the hand-made chase list for good"
+  },
+  {
+   "by": "2026-10-15",
+   "test": "The first weekday morning brief after the build lists its chases from the board's store",
+   "unlocks": "retiring the old page to a pointer"
+  },
+  {
+   "by": "first phone check after the build",
+   "test": "The board opens no slower with the contacts in its store",
+   "unlocks": "tab, or the Challenger's fallback of a second page in the same artifact"
+  }
+ ]
+}
