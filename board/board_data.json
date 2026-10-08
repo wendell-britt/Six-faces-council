@@ -8019,13 +8019,13 @@
    ],
    "pass": "unreal pipeline",
    "q": "Which 3D game should the Unreal, Blender and Meshy pipeline build first? The council recommends the Cave of Lessons.",
-   "why_you": "This is a new game from the ontology, and which one is your preference. It changes every asset, room and script the first build makes.",
+   "why_you": "This is a new game from the ontology, and which one is your preference. It changes every asset, chamber and script the first build makes.",
    "not_before": "This is the council's first pass on the 3D pipeline, from your message of 8 October quoting the rewind02 tweet. The plan is in the project files at unreal-pipeline/plan.md; each idea is described there.",
    "options": [
     {
      "v": "cave",
      "label": "The Cave of Lessons (recommended)",
-     "c": "A third-person walk through the act II cave: three rooms in the first slice, each on one act II lesson, with one daemon you pass by its lesson. Mostly environments and props, which Meshy and Blender do well, and the design already exists."
+     "c": "A third-person walk through the act II cave: three chambers in the first slice, each on one act II lesson, with one daemon you pass by its lesson. Mostly environments and props, which Meshy and Blender do well, and the design already exists."
     },
     {
      "v": "arena",
@@ -8068,7 +8068,7 @@
     {
      "v": "studio",
      "label": "Studio, one month",
-     "c": "About $60 and about 4,000 credits, room for the whole slice with retries and the next rooms."
+     "c": "About $60 and about 4,000 credits, chamber for the whole slice with retries and the next chambers."
     },
     {
      "v": "free",

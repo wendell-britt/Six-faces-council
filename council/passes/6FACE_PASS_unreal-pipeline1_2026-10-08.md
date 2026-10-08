@@ -38,9 +38,9 @@ design the project already holds, at a cost the audit can defend.
 sending: generate, import, light, add a feature. The return is Wendell playing it.
 
 **What moves underneath is appetite for a bigger canvas.** Sprout is bounded by the SNES profile; Root is the one break
-and has cost weeks. A 3D world where the daemons and spirits stand in rooms is the felt pull. **The risk is a second
+and has cost weeks. A 3D world where the daemons and spirits stand in chambers is the felt pull. **The risk is a second
 Root:** a fight game in 3D would pull straight into contact physics. **The recommendation is a game whose return lands
-early:** walk into a room, meet a daemon, pass by the lesson. The Cave of Lessons does that.
+early:** walk into a chamber, meet a daemon, pass by the lesson. The Cave of Lessons does that.
 
 ## Architect
 
@@ -67,11 +67,11 @@ $200 the build stops and reports.
 
 ## Regent
 
-**Fullness:** "This is at its peak and you are saving some of it." Hold some back: three rooms, not eight.
+**Fullness:** "This is at its peak and you are saving some of it." Hold some back: three chambers, not eight.
 
 **Phase gates:** setup (his steps), session 1 (bridges proven), session 2 (one prop through the scripted pipeline with a
-manifest entry), sessions 3 to 6 (props, rooms, character, encounter), then his playtest. **Definition of done for the
-slice:** he walks through three rooms and passes one daemon by its lesson. **Non-negotiables:** money is his (reserved),
+manifest entry), sessions 3 to 6 (props, chambers, character, encounter), then his playtest. **Definition of done for the
+slice:** he walks through three chambers and passes one daemon by its lesson. **Non-negotiables:** money is his (reserved),
 so the Meshy plan is a board question; the character look ruled 4 October holds; no third-party art is treated as
 cleared; Root is not ported.
 
@@ -92,7 +92,7 @@ the game pick and the money are his.
 
 **Contributions:** the Shaman chose the game by where the return lands; the Architect placed the design in the repo and
 turned the GPU question into a script; the Challenger priced the tweet against the audit and set the stop; the Regent
-cut the slice to three rooms; the Diplomat tied Meshy's licence to the licence audit. **Dissent:** the Shaman wanted the
+cut the slice to three chambers; the Diplomat tied Meshy's licence to the licence audit. **Dissent:** the Shaman wanted the
 push-hands arena listed first for its pull; it stays second because of contact physics. The pass was otherwise
 unanimous, which is a flag: every face read the same audit, and none tested the tools on a real machine.
 
