@@ -1,0 +1,626 @@
+{
+ "date": "2026-10-09",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "3D build",
+ "record": "council/passes/6FACE_PASS_3d-build2_2026-10-09.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's board saves of 2026-10-09 16:54 to 17:00 UTC (up-game-pick, up-meshy-plan, up-short-sessions), recorded in council/ledger/2026-10-09-pull-170057.json; thread started by the project coordinator",
+ "pulled_first": "pulled by the coordinator at 17:00:57 (ledger 2026-10-09-pull-170057.json); the live page was merged in by board/sync_board.py --live",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    9,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 28,
+   "name": "Overload",
+   "cn": "大過",
+   "pinyin": "dà guò",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "shows": "This is carrying more than what holds it up.",
+   "image": "☴ wind beneath ☱ lake. Four firm lines packed into the middle, with one yielding line at either end.",
+   "situation": "The ridgepole sags. All the weight is central and both supports are thin, so the structure carries more than its ends can take. The old text says it is favourable to have somewhere to go, which is the right counsel for a thing about to break: move.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 47,
+    "name": "Drained",
+    "cn": "困",
+    "pinyin": "kùn",
+    "lines": [
+     0,
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    "shows": "The explaining continues and the basin is dry.",
+    "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+    "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    6,
+    7,
+    6,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [
+    1,
+    3
+   ],
+   "n": 47,
+   "name": "Drained",
+   "cn": "困",
+   "pinyin": "kùn",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The explaining continues and the basin is dry.",
+   "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+   "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 43,
+    "name": "Unsaid",
+    "cn": "夬",
+    "pinyin": "guài",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "shows": "One sentence is still unsaid, and it is going anyway.",
+    "image": "☰ heaven beneath ☱ lake. Five firm lines have risen and a single yielding one is left at the top.",
+    "situation": "Resolution. The old counsel is precise and full of caution: announce it truthfully in the king's court, know the danger you are in, and reach for words well before weapons. The last soft thing is on its way out, and the manner of its going is the entire subject.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    7,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 55,
+   "name": "Fullness",
+   "cn": "豐",
+   "pinyin": "fēng",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "This is at its peak and you are saving some of it.",
+   "image": "☲ fire beneath ☳ thunder. Light and movement together, both at the top of their range.",
+   "situation": "Abundance at the peak. The old text puts the sun at midday and says at once that what is full begins to wane, then fills the lines with eclipse — stars visible at noon, a curtain thick enough to show the polestar. The eclipse imagery sits inside the abundance itself.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    6,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 2,
+   "name": "Bearing",
+   "cn": "坤",
+   "pinyin": "kūn",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "The whole weight of this is yours, unasked.",
+   "image": "☷ earth beneath ☷ earth. Six broken lines. Every one of them has a gap at the centre.",
+   "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 15,
+    "name": "Understatement",
+    "cn": "謙",
+    "pinyin": "qiān",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    "shows": "What you are underplaying had better be there.",
+    "image": "☶ mountain beneath ☷ earth. A mountain sitting below ground level.",
+    "situation": "Height in the low position. The figure has real elevation and puts it underneath, which is the only configuration in the set the tradition calls good in every line. What makes it work is that the height is genuine — a low place with nothing in it is just a low place.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    9,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 33,
+   "name": "Retreat",
+   "cn": "遯",
+   "pinyin": "dùn",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Leaving is available, and the timing decides what you keep.",
+   "image": "☶ mountain beneath ☰ heaven. Two yielding lines have come up underneath, and the firm lines are moving off.",
+   "situation": "Withdrawal in good order, at the moment that keeps it from becoming a rout. The old text calls it favourable and adds that the small is favourable too, which is the qualification: you keep something by leaving early with it.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 12,
+    "name": "Stalemate",
+    "cn": "否",
+    "pinyin": "pǐ",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are seeking one game and wearing the face of the other.",
+    "image": "☷ earth beneath ☰ heaven. Each half is already where it wants to be, so nothing crosses the middle.",
+    "situation": "Heaven rises and it is already on top. Earth settles and it is already at the bottom. Both halves are content and the figure has no traffic in it. Obstruction here comes from satisfaction rather than from conflict, which is what makes it durable.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    6,
+    8,
+    9
+   ],
+   "changing_lines": [
+    4,
+    6
+   ],
+   "n": 4,
+   "name": "Fog",
+   "cn": "蒙",
+   "pinyin": "méng",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "You are guessing where you could ask.",
+   "image": "☵ water beneath ☶ mountain. A spring at the foot of a peak, with mist over all of it.",
+   "situation": "Something is genuinely obscured, and the obscured thing is the one looking. The frame is a young person who has yet to learn, and the instruction runs toward the asker: the teacher answers the first question honestly and goes quiet by the third, because a question put three times has stopped being a question.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 40,
+    "name": "Thaw",
+    "cn": "解",
+    "pinyin": "xiè",
+    "lines": [
+     0,
+     1,
+     0,
+     1,
+     0,
+     0
+    ],
+    "shows": "The knot just loosened, and the window is short.",
+    "image": "☵ water beneath ☳ thunder. The storm has broken and the rain is already coming down.",
+    "situation": "Release after held pressure. The old counsel is unusual in its urgency: if there is somewhere to go, go early; if the going is finished, come back and be quiet. Either way the instruction is speed, because a window a storm opens closes again.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  }
+ ],
+ "positions": [
+  "c3d-meshy-alternatives",
+  "c3d-week",
+  "c3d-codex-rebuilds",
+  "c3d-cc0-only",
+  "c3d-phone-budget"
+ ],
+ "questions": [
+  "c3d-path"
+ ],
+ "supersedes": {
+  "up-short-sessions": "c3d-week, on his overrule steer"
+ },
+ "subagent_tokens": 0,
+ "tests_dated": [
+  {
+   "by": "day 2 of the build",
+   "test": "chamber one loads under 3 MB and walks on his phone"
+  },
+  {
+   "by": "end of the build week",
+   "test": "he has walked three chambers and passed one daemon; the week's measured cost is recorded beside the estimate of $35 to $100"
+  }
+ ]
+}
