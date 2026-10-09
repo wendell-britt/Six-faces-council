@@ -6,10 +6,18 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-09, Cave of Lessons pass 3 (avatar, labyrinth, breath, block branches)
 
-Pass: `council/passes/6FACE_PASS_3d-build3_2026-10-09.md`. Five positions stand unless Wendell flips them
-(`cave-avatar-self`, `cave-breath-in-the-cave`, `cave-block-branch`, `cave-detour-kept`, `cave-labyrinth-test`), so
-the next cave thread can build the avatar and the cave's breath now (bars-engine PR #265). The W.A.V.E. spine and the
-labyrinth's shape wait on `cave-spine` and `cave-labyrinth-form`; read the board before building either.
+Pass: `council/passes/6FACE_PASS_3d-build3_2026-10-09.md`. Wendell answered at 20:35 (ledger
+`2026-10-09-pull-203521.json`): `cave-spine` = wave-spine, `cave-labyrinth-form` = one-path, `cave-labyrinth-test`
+overruled ("I don't really understand the purpose of this"); `cave-avatar-self`, `cave-breath-in-the-cave`,
+`cave-block-branch` and `cave-detour-kept` stand. The plan is folded into bars-engine PR #265,
+`content/ontology-game/cave/DESIGN.md`, section "The next build, from the board of 9 October, 20:35".
+
+Next build, one fresh thread on PR #265 (`cave.js`, `cave-test.mjs`): the W.A.V.E. as one winding path with no free
+turns, one stretch per breath; a block on any step opens a side passage holding the five places, with Release back
+to the exact spot, a lantern on the main path, nesting and a skip; the faceless avatar from close behind (hold to
+walk, drag to look); the cave's easy breath with the optional hold-to-inhale ring; blocked steps marked on the saved
+scan. The phone budget (`c3d-phone-budget`) stays in the browser test. Vercel production deploys still fail on the
+250 MB function limit, which this PR does not cause (see the PR comment).
 
 ## Open on 2026-10-09, morning menu (Tap the Vein and Lenses)
 
