@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08",
+ "updated": "2026-10-09",
  "positions": [
   {
    "id": "build",
@@ -4517,6 +4517,38 @@
    "auto": true,
    "pos": "Each 3D build session's cost is read from the platform when it ends. If the first slice passes $200 at list prices, the build stops and reports before going on.",
    "why": "The council's estimate is $90 to $210; a stop keeps one bad session from becoming the week. Source: usage-audit/audit-2026-10-04.md"
+  },
+  {
+   "id": "ttc-story-intro",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Step 2 on The Skilled Helper's introduction is drafted. Mother Ede teaches it as the Healers' Act I content: an eight-beat Helper's track beside milestones 4 to 6. The player is tended first, then tends a called villager, a noodle-cart couple, Tavi, a cinder wisp that grows each day it is ignored, and a changed man at the south gate. Old Tam turns them down. Each beat has a gate in the game and a BAR outside it. This stands unless you flip it, and step 3 (encounters) starts from it.",
+   "why": "The move's step 2 reads the extract and Sprout's design record only. All 13 extract milestones land in a beat. The Diplomat checked it: Ede's words come from Sprout's world (tending, the lamp, splinters), and every technique is done to the player or shown in the world before the player does it. The Diplomat flags eight beats as dense for that stretch of Act I; step 4 says whether two belong in Meridia. Source: sprout campaigns/skilled-helper/introduction/story.md (pull request #30)"
+  },
+  {
+   "id": "ttc-story-teacher",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Mother Ede is this text's teacher. She already tends people, teaches dismissal and spirits, and treats the changed in secret, so the book's stance is the one that already separates her from the Well: the one who came leads, and the best tending is the last one. Old Tam declines help in beat H8 and keeps his arc for Lamenth.",
+   "why": "Your round 7 answer: an existing character who can hold the voice comes first. design.md lists the Healers' content as not yet written. Source: story.md, The teacher"
+  },
+  {
+   "id": "ttc-story-player-both",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "The player is helped first and helps second. The voices after bouts give Ede something real to tend, so a player meets the four questions by being asked them before asking them of anyone else. Handing the method over is a story event.",
+   "why": "Step 1 flagged that the book speaks to helpers while Sprout's player is mostly the one helped. Rounds 3 and 7 settle who teaches and who comes for help; this answers the rest from the book's own aim of handing the method over (extract m4). Source: story.md, The player's place"
   }
  ],
  "questions": [
