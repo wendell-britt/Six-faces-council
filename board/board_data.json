@@ -4657,6 +4657,71 @@
    "auto": true,
    "pos": "Movement inside the body is one finger: drag to look, tap the glowing marker ahead to walk to the next place. There is no joystick.",
    "why": "The walk only goes forward, and the game is played on phones. Source: cave/DESIGN.md"
+  },
+  {
+   "id": "mm-backlog-sources",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "morning menu 1",
+   "auto": true,
+   "pos": "The operations backlog your morning menu reads is HANDOFF.md's open items, the board rows waiting on you, the deferred list, open pull requests in the three repos, and bars-engine backlog rows marked Ready. One script, council/morning.py, gathers them into one list.",
+   "why": "The council's open work is spread over five places today, and nothing reads them together. Source: council/passes/6FACE_PASS_morning-menu1_2026-10-09.md"
+  },
+  {
+   "id": "mm-menu-shape",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "morning menu 1",
+   "auto": true,
+   "pos": "The menu holds at most seven items: the lines you kept from your free write first, then backlog items. Each item names the Lens goal it serves. An item that serves no goal stays on the menu, marked unaligned and shown last.",
+   "why": "A longer menu is the backlog again under a new name, and hiding unaligned work is how drift goes unseen (bars-engine quest-lineage-alignment, shadow quests). Source: council/passes/6FACE_PASS_morning-menu1_2026-10-09.md"
+  },
+  {
+   "id": "mm-picks-become-threads",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "morning menu 1",
+   "auto": true,
+   "pos": "Each item you pick becomes one board row marked as your pick, and the next board read starts one thread per pick. A pick is already your ruling, so it never comes back as a question.",
+   "why": "docs/pickup.md: a board read acts on what you saved, one thread per piece of work. Source: council/passes/6FACE_PASS_morning-menu1_2026-10-09.md"
+  },
+  {
+   "id": "mm-intake-saves-each-lens",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "morning menu 1",
+   "auto": true,
+   "pos": "The Lenses intake saves each domain as you lock it in, so closing the page partway loses nothing and you can stop between domains.",
+   "why": "Today it saves only at the end, in one call (LensesOnboardingClient.tsx:183), and asks for about an hour in one sitting. Source: council/passes/6FACE_PASS_morning-menu1_2026-10-09.md"
+  },
+  {
+   "id": "mm-intake-one-a-morning",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "morning menu 1",
+   "auto": true,
+   "pos": "The Lenses intake can run one domain a morning as that morning's free-write prompt, so your year frame fills over five mornings instead of one hour-long sitting.",
+   "why": "Each domain is already its own ten-minute free write (src/lib/lenses/domains.ts), the same shape as Tap the Vein's. Source: council/passes/6FACE_PASS_morning-menu1_2026-10-09.md"
+  },
+  {
+   "id": "mm-goal-edit",
+   "faces": [
+    "architect"
+   ],
+   "pass": "morning menu 1",
+   "auto": true,
+   "pos": "A single Lens goal can be renamed, parked or retired from the Observatory, without re-running the intake or the descent.",
+   "why": "Today goals change only by re-running the intake or descent, which rewrite the whole set (src/actions/lens-goals.ts). Source: council/passes/6FACE_PASS_morning-menu1_2026-10-09.md"
   }
  ],
  "questions": [
@@ -8247,6 +8312,62 @@
      "v": "unreal",
      "label": "Unreal desktop game, no Meshy",
      "c": "Pass one's plan with Meshy swapped for Blender MCP, CC0 kits and TRELLIS.2: about six Remote Control sessions on your Mac, about $90 to $210, desktop only. The calrunia-3d repository is made. The look can go further, and nobody plays it on a phone."
+    }
+   ]
+  },
+  {
+   "id": "mm-where",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "morning menu 1",
+   "q": "Where do you want to write each morning? The council recommends Tap the Vein.",
+   "why_you": "Where you write each morning is your preference, and it decides whether the bridge to the board is built in bars-engine or on the board itself.",
+   "not_before": "This is the first pass on a morning menu. The analysis is in council/passes/6FACE_PASS_morning-menu1_2026-10-09.md.",
+   "options": [
+    {
+     "v": "ttv",
+     "label": "Tap the Vein (recommended)",
+     "c": "You write and keep lines in Tap the Vein as now, with your Lens goals beside them. At seal it builds the menu, and a council session reads it from bars-engine and lays it on the board for your picks. Builds a bridge from bars-engine to the council, and your Lenses work stays where it lives."
+    },
+    {
+     "v": "board",
+     "label": "A Morning tab on the board",
+     "c": "You write, keep lines and pick all on the Council Board, and a copy of your Lens goals is kept in the council repo. Nothing new in bars-engine beyond the intake fixes, and Tap the Vein is not part of the morning."
+    },
+    {
+     "v": "both",
+     "label": "Tap the Vein, then paste",
+     "c": "You write in Tap the Vein, then paste your kept lines into a Morning tab on the board to pick. The least to build, and one copy-and-paste every morning."
+    }
+   ]
+  },
+  {
+   "id": "mm-raw",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "morning menu 1",
+   "q": "Who may read your morning free write? The council recommends only the lines you keep.",
+   "why_you": "Your free write is private writing, and who reads it is your consent, which faces.yaml reserves for you.",
+   "not_before": "This is the first pass on a morning menu. The analysis is in council/passes/6FACE_PASS_morning-menu1_2026-10-09.md.",
+   "options": [
+    {
+     "v": "kept",
+     "label": "Only kept lines (recommended)",
+     "c": "The free write stays in the app. Only the lines you keep reach the council, and no model reads the rest. The ritual runs the same with or without AI."
+    },
+    {
+     "v": "whole",
+     "label": "The whole free write",
+     "c": "A council session reads the whole free write and can add menu items from lines you did not keep, marked as its suggestions."
+    },
+    {
+     "v": "ask",
+     "label": "Ask each morning",
+     "c": "A checkbox at the end of each free write says whether the session may read the whole entry that day. Kept lines only when unticked."
     }
    ]
   }
