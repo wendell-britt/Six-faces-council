@@ -450,7 +450,13 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   `campaigns/skilled-helper/prototype/helpers-track.html`, results in `introduction/playtest.md` (sprout #32, draft).
 - **T1 failed:** fresh players guessed the right line 65 times out of 69 by tone. Position `hs-t1-context` is on the
   board: the right line depends on the moment (a late Offer opens, a kind-sounding question can close).
-- **Next:** a new thread builds prototype 3 with context-dependent lines, reruns T1, then adds quests 6 and 7.
+- **Wendell's playtest (2026-10-09 evening):** wrong picks need a clear reason and a visible, narrative consequence,
+  and should move the player forward without feeling punitive; his play tester pointed to Spiritfarer (the play is
+  finding what each person needs). Positions `hs-wrong-is-the-wall`, `hs-needs-to-find`, `hs-person-shows-it` are on
+  the board; detail in sprout `introduction/playtest.md` (#32).
+- **Next:** a new thread builds prototype 3 to the same link: a need to find per person, a visible state that changes
+  with each pick, a wrong pick as the wall beat with no lost day, and context-dependent lines (`hs-t1-context`). Rerun
+  T1, then add quests 6 and 7.
   T2 to T4 wait on Wendell's own phone play. Step 3 (`encounters.yaml`) can start from story.md and quests.md.
 
 ## Open on 2026-10-09, from the coaching site thread (handed off at the context limit)
