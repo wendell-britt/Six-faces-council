@@ -4549,6 +4549,59 @@
    "auto": true,
    "pos": "The player is helped first and helps second. The voices after bouts give Ede something real to tend, so a player meets the four questions by being asked them before asking them of anyone else. Handing the method over is a story event.",
    "why": "Step 1 flagged that the book speaks to helpers while Sprout's player is mostly the one helped. Rounds 3 and 7 settle who teaches and who comes for help; this answers the rest from the book's own aim of handing the method over (extract m4). Source: story.md, The player's place"
+  },
+  {
+   "id": "c3d-meshy-alternatives",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "3D build, pass 2",
+   "auto": true,
+   "pos": "The first draft needs no Meshy. Blender by script and free CC0 kits (Poly Haven, Kenney, Quaternius) carry the cave. For the few hero pieces, like the daemons, TRELLIS.2 runs on your own Mac's GPU, free under MIT. Hunyuan3D is left out: its licence excludes the EU, UK and South Korea, and its texturing usually fails on a Mac.",
+   "why": "Searched 9 October. TRELLIS.2's Mac port wants Apple Silicon with about 24 GB memory and takes about 3.5 minutes a model (self-reported); the script in up-gpu-by-script checks your Mac first. Blender MCP works with both Claude Code and Codex. Source: council/passes/6FACE_PASS_3d-build2_2026-10-09.md, Meshy alternatives"
+  },
+  {
+   "id": "c3d-week",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "3D build, pass 2",
+   "auto": true,
+   "pos": "The first draft takes a week, one short thread a day: day 1 chamber design, day 2 chamber one and the walk, day 3 chambers two and three, day 4 the daemon and its lesson, day 5 budget tests and a link on your steps list, days 6 and 7 your play and the fixes. Design days run on Opus, rebuild days on Sonnet. This replaces up-short-sessions.",
+   "why": "Your steer on up-short-sessions: a week for the first draft is fine and tokens matter. Estimated $35 to $100 for the week, under up-cost-stop's $200, measured after each thread. Source: CLAUDE.md short sessions; pass ten's $0.14 a call"
+  },
+  {
+   "id": "c3d-codex-rebuilds",
+   "faces": [
+    "architect"
+   ],
+   "pass": "3D build, pass 2",
+   "auto": true,
+   "pos": "Every chamber and prop is built by a plain Python script committed beside the game, so a rebuild can run in Codex on your OpenAI tokens as well as in a Claude thread.",
+   "why": "Your steer on up-meshy-plan asked for routes on Claude Code or Codex tokens. The body map's build_figure.py already works this way. Source: bars-engine content/ontology-game/body/build_figure.py"
+  },
+  {
+   "id": "c3d-cc0-only",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "3D build, pass 2",
+   "auto": true,
+   "pos": "The first draft uses only CC0 kit assets, geometry built by script, and models made with MIT-licensed tools. Each asset is listed with its source and licence in the cave's manifest.",
+   "why": "Pass one's non-negotiable: no third-party art is treated as cleared. CC0 needs no credit; Sprout's licence audit shows what unclear sources cost later. Source: 6FACE_PASS_unreal-pipeline1_2026-10-08.md, Regent"
+  },
+  {
+   "id": "c3d-phone-budget",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "3D build, pass 2",
+   "auto": true,
+   "pos": "If the cave is built on the web, each chamber stays under about 3 MB with its lighting baked in Blender, and the walk is tested at phone size before you are asked to play it.",
+   "why": "The ontology game is played on phones; a cave that loads slowly fails before the lesson. The body map's figure is 204 KB by the same method. Source: bars-engine content/ontology-game/body/figure.glb"
   }
  ],
  "questions": [
@@ -8111,6 +8164,34 @@
      "v": "none",
      "label": "No Meshy",
      "c": "Props are modelled in Blender by script and from free kits whose licences need checking. Slower and plainer, with no Meshy cost."
+    }
+   ]
+  },
+  {
+   "id": "c3d-path",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "3D build, pass 2",
+   "q": "Where should the Cave of Lessons be built? The council recommends inside the ontology game, on the web.",
+   "why_you": "Where the cave lives and how people play it is your preference, and it changes the engine, the repository and who can play it.",
+   "not_before": "Pass one assumed Unreal and Meshy. Your steer on 9 October ruled out Meshy for now and named the ontology game as a home, which opened this choice. The analysis is in council/passes/6FACE_PASS_3d-build2_2026-10-09.md.",
+   "options": [
+    {
+     "v": "web",
+     "label": "Inside the ontology game (recommended)",
+     "c": "The cave becomes the game's immersive view: chambers built by Blender script in cloud threads, walked in the browser with the three.js the body map already loads, playable on a phone with no install. It costs about $35 to $100 over a week and needs no Unreal, Meshy or GPU. The new calrunia-3d repository waits; the cave lives beside the body map in bars-engine."
+    },
+    {
+     "v": "web-local",
+     "label": "Ontology game, daemons from your Mac",
+     "c": "The same, and the daemons are made from concept images by TRELLIS.2 on your Mac's GPU, run in the background through Remote Control. Richer figures at little token cost; needs one setup session on your Mac and enough memory, which a script checks first."
+    },
+    {
+     "v": "unreal",
+     "label": "Unreal desktop game, no Meshy",
+     "c": "Pass one's plan with Meshy swapped for Blender MCP, CC0 kits and TRELLIS.2: about six Remote Control sessions on your Mac, about $90 to $210, desktop only. The calrunia-3d repository is made. The look can go further, and nobody plays it on a phone."
     }
    ]
   }
