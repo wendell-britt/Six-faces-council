@@ -13485,6 +13485,31 @@
      "architect"
     ],
     "pass": "morning menu 1"
+   },
+   "c3d-spot-shape": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:53:31.695Z",
+    "record": "council/ledger/2026-10-09-pull-185337.json (six-faces-council)",
+    "steer": "A little on the nose. We want the feeling of the chamber to match the energy the player brings to it, so it won't really be created until we know the nature of the charge, the elemental channel, and the game master face. We can keep them generic for now. The makers on the body are acting as portals for the charge not as representations of what the body part it's pointing to has",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "3D build, day 1"
+   },
+   "c3d-sensation-paths": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:53:37.597Z",
+    "record": "council/ledger/2026-10-09-pull-185337.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "3D build, day 1"
    }
   },
   "questions": {
@@ -14940,6 +14965,18 @@
      "shaman"
     ],
     "pass": "morning menu 1"
+   },
+   "mm-menu-transport": {
+    "decision": "query",
+    "label": "The council fetches it",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:52:02.368Z",
+    "record": "council/ledger/2026-10-09-pull-185337.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "morning menu 1, build"
    }
   },
   "causes": {
