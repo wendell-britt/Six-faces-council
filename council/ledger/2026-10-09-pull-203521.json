@@ -1,0 +1,123 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T20:35:21.290Z",
+ "answers": {
+  "cave-spine": {
+   "kind": "question",
+   "choice": "wave-spine",
+   "savedAt": "2026-10-09T20:26:55.263Z",
+   "steer": ""
+  },
+  "cave-labyrinth-form": {
+   "kind": "question",
+   "choice": "one-path",
+   "savedAt": "2026-10-09T20:27:24.762Z",
+   "steer": ""
+  },
+  "hs-items-when": {
+   "kind": "question",
+   "choice": "end-of-talk",
+   "savedAt": "2026-10-09T20:28:18.132Z",
+   "steer": "hmmm something inbetween a week later and at the end of the talk. I think for testing we'll do the end of the talk, with the knowledge that in the true game it might not resolve immediaely. "
+  },
+  "hs-lamp-talisman": {
+   "kind": "question",
+   "choice": "lamp-board",
+   "savedAt": "2026-10-09T20:28:44.630Z",
+   "steer": ""
+  },
+  "cave-avatar-self": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:28:55.214Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cave-breath-in-the-cave": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:29:04.946Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cave-block-branch": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:29:11.981Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cave-detour-kept": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:29:16.446Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cave-labyrinth-test": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:30:02.298Z",
+   "status": "overrule",
+   "steer": "I don't really understand the purpose of this"
+  },
+  "hs-six-skills": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:32:13.900Z",
+   "status": "stands",
+   "steer": "ok this makes sense. Then we'd want a trasncend and include mode where Mother Ede teaches all 6 skills with quest threads. Each teaches the skill and then there is a final quest that requires all of the skills to be used. Each of the quests needs to also scaffold and teach what the skill is \n\nwe want to cleave to the Epiphany Bridge stucture whenever possible. The Epiphany is that the skill is needed. The wall is the problem the game puts in front of the players and the plan/conflict is the player learning to master the skill- transformation and achievement is completing the quest and gaining the approprate item "
+  },
+  "hs-quests-from-ede": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:32:19.900Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-tending-screen": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:32:53.184Z",
+   "status": "overrule",
+   "steer": "Not sure what the benefit of this is aside frmo using things we've already built "
+  },
+  "hs-charge-shows": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:34:09.085Z",
+   "status": "stands",
+   "steer": "ok this makes sense. WE are using root stucutres. To offer someone help you need to earn their trust. We should explore if this is covered in skilled helper later in the book. this might mean that from a gameplay perspective learning the basic loop might be more important than making content based on teh books linear order\n"
+  },
+  "hs-learning-signals": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:34:21.955Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-tests": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:34:27.903Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-next-build": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:34:31.885Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-testimonial": {
+   "kind": "question",
+   "choice": "not-yet",
+   "savedAt": "2026-10-09T20:35:21.290Z",
+   "steer": "We have access to this in my computer and in the masteringallyship page. I also need to make a part of the coaching page where I can reach out to people to give testamonials about my work. ",
+   "via": "battle:fr-coaching-game"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/cave-spine: W.A.V.E. path, block work on the branch",
+  "questions/cave-labyrinth-form: One winding path",
+  "questions/hs-items-when: At the end of the talk (steer: \"hmmm something inbetween a week later and at the end of the talk. I think for testing we'll do the end of the talk, with the knowledge that in the true game it might not resolve immediaely.\")",
+  "questions/hs-lamp-talisman: Yes, a lamp board",
+  "positions/cave-labyrinth-test: Overruled (steer: \"I don't really understand the purpose of this\")",
+  "positions/hs-six-skills: Stands (steer: \"ok this makes sense. Then we'd want a trasncend and include mode where Mother Ede teaches all 6 skills with quest threads. Each teaches the skill and then there is a final quest that requires all of the skills to be used. Each of the quests needs to also scaffold and teach what the skill is \n\nwe want to cleave to the Epiphany Bridge stucture whenever possible. The Epiphany is that the skill is needed. The wall is the problem the game puts in front of the players and the plan/conflict is the player learning to master the skill- transformation and achievement is completing the quest and gaining the approprate item\")",
+  "positions/hs-tending-screen: Overruled (steer: \"Not sure what the benefit of this is aside frmo using things we've already built\")",
+  "positions/hs-charge-shows: Stands (steer: \"ok this makes sense. WE are using root stucutres. To offer someone help you need to earn their trust. We should explore if this is covered in skilled helper later in the book. this might mean that from a gameplay perspective learning the basic loop might be more important than making content based on teh books linear order\")",
+  "questions/cf-testimonial: Not yet (steer: \"We have access to this in my computer and in the masteringallyship page. I also need to make a part of the coaching page where I can reach out to people to give testamonials about my work.\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

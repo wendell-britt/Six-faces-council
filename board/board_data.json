@@ -14009,6 +14009,147 @@
      "architect"
     ],
     "pass": "coaching game 1"
+   },
+   "cave-avatar-self": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:28:55.214Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "3D build, pass 3"
+   },
+   "cave-breath-in-the-cave": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:29:04.946Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "3D build, pass 3"
+   },
+   "cave-block-branch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:29:11.981Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "3D build, pass 3"
+   },
+   "cave-detour-kept": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:29:16.446Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "3D build, pass 3"
+   },
+   "cave-labyrinth-test": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:30:02.298Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "steer": "I don't really understand the purpose of this",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "3D build, pass 3"
+   },
+   "hs-six-skills": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:32:13.900Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "steer": "ok this makes sense. Then we'd want a trasncend and include mode where Mother Ede teaches all 6 skills with quest threads. Each teaches the skill and then there is a final quest that requires all of the skills to be used. Each of the quests needs to also scaffold and teach what the skill is \n\nwe want to cleave to the Epiphany Bridge stucture whenever possible. The Epiphany is that the skill is needed. The wall is the problem the game puts in front of the players and the plan/conflict is the player learning to master the skill- transformation and achievement is completing the quest and gaining the approprate item",
+    "faces": [
+     "architect"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "hs-quests-from-ede": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:32:19.900Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "hs-tending-screen": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:32:53.184Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "steer": "Not sure what the benefit of this is aside frmo using things we've already built",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "hs-charge-shows": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:34:09.085Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "steer": "ok this makes sense. WE are using root stucutres. To offer someone help you need to earn their trust. We should explore if this is covered in skilled helper later in the book. this might mean that from a gameplay perspective learning the basic loop might be more important than making content based on teh books linear order",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "hs-learning-signals": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:34:21.955Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "hs-tests": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:34:27.903Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "hs-next-build": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:34:31.885Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "helper skills, pass 1"
    }
   },
   "questions": {
@@ -15488,6 +15629,67 @@
      "sage"
     ],
     "pass": "coaching game 1"
+   },
+   "cave-spine": {
+    "decision": "wave-spine",
+    "label": "W.A.V.E. path, block work on the branch",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:26:55.263Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "3D build, pass 3"
+   },
+   "cave-labyrinth-form": {
+    "decision": "one-path",
+    "label": "One winding path",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:27:24.762Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "3D build, pass 3"
+   },
+   "hs-items-when": {
+    "decision": "end-of-talk",
+    "label": "At the end of the talk",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:28:18.132Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "steer": "hmmm something inbetween a week later and at the end of the talk. I think for testing we'll do the end of the talk, with the knowledge that in the true game it might not resolve immediaely.",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "hs-lamp-talisman": {
+    "decision": "lamp-board",
+    "label": "Yes, a lamp board",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:28:44.630Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "helper skills, pass 1"
+   },
+   "cf-testimonial": {
+    "decision": "not-yet",
+    "label": "Not yet",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:35:21.290Z",
+    "record": "council/ledger/2026-10-09-pull-203521.json (six-faces-council)",
+    "steer": "We have access to this in my computer and in the masteringallyship page. I also need to make a part of the coaching page where I can reach out to people to give testamonials about my work.",
+    "faces": [
+     "architect"
+    ],
+    "pass": "coaching game 2"
    }
   },
   "causes": {
