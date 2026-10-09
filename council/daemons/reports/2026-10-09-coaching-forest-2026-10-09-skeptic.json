@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-09",
+  "pass": "coaching-forest-2026-10-09",
+  "daemon": "skeptic",
+  "face": "architect",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-09-coaching-forest-2026-10-09-skeptic.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Usually 10 to 20 seconds; NN/g says \"Users often leave Web pages in 10-20 seconds\" [1].",
+        "Fast judgement: measured [1].",
+        "If the forest hides the booking path, [6] and [1] predict losses.",
+        "State the value in one sentence on the first screen, with one forest image [1]."
+      ],
+      "url": "https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Less each screen: 57% of viewing time above the fold, 74% in the first two screenfuls [2].",
+        "Attention drops below the fold: measured [2].",
+        "Move the tool cards behind a fold so booking moves up [2]."
+      ],
+      "url": "https://www.nngroup.com/articles/scrolling-and-attention/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Real-person photos drew attention; stock photos were ignored [3].",
+        "Real faces draw attention: measured [3].",
+        "Put Wendell's real photo in view, not stock [3]."
+      ],
+      "url": "https://www.nngroup.com/articles/photos-as-web-content/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "Choice overload does not justify cutting the four tiers: mean effect \"virtually zero\" [4]; overload is likelier with complex sets and uncertain preferences [5]."
+      ],
+      "url": "https://ideas.repec.org/a/oup/jconrs/v37y2010i3p409-425.html",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "Choice overload does not justify cutting the four tiers: mean effect \"virtually zero\" [4]; overload is likelier with complex sets and uncertain preferences [5]."
+      ],
+      "url": "https://www.kellogg.northwestern.edu/academics-research/research/detail/2015/when-product-assortment-leads-to-choice-overload-a-conceptual/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [
+        "Hidden content hurts when the path is unclear: NN/g guidance [6].",
+        "If the forest hides the booking path, [6] and [1] predict losses.",
+        "Keep one quiet visible booking link at all times; tiers one tap away [6]."
+      ],
+      "url": "https://www.nngroup.com/articles/progressive-disclosure/",
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}
