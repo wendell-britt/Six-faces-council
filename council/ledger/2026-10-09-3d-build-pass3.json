@@ -1,0 +1,36 @@
+{
+ "date": "2026-10-09",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "Cave of Lessons (bars-engine PR #265)",
+ "record": "council/passes/6FACE_PASS_3d-build3_2026-10-09.md",
+ "called_by": "Wendell",
+ "invoked_from": "day-3 playtest notes in the project thread, 2026-10-09T19:40:39Z, started by the project coordinator",
+ "pulled_first": "not run; a pass, not a board read",
+ "casts": [
+  {"agent": "shaman", "method": "three coins", "n": 29, "name": "Depths", "changing_lines": [2, 6], "becomes": {"n": 20, "name": "Witnessing"}},
+  {"agent": "architect", "method": "three coins", "n": 15, "name": "Understatement", "changing_lines": []},
+  {"agent": "challenger", "method": "three coins", "n": 6, "name": "Divergence", "changing_lines": [1, 3, 5], "becomes": {"n": 14, "name": "Noon"}},
+  {"agent": "regent", "method": "three coins", "n": 5, "name": "Hosting", "changing_lines": [6], "becomes": {"n": 9, "name": "Restraint"}},
+  {"agent": "diplomat", "method": "three coins", "n": 54, "name": "Home Field Advantage", "changing_lines": [3], "becomes": {"n": 34, "name": "Vigour"}},
+  {"agent": "sage", "method": "three coins", "n": 31, "name": "Mutuality", "changing_lines": [1], "becomes": {"n": 49, "name": "Molting"}},
+  {"agent": "daemon-player", "method": "three coins", "n": 59, "name": "Dispersal", "changing_lines": [4, 6], "becomes": {"n": 47, "name": "Drained"}},
+  {"agent": "daemon-skeptic", "method": "three coins", "n": 12, "name": "Stalemate", "changing_lines": [3], "becomes": {"n": 33, "name": "Retreat"}},
+  {"agent": "daemon-emotional-body", "method": "three coins", "n": 47, "name": "Drained", "changing_lines": [1, 5, 6], "becomes": {"n": 38, "name": "Estrangement"}}
+ ],
+ "casts_note": "one three-coin cast per agent, cast.py text output summarised",
+ "positions_posted": ["cave-avatar-self", "cave-breath-in-the-cave", "cave-block-branch", "cave-detour-kept", "cave-labyrinth-test"],
+ "questions_posted": ["cave-spine", "cave-labyrinth-form"],
+ "dropped": ["the Player daemon's mapping of the four A's onto the five places (the spine makes the places the branch)", "pacer on by default (answered by ontology pass 1: an offer, never a lock)", "repeat visits skipping the winding (left to the build)"],
+ "dissent": "Shaman would open optional side caves for wonder; Challenger keeps every turn on the spine until the phone test passes. Architect reads the sketch as settling the spine; Regent sends it to Wendell because his day-3 note prized the six stones.",
+ "unanimous": false,
+ "daemons_sent": ["daemon-player (Shaman, sonnet)", "daemon-skeptic (Challenger, sonnet)", "daemon-emotional-body (Diplomat, sonnet)"],
+ "daemon_checks": "all three passed check_report.py; research links not spot-checked, the proxy refused Wikipedia and PubMed",
+ "subagent_tokens": 77580,
+ "tests_set": [
+  {"by": "2026-10-16", "test": "The avatar walks and breathes on his phone, and the breath never holds a step (browser test)"},
+  {"by": "2026-10-16", "test": "A block on one W.A.V.E. step opens a side passage and returns to the exact step, two deep, in the browser test"},
+  {"by": "after the labyrinth is built", "test": "The five-person phone test in cave-labyrinth-test passes before Wendell is asked to walk it"}
+ ]
+}
