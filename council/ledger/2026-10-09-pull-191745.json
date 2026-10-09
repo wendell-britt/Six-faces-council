@@ -1,0 +1,67 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T19:17:45.564Z",
+ "answers": {
+  "c3d-portal-first": {
+   "kind": "position",
+   "savedAt": "2026-10-09T19:16:48.440Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cg-front-door": {
+   "kind": "question",
+   "choice": "front",
+   "savedAt": "2026-10-09T19:17:04.056Z",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cg-five-moves": {
+   "kind": "position",
+   "savedAt": "2026-10-09T19:17:11.758Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cg-kept-sentence": {
+   "kind": "position",
+   "savedAt": "2026-10-09T19:17:17.891Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cg-skip": {
+   "kind": "position",
+   "savedAt": "2026-10-09T19:17:23.058Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cg-money": {
+   "kind": "position",
+   "savedAt": "2026-10-09T19:17:30.296Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cg-browser-only": {
+   "kind": "position",
+   "savedAt": "2026-10-09T19:17:39.813Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cg-subdomain": {
+   "kind": "position",
+   "savedAt": "2026-10-09T19:17:45.564Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/cg-front-door: The game is the front door"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
