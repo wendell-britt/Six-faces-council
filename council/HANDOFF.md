@@ -445,9 +445,13 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   `campaigns/skilled-helper/introduction/quests.md` (on #31): six skill quests in the basic loop's order plus a final
   quest with Ede as the one who came, each on the Epiphany Bridge, trust earned by the loop. Four new positions:
   `hs-quest-order`, `hs-trust-from-the-loop`, `hs-final-quest-ede`, `hs-tending-in-talk`.
-- **Next:** a new thread builds prototype 2 from quests.md (quests 0 to 5, in the ordinary talk box, lamp board panel)
-  by republishing https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc, and runs tests T1 to T4. Step 3
-  (`encounters.yaml`) can start from story.md and quests.md.
+- **Prototype 2 is built** (2026-10-09) at the same link, https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc: quests 0 to
+  5 in the talk box, trust on the portrait, items at the end of the talk read by Ede, the lamp board. Source in sprout
+  `campaigns/skilled-helper/prototype/helpers-track.html`, results in `introduction/playtest.md` (sprout #32, draft).
+- **T1 failed:** fresh players guessed the right line 65 times out of 69 by tone. Position `hs-t1-context` is on the
+  board: the right line depends on the moment (a late Offer opens, a kind-sounding question can close).
+- **Next:** a new thread builds prototype 3 with context-dependent lines, reruns T1, then adds quests 6 and 7.
+  T2 to T4 wait on Wendell's own phone play. Step 3 (`encounters.yaml`) can start from story.md and quests.md.
 
 ## Open on 2026-10-09, from the coaching site thread (handed off at the context limit)
 
