@@ -4870,6 +4870,70 @@
    "auto": true,
    "pos": "Before you are asked to walk the labyrinth, five people walk one chamber on their phones with no instruction. It fails if anyone pauses more than 10 seconds to ask where to go, if the winding adds more than about a fifth to the time before the first breath step, if it drops below 30 frames a second on a mid-range phone, or if someone coming back from a branch cannot say which step they resumed.",
    "why": "A winding walk can lose a person who is carrying a live feeling. The thresholds are the Skeptic daemon's choices and can be moved. Source: council/passes/6FACE_PASS_3d-build3_2026-10-09.md, Challenger"
+  },
+  {
+   "id": "cf-forest",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "Your coaching page is now a walk into a forest. Four screens on the way in ask one small act each: step in, where it sits in your body, what it is like, and which feeling is loudest. The centre gives the visitor's own words back, with your photo, your paragraph and one door.",
+   "why": "Your steer of 9 October: entering a space, the forest, fewer buttons and less scrolling. The Emotional Body daemon counted 33 buttons and headings in the old map. Source: bars-engine content/coaching-game/6FACE_PASS2_2026-10-09.md"
+  },
+  {
+   "id": "cf-fast-lane",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "\"I know what I need\" on the first screen opens the centre with all four prices showing. Any link to masteringallyship.com/coaching#book does the same.",
+   "why": "Your ruling of 9 September, an offer is not a requirement (cg-skip). NN/g: hidden content works when the way to it is obvious. Tested at phone width. Source: 6FACE_PASS2_2026-10-09.md, Challenger"
+  },
+  {
+   "id": "cf-one-door",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "The four prices sit one tap behind \"Sit down with me\" at the centre, always together, and never appear on the walk in. The prices themselves are unchanged.",
+   "why": "Money is reserved to you (cg-money). The research found no case for hiding or cutting the tiers: choice overload averages near zero across studies (Scheibehenne and others, 2010). Source: 6FACE_PASS2_2026-10-09.md, Architect and Regent"
+  },
+  {
+   "id": "cf-his-face",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "The centre shows your photo from the Mastering Allyship page and the first-person paragraph that was on the old coaching page. Claude drafted that paragraph on 6 October; you can rewrite it.",
+   "why": "The photo is already public on your site. NN/g measured that photos of real people draw attention and stock photos do not. Source: 6FACE_PASS2_2026-10-09.md, Architect"
+  },
+  {
+   "id": "cf-protections",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "The 988 crisis line shows on every screen, nothing moves for visitors who have turned motion off, keyboard and screen-reader visitors keep their place, and the forest is drawn with shapes rather than images so it loads on a slow phone.",
+   "why": "The Protector daemon found the old page put 988 at the very bottom and lost keyboard users after every click. WCAG 2.3.3 and 2.4.3. Source: 6FACE_PASS2_2026-10-09.md, Challenger"
+  },
+  {
+   "id": "cf-paths",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "The five-stop map is retired. Clean Up, Grow Up and Show Up become the other paths at the centre: the 3-2-1 opens there, and the ontology game, the thirty-day challenge and the founder track are one tap away. This replaces cg-five-moves.",
+   "why": "Your words of 9 October: \"This one is a lot of buttons and scrolling\". Source: 6FACE_PASS2_2026-10-09.md, Architect"
   }
  ],
  "questions": [
@@ -8618,6 +8682,28 @@
      "v": "maze",
      "label": "A true maze",
      "c": "Choices and dead ends from the start. The most exploring, and the walk competes with the practice for attention; the five-person phone test is likeliest to fail."
+    }
+   ]
+  },
+  {
+   "id": "cf-testimonial",
+   "faces": [
+    "architect"
+   ],
+   "pass": "coaching game 2",
+   "q": "Do you have a client's words you can name and use at the centre of the coaching page?",
+   "why_you": "Only you know who has said what about working with you, and who agreed to be quoted.",
+   "not_before": "Nobody looked for social proof until today's research (the Skeptic daemon, pass 2).",
+   "options": [
+    {
+     "v": "yes",
+     "label": "Yes, here it is",
+     "c": "Write the line and the name in your answer. The centre shows it under your paragraph."
+    },
+    {
+     "v": "not-yet",
+     "label": "Not yet (recommended)",
+     "c": "The centre ships without one, and the question comes back when you have one."
     }
    ]
   }
@@ -16283,6 +16369,20 @@
       "cg-money",
       "cg-browser-only",
       "cg-subdomain"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "cf-testimonial"
+     ],
+     "positions": [
+      "cf-forest",
+      "cf-fast-lane",
+      "cf-one-door",
+      "cf-his-face",
+      "cf-protections",
+      "cf-paths"
      ]
     }
    ]
