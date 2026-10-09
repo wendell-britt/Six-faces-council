@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T17:30:59.173Z",
+ "answers": {
+  "c3d-phone-budget": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:17:21.777Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "c3d-path": {
+   "kind": "question",
+   "choice": "web",
+   "savedAt": "2026-10-09T17:30:27.058Z",
+   "steer": "I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside the game. "
+  },
+  "c3d-week": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:30:38.490Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "c3d-codex-rebuilds": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:30:45.191Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "c3d-meshy-alternatives": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:30:54.824Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "c3d-cc0-only": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:30:59.173Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/c3d-path: Inside the ontology game (steer: \"I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside the game.\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

@@ -13072,6 +13072,64 @@
      "diplomat"
     ],
     "pass": "texts to campaigns, step 2"
+   },
+   "c3d-phone-budget": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:17:21.777Z",
+    "record": "council/ledger/2026-10-09-pull-173059.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "3D build, pass 2"
+   },
+   "c3d-week": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:30:38.490Z",
+    "record": "council/ledger/2026-10-09-pull-173059.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "3D build, pass 2"
+   },
+   "c3d-codex-rebuilds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:30:45.191Z",
+    "record": "council/ledger/2026-10-09-pull-173059.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "3D build, pass 2"
+   },
+   "c3d-meshy-alternatives": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:30:54.824Z",
+    "record": "council/ledger/2026-10-09-pull-173059.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "3D build, pass 2"
+   },
+   "c3d-cc0-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:30:59.173Z",
+    "record": "council/ledger/2026-10-09-pull-173059.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "3D build, pass 2"
    }
   },
   "questions": {
@@ -14490,6 +14548,19 @@
      "diplomat"
     ],
     "pass": "unreal pipeline"
+   },
+   "c3d-path": {
+    "decision": "web",
+    "label": "Inside the ontology game",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:30:27.058Z",
+    "record": "council/ledger/2026-10-09-pull-173059.json (six-faces-council)",
+    "steer": "I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside the game.",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "3D build, pass 2"
    }
   },
   "causes": {
