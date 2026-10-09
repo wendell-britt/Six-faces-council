@@ -12910,6 +12910,87 @@
      "challenger"
     ],
     "pass": "advisor tool"
+   },
+   "up-short-sessions": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:00:05.376Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "steer": "Im happy to do this slower in a way that preserves tokens as well. Let's get an analysis on the most deft and efficient way to do this. Doing the first draft over a week for instance is ok. Give me some options to choose from OR find a way to integrate this into workflows we're already doing to justify the cost. The ontology game could be a really good one for this as it already uses blender and we're looking for a strong immersive UI experience for it",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "unreal pipeline"
+   },
+   "up-gpu-by-script": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:00:08.925Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "unreal pipeline"
+   },
+   "up-repo": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:00:15.209Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "unreal pipeline"
+   },
+   "up-cost-stop": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:00:27.292Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "unreal pipeline"
+   },
+   "ttc-story-intro": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:00:43.293Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "ttc-story-teacher": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:00:52.726Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "ttc-story-player-both": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T17:00:57.741Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "texts to campaigns, step 2"
    }
   },
   "questions": {
@@ -14303,6 +14384,31 @@
      "regent"
     ],
     "pass": "session costs"
+   },
+   "up-game-pick": {
+    "decision": "cave",
+    "label": "The Cave of Lessons",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T16:54:44.873Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "unreal pipeline"
+   },
+   "up-meshy-plan": {
+    "decision": "none",
+    "label": "No Meshy",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T16:55:38.691Z",
+    "record": "council/ledger/2026-10-09-pull-170057.json (six-faces-council)",
+    "steer": "Let's see if there are other meshy alternatives that can use Claude Code or Codex tokens, or my own GPU befor we commit to this",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "unreal pipeline"
    }
   },
   "causes": {

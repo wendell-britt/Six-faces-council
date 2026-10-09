@@ -1,0 +1,68 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T17:00:57.741Z",
+ "answers": {
+  "up-game-pick": {
+   "kind": "question",
+   "choice": "cave",
+   "savedAt": "2026-10-09T16:54:44.873Z",
+   "steer": ""
+  },
+  "up-meshy-plan": {
+   "kind": "question",
+   "choice": "none",
+   "savedAt": "2026-10-09T16:55:38.691Z",
+   "steer": "Let's see if there are other meshy alternatives that can use Claude Code or Codex tokens, or my own GPU befor we commit to this"
+  },
+  "up-short-sessions": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:00:05.376Z",
+   "status": "overrule",
+   "steer": "Im happy to do this slower in a way that preserves tokens as well. Let's get an analysis on the most deft and efficient way to do this. Doing the first draft over a week for instance is ok. Give me some options to choose from OR find a way to integrate this into workflows we're already doing to justify the cost. The ontology game could be a really good one for this as it already uses blender and we're looking for a strong immersive UI experience for it"
+  },
+  "up-gpu-by-script": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:00:08.925Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "up-repo": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:00:15.209Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "up-cost-stop": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:00:27.292Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-story-intro": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:00:43.293Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-story-teacher": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:00:52.726Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttc-story-player-both": {
+   "kind": "position",
+   "savedAt": "2026-10-09T17:00:57.741Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/up-game-pick: The Cave of Lessons",
+  "questions/up-meshy-plan: No Meshy (steer: \"Let's see if there are other meshy alternatives that can use Claude Code or Codex tokens, or my own GPU befor we commit to this\")",
+  "positions/up-short-sessions: Overruled (steer: \"Im happy to do this slower in a way that preserves tokens as well. Let's get an analysis on the most deft and efficient way to do this. Doing the first draft over a week for instance is ok. Give me some options to choose from OR find a way to integrate this into workflows we're already doing to justify the cost. The ontology game could be a really good one for this as it already uses blender and we're looking for a strong immersive UI experience for it\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
