@@ -12,12 +12,10 @@ overruled ("I don't really understand the purpose of this"); `cave-avatar-self`,
 `cave-block-branch` and `cave-detour-kept` stand. The plan is folded into bars-engine PR #265,
 `content/ontology-game/cave/DESIGN.md`, section "The next build, from the board of 9 October, 20:35".
 
-Next build, one fresh thread on PR #265 (`cave.js`, `cave-test.mjs`): the W.A.V.E. as one winding path with no free
-turns, one stretch per breath; a block on any step opens a side passage holding the five places, with Release back
-to the exact spot, a lantern on the main path, nesting and a skip; the faceless avatar from close behind (hold to
-walk, drag to look); the cave's easy breath with the optional hold-to-inhale ring; blocked steps marked on the saved
-scan. The phone budget (`c3d-phone-budget`) stays in the browser test. Vercel production deploys still fail on the
-250 MB function limit, which this PR does not cause (see the PR comment).
+Built 2026-10-09 on PR #265 (1237515): the W.A.V.E. winding path, block side passages with Release, nesting and
+skip, the faceless avatar, the cave's breath with the optional ring and a calm button, and blocked steps on the saved
+scan; 53 browser checks pass at 390 by 844. Phone link republished: https://claude.ai/artifact/UgPpdkEK2audXvgKzb1TsP.
+Next: Wendell's play on his phone and the fixes his notes ask for.
 
 ## Open on 2026-10-09, morning menu (Tap the Vein and Lenses)
 
