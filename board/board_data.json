@@ -5377,6 +5377,39 @@
    "auto": true,
    "pos": "Prototype 2 fails the guessing test: three fresh players who never played picked the right line 65 times out of 69, by tone alone. The next build makes the right line depend on the moment. An Offer opens a person once trust is earned, and asking a question when they plainly want an answer closes them. Each step gets a kind-sounding wrong line phrased as a question, and some steps have two right lines, each right at a different moment.",
    "why": "This follows hs-trust-from-the-loop: trust decides what a line does, so the wording alone cannot give it away. All four misses were already lines of this kind. Source: sprout campaigns/skilled-helper/introduction/playtest.md (PR #32)"
+  },
+  {
+   "id": "hs-wrong-is-the-wall",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "helper skills, playtest 1",
+   "auto": true,
+   "pos": "A wrong pick plays the Epiphany Bridge's wall beat. The person reacts, Ede names the missing skill right after, and the quest moves on from there, so getting it wrong brings the player to the epiphany sooner. No day is lost, and Ede no longer sends the player back at the hand-off.",
+   "why": "Your note: getting it wrong should get you closer to the goal without feeling punitive. Prototype 2's only cost for a mistake was a lost day, and the player learned nothing from it. The bridge already starts with a wall. Source: sprout campaigns/skilled-helper/introduction/playtest.md, Wendell's playtest (PR #32)"
+  },
+  {
+   "id": "hs-needs-to-find",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "helper skills, playtest 1",
+   "auto": true,
+   "pos": "Each quest's person carries one of the lamp board's five needs (space, aliveness, reconnection, ripe from unripe, the obstacle named), and finding it is the quest's main play, as in Spiritfarer. Every pick uncovers something about the need, right or wrong, and the diary keeps what was found.",
+   "why": "The play tester's Spiritfarer point: the major gameplay is figuring out what the people need. The five needs are already on the lamp board in quests.md, so the need a person carries is the node their quest lights. Source: sprout campaigns/skilled-helper/introduction/playtest.md, Wendell's playtest (PR #32)"
+  },
+  {
+   "id": "hs-person-shows-it",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "helper skills, playtest 1",
+   "auto": true,
+   "pos": "Each person has a visible state in the scene that changes with every pick: posture, the light they carry, or their stall or cart. After a closing pick they say in their own words what the line felt like, such as \"You're deciding for me again\". The item they hand over shows the state they ended in.",
+   "why": "Your note: more clarity about why you got something wrong, and a clearer visual and narrative consequence. In prototype 2 a mistake only shrank a bar. Source: sprout campaigns/skilled-helper/introduction/playtest.md, Wendell's playtest (PR #32)"
   }
  ],
  "questions": [
