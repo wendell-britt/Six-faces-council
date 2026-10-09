@@ -457,11 +457,10 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   you worked with me?" at the centre; it composes an email to Wendell and stores nothing. Positions `cf-your-words`
   and `cf-your-words-email` are in this pull request; republish the board once it merges. PR 268 is open again from
   its own session; whichever merges first, the other needs only main merged in.
-- **Next: coaching game pass 3, a fresh thread on Opus.** The 20:42 board read overruled `cf-forest`,
-  `cf-fast-lane` and `cf-paths` with steers (ledger `council/ledger/2026-10-09-pull-204156.json`, `needs_work`).
-  In short: a visitor who knows their problem gets a tour of his approach and testimonials, then a call; one who
-  doesn't goes through the ontology game, whose result comes back to the site with a strategy; life domains join
-  the map; the visitor finds the emotional block, the belief, the level (face) and the domain, then books. "I know
-  what I need" still asks what the need is. Wake Up and Open Up shape the walk in, Clean Up clears blockers,
-  choosing a face is the Grow Up move and booking is the Show Up move; the five moves proper come after booking.
-  `cf-one-door`, `cf-his-face` and `cf-protections` stand. Build on PR 270's branch.
+- **Coaching game pass 3 is done** (bars-engine PR 271, a draft stacked on PR 270's branch; pass record
+  `content/coaching-game/6FACE_PASS3_2026-10-09.md`). It applies the 20:42 overrules of `cf-forest`, `cf-fast-lane`
+  and `cf-paths`: two ways in, the ontology game's channel and face handed to `/coaching#from-game`, life domains, a
+  strategy at the centre, and the five moves shown after booking. Eleven positions are on the board (`cf-two-ways`
+  to `cf-moves-after`), none a question. Open: nobody has clicked through the game's full cycle to its new "Take this
+  to coaching" button; the next session that touches the game should. PR 271 merges into PR 270, which still waits on
+  Wendell's phone play-through (due 2026-10-12).
