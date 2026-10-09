@@ -15084,6 +15084,54 @@
      "regent"
     ],
     "pass": "coaching game 3"
+   },
+   "hs-t1-context": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T23:39:41.011Z",
+    "record": "council/ledger/2026-10-09-pull-233956.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "helper skills, prototype 2"
+   },
+   "hs-wrong-is-the-wall": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T23:39:47.206Z",
+    "record": "council/ledger/2026-10-09-pull-233956.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "helper skills, playtest 1"
+   },
+   "hs-needs-to-find": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T23:39:51.424Z",
+    "record": "council/ledger/2026-10-09-pull-233956.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "helper skills, playtest 1"
+   },
+   "hs-person-shows-it": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T23:39:56.274Z",
+    "record": "council/ledger/2026-10-09-pull-233956.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "helper skills, playtest 1"
    }
   },
   "questions": {
