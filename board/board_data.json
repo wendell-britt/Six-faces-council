@@ -4602,6 +4602,61 @@
    "auto": true,
    "pos": "If the cave is built on the web, each chamber stays under about 3 MB with its lighting baked in Blender, and the walk is tested at phone size before you are asked to play it.",
    "why": "The ontology game is played on phones; a cave that loads slowly fails before the lesson. The body map's figure is 204 KB by the same method. Source: bars-engine content/ontology-game/body/figure.glb"
+  },
+  {
+   "id": "c3d-five-places",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "Inside the body, each chamber is a short cave walk with five places, one per part of block work: the mouth for the sensation, the pool for fire, water, wood, metal or earth and its practice, the passage where the daemon stands, the six game masters' gate, and the way out for release. The player moves on only after finishing a place.",
+   "why": "Your steer on c3d-path: the game happens inside the body map. The five parts are the game's own BLOCK_STEPS from your sketch of 7 October. Source: bars-engine content/ontology-game/cave/DESIGN.md, pull request #265"
+  },
+  {
+   "id": "c3d-regions-first",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "The body's fifty named places are grouped into regions with one chamber each. Throat, heart and belly open first; a tap anywhere else says that chamber isn't open yet and carries on in the original game's flow.",
+   "why": "A chamber per place is too much for a week. Chest, throat and belly are where people most often place emotion in Nummenmaa and colleagues' body maps of emotion (PNAS, 2014). Source: cave/DESIGN.md, cave/manifest.json"
+  },
+  {
+   "id": "c3d-fork-page",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "The Cave of Lessons is its own page at /ontology-game/cave/, beside the original game, which stays untouched. Its words are copied from the game with line references until the cave is kept; then both pages read one shared file.",
+   "why": "Your steer asked to fork the ontology game. Two pages side by side can be played and compared. Source: cave/DESIGN.md, How it is built"
+  },
+  {
+   "id": "c3d-daemon-body",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "The seven daemons share one faceless body built by script, like the body map's figure, and differ by colour, posture and what they carry.",
+   "why": "One script and one file keep the passage under the phone budget, and a faceless figure follows the body map's rule that any player can read it as theirs. Source: body/build_figure.py; c3d-phone-budget"
+  },
+  {
+   "id": "c3d-one-finger",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "Movement inside the body is one finger: drag to look, tap the glowing marker ahead to walk to the next place. There is no joystick.",
+   "why": "The walk only goes forward, and the game is played on phones. Source: cave/DESIGN.md"
   }
  ],
  "questions": [
