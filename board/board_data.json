@@ -4817,6 +4817,59 @@
    "auto": true,
    "pos": "wendell.masteringallyship.com now sends visitors to the coaching game. It was already on the site and showed the home page.",
    "why": "The address is on the bars-engine Vercel project (checked 9 October). The redirect ships with the pull request, so no Vercel setting changes. Source: 6FACE_PASS1_2026-10-09.md"
+  },
+  {
+   "id": "cave-avatar-self",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "3D build, pass 3",
+   "auto": true,
+   "pos": "You see yourself in the cave: a small faceless figure, built like the daemons, wearing the charge you named at the doorway (drawn in for tightness, fogged for numbness, bright for strength), seen from close behind and a little above. Holding a thumb anywhere walks it toward the next glowing place, and a drag looks around. It loosens as the W.A.V.E. climbs and breathes with the cave.",
+   "why": "Your note: 'I think I want to have a player avatar.' The daemons' body (c3d-daemon-body) and the one-finger walk (c3d-one-finger) already set the look and the input. The Player daemon asked for 'a small someone to walk with me, who is me and not a hero.' Source: council/passes/6FACE_PASS_3d-build3_2026-10-09.md, Shaman"
+  },
+  {
+   "id": "cave-breath-in-the-cave",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "3D build, pass 3",
+   "auto": true,
+   "pos": "The cave breathes on its own at an easy pace: its walls ease, its light warms, and the element you raised glows. The avatar walks on the inhale and settles on the exhale. A hold-to-inhale ring is offered for a player who wants to lead the breath, and a calm switch is always on screen. No breath is scored and no step waits on one.",
+   "why": "Ontology game pass 1: each step is one guided breath, 'an offer of pace, never a lock'. The Emotional Body daemon cites a review finding that some breathing exercises intensify anxiety, so the pacer is never required. Source: council/passes/6FACE_PASS_3d-build3_2026-10-09.md, Diplomat"
+  },
+  {
+   "id": "cave-block-branch",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "3D build, pass 3",
+   "auto": true,
+   "pos": "On any W.A.V.E. step you can say it will not go further. The wall there opens a side passage with the block work in it, and Release walks you back to the exact spot. A block inside that passage branches again. The main path stays lit, a lantern marks where you branched, and every block offers a skip.",
+   "why": "Your note: 'branching paths that emerge from blockages in the wave patterns'. Your sketch of 7 October already draws resistance on a W.A.V.E. step going to block work and back ('Return to original block'), and game.jsx keeps the block stack that carries the way back. Your ruling of 9 September: a block is never assumed and always offers a skip. Source: council/passes/6FACE_PASS_3d-build3_2026-10-09.md, What the record already answers"
+  },
+  {
+   "id": "cave-detour-kept",
+   "faces": [
+    "regent"
+   ],
+   "pass": "3D build, pass 3",
+   "auto": true,
+   "pos": "A step you blocked on stays marked on the saved scan, so you can see where the charge pushed back.",
+   "why": "The ontology game's map already keeps every detour (game.jsx, line 2032). Source: council/passes/6FACE_PASS_3d-build3_2026-10-09.md, Regent"
+  },
+  {
+   "id": "cave-labyrinth-test",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "3D build, pass 3",
+   "auto": true,
+   "pos": "Before you are asked to walk the labyrinth, five people walk one chamber on their phones with no instruction. It fails if anyone pauses more than 10 seconds to ask where to go, if the winding adds more than about a fifth to the time before the first breath step, if it drops below 30 frames a second on a mid-range phone, or if someone coming back from a branch cannot say which step they resumed.",
+   "why": "A winding walk can lose a person who is carrying a live feeling. The thresholds are the Skeptic daemon's choices and can be moved. Source: council/passes/6FACE_PASS_3d-build3_2026-10-09.md, Challenger"
   }
  ],
  "questions": [
@@ -8509,6 +8562,62 @@
      "v": "beside",
      "label": "The game on its own page",
      "c": "The coaching page stays as it is with a Play your way in button, and the game lives at masteringallyship.com/coaching/play. Fewer visitors meet the game."
+    }
+   ]
+  },
+  {
+   "id": "cave-spine",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "3D build, pass 3",
+   "q": "What should the main walk through a chamber be? The council recommends the W.A.V.E. as the winding path, with the five places as the branch a block opens.",
+   "why_you": "Your sketch of 7 October puts the W.A.V.E. first and the block work on the branch. Your day-3 note, 'Choosing all 6 faces when you're in teh cave is very cool', says the six stones matter, and under the sketch a walk with no block never reaches them. Which of the two wins is yours.",
+   "not_before": "The breath was not in the cave until your note of 19:40 on 9 October. The analysis is in council/passes/6FACE_PASS_3d-build3_2026-10-09.md.",
+   "options": [
+    {
+     "v": "wave-spine",
+     "label": "W.A.V.E. path, block work on the branch (recommended)",
+     "c": "The walk is Welcome, the four A's, Validate and Exhale, one winding stretch per breath. A block opens the five places (sensation, element, daemon, the six stones, release) as a side passage. It follows your sketch; a walk with no block never meets the daemon or the stones."
+    },
+    {
+     "v": "places-spine",
+     "label": "Five places stay the walk",
+     "c": "The day-3 walk stays as you played it, and one W.A.V.E. breath is taken at each place, with a block branching from any breath. Every walk meets the daemon and the stones; the W.A.V.E. is lighter."
+    },
+    {
+     "v": "wave-then-places",
+     "label": "W.A.V.E. first, then the five places",
+     "c": "The winding W.A.V.E. comes first, with blocks branching as in the first option, and the five places always follow at the end. Every walk meets the stones, and each walk is longer."
+    }
+   ]
+  },
+  {
+   "id": "cave-labyrinth-form",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "3D build, pass 3",
+   "q": "What kind of labyrinth should the cave be? The council recommends one winding path that branches only at a block.",
+   "why_you": "'Labyrinthine' carries two meanings: the old labyrinth has one winding route and no wrong turns, and a maze has choices and dead ends. The feel you want is your preference, and it decides how the path is built.",
+   "not_before": "The cave was a straight passage until your note of 9 October. The analysis is in council/passes/6FACE_PASS_3d-build3_2026-10-09.md.",
+   "options": [
+    {
+     "v": "one-path",
+     "label": "One winding path (recommended)",
+     "c": "Switchbacks and bends with no free turns, so nobody gets lost while a feeling is live. Branches appear only where you block. Closest to a walking labyrinth's meditative walk."
+    },
+    {
+     "v": "side-caves",
+     "label": "Winding, with side caves to wander",
+     "c": "The same path with small side caves that hold nothing required, for wonder and exploring. More to see, and the walk takes longer."
+    },
+    {
+     "v": "maze",
+     "label": "A true maze",
+     "c": "Choices and dead ends from the start. The most exploring, and the walk competes with the practice for attention; the five-person phone test is likeliest to fail."
     }
    ]
   }
