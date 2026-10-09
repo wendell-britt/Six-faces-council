@@ -439,3 +439,18 @@ session opens at about 102,000 tokens before doing any work (first_request_input
 - **Next:** a new thread builds prototype 2 from quests.md (quests 0 to 5, in the ordinary talk box, lamp board panel)
   by republishing https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc, and runs tests T1 to T4. Step 3
   (`encounters.yaml`) can start from story.md and quests.md.
+
+## Open on 2026-10-09, from the coaching site thread (handed off at the context limit)
+
+- **PR 270 now carries the forest (PR 268's head) plus the testimonial ask.** `/coaching#your-words` opens "Have
+  you worked with me?" at the centre; it composes an email to Wendell and stores nothing. Positions `cf-your-words`
+  and `cf-your-words-email` are in this pull request; republish the board once it merges. PR 268 is open again from
+  its own session; whichever merges first, the other needs only main merged in.
+- **Next: coaching game pass 3, a fresh thread on Opus.** The 20:42 board read overruled `cf-forest`,
+  `cf-fast-lane` and `cf-paths` with steers (ledger `council/ledger/2026-10-09-pull-204156.json`, `needs_work`).
+  In short: a visitor who knows their problem gets a tour of his approach and testimonials, then a call; one who
+  doesn't goes through the ontology game, whose result comes back to the site with a strategy; life domains join
+  the map; the visitor finds the emotional block, the belief, the level (face) and the domain, then books. "I know
+  what I need" still asks what the need is. Wake Up and Open Up shape the walk in, Clean Up clears blockers,
+  choosing a face is the Grow Up move and booking is the Show Up move; the five moves proper come after booking.
+  `cf-one-door`, `cf-his-face` and `cf-protections` stand. Build on PR 270's branch.

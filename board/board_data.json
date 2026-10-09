@@ -5049,6 +5049,27 @@
    "auto": true,
    "pos": "With the tending screen overruled, a tending runs in the ordinary talk box. Its choices are dialogue lines, the trust colour sits on the person's portrait, and the lamp board is one small panel. Test T1 now asks whether the right line can be guessed from its wording.",
    "why": "You overruled hs-tending-screen, so nothing new is built for it. Source: quests.md, For prototype 2"
+  },
+  {
+   "id": "cf-your-words",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "Your coaching page now asks for testimonials. At the centre, \"Have you worked with me?\" asks what someone came in with, what changed, and how they want to be named, including \"Don't quote me\". Send masteringallyship.com/coaching#your-words to past clients and it opens straight there.",
+   "why": "Your answer on cf-testimonial, 9 October: \"I also need to make a part of the coaching page where I can reach out to people to give testamonials about my work.\" Whether and how to be named is the client's call. Source: bars-engine PR 270, src/lib/coaching/your-words.ts"
+  },
+  {
+   "id": "cf-your-words-email",
+   "faces": [
+    "architect"
+   ],
+   "pass": "coaching game 2",
+   "auto": true,
+   "pos": "A testimonial reaches you as an email from the client's own mail app, with their words and their naming choice written in. The page stores nothing, and nothing appears on the site until you put it there.",
+   "why": "The page keeps no visitor data (cg-browser-only), and your email is already on the site's other contact links. The client sees exactly what you get. Source: bars-engine PR 270"
   }
  ],
  "questions": [
