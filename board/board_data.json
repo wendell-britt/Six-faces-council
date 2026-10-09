@@ -5366,6 +5366,17 @@
    "auto": true,
    "pos": "Each move's name above a screen links to a new page, masteringallyship.com/coaching/moves, which explains what the move means, what it is on the walk, and links to the site's Check for it. It opens in a new tab so the walk keeps its place. Claude drafted the explanations from your cf-paths steer, and you can rewrite them.",
    "why": "Your steer on cf-moves-walk: \"These should be hyperlinks that go to a page that explain what each of them mean\". Source: bars-engine src/app/coaching/moves/page.tsx (PR 271)"
+  },
+  {
+   "id": "hs-t1-context",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "helper skills, prototype 2",
+   "auto": true,
+   "pos": "Prototype 2 fails the guessing test: three fresh players who never played picked the right line 65 times out of 69, by tone alone. The next build makes the right line depend on the moment. An Offer opens a person once trust is earned, and asking a question when they plainly want an answer closes them. Each step gets a kind-sounding wrong line phrased as a question, and some steps have two right lines, each right at a different moment.",
+   "why": "This follows hs-trust-from-the-loop: trust decides what a line does, so the wording alone cannot give it away. All four misses were already lines of this kind. Source: sprout campaigns/skilled-helper/introduction/playtest.md (PR #32)"
   }
  ],
  "questions": [
