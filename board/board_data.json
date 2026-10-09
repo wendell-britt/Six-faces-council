@@ -4744,6 +4744,17 @@
    "auto": true,
    "pos": "When a scan names several places, each is a chamber, and every pair named in the same sitting is joined by a path through the inside of the body. Each chamber's way out holds one portal per other sensation, the player picks which to follow, and portals already walked stay lit. A new sensation named inside the cave adds its chamber and portal on the spot.",
    "why": "Your steer: branching off with portals or paths when there are several body sensations. The body map already joins one sitting's marks with a line. Source: body-map.js; cave/DESIGN.md"
+  },
+  {
+   "id": "c3d-portal-first",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "At the portal, before going in, the player names the charge, then the elemental channel, then the face. Only then does the chamber appear: one generic shape every time, with the charge setting the walls, the channel setting the light and the pool, and the face setting the gate. Inside, the five places start from what the player already named.",
+   "why": "Your overrule of c3d-spot-shape: the chamber's feeling matches the energy brought in and isn't made until the charge, channel and face are known; body markers are portals. Source: bars-engine content/ontology-game/cave/DESIGN.md, pull request #265"
   }
  ],
  "questions": [
