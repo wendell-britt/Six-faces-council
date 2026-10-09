@@ -312,3 +312,14 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   or the Unreal desktop game). Five positions stand unless flipped: `c3d-meshy-alternatives`, `c3d-week` (replaces
   `up-short-sessions`), `c3d-codex-rebuilds`, `c3d-cc0-only`, `c3d-phone-budget`.
 - **Next:** once he answers, day 1 of `c3d-week` starts in a new thread (chamber design and manifest, on Opus).
+
+## Open on 2026-10-09, from the MTGOA podcast invitations thread
+
+- **The podcast outreach move** is new: `council/moves/podcast-outreach.md`. Every invitation runs it: check what is
+  known, research or ask on the board when it isn't enough, brainstorm a topic tied to the book or an episode, draft.
+- **First run:** invitations for Marina and Dustin Muñoz de Martínez, Adam (Masculine Witness) and the WMHCA gala
+  counselors are in the MTGOA project files at `podcast/outreach/invitations-2026-10-09.md`; the three new contacts
+  are on the Outreach tab and Marina's row carries her topic. Wendell sends them.
+- **Topic pass over the list:** `podcast/outreach/topic-brainstorm-2026-10-09.md`. The research-first group (Urban
+  League consultants, award-only rows, the three disability orgs, Barb Toews, Rosie Ayala) still needs step 2's
+  research before anyone pitches them.
