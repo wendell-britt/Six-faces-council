@@ -44,6 +44,10 @@ Reads that stop (2026-10-08): a read is never resumed. It is idempotent, so a st
 thread, and only after `python3 board/read.py <dir> --dry` shows rows main still lacks. It runs in a thread from
 `start_thread_session`, never in an Agent worker of the coordinator. The reason is in docs/incidents.md.
 
+A stall message (2026-10-09): read the transcript of the session that sent it before naming a cause, and archive any
+routine-fired session that is not the coordinator and is still running. The zombie of 10-07 to 10-09 resumed its
+worker after every restart, and the worker's first call each time was `add_repo` (docs/incidents.md).
+
 ## The Send to Claude button
 
 `board/template.html` shows a bar at the bottom of the board once anything is saved and not yet sent: a row saved and
