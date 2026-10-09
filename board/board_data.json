@@ -4722,6 +4722,28 @@
    "auto": true,
    "pos": "A single Lens goal can be renamed, parked or retired from the Observatory, without re-running the intake or the descent.",
    "why": "Today goals change only by re-running the intake or descent, which rewrite the whole set (src/actions/lens-goals.ts). Source: council/passes/6FACE_PASS_morning-menu1_2026-10-09.md"
+  },
+  {
+   "id": "c3d-spot-shape",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "Every named place on the figure gets its own chamber, shaped from the place: width and height follow the body's girth there, a limb is a long passage along the arm or leg, the head is a small dome, and a place on the back is lit from behind. One kit of pieces is bent to fit each spot, so every spot works from the first build.",
+   "why": "Your overrule of c3d-regions-first: the chamber changes to meet the spot. The figure script already holds the radii the shapes need. Source: bars-engine content/ontology-game/cave/DESIGN.md, pull request #265"
+  },
+  {
+   "id": "c3d-sensation-paths",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "3D build, day 1",
+   "auto": true,
+   "pos": "When a scan names several places, each is a chamber, and every pair named in the same sitting is joined by a path through the inside of the body. Each chamber's way out holds one portal per other sensation, the player picks which to follow, and portals already walked stay lit. A new sensation named inside the cave adds its chamber and portal on the spot.",
+   "why": "Your steer: branching off with portals or paths when there are several body sensations. The body map already joins one sitting's marks with a line. Source: body-map.js; cave/DESIGN.md"
   }
  ],
  "questions": [
