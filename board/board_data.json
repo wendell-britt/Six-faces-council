@@ -4934,6 +4934,78 @@
    "auto": true,
    "pos": "The five-stop map is retired. Clean Up, Grow Up and Show Up become the other paths at the centre: the 3-2-1 opens there, and the ontology game, the thirty-day challenge and the founder track are one tap away. This replaces cg-five-moves.",
    "why": "Your words of 9 October: \"This one is a lot of buttons and scrolling\". Source: 6FACE_PASS2_2026-10-09.md, Architect"
+  },
+  {
+   "id": "hs-six-skills",
+   "faces": [
+    "architect"
+   ],
+   "pass": "helper skills, pass 1",
+   "auto": true,
+   "pos": "The introduction's core skills are six: check in, ask don't fix, say it back, pull the splinter, one small step then come back, and hand over the lamp. Every quest practises one or more of them.",
+   "why": "The extract's 13 milestones and 17 techniques collapse into these six acts a player does; the pass's table names the extract ids each one lands. Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
+  },
+  {
+   "id": "hs-quests-from-ede",
+   "faces": [
+    "regent"
+   ],
+   "pass": "helper skills, pass 1",
+   "auto": true,
+   "pos": "Every Helper's track beat is a quest Mother Ede gives. The player returns to her, she reads what they bring back, and she sends them back to check in.",
+   "why": "Your steer of 2026-10-09 in the thread says it. Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
+  },
+  {
+   "id": "hs-tending-screen",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "helper skills, pass 1",
+   "auto": true,
+   "pos": "A tending uses the spirit-negotiation screen with a person and talk verbs: Check in, Ask (the four questions), Say back, Name it, Offer and Wait. Offer is advice; it is always on the menu and never fails a quest. A player who tends straight after a bout, ungrounded, gets a daemon's line pushed into the menu.",
+   "why": "Reusing the negotiation screen adds a mode, not a loop (story.md, one loop at a time). The daemon line is story.md's first hole, steadying yourself while you listen, played. Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
+  },
+  {
+   "id": "hs-charge-shows",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "helper skills, pass 1",
+   "auto": true,
+   "pos": "Charge moves at once on every line, with no numbers and no score per line: a question slows the player's own charge, and the person's colour brightens when a step comes from their own words and dims after an Offer. A second bar for how heard they feel backs up the colour. The outcome shows a week later.",
+   "why": "design.md's slice exit test (a playtester can say why it changed without being told). The Emotional Body daemon and the Shaman composted punishing bounce-back and per-line scores. Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
+  },
+  {
+   "id": "hs-learning-signals",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "helper skills, pass 1",
+   "auto": true,
+   "pos": "A player knows they are learning through six signals: the charge moves, the world changes a week later, the item Ede reads, the lamp, hints that fade by rank as skills rise by proper use, and their own voices going quiet after bouts. The BAR is the proof outside the game.",
+   "why": "design.md: skill levels rise by proper use. ttc-slice-bar-validator: you validate BARs in the first slice. Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
+  },
+  {
+   "id": "hs-tests",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "helper skills, pass 1",
+   "auto": true,
+   "pos": "Four tests run on prototype 2. T1: can the menu be won by guessing? T2: does the player read the item as a grade or as the person's choice? T3: does the skill carry to the next quest with no hints? T4: where does H1 to H5 drag?",
+   "why": "Each test names the blocker it resolves (Challenger lesson, 2026-10-03). The Skeptic daemon's answer-key finding is what they guard. Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
+  },
+  {
+   "id": "hs-next-build",
+   "faces": [
+    "regent"
+   ],
+   "pass": "helper skills, pass 1",
+   "auto": true,
+   "pos": "After you answer hs-items-when and hs-lamp-talisman, a new thread builds prototype 2 of H1 to H5 with the tending screen, the items and the lamp, and posts the phone link.",
+   "why": "Phone-testing rule (2026-10-09). Prototype 1: https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
   }
  ],
  "questions": [
@@ -8704,6 +8776,62 @@
      "v": "not-yet",
      "label": "Not yet (recommended)",
      "c": "The centre ships without one, and the question comes back when you have one."
+    }
+   ]
+  },
+  {
+   "id": "hs-items-when",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "helper skills, pass 1",
+   "q": "When does the person you helped hand over the item Ede reads?",
+   "why_you": "Your steer said NPCs give items depending on the player's answer. The council recommends changing when, so it is your call.",
+   "not_before": "The items idea arrived today, 2026-10-09.",
+   "options": [
+    {
+     "v": "week-later",
+     "label": "A week later (recommended)",
+     "c": "The item comes from their life after the step (the first bowl from his stall, or a Well chit). It reports what the step did, and going back for it is the check-in practised."
+    },
+    {
+     "v": "end-of-talk",
+     "label": "At the end of the talk",
+     "c": "Faster feedback. The Skeptic warns it becomes an answer key; test T2 checks it."
+    },
+    {
+     "v": "no-item",
+     "label": "No item",
+     "c": "Ede reads your questions back instead. The Skeptic's alternative; it drops the items you asked for."
+    }
+   ]
+  },
+  {
+   "id": "hs-lamp-talisman",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "helper skills, pass 1",
+   "q": "Should Ede's clay lamp become a talisman that lights as she reads what you bring back?",
+   "why_you": "Talismans are Decided as spirit-powered. A lamp lit by tending is a new kind, which only you can rule.",
+   "not_before": "story.md made the lamp a key item with no effect; your steer today tied talismans to how well the player helped.",
+   "options": [
+    {
+     "v": "lamp-board",
+     "label": "Yes, a lamp board (recommended)",
+     "c": "Five element nodes and a centre: Earth check in, Water say it back, Wood what better looks like, Fire pull the splinter, Metal one small step, the flame hand it over. The board teaches each element's need as well."
+    },
+    {
+     "v": "key-item",
+     "label": "No, keep it a key item",
+     "c": "No Decided rule changes. The diary tracks the skills, and the talisman part of your steer is dropped."
+    },
+    {
+     "v": "act-two",
+     "label": "Later, in the forest grid",
+     "c": "The skills join the forest talismans in Act II. Keeps the spirits rule; tracking waits until then."
     }
    ]
   }
