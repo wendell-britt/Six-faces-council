@@ -308,10 +308,40 @@ session opens at about 102,000 tokens before doing any work (first_request_input
 
 - **The pass:** `council/passes/6FACE_PASS_3d-build2_2026-10-09.md`, ledger `2026-10-09-3d-build-pass2.json`. No Meshy;
   the record showed the ontology game's body map already builds 3D by Blender script (`build_figure.py`, `figure.glb`).
-- **Waiting on him:** `c3d-path` (web inside the ontology game, recommended; web plus TRELLIS.2 daemons from his Mac;
+- **Answered 2026-10-09 17:30 UTC:** `c3d-path` = web, with his steer: "I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside the game." The five c3d positions stand.
+- **Next:** once he answers, a new thread runs step 1 on *The Skilled Helper*'s introduction, on Sonnet, and writes
+  `extract.yaml` in Sprout. It needs the introduction's text: the copy uploaded to bars-engine if a session can reach
+  it, or pages he attaches.
+
+## Open on 2026-10-07, from the ontology game steers thread
+
+- **Applied:** his board answers on `oag-ea-practice`, `oag-main-order`, `oag-daemon-step` (overruled) and `oag-record`
+  (A), in bars-engine #264, a draft that stacks on #263 and targets its branch. The positions the build added stand
+  unless he flips them: `oag-open-up-tools`, `oag-open-up-marks`, `oag-wave-first`, `oag-dig-deeper`.
+- **Merged 2026-10-07 23:50 UTC** on his word ("ok let's merge both of those"): #264 into #263's branch, then #263
+  into main, with the 21:06 steers (`oag-clean-up-moves`). Pass 3's test 10 (he plays one blocked step against his
+  sketch) is still open on his steps list.
+
+## Open on 2026-10-08, from the outreach-on-board pass
+
+- **Built** (`council/ledger/2026-10-08-outreach-tab-build.json`): the board has an Outreach tab and a live Podcast
+  chases list on Your steps, both on the board's own `contacts` and `shows`, copied from
+  https://claude.ai/artifact/LSrgR62X3GWJ9ryvbCrV9L with their ids. The Morning brief routine
+  (`trig_01KkW95XDC3xrnYxmBLbjmX2`) reads the board's contacts. The old page is a pointer; its store is kept untouched.
+  Step `podcast-outreach-chase-01` is withdrawn.
+- **Dated checks, by 2026-10-15:** a chase Wendell saves shows on the contact at once; the first weekday morning brief
+  after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower
+  on his phone. If the board is slow, the Challenger's fallback is a second page inside the same artifact.
+- **Not in scope:** the Event Pipeline stays on its own page until a pass of its own (the Challenger's dissent).
+
+## Open on 2026-10-09, from the 3D build options thread (pass 2)
+
+- **The pass:** `council/passes/6FACE_PASS_3d-build2_2026-10-09.md`, ledger `2026-10-09-3d-build-pass2.json`. No Meshy;
+  the record showed the ontology game's body map already builds 3D by Blender script (`build_figure.py`, `figure.glb`).
+- **Answered 2026-10-09 17:30 UTC:** `c3d-path` = web, with his steer: "I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside the game." The five c3d positions stand. (Was: `c3d-path` (web inside the ontology game, recommended; web plus TRELLIS.2 daemons from his Mac;
   or the Unreal desktop game). Five positions stand unless flipped: `c3d-meshy-alternatives`, `c3d-week` (replaces
   `up-short-sessions`), `c3d-codex-rebuilds`, `c3d-cc0-only`, `c3d-phone-budget`.
-- **Next:** once he answers, day 1 of `c3d-week` starts in a new thread (chamber design and manifest, on Opus).
+- **Next:** day 1 of `c3d-week` starts in a new thread (chamber design and manifest, on Opus).
 
 ## Open on 2026-10-09, from the MTGOA podcast invitations thread
 
