@@ -1,0 +1,22 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T22:06:34.464Z",
+ "answers": {
+  "cf-game-belief-carried": {
+   "kind": "position",
+   "savedAt": "2026-10-09T22:06:30.060Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-moves-page": {
+   "kind": "position",
+   "savedAt": "2026-10-09T22:06:34.464Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

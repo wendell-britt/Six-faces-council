@@ -15016,6 +15016,30 @@
      "sage"
     ],
     "pass": "podcast guests"
+   },
+   "cf-game-belief-carried": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T22:06:30.060Z",
+    "record": "council/ledger/2026-10-09-pull-220634.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-moves-page": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T22:06:34.464Z",
+    "record": "council/ledger/2026-10-09-pull-220634.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "coaching game 3"
    }
   },
   "questions": {
