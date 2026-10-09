@@ -4,6 +4,15 @@ The council works in short sessions (Wendell, 2026-10-03, board read 29). A sess
 in the repo and on the board, writes anything left open here, and ends. The next session starts by reading
 CLAUDE.md, this file and the board.
 
+## Open on 2026-10-09, morning menu (Tap the Vein and Lenses)
+
+- **Pass 1** is `council/passes/6FACE_PASS_morning-menu1_2026-10-09.md`. On the board: positions `mm-backlog-sources`,
+  `mm-menu-shape`, `mm-picks-become-threads`, `mm-intake-saves-each-lens`, `mm-intake-one-a-morning`, `mm-goal-edit`;
+  questions `mm-where` and `mm-raw`. Nothing is built yet.
+- **Next, once he answers `mm-where`:** one thread for `council/morning.py` and the bridge, one bars-engine thread for
+  the three Lenses fixes (save each domain, one domain a morning, edit a single goal). The intake fixes stand on
+  their own and can start before the answer.
+
 ## Open on 2026-10-08, cutting session cost (advisor thread)
 
 Costs of every council session, read from the platform: project files `usage-audit/sessions-2026-10-08.md`. A
