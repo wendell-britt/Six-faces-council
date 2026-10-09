@@ -14669,6 +14669,331 @@
      "architect"
     ],
     "pass": "helper skills, rulings"
+   },
+   "cf-your-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:11:29.136Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "coaching game 2"
+   },
+   "cf-your-words-email": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:11:34.737Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "coaching game 2"
+   },
+   "cf-six-questions": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:11:52.421Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-light": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:12:00.721Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-body": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:12:08.205Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-routing": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:12:16.554Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-experiences": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:12:20.604Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-two-ways": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:25:58.061Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-know-it": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:26:03.792Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-tour": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:26:16.257Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-find-four": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:26:25.790Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-domains": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:26:31.424Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-strategy": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:26:37.625Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-face-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:26:41.957Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-game-handoff": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:26:47.675Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-game-belief": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:27:12.275Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "steer": "They should be able to carry this over for ease of use",
+    "faces": [
+     "regent"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-moves-walk": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:27:32.259Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "steer": "These should be hyperlinks that go to a page that explain what each of them mean",
+    "faces": [
+     "regent"
+    ],
+    "pass": "coaching game 3"
+   },
+   "cf-moves-after": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:27:37.458Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "coaching game 3"
+   },
+   "promo-signin-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:27:58.426Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "app promotion 1"
+   },
+   "promo-founding-season": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:06.843Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "app promotion 1"
+   },
+   "promo-caption-cta": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:13.161Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "app promotion 1"
+   },
+   "promo-x-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:20.259Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "app promotion 1"
+   },
+   "promo-reddit-listen": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:27.794Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "app promotion 1"
+   },
+   "promo-facebook-personal": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:32.842Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "app promotion 1"
+   },
+   "promo-monday-numbers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:37.376Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "app promotion 1"
+   },
+   "pod-social-launch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:52.694Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "podcast"
+   },
+   "pod-reddit-own-sub-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:28:58.294Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "podcast"
+   },
+   "pod-guests-list": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:29:20.928Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "podcast guests"
    }
   },
   "questions": {
@@ -16209,6 +16534,30 @@
      "architect"
     ],
     "pass": "coaching game 2"
+   },
+   "promo-paywall-when": {
+    "decision": "when-stripe",
+    "label": "As soon as Stripe is set up",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:27:52.528Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "app promotion 1"
+   },
+   "pod-guests-first-wave": {
+    "decision": "first-five",
+    "label": "Benjamin Camras, Jeffrey Hall, Betty Martin, SlutStack, Linda Sutton",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T21:29:12.461Z",
+    "record": "council/ledger/2026-10-09-pull-212920.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "podcast guests"
    }
   },
   "causes": {
