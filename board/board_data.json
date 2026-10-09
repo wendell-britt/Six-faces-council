@@ -5231,6 +5231,119 @@
    "auto": true,
    "pos": "The five choices in question 1 are drafts for you to rewrite: build what I keep putting off; feel alive in my days again; stop repeating the same pattern with people; show up well for people who are treated differently than me; lead my team or community through something hard.",
    "why": "You asked for \"a few options that I know I Can help with\". The council drafted them from your offers. Source: 6FACE_PASS3_2026-10-09.md, Diplomat"
+  },
+  {
+   "id": "cf-two-ways",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "Your coaching page now opens with two ways in: \"Help me find it\" and \"I know what I'm working on\", with a link to find it in the ontology game instead. Both end at the centre with the call.",
+   "why": "Your steer on cf-forest, 9 October: \"People need to identify their problem OR given a path to understanding their problem\". Source: bars-engine PR 271, content/coaching-game/6FACE_PASS3_2026-10-09.md"
+  },
+  {
+   "id": "cf-know-it",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "\"I know what I'm working on\" asks what they want help with, in their own words, and where in their life it is, then shows a short tour of how you work. \"Take me to the prices\" stays on that screen, so the four prices are still two taps from the start.",
+   "why": "Your steer on cf-fast-lane: \"I know what I need should still give them the opportunity to say what that need is\". Their words go into the Calendly notes. Source: bars-engine PR 271"
+  },
+  {
+   "id": "cf-tour",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The tour is two short paragraphs, on Emotional Alchemy and on coaching at six levels, and the six faces to pick from. Testimonials go in the tour once a client sends theirs and agrees to be quoted. Until then it shows none.",
+   "why": "Your steer on cf-forest asked for \"a tour of my approach and testamonials\". No quotes with consent exist yet (cf-your-words), so nothing is invented. Source: bars-engine PR 271"
+  },
+  {
+   "id": "cf-find-four",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "\"Help me find it\" walks through where it sits in the body, the loudest feeling and its job, the belief (\"When you try to move on this, what does a part of you say?\"), the life domain, and the face. Every step has a skip.",
+   "why": "Your steer: \"what emotional block what self sabotaging belief is at play at which level in what domain\". The skips follow your 9 September lesson on self-sabotage \"with the given choice to skip\". Source: bars-engine PR 271"
+  },
+  {
+   "id": "cf-domains",
+   "faces": [
+    "architect"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The life domains on the page are relationships, career, money, creativity, health, home and community, the same placeholder list sprout uses, until the Lenses domains are formalized.",
+   "why": "Your answer on ya-domains, 5 October: \"really it's about life domains, Relationships, Career, Money, Creativity etc.\" Source: sprout position ya-life-domains"
+  },
+  {
+   "id": "cf-strategy",
+   "faces": [
+    "sage"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The centre shows what the visitor found and \"How we would work on it\": the face's approach in their domain, Emotional Alchemy with the feeling they found, and meeting the part that holds the belief. \"Copy what I carried in\" puts all of it in the Calendly notes.",
+   "why": "Your steer: the site \"then offers a strategy they can use to work with me\", and \"most roads will lead to emotinoal alchemy training to some degree\". Source: bars-engine src/lib/coaching/forest-path.ts (PR 271)"
+  },
+  {
+   "id": "cf-face-words",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "Each face is offered as something a visitor might say, such as \"I know what to do, and I keep not doing it\" for Power, the Challenger. Claude drafted all six lines from faces.yaml, and you can rewrite any of them.",
+   "why": "Strangers get plain words (pass 2). The lines describe your coaching, so they are yours to change. Source: bars-engine src/lib/coaching/forest-path.ts (PR 271)"
+  },
+  {
+   "id": "cf-game-handoff",
+   "faces": [
+    "architect"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "On the site, the ontology game's last screen has a \"Take this to coaching\" button. It opens the coaching page with the feeling and the face the player worked, and the walk picks up at the belief.",
+   "why": "Your steer: \"pass what happened to them in the game to the site\". The game already ends with the channel and the face, and its colour faces match the council's. Source: bars-engine content/ontology-game/game.jsx (PR 271)"
+  },
+  {
+   "id": "cf-game-belief",
+   "faces": [
+    "regent"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The belief doesn't cross over from the game. The coaching page asks the visitor to write it again in their own words. Flip this and the link carries it too.",
+   "why": "The game never stores belief text (oag-map-private, 24 September), and a link's address stays in browser history. Source: bars-engine PR 271"
+  },
+  {
+   "id": "cf-moves-walk",
+   "faces": [
+    "regent"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "Each screen names its move in small letters above the heading: Wake up on the body steps, Open up on the feeling's job and the tour, Clean up on the belief and the domain, Grow up on choosing a face, and Show up at the centre.",
+   "why": "Your steer on cf-paths: \"the journey to the center of the forest does also take that shape\" and \"chcoosing a face is essentially the grow up move and showing up mean booking a call\". Source: bars-engine PR 271"
+  },
+  {
+   "id": "cf-moves-after",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The five moves as practices appear only after \"Sit down with me\", as \"Before we meet: five moves\", with the free doors and the 3-2-1 under them.",
+   "why": "Your steer on cf-paths: the basic moves are \"more useful for people AFTER they have booked\". Source: bars-engine PR 271"
   }
  ],
  "questions": [
