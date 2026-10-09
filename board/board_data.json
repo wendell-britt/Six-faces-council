@@ -5070,6 +5070,103 @@
    "auto": true,
    "pos": "A testimonial reaches you as an email from the client's own mail app, with their words and their naming choice written in. The page stores nothing, and nothing appears on the site until you put it there.",
    "why": "The page keeps no visitor data (cg-browser-only), and your email is already on the site's other contact links. The client sees exactly what you get. Source: bars-engine PR 270"
+  },
+  {
+   "id": "promo-signin-first",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "app promotion 1",
+   "auto": true,
+   "pos": "Nothing points people at the Flirtcraft app until sign-in works: steps 5 to 9 of Your steps list 'Give flirtcraft its own database', then one free rep on your phone with a real email, and the link arrives. Podcast posts keep going meanwhile, because they point at the episode.",
+   "why": "The board shows those steps open, and the list says sign-in and the intake's last step fail for every visitor until they are done. A visitor a post brings in reaches the email step and never gets the reading. Source: /mnt/project-files/marketing/app-promotion-plan.md §1"
+  },
+  {
+   "id": "promo-founding-season",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "app promotion 1",
+   "auto": true,
+   "pos": "The first push sells nothing. While the paywall is off, posts ask for one free rep; everyone who plays becomes a founding player, keeps playing free, and is asked for one sentence. Those sentences are what later sells the subscription to strangers.",
+   "why": "Production answers with the door open today (lib/door.ts), and founding grants and the sentence ask are already built (app/founding.tsx). The outside analysis found no trust signals of any kind. Source: marketing/app-promotion-plan.md §2"
+  },
+  {
+   "id": "promo-caption-cta",
+   "faces": [
+    "architect"
+   ],
+   "pass": "app promotion 1",
+   "auto": true,
+   "pos": "Every episode post and clip caption ends with two lines: the episode link, then 'Your first rep is free: flirtcraft.app'. Episode 1's remaining clips take it from the next post, once sign-in works.",
+   "why": "The podcast already reaches people on a set rhythm (pod-promo-rhythm), and /podcast already has a Play the free rep button. This adds no posting days. Source: marketing/app-promotion-plan.md §3"
+  },
+  {
+   "id": "promo-x-first",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "app promotion 1",
+   "auto": true,
+   "pos": "X is the first new place, aimed at the readers QC already has: people who think out loud about dating and permission. The handle is as close to 'flirtcraft' as is free, the episode 1 post is pinned, and one short thread a week comes from the episode's book harvest.",
+   "why": "QC is a writer from Twitter (episode-1.md), and the harvest holds twenty ideas ready to post. Source: marketing/app-promotion-plan.md §3"
+  },
+  {
+   "id": "promo-reddit-listen",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "app promotion 1",
+   "auto": true,
+   "pos": "Reddit is a personal account in your name. Two weeks of honest comments with no links, then drills written out in full, with a link only where a subreddit's rules allow it and 'I made this' said plainly.",
+   "why": "Most dating and social-skills subreddits remove self-promotion and some ban on one link. Each subreddit's rules are to be read before posting; this plan did not check them. Source: marketing/app-promotion-plan.md §4"
+  },
+  {
+   "id": "promo-facebook-personal",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "app promotion 1",
+   "auto": true,
+   "pos": "The Facebook announcement goes out from your personal profile, the same day as Instagram and X, once sign-in works. The people who already know you are the first founding players. A Flirtcraft page can wait. The draft is in the plan.",
+   "why": "Your message named a Facebook announcement. A new page starts with nobody; your profile does not. Source: marketing/app-promotion-plan.md §5"
+  },
+  {
+   "id": "promo-monday-numbers",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "app promotion 1",
+   "auto": true,
+   "pos": "Every Monday five numbers from HeyCatch go into marketing/numbers.md: visits by source, free reps started, free reps finished, sign-ins, and sentences received. After three episodes the place that brings nobody is dropped and the one that brings players is doubled.",
+   "why": "HeyCatch already records visits and sign-ups (lib/analytics.ts), and pod-promo-rhythm sets the same three-episode review for clips. Source: marketing/app-promotion-plan.md §3"
+  },
+  {
+   "id": "pod-social-launch",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The Flirtcraft podcast gets the same handle as its Instagram page on X and Reddit, with a community at r/Flirtcraft, and an announcement on your own Facebook profile. The bios, first posts, community rules, the announcement and the profile and banner art (cover B's two hexagons) are ready in the project files under podcast/social. The clips go to X on the same days as Instagram. A Facebook Page waits for a second episode.",
+   "why": "Your message of 2026-10-09: \"Next thing I need to do is create a reddit and a twitter. And probably an announcement for Facebook as well.\" Source: project files podcast/social/launch-kit.md"
+  },
+  {
+   "id": "pod-reddit-own-sub-first",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "On Reddit the show is posted in r/Flirtcraft only. Elsewhere you join in without links until the account has some history, and a link goes only where a sub's rules allow it.",
+   "why": "Most dating and social-skills subs remove self-promotion, and Reddit filters new accounts with little karma, so an early link elsewhere is likely removed and can mark the account. Inferred, not checked sub by sub. Source: project files podcast/social/launch-kit.md"
   }
  ],
  "questions": [
@@ -8896,6 +8993,34 @@
      "v": "act-two",
      "label": "Later, in the forest grid",
      "c": "The skills join the forest talismans in Act II. Keeps the spirits rule; tracking waits until then."
+    }
+   ]
+  },
+  {
+   "id": "promo-paywall-when",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "app promotion 1",
+   "q": "When should the Flirtcraft paywall go on?",
+   "why_you": "Turning on a paywall is money, which is reserved to you, and no ruling sets its timing. Stripe setup in LAUNCH_CHECKLIST.md §3 has to come first either way.",
+   "not_before": "Until today nothing was promoting the app, so the door being open cost nothing.",
+   "options": [
+    {
+     "v": "after-proof",
+     "label": "After 25 founding players and 5 sentences (recommended)",
+     "c": "The app stays free until there are people and words to show a stranger. The Monday numbers say when."
+    },
+    {
+     "v": "when-stripe",
+     "label": "As soon as Stripe is set up",
+     "c": "Money comes in sooner, and every new visitor after that meets a paywall with no one vouching for it."
+    },
+    {
+     "v": "three-episodes",
+     "label": "After three episodes",
+     "c": "A fixed date in podcast terms, whatever the numbers say."
     }
    ]
   }
@@ -16775,6 +16900,14 @@
       "pod-ep1-clip-covers",
       "pod-ep1-clip-cut"
      ]
+    },
+    {
+     "n": 7,
+     "questions": [],
+     "positions": [
+      "pod-social-launch",
+      "pod-reddit-own-sub-first"
+     ]
     }
    ]
   },
@@ -16897,6 +17030,31 @@
       "cf-his-face",
       "cf-protections",
       "cf-paths"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-app-promo",
+   "name": "Pushing the App",
+   "repo": "flirtcraft",
+   "element": "fire",
+   "record": "/mnt/project-files/marketing/app-promotion-plan.md",
+   "intro": "It wants strangers playing Flirtcraft: the podcast and its new socials sending people to the free rep, founding players who keep it free and send a sentence back, and a paywall that goes on once there is proof to show.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "promo-paywall-when"
+     ],
+     "positions": [
+      "promo-signin-first",
+      "promo-founding-season",
+      "promo-caption-cta",
+      "promo-x-first",
+      "promo-reddit-listen",
+      "promo-facebook-personal",
+      "promo-monday-numbers"
      ]
     }
    ]
