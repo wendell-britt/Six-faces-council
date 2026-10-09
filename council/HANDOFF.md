@@ -341,7 +341,12 @@ session opens at about 102,000 tokens before doing any work (first_request_input
 - **Answered 2026-10-09 17:30 UTC:** `c3d-path` = web, with his steer: "I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside the game." The five c3d positions stand. (Was: `c3d-path` (web inside the ontology game, recommended; web plus TRELLIS.2 daemons from his Mac;
   or the Unreal desktop game). Five positions stand unless flipped: `c3d-meshy-alternatives`, `c3d-week` (replaces
   `up-short-sessions`), `c3d-codex-rebuilds`, `c3d-cc0-only`, `c3d-phone-budget`.
-- **Next:** day 1 of `c3d-week` starts in a new thread (chamber design and manifest, on Opus).
+- **Day 1 done 2026-10-09:** design and manifest in bars-engine #265 (draft), `content/ontology-game/cave/`. The game
+  happens inside the body: a tap dives into a chamber with five places (sensation, element, daemon, gate, release).
+  Positions added: `c3d-five-places`, `c3d-regions-first`, `c3d-fork-page`, `c3d-daemon-body`, `c3d-one-finger`.
+- **Next:** day 2 in a new thread on Sonnet, on #265's branch `claude/project-thread-ottswt`: `cave/build_chambers.py`
+  (`pip install bpy`, 5.2.2 for Python 3.13) builds `chamber-throat.glb` under 3 MB; the page `/ontology-game/cave/`
+  dives in from the figure and walks the five places. DESIGN.md has the week's table and tests.
 
 ## Open on 2026-10-09, from the MTGOA podcast invitations thread
 
