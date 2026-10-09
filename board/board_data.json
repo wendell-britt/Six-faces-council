@@ -8392,6 +8392,29 @@
      "c": "A checkbox at the end of each free write says whether the session may read the whole entry that day. Kept lines only when unticked."
     }
    ]
+  },
+  {
+   "id": "mm-menu-transport",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "morning menu 1, build",
+   "q": "How should your sealed Tap the Vein menu reach the council each morning? The council recommends pasting it on the board.",
+   "why_you": "It trades a step of yours against a key that would show in Vercel's request logs. That is a call about your privacy and your mornings, and only you can make it.",
+   "not_before": "It came up while building on 2026-10-09: the council can only reach bars-engine through the Vercel connector, which cannot send the key the menu export asks for (bars-engine #267, six-faces-council #68, docs/morning.md).",
+   "options": [
+    {
+     "v": "paste",
+     "label": "Paste it on the board (recommended)",
+     "c": "Each morning you press Copy the sealed menu in Tap the Vein and paste it into the Morning tab. Your kept lines show at once. No new key; this works today."
+    },
+    {
+     "v": "query",
+     "label": "The council fetches it",
+     "c": "The menu route also takes its key in the web address, so a council session reads the menu without you pasting. The key shows in Vercel's request logs; it opens only this one read-only route."
+    }
+   ]
   }
  ],
  "causes": [
