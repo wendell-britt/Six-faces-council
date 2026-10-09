@@ -4,6 +4,13 @@ The council works in short sessions (Wendell, 2026-10-03, board read 29). A sess
 in the repo and on the board, writes anything left open here, and ends. The next session starts by reading
 CLAUDE.md, this file and the board.
 
+## Open on 2026-10-09, Cave of Lessons pass 3 (avatar, labyrinth, breath, block branches)
+
+Pass: `council/passes/6FACE_PASS_3d-build3_2026-10-09.md`. Five positions stand unless Wendell flips them
+(`cave-avatar-self`, `cave-breath-in-the-cave`, `cave-block-branch`, `cave-detour-kept`, `cave-labyrinth-test`), so
+the next cave thread can build the avatar and the cave's breath now (bars-engine PR #265). The W.A.V.E. spine and the
+labyrinth's shape wait on `cave-spine` and `cave-labyrinth-form`; read the board before building either.
+
 ## Open on 2026-10-09, morning menu (Tap the Vein and Lenses)
 
 Pass 1: `council/passes/6FACE_PASS_morning-menu1_2026-10-09.md`. Wendell ruled at 18:21 (ledger
