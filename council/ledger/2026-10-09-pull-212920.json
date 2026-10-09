@@ -1,0 +1,212 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T21:29:20.928Z",
+ "answers": {
+  "cf-your-words": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:11:29.136Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-your-words-email": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:11:34.737Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-six-questions": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:11:52.421Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-light": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:12:00.721Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-body": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:12:08.205Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-routing": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:12:16.554Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-experiences": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:12:20.604Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-two-ways": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:25:58.061Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-know-it": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:26:03.792Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-tour": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:26:16.257Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-find-four": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:26:25.790Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-domains": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:26:31.424Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-strategy": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:26:37.625Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-face-words": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:26:41.957Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-game-handoff": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:26:47.675Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cf-game-belief": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:27:12.275Z",
+   "status": "overrule",
+   "steer": "They should be able to carry this over for ease of use"
+  },
+  "cf-moves-walk": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:27:32.259Z",
+   "status": "stands",
+   "steer": "These should be hyperlinks that go to a page that explain what each of them mean"
+  },
+  "cf-moves-after": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:27:37.458Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "promo-paywall-when": {
+   "kind": "question",
+   "choice": "when-stripe",
+   "savedAt": "2026-10-09T21:27:52.528Z",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "promo-signin-first": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:27:58.426Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "promo-founding-season": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:06.843Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "promo-caption-cta": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:13.161Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "promo-x-first": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:20.259Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "promo-reddit-listen": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:27.794Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "promo-facebook-personal": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:32.842Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "promo-monday-numbers": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:37.376Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-app-promo"
+  },
+  "pod-social-launch": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:52.694Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  },
+  "pod-reddit-own-sub-first": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:28:58.294Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  },
+  "pod-guests-first-wave": {
+   "kind": "question",
+   "choice": "first-five",
+   "savedAt": "2026-10-09T21:29:12.461Z",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  },
+  "pod-guests-list": {
+   "kind": "position",
+   "savedAt": "2026-10-09T21:29:20.928Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "positions/cf-game-belief: Overruled (steer: \"They should be able to carry this over for ease of use\")",
+  "positions/cf-moves-walk: Stands (steer: \"These should be hyperlinks that go to a page that explain what each of them mean\")",
+  "questions/promo-paywall-when: As soon as Stripe is set up",
+  "questions/pod-guests-first-wave: Benjamin Camras, Jeffrey Hall, Betty Martin, SlutStack, Linda Sutton"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
