@@ -22,9 +22,9 @@ Categories, in the order the board shows them:
   prs       open pull requests in the three repos (GitHub API with $GITHUB_TOKEN, or --prs)
   backlog   bars-engine .specify/backlog/BACKLOG.md rows marked Ready (--bars)
 
-The menu file is the JSON bars-engine exports at /api/tap-the-vein/morning-menu (docs/morning.md has the shape and
-how a session fetches it). Its active goals are also what backlog items are bridged to. Without it, every item is
-marked unaligned and the report says why.
+The menu file is the JSON bars-engine exports at /api/tap-the-vein/menu, or copies with Tap the Vein's "Copy the
+sealed menu" button, or the board's store holds once he pastes it (docs/morning.md). Its goals are also what backlog
+items are bridged to. Without it, every item is marked unaligned and the report says why.
 
     python3 council/morning.py --menu <file>             # report: categories, counts, bridges; writes nothing
     python3 council/morning.py --menu <file> --write     # also writes `morning` into board/board_data.json and
@@ -117,15 +117,38 @@ def short(text, n=90):
 # ---------- sources ----------
 
 def from_menu(menu):
+    """Kept lines and tasks from the sealed menu. Its bridges are his: a suggestion he never accepted comes through as
+    unaligned (bars-engine #267), so `bridged` is always a goal he chose."""
     items = []
     for it in menu.get("items", []):
-        sug = it.get("suggestion")
-        b = None
-        if it.get("goalId"):
-            b = it["goalId"]
-        items.append({"id": f"menu-{it.get('id') or len(items)}", "text": short(it.get("text"), 240),
-                      "named": b, "app": sug, "accepted": bool(it.get("accepted"))})
+        g = it.get("goal") if it.get("status") == "bridged" else None
+        items.append({"id": f"menu-{it.get('key') or len(items)}", "text": short(it.get("text"), 240),
+                      "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task"}.get(it.get("source"), "")})
     return items
+
+
+def menu_goals(menu):
+    """His active Lens goals: the export's goals list when it carries one, else the goals its bridged items name."""
+    if menu.get("goals"):
+        return [g for g in menu["goals"] if g.get("status", "active") == "active"]
+    seen = {}
+    for it in menu.get("items", []):
+        g = it.get("goal")
+        if g and g.get("id") and g["id"] not in seen:
+            seen[g["id"]] = {k: g.get(k) for k in ("id", "title", "domain", "cadence")} | {"parentId": None}
+    return list(seen.values())
+
+
+def load_menu(path):
+    """The menu as Tap the Vein's export or its Copy button gives it, or as the board's store saved it (a doc whose
+    `menu` field holds the pasted text)."""
+    menu = json.loads(Path(path).read_text(encoding="utf-8"))
+    for _ in range(2):
+        inner = menu.get("menu") if isinstance(menu, dict) else None
+        if inner is None:
+            break
+        menu = json.loads(inner) if isinstance(inner, str) else inner
+    return menu
 
 
 def from_board(data):
@@ -226,7 +249,7 @@ def slug(s):
 
 def gather(menu, prs_file=None, bars=None, data=None):
     data = data if data is not None else json.loads(BOARD.read_text(encoding="utf-8"))
-    goals = [g for g in (menu or {}).get("goals", []) if g.get("status", "active") == "active"]
+    goals = menu_goals(menu) if menu else []
     notes = {}
     raw = {"menu": from_menu(menu) if menu else [], "board": from_board(data), "due": from_due(data),
            "handoff": from_handoff()}
@@ -238,18 +261,12 @@ def gather(menu, prs_file=None, bars=None, data=None):
     for key, (title, blurb) in CATEGORIES.items():
         items = raw[key]
         for it in items:
-            app = it.pop("app", None)
             it["bridge"] = bridge(it["text"], goals, it.pop("named", None))
-            if app and it["bridge"]["kind"] != "named":  # bars-engine's own suggestion wins over shared words
-                it["bridge"] = {**app, "kind": app.get("kind", "existing")}
-                if it["bridge"].get("goalId") and not it["bridge"].get("goalTitle"):
-                    g = next((g for g in goals if g["id"] == it["bridge"]["goalId"]), None)
-                    it["bridge"]["goalTitle"] = g["title"] if g else ""
         # mm-menu-shape: aligned first, unaligned last, never hidden
         items.sort(key=lambda it: ["named", "existing", "new", "unaligned"].index(it["bridge"]["kind"]))
         cats.append({"key": key, "title": title, "blurb": blurb, "items": items,
                      **({"note": notes[key]} if notes.get(key) else {})})
-    return {"date": (menu or {}).get("date") or dt.date.today().isoformat(),
+    return {"date": (menu or {}).get("sessionDate") or dt.date.today().isoformat(),
             "gathered_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "pick_limit": 7,
             "goals": [{k: g.get(k) for k in ("id", "title", "domain", "cadence", "parentId")} for g in goals],
@@ -274,7 +291,7 @@ def main(argv=None):
     ap.add_argument("--write", action="store_true", help="write `morning` into board/board_data.json and rebuild")
     ap.add_argument("--json", action="store_true", help="print the gathered morning as JSON")
     a = ap.parse_args(argv)
-    menu = json.loads(Path(a.menu).read_text(encoding="utf-8")) if a.menu else None
+    menu = load_menu(a.menu) if a.menu else None
     if menu and "rawEntry" in json.dumps(menu):
         sys.exit("the menu file carries a rawEntry; only kept lines may leave Tap the Vein (mm-raw)")
     data = json.loads(BOARD.read_text(encoding="utf-8"))

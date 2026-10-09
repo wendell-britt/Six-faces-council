@@ -29,7 +29,7 @@ chain it backs up. The push design's history and its incidents are in docs/incid
 The 00:25 board read took 30 steps and $1.54 because every step rereads a session that opens at about 102,000 tokens.
 `board/read.py` folds the plumbing into one command, so a read is:
 
-1. One message with six parallel ArtifactData `list` calls (positions, questions, terms, causes, steer, picks), one
+1. One message with seven parallel ArtifactData `list` calls (positions, questions, terms, causes, steer, picks, morning), one
    `out_dir`. The store lands in files; it is never read into the conversation, and the page is never read.
 2. `python3 board/read.py <dir>`: pull.py with `--push`, `council/due.py --ahead 7`, and a last line that says
    whether to republish. Add `--dry` to report without writing.
@@ -101,7 +101,7 @@ The routine prompt that carries this, set by the coordinator (only the conversat
     If you have the start_thread_session tool, you are the coordinator of the "6 face game master council" project.
     Start one thread now for a board read, with no project-chat line beyond the thread's own. Brief it to work in
     repo wendell-britt/six-faces-council on main and follow its CLAUDE.md: save the board's store with ArtifactData
-    (positions, questions, terms, causes, steer, picks) into one folder, run python3 board/pull.py <folder>
+    (positions, questions, terms, causes, steer, picks, morning) into one folder, run python3 board/pull.py <folder>
     --push, republish board/council-board.html without passing capabilities, and act on the "needs work" list
     pull.py prints (ask you for a thread for each new piece of work). pull.py is safe to run twice. If pull.py
     records nothing, the thread says so in one line and resolves itself.

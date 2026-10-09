@@ -283,7 +283,12 @@ body.has-send{padding-bottom:120px}
 
 <section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
   <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
-  <div id="mo-empty" class="empty" hidden>No morning gathered yet. After you seal Tap the Vein, a council session gathers your kept lines and the open work here.</div>
+  <details class="mo-cat mo-paste" id="mo-paste"><summary><b>Paste this morning's menu</b><span id="mo-paste-sum">From Tap the Vein's Copy the sealed menu button</span></summary>
+    <p class="lede">Your kept lines show here as soon as you save. Only the sealed menu is read; your free write never leaves Tap the Vein.</p>
+    <textarea id="mo-paste-text" rows="4" placeholder="Paste the copied menu here"></textarea>
+    <div class="ctl"><button class="save" id="mo-paste-save" type="button">Save the menu</button><div class="state" id="mo-paste-state"></div></div>
+  </details>
+  <div id="mo-empty" class="empty" hidden>No morning gathered yet. Paste your sealed menu above, or a council session gathers it with the open work.</div>
   <div id="mo-cats"></div>
 </section>
 
@@ -1102,6 +1107,7 @@ function pendingSaves(){
   for (const kind of ['questions', 'positions', 'terms', 'causes'])
     for (const id of Object.keys(live[kind])) if (status(kind, id) === 'saved' && after(live[kind][id].savedAt)) out.push(kind + '/' + id);
   if (liveSteer && (liveSteer.text || '').trim() && liveSteer.savedAt > (DATA.steer_recorded_through || '') && after(liveSteer.savedAt)) out.push('steer/general');
+  if (moPaste && moPaste.savedAt > ((DATA.morning && DATA.morning.gathered_at) || '') && after(moPaste.savedAt)) out.push('morning/menu');
   for (const id of Object.keys(moLive)){
     const d = moLive[id];
     if (!d.removed && !moRecorded.has(id) && after(d.savedAt)) out.push('picks/' + id);
@@ -1163,7 +1169,30 @@ document.getElementById('send-btn').addEventListener('click', async () => {
    ways to align to lens goals or suggest adding lens goals a smaller time scales to integrate (side quests merging
    into main quest)". council/morning.py gathers DATA.morning; a pick saves picks/<item id> in the store, and
    board/pull.py records it and asks the next board read for one thread per pick (mm-picks-become-threads). */
-const MO = DATA.morning || null;
+let MO = DATA.morning || null, moPaste = null;
+/* The pasted menu (mm-menu-transport, option b): Tap the Vein's sealed-menu JSON, saved at morning/menu. Its lines
+   replace the gathered menu category as soon as it is saved; the other categories wait for morning.py. */
+function moParse(text){
+  const m = JSON.parse(text);
+  if (/"rawEntry"/.test(text)) throw new Error('This carries your free write. Paste only the sealed menu.');
+  if (!m || !Array.isArray(m.items)) throw new Error('This is not a sealed menu: it has no items.');
+  return m;
+}
+function moMenuItems(m){
+  return m.items.map((it, i) => { const g = it.status === 'bridged' ? it.goal : null;
+    return {id: 'menu-' + (it.key || i), text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task'}[it.source] || ''),
+      bridge: g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
+    .sort((a, b) => (a.bridge.kind === 'unaligned') - (b.bridge.kind === 'unaligned'));
+}
+function moApplyPaste(){
+  const base = DATA.morning;
+  if (!moPaste || (base && base.gathered_at && moPaste.savedAt < base.gathered_at)){ MO = base || null; return; }
+  let m; try { m = moParse(moPaste.menu); } catch { MO = base || null; return; }
+  const goals = (m.goals && m.goals.length) ? m.goals : Object.values(Object.fromEntries(m.items.filter(i => i.goal).map(i => [i.goal.id, {id: i.goal.id, title: i.goal.title, domain: i.goal.domain, cadence: i.goal.cadence}])));
+  const cat = {key: 'menu', title: 'From your free write', blurb: 'The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).', items: moMenuItems(m)};
+  MO = {date: m.sessionDate || (base && base.date), pick_limit: 7, goals: (base && base.goals && base.goals.length) ? base.goals : goals,
+        categories: [cat, ...((base && base.categories) || []).filter(c => c.key !== 'menu')]};
+}
 const moRecorded = new Set((DATA.picks || []).map(p => p.id));
 let moLive = {}, moEdits = {}, moShown = {};
 const MO_PAGE = 12;
@@ -1200,6 +1229,7 @@ function moItem(it, cat, full){
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
+  document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
   const n = [...ids].filter(moPicked).length, limit = MO.pick_limit || 7;
@@ -1218,9 +1248,18 @@ function renderMorning(){
   }).join('');
   renderSend();
 }
+document.getElementById('mo-paste-save').addEventListener('click', async () => {
+  const st = document.getElementById('mo-paste-state'), text = document.getElementById('mo-paste-text').value.trim();
+  let m; try { m = moParse(text); } catch (e) { st.textContent = e.message || 'That is not the copied menu.'; return; }
+  if (!db){ st.textContent = 'This view cannot save.'; return; }
+  const doc = {menu: text, sessionDate: m.sessionDate || '', savedAt: new Date().toISOString()};
+  try { await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); st.textContent = `Saved ${m.items.length} item${m.items.length === 1 ? '' : 's'}.`;
+    document.getElementById('mo-paste-text').value = ''; moOpen.add('menu'); renderMorning(); }
+  catch { st.textContent = 'Not saved. Try again.'; }
+});
 function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
 document.getElementById('mo-cats').addEventListener('toggle', e => {
-  const d = e.target.closest('.mo-cat'); if (!d) return;
+  const d = e.target.closest('.mo-cat'); if (!d || !d.dataset.cat) return;
   d.open ? moOpen.add(d.dataset.cat) : moOpen.delete(d.dataset.cat);
   try { localStorage.setItem('board-mo-open', JSON.stringify([...moOpen])); } catch {}
 }, true);
@@ -1267,6 +1306,7 @@ render();
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
   window.claude.use('mcp').then(m => { mcp = m; renderSend(); }, () => {});
   renderMorning();
+  db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); }, () => {});
   db.collection('picks').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); moLive = next; renderMorning(); }, () => {});
   db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
   for (const kind of ['positions','questions','causes','terms']){

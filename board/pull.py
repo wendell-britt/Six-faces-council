@@ -10,7 +10,7 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
-  causes, steer, picks), query {"limit": 1000}, out_dir <dir>
+  causes, steer, picks, morning), query {"limit": 1000}, out_dir <dir>
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -116,6 +116,15 @@ def find_new(data, store):
     return new, general
 
 
+def pasted_menu(data, store):
+    """The sealed menu he pasted on the Morning tab, when it is newer than the last gather; else None."""
+    f = store / "morning" / "menu.json"
+    if not f.exists():
+        return None
+    doc = json.loads(f.read_text(encoding="utf-8"))
+    return f if doc.get("savedAt", "") > (data.get("morning") or {}).get("gathered_at", "") else None
+
+
 def apply(data, new, general, ledger_rel):
     """Write resolved entries, deferrals and the general steer onto data. Returns the ledger record."""
     record = f"{ledger_rel} (six-faces-council)"
@@ -178,6 +187,9 @@ def main():
         git("pull", "-q", "--no-rebase", "origin", "main")
     data = json.loads(DATA.read_text(encoding="utf-8"))
     new, general = find_new(data, store)
+    menu = pasted_menu(data, store)
+    if menu:  # mm-menu-transport: the next gather reads it; morning.py writes main itself
+        print(f"needs work:\n  morning/menu: python3 council/morning.py --menu {menu} --write, then commit and republish")
     if not new and not general:
         print("every saved answer is recorded")
         return

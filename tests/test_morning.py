@@ -40,6 +40,16 @@ class MorningTest(unittest.TestCase):
         self.assertEqual(b["kind"], "unaligned")
         self.assertIn("no Lens goals", b["why"])
 
+    def test_goals_come_from_bridged_items_without_a_goals_list(self):
+        bare = {k: v for k, v in MENU.items() if k != "goals"}
+        self.assertEqual([g["id"] for g in morning.menu_goals(bare)], ["g-q-podcast"])
+
+    def test_menu_pasted_on_the_board_is_read(self):
+        import tempfile
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+            json.dump({"menu": json.dumps(MENU), "savedAt": "2026-10-09T16:00:00Z"}, f)
+        self.assertEqual(morning.load_menu(f.name)["sessionDate"], "2026-10-09")
+
     def test_categories_stay_separate_and_unaligned_last(self):
         morning.from_prs = lambda path=None: ([], None)  # no network in tests
         m = morning.gather(MENU, prs_file=None, bars="/nonexistent", data=DATA)
@@ -48,7 +58,7 @@ class MorningTest(unittest.TestCase):
         menu = m["categories"][0]["items"]
         self.assertEqual(menu[0]["bridge"]["kind"], "named")
         self.assertEqual(menu[-1]["bridge"]["kind"], "unaligned")
-        self.assertEqual(menu[1]["bridge"]["title"], "Walk three mornings this week", "the app's suggestion wins")
+        self.assertEqual(menu[1]["bridge"]["kind"], "unaligned", "a suggestion he never accepted stays unaligned")
         board = m["categories"][1]["items"]
         self.assertEqual([i["ref"] for i in board], ["q-open"])
         self.assertEqual(m["pick_limit"], 7)
