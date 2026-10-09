@@ -6,12 +6,30 @@ CLAUDE.md, this file and the board.
 
 ## Open on 2026-10-09, morning menu (Tap the Vein and Lenses)
 
-- **Pass 1** is `council/passes/6FACE_PASS_morning-menu1_2026-10-09.md`. On the board: positions `mm-backlog-sources`,
-  `mm-menu-shape`, `mm-picks-become-threads`, `mm-intake-saves-each-lens`, `mm-intake-one-a-morning`, `mm-goal-edit`;
-  questions `mm-where` and `mm-raw`. Nothing is built yet.
-- **Next, once he answers `mm-where`:** one thread for `council/morning.py` and the bridge, one bars-engine thread for
-  the three Lenses fixes (save each domain, one domain a morning, edit a single goal). The intake fixes stand on
-  their own and can start before the answer.
+Pass 1: `council/passes/6FACE_PASS_morning-menu1_2026-10-09.md`. Wendell ruled at 18:21 (ledger
+`2026-10-09-pull-181703.json`): `mm-where` = Tap the Vein, `mm-raw` = only kept lines leave the free write, all six
+positions stand. Two steers shape the build, in his words:
+- `mm-backlog-sources`: "Keep them as separate categories people can explore so they aren't just one long list"
+- `mm-menu-shape`: "All items need a bridge to lens goals and game masters suggest ways to align to lens goals or
+  suggest adding lens goals a smaller time scales to integrate (side quests merging into main quest)"
+
+The build, three threads, each fresh (the pass thread handed off near 200,000 tokens):
+1. **bars-engine, Lenses intake** (Sonnet): save each domain as it is locked in (today one `saveYearLensFrame` call
+   at `LensesOnboardingClient.tsx:183`; `LensWorkshopDraft` exists for it); run one domain a morning as Tap the
+   Vein's free-write prompt; rename, park or retire a single goal from the Observatory. Test by 2026-10-16: close
+   after two domains, reopen, both saved.
+2. **bars-engine, Tap the Vein menu** (Opus, new design): at seal, the kept lines become menu items, each bridged to
+   a Lens goal. A line with no goal gets a suggestion: an existing goal it serves, or a new goal at a smaller time
+   scale under one of his year goals (the side quest merging into the main quest). He accepts or edits. Only kept
+   lines leave the session (`mm-raw`); `rawEntry` never does. The menu is exported for the council to read.
+3. **council, morning.py and the board view** (Opus): `council/morning.py` gathers the backlog as separate
+   categories (HANDOFF open items, board rows waiting on him, `due.py`, open pull requests, bars-engine BACKLOG
+   Ready rows) and the menu from thread 2. The board shows each category on its own, explorable, with backlog items
+   also bridged to goals the same way. A pick becomes a board row; the next board read starts a thread per pick
+   (`mm-picks-become-threads`). First step: find how a council session reads thread 2's export (network policy and
+   a token), before building on it.
+
+Test by 2026-10-16: one real morning end to end, and at least one pick becomes a thread.
 
 ## Open on 2026-10-08, cutting session cost (advisor thread)
 
