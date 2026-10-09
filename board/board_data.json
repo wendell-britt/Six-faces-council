@@ -5178,6 +5178,59 @@
    "auto": true,
    "pos": "Twenty people from relationship coaching, consent education, partner dance and attraction research are on the Outreach tab under Flirtcraft, each with why they fit and a topic tied to the book or episode 1. All are Identified; none has been contacted. Pickup-industry coaches are left out on purpose. This stands unless you flip it.",
    "why": "Your ask on 2026-10-09: \"find people for whom I can do other episodes for in the relationship coaching space\". The podcast outreach move puts every candidate on the list with a topic. Contact routes come from search results, so each pitch says to open the link first. Source: project files podcast/guests/guest-list.md; council/moves/podcast-outreach.md"
+  },
+  {
+   "id": "cf-six-questions",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The forest walk is now the six unpacking questions, one per screen, and any of them can be skipped. This replaces the three steps in cf-forest.",
+   "why": "Your message of 9 October, 21:00: \"what I want is for this to be a gamified version of the 6 unpacking questions\". Source: bars-engine content/coaching-game/6FACE_PASS3_2026-10-09.md"
+  },
+  {
+   "id": "cf-light",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The feeling a visitor chooses in question 2 (triumph, poignance, excitement, bliss or peace) colours the forest's light, and each later screen says what they are walking toward.",
+   "why": "Your words: \"set up that they want to have a satisfaction feeling to work towards to they can navigate the forest\". Source: 6FACE_PASS3_2026-10-09.md, Architect"
+  },
+  {
+   "id": "cf-body",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "Question 4 is answered on a body the visitor touches, and they can touch more than one place. It is drawn flat, not the ontology game's 3D figure, so it loads on a slow phone.",
+   "why": "Your words: \"I want them to choose on the body instead of choosing one of the buttons\". Source: 6FACE_PASS3_2026-10-09.md, Shaman"
+  },
+  {
+   "id": "cf-routing",
+   "faces": [
+    "regent"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "At the centre, visitors who want to show up for others or lead through something hard are sent first to allyship coaching, with the allyship book. Everyone else is sent first to coaching for self-sabotage through Emotional Alchemy. Visitors who chose joy also see Igniting Joy. Prices are unchanged.",
+   "why": "Your list of offers, and \"Most things will be solved under emotinoal alchemy and self sabotage.\" Source: 6FACE_PASS3_2026-10-09.md, Regent"
+  },
+  {
+   "id": "cf-experiences",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The five choices in question 1 are drafts for you to rewrite: build what I keep putting off; feel alive in my days again; stop repeating the same pattern with people; show up well for people who are treated differently than me; lead my team or community through something hard.",
+   "why": "You asked for \"a few options that I know I Can help with\". The council drafted them from your offers. Source: 6FACE_PASS3_2026-10-09.md, Diplomat"
   }
  ],
  "questions": [
@@ -17083,6 +17136,17 @@
       "cf-his-face",
       "cf-protections",
       "cf-paths"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [],
+     "positions": [
+      "cf-six-questions",
+      "cf-light",
+      "cf-body",
+      "cf-routing",
+      "cf-experiences"
      ]
     }
    ]
