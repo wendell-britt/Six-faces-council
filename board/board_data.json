@@ -5167,6 +5167,17 @@
    "auto": true,
    "pos": "On Reddit the podcast follows promo-reddit-listen: two weeks of comments from your own account before any post, and no r/Flirtcraft until there are players to fill it. The community's description, rules and first posts stay drafted in podcast/social/launch-kit.md for then.",
    "why": "The app thread's plan and this kit both found that most dating and social-skills subs remove self-promotion and that Reddit filters new accounts, and an empty community reads worse than none. Inferred, not checked sub by sub. Sources: project files marketing/app-promotion-plan.md section 4, podcast/social/launch-kit.md"
+  },
+  {
+   "id": "pod-guests-list",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "pass": "podcast guests",
+   "auto": true,
+   "pos": "Twenty people from relationship coaching, consent education, partner dance and attraction research are on the Outreach tab under Flirtcraft, each with why they fit and a topic tied to the book or episode 1. All are Identified; none has been contacted. Pickup-industry coaches are left out on purpose. This stands unless you flip it.",
+   "why": "Your ask on 2026-10-09: \"find people for whom I can do other episodes for in the relationship coaching space\". The podcast outreach move puts every candidate on the list with a topic. Contact routes come from search results, so each pitch says to open the link first. Source: project files podcast/guests/guest-list.md; council/moves/podcast-outreach.md"
   }
  ],
  "questions": [
@@ -9021,6 +9032,39 @@
      "v": "three-episodes",
      "label": "After three episodes",
      "c": "A fixed date in podcast terms, whatever the numbers say."
+    }
+   ]
+  },
+  {
+   "id": "pod-guests-first-wave",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "podcast guests",
+   "q": "Which Flirtcraft guests do you invite first? The council recommends the five below.",
+   "why_you": "Writing to someone under your name is reserved to you, and who carries the show next is a matter of taste.",
+   "not_before": "Invitations for the five are drafted in project files podcast/guests/outreach.md, each with a subject line, a topic tied to the book or episode 1, and blanks for the episode link and your booking link. The full list of twenty is on the Outreach tab.",
+   "options": [
+    {
+     "v": "first-five",
+     "label": "Benjamin Camras, Jeffrey Hall, Betty Martin, SlutStack, Linda Sutton (recommended)",
+     "c": "One peer flirt coach, one flirting researcher, the consent educator, SlutCon's organisers as the sequel to QC, and a tango coach for the dance thread. You send the five drafts as written and mark each Sent."
+    },
+    {
+     "v": "peers-only",
+     "label": "Peers only, the reachable ones",
+     "c": "Camras, SlutStack, Linda Sutton, Nick Notas and Leanne Yau: the likeliest yeses, smaller audiences. The council drafts the two missing invitations."
+    },
+    {
+     "v": "reach-first",
+     "label": "Lead with the bigger names",
+     "c": "Betty Martin, Justin Lehmiller, Blaine Anderson, Jessica Fern and Aella: more reach, fewer yeses. The council drafts the four missing invitations."
+    },
+    {
+     "v": "steer",
+     "label": "My own picks, I will name them in the box",
+     "c": "Name anyone on the Outreach tab, or someone you know, and the council drafts those invitations."
     }
    ]
   }
@@ -16907,6 +16951,15 @@
      "positions": [
       "pod-social-launch",
       "pod-reddit-own-sub-first"
+     ]
+    },
+    {
+     "n": 8,
+     "questions": [
+      "pod-guests-first-wave"
+     ],
+     "positions": [
+      "pod-guests-list"
      ]
     }
    ]
