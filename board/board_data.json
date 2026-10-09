@@ -5154,7 +5154,7 @@
    ],
    "pass": "podcast",
    "auto": true,
-   "pos": "The Flirtcraft podcast gets the same handle as its Instagram page on X and Reddit, with a community at r/Flirtcraft, and an announcement on your own Facebook profile. The bios, first posts, community rules, the announcement and the profile and banner art (cover B's two hexagons) are ready in the project files under podcast/social. The clips go to X on the same days as Instagram. A Facebook Page waits for a second episode.",
+   "pos": "The Flirtcraft podcast goes out now on X and your own Facebook profile, with the app announced later once sign-in works (promo-signin-first). The podcast's X bio, first posts, Facebook announcement and the profile and banner art (cover B's two hexagons) are in the project files under podcast/social. The X bio switches to the app bio on the app announcement. The steps are on one list, flirtcraft-socials. A Facebook Page waits for a second episode.",
    "why": "Your message of 2026-10-09: \"Next thing I need to do is create a reddit and a twitter. And probably an announcement for Facebook as well.\" Source: project files podcast/social/launch-kit.md"
   },
   {
@@ -5165,8 +5165,8 @@
    ],
    "pass": "podcast",
    "auto": true,
-   "pos": "On Reddit the show is posted in r/Flirtcraft only. Elsewhere you join in without links until the account has some history, and a link goes only where a sub's rules allow it.",
-   "why": "Most dating and social-skills subs remove self-promotion, and Reddit filters new accounts with little karma, so an early link elsewhere is likely removed and can mark the account. Inferred, not checked sub by sub. Source: project files podcast/social/launch-kit.md"
+   "pos": "On Reddit the podcast follows promo-reddit-listen: two weeks of comments from your own account before any post, and no r/Flirtcraft until there are players to fill it. The community's description, rules and first posts stay drafted in podcast/social/launch-kit.md for then.",
+   "why": "The app thread's plan and this kit both found that most dating and social-skills subs remove self-promotion and that Reddit filters new accounts, and an empty community reads worse than none. Inferred, not checked sub by sub. Sources: project files marketing/app-promotion-plan.md section 4, podcast/social/launch-kit.md"
   }
  ],
  "questions": [
