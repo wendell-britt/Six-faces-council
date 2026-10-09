@@ -5145,6 +5145,28 @@
    "auto": true,
    "pos": "Every Monday five numbers from HeyCatch go into marketing/numbers.md: visits by source, free reps started, free reps finished, sign-ins, and sentences received. After three episodes the place that brings nobody is dropped and the one that brings players is doubled.",
    "why": "HeyCatch already records visits and sign-ups (lib/analytics.ts), and pod-promo-rhythm sets the same three-episode review for clips. Source: marketing/app-promotion-plan.md §3"
+  },
+  {
+   "id": "pod-social-launch",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "The Flirtcraft podcast gets the same handle as its Instagram page on X and Reddit, with a community at r/Flirtcraft, and an announcement on your own Facebook profile. The bios, first posts, community rules, the announcement and the profile and banner art (cover B's two hexagons) are ready in the project files under podcast/social. The clips go to X on the same days as Instagram. A Facebook Page waits for a second episode.",
+   "why": "Your message of 2026-10-09: \"Next thing I need to do is create a reddit and a twitter. And probably an announcement for Facebook as well.\" Source: project files podcast/social/launch-kit.md"
+  },
+  {
+   "id": "pod-reddit-own-sub-first",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "podcast",
+   "auto": true,
+   "pos": "On Reddit the show is posted in r/Flirtcraft only. Elsewhere you join in without links until the account has some history, and a link goes only where a sub's rules allow it.",
+   "why": "Most dating and social-skills subs remove self-promotion, and Reddit filters new accounts with little karma, so an early link elsewhere is likely removed and can mark the account. Inferred, not checked sub by sub. Source: project files podcast/social/launch-kit.md"
   }
  ],
  "questions": [
@@ -16877,6 +16899,14 @@
      "positions": [
       "pod-ep1-clip-covers",
       "pod-ep1-clip-cut"
+     ]
+    },
+    {
+     "n": 7,
+     "questions": [],
+     "positions": [
+      "pod-social-launch",
+      "pod-reddit-own-sub-first"
      ]
     }
    ]
