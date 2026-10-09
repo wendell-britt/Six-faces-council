@@ -46,13 +46,22 @@ Checked 2026-10-09 from a council thread:
   <COUNCIL_MENU_TOKEN>`, for the one player `COUNCIL_MENU_PLAYER_ID` names: 503 without the token, 401 with a wrong
   one, 404 when no menu is sealed. The connector cannot send that header.
 
-So two ways in, and the board row `mm-menu-transport` asks Wendell which:
-- **a. Query token.** The route also takes the token in the URL, and a council session fetches the menu through the
-  connector on its own. The token then shows in Vercel's request logs.
-- **b. Paste on the board.** Tap the Vein's "Copy the sealed menu" button copies the JSON; he pastes it in the
-  Morning tab's first box. The page shows his kept lines at once and saves the text to the store at `morning/menu`.
-  `board/pull.py` then lists "morning/menu" under needs work, and the read runs `council/morning.py --menu
-  <dir>/morning/menu.json --write`. This works today with no new auth, and it stays the fallback either way.
+Wendell ruled `mm-menu-transport` on 2026-10-09 (ledger `2026-10-09-pull-185337`): the council fetches the menu
+itself. The key lives in two places he sets once (Your steps list `morning-menu-key`), and never on the board or in
+chat:
+- **Vercel, bars-engine:** `COUNCIL_MENU_TOKEN` and `COUNCIL_MENU_PLAYER_ID`.
+- **The council project's cloud environment:** the same `COUNCIL_MENU_TOKEN` as an environment variable, with
+  `bars-engine.vercel.app` under Allowed domains. Sessions started after that run on it.
+
+Then a council session runs `python3 council/morning.py --fetch YYYY-MM-DD --out <file> --write` on main. It sends
+the key as a Bearer header, so the key stays out of the URL and Vercel's request logs, which is better than the
+query-string fetch the ruling accepted. If the host is still out of reach, the script says so; the route also takes
+`?token=` (bars-engine #267) for a fetch through the Vercel connector, which puts the key in that session's record.
+
+**Fallback, any morning:** Tap the Vein's "Copy the sealed menu" button copies the JSON, and he pastes it in the
+Morning tab's "Or paste this morning's menu" box. The page shows his kept lines at once and saves the text at
+`morning/menu`; `board/pull.py` lists it under needs work, and the read runs `council/morning.py --menu
+<dir>/morning/menu.json --write`.
 
 ## The export's shape
 

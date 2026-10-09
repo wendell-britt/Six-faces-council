@@ -26,6 +26,7 @@ The menu file is the JSON bars-engine exports at /api/tap-the-vein/menu, or copi
 sealed menu" button, or the board's store holds once he pastes it (docs/morning.md). Its goals are also what backlog
 items are bridged to. Without it, every item is marked unaligned and the report says why.
 
+    python3 council/morning.py --fetch 2026-10-10        # fetch the sealed menu itself ($COUNCIL_MENU_TOKEN), then report
     python3 council/morning.py --menu <file>             # report: categories, counts, bridges; writes nothing
     python3 council/morning.py --menu <file> --write     # also writes `morning` into board/board_data.json and
                                                          # rebuilds the page; commit on main and republish
@@ -38,6 +39,7 @@ import os
 import re
 import subprocess
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -125,6 +127,32 @@ def from_menu(menu):
         items.append({"id": f"menu-{it.get('key') or len(items)}", "text": short(it.get("text"), 240),
                       "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task"}.get(it.get("source"), "")})
     return items
+
+
+MENU_URL = "https://bars-engine.vercel.app/api/tap-the-vein/menu"
+
+
+def fetch_menu(date, out):
+    """Fetch the sealed menu with $COUNCIL_MENU_TOKEN (mm-menu-transport: the council fetches it) and save it to out.
+    Returns the menu, or None with the reason printed. The token never reaches the output or the URL."""
+    token = os.environ.get("COUNCIL_MENU_TOKEN", "").strip()
+    if not token:
+        print("fetch: COUNCIL_MENU_TOKEN is not set in this session's cloud environment (docs/morning.md)")
+        return None
+    req = urllib.request.Request(f"{MENU_URL}?date={date}", headers={"Authorization": f"Bearer {token}"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            text = r.read().decode("utf-8")
+    except urllib.error.HTTPError as e:
+        print({401: "fetch: the key was refused (401); the board and Vercel hold different keys",
+               404: f"fetch: no menu sealed for {date} (404)",
+               503: "fetch: COUNCIL_MENU_TOKEN is not set in Vercel (503)"}.get(e.code, f"fetch: HTTP {e.code}"))
+        return None
+    except (urllib.error.URLError, OSError) as e:
+        print(f"fetch: bars-engine.vercel.app is out of reach ({e}); allow it in the cloud environment's network access")
+        return None
+    Path(out).write_text(text, encoding="utf-8")
+    return json.loads(text)
 
 
 def menu_goals(menu):
@@ -286,12 +314,14 @@ def report(m):
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--menu", help="the Tap the Vein export saved to a file")
+    ap.add_argument("--fetch", metavar="DATE", help="fetch the sealed menu for DATE (YYYY-MM-DD) with $COUNCIL_MENU_TOKEN")
+    ap.add_argument("--out", default="morning-menu.json", help="where --fetch saves the menu (default ./morning-menu.json)")
     ap.add_argument("--prs", help="open pull requests saved to a file: [{repo, number, title, url, draft}]")
     ap.add_argument("--bars", help="a bars-engine checkout (default ../bars-engine)")
     ap.add_argument("--write", action="store_true", help="write `morning` into board/board_data.json and rebuild")
     ap.add_argument("--json", action="store_true", help="print the gathered morning as JSON")
     a = ap.parse_args(argv)
-    menu = load_menu(a.menu) if a.menu else None
+    menu = load_menu(a.menu) if a.menu else (fetch_menu(a.fetch, a.out) if a.fetch else None)
     if menu and "rawEntry" in json.dumps(menu):
         sys.exit("the menu file carries a rawEntry; only kept lines may leave Tap the Vein (mm-raw)")
     data = json.loads(BOARD.read_text(encoding="utf-8"))

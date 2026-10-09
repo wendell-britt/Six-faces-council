@@ -30,8 +30,10 @@ The build, three threads, each fresh (the pass thread handed off near 200,000 to
    a token), before building on it.
    **Built 2026-10-09** (draft PR, docs/morning.md): `morning.py`, the board's Morning tab, and picks recorded by
    `pull.py`. The container cannot reach bars-engine; the Vercel connector can, with a GET and no headers, so the
-   export (bars-engine #267, Bearer header) cannot be read by it as built. The Morning tab takes a pasted sealed menu
-   meanwhile. Open: `mm-menu-transport` on the board (query token or paste), then republish once #68 merges.
+   Wendell chose "the council fetches it" (`mm-menu-transport`, 18:52). `morning.py --fetch` reads the menu with
+   `$COUNCIL_MENU_TOKEN` once Your steps list `morning-menu-key` is done (Vercel env vars, the migration, a cloud
+   environment that holds the key and allows bars-engine.vercel.app). The Morning tab's paste box is the fallback.
+   Open: that list, then republish once #68 merges.
 
 Test by 2026-10-16: one real morning end to end, and at least one pick becomes a thread.
 
