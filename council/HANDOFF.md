@@ -108,6 +108,17 @@ session opens at about 102,000 tokens before doing any work (first_request_input
 - friendcraft-manuacript #28 holds the pass, the ledger records and the decision-log entry (rulings 14 and 39
   closed).
 
+## Open on 2026-10-09, from the Flirtcraft app promotion thread (battle `fr-app-promo`)
+
+- **The plan:** `/mnt/project-files/marketing/app-promotion-plan.md` in the Flirtcraft project files. Founding season
+  first: the paywall stays off (production answered `"source":"open"` on 2026-10-09), posts send people to the free
+  rep, founding players are asked for a sentence. Drafts for the X bio, the announcement and a first Reddit post are in §5.
+- **Blocker:** nothing promotes the app until steps 5 to 9 of Your steps list `flirtcraft-own-database` are done and
+  step 3 of `flirtcraft-socials` (a real free rep with a real email) passes (`promo-signin-first`).
+- **On the board:** seven positions stand unless flipped; `promo-paywall-when` waits on him. Your steps list
+  `flirtcraft-socials` has four steps.
+- **Not covered:** finding relationship-coaching guests for more episodes, which Wendell asked for in the same message.
+
 ## Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)
 
 - **The podcast episode move** merged in #47: `council/moves/podcast-episode.md` and
