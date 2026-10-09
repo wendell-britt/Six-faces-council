@@ -5344,6 +5344,28 @@
    "auto": true,
    "pos": "The five moves as practices appear only after \"Sit down with me\", as \"Before we meet: five moves\", with the free doors and the 3-2-1 under them.",
    "why": "Your steer on cf-paths: the basic moves are \"more useful for people AFTER they have booked\". Source: bars-engine PR 271"
+  },
+  {
+   "id": "cf-game-belief-carried",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "The game's \"Take this to coaching\" link now carries the belief too. The coaching page fills it in on the belief step, where the visitor can change it, then clears it from the address bar. The game still stores no belief text.",
+   "why": "Your answer on cf-game-belief, 9 October: \"They should be able to carry this over for ease of use.\" Source: bars-engine PR 271"
+  },
+  {
+   "id": "cf-moves-page",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "coaching game 3",
+   "auto": true,
+   "pos": "Each move's name above a screen links to a new page, masteringallyship.com/coaching/moves, which explains what the move means, what it is on the walk, and links to the site's Check for it. It opens in a new tab so the walk keeps its place. Claude drafted the explanations from your cf-paths steer, and you can rewrite them.",
+   "why": "Your steer on cf-moves-walk: \"These should be hyperlinks that go to a page that explain what each of them mean\". Source: bars-engine src/app/coaching/moves/page.tsx (PR 271)"
   }
  ],
  "questions": [
