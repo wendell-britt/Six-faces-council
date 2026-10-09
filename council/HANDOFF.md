@@ -416,3 +416,13 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   door before its kept sentence, and the `wendell.` host redirects to `/coaching`.
 - **Waiting on Wendell:** play it on his phone from #270's preview and merge if it works (his step from the pass,
   due 2026-10-12). If he stops before the map, `cg-front-door` reopens (Challenger's third test).
+
+## Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)
+
+- **The pass:** sprout `campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md` (sprout #31, draft),
+  ledger `council/ledger/2026-10-09-helper-skills-pass1.json` in sprout. Seven positions stand unless he flips them (`hs-*`).
+- **Waiting on him:** `hs-items-when` (when the person hands over the item Ede reads) and `hs-lamp-talisman` (does the
+  clay lamp become a talisman; it changes a Decided rule).
+- **Next:** once he answers, a new thread builds prototype 2 (H1 to H5 with the tending screen, items and lamp) by
+  republishing https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc, and runs tests T1 to T4. Step 3 (`encounters.yaml`) can
+  start from the positions.
