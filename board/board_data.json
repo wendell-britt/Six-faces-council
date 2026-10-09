@@ -14193,6 +14193,126 @@
      "regent"
     ],
     "pass": "helper skills, pass 1"
+   },
+   "cf-forest": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:38:40.289Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "steer": "People need to identify their problem OR given a path to understanding their problem\n\nIf they already know they have something to work on they can be guided through a tour of my approach and testamonials and then be offered a call\n\nif they DON'T know what I'd like is for them to be able to go through the ontology game and to be able to pass what happened to them in the game to the site that then offers a strategy they can use to work with me. I think we also need to include life domains- most roads will lead to emotinoal alchemy training to some degree. Because I have mastered all 6 faces of the game master I can coach at each level. People are there to decide what emotional block what self sabotaging belief is at play at which level in what domain, and once they know they will be informed enough to book a call with me",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "coaching game 2"
+   },
+   "cf-fast-lane": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:39:17.960Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "steer": "I know what I need should still give them the opportunity to say what that need is in a way that we can metabolize so I Can help them more effectively.",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "coaching game 2"
+   },
+   "cf-one-door": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:39:24.609Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "coaching game 2"
+   },
+   "cf-his-face": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:39:33.526Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "coaching game 2"
+   },
+   "cf-protections": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:39:49.210Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "coaching game 2"
+   },
+   "cf-paths": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:41:25.013Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "steer": "I do still think we should include the basic moves, but this feels as though it's more useful for people AFTER they have booked. That being said the journey to the center of the forest does also take that shape. Waking up to what their problems is, opening up to the belief there is a solution for it (and that I have the solution) Cleaning up and blockers that would stop them from moving forward- Growing up and Showing up ARE the coaching itself so we don't need people to take that action but chcoosing a face is essentially the grow up move and showing up mean booking a call",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "coaching game 2"
+   },
+   "hs-quest-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:41:40.846Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "helper skills, rulings"
+   },
+   "hs-trust-from-the-loop": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:41:47.730Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "helper skills, rulings"
+   },
+   "hs-final-quest-ede": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:41:53.629Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "helper skills, rulings"
+   },
+   "hs-tending-in-talk": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T20:41:56.446Z",
+    "record": "council/ledger/2026-10-09-pull-204156.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "helper skills, rulings"
    }
   },
   "questions": {

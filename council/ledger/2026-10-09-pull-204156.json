@@ -1,0 +1,80 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T20:41:56.446Z",
+ "answers": {
+  "cf-forest": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:38:40.289Z",
+   "status": "overrule",
+   "steer": "People need to identify their problem OR given a path to understanding their problem\n\nIf they already know they have something to work on they can be guided through a tour of my approach and testamonials and then be offered a call\n\nif they DON'T know what I'd like is for them to be able to go through the ontology game and to be able to pass what happened to them in the game to the site that then offers a strategy they can use to work with me. I think we also need to include life domains- most roads will lead to emotinoal alchemy training to some degree. Because I have mastered all 6 faces of the game master I can coach at each level. People are there to decide what emotional block what self sabotaging belief is at play at which level in what domain, and once they know they will be informed enough to book a call with me",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-fast-lane": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:39:17.960Z",
+   "status": "overrule",
+   "steer": "I know what I need should still give them the opportunity to say what that need is in a way that we can metabolize so I Can help them more effectively. ",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-one-door": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:39:24.609Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-his-face": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:39:33.526Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-protections": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:39:49.210Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-coaching-game"
+  },
+  "cf-paths": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:41:25.013Z",
+   "status": "overrule",
+   "steer": "I do still think we should include the basic moves, but this feels as though it's more useful for people AFTER they have booked. That being said the journey to the center of the forest does also take that shape. Waking up to what their problems is, opening up to the belief there is a solution for it (and that I have the solution) Cleaning up and blockers that would stop them from moving forward- Growing up and Showing up ARE the coaching itself so we don't need people to take that action but chcoosing a face is essentially the grow up move and showing up mean booking a call ",
+   "via": "battle:fr-coaching-game"
+  },
+  "hs-quest-order": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:41:40.846Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-trust-from-the-loop": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:41:47.730Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-final-quest-ede": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:41:53.629Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-tending-in-talk": {
+   "kind": "position",
+   "savedAt": "2026-10-09T20:41:56.446Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "positions/cf-forest: Overruled (steer: \"People need to identify their problem OR given a path to understanding their problem\n\nIf they already know they have something to work on they can be guided through a tour of my approach and testamonials and then be offered a call\n\nif they DON'T know what I'd like is for them to be able to go through the ontology game and to be able to pass what happened to them in the game to the site that then offers a strategy they can use to work with me. I think we also need to include life domains- most roads will lead to emotinoal alchemy training to some degree. Because I have mastered all 6 faces of the game master I can coach at each level. People are there to decide what emotional block what self sabotaging belief is at play at which level in what domain, and once they know they will be informed enough to book a call with me\")",
+  "positions/cf-fast-lane: Overruled (steer: \"I know what I need should still give them the opportunity to say what that need is in a way that we can metabolize so I Can help them more effectively.\")",
+  "positions/cf-paths: Overruled (steer: \"I do still think we should include the basic moves, but this feels as though it's more useful for people AFTER they have booked. That being said the journey to the center of the forest does also take that shape. Waking up to what their problems is, opening up to the belief there is a solution for it (and that I have the solution) Cleaning up and blockers that would stop them from moving forward- Growing up and Showing up ARE the coaching itself so we don't need people to take that action but chcoosing a face is essentially the grow up move and showing up mean booking a call\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
