@@ -28,6 +28,10 @@ The build, three threads, each fresh (the pass thread handed off near 200,000 to
    also bridged to goals the same way. A pick becomes a board row; the next board read starts a thread per pick
    (`mm-picks-become-threads`). First step: find how a council session reads thread 2's export (network policy and
    a token), before building on it.
+   **Built 2026-10-09** (draft PR, docs/morning.md): `morning.py`, the board's Morning tab, and picks recorded by
+   `pull.py`. The container cannot reach bars-engine; the Vercel connector can, with a GET and no headers, so the
+   export takes its token in the query string. Open: the endpoint and where its token lives (thread 2), and
+   republishing the board once the PR merges.
 
 Test by 2026-10-16: one real morning end to end, and at least one pick becomes a thread.
 

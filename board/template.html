@@ -225,6 +225,31 @@ body.has-send{padding-bottom:120px}
 .ch-line{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 .ch-line input[type=date]{font:inherit;font-size:.95rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:6px 8px}
 .ch-line input[type=text]{flex:1 1 200px;width:auto}
+/* Morning tab (mm-backlog-sources, mm-menu-shape, 2026-10-09): each source its own category to explore, every item
+   bridged to a Lens goal, at most seven picks. Prefixed mo-. */
+.mo-head{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;margin:14px 0 4px}
+.mo-count{font-variant-numeric:tabular-nums;font-weight:600}
+.mo-cat{background:var(--panel);border:1px solid var(--line);border-radius:6px;margin:10px 0;padding:0 14px}
+.mo-cat>summary{cursor:pointer;padding:12px 0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;list-style:none}
+.mo-cat>summary::-webkit-details-marker{display:none}
+.mo-cat>summary::before{content:"▸";color:var(--muted);width:1em}
+.mo-cat[open]>summary::before{content:"▾"}
+.mo-cat>summary b{font-family:var(--display);font-weight:500;font-size:1.05rem}
+.mo-cat>summary span{color:var(--muted);font-size:.85rem}
+.mo-item{padding:12px 0;border-top:1px solid var(--line)}
+.mo-item.picked{box-shadow:inset 4px 0 0 var(--accent);padding-left:12px}
+.mo-text{margin:0 0 4px;max-width:72ch;overflow-wrap:anywhere}
+.mo-note{font-size:.82rem;color:var(--muted);margin:0 0 6px}
+.mo-note a{color:var(--accent)}
+.mo-bridge{font-size:.9rem;margin:0 0 6px;max-width:72ch}
+.mo-bridge.unaligned{color:var(--warn)}
+.mo-ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mo-ctl select{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);max-width:100%}
+.mo-ctl input[type=text]{flex:1 1 200px;width:auto;padding:5px 8px}
+.mo-pick{font:inherit;font-size:.88rem;padding:5px 14px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
+.mo-pick[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.mo-pick:disabled{opacity:.45;cursor:not-allowed}
+.mo-more{font:inherit;font-size:.85rem;margin:8px 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
 </style>
 
 <h1>Council Board</h1>
@@ -233,6 +258,7 @@ body.has-send{padding-bottom:120px}
 
 <div class="tabs" role="tablist">
   <button class="tab" role="tab" id="tab-open" aria-selected="true" aria-controls="view-open">Open<b id="n-open">0</b></button>
+  <button class="tab" role="tab" id="tab-morning" aria-selected="false" aria-controls="view-morning">Morning<b id="n-morning">0</b></button>
   <button class="tab" role="tab" id="tab-steps" aria-selected="false" aria-controls="view-steps">Your steps<b id="n-steps">0</b></button>
   <button class="tab" role="tab" id="tab-outreach" aria-selected="false" aria-controls="view-outreach">Outreach<b id="n-outreach">0</b></button>
   <button class="tab" role="tab" id="tab-resolved" aria-selected="false" aria-controls="view-resolved">Resolved<b id="n-resolved">0</b></button>
@@ -253,6 +279,12 @@ body.has-send{padding-bottom:120px}
   <div id="open-p"></div>
   <div id="open-c"></div>
   <p class="duenote" id="open-deferred" hidden></p>
+</section>
+
+<section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
+  <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
+  <div id="mo-empty" class="empty" hidden>No morning gathered yet. After you seal Tap the Vein, a council session gathers your kept lines and the open work here.</div>
+  <div id="mo-cats"></div>
 </section>
 
 <section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
@@ -526,7 +558,7 @@ function render(){
 }
 
 function show(which){
-  for (const v of ['open','steps','outreach','resolved']){
+  for (const v of ['open','morning','steps','outreach','resolved']){
     document.getElementById('tab-'+v).setAttribute('aria-selected', String(v === which));
     document.getElementById('view-'+v).hidden = v !== which;
   }
@@ -535,7 +567,8 @@ document.getElementById('tab-open').addEventListener('click', () => { show('open
 document.getElementById('tab-resolved').addEventListener('click', () => { show('resolved'); try { history.replaceState(null, '', '#resolved'); } catch (e) {} });
 document.getElementById('tab-steps').addEventListener('click', () => { show('steps'); try { history.replaceState(null, '', '#steps'); } catch (e) {} });
 document.getElementById('tab-outreach').addEventListener('click', () => { show('outreach'); try { history.replaceState(null, '', '#outreach'); } catch (e) {} });
-show(['#resolved','#steps','#outreach'].includes(location.hash) ? location.hash.slice(1) : 'open');
+document.getElementById('tab-morning').addEventListener('click', () => { show('morning'); try { history.replaceState(null, '', '#morning'); } catch (e) {} });
+show(['#resolved','#steps','#outreach','#morning'].includes(location.hash) ? location.hash.slice(1) : 'open');
 
 // The Open tab's rows, and deferred rows opened on the Resolved tab, share these handlers.
 const openView = {addEventListener: (t, f) => ['view-open', 'view-resolved'].forEach(v => document.getElementById(v).addEventListener(t, f))};
@@ -1069,6 +1102,10 @@ function pendingSaves(){
   for (const kind of ['questions', 'positions', 'terms', 'causes'])
     for (const id of Object.keys(live[kind])) if (status(kind, id) === 'saved' && after(live[kind][id].savedAt)) out.push(kind + '/' + id);
   if (liveSteer && (liveSteer.text || '').trim() && liveSteer.savedAt > (DATA.steer_recorded_through || '') && after(liveSteer.savedAt)) out.push('steer/general');
+  for (const id of Object.keys(moLive)){
+    const d = moLive[id];
+    if (!d.removed && !moRecorded.has(id) && after(d.savedAt)) out.push('picks/' + id);
+  }
   for (const id of Object.keys(stSteps)){
     const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at)].filter(Boolean).sort().pop();
     if (t && t > PICKUP_SINCE && after(t)) out.push('steps/' + id);
@@ -1121,6 +1158,107 @@ document.getElementById('send-btn').addEventListener('click', async () => {
   } catch (err){ sendBusy = false; flashSend(sendError(err)); }
 });
 
+/* The Morning tab. Wendell, 2026-10-09, on mm-backlog-sources: "Keep them as separate categories people can explore so
+   they aren't just one long list". On mm-menu-shape: "All items need a bridge to lens goals and game masters suggest
+   ways to align to lens goals or suggest adding lens goals a smaller time scales to integrate (side quests merging
+   into main quest)". council/morning.py gathers DATA.morning; a pick saves picks/<item id> in the store, and
+   board/pull.py records it and asks the next board read for one thread per pick (mm-picks-become-threads). */
+const MO = DATA.morning || null;
+const moRecorded = new Set((DATA.picks || []).map(p => p.id));
+let moLive = {}, moEdits = {}, moShown = {};
+const MO_PAGE = 12;
+const moOpen = (() => { try { return new Set(JSON.parse(localStorage.getItem('board-mo-open') || '["menu"]')); } catch { return new Set(['menu']); } })();
+const moGoal = id => ((MO && MO.goals) || []).find(g => g.id === id);
+const moPicked = id => (moLive[id] && !moLive[id].removed) || moRecorded.has(id);
+function moBridgeText(b){
+  if (!b) return '';
+  if (b.kind === 'named') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
+  if (b.kind === 'existing') return `Suggested: serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
+  if (b.kind === 'new') return `Suggested: a new ${esc(b.cadence || 'week')} goal, <b>${esc(b.title)}</b>, under <b>${esc(b.parentTitle || (moGoal(b.parentId) || {}).title || 'a year goal')}</b>.`;
+  return `Unaligned: ${esc(b.why || 'no goal yet')}. Pick a goal or a new smaller one, or keep it unaligned.`;
+}
+function moCurrent(it){ return moEdits[it.id] || (moLive[it.id] && moLive[it.id].bridge) || it.bridge; }
+function moItem(it, cat, full){
+  const b = moCurrent(it), picked = moPicked(it.id), rec = moRecorded.has(it.id);
+  const goals = (MO.goals || []);
+  const val = b.kind === 'unaligned' ? 'none' : b.kind === 'new' ? 'new' : 'g:' + (b.goalId || '');
+  const opts = [`<option value="none"${val==='none'?' selected':''}>No goal (unaligned)</option>`]
+    .concat(goals.map(g => `<option value="g:${esc(g.id)}"${val==='g:'+g.id?' selected':''}>${esc(g.title)} (${esc(g.cadence)})</option>`))
+    .concat([`<option value="new"${val==='new'?' selected':''}>A new smaller goal…</option>`]).join('');
+  const parentOpts = goals.map(g => `<option value="${esc(g.id)}"${(b.parentId===g.id)?' selected':''}>under ${esc(g.title)}</option>`).join('');
+  const note = [it.note && esc(it.note), it.link && `<a href="${esc(it.link)}" target="_blank" rel="noopener">open</a>`].filter(Boolean).join(' · ');
+  const limit = (MO.pick_limit || 7), full_ = full && !picked;
+  return `<div class="mo-item${picked?' picked':''}" data-id="${esc(it.id)}" data-cat="${esc(cat)}">
+    <p class="mo-text">${esc(it.text)}</p>${note ? `<p class="mo-note">${note}</p>` : ''}
+    <p class="mo-bridge${b.kind==='unaligned'?' unaligned':''}">${moBridgeText(b)}</p>
+    <div class="mo-ctl">
+      ${goals.length && !rec ? `<select class="mo-goal" aria-label="Lens goal for this item">${opts}</select>` : ''}
+      ${b.kind==='new' && !rec ? `<input type="text" class="mo-new" aria-label="New goal" value="${esc(b.title||'')}"><select class="mo-parent" aria-label="Under which goal">${parentOpts}</select>` : ''}
+      <button type="button" class="mo-pick" aria-pressed="${picked}"${rec||full_||!db?' disabled':''}>${rec ? 'Picked, recorded' : picked ? 'Picked' : full_ ? 'Seven picked' : 'Pick'}</button>
+    </div></div>`;
+}
+function renderMorning(){
+  const cats = document.getElementById('mo-cats');
+  document.getElementById('mo-empty').hidden = !!MO;
+  if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
+  const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
+  const n = [...ids].filter(moPicked).length, limit = MO.pick_limit || 7;
+  document.getElementById('n-morning').textContent = n;
+  document.getElementById('mo-lede').textContent = `Gathered ${MO.date}. Open a category to explore it. Pick up to ${limit}; each pick becomes a board row, and the next board read starts a thread for it.`;
+  document.getElementById('mo-count').textContent = `${n} of ${limit} picked`;
+  if (cats.contains(document.activeElement) && document.activeElement.matches('input')) return;
+  cats.innerHTML = MO.categories.map(c => {
+    const aligned = c.items.filter(i => moCurrent(i).kind !== 'unaligned').length;
+    const shown = moShown[c.key] || MO_PAGE, items = c.items.slice(0, shown);
+    const more = c.items.length > shown ? `<button type="button" class="mo-more" data-cat="${esc(c.key)}">Show ${Math.min(MO_PAGE, c.items.length - shown)} more of ${c.items.length - shown}</button>` : '';
+    return `<details class="mo-cat" data-cat="${esc(c.key)}"${moOpen.has(c.key)?' open':''}>
+      <summary><b>${esc(c.title)}</b><span>${c.items.length} item${c.items.length===1?'':'s'}${c.items.length ? `, ${aligned} with a goal` : ''}</span></summary>
+      <p class="lede">${esc(c.blurb)}${c.note ? ' ' + esc(c.note) + '.' : ''}</p>
+      ${items.map(it => moItem(it, c.key, n >= limit)).join('')}${more}</details>`;
+  }).join('');
+  renderSend();
+}
+function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
+document.getElementById('mo-cats').addEventListener('toggle', e => {
+  const d = e.target.closest('.mo-cat'); if (!d) return;
+  d.open ? moOpen.add(d.dataset.cat) : moOpen.delete(d.dataset.cat);
+  try { localStorage.setItem('board-mo-open', JSON.stringify([...moOpen])); } catch {}
+}, true);
+document.getElementById('mo-cats').addEventListener('click', async e => {
+  const more = e.target.closest('.mo-more');
+  if (more){ moShown[more.dataset.cat] = (moShown[more.dataset.cat] || MO_PAGE) + MO_PAGE; renderMorning(); return; }
+  const btn = e.target.closest('.mo-pick'); if (!btn || !db) return;
+  const row = btn.closest('.mo-item'), [it, cat] = moItemById(row.dataset.id); if (!it) return;
+  const now = new Date().toISOString();
+  const doc = moPicked(it.id) ? {removed: true, savedAt: now}
+    : {date: MO.date, category: cat, text: it.text, link: it.link || '', ref: it.ref || '', bridge: moCurrent(it), savedAt: now};
+  btn.disabled = true;
+  try { await db.doc('picks/' + it.id).set(doc); moLive[it.id] = doc; } catch { btn.textContent = 'Not saved'; }
+  renderMorning();
+});
+document.getElementById('mo-cats').addEventListener('change', e => {
+  const row = e.target.closest('.mo-item'); if (!row) return;
+  const [it] = moItemById(row.dataset.id); if (!it) return;
+  const goals = MO.goals || [], cur = moCurrent(it);
+  let b = cur;
+  if (e.target.matches('.mo-goal')){
+    const v = e.target.value;
+    if (v === 'none') b = {kind: 'unaligned', why: 'you kept it unaligned'};
+    else if (v === 'new'){ const top = goals.find(g => g.cadence === 'year') || goals[0] || {};
+      b = {kind: 'new', title: it.text.slice(0, 90), parentId: cur.parentId || top.id, parentTitle: cur.parentTitle || top.title, cadence: cur.cadence && cur.kind === 'new' ? cur.cadence : 'week'}; }
+    else { const g = goals.find(g => 'g:' + g.id === v) || {}; b = {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence}; }
+  } else if (e.target.matches('.mo-parent')){
+    const g = goals.find(g => g.id === e.target.value) || {};
+    const next = {year: 'quarter', quarter: 'month', month: 'week', week: 'week'};
+    b = {...cur, parentId: g.id, parentTitle: g.title, cadence: next[g.cadence] || 'week'};
+  } else if (e.target.matches('.mo-new')) b = {...cur, title: e.target.value.trim()};
+  else return;
+  moEdits[it.id] = b;
+  if (moLive[it.id] && !moLive[it.id].removed && db){ const d = {...moLive[it.id], bridge: b, savedAt: new Date().toISOString()}; moLive[it.id] = d; db.doc('picks/' + it.id).set(d).catch(() => {}); }
+  renderMorning();
+});
+renderMorning();
+
 renderSteps();
 
 render();
@@ -1128,6 +1266,8 @@ render();
   db = window.claude && window.claude.use ? await window.claude.use('db') : null;
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
   window.claude.use('mcp').then(m => { mcp = m; renderSend(); }, () => {});
+  renderMorning();
+  db.collection('picks').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); moLive = next; renderMorning(); }, () => {});
   db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
   for (const kind of ['positions','questions','causes','terms']){
     db.collection(kind).onSnapshot(snap => {

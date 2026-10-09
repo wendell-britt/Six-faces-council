@@ -1,0 +1,15 @@
+{
+ "version": 1,
+ "date": "2026-10-09",
+ "sealedAt": "2026-10-09T15:40:00Z",
+ "goals": [
+  {"id": "g-year-allyship", "title": "Launch Mastering the Game of Allyship", "domain": "allyship", "cadence": "year", "parentId": null, "status": "active"},
+  {"id": "g-q-podcast", "title": "Publish twelve podcast episodes", "domain": "career", "cadence": "quarter", "parentId": "g-year-allyship", "status": "active"},
+  {"id": "g-year-health", "title": "Move my body every day", "domain": "health", "cadence": "year", "parentId": null, "status": "active"}
+ ],
+ "items": [
+  {"id": "l1", "text": "Post the episode 2 clips with Tom", "goalId": "g-q-podcast", "suggestion": null, "accepted": true},
+  {"id": "l2", "text": "Walk before the first call", "goalId": null, "suggestion": {"kind": "new", "parentId": "g-year-health", "title": "Walk three mornings this week", "cadence": "week"}, "accepted": false},
+  {"id": "l3", "text": "Call my sister", "goalId": null, "suggestion": null, "accepted": false}
+ ]
+}
