@@ -1,0 +1,34 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T23:39:56.274Z",
+ "answers": {
+  "hs-t1-context": {
+   "kind": "position",
+   "savedAt": "2026-10-09T23:39:41.011Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-wrong-is-the-wall": {
+   "kind": "position",
+   "savedAt": "2026-10-09T23:39:47.206Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-needs-to-find": {
+   "kind": "position",
+   "savedAt": "2026-10-09T23:39:51.424Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hs-person-shows-it": {
+   "kind": "position",
+   "savedAt": "2026-10-09T23:39:56.274Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
