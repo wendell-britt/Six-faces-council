@@ -373,9 +373,13 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   Positions added: `c3d-five-places`, `c3d-regions-first`, `c3d-fork-page`, `c3d-daemon-body`, `c3d-one-finger`.
   He overruled `c3d-regions-first` (18:21): every spot gets its own chamber, and several sensations branch with
   portals and paths. Folded into #265 as `c3d-spot-shape` and `c3d-sensation-paths`.
-- **Next:** day 2 in a new thread on Sonnet, on #265's branch `claude/project-thread-ottswt`: `cave/build_kit.py`
-  (`pip install bpy`, 5.2.2 for Python 3.13) builds `cave-kit.glb` under 3 MB and `spots.json`; the page
-  `/ontology-game/cave/` dives in from the figure at any spot and walks the five places. DESIGN.md has the week.
+- **Day 2 done** (7dd3504, Sonnet): kit, spots.json, cave.js, cave-test.mjs. Then he overruled `c3d-spot-shape`
+  (18:53): chambers generic, body markers are portals, the chamber forms once charge, channel and face are named.
+  DESIGN.md updated (c89d190); position `c3d-portal-first` added.
+- **Next, day 3** in a new thread on Sonnet, branch `claude/project-thread-ottswt`: in `cave.js`, build one generic
+  chamber (drop the spot width/height/length/bend), add the portal step (charge, channel, face) before the chamber
+  forms and dress walls, light, pool and gate from them; then paths and portals between one sitting's sensations
+  (`c3d-sensation-paths`). Update `cave-test.mjs` (its throat-narrower-than-chest check goes). DESIGN.md has the tests.
 - **bars-engine production deploys fail** since #252: function admin/books/[id]/import-gameplay is 250.51 MB, over
   Vercel's 250 MB. `VERCEL_SUPPORT_LARGE_FUNCTIONS=1` in Vercel clears it (his setting). Comment on #265.
 
