@@ -13306,6 +13306,140 @@
      "regent"
     ],
     "pass": "3D build, pass 2"
+   },
+   "c3d-five-places": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:13:11.706Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "3D build, day 1"
+   },
+   "c3d-regions-first": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:14:28.203Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "steer": "Let’s have the chamber change to meet the spot. Branching off if there are multiple body sensations with portals\nOr paths that connect them",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "3D build, day 1"
+   },
+   "c3d-fork-page": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:14:36.269Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "3D build, day 1"
+   },
+   "c3d-daemon-body": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:14:42.704Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "3D build, day 1"
+   },
+   "c3d-one-finger": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:14:53.321Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "3D build, day 1"
+   },
+   "mm-backlog-sources": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:15:29.329Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "steer": "Keep them as separate categories people can explore so they aren’t just one long list",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "morning menu 1"
+   },
+   "mm-menu-shape": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:16:39.973Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "steer": "All items need a bridge to lens goals and game masters suggest ways to align to lens goals or suggest adding lens goals a smaller time scales to integrate (side quests merging into main quest)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "morning menu 1"
+   },
+   "mm-picks-become-threads": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:16:44.906Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "morning menu 1"
+   },
+   "mm-intake-saves-each-lens": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:16:49.141Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "morning menu 1"
+   },
+   "mm-intake-one-a-morning": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:16:59.509Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "morning menu 1"
+   },
+   "mm-goal-edit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:17:03.043Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "morning menu 1"
    }
   },
   "questions": {
@@ -14737,6 +14871,30 @@
      "regent"
     ],
     "pass": "3D build, pass 2"
+   },
+   "mm-where": {
+    "decision": "ttv",
+    "label": "Tap the Vein",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:12:34.850Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "morning menu 1"
+   },
+   "mm-raw": {
+    "decision": "kept",
+    "label": "Only kept lines",
+    "recorded": "2026-10-09",
+    "saved_at": "2026-10-09T18:12:42.904Z",
+    "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "morning menu 1"
    }
   },
   "causes": {

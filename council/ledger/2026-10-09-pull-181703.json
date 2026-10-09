@@ -1,0 +1,94 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T18:17:03.043Z",
+ "answers": {
+  "mm-where": {
+   "kind": "question",
+   "choice": "ttv",
+   "savedAt": "2026-10-09T18:12:34.850Z",
+   "steer": ""
+  },
+  "mm-raw": {
+   "kind": "question",
+   "choice": "kept",
+   "savedAt": "2026-10-09T18:12:42.904Z",
+   "steer": ""
+  },
+  "c3d-five-places": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:13:11.706Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "c3d-regions-first": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:14:28.203Z",
+   "status": "overrule",
+   "steer": "Let’s have the chamber change to meet the spot. Branching off if there are multiple body sensations with portals\nOr paths that connect them "
+  },
+  "c3d-fork-page": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:14:36.269Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "c3d-daemon-body": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:14:42.704Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "c3d-one-finger": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:14:53.321Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mm-backlog-sources": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:15:29.329Z",
+   "status": "stands",
+   "steer": "Keep them as separate categories people can explore so they aren’t just one long list "
+  },
+  "mm-menu-shape": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:16:39.973Z",
+   "status": "stands",
+   "steer": "All items need a bridge to lens goals and game masters suggest ways to align to lens goals or suggest adding lens goals a smaller time scales to integrate (side quests merging into main quest)"
+  },
+  "mm-picks-become-threads": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:16:44.906Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mm-intake-saves-each-lens": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:16:49.141Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mm-intake-one-a-morning": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:16:59.509Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mm-goal-edit": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:17:03.043Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/mm-where: Tap the Vein",
+  "questions/mm-raw: Only kept lines",
+  "positions/c3d-regions-first: Overruled (steer: \"Let’s have the chamber change to meet the spot. Branching off if there are multiple body sensations with portals\nOr paths that connect them\")",
+  "positions/mm-backlog-sources: Stands (steer: \"Keep them as separate categories people can explore so they aren’t just one long list\")",
+  "positions/mm-menu-shape: Stands (steer: \"All items need a bridge to lens goals and game masters suggest ways to align to lens goals or suggest adding lens goals a smaller time scales to integrate (side quests merging into main quest)\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
