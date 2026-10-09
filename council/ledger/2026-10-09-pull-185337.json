@@ -1,0 +1,31 @@
+{
+ "date": "2026-10-09",
+ "kind": "board-pull",
+ "newest_save": "2026-10-09T18:53:37.597Z",
+ "answers": {
+  "mm-menu-transport": {
+   "kind": "question",
+   "choice": "query",
+   "savedAt": "2026-10-09T18:52:02.368Z",
+   "steer": ""
+  },
+  "c3d-spot-shape": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:53:31.695Z",
+   "status": "overrule",
+   "steer": "A little on the nose. We want the feeling of the chamber to match the energy the player brings to it, so it won't really be created until we know the nature of the charge, the elemental channel, and the game master face. We can keep them generic for now. The makers on the body are acting as portals for the charge not as representations of what the body part it's pointing to has"
+  },
+  "c3d-sensation-paths": {
+   "kind": "position",
+   "savedAt": "2026-10-09T18:53:37.597Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/mm-menu-transport: The council fetches it",
+  "positions/c3d-spot-shape: Overruled (steer: \"A little on the nose. We want the feeling of the chamber to match the energy the player brings to it, so it won't really be created until we know the nature of the charge, the elemental channel, and the game master face. We can keep them generic for now. The makers on the body are acting as portals for the charge not as representations of what the body part it's pointing to has\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
