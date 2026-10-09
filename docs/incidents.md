@@ -95,3 +95,31 @@ Rules that follow:
 - Before starting a retry, check main for the rows named in the message (`python3 board/unrecorded.py`). If they are
   recorded there is nothing to retry; say so and stop. That check costs a few thousand tokens, not a retried read.
 - A thread unsubscribes from a pull request the moment it merges (CLAUDE.md, short sessions).
+
+### The zombie pickup session, 2026-10-07 00:45 to 2026-10-09 16:02 (fixed 2026-10-09)
+
+The "container has restarted N times, stopping the read thread" messages of 10-08 and 10-09 came from one session:
+`session_01YHfPaNCMRbQcEwXrqRwgZ1`, which the pickup routine fired at the 2026-10-07 00:45 Send, before the routine's
+prompt told such sessions to post one line and stop. It was not the coordinator and had no repository. Its
+transcript (`list_events`) shows the loop on each wake, at 10-08 14:09, 10-09 03:05 and 10-09 16:02:
+
+1. A `worker_restart` notice says its board read worker was stopped.
+2. It starts the worker again ("Container restarted a seventh time and stopped you; please resume the board read").
+3. The worker's first and only tool call, three to four seconds in, is `add_repo`.
+4. `add_repo` restarts the container, which kills the worker, and the next wake begins again at step 1.
+
+It reached worker epoch 8 and cost $3.54 recording nothing. Its rows (wave-teacher and the six wave positions) had
+been on main since board read 0107 at 01:08 on 10-07, so it was chasing work that was already done.
+
+Why the earlier fixes did not hold. The 10-07 fix changed the routine's prompt, which reaches only new firings; a
+session already running keeps the prompt it started with and keeps its loop. The 10-08 entry above was inferred
+without this transcript and blamed a coordinator worker. The restart count it describes fits this session, though that
+cannot be confirmed now.
+
+Fixed by archiving the session. Rules that follow:
+
+- When a stall message arrives, read the transcript of the session that sent it (`get_session`, `list_events`) before
+  naming a cause. Its origin, worker epoch and the worker's last tool name settle most of it.
+- A session the routine fired (origin `force_run_trigger`) that is not the coordinator and is still running after its
+  one project-chat line is archived. It never resumes a worker that a `worker_restart` stopped.
+- A change to the routine's prompt is followed by archiving any session that an earlier version of the prompt started.
