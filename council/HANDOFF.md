@@ -371,9 +371,13 @@ session opens at about 102,000 tokens before doing any work (first_request_input
 - **Day 1 done 2026-10-09:** design and manifest in bars-engine #265 (draft), `content/ontology-game/cave/`. The game
   happens inside the body: a tap dives into a chamber with five places (sensation, element, daemon, gate, release).
   Positions added: `c3d-five-places`, `c3d-regions-first`, `c3d-fork-page`, `c3d-daemon-body`, `c3d-one-finger`.
-- **Next:** day 2 in a new thread on Sonnet, on #265's branch `claude/project-thread-ottswt`: `cave/build_chambers.py`
-  (`pip install bpy`, 5.2.2 for Python 3.13) builds `chamber-throat.glb` under 3 MB; the page `/ontology-game/cave/`
-  dives in from the figure and walks the five places. DESIGN.md has the week's table and tests.
+  He overruled `c3d-regions-first` (18:21): every spot gets its own chamber, and several sensations branch with
+  portals and paths. Folded into #265 as `c3d-spot-shape` and `c3d-sensation-paths`.
+- **Next:** day 2 in a new thread on Sonnet, on #265's branch `claude/project-thread-ottswt`: `cave/build_kit.py`
+  (`pip install bpy`, 5.2.2 for Python 3.13) builds `cave-kit.glb` under 3 MB and `spots.json`; the page
+  `/ontology-game/cave/` dives in from the figure at any spot and walks the five places. DESIGN.md has the week.
+- **bars-engine production deploys fail** since #252: function admin/books/[id]/import-gameplay is 250.51 MB, over
+  Vercel's 250 MB. `VERCEL_SUPPORT_LARGE_FUNCTIONS=1` in Vercel clears it (his setting). Comment on #265.
 
 ## Open on 2026-10-09, from the MTGOA podcast invitations thread
 
