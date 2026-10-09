@@ -5006,6 +5006,49 @@
    "auto": true,
    "pos": "After you answer hs-items-when and hs-lamp-talisman, a new thread builds prototype 2 of H1 to H5 with the tending screen, the items and the lamp, and posts the phone link.",
    "why": "Phone-testing rule (2026-10-09). Prototype 1: https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc Source: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md"
+  },
+  {
+   "id": "hs-quest-order",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "helper skills, rulings",
+   "auto": true,
+   "pos": "Ede teaches the six skills in the basic loop's order, with the book's order second: check in, ask don't fix, say it back, one small step then come back, pull the splinter, hand over the lamp. A first quest runs the whole loop on the player, each skill quest keeps the skills before it, and a seventh quest needs all six. Each follows the Epiphany Bridge as you mapped it, and each lights one node of the lamp board.",
+   "why": "Your steers on hs-six-skills (transcend and include, a final quest, the Epiphany Bridge) and hs-charge-shows (learn the basic loop before the book's order). The splinter moves after the step because catching one needs the loop. Source: sprout campaigns/skilled-helper/introduction/quests.md (pull request #31)"
+  },
+  {
+   "id": "hs-trust-from-the-loop",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "helper skills, rulings",
+   "auto": true,
+   "pos": "Trust is what the basic loop earns. Each person starts closed; a check-in, a question they answer for themselves and a say-back open them, and an early Offer closes them. A closed person turns down even a good step. The charge colour on their portrait is how far they trust you.",
+   "why": "You asked whether the book covers earning trust. It does, in Chapter 2, which step 1 already extracted: the alliance grows out of doing the work together and is never built head-on (l21, pp. 39-41), and a helper's skills only work through the relationship (l13). Source: quests.md, Trust"
+  },
+  {
+   "id": "hs-final-quest-ede",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "helper skills, rulings",
+   "auto": true,
+   "pos": "The final quest is Mother Ede herself. The Elders are asking where the Hall's herbs come from, and the teacher is the one who came. The player uses all six skills on her and hands the lamp back, and she lights its flame. It falls on the night before the hearing.",
+   "why": "Your steer asked for a final quest that needs every skill. design.md already has Ede hiding the herb source from the Elders, so the quest adds no new story. Source: quests.md, Quest 7"
+  },
+  {
+   "id": "hs-tending-in-talk",
+   "faces": [
+    "architect"
+   ],
+   "pass": "helper skills, rulings",
+   "auto": true,
+   "pos": "With the tending screen overruled, a tending runs in the ordinary talk box. Its choices are dialogue lines, the trust colour sits on the person's portrait, and the lamp board is one small panel. Test T1 now asks whether the right line can be guessed from its wording.",
+   "why": "You overruled hs-tending-screen, so nothing new is built for it. Source: quests.md, For prototype 2"
   }
  ],
  "questions": [

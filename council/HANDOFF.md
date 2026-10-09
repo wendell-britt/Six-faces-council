@@ -431,6 +431,11 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   ledger `council/ledger/2026-10-09-helper-skills-pass1.json` in sprout. Seven positions stand unless he flips them (`hs-*`).
 - **Waiting on him:** `hs-items-when` (when the person hands over the item Ede reads) and `hs-lamp-talisman` (does the
   clay lamp become a talisman; it changes a Decided rule).
-- **Next:** once he answers, a new thread builds prototype 2 (H1 to H5 with the tending screen, items and lamp) by
-  republishing https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc, and runs tests T1 to T4. Step 3 (`encounters.yaml`) can
-  start from the positions.
+- **Answered (board read 20:35):** items at the end of the talk (for testing), the lamp board yes, the tending screen
+  overruled. His steers on `hs-six-skills` and `hs-charge-shows` are folded into sprout
+  `campaigns/skilled-helper/introduction/quests.md` (on #31): six skill quests in the basic loop's order plus a final
+  quest with Ede as the one who came, each on the Epiphany Bridge, trust earned by the loop. Four new positions:
+  `hs-quest-order`, `hs-trust-from-the-loop`, `hs-final-quest-ede`, `hs-tending-in-talk`.
+- **Next:** a new thread builds prototype 2 from quests.md (quests 0 to 5, in the ordinary talk box, lamp board panel)
+  by republishing https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc, and runs tests T1 to T4. Step 3
+  (`encounters.yaml`) can start from story.md and quests.md.
