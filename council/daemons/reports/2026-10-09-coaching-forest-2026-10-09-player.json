@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-09",
+  "pass": "coaching-forest-2026-10-09",
+  "daemon": "player",
+  "face": "diplomat",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-09-coaching-forest-2026-10-09-player.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [],
+      "url": "https://dspace.mit.edu/handle/1721.1/100274?show=full",
+      "quote": "Game Spaces Speak Volumes: Indexical Storytelling,",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}

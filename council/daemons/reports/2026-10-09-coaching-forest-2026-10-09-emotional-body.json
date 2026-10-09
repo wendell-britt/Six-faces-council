@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-09",
+  "pass": "coaching-forest-2026-10-09",
+  "daemon": "emotional-body",
+  "face": "shaman",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-09-coaching-forest-2026-10-09-emotional-body.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Natural scenes restore attention through soft fascination [1], which needs few elements, not many."
+      ],
+      "url": "https://en.wikipedia.org/wiki/Attention_restoration_theory",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Read the ritual evidence properly [2]."
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23398180/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Hick's law: decision time grows with the number of options [3]; one act and one forward button per screen."
+      ],
+      "url": "https://en.wikipedia.org/wiki/Hick%27s_law",
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}
