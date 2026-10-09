@@ -12,7 +12,9 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   real read measures it against 30 steps and $1.54. Original brief: one new thread, on Sonnet. Store through ArtifactData into a file,
   never the whole page into the conversation; fold the scriptable steps into one script; measure steps and cost
   against the 00:25 read (30 steps, 2.66M tokens reread, $1.54).
-- **Plugins** (`plugins-trim`): waits on Wendell. On an answer, write the exact removal clicks on Your steps.
+- **Plugins** (`plugins-trim`): Wendell chose remove-business (2026-10-08). Your steps list `plugins-trim` (2026-10-09)
+  has him turn off ten plugins at Customize > Plugins. Once ticked, the next board read compares its opening size
+  (first_request_input_tokens in its result event) with 102,416.
 - **Sonnet threads** (`threads-on-sonnet`): written into project memory for the coordinator.
 - **Still to measure:** what else fills the opening 102,000 (CLAUDE.md files of the attached repos, the hook output,
   the platform prompt), and how much of a typical thread is command output (the Jev trimmer signal,
