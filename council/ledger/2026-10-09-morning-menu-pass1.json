@@ -1,0 +1,563 @@
+{
+ "date": "2026-10-09",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "Morning menu",
+ "record": "council/passes/6FACE_PASS_morning-menu1_2026-10-09.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's project-chat message of 2026-10-09 17:58 UTC; thread started by the project coordinator",
+ "pulled_first": "no ruling acted on; the live page was merged in by board/sync_board.py --live",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    6,
+    9,
+    8,
+    6
+   ],
+   "changing_lines": [
+    3,
+    4,
+    6
+   ],
+   "n": 51,
+   "name": "Shock",
+   "cn": "\u9707",
+   "pinyin": "zh\u00e8n",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "It went off, and it will go off again.",
+   "image": "\u2633 thunder beneath \u2633 thunder. One firm line arriving at the bottom, and then arriving again above it.",
+   "situation": "The shock comes, and then it comes a second time. The old text keeps a wonderful detail through it: laughing words, ha ha, and the man who keeps the sacrificial wine in the cup. Terror arrives from a hundred miles off, and the one still holding the ladle is the one who inherits.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "\u2633",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "\u2633",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 22,
+    "name": "Adornment",
+    "cn": "\u8cc1",
+    "pinyin": "b\u00ec",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "You have dressed this, and the dressing is doing real work.",
+    "image": "\u2632 fire beneath \u2636 mountain. A fire at the base of a hill, throwing light up the whole face of it.",
+    "situation": "Form applied to something already standing. The mountain gets lit and the rock stays rock. The tradition runs this figure upward toward plainness and gives the top line as white adornment, which is form that has run out of ornament.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "\u2632",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "\u2636",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    6,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 10,
+   "name": "Footing",
+   "cn": "\u5c65",
+   "pinyin": "l\u01da",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are stepping onto ground that matters, and the play is what makes it safe.",
+   "image": "\u2631 lake beneath \u2630 heaven. A small soft thing placed directly under the largest hard one.",
+   "situation": "The old line is about treading on a tiger's tail and coming away whole, which happens through the quality of the step. Conduct is the entire content here. Where you put your weight, in what order, at what speed, decides whether the ground holds.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "\u2631",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "\u2630",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 1,
+    "name": "Unbroken",
+    "cn": "\u4e7e",
+    "pinyin": "qi\u00e1n",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "Every line here sends, and the return has nowhere to land.",
+    "image": "\u2630 heaven beneath \u2630 heaven. Six unbroken lines, and no place in the figure that yields.",
+    "situation": "Every line is pushing and every line is capable. This is the most able configuration in the set, and it has nowhere to put anything that arrives. The tradition walks a dragon up through six stages for exactly this reason \u2014 force has to learn timing, because force alone already knows everything else.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "\u2630",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "\u2630",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    9,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [
+    1
+   ],
+   "n": 24,
+   "name": "Turning",
+   "cn": "\u5fa9",
+   "pinyin": "f\u00f9",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "What came back is one line deep.",
+   "image": "\u2633 thunder beneath \u2637 earth. One firm line has come back at the very bottom, under five yielding ones.",
+   "situation": "The solstice, the point where light starts back. The old text gives seven days as the period of return, says friends come and it is fine, and treats going out and coming in as equally safe. What has come back is one line deep, and it is the whole event.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "\u2633",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "\u2637",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 2,
+    "name": "Bearing",
+    "cn": "\u5764",
+    "pinyin": "k\u016bn",
+    "lines": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "The whole weight of this is yours, unasked.",
+    "image": "\u2637 earth beneath \u2637 earth. Six broken lines. Every one of them has a gap at the centre.",
+    "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "\u2637",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "\u2637",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    8,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 63,
+   "name": "Arrived",
+   "cn": "\u65e2\u6fdf",
+   "pinyin": "j\u00ec j\u00ec",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "shows": "This is finished, which is when it starts moving.",
+   "image": "\u2632 fire beneath \u2635 water. Every line in the figure sits in its correct place, with the water above the fire.",
+   "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "\u2632",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "\u2635",
+    "name": "The Abysmal",
+    "quality": "danger"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 36,
+   "name": "Nightfall",
+   "cn": "\u660e\u5937",
+   "pinyin": "m\u00edng y\u00ed",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "shows": "You are keeping a light covered, and it is still lit.",
+   "image": "\u2632 fire beneath \u2637 earth. The sun gone under the ground, with its light still inside the figure.",
+   "situation": "The light is wounded and continues. The old reading gives a wise person under a bad ruler who keeps their brightness by covering it, and the counsel is to know the difficulty and stay firm inside it.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "\u2632",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "\u2637",
+    "name": "The Receptive",
+    "quality": "yielding"
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    8,
+    8,
+    7
+   ],
+   "changing_lines": [],
+   "n": 41,
+   "name": "Spending",
+   "cn": "\u640d",
+   "pinyin": "s\u01d4n",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "This has a price and you have yet to name it.",
+   "image": "\u2631 lake beneath \u2636 mountain. The lake has been dug deeper so that the mountain can stand higher.",
+   "situation": "Something has been taken from the base and added to the top. The old text asks how the offering should be made and answers that two small bowls will do, since the sacrifice counts by sincerity. Decrease that you choose is a different event from decrease that happens to you.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "\u2631",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "\u2636",
+    "name": "Keeping Still",
+    "quality": "rest"
+   }
+  }
+ ],
+ "positions": [
+  "mm-backlog-sources",
+  "mm-menu-shape",
+  "mm-picks-become-threads",
+  "mm-intake-saves-each-lens",
+  "mm-intake-one-a-morning",
+  "mm-goal-edit"
+ ],
+ "questions": [
+  "mm-where",
+  "mm-raw"
+ ],
+ "subagent_tokens": 0,
+ "tests_dated": [
+  {
+   "by": "2026-10-16",
+   "test": "one real morning runs end to end, and at least one pick becomes a thread"
+  },
+  {
+   "by": "2026-10-16",
+   "test": "closing the intake after two domains and reopening it shows both domains saved"
+  }
+ ]
+}
