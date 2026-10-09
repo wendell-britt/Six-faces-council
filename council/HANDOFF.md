@@ -399,3 +399,13 @@ session opens at about 102,000 tokens before doing any work (first_request_input
 - **Topic pass over the list:** `podcast/outreach/topic-brainstorm-2026-10-09.md`. The research-first group (Urban
   League consultants, award-only rows, the three disability orgs, Barb Toews, Rosie Ayala) still needs step 2's
   research before anyone pitches them.
+
+## Open on 2026-10-09, from the coaching site thread
+
+- **The coaching game is the front door** (`cg-front-door`, answered "front" in board read 1917). The build is
+  bars-engine #270, which supersedes #268 (closed) and carries #269's function-size fix so its preview deploys. The
+  pass is bars-engine `content/coaching-game/6FACE_PASS1_2026-10-09.md`; its six positions stand.
+- **Played locally at phone width** on 2026-10-09: the skip link reaches all four tiers in one tap, no stop shows a
+  door before its kept sentence, and the `wendell.` host redirects to `/coaching`.
+- **Waiting on Wendell:** play it on his phone from #270's preview and merge if it works (his step from the pass,
+  due 2026-10-12). If he stops before the map, `cg-front-door` reopens (Challenger's third test).
