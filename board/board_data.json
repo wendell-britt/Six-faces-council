@@ -4755,6 +4755,68 @@
    "auto": true,
    "pos": "At the portal, before going in, the player names the charge, then the elemental channel, then the face. Only then does the chamber appear: one generic shape every time, with the charge setting the walls, the channel setting the light and the pool, and the face setting the gate. Inside, the five places start from what the player already named.",
    "why": "Your overrule of c3d-spot-shape: the chamber's feeling matches the energy brought in and isn't made until the charge, channel and face are known; body markers are portals. Source: bars-engine content/ontology-game/cave/DESIGN.md, pull request #265"
+  },
+  {
+   "id": "cg-five-moves",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "coaching game 1",
+   "auto": true,
+   "pos": "The coaching game's map is your five moves. Wake Up opens the ontology game's W.A.V.E., Open Up the five feelings and their jobs, Clean Up the 3-2-1, Grow Up the thirty-day challenge, and Show Up the founder track. A session with you is offered at every stop.",
+   "why": "Each service you already offer sits on one of the five moves, and the moves are already your vocabulary. Source: bars-engine content/coaching-game/6FACE_PASS1_2026-10-09.md"
+  },
+  {
+   "id": "cg-kept-sentence",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "coaching game 1",
+   "auto": true,
+   "pos": "Every stop gives the visitor a sentence to keep before it shows any door, free or paid.",
+   "why": "Your ruling of 3 October: the player leaves knowing how to apply what they learned. Source: 6FACE_PASS1_2026-10-09.md, Shaman"
+  },
+  {
+   "id": "cg-skip",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "coaching game 1",
+   "auto": true,
+   "pos": "A Skip to booking link on the game's first screen reaches all four Calendly tiers in one tap.",
+   "why": "Your ruling of 9 September: an offer is not a requirement. Tested in a phone-sized browser. Source: 6FACE_PASS1_2026-10-09.md"
+  },
+  {
+   "id": "cg-money",
+   "faces": [
+    "regent"
+   ],
+   "pass": "coaching game 1",
+   "auto": true,
+   "pos": "The game never picks a tier for the visitor and never changes a price. Every booking door goes to the same four tiers.",
+   "why": "Money is reserved to you, and your four tiers of 6 October stand as they are. Source: 6FACE_PASS1_2026-10-09.md, Regent"
+  },
+  {
+   "id": "cg-browser-only",
+   "faces": [
+    "architect"
+   ],
+   "pass": "coaching game 1",
+   "auto": true,
+   "pos": "What a visitor writes stays in their browser tab, with no account and no AI. A copy button is the only way out, and the map is written to paste into Calendly's notes box.",
+   "why": "The ontology game's record boundary (position oag-record) and the 3-2-1 demo already work this way. Source: 6FACE_PASS1_2026-10-09.md, Architect"
+  },
+  {
+   "id": "cg-subdomain",
+   "faces": [
+    "architect"
+   ],
+   "pass": "coaching game 1",
+   "auto": true,
+   "pos": "wendell.masteringallyship.com now sends visitors to the coaching game. It was already on the site and showed the home page.",
+   "why": "The address is on the bars-engine Vercel project (checked 9 October). The redirect ships with the pull request, so no Vercel setting changes. Source: 6FACE_PASS1_2026-10-09.md"
   }
  ],
  "questions": [
@@ -8424,6 +8486,29 @@
      "v": "query",
      "label": "The council fetches it",
      "c": "The menu route also takes its key in the web address, so a council session reads the menu without you pasting. The key shows in Vercel's request logs; it opens only this one read-only route."
+    }
+   ]
+  },
+  {
+   "id": "cg-front-door",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "coaching game 1",
+   "q": "Should the coaching game replace the top of your coaching page, or sit on its own page beside it? The council recommends making it the front door.",
+   "why_you": "It is your live booking page and a call about your visitors. The Challenger dissents from the other faces, and dissent goes to you.",
+   "not_before": "The coaching game is new today (your message of 9 October).",
+   "options": [
+    {
+     "v": "front",
+     "label": "The game is the front door (recommended)",
+     "c": "masteringallyship.com/coaching opens with the game. The tools, the four tiers and the crisis note follow it, and Skip to booking sits on the first screen. This is what is built."
+    },
+    {
+     "v": "beside",
+     "label": "The game on its own page",
+     "c": "The coaching page stays as it is with a Play your way in button, and the game lives at masteringallyship.com/coaching/play. Fewer visitors meet the game."
     }
    ]
   }
@@ -15973,6 +16058,30 @@
      "positions": [
       "pod-move-thumbnails",
       "pod2-description"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-coaching-game",
+   "name": "Coaching site as a game",
+   "repo": "bars-engine",
+   "element": "fire",
+   "record": "content/coaching-game/6FACE_PASS1_2026-10-09.md",
+   "intro": "It wants your coaching site to be a game that people play through to reach the help they need from you. The council built it on your five moves, with a sentence to keep at every stop and the booking always one tap away.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "cg-front-door"
+     ],
+     "positions": [
+      "cg-five-moves",
+      "cg-kept-sentence",
+      "cg-skip",
+      "cg-money",
+      "cg-browser-only",
+      "cg-subdomain"
      ]
     }
    ]
