@@ -303,3 +303,12 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower
   on his phone. If the board is slow, the Challenger's fallback is a second page inside the same artifact.
 - **Not in scope:** the Event Pipeline stays on its own page until a pass of its own (the Challenger's dissent).
+
+## Open on 2026-10-09, from the 3D build options thread (pass 2)
+
+- **The pass:** `council/passes/6FACE_PASS_3d-build2_2026-10-09.md`, ledger `2026-10-09-3d-build-pass2.json`. No Meshy;
+  the record showed the ontology game's body map already builds 3D by Blender script (`build_figure.py`, `figure.glb`).
+- **Waiting on him:** `c3d-path` (web inside the ontology game, recommended; web plus TRELLIS.2 daemons from his Mac;
+  or the Unreal desktop game). Five positions stand unless flipped: `c3d-meshy-alternatives`, `c3d-week` (replaces
+  `up-short-sessions`), `c3d-codex-rebuilds`, `c3d-cc0-only`, `c3d-phone-budget`.
+- **Next:** once he answers, day 1 of `c3d-week` starts in a new thread (chamber design and manifest, on Opus).
