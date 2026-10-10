@@ -1,0 +1,31 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T22:19:26.387Z",
+ "answers": {
+  "st-sprout-hook": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:19:05.930Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-marketer-card": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:19:15.690Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-mock-own-art": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:19:26.387Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  }
+ },
+ "steer": null,
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
