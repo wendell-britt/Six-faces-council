@@ -1,0 +1,85 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T14:24:09.383Z",
+ "answers": {
+  "ttc-story-part2": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:22:16.816Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2-act1-moments": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:22:26.948Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2-pruning-virelune": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:22:33.982Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2-ede-letter": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:22:43.904Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "st-beat-index-when": {
+   "kind": "question",
+   "choice": "now",
+   "savedAt": "2026-10-10T14:23:06.260Z",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "st-stay-json": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:23:15.209Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "st-first-match": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:23:25.341Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "st-when-registry": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:23:38.094Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "st-voice-coverage": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:23:48.978Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "st-line-ids-later": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:24:00.915Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "st-one-home": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:24:09.383Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/st-beat-index-when: Now (council lean)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
