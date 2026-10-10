@@ -15906,6 +15906,129 @@
      "challenger"
     ],
     "pass": "story tracking 2"
+   },
+   "bm-source": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:17:18.318Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-four-steps": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:17:27.504Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-dismiss-step-aside": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:17:38.506Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-decline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:17:48.990Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-cards-and-line": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:17:55.842Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-seven-rooms": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:18:01.343Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bmc-safety": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:18:10.479Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-no-fix": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:18:15.495Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-phone-first": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:19:06.752Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "steer": "I want it to be a fork of cave of lessons that adds chambers between cave hallways with a voice blocking the path",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-world-later": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:19:12.537Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-name-internal": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:19:20.288Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big mind cave 1"
    }
   },
   "questions": {
@@ -17506,6 +17629,52 @@
      "challenger"
     ],
     "pass": "story tracking 2"
+   },
+   "bm-center": {
+    "decision": "two-caves",
+    "label": "The child first, the rest as a second cave",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:16:26.008Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-guide": {
+    "decision": "integrated",
+    "label": "Your own integrated voice, met at the end",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:16:47.890Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-session": {
+    "decision": "own-pace",
+    "label": "Your own pace, saved at every chamber",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:16:54.345Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big mind cave 1"
+   },
+   "bm-first-player": {
+    "decision": "me",
+    "label": "Only you, kept on your device (council lean)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:17:04.765Z",
+    "record": "council/ledger/2026-10-10-pull-201920.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "big mind cave 1"
    }
   },
   "causes": {
