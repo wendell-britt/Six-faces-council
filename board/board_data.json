@@ -16604,6 +16604,41 @@
      "regent"
     ],
     "pass": "studio 1, round 2"
+   },
+   "st-sprout-hook": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:19:05.930Z",
+    "record": "council/ledger/2026-10-10-pull-221926.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "studio 2"
+   },
+   "st-marketer-card": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:19:15.690Z",
+    "record": "council/ledger/2026-10-10-pull-221926.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "studio 2"
+   },
+   "st-mock-own-art": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:19:26.387Z",
+    "record": "council/ledger/2026-10-10-pull-221926.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "studio 2"
    }
   },
   "questions": {
