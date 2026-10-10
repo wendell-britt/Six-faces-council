@@ -5421,6 +5421,28 @@
    "auto": true,
    "pos": "Step 1 on Part II of The Skilled Helper (pp. 69-214, the communication skills) is drafted: 69 helping skills across chapters 3 to 7, each with when it is right, when it is wrong, and when it is only partly right. A moment index ties the three timings the prototype turns on (say back a hurt, ask after a plain fact, offer ideas only after trust and when asked) to the skills behind them. This stands unless you flip it.",
    "why": "Your 'Let's do it' on extracting Part II. Read once from your PDF in The Library, one reader per chapter. Where the book does not say when a skill misfires, the file says so and marks any inference. Blocks such as resistance stay out for step 3. Source: sprout campaigns/skilled-helper/part-two/extract.yaml (sprout pull request #34)"
+  },
+  {
+   "id": "cave-daemon-wall",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "3D build, loop rebuild",
+   "auto": true,
+   "pos": "In the cave, \"Not yet\" keeps the daemon in the passage. There is no Continue and holding does not walk past it. Its encounter is offered instead, and only a later Yes opens the way. Skip stays, because every block offers one (cave-block-branch).",
+   "why": "Your note of 10 October: 'This type of blocker shouldn't be able to be moved past and there should be an encounter where they only stand aside after resolving the emergent issue presented by the daemon.' Built in bars-engine PR #265, cave/DESIGN.md, 'The loop rebuild'."
+  },
+  {
+   "id": "cave-face-branches",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "3D build, loop rebuild",
+   "auto": true,
+   "pos": "At the gate each of the six stones opens its own short branch, a loop out of the wall beside it and back to the stone. Walking it, the pane shows that face's question, and at its end the face asks it. All six are walked before the way out.",
+   "why": "Your note of 10 October: 'the 6 game masters aren't providing branches paths.' The questions are the game's own (game.jsx precisionQuestions, line 755), and your day-3 note asks for all six ('choosing all 6 faces when you're in the cave is very cool'). Built in bars-engine PR #265."
   }
  ],
  "questions": [
@@ -9308,6 +9330,34 @@
      "v": "steer",
      "label": "My own picks, I will name them in the box",
      "c": "Name anyone on the Outreach tab, or someone you know, and the council drafts those invitations."
+    }
+   ]
+  },
+  {
+   "id": "cave-daemon-encounter",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "3D build, loop rebuild",
+   "q": "What should resolve the daemon's encounter in the cave, after the player says it won't step aside? The council recommends digging into what it holds, which is built now.",
+   "why_you": "The record gives two answers. The ontology game says 'If a block won't release, you dig deeper into what's holding it' (game.jsx line 3380). The daemons-and-spirits pass says a spirit's need is the rite that answers a daemon's gate (ds-intersect). Which one the cave teaches is your call, and it changes what the encounter is.",
+   "not_before": "Until your note of 10 October, 'Not yet' let the player walk on, so the cave had no encounter to resolve.",
+   "options": [
+    {
+     "v": "dig",
+     "label": "Dig into what it holds (recommended, built)",
+     "c": "\"Work what it holds\" opens a loop of its own from the daemon's spot with the same block work in it. Coming back round, the daemon is asked again. It is the game's own rule and needs nothing new."
+    },
+    {
+     "v": "spirit-rite",
+     "label": "The spirit rite that answers it",
+     "c": "The encounter is the rite from ds-intersect: the corner move that answers that daemon. It ties the cave to Sprout's spirits, and each daemon needs its rite written into the cave first."
+    },
+    {
+     "v": "both",
+     "label": "Dig first, the rite at its story gate",
+     "c": "The cave digs, as built. The rite answers the same daemon later at its story gate in Sprout. The two games stay separate."
     }
    ]
   }
