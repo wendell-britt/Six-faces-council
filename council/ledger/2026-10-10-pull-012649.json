@@ -1,0 +1,16 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T01:26:49.098Z",
+ "answers": {
+  "ttc-extract-part2": {
+   "kind": "position",
+   "savedAt": "2026-10-10T01:26:49.098Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
