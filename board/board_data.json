@@ -16386,6 +16386,30 @@
      "sage"
     ],
     "pass": "studio 1"
+   },
+   "st-cap-games-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T21:00:04.278Z",
+    "record": "council/ledger/2026-10-10-pull-210046.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "studio 1, round 2"
+   },
+   "st-parked-sprout-inner": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T21:00:46.099Z",
+    "record": "council/ledger/2026-10-10-pull-210046.json (six-faces-council)",
+    "steer": "Skilled helper encounters and story tracking are higher priority",
+    "faces": [
+     "regent"
+    ],
+    "pass": "studio 1, round 2"
    }
   },
   "questions": {
@@ -18068,6 +18092,19 @@
      "regent"
     ],
     "pass": "studio 1"
+   },
+   "st-which-three": {
+    "decision": "root-sprout",
+    "label": "Root and the Sprout slice (council lean)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:59:52.183Z",
+    "record": "council/ledger/2026-10-10-pull-210046.json (six-faces-council)",
+    "steer": "Let’s do root and sprout slice since cave of lessons and big mind cave are both part of the same project- they are just forked",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "studio 1, round 2"
    }
   },
   "causes": {
