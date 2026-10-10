@@ -16220,6 +16220,123 @@
      "regent"
     ],
     "pass": "big mind cave 1"
+   },
+   "st-callsheets": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:46:40.048Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "studio 1"
+   },
+   "st-gates-table": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:47:06.229Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "studio 1"
+   },
+   "st-kill-line-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:47:22.983Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "studio 1"
+   },
+   "st-kegan-lens": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:47:30.036Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "studio 1"
+   },
+   "st-frameworks-cut": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:47:53.751Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "studio 1"
+   },
+   "st-roles": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:48:07.103Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "studio 1"
+   },
+   "st-marketer-drafts-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:48:11.636Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "studio 1"
+   },
+   "st-battle-receipt": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:48:19.591Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "studio 1"
+   },
+   "st-level-rule": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:48:31.693Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "studio 1"
+   },
+   "st-judge-spend": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:48:40.441Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "studio 1"
    }
   },
   "questions": {
@@ -17866,6 +17983,42 @@
      "regent"
     ],
     "pass": "big mind cave 1"
+   },
+   "st-wip": {
+    "decision": "three",
+    "label": "Three",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:46:08.397Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "studio 1"
+   },
+   "st-pilot": {
+    "decision": "big-mind",
+    "label": "The Big Mind cave (council lean)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:46:23.577Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "studio 1"
+   },
+   "st-marketing-start": {
+    "decision": "hook-now",
+    "label": "A private hook test now (council lean)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T20:46:32.832Z",
+    "record": "council/ledger/2026-10-10-pull-204840.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "studio 1"
    }
   },
   "causes": {
