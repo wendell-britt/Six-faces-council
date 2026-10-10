@@ -16956,6 +16956,18 @@
      "regent"
     ],
     "pass": "Pruner's track pass 2"
+   },
+   "p2n-octalysis-kegan": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:17:25.976Z",
+    "record": "council/ledger/2026-10-10-pull-231725.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "Pruner's track pass 2"
    }
   },
   "questions": {
