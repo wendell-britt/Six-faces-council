@@ -15143,6 +15143,18 @@
      "architect"
     ],
     "pass": "helper skills, playtest 1"
+   },
+   "ttc-extract-part2": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T01:26:49.098Z",
+    "record": "council/ledger/2026-10-10-pull-012649.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 1"
    }
   },
   "questions": {
