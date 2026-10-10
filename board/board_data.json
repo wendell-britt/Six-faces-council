@@ -15361,6 +15361,124 @@
      "sage"
     ],
     "pass": "3D build, loop rebuild"
+   },
+   "ttc-story-part2": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:22:16.816Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "p2-act1-moments": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:22:26.948Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "p2-pruning-virelune": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:22:33.982Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "p2-ede-letter": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:22:43.904Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "st-stay-json": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:23:15.209Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "story tracking 1"
+   },
+   "st-first-match": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:23:25.341Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "story tracking 1"
+   },
+   "st-when-registry": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:23:38.094Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "story tracking 1"
+   },
+   "st-voice-coverage": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:23:48.978Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "story tracking 1"
+   },
+   "st-line-ids-later": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:24:00.915Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "story tracking 1"
+   },
+   "st-one-home": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:24:09.383Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "story tracking 1"
    }
   },
   "questions": {
@@ -16937,6 +17055,18 @@
      "challenger"
     ],
     "pass": "3D build, loop rebuild"
+   },
+   "st-beat-index-when": {
+    "decision": "now",
+    "label": "Now (council lean)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:23:06.260Z",
+    "record": "council/ledger/2026-10-10-pull-142409.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "story tracking 1"
    }
   },
   "causes": {
