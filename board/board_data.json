@@ -5906,6 +5906,49 @@
    "auto": true,
    "pos": "No mock meant for release uses art whose source is unconfirmed. The next Sprout mock adds the settlement wall and a spirit rising from the wound, which all three readers found unexplained, and uses our own art where it can.",
    "why": "The farmhouse, well and crops in mock v1 are prototype art under sprout docs/license-audit.md, 'source confirmation deferred'. Source: council/passes/6FACE_PASS_studio2_2026-10-10.md (six-faces-council); /mnt/project-files/studio/hook-test/"
+  },
+  {
+   "id": "ttc-encounters-part2",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "Step 3 on Part II of The Skilled Helper is drafted, and you can tap through it on your phone: https://claude.ai/artifact/TCK5qcbT22Mcn1Q9bappfL. Every Part II misfire is one of the seven shared daemons in a new setting, with no new daemon. The Fixer carries most of them (advice before trust, a verdict, a cut made for someone). The Pruner's track is written as 15 moments, each with a right, a partial and a wrong line, and every person carries one element need. This stands unless you flip it, and step 4 (your play) starts from it.",
+   "why": "The Challenger's check: each daemon stays the shared daemon, with the book's variety inside its urge (lesson-challenger-shared-frame). One change from story.md's draft list: taking a challenge back after the elder flares is the Damaged Self, not the Victim, by the daemons' own aims, so the Victim moves to P7. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml (sprout pull request #38)"
+  },
+  {
+   "id": "p2-blocks-from-canon",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "Virelune's blocks come from the six sabotaging beliefs, not the book: the elder acts from 'I don't belong', Fenn from 'I'm not capable', the seed-keeper from 'I'm not ready', the grove-tenders from 'I'm not good enough', and the village meeting from 'I'm insignificant'. The player never sees a belief named, only the person acting from it.",
+   "why": "Interview round 6: blocks come from the emotional alchemy canon. The six are from mtgoa-manuscript SPEC_6_SABOTAGING_BELIEFS.md. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml, blocks (sprout pull request #38)"
+  },
+  {
+   "id": "p2-graft-spirit",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "The homeland vine stays a garden neighbor, as Decided. Part II's one spirit is the Graft, a Wood spirit that lives in the cutting Fenn grafts and offers a bond only if the cut was his own.",
+   "why": "story.md left open whether the vine is a spirit. Making it one would change Virelune's Decided gate, so the record answers it. A spirit born from the cut lets the forest answer the track's lesson the way Sprout's spirits answer everything. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml, spirits (sprout pull request #38)"
+  },
+  {
+   "id": "p2-guess-test",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "The guessing test passes on the third round: fresh players picked the right line by wording on 19 of 45 first picks (42%), against 58% and 62% on the first two rounds and the introduction's 64%. Two moments are still guessed by everyone (the word under the word, and the one missing fact). They stay as they are until your play says otherwise, because in both the right line is the only one that uses what the person just showed.",
+   "why": "The move's rule: if a fresh player can pick the right line from its wording, rewrite it. Round 3 rewrote the wrong lines as kind questions that are wrong for the moment, as hs-t1-context asked. Source: sprout campaigns/skilled-helper/part-two/guessing-test.md (sprout pull request #38)"
   }
  ],
  "questions": [
