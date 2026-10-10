@@ -5508,6 +5508,49 @@
    "auto": true,
    "pos": "Story lines live in story/scenes/. data/dialogue.json keeps the prototype's three NPCs until story work replaces them.",
    "why": "The dialogue file's own note: 'Story work will replace them.' Source: sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md (sprout, branch claude/project-thread-4189zp)"
+  },
+  {
+   "id": "ttc-story-part2",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Step 2 on Part II of The Skilled Helper is drafted. Part II splits along Sprout's acts: the listening half becomes the moments inside Ede's six Act I quests, and the challenge half becomes the Pruner's track, seven beats at Virelune beside the Wood village's Decided gate. This stands unless you flip it, and step 3 (encounters) starts from it.",
+   "why": "The book ties the stronger moves to earned trust and says they are not for beginners, so challenge comes after the hearing. The Diplomat checked it: Ede's words come from tending and the grove (the word under the word, a closed hand, two roads), and every move reaches the player first as a wall the person shows. Source: sprout campaigns/skilled-helper/part-two/story.md (sprout pull request #34)"
+  },
+  {
+   "id": "p2-act1-moments",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Part II's listening skills add no beats to Act I. They decide which tending line is right at which moment in quests 1 to 7: say back a hurt before asking anything, one question then a say-back, ask the person to tell it back when handing over the lamp, and offer roads only after they ask what you would do. Prototype 3's next build tags each line with its moment.",
+   "why": "hs-t1-context asked for lines that depend on the moment. Prototype 3's rerun found all three players missed the say-back after a hurt and picked a question about the future; the book gives the reason (a question before understanding tells them you want the story, not them). Source: part-two/story.md, Act I"
+  },
+  {
+   "id": "p2-pruning-virelune",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Challenge is pruning: a cut made so the plant keeps growing. Part II's challenge skills are taught at Virelune, which has forgotten its pruning rite. The track runs beside the Decided gate and never replaces it. Its last effect is that Fenn chooses the felling himself, so the cut is his and not the player's.",
+   "why": "design.md: Ede crossed as a child with Virelune's seed-keepers, and at the Fixer's gate she cuts a branch so that what is cut continues. Fenn felling the house-tree himself is already Decided. Source: part-two/story.md, Act II"
+  },
+  {
+   "id": "p2-ede-letter",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Ede stays the teacher in Act II through a letter she gives with the lit lamp at quest 7, opened at Virelune's gate, one short line per beat. If the letter reads as too convenient in playtest, the old seed-keeper who crossed with Ede's family teaches instead.",
+   "why": "Round 7: an existing character first, and the move keeps a text's teacher across sections. The settlement is frozen in Act II, so she cannot come in person. The Diplomat flags the letter as the part to test. Source: part-two/story.md, The teacher"
   }
  ],
  "questions": [
