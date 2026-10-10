@@ -49,13 +49,17 @@ Each step writes one file, and the next step reads that file instead of the book
 live with the campaign, in Sprout, under `campaigns/<text>/<section>/`.
 
 1. `extract.yaml`: milestones, lessons, the author's beliefs, the beliefs the author wants readers to take on, and
-   the named techniques. Each item cites its page and paraphrases; none quotes more than a line (round 8).
+   the named techniques. Each item cites its page and paraphrases; none quotes more than a line (round 8). Each
+   technique also lists its moments: when it is the right move, when it is wrong, and what a partial looks like
+   (see "Defaults from the first run"). Where the section only previews a technique, the extract says which later
+   section teaches it.
 2. `story.md`: the teacher NPC (an existing character first, round 7), who comes for help (villagers and spirits,
    round 3), the milestone track beside Sprout's (round 4), the holes Sprout's loop fills (round 5), and every asset
    the section adds or changes, including any new place (round 9).
 3. `encounters.yaml`: the text's translation table onto the shared daemons, with a new daemon only when none fits
    or as a subclass (round 4); the text's spirits; the blocking beliefs, taken from the emotional alchemy canon and
-   never from the text (round 6).
+   never from the text (round 6). Each encounter is written as moments, each with one right, one partial and one
+   wrong line, and each person carries one element need for the player to find.
 4. `playtest.md`: who played, which techniques were used in the game, and the BARs that prove them outside it
    (rounds 5 and 6).
 
@@ -84,6 +88,30 @@ What each checker asks:
 - **Challenger on step 3:** does every daemon in the table stay the shared daemon, with the text's variety inside
   it (`lesson-challenger-shared-frame`)?
 - **Regent on step 4:** did the test count technique used in the game and a BAR outside it, both (round 5)?
+
+## Defaults from the first run
+
+The first run (*The Skilled Helper*'s introduction, sprout `campaigns/skilled-helper/introduction/playtest.md`)
+took three prototypes and two of Wendell's playtests to get right. Each correction was about turning teaching into
+play, not about the book, so every later run starts from them:
+
+- **The moment decides the line, not its tone.** Every choice is decided by reading the moment. The wrong lines
+  sound as kind as the right one. If a fresh player can pick the right line from its wording alone, the step is
+  rewritten. Prototype 2 failed this: 65 of 69 first picks were guessed by tone.
+- **Three outcomes, not two.** Right moves the person forward. Partial is a good move that holds the ground (a
+  say-back of a plain fact, a question that hands the choice back), and the talk goes on. Wrong is the Epiphany
+  Bridge's wall: the person says what the line did, the player sees why, the teacher's line follows, and the player
+  tries again. Nobody loses a day or is sent back (Wendell, 2026-10-09: "getting it wrong gets you closer to the
+  goal without feeling punitive").
+- **Each person has a need to find.** Each person carries one of the five element needs. Every pick shows part of
+  it, and wrong picks show what it is not (the Spiritfarer note from his playtest). The person's state shows on
+  screen and in the item they hand over.
+- **Run the guessing test on the text, before any screen.** Step 3 runs it on `encounters.yaml` with three fresh
+  players on the smallest model (instinct, impatient fixer, answer hunter), and checks that the right line is not
+  usually the longest. It costs minutes, and it would have saved prototype 2.
+- **The when may be later in the book.** An introduction names skills; the rules for when to use them are often
+  taught later. Step 1 flags this, and step 2 fills the gap from general practice, labelled as such, until that
+  section runs.
 
 ## How Wendell validates
 
