@@ -1,0 +1,811 @@
+{
+ "date": "2026-10-10",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "studio",
+ "record": "council/passes/6FACE_PASS_studio1_2026-10-10.md",
+ "report": "/mnt/project-files/studio/studio-pipeline.md",
+ "called_by": "Wendell, Sprout Game project chat, 2026-10-10 20:26 UTC; thread started by the project coordinator",
+ "convened_by": "council",
+ "invoked_from": "claude-code",
+ "pulled_first": "main at 8168c5b carried the 20:19 UTC pull",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    7,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2
+   ],
+   "n": 1,
+   "name": "Unbroken",
+   "cn": "乾",
+   "pinyin": "qián",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Every line here sends, and the return has nowhere to land.",
+   "image": "☰ heaven beneath ☰ heaven. Six unbroken lines, and no place in the figure that yields.",
+   "situation": "Every line is pushing and every line is capable. This is the most able configuration in the set, and it has nowhere to put anything that arrives. The tradition walks a dragon up through six stages for exactly this reason — force has to learn timing, because force alone already knows everything else.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 13,
+    "name": "Fellowship",
+    "cn": "同人",
+    "pinyin": "tóng rén",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are walking the same way and neither of you has said so.",
+    "image": "☲ fire beneath ☰ heaven. Fire rising to meet the sky it is already heading for.",
+    "situation": "Two things going the same way, which is what makes company possible. The old text sets this in the open country, out where the group has no walls around it, and says the union works when it is available to anyone who arrives.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    9,
+    8,
+    6,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [
+    1,
+    3
+   ],
+   "n": 24,
+   "name": "Turning",
+   "cn": "復",
+   "pinyin": "fù",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "What came back is one line deep.",
+   "image": "☳ thunder beneath ☷ earth. One firm line has come back at the very bottom, under five yielding ones.",
+   "situation": "The solstice, the point where light starts back. The old text gives seven days as the period of return, says friends come and it is fine, and treats going out and coming in as equally safe. What has come back is one line deep, and it is the whole event.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 15,
+    "name": "Understatement",
+    "cn": "謙",
+    "pinyin": "qiān",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     0,
+     0
+    ],
+    "shows": "What you are underplaying had better be there.",
+    "image": "☶ mountain beneath ☷ earth. A mountain sitting below ground level.",
+    "situation": "Height in the low position. The figure has real elevation and puts it underneath, which is the only configuration in the set the tradition calls good in every line. What makes it work is that the height is genuine — a low place with nothing in it is just a low place.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    8,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 8,
+   "name": "Alliance",
+   "cn": "比",
+   "pinyin": "bǐ",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0
+   ],
+   "shows": "This is filling a hole you had before it started.",
+   "image": "☷ earth beneath ☵ water. Water lying on ground, finding every hollow and filling it.",
+   "situation": "Water on earth touches at every point along the surface. Union across the whole of it. The classical note is about timing — those who arrive late to a union already forming find the places taken.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    9,
+    8,
+    7
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 50,
+   "name": "The Cauldron",
+   "cn": "鼎",
+   "pinyin": "dǐng",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "This is being transformed, and you are carrying it by the handles.",
+   "image": "☴ wind beneath ☲ fire. Wood fed into flame underneath a standing vessel.",
+   "situation": "The bronze cauldron is a cooking pot and also the emblem of a legitimate house. Raw things go in and something else comes out. The old lines worry at the legs and the handles, because the vessel can be overturned, and what is inside goes with it.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 18,
+    "name": "Stale Air",
+    "cn": "蠱",
+    "pinyin": "gǔ",
+    "lines": [
+     0,
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "This went off from being left alone.",
+    "image": "☴ wind beneath ☶ mountain. Still air trapped under a mountain, going stale.",
+    "situation": "Something has spoiled through inattention rather than through damage. The character shows a bowl with worms in it: what happens to a thing left standing. The instruction is unusual in the set — it gives three days before and three days after, so the work of repair is bracketed by thinking about how it got here.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    8,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2
+   ],
+   "n": 10,
+   "name": "Footing",
+   "cn": "履",
+   "pinyin": "lǚ",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are stepping onto ground that matters, and the play is what makes it safe.",
+   "image": "☱ lake beneath ☰ heaven. A small soft thing placed directly under the largest hard one.",
+   "situation": "The old line is about treading on a tiger's tail and coming away whole, which happens through the quality of the step. Conduct is the entire content here. Where you put your weight, in what order, at what speed, decides whether the ground holds.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 25,
+    "name": "Candour",
+    "cn": "無妄",
+    "pinyin": "wú wàng",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "shows": "Your next move has no calculation in it, and that is the exposure.",
+    "image": "☳ thunder beneath ☰ heaven. Movement underneath the sky, going the sky's own way.",
+    "situation": "The name means without falsity, and the figure describes action with no calculation folded into it. The old text puts the unlooked-for misfortune here as well — the cow left tied that a passing traveller takes. Acting straight leaves you open to whatever arrives.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    6,
+    7,
+    8,
+    9
+   ],
+   "changing_lines": [
+    3,
+    6
+   ],
+   "n": 38,
+   "name": "Estrangement",
+   "cn": "睽",
+   "pinyin": "kuí",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shows": "You reached a conclusion from a distance.",
+   "image": "☱ lake beneath ☲ fire. Fire climbing and water settling, the two halves separating as they go.",
+   "situation": "Opposition by nature: two elements in one figure travelling opposite ways. The old text keeps its counsel small — in small matters, good fortune — and fills the lines with strange sightings. A pig covered in mud. A wagon dragged backwards. A stranger who turns out to be kin.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 34,
+    "name": "Vigour",
+    "cn": "大壯",
+    "pinyin": "dà zhuàng",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "Force is available here and unaimed.",
+    "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+    "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  }
+ ],
+ "daemon_casts": [
+  {
+   "agent": "daemon-player",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 42,
+   "name": "Windfall",
+   "cn": "益",
+   "pinyin": "yì",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "More is arriving than you put in.",
+   "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+   "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   }
+  },
+  {
+   "agent": "daemon-skeptic",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    9,
+    7,
+    7,
+    7,
+    8,
+    8
+   ],
+   "changing_lines": [
+    1
+   ],
+   "n": 34,
+   "name": "Vigour",
+   "cn": "大壯",
+   "pinyin": "dà zhuàng",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "Force is available here and unaimed.",
+   "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+   "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 32,
+    "name": "Endurance",
+    "cn": "恆",
+    "pinyin": "héng",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "This exact exchange has happened before.",
+    "image": "☴ wind beneath ☳ thunder. Wind underneath and thunder above, an arrangement that keeps recurring.",
+    "situation": "Duration. The old reading makes this a marriage: two things in fixed relative position, lasting because the position is stable. The counsel is to hold the course and keep moving, so what endures here is a motion that repeats.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  }
+ ],
+ "daemons": [
+  "council/daemons/reports/2026-10-10-studio1-player",
+  "council/daemons/reports/2026-10-10-studio1-skeptic"
+ ],
+ "unanimous": false,
+ "battle": "fr-studio",
+ "positions_posted": [
+  "st-callsheets",
+  "st-gates-table",
+  "st-kill-line-first",
+  "st-kegan-lens",
+  "st-frameworks-cut",
+  "st-roles",
+  "st-marketer-drafts-only",
+  "st-battle-receipt",
+  "st-level-rule",
+  "st-judge-spend"
+ ],
+ "questions_posted": [
+  "st-wip",
+  "st-pilot",
+  "st-marketing-start"
+ ],
+ "subagent_tokens": 153036,
+ "subagent_tokens_detail": {
+  "research": 71102,
+  "daemon-player": 45379,
+  "daemon-skeptic": 36555
+ },
+ "tests_due": "2026-10-17"
+}

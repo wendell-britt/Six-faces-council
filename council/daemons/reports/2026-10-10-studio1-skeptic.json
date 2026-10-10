@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-10",
+  "pass": "studio1",
+  "daemon": "skeptic",
+  "face": "challenger",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-10-studio1-skeptic.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Anthropic: \"multi-agent systems use about 15x more tokens than chats\" and tasks with \"many dependencies between agents are not a good fit\" [1]."
+      ],
+      "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Medium dropped Holacracy; it \"exert[ed] a small but persistent tax on our effectiveness and our sense of connection\" [2].",
+        "Zappos lost roughly 14 to 30% of staff by different counts [2]."
+      ],
+      "url": "https://fortune.com/2016/03/04/management-changes-at-medium/amp",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Teal: critics say its claims \"cannot be tested\" [3]."
+      ],
+      "url": "https://blog.p2pfoundation.net/a-critique-of-the-subtle-hierarchism-of-the-teal-organizations-concept-in-the-book-reinventing-organizations/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "Lean startup: \"practically no scientific evidence\" justifies the hype [4]."
+      ],
+      "url": "https://essay.utwente.nl/66221/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}

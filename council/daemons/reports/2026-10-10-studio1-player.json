@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-10",
+  "pass": "studio1",
+  "daemon": "player",
+  "face": "shaman",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-10-studio1-player.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}

@@ -5746,6 +5746,113 @@
    "auto": true,
    "pos": "'The Big Mind cave' is an internal name. Naming the process or its teacher on a player's screen waits for a board question.",
    "why": "reserved in council/faces.yaml. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "st-callsheets",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "Root and the council get call sheets of 2-4 KB that sessions read at the start instead of the full handoff. The handoff stays as the archive. Clerical work, run on Sonnet.",
+   "why": "Root's CLAUDE.md says to read HANDOFF.md first, and it is 122,828 bytes, about 30,000 tokens carried on every call. The council's is 42,200 bytes with 33 open sections. The short-sessions rule and the usage audit's first lever. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-gates-table",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "Seven studio gates become the studio's map: spark, hook, find the fun, slice, production, ship and show, live and learn. Film, games, the council's stages, lean and Kegan sit side by side in one table. Each gate ends with a greenlight row: continue, pivot or kill.",
+   "why": "The council's eight stages already run in film's order; the table adds no file format. Precedent: the ship stage's 'merges unless flipped'. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-kill-line-first",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "A gate's kill line is written before its work starts, and a killed project is retired with what it taught, kept readable.",
+   "why": "Supercell cancelled nine projects while it made Clash Royale and toasts each for what it taught (Paananen, BAFTA, 2016). The falsify gate and the Challenger's lesson of 2026-10-03. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-kegan-lens",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "Kegan's stages are a lens on what each gate asks, never a rating of you, a tester or an agent. There is no per-session Kegan check.",
+   "why": "faces.yaml standing: the levels are lenses, never a rating of a person. The Skeptic found no source on Kegan applied to agents. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-frameworks-cut",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "The studio takes single rules from holacracy, teal and lean, not their meetings. There are no governance or tactical meetings, no tension log and no separate advice process. The reach test is the advice process, and the board holds the tensions.",
+   "why": "Zappos lost 18% of its staff in the year it moved to holacracy (Fortune, 2016); Medium dropped it as 'a small but persistent tax'. 84% of spend is rereading context (audit 2026-10-04). Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-roles",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "Nine studio roles stand: Showrunner and Playtester (you), Braintrust (the faces), Producer, Builder, Clerk, Researcher, Marketer and Art director. Next, the Marketer and the Producer's cap and receipt get defined, and the Clerk gets a domain.",
+   "why": "Holacracy's role card (purpose, domain, accountabilities) is the one structure that transfers without meetings. No role owns the hook, devlog or store page today. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-marketer-drafts-only",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "The Marketer drafts the hook, the devlog and the store copy. Nothing is posted, bought or published without your answer on the board.",
+   "why": "Reserved: money, consent and release. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-battle-receipt",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "A closed battle gets a one-line receipt on the board: the question answered, the face that moved it, any level change, and the session's cost read from the platform after the work.",
+   "why": "The Player daemon: the board already is the meta-game, and cost should show in play. CLAUDE.md: name the session's cost in its last report. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-level-rule",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "An agent's limit rises by your ruling on a board row that its record proposes, not by code alone.",
+   "why": "The Diplomat's lesson of 2026-10-03: capacity rises 'as a function of how much we trust the agent'. Trust is yours to grant. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-judge-spend",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "studio 1",
+   "auto": true,
+   "pos": "The study week is judged by weekly spend per gate cleared, against the 4 October week. If process threads pass 20% of spend, trim.",
+   "why": "The usage audit of 2026-10-04 ($600-660 list that week). Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
   }
  ],
  "questions": [
@@ -9822,6 +9929,90 @@
      "v": "open",
      "label": "Players of your games",
      "c": "Widest reach; needs the consent, storage and naming questions settled first."
+    }
+   ]
+  },
+  {
+   "id": "st-wip",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "studio 1",
+   "q": "How many projects may be in production at once? The others park at their gate on the deferral ladder and cost nothing while parked.",
+   "why_you": "It is a choice of priority among your projects, and the record holds no ruling on it. Seven strands are open now (Sprout slice, Root, Skilled Helper, Big Mind cave, story tracking, Cave of Lessons, morning menu), with you as the playtester for all of them.",
+   "not_before": "No pass has looked at the studio as a whole before today.",
+   "options": [
+    {
+     "v": "two",
+     "label": "Two (council lean)",
+     "c": "Fewest rereads and playtests at once; five strands park with return dates."
+    },
+    {
+     "v": "three",
+     "label": "Three",
+     "c": "More moves forward each week; spend falls less."
+    },
+    {
+     "v": "none",
+     "label": "No cap",
+     "c": "Nothing parks; the spend pattern of 4 October continues."
+    }
+   ]
+  },
+  {
+   "id": "st-pilot",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "studio 1",
+   "q": "Which project runs the studio gates first, before gate cards go on the others?",
+   "why_you": "It is your preference among your projects, and it decides which strand gets the first gate card and kill line.",
+   "not_before": "The gates did not exist before this pass.",
+   "options": [
+    {
+     "v": "big-mind",
+     "label": "The Big Mind cave (council lean)",
+     "c": "It is at intake now, so gates 0 to 2 cost little and the cards can change a real decision."
+    },
+    {
+     "v": "skilled-helper",
+     "label": "The Skilled Helper encounters",
+     "c": "Part II step 3 is next; the gates would wrap work already scoped."
+    },
+    {
+     "v": "sprout-slice",
+     "label": "The Sprout slice",
+     "c": "The slice waits on your playtest; the gate card would frame that playtest and the hook."
+    }
+   ]
+  },
+  {
+   "id": "st-marketing-start",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "studio 1",
+   "q": "When does Sprout's marketing start?",
+   "why_you": "Release is reserved, and a store page costs money.",
+   "not_before": "No role owned marketing until this pass.",
+   "options": [
+    {
+     "v": "hook-now",
+     "label": "A private hook test now (council lean)",
+     "c": "The Marketer drafts one line and one capsule mock; nobody sees it until you say."
+    },
+    {
+     "v": "at-slice",
+     "label": "At the slice playtest",
+     "c": "The hook is tested beside the playtest; nothing is drafted before then."
+    },
+    {
+     "v": "after-lock",
+     "label": "After content lock",
+     "c": "Marketing waits until the game is content complete; no store page or devlog until then."
     }
    ]
   }
@@ -18823,6 +19014,36 @@
       "bm-phone-first",
       "bm-world-later",
       "bm-name-internal"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-studio",
+   "name": "The Studio",
+   "repo": "six-faces-council",
+   "element": "earth",
+   "record": "council/passes/6FACE_PASS_studio1_2026-10-10.md; /mnt/project-files/studio/",
+   "intro": "It wants a game studio of one person and agents, with a pipeline from spark to store page that crosses film, Kegan, holacracy, teal and lean, and plays as a meta-game while costing fewer tokens.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "st-wip",
+      "st-pilot",
+      "st-marketing-start"
+     ],
+     "positions": [
+      "st-callsheets",
+      "st-gates-table",
+      "st-kill-line-first",
+      "st-kegan-lens",
+      "st-frameworks-cut",
+      "st-roles",
+      "st-marketer-drafts-only",
+      "st-battle-receipt",
+      "st-level-rule",
+      "st-judge-spend"
      ]
     }
    ]
