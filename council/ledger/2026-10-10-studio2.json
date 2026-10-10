@@ -1,0 +1,666 @@
+{
+ "date": "2026-10-10",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "studio",
+ "record": "council/passes/6FACE_PASS_studio2_2026-10-10.md",
+ "report": "/mnt/project-files/studio/hook-test/hook-test.md",
+ "role_card": "council/roles/marketer.md",
+ "mock": "/mnt/project-files/studio/hook-test/sprout-capsule-mock-v1.png",
+ "called_by": "Wendell, Sprout Game project chat, 2026-10-10 21:49 UTC (\"Let’s do the studio and sprout at the same time\"); thread started by the project coordinator",
+ "convened_by": "council",
+ "invoked_from": "claude-code",
+ "pulled_first": "main at c2f8b0d carried the 21:00 UTC pull",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    7,
+    8,
+    9
+   ],
+   "changing_lines": [
+    6
+   ],
+   "n": 30,
+   "name": "Burning",
+   "cn": "離",
+   "pinyin": "lí",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "You keep saying the same true sentence, and it is consuming its subject.",
+   "image": "☲ fire beneath ☲ fire. A yielding line held between two firm ones, twice over, and the whole figure is light.",
+   "situation": "Fire exists by holding to what it burns, which is why the character carries both brightness and clinging. The old counsel is to care for the cow — the docile thing that keeps producing. Radiance here is maintained by feeding it.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 55,
+    "name": "Fullness",
+    "cn": "豐",
+    "pinyin": "fēng",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "This is at its peak and you are saving some of it.",
+    "image": "☲ fire beneath ☳ thunder. Light and movement together, both at the top of their range.",
+    "situation": "Abundance at the peak. The old text puts the sun at midday and says at once that what is full begins to wane, then fills the lines with eclipse — stars visible at noon, a curtain thick enough to show the polestar. The eclipse imagery sits inside the abundance itself.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    9,
+    7,
+    8,
+    7
+   ],
+   "changing_lines": [
+    3
+   ],
+   "n": 50,
+   "name": "The Cauldron",
+   "cn": "鼎",
+   "pinyin": "dǐng",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "This is being transformed, and you are carrying it by the handles.",
+   "image": "☴ wind beneath ☲ fire. Wood fed into flame underneath a standing vessel.",
+   "situation": "The bronze cauldron is a cooking pot and also the emblem of a legitimate house. Raw things go in and something else comes out. The old lines worry at the legs and the handles, because the vessel can be overturned, and what is inside goes with it.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 64,
+    "name": "Almost",
+    "cn": "未濟",
+    "pinyin": "wèi jì",
+    "lines": [
+     0,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "You are nearly there, and the last stride is where it gets wet.",
+    "image": "☵ water beneath ☲ fire. Every line sits in the wrong place, and the fire is climbing away from the water.",
+    "situation": "Before completion. Everything is out of position, and the figure is the last of the sixty-four, so the book ends one step short on purpose. The old image is a young fox crossing the ice and wetting its tail at the very end. Care is wanted exactly where the crossing looks finished.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    8,
+    6,
+    9
+   ],
+   "changing_lines": [
+    5,
+    6
+   ],
+   "n": 23,
+   "name": "Erosion",
+   "cn": "剝",
+   "pinyin": "bō",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "The ground under this is going and you have not said so.",
+   "image": "☷ earth beneath ☶ mountain. Five yielding lines have risen through the figure, leaving one firm line at the top.",
+   "situation": "A mountain wearing down into the ground it stands on. The process is slow, structural, and well advanced by the time anyone can see it. The counsel is to stay still and decline any move, because the season has already set its direction and takes whatever effort you spend against it.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 8,
+    "name": "Alliance",
+    "cn": "比",
+    "pinyin": "bǐ",
+    "lines": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "This is filling a hole you had before it started.",
+    "image": "☷ earth beneath ☵ water. Water lying on ground, finding every hollow and filling it.",
+    "situation": "Water on earth touches at every point along the surface. Union across the whole of it. The classical note is about timing — those who arrive late to a union already forming find the places taken.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    9,
+    7,
+    8,
+    8,
+    8,
+    7
+   ],
+   "changing_lines": [
+    1
+   ],
+   "n": 41,
+   "name": "Spending",
+   "cn": "損",
+   "pinyin": "sǔn",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "This has a price and you have yet to name it.",
+   "image": "☱ lake beneath ☶ mountain. The lake has been dug deeper so that the mountain can stand higher.",
+   "situation": "Something has been taken from the base and added to the top. The old text asks how the offering should be made and answers that two small bowls will do, since the sacrifice counts by sincerity. Decrease that you choose is a different event from decrease that happens to you.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 4,
+    "name": "Fog",
+    "cn": "蒙",
+    "pinyin": "méng",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    "shows": "You are guessing where you could ask.",
+    "image": "☵ water beneath ☶ mountain. A spring at the foot of a peak, with mist over all of it.",
+    "situation": "Something is genuinely obscured, and the obscured thing is the one looking. The frame is a young person who has yet to learn, and the instruction runs toward the asker: the teacher answers the first question honestly and goes quiet by the third, because a question put three times has stopped being a question.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    9,
+    6,
+    7,
+    7,
+    6
+   ],
+   "changing_lines": [
+    2,
+    3,
+    6
+   ],
+   "n": 47,
+   "name": "Drained",
+   "cn": "困",
+   "pinyin": "kùn",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The explaining continues and the basin is dry.",
+   "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+   "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 33,
+    "name": "Retreat",
+    "cn": "遯",
+    "pinyin": "dùn",
+    "lines": [
+     0,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "Leaving is available, and the timing decides what you keep.",
+    "image": "☶ mountain beneath ☰ heaven. Two yielding lines have come up underneath, and the firm lines are moving off.",
+    "situation": "Withdrawal in good order, at the moment that keeps it from becoming a rout. The old text calls it favourable and adds that the small is favourable too, which is the qualification: you keep something by leaving early with it.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    6,
+    7,
+    6,
+    6,
+    7,
+    7
+   ],
+   "changing_lines": [
+    1,
+    3,
+    4
+   ],
+   "n": 59,
+   "name": "Dispersal",
+   "cn": "渙",
+   "pinyin": "huàn",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "What you were holding rigid is coming apart.",
+   "image": "☵ water beneath ☴ wind. Wind crossing water and breaking the surface up.",
+   "situation": "Dissolution. Wind scatters what had frozen or clotted, and the old counsel sends the king to the temple and across the great water, so the scattering gets treated as an opening. What disperses here is rigidity.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 1,
+    "name": "Unbroken",
+    "cn": "乾",
+    "pinyin": "qián",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "Every line here sends, and the return has nowhere to land.",
+    "image": "☰ heaven beneath ☰ heaven. Six unbroken lines, and no place in the figure that yields.",
+    "situation": "Every line is pushing and every line is capable. This is the most able configuration in the set, and it has nowhere to put anything that arrives. The tradition walks a dragon up through six stages for exactly this reason — force has to learn timing, because force alone already knows everything else.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  }
+ ],
+ "daemons": [],
+ "cold_readers": {
+  "model": "haiku",
+  "count": 3,
+  "passed": "C",
+  "failed": [
+   "A",
+   "B"
+  ]
+ },
+ "unanimous": false,
+ "battle": "fr-studio",
+ "round": 3,
+ "positions_posted": [
+  "st-sprout-hook",
+  "st-marketer-card",
+  "st-mock-own-art"
+ ],
+ "questions_posted": [],
+ "subagent_tokens": 194937,
+ "subagent_tokens_detail": {
+  "cold-reader-A": 65387,
+  "cold-reader-B": 64783,
+  "cold-reader-C": 64767
+ },
+ "tests_due": "2026-10-17"
+}
