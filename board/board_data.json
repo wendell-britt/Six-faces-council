@@ -16872,6 +16872,90 @@
      "shaman"
     ],
     "pass": "texts to campaigns, step 3"
+   },
+   "p2n-talk-is-negotiation": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:16:19.496Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "Pruner's track pass 2"
+   },
+   "p2n-signature": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:16:21.430Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "Pruner's track pass 2"
+   },
+   "p2n-signature-ranks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:16:32.545Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "Pruner's track pass 2"
+   },
+   "p2n-teaching-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:16:38.233Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "Pruner's track pass 2"
+   },
+   "p2n-hints-mana": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:16:48.702Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "Pruner's track pass 2"
+   },
+   "p2n-heart-tiers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:17:02.554Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "Pruner's track pass 2"
+   },
+   "p2n-stakes-shown": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:17:12.089Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "Pruner's track pass 2"
    }
   },
   "questions": {
@@ -18591,6 +18675,19 @@
      "architect"
     ],
     "pass": "lead gen 1"
+   },
+   "p2n-stakes": {
+    "decision": "urge-walks",
+    "label": "The urge walks the night road",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:16:05.292Z",
+    "record": "council/ledger/2026-10-10-pull-231712.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "Pruner's track pass 2"
    }
   },
   "causes": {
