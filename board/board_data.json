@@ -6153,6 +6153,17 @@
    "auto": true,
    "pos": "The 3-2-1 chamber is built once and shared with the Big Mind cave.",
    "why": "Your steer on st-which-three ('both part of the same project- they are just forked') and your overrule of bm-phone-first ('chambers between cave hallways with a voice blocking the path'). Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
+  },
+  {
+   "id": "p2n-wrong-opens-fights",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "A wrong answer in a talk opens a fight in the world: the daemon whose line the player picked, and a spirit where the place has one. The fight stays open until the player gets that talk right, then closes. It is offered, never forced. This refines p2n-stakes C (the urge walks the night road) and is how Sprout's talks feed its fights. This stands unless you flip it.",
+   "why": "Your words in chat, 2026-10-10: ““Wrong answers” trigger available spirit and daemon fights in the world for the duration of the player getting it right in the relational encounter”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml, the road block (sprout pull request #38)"
   }
  ],
  "questions": [
