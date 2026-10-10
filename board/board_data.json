@@ -6100,6 +6100,59 @@
    "auto": true,
    "pos": "Against Octalysis, the track was thinnest on epic meaning and on development and accomplishment, the two White Hat drives that read as thinness. The pass fixes those first (Ede freed, the cave window, the Signature's ranks) and uses Black Hat drives lightly: scarcity as mana spent on hints, loss as what the table shows is at risk. Against Kegan, P1 to P3 ask the player to hold another's frame, P4 to P6 to hold their own view without needing it accepted, and P7 to let another's view change their help; no person is labelled with a stage. Service principles are named with their sources: Egan, Schein, Miller and Rollnick, Rosenberg, Fisher and Ury, Voss, Greenleaf and Mastering Allyship's three questions. This stands unless you flip it.",
    "why": "Your ask to align with Octalysis, emotional alchemy and service principles; design.md's Octalysis test for loot; st-kegan-lens (a lens on what a gate asks, never a rating). The books were cited from the council's reading; no page was opened in this pass. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "cave-321-player-writes",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "3D build, 3-2-1",
+   "auto": true,
+   "pos": "However the 3-2-1 looks in the cave, you write every line of it, the daemon's answers included. The daemon's figure may move, but it never speaks words the cave wrote.",
+   "why": "The chat being ported keeps one thread you write ('Answer as the block…' in Clean321Flow), bars-engine's rules keep a non-AI version first, and the Skeptic daemon found a scripted answer is the weaker arm. Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
+  },
+  {
+   "id": "cave-321-pronoun-places",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "3D build, 3-2-1",
+   "auto": true,
+   "pos": "If the scene stages the 3-2-1, each step is a place. Face it from across the chamber. Talk to it face to face, with the camera swinging shoulders as the voice switches. Be it from where the daemon stood, looking back, then step back to your own place. A Step back button to the far place is always there; it pauses and never skips.",
+   "why": "Gendlin's first step of focusing keeps 'a little space between you and that' (the Emotional Body daemon's quote), and your ruling on cave-daemon-wall: no skip at a daemon. Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
+  },
+  {
+   "id": "cave-321-not-breath-count",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "3D build, 3-2-1",
+   "auto": true,
+   "pos": "The cave does not use bars-engine's 321-shadow-process.json. Its Three, Two and One are breath counts and never say it, you or I.",
+   "why": "The shift from it to you to I is the practice. That file calls itself 'a structured felt-sense discharge' and shows how a felt version loses the voices. Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
+  },
+  {
+   "id": "cave-321-damaged-self-ask",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "3D build, 3-2-1",
+   "auto": true,
+   "pos": "Before Be it with the Damaged Self, the cave asks first: continue, rest, or go back up.",
+   "why": "bmc-safety already stands for the Big Mind cave, the fork of this one. Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
+  },
+  {
+   "id": "cave-321-one-build",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "3D build, 3-2-1",
+   "auto": true,
+   "pos": "The 3-2-1 chamber is built once and shared with the Big Mind cave.",
+   "why": "Your steer on st-which-three ('both part of the same project- they are just forked') and your overrule of bm-phone-first ('chambers between cave hallways with a voice blocking the path'). Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
   }
  ],
  "questions": [
@@ -10373,6 +10426,35 @@
      "v": "urge-walks",
      "label": "C. The urge walks the night road (recommended)",
      "c": "The daemon whose line the player picked waits on the Virelune road that night as a charge. The player may take the fight or decline it. Taking it costs HP and mana, and integrating the urge is how Hear under and Ripe are earned. Declining costs nothing, and the urge shows on the person's portrait next morning. No day is lost."
+    }
+   ]
+  },
+  {
+   "id": "cave-321-form",
+   "faces": [
+    "architect",
+    "shaman",
+    "challenger"
+   ],
+   "pass": "3D build, 3-2-1",
+   "q": "What should working a daemon feel like in the cave, once the chat port lands? The council recommends the chat inside a staged scene.",
+   "why_you": "Your note joins the two halves with 'OR', the faces split three ways (the Shaman leans wordless, the Challenger leans chat only, the Architect and Diplomat take the staged chat), and the record holds no ruling on how much the cave carries without words. It decides what gets built after the chat port.",
+   "not_before": "Until your note of 10 October, 23:14, the 3-2-1 was three boxes and nobody had asked for it to be felt in the scene. The analysis is in council/passes/6FACE_PASS_3d-build-321_2026-10-10.md.",
+   "options": [
+    {
+     "v": "chat",
+     "label": "The chat only",
+     "c": "The ported chat in the pane, as it is being built now. Nothing more is built for the 3-2-1, and the scene stays still while you write."
+    },
+    {
+     "v": "staged",
+     "label": "The chat in a staged scene (recommended)",
+     "c": "The same thread you write, while the camera and figure move: across the chamber for Face it, face to face for Talk to it, standing in its place for Be it, then a step back. You test it against the chat on your phone by 10-17, and it stays only if the charge drops as far and you write no less."
+    },
+    {
+     "v": "felt-walk",
+     "label": "A felt walk, words after",
+     "c": "You move from it to you to I with the breath and the figure and no writing, and the chat is offered after for words. Closest to the felt sense; the council warns it can drift into breaths, as bars-engine's breath-count 3-2-1 did."
     }
    ]
   }

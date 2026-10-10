@@ -27,6 +27,8 @@ sense of doing a 321 in the game". Today the daemon's "Talk with it" is three te
 2. **Then a council pass** (Opus thread) on the other path, an encounter that makes the 3-2-1 felt in the cave: the
    daemon's figure answering in the scene as the player moves from it to you to I. The choice between keeping the chat,
    the felt encounter, or both goes on the Council Board after the reach test.
+   Run 2026-10-10: `council/passes/6FACE_PASS_3d-build-321_2026-10-10.md`, question `cave-321-form` and five positions on
+   the board; open items in `council/callsheets/cave-of-lessons.md`.
 
 ## Open on 2026-10-09, Cave of Lessons pass 3 (avatar, labyrinth, breath, block branches)
 
