@@ -5635,6 +5635,117 @@
    "auto": true,
    "pos": "A test runs before the shared syntax replaces the mirror's: re-render all ten scenes from derived flags and check every mirror player hears the same text.",
    "why": "Pass three's rule that a check must show it earns its keep; the research rests on search summaries, not opened pages. Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "bm-source",
+   "faces": [
+    "architect"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "The transcript gives the voice order; your facilitator notes (BigMind_Compiled.txt) give each voice's tells and the translator move.",
+   "why": "Both are your Library files; the text-to-campaign move reads the text once at step 1. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-four-steps",
+   "faces": [
+    "architect"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "The run follows the Skilled Helper's four steps, but each answer is judged in voice or out of voice, not right or wrong, because this text has no right answers.",
+   "why": "council/moves/text-to-campaign.md Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-dismiss-step-aside",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "Dismissing a part that is secretly speaking thanks it and asks it to wait. It comes back later in the run; nothing is deleted.",
+   "why": "Transcript 00:34: every voice has a right to be heard; disowned voices end up in the basement. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-decline",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "Declining to let a voice speak is a full move. The voice waits and nothing is marked skipped.",
+   "why": "Transcript 01:03, where the self keeps the Victim back and the facilitator accepts; the Protector daemon. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-cards-and-line",
+   "faces": [
+    "architect"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "Each voice offers the workshop's group answers as cards, plus an open line for your own words. Only lines you keep are stored.",
+   "why": "Your mm-raw ruling for Tap the Vein, 2026-10-09. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-seven-rooms",
+   "faces": [
+    "architect"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "Seven guardian chambers (Protector, Controller, Skeptic, Fear, Victim, Damaged Self, Fixer) come before the centre.",
+   "why": "Your dungeon rule of 2026-10-03: length is set by the encounters before the centre. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bmc-safety",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "A check-in before the Damaged Self and before the child (continue, rest, go back up); plain words that this is a game, not therapy, with a crisis resource; keep or forget per voice; delete-all; world spawning opt-in, with the Damaged Self's words left out by default.",
+   "why": "Transcript 00:12 to 00:14 (the ego keeps its choice); the Protector daemon. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-no-fix",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "The cave never offers to fix the Damaged Self; compassion holds it instead.",
+   "why": "Transcript 01:09 to 01:12 and 02:07 to 02:08. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-phone-first",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "The first build is a text tap-through on your phone (foundation, seven guardians, the child), then the Cave of Lessons in 3D if it works.",
+   "why": "The Skilled Helper's paper prototypes came before any build; your phone-link rule of 2026-10-09. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-world-later",
+   "faces": [
+    "sage"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "Spawning a world from the data is a later strand. The first build only saves a seed record of the lines you keep.",
+   "why": "Your words: 'The first step is to be able to model the big mind experience'. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
+  },
+  {
+   "id": "bm-name-internal",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big mind cave 1",
+   "auto": true,
+   "pos": "'The Big Mind cave' is an internal name. Naming the process or its teacher on a player's screen waits for a board question.",
+   "why": "reserved in council/faces.yaml. Source: sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md"
   }
  ],
  "questions": [
@@ -9601,6 +9712,116 @@
      "v": "journal",
      "label": "A full quest journal",
      "c": "Every quest with its steps, like Stardew's quest log. It gives the most guidance and takes the most screen."
+    }
+   ]
+  },
+  {
+   "id": "bm-center",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "big mind cave 1",
+   "q": "Where should the cave journey end: at the child, or all the way to Big Mind?",
+   "why_you": "You named the vulnerable child and the player self as the centre. The transcript puts the child at the middle and peaks later, at the Way and Big Mind, then returns home as the integrated human being. Only you know which experience you are after, and it about triples the build.",
+   "not_before": "No pass has read this text before today.",
+   "options": [
+    {
+     "v": "center",
+     "label": "End at the child and the player self (Shaman)",
+     "c": "Seven guardian chambers, then the centre. Smallest build; gives the felt centre, not the transcendent voices."
+    },
+    {
+     "v": "full",
+     "label": "The full arc (Challenger)",
+     "c": "Down to the child, up through the seekers to the Way, Big Mind and Big Heart, and home as the integrated voice. The whole workshop; about three times the writing."
+    },
+    {
+     "v": "two-caves",
+     "label": "The child first, the rest as a second cave",
+     "c": "The first cave ends at the centre; a second, unlocked later, climbs to Big Mind. Ships small first and keeps the full arc."
+    }
+   ]
+  },
+  {
+   "id": "bm-guide",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "big mind cave 1",
+   "q": "Who asks each voice 'May I speak to...?' in the cave?",
+   "why_you": "The facilitator is the whole bridge in the workshop, and the guide's tone sets every chamber. Inside Sprout the rule is an existing character first, but you want this in several games' character creation, where a Sprout teacher does not travel.",
+   "not_before": "The text-to-campaign move assumed a Sprout teacher; this is the first text meant for more than one game.",
+   "options": [
+    {
+     "v": "cave",
+     "label": "The cave's own voice (council lean)",
+     "c": "A voice with no face, like the faceless avatar; travels to any game."
+    },
+    {
+     "v": "teacher",
+     "label": "A Sprout teacher",
+     "c": "Warm and known, but tied to Sprout; other games need their own guide."
+    },
+    {
+     "v": "integrated",
+     "label": "Your own integrated voice, met at the end",
+     "c": "The guide turns out to be the player's integrated self; a reveal, harder to write."
+    }
+   ]
+  },
+  {
+   "id": "bm-session",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big mind cave 1",
+   "q": "Should the cave be played in one sitting, or across several?",
+   "why_you": "The workshop is one sitting of over two hours. How you want to travel it is your preference, and it changes saving and where the check-ins go.",
+   "not_before": "No pass has read this text before today.",
+   "options": [
+    {
+     "v": "one",
+     "label": "One sitting",
+     "c": "The whole first build in one go, like the workshop; strongest arc, longest session."
+    },
+    {
+     "v": "movements",
+     "label": "One movement per session",
+     "c": "Guardians one day, the centre the next; easier to fit in, the arc stretched over days."
+    },
+    {
+     "v": "own-pace",
+     "label": "Your own pace, saved at every chamber",
+     "c": "Stop anywhere and come back; most flexible, the least like the workshop."
+    }
+   ]
+  },
+  {
+   "id": "bm-first-player",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "big mind cave 1",
+   "q": "Who plays the Big Mind cave first, and where are their answers kept?",
+   "why_you": "Consent and release are reserved for you, and the answer decides what is stored and where. The material is personal (the Damaged Self, the child).",
+   "not_before": "No pass has read this text before today.",
+   "options": [
+    {
+     "v": "me",
+     "label": "Only you, kept on your device (council lean)",
+     "c": "Your own run first; nothing leaves your phone."
+    },
+    {
+     "v": "named",
+     "label": "You and a few testers you name",
+     "c": "Earlier signal on whether it works for others; needs a consent screen first."
+    },
+    {
+     "v": "open",
+     "label": "Players of your games",
+     "c": "Widest reach; needs the consent, storage and naming questions settled first."
     }
    ]
   }
@@ -18401,6 +18622,38 @@
       "sg-items-read-as-held",
       "sg-review-by-playing",
       "sg-flag-fit"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-big-mind-cave",
+   "name": "The Big Mind Cave",
+   "repo": "sprout",
+   "element": "water",
+   "record": "sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md; /mnt/project-files/big-mind/",
+   "intro": "It wants a cave journey to the centre of the self, built from the Big Mind transcript the way the Skilled Helper became a campaign: guardians to meet, a part secretly speaking to find and set aside, the child and the player self at the centre, and later a world spawned from what the player keeps.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "bm-center",
+      "bm-guide",
+      "bm-session",
+      "bm-first-player"
+     ],
+     "positions": [
+      "bm-source",
+      "bm-four-steps",
+      "bm-dismiss-step-aside",
+      "bm-decline",
+      "bm-cards-and-line",
+      "bm-seven-rooms",
+      "bmc-safety",
+      "bm-no-fix",
+      "bm-phone-first",
+      "bm-world-later",
+      "bm-name-internal"
      ]
     }
    ]
