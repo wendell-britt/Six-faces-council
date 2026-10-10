@@ -5443,6 +5443,71 @@
    "auto": true,
    "pos": "At the gate each of the six stones opens its own short branch, a loop out of the wall beside it and back to the stone. Walking it, the pane shows that face's question, and at its end the face asks it. All six are walked before the way out.",
    "why": "Your note of 10 October: 'the 6 game masters aren't providing branches paths.' The questions are the game's own (game.jsx precisionQuestions, line 755), and your day-3 note asks for all six ('choosing all 6 faces when you're in the cave is very cool'). Built in bars-engine PR #265."
+  },
+  {
+   "id": "st-stay-json",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "story tracking 1",
+   "auto": true,
+   "pos": "Story scenes stay JSON files checked by story/mirror.mjs. They do not move to articy:draft, Ink or Yarn Spinner.",
+   "why": "The story pipeline chose JSON scenes with scripted checks (step 6), and you called the mirror output 'Excellent'. The JSON already has the shape those tools offer. Source: sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md (sprout, branch claude/project-thread-4189zp)"
+  },
+  {
+   "id": "st-first-match",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "story tracking 1",
+   "auto": true,
+   "pos": "The mirror keeps choosing the first voice that matches, in file order, and a test fails any beat whose default voice is not last. The research doc is corrected where it said the mirror picks the most specific voice, as Valve's system does.",
+   "why": "The pipeline already says voices 'are tried in order'; mirror.mjs line 52 confirms it. Source: sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md (sprout, branch claude/project-thread-4189zp)"
+  },
+  {
+   "id": "st-when-registry",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "story tracking 1",
+   "auto": true,
+   "pos": "The mirror report fails on any condition a scene names that the reading cannot produce, such as a misspelled 'watr'.",
+   "why": "Today a typo silently falls to the default voice and the report still passes (found by the Skeptic daemon, confirmed in mirror.mjs). The check only enforces the reading you approved. Source: sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md (sprout, branch claude/project-thread-4189zp)"
+  },
+  {
+   "id": "st-voice-coverage",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "story tracking 1",
+   "auto": true,
+   "pos": "The mirror report counts which voices each mirror player reaches and lists any voice no player ever hears, at the top of the report you already read.",
+   "why": "It extends sm-report-gate, which stands. The Player daemon: your first question about a portrait is whether anyone is missing from it. Source: sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md (sprout, branch claude/project-thread-4189zp)"
+  },
+  {
+   "id": "st-line-ids-later",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "story tracking 1",
+   "auto": true,
+   "pos": "Lines get permanent ids before the first recording, translation or playtest note that cites one line, and not before.",
+   "why": "Nothing is recorded or translated yet, so the trigger is a fact the record will show. Source: sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md (sprout, branch claude/project-thread-4189zp)"
+  },
+  {
+   "id": "st-one-home",
+   "faces": [
+    "architect"
+   ],
+   "pass": "story tracking 1",
+   "auto": true,
+   "pos": "Story lines live in story/scenes/. data/dialogue.json keeps the prototype's three NPCs until story work replaces them.",
+   "why": "The dialogue file's own note: 'Story work will replace them.' Source: sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md (sprout, branch claude/project-thread-4189zp)"
   }
  ],
  "questions": [
@@ -9358,6 +9423,29 @@
      "v": "both",
      "label": "Dig first, the rite at its story gate",
      "c": "The cave digs, as built. The rite answers the same daemon later at its story gate in Sprout. The two games stay separate."
+    }
+   ]
+  },
+  {
+   "id": "st-beat-index-when",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "story tracking 1",
+   "q": "When should the story get a beat index, one list of the 19 milestones showing which scenes carry each, its status, and whether it waits on you? The council leans to now.",
+   "why_you": "It turns on how you want to see your own review queue, a preference the record does not hold. The faces split: the Architect, Regent and Diplomat would build it now; the Challenger would wait.",
+   "not_before": "No pass had looked at how story beats are tracked until your research ask of 10 October.",
+   "options": [
+    {
+     "v": "now",
+     "label": "Now (council lean)",
+     "c": "One small file, and the mirror report prints how many milestones wait on you at the top. You see the queue from the start."
+    },
+    {
+     "v": "later",
+     "label": "After about six more milestones",
+     "c": "Nothing is built until the scene folder is big enough to need it. Until then a file list answers 'where is milestone N?'."
     }
    ]
   }
@@ -17882,6 +17970,30 @@
       "promo-reddit-listen",
       "promo-facebook-personal",
       "promo-monday-numbers"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-story-tracking",
+   "name": "Tracking the Story",
+   "repo": "sprout",
+   "element": "metal",
+   "record": "sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md; /mnt/project-files/story/story-management-research.md",
+   "intro": "It wants the story's beats written and tracked the way studios do, sized for Sprout: the mirror's scenes checked for silent misfires, voices nobody hears made visible, and a queue of what waits on you.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "st-beat-index-when"
+     ],
+     "positions": [
+      "st-stay-json",
+      "st-first-match",
+      "st-when-registry",
+      "st-voice-coverage",
+      "st-line-ids-later",
+      "st-one-home"
      ]
     }
    ]
