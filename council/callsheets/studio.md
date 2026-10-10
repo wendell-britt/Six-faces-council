@@ -2,9 +2,11 @@
 # Studio pipeline (study week)
 
 ## Next
-Done 2026-10-10: the Root call sheet (root-game PR #14) and these council sheets. Next, each its own thread: the Big Mind cave
-through gates 0 to 2 as the pilot (Opus); the Marketer role card and Sprout's private hook test, one line and one capsule
-mock, shown to no one (`st-marketer-drafts-only`); then the retro on 2026-10-17 against the pass's three tests.
+Done 2026-10-10 (studio pass 2): the Marketer role card (`council/roles/marketer.md`) and Sprout's private hook test.
+Line C passed its kill line; mock v1 and results are in `/mnt/project-files/studio/hook-test/`. Board battle `fr-studio`
+round 3 holds three positions and no questions. Next, each its own thread: the cave pilot through gates 0 to 2 (Opus);
+Sprout mock v2 with the settlement wall and a spirit rising from the wound, then a second cold round (Sonnet, test due
+2026-10-17); the retro on 2026-10-17 against both passes' tests.
 
 ## Waiting on
 Nothing. Round 2 answered 2026-10-10 21:00 (ledger `2026-10-10-pull-210046.json`):
@@ -16,7 +18,9 @@ Nothing. Round 2 answered 2026-10-10 21:00 (ledger `2026-10-10-pull-210046.json`
 - `council/passes/6FACE_PASS_studio1_2026-10-10.md`
 - `/mnt/project-files/studio/studio-pipeline.md`
 - ledger `2026-10-10-pull-204840.json`
-- Board battle `fr-studio` round 1.
+- Board battle `fr-studio` rounds 1 to 3.
+- `council/passes/6FACE_PASS_studio2_2026-10-10.md`, `council/roles/marketer.md`, ledger `2026-10-10-studio2.json`.
+- `/mnt/project-files/studio/hook-test/` (hook test, mock v1, `capsule.py`).
 
 ## Archive
 HANDOFF.md: "Open on 2026-10-10, studio pipeline (study week)"
