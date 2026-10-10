@@ -472,3 +472,12 @@ session opens at about 102,000 tokens before doing any work (first_request_input
   to `cf-moves-after`), none a question. Open: nobody has clicked through the game's full cycle to its new "Take this
   to coaching" button; the next session that touches the game should. PR 271 merges into PR 270, which still waits on
   Wendell's phone play-through (due 2026-10-12).
+
+## Open on 2026-10-10, from the Skilled Helper Part II thread
+
+- **Done:** Part II (pp. 69-214) step 1 and step 2, sprout #34 (draft): `campaigns/skilled-helper/part-two/extract.yaml`,
+  `chapters/ch3.yaml` to `ch7.yaml` (69 skills, right/wrong/partial each) and `story.md`. Positions stand:
+  `ttc-extract-part2`, `ttc-story-part2`, `p2-act1-moments`, `p2-pruning-virelune`, `p2-ede-letter`.
+- **Next:** prototype 3's next build tags each tending line with its moment (`p2-act1-moments`). Step 3
+  (`encounters.yaml`) for Part II can start from `part-two/story.md`. The book PDF is on Wendell's Mac under
+  The Library/08 Source Library/Personal Development and Coaching/PDF Sources.
