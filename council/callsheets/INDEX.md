@@ -12,7 +12,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 - [coaching-site](coaching-site.md), 2026-10-09: Wendell plays #270 on his phone by 10-12, then merge.
 - [podcast](podcast.md), 2026-10-09: ep 2 title and thumbnail, Spotify link, clips, outreach sends.
 - [flirtcraft](flirtcraft.md), 2026-10-09: finish own database and sign-in before promoting; loop fixes PR.
-- [skilled-helper](skilled-helper.md), 2026-10-10: Part II step 4 (his phone play of the Pruner's track, #38); intro prototype 3 play.
+- [skilled-helper](skilled-helper.md), 2026-10-10: his answer to `p2n-stakes`, then pass 2 items 9-10; his phone play of the Pruner's track (#38).
 - [session-cost](session-cost.md), 2026-10-08: measure slim board read; Wendell ticks plugins-trim.
 - [wave-battle](wave-battle.md), 2026-10-06: build sprout #25 taught fight with Yun and English moves.
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.
