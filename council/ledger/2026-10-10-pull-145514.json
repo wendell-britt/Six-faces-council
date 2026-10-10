@@ -1,0 +1,77 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T14:55:14.098Z",
+ "answers": {
+  "sg-story-list": {
+   "kind": "question",
+   "choice": "diary",
+   "savedAt": "2026-10-10T14:51:51.626Z",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-talk-and-items": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:53:11.919Z",
+   "status": "overrule",
+   "steer": "I can imagine story beats that happen without an item changing hands. I think items are the main way but I’m\nThinking of tasks within a quest may not always be connected with items changing hands ",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-five-triggers": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:53:40.428Z",
+   "status": "overrule",
+   "steer": "Mail\nAnd tile touch should be included ",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-one-syntax": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:53:51.650Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-state-store": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:54:06.032Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-choices-in-talk": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:54:34.641Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-items-read-as-held": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:54:54.473Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-review-by-playing": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:55:05.307Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  },
+  "sg-flag-fit": {
+   "kind": "position",
+   "savedAt": "2026-10-10T14:55:14.098Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-story-tracking"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/sg-story-list: The diary only (Challenger)",
+  "positions/sg-talk-and-items: Overruled (steer: \"I can imagine story beats that happen without an item changing hands. I think items are the main way but I’m\nThinking of tasks within a quest may not always be connected with items changing hands\")",
+  "positions/sg-five-triggers: Overruled (steer: \"Mail\nAnd tile touch should be included\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
