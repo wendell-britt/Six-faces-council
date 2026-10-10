@@ -1,0 +1,807 @@
+{
+ "date": "2026-10-10",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "3D build",
+ "record": "council/passes/6FACE_PASS_3d-build-321_2026-10-10.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's note in the cave thread, 2026-10-10 23:14 UTC; thread started by the project coordinator from HANDOFF.md (commit 7444e21)",
+ "pulled_first": "council/ledger/2026-10-10-pull-231712.json",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    7,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 11,
+   "name": "Mingling",
+   "cn": "泰",
+   "pinyin": "tài",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "shows": "This is working, and you should know why.",
+   "image": "☰ heaven beneath ☷ earth. Heaven has taken the lower place, so its rising and earth's settling cross in the middle.",
+   "situation": "The two halves face each other. Heaven below sends its force up through earth above, which comes down to receive it, and the exchange runs in both directions at once. The tradition treats this as the most fortunate arrangement in the set and immediately warns that flat ground turns to slope.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    6,
+    6,
+    8,
+    7,
+    8,
+    7
+   ],
+   "changing_lines": [
+    1,
+    2
+   ],
+   "n": 35,
+   "name": "Sunrise",
+   "cn": "晉",
+   "pinyin": "jìn",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shows": "This is becoming visible faster than you planned.",
+   "image": "☷ earth beneath ☲ fire. The sun clearing the horizon, with open ground under it.",
+   "situation": "Advance, and the light getting higher. The old text gives a prince horses in quantity and three audiences in a single day, so the figure is about recognition arriving quickly. Everything in it is going up.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 38,
+    "name": "Estrangement",
+    "cn": "睽",
+    "pinyin": "kuí",
+    "lines": [
+     1,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "You reached a conclusion from a distance.",
+    "image": "☱ lake beneath ☲ fire. Fire climbing and water settling, the two halves separating as they go.",
+    "situation": "Opposition by nature: two elements in one figure travelling opposite ways. The old text keeps its counsel small — in small matters, good fortune — and fills the lines with strange sightings. A pig covered in mud. A wagon dragged backwards. A stranger who turns out to be kin.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    7,
+    9,
+    6
+   ],
+   "changing_lines": [
+    5,
+    6
+   ],
+   "n": 58,
+   "name": "Banter",
+   "cn": "兌",
+   "pinyin": "duì",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The exchange is already the whole of it.",
+   "image": "☱ lake beneath ☱ lake. An open line at the top of each half, one above the other: two mouths.",
+   "situation": "Joy, and specifically joy that gets exchanged. Two lakes side by side feed each other, and the old commentary makes learning the model — friends talking and practising together, the form of pleasure that keeps producing more of itself. The yielding line sits on the outside, so the openness is at the surface.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 38,
+    "name": "Estrangement",
+    "cn": "睽",
+    "pinyin": "kuí",
+    "lines": [
+     1,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "You reached a conclusion from a distance.",
+    "image": "☱ lake beneath ☲ fire. Fire climbing and water settling, the two halves separating as they go.",
+    "situation": "Opposition by nature: two elements in one figure travelling opposite ways. The old text keeps its counsel small — in small matters, good fortune — and fills the lines with strange sightings. A pig covered in mud. A wagon dragged backwards. A stranger who turns out to be kin.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    9,
+    9,
+    8,
+    8
+   ],
+   "changing_lines": [
+    3,
+    4
+   ],
+   "n": 34,
+   "name": "Vigour",
+   "cn": "大壯",
+   "pinyin": "dà zhuàng",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "Force is available here and unaimed.",
+   "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+   "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 19,
+    "name": "Spring",
+    "cn": "臨",
+    "pinyin": "lín",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "This is rising, and the window has an edge on it.",
+    "image": "☱ lake beneath ☷ earth. Two firm lines rising at the base, with the ground open above them.",
+    "situation": "Something is coming up and there is room above it. The old text puts a date on it, saying trouble arrives in the eighth month, which turns the reading into a clock: this is favourable and it is favourable now. Spring approaches, and the approach is the whole of it.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    6,
+    7,
+    8,
+    6,
+    8,
+    7
+   ],
+   "changing_lines": [
+    1,
+    4
+   ],
+   "n": 4,
+   "name": "Fog",
+   "cn": "蒙",
+   "pinyin": "méng",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "You are guessing where you could ask.",
+   "image": "☵ water beneath ☶ mountain. A spring at the foot of a peak, with mist over all of it.",
+   "situation": "Something is genuinely obscured, and the obscured thing is the one looking. The frame is a young person who has yet to learn, and the instruction runs toward the asker: the teacher answers the first question honestly and goes quiet by the third, because a question put three times has stopped being a question.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 38,
+    "name": "Estrangement",
+    "cn": "睽",
+    "pinyin": "kuí",
+    "lines": [
+     1,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "You reached a conclusion from a distance.",
+    "image": "☱ lake beneath ☲ fire. Fire climbing and water settling, the two halves separating as they go.",
+    "situation": "Opposition by nature: two elements in one figure travelling opposite ways. The old text keeps its counsel small — in small matters, good fortune — and fills the lines with strange sightings. A pig covered in mud. A wagon dragged backwards. A stranger who turns out to be kin.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 47,
+   "name": "Drained",
+   "cn": "困",
+   "pinyin": "kùn",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The explaining continues and the basin is dry.",
+   "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+   "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   }
+  },
+  {
+   "agent": "daemon-emotional-body",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    6,
+    6,
+    8,
+    8
+   ],
+   "changing_lines": [
+    3,
+    4
+   ],
+   "n": 7,
+   "name": "Muster",
+   "cn": "師",
+   "pinyin": "shī",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "What would organise this is a fact you have not said.",
+   "image": "☵ water beneath ☷ earth. One firm line among five yielding ones, holding the whole figure to a shape.",
+   "situation": "Water stored underground: a resource that is present, invisible, and organised. The single strong line is the discipline that turns a crowd into a force. The old warning is that this works with an experienced hand and a clear cause, and the same gathering under any other conditions is a mob.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 32,
+    "name": "Endurance",
+    "cn": "恆",
+    "pinyin": "héng",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "This exact exchange has happened before.",
+    "image": "☴ wind beneath ☳ thunder. Wind underneath and thunder above, an arrangement that keeps recurring.",
+    "situation": "Duration. The old reading makes this a marriage: two things in fixed relative position, lasting because the position is stable. The counsel is to hold the course and keep moving, so what endures here is a motion that repeats.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "daemon-skeptic",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    9,
+    8,
+    7,
+    8,
+    6
+   ],
+   "changing_lines": [
+    2,
+    6
+   ],
+   "n": 40,
+   "name": "Thaw",
+   "cn": "解",
+   "pinyin": "xiè",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "The knot just loosened, and the window is short.",
+   "image": "☵ water beneath ☳ thunder. The storm has broken and the rain is already coming down.",
+   "situation": "Release after held pressure. The old counsel is unusual in its urgency: if there is somewhere to go, go early; if the going is finished, come back and be quiet. Either way the instruction is speed, because a window a storm opens closes again.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 35,
+    "name": "Sunrise",
+    "cn": "晉",
+    "pinyin": "jìn",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "This is becoming visible faster than you planned.",
+    "image": "☷ earth beneath ☲ fire. The sun clearing the horizon, with open ground under it.",
+    "situation": "Advance, and the light getting higher. The old text gives a prince horses in quantity and three audiences in a single day, so the figure is about recognition arriving quickly. Everything in it is going up.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  }
+ ],
+ "positions": [
+  "cave-321-player-writes",
+  "cave-321-pronoun-places",
+  "cave-321-not-breath-count",
+  "cave-321-damaged-self-ask",
+  "cave-321-one-build"
+ ],
+ "questions": [
+  "cave-321-form"
+ ],
+ "daemon_reports": [
+  "council/daemons/reports/2026-10-10-3d-build-321-emotional-body.md",
+  "council/daemons/reports/2026-10-10-3d-build-321-skeptic.md"
+ ],
+ "subagent_tokens": 44069,
+ "unanimous": false,
+ "tests_dated": [
+  {
+   "by": "2026-10-17",
+   "test": "if staged or felt-walk is chosen: one daemon in the chat and one staged on his phone; charge before and after, seconds, and 'I' lines kept on his device; staging stays if the charge drops as far and he writes no less"
+  },
+  {
+   "by": "after the chat port merges",
+   "test": "the chat port's browser test still passes with the staged camera, at 390 by 844"
+  }
+ ]
+}

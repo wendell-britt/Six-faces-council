@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-10",
+  "pass": "3d-build-321",
+  "daemon": "skeptic",
+  "face": "challenger",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-10-3d-build-321-skeptic.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "After a week, 86% of the self-conversation group reported changed thoughts or feelings, against 48% of the scripted group [1].",
+        "The authors caution that \"most of the effects we found were not overwhelmingly supported in terms of probability\" [1].",
+        "They also did not test unsupervised use [1].",
+        "Swapping places, as in Slater's design [1].",
+        "A scripted reply also cannot fit what this player said, which is the weak arm in [1].",
+        "A second look at one week later (did the daemon come back?) would copy [1], but is optional."
+      ],
+      "url": "https://www.nature.com/articles/s41598-019-46877-3",
+      "quote": "most of the effects we found were not overwhelmingly supported in terms of probability",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Slater's Freud study 2 had 22 people, no control group, and only mild problems [2]."
+      ],
+      "url": "https://www.ub.edu/web/ub/en/menu_eines/noticies/2015/10/015.html",
+      "quote": "when virtual conversation is held with an avatar different from the participant",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Fletcher says games start you \"from scratch\" and make you build expectations [3].",
+        "The voices were an advisor-led design, not a tested therapy, and I found no outcome data for it [3]."
+      ],
+      "url": "https://www.gameinformer.com/b/features/archive/2017/04/17/three-big-takeaways-from-hellblade-s-psychosis-expert.aspx",
+      "quote": "perception itself is a controlled hallucination",
+      "label": "unlabelled"
+    }
+  ]
+}

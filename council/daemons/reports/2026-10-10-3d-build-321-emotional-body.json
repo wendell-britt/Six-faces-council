@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-10",
+  "pass": "3d-build-321",
+  "daemon": "emotional-body",
+  "face": "shaman",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-10-3d-build-321-emotional-body.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Gendlin's first step says \"DO NOT GO INSIDE IT\" and \"Let there be a little space between you and that\" [1]."
+      ],
+      "url": "https://focusing.org/sixsteps",
+      "quote": "DO NOT GO INSIDE IT",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "In a body-swap study, alternating between the player's own body and the other body predicted benefit [2].",
+        "The player steps into the daemon, speaks, then steps back to their own place and hears it said [2]."
+      ],
+      "url": "https://www.nature.com/articles/s41598-019-46877-3",
+      "quote": "the process of alternating between their own and the Freud body is important",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Avatar form shifts behaviour (the Proteus effect) [3]."
+      ],
+      "url": "https://vhil.stanford.edu/publications/avatars-and-agents/proteus-effect-self-transformations-virtual-reality",
+      "quote": "participants assigned taller avatars behaved more confidently",
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "Two-chair work separates a part from the self so it can answer [4]."
+      ],
+      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1692630/full",
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}
