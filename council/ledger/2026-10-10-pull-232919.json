@@ -1,0 +1,49 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T23:29:19.500Z",
+ "answers": {
+  "cave-321-form": {
+   "kind": "question",
+   "choice": "staged",
+   "savedAt": "2026-10-10T23:28:00.837Z",
+   "steer": ""
+  },
+  "cave-321-pronoun-places": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:28:15.977Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cave-321-not-breath-count": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:29:05.582Z",
+   "status": "stands",
+   "steer": "We should make a note to fix that in bars engine explore how it’s being used and deprecate it if it’s diverted "
+  },
+  "cave-321-damaged-self-ask": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:29:10.431Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cave-321-one-build": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:29:13.881Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cave-321-player-writes": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:29:19.500Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/cave-321-form: The chat in a staged scene",
+  "positions/cave-321-not-breath-count: Stands (steer: \"We should make a note to fix that in bars engine explore how it’s being used and deprecate it if it’s diverted\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
