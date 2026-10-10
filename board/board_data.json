@@ -15205,6 +15205,31 @@
      "shaman"
     ],
     "pass": "texts to campaigns, step 1"
+   },
+   "cave-daemon-wall": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T02:00:40.516Z",
+    "record": "council/ledger/2026-10-10-pull-020047.json (six-faces-council)",
+    "steer": "We shouldn’t have a skip. If a daemon pops up then it needs to be worked with. We can pivot to a 321 discussion with the part until is feels satisfied",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "3D build, loop rebuild"
+   },
+   "cave-face-branches": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T02:00:47.301Z",
+    "record": "council/ledger/2026-10-10-pull-020047.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "3D build, loop rebuild"
    }
   },
   "questions": {
@@ -16769,6 +16794,18 @@
      "shaman"
     ],
     "pass": "podcast guests"
+   },
+   "cave-daemon-encounter": {
+    "decision": "dig",
+    "label": "Dig into what it holds (recommended, built)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T01:59:47.164Z",
+    "record": "council/ledger/2026-10-10-pull-020047.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "3D build, loop rebuild"
    }
   },
   "causes": {
