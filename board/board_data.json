@@ -6164,6 +6164,72 @@
    "auto": true,
    "pos": "A wrong answer in a talk opens a fight in the world: the daemon whose line the player picked, and a spirit where the place has one. The fight stays open until the player gets that talk right, then closes. It is offered, never forced. This refines p2n-stakes C (the urge walks the night road) and is how Sprout's talks feed its fights. This stands unless you flip it.",
    "why": "Your words in chat, 2026-10-10: ““Wrong answers” trigger available spirit and daemon fights in the world for the duration of the player getting it right in the relational encounter”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml, the road block (sprout pull request #38)"
+  },
+  {
+   "id": "rp-stage-first",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "root 2, round 1",
+   "auto": true,
+   "pos": "Root opens on the stage with a title menu: Train with Yun, Fight, Two players. Today's panel moves behind a gear, whole, and the testing switches never show to a stranger.",
+   "why": "Your words: 'players need to learn how to make moves from within the game world itself instead of having the game inside of a dashboard'. Source: root-game council/6FACE_PASS2_2026-10-10.md"
+  },
+  {
+   "id": "rp-new-page",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "root 2, round 1",
+   "auto": true,
+   "pos": "The overhaul is a new page, pages/root-play.html, built from the same engine and published to a new link. The main page stays the lab, and the physics work keeps its gate there.",
+   "why": "The Root call sheet (root-game #15) already says later builds go to a new link, because republishing the old one costs about 200,000 tokens. Source: root-game council/6FACE_PASS2_2026-10-10.md"
+  },
+  {
+   "id": "rp-yun-teaches",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "root 2, round 1",
+   "auto": true,
+   "pos": "Master Yun teaches in a courtyard. Root's 18 lessons become his sessions, in their order. Session one is Listen and the straight four only, with a bow at the start and after an uproot, and the first uproot is a reset, not a loss.",
+   "why": "Your answers wave-teacher (A, Master Yun) and wave-straight-first stand, and Root's lessons already teach one input at a time. Source: root-game council/6FACE_PASS2_2026-10-10.md"
+  },
+  {
+   "id": "rp-tell-on-bodies",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "root 2, round 1",
+   "auto": true,
+   "pos": "A ring marks where a strike will land, the gate's English name shows briefly in the world with its character beside it, and the pad shows only the gates Yun has taught. On a phone the pad becomes two thumb clusters: stances on the left, gates on the right.",
+   "why": "The English gate names are already Sprout's (Ward off, Roll back, Press, Push), and your WAVE steer asked that move names reach players without Chinese. Source: /mnt/project-files/demo/wave-teaching-pass.md; root-game council/6FACE_PASS2_2026-10-10.md"
+  },
+  {
+   "id": "rp-kill-line",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "root 2, round 1",
+   "auto": true,
+   "pos": "If three of five cold strangers do not send a strike into emptiness within five minutes of opening the link, the first session is rebuilt before anything else is added.",
+   "why": "The studio pipeline asks for a kill line written before the work (/mnt/project-files/studio/studio-pipeline.md, 'A gate for every project'). Source: root-game council/6FACE_PASS2_2026-10-10.md"
+  },
+  {
+   "id": "rp-shell-first",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "root 2, round 1",
+   "auto": true,
+   "pos": "The next Root session builds the stage-first page and Yun's first session, and its reply carries a link you can tap on your phone. Five strangers then play it.",
+   "why": "It waits on none of your answers and can be undone; your phone-testing rule asks for a tappable link. The Challenger dissents: it would test today's page with strangers first. Source: root-game council/6FACE_PASS2_2026-10-10.md"
   }
  ],
  "questions": [
@@ -10466,6 +10532,87 @@
      "v": "felt-walk",
      "label": "A felt walk, words after",
      "c": "You move from it to you to I with the breath and the figure and no writing, and the chat is offered after for words. Closest to the felt sense; the council warns it can drift into breaths, as bars-engine's breath-count 3-2-1 did."
+    }
+   ]
+  },
+  {
+   "id": "rp-park-physics",
+   "faces": [
+    "regent"
+   ],
+   "pass": "root 2, round 1",
+   "q": "Does Root's physics work (the one solve on by default, sleeves through the skirt, Hard's jumps) park until five strangers have played?",
+   "why_you": "The order of your projects is yours, and the studio retro's lesson says to ask before parking anything. Source: root-game council/6FACE_PASS2_2026-10-10.md",
+   "not_before": "The overhaul was named this evening.",
+   "options": [
+    {
+     "v": "park",
+     "label": "A. Park it, except what the phone frame needs (council lean)",
+     "c": "Every Root session goes to the play page until strangers have played; the physics queue waits on the call sheet."
+    },
+    {
+     "v": "beside",
+     "label": "B. Physics runs beside, one session in three",
+     "c": "The play page arrives more slowly; the one solve keeps moving."
+    },
+    {
+     "v": "physics",
+     "label": "C. Physics first, the overhaul after",
+     "c": "The one solve and cloth work finish first; strangers wait."
+    }
+   ]
+  },
+  {
+   "id": "rp-first-players",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "root 2, round 1",
+   "q": "Who plays Root first?",
+   "why_you": "Who you mean by 'people' is a fact only you hold, and it sets Yun's pace and who the five testers are. Source: root-game council/6FACE_PASS2_2026-10-10.md",
+   "not_before": "No stranger test of Root was planned until now.",
+   "options": [
+    {
+     "v": "friends",
+     "label": "A. Friends and family from a link, cold (council lean)",
+     "c": "The five testers are people you can send a link to; the first session assumes no martial arts."
+    },
+    {
+     "v": "taichi",
+     "label": "B. Push-hands and tai chi people",
+     "c": "The names and pace assume practice; feedback checks the art."
+    },
+    {
+     "v": "fgc",
+     "label": "C. Fighting-game players",
+     "c": "The controls and speed come first; the teaching can move faster."
+    }
+   ]
+  },
+  {
+   "id": "rp-phone-cloth",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "root 2, round 1",
+   "q": "What cloth do phones get on the public link?",
+   "why_you": "It trades frame rate against a cloth mark you set, and the call sheet keeps Shared cloth off until you say. An emulated iPhone ran the main page at 12 to 14 frames a second. Source: root-game council/6FACE_PASS2_2026-10-10.md",
+   "not_before": "No public phone link was planned before.",
+   "options": [
+    {
+     "v": "shared",
+     "label": "A. The shared cloth pass on phones (council lean)",
+     "c": "The cloth step drops from about 70 ms to about 5 ms in the page; more sleeves pass through the partner's skirt."
+    },
+    {
+     "v": "coarse",
+     "label": "B. A coarser cloth for phones, built new",
+     "c": "A session or more of new cloth work before the link goes out."
+    },
+    {
+     "v": "laptop",
+     "label": "C. Laptops first; phones later",
+     "c": "The first link says laptop; phone players wait."
     }
    ]
   }
@@ -20062,6 +20209,32 @@
       "st-sprout-hook",
       "st-marketer-card",
       "st-mock-own-art"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-root-play",
+   "name": "Root in Front of People",
+   "repo": "root-game",
+   "element": "wood",
+   "record": "root-game council/6FACE_PASS2_2026-10-10.md",
+   "intro": "It wants Root in front of people, with moves learned inside the game the way a fighting game teaches, not from a dashboard. Master Yun teaches in a courtyard, the page opens on the stage, and five cold strangers decide what comes next.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "rp-park-physics",
+      "rp-first-players",
+      "rp-phone-cloth"
+     ],
+     "positions": [
+      "rp-stage-first",
+      "rp-new-page",
+      "rp-yun-teaches",
+      "rp-tell-on-bodies",
+      "rp-kill-line",
+      "rp-shell-first"
      ]
     }
    ]
