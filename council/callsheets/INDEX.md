@@ -4,6 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
+- [coaching-pipeline](coaching-pipeline.md), 2026-10-10: Web Analytics on, PR #273, then the pipe Wendell picks; Monday reads.
 - [studio](studio.md), 2026-10-10: cave pilot through gates 0 to 2; Sprout mock v2 and second cold round; retro 10-17.
 - [big-mind-cave](big-mind-cave.md), 2026-10-10: apply four picks and the overrule in round 2.
 - [cave-of-lessons](cave-of-lessons.md), 2026-10-09: Wendell's phone play, then fixes from his notes.
