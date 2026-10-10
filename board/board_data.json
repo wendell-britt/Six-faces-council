@@ -15591,6 +15591,100 @@
      "architect"
     ],
     "pass": "story tracking 1"
+   },
+   "sg-talk-and-items": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:53:11.919Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "steer": "I can imagine story beats that happen without an item changing hands. I think items are the main way but I’m\nThinking of tasks within a quest may not always be connected with items changing hands",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "story tracking 2"
+   },
+   "sg-five-triggers": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:53:40.428Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "steer": "Mail\nAnd tile touch should be included",
+    "faces": [
+     "architect"
+    ],
+    "pass": "story tracking 2"
+   },
+   "sg-one-syntax": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:53:51.650Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "story tracking 2"
+   },
+   "sg-state-store": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:54:06.032Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "story tracking 2"
+   },
+   "sg-choices-in-talk": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:54:34.641Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "story tracking 2"
+   },
+   "sg-items-read-as-held": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:54:54.473Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "story tracking 2"
+   },
+   "sg-review-by-playing": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:55:05.307Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "story tracking 2"
+   },
+   "sg-flag-fit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:55:14.098Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "story tracking 2"
    }
   },
   "questions": {
@@ -17179,6 +17273,18 @@
      "challenger"
     ],
     "pass": "story tracking 1"
+   },
+   "sg-story-list": {
+    "decision": "diary",
+    "label": "The diary only (Challenger)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T14:51:51.626Z",
+    "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "story tracking 2"
    }
   },
   "causes": {
