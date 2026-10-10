@@ -5,8 +5,9 @@ Wendell, 2026-10-08, on board-read-slim: the 00:25 board read took 30 steps, and
 opens at about 102,000 tokens ($1.54, 2.66M tokens reread). The judgment in a board read is small; the rest is
 plumbing. This script does the plumbing, so a read is about five steps:
 
-  1. One message with five parallel ArtifactData `list` calls on https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho,
-     collections positions, questions, terms, causes, steer; query {"limit": 1000}; the same out_dir <dir> on each.
+  1. One message with seven parallel ArtifactData `list` calls on https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho,
+     collections positions, questions, terms, causes, steer, picks, morning; query {"limit": 1000}; the same out_dir
+     <dir> on each. picks holds his morning picks and morning the menu he pasted (docs/morning.md).
      The store goes to files in <dir>. Never read it into the conversation, and never read the page itself.
   2. python3 board/read.py <dir>        # (--dry reports without writing)
      # pull.py --push, due.py --ahead 7, and a verdict, all in one command
@@ -39,7 +40,7 @@ def main():
     missing = [k for k in NEED if not (store / k).is_dir()]
     if missing:
         sys.exit(f"{store} lacks {', '.join(missing)}; list those collections with ArtifactData into this folder first")
-    counts = ", ".join(f"{k} {len(list((store / k).glob('*.json')))}" for k in NEED)
+    counts = ", ".join(f"{k} {len(list((store / k).glob('*.json')))}" for k in (*NEED, "picks", "morning") if (store / k).is_dir())
     print(f"store: {counts}")
 
     code, out = run(str(HERE / "pull.py"), str(store), *([] if dry else ["--push"]))

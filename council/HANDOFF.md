@@ -41,6 +41,12 @@ The build, three threads, each fresh (the pass thread handed off near 200,000 to
    also bridged to goals the same way. A pick becomes a board row; the next board read starts a thread per pick
    (`mm-picks-become-threads`). First step: find how a council session reads thread 2's export (network policy and
    a token), before building on it.
+   **Built 2026-10-09** (draft PR, docs/morning.md): `morning.py`, the board's Morning tab, and picks recorded by
+   `pull.py`. The container cannot reach bars-engine; the Vercel connector can, with a GET and no headers, so the
+   Wendell chose "the council fetches it" (`mm-menu-transport`, 18:52). `morning.py --fetch` reads the menu with
+   `$COUNCIL_MENU_TOKEN` once Your steps list `morning-menu-key` is done (Vercel env vars, the migration, a cloud
+   environment that holds the key and allows bars-engine.vercel.app). The Morning tab's paste box is the fallback.
+   Open: that list, then republish once #68 merges.
 
 Test by 2026-10-16: one real morning end to end, and at least one pick becomes a thread.
 

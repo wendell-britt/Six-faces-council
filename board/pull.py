@@ -10,7 +10,7 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
-  causes, steer), query {"limit": 1000}, out_dir <dir>
+  causes, steer, picks, morning), query {"limit": 1000}, out_dir <dir>
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -105,8 +105,24 @@ def find_new(data, store):
         g = json.loads(steer.read_text(encoding="utf-8"))
         if (g.get("text") or "").strip() and g.get("savedAt", "") > data.get("steer_recorded_through", ""):
             general = g
+    # mm-picks-become-threads: a morning pick he saved is one board row marked as his; the next read starts its thread
+    taken = {p["id"] for p in data.get("picks", [])}
+    for f in sorted((store / "picks").glob("*.json")) if (store / "picks").is_dir() else []:
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        if f.stem in taken or doc.get("removed") or not doc.get("savedAt"):
+            continue
+        new.append({"kind": "picks", "id": f.stem, "doc": doc, "answer": "picked", "row": None})
     new.sort(key=lambda n: n["doc"]["savedAt"])
     return new, general
+
+
+def pasted_menu(data, store):
+    """The sealed menu he pasted on the Morning tab, when it is newer than the last gather; else None."""
+    f = store / "morning" / "menu.json"
+    if not f.exists():
+        return None
+    doc = json.loads(f.read_text(encoding="utf-8"))
+    return f if doc.get("savedAt", "") > (data.get("morning") or {}).get("gathered_at", "") else None
 
 
 def apply(data, new, general, ledger_rel):
@@ -117,6 +133,16 @@ def apply(data, new, general, ledger_rel):
         kind, rid, doc, ans = n["kind"], n["id"], n["doc"], n["answer"]
         steer = (doc.get("steer") or "").strip()
         answers[rid] = {"kind": kind[:-1], **{k: v for k, v in doc.items() if k != "previous"}}
+        if kind == "picks":
+            b = doc.get("bridge") or {}
+            goal = b.get("goalTitle") or (f"new {b.get('cadence')} goal \"{b.get('title')}\" under {b.get('parentTitle')}"
+                                          if b.get("kind") == "new" else "unaligned")
+            data.setdefault("picks", []).append({"id": rid, "date": doc.get("date"), "category": doc.get("category"),
+                                                 "text": doc.get("text"), "bridge": b, "note": doc.get("note", ""),
+                                                 "saved_at": doc["savedAt"], "record": record})
+            work.append(f'picks/{rid}: start a thread: "{doc.get("text")}" (goal: {goal})'
+                        + (f' (note: "{doc["note"]}")' if doc.get("note") else ""))
+            continue
         if doc.get("deferred"):
             due.record(data, kind, rid, doc["savedAt"], doc.get("until") or "spaced", steer, record, doc.get("hours"))
             data["resolved"][kind][rid]["saved_at"] = doc["savedAt"]
@@ -161,6 +187,9 @@ def main():
         git("pull", "-q", "--no-rebase", "origin", "main")
     data = json.loads(DATA.read_text(encoding="utf-8"))
     new, general = find_new(data, store)
+    menu = pasted_menu(data, store)
+    if menu:  # mm-menu-transport: the next gather reads it; morning.py writes main itself
+        print(f"needs work:\n  morning/menu: python3 council/morning.py --menu {menu} --write, then commit and republish")
     if not new and not general:
         print("every saved answer is recorded")
         return
