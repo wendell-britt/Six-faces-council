@@ -12,6 +12,22 @@ battle `fr-studio` round 1: questions `st-wip`, `st-pilot`, `st-marketing-start`
 hook-now (a private hook test); the ten positions stand. Root call sheet drafted 2026-10-10 (wendell-britt/root-game `CALLSHEET.md`, 3.6 KB, draft PR; test 1 below measures it). Next: this file split into call sheets by strand (Sonnet), then the pilot through
 gates 0 to 2. Tests due 2026-10-17 are at the end of the pass.
 
+## Open on 2026-10-10, a real 3-2-1 inside the Cave of Lessons
+
+Wendell, 10 October 23:14, in the cave thread: "So we need to actually have an in game interface of the 321. At the very
+least pulling in the version from bars engine with the chat interface OR we design an encounter that simulates the felt
+sense of doing a 321 in the game". Today the daemon's "Talk with it" is three text boxes (bars-engine PR #265, `cave.js`).
+
+1. **Build now, the floor he named** (Sonnet thread, PR #265): port bars-engine's canonical 3-2-1,
+   `src/components/clean321/Clean321Flow.tsx`, into the cave pane as plain JS. One chat thread the player writes
+   entirely (the system never writes a turn); 3 Face it, "it", one voice; 2 Talk to it, two voices with the switcher
+   (You and the daemon, named); 1 Be it, "I am"; a charge reading before and after. The daemon steps aside when the
+   player says it feels satisfied (cave-daemon-wall overrule, 10 October 02:01); another round stays open. Nothing goes
+   to a server; `completeClean321`'s rewards stay with the NOW page. Update `cave-test.mjs` and the playable link.
+2. **Then a council pass** (Opus thread) on the other path, an encounter that makes the 3-2-1 felt in the cave: the
+   daemon's figure answering in the scene as the player moves from it to you to I. The choice between keeping the chat,
+   the felt encounter, or both goes on the Council Board after the reach test.
+
 ## Open on 2026-10-09, Cave of Lessons pass 3 (avatar, labyrinth, breath, block branches)
 
 Pass: `council/passes/6FACE_PASS_3d-build3_2026-10-09.md`. Wendell answered at 20:35 (ledger
