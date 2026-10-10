@@ -1,0 +1,85 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T22:34:31.314Z",
+ "answers": {
+  "lg-first-pipe": {
+   "kind": "question",
+   "choice": "guesting",
+   "savedAt": "2026-10-10T22:32:54.785Z",
+   "steer": ""
+  },
+  "lg-keep-step": {
+   "kind": "question",
+   "choice": "daemons-list",
+   "savedAt": "2026-10-10T22:33:18.735Z",
+   "steer": ""
+  },
+  "ttc-encounters-part2": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:33:25.667Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2-graft-spirit": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:33:35.900Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2-guess-test": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:33:44.045Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lg-measure-first": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:33:50.740Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lg-tagged-links": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:33:55.949Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lg-podcast-link": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:34:01.483Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lg-no-ads-yet": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:34:09.648Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lg-one-live-plan": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:34:17.366Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lg-guest-shows": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:34:23.497Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2-blocks-from-canon": {
+   "kind": "position",
+   "savedAt": "2026-10-10T22:34:31.314Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/lg-first-pipe: Guesting on other shows (Challenger)",
+  "questions/lg-keep-step: Opt in to the Meet Your Daemons emails (Diplomat)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
