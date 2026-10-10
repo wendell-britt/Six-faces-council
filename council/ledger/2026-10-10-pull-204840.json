@@ -1,0 +1,105 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T20:48:40.441Z",
+ "answers": {
+  "st-wip": {
+   "kind": "question",
+   "choice": "three",
+   "savedAt": "2026-10-10T20:46:08.397Z",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-pilot": {
+   "kind": "question",
+   "choice": "big-mind",
+   "savedAt": "2026-10-10T20:46:23.577Z",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-marketing-start": {
+   "kind": "question",
+   "choice": "hook-now",
+   "savedAt": "2026-10-10T20:46:32.832Z",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-callsheets": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:46:40.048Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-gates-table": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:47:06.229Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-kill-line-first": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:47:22.983Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-kegan-lens": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:47:30.036Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-frameworks-cut": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:47:53.751Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-roles": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:48:07.103Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-marketer-drafts-only": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:48:11.636Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-battle-receipt": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:48:19.591Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-level-rule": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:48:31.693Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  },
+  "st-judge-spend": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:48:40.441Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-studio"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/st-wip: Three",
+  "questions/st-pilot: The Big Mind cave (council lean)",
+  "questions/st-marketing-start: A private hook test now (council lean)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
