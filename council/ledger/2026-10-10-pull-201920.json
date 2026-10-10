@@ -1,0 +1,121 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T20:19:20.288Z",
+ "answers": {
+  "bm-center": {
+   "kind": "question",
+   "choice": "two-caves",
+   "savedAt": "2026-10-10T20:16:26.008Z",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-guide": {
+   "kind": "question",
+   "choice": "integrated",
+   "savedAt": "2026-10-10T20:16:47.890Z",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-session": {
+   "kind": "question",
+   "choice": "own-pace",
+   "savedAt": "2026-10-10T20:16:54.345Z",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-first-player": {
+   "kind": "question",
+   "choice": "me",
+   "savedAt": "2026-10-10T20:17:04.765Z",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-source": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:17:18.318Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-four-steps": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:17:27.504Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-dismiss-step-aside": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:17:38.506Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-decline": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:17:48.990Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-cards-and-line": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:17:55.842Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-seven-rooms": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:18:01.343Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bmc-safety": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:18:10.479Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-no-fix": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:18:15.495Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-phone-first": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:19:06.752Z",
+   "status": "overrule",
+   "steer": "I want it to be a fork of cave of lessons that adds chambers between cave hallways with a voice blocking the path ",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-world-later": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:19:12.537Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bm-name-internal": {
+   "kind": "position",
+   "savedAt": "2026-10-10T20:19:20.288Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/bm-center: The child first, the rest as a second cave",
+  "questions/bm-guide: Your own integrated voice, met at the end",
+  "questions/bm-session: Your own pace, saved at every chamber",
+  "questions/bm-first-player: Only you, kept on your device (council lean)",
+  "positions/bm-phone-first: Overruled (steer: \"I want it to be a fork of cave of lessons that adds chambers between cave hallways with a voice blocking the path\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
