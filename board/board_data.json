@@ -5853,6 +5853,27 @@
    "auto": true,
    "pos": "The study week is judged by weekly spend per gate cleared, against the 4 October week. If process threads pass 20% of spend, trim.",
    "why": "The usage audit of 2026-10-04 ($600-660 list that week). Source: council/passes/6FACE_PASS_studio1_2026-10-10.md (six-faces-council); report /mnt/project-files/studio/studio-pipeline.md"
+  },
+  {
+   "id": "st-cap-games-only",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "studio 1, round 2",
+   "auto": true,
+   "pos": "The cap of three counts game projects only: the Big Mind cave, Root, the Sprout slice (with the wave battle, story tracking and the Skilled Helper campaign inside it) and the Cave of Lessons. The podcast, the coaching site, flirtcraft, friendcraft and the morning menu sit outside it.",
+   "why": "st-wip asked about projects in production in the studio; the others are not games. The council sheets list 13 open strands, 4 of them game projects. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md; your answers st-wip (three) and st-pilot (big-mind), 2026-10-10 20:46."
+  },
+  {
+   "id": "st-parked-sprout-inner",
+   "faces": [
+    "regent"
+   ],
+   "pass": "studio 1, round 2",
+   "auto": true,
+   "pos": "Inside Sprout, the slice playtest comes first; the wave battle, story tracking and the Skilled Helper encounters wait behind it until 10-17 unless you say otherwise.",
+   "why": "Sprout's CLAUDE.md: the slice is built and waits on your playtest. A slice is the gate before production (st-gates-table). Source: council/passes/6FACE_PASS_studio1_2026-10-10.md; your answers st-wip (three) and st-pilot (big-mind), 2026-10-10 20:46."
   }
  ],
  "questions": [
@@ -10013,6 +10034,34 @@
      "v": "after-lock",
      "label": "After content lock",
      "c": "Marketing waits until the game is content complete; no store page or devlog until then."
+    }
+   ]
+  },
+  {
+   "id": "st-which-three",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "studio 1, round 2",
+   "q": "Which two game projects run beside the Big Mind cave? The third parks at its gate with a return date of 2026-10-17.",
+   "why_you": "You chose three in production and the Big Mind cave as the pilot; which two join it is your priority, and the record does not rank them. Source: council/passes/6FACE_PASS_studio1_2026-10-10.md; your answers st-wip (three) and st-pilot (big-mind), 2026-10-10 20:46.",
+   "not_before": "It follows from your round 1 answers, saved 20:46.",
+   "options": [
+    {
+     "v": "root-sprout",
+     "label": "Root and the Sprout slice (council lean)",
+     "c": "Both wait on a look from you already (preview 12, the slice playtest); the Cave of Lessons parks until 10-17."
+    },
+    {
+     "v": "sprout-cave",
+     "label": "The Sprout slice and the Cave of Lessons",
+     "c": "Root parks with PR #10 and the call sheet (PR #14) ready for its return."
+    },
+    {
+     "v": "root-cave",
+     "label": "Root and the Cave of Lessons",
+     "c": "The Sprout slice, the wave battle and the Skilled Helper encounters park until 10-17."
     }
    ]
   }
@@ -19197,6 +19246,16 @@
       "st-battle-receipt",
       "st-level-rule",
       "st-judge-spend"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "st-which-three"
+     ],
+     "positions": [
+      "st-cap-games-only",
+      "st-parked-sprout-inner"
      ]
     }
    ]
