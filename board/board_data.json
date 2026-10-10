@@ -17050,6 +17050,65 @@
      "challenger"
     ],
     "pass": "Pruner's track pass 2"
+   },
+   "cave-321-pronoun-places": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:28:15.977Z",
+    "record": "council/ledger/2026-10-10-pull-232919.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "3D build, 3-2-1"
+   },
+   "cave-321-not-breath-count": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:29:05.582Z",
+    "record": "council/ledger/2026-10-10-pull-232919.json (six-faces-council)",
+    "steer": "We should make a note to fix that in bars engine explore how it’s being used and deprecate it if it’s diverted",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "3D build, 3-2-1"
+   },
+   "cave-321-damaged-self-ask": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:29:10.431Z",
+    "record": "council/ledger/2026-10-10-pull-232919.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "3D build, 3-2-1"
+   },
+   "cave-321-one-build": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:29:13.881Z",
+    "record": "council/ledger/2026-10-10-pull-232919.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "3D build, 3-2-1"
+   },
+   "cave-321-player-writes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:29:19.500Z",
+    "record": "council/ledger/2026-10-10-pull-232919.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "3D build, 3-2-1"
    }
   },
   "questions": {
@@ -18782,6 +18841,19 @@
      "shaman"
     ],
     "pass": "Pruner's track pass 2"
+   },
+   "cave-321-form": {
+    "decision": "staged",
+    "label": "The chat in a staged scene",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T23:28:00.837Z",
+    "record": "council/ledger/2026-10-10-pull-232919.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman",
+     "challenger"
+    ],
+    "pass": "3D build, 3-2-1"
    }
   },
   "causes": {
