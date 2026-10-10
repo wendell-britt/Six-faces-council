@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09",
+ "updated": "2026-10-10",
  "positions": [
   {
    "id": "build",
@@ -5410,6 +5410,17 @@
    "auto": true,
    "pos": "Each person has a visible state in the scene that changes with every pick: posture, the light they carry, or their stall or cart. After a closing pick they say in their own words what the line felt like, such as \"You're deciding for me again\". The item they hand over shows the state they ended in.",
    "why": "Your note: more clarity about why you got something wrong, and a clearer visual and narrative consequence. In prototype 2 a mistake only shrank a bar. Source: sprout campaigns/skilled-helper/introduction/playtest.md, Wendell's playtest (PR #32)"
+  },
+  {
+   "id": "ttc-extract-part2",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 1",
+   "auto": true,
+   "pos": "Step 1 on Part II of The Skilled Helper (pp. 69-214, the communication skills) is drafted: 69 helping skills across chapters 3 to 7, each with when it is right, when it is wrong, and when it is only partly right. A moment index ties the three timings the prototype turns on (say back a hurt, ask after a plain fact, offer ideas only after trust and when asked) to the skills behind them. This stands unless you flip it.",
+   "why": "Your 'Let's do it' on extracting Part II. Read once from your PDF in The Library, one reader per chapter. Where the book does not say when a skill misfires, the file says so and marks any inference. Blocks such as resistance stay out for step 3. Source: sprout campaigns/skilled-helper/part-two/extract.yaml (sprout pull request #34)"
   }
  ],
  "questions": [
