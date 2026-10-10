@@ -5,7 +5,7 @@
 Three fresh threads: (1) bars-engine Lenses intake (Sonnet): save each domain as locked in (`saveYearLensFrame`, `LensesOnboardingClient.tsx:183`; `LensWorkshopDraft` exists), run one domain a morning as Tap the Vein's free-write prompt, rename/park/retire a goal from the Observatory. (2) bars-engine Tap the Vein menu (Opus): kept lines become menu items bridged to a Lens goal; only kept lines leave the session (`mm-raw`); menu exported for the council. (3) council `council/morning.py` and the board view: gather the backlog as separate categories; first find how a council session reads thread 2's export (network policy and a token).
 
 ## Waiting on
-Nothing. Ruled 18:21: `mm-where` = Tap the Vein, `mm-raw` = only kept lines leave the free write; six positions stand. Test by 2026-10-16: one real morning end to end, and a pick becomes a thread (thread 1: close after two domains, reopen, both saved).
+No answer owed. Ruled 18:21: `mm-where` = Tap the Vein, `mm-raw` = only kept lines leave the free write; six positions stand. Test by 2026-10-16: one real morning end to end, and a pick becomes a thread (thread 1: close after two domains, reopen, both saved).
 `mm-backlog-sources`: "Keep them as separate categories people can explore so they aren't just one long list"
 `mm-menu-shape`: "All items need a bridge to lens goals and game masters suggest ways to align to lens goals or suggest adding lens goals a smaller time scales to integrate (side quests merging into main quest)"
 
