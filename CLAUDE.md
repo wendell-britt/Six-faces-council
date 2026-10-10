@@ -28,8 +28,9 @@ projects more effectively between that and Jev we can save a lot of tokens"
 - One session does one piece of work: a board read, a pass, or a feature. Every tool call rereads the whole
   session, so a long session pays for its past on every step (pass ten measured $0.14 a call at 679,000 tokens).
 - End at a natural boundary. Record the work in the repo and on the board, put anything left open in
-  `council/HANDOFF.md`, and stop. The next piece of work starts in a new thread that reads this file,
-  HANDOFF.md and the board.
+  `council/callsheets/<strand>.md` (and `INDEX.md`), appending to `council/HANDOFF.md` only as the archive, and stop.
+  The next piece of work starts in a new thread that reads this file, `council/callsheets/INDEX.md`, the one sheet
+  for its strand and the board (Wendell, `st-callsheets`, 2026-10-10).
 - Drop a pull request watch once the pull request merges. Pull requests merge by themselves once they are ready and
   their checks pass (docs/merging.md, Wendell, 2026-10-06); only a `council/faces.yaml` change or a daily branch
   waits for his label.
