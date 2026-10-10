@@ -1,0 +1,60 @@
+{
+ "date": "2026-10-10",
+ "kind": "board-pull",
+ "newest_save": "2026-10-10T23:17:12.089Z",
+ "answers": {
+  "p2n-stakes": {
+   "kind": "question",
+   "choice": "urge-walks",
+   "savedAt": "2026-10-10T23:16:05.292Z",
+   "steer": ""
+  },
+  "p2n-talk-is-negotiation": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:16:19.496Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2n-signature": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:16:21.430Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2n-signature-ranks": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:16:32.545Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2n-teaching-ladder": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:16:38.233Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2n-hints-mana": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:16:48.702Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2n-heart-tiers": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:17:02.554Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "p2n-stakes-shown": {
+   "kind": "position",
+   "savedAt": "2026-10-10T23:17:12.089Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/p2n-stakes: The urge walks the night road"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
