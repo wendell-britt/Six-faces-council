@@ -5874,6 +5874,38 @@
    "auto": true,
    "pos": "Inside Sprout, the slice playtest comes first; the wave battle, story tracking and the Skilled Helper encounters wait behind it until 10-17 unless you say otherwise.",
    "why": "Sprout's CLAUDE.md: the slice is built and waits on your playtest. A slice is the gate before production (st-gates-table). Source: council/passes/6FACE_PASS_studio1_2026-10-10.md; your answers st-wip (three) and st-pilot (big-mind), 2026-10-10 20:46."
+  },
+  {
+   "id": "st-sprout-hook",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "studio 2",
+   "auto": true,
+   "pos": "Sprout's hook is: \"Your village thrives by draining the forest. Farm, spar and befriend its spirits to pay the debt back.\" It stays private, with the capsule mock in the project folder, until the slice playtest.",
+   "why": "It was the only one of three lines to pass the kill line written before the test: a cold reader named the genre and gave the whole twist back. The readers were agents, not strangers, and all three scored 4 of 5, so only the twist test separated the lines. Source: council/passes/6FACE_PASS_studio2_2026-10-10.md (six-faces-council); /mnt/project-files/studio/hook-test/"
+  },
+  {
+   "id": "st-marketer-card",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "studio 2",
+   "auto": true,
+   "pos": "The Marketer has a role card: it owns each game's hook, capsule mock and devlog and store drafts, acts at gates 1, 3 and 5, and runs three cold readers against a kill line written first. It posts nothing.",
+   "why": "Pass one's st-roles asked for the card; st-marketer-drafts-only sets its limit. Card: council/roles/marketer.md. Source: council/passes/6FACE_PASS_studio2_2026-10-10.md (six-faces-council); /mnt/project-files/studio/hook-test/"
+  },
+  {
+   "id": "st-mock-own-art",
+   "faces": [
+    "regent"
+   ],
+   "pass": "studio 2",
+   "auto": true,
+   "pos": "No mock meant for release uses art whose source is unconfirmed. The next Sprout mock adds the settlement wall and a spirit rising from the wound, which all three readers found unexplained, and uses our own art where it can.",
+   "why": "The farmhouse, well and crops in mock v1 are prototype art under sprout docs/license-audit.md, 'source confirmation deferred'. Source: council/passes/6FACE_PASS_studio2_2026-10-10.md (six-faces-council); /mnt/project-files/studio/hook-test/"
   }
  ],
  "questions": [
@@ -19293,6 +19325,15 @@
      "positions": [
       "st-cap-games-only",
       "st-parked-sprout-inner"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [],
+     "positions": [
+      "st-sprout-hook",
+      "st-marketer-card",
+      "st-mock-own-art"
      ]
     }
    ]
