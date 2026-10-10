@@ -475,3 +475,14 @@ session opens at about 102,000 tokens before doing any work (first_request_input
 - **Next:** prototype 3's next build tags each tending line with its moment (`p2-act1-moments`). Step 3
   (`encounters.yaml`) for Part II can start from `part-two/story.md`. The book PDF is on Wendell's Mac under
   The Library/08 Source Library/Personal Development and Coaching/PDF Sources.
+
+## Open on 2026-10-10, from the 20:19 board read (Big Mind cave, battle fr-big-mind-cave round 1)
+
+- **Recorded** (`council/ledger/2026-10-10-pull-201920.json`): `bm-center` two-caves (the child first, the rest as a
+  second cave), `bm-guide` integrated, `bm-session` own-pace, `bm-first-player` me. Ten positions stand
+  (`bm-source`, `bm-four-steps`, `bm-dismiss-step-aside`, `bm-decline`, `bm-cards-and-line`, `bm-seven-rooms`,
+  `bmc-safety`, `bm-no-fix`, `bm-world-later`, `bm-name-internal`).
+- **Overruled:** `bm-phone-first`. Steer, Wendell's words: "I want it to be a fork of cave of lessons that adds
+  chambers between cave hallways with a voice blocking the path".
+- **Next:** the session that owns the Big Mind cave work (session 01TQdbd..., could not be messaged) applies the
+  four picks and the overrule in round 2.
