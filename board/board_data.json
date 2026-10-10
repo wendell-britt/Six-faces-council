@@ -6012,6 +6012,94 @@
    "auto": true,
    "pos": "The Outreach tab gains a list of shows you could guest on, built from the September audience research (for example Finding Our Way and The Daily Evolver), every one marked Identified. Nobody is contacted until you send. This stands unless you flip it.",
    "why": "Same pattern as pod-guests-list for Flirtcraft; anything that names a person stays yours. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md (six-faces-council); /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md"
+  },
+  {
+   "id": "p2n-talk-is-negotiation",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "A talk is a negotiation on a board of four parts: how far the person trusts the player (the portrait's colour), how hot their feeling is (weather on the portrait), their hidden need, and the table, one line naming what is at stake (\"On the table: the old tree\"). A turn is the person's push and the player's line. The talk is won when the person says they were heard and makes the move themselves; the person is never an opponent. It stays in the ordinary talk box. This stands unless you flip it.",
+   "why": "Your words: talks as \"their own form of combat\" and \"a game of negotiations\". You overruled a separate tending screen (hs-tending-screen), so the combat lives in how a talk works, not in a new screen. The book already coaches principled negotiation (c7-s14). Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "p2n-signature",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "The signature move is Restate, Relate, Offer. Restate says back the feeling and its reason (c4-s1); Relate says the word under the word or the gap (c6-s1, c6-s8); Offer lays two or three roads and lets the person choose (c7-s1). They are WAVE said to a person: answer, Hold, Let go, with Listen first. Every line in encounters.yaml carries its label, a daemon's line carries the label it imitates, and every encounter but P5 holds all three. When all three land in one talk, the Signature lands. This stands unless you flip it.",
+   "why": "You named the move (\"restate relate and offer moves forward\"). magic-is-the-alchemy sets WAVE's order, so one sequence is learned on a body, a spirit and a person. P5 stays the closed hand, as Tam is in Act I. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "p2n-signature-ranks",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "The Signature has five ranks, opened by play: 1 Restate and roads (Act I, quest 3); 2 the word under the word (P2); 3 the gap as a hunch, and mending after a flare without unsaying (P4, P5); 4 roads weighed with both parts of a person (P6); 5 asking to be restated (P7). As the rank rises, Ede's letter says less after a wall. This stands unless you flip it.",
+   "why": "magic-grows (moves rise from 1 to 5 by practice) and hs-learning-signals (hints fade by rank as skills rise by proper use). Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "p2n-teaching-ladder",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "After Ede, the player keeps learning the move from people and things already in the game: Master Yun's Listen; Ede at quest 7, who names the three parts once in her words; each person's reaction; Ede's letter at Virelune; the daemon whose urge the player acted on, met on the night road, whose integration gives a talk hint; the Graft, where the move works on a spirit; and later Pyrakanth, where it runs on two families at once. No new character. This stands unless you flip it.",
+   "why": "Your \"throughout play they would need to learn more\"; wave-teacher, magic-from-teachers (integrated daemons give gift moves), p2-ede-letter, p2-graft-spirit, and design.md's Pyrakanth gate (\"hear both families\"). Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "p2n-hints-mana",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "Three hints, one per part, each costing mana the garden and the ring also need: Listen shows the moment (a hurt, a refusal, they asked), from Master Yun, 2 mana; Hear under lights the word that carries the clue, a gift of the integrated Skeptic, 3 mana; Ripe shows whether the person is ready for roads, a gift of the integrated Fixer, 3 mana. A fully hinted talk costs about 12 to 14 mana of the prototype's 50. Prices are council placeholders. A hint shows the person, never which line is right, and no power ever moves a person. This stands unless you flip it.",
+   "why": "Your ask for hint abilities and the mana trade with the ring and garden; design.md's mana rules (cap 50, one per tool swing); Listen already stood (battle-four-commands). Moving a person by power is the founder's way (wave-gates-in-the-world). Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "p2n-heart-tiers",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "Virelune's heart has four tiers (working names): Outsider below zero (errands, P1), Guest from zero, when the hearth opens (P2, P3), Neighbour (P4, P5), and Trusted with the knife (P6, then P7). Quests change by tier, from errands to tasks that hide a trouble to troubles brought to the player to helping others help. A landed Signature raises the heart most; errands and gardening raise it slowly and cost mana; a wrong line never lowers it. The player arrives as the settlement's exile; if they carry Ede's letter, Nan Isse vouches and the heart starts at zero. Thresholds and gains are placeholders. This stands unless you flip it.",
+   "why": "Your words on quests by town heart level; design.md's rules that village hearts start below zero and a hearth opens above zero; hs-wrong-is-the-wall. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "p2n-stakes-shown",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "Stakes are shown, not fined. Each talk opens with its table line. The diary records whose hand made each change, and Fenn's cutting is small if the player told him. Healing Virelune frees its refiner, Ede, for the ring at the ritual, and her letter's last line says so. The Wood node of Ede's lamp brightens with Virelune's heart, which widens the cave trial's window. If the player finishes the Decided gate before the village trusts them with the knife, Fenn fells the tree unasked and the Graft does not come. This stands unless you flip it.",
+   "why": "Your feedback that the stakes do not feel alive. design.md already holds these stakes (the refiner freed, the cave window, Fenn's felling) and the player never saw them. hs-wrong-is-the-wall keeps them from becoming fines; p2-pruning-virelune keeps the gate from waiting on the track. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
+  },
+  {
+   "id": "p2n-octalysis-kegan",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "Against Octalysis, the track was thinnest on epic meaning and on development and accomplishment, the two White Hat drives that read as thinness. The pass fixes those first (Ede freed, the cave window, the Signature's ranks) and uses Black Hat drives lightly: scarcity as mana spent on hints, loss as what the table shows is at risk. Against Kegan, P1 to P3 ask the player to hold another's frame, P4 to P6 to hold their own view without needing it accepted, and P7 to let another's view change their help; no person is labelled with a stage. Service principles are named with their sources: Egan, Schein, Miller and Rollnick, Rosenberg, Fisher and Ury, Voss, Greenleaf and Mastering Allyship's three questions. This stands unless you flip it.",
+   "why": "Your ask to align with Octalysis, emotional alchemy and service principles; design.md's Octalysis test for loot; st-kegan-lens (a lens on what a gate asks, never a rating). The books were cited from the council's reading; no page was opened in this pass. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)"
   }
  ],
  "questions": [
@@ -10256,6 +10344,35 @@
      "v": "nothing",
      "label": "Nothing, as now",
      "c": "Visitors book or leave."
+    }
+   ]
+  },
+  {
+   "id": "p2n-stakes",
+   "faces": [
+    "regent",
+    "challenger",
+    "shaman"
+   ],
+   "pass": "Pruner's track pass 2",
+   "q": "When a talk goes badly, what does the player lose?",
+   "why_you": "hs-wrong-is-the-wall stood on 2026-10-09 with \"No day is lost\", and today you said the stakes don't feel alive enough. How much a wrong pick should hurt is your preference, and the record can't rank your two statements. The answer sets what the next build adds after a wrong line. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS2_pruners-negotiation_2026-10-10.md (sprout pull request #38)",
+   "not_before": "The stakes feedback arrived today, 2026-10-10.",
+   "options": [
+    {
+     "v": "shown-only",
+     "label": "A. Only what is shown",
+     "c": "A wrong pick plays the wall and no day is lost. The cost is mana spent on hints and a smaller outcome (whose hand, the cutting's size). Stakes come only from the table line and the world."
+    },
+    {
+     "v": "close-for-day",
+     "label": "B. The person closes until tomorrow",
+     "c": "After three wrong picks in one talk (a placeholder) the person shuts their door for the day. Stakes bite, a day is lost, and hs-wrong-is-the-wall is reversed."
+    },
+    {
+     "v": "urge-walks",
+     "label": "C. The urge walks the night road (recommended)",
+     "c": "The daemon whose line the player picked waits on the Virelune road that night as a charge. The player may take the fight or decline it. Taking it costs HP and mana, and integrating the urge is how Hear under and Ripe are earned. Declining costs nothing, and the urge shows on the person's portrait next morning. No day is lost."
     }
    ]
   }
