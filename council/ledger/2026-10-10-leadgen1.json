@@ -1,0 +1,612 @@
+{
+ "date": "2026-10-10",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "coaching-pipeline",
+ "record": "council/passes/6FACE_PASS_leadgen1_2026-10-10.md",
+ "report": "/mnt/project-files/lead-gen-research/coaching-pipeline-plan.md",
+ "product": "https://github.com/johnair01/bars-engine/pull/273",
+ "called_by": "Wendell, Wendell's Coaching Practice project chat, 2026-10-10 21:55 UTC (\"I now just need to get people  to the site with the least amount of money and the highest surface area\"); thread started by the project coordinator",
+ "convened_by": "council",
+ "invoked_from": "claude-code",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    8,
+    6,
+    7,
+    7
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 42,
+   "name": "Windfall",
+   "cn": "益",
+   "pinyin": "yì",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "More is arriving than you put in.",
+   "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+   "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 25,
+    "name": "Candour",
+    "cn": "無妄",
+    "pinyin": "wú wàng",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "shows": "Your next move has no calculation in it, and that is the exposure.",
+    "image": "☳ thunder beneath ☰ heaven. Movement underneath the sky, going the sky's own way.",
+    "situation": "The name means without falsity, and the figure describes action with no calculation folded into it. The old text puts the unlooked-for misfortune here as well — the cow left tied that a passing traveller takes. Acting straight leaves you open to whatever arrives.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    8,
+    7,
+    6,
+    8
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 51,
+   "name": "Shock",
+   "cn": "震",
+   "pinyin": "zhèn",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "It went off, and it will go off again.",
+   "image": "☳ thunder beneath ☳ thunder. One firm line arriving at the bottom, and then arriving again above it.",
+   "situation": "The shock comes, and then it comes a second time. The old text keeps a wonderful detail through it: laughing words, ha ha, and the man who keeps the sacrificial wine in the cup. Terror arrives from a hundred miles off, and the one still holding the ladle is the one who inherits.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 17,
+    "name": "Following",
+    "cn": "隨",
+    "pinyin": "suí",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "shows": "You broke the pattern open, and you are now inside what it opened.",
+    "image": "☳ thunder beneath ☱ lake. Thunder has gone quiet under the water and travels where the water travels.",
+    "situation": "Falling in with something already in motion. The old text says to go indoors at dusk and rest, because the season has turned and the correct action now is to stop leading. The commentary adds that the one who follows well is in turn followed.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    7
+   ],
+   "changing_lines": [],
+   "n": 23,
+   "name": "Erosion",
+   "cn": "剝",
+   "pinyin": "bō",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "The ground under this is going and you have not said so.",
+   "image": "☷ earth beneath ☶ mountain. Five yielding lines have risen through the figure, leaving one firm line at the top.",
+   "situation": "A mountain wearing down into the ground it stands on. The process is slow, structural, and well advanced by the time anyone can see it. The counsel is to stay still and decline any move, because the season has already set its direction and takes whatever effort you spend against it.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    6,
+    9,
+    9
+   ],
+   "changing_lines": [
+    4,
+    5,
+    6
+   ],
+   "n": 20,
+   "name": "Witnessing",
+   "cn": "觀",
+   "pinyin": "guān",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "The place you watch from is itself in view.",
+   "image": "☷ earth beneath ☴ wind. Wind crossing open ground, with two firm lines up high where the view is.",
+   "situation": "The character shows a tower: a place built to look out from, and therefore a place visible from everywhere below. The figure holds looking and being looked at in one shape. The old text sets the moment after the hands are washed and before the offering is made, the interval where everyone is looking and the ceremony has yet to begin.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 16,
+    "name": "Anticipation",
+    "cn": "豫",
+    "pinyin": "yù",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "shows": "The good part has started and the event has not.",
+    "image": "☷ earth beneath ☳ thunder. Thunder coming up out of the ground, the sound arriving before the storm.",
+    "situation": "Stored energy at the point of release. The character carries both readiness and delight, and the old commentary attaches music to it — the thing that gathers a crowd before anything has happened. Preparation and pleasure are the same motion here.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    8,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 25,
+   "name": "Candour",
+   "cn": "無妄",
+   "pinyin": "wú wàng",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "Your next move has no calculation in it, and that is the exposure.",
+   "image": "☳ thunder beneath ☰ heaven. Movement underneath the sky, going the sky's own way.",
+   "situation": "The name means without falsity, and the figure describes action with no calculation folded into it. The old text puts the unlooked-for misfortune here as well — the cow left tied that a passing traveller takes. Acting straight leaves you open to whatever arrives.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    9,
+    9,
+    8,
+    8
+   ],
+   "changing_lines": [
+    2,
+    3,
+    4
+   ],
+   "n": 34,
+   "name": "Vigour",
+   "cn": "大壯",
+   "pinyin": "dà zhuàng",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "Force is available here and unaimed.",
+   "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+   "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 24,
+    "name": "Turning",
+    "cn": "復",
+    "pinyin": "fù",
+    "lines": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "What came back is one line deep.",
+    "image": "☳ thunder beneath ☷ earth. One firm line has come back at the very bottom, under five yielding ones.",
+    "situation": "The solstice, the point where light starts back. The old text gives seven days as the period of return, says friends come and it is fine, and treats going out and coming in as equally safe. What has come back is one line deep, and it is the whole event.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  }
+ ],
+ "positions": [
+  "lg-measure-first",
+  "lg-tagged-links",
+  "lg-podcast-link",
+  "lg-no-ads-yet",
+  "lg-one-live-plan",
+  "lg-guest-shows"
+ ],
+ "questions": [
+  "lg-first-pipe",
+  "lg-keep-step"
+ ],
+ "dissent": true,
+ "dissents": [
+  {
+   "face": "challenger",
+   "on": "lg-first-pipe",
+   "for": "guesting"
+  },
+  {
+   "face": "diplomat",
+   "on": "lg-keep-step",
+   "for": "daemons-list"
+  }
+ ],
+ "steps_list": "coaching-pipeline",
+ "tests": [
+  {
+   "due": "2026-10-20",
+   "test": "The Monday read has run once with Web Analytics on and the plan's Results section has its first line."
+  },
+  {
+   "due": "2026-11-07",
+   "test": "At least one pipe has sent a visitor who booked, read from Calendly's utm fields."
+  }
+ ],
+ "lessons_pending": []
+}

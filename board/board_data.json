@@ -5949,6 +5949,69 @@
    "auto": true,
    "pos": "The guessing test passes on the third round: fresh players picked the right line by wording on 19 of 45 first picks (42%), against 58% and 62% on the first two rounds and the introduction's 64%. Two moments are still guessed by everyone (the word under the word, and the one missing fact). They stay as they are until your play says otherwise, because in both the right line is the only one that uses what the person just showed.",
    "why": "The move's rule: if a fresh player can pick the right line from its wording, rewrite it. Round 3 rewrote the wrong lines as kind questions that are wrong for the moment, as hs-t1-context asked. Source: sprout campaigns/skilled-helper/part-two/guessing-test.md (sprout pull request #38)"
+  },
+  {
+   "id": "lg-measure-first",
+   "faces": [
+    "architect"
+   ],
+   "pass": "lead gen 1",
+   "auto": true,
+   "pos": "Your site now counts visits by where they came from, once you switch Web Analytics on in Vercel. When a visitor arrives with a source tag and taps a price, the tag rides along to Calendly, so each booking says which post, episode or letter sent it. Nothing a visitor writes leaves their browser. The change is bars-engine PR #273. This stands unless you flip it.",
+   "why": "On 10 October Vercel answered 'Web Analytics not found' for bars-engine, and no analytics code was in the repo, so nobody could say which pipe worked. cg-browser-only still holds. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md (six-faces-council); /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md"
+  },
+  {
+   "id": "lg-tagged-links",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "lead gen 1",
+   "auto": true,
+   "pos": "Every link to the walk carries two tags: where it came from (letter, podcast, guest, live) and which item (backers, ep4, a show's name). Each Monday a session writes visits and bookings by source into the plan's Results section. A pipe that sends nobody for three weeks is dropped; three weeks is the council's number, not yours. This stands unless you flip it.",
+   "why": "Same shape as Flirtcraft's promo-monday-numbers. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md (six-faces-council); /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md"
+  },
+  {
+   "id": "lg-podcast-link",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "lead gen 1",
+   "auto": true,
+   "pos": "MTGOA podcast show notes and clip captions end with the walk link, tagged with the episode, and each guest gets the same link with their clips. The ruled posting rhythm is unchanged. This stands unless you flip it.",
+   "why": "pod-promo-rhythm and promo-caption-cta already end captions with a link; this names the walk as that link for MTGOA. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md (six-faces-council); /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md"
+  },
+  {
+   "id": "lg-no-ads-yet",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "lead gen 1",
+   "auto": true,
+   "pos": "No paid ads, AI voice agent or new search pages until the Monday numbers show the walk books the warm visitors it already gets. Paying to send strangers before then buys a number nobody can read. This stands unless you flip it.",
+   "why": "Money is reserved to you, and cg-money stands; this spends nothing. The ElevenLabs and Zeely research is in /mnt/project-files/lead-gen-research/. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md (six-faces-council); /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md"
+  },
+  {
+   "id": "lg-one-live-plan",
+   "faces": [
+    "regent"
+   ],
+   "pass": "lead gen 1",
+   "auto": true,
+   "pos": "The coaching pipeline plan is the one live plan for coaching leads, with a results line for each pipe every Monday. The twelve earlier plans in the Library stay where they are as reference. This stands unless you flip it.",
+   "why": "None of the twelve records a result; the Dream 100 has 4 of 100 names and the Ideal Reader Matrix says NOT YET POPULATED. Transcend and include keeps them. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md (six-faces-council); /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md"
+  },
+  {
+   "id": "lg-guest-shows",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "lead gen 1",
+   "auto": true,
+   "pos": "The Outreach tab gains a list of shows you could guest on, built from the September audience research (for example Finding Our Way and The Daily Evolver), every one marked Identified. Nobody is contacted until you send. This stands unless you flip it.",
+   "why": "Same pattern as pod-guests-list for Flirtcraft; anything that names a person stays yours. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md (six-faces-council); /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md"
   }
  ],
  "questions": [
@@ -10137,6 +10200,62 @@
      "v": "root-cave",
      "label": "Root and the Cave of Lessons",
      "c": "The Sprout slice, the wave battle and the Skilled Helper encounters park until 10-17."
+    }
+   ]
+  },
+  {
+   "id": "lg-first-pipe",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "lead gen 1",
+   "q": "Which pipe gets your hours first? The council recommends the letter to backers and friends, with the podcast links.",
+   "why_you": "Only you hold your hours, and the letter goes out under your name. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md; the draft letter is at the end of /mnt/project-files/lead-gen-research/coaching-pipeline-plan.md.",
+   "not_before": "The walk went live on 10 October, so there was nothing to send people to before.",
+   "options": [
+    {
+     "v": "letter",
+     "label": "The letter to backers and friends (council lean)",
+     "c": "You rewrite and send the draft; podcast links go on from the next episode. It tests the walk with people who trust you."
+    },
+    {
+     "v": "guesting",
+     "label": "Guesting on other shows (Challenger)",
+     "c": "Claude builds the guest-show list first and drafts pitches for you to send; it is the only pipe that reaches people who have never heard of you."
+    },
+    {
+     "v": "live",
+     "label": "A free monthly live session",
+     "c": "Claude drafts the first event page and post; you pick the date and host it."
+    }
+   ]
+  },
+  {
+   "id": "lg-keep-step",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "lead gen 1",
+   "q": "What does a visitor who does not book get to keep? The council recommends sending the walk to themselves from their own mail app.",
+   "why_you": "Only you can change cg-browser-only, and the Meet Your Daemons emails are in your voice. Source: council/passes/6FACE_PASS_leadgen1_2026-10-10.md; /mnt/project-files/Meet Your Daemons - Seven Email Series v0.md.",
+   "not_before": "The walk's centre was settled only on 2026-10-09.",
+   "options": [
+    {
+     "v": "mail-self",
+     "label": "Send it to myself (council lean)",
+     "c": "A button opens their own mail app with what they carried in. Nothing is stored and no ruling changes."
+    },
+    {
+     "v": "daemons-list",
+     "label": "Opt in to the Meet Your Daemons emails (Diplomat)",
+     "c": "The site keeps a list of emails and sends the seven-email series; this changes cg-browser-only and needs your edit of the series."
+    },
+    {
+     "v": "nothing",
+     "label": "Nothing, as now",
+     "c": "Visitors book or leave."
     }
    ]
   }
