@@ -5551,6 +5551,90 @@
    "auto": true,
    "pos": "Ede stays the teacher in Act II through a letter she gives with the lit lamp at quest 7, opened at Virelune's gate, one short line per beat. If the letter reads as too convenient in playtest, the old seed-keeper who crossed with Ede's family teaches instead.",
    "why": "Round 7: an existing character first, and the move keeps a text's teacher across sections. The settlement is frozen in Act II, so she cannot come in person. The Diplomat flags the letter as the part to test. Source: part-two/story.md, The teacher"
+  },
+  {
+   "id": "sg-talk-and-items",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "Story moves through talk with people and the items they hand over. Each story item enters the pack with one line from the person who gave it.",
+   "why": "Your note today: 'Talking with NPCs and tracking quest and story items seems to be the way to go.' Ede's quests already end with an item. Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "sg-five-triggers",
+   "faces": [
+    "architect"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "Sprout's story triggers are five: talking to someone, entering a zone once, a time window or festival, an item given or held, and a fact already delivered. Mail and tile-touch triggers wait until a beat needs them.",
+   "why": "design.md line 308 (Decided) says beats fire on state, place and time window; scene staging starts a scene on entering its chamber; Ede hands items over at the end of a talk. Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "sg-one-syntax",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "Scenes, dialogue and quests share one condition syntax, read by one function. The dialogue schema's unused conditions field adopts it.",
+   "why": "Two selectors do one job today: the mirror's 'when' and the dialogue schema's 'conditions', which the schema says are 'Not interpreted here.' Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "sg-state-store",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "The slice gets one story-state store (facts delivered, items held, lamp nodes lit, the reading) before any new story content is built.",
+   "why": "No scene can play without it, and the slice keeps no story state today (found by the Skeptic daemon, confirmed in slice/). Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "sg-choices-in-talk",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "A choice lives inside a talk: it picks a reply and adds to the reading's counts. It never forks an event.",
+   "why": "Story as mirror; your overrule of cave-cycle-roles ('we want people to have a similar experience'); your overrule of hs-tending-screen (tending runs in the ordinary talk box). Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "sg-items-read-as-held",
+   "faces": [
+    "regent"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "Story conditions test whether an item is held. The item's play-style variant counts toward the reading only.",
+   "why": "The story pipeline: the reading is the only story input besides plot progress. Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "sg-review-by-playing",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "Each story beat gets a phone link that forces its state and plays it, so you review a beat by playing it.",
+   "why": "Scene staging's spec already plans a forced reading with ?mirror=; Stardew modders preview events the same way. Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
+  },
+  {
+   "id": "sg-flag-fit",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "story tracking 2",
+   "auto": true,
+   "pos": "A test runs before the shared syntax replaces the mirror's: re-render all ten scenes from derived flags and check every mirror player hears the same text.",
+   "why": "Pass three's rule that a check must show it earns its keep; the research rests on search summaries, not opened pages. Source: sprout docs/story-mirror/6FACE_PASS4_2026-10-10.md (sprout #35)"
   }
  ],
  "questions": [
@@ -9489,6 +9573,34 @@
      "v": "later",
      "label": "After about six more milestones",
      "c": "Nothing is built until the scene folder is big enough to need it. Until then a file list answers 'where is milestone N?'."
+    }
+   ]
+  },
+  {
+   "id": "sg-story-list",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "story tracking 2",
+   "q": "How should players keep track of story quests? The faces split between the diary alone and a short list.",
+   "why_you": "It is how you want players to feel guided, and it adds or removes a screen. The record plans an event diary and a bounty board but says nothing about story quests.",
+   "not_before": "No pass asked about story quests until your note of 10 October about 'tracking quest and story items'.",
+   "options": [
+    {
+     "v": "diary",
+     "label": "The diary only (Challenger)",
+     "c": "The planned diary lists what has happened, and people's lines hint at what is next, so no new screen is built."
+    },
+    {
+     "v": "short",
+     "label": "A short list (Diplomat, Shaman)",
+     "c": "A few lines, each a person and what they want, cleared when done, with no dates or counts, like Animal Crossing's task list. It adds one small screen beside the diary."
+    },
+    {
+     "v": "journal",
+     "label": "A full quest journal",
+     "c": "Every quest with its steps, like Stardew's quest log. It gives the most guidance and takes the most screen."
     }
    ]
   }
@@ -18152,7 +18264,7 @@
    "name": "Tracking the Story",
    "repo": "sprout",
    "element": "metal",
-   "record": "sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md; /mnt/project-files/story/story-management-research.md",
+   "record": "sprout docs/story-mirror/6FACE_PASS3_2026-10-10.md and 6FACE_PASS4_2026-10-10.md; /mnt/project-files/story/",
    "intro": "It wants the story's beats written and tracked the way studios do, sized for Sprout: the mirror's scenes checked for silent misfires, voices nobody hears made visible, and a queue of what waits on you.",
    "rounds": [
     {
@@ -18167,6 +18279,22 @@
       "st-voice-coverage",
       "st-line-ids-later",
       "st-one-home"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "sg-story-list"
+     ],
+     "positions": [
+      "sg-talk-and-items",
+      "sg-five-triggers",
+      "sg-one-syntax",
+      "sg-state-store",
+      "sg-choices-in-talk",
+      "sg-items-read-as-held",
+      "sg-review-by-playing",
+      "sg-flag-fit"
      ]
     }
    ]
