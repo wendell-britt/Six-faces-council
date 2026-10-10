@@ -16639,6 +16639,122 @@
      "regent"
     ],
     "pass": "studio 2"
+   },
+   "ttc-encounters-part2": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:33:25.667Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p2-graft-spirit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:33:35.900Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p2-guess-test": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:33:44.045Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "lg-measure-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:33:50.740Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "lead gen 1"
+   },
+   "lg-tagged-links": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:33:55.949Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "lead gen 1"
+   },
+   "lg-podcast-link": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:34:01.483Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "lead gen 1"
+   },
+   "lg-no-ads-yet": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:34:09.648Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "lead gen 1"
+   },
+   "lg-one-live-plan": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:34:17.366Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "lead gen 1"
+   },
+   "lg-guest-shows": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:34:23.497Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "lead gen 1"
+   },
+   "p2-blocks-from-canon": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:34:31.314Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 3"
    }
   },
   "questions": {
@@ -18334,6 +18450,30 @@
      "sage"
     ],
     "pass": "studio 1, round 2"
+   },
+   "lg-first-pipe": {
+    "decision": "guesting",
+    "label": "Guesting on other shows (Challenger)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:32:54.785Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "lead gen 1"
+   },
+   "lg-keep-step": {
+    "decision": "daemons-list",
+    "label": "Opt in to the Meet Your Daemons emails (Diplomat)",
+    "recorded": "2026-10-10",
+    "saved_at": "2026-10-10T22:33:18.735Z",
+    "record": "council/ledger/2026-10-10-pull-223431.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "lead gen 1"
    }
   },
   "causes": {
