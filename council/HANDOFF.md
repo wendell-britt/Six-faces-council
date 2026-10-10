@@ -9,7 +9,7 @@ CLAUDE.md, this file and the board.
 Pass: `council/passes/6FACE_PASS_studio1_2026-10-10.md`; report `/mnt/project-files/studio/studio-pipeline.md`. Board
 battle `fr-studio` round 1: questions `st-wip`, `st-pilot`, `st-marketing-start`, and ten positions. Wendell answered 2026-10-10 20:46 to 20:48 (ledger
 `2026-10-10-pull-204840.json`): `st-wip` = three, `st-pilot` = big-mind (the Big Mind cave), `st-marketing-start` =
-hook-now (a private hook test); the ten positions stand. Next: the Root call sheet (Sonnet), then this file split into call sheets by strand (Sonnet), then the pilot through
+hook-now (a private hook test); the ten positions stand. Root call sheet drafted 2026-10-10 (wendell-britt/root-game `CALLSHEET.md`, 3.6 KB, draft PR; test 1 below measures it). Next: this file split into call sheets by strand (Sonnet), then the pilot through
 gates 0 to 2. Tests due 2026-10-17 are at the end of the pass.
 
 ## Open on 2026-10-09, Cave of Lessons pass 3 (avatar, labyrinth, breath, block branches)
