@@ -6421,8 +6421,8 @@
    ],
    "pass": "Pruner's track pass 2",
    "auto": true,
-   "pos": "A partial line (It holds) no longer ends the moment. It is struck like a wrong line, so the player narrows the choices and then picks the right path. A wrong line always spawns its daemon on the road. A partial rolls a six-sided die and spawns on 1 to 3: its daemon, or a spirit of the person's element need where it has none. The 1 to 3 odds are a council choice. This stands unless you flip it.",
-   "why": "Your words in chat, 2026-10-11: “For the it holds options the reward should be process of elimination then they should be able to choose the correct paths. It holds should roll a die to see if a daemon or spirit spawns wrong answers spawn a daemon or spirit”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml (sprout pull request #38)"
+   "pos": "A partial line (It holds) no longer ends the moment. It is struck like a wrong line, so the player narrows the choices and then picks the right path. A wrong line always spawns its daemon on the road. A partial rolls a die and spawns on 1 to 3: its daemon, or a spirit of the person's element need where it has none. The die grows with the Signature rank, from d4 at rank 1 to d12 at rank 5, so a skilled player spawns less (75% down to 25%). The die sizes and the 1-to-3 face are council choices. This stands unless you flip it.",
+   "why": "Your words in chat, 2026-10-11: “For the it holds options the reward should be process of elimination then they should be able to choose the correct paths. It holds should roll a die to see if a daemon or spirit spawns wrong answers spawn a daemon or spirit”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml (sprout pull request #38) The growing die is from your next note: “The odds should connect to a die that increased through play. The more skilled you get the less likely a daemon is spawned when you make a mistake”."
   }
  ],
  "questions": [
