@@ -6326,6 +6326,92 @@
    "auto": true,
    "pos": "Yun's next session teaches the three rules in your order: hold a posture (construct), strike from it (express), answer a partner (test).",
    "why": "Your essay of 2026-10-11: \"One method constructs. Another method expresses. Another method tests.\" Source: root-game council/6FACE_PASS4_2026-10-11.md (root-game #20)"
+  },
+  {
+   "id": "wave-room-validate-first",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "In the WAVE room the fork never rules on whether a feeling may be there; Validate has already granted that. The fork asks where the charge is pushing your next move: toward what you want, or away from it. This stands unless you flip it.",
+   "why": "Your order puts Validate before the fork. The Skeptic daemon found a goal verdict followed by an exit reads as suppression in costume. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "wave-room-release",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "A charge that goes leaves on the cave's out-breath at its own pace, and nothing is pushed if you stay still. The door stays ajar, and a light in its colour, named by you, stays on the threshold for the sitting. This stands unless you flip it.",
+   "why": "Your 'on an exhale'. The Emotional Body daemon: 'That wording makes the player the bouncer'; Focusing sets a feeling to one side rather than throwing it out. No step waits on a breath (cave-breath-in-the-cave). Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "wave-room-stay-move",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "A charge that stays gets the staged 3-2-1 aimed at your goal, and it ends with one next move you write. This stands unless you flip it.",
+   "why": "Your 'a 321 on how best to align it with the goals', and cave-321-one-build. The Skeptic: otherwise calling everything aligned costs nothing. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "wave-room-name-element",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "Acknowledge asks for a name you write and one of the five elements, with 'I don't know' offered. A charge can come into the room without either. This stands unless you flip it.",
+   "why": "Your 'give it a name and an element'; the cave pool's 'I don't know'; wave-naming. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "wave-room-appreciate-optional",
+   "faces": [
+    "regent"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "Appreciate offers Not now, which moves on and is not a block. This stands unless you flip it.",
+   "why": "Your 'optional appreciate'. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "wave-room-parts-restart",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "A part that says it belongs comes back to the door as a new charge and starts at Welcome, with its own feeling, not the first charge's. This stands unless you flip it.",
+   "why": "Your 'that part would then start the cycle over again'. The Emotional Body: a visitor with its own 3-2-1, never a rejection. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "wave-room-stop",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "A round ends when you say it has settled, with the reading after shown beside the reading before and no zero target. After three rounds in one sitting the room offers to rest the charge by the door with a lantern; resting is not a skip. Three is the council's placeholder until your play. This stands unless you flip it.",
+   "why": "'Until the charge is fully metabolized' has no stop on a phone. The Skeptic: a 0 on a 0 to 10 scale invites a false zero. cave-daemon-wall keeps no skip. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "wave-room-first-slice",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "WAVE room 1",
+   "auto": true,
+   "pos": "The first build is the room alone, reached from the body map, with both branches and the restart, in its own thread beside your cave play. The link to the cave follows your answer to wave-room-cave-link; daemons and alchemy moves follow your play of the slice. This stands unless you flip it.",
+   "why": "Your 'the game can be extended'. The Regent's lesson of 3 October: work that serves the gate runs beside it. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
   }
  ],
  "questions": [
@@ -10736,6 +10822,63 @@
      "v": "body",
      "label": "C. No table: openings read from the body's lean each turn",
      "c": "A larger build: the opening follows the measured weight and turn, not a list."
+    }
+   ]
+  },
+  {
+   "id": "wave-room-cave-link",
+   "faces": [
+    "regent",
+    "shaman",
+    "architect"
+   ],
+   "pass": "WAVE room 1",
+   "q": "When a daemon shows up in the cave, where is it worked? The council recommends offering both, with a lantern holding the spot.",
+   "why_you": "Your note says the work happens 'in the home rather than the exploratory cave portion', while your board answer of 10 October put the staged 3-2-1 in the passage, and the faces split (the Shaman: move it home; the Architect and Diplomat: both; the Challenger and Regent: the room alone first). It decides what the cave's daemon stop becomes.",
+   "not_before": "The room did not exist until your note of 11 October. The analysis is in council/passes/6FACE_PASS_wave-room1_2026-10-11.md.",
+   "options": [
+    {
+     "v": "both",
+     "label": "Both, by lantern (recommended)",
+     "c": "At the daemon the cave offers: work it here in the staged 3-2-1, or take it home. Taking it home leaves a lantern at the spot, the charge comes through the room's door with its feeling already known, and the lantern is the way back. No skip is lost."
+    },
+    {
+     "v": "home",
+     "label": "Always home",
+     "c": "The passage keeps the meeting and its three questions, and all the working moves to the room. The staged 3-2-1 in the passage is retired."
+    },
+    {
+     "v": "alone",
+     "label": "The room alone for now",
+     "c": "The cave stays as built, and the room is its own page reached from the body map. You decide the link after playing both."
+    }
+   ]
+  },
+  {
+   "id": "wave-room-goal",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "WAVE room 1",
+   "q": "What are the goals a charge is checked against in the WAVE room? The council recommends asking in the moment.",
+   "why_you": "The record has the game's Exhale question but no ruling on what 'goals' means, and the second and third options change what is stored and whether sign-in is needed.",
+   "not_before": "No step asked about goals until your note of 11 October.",
+   "options": [
+    {
+     "v": "now",
+     "label": "Ask in the moment (recommended)",
+     "c": "At the fork the room asks 'What do you actually want right now?', as the game's Exhale does. Nothing is stored."
+    },
+    {
+     "v": "set",
+     "label": "Goals you set once",
+     "c": "On the first visit you write up to three goals. They stay on your device and show at every fork."
+    },
+    {
+     "v": "quests",
+     "label": "From your quests",
+     "c": "The goals come from your bars-engine quests when you are signed in. Needs sign-in on the cave page."
     }
    ]
   }
