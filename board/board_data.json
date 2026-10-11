@@ -17960,6 +17960,75 @@
      "architect"
     ],
     "pass": "Pruner's track pass 2"
+   },
+   "bmw-offer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:53:18.220Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "big mind cave 2"
+   },
+   "bmw-game-wave": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:53:30.199Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "big mind cave 2"
+   },
+   "bmw-player-names": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:53:37.187Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "big mind cave 2"
+   },
+   "bmw-number-stays": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:53:43.471Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "big mind cave 2"
+   },
+   "bmw-record": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:53:49.538Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "big mind cave 2"
+   },
+   "bmw-shown": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:54:19.663Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "big mind cave 2"
    }
   },
   "questions": {
@@ -19774,6 +19843,33 @@
      "diplomat"
     ],
     "pass": "WAVE room 1"
+   },
+   "bmw-whose-charge": {
+    "decision": "two",
+    "label": "Two charges, yours and its",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:51:16.863Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "architect"
+    ],
+    "pass": "big mind cave 2"
+   },
+   "bmw-block": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:53:04.863Z",
+    "record": "council/ledger/2026-10-11-pull-235419.json (six-faces-council)",
+    "steer": "One should be able to sit down and do a version of the wave room on the part in front of them while they are in the cave. They should be able to do this when a charge emerges for them not just when they are in front of a daemon. The charge spirits can come with then throughout the cave until they are dismissed. The daemons should be able to respond to how many spirits are around. They might be protecting the self from the charge they are carrying",
+    "faces": [
+     "architect",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "big mind cave 2"
    }
   },
   "causes": {
