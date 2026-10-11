@@ -17827,6 +17827,18 @@
      "shaman"
     ],
     "pass": "WAVE room 1"
+   },
+   "p2n-holds-eliminates": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T23:29:57.523Z",
+    "record": "council/ledger/2026-10-11-pull-232957.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "Pruner's track pass 2"
    }
   },
   "questions": {
