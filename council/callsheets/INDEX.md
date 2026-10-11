@@ -4,7 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
-- [wave-room](wave-room.md), 2026-10-11: pass 1 done; build the room's first slice; `wave-room-cave-link` and `wave-room-goal` on the board.
+- [wave-room](wave-room.md), 2026-10-11: both questions answered (lantern and on its own; goal asked in the moment); build the first slice in a fresh thread.
 - [root](root.md), 2026-10-11: play page built (root-game #17, https://claude.ai/artifact/6RqthVDD7sGbjVtHqEDNo3); waiting on his phone play (T1), then five friends cold.; planted-feet stances in root-game #19 (https://claude.ai/artifact/A4oeXe6BYv2T8e7445fuLi); attack and defense (postures open gates, charge, weak spot) in root-game #20 on the same link, rows on the board, ex-posture-table open
 - [coaching-pipeline](coaching-pipeline.md), 2026-10-10: guesting first, daemons opt-in on the coaching page (draft PR); Web Analytics on, PR #273; Monday reads.
 - [studio](studio.md), 2026-10-10: cave pilot through gates 0 to 2; Sprout mock v2 and second cold round; retro 10-17.
