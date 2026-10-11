@@ -20899,7 +20899,7 @@
    "name": "The Big Mind Cave",
    "repo": "sprout",
    "element": "water",
-   "record": "sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md; /mnt/project-files/big-mind/",
+   "record": "sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md; /mnt/project-files/big-mind/; sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md",
    "intro": "It wants a cave journey to the centre of the self, built from the Big Mind transcript the way the Skilled Helper became a campaign: guardians to meet, a part secretly speaking to find and set aside, the child and the player self at the centre, and later a world spawned from what the player keeps.",
    "rounds": [
     {
@@ -20922,6 +20922,21 @@
       "bm-phone-first",
       "bm-world-later",
       "bm-name-internal"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "bmw-whose-charge",
+      "bmw-block"
+     ],
+     "positions": [
+      "bmw-offer",
+      "bmw-game-wave",
+      "bmw-player-names",
+      "bmw-number-stays",
+      "bmw-record",
+      "bmw-shown"
      ]
     }
    ]
