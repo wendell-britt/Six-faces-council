@@ -6230,6 +6230,102 @@
    "auto": true,
    "pos": "The next Root session builds the stage-first page and Yun's first session, and its reply carries a link you can tap on your phone. Five strangers then play it.",
    "why": "It waits on none of your answers and can be undone; your phone-testing rule asks for a tappable link. The Challenger dissents: it would test today's page with strangers first. Source: root-game council/6FACE_PASS2_2026-10-10.md"
+  },
+  {
+   "id": "rs-planted-feet",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent"
+   ],
+   "pass": "root 3",
+   "auto": true,
+   "pos": "On Root's play page no stance moves the feet, and Sun-style follow steps are off too.",
+   "why": "Your playtest note of 2026-10-11 (\"The feet aren't supposed to move\"), and fixed-step push hands keeps the five steps by weight and waist. Source: root-game council/6FACE_PASS3_2026-10-11.md"
+  },
+  {
+   "id": "rs-shapes",
+   "faces": [
+    "architect"
+   ],
+   "pass": "root 3",
+   "auto": true,
+   "pos": "Each stance is a shape over planted feet: weight shift, waist turn, lean, sink and hand reach, sized larger so it reads without a step.",
+   "why": "Your note asked for shapes that hold the vibe of the stances. The numbers are choices. Source: root-game council/6FACE_PASS3_2026-10-11.md"
+  },
+  {
+   "id": "rs-energy-centres",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "root 3",
+   "auto": true,
+   "pos": "Each stance lights its energy centre with a line of intent: Advance the heart, Retreat the kidneys, Look left the liver, Gaze right the lungs, Central equilibrium the belly.",
+   "why": "Your note named energy centres; Suwen chapter 52 gives the directions (liver left, lungs right, heart outside, kidneys inside, spleen the messenger). Source: root-game council/6FACE_PASS3_2026-10-11.md"
+  },
+  {
+   "id": "rs-lab-unchanged",
+   "faces": [
+    "regent"
+   ],
+   "pass": "root 3",
+   "auto": true,
+   "pos": "The lab page keeps its stepping stances until you approve the play page's shapes.",
+   "why": "root-game CLAUDE.md: the main page changes only when the numbers pass. Source: root-game council/6FACE_PASS3_2026-10-11.md"
+  },
+  {
+   "id": "ex-open-gates",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "root 4",
+   "auto": true,
+   "pos": "On Root's play page each posture opens two gates where its intent goes, and they glow on the pad. A strike through a closed gate is forced and lands at 0.7.",
+   "why": "Your note of 2026-10-11: postures \"create openings for specific attacks\". Source: root-game council/6FACE_PASS4_2026-10-11.md (root-game #20)"
+  },
+  {
+   "id": "ex-charge",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "root 4",
+   "auto": true,
+   "pos": "Holding a posture builds its feeling, one bead a turn over the head, up to three. A strike through an open gate spends them all for 1 + 0.25 a bead.",
+   "why": "Your note: \"The attack can be fueled by emotional energy\". The Player daemon: the strike should come out of something held. Source: root-game council/6FACE_PASS4_2026-10-11.md (root-game #20)"
+  },
+  {
+   "id": "ex-weak-gate",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "root 4",
+   "auto": true,
+   "pos": "Each posture has one gate it cannot answer cleanly. With two beads, a strike through it breaks even the right answer and lands at half.",
+   "why": "Your note: postures help \"to break defenses\". Source: root-game council/6FACE_PASS4_2026-10-11.md (root-game #20)"
+  },
+  {
+   "id": "ex-cycle-kept",
+   "faces": [
+    "regent"
+   ],
+   "pass": "root 4",
+   "auto": true,
+   "pos": "The gate-answer cycle and the restraint cycle stay as built under the new layer, and the lab page does not change.",
+   "why": "The right answer still leads the strike into emptiness except at a broken weak spot. Source: root-game council/6FACE_PASS4_2026-10-11.md (root-game #20)"
+  },
+  {
+   "id": "ex-curriculum",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "root 4",
+   "auto": true,
+   "pos": "Yun's next session teaches the three rules in your order: hold a posture (construct), strike from it (express), answer a partner (test).",
+   "why": "Your essay of 2026-10-11: \"One method constructs. Another method expresses. Another method tests.\" Source: root-game council/6FACE_PASS4_2026-10-11.md (root-game #20)"
   }
  ],
  "questions": [
@@ -10613,6 +10709,33 @@
      "v": "laptop",
      "label": "C. Laptops first; phones later",
      "c": "The first link says laptop; phone players wait."
+    }
+   ]
+  },
+  {
+   "id": "ex-posture-table",
+   "faces": [
+    "architect"
+   ],
+   "pass": "root 4",
+   "q": "Which gates should each posture open, and which should it leave weak?",
+   "why_you": "No classical source gives a posture-to-gate table; the council read one from the engine's leans (Advance opens Press and Shoulder and is weak to Pluck; Retreat opens Roll back and Pluck, weak to Press; Look left opens Roll back and Split, weak to Shoulder; Gaze right opens Split and Elbow, weak to Roll back; Central equilibrium opens Ward off and Push, weak to Ward off). You hold the practice that would ground it. Source: root-game council/6FACE_PASS4_2026-10-11.md (root-game #20)",
+   "not_before": "Postures had no job in the exchange until your note today.",
+   "options": [
+    {
+     "v": "council",
+     "label": "A. Keep the council's table (council lean)",
+     "c": "Play it as built; the tests say whether players can tell why a hit landed."
+    },
+    {
+     "v": "mine",
+     "label": "B. Your own table, in the steer box",
+     "c": "The next build swaps the table; the rules stay."
+    },
+    {
+     "v": "body",
+     "label": "C. No table: openings read from the body's lean each turn",
+     "c": "A larger build: the opening follows the measured weight and turn, not a list."
     }
    ]
   }
@@ -20352,6 +20475,29 @@
       "rp-tell-on-bodies",
       "rp-kill-line",
       "rp-shell-first"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [],
+     "positions": [
+      "rs-planted-feet",
+      "rs-shapes",
+      "rs-energy-centres",
+      "rs-lab-unchanged"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [
+      "ex-posture-table"
+     ],
+     "positions": [
+      "ex-open-gates",
+      "ex-charge",
+      "ex-weak-gate",
+      "ex-cycle-kept",
+      "ex-curriculum"
      ]
     }
    ]
