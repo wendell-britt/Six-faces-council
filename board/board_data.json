@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10",
+ "updated": "2026-10-11",
  "positions": [
   {
    "id": "build",
@@ -17267,6 +17267,90 @@
      "regent"
     ],
     "pass": "3D build, 3-2-1"
+   },
+   "p2n-wrong-opens-fights": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:45:15.621Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "Pruner's track pass 2"
+   },
+   "rp-stage-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:46:30.824Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "root 2, round 1"
+   },
+   "rp-new-page": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:46:40.752Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "root 2, round 1"
+   },
+   "rp-yun-teaches": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:46:48.637Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "root 2, round 1"
+   },
+   "rp-tell-on-bodies": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:46:57.043Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "root 2, round 1"
+   },
+   "rp-kill-line": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:47:05.175Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "root 2, round 1"
+   },
+   "rp-shell-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:47:09.828Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "root 2, round 1"
    }
   },
   "questions": {
@@ -19012,6 +19096,39 @@
      "challenger"
     ],
     "pass": "3D build, 3-2-1"
+   },
+   "rp-park-physics": {
+    "decision": "beside",
+    "label": "Physics runs beside, one session in three",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:45:43.052Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "root 2, round 1"
+   },
+   "rp-first-players": {
+    "decision": "friends",
+    "label": "Friends and family from a link, cold (council lean)",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:45:53.041Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "root 2, round 1"
+   },
+   "rp-phone-cloth": {
+    "decision": "shared",
+    "label": "The shared cloth pass on phones (council lean)",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T00:46:19.906Z",
+    "record": "council/ledger/2026-10-11-pull-004709.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "root 2, round 1"
    }
   },
   "causes": {

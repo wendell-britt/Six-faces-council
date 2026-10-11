@@ -1,0 +1,83 @@
+{
+ "date": "2026-10-11",
+ "kind": "board-pull",
+ "newest_save": "2026-10-11T00:47:09.828Z",
+ "answers": {
+  "p2n-wrong-opens-fights": {
+   "kind": "position",
+   "savedAt": "2026-10-11T00:45:15.621Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rp-park-physics": {
+   "kind": "question",
+   "choice": "beside",
+   "savedAt": "2026-10-11T00:45:43.052Z",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-first-players": {
+   "kind": "question",
+   "choice": "friends",
+   "savedAt": "2026-10-11T00:45:53.041Z",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-phone-cloth": {
+   "kind": "question",
+   "choice": "shared",
+   "savedAt": "2026-10-11T00:46:19.906Z",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-stage-first": {
+   "kind": "position",
+   "savedAt": "2026-10-11T00:46:30.824Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-new-page": {
+   "kind": "position",
+   "savedAt": "2026-10-11T00:46:40.752Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-yun-teaches": {
+   "kind": "position",
+   "savedAt": "2026-10-11T00:46:48.637Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-tell-on-bodies": {
+   "kind": "position",
+   "savedAt": "2026-10-11T00:46:57.043Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-kill-line": {
+   "kind": "position",
+   "savedAt": "2026-10-11T00:47:05.175Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rp-shell-first": {
+   "kind": "position",
+   "savedAt": "2026-10-11T00:47:09.828Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/rp-park-physics: Physics runs beside, one session in three",
+  "questions/rp-first-players: Friends and family from a link, cold (council lean)",
+  "questions/rp-phone-cloth: The shared cloth pass on phones (council lean)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
