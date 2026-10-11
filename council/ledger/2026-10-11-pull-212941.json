@@ -1,0 +1,73 @@
+{
+ "date": "2026-10-11",
+ "kind": "board-pull",
+ "newest_save": "2026-10-11T21:29:41.105Z",
+ "answers": {
+  "wave-room-cave-link": {
+   "kind": "question",
+   "choice": "both",
+   "savedAt": "2026-10-11T21:28:45.075Z",
+   "steer": ""
+  },
+  "wave-room-goal": {
+   "kind": "question",
+   "choice": "now",
+   "savedAt": "2026-10-11T21:28:53.334Z",
+   "steer": ""
+  },
+  "wave-room-release": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:02.922Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "wave-room-stay-move": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:07.456Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "wave-room-name-element": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:13.139Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "wave-room-appreciate-optional": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:15.643Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "wave-room-parts-restart": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:22.178Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "wave-room-stop": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:27.820Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "wave-room-first-slice": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:31.903Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "wave-room-validate-first": {
+   "kind": "position",
+   "savedAt": "2026-10-11T21:29:41.105Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/wave-room-cave-link: Both, by lantern",
+  "questions/wave-room-goal: Ask in the moment"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
