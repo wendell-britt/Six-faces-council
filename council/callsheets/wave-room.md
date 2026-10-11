@@ -47,7 +47,7 @@ through the reach test and onto the board only if the record cannot carry it.
 
 ## Waiting on
 His phone play of the room by 2026-10-18 still gates the daemon and alchemy extensions. PR #276 (first slice) is open into the
-cave branch. Nothing on the board.
+cave branch. The board has no open rows for the room.
 
 ## Files
 - `council/passes/6FACE_PASS_wave-room1_2026-10-11.md`, ledger `2026-10-11-wave-room1-pass.json`
