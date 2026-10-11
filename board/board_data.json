@@ -17722,6 +17722,100 @@
      "diplomat"
     ],
     "pass": "root 4"
+   },
+   "wave-room-release": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:02.922Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-stay-move": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:07.456Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-name-element": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:13.139Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-appreciate-optional": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:15.643Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-parts-restart": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:22.178Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-stop": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:27.820Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-first-slice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:31.903Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-validate-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:29:41.105Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "WAVE room 1"
    }
   },
   "questions": {
@@ -19511,6 +19605,31 @@
      "architect"
     ],
     "pass": "root 4"
+   },
+   "wave-room-cave-link": {
+    "decision": "both",
+    "label": "Both, by lantern",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:28:45.075Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman",
+     "architect"
+    ],
+    "pass": "WAVE room 1"
+   },
+   "wave-room-goal": {
+    "decision": "now",
+    "label": "Ask in the moment",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T21:28:53.334Z",
+    "record": "council/ledger/2026-10-11-pull-212941.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "WAVE room 1"
    }
   },
   "causes": {
