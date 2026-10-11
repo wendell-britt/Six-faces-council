@@ -6423,6 +6423,69 @@
    "auto": true,
    "pos": "A partial line (It holds) no longer ends the moment. It is struck like a wrong line, so the player narrows the choices and then picks the right path. A wrong line always spawns its daemon on the road. A partial rolls a die and spawns on 1 to 3: its daemon, or a spirit of the person's element need where it has none. The die grows with the Signature rank, one die per rank: d4, d6, d8, d10, d12, d20, d100. Ranks 1 to 5 open in Part II and 6 and 7 later, so a skilled player spawns less (75% at d4, 25% at d12, 3% at d100). The die sizes and the 1-to-3 face are council choices. This stands unless you flip it.",
    "why": "Your words in chat, 2026-10-11: “For the it holds options the reward should be process of elimination then they should be able to choose the correct paths. It holds should roll a die to see if a daemon or spirit spawns wrong answers spawn a daemon or spirit”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml (sprout pull request #38) The growing die is from your next note: “The odds should connect to a die that increased through play. The more skilled you get the less likely a daemon is spawned when you make a mistake”. Then: “Let’s go all the way to d20 and d100”."
+  },
+  {
+   "id": "bmw-offer",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "big mind cave 2",
+   "auto": true,
+   "pos": "Every charge poll, in every voice's chamber, gets a \"Breathe with it (W.A.V.E.)\" button under the slider. It is never required and never a condition of the voice stepping aside.",
+   "why": "Your note: \"One should also be able to do W.A.V.E. in the cave\". The Shaman's lesson of 9 September: an offer is not a requirement. Your trust rule of 10 October (charge 3 or below) stays as it is. Source: sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md"
+  },
+  {
+   "id": "bmw-game-wave",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "big mind cave 2",
+   "auto": true,
+   "pos": "The cave's W.A.V.E. is the game's breathed one: seven steps, one breath each, and stopping at any rung of the A's counts as complete. You do it standing where you are while the walls breathe, with no walk, because the voice blocks the way.",
+   "why": "Your rulings oag-wave-breath and oag-wave-ladder, and cave-spine for the Cave of Lessons. The book's four-step form stays untouched (oag-book-untouched). Source: sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md"
+  },
+  {
+   "id": "bmw-player-names",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "big mind cave 2",
+   "auto": true,
+   "pos": "At Acknowledge you name the feeling in one word, then pick its element from the five. The game never guesses the element from your word.",
+   "why": "The book's Acknowledge: \"name it to yourself, in one word\". The five feelings are the elements (oag-clean-up-moves). The Emotional Body daemon's warning against settling the meaning for you. Source: sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md"
+  },
+  {
+   "id": "bmw-number-stays",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "big mind cave 2",
+   "auto": true,
+   "pos": "After a W.A.V.E. the charge poll comes back as it does after any answer, and the easing plays only if you give a lower number. The W.A.V.E. never sets, scores or nudges the number.",
+   "why": "Your words of 10 October: \"they decide the charge amount\". The Challenger's warning: a W.A.V.E. right before the poll can become a lever for trust. A dated test reads it off your saves. Source: sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md"
+  },
+  {
+   "id": "bmw-record",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "big mind cave 2",
+   "auto": true,
+   "pos": "Each W.A.V.E. saves one entry under the voice: after which question, the feeling word (only if you keep it), the element, where in the body, the charge before and after, how far up the ladder, any blocked step, and when. It stays on your device, with forget and delete.",
+   "why": "bm-first-player (you only, on your device), bmc-safety (forget per voice, delete everything) and bm-cards-and-line (only kept lines are stored). Source: sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md"
+  },
+  {
+   "id": "bmw-shown",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "big mind cave 2",
+   "auto": true,
+   "pos": "Each W.A.V.E. is shown back as one line at the keeping step and in the cave mouth's list, for example \"Fear, Metal, in your chest: 8 to 6\".",
+   "why": "Your note asks for \"more data\", and data you cannot see is data you cannot learn from. Kept lines are already listed in both places. Source: sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md"
   }
  ],
  "questions": [
@@ -10890,6 +10953,64 @@
      "v": "quests",
      "label": "From your quests",
      "c": "The goals come from your bars-engine quests when you are signed in. Needs sign-in on the cave page."
+    }
+   ]
+  },
+  {
+   "id": "bmw-whose-charge",
+   "faces": [
+    "shaman",
+    "challenger",
+    "architect"
+   ],
+   "pass": "big mind cave 2",
+   "q": "Whose charge is the W.A.V.E. about: the Protector's, yours, or both?",
+   "why_you": "On 10 October you said the voice is \"a part that already lives within them\", which reads as one charge. Today you named \"the emotions charge that comes up while talking to the daemon\", which the meter does not hold. Which model the cave teaches is yours, and it changes the meter, the save and every chamber.",
+   "not_before": "The meter was built yesterday with one number. The second charge first appears in today's note.",
+   "options": [
+    {
+     "v": "two",
+     "label": "Two charges, yours and its (recommended)",
+     "c": "The W.A.V.E. is on your own charge, shown as \"you\" beside the voice's \"it\" on the meter. Only the voice's number decides trust, as now."
+    },
+    {
+     "v": "one",
+     "label": "One charge, the Protector's",
+     "c": "The W.A.V.E. is on the voice's charge, felt where it lives in your body. The meter stays one number."
+    },
+    {
+     "v": "both-after",
+     "label": "Ask both after each W.A.V.E.",
+     "c": "One meter with two marks, set only after a W.A.V.E. Keeps both readings open for one extra slider."
+    }
+   ]
+  },
+  {
+   "id": "bmw-block",
+   "faces": [
+    "architect",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "big mind cave 2",
+   "q": "When a W.A.V.E. step won't go further in the Big Mind cave, where does it go?",
+   "why_you": "Both homes are your rulings for two caves: the Cave of Lessons opens a side passage to the block work (cave-block-branch), and the Big Mind cave meets anything in the way as another voice secretly speaking. Only you know which this cave teaches.",
+   "not_before": "The Big Mind cave had no W.A.V.E. until today's note.",
+   "options": [
+    {
+     "v": "voice",
+     "label": "Another voice speaking (recommended)",
+     "c": "You name who got in the way, thank it and ask it to wait, then take the step again. The cave keeps one language."
+    },
+    {
+     "v": "side-passage",
+     "label": "The side passage",
+     "c": "The Cave of Lessons' block work opens off the chamber, and Release walks you back to the step."
+    },
+    {
+     "v": "stop",
+     "label": "Note it and stop there",
+     "c": "The blocked step is recorded and the W.A.V.E. counts as complete at that point, as stopping on a rung does now."
     }
    ]
   }
@@ -20778,7 +20899,7 @@
    "name": "The Big Mind Cave",
    "repo": "sprout",
    "element": "water",
-   "record": "sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md; /mnt/project-files/big-mind/",
+   "record": "sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md; /mnt/project-files/big-mind/; sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md",
    "intro": "It wants a cave journey to the centre of the self, built from the Big Mind transcript the way the Skilled Helper became a campaign: guardians to meet, a part secretly speaking to find and set aside, the child and the player self at the centre, and later a world spawned from what the player keeps.",
    "rounds": [
     {
@@ -20801,6 +20922,21 @@
       "bm-phone-first",
       "bm-world-later",
       "bm-name-internal"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [
+      "bmw-whose-charge",
+      "bmw-block"
+     ],
+     "positions": [
+      "bmw-offer",
+      "bmw-game-wave",
+      "bmw-player-names",
+      "bmw-number-stays",
+      "bmw-record",
+      "bmw-shown"
      ]
     }
    ]
