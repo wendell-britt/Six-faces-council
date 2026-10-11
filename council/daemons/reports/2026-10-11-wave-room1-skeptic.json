@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-11",
+  "pass": "wave-room1",
+  "daemon": "skeptic",
+  "face": "challenger",
+  "cast": "48 -> 49",
+  "model": "sonnet",
+  "tokens": "22085",
+  "report": "2026-10-11-wave-room1-skeptic.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Acceptance-type strategies show d = 0.30 on average against d = 0.03 for suppression, with \"very high variability between the results of particular studies\" [1].",
+        "Acceptance is not proven on felt experience: one study found it \"can be ineffective on the level of emotional experience\" [1].",
+        "Suppression sits near zero effect [1].",
+        "Read the Webb meta-analysis behind [1] for who benefits and who does not."
+      ],
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7057396",
+      "quote": "acceptance-like strategies are on average effective",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Gross's process model separates suppression from reappraisal [2]."
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12212647/",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [],
+      "url": "https://onlineacademiccommunity.uvic.ca/implicitassociationtestsyessir/wp-content/uploads/sites/9812/2025/12/gross-john-2003.pdf",
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}
