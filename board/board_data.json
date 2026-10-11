@@ -17474,6 +17474,111 @@
      "sage"
     ],
     "pass": "root 2, round 1"
+   },
+   "rs-planted-feet": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:28:05.155Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "regent"
+    ],
+    "pass": "root 3"
+   },
+   "rs-shapes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:28:12.338Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "root 3"
+   },
+   "rs-energy-centres": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:28:21.942Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "root 3"
+   },
+   "rs-lab-unchanged": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:28:29.308Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "root 3"
+   },
+   "ex-open-gates": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:28:51.859Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "root 4"
+   },
+   "ex-charge": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:28:59.344Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "root 4"
+   },
+   "ex-weak-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:29:11.799Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "root 4"
+   },
+   "ex-cycle-kept": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:29:19.231Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "root 4"
+   },
+   "ex-curriculum": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:29:32.202Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "root 4"
    }
   },
   "questions": {
@@ -19252,6 +19357,17 @@
      "challenger"
     ],
     "pass": "root 2, round 1"
+   },
+   "ex-posture-table": {
+    "decision": "council",
+    "label": "Keep the council's table (council lean)",
+    "recorded": "2026-10-11",
+    "saved_at": "2026-10-11T15:28:41.445Z",
+    "record": "council/ledger/2026-10-11-pull-152932.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "root 4"
    }
   },
   "causes": {
