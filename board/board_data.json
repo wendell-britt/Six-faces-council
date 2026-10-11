@@ -6412,6 +6412,17 @@
    "auto": true,
    "pos": "The first build is the room alone, reached from the body map, with both branches and the restart, in its own thread beside your cave play. The link to the cave follows your answer to wave-room-cave-link; daemons and alchemy moves follow your play of the slice. This stands unless you flip it.",
    "why": "Your 'the game can be extended'. The Regent's lesson of 3 October: work that serves the gate runs beside it. Source: council/passes/6FACE_PASS_wave-room1_2026-10-11.md"
+  },
+  {
+   "id": "p2n-holds-eliminates",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "Pruner's track pass 2",
+   "auto": true,
+   "pos": "A partial line (It holds) no longer ends the moment. It is struck like a wrong line, so the player narrows the choices and then picks the right path. A wrong line always spawns its daemon on the road. A partial rolls a six-sided die and spawns on 1 to 3: its daemon, or a spirit of the person's element need where it has none. The 1 to 3 odds are a council choice. This stands unless you flip it.",
+   "why": "Your words in chat, 2026-10-11: “For the it holds options the reward should be process of elimination then they should be able to choose the correct paths. It holds should roll a die to see if a daemon or spirit spawns wrong answers spawn a daemon or spirit”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml (sprout pull request #38)"
   }
  ],
  "questions": [
