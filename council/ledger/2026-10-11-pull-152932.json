@@ -1,0 +1,82 @@
+{
+ "date": "2026-10-11",
+ "kind": "board-pull",
+ "newest_save": "2026-10-11T15:29:32.202Z",
+ "answers": {
+  "rs-planted-feet": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:28:05.155Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rs-shapes": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:28:12.338Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rs-energy-centres": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:28:21.942Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "rs-lab-unchanged": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:28:29.308Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "ex-posture-table": {
+   "kind": "question",
+   "choice": "council",
+   "savedAt": "2026-10-11T15:28:41.445Z",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "ex-open-gates": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:28:51.859Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "ex-charge": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:28:59.344Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "ex-weak-gate": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:29:11.799Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "ex-cycle-kept": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:29:19.231Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  },
+  "ex-curriculum": {
+   "kind": "position",
+   "savedAt": "2026-10-11T15:29:32.202Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-root-play"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/ex-posture-table: Keep the council's table (council lean)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
