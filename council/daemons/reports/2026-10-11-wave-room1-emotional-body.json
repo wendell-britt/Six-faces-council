@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-11",
+  "pass": "wave-room1",
+  "daemon": "emotional-body",
+  "face": "shaman",
+  "cast": "33 -> 36",
+  "model": "sonnet",
+  "tokens": "21358",
+  "report": "2026-10-11-wave-room1-emotional-body.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "say hello maybe, and then put it to one side,\" lightly, knowing you will return [1].",
+        "The charge moves away and the distance grows by itself, then closes if called (clearing-a-space \"return later\" [1])."
+      ],
+      "url": "https://counsellingresource.com/features/2007/09/24/clearing-space-focusing-step/",
+      "quote": "acknowledge it briefly, name it if necessary, say hello maybe, and then put it to one side",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Allowing means \"letting be\" what you find [2], and parts \"will only unburden when they're ready\" and unburdening \"can't be forced\" [3].",
+        "RAIN warns that wishing a feeling would go away is itself resistance [2]."
+      ],
+      "url": "https://www.dharma.org/wp-content/uploads/RAIN-WorkingWithDifficulties.pdf",
+      "quote": "Allowing means 'letting be' the thoughts, emotions, feelings or sensations you discover",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Allowing means \"letting be\" what you find [2], and parts \"will only unburden when they're ready\" and unburdening \"can't be forced\" [3].",
+        "IFS releases into an element only when the part is ready [3]."
+      ],
+      "url": "https://www.shortform.com/blog/ifs-unburdening/",
+      "quote": "Parts will only unburden when they're ready",
+      "label": "unlabelled"
+    }
+  ]
+}
