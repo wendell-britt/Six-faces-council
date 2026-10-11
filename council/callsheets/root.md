@@ -25,3 +25,12 @@ the reach test. Four positions wait to go on the board: `council/callsheets/rows
 session runs `board/sync_board.py --rows` with it; the thread skipped the 876 KB live-page read for usage). Open test: can
 Look left and Gaze right be told apart on the phone with Hard's grey colours? Note: two play pages exist, #17 on main
 (link 6RqthVDD7sGbjVtHqEDNo3) and #18 (link 18KqB6KnU8vuuWKTxaYura, the one Wendell plays); #19 builds on #18.
+
+## Attack and defense: postures open gates (2026-10-11)
+Wendell: "the basic exchange is attack and defense. The attack can be fueled by emotional energy and the postures are helped to
+create openings for specific attacks and to break defenses". Built as root-game #20 (draft, stacked on #19), `engine/play_exchange.js`,
+published to the same play link https://claude.ai/artifact/A4oeXe6BYv2T8e7445fuLi. Three rules over the unchanged gate cycle: a
+posture opens two gates (they glow), holding builds one bead of its feeling a turn up to three and a strike through an open gate
+spends them, and one weak gate breaks even the right answer at two beads. Pass: root-game `council/6FACE_PASS4_2026-10-11.md`.
+Board: pass 3 and pass 4 rows synced to main (a80c71f), fr-root-play rounds 2 and 3; question `ex-posture-table` open. Next:
+Yun's session teaching the three rules in Wendell's order (hold, strike, answer), once he plays it and answers the table.
