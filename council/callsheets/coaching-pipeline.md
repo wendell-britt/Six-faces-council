@@ -10,7 +10,9 @@ Wendell answered both picks on 2026-10-10 (board read 2234): `lg-first-pipe` = g
   on FunnelSignup with intent `daemons`, source `coaching`. This is the one exception to `cg-browser-only`: what the
   visitor carried in still stays in the tab. Nothing is sent yet. The series goes out only after Wendell edits the
   seven emails, and no sequence automation exists for it.
-- Still open: Vercel Web Analytics switch and PR #273 (Your steps list `coaching-pipeline`, due 2026-10-13). Each
+- PR #273 merged 2026-10-12 16:43 UTC, and Wendell ticked the Web Analytics step, but Vercel's API still answered
+  "Web Analytics not found" at 16:44 UTC. The first Monday read checks that first; if it still fails, the step goes
+  back on his list with what Vercel shows. Each
   Monday a session reads Web Analytics by `utmSource` (Vercel MCP `aggregate_pageviews`, project bars-engine) and
   Calendly bookings by utm, and writes a Results line per pipe in the plan file. Tests fall due 2026-10-20 and
   2026-11-07 (see the pass). The podcast strand adds the tagged walk link to MTGOA show notes and captions
