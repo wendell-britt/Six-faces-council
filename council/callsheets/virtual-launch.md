@@ -12,4 +12,4 @@
 - The board's blocker panel (PR #84) can take over step 2 once it is live.
 
 ## Waiting on
-Wendell: step 2 note, `vl-date`, the six answers. All due 2026-10-13 to 2026-10-14.
+Wendell: step 2 note, `vl-date`, the six answers. They are due between 2026-10-13 and 2026-10-14.
