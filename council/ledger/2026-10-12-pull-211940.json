@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T21:19:40.599Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "gs-1",
+   "at": "2026-10-12T21:17:38.568Z",
+   "what": "note",
+   "note": "can't find a file called game masters guide. Can you help me find this",
+   "do": "Import the Guide's files into the game-masters-guide repo, in six small steps. 1) Open Terminal on your Mac. 2) Check the zip is in Downloads: ls ~/Downloads/game-masters-guide*.zip. It should list one file. 3) Get the repo folder: cd ~ && git clone https://github.com/wendell-britt/game-masters-guide.git (if the folder already exists, cd game-masters-guide && git pull instead). 4) Unzip into a scratch folder and copy the contents in (command below). 5) Commit and push (command below). 6) Look at the repo on GitHub and compare with the check line."
+  },
+  {
+   "id": "council-retire-branches-01",
+   "at": "2026-10-12T21:17:54.767Z",
+   "what": "ticked",
+   "do": "Open a terminal on a computer where git can push to your GitHub repos."
+  },
+  {
+   "id": "council-retire-branches-02",
+   "at": "2026-10-12T21:18:09.800Z",
+   "what": "ticked",
+   "do": "Download the council's repo and go into its folder."
+  },
+  {
+   "id": "council-retire-branches-03",
+   "at": "2026-10-12T21:19:15.950Z",
+   "what": "ticked",
+   "do": "Do a dry run, which only reports what would happen and changes nothing."
+  },
+  {
+   "id": "council-retire-branches-04",
+   "at": "2026-10-12T21:19:40.599Z",
+   "what": "ticked",
+   "do": "Run it for real."
+  }
+ ],
+ "needs_work": [
+  "steps/gs-1: note \"can't find a file called game masters guide. Can you help me find this\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
