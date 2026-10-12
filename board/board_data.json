@@ -6834,6 +6834,17 @@
    "auto": true,
    "pos": "The first piece counts as done when it loads in the cave at 390 by 844, the cave's browser test passes, and the kit stays under budget. You look at its preview before it merges. Target 26 October, once you answer cs-first-piece.",
    "why": "cave-test.mjs and c3d-phone-budget. Your eyes on the result is a step only you can take. The date is the council's, marked."
+  },
+  {
+   "id": "mm-set-aside",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Motion2MixamoRig, which lifts a person in a video or photo onto a Mixamo rig, is set aside for now and returns when you ask. Its chain is for non-commercial use: SMPL-X allows only non-commercial research, education or artistic projects, GVHMR allows educational, research and non-profit use, and YOLOv8 is AGPL-3.0. Mixamo characters are royalty-free for commercial use, and the tool's own code is Apache-2.0.",
+   "why": "Your words of 12 October after the licence read: \"yeah that makes sense. Let's skip this for now.\" Source: the licence texts read that day (SMPL-X, GVHMR, Ultralytics, Adobe's Mixamo FAQ) and ledger 2026-10-12-blender-cloud-session.json. The retarget half appears to take any 24-joint skeleton file, which was read and not run."
   }
  ],
  "questions": [
