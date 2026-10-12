@@ -17,7 +17,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 - [coaching-site](coaching-site.md), 2026-10-09: Wendell plays #270 on his phone by 10-12, then merge.
 - [podcast](podcast.md), 2026-10-09: ep 2 title and thumbnail, Spotify link, clips, outreach sends.
 - [flirtcraft](flirtcraft.md), 2026-10-09: finish own database and sign-in before promoting; loop fixes PR.
-- [skilled-helper](skilled-helper.md), 2026-10-12: his phone play of the Pruner's track fights (#41 on #38); his BAR for step 4. Part III step 2 done (sprout #43, Act III Lamp-keeper's track); step 3 encounters next.
+- [skilled-helper](skilled-helper.md), 2026-10-12: Part III step 3 done (sprout #44, Lamp-keeper's tap-through); guessing test round 4 next, then his phone play. His phone play of the Pruner's track fights (#41 on #38).
 - [session-cost](session-cost.md), 2026-10-08: measure slim board read; Wendell ticks plugins-trim.
 - [wave-battle](wave-battle.md), 2026-10-06: build sprout #25 taught fight with Yun and English moves.
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.
