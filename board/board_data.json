@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-12T23:59:00Z",
  "positions": [
   {
    "id": "build",
@@ -6845,6 +6845,49 @@
    "auto": true,
    "pos": "Motion2MixamoRig, which lifts a person in a video or photo onto a Mixamo rig, is set aside for now and returns when you ask. Its chain is for non-commercial use: SMPL-X allows only non-commercial research, education or artistic projects, GVHMR allows educational, research and non-profit use, and YOLOv8 is AGPL-3.0. Mixamo characters are royalty-free for commercial use, and the tool's own code is Apache-2.0.",
    "why": "Your words of 12 October after the licence read: \"yeah that makes sense. Let's skip this for now.\" Source: the licence texts read that day (SMPL-X, GVHMR, Ultralytics, Adobe's Mixamo FAQ) and ledger 2026-10-12-blender-cloud-session.json. The retarget half appears to take any 24-joint skeleton file, which was read and not run."
+  },
+  {
+   "id": "ttc-encounters-part3",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "Step 3 on Part III of The Skilled Helper is drafted, and you can tap through it on your phone: https://claude.ai/artifact/Y3snBtvsVUW2TK7vwEXvf9. The Lamp-keeper's track is 27 moments across L1 to L9 and one field spirit, the Fallow, at Tam's farm. Each line carries the question its move belongs to, and a script checks the story's rule on every moment: right is from where the person stands, the wall from a question ahead, partial from behind. Five exceptions are noted where they are. You start at rank 5 and the track opens 6 and 7. This stands unless you flip it, and step 4 (your play) starts from it.",
+   "why": "The Architect carried story.md as it stands. Every misfire is one of the seven shared daemons in Act III (the Challenger's check, lesson-challenger-shared-frame); the Protector is added for Brannock's forbidden run, which story.md L7 names. Source: sprout campaigns/skilled-helper/part-three/encounters.yaml"
+  },
+  {
+   "id": "p3-guess-test",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "The guessing test does not pass yet. Fresh players picked the right line by wording on 44 of 81 first picks (54%) on round 3, against 62% and 63% on rounds 1 and 2, and the bar is under half. The impatient fixer, the player the track is for, got 12 of 27 and hit the wall 13 times. Fresh players read where a person stands from the cue alone 31% of the time, about twice chance, so the tap-through lights the tell when you buy Listen. Round 4 runs in its own thread.",
+   "why": "The move's rule: if a fresh player can pick the right line from its wording, rewrite it. Part III's wrong lines are a question too early, and players with good instincts do not push, which is why it is harder to hide than Part II. Source: sprout campaigns/skilled-helper/part-three/guessing-test.md"
+  },
+  {
+   "id": "p3-fallow-spirit",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "The withered farm gets one spirit, the Fallow, an Earth spirit in the field's one wet corner whose need is space. It comes after L2 only if you worked the farm with Tam, and it is read the way a person is: it stands at What's here?, and the right move asks which corner comes back first. The farm stays optional, and Tam is not the spirit. This stands unless you flip it.",
+   "why": "story.md asked for a spirit for the withered farm's field if the field is to be negotiated with. The player feels the stages on their own field first (story.md, The teacher). Source: part-three/encounters.yaml, spirits"
+  },
+  {
+   "id": "p3-blocks",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "Three blocks from the six sabotaging beliefs, never named on screen: Tavi at L3 (I'm insignificant, so it is all the elders' doing), Tavi at L8 (I'm not good enough, so one night home is who he is), and Wynn at L6 (I'm not worthy, so she can neither plant the elders' bed nor refuse it). This stands unless you flip it.",
+   "why": "Blocks come from the emotional alchemy canon, never from the text (interview round 6). story.md asked for Tavi at L3 and L8 and Wynn at L6. Source: mtgoa-manuscript SPEC_6_SABOTAGING_BELIEFS.md"
   }
  ],
  "questions": [
