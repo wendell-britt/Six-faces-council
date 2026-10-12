@@ -10,7 +10,7 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
-  causes, steer), query {"limit": 1000}, out_dir <dir>
+  causes, steer, blockers), query {"limit": 1000}, out_dir <dir>
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -32,6 +32,9 @@ DATA = HERE / "board_data.json"
 LEDGER = ROOT / "council" / "ledger"
 BOARD_URL = "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
 KINDS = ("positions", "questions", "terms", "causes")
+BLOCKERS = ROOT / "council" / "blockers"
+ENDS = {"now": "do it now", "moved": "moved the date", "change": "the step needs changing", "drop": "drop the step",
+        "stuck": "still stuck"}
 
 sys.path.insert(0, str(ROOT / "council"))
 import due  # noqa: E402  the deferral ladder, so a deferral is recorded the way the board computed it
@@ -109,7 +112,38 @@ def find_new(data, store):
     return new, general
 
 
-def apply(data, new, general, ledger_rel):
+def find_blockers(store):
+    """Blocker panel runs (blockers/ in the store) that main lacks or holds an older save of. Wendell, 2026-10-12: the
+    overdue card has to "save the data about the specific task that was blocked and what came up for the player and how
+    it was resolved". Each run is copied whole to council/blockers/<id>.json; a run saved again replaces its file."""
+    out = []
+    for f in sorted((store / "blockers").glob("*.json")) if (store / "blockers").is_dir() else []:
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        if not doc.get("savedAt"):
+            continue
+        have = BLOCKERS / f.name
+        if have.exists() and json.loads(have.read_text(encoding="utf-8")).get("savedAt", "") >= doc["savedAt"]:
+            continue
+        out.append({"id": f.stem, "doc": doc})
+    return sorted(out, key=lambda b: b["doc"]["savedAt"])
+
+
+def blocker_line(b):
+    """One needs-work line: the step, what came up, how it ended. A session acts on change, drop and stuck."""
+    d = b["doc"]
+    names = ", ".join(r.get("name") for r in d.get("rounds", []) if r.get("name")) or "nothing named"
+    end = d.get("resolution") or {}
+    how = ENDS.get(end.get("kind"), f"left at {d.get('stage', 'start')}")
+    if end.get("date"):
+        how += f" to {end['date']}"
+    if end.get("text"):
+        how += f': "{end["text"]}"'
+    charge = d.get("charge") or {}
+    ch = f", charge {charge.get('before')} to {charge.get('after')}" if charge.get("after") is not None else ""
+    return f"blockers/{b['id']}: {d.get('task', d.get('step', ''))} ({names}; {how}{ch})"
+
+
+def apply(data, new, general, ledger_rel, blockers=()):
     """Write resolved entries, deferrals and the general steer onto data. Returns the ledger record."""
     record = f"{ledger_rel} (six-faces-council)"
     answers, work = {}, []
@@ -137,11 +171,17 @@ def apply(data, new, general, ledger_rel):
                                                        "record": record})
         data["steer_recorded_through"] = general["savedAt"]
         work.append(f'steer/general: "{general["text"]}"')
-    newest = max([n["doc"]["savedAt"] for n in new] + ([general["savedAt"]] if general else []))
+    work += [blocker_line(b) for b in blockers]
+    newest = newest_save(new, general, blockers)
     data["updated"] = max(data.get("updated", ""), newest[:10])
     return {"date": newest[:10], "kind": "board-pull", "newest_save": newest, "answers": answers,
-            "steer": general, "needs_work": work,
+            "steer": general, "blockers": [f"council/blockers/{b['id']}.json" for b in blockers], "needs_work": work,
             "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."}
+
+
+def newest_save(new, general, blockers):
+    return max([n["doc"]["savedAt"] for n in new] + ([general["savedAt"]] if general else [])
+               + [b["doc"]["savedAt"] for b in blockers])
 
 
 def main():
@@ -161,18 +201,22 @@ def main():
         git("pull", "-q", "--no-rebase", "origin", "main")
     data = json.loads(DATA.read_text(encoding="utf-8"))
     new, general = find_new(data, store)
-    if not new and not general:
+    blockers = find_blockers(store)
+    if not new and not general and not blockers:
         print("every saved answer is recorded")
         return
     for n in new:
         print(f"{n['doc']['savedAt']}  {n['kind']:<9} {n['id']}  {n['answer'] or 'steer'}")
     if general:
         print(f"{general['savedAt']}  steer     general")
-    newest = max([n["doc"]["savedAt"] for n in new] + ([general["savedAt"]] if general else []))
+    for b in blockers:
+        print(f"{b['doc']['savedAt']}  blocker   {b['id']}  {b['doc'].get('status', 'open')}")
+    newest = newest_save(new, general, blockers)
     name = f"{newest[:10]}-pull-{newest[11:19].replace(':', '')}.json"
     ledger_rel = f"council/ledger/{name}"
-    led = apply(data, new, general, ledger_rel)
-    print(f"{len(new) + bool(general)} saves to record in {ledger_rel}")
+    led = apply(data, new, general, ledger_rel, blockers)
+    count = len(new) + bool(general) + len(blockers)
+    print(f"{count} saves to record in {ledger_rel}")
     if led["needs_work"]:
         print("needs work:\n  " + "\n  ".join(led["needs_work"]))
     if not a.push:
@@ -180,12 +224,16 @@ def main():
         return
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (LEDGER / name).write_text(json.dumps(led, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    for b in blockers:
+        BLOCKERS.mkdir(exist_ok=True)
+        (BLOCKERS / f"{b['id']}.json").write_text(json.dumps(b["doc"], ensure_ascii=False, indent=1) + "\n",
+                                                  encoding="utf-8")
     subprocess.run([sys.executable, str(HERE / "build_board.py")], cwd=ROOT, check=True, capture_output=True)
-    git("add", "board", str(LEDGER / name))
+    git("add", "board", str(LEDGER / name), *([str(BLOCKERS)] if blockers else []))
     if git("diff", "--cached", "--quiet", check=False).returncode == 0:
         print("no change to commit")
         return
-    git("commit", "-q", "-m", f"Board pull: {len(new) + bool(general)} saves through {newest}")
+    git("commit", "-q", "-m", f"Board pull: {count} saves through {newest}")
     for _ in range(3):
         if git("push", "-q", "origin", "main", check=False).returncode == 0:
             print(f"pushed to main; now republish board/council-board.html to {BOARD_URL} without capabilities")
