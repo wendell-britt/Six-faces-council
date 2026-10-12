@@ -16,6 +16,13 @@ whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-plac
 test by 2026-10-25 (pass 2). Pass 3's tests: a sit-down in a hallway and before the Protector by 2026-10-25; the Challenger's
 tests by 2026-11-01. Earlier picks: `bm-center` two-caves, `bm-guide` integrated, `bm-session` own-pace, `bm-first-player` me.
 
+Chat rulings 2026-10-12 on #282, built and pushed to its branch (bars-engine 7e13615a): Wendell, 22:05: "update ther camera when
+you choose this option so the player can see how the charge changes as the choices are bing picked" (the sit-down camera now
+frames the charge under the panel). Wendell, 22:08: "Giving it a name needs to be optional- or at the least giving it a name after
+working through it makes the most sense / perhaps even a random name generator so the game can track the charges as they emerge."
+Built as: the game names each charge (two words, such as Quiet Moth), naming is optional at Acknowledge, and Validate offers a name
+of the player's own.
+
 ## Files
 - sprout PR #40 (on #39): `campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md`, ledger
   `council/ledger/2026-10-12-big-mind-cave-pass3.json`, `council/daemons/reports/2026-10-12-big-mind-spirits-protector.md`
