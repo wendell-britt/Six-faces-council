@@ -18885,6 +18885,54 @@
      "sage"
     ],
     "pass": "cave studio"
+   },
+   "cs-no-written-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:50.142Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-stand-in": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:29:01.496Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-chatgpt-by-drive": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:29:14.918Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-first-test": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:29:20.826Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "cave studio"
    }
   },
   "questions": {
