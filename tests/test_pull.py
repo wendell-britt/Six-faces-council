@@ -46,9 +46,9 @@ class PullTest(unittest.TestCase):
         (d / f"{rid}.json").write_text(json.dumps(doc))
 
     def pull(self):
-        new, general = pull.find_new(self.data, self.store)
-        if new or general:
-            return pull.apply(self.data, new, general, "council/ledger/t.json")
+        new, general, steps = pull.find_new(self.data, self.store)
+        if new or general or steps:
+            return pull.apply(self.data, new, general, steps, "council/ledger/t.json")
         return None
 
     def test_old_save_already_recorded_is_skipped(self):
@@ -108,6 +108,19 @@ class PullTest(unittest.TestCase):
         first = self.pull()
         self.data = copy.deepcopy(DATA)
         self.assertEqual(first, self.pull())
+
+    def test_step_note_and_move_need_work_once(self):
+        # The 18:40 Send of 2026-10-12 carried only step notes, and pull.py never read the steps collection.
+        self.save("steps", "gs-1", {"do": "Do it", "note": "need step by step", "noteAt": "2026-10-12T16:52:00Z",
+                                    "done": True, "doneAt": "2026-10-12T16:53:00Z",
+                                    "moved": [{"from": "2026-10-08", "to": "2026-10-14", "at": "2026-10-12T16:26:00Z"}]})
+        self.save("steps", "gs-old", {"note": "read by hand", "noteAt": "2026-10-07T10:00:00Z"})
+        led = self.pull()
+        self.assertEqual([e["what"] for e in led["steps"]], ["moved", "note", "ticked"])
+        self.assertIn('steps/gs-1: note "need step by step"', led["needs_work"])
+        self.assertIn("steps/gs-1: moved from 2026-10-08 to 2026-10-14", led["needs_work"])
+        self.assertEqual(self.data["steps_recorded_through"], "2026-10-12T16:53:00Z")
+        self.assertIsNone(self.pull())
 
 
 if __name__ == "__main__":
