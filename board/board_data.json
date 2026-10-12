@@ -18944,6 +18944,20 @@
      "regent"
     ],
     "pass": "cave studio"
+   },
+   "mm-set-aside": {
+    "decision": "deferred",
+    "label": "Deferred until he asks",
+    "recorded": "2026-10-12",
+    "record": "council/ledger/2026-10-12-blender-cloud-session.json (six-faces-council)",
+    "history": [
+     {
+      "recorded": "2026-10-12",
+      "saved_at": "2026-10-12T21:45:00Z",
+      "steer": "yeah that makes sense. Let's skip this for now. Let's move back to the blender work"
+     }
+    ],
+    "project": "bars-engine"
    }
   },
   "questions": {
