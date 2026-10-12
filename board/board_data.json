@@ -6704,6 +6704,49 @@
    "auto": true,
    "pos": "Away at the fork no longer lets the charge go on the spot. The out-breath softens it, and it walks with you lighter until you thank it and breathe it out. In the Cave of Lessons the light left on the threshold stays as it was.",
    "why": "Your steer of 12 October, 20:43 says every sit-down W.A.V.E. spawns a spirit, and bms-dismiss says nothing dismisses a spirit for you. Built in bars-engine #282; bigmind/DESIGN.md, \"Every sit-down spawns a spirit\"."
+  },
+  {
+   "id": "bmw-charge-seen",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "The charge you are working shows in the scene through the whole W.A.V.E. at the charge poll, low and to one side so it shows under the panel. It is grey until you pick its element, grows and brightens by the Allow sliders, and dulls at Validate. Every step, and every sitting step, has a ring of light that breathes four seconds in and six out.",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "bmw-exhale-spirit",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "At the Exhale, \"No, exhale and release\" lifts the charge and fades it on the out-breath. \"Yes, let it stay\" makes it a spirit that walks with you, named with your feeling word. A W.A.V.E. left at a block keeps its charge walking with you too, since nothing dismisses a spirit for you (bms-dismiss).",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "bmw-appreciate-words",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "Appreciate, at the poll and in a sitting, has the optional line from oag-appreciate-input and Not now. What you write there stays on the page and is not saved.",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "bm-be-turns",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "Standing in a voice's place is three turns in its first person: who it is (\"I am the Protector, and I...\"), what it sees from its post, and what it wants the self to know. Each takes your own words as the voice; the last keeps the workshop's cards. Any turn can be passed. Lines said as the voice are offered at the keeping step.",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
   }
  ],
  "questions": [

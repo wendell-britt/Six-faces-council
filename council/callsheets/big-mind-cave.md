@@ -1,12 +1,13 @@
-2026-10-12 (updated 19:50)
+2026-10-12 (updated 21:45)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
-Sitting down and the spirits are merged into #278's branch (#280). His steer of 20:43 ("every sit-down W.A.V.E. spawns a spirit
-that walks with the character until dismissed") is built in bars-engine PR #282 (branch `claude/project-thread-0wytio`,
-stacked on #278): every sitting in the Big Mind cave leaves a spirit, Away included (it walks lighter, `bms-away-lighter`), and
-charges worked in the WAVE room walk back into the Cave of Lessons. Board: `bms-spirits-follow` rewritten to his steer. Phone
-link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU (version 6). Next: his play, then fixes in a fresh thread.
+bars-engine PR #282 (branch `claude/project-thread-0wytio`, stacked on #278) holds the 20:43 steer (every sit-down spawns a spirit,
+`bms-away-lighter`) and his 21:15 playtest notes: a breathing ring on every W.A.V.E. and sitting step, the charge seen in the scene
+through the poll's W.A.V.E. (grows by the Allow sliders; release lifts and fades it, stay makes it a spirit), Appreciate with
+optional words and Not now, and three first-person turns speaking as the voice. Board: `bmw-charge-seen`, `bmw-exhale-spirit`,
+`bmw-appreciate-words`, `bm-be-turns`. Phone link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU (version 7). Next: his play,
+then fixes in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
