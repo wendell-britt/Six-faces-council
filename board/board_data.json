@@ -6486,6 +6486,92 @@
    "auto": true,
    "pos": "Each W.A.V.E. is shown back as one line at the keeping step and in the cave mouth's list, for example \"Fear, Metal, in your chest: 8 to 6\".",
    "why": "Your note asks for \"more data\", and data you cannot see is data you cannot learn from. Kept lines are already listed in both places. Source: sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md"
+  },
+  {
+   "id": "bms-sit-anywhere",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "\"Sit down\" is always on the screen beside Self, in the hallways and in the chambers. You decide when; the cave never prompts it.",
+   "why": "Your words: \"when a charge emerges for them not just when they are in front of a daemon\". Only you can feel that moment, and bmw-player-names says the game never guesses your feeling. Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "bms-in-place",
+   "faces": [
+    "architect"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "You sit down where you are. The tunnel draws in around you and the way ahead becomes the door the charge comes through. It runs the WAVE room's own steps from the shared cave code, not a copy.",
+   "why": "Your words: \"a version of the wave room\" and \"while they are in the cave\". The Big Mind cave is a fork on one engine, so your notes on the room reach both caves. Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "bms-block-sits",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "\"Something's in the way\" on a W.A.V.E. step offers \"Sit down with it\". The step waits, and you come back to it after. This is where a blocked step goes in this cave.",
+   "why": "Your steer on bmw-block. The Cave of Lessons' shape (work the block, come back to the step, cave-block-branch) in the room's language. Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "bms-spirits-follow",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "A charge that stays at the room's fork walks behind you through the cave as a spirit, in its element's colour, with the name you gave it. A charge you breathe out does not follow. At most three walk in view; the rest show as a number by the Self button.",
+   "why": "Your words: \"The charge spirits can come with them throughout the cave until they are dismissed\". The room already splits stays and goes (wave-room-stay-move, wave-room-release). Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "bms-dismiss",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "You dismiss a spirit by tapping it and thanking it, then breathing it out or sitting down with it again. Nothing dismisses a spirit for you, and no voice asks you to.",
+   "why": "Your words: \"until they are dismissed\". The cave's way of asking a part to wait (bm-dismiss-step-aside), and taking control back (bmc-safety). Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "bms-voices-respond",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "A voice responds to how many spirits are around in how it stands and what it says (\"You didn't come alone.\"; with three or more, \"That's a lot to bring through here.\"). Its charge, the trust line and stepping aside stay exactly as you set them.",
+   "why": "Your words: \"The daemons should be able to respond to how many spirits are around\". bmw-number-stays and your trust rule of 10 October: you decide the charge. Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "bms-protects-from",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "With spirits around, \"What do you protect the self from?\" offers each spirit's name as a card, and the guide asks whether it might be protecting you from what you carry. You answer; the cave never decides it.",
+   "why": "Your words: \"They might be protecting the self from the charge they are carrying\", with \"might\" kept as a question for you. bm-cards-and-line. Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "bms-build-order",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "Sitting down is built after the WAVE room's pull requests (#276, #277) land on the cave branch and that branch is merged into the Big Mind cave's (#272). Your notes from playing the room on 18 October then reach both caves.",
+   "why": "The fork's one-engine rule, and the wave-room call sheet's gate on daemon extensions. Your steer asks for this directly, so it is not held for the 18 October play. Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
   }
  ],
  "questions": [
@@ -11011,6 +11097,63 @@
      "v": "stop",
      "label": "Note it and stop there",
      "c": "The blocked step is recorded and the W.A.V.E. counts as complete at that point, as stopping on a rung does now."
+    }
+   ]
+  },
+  {
+   "id": "bms-sit-whom",
+   "faces": [
+    "challenger",
+    "shaman",
+    "architect"
+   ],
+   "pass": "big mind cave 3",
+   "q": "In a voice's chamber, what do you sit down with?",
+   "why_you": "Two of your sentences from the same minute point two ways: \"Two charges, yours and its\" puts the W.A.V.E. on your own charge, and \"on the part in front of them\" puts it on the voice. Which you meant changes what happens in every chamber.",
+   "not_before": "Sitting down is new in your steer of 11 October, 23:53.",
+   "options": [
+    {
+     "v": "pick",
+     "label": "You pick each time (recommended)",
+     "c": "The first screen asks: what's coming up in me, or the voice in front of me. Both stay open, for one extra tap."
+    },
+    {
+     "v": "you",
+     "label": "Your own charge only",
+     "c": "The voice keeps its post while you sit, as with the W.A.V.E. at the poll. The room works the \"you\" charge."
+    },
+    {
+     "v": "voice",
+     "label": "The voice itself",
+     "c": "The voice comes to sit across from you as the room's creature, and the room works its \"it\" charge."
+    }
+   ]
+  },
+  {
+   "id": "bms-spirits-after",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "big mind cave 3",
+   "q": "When you walk out of the cave with spirits still following, what happens to them?",
+   "why_you": "The precedents split: the WAVE room keeps nothing after a sitting, and the Big Mind cave keeps only the lines you choose. Your inner room steer of 10 October is about meeting again what you left behind.",
+   "not_before": "Spirits are new in your steer of 11 October.",
+   "options": [
+    {
+     "v": "choose",
+     "label": "You choose at the mouth (recommended)",
+     "c": "On the way out, each spirit is kept for next time (its name and element, on this device) or let go."
+    },
+    {
+     "v": "keep",
+     "label": "They wait for next time",
+     "c": "Every spirit still following is kept and walks with you when you go back in."
+    },
+    {
+     "v": "let-go",
+     "label": "Let go at the mouth",
+     "c": "Nothing is kept, as in the WAVE room. Each sitting starts with no spirits."
     }
    ]
   }
@@ -20995,7 +21138,7 @@
    "name": "The Big Mind Cave",
    "repo": "sprout",
    "element": "water",
-   "record": "sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md; /mnt/project-files/big-mind/; sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md",
+   "record": "sprout campaigns/big-mind/6FACE_PASS1_big-mind-cave_2026-10-10.md; /mnt/project-files/big-mind/; sprout campaigns/big-mind/6FACE_PASS2_big-mind-cave_2026-10-11.md; sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md",
    "intro": "It wants a cave journey to the centre of the self, built from the Big Mind transcript the way the Skilled Helper became a campaign: guardians to meet, a part secretly speaking to find and set aside, the child and the player self at the centre, and later a world spawned from what the player keeps.",
    "rounds": [
     {
@@ -21033,6 +21176,23 @@
       "bmw-number-stays",
       "bmw-record",
       "bmw-shown"
+     ]
+    },
+    {
+     "n": 3,
+     "questions": [
+      "bms-sit-whom",
+      "bms-spirits-after"
+     ],
+     "positions": [
+      "bms-sit-anywhere",
+      "bms-in-place",
+      "bms-block-sits",
+      "bms-spirits-follow",
+      "bms-dismiss",
+      "bms-voices-respond",
+      "bms-protects-from",
+      "bms-build-order"
      ]
     }
    ]
