@@ -147,6 +147,11 @@ do not run it; `scope` in the file says which is which.
    flags a step past it, and lets him move it; each move is kept in `moved`. Read a slipped step's note and
    moves before the work that waits on it. A secret is never written to a step. A step
    that needs one sets `generate` to its length, and the page makes it on his device without storing it.
+   **Every input is checked before the step is published** (Wendell, 2026-10-12: "if there is a task for me it needs
+   to have all the context and be able to point me where I'm supposed to find things"). A step names each file, link or
+   account it needs and where it lives. If an input cannot be found, publish a find-it step instead: what is missing,
+   why it matters, where it was last seen, and the remediation the game masters will run if he cannot find it
+   (`step_missing_input` in `pipeline.yaml`).
 5. **Read his ticks.** The page records `done`, `doneAt` and `note` on each step. Read the list before any
    work that waits on a step. A note is a report from him; answer it in the next reply or in the pass.
 6. **Ship.** A feature whose gates pass goes on the board as a position that merges on the next board read
