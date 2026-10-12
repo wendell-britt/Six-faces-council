@@ -8,7 +8,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 - [root](root.md), 2026-10-11: play page built (root-game #17, https://claude.ai/artifact/6RqthVDD7sGbjVtHqEDNo3); waiting on his phone play (T1), then five friends cold.; planted-feet stances in root-game #19 (https://claude.ai/artifact/A4oeXe6BYv2T8e7445fuLi); attack and defense (postures open gates, charge, weak spot) in root-game #20 on the same link, rows on the board, ex-posture-table open
 - [coaching-pipeline](coaching-pipeline.md), 2026-10-10: guesting first, daemons opt-in on the coaching page (draft PR); Web Analytics on, PR #273; Monday reads.
 - [studio](studio.md), 2026-10-10: cave pilot through gates 0 to 2; Sprout mock v2 and second cold round; retro 10-17.
-- [big-mind-cave](big-mind-cave.md), 2026-10-10: apply four picks and the overrule in round 2.
+- [big-mind-cave](big-mind-cave.md), 2026-10-12: two charges built (bars-engine #278); sitting down and charge spirits on the board (`bms-sit-whom`, `bms-spirits-after`), built after the WAVE room lands.
 - [cave-of-lessons](cave-of-lessons.md), 2026-10-10: `cave-321-form` on the board; Wendell's phone play, then fixes from his notes.
 - [morning-menu](morning-menu.md), 2026-10-09: build Lenses intake, Tap the Vein menu, morning.py.
 - [coaching-site](coaching-site.md), 2026-10-09: Wendell plays #270 on his phone by 10-12, then merge.
