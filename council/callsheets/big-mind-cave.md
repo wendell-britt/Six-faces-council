@@ -20,7 +20,7 @@ Chat rulings 2026-10-12 on #282, built and pushed to its branch (bars-engine 7e1
 you choose this option so the player can see how the charge changes as the choices are bing picked" (the sit-down camera now
 frames the charge under the panel). Wendell, 22:08: "Giving it a name needs to be optional- or at the least giving it a name after
 working through it makes the most sense / perhaps even a random name generator so the game can track the charges as they emerge."
-Built as: the game names each charge (two words, such as Quiet Moth), naming is optional at Acknowledge, and Validate offers a name
+Built as: the game names each charge (two words, such as Small Drum), naming is optional at Acknowledge, and Validate offers a name
 of the player's own.
 
 ## Files
