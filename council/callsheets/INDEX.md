@@ -4,6 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
+- [virtual-launch](virtual-launch.md), 2026-10-12: step blocked; split into name-the-block, `vl-date` and six one-question steps; answers go onto the pipeline row.
 - [wave-room](wave-room.md), 2026-10-11: second slice built (bars-engine PR #277 on #276), all seven of his changes; waiting on his play.
 - [root](root.md), 2026-10-11: play page built (root-game #17, https://claude.ai/artifact/6RqthVDD7sGbjVtHqEDNo3); waiting on his phone play (T1), then five friends cold.; planted-feet stances in root-game #19 (https://claude.ai/artifact/A4oeXe6BYv2T8e7445fuLi); attack and defense (postures open gates, charge, weak spot) in root-game #20 on the same link, rows on the board, ex-posture-table open
 - [coaching-pipeline](coaching-pipeline.md), 2026-10-10: guesting first, daemons opt-in on the coaching page (draft PR); Web Analytics on, PR #273; Monday reads.
