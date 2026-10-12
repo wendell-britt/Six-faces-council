@@ -1,0 +1,30 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T21:05:18.434Z",
+ "answers": {
+  "bms-away-lighter": {
+   "kind": "position",
+   "savedAt": "2026-10-12T21:05:18.434Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "morning-menu-key-02",
+   "at": "2026-10-12T20:52:23.344Z",
+   "what": "ticked",
+   "do": "Add the menu's column to the production database. Paste the line below into Terminal as one piece and press Return. It pulls bars-engine's production settings into a temporary file, adds the column, and deletes the file."
+  },
+  {
+   "id": "morning-menu-key-02a",
+   "at": "2026-10-12T20:52:41.112Z",
+   "what": "ticked",
+   "do": "Merge bars-engine PR 267, the Tap the Vein menu. Do this after step 2, because the new page reads the column step 2 adds."
+  }
+ ],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
