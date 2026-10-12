@@ -1,0 +1,36 @@
+{
+ "positions": [
+  {
+   "id": "yun2-order",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "root 5",
+   "auto": true,
+   "pos": "Yun's session two teaches your order: hold a posture to three beads, strike through his weak gate to break his answer, answer his fuelled strikes from safe ground, then timing.",
+   "why": "Your ex-curriculum position and ex-posture-table answer (keep the council's table). Source: root-game council/6FACE_PASS5_2026-10-12.md (root-game #21)"
+  },
+  {
+   "id": "yun2-shift-is-a-turn",
+   "faces": [
+    "architect"
+   ],
+   "pass": "root 5",
+   "auto": true,
+   "pos": "A weight shift by Yun is a turn the player holds through, so beads build between strikes with no new rule.",
+   "why": "ex-charge counts one bead a turn; session one already taught that a shift is not a push. Source: root-game council/6FACE_PASS5_2026-10-12.md (root-game #21)"
+  },
+  {
+   "id": "yun2-timing-named",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "root 5",
+   "auto": true,
+   "pos": "The timing step names timing once, lights the answer with the commit circle, and counts an answer before the circle or to a shift as a miss.",
+   "why": "Your ruling of 2026-10-11: \"most of the game is timing and choosing the right option\". Source: root-game council/6FACE_PASS5_2026-10-12.md (root-game #21)"
+  }
+ ]
+}
