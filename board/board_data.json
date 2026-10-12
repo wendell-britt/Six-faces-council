@@ -18837,6 +18837,54 @@
      "diplomat"
     ],
     "pass": "big mind cave 3"
+   },
+   "cs-rebuild-proof": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:27:18.273Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-cc0-or-own": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:30.428Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "steer": "\"allow a Royalty Free model in a web page only if no one else can extract it, and a model in a page can be extracted\"\n\nHow are people getting around this? Well not around but if royalty free can be extracted then what's the point of this",
+    "faces": [
+     "regent"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-manifest-row": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:38.626Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-one-studio": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:43.826Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "cave studio"
    }
   },
   "questions": {
@@ -20715,6 +20763,45 @@
      "regent"
     ],
     "pass": "virtual launch unblock"
+   },
+   "cs-chatgpt-ai-art": {
+    "decision": "concept-only",
+    "label": "Concept only",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:25:57.956Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "steer": "for now it's for concept, we will need an additional production step to rebuild the pieces ourselves",
+    "faces": [
+     "regent",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-first-piece": {
+    "decision": "chambers",
+    "label": "Chamber dressing for the kit",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:26:16.791Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-asset-kind": {
+    "decision": "reference",
+    "label": "Pictures to build from",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:27:10.162Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "steer": "I'd need to see and trust blenders ability to take pictures to build from",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "cave studio"
    }
   },
   "causes": {
