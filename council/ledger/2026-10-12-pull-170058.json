@@ -1,0 +1,139 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T17:00:58.487Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "replies-owed-20261008-1",
+   "at": "2026-10-12T16:18:53.297Z",
+   "what": "note",
+   "note": "Zoom link sent and time confirmed",
+   "do": "Matthew Bunday booked a Podcast Recording slot yesterday afternoon for Wednesday, October 14 at 2pm Central, and he introduced himself as \"Zencephalon from Twitter.\" Calendly could not attach a Zoom link to the event, so right now he has a confirmed time and no way to join. Send him the Zoom link and confirm the time."
+  },
+  {
+   "id": "replies-owed-20261008-1",
+   "at": "2026-10-12T16:18:54.363Z",
+   "what": "ticked",
+   "do": "Matthew Bunday booked a Podcast Recording slot yesterday afternoon for Wednesday, October 14 at 2pm Central, and he introduced himself as \"Zencephalon from Twitter.\" Calendly could not attach a Zoom link to the event, so right now he has a confirmed time and no way to join. Send him the Zoom link and confirm the time."
+  },
+  {
+   "id": "podcast-ep2-clips-01",
+   "at": "2026-10-12T16:26:52.465Z",
+   "what": "moved",
+   "from": "2026-10-08",
+   "to": "2026-10-14",
+   "do": "Post that episode 2 is out, if you have not yet: the YouTube thumbnail on Instagram with the day 0 caption, and the same caption with the link on Facebook and X."
+  },
+  {
+   "id": "podcast-ep2-clips-02",
+   "at": "2026-10-12T16:26:59.830Z",
+   "what": "moved",
+   "from": "2026-10-08",
+   "to": "2026-10-14",
+   "do": "Send Tom his two clips (1, how long, and 4, allow the purpose) with their captions. He has no socials, so a text or an email."
+  },
+  {
+   "id": "anastasia-campaign-live-01",
+   "at": "2026-10-12T16:27:14.031Z",
+   "what": "moved",
+   "from": "2026-10-09",
+   "to": "2026-10-12",
+   "do": "Send Anastasia the draft and ask for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in public. A photo and her Facebook post are optional."
+  },
+  {
+   "id": "ontology-sketch-01",
+   "at": "2026-10-12T16:35:11.553Z",
+   "what": "ticked",
+   "do": "Open the preview at /ontology-game/wave and press Something's in the way on any W.A.V.E. step. Tick Keep a record, then work the block through all four steps and Release."
+  },
+  {
+   "id": "ontology-sketch-02",
+   "at": "2026-10-12T16:35:19.649Z",
+   "what": "ticked",
+   "do": "Answer the three ontology game questions on the Open tab: oag-ea-practice, oag-record and oag-main-order. Add a note to the step above if anything you would have held in your head is missing from Your record."
+  },
+  {
+   "id": "podcast-ep1-clips-03",
+   "at": "2026-10-12T16:38:03.874Z",
+   "what": "ticked",
+   "do": "Post clip 2, touch distance (now 70 seconds), the same way, with auto captions on and cover-clip2-touch-distance.jpg as the cover."
+  },
+  {
+   "id": "flirtcraft-ep1-clips-02",
+   "at": "2026-10-12T16:40:14.265Z",
+   "what": "ticked",
+   "do": "Post the first clip, QC's permission to flirt, as an Instagram Reel with Share to Facebook and auto captions on, then on X. Tap Edit cover, then Add from camera roll, and pick its cover. The video has no words on screen, so check the auto captions against the clip before you post."
+  },
+  {
+   "id": "coaching-pipeline-01",
+   "at": "2026-10-12T16:40:30.608Z",
+   "what": "ticked",
+   "do": "Open the bars-engine project in Vercel, go to the Analytics tab, and press Enable for Web Analytics. If Vercel asks you to pick a plan or shows a price, stop and write what it says in the note here."
+  },
+  {
+   "id": "coaching-pipeline-02",
+   "at": "2026-10-12T16:44:07.097Z",
+   "what": "ticked",
+   "do": "Read PR #273 (it adds visit counting and passes source tags to Calendly). Reply \"merge\" in the thread, or merge it yourself."
+  },
+  {
+   "id": "morning-menu-key-02",
+   "at": "2026-10-12T16:44:51.086Z",
+   "what": "note",
+   "note": "Need step by step instructions for this. Something that I can copy and paste directly into terminal. IF we have instructions like these moving forward they need to be able to be copies and pasted.",
+   "do": "Add the menu's column to the production database. Paste the line below into Terminal as one piece and press Return. It pulls bars-engine's production settings into a temporary file, adds the column, and deletes the file."
+  },
+  {
+   "id": "flirtcraft-own-database-05",
+   "at": "2026-10-12T16:46:26.510Z",
+   "what": "ticked",
+   "do": "Add the sign-in secret."
+  },
+  {
+   "id": "gs-1",
+   "at": "2026-10-12T16:52:14.785Z",
+   "what": "note",
+   "note": "need step by step instructions and if there is a file associated with it, a pointer to where it is on my mac OR as an attatchement in the next step",
+   "do": "Import the Guide's files into the game-masters-guide repo, in six small steps. 1) Open Terminal on your Mac. 2) Check the zip is in Downloads: ls ~/Downloads/game-masters-guide*.zip. It should list one file. 3) Get the repo folder: cd ~ && git clone https://github.com/wendell-britt/game-masters-guide.git (if the folder already exists, cd game-masters-guide && git pull instead). 4) Unzip into a scratch folder and copy the contents in (command below). 5) Commit and push (command below). 6) Look at the repo on GitHub and compare with the check line."
+  },
+  {
+   "id": "flirtcraft-own-database-06",
+   "at": "2026-10-12T16:54:08.568Z",
+   "what": "note",
+   "note": "Since this has multiple steps and platforms there needs to be links to resend AND to flirtcraft ENV variable",
+   "do": "Add your Resend key, so sign-in links arrive by email. This takes two sites: first copy the key from Resend (link 1), then paste it into flirtcraft's Vercel settings (link 2)."
+  },
+  {
+   "id": "flirtcraft-own-database-06",
+   "at": "2026-10-12T16:59:27.140Z",
+   "what": "ticked",
+   "do": "Add your Resend key, so sign-in links arrive by email. This takes two sites: first copy the key from Resend (link 1), then paste it into flirtcraft's Vercel settings (link 2)."
+  },
+  {
+   "id": "flirtcraft-own-database-08",
+   "at": "2026-10-12T17:00:12.660Z",
+   "what": "ticked",
+   "do": "Redeploy production, so the site picks up the new settings and creates its tables."
+  },
+  {
+   "id": "virtual-launch-restart-01",
+   "at": "2026-10-12T17:00:58.487Z",
+   "what": "note",
+   "note": "This one is blocked and should trigger an unblocking process for me to move forward.",
+   "do": "Run the step 1 unpacking session for the MTGOA virtual launch and write the answers down. The six questions are: what do you want to create, what will that get you, what is life like now for you and the people you want there, how does that feel, what would have to be true for someone to feel that way, and what reservations do you have. The architect flagged this one — its step 1 window closed on October 6 while the October 16 date held, so it is a full step behind and promo starts on the 10th."
+  }
+ ],
+ "needs_work": [
+  "steps/replies-owed-20261008-1: note \"Zoom link sent and time confirmed\"",
+  "steps/podcast-ep2-clips-01: moved from 2026-10-08 to 2026-10-14",
+  "steps/podcast-ep2-clips-02: moved from 2026-10-08 to 2026-10-14",
+  "steps/anastasia-campaign-live-01: moved from 2026-10-09 to 2026-10-12",
+  "steps/morning-menu-key-02: note \"Need step by step instructions for this. Something that I can copy and paste directly into terminal. IF we have instructions like these moving forward they need to be able to be copies and pasted.\"",
+  "steps/gs-1: note \"need step by step instructions and if there is a file associated with it, a pointer to where it is on my mac OR as an attatchement in the next step\"",
+  "steps/flirtcraft-own-database-06: note \"Since this has multiple steps and platforms there needs to be links to resend AND to flirtcraft ENV variable\"",
+  "steps/virtual-launch-restart-01: note \"This one is blocked and should trigger an unblocking process for me to move forward.\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
