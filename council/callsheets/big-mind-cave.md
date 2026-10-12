@@ -1,14 +1,11 @@
-2026-10-12
+2026-10-12 (updated 19:50)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
-Two charges and the W.A.V.E. at every poll are built: bars-engine PR #278 (branch `claude/project-thread-d8durh`, stacked on
-#272), 108 checks pass, CI green. Phone link:
-https://bars-engine-git-claude-projec-a9ee83-wendells-projects-9c1b16dc.vercel.app/ontology-game/big-mind. A blocked W.A.V.E.
-step is noted and counts as complete there, until sitting down is built.
-Sitting down anywhere and the charge spirits (his `bmw-block` steer) went through pass 3: eight positions and two questions on
-the board as round 3. It is built after the WAVE room's #276 and #277 land on the cave branch and that branch is merged into
-#272's (`bms-build-order`), so the room's `ROOM_STEPS` and `talk321` are shared, not copied.
+Sitting down anywhere and the charge spirits are built: bars-engine PR #280 (branch `claude/project-thread-0wytio`, stacked on
+#278, carrying #276 and #277 merged in per `bms-build-order`), 146 cave checks and 268 Cave of Lessons checks pass. Both of his
+answers are in it (`bms-sit-whom` pick, `bms-spirits-after` choose). Phone link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU
+(version 5). Next: his play of a sit-down in a hallway and before the Protector, then fixes from his notes in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
