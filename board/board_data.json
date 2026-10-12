@@ -18558,6 +18558,18 @@
      "diplomat"
     ],
     "pass": "texts to campaigns, step 2"
+   },
+   "bms-away-lighter": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T21:05:18.434Z",
+    "record": "council/ledger/2026-10-12-pull-210518.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "big mind cave 3"
    }
   },
   "questions": {
@@ -21719,5 +21731,5 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-12T20:13:35.781Z"
+ "steps_recorded_through": "2026-10-12T20:52:41.112Z"
 }
