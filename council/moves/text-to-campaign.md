@@ -109,6 +109,10 @@ play, not about the book, so every later run starts from them:
 - **Run the guessing test on the text, before any screen.** Step 3 runs it on `encounters.yaml` with three fresh
   players on the smallest model (instinct, impatient fixer, answer hunter), and checks that the right line is not
   usually the longest. It costs minutes, and it would have saved prototype 2.
+  Keep it cheap (Wendell, 2026-10-12: "we do want to find a way to conserve tokens on these tests or they will get
+  quite expensive"; Part III's three rounds cost about 653,000 tokens in nine general-purpose runs): one run of a
+  Read-only player agent plays all three players (sprout `.claude/agents/guess-player.md`), and a rerun tests only
+  the moments that changed.
 - **The when may be later in the book.** An introduction names skills; the rules for when to use them are often
   taught later. Step 1 flags this, and step 2 fills the gap from general practice, labelled as such, until that
   section runs.
