@@ -1,10 +1,14 @@
-2026-10-10 (22:45)
+2026-10-12 (19:50)
 # Coaching pipeline (lead generation for masteringallyship.com/coaching)
 
 ## Next
 Wendell answered both picks on 2026-10-10 (board read 2234): `lg-first-pipe` = guesting, `lg-keep-step` = daemons-list.
-- First pipe: guesting on other shows. Claude builds the guest-show list on the Outreach tab (`lg-guest-shows`) and
-  drafts pitches for Wendell to send. The letter and the live session wait.
+- First pipe: guesting on other shows. Built 2026-10-12: 14 shows on the Outreach tab's Guesting list, all
+  Identified, each row holding its pitch and tagged link (`utm_source=guest&utm_campaign=<show>`). The full list,
+  sources and what was dropped are in `/mnt/project-files/lead-gen-research/guest-pitches-2026-10-12.md`. The
+  Daily Evolver has been silent since March 2024 and is off the list. Your steps `coaching-pipeline-04` (due
+  2026-10-19) asks Wendell to send the first three: Coaches Rising, The Embodiment Podcast, Buddhist Geeks (after
+  Vince records on 16 Oct). The letter and the live session wait.
 - Keep step: the coaching page's centre now offers the Meet Your Daemons series by email (bars-engine draft PR, branch
   `claude/project-thread-lr11l2`). It adds a `daemons` list (Resend topic "meet your daemons"); the address is stored
   on FunnelSignup with intent `daemons`, source `coaching`. This is the one exception to `cg-browser-only`: what the
@@ -19,7 +23,7 @@ Wendell answered both picks on 2026-10-10 (board read 2234): `lg-first-pipe` = g
   (`lg-podcast-link`).
 
 ## Waiting on
-Wendell: the Web Analytics switch, PR #273 review, the daemons opt-in PR review, and his edit of the Meet Your Daemons
+Wendell: sending the first three guest pitches (step 04), the Web Analytics switch, PR #273 review, the daemons opt-in PR review, and his edit of the Meet Your Daemons
 series (the file named in the pass is not in the project folder now).
 
 ## Files
