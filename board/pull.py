@@ -10,7 +10,7 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
-  causes, steer), query {"limit": 1000}, out_dir <dir>
+  causes, steer, steps), query {"limit": 1000}, out_dir <dir>
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -19,6 +19,11 @@ Then republish board/council-board.html to the board URL without passing capabil
 Running it twice, or in two sessions at once, records the same thing the same way. The ledger file is named after
 the newest save it records and holds no time of its own, so two runs that see the same saves write the same file, and
 the board merge driver joins resolved entries by id.
+
+Steps (2026-10-12): a tick, note or date move on the Your steps tab lives only in the store's steps collection, and
+the Send button sends it like any answer. Until this date pull.py never read that collection, so the 18:40 Send of
+three step notes recorded nothing and the read said all was recorded. Every change later than
+steps_recorded_through is now recorded in the ledger; a note or a moved date goes on the needs-work list.
 """
 import argparse
 import json
@@ -32,6 +37,7 @@ DATA = HERE / "board_data.json"
 LEDGER = ROOT / "council" / "ledger"
 BOARD_URL = "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
 KINDS = ("positions", "questions", "terms", "causes")
+STEPS_SINCE = "2026-10-12T00:00:00Z"  # step notes before this were read by hand (e.g. positions on 7 October notes)
 
 sys.path.insert(0, str(ROOT / "council"))
 import due  # noqa: E402  the deferral ladder, so a deferral is recorded the way the board computed it
@@ -106,10 +112,28 @@ def find_new(data, store):
         if (g.get("text") or "").strip() and g.get("savedAt", "") > data.get("steer_recorded_through", ""):
             general = g
     new.sort(key=lambda n: n["doc"]["savedAt"])
-    return new, general
+    return new, general, find_steps(data, store)
 
 
-def apply(data, new, general, ledger_rel):
+def find_steps(data, store):
+    """Every tick, note and date move on a step later than the last one recorded, oldest first."""
+    since = data.get("steps_recorded_through") or STEPS_SINCE
+    out = []
+    for f in sorted((store / "steps").glob("*.json")) if (store / "steps").is_dir() else []:
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        if doc.get("done") and doc.get("doneAt", "") > since:
+            out.append({"id": f.stem, "at": doc["doneAt"], "what": "ticked", "do": doc.get("do", "")})
+        if (doc.get("note") or "").strip() and doc.get("noteAt", "") > since:
+            out.append({"id": f.stem, "at": doc["noteAt"], "what": "note", "note": doc["note"].strip(),
+                        "do": doc.get("do", "")})
+        for m in doc.get("moved") or []:
+            if m.get("at", "") > since:
+                out.append({"id": f.stem, "at": m["at"], "what": "moved", "from": m.get("from"), "to": m.get("to"),
+                            "do": doc.get("do", "")})
+    return sorted(out, key=lambda e: e["at"])
+
+
+def apply(data, new, general, steps, ledger_rel):
     """Write resolved entries, deferrals and the general steer onto data. Returns the ledger record."""
     record = f"{ledger_rel} (six-faces-council)"
     answers, work = {}, []
@@ -137,11 +161,22 @@ def apply(data, new, general, ledger_rel):
                                                        "record": record})
         data["steer_recorded_through"] = general["savedAt"]
         work.append(f'steer/general: "{general["text"]}"')
-    newest = max([n["doc"]["savedAt"] for n in new] + ([general["savedAt"]] if general else []))
+    for e in steps:
+        if e["what"] == "note":
+            work.append(f'steps/{e["id"]}: note "{e["note"]}"')
+        elif e["what"] == "moved":
+            work.append(f'steps/{e["id"]}: moved from {e["from"]} to {e["to"]}')
+    if steps:
+        data["steps_recorded_through"] = max(data.get("steps_recorded_through", ""), steps[-1]["at"])
+    newest = newest_of(new, general, steps)
     data["updated"] = max(data.get("updated", ""), newest[:10])
     return {"date": newest[:10], "kind": "board-pull", "newest_save": newest, "answers": answers,
-            "steer": general, "needs_work": work,
+            "steer": general, "steps": steps, "needs_work": work,
             "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."}
+
+
+def newest_of(new, general, steps):
+    return max([n["doc"]["savedAt"] for n in new] + ([general["savedAt"]] if general else []) + [e["at"] for e in steps])
 
 
 def main():
@@ -160,19 +195,23 @@ def main():
         git("checkout", "-q", "main")
         git("pull", "-q", "--no-rebase", "origin", "main")
     data = json.loads(DATA.read_text(encoding="utf-8"))
-    new, general = find_new(data, store)
-    if not new and not general:
+    new, general, steps = find_new(data, store)
+    if not (store / "steps").is_dir():
+        print("WARNING: no steps folder; step ticks, notes and moves were not checked (list the steps collection too)")
+    if not new and not general and not steps:
         print("every saved answer is recorded")
         return
     for n in new:
         print(f"{n['doc']['savedAt']}  {n['kind']:<9} {n['id']}  {n['answer'] or 'steer'}")
     if general:
         print(f"{general['savedAt']}  steer     general")
-    newest = max([n["doc"]["savedAt"] for n in new] + ([general["savedAt"]] if general else []))
+    for e in steps:
+        print(f"{e['at']}  step      {e['id']}  {e['what']}")
+    newest = newest_of(new, general, steps)
     name = f"{newest[:10]}-pull-{newest[11:19].replace(':', '')}.json"
     ledger_rel = f"council/ledger/{name}"
-    led = apply(data, new, general, ledger_rel)
-    print(f"{len(new) + bool(general)} saves to record in {ledger_rel}")
+    led = apply(data, new, general, steps, ledger_rel)
+    print(f"{len(new) + bool(general) + len(steps)} saves to record in {ledger_rel}")
     if led["needs_work"]:
         print("needs work:\n  " + "\n  ".join(led["needs_work"]))
     if not a.push:
@@ -185,7 +224,7 @@ def main():
     if git("diff", "--cached", "--quiet", check=False).returncode == 0:
         print("no change to commit")
         return
-    git("commit", "-q", "-m", f"Board pull: {len(new) + bool(general)} saves through {newest}")
+    git("commit", "-q", "-m", f"Board pull: {len(new) + bool(general) + len(steps)} saves through {newest}")
     for _ in range(3):
         if git("push", "-q", "origin", "main", check=False).returncode == 0:
             print(f"pushed to main; now republish board/council-board.html to {BOARD_URL} without capabilities")
