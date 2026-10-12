@@ -1,0 +1,31 @@
+{
+  "show": "Mastering the Game of Allyship",
+  "episode": "1",
+  "guest": "Isaac Holze",
+  "clips": [
+    {
+      "id": "clip1-mirror",
+      "n": 1,
+      "name": "Mirror",
+      "motif": "mirror",
+      "headline": "There's no mirror\nfor your awareness\n*except\nrelationship.*"
+    },
+    {
+      "id": "clip2-touch-distance",
+      "n": 2,
+      "name": "Touch distance",
+      "motif": "distance",
+      "headline": "Allyship works\nat *touch\ndistance.*",
+      "sub": "Not across the world"
+    },
+    {
+      "id": "clip3-most-caring",
+      "n": 3,
+      "name": "Most caring",
+      "motif": "quote",
+      "noGuest": true,
+      "headline": "The most caring\nare being told\nthey're *the worst\npeople.*",
+      "sub": "— Isaac Holze, episode 1"
+    }
+  ]
+}
