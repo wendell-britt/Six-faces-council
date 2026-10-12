@@ -1,0 +1,14 @@
+{
+ "date": "2026-10-12",
+ "kind": "step-unblock",
+ "from": "steps/virtual-launch-restart-01 note, council/ledger/2026-10-12-pull-170058.json",
+ "blocker_record": "council/blockers/virtual-launch-restart-01--note-20261012.json",
+ "store_writes": [
+  "lists/virtual-launch-restart: title and why rewritten",
+  "steps/virtual-launch-restart-01: retired, split; blocker field set",
+  "steps/virtual-launch-restart-02 to -09: added (name the block; vl-date; six questions, one per step)",
+  "Event Pipeline threads/virtual-launch: nextAction points at the steps, due 2026-10-14"
+ ],
+ "questions_added": ["vl-date"],
+ "note": "The six answers arrive as step notes. One session records all of them together, not one thread per note."
+}

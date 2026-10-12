@@ -11222,6 +11222,34 @@
      "c": "Nothing is kept, as in the WAVE room. Each sitting starts with no spirits."
     }
    ]
+  },
+  {
+   "id": "vl-date",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "virtual launch unblock",
+   "q": "Does the MTGOA virtual launch stay on Thursday, October 16?",
+   "why_you": "The date is yours, and the answer decides whether the next four days are a sprint or the launch gets a full run. The Event Pipeline has it at step 1 of 8 with the date four days off, its promo window opened on October 10, and its row does not yet say where or how people join. Source: the virtual-launch row in the Event Pipeline (https://claude.ai/artifact/WLJKhbnhxiwofJWXge8Tyf); your note on step virtual-launch-restart-01, October 12.",
+   "not_before": "The date was last set on October 5, when the launch was restarted at step 1. Your note of October 12 is the first word that the step is blocked.",
+   "options": [
+    {
+     "v": "move",
+     "label": "Move it to a date you pick, at least 11 days out (recommended)",
+     "c": "The pipeline restarts its clock from your date and gives each of its steps the room it first had (October 5 to 16 was 11 days). Put the date in the box under the options. The Challenger dissents: it would keep the 16th small, because a date that moves once tends to move again."
+    },
+    {
+     "v": "keep-small",
+     "label": "Keep October 16, as a small gathering you invite people to yourself",
+     "c": "The six answers are needed by October 14 and the invitations go out the same day. There is no public promo."
+    },
+    {
+     "v": "seattle",
+     "label": "Fold it into the Seattle launch on November 6",
+     "c": "The virtual launch stops being its own event, and the Seattle stop gets an online way in. Seattle is also at step 1, so its unpacking session covers both."
+    }
+   ]
   }
  ],
  "causes": [
@@ -21552,5 +21580,6 @@
     }
    ]
   }
- ]
+ ],
+ "steps_recorded_through": "2026-10-12T17:00:58.487Z"
 }

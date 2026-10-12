@@ -16,7 +16,7 @@ import json
 import sys
 
 MISSING = object()
-LATER_WINS = {"updated", "steer_recorded_through"}
+LATER_WINS = {"updated", "steer_recorded_through", "steps_recorded_through"}
 
 
 def key(row):
