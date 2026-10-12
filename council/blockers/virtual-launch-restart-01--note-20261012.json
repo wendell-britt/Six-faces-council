@@ -1,0 +1,22 @@
+{
+ "engine": "board-note", "version": 1,
+ "step": "virtual-launch-restart-01", "list": "virtual-launch-restart",
+ "task": "Run the step 1 unpacking session for the MTGOA virtual launch and write the answers down.",
+ "due": "2026-10-07", "overdueDays": 5,
+ "startedAt": "2026-10-12T17:00:58.487Z", "savedAt": "2026-10-12T19:40:00Z",
+ "status": "open", "stage": "acknowledge",
+ "rounds": [
+  {"from": "the step", "felt": "This one is blocked and should trigger an unblocking process for me to move forward.",
+   "name": "not yet named by Wendell",
+   "seen_in_record": [
+    "The launch is Thursday 2026-10-16. The Event Pipeline row (virtual-launch) is at step 1 of 8; by its own formula it should be at step 4, and its promo window opened 2026-10-10.",
+    "The row does not say what the launch is: no place, time, host or way to join (fields with and note hold only the folder name).",
+    "The step asked six inner questions in one sitting, 'wherever you write', with no place for the answers.",
+    "The step was due 2026-10-07, the day it was written, so it was overdue before he first saw it.",
+    "Not a blocker on record: the proof edit is done (gn-proof, recorded 2026-10-04)."
+   ]}
+ ],
+ "resolution": {"kind": "change", "at": "2026-10-12T19:40:00Z",
+  "text": "Step 1 retired and split on the board: step 2 names what is in the way in one line, step 3 is the board question vl-date (keep October 16, move it, or fold into Seattle), steps 4 to 9 are the six questions one at a time, each answered in its own step's note. The pipeline row's next action points at these steps, due 2026-10-14."},
+ "open": "Wendell's own name for the block (step 2's note), vl-date, and the six answers. When they arrive: write the answers onto the Event Pipeline row, set its step and dates from vl-date, and fill name and resolution here."
+}
