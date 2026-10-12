@@ -117,6 +117,16 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-chip.st-safe{background:var(--accent-soft);color:var(--ok)}
 .st-chip.st-opt{background:var(--warn-bg);color:var(--warn)}
 .st-note{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem}
+.st-step .st-fold > summary{list-style:none;cursor:pointer;display:grid;gap:2px;color:var(--fg);padding:2px 0;min-height:44px;align-content:center}
+.st-fold > summary::-webkit-details-marker{display:none}
+.st-fold > summary .st-do{display:block;padding-right:22px;position:relative}
+.st-fold > summary .st-do::after{content:"\25B8";position:absolute;right:0;top:0;color:var(--muted);transition:transform .15s}
+.st-fold[open] > summary .st-do::after{transform:rotate(90deg)}
+.st-peek{font-size:.8rem;color:var(--muted)}
+.st-peek:empty{display:none}
+.st-fold[open] > summary .st-peek{display:none}
+.st-more{display:grid;gap:6px;margin-top:6px}
+.st-step .st-fold{font-size:inherit}
 .st-step details{font-size:.9rem}
 .st-step summary{cursor:pointer;color:var(--muted)}
 .st-step textarea{margin-top:6px}
@@ -789,6 +799,17 @@ const stOverdue = s => !s.done && !s.retired && !s.optional && (stDaysLeft(s.due
 const stClosed = s => !!(s.done || s.retired);
 const stFinished = id => { const all = stOf(id); return all.length > 0 && stReq(all).every(([,s]) => s.done); };
 const stOpenGroups = new Set();
+/* Wendell, 2026-10-12: "we also need the ability to collapse steps so I can see all the open items and open them up when I
+   want to get more info". Each step folds to its one line plus a short peek (due, overdue, computer, note); tapping the line
+   opens the rest. Which steps are open is kept across redraws, like the Completed groups. */
+function stPeek(s, over){
+  const bits = [];
+  if (s.due && !s.done) bits.push(over ? `<b class="st-due-over">Overdue</b>` : esc(stFmt(s.due)));
+  if (s.device === 'computer' && !s.done) bits.push('Computer');
+  if (s.optional) bits.push('Optional');
+  if (s.note) bits.push('Has a note');
+  return bits.join(' · ');
+}
 function stStep(id, s){
   if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
@@ -806,7 +827,9 @@ function stStep(id, s){
   return `<li class="st-step${s.done?' st-done':''}" id="s-${id}">
     <button type="button" class="st-tick" data-tick="${id}" aria-pressed="${!!s.done}" aria-label="Step ${esc(s.n)}: ${s.done?'done, tap to undo':'tap when done'}">${s.done?'✓':esc(s.n)}</button>
     <div class="st-body">
-      <p class="st-do">${esc(s.do)}</p>
+      <details class="st-fold" data-group="s-${id}"${stOpenGroups.has('s-' + id) ? ' open' : ''}>
+      <summary><span class="st-do">${esc(s.do)}</span><span class="st-peek">${stPeek(s, over)}</span></summary>
+      <div class="st-more">
       ${where}${enter}${gen}${check}${due}${charge}
       <div class="st-chips">${chips.join('')}</div>
       ${s.note ? `<div class="st-note">Your note: ${esc(s.note)}</div>` : ''}
@@ -815,6 +838,7 @@ function stStep(id, s){
         <button type="button" class="st-btn" data-note="${id}">Save note</button> <span class="st-state" id="sns-${id}"></span>
         ${s.done ? '' : `<div class="st-move"><label for="sd-${id}">Move the date to</label><input type="date" id="sd-${id}" value="${esc(s.due || '')}"><button type="button" class="st-btn" data-move="${id}">Move</button></div>${moved}`}
       </details>
+      </div></details>
     </div>
   </li>`;
 }
