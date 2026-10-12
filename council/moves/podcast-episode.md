@@ -75,7 +75,9 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
    designed like the YouTube thumbnails and never a frame from the video (Wendell, 2026-10-07: "This is essentially
    working as a youtube thumbnail but for the clips and for instagram"): `council/podcast/render_reel_covers.mjs`
    renders one 1080 by 1920 cover per clip from a spec beside the episode's files, with the words and drawing inside
-   the middle 3:4 that the profile grid shows, plus a contact sheet. The covers go to him in the thread, so he can
+   the safe box of the clip cover standard (`council/podcast/COVER_STANDARD.md`, Wendell, 2026-10-12), which the
+   profile grid's 3:4 crop, the feed's 4:5 crop and the Reels buttons and caption all leave whole, plus each cover's
+   grid crop and a contact sheet. The Podcast Thumbnail Studio uses the same standard. The covers go to him in the thread, so he can
    save them to his phone and pick each one as the Reel's cover ("Edit cover", then "Add from camera roll"). It
    writes an Instagram, a Facebook and an X caption for each clip in `podcast/<episode>/clips-and-captions.md`, and a
    Your steps list that posts them on the rhythm in the project files' `podcast/episode-marketing-plan.md`: the
