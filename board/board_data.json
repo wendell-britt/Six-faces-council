@@ -6638,6 +6638,61 @@
    "auto": true,
    "pos": "Step 1 on Part III of The Skilled Helper (pp. 215-404, the problem-management process, to the end of the book) is drafted: 114 helping skills across chapters 8 to 14, each with when it is right, when it is wrong, and when it is only partly right. A moment index ties the stage a person is in (crisis, tangled problems, stuck, a vague wish, dabbling, rushing, slipping) to the skills behind it. This stands unless you flip it.",
    "why": "Your 'Yes let's do that' on starting the next section. Read once from your PDF in The Library, one reader per chapter, in the same shape as Part II. Part III says when a move works far more often than when it misfires, so more lines are marked as inferred, and step 2 treats those as drafts. Blocks such as resistance and inertia stay out for step 3. Source: sprout campaigns/skilled-helper/part-three/extract.yaml (sprout pull request #42)"
+  },
+  {
+   "id": "ttc-story-part3",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Step 2 on Part III of The Skilled Helper is drafted. Part III goes to Act III as the Lamp-keeper's track, nine beats beside milestones 14 to 19: the player comes home and keeps Ede's side chamber open while she is outside the wall, and Tavi, Wynn and Brannock come for help across the act. The founder's walk is unchanged. This stands unless you flip it, and step 3 (encounters) starts from it.",
+   "why": "Act III's Decided state (fresh grief, many troubles, blame) is the trouble Part III teaches, and the book ends with the person carrying on without the helper, which is how Sprout already ends. Part II's story said Part III would deepen Ede's four questions. Source: sprout campaigns/skilled-helper/part-three/story.md (sprout pull request #43)"
+  },
+  {
+   "id": "p3-where-they-stand",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Each person who comes in Act III stands at one of Ede's four questions, or before them in fresh hurt, and shows it in what they say, never as a label. A move from the question they stand at is right, one from a question ahead of them is the wall, and one from behind is partial. People can step back, and the player follows. The game never tells the player they read someone wrong. This stands unless you flip it.",
+   "why": "The extract's moment index ties the stage a person is in to the move. It keeps hs-wrong-is-the-wall, the three outcomes and hs-t1-context (the moment decides the line). The Player daemon asked that the stage show as behaviour and never as a verdict. Source: part-three/story.md, Where they stand"
+  },
+  {
+   "id": "p3-tam-words",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Ede stays the teacher, but she is outside the wall until milestone 17, so Old Tam supplies the words: field sayings said while he and the player bring the withered farm back (\"One bed\", \"Hoeing isn't the harvest\", \"One frost isn't the year\"). The farm stays optional; Tam also drops by the Hall with a basket. Ede closes the track at milestone 17. If players miss the link from field to person, Ede's lamp says the same lines instead.",
+   "why": "Round 7: an existing character first. Decided canon puts Ede outside until milestone 17 and has Tam meet the player at the withered farm at milestone 15. His Act I arc (declining help) is untouched. Source: part-three/story.md, The teacher"
+  },
+  {
+   "id": "p3-ranks-six-seven",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Part III opens the Signature's ranks 6 and 7. Rank 6, Where they stand (d20), opens when the player reads someone at a later question than the one they arrived at (Brannock, L4). Rank 7, The last tending (d100), opens when Tavi carries on without the player (L9); at rank 7 the lamp says nothing after a wall. This stands unless you flip it.",
+   "why": "p2n-holds-eliminates set one die per rank and left ranks 6 and 7 for after Part II. Source: part-three/story.md, The Signature's last two ranks"
+  },
+  {
+   "id": "p3-ending-unseen",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "texts to campaigns, step 2",
+   "auto": true,
+   "pos": "Tavi's last beat ends with him no longer coming to the Hall, and the game never shows his next watch. The founder's walk gets no new line. This stands unless you flip it.",
+   "why": "The book's end state is the person carrying on without the helper (c14-s15), and the Decided ending already stops before we see whether the founder follows. The Player daemon: a scene proving his success would make the player the reason he is well. Source: part-three/story.md, L9 and The ending, unchanged"
   }
  ],
  "questions": [

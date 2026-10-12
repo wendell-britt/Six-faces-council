@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-12",
+  "pass": "ttc-story-part3",
+  "daemon": "daemon-player",
+  "face": "shaman",
+  "cast": "21 -> 56",
+  "model": "haiku",
+  "tokens": "82718",
+  "report": "2026-10-12-ttc-story-part3-daemon-player.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "The extract gives eight stages, each with a right move [1], so the act has eight answers.",
+        "The extract's partial readings are where playable half-right versions live [1], so keep them."
+      ],
+      "url": "https://github.com/wendell-britt/sprout/blob/main/campaigns/skilled-helper/part-three/extract.yaml",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Each wrong pick shows the person's reaction, as the Part II walls do [2], and then lets me take a second pick (\"step back, don't unsay it\")."
+      ],
+      "url": "https://github.com/wendell-britt/sprout/blob/main/campaigns/skilled-helper/part-two/story.md",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [],
+      "url": "https://github.com/wendell-britt/Six-faces-council/blob/main/council/daemons/daemons.yaml",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}
