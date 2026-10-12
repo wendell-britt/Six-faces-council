@@ -1,0 +1,83 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T02:56:30.533Z",
+ "answers": {
+  "bms-sit-whom": {
+   "kind": "question",
+   "choice": "pick",
+   "savedAt": "2026-10-12T02:51:48.918Z",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-spirits-after": {
+   "kind": "question",
+   "choice": "choose",
+   "savedAt": "2026-10-12T02:53:44.105Z",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-sit-anywhere": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:53:50.034Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-in-place": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:55:52.568Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-block-sits": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:56:00.877Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-spirits-follow": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:56:10.169Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-dismiss": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:56:14.969Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-voices-respond": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:56:20.007Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-protects-from": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:56:24.952Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  },
+  "bms-build-order": {
+   "kind": "position",
+   "savedAt": "2026-10-12T02:56:30.533Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-big-mind-cave"
+  }
+ },
+ "steer": null,
+ "needs_work": [
+  "questions/bms-sit-whom: You pick each time",
+  "questions/bms-spirits-after: You choose at the mouth"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

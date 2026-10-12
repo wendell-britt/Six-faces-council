@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11",
+ "updated": "2026-10-12",
  "positions": [
   {
    "id": "build",
@@ -18238,6 +18238,100 @@
      "diplomat"
     ],
     "pass": "big mind cave 2"
+   },
+   "bms-sit-anywhere": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:53:50.034Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-in-place": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:55:52.568Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-block-sits": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:56:00.877Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-spirits-follow": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:56:10.169Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-dismiss": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:56:14.969Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-voices-respond": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:56:20.007Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-protects-from": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:56:24.952Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-build-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:56:30.533Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "big mind cave 3"
    }
   },
   "questions": {
@@ -20079,6 +20173,31 @@
      "diplomat"
     ],
     "pass": "big mind cave 2"
+   },
+   "bms-sit-whom": {
+    "decision": "pick",
+    "label": "You pick each time",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:51:48.918Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman",
+     "architect"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bms-spirits-after": {
+    "decision": "choose",
+    "label": "You choose at the mouth",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:53:44.105Z",
+    "record": "council/ledger/2026-10-12-pull-025630.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "big mind cave 3"
    }
   },
   "causes": {
