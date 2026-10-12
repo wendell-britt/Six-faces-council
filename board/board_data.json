@@ -18487,6 +18487,66 @@
      "regent"
     ],
     "pass": "Pruner's track pass 3"
+   },
+   "ttc-story-part3": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T20:28:50.648Z",
+    "record": "council/ledger/2026-10-12-pull-202919.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "p3-where-they-stand": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T20:28:58.894Z",
+    "record": "council/ledger/2026-10-12-pull-202919.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "p3-tam-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T20:29:06.294Z",
+    "record": "council/ledger/2026-10-12-pull-202919.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "p3-ranks-six-seven": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T20:29:13.059Z",
+    "record": "council/ledger/2026-10-12-pull-202919.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "texts to campaigns, step 2"
+   },
+   "p3-ending-unseen": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T20:29:19.111Z",
+    "record": "council/ledger/2026-10-12-pull-202919.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "texts to campaigns, step 2"
    }
   },
   "questions": {
