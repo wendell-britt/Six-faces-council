@@ -16,7 +16,8 @@ Sonnet. The pass is one session and ends when its reply is posted (short session
 ## The pass
 
 1. Save the store: one message with ArtifactData `list` calls on `steps`, `lists`, `questions`, `positions`, `terms`,
-   `causes` and `steer` of https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, all into one `out_dir`, limit 1000.
+   `causes` and `steer` of https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, plus `threads` of the Event Pipeline
+   (https://claude.ai/artifact/WLJKhbnhxiwofJWXge8Tyf), all into one `out_dir`, limit 1000.
 2. `python3 board/read.py <dir>` first, so any saved answer is recorded before steps are judged.
 3. `python3 council/compost.py <dir>` prints every open step with its list's why and source.
 4. For each open step, decide one of three, checking the record (callsheets, PRs, mail, Vercel) rather than
@@ -30,6 +31,11 @@ Sonnet. The pass is one session and ends when its reply is posted (short session
    - **Take over.** Claude can do it, or check it, with the tools a session has. Do it in this thread when the work
      is small; otherwise start the work (a thread, a PR) and rewrite the step so what is left for him is only what
      needs his accounts, money or eyes. Rewrite or tick the step to match.
+   - **Lagging pipeline rows.** For each Event Pipeline row that is not queued and is stalled (its `nextActionDue` has
+     passed) or behind its step schedule (the morning brief's rules), check that an open step already carries its next
+     move. If none does, add one under the list that fits, or a new list, with full context. This replaced the
+     morning brief's Morning moves list on 2026-10-12, which never received a step: the brief stalled before its
+     step-writing section, and the lagging rows it found were already on other lists.
 5. Apply every change in one ArtifactData `batch` on `steps`, pinned with each step's version. Steps render live, so
    no republish is needed for step changes.
 6. Moving a due date is his; the pass never moves one. A step that is late is evidence for the decision, not a
