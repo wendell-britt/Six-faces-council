@@ -1,0 +1,14 @@
+{
+  "_about": "The clip cover standard for every podcast (Wendell, 2026-10-12: \"We need to standardize this across all of our podcasta and the thumbnail studio\"). COVER_STANDARD.md explains each number. render_reel_covers.mjs and the Podcast Thumbnail Studio both read these values; change them here and in the studio together.",
+  "canvas": { "w": 1080, "h": 1920, "ratio": "9:16" },
+  "crops": {
+    "grid_3x4": { "x": 0, "y": 240, "w": 1080, "h": 1440 },
+    "feed_4x5": { "x": 0, "y": 285, "w": 1080, "h": 1350 }
+  },
+  "ui_zones": {
+    "top": 150,
+    "bottom": 400,
+    "right": 180
+  },
+  "safe": { "left": 80, "right": 900, "top": 310, "bottom": 1500 }
+}
