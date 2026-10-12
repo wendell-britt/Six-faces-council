@@ -11,8 +11,9 @@ the board as round 3. It is built after the WAVE room's #276 and #277 land on th
 #272's (`bms-build-order`), so the room's `ROOM_STEPS` and `talk321` are shared, not copied.
 
 ## Waiting on
-His answers to `bms-sit-whom` (in a chamber, sit with your own charge, the voice, or pick each time) and `bms-spirits-after`
-(spirits kept, let go, or chosen at the mouth). His play of the W.A.V.E. in the Protector's chamber by 2026-10-18; the lever
+Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
+whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-place`, `bms-block-sits`, `bms-spirits-follow`,
+`bms-dismiss`, `bms-voices-respond`, `bms-protects-from`, `bms-build-order` stand. Both choices go into the build after the WAVE room lands. His play of the W.A.V.E. in the Protector's chamber by 2026-10-18; the lever
 test by 2026-10-25 (pass 2). Pass 3's tests: a sit-down in a hallway and before the Protector by 2026-10-25; the Challenger's
 tests by 2026-11-01. Earlier picks: `bm-center` two-caves, `bm-guide` integrated, `bm-session` own-pace, `bm-first-player` me.
 
