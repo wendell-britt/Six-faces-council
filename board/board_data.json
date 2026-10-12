@@ -20298,6 +20298,18 @@
      "architect"
     ],
     "pass": "big mind cave 3"
+   },
+   "vl-date": {
+    "decision": "seattle",
+    "label": "Fold it into the Seattle launch on November 6",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T20:01:41.980Z",
+    "record": "council/ledger/2026-10-12-pull-200141.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "virtual launch unblock"
    }
   },
   "causes": {
