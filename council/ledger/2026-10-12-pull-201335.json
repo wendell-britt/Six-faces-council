@@ -1,0 +1,17 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T20:13:35.781Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "flirtcraft-ep1-clips-04",
+   "at": "2026-10-12T20:13:35.781Z",
+   "what": "ticked",
+   "do": "Send QC his two clips and their covers, so he can share them."
+  }
+ ],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
