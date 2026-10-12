@@ -18332,6 +18332,78 @@
      "regent"
     ],
     "pass": "big mind cave 3"
+   },
+   "pf-one-foe-per-daemon": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:57:04.769Z",
+    "record": "council/ledger/2026-10-12-pull-025814.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "Pruner's track pass 3"
+   },
+   "pf-fight-rests": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:57:11.305Z",
+    "record": "council/ledger/2026-10-12-pull-025814.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "Pruner's track pass 3"
+   },
+   "pf-costs-hp-and-mana": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:57:17.140Z",
+    "record": "council/ledger/2026-10-12-pull-025814.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "Pruner's track pass 3"
+   },
+   "pf-gifts-earned": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:57:25.590Z",
+    "record": "council/ledger/2026-10-12-pull-025814.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "Pruner's track pass 3"
+   },
+   "ttc-extract-part3": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:57:36.081Z",
+    "record": "council/ledger/2026-10-12-pull-025814.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 1"
+   },
+   "pf-three-doors": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T02:58:14.744Z",
+    "record": "council/ledger/2026-10-12-pull-025814.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "Pruner's track pass 3"
    }
   },
   "questions": {
