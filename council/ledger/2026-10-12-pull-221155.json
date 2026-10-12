@@ -1,0 +1,29 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T22:11:55.408Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "blender-cloud-test-01",
+   "at": "2026-10-12T22:11:53.108Z",
+   "what": "ticked",
+   "do": "Open the network allowlist for the cloud environment. Add these domains: api.blenderkit.com, www.blenderkit.com, download.blender.org, polyhaven.com, api.polyhaven.com, cdn.polyhaven.com. Keep the package managers box ticked. If you would rather not list them, pick a broader access level."
+  },
+  {
+   "id": "blender-cloud-test-02",
+   "at": "2026-10-12T22:11:54.642Z",
+   "what": "ticked",
+   "do": "Add your BlenderKit key as a secret in the cloud environment. Name: BlenderKit. Secret type: Bearer. Allowed websites: api.blenderkit.com. Path prefixes: /api/v1/. Custom headers: leave empty. Paste the key into that form only, never into a chat."
+  },
+  {
+   "id": "blender-cloud-test-03",
+   "at": "2026-10-12T22:11:55.408Z",
+   "what": "ticked",
+   "do": "Start a new session and tell Claude the settings are saved. Settings changes usually reach only new sessions, so the current one will not see them. Claude will probe the six domains, search BlenderKit with your key, and carry on with the asset test."
+  }
+ ],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
