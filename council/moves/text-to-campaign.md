@@ -132,6 +132,9 @@ front of the author as one package, which is also the licensing pitch.
 ## What keeps it cheap
 
 - **The book is read once per section**, at step 1. Every later step reads files a few pages long.
+- **Step 1 runs one chapter per thread** (Wendell, 2026-10-12, after Part III's seven chapters ran as subagents in one
+  thread at about 940,000 tokens: "This should've been done in threads to lower token cost"). Each chapter's thread
+  reads only its pages and writes its `chapters/chN.yaml`; a last short thread writes the section's `extract.yaml` index.
 - **A step thread reads this file, its input files and the board**, and nothing else. It does not read the
   interview or another step's thread.
 - **Two faces per step, six per section.** The full pass runs once, at the close.
