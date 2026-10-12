@@ -1,0 +1,23 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T23:29:20.492Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "cave-studio-01",
+   "at": "2026-10-12T22:42:45.262Z",
+   "what": "ticked",
+   "do": "Make a Google Drive folder named Cave studio inbox and put one ChatGPT-made asset in it."
+  },
+  {
+   "id": "cave-studio-03",
+   "at": "2026-10-12T23:29:20.492Z",
+   "what": "ticked",
+   "do": "Look at your crystal rebuilt in Blender and say whether you trust the picture-to-model step."
+  }
+ ],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
