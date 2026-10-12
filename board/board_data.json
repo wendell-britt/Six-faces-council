@@ -6527,8 +6527,8 @@
    ],
    "pass": "big mind cave 3",
    "auto": true,
-   "pos": "A charge that stays at the room's fork walks behind you through the cave as a spirit, in its element's colour, with the name you gave it. A charge you breathe out does not follow. At most three walk in view; the rest show as a number by the Self button.",
-   "why": "Your words: \"The charge spirits can come with them throughout the cave until they are dismissed\". The room already splits stays and goes (wave-room-stay-move, wave-room-release). Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+   "pos": "Every W.A.V.E. done sitting down, in the Big Mind cave and the Cave of Lessons, leaves a spirit that walks behind you in its element's colour, with the name you gave it, until you dismiss it. At most three walk in view; the rest show as a count on the Spirits button.",
+   "why": "Your steer of 12 October, 20:43, which widened this row: \"When someone does WAVE sitting down in the big mind cave or the other cave environments it should spawn a spirit that walks with the character until dismissed\". It replaced the earlier draft, where only a charge that stayed at the fork followed. Built in bars-engine #282."
   },
   {
    "id": "bms-dismiss",
@@ -6693,6 +6693,17 @@
    "auto": true,
    "pos": "Tavi's last beat ends with him no longer coming to the Hall, and the game never shows his next watch. The founder's walk gets no new line. This stands unless you flip it.",
    "why": "The book's end state is the person carrying on without the helper (c14-s15), and the Decided ending already stops before we see whether the founder follows. The Player daemon: a scene proving his success would make the player the reason he is well. Source: part-three/story.md, L9 and The ending, unchanged"
+  },
+  {
+   "id": "bms-away-lighter",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "Away at the fork no longer lets the charge go on the spot. The out-breath softens it, and it walks with you lighter until you thank it and breathe it out. In the Cave of Lessons the light left on the threshold stays as it was.",
+   "why": "Your steer of 12 October, 20:43 says every sit-down W.A.V.E. spawns a spirit, and bms-dismiss says nothing dismisses a spirit for you. Built in bars-engine #282; bigmind/DESIGN.md, \"Every sit-down spawns a spirit\"."
   }
  ],
  "questions": [
