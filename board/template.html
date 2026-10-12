@@ -864,7 +864,10 @@ function renderSteps(){
   // Lists with the soonest open due date come first; lists without one keep their order after them.
   const nextDue = id => stReq(stOf(id)).filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0] || '9999';
   const ids = Object.keys(stLists).sort((a,b) => nextDue(a).localeCompare(nextDue(b)) || (stLists[a].order||0) - (stLists[b].order||0) || String(stLists[a].created||'').localeCompare(String(stLists[b].created||'')));
-  const todo = ids.filter(id => !stFinished(id)), done = ids.filter(id => stFinished(id));
+  /* A list with no steps has nothing to do and nothing done, so it shows nowhere (Wendell, 2026-10-12, of the empty
+     Morning moves list: "is this working? Why is it on my todo list?"). */
+  const live = ids.filter(id => stOf(id).length > 0);
+  const todo = live.filter(id => !stFinished(id)), done = live.filter(id => stFinished(id));
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
   const chases = ocChases();
