@@ -1,0 +1,23 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T20:06:32.683Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "virtual-launch-restart-03",
+   "at": "2026-10-12T20:04:47.764Z",
+   "what": "ticked",
+   "do": "Answer vl-date on the Open tab: does the virtual launch stay on Thursday, October 16?"
+  },
+  {
+   "id": "flirtcraft-own-database-09",
+   "at": "2026-10-12T20:06:32.683Z",
+   "what": "ticked",
+   "do": "Ask for a sign-in link with your own email."
+  }
+ ],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
