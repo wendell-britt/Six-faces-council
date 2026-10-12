@@ -1,0 +1,20 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T21:06:46.326Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "morning-menu-key-03",
+   "at": "2026-10-12T21:06:46.326Z",
+   "what": "note",
+   "note": "Couldn't find the playerID from under the buttons. I did it with the admin accoutn so we should be able to look it up from here. I'l also put this in a thread",
+   "do": "Seal one Tap the Vein session and copy your player id from the line under the buttons."
+  }
+ ],
+ "needs_work": [
+  "steps/morning-menu-key-03: note \"Couldn't find the playerID from under the buttons. I did it with the admin accoutn so we should be able to look it up from here. I'l also put this in a thread\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
