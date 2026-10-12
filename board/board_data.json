@@ -6572,6 +6572,61 @@
    "auto": true,
    "pos": "Sitting down is built after the WAVE room's pull requests (#276, #277) land on the cave branch and that branch is merged into the Big Mind cave's (#272). Your notes from playing the room on 18 October then reach both caves.",
    "why": "The fork's one-engine rule, and the wave-room call sheet's gate on daemon extensions. Your steer asks for this directly, so it is not held for the 18 October play. Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+  },
+  {
+   "id": "pf-three-doors",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "Pruner's track pass 3",
+   "auto": true,
+   "pos": "A daemon your wrong line seeds can be met on the road while that talk is still going wrong. At the end of the talk every charge you carry waits on the Virelune road that night, and the next morning it is offered again before the talk. Every one can be walked past, and declining costs nothing.",
+   "why": "Your answer C to p2n-stakes and p2n-wrong-opens-fights already say where the urge waits and that fights are offered, never forced. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS3_pruners-fights_2026-10-12.md"
+  },
+  {
+   "id": "pf-one-foe-per-daemon",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "Pruner's track pass 3",
+   "auto": true,
+   "pos": "All the charges of one daemon become one foe, so the road holds one Fixer, not three. A wrong line's charge weighs 2 and an It holds charge weighs 1; a weight of 1 is a level 1 foe, 2 or 3 is level 2, and 4 or more is level 3. Bringing it home once clears all its charges. It stands in the feeling the person needed when you spoke the line. Numbers are placeholders.",
+   "why": "The record sets no count, daemons carry no element of their own in data/daemons.json, and design.md keeps numbers as placeholders until playtest. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS3_pruners-fights_2026-10-12.md"
+  },
+  {
+   "id": "pf-fight-rests",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "Pruner's track pass 3",
+   "auto": true,
+   "pos": "Fight with the staff subdues the daemon and rests it for the rest of that beat, but the charge stays and the daemon is back the next morning. Only Magic clears a charge: Listen, answer with the right move, Hold, and Let go.",
+   "why": "Master Yun's line under battle-fight-and-magic C: \"Fight always lands, but it never listens. Only Magic can bring a charge home.\" Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS3_pruners-fights_2026-10-12.md"
+  },
+  {
+   "id": "pf-costs-hp-and-mana",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "Pruner's track pass 3",
+   "auto": true,
+   "pos": "A fight spends the track's own mana (2 for each Magic answer) and your HP. HP carries between fights in a beat and is full again each morning at the hearth. If you go down you wake whole at the hearth with the charge still carried, and nothing else is lost.",
+   "why": "Your answer C to p2n-stakes: \"Taking it costs HP and mana\" and \"No day is lost\"; design.md's hearth restores HP fully. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS3_pruners-fights_2026-10-12.md"
+  },
+  {
+   "id": "pf-gifts-earned",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "Pruner's track pass 3",
+   "auto": true,
+   "pos": "Hear under and Ripe stay closed until you bring the Skeptic or the Fixer home in a fight. In the version you played on 10 and 11 October they were open from P1. Each fight writes the daemon's Witness Book page, the third time a daemon comes home its move is yours, and a daemon you still carry shows beside the person it came from when they speak again.",
+   "why": "Your answer C to p2n-stakes: \"integrating the urge is how Hear under and Ripe are earned\" and \"the urge shows on the person's portrait next morning\"; p2n-hints-mana; wave-integrate-ladder. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS3_pruners-fights_2026-10-12.md"
   }
  ],
  "questions": [
