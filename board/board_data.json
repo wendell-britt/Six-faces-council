@@ -6627,6 +6627,17 @@
    "auto": true,
    "pos": "Hear under and Ripe stay closed until you bring the Skeptic or the Fixer home in a fight. In the version you played on 10 and 11 October they were open from P1. Each fight writes the daemon's Witness Book page, the third time a daemon comes home its move is yours, and a daemon you still carry shows beside the person it came from when they speak again.",
    "why": "Your answer C to p2n-stakes: \"integrating the urge is how Hear under and Ripe are earned\" and \"the urge shows on the person's portrait next morning\"; p2n-hints-mana; wave-integrate-ladder. Source: sprout campaigns/skilled-helper/part-two/6FACE_PASS3_pruners-fights_2026-10-12.md"
+  },
+  {
+   "id": "ttc-extract-part3",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 1",
+   "auto": true,
+   "pos": "Step 1 on Part III of The Skilled Helper (pp. 215-404, the problem-management process, to the end of the book) is drafted: 114 helping skills across chapters 8 to 14, each with when it is right, when it is wrong, and when it is only partly right. A moment index ties the stage a person is in (crisis, tangled problems, stuck, a vague wish, dabbling, rushing, slipping) to the skills behind it. This stands unless you flip it.",
+   "why": "Your 'Yes let's do that' on starting the next section. Read once from your PDF in The Library, one reader per chapter, in the same shape as Part II. Part III says when a move works far more often than when it misfires, so more lines are marked as inferred, and step 2 treats those as drafts. Blocks such as resistance and inertia stay out for step 3. Source: sprout campaigns/skilled-helper/part-three/extract.yaml (sprout pull request #42)"
   }
  ],
  "questions": [
