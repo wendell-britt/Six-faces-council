@@ -6747,6 +6747,93 @@
    "auto": true,
    "pos": "Standing in a voice's place is three turns in its first person: who it is (\"I am the Protector, and I...\"), what it sees from its post, and what it wants the self to know. Each takes your own words as the voice; the last keeps the workshop's cards. Any turn can be passed. Lines said as the voice are offered at the keeping step.",
    "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "cs-rebuild-proof",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "The cloud rebuilds the cave's figure, kit and spot table exactly. Run on 12 October, build_figure.py and build_kit.py took about six seconds, and figure.glb, cave-kit.glb and spots.json came out byte for byte identical to the committed files.",
+   "why": "A cheap test run before building, as the pipeline's falsify stage asks. Source: bars-engine .specify/specs/cave-studio/request.md; content/ontology-game/body/build_figure.py and cave/build_kit.py."
+  },
+  {
+   "id": "cs-cc0-or-own",
+   "faces": [
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Every asset in the cave is own work or CC0. A Royalty Free model never goes into a page, and the studio's tools refuse one.",
+   "why": "Your standing rule c3d-cc0-only. Blendkit's terms (article 5, read 12 October) allow a Royalty Free model in a web page only if no one else can extract it, and a model in a page can be extracted. Source: tools/blender-cloud/README.md."
+  },
+  {
+   "id": "cs-manifest-row",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Each piece the studio makes gets a manifest row before it merges: source, licence, bytes and a size budget. The kit stays under about 3 MB.",
+   "why": "content/ontology-game/cave/manifest.json already works this way, and c3d-phone-budget sets the number."
+  },
+  {
+   "id": "cs-one-studio",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "One studio serves both caves. Anything both caves use, such as a daemon, is built once.",
+   "why": "Your steer on st-which-three (\"both part of the same project- they are just forked\") and the standing position cave-321-one-build."
+  },
+  {
+   "id": "cs-no-written-words",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "The studio makes what the player sees. It never writes a daemon's or a spirit's words, and a figure may move but never speak.",
+   "why": "The standing position cave-321-player-writes: the player writes every line. Source: bars-engine CLAUDE.md, dual-track rule."
+  },
+  {
+   "id": "cs-stand-in",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Each ChatGPT-made piece has a scripted or CC0 stand-in, so the cave plays the same without it, and the manifest names both.",
+   "why": "bars-engine's CLAUDE.md: the non-AI path is a first-class delivery mode, and the Portland community is wary of AI. It holds whatever you answer to cs-chatgpt-ai-art."
+  },
+  {
+   "id": "cs-chatgpt-by-drive",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "ChatGPT files reach the cloud through one Google Drive folder, Cave studio inbox, which a session reads with the Drive connector. Nothing goes into git until its manifest row exists.",
+   "why": "A cloud session cannot reach ChatGPT, and this session has a Drive connector. Committing large art files would bloat the repo. The one step it needs is on Your steps."
+  },
+  {
+   "id": "cs-first-test",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "The first piece counts as done when it loads in the cave at 390 by 844, the cave's browser test passes, and the kit stays under budget. You look at its preview before it merges. Target 26 October, once you answer cs-first-piece.",
+   "why": "cave-test.mjs and c3d-phone-budget. Your eyes on the result is a step only you can take. The date is the council's, marked."
   }
  ],
  "questions": [
@@ -11357,6 +11444,96 @@
      "v": "seattle",
      "label": "Fold it into the Seattle launch on November 6",
      "c": "The virtual launch stops being its own event, and the Seattle stop gets an online way in. Seattle is also at step 1, so its unpacking session covers both."
+    }
+   ]
+  },
+  {
+   "id": "cs-chatgpt-ai-art",
+   "faces": [
+    "regent",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "cave studio",
+   "q": "May art you make in ChatGPT ship inside the cave, and how should it be marked? The council recommends yes, marked in the manifest and the credits.",
+   "why_you": "It is your call about putting AI-made art in front of a community that is wary of AI. The record holds the licence rule (c3d-cc0-only: own work or CC0) and bars-engine's rule that the non-AI path is first-class. It holds no ruling on AI-made assets. Your answer decides whether ChatGPT pieces go in the cave at all.",
+   "not_before": "Until 12 October nothing in the record said you were making assets in ChatGPT. The 9 October pass only guessed that concept images might come from there, and marked the guess as not checked.",
+   "options": [
+    {
+     "v": "ship-marked",
+     "label": "Ships, marked (recommended)",
+     "c": "A ChatGPT piece can be in the cave. Its manifest row says made with ChatGPT, the credits say so, and it has a scripted or CC0 stand-in so the cave plays the same without it."
+    },
+    {
+     "v": "concept-only",
+     "label": "Concept only",
+     "c": "ChatGPT art is a reference. Sessions rebuild each piece by script or by hand, and nothing from ChatGPT ships. The safest with the community, and slower for pieces that are hard to script."
+    },
+    {
+     "v": "ship-plain",
+     "label": "Ships, unmarked",
+     "c": "ChatGPT pieces ship as own work with no label. The simplest, and the council advises against it: the manifest would say something untrue about where the art came from."
+    }
+   ]
+  },
+  {
+   "id": "cs-first-piece",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "cave studio",
+   "q": "Which piece should the cloud studio build first? The council recommends the daemon figures.",
+   "why_you": "The order is yours. The record carries a lesson on this: a sequence the council infers is not your priority order, so it asks before parking anything. The first piece sets what gets built and tested next.",
+   "not_before": "The studio's tools landed on 12 October, and the cave draws its daemons in the page from code, so nobody had asked whether they should get Blender bodies.",
+   "options": [
+    {
+     "v": "daemons",
+     "label": "The seven daemon figures (recommended)",
+     "c": "Both caves use them, so they are built once. Today they are sphere stacks drawn by code. Each gets a body with no face, loaded in the cave with the code-drawn one as the fallback."
+    },
+    {
+     "v": "spirits",
+     "label": "The charge spirits",
+     "c": "The Big Mind cave's spirits that rise from a sit-down. They wait on the W.A.V.E. build landing (bms-build-order), so this one starts after it."
+    },
+    {
+     "v": "chambers",
+     "label": "Chamber dressing for the kit",
+     "c": "More pieces for the cave kit: stones, roots, glowing growths. The kit is 17 KB of a 3 MB budget, so there is plenty of space, and no figure changes."
+    }
+   ]
+  },
+  {
+   "id": "cs-asset-kind",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "cave studio",
+   "q": "What are the ChatGPT assets: pictures to build from, flat art for the scene, pictures to turn into 3D, or finished 3D files? The council leans to pictures to build from.",
+   "why_you": "Only you know what you are making in ChatGPT, and each answer builds a different path: modelling from a reference, textures and panels, image-to-3D on your Mac, or an importer. The record does not say.",
+   "not_before": "Nothing in the record says what the assets are.",
+   "options": [
+    {
+     "v": "reference",
+     "label": "Pictures to build from (recommended)",
+     "c": "The studio models each piece in Blender by script from your picture, in the cave's own style. It works in the cloud today, keeps the licence line clean, and you see the result as a preview."
+    },
+    {
+     "v": "flat",
+     "label": "Flat art for the scene",
+     "c": "Textures, panels, murals and signs placed in chambers. The studio sizes and wraps them. Each is marked as made with ChatGPT if you say it ships."
+    },
+    {
+     "v": "image-to-3d",
+     "label": "Pictures to turn into 3D",
+     "c": "Image-to-3D on your Mac (TRELLIS.2 was the 9 October pass's route for hero pieces). The cloud cleans, fits and previews the result. It needs your Mac and a GPU."
+    },
+    {
+     "v": "models",
+     "label": "Finished 3D files",
+     "c": "Models that arrive ready-made. The studio decodes them, fits them to budget and checks the licence. It needs a place for you to drop them."
     }
    ]
   }
@@ -21816,6 +21993,34 @@
       "ex-weak-gate",
       "ex-cycle-kept",
       "ex-curriculum"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-cave-studio",
+   "name": "The Cave Studio",
+   "repo": "bars-engine",
+   "element": "earth",
+   "record": "bars-engine .specify/specs/cave-studio/request.md; tools/blender-cloud/; content/ontology-game/cave/manifest.json",
+   "intro": "It wants the cave's figures and places built by Blender in the cloud, for the Cave of Lessons and the Big Mind cave together, and the art you make in ChatGPT to find a safe way in. The cloud already rebuilds the cave's Blender pieces exactly. What it needs from you is which piece comes first, whether ChatGPT art ships, and what that art is.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "cs-chatgpt-ai-art",
+      "cs-first-piece",
+      "cs-asset-kind"
+     ],
+     "positions": [
+      "cs-rebuild-proof",
+      "cs-cc0-or-own",
+      "cs-manifest-row",
+      "cs-one-studio",
+      "cs-no-written-words",
+      "cs-stand-in",
+      "cs-chatgpt-by-drive",
+      "cs-first-test"
      ]
     }
    ]
