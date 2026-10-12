@@ -32,4 +32,12 @@ published to the same play link https://claude.ai/artifact/A4oeXe6BYv2T8e7445fuL
 posture opens two gates (they glow), holding builds one bead of its feeling a turn up to three and a strike through an open gate
 spends them, and one weak gate breaks even the right answer at two beads. Pass: root-game `council/6FACE_PASS4_2026-10-11.md`.
 Board: pass 3 and pass 4 rows synced to main (a80c71f), fr-root-play rounds 2 and 3; question `ex-posture-table` open. Next:
-Yun's session teaching the three rules in Wendell's order (hold, strike, answer), once he plays it and answers the table.
+Yun's session teaching the three rules in Wendell's order (hold, strike, answer); built 2026-10-12, below.
+
+## Yun's session two (2026-10-12)
+Board read first: nothing open; `ex-posture-table` answered A (keep the council's table). Built as root-game #21 (draft, stacked on #20),
+`engine/play_yun2.js`, published to the same play link https://claude.ai/artifact/A4oeXe6BYv2T8e7445fuLi (version 6). Title, Train with
+Yun, Session two: hold to three beads, strike to break Yun's answer twice, answer his fuelled strikes cleanly twice, then timing (answer
+lights with the commit circle; before the circle or to a shift is a miss). Pass: root-game `council/6FACE_PASS5_2026-10-12.md`; no question
+passed the reach test. Three positions wait to go on the board: `council/callsheets/rows/root-pass5-2026-10-12.json`. Headless check:
+root-game `tests/yun2_session.py`. Waiting on: Wendell's phone play of session two; then pass 4's tests in an Easy fight.
