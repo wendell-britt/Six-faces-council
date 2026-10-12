@@ -1,4 +1,4 @@
-2026-10-12 (updated 23:20)
+2026-10-12 (updated 23:35)
 # Cave studio (Blender in the cloud for the cave, battle fr-cave-studio)
 
 ## Next
@@ -9,14 +9,14 @@ Round 1 is recorded and the first piece is built: bars-engine draft PR #285 (bra
 - His first ChatGPT picture (Drive, Cave studio inbox, `cave-crystal-growth.png`) is the crystal cluster, 0.829 match.
   Outline-only scored 0.88 and looked like a blob: read the render, not just the number.
 - Comparison page: https://claude.ai/artifact/568K2pwc7Lz5X9Kyftbzza (his crystal on top, three stand-ins below).
-- Next session: read his note on step `cave-studio-03`. Trust means more pieces from his pictures (one `DRESSING` row each);
-  the crystal mode finds six crystals where his picture has about ten and rounds the rocks, the first thing to fix if he
-  names it. Mark #285 ready once he has looked.
+- He ticked `cave-studio-03` done with no note (board read 23:29), taken as trust. #285 marked ready; it merges
+  itself once checks pass. Next session: more pieces from his pictures (one `DRESSING` row each, picture in
+  `cave/pictures/`). Known gap to fix when it matters: crystal mode finds six crystals where his picture has about ten.
 - The inbox also holds `taoist_swordsman_front_input.png` and `anime+character+3d+model (1).glb` from before round 1.
   Not used: a figure is not chamber dressing, and a finished model has no licence on record.
 
 ## Waiting on
-His note on `cave-studio-03` (look at the comparison page, due 2026-10-19).
+His next picture in the Drive inbox. Nothing else.
 
 ## Files
 - bars-engine `.specify/specs/cave-studio/` (request with round 1 and the licence answer, spec, plan, tasks);
