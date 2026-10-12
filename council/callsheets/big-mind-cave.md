@@ -2,10 +2,11 @@
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
-Sitting down anywhere and the charge spirits are built: bars-engine PR #280 (branch `claude/project-thread-0wytio`, stacked on
-#278, carrying #276 and #277 merged in per `bms-build-order`), 146 cave checks and 268 Cave of Lessons checks pass. Both of his
-answers are in it (`bms-sit-whom` pick, `bms-spirits-after` choose). Phone link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU
-(version 5). Next: his play of a sit-down in a hallway and before the Protector, then fixes from his notes in a fresh thread.
+Sitting down and the spirits are merged into #278's branch (#280). His steer of 20:43 ("every sit-down W.A.V.E. spawns a spirit
+that walks with the character until dismissed") is built in bars-engine PR #282 (branch `claude/project-thread-0wytio`,
+stacked on #278): every sitting in the Big Mind cave leaves a spirit, Away included (it walks lighter, `bms-away-lighter`), and
+charges worked in the WAVE room walk back into the Cave of Lessons. Board: `bms-spirits-follow` rewritten to his steer. Phone
+link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU (version 6). Next: his play, then fixes in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
