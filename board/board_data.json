@@ -19001,6 +19001,53 @@
      }
     ],
     "project": "bars-engine"
+   },
+   "ttc-encounters-part3": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:24.373Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p3-fallow-spirit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:35.384Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p3-blocks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:44.167Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p3-guess-test": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:54.309Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
    }
   },
   "questions": {
