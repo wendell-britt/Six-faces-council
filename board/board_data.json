@@ -20552,6 +20552,91 @@
      "diplomat"
     ],
     "pass": "guessing bar, taught run 2"
+   },
+   "wave-water-controls-fire": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:32:03.002Z",
+    "record": "council/ledger/2026-10-13-pull-223427.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "Lamp-keeper's track, phone play"
+   },
+   "dp-seven": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:32:08.599Z",
+    "record": "council/ledger/2026-10-13-pull-223427.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "The daemon path"
+   },
+   "dp-pass-rule": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:32:15.117Z",
+    "record": "council/ledger/2026-10-13-pull-223427.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "The daemon path"
+   },
+   "dp-progress": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:32:21.434Z",
+    "record": "council/ledger/2026-10-13-pull-223427.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "The daemon path"
+   },
+   "dp-centre": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:32:28.403Z",
+    "record": "council/ledger/2026-10-13-pull-223427.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "The daemon path"
+   },
+   "dp-big-mind-page": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:34:20.807Z",
+    "record": "council/ledger/2026-10-13-pull-223427.json (six-faces-council)",
+    "steer": "Yes this is the big issue.\n\nThe big mind cave need to be accessible from the WAVE room. Which also need the ability for players to walk around in. Another door in the room leads to the 6 game masters (content to be created)\n\nAll of the caves need to use the same assets and have the ability to spawn spirits when one sits down and does a wave process.",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "The daemon path"
+   },
+   "dp-door": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:34:27.338Z",
+    "record": "council/ledger/2026-10-13-pull-223427.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "The daemon path"
    }
   },
   "questions": {
@@ -23828,7 +23913,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-13T22:14:15Z",
+ "steps_recorded_through": "2026-10-13T22:27:10Z",
  "morning": {
   "date": "2026-10-13",
   "gathered_at": "2026-10-13T15:45:41Z",
