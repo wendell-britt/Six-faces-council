@@ -15,11 +15,10 @@ Left open:
    in `tests/test_bpy.py` (`KNOWN`).
 3. Part 2's first job is done: the recipe and its token cost, bars-engine draft PR #291, ledger
    `2026-10-13-blender-recipe-token-cost.json`, results in `tools/blender-cloud/recipe_trial/RESULTS.md`. T1 passed, T3
-   passed (8 of 10 both ways), T2 missed (recipe 0.69 of code, line 0.33). Board position `bpt-recipe-result`: the
-   recipe is dropped and J1 on edits a committed Blender script, unless he flips it. The next thread (J1 textures)
-   reads that row first; if he flipped it, J1 adds a texture line to `scene.yaml` instead. Fix in the builder either
-   way: scatter keeps clear of what it is near, and glow is too strong (RESULTS.md). Wiring the chamber into
-   `cave.js` waits for #289.
+   passed (8 of 10 both ways), T2 missed (recipe 0.69 of code, line 0.33). He let `bpt-recipe-result` stand (board read
+   0145): the recipe is dropped. The chamber is `content/ontology-game/cave/chamber.py` (#291), one `place(...)` line
+   per piece; J1 textures and every later job edit that script. The recipe and its builder sit in
+   `tools/blender-cloud/recipe_trial/` as the record. Wiring the chamber into `cave.js` waits for #289.
 
 **Part 2, added 2026-10-13 from his second message:** whether Claude can change the cave from words and pictures, with
 the fewest tokens. Claude edits a recipe (`cave/scene.yaml`) and a fixed script builds it; T1 to T3 measure the cost
@@ -28,7 +27,7 @@ model, a character creator themed on the robe set, and clothing as skinned swapp
 Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 1 merged in #287; Part 2 is in bars-engine #288 (draft). Part 2 starts after #285 merges. He let all four stand (2026-10-13 00:24); his steer on `bpt-skinned-garments`: "Use as much as we can from the root game for this as we’ve already done many garment tests there", so J5 begins by listing root-game's garment work and reusing it (spec.md, J5).
 
 ## Waiting on
-Nothing from Wendell; `bpt-recipe-result` stands unless he flips it. #291 (recipe and token cost) is a draft. #290 (Part 1 tests) is a draft. #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
+Nothing from Wendell. #291 (T1 to T3 and `cave/chamber.py`) merges once its checks pass. #290 (Part 1 tests) is a draft. #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
 #285 merged; the picture-path tests run on main. His two tests are steps: N3 is `cave-studio-02`, and E3 goes on
 Your steps when the build thread first republishes a page.
 
