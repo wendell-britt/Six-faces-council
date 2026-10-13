@@ -1,0 +1,110 @@
+package:
+  id: wendell-design-ontology
+  version: 0.1.0-alpha.1
+  status: provisional
+  owner: Wendell Britt
+  home: ontology/v0.1
+  purpose: >-
+    Guide the Six Faces council while it designs and builds games, preserving
+    Wendell's aesthetics, player authorship, integral attention, evidence
+    boundaries, and provenance.
+
+load_profiles:
+  default:
+    - ontology/v0.1/QUICKSTART.md
+  game_design:
+    - ontology/v0.1/QUICKSTART.md
+    - ontology/v0.1/source/design-philosophy-draft-v0.1.md
+    - ontology/v0.1/source/design-ontology-model-v0.1.md
+    - ontology/v0.1/source/design-ontology-v0.1.yaml
+  council_deliberation:
+    - ontology/v0.1/QUICKSTART.md
+    - ontology/v0.1/source/design-ontology-six-face-council-brief.md
+    - ontology/v0.1/source/council-phase-a/sage-canon-reconciliation.md
+  aesthetic_excavation:
+    - ontology/v0.1/source/aesthetic-source-research-round-1.md
+    - ontology/v0.1/source/design-ontology-pattern-extraction-round-1.md
+    - ontology/v0.1/source/design-ontology-framework-translation-round-1.md
+  implementation_translation:
+    - ontology/v0.1/QUICKSTART.md
+    - ontology/v0.1/source/design-ontology-v0.1.yaml
+    - ontology/v0.1/source/council-phase-a/sage-canon-reconciliation.md
+
+current_sources:
+  constitution:
+    path: ontology/v0.1/source/design-philosophy-draft-v0.1.md
+    status: current_provisional
+  model:
+    path: ontology/v0.1/source/design-ontology-model-v0.1.md
+    status: current_provisional
+  machine_vocabulary:
+    path: ontology/v0.1/source/design-ontology-v0.1.yaml
+    status: current_provisional
+  council_brief:
+    path: ontology/v0.1/source/design-ontology-six-face-council-brief.md
+    status: current_provisional
+  reconciliation:
+    path: ontology/v0.1/source/council-phase-a/sage-canon-reconciliation.md
+    status: active_correction_record
+  process_log:
+    path: ontology/v0.1/source/design-ontology-process-log.md
+    status: active_history
+
+binding_decisions:
+  constitutional_succession:
+    path: ontology/v0.1/source/council-phase-a/constitutional-evolution/council-decision.md
+  face_namespaces:
+    path: ontology/v0.1/source/council-phase-a/face-namespaces/council-decision.md
+  basic_moves_and_wave:
+    path: ontology/v0.1/source/council-phase-a/wave-terminology/owner-decision.md
+  completion_boundaries:
+    path: ontology/v0.1/source/council-phase-a/completion-boundaries/council-decision.md
+  tension_representation:
+    path: ontology/v0.1/source/council-phase-a/tension-vector/council-decision.md
+  derived_movement:
+    path: ontology/v0.1/source/council-phase-a/derived-movement/reconstruction-and-decision.md
+  yellow_brick_road:
+    path: ontology/v0.1/source/council-phase-a/yellow-brick-road/reconstruction-and-decision.md
+  roadblocks:
+    path: ontology/v0.1/source/council-phase-a/roadblocks/reconstruction-and-decision.md
+  session_depth:
+    path: ontology/v0.1/source/council-phase-a/session-depth/reconstruction-and-decision.md
+  bar_scope:
+    path: ontology/v0.1/source/council-phase-a/bar-scope/reconstruction-and-decision.md
+  composting:
+    path: ontology/v0.1/source/council-phase-a/composting/reconstruction-and-decision.md
+  creative_reuse_meaning:
+    path: ontology/v0.1/source/council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md
+
+historical_material:
+  root: ontology/v0.1/source/council-phase-a
+  retrieval_rule: >-
+    Preserve for provenance. Do not treat an ingestion, crosswalk, face memo,
+    superseded recommendation, or quoted legacy term as current canon unless the
+    manifest names it as current or binding.
+
+authority:
+  personal_inner_meaning: represented_player
+  ontology_constitution_and_personal_aesthetic: Wendell Britt
+  authored_game_routing: designer_or_game_master_within_scope
+  another_agents_consent_help_or_harm: affected_agent
+  empirical_effect: evidence_within_declared_scope
+  council_synthesis: advisory_not_empirical_truth
+  ai_inference: proposal_only
+
+compatibility:
+  bare_tension_vector: retired
+  BARS321TensionVector: deprecated_alias_of_TensionConfiguration
+  WAVE: reserved_for_Open_Up_breathing_practice
+  legacy_epiphany_translate_transcend: namespaced_not_equivalent_to_fifteen_move_grammar
+
+unresolved_registry:
+  source: ontology/v0.1/source/council-phase-a/sage-canon-reconciliation.md
+  rule: >-
+    An unresolved item may remain in alpha. State the provisional behavior and
+    do not invent Wendell's answer. Use the council reach test before escalation.
+
+validation:
+  command: python3 -m unittest tests.test_design_ontology
+  required_skill: .claude/skills/design-ontology/SKILL.md
+  council_integration: .claude/skills/six-faces/SKILL.md

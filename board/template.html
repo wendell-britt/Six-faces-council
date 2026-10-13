@@ -117,6 +117,16 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-chip.st-safe{background:var(--accent-soft);color:var(--ok)}
 .st-chip.st-opt{background:var(--warn-bg);color:var(--warn)}
 .st-note{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem}
+.st-step .st-fold > summary{list-style:none;cursor:pointer;display:grid;gap:2px;color:var(--fg);padding:2px 0;min-height:44px;align-content:center}
+.st-fold > summary::-webkit-details-marker{display:none}
+.st-fold > summary .st-do{display:block;padding-right:22px;position:relative}
+.st-fold > summary .st-do::after{content:"\25B8";position:absolute;right:0;top:0;color:var(--muted);transition:transform .15s}
+.st-fold[open] > summary .st-do::after{transform:rotate(90deg)}
+.st-peek{font-size:.8rem;color:var(--muted)}
+.st-peek:empty{display:none}
+.st-fold[open] > summary .st-peek{display:none}
+.st-more{display:grid;gap:6px;margin-top:6px}
+.st-step .st-fold{font-size:inherit}
 .st-step details{font-size:.9rem}
 .st-step summary{cursor:pointer;color:var(--muted)}
 .st-step textarea{margin-top:6px}
@@ -250,6 +260,34 @@ body.has-send{padding-bottom:120px}
 .mo-pick[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .mo-pick:disabled{opacity:.45;cursor:not-allowed}
 .mo-more{font:inherit;font-size:.85rem;margin:8px 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
+
+/* Blocker panel (Wendell, 2026-10-12: an overdue step "needs to actually run a player through the blockage and save the
+   data about the specific task that was blocked and what came up for the player and how it was resolved"). The board's
+   own light version, shaped as the WAVE room's steps (Welcome, Acknowledge, Validate, Exhale, a staged 3-2-1 for a part
+   that stays) so the room or the Ontology game can take over the same record later. Each stage saves to blockers/ in
+   the store; board/pull.py copies the records to council/blockers/ on main. bk- prefix; it borrows the battle screen. */
+#bk-screen{z-index:40}
+.bk-wave{display:flex;gap:6px;justify-content:center;font-family:var(--mono);font-size:.8rem;letter-spacing:.06em}
+.bk-wave span{padding:4px 10px;border:1px solid var(--line);border-radius:14px;color:var(--muted)}
+.bk-wave span.on{border-color:var(--accent);background:var(--accent);color:var(--accent-ink)}
+.bk-wave span.past{border-color:var(--accent);color:var(--accent)}
+.bk-task{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.bk-task b{display:block;font-size:1.02rem}
+.bk-task small{color:var(--warn);font-size:.85rem}
+.bk-box textarea,.bk-box input[type=text]{margin:4px 0 8px}
+.bk-picks{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 10px}
+.bk-picks button{font:inherit;font-size:.88rem;min-height:40px;padding:6px 12px;border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--fg);cursor:pointer}
+.bk-picks button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.bk-scale{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));gap:3px;margin:4px 0 10px}
+.bk-scale button{font:inherit;font-size:.85rem;min-height:40px;padding:0;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer;font-variant-numeric:tabular-nums}
+.bk-scale button[aria-pressed="true"]{background:var(--warn);border-color:var(--warn);color:#fff}
+.bk-breath{width:120px;height:120px;margin:10px auto;border-radius:50%;background:var(--accent-soft);border:2px solid var(--accent);animation:bk-breath 8s ease-in-out 2}
+@keyframes bk-breath{0%,100%{transform:scale(.6)}45%{transform:scale(1)}55%{transform:scale(1)}}
+@media (prefers-reduced-motion: reduce){.bk-breath{animation:none}}
+.bk-log{font-size:.88rem;margin:4px 0 8px;padding-left:18px}
+.bk-log li{margin:2px 0}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bk-past{font-size:.85rem;color:var(--muted);margin:0}
 </style>
 
 <h1>Council Board</h1>
@@ -361,6 +399,15 @@ body.has-send{padding-bottom:120px}
         <div class="bt-hp">turns <div class="bt-bar"><i id="bt-turns"></i></div><span id="bt-turnn"></span></div></div>
     </div>
     <div class="bt-box" id="bt-box" aria-live="polite"></div>
+  </div>
+</div>
+
+<div class="bt-screen" id="bk-screen" role="dialog" aria-modal="true" aria-labelledby="bk-title">
+  <div class="bt-stage">
+    <div class="bt-row"><b id="bk-title" style="font-family:var(--display);font-size:1.1rem">Work through what's in the way</b><button type="button" class="bt-link" data-bk="close">Close (what you wrote is saved)</button></div>
+    <div class="bk-wave" id="bk-wave" aria-hidden="true"></div>
+    <div class="bk-task" id="bk-task"></div>
+    <div class="bt-box bk-box" id="bk-box" aria-live="polite"></div>
   </div>
 </div>
 
@@ -799,6 +846,157 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && bt) closeBattle(); });
 
+// ---- Blocker panel (bk-) ----
+/* An overdue step, or any open step marked stuck, opens this panel. It runs the player through the block in the WAVE
+   room's order and saves one record per run to blockers/<id>: the step, what came up at each stage, any part worked
+   with a 3-2-1, and how it ended. Every stage saves, so a run left half way still says what came up. The stage words
+   are the Ontology game's WAVE_STEPS (bars-engine content/ontology-game/game.jsx) where it has them. */
+let bkRecs = {}, bk = null;
+const BK_ELEMENTS = [['metal', 'Metal', 'fear, or a risk'], ['water', 'Water', 'sadness, something far away'], ['fire', 'Fire', 'anger, an obstacle'], ['wood', 'Wood', 'joy, or restless energy'], ['earth', 'Earth', 'flat, or numb']];
+const BK_KINDS = [['feeling', 'A feeling about it'], ['missing', 'Something is missing', 'information, access, a tool'], ['time', 'No time or energy'], ['unclear', 'The step is unclear', 'or I doubt it is right']];
+const BK_BODY = ['Tight', 'Heavy', 'Buzzing', 'Hot', 'Hollow', 'Numb', 'Restless', 'Nothing yet'];
+const BK_ENDS = [['now', 'Do it now', 'Write the smallest first move'], ['moved', 'Move the date', 'Pick a day it can happen'],
+  ['change', 'The step needs changing', 'Say what would make it doable'], ['drop', 'Drop the step', 'Say why it no longer belongs'],
+  ['stuck', 'Still stuck', 'Leave it open; Claude reads what came up']];
+const BK_MAX_ROUNDS = 3;
+const bkOf = id => Object.entries(bkRecs).filter(([, r]) => r.step === id).sort((a, b) => String(b[1].savedAt).localeCompare(String(a[1].savedAt)));
+const bkWave = s => ({start: -1, welcome: 0, acknowledge: 1, validate: 2, exhale: 3, out: 3, part: 3, face: 3, talk: 3, be: 3, end: 4, done: 5})[s] ?? -1;
+const bkRound = () => bk.rec.rounds[bk.rec.rounds.length - 1];
+const bkVal = id => (($b(id) || {}).value || '').trim();
+function bkScale(key, v){
+  return `<div class="bk-scale" role="group" aria-label="Charge from 0 to 10">${Array.from({length: 11}, (_, n) =>
+    `<button type="button" data-bk="scale" data-k="${key}" data-v="${n}" aria-pressed="${v === n}">${n}</button>`).join('')}</div>`;
+}
+const bkPicks = (key, list, on, multi) => `<div class="bk-picks" role="group">${list.map(x => { const [v, l, hint] = Array.isArray(x) ? x : [x, x];
+  return `<button type="button" data-bk="${multi ? 'multi' : 'pick'}" data-k="${key}" data-v="${esc(v)}" aria-pressed="${multi ? (on || []).includes(v) : on === v}"${hint ? ` title="${esc(hint)}"` : ''}>${esc(l)}</button>`; }).join('')}</div>`;
+function openBlocker(id){
+  const s = stSteps[id]; if (!s) return;
+  const at = new Date().toISOString(), over = stDaysLeft(s.due);
+  bk = {id, stage: 'start', note: '', draft: {}, rec: {engine: 'board-wave', version: 1, step: id, list: s.list || '', task: s.do || '',
+    due: s.due || '', overdueDays: over !== null && over < 0 ? -over : 0, startedAt: at, savedAt: at, status: 'open', stage: 'start',
+    charge: {before: null, after: null}, rounds: [], resolution: null},
+    key: `${id}--${Date.now().toString(36)}`};
+  $b('bk-screen').classList.add('on'); document.body.style.overflow = 'hidden';
+  bkDraw();
+}
+function closeBlocker(){ $b('bk-screen').classList.remove('on'); document.body.style.overflow = ''; bk = null; renderSteps(); }
+async function bkSave(){
+  const r = bk.rec; r.stage = bk.stage; r.savedAt = new Date().toISOString();
+  if (!db){ bk.note = 'This view cannot save, so this run stays on screen only.'; return true; }
+  try { await db.doc('blockers/' + bk.key).set(JSON.parse(JSON.stringify(r))); bkRecs[bk.key] = {...r}; bk.note = ''; return true; }
+  catch (err){ bk.note = `That stage did not save (${err && err.code || 'error'}). Try again.`; return false; }
+}
+function bkDraw(){
+  const r = bk.rec, s = stSteps[bk.id] || {}, w = bkWave(bk.stage), rd = r.rounds.length ? bkRound() : null, d = bk.draft;
+  $b('bk-wave').innerHTML = ['Welcome', 'Acknowledge', 'Validate', 'Exhale'].map((l, i) => `<span class="${i === w ? 'on' : i < w ? 'past' : ''}">${l[0]}<span class="sr-only"> ${l}</span></span>`).join('');
+  $b('bk-task').innerHTML = `<b>${esc(r.task)}</b>${r.overdueDays ? `<small>Overdue by ${r.overdueDays} day${r.overdueDays === 1 ? '' : 's'}</small>` : ''}${r.rounds.length > 1 ? `<small style="color:var(--muted)"> · round ${r.rounds.length}: ${esc(rd.from || '')}</small>` : ''}`;
+  const warn = bk.note ? `<p class="bt-sub" style="color:var(--warn)">${esc(bk.note)}</p>` : '';
+  const go = (label, a = 'next') => `<div class="bt-row"><span></span><button type="button" class="save" data-bk="${a}">${label}</button></div>`;
+  let h = '';
+  if (bk.stage === 'start') h = `<p class="bt-say">Before anything moves: how much charge does this step carry for you right now?</p><p class="bt-sub">0 is none, 10 is all of you.</p>${bkScale('before', r.charge.before)}${go('Begin')}`;
+  else if (bk.stage === 'welcome') h = `<p class="bt-say"><b>Welcome.</b> ${r.rounds.length > 1 ? 'Let this part be here for a moment, without needing it to move yet.' : 'Let what\'s in the way be here for a moment, without needing it to move yet.'}</p>
+    <p class="bt-sub">Picture yourself starting the step. What do you notice in your body?</p>${bkPicks('body', BK_BODY, d.body, true)}
+    <textarea id="bk-t1" placeholder="Where it is, what it feels like (optional)">${esc(d.t1 || '')}</textarea>${go('I\'ve welcomed it')}`;
+  else if (bk.stage === 'acknowledge') h = `<p class="bt-say"><b>Acknowledge.</b> Admit that it's here. You don't have to like it. Give it a name.</p>
+    <input type="text" id="bk-t1" placeholder="Its name, in a word or a few" value="${esc(d.t1 || '')}">
+    <p class="bt-sub">Which element is it closest to?</p>${bkPicks('element', BK_ELEMENTS, d.element)}
+    <p class="bt-sub">What kind of block is it?</p>${bkPicks('kind', BK_KINDS, d.kind)}${go('I acknowledge it')}`;
+  else if (bk.stage === 'validate') h = `<p class="bt-say"><b>Validate.</b> Your body has the right to feel this, whatever it is.</p>
+    <p class="bt-sub">What has ${esc(rd.name || 'it')} been trying to do for you?</p><textarea id="bk-t1" placeholder="What it protects, or what it wants (optional)">${esc(d.t1 || '')}</textarea>${go('I validate that')}`;
+  else if (bk.stage === 'exhale') h = `<p class="bt-say"><b>Exhale.</b> Is ${esc(rd.name || 'this feeling')} in alignment with what you actually want right now?</p>
+    <div class="bt-moves"><button type="button" class="bt-move" data-bk="aligned"><b>Yes, it's telling me something true</b><span>It stays, and it shapes what happens to the step.</span></button>
+    <button type="button" class="bt-move" data-bk="exit"><b>No, it can go</b><span>Show it the door on an exhale.</span></button></div>`;
+  else if (bk.stage === 'out') h = `<p class="bt-say">Breathe in. On the long exhale, let ${esc(rd.name || 'it')} leave through the door.</p><div class="bk-breath" aria-hidden="true"></div>${go('It\'s out')}`;
+  else if (bk.stage === 'part') h = `<p class="bt-say">Is any part of you still here, saying ${esc(rd.name || 'it')} should stay?</p>
+    <div class="bt-moves"><button type="button" class="bt-move" data-bk="part-yes"><b>Yes, a part is holding on</b><span>Meet it with a 3-2-1, then welcome it as its own charge.</span></button>
+    <button type="button" class="bt-move" data-bk="part-no"><b>No, nothing is holding on</b><span>Decide what happens to the step.</span></button></div>`;
+  else if (bk.stage === 'face') h = `<p class="bt-say"><b>3. Face it.</b> Describe the part as "it": what does it look like, where is it, what is it doing?</p><textarea id="bk-t1" placeholder="It is…">${esc(d.t1 || '')}</textarea>${go('Next: talk to it')}`;
+  else if (bk.stage === 'talk') h = `<p class="bt-say"><b>2. Talk to it.</b> Speak to it as "you". Ask what it wants. What does it say back?</p><textarea id="bk-t1" placeholder="You… / It says…">${esc(d.t1 || '')}</textarea>${go('Next: be it')}`;
+  else if (bk.stage === 'be') h = `<p class="bt-say"><b>1. Be it.</b> Speak as the part, as "I".</p><textarea id="bk-t1" placeholder="I am… and I want…">${esc(d.t1 || '')}</textarea>${go(r.rounds.length < BK_MAX_ROUNDS ? 'Welcome it as its own charge' : 'Decide what happens to the step')}`;
+  else if (bk.stage === 'end'){
+    const pick = d.end, need = {now: 'The smallest first move', change: 'What would make it doable', drop: 'Why it no longer belongs', stuck: 'Anything Claude should know (optional)', moved: 'Why this day'}[pick];
+    h = `<p class="bt-say">What happens to the step now?</p><div class="bt-moves">${BK_ENDS.map(([v, l, sub]) => `<button type="button" class="bt-move" data-bk="end" data-v="${v}" aria-pressed="${pick === v}"><b>${l}</b><span>${sub}</span></button>`).join('')}</div>
+      ${pick === 'moved' ? `<div class="st-move"><label for="bk-date">Move it to</label><input type="date" id="bk-date" value="${esc(d.date || '')}"></div>` : ''}
+      ${pick ? `<textarea id="bk-t1" placeholder="${need}">${esc(d.t1 || '')}</textarea><p class="bt-sub">And the charge now, from 0 to 10?</p>${bkScale('after', r.charge.after)}${go('Save and finish', 'finish')}` : ''}`;
+  }
+  else if (bk.stage === 'done'){
+    const e = r.resolution || {}, l = (BK_ENDS.find(x => x[0] === e.kind) || [])[1] || e.kind;
+    h = `<p class="bt-say">${e.kind === 'stuck' ? 'It is still in the way, and now it has a name.' : 'Worked through.'} <b>${esc(l)}</b>${e.date ? ` · ${esc(stFmt(e.date))}` : ''}</p>
+      <ul class="bk-log">${r.rounds.map(x => `<li>${esc(x.name || 'unnamed')}${x.element ? ` (${esc((BK_ELEMENTS.find(e => e[0] === x.element) || [])[1] || x.element)})` : ''}: ${x.aligned ? 'stayed' : 'shown the door'}${x.part321 ? ', a part was met' : ''}</li>`).join('')}</ul>
+      ${r.charge.before !== null && r.charge.after !== null ? `<p class="bt-sub">Charge ${r.charge.before} to ${r.charge.after}.</p>` : ''}
+      <p class="bt-sub">${db ? 'The run is saved on the board. Go back to your steps and press Send to Claude, and Claude reads what came up.' : 'This view cannot save, so the run stays on screen only.'}</p>${go('Back to your steps', 'close')}`;
+  }
+  $b('bk-box').innerHTML = warn + h;
+  const f = $b('bk-t1'); if (f) f.focus();
+}
+function bkKeep(){ const t = $b('bk-t1'); if (t) bk.draft.t1 = t.value; const dt = $b('bk-date'); if (dt) bk.draft.date = dt.value; }
+async function bkNext(){
+  const r = bk.rec, d = bk.draft, t1 = bkVal('bk-t1'), from = bk.stage, snap = JSON.stringify(r);
+  bk.note = '';
+  if (from === 'start'){ if (r.charge.before === null){ bk.note = 'Pick a number first.'; return bkDraw(); } r.rounds.push({from: 'the step'}); bk.stage = 'welcome'; }
+  else if (from === 'welcome'){ Object.assign(bkRound(), {body: d.body || [], felt: t1}); bk.stage = 'acknowledge'; }
+  else if (from === 'acknowledge'){
+    if (!t1){ bk.note = 'Give it a name first, even a rough one.'; bk.draft.t1 = ''; return bkDraw(); }
+    Object.assign(bkRound(), {name: t1, element: d.element || '', kind: d.kind || ''}); bk.stage = 'validate';
+  }
+  else if (from === 'validate'){ Object.assign(bkRound(), {validated: true, purpose: t1}); bk.stage = 'exhale'; }
+  else if (from === 'out') bk.stage = 'part';
+  else if (from === 'face'){ bkRound().part321 = {face: t1}; bk.stage = 'talk'; }
+  else if (from === 'talk'){ bkRound().part321.talk = t1; bk.stage = 'be'; }
+  else if (from === 'be'){
+    bkRound().part321.be = t1;
+    if (r.rounds.length < BK_MAX_ROUNDS){ r.rounds.push({from: `a part of ${bkRound().name || 'it'}`}); bk.stage = 'welcome'; }
+    else bk.stage = 'end';
+  }
+  const was = bk.draft; bk.draft = {};
+  if (!(await bkSave())){ bk.rec = JSON.parse(snap); bk.stage = from; bk.draft = {...was, t1}; }
+  bkDraw();
+}
+async function bkFinish(){
+  const r = bk.rec, d = bk.draft, kind = d.end, text = bkVal('bk-t1'), date = ($b('bk-date') || {}).value || '';
+  bkKeep(); bk.note = '';
+  if (!kind) return;
+  if (kind === 'moved' && !/^\d{4}-\d{2}-\d{2}$/.test(date)){ bk.note = 'Pick the new date first.'; return bkDraw(); }
+  if (['now', 'change', 'drop'].includes(kind) && !text){ bk.note = 'A line here is what Claude acts on. Write one first.'; return bkDraw(); }
+  if (r.charge.after === null){ bk.note = 'Pick the charge now, from 0 to 10.'; return bkDraw(); }
+  const at = new Date().toISOString();
+  r.resolution = {kind, text, ...(kind === 'moved' ? {date} : {}), at};
+  r.status = kind === 'stuck' ? 'stuck' : 'resolved'; r.finishedAt = at;
+  bk.stage = 'done';
+  if (!(await bkSave())){ r.status = 'open'; r.resolution = null; bk.stage = 'end'; return bkDraw(); }
+  // The step carries a pointer to its latest run; a moved date is moved the way the Move button moves it, with the why.
+  const s = stSteps[bk.id];
+  if (db && s){
+    const patch = {blocker: bk.key, blockerAt: at};
+    if (kind === 'moved') Object.assign(patch, {due: date, moved: [...(s.moved || []), {from: s.due || null, to: date, at, why: text, via: 'blocker'}]});
+    try { await db.doc('steps/' + bk.id).update(patch); } catch {}
+  }
+  bkDraw();
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-bk]'); if (!b) return;
+  const a = b.dataset.bk;
+  if (a === 'open') return openBlocker(b.dataset.step);
+  if (!bk) return;
+  if (a === 'close') return closeBlocker();
+  if (a === 'next') return bkNext();
+  if (a === 'finish') return bkFinish();
+  bkKeep();
+  if (a === 'scale'){ bk.rec.charge[b.dataset.k] = Number(b.dataset.v); return bkDraw(); }
+  if (a === 'pick'){ bk.draft[b.dataset.k] = bk.draft[b.dataset.k] === b.dataset.v ? '' : b.dataset.v; return bkDraw(); }
+  if (a === 'multi'){ const l = bk.draft[b.dataset.k] = bk.draft[b.dataset.k] || []; const i = l.indexOf(b.dataset.v); if (i < 0) l.push(b.dataset.v); else l.splice(i, 1); return bkDraw(); }
+  if (a === 'end'){ bk.draft.end = b.dataset.v; return bkDraw(); }
+  if (a === 'aligned' || a === 'exit'){
+    bkRound().aligned = a === 'aligned'; const from = bk.stage; bk.stage = a === 'aligned' ? 'end' : 'out';
+    return bkSave().then(ok => { if (!ok) bk.stage = from; bkDraw(); });
+  }
+  if (a === 'part-yes' || a === 'part-no'){
+    bkRound().partStayed = a === 'part-yes'; const from = bk.stage; bk.stage = a === 'part-yes' ? 'face' : 'end';
+    return bkSave().then(ok => { if (!ok) bk.stage = from; bkDraw(); });
+  }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeBlocker(); });
+
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
 const stDrafts = {}, stSecrets = {};
@@ -827,16 +1025,30 @@ const stOverdue = s => !s.done && !s.retired && !s.optional && (stDaysLeft(s.due
 const stClosed = s => !!(s.done || s.retired);
 const stFinished = id => { const all = stOf(id); return all.length > 0 && stReq(all).every(([,s]) => s.done); };
 const stOpenGroups = new Set();
+/* Wendell, 2026-10-12: "we also need the ability to collapse steps so I can see all the open items and open them up when I
+   want to get more info". Each step folds to its one line plus a short peek (due, overdue, computer, note); tapping the line
+   opens the rest. Which steps are open is kept across redraws, like the Completed groups. */
+function stPeek(s, over){
+  const bits = [];
+  if (s.due && !s.done) bits.push(over ? `<b class="st-due-over">Overdue</b>` : esc(stFmt(s.due)));
+  if (s.device === 'computer' && !s.done) bits.push('Computer');
+  if (s.optional) bits.push('Optional');
+  if (s.note) bits.push('Has a note');
+  return bits.join(' · ');
+}
 function stStep(id, s){
   if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
-  const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}</div></div>` : '';
+  const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}${stHref(s.href2) ? `<br><a href="${esc(s.href2)}" target="_blank" rel="noopener">${esc(s.where2 || 'Then open this')}</a>` : ''}</div></div>` : '';
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
   const gen = s.generate ? `<div class="st-row"><span>Secret</span><div class="st-val"><button type="button" class="st-btn st-solid" data-gen="${id}" data-len="${Number(s.generate)||48}">Make a new secret</button><code id="sg-${id}" ${stSecrets[id]?'':'hidden'}>${esc(stSecrets[id]||'')}</code><button type="button" class="st-btn" data-copy="sg-${id}" id="sgc-${id}" ${stSecrets[id]?'':'hidden'}>Copy</button></div></div><p class="st-src">It is made on this device and never saved anywhere. Paste it straight in, and make a new one if you lose it.</p>` : '';
   const check = s.check ? `<div class="st-row"><span>Check</span><div class="st-val">${esc(s.check)}</div></div>` : '';
   const over = stOverdue(s);
   const due = s.due && !s.done ? `<div class="st-row"><span>Due</span><div class="st-val${over ? ' st-due-over' : ''}">${esc(stDueText(s.due))}</div></div>` : '';
-  const charge = over ? `<p class="st-charge">This one slipped. Whatever is in the way is charge to metabolize: name it in the note below, or move the date and say why. Claude reads both.</p>` : '';
+  const runs = bkOf(id), last = runs[0] && runs[0][1];
+  const work = `<button type="button" class="st-btn${over ? ' st-solid' : ''}" data-bk="open" data-step="${id}">Work through what's in the way</button>`;
+  const charge = over ? `<p class="st-charge">This one slipped. Whatever is in the way is charge to metabolize. Work through it here, step by step, or move the date below and say why. Claude reads both.</p><div>${work}</div>` : '';
+  const past = last ? `<p class="bk-past">Worked through ${runs.length} time${runs.length === 1 ? '' : 's'}. Last time: ${esc((last.rounds || []).map(x => x.name).filter(Boolean).join(', then ') || 'nothing named yet')}. ${esc(last.status === 'open' ? 'Left at ' + last.stage : 'Ended: ' + String((BK_ENDS.find(x => x[0] === (last.resolution || {}).kind) || [])[1] || last.status).toLowerCase())}.</p>` : '';
   const moved = (s.moved || []).length ? `<p class="st-src">Date moved ${s.moved.length} time${s.moved.length === 1 ? '' : 's'}.</p>` : '';
   const chips = [s.device === 'computer' ? '<span class="st-chip st-pc">Needs a computer</span>' : '<span class="st-chip">Works on a phone</span>'];
   if (s.stopSafe) chips.push('<span class="st-chip st-safe">Safe to stop after this</span>');
@@ -844,15 +1056,18 @@ function stStep(id, s){
   return `<li class="st-step${s.done?' st-done':''}" id="s-${id}">
     <button type="button" class="st-tick" data-tick="${id}" aria-pressed="${!!s.done}" aria-label="Step ${esc(s.n)}: ${s.done?'done, tap to undo':'tap when done'}">${s.done?'✓':esc(s.n)}</button>
     <div class="st-body">
-      <p class="st-do">${esc(s.do)}</p>
-      ${where}${enter}${gen}${check}${due}${charge}
+      <details class="st-fold" data-group="s-${id}"${stOpenGroups.has('s-' + id) ? ' open' : ''}>
+      <summary><span class="st-do">${esc(s.do)}</span><span class="st-peek">${stPeek(s, over)}</span></summary>
+      <div class="st-more">
+      ${where}${enter}${gen}${check}${due}${charge}${past}
       <div class="st-chips">${chips.join('')}</div>
       ${s.note ? `<div class="st-note">Your note: ${esc(s.note)}</div>` : ''}
       <details${over ? ' open' : ''}><summary>Stuck, or something looks different?</summary>
         <textarea id="sn-${id}" placeholder="Say what you see, or what feels in the way. Claude reads it.">${esc(stDrafts[id] ?? s.note ?? '')}</textarea>
-        <button type="button" class="st-btn" data-note="${id}">Save note</button> <span class="st-state" id="sns-${id}"></span>
+        <button type="button" class="st-btn" data-note="${id}">Save note</button> ${over || s.done ? '' : work} <span class="st-state" id="sns-${id}"></span>
         ${s.done ? '' : `<div class="st-move"><label for="sd-${id}">Move the date to</label><input type="date" id="sd-${id}" value="${esc(s.due || '')}"><button type="button" class="st-btn" data-move="${id}">Move</button></div>${moved}`}
       </details>
+      </div></details>
     </div>
   </li>`;
 }
@@ -878,7 +1093,10 @@ function renderSteps(){
   // Lists with the soonest open due date come first; lists without one keep their order after them.
   const nextDue = id => stReq(stOf(id)).filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0] || '9999';
   const ids = Object.keys(stLists).sort((a,b) => nextDue(a).localeCompare(nextDue(b)) || (stLists[a].order||0) - (stLists[b].order||0) || String(stLists[a].created||'').localeCompare(String(stLists[b].created||'')));
-  const todo = ids.filter(id => !stFinished(id)), done = ids.filter(id => stFinished(id));
+  /* A list with no steps has nothing to do and nothing done, so it shows nowhere (Wendell, 2026-10-12, of the empty
+     Morning moves list: "is this working? Why is it on my todo list?"). */
+  const live = ids.filter(id => stOf(id).length > 0);
+  const todo = live.filter(id => !stFinished(id)), done = live.filter(id => stFinished(id));
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
   const chases = ocChases();
@@ -1099,7 +1317,7 @@ renderOutreach();
 
 // ---- Send to Claude ----
 /* What counts as unsent: a row saved and not yet recorded, the context box saved since the last record, and a step
-   ticked, noted or moved; each only when it is later than the last send. */
+   ticked, noted or moved, and a blocker panel run; each only when it is later than the last send. */
 function pendingSaves(){
   const since = (lastSent && lastSent.sentAt) || '';
   const after = t => !t || t > since;
@@ -1116,6 +1334,8 @@ function pendingSaves(){
     const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at)].filter(Boolean).sort().pop();
     if (t && t > PICKUP_SINCE && after(t)) out.push('steps/' + id);
   }
+  // A run of the blocker panel counts once it is saved, finished or not, so a run left half way still reaches Claude.
+  for (const id of Object.keys(bkRecs)) if (bkRecs[id].savedAt && after(bkRecs[id].savedAt)) out.push('blockers/' + id);
   return out;
 }
 function renderSend(){
@@ -1319,6 +1539,7 @@ render();
   db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; renderSteps(); }, () => {});
   db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; renderOutreach(); renderSteps(); }, () => {});
   db.collection('shows').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocShows = next; renderOutreach(); }, () => {});
+  db.collection('blockers').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); bkRecs = next; if (!bk) renderSteps(); else renderSend(); }, () => {});
   db.collection('steps').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stSteps = next; renderSteps(); }, () => {});
 })();
 </script>

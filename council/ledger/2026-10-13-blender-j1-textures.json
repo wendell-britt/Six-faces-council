@@ -1,0 +1,24 @@
+{
+ "id": "2026-10-13-blender-j1-textures",
+ "date": "2026-10-13",
+ "kind": "session-record",
+ "project": "bars-engine",
+ "repos": ["johnair01/bars-engine", "wendell-britt/six-faces-council"],
+ "session": "https://claude.ai/code/session_01PD9J5EiLqJoC59HMRpekZU",
+ "work": [
+  {
+   "what": "J1 procedural textures: wet stone on the walls, dry stone on the floor and gate stones, crystal vein on the spires and the crystal bed, each from noise and Voronoi nodes baked to one 512 px JPEG per piece (six); the crystals unchanged",
+   "where": "bars-engine content/ontology-game/cave/chamber.py (draft PR #292)",
+   "tests": "chamber.glb 163 KB to 465 KB (kit 84 KB; budget 3 MB); three textures distinct on the front render and texture sheet; frame rate at 390 by 844, headless Chromium, software WebGL, three 0.170.0: untextured 27.7 fps on the 4x throttle and 38.6 unthrottled, textured 19.7 and 27.4; cave-test.mjs unchanged because cave.js does not load the chamber until #289"
+  },
+  {
+   "what": "Why Blendkit stopped answering: the 12 October Blender session ran in the cloud environment named Default, where the allowlist and key were saved (steps blender-cloud-test-01 to 03). Project threads run on a built-in environment with no settings, so every project thread since has been refused (api.blenderkit.com, assets.blenderkit.com, cdn.jsdelivr.net, download.blender.org all 403 on 2026-10-13 02:26 UTC)",
+   "where": "get_session on session_015usKXsYhza5EkN1GcKofCT (environment env_01UaZ5uKunKKCcxV8RG64pFX, Default) and on this session (built-in project environment)",
+   "step": "steps/blender-cloud-test-04: point the project at Default in Project settings"
+  }
+ ],
+ "rulings": [
+  {"words": "start J1, what happened to the sessions that already had access to blenderkit? When did we stop being able to reach the netowrk. The crystals are perfect", "where": "project chat, 2026-10-13 02:24 UTC", "effect": "J1 built; the crystal material left as it is"}
+ ],
+ "board_rows": "positions bpt-j1-frame-rate (board version 338); steps/blender-cloud-test-04"
+}

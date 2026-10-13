@@ -1,0 +1,97 @@
+{
+ "id": "2026-10-12-blender-cloud-session",
+ "date": "2026-10-12",
+ "kind": "session-record",
+ "project": "bars-engine",
+ "repos": [
+  "johnair01/bars-engine",
+  "wendell-britt/six-faces-council"
+ ],
+ "session": "https://claude.ai/code/session_015usKXsYhza5EkN1GcKofCT",
+ "cost": "Not recorded here: a session cannot read its own cost mid-turn. Read it from this session's result events (list_events kinds result on session_015usKXsYhza5EkN1GcKofCT; modelUsage and total_cost_usd) and write it with the board read's usage step.",
+ "work": [
+  {
+   "what": "Blender in the cloud rebuilt: headless bpy 5.2.2 arranges a free asset with a rigged walker, renders a 480p preview, exports an animated GLB, builds a three.js viewer",
+   "where": "bars-engine tools/blender-cloud/ (PR #281, merged 7d9d179)",
+   "artifact": "https://claude.ai/artifact/SUZYu1w1P5b61Cn6pj7Vwg (version 5, CC0 chair, three 0.170.0, model in model.json)"
+  },
+  {
+   "what": "Remediation of six problems found in the first build, plus a seventh found on the way (Blendkit's Royalty Free licence bars a model a third party can extract from a page)",
+   "where": "bars-engine .specify/specs/blender-cloud-hardening/ (merged in #281)",
+   "tests": "fetch selftest ok; key header only to the API host with a fake value; 403 message; Draco decode and import of three CC0 assets; two-tile UDIM stop; 617,708-triangle asset to 25,000 triangles and 7.3 MB; licence gate stops royalty_free; viewer loaded in headless Chromium"
+  },
+  {
+   "what": "Cave studio intake, round 1 on the board",
+   "where": "battle fr-cave-studio; ledger 2026-10-12-feature-request-cave-studio-round-1.json; bars-engine .specify/specs/cave-studio/ (PR #284, merged 04da026)",
+   "test": "build_figure.py and build_kit.py rebuild figure.glb, cave-kit.glb and spots.json byte for byte in the cloud"
+  },
+  {
+   "what": "Motion2MixamoRig read and its licence chain checked, then set aside",
+   "where": "board position mm-set-aside, deferred until he asks",
+   "finding": "SMPL-X allows only non-commercial research, education or artistic projects, and names production of other artifacts for commercial purposes as prohibited. GVHMR allows educational, research and non-profit use only. YOLOv8 is licensed AGPL-3.0. Mixamo characters are royalty-free for commercial use. The tool's own code is Apache-2.0, and its retarget half appears to take any 24-joint skeleton file, which was read and not run."
+  }
+ ],
+ "rulings": [
+  {
+   "words": "Never build furniture from primitives when an asset exists.",
+   "where": "first message of the session, 2026-10-12",
+   "effect": "scene.py imports a downloaded asset and never builds furniture; a standing rule for the studio"
+  },
+  {
+   "words": "yeah that makes sense. Let's skip this for now. Let's move back to the blender work",
+   "where": "chat, 2026-10-12, answering the licence analysis of Motion2MixamoRig",
+   "effect": "position mm-set-aside; deferred until he asks; the licence reading stands as the council's position"
+  },
+  {
+   "words": "yeah let's make a remediation plan for those problems. They all do seem like they are importantt o fix",
+   "where": "chat, 2026-10-12",
+   "effect": "spec kit blender-cloud-hardening, all six fixes built"
+  },
+  {
+   "words": "start building the remediation plan",
+   "where": "chat, 2026-10-12",
+   "effect": "the six fixes and the licence gate built and tested"
+  },
+  {
+   "words": "merge the PR when the preview is green",
+   "where": "chat, 2026-10-12",
+   "effect": "PR #281 merged once the preview and the check job were green"
+  },
+  {
+   "words": "ok let's go ahead and do a project intake for the council board. I want to use blender in the cloud to continue development work on the cave lessons and bigmind work as well as integrating some asset work that I'm doing in ChatGPT",
+   "where": "chat, 2026-10-12",
+   "effect": "feature request move, round 1: battle fr-cave-studio"
+  },
+  {
+   "words": "merge PR 284",
+   "where": "chat, 2026-10-12",
+   "effect": "PR #284 merged; its check job had passed and the Vercel preview was still pending"
+  },
+  {
+   "words": "ok we now need to pivot this work to part of the council flow and end this chat.",
+   "where": "chat, 2026-10-12",
+   "effect": "this record, the call sheet update and the deferral row"
+  }
+ ],
+ "deferrals": [
+  {
+   "item": "positions/mm-set-aside",
+   "until": "ask",
+   "saved_at_note": "his chat answer; the time is to the nearest quarter hour"
+  }
+ ],
+ "open": [
+  "His answers to cs-chatgpt-ai-art, cs-first-piece and cs-asset-kind (battle fr-cave-studio, round 1).",
+  "Steps on Your steps under Cave studio, due 2026-10-19: the Drive folder Cave studio inbox with one ChatGPT file, and the optional Blendkit search check from his own machine.",
+  "The published Cloud Walker page and the republished board were checked as files in headless Chromium and by the store, and neither was opened as a private URL from the cloud. His eyes on both.",
+  "The Definition of done in bars-engine .specify/specs/blender-cloud-hardening/spec.md is still unticked although every item is met (see work above); tick it in the next bars-engine change.",
+  "Not tested: meshopt decoding, a lamp asset, the fetch script without the sandbox proxy, scripted API use under Blendkit's terms (nothing found either way)."
+ ],
+ "found_on_the_way": [
+  "The live board page was behind main by one template fix; the board was built from main's template.",
+  "Artifacts do not serve .glb files; the model ships as base64 in a .json file.",
+  "Setting image.file_format in Blender does not change a glTF export; images must be re-encoded and repointed."
+ ],
+ "lessons_pending": [],
+ "dissent": "None recorded: no full pass was convened in this session."
+}

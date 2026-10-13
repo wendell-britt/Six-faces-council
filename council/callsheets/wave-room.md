@@ -11,6 +11,8 @@ run in place in the cave); it stands unless he flips it. The cave's DESIGN.md ha
 of the second slice, then fixes from his notes in a fresh thread.
 
 ## Waiting on
+The board's blocker panel (docs/blocker-panel.md, 2026-10-12) runs an overdue step through a light WAVE and saves
+`blockers/` records; the room can take it over by writing the same record with `engine: "wave-room"`.
 His phone play of the room by 2026-10-18 still gates the daemon and alchemy extensions. PR #276 (first slice) is open into the
 cave branch. The board has no open rows for the room.
 
