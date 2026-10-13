@@ -7665,6 +7665,39 @@
    "auto": true,
    "pos": "The Big Mind door, on the left behind the seat, opens the Big Mind cave itself on the same page, at its mouth, with Back to the WAVE room. The charges you worked through the whole W.A.V.E. in the room walk in with you as spirits. The other door, on the right, is the six game masters: it opens the hall of the six, whose tunnels are plain until their content is made. The next six chambers and the centre are built inside the Big Mind cave, which already has the Protector's refusal path, the charge meter and the speaking turns. This stands unless you flip it.",
    "why": "Your overrule of dp-big-mind-page: \"The big mind cave need to be accessible from the WAVE room ... Another door in the room leads to the 6 game masters (content to be created)\". dp-door places the door; dp-seven and dp-centre say what the path holds."
+  },
+  {
+   "id": "sf-earth-loadout",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "spirit fight build 1",
+   "auto": true,
+   "pos": "Ama Rell's Fixer stands in Earth, because she needs earth (space). None of the straight four moves controls earth, so in this fight you carry Wind Draw (Wood), Flame Follow (Fire), River Fill (Water) and Sky Lift (Metal). Wind Draw lands double, Flame Follow lands half, and the other two land plain. Earth Yield is left out because earth on earth would only land plain. This stands unless you flip it.",
+   "why": "Your bi-chart answer (type chart) needs one move that controls the spirit, or every move lands plain and there is nothing to learn. The element rule is pass 3's (the need of the person the line was spoken to). Built in sprout #50."
+  },
+  {
+   "id": "sf-listen-finish",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "spirit fight build 1",
+   "auto": true,
+   "pos": "When the spirit's HP reaches zero you pick one of two: Rest it, and it comes back later, or Listen to it. Listening shows what she needed (\"She did not want it named a burden. She wanted room.\"), you say the line you missed, and the charge comes home. That one tap at the end is the only emotional alchemy in this fight. More gets layered on after your play. This stands unless you flip it.",
+   "why": "Your standing rulings pf-fight-rests (fighting rests a foe, only listening clears it) and bi-line-comes-back, kept as small as your bi-what-for steer asks (\"start there and see if there's a way to layer the emotional alchemy on top\"). Built in sprout #50."
+  },
+  {
+   "id": "sf-numbers",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "spirit fight build 1",
+   "auto": true,
+   "pos": "The numbers are placeholders set so the fight runs three to five turns: Wind Draw alone wins in 3 turns, a plain move in 5, and Flame Follow alone loses. Taking the fight costs 2 mana. The spirit's push grows heavy every third turn, and the page says so before you tap. This stands unless you flip it.",
+   "why": "bi-one-tap sets three to five turns and the push shown in words. Checked by a scripted run of each move at phone width. Built in sprout #50."
   }
  ],
  "questions": [
