@@ -1,0 +1,30 @@
+{
+ "id": "2026-10-13-blender-recipe-token-cost",
+ "date": "2026-10-13",
+ "kind": "session-record",
+ "project": "bars-engine",
+ "repos": ["johnair01/bars-engine", "wendell-britt/six-faces-council"],
+ "session": "https://claude.ai/code/session_019AEhQxE7oPt4EbbCm5nvsE",
+ "cost": "Not recorded here: a session cannot read its own cost mid-turn. The twenty edit sub-threads ran on Sonnet.",
+ "work": [
+  {
+   "what": "Part 2's first job: cave/scene.yaml (the pool chamber as a recipe), its schema RECIPE.md, and build_scene.py, a fixed builder that checks a recipe without Blender and with bpy writes chamber.glb and a front and top view",
+   "where": "bars-engine content/ontology-game/cave/ and tools/blender-cloud/recipe_trial/ (draft PR #291)",
+   "tests": "Ten asks, each done in matched fresh Sonnet sub-threads by editing the recipe and by editing the same chamber as plain bpy code (chamber_code.py, 177 lines). Tokens past the 54,200 opening load, from each sub-thread's usage records: recipe mean 11,578 (largest 15,408), output mean 540 (largest 877); code mean 16,861, output 761. T1 passes, T2 misses (0.69 against at most 0.33), T3 passes 8 of 10 on both paths. The default recipe rebuilds byte for byte."
+  }
+ ],
+ "rulings": [
+  {
+   "words": "ok let's continue",
+   "where": "project chat, 2026-10-13 01:20",
+   "effect": "Part 2's recipe job run in this thread"
+  }
+ ],
+ "findings": [
+  "T2's kill line cannot be met at this scene size: both files are short, so the edit's own cost is small next to the opening load every thread pays",
+  "scatter near the pool put mushrooms in the water (ask 01): a scatter should keep clear of what it is placed near",
+  "glow reads too strong: 0.6 turned the pool white on both paths (ask 08)",
+  "no edit on either path looked at a render before calling itself done; each miss would have been caught by one look"
+ ],
+ "board_rows": "position bpt-recipe-result (board version 334)"
+}
