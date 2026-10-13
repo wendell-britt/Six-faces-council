@@ -6976,6 +6976,114 @@
    "auto": true,
    "pos": "The recipe missed its token line, so per bpt-recipe the idea is dropped. Over ten asks, editing the recipe cost 11,600 tokens past the opening load and editing plain Blender code cost 16,900, a ratio of 0.69 where the line was a third. Both got 8 of 10 asks right on the pictures. From textures on, Claude edits a committed Blender script for the chamber, one line per piece, as the code side of the test did. The builder's walls, floor and placement stay as that script's helpers. If you would rather keep the recipe, flip this: it was the cheaper of the two, and it checks an edit in a second without Blender. This stands unless you flip it.",
    "why": "T1 passed (every edit under 20,000 tokens), T2 missed (0.69 against 0.33), T3 passed both ways. The saving is about 5,300 tokens an edit, against a 54,200 opening load every thread pays either way. Source: bars-engine PR #291, tools/blender-cloud/recipe_trial/RESULTS.md."
+  },
+  {
+   "id": "sb-enter-at-daemon",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "When a free move blocks, the block work opens at the daemon. The sensation, the place, the channel and any words the player gave are carried in and not asked again. This stands unless you flip it.",
+   "why": "oag-block-carry does exactly this, and oag-gate already says a block does not ask the element's job again."
+  },
+  {
+   "id": "sb-game-tells-job",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "At the daemon the player says in their own words what is in the way, and then the game tells them the daemon's job and who it works for. The player is never asked to supply either. This stands unless you flip it.",
+   "why": "your overrule of oag-daemon-step on 7 October: \"We should be telling them what the daemon's job is. They don't provide that info. Who it works for is also something that's supplied to them\"."
+  },
+  {
+   "id": "sb-words-then-cards",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "The player picks the daemon the way they pick the channel: their own words first, and the seven cards only when they say they do not know, and more than one may be picked. Neither the four sensations nor the five marks reorder the cards. This stands unless you flip it.",
+   "why": "your ruling today that the channel is picked \"by vibe at first\", and bmw-player-names, where the game never guesses for the player."
+  },
+  {
+   "id": "sb-one-at-a-time",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "With more than one daemon picked, one is worked at a time and the others wait at the door. The depth cap counts blocks inside blocks, and at the cap the game names it once, offers outside support and pauses. This stands unless you flip it.",
+   "why": "the wave room already holds up to three creatures with a fourth waiting at the door, and your overrule of oag-wave-depth: \"cap the depth so players don’t get lost in the minutiae\". The cap number is the council's three and the notice wording is yours."
+  },
+  {
+   "id": "sb-no-pass-at-daemon",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "In the body-map flow a named daemon is not walked past. The player may say it is not a daemon and carry on as an ordinary block. Once it is named, the encounter is the 3-2-1 in the shared chamber, Step back pauses and never skips, and nothing calls the player back to a paused encounter. This stands unless you flip it.",
+   "why": "your words on cave-daemon-wall: \"We shouldn't have a skip. If a daemon pops up then it needs to be worked with. We can pivot to a 321 discussion with the part until is feels satisfied\"."
+  },
+  {
+   "id": "sb-satisfied-is-theirs",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "The encounter ends when the player says the part is satisfied, as the player sets the charge number, and the game does not score it. Back at the spot, the player is asked again where it is and whether it is tension, constriction, strength, numbness or free-flowing qi and aliveness. The free move is offered again and never required. A sensation that stays is saved as data. This stands unless you flip it.",
+   "why": "bmw-number-stays, oag-release, and bmw-whose-charge, where the question reads the player's own charge beside the part's."
+  },
+  {
+   "id": "sb-compound-prevails",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "When the player picks two channels, the game asks which holds the other, or which leads, in the player's words, and runs that channel's free move first. The other waits. This stands unless you flip it.",
+   "why": "your directional compound rulings, which replace the earlier chat suggestion of starting with the stronger feeling."
+  },
+  {
+   "id": "sb-none-found-is-data",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "A free move that blocks with no part found is saved as blocked with none named. A player may also pick the nearest daemon, and the game works with that reading however loose it is. The \"I'm not sure\" card opens Face it on whatever is in the way, in the player's words. This stands unless you flip it.",
+   "why": "your ruling that moves fail only when a part takes the joystick is the frame, and this is its test."
+  },
+  {
+   "id": "sb-late-blockers",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "Numbness and strength are the last two blockers a player learns to metabolize, so the game does not ask an early player to find either. Numbness gets its own later introduction, since it is found by noticing that something should be there and is not. Strength is not flagged as a blocker to early players, because it feels good and the game cannot tell them their good feeling is wrong before they can sense the larger effect. There is no special screen for the cost of strength: the player meets it through what happens in play or at the level cap of the story the game is telling. This stands unless you flip it.",
+   "why": "Your rulings in chat on 12 October. On numbness: \"its one of the last charges that people learn to metabolize. It's the chargeless charge.\" On strength: \"strength feels good- however eventually one has to sacrifice that local good feeling for global progress- its the block that people will have to overcome when they want to work on the sage level. They will have to develop an intuition about global effects in opposition to their learned and trained way of relating to blockers.\" On how the cost shows: \"the players would see the cost emerge through play OR through the level cap of whatever story is being told through the game.\""
+  },
+  {
+   "id": "sb-loose-reading-is-fine",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "blocked-move 1",
+   "auto": true,
+   "pos": "A player who cannot find the exact daemon may pick the nearest one, and the game works with that reading. Nothing treats a loose pick as an error. This stands unless you flip it.",
+   "why": "Your ruling in chat on 12 October: \"it's ok for a player to invent one. No one is clever enough to not get some value out of even a slightly less than precice reading of the present daemon\". Also from the same chat: the Controller has no arms, and \"the fixer is the arms of the controller\", so the Fixer is the daemon that holds the player until it is handled."
   }
  ],
  "questions": [
@@ -11676,6 +11784,39 @@
      "v": "models",
      "label": "Finished 3D files",
      "c": "Models that arrive ready-made. The studio decodes them, fits them to budget and checks the licence. It needs a place for you to drop them."
+    }
+   ]
+  },
+  {
+   "id": "sb-sensation-order",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "blocked-move 1",
+   "q": "In what order does a player learn to metabolize the four blocked sensations? You have placed numbness and strength last. Where do tension and constriction fall, before them?",
+   "why_you": "Only you hold the developmental order from Bruce Frantzis's teaching, and each answer builds a different introduction: all four at once, two early and two late, or a staged unlocking.",
+   "not_before": "The record places numbness and strength as the last two and says nothing about tension against constriction.",
+   "options": [
+    {
+     "v": "tension-first",
+     "label": "Tension first, then constriction",
+     "c": "The game introduces tension as the first sensation, constriction second, and numbness and strength later."
+    },
+    {
+     "v": "constriction-first",
+     "label": "Constriction first, then tension",
+     "c": "The game introduces constriction as the first sensation, tension second, and numbness and strength later."
+    },
+    {
+     "v": "early-pair",
+     "label": "Tension and constriction together",
+     "c": "The game introduces the two as one early pair, then numbness and strength as later stages."
+    },
+    {
+     "v": "no-order",
+     "label": "No fixed order",
+     "c": "The game introduces no sensation by stage; only numbness and strength wait for later play, as your rulings already say."
     }
    ]
   }
