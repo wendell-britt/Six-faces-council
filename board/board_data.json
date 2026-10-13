@@ -19495,6 +19495,258 @@
      "architect"
     ],
     "pass": "Blender pipeline tests"
+   },
+   "sb-enter-at-daemon": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T03:56:20.364Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-game-tells-job": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T03:56:31.424Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-words-then-cards": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T03:56:45.995Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-one-at-a-time": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T03:57:17.752Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "steer": "I think you can handle up to 3 at a time, but the user experience will be more like final fantasy turn based combat",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-no-pass-at-daemon": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:09:58.446Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "steer": "So long as you can skip a 321. If a 321 is skipped then it can be picked up in the WAVE room. The WAVE room is the beginning of the journey. You can let spirits in and you can also go in a cave journey starting from there",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-satisfied-is-theirs": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:07.446Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-compound-prevails": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:13.365Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-none-found-is-data": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:23.815Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-late-blockers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:26.933Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "sb-loose-reading-is-fine": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:33.033Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "blocked-move 1"
+   },
+   "ff-two-reports": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:40.434Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "free-flow 1"
+   },
+   "ff-aliveness-is-theirs": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:46.802Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "free-flow 1"
+   },
+   "ff-no-daemon-on-aliveness": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:10:54.537Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "free-flow 1"
+   },
+   "ff-name-what-is-here": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:11:06.939Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "free-flow 1"
+   },
+   "ff-gold-minted-by-grounding": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:11:12.524Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "free-flow 1"
+   },
+   "ff-every-pair-has-a-relation": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:11:23.041Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "free-flow 1"
+   },
+   "bpt-j1-frame-rate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:11:30.560Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "Blender pipeline tests"
+   },
+   "merge-layout": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:11:46.495Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "WAVE into the cave map"
+   },
+   "cave-sit-down": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:11:50.129Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "WAVE into the cave map"
+   },
+   "fold-not-now": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:12:06.366Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "One cave: daemons met the Big Mind way"
+   },
+   "fold-daemon-cards": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T05:12:16.060Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "One cave: daemons met the Big Mind way"
    }
   },
   "questions": {
@@ -21412,6 +21664,18 @@
      "diplomat"
     ],
     "pass": "cave studio"
+   },
+   "sb-sensation-order": {
+    "decision": "early-pair",
+    "label": "Tension and constriction together",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T03:56:07.708Z",
+    "record": "council/ledger/2026-10-13-pull-051216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "blocked-move 1"
    }
   },
   "causes": {
@@ -22723,5 +22987,5 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-12T23:29:20.492Z"
+ "steps_recorded_through": "2026-10-13T02:26:28Z"
 }
