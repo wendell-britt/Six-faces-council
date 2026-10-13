@@ -20952,6 +20952,54 @@
      "challenger"
     ],
     "pass": "spirit fight build 1"
+   },
+   "sf-numbers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:22:02.701Z",
+    "record": "council/ledger/2026-10-13-pull-232238.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "spirit fight build 1"
+   },
+   "sf-moves-from-people": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:22:18.238Z",
+    "record": "council/ledger/2026-10-13-pull-232238.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "spirit fight build 1"
+   },
+   "sf-moves-grow": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:22:25.522Z",
+    "record": "council/ledger/2026-10-13-pull-232238.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirit fight build 1"
+   },
+   "sf-listen-finish": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:22:38.345Z",
+    "record": "council/ledger/2026-10-13-pull-232238.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "spirit fight build 1"
    }
   },
   "questions": {
@@ -22942,6 +22990,19 @@
      "architect"
     ],
     "pass": "battle intake 1"
+   },
+   "sf-who-fights": {
+    "decision": "ally",
+    "label": "Your ally spirit fights",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:21:51.241Z",
+    "record": "council/ledger/2026-10-13-pull-232238.json (six-faces-council)",
+    "steer": "Your ally spirits unless you don’t have any and then you have to fight on your own power",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit fight build 1"
    }
   },
   "causes": {
