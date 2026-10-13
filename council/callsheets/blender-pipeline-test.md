@@ -1,20 +1,17 @@
-2026-10-13 (updated 21:25)
+2026-10-13 (updated 21:45)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J3 (picture to asset): Wendell ticked `j3-look-01` done (board read 21:18, 2026-10-13), then gave notes in the
-thread, so bars-engine #303 stays draft while round 2 goes into it. Mushrooms 0.894, amber crystals 0.855, root knot 0.819, plus his four Blendkit
-greenery picks, kept in git under `content/ontology-game/cave/picks/` because Blendkit offers only .blend.
-Round 2 runs in the J3 thread on the same branch, before J4. His notes (2026-10-13 21:21): "I think we
-can do more with importing textures from the images. The shapes are pretty good but a bit flat. And we can do a bit
-more work with getting the mushrooms right. They have the vibe but are a little blobby. The root is also a bit
-blobby. Not readying as tendrils falling in a shape". The work, all in `tools/blender-cloud/from_picture.py`:
-(1) texture: project each picture onto its piece's front as a colour map, keeping the flat material as a fallback,
-plus some depth so shapes stop reading flat; (2) mushrooms: separate stems (trace each stem, not one inflated mass),
-caps with a rim and an underside instead of a lathed blob; (3) root: many thin tapering strands that fall from the
-roof and droop, swept along the picture's centre lines, with no crumpled trunk. Show him a new sheet; the kill line
-stays a number plus his eye. Then J4 (character creator, robe set). The chamber objects reach the game when
-`chamber.py` is wired into `cave.js`.
+J3 (picture to asset), round 2 built on bars-engine #303 (draft, commit 7afdc69), waiting on his look: board step
+`j3-look-02` (Your steps list `blender-cloud-test`, step 6), sheet
+`/mnt/project-files/3d-build/j3-round2-2026-10-13/j3-round2-sheet.png`. Round 1 he ticked (`j3-look-01`), then gave
+notes in the thread (2026-10-13 21:21): textures from the pictures, mushrooms and root "a little blobby", root "Not
+readying as tendrils falling in a shape". Round 2: each piece carries its picture as a texture
+(`picture(..., texture=True)`); one traced stem per mushroom under a smooth rimmed cap; the root's body is a braid of
+four strands with tapering tendrils. Outline: mushrooms 0.822 (was 0.894), crystals 0.855, root 0.910 (was 0.819);
+tests offline,bpy pass; chamber 1,482 KB of 3 MB. On his yes: mark #303 ready. Then J4 (character creator, robe set).
+Crystals still have five shards to the picture's ten (P4 gap). The chamber objects reach the game when `chamber.py`
+is wired into `cave.js`.
 
 Earlier: J2 (adding objects) is built and merged: bars-engine #299 (2026-10-13). `cave/objects.py` gives `chamber.py` one `obj(...)` line per
 object from Blendkit (CC0 Boulder 01, pinned by id), a picture (offering bowl, `pictures/offering_bowl.jpg`) or a script
