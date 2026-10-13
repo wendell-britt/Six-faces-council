@@ -2,10 +2,9 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J2 (adding objects) is built: bars-engine draft PR #299. `cave/objects.py` gives `chamber.py` one `obj(...)` line per
+J2 (adding objects) is built and merged: bars-engine #299 (2026-10-13). `cave/objects.py` gives `chamber.py` one `obj(...)` line per
 object from Blendkit (CC0 Boulder 01, pinned by id), a picture (offering bowl, `pictures/offering_bowl.jpg`) or a script
-(cushion). Each object passes the kill line, and a source that is not CC0 stops the build (tests J2, J2b). Next: #299 to
-ready once CI is green, then J3 (picture to asset), which needs his pictures in the Drive inbox. The chamber objects reach
+(cushion). Each object passes the kill line, and a source that is not CC0 stops the build (tests J2, J2b). Next: J3 (picture to asset), which needs his pictures in the Drive inbox. The chamber objects reach
 the cave game when `chamber.py` is wired into `cave.js`.
 
 Earlier: The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Since then, from his
