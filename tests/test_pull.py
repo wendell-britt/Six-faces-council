@@ -125,3 +125,43 @@ class PullTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BlockerTest(unittest.TestCase):
+    """The overdue card's blocker panel (2026-10-12): each run reaches main once, and a later save of it replaces it."""
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.store = Path(self.tmp.name) / "store"
+        (self.store / "blockers").mkdir(parents=True)
+        self.main = Path(self.tmp.name) / "blockers"
+        self.was, pull.BLOCKERS = pull.BLOCKERS, self.main
+
+    def tearDown(self):
+        pull.BLOCKERS = self.was
+        self.tmp.cleanup()
+
+    def run_doc(self, saved, **extra):
+        doc = {"step": "s1", "task": "Add the env var", "savedAt": saved, "status": "resolved", "stage": "done",
+               "charge": {"before": 7, "after": 3}, "rounds": [{"name": "dread"}, {"name": "guard"}],
+               "resolution": {"kind": "change", "text": "add a rollback line"}, **extra}
+        (self.store / "blockers" / "s1--a.json").write_text(json.dumps(doc))
+
+    def test_run_recorded_once_with_a_needs_work_line(self):
+        self.run_doc("2026-10-12T17:00:00Z")
+        found = pull.find_blockers(self.store)
+        self.assertEqual([b["id"] for b in found], ["s1--a"])
+        self.assertEqual(pull.blocker_line(found[0]), 'blockers/s1--a: Add the env var (dread, guard; the step needs '
+                                                        'changing: "add a rollback line", charge 7 to 3)')
+        self.main.mkdir()
+        (self.main / "s1--a.json").write_text(json.dumps(found[0]["doc"]))
+        self.assertEqual(pull.find_blockers(self.store), [])
+        self.run_doc("2026-10-12T18:00:00Z")
+        self.assertEqual(len(pull.find_blockers(self.store)), 1)
+
+    def test_run_left_half_way_says_where(self):
+        self.run_doc("2026-10-12T17:00:00Z", status="open", stage="validate", resolution=None, charge={"before": 5})
+        self.assertIn("left at validate", pull.blocker_line(pull.find_blockers(self.store)[0]))
+
+    def test_no_blockers_folder_is_fine(self):
+        (self.store / "blockers").rmdir()
+        self.assertEqual(pull.find_blockers(self.store), [])
