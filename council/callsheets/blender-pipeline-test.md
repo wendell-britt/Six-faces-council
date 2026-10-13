@@ -7,8 +7,10 @@ J5 (clothing) is built: bars-engine draft #315. `content/ontology-game/cave/garm
 each of the nine J4 figures in dusk, jade and hemp: 36 skinned GLBs, robe 109 to 119 KB, sash 20, topknot 28. J4's rig
 gained two hem bones (`hemF`, `hemB`) that the robe hangs from; cave.js must compute them the same way (character.py
 `pose`). Tests J5 (nothing through at 25 keys), J5b (unfitted robe fails) and J5c (swap under 1 ms in Chromium) pass,
-and J4 and J4b still pass. Root-game reuse is in bars-engine tasks.md. Waiting on his look, board step `j5-look-01`
-(list blender-cloud-test, step 9), pictures in `/mnt/project-files/3d-build/j5-garments-2026-10-13/`. On his yes, #315
+and J4 and J4b still pass. Root-game reuse is in bars-engine tasks.md. Round 1 (`j5-look-01`, his notes 23:24): shoulders "peeking through on top", hems "held open against gravity". Round 2
+(commit c555b144): the robe is laid over the shoulder tops and the test covers them; the hem flare went from 11 cm to 3 cm
+and `hemB` follows the shin more; robe 117 to 125 KB; all five tests pass. Waiting on his look, board step `j5-look-02`
+(list blender-cloud-test, step 10), pictures in `/mnt/project-files/3d-build/j5-round2-2026-10-13/`. On his yes, #315
 goes ready and the next job wires figures and garments into `cave.js` together, in a fresh thread.
 
 Earlier: J4 (character creator, robe set) is built: bars-engine draft #312. `content/ontology-game/cave/character.py`
