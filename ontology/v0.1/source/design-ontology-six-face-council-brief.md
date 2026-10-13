@@ -429,6 +429,14 @@ Where retention is permitted and useful, composting preserves the minimum approp
 
 After composting, the system stops active backlog pressure, overdue status, progress penalties, required review, and automatic completion prompts. Reactivation is a new governed decision. Composting does not complete an unmet quest, prove the material worthless, or authorize bulk sorting of the ontology.
 
+### Creative reuse does not own personal meaning
+
+BARS may retain “not necromancy” as its project-level meaning frame for creative composting. It must remain visibly attributed to the project rather than asserted as the player's required experience. The project may name its ritual; it may not name the player's experience for them.
+
+Separate SourceCorpusRecord, CreativeReuseProposal, ReuseAuthorization, DerivationRecord, ProjectMeaningFrame, PersonalMeaningReport, AttributionRecord, DerivedVoice, IdentityContinuityClaim, ReuseRejection, and ReuseConsequenceRecord. A derived voice is a character informed by a permitted corpus, not the source person or a new statement authored by their past self.
+
+“Not mine” may reject meaning, authorship, attribution, identity or likeness, aesthetics, permission, or relationship. The system must honor the scope, propagate correction through descendants, and never call rejection resistance. Archive reuse remains optional; non-AI and non-reuse routes preserve the core game and quality floor.
+
 ---
 
 ## 10. Design shadows become playable remediation

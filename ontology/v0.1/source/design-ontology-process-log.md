@@ -167,3 +167,11 @@ Creative regeneration in BARS canon was reconciled with the constitutional permi
 The ontology separates `CompostCandidate`, `CompostingDecision`, `CompostingDisposition`, `CompostRecord`, optional `CompostResidue`, later `RegenerationEvent`, `ReactivationDecision`, and explicit `CompostRecoverability`. A valid disposition removes the target from active backlog pressure and completion prompts. Retention and reuse remain permission-bound, and privacy or deletion rights may require only a tombstone or no recoverable source content.
 
 The full ruling is recorded in `council-phase-a/composting/reconstruction-and-decision.md`. It does not authorize general Phase B sorting of ontology concepts.
+
+## Creative reuse and personal meaning reconstruction and decision — 2026-10-12
+
+The BARS claim that AI remixing is “not necromancy” was separated into an attributed `ProjectMeaningFrame`. It can govern project metaphor and design intent without overruling a player's or creator's `PersonalMeaningReport`.
+
+The ontology now separates `SourceCorpusRecord`, `CreativeReuseProposal`, `ReuseAuthorization`, `DerivationRecord`, `ProjectMeaningFrame`, `PersonalMeaningReport`, `AttributionRecord`, `DerivedVoice`, `IdentityContinuityClaim`, `ReuseRejection`, and `ReuseConsequenceRecord`. A DerivedVoice is a character informed by permitted material, not the source person, past self, or a new statement authored by them.
+
+“Not mine” may reject meaning, authorship, attribution, identity or likeness, aesthetics, relationship, or permission. Rejection propagates through lineage and cannot be called resistance. Archive-based adaptation remains optional, with non-AI and non-reuse routes preserving core access and quality. The full ruling is recorded in `council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md`.
