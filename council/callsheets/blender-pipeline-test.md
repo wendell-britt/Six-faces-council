@@ -10,9 +10,9 @@ Left open:
 1. Blendkit tests (G4, G5, N1, N2, A2 to A4, N5) skip, because this environment's network refuses Blendkit. The first
    session that reaches it runs `--tier net`, pins the chair, table and Painted Wooden Chair 02 query and index in
    `fixtures.json`, picks A2's multi-material asset, and records N5's time and memory.
-2. Fixes from the board positions, each a small pipeline change: `bpt-licence-stop` (G2), `bpt-no-restricted-flag` (G2b)
-   in `build_viewer.py`; `bpt-root-curl` (P3, P5) goes to the cave-studio strand once #289 lands. Unmark each known
-   gap in the tests when its fix lands.
+2. `bpt-licence-stop` and `bpt-no-restricted-flag` stood and are fixed in #290 (G2 and G2b pass). `bpt-root-curl`
+   stood: the cave-studio strand fixes root_curl's loose blob and face budget once #289 lands, then unmarks P3 and P5
+   in `tests/test_bpy.py` (`KNOWN`).
 3. Then Part 2 (below), whose order is `bpt-order`.
 
 **Part 2, added 2026-10-13 from his second message:** whether Claude can change the cave from words and pictures, with
