@@ -1,4 +1,4 @@
-2026-10-13 (updated 04:45)
+2026-10-13 (updated 05:40)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -16,6 +16,17 @@ the J1 stone. cave-test 297 pass, bigmind-test 178 pass. Phone page: https://cla
 (version 8). Board positions `merge-layout` (Big Mind chambers become the Cave of Lessons' daemon stops) and
 `cave-sit-down` stand unless he flips them. Next: his play of version 8, then the fold itself in a fresh thread (daemon
 stops met the Big Mind way, the Big Mind page opening the Cave of Lessons). #272, #277 and #278 are closed as carried by #296.
+
+**2026-10-13, the fold (one cave):** Wendell answered "Both" at 04:26. bars-engine #301 (draft) meets every daemon
+stop in the Cave of Lessons the Big Mind way: ask to speak with it, step into its place (Be it staging), answer its job,
+what it protects you from and how it is thanked as it, and a voice that speaks out of turn is named, thanked and waits by
+the wall. Not now keeps the daemon in the way (`fold-not-now`); the six other daemons' cards are written from their jobs
+(`fold-daemon-cards`). Both positions are on the board. cave-test 313 pass (320 merged with the roots work, #298),
+bigmind-test 178 pass; the Big Mind test's gate check now waits on the gate. Phone page version 9 (artifact version 11,
+built on top of the roots work already on that page): https://claude.ai/artifact/23neJJJgywAygUqiJffGvc. Next: his play
+of a daemon stop, then carry the Protector's refusal path, its W.A.V.E., the speaking turns and saving into the stop, and
+then point the Big Mind page at the Cave of Lessons. DESIGN.md will conflict with #298 at its end (both append a section):
+keep both.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
