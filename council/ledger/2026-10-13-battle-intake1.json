@@ -1,0 +1,158 @@
+{
+ "date": "2026-10-13",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "cause": "feature-design",
+ "project": "wave-battle",
+ "record": "council/passes/6FACE_PASS_battle-intake1_2026-10-13.md",
+ "report": "council/daemons/reports/2026-10-13-battle-intake1-player.md; council/daemons/reports/2026-10-13-battle-intake1-skeptic.md",
+ "called_by": "Wendell, Skilled Helper thread, 2026-10-13 22:30 UTC (\"Yeah we need to rethink this battle logic in general. It's pretty clunky and unintuitive ...\"); thread started by the project's coordinator",
+ "convened_by": "council",
+ "invoked_from": "claude-code",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "n": 25,
+   "name": "Candour",
+   "changing_lines": [
+    1,
+    3,
+    5,
+    6
+   ],
+   "becomes": {
+    "n": 62,
+    "name": "Overstep"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "n": 54,
+   "name": "Home Field Advantage",
+   "changing_lines": [
+    1
+   ],
+   "becomes": {
+    "n": 40,
+    "name": "Thaw"
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "n": 33,
+   "name": "Retreat",
+   "changing_lines": [
+    3
+   ],
+   "becomes": {
+    "n": 12,
+    "name": "Stalemate"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "n": 21,
+   "name": "Bite",
+   "changing_lines": [
+    1,
+    2
+   ],
+   "becomes": {
+    "n": 64,
+    "name": "Almost"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "n": 53,
+   "name": "Emergence",
+   "changing_lines": [
+    1,
+    2,
+    3,
+    5
+   ],
+   "becomes": {
+    "n": 41,
+    "name": "Spending"
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "n": 25,
+   "name": "Candour",
+   "changing_lines": [
+    5,
+    6
+   ],
+   "becomes": {
+    "n": 51,
+    "name": "Shock"
+   }
+  },
+  {
+   "agent": "daemon-player",
+   "method": "three coins",
+   "n": 36,
+   "name": "Nightfall",
+   "changing_lines": [
+    2
+   ],
+   "becomes": {
+    "n": 11,
+    "name": "Mingling"
+   }
+  },
+  {
+   "agent": "daemon-skeptic",
+   "method": "three coins",
+   "n": 45,
+   "name": "Gathering",
+   "changing_lines": [
+    1,
+    2,
+    4
+   ],
+   "becomes": {
+    "n": 60,
+    "name": "Measure"
+   }
+  }
+ ],
+ "research": {
+  "method": "daemon-player (research) and daemon-skeptic (code count), 2026-10-13",
+  "subagent_tokens": 157814
+ },
+ "positions": [
+  "bi-three-layers",
+  "bi-line-comes-back",
+  "bi-one-tap",
+  "bi-49-interim",
+  "bi-one-spirit-first"
+ ],
+ "questions": [
+  "bi-what-for",
+  "bi-chart"
+ ],
+ "dissent": true,
+ "dissent_note": "The Regent will not take a side on what the fight is for or on removing the trigram moves, since Wendell asked for them (wave-trigram-moves); sent as bi-what-for. The Player daemon and the Shaman differ on whether the helping skill is the whole fight or its last blow.",
+ "deferred": [],
+ "tests": [
+  {
+   "id": "B1",
+   "due": "2026-10-27",
+   "test": "five cold phone players, one fight each on the first build; fails under four of five finishing without a retry or under four of five saying what the spirit needed"
+  },
+  {
+   "id": "B2",
+   "due": "2026-10-27",
+   "test": "Wendell plays Ama Rell's Fixer and says whether it was fun and what it meant"
+  }
+ ]
+}

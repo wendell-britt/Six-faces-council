@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-13",
+  "pass": "battle-intake1",
+  "daemon": "player",
+  "face": "diplomat",
+  "cast": "36 -> 11",
+  "model": null,
+  "tokens": "97697",
+  "report": "2026-10-13-battle-intake1-player.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "Slay the Spire shows enemy intent above the enemy so players can plan around it [4]."
+      ],
+      "url": "https://sts2.untapped.gg/guides/how-to-read-enemy-intent",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "Undertale's ACT works this way: monsters hint in speech, and a peaceful ending follows from acting on the hint [5][6]."
+      ],
+      "url": "https://undertale.wiki/w/ACT",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [
+        "Undertale's ACT works this way: monsters hint in speech, and a peaceful ending follows from acting on the hint [5][6]."
+      ],
+      "url": "https://undertale.fandom.com/wiki/Encounter",
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}
