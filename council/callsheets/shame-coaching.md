@@ -25,7 +25,7 @@ second door costs anything. The rebuilt fence goes on the board as a new positio
 - Deferred: a shame training for other coaches, back 2027-01-15.
 
 ## Waiting on
-Nothing from Wendell. The rebuilt fence is a new board row, still to land.
+No answer is owed by Wendell. The rebuilt fence is a new board row, still to land.
 
 ## Files
 - `council/passes/6FACE_PASS_shame1_2026-10-13.md`, `council/ledger/2026-10-13-shame1.json`
