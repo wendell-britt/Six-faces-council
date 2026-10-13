@@ -11,8 +11,8 @@ Left open:
    session that reaches it runs `--tier net`, pins the chair, table and Painted Wooden Chair 02 query and index in
    `fixtures.json`, picks A2's multi-material asset, and records N5's time and memory.
 2. `bpt-licence-stop` and `bpt-no-restricted-flag` stood and are fixed in #290 (G2 and G2b pass). `bpt-root-curl`
-   stood: the cave-studio strand fixes root_curl's loose blob and face budget once #289 lands, then unmarks P3 and P5
-   in `tests/test_bpy.py` (`KNOWN`).
+   stood and is fixed in #289 (cave-studio strand, 2026-10-13): root_curl is one piece at 499 faces, `KNOWN` is
+   empty, P3 and P5 pass.
 3. Part 2's first job is done: the recipe and its token cost, bars-engine draft PR #291, ledger
    `2026-10-13-blender-recipe-token-cost.json`, results in `tools/blender-cloud/recipe_trial/RESULTS.md`. T1 passed, T3
    passed (8 of 10 both ways), T2 missed (recipe 0.69 of code, line 0.33). He let `bpt-recipe-result` stand (board read

@@ -7150,6 +7150,17 @@
    "auto": true,
    "pos": "Any two different channels are a sheng pair or a ke pair, so no pair of channels falls outside both. On your map the five channels make ten pairs, five sheng and five ke. A player who picks any two channels gets the question sb-compound-prevails already asks, which holds the other or which leads, in the player's own words, and the game runs that channel's free move first. A player who names the direction the cycle does not run is taken at their word. The only pair outside both is one channel picked twice, which is one channel. This stands unless you flip it.",
    "why": "Counted by script on the standard sheng and ke orders with your map, every pair appearing once. The cycle orders are not in this repo and the Guide's ke notes were not read, so a different order in your canon would change the table. Also sb-compound-prevails and bmw-player-names, where the game does not guess for the player. Source: council/passes/6FACE_PASS_free-flow-state_2026-10-12.md (six-faces-council)"
+  },
+  {
+   "id": "bpt-j1-frame-rate",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "Blender pipeline tests",
+   "auto": true,
+   "pos": "J1's textures stand, and its 30-frames-a-second line is judged on your phone once the chamber is in the cave, not in the cloud. The cloud's browser draws with the processor instead of a graphics chip, so the chamber without textures already misses the line there (27.7 a second on the 4x throttle); with textures it runs 19.7. The other J1 lines pass: the chamber is 465 KB of the 3 MB budget and the three textures look different. If you would rather hold J1 to the cloud number, flip this, and the textures drop to 256 px or to the walls alone.",
+   "why": "Measured at 390 by 844 in headless Chromium with software WebGL, three 0.170.0: untextured 27.7 throttled and 38.6 unthrottled; textured 19.7 and 27.4. A phone's graphics chip samples six 512 px textures at little cost. cave.js does not load the chamber until #289 lands, so cave-test.mjs is unchanged. Source: bars-engine PR #292."
   }
  ],
  "questions": [
