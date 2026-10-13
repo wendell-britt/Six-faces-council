@@ -92,6 +92,14 @@ The Yellow Brick Road is mythic reassurance, not infallibility:
 
 A wrong move can remain wrong while becoming information, repair, story, or another road. Divergence does not prove hidden desire. A revised destination does not retroactively fulfill the prior one. Some blockers may remain unresolved indefinitely while continuing to constrain a named route.
 
+## Roadblocks and intention
+
+A roadblock is first a scoped observation: something prevents a named action, route, capacity, or destination under declared conditions. Its classification, causal account, meaning, response, and outcome are separate records.
+
+> **A roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.**
+
+AI may propose an `IntentionAlignmentHypothesis` only against a declared intention and relevant evidence. It must not psychologize a technical defect, infer hidden desire, or treat refusal as confirmation. At the technical layer, metabolization converts failure into repair, verification, safer routing, reusable learning, or provenance; it does not require emotional processing. A blocker may instead be rested, accommodated, rerouted, left unresolved, abandoned, or composted.
+
 ## Evidence authority
 
 - Player report establishes reported meaning, experience, satisfaction, or intention; it does not establish external effect.

@@ -57,8 +57,8 @@ No new reserved decision. The work copies and operationalizes rulings Wendell al
 
 ## Definition of done
 
-- [ ] Complete ontology source corpus is in the repository.
-- [ ] Manifest, Quickstart, and Claude Code skill are present.
-- [ ] The six-face skill invokes the ontology for game design and building.
-- [ ] Automated tests pass.
-- [ ] Branch is pushed and a pull request is attached.
+- [x] Complete ontology source corpus is in the repository.
+- [x] Manifest, Quickstart, and Claude Code skill are present.
+- [x] The six-face skill invokes the ontology for game design and building.
+- [x] Automated tests pass.
+- [x] Branch is pushed and pull request #93 is attached.

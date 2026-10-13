@@ -135,3 +135,11 @@ The foundational claim that “you can never go the wrong way” was reconstruct
 The ontology now preserves authored destinations, falsifiable route hypotheses, divergence records, scoped blockers, and recoverability paths. Divergence does not prove hidden desire; learning does not make harm or error necessary; changing Point B does not retroactively reach the original Point B. Some blockers may remain unresolved indefinitely while continuing to constrain a specific route.
 
 The full ruling is recorded in `council-phase-a/yellow-brick-road/reconstruction-and-decision.md`. A separate packaging assessment in `claude-code-ontology-shipping-readiness.md` finds the corpus usable as manual Claude Code context now, approximately halfway to a dependable repo-local alpha, and recommends a three-pass manifest/skill, council-agent, and evaluation release path.
+
+## Roadblock and intention reconstruction and decision — 2026-10-12
+
+The source collision was reconstructed across its three operating layers: observable obstruction, the pre-commit metabolism ritual, and Yellow Brick Road meaning-making. The ontology now separates `RoadblockEvent`, `RoadblockClassification`, `RoadblockCausalAccount`, `IntentionAlignmentHypothesis`, `RoadblockResponse`, and `MetabolizationOutcome`.
+
+The binding rule is: **a roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.** Technical faults cannot be used to psychologize a contributor or player. At the technical layer, metabolization may mean repair, verification, safer routing, reusable learning, or provenance without emotional processing. Unresolved, rested, rerouted, abandoned, and composted blockers remain valid possibilities under the Yellow Brick Road decision.
+
+The full ruling is recorded in `council-phase-a/roadblocks/reconstruction-and-decision.md`. No BARS runtime, workflow, or data migration was authorized.

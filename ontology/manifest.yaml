@@ -65,6 +65,8 @@ binding_decisions:
     path: ontology/v0.1/source/council-phase-a/derived-movement/reconstruction-and-decision.md
   yellow_brick_road:
     path: ontology/v0.1/source/council-phase-a/yellow-brick-road/reconstruction-and-decision.md
+  roadblocks:
+    path: ontology/v0.1/source/council-phase-a/roadblocks/reconstruction-and-decision.md
 
 historical_material:
   root: ontology/v0.1/source/council-phase-a
