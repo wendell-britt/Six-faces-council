@@ -20301,6 +20301,63 @@
      "diplomat"
     ],
     "pass": "Shame 1"
+   },
+   "gb-two-checks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:00:50.684Z",
+    "record": "council/ledger/2026-10-13-pull-220113.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "guessing bar, pass 1"
+   },
+   "gb-ceiling-stays": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:00:58.285Z",
+    "record": "council/ledger/2026-10-13-pull-220113.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "guessing bar, pass 1"
+   },
+   "gb-trap-report": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:01:03.800Z",
+    "record": "council/ledger/2026-10-13-pull-220113.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "guessing bar, pass 1"
+   },
+   "gb-varied-practice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:01:08.687Z",
+    "record": "council/ledger/2026-10-13-pull-220113.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "guessing bar, pass 1"
+   },
+   "gb-step4-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:01:13.460Z",
+    "record": "council/ledger/2026-10-13-pull-220113.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "guessing bar, pass 1"
    }
   },
   "questions": {
@@ -22254,6 +22311,18 @@
      "architect"
     ],
     "pass": "Shame 1"
+   },
+   "gb-taught-target": {
+    "decision": "85",
+    "label": "About 85%",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:00:43.249Z",
+    "record": "council/ledger/2026-10-13-pull-220113.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "guessing bar, pass 1"
    }
   },
   "causes": {
@@ -23565,7 +23634,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-13T18:24:50.411Z",
+ "steps_recorded_through": "2026-10-13T21:43:31Z",
  "morning": {
   "date": "2026-10-13",
   "gathered_at": "2026-10-13T15:45:41Z",
