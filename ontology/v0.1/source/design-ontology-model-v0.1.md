@@ -332,6 +332,16 @@ A `BARExpression` is a form through which a BAR acts or becomes legible. One BAR
 
 A `BARProvenanceRecord` records origin and typed lineage. A `BARPortabilityPolicy` limits worlds, audiences, purposes, reuse, sharing, and fork permissions. Portable never means permissionless. Capture permits storage, dormancy, development, transfer, or release; it does not create implementation obligation.
 
+### 8.9 Composting, residue, and regeneration
+
+Composting is a governed lifecycle disposition that ends a named active obligation while preserving only the lineage, learning, or reusable residue that is appropriate and permitted. Release completes the disposition. A new artifact, lesson, transformation, fuel, later reuse, or recovered value is not required.
+
+A `CompostCandidate` identifies the proposed target. `CompostingDecision` records scope and authority. `CompostingDisposition` ends the obligation. `CompostRecord` preserves minimum legitimate decision metadata. Optional `CompostResidue` names material permitted to remain. A later `RegenerationEvent` records actual authorized reuse as a new event and lineage, not as delayed completion of composting.
+
+Composting differs from deletion, archival/reference, abandonment, supersession, and satisfaction of the original CompletionContract. It must behaviorally remove active backlog pressure, overdue status, progress penalties, required review, automatic resurfacing, and completion prompts. `ReactivationDecision` creates a new obligation without invalidating the earlier release.
+
+`CompostRecoverability` records none, decision-only, lineage-only, residue-available, source-restorable, or implementation-restorable. Privacy and deletion authority may require minimal tombstones or no retained source content. Recoverability does not preserve active obligation.
+
 ## 9. Encounter ending and scoped completion
 
 Ending, resolution, quest completion, arc conclusion, satisfaction, and transformation are distinct claims.
@@ -458,6 +468,11 @@ An AI operating with this ontology must not:
 51. collapse a BAR kernel into its current expression;
 52. treat BAR capture as implementation obligation;
 53. interpret BAR portability as unrestricted permission to disclose, copy, reuse, or fork.
+54. require new output, insight, transformation, fuel, or later reuse before recognizing composting;
+55. retain composted work as active backlog, progress debt, mandatory review, or completion pressure;
+56. call composting deletion, archival, supersession, or completion of an unmet original contract;
+57. preserve or reuse private CompostResidue without appropriate authority and purpose permission;
+58. silently reactivate a composted obligation or diagnose its release as avoidance.
 
 ## 14. Minimum viable ontology record
 

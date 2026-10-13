@@ -53,6 +53,7 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "it does not prove misaligned intention",
             "Intimate disclosure is not progression currency",
             "Every BAR has provenance; not every provenance-bearing object is a BAR",
+            "it does not owe the garden a harvest",
         ]
         for phrase in required:
             with self.subTest(phrase=phrase):
@@ -67,6 +68,7 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "a technical fault proves misaligned intention",
             "long answers prove depth",
             "every artifact is automatically a BAR",
+            "composting requires a new artifact",
         ]
         lowered = self.quickstart.lower()
         for phrase in forbidden:
