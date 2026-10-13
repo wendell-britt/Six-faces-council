@@ -20392,6 +20392,43 @@
      "regent"
     ],
     "pass": "guessing bar, pass 1"
+   },
+   "gb-taught-run1": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:15:03.873Z",
+    "record": "council/ledger/2026-10-13-pull-221512.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "guessing bar, taught run 1"
+   },
+   "gb-rekey-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:15:06.138Z",
+    "record": "council/ledger/2026-10-13-pull-221512.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "guessing bar, taught run 1"
+   },
+   "env-unreal-deferred": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:15:12.472Z",
+    "record": "council/ledger/2026-10-13-pull-221512.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect",
+     "challenger"
+    ],
+    "pass": "environment engine, pass 1"
    }
   },
   "questions": {
@@ -23668,7 +23705,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-13T21:43:31Z",
+ "steps_recorded_through": "2026-10-13T22:14:15Z",
  "morning": {
   "date": "2026-10-13",
   "gathered_at": "2026-10-13T15:45:41Z",
