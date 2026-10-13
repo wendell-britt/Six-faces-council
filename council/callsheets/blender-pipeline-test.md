@@ -16,9 +16,7 @@ R2 passed: the kit rebuilds byte for byte, so exact matching stands. One command
 `python3 tools/blender-cloud/tests/run.py --tier offline,bpy,net`; the summary goes to `$W/test-summary.md`.
 
 Left open:
-1. Blendkit tests (G4, G5, N1, N2, A2 to A4, N5) skip, because this environment's network refuses Blendkit. The first
-   session that reaches it runs `--tier net`, pins the chair, table and Painted Wooden Chair 02 query and index in
-   `fixtures.json`, picks A2's multi-material asset, and records N5's time and memory.
+1. Blendkit tests ran 2026-10-13 in the new default environment (bars-engine draft PR #293): N4 up on all four hosts, N1, N2, A1 to A4, G4, G5, N5, V1 pass. Fixtures are pinned in `fixtures.json` (chair `chair` 5, table `table` 0, Wooden Chair `wooden chair` 0, Painted Wooden Chair 02 `wooden chair` 5, A2's bust `bust` 2, A3's 20-tile UDIM brick building `scan old brick building red small` 0). N5: 42 s, 1.51 GB peak, so the kill lines become 84 s and 3 GB (his to confirm). Still open: the E1 look at A2's preview (the 0.18 m bust is tiny beside the 1.8 m figure; the scale is by eye, `--scale`).
 2. `bpt-licence-stop` and `bpt-no-restricted-flag` stood and are fixed in #290 (G2 and G2b pass). `bpt-root-curl`
    stood and is fixed in #289 (cave-studio strand, merged 2026-10-13): root_curl is one piece at 499 faces, `KNOWN` is
    empty, P3 and P5 pass.
