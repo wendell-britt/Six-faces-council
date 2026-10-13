@@ -21,7 +21,7 @@ Read spec.md for the test table; this sheet does not repeat it.
 the fewest tokens. Claude edits a recipe (`cave/scene.yaml`) and a fixed script builds it; T1 to T3 measure the cost
 against writing `bpy` code. Then five jobs, one thread each, in order: procedural textures, adding objects, picture to
 model, a character creator themed on the robe set, and clothing as skinned swappable garments (his "biggest test").
-Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 1 merged in #287; Part 2 is in bars-engine #288 (draft). Part 2 starts after #285 merges.
+Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 1 merged in #287; Part 2 is in bars-engine #288 (draft). Part 2 starts after #285 merges. He let all four stand (2026-10-13 00:24); his steer on `bpt-skinned-garments`: "Use as much as we can from the root game for this as we’ve already done many garment tests there", so J5 begins by listing root-game's garment work and reusing it (spec.md, J5).
 
 ## Waiting on
 The plan needs nothing from Wendell. #287 merged (Part 1). #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
