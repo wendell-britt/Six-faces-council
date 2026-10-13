@@ -7720,6 +7720,28 @@
    "auto": true,
    "pos": "A move gets stronger by use, and the gain is permanent. Each move has levels 1 to 5, rises a level every 8 uses, and hits about 12% harder per level (about 1.5 times at level 5). Strength bought at the dojo is a settlement talisman that goes dark in the forest. Spirits set on a talisman boost the moves of their element. The numbers are placeholders. This stands unless you flip it.",
    "why": "Your question in chat: \"How do the moves get stronger?\" design.md answers it: gate levels by practice (Decided, permanent), the dojo talisman (Decided), and the grid (Proposed)."
+  },
+  {
+   "id": "sf-ally-moves",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "spirit fight build 2",
+   "auto": true,
+   "pos": "An ally spirit fights with moves of its own element. It knows one move from level 1, learns a stronger move at level 3 that it can use once a fight, and learns a third at level 5. It gains a level each time it wins a fight while still standing. While it stands in front, the pushes hit it; once it is spent, you fight on your own power with Master Yun's moves. Move names and numbers are placeholders. This stands unless you flip it.",
+   "why": "Your answer to sf-who-fights (\"Your ally spirits unless you don't have any and then you have to fight on your own power\") and design.md's Decided ally rules: spirits level by fighting and sparring, never by working, and the player takes the hits the spirits cannot weather. Pokémon teaches moves by level the same way. Built in sprout #50."
+  },
+  {
+   "id": "sf-ally-pick",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "spirit fight build 2",
+   "auto": true,
+   "pos": "For the test, the page lets you pick any one of the five ally spirits, or none, before the fight, so you can feel the chart. Your Wood ally wins in 3 turns, a Water, Metal or Earth ally in 5, and your own power alone in 6. A Fire ally only feeds the earth and tires, and you finish over 7. In the game you hold only the allies you have befriended (the first one matches your channel). This stands unless you flip it.",
+   "why": "bi-chart A teaches the elements by reward, which only shows when the same fight is played with different elements. design.md: the first ally matches the player's channel. Checked by a scripted run of each path at phone width. Built in sprout #50."
   }
  ],
  "questions": [
