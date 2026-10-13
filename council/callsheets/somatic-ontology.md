@@ -1,4 +1,4 @@
-2026-10-12 (updated 19:30 Pacific)
+2026-10-13 (updated 05:14 UTC)
 # Somatic ontology of inner resistance (body-map flow)
 
 ## Next
@@ -11,8 +11,7 @@ Next, in a fresh thread after his phone play: read the saves against test T1 (se
 blocked-move pass's tests one and two.
 
 ## Waiting on
-His answer to `sb-sensation-order`. His phone play by 2026-10-18 gates building any of this and gates what to say
-when a sensation stays after a daemon is satisfied. Two dissents ride on the `ff-*` rows: the Architect would hold
+His phone play by 2026-10-18 gates building any of this and gates what to say when a sensation stays after a daemon is satisfied. Two dissents ride on the `ff-*` rows: the Architect would hold
 `ff-name-what-is-here` until the golds have a mechanic in this flow, and the Regent would hold `ff-no-daemon-on-aliveness` until
 the play. Neither blocks the rows, since nothing builds before the play.
 
@@ -23,6 +22,15 @@ Neutral=Earth. No fixed body-location to channel table. Flow: charge, location, 
 neutral, with multiple picks at both levels), then the move or the daemon holding the charge. Neutral-layer names are the channel
 names. Numbness and strength are late blockers; the cost of strength shows through play or the story's level cap. The Controller has
 no arms; the Fixer is its arms.
+
+## Board rulings (Wendell, 2026-10-13, ledger `council/ledger/2026-10-13-pull-051216.json`)
+- `sb-sensation-order`: early-pair. Tension and constriction come early, together.
+- `sb-one-at-a-time`: overruled. The pass wrote that one daemon is worked at a time with the rest waiting at the door; that wording is
+  superseded. Up to 3 daemons can be picked at once, and the play is turn based, like Final Fantasy combat. His words: "I think you can
+  handle up to 3 at a time, but the user experience will be more like final fantasy turn based combat".
+- `sb-no-pass-at-daemon`: stands, with a steer. A 3-2-1 can be skipped. A skipped 3-2-1 is picked up in the WAVE room, which is where
+  the journey begins: the player lets spirits in, or starts a cave journey from there. See wave-room.md and big-mind-cave.md.
+- The other `sb-*`, `ff-*` and unrelated rows he saved the same night all stand.
 
 ## Open check
 `council/daemons/daemons.yaml`: confirm the Controller's "does" lines do not give it the holding, which is the Fixer's.
