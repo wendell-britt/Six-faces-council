@@ -20462,6 +20462,30 @@
      "challenger"
     ],
     "pass": "environment engine, pass 1"
+   },
+   "gb-taught-run2": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:26:14.774Z",
+    "record": "council/ledger/2026-10-13-pull-222617.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "guessing bar, taught run 2"
+   },
+   "gb-step-back-play": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:26:17.041Z",
+    "record": "council/ledger/2026-10-13-pull-222617.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "guessing bar, taught run 2"
    }
   },
   "questions": {
