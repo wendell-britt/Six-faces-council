@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T23:59:00Z",
+ "updated": "2026-10-13",
  "positions": [
   {
    "id": "build",
@@ -19092,6 +19092,55 @@
      "challenger"
     ],
     "pass": "texts to campaigns, step 3"
+   },
+   "bpt-recipe": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:23:35.652Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "Blender pipeline test plan"
+   },
+   "bpt-robe-theme": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:23:48.073Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat"
+    ],
+    "pass": "Blender pipeline test plan"
+   },
+   "bpt-skinned-garments": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:24:13.933Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "steer": "Use as much as we can from the root game for this as we’ve already done many garment tests there",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "Blender pipeline test plan"
+   },
+   "bpt-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:24:21.368Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "Blender pipeline test plan"
    }
   },
   "questions": {
