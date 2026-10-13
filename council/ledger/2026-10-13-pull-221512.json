@@ -1,0 +1,37 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T22:15:12.472Z",
+ "answers": {
+  "gb-taught-run1": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:15:03.873Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gb-rekey-first": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:15:06.138Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "env-unreal-deferred": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:15:12.472Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j4-look-01",
+   "at": "2026-10-13T22:14:15Z",
+   "what": "ticked",
+   "do": "Look at two pictures of the cave's new character creator (J4). j4-sheet.png shows nine faceless figures mid-step. Rows run slight, average and broad builds. Columns are the robe set's three palettes: dusk (indigo, slate, old gold), jade (green, pine, pale gold) and hemp (undyed oat, ash, walnut). Each wears the under-layer painted on: a crossed collar worn left over right, a tunic to mid-thigh, a sash, cuffs, ankle ties and shoes. j4-walk.png shows the average dusk figure from the side at four points of its walk, which is the cave's own walk cycle. The long robe, the sash as cloth and the topknot come in J5 as separate garments. Under this step, note 'yes' or what is wrong: the builds, the palettes, the collar or the walk. On a yes, bars-engine #312 is marked ready and merges itself, and J5 (clothing) starts."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
