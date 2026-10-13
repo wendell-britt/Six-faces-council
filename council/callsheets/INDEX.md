@@ -24,7 +24,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 - [flirtcraft](flirtcraft.md), 2026-10-09: finish own database and sign-in before promoting; loop fixes PR.
 - [skilled-helper](skilled-helper.md), 2026-10-13: Part III rekeyed (sprout #48), taught player 24 of 27 against his 85%; next his phone play of the Lamp-keeper's track. His phone play of the Pruner's track fights (#41 on #38).
 - [session-cost](session-cost.md), 2026-10-08: measure slim board read; Wendell ticks plugins-trim.
-- [wave-battle](wave-battle.md), 2026-10-13: Ama Rell's Fixer built in the new shape (sprout #50, draft; page https://claude.ai/artifact/71kzY5py5F4oxd54iQd3rU); waits on Wendell's phone play (step on Your steps), then B1 with five cold players.
+- [wave-battle](wave-battle.md), 2026-10-13: Ama Rell's Fixer build 2 (ally spirits fight, own power when none) on sprout #50, page https://claude.ai/artifact/71kzY5py5F4oxd54iQd3rU; waits on Wendell's phone play, then B1.
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.
 - [board-plumbing](board-plumbing.md), 2026-10-07: check pickup prompts; record answers saved since 10-03.
 - [friendcraft](friendcraft.md), 2026-10-06: redesign pass, Part 0 interview, outline, each its own thread.
