@@ -1,0 +1,27 @@
+{
+ "id": "2026-10-13-blendkit-tests-run",
+ "date": "2026-10-13",
+ "kind": "session-record",
+ "project": "bars-engine",
+ "repos": [
+  "johnair01/bars-engine",
+  "wendell-britt/six-faces-council"
+ ],
+ "session": "https://claude.ai/code/session_01XzpJv8DBhZLdrxYsWDcfGQ",
+ "cost": "Not recorded here: a session cannot read its own cost mid-turn.",
+ "work": [
+  {
+   "what": "Checked api.blenderkit.com, assets.blenderkit.com, cdn.jsdelivr.net and registry.npmjs.org from the new default environment (all reachable), then ran the net tier and pinned fixtures",
+   "where": "bars-engine tools/blender-cloud/tests/ (draft PR #293)",
+   "tests": "offline, bpy and net tiers all pass except known gaps P3, P4, P5. N5: 42 s, 1.51 GB peak. A3: the 150 MB brick building .blend stops with the 20-tile UDIM message."
+  }
+ ],
+ "findings": [
+  "Most Blendkit glTFs are baked to one material; of ~600 CC0 results scanned, one small asset (Nude Female Bust Sculpture) kept 4 materials, so A2's fixture is that bust",
+  "blenderkit_fetch.py falls back to the .blend when an asset has no glTF; a 150 MB download once truncated mid-read (IncompleteRead) and passed on retry",
+  "scene.py reported the decimate ratio's estimate (5000) as tris_after; it now reports the exported count (4996); G5 matched once the test subtracted the 72-triangle figure",
+  "N2 and N5 had test bugs (argv clobbered, no /usr/bin/time), fixed"
+ ],
+ "rulings": [],
+ "board_rows": "none"
+}
