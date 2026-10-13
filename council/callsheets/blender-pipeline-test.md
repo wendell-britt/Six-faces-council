@@ -2,21 +2,23 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J1 is built: bars-engine draft PR #292, ledger `2026-10-13-blender-j1-textures.json`. Wet stone (walls), dry stone (floor,
-gate stones) and crystal vein (spires, crystal bed), baked to six 512 px JPEGs; chamber.glb 465 KB. The frame-rate line
-can't be judged in the cloud (software WebGL misses it even untextured), so `bpt-j1-frame-rate` puts it on his phone
-play after #289 wires the chamber in. Next job: J2, adding objects, in a new thread.
+J1 merged (bars-engine #292, 2026-10-13 02:55), ledger `2026-10-13-blender-j1-textures.json`. Wet stone (walls), dry
+stone (floor, gate stones) and crystal vein (spires, crystal bed), baked to six 512 px JPEGs; chamber.glb 465 KB.
+Wendell, 02:52: "ok this is perfection. Let's incorporate what we've made so far into the cave games". That is the next
+thread, after cave studio #289 lands (it owns cave.js, cave-test.mjs and manifest.json). The default it starts from:
+bake the three textures as seamless 512 px tiles (4D noise on a torus, from chamber.py's `texture()`), ship them beside
+cave.js, and apply wet stone to the tunnel walls, dry stone to the floor and crystal vein to the rock beds and spires in
+cave.js, leaving the crystals as they are; then cave-test.mjs at 390 by 844, the 3 MB budget, and a republished page
+for his phone. J2 waits behind it.
 
 Part 1 is built: bars-engine `tools/blender-cloud/tests/`, PR #290 (merged 2026-10-13), ledger `2026-10-13-blender-pipeline-tests-built.json`.
 R2 passed: the kit rebuilds byte for byte, so exact matching stands. One command runs everything:
 `python3 tools/blender-cloud/tests/run.py --tier offline,bpy,net`; the summary goes to `$W/test-summary.md`.
 
 Left open:
-1. Blendkit tests (G4, G5, N1, N2, A2 to A4, N5) skip, because this environment's network refuses Blendkit. The first
-   session that reaches it runs `--tier net`, pins the chair, table and Painted Wooden Chair 02 query and index in
-   `fixtures.json`, picks A2's multi-material asset, and records N5's time and memory.
+1. Blendkit tests ran 2026-10-13 in the new default environment (bars-engine draft PR #293): N4 up on all four hosts, N1, N2, A1 to A4, G4, G5, N5, V1 pass. Fixtures are pinned in `fixtures.json` (chair `chair` 5, table `table` 0, Wooden Chair `wooden chair` 0, Painted Wooden Chair 02 `wooden chair` 5, A2's bust `bust` 2, A3's 20-tile UDIM brick building `scan old brick building red small` 0). N5: 42 s, 1.51 GB peak, so the kill lines become 84 s and 3 GB (his to confirm). Still open: the E1 look at A2's preview (the 0.18 m bust is tiny beside the 1.8 m figure; the scale is by eye, `--scale`).
 2. `bpt-licence-stop` and `bpt-no-restricted-flag` stood and are fixed in #290 (G2 and G2b pass). `bpt-root-curl`
-   stood and is fixed in #289 (cave-studio strand, 2026-10-13): root_curl is one piece at 499 faces, `KNOWN` is
+   stood and is fixed in #289 (cave-studio strand, merged 2026-10-13): root_curl is one piece at 499 faces, `KNOWN` is
    empty, P3 and P5 pass.
 3. Part 2's first job is done: the recipe and its token cost, bars-engine draft PR #291, ledger
    `2026-10-13-blender-recipe-token-cost.json`, results in `tools/blender-cloud/recipe_trial/RESULTS.md`. T1 passed, T3
@@ -32,7 +34,7 @@ model, a character creator themed on the robe set, and clothing as skinned swapp
 Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 1 merged in #287; Part 2 is in bars-engine #288 (draft). Part 2 starts after #285 merges. He let all four stand (2026-10-13 00:24); his steer on `bpt-skinned-garments`: "Use as much as we can from the root game for this as we’ve already done many garment tests there", so J5 begins by listing root-game's garment work and reusing it (spec.md, J5).
 
 ## Waiting on
-Wendell has one step, `blender-cloud-test-04`. #291 merged 2026-10-13 02:10. The Blendkit tests need a cloud environment that allows api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net. The 12 October session reached Blendkit because it ran in his Default environment; project threads run on a built-in one with no settings. Step `blender-cloud-test-04` asks him to pick Default in Project settings. #290 (Part 1 tests) is a draft. #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
+Nothing from Wendell; he did step `blender-cloud-test-04` at 02:26. #291 merged 2026-10-13 02:10. The Blendkit tests need a cloud environment that allows api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net. The 12 October session reached Blendkit because it ran in his Default environment; project threads run on a built-in one with no settings. Step `blender-cloud-test-04` asks him to pick Default in Project settings. #290 (Part 1 tests) is a draft. #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
 #285 merged; the picture-path tests run on main. His two tests are steps: N3 is `cave-studio-02`, and E3 goes on
 Your steps when the build thread first republishes a page.
 

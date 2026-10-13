@@ -2,7 +2,7 @@
 # Cave studio (Blender in the cloud for the cave, battle fr-cave-studio)
 
 ## Next
-2026-10-13: #285 merged. #289 (same branch, ready, waiting on his merge) makes the crystal a building block (`crystalBlock`
+2026-10-13: #285 merged. #289 (merged 02:54) makes the crystal a building block (`crystalBlock`
 in `cave.js`: size, height, width, six tints, seeded per place; comparison page version 3 has sliders) and fixes
 root_curl (`bpt-root-curl`: one piece, 499 faces). His words: "The crystals are perfect". Still open: the crystal count
 (P4, 7 where his picture has about 10) and his next picture.
