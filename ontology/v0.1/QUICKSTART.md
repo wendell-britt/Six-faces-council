@@ -116,6 +116,16 @@ Charge is optional. A `ChargedBAR` is one specialization or role, alongside kern
 
 Keep the kernel distinct from its `BARExpression`. A BAR may bloom as a quest, rule, lore, feature specification, plan, norm, branch, or artifact without becoming reducible to that expression. Capture creates lineage, not implementation debt. Portability carries a permission policy; it never means unrestricted reuse.
 
+## Composting
+
+Composting is a governed lifecycle disposition that ends a named active obligation. It does not require a new artifact, lesson, transformation, fuel, later reuse, or recovered value.
+
+> **Compost may nourish future growth, but it does not owe the garden a harvest.**
+
+Keep `CompostingDisposition`, optional `CompostResidue`, and any later `RegenerationEvent` separate. After composting, active backlog pressure, overdue status, progress penalties, required review, and automatic completion prompts stop. Reactivation requires a new explicit decision.
+
+Composting is not deletion, archival, supersession, or completion of the original quest. Preserve only the minimum permitted lineage; privacy or deletion rights may require a tombstone or no recoverable content. Later reuse needs its own authority and provenance.
+
 ## Evidence authority
 
 - Player report establishes reported meaning, experience, satisfaction, or intention; it does not establish external effect.
