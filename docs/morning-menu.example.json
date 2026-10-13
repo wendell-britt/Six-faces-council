@@ -1,0 +1,17 @@
+{
+ "version": 1,
+ "sessionDate": "2026-10-09",
+ "sealedAt": "2026-10-09T15:40:00Z",
+ "goals": [
+  {"id": "g-year-allyship", "title": "Launch Mastering the Game of Allyship", "domain": "allyship", "cadence": "year", "parentId": null},
+  {"id": "g-q-podcast", "title": "Publish twelve podcast episodes", "domain": "career", "cadence": "quarter", "parentId": "g-year-allyship"},
+  {"id": "g-year-health", "title": "Move my body every day", "domain": "health", "cadence": "year", "parentId": null}
+ ],
+ "items": [
+  {"key": "t1", "text": "Post the episode 2 clips with Tom", "source": "task", "status": "bridged",
+   "goal": {"id": "g-q-podcast", "title": "Publish twelve podcast episodes", "domain": "career", "cadence": "quarter",
+            "chain": ["Launch Mastering the Game of Allyship"], "trace": "Launch Mastering the Game of Allyship → Publish twelve podcast episodes"}},
+  {"key": "k1", "text": "Walk before the first call", "source": "kept_line", "status": "unaligned", "goal": null},
+  {"key": "k2", "text": "Call my sister", "source": "kept_line", "status": "unaligned", "goal": null}
+ ]
+}

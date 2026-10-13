@@ -79,6 +79,24 @@ class PullTest(unittest.TestCase):
         self.pull()
         self.assertEqual(self.data["resolved"]["positions"]["p-old"]["decision"], "stands")
 
+    def test_morning_pick_recorded_once_as_work(self):
+        # mm-picks-become-threads: a pick is one row marked as his, and the next read starts one thread for it
+        self.save("picks", "menu-l1", {"text": "Post the clips", "category": "menu", "date": "2026-10-09",
+                                       "bridge": {"kind": "named", "goalTitle": "Publish podcasts"},
+                                       "savedAt": "2026-10-09T15:00:00Z"})
+        self.save("picks", "menu-l2", {"text": "Dropped", "removed": True, "savedAt": "2026-10-09T15:01:00Z"})
+        led = self.pull()
+        self.assertEqual([p["id"] for p in self.data["picks"]], ["menu-l1"])
+        self.assertTrue(any(w.startswith("picks/menu-l1: start a thread") and "Publish podcasts" in w
+                            for w in led["needs_work"]))
+        self.assertIsNone(self.pull(), "a second run must find nothing")
+
+    def test_pasted_menu_flagged_until_gathered(self):
+        self.save("morning", "menu", {"menu": "{}", "savedAt": "2026-10-09T16:00:00Z"})
+        self.assertIsNotNone(pull.pasted_menu(self.data, self.store))
+        self.data["morning"] = {"gathered_at": "2026-10-09T16:05:00Z"}
+        self.assertIsNone(pull.pasted_menu(self.data, self.store))
+
     def test_question_labels(self):
         self.save("questions", "q-one", {"choice": "a", "savedAt": "2026-10-07T10:00:00Z"})
         self.save("questions", "q-many", {"choice": "x", "choices": ["x", "y"], "savedAt": "2026-10-07T10:01:00Z"})
