@@ -103,8 +103,14 @@ The current BARS derivation was reconstructed from source answers through compil
 
 The Yellow Brick Road is retained as mythic reassurance and a recoverability covenant: **no path has to be wasted**. It is not an infallibility claim. Divergence does not prove hidden desire, harm remains harm, and revised destinations do not retroactively fulfill earlier ones. Some blockers may remain unresolved indefinitely while continuing to constrain a named route.
 
+## Roadblock reconstruction and ontology decision
+
+- `roadblocks/reconstruction-and-decision.md`
+
+The ontology now distinguishes a RoadblockEvent, provisional classification, causal account, intention-alignment hypothesis, response, and outcome. “Misaligned intention” remains available as a correctable meaning or causal hypothesis only when supported by a declared intention and relevant evidence. It is never inferred from a technical fault alone. Technical metabolization can yield repair, verification, safer routing, learning, or provenance without requiring emotional processing.
+
 ## Readiness
 
-Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, and Yellow-Brick-Road questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
+Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, and roadblock-intention questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
 
 The next activity is evidence-led resolution of the remaining questions in `sage-canon-reconciliation.md`. Questions answerable from source reconstruction, ontology invariants, and bounded deliberation should be resolved without returning unnecessary choices to Wendell. Only irreducible matters of personal meaning, values, or owner authority should be escalated. After corrections are recorded, Wendell may decide whether to authorize a separate Phase B governance council.
