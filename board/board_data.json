@@ -19174,6 +19174,42 @@
      "challenger"
     ],
     "pass": "Blender pipeline test plan"
+   },
+   "bpt-licence-stop": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T01:06:51.978Z",
+    "record": "council/ledger/2026-10-13-pull-010713.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "Blender pipeline tests"
+   },
+   "bpt-no-restricted-flag": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T01:07:03.937Z",
+    "record": "council/ledger/2026-10-13-pull-010713.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "Blender pipeline tests"
+   },
+   "bpt-root-curl": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T01:07:13.255Z",
+    "record": "council/ledger/2026-10-13-pull-010713.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "Blender pipeline tests"
    }
   },
   "questions": {

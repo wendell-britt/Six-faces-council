@@ -1,0 +1,30 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T01:07:13.255Z",
+ "answers": {
+  "bpt-licence-stop": {
+   "kind": "position",
+   "savedAt": "2026-10-13T01:06:51.978Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bpt-no-restricted-flag": {
+   "kind": "position",
+   "savedAt": "2026-10-13T01:07:03.937Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bpt-root-curl": {
+   "kind": "position",
+   "savedAt": "2026-10-13T01:07:13.255Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
