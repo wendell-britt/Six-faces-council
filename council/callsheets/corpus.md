@@ -2,14 +2,14 @@
 # Corpus: Wendell's thoughts, from podcast to product
 
 ## Next
-- Audit and proposal done: `council/research/2026-10-13-idea-capture-audit.md`; six `cp-*` positions on the board.
-- Build, in a fresh thread, after he flips or lets the positions stand: `corpus/` in `wendell-britt/game-masters-guide`
-  (README with the rules, `products.yaml`, `thoughts/`, `episodes/`), a `thought` template, and step 7 of
-  `council/moves/podcast-episode.md`.
-- First thought to move: the 2026-10-13 frame for the Dan Allison episode, now in the notes of the `dan-allison`
-  contact on the Outreach tab.
-- Backfill order: the 29 steers, the dated quotes in this repo, the 13 BARs, then episodes 1 and 2 once he attaches
-  the transcripts (Claude project files are not reachable from a session).
+- Built 2026-10-13 in wendell-britt/game-masters-guide `corpus/`: README with the rules, `BARS.md` (the corpus mapped
+  onto bars-engine `CustomBar` fields and its five maturity phases), `products.yaml`, `OBSIDIAN.md`, `episodes/`, and
+  `bars/` with the 29 recorded steers as BARs and the Dan Allison frame as a seed (a paraphrase, not his words).
+  Step 7, Mine the recording, is in `council/moves/podcast-episode.md`.
+- Recommended next: backfill the dated quotes in this repo (about 35 in 29 files, `grep -rn "Wendell, 20"`), then the
+  13 BARs in mtgoa-manuscript `BARs/` (add that repo to the session first), then fill the nine `mtgoa-2.ch*` slot
+  titles from `manuscript/ch1-9.md`.
+- Later: an import from `corpus/bars/` into bars-engine `CustomBar` rows, once bars-engine has a place for his deck.
 
 ## Rulings (board read 2026-10-13 18:24 UTC)
 - `cp-home` overruled. Steer: "Let's also explore what it would take to get this into Obsidian". The `corpus/` folder
