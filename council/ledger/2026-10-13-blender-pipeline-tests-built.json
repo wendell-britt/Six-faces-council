@@ -1,0 +1,29 @@
+{
+ "id": "2026-10-13-blender-pipeline-tests-built",
+ "date": "2026-10-13",
+ "kind": "session-record",
+ "project": "bars-engine",
+ "repos": ["johnair01/bars-engine", "wendell-britt/six-faces-council"],
+ "session": "https://claude.ai/code/session_01Fx9DjQLQrwKR1mFCwsmkZg",
+ "cost": "Not recorded here: a session cannot read its own cost mid-turn.",
+ "work": [
+  {
+   "what": "Part 1 of the Blender pipeline test plan built: run.py with offline, bpy and net tiers, a contact sheet, LOOKED.md, walk_keys.json, fixtures.json, and the offline tier as one step in the GitHub check job",
+   "where": "bars-engine tools/blender-cloud/tests/ (draft PR #290)",
+   "tests": "R2 (falsify first) ran twice: cave-kit.glb and spots.json rebuild byte for byte. First full run on main: 18 pass; known gaps G2, G2b, P3, P4, P5; N4 fails because this environment refuses api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net; the eight Blendkit tests skip. Offline plus bpy take 41 s; P6 runs the cave's 126 checks."
+  }
+ ],
+ "rulings": [
+  {
+   "words": "ok let's open a new thread and start working on the plan",
+   "where": "project thread, 2026-10-13 00:37",
+   "effect": "Part 1 built in this thread"
+  }
+ ],
+ "findings": [
+  "root_curl in the committed cave kit has a 10-vertex blob separate from its 395-vertex body, and 682 faces against its 500 budget (P3, P5); from_picture.py belongs to the cave studio strand, so the tests excuse root_curl only",
+  "spec.md's W1 figure count was wrong: the figure has 72 triangles; 1,318 was the published scene with the chair",
+  "No record kept the query and index the chair and table fixtures were found by; fixtures.json leaves them null until a session can reach Blendkit"
+ ],
+ "board_rows": "positions bpt-licence-stop, bpt-no-restricted-flag, bpt-root-curl (board version 332)"
+}
