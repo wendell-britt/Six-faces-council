@@ -1,15 +1,12 @@
-2026-10-13 (updated 02:45)
+2026-10-13 (updated 03:15)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J1 merged (bars-engine #292, 2026-10-13 02:55), ledger `2026-10-13-blender-j1-textures.json`. Wet stone (walls), dry
-stone (floor, gate stones) and crystal vein (spires, crystal bed), baked to six 512 px JPEGs; chamber.glb 465 KB.
-Wendell, 02:52: "ok this is perfection. Let's incorporate what we've made so far into the cave games". That is the next
-thread, after cave studio #289 lands (it owns cave.js, cave-test.mjs and manifest.json). The default it starts from:
-bake the three textures as seamless 512 px tiles (4D noise on a torus, from chamber.py's `texture()`), ship them beside
-cave.js, and apply wet stone to the tunnel walls, dry stone to the floor and crystal vein to the rock beds and spires in
-cave.js, leaving the crystals as they are; then cave-test.mjs at 390 by 844, the 3 MB budget, and a republished page
-for his phone. J2 waits behind it.
+The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Wet stone on the
+tunnel walls, dry stone on the floor, crystal vein on the spires and crystal beds, tinted by the charge colour; tiles from
+`cave/bake_tiles.py` (shared nodes in `cave/textures.py`). 128 tests pass, 575 KB of 3 MB. Phone page:
+https://claude.ai/artifact/23neJJJgywAygUqiJffGvc (version 5). Next: his play on the phone; #294 to ready once he has seen
+it. J2 (adding objects) starts after. The Big Mind cave takes the stone when #278 and #282 land on top of #294.
 
 Part 1 is built: bars-engine `tools/blender-cloud/tests/`, PR #290 (merged 2026-10-13), ledger `2026-10-13-blender-pipeline-tests-built.json`.
 R2 passed: the kit rebuilds byte for byte, so exact matching stands. One command runs everything:

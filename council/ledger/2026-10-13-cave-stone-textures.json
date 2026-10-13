@@ -1,0 +1,27 @@
+{
+ "id": "2026-10-13-cave-stone-textures",
+ "date": "2026-10-13",
+ "kind": "session-record",
+ "project": "bars-engine",
+ "repos": [
+  "johnair01/bars-engine",
+  "wendell-britt/six-faces-council"
+ ],
+ "session": "https://claude.ai/code/session_01XaXCBt7SaAKr3rWVfACd6o",
+ "work": [
+  {
+   "what": "The J1 stone in the Cave of Lessons: wet stone on the tunnel walls, dry stone on the floor, crystal vein on the stone spires and the crystals' rock beds, tinted by the charge colour; the crystals unchanged",
+   "where": "bars-engine content/ontology-game/cave/ bake_tiles.py, textures.py (shared with chamber.py), textures/*.jpg, cave.js stoneOf (draft PR #294)",
+   "tests": "cave-test.mjs 128 pass, 0 fail at 390 by 844; page, kit, places, figure and tiles 575 KB of the 3 MB budget; chamber.py's six bakes byte for byte unchanged after the refactor; tiles checked 2x2 for seams",
+   "page": "https://claude.ai/artifact/23neJJJgywAygUqiJffGvc (version 5)"
+  }
+ ],
+ "rulings": [
+  {
+   "words": "ok this is perfection. Let's incorporate what we've made so far into the cave games",
+   "where": "J1 cave textures thread, 2026-10-13 02:52 UTC",
+   "effect": "textures wired into cave.js on main (#289 had merged)"
+  }
+ ],
+ "positions": "Tile size (3.2 chamber units) and how far each tint is lifted are choices in cave.js (TILE_UNITS, STONE). The Big Mind cave (#278, #282) is not on main; it takes the stone when it lands on top of #294. No board rows."
+}
