@@ -2,14 +2,15 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J3 (picture to asset), round 2 built on bars-engine #303 (draft, commit 7afdc69), waiting on his look: board step
-`j3-look-02` (Your steps list `blender-cloud-test`, step 6), sheet
+J3 (picture to asset) is done: Wendell's yes on round 2 came in the thread, 2026-10-13 21:43 ("Oh that’s
+PERFEXF"), and bars-engine #303 (commit 7afdc69) is marked ready to merge itself. Board step
+`j3-look-02` is ticked done (Your steps list `blender-cloud-test`, step 6), sheet
 `/mnt/project-files/3d-build/j3-round2-2026-10-13/j3-round2-sheet.png`. Round 1 he ticked (`j3-look-01`), then gave
 notes in the thread (2026-10-13 21:21): textures from the pictures, mushrooms and root "a little blobby", root "Not
 readying as tendrils falling in a shape". Round 2: each piece carries its picture as a texture
 (`picture(..., texture=True)`); one traced stem per mushroom under a smooth rimmed cap; the root's body is a braid of
 four strands with tapering tendrils. Outline: mushrooms 0.822 (was 0.894), crystals 0.855, root 0.910 (was 0.819);
-tests offline,bpy pass; chamber 1,482 KB of 3 MB. On his yes: mark #303 ready. Then J4 (character creator, robe set).
+tests offline,bpy pass; chamber 1,482 KB of 3 MB. Next: J4 (character creator, robe set).
 Crystals still have five shards to the picture's ten (P4 gap). The chamber objects reach the game when `chamber.py`
 is wired into `cave.js`.
 
