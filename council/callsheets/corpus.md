@@ -8,8 +8,12 @@
   Step 7, Mine the recording, is in `council/moves/podcast-episode.md`.
 - Done 2026-10-13: the dated quotes in this repo are backfilled (32 BARs in game-masters-guide `corpus/bars/`, tag
   `backfill`, 32 of about 35 hits; the rest were partial repeats or a thread title).
-- Recommended next: the 13 BARs in mtgoa-manuscript `BARs/` (add that repo to the session first), then fill the nine
-  `mtgoa-2.ch*` slot titles from `manuscript/ch1-9.md`.
+- Done 2026-10-13 (game-masters-guide #3): the 15 entries in mtgoa-manuscript `BARs/BARs.md` (13 numbered, two dated
+  2026-04-15), 7 as BARs and 8 as seeds where the tracker names a face or no author; the Dan Allison seed now copies the
+  contact's three dated paragraphs word for word; every slot in `products.yaml` has a title (2.0 from
+  `manuscript/ch1-9.md`, the Guide from "The Book's Plan" in the Art of War adaptation), both marked draft.
+- Recommended next: episodes 1 and 2 through step 7 once Wendell attaches their transcripts in a thread. Nothing else in
+  the backfill is left.
 - Later: an import from `corpus/bars/` into bars-engine `CustomBar` rows, once bars-engine has a place for his deck.
 
 ## Rulings (board read 2026-10-13 18:24 UTC)
@@ -23,7 +27,7 @@
   `lv-old-walk`, `lv-first-slice`, `lv-centre-altitude` stand. Steps `j3-look-01` and `coaching-pipeline-03` ticked.
 
 ## Waiting on
-Wendell: nothing blocks the build. Episode transcripts are needed for the backfill.
+Wendell: the transcripts of episodes 1 and 2, attached in a thread. Nothing else blocks.
 
 ## Files
 - `council/research/2026-10-13-idea-capture-audit.md`, `council/moves/podcast-episode.md`, `council/moves/podcast-outreach.md`
