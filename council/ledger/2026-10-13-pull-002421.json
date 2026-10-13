@@ -1,0 +1,37 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T00:24:21.368Z",
+ "answers": {
+  "bpt-recipe": {
+   "kind": "position",
+   "savedAt": "2026-10-13T00:23:35.652Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bpt-robe-theme": {
+   "kind": "position",
+   "savedAt": "2026-10-13T00:23:48.073Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bpt-skinned-garments": {
+   "kind": "position",
+   "savedAt": "2026-10-13T00:24:13.933Z",
+   "status": "stands",
+   "steer": "Use as much as we can from the root game for this as we’ve already done many garment tests there "
+  },
+  "bpt-order": {
+   "kind": "position",
+   "savedAt": "2026-10-13T00:24:21.368Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "needs_work": [
+  "positions/bpt-skinned-garments: Stands (steer: \"Use as much as we can from the root game for this as we’ve already done many garment tests there\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

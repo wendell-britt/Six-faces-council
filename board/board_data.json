@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12",
+ "updated": "2026-10-13",
  "positions": [
   {
    "id": "build",
@@ -6527,8 +6527,8 @@
    ],
    "pass": "big mind cave 3",
    "auto": true,
-   "pos": "A charge that stays at the room's fork walks behind you through the cave as a spirit, in its element's colour, with the name you gave it. A charge you breathe out does not follow. At most three walk in view; the rest show as a number by the Self button.",
-   "why": "Your words: \"The charge spirits can come with them throughout the cave until they are dismissed\". The room already splits stays and goes (wave-room-stay-move, wave-room-release). Source: sprout campaigns/big-mind/6FACE_PASS3_big-mind-cave_2026-10-12.md"
+   "pos": "Every W.A.V.E. done sitting down, in the Big Mind cave and the Cave of Lessons, leaves a spirit that walks behind you in its element's colour, with the name you gave it, until you dismiss it. At most three walk in view; the rest show as a count on the Spirits button.",
+   "why": "Your steer of 12 October, 20:43, which widened this row: \"When someone does WAVE sitting down in the big mind cave or the other cave environments it should spawn a spirit that walks with the character until dismissed\". It replaced the earlier draft, where only a charge that stayed at the fork followed. Built in bars-engine #282."
   },
   {
    "id": "bms-dismiss",
@@ -6693,6 +6693,245 @@
    "auto": true,
    "pos": "Tavi's last beat ends with him no longer coming to the Hall, and the game never shows his next watch. The founder's walk gets no new line. This stands unless you flip it.",
    "why": "The book's end state is the person carrying on without the helper (c14-s15), and the Decided ending already stops before we see whether the founder follows. The Player daemon: a scene proving his success would make the player the reason he is well. Source: part-three/story.md, L9 and The ending, unchanged"
+  },
+  {
+   "id": "bms-away-lighter",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "Away at the fork no longer lets the charge go on the spot. The out-breath softens it, and it walks with you lighter until you thank it and breathe it out. In the Cave of Lessons the light left on the threshold stays as it was.",
+   "why": "Your steer of 12 October, 20:43 says every sit-down W.A.V.E. spawns a spirit, and bms-dismiss says nothing dismisses a spirit for you. Built in bars-engine #282; bigmind/DESIGN.md, \"Every sit-down spawns a spirit\"."
+  },
+  {
+   "id": "bmw-charge-seen",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "The charge you are working shows in the scene through the whole W.A.V.E. at the charge poll, low and to one side so it shows under the panel. It is grey until you pick its element, grows and brightens by the Allow sliders, and dulls at Validate. Every step, and every sitting step, has a ring of light that breathes four seconds in and six out.",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "bmw-exhale-spirit",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "At the Exhale, \"No, exhale and release\" lifts the charge and fades it on the out-breath. \"Yes, let it stay\" makes it a spirit that walks with you, named with your feeling word. A W.A.V.E. left at a block keeps its charge walking with you too, since nothing dismisses a spirit for you (bms-dismiss).",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "bmw-appreciate-words",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "Appreciate, at the poll and in a sitting, has the optional line from oag-appreciate-input and Not now. What you write there stays on the page and is not saved.",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "bm-be-turns",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "big mind cave 3",
+   "auto": true,
+   "pos": "Standing in a voice's place is three turns in its first person: who it is (\"I am the Protector, and I...\"), what it sees from its post, and what it wants the self to know. Each takes your own words as the voice; the last keeps the workshop's cards. Any turn can be passed. Lines said as the voice are offered at the keeping step.",
+   "why": "Your playtest notes of 12 October, 21:15. Built in bars-engine #282; bigmind/DESIGN.md, \"The W.A.V.E. screens\"."
+  },
+  {
+   "id": "cs-rebuild-proof",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "The cloud rebuilds the cave's figure, kit and spot table exactly. Run on 12 October, build_figure.py and build_kit.py took about six seconds, and figure.glb, cave-kit.glb and spots.json came out byte for byte identical to the committed files.",
+   "why": "A cheap test run before building, as the pipeline's falsify stage asks. Source: bars-engine .specify/specs/cave-studio/request.md; content/ontology-game/body/build_figure.py and cave/build_kit.py."
+  },
+  {
+   "id": "cs-cc0-or-own",
+   "faces": [
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Every asset in the cave is own work or CC0. A Royalty Free model never goes into a page, and the studio's tools refuse one.",
+   "why": "Your standing rule c3d-cc0-only. Blendkit's terms (article 5, read 12 October) allow a Royalty Free model in a web page only if no one else can extract it, and a model in a page can be extracted. Source: tools/blender-cloud/README.md."
+  },
+  {
+   "id": "cs-manifest-row",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Each piece the studio makes gets a manifest row before it merges: source, licence, bytes and a size budget. The kit stays under about 3 MB.",
+   "why": "content/ontology-game/cave/manifest.json already works this way, and c3d-phone-budget sets the number."
+  },
+  {
+   "id": "cs-one-studio",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "One studio serves both caves. Anything both caves use, such as a daemon, is built once.",
+   "why": "Your steer on st-which-three (\"both part of the same project- they are just forked\") and the standing position cave-321-one-build."
+  },
+  {
+   "id": "cs-no-written-words",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "The studio makes what the player sees. It never writes a daemon's or a spirit's words, and a figure may move but never speak.",
+   "why": "The standing position cave-321-player-writes: the player writes every line. Source: bars-engine CLAUDE.md, dual-track rule."
+  },
+  {
+   "id": "cs-stand-in",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Each ChatGPT-made piece has a scripted or CC0 stand-in, so the cave plays the same without it, and the manifest names both.",
+   "why": "bars-engine's CLAUDE.md: the non-AI path is a first-class delivery mode, and the Portland community is wary of AI. It holds whatever you answer to cs-chatgpt-ai-art."
+  },
+  {
+   "id": "cs-chatgpt-by-drive",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "ChatGPT files reach the cloud through one Google Drive folder, Cave studio inbox, which a session reads with the Drive connector. Nothing goes into git until its manifest row exists.",
+   "why": "A cloud session cannot reach ChatGPT, and this session has a Drive connector. Committing large art files would bloat the repo. The one step it needs is on Your steps."
+  },
+  {
+   "id": "cs-first-test",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "The first piece counts as done when it loads in the cave at 390 by 844, the cave's browser test passes, and the kit stays under budget. You look at its preview before it merges. Target 26 October, once you answer cs-first-piece.",
+   "why": "cave-test.mjs and c3d-phone-budget. Your eyes on the result is a step only you can take. The date is the council's, marked."
+  },
+  {
+   "id": "mm-set-aside",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "cave studio",
+   "auto": true,
+   "pos": "Motion2MixamoRig, which lifts a person in a video or photo onto a Mixamo rig, is set aside for now and returns when you ask. Its chain is for non-commercial use: SMPL-X allows only non-commercial research, education or artistic projects, GVHMR allows educational, research and non-profit use, and YOLOv8 is AGPL-3.0. Mixamo characters are royalty-free for commercial use, and the tool's own code is Apache-2.0.",
+   "why": "Your words of 12 October after the licence read: \"yeah that makes sense. Let's skip this for now.\" Source: the licence texts read that day (SMPL-X, GVHMR, Ultralytics, Adobe's Mixamo FAQ) and ledger 2026-10-12-blender-cloud-session.json. The retarget half appears to take any 24-joint skeleton file, which was read and not run."
+  },
+  {
+   "id": "ttc-encounters-part3",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "Step 3 on Part III of The Skilled Helper is drafted, and you can tap through it on your phone: https://claude.ai/artifact/Y3snBtvsVUW2TK7vwEXvf9. The Lamp-keeper's track is 27 moments across L1 to L9 and one field spirit, the Fallow, at Tam's farm. Each line carries the question its move belongs to, and a script checks the story's rule on every moment: right is from where the person stands, the wall from a question ahead, partial from behind. Five exceptions are noted where they are. You start at rank 5 and the track opens 6 and 7. This stands unless you flip it, and step 4 (your play) starts from it.",
+   "why": "The Architect carried story.md as it stands. Every misfire is one of the seven shared daemons in Act III (the Challenger's check, lesson-challenger-shared-frame); the Protector is added for Brannock's forbidden run, which story.md L7 names. Source: sprout campaigns/skilled-helper/part-three/encounters.yaml"
+  },
+  {
+   "id": "p3-guess-test",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "The guessing test does not pass yet. Fresh players picked the right line by wording on 44 of 81 first picks (54%) on round 3, against 62% and 63% on rounds 1 and 2, and the bar is under half. The impatient fixer, the player the track is for, got 12 of 27 and hit the wall 13 times. Fresh players read where a person stands from the cue alone 31% of the time, about twice chance, so the tap-through lights the tell when you buy Listen. Round 4 runs in its own thread.",
+   "why": "The move's rule: if a fresh player can pick the right line from its wording, rewrite it. Part III's wrong lines are a question too early, and players with good instincts do not push, which is why it is harder to hide than Part II. Source: sprout campaigns/skilled-helper/part-three/guessing-test.md"
+  },
+  {
+   "id": "p3-fallow-spirit",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "The withered farm gets one spirit, the Fallow, an Earth spirit in the field's one wet corner whose need is space. It comes after L2 only if you worked the farm with Tam, and it is read the way a person is: it stands at What's here?, and the right move asks which corner comes back first. The farm stays optional, and Tam is not the spirit. This stands unless you flip it.",
+   "why": "story.md asked for a spirit for the withered farm's field if the field is to be negotiated with. The player feels the stages on their own field first (story.md, The teacher). Source: part-three/encounters.yaml, spirits"
+  },
+  {
+   "id": "p3-blocks",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "texts to campaigns, step 3",
+   "auto": true,
+   "pos": "Three blocks from the six sabotaging beliefs, never named on screen: Tavi at L3 (I'm insignificant, so it is all the elders' doing), Tavi at L8 (I'm not good enough, so one night home is who he is), and Wynn at L6 (I'm not worthy, so she can neither plant the elders' bed nor refuse it). This stands unless you flip it.",
+   "why": "Blocks come from the emotional alchemy canon, never from the text (interview round 6). story.md asked for Tavi at L3 and L8 and Wynn at L6. Source: mtgoa-manuscript SPEC_6_SABOTAGING_BELIEFS.md"
+  },
+  {
+   "id": "bpt-recipe",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "When you ask in words for a change to the cave, Claude edits a short recipe file (cave/scene.yaml) and a fixed script builds the models. Claude never writes Blender code for an edit. The first test checks the cost: each edit must stay under 20,000 tokens past the thread's opening load and cost at most a third of writing the code directly. If it fails that, the idea is dropped. This stands unless you flip it.",
+   "why": "You asked for the least token use. Rereading context was 84% of spend in the 4 October audit, so the edit has to touch only a few lines. Every prop is already a committed script (c3d-codex-rebuilds). Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  },
+  {
+   "id": "bpt-robe-theme",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "The theme for the cave's character creator test is the Taoist cultivation robe set, so the 3D creator and the 2D sprite creator share one wardrobe. The test makes nine faceless figures (three builds, three palettes) that walk with the cave's walk cycle. This stands unless you flip it.",
+   "why": "Your robe set ruling (cc-robe-set) and one studio for both caves (cs-one-studio); the cave figure has no face (cave-avatar-self). Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  },
+  {
+   "id": "bpt-skinned-garments",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "Clothing for players is built as separate garments fitted by script to the figure's body and moving on its one skeleton, so the game swaps them while the figure walks. The first round is a long robe, a sash and a topknot, each in three colours, with no cloth simulation. It passes when no body shows through at four points in the walk, each garment is under 150 KB, a swap takes under 100 ms, and you have looked at the sheet. This stands unless you flip it.",
+   "why": "You named clothing the biggest test. Swappable skinned garments are the cheapest way to fit a phone budget (c3d-phone-budget), and new clothing goes through your eye (cc-wardrobe-gate). A robe that should swing gets extra hem bones before any simulation. Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  },
+  {
+   "id": "bpt-order",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "The words-and-pictures tests run in this order, one job per thread: the recipe and its token cost, then textures, then adding objects, then picture to model, then the character creator, then clothing. They start after cave studio's open pull request (#285) merges, because they touch the same cave files. This stands unless you flip it.",
+   "why": "Each later job is one recipe line, so the recipe's cost decides whether the rest is cheap. The cave-studio strand owns the cave files until #285 lands (council/strands.py). Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
   }
  ],
  "questions": [
@@ -11303,6 +11542,96 @@
      "v": "seattle",
      "label": "Fold it into the Seattle launch on November 6",
      "c": "The virtual launch stops being its own event, and the Seattle stop gets an online way in. Seattle is also at step 1, so its unpacking session covers both."
+    }
+   ]
+  },
+  {
+   "id": "cs-chatgpt-ai-art",
+   "faces": [
+    "regent",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "cave studio",
+   "q": "May art you make in ChatGPT ship inside the cave, and how should it be marked? The council recommends yes, marked in the manifest and the credits.",
+   "why_you": "It is your call about putting AI-made art in front of a community that is wary of AI. The record holds the licence rule (c3d-cc0-only: own work or CC0) and bars-engine's rule that the non-AI path is first-class. It holds no ruling on AI-made assets. Your answer decides whether ChatGPT pieces go in the cave at all.",
+   "not_before": "Until 12 October nothing in the record said you were making assets in ChatGPT. The 9 October pass only guessed that concept images might come from there, and marked the guess as not checked.",
+   "options": [
+    {
+     "v": "ship-marked",
+     "label": "Ships, marked (recommended)",
+     "c": "A ChatGPT piece can be in the cave. Its manifest row says made with ChatGPT, the credits say so, and it has a scripted or CC0 stand-in so the cave plays the same without it."
+    },
+    {
+     "v": "concept-only",
+     "label": "Concept only",
+     "c": "ChatGPT art is a reference. Sessions rebuild each piece by script or by hand, and nothing from ChatGPT ships. The safest with the community, and slower for pieces that are hard to script."
+    },
+    {
+     "v": "ship-plain",
+     "label": "Ships, unmarked",
+     "c": "ChatGPT pieces ship as own work with no label. The simplest, and the council advises against it: the manifest would say something untrue about where the art came from."
+    }
+   ]
+  },
+  {
+   "id": "cs-first-piece",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "cave studio",
+   "q": "Which piece should the cloud studio build first? The council recommends the daemon figures.",
+   "why_you": "The order is yours. The record carries a lesson on this: a sequence the council infers is not your priority order, so it asks before parking anything. The first piece sets what gets built and tested next.",
+   "not_before": "The studio's tools landed on 12 October, and the cave draws its daemons in the page from code, so nobody had asked whether they should get Blender bodies.",
+   "options": [
+    {
+     "v": "daemons",
+     "label": "The seven daemon figures (recommended)",
+     "c": "Both caves use them, so they are built once. Today they are sphere stacks drawn by code. Each gets a body with no face, loaded in the cave with the code-drawn one as the fallback."
+    },
+    {
+     "v": "spirits",
+     "label": "The charge spirits",
+     "c": "The Big Mind cave's spirits that rise from a sit-down. They wait on the W.A.V.E. build landing (bms-build-order), so this one starts after it."
+    },
+    {
+     "v": "chambers",
+     "label": "Chamber dressing for the kit",
+     "c": "More pieces for the cave kit: stones, roots, glowing growths. The kit is 17 KB of a 3 MB budget, so there is plenty of space, and no figure changes."
+    }
+   ]
+  },
+  {
+   "id": "cs-asset-kind",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "cave studio",
+   "q": "What are the ChatGPT assets: pictures to build from, flat art for the scene, pictures to turn into 3D, or finished 3D files? The council leans to pictures to build from.",
+   "why_you": "Only you know what you are making in ChatGPT, and each answer builds a different path: modelling from a reference, textures and panels, image-to-3D on your Mac, or an importer. The record does not say.",
+   "not_before": "Nothing in the record says what the assets are.",
+   "options": [
+    {
+     "v": "reference",
+     "label": "Pictures to build from (recommended)",
+     "c": "The studio models each piece in Blender by script from your picture, in the cave's own style. It works in the cloud today, keeps the licence line clean, and you see the result as a preview."
+    },
+    {
+     "v": "flat",
+     "label": "Flat art for the scene",
+     "c": "Textures, panels, murals and signs placed in chambers. The studio sizes and wraps them. Each is marked as made with ChatGPT if you say it ships."
+    },
+    {
+     "v": "image-to-3d",
+     "label": "Pictures to turn into 3D",
+     "c": "Image-to-3D on your Mac (TRELLIS.2 was the 9 October pass's route for hero pieces). The cloud cleans, fits and previews the result. It needs your Mac and a GPU."
+    },
+    {
+     "v": "models",
+     "label": "Finished 3D files",
+     "c": "Models that arrive ready-made. The studio decodes them, fits them to budget and checks the licence. It needs a place for you to drop them."
     }
    ]
   }
@@ -18547,6 +18876,271 @@
      "diplomat"
     ],
     "pass": "texts to campaigns, step 2"
+   },
+   "bms-away-lighter": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T21:05:18.434Z",
+    "record": "council/ledger/2026-10-12-pull-210518.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bm-be-turns": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T21:30:23.355Z",
+    "record": "council/ledger/2026-10-12-pull-213107.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bmw-appreciate-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T21:30:30.927Z",
+    "record": "council/ledger/2026-10-12-pull-213107.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bmw-exhale-spirit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T21:30:35.547Z",
+    "record": "council/ledger/2026-10-12-pull-213107.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "bmw-charge-seen": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T21:30:40.576Z",
+    "record": "council/ledger/2026-10-12-pull-213107.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "big mind cave 3"
+   },
+   "cs-rebuild-proof": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:27:18.273Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-cc0-or-own": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:30.428Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "steer": "\"allow a Royalty Free model in a web page only if no one else can extract it, and a model in a page can be extracted\"\n\nHow are people getting around this? Well not around but if royalty free can be extracted then what's the point of this",
+    "faces": [
+     "regent"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-manifest-row": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:38.626Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-one-studio": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:43.826Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-no-written-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:28:50.142Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-stand-in": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:29:01.496Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-chatgpt-by-drive": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:29:14.918Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-first-test": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:29:20.826Z",
+    "record": "council/ledger/2026-10-12-pull-222920.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "cave studio"
+   },
+   "mm-set-aside": {
+    "decision": "deferred",
+    "label": "Deferred until he asks",
+    "recorded": "2026-10-12",
+    "record": "council/ledger/2026-10-12-blender-cloud-session.json (six-faces-council)",
+    "history": [
+     {
+      "recorded": "2026-10-12",
+      "saved_at": "2026-10-12T21:45:00Z",
+      "steer": "yeah that makes sense. Let's skip this for now. Let's move back to the blender work"
+     }
+    ],
+    "project": "bars-engine"
+   },
+   "ttc-encounters-part3": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:24.373Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p3-fallow-spirit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:35.384Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p3-blocks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:44.167Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "p3-guess-test": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T23:59:54.309Z",
+    "record": "council/ledger/2026-10-12-pull-235954.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "texts to campaigns, step 3"
+   },
+   "bpt-recipe": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:23:35.652Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "Blender pipeline test plan"
+   },
+   "bpt-robe-theme": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:23:48.073Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat"
+    ],
+    "pass": "Blender pipeline test plan"
+   },
+   "bpt-skinned-garments": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:24:13.933Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "steer": "Use as much as we can from the root game for this as we’ve already done many garment tests there",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "Blender pipeline test plan"
+   },
+   "bpt-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T00:24:21.368Z",
+    "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "Blender pipeline test plan"
    }
   },
   "questions": {
@@ -20425,6 +21019,45 @@
      "regent"
     ],
     "pass": "virtual launch unblock"
+   },
+   "cs-chatgpt-ai-art": {
+    "decision": "concept-only",
+    "label": "Concept only",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:25:57.956Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "steer": "for now it's for concept, we will need an additional production step to rebuild the pieces ourselves",
+    "faces": [
+     "regent",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-first-piece": {
+    "decision": "chambers",
+    "label": "Chamber dressing for the kit",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:26:16.791Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "cave studio"
+   },
+   "cs-asset-kind": {
+    "decision": "reference",
+    "label": "Pictures to build from",
+    "recorded": "2026-10-12",
+    "saved_at": "2026-10-12T22:27:10.162Z",
+    "record": "council/ledger/2026-10-12-pull-222843.json (six-faces-council)",
+    "steer": "I'd need to see and trust blenders ability to take pictures to build from",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "cave studio"
    }
   },
   "causes": {
@@ -21706,7 +22339,35 @@
      ]
     }
    ]
+  },
+  {
+   "id": "fr-cave-studio",
+   "name": "The Cave Studio",
+   "repo": "bars-engine",
+   "element": "earth",
+   "record": "bars-engine .specify/specs/cave-studio/request.md; tools/blender-cloud/; content/ontology-game/cave/manifest.json",
+   "intro": "It wants the cave's figures and places built by Blender in the cloud, for the Cave of Lessons and the Big Mind cave together, and the art you make in ChatGPT to find a safe way in. The cloud already rebuilds the cave's Blender pieces exactly. What it needs from you is which piece comes first, whether ChatGPT art ships, and what that art is.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "cs-chatgpt-ai-art",
+      "cs-first-piece",
+      "cs-asset-kind"
+     ],
+     "positions": [
+      "cs-rebuild-proof",
+      "cs-cc0-or-own",
+      "cs-manifest-row",
+      "cs-one-studio",
+      "cs-no-written-words",
+      "cs-stand-in",
+      "cs-chatgpt-by-drive",
+      "cs-first-test"
+     ]
+    }
+   ]
   }
  ],
- "steps_recorded_through": "2026-10-12T20:13:35.781Z"
+ "steps_recorded_through": "2026-10-12T23:29:20.492Z"
 }

@@ -4,10 +4,13 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
+- Daily compost pass (docs/compost-pass.md), 2026-10-12: routine each morning at 6:47 Pacific starts a thread that keeps, drops or takes over Wendell's open steps. First pass dropped four, took over one check, rewrote two.
 - [virtual-launch](virtual-launch.md), 2026-10-12: step blocked; split into name-the-block, `vl-date` and six one-question steps; answers go onto the pipeline row.
 - [wave-room](wave-room.md), 2026-10-11: second slice built (bars-engine PR #277 on #276), all seven of his changes; waiting on his play.
 - [root](root.md), 2026-10-11: play page built (root-game #17, https://claude.ai/artifact/6RqthVDD7sGbjVtHqEDNo3); waiting on his phone play (T1), then five friends cold.; planted-feet stances in root-game #19 (https://claude.ai/artifact/A4oeXe6BYv2T8e7445fuLi); attack and defense (postures open gates, charge, weak spot) in root-game #20 on the same link, rows on the board, ex-posture-table answered A; Yun's session two (hold, strike, answer, timing) in root-game #21 on the same link, pass 5 rows in rows/root-pass5-2026-10-12.json
 - [coaching-pipeline](coaching-pipeline.md), 2026-10-12: 14 guesting shows with pitches on the Outreach tab, first three to send (step 04); daemons opt-in on the coaching page (draft PR); Web Analytics, PR #273; Monday reads.
+- [blender-pipeline-test](blender-pipeline-test.md), 2026-10-13: plan written (bars-engine #287 merged, Part 2 in #288): Part 1 tests the pipeline, Part 2 tests edits from words and pictures, a themed character creator and clothing; four bpt- positions on the board. Next: build Part 1, R2 rebuild check first.
+- [cave-studio](cave-studio.md), 2026-10-12: first piece built and trusted (bars-engine #285, ready): chamber dressing from pictures, his ChatGPT crystal included; next pieces come from his next pictures.
 - [studio](studio.md), 2026-10-10: cave pilot through gates 0 to 2; Sprout mock v2 and second cold round; retro 10-17.
 - [big-mind-cave](big-mind-cave.md), 2026-10-12: two charges built (bars-engine #278); sitting down and charge spirits on the board (`bms-sit-whom`, `bms-spirits-after`), built after the WAVE room lands.
 - [cave-of-lessons](cave-of-lessons.md), 2026-10-10: `cave-321-form` on the board; Wendell's phone play, then fixes from his notes.
@@ -15,7 +18,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 - [coaching-site](coaching-site.md), 2026-10-09: Wendell plays #270 on his phone by 10-12, then merge.
 - [podcast](podcast.md), 2026-10-09: ep 2 title and thumbnail, Spotify link, clips, outreach sends.
 - [flirtcraft](flirtcraft.md), 2026-10-09: finish own database and sign-in before promoting; loop fixes PR.
-- [skilled-helper](skilled-helper.md), 2026-10-12: his phone play of the Pruner's track fights (#41 on #38); his BAR for step 4. Part III step 2 done (sprout #43, Act III Lamp-keeper's track); step 3 encounters next.
+- [skilled-helper](skilled-helper.md), 2026-10-12: Part III step 3 done (sprout #44, Lamp-keeper's tap-through); guessing test round 4 next, then his phone play. His phone play of the Pruner's track fights (#41 on #38).
 - [session-cost](session-cost.md), 2026-10-08: measure slim board read; Wendell ticks plugins-trim.
 - [wave-battle](wave-battle.md), 2026-10-06: build sprout #25 taught fight with Yun and English moves.
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.

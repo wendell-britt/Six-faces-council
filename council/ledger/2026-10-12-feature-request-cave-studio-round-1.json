@@ -1,0 +1,93 @@
+{
+ "id": "2026-10-12-feature-request-cave-studio-round-1",
+ "date": "2026-10-12",
+ "project": "bars-engine",
+ "source_doc": "bars-engine .specify/specs/cave-studio/request.md",
+ "move": "council/moves/feature-request.md",
+ "asked": "Wendell, 2026-10-12: \"ok let's go ahead and do a project intake for the council board. I want to use blender in the cloud to continue development work on the cave lessons and bigmind work as well as integrating some asset work that I'm doing in ChatGPT\"",
+ "casts": [
+  {
+   "agent": "shaman",
+   "name": "Fog",
+   "shows": "You are guessing where you could ask.",
+   "becomes": "Stillness",
+   "becomes_n": 52
+  },
+  {
+   "agent": "architect",
+   "name": "Fullness",
+   "shows": "This is at its peak and you are saving some of it.",
+   "becomes": "Candour",
+   "becomes_n": 25
+  },
+  {
+   "agent": "challenger",
+   "name": "Noon",
+   "shows": "There is a lot here, and all of it is visible.",
+   "becomes": "Adornment",
+   "becomes_n": 22
+  },
+  {
+   "agent": "regent",
+   "name": "Ascent",
+   "shows": "This is growing at a rate you cannot see day to day.",
+   "becomes": "The Cauldron",
+   "becomes_n": 50
+  },
+  {
+   "agent": "diplomat",
+   "name": "Reserves",
+   "shows": "You have been storing this and never named the day.",
+   "becomes": "Fog",
+   "becomes_n": 4
+  },
+  {
+   "agent": "sage",
+   "name": "Sprouting",
+   "shows": "This is early, and you are reading the mess as a verdict.",
+   "becomes": "Fellowship",
+   "becomes_n": 13
+  }
+ ],
+ "casts_note": "A first printout cut off after four faces and was not used; all six were cast again and these are the record.",
+ "round": "1",
+ "questions_posted": [
+  "cs-chatgpt-ai-art",
+  "cs-first-piece",
+  "cs-asset-kind"
+ ],
+ "positions_posted": [
+  "cs-rebuild-proof",
+  "cs-cc0-or-own",
+  "cs-manifest-row",
+  "cs-one-studio",
+  "cs-no-written-words",
+  "cs-stand-in",
+  "cs-chatgpt-by-drive",
+  "cs-first-test"
+ ],
+ "battle": "fr-cave-studio",
+ "steps_posted": {
+  "list": "lists/cave-studio",
+  "steps": [
+   "steps/cave-studio-01",
+   "steps/cave-studio-02 (optional)"
+  ],
+  "due": "2026-10-19"
+ },
+ "test": {
+  "command": "python3 content/ontology-game/body/build_figure.py; python3 content/ontology-game/cave/build_kit.py (bpy 5.2.2, Python 3.13, cloud container)",
+  "date": "2026-10-12",
+  "result": "pass",
+  "finding": "figure.glb (204,264 bytes), cave-kit.glb (16,916 bytes) and spots.json (19,731 bytes) rebuilt byte for byte identical to the committed files; about 6 seconds in all"
+ },
+ "spec_kit": "bars-engine .specify/specs/cave-studio/{request,spec,plan,tasks}.md, written on branch claude/vibrant-tesla-3brtry; to be committed once bars-engine PR #281 merges",
+ "found_on_the_way": [
+  "The cave draws its daemons in the page from spheres (cave.js buildDaemon); only the figure and the kit are Blender pieces.",
+  "Blendkit's Royalty Free licence bars a model that a third party can extract from a web page; the Cloud Walker viewer had one and now has a CC0 chair (bars-engine PR #281, tools/blender-cloud/).",
+  "The live board page was behind main by one template fix (empty step lists hidden); the board was built from main's template."
+ ],
+ "rulings": [],
+ "lessons_pending": [],
+ "dissent": "None recorded: the faces were not convened as a full pass. Round 1 is the 3 step plus questions; the dialogue continues when he answers."
+}

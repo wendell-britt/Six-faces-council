@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-12",
+ "kind": "board-pull",
+ "newest_save": "2026-10-12T21:31:07.260Z",
+ "answers": {
+  "bm-be-turns": {
+   "kind": "position",
+   "savedAt": "2026-10-12T21:30:23.355Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmw-appreciate-words": {
+   "kind": "position",
+   "savedAt": "2026-10-12T21:30:30.927Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmw-exhale-spirit": {
+   "kind": "position",
+   "savedAt": "2026-10-12T21:30:35.547Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmw-charge-seen": {
+   "kind": "position",
+   "savedAt": "2026-10-12T21:30:40.576Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "coaching-pipeline-03",
+   "at": "2026-10-12T21:31:07.260Z",
+   "what": "note",
+   "note": "I've' updated and added analytics. Check this again",
+   "do": "Vercel still says Web Analytics is off for bars-engine (checked 12 Oct, 19:17 UTC, three hours after you ticked step 1). Open the Analytics tab again. If it shows an Enable button, press it; if it asks for a plan or a price, write what it says in the note here."
+  }
+ ],
+ "needs_work": [
+  "steps/coaching-pipeline-03: note \"I've' updated and added analytics. Check this again\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
