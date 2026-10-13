@@ -1,0 +1,579 @@
+{
+ "date": "2026-10-13",
+ "battle": "spirit-generator",
+ "repo": "sprout",
+ "kind": "pass",
+ "note": "Intake pass 1 on Wendell's chat of 2026-10-13 23:33 asking for a Monster Rancher spirit generator and training contexts. Three positions assembled from the record; one question survived the reach test (sg-work-grows), the fork between design.md's Decided 'spirits do not grow by working' and his 2026-10-06 outer-work ruling. No daemons sent.",
+ "pass": "council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md",
+ "steer": "We will need to develop a spirit generator à la monster rancher and contexts for spirits to train and grow stronger by getting better at the overall game loop",
+ "positions": [
+  "sg-charge-disc",
+  "sg-loop-trains",
+  "sg-first-slice"
+ ],
+ "questions": [
+  "sg-work-grows"
+ ],
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 16,
+   "name": "Anticipation",
+   "cn": "豫",
+   "pinyin": "yù",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "The good part has started and the event has not.",
+   "image": "☷ earth beneath ☳ thunder. Thunder coming up out of the ground, the sound arriving before the storm.",
+   "situation": "Stored energy at the point of release. The character carries both readiness and delight, and the old commentary attaches music to it — the thing that gathers a crowd before anything has happened. Preparation and pleasure are the same motion here.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    6,
+    8,
+    8,
+    9,
+    6,
+    7
+   ],
+   "changing_lines": [
+    1,
+    4,
+    5
+   ],
+   "n": 35,
+   "name": "Sunrise",
+   "cn": "晉",
+   "pinyin": "jìn",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shows": "This is becoming visible faster than you planned.",
+   "image": "☷ earth beneath ☲ fire. The sun clearing the horizon, with open ground under it.",
+   "situation": "Advance, and the light getting higher. The old text gives a prince horses in quantity and three audiences in a single day, so the figure is about recognition arriving quickly. Everything in it is going up.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 42,
+    "name": "Windfall",
+    "cn": "益",
+    "pinyin": "yì",
+    "lines": [
+     1,
+     0,
+     0,
+     0,
+     1,
+     1
+    ],
+    "shows": "More is arriving than you put in.",
+    "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+    "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 12,
+   "name": "Stalemate",
+   "cn": "否",
+   "pinyin": "pǐ",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are seeking one game and wearing the face of the other.",
+   "image": "☷ earth beneath ☰ heaven. Each half is already where it wants to be, so nothing crosses the middle.",
+   "situation": "Heaven rises and it is already on top. Earth settles and it is already at the bottom. Both halves are content and the figure has no traffic in it. Obstruction here comes from satisfaction rather than from conflict, which is what makes it durable.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    8,
+    7,
+    6,
+    8
+   ],
+   "changing_lines": [
+    2,
+    5
+   ],
+   "n": 54,
+   "name": "Home Field Advantage",
+   "cn": "歸妹",
+   "pinyin": "guī mèi",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "You are following rules nobody told you.",
+   "image": "☱ lake beneath ☳ thunder. Movement above, open water underneath, and the terms set by the upper half.",
+   "situation": "Entering an arrangement that was made before you got here. The old text is unusually blunt and calls every move unfavourable, because the one arriving takes the junior place in a house that already has its rules. Everything here runs on ground somebody else laid.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 17,
+    "name": "Following",
+    "cn": "隨",
+    "pinyin": "suí",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "shows": "You broke the pattern open, and you are now inside what it opened.",
+    "image": "☳ thunder beneath ☱ lake. Thunder has gone quiet under the water and travels where the water travels.",
+    "situation": "Falling in with something already in motion. The old text says to go indoors at dusk and rest, because the season has turned and the correct action now is to stop leading. The commentary adds that the one who follows well is in turn followed.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    7,
+    9,
+    7,
+    7
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 33,
+   "name": "Retreat",
+   "cn": "遯",
+   "pinyin": "dùn",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Leaving is available, and the timing decides what you keep.",
+   "image": "☶ mountain beneath ☰ heaven. Two yielding lines have come up underneath, and the firm lines are moving off.",
+   "situation": "Withdrawal in good order, at the moment that keeps it from becoming a rout. The old text calls it favourable and adds that the small is favourable too, which is the qualification: you keep something by leaving early with it.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 53,
+    "name": "Emergence",
+    "cn": "漸",
+    "pinyin": "jiàn",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "This has stages, and you are trying to skip one.",
+    "image": "☶ mountain beneath ☴ wind. A tree taking hold on a mountainside, advancing at the rate roots allow.",
+    "situation": "Gradual progress, by stages that cannot be skipped. The old text tracks wild geese across six landings — the shore, the rock, the plateau, the tree, the summit — and each is a place the bird stands on before the next. Speed here is set by the ground.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    6,
+    7,
+    7,
+    8,
+    6
+   ],
+   "changing_lines": [
+    2,
+    6
+   ],
+   "n": 55,
+   "name": "Fullness",
+   "cn": "豐",
+   "pinyin": "fēng",
+   "lines": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "This is at its peak and you are saving some of it.",
+   "image": "☲ fire beneath ☳ thunder. Light and movement together, both at the top of their range.",
+   "situation": "Abundance at the peak. The old text puts the sun at midday and says at once that what is full begins to wane, then fills the lines with eclipse — stars visible at noon, a curtain thick enough to show the polestar. The eclipse imagery sits inside the abundance itself.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 14,
+    "name": "Noon",
+    "cn": "大有",
+    "pinyin": "dà yǒu",
+    "lines": [
+     1,
+     1,
+     1,
+     1,
+     0,
+     1
+    ],
+    "shows": "There is a lot here, and all of it is visible.",
+    "image": "☰ heaven beneath ☲ fire. The sun at the top of the sky, with the whole day's strength under it.",
+    "situation": "Great possession: everything visible at once, in full light. The single yielding line sits fifth and holds the rest, which is the classical point — abundance is held by the soft place in it. The warning attached is about pride, since noon is also the moment the light starts down.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  }
+ ]
+}
