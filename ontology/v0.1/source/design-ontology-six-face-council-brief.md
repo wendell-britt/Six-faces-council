@@ -365,6 +365,14 @@ Record a roadblock first as a scoped observation of what is constrained and unde
 
 Technical metabolization means producing repair, verification, safer routing, reusable learning, or provenance. It does not require emotional processing. Experiential metabolization remains optional and evidence-bound.
 
+### Performance can matter without proving inner depth
+
+Gameplay is performance. A player can develop capacity and create story by performing a named practice, even when the system cannot know the player's private inner state. Record `PracticePerformanceRecord` against explicit criteria; do not silently relabel it genuineness, vulnerability, satisfaction, or transformation.
+
+Replace disclosure-based “session depth” with a correctable `ResponseAffordanceProfile`: what specificity, constraints, examples, relationships, or imagery are available for a declared adaptation. More relevant material may support a more specific `ArtifactTailoringPlan`. It must not buy better baseline craft, core progress, power, credentials, or social rank.
+
+Artifact specificity, richness, quality, and fit are separate claims. Intimate disclosure is not progression currency. Concise, private, fictionalized, symbolic, nonverbal, second-language, disabled, neurodivergent, and culturally guarded participation require equivalent routes to the core game and the same quality floor. Pacing proposals remain reversible and player-correctable.
+
 ---
 
 ## 8. Encounter ending and scoped completion
