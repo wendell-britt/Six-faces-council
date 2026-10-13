@@ -7455,6 +7455,28 @@
    "auto": true,
    "pos": "Fun is judged in your step 4 phone play, not by any test player. The play counts the walls you hit after the first track and sets them beside the taught player's score.",
    "why": "hs-wrong-is-the-wall and the move file's step 4. Source: the pass above"
+  },
+  {
+   "id": "gb-taught-run1",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "guessing bar, taught run 1",
+   "auto": true,
+   "pos": "The taught player, shown the rule once, picked the right line in 15 of 27 Part III moments (56%), against your 85%. It read where each person stands in 18 of 27, twice as well as the fresh players, and hit a wall only twice. Round 4's trap report: four of the instinct player's six walls are ones the rule should beat, and the taught player beat three. Tavi's two L5 moments are traps.",
+   "why": "One smallest-model run, 77,277 tokens. Source: sprout campaigns/skilled-helper/part-three/guessing-test.md, 'The rule check' (sprout #47)"
+  },
+  {
+   "id": "gb-rekey-first",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "guessing bar, taught run 1",
+   "auto": true,
+   "pos": "Before your phone play, the 14 Part III moments whose partial line comes from the same question as the right line (11) or from one ahead (3) are rekeyed so every partial comes from a question behind, as the rule already says. Tavi's L5 pair and Wynn's L6 cues are rewritten in the same thread. Then the taught player reruns on the changed moments against 85%.",
+   "why": "Under 60% means the key does not follow the rule a player can be shown (pass 1, Challenger test 1). The rule you play stays as story.md has it (p3-where-they-stand). Source: sprout guessing-test.md, 'What comes next'"
   }
  ],
  "questions": [
