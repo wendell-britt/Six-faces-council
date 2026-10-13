@@ -7764,6 +7764,39 @@
    "auto": true,
    "pos": "The spirit generator in the style of Monster Rancher, and the places where spirits train and grow stronger by getting better at the game's whole loop, are a new strand. They get their own intake pass in a fresh thread, separate from this fight. That pass starts from design.md's spirit and ally rules and from ds-tiers, and puts one fork to you there: today a Decided rule says spirits do not grow by working, only by sparring and fighting. This fight keeps placeholder allies until the generator exists. This stands unless you flip it.",
    "why": "Your chat, 13 October: \"We will need to develop a spirit generator à la monster rancher and contexts for spirits to train and grow stronger by getting better at the overall game loop\". The short-sessions rule gives each piece of work its own thread."
+  },
+  {
+   "id": "sg-charge-disc",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "spirit generator 1",
+   "auto": true,
+   "pos": "Your charge is the disc. In Monster Rancher you put a CD in the shrine and it becomes a monster; here a spirit is born when a daemon you met through the whole W.A.V.E. joins you, and it is made from that charge. The feeling sets its element, where you met it sets its species among the 25, the strength (a little, a lot, too much) sets its starting stats, and the urge sets its two leading stats. The same charge always makes the same spirit. Each stat shows a grade from E to S on its status screen, never in the fight. Story mode draws from a table. This stands unless you flip it.",
+   "why": "Your chat, 13 October: \"We will need to develop a spirit generator à la monster rancher\". The record already makes the daemon from your charge (wave-spirit-from-charge), turns a met daemon into a companion (wave-integrate-ladder), sets 25 species (demo-spirit-count) and five stats (spirit-five-stats), and design.md cites Monster Rancher 2's E to S grades. Source: council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md"
+  },
+  {
+   "id": "sg-loop-trains",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "spirit generator 1",
+   "auto": true,
+   "pos": "Spirits train in the ring, in forest fights, in the settlement bouts and cups, and on journeys to the villages, where they learn that village's move. Playing the loop well is what makes them stronger. In a spar or a fight each step played well adds to one stat: listening first adds speed, the right answer on the chart adds power, holding adds guard, letting go adds HP, and an integration adds magic. Fight alone trains less and lowers satisfaction. Each spar ends with one line naming the stat that rose and the step that raised it. Numbers are placeholders. This stands unless you flip it.",
+   "why": "Your words: \"contexts for spirits to train and grow stronger by getting better at the overall game loop\". spirit-growth-by-training (ring, forest, satisfaction), sf-ally-moves, sf-moves-from-people (villages), and design.md's bouts and cups after Monster Rancher. Whether real-world action also trains is the question sg-work-grows. Source: council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md"
+  },
+  {
+   "id": "sg-first-slice",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "spirit generator 1",
+   "auto": true,
+   "pos": "The first build replaces the placeholder allies on Ama Rell's Fixer fight page (sprout #50). You enter a charge or pick one, meet the spirit it makes with its status screen, spar it three times in the ring, then take it into the fight. It reaches you only after a script shows three things: a careful player's spirit ends stronger than a Fight-masher's after ten spars, different charges lead with different stats while the same charge repeats, and a generated spirit still wins standing in 3 to 5 turns. The other training places wait until you have played the ring. This stands unless you flip it.",
+   "why": "sf-generator-next gives the generator its own strand, and the short-sessions rule gives the build its own thread. The script is the Challenger's test of whether getting better at the loop is really what trains. Source: council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md"
   }
  ],
  "questions": [
@@ -12670,6 +12703,35 @@
     }
    ],
    "why": "Source: council/ledger/2026-10-13-spirit-fight-chat.json; sprout #50."
+  },
+  {
+   "id": "sg-work-grows",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "spirit generator 1",
+   "q": "Does real-world action make your spirits stronger, or only play in the ring and fights?",
+   "why_you": "Two of your rulings point different ways. design.md (Decided, allies) says \"Spirits do not grow by working\", only by sparring and fighting. Your board answer of 6 October says \"real work action is the highest killed play avaiable\" and names a mode \"where you can actually have players metabolize their outer work into ingame success\". Your new words, \"getting better at the overall game loop\", fit both. The answer decides whether the generator build adds an outer-world training place.",
+   "not_before": "Until today no build let a spirit grow from anything but a fight, so the Decided rule and the outer-work mode never met.",
+   "options": [
+    {
+     "v": "outer",
+     "label": "A. Outer-world action trains too (recommended)",
+     "c": "In the mode where you bring your life in, a real step you take and report (a BAR) trains your ally, like a spar played well. In-game chores still never train. Story-mode players grow spirits by the ring and fights only. The Decided rule is rewritten to say so."
+    },
+    {
+     "v": "keep",
+     "label": "B. Only the ring and fights",
+     "c": "The Decided rule stands as written. Real-world action pays elsewhere (badges, story), never spirit stats. Simplest to build and to balance."
+    },
+    {
+     "v": "all-work",
+     "label": "C. Any work trains, in-game chores included",
+     "c": "Spirits you set to work in the settlement grow too, as Monster Rancher's jobs do. Easiest growth for players, but growth stops depending on playing well, which breaks sg-loop-trains."
+    }
+   ],
+   "why": "Source: council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md; ledger 2026-10-06-board-read-saved-answers.json; sf-generator-next."
   }
  ],
  "causes": [
