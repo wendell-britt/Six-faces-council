@@ -7161,6 +7161,28 @@
    "auto": true,
    "pos": "J1's textures stand, and its 30-frames-a-second line is judged on your phone once the chamber is in the cave, not in the cloud. The cloud's browser draws with the processor instead of a graphics chip, so the chamber without textures already misses the line there (27.7 a second on the 4x throttle); with textures it runs 19.7. The other J1 lines pass: the chamber is 465 KB of the 3 MB budget and the three textures look different. If you would rather hold J1 to the cloud number, flip this, and the textures drop to 256 px or to the walls alone.",
    "why": "Measured at 390 by 844 in headless Chromium with software WebGL, three 0.170.0: untextured 27.7 throttled and 38.6 unthrottled; textured 19.7 and 27.4. A phone's graphics chip samples six 512 px textures at little cost. cave.js does not load the chamber until #289 lands, so cave-test.mjs is unchanged. Source: bars-engine PR #292."
+  },
+  {
+   "id": "merge-layout",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "WAVE into the cave map",
+   "auto": true,
+   "pos": "When the two caves become one, the Big Mind cave's chambers become the Cave of Lessons' daemon stops. A daemon standing in a side passage is met the Big Mind way: ask its permission, step into its place, answer its questions, ask a voice that is secretly speaking to step aside. The Big Mind page then opens the Cave of Lessons. Until then both pages stay, on the same stone, light and sit-down.",
+   "why": "Your words of 13 October: \"I think we're almost to the point where we can merge the bigmind cave and this cave\". The Big Mind brief was always chambers between hallways with a voice blocking the path, which is what a daemon stop already is, so this replaces your earlier two-caves pick (bm-center). Flip it to keep the Big Mind chambers as their own stretch of the map instead. Built so far: bars-engine #296, the One map section of cave/DESIGN.md."
+  },
+  {
+   "id": "cave-sit-down",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "WAVE into the cave map",
+   "auto": true,
+   "pos": "The Cave of Lessons has the Big Mind cave's Sit down, bottom left, the whole walk. It runs the WAVE room's steps in place in the tunnel with a breathing ring on every step, and standing up leaves a spirit that walks behind you carrying its own light. The full room with its door is still reached by Take it home and from the body map.",
+   "why": "Your words of 13 October: \"we need to import the WAVE process into this map\", and your Big Mind rulings bms-sit-anywhere and bms-in-place. Built in bars-engine #296."
   }
  ],
  "questions": [
