@@ -25,6 +25,13 @@ of the second slice, then fixes from his notes in a fresh thread.
   "Working with" picker). The fourth waiting at the door is a cap on the party, not one-at-a-time; any line elsewhere that assumes one
   daemon at a time is superseded.
 
+## Chat ruling (Wendell, 2026-10-13)
+- Wendell, 2026-10-13 22:29 (in the cave branch seams thread): "Cave is breaking here and if you sit down
+  without going through the whole wave process a spirit is auto created. It should only emerge once it’s been engaged
+  with". A spirit emerges only after the whole W.A.V.E.; standing up partway leaves none. This flips the sit-anywhere
+  design's "standing up partway leaves a spirit". Built in the cave by bars-engine #310; in the room, only a charge worked
+  through to the end goes through a door as a spirit (the walkable room build, stacked on #309).
+
 ## Waiting on
 The board's blocker panel (docs/blocker-panel.md, 2026-10-12) runs an overdue step through a light WAVE and saves
 `blockers/` records; the room can take it over by writing the same record with `engine: "wave-room"`.
