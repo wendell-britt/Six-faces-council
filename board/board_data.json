@@ -20147,6 +20147,80 @@
      "architect"
     ],
     "pass": "Cave levels"
+   },
+   "sh-verb": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:16:37.935Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "steer": "Specifically shame is the expression of all the dissatisfied parts of the emotional alchemy channels. Doing emotional alchemy is itself a metabolizing shame practice",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "Shame 1"
+   },
+   "sh-coach-not-clinic": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:16:44.318Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "Shame 1"
+   },
+   "sh-walk-is-the-map": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:16:49.085Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "Shame 1"
+   },
+   "sh-ek-fence": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:17:47.662Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "steer": "This is something to think more about. If the charge is present it’s got its hands on the joystick. We can have people be responsible to getting their hands back on the joystick without blaming them for it having been taken away",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "Shame 1"
+   },
+   "sh-pitch-test": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:17:54.446Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "Shame 1"
+   },
+   "sh-no-name": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:17:57.129Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "Shame 1"
    }
   },
   "questions": {
@@ -22076,6 +22150,30 @@
      "sage"
     ],
     "pass": "blocked-move 1"
+   },
+   "sh-lead": {
+    "decision": "two-doors",
+    "label": "Two doors, general first",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:15:51.822Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "Shame 1"
+   },
+   "sh-ek-cert": {
+    "decision": "not-now",
+    "label": "Not now",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T21:16:06.663Z",
+    "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "Shame 1"
    }
   },
   "causes": {
