@@ -7403,6 +7403,58 @@
    "auto": true,
    "pos": "Pragya is not named in public copy unless she says yes. This stands unless you flip it.",
    "why": "Naming a person is on the council's reserved list in faces.yaml."
+  },
+  {
+   "id": "gb-two-checks",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "guessing bar, pass 1",
+   "auto": true,
+   "pos": "The guessing test checks the wording, not the fun: can someone with no skill pick the right line from how it sounds? A second check joins it: a taught player, shown the rule once, plays the same moments with the Listen tell, to measure whether the rule finds the right line. Fun is judged in your play.",
+   "why": "You asked why the bar is under half. Item checks in testing aim for most examinees right and treat an obvious key as a broken item; game design treats a choice with one plain answer as no choice. Neither speaks to how often a skilled player should succeed. Source: sprout campaigns/skilled-helper/6FACE_PASS1_guess-bar_2026-10-13.md"
+  },
+  {
+   "id": "gb-ceiling-stays",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "guessing bar, pass 1",
+   "auto": true,
+   "pos": "The wording check keeps its ceiling of under half. Above it, the wording teaches by tone, which is what sank prototype 2 (65 of 69 picks won by tone). Three lines give 33% by blind guessing, so Part III's round 4 (33%) sits at chance.",
+   "why": "The move file's guessing test and hs-tests T1. No source sets the half; it is the council's number, kept because it caught prototype 2. Source: the pass above"
+  },
+  {
+   "id": "gb-trap-report",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "guessing bar, pass 1",
+   "auto": true,
+   "pos": "A test player more than ten points below chance (under 23% on three lines) is reported with its moments, and those moments are read for traps before your phone play. Round 4's instinct player (5 of 27) is the first report. A trap teaches distrust of kind lines, which is the wrong lesson.",
+   "why": "Testing treats a distractor that pulls strong examinees away from the key as a bad item (Frontiers 2018; classical item analysis). Source: the pass above"
+  },
+  {
+   "id": "gb-varied-practice",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "guessing bar, pass 1",
+   "auto": true,
+   "pos": "Moments stay mixed across people and stages, never three of one stage in a row, so the player practises the same motion in new settings rather than chasing one hard answer.",
+   "why": "Your words: the education comes from going through the motions in different and novel concepts. Bjork and Bjork (2011) name varying the conditions of practice as a desirable difficulty. Source: the pass above"
+  },
+  {
+   "id": "gb-step4-gate",
+   "faces": [
+    "regent"
+   ],
+   "pass": "guessing bar, pass 1",
+   "auto": true,
+   "pos": "Fun is judged in your step 4 phone play, not by any test player. The play counts the walls you hit after the first track and sets them beside the taught player's score.",
+   "why": "hs-wrong-is-the-wall and the move file's step 4. Source: the pass above"
   }
  ],
  "questions": [
@@ -12192,6 +12244,34 @@
      "v": "revisit",
      "label": "Revisit 1 December",
      "c": "A session checks the school's site on 1 December for news on its leadership, then this comes back."
+    }
+   ]
+  },
+  {
+   "id": "gb-taught-target",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "guessing bar, pass 1",
+   "q": "How often should a player who has learned the rule pick the right line?",
+   "why_you": "It sets how often your players meet a wall, which is the fun you named. No ruling covers a rate in play: hs-wrong-is-the-wall says what a wall does, not how often.",
+   "not_before": "Every pass so far measured only the wording.",
+   "options": [
+    {
+     "v": "85",
+     "label": "About 85%",
+     "c": "Walls are rare and each one teaches. Moments a taught player misses get clearer cues. The council leans this way (Wilson et al. 2019, the 85% rule)."
+    },
+    {
+     "v": "70",
+     "label": "About 70%",
+     "c": "More walls and more teaching moments, with more risk of feeling too hard."
+    },
+    {
+     "v": "after-step4",
+     "label": "After my play",
+     "c": "Part III goes to your phone as it is, and the target is set from how it feels."
     }
    ]
   }
