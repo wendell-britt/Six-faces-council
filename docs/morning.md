@@ -24,6 +24,7 @@ aligned with my goal." The pass is `council/passes/6FACE_PASS_morning-menu1_2026
 |---|---|
 | `menu` | The kept lines from Tap the Vein |
 | `board` | Questions with no answer, and new positions that stand unless he flips them |
+| `steps` | Undone steps on the Your steps tab due today or earlier (`--steps <dir>`, the store's `steps` collection saved with ArtifactData). Steps live only in the store, so nothing read them until 2026-10-13 |
 | `due` | Deferred items due within a week (`council/due.py`) |
 | `handoff` | Bold items under "Open on" in `council/HANDOFF.md`, minus those marked done, closed, recorded or picked |
 | `prs` | Open pull requests in the council, bars-engine and the Game Master's guide (GitHub API, or `--prs <file>`) |
