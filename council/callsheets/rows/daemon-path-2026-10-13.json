@@ -1,0 +1,22 @@
+{
+ "positions": [
+  {"id": "dp-door", "faces": ["architect", "diplomat"], "pass": "The daemon path", "auto": true,
+   "pos": "The WAVE room gets a third opening: a door on the other side of the seat from the hall portal, marked with the seven daemons. It leads down one path to the centre. The charge's door stays the charge's door and the portal still goes to the hall of the six. This stands unless you flip it.",
+   "why": "Your note of 13 October: \"there should be a door in the WAVE room that also leads to the big mind experience.\" lv-home-portal keeps one meaning per opening, so the daemon path gets its own door rather than sharing the portal."},
+  {"id": "dp-seven", "faces": ["regent", "challenger"], "pass": "The daemon path", "auto": true,
+   "pos": "The path has seven figures in the book's order: Protector, Controller, Skeptic, Fixer, Emotional Body, Victim, Damaged Self. Each stands in its own chamber, and none can be skipped. You can always walk back home. This stands unless you flip it.",
+   "why": "ds-daemon-order, answered A on 7 October (the MTGOA book's gates, the Player last). cave-daemon-wall: \"We shouldn't have a skip.\" fold-not-now keeps a declined daemon in the way."},
+  {"id": "dp-pass-rule", "faces": ["shaman", "diplomat"], "pass": "The daemon path", "auto": true,
+   "pos": "Each figure is met the Big Mind way: you ask to speak with it, stand in its place and answer its three questions. Whatever stops you getting past, whether a charge that will not ease or another voice speaking out of turn, is worked with the W.A.V.E. by sitting down where you are. The figure steps aside when its charge has eased to 3 or below. The Protector's refusal path, the charge meter and the three speaking turns come across from the Big Mind cave. This stands unless you flip it.",
+   "why": "Your note: \"you do W.A.V.E. to work though any emergent blockers ... until they let you pass.\" The 3-or-below rule is your Big Mind steer of 12 October, 22:39. bmw-block sends a blocked step to a sit-down. The meeting is bars-engine #301; the sit-down is #296."},
+  {"id": "dp-progress", "faces": ["challenger", "regent"], "pass": "The daemon path", "auto": true,
+   "pos": "A daemon you get past stays past. Leave the path at any figure and the door reopens there next time. A daemon you left mid-meeting waits for you, which is the start of the inner room lobby's list. This stands unless you flip it.",
+   "why": "bm-session: own pace, across sittings. Your 10 October steer on the inner room lobby, where a voice met and left waits to be resumed. Seven full meetings in one sitting is long."},
+  {"id": "dp-centre", "faces": ["shaman", "sage"], "pass": "The daemon path", "auto": true,
+   "pos": "The path ends at the centre: the vulnerable child, and the player's own self beside it. The child is seen, not questioned. The voices you met on the way follow as spirits and are there with you. The centre's portals reach the hall of the six. The second cave holds Big Mind and Big Heart. This stands unless you flip it.",
+   "why": "Your note: \"until you reach the center - the player/vulnerable child.\" bm-center answered two-caves (the first cave ends at the child and the player self). bm-guide: the guide is your integrated voice, revealed at the centre. bms-spirits-follow. lv-centre-altitude gives the centre its portals."},
+  {"id": "dp-big-mind-page", "faces": ["architect", "sage"], "pass": "The daemon path", "auto": true,
+   "pos": "The path is built in the Cave of Lessons, stacked on the cave levels work (bars-engine #309), as one more place beside the hall of the six. The separate Big Mind page stays reachable until you have walked the path on your phone, then it retires. This stands unless you flip it.",
+   "why": "merge-layout: the two caves become one. lv-old-walk keeps a tested page until its replacement is in your hand. #301 names what still has to come across from the Big Mind page: the refusal path, the W.A.V.E., the speaking turns and saving."}
+ ]
+}

@@ -28,6 +28,13 @@ of a daemon stop, then carry the Protector's refusal path, its W.A.V.E., the spe
 then point the Big Mind page at the Cave of Lessons. DESIGN.md will conflict with #298 at its end (both append a section):
 keep both.
 
+**2026-10-13, the daemon path (pass `daemon-path1`):** Wendell, 22:22: a door in the WAVE room into the Big Mind
+experience, W.A.V.E. on whatever blocks the way past each figure, all seven daemons in turn to the centre (the player and
+the vulnerable child). Pass `council/passes/6FACE_PASS_daemon-path1_2026-10-13.md`; six positions `dp-*`, no questions.
+Next: build it in a fresh thread, stacked on bars-engine #309 (the `LEVEL` table and `goTo`): a third opening in the room,
+seven chambers in `ds-daemon-order`, #301's meeting at each with the Big Mind refusal path, charge meter (steps aside at 3
+or below), speaking turns and saving carried over from `bigmind.js`, progress kept per daemon, the centre with the child.
+
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
 whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-place`, `bms-block-sits`, `bms-spirits-follow`,
