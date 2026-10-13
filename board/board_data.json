@@ -7477,6 +7477,18 @@
    "auto": true,
    "pos": "Before your phone play, the 14 Part III moments whose partial line comes from the same question as the right line (11) or from one ahead (3) are rekeyed so every partial comes from a question behind, as the rule already says. Tavi's L5 pair and Wynn's L6 cues are rewritten in the same thread. Then the taught player reruns on the changed moments against 85%.",
    "why": "Under 60% means the key does not follow the rule a player can be shown (pass 1, Challenger test 1). The rule you play stays as story.md has it (p3-where-they-stand). Source: sprout guessing-test.md, 'What comes next'"
+  },
+  {
+   "id": "env-unreal-deferred",
+   "faces": [
+    "regent",
+    "architect",
+    "challenger"
+   ],
+   "pass": "environment engine, pass 1",
+   "auto": true,
+   "pos": "Unreal Engine with VibeUE stays out of the cave's pipeline until the cave's phone test has a result. The cave's chambers stay Blender scripts walked in the browser with the three.js the body map already loads.",
+   "why": "Your choice on c3d-path put the cave on the web. The VibeUE README names no web export path and calls the engine's MCP plugins Experimental. You said an environments creator will be needed eventually, so the deferral returns when the phone test reports. Source: github.com/kevinpbuckley/VibeUE README; the council pass of 13 October 2026."
   }
  ],
  "questions": [
