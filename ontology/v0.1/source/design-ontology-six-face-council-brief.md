@@ -397,7 +397,11 @@ Encounter types are composable operative contracts—such as contest, inquiry, r
 
 ## 9. BAR lifecycle and composting
 
-A BAR is a captured unit of charged possibility with provenance. It must not become a note that sits forever as unresolved debt.
+A BAR is an intentionally captured, portable kernel of potential with stable identity and provenance. Charge is one important source and condition, not a requirement: a ChargedBAR is one specialization within the broader canonical class. Every BAR has provenance, but not every traceable note, artifact, quest, rule, specification, log, or decision is automatically a BAR.
+
+A BAR may bloom through one or more `BARExpression` records such as a quest, rule, lore, design decision, feature specification, implementation plan, community norm, branch, or artifact. Kernel and expression remain distinct. Existing material receives BAR identity only through explicit `BARPromotion`; portability remains subject to permission and context.
+
+A captured BAR must not become unresolved debt merely because it exists.
 
 Possible lifecycle verbs:
 

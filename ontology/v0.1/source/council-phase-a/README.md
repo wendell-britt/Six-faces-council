@@ -115,8 +115,14 @@ The ontology now distinguishes a RoadblockEvent, provisional classification, cau
 
 The future disclosure-volume depth signal is replaced by a correctable ResponseAffordanceProfile. The ontology distinguishes response material, performed practice, player-reported depth, artifact specificity, richness, quality, fit, pacing, and demonstrated deftness. Performance may be legitimate gameplay and may be rewarded when explicitly named; intimate disclosure cannot buy progress, power, credentials, rank, or better baseline craft.
 
+## BAR-scope reconstruction and ontology decision
+
+- `bar-scope/reconstruction-and-decision.md`
+
+BAR is now a first-class broad kernel: intentionally captured potential with stable identity and provenance. Provenance is necessary but insufficient, and charge is optional. ChargedBAR names one specialization; BARExpression separates the enduring kernel from quests, rules, lore, specifications, plans, norms, branches, and artifacts through which it blooms. Portability is permission-bound, and capture does not create implementation debt.
+
 ## Readiness
 
-Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, roadblock-intention, and session-depth questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
+Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, roadblock-intention, session-depth, and BAR-scope questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
 
 The next activity is evidence-led resolution of the remaining questions in `sage-canon-reconciliation.md`. Questions answerable from source reconstruction, ontology invariants, and bounded deliberation should be resolved without returning unnecessary choices to Wendell. Only irreducible matters of personal meaning, values, or owner authority should be escalated. After corrections are recorded, Wendell may decide whether to authorize a separate Phase B governance council.

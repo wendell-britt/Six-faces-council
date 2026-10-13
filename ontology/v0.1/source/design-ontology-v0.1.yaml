@@ -474,6 +474,94 @@ session_depth_and_disclosure:
     Pacing adaptations based on behavioral signals are proposals. They remain
     visible or readily correctable, reversible, and under player control.
 
+bar_scope:
+  decision_record: ontology/v0.1/source/council-phase-a/bar-scope/reconstruction-and-decision.md
+  definition: >-
+    An intentionally captured, portable kernel of potential with stable identity
+    and provenance, stewarded so it can bloom, be revised, fork, combine, rest,
+    ship, or be released across one or more expressions.
+  governing_rules:
+    - every_bar_has_provenance
+    - not_every_provenance_bearing_object_is_a_bar
+    - charge_is_optional
+    - kernel_and_expression_are_distinct
+    - capture_does_not_create_implementation_obligation
+    - portability_is_permission_bound
+  required_properties:
+    - intentional_kernel_capture
+    - stable_identity
+    - compressed_potential
+    - provenance
+    - plausible_expression_development_or_transfer_context
+    - steward_owning_scope_or_explicitly_unowned_state
+    - lifecycle_and_version_history
+    - portability_and_permission_policy
+  objects:
+    - BAR
+    - BARCandidate
+    - ChargedBAR
+    - BARExpression
+    - BARPromotion
+    - BARRoleRelease
+    - BARProvenanceRecord
+    - BARPortabilityPolicy
+  source_modes:
+    - charge
+    - request
+    - observation
+    - inspiration
+    - opportunity
+    - problem
+    - design_idea
+    - decision
+    - rule_or_norm_proposal
+    - lore_or_world_seed
+    - imported_artifact
+    - fork
+  expression_types:
+    - quest
+    - rule
+    - lore
+    - design_decision
+    - feature_specification
+    - implementation_plan
+    - community_norm
+    - branch
+    - encounter_seed
+    - artifact
+  typed_lineage_relations:
+    - derived_from
+    - expresses
+    - forked_from
+    - grafted_from
+    - revises
+    - implements
+    - instantiates
+    - harvested_from
+    - composted_from
+  distinct_axes:
+    - bar_lifecycle
+    - structural_maturity
+    - social_adoption
+    - epistemic_maturity
+    - work_disposition
+    - quest_completion
+    - implementation_status
+  classification_test:
+    - intentionally_captured_as_kernel
+    - compressed_potential_named
+    - plausible_bloom_context_named
+    - stable_identity_and_provenance_present
+    - stewardship_and_permissions_named
+    - current_expression_and_lifecycle_state_named
+  prohibitions:
+    - no_automatic_bar_identity_from_provenance
+    - no_charge_requirement_or_inference
+    - no_automatic_bar_identity_for_outputs
+    - no_capture_as_implementation_debt
+    - no_permissionless_portability
+    - no_lineage_erasure
+
 integral_attention_declaration:
   required_fields:
     - intended_pleasure
@@ -555,6 +643,11 @@ hard_invariants:
   - artifact_specificity_richness_quality_and_fit_are_distinct
   - baseline_artifact_craft_cannot_be_withheld_to_pressure_disclosure
   - behavioral_pacing_proposals_are_reversible_and_correctable
+  - every_bar_has_provenance_but_not_every_provenance_bearing_object_is_a_bar
+  - charge_is_not_constitutive_of_bar_identity
+  - bar_kernel_is_not_identical_to_bar_expression
+  - bar_capture_is_not_implementation_obligation
+  - bar_portability_is_not_blanket_reuse_permission
 
 minimum_record:
   required:
