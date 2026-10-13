@@ -7,7 +7,10 @@ J3 (picture to asset) is built: bars-engine draft PR #303, waiting on his look a
 pictures are three `obj(...)` lines in `chamber.py`: mushrooms 0.894, amber crystals 0.855, root knot (hung from the
 roof) 0.819, so two of three pass the number. `from_picture.py` gained `--flat` (plain grey backgrounds lost the pale
 parts) and modes `mushrooms` and `roots`. Seen: crystals have five shards to the picture's ten (P4 gap); mushroom
-stems fuse into one pale mass; the root's tendrils read, its trunk is crumpled. Tests pass (J3 added). On his yes:
+stems fuse into one pale mass; the root's tendrils read, its trunk is crumpled. Same PR: his four Blendkit greenery
+picks are placed (moss rock, two ferns, two grass clumps, the fly trap) through a new `local(file, id, mesh)` source
+that reads `/mnt/project-files/3d-build/blenderkit-greenery/picks`; chamber 1,274 KB of 3 MB; his look covers
+`greenery-sheet.png` too. Tests pass (J3 added). On his yes:
 mark #303 ready. Then J4 (character creator, robe set); J3's misses go to the gap fixes, and a root that must look
 twisted goes to TRELLIS.2 on his Mac per the spec. The chamber objects reach the game when `chamber.py` is wired into
 `cave.js`.
