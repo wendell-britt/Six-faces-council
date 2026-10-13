@@ -20772,6 +20772,90 @@
      "diplomat"
     ],
     "pass": "The daemon path"
+   },
+   "bi-three-layers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:02:51.939Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "battle intake 1"
+   },
+   "bi-line-comes-back": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:03:02.445Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "battle intake 1"
+   },
+   "bi-one-tap": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:03:10.962Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "battle intake 1"
+   },
+   "bi-49-interim": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:03:23.182Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "battle intake 1"
+   },
+   "bi-one-spirit-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:03:34.351Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "battle intake 1"
+   },
+   "dp-room-walk": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:03:49.252Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "The daemon path"
+   },
+   "dp-bm-door-cave": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:04:04.489Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "The daemon path"
    }
   },
   "questions": {
@@ -22737,6 +22821,31 @@
      "shaman"
     ],
     "pass": "guessing bar, pass 1"
+   },
+   "bi-what-for": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:02:07.049Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "steer": "The monsters of this game are established as the spiritual embodiment of people using their emotional energy wrong. They are Monster fights akin to pokemon and classic RPGs. I think we should start there and see if there’s a way to layer the emotional alchemy on top of it. Right now using turn based and wuxing weaknesses is the best bet for now.",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "battle intake 1"
+   },
+   "bi-chart": {
+    "decision": "type-chart",
+    "label": "Type chart",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:02:18.374Z",
+    "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "battle intake 1"
    }
   },
   "causes": {
