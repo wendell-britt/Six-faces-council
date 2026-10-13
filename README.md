@@ -9,6 +9,9 @@ synthesises without deciding, and Wendell rules on a board.
 - `council/faces.yaml` holds the six lenses, their term tests, and the lessons each face has learned
   from Wendell's rulings, in his words.
 - `.claude/skills/six-faces/SKILL.md` tells a Claude Code session how to run a pass or a term pass.
+- `ontology/manifest.yaml` and `.claude/skills/design-ontology/SKILL.md` make Wendell's versioned design
+  ontology available to the council for designing and building games. The Quickstart is compact current
+  context; `ontology/v0.1/source/` preserves the full excavation, model, decisions and council record.
 - `council/portable/` is a copy of the skill for places with no repo, such as an ordinary Claude chat.
   `python3 council/package_skill.py` zips it for upload to a claude.ai account.
 - `council/hooks/council-sync.sh` runs when a session opens in any council repo. It pulls the
