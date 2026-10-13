@@ -54,7 +54,7 @@ class MorningTest(unittest.TestCase):
         morning.from_prs = lambda path=None: ([], None)  # no network in tests
         m = morning.gather(MENU, prs_file=None, bars="/nonexistent", data=DATA)
         keys = [c["key"] for c in m["categories"]]
-        self.assertEqual(keys, ["menu", "board", "due", "handoff", "prs", "backlog"])
+        self.assertEqual(keys, ["menu", "board", "steps", "due", "handoff", "prs", "backlog"])
         menu = m["categories"][0]["items"]
         self.assertEqual(menu[0]["bridge"]["kind"], "named")
         self.assertEqual(menu[-1]["bridge"]["kind"], "unaligned")
@@ -62,6 +62,18 @@ class MorningTest(unittest.TestCase):
         board = m["categories"][1]["items"]
         self.assertEqual([i["ref"] for i in board], ["q-open"])
         self.assertEqual(m["pick_limit"], 7)
+
+
+    def test_steps_due_today_are_gathered_and_done_ones_skipped(self):
+        import tempfile, pathlib
+        with tempfile.TemporaryDirectory() as t:
+            t = pathlib.Path(t)
+            (t / "a.json").write_text(json.dumps({"do": "Publish the paperback", "due": "2026-10-13"}))
+            (t / "b.json").write_text(json.dumps({"do": "Already done", "due": "2026-10-13", "done": True}))
+            (t / "c.json").write_text(json.dumps({"do": "Later", "due": "2026-10-20"}))
+            (t / "d.json").write_text(json.dumps({"do": "Dropped", "due": "2026-10-12", "retired": "gone"}))
+            got = morning.from_steps(t, today="2026-10-13")
+        self.assertEqual([i["ref"] for i in got], ["a"])
 
 
 if __name__ == "__main__":

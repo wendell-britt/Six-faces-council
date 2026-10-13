@@ -22987,5 +22987,1096 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-13T02:26:28Z"
+ "steps_recorded_through": "2026-10-13T02:26:28Z",
+ "morning": {
+  "date": "2026-10-13",
+  "gathered_at": "2026-10-13T15:45:41Z",
+  "pick_limit": 7,
+  "goals": [],
+  "categories": [
+   {
+    "key": "menu",
+    "title": "From your free write",
+    "blurb": "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).",
+    "items": [
+     {
+      "id": "menu-task:cmv5qqi22001i7skoiol1pz27",
+      "text": "Ping Dan",
+      "note": "Task",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
+   },
+   {
+    "key": "board",
+    "title": "Waiting on you on the board",
+    "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
+    "items": []
+   },
+   {
+    "key": "steps",
+    "title": "Steps due today",
+    "blurb": "Your steps on the Your steps tab that are due today or overdue and not done.",
+    "items": [
+     {
+      "id": "step-anastasia-campaign-live-01",
+      "text": "Send Anastasia the draft and ask for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in…",
+      "ref": "anastasia-campaign-live-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-12",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-anastasia-campaign-live-02",
+      "text": "Paste or forward her answers into the Anastasia's campaign thread. Claude fills them into the draft and gives you the final text for each field.",
+      "ref": "anastasia-campaign-live-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-11",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-anastasia-campaign-live-03",
+      "text": "Create the campaign in the site's admin with the finished fields, then approve it.",
+      "ref": "anastasia-campaign-live-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-12",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-book-shipping-1",
+      "text": "Download a fresh Kickstarter backer report.",
+      "ref": "book-shipping-1",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-09",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-book-shipping-2",
+      "text": "Publish the paperback on KDP.",
+      "ref": "book-shipping-2",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-13",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-01",
+      "text": "Make the Flirtcraft account on X, with the display name Flirtcraft Podcast. Add the avatar, header, the podcast bio and flirtcraft.app/podcast as the website, then post the first post with the cover, add the reply under it, and pin the…",
+      "ref": "flirtcraft-socials-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-10",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-02",
+      "text": "Post the podcast announcement on your Facebook profile with the podcast cover attached. It mentions the podcast only; the app gets its own post in step 6.",
+      "ref": "flirtcraft-socials-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-10",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-03",
+      "text": "Post clip 1, QC's permission to flirt, on X as a video with its X caption. The later clips go to X on the same days as Instagram, on the episode 1 clips list.",
+      "ref": "flirtcraft-socials-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-11",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-04",
+      "text": "Make a Reddit account in your own name and start commenting, with no links, for two weeks.",
+      "ref": "flirtcraft-socials-04",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-12",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-paypal-funding-01",
+      "text": "Add a working payment method to your PayPal wallet and retry the Liberated Syndication payment. It is still failing: PayPal emailed again at 5am Pacific on 13 October that the $20 Libsyn payment failed, and that Patreon's $3.96 failed…",
+      "ref": "paypal-funding-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-07",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-podcast-ep2-clips-03",
+      "text": "Post clip 1, Tom on how long do you want to feel this way (37 seconds), as an Instagram Reel with Share to Facebook on and auto captions on, then post it on X. Before sharing, tap Edit cover, then Add from camera roll, and pick…",
+      "ref": "podcast-ep2-clips-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-09",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-podcast-ep2-clips-04",
+      "text": "Post clip 2, charity as domination (59 seconds), the same way, with auto captions on and cover-clip2-charity.jpg as the cover.",
+      "ref": "podcast-ep2-clips-04",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-12",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-virtual-launch-restart-02",
+      "text": "Say in one line what is in the way. It may be close to one of these, or none of them: the date is too close; nobody has said what the launch actually is (where, what time, how people join); six questions in one sitting is too much;…",
+      "ref": "virtual-launch-restart-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-13",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
+   },
+   {
+    "key": "due",
+    "title": "Deferred and due",
+    "blurb": "Items you deferred that come back within a week.",
+    "items": [
+     {
+      "id": "due-mm-set-aside",
+      "text": "Motion2MixamoRig, which lifts a person in a video or photo onto a Mixamo rig, is set aside for now and returns when you ask. Its chain is for non-commercial use: SMPL-X allows only non-commercial research, education or artistic projects,…",
+      "ref": "mm-set-aside",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#resolved",
+      "note": "when you ask",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
+   },
+   {
+    "key": "handoff",
+    "title": "Open in the handoff",
+    "blurb": "Work a thread left open in council/HANDOFF.md.",
+    "items": [
+     {
+      "id": "handoff-2026-10-08-slim-the-board-read",
+      "text": "Slim the board read: (board-read-slim): built 2026-10-08, board/read.py, steps in docs/pickup.md.",
+      "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-plugins",
+      "text": "Plugins: (plugins-trim): Wendell chose remove-business (2026-10-08).",
+      "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-sonnet-threads",
+      "text": "Sonnet threads: (threads-on-sonnet): written into project memory for the coordinator.",
+      "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-still-to-measure",
+      "text": "Still to measure: what else fills the opening 102,000 (CLAUDE.md files of the attached repos, the hook output, the platform prompt), and how much of a typical thread is command output (the Jev trimmer signal, project files…",
+      "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-03-the-board",
+      "text": "The board: (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) waits on Wendell for: dy-model, dy-limit-wording (#20), dy-research-handoff, dy-2026-10-03-wake (#21), cost-quiet-wakes, cost-daily-script, cost-per-row, cost-short-rule (#24).",
+      "note": "Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed off",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-03-pull-requests",
+      "text": "Pull requests: #20, #21 and #24 wait only on Wendell's ruling and the steward.",
+      "note": "Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed off",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-03-the-daily-session",
+      "text": "The daily session: stopped on 2026-10-08 (daily-stopped).",
+      "note": "Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed off",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-03-your-steps-tab",
+      "text": "Your steps tab: the flirtcraft database (steps 1 to 4 ticked 2026-10-08; 5 to 9 open) and the branch retire command are unticked.",
+      "note": "Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed off",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-03-deferred",
+      "text": "Deferred: the oracle drafts come back 2026-11-03 (council/due.py).",
+      "note": "Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed off",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-03-costs-measured-so-far",
+      "text": "Costs measured so far: pass ten, council/passes/6FACE_PASS10_2026-10-03.md.",
+      "note": "Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed off",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-05-the-standing-session-is-past-the-short-sessions-l",
+      "text": "The standing session is past the short-sessions limit.: session_011mcRZ4vDnnis99dnptvdmu read 331,329 tokens of context at the start of today's run (get_session, 15:46 UTC).",
+      "note": "Open on 2026-10-05, from the standing daily session",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-three-pieces-of-work-each-its-own-thread",
+      "text": "Three pieces of work, each its own thread.: Wendell's board answers (friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json) set them: fcm-p8b-redesign (Friendcraft's design pass: work like flirtcraft, BARs for…",
+      "note": "Open on 2026-10-06, from the Friendcraft next-steps thread (friendcraft pass 8)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-waiting-on-him",
+      "text": "Waiting on him: fcm-p8b-exchange-where (today's exchange at flirtcraft.app/friend now, wait for the redesign, or its own address).",
+      "note": "Open on 2026-10-06, from the Friendcraft next-steps thread (friendcraft pass 8)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-lessons-pending",
+      "text": "Lessons pending: for the Challenger and the Shaman are in that ledger record, for collect_lessons.py.",
+      "note": "Open on 2026-10-06, from the Friendcraft next-steps thread (friendcraft pass 8)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-the-plan",
+      "text": "The plan: /mnt/project-files/marketing/app-promotion-plan.md in the Flirtcraft project files.",
+      "note": "Open on 2026-10-09, from the Flirtcraft app promotion thread (battle `fr-app-promo`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-blocker",
+      "text": "Blocker: nothing promotes the app until steps 5 to 9 of Your steps list flirtcraft-own-database are done and step 3 of flirtcraft-socials (a real free rep with a real email) passes (promo-signin-first).",
+      "note": "Open on 2026-10-09, from the Flirtcraft app promotion thread (battle `fr-app-promo`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-on-the-board",
+      "text": "On the board: seven positions stand unless flipped; promo-paywall-when waits on him.",
+      "note": "Open on 2026-10-09, from the Flirtcraft app promotion thread (battle `fr-app-promo`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-not-covered",
+      "text": "Not covered: finding relationship-coaching guests for more episodes, which Wendell asked for in the same message.",
+      "note": "Open on 2026-10-09, from the Flirtcraft app promotion thread (battle `fr-app-promo`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-the-podcast-episode-move",
+      "text": "The podcast episode move: merged in #47: council/moves/podcast-episode.md and council/podcast/render_thumbnails.mjs.",
+      "note": "Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-episode-2-with-tom-hurlburt",
+      "text": "Episode 2 with Tom Hurlburt: waits on pod2-title and pod2-thumb-pick.",
+      "note": "Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-episode-marketing",
+      "text": "Episode marketing: (2026-10-07): the plan is in the MTGOA project files at podcast/episode-marketing-plan.md and the move's new step 6.",
+      "note": "Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-episode-2-clips",
+      "text": "Episode 2 clips: (2026-10-08): cut.",
+      "note": "Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-clip-length",
+      "text": "Clip length: (2026-10-07): pod-clip-length stands unless flipped: one or two clips of 60 to 90 seconds per episode, one or two of 30 to 60, none under 30.",
+      "note": "Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-leftover-on-his-mac",
+      "text": "Leftover on his Mac: ~/Downloads/podcast/_claude_work/ holds four wav files and a png from finding the clips.",
+      "note": "Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-podcast-page",
+      "text": "Podcast page: flirtcraft #9 merged (b5284f5).",
+      "note": "Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-book-harvest-2026-10-07-battle-fr-book-round-2",
+      "text": "Book harvest (2026-10-07, battle fr-book round 2): flirtcraft #12 (draft) adds book/podcast/episode-01.md (20 ideas, conflicts with the app) and book/podcast/README.md (the recipe for the next episode).",
+      "note": "Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-episode-1-clips-2026-10-08-round-6",
+      "text": "Episode 1 clips (2026-10-08, round 6): Wendell picked 02, 03, 06 and 07 (pod-ep1-clip-pick).",
+      "note": "Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-board-pickup-board-auto-pickup",
+      "text": "Board pickup (board-auto-pickup): built on 2026-10-06; docs/pickup.md has how it works.",
+      "note": "Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-wave-battle-fr-demo-round-7",
+      "text": "WAVE battle (fr-demo round 7): Wendell overruled wave-acknowledge and asked for research: the battle must feel turn based, and the system should generate a spirit that matches the charge the player is feeling.",
+      "note": "Open on 2026-10-06, from board read 2002",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-send-works-again",
+      "text": "Send works again: (2026-10-06 23:24 UTC, on Wendell's word in chat): the board declares db and mcp (Claude Code Remote, fire_trigger).",
+      "note": "Open on 2026-10-06, from the board pickup thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-work-the-answers-begin",
+      "text": "Work the answers begin: wave-acknowledge-turn overruled (steer: a trigram move is the acknowledgement, welcoming is listening) for the WAVE thread; oag-faces-names chose plain words, steer: a popup page per face, for the ontology game…",
+      "note": "Open on 2026-10-06, from the board pickup thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-the-pass",
+      "text": "The pass: flirtcraft 6FACE_PASS3_2026-10-06.md and council/ledger/2026-10-06-loop-pass1.json, merged in flirtcraft #10 (2026-10-07).",
+      "note": "Open on 2026-10-06, from the Flirtcraft loop audit thread (battle `fr-orient-new-players`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-on-the-board",
+      "text": "On the board: seven positions (loop-fix-labels, loop-draw-means-drawn, loop-one-move, loop-posture-once, orient-bridge, orient-on-your-own, orient-reflection-to-wall) stand unless he flips them; two questions wait on him…",
+      "note": "Open on 2026-10-06, from the Flirtcraft loop audit thread (battle `fr-orient-new-players`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-next-once-they-stand",
+      "text": "Next, once they stand: one flirtcraft pull request for the fixes (rail labels, draw first, 16 internal cards, one named move, posture once); orient-bridge starts the pipeline with a spec kit inside flirtcraft.",
+      "note": "Open on 2026-10-06, from the Flirtcraft loop audit thread (battle `fr-orient-new-players`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-not-started",
+      "text": "Not started: the book outline Wendell named after the audit.",
+      "note": "Open on 2026-10-06, from the Flirtcraft loop audit thread (battle `fr-orient-new-players`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-wave-battle-fr-demo-round-10",
+      "text": "WAVE battle (fr-demo round 10): wave-offer-opens, wave-urges-all and wave-welcome-cost stood.",
+      "note": "Open on 2026-10-06, from board read 2330",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-morning-brief-to-the-board",
+      "text": "Morning brief to the board: Wendell's context note, 23:26 UTC: \"I want to make sure the work from the morning brief is coming into the council board as well\".",
+      "note": "Open on 2026-10-06, from board read 2330",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-outline-drafted",
+      "text": "Outline drafted: flirtcraft book/OUTLINE.md (flirtcraft #11, docs only, marked ready), page https://claude.ai/artifact/Gojd8ok8fbtDqcJoysmwCr.",
+      "note": "Open on 2026-10-06, from the Flirtcraft book outline thread (battle `fr-book`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-on-the-board",
+      "text": "On the board: question book-oracle-in-print waits on him; positions book-spine-one-rep, book-crafts-service-order, book-binds-after-crafts, book-part-zero-stories and book-plain-first stand unless he flips them.",
+      "note": "Open on 2026-10-06, from the Flirtcraft book outline thread (battle `fr-book`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-next-each-its-own-thread",
+      "text": "Next, each its own thread: the Part 0 interview (one story per thread, as fcm-p8b-interview), once he answers or lets the positions stand.",
+      "note": "Open on 2026-10-06, from the Flirtcraft book outline thread (battle `fr-book`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-for-the-app-not-the-book",
+      "text": "For the app, not the book: GRAMMAR.md §12g renamed fear's gold to wonder; lib/decks.json still says excitement in both fear cultivate rungs.",
+      "note": "Open on 2026-10-06, from the Flirtcraft book outline thread (battle `fr-book`)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-on-the-board",
+      "text": "On the board: question wave-teacher (A Master Yun recommended, B Captain Rue, C Cael) waits on Wendell; positions wave-taught-fight, wave-straight-first, wave-corners-from-spirits, wave-gates-in-the-world (a story draft, Proposed) and…",
+      "note": "Open on 2026-10-06, from the WAVE teaching pass (`fr-demo` round 11)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-next",
+      "text": "Next: after the read, the WAVE build on sprout #25 (draft) adds the taught fight, the gate ladder, the corner unlocks and the image-first buttons, then reruns the bot test with the straight four only.",
+      "note": "Open on 2026-10-06, from the WAVE teaching pass (`fr-demo` round 11)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-round-12-chat-steer-2026-10-07-00-00",
+      "text": "Round 12 (chat steer, 2026-10-07 00:00): wave-buttons-image-first overruled (\"translate work so that the moves mean something to America players\").",
+      "note": "Open on 2026-10-06, from the WAVE teaching pass (`fr-demo` round 11)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-06-rounds-11-and-12-read-2026-10-07-01-07",
+      "text": "Rounds 11 and 12 read (2026-10-07 01:07): all seven positions stood and wave-teacher is A, Master Yun (council/ledger/2026-10-07-board-read-0107.json).",
+      "note": "Open on 2026-10-06, from the WAVE teaching pass (`fr-demo` round 11)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-pickup-routine",
+      "text": "Pickup routine: the coordinator was asked to update its prompt so a fresh session never calls add_repo (docs/pickup.md, \"The lost Send\").",
+      "note": "Open on 2026-10-07, from the board read rerun (board read 2349)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-pull-is-built",
+      "text": "Pull is built: (six-faces-council #46): board/pull.py <store folder> --push records every save main lacks and is safe to run twice.",
+      "note": "Open on 2026-10-07, from the pickup hostile review",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-dropped-from-the-review-s-plan-on-purpose",
+      "text": "Dropped from the review's plan, on purpose: the claim with an expiry.",
+      "note": "Open on 2026-10-07, from the pickup hostile review",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-switched-off",
+      "text": "Switched off: trig_01DpRsDM94Cnv2neyDVkBNMb and trig_01Q9mMcVwR4MCqHQzUHwcmiS (17:17 UTC).",
+      "note": "Open on 2026-10-07, from the pickup hostile review",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-waiting-on-the-sessions-that-own-the-prompts",
+      "text": "Waiting on the sessions that own the prompts: the coordinator was sent the new prompt for trig_01L138vKTaN9MSJoFKRmaBNx (pull, then act; never add_repo), and the standing daily session the new step 1b for trig_01F8fDdkjYEeMCfdozj6w3tt…",
+      "note": "Open on 2026-10-07, from the pickup hostile review",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-small-bug-seen-at-board-read-1714",
+      "text": "Small bug seen at board read 1714: the 17:12 Send fired the routine but did not rewrite pickup/last (it still held the 00:45 rows), so the Send bar may not hide.",
+      "note": "Open on 2026-10-07, from the pickup hostile review",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-pass-13",
+      "text": "Pass 13: (council/passes/6FACE_PASS13_2026-10-07.md) asked how to use the process to improve the process.",
+      "note": "Open on 2026-10-07, from the process improvement thread (pass 13)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-read-at-18-15-utc",
+      "text": "Read at 18:15 UTC: all five positions stood and proc-rule-retire was answered A (retire as a position, rule moves to an incident log).",
+      "note": "Open on 2026-10-07, from the process improvement thread (pass 13)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-next",
+      "text": "Next: the first retro runs by hand in its own thread, on the 32 overrules, the 9 pending lessons and the 6 pickup incidents.",
+      "note": "Open on 2026-10-07, from the process improvement thread (pass 13)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-retro-1",
+      "text": "Retro 1: (council/passes/6FACE_RETRO1_2026-10-07.md, ledger council/ledger/2026-10-07-retro1.json) found three repeating patterns in the 32 overrules: the Architect's designs not playing like the game he named (or missing the answer…",
+      "note": "Open on 2026-10-07, from retro 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-on-the-board-standing-unless-he-flips-them",
+      "text": "On the board, standing unless he flips them: retro1-rhythm-holds, lesson-architect-sources, lesson-challenger-shared-frame, lesson-challenger-gate-release, lesson-regent-purpose-first, lesson-diplomat-plain-names,…",
+      "note": "Open on 2026-10-07, from retro 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-not-reached",
+      "text": "Not reached: collect_lessons.py could not read friendcraft-manuacript, flirtcraft, root-game or emotional-first-aid from that session (GitHub 403 through the proxy).",
+      "note": "Open on 2026-10-07, from retro 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-retired",
+      "text": "Retired: the push design's history moved from docs/pickup.md to docs/incidents.md.",
+      "note": "Open on 2026-10-07, from retro 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-unasked",
+      "text": "Unasked: who validates an outer-world BAR outside a coaching container; what the spec's home repo is (Sprout or bars-engine).",
+      "note": "Open on 2026-10-07, from the texts-into-campaigns interview",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-the-steward-move-is-written",
+      "text": "The steward move is written: council/moves/text-to-campaign.md, from council/passes/6FACE_PASS_text-to-campaign1_2026-10-07.md (ledger council/ledger/2026-10-07-text-to-campaign-pass1.json).",
+      "note": "Open on 2026-10-07, from texts-to-campaigns pass 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-on-the-board-standing-unless-he-flips-them",
+      "text": "On the board, standing unless he flips them: ttc-move, ttc-section-unit, ttc-two-faces, ttc-model-by-step, ttc-validate-by-position, ttc-files-in-sprout (answers the spec's home: Sprout), ttc-slice-bar-validator (answers the…",
+      "note": "Open on 2026-10-07, from texts-to-campaigns pass 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-waiting-on-him",
+      "text": "Waiting on him: ttc-applications, how his own applications of the text enter step 1.",
+      "note": "Open on 2026-10-07, from texts-to-campaigns pass 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-next",
+      "text": "Next: once he answers, a new thread runs step 1 on The Skilled Helper's introduction, on Sonnet, and writes extract.yaml in Sprout.",
+      "note": "Open on 2026-10-07, from texts-to-campaigns pass 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-applied",
+      "text": "Applied: his board answers on oag-ea-practice, oag-main-order, oag-daemon-step (overruled) and oag-record (A), in bars-engine #264, a draft that stacks on #263 and targets its branch.",
+      "note": "Open on 2026-10-07, from the ontology game steers thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-merged-2026-10-07-23-50-utc",
+      "text": "Merged 2026-10-07 23:50 UTC: on his word (\"ok let's merge both of those\"): #264 into #263's branch, then #263 into main, with the 21:06 steers (oag-clean-up-moves).",
+      "note": "Open on 2026-10-07, from the ontology game steers thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-built",
+      "text": "Built: (council/ledger/2026-10-08-outreach-tab-build.json): the board has an Outreach tab and a live Podcast chases list on Your steps, both on the board's own contacts and shows, copied from…",
+      "note": "Open on 2026-10-08, from the outreach-on-board pass",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-dated-checks-by-2026-10-15",
+      "text": "Dated checks, by 2026-10-15: a chase Wendell saves shows on the contact at once; the first weekday morning brief after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower on his…",
+      "note": "Open on 2026-10-08, from the outreach-on-board pass",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-not-in-scope",
+      "text": "Not in scope: the Event Pipeline stays on its own page until a pass of its own (the Challenger's dissent).",
+      "note": "Open on 2026-10-08, from the outreach-on-board pass",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-the-pass",
+      "text": "The pass: council/passes/6FACE_PASS_3d-build2_2026-10-09.md, ledger 2026-10-09-3d-build-pass2.json.",
+      "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-answered-2026-10-09-17-30-utc",
+      "text": "Answered 2026-10-09 17:30 UTC: c3d-path = web, with his steer: \"I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside…",
+      "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-next",
+      "text": "Next: once he answers, a new thread runs step 1 on The Skilled Helper's introduction, on Sonnet, and writes extract.yaml in Sprout.",
+      "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-applied",
+      "text": "Applied: his board answers on oag-ea-practice, oag-main-order, oag-daemon-step (overruled) and oag-record (A), in bars-engine #264, a draft that stacks on #263 and targets its branch.",
+      "note": "Open on 2026-10-07, from the ontology game steers thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-07-merged-2026-10-07-23-50-utc",
+      "text": "Merged 2026-10-07 23:50 UTC: on his word (\"ok let's merge both of those\"): #264 into #263's branch, then #263 into main, with the 21:06 steers (oag-clean-up-moves).",
+      "note": "Open on 2026-10-07, from the ontology game steers thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-built",
+      "text": "Built: (council/ledger/2026-10-08-outreach-tab-build.json): the board has an Outreach tab and a live Podcast chases list on Your steps, both on the board's own contacts and shows, copied from…",
+      "note": "Open on 2026-10-08, from the outreach-on-board pass",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-dated-checks-by-2026-10-15",
+      "text": "Dated checks, by 2026-10-15: a chase Wendell saves shows on the contact at once; the first weekday morning brief after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower on his…",
+      "note": "Open on 2026-10-08, from the outreach-on-board pass",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-08-not-in-scope",
+      "text": "Not in scope: the Event Pipeline stays on its own page until a pass of its own (the Challenger's dissent).",
+      "note": "Open on 2026-10-08, from the outreach-on-board pass",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-the-pass",
+      "text": "The pass: council/passes/6FACE_PASS_3d-build2_2026-10-09.md, ledger 2026-10-09-3d-build-pass2.json.",
+      "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-answered-2026-10-09-17-30-utc",
+      "text": "Answered 2026-10-09 17:30 UTC: c3d-path = web, with his steer: \"I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside…",
+      "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-next-day-3",
+      "text": "Next, day 3: in a new thread on Sonnet, branch claude/project-thread-ottswt: in cave.js, build one generic chamber (drop the spot width/height/length/bend), add the portal step (charge, channel, face) before the chamber forms and dress…",
+      "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-bars-engine-production-deploys-fail",
+      "text": "bars-engine production deploys fail: since #252: function admin/books/[id]/import-gameplay is 250.51 MB, over Vercel's 250 MB.",
+      "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-the-podcast-outreach-move",
+      "text": "The podcast outreach move: is new: council/moves/podcast-outreach.md.",
+      "note": "Open on 2026-10-09, from the MTGOA podcast invitations thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-first-run",
+      "text": "First run: invitations for Marina and Dustin Muñoz de Martínez, Adam (Masculine Witness) and the WMHCA gala counselors are in the MTGOA project files at podcast/outreach/invitations-2026-10-09.md; the three new contacts are on the…",
+      "note": "Open on 2026-10-09, from the MTGOA podcast invitations thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-topic-pass-over-the-list",
+      "text": "Topic pass over the list: podcast/outreach/topic-brainstorm-2026-10-09.md.",
+      "note": "Open on 2026-10-09, from the MTGOA podcast invitations thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-the-coaching-game-is-the-front-door",
+      "text": "The coaching game is the front door: (cg-front-door, answered \"front\" in board read 1917).",
+      "note": "Open on 2026-10-09, from the coaching site thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-played-locally-at-phone-width",
+      "text": "Played locally at phone width: on 2026-10-09: the skip link reaches all four tiers in one tap, no stop shows a door before its kept sentence, and the wendell. host redirects to /coaching.",
+      "note": "Open on 2026-10-09, from the coaching site thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-waiting-on-wendell",
+      "text": "Waiting on Wendell: play it on his phone from #270's preview and merge if it works (his step from the pass, due 2026-10-12).",
+      "note": "Open on 2026-10-09, from the coaching site thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-the-pass",
+      "text": "The pass: sprout campaigns/skilled-helper/introduction/6FACE_PASS1_helper-skills_2026-10-09.md (sprout #31, draft), ledger council/ledger/2026-10-09-helper-skills-pass1.json in sprout.",
+      "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-waiting-on-him",
+      "text": "Waiting on him: hs-items-when (when the person hands over the item Ede reads) and hs-lamp-talisman (does the clay lamp become a talisman; it changes a Decided rule).",
+      "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-answered-board-read-20-35",
+      "text": "Answered (board read 20:35): items at the end of the talk (for testing), the lamp board yes, the tending screen overruled.",
+      "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-prototype-2-is-built",
+      "text": "Prototype 2 is built: (2026-10-09) at the same link, https://claude.ai/artifact/8Z3v7iLGSnRPRRiwE4BMrc: quests 0 to 5 in the talk box, trust on the portrait, items at the end of the talk read by Ede, the lamp board.",
+      "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-t1-failed",
+      "text": "T1 failed: fresh players guessed the right line 65 times out of 69 by tone.",
+      "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-wendell-s-playtest-2026-10-09-evening",
+      "text": "Wendell's playtest (2026-10-09 evening): wrong picks need a clear reason and a visible, narrative consequence, and should move the player forward without feeling punitive; his play tester pointed to Spiritfarer (the play is finding what…",
+      "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-next",
+      "text": "Next: a new thread builds prototype 3 to the same link: a need to find per person, a visible state that changes with each pick, a wrong pick as the wall beat with no lost day, and context-dependent lines (hs-t1-context).",
+      "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-09-pr-270-now-carries-the-forest-pr-268-s-head-plus-",
+      "text": "PR 270 now carries the forest (PR 268's head) plus the testimonial ask.: /coaching#your-words opens \"Have you worked with me?\" at the centre; it composes an email to Wendell and stores nothing.",
+      "note": "Open on 2026-10-09, from the coaching site thread (handed off at the context limit)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-10-next",
+      "text": "Next: prototype 3's next build tags each tending line with its moment (p2-act1-moments).",
+      "note": "Open on 2026-10-10, from the Skilled Helper Part II thread",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-10-overruled",
+      "text": "Overruled: bm-phone-first.",
+      "note": "Open on 2026-10-10, from the 20:19 board read (Big Mind cave, battle fr-big-mind-cave round 1)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "handoff-2026-10-10-next",
+      "text": "Next: the session that owns the Big Mind cave work (session 01TQdbd..., could not be messaged) applies the four picks and the overrule in round 2.",
+      "note": "Open on 2026-10-10, from the 20:19 board read (Big Mind cave, battle fr-big-mind-cave round 1)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
+   },
+   {
+    "key": "prs",
+    "title": "Open pull requests",
+    "blurb": "Pull requests open in the council, bars-engine and the Game Master's guide.",
+    "items": []
+   },
+   {
+    "key": "backlog",
+    "title": "bars-engine backlog",
+    "blurb": "Rows marked Ready in bars-engine's BACKLOG.md.",
+    "items": [],
+    "note": "no /nonexistent/.specify/backlog/BACKLOG.md; pass --bars <bars-engine checkout>"
+   }
+  ]
+ }
 }
