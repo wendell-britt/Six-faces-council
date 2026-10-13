@@ -54,6 +54,7 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "Intimate disclosure is not progression currency",
             "Every BAR has provenance; not every provenance-bearing object is a BAR",
             "it does not owe the garden a harvest",
+            "it may not name the player's experience for them",
         ]
         for phrase in required:
             with self.subTest(phrase=phrase):
@@ -69,6 +70,7 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "long answers prove depth",
             "every artifact is automatically a BAR",
             "composting requires a new artifact",
+            "a derived voice is the source person",
         ]
         lowered = self.quickstart.lower()
         for phrase in forbidden:

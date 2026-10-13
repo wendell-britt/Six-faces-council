@@ -643,6 +643,101 @@ composting:
     - no_avoidance_diagnosis_without_evidence
     - no_bulk_governance_authorization
 
+creative_reuse_and_personal_meaning:
+  decision_record: ontology/v0.1/source/council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md
+  governing_rule: >-
+    The project may name its ritual; it may not name the player's experience for them.
+  project_frame:
+    statement: ai_remix_is_not_necromancy_within_bars_ontology
+    type: ProjectMeaningFrame
+    authority: project_design_and_narrative_only
+    not_authority_for:
+      - personal_meaning
+      - authorship
+      - identity_or_likeness
+      - reuse_permission
+      - shared_world_consequence
+  objects:
+    - SourceCorpusRecord
+    - CreativeReuseProposal
+    - ReuseAuthorization
+    - DerivationRecord
+    - ProjectMeaningFrame
+    - PersonalMeaningReport
+    - AttributionRecord
+    - DerivedVoice
+    - IdentityContinuityClaim
+    - ReuseRejection
+    - ReuseConsequenceRecord
+  distinct_authorities:
+    project_meaning: designer_or_project_owner
+    personal_meaning: represented_person
+    source_authorship: source_provenance
+    generated_authorship: attributed_generation_and_curation_record
+    reuse_permission: authorized_rights_holder_and_affected_data_subject
+    identity_and_likeness: represented_person_and_applicable_rights
+    shared_world_consequence: scoped_observation_and_affected_agent_attestation
+  reuse_authorization_purposes:
+    - collection_or_import
+    - local_analysis
+    - external_model_processing
+    - feature_or_style_extraction
+    - generation
+    - persistent_storage
+    - personalization
+    - publication_or_performance
+    - collaborator_or_player_sharing
+    - commercial_use
+    - model_improvement_or_training
+    - derivative_voice_creation
+    - future_reuse
+    - correction
+    - revocation
+    - deletion
+  reuse_rejection_scopes:
+    - semantic_fit
+    - experiential_fit
+    - authorship
+    - attribution
+    - identity_or_likeness
+    - aesthetic_fit
+    - permission
+    - relationship
+  derived_voice_requirements:
+    - source_corpus_and_permissions
+    - selected_features
+    - character_identity_and_fictional_role
+    - prohibited_identity_or_impersonation_claims
+    - allowed_audiences_and_uses
+    - disclosure_and_explanation_policy
+    - correction_retirement_and_deletion_behavior
+  correction_actions:
+    - stop_relevant_future_use
+    - correct_attribution_and_identity_claims
+    - quarantine_regenerate_or_retire_unpublished_descendants
+    - version_or_relabel_published_descendants
+    - propagate_purpose_audience_retention_deletion_and_revocation_limits
+    - preserve_minimum_lawful_audit_history
+    - disclose_irreversible_consequences
+  equivalent_routes:
+    - non_ai
+    - non_reuse
+    - entirely_fictional
+    - newly_authored
+    - public_domain
+    - licensed
+    - abstracted
+    - manually_curated
+  prohibitions:
+    - no_compulsory_project_meaning
+    - no_derived_voice_as_source_person
+    - no_generated_statement_attributed_to_source_author
+    - no_source_authorship_as_blanket_permission
+    - no_inferred_third_party_or_deceased_person_permission
+    - no_rejection_as_resistance
+    - no_hidden_collection_or_unauthorized_reuse
+    - no_ai_reuse_gate_for_core_access_or_quality
+
 integral_attention_declaration:
   required_fields:
     - intended_pleasure
@@ -734,6 +829,12 @@ hard_invariants:
   - composting_does_not_complete_an_unmet_original_contract
   - composted_work_cannot_remain_hidden_active_debt
   - reactivation_requires_a_new_explicit_decision
+  - project_meaning_frame_does_not_bind_personal_meaning
+  - derived_voice_is_not_the_source_person_or_past_self
+  - source_authorship_is_not_blanket_reuse_permission
+  - not_mine_is_a_valid_scoped_correction
+  - stylistic_influence_contribution_generation_curation_acceptance_and_authorship_are_distinct
+  - archive_based_adaptation_is_not_required_for_core_access_or_quality
 
 minimum_record:
   required:

@@ -126,6 +126,16 @@ Keep `CompostingDisposition`, optional `CompostResidue`, and any later `Regenera
 
 Composting is not deletion, archival, supersession, or completion of the original quest. Preserve only the minimum permitted lineage; privacy or deletion rights may require a tombstone or no recoverable content. Later reuse needs its own authority and provenance.
 
+## Creative reuse and personal meaning
+
+BARS may frame AI remixing of a creator's archive as creative composting and “not necromancy.” That is a `ProjectMeaningFrame`, not a required interpretation.
+
+> **The project may name its ritual; it may not name the player's experience for them.**
+
+A player or creator may find the reuse generative, uncanny, inappropriate, exploitative, sacred, playful, grief-laden, “not mine,” or unresolved. Keep personal meaning, source authorship, generated authorship, attribution, identity or likeness, reuse permission, and shared-world consequence separate.
+
+A `DerivedVoice` is a character informed by a permitted corpus; it is not the source person, past self, or archived speaker. “Not mine” is a scoped correction that may reject meaning, authorship, attribution, identity, aesthetics, relationship, or permission. It must never be treated as resistance. Archive-based adaptation remains optional, with non-AI and non-reuse routes preserving the core game and quality floor.
+
 ## Evidence authority
 
 - Player report establishes reported meaning, experience, satisfaction, or intention; it does not establish external effect.
