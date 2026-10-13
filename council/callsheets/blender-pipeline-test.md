@@ -3,7 +3,7 @@
 
 ## Next
 J3 (picture to asset) is built: bars-engine draft PR #303, waiting on his look at
-`/mnt/project-files/3d-build/j3-result-2026-10-13/j3-sheet.png` (Your steps list `j3-look`; `cs-first-test`). His three
+`/mnt/project-files/3d-build/j3-result-2026-10-13/j3-sheet.png` (Your steps list `blender-cloud-test`, step 5; `cs-first-test`). His three
 pictures are three `obj(...)` lines in `chamber.py`: mushrooms 0.894, amber crystals 0.855, root knot (hung from the
 roof) 0.819, so two of three pass the number. `from_picture.py` gained `--flat` (plain grey backgrounds lost the pale
 parts) and modes `mushrooms` and `roots`. Seen: crystals have five shards to the picture's ten (P4 gap); mushroom
