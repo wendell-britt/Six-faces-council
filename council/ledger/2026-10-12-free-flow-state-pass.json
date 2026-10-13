@@ -1,0 +1,451 @@
+{
+ "date": "2026-10-12",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "somatic ontology",
+ "record": "council/passes/6FACE_PASS_free-flow-state_2026-10-12.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's message in the project chat, 2026-10-12 19:17 Pacific",
+ "pulled_first": {
+  "positions": 618,
+  "questions": 156,
+  "terms": 16,
+  "causes": 11,
+  "steer": 1,
+  "result": "every saved answer is recorded",
+  "steps": "not read"
+ },
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    7,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 24,
+   "name": "Turning",
+   "cn": "復",
+   "pinyin": "fù",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "What came back is one line deep.",
+   "image": "☳ thunder beneath ☷ earth. One firm line has come back at the very bottom, under five yielding ones.",
+   "situation": "The solstice, the point where light starts back. The old text gives seven days as the period of return, says friends come and it is fine, and treats going out and coming in as equally safe. What has come back is one line deep, and it is the whole event.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    9,
+    7,
+    7,
+    7,
+    9,
+    9
+   ],
+   "changing_lines": [
+    1,
+    5,
+    6
+   ],
+   "n": 1,
+   "name": "Unbroken",
+   "cn": "乾",
+   "pinyin": "qián",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Every line here sends, and the return has nowhere to land.",
+   "image": "☰ heaven beneath ☰ heaven. Six unbroken lines, and no place in the figure that yields.",
+   "situation": "Every line is pushing and every line is capable. This is the most able configuration in the set, and it has nowhere to put anything that arrives. The tradition walks a dragon up through six stages for exactly this reason — force has to learn timing, because force alone already knows everything else.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 32,
+    "name": "Endurance",
+    "cn": "恆",
+    "pinyin": "héng",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "This exact exchange has happened before.",
+    "image": "☴ wind beneath ☳ thunder. Wind underneath and thunder above, an arrangement that keeps recurring.",
+    "situation": "Duration. The old reading makes this a marriage: two things in fixed relative position, lasting because the position is stable. The counsel is to hold the course and keep moving, so what endures here is a motion that repeats.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    6,
+    7,
+    9,
+    8,
+    7,
+    9
+   ],
+   "changing_lines": [
+    1,
+    3,
+    6
+   ],
+   "n": 57,
+   "name": "Persuasion",
+   "cn": "巽",
+   "pinyin": "xùn",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "An effect is already happening that you have not admitted to.",
+   "image": "☴ wind beneath ☴ wind. A yielding line at the base of each half, and the figure gets in everywhere.",
+   "situation": "Wind repeated. The character means to enter, to kneel, to go underneath. The old counsel calls the success small and advises having somewhere to go and someone to see, and the mode throughout is gradual: a thing that works by getting under.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 60,
+    "name": "Measure",
+    "cn": "節",
+    "pinyin": "jié",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "You are past what you can hold and you have not said where the edge is.",
+    "image": "☱ lake beneath ☵ water. A lake with more water above it than the basin holds.",
+    "situation": "The character is the joint of a bamboo, the node that divides the stalk into lengths and makes it strong. Limitation as structure. The old text warns at once against bitter limitation, since a rule too harsh to keep gets broken and takes the rest of them with it.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    7,
+    8,
+    7,
+    6,
+    6,
+    9
+   ],
+   "changing_lines": [
+    4,
+    5,
+    6
+   ],
+   "n": 22,
+   "name": "Adornment",
+   "cn": "賁",
+   "pinyin": "bì",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shows": "You have dressed this, and the dressing is doing real work.",
+   "image": "☲ fire beneath ☶ mountain. A fire at the base of a hill, throwing light up the whole face of it.",
+   "situation": "Form applied to something already standing. The mountain gets lit and the rock stays rock. The tradition runs this figure upward toward plainness and gives the top line as white adornment, which is form that has run out of ornament.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 49,
+    "name": "Molting",
+    "cn": "革",
+    "pinyin": "gé",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     1,
+     0
+    ],
+    "shows": "A skin is coming off you, and the new one is soft.",
+    "image": "☲ fire beneath ☱ lake. Fire underneath water, two things in one figure that undo each other.",
+    "situation": "The character means hide, the animal skin, and by extension the shedding of one. The old text ties the change to a named day and says belief arrives after the change has happened. A molt gets trusted in retrospect.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    7,
+    9,
+    7,
+    6,
+    8,
+    8
+   ],
+   "changing_lines": [
+    2,
+    4
+   ],
+   "n": 11,
+   "name": "Mingling",
+   "cn": "泰",
+   "pinyin": "tài",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ],
+   "shows": "This is working, and you should know why.",
+   "image": "☰ heaven beneath ☷ earth. Heaven has taken the lower place, so its rising and earth's settling cross in the middle.",
+   "situation": "The two halves face each other. Heaven below sends its force up through earth above, which comes down to receive it, and the exchange runs in both directions at once. The tradition treats this as the most fortunate arrangement in the set and immediately warns that flat ground turns to slope.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 55,
+    "name": "Fullness",
+    "cn": "豐",
+    "pinyin": "fēng",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "This is at its peak and you are saving some of it.",
+    "image": "☲ fire beneath ☳ thunder. Light and movement together, both at the top of their range.",
+    "situation": "Abundance at the peak. The old text puts the sun at midday and says at once that what is full begins to wane, then fills the lines with eclipse — stars visible at noon, a curtain thick enough to show the polestar. The eclipse imagery sits inside the abundance itself.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    8,
+    6,
+    8,
+    8,
+    8,
+    9
+   ],
+   "changing_lines": [
+    2,
+    6
+   ],
+   "n": 23,
+   "name": "Erosion",
+   "cn": "剝",
+   "pinyin": "bō",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+   ],
+   "shows": "The ground under this is going and you have not said so.",
+   "image": "☷ earth beneath ☶ mountain. Five yielding lines have risen through the figure, leaving one firm line at the top.",
+   "situation": "A mountain wearing down into the ground it stands on. The process is slow, structural, and well advanced by the time anyone can see it. The counsel is to stay still and decline any move, because the season has already set its direction and takes whatever effort you spend against it.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 7,
+    "name": "Muster",
+    "cn": "師",
+    "pinyin": "shī",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "What would organise this is a fact you have not said.",
+    "image": "☵ water beneath ☷ earth. One firm line among five yielding ones, holding the whole figure to a shape.",
+    "situation": "Water stored underground: a resource that is present, invisible, and organised. The single strong line is the discipline that turns a crowd into a force. The old warning is that this works with an experienced hand and a clear cause, and the same gathering under any other conditions is a mob.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  }
+ ],
+ "casts_note": "The first run printed without --json, so the coin tosses were not kept. Line values, changing lines and readings were rebuilt from the printed lines; tosses are null.",
+ "positions": [
+  "ff-two-reports",
+  "ff-aliveness-is-theirs",
+  "ff-no-daemon-on-aliveness",
+  "ff-name-what-is-here",
+  "ff-gold-minted-by-grounding",
+  "ff-every-pair-has-a-relation"
+ ],
+ "questions": [],
+ "daemon_reports": [],
+ "subagent_tokens": 0,
+ "unanimous": false,
+ "dissent": "The Architect would hold ff-name-what-is-here until the golds have a mechanic in this flow. The Regent would hold ff-no-daemon-on-aliveness until the 18 October phone play.",
+ "tests_dated": [
+  {
+   "by": "2026-10-18",
+   "test": "T1 (Challenger): read the saves of the 18 October play and any sitting with the record on; count where a player names a gold with a blocked sensation at the place, and where a player reports free flow and names no gold. Resolves whether the body report and the gold report are separate in practice (ff-two-reports); unlocks whether the gold offer stays its own screen or folds into the return question. The number of sittings that makes the count enough is Wendell's."
+  }
+ ],
+ "scorecard": "The blocked-move pass's tests one and two are ungraded: they need saves, and no player has played the flow."
+}
