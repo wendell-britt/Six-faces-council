@@ -7588,6 +7588,61 @@
    "auto": true,
    "pos": "The path is built in the Cave of Lessons, stacked on the cave levels work (bars-engine #309), as one more place beside the hall of the six. The separate Big Mind page stays reachable until you have walked the path on your phone, then it retires. This stands unless you flip it.",
    "why": "merge-layout: the two caves become one. lv-old-walk keeps a tested page until its replacement is in your hand. #301 names what still has to come across from the Big Mind page: the refusal path, the W.A.V.E., the speaking turns and saving."
+  },
+  {
+   "id": "bi-three-layers",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "battle intake 1",
+   "auto": true,
+   "pos": "The fight is clunky because three systems are stacked in it: the role-playing menu from sprout #29 (Fight, Magic, Listen, Item, HP, mana, levels), Root's push hands (eight gates, weathers, stances, the seize) and WAVE (Welcome, Validate, Exhale, each under two names). Each came from a real ruling and none was removed when the next arrived. A first-time player meets about 25 concepts in one fight, and the talk that made the spirit plays no part in it. This stands unless you flip it.",
+   "why": "Your words: 'pretty clunky and unintuitive... This one's not meeting the mark'. The Skeptic daemon counted the built fight (sprout prototype.template.html and slice/wave.js). Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
+  },
+  {
+   "id": "bi-line-comes-back",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "battle intake 1",
+   "auto": true,
+   "pos": "Whatever shape the fight takes, the spirit opens by speaking the wrong line the player picked, and it carries the need the talk showed in brackets (Ama Rell's: 'She did not want it named a burden. She wanted room.'). The charge stores those words. This stands unless you flip it.",
+   "why": "Your ask was how spirits from wrong answers become meaningful encounters. Today the fight never shows the wrong line; encounters.yaml already holds the line and the need for every moment. Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
+  },
+  {
+   "id": "bi-one-tap",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "battle intake 1",
+   "auto": true,
+   "pos": "One tap a turn, at most four choices on screen, the spirit's next push written in words before the player picks, three to five turns a fight (about ninety seconds on a phone), and one name for each action on screen and in code. This stands unless you flip it.",
+   "why": "wave-acknowledge-turn already took Slay the Spire's shown intent. The Skeptic found every action named twice, and the Player daemon asked for a ninety-second fight. Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
+  },
+  {
+   "id": "bi-49-interim",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "battle intake 1",
+   "auto": true,
+   "pos": "Sprout #49 (water answers fire) rides on the Lamp-keeper rekey stack as the interim rule, so your next phone play does not show the rule you ruled wrong. Its Earth default stands with it: until the traveler has a move that controls earth, an Earth foe strikes only with weathers the first four moves can meet. The redesign replaces this code and keeps your ruling. This stands unless you flip it.",
+   "why": "Your ruling wave-water-controls-fire, and your pending phone play of the Lamp-keeper's track, which still shows fire answering water without #49. Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
+  },
+  {
+   "id": "bi-one-spirit-first",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "battle intake 1",
+   "auto": true,
+   "pos": "After your answers to bi-what-for and bi-chart, one fresh thread builds the chosen shape for one spirit, Ama Rell's Fixer at P1, as its own phone page. You play it before any track's fights change, and five cold players test it (B1). This stands unless you flip it.",
+   "why": "A first build of a new fight can miss as this one did; building one spirit keeps a miss cheap. Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
   }
  ],
  "questions": [
@@ -12407,6 +12462,64 @@
      "c": "Part III goes to your phone as it is, and the target is set from how it feels."
     }
    ]
+  },
+  {
+   "id": "bi-what-for",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "q": "What is a spirit fight for?",
+   "why_you": "It decides what the fight teaches. A and B take Root's trigram moves out of the spirit fight (they stay in Root and the dojo), which reverses your wave-trigram-moves steer: 'The merging of root and the mechanics of spirit battle has the solution I think I'm looking for'.",
+   "not_before": "Each earlier ruling fixed one layer of the fight. Nobody asked what the whole fight is for until you called it clunky on 2026-10-13.",
+   "options": [
+    {
+     "v": "urge-then-line",
+     "label": "A. Meet the urge, then say the line (recommended)",
+     "c": "The spirit is your urge speaking the wrong line. The moves are Welcome, Acknowledge, Validate and Exhale, done on the urge, as your enc-inner-moves steer first asked. When it is met, you say the line you missed in the talk, and that ends the fight. It teaches emotional alchemy in the fight and the book in the finish."
+    },
+    {
+     "v": "rematch",
+     "label": "B. The rematch",
+     "c": "The spirit is the talk again. Your moves are the helping skills as cards, and the fight ends when the spirit says what it needed. It teaches the book only."
+    },
+    {
+     "v": "push-hands",
+     "label": "C. Push hands, trimmed",
+     "c": "Keep the trigram answers with water controlling fire, and cut the menu, mana and the seize, so a turn is: read the strike, pick one of four moves. It keeps Root's moves and teaches the cycle, and the talk stays only where the spirit came from."
+    }
+   ],
+   "pass": "battle intake 1",
+   "why": "Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
+  },
+  {
+   "id": "bi-chart",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "q": "How does the five-element chart decide a turn?",
+   "why_you": "It sets how hard the fight is, and whether the elements are taught by reward or by failure.",
+   "not_before": "The answer key arrived with the trigram moves (wave-trigram-moves) and was never put to you as a choice.",
+   "options": [
+    {
+     "v": "type-chart",
+     "label": "A. Type chart (recommended)",
+     "c": "Every move works. A move made from the element that controls the spirit's feeling lands double (water on fire); one that feeds it lands half. No wrong move, only stronger and weaker, as in Pokémon."
+    },
+    {
+     "v": "answer-key",
+     "label": "B. Answer key",
+     "c": "Only the controlling move lands; any other lets the push land, as #49 builds it today."
+    },
+    {
+     "v": "colour",
+     "label": "C. Colour only",
+     "c": "The element names the feeling the spirit carries and changes nothing in the numbers."
+    }
+   ],
+   "pass": "battle intake 1",
+   "why": "Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
   }
  ],
  "causes": [
