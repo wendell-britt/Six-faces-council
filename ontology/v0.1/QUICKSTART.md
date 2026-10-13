@@ -100,6 +100,14 @@ A roadblock is first a scoped observation: something prevents a named action, ro
 
 AI may propose an `IntentionAlignmentHypothesis` only against a declared intention and relevant evidence. It must not psychologize a technical defect, infer hidden desire, or treat refusal as confirmation. At the technical layer, metabolization converts failure into repair, verification, safer routing, reusable learning, or provenance; it does not require emotional processing. A blocker may instead be rested, accommodated, rerouted, left unresolved, abandoned, or composted.
 
+## Session depth, performance, and disclosure
+
+Gameplay performance is real design material: performed practices can create capacity, relationship, consequence, and good stories. Record the named performance without treating it as proof of an unseen inner state.
+
+Answer length, intimate specificity, fear naming, and mask identification do not establish genuineness, depth, readiness, transformation, or deftness. Use a correctable `ResponseAffordanceProfile` to describe what the supplied material can support. More relevant material may permit more specific tailoring, but it must not buy better baseline craft, core progress, power, credentials, or social standing.
+
+Keep artifact specificity, richness, quality, and fit separate. **Intimate disclosure is not progression currency.** Offer optional follow-up, presets, fictionalized or symbolic input, player selection, and private-local routes where possible. The system must never weaken an artifact to pressure disclosure. Pacing adaptation remains visible, reversible, and player-correctable.
+
 ## Evidence authority
 
 - Player report establishes reported meaning, experience, satisfaction, or intention; it does not establish external effect.
