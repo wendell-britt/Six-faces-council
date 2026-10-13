@@ -151,3 +151,11 @@ The future BARS `SessionDepthSignal` was reconstructed into response volume, res
 The ontology now uses `ResponseMaterial`, `ResponseAffordanceProfile`, `PracticePerformanceRecord`, scoped `DepthClaim`, `InputSufficiencyContract`, `ArtifactTailoringPlan`, `ArtifactFitFinding`, `PacingAdaptationProposal`, and `DeftnessFinding`. Gameplay performance remains valid evidence of performed practice and may produce development and story. Disclosure volume, fear intensity, and verbal vulnerability do not prove genuineness and cannot become progression currency.
 
 Relevant, permitted material may support more specific artifacts, but concise and private players retain the same baseline craft and access to the core game. The full ruling and required implementation tests are recorded in `council-phase-a/session-depth/reconstruction-and-decision.md`. No BARS implementation or data migration was authorized.
+
+## BAR scope reconstruction and decision — 2026-10-12
+
+The broad BAR kernel in `FOUNDATIONS.md` was reconciled with the council brief's narrower charged-possibility wording. BAR is now defined as an intentionally captured, portable kernel of potential with stable identity and provenance. Provenance is necessary but does not turn every record or artifact into a BAR.
+
+`ChargedBAR` is one specialization rather than the parent class. `BARExpression` preserves the distinction between the kernel and the quests, rules, lore, decisions, specifications, plans, norms, branches, and artifacts through which it blooms. `BARPromotion`, `BARRoleRelease`, `BARProvenanceRecord`, and `BARPortabilityPolicy` make identity, release, lineage, and permission explicit.
+
+The full ruling is recorded in `council-phase-a/bar-scope/reconstruction-and-decision.md`. No BARS schema migration or automatic reclassification of existing objects was authorized.
