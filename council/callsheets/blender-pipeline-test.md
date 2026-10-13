@@ -1,4 +1,4 @@
-2026-10-13 (updated 22:20)
+2026-10-13 (updated 22:35)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
@@ -6,8 +6,10 @@ J4 (character creator, robe set) is built: bars-engine draft #312. `content/onto
 `--build slight|average|broad --palette dusk|jade|hemp` (or `--all --sheet`) makes a faceless figure: the body map's
 parts per build, the cave avatar's 16 joints, cave.js poseAvatar baked as "Walk" (1 s, 25 keys), and the robe set's
 under-layer painted on (crossed collar left over right, tunic to mid-thigh, sash, cuffs, ankle ties, shoes). Nine GLBs
-262 to 273 KB (line 300); tests J4 and J4b pass. Waiting on board step `j4-look-01` (Your steps `blender-cloud-test`,
-step 7), sheet `/mnt/project-files/3d-build/j4-characters-2026-10-13/j4-sheet.png` and `j4-walk.png`. On his yes, #312
+262 to 273 KB (line 300); tests J4 and J4b pass. Round 1 (`j4-look-01`, his notes 22:14): collars "broken", proportions "hitting uncanny valley". Round 2 (commit aaf9cf53): the collar
+is one band cut exactly along its edges, over both shoulders and round the neck; the body is stylized (bigger head, plain trunk,
+thicker limbs, mitten hands); 246 to 266 KB. Waiting on board step `j4-look-02` (step 8), pictures in
+`/mnt/project-files/3d-build/j4-round2-2026-10-13/`. On his yes, #312
 goes ready and J5 (clothing: long robe, sash, topknot as skinned garments on this rig, root-game's garment work first)
 starts in a fresh thread. The figures reach the game with J5's garments, wired into `cave.js` together.
 
