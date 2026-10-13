@@ -100,6 +100,22 @@ A roadblock is first a scoped observation: something prevents a named action, ro
 
 AI may propose an `IntentionAlignmentHypothesis` only against a declared intention and relevant evidence. It must not psychologize a technical defect, infer hidden desire, or treat refusal as confirmation. At the technical layer, metabolization converts failure into repair, verification, safer routing, reusable learning, or provenance; it does not require emotional processing. A blocker may instead be rested, accommodated, rerouted, left unresolved, abandoned, or composted.
 
+## Session depth, performance, and disclosure
+
+Gameplay performance is real design material: performed practices can create capacity, relationship, consequence, and good stories. Record the named performance without treating it as proof of an unseen inner state.
+
+Answer length, intimate specificity, fear naming, and mask identification do not establish genuineness, depth, readiness, transformation, or deftness. Use a correctable `ResponseAffordanceProfile` to describe what the supplied material can support. More relevant material may permit more specific tailoring, but it must not buy better baseline craft, core progress, power, credentials, or social standing.
+
+Keep artifact specificity, richness, quality, and fit separate. **Intimate disclosure is not progression currency.** Offer optional follow-up, presets, fictionalized or symbolic input, player selection, and private-local routes where possible. The system must never weaken an artifact to pressure disclosure. Pacing adaptation remains visible, reversible, and player-correctable.
+
+## BAR scope
+
+A `BAR` is an intentionally captured, portable kernel of potential with stable identity and provenance. Every BAR has provenance; not every provenance-bearing object is a BAR. A note, artifact, quest, rule, specification, log, or decision receives BAR identity only when it is explicitly captured as a reusable kernel.
+
+Charge is optional. A `ChargedBAR` is one specialization or role, alongside kernels originating in requests, observations, opportunities, design ideas, decisions, rules, lore, imported artifacts, or forks.
+
+Keep the kernel distinct from its `BARExpression`. A BAR may bloom as a quest, rule, lore, feature specification, plan, norm, branch, or artifact without becoming reducible to that expression. Capture creates lineage, not implementation debt. Portability carries a permission policy; it never means unrestricted reuse.
+
 ## Evidence authority
 
 - Player report establishes reported meaning, experience, satisfaction, or intention; it does not establish external effect.

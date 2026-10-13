@@ -310,6 +310,28 @@ An `IntentionAlignmentHypothesis` is a correctable interpretation comparing a de
 
 A `RoadblockResponse` may repair, retry, test, request help, accommodate, alter the environment, acquire capability, renegotiate, reroute, pause, rest, accept, leave unresolved, set down, abandon, or compost. A `MetabolizationOutcome` records reusable repair, verification, learning, or provenance. Technical metabolization does not imply emotional processing; experiential metabolization is valid only according to the represented person's evidence.
 
+### 8.7 Session depth, practice performance, and artifact tailoring
+
+The legacy future `SessionDepthSignal` does not measure inner depth. `ResponseMaterial` records what the player supplied in a permitted modality. A correctable `ResponseAffordanceProfile` identifies relevant specificity, constraints, relationships, examples, ambiguity, imagery, modality coverage, and preserved omissions for a declared purpose. Character count establishes only character count.
+
+A `PracticePerformanceRecord` records observable action against an explicit move or encounter contract. Performance can be gameplay: it may create capacity, story, relationship, and consequence. It does not establish genuineness, vulnerability, transformation, readiness, or whole-person development.
+
+A `DepthClaim` always names its scope and evidence authority. Player-reported experiential depth, design resolution depth, interpretive complexity, relational depth, artifact specificity, and demonstrated deftness are distinct claims. A `DeftnessFinding` requires repeated relevant performance evidence.
+
+An `ArtifactTailoringPlan` uses permitted ResponseMaterial under an `InputSufficiencyContract`. Artifact specificity, richness dimensions, quality, and fit remain separate. More usable material can support more specific tailoring but cannot purchase better baseline craft, core progress, power, credentials, or social standing. `ArtifactFitFinding` relies on the relevant player, recipient, artifact criteria, or external consequence evidence.
+
+Disclosure volume and intimacy are not progression currency. Equivalent expressive routes and a quality floor protect concise, private, second-language, disabled, neurodivergent, culturally guarded, symbolic, fictionalized, and nonverbal participation. A `PacingAdaptationProposal` remains visible, reversible, and player-correctable.
+
+### 8.8 BAR kernel and expression boundary
+
+A `BAR` is an intentionally captured, portable kernel of potential with stable identity and provenance. Provenance is required but not sufficient: source material, evidence, logs, commits, artifacts, quests, rules, and specifications are not automatically BARs.
+
+A `ChargedBAR` is a BAR whose source or active energy includes represented charge. Charge is optional and may change without creating or ending BAR identity. Other source modes include requests, observations, opportunities, problems, design ideas, decisions, rule or norm proposals, lore, imported artifacts, and forks.
+
+A `BARExpression` is a form through which a BAR acts or becomes legible. One BAR may have many expressions; one expression may combine many BARs. An expression becomes a BAR in its own right only through an explicit `BARPromotion`. `BARRoleRelease` may end active kernel responsibility without erasing historical identity or lineage.
+
+A `BARProvenanceRecord` records origin and typed lineage. A `BARPortabilityPolicy` limits worlds, audiences, purposes, reuse, sharing, and fork permissions. Portable never means permissionless. Capture permits storage, dormancy, development, transfer, or release; it does not create implementation obligation.
+
 ## 9. Encounter ending and scoped completion
 
 Ending, resolution, quest completion, arc conclusion, satisfaction, and transformation are distinct claims.
@@ -425,6 +447,17 @@ An AI operating with this ontology must not:
 40. collapse roadblock observation, classification, causal account, meaning, response, and outcome;
 41. erase structural, environmental, relational, accessibility, or safety constraints by reframing them as inner work;
 42. require emotional disclosure as a condition of technical diagnosis or repair.
+43. infer session depth, genuineness, transformation, readiness, trust, or deftness from response length or intimate specificity alone;
+44. treat disclosure volume, pain magnitude, or vulnerability performance as progression currency;
+45. intentionally weaken a baseline artifact to pressure additional disclosure;
+46. equate PracticePerformanceRecord with an inner-state or transformation finding;
+47. conflate artifact specificity, richness, quality, and fit;
+48. make an irreversible pacing or personalization decision from an unconfirmed behavioral proxy.
+49. treat every provenance-bearing object, BAR output, artifact, quest, rule, or specification as automatically possessing BAR identity;
+50. require or infer emotional charge as a condition of BAR identity;
+51. collapse a BAR kernel into its current expression;
+52. treat BAR capture as implementation obligation;
+53. interpret BAR portability as unrestricted permission to disclose, copy, reuse, or fork.
 
 ## 14. Minimum viable ontology record
 
