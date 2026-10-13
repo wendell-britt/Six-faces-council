@@ -17,7 +17,7 @@ are about. The cave fork took the narrower reading (3-2-1 switching, sliders and
 run in place in the cave); it stands unless he flips it. The cave's DESIGN.md has "The WAVE room, second slice". Next: his play
 of the second slice, then fixes from his notes in a fresh thread.
 
-## Rulings folded in (Wendell, 2026-10-13)
+## Rulings folded in (Wendell, 2026-10-13, from `somatic-ontology.md`)
 - `sb-no-pass-at-daemon`: a 3-2-1 skipped in the cave is picked up in the WAVE room. The room is where the journey begins: the player
   lets spirits in there, or starts a cave journey from there. The cave never makes the player finish a 3-2-1 at the daemon; the room
   holds the skipped one until they come back. Build is not started; this is the call-sheet record only.
@@ -25,7 +25,8 @@ of the second slice, then fixes from his notes in a fresh thread.
   "Working with" picker). The fourth waiting at the door is a cap on the party, not one-at-a-time; any line elsewhere that assumes one
   daemon at a time is superseded.
 
-- Chat ruling, Wendell, 2026-10-13 22:29 (in the cave branch seams thread): "Cave is breaking here and if you sit down
+## Chat ruling (Wendell, 2026-10-13)
+- Wendell, 2026-10-13 22:29 (in the cave branch seams thread): "Cave is breaking here and if you sit down
   without going through the whole wave process a spirit is auto created. It should only emerge once it’s been engaged
   with". A spirit emerges only after the whole W.A.V.E.; standing up partway leaves none. This flips the sit-anywhere
   design's "standing up partway leaves a spirit". Built in the cave by bars-engine #310; in the room, only a charge worked
