@@ -7698,6 +7698,28 @@
    "auto": true,
    "pos": "The numbers are placeholders set so the fight runs three to five turns: Wind Draw alone wins in 3 turns, a plain move in 5, and Flame Follow alone loses. Taking the fight costs 2 mana. The spirit's push grows heavy every third turn, and the page says so before you tap. This stands unless you flip it.",
    "why": "bi-one-tap sets three to five turns and the push shown in words. Checked by a scripted run of each move at phone width. Built in sprout #50."
+  },
+  {
+   "id": "sf-moves-from-people",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "spirit fight build 1",
+   "auto": true,
+   "pos": "You get moves from people and spirits, and the fight page will show where each one came from. Master Yun teaches the first moves at the dojo. Each of the five villages teaches its own style in Act II, so you hold a move of every element only late in the game. Spirits teach the four corner moves. A daemon you bring home teaches its own move after a few meetings. The test page handed you four moves with no teacher behind them, which is why they made no sense. This stands unless you flip it.",
+   "why": "Your question in chat, 13 October: \"How do player get access to the moves? How do they learn new ones?\" The record already answers it: magic-from-teachers, wave-teacher (Master Yun), wave-corners-from-spirits, wave-integrate-ladder, and design.md's five villages (\"teaches one style\")."
+  },
+  {
+   "id": "sf-moves-grow",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "spirit fight build 1",
+   "auto": true,
+   "pos": "A move gets stronger by use, and the gain is permanent. Each move has levels 1 to 5, rises a level every 8 uses, and hits about 12% harder per level (about 1.5 times at level 5). Strength bought at the dojo is a settlement talisman that goes dark in the forest. Spirits set on a talisman boost the moves of their element. The numbers are placeholders. This stands unless you flip it.",
+   "why": "Your question in chat: \"How do the moves get stronger?\" design.md answers it: gate levels by practice (Decided, permanent), the dojo talisman (Decided), and the grid (Proposed)."
   }
  ],
  "questions": [
@@ -12575,6 +12597,35 @@
    ],
    "pass": "battle intake 1",
    "why": "Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
+  },
+  {
+   "id": "sf-who-fights",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "spirit fight build 1",
+   "q": "Whose moves are used in a spirit fight: yours, or your ally spirit's?",
+   "why_you": "Two of your own rulings point different ways. design.md (Decided, allies) says \"In forest fights the ally fights the other spirit\", which is Pokémon. Pass 3 and magic-from-teachers have you fight your own urge with moves people taught you. The answer decides what the next build of Ama Rell's Fixer shows.",
+   "not_before": "Every spirit fight built so far had you fighting alone, and nobody set it against the Decided ally rule until you asked where the moves come from.",
+   "options": [
+    {
+     "v": "ally",
+     "label": "A. Your ally spirit fights (recommended)",
+     "c": "As in Pokémon. You befriend a spirit, it fights the urge with the moves of its element, and it levels by sparring and fighting. Each turn you pick its move. You still finish by listening. This fits your monster-fight steer and the Decided ally rule. Part II's traveler would need an ally first."
+    },
+    {
+     "v": "you",
+     "label": "B. You fight with what people taught you",
+     "c": "Your moves come from Yun, the villages and the spirits, and grow by use, as sf-moves-from-people and sf-moves-grow say. The urge is yours, so you meet it yourself. Avatar more than Pokémon."
+    },
+    {
+     "v": "both",
+     "label": "C. Both act each turn",
+     "c": "Your ally attacks and you take one action of your own each turn. This is the richest option, but it means two taps a turn, which breaks bi-one-tap."
+    }
+   ],
+   "why": "Source: council/ledger/2026-10-13-spirit-fight-chat.json; sprout #50."
   }
  ],
  "causes": [
@@ -20889,6 +20940,18 @@
      "sage"
     ],
     "pass": "The daemon path"
+   },
+   "sf-earth-loadout": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:17:22Z",
+    "record": "council/ledger/2026-10-13-spirit-fight-chat.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "spirit fight build 1"
    }
   },
   "questions": {
