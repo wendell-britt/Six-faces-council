@@ -1,4 +1,4 @@
-2026-10-12 (updated 21:45)
+2026-10-13 (updated 04:30)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -8,6 +8,11 @@ through the poll's W.A.V.E. (grows by the Allow sliders; release lifts and fades
 optional words and Not now, and three first-person turns speaking as the voice. Board: `bmw-charge-seen`, `bmw-exhale-spirit`,
 `bmw-appreciate-words`, `bm-be-turns`. Phone link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU (version 7). Next: his play,
 then fixes in a fresh thread.
+
+**Next thread, 2026-10-13:** Wendell in the cave-textures thread: "Also we need to import the WAVE process into this map. I
+think we're almost to the point where we can merge the bigmind cave and this cave". One fresh thread: bring #278 and #282's
+W.A.V.E. and sit-down onto the Cave of Lessons map (bars-engine #294: stone, per-charge shapes, carried light with
+`carryLight` for spirits), then fold the Big Mind cave into it. #278 and #282 are not on main; rebase them onto #294 first.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth

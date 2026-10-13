@@ -1,12 +1,13 @@
-2026-10-13 (updated 03:15)
+2026-10-13 (updated 04:30)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Wet stone on the
-tunnel walls, dry stone on the floor, crystal vein on the spires and crystal beds, tinted by the charge colour; tiles from
-`cave/bake_tiles.py` (shared nodes in `cave/textures.py`). 128 tests pass, 575 KB of 3 MB. Phone page:
-https://claude.ai/artifact/23neJJJgywAygUqiJffGvc (version 5). Next: his play on the phone; #294 to ready once he has seen
-it. J2 (adding objects) starts after. The Big Mind cave takes the stone when #278 and #282 land on top of #294.
+The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Since then, from his
+play notes: pieces grow out of the walls and roof by zone, spires are stochastic stalagmites and stalactites, roots hang from
+the roof, each charge has its own cave shape (numbness is blackness), a lamp on the figure lights only what is near
+(`carryLight` ready for spirits), and wood is a bush, grass and a root. 133 tests pass. Phone page:
+https://claude.ai/artifact/23neJJJgywAygUqiJffGvc (version 7). Next: his play; #294 to ready once he has seen it. J2
+(adding objects) starts after. The WAVE import and the Big Mind merge are their own thread (big-mind-cave sheet).
 
 Part 1 is built: bars-engine `tools/blender-cloud/tests/`, PR #290 (merged 2026-10-13), ledger `2026-10-13-blender-pipeline-tests-built.json`.
 R2 passed: the kit rebuilds byte for byte, so exact matching stands. One command runs everything:
