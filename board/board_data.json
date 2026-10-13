@@ -6932,6 +6932,39 @@
    "auto": true,
    "pos": "The words-and-pictures tests run in this order, one job per thread: the recipe and its token cost, then textures, then adding objects, then picture to model, then the character creator, then clothing. They start after cave studio's open pull request (#285) merges, because they touch the same cave files. This stands unless you flip it.",
    "why": "Each later job is one recipe line, so the recipe's cost decides whether the rest is cheap. The cave-studio strand owns the cave files until #285 lands (council/strands.py). Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  },
+  {
+   "id": "bpt-licence-stop",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "Blender pipeline tests",
+   "auto": true,
+   "pos": "The viewer build stops cleanly when a model's licence is missing. Today a downloaded model whose licence note has no licence crashes the build with an error instead of a plain stop message. It never builds a page, so nothing leaks, but the message hides why. The next Blender thread adds the stop message, and test G2 turns from a known gap into a pass. This stands unless you flip it.",
+   "why": "Found by the first test run (G2). Your rule that only CC0 or own work goes into a page (cs-cc0-or-own) already says what the build must do; this only makes it say so. Source: bars-engine PR #290, .specify/specs/blender-pipeline-test/tasks.md."
+  },
+  {
+   "id": "bpt-no-restricted-flag",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "Blender pipeline tests",
+   "auto": true,
+   "pos": "The viewer build loses its --allow-restricted switch. Today that switch lets a Royalty Free model into a page, which your CC0 rule forbids. Removing it is simpler and safer than marking such pages unpublishable. Previews of Royalty Free models still work, since they never go through the page build. The next Blender thread removes it, and test G2b turns into a pass. This stands unless you flip it.",
+   "why": "Found by the first test run (G2b) against cs-cc0-or-own. No published page uses the switch: the Cloud Walker uses a CC0 chair. Source: bars-engine PR #290, tools/blender-cloud/build_viewer.py."
+  },
+  {
+   "id": "bpt-root-curl",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "Blender pipeline tests",
+   "auto": true,
+   "pos": "The cave's root curl gets two fixes from the cave studio thread, after its open crystal change (#289) lands. It has a small loose blob at the tip of its hook, separate from the rest of the curl, and 682 faces against its budget of 500. Both are already in the committed cave kit. Until then the tests excuse the root curl only, and the same fault in any other piece fails the run. This stands unless you flip it.",
+   "why": "Found by the first test run (P3 and P5) and seen on the contact sheet. The picture-to-model tool belongs to the cave studio strand, so this thread did not touch it. Source: bars-engine PR #290, tools/blender-cloud/tests/LOOKED.md."
   }
  ],
  "questions": [
