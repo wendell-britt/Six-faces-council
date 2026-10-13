@@ -7205,6 +7205,138 @@
    "auto": true,
    "pos": "Standing in a daemon's place, you answer three questions as it: its job, what it protects you from, and how it is thanked. The Protector's answer cards are the workshop group's answers from the Big Mind cave. The other six daemons' cards are written from each daemon's job in the game (the Controller sets the standard, the Skeptic doubts, and so on). Each daemon also has one or two cards that another part would say, which bring the speaker out to wait by the wall. This stands unless you flip it.",
    "why": "The workshop transcript only covers the Protector, and merge-layout asks for all seven to be met the Big Mind way. The jobs come from game.jsx DAEMONS. Flip it to have different cards written for a daemon. The cards are in bars-engine content/ontology-game/cave/cave.js (MEET_CARDS), built in #301."
+  },
+  {
+   "id": "cp-unit",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "A thought of yours that should outlive its thread is saved as one file. It quotes your exact words, the date, where you said them (episode and timestamp, thread, or board row) and the product slot it could feed. A guest's words are saved as a reference with the guest named, and no product uses them without the guest's say. This stands unless you flip it.",
+   "why": "Your words sit in six shapes today (steers, quotes inside rules, positions, memory lines, BARs, project-file transcripts) and nothing searches them together. Your BAR format already carries text, origin, source and verification. Source: council/research/2026-10-13-idea-capture-audit.md."
+  },
+  {
+   "id": "cp-home",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "The corpus lives in a `corpus/` folder of wendell-britt/game-masters-guide, which is private and empty. If you name a different private repo later, the folder moves with git mv. This stands unless you flip it.",
+   "why": "six-faces-council and mtgoa-manuscript are public repos, and a transcript holds guests' words. You chose a repo as the Guide's source of truth on 2026-10-03. Source: the audit, finding 3."
+  },
+  {
+   "id": "cp-capture",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "You tag nothing. At the end of any thread, the session saves your new quotable lines as thoughts and names them in its report. A line is saved only in your exact words; a paraphrase stays in the thread. This stands unless you flip it.",
+   "why": "You asked for an ergonomic way to collect your thinking. Memory already works this way for facts about you, and your rule that Wendell decides what graduates into canon still holds, because a thought is raw material and not canon."
+  },
+  {
+   "id": "cp-ingest",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "The podcast episode move gets a seventh step, Mine the recording. After the clips, the session saves the transcript to corpus/episodes/, writes your lines as thoughts, and groups them into at most five claims. Each claim goes on the board as a position that stands unless you flip it. This stands unless you flip it.",
+   "why": "The move now ends at the clips (council/moves/podcast-episode.md), and the transcripts of episodes 1 and 2 feed nothing after that. The cap keeps the board from filling with claims."
+  },
+  {
+   "id": "cp-slots",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "corpus/products.yaml lists each product (Mastering Allyship 2.0, the Game Master's Guide, others as you add them) with its chapters as slots. Each thought carries a slot or the word unplaced. The Rule of 20 from the Sage Map applies to each slot: at twenty thoughts, collecting stops and a Sage and Council critique is applied to that slot. This stands unless you flip it.",
+   "why": "The Rule of 20 is your own rule for the Sage Map and has worked as a stop. Extending it to every slot is the session's proposal, not your ruling. Slots are how a thought reaches a chapter."
+  },
+  {
+   "id": "cp-backfill",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "The first fill, in order: the 29 recorded steers, the dated quotes of yours in the council repo, the 13 BARs, the 2026-10-13 frame for the Dan Allison episode, then episodes 1 and 2 once you attach their transcripts. This stands unless you flip it.",
+   "why": "Claude project files are not reachable from a session, so the transcripts have to come from you. Everything before them is already in a repo."
+  },
+  {
+   "id": "lv-home-portal",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "Cave levels",
+   "auto": true,
+   "pos": "The WAVE room is home base. It gets a second arch, a portal to the hall of the six, beside the seat. The door the charges come in by stays their door, so going out and something coming in never share an opening. The guide will stand beside the portal, when it is built. This stands unless you flip it.",
+   "why": "Your note of 13 October: home base is the WAVE room with a door or portal to the hub, and sb-no-pass-at-daemon already makes the room where a cave journey starts. Which opening is which is the council's choice. Plan: bars-engine content/ontology-game/cave/LEVELS.md, draft #307."
+  },
+  {
+   "id": "lv-issue-at-home",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "Cave levels",
+   "auto": true,
+   "pos": "Before the portal first opens, the room asks: What are you working through? One line the player writes, or I'd rather not say. It stays on the page and is not saved, and the tunnels and the centre read it back. This stands unless you flip it.",
+   "why": "Your note: a player brings an issue they want to work through in allyship and walks its path. The words-stay-on-the-page rule already holds for every line the player writes in the cave. Plan: LEVELS.md, draft #307."
+  },
+  {
+   "id": "lv-centre-altitude",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "Cave levels",
+   "auto": true,
+   "pos": "The centre of the self is one round chamber that every tunnel ends in, worn in the altitude of the face the player came by: arriving from the amber tunnel, it is amber. Its five other portals lead into the start of the other faces' tunnels. A separate centre for each of the player's own developmental levels, stacked as floors, is kept for later. This stands unless you flip it.",
+   "why": "Your words: all tunnels lead to the centre of the self at that particular altitude, with a portal to a different face. The record does not say whether altitude means the face's or the player's; the six faces each carry an altitude in faces.yaml, so the face's reading needs no new system. Plan: LEVELS.md, draft #307."
+  },
+  {
+   "id": "lv-branches-skills",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "Cave levels",
+   "auto": true,
+   "pos": "A branch belongs to a skill, not a face. What blocked the player picks it: a loud feeling opens Sit down here, a daemon opens its meeting, a daemon that will not step aside opens the 3-2-1, a charge too big opens Take it home, a missing element opens the pool. Each branch still loops back to the spot it left from. This stands unless you flip it.",
+   "why": "Your words: branches should be downwind skills, and when blocked the path forks toward what they need to work on. Every one of those skills is already built in cave.js; only the choosing is new. Plan: LEVELS.md, draft #307."
+  },
+  {
+   "id": "lv-old-walk",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "Cave levels",
+   "auto": true,
+   "pos": "The W.A.V.E. walk stops being the main loop: its steps live in the room and in Sit down here, and the six-stone gate becomes the hall and its tunnels. The old walk stays reachable from the front page until you have played the hall and at least one tunnel on your phone. This stands unless you flip it.",
+   "why": "Your words: the main loop should be a room that branches off of the game masters. Keeping the tested walk until its replacement is in your hand is the Regent's rule against dropping working play. Plan: LEVELS.md, draft #307."
+  },
+  {
+   "id": "lv-first-slice",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "Cave levels",
+   "auto": true,
+   "pos": "The first build is the walkable skeleton: the portal, the hall with six doors, six plain tunnels each dressed in its face's look and shape and ending in its face's question, and the centre with its portals. No minigames yet. The first minigame after it is the Diplomat's voices, which reuses the 3-2-1's staging. This stands unless you flip it.",
+   "why": "It lets you walk the whole shape on your phone before any pass is spent on six minigames, and each later slice drops into a place that already exists. The six minigame sketches in LEVELS.md each get their own council pass before they are built. Plan: LEVELS.md, draft #307."
   }
  ],
  "questions": [
