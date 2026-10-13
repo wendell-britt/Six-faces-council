@@ -1,4 +1,4 @@
-2026-10-11 (updated 23:59)
+2026-10-13 (updated 05:20)
 # WAVE room (the cave's home)
 
 ## Next
@@ -9,6 +9,14 @@ with a "Working with" picker and a fourth waiting at the door, and feelings abou
 are about. The cave fork took the narrower reading (3-2-1 switching, sliders and glow at the daemon; the whole room flow is not
 run in place in the cave); it stands unless he flips it. The cave's DESIGN.md has "The WAVE room, second slice". Next: his play
 of the second slice, then fixes from his notes in a fresh thread.
+
+## Rulings folded in (Wendell, 2026-10-13, from `somatic-ontology.md`)
+- `sb-no-pass-at-daemon`: a 3-2-1 skipped in the cave is picked up in the WAVE room. The room is where the journey begins: the player
+  lets spirits in there, or starts a cave journey from there. The cave never makes the player finish a 3-2-1 at the daemon; the room
+  holds the skipped one until they come back. Build is not started; this is the call-sheet record only.
+- `sb-one-at-a-time`: up to 3 daemons at a time, turn based like Final Fantasy combat. This matches the second slice (three creatures,
+  "Working with" picker). The fourth waiting at the door is a cap on the party, not one-at-a-time; any line elsewhere that assumes one
+  daemon at a time is superseded.
 
 ## Waiting on
 The board's blocker panel (docs/blocker-panel.md, 2026-10-12) runs an overdue step through a light WAVE and saves
