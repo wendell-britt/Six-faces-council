@@ -2,7 +2,7 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-Part 1 is built: bars-engine `tools/blender-cloud/tests/`, draft PR #290, ledger `2026-10-13-blender-pipeline-tests-built.json`.
+Part 1 is built: bars-engine `tools/blender-cloud/tests/`, PR #290 (merged 2026-10-13), ledger `2026-10-13-blender-pipeline-tests-built.json`.
 R2 passed: the kit rebuilds byte for byte, so exact matching stands. One command runs everything:
 `python3 tools/blender-cloud/tests/run.py --tier offline,bpy,net`; the summary goes to `$W/test-summary.md`.
 
