@@ -108,6 +108,14 @@ Answer length, intimate specificity, fear naming, and mask identification do not
 
 Keep artifact specificity, richness, quality, and fit separate. **Intimate disclosure is not progression currency.** Offer optional follow-up, presets, fictionalized or symbolic input, player selection, and private-local routes where possible. The system must never weaken an artifact to pressure disclosure. Pacing adaptation remains visible, reversible, and player-correctable.
 
+## BAR scope
+
+A `BAR` is an intentionally captured, portable kernel of potential with stable identity and provenance. Every BAR has provenance; not every provenance-bearing object is a BAR. A note, artifact, quest, rule, specification, log, or decision receives BAR identity only when it is explicitly captured as a reusable kernel.
+
+Charge is optional. A `ChargedBAR` is one specialization or role, alongside kernels originating in requests, observations, opportunities, design ideas, decisions, rules, lore, imported artifacts, or forks.
+
+Keep the kernel distinct from its `BARExpression`. A BAR may bloom as a quest, rule, lore, feature specification, plan, norm, branch, or artifact without becoming reducible to that expression. Capture creates lineage, not implementation debt. Portability carries a permission policy; it never means unrestricted reuse.
+
 ## Evidence authority
 
 - Player report establishes reported meaning, experience, satisfaction, or intention; it does not establish external effect.

@@ -322,6 +322,16 @@ An `ArtifactTailoringPlan` uses permitted ResponseMaterial under an `InputSuffic
 
 Disclosure volume and intimacy are not progression currency. Equivalent expressive routes and a quality floor protect concise, private, second-language, disabled, neurodivergent, culturally guarded, symbolic, fictionalized, and nonverbal participation. A `PacingAdaptationProposal` remains visible, reversible, and player-correctable.
 
+### 8.8 BAR kernel and expression boundary
+
+A `BAR` is an intentionally captured, portable kernel of potential with stable identity and provenance. Provenance is required but not sufficient: source material, evidence, logs, commits, artifacts, quests, rules, and specifications are not automatically BARs.
+
+A `ChargedBAR` is a BAR whose source or active energy includes represented charge. Charge is optional and may change without creating or ending BAR identity. Other source modes include requests, observations, opportunities, problems, design ideas, decisions, rule or norm proposals, lore, imported artifacts, and forks.
+
+A `BARExpression` is a form through which a BAR acts or becomes legible. One BAR may have many expressions; one expression may combine many BARs. An expression becomes a BAR in its own right only through an explicit `BARPromotion`. `BARRoleRelease` may end active kernel responsibility without erasing historical identity or lineage.
+
+A `BARProvenanceRecord` records origin and typed lineage. A `BARPortabilityPolicy` limits worlds, audiences, purposes, reuse, sharing, and fork permissions. Portable never means permissionless. Capture permits storage, dormancy, development, transfer, or release; it does not create implementation obligation.
+
 ## 9. Encounter ending and scoped completion
 
 Ending, resolution, quest completion, arc conclusion, satisfaction, and transformation are distinct claims.
@@ -443,6 +453,11 @@ An AI operating with this ontology must not:
 46. equate PracticePerformanceRecord with an inner-state or transformation finding;
 47. conflate artifact specificity, richness, quality, and fit;
 48. make an irreversible pacing or personalization decision from an unconfirmed behavioral proxy.
+49. treat every provenance-bearing object, BAR output, artifact, quest, rule, or specification as automatically possessing BAR identity;
+50. require or infer emotional charge as a condition of BAR identity;
+51. collapse a BAR kernel into its current expression;
+52. treat BAR capture as implementation obligation;
+53. interpret BAR portability as unrestricted permission to disclose, copy, reuse, or fork.
 
 ## 14. Minimum viable ontology record
 
