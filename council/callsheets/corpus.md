@@ -6,9 +6,10 @@
   onto bars-engine `CustomBar` fields and its five maturity phases), `products.yaml`, `OBSIDIAN.md`, `episodes/`, and
   `bars/` with the 29 recorded steers as BARs and the Dan Allison frame as a seed (a paraphrase, not his words).
   Step 7, Mine the recording, is in `council/moves/podcast-episode.md`.
-- Recommended next: backfill the dated quotes in this repo (about 35 in 29 files, `grep -rn "Wendell, 20"`), then the
-  13 BARs in mtgoa-manuscript `BARs/` (add that repo to the session first), then fill the nine `mtgoa-2.ch*` slot
-  titles from `manuscript/ch1-9.md`.
+- Done 2026-10-13: the dated quotes in this repo are backfilled (32 BARs in game-masters-guide `corpus/bars/`, tag
+  `backfill`, 32 of about 35 hits; the rest were partial repeats or a thread title).
+- Recommended next: the 13 BARs in mtgoa-manuscript `BARs/` (add that repo to the session first), then fill the nine
+  `mtgoa-2.ch*` slot titles from `manuscript/ch1-9.md`.
 - Later: an import from `corpus/bars/` into bars-engine `CustomBar` rows, once bars-engine has a place for his deck.
 
 ## Rulings (board read 2026-10-13 18:24 UTC)
