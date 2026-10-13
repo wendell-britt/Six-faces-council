@@ -21,6 +21,7 @@ Nothing. Round 2 answered 2026-10-10 21:00 (ledger `2026-10-10-pull-210046.json`
 - Board battle `fr-studio` rounds 1 to 3.
 - `council/passes/6FACE_PASS_studio2_2026-10-10.md`, `council/roles/marketer.md`, ledger `2026-10-10-studio2.json`.
 - `/mnt/project-files/studio/hook-test/` (hook test, mock v1, `capsule.py`).
+- Root call sheet: wendell-britt/root-game `CALLSHEET.md` (draft PR 15); its test 1 is due 2026-10-17.
 
 ## Archive
 HANDOFF.md: "Open on 2026-10-10, studio pipeline (study week)"
