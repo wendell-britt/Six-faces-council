@@ -202,10 +202,10 @@ The public Ontology Alchemy Game named in the council brief was not part of the 
     **Direct source fact:** `FOUNDATIONS.md` calls an Emergent Roadblock a manifestation of misaligned intention while giving build errors and export mismatches as examples.
     **Resolution:** A RoadblockEvent is first a scoped observation. Classification, causal account, intention interpretation, response, and outcome remain separate. “Misaligned intention” is a correctable hypothesis requiring a declared intention and relevant evidence; it is never inferred from technical failure alone. Technical metabolization can mean repair, verification, routing, learning, or provenance without emotional processing. See `roadblocks/reconstruction-and-decision.md`.
 
-19. **Session depth and disclosure volume**
+19. **Session depth and disclosure volume — resolved by ontology decision**
     **Direct source fact:** The future 3-2-1 signal associates long answers, specific fear naming, and “genuine mask identification” with deeper sessions and richer outputs.
     **Direct source fact:** The new ontology rejects behavioral proxies as sufficient evidence of inner meaning.
-    **Delta/conflict:** The proposal is compatible only if treated as a content-detail signal and tested against verbosity, language, disability, culture, privacy, and reported depth.
+    **Resolution:** Retire response length and intimate specificity as a universal depth measure. A correctable ResponseAffordanceProfile may guide artifact tailoring, while PracticePerformanceRecord, player-reported depth, artifact specificity, quality, fit, pacing, and DeftnessFinding remain separate. Performance may be rewarded when explicitly named, but disclosure itself cannot become progress, power, credential, or rank. See `session-depth/reconstruction-and-decision.md`.
 
 20. **Creative composting meaning authority**
     **Direct source fact:** `FOUNDATIONS.md` answers its “necromancy” question with “no” inside the project ontology.
@@ -310,7 +310,7 @@ The following are materially more explicit in the new package than in the inspec
 11. **Resolved 2026-10-12:** “You can never go the wrong way” is mythic reassurance about recoverability. The precise rule is “no path has to be wasted”; it is not an operational or metaphysical guarantee.
 12. **Resolved 2026-10-12:** Some blockers may remain unresolved indefinitely. They may constrain a particular route without creating a perpetual obligation to metabolize them.
 13. **Resolved 2026-10-12:** “Misaligned intention” is a metaphorical and interpretive possibility formalized as an `IntentionAlignmentHypothesis`. Any causal use requires a declared intention, scoped comparison, and relevant evidence; a technical roadblock never proves it.
-14. May future session-depth heuristics influence rewards or content, and who can authorize inference from verbosity or intimate disclosure?
+14. **Resolved 2026-10-12:** Response material may influence disclosed, correctable artifact tailoring and reversible pacing through a ResponseAffordanceProfile. Verbosity and intimacy do not establish depth or genuineness and cannot buy core progress, power, credentials, social rank, or better baseline craft.
 15. Is BAR canonically any provenance-bearing kernel, a charged kernel, or a parent class with charged BAR as one subtype?
 16. Does composting require later generative reuse, or may obligation end without producing a new artifact?
 17. Which privacy authority governs derived TensionVectors, psychographs, somatic reports, adaptive inferences, generated world material, audit trails, exports, model use, deletion, and revocation?
@@ -418,7 +418,7 @@ Wendell is asked to correct the council's understanding of the following. These 
 15. **Composting:** Can composting end with release alone, or must retained material eventually generate new fuel or form?
 16. **Personal meaning:** May a player interpret AI remixing of their past work as uncanny, inappropriate, or “not mine” despite the project's “not necromancy” framing?
 17. **Privacy and consent:** Which permissions and retention/deletion rights should become binding for tension vectors, psychographs, somatic reports, adaptive inferences, generated imagery, council records, and model improvement?
-18. **Depth:** Should answer length and intimate specificity influence artifact richness at all, and if so, what evidence and accessibility protections are required?
+18. **Resolved — Depth:** Relevant supplied material may increase artifact specificity under an InputSufficiencyContract. Answer length and intimacy are not depth measures. Practice performance, player-reported depth, artifact quality, fit, usefulness, and deftness require their own evidence and accessible, privacy-preserving routes.
 19. **Agent refusal:** Is `shouldRun: false` always advisory, or should privacy, safety, integrity, or resource objections halt or reroute a strand?
 20. **Coordination and ratification:** In a conflict among Diplomat coordinator, Sage synthesizer, Regent steward, Steward review face, Integrator, domain circle, player, and ontology owner, who may decide which kind of question?
 21. **Public source:** Must `https://masteringallyship.com/ontology-game` be reconciled before Phase B, and what authority does it hold relative to the local files?

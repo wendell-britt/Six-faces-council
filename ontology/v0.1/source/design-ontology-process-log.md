@@ -143,3 +143,11 @@ The source collision was reconstructed across its three operating layers: observ
 The binding rule is: **a roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.** Technical faults cannot be used to psychologize a contributor or player. At the technical layer, metabolization may mean repair, verification, safer routing, reusable learning, or provenance without emotional processing. Unresolved, rested, rerouted, abandoned, and composted blockers remain valid possibilities under the Yellow Brick Road decision.
 
 The full ruling is recorded in `council-phase-a/roadblocks/reconstruction-and-decision.md`. No BARS runtime, workflow, or data migration was authorized.
+
+## Session depth and disclosure reconstruction and decision — 2026-10-12
+
+The future BARS `SessionDepthSignal` was reconstructed into response volume, response specificity, practice performance, player-reported experiential depth, artifact specificity, artifact quality and fit, pacing, and deftness. These may relate but do not establish one another.
+
+The ontology now uses `ResponseMaterial`, `ResponseAffordanceProfile`, `PracticePerformanceRecord`, scoped `DepthClaim`, `InputSufficiencyContract`, `ArtifactTailoringPlan`, `ArtifactFitFinding`, `PacingAdaptationProposal`, and `DeftnessFinding`. Gameplay performance remains valid evidence of performed practice and may produce development and story. Disclosure volume, fear intensity, and verbal vulnerability do not prove genuineness and cannot become progression currency.
+
+Relevant, permitted material may support more specific artifacts, but concise and private players retain the same baseline craft and access to the core game. The full ruling and required implementation tests are recorded in `council-phase-a/session-depth/reconstruction-and-decision.md`. No BARS implementation or data migration was authorized.
