@@ -14,7 +14,7 @@ goes ready and J5 (clothing: long robe, sash, topknot as skinned garments on thi
 starts in a fresh thread. The figures reach the game with J5's garments, wired into `cave.js` together.
 
 Earlier: J3 (picture to asset) is done: Wendell's yes on round 2 came in the thread, 2026-10-13 21:43 ("Oh that’s
-PERFEXF"), and bars-engine #303 (commit 7afdc69) is marked ready to merge itself. Board step
+PERFEXF"), and bars-engine #303 merged (6ff47a2, 2026-10-13 22:29). Board step
 `j3-look-02` is ticked done (Your steps list `blender-cloud-test`, step 6), sheet
 `/mnt/project-files/3d-build/j3-round2-2026-10-13/j3-round2-sheet.png`. Round 1 he ticked (`j3-look-01`), then gave
 notes in the thread (2026-10-13 21:21): textures from the pictures, mushrooms and root "a little blobby", root "Not
