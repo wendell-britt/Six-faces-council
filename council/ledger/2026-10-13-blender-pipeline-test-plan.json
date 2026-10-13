@@ -14,6 +14,10 @@
    "what": "Plan for testing the Blender pipeline: 30 tests with what each proves, a kill line, a tier (offline, bpy, net, eyes, wendell) and exact or tolerance matching; fixtures pinned by id; the score trap answered with a contact sheet and LOOKED.md; only the offline tier in the GitHub check job",
    "where": "bars-engine .specify/specs/blender-pipeline-test/ (draft PR #287)",
    "tests": "none built, by design; no file under tools/ or content/ changed"
+  },
+  {
+   "what": "Part 2 of the plan, from his second message: Claude edits a short recipe file and a fixed script builds the cave (T1 to T3 measure token cost against writing bpy code); five jobs with kill lines: procedural textures, adding objects, picture to model, a themed character creator, and clothing as skinned swappable garments (the biggest test)",
+   "where": "bars-engine .specify/specs/blender-pipeline-test/spec.md Part 2 (PR #287)"
   }
  ],
  "rulings": [
@@ -21,6 +25,11 @@
    "words": "Your one job is the plan for testing the Blender pipeline, as that sheet describes. Write the spec kit in bars-engine, open a draft PR, write a ledger record, update the sheet and the index, and stop. Build no tests and change nothing in the pipeline.",
    "where": "project thread, 2026-10-13",
    "effect": "plan only; spec kit and PR #287"
+  },
+  {
+   "words": "so we are looking to test the pipeline, but also see about using blender kit et al to use natural language to update the cave and existing assets in the games we are making",
+   "where": "project thread, 2026-10-13 00:10",
+   "effect": "Part 2 added to the plan"
   }
  ],
  "positions": "Every fork passed the reach test without reaching Wendell; each stands in spec.md's design decisions unless he flips it: tests live in a new tools/blender-cloud/tests/; one runner writes a summary file; CI runs only the offline tier; renders are looked at, never pixel-diffed; the meshopt fixture is made from the table; crystal count floors at 6.",
@@ -28,6 +37,6 @@
   "build_viewer.py exits on a KeyError stack trace when a sidecar has no license key, not a STOP line (test G2, known gap)",
   "build_viewer.py --allow-restricted lets a Royalty Free model into a page, against cs-cc0-or-own (test G2b, known gap); the build thread raises it on the board as a position"
  ],
- "board_rows": "none added",
+ "board_rows": "positions bpt-recipe, bpt-robe-theme, bpt-skinned-garments, bpt-order (board version 329)",
  "next": "Build thread: falsify first with R2 (kit rebuild with picture dressing, twice, byte for byte) on #285's branch, then the tiers in plan.md's order."
 }

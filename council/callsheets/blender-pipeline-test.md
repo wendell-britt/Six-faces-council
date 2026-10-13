@@ -17,6 +17,12 @@ All tests go in a new `tools/blender-cloud/tests/`; the cave-studio strand owns 
 
 Read spec.md for the test table; this sheet does not repeat it.
 
+**Part 2, added 2026-10-13 from his second message:** whether Claude can change the cave from words and pictures, with
+the fewest tokens. Claude edits a recipe (`cave/scene.yaml`) and a fixed script builds it; T1 to T3 measure the cost
+against writing `bpy` code. Then five jobs, one thread each, in order: procedural textures, adding objects, picture to
+model, a character creator themed on the robe set, and clothing as skinned swappable garments (his "biggest test").
+Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 2 starts after #285 merges.
+
 ## Waiting on
 The plan needs nothing from Wendell. PR #287 is a draft of Markdown only; mark it ready once he has seen it or the build thread starts.
 The picture-path tests wait for bars-engine #285 to merge. His two tests are steps: N3 is `cave-studio-02`, and E3 goes on
