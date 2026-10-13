@@ -159,3 +159,11 @@ The broad BAR kernel in `FOUNDATIONS.md` was reconciled with the council brief's
 `ChargedBAR` is one specialization rather than the parent class. `BARExpression` preserves the distinction between the kernel and the quests, rules, lore, decisions, specifications, plans, norms, branches, and artifacts through which it blooms. `BARPromotion`, `BARRoleRelease`, `BARProvenanceRecord`, and `BARPortabilityPolicy` make identity, release, lineage, and permission explicit.
 
 The full ruling is recorded in `council-phase-a/bar-scope/reconstruction-and-decision.md`. No BARS schema migration or automatic reclassification of existing objects was authorized.
+
+## Composting reconstruction and decision — 2026-10-12
+
+Creative regeneration in BARS canon was reconciled with the constitutional permission to end active implementation obligation. Release now completes a `CompostingDisposition`. A new artifact, lesson, transformation, Vibeulon, later reuse, or recovered value is not required.
+
+The ontology separates `CompostCandidate`, `CompostingDecision`, `CompostingDisposition`, `CompostRecord`, optional `CompostResidue`, later `RegenerationEvent`, `ReactivationDecision`, and explicit `CompostRecoverability`. A valid disposition removes the target from active backlog pressure and completion prompts. Retention and reuse remain permission-bound, and privacy or deletion rights may require only a tombstone or no recoverable source content.
+
+The full ruling is recorded in `council-phase-a/composting/reconstruction-and-decision.md`. It does not authorize general Phase B sorting of ontology concepts.

@@ -423,7 +423,11 @@ Before preserving an option, ask:
 4. Should it be planted, shipped, delegated, stored, grafted, forked, harvested, or composted?
 5. What is the minimum provenance trace that should remain?
 
-Composting must be recoverable at the level of learning and lineage, even if the active obligation ends.
+Where retention is permitted and useful, composting preserves the minimum appropriate learning and lineage. Its recoverability level must be explicit; privacy, safety, or deletion authority may require a tombstone or no retained source content.
+
+**Composting boundary:** Release completes composting; regeneration is optional. Compost may nourish future growth, but it does not owe the garden a harvest. A CompostRecord preserves only the minimum legitimate trace, and privacy or deletion authority may require decision-only, lineage-only, or unrecoverable disposition. Any retained CompostResidue and later RegenerationEvent require their own permissions and provenance.
+
+After composting, the system stops active backlog pressure, overdue status, progress penalties, required review, and automatic completion prompts. Reactivation is a new governed decision. Composting does not complete an unmet quest, prove the material worthless, or authorize bulk sorting of the ontology.
 
 ---
 

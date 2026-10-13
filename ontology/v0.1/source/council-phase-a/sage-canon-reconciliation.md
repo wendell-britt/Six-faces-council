@@ -169,10 +169,10 @@ The public Ontology Alchemy Game named in the council brief was not part of the 
     **Direct source fact:** The council brief describes a BAR as a captured unit of charged possibility.
     **Resolution:** BAR is the broad first-class kernel. Provenance is necessary but not sufficient; intentional capture, stable identity, compressed potential, and a development or expression context are also required. ChargedBAR is one specialization. BARExpression distinguishes the kernel from the quest, rule, lore, specification, plan, norm, branch, or artifact through which it blooms. See `bar-scope/reconstruction-and-decision.md`.
 
-12. **Composting as generative reuse and as release**
+12. **Composting as generative reuse and as release — resolved by ontology decision**
     **Direct source fact:** `FOUNDATIONS.md` emphasizes metabolizing past authored material into new creative fuel and output.
     **Direct source fact:** The new ontology emphasizes ending implementation obligation while retaining learning and lineage.
-    **Delta:** Reuse and release may coexist, but neither source states their relationship.
+    **Resolution:** Release completes the CompostingDisposition. CompostResidue is optional and permission-bound; a later RegenerationEvent is separately authorized and evidenced. No output, lesson, transformation, fuel, or reuse is required. A composted obligation leaves active backlog pressure and can be reactivated only through a new decision. See `composting/reconstruction-and-decision.md`.
 
 13. **Provenance expansion**
     **Direct source fact:** BARS canon primarily tracks BAR, artifact, strand, branch, fork, and session lineage.
@@ -312,7 +312,7 @@ The following are materially more explicit in the new package than in the inspec
 13. **Resolved 2026-10-12:** “Misaligned intention” is a metaphorical and interpretive possibility formalized as an `IntentionAlignmentHypothesis`. Any causal use requires a declared intention, scoped comparison, and relevant evidence; a technical roadblock never proves it.
 14. **Resolved 2026-10-12:** Response material may influence disclosed, correctable artifact tailoring and reversible pacing through a ResponseAffordanceProfile. Verbosity and intimacy do not establish depth or genuineness and cannot buy core progress, power, credentials, social rank, or better baseline craft.
 15. **Resolved 2026-10-12:** BAR is a broad first-class kernel intentionally captured with stable identity and provenance. ChargedBAR is one specialization. Provenance alone does not make an object a BAR, and BARExpression keeps the kernel distinct from the forms through which it blooms.
-16. Does composting require later generative reuse, or may obligation end without producing a new artifact?
+16. **Resolved 2026-10-12:** Composting ends the named active obligation without requiring a new artifact, lesson, transformation, fuel, or later reuse. Optional residue and regeneration have separate permissions, provenance, and events.
 17. Which privacy authority governs derived TensionVectors, psychographs, somatic reports, adaptive inferences, generated world material, audit trails, exports, model use, deletion, and revocation?
 18. Who may override `shouldRun: false`, and which privacy, safety, or integrity objections must stop a strand?
 19. Is `audit_trail` authoritative over `decision_audit_log`, and what compatibility or migration rule follows?
@@ -415,7 +415,7 @@ Wendell is asked to correct the council's understanding of the following. These 
 12. **Yellow Brick Road — resolved 2026-10-12:** It is mythic reassurance and a recoverability covenant. No path has to be wasted, but wrongness, failure, harm, and irreversible consequence remain real. Some blockers may remain unprocessed indefinitely while constraining a named route.
 13. **Resolved — Roadblocks:** Preserve “misaligned intention” as an optional, correctable interpretation. The system records the roadblock observation first and may infer neither hidden intention nor psychological cause from technical failure.
 14. **Resolved — BAR scope:** BAR is an intentionally captured portable kernel of potential with stable identity and provenance. Charge is optional. Provenance-bearing records and BAR outputs receive BAR identity only through explicit kernel capture or promotion.
-15. **Composting:** Can composting end with release alone, or must retained material eventually generate new fuel or form?
+15. **Resolved — Composting:** Release completes the lifecycle disposition. Retained residue is optional and permission-bound; later regeneration is a new event, not a debt carried by compost.
 16. **Personal meaning:** May a player interpret AI remixing of their past work as uncanny, inappropriate, or “not mine” despite the project's “not necromancy” framing?
 17. **Privacy and consent:** Which permissions and retention/deletion rights should become binding for tension vectors, psychographs, somatic reports, adaptive inferences, generated imagery, council records, and model improvement?
 18. **Resolved — Depth:** Relevant supplied material may increase artifact specificity under an InputSufficiencyContract. Answer length and intimacy are not depth measures. Practice performance, player-reported depth, artifact quality, fit, usefulness, and deftness require their own evidence and accessible, privacy-preserving routes.
