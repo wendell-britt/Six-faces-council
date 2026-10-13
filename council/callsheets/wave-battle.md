@@ -2,6 +2,7 @@
 # WAVE battle (sprout, battle fr-demo)
 
 ## Next
+- Wendell's ruling, 2026-10-13 (Skilled Helper thread, on the Lamp-keeper's tap-through): "Water controls fire not the other way around". Board position `wave-water-controls-fire`: the right answer to a strike becomes a move whose element controls the strike's (River Fill answers fire, Earth Yield answers water, Flame Follow answers Heaven), replacing the next-gate answer of `wave-trigram-moves`. Change it in sprout `slice/battle.js` and `campaigns/skilled-helper/part-two/tools/prototype.template.html` (`NEXT` and the answer check), rebuild both tap-throughs, and settle how an Earth foe is met when no straight gate controls earth.
 Round 12 read 2026-10-07 01:07: all seven positions stood, `wave-teacher` = A, Master Yun. In a new thread: the WAVE build on sprout #25 with Yun's taught fight, the straight four first, corner unlocks from spirits, English move names (Sky Lift, Earth Yield, River Fill, Flame Follow, Wind Draw, Lake Gather, Thunder Split, Mountain Stand) and visible qi; trigram lore into design.md as Proposed; rerun the bot test with the straight four only. Sprout #26 is closed. Round 10 built in #26 (`slice/wave.js`, `npm run test:wave`); Welcome's cost against carried HP is the first balance check, after his `?road` playtest.
 Exhale: `wave-exhale-ends` was overruled with a steer (a coup de grace, or an "express" move); the WAVE thread reworks Exhale and brings it back as a new position.
 
