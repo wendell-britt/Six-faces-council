@@ -1,8 +1,14 @@
-2026-10-13 (updated 04:30)
+2026-10-13 (updated 04:55)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Since then, from his
+J2 (adding objects) is built: bars-engine draft PR #299. `cave/objects.py` gives `chamber.py` one `obj(...)` line per
+object from Blendkit (CC0 Boulder 01, pinned by id), a picture (offering bowl, `pictures/offering_bowl.jpg`) or a script
+(cushion). Each object passes the kill line, and a source that is not CC0 stops the build (tests J2, J2b). Next: #299 to
+ready once CI is green, then J3 (picture to asset), which needs his pictures in the Drive inbox. The chamber objects reach
+the cave game when `chamber.py` is wired into `cave.js`.
+
+Earlier: The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Since then, from his
 play notes: pieces grow out of the walls and roof by zone, spires are stochastic stalagmites and stalactites, roots hang from
 the roof, each charge has its own cave shape (numbness is blackness), a lamp on the figure lights only what is near
 (`carryLight` ready for spirits), and wood is a bush, grass and a root. 133 tests pass. Phone page:
