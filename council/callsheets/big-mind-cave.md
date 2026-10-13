@@ -35,6 +35,18 @@ Next: build it in a fresh thread, stacked on bars-engine #309 (the `LEVEL` table
 seven chambers in `ds-daemon-order`, #301's meeting at each with the Big Mind refusal path, charge meter (steps aside at 3
 or below), speaking turns and saving carried over from `bigmind.js`, progress kept per daemon, the centre with the child.
 
+
+**2026-10-13, the Big Mind door (dp-big-mind-page overruled):** Wendell, 22:34: the Big Mind cave is entered from the WAVE
+room, which players can walk around; another door leads to the six game masters; all caves share assets and spawn spirits
+on a full sit-down W.A.V.E. bars-engine #313 (draft, branch `claude/project-thread-o1ntdv`, stacked on #309 with main
+merged): tap the floor to walk; two doors behind the seat, Big Mind (left) and the six game masters (right, the hall of the
+six); the Big Mind door opens the Big Mind cave on the Cave of Lessons page, at its mouth, with Back to the WAVE room; the
+room wears the J1 stone. Only charges worked through the whole W.A.V.E. go through a door as spirits. Board positions
+`dp-room-walk` and `dp-bm-door-cave`. cave-test: 355 checks pass before the new section, which passes 25 of 25 on its own;
+bigmind-test 178 pass. Phone page version 23 (carries #310 too). Next: his walk round the room and through the Big Mind
+door, then the next six chambers and the centre built inside the Big Mind cave (`dp-seven`, `dp-centre`, `dp-progress`),
+in a fresh thread.
+
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
 whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-place`, `bms-block-sits`, `bms-spirits-follow`,
