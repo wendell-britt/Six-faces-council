@@ -55,6 +55,7 @@ import due  # noqa: E402
 CATEGORIES = {
     "menu": ("From your free write", "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw)."),
     "board": ("Waiting on you on the board", "Questions with no answer yet, and new positions that stand unless you flip them."),
+    "steps": ("Steps due today", "Your steps on the Your steps tab that are due today or overdue and not done."),
     "due": ("Deferred and due", "Items you deferred that come back within a week."),
     "handoff": ("Open in the handoff", "Work a thread left open in council/HANDOFF.md."),
     "prs": ("Open pull requests", "Pull requests open in the council, bars-engine and the Game Master's guide."),
@@ -203,6 +204,25 @@ def from_due(data, ahead=7):
     return items
 
 
+def from_steps(store, today=None):
+    """Undone steps due today or earlier, from the board store's `steps` collection saved to a folder.
+
+    Steps live only in the store, never in board_data.json, so until 2026-10-13 a step due today never reached the
+    morning menu (Wendell: an item due today should have been picked up). A retired step is skipped."""
+    if not store:
+        return []
+    today = today or dt.date.today().isoformat()
+    items = []
+    for f in sorted(Path(store).glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        if d.get("done") or d.get("retired") or not d.get("due") or d["due"] > today:
+            continue
+        items.append({"id": f"step-{f.stem}", "text": short(d.get("do", f.stem), 240), "ref": f.stem,
+                      "link": BOARD_URL + "#steps",
+                      "note": f"step, due {d['due']}" + (", optional" if d.get("optional") else "")})
+    return items
+
+
 def from_handoff(path=HANDOFF):
     items, section = [], ""
     lines = path.read_text(encoding="utf-8").splitlines()
@@ -275,11 +295,11 @@ def slug(s):
 
 # ---------- gather ----------
 
-def gather(menu, prs_file=None, bars=None, data=None):
+def gather(menu, prs_file=None, bars=None, data=None, steps=None):
     data = data if data is not None else json.loads(BOARD.read_text(encoding="utf-8"))
     goals = menu_goals(menu) if menu else []
     notes = {}
-    raw = {"menu": from_menu(menu) if menu else [], "board": from_board(data), "due": from_due(data),
+    raw = {"menu": from_menu(menu) if menu else [], "board": from_board(data), "steps": from_steps(steps), "due": from_due(data),
            "handoff": from_handoff()}
     if not menu:
         notes["menu"] = "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
@@ -317,6 +337,7 @@ def main(argv=None):
     ap.add_argument("--fetch", metavar="DATE", help="fetch the sealed menu for DATE (YYYY-MM-DD) with $COUNCIL_MENU_TOKEN")
     ap.add_argument("--out", default="morning-menu.json", help="where --fetch saves the menu (default ./morning-menu.json)")
     ap.add_argument("--prs", help="open pull requests saved to a file: [{repo, number, title, url, draft}]")
+    ap.add_argument("--steps", help="the board store's steps collection saved to a folder (ArtifactData out_dir/steps)")
     ap.add_argument("--bars", help="a bars-engine checkout (default ../bars-engine)")
     ap.add_argument("--write", action="store_true", help="write `morning` into board/board_data.json and rebuild")
     ap.add_argument("--json", action="store_true", help="print the gathered morning as JSON")
@@ -325,7 +346,7 @@ def main(argv=None):
     if menu and "rawEntry" in json.dumps(menu):
         sys.exit("the menu file carries a rawEntry; only kept lines may leave Tap the Vein (mm-raw)")
     data = json.loads(BOARD.read_text(encoding="utf-8"))
-    m = gather(menu, a.prs, a.bars, data)
+    m = gather(menu, a.prs, a.bars, data, a.steps)
     if a.json:
         print(json.dumps(m, ensure_ascii=False, indent=1))
         return
