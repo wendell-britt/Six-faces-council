@@ -25,6 +25,10 @@ of the second slice, then fixes from his notes in a fresh thread.
   "Working with" picker). The fourth waiting at the door is a cap on the party, not one-at-a-time; any line elsewhere that assumes one
   daemon at a time is superseded.
 
+
+2026-10-13: the room is walkable (tap the floor), wears the J1 stone, and has two doors behind the seat: Big Mind and the
+six game masters. bars-engine #313; see big-mind-cave.md.
+
 ## Chat ruling (Wendell, 2026-10-13)
 - Wendell, 2026-10-13 22:29 (in the cave branch seams thread): "Cave is breaking here and if you sit down
   without going through the whole wave process a spirit is auto created. It should only emerge once it’s been engaged
