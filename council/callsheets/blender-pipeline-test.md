@@ -2,10 +2,10 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J3 (picture to asset) is approved: Wendell ticked `j3-look-01` done (board read 21:18, 2026-10-13), and bars-engine
-#303 is marked ready to merge itself. Mushrooms 0.894, amber crystals 0.855, root knot 0.819, plus his four Blendkit
+J3 (picture to asset): Wendell ticked `j3-look-01` done (board read 21:18, 2026-10-13), then gave notes in the
+thread, so bars-engine #303 stays draft while round 2 goes into it. Mushrooms 0.894, amber crystals 0.855, root knot 0.819, plus his four Blendkit
 greenery picks, kept in git under `content/ontology-game/cave/picks/` because Blendkit offers only .blend.
-Next is J3 round 2, before J4, in a fresh thread off main once #303 merges. His notes (2026-10-13 21:21): "I think we
+Round 2 runs in the J3 thread on the same branch, before J4. His notes (2026-10-13 21:21): "I think we
 can do more with importing textures from the images. The shapes are pretty good but a bit flat. And we can do a bit
 more work with getting the mushrooms right. They have the vibe but are a little blobby. The root is also a bit
 blobby. Not readying as tendrils falling in a shape". The work, all in `tools/blender-cloud/from_picture.py`:
