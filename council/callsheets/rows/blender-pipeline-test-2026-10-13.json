@@ -1,0 +1,48 @@
+{
+ "positions": [
+  {
+   "id": "bpt-recipe",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "When you ask in words for a change to the cave, Claude edits a short recipe file (cave/scene.yaml) and a fixed script builds the models. Claude never writes Blender code for an edit. The first test checks the cost: each edit must stay under 20,000 tokens past the thread's opening load and cost at most a third of writing the code directly. If it fails that, the idea is dropped. This stands unless you flip it.",
+   "why": "You asked for the least token use. Rereading context was 84% of spend in the 4 October audit, so the edit has to touch only a few lines. Every prop is already a committed script (c3d-codex-rebuilds). Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  },
+  {
+   "id": "bpt-robe-theme",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "The theme for the cave's character creator test is the Taoist cultivation robe set, so the 3D creator and the 2D sprite creator share one wardrobe. The test makes nine faceless figures (three builds, three palettes) that walk with the cave's walk cycle. This stands unless you flip it.",
+   "why": "Your robe set ruling (cc-robe-set) and one studio for both caves (cs-one-studio); the cave figure has no face (cave-avatar-self). Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  },
+  {
+   "id": "bpt-skinned-garments",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "Clothing for players is built as separate garments fitted by script to the figure's body and moving on its one skeleton, so the game swaps them while the figure walks. The first round is a long robe, a sash and a topknot, each in three colours, with no cloth simulation. It passes when no body shows through at four points in the walk, each garment is under 150 KB, a swap takes under 100 ms, and you have looked at the sheet. This stands unless you flip it.",
+   "why": "You named clothing the biggest test. Swappable skinned garments are the cheapest way to fit a phone budget (c3d-phone-budget), and new clothing goes through your eye (cc-wardrobe-gate). A robe that should swing gets extra hem bones before any simulation. Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  },
+  {
+   "id": "bpt-order",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "Blender pipeline test plan",
+   "auto": true,
+   "pos": "The words-and-pictures tests run in this order, one job per thread: the recipe and its token cost, then textures, then adding objects, then picture to model, then the character creator, then clothing. They start after cave studio's open pull request (#285) merges, because they touch the same cave files. This stands unless you flip it.",
+   "why": "Each later job is one recipe line, so the recipe's cost decides whether the rest is cheap. The cave-studio strand owns the cave files until #285 lands (council/strands.py). Source: bars-engine .specify/specs/blender-pipeline-test/spec.md, Part 2 (PR #287)."
+  }
+ ]
+}
