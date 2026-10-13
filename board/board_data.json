@@ -7337,6 +7337,72 @@
    "auto": true,
    "pos": "The first build is the walkable skeleton: the portal, the hall with six doors, six plain tunnels each dressed in its face's look and shape and ending in its face's question, and the centre with its portals. No minigames yet. The first minigame after it is the Diplomat's voices, which reuses the 3-2-1's staging. This stands unless you flip it.",
    "why": "It lets you walk the whole shape on your phone before any pass is spent on six minigames, and each later slice drops into a place that already exists. The six minigame sketches in LEVELS.md each get their own council pass before they are built. Plan: LEVELS.md, draft #307."
+  },
+  {
+   "id": "sh-verb",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "Shame 1",
+   "auto": true,
+   "pos": "You position with your own verb: \"I help people metabolize shame so they can get the lives they want.\" This stands unless you flip it.",
+   "why": "The shame field heals, releases or builds resilience against shame; none of the 19 offers found says metabolize. The sentence is yours, from your message of 13 October. Research: /mnt/project-files/shame-coaching-research/shame-coaching-field-2026-10-13.md"
+  },
+  {
+   "id": "sh-coach-not-clinic",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "Shame 1",
+   "auto": true,
+   "pos": "You work as a coach, with a plain line on the page about what you do and do not do, a referral to licensed help for trauma, and no claimed shame credential. This stands unless you flip it.",
+   "why": "The big shame credentials (Daring Way, CSTS, Healing Shame Practitioner) are for licensed clinicians, so none is open to you or needed. No credential for coaches who are not clinicians was found."
+  },
+  {
+   "id": "sh-walk-is-the-map",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "Shame 1",
+   "auto": true,
+   "pos": "Nothing new gets built for shame now. The walk, the Meet Your Daemons series and the session already carry the work. This stands unless you flip it.",
+   "why": "The walk's last question is the six self-sabotaging beliefs, and each is a shame sentence (cf-six-questions; your coaching site direction of 9 October). A shame training for other coaches is deferred to 15 January 2027."
+  },
+  {
+   "id": "sh-ek-fence",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "Shame 1",
+   "auto": true,
+   "pos": "Wherever your work uses Existential Kink, it applies the move only to patterns in a person's own reach, never to oppression, abuse or harm done to them. This stands unless you flip it.",
+   "why": "Reviewers call the book victim-blaming and blind to race and class, and careful EK coaches fence it the same way. On a site with allyship in its name, one unfenced line would cost the brand. Your Fear to Joy EK note stays parked."
+  },
+  {
+   "id": "sh-pitch-test",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "Shame 1",
+   "auto": true,
+   "pos": "The next guest pitches include a shame-led version for shows where shame is a topic, tagged utm_campaign=shame-<show>, and the Monday read compares them with the others by 7 November. This stands unless you flip it.",
+   "why": "Nobody has tested whether the word draws your people or sends them away. The result decides whether the coaching page's centre is rewritten around shame. It rides the guesting pipe already running."
+  },
+  {
+   "id": "sh-no-name",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "Shame 1",
+   "auto": true,
+   "pos": "Pragya is not named in public copy unless she says yes. This stands unless you flip it.",
+   "why": "Naming a person is on the council's reserved list in faces.yaml."
   }
  ],
  "questions": [
@@ -12070,6 +12136,62 @@
      "v": "no-order",
      "label": "No fixed order",
      "c": "The game introduces no sensation by stage; only numbness and strength wait for later play, as your rulings already say."
+    }
+   ]
+  },
+  {
+   "id": "sh-lead",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "Shame 1",
+   "q": "Which shame does your coaching lead with: general shame, allyship shame, or both as two doors?",
+   "why_you": "Only you know which clients you want more of, and the answer changes the coaching page and the guest pitches. The council split: the Challenger would lead with allyship shame because nobody else stands there; the Diplomat and the Shaman would lead with general shame.",
+   "not_before": "Shame was not the frame of the coaching until your message of 13 October.",
+   "options": [
+    {
+     "v": "general",
+     "label": "General shame",
+     "c": "Copy leads with the life people want, with shame named as what stands in the way. Allyship stays in the book and podcast."
+    },
+    {
+     "v": "allyship",
+     "label": "Allyship shame",
+     "c": "Copy leads with the shame that stops people showing up for others. It is the emptiest ground found, and the label draws hostile press."
+    },
+    {
+     "v": "two-doors",
+     "label": "Two doors, general first",
+     "c": "The walk leads with general shame, and a second door opens for people arriving through the book and podcast. The council leans this way."
+    }
+   ]
+  },
+  {
+   "id": "sh-ek-cert",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "Shame 1",
+   "q": "Do you want Existential Kink coach certification (PENETRATE, six months, price not listed)?",
+   "why_you": "It costs money and time, which are yours to spend, and the positioning does not need it. Carolyn Elliott died on 26 July 2026 and her school has not said who leads it now.",
+   "not_before": "Existential Kink was a credit in your book until today.",
+   "options": [
+    {
+     "v": "not-now",
+     "label": "Not now",
+     "c": "You keep crediting EK as a lineage and do not apply. The council leans this way."
+    },
+    {
+     "v": "ask",
+     "label": "Ask the school",
+     "c": "A session drafts a note for you to send the Immortal College asking the price and who teaches now."
+    },
+    {
+     "v": "revisit",
+     "label": "Revisit 1 December",
+     "c": "A session checks the school's site on 1 December for news on its leadership, then this comes back."
     }
    ]
   }
