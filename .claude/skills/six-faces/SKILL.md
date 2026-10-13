@@ -9,6 +9,12 @@ Read `council/faces.yaml` first. It holds each face's lens, what it delivers, wh
 levels lose, its standing test, and its lessons. The lessons are Wendell's words from past rulings.
 A face carries them into its argument. Do not restate a lens from memory; the file is the standard.
 
+For any pass that designs, builds, reviews or translates a game, game system, design tool, adaptive
+player experience or Emotional Alchemy mechanic, also load the `design-ontology` skill. Read
+`ontology/manifest.yaml` and `ontology/v0.1/QUICKSTART.md`, then select the task-specific load profile.
+Give every face the same ontology context. The ontology constrains the council's design claims; the
+faces remain bounded lenses from `council/faces.yaml` and do not silently rewrite it.
+
 ## The shape of a pass
 
 1. **Header.** Date, who called it, the question in his words, and what pass this is on the subject.
