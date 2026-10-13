@@ -2,10 +2,14 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J1 is built: bars-engine draft PR #292, ledger `2026-10-13-blender-j1-textures.json`. Wet stone (walls), dry stone (floor,
-gate stones) and crystal vein (spires, crystal bed), baked to six 512 px JPEGs; chamber.glb 465 KB. The frame-rate line
-can't be judged in the cloud (software WebGL misses it even untextured), so `bpt-j1-frame-rate` puts it on his phone
-play after #289 wires the chamber in. Next job: J2, adding objects, in a new thread.
+J1 merged (bars-engine #292, 2026-10-13 02:55), ledger `2026-10-13-blender-j1-textures.json`. Wet stone (walls), dry
+stone (floor, gate stones) and crystal vein (spires, crystal bed), baked to six 512 px JPEGs; chamber.glb 465 KB.
+Wendell, 02:52: "ok this is perfection. Let's incorporate what we've made so far into the cave games". That is the next
+thread, after cave studio #289 lands (it owns cave.js, cave-test.mjs and manifest.json). The default it starts from:
+bake the three textures as seamless 512 px tiles (4D noise on a torus, from chamber.py's `texture()`), ship them beside
+cave.js, and apply wet stone to the tunnel walls, dry stone to the floor and crystal vein to the rock beds and spires in
+cave.js, leaving the crystals as they are; then cave-test.mjs at 390 by 844, the 3 MB budget, and a republished page
+for his phone. J2 waits behind it.
 
 Part 1 is built: bars-engine `tools/blender-cloud/tests/`, PR #290 (merged 2026-10-13), ledger `2026-10-13-blender-pipeline-tests-built.json`.
 R2 passed: the kit rebuilds byte for byte, so exact matching stands. One command runs everything:
@@ -32,7 +36,7 @@ model, a character creator themed on the robe set, and clothing as skinned swapp
 Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 1 merged in #287; Part 2 is in bars-engine #288 (draft). Part 2 starts after #285 merges. He let all four stand (2026-10-13 00:24); his steer on `bpt-skinned-garments`: "Use as much as we can from the root game for this as we’ve already done many garment tests there", so J5 begins by listing root-game's garment work and reusing it (spec.md, J5).
 
 ## Waiting on
-Wendell has one step, `blender-cloud-test-04`. #291 merged 2026-10-13 02:10. The Blendkit tests need a cloud environment that allows api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net. The 12 October session reached Blendkit because it ran in his Default environment; project threads run on a built-in one with no settings. Step `blender-cloud-test-04` asks him to pick Default in Project settings. #290 (Part 1 tests) is a draft. #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
+Nothing from Wendell; he did step `blender-cloud-test-04` at 02:26. #291 merged 2026-10-13 02:10. The Blendkit tests need a cloud environment that allows api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net. The 12 October session reached Blendkit because it ran in his Default environment; project threads run on a built-in one with no settings. Step `blender-cloud-test-04` asks him to pick Default in Project settings. #290 (Part 1 tests) is a draft. #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
 #285 merged; the picture-path tests run on main. His two tests are steps: N3 is `cave-studio-02`, and E3 goes on
 Your steps when the build thread first republishes a page.
 
