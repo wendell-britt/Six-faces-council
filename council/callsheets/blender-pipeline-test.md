@@ -36,6 +36,12 @@ against writing `bpy` code. Then five jobs, one thread each, in order: procedura
 model, a character creator themed on the robe set, and clothing as skinned swappable garments (his "biggest test").
 Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 1 merged in #287; Part 2 is in bars-engine #288 (draft). Part 2 starts after #285 merges. He let all four stand (2026-10-13 00:24); his steer on `bpt-skinned-garments`: "Use as much as we can from the root game for this as we’ve already done many garment tests there", so J5 begins by listing root-game's garment work and reusing it (spec.md, J5).
 
+**Detail pass on the grown roots and mushrooms (2026-10-13, his "Start 4"), merged in bars-engine #300.**
+`tools/blender-cloud/detail.py` grows the four pieces at their face budgets with no decimation. Cap rims stay sharp, and
+each piece carries a grey shade and baked AO in COLOR_0. `cave.js` multiplies that shade into the colour and the glow, and
+the clump is nine mushrooms spread wider. The kit is 398 KB, the page is 998 KB of 3 MB, and 303 cave tests pass. Phone
+page version 12. Next: his play of the new caps. Previews are in `/mnt/project-files/3d-build/detail-pass-2026-10-13/`.
+
 ## Waiting on
 Nothing from Wendell; he did step `blender-cloud-test-04` at 02:26. #291 merged 2026-10-13 02:10. The Blendkit tests need a cloud environment that allows api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net. The 12 October session reached Blendkit because it ran in his Default environment; project threads run on a built-in one with no settings. Step `blender-cloud-test-04` asks him to pick Default in Project settings. #290 (Part 1 tests) is a draft. #288 was replaced by bars-engine #295 (2026-10-13 04:00): the Part 2 plan merged with main and updated with the recipe result and J1, marked ready, merges itself once checks pass.
 #285 merged; the picture-path tests run on main. His two tests are steps: N3 is `cave-studio-02`, and E3 goes on
