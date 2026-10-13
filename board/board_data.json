@@ -7205,6 +7205,72 @@
    "auto": true,
    "pos": "Standing in a daemon's place, you answer three questions as it: its job, what it protects you from, and how it is thanked. The Protector's answer cards are the workshop group's answers from the Big Mind cave. The other six daemons' cards are written from each daemon's job in the game (the Controller sets the standard, the Skeptic doubts, and so on). Each daemon also has one or two cards that another part would say, which bring the speaker out to wait by the wall. This stands unless you flip it.",
    "why": "The workshop transcript only covers the Protector, and merge-layout asks for all seven to be met the Big Mind way. The jobs come from game.jsx DAEMONS. Flip it to have different cards written for a daemon. The cards are in bars-engine content/ontology-game/cave/cave.js (MEET_CARDS), built in #301."
+  },
+  {
+   "id": "cp-unit",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "A thought of yours that should outlive its thread is saved as one file. It quotes your exact words, the date, where you said them (episode and timestamp, thread, or board row) and the product slot it could feed. A guest's words are saved as a reference with the guest named, and no product uses them without the guest's say. This stands unless you flip it.",
+   "why": "Your words sit in six shapes today (steers, quotes inside rules, positions, memory lines, BARs, project-file transcripts) and nothing searches them together. Your BAR format already carries text, origin, source and verification. Source: council/research/2026-10-13-idea-capture-audit.md."
+  },
+  {
+   "id": "cp-home",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "The corpus lives in a `corpus/` folder of wendell-britt/game-masters-guide, which is private and empty. If you name a different private repo later, the folder moves with git mv. This stands unless you flip it.",
+   "why": "six-faces-council and mtgoa-manuscript are public repos, and a transcript holds guests' words. You chose a repo as the Guide's source of truth on 2026-10-03. Source: the audit, finding 3."
+  },
+  {
+   "id": "cp-capture",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "You tag nothing. At the end of any thread, the session saves your new quotable lines as thoughts and names them in its report. A line is saved only in your exact words; a paraphrase stays in the thread. This stands unless you flip it.",
+   "why": "You asked for an ergonomic way to collect your thinking. Memory already works this way for facts about you, and your rule that Wendell decides what graduates into canon still holds, because a thought is raw material and not canon."
+  },
+  {
+   "id": "cp-ingest",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "The podcast episode move gets a seventh step, Mine the recording. After the clips, the session saves the transcript to corpus/episodes/, writes your lines as thoughts, and groups them into at most five claims. Each claim goes on the board as a position that stands unless you flip it. This stands unless you flip it.",
+   "why": "The move now ends at the clips (council/moves/podcast-episode.md), and the transcripts of episodes 1 and 2 feed nothing after that. The cap keeps the board from filling with claims."
+  },
+  {
+   "id": "cp-slots",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "corpus/products.yaml lists each product (Mastering Allyship 2.0, the Game Master's Guide, others as you add them) with its chapters as slots. Each thought carries a slot or the word unplaced. The Rule of 20 from the Sage Map applies to each slot: at twenty thoughts, collecting stops and a Sage and Council critique is applied to that slot. This stands unless you flip it.",
+   "why": "The Rule of 20 is your own rule for the Sage Map and has worked as a stop. Extending it to every slot is the session's proposal, not your ruling. Slots are how a thought reaches a chapter."
+  },
+  {
+   "id": "cp-backfill",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "Idea corpus audit",
+   "auto": true,
+   "pos": "The first fill, in order: the 29 recorded steers, the dated quotes of yours in the council repo, the 13 BARs, the 2026-10-13 frame for the Dan Allison episode, then episodes 1 and 2 once you attach their transcripts. This stands unless you flip it.",
+   "why": "Claude project files are not reachable from a session, so the transcripts have to come from you. Everything before them is already in a repo."
   }
  ],
  "questions": [
