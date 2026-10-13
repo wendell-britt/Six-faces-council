@@ -1,8 +1,18 @@
-2026-10-13 (updated 05:03)
+2026-10-13 (updated 05:50)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
-J2 (adding objects) is built and merged: bars-engine #299 (2026-10-13). `cave/objects.py` gives `chamber.py` one `obj(...)` line per
+J3 (picture to asset) is built: bars-engine draft PR #303, waiting on his look at
+`/mnt/project-files/3d-build/j3-result-2026-10-13/j3-sheet.png` (Your steps list `j3-look`; `cs-first-test`). His three
+pictures are three `obj(...)` lines in `chamber.py`: mushrooms 0.894, amber crystals 0.855, root knot (hung from the
+roof) 0.819, so two of three pass the number. `from_picture.py` gained `--flat` (plain grey backgrounds lost the pale
+parts) and modes `mushrooms` and `roots`. Seen: crystals have five shards to the picture's ten (P4 gap); mushroom
+stems fuse into one pale mass; the root's tendrils read, its trunk is crumpled. Tests pass (J3 added). On his yes:
+mark #303 ready. Then J4 (character creator, robe set); J3's misses go to the gap fixes, and a root that must look
+twisted goes to TRELLIS.2 on his Mac per the spec. The chamber objects reach the game when `chamber.py` is wired into
+`cave.js`.
+
+Earlier: J2 (adding objects) is built and merged: bars-engine #299 (2026-10-13). `cave/objects.py` gives `chamber.py` one `obj(...)` line per
 object from Blendkit (CC0 Boulder 01, pinned by id), a picture (offering bowl, `pictures/offering_bowl.jpg`) or a script
 (cushion). Each object passes the kill line, and a source that is not CC0 stops the build (tests J2, J2b). Next: J3 (picture to asset), which needs his pictures in the Drive inbox. The J3 vibe interview ran 2026-10-13 (thread "J3 concept pictures"); his answers and four ChatGPT prompts are in `/mnt/project-files/3d-build/j3-concepts/prompts.md`: wondrous with a sacred, uneasy undertone; per-charge shape, colour and growth (tightness violet gentle mushrooms, tension amber strange crystals, strength green ancient roots, numbness black and bare); a gold glow held in a crystal lamp; hi-bit pixel art. J3 starts when `j3-mushroom`, `j3-crystal` and `j3-root` are in Cave studio inbox. The chamber objects reach
 the cave game when `chamber.py` is wired into `cave.js`.
