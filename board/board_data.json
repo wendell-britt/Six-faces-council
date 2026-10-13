@@ -7511,6 +7511,17 @@
    "auto": true,
    "pos": "Tavi's slip at L8 (l8-tavi-1) stays as written and goes to your phone play. Both taught runs pushed the plan there, because the rule says a person at the first step may have slipped. The key follows story.md: he has stepped back to working out what is going on, and the rule says to follow people back.",
    "why": "Changing it means rewording the rule you play (p3-where-they-stand), which step 4 should judge first. Source: sprout guessing-test.md, 'What it still misses'"
+  },
+  {
+   "id": "wave-water-controls-fire",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "Lamp-keeper's track, phone play",
+   "auto": true,
+   "pos": "Your ruling: water controls fire, not the other way around. In the fight, the right answer to a strike becomes a move whose element controls the strike's element, by the same restraining cycle the stances use: River Fill answers fire, Earth Yield answers water, Flame Follow answers Heaven. Today the answer is the next gate in Root's push-hands cycle, so Flame Follow answers River Fill and reads as fire beating water. The fix goes in the wave-battle strand, which owns the rule (wave-trigram-moves), and the tap-throughs are rebuilt from it. Earth strikes have no straight-four answer under this rule, so that strand decides how an Earth foe is met before the corner gates are taught.",
+   "why": "Your words in the Skilled Helper thread, 2026-10-13, on a screenshot of the Fixer's 'Water flows in toward the low place' with Flame Follow as the answer: 'Water controls fire not the other way around'. A chat answer counts as a ruling (CLAUDE.md). Source: sprout campaigns/skilled-helper/part-two/tools/prototype.template.html, NEXT and the answer check"
   }
  ],
  "questions": [
@@ -20451,6 +20462,30 @@
      "challenger"
     ],
     "pass": "environment engine, pass 1"
+   },
+   "gb-taught-run2": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:26:14.774Z",
+    "record": "council/ledger/2026-10-13-pull-222617.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "guessing bar, taught run 2"
+   },
+   "gb-step-back-play": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T22:26:17.041Z",
+    "record": "council/ledger/2026-10-13-pull-222617.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "guessing bar, taught run 2"
    }
   },
   "questions": {

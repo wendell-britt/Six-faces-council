@@ -1,4 +1,4 @@
-2026-10-13 (updated 22:35)
+2026-10-13 (updated 22:30)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
@@ -8,8 +8,8 @@ parts per build, the cave avatar's 16 joints, cave.js poseAvatar baked as "Walk"
 under-layer painted on (crossed collar left over right, tunic to mid-thigh, sash, cuffs, ankle ties, shoes). Nine GLBs
 262 to 273 KB (line 300); tests J4 and J4b pass. Round 1 (`j4-look-01`, his notes 22:14): collars "broken", proportions "hitting uncanny valley". Round 2 (commit aaf9cf53): the collar
 is one band cut exactly along its edges, over both shoulders and round the neck; the body is stylized (bigger head, plain trunk,
-thicker limbs, mitten hands); 246 to 266 KB. Waiting on board step `j4-look-02` (step 8), pictures in
-`/mnt/project-files/3d-build/j4-round2-2026-10-13/`. On his yes, #312
+thicker limbs, mitten hands); 246 to 266 KB. His yes on round 2 (22:27, "Yes this is better"); `j4-look-02` ticked, #312 marked ready and merges itself. Pictures in
+`/mnt/project-files/3d-build/j4-round2-2026-10-13/`. Next: J5 in a fresh thread. On his yes, #312
 goes ready and J5 (clothing: long robe, sash, topknot as skinned garments on this rig, root-game's garment work first)
 starts in a fresh thread. The figures reach the game with J5's garments, wired into `cave.js` together.
 
