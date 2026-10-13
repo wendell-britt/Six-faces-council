@@ -6965,6 +6965,17 @@
    "auto": true,
    "pos": "The cave's root curl gets two fixes from the cave studio thread, after its open crystal change (#289) lands. It has a small loose blob at the tip of its hook, separate from the rest of the curl, and 682 faces against its budget of 500. Both are already in the committed cave kit. Until then the tests excuse the root curl only, and the same fault in any other piece fails the run. This stands unless you flip it.",
    "why": "Found by the first test run (P3 and P5) and seen on the contact sheet. The picture-to-model tool belongs to the cave studio strand, so this thread did not touch it. Source: bars-engine PR #290, tools/blender-cloud/tests/LOOKED.md."
+  },
+  {
+   "id": "bpt-recipe-result",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "Blender pipeline tests",
+   "auto": true,
+   "pos": "The recipe missed its token line, so per bpt-recipe the idea is dropped. Over ten asks, editing the recipe cost 11,600 tokens past the opening load and editing plain Blender code cost 16,900, a ratio of 0.69 where the line was a third. Both got 8 of 10 asks right on the pictures. From textures on, Claude edits a committed Blender script for the chamber, one line per piece, as the code side of the test did. The builder's walls, floor and placement stay as that script's helpers. If you would rather keep the recipe, flip this: it was the cheaper of the two, and it checks an edit in a second without Blender. This stands unless you flip it.",
+   "why": "T1 passed (every edit under 20,000 tokens), T2 missed (0.69 against 0.33), T3 passed both ways. The saving is about 5,300 tokens an edit, against a 54,200 opening load every thread pays either way. Source: bars-engine PR #291, tools/blender-cloud/recipe_trial/RESULTS.md."
   }
  ],
  "questions": [
