@@ -127,8 +127,14 @@ BAR is now a first-class broad kernel: intentionally captured potential with sta
 
 Composting now ends a named active obligation without requiring later output, learning, transformation, fuel, or reuse. Optional CompostResidue and a later RegenerationEvent remain separately permissioned and evidenced. A real composting disposition removes backlog pressure and completion prompts; reactivation creates a new obligation. Composting remains distinct from deletion, archival, supersession, and completion of the original quest.
 
+## Creative-reuse and personal-meaning ontology decision
+
+- `creative-reuse-meaning/reconstruction-and-decision.md`
+
+“Not necromancy” remains an attributed BARS ProjectMeaningFrame rather than a compulsory player interpretation. Personal meaning, authorship, identity, attribution, permission, and consequence remain separate. A DerivedVoice is a character informed by a permitted corpus, not the source person or past self. “Not mine” is a scoped correction, and archive reuse remains optional with non-AI and non-reuse routes preserving core access and quality.
+
 ## Readiness
 
-Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, roadblock-intention, session-depth, BAR-scope, and composting questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
+Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, roadblock-intention, session-depth, BAR-scope, composting, and creative-reuse meaning questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
 
 The next activity is evidence-led resolution of the remaining questions in `sage-canon-reconciliation.md`. Questions answerable from source reconstruction, ontology invariants, and bounded deliberation should be resolved without returning unnecessary choices to Wendell. Only irreducible matters of personal meaning, values, or owner authority should be escalated. After corrections are recorded, Wendell may decide whether to authorize a separate Phase B governance council.

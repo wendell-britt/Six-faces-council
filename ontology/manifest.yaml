@@ -73,6 +73,8 @@ binding_decisions:
     path: ontology/v0.1/source/council-phase-a/bar-scope/reconstruction-and-decision.md
   composting:
     path: ontology/v0.1/source/council-phase-a/composting/reconstruction-and-decision.md
+  creative_reuse_meaning:
+    path: ontology/v0.1/source/council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md
 
 historical_material:
   root: ontology/v0.1/source/council-phase-a

@@ -342,6 +342,16 @@ Composting differs from deletion, archival/reference, abandonment, supersession,
 
 `CompostRecoverability` records none, decision-only, lineage-only, residue-available, source-restorable, or implementation-restorable. Privacy and deletion authority may require minimal tombstones or no retained source content. Recoverability does not preserve active obligation.
 
+### 8.10 Creative reuse, attribution, and meaning authority
+
+A `ProjectMeaningFrame` records a designer's intended metaphor or ethical interpretation. A `PersonalMeaningReport` records an affected person's experience. The project may name its ritual; it may not name the player's experience for them. Personal meaning does not settle shared facts, ownership, permission, or harm; project meaning does not overrule personal experience.
+
+`SourceCorpusRecord`, `CreativeReuseProposal`, and granular `ReuseAuthorization` precede archive-based adaptation. `DerivationRecord` identifies source contribution and method. `AttributionRecord` separates source authorship, corpus selection, generation, prompting, curation, character ownership, publication, and acceptance.
+
+A `DerivedVoice` is a character informed by a permitted corpus, not the source person, past self, or archived speaker. `IdentityContinuityClaim` preserves the current creator's own account of continuity with earlier work. “Not mine” becomes a scoped `ReuseRejection` covering semantic or experiential fit, authorship, attribution, identity or likeness, aesthetics, permission, or relationship.
+
+Rejection stops relevant future use and propagates through descendants. Completed play remains historical fact without retaining the rejected interpretation as player truth. Non-AI and non-reuse routes preserve core access and quality. Hidden outcomes may preserve mystery; hidden collection or unauthorized reuse may not.
+
 ## 9. Encounter ending and scoped completion
 
 Ending, resolution, quest completion, arc conclusion, satisfaction, and transformation are distinct claims.
@@ -473,6 +483,12 @@ An AI operating with this ontology must not:
 56. call composting deletion, archival, supersession, or completion of an unmet original contract;
 57. preserve or reuse private CompostResidue without appropriate authority and purpose permission;
 58. silently reactivate a composted obligation or diagnose its release as avoidance.
+59. present a ProjectMeaningFrame as the player's required personal meaning;
+60. claim that a DerivedVoice is the source person, past self, or an authentic new statement by them;
+61. treat source authorship as blanket reuse permission;
+62. collapse stylistic influence, source contribution, generation, curation, acceptance, and authorship;
+63. treat “not mine” as resistance or covert confirmation;
+64. make archive-based AI reuse necessary for core access, progress, quality, or belonging.
 
 ## 14. Minimum viable ontology record
 
