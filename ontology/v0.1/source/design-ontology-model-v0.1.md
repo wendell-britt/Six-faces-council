@@ -300,6 +300,16 @@ A DestinationClaim preserves Point B and its author. A RouteHypothesis remains f
 
 Some blockers may remain unresolved indefinitely. An unresolved blocker may still prevent a particular route or quest from completing. Changing or releasing the destination is valid, but it does not retroactively fulfill the earlier DestinationClaim. Learning from harm or error never makes it necessary, correct, or reversible.
 
+### 8.6 Roadblock observation and intention hypotheses
+
+A `RoadblockEvent` is an evidence-bearing specialization of BlockerRecord: it records that a named action, route, capacity, or destination is constrained under declared conditions. The event does not establish motive, emotional state, developmental level, resistance, hidden desire, or misaligned intention.
+
+A `RoadblockClassification` may be technical, dependency, resource, coordination, capability, environmental, relational, emotional/interpretive, safety/ethical, unknown, or multi-causal. A separate `RoadblockCausalAccount` distinguishes correlation, contributing condition, proximate cause, root-cause hypothesis, and cause verified within a declared test scope.
+
+An `IntentionAlignmentHypothesis` is a correctable interpretation comparing a declared intention with a relevant method, condition, capacity, permission, or consequence. Its governing rule is: **a roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.** The hypothesis records whose intention is represented, its author, supporting and contradicting evidence, uncertainty, and confirmation or rejection status. AI inference remains proposal-only.
+
+A `RoadblockResponse` may repair, retry, test, request help, accommodate, alter the environment, acquire capability, renegotiate, reroute, pause, rest, accept, leave unresolved, set down, abandon, or compost. A `MetabolizationOutcome` records reusable repair, verification, learning, or provenance. Technical metabolization does not imply emotional processing; experiential metabolization is valid only according to the represented person's evidence.
+
 ## 9. Encounter ending and scoped completion
 
 Ending, resolution, quest completion, arc conclusion, satisfaction, and transformation are distinct claims.
@@ -411,6 +421,10 @@ An AI operating with this ontology must not:
 36. retroactively fulfill an earlier DestinationClaim by silently revising Point B;
 37. make continued play or metabolization obligatory because a blocker exists;
 38. diagnose refusal to metabolize as resistance or as another blocker without independent evidence.
+39. infer misaligned intention from a RoadblockEvent or technical fault alone;
+40. collapse roadblock observation, classification, causal account, meaning, response, and outcome;
+41. erase structural, environmental, relational, accessibility, or safety constraints by reframing them as inner work;
+42. require emotional disclosure as a condition of technical diagnosis or repair.
 
 ## 14. Minimum viable ontology record
 

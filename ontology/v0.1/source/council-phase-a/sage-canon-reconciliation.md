@@ -198,9 +198,9 @@ The public Ontology Alchemy Game named in the council brief was not part of the 
     **Direct source fact:** The new ontology preserves contradictory evidence, unsuccessful outcomes, refusal, and the possibility that a design or intervention did not work.
     **Resolution:** Retain it as mythic reassurance and a recoverability covenant: no path has to be wasted. It is not an empirical guarantee, cannot erase wrongness or harm, and cannot silently revise the player's destination. Some blockers may remain unresolved indefinitely while continuing to constrain a named route. See `yellow-brick-road/reconstruction-and-decision.md`.
 
-18. **Roadblock as technical fact and intentional diagnosis**
+18. **Roadblock as technical fact and intentional diagnosis — resolved by ontology decision**
     **Direct source fact:** `FOUNDATIONS.md` calls an Emergent Roadblock a manifestation of misaligned intention while giving build errors and export mismatches as examples.
-    **Delta:** The new ontology requires the technical observation to remain separate from the intention interpretation unless evidence connects them.
+    **Resolution:** A RoadblockEvent is first a scoped observation. Classification, causal account, intention interpretation, response, and outcome remain separate. “Misaligned intention” is a correctable hypothesis requiring a declared intention and relevant evidence; it is never inferred from technical failure alone. Technical metabolization can mean repair, verification, routing, learning, or provenance without emotional processing. See `roadblocks/reconstruction-and-decision.md`.
 
 19. **Session depth and disclosure volume**
     **Direct source fact:** The future 3-2-1 signal associates long answers, specific fear naming, and “genuine mask identification” with deeper sessions and richer outputs.
@@ -309,7 +309,7 @@ The following are materially more explicit in the new package than in the inspec
 10. **Resolved 2026-10-12:** Derived legacy translate/transcend output is a player-correctable routing hypothesis, formalized as a DerivedMovementProposal. An accepted proposal may route authored content; it cannot establish actual movement.
 11. **Resolved 2026-10-12:** “You can never go the wrong way” is mythic reassurance about recoverability. The precise rule is “no path has to be wasted”; it is not an operational or metaphysical guarantee.
 12. **Resolved 2026-10-12:** Some blockers may remain unresolved indefinitely. They may constrain a particular route without creating a perpetual obligation to metabolize them.
-13. Is “misaligned intention” a metaphor for technical roadblocks or a causal diagnosis that requires evidence?
+13. **Resolved 2026-10-12:** “Misaligned intention” is a metaphorical and interpretive possibility formalized as an `IntentionAlignmentHypothesis`. Any causal use requires a declared intention, scoped comparison, and relevant evidence; a technical roadblock never proves it.
 14. May future session-depth heuristics influence rewards or content, and who can authorize inference from verbosity or intimate disclosure?
 15. Is BAR canonically any provenance-bearing kernel, a charged kernel, or a parent class with charged BAR as one subtype?
 16. Does composting require later generative reuse, or may obligation end without producing a new artifact?
@@ -413,7 +413,7 @@ Wendell is asked to correct the council's understanding of the following. These 
 10. **TensionVector — resolved 2026-10-12:** Bare TensionVector is retired. Use TensionConfiguration formally, TensionSnapshot for persisted data, TransformationTrace for the path, Tension Map for players, and `BARS321TensionVector` only as a deprecated compatibility alias.
 11. **Derived movement — resolved 2026-10-12:** The source author or represented player may correct or reject the proposal. Future use stops; unpublished descendants are invalidated or reviewed; published descendants are versioned; historical play remains provenance without retaining the rejected interpretation as player truth; privacy restrictions propagate through lineage.
 12. **Yellow Brick Road — resolved 2026-10-12:** It is mythic reassurance and a recoverability covenant. No path has to be wasted, but wrongness, failure, harm, and irreversible consequence remain real. Some blockers may remain unprocessed indefinitely while constraining a named route.
-13. **Roadblocks:** Is “misaligned intention” a metaphor for technical failures or a causal claim the system should infer?
+13. **Resolved — Roadblocks:** Preserve “misaligned intention” as an optional, correctable interpretation. The system records the roadblock observation first and may infer neither hidden intention nor psychological cause from technical failure.
 14. **BAR scope:** Is every provenance-bearing kernel a BAR, with charged BARs as one source/subtype, or should charge be constitutive?
 15. **Composting:** Can composting end with release alone, or must retained material eventually generate new fuel or form?
 16. **Personal meaning:** May a player interpret AI remixing of their past work as uncanny, inappropriate, or “not mine” despite the project's “not necromancy” framing?

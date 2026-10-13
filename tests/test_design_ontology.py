@@ -50,6 +50,7 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "DerivedMovementProposal",
             "No path has to be wasted",
             "Players author personal meaning",
+            "it does not prove misaligned intention",
         ]
         for phrase in required:
             with self.subTest(phrase=phrase):
@@ -61,6 +62,7 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "TensionVector is the lived",
             "quest ending proves transformation",
             "divergence proves hidden desire",
+            "a technical fault proves misaligned intention",
         ]
         lowered = self.quickstart.lower()
         for phrase in forbidden:

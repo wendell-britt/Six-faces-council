@@ -317,6 +317,73 @@ yellow_brick_road:
     A blocker may remain unresolved indefinitely. It may continue to constrain a
     named route without creating an obligation to metabolize it.
 
+roadblocks:
+  decision_record: ontology/v0.1/source/council-phase-a/roadblocks/reconstruction-and-decision.md
+  governing_rule: >-
+    A roadblock may reveal a mismatch among intention, method, conditions, and
+    capacity; it does not prove misaligned intention.
+  sequence:
+    - RoadblockEvent
+    - RoadblockClassification
+    - RoadblockCausalAccount
+    - IntentionAlignmentHypothesis
+    - RoadblockResponse
+    - MetabolizationOutcome
+  classifications:
+    - technical
+    - dependency
+    - resource
+    - coordination
+    - capability
+    - environmental
+    - relational
+    - emotional_interpretive
+    - safety_ethical
+    - unknown
+  causal_claim_statuses:
+    - observed_correlation
+    - contributing_condition
+    - proximate_cause
+    - root_cause_hypothesis
+    - verified_within_declared_test_scope
+  response_options:
+    - repair
+    - retry
+    - test
+    - request_help
+    - accommodate
+    - alter_environment
+    - acquire_capability
+    - renegotiate
+    - reroute
+    - pause
+    - rest
+    - accept_constraint
+    - leave_unresolved
+    - set_down
+    - abandon
+    - compost
+  technical_metabolization_may_produce:
+    - repair
+    - verification
+    - safer_route
+    - reusable_learning
+    - provenance_artifact
+  intention_alignment_hypothesis_requires:
+    - declared_intention
+    - represented_agent
+    - hypothesis_author
+    - relevant_method_conditions_or_capacity
+    - supporting_and_contradicting_evidence
+    - uncertainty
+    - confirmation_correction_or_rejection_status
+  prohibitions:
+    - no_psychological_diagnosis_from_technical_failure
+    - no_hidden_intention_inference
+    - no_refusal_as_confirmation
+    - no_emotional_disclosure_required_for_technical_repair
+    - no_inner_work_reframe_that_erases_external_constraint
+
 integral_attention_declaration:
   required_fields:
     - intended_pleasure
@@ -386,6 +453,11 @@ hard_invariants:
   - revised_destination_does_not_retroactively_fulfill_prior_destination
   - unresolved_blocker_does_not_create_perpetual_processing_obligation
   - refusal_to_metabolize_is_not_itself_a_blocker_diagnosis
+  - roadblock_observation_is_not_causal_or_intentional_diagnosis
+  - roadblock_classification_is_not_causal_proof
+  - technical_failure_does_not_prove_misaligned_intention
+  - external_constraint_cannot_be_erased_by_inner_work_reframing
+  - technical_repair_cannot_require_emotional_disclosure
 
 minimum_record:
   required:

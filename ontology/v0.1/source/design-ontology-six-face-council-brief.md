@@ -357,6 +357,14 @@ Retain the Yellow Brick Road as mythic reassurance that **no path has to be wast
 
 A destination retains its author and revision history. Routes remain falsifiable. Divergence may become evolution, discovery, error, failure, escape, or noise according to evidence. Some blockers may remain unresolved indefinitely; they may still constrain a particular route without obligating the player to metabolize them. Rest, assistance, accommodation, another route, environmental change, revised destination, abandonment, and composting remain valid.
 
+### Roadblocks do not diagnose intention
+
+Record a roadblock first as a scoped observation of what is constrained and under which conditions. Keep its provisional classification, causal account, meaning, response, and outcome separate. Technical, dependency, resource, coordination, capability, environmental, relational, emotional/interpretive, and safety/ethical causes may coexist or remain unknown.
+
+“Misaligned intention” is a correctable hypothesis only when a declared intention can be compared with relevant method, conditions, capacity, permissions, or consequences. The council may propose it; it may not infer a person's hidden intention or treat refusal as confirmation. The binding rule is: **a roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.**
+
+Technical metabolization means producing repair, verification, safer routing, reusable learning, or provenance. It does not require emotional processing. Experiential metabolization remains optional and evidence-bound.
+
 ---
 
 ## 8. Encounter ending and scoped completion
