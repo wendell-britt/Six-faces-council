@@ -7643,6 +7643,28 @@
    "auto": true,
    "pos": "After your answers to bi-what-for and bi-chart, one fresh thread builds the chosen shape for one spirit, Ama Rell's Fixer at P1, as its own phone page. You play it before any track's fights change, and five cold players test it (B1). This stands unless you flip it.",
    "why": "A first build of a new fight can miss as this one did; building one spirit keeps a miss cheap. Source: council/passes/6FACE_PASS_battle-intake1_2026-10-13.md (six-faces-council)"
+  },
+  {
+   "id": "dp-room-walk",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "The daemon path",
+   "auto": true,
+   "pos": "In the WAVE room you tap the floor to stand up and walk there, and the camera follows from behind. Tapping the step's words walks you back to your seat, where every step is done. Walking to a door opens its card, with its way through and Stay in the room. The room now wears the same stone as the tunnels. This stands unless you flip it.",
+   "why": "Your overrule of dp-big-mind-page, 13 October 22:34: the room needs \"the ability for players to walk around in\" and \"All of the caves need to use the same assets\". Tap, not hold, because the room is small and every step in it is already a tap; the tunnels keep hold to walk. Built in bars-engine #313 (draft, on the cave levels work, #309)."
+  },
+  {
+   "id": "dp-bm-door-cave",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "The daemon path",
+   "auto": true,
+   "pos": "The Big Mind door, on the left behind the seat, opens the Big Mind cave itself on the same page, at its mouth, with Back to the WAVE room. The charges you worked through the whole W.A.V.E. in the room walk in with you as spirits. The other door, on the right, is the six game masters: it opens the hall of the six, whose tunnels are plain until their content is made. The next six chambers and the centre are built inside the Big Mind cave, which already has the Protector's refusal path, the charge meter and the speaking turns. This stands unless you flip it.",
+   "why": "Your overrule of dp-big-mind-page: \"The big mind cave need to be accessible from the WAVE room ... Another door in the room leads to the 6 game masters (content to be created)\". dp-door places the door; dp-seven and dp-centre say what the path holds."
   }
  ],
  "questions": [
