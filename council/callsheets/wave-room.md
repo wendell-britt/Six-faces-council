@@ -35,6 +35,13 @@ six game masters. bars-engine #313; see big-mind-cave.md.
   with". A spirit emerges only after the whole W.A.V.E.; standing up partway leaves none. This flips the sit-anywhere
   design's "standing up partway leaves a spirit". Built in the cave by bars-engine #310; in the room, only a charge worked
   through to the end goes through a door as a spirit (the walkable room build, stacked on #309).
+- Wendell, 2026-10-13 23:26 (in the cave branch seams thread), after "In the 6 faces room the walking is quite slow":
+  "Ah yes. Ok we should disambiguate the walk speed to breath. We have that built into the manual wave experience so we
+  don’t need that anymore". Walking no longer keeps one stretch to a breath. Every cave and level walks at one steady
+  speed, and the breath lives in the manual W.A.V.E. Built in bars-engine #310 (WALK_SPEED 4 units a second).
+- Wendell, 2026-10-13, in the WAVE room thread: the room needs "free walking controls", "a rug or a seat players can sit
+  on when they are communing with spirits", and a camera that tilts up and down. Built in bars-engine #313: a walking
+  stick and the arrow keys, a rug with a cushion that offers Sit down, and a drag that tilts the camera.
 
 ## Waiting on
 The board's blocker panel (docs/blocker-panel.md, 2026-10-12) runs an overdue step through a light WAVE and saves
