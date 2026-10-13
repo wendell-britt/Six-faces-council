@@ -7084,6 +7084,72 @@
    "auto": true,
    "pos": "A player who cannot find the exact daemon may pick the nearest one, and the game works with that reading. Nothing treats a loose pick as an error. This stands unless you flip it.",
    "why": "Your ruling in chat on 12 October: \"it's ok for a player to invent one. No one is clever enough to not get some value out of even a slightly less than precice reading of the present daemon\". Also from the same chat: the Controller has no arms, and \"the fixer is the arms of the controller\", so the Fixer is the daemon that holds the player until it is handled."
+  },
+  {
+   "id": "ff-two-reports",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "free-flow 1",
+   "auto": true,
+   "pos": "The body report and the gold report are two separate reports the game keeps apart. The body report is one of five answers about a place in the body: tension, constriction, strength, numbness, or free-flowing qi and aliveness. A gold state is a named feeling at the top of a channel's ladder and a satisfaction the player may want. The game never derives one from the other. This stands unless you flip it.",
+   "why": "Your ruling that \"everything else is free-flowing qi and aliveness\" makes free flow one leftover class for every channel, while the golds are five. Your answer of \"both\" on book-golds-satisfactions. The ontology keeps SomaticReport, SatisfactionReport and DesiredStateReport as separate types. Source: council/passes/6FACE_PASS_free-flow-state_2026-10-12.md (six-faces-council)"
+  },
+  {
+   "id": "ff-aliveness-is-theirs",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "free-flow 1",
+   "auto": true,
+   "pos": "A player's report of aliveness is taken as given at every stage. The game does not check it against strength or numbness, unlocks nothing on it and does not score it. It is saved as data when the record is on, as any other answer is. This stands unless you flip it.",
+   "why": "Your rulings of 12 October. Of strength: \"strength feels good\". Of numbness: \"its one of the last charges that people learn to metabolize. It's the chargeless charge.\" The early game does not ask a player to find either, so an early \"alive\" can hold either and the game cannot tell. Also bmw-number-stays and sb-satisfied-is-theirs, where the game does not score. Source: council/passes/6FACE_PASS_free-flow-state_2026-10-12.md (six-faces-council)"
+  },
+  {
+   "id": "ff-no-daemon-on-aliveness",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "free-flow 1",
+   "auto": true,
+   "pos": "A player who reports aliveness at the scan is not sent to a daemon or to block work, because nothing is holding the charge. The clean up move is not pressed on a charge that is not blocked. Happy Apples stays open to every channel as the move that opens it up, the player may go on up the W.A.V.E. ladder, and stopping at any rung is complete. If a move later blocks, the daemon path opens as sb-enter-at-daemon has it. This refines the blocked-move pass, which named the clean up move as the second half of the free move; the second half is offered where something is blocked. This stands unless you flip it.",
+   "why": "Your overrule of oag-open-up-tools: \"The EA move for each of the channels is a clean up move as clean up moves are for dissolving and Alchemizing blocks\", and \"The general moves for happy apples can apply to all the channels as an opening up move\". Also oag-wave-ladder and wave-order, where any rung may be the last. The Regent would hold this row until your phone play by 18 October. Source: council/passes/6FACE_PASS_free-flow-state_2026-10-12.md (six-faces-council)"
+  },
+  {
+   "id": "ff-name-what-is-here",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "free-flow 1",
+   "auto": true,
+   "pos": "After an aliveness report the game may offer one line, \"what is here\", and never requires it. The player answers in their own words. The five gold states show as cards only if the player says they do not know, and up to three may be picked. The game does not choose a gold for the player from the body report, the channel or the charge number. The line's wording is the council's placeholder and is yours to set. This stands unless you flip it.",
+   "why": "sb-words-then-cards and bmw-player-names, where the game never guesses. Your steer on cc-feeling, \"We should be able to chose up to 3 options here\", which was about what you want to feel and which the council carries over as its own reading. Your answer on book-golds-satisfactions. Your Shaman lesson of 9 September: an offer is not a requirement. The Architect would hold this row until the golds have a mechanic in this flow. Source: council/passes/6FACE_PASS_free-flow-state_2026-10-12.md (six-faces-council)"
+  },
+  {
+   "id": "ff-gold-minted-by-grounding",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "free-flow 1",
+   "auto": true,
+   "pos": "Where a game counts gold, gold comes from grounding a charge or from a real step the player marks done, and from nothing else. Neither a report of aliveness nor naming a gold state mints it. The felt gold state and the counted gold stay two uses of one word. This stands unless you flip it.",
+   "why": "ya-road-gold (grounding any charge, or a real step, yields gold), ya-mode3-gold, and ya-gets-us, which links the felt state and the coin on purpose, so the join sits at grounding and never at the report. Source: council/passes/6FACE_PASS_free-flow-state_2026-10-12.md (six-faces-council)"
+  },
+  {
+   "id": "ff-every-pair-has-a-relation",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "free-flow 1",
+   "auto": true,
+   "pos": "Any two different channels are a sheng pair or a ke pair, so no pair of channels falls outside both. On your map the five channels make ten pairs, five sheng and five ke. A player who picks any two channels gets the question sb-compound-prevails already asks, which holds the other or which leads, in the player's own words, and the game runs that channel's free move first. A player who names the direction the cycle does not run is taken at their word. The only pair outside both is one channel picked twice, which is one channel. This stands unless you flip it.",
+   "why": "Counted by script on the standard sheng and ke orders with your map, every pair appearing once. The cycle orders are not in this repo and the Guide's ke notes were not read, so a different order in your canon would change the table. Also sb-compound-prevails and bmw-player-names, where the game does not guess for the player. Source: council/passes/6FACE_PASS_free-flow-state_2026-10-12.md (six-faces-council)"
   }
  ],
  "questions": [
