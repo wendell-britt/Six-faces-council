@@ -4,6 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
+- [cave-levels](cave-levels.md), 2026-10-13: level plan in bars-engine #307 (draft, LEVELS.md): WAVE room as home, portal to the hall of the six, one tunnel per face as its minigame, skill branches, the centre of the self; six `lv-*` positions on the board; next the walkable skeleton in a fresh thread.
 - Daily compost pass (docs/compost-pass.md), 2026-10-12: routine each morning at 6:47 Pacific starts a thread that keeps, drops or takes over Wendell's open steps. First pass dropped four, took over one check, rewrote two.
 - [virtual-launch](virtual-launch.md), 2026-10-12: step blocked; split into name-the-block, `vl-date` and six one-question steps; answers go onto the pipeline row.
 - [somatic-ontology](somatic-ontology.md), 2026-10-12: blocked-move and free-flow passes done, `sb-*` and `ff-*` rows on the board, rulings of 10-13 recorded (early-pair; up to 3 daemons at once, turn based; skipped 3-2-1 picked up in the WAVE room); nothing built before his wave-room play by 10-18, then test T1 against the saves in a fresh thread.
