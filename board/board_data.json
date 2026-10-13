@@ -19879,6 +19879,152 @@
      "diplomat"
     ],
     "pass": "One cave: daemons met the Big Mind way"
+   },
+   "cp-unit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:33:19.178Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "Idea corpus audit"
+   },
+   "cp-home": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:34:21.443Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "steer": "Let's also explore what it would take to get this into Obsidian",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "Idea corpus audit"
+   },
+   "cp-capture": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:35:05.159Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "steer": "I mean this really is what BARs is for. We want to be able to go from Podcast to Bars and Bars to Game assets and books and then books back to podcasts",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "Idea corpus audit"
+   },
+   "cp-ingest": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:35:09.994Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "Idea corpus audit"
+   },
+   "cp-slots": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:35:18.962Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "Idea corpus audit"
+   },
+   "cp-backfill": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:35:27.077Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "Idea corpus audit"
+   },
+   "lv-home-portal": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:35:33.927Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "Cave levels"
+   },
+   "lv-issue-at-home": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:35:43.327Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "Cave levels"
+   },
+   "lv-branches-skills": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:36:08.461Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "Cave levels"
+   },
+   "lv-old-walk": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T16:36:15.410Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "Cave levels"
+   },
+   "lv-first-slice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T18:11:10.374Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "Cave levels"
+   },
+   "lv-centre-altitude": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T18:11:26.604Z",
+    "record": "council/ledger/2026-10-13-pull-182450.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "Cave levels"
    }
   },
   "questions": {
@@ -23119,7 +23265,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-13T02:26:28Z",
+ "steps_recorded_through": "2026-10-13T18:24:50.411Z",
  "morning": {
   "date": "2026-10-13",
   "gathered_at": "2026-10-13T15:45:41Z",
