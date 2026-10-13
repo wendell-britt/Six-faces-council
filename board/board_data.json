@@ -7742,6 +7742,28 @@
    "auto": true,
    "pos": "For the test, the page lets you pick any one of the five ally spirits, or none, before the fight, so you can feel the chart. Your Wood ally wins in 3 turns, a Water, Metal or Earth ally in 5, and your own power alone in 6. A Fire ally only feeds the earth and tires, and you finish over 7. In the game you hold only the allies you have befriended (the first one matches your channel). This stands unless you flip it.",
    "why": "bi-chart A teaches the elements by reward, which only shows when the same fight is played with different elements. design.md: the first ally matches the player's channel. Checked by a scripted run of each path at phone width. Built in sprout #50."
+  },
+  {
+   "id": "sf-stats-carry",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "spirit fight build 3",
+   "auto": true,
+   "pos": "Stats carry the fight, and moves are bonuses on top. Every spirit, and you, has HP, power, guard, magic and speed. A spirit's own element grows its matching stat twice as fast (Earth HP, Fire power, Metal guard, Water magic, Wood speed). A move hits for power (or magic, if higher) plus the move's bonus, less the target's guard. The five-element chart doubles or halves only the bonus, so a mismatched ally still fights on its stats. The faster side goes first. A push from the element that controls yours hurts more. Every ally now wins standing in 3 to 5 turns: Wood in 3, Fire and Water in 4, Earth and Metal in 5. Your own power alone takes 5. This replaces the turn counts in sf-ally-pick. This stands unless you flip it.",
+   "why": "Your chat on build 2, 13 October: \"a mismatched ally gets defeated too quickly. I do think this is where pokemon stats balance the game out and moves are bonuses on stats\". The stat model is sprout #29's placeholder, already in the Pruner's Track (foeStats). Being controlled hurts is design.md's spirit-fight rule. Checked by a scripted run of every ally at phone width. Built in sprout #50."
+  },
+  {
+   "id": "sf-generator-next",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "spirit fight build 3",
+   "auto": true,
+   "pos": "The spirit generator in the style of Monster Rancher, and the places where spirits train and grow stronger by getting better at the game's whole loop, are a new strand. They get their own intake pass in a fresh thread, separate from this fight. That pass starts from design.md's spirit and ally rules and from ds-tiers, and puts one fork to you there: today a Decided rule says spirits do not grow by working, only by sparring and fighting. This fight keeps placeholder allies until the generator exists. This stands unless you flip it.",
+   "why": "Your chat, 13 October: \"We will need to develop a spirit generator à la monster rancher and contexts for spirits to train and grow stronger by getting better at the overall game loop\". The short-sessions rule gives each piece of work its own thread."
   }
  ],
  "questions": [
