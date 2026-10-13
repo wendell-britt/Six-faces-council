@@ -1,4 +1,4 @@
-2026-10-13 (updated 04:30)
+2026-10-13 (updated 04:45)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -9,10 +9,14 @@ optional words and Not now, and three first-person turns speaking as the voice. 
 `bmw-appreciate-words`, `bm-be-turns`. Phone link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU (version 7). Next: his play,
 then fixes in a fresh thread.
 
-**Next thread, 2026-10-13:** Wendell in the cave-textures thread: "Also we need to import the WAVE process into this map. I
-think we're almost to the point where we can merge the bigmind cave and this cave". One fresh thread: bring #278 and #282's
-W.A.V.E. and sit-down onto the Cave of Lessons map (bars-engine #294: stone, per-charge shapes, carried light with
-`carryLight` for spirits), then fold the Big Mind cave into it. #278 and #282 are not on main; rebase them onto #294 first.
+**2026-10-13, WAVE into the cave map:** bars-engine #296 (draft, branch `claude/project-thread-uabtt2`, on #294) merges
+the whole Big Mind stack (#272, #276, #277, #278, #282) onto the Cave of Lessons stone. The Cave of Lessons has Sit down
+anywhere, running the WAVE room's steps in place; every spirit in both caves carries its own light; the Big Mind cave wears
+the J1 stone. cave-test 297 pass, bigmind-test 178 pass. Phone page: https://claude.ai/artifact/23neJJJgywAygUqiJffGvc
+(version 8). Board positions `merge-layout` (Big Mind chambers become the Cave of Lessons' daemon stops) and
+`cave-sit-down` stand unless he flips them. Next: his play of version 8, then the fold itself in a fresh thread (daemon
+stops met the Big Mind way, the Big Mind page opening the Cave of Lessons). #296 retargets to main once #294 merges; #272,
+#276, #277 and #278 close then.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
