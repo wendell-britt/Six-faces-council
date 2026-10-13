@@ -1,10 +1,10 @@
-2026-10-13 (updated 04:55)
+2026-10-13 (updated 05:03)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
 J2 (adding objects) is built and merged: bars-engine #299 (2026-10-13). `cave/objects.py` gives `chamber.py` one `obj(...)` line per
 object from Blendkit (CC0 Boulder 01, pinned by id), a picture (offering bowl, `pictures/offering_bowl.jpg`) or a script
-(cushion). Each object passes the kill line, and a source that is not CC0 stops the build (tests J2, J2b). Next: J3 (picture to asset), which needs his pictures in the Drive inbox. The chamber objects reach
+(cushion). Each object passes the kill line, and a source that is not CC0 stops the build (tests J2, J2b). Next: J3 (picture to asset), which needs his pictures in the Drive inbox. The J3 vibe interview ran 2026-10-13 (thread "J3 concept pictures"); his answers and four ChatGPT prompts are in `/mnt/project-files/3d-build/j3-concepts/prompts.md`: wondrous with a sacred, uneasy undertone; per-charge shape, colour and growth (tightness violet gentle mushrooms, tension amber strange crystals, strength green ancient roots, numbness black and bare); a gold glow held in a crystal lamp; hi-bit pixel art. J3 starts when `j3-mushroom`, `j3-crystal` and `j3-root` are in Cave studio inbox. The chamber objects reach
 the cave game when `chamber.py` is wired into `cave.js`.
 
 Earlier: The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Since then, from his
