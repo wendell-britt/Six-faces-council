@@ -22,7 +22,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 - [coaching-site](coaching-site.md), 2026-10-09: Wendell plays #270 on his phone by 10-12, then merge.
 - [podcast](podcast.md), 2026-10-09: ep 2 title and thumbnail, Spotify link, clips, outreach sends.
 - [flirtcraft](flirtcraft.md), 2026-10-09: finish own database and sign-in before promoting; loop fixes PR.
-- [skilled-helper](skilled-helper.md), 2026-10-13: Part III guessing test passed round 4 (sprout #46); guessing bar pass 1 on the board, question `gb-taught-target` waits on him, then his phone play. His phone play of the Pruner's track fights (#41 on #38).
+- [skilled-helper](skilled-helper.md), 2026-10-13: taught player 56% against 85% (sprout #47); next a rekey of 14 moments so partials sit behind, rerun the taught player, then his phone play. His phone play of the Pruner's track fights (#41 on #38).
 - [session-cost](session-cost.md), 2026-10-08: measure slim board read; Wendell ticks plugins-trim.
 - [wave-battle](wave-battle.md), 2026-10-06: build sprout #25 taught fight with Yun and English moves.
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.
