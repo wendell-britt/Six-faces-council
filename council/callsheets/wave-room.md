@@ -2,6 +2,13 @@
 # WAVE room (the cave's home)
 
 ## Next
+2026-10-13: pinch to zoom and a tap-a-creature close-up are built for the room, bars-engine PR #302 (branch
+`claude/project-thread-wvicrp`), cave-test 315 pass, 331 with the Big Mind fold. Zooming out past the step's view widens the lens
+so all three creatures fit on an upright phone (choice). The close-up card shows name, element, texture, where, step, charge,
+feelings about it, goal and next move, with "Work with this one" and "Back to the room" (choice). Phone page
+https://claude.ai/artifact/23neJJJgywAygUqiJffGvc version 14 carries it with the Big Mind fold. Next: his play of the pinch and
+close-up.
+
 The second slice is built: bars-engine PR #277 (branch `claude/project-thread-ncihch`, stacked on #276), 263 checks green. It
 carries all seven of Wendell's 22:59 changes: Talk to it switches voice by itself (room and cave), the door slides into the wall,
 Allow grows the creature with size and brightness sliders, a glow and sparks that dull as it is worked, up to three creatures
