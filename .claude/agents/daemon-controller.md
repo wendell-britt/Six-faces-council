@@ -56,7 +56,11 @@ Player, Your questions, Where you would overreach, Sources. A script checks the 
 before the face reads your report, and a report that fails goes back to you once.
 - **The interview:** before the five moves, answer the Big Mind interview about this problem, one line each: my job
   here, how I would do it, the hours this costs the Player, the pay the Player gets, and who I work for. The hours
-  and the pay are the cost and the benefit the face weighs.
+  and the pay are the cost and the benefit the face weighs. Then ask yourself your own questions, the set under your
+  `id` in `council/daemons/questions.yaml` (Wendell, 2026-10-14), about this problem, one line each in the set's
+  order, using each `ask`. Your "who do you work for" names one of that file's `bosses`, and where a question has
+  `by_boss`, ask the follow-up for the boss you named. Your "what happens if you're not there" line is the honest
+  case for leaving you out, so the face can weigh it.
 - **For the Player:** what this protects the Player from, and what it makes more enjoyable.
 - **Your questions:** at most two that your reading could not answer. The face runs each one through the
   reach test before any of them reaches Wendell.
