@@ -21310,6 +21310,80 @@
      "challenger"
     ],
     "pass": "spirit generator 1"
+   },
+   "sg-look-layers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T01:38:55.003Z",
+    "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit look research"
+   },
+   "sg-grows-into-shape": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T01:42:03.481Z",
+    "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
+    "steer": "I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "spirit look research"
+   },
+   "sg-breed-names": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T01:42:15.426Z",
+    "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "spirit look research"
+   },
+   "sg-assets-modular": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T01:42:30.778Z",
+    "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirit look research"
+   },
+   "sg-shape-choice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T01:43:16.441Z",
+    "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
+    "steer": "Yes I think this connects. Many spirits I think will de defeated and drop loot and this loot can be offered to spirits the players ally with",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "spirit look research"
+   },
+   "nation-elements": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T01:43:24.349Z",
+    "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "spirit look research"
    }
   },
   "questions": {
@@ -23325,6 +23399,18 @@
      "architect"
     ],
     "pass": "spirit generator 1"
+   },
+   "sg-body-from": {
+    "decision": "urge",
+    "label": "The urge picks the family, you pick its animal",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T01:38:35.501Z",
+    "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit look research"
    }
   },
   "causes": {
