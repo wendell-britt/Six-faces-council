@@ -9,7 +9,7 @@
   themselves instead of using them as allies".
 - First build (2026-10-14): bars-engine `content/ontology-game/cave/dissolve.js`, wired into the cave's spirit card (a third
   way beside breathe it out and take it home), branch `claude/project-thread-dnhcby`, draft bars-engine #327, stacked on #324. cave-test 397 pass, 0 fail. DESIGN.md "Dissolving
-  a spirit into yourself". Positions on the board: `sd-density-ladder`, `sd-mana-to-stat`, `sd-gone-after` (rows
+  a spirit into yourself". Positions on the board: `sd-density-ladder`, `sd-mana-to-stat`, `sd-gone-after`, `sd-shadow-skip` (rows
   `council/callsheets/rows/spirit-dissolve-2026-10-14.json`). No question survived the reach test.
 - Next, after his play: carry dissolving to the Big Mind cave's spirits (`bigmind.js` letGo) and to the spirit generator's
   allies on sprout #51 (its forms already sit on the ladder through `FORM_STATE`), and let the player's stats from mana feed
