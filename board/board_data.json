@@ -21442,6 +21442,18 @@
      "diplomat"
     ],
     "pass": "spirit look research"
+   },
+   "sg-five-stages": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T02:50:25.009Z",
+    "record": "council/ledger/2026-10-14-pull-025025.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit look research"
    }
   },
   "questions": {
@@ -24780,7 +24792,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-13T23:24:02Z",
+ "steps_recorded_through": "2026-10-14T00:27:03Z",
  "morning": {
   "date": "2026-10-13",
   "gathered_at": "2026-10-13T15:45:41Z",
