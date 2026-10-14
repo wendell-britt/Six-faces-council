@@ -35,5 +35,6 @@ Step 2, story and teaching NPCs, from sprout `campaigns/mtgoa-ch1/extract.yaml` 
 not merged) and Sprout's design record, the way Skilled Helper `story.md` was written. Owner Shaman, checker
 Diplomat, Opus. Deal Wake Up cards from bars-engine `public/allyship-deck/allyship-deck.json` (`ch1-deck-hand`).
 Read the extract's `shaman_check.flag_for_step_2` (does the player sit in the ally's seat or meet the Arcade through
-teaching NPCs) and `ontology_check` first. Where the Arcade lives waits on `ch1-where`; write the story so it holds in
-Sprout (the recommendation) and note what would change for the cave. Run it as one thread.
+teaching NPCs) and `ontology_check` first. `ch1-where` is answered (board read 2026-10-14 18:46): Sprout, ending in the cave, with a
+2D or 3D character walking the world; the story must use the farming, fighting and exploring loops (the extract's
+`loops` section). Run it as one thread.
