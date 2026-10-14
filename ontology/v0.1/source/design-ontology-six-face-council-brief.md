@@ -343,6 +343,12 @@ Bare `TensionVector` is retired. `BARS321TensionVector` survives only as a depre
 
 Collection, persistence, derivation, artifact generation, personalization, NPC/world adaptation, collective reuse, sharing, analytics, and model improvement require distinct permissions. Structured extraction is not anonymization.
 
+### Privacy authority follows the material
+
+Consent is situated authorization; a `ConsentRecord` is evidence of a past decision, not permanent proof of present willingness. Every concrete operation evaluates a `PermissionEnvelope` that intersects purpose-specific grants, refusals, boundaries, source restrictions, and duties. Derivatives inherit that envelope through lineage even when they become structured data, generated world material, analytics, exports, or model artifacts.
+
+The represented person governs person-specific interior, somatic, psychographic, identity, likeness, and inference uses within their authority. Each affected participant governs their own relational contribution. Creative authors and rights-holders govern only the rights they actually hold. Stewards may administer an authorized purpose but cannot create a new one. Correction changes claims; revocation ends future authority; deletion disposes of named content and descendants. Optional sensitive uses cannot buy baseline quality, progress, power, credentials, or belonging.
+
 ### Derived movement is a proposal, not a finding
 
 The legacy Epiphany-Bridge binary reuses `translate` and `transcend` with meanings different from the fifteen-move Emotional Alchemy grammar. Treat it as a separate `LegacyEpiphanyMovementMode` namespace; do not join the grammars by label.
@@ -533,7 +539,7 @@ Ask:
 - Which principles currently present themselves as constitutional, provisional, or unresolved?
 - What authority would eventually be required to revise, ratify, fork, deprecate, or compost an ontology node?
 - What must be understood and demonstrated before a concept could become canonical?
-- What privacy and consent rules govern psychographs and somatic data?
+- Which current implementations fail the binding privacy and consent authority tests?
 - What is the definition of done for the ingestion and translation pass?
 
 Deliver an authority map and readiness gates for entering later governance. Do not ratify the ontology in this pass.

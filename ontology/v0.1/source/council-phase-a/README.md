@@ -133,8 +133,14 @@ Composting now ends a named active obligation without requiring later output, le
 
 “Not necromancy” remains an attributed BARS ProjectMeaningFrame rather than a compulsory player interpretation. Personal meaning, authorship, identity, attribution, permission, and consequence remain separate. A DerivedVoice is a character informed by a permitted corpus, not the source person or past self. “Not mine” is a scoped correction, and archive reuse remains optional with non-AI and non-reuse routes preserving core access and quality.
 
+## Privacy and consent authority ontology decision
+
+- `privacy-consent-authority/reconstruction-and-decision.md`
+
+Consent is now situated authorization, while a ConsentRecord is historical evidence rather than permanent proof of willingness. PermissionGrant and PermissionEnvelope make purpose, operation, processor, audience, duration, retention, descendants, export, correction, revocation, and deletion independently enforceable. Every derivative inherits the effective permission envelope. Correction, revocation, and deletion propagate through reachable lineage with honest residual limits. The BARS mismatch among privacy copy, serialized 3-2-1 snapshots, witness BAR creation, and NPC merge propagation is recorded as implementation work, not treated as evidence of consent.
+
 ## Readiness
 
-Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, roadblock-intention, session-depth, BAR-scope, composting, and creative-reuse meaning questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
+Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, roadblock-intention, session-depth, BAR-scope, composting, creative-reuse meaning, and privacy-consent authority questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
 
 The next activity is evidence-led resolution of the remaining questions in `sage-canon-reconciliation.md`. Questions answerable from source reconstruction, ontology invariants, and bounded deliberation should be resolved without returning unnecessary choices to Wendell. Only irreducible matters of personal meaning, values, or owner authority should be escalated. After corrections are recorded, Wendell may decide whether to authorize a separate Phase B governance council.

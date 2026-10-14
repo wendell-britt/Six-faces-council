@@ -75,6 +75,8 @@ binding_decisions:
     path: ontology/v0.1/source/council-phase-a/composting/reconstruction-and-decision.md
   creative_reuse_meaning:
     path: ontology/v0.1/source/council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md
+  privacy_consent_authority:
+    path: ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
 
 historical_material:
   root: ontology/v0.1/source/council-phase-a
@@ -85,6 +87,10 @@ historical_material:
 
 authority:
   personal_inner_meaning: represented_player
+  personal_data_and_person_specific_inference: represented_person_with_other_affected_authorities_preserved
+  creative_source_use: source_author_or_rights_holder_within_actual_authority
+  relational_or_multiplayer_material: intersection_of_affected_participant_permissions
+  official_council_record: ontology_owner_or_council_with_contributor_restrictions_preserved
   ontology_constitution_and_personal_aesthetic: Wendell Britt
   authored_game_routing: designer_or_game_master_within_scope
   another_agents_consent_help_or_harm: affected_agent
