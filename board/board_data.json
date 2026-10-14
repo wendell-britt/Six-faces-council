@@ -8238,6 +8238,17 @@
    "auto": true,
    "pos": "A dissolved spirit is gone, the way a dismissed one is. Before the last breath you can stop, and it stays as it was. A spirit hidden by perceptual shadow is not on the list, so you cannot dissolve it until you can see it. Your stats are kept on your phone for now. This stands unless you flip it.",
    "why": "Your chat called dissolving \"a form of dismissal\", and bms-dismiss says nothing dismisses a spirit for you, so the player can always stop. The perceptual shadow thread is building how shadow hides spirits; dissolving reads only what is seen."
+  },
+  {
+   "id": "ps-shadow-spirits",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "perceptual shadow",
+   "auto": true,
+   "pos": "While working a hidden shadow, \"What's in the way of it clearing?\" calls up its shadow spirit: the creature's own body in one shadow colour (dark violet), smaller, standing beside the one it hides. You put your eight questions to it, one per daemon and the Player, each marked in that daemon's colour, and write what it says. Each answer thins the shadow by 3, the same as a practice, and the answers go into the run. A worked creature's shadow spirit walks out with you as a spirit of its own in the shadow colour, counted as seen. Flooding gets no shadow spirit, since your questions are about hiding. This stands unless you flip it.",
+   "why": "Your words, project chat, 2026-10-14: \"Shadow spirits do the work of perceptual shadows when one is working through perceptual shadow one can ask what's getting in the way of the shadow clearing. We can also invoke daemons ... These shadow spirits would be similar (probably just color changed) from regular spirits\". Six-faces-council council/callsheets/perceptual-shadow.md; bars-engine #326."
   }
  ],
  "questions": [
