@@ -25,7 +25,11 @@ skills and character and NPC generation based on player blockages."
    `campaigns/mtgoa-ch1/story.md`, draft PR sprout #53 (stacked on #52). The Arcade track A1 to A8: Tam (farming),
    Yun (fighting), Ede (exploring); the player in the ally's seat with Pip; seven Wake Up cards; ends in the hollow,
    the 3D WAVE room.
-3. Step 3: encounters and the guessing test; the player's own blockage becomes a spirit via #51.
+3. Step 3: encounters and the guessing test. Done 2026-10-14: sprout `campaigns/mtgoa-ch1/encounters.yaml` and
+   `guessing-test.md`, PR sprout #54 (stacked on #53, on #52). Blocks for A3, A4, A6, A8; Pip's warden and his no for
+   good; the hollow spirit's urge-to-family map and naming presets on #51. Card match 12 of 18 (67%) against 85%:
+   11 of 12 for players reading for meaning, the fixer plays "Which Fight Is Yours" nearly always. A4 and A8 swapped
+   cards; A5's stance card is a keepsake.
 4. Blender sprites for the Chapter 1 spirits and NPCs onto the page.
 5. His phone play, then fixes; then a short video for the Kickstarter page.
 
@@ -34,10 +38,10 @@ skills and character and NPC generation based on player blockages."
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
 
 ## Next thread brief
-Step 3, encounters and the guessing test, from sprout `campaigns/mtgoa-ch1/story.md` and `extract.yaml` (#53 on #52;
-build on #53's branch, `claude/project-thread-ungnv1`, if they have not merged), the way the Skilled Helper's
-`encounters.yaml` and `guessing-test.md` were written (sprout #47, #48). Opus. Read story.md's "For step 3" first:
-blocks for A3, A4, A6 and A8 from the emotional alchemy canon linked to myths by id; the warden's small-move
-negotiation; the guessing test over the seven dealt cards (does each card's question match what its encounter asks,
-85% target, `gb-taught-target`); the hollow spirit's urge-to-family map and preset lines, using sprout #51 as built.
-Give Pip a way to turn the player away for good (Diplomat flag). Run it as one thread.
+Step 4, Blender sprites for the Chapter 1 spirits and NPCs onto the Sprout page. Read sprout `campaigns/mtgoa-ch1/`
+`story.md` ("Assets this section adds or changes") and `encounters.yaml` (`warden`, `hollow`); build on #54's branch
+`claude/project-thread-e8pjnr` if #52 to #54 have not merged, and take over watching any still open. Sprites: Pip,
+`spirit_pip_warden` (a Shellback round 2 Earth sprite can stand in, project files `3d-build/spirit-shellback-2026-10-14/round2/sprite/`),
+and the player's spirit per family from the Shellback set. Then a playable page for his phone. The phone playtest
+should check the one open guessing-test finding: whether a fixer-type player plays WAKE-DA-REGENT at the hunters'
+choice (A6) and in the hollow (A8). Lean: he is near his weekly limit.
