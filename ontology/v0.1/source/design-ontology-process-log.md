@@ -175,3 +175,11 @@ The BARS claim that AI remixing is “not necromancy” was separated into an at
 The ontology now separates `SourceCorpusRecord`, `CreativeReuseProposal`, `ReuseAuthorization`, `DerivationRecord`, `ProjectMeaningFrame`, `PersonalMeaningReport`, `AttributionRecord`, `DerivedVoice`, `IdentityContinuityClaim`, `ReuseRejection`, and `ReuseConsequenceRecord`. A DerivedVoice is a character informed by permitted material, not the source person, past self, or a new statement authored by them.
 
 “Not mine” may reject meaning, authorship, attribution, identity or likeness, aesthetics, relationship, or permission. Rejection propagates through lineage and cannot be called resistance. Archive-based adaptation remains optional, with non-AI and non-reuse routes preserving core access and quality. The full ruling is recorded in `council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md`.
+
+## Privacy and consent authority reconstruction and decision — 2026-10-14
+
+The ontology commitments were reconciled with the BARS 3-2-1 doctrine, public privacy copy, `Shadow321Session` schema, `persist321Session()` behavior, witness BAR creation, and NPC 3-2-1 merge propagation. The implementation currently makes materially different claims about ephemeral raw input, serialized phase snapshots, structural extraction, and downstream reuse. Those facts establish provenance and an implementation gap; they do not establish adequate consent.
+
+The binding model now separates `PermissionGrant`, `PermissionRefusal`, `ConsentRecord`, `PermissionEnvelope`, `DataAssetRecord`, `ProcessingEvent`, `DerivationRecord`, `CorrectionRecord`, `RevocationRecord`, `DeletionRequest`, `DeletionDisposition`, `PropagationRecord`, and `ResidualObligationRecord`. Consent is situated authorization; a stored record is historical evidence. Every derivative inherits the intersection of applicable permissions and restrictions. Correction changes claims, revocation stops future authority, and deletion disposes of named content and descendants with verified, honestly limited outcomes.
+
+The full ruling and twelve minimum implementation tests are recorded in `council-phase-a/privacy-consent-authority/reconstruction-and-decision.md`. No BARS runtime, privacy-policy, data migration, deletion job, model-unlearning capability, or general Phase B sorting was authorized.

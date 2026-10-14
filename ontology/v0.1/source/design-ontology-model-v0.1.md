@@ -99,6 +99,11 @@ Types: ConstitutionalPrinciple, ProvisionalCommitment, AestheticPattern, Polarit
 - **CoordinationPattern:** a capacity existing among agents rather than inside one;
 - **SharedMeaning:** negotiated meaning that need not replace personal meaning.
 - **PurposePermission:** authorization binding a data category to a specific collection, persistence, derivation, reuse, audience, retention, or deletion purpose.
+- **PermissionGrant / PermissionRefusal:** an authority's scoped decision for a declared purpose envelope;
+- **PermissionEnvelope:** the effective intersection of grants, refusals, boundaries, source restrictions, and duties for one operation;
+- **DataAssetRecord:** provenance, subjects, sensitivity, location, stewardship, and lifecycle state of governed material;
+- **ProcessingEvent / DerivationRecord:** an actual operation and the lineage from its sources to its descendants;
+- **CorrectionRecord / RevocationRecord / DeletionRequest / DeletionDisposition / PropagationRecord / ResidualObligationRecord:** distinct governance events and outcomes.
 
 ### 3.8 EpistemicObject
 
@@ -388,6 +393,20 @@ An AdaptiveSystem distinguishes:
 > **The system may propose relevance; it may not claim final authorship of the player’s inner meaning.**
 
 An adaptive world should retain causes, agents, histories, resistances, or emergent meanings not exhausted by the player model.
+
+### 10.1 Privacy and consent authority
+
+Consent is an agent's situated authorization for a proposed operation. A `ConsentRecord` is historical evidence of a grant, refusal, or condition; it is not permanent proof of present willingness. A prior grant remains usable only while its full purpose envelope still covers the operation and no expiry, material context change, correction, refusal, boundary, or revocation has intervened.
+
+A `PermissionGrant` binds authority, represented subject, data categories, purpose, operations, processor, audience, visibility, destination, context, duration, retention, explanation, correction, descendant and export policy, revocation, deletion, notice version, and evidence. Collection, transient processing, persistence, derivation, personalization, explanation, visibility, reuse, sharing or publication, export, analytics or evaluation, model improvement, retention, correction, deletion, and revocation remain distinct. Omitted purposes are not granted.
+
+Every operation evaluates a `PermissionEnvelope`: the intersection of all applicable grants, refusals, boundaries, source restrictions, and duties. Multiple-source descendants receive the intersection of applicable limits. `DerivationRecord` carries the envelope to snapshots, psychographs, adaptive inferences, generated world material, BARs, NPC memories, council syntheses, analytics, embeddings, caches, exports, and model artifacts. Structured extraction, aggregation, de-identification, or generation does not by itself release sensitivity, purpose, or authority.
+
+The represented person governs person-specific interior, somatic, psychographic, identity, likeness, and inference uses within their authority. Each affected participant governs their own relational contribution. Source authors and rights-holders govern creative material only within their actual rights. Stewards administer authorized purposes but cannot invent new ones. Conflicting authorities narrow the action to their intersection; otherwise the action is redacted, separated, mediated, or not performed.
+
+Correction changes or contests content, attribution, subject identity, or inference. Revocation withdraws future authority for a purpose. Deletion disposes of named content and descendants; it is not composting, archival, hiding, or account deactivation. Each propagates through reachable lineage. A minimal residual record may preserve the request, authority, time, scope, and disposition but not deleted content or a rejected interpretation. Irreversible publication, third-party copies, backups, or model limitations are disclosed and recorded rather than concealed behind an unverifiable promise.
+
+Refusing optional persistence, personalization, reuse, analytics, publication, or model improvement cannot reduce baseline craft, core progress, power, credentials, or belonging. High-sensitivity, surprising, public, relational, or materially changed uses require renewed confirmation. Continued play, silence, disclosure, purchase, authorship, or an old ConsentRecord does not renew consent.
 
 ## 11. Integral declaration of mechanical attention
 
