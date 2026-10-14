@@ -1,0 +1,30 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T22:37:26.021Z",
+ "answers": {
+  "ps-polarity": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:37:05.517Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ps-run-record": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:37:11.069Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "j5-skirt-cloth": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:37:26.021Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
