@@ -60,6 +60,28 @@ free write, as bars-engine has, is a later step.
 bars-engine's Tap the Vein stays the home of tasks, charge and Lens goals; the board box is the front door he uses
 where he picks his work (`ttv-board-home`).
 
+## Everything you can do today
+
+`lens-intake-align` (Lenses pass 1, 2026-10-14): "The full intake lists what you can do today; the board read gives
+each item one line: the goal it serves, the board row it advances, or a pitched smaller goal. The reason is written,
+not word overlap."
+
+1. In the Tap the Vein box he lists everything he can do today, one per line, above the free write. The free write is
+   optional now. Sealing saves the list with any To do lines as one menu at `morning/menu` (list items carry
+   `source: can_do`); the free write is saved only when there is one.
+2. The board read that finds `morning/menu` under needs work reads each item against his Lens goals
+   (`morning.goals`), the open board rows and the free write, and writes one sentence on where it goes. It saves them
+   as `[{"line", "why", and one of "goal": <goal id>, "row": <board row id>, "pitch": {"title", "parentId"} or
+   {"title", "domain"}}]` and runs `python3 council/intake_align.py <dir>/morning/menu.json --aligns <file> --write`.
+   The script refuses an item left out, reworded or aligned twice, a goal or row that does not exist, and a reason
+   under four words. A pitch with a parent is one cadence smaller under that goal; without goals, it is a year goal in
+   a domain. Each pitch becomes a question on the Open tab.
+3. Then `python3 council/morning.py --write`, commit on main and republish. Each item on the Morning tab shows its
+   written line, and he can still change its goal before he picks.
+4. The read that records his answers runs `python3 council/lens_goals.py kept --send`, which sends kept intake
+   pitches with their parent, so bars-engine files a smaller goal under it (bars-engine `POST /api/lenses/goals`,
+   `parentId`).
+
 ## Lens goals on the Morning tab
 
 `lens-board-reads-goals` (Lenses pass 1, 2026-10-14): the board reads his Lens goals every morning without needing a
