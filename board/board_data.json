@@ -8488,6 +8488,61 @@
    "auto": true,
    "pos": "Five rows of the second pile were borderline and stay out of the counts, with my readings: B2-008 disagrees (the OpenAPI file lists three game-master routes that do not exist in src/), B2-024 and B2-038 disagree (pre-commit also runs lint, which the docs omit), B2-027 agrees (Preview builds skip migrate deploy), and B2-034 (the Node v18+ line) is now disagrees, because the repo has no engines field, CI runs Node 22 and Next 16 needs Node 20 or later. These stand unless you flip one.",
    "why": "The model agreed on B2-008, 024, 027 and 038 and disagreed on B2-034. If B2-034 counts as a catch, the score becomes 9 of 9. The Next 16 Node floor comes from Next's published requirement and was not checked inside the repo. Labels: council/jev/pile2_labels_2026-10-14.json"
+  },
+  {
+   "id": "dq-home",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "Your question sets for the daemons live in council/daemons/questions.yaml, in your exact words with a plain form beside each, and travel to every council repo with daemons.yaml. Each daemon agent answers its own set about the problem before the five moves. The game reads a copy (bars-engine content/ontology-game/daemons/questions.js) and the corpus keeps them as BARs. This stands unless you flip it.",
+   "why": "Your note of 14 October: \"Updating ontology for the daemons. In the game master agents and in the games itself.\" daemons.yaml is overwritten from friendcraft by refresh.py, so the sets sit beside it. Six-faces-council #159, bars-engine #329, game-masters-guide #4."
+  },
+  {
+   "id": "dq-boss-chain",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "Every set shares four questions: what the daemon works on, who it works for, how that serves its boss, and what happens without it. The boss answers link the daemons into a chain that ends at the Protector (the body's survival) or the Player. In play, the daemon a part names as its boss is the next one offered. This stands unless you flip it.",
+   "why": "Your Controller set lists its bosses, \"(The protector? The self, the controller, the vulnerable child)\", and asks a different follow-up for each. The Protector's set asks about physical survival in place of a boss, and the Player's asks how the others get in its way."
+  },
+  {
+   "id": "dq-protector-chamber",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "The Big Mind Protector chamber asks your four Protector questions after \"What do you protect the self from?\". Its earlier questions stay, so a charge that falls fast still reaches the ready line first. Each later chamber on the daemon path is met with that daemon's own set, the Controller's next. This stands unless you flip it.",
+   "why": "dp-seven and dp-pass-rule set the chambers. The test checks the chamber's questions against questions.js so they cannot drift (bars-engine #329, 179 checks pass)."
+  },
+  {
+   "id": "dq-shadow",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "The shadow spirit keeps its one question per daemon as the door. Picking a daemon opens that daemon's whole set, and one answered set counts as one practice for the shadow. The boss it names is the next daemon offered. This stands unless you flip it.",
+   "why": "The perceptual shadow (bars-engine #326) already asks one question per daemon from your earlier note. The richer sets were sent to that thread to build on its own branch."
+  },
+  {
+   "id": "dq-npc",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "An NPC made from a player's blockage wears its daemon's warp and speaks from that daemon's set. Its boss answer names who it defers to, which is the next NPC the player meets. For the Chapter 1 demo, the Player's question \"How does the other daemons get in your way?\", answered at the start, picks which daemons appear and in what order. This stands unless you flip it.",
+   "why": "Your north star: NPC generation based on player blockages, for a gamified Chapter 1. The warp table is bars-engine #328; council/daemons/QUESTIONS.md lays out the story use."
   }
  ],
  "questions": [
