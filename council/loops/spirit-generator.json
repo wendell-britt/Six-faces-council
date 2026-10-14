@@ -96,7 +96,7 @@
     },
     {
       "round": 11,
-      "status": "next",
+      "status": "done",
       "builds": "His look at round 9 (2026-10-14 23:24, redirect): the otter's legs point in strange ways, and lying on a rock will fight movement, rigging and animation. Position, stands unless he flips it (the record already makes the living creature the animal and only the highest ally form humanoid): every Romp living creature is a quadruped standing on its own four feet on the ground, in a neutral stance a quadruped rig can animate, with no prop under it or in its paws. Rebuild the otter's and the kid goat's creature stages that way (the goat's mid-leap off a rock has the same problem) with clean, symmetric leg chains (shoulder, elbow, wrist, paw; hip, knee, hock, paw) that match the skeleton-first spirit rigs (bars-engine #325, read-only here); the otter keeps its long low body and tail, its token moves to the beads, the goat's bell stays at its throat. Check the fox's lifted forepaw against the same rule. Upright forms are unchanged. Put the position on the board as a row.",
       "check": "Side and three-quarter renders of the otter, kid goat and fox creatures in all five elements, four feet flat on the ground, legs bending the way the animal's do; sprite sheet beside round 10's.",
       "gate": "auto",
