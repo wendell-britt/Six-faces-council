@@ -265,9 +265,15 @@ def main():
     menu = pasted_menu(data, store)
     if menu:  # mm-menu-transport: the next gather reads it; morning.py writes main itself
         print(f"needs work:\n  morning/menu: python3 council/morning.py --menu {menu} --write, then commit and republish")
-        if json.loads(menu.read_text(encoding="utf-8")).get("bars"):  # lines marked BAR in the board's Tap the Vein
-            print(f"  morning/menu bars: python3 council/ttv_bars.py {menu} --write, then open a pull request in "
-                  "game-masters-guide")
+
+    write = store / "morning" / "freewrite.json"
+    if write.exists():  # ttv-raw-bars: read once for BARs, then delete
+        print(f"needs work:\n  morning/freewrite: read it, summarize it and pitch his lines as BARs: python3 council/ttv_bars.py "
+              f"pitch {write} --pitches <file> --summary \"...\" > rows.json, add them with board/sync_board.py --rows, "
+              f"then delete it (ArtifactData delete, collection morning, doc_id freewrite) and rm {write}")
+    if any(n["id"].startswith("ttv-2") for n in new if n["kind"] == "questions"):  # pitches he answered
+        print("needs work:\n  ttv pitches answered: after recording, python3 council/ttv_bars.py accepted --write, then open a "
+              "pull request in game-masters-guide")
     if not new and not general and not steps and not blockers:
         print("every saved answer is recorded")
         return

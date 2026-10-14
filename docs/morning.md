@@ -26,20 +26,47 @@ we are doing from our podcasting episodes and creating robust context web that o
 
 The Morning tab's "Tap the Vein here" box runs the ritual on the board itself:
 
-1. He writes. The free write is kept only in his browser (localStorage) and is cleared when he seals; it is never
-   saved to the board's store, so no session reads it (`mm-raw` stands).
-2. "Find my lines" splits the write into lines. He marks each one **To do**, **Keep as a BAR**, both, or neither.
+1. He writes. Until he seals, the free write is kept only in his browser (localStorage).
+2. "Find my lines" splits the write into lines, and he marks the ones **To do**.
 3. "Seal the menu" saves `morning/menu` exactly as a pasted menu is saved, with the To do lines as unaligned kept
-   lines and the BAR lines in the same doc's `bars` field. His To do lines appear in the "From your free write"
+   lines, and saves the free write at `morning/freewrite`. His To do lines appear in the "From your free write"
    category at once, where he picks a Lens goal for each and picks up to seven, then Send to Claude.
-4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, plus
-   `python3 council/ttv_bars.py <dir>/morning/menu.json --write` when BARs were marked. That writes one BAR per line
-   into wendell-britt/game-masters-guide `corpus/bars/` (`kind: bar`, `slot: unplaced`, tag `tap-the-vein`), and the
-   read opens a pull request there. From the corpus the BARs feed products the same way the podcast BARs do.
+4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, and
+   `morning/freewrite` while it exists. The read reads the free write once, writes two or three sentences summing it
+   up, and pitches the lines worth keeping as BARs, each with the slot from game-masters-guide `corpus/products.yaml`
+   it would go to. `python3 council/ttv_bars.py pitch <dir>/morning/freewrite.json --pitches <file> --summary "..."`
+   turns them into board questions (keep in that slot, keep unplaced, or not a BAR) and refuses any line that is not
+   in the free write word for word. When the free write carries `lensDomain` (the box offered an empty Lens domain's
+   prompt, `lens-pitch-goals`), the read also pitches one to three year goals for that domain, each quoting a line of
+   his: `python3 council/lens_goals.py pitch <dir>/morning/freewrite.json --pitches <file>`, with
+   `[{"title", "line", "why"}]`. The read adds the rows with `board/sync_board.py --rows`, republishes, then
+   deletes the doc (ArtifactData delete, collection `morning`, doc `freewrite`) and its local copy.
+5. He answers the pitches on the Open tab and sends. The read that records them runs `python3 council/ttv_bars.py
+   accepted --write`, which writes one BAR per kept pitch into wendell-britt/game-masters-guide `corpus/bars/` (tag
+   `tap-the-vein`), and opens a pull request there. It also runs `python3 council/lens_goals.py kept --send`, which
+   posts each kept goal to bars-engine's `POST /api/lenses/goals` as an active year goal (safe to run twice), then
+   `python3 council/morning.py --write` so the Lenses panel shows it.
+
+Wendell, 2026-10-14, after the first version sliced the page sentence by sentence: "I think the tap the being should
+be read and summarized before bars are chosen. It a bit too raw for me to know what should be a bar and currently it
+seems to just slice the page sentence by sentence. This is something where I'd want to use AI to summarize and make
+pitches for where things should go."
+
+Wendell ruled `ttv-raw-bars` on 2026-10-14: read it once for BARs, then delete it. His steer: "For now read it and
+delete but this is the power of having a private server like in bars engine". This widens `mm-raw` for the board
+box. A sealed free write sits in the board's store until the next board read deletes it. A private server for the
+free write, as bars-engine has, is a later step.
 
 bars-engine's Tap the Vein stays the home of tasks, charge and Lens goals; the board box is the front door he uses
-where he picks his work. Whether the council may read the whole free write to find BARs itself, the way it mines an
-episode, is his call (board row `ttv-raw-bars`).
+where he picks his work (`ttv-board-home`).
+
+## Lens goals on the Morning tab
+
+`lens-board-reads-goals` (Lenses pass 1, 2026-10-14): the board reads his Lens goals every morning without needing a
+sealed menu. `council/morning.py` reads bars-engine's `GET /api/lenses/goals` with the same `COUNCIL_MENU_TOKEN`
+(or a saved copy with `--goals <file>`), and its goals win over the menu's goals list. The Morning tab shows them in
+the "Your Lens goals" panel, one row per domain, with an empty domain shown as "No goals here yet". When the export
+cannot be read, the panel says why and falls back to the goals in the sealed menu.
 
 ## The categories
 

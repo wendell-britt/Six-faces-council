@@ -63,6 +63,23 @@ class MorningTest(unittest.TestCase):
         self.assertEqual([i["ref"] for i in board], ["q-open"])
         self.assertEqual(m["pick_limit"], 7)
 
+    def test_goals_export_fills_every_lens_domain_and_wins_over_the_menu(self):
+        morning.from_prs = lambda path=None: ([], None)
+        export = {"goals": [{"id": "g-h", "title": "Walk daily", "domain": "health", "cadence": "month", "parentId": None}]}
+        m = morning.gather(MENU, bars="/nonexistent", data=DATA, goals_export=export)
+        self.assertEqual([g["id"] for g in m["goals"]], ["g-h"])
+        doms = {d["key"]: d for d in m["lenses"]["domains"]}
+        self.assertEqual(list(doms), ["relationships", "career", "money", "health", "allyship"])
+        self.assertEqual([g["title"] for g in doms["health"]["goals"]], ["Walk daily"])
+        self.assertEqual(doms["money"]["goals"], [], "an empty domain is kept, shown as empty")
+        self.assertNotIn("note", m["lenses"])
+
+    def test_without_the_export_lenses_say_where_goals_came_from(self):
+        morning.from_prs = lambda path=None: ([], None)
+        m = morning.gather(None, bars="/nonexistent", data=DATA, goals_note="goals export not read: x")
+        self.assertEqual(m["lenses"]["note"], "goals export not read: x")
+        self.assertTrue(all(d["goals"] == [] for d in m["lenses"]["domains"]))
+
 
     def test_steps_due_today_are_gathered_and_done_ones_skipped(self):
         import tempfile, pathlib
