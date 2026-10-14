@@ -8095,6 +8095,17 @@
    "auto": false,
    "pos": "The second skip in a row (and every skip after it, until you seal again) opens the board's own blocker panel on \"Tap the Vein\". That panel is the WAVE run: charge, Welcome, Acknowledge, Validate, Exhale, with a staged 3-2-1 for any part that stays, then an ending and the charge again. It is saved like any blocker run, and the next read acts on it. bars-engine's 3-2-1 room is not used here.",
    "why": "The panel is already the board's WAVE run with 3-2-1 built in (docs/blocker-panel.md), and its record reaches main through board/pull.py, so the read sees what came up."
+  },
+  {
+   "id": "j5-skirt-cloth",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "j5-round4",
+   "auto": false,
+   "pos": "The robe below the belt moves as cloth in the game itself, not as weights glued to the leg bones. cave.js runs a small mass-spring cloth on the skirt's own mesh every frame: the belt row is pinned to the hips, gravity and the body's motion swing it and let it settle, and the thigh and shin push it out where they meet it. The front and back panels are only joined above the slit, so the slit opens when a leg strides through and falls closed when it passes. Blender keeps making the standing drape and runs the same cloth over the walk for the tests and the pictures. The bone-weight slit fixes from rounds 3 and 4 stop.",
+   "why": "Wendell, 2026-10-14: \"We're missing something important about how the physics of how the bottom robe is supposed to move. It's not moving like clothes and every fix is still too localized\". Since J5 the skirt is draped once standing and then rigidly skinned, so nothing in its motion is physics. A baked cloth loop would fit only one walk speed, and cave.js varies the stride and turns."
   }
  ],
  "questions": [
