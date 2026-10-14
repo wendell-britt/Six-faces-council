@@ -21106,6 +21106,92 @@
      "shaman"
     ],
     "pass": "spirit fight build 1"
+   },
+   "sf-ally-pick": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:55:59.564Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "spirit fight build 2"
+   },
+   "sf-stats-carry": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:56:15.659Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "spirit fight build 3"
+   },
+   "sf-generator-next": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:56:23.436Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "spirit fight build 3"
+   },
+   "sg-charge-disc": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:57:00.478Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "steer": "Yes but if you try to take a spirit with more charge than your character is able to handle there are consequences",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit generator 1"
+   },
+   "sg-first-slice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:57:13.092Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "spirit generator 1"
+   },
+   "sg-loop-trains": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:57:33.557Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "spirit generator 1"
+   },
+   "sf-ally-moves": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:58:45.024Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "steer": "I do think that move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move (think pokemon starters) \n\nMove elements and spirit ally elements combine but aren’t essentially aligned",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "spirit fight build 2"
    }
   },
   "questions": {
@@ -23109,6 +23195,18 @@
      "shaman"
     ],
     "pass": "spirit fight build 1"
+   },
+   "sg-work-grows": {
+    "decision": "outer",
+    "label": "Outer-world action trains too",
+    "recorded": "2026-10-13",
+    "saved_at": "2026-10-13T23:55:45.546Z",
+    "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "spirit generator 1"
    }
   },
   "causes": {
@@ -24420,7 +24518,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-13T22:27:10Z",
+ "steps_recorded_through": "2026-10-13T23:24:02Z",
  "morning": {
   "date": "2026-10-13",
   "gathered_at": "2026-10-13T15:45:41Z",
