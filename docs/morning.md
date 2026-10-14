@@ -18,6 +18,29 @@ aligned with my goal." The pass is `council/passes/6FACE_PASS_morning-menu1_2026
 4. The board read records each pick through `board/pull.py` (store collection `picks`) as one row marked as his, and
    lists it under "needs work". The read starts one thread per pick (`mm-picks-become-threads`).
 
+## Tap the Vein on the board
+
+Wendell, 2026-10-14: "is there an ability to do a tap the vein on that board ? so that I can do the tap the vein
+directly from the environemnt where I'll be using that information. The goal for tap the vein is to also pull bars like
+we are doing from our podcasting episodes and creating robust context web that our projects and tasks can pull frmo".
+
+The Morning tab's "Tap the Vein here" box runs the ritual on the board itself:
+
+1. He writes. The free write is kept only in his browser (localStorage) and is cleared when he seals; it is never
+   saved to the board's store, so no session reads it (`mm-raw` stands).
+2. "Find my lines" splits the write into lines. He marks each one **To do**, **Keep as a BAR**, both, or neither.
+3. "Seal the menu" saves `morning/menu` exactly as a pasted menu is saved, with the To do lines as unaligned kept
+   lines and the BAR lines in the same doc's `bars` field. His To do lines appear in the "From your free write"
+   category at once, where he picks a Lens goal for each and picks up to seven, then Send to Claude.
+4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, plus
+   `python3 council/ttv_bars.py <dir>/morning/menu.json --write` when BARs were marked. That writes one BAR per line
+   into wendell-britt/game-masters-guide `corpus/bars/` (`kind: bar`, `slot: unplaced`, tag `tap-the-vein`), and the
+   read opens a pull request there. From the corpus the BARs feed products the same way the podcast BARs do.
+
+bars-engine's Tap the Vein stays the home of tasks, charge and Lens goals; the board box is the front door he uses
+where he picks his work. Whether the council may read the whole free write to find BARs itself, the way it mines an
+episode, is his call (board row `ttv-raw-bars`).
+
 ## The categories
 
 | Key | Source |
