@@ -22290,6 +22290,66 @@
      "architect"
     ],
     "pass": "jev asset"
+   },
+   "pod-pragya-guest": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:35:14.949Z",
+    "record": "council/ledger/2026-10-14-pull-223651.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "podcast guests"
+   },
+   "ps-trigger": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:36:23.526Z",
+    "record": "council/ledger/2026-10-14-pull-223651.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "perceptual shadow"
+   },
+   "ps-four-kinds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:36:36.263Z",
+    "record": "council/ledger/2026-10-14-pull-223651.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "perceptual shadow"
+   },
+   "ps-practice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:36:44.263Z",
+    "record": "council/ledger/2026-10-14-pull-223651.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "perceptual shadow"
+   },
+   "ps-numbness-link": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:36:51.232Z",
+    "record": "council/ledger/2026-10-14-pull-223651.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "shaman"
+    ],
+    "pass": "perceptual shadow"
    }
   },
   "questions": {
@@ -24407,6 +24467,31 @@
      "architect"
     ],
     "pass": "jev asset"
+   },
+   "jev-teaching-pile": {
+    "decision": "30",
+    "label": "30 practice rows",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:35:47.039Z",
+    "record": "council/ledger/2026-10-14-pull-223651.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
+   },
+   "ps-polarity-poles": {
+    "decision": "two",
+    "label": "Hidden and flooding",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:36:13.291Z",
+    "record": "council/ledger/2026-10-14-pull-223651.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "perceptual shadow"
    }
   },
   "causes": {
@@ -25725,7 +25810,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-14T16:46:41Z",
+ "steps_recorded_through": "2026-10-14T21:15:00Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
