@@ -22054,6 +22054,68 @@
      "challenger"
     ],
     "pass": "loop engineering"
+   },
+   "ttv-first-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:06:12.273Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "ttv-first"
+   },
+   "ttv-bars-engine-trusted": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:06:37.373Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "steer": "I do think we need to be able to make an API call to bars-engine directly if this is the case.",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "ttv-first"
+   },
+   "ttv-skip-run": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:06:46.873Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "sage"
+    ],
+    "pass": "ttv-first"
+   },
+   "ttv-skip-wave": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:07:35.881Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "steer": "yes, but I want it to be an intereactive as possible. We want to move toward using the game to build the game. It should deposit me inside the WAVE room and we should move to have the WAVE room be able to metabolize context specific charges and send the results to the board in this case.",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "ttv-first"
+   },
+   "jev-admin-16-labelled": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:07:45.958Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "jev asset"
    }
   },
   "questions": {
@@ -24122,6 +24184,55 @@
      "architect"
     ],
     "pass": "chapter 1 demo map"
+   },
+   "jev-lab-as-029": {
+    "decision": "agrees",
+    "label": "Agrees",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:05:14.788Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-lab-as-032": {
+    "decision": "disagrees",
+    "label": "Disagrees",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:05:34.338Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-lab-as-064": {
+    "decision": "agrees",
+    "label": "Agrees",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:06:00.522Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-lab-as-024": {
+    "decision": "cannot-tell",
+    "label": "Cannot tell",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T21:08:22.142Z",
+    "record": "council/ledger/2026-10-14-pull-210914.json (six-faces-council)",
+    "steer": "There should be 5 move icons now that there is an Open Up version. This is an artifact from before that change was made in the ontology",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "jev asset"
    }
   },
   "causes": {
@@ -25433,7 +25544,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-14T16:40:00Z",
+ "steps_recorded_through": "2026-10-14T16:46:41Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
