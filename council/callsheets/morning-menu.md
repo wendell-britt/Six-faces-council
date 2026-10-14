@@ -2,6 +2,8 @@
 # Morning menu (Tap the Vein and Lenses)
 
 ## Next
+2026-10-14, Tap the Vein on the board (#126, #129): the board box seals a menu and saves the free write; the board read summarizes it and pitches BARs as board questions (`council/ttv_bars.py`). Two pieces Wendell named next, each its own fresh thread on Opus (new design): (a) the full Tap the Vein intake on the board, where he lists everything off the top of his mind he can do today and each item is checked for alignment against the open board items (`council/morning.py` already gathers those as categories); (b) Lenses: "The lenses integration is probably the biggest bottleneck as our current system doesn't really use lenses". The board's goals come only from bars-engine's menu export, so a session should first find what Lens data exists for him (`/api/tap-the-vein/menu` returns `goals`) and run a council pass on how the board uses it.
+
 Three fresh threads: (1) bars-engine Lenses intake (Sonnet): save each domain as locked in (`saveYearLensFrame`, `LensesOnboardingClient.tsx:183`; `LensWorkshopDraft` exists), run one domain a morning as Tap the Vein's free-write prompt, rename/park/retire a goal from the Observatory. (2) bars-engine Tap the Vein menu (Opus): kept lines become menu items bridged to a Lens goal; only kept lines leave the session (`mm-raw`); menu exported for the council. (3) council `council/morning.py` and the board view: gather the backlog as separate categories; first find how a council session reads thread 2's export (network policy and a token).
 
 ## Waiting on

@@ -32,12 +32,20 @@ The Morning tab's "Tap the Vein here" box runs the ritual on the board itself:
    lines, and saves the free write at `morning/freewrite`. His To do lines appear in the "From your free write"
    category at once, where he picks a Lens goal for each and picks up to seven, then Send to Claude.
 4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, and
-   `morning/freewrite` while it exists. The read reads the free write once, picks the lines worth keeping in his
-   exact words, and runs `python3 council/ttv_bars.py <dir>/morning/freewrite.json --line "<his words>" ... --write`.
-   The script refuses any line that is not in the free write word for word, and writes one BAR per line into
-   wendell-britt/game-masters-guide `corpus/bars/` (`kind: bar`, `slot: unplaced`, tag `tap-the-vein`). The read opens
-   a pull request there, then deletes the doc (ArtifactData delete, collection `morning`, doc `freewrite`) and its
-   local copy.
+   `morning/freewrite` while it exists. The read reads the free write once, writes two or three sentences summing it
+   up, and pitches the lines worth keeping as BARs, each with the slot from game-masters-guide `corpus/products.yaml`
+   it would go to. `python3 council/ttv_bars.py pitch <dir>/morning/freewrite.json --pitches <file> --summary "..."`
+   turns them into board questions (keep in that slot, keep unplaced, or not a BAR) and refuses any line that is not
+   in the free write word for word. The read adds the rows with `board/sync_board.py --rows`, republishes, then
+   deletes the doc (ArtifactData delete, collection `morning`, doc `freewrite`) and its local copy.
+5. He answers the pitches on the Open tab and sends. The read that records them runs `python3 council/ttv_bars.py
+   accepted --write`, which writes one BAR per kept pitch into wendell-britt/game-masters-guide `corpus/bars/` (tag
+   `tap-the-vein`), and opens a pull request there.
+
+Wendell, 2026-10-14, after the first version sliced the page sentence by sentence: "I think the tap the being should
+be read and summarized before bars are chosen. It a bit too raw for me to know what should be a bar and currently it
+seems to just slice the page sentence by sentence. This is something where I'd want to use AI to summarize and make
+pitches for where things should go."
 
 Wendell ruled `ttv-raw-bars` on 2026-10-14: read it once for BARs, then delete it. His steer: "For now read it and
 delete but this is the power of having a private server like in bars engine". This widens `mm-raw` for the board

@@ -268,9 +268,12 @@ def main():
 
     write = store / "morning" / "freewrite.json"
     if write.exists():  # ttv-raw-bars: read once for BARs, then delete
-        print(f"needs work:\n  morning/freewrite: read it, then python3 council/ttv_bars.py {write} --line \"<his words>\" "
-              "... --write and open a pull request in game-masters-guide; then delete it (ArtifactData delete, "
-              f"collection morning, doc_id freewrite) and rm {write}")
+        print(f"needs work:\n  morning/freewrite: read it, summarize it and pitch his lines as BARs: python3 council/ttv_bars.py "
+              f"pitch {write} --pitches <file> --summary \"...\" > rows.json, add them with board/sync_board.py --rows, "
+              f"then delete it (ArtifactData delete, collection morning, doc_id freewrite) and rm {write}")
+    if any(n["id"].startswith("ttv-2") for n in new if n["kind"] == "questions"):  # pitches he answered
+        print("needs work:\n  ttv pitches answered: after recording, python3 council/ttv_bars.py accepted --write, then open a "
+              "pull request in game-masters-guide")
     if not new and not general and not steps and not blockers:
         print("every saved answer is recorded")
         return

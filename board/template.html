@@ -328,7 +328,7 @@ body.has-send{padding-bottom:120px}
   <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
   <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
   <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">Write, mark what to do, seal</span></summary>
-    <p class="lede">Write whatever is here this morning. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board so the next board read can pull your lines into the corpus as BARs; that read deletes it from the board once the BARs are written (ttv-raw-bars).</p>
+    <p class="lede">Write whatever is here this morning. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
     <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
     <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines</button><div class="state" id="ttv-state"></div></div>
     <div id="ttv-lines"></div>
@@ -1493,7 +1493,9 @@ document.getElementById('mo-paste-save').addEventListener('click', async () => {
 /* Tap the Vein on the board. Until seal the free write lives only in localStorage on this device. The sealed menu is
    saved at morning/menu exactly as a pasted one is, so pull.py, morning.py and the Send button need no new path. The
    free write itself is saved at morning/freewrite (ttv-raw-bars, Wendell 2026-10-14: read it once for BARs, then
-   delete it): the next board read pulls his lines into the corpus with council/ttv_bars.py and deletes the doc. */
+   delete it). The next board read summarizes it and pitches BARs as board questions (council/ttv_bars.py pitch),
+   then deletes the doc; the pitches he keeps become corpus BARs (Wendell, 2026-10-14: "I think the tap the being
+   should be read and summarized before bars are chosen"). */
 const TTV_KEY = 'board-ttv-draft';
 let ttvLines = [];
 const ttvToday = () => new Date().toLocaleDateString('en-CA');
@@ -1535,7 +1537,7 @@ document.getElementById('ttv-seal').addEventListener('click', async () => {
     await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); moOpen.add('menu');
     ttvLines = []; document.getElementById('ttv-write').value = ''; try { localStorage.removeItem(TTV_KEY); } catch {}
     ttvRender(); renderMorning();
-    st.textContent = `Sealed: ${items.length} to do. Pick from your lines below, then Send to Claude; the board read pulls your BARs from the free write and then deletes it.`;
+    st.textContent = `Sealed: ${items.length} to do. Pick from your lines below, then Send to Claude; the board read pitches BARs from the free write for you to keep, then deletes it.`;
   } catch { st.textContent = 'Not sealed. Your free write is still here; try again.'; }
 });
 function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
