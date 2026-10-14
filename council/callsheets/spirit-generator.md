@@ -11,8 +11,11 @@
 - Look and feel research (2026-10-14, thread "Spirit look and feel"): page https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j, ledger `2026-10-14-spirit-look.json`, rows `council/callsheets/rows/spirit-look-2026-10-14.json`. Positions `sg-look-layers` (each input owns one visual layer), `sg-grows-into-shape` (charge, kindled, shaped, settled at levels 1, 3, 5 and a later bond), `sg-shape-choice` (pick among two or three offered pieces, no editor), `sg-breed-names`, `sg-assets-modular` (one rig per body family with sockets; the sprite is rendered from the 3D model; no play-time AI art). His correction `nation-elements`: Meridia is Earth, Virelune is Wood; the next build swaps the Earth/Virelune and Wood/Meridia sample rows on #51. Question `sg-body-from` (urge, place or free pick sets the body).
 - Next for assets, once `sg-body-from` is answered: first proof is one family (Shellback, if A) through all four stages in all five elements, as a Blender model and a sprite rendered from it. Its own thread, on Opus for the first design.
 
+- Board read of 2026-10-14 01:43 UTC (ledger `2026-10-14-pull-014324.json`): `sg-body-from` = A, the urge picks the family (eight daemon families, two or three animal bases each, 25 species become skins). `sg-look-layers`, `sg-breed-names`, `sg-assets-modular` and `nation-elements` stand. `sg-shape-choice` stands with his steer: many spirits will be defeated and drop loot, and that loot can be offered to spirits the player allies with. `sg-grows-into-shape` is overruled: no outline stage; he wants a ghost or geometric, holographic look, starting as a gas that solidifies into a core, which then makes a holographic ally projected into the world, like Steven Universe. The Level 3 and 5 stage text needs rewriting to this.
+
 ## Waiting on
-- `sg-body-from` on the board, before any spirit art is built.
+- Rewrite `sg-grows-into-shape` to the gas, core, hologram stages and put it back on the board as a position.
+- First art proof: one family (Shellback) through the stages in all five elements, now that `sg-body-from` is answered.
 - His phone play of the slice: board step `spirit-generator-01` (Your steps tab).
 - Whether `sg-overcharge` stands (board).
 
