@@ -44,31 +44,23 @@
 - His look at the two sheets. Then: the warp reads the player's charge (which daemon holds the blockage) to make the
   Chapter 1 NPC, and the J5 garments are checked on a warped body (the robe is skinned to the same rig).
 
-## Next thread (Opus, fresh): the gestural language, round 2 of the warp
+## Round 2 of the warp, the gestural language (done 2026-10-14)
 - His look (Wendell, 2026-10-14 23:35): "my notes for the daemon poses is they need to be more dramatic and different
   from each other. They are quite subtle nods but if you want to create a gestural language we might want to use the
   building blocks of the Six Fundamental Movements of contacting as a starting point with the context that the daemons
   emerge as a way to protect the vulnerable child through egos development until they need to be renegotiated with and
   integrated for the child to move into adulthood. This is essentially one of the things we are gamifying."
-- The six are Ruella Frank's fundamental movements (Gestalt, developmental contact between child and caregiver):
-  yield, push, reach, grasp, pull, release. Not yet in the record; the thread adds them to the ontology notes with the
-  source.
-- Position (stands unless he flips it), one movement per daemon, each the movement held stuck in its protective form:
-  Protector push (arms braced forward, palms out, weight back), Controller grasp (fists drawn to the chest, elbows
-  tight, rigid and tall), Skeptic pull (chest and head drawn back, hands pulled in, weight on the back foot), Fixer
-  reach (both arms out forward, leaning in), Victim yield collapsed (sunk into the ground, knees soft, head down, arms
-  heavy), Damaged Self release refused (curled, arms wrapped round its own middle, holding the case), Emotional Body
-  release too soon (arms thrown open, chest up, giving the feeling away). The Player, the vulnerable child, stands
-  with all six available: soft, upright, open. Integration in play is the stuck movement completing (a push that lands,
-  a grasp that lets go), which a later round can animate. Put this position on the board as a row.
-- Build: extend `WARP` from one collapsed joint to a gesture, per-bone rest rotations about X (flex) and Y (out to the
-  side, mirrored by side), so both arms, the neck and the knees can take a shape; keep arms, head, curve and stoop. Make
-  every pose read in silhouette at the cave's camera distance, and different from every other. Every figure still passes
-  `census.py --kind humanoid` (if open arms break the 1.0 m width, widen the humanoid box for NPCs with the reason) and
-  J4's walk check; J6 covers the eight. Re-render `--daemons --sheet` and `--one-number --sheet` to
-  /mnt/project-files/3d-build/npc-warp-<date>/.
-- Owns bars-engine #328 (push the round onto it, it is ready and green) and watches #325 and Six-faces-council #150 until
-  they merge.
+- Built on bars-engine #328: every WARP row carries a `gesture`, per-joint rest rotations (flex, out, turn, mirrored by
+  side), feet set back on the ground. Movement per daemon and the source are in `council/daemons/GESTURES.md`; board row
+  `dg-six-movements` holds the position. Census gets an `npc` box (arms flung to 1.5 m, Fixer 1.2 m deep, Victim sunk to
+  1.4 m tall); the walk check measures the swing from the rest stance. J4, J4b, J6 and the offline tier pass.
+- Sheets: /mnt/project-files/3d-build/npc-gesture-2026-10-14/ (daemons.png, daemons-side.png, one-number.png,
+  one-number-side.png).
+
+## Next thread (Opus, fresh): integration, the held movement completing
+- Waits on his look at the round 2 sheets. Then animate each daemon's movement completing over a few seconds, from its
+  held shape to the Player's open stance (a push that lands, a grasp that lets go), as a second action beside Walk.
+- Owns bars-engine #328 if it is still open.
 
 ## What we already follow
 - Version pinned: `bpy==5.2.2` on Python 3.13 (tools/blender-cloud/README.md). Matches the tweet's current LTS.
@@ -91,4 +83,4 @@
 - EXACT booleans, `gpu.init()` offscreen sheets: no booleans in these scripts, and Cycles CPU works.
 
 ## Waiting on
-- Nothing from Wendell. The gestural round starts in a fresh thread (above).
+- His look at the round 2 sheets (board row `dg-six-movements`). The integration round waits on it.
