@@ -46,11 +46,15 @@ function of emergent perceptual shadow"
 - **The run** (`ps-run-record`). Each round in the board run records `shadow: { kind, polarity, start, signals }` and its
   readings, so the council can see when shadow came up and whether the practice thinned it.
 
-## Open on the board
+## Answered on the board
 
-- `ps-polarity-poles` (question): does polarity have a second pole (charge too loud, flooding) or only the hidden one?
-  Built one-sided; recommendation is one-sided until play shows flooding.
+- `ps-polarity-poles`, 2026-10-14: "two". Polarity runs -10 to 10; below 0 the charge floods. Built in bars-engine #326:
+  Witness's "It's too much to be with" (-6); a round stuck at 9 or 10 that does not come down points the second signal at
+  flooding (part comes in at its polarity minus 4); the creature grows past its allowed size, blazes past its allowed
+  brightness and glares in its own colour; three practices turn it down by 3 each (long out-breath behind the seat, name
+  one thing that isn't it, picture it at arm's length). Flooding has no kinds. The run records `shadow.pole`. Hidden
+  still means polarity above 0, which the dissolving thread reads.
 
 ## State
 
-- 2026-10-14: design written; build in progress on bars-engine branch `claude/project-thread-8r44dc`.
+- 2026-10-14: both poles built in bars-engine #326 (stacked on #324 and #317), shadow-test 41 of 41.
