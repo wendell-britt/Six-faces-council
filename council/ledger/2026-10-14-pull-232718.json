@@ -1,0 +1,81 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T23:27:18.015Z",
+ "answers": {
+  "ea-cap-which-waits": {
+   "kind": "question",
+   "choice": "",
+   "savedAt": "2026-10-14T23:25:46.499Z",
+   "steer": "The move library is something all the games use so we can choose which games have the best fit (sprout and cave of lessons fit)"
+  },
+  "dq-home": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:25:53.580Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dq-boss-chain": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:26:01.903Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dq-protector-chamber": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:26:10.803Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dq-shadow": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:26:23.572Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dq-npc": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:26:32.507Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ea11-one-spread": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:26:38.923Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ea12-eight-moves": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:26:46.341Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ea13a-two-eights": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:27:02.799Z",
+   "status": "overrule",
+   "steer": "They aren’t unrelated. I’ve been putting off integrating them "
+  },
+  "ea13b-ke-release": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:27:12.066Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ea13c-key-not-transcend": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:27:18.015Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/ea-cap-which-waits: Steer only (steer: \"The move library is something all the games use so we can choose which games have the best fit (sprout and cave of lessons fit)\")",
+  "positions/ea13a-two-eights: Overruled (steer: \"They aren’t unrelated. I’ve been putting off integrating them\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
