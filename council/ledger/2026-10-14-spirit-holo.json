@@ -1,0 +1,10 @@
+{
+ "date": "2026-10-14",
+ "battle": "spirit-generator",
+ "repo": "bars-engine",
+ "kind": "build",
+ "note": "From the 01:43 board read: sg-grows-into-shape was overruled (gas, core, hologram) and sg-shape-choice stood with a loot steer. Both are built as positions (sg-holo-stages, sg-loot-offering). First art proof: the Shellback (Protector family, sg-body-from A) in three stages and five elements, built from primitives by tools/blender-cloud/content/spirits/shellback.py, with sprites rendered from the models. Page https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85; files /mnt/project-files/3d-build/spirit-shellback-2026-10-14/.",
+ "positions": ["sg-holo-stages", "sg-loot-offering"],
+ "questions": [],
+ "page": "https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85"
+}

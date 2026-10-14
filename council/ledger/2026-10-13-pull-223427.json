@@ -1,0 +1,63 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T22:34:27.338Z",
+ "answers": {
+  "wave-water-controls-fire": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:32:03.002Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-seven": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:32:08.599Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-pass-rule": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:32:15.117Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-progress": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:32:21.434Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-centre": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:32:28.403Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-big-mind-page": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:34:20.807Z",
+   "status": "overrule",
+   "steer": "Yes this is the big issue.\n\nThe big mind cave need to be accessible from the WAVE room. Which also need the ability for players to walk around in. Another door in the room leads to the 6 game masters (content to be created)\n\nAll of the caves need to use the same assets and have the ability to spawn spirits when one sits down and does a wave process. "
+  },
+  "dp-door": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:34:27.338Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j4-look-02",
+   "at": "2026-10-13T22:27:10Z",
+   "what": "ticked",
+   "do": "Look at round 2 of the character creator. Your notes on round 1 were that the collars were broken and the proportions were near-human and uncanny. j4-round2-sheet.png shows the nine figures again (rows slight, average, broad; columns dusk, jade, hemp). The crossed collar is now one smooth band, painted from the right side up across the chest, over both shoulders, round the back of the neck and a little way up it. j4-round2-collar-front.png and j4-round2-collar-back.png show it close. The bodies have moved away from realism: a bigger head, a short neck, a plain trunk with no waist or chest shaping, thicker limbs, mitten hands and rounded feet. j4-round2-walk.png shows the walk from the side. Under this step, note 'yes' or what is still wrong. If the figures are still too human, say which way to push: bigger head, shorter legs, or rounder all over. On a yes, bars-engine #312 is marked ready and merges itself, and J5 (clothing) starts."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "positions/dp-big-mind-page: Overruled (steer: \"Yes this is the big issue.\n\nThe big mind cave need to be accessible from the WAVE room. Which also need the ability for players to walk around in. Another door in the room leads to the 6 game masters (content to be created)\n\nAll of the caves need to use the same assets and have the ability to spawn spirits when one sits down and does a wave process.\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

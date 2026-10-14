@@ -92,6 +92,58 @@ The Yellow Brick Road is mythic reassurance, not infallibility:
 
 A wrong move can remain wrong while becoming information, repair, story, or another road. Divergence does not prove hidden desire. A revised destination does not retroactively fulfill the prior one. Some blockers may remain unresolved indefinitely while continuing to constrain a named route.
 
+## Roadblocks and intention
+
+A roadblock is first a scoped observation: something prevents a named action, route, capacity, or destination under declared conditions. Its classification, causal account, meaning, response, and outcome are separate records.
+
+> **A roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.**
+
+AI may propose an `IntentionAlignmentHypothesis` only against a declared intention and relevant evidence. It must not psychologize a technical defect, infer hidden desire, or treat refusal as confirmation. At the technical layer, metabolization converts failure into repair, verification, safer routing, reusable learning, or provenance; it does not require emotional processing. A blocker may instead be rested, accommodated, rerouted, left unresolved, abandoned, or composted.
+
+## Session depth, performance, and disclosure
+
+Gameplay performance is real design material: performed practices can create capacity, relationship, consequence, and good stories. Record the named performance without treating it as proof of an unseen inner state.
+
+Answer length, intimate specificity, fear naming, and mask identification do not establish genuineness, depth, readiness, transformation, or deftness. Use a correctable `ResponseAffordanceProfile` to describe what the supplied material can support. More relevant material may permit more specific tailoring, but it must not buy better baseline craft, core progress, power, credentials, or social standing.
+
+Keep artifact specificity, richness, quality, and fit separate. **Intimate disclosure is not progression currency.** Offer optional follow-up, presets, fictionalized or symbolic input, player selection, and private-local routes where possible. The system must never weaken an artifact to pressure disclosure. Pacing adaptation remains visible, reversible, and player-correctable.
+
+## BAR scope
+
+A `BAR` is an intentionally captured, portable kernel of potential with stable identity and provenance. Every BAR has provenance; not every provenance-bearing object is a BAR. A note, artifact, quest, rule, specification, log, or decision receives BAR identity only when it is explicitly captured as a reusable kernel.
+
+Charge is optional. A `ChargedBAR` is one specialization or role, alongside kernels originating in requests, observations, opportunities, design ideas, decisions, rules, lore, imported artifacts, or forks.
+
+Keep the kernel distinct from its `BARExpression`. A BAR may bloom as a quest, rule, lore, feature specification, plan, norm, branch, or artifact without becoming reducible to that expression. Capture creates lineage, not implementation debt. Portability carries a permission policy; it never means unrestricted reuse.
+
+## Composting
+
+Composting is a governed lifecycle disposition that ends a named active obligation. It does not require a new artifact, lesson, transformation, fuel, later reuse, or recovered value.
+
+> **Compost may nourish future growth, but it does not owe the garden a harvest.**
+
+Keep `CompostingDisposition`, optional `CompostResidue`, and any later `RegenerationEvent` separate. After composting, active backlog pressure, overdue status, progress penalties, required review, and automatic completion prompts stop. Reactivation requires a new explicit decision.
+
+Composting is not deletion, archival, supersession, or completion of the original quest. Preserve only the minimum permitted lineage; privacy or deletion rights may require a tombstone or no recoverable content. Later reuse needs its own authority and provenance.
+
+## Creative reuse and personal meaning
+
+BARS may frame AI remixing of a creator's archive as creative composting and “not necromancy.” That is a `ProjectMeaningFrame`, not a required interpretation.
+
+> **The project may name its ritual; it may not name the player's experience for them.**
+
+A player or creator may find the reuse generative, uncanny, inappropriate, exploitative, sacred, playful, grief-laden, “not mine,” or unresolved. Keep personal meaning, source authorship, generated authorship, attribution, identity or likeness, reuse permission, and shared-world consequence separate.
+
+A `DerivedVoice` is a character informed by a permitted corpus; it is not the source person, past self, or archived speaker. “Not mine” is a scoped correction that may reject meaning, authorship, attribution, identity, aesthetics, relationship, or permission. It must never be treated as resistance. Archive-based adaptation remains optional, with non-AI and non-reuse routes preserving the core game and quality floor.
+
+## Privacy and consent authority
+
+Consent is situated authorization for an operation now. A `ConsentRecord` is evidence of a past grant, refusal, or condition; it is not permanent proof of present willingness. `PermissionGrant` binds subject, data category, purpose, operation, processor, audience, context, duration, retention, descendant policy, correction, revocation, and deletion. Omitted purposes are not granted.
+
+`PermissionEnvelope` is the effective intersection of applicable grants, refusals, boundaries, source restrictions, and duties. It travels through `DerivationRecord` lineage to snapshots, psychographs, inferences, world material, BARs, council syntheses, analytics, exports, caches, and model artifacts. Structured extraction, aggregation, or generation does not automatically anonymize or release a derivative.
+
+Correction changes or contests a claim. Revocation ends future authority for a purpose. Deletion disposes of named content and descendants; it is not composting, archival, hiding, or account deactivation. Propagate each through reachable lineage, preserve only minimum permitted residual obligations, and report irreversible disclosures or technical limits honestly. Optional sensitive uses must not buy baseline quality, progress, power, credentials, or belonging.
+
 ## Evidence authority
 
 - Player report establishes reported meaning, experience, satisfaction, or intention; it does not establish external effect.

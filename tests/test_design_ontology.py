@@ -13,6 +13,8 @@ class DesignOntologyPackageTests(unittest.TestCase):
     def setUpClass(cls):
         cls.manifest = yaml.safe_load(MANIFEST_PATH.read_text())
         cls.quickstart = (ROOT / "ontology" / "v0.1" / "QUICKSTART.md").read_text()
+        machine_path = ROOT / cls.manifest["current_sources"]["machine_vocabulary"]["path"]
+        cls.ontology = yaml.safe_load(machine_path.read_text())
 
     def test_manifest_declares_provisional_alpha(self):
         package = self.manifest["package"]
@@ -50,6 +52,14 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "DerivedMovementProposal",
             "No path has to be wasted",
             "Players author personal meaning",
+            "it does not prove misaligned intention",
+            "Intimate disclosure is not progression currency",
+            "Every BAR has provenance; not every provenance-bearing object is a BAR",
+            "it does not owe the garden a harvest",
+            "it may not name the player's experience for them",
+            "Consent is situated authorization for an operation now",
+            "PermissionEnvelope",
+            "Deletion disposes of named content and descendants",
         ]
         for phrase in required:
             with self.subTest(phrase=phrase):
@@ -61,6 +71,11 @@ class DesignOntologyPackageTests(unittest.TestCase):
             "TensionVector is the lived",
             "quest ending proves transformation",
             "divergence proves hidden desire",
+            "a technical fault proves misaligned intention",
+            "long answers prove depth",
+            "every artifact is automatically a BAR",
+            "composting requires a new artifact",
+            "a derived voice is the source person",
         ]
         lowered = self.quickstart.lower()
         for phrase in forbidden:
@@ -71,6 +86,43 @@ class DesignOntologyPackageTests(unittest.TestCase):
         skill = (ROOT / ".claude" / "skills" / "six-faces" / "SKILL.md").read_text()
         self.assertIn("design-ontology", skill)
         self.assertIn("ontology/manifest.yaml", skill)
+
+    def test_privacy_permission_grammar_is_purpose_specific_and_propagating(self):
+        privacy = self.ontology["privacy_consent_authority"]
+        purposes = set(privacy["distinct_operations"])
+        self.assertTrue(
+            {
+                "collection",
+                "transient_processing",
+                "persistence",
+                "derivation",
+                "personalization",
+                "explanation",
+                "visibility",
+                "reuse",
+                "sharing_publication",
+                "export",
+                "analytics_evaluation",
+                "model_improvement",
+                "retention",
+                "correction",
+                "deletion",
+                "revocation",
+            }.issubset(purposes)
+        )
+        self.assertEqual(
+            privacy["derivative_rule"],
+            "descendants_inherit_the_effective_permission_envelope",
+        )
+        self.assertEqual(privacy["data_class_defaults"]["model_improvement"], "explicit_opt_in_only")
+        self.assertIn("composting", privacy["deletion_is_not"])
+
+    def test_privacy_decision_resolves_consent_record_scope(self):
+        path = ROOT / self.manifest["binding_decisions"]["privacy_consent_authority"]["path"]
+        decision = path.read_text()
+        self.assertIn("ConsentRecord is evidence of a past decision", decision)
+        self.assertIn("Every derivative inherits a permission envelope", decision)
+        self.assertIn("BARS reconciliation test", decision)
 
 
 if __name__ == "__main__":

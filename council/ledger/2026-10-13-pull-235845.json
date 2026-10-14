@@ -1,0 +1,71 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T23:58:45.024Z",
+ "answers": {
+  "sg-work-grows": {
+   "kind": "question",
+   "choice": "outer",
+   "savedAt": "2026-10-13T23:55:45.546Z",
+   "steer": ""
+  },
+  "sf-ally-pick": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:55:59.564Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sf-stats-carry": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:56:15.659Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sf-generator-next": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:56:23.436Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sg-charge-disc": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:57:00.478Z",
+   "status": "stands",
+   "steer": "Yes but if you try to take a spirit with more charge than your character is able to handle there are consequences "
+  },
+  "sg-first-slice": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:57:13.092Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sg-loop-trains": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:57:33.557Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sf-ally-moves": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:58:45.024Z",
+   "status": "stands",
+   "steer": "I do think that move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move (think pokemon starters) \n\nMove elements and spirit ally elements combine but aren’t essentially aligned "
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-01",
+   "at": "2026-10-13T23:24:02Z",
+   "what": "ticked",
+   "do": "Look at the first round of clothing (J5). The figures you approved in J4 can now wear three separate garments that the game can put on and take off: an ankle-length robe with wide sleeves, the crossed collar and side slits to the knee; a sash knotted in front with two tails; and a topknot with a bun, a tie and a pin. Each comes in the three palettes (dusk, jade, hemp). There are three pictures. j5-garments-sheet.jpg shows each garment worn alone: rows are the slight, average and broad builds, and the columns are the robe, the sash and the topknot, each in dusk, jade and hemp. j5-set-sheet.jpg shows the whole set on all nine figures. j5-set-walk.jpg shows the average dusk figure in the set from the front, the side and the back at four points of the walk. The robe's front panel swings with whichever leg is ahead. The machine checks pass: no body shows through any garment at any point of the walk, every garment is under 150 KB, and a swap takes under 1 ms. Under this step, note 'yes' or what is wrong. On a yes, bars-engine #315 is marked ready, and the next job wires the figures and their garments into the cave together."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "questions/sg-work-grows: Outer-world action trains too",
+  "positions/sg-charge-disc: Stands (steer: \"Yes but if you try to take a spirit with more charge than your character is able to handle there are consequences\")",
+  "positions/sf-ally-moves: Stands (steer: \"I do think that move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move (think pokemon starters) \n\nMove elements and spirit ally elements combine but aren’t essentially aligned\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

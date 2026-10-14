@@ -10,7 +10,7 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
-  causes, steer, steps, blockers), query {"limit": 1000}, out_dir <dir>
+  causes, steer, steps, blockers, picks, morning, ttv), query {"limit": 1000}, out_dir <dir>
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -20,12 +20,20 @@ Running it twice, or in two sessions at once, records the same thing the same wa
 the newest save it records and holds no time of its own, so two runs that see the same saves write the same file, and
 the board merge driver joins resolved entries by id.
 
+WAVE room runs (2026-10-14, ttv-skip-wave): before it looks for blockers it fetches the runs the board sent into the
+WAVE room from bars-engine (council/wave_runs.py) into <dir>/blockers, so they land like the board's own panel runs.
+--no-room skips the fetch.
+
 Steps (2026-10-12): a tick, note or date move on the Your steps tab lives only in the store's steps collection, and
 the Send button sends it like any answer. Until this date pull.py never read that collection, so the 18:40 Send of
 three step notes recorded nothing and the read said all was recorded. Every change later than
 steps_recorded_through is now recorded in the ledger; a note or a moved date goes on the needs-work list.
+
+Files on a step (2026-10-14): a step can carry files (a draft, an image, a link) that the board shows inline, each with
+its own notes box. Those notes live in the step's fileNotes and are recorded and listed like a step note.
 """
 import argparse
+import importlib.util
 import json
 import subprocess
 import sys
@@ -38,6 +46,9 @@ LEDGER = ROOT / "council" / "ledger"
 BOARD_URL = "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
 KINDS = ("positions", "questions", "terms", "causes")
 BLOCKERS = ROOT / "council" / "blockers"
+_spec = importlib.util.spec_from_file_location("wave_runs", ROOT / "council" / "wave_runs.py")
+wave_runs = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(wave_runs)
 ENDS = {"now": "do it now", "moved": "moved the date", "change": "the step needs changing", "drop": "drop the step",
         "stuck": "still stuck"}
 STEPS_SINCE = "2026-10-12T00:00:00Z"  # step notes before this were read by hand (e.g. positions on 7 October notes)
@@ -114,8 +125,24 @@ def find_new(data, store):
         g = json.loads(steer.read_text(encoding="utf-8"))
         if (g.get("text") or "").strip() and g.get("savedAt", "") > data.get("steer_recorded_through", ""):
             general = g
+    # mm-picks-become-threads: a morning pick he saved is one board row marked as his; the next read starts its thread
+    taken = {p["id"] for p in data.get("picks", [])}
+    for f in sorted((store / "picks").glob("*.json")) if (store / "picks").is_dir() else []:
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        if f.stem in taken or doc.get("removed") or not doc.get("savedAt"):
+            continue
+        new.append({"kind": "picks", "id": f.stem, "doc": doc, "answer": "picked", "row": None})
     new.sort(key=lambda n: n["doc"]["savedAt"])
     return new, general, find_steps(data, store)
+
+
+def pasted_menu(data, store):
+    """The sealed menu he pasted on the Morning tab, when it is newer than the last gather; else None."""
+    f = store / "morning" / "menu.json"
+    if not f.exists():
+        return None
+    doc = json.loads(f.read_text(encoding="utf-8"))
+    return f if doc.get("savedAt", "") > (data.get("morning") or {}).get("gathered_at", "") else None
 
 
 def find_steps(data, store):
@@ -129,6 +156,11 @@ def find_steps(data, store):
         if (doc.get("note") or "").strip() and doc.get("noteAt", "") > since:
             out.append({"id": f.stem, "at": doc["noteAt"], "what": "note", "note": doc["note"].strip(),
                         "do": doc.get("do", "")})
+        titles = {x.get("id"): x.get("title") or x.get("id") for x in doc.get("files") or [] if isinstance(x, dict)}
+        for fid, n in sorted((doc.get("fileNotes") or {}).items()):
+            if isinstance(n, dict) and (n.get("text") or "").strip() and n.get("at", "") > since:
+                out.append({"id": f.stem, "at": n["at"], "what": "file note", "file": fid, "title": titles.get(fid, fid),
+                            "note": n["text"].strip(), "do": doc.get("do", "")})
         for m in doc.get("moved") or []:
             if m.get("at", "") > since:
                 out.append({"id": f.stem, "at": m["at"], "what": "moved", "from": m.get("from"), "to": m.get("to"),
@@ -175,6 +207,16 @@ def apply(data, new, general, steps, ledger_rel, blockers=()):
         kind, rid, doc, ans = n["kind"], n["id"], n["doc"], n["answer"]
         steer = (doc.get("steer") or "").strip()
         answers[rid] = {"kind": kind[:-1], **{k: v for k, v in doc.items() if k != "previous"}}
+        if kind == "picks":
+            b = doc.get("bridge") or {}
+            goal = b.get("goalTitle") or (f"new {b.get('cadence')} goal \"{b.get('title')}\" under {b.get('parentTitle')}"
+                                          if b.get("kind") == "new" else "unaligned")
+            data.setdefault("picks", []).append({"id": rid, "date": doc.get("date"), "category": doc.get("category"),
+                                                 "text": doc.get("text"), "bridge": b, "note": doc.get("note", ""),
+                                                 "saved_at": doc["savedAt"], "record": record})
+            work.append(f'picks/{rid}: start a thread: "{doc.get("text")}" (goal: {goal})'
+                        + (f' (note: "{doc["note"]}")' if doc.get("note") else ""))
+            continue
         if doc.get("deferred"):
             due.record(data, kind, rid, doc["savedAt"], doc.get("until") or "spaced", steer, record, doc.get("hours"))
             data["resolved"][kind][rid]["saved_at"] = doc["savedAt"]
@@ -198,6 +240,8 @@ def apply(data, new, general, steps, ledger_rel, blockers=()):
     for e in steps:
         if e["what"] == "note":
             work.append(f'steps/{e["id"]}: note "{e["note"]}"')
+        elif e["what"] == "file note":
+            work.append(f'steps/{e["id"]}: notes on "{e["title"]}": "{e["note"]}"')
         elif e["what"] == "moved":
             work.append(f'steps/{e["id"]}: moved from {e["from"]} to {e["to"]}')
     if steps:
@@ -220,6 +264,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("store", help="folder the ArtifactData reads saved the store into")
     ap.add_argument("--push", action="store_true", help="record, commit and push to main")
+    ap.add_argument("--no-room", action="store_true", help="skip fetching WAVE room runs from bars-engine")
     a = ap.parse_args()
     store = Path(a.store)
     if not (store / "positions").is_dir() and not (store / "questions").is_dir():
@@ -235,7 +280,27 @@ def main():
     new, general, steps = find_new(data, store)
     if not (store / "steps").is_dir():
         print("WARNING: no steps folder; step ticks, notes and moves were not checked (list the steps collection too)")
+    if not a.no_room:  # ttv-skip-wave: runs the board sent into the WAVE room come back from bars-engine
+        wave_runs.into(store)
     blockers = find_blockers(store)
+    menu = pasted_menu(data, store)
+    if menu:  # mm-menu-transport: the next gather reads it; morning.py writes main itself
+        print(f"needs work:\n  morning/menu: python3 council/morning.py --menu {menu} --write, then commit and republish")
+
+    for f in sorted((store / "ttv").glob("*.json")) if (store / "ttv").is_dir() else []:  # ttv-first: done in bars-engine
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        if doc.get("status") == "bars-engine" and (data.get("morning") or {}).get("sealed") != f.stem:
+            print(f"needs work:\n  ttv/{f.stem}: he did Tap the Vein in bars-engine; python3 council/morning.py --fetch {f.stem} "
+                  "--out <dir>/morning-menu.json --write, then commit and republish")
+
+    write = store / "morning" / "freewrite.json"
+    if write.exists():  # ttv-raw-bars: read once for BARs, then delete
+        print(f"needs work:\n  morning/freewrite: read it, summarize it and pitch his lines as BARs: python3 council/ttv_bars.py "
+              f"pitch {write} --pitches <file> --summary \"...\" > rows.json, add them with board/sync_board.py --rows, "
+              f"then delete it (ArtifactData delete, collection morning, doc_id freewrite) and rm {write}")
+    if any(n["id"].startswith("ttv-2") for n in new if n["kind"] == "questions"):  # pitches he answered
+        print("needs work:\n  ttv pitches answered: after recording, python3 council/ttv_bars.py accepted --write, then open a "
+              "pull request in game-masters-guide")
     if not new and not general and not steps and not blockers:
         print("every saved answer is recorded")
         return

@@ -1,7 +1,14 @@
-2026-10-11 (updated 23:59)
+2026-10-14 (updated 21:50)
 # WAVE room (the cave's home)
 
 ## Next
+2026-10-13: pinch to zoom and a tap-a-creature close-up are built for the room, bars-engine PR #302 (branch
+`claude/project-thread-wvicrp`), cave-test 315 pass, 331 with the Big Mind fold. Zooming out past the step's view widens the lens
+so all three creatures fit on an upright phone (choice). The close-up card shows name, element, texture, where, step, charge,
+feelings about it, goal and next move, with "Work with this one" and "Back to the room" (choice). Phone page
+https://claude.ai/artifact/23neJJJgywAygUqiJffGvc version 14 carries it with the Big Mind fold. Next: his play of the pinch and
+close-up.
+
 The second slice is built: bars-engine PR #277 (branch `claude/project-thread-ncihch`, stacked on #276), 263 checks green. It
 carries all seven of Wendell's 22:59 changes: Talk to it switches voice by itself (room and cave), the door slides into the wall,
 Allow grows the creature with size and brightness sliders, a glow and sparks that dull as it is worked, up to three creatures
@@ -9,6 +16,88 @@ with a "Working with" picker and a fourth waiting at the door, and feelings abou
 are about. The cave fork took the narrower reading (3-2-1 switching, sliders and glow at the daemon; the whole room flow is not
 run in place in the cave); it stands unless he flips it. The cave's DESIGN.md has "The WAVE room, second slice". Next: his play
 of the second slice, then fixes from his notes in a fresh thread.
+
+## Built: the board's way into the room (2026-10-14)
+- His steer on `ttv-skip-wave`: "yes, but I want it to be as interactive as possible. We want to move toward using the game
+  to build the game. It should deposit me inside the WAVE room and we should move to have the WAVE room be able to metabolize
+  context specific charges and send the results to the board in this case."
+- bars-engine #324 (draft, branch `claude/project-thread-h6nfj1`, stacked on #317 with #316 merged in): `cave/board-wave.js`
+  reads `#wave=board&charge=&skips=&ref=&date=` and opens the room from the board. Welcome names the charge words and asks
+  the charge 0 to 10; Acknowledge asks what is in the way of it; the quiet room asks how today's Tap the Vein ends (the
+  panel's five endings) and the charge left; the way out is "Back to the board". Every page saves the run (blocker record,
+  `engine: "wave-room"`) to `POST /api/council/wave-runs` under his sign-in; a signed-out run waits in the browser.
+  New table `wave_room_runs`. board-wave-test 20 of 20.
+- Six-faces-council: `council/wave_runs.py`, run by `board/pull.py`, fetches the runs with `COUNCIL_MENU_TOKEN` into the
+  store's `blockers/`, so they land as `council/blockers/<ref>.json`. Board side (the link) is #147.
+- Choices that stand unless he flips them: the charge as eleven buttons; one ending per sitting; Tomorrow moves the date a day;
+  a run belongs to the signed-in player and the council reads only his.
+- Merge order: #310, #313, #317, then #324 (it retargets to main). #147 merges after the bars-engine routes deploy.
+- Next: the room as the board's blocker button for any overdue step, not only Tap the Vein (the panel's "Work through
+  what's in the way" opens the room with the step's words), then running the WAVE inside the walkable test room
+  (`rooms/walk-room.js`).
+
+## Rulings folded in (Wendell, 2026-10-13, from `somatic-ontology.md`)
+- `sb-no-pass-at-daemon`: a 3-2-1 skipped in the cave is picked up in the WAVE room. The room is where the journey begins: the player
+  lets spirits in there, or starts a cave journey from there. The cave never makes the player finish a 3-2-1 at the daemon; the room
+  holds the skipped one until they come back. Build is not started; this is the call-sheet record only.
+- `sb-one-at-a-time`: up to 3 daemons at a time, turn based like Final Fantasy combat. This matches the second slice (three creatures,
+  "Working with" picker). The fourth waiting at the door is a cap on the party, not one-at-a-time; any line elsewhere that assumes one
+  daemon at a time is superseded.
+
+
+2026-10-13: the room is walkable (tap the floor), wears the J1 stone, and has two doors behind the seat: Big Mind and the
+six game masters. bars-engine #313; see big-mind-cave.md.
+
+## Chat ruling (Wendell, 2026-10-13)
+- Wendell, 2026-10-13 22:29 (in the cave branch seams thread): "Cave is breaking here and if you sit down
+  without going through the whole wave process a spirit is auto created. It should only emerge once it’s been engaged
+  with". A spirit emerges only after the whole W.A.V.E.; standing up partway leaves none. This flips the sit-anywhere
+  design's "standing up partway leaves a spirit". Built in the cave by bars-engine #310; in the room, only a charge worked
+  through to the end goes through a door as a spirit (the walkable room build, stacked on #309).
+- Wendell, 2026-10-13 23:26 (in the cave branch seams thread), after "In the 6 faces room the walking is quite slow":
+  "Ah yes. Ok we should disambiguate the walk speed to breath. We have that built into the manual wave experience so we
+  don’t need that anymore". Walking no longer keeps one stretch to a breath. Every cave and level walks at one steady
+  speed, and the breath lives in the manual W.A.V.E. Built in bars-engine #310 (WALK_SPEED 4 units a second).
+- Wendell, 2026-10-13, in the WAVE room thread: the room needs "free walking controls", "a rug or a seat players can sit
+  on when they are communing with spirits", and a camera that tilts up and down. Built in bars-engine #313: a walking
+  stick and the arrow keys, a rug with a cushion that offers Sit down, and a drag that tilts the camera.
+
+- Wendell, 2026-10-14 00:42 (in the cave branch seams thread): "Ok I think we’ve reached the maturity where we don’t have
+  to have the walking happening on rails. It’s causing more trouble than it’s work and we need to test the ergonomics of
+  Freeform navigation in preparation of introducing running. The gates for the 6 game master room are too small. They
+  should be doors." Not built yet; it is the next piece of work (below).
+- Wendell, 2026-10-14 00:39, on doors and the stick: the room now follows five phone-game rules (the stick is never taken
+  away; prompts by the right thumb; a zone shows sooner than it hides; one prompt at a time; full pages only from a tap).
+  They are in bars-engine `content/ontology-game/cave/DESIGN.md` and apply to every room and cave that gets free walking.
+
+## Built: free walking everywhere and the hall's doors (2026-10-14)
+- bars-engine #317 (branch `claude/project-thread-re36zv`, draft) carries #313 with #310 merged in and takes walking off
+  the rails in the caves, the hall of the six, the face tunnels and the centre: the stick and the keys, stops as prompts by
+  the right thumb whose page opens from a tap, the way past the next stop still shut on the main path and in passages, free
+  in the levels. The hall's arches are doors 3.2 wide and 5 tall. Choices (stand unless he flips them): walkable width, prompt
+  distances, door size, Sit down moved to the bottom right. DESIGN.md "Free walking everywhere, and the hall's doors".
+- cave-test 376 pass, 1 fail: the idle breathing threshold (shoulders 0.010 against > 0.01), which passed on the two
+  earlier runs of the branch.
+- After his play the same day ("Camera controls are clunky in the game master space and the walking is rather slow", then
+  "The center is impassible and we want to be able to have click to walk for when we're testing on the computer"): the
+  camera follows the figure, the walk is 7 units a second, the middle of the hall and the centre is open floor (the six stones
+  block), and a click on the floor walks there. DESIGN.md "The camera follows the figure, and the walk is quicker" and "The
+  open middle, and click to walk". cave-test 385 of 385. He said "perfect. Looking good".
+- The phone page https://claude.ai/artifact/23neJJJgywAygUqiJffGvc version 32 carries it.
+- Next: running, on the same stick, in a fresh thread. Merge order: #310, #313, #317.
+
+## Handoff that started it (from the WAVE room walk thread, 2026-10-14)
+- Where it stands: bars-engine #313 (branch `claude/project-thread-o1ntdv`, carries #309) has free walking in the WAVE
+  room only: `freeWalk`, the stick, keys, tilt, the rug, door prompts (`doorZone`, `doorCard`). The caves and the levels
+  (hall of the six, face tunnels, centre) still walk on rails (`walkStep`; #310 made it a steady `WALK_SPEED`).
+- The work: replace the rails with the room's stick-and-keys walking in the tunnels and the hall, keeping the figure
+  inside the tube (`tube.contain`), markers and doors as prompts by the right thumb (DESIGN.md rules), and make the hall's
+  gates full-size doors (`roundRoute` door(), `portal_arch` scaled `h*0.75`). Running comes after.
+- Merge order: #310 first, then #309/#313; the hint() conflict keeps #309's two lines plus `avatar.userData.stepIdx = 0`.
+- The phone page (https://claude.ai/artifact/23neJJJgywAygUqiJffGvc) is built from #313 merged with #310; see the
+  cave-phone-page-build memory.
+- His third ask, a room generated from a ChatGPT room description with BlenderKit and our own asset pipeline, is its own
+  strand (Blender pipeline), not this one.
 
 ## Waiting on
 The board's blocker panel (docs/blocker-panel.md, 2026-10-12) runs an overdue step through a light WAVE and saves

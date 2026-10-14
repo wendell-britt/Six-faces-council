@@ -1,0 +1,65 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T21:17:57.129Z",
+ "answers": {
+  "sh-lead": {
+   "kind": "question",
+   "choice": "two-doors",
+   "savedAt": "2026-10-13T21:15:51.822Z",
+   "steer": ""
+  },
+  "sh-ek-cert": {
+   "kind": "question",
+   "choice": "not-now",
+   "savedAt": "2026-10-13T21:16:06.663Z",
+   "steer": ""
+  },
+  "sh-verb": {
+   "kind": "position",
+   "savedAt": "2026-10-13T21:16:37.935Z",
+   "status": "stands",
+   "steer": "Specifically shame is the expression of all the dissatisfied parts of the emotional alchemy channels. Doing emotional alchemy is itself a metabolizing shame practice "
+  },
+  "sh-coach-not-clinic": {
+   "kind": "position",
+   "savedAt": "2026-10-13T21:16:44.318Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sh-walk-is-the-map": {
+   "kind": "position",
+   "savedAt": "2026-10-13T21:16:49.085Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sh-ek-fence": {
+   "kind": "position",
+   "savedAt": "2026-10-13T21:17:47.662Z",
+   "status": "overrule",
+   "steer": "This is something to think more about. If the charge is present it’s got its hands on the joystick. We can have people be responsible to getting their hands back on the joystick without blaming them for it having been taken away "
+  },
+  "sh-pitch-test": {
+   "kind": "position",
+   "savedAt": "2026-10-13T21:17:54.446Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sh-no-name": {
+   "kind": "position",
+   "savedAt": "2026-10-13T21:17:57.129Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/sh-lead: Two doors, general first",
+  "questions/sh-ek-cert: Not now",
+  "positions/sh-verb: Stands (steer: \"Specifically shame is the expression of all the dissatisfied parts of the emotional alchemy channels. Doing emotional alchemy is itself a metabolizing shame practice\")",
+  "positions/sh-ek-fence: Overruled (steer: \"This is something to think more about. If the charge is present it’s got its hands on the joystick. We can have people be responsible to getting their hands back on the joystick without blaming them for it having been taken away\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

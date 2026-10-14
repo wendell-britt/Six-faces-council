@@ -20,5 +20,5 @@ None. His repository and purpose ruling is already recorded.
 ## Verify and ship
 
 - [x] [claude] Run the ontology tests and the existing repository tests (27 tests pass).
-- [ ] [claude] Commit and push the feature branch.
-- [ ] [claude] Open and attach the pull request.
+- [x] [claude] Commit and push the feature branch (`99d9935`).
+- [x] [claude] Open and attach pull request #93.

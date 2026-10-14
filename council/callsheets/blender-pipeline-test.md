@@ -1,18 +1,68 @@
-2026-10-13 (updated 01:55)
+2026-10-13 (updated 23:20)
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
+J5 (clothing) is built: bars-engine draft #315. `content/ontology-game/cave/garments.py --all [--sheet]` cuts a robe
+(wide sleeves, crossed collar, slits to the knee), a sash (on the body, and `sash-robe` over the robe) and a topknot for
+each of the nine J4 figures in dusk, jade and hemp: 36 skinned GLBs, robe 109 to 119 KB, sash 20, topknot 28. J4's rig
+gained two hem bones (`hemF`, `hemB`) that the robe hangs from; cave.js must compute them the same way (character.py
+`pose`). Tests J5 (nothing through at 25 keys), J5b (unfitted robe fails) and J5c (swap under 1 ms in Chromium) pass,
+and J4 and J4b still pass. Root-game reuse is in bars-engine tasks.md. Round 1 (`j5-look-01`, his notes 23:24): shoulders "peeking through on top", hems "held open against gravity". Round 2
+(commit c555b144): the robe is laid over the shoulder tops and the test covers them; the hem flare went from 11 cm to 3 cm
+and `hemB` follows the shin more; robe 117 to 125 KB; all five tests pass. His notes on round 2 (`j5-look-02`, 2026-10-14
+00:25 and 00:27): the shoulders are "rendered by geometry and handwaving", "We're making it look like something instead
+of simulating what happens". Round 3 (commits a9bef4fd, b9db36b0, cdf29404): the robe is cut as two flat panels, sewn,
+and draped on the body by Blender's cloth solver with the flat pattern as rest shape and a simulated belt; trim cut at
+full detail and kept through the reduction; robes 109 to 112 KB. Fixed (commit 9554617c): the fit pushed along vertex normals in one-vertex spikes, which a fold can turn toward the body; it now pushes a smooth 8 cm bump along the normal of the face the point came through, and `--all` builds each build and palette in its own process and redoes a robe the fit cannot clear (the cloth solver settles differently per process). J5 passes on all nine builds, and J4, J4b, J5b, J5c pass (the net tests N2, A4, N5 fail on fixtures, unrelated). Round 3 pictures refreshed. His notes on round 3 (`j5-look-03`, 2026-10-14 16:46): "the places where there are slits in the robe aren't separating when they walk. The figrues without robes should have bare or basic tops so they aren't duplicating the robes. The hems also need to feel like they are more than just painted on". The hips thread also merged smoother skirt weights, no painted V, stiffer and rounded cuffs and a single-threaded (repeatable) drape (e2253b86, d4673d7d). Round 4 (ba4026cb, 73d8afb2; his later note "the slit is supposed to separate and close as the leg moves"): at each slit the front edge follows its own thigh and the back edge the trailing leg, so the slit opens as its leg strides forward and closes as it passes back, and the walk test holds a leg out through a slit when no cloth lies between it and its bone; the hem and cuffs are turned back inside (6 mm fold, 3 cm up), the hem stiffened and its edge smoothed; the under-layer is a plain short-sleeved top to the waist. Robes 132 to 135 KB; J4, J4b, J5, J5b, J5c pass. Next: wait on his look, board step
+`j5-look-04` (list blender-cloud-test, step 12), pictures in `/mnt/project-files/3d-build/j5-round4-2026-10-14/`. His note on round 4 (2026-10-14 21:15): "nope this isn't closer. We're missing something important about how the physics of how the bottom robe is supposed to move. It's not moving like clothes and every fix is still too localized and not seeing the major problem". The cause: the skirt is draped once standing and then rigidly skinned to `hemF`, `hemB` and the thighs, so nothing in its walk is physics. Position `j5-skirt-cloth` (stands unless he flips it) replaces the bone-weight slit fixes, and `j5-look-04` is superseded by it.
+
+**Next thread brief (J5 skirt cloth, Opus, owns bars-engine #315).** Make the robe below the belt real cloth at runtime. (1) In `cave.js`, run a verlet mass-spring cloth on the skirt part of each robe GLB (the vertices the skinning gives to `hemF`/`hemB`/thighs): structural, shear and bend springs from the mesh edges, rest lengths from the standing drape, the belt row and the waist pinned to the skinned hips, gravity, damping, and the character's own motion as inertia; thigh and shin capsules from the rig push points out. Front and back panels join only above the slit, so the slit parts when a leg strides through it and falls shut when it passes. Fixed timestep with substeps; budget it for every figure on screen (J5c's 1 ms swap rule stays; add a per-frame cost test). (2) Export what the runtime needs from `garments.py`: a skirt vertex mask, the pin set and the panel seams (glTF extras or a side JSON), and drop the per-slit weight hacks (`skirt_weights` slit term, `SLIT_REACH`) once the cloth carries the motion; keep the hem facing and the plain tops. (3) Blender runs the same cloth over the 25-key walk for J5 (nothing through) and for the pictures, so a test and his pictures show what the game shows. (4) New pictures: a side-view walk strip at normal and fast stride and a turn, in `/mnt/project-files/3d-build/j5-round5-<date>/`, and a new board step `j5-look-05` with full context; #315 stays a draft until his yes. The hips thread owns the hip/leg rig; ask it before changing bones. On his yes, #315
+goes ready and the next job wires figures and garments into `cave.js` together, in a fresh thread.
+
+Earlier: J4 (character creator, robe set) is built: bars-engine draft #312. `content/ontology-game/cave/character.py`
+`--build slight|average|broad --palette dusk|jade|hemp` (or `--all --sheet`) makes a faceless figure: the body map's
+parts per build, the cave avatar's 16 joints, cave.js poseAvatar baked as "Walk" (1 s, 25 keys), and the robe set's
+under-layer painted on (crossed collar left over right, tunic to mid-thigh, sash, cuffs, ankle ties, shoes). Nine GLBs
+262 to 273 KB (line 300); tests J4 and J4b pass. Round 1 (`j4-look-01`, his notes 22:14): collars "broken", proportions "hitting uncanny valley". Round 2 (commit aaf9cf53): the collar
+is one band cut exactly along its edges, over both shoulders and round the neck; the body is stylized (bigger head, plain trunk,
+thicker limbs, mitten hands); 246 to 266 KB. His yes on round 2 (22:27, "Yes this is better"); `j4-look-02` ticked, #312 marked ready and merges itself. Pictures in
+`/mnt/project-files/3d-build/j4-round2-2026-10-13/`. Next: J5 in a fresh thread. On his yes, #312
+goes ready and J5 (clothing: long robe, sash, topknot as skinned garments on this rig, root-game's garment work first)
+starts in a fresh thread. The figures reach the game with J5's garments, wired into `cave.js` together.
+
+Earlier: J3 (picture to asset) is done: Wendell's yes on round 2 came in the thread, 2026-10-13 21:43 ("Oh that’s
+PERFEXF"), and bars-engine #303 merged (6ff47a2, 2026-10-13 22:29). Board step
+`j3-look-02` is ticked done (Your steps list `blender-cloud-test`, step 6), sheet
+`/mnt/project-files/3d-build/j3-round2-2026-10-13/j3-round2-sheet.png`. Round 1 he ticked (`j3-look-01`), then gave
+notes in the thread (2026-10-13 21:21): textures from the pictures, mushrooms and root "a little blobby", root "Not
+readying as tendrils falling in a shape". Round 2: each piece carries its picture as a texture
+(`picture(..., texture=True)`); one traced stem per mushroom under a smooth rimmed cap; the root's body is a braid of
+four strands with tapering tendrils. Outline: mushrooms 0.822 (was 0.894), crystals 0.855, root 0.910 (was 0.819);
+tests offline,bpy pass; chamber 1,482 KB of 3 MB. Next: J4 (character creator, robe set).
+Crystals still have five shards to the picture's ten (P4 gap). The chamber objects reach the game when `chamber.py`
+is wired into `cave.js`.
+
+Earlier: J2 (adding objects) is built and merged: bars-engine #299 (2026-10-13). `cave/objects.py` gives `chamber.py` one `obj(...)` line per
+object from Blendkit (CC0 Boulder 01, pinned by id), a picture (offering bowl, `pictures/offering_bowl.jpg`) or a script
+(cushion). Each object passes the kill line, and a source that is not CC0 stops the build (tests J2, J2b). Next: J3 (picture to asset), which needs his pictures in the Drive inbox. The J3 vibe interview ran 2026-10-13 (thread "J3 concept pictures"); his answers and four ChatGPT prompts are in `/mnt/project-files/3d-build/j3-concepts/prompts.md`: wondrous with a sacred, uneasy undertone; per-charge shape, colour and growth (tightness violet gentle mushrooms, tension amber strange crystals, strength green ancient roots, numbness black and bare); a gold glow held in a crystal lamp; hi-bit pixel art. J3 starts when `j3-mushroom`, `j3-crystal` and `j3-root` are in Cave studio inbox. The chamber objects reach
+the cave game when `chamber.py` is wired into `cave.js`.
+
+Earlier: The stone is in the cave game: bars-engine draft PR #294, ledger `2026-10-13-cave-stone-textures.json`. Since then, from his
+play notes: pieces grow out of the walls and roof by zone, spires are stochastic stalagmites and stalactites, roots hang from
+the roof, each charge has its own cave shape (numbness is blackness), a lamp on the figure lights only what is near
+(`carryLight` ready for spirits), and wood is a bush, grass and a root. 133 tests pass. Phone page:
+https://claude.ai/artifact/23neJJJgywAygUqiJffGvc (version 7). Next: his play; #294 to ready once he has seen it. J2
+(adding objects) starts after. The WAVE import and the Big Mind merge are their own thread (big-mind-cave sheet).
+
 Part 1 is built: bars-engine `tools/blender-cloud/tests/`, PR #290 (merged 2026-10-13), ledger `2026-10-13-blender-pipeline-tests-built.json`.
 R2 passed: the kit rebuilds byte for byte, so exact matching stands. One command runs everything:
 `python3 tools/blender-cloud/tests/run.py --tier offline,bpy,net`; the summary goes to `$W/test-summary.md`.
 
 Left open:
-1. Blendkit tests (G4, G5, N1, N2, A2 to A4, N5) skip, because this environment's network refuses Blendkit. The first
-   session that reaches it runs `--tier net`, pins the chair, table and Painted Wooden Chair 02 query and index in
-   `fixtures.json`, picks A2's multi-material asset, and records N5's time and memory.
+1. Blendkit tests ran 2026-10-13 in the new default environment (bars-engine draft PR #293): N4 up on all four hosts, N1, N2, A1 to A4, G4, G5, N5, V1 pass. Fixtures are pinned in `fixtures.json` (chair `chair` 5, table `table` 0, Wooden Chair `wooden chair` 0, Painted Wooden Chair 02 `wooden chair` 5, A2's bust `bust` 2, A3's 20-tile UDIM brick building `scan old brick building red small` 0). N5: 42 s, 1.51 GB peak, so the kill lines become 84 s and 3 GB (his to confirm). Still open: the E1 look at A2's preview (the 0.18 m bust is tiny beside the 1.8 m figure; the scale is by eye, `--scale`).
 2. `bpt-licence-stop` and `bpt-no-restricted-flag` stood and are fixed in #290 (G2 and G2b pass). `bpt-root-curl`
-   stood: the cave-studio strand fixes root_curl's loose blob and face budget once #289 lands, then unmarks P3 and P5
-   in `tests/test_bpy.py` (`KNOWN`).
+   stood and is fixed in #289 (cave-studio strand, merged 2026-10-13): root_curl is one piece at 499 faces, `KNOWN` is
+   empty, P3 and P5 pass.
 3. Part 2's first job is done: the recipe and its token cost, bars-engine draft PR #291, ledger
    `2026-10-13-blender-recipe-token-cost.json`, results in `tools/blender-cloud/recipe_trial/RESULTS.md`. T1 passed, T3
    passed (8 of 10 both ways), T2 missed (recipe 0.69 of code, line 0.33). He let `bpt-recipe-result` stand (board read
@@ -26,8 +76,14 @@ against writing `bpy` code. Then five jobs, one thread each, in order: procedura
 model, a character creator themed on the robe set, and clothing as skinned swappable garments (his "biggest test").
 Board positions `bpt-recipe`, `bpt-robe-theme`, `bpt-skinned-garments`, `bpt-order`. Part 1 merged in #287; Part 2 is in bars-engine #288 (draft). Part 2 starts after #285 merges. He let all four stand (2026-10-13 00:24); his steer on `bpt-skinned-garments`: "Use as much as we can from the root game for this as we’ve already done many garment tests there", so J5 begins by listing root-game's garment work and reusing it (spec.md, J5).
 
+**Detail pass on the grown roots and mushrooms (2026-10-13, his "Start 4"), merged in bars-engine #300.**
+`tools/blender-cloud/detail.py` grows the four pieces at their face budgets with no decimation. Cap rims stay sharp, and
+each piece carries a grey shade and baked AO in COLOR_0. `cave.js` multiplies that shade into the colour and the glow, and
+the clump is nine mushrooms spread wider. The kit is 398 KB, the page is 998 KB of 3 MB, and 303 cave tests pass. Phone
+page version 12. Next: his play of the new caps. Previews are in `/mnt/project-files/3d-build/detail-pass-2026-10-13/`.
+
 ## Waiting on
-Nothing from Wendell. #291 merged 2026-10-13 02:10. The Blendkit tests need a cloud environment that allows api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net (Project settings, Cloud environment). #290 (Part 1 tests) is a draft. #288 (Part 2, Markdown only) is a draft; mark it ready once he has seen it.
+Nothing from Wendell; he did step `blender-cloud-test-04` at 02:26. #291 merged 2026-10-13 02:10. The Blendkit tests need a cloud environment that allows api.blenderkit.com, assets.blenderkit.com and cdn.jsdelivr.net. The 12 October session reached Blendkit because it ran in his Default environment; project threads run on a built-in one with no settings. Step `blender-cloud-test-04` asks him to pick Default in Project settings. #290 (Part 1 tests) is a draft. #288 was replaced by bars-engine #295 (2026-10-13 04:00): the Part 2 plan merged with main and updated with the recipe result and J1, marked ready, merges itself once checks pass.
 #285 merged; the picture-path tests run on main. His two tests are steps: N3 is `cave-studio-02`, and E3 goes on
 Your steps when the build thread first republishes a page.
 

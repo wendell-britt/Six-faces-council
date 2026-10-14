@@ -135,3 +135,51 @@ The foundational claim that “you can never go the wrong way” was reconstruct
 The ontology now preserves authored destinations, falsifiable route hypotheses, divergence records, scoped blockers, and recoverability paths. Divergence does not prove hidden desire; learning does not make harm or error necessary; changing Point B does not retroactively reach the original Point B. Some blockers may remain unresolved indefinitely while continuing to constrain a specific route.
 
 The full ruling is recorded in `council-phase-a/yellow-brick-road/reconstruction-and-decision.md`. A separate packaging assessment in `claude-code-ontology-shipping-readiness.md` finds the corpus usable as manual Claude Code context now, approximately halfway to a dependable repo-local alpha, and recommends a three-pass manifest/skill, council-agent, and evaluation release path.
+
+## Roadblock and intention reconstruction and decision — 2026-10-12
+
+The source collision was reconstructed across its three operating layers: observable obstruction, the pre-commit metabolism ritual, and Yellow Brick Road meaning-making. The ontology now separates `RoadblockEvent`, `RoadblockClassification`, `RoadblockCausalAccount`, `IntentionAlignmentHypothesis`, `RoadblockResponse`, and `MetabolizationOutcome`.
+
+The binding rule is: **a roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.** Technical faults cannot be used to psychologize a contributor or player. At the technical layer, metabolization may mean repair, verification, safer routing, reusable learning, or provenance without emotional processing. Unresolved, rested, rerouted, abandoned, and composted blockers remain valid possibilities under the Yellow Brick Road decision.
+
+The full ruling is recorded in `council-phase-a/roadblocks/reconstruction-and-decision.md`. No BARS runtime, workflow, or data migration was authorized.
+
+## Session depth and disclosure reconstruction and decision — 2026-10-12
+
+The future BARS `SessionDepthSignal` was reconstructed into response volume, response specificity, practice performance, player-reported experiential depth, artifact specificity, artifact quality and fit, pacing, and deftness. These may relate but do not establish one another.
+
+The ontology now uses `ResponseMaterial`, `ResponseAffordanceProfile`, `PracticePerformanceRecord`, scoped `DepthClaim`, `InputSufficiencyContract`, `ArtifactTailoringPlan`, `ArtifactFitFinding`, `PacingAdaptationProposal`, and `DeftnessFinding`. Gameplay performance remains valid evidence of performed practice and may produce development and story. Disclosure volume, fear intensity, and verbal vulnerability do not prove genuineness and cannot become progression currency.
+
+Relevant, permitted material may support more specific artifacts, but concise and private players retain the same baseline craft and access to the core game. The full ruling and required implementation tests are recorded in `council-phase-a/session-depth/reconstruction-and-decision.md`. No BARS implementation or data migration was authorized.
+
+## BAR scope reconstruction and decision — 2026-10-12
+
+The broad BAR kernel in `FOUNDATIONS.md` was reconciled with the council brief's narrower charged-possibility wording. BAR is now defined as an intentionally captured, portable kernel of potential with stable identity and provenance. Provenance is necessary but does not turn every record or artifact into a BAR.
+
+`ChargedBAR` is one specialization rather than the parent class. `BARExpression` preserves the distinction between the kernel and the quests, rules, lore, decisions, specifications, plans, norms, branches, and artifacts through which it blooms. `BARPromotion`, `BARRoleRelease`, `BARProvenanceRecord`, and `BARPortabilityPolicy` make identity, release, lineage, and permission explicit.
+
+The full ruling is recorded in `council-phase-a/bar-scope/reconstruction-and-decision.md`. No BARS schema migration or automatic reclassification of existing objects was authorized.
+
+## Composting reconstruction and decision — 2026-10-12
+
+Creative regeneration in BARS canon was reconciled with the constitutional permission to end active implementation obligation. Release now completes a `CompostingDisposition`. A new artifact, lesson, transformation, Vibeulon, later reuse, or recovered value is not required.
+
+The ontology separates `CompostCandidate`, `CompostingDecision`, `CompostingDisposition`, `CompostRecord`, optional `CompostResidue`, later `RegenerationEvent`, `ReactivationDecision`, and explicit `CompostRecoverability`. A valid disposition removes the target from active backlog pressure and completion prompts. Retention and reuse remain permission-bound, and privacy or deletion rights may require only a tombstone or no recoverable source content.
+
+The full ruling is recorded in `council-phase-a/composting/reconstruction-and-decision.md`. It does not authorize general Phase B sorting of ontology concepts.
+
+## Creative reuse and personal meaning reconstruction and decision — 2026-10-12
+
+The BARS claim that AI remixing is “not necromancy” was separated into an attributed `ProjectMeaningFrame`. It can govern project metaphor and design intent without overruling a player's or creator's `PersonalMeaningReport`.
+
+The ontology now separates `SourceCorpusRecord`, `CreativeReuseProposal`, `ReuseAuthorization`, `DerivationRecord`, `ProjectMeaningFrame`, `PersonalMeaningReport`, `AttributionRecord`, `DerivedVoice`, `IdentityContinuityClaim`, `ReuseRejection`, and `ReuseConsequenceRecord`. A DerivedVoice is a character informed by permitted material, not the source person, past self, or a new statement authored by them.
+
+“Not mine” may reject meaning, authorship, attribution, identity or likeness, aesthetics, relationship, or permission. Rejection propagates through lineage and cannot be called resistance. Archive-based adaptation remains optional, with non-AI and non-reuse routes preserving core access and quality. The full ruling is recorded in `council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md`.
+
+## Privacy and consent authority reconstruction and decision — 2026-10-14
+
+The ontology commitments were reconciled with the BARS 3-2-1 doctrine, public privacy copy, `Shadow321Session` schema, `persist321Session()` behavior, witness BAR creation, and NPC 3-2-1 merge propagation. The implementation currently makes materially different claims about ephemeral raw input, serialized phase snapshots, structural extraction, and downstream reuse. Those facts establish provenance and an implementation gap; they do not establish adequate consent.
+
+The binding model now separates `PermissionGrant`, `PermissionRefusal`, `ConsentRecord`, `PermissionEnvelope`, `DataAssetRecord`, `ProcessingEvent`, `DerivationRecord`, `CorrectionRecord`, `RevocationRecord`, `DeletionRequest`, `DeletionDisposition`, `PropagationRecord`, and `ResidualObligationRecord`. Consent is situated authorization; a stored record is historical evidence. Every derivative inherits the intersection of applicable permissions and restrictions. Correction changes claims, revocation stops future authority, and deletion disposes of named content and descendants with verified, honestly limited outcomes.
+
+The full ruling and twelve minimum implementation tests are recorded in `council-phase-a/privacy-consent-authority/reconstruction-and-decision.md`. No BARS runtime, privacy-policy, data migration, deletion job, model-unlearning capability, or general Phase B sorting was authorized.

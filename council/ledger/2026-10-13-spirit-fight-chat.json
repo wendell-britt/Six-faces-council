@@ -1,0 +1,18 @@
+{
+ "date": "2026-10-13",
+ "battle": "wave-battle",
+ "repo": "sprout",
+ "kind": "chat-ruling",
+ "note": "Wendell answered in the spirit fight thread's chat after the first one-spirit build (sprout #50); a chat answer counts as a ruling. It overrules sf-earth-loadout. The reach test found the record already answers how moves are learned (magic-from-teachers) and how they grow (design.md gate levels, wave-integrate-ladder); those become positions sf-moves-from-people and sf-moves-grow. What the record does not settle is whose moves they are in a spirit fight: question sf-who-fights.",
+ "answers": {
+  "sf-earth-loadout": {
+   "kind": "position",
+   "via": "chat",
+   "status": "overrule",
+   "steer": "Yeah the 4 moves aren’t doing it for me they don’t make much sense. How do player get access to the moves? How do they learn new ones? How do the moves get stronger?",
+   "at": "2026-10-13T23:17:22Z"
+  }
+ },
+ "positions": ["sf-moves-from-people", "sf-moves-grow"],
+ "questions": ["sf-who-fights"]
+}

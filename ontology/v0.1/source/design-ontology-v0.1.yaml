@@ -86,11 +86,11 @@ entity_families:
   ExperientialObject:
     types: [Charge, LivedTension, State, Performance, Action, ExperienceEvent, Transformation, Outcome, Consequence, SomaticReport, SatisfactionReport, DesiredStateReport, ActionIntention, TransformationRecord]
   RelationalObject:
-    types: [Relationship, TrustState, ConsentRecord, Boundary, Repair, CoordinationPattern, SharedMeaning, PurposePermission]
+    types: [Relationship, TrustState, ConsentRecord, Boundary, Repair, CoordinationPattern, SharedMeaning, PurposePermission, PermissionGrant, PermissionRefusal, PermissionEnvelope]
   EpistemicObject:
     types: [Claim, Observation, Interpretation, Hypothesis, EvidenceItem, TensionReport, TensionRepresentation, TensionConfiguration, DerivedMovementProposal, MovementFinding, DestinationClaim, RouteHypothesis, Uncertainty, Disagreement, Finding, Test]
   ProvenanceObject:
-    types: [Source, ProvenanceRecord, Artifact, Seed, Revision, LifecycleRecord, CompostRecord, TensionSnapshot, TransformationTrace, MovementSourceReport, MovementRoutingPlan, MovementRoutingAssignment, DivergenceRecord, BlockerRecord, RecoverabilityPath, ArtifactDispatch, ActionRecord, ConsequenceRecord]
+    types: [Source, ProvenanceRecord, Artifact, Seed, Revision, LifecycleRecord, CompostRecord, TensionSnapshot, TransformationTrace, MovementSourceReport, MovementRoutingPlan, MovementRoutingAssignment, DivergenceRecord, BlockerRecord, RecoverabilityPath, ArtifactDispatch, ActionRecord, ConsequenceRecord, DataSubjectClaim, DataAssetRecord, ProcessingEvent, DerivationRecord, CorrectionRecord, RevocationRecord, DeletionRequest, DeletionDisposition, PropagationRecord, ResidualObligationRecord]
   PsychographicObject:
     types: [Psychograph, TypePreference, DesiredState, PleasureSignature, DesignShadow, AccessibilityNeed, AudienceHypothesis]
   FaceNamespaceObject:
@@ -306,6 +306,94 @@ tension_representation:
   required_metadata: [source_encounter, source_reports, report_time, derivation_time, schema_version, derivation_version, included_fields, omitted_fields, purpose, audience, field_authorship, uncertainty, confirmation_status, privacy_class, retention, deletion_behavior, permitted_uses, downstream_lineage]
   distinct_permission_purposes: [collection, local_processing, persistence, derivation, explanation, artifact_generation, personalization, npc_world_adaptation, collective_reuse, sharing_publication, analytics_evaluation, model_improvement, retention, correction, deletion, revocation]
 
+privacy_consent_authority:
+  decision_record: ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
+  governing_rule: >-
+    Consent is situated authorization; a ConsentRecord is historical evidence.
+    A concrete operation is allowed only by its current PermissionEnvelope.
+  permission_objects:
+    - PermissionGrant
+    - PermissionRefusal
+    - ConsentRecord
+    - PermissionEnvelope
+    - Boundary
+    - DataAssetRecord
+    - ProcessingEvent
+    - DerivationRecord
+    - CorrectionRecord
+    - RevocationRecord
+    - DeletionRequest
+    - DeletionDisposition
+    - PropagationRecord
+    - ResidualObligationRecord
+  permission_grant_required_fields:
+    - authority
+    - represented_subject
+    - data_categories
+    - source_records
+    - purpose
+    - operations
+    - processor_or_role
+    - audience
+    - visibility
+    - destination
+    - context_or_world
+    - effective_at
+    - duration_or_review_point
+    - retention_limit
+    - explanation_route
+    - correction_route
+    - descendant_policy
+    - export_policy
+    - revocation_behavior
+    - deletion_behavior
+    - notice_version
+    - evidence
+  distinct_operations:
+    - collection
+    - transient_processing
+    - persistence
+    - derivation
+    - personalization
+    - explanation
+    - visibility
+    - reuse
+    - sharing_publication
+    - export
+    - analytics_evaluation
+    - model_improvement
+    - retention
+    - correction
+    - deletion
+    - revocation
+  authority_map:
+    personal_interior_somatic_psychographic_identity_likeness_and_inference: represented_person
+    relational_or_multiplayer_contribution: affected_participant_for_own_contribution
+    creative_source: source_author_or_rights_holder_within_actual_authority
+    authored_world_material: designer_or_game_master_within_scope
+    official_council_record: ontology_owner_or_council_with_contributor_restrictions_preserved
+    administration: authorized_steward_with_no_new_purpose_authority
+  conflict_rule: intersection_of_applicable_authorities_and_restrictions
+  lifecycle: [proposed, granted, refused, active, renewed, narrowed, expired, revoked]
+  derivative_rule: descendants_inherit_the_effective_permission_envelope
+  data_class_defaults:
+    tension_snapshots: private
+    somatic_reports: private
+    psychographs: private_correctable_hypothesis
+    adaptive_inferences: proposal_only_visible_when_consequential
+    generated_world_material: lineage_bound
+    creative_source_corpora: reuse_authorization_required
+    council_records: minimize_or_separately_permission_personal_material
+    exports: manifest_and_onward_use_constraints_required
+    analytics_evaluation: minimum_fields_for_named_question
+    model_improvement: explicit_opt_in_only
+  correction_effect: contest_or_change_claim_and_propagate_to_active_use_and_descendants
+  revocation_effect: stop_future_authority_for_named_purpose_and_propagate_limits
+  deletion_is_not: [composting, archival, hiding, account_deactivation]
+  deletion_dispositions: [deleted, anonymized_with_stated_test, retained_under_named_obligation, unreachable, contested]
+  residual_rule: retain_minimum_obligation_metadata_without_deleted_content_or_rejected_interpretation
+  non_coercion_rule: optional_sensitive_use_never_buys_baseline_quality_progress_power_credentials_or_belonging
+
 yellow_brick_road:
   decision_record: outputs/council-phase-a/yellow-brick-road/reconstruction-and-decision.md
   classification: mythic_orientation_and_recoverability_covenant
@@ -316,6 +404,427 @@ yellow_brick_road:
   blocker_rule: >-
     A blocker may remain unresolved indefinitely. It may continue to constrain a
     named route without creating an obligation to metabolize it.
+
+roadblocks:
+  decision_record: ontology/v0.1/source/council-phase-a/roadblocks/reconstruction-and-decision.md
+  governing_rule: >-
+    A roadblock may reveal a mismatch among intention, method, conditions, and
+    capacity; it does not prove misaligned intention.
+  sequence:
+    - RoadblockEvent
+    - RoadblockClassification
+    - RoadblockCausalAccount
+    - IntentionAlignmentHypothesis
+    - RoadblockResponse
+    - MetabolizationOutcome
+  classifications:
+    - technical
+    - dependency
+    - resource
+    - coordination
+    - capability
+    - environmental
+    - relational
+    - emotional_interpretive
+    - safety_ethical
+    - unknown
+  causal_claim_statuses:
+    - observed_correlation
+    - contributing_condition
+    - proximate_cause
+    - root_cause_hypothesis
+    - verified_within_declared_test_scope
+  response_options:
+    - repair
+    - retry
+    - test
+    - request_help
+    - accommodate
+    - alter_environment
+    - acquire_capability
+    - renegotiate
+    - reroute
+    - pause
+    - rest
+    - accept_constraint
+    - leave_unresolved
+    - set_down
+    - abandon
+    - compost
+  technical_metabolization_may_produce:
+    - repair
+    - verification
+    - safer_route
+    - reusable_learning
+    - provenance_artifact
+  intention_alignment_hypothesis_requires:
+    - declared_intention
+    - represented_agent
+    - hypothesis_author
+    - relevant_method_conditions_or_capacity
+    - supporting_and_contradicting_evidence
+    - uncertainty
+    - confirmation_correction_or_rejection_status
+  prohibitions:
+    - no_psychological_diagnosis_from_technical_failure
+    - no_hidden_intention_inference
+    - no_refusal_as_confirmation
+    - no_emotional_disclosure_required_for_technical_repair
+    - no_inner_work_reframe_that_erases_external_constraint
+
+session_depth_and_disclosure:
+  decision_record: ontology/v0.1/source/council-phase-a/session-depth/reconstruction-and-decision.md
+  governing_rules:
+    - gameplay_performance_is_valid_evidence_of_named_performance
+    - response_length_and_intimacy_do_not_establish_inner_depth
+    - intimate_disclosure_is_not_progression_currency
+    - relevant_permitted_material_may_support_more_specific_tailoring
+    - all_players_receive_the_same_baseline_craft_and_core_access
+  legacy_session_depth_signal:
+    status: retained_as_unimplemented_legacy_proposal
+    not_a: [inner_depth_measure, genuineness_measure, transformation_measure, deftness_measure]
+    replacement: ResponseAffordanceProfile
+  objects:
+    - ResponseMaterial
+    - ResponseAffordanceProfile
+    - PracticePerformanceRecord
+    - DepthClaim
+    - InputSufficiencyContract
+    - ArtifactTailoringPlan
+    - ArtifactFitFinding
+    - PacingAdaptationProposal
+    - DeftnessFinding
+  response_affordance_fields:
+    - relevant_specificity
+    - concrete_constraints
+    - desired_consequences
+    - relational_links
+    - temporal_links
+    - examples
+    - counterexamples
+    - ambiguity
+    - uncertainty
+    - imagery_tone_and_metaphor
+    - modality_coverage
+    - preserved_omissions
+    - confidence
+    - correction_status
+  distinct_claims:
+    - response_volume
+    - response_specificity
+    - practice_performance
+    - player_reported_experiential_depth
+    - design_resolution_depth
+    - interpretive_complexity
+    - relational_depth
+    - artifact_specificity
+    - artifact_richness_dimension
+    - artifact_quality
+    - artifact_fit
+    - pacing_need
+    - demonstrated_deftness
+  input_sufficiency_contract_requires:
+    - purpose
+    - promised_adaptation
+    - necessary_fields
+    - optional_fields
+    - non_sensitive_alternatives
+    - uncertainty_behavior
+    - processing_location
+    - retention_and_downstream_use
+    - insufficient_material_fallback
+  equivalent_routes:
+    - concise
+    - selection
+    - arrangement
+    - image
+    - gesture
+    - scale
+    - analogy
+    - fictionalization
+    - example_choice
+    - private_local_processing
+    - later_revision
+  prohibited_progression_inputs:
+    - disclosure_volume
+    - disclosure_intimacy
+    - pain_magnitude
+    - fear_intensity
+    - verbal_vulnerability
+  tailoring_fallbacks:
+    - labeled_general_artifact
+    - optional_follow_up
+    - examples_or_presets
+    - player_selection
+    - symbolic_or_nonverbal_input
+    - preserve_uncertainty
+  pacing_rule: >-
+    Pacing adaptations based on behavioral signals are proposals. They remain
+    visible or readily correctable, reversible, and under player control.
+
+bar_scope:
+  decision_record: ontology/v0.1/source/council-phase-a/bar-scope/reconstruction-and-decision.md
+  definition: >-
+    An intentionally captured, portable kernel of potential with stable identity
+    and provenance, stewarded so it can bloom, be revised, fork, combine, rest,
+    ship, or be released across one or more expressions.
+  governing_rules:
+    - every_bar_has_provenance
+    - not_every_provenance_bearing_object_is_a_bar
+    - charge_is_optional
+    - kernel_and_expression_are_distinct
+    - capture_does_not_create_implementation_obligation
+    - portability_is_permission_bound
+  required_properties:
+    - intentional_kernel_capture
+    - stable_identity
+    - compressed_potential
+    - provenance
+    - plausible_expression_development_or_transfer_context
+    - steward_owning_scope_or_explicitly_unowned_state
+    - lifecycle_and_version_history
+    - portability_and_permission_policy
+  objects:
+    - BAR
+    - BARCandidate
+    - ChargedBAR
+    - BARExpression
+    - BARPromotion
+    - BARRoleRelease
+    - BARProvenanceRecord
+    - BARPortabilityPolicy
+  source_modes:
+    - charge
+    - request
+    - observation
+    - inspiration
+    - opportunity
+    - problem
+    - design_idea
+    - decision
+    - rule_or_norm_proposal
+    - lore_or_world_seed
+    - imported_artifact
+    - fork
+  expression_types:
+    - quest
+    - rule
+    - lore
+    - design_decision
+    - feature_specification
+    - implementation_plan
+    - community_norm
+    - branch
+    - encounter_seed
+    - artifact
+  typed_lineage_relations:
+    - derived_from
+    - expresses
+    - forked_from
+    - grafted_from
+    - revises
+    - implements
+    - instantiates
+    - harvested_from
+    - composted_from
+  distinct_axes:
+    - bar_lifecycle
+    - structural_maturity
+    - social_adoption
+    - epistemic_maturity
+    - work_disposition
+    - quest_completion
+    - implementation_status
+  classification_test:
+    - intentionally_captured_as_kernel
+    - compressed_potential_named
+    - plausible_bloom_context_named
+    - stable_identity_and_provenance_present
+    - stewardship_and_permissions_named
+    - current_expression_and_lifecycle_state_named
+  prohibitions:
+    - no_automatic_bar_identity_from_provenance
+    - no_charge_requirement_or_inference
+    - no_automatic_bar_identity_for_outputs
+    - no_capture_as_implementation_debt
+    - no_permissionless_portability
+    - no_lineage_erasure
+
+composting:
+  decision_record: ontology/v0.1/source/council-phase-a/composting/reconstruction-and-decision.md
+  definition: >-
+    A governed lifecycle disposition that ends a named active obligation while
+    preserving only the lineage, learning, or reusable residue that is
+    appropriate and permitted.
+  governing_rules:
+    - release_completes_composting
+    - residue_is_optional_and_permission_bound
+    - regeneration_is_a_new_event
+    - reactivation_creates_a_new_obligation
+    - recoverability_does_not_preserve_active_obligation
+  sequence:
+    - CompostCandidate
+    - CompostingDecision
+    - CompostingDisposition
+    - CompostRecord
+    - CompostResidue
+    - RegenerationEvent
+  objects:
+    - CompostCandidate
+    - CompostingDecision
+    - CompostingDisposition
+    - CompostRecord
+    - CompostResidue
+    - RegenerationEvent
+    - ReactivationDecision
+    - CompostRecoverability
+  not_required_for_completion:
+    - new_artifact
+    - lesson
+    - emotional_transformation
+    - vibeulon_generation
+    - later_reuse
+    - recovered_value
+    - proof_of_strategic_optimality
+  distinct_from:
+    - deletion
+    - archival_or_reference
+    - abandonment
+    - supersession
+    - original_contract_completion
+  active_behaviors_that_stop:
+    - backlog_pressure
+    - overdue_status
+    - guilt_shame_or_failure_messaging
+    - progress_penalties
+    - required_review
+    - automatic_resurfacing
+    - completion_or_metabolization_prompts
+    - counting_as_unfinished_active_work
+  residue_types:
+    - lesson
+    - reusable_pattern
+    - excerpt_or_source_artifact
+    - unresolved_question
+    - warning_or_failed_test
+    - relationship_or_dependency_map
+    - aesthetic_fragment
+    - provenance_only_tombstone
+  recoverability_levels:
+    - none
+    - decision_only
+    - lineage_only
+    - residue_available
+    - source_restorable
+    - implementation_restorable
+  authority_rules:
+    - own_obligation_may_be_released_absent_shared_contract
+    - shared_obligation_uses_contract_authority
+    - personal_material_retention_and_reuse_follow_data_subject_authority
+    - another_agents_rights_commitments_and_meaning_cannot_be_composted_unilaterally
+    - silence_or_inactivity_is_not_automatic_composting
+  prohibitions:
+    - no_delayed_production_debt
+    - no_hidden_active_backlog
+    - no_automatic_reuse_permission
+    - no_silent_reactivation
+    - no_avoidance_diagnosis_without_evidence
+    - no_bulk_governance_authorization
+
+creative_reuse_and_personal_meaning:
+  decision_record: ontology/v0.1/source/council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md
+  governing_rule: >-
+    The project may name its ritual; it may not name the player's experience for them.
+  project_frame:
+    statement: ai_remix_is_not_necromancy_within_bars_ontology
+    type: ProjectMeaningFrame
+    authority: project_design_and_narrative_only
+    not_authority_for:
+      - personal_meaning
+      - authorship
+      - identity_or_likeness
+      - reuse_permission
+      - shared_world_consequence
+  objects:
+    - SourceCorpusRecord
+    - CreativeReuseProposal
+    - ReuseAuthorization
+    - DerivationRecord
+    - ProjectMeaningFrame
+    - PersonalMeaningReport
+    - AttributionRecord
+    - DerivedVoice
+    - IdentityContinuityClaim
+    - ReuseRejection
+    - ReuseConsequenceRecord
+  distinct_authorities:
+    project_meaning: designer_or_project_owner
+    personal_meaning: represented_person
+    source_authorship: source_provenance
+    generated_authorship: attributed_generation_and_curation_record
+    reuse_permission: authorized_rights_holder_and_affected_data_subject
+    identity_and_likeness: represented_person_and_applicable_rights
+    shared_world_consequence: scoped_observation_and_affected_agent_attestation
+  reuse_authorization_purposes:
+    - collection_or_import
+    - local_analysis
+    - external_model_processing
+    - feature_or_style_extraction
+    - generation
+    - persistent_storage
+    - personalization
+    - publication_or_performance
+    - collaborator_or_player_sharing
+    - commercial_use
+    - model_improvement_or_training
+    - derivative_voice_creation
+    - future_reuse
+    - correction
+    - revocation
+    - deletion
+  reuse_rejection_scopes:
+    - semantic_fit
+    - experiential_fit
+    - authorship
+    - attribution
+    - identity_or_likeness
+    - aesthetic_fit
+    - permission
+    - relationship
+  derived_voice_requirements:
+    - source_corpus_and_permissions
+    - selected_features
+    - character_identity_and_fictional_role
+    - prohibited_identity_or_impersonation_claims
+    - allowed_audiences_and_uses
+    - disclosure_and_explanation_policy
+    - correction_retirement_and_deletion_behavior
+  correction_actions:
+    - stop_relevant_future_use
+    - correct_attribution_and_identity_claims
+    - quarantine_regenerate_or_retire_unpublished_descendants
+    - version_or_relabel_published_descendants
+    - propagate_purpose_audience_retention_deletion_and_revocation_limits
+    - preserve_minimum_lawful_audit_history
+    - disclose_irreversible_consequences
+  equivalent_routes:
+    - non_ai
+    - non_reuse
+    - entirely_fictional
+    - newly_authored
+    - public_domain
+    - licensed
+    - abstracted
+    - manually_curated
+  prohibitions:
+    - no_compulsory_project_meaning
+    - no_derived_voice_as_source_person
+    - no_generated_statement_attributed_to_source_author
+    - no_source_authorship_as_blanket_permission
+    - no_inferred_third_party_or_deceased_person_permission
+    - no_rejection_as_resistance
+    - no_hidden_collection_or_unauthorized_reuse
+    - no_ai_reuse_gate_for_core_access_or_quality
 
 integral_attention_declaration:
   required_fields:
@@ -386,6 +895,34 @@ hard_invariants:
   - revised_destination_does_not_retroactively_fulfill_prior_destination
   - unresolved_blocker_does_not_create_perpetual_processing_obligation
   - refusal_to_metabolize_is_not_itself_a_blocker_diagnosis
+  - roadblock_observation_is_not_causal_or_intentional_diagnosis
+  - roadblock_classification_is_not_causal_proof
+  - technical_failure_does_not_prove_misaligned_intention
+  - external_constraint_cannot_be_erased_by_inner_work_reframing
+  - technical_repair_cannot_require_emotional_disclosure
+  - response_length_does_not_establish_session_depth
+  - intimate_specificity_does_not_establish_genuineness
+  - practice_performance_does_not_establish_inner_transformation
+  - disclosure_is_not_progression_currency
+  - artifact_specificity_richness_quality_and_fit_are_distinct
+  - baseline_artifact_craft_cannot_be_withheld_to_pressure_disclosure
+  - behavioral_pacing_proposals_are_reversible_and_correctable
+  - every_bar_has_provenance_but_not_every_provenance_bearing_object_is_a_bar
+  - charge_is_not_constitutive_of_bar_identity
+  - bar_kernel_is_not_identical_to_bar_expression
+  - bar_capture_is_not_implementation_obligation
+  - bar_portability_is_not_blanket_reuse_permission
+  - release_completes_composting_without_required_regeneration
+  - compost_residue_and_regeneration_require_separate_permission
+  - composting_does_not_complete_an_unmet_original_contract
+  - composted_work_cannot_remain_hidden_active_debt
+  - reactivation_requires_a_new_explicit_decision
+  - project_meaning_frame_does_not_bind_personal_meaning
+  - derived_voice_is_not_the_source_person_or_past_self
+  - source_authorship_is_not_blanket_reuse_permission
+  - not_mine_is_a_valid_scoped_correction
+  - stylistic_influence_contribution_generation_curation_acceptance_and_authorship_are_distinct
+  - archive_based_adaptation_is_not_required_for_core_access_or_quality
 
 minimum_record:
   required:
