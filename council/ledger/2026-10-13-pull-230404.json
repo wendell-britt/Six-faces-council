@@ -1,0 +1,69 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T23:04:04.489Z",
+ "answers": {
+  "bi-what-for": {
+   "kind": "question",
+   "choice": "",
+   "savedAt": "2026-10-13T23:02:07.049Z",
+   "steer": "The monsters of this game are established as the spiritual embodiment of people using their emotional energy wrong. They are Monster fights akin to pokemon and classic RPGs. I think we should start there and see if there’s a way to layer the emotional alchemy on top of it. Right now using turn based and wuxing weaknesses is the best bet for now. "
+  },
+  "bi-chart": {
+   "kind": "question",
+   "choice": "type-chart",
+   "savedAt": "2026-10-13T23:02:18.374Z",
+   "steer": ""
+  },
+  "bi-three-layers": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:02:51.939Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bi-line-comes-back": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:03:02.445Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bi-one-tap": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:03:10.962Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bi-49-interim": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:03:23.182Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bi-one-spirit-first": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:03:34.351Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-room-walk": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:03:49.252Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-bm-door-cave": {
+   "kind": "position",
+   "savedAt": "2026-10-13T23:04:04.489Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/bi-what-for: Steer only (steer: \"The monsters of this game are established as the spiritual embodiment of people using their emotional energy wrong. They are Monster fights akin to pokemon and classic RPGs. I think we should start there and see if there’s a way to layer the emotional alchemy on top of it. Right now using turn based and wuxing weaknesses is the best bet for now.\")",
+  "questions/bi-chart: Type chart"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

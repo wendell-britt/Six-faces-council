@@ -1,0 +1,20 @@
+{
+ "positions": [
+  {
+   "id": "fold-not-now",
+   "faces": ["architect", "challenger"],
+   "pass": "One cave: daemons met the Big Mind way",
+   "auto": true,
+   "pos": "Every daemon stop in the Cave of Lessons now opens with the guide asking to speak with the daemon. If you answer Not now, the daemon still holds the way and is asked to step aside, as before: Yes, or Not yet and the 3-2-1, Work what it holds or Take it home. In the Big Mind cave a decline let the voice step to the wall and opened the way. Here it does not. This stands unless you flip it.",
+   "why": "Your rule for this cave, cave-daemon-wall (10 October): \"We shouldn't have a skip. If a daemon pops up then it needs to be worked with.\" If declining opened the way, the daemon stop would have a skip again. Claude built it in bars-engine #301. Phone page version 9: https://claude.ai/artifact/23neJJJgywAygUqiJffGvc"
+  },
+  {
+   "id": "fold-daemon-cards",
+   "faces": ["shaman", "diplomat"],
+   "pass": "One cave: daemons met the Big Mind way",
+   "auto": true,
+   "pos": "Standing in a daemon's place, you answer three questions as it: its job, what it protects you from, and how it is thanked. The Protector's answer cards are the workshop group's answers from the Big Mind cave. The other six daemons' cards are written from each daemon's job in the game (the Controller sets the standard, the Skeptic doubts, and so on). Each daemon also has one or two cards that another part would say, which bring the speaker out to wait by the wall. This stands unless you flip it.",
+   "why": "The workshop transcript only covers the Protector, and merge-layout asks for all seven to be met the Big Mind way. The jobs come from game.jsx DAEMONS. Flip it to have different cards written for a daemon. The cards are in bars-engine content/ontology-game/cave/cave.js (MEET_CARDS), built in #301."
+  }
+ ]
+}

@@ -1,4 +1,4 @@
-2026-10-13 (updated 04:30)
+2026-10-13 (updated 05:40)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -9,10 +9,43 @@ optional words and Not now, and three first-person turns speaking as the voice. 
 `bmw-appreciate-words`, `bm-be-turns`. Phone link: https://claude.ai/artifact/7rP4a2BXGxY7BRh2GbNXGU (version 7). Next: his play,
 then fixes in a fresh thread.
 
-**Next thread, 2026-10-13:** Wendell in the cave-textures thread: "Also we need to import the WAVE process into this map. I
-think we're almost to the point where we can merge the bigmind cave and this cave". One fresh thread: bring #278 and #282's
-W.A.V.E. and sit-down onto the Cave of Lessons map (bars-engine #294: stone, per-charge shapes, carried light with
-`carryLight` for spirits), then fold the Big Mind cave into it. #278 and #282 are not on main; rebase them onto #294 first.
+**2026-10-13, WAVE into the cave map:** bars-engine #296 (merged to main 04:15 on Wendell's "merge both") merges
+the whole Big Mind stack (#272, #276, #277, #278, #282) onto the Cave of Lessons stone. The Cave of Lessons has Sit down
+anywhere, running the WAVE room's steps in place; every spirit in both caves carries its own light; the Big Mind cave wears
+the J1 stone. cave-test 297 pass, bigmind-test 178 pass. Phone page: https://claude.ai/artifact/23neJJJgywAygUqiJffGvc
+(version 8). Board positions `merge-layout` (Big Mind chambers become the Cave of Lessons' daemon stops) and
+`cave-sit-down` stand unless he flips them. Next: his play of version 8, then the fold itself in a fresh thread (daemon
+stops met the Big Mind way, the Big Mind page opening the Cave of Lessons). #272, #277 and #278 are closed as carried by #296.
+
+**2026-10-13, the fold (one cave):** Wendell answered "Both" at 04:26. bars-engine #301 (draft) meets every daemon
+stop in the Cave of Lessons the Big Mind way: ask to speak with it, step into its place (Be it staging), answer its job,
+what it protects you from and how it is thanked as it, and a voice that speaks out of turn is named, thanked and waits by
+the wall. Not now keeps the daemon in the way (`fold-not-now`); the six other daemons' cards are written from their jobs
+(`fold-daemon-cards`). Both positions are on the board. cave-test 313 pass (320 merged with the roots work, #298),
+bigmind-test 178 pass; the Big Mind test's gate check now waits on the gate. Phone page version 9 (artifact version 11,
+built on top of the roots work already on that page): https://claude.ai/artifact/23neJJJgywAygUqiJffGvc. Next: his play
+of a daemon stop, then carry the Protector's refusal path, its W.A.V.E., the speaking turns and saving into the stop, and
+then point the Big Mind page at the Cave of Lessons. DESIGN.md will conflict with #298 at its end (both append a section):
+keep both.
+
+**2026-10-13, the daemon path (pass `daemon-path1`):** Wendell, 22:22: a door in the WAVE room into the Big Mind
+experience, W.A.V.E. on whatever blocks the way past each figure, all seven daemons in turn to the centre (the player and
+the vulnerable child). Pass `council/passes/6FACE_PASS_daemon-path1_2026-10-13.md`; six positions `dp-*`, no questions.
+Next: build it in a fresh thread, stacked on bars-engine #309 (the `LEVEL` table and `goTo`): a third opening in the room,
+seven chambers in `ds-daemon-order`, #301's meeting at each with the Big Mind refusal path, charge meter (steps aside at 3
+or below), speaking turns and saving carried over from `bigmind.js`, progress kept per daemon, the centre with the child.
+
+
+**2026-10-13, the Big Mind door (dp-big-mind-page overruled):** Wendell, 22:34: the Big Mind cave is entered from the WAVE
+room, which players can walk around; another door leads to the six game masters; all caves share assets and spawn spirits
+on a full sit-down W.A.V.E. bars-engine #313 (draft, branch `claude/project-thread-o1ntdv`, stacked on #309 with main
+merged): tap the floor to walk; two doors behind the seat, Big Mind (left) and the six game masters (right, the hall of the
+six); the Big Mind door opens the Big Mind cave on the Cave of Lessons page, at its mouth, with Back to the WAVE room; the
+room wears the J1 stone. Only charges worked through the whole W.A.V.E. go through a door as spirits. Board positions
+`dp-room-walk` and `dp-bm-door-cave`. cave-test: 355 checks pass before the new section, which passes 25 of 25 on its own;
+bigmind-test 178 pass. Phone page version 23 (carries #310 too). Next: his walk round the room and through the Big Mind
+door, then the next six chambers and the centre built inside the Big Mind cave (`dp-seven`, `dp-centre`, `dp-progress`),
+in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth

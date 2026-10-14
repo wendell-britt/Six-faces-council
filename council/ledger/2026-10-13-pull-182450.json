@@ -1,0 +1,100 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T18:24:50.411Z",
+ "answers": {
+  "cp-unit": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:33:19.178Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cp-home": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:34:21.443Z",
+   "status": "overrule",
+   "steer": "Let's also explore what it would take to get this into Obsidian"
+  },
+  "cp-capture": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:35:05.159Z",
+   "status": "stands",
+   "steer": "I mean this really is what BARs is for. We want to be able to go from Podcast to Bars and Bars to Game assets and books and then books back to podcasts"
+  },
+  "cp-ingest": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:35:09.994Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cp-slots": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:35:18.962Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cp-backfill": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:35:27.077Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lv-home-portal": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:35:33.927Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lv-issue-at-home": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:35:43.327Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lv-branches-skills": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:36:08.461Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lv-old-walk": {
+   "kind": "position",
+   "savedAt": "2026-10-13T16:36:15.410Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lv-first-slice": {
+   "kind": "position",
+   "savedAt": "2026-10-13T18:11:10.374Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lv-centre-altitude": {
+   "kind": "position",
+   "savedAt": "2026-10-13T18:11:26.604Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j3-look-01",
+   "at": "2026-10-13T18:24:34.057Z",
+   "what": "ticked",
+   "do": "Look at two sheets. j3-sheet.png: each row is your concept picture, then the piece built from it, from the front and from three-quarters (mushrooms 0.894, amber crystals 0.855, root knot 0.819). greenery-sheet.png: your four Blendkit picks as placed (moss rock, fern, grass clump, fly trap) and the whole chamber under them. Note under this step either 'yes' or what is wrong with each piece. Already known: the crystals have five shards where your picture has about ten, the mushroom stems fuse into one pale mass, and the root's trunk is crumpled rather than twisted and has no green glow. On a yes, bars-engine #303 is marked ready and merges itself."
+  },
+  {
+   "id": "coaching-pipeline-03",
+   "at": "2026-10-13T18:24:50.411Z",
+   "what": "ticked",
+   "do": "Claude checks this one each morning. At 13:50 UTC on 13 October Vercel's analytics API still answered 'not found' for bars-engine (team wendells-projects-9c1b16dc), after your note that you added analytics. That means Web Analytics is not yet enabled on that project, or no visit has been counted. All it needs from you is to confirm Web Analytics is on, then one visit: open masteringallyship.com/coaching on your phone. The daily pass ticks this step once a visit shows. If it still says not found on 14 October, the pass turns this into a find-it step that says what to look for on the Analytics tab."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "positions/cp-home: Overruled (steer: \"Let's also explore what it would take to get this into Obsidian\")",
+  "positions/cp-capture: Stands (steer: \"I mean this really is what BARs is for. We want to be able to go from Podcast to Bars and Bars to Game assets and books and then books back to podcasts\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

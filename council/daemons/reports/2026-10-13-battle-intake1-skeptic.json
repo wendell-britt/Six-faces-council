@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-13",
+  "pass": "battle-intake1",
+  "daemon": "skeptic",
+  "face": "challenger",
+  "cast": "45 -> 60",
+  "model": null,
+  "tokens": "60117",
+  "report": "2026-10-13-battle-intake1-skeptic.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "Pay to the Player: the charge leaves them, or a Witness Book page fills [1].",
+        "On screen: a strength word, a name, two HP bars, Mana, two stances, a weather line, seven buttons, a Magic panel with four moves and a stance menu, and a log [1].",
+        "Off screen: a five-way element cycle, five feeling names, eight trigram names, a satisfy meter with need 8, a hold cap of two, level weights, speed and guard [1].",
+        "Mana also buys hints at the hearth, so one pool serves both talk and fight [1].",
+        "A charge keeps kind, element, person and beat, not the words [1].",
+        "An Earth foe's plan reads \"It means to bury you,\" but its gates are unanswerable, so the code strikes other weathers [1].",
+        "A stance change gives the foe no turn [1].",
+        "Each action has three names across the two files: Welcome, Validate, Exhale in wave.js; Listen, Hold, Let go in the template [2][1].",
+        "The cost sentence, \"Taking it costs HP and mana,\" appears on the talk screen, not in the fight [1].",
+        "The code gives none [1].",
+        "[1] [prototype.template.html](https://github.com/wendell-britt/sprout/pull/49/files), lines 109-110, 160, 231, 281, 294, 317, 358, 384."
+      ],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Each action has three names across the two files: Welcome, Validate, Exhale in wave.js; Listen, Hold, Let go in the template [2][1].",
+        "[2] [wave.js](https://github.com/wendell-britt/sprout/blob/main/slice/wave.js), lines 10-13."
+      ],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}

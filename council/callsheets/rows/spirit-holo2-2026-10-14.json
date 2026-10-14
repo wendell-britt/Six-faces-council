@@ -1,0 +1,15 @@
+{
+ "positions": [
+  {
+   "id": "sg-five-stages",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "spirit look research",
+   "auto": true,
+   "pos": "Your steer on sg-holo-stages, built (this extends it): a spirit has five stages. Level 1, gas: a drifting cloud of motes in its element's colours, thickest at the heart, with no shape; the way it drifts hints at the urge. Level 3, core: the gas solidifies into a faceted core, a gem cut for its family (the Shellback's is a six-sided double pyramid, a shell scute made solid), with a few motes still circling it. Level 5, hologram: the core projects a body of light into the world from a projector ring, the way the gems in Steven Universe project their forms; it is faceted, see-through and scanlined, with the core showing at its chest. Then the living creature: the hologram becomes flesh, an animal in the world in its family's shape and the animal base you picked, its core set into its body. Last, the highest ally form: the creature stands up as a humanoid of its kind (the Shellback becomes an upright guardian, shell on its back, core at its heart). The nation's style and the pieces you choose carry through every stage from the hologram on. An ally beaten in a fight falls back into its core and forms again after rest, so a spirit is never lost. Levels for the last two stages are not set; until a build needs them, the living creature comes at level 7 and the highest form at level 10 (placeholders). Proof: the Shellback in all five stages and five elements, as models and sprites (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85). This stands unless you flip it.",
+   "why": "Your steer on sg-grows-into-shape, board read 2026-10-14 01:43: \"I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe\". sg-body-from A (the urge picks the family). spirit-growth-by-training (no death). Your steer on sg-holo-stages, board read 2026-10-14 02:13: \"Perfect I do think there should be one more stage where it looks like a living creature in the world and the final stage is where it becomes a humanoid exponential of the creature in its highest ally form.\""
+  }
+ ]
+}
