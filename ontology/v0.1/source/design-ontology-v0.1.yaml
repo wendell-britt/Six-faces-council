@@ -86,11 +86,11 @@ entity_families:
   ExperientialObject:
     types: [Charge, LivedTension, State, Performance, Action, ExperienceEvent, Transformation, Outcome, Consequence, SomaticReport, SatisfactionReport, DesiredStateReport, ActionIntention, TransformationRecord]
   RelationalObject:
-    types: [Relationship, TrustState, ConsentRecord, Boundary, Repair, CoordinationPattern, SharedMeaning, PurposePermission]
+    types: [Relationship, TrustState, ConsentRecord, Boundary, Repair, CoordinationPattern, SharedMeaning, PurposePermission, PermissionGrant, PermissionRefusal, PermissionEnvelope]
   EpistemicObject:
     types: [Claim, Observation, Interpretation, Hypothesis, EvidenceItem, TensionReport, TensionRepresentation, TensionConfiguration, DerivedMovementProposal, MovementFinding, DestinationClaim, RouteHypothesis, Uncertainty, Disagreement, Finding, Test]
   ProvenanceObject:
-    types: [Source, ProvenanceRecord, Artifact, Seed, Revision, LifecycleRecord, CompostRecord, TensionSnapshot, TransformationTrace, MovementSourceReport, MovementRoutingPlan, MovementRoutingAssignment, DivergenceRecord, BlockerRecord, RecoverabilityPath, ArtifactDispatch, ActionRecord, ConsequenceRecord]
+    types: [Source, ProvenanceRecord, Artifact, Seed, Revision, LifecycleRecord, CompostRecord, TensionSnapshot, TransformationTrace, MovementSourceReport, MovementRoutingPlan, MovementRoutingAssignment, DivergenceRecord, BlockerRecord, RecoverabilityPath, ArtifactDispatch, ActionRecord, ConsequenceRecord, DataSubjectClaim, DataAssetRecord, ProcessingEvent, DerivationRecord, CorrectionRecord, RevocationRecord, DeletionRequest, DeletionDisposition, PropagationRecord, ResidualObligationRecord]
   PsychographicObject:
     types: [Psychograph, TypePreference, DesiredState, PleasureSignature, DesignShadow, AccessibilityNeed, AudienceHypothesis]
   FaceNamespaceObject:
@@ -305,6 +305,94 @@ tension_representation:
     artifact: ArtifactDispatch
   required_metadata: [source_encounter, source_reports, report_time, derivation_time, schema_version, derivation_version, included_fields, omitted_fields, purpose, audience, field_authorship, uncertainty, confirmation_status, privacy_class, retention, deletion_behavior, permitted_uses, downstream_lineage]
   distinct_permission_purposes: [collection, local_processing, persistence, derivation, explanation, artifact_generation, personalization, npc_world_adaptation, collective_reuse, sharing_publication, analytics_evaluation, model_improvement, retention, correction, deletion, revocation]
+
+privacy_consent_authority:
+  decision_record: ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
+  governing_rule: >-
+    Consent is situated authorization; a ConsentRecord is historical evidence.
+    A concrete operation is allowed only by its current PermissionEnvelope.
+  permission_objects:
+    - PermissionGrant
+    - PermissionRefusal
+    - ConsentRecord
+    - PermissionEnvelope
+    - Boundary
+    - DataAssetRecord
+    - ProcessingEvent
+    - DerivationRecord
+    - CorrectionRecord
+    - RevocationRecord
+    - DeletionRequest
+    - DeletionDisposition
+    - PropagationRecord
+    - ResidualObligationRecord
+  permission_grant_required_fields:
+    - authority
+    - represented_subject
+    - data_categories
+    - source_records
+    - purpose
+    - operations
+    - processor_or_role
+    - audience
+    - visibility
+    - destination
+    - context_or_world
+    - effective_at
+    - duration_or_review_point
+    - retention_limit
+    - explanation_route
+    - correction_route
+    - descendant_policy
+    - export_policy
+    - revocation_behavior
+    - deletion_behavior
+    - notice_version
+    - evidence
+  distinct_operations:
+    - collection
+    - transient_processing
+    - persistence
+    - derivation
+    - personalization
+    - explanation
+    - visibility
+    - reuse
+    - sharing_publication
+    - export
+    - analytics_evaluation
+    - model_improvement
+    - retention
+    - correction
+    - deletion
+    - revocation
+  authority_map:
+    personal_interior_somatic_psychographic_identity_likeness_and_inference: represented_person
+    relational_or_multiplayer_contribution: affected_participant_for_own_contribution
+    creative_source: source_author_or_rights_holder_within_actual_authority
+    authored_world_material: designer_or_game_master_within_scope
+    official_council_record: ontology_owner_or_council_with_contributor_restrictions_preserved
+    administration: authorized_steward_with_no_new_purpose_authority
+  conflict_rule: intersection_of_applicable_authorities_and_restrictions
+  lifecycle: [proposed, granted, refused, active, renewed, narrowed, expired, revoked]
+  derivative_rule: descendants_inherit_the_effective_permission_envelope
+  data_class_defaults:
+    tension_snapshots: private
+    somatic_reports: private
+    psychographs: private_correctable_hypothesis
+    adaptive_inferences: proposal_only_visible_when_consequential
+    generated_world_material: lineage_bound
+    creative_source_corpora: reuse_authorization_required
+    council_records: minimize_or_separately_permission_personal_material
+    exports: manifest_and_onward_use_constraints_required
+    analytics_evaluation: minimum_fields_for_named_question
+    model_improvement: explicit_opt_in_only
+  correction_effect: contest_or_change_claim_and_propagate_to_active_use_and_descendants
+  revocation_effect: stop_future_authority_for_named_purpose_and_propagate_limits
+  deletion_is_not: [composting, archival, hiding, account_deactivation]
+  deletion_dispositions: [deleted, anonymized_with_stated_test, retained_under_named_obligation, unreachable, contested]
+  residual_rule: retain_minimum_obligation_metadata_without_deleted_content_or_rejected_interpretation
+  non_coercion_rule: optional_sensitive_use_never_buys_baseline_quality_progress_power_credentials_or_belonging
 
 yellow_brick_road:
   decision_record: outputs/council-phase-a/yellow-brick-road/reconstruction-and-decision.md
