@@ -60,14 +60,17 @@ def pitch_rows(doc, pitches):
 
 
 def kept(data):
-    """{domain, title, source} for each pitched goal he kept."""
+    """{domain, title, source[, parentId]} for each pitched goal he kept, from the free write (this script) or the
+    intake (council/intake_align.py; a parentId makes it one cadence smaller under that goal)."""
     res = data.get("resolved", {}).get("questions", {})
     out = []
     for q in data.get("questions", []):
         r = res.get(q["id"])
         if q.get("lens_goal") and r and r.get("decision") == "keep":
+            where = "intake" if q.get("pass", "").startswith("lenses: aligning") else "free write"
             out.append({"domain": q["lens_domain"], "title": q["lens_goal"],
-                        "source": f"Council Board, {q['id']}, from his {q['said']} free write: “{q['lens_line']}”"})
+                        "source": f"Council Board, {q['id']}, from his {q['said']} {where}: “{q['lens_line']}”",
+                        **({"parentId": q["lens_parent"]} if q.get("lens_parent") else {})})
     return out
 
 
@@ -110,7 +113,7 @@ def main():
             print(f"would send {g['domain']}: {g['title']}")
         return
     for g in send(goals):
-        print(f"{g['status']} {g['domain']}: {g['title']}")
+        print(f"{g['status']} {g['domain']} {g.get('cadence', 'year')}: {g['title']}")
 
 
 if __name__ == "__main__":
