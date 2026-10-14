@@ -21406,6 +21406,31 @@
      "sage"
     ],
     "pass": "spirit look research"
+   },
+   "sg-holo-stages": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T02:12:42.230Z",
+    "record": "council/ledger/2026-10-14-pull-021252.json (six-faces-council)",
+    "steer": "Perfect I do think there should be one more stage where it looks like a living creature in the world and the final stage is where it becomes a humanoid exponential of the creature in its highest ally form",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit look research"
+   },
+   "sg-loot-offering": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T02:12:52.289Z",
+    "record": "council/ledger/2026-10-14-pull-021252.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "spirit look research"
    }
   },
   "questions": {

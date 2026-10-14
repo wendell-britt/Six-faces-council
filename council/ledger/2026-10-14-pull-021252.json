@@ -1,0 +1,26 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T02:12:52.289Z",
+ "answers": {
+  "sg-holo-stages": {
+   "kind": "position",
+   "savedAt": "2026-10-14T02:12:42.230Z",
+   "status": "stands",
+   "steer": "Perfect I do think there should be one more stage where it looks like a living creature in the world and the final stage is where it becomes a humanoid exponential of the creature in its highest ally form "
+  },
+  "sg-loot-offering": {
+   "kind": "position",
+   "savedAt": "2026-10-14T02:12:52.289Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/sg-holo-stages: Stands (steer: \"Perfect I do think there should be one more stage where it looks like a living creature in the world and the final stage is where it becomes a humanoid exponential of the creature in its highest ally form\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
