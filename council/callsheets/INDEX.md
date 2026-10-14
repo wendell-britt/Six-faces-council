@@ -4,7 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
-- [shame-coaching](shame-coaching.md), 2026-10-13: field research and pass shame1; six `sh-*` positions, questions `sh-lead` and `sh-ek-cert` on the board; shame-led pitch test T1 due 11-07.
+- [shame-coaching](shame-coaching.md), 2026-10-13: Wendell ruled: two doors (general first), no EK cert now, verb stands with channel definition, EK fence rebuilt as responsibility without blame; next is the general-door pitch (T1 due 11-07).
 - [cave-levels](cave-levels.md), 2026-10-13: level plan in bars-engine #307 (draft, LEVELS.md): WAVE room as home, portal to the hall of the six, one tunnel per face as its minigame, skill branches, the centre of the self; six `lv-*` positions on the board; next the walkable skeleton in a fresh thread.
 - Daily compost pass (docs/compost-pass.md), 2026-10-12: routine each morning at 6:47 Pacific starts a thread that keeps, drops or takes over Wendell's open steps. First pass dropped four, took over one check, rewrote two.
 - [virtual-launch](virtual-launch.md), 2026-10-12: step blocked; split into name-the-block, `vl-date` and six one-question steps; answers go onto the pipeline row.
