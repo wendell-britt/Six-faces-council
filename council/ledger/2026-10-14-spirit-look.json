@@ -1,0 +1,20 @@
+{
+ "date": "2026-10-14",
+ "battle": "spirit-generator",
+ "repo": "sprout",
+ "kind": "research",
+ "note": "Wendell asked (thread \"Spirit look and feel\", 2026-10-14 00:35 UTC) for research on AI-generated and procedural monster capture games to settle what a spirit looks and feels like before building a sprite and a 3D model per spirit. Findings: https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j. His chat correction on nations is recorded as a ruling (nation-elements). Five positions came from his own words and the record; one question survived the reach test (sg-body-from). No daemons sent.",
+ "steer": "Ok the spirit generator slice is working if not a bit abstracted. I think work on creating spirit assets will make that work feel more aligned. Actually seeing them. We’ll need 2 types of assets for each spirit a sprite and a 3d model. This will allow us to test our pipeline. Before we do that we need to figure out what a spirit looks and feels like. They are rather abstract in my own imaginations\n\nThe idea is the would start with a colored charge and the more you connect with them the more they take a recognizable shape. How that process shakes out is anyone’s guess right now. I want it to be something that allows player a bit of creativity in how the spirit forms not unlike spore, but not as funky as the spore creations can ultimately make. I don’t want them named fully like pokemon which is why I think monster rancher is a good fit. The idea of regional styles is pretty good too. \n\n(Also meridia is earth and Virelune is wood)\n\nI think exploring the combinatorial between nation element daemon and some cross section of animal monster morphology is what’s wanting to emerge but it remains to be clear. \n\nLet’s do some research on ai generated monster capture games and see what’s already in the landscape and hone in from there",
+ "answers": {
+  "nation-elements": {
+   "kind": "position",
+   "via": "chat",
+   "status": "ruling",
+   "steer": "(Also meridia is earth and Virelune is wood)",
+   "at": "2026-10-14T00:35:53Z"
+  }
+ },
+ "positions": ["nation-elements", "sg-look-layers", "sg-grows-into-shape", "sg-shape-choice", "sg-breed-names", "sg-assets-modular"],
+ "questions": ["sg-body-from"],
+ "page": "https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j"
+}

@@ -1,4 +1,4 @@
-2026-10-13
+2026-10-14
 # Spirit generator (sprout, after Monster Rancher)
 
 ## Next
@@ -8,7 +8,11 @@
 - Owned here now (the Fixer thread handed it over 2026-10-14): his steer on `sf-ally-moves` from the 23:58 board read, "I do think that move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move". The steer also says move elements and ally elements combine without being tied together. On #51 today each spirit has three moves of its own element (levels 1, 3 once a fight, 5). Next build, in a fresh thread on Opus: give each generated spirit one signature move from its charge, which it always keeps, plus moves of any element learned in the ring and from villages. The chart then reads the move's element, and the stats stay the spirit's. Rerun `tools/check-spirit-gen.mjs` after the change.
 - Next, after his play: if T2 holds (he can say why the spirit got stronger), merge #50 then #51 and build the forest as the second training place (level from wild fights). If he cannot tell, make the spar line and the stat ticks louder before adding places. After the forest, the outer-world place (a reported BAR trains like a spar played well, `sg-work-grows` A) in the mode where he brings his life in.
 
+- Look and feel research (2026-10-14, thread "Spirit look and feel"): page https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j, ledger `2026-10-14-spirit-look.json`, rows `council/callsheets/rows/spirit-look-2026-10-14.json`. Positions `sg-look-layers` (each input owns one visual layer), `sg-grows-into-shape` (charge, kindled, shaped, settled at levels 1, 3, 5 and a later bond), `sg-shape-choice` (pick among two or three offered pieces, no editor), `sg-breed-names`, `sg-assets-modular` (one rig per body family with sockets; the sprite is rendered from the 3D model; no play-time AI art). His correction `nation-elements`: Meridia is Earth, Virelune is Wood; the next build swaps the Earth/Virelune and Wood/Meridia sample rows on #51. Question `sg-body-from` (urge, place or free pick sets the body).
+- Next for assets, once `sg-body-from` is answered: first proof is one family (Shellback, if A) through all four stages in all five elements, as a Blender model and a sprite rendered from it. Its own thread, on Opus for the first design.
+
 ## Waiting on
+- `sg-body-from` on the board, before any spirit art is built.
 - His phone play of the slice: board step `spirit-generator-01` (Your steps tab).
 - Whether `sg-overcharge` stands (board).
 

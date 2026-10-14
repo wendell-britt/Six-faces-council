@@ -1,0 +1,80 @@
+{
+ "positions": [
+  {
+   "id": "nation-elements",
+   "faces": ["regent", "sage"],
+   "pass": "spirit look research",
+   "auto": true,
+   "pos": "Your correction, recorded: Meridia is Earth and Virelune is Wood (with Argyra Metal, Lamenth Water, Pyrakanth Fire). bars-engine's nations.ts already says so. The spirit generator page's sample table pairs an Earth feeling with Virelune and a Wood feeling with Meridia, which reads as the reverse; the next spirit generator build swaps those two rows so each sample charge is met in its own element's nation.",
+   "why": "Your words, thread \"Spirit look and feel\", 2026-10-14: \"(Also meridia is earth and Virelune is wood)\". bars-engine src/lib/nation/nations.ts; sprout #51 page https://claude.ai/artifact/YBSfbjXF3gaTmW2ZxA1M3w (the five-row table)."
+  },
+  {
+   "id": "sg-look-layers",
+   "faces": ["architect", "shaman"],
+   "pass": "spirit look research",
+   "auto": true,
+   "pos": "Each part of the charge owns one layer of how a spirit looks, the way Monster Rancher's main breed sets the body and the sub breed the skin. The feeling (element) sets color, material and the glowing heart, from the game's five element colors. Where you met it (nation) sets the regional style: Meridia stone and terraces, Virelune bark, leaves and vines, Pyrakanth embers and a flame crown, Lamenth fins and ripples, Argyra facets and bells. The strength sets size and how bright the heart burns. The lead stats from training set which parts are offered. The body plan comes from whatever sg-body-from settles. Feeling and place stay separate axes, so a Water feeling met in Meridia is a teal heart in a stone body. This stands unless you flip it.",
+   "why": "Research page https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j (Monster Rancher combining, Shin Megami Tensei races and element demons, Pokemon regional forms). Your words: \"The idea of regional styles is pretty good too.\" sg-charge-disc (feeling sets element, place sets species, strength sets stats, urge sets lead stats)."
+  },
+  {
+   "id": "sg-grows-into-shape",
+   "faces": ["shaman", "diplomat"],
+   "pass": "spirit look research",
+   "auto": true,
+   "pos": "A spirit shows four stages, tied to the levels the slice already uses. Level 1, the charge: an orb in its element's color whose motion hints at the urge. Level 3, kindled: eyes open first, then a faint outline, and you pick its animal base. Level 5, shaped: the body fills in and its lead stat offers two or three parts. Settled, at a later bond: the nation's regional style settles on it and you may give it a name. The charge never leaves: it stays as the glowing heart of the body. Levels are placeholders. This stands unless you flip it.",
+   "why": "Your words: \"The idea is the would start with a colored charge and the more you connect with them the more they take a recognizable shape.\" Sonic Adventure 2's Chao and Digimon World tie the body to how it was raised (research page). sf-ally-moves (levels 1, 3, 5)."
+  },
+  {
+   "id": "sg-shape-choice",
+   "faces": ["challenger", "shaman"],
+   "pass": "spirit look research",
+   "auto": true,
+   "pos": "You shape a spirit by choosing among two or three offered pieces at each bond step (an animal base at kindling, a body part at each later step), never in a free editor. What is offered comes from how you trained it, the way Chao take parts from the animals you give them, so play decides the options and you decide the pick. Every combination is built from parts made for that body, so none comes out absurd. This stands unless you flip it.",
+   "why": "Your words: \"something that allows player a bit of creativity in how the spirit forms not unlike spore, but not as funky as the spore creations can ultimately make.\" Spore's free editor produced the funky results; Impossible Creatures and Chao bound choice to a few parts (research page)."
+  },
+  {
+   "id": "sg-breed-names",
+   "faces": ["diplomat", "sage"],
+   "pass": "spirit look research",
+   "auto": true,
+   "pos": "Spirits carry breed names, as Monster Rancher's do, built from what made them: nation, element and body family, for example \"Meridian Earth Shellback\". There are no individual species names. Once a spirit settles you may give it your own name. Family names are drafts. This stands unless you flip it.",
+   "why": "Your words: \"I don't want them named fully like pokemon which is why I think monster rancher is a good fit.\" The slice already names spirits from place and element (\"Virelune Earth spirit\")."
+  },
+  {
+   "id": "sg-assets-modular",
+   "faces": ["architect", "regent"],
+   "pass": "spirit look research",
+   "auto": true,
+   "pos": "Spirit art is built in parts, the Cassette Beasts way. Each body family gets one rigged 3D base with sockets (head, back, flank, tail), plus a kit of pieces per socket, five element materials and five regional ornament sets. The sprite is rendered from the assembled 3D model in the Blender pipeline with a fixed camera and a pixel pass, so one source gives both assets. Assembly is a lookup from the charge and your picks, so the same charge makes the same spirit. AI may draft concept sheets that a person approves; the game never generates art while you play, which keeps the non-AI version first-class. First proof: one family through all four stages in all five elements, as model and sprite. This stands unless you flip it.",
+   "why": "Your words: \"We'll need 2 types of assets for each spirit a sprite and a 3d model. This will allow us to test our pipeline.\" sg-charge-disc (same charge, same spirit). bars-engine CLAUDE.md, community context (the non-AI version is first-class). Research page: the AI monster games and the Palworld backlash."
+  }
+ ],
+ "questions": [
+  {
+   "id": "sg-body-from",
+   "faces": ["shaman", "architect"],
+   "pass": "spirit look research",
+   "q": "What gives a spirit its body shape?",
+   "why_you": "You said the combination of nation, element, daemon and animal morphology \"remains to be clear\", and the record has only half an answer: sg-charge-disc and demo-spirit-count make the place set the species among 25 (five elements by five regions), which never said what a body is. Which input owns the body decides what the art pipeline builds first: eight family rigs, or 25 bodies.",
+   "not_before": "Until today a spirit had no picture, so species only meant a name and a stat profile.",
+   "options": [
+    {
+     "v": "urge",
+     "label": "A. The urge picks the family, you pick its animal (recommended)",
+     "c": "Eight body families, one per daemon (Protector Shellback: tortoise, armadillo or pangolin; Player Romp: fox, otter or kid goat; and so on), each with two or three animal bases you choose at kindling. Your spirit reads as the daemon you integrated. The 25 species become the skins and styles element and place lay over a body. Eight rigs to build."
+    },
+    {
+     "v": "place",
+     "label": "B. The place picks it",
+     "c": "Each of the 25 species (element by region) has its own body, as demo-spirit-count reads today. The urge shows only in motion and eyes. Closest to Pokemon species; 25 bodies to build, and two spirits met in one place look alike whatever the charge."
+    },
+    {
+     "v": "free",
+     "label": "C. You pick any animal",
+     "c": "At kindling you choose from the whole animal list, whatever the urge. Most player freedom; the spirit no longer shows which daemon it came from, and every animal needs its own rig."
+    }
+   ],
+   "why": "Source: research page https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j (Dragon Quest Monsters' eight families, Monster Rancher's main breed, Chao), wave-spirit-from-charge (the urge decides which daemon), demo-spirit-count, sg-charge-disc."
+  }
+ ]
+}

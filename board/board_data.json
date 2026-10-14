@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "positions": [
   {
    "id": "build",
@@ -21203,6 +21203,18 @@
      "diplomat"
     ],
     "pass": "spirit fight build 2"
+   },
+   "sg-overcharge": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T00:24:12.016Z",
+    "record": "council/ledger/2026-10-14-pull-002412.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "spirit generator 1"
    }
   },
   "questions": {
