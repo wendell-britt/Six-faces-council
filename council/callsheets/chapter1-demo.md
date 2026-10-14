@@ -21,7 +21,10 @@ skills and character and NPC generation based on player blockages."
 ## Path to the demo
 1. Step 1 of text-to-campaign on Chapter 1: `ch1/extract.yaml` (milestones, lessons, beliefs, the blockages a
    reader hits). Done 2026-10-14: sprout `campaigns/mtgoa-ch1/extract.yaml`, draft PR sprout #52.
-2. Step 2: story and teaching NPCs, with Wake Up cards dealt as the player's hand.
+2. Step 2: story and teaching NPCs, with Wake Up cards dealt as the player's hand. Done 2026-10-14: sprout
+   `campaigns/mtgoa-ch1/story.md`, draft PR sprout #53 (stacked on #52). The Arcade track A1 to A8: Tam (farming),
+   Yun (fighting), Ede (exploring); the player in the ally's seat with Pip; seven Wake Up cards; ends in the hollow,
+   the 3D WAVE room.
 3. Step 3: encounters and the guessing test; the player's own blockage becomes a spirit via #51.
 4. Blender sprites for the Chapter 1 spirits and NPCs onto the page.
 5. His phone play, then fixes; then a short video for the Kickstarter page.
@@ -31,10 +34,10 @@ skills and character and NPC generation based on player blockages."
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
 
 ## Next thread brief
-Step 2, story and teaching NPCs, from sprout `campaigns/mtgoa-ch1/extract.yaml` (#52; build on its branch if it has
-not merged) and Sprout's design record, the way Skilled Helper `story.md` was written. Owner Shaman, checker
-Diplomat, Opus. Deal Wake Up cards from bars-engine `public/allyship-deck/allyship-deck.json` (`ch1-deck-hand`).
-Read the extract's `shaman_check.flag_for_step_2` (does the player sit in the ally's seat or meet the Arcade through
-teaching NPCs) and `ontology_check` first. `ch1-where` is answered (board read 2026-10-14 18:46): Sprout, ending in the cave, with a
-2D or 3D character walking the world; the story must use the farming, fighting and exploring loops (the extract's
-`loops` section). Run it as one thread.
+Step 3, encounters and the guessing test, from sprout `campaigns/mtgoa-ch1/story.md` and `extract.yaml` (#53 on #52;
+build on #53's branch, `claude/project-thread-ungnv1`, if they have not merged), the way the Skilled Helper's
+`encounters.yaml` and `guessing-test.md` were written (sprout #47, #48). Opus. Read story.md's "For step 3" first:
+blocks for A3, A4, A6 and A8 from the emotional alchemy canon linked to myths by id; the warden's small-move
+negotiation; the guessing test over the seven dealt cards (does each card's question match what its encounter asks,
+85% target, `gb-taught-target`); the hollow spirit's urge-to-family map and preset lines, using sprout #51 as built.
+Give Pip a way to turn the player away for good (Diplomat flag). Run it as one thread.
