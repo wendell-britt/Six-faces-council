@@ -265,6 +265,9 @@ def main():
     menu = pasted_menu(data, store)
     if menu:  # mm-menu-transport: the next gather reads it; morning.py writes main itself
         print(f"needs work:\n  morning/menu: python3 council/morning.py --menu {menu} --write, then commit and republish")
+        if json.loads(menu.read_text(encoding="utf-8")).get("bars"):  # lines marked BAR in the board's Tap the Vein
+            print(f"  morning/menu bars: python3 council/ttv_bars.py {menu} --write, then open a pull request in "
+                  "game-masters-guide")
     if not new and not general and not steps and not blockers:
         print("every saved answer is recorded")
         return
