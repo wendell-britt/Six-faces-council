@@ -1,0 +1,94 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T18:46:16.131Z",
+ "answers": {
+  "jev-asset-piles": {
+   "kind": "question",
+   "choice": "admin-first",
+   "savedAt": "2026-10-14T18:43:06.857Z",
+   "steer": "We need to make sure this UI is ergonomic for someone who doesn’t spend time in data tables a lot and gets overwhelmed by spreadsheets and the like "
+  },
+  "lens-intake-align": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:43:15.295Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lens-order": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:43:23.666Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lens-domains-stand": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:43:26.670Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ch1-source": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:43:37.622Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ch1-pipeline": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:43:43.869Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ch1-deck-hand": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:43:56.413Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ch1-npc-from-blockage": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:44:01.968Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lens-pitch-goals": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:44:07.302Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lens-board-reads-goals": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:44:12.503Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "loop-auto-gate": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:44:25.171Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "loop-ahead-two": {
+   "kind": "position",
+   "savedAt": "2026-10-14T18:45:01.558Z",
+   "status": "stands",
+   "steer": "If art is needed and there isn’t any art available we should generate a prompt OR a design intake to get clear on what asset should be made "
+  },
+  "ch1-where": {
+   "kind": "question",
+   "choice": "both",
+   "savedAt": "2026-10-14T18:46:16.131Z",
+   "steer": "We want the walkthrough to have players able to walk either a 3d or 2d character through the sprout world. The skilled helper paths were good for testing the story branches but they don’t actually include the major game loops (farming and fighting and exploring)"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/jev-asset-piles: Label the 20 admin rows first; size the teaching pile afterwards (steer: \"We need to make sure this UI is ergonomic for someone who doesn’t spend time in data tables a lot and gets overwhelmed by spreadsheets and the like\")",
+  "positions/loop-ahead-two: Stands (steer: \"If art is needed and there isn’t any art available we should generate a prompt OR a design intake to get clear on what asset should be made\")",
+  "questions/ch1-where: Sprout, ending in the cave (steer: \"We want the walkthrough to have players able to walk either a 3d or 2d character through the sprout world. The skilled helper paths were good for testing the story branches but they don’t actually include the major game loops (farming and fighting and exploring)\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
