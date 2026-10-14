@@ -7907,6 +7907,17 @@
    "auto": true,
    "pos": "Your steer on sg-holo-stages, built (this extends it): a spirit has five stages. Level 1, gas: a drifting cloud of motes in its element's colours, thickest at the heart, with no shape; the way it drifts hints at the urge. Level 3, core: the gas solidifies into a faceted core, a gem cut for its family (the Shellback's is a six-sided double pyramid, a shell scute made solid), with a few motes still circling it. Level 5, hologram: the core projects a body of light into the world from a projector ring, the way the gems in Steven Universe project their forms; it is faceted, see-through and scanlined, with the core showing at its chest. Then the living creature: the hologram becomes flesh, an animal in the world in its family's shape and the animal base you picked, its core set into its body. Last, the highest ally form: the creature stands up as a humanoid of its kind (the Shellback becomes an upright guardian, shell on its back, core at its heart). The nation's style and the pieces you choose carry through every stage from the hologram on. An ally beaten in a fight falls back into its core and forms again after rest, so a spirit is never lost. Levels for the last two stages are not set; until a build needs them, the living creature comes at level 7 and the highest form at level 10 (placeholders). Proof: the Shellback in all five stages and five elements, as models and sprites (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85). This stands unless you flip it.",
    "why": "Your steer on sg-grows-into-shape, board read 2026-10-14 01:43: \"I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe\". sg-body-from A (the urge picks the family). spirit-growth-by-training (no death). Your steer on sg-holo-stages, board read 2026-10-14 02:13: \"Perfect I do think there should be one more stage where it looks like a living creature in the world and the final stage is where it becomes a humanoid exponential of the creature in its highest ally form.\""
+  },
+  {
+   "id": "ttv-board-home",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "tap the vein on the board",
+   "auto": true,
+   "pos": "Tap the Vein now runs on the board's Morning tab as well as in bars-engine. The board box seals the same menu a pasted one makes, so picks, Lens goals and threads work as they do today. bars-engine stays the home of tasks, charge and Lens goals; the board box writes no tasks there yet.",
+   "why": "Your ask, 2026-10-14: \"so that I can do the tap the vein directly from the environemnt where I'll be using that information\". Reusing the pasted-menu path means pull.py, morning.py and the Send button need no new route. Source: docs/morning.md, Tap the Vein on the board."
   }
  ],
  "questions": [
@@ -12871,6 +12882,35 @@
     }
    ],
    "why": "Source: research page https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j (Dragon Quest Monsters' eight families, Monster Rancher's main breed, Chao), wave-spirit-from-charge (the urge decides which daemon), demo-spirit-count, sg-charge-disc."
+  },
+  {
+   "id": "ttv-raw-bars",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "tap the vein on the board",
+   "q": "May the council read your whole board free write to find BARs in it?",
+   "why_you": "You asked for Tap the Vein to pull BARs the way the podcast episodes are mined, and in an episode the council reads everything and you tag nothing (corpus rule 3). Your ruling mm-raw (2026-10-09) says only kept lines leave the free write. Both can't hold for a free write, and who reads your private writing is consent, which only you give. The first version, in a draft pull request, follows mm-raw: you mark lines Keep as a BAR yourself.",
+   "not_before": "mm-raw was asked when the free write lived in bars-engine and no BARs came from it. The corpus and its rule that you tag nothing came on 2026-10-13.",
+   "options": [
+    {
+     "v": "read-delete",
+     "label": "A. Read it once for BARs, then delete it (recommended)",
+     "c": "Sealing also saves the free write. The next board read pulls your lines into the corpus as BARs, the same way an episode is mined, and deletes the free write from the board. You only mark what to do. A small change to the first version."
+    },
+    {
+     "v": "marked",
+     "label": "B. Only lines I mark",
+     "c": "What the first version does. The free write never leaves your browser, and a line becomes a BAR only when you press Keep as a BAR. Lines you don't mark are lost to the corpus."
+    },
+    {
+     "v": "keep",
+     "label": "C. Keep it whole, like a transcript",
+     "c": "The free write is saved to the corpus beside its BARs, as episode transcripts are, so later passes can mine it again. The private repo then holds your morning writing."
+    }
+   ],
+   "why": "Sources: docs/morning.md (mm-raw, mm-where), game-masters-guide corpus/README.md rule 3 and BARS.md, six-faces-council draft pull request for the board Tap the Vein."
   }
  ],
  "causes": [
