@@ -8182,6 +8182,29 @@
    "why": "bars-engine #324 sends the run to the board as a blocker record (docs/blocker-panel.md). Six-faces-council council/callsheets/perceptual-shadow.md",
    "pass": "perceptual shadow",
    "auto": true
+  },
+  {
+   "id": "jev-teaching-30-labelled",
+   "faces": [
+    "diplomat",
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "auto": false,
+   "pos": "The 30 practice rows are chosen and labelled by Claude from the doc line and the code, in council/jev/teaching_pile_2026-10-14.json: 18 agree and 12 disagree. They are drawn from the 158 statements in sprite and card-art docs marked for discard, and they include all 9 rows that carry a known-drift tag in those docs. The model reads them once so we can see what its answers look like. No mark is applied and nothing is scored. The 19 scoring rows are untouched. You flip a label only if one looks wrong. This stands unless you flip it.",
+   "why": "Wendell, 2026-10-14, board read 2235: 30 practice rows (jev-teaching-pile). The labels use the same reading as the admin rows. The 12 disagreements are real: the walk-sheet direction order, four scripts or routes that do not exist (palette-swap.lua, sprites:validate-walkable, validate-walkable-sprites.ts, the approve route), the LPC attribution line, and the playbook_* and archetype_* names."
+  },
+  {
+   "id": "jev-teaching-playbook-readings",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "auto": false,
+   "pos": "Where the docs say playbook_outfit or playbook_accent, Claude labels by what the name is. A layer name (AS-055, AS-056, AS-058, AS-059) disagrees, because the code's layers are archetype_outfit and archetype_accent. A folder path (AS-037, AS-041, AS-042) agrees, because the code does read public/sprites/parts/playbook_outfit and playbook_accent. The brief tagged all seven as the same drift; this splits them 4 and 3. A doc that names the folder archetype_outfit (AS-155, AS-156) disagrees, since the code reads the playbook_* folder. This stands unless you flip it.",
+   "why": "The practice pile is where the model learns whether it can tell a layer name from a folder name. Folding all seven into one label would teach it the brief's shortcut and hide a distinction a reader of the code would make. Source: src/lib/avatar-parts.ts:40-58 and :80-95, scripts/validate-sprite-layers.ts:38-39 (bars-engine main, 2026-10-14)."
   }
  ],
  "questions": [
