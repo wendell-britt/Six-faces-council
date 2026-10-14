@@ -362,6 +362,7 @@ def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=N
                      **({"note": notes[key]} if notes.get(key) else {})})
     return {"date": (menu or {}).get("sessionDate") or dt.date.today().isoformat(),
             "gathered_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "sealed": (menu or {}).get("sessionDate"),  # ttv-first: the board opens on Tap the Vein until today's is sealed
             "pick_limit": 7,
             "goals": [{k: g.get(k) for k in ("id", "title", "domain", "cadence", "parentId")} for g in goals],
             "lenses": lenses(goals, goals_note),
