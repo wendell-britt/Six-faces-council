@@ -39,8 +39,11 @@
   3. Mouth: drop the painted smile line (`mouth()`); give the jaw a real seam where the beak meets the lower jaw.
   4. Carry the new eye to the armadillo and pangolin heads. Contact sheet of the heads before and after first, then republish the page as version 7.
 
+- Round 5 built (2026-10-14, thread "Spirit look round 5"): the faces, after his players' look at round 3. The tortoise's head is rebuilt after the Taoist Tortoise concept (`tortoise_head`: domed skull, upper jaw overhanging the lower like a beak, low brows, two nostrils); the painted smile is gone and the mouth is a groove where the jaws meet, rising a little at the corners (`mouth_seam`). Every base's eye is smaller and deeper (0.07 on the tortoise creature, from 0.1), under a heavier upper lid, with a dark brown iris tinted by the element filling nearly all of what shows. The armadillo's eye moved below its head shield. bars-engine #318 commit 032d325; `shellback.py --heads` renders face close-ups. Page https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85 version 7 opens with a faces section (before and after, then every element). Sheets in `/mnt/project-files/3d-build/spirit-shellback-2026-10-14/round5/` (`heads-before-after.jpg`, `heads-all-elements.jpg`). The armadillo and pangolin have no concept art, so under the new missing-art rule (docs/loops.md, his steer on `loop-ahead-two`) their faces were built from written descriptions, and image prompts for both are in `council/loops/prompts/spirit-generator-r5.md`, with an optional tortoise face close-up. When those images land in the cave studio inbox, a later round rebuilds the two faces from them. `next_round.py finish spirit-generator 5` run.
+
 ## Waiting on
-- His look at round 4 (the armadillo and pangolin, page version 6).
+- His look at rounds 4 and 5 (the armadillo and pangolin, then the faces; page version 7).
+- Concept art for the armadillo and pangolin faces, from the prompts in `council/loops/prompts/spirit-generator-r5.md`.
 - First art proof: one family (Shellback) through the stages in all five elements, now that `sg-body-from` is answered.
 - His phone play of the slice: board step `spirit-generator-01` (Your steps tab).
 - Whether `sg-overcharge` stands (board).
