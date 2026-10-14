@@ -43,6 +43,27 @@ six game masters. bars-engine #313; see big-mind-cave.md.
   on when they are communing with spirits", and a camera that tilts up and down. Built in bars-engine #313: a walking
   stick and the arrow keys, a rug with a cushion that offers Sit down, and a drag that tilts the camera.
 
+- Wendell, 2026-10-14 00:42 (in the cave branch seams thread): "Ok I think we’ve reached the maturity where we don’t have
+  to have the walking happening on rails. It’s causing more trouble than it’s work and we need to test the ergonomics of
+  Freeform navigation in preparation of introducing running. The gates for the 6 game master room are too small. They
+  should be doors." Not built yet; it is the next piece of work (below).
+- Wendell, 2026-10-14 00:39, on doors and the stick: the room now follows five phone-game rules (the stick is never taken
+  away; prompts by the right thumb; a zone shows sooner than it hides; one prompt at a time; full pages only from a tap).
+  They are in bars-engine `content/ontology-game/cave/DESIGN.md` and apply to every room and cave that gets free walking.
+
+## Next: free walking everywhere (handoff from the WAVE room walk thread, 2026-10-14)
+- Where it stands: bars-engine #313 (branch `claude/project-thread-o1ntdv`, carries #309) has free walking in the WAVE
+  room only: `freeWalk`, the stick, keys, tilt, the rug, door prompts (`doorZone`, `doorCard`). The caves and the levels
+  (hall of the six, face tunnels, centre) still walk on rails (`walkStep`; #310 made it a steady `WALK_SPEED`).
+- The work: replace the rails with the room's stick-and-keys walking in the tunnels and the hall, keeping the figure
+  inside the tube (`tube.contain`), markers and doors as prompts by the right thumb (DESIGN.md rules), and make the hall's
+  gates full-size doors (`roundRoute` door(), `portal_arch` scaled `h*0.75`). Running comes after.
+- Merge order: #310 first, then #309/#313; the hint() conflict keeps #309's two lines plus `avatar.userData.stepIdx = 0`.
+- The phone page (https://claude.ai/artifact/23neJJJgywAygUqiJffGvc) is built from #313 merged with #310; see the
+  cave-phone-page-build memory.
+- His third ask, a room generated from a ChatGPT room description with BlenderKit and our own asset pipeline, is its own
+  strand (Blender pipeline), not this one.
+
 ## Waiting on
 The board's blocker panel (docs/blocker-panel.md, 2026-10-12) runs an overdue step through a light WAVE and saves
 `blockers/` records; the room can take it over by writing the same record with `engine: "wave-room"`.
