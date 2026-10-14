@@ -1,0 +1,612 @@
+{
+ "date": "2026-10-14",
+ "battle": "lenses",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Lenses pass 1, on Wendell's 18:08 message in the thread \"Tap the vein on the board\". The record shows he has no active Lens goals (menu export returned goals: []), so every board morning item is unaligned. Five positions, no question survived the reach test; the Challenger dissents on build order. No daemons sent.",
+ "steer": "I think the tap the being should be read and summarized before bars are chosen. It a bit too raw for me to know what should be a bar and currently it seems to just slice the page sentence by sentence. This is something where I’d want to use AI to summarize and make pitches for where things should go. Well also need the full tap the vein process where I intake all the things off the top of my mind that I can do today and then we check alignment with the current board items. \n\nThe lenses integration is probably the biggest bottleneck as our current system doesn't really use lenses",
+ "pass_file": "council/passes/6FACE_PASS_lenses1_2026-10-14.md",
+ "positions": [
+  "lens-board-reads-goals",
+  "lens-pitch-goals",
+  "lens-intake-align",
+  "lens-order",
+  "lens-domains-stand"
+ ],
+ "questions": [],
+ "dissent": true,
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 57,
+   "name": "Persuasion",
+   "cn": "巽",
+   "pinyin": "xùn",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "An effect is already happening that you have not admitted to.",
+   "image": "☴ wind beneath ☴ wind. A yielding line at the base of each half, and the figure gets in everywhere.",
+   "situation": "Wind repeated. The character means to enter, to kneel, to go underneath. The old counsel calls the success small and advises having somewhere to go and someone to see, and the mode throughout is gradual: a thing that works by getting under.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    9,
+    7,
+    8,
+    6
+   ],
+   "changing_lines": [
+    3,
+    6
+   ],
+   "n": 34,
+   "name": "Vigour",
+   "cn": "大壯",
+   "pinyin": "dà zhuàng",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "Force is available here and unaimed.",
+   "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+   "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 38,
+    "name": "Estrangement",
+    "cn": "睽",
+    "pinyin": "kuí",
+    "lines": [
+     1,
+     1,
+     0,
+     1,
+     0,
+     1
+    ],
+    "shows": "You reached a conclusion from a distance.",
+    "image": "☱ lake beneath ☲ fire. Fire climbing and water settling, the two halves separating as they go.",
+    "situation": "Opposition by nature: two elements in one figure travelling opposite ways. The old text keeps its counsel small — in small matters, good fortune — and fills the lines with strange sightings. A pig covered in mud. A wagon dragged backwards. A stranger who turns out to be kin.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    9,
+    6,
+    7,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [
+    1,
+    2
+   ],
+   "n": 37,
+   "name": "Household",
+   "cn": "家人",
+   "pinyin": "jiā rén",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "An arrangement has formed here without being discussed.",
+   "image": "☲ fire beneath ☴ wind. Fire making its own draught, with the wind coming out of the flame.",
+   "situation": "The family. The old text begins with correctness inside the house and works outward, and the commentary's point is structural: positions held properly within produce order without. Wind out of fire — what happens in here goes out there.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 57,
+    "name": "Persuasion",
+    "cn": "巽",
+    "pinyin": "xùn",
+    "lines": [
+     0,
+     1,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "An effect is already happening that you have not admitted to.",
+    "image": "☴ wind beneath ☴ wind. A yielding line at the base of each half, and the figure gets in everywhere.",
+    "situation": "Wind repeated. The character means to enter, to kneel, to go underneath. The old counsel calls the success small and advises having somewhere to go and someone to see, and the mode throughout is gradual: a thing that works by getting under.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    6,
+    7,
+    8,
+    6
+   ],
+   "changing_lines": [
+    3,
+    6
+   ],
+   "n": 51,
+   "name": "Shock",
+   "cn": "震",
+   "pinyin": "zhèn",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "It went off, and it will go off again.",
+   "image": "☳ thunder beneath ☳ thunder. One firm line arriving at the bottom, and then arriving again above it.",
+   "situation": "The shock comes, and then it comes a second time. The old text keeps a wonderful detail through it: laughing words, ha ha, and the man who keeps the sacrificial wine in the cup. Terror arrives from a hundred miles off, and the one still holding the ladle is the one who inherits.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 30,
+    "name": "Burning",
+    "cn": "離",
+    "pinyin": "lí",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    "shows": "You keep saying the same true sentence, and it is consuming its subject.",
+    "image": "☲ fire beneath ☲ fire. A yielding line held between two firm ones, twice over, and the whole figure is light.",
+    "situation": "Fire exists by holding to what it burns, which is why the character carries both brightness and clinging. The old counsel is to care for the cow — the docile thing that keeps producing. Radiance here is maintained by feeding it.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    8,
+    6,
+    8
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 7,
+   "name": "Muster",
+   "cn": "師",
+   "pinyin": "shī",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "What would organise this is a fact you have not said.",
+   "image": "☵ water beneath ☷ earth. One firm line among five yielding ones, holding the whole figure to a shape.",
+   "situation": "Water stored underground: a resource that is present, invisible, and organised. The single strong line is the discipline that turns a crowd into a force. The old warning is that this works with an experienced hand and a clear cause, and the same gathering under any other conditions is a mob.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 29,
+    "name": "Depths",
+    "cn": "坎",
+    "pinyin": "kǎn",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "The bottom of this has another bottom under it.",
+    "image": "☵ water beneath ☵ water. One firm line trapped between two yielding ones, and then the same again above it.",
+    "situation": "Repeated danger: the pit, and past it another pit. The old counsel is about consistency, because water goes into every hollow, fills it, and moves on, being water the whole way through. What carries you across a run of these is doing the same thing each time.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    6,
+    8,
+    6,
+    8,
+    8,
+    6
+   ],
+   "changing_lines": [
+    1,
+    3,
+    6
+   ],
+   "n": 2,
+   "name": "Bearing",
+   "cn": "坤",
+   "pinyin": "kūn",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "The whole weight of this is yours, unasked.",
+   "image": "☷ earth beneath ☷ earth. Six broken lines. Every one of them has a gap at the centre.",
+   "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 22,
+    "name": "Adornment",
+    "cn": "賁",
+    "pinyin": "bì",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "You have dressed this, and the dressing is doing real work.",
+    "image": "☲ fire beneath ☶ mountain. A fire at the base of a hill, throwing light up the whole face of it.",
+    "situation": "Form applied to something already standing. The mountain gets lit and the rock stays rock. The tradition runs this figure upward toward plainness and gives the top line as white adornment, which is form that has run out of ornament.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  }
+ ]
+}
