@@ -71,15 +71,25 @@ for 2+ days it triggers a Wave or 321 session on the blocker that's stopping me 
   held. Today is handled when the last gather fetched today's sealed menu from bars-engine (`morning.sealed`, written
   by `council/morning.py`), a menu sealed or pasted on the board carries today's date, or the store's `ttv/<date>` says
   `done` (written at seal), `bars-engine` or `skipped`. The date is the browser's local date.
-- The page cannot ask bars-engine itself, because the menu key never reaches the board. "I did it in bars-engine today"
-  saves `ttv/<date>` as `bars-engine`; `board/pull.py` then lists it under needs work, and the read fetches that day's
-  menu with `council/morning.py --fetch <date> --write`.
+- The board asks bars-engine itself (Wendell overruled `ttv-bars-engine-trusted` on 2026-10-14: "I do think we need to
+  be able to make an API call to bars-engine directly if this is the case"). While held, it calls bars-engine's
+  `GET /api/tap-the-vein/status?date=<today>` through the viewer's Vercel connector (`web_fetch_vercel_url`). The route
+  takes no token and answers only `{date, sealed, sealedAt}`; the menu stays behind the token. Sealed there saves
+  `ttv/<date>` as `bars-engine` with `checked: true`, the board opens, `board/pull.py` lists it under needs work, and
+  the read fetches that menu with `council/morning.py --fetch <date> --write`. Not sealed, or no answer, keeps the board
+  held with "Check bars-engine again".
 - Sealing on the board is ingested the way it already was: `morning/menu` and `morning/freewrite`, read by the next
   board read.
 - "Skip today" saves `ttv/<date>` as `skipped`. When that makes two or more skips in a row (a done day breaks the run;
-  a day the board was not opened does not), the blocker panel (`docs/blocker-panel.md`) opens on "Tap the Vein
-  (skipped N days running)": the board's WAVE run, with a staged 3-2-1 for any part that stays. Its record is
-  `blockers/tap-the-vein--<time>` with `skipStreak`, and `board/pull.py` copies it to main like any other run.
+  a day the board was not opened does not), the board offers the WAVE room (`ttv-skip-wave`, his steer: "It should
+  deposit me inside the WAVE room and we should move to have the WAVE room be able to metabolize context specific
+  charges and send the results to the board"). "Go into the WAVE room" opens
+  `https://bars-engine.vercel.app/ontology-game/cave/#wave=board&charge=<words>&skips=<n>&ref=tap-the-vein--<time>&date=<day>`
+  in a new tab; "Work it here on the board instead" opens the board's blocker panel (`docs/blocker-panel.md`). The
+  choice is saved on `ttv/<date>` as `wave` (`room`, `board` or `not-now`) with `waveRef`.
+- The room side is the WAVE room thread's work: reading that hash to open the room with the charge, and sending the
+  run back as a `blockers/<ref>` record with `engine: "wave-room"` (the contract in `docs/blocker-panel.md`, "Plugging
+  in the WAVE room"). Until it does, the link opens the cave's front page.
 
 ## Everything you can do today
 
