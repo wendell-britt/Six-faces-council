@@ -35,6 +35,9 @@
 - Item 3, the sheet: `--one-number --sheet` (frame plus eleven figures, each one number off) and `--daemons --sheet`
   (frame plus the seven rows), front three-quarter and side. Files: /mnt/project-files/3d-build/npc-warp-2026-10-14/
   (`one-number.png`, `one-number-side.png`, `daemons.png`, `daemons-side.png`, the eight GLBs, `checks.txt`).
+- An eighth row, `player` (the vulnerable child: big head, short arms, nothing bent), and `npc.boss` on the report
+  row: the NPC's answer to its boss question (daemons/questions.js, bars-engine #329), with `npc.next` the figure the
+  player meets next (`self` is the unwarped frame). `--boss` sets it.
 - All twenty figures pass `census.py --kind humanoid` and J4's walk check; test J6 asserts it for the daemon set.
 
 ## Next
