@@ -10,6 +10,7 @@
  "resolution": null,
  "rounds": [
   {
+   "aligned": false,
    "body": [
     "Hollow"
    ],
@@ -17,11 +18,14 @@
    "felt": "",
    "from": "the step",
    "kind": "unclear",
-   "name": "Avoiding being imperfect."
+   "name": "Avoiding being imperfect.",
+   "partStayed": false,
+   "purpose": "It's protecting putting something confusing in front of someone who is recieving help and care from me",
+   "validated": true
   }
  ],
- "savedAt": "2026-10-14T21:09:14.810Z",
- "stage": "validate",
+ "savedAt": "2026-10-14T21:09:52.645Z",
+ "stage": "end",
  "startedAt": "2026-10-14T21:08:44.677Z",
  "status": "open",
  "step": "anastasia-campaign-live-01",

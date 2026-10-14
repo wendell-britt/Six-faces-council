@@ -1,0 +1,39 @@
+{
+ "charge": {
+  "after": 4,
+  "before": 7
+ },
+ "due": "2026-10-12",
+ "engine": "board-wave",
+ "finishedAt": "2026-10-14T21:12:15.148Z",
+ "list": "anastasia-campaign-live",
+ "overdueDays": 2,
+ "resolution": {
+  "at": "2026-10-14T21:12:15.148Z",
+  "kind": "change",
+  "text": "the dashboard needs to reveal more of the parts that I can click on and review. it has me chasing a project file and I'm bouncing off of needing to do that. If I Can click the file see whats going on and update the notes that would get me unblocked"
+ },
+ "rounds": [
+  {
+   "aligned": false,
+   "body": [
+    "Hollow"
+   ],
+   "element": "metal",
+   "felt": "",
+   "from": "the step",
+   "kind": "unclear",
+   "name": "Avoiding imperfection",
+   "partStayed": false,
+   "purpose": "Protects me from lookign foolish in front od someone I'm helpin g",
+   "validated": true
+  }
+ ],
+ "savedAt": "2026-10-14T21:12:15.148Z",
+ "stage": "done",
+ "startedAt": "2026-10-14T21:10:55.978Z",
+ "status": "resolved",
+ "step": "anastasia-campaign-live-01",
+ "task": "Send Anastasia the draft and ask for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in public. A photo and her Facebook post are optional.",
+ "version": 1
+}
