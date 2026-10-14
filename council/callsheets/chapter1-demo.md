@@ -42,7 +42,7 @@ skills and character and NPC generation based on player blockages."
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
 
 ## Next thread brief
-Step 5, his phone play. Put one step on the board's Your steps tab: open https://claude.ai/artifact/G4mj4M4zuUeHfWfQx4r6KE
+Step 5 is his phone play. Put one step on the board's Your steps tab: open https://claude.ai/artifact/G4mj4M4zuUeHfWfQx4r6KE
 on his phone, play once as a fixer would (reach for the big moves at Pip's hut), then tap "Copy this" on the end
 screen and paste the log into the step's note. Say it takes about ten minutes. Own sprout #52 to #55 (stacked; watch
 any still open and drop each watch once it merges). When his note arrives: read the fixer check line (did he play
