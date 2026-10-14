@@ -1,4 +1,4 @@
-2026-10-13 (updated 05:40)
+2026-10-14 (updated 23:50)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -46,6 +46,14 @@ room wears the J1 stone. Only charges worked through the whole W.A.V.E. go throu
 bigmind-test 178 pass. Phone page version 23 (carries #310 too). Next: his walk round the room and through the Big Mind
 door, then the next six chambers and the centre built inside the Big Mind cave (`dp-seven`, `dp-centre`, `dp-progress`),
 in a fresh thread.
+
+**2026-10-14, the Controller's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #330 (draft, branch
+`claude/project-thread-arzqhz`) opens the second chamber on the daemon path. Walking on past the Protector builds the cave
+again around the Controller, which asks Wendell's five Controller questions (`daemons/questions.js`). At "Who do you work
+for?" the player picks the Protector, the self, control itself or the vulnerable child, and the method question that follows
+asks his follow-up for that boss (`byBoss`; the vulnerable child keeps the plain question, since he gave none). The boss is
+saved and shown at the mouth. The save gains `chamber`; the Skeptic waits at the shut mouth past it. bigmind-test 210 pass.
+Next: his play of the Controller's chamber, then the Skeptic's chamber with its set, in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
