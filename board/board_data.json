@@ -22463,6 +22463,92 @@
      "sage"
     ],
     "pass": "j5-round4"
+   },
+   "jev-teaching-30-labelled": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:50:48.324Z",
+    "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-teaching-playbook-readings": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:50:55.889Z",
+    "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
+   },
+   "sd-density-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:51:14.144Z",
+    "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit dissolving"
+   },
+   "sd-mana-to-stat": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:51:23.678Z",
+    "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "spirit dissolving"
+   },
+   "sd-gone-after": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:51:31.929Z",
+    "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "spirit dissolving"
+   },
+   "ps-shadow-spirits": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:51:43.665Z",
+    "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "perceptual shadow"
+   },
+   "sd-shadow-skip": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:52:12.401Z",
+    "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
+    "steer": "It has an element and can be dissolved but only after it’s fully revealed. Fully revealing it means tying it to an element",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "spirit dissolving"
    }
   },
   "questions": {
@@ -25923,7 +26009,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-14T21:15:00Z",
+ "steps_recorded_through": "2026-10-14T22:43:52Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
