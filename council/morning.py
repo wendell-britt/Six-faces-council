@@ -152,15 +152,14 @@ GOALS_URL = "https://bars-engine.vercel.app/api/lenses/goals"
 def fetch_json(url, what, out=None):
     """GET a council export with $COUNCIL_MENU_TOKEN (mm-menu-transport: the council fetches it), saving it to out.
     Returns (doc, None), or (None, reason). The token never reaches the output or the URL."""
+    # With no token in the session, the cloud environment's proxy adds it for bars-engine.vercel.app.
     token = os.environ.get("COUNCIL_MENU_TOKEN", "").strip()
-    if not token:
-        return None, "COUNCIL_MENU_TOKEN is not set in this session's cloud environment (docs/morning.md)"
-    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"} if token else {})
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             text = r.read().decode("utf-8")
     except urllib.error.HTTPError as e:
-        return None, {401: "the key was refused (401); the board and Vercel hold different keys",
+        return None, {401: "the key was refused (401); set COUNCIL_MENU_TOKEN or the proxy's key to the one in Vercel",
                       404: f"no {what} (404)",
                       503: "COUNCIL_MENU_TOKEN is not set in Vercel (503)"}.get(e.code, f"HTTP {e.code}")
     except (urllib.error.URLError, OSError) as e:
