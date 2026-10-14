@@ -22844,6 +22844,231 @@
      "challenger"
     ],
     "pass": "jev asset"
+   },
+   "el-mapping": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:18:50.737Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "Element settings"
+   },
+   "el-water-interior": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:18:58.040Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "Element settings"
+   },
+   "el-skeleton": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:04.558Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "Element settings"
+   },
+   "el-demo-scope": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:09.189Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "Element settings"
+   },
+   "el-first-setting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:13.490Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "Element settings"
+   },
+   "uw-list-corrected": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:19.912Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-board-before-sweep": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:24.015Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-email-steps": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:24.949Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-upload-limit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:32.954Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-backlog-dupes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:41.436Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-skill-dedupe": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:47.837Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-jev-to-sheet": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:53.456Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-podcast-ticks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:58.407Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-pushhands-repair-later": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:01.741Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-sprout-current": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:04.641Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-anastasia-as-is": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:08.125Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-flirtcraft-step7": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:11.634Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "jev-pile2-result": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:17.478Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-pile2-borderline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:23.484Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
    }
   },
   "questions": {
@@ -24986,6 +25211,18 @@
      "shaman"
     ],
     "pass": "perceptual shadow"
+   },
+   "uw-ea-library": {
+    "decision": "now",
+    "label": "Bring the five rulings to the board now",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:18:37.781Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "unfinished work 1"
    }
   },
   "causes": {
