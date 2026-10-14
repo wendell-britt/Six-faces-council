@@ -16,5 +16,7 @@ Wendell: `pod2-title`, `pod2-thumb-pick`, the Spotify link, `pod1-isaac-handle`.
 - `council/moves/podcast-episode.md`, `council/moves/podcast-outreach.md`, `council/ledger/2026-10-08-outreach-tab-build.json`
 - MTGOA files `podcast/` (`outreach/invitations-2026-10-09.md`, `episode-marketing-plan.md`); `/mnt/project-files/podcast/`
 
+- From the unfinished-work pass (2026-10-14, `uw-podcast-ticks`): tick what shipped in bars-engine `.specify/specs/mtgoa-podcast/tasks.md` (the hub shipped 2026-09-30 as `cc4d4f35f`) and mark the question and guest forms, and their models, as not built.
+
 ## Archive
 HANDOFF.md: "Open on 2026-10-07, from the MTGOA podcast episode 2 thread (battle `fr-mtgoa-podcast-ep2`)"; "Open on 2026-10-06, from the Flirtcraft podcast thread (battle `fr-podcast-launch`)"; "Open on 2026-10-08, from the outreach-on-board pass" (twice); "Open on 2026-10-09, from the MTGOA podcast invitations thread"
