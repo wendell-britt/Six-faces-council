@@ -26,3 +26,14 @@ grader, but his look stops being what starts the next round. Piloted on the spir
 
 `loop-ahead-two` (two rounds ahead of his last look) and `loop-auto-gate` (auto only where no money or accounts
 are involved, and never a `council/faces.yaml` change) stand unless he flips them.
+
+## When a round needs art that does not exist
+
+Wendell, 2026-10-14, steer on `loop-ahead-two` (board read 18:46, ledger `2026-10-14-pull-184616.json`): "If art is
+needed and there isn’t any art available we should generate a prompt OR a design intake to get clear on what asset
+should be made". A round that needs reference art (a concept, a face, a material) and finds none does not stall or
+wait for him. It writes an image prompt, or a short design intake when the asset itself is unclear, to
+`council/loops/prompts/<strand>-r<n>.md`, builds the round from the prompt's own description, and names the prompt in
+the callsheet so the art can be made and dropped in the cave studio inbox for a later round. The round's `check` stays the
+same.
+
