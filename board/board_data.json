@@ -8466,6 +8466,28 @@
    "auto": true,
    "pos": "The daily compost pass drops Flirtcraft's step 7 (create the tables by hand) once it confirms production created them. This stands unless you flip it.",
    "why": "fc-migrate-on-deploy stood as yes, and step 9's sign-in link worked. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "jev-pile2-result",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "The doc-drift model, given the fixed code map, caught all 8 clear disagreements on 48 new rows from 7 docs it had not seen and flagged 0 of the 35 agreeing rows. The next move is to run it over one whole unlabelled doc (docs/OPENAI_API_USAGE.md first) and hand you the flags as a fix list, with the doc fixes going to bars-engine as one PR. This stands unless you flip it.",
+   "why": "Counts: catches 8 of 8 (true rate plausibly 63% to 100%), false flags 0 of 35 (plausibly under 10%). The constant script caught 3 of 8 and flagged 8 of 35. Limits: I picked the docs and wrote the labels from the same code the model read, and checkable API and script claims are easier than design prose. Labels were pushed before the run (Six-faces-council 8551d94). Report: council/jev/results_pile2_2026-10-14.md"
+  },
+  {
+   "id": "jev-pile2-borderline",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Five rows of the second pile were borderline and stay out of the counts, with my readings: B2-008 disagrees (the OpenAPI file lists three game-master routes that do not exist in src/), B2-024 and B2-038 disagree (pre-commit also runs lint, which the docs omit), B2-027 agrees (Preview builds skip migrate deploy), and B2-034 (the Node v18+ line) is now disagrees, because the repo has no engines field, CI runs Node 22 and Next 16 needs Node 20 or later. These stand unless you flip one.",
+   "why": "The model agreed on B2-008, 024, 027 and 038 and disagreed on B2-034. If B2-034 counts as a catch, the score becomes 9 of 9. The Next 16 Node floor comes from Next's published requirement and was not checked inside the repo. Labels: council/jev/pile2_labels_2026-10-14.json"
   }
  ],
  "questions": [
