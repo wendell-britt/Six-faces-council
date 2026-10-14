@@ -59,9 +59,13 @@ six game masters. bars-engine #313; see big-mind-cave.md.
   distances, door size, Sit down moved to the bottom right. DESIGN.md "Free walking everywhere, and the hall's doors".
 - cave-test 376 pass, 1 fail: the idle breathing threshold (shoulders 0.010 against > 0.01), which passed on the two
   earlier runs of the branch.
-- The phone page https://claude.ai/artifact/23neJJJgywAygUqiJffGvc version 30 carries it.
-- Next: his play of free walking on the phone page; then running, on the same stick, in a fresh thread. Merge order:
-  #310, #313, #317.
+- After his play the same day ("Camera controls are clunky in the game master space and the walking is rather slow", then
+  "The center is impassible and we want to be able to have click to walk for when we're testing on the computer"): the
+  camera follows the figure, the walk is 7 units a second, the middle of the hall and the centre is open floor (the six stones
+  block), and a click on the floor walks there. DESIGN.md "The camera follows the figure, and the walk is quicker" and "The
+  open middle, and click to walk". cave-test 385 of 385. He said "perfect. Looking good".
+- The phone page https://claude.ai/artifact/23neJJJgywAygUqiJffGvc version 32 carries it.
+- Next: running, on the same stick, in a fresh thread. Merge order: #310, #313, #317.
 
 ## Handoff that started it (from the WAVE room walk thread, 2026-10-14)
 - Where it stands: bars-engine #313 (branch `claude/project-thread-o1ntdv`, carries #309) has free walking in the WAVE
