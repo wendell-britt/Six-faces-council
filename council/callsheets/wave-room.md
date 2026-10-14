@@ -51,7 +51,19 @@ six game masters. bars-engine #313; see big-mind-cave.md.
   away; prompts by the right thumb; a zone shows sooner than it hides; one prompt at a time; full pages only from a tap).
   They are in bars-engine `content/ontology-game/cave/DESIGN.md` and apply to every room and cave that gets free walking.
 
-## Next: free walking everywhere (handoff from the WAVE room walk thread, 2026-10-14)
+## Built: free walking everywhere and the hall's doors (2026-10-14)
+- bars-engine #317 (branch `claude/project-thread-re36zv`, draft) carries #313 with #310 merged in and takes walking off
+  the rails in the caves, the hall of the six, the face tunnels and the centre: the stick and the keys, stops as prompts by
+  the right thumb whose page opens from a tap, the way past the next stop still shut on the main path and in passages, free
+  in the levels. The hall's arches are doors 3.2 wide and 5 tall. Choices (stand unless he flips them): walkable width, prompt
+  distances, door size, Sit down moved to the bottom right. DESIGN.md "Free walking everywhere, and the hall's doors".
+- cave-test 376 pass, 1 fail: the idle breathing threshold (shoulders 0.010 against > 0.01), which passed on the two
+  earlier runs of the branch.
+- The phone page https://claude.ai/artifact/23neJJJgywAygUqiJffGvc version 30 carries it.
+- Next: his play of free walking on the phone page; then running, on the same stick, in a fresh thread. Merge order:
+  #310, #313, #317.
+
+## Handoff that started it (from the WAVE room walk thread, 2026-10-14)
 - Where it stands: bars-engine #313 (branch `claude/project-thread-o1ntdv`, carries #309) has free walking in the WAVE
   room only: `freeWalk`, the stick, keys, tilt, the rug, door prompts (`doorZone`, `doorCard`). The caves and the levels
   (hall of the six, face tunnels, centre) still walk on rails (`walkStep`; #310 made it a steady `WALK_SPEED`).
