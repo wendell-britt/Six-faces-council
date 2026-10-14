@@ -1,0 +1,53 @@
+{
+  "strand": "spirit-generator",
+  "callsheet": "council/callsheets/spirit-generator.md",
+  "loop": "spirit look art rounds (Shellback proof)",
+  "max_ahead": 2,
+  "last_look": {
+    "round": 2,
+    "at": "2026-10-14T17:41:00Z",
+    "label": "spirit-generator-r2"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "status": "done",
+      "builds": "Living creature and highest ally form rebuilt after the Taoist Tortoise concept.",
+      "thread": "Natural spirit forms"
+    },
+    {
+      "round": 2,
+      "status": "done",
+      "builds": "Each element sets shell material, growth, skin, cloth and aura.",
+      "thread": "Spirit forms round 2"
+    },
+    {
+      "round": 3,
+      "status": "running",
+      "builds": "One shared eye with element iris colour; organic lava crust for fire; water ribbons for the water aura.",
+      "check": "Contact sheet of all 25 renders, page version 5, eyes read as eyes at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "thread": "Spirit forms round 3"
+    },
+    {
+      "round": 4,
+      "status": "next",
+      "builds": "The Shellback family's other two animal bases, armadillo and pangolin, through all five stages in all five elements, carrying round 3's eyes and element styling.",
+      "check": "Contact sheet of 50 renders beside the tortoise; each base reads as its animal at the 96 px sprite; the page gains a base picker.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 5,
+      "status": "queued",
+      "builds": "One nation style carried across the Shellback stages.",
+      "check": "Same contact sheet with and without the nation style.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    }
+  ]
+}
