@@ -64,6 +64,13 @@ Another engine takes over by writing the same record with its own `engine` value
 same collection, and the button opens it instead of the board's panel. Fields it does not have stay out; pull.py reads
 only `savedAt`, `status`, `stage`, `task`, `rounds[].name`, `resolution` and `charge`.
 
+The WAVE room is the first (bars-engine #324, 2026-10-14). The board's Tap the Vein skip opens it with
+`#wave=board&charge=...&ref=tap-the-vein--<time>` (docs/morning.md). The room saves the run to bars-engine, not to the
+board's store, because the cave page cannot reach the store. `board/pull.py` fetches those runs first with
+`council/wave_runs.py` (`GET /api/council/wave-runs`, `COUNCIL_MENU_TOKEN`) and writes them into `<dir>/blockers/`, so
+they land like a panel run. `--no-room` skips the fetch. A room run adds `ref`, `skipStreak`, `due`, `finishedAt` and,
+on each round, `texture`, `goal`, `push`, `aligned`, `move`, `line`, `light` and `layers`.
+
 ## Reading the store
 
 A board read lists `blockers` with the other collections (`board/read.py`). It is optional, because the pickup
