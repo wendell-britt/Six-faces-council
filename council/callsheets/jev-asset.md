@@ -22,3 +22,4 @@ afterwards. Steer: the labelling must not be a spreadsheet to him.
 - Next: write a second pile of new, unseen doc rows labelled before the run, with a fixed code map in the run brief (src/, prisma/schema.prisma, scripts/, backend/, package.json, public/); then run the model once. Wendell may flip AS-002 to disagrees; apply it before any rerun of the stats, never to the frozen file.
 - Stale doc: the move-icon line (AS-024) says 4 icons; the ontology has 5 since Open Up. Only that row was affected, and it is already out.
   The doc itself in bars-engine `.specify/specs/asset-register-design-system/spec.md` line 68 still needs the fix.
+- From the unfinished-work pass (2026-10-14, `uw-jev-to-sheet`): land JEVI on bars-engine main's backlog by itself (today it lives only on draft #256), and give `jev-asset-recount` the corrected count, four known drifts with one live, beside its original wording.
