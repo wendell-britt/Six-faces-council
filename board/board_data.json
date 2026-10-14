@@ -13325,6 +13325,50 @@
      "c": "Fine answer. The row is dropped from the scoring pile."
     }
    ]
+  },
+  {
+   "id": "jev-teaching-pile",
+   "faces": [
+    "diplomat",
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "q": "How many practice statements should the model learn from before the scored run: 10, 20 or 30?",
+   "why_you": "The size is your number and the council does not pick it. Claude labels the practice rows, and you flip only one that looks wrong, so each extra row costs you little.",
+   "not_before": "The scoring pile froze at 19 rows and the mark was fixed on 2026-10-14. The 158 rows in docs marked for discard were not available to size until the admin labelling finished.",
+   "research": {
+    "title": "What the practice pile is for",
+    "lead": "The practice rows come from the 158 statements in sprite and card-art docs marked for discard. The model reads them only so we can see what its answers look like. No mark is applied and nothing is scored. The 19 scoring rows stay untouched.",
+    "sections": [
+     {
+      "h": "Why more than 10",
+      "p": "The scoring pile has only 2 disagreements out of 19. The sprite docs are where most of the known doc-versus-code drifts are, so a bigger practice pile is likelier to show the model a few disagreements before the scored run."
+     },
+     {
+      "h": "Why not more than 30",
+      "p": "Practice rows teach us about the model's answer style, and they add nothing to the score. Past about 30 the extra labelling and review buys little."
+     }
+    ],
+    "recommend": "Claude's recommendation, not your ruling: 20 rows, chosen to include every drift already known in those docs. Claude labels them from the doc line and code, and you flip a label only if one looks wrong."
+   },
+   "options": [
+    {
+     "v": "10",
+     "label": "10 practice rows",
+     "c": "Least to review. Likely holds few or no disagreements."
+    },
+    {
+     "v": "20",
+     "label": "20 practice rows (recommended)",
+     "c": "Includes the known drifts in the discard docs. Claude labels them; you flip only what looks wrong."
+    },
+    {
+     "v": "30",
+     "label": "30 practice rows",
+     "c": "Most variety. More review, little extra learning."
+    }
+   ]
   }
  ],
  "causes": [
