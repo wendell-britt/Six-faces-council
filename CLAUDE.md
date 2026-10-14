@@ -36,6 +36,10 @@ projects more effectively between that and Jev we can save a lot of tokens"
   start the next thread now (naming the brief and any pull request the new thread owns), drops its own pull request
   watches, and resolves itself. The coordinator starts that thread without asking (Wendell, 2026-10-14: "A major
   issue is we aren't picking up work automatically and closing threads when they are done").
+- Strands with a next-round contract (`council/loops/<strand>.json`, docs/loops.md; spirit-generator is the pilot)
+  continue without asking: a finished round runs `python3 council/loops/next_round.py finish <strand> <n>`, and when
+  the tool says the next round may start (gate auto, at most two rounds past his last look) the handoff names it and
+  the coordinator starts it. Record each look of his with `next_round.py look`, which also writes the labels file.
 - Drop a pull request watch once the pull request merges. Pull requests merge by themselves once they are ready and
   their checks pass (docs/merging.md, Wendell, 2026-10-06); only a `council/faces.yaml` change or a daily branch
   waits for his label.
