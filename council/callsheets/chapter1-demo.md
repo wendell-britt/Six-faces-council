@@ -16,7 +16,7 @@ skills and character and NPC generation based on player blockages."
 | Fights | spirit fights, sprout #50, build 3 in progress (`sf-stats-carry`) | His play of build 2 |
 | Blender pipeline | cave assets J1 to J5, spirit Shellback round 2 (25 models and sprites) | Sprites wired into the Sprout page |
 | Allyship Deck | 147 cards, bars-engine `public/allyship-deck/allyship-deck.json`, `/deck` | A place in play: `ch1-deck-hand` makes it the player's hand |
-| 3D cave | WAVE room, Big Mind cave, levels plan #307 | Walkable skeleton; book-to-cave path (only if `ch1-where` says cave) |
+| 3D cave | WAVE room, Big Mind cave, levels plan #307 | Walkable skeleton; book-to-cave path (the walkthrough ends in the cave, `ch1-where`) |
 
 ## Path to the demo
 1. Step 1 of text-to-campaign on Chapter 1: `ch1/extract.yaml` (milestones, lessons, beliefs, the blockages a
@@ -27,7 +27,7 @@ skills and character and NPC generation based on player blockages."
 5. His phone play, then fixes; then a short video for the Kickstarter page.
 
 ## Waiting on
-- `ch1-where` on the board (Sprout recommended). Step 1 does not depend on it.
+- Nothing from Wendell. `ch1-where` answered 2026-10-14: Sprout ending in the cave, 2D or 3D character, all three loops.
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
 
 ## Next thread brief
