@@ -259,6 +259,12 @@ body.has-send{padding-bottom:120px}
 .mo-pick{font:inherit;font-size:.88rem;padding:5px 14px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
 .mo-pick[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .mo-pick:disabled{opacity:.45;cursor:not-allowed}
+/* Lenses panel (lens-board-reads-goals, 2026-10-14): his active Lens goals by domain, empty domains shown as empty. */
+.mo-lens{display:grid;grid-template-columns:minmax(7.5rem,max-content) 1fr;gap:6px 14px;padding:4px 0 12px}
+.mo-lens dt{font-weight:600}
+.mo-lens dd{margin:0;overflow-wrap:anywhere}
+.mo-lens dd.none{color:var(--muted)}
+.mo-lens ul{margin:0;padding-left:1.1em}
 /* Tap the Vein on the board (2026-10-14, Wendell: "so that I can do the tap the vein directly from the environemnt where
    I'll be using that information"). The free write stays in this browser; only lines he marks are saved (mm-raw). */
 .ttv-write{width:100%;min-height:10em}
@@ -327,6 +333,9 @@ body.has-send{padding-bottom:120px}
 <section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
   <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
   <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
+  <details class="mo-cat" id="mo-lenses" open hidden><summary><b>Your Lens goals</b><span id="mo-lenses-sum"></span></summary>
+    <dl class="mo-lens" id="mo-lens-list"></dl>
+  </details>
   <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">Write, mark what to do, seal</span></summary>
     <p class="lede">Write whatever is here this morning. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
     <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
@@ -1423,7 +1432,7 @@ function moApplyPaste(){
   let m; try { m = moParse(moPaste.menu); } catch { MO = base || null; return; }
   const goals = (m.goals && m.goals.length) ? m.goals : Object.values(Object.fromEntries(m.items.filter(i => i.goal).map(i => [i.goal.id, {id: i.goal.id, title: i.goal.title, domain: i.goal.domain, cadence: i.goal.cadence}])));
   const cat = {key: 'menu', title: 'From your free write', blurb: 'The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).', items: moMenuItems(m)};
-  MO = {date: m.sessionDate || (base && base.date), pick_limit: 7, goals: (base && base.goals && base.goals.length) ? base.goals : goals,
+  MO = {date: m.sessionDate || (base && base.date), pick_limit: 7, goals: (base && base.goals && base.goals.length) ? base.goals : goals, lenses: base && base.lenses,
         categories: [cat, ...((base && base.categories) || []).filter(c => c.key !== 'menu')]};
 }
 const moRecorded = new Set((DATA.picks || []).map(p => p.id));
@@ -1459,9 +1468,21 @@ function moItem(it, cat, full){
       <button type="button" class="mo-pick" aria-pressed="${picked}"${rec||full_||!db?' disabled':''}>${rec ? 'Picked, recorded' : picked ? 'Picked' : full_ ? 'Seven picked' : 'Pick'}</button>
     </div></div>`;
 }
+/* The Lenses panel: council/morning.py reads /api/lenses/goals into DATA.morning.lenses (lens-board-reads-goals). */
+function renderLenses(){
+  const L = MO && MO.lenses, box = document.getElementById('mo-lenses');
+  box.hidden = !L;
+  if (!L) return;
+  const n = L.domains.reduce((k, d) => k + d.goals.length, 0);
+  document.getElementById('mo-lenses-sum').textContent = (n ? `${n} active goal${n === 1 ? '' : 's'}` : 'No active goals yet') + (L.note ? ` · ${L.note}` : '');
+  document.getElementById('mo-lens-list').innerHTML = L.domains.map(d => `<dt>${esc(d.label)}</dt>` + (d.goals.length
+    ? `<dd><ul>${d.goals.map(g => `<li>${esc(g.title)}${g.cadence ? ' (' + esc(g.cadence) + ')' : ''}</li>`).join('')}</ul></dd>`
+    : '<dd class="none">No goals here yet</dd>')).join('');
+}
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
+  renderLenses();
   document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));

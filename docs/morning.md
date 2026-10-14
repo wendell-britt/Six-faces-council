@@ -55,6 +55,14 @@ free write, as bars-engine has, is a later step.
 bars-engine's Tap the Vein stays the home of tasks, charge and Lens goals; the board box is the front door he uses
 where he picks his work (`ttv-board-home`).
 
+## Lens goals on the Morning tab
+
+`lens-board-reads-goals` (Lenses pass 1, 2026-10-14): the board reads his Lens goals every morning without needing a
+sealed menu. `council/morning.py` reads bars-engine's `GET /api/lenses/goals` with the same `COUNCIL_MENU_TOKEN`
+(or a saved copy with `--goals <file>`), and its goals win over the menu's goals list. The Morning tab shows them in
+the "Your Lens goals" panel, one row per domain, with an empty domain shown as "No goals here yet". When the export
+cannot be read, the panel says why and falls back to the goals in the sealed menu.
+
 ## The categories
 
 | Key | Source |
