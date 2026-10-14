@@ -338,6 +338,7 @@ body.has-send{padding-bottom:120px}
   </details>
   <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">Write, mark what to do, seal</span></summary>
     <p class="lede">Write whatever is here this morning. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
+    <div class="ttv-lens" id="ttv-lens" hidden><p class="lede"><label>Lens with no goals yet: <select id="ttv-lens-pick"></select></label> <span id="ttv-lens-prompt"></span> If you write toward it, the board read also pitches year goals for it from your words, and each one you keep becomes an active goal in bars-engine (lens-pitch-goals).</p></div>
     <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
     <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines</button><div class="state" id="ttv-state"></div></div>
     <div id="ttv-lines"></div>
@@ -1479,10 +1480,27 @@ function renderLenses(){
     ? `<dd><ul>${d.goals.map(g => `<li>${esc(g.title)}${g.cadence ? ' (' + esc(g.cadence) + ')' : ''}</li>`).join('')}</ul></dd>`
     : '<dd class="none">No goals here yet</dd>')).join('');
 }
+/* An empty domain's prompt in the Tap the Vein box (lens-pitch-goals, 2026-10-14). One domain a morning, by date;
+   he can pick another. Sealing saves the domain with the free write so the board read pitches goals for it. */
+function renderTtvLens(){
+  const L = MO && MO.lenses, box = document.getElementById('ttv-lens'), pick = document.getElementById('ttv-lens-pick');
+  const empty = L ? L.domains.filter(d => !d.goals.length) : [];
+  box.hidden = !empty.length;
+  if (!empty.length) return;
+  const keys = empty.map(d => d.key).join(',');
+  if (pick.dataset.keys !== keys){
+    const day = Math.floor(Date.parse(new Date().toLocaleDateString('en-CA')) / 864e5);
+    pick.innerHTML = empty.map(d => `<option value="${esc(d.key)}">${esc(d.label)}</option>`).join('') + '<option value="">None today</option>';
+    pick.value = empty[day % empty.length].key; pick.dataset.keys = keys;
+  }
+  const d = empty.find(x => x.key === pick.value);
+  document.getElementById('ttv-lens-prompt').textContent = d ? d.prompt || '' : '';
+}
+document.getElementById('ttv-lens-pick').addEventListener('change', renderTtvLens);
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
-  renderLenses();
+  renderLenses(); renderTtvLens();
   document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
@@ -1554,7 +1572,8 @@ document.getElementById('ttv-seal').addEventListener('click', async () => {
   const doc = {menu: JSON.stringify({version: 1, origin: 'board', sessionDate: date, sealedAt: now, items}), sessionDate: date, savedAt: now};
   if (!db){ st.textContent = 'This view cannot save.'; return; }
   try {
-    await db.doc('morning/freewrite').set({text, sessionDate: date, savedAt: now});
+    const lens = document.getElementById('ttv-lens').hidden ? '' : document.getElementById('ttv-lens-pick').value;
+    await db.doc('morning/freewrite').set(Object.assign({text, sessionDate: date, savedAt: now}, lens ? {lensDomain: lens} : {}));
     await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); moOpen.add('menu');
     ttvLines = []; document.getElementById('ttv-write').value = ''; try { localStorage.removeItem(TTV_KEY); } catch {}
     ttvRender(); renderMorning();
