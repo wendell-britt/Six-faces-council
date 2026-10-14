@@ -1,0 +1,219 @@
+{
+ "B2-001": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-002": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-003": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-004": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-005": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-006": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-007": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-008": {
+  "flag": true,
+  "unmatched": [
+   "info.x-gm-faces"
+  ]
+ },
+ "B2-009": {
+  "flag": true,
+  "unmatched": [
+   "gm_face:<name>"
+  ]
+ },
+ "B2-010": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-011": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-012": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-013": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-014": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-015": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-016": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-017": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-018": {
+  "flag": true,
+  "unmatched": [
+   "src/actions/books.ts"
+  ]
+ },
+ "B2-019": {
+  "flag": true,
+  "unmatched": [
+   "src/actions/book-quest-review.ts"
+  ]
+ },
+ "B2-020": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-021": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-022": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-023": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-024": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-025": {
+  "flag": true,
+  "unmatched": [
+   ".github/workflows/frontend-check.yml"
+  ]
+ },
+ "B2-026": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-027": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-028": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-029": {
+  "flag": true,
+  "unmatched": [
+   "npm run db:push",
+   "npx prisma db push"
+  ]
+ },
+ "B2-030": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-031": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-032": {
+  "flag": true,
+  "unmatched": [
+   "20250306000000_playbook_to_archetype_rename"
+  ]
+ },
+ "B2-033": {
+  "flag": true,
+  "unmatched": [
+   "20260810193000_repair_tap_the_vein_columns"
+  ]
+ },
+ "B2-034": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-035": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-036": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-037": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-038": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-039": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-040": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-041": {
+  "flag": true,
+  "unmatched": [
+   "src/actions/book-analyze.ts"
+  ]
+ },
+ "B2-042": {
+  "flag": true,
+  "unmatched": [
+   "src/actions/generate-quest.ts"
+  ]
+ },
+ "B2-043": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-044": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-045": {
+  "flag": true,
+  "unmatched": [
+   "QUEST_GEN_MODEL"
+  ]
+ },
+ "B2-046": {
+  "flag": true,
+  "unmatched": [
+   "QUEST_GEN_AI_ENABLED"
+  ]
+ },
+ "B2-047": {
+  "flag": false,
+  "unmatched": []
+ },
+ "B2-048": {
+  "flag": false,
+  "unmatched": []
+ }
+}
