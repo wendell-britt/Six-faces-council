@@ -7918,6 +7918,28 @@
    "auto": true,
    "pos": "Tap the Vein now runs on the board's Morning tab as well as in bars-engine. The board box seals the same menu a pasted one makes, so picks, Lens goals and threads work as they do today. bars-engine stays the home of tasks, charge and Lens goals; the board box writes no tasks there yet.",
    "why": "Your ask, 2026-10-14: \"so that I can do the tap the vein directly from the environemnt where I'll be using that information\". Reusing the pasted-menu path means pull.py, morning.py and the Send button need no new route. Source: docs/morning.md, Tap the Vein on the board."
+  },
+  {
+   "id": "loop-ahead-two",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "loop engineering",
+   "auto": true,
+   "pos": "Art and design rounds now start themselves. Each strand with a contract (council/loops/<strand>.json, docs/loops.md) names its next round, how it is checked and its budget; when a round ends, the coordinator starts the next one without waiting for you. Your look becomes the veto: work runs at most two rounds past your last look, then waits. A redirect from you rewrites the next round before it starts, and a stop holds every queued round. The spirit art loop is the pilot. Round 3 (eyes, fire crust, water ribbons) is running from your round 2 look; round 4 (the armadillo and pangolin bases in all stages and elements) starts itself when round 3 ends; round 5 (one nation style) waits for your look at round 3. Each of your looks is also saved with its render in council/loops/labels/, for a grader that can later predict your easy calls. This stands unless you flip it.",
+   "why": "Your words on the loop engineering thread, 2026-10-14: \"I do a lot of prompting for the next move instead of that next move being already acted upon\", then \"Yes I agree with this. What would we need to do to implement\". Two rounds ahead keeps a wrong turn to two small rounds."
+  },
+  {
+   "id": "loop-auto-gate",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "loop engineering",
+   "auto": true,
+   "pos": "A round starts itself only when its gate is auto: no money spent, no account signed into or changed, nothing published outside the project, and no council/faces.yaml change. A round that needs your eyes, money or accounts waits and shows up as a step for you instead. Renders, builds on a branch, pull requests and art proof pages count as auto. This stands unless you flip it.",
+   "why": "Built with loop-ahead-two. Spending and accounts are steps no one can undo by the time you read about them, so they keep needing your word; council/faces.yaml changes only by your ruling (CLAUDE.md)."
   }
  ],
  "questions": [
