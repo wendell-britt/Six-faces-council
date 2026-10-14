@@ -10,6 +10,28 @@
   2. A `WARP` table beside `BUILDS` in `cave/character.py` (limb ratio, head size, spine curve, stoop, one joint collapsed), each row named for a blockage, applied after the fused body and before the weights are painted. The blockage list comes from the ontology; ask the board (`reach_test` first) only if the record cannot map a blockage to a row.
   3. A 12-figure sheet from one frame, each figure one number away, to look at before anything else.
 
+## Built (2026-10-14, bars-engine #325)
+- Item 0, the spirit rig: `tools/blender-cloud/content/spirits/rig.py`. A joint table per base and stage (tortoise,
+  armadillo, pangolin, fox; creature on four legs, ally form on two, gas, core and hologram on one float bone), the
+  cave avatar's joint names, the fused body, cloth and tail weighted per vertex, every other piece on the bone it sits
+  on, the aura on the root, Walk (one second) and Idle (two seconds). rig_scene(base, stage) is what shellback.py calls
+  before export once #318 lands; until then it rigs an exported GLB. Sheets and four rigged GLBs:
+  /mnt/project-files/3d-build/spirit-rig-2026-10-14/.
+- Scale declared (`SIZE` in rig.py) and baked in, 1 unit = 1 m: tortoise creature 1.2 m long, armadillo 1.0, pangolin
+  0.9, fox 0.75 nose to rump; ally forms 1.4 to 1.5 m tall; gas, core and hologram at their creature's scale.
+- Item 1, the census: `content/ontology-game/cave/census.py`, plain Python. J4, J5 and the body map figure pass (closed,
+  0 degenerate); spirits and the chamber report. Tests C1 (offline) and S1 (bpy, skips until shellback.py is on main).
+- Position (stands unless he flips it): the WARP rows in item 2 are named for the seven daemons (Controller, Damaged
+  Self, Emotional Body, Fixer, Protector, Skeptic, Victim), since the record already maps a blockage to a daemon and a
+  daemon to a spirit family (sg-body-from, ch1-npc-from-blockage). No board question needed.
+
+## Next thread (Opus, fresh): items 2 and 3
+- Brief: add `WARP` beside `BUILDS` in bars-engine `content/ontology-game/cave/character.py`, one row per daemon (limb
+  ratio, head size, spine curve, stoop, one joint collapsed), applied after the fused body and before the weights;
+  every warped figure must pass `census.py --kind humanoid` and J4's walk check. Then the 12-figure sheet from one
+  frame, each one number away, to /mnt/project-files/3d-build/. Own bars-engine #325 until it merges (drop the watch
+  then), and Six-faces-council #150.
+
 ## What we already follow
 - Version pinned: `bpy==5.2.2` on Python 3.13 (tools/blender-cloud/README.md). Matches the tweet's current LTS.
 - Scale convention: GLB exports 1 unit = 1 m; characters are 1.75 m. Cameras and dims in the cave scripts agree.
@@ -31,4 +53,4 @@
 - EXACT booleans, `gpu.init()` offscreen sheets: no booleans in these scripts, and Cycles CPU works.
 
 ## Waiting on
-- Nothing from Wendell. Start the build when a thread is free; it does not touch #318.
+- Nothing from Wendell. Items 2 and 3 start in a fresh thread (above).
