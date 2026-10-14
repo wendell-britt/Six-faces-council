@@ -28,6 +28,9 @@ Steps (2026-10-12): a tick, note or date move on the Your steps tab lives only i
 the Send button sends it like any answer. Until this date pull.py never read that collection, so the 18:40 Send of
 three step notes recorded nothing and the read said all was recorded. Every change later than
 steps_recorded_through is now recorded in the ledger; a note or a moved date goes on the needs-work list.
+
+Files on a step (2026-10-14): a step can carry files (a draft, an image, a link) that the board shows inline, each with
+its own notes box. Those notes live in the step's fileNotes and are recorded and listed like a step note.
 """
 import argparse
 import importlib.util
@@ -153,6 +156,11 @@ def find_steps(data, store):
         if (doc.get("note") or "").strip() and doc.get("noteAt", "") > since:
             out.append({"id": f.stem, "at": doc["noteAt"], "what": "note", "note": doc["note"].strip(),
                         "do": doc.get("do", "")})
+        titles = {x.get("id"): x.get("title") or x.get("id") for x in doc.get("files") or [] if isinstance(x, dict)}
+        for fid, n in sorted((doc.get("fileNotes") or {}).items()):
+            if isinstance(n, dict) and (n.get("text") or "").strip() and n.get("at", "") > since:
+                out.append({"id": f.stem, "at": n["at"], "what": "file note", "file": fid, "title": titles.get(fid, fid),
+                            "note": n["text"].strip(), "do": doc.get("do", "")})
         for m in doc.get("moved") or []:
             if m.get("at", "") > since:
                 out.append({"id": f.stem, "at": m["at"], "what": "moved", "from": m.get("from"), "to": m.get("to"),
@@ -232,6 +240,8 @@ def apply(data, new, general, steps, ledger_rel, blockers=()):
     for e in steps:
         if e["what"] == "note":
             work.append(f'steps/{e["id"]}: note "{e["note"]}"')
+        elif e["what"] == "file note":
+            work.append(f'steps/{e["id"]}: notes on "{e["title"]}": "{e["note"]}"')
         elif e["what"] == "moved":
             work.append(f'steps/{e["id"]}: moved from {e["from"]} to {e["to"]}')
     if steps:

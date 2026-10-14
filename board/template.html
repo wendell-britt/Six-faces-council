@@ -143,6 +143,17 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-later-note{font-size:.85rem;color:var(--warn);margin:0}
 /* Due dates (Wendell, 2026-10-06): every step has a deadline, so a step that slips shows up as charge to work with. */
 .st-due-over{color:var(--warn);font-weight:600}
+/* Files to review on a step (Wendell, 2026-10-14, blocker on anastasia-campaign-live-01: "If I Can click the file see
+   whats going on and update the notes that would get me unblocked"). The draft sits in the card, open, with its own notes. */
+.st-files{display:grid;gap:8px}
+.st-file{border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:var(--panel)}
+.st-file > summary{font-weight:600;color:var(--fg)!important;min-height:32px;display:flex;align-items:center;gap:8px}
+.st-file-kind{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:400}
+.st-file-text{white-space:pre-wrap;overflow-wrap:anywhere;max-height:60vh;overflow:auto;background:var(--accent-soft);border-radius:4px;padding:10px 12px;margin:6px 0;font-size:.93rem;line-height:1.5;color:var(--fg)}
+.st-file img{max-width:100%;height:auto;border-radius:4px;margin:6px 0;display:block}
+.st-file-cap{font-size:.85rem;color:var(--muted);margin:4px 0}
+.st-file-bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0}
+.st-file label{font-size:.85rem;color:var(--muted);display:block;margin-top:6px}
 .st-charge{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem;margin:0}
 .st-move{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}
 .st-move input{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
@@ -321,7 +332,7 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
 <div class="banner" id="banner">This view cannot save. Your choices stay on screen only.</div>
 <div class="ttv-gate" id="ttv-gate" role="region" aria-label="Tap the Vein first">
   <p class="lede" style="margin:0"><b>Tap the Vein comes first today.</b> Seal it in the box below and the rest of the board opens. The next board read takes in what you sealed.</p>
-  <div class="ctl"><button type="button" id="ttv-elsewhere">I did it in bars-engine today</button><button type="button" id="ttv-skip">Skip today</button><span class="state" id="ttv-gate-state"></span></div>
+  <div class="ctl"><button type="button" id="ttv-recheck" hidden>Check bars-engine again</button><button type="button" id="ttv-skip">Skip today</button><span class="state" id="ttv-gate-state"></span></div>
 </div>
 
 <section id="view-open" role="tabpanel" aria-labelledby="tab-open">
@@ -434,6 +445,16 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
         <div class="bt-hp">turns <div class="bt-bar"><i id="bt-turns"></i></div><span id="bt-turnn"></span></div></div>
     </div>
     <div class="bt-box" id="bt-box" aria-live="polite"></div>
+  </div>
+</div>
+
+<div class="bt-screen" id="ttv-wave" role="dialog" aria-modal="true" aria-labelledby="ttv-wave-title">
+  <div class="bt-stage">
+    <b id="ttv-wave-title" style="font-family:var(--display);font-size:1.1rem">Something is in the way of Tap the Vein</b>
+    <div class="bt-box"><p class="bt-say" id="ttv-wave-say"></p>
+      <p class="bt-sub">The WAVE room meets it as a charge: Welcome, Witness, Acknowledge, Allow, Validate, then the 3-2-1 if it stays. It opens in a new tab.</p>
+      <div class="bt-row"><a class="save" id="ttv-wave-go" target="_blank" rel="noopener" href="#">Go into the WAVE room</a><button type="button" class="bt-link" id="ttv-wave-here">Work it here on the board instead</button></div>
+      <div class="bt-row"><span></span><button type="button" class="bt-link" id="ttv-wave-close">Not now</button></div></div>
   </div>
 </div>
 
@@ -1034,7 +1055,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeB
 
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
-const stDrafts = {}, stSecrets = {};
+const stDrafts = {}, stSecrets = {}, stFileDrafts = {};
 // Which device Wendell is on. Starts from the screen (a touch screen counts as a phone) and keeps his choice on this device.
 let stWhere = (() => { try { const v = localStorage.getItem('st-where'); if (v === 'phone' || v === 'computer') return v; } catch {} return matchMedia('(pointer: coarse)').matches ? 'phone' : 'computer'; })();
 const stLater = s => stWhere === 'phone' && s.device === 'computer' && !s.done && !s.retired;
@@ -1069,7 +1090,32 @@ function stPeek(s, over){
   if (s.device === 'computer' && !s.done) bits.push('Computer');
   if (s.optional) bits.push('Optional');
   if (s.note) bits.push('Has a note');
+  const nf = stFiles(s).length;
+  if (nf) bits.push(`${nf} to review`);
   return bits.join(' · ');
+}
+/* A step's files: [{id, title, kind: text|image|link, text, src, href, caption}], written by the session that publishes
+   the step. Text shows in full, an image shows inline, a link opens. Each has a notes box that saves to fileNotes.<id>
+   on the step, which pull.py records and lists as needs work, the same as a step note. */
+const stFileId = f => String(f && f.id || '').replace(/[^A-Za-z0-9_-]/g, '');
+const stFiles = s => (Array.isArray(s.files) ? s.files : []).filter(f => f && stFileId(f));
+const stImg = u => /^https:\/\//i.test(String(u || '')) || /^data:image\/(png|jpe?g|gif|webp);/i.test(String(u || ''));
+function stFile(id, s, f){
+  const fid = stFileId(f), key = id + '--' + fid, saved = ((s.fileNotes || {})[fid] || {});
+  const kind = f.kind || (f.text ? 'text' : f.src ? 'image' : 'link');
+  let body = '';
+  if (kind === 'text') body = `<div class="st-file-text" id="sf-${key}">${esc(f.text || '')}</div><div class="st-file-bar"><button type="button" class="st-btn" data-copy="sf-${key}">Copy</button></div>`;
+  else if (kind === 'image' && stImg(f.src)) body = `<img src="${esc(f.src)}" alt="${esc(f.title || 'Attached image')}" loading="lazy">`;
+  if (stHref(f.href)) body += `<div class="st-file-bar"><a class="st-btn" href="${esc(f.href)}" target="_blank" rel="noopener">${esc(kind === 'link' ? 'Open it' : 'Open the full file')}</a></div>`;
+  const cap = f.caption ? `<p class="st-file-cap">${esc(f.caption)}</p>` : '';
+  return `<details class="st-file" data-group="sf-${key}"${stOpenGroups.has('sfc-' + key) ? '' : ' open'}>
+    <summary>${esc(f.title || 'Attached file')} <span class="st-file-kind">${esc(kind)}</span></summary>
+    ${cap}${body}
+    ${saved.text ? `<div class="st-note">Your notes: ${esc(saved.text)}</div>` : ''}
+    <label for="sfn-${key}">Your notes on this</label>
+    <textarea id="sfn-${key}" placeholder="What to change, cut or keep. Claude reads it.">${esc(stFileDrafts[key] ?? saved.text ?? '')}</textarea>
+    <button type="button" class="st-btn" data-fnote="${id}" data-fid="${fid}">Save notes</button> <span class="st-state" id="sfs-${key}"></span>
+  </details>`;
 }
 function stStep(id, s){
   if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
@@ -1077,6 +1123,7 @@ function stStep(id, s){
   const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}${stHref(s.href2) ? `<br><a href="${esc(s.href2)}" target="_blank" rel="noopener">${esc(s.where2 || 'Then open this')}</a>` : ''}</div></div>` : '';
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
   const gen = s.generate ? `<div class="st-row"><span>Secret</span><div class="st-val"><button type="button" class="st-btn st-solid" data-gen="${id}" data-len="${Number(s.generate)||48}">Make a new secret</button><code id="sg-${id}" ${stSecrets[id]?'':'hidden'}>${esc(stSecrets[id]||'')}</code><button type="button" class="st-btn" data-copy="sg-${id}" id="sgc-${id}" ${stSecrets[id]?'':'hidden'}>Copy</button></div></div><p class="st-src">It is made on this device and never saved anywhere. Paste it straight in, and make a new one if you lose it.</p>` : '';
+  const files = stFiles(s).length ? `<div class="st-files">${stFiles(s).map(f => stFile(id, s, f)).join('')}</div>` : '';
   const check = s.check ? `<div class="st-row"><span>Check</span><div class="st-val">${esc(s.check)}</div></div>` : '';
   const over = stOverdue(s);
   const due = s.due && !s.done ? `<div class="st-row"><span>Due</span><div class="st-val${over ? ' st-due-over' : ''}">${esc(stDueText(s.due))}</div></div>` : '';
@@ -1094,7 +1141,7 @@ function stStep(id, s){
       <details class="st-fold" data-group="s-${id}"${stOpenGroups.has('s-' + id) ? ' open' : ''}>
       <summary><span class="st-do">${esc(s.do)}</span><span class="st-peek">${stPeek(s, over)}</span></summary>
       <div class="st-more">
-      ${where}${enter}${gen}${check}${due}${charge}${past}
+      ${files}${where}${enter}${gen}${check}${due}${charge}${past}
       <div class="st-chips">${chips.join('')}</div>
       ${s.note ? `<div class="st-note">Your note: ${esc(s.note)}</div>` : ''}
       <details${over ? ' open' : ''}><summary>Stuck, or something looks different?</summary>
@@ -1153,8 +1200,16 @@ function stSecret(len){
 }
 const stepsView = document.getElementById('view-steps');
 // Remember which Completed groups are open, since every save redraws the tab.
-stepsView.addEventListener('toggle', e => { const g = e.target.dataset && e.target.dataset.group; if (!g) return; if (e.target.open) stOpenGroups.add(g); else stOpenGroups.delete(g); }, true);
-stepsView.addEventListener('input', e => { if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value; });
+stepsView.addEventListener('toggle', e => {
+  const g = e.target.dataset && e.target.dataset.group; if (!g) return;
+  // A file opens by default, so what is kept is that he closed it.
+  if (g.startsWith('sf-')){ const c = 'sfc-' + g.slice(3); if (e.target.open) stOpenGroups.delete(c); else stOpenGroups.add(c); return; }
+  if (e.target.open) stOpenGroups.add(g); else stOpenGroups.delete(g);
+}, true);
+stepsView.addEventListener('input', e => {
+  if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value;
+  if (e.target.id && e.target.id.startsWith('sfn-')) stFileDrafts[e.target.id.slice(4)] = e.target.value;
+});
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.where){
@@ -1190,6 +1245,15 @@ stepsView.addEventListener('click', async e => {
     const moved = [...(s.moved || []), {from: s.due || null, to: v, at: new Date().toISOString()}];
     try { await db.doc('steps/' + id).update({due: v, moved}); st.textContent = 'Date moved. Claude reads it.'; }
     catch (err){ st.textContent = 'Could not move the date (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (t.dataset.fnote){
+    const id = t.dataset.fnote, fid = t.dataset.fid, key = id + '--' + fid, st = document.getElementById('sfs-' + key), s = stSteps[id];
+    const text = (document.getElementById('sfn-' + key).value || '').trim();
+    if (!db || !s){ st.textContent = 'Not saved in this view.'; return; }
+    const fileNotes = {...(s.fileNotes || {}), [fid]: {text, at: new Date().toISOString()}};
+    try { await db.doc('steps/' + id).update({fileNotes}); delete stFileDrafts[key]; st.textContent = 'Saved. Claude reads it.'; }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
     return;
   }
   if (t.dataset.note){
@@ -1366,7 +1430,7 @@ function pendingSaves(){
     if (!d.removed && !moRecorded.has(id) && after(d.savedAt)) out.push('picks/' + id);
   }
   for (const id of Object.keys(stSteps)){
-    const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at)].filter(Boolean).sort().pop();
+    const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at), ...Object.values(s.fileNotes || {}).map(n => n && n.at)].filter(Boolean).sort().pop();
     if (t && t > PICKUP_SINCE && after(t)) out.push('steps/' + id);
   }
   // A run of the blocker panel counts once it is saved, finished or not, so a run left half way still reaches Claude.
@@ -1614,11 +1678,16 @@ document.getElementById('ttv-seal').addEventListener('click', async () => {
 /* Tap the Vein first (ttv-first). Wendell, 2026-10-14: "the first thing that happens in the morning when I open the
    board is tap the vein. It checks to see if one's been done on bars-engine and if not forces one to be done in the
    board ... There should be a button that gives an option to skip but if it's skipped for 2+ days it triggers a Wave or
-   321 session on the blocker". The board cannot ask bars-engine itself (the menu key never reaches the page), so today
-   counts as done when the last gather fetched today's sealed menu (DATA.morning.sealed), a menu sealed or pasted here
-   carries today's date, or ttv/<date> in the store says done, done in bars-engine, or skipped. Two or more skips in a
-   row (days the board was not opened do not break the run; a done day does) open the blocker panel on Tap the Vein. */
-let ttvDays = null;
+   321 session on the blocker". Today counts as done when the last gather fetched today's sealed menu
+   (DATA.morning.sealed), a menu sealed or pasted here carries today's date, or ttv/<date> in the store says done,
+   bars-engine or skipped. While the board is held it asks bars-engine itself (ttv-bars-engine-trusted overruled,
+   2026-10-14: "I do think we need to be able to make an API call to bars-engine directly"): GET
+   /api/tap-the-vein/status?date=<today> through the viewer's Vercel connector, which answers sealed or not and nothing
+   else. Two or more skips in a row (days the board was not opened do not break the run; a done day does) offer the WAVE
+   room (ttv-skip-wave, his steer: "It should deposit me inside the WAVE room"), with the board's panel as the fallback. */
+const TTV_STATUS = 'https://bars-engine.vercel.app/api/tap-the-vein/status?date=';
+const TTV_ROOM = 'https://bars-engine.vercel.app/ontology-game/cave/';
+let ttvDays = null, ttvCheck = '';
 function ttvHandled(){
   const today = ttvToday(), rec = (ttvDays || {})[today];
   return !!(rec || ((DATA.morning || {}).sealed === today) || (moPaste && moPaste.sessionDate === today));
@@ -1632,18 +1701,48 @@ function ttvGate(){
   const held = !!db && ttvDays !== null && !ttvHandled(), was = document.body.classList.contains('ttv-held');
   document.body.classList.toggle('ttv-held', held);
   if (held && !was){ show('morning'); document.getElementById('mo-ttv').open = true; }
+  if (held && mcp && ttvCheck !== ttvToday()) ttvAsk();
 }
-async function ttvMark(status){
+async function ttvAsk(){
+  const st = document.getElementById('ttv-gate-state'), again = document.getElementById('ttv-recheck'), date = ttvToday();
+  ttvCheck = date; again.hidden = true; st.textContent = 'Checking bars-engine…';
+  let res = null;
+  try {
+    const r = await mcp.callTool('Vercel', 'web_fetch_vercel_url', {url: TTV_STATUS + date}, {cache: false});
+    const p = r && r.payload;
+    res = p && p.status === 200 ? JSON.parse(p.text) : {error: p && p.status ? `bars-engine answered ${p.status}` : 'no answer'};
+  } catch (err){ res = {error: err && err.code === 'not_granted' ? 'the Vercel connector is not allowed for this page' : (err && err.code) || 'no answer'}; }
+  if (res && res.sealed){ st.textContent = 'Done in bars-engine today.'; await ttvMark('bars-engine', {checked: true, sealedAt: res.sealedAt || null}); return; }
+  if (res && res.sealed === false){ st.textContent = 'Not sealed in bars-engine yet today.'; again.hidden = false; return; }
+  st.textContent = `Could not check bars-engine (${res.error}).`; again.hidden = false;
+}
+async function ttvMark(status, extra){
   const st = document.getElementById('ttv-gate-state'), date = ttvToday();
   if (!db){ st.textContent = 'This view cannot save.'; return false; }
-  try { const rec = {status, savedAt: new Date().toISOString()}; await db.doc('ttv/' + date).set(rec); ttvDays = {...ttvDays, [date]: rec}; ttvGate(); return true; }
+  try { const rec = {status, ...(extra || {}), savedAt: new Date().toISOString()}; await db.doc('ttv/' + date).set(rec); ttvDays = {...ttvDays, [date]: rec}; ttvGate(); return true; }
   catch { st.textContent = 'Not saved; try again.'; return false; }
 }
-document.getElementById('ttv-elsewhere').addEventListener('click', () => ttvMark('bars-engine'));
+document.getElementById('ttv-recheck').addEventListener('click', ttvAsk);
+let ttvWave = null;
 document.getElementById('ttv-skip').addEventListener('click', async () => {
   if (!(await ttvMark('skipped'))) return;
-  const run = ttvSkipRun();
-  if (run >= 2) openBlocker('tap-the-vein', {do: `Tap the Vein (skipped ${run} days running)`, list: 'morning', due: ttvToday(), skipStreak: run});
+  const run = ttvSkipRun(); if (run < 2) return;
+  const ref = `tap-the-vein--${Date.now().toString(36)}`, charge = `Tap the Vein, skipped ${run} days running`;
+  ttvWave = {run, ref, charge};
+  // The room reads this hash (wave=board) once the WAVE room thread builds it; its record comes back to blockers/<ref>.
+  document.getElementById('ttv-wave-go').href = `${TTV_ROOM}#wave=board&charge=${encodeURIComponent(charge)}&skips=${run}&ref=${ref}&date=${ttvToday()}`;
+  document.getElementById('ttv-wave-say').textContent = `You have skipped Tap the Vein ${run} days running. Take what is stopping you into the WAVE room.`;
+  $b('ttv-wave').classList.add('on');
+});
+function ttvWaveClose(via){
+  $b('ttv-wave').classList.remove('on');
+  if (ttvWave && db) db.doc('ttv/' + ttvToday()).update({wave: via, waveRef: ttvWave.ref}).catch(() => {});
+}
+document.getElementById('ttv-wave-go').addEventListener('click', () => ttvWaveClose('room'));
+document.getElementById('ttv-wave-close').addEventListener('click', () => ttvWaveClose('not-now'));
+document.getElementById('ttv-wave-here').addEventListener('click', () => {
+  const w = ttvWave; ttvWaveClose('board');
+  openBlocker('tap-the-vein', {do: `Tap the Vein (skipped ${w.run} days running)`, list: 'morning', due: ttvToday(), skipStreak: w.run});
 });
 function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
 document.getElementById('mo-cats').addEventListener('toggle', e => {
@@ -1692,7 +1791,7 @@ render();
 (async () => {
   db = window.claude && window.claude.use ? await window.claude.use('db') : null;
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
-  window.claude.use('mcp').then(m => { mcp = m; renderSend(); }, () => {});
+  window.claude.use('mcp').then(m => { mcp = m; renderSend(); ttvGate(); }, () => {});
   renderMorning(); ttvRender();
   db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); ttvGate(); }, () => {});
   db.collection('ttv').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ttvDays = next; ttvGate(); }, () => { ttvDays = {}; ttvGate(); });

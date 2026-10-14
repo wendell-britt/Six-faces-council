@@ -148,7 +148,10 @@ do not run it; `scope` in the file says which is which.
    shape: do, where, enter, check, device, and whether it is safe to stop after. Publish the feature's steps
    as one list with `ArtifactData` to the board's store, named as `steps_page` in `pipeline.yaml`: a `lists/<feature>` document
    (title, repo, why, source, order, created) and `steps/<feature>-<nn>` documents (list, n, do, where, href,
-   enter, generate, check, device, stopSafe, optional, due, done). Every step carries `due`, a YYYY-MM-DD
+   enter, generate, check, device, stopSafe, optional, due, done, files). A step that asks him to review a draft, image or
+   link carries it in `files` (`[{id, title, kind: text|image|link, text, src, href, caption}]`), so the card shows it in
+   full with a notes box, and never points him at a project file (Wendell, 2026-10-14: "If I Can click the file see whats
+   going on and update the notes that would get me unblocked"). His notes land in `fileNotes` and pull.py lists them. Every step carries `due`, a YYYY-MM-DD
    date (Wendell, 2026-10-06: deadlines let him metabolize the blocking charge a step raises). The page shows it,
    flags a step past it, and lets him move it; each move is kept in `moved`. Read a slipped step's note and
    moves before the work that waits on it. A secret is never written to a step. A step

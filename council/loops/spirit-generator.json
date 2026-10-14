@@ -4,9 +4,9 @@
   "loop": "spirit look art rounds (Shellback proof)",
   "max_ahead": 2,
   "last_look": {
-    "round": 5,
-    "at": "2026-10-14T20:53:17Z",
-    "label": "spirit-generator-r5"
+    "round": 6,
+    "at": "2026-10-14T21:17:25Z",
+    "label": "spirit-generator-r6"
   },
   "rounds": [
     {
@@ -60,9 +60,9 @@
     },
     {
       "round": 7,
-      "status": "next",
-      "builds": "One nation style carried across the Shellback stages.",
-      "check": "Same contact sheet with and without the nation style.",
+      "status": "running",
+      "builds": "His look at round 6 first: the tortoise's round 6 head flattening reverted to round 5's domed skull, with the snout raised 30% of the way toward the crown (armadillo and pangolin kept as they are). Then one nation style, Meridia's, carried across the Shellback stages.",
+      "check": "Tortoise heads before and after; the same contact sheet with and without the nation style.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus"

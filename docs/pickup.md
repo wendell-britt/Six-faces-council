@@ -57,10 +57,12 @@ and writes the same list to the store's `pickup/last` doc (`{sentAt, rows}`). Th
 older than the last send. Each failure code gets its own message; a view without the connector says to tell Claude in
 chat instead.
 
-The page declares two capabilities: `db` (its store) and `mcp` with server `Claude Code Remote`, tool `fire_trigger`.
-A republish that omits `capabilities` keeps both. A republish that passes `capabilities` must pass both:
+The page declares two capabilities: `db` (its store) and `mcp` with server `Claude Code Remote`, tool `fire_trigger`,
+and server `Vercel`, tool `web_fetch_vercel_url` (the Tap the Vein check, docs/morning.md). A republish that omits
+`capabilities` keeps them. A republish that passes `capabilities` must pass all of it:
 
-    {"db": {}, "mcp": {"servers": [{"server": "Claude Code Remote", "tools": ["fire_trigger"]}]}}
+    {"db": {}, "mcp": {"servers": [{"server": "Claude Code Remote", "tools": ["fire_trigger"]},
+                                   {"server": "Vercel", "tools": ["web_fetch_vercel_url"]}]}}
 
 ## The pickup routine
 
