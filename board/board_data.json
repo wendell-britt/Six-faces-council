@@ -12988,6 +12988,82 @@
     }
    ],
    "why": "Sources: docs/morning.md (mm-raw, mm-where), game-masters-guide corpus/README.md rule 3 and BARS.md, six-faces-council draft pull request for the board Tap the Vein."
+  },
+  {
+   "id": "jev-asset-piles",
+   "faces": [
+    "diplomat",
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "q": "For the asset trial, how many statements do you label, and which ones first?",
+   "why_you": "The sizes are your numbers and your time, and the council does not pick them. You said you did not understand piles and labels, so the box above explains them with a real row from the list.",
+   "not_before": "You chose C on 2026-10-04 and the statement list was built after that. The 195 rows and their scopes were not known before.",
+   "research": {
+    "title": "Piles and labels, in plain words",
+    "lead": "A label is your reading of one statement: does the doc agree with the code? A pile is a group of labelled statements. C needs two piles: a teaching pile and a scoring pile, with no statement in both.",
+    "sections": [
+     {
+      "h": "What you do with one statement",
+      "p": "Open council/jev/asset_statements.json. Each row has a doc line and the code lines it concerns. Read both, then give one label:",
+      "items": [
+       "agrees: the code does what the doc says.",
+       "disagrees: someone who trusted the doc would be misled by what the code does.",
+       "cannot tell: you cannot decide from the lines given. That is a fine answer.",
+       "Write the date next to each label."
+      ]
+     },
+     {
+      "h": "A worked example (how to read a row, not your label)",
+      "p": "Row AS-011 is the asset-management spec, line 240: asset upload max file size is 5 MB for images and 10 MB for PDFs. The code lines listed are in src/app/api/assets/upload/route.ts. Line 31 declares a 5 MB image limit, and line 109 sets the upload handler's limit to the 10 MB PDF figure for everything. A reader trusting the doc would expect images over 5 MB to be refused, and the handler does not refuse them. That is how a disagrees looks. The label on your list stays yours."
+     },
+     {
+      "h": "What the two piles are for",
+      "items": [
+       "Teaching pile: practice statements. The council runs the model on them only to see what its answers look like. No mark is set and nothing is scored. These can come from the sprite and card-art docs that are marked for discard, since they are only practice.",
+       "Scoring pile: different statements, from live docs only. The mark is fixed in a dated file first, then the model runs once on this pile and the result counts."
+      ]
+     },
+     {
+      "h": "What exists to label",
+      "items": [
+       "195 statements in all. None are labelled.",
+       "20 are admin art (the live set you named). 15 are the carousel forge and 2 are current sprite rows.",
+       "158 are in sprite and card-art docs marked for discard or deprecation. They are usable as teaching practice.",
+       "Labelling one row takes about 2 minutes. That is a guess and has not been measured, so 20 rows is under an hour."
+      ]
+     },
+     {
+      "h": "What the sizes can tell you",
+      "p": "If the model flags none of your agreeing statements, the true false-flag rate is probably under about 14% with 20 statements in the scoring pile, and about 8% with 37. Labelling will also turn up real disagreements, which are the positives the trial needs. Only one known doc statement is both live and a disagreement today (the upload limits)."
+     }
+    ],
+    "recommend": "The council's recommendation, not your ruling: option C below. Label only the 20 admin rows first. That is under an hour, it fixes the scoring pile as exactly those 20, and the teaching pile can be sized after you see how the labelling went.",
+    "sources": [
+     {
+      "text": "The statement list and its README",
+      "url": "https://github.com/johnair01/bars-engine/blob/claude/inspiring-bhabha-f752d0/council/jev/ASSET_STATEMENTS_README.md"
+     }
+    ]
+   },
+   "options": [
+    {
+     "v": "small",
+     "label": "A. Teaching pile of 10 practice rows, scoring pile of the 20 admin rows",
+     "c": "About 30 rows, roughly an hour. Gives a false-flag bound near 14% if nothing agreeing is flagged. Fixes the teaching size now."
+    },
+    {
+     "v": "all-live",
+     "label": "B. Teaching pile of 20, scoring pile of all 37 live rows (adds the carousel forge and 2 current sprite rows)",
+     "c": "About 57 rows, roughly two hours. Bound near 8%. Needs your ruling that the carousel forge counts as admin art."
+    },
+    {
+     "v": "admin-first",
+     "label": "C. Label the 20 admin rows first; size the teaching pile afterwards",
+     "c": "About 20 rows, under an hour. The scoring pile is those 20. You pick the teaching size once you have seen how labelling goes. The council recommends this."
+    }
+   ]
   }
  ],
  "causes": [
