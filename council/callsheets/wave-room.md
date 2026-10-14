@@ -1,4 +1,4 @@
-2026-10-13 (updated 05:20)
+2026-10-14 (updated 21:50)
 # WAVE room (the cave's home)
 
 ## Next
@@ -16,6 +16,25 @@ with a "Working with" picker and a fourth waiting at the door, and feelings abou
 are about. The cave fork took the narrower reading (3-2-1 switching, sliders and glow at the daemon; the whole room flow is not
 run in place in the cave); it stands unless he flips it. The cave's DESIGN.md has "The WAVE room, second slice". Next: his play
 of the second slice, then fixes from his notes in a fresh thread.
+
+## Built: the board's way into the room (2026-10-14)
+- His steer on `ttv-skip-wave`: "yes, but I want it to be as interactive as possible. We want to move toward using the game
+  to build the game. It should deposit me inside the WAVE room and we should move to have the WAVE room be able to metabolize
+  context specific charges and send the results to the board in this case."
+- bars-engine #324 (draft, branch `claude/project-thread-h6nfj1`, stacked on #317 with #316 merged in): `cave/board-wave.js`
+  reads `#wave=board&charge=&skips=&ref=&date=` and opens the room from the board. Welcome names the charge words and asks
+  the charge 0 to 10; Acknowledge asks what is in the way of it; the quiet room asks how today's Tap the Vein ends (the
+  panel's five endings) and the charge left; the way out is "Back to the board". Every page saves the run (blocker record,
+  `engine: "wave-room"`) to `POST /api/council/wave-runs` under his sign-in; a signed-out run waits in the browser.
+  New table `wave_room_runs`. board-wave-test 20 of 20.
+- Six-faces-council: `council/wave_runs.py`, run by `board/pull.py`, fetches the runs with `COUNCIL_MENU_TOKEN` into the
+  store's `blockers/`, so they land as `council/blockers/<ref>.json`. Board side (the link) is #147.
+- Choices that stand unless he flips them: the charge as eleven buttons; one ending per sitting; Tomorrow moves the date a day;
+  a run belongs to the signed-in player and the council reads only his.
+- Merge order: #310, #313, #317, then #324 (it retargets to main). #147 merges after the bars-engine routes deploy.
+- Next: the room as the board's blocker button for any overdue step, not only Tap the Vein (the panel's "Work through
+  what's in the way" opens the room with the step's words), then running the WAVE inside the walkable test room
+  (`rooms/walk-room.js`).
 
 ## Rulings folded in (Wendell, 2026-10-13, from `somatic-ontology.md`)
 - `sb-no-pass-at-daemon`: a 3-2-1 skipped in the cave is picked up in the WAVE room. The room is where the journey begins: the player
