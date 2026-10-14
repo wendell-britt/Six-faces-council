@@ -8040,6 +8040,17 @@
    "auto": true,
    "pos": "Character and NPC generation from player blockages is the spirit generator: the player's charge (feeling, place, strength, urge) makes the spirit, and the urge picks its family (sg-body-from). The demo uses it as built on sprout #51, with bodies from the Blender spirit pipeline (the Shellback round already renders all five elements as models and sprites). The book's teaching NPCs are written by hand in step 2, not generated.",
    "why": "spirit-generator callsheet; sg-charge-disc, sg-body-from = A; /mnt/project-files/3d-build/spirit-shellback-2026-10-14/round2 (25 models, 25 sprites)."
+  },
+  {
+   "id": "jev-admin-16-labelled",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "jev asset",
+   "auto": false,
+   "pos": "16 of the 20 admin rows are labelled by Claude from the doc line and the code, in council/jev/admin_labels.json: 15 agree and 1 disagrees (AS-011, the upload limit). The other 4 are one-tap questions. Wendell's steer was to avoid a spreadsheet, so he flips a label only if one looks wrong. When the 4 are answered, the scoring pile is final and the teaching pile can be sized.",
+   "why": "Wendell, 2026-10-14: label the 20 admin rows first, and keep the UI easy for someone who gets overwhelmed by spreadsheets."
   }
  ],
  "questions": [
@@ -13136,6 +13147,138 @@
      "v": "both",
      "label": "Sprout, ending in the cave",
      "c": "Chapter 1 plays in Sprout and its last scene opens a door into the 3D WAVE room where the player's own spirit appears. Shows both, costs the most."
+    }
+   ]
+  },
+  {
+   "id": "jev-lab-as-024",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "jev asset",
+   "q": "Doc says there are 4 move icons at 24x24 px. The code has no such icons. Agree or disagree?",
+   "why_you": "Whether a planned asset counts as a wrong statement is your call.",
+   "not_before": "You chose to label the 20 admin rows first on 2026-10-14; the other 16 were read and labelled for you.",
+   "research": {
+    "title": "What the doc says and what the code does",
+    "lead": "Doc line (asset-register spec, line 68): 'Format: 4 move icons at 24x24px. One per move family: Wake Up / Grow Up / Show Up / Clean Up.' Searching the code finds no icon folder or rule for them.",
+    "recommend": "Claude's reading: Cannot tell. The doc describes something not built, and nothing in the code says either way."
+   },
+   "options": [
+    {
+     "v": "agrees",
+     "label": "Agrees",
+     "c": "The doc is right."
+    },
+    {
+     "v": "disagrees",
+     "label": "Disagrees",
+     "c": "Someone trusting the doc would be misled."
+    },
+    {
+     "v": "cannot-tell",
+     "label": "Cannot tell",
+     "c": "Fine answer. The row is dropped from the scoring pile."
+    }
+   ]
+  },
+  {
+   "id": "jev-lab-as-029",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "jev asset",
+   "q": "Doc names a function resolveProvenanceStamp() that makes the corner chip. The code only mentions it as 'planned'. Agree or disagree?",
+   "why_you": "Same kind of call: a future feature written as if it exists.",
+   "not_before": "You chose to label the 20 admin rows first on 2026-10-14; the other 16 were read and labelled for you.",
+   "research": {
+    "title": "What the doc says and what the code does",
+    "lead": "Doc line (line 115): 'resolveProvenanceStamp(config) -> sigil + mark chip (BAR card corner)'. In src/lib/avatar-utils.ts line 10 the comment calls it 'planned'. The function itself does not exist.",
+    "recommend": "Claude's reading: Agrees. The doc is a design for a function the code itself says is planned, so nobody is misled."
+   },
+   "options": [
+    {
+     "v": "agrees",
+     "label": "Agrees",
+     "c": "The doc is right."
+    },
+    {
+     "v": "disagrees",
+     "label": "Disagrees",
+     "c": "Someone trusting the doc would be misled."
+    },
+    {
+     "v": "cannot-tell",
+     "label": "Cannot tell",
+     "c": "Fine answer. The row is dropped from the scoring pile."
+    }
+   ]
+  },
+  {
+   "id": "jev-lab-as-032",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "jev asset",
+   "q": "Doc says all colours must come from the token file, no hardcoded hex. One code file has hex colours. Agree or disagree?",
+   "why_you": "Whether a palette list counts as a break of the rule is your call.",
+   "not_before": "You chose to label the 20 admin rows first on 2026-10-14; the other 16 were read and labelled for you.",
+   "research": {
+    "title": "What the doc says and what the code does",
+    "lead": "Doc line (line 162): 'All colors must trace to ELEMENT_TOKENS or SURFACE_TOKENS in card-tokens.ts. No hardcoded hex.' card-art-registry.ts line 683 has ELEMENT_PALETTE_HINTS, a list of hex colours (for example #1a1a18) that is not built from the tokens.",
+    "recommend": "Claude's reading: Disagrees. The rule says no hardcoded hex, and this list is hardcoded hex."
+   },
+   "options": [
+    {
+     "v": "agrees",
+     "label": "Agrees",
+     "c": "The doc is right."
+    },
+    {
+     "v": "disagrees",
+     "label": "Disagrees",
+     "c": "Someone trusting the doc would be misled."
+    },
+    {
+     "v": "cannot-tell",
+     "label": "Cannot tell",
+     "c": "Fine answer. The row is dropped from the scoring pile."
+    }
+   ]
+  },
+  {
+   "id": "jev-lab-as-064",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "jev asset",
+   "q": "Doc says upload a PDF under 4.5 MB for Vercel Hobby. The book upload route allows 100 MB. Agree or disagree?",
+   "why_you": "The doc line may be about the host's limit, not the route's.",
+   "not_before": "You chose to label the 20 admin rows first on 2026-10-14; the other 16 were read and labelled for you.",
+   "research": {
+    "title": "What the doc says and what the code does",
+    "lead": "Doc line (book-upload spec, line 56): '3. Upload a PDF (< 4.5 MB for Hobby).' The route (src/app/api/books/upload/route.ts line 61) sets maximumSizeInBytes to 100 MB, because the file goes straight to Blob storage rather than through the function.",
+    "recommend": "Claude's reading: Agrees. The 4.5 MB is the Hobby function limit the route avoids, and the doc is a test step, so it does not mislead."
+   },
+   "options": [
+    {
+     "v": "agrees",
+     "label": "Agrees",
+     "c": "The doc is right."
+    },
+    {
+     "v": "disagrees",
+     "label": "Disagrees",
+     "c": "Someone trusting the doc would be misled."
+    },
+    {
+     "v": "cannot-tell",
+     "label": "Cannot tell",
+     "c": "Fine answer. The row is dropped from the scoring pile."
     }
    ]
   }
@@ -21733,6 +21876,140 @@
      "regent"
     ],
     "pass": "tap the vein on the board"
+   },
+   "lens-intake-align": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:43:15.295Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "lenses 1"
+   },
+   "lens-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:43:23.666Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "lenses 1"
+   },
+   "lens-domains-stand": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:43:26.670Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "lenses 1"
+   },
+   "ch1-source": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:43:37.622Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "chapter 1 demo map"
+   },
+   "ch1-pipeline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:43:43.869Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "chapter 1 demo map"
+   },
+   "ch1-deck-hand": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:43:56.413Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman",
+     "architect"
+    ],
+    "pass": "chapter 1 demo map"
+   },
+   "ch1-npc-from-blockage": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:44:01.968Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "chapter 1 demo map"
+   },
+   "lens-pitch-goals": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:44:07.302Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "regent"
+    ],
+    "pass": "lenses 1"
+   },
+   "lens-board-reads-goals": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:44:12.503Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "lenses 1"
+   },
+   "loop-auto-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:44:25.171Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "loop engineering"
+   },
+   "loop-ahead-two": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:45:01.558Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "steer": "If art is needed and there isn’t any art available we should generate a prompt OR a design intake to get clear on what asset should be made",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "loop engineering"
    }
   },
   "questions": {
@@ -23773,6 +24050,34 @@
      "shaman"
     ],
     "pass": "tap the vein on the board"
+   },
+   "jev-asset-piles": {
+    "decision": "admin-first",
+    "label": "Label the 20 admin rows first; size the teaching pile afterwards",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:43:06.857Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "steer": "We need to make sure this UI is ergonomic for someone who doesn’t spend time in data tables a lot and gets overwhelmed by spreadsheets and the like",
+    "faces": [
+     "diplomat",
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
+   },
+   "ch1-where": {
+    "decision": "both",
+    "label": "Sprout, ending in the cave",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T18:46:16.131Z",
+    "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
+    "steer": "We want the walkthrough to have players able to walk either a 3d or 2d character through the sprout world. The skilled helper paths were good for testing the story branches but they don’t actually include the major game loops (farming and fighting and exploring)",
+    "faces": [
+     "challenger",
+     "regent",
+     "architect"
+    ],
+    "pass": "chapter 1 demo map"
    }
   },
   "causes": {
