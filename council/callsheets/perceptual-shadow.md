@@ -55,6 +55,21 @@ function of emergent perceptual shadow"
   one thing that isn't it, picture it at arm's length). Flooding has no kinds. The run records `shadow.pole`. Hidden
   still means polarity above 0, which the dissolving thread reads.
 
+## Shadow spirits (his message, 2026-10-14)
+
+"Shadow spirits do the work of perceptual shadows when one is working through perceptual shadow one can ask what's getting
+in the way of the shadow clearing. We can also invoke daemons (what's being protected [protector] what's standard is being
+upheld [controller], what's being doubted or discredited [skeptic] what is being repaired or help in place[fixer]. What
+emotional satisfaction is being derived from the shadow[emotional body], what sympathetic stories are being told about
+it[victim], what damage is it taking unconsciously to protect the self? [damaged self] How is it secretly enjoying the game
+of hide and seek?[player] These shadow spirits would be similar (probably just color changed) from regular spirits"
+
+Built in bars-engine #326 (`ps-shadow-spirits` on the board): on the hidden pole's practice page, "What's in the way of it
+clearing?" calls up the shadow spirit, the creature's body in one shadow colour, smaller, beside it. His eight questions
+are put to it; each written answer thins the shadow by 3 and is kept in the run (`shadow.asks`). A worked creature's shadow
+spirit walks out as a spirit in the shadow colour (`shadow`, `shadowOf`, polarity 0, so it counts as seen). Flooding has
+none.
+
 ## State
 
-- 2026-10-14: both poles built in bars-engine #326 (stacked on #324 and #317), shadow-test 41 of 41.
+- 2026-10-14: both poles built in bars-engine #326 (stacked on #324 and #317), shadow-test 46 of 46, shadow spirits included.
