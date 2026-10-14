@@ -23217,6 +23217,127 @@
      "challenger"
     ],
     "pass": "jev asset"
+   },
+   "dq-home": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:25:53.580Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-boss-chain": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:01.903Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-protector-chamber": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:10.803Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-shadow": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:23.572Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-npc": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:32.507Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "Daemon questions"
+   },
+   "ea11-one-spread": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:38.923Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea12-eight-moves": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:46.341Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea13a-two-eights": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:27:02.799Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "steer": "They aren’t unrelated. I’ve been putting off integrating them",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea13b-ke-release": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:27:12.066Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea13c-key-not-transcend": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:27:18.015Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "emotional alchemy library"
    }
   },
   "questions": {
@@ -25371,6 +25492,19 @@
      "shaman"
     ],
     "pass": "unfinished work 1"
+   },
+   "ea-cap-which-waits": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:25:46.499Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "steer": "The move library is something all the games use so we can choose which games have the best fit (sprout and cave of lessons fit)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "emotional alchemy library"
    }
   },
   "causes": {
