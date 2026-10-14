@@ -1,0 +1,662 @@
+{
+ "date": "2026-10-14",
+ "pass": "unfinished work 1",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "file": "council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md",
+ "called_by": "Wendell, thread 'Unfinished work from your last 20 sessions'",
+ "question": "Let’s have this ingested and weighed in on  by the game masters",
+ "subject": "/mnt/project-files/unfinished-work-2026-10-14.md",
+ "board_read": "2026-10-14T23:20Z, live version 1792018774-06a8",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    9,
+    8,
+    6,
+    8
+   ],
+   "changing_lines": [
+    3,
+    5
+   ],
+   "n": 36,
+   "name": "Nightfall",
+   "cn": "明夷",
+   "pinyin": "míng yí",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "shows": "You are keeping a light covered, and it is still lit.",
+   "image": "☲ fire beneath ☷ earth. The sun gone under the ground, with its light still inside the figure.",
+   "situation": "The light is wounded and continues. The old reading gives a wise person under a bad ruler who keeps their brightness by covering it, and the counsel is to know the difficulty and stay firm inside it.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 3,
+    "name": "Sprouting",
+    "cn": "屯",
+    "pinyin": "zhūn",
+    "lines": [
+     1,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "This is early, and you are reading the mess as a verdict.",
+    "image": "☳ thunder beneath ☵ water. Movement caught inside the danger it was born into.",
+    "situation": "A first shoot pushing at a hard crust. Everything necessary is present, in a heap. The old counsel is to appoint helpers and to decline any journey, because at this stage every unit of effort belongs to getting established.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    7,
+    8,
+    7,
+    9
+   ],
+   "changing_lines": [
+    6
+   ],
+   "n": 37,
+   "name": "Household",
+   "cn": "家人",
+   "pinyin": "jiā rén",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "An arrangement has formed here without being discussed.",
+   "image": "☲ fire beneath ☴ wind. Fire making its own draught, with the wind coming out of the flame.",
+   "situation": "The family. The old text begins with correctness inside the house and works outward, and the commentary's point is structural: positions held properly within produce order without. Wind out of fire — what happens in here goes out there.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 63,
+    "name": "Arrived",
+    "cn": "既濟",
+    "pinyin": "jì jì",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "shows": "This is finished, which is when it starts moving.",
+    "image": "☲ fire beneath ☵ water. Every line in the figure sits in its correct place, with the water above the fire.",
+    "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    9,
+    6,
+    8,
+    9,
+    8,
+    8
+   ],
+   "changing_lines": [
+    1,
+    2,
+    4
+   ],
+   "n": 51,
+   "name": "Shock",
+   "cn": "震",
+   "pinyin": "zhèn",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "It went off, and it will go off again.",
+   "image": "☳ thunder beneath ☳ thunder. One firm line arriving at the bottom, and then arriving again above it.",
+   "situation": "The shock comes, and then it comes a second time. The old text keeps a wonderful detail through it: laughing words, ha ha, and the man who keeps the sacrificial wine in the cup. Terror arrives from a hundred miles off, and the one still holding the ladle is the one who inherits.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 7,
+    "name": "Muster",
+    "cn": "師",
+    "pinyin": "shī",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "What would organise this is a fact you have not said.",
+    "image": "☵ water beneath ☷ earth. One firm line among five yielding ones, holding the whole figure to a shape.",
+    "situation": "Water stored underground: a resource that is present, invisible, and organised. The single strong line is the discipline that turns a crowd into a force. The old warning is that this works with an experienced hand and a clear cause, and the same gathering under any other conditions is a mob.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    6,
+    8,
+    7,
+    8,
+    7,
+    8
+   ],
+   "changing_lines": [
+    1
+   ],
+   "n": 39,
+   "name": "Impasse",
+   "cn": "蹇",
+   "pinyin": "jiǎn",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "shows": "The direct route is closed and you have asked nobody.",
+   "image": "☶ mountain beneath ☵ water. A mountain in front of you and deep water on the far side of it.",
+   "situation": "The character is a limp. Going forward is hard here, and the old counsel names the southwest as the favourable direction and sends you to find the great person. The instruction repeated through nearly every line is to turn back and come again with others.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 63,
+    "name": "Arrived",
+    "cn": "既濟",
+    "pinyin": "jì jì",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "shows": "This is finished, which is when it starts moving.",
+    "image": "☲ fire beneath ☵ water. Every line in the figure sits in its correct place, with the water above the fire.",
+    "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    9,
+    8,
+    6
+   ],
+   "changing_lines": [
+    4,
+    6
+   ],
+   "n": 54,
+   "name": "Home Field Advantage",
+   "cn": "歸妹",
+   "pinyin": "guī mèi",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "You are following rules nobody told you.",
+   "image": "☱ lake beneath ☳ thunder. Movement above, open water underneath, and the terms set by the upper half.",
+   "situation": "Entering an arrangement that was made before you got here. The old text is unusually blunt and calls every move unfavourable, because the one arriving takes the junior place in a house that already has its rules. Everything here runs on ground somebody else laid.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 41,
+    "name": "Spending",
+    "cn": "損",
+    "pinyin": "sǔn",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    "shows": "This has a price and you have yet to name it.",
+    "image": "☱ lake beneath ☶ mountain. The lake has been dug deeper so that the mountain can stand higher.",
+    "situation": "Something has been taken from the base and added to the top. The old text asks how the offering should be made and answers that two small bowls will do, since the sacrifice counts by sincerity. Decrease that you choose is a different event from decrease that happens to you.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    6,
+    6,
+    7,
+    6
+   ],
+   "changing_lines": [
+    3,
+    4,
+    6
+   ],
+   "n": 29,
+   "name": "Depths",
+   "cn": "坎",
+   "pinyin": "kǎn",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "shows": "The bottom of this has another bottom under it.",
+   "image": "☵ water beneath ☵ water. One firm line trapped between two yielding ones, and then the same again above it.",
+   "situation": "Repeated danger: the pit, and past it another pit. The old counsel is about consistency, because water goes into every hollow, fills it, and moves on, being water the whole way through. What carries you across a run of these is doing the same thing each time.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 44,
+    "name": "Serendipity",
+    "cn": "姤",
+    "pinyin": "gòu",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are building on one piece of evidence.",
+    "image": "☴ wind beneath ☰ heaven. One soft line has entered beneath five hard ones.",
+    "situation": "Wind under heaven touches everything without choosing what it touches. The smallest possible arrival at the base of something large and already settled. It does not feel small. That is what makes it worth watching rather than seizing.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  }
+ ],
+ "daemons": "none sent",
+ "unanimous": false,
+ "dissent": "Shaman: bring the move library back now; Regent: defer unless Wendell names what in the cap of three waits.",
+ "positions": [
+  "uw-list-corrected",
+  "uw-board-before-sweep",
+  "uw-email-steps",
+  "uw-upload-limit",
+  "uw-backlog-dupes",
+  "uw-skill-dedupe",
+  "uw-jev-to-sheet",
+  "uw-podcast-ticks",
+  "uw-pushhands-repair-later",
+  "uw-sprout-current",
+  "uw-anastasia-as-is",
+  "uw-flirtcraft-step7"
+ ],
+ "questions": [
+  "uw-ea-library"
+ ],
+ "steps_lists": [
+  "email-list-nov10",
+  "pushhands-footage"
+ ],
+ "ruling": null
+}
