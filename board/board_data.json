@@ -8051,6 +8051,50 @@
    "auto": false,
    "pos": "16 of the 20 admin rows are labelled by Claude from the doc line and the code, in council/jev/admin_labels.json: 15 agree and 1 disagrees (AS-011, the upload limit). The other 4 are one-tap questions. Wendell's steer was to avoid a spreadsheet, so he flips a label only if one looks wrong. When the 4 are answered, the scoring pile is final and the teaching pile can be sized.",
    "why": "Wendell, 2026-10-14: label the 20 admin rows first, and keep the UI easy for someone who gets overwhelmed by spreadsheets."
+  },
+  {
+   "id": "ttv-first-gate",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "ttv-first",
+   "auto": false,
+   "pos": "Until today's Tap the Vein is handled, the board opens on the Morning tab with the box open and the other tabs held. Today is handled when you seal on the board, when the last gather fetched today's sealed menu from bars-engine, or when you press \"I did it in bars-engine today\" or \"Skip today\". The day is your browser's own date.",
+   "why": "Wendell, 2026-10-14: \"the first thing that happens in the morning when I open the board is tap the vein ... if not forces one to be done in the board\". Holding the tabs is the lightest force that still lets Skip through."
+  },
+  {
+   "id": "ttv-bars-engine-trusted",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "ttv-first",
+   "auto": false,
+   "pos": "The board cannot ask bars-engine directly, because the menu key never reaches the page. So \"I did it in bars-engine today\" is taken at your word and opens the board, and the next board read fetches that day's sealed menu and takes it in.",
+   "why": "mm-menu-transport keeps the key off the board. Taking your word costs one tap, and the read still checks bars-engine itself."
+  },
+  {
+   "id": "ttv-skip-run",
+   "faces": [
+    "challenger",
+    "sage"
+   ],
+   "pass": "ttv-first",
+   "auto": false,
+   "pos": "\"Skipped two days running\" counts the skips you press in a row. A day you sealed breaks the run. A day you never opened the board does not count either way, so a weekend away doesn't trigger anything on Monday's first skip.",
+   "why": "Wendell, 2026-10-14: \"if it's skipped for 2+ days it triggers a Wave or 321 session\". Counting only the skips you actually pressed keeps the trigger about choosing not to do it."
+  },
+  {
+   "id": "ttv-skip-wave",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "ttv-first",
+   "auto": false,
+   "pos": "The second skip in a row (and every skip after it, until you seal again) opens the board's own blocker panel on \"Tap the Vein\". That panel is the WAVE run: charge, Welcome, Acknowledge, Validate, Exhale, with a staged 3-2-1 for any part that stays, then an ending and the charge again. It is saved like any blocker run, and the next read acts on it. bars-engine's 3-2-1 room is not used here.",
+   "why": "The panel is already the board's WAVE run with 3-2-1 built in (docs/blocker-panel.md), and its record reaches main through board/pull.py, so the read sees what came up."
   }
  ],
  "questions": [
