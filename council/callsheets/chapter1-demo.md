@@ -30,7 +30,11 @@ skills and character and NPC generation based on player blockages."
    good; the hollow spirit's urge-to-family map and naming presets on #51. Card match 12 of 18 (67%) against 85%:
    11 of 12 for players reading for meaning, the fixer plays "Which Fight Is Yours" nearly always. A4 and A8 swapped
    cards; A5's stance card is a keepsake.
-4. Blender sprites for the Chapter 1 spirits and NPCs onto the page.
+4. Blender sprites for the Chapter 1 spirits and NPCs onto the page. Done 2026-10-14: sprout `prototype/ch1-arcade.html`,
+   PR sprout #55 (stacked on #54), published for his phone at https://claude.ai/artifact/G4mj4M4zuUeHfWfQx4r6KE. Pip is
+   a character-parts look; the warden is the Shellback round 2 Earth creature; the player's spirit is the ascended form
+   of the charge's element. The end screen logs the card played at each moment, with a fixer check line for A6 and A8.
+   A7's lines 2 to 6 are stand-ins from extract.yaml r3 to r7 until the manuscript's lines are wired.
 5. His phone play, then fixes; then a short video for the Kickstarter page.
 
 ## Waiting on
@@ -38,10 +42,9 @@ skills and character and NPC generation based on player blockages."
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
 
 ## Next thread brief
-Step 4, Blender sprites for the Chapter 1 spirits and NPCs onto the Sprout page. Read sprout `campaigns/mtgoa-ch1/`
-`story.md` ("Assets this section adds or changes") and `encounters.yaml` (`warden`, `hollow`); build on #54's branch
-`claude/project-thread-e8pjnr` if #52 to #54 have not merged, and take over watching any still open. Sprites: Pip,
-`spirit_pip_warden` (a Shellback round 2 Earth sprite can stand in, project files `3d-build/spirit-shellback-2026-10-14/round2/sprite/`),
-and the player's spirit per family from the Shellback set. Then a playable page for his phone. The phone playtest
-should check the one open guessing-test finding: whether a fixer-type player plays WAKE-DA-REGENT at the hunters'
-choice (A6) and in the hollow (A8). Lean: he is near his weekly limit.
+Step 5 is his phone play. Put one step on the board's Your steps tab: open https://claude.ai/artifact/G4mj4M4zuUeHfWfQx4r6KE
+on his phone, play once as a fixer would (reach for the big moves at Pip's hut), then tap "Copy this" on the end
+screen and paste the log into the step's note. Say it takes about ten minutes. Own sprout #52 to #55 (stacked; watch
+any still open and drop each watch once it merges). When his note arrives: read the fixer check line (did he play
+"Which Fight Is Yours" at the hunters' choice and in the hollow?), fix what the play shows in `prototype/ch1-arcade.html`
+and republish the same artifact link, then plan the short Kickstarter video. Lean: he is near his weekly limit.
