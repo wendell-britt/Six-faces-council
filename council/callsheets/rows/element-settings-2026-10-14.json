@@ -1,0 +1,59 @@
+{
+ "positions": [
+  {
+   "id": "el-mapping",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Each element gets a land after Magic's: metal is the cave (swamp), fire a volcanic mountain, earth open plains with a barrow, water an island, wood an old forest. Fire takes the mountain and earth the plains so the two do not share one. This stands unless you flip it.",
+   "why": "His mapping of 14 October, with earth as plains because mountain is fire's. Sheet: council/callsheets/element-settings.md."
+  },
+  {
+   "id": "el-water-interior",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Water is an island outside and a lagoon inside, entered by wading, with the reef as the lagoon's floor. This stands unless you flip it.",
+   "why": "He offered reef or lagoon and settled on island; the lagoon is the one that has a floor and a still surface to stand on, and the reef rides under it."
+  },
+  {
+   "id": "el-skeleton",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Every land uses the WAVE room's seven stretches and the hall of the six unchanged. Only the dressing changes: light, fog, ground and pieces. This stands unless you flip it.",
+   "why": "The look table (STEP_LOOK, FACE_LOOK) already works this way, so one skeleton serves five lands and nothing is rebuilt per element."
+  },
+  {
+   "id": "el-demo-scope",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "The Chapter 1 demo keeps the cave as its only setting. The other four lands come after it. This stands unless you flip it.",
+   "why": "The Kickstarter gate is a working gamified Chapter 1 that ends in the cave (chapter1-demo.md); adding lands first spends the demo's time on breadth."
+  },
+  {
+   "id": "el-first-setting",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Wood is the first land built after the demo gate, from one paragraph through room-from-text, ahead of fire, earth and water. This stands unless you flip it.",
+   "why": "The forest has the most already made: procgen roots and mushrooms, the greenery picks and the grass clump. It is the cheapest test of whether a land reads as a land."
+  }
+ ]
+}
