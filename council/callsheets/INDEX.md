@@ -4,6 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
+- [element-settings](element-settings.md), 2026-10-14: a cave-like land for each element (metal cave, fire mountain, earth plains, water island with lagoon, wood forest); design only; five `el-*` positions; wood first after the demo.
 - Daily compost pass (docs/compost-pass.md), 2026-10-12: routine each morning at 6:47 Pacific starts a thread that keeps, drops or takes over Wendell's open steps. First pass dropped four, took over one check, rewrote two.
 - [virtual-launch](virtual-launch.md), 2026-10-12: step blocked; split into name-the-block, `vl-date` and six one-question steps; answers go onto the pipeline row.
 - [somatic-ontology](somatic-ontology.md), 2026-10-12: blocked-move pass done, rows and `sb-sensation-order` on the board; next a free-flow-state pass in a fresh thread.
