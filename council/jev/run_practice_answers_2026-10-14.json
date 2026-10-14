@@ -1,0 +1,122 @@
+{
+ "AS-037": {
+  "answer": "agrees",
+  "reason": "avatar-parts.ts:56-58,80 read /sprites/parts/playbook_outfit/{key}.png; directory path is right."
+ },
+ "AS-041": {
+  "answer": "agrees",
+  "reason": "playbook_outfit/ is the directory avatar-parts.ts maps archetype_outfit to (line 57)."
+ },
+ "AS-042": {
+  "answer": "agrees",
+  "reason": "playbook_accent/ is the directory avatar-parts.ts maps archetype_accent to (line 58)."
+ },
+ "AS-055": {
+  "answer": "disagrees",
+  "reason": "Layer is named archetype_outfit in avatar-parts.ts:44; playbook_outfit is only the directory."
+ },
+ "AS-056": {
+  "answer": "disagrees",
+  "reason": "Layer is named archetype_accent in avatar-parts.ts:45; playbook_accent is only the directory."
+ },
+ "AS-058": {
+  "answer": "disagrees",
+  "reason": "The layer chain in code uses archetype_outfit and archetype_accent (avatar-parts.ts:44-45)."
+ },
+ "AS-059": {
+  "answer": "disagrees",
+  "reason": "Same chain written with playbook_* layer names; code layers are archetype_outfit/archetype_accent."
+ },
+ "AS-101": {
+  "answer": "cannot tell",
+  "reason": "sourceModel is a free String? in schema.prisma:3852; the listed values are set by an external backend not in this repo."
+ },
+ "AS-182": {
+  "answer": "agrees",
+  "reason": "docs/SPRITE_ASSETS.md:52-54 gives the CC-BY-SA 3.0 attribution requirement for LPC; the checklist item matches."
+ },
+ "AS-150": {
+  "answer": "agrees",
+  "reason": "avatar-parts.ts:42-45 layer names are nation_body, archetype_outfit, nation_accent, archetype_accent."
+ },
+ "AS-155": {
+  "answer": "disagrees",
+  "reason": "Code reads public/sprites/parts/playbook_outfit (avatar-parts.ts:57); archetype_outfit/ exists on disk but is not the path read."
+ },
+ "AS-156": {
+  "answer": "disagrees",
+  "reason": "Code reads playbook_accent (avatar-parts.ts:58); archetype_accent/ exists on disk but is not the path read."
+ },
+ "AS-009": {
+  "answer": "agrees",
+  "reason": "public/sprites/walkable/default.json layout is north_idle, north_walk, south, east, west pairs: N,S,E,W order."
+ },
+ "AS-031": {
+  "answer": "disagrees",
+  "reason": "Walkable layout is N,S,E,W (default.json), not down,left,right,up; sheet size 512x64 and 8 frames are right."
+ },
+ "AS-039": {
+  "answer": "agrees",
+  "reason": "public/sprites/parts/base holds default.png, female.png, male.png, neutral.png."
+ },
+ "AS-089": {
+  "answer": "disagrees",
+  "reason": "scripts/sprites/ holds only flatten-portrait.lua; palette-swap.lua is not in the repo."
+ },
+ "AS-098": {
+  "answer": "agrees",
+  "reason": "src/app/admin/sprites/review/page.tsx exists, serving /admin/sprites/review."
+ },
+ "AS-099": {
+  "answer": "agrees",
+  "reason": "sprite-queue.ts:12 types pipeline as 'portrait' | 'walkable'."
+ },
+ "AS-100": {
+  "answer": "cannot tell",
+  "reason": "status is a free String in SpriteAuditLog; only 'approved' and 'rejected' are visible in code, the rest are set by the backend."
+ },
+ "AS-102": {
+  "answer": "agrees",
+  "reason": "sprite-queue.ts:30 POSTs ${BACKEND_URL}/api/sprites/generate, so the route is the backend's contract."
+ },
+ "AS-105": {
+  "answer": "disagrees",
+  "reason": "No such API route in this repo; approval is the server action approveSpriteReview in src/actions/sprite-review.ts."
+ },
+ "AS-107": {
+  "answer": "agrees",
+  "reason": "public/sprites/walkable/argyra-bold-heart.png exists."
+ },
+ "AS-112": {
+  "answer": "disagrees",
+  "reason": "package.json has no sprites:validate-walkable script; the sprites:* scripts are derive-base, nation-placeholders, analyze-base, walkable-default."
+ },
+ "AS-115": {
+  "answer": "disagrees",
+  "reason": "scripts/validate-walkable-sprites.ts does not exist; the file is scripts/validate-walkable-humanoid.ts."
+ },
+ "AS-013": {
+  "answer": "agrees",
+  "reason": "public/card-art holds 40 images and the registry has TOTAL_CARD_ART_COUNT = 40."
+ },
+ "AS-131": {
+  "answer": "agrees",
+  "reason": "public/card-art holds 40 {nation}-{playbook}.png files."
+ },
+ "AS-137": {
+  "answer": "agrees",
+  "reason": "generate-card-art.ts:68,242-243 SEED_BASE = 42000, cardSeed = SEED_BASE + index * 1000."
+ },
+ "AS-141": {
+  "answer": "agrees",
+  "reason": "--delay-ms is a real flag (generate-card-art.ts:41,102); default is 12000, 15000 is a valid slower override."
+ },
+ "AS-144": {
+  "answer": "agrees",
+  "reason": "card-art-registry.ts has 40 entries and exports ELEMENT_PALETTE_HINTS (line 683)."
+ },
+ "AS-195": {
+  "answer": "agrees",
+  "reason": "card-art-registry.ts has no border tier field, so tiers are not assigned per playbook."
+ }
+}
