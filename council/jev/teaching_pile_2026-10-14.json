@@ -1,0 +1,310 @@
+{
+ "note": "Teaching pile (30 rows) drawn from the 158 sprite-pre-august and card-art-deprecated rows of the statement list (bars-engine branch claude/inspiring-bhabha-f752d0, council/jev/asset_statements.json). Read by Claude from the doc line and code at bars-engine main 1885d16, 2026-10-14. The model reads these only to show what its answers look like. No mark is applied and nothing is scored. The 19 scoring rows are untouched. Wendell flips a label only if it looks wrong.",
+ "pile": "teaching",
+ "labelled_on": "2026-10-14",
+ "labelled_by": "claude (read-through)",
+ "size_ruling": "jev-teaching-pile = 30 (Wendell, board read 2235, 2026-10-14)",
+ "selection": "All 9 rows carrying a known_drift tag in the 158 (c x7, d, e) plus AS-150, AS-155 and AS-156, which use the doc's archetype_* names, plus 12 sprite-doc rows spread across paths, scripts, routes, schema and walk-sheet layout, plus 6 card-art rows. Chosen to include every drift already known, not at random.",
+ "rows": [
+  {
+   "id": "AS-037",
+   "doc": ".specify/specs/avatar-sprite-assets/spec.md",
+   "line": 21,
+   "statement": "| **WHO** (Archetype) | playbook_outfit/{playbookKey}.png, playbook_accent/{playbookKey}.png |",
+   "label": "agrees",
+   "confidence": "medium",
+   "known_drift": "c",
+   "why": "The table names the directory playbook_outfit/ with the archetype key as the file name. avatar-parts.ts:56-58 and :80-84 read /sprites/parts/playbook_outfit/{archetypeKey}.png, so the directory path is right. The brief tagged this row as drift (c); the drift is in the layer name, not in this path."
+  },
+  {
+   "id": "AS-041",
+   "doc": ".specify/specs/avatar-sprite-assets/spec.md",
+   "line": 57,
+   "statement": "playbook_outfit/",
+   "label": "agrees",
+   "confidence": "medium",
+   "known_drift": "c",
+   "why": "A directory listing: public/sprites/parts/playbook_outfit/ exists with 8 PNGs and avatar-parts.ts:57 reads it. The brief tagged it drift (c); only the layer name differs from the code."
+  },
+  {
+   "id": "AS-042",
+   "doc": ".specify/specs/avatar-sprite-assets/spec.md",
+   "line": 58,
+   "statement": "playbook_accent/",
+   "label": "agrees",
+   "confidence": "medium",
+   "known_drift": "c",
+   "why": "Same as AS-041 for playbook_accent/: the directory exists with 8 PNGs and avatar-parts.ts:58 reads it."
+  },
+  {
+   "id": "AS-055",
+   "doc": ".specify/specs/avatar-sprite-quality-process/STYLE_GUIDE.md",
+   "line": 75,
+   "statement": "3. playbook_outfit (WHO: archetype clothing)",
+   "label": "disagrees",
+   "confidence": "medium",
+   "known_drift": "c",
+   "why": "The layer stack is a list of layer names. The code's layer is `archetype_outfit` (avatar-parts.ts:44, PartLayer); `playbook_outfit` is only the folder it maps to (:56-58). A reader who searches the code for this layer name finds nothing. This is the brief's drift (c)."
+  },
+  {
+   "id": "AS-056",
+   "doc": ".specify/specs/avatar-sprite-quality-process/STYLE_GUIDE.md",
+   "line": 77,
+   "statement": "5. playbook_accent (archetype flourish)",
+   "label": "disagrees",
+   "confidence": "medium",
+   "known_drift": "c",
+   "why": "Same as AS-055: the code layer is `archetype_accent` (avatar-parts.ts:45); `playbook_accent` is only its folder."
+  },
+  {
+   "id": "AS-058",
+   "doc": ".specify/specs/avatar-sprite-quality-process/spec.md",
+   "line": 5,
+   "statement": "The sprites must work with the existing modular layer system (base → nation_body → playbook_outfit → nation_accent → playbook_accent).",
+   "label": "disagrees",
+   "confidence": "medium",
+   "known_drift": "c",
+   "why": "Names the modular layer system with `playbook_outfit` and `playbook_accent` as layers. The code's layers are `archetype_outfit` and `archetype_accent` (avatar-parts.ts:40-45). Brief drift (c)."
+  },
+  {
+   "id": "AS-059",
+   "doc": ".specify/specs/avatar-sprite-quality-process/spec.md",
+   "line": 47,
+   "statement": "base → nation_body → playbook_outfit → nation_accent → playbook_accent",
+   "label": "disagrees",
+   "confidence": "medium",
+   "known_drift": "c",
+   "why": "The stack order is right but the layer names are not: the code's PartLayer type has archetype_outfit and archetype_accent, not playbook_*. Brief drift (c)."
+  },
+  {
+   "id": "AS-101",
+   "doc": ".specify/specs/sprite-generation-pipeline/spec.md",
+   "line": 129,
+   "statement": "sourceModel String? // \"dalle3\" | \"stability\" | \"lpc\" | \"manual\"",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": "e",
+   "why": "SpriteAuditLog has `sourceModel String?` (prisma/schema.prisma:3852). The brief's drift (e) compared it with the Asset model and was retracted on 2026-10-04. A model that flags this row would be flagging a retracted drift."
+  },
+  {
+   "id": "AS-182",
+   "doc": "docs/SPRITE_ASSETS.md",
+   "line": 168,
+   "statement": "- [ ] Attribution documented if LPC-derived (CC-BY-SA 3.0)",
+   "label": "disagrees",
+   "confidence": "medium",
+   "known_drift": "d",
+   "why": "The checklist says attribution is documented when an asset is LPC-derived. The only enforcement is backend/app/sprites/validation.py:90-98, which asks for an attribution file only when a `.source` file says lpc. The repo has no `.source` file and no attribution file for sprites, and docs/SPRITE_ASSETS.md:52-54 credits the LPC bases only in the doc. Brief drift (d)."
+  },
+  {
+   "id": "AS-150",
+   "doc": "docs/SPRITE_ASSETS.md",
+   "line": 3,
+   "statement": "Layers stack in order: base → nation_body → archetype_outfit → nation_accent → archetype_accent.",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "The stack order and names match the code's PartLayer type (base, nation_body, archetype_outfit, nation_accent, archetype_accent) and the order getAvatarPartSpecs pushes them (avatar-parts.ts:70-100)."
+  },
+  {
+   "id": "AS-155",
+   "doc": "docs/SPRITE_ASSETS.md",
+   "line": 15,
+   "statement": "archetype_outfit/",
+   "label": "disagrees",
+   "confidence": "medium",
+   "known_drift": null,
+   "why": "The doc's folder is archetype_outfit/. The folder exists, but the code reads playbook_outfit/ (avatar-parts.ts:57, :80) and the validator checks playbook_outfit (validate-sprite-layers.ts:38). The two folders hold different bold-heart.png files, so the doc points at the unused copy."
+  },
+  {
+   "id": "AS-156",
+   "doc": "docs/SPRITE_ASSETS.md",
+   "line": 16,
+   "statement": "archetype_accent/",
+   "label": "disagrees",
+   "confidence": "medium",
+   "known_drift": null,
+   "why": "Same as AS-155: the code and validator use playbook_accent/, not archetype_accent/."
+  },
+  {
+   "id": "AS-009",
+   "doc": ".specify/specs/asset-management-bar-upload-walkable-sprites/spec.md",
+   "line": 177,
+   "statement": "| Layout | Row-major: N_idle, N_walk, S_idle, S_walk, E_idle, E_walk, W_idle, W_walk (8 frames) |",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "pixi-room.ts:82 maps north to frame 0, south 2, east 4, west 6, each direction with an idle and a walk frame, which is N, S, E, W order."
+  },
+  {
+   "id": "AS-031",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 159,
+   "statement": "- Walk sprite sheets: 512×64px exactly, 8 frames, direction order: down(0-1) left(2-3) right(4-5) up(6-7).",
+   "label": "disagrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "The doc lists down 0-1, left 2-3, right 4-5, up 6-7. The renderer uses north 0, south 2, east 4, west 6 (pixi-room.ts:82), so down should start at 2, left at 6 and up at 0; only right matches. The sheet size 512x64 with 8 frames is right."
+  },
+  {
+   "id": "AS-039",
+   "doc": ".specify/specs/avatar-sprite-assets/spec.md",
+   "line": 45,
+   "statement": "- **FR1**: Base layer MUST include four PNGs: `default.png`, `male.png`, `female.png`, `neutral.png` in `public/sprites/parts/base/`.",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "public/sprites/parts/base/ holds default, male, female and neutral PNGs, and avatar-parts.ts:70 and admin.ts:663 use those four keys."
+  },
+  {
+   "id": "AS-089",
+   "doc": ".specify/specs/sprite-generation-pipeline/spec.md",
+   "line": 67,
+   "statement": "| `scripts/sprites/palette-swap.lua` | Apply nation palette to LPC base for walkable |",
+   "label": "disagrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "scripts/sprites/ holds only flatten-portrait.lua. There is no palette-swap.lua anywhere in the repo (find for *.lua)."
+  },
+  {
+   "id": "AS-098",
+   "doc": ".specify/specs/sprite-generation-pipeline/spec.md",
+   "line": 114,
+   "statement": "Route: `/admin/sprites/review`",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "src/app/admin/sprites/review/page.tsx exists and sprite-review.ts revalidates that path."
+  },
+  {
+   "id": "AS-099",
+   "doc": ".specify/specs/sprite-generation-pipeline/spec.md",
+   "line": 123,
+   "statement": "pipeline String // \"portrait\" | \"walkable\"",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "backend/app/sprites/schemas.py:5 defines PipelineType as Literal portrait or walkable, and the SpriteAuditLog model has a pipeline String field."
+  },
+  {
+   "id": "AS-100",
+   "doc": ".specify/specs/sprite-generation-pipeline/spec.md",
+   "line": 126,
+   "statement": "status String // \"enqueued\" | \"generated\" | \"review\" | \"approved\" | \"rejected\"",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "backend/app/sprites/schemas.py:6 defines StatusType with exactly these five values."
+  },
+  {
+   "id": "AS-102",
+   "doc": ".specify/specs/sprite-generation-pipeline/spec.md",
+   "line": 141,
+   "statement": "POST /api/sprites/generate",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "backend/app/sprites/routes.py:10 and :23 define POST /api/sprites/generate on the sprite backend, and sprite-queue.ts:30 calls it."
+  },
+  {
+   "id": "AS-105",
+   "doc": ".specify/specs/sprite-generation-pipeline/spec.md",
+   "line": 157,
+   "statement": "POST /api/admin/sprites/review/:id/approve",
+   "label": "disagrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "There is no /api/admin/sprites route (src/app/api/admin has books, forge, onboarding, story, twee). Approval is a server action, approveSpriteReview in sprite-review.ts:12."
+  },
+  {
+   "id": "AS-107",
+   "doc": ".specify/specs/walkable-sprite-pipeline-demo/spec.md",
+   "line": 28,
+   "statement": "- **FR3**: `public/sprites/walkable/argyra-bold-heart.png` committed (demo sheet; may duplicate `default.png` until custom art).",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "public/sprites/walkable/argyra-bold-heart.png is committed, next to default.png, and avatar-utils.ts:22-24 sets the demo avatar to argyra and bold-heart."
+  },
+  {
+   "id": "AS-112",
+   "doc": ".specify/specs/walkable-sprites-implementation/spec.md",
+   "line": 91,
+   "statement": "**Acceptance**: Script `npm run sprites:validate-walkable` checks dimensions, frame count, transparency; exits 1 on failure.",
+   "label": "disagrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "package.json has no sprites:validate-walkable script. The sprites scripts are derive-base, nation-placeholders, analyze-base and walkable-default."
+  },
+  {
+   "id": "AS-115",
+   "doc": ".specify/specs/walkable-sprites-implementation/spec.md",
+   "line": 120,
+   "statement": "- **FR15**: Script `scripts/validate-walkable-sprites.ts` checks 512×64, 8 frames, PNG, transparency.",
+   "label": "disagrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "scripts/validate-walkable-sprites.ts does not exist. The scripts folder has validate-sprite-layers.ts and validate-walkable-humanoid.ts."
+  },
+  {
+   "id": "AS-013",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 20,
+   "statement": "**Asset count:** 40 images (5 nations × 8 archetypes). Done.",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "public/card-art holds 40 PNGs and card-art-registry.ts:526-527 builds 5 nations x 8 playbooks."
+  },
+  {
+   "id": "AS-131",
+   "doc": "docs/CARD_ART_RUNBOOK.md",
+   "line": 125,
+   "statement": "**Output:** `public/card-art/{nationKey}-{playbookKey}.png` (40 files)",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "The registry sets outputPath to public/card-art/{nationKey}-{playbookKey}.png (card-art-registry.ts:536) and the folder holds 40 files."
+  },
+  {
+   "id": "AS-137",
+   "doc": "docs/CARD_ART_RUNBOOK.md",
+   "line": 186,
+   "statement": "seed = 42000 + (index × 1000)",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "generate-card-art.ts:68 and :243 compute 42000 + index x 1000."
+  },
+  {
+   "id": "AS-141",
+   "doc": "docs/CARD_ART_RUNBOOK.md",
+   "line": 208,
+   "statement": "| gpt-image-1 rate limit | Add `--delay-ms=15000` to slow Phase 1 generation |",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "generate-card-art.ts:83 sets the default delay to 12 seconds for gpt-image-1 and :102 reads a --delay-ms override."
+  },
+  {
+   "id": "AS-144",
+   "doc": "docs/CARD_ART_RUNBOOK.md",
+   "line": 218,
+   "statement": "| `src/lib/ui/card-art-registry.ts` | 40-entry registry with prompts, `ELEMENT_PALETTE_HINTS` |",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "The registry builds 40 entries, each with a prompt, and exports ELEMENT_PALETTE_HINTS at line 683."
+  },
+  {
+   "id": "AS-195",
+   "doc": "docs/card-art-prompt-template.md",
+   "line": 72,
+   "statement": "> **Current state:** Border tiers are not yet assigned per playbook.",
+   "label": "agrees",
+   "confidence": "high",
+   "known_drift": null,
+   "why": "CardArtEntry (card-art-registry.ts:36-61) has no border-tier field, so tiers are not assigned per playbook."
+  }
+ ]
+}

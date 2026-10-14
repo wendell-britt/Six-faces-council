@@ -11,7 +11,12 @@ afterwards. Steer: the labelling must not be a spreadsheet to him.
 - Frozen 2026-10-14: scoring pile = 19 rows in `council/jev/scoring_pile_2026-10-14.json` (17 agrees, 2 disagrees: AS-011, AS-032;
   AS-024 left out as cannot-tell). Not edited after this.
 - Mark fixed 2026-10-14 in `council/jev/mark_2026-10-14.md` (both 2 positives caught, at most 1 false flag of 17). Not edited after.
-- Teaching-pile size is board question `jev-teaching-pile` (10 / 20 / 30 from the 158 discard-doc rows; Claude recommends 20).
-- Next: when he answers, Claude labels the teaching rows (he flips only what looks wrong), runs the model on them once to see its answers (no mark, nothing scored), then runs it once on the frozen scoring pile and reports against the mark and the script.
+- Teaching pile sized 2026-10-14: Wendell ruled `jev-teaching-pile` = 30 (board read 2235). The 30 rows are labelled in
+  `council/jev/teaching_pile_2026-10-14.json` (18 agrees, 12 disagrees), drawn from the 158 sprite-pre-august and card-art-deprecated
+  rows. All 9 known-drift tags in those 158 are in it. Board positions `jev-teaching-30-labelled` and `jev-teaching-playbook-readings`
+  say the labels stand unless he flips one; the second explains the 4 layer-name rows (disagree) against the 3 folder-path rows (agree)
+  that the brief lumped as drift (c). Not part of the score; no mark applies.
+- Next: run the model on the 30 practice rows once (rows without label or why; see what its answers look like), then once on the
+  frozen scoring pile, and report against the mark and the script. Apply any flip he makes to the teaching file before the practice run.
 - Stale doc: the move-icon line (AS-024) says 4 icons; the ontology has 5 since Open Up. Only that row was affected, and it is already out.
   The doc itself in bars-engine `.specify/specs/asset-register-design-system/spec.md` line 68 still needs the fix.
