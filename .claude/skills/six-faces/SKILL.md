@@ -47,7 +47,10 @@ faces remain bounded lenses from `council/faces.yaml` and do not silently rewrit
    there), Open Up (brainstorm every possible move, unjudged, as Wendell's Idea Storm does), Clean Up (clear
    what blocks the work and compost what does not serve), Grow Up (the test, measurement or reading that
    makes the next attempt better, with web research where it helps), and Show Up (distill to at most five
-   moves). Each also says what it protects the Player from and makes more enjoyable, asks at most two
+   moves). Before the moves it answers its own question set from `council/daemons/questions.yaml` about the
+   problem (Wendell, 2026-10-14): what it works on, who it works for, how its work serves that boss, and what
+   would happen without it. When two reports name different bosses for the same problem, the face says so: it
+   shows which part is really driving the decision. Each also says what it protects the Player from and makes more enjoyable, asks at most two
    questions, and names where it would overreach. The face uses what helps, says which daemon it came
    from, and stops a daemon where its overreach line says. A daemon's questions go through the reach test
    like any other. Before reading a report, the face saves it and runs `python3 council/daemons/check_report.py
