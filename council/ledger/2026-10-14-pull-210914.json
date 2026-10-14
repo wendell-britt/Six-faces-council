@@ -1,0 +1,83 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T21:09:14.810Z",
+ "answers": {
+  "jev-lab-as-029": {
+   "kind": "question",
+   "choice": "agrees",
+   "savedAt": "2026-10-14T21:05:14.788Z",
+   "steer": ""
+  },
+  "jev-lab-as-032": {
+   "kind": "question",
+   "choice": "disagrees",
+   "savedAt": "2026-10-14T21:05:34.338Z",
+   "steer": ""
+  },
+  "jev-lab-as-064": {
+   "kind": "question",
+   "choice": "agrees",
+   "savedAt": "2026-10-14T21:06:00.522Z",
+   "steer": ""
+  },
+  "ttv-first-gate": {
+   "kind": "position",
+   "savedAt": "2026-10-14T21:06:12.273Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttv-bars-engine-trusted": {
+   "kind": "position",
+   "savedAt": "2026-10-14T21:06:37.373Z",
+   "status": "overrule",
+   "steer": "I do think we need to be able to make an API call to bars-engine directly if this is the case. "
+  },
+  "ttv-skip-run": {
+   "kind": "position",
+   "savedAt": "2026-10-14T21:06:46.873Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttv-skip-wave": {
+   "kind": "position",
+   "savedAt": "2026-10-14T21:07:35.881Z",
+   "status": "stands",
+   "steer": "yes, but I want it to be an intereactive as possible. We want to move toward using the game to build the game. It should deposit me inside the WAVE room and we should move to have the WAVE room be able to metabolize context specific charges and send the results to the board in this case. \n"
+  },
+  "jev-admin-16-labelled": {
+   "kind": "position",
+   "savedAt": "2026-10-14T21:07:45.958Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "jev-lab-as-024": {
+   "kind": "question",
+   "choice": "cannot-tell",
+   "savedAt": "2026-10-14T21:08:22.142Z",
+   "steer": "There should be 5 move icons now that there is an Open Up version. This is an artifact from before that change was made in the ontology "
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-03",
+   "at": "2026-10-14T16:46:41Z",
+   "what": "ticked",
+   "do": "Look at round 3 of the clothing (J5). You said the robe was being made to look like something instead of simulating what happens. The robe is now cut as two flat panels, sewn at the shoulders, along the sleeves and down the sides, and dropped on the standing body by Blender's cloth solver under gravity. The cloth wants to lie flat, so where it lies flat, folds or bunches is the solver's answer. The belt is simulated too: the band of cloth at the sash's height shrinks until it grips the waist, so the robe blouses a little above it and falls in folds below. j5r3-shoulders-average.jpg is a close-up of the shoulders from the front, side and back. j5r3-walk-average.jpg shows the average dusk figure at four points of the walk, from the front, three-quarter, side and back. j5r3-set-sheet.jpg shows the whole set on all nine figures, and j5r3-set-walk.jpg and j5r3-garments-sheet.jpg are the usual sheets. One machine check is still open: on the slight and broad builds, some drapes leave a few points of the hips showing through mid-stride. That gets fixed whatever you say here. Under this step, note 'yes' or what is still wrong with how the cloth lies."
+  }
+ ],
+ "blockers": [
+  "council/blockers/anastasia-campaign-live-01--mv8lr0ud.json"
+ ],
+ "needs_work": [
+  "questions/jev-lab-as-029: Agrees",
+  "questions/jev-lab-as-032: Disagrees",
+  "questions/jev-lab-as-064: Agrees",
+  "positions/ttv-bars-engine-trusted: Overruled (steer: \"I do think we need to be able to make an API call to bars-engine directly if this is the case.\")",
+  "positions/ttv-skip-wave: Stands (steer: \"yes, but I want it to be an intereactive as possible. We want to move toward using the game to build the game. It should deposit me inside the WAVE room and we should move to have the WAVE room be able to metabolize context specific charges and send the results to the board in this case.\")",
+  "questions/jev-lab-as-024: Cannot tell (steer: \"There should be 5 move icons now that there is an Open Up version. This is an artifact from before that change was made in the ontology\")",
+  "blockers/anastasia-campaign-live-01--mv8lr0ud: Send Anastasia the draft and ask for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in public. A photo and her Facebook post are optional. (Avoiding being imperfect.; left at validate)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
