@@ -103,8 +103,44 @@ The current BARS derivation was reconstructed from source answers through compil
 
 The Yellow Brick Road is retained as mythic reassurance and a recoverability covenant: **no path has to be wasted**. It is not an infallibility claim. Divergence does not prove hidden desire, harm remains harm, and revised destinations do not retroactively fulfill earlier ones. Some blockers may remain unresolved indefinitely while continuing to constrain a named route.
 
+## Roadblock reconstruction and ontology decision
+
+- `roadblocks/reconstruction-and-decision.md`
+
+The ontology now distinguishes a RoadblockEvent, provisional classification, causal account, intention-alignment hypothesis, response, and outcome. “Misaligned intention” remains available as a correctable meaning or causal hypothesis only when supported by a declared intention and relevant evidence. It is never inferred from a technical fault alone. Technical metabolization can yield repair, verification, safer routing, learning, or provenance without requiring emotional processing.
+
+## Session-depth and disclosure reconstruction and ontology decision
+
+- `session-depth/reconstruction-and-decision.md`
+
+The future disclosure-volume depth signal is replaced by a correctable ResponseAffordanceProfile. The ontology distinguishes response material, performed practice, player-reported depth, artifact specificity, richness, quality, fit, pacing, and demonstrated deftness. Performance may be legitimate gameplay and may be rewarded when explicitly named; intimate disclosure cannot buy progress, power, credentials, rank, or better baseline craft.
+
+## BAR-scope reconstruction and ontology decision
+
+- `bar-scope/reconstruction-and-decision.md`
+
+BAR is now a first-class broad kernel: intentionally captured potential with stable identity and provenance. Provenance is necessary but insufficient, and charge is optional. ChargedBAR names one specialization; BARExpression separates the enduring kernel from quests, rules, lore, specifications, plans, norms, branches, and artifacts through which it blooms. Portability is permission-bound, and capture does not create implementation debt.
+
+## Composting reconstruction and ontology decision
+
+- `composting/reconstruction-and-decision.md`
+
+Composting now ends a named active obligation without requiring later output, learning, transformation, fuel, or reuse. Optional CompostResidue and a later RegenerationEvent remain separately permissioned and evidenced. A real composting disposition removes backlog pressure and completion prompts; reactivation creates a new obligation. Composting remains distinct from deletion, archival, supersession, and completion of the original quest.
+
+## Creative-reuse and personal-meaning ontology decision
+
+- `creative-reuse-meaning/reconstruction-and-decision.md`
+
+“Not necromancy” remains an attributed BARS ProjectMeaningFrame rather than a compulsory player interpretation. Personal meaning, authorship, identity, attribution, permission, and consequence remain separate. A DerivedVoice is a character informed by a permitted corpus, not the source person or past self. “Not mine” is a scoped correction, and archive reuse remains optional with non-AI and non-reuse routes preserving core access and quality.
+
+## Privacy and consent authority ontology decision
+
+- `privacy-consent-authority/reconstruction-and-decision.md`
+
+Consent is now situated authorization, while a ConsentRecord is historical evidence rather than permanent proof of willingness. PermissionGrant and PermissionEnvelope make purpose, operation, processor, audience, duration, retention, descendants, export, correction, revocation, and deletion independently enforceable. Every derivative inherits the effective permission envelope. Correction, revocation, and deletion propagate through reachable lineage with honest residual limits. The BARS mismatch among privacy copy, serialized 3-2-1 snapshots, witness BAR creation, and NPC merge propagation is recorded as implementation work, not treated as evidence of consent.
+
 ## Readiness
 
-Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, and Yellow-Brick-Road questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
+Owner correction remains in progress. The constitutional-succession, face-namespace, WAVE-terminology, encounter-completion, tension-representation, derived-movement, Yellow-Brick-Road, roadblock-intention, session-depth, BAR-scope, composting, creative-reuse meaning, and privacy-consent authority questions have been resolved. Other questions in the Sage reconciliation remain open. No general Phase B merge, pruning, composting, or work-disposition assignment has been made.
 
 The next activity is evidence-led resolution of the remaining questions in `sage-canon-reconciliation.md`. Questions answerable from source reconstruction, ontology invariants, and bounded deliberation should be resolved without returning unnecessary choices to Wendell. Only irreducible matters of personal meaning, values, or owner authority should be escalated. After corrections are recorded, Wendell may decide whether to authorize a separate Phase B governance council.

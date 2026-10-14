@@ -1,7 +1,12 @@
-2026-10-12 (updated 23:35)
+2026-10-13 (updated 02:35)
 # Cave studio (Blender in the cloud for the cave, battle fr-cave-studio)
 
 ## Next
+2026-10-13: #285 merged. #289 (merged 02:54) makes the crystal a building block (`crystalBlock`
+in `cave.js`: size, height, width, six tints, seeded per place; comparison page version 3 has sliders) and fixes
+root_curl (`bpt-root-curl`: one piece, 499 faces). His words: "The crystals are perfect". Still open: the crystal count
+(P4, 7 where his picture has about 10) and his next picture.
+
 Round 1 is recorded and the first piece is built: bars-engine draft PR #285 (branch `claude/project-thread-1loob1`).
 - `tools/blender-cloud/from_picture.py` builds a model from one front-view picture: `lathe`, `inflate` or `crystals`,
   scores the outline match and renders it. `content/ontology-game/cave/build_kit.py` builds the chamber dressing from

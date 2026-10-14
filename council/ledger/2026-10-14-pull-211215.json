@@ -1,0 +1,17 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T21:12:15.148Z",
+ "answers": {},
+ "steer": null,
+ "steps": [],
+ "blockers": [
+  "council/blockers/anastasia-campaign-live-01--mv8lr0ud.json",
+  "council/blockers/anastasia-campaign-live-01--mv8ltu5n.json"
+ ],
+ "needs_work": [
+  "blockers/anastasia-campaign-live-01--mv8lr0ud: Send Anastasia the draft and ask for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in public. A photo and her Facebook post are optional. (Avoiding being imperfect.; left at end)",
+  "blockers/anastasia-campaign-live-01--mv8ltu5n: Send Anastasia the draft and ask for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in public. A photo and her Facebook post are optional. (Avoiding imperfection; the step needs changing: \"the dashboard needs to reveal more of the parts that I can click on and review. it has me chasing a project file and I'm bouncing off of needing to do that. If I Can click the file see whats going on and update the notes that would get me unblocked\", charge 7 to 4)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

@@ -343,6 +343,12 @@ Bare `TensionVector` is retired. `BARS321TensionVector` survives only as a depre
 
 Collection, persistence, derivation, artifact generation, personalization, NPC/world adaptation, collective reuse, sharing, analytics, and model improvement require distinct permissions. Structured extraction is not anonymization.
 
+### Privacy authority follows the material
+
+Consent is situated authorization; a `ConsentRecord` is evidence of a past decision, not permanent proof of present willingness. Every concrete operation evaluates a `PermissionEnvelope` that intersects purpose-specific grants, refusals, boundaries, source restrictions, and duties. Derivatives inherit that envelope through lineage even when they become structured data, generated world material, analytics, exports, or model artifacts.
+
+The represented person governs person-specific interior, somatic, psychographic, identity, likeness, and inference uses within their authority. Each affected participant governs their own relational contribution. Creative authors and rights-holders govern only the rights they actually hold. Stewards may administer an authorized purpose but cannot create a new one. Correction changes claims; revocation ends future authority; deletion disposes of named content and descendants. Optional sensitive uses cannot buy baseline quality, progress, power, credentials, or belonging.
+
 ### Derived movement is a proposal, not a finding
 
 The legacy Epiphany-Bridge binary reuses `translate` and `transcend` with meanings different from the fifteen-move Emotional Alchemy grammar. Treat it as a separate `LegacyEpiphanyMovementMode` namespace; do not join the grammars by label.
@@ -356,6 +362,22 @@ Correction stops future use of the rejected proposal, flags or regenerates unpub
 Retain the Yellow Brick Road as mythic reassurance that **no path has to be wasted**. Do not use it to claim that every result was secretly desired, every divergence was progress, or every harm was necessary.
 
 A destination retains its author and revision history. Routes remain falsifiable. Divergence may become evolution, discovery, error, failure, escape, or noise according to evidence. Some blockers may remain unresolved indefinitely; they may still constrain a particular route without obligating the player to metabolize them. Rest, assistance, accommodation, another route, environmental change, revised destination, abandonment, and composting remain valid.
+
+### Roadblocks do not diagnose intention
+
+Record a roadblock first as a scoped observation of what is constrained and under which conditions. Keep its provisional classification, causal account, meaning, response, and outcome separate. Technical, dependency, resource, coordination, capability, environmental, relational, emotional/interpretive, and safety/ethical causes may coexist or remain unknown.
+
+“Misaligned intention” is a correctable hypothesis only when a declared intention can be compared with relevant method, conditions, capacity, permissions, or consequences. The council may propose it; it may not infer a person's hidden intention or treat refusal as confirmation. The binding rule is: **a roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.**
+
+Technical metabolization means producing repair, verification, safer routing, reusable learning, or provenance. It does not require emotional processing. Experiential metabolization remains optional and evidence-bound.
+
+### Performance can matter without proving inner depth
+
+Gameplay is performance. A player can develop capacity and create story by performing a named practice, even when the system cannot know the player's private inner state. Record `PracticePerformanceRecord` against explicit criteria; do not silently relabel it genuineness, vulnerability, satisfaction, or transformation.
+
+Replace disclosure-based “session depth” with a correctable `ResponseAffordanceProfile`: what specificity, constraints, examples, relationships, or imagery are available for a declared adaptation. More relevant material may support a more specific `ArtifactTailoringPlan`. It must not buy better baseline craft, core progress, power, credentials, or social rank.
+
+Artifact specificity, richness, quality, and fit are separate claims. Intimate disclosure is not progression currency. Concise, private, fictionalized, symbolic, nonverbal, second-language, disabled, neurodivergent, and culturally guarded participation require equivalent routes to the core game and the same quality floor. Pacing proposals remain reversible and player-correctable.
 
 ---
 
@@ -381,7 +403,11 @@ Encounter types are composable operative contracts—such as contest, inquiry, r
 
 ## 9. BAR lifecycle and composting
 
-A BAR is a captured unit of charged possibility with provenance. It must not become a note that sits forever as unresolved debt.
+A BAR is an intentionally captured, portable kernel of potential with stable identity and provenance. Charge is one important source and condition, not a requirement: a ChargedBAR is one specialization within the broader canonical class. Every BAR has provenance, but not every traceable note, artifact, quest, rule, specification, log, or decision is automatically a BAR.
+
+A BAR may bloom through one or more `BARExpression` records such as a quest, rule, lore, design decision, feature specification, implementation plan, community norm, branch, or artifact. Kernel and expression remain distinct. Existing material receives BAR identity only through explicit `BARPromotion`; portability remains subject to permission and context.
+
+A captured BAR must not become unresolved debt merely because it exists.
 
 Possible lifecycle verbs:
 
@@ -403,7 +429,19 @@ Before preserving an option, ask:
 4. Should it be planted, shipped, delegated, stored, grafted, forked, harvested, or composted?
 5. What is the minimum provenance trace that should remain?
 
-Composting must be recoverable at the level of learning and lineage, even if the active obligation ends.
+Where retention is permitted and useful, composting preserves the minimum appropriate learning and lineage. Its recoverability level must be explicit; privacy, safety, or deletion authority may require a tombstone or no retained source content.
+
+**Composting boundary:** Release completes composting; regeneration is optional. Compost may nourish future growth, but it does not owe the garden a harvest. A CompostRecord preserves only the minimum legitimate trace, and privacy or deletion authority may require decision-only, lineage-only, or unrecoverable disposition. Any retained CompostResidue and later RegenerationEvent require their own permissions and provenance.
+
+After composting, the system stops active backlog pressure, overdue status, progress penalties, required review, and automatic completion prompts. Reactivation is a new governed decision. Composting does not complete an unmet quest, prove the material worthless, or authorize bulk sorting of the ontology.
+
+### Creative reuse does not own personal meaning
+
+BARS may retain “not necromancy” as its project-level meaning frame for creative composting. It must remain visibly attributed to the project rather than asserted as the player's required experience. The project may name its ritual; it may not name the player's experience for them.
+
+Separate SourceCorpusRecord, CreativeReuseProposal, ReuseAuthorization, DerivationRecord, ProjectMeaningFrame, PersonalMeaningReport, AttributionRecord, DerivedVoice, IdentityContinuityClaim, ReuseRejection, and ReuseConsequenceRecord. A derived voice is a character informed by a permitted corpus, not the source person or a new statement authored by their past self.
+
+“Not mine” may reject meaning, authorship, attribution, identity or likeness, aesthetics, permission, or relationship. The system must honor the scope, propagate correction through descendants, and never call rejection resistance. Archive reuse remains optional; non-AI and non-reuse routes preserve the core game and quality floor.
 
 ---
 
@@ -501,7 +539,7 @@ Ask:
 - Which principles currently present themselves as constitutional, provisional, or unresolved?
 - What authority would eventually be required to revise, ratify, fork, deprecate, or compost an ontology node?
 - What must be understood and demonstrated before a concept could become canonical?
-- What privacy and consent rules govern psychographs and somatic data?
+- Which current implementations fail the binding privacy and consent authority tests?
 - What is the definition of done for the ingestion and translation pass?
 
 Deliver an authority map and readiness gates for entering later governance. Do not ratify the ontology in this pass.

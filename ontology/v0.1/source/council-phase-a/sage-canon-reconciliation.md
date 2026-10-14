@@ -164,15 +164,15 @@ The public Ontology Alchemy Game named in the council brief was not part of the 
     **Direct source fact:** Elemental Emotional Alchemy uses Wake → Clean → Grow → Show. `FOUNDATIONS.md` calls Wake → Open → Clean → Grow → Show the personal-throughput WAVE order.
     **Resolution:** The source collision is now historical rather than normative. The five are the Basic Moves; WAVE is the Open Up breathing practice; Wake → Clean → Grow → Show is the within-channel progression. See `wave-terminology/owner-decision.md`.
 
-11. **Broad BAR kernel and charged possibility**
+11. **Broad BAR kernel and charged possibility — resolved by ontology decision**
     **Direct source fact:** `FOUNDATIONS.md` permits any provenance-bearing kernel—quest, rule, lore, design decision, spec, implementation plan, norm, or fork—to be a BAR.
     **Direct source fact:** The council brief describes a BAR as a captured unit of charged possibility.
-    **Delta:** Charged possibility may be one BAR source or subtype; it is not demonstrated to exhaust the canonical class.
+    **Resolution:** BAR is the broad first-class kernel. Provenance is necessary but not sufficient; intentional capture, stable identity, compressed potential, and a development or expression context are also required. ChargedBAR is one specialization. BARExpression distinguishes the kernel from the quest, rule, lore, specification, plan, norm, branch, or artifact through which it blooms. See `bar-scope/reconstruction-and-decision.md`.
 
-12. **Composting as generative reuse and as release**
+12. **Composting as generative reuse and as release — resolved by ontology decision**
     **Direct source fact:** `FOUNDATIONS.md` emphasizes metabolizing past authored material into new creative fuel and output.
     **Direct source fact:** The new ontology emphasizes ending implementation obligation while retaining learning and lineage.
-    **Delta:** Reuse and release may coexist, but neither source states their relationship.
+    **Resolution:** Release completes the CompostingDisposition. CompostResidue is optional and permission-bound; a later RegenerationEvent is separately authorized and evidenced. No output, lesson, transformation, fuel, or reuse is required. A composted obligation leaves active backlog pressure and can be reactivated only through a new decision. See `composting/reconstruction-and-decision.md`.
 
 13. **Provenance expansion**
     **Direct source fact:** BARS canon primarily tracks BAR, artifact, strand, branch, fork, and session lineage.
@@ -187,7 +187,7 @@ The public Ontology Alchemy Game named in the council brief was not part of the 
 15. **Privacy rule and consent grammar**
     **Direct source fact:** 3-2-1 canon excludes raw journal text from literal transmission but stores structured tension data.
     **Direct source fact:** The new ontology distinguishes collection, inference, adaptation, retention, explanation, visibility, reuse, sharing, correction, and revocation.
-    **Delta:** The new grammar is materially broader than implemented canon and must not be described as already implemented.
+    **Resolution:** Consent is situated authorization; a ConsentRecord is historical evidence. A purpose-specific PermissionEnvelope governs each operation and propagates through descendants. Correction, revocation, and deletion remain distinct. The new grammar is materially broader than implemented canon and must not be described as already implemented. See `privacy-consent-authority/reconstruction-and-decision.md`.
 
 16. **Completion has multiple non-equivalent scopes**
     BARS sources use completion for major-flow feedback, Wake passage completion, Show action attestation, 3-2-1 satisfied/dispatch state, structural maturity, and social adoption. The new ontology adds valid encounter endings and work completion through rest, shipping, or composting.
@@ -198,19 +198,19 @@ The public Ontology Alchemy Game named in the council brief was not part of the 
     **Direct source fact:** The new ontology preserves contradictory evidence, unsuccessful outcomes, refusal, and the possibility that a design or intervention did not work.
     **Resolution:** Retain it as mythic reassurance and a recoverability covenant: no path has to be wasted. It is not an empirical guarantee, cannot erase wrongness or harm, and cannot silently revise the player's destination. Some blockers may remain unresolved indefinitely while continuing to constrain a named route. See `yellow-brick-road/reconstruction-and-decision.md`.
 
-18. **Roadblock as technical fact and intentional diagnosis**
+18. **Roadblock as technical fact and intentional diagnosis — resolved by ontology decision**
     **Direct source fact:** `FOUNDATIONS.md` calls an Emergent Roadblock a manifestation of misaligned intention while giving build errors and export mismatches as examples.
-    **Delta:** The new ontology requires the technical observation to remain separate from the intention interpretation unless evidence connects them.
+    **Resolution:** A RoadblockEvent is first a scoped observation. Classification, causal account, intention interpretation, response, and outcome remain separate. “Misaligned intention” is a correctable hypothesis requiring a declared intention and relevant evidence; it is never inferred from technical failure alone. Technical metabolization can mean repair, verification, routing, learning, or provenance without emotional processing. See `roadblocks/reconstruction-and-decision.md`.
 
-19. **Session depth and disclosure volume**
+19. **Session depth and disclosure volume — resolved by ontology decision**
     **Direct source fact:** The future 3-2-1 signal associates long answers, specific fear naming, and “genuine mask identification” with deeper sessions and richer outputs.
     **Direct source fact:** The new ontology rejects behavioral proxies as sufficient evidence of inner meaning.
-    **Delta/conflict:** The proposal is compatible only if treated as a content-detail signal and tested against verbosity, language, disability, culture, privacy, and reported depth.
+    **Resolution:** Retire response length and intimate specificity as a universal depth measure. A correctable ResponseAffordanceProfile may guide artifact tailoring, while PracticePerformanceRecord, player-reported depth, artifact specificity, quality, fit, pacing, and DeftnessFinding remain separate. Performance may be rewarded when explicitly named, but disclosure itself cannot become progress, power, credential, or rank. See `session-depth/reconstruction-and-decision.md`.
 
-20. **Creative composting meaning authority**
+20. **Creative composting meaning authority — resolved by ontology decision**
     **Direct source fact:** `FOUNDATIONS.md` answers its “necromancy” question with “no” inside the project ontology.
     **Direct source fact:** The new ontology leaves personal inward meaning with the player.
-    **Delta:** A project-level ethical framing and an individual player's meaning may differ; their jurisdiction is not stated.
+    **Resolution:** “Not necromancy” remains a ProjectMeaningFrame attributed to BARS. It does not bind PersonalMeaningReport, authorship, identity, attribution, permission, or consequence. DerivedVoice is a character informed by a permitted corpus, never the source person or an authentic statement by a past self. “Not mine” is a scoped correction whose downstream effects must be honored. See `creative-reuse-meaning/reconstruction-and-decision.md`.
 
 21. **Eight versus fifteen constitutional principles**
     **Direct source fact:** The brief declares eight; the later philosophy declares fifteen; BARS canon does not contain a source-version record for this delta.
@@ -309,17 +309,17 @@ The following are materially more explicit in the new package than in the inspec
 10. **Resolved 2026-10-12:** Derived legacy translate/transcend output is a player-correctable routing hypothesis, formalized as a DerivedMovementProposal. An accepted proposal may route authored content; it cannot establish actual movement.
 11. **Resolved 2026-10-12:** “You can never go the wrong way” is mythic reassurance about recoverability. The precise rule is “no path has to be wasted”; it is not an operational or metaphysical guarantee.
 12. **Resolved 2026-10-12:** Some blockers may remain unresolved indefinitely. They may constrain a particular route without creating a perpetual obligation to metabolize them.
-13. Is “misaligned intention” a metaphor for technical roadblocks or a causal diagnosis that requires evidence?
-14. May future session-depth heuristics influence rewards or content, and who can authorize inference from verbosity or intimate disclosure?
-15. Is BAR canonically any provenance-bearing kernel, a charged kernel, or a parent class with charged BAR as one subtype?
-16. Does composting require later generative reuse, or may obligation end without producing a new artifact?
-17. Which privacy authority governs derived TensionVectors, psychographs, somatic reports, adaptive inferences, generated world material, audit trails, exports, model use, deletion, and revocation?
+13. **Resolved 2026-10-12:** “Misaligned intention” is a metaphorical and interpretive possibility formalized as an `IntentionAlignmentHypothesis`. Any causal use requires a declared intention, scoped comparison, and relevant evidence; a technical roadblock never proves it.
+14. **Resolved 2026-10-12:** Response material may influence disclosed, correctable artifact tailoring and reversible pacing through a ResponseAffordanceProfile. Verbosity and intimacy do not establish depth or genuineness and cannot buy core progress, power, credentials, social rank, or better baseline craft.
+15. **Resolved 2026-10-12:** BAR is a broad first-class kernel intentionally captured with stable identity and provenance. ChargedBAR is one specialization. Provenance alone does not make an object a BAR, and BARExpression keeps the kernel distinct from the forms through which it blooms.
+16. **Resolved 2026-10-12:** Composting ends the named active obligation without requiring a new artifact, lesson, transformation, fuel, or later reuse. Optional residue and regeneration have separate permissions, provenance, and events.
+17. **Resolved 2026-10-14:** The represented person governs person-specific interior, somatic, psychographic, identity, likeness, and inference uses within their authority; affected participants retain authority over their own relational contributions; source authors or rights-holders govern creative material within actual rights; and stewards may administer but not invent purposes. Each operation requires the intersection expressed by a current PermissionEnvelope, which propagates through descendants.
 18. Who may override `shouldRun: false`, and which privacy, safety, or integrity objections must stop a strand?
 19. Is `audit_trail` authoritative over `decision_audit_log`, and what compatibility or migration rule follows?
 20. Who coordinates, who synthesizes, who approves, and who ratifies when Diplomat, Sage, Regent, Integrator, Steward, and a domain circle are all implicated?
 21. Are structural maturity, social adoption, epistemic maturity, work disposition, quest completion, and implementation status intended as independent axes?
-22. Can project-level ethical framings such as “AI remix is not necromancy” coexist with a player's different personal meaning and opt-out?
-23. Does a stored ConsentRecord document a past authorization only, or can any source treat it as evidence of present willingness?
+22. **Resolved 2026-10-12:** Yes. The BARS framing remains an attributed ProjectMeaningFrame, while each affected person authors their PersonalMeaningReport and may reject meaning, authorship, attribution, identity, aesthetics, relationship, or reuse permission. Non-AI and non-reuse routes preserve core access and quality.
+23. **Resolved 2026-10-14:** A ConsentRecord documents evidence of a past grant, refusal, or condition. It may support a later operation only while the full purpose envelope remains active and unchanged; it is never permanent proof of present willingness. Materially changed, high-sensitivity, public, surprising, or relational uses require renewed confirmation.
 24. Does the public Ontology Alchemy Game contain additional canon or correction that must be reconciled before governance?
 
 ## comprehension_and_prompt_impacts
@@ -413,12 +413,12 @@ Wendell is asked to correct the council's understanding of the following. These 
 10. **TensionVector — resolved 2026-10-12:** Bare TensionVector is retired. Use TensionConfiguration formally, TensionSnapshot for persisted data, TransformationTrace for the path, Tension Map for players, and `BARS321TensionVector` only as a deprecated compatibility alias.
 11. **Derived movement — resolved 2026-10-12:** The source author or represented player may correct or reject the proposal. Future use stops; unpublished descendants are invalidated or reviewed; published descendants are versioned; historical play remains provenance without retaining the rejected interpretation as player truth; privacy restrictions propagate through lineage.
 12. **Yellow Brick Road — resolved 2026-10-12:** It is mythic reassurance and a recoverability covenant. No path has to be wasted, but wrongness, failure, harm, and irreversible consequence remain real. Some blockers may remain unprocessed indefinitely while constraining a named route.
-13. **Roadblocks:** Is “misaligned intention” a metaphor for technical failures or a causal claim the system should infer?
-14. **BAR scope:** Is every provenance-bearing kernel a BAR, with charged BARs as one source/subtype, or should charge be constitutive?
-15. **Composting:** Can composting end with release alone, or must retained material eventually generate new fuel or form?
-16. **Personal meaning:** May a player interpret AI remixing of their past work as uncanny, inappropriate, or “not mine” despite the project's “not necromancy” framing?
-17. **Privacy and consent:** Which permissions and retention/deletion rights should become binding for tension vectors, psychographs, somatic reports, adaptive inferences, generated imagery, council records, and model improvement?
-18. **Depth:** Should answer length and intimate specificity influence artifact richness at all, and if so, what evidence and accessibility protections are required?
+13. **Resolved — Roadblocks:** Preserve “misaligned intention” as an optional, correctable interpretation. The system records the roadblock observation first and may infer neither hidden intention nor psychological cause from technical failure.
+14. **Resolved — BAR scope:** BAR is an intentionally captured portable kernel of potential with stable identity and provenance. Charge is optional. Provenance-bearing records and BAR outputs receive BAR identity only through explicit kernel capture or promotion.
+15. **Resolved — Composting:** Release completes the lifecycle disposition. Retained residue is optional and permission-bound; later regeneration is a new event, not a debt carried by compost.
+16. **Resolved — Personal meaning:** Yes. The project may author its ritual frame but cannot compel another person's experience. Derived voices require provenance, attribution, granular reuse permission, correction, and non-impersonation; “not mine” remains valid and scoped.
+17. **Resolved — Privacy and consent:** Collection, transient processing, persistence, derivation, personalization, explanation, visibility, reuse, sharing or publication, export, analytics or evaluation, model improvement, retention, correction, deletion, and revocation are distinct. A PermissionEnvelope follows source material into every derivative. Correction changes claims; revocation ends future authority; deletion disposes of named content and descendants with only minimum permitted residual obligations.
+18. **Resolved — Depth:** Relevant supplied material may increase artifact specificity under an InputSufficiencyContract. Answer length and intimacy are not depth measures. Practice performance, player-reported depth, artifact quality, fit, usefulness, and deftness require their own evidence and accessible, privacy-preserving routes.
 19. **Agent refusal:** Is `shouldRun: false` always advisory, or should privacy, safety, integrity, or resource objections halt or reroute a strand?
 20. **Coordination and ratification:** In a conflict among Diplomat coordinator, Sage synthesizer, Regent steward, Steward review face, Integrator, domain circle, player, and ontology owner, who may decide which kind of question?
 21. **Public source:** Must `https://masteringallyship.com/ontology-game` be reconciled before Phase B, and what authority does it hold relative to the local files?

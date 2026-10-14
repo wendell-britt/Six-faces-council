@@ -99,6 +99,11 @@ Types: ConstitutionalPrinciple, ProvisionalCommitment, AestheticPattern, Polarit
 - **CoordinationPattern:** a capacity existing among agents rather than inside one;
 - **SharedMeaning:** negotiated meaning that need not replace personal meaning.
 - **PurposePermission:** authorization binding a data category to a specific collection, persistence, derivation, reuse, audience, retention, or deletion purpose.
+- **PermissionGrant / PermissionRefusal:** an authority's scoped decision for a declared purpose envelope;
+- **PermissionEnvelope:** the effective intersection of grants, refusals, boundaries, source restrictions, and duties for one operation;
+- **DataAssetRecord:** provenance, subjects, sensitivity, location, stewardship, and lifecycle state of governed material;
+- **ProcessingEvent / DerivationRecord:** an actual operation and the lineage from its sources to its descendants;
+- **CorrectionRecord / RevocationRecord / DeletionRequest / DeletionDisposition / PropagationRecord / ResidualObligationRecord:** distinct governance events and outcomes.
 
 ### 3.8 EpistemicObject
 
@@ -300,6 +305,58 @@ A DestinationClaim preserves Point B and its author. A RouteHypothesis remains f
 
 Some blockers may remain unresolved indefinitely. An unresolved blocker may still prevent a particular route or quest from completing. Changing or releasing the destination is valid, but it does not retroactively fulfill the earlier DestinationClaim. Learning from harm or error never makes it necessary, correct, or reversible.
 
+### 8.6 Roadblock observation and intention hypotheses
+
+A `RoadblockEvent` is an evidence-bearing specialization of BlockerRecord: it records that a named action, route, capacity, or destination is constrained under declared conditions. The event does not establish motive, emotional state, developmental level, resistance, hidden desire, or misaligned intention.
+
+A `RoadblockClassification` may be technical, dependency, resource, coordination, capability, environmental, relational, emotional/interpretive, safety/ethical, unknown, or multi-causal. A separate `RoadblockCausalAccount` distinguishes correlation, contributing condition, proximate cause, root-cause hypothesis, and cause verified within a declared test scope.
+
+An `IntentionAlignmentHypothesis` is a correctable interpretation comparing a declared intention with a relevant method, condition, capacity, permission, or consequence. Its governing rule is: **a roadblock may reveal a mismatch among intention, method, conditions, and capacity; it does not prove misaligned intention.** The hypothesis records whose intention is represented, its author, supporting and contradicting evidence, uncertainty, and confirmation or rejection status. AI inference remains proposal-only.
+
+A `RoadblockResponse` may repair, retry, test, request help, accommodate, alter the environment, acquire capability, renegotiate, reroute, pause, rest, accept, leave unresolved, set down, abandon, or compost. A `MetabolizationOutcome` records reusable repair, verification, learning, or provenance. Technical metabolization does not imply emotional processing; experiential metabolization is valid only according to the represented person's evidence.
+
+### 8.7 Session depth, practice performance, and artifact tailoring
+
+The legacy future `SessionDepthSignal` does not measure inner depth. `ResponseMaterial` records what the player supplied in a permitted modality. A correctable `ResponseAffordanceProfile` identifies relevant specificity, constraints, relationships, examples, ambiguity, imagery, modality coverage, and preserved omissions for a declared purpose. Character count establishes only character count.
+
+A `PracticePerformanceRecord` records observable action against an explicit move or encounter contract. Performance can be gameplay: it may create capacity, story, relationship, and consequence. It does not establish genuineness, vulnerability, transformation, readiness, or whole-person development.
+
+A `DepthClaim` always names its scope and evidence authority. Player-reported experiential depth, design resolution depth, interpretive complexity, relational depth, artifact specificity, and demonstrated deftness are distinct claims. A `DeftnessFinding` requires repeated relevant performance evidence.
+
+An `ArtifactTailoringPlan` uses permitted ResponseMaterial under an `InputSufficiencyContract`. Artifact specificity, richness dimensions, quality, and fit remain separate. More usable material can support more specific tailoring but cannot purchase better baseline craft, core progress, power, credentials, or social standing. `ArtifactFitFinding` relies on the relevant player, recipient, artifact criteria, or external consequence evidence.
+
+Disclosure volume and intimacy are not progression currency. Equivalent expressive routes and a quality floor protect concise, private, second-language, disabled, neurodivergent, culturally guarded, symbolic, fictionalized, and nonverbal participation. A `PacingAdaptationProposal` remains visible, reversible, and player-correctable.
+
+### 8.8 BAR kernel and expression boundary
+
+A `BAR` is an intentionally captured, portable kernel of potential with stable identity and provenance. Provenance is required but not sufficient: source material, evidence, logs, commits, artifacts, quests, rules, and specifications are not automatically BARs.
+
+A `ChargedBAR` is a BAR whose source or active energy includes represented charge. Charge is optional and may change without creating or ending BAR identity. Other source modes include requests, observations, opportunities, problems, design ideas, decisions, rule or norm proposals, lore, imported artifacts, and forks.
+
+A `BARExpression` is a form through which a BAR acts or becomes legible. One BAR may have many expressions; one expression may combine many BARs. An expression becomes a BAR in its own right only through an explicit `BARPromotion`. `BARRoleRelease` may end active kernel responsibility without erasing historical identity or lineage.
+
+A `BARProvenanceRecord` records origin and typed lineage. A `BARPortabilityPolicy` limits worlds, audiences, purposes, reuse, sharing, and fork permissions. Portable never means permissionless. Capture permits storage, dormancy, development, transfer, or release; it does not create implementation obligation.
+
+### 8.9 Composting, residue, and regeneration
+
+Composting is a governed lifecycle disposition that ends a named active obligation while preserving only the lineage, learning, or reusable residue that is appropriate and permitted. Release completes the disposition. A new artifact, lesson, transformation, fuel, later reuse, or recovered value is not required.
+
+A `CompostCandidate` identifies the proposed target. `CompostingDecision` records scope and authority. `CompostingDisposition` ends the obligation. `CompostRecord` preserves minimum legitimate decision metadata. Optional `CompostResidue` names material permitted to remain. A later `RegenerationEvent` records actual authorized reuse as a new event and lineage, not as delayed completion of composting.
+
+Composting differs from deletion, archival/reference, abandonment, supersession, and satisfaction of the original CompletionContract. It must behaviorally remove active backlog pressure, overdue status, progress penalties, required review, automatic resurfacing, and completion prompts. `ReactivationDecision` creates a new obligation without invalidating the earlier release.
+
+`CompostRecoverability` records none, decision-only, lineage-only, residue-available, source-restorable, or implementation-restorable. Privacy and deletion authority may require minimal tombstones or no retained source content. Recoverability does not preserve active obligation.
+
+### 8.10 Creative reuse, attribution, and meaning authority
+
+A `ProjectMeaningFrame` records a designer's intended metaphor or ethical interpretation. A `PersonalMeaningReport` records an affected person's experience. The project may name its ritual; it may not name the player's experience for them. Personal meaning does not settle shared facts, ownership, permission, or harm; project meaning does not overrule personal experience.
+
+`SourceCorpusRecord`, `CreativeReuseProposal`, and granular `ReuseAuthorization` precede archive-based adaptation. `DerivationRecord` identifies source contribution and method. `AttributionRecord` separates source authorship, corpus selection, generation, prompting, curation, character ownership, publication, and acceptance.
+
+A `DerivedVoice` is a character informed by a permitted corpus, not the source person, past self, or archived speaker. `IdentityContinuityClaim` preserves the current creator's own account of continuity with earlier work. “Not mine” becomes a scoped `ReuseRejection` covering semantic or experiential fit, authorship, attribution, identity or likeness, aesthetics, permission, or relationship.
+
+Rejection stops relevant future use and propagates through descendants. Completed play remains historical fact without retaining the rejected interpretation as player truth. Non-AI and non-reuse routes preserve core access and quality. Hidden outcomes may preserve mystery; hidden collection or unauthorized reuse may not.
+
 ## 9. Encounter ending and scoped completion
 
 Ending, resolution, quest completion, arc conclusion, satisfaction, and transformation are distinct claims.
@@ -336,6 +393,20 @@ An AdaptiveSystem distinguishes:
 > **The system may propose relevance; it may not claim final authorship of the player’s inner meaning.**
 
 An adaptive world should retain causes, agents, histories, resistances, or emergent meanings not exhausted by the player model.
+
+### 10.1 Privacy and consent authority
+
+Consent is an agent's situated authorization for a proposed operation. A `ConsentRecord` is historical evidence of a grant, refusal, or condition; it is not permanent proof of present willingness. A prior grant remains usable only while its full purpose envelope still covers the operation and no expiry, material context change, correction, refusal, boundary, or revocation has intervened.
+
+A `PermissionGrant` binds authority, represented subject, data categories, purpose, operations, processor, audience, visibility, destination, context, duration, retention, explanation, correction, descendant and export policy, revocation, deletion, notice version, and evidence. Collection, transient processing, persistence, derivation, personalization, explanation, visibility, reuse, sharing or publication, export, analytics or evaluation, model improvement, retention, correction, deletion, and revocation remain distinct. Omitted purposes are not granted.
+
+Every operation evaluates a `PermissionEnvelope`: the intersection of all applicable grants, refusals, boundaries, source restrictions, and duties. Multiple-source descendants receive the intersection of applicable limits. `DerivationRecord` carries the envelope to snapshots, psychographs, adaptive inferences, generated world material, BARs, NPC memories, council syntheses, analytics, embeddings, caches, exports, and model artifacts. Structured extraction, aggregation, de-identification, or generation does not by itself release sensitivity, purpose, or authority.
+
+The represented person governs person-specific interior, somatic, psychographic, identity, likeness, and inference uses within their authority. Each affected participant governs their own relational contribution. Source authors and rights-holders govern creative material only within their actual rights. Stewards administer authorized purposes but cannot invent new ones. Conflicting authorities narrow the action to their intersection; otherwise the action is redacted, separated, mediated, or not performed.
+
+Correction changes or contests content, attribution, subject identity, or inference. Revocation withdraws future authority for a purpose. Deletion disposes of named content and descendants; it is not composting, archival, hiding, or account deactivation. Each propagates through reachable lineage. A minimal residual record may preserve the request, authority, time, scope, and disposition but not deleted content or a rejected interpretation. Irreversible publication, third-party copies, backups, or model limitations are disclosed and recorded rather than concealed behind an unverifiable promise.
+
+Refusing optional persistence, personalization, reuse, analytics, publication, or model improvement cannot reduce baseline craft, core progress, power, credentials, or belonging. High-sensitivity, surprising, public, relational, or materially changed uses require renewed confirmation. Continued play, silence, disclosure, purchase, authorship, or an old ConsentRecord does not renew consent.
 
 ## 11. Integral declaration of mechanical attention
 
@@ -411,6 +482,32 @@ An AI operating with this ontology must not:
 36. retroactively fulfill an earlier DestinationClaim by silently revising Point B;
 37. make continued play or metabolization obligatory because a blocker exists;
 38. diagnose refusal to metabolize as resistance or as another blocker without independent evidence.
+39. infer misaligned intention from a RoadblockEvent or technical fault alone;
+40. collapse roadblock observation, classification, causal account, meaning, response, and outcome;
+41. erase structural, environmental, relational, accessibility, or safety constraints by reframing them as inner work;
+42. require emotional disclosure as a condition of technical diagnosis or repair.
+43. infer session depth, genuineness, transformation, readiness, trust, or deftness from response length or intimate specificity alone;
+44. treat disclosure volume, pain magnitude, or vulnerability performance as progression currency;
+45. intentionally weaken a baseline artifact to pressure additional disclosure;
+46. equate PracticePerformanceRecord with an inner-state or transformation finding;
+47. conflate artifact specificity, richness, quality, and fit;
+48. make an irreversible pacing or personalization decision from an unconfirmed behavioral proxy.
+49. treat every provenance-bearing object, BAR output, artifact, quest, rule, or specification as automatically possessing BAR identity;
+50. require or infer emotional charge as a condition of BAR identity;
+51. collapse a BAR kernel into its current expression;
+52. treat BAR capture as implementation obligation;
+53. interpret BAR portability as unrestricted permission to disclose, copy, reuse, or fork.
+54. require new output, insight, transformation, fuel, or later reuse before recognizing composting;
+55. retain composted work as active backlog, progress debt, mandatory review, or completion pressure;
+56. call composting deletion, archival, supersession, or completion of an unmet original contract;
+57. preserve or reuse private CompostResidue without appropriate authority and purpose permission;
+58. silently reactivate a composted obligation or diagnose its release as avoidance.
+59. present a ProjectMeaningFrame as the player's required personal meaning;
+60. claim that a DerivedVoice is the source person, past self, or an authentic new statement by them;
+61. treat source authorship as blanket reuse permission;
+62. collapse stylistic influence, source contribution, generation, curation, acceptance, and authorship;
+63. treat “not mine” as resistance or covert confirmation;
+64. make archive-based AI reuse necessary for core access, progress, quality, or belonging.
 
 ## 14. Minimum viable ontology record
 

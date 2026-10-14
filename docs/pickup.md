@@ -30,7 +30,7 @@ The 00:25 board read took 30 steps and $1.54 because every step rereads a sessio
 `board/read.py` folds the plumbing into one command, so a read is:
 
 1. One message with seven parallel ArtifactData `list` calls (positions, questions, terms, causes, steer, steps,
-   blockers), one `out_dir`. blockers holds the overdue card's blocker panel runs (docs/blocker-panel.md). The store lands in files; it is never read into the conversation, and the page is never read.
+   blockers, picks, morning), one `out_dir`. blockers holds the overdue card's blocker panel runs (docs/blocker-panel.md); picks holds his morning picks and morning the menu he pasted. The store lands in files; it is never read into the conversation, and the page is never read.
 2. `python3 board/read.py <dir>`: pull.py with `--push`, `council/due.py --ahead 7`, and a last line that says
    whether to republish. Add `--dry` to report without writing.
 3. If it says REPUBLISH, one Artifact call on `board/council-board.html`, no capabilities. When every save was
@@ -57,10 +57,12 @@ and writes the same list to the store's `pickup/last` doc (`{sentAt, rows}`). Th
 older than the last send. Each failure code gets its own message; a view without the connector says to tell Claude in
 chat instead.
 
-The page declares two capabilities: `db` (its store) and `mcp` with server `Claude Code Remote`, tool `fire_trigger`.
-A republish that omits `capabilities` keeps both. A republish that passes `capabilities` must pass both:
+The page declares two capabilities: `db` (its store) and `mcp` with server `Claude Code Remote`, tool `fire_trigger`,
+and server `Vercel`, tool `web_fetch_vercel_url` (the Tap the Vein check, docs/morning.md). A republish that omits
+`capabilities` keeps them. A republish that passes `capabilities` must pass all of it:
 
-    {"db": {}, "mcp": {"servers": [{"server": "Claude Code Remote", "tools": ["fire_trigger"]}]}}
+    {"db": {}, "mcp": {"servers": [{"server": "Claude Code Remote", "tools": ["fire_trigger"]},
+                                   {"server": "Vercel", "tools": ["web_fetch_vercel_url"]}]}}
 
 ## The pickup routine
 
@@ -101,7 +103,7 @@ The routine prompt that carries this, set by the coordinator (only the conversat
     If you have the start_thread_session tool, you are the coordinator of the "6 face game master council" project.
     Start one thread now for a board read, with no project-chat line beyond the thread's own. Brief it to work in
     repo wendell-britt/six-faces-council on main and follow its CLAUDE.md: save the board's store with ArtifactData
-    (positions, questions, terms, causes, steer, steps) into one folder, run python3 board/pull.py <folder>
+    (positions, questions, terms, causes, steer, steps, picks, morning) into one folder, run python3 board/pull.py <folder>
     --push, republish board/council-board.html without passing capabilities, and act on the "needs work" list
     pull.py prints (ask you for a thread for each new piece of work). pull.py is safe to run twice. If pull.py
     records nothing, the thread says so in one line and resolves itself.

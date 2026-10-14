@@ -1,0 +1,63 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T22:52:12.401Z",
+ "answers": {
+  "jev-teaching-30-labelled": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:50:48.324Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "jev-teaching-playbook-readings": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:50:55.889Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sd-density-ladder": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:51:14.144Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sd-mana-to-stat": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:51:23.678Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sd-gone-after": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:51:31.929Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ps-shadow-spirits": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:51:43.665Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sd-shadow-skip": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:52:12.401Z",
+   "status": "overrule",
+   "steer": "It has an element and can be dissolved but only after it’s fully revealed. Fully revealing it means tying it to an element "
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-05",
+   "at": "2026-10-14T22:43:52Z",
+   "what": "ticked",
+   "do": "Look at round 5 of the clothing (J5). Your note on round 4 said the bottom of the robe was not moving like clothes and every fix was too local. Round 5 changes the approach. Below the belt, the robe is now cloth. Every frame the game works out where each point of the skirt goes: gravity pulls it down, it keeps swinging after the legs stop, and it stretches only a little. The thighs, shins and knees push it from inside. The belt holds it to the hips, the slits let the panels part, and the hem is a stiffer band. The game and Blender run the same cloth code, so these pictures are what the game will show. j5r5-cloth-walk.jpg shows the average dusk figure from the side at eight points of the walk. The top row is a normal stride, the middle row a fast stride, and the bottom row a turn. Look first at the back hem at a normal stride: it kicks up behind the trailing leg. Is that how this robe should move, or should it hang heavier? j5r5-set-walk.jpg shows four points of the walk from the front, side and back. j5r5-set-sheet.jpg and j5r5-garments-sheet.jpg show all nine figures. The edge trim is still a little ragged in places; that gets cleaned up once the movement is right. Under this step, note 'yes' or what still looks wrong."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "positions/sd-shadow-skip: Overruled (steer: \"It has an element and can be dissolved but only after it’s fully revealed. Fully revealing it means tying it to an element\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
