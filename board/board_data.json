@@ -7797,6 +7797,17 @@
    "auto": true,
    "pos": "The first build replaces the placeholder allies on Ama Rell's Fixer fight page (sprout #50). You enter a charge or pick one, meet the spirit it makes with its status screen, spar it three times in the ring, then take it into the fight. It reaches you only after a script shows three things: a careful player's spirit ends stronger than a Fight-masher's after ten spars, different charges lead with different stats while the same charge repeats, and a generated spirit still wins standing in 3 to 5 turns. The other training places wait until you have played the ring. This stands unless you flip it.",
    "why": "sf-generator-next gives the generator its own strand, and the short-sessions rule gives the build its own thread. The script is the Challenger's test of whether getting better at the loop is really what trains. Source: council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md"
+  },
+  {
+   "id": "sg-overcharge",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "spirit generator 1",
+   "auto": true,
+   "pos": "Your steer on sg-charge-disc, built: your character can hold a charge up to a limit (\"a lot\" in the slice; cultivation would raise it). A spirit made from more charge than that (\"too much\") still joins, but with satisfaction 1 of 10. Until spars played well bring satisfaction to 5, it heeds you only every other turn in a fight; on the other turns it acts on its own and the charge spills onto you (3 HP a time). Three careful spars settle it; mashing Fight never does. Satisfaction already does Monster Rancher's loyalty job, so the consequence is a disobedient spirit, never a lost one. Numbers are placeholders. This stands unless you flip it.",
+   "why": "Your steer, board read of 2026-10-13: \"if you try to take a spirit with more charge than your character is able to handle there are consequences\". spirit-growth-by-training (satisfaction does loyalty's job, no death), sg-loop-trains. Built on sprout #51 and played at https://claude.ai/artifact/YBSfbjXF3gaTmW2ZxA1M3w (pick Fire, Pyrakanth, too much from the table). The check script: all 200 too-much spirits cost you 6.9 HP a fight on average until settled; three careful spars settle every one, three mashed spars settle none."
   }
  ],
  "questions": [
