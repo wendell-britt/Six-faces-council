@@ -72,11 +72,11 @@ def kept(data):
 
 
 def send(goals):
+    # The cloud environment's proxy adds the token for bars-engine.vercel.app when the session has none.
     token = os.environ.get("COUNCIL_MENU_TOKEN", "").strip()
-    if not token:
-        sys.exit("COUNCIL_MENU_TOKEN is not set in this session's cloud environment (docs/morning.md)")
+    headers = {"Content-Type": "application/json"} | ({"Authorization": f"Bearer {token}"} if token else {})
     req = urllib.request.Request(GOALS_URL, data=json.dumps({"goals": goals}).encode("utf-8"), method="POST",
-                                 headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
+                                 headers=headers)
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             return json.loads(r.read().decode("utf-8"))["goals"]
