@@ -22571,6 +22571,30 @@
      "diplomat"
     ],
     "pass": "spirit dissolving"
+   },
+   "jev-trial-result": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:08:04.563Z",
+    "record": "council/ledger/2026-10-14-pull-230809.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-next-pile-with-code-map": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:08:09.761Z",
+    "record": "council/ledger/2026-10-14-pull-230809.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
    }
   },
   "questions": {
