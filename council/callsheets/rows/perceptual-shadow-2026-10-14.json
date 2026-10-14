@@ -1,0 +1,114 @@
+{
+ "positions": [
+  {
+   "id": "ps-trigger",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pos": "Perceptual shadow shows only on your two signals, and either one raises it. Witness has a third answer, \"I know it's here, but I can't feel it\" (polarity rises 6). A round whose charge reading after is no lower than before offers \"Look again for what's hiding it\", and the hidden part of that creature comes in with its shadow plus 4. Your sentence joins the two with \"and\"; they happen at different moments of a sitting, so the build treats them as two ways in that stack. Flip this to \"both at once\" if you meant that. This stands unless you flip it.",
+   "why": "Your words, project thread \"Perceptual shadow for WAVE\", 2026-10-14: \"perceptual shadow is only triggered when peopel report they are aware of a charge but not about to perceive it and if they aren't able to get the charge number down.\" Six-faces-council council/callsheets/perceptual-shadow.md",
+   "pass": "perceptual shadow",
+   "auto": true
+  },
+  {
+   "id": "ps-four-kinds",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pos": "The player names the shadow from your four, each with a line in their own voice: Forgetting (it slips out of mind as soon as I turn to it), Distracting (something keeps pulling my attention away), Dissociating (it feels far away, like it's happening to someone else), Numbness (where it should be, there's only a blank). \"I can't tell\" is allowed and gets a plain practice. Each hides the creature its own way: fading in and out, drifting aside, standing back toward the door greyed, or wrapped in grey fog. This stands unless you flip it.",
+   "why": "Your words, project thread \"Perceptual shadow for WAVE\", 2026-10-14: \"The 4 shadows are forgetting, distracting, dissociating, and numbness.\" Six-faces-council council/callsheets/perceptual-shadow.md",
+   "pass": "perceptual shadow",
+   "auto": true
+  },
+  {
+   "id": "ps-practice",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pos": "Each shadow has one practice that thins it by 3 of polarity: say its name out loud slowly three times (Forgetting); name what pulled you away, then come back (Distracting); feel your feet and your seat, then look again (Dissociating); find the edge of the numb, where feeling starts again (Numbness). The player can go on with the creature still hidden, and Witness keeps a way back to the practice. This stands unless you flip it.",
+   "why": "Your words, project thread \"Perceptual shadow for WAVE\", 2026-10-14: \"It's hiding charge from the self so that it can't be dealt with or worked with.\" The practice is the skill the shadow is there to build. Six-faces-council council/callsheets/perceptual-shadow.md",
+   "pass": "perceptual shadow",
+   "auto": true
+  },
+  {
+   "id": "ps-numbness-link",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "pos": "The numbness texture (a blocker: how the charge feels) and the numbness shadow (what hides it) stay separate. They link: when a creature's texture is numbness, the shadow page says \"Numbness is how it feels, and it can also be what keeps it out of reach\" and lists Numbness first, and the numbness shadow's fog wears the numb texture's grey. This stands unless you flip it.",
+   "why": "Your words, project thread \"Perceptual shadow for WAVE\", 2026-10-14: \"Numbness collides with the blocker numbness but they also do similar work and it's why perceptual shadow can exist.\" Six-faces-council council/callsheets/perceptual-shadow.md",
+   "pass": "perceptual shadow",
+   "auto": true
+  },
+  {
+   "id": "ps-polarity",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pos": "Polarity is a third property of every creature and spirit, 0 to 10, beside size and brightness. Size and brightness stay your sliders on Allow; polarity is emergent, so Allow shows it as a reading (\"How hidden it is\"), never a slider. Only the two signals raise it and only the practice lowers it. At 10 only a faint outline shows and the aura is dark. A creature that leaves as a spirit carries its polarity into the cave and walks dimmer. This stands unless you flip it.",
+   "why": "Your words, project thread \"Perceptual shadow for WAVE\", 2026-10-14: \"I imagine there's a polarity (alongside size, and brightness) that's also able to occlude charge spirits as a function of emergent perceptual shadow.\" Six-faces-council council/callsheets/perceptual-shadow.md",
+   "pass": "perceptual shadow",
+   "auto": true
+  },
+  {
+   "id": "ps-run-record",
+   "faces": [
+    "regent"
+   ],
+   "pos": "The WAVE room's run record gives each creature its shadow (kind, polarity now, where it started, the signals, the practices), its 3-2-1 readings, and which creature a hidden part came from. A board run then shows when shadow came up and whether the practice thinned it. This stands unless you flip it.",
+   "why": "bars-engine #324 sends the run to the board as a blocker record (docs/blocker-panel.md). Six-faces-council council/callsheets/perceptual-shadow.md",
+   "pass": "perceptual shadow",
+   "auto": true
+  }
+ ],
+ "questions": [
+  {
+   "id": "ps-polarity-poles",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "perceptual shadow",
+   "q": "Does polarity have a second pole, a charge flooding too loud to work, or only the hidden one?",
+   "why_you": "\"Polarity\" is your word, and a word for two poles. Whether the second pole is part of perceptual shadow is your design call; the record has only the hidden side.",
+   "not_before": "You named polarity on 2026-10-14 in the same message that introduced perceptual shadow.",
+   "research": {
+    "title": "What a second pole would add",
+    "lead": "The build has polarity running one way: 0 is in plain sight, 10 is hidden. A second pole would let a charge also be too loud: flooding the view, too big and bright to work, with its own practices for turning it down.",
+    "sections": [
+     {
+      "h": "One-sided",
+      "p": "Matches your four shadows, which all hide. Nothing more to build now."
+     },
+     {
+      "h": "Two-sided",
+      "p": "Polarity becomes -10 to 10. Flooding gets its own signal (for example the charge reading stuck at 9 or 10), its own look (the creature towers over the seat) and its own practices. It is a second mechanic about the same size as this one."
+     }
+    ],
+    "recommend": "Claude's recommendation, not your ruling: one-sided for now, and add flooding when play shows a charge too loud to work."
+   },
+   "options": [
+    {
+     "v": "one",
+     "label": "Hidden only (recommended)",
+     "c": "Polarity stays 0 to 10, hidden. It is built this way now."
+    },
+    {
+     "v": "two",
+     "label": "Hidden and flooding",
+     "c": "Polarity runs both ways; flooding gets its own signal, look and practices in a new build."
+    },
+    {
+     "v": "later",
+     "label": "Decide after play",
+     "c": "Stays one-sided until you have played the shadow on your phone."
+    }
+   ]
+  }
+ ]
+}
