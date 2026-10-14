@@ -2,8 +2,10 @@
 
 ## Next
 - Source: a tweet Wendell shared 2026-10-14 (skeleton first, then flesh, then warp; headless Blender practice). Its numbers (benchmark scores, who built it) are unverified; the practice is sound on its own and was checked against our scripts.
-- Position (stands unless he flips it): build the NPC generator for the Chapter 1 demo on the humanoid rig we already have, and add the warp as a numbers table applied last. Do not start with the spirit generator, which is sprite art and has no rig.
+- Ruling (Wendell, 2026-10-14 22:15, overruling the first draft): "Overrule the rigging spirit skeletons first. What it buys is a good operational foundation and we ARE going to be using the rigs in the cave forms of these sprites emerging." Spirits are rigged skeleton first, and the rigs go into the cave forms.
+- Position (stands unless he flips it): one frame, flesh, warp recipe for both strands. The NPC generator for the Chapter 1 demo builds on the humanoid rig we already have, with the warp as a numbers table applied last. The spirits get the same treatment, starting with the Shellback families, whose rig is built before any further look rounds.
 - Build, in a fresh thread on Opus, in bars-engine (not on #318's branch, which round 8 is using):
+  0. Spirit rig first: a per-family frame (joint table, parent map, weights, one Walk and one Idle), the fused flesh skinned to it, the existing element, nation and base layers as the warp. Not on #318's branch while round 8 runs; it lands as its own module that #318 later imports. The cave forms use these rigs, so the sprite is rendered from the rigged model posed at its sprite angle.
   1. `content/ontology-game/cave/census.py`: loads any GLB, asserts the mesh census (non-manifold edges, loose verts, degenerate faces, size within a stated box). Humanoid figures must pass it; kit-bashed spirits and the chamber only report.
   2. A `WARP` table beside `BUILDS` in `cave/character.py` (limb ratio, head size, spine curve, stoop, one joint collapsed), each row named for a blockage, applied after the fused body and before the weights are painted. The blockage list comes from the ontology; ask the board (`reach_test` first) only if the record cannot map a blockage to a row.
   3. A 12-figure sheet from one frame, each figure one number away, to look at before anything else.
@@ -22,7 +24,7 @@
 - `--python-exit-code 1`: our scripts run under the bpy wheel, so a traceback already fails the run. It matters only if a build ever shells out to the Blender binary.
 
 ## Which do not fit
-- Rig the spirits skeleton first. They are static meshes rendered to a 96 px sprite; a rig buys nothing until the 3D game wants them walking (`sg-assets-modular` says one rig per family with sockets, which is later).
+- (Withdrawn by his ruling: not rigging the spirits first.)
 - Banning `bpy.ops` outright. Our metaball bodies (`blob`, `shellback.py`) convert through `bpy.ops.object.convert`, and 68 calls work headless on 5.2.2. Move to bmesh only where a run fails or a mesh needs measuring.
 - Printing numbers (overhang, hole size, wall). Not printing anything.
 - The Blender MCP servers. We run scripts in a pinned venv; the tweet's own warning about unguarded code applies.
