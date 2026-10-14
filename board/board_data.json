@@ -7940,6 +7940,61 @@
    "auto": true,
    "pos": "A round starts itself only when its gate is auto: no money spent, no account signed into or changed, nothing published outside the project, and no council/faces.yaml change. A round that needs your eyes, money or accounts waits and shows up as a step for you instead. Renders, builds on a branch, pull requests and art proof pages count as auto. This stands unless you flip it.",
    "why": "Built with loop-ahead-two. Spending and accounts are steps no one can undo by the time you read about them, so they keep needing your word; council/faces.yaml changes only by your ruling (CLAUDE.md)."
+  },
+  {
+   "id": "lens-board-reads-goals",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "lenses 1",
+   "auto": true,
+   "pos": "The board reads your Lens goals every morning through a goals export from bars-engine, without needing a sealed bars-engine menu, and shows them on the Morning tab under each domain. An empty domain shows as \"No goals here yet\".",
+   "why": "The export read on 2026-10-14 returned no goals, so every morning item on the board says \"no Lens goals were read this morning\". Goals reach the board today only inside a sealed bars-engine menu. Source: council/passes/6FACE_PASS_lenses1_2026-10-14.md"
+  },
+  {
+   "id": "lens-pitch-goals",
+   "faces": [
+    "shaman",
+    "architect",
+    "regent"
+   ],
+   "pass": "lenses 1",
+   "auto": true,
+   "pos": "When a domain has no goals, the board's Tap the Vein box offers that domain's prompt. The board read pitches year goals from what you wrote, quoting your line, and each pitch you keep is written to bars-engine as an active Lens goal. The free write is deleted after the read, as for BARs.",
+   "why": "Your message of 2026-10-14 asks the game masters to summarize the free write and pitch where it goes; mm-where keeps bars-engine as the home of Lens goals. Source: council/passes/6FACE_PASS_lenses1_2026-10-14.md"
+  },
+  {
+   "id": "lens-intake-align",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "lenses 1",
+   "auto": true,
+   "pos": "The full Tap the Vein intake lists everything you can do today, and the board read gives each item one line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches. Each line carries a written reason, not a word match.",
+   "why": "Your message of 2026-10-14 asks for the intake checked against the current board items; mm-menu-shape asks for a bridge on every item. Source: council/passes/6FACE_PASS_lenses1_2026-10-14.md"
+  },
+  {
+   "id": "lens-order",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "lenses 1",
+   "auto": true,
+   "pos": "Build order: the goals export and the Lenses panel first, goal pitches second, the full intake third. The alignment check needs goals to align to. Locking one domain at bars-engine.vercel.app/lenses/onboarding before then is optional and speeds the first test.",
+   "why": "The Challenger dissented: the bottleneck is that no goal exists yet, not missing code. The first build proves that either way. Source: council/passes/6FACE_PASS_lenses1_2026-10-14.md"
+  },
+  {
+   "id": "lens-domains-stand",
+   "faces": [
+    "regent"
+   ],
+   "pass": "lenses 1",
+   "auto": true,
+   "pos": "bars-engine's five domains (relationships, career, money, health, allyship) stay as the Lens domains until you name others.",
+   "why": "Your steer on ya-domains: \"The lenses domains haven't been formalized\". Source: council/passes/6FACE_PASS_lenses1_2026-10-14.md"
   }
  ],
  "questions": [
