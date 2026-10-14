@@ -60,6 +60,27 @@ free write, as bars-engine has, is a later step.
 bars-engine's Tap the Vein stays the home of tasks, charge and Lens goals; the board box is the front door he uses
 where he picks his work (`ttv-board-home`).
 
+## Tap the Vein first
+
+Wendell, 2026-10-14: "So let's have it be that the first thing that happens in the morning when I open the board is tap
+the vein. It checks to see if one's been done on bars-engine and if not forces one to be done in the board and then
+ingests it into the board after completion. There should be a button that gives an option to skip but if it's skipped
+for 2+ days it triggers a Wave or 321 session on the blocker that's stopping me from using it".
+
+- Until today is handled, the board opens on the Morning tab with the Tap the Vein box open, and the other tabs are
+  held. Today is handled when the last gather fetched today's sealed menu from bars-engine (`morning.sealed`, written
+  by `council/morning.py`), a menu sealed or pasted on the board carries today's date, or the store's `ttv/<date>` says
+  `done` (written at seal), `bars-engine` or `skipped`. The date is the browser's local date.
+- The page cannot ask bars-engine itself, because the menu key never reaches the board. "I did it in bars-engine today"
+  saves `ttv/<date>` as `bars-engine`; `board/pull.py` then lists it under needs work, and the read fetches that day's
+  menu with `council/morning.py --fetch <date> --write`.
+- Sealing on the board is ingested the way it already was: `morning/menu` and `morning/freewrite`, read by the next
+  board read.
+- "Skip today" saves `ttv/<date>` as `skipped`. When that makes two or more skips in a row (a done day breaks the run;
+  a day the board was not opened does not), the blocker panel (`docs/blocker-panel.md`) opens on "Tap the Vein
+  (skipped N days running)": the board's WAVE run, with a staged 3-2-1 for any part that stays. Its record is
+  `blockers/tap-the-vein--<time>` with `skipStreak`, and `board/pull.py` copies it to main like any other run.
+
 ## Everything you can do today
 
 `lens-intake-align` (Lenses pass 1, 2026-10-14): "The full intake lists what you can do today; the board read gives

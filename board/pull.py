@@ -10,7 +10,7 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
-  causes, steer, steps, blockers, picks, morning), query {"limit": 1000}, out_dir <dir>
+  causes, steer, steps, blockers, picks, morning, ttv), query {"limit": 1000}, out_dir <dir>
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -265,6 +265,12 @@ def main():
     menu = pasted_menu(data, store)
     if menu:  # mm-menu-transport: the next gather reads it; morning.py writes main itself
         print(f"needs work:\n  morning/menu: python3 council/morning.py --menu {menu} --write, then commit and republish")
+
+    for f in sorted((store / "ttv").glob("*.json")) if (store / "ttv").is_dir() else []:  # ttv-first: done in bars-engine
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        if doc.get("status") == "bars-engine" and (data.get("morning") or {}).get("sealed") != f.stem:
+            print(f"needs work:\n  ttv/{f.stem}: he did Tap the Vein in bars-engine; python3 council/morning.py --fetch {f.stem} "
+                  "--out <dir>/morning-menu.json --write, then commit and republish")
 
     write = store / "morning" / "freewrite.json"
     if write.exists():  # ttv-raw-bars: read once for BARs, then delete
