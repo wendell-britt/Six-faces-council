@@ -1,0 +1,80 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T17:57:09.842Z",
+ "answers": {
+  "menu-task:cmv5qqi22001i7skoiol1pz27": {
+   "kind": "pick",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no Lens goals were read this morning"
+   },
+   "category": "menu",
+   "date": "2026-10-13",
+   "link": "",
+   "ref": "",
+   "savedAt": "2026-10-14T17:55:24.629Z",
+   "text": "Ping Dan"
+  },
+  "ttv-raw-bars": {
+   "kind": "question",
+   "choice": "read-delete",
+   "savedAt": "2026-10-14T17:57:09.842Z",
+   "steer": "For now read it and delete but this is the power of having a private server like in bars engine "
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "podcast-ep2-clips-03",
+   "at": "2026-10-14T16:40:00Z",
+   "what": "moved",
+   "from": "2026-10-09",
+   "to": "2026-10-16",
+   "do": "Post clip 1, Tom on how long do you want to feel this way (37 seconds), as an Instagram Reel with Share to Facebook on and auto captions on, then post it on X. Before sharing, tap Edit cover, then Add from camera roll, and pick cover-clip1-how-long.jpg. Check Instagram's captions against the words in captions.md before you post. Put the episode 2 link where the X caption says [episode link]."
+  },
+  {
+   "id": "podcast-ep2-clips-04",
+   "at": "2026-10-14T16:40:00Z",
+   "what": "moved",
+   "from": "2026-10-12",
+   "to": "2026-10-18",
+   "do": "Post clip 2, charity as domination (59 seconds), the same way, with auto captions on and cover-clip2-charity.jpg as the cover."
+  },
+  {
+   "id": "podcast-ep2-clips-05",
+   "at": "2026-10-14T16:40:00Z",
+   "what": "moved",
+   "from": "2026-10-16",
+   "to": "2026-10-21",
+   "do": "Post clip 3, how would you like to feel (74 seconds), the same way, with auto captions on and cover-clip3-how-would-you-like-to-feel.jpg as the cover."
+  },
+  {
+   "id": "podcast-ep2-clips-06",
+   "at": "2026-10-14T16:40:00Z",
+   "what": "moved",
+   "from": "2026-10-19",
+   "to": "2026-10-24",
+   "do": "Post clip 4, Tom on allowing the purpose (72 seconds), the same way, with auto captions on and cover-clip4-allow-the-purpose.jpg as the cover. Check the two words captions.md flags (Almaas, and con into) against the audio."
+  },
+  {
+   "id": "podcast-ep2-clips-07",
+   "at": "2026-10-14T16:40:00Z",
+   "what": "moved",
+   "from": "2026-10-18",
+   "to": "2026-10-25",
+   "do": "Nine days after clip 1, note each clip's views, saves and shares from the platforms' insights, and paste them in the podcast thread."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "picks/menu-task:cmv5qqi22001i7skoiol1pz27: start a thread: \"Ping Dan\" (goal: unaligned)",
+  "questions/ttv-raw-bars: Read it once for BARs, then delete it (steer: \"For now read it and delete but this is the power of having a private server like in bars engine\")",
+  "steps/podcast-ep2-clips-03: moved from 2026-10-09 to 2026-10-16",
+  "steps/podcast-ep2-clips-04: moved from 2026-10-12 to 2026-10-18",
+  "steps/podcast-ep2-clips-05: moved from 2026-10-16 to 2026-10-21",
+  "steps/podcast-ep2-clips-06: moved from 2026-10-19 to 2026-10-24",
+  "steps/podcast-ep2-clips-07: moved from 2026-10-18 to 2026-10-25"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
