@@ -1,0 +1,25 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T02:50:25.009Z",
+ "answers": {
+  "sg-five-stages": {
+   "kind": "position",
+   "savedAt": "2026-10-14T02:50:25.009Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-02",
+   "at": "2026-10-14T00:27:03Z",
+   "what": "ticked",
+   "do": "Look at round 2 of the clothing (J5). You had two notes on round 1. First, the shoulders showed through on top on every robe. Second, the hems were held open against gravity. For the shoulders, the robe is now laid over the top of each shoulder, so it follows the shoulder's nearly level line from the neck to the arm. The check that looks for showing through now covers the shoulder tops too. For the hems, the robe flares 3 cm at the hem instead of 11, so it hangs nearly straight. The back panel follows the kicking shin a little more, so the walk no longer forces the hem open. j5r2-set-walk.jpg shows the average dusk figure from the front, side and back at four points of the walk. j5r2-set-sheet.jpg shows the whole set on all nine figures. j5r2-shoulders-broad.jpg is a close-up of the broad figure's shoulders, where round 1 was worst. j5r2-garments-sheet.jpg shows each garment worn alone. All machine checks still pass. Under this step, note 'yes' or what is still wrong. On a yes, bars-engine #315 is marked ready, and the next job wires the figures and their garments into the cave together."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
