@@ -20,6 +20,10 @@ Running it twice, or in two sessions at once, records the same thing the same wa
 the newest save it records and holds no time of its own, so two runs that see the same saves write the same file, and
 the board merge driver joins resolved entries by id.
 
+WAVE room runs (2026-10-14, ttv-skip-wave): before it looks for blockers it fetches the runs the board sent into the
+WAVE room from bars-engine (council/wave_runs.py) into <dir>/blockers, so they land like the board's own panel runs.
+--no-room skips the fetch.
+
 Steps (2026-10-12): a tick, note or date move on the Your steps tab lives only in the store's steps collection, and
 the Send button sends it like any answer. Until this date pull.py never read that collection, so the 18:40 Send of
 three step notes recorded nothing and the read said all was recorded. Every change later than
@@ -29,6 +33,7 @@ Files on a step (2026-10-14): a step can carry files (a draft, an image, a link)
 its own notes box. Those notes live in the step's fileNotes and are recorded and listed like a step note.
 """
 import argparse
+import importlib.util
 import json
 import subprocess
 import sys
@@ -41,6 +46,9 @@ LEDGER = ROOT / "council" / "ledger"
 BOARD_URL = "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
 KINDS = ("positions", "questions", "terms", "causes")
 BLOCKERS = ROOT / "council" / "blockers"
+_spec = importlib.util.spec_from_file_location("wave_runs", ROOT / "council" / "wave_runs.py")
+wave_runs = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(wave_runs)
 ENDS = {"now": "do it now", "moved": "moved the date", "change": "the step needs changing", "drop": "drop the step",
         "stuck": "still stuck"}
 STEPS_SINCE = "2026-10-12T00:00:00Z"  # step notes before this were read by hand (e.g. positions on 7 October notes)
@@ -256,6 +264,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("store", help="folder the ArtifactData reads saved the store into")
     ap.add_argument("--push", action="store_true", help="record, commit and push to main")
+    ap.add_argument("--no-room", action="store_true", help="skip fetching WAVE room runs from bars-engine")
     a = ap.parse_args()
     store = Path(a.store)
     if not (store / "positions").is_dir() and not (store / "questions").is_dir():
@@ -271,6 +280,8 @@ def main():
     new, general, steps = find_new(data, store)
     if not (store / "steps").is_dir():
         print("WARNING: no steps folder; step ticks, notes and moves were not checked (list the steps collection too)")
+    if not a.no_room:  # ttv-skip-wave: runs the board sent into the WAVE room come back from bars-engine
+        wave_runs.into(store)
     blockers = find_blockers(store)
     menu = pasted_menu(data, store)
     if menu:  # mm-menu-transport: the next gather reads it; morning.py writes main itself
