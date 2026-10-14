@@ -15,6 +15,11 @@
   allies on sprout #51 (its forms already sit on the ladder through `FORM_STATE`), and let the player's stats from mana feed
   the fight once the generator's allies and the cave share a player.
 
+- Board read 2026-10-14 22:52: `sd-shadow-skip` overruled. His steer: "It has an element and can be dissolved but only after
+  it's fully revealed. Fully revealing it means tying it to an element." Built on #327: `canDissolve(o)` is false while
+  `polarity` is above 0, and for a shadow spirit until `o.element` names an element. The WAVE room's reveal (Perceptual
+  shadow thread) sets `o.element`; dissolving reads it. `sd-density-ladder`, `sd-mana-to-stat`, `sd-gone-after` stand.
+
 ## Fits with
 - Perceptual shadow (thread "Perceptual shadow in WAVE", bars-engine branch `claude/project-thread-8r44dc`): a spirit with
   `polarity` above 0 is hidden and is not offered for dissolving until it is seen. The two branches touch different lines of
