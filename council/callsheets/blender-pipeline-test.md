@@ -13,10 +13,7 @@ and `hemB` follows the shin more; robe 117 to 125 KB; all five tests pass. His n
 00:25 and 00:27): the shoulders are "rendered by geometry and handwaving", "We're making it look like something instead
 of simulating what happens". Round 3 (commits a9bef4fd, b9db36b0, cdf29404): the robe is cut as two flat panels, sewn,
 and draped on the body by Blender's cloth solver with the flat pattern as rest shape and a simulated belt; trim cut at
-full detail and kept through the reduction; robes 109 to 112 KB. Open: J5 passes on average but the solver does not
-settle the same way every run, and some slight and broad drapes leave up to 30 hip points through mid-stride that
-`fit()` does not clear (J4, J4b, J5b, J5c pass). Next thread: make J5 pass on every build and run (likely fix: run the
-walk in the cloth solver itself, or fit with the hem bones), whatever his look says. Waiting on his look, board step
+full detail and kept through the reduction; robes 109 to 112 KB. Fixed (commit 9554617c): the fit pushed along vertex normals in one-vertex spikes, which a fold can turn toward the body; it now pushes a smooth 8 cm bump along the normal of the face the point came through, and `--all` builds each build and palette in its own process and redoes a robe the fit cannot clear (the cloth solver settles differently per process). J5 passes on all nine builds, and J4, J4b, J5b, J5c pass (the net tests N2, A4, N5 fail on fixtures, unrelated). Round 3 pictures refreshed. Next: wait on his look, board step
 `j5-look-03` (list blender-cloud-test, step 11), pictures in `/mnt/project-files/3d-build/j5-round3-2026-10-14/`. On his yes, #315
 goes ready and the next job wires figures and garments into `cave.js` together, in a fresh thread.
 
