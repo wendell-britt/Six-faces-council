@@ -4,9 +4,9 @@
   "loop": "spirit look art rounds (Shellback proof)",
   "max_ahead": 2,
   "last_look": {
-    "round": 2,
-    "at": "2026-10-14T17:41:00Z",
-    "label": "spirit-generator-r2"
+    "round": 3,
+    "at": "2026-10-14T18:33:40Z",
+    "label": "spirit-generator-r3"
   },
   "rounds": [
     {
@@ -33,7 +33,7 @@
     },
     {
       "round": 4,
-      "status": "next",
+      "status": "done",
       "builds": "The Shellback family's other two animal bases, armadillo and pangolin, through all five stages in all five elements, carrying round 3's eyes and element styling.",
       "check": "Contact sheet of 50 renders beside the tortoise; each base reads as its animal at the 96 px sprite; the page gains a base picker.",
       "gate": "auto",
@@ -42,6 +42,15 @@
     },
     {
       "round": 5,
+      "status": "next",
+      "builds": "The head after his players' look at round 3: a face closer to the Taoist Tortoise concept, smaller and more realistic eyes, and a new mouth, for all three bases.",
+      "check": "Contact sheet of the three bases' creature and ally-form heads before and after, in all five elements; eyes read at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 6,
       "status": "queued",
       "builds": "One nation style carried across the Shellback stages.",
       "check": "Same contact sheet with and without the nation style.",
