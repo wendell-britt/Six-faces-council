@@ -16,7 +16,9 @@ afterwards. Steer: the labelling must not be a spreadsheet to him.
   rows. All 9 known-drift tags in those 158 are in it. Board positions `jev-teaching-30-labelled` and `jev-teaching-playbook-readings`
   say the labels stand unless he flips one; the second explains the 4 layer-name rows (disagree) against the 3 folder-path rows (agree)
   that the brief lumped as drift (c). Not part of the score; no mark applies.
-- Next: run the model on the 30 practice rows once (rows without label or why; see what its answers look like), then once on the
-  frozen scoring pile, and report against the mark and the script. Apply any flip he makes to the teaching file before the practice run.
+- Run 2026-10-14 (results in `council/jev/results_2026-10-14.md`): practice 27 of 30 match the labels (misses AS-182, AS-100, AS-101: the model never searched bars-engine `backend/`).
+  Scoring pile: catches 2 of 2, false flags 1 of 17 (AS-002), mark passed. The constant-extraction script (`council/jev/constant_baseline.py`, written for the run) caught 0 of 2 and flagged 3 agreeing rows.
+  Board positions `jev-trial-result` and `jev-next-pile-with-code-map` stand unless flipped.
+- Next: write a second pile of new, unseen doc rows labelled before the run, with a fixed code map in the run brief (src/, prisma/schema.prisma, scripts/, backend/, package.json, public/); then run the model once. Wendell may flip AS-002 to disagrees; apply it before any rerun of the stats, never to the frozen file.
 - Stale doc: the move-icon line (AS-024) says 4 icons; the ontology has 5 since Open Up. Only that row was affected, and it is already out.
   The doc itself in bars-engine `.specify/specs/asset-register-design-system/spec.md` line 68 still needs the fix.

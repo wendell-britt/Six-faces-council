@@ -1,0 +1,84 @@
+{
+ "AS-001": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-002": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-005": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-006": {
+  "flag": true,
+  "unmatched": [
+   "altText"
+  ]
+ },
+ "AS-007": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-011": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-014": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-015": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-016": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-017": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-025": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-026": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-029": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-032": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-033": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-034": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-036": {
+  "flag": true,
+  "unmatched": [
+   ".specify/specs/provenance-stamp-system/spec.md"
+  ]
+ },
+ "AS-064": {
+  "flag": true,
+  "unmatched": [
+   "4.5MB"
+  ]
+ },
+ "AS-147": {
+  "flag": false,
+  "unmatched": []
+ }
+}
