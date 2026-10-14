@@ -8337,6 +8337,135 @@
    "auto": true,
    "pos": "Wood is the first land built after the demo gate, from one paragraph through room-from-text, ahead of fire, earth and water. This stands unless you flip it.",
    "why": "The forest has the most already made: procgen roots and mushrooms, the greenery picks and the grass clump. It is the cheapest test of whether a land reads as a land."
+  },
+  {
+   "id": "uw-list-corrected",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Three items on the unfinished-work list were wrong. Flirtcraft's database is done, Anastasia's campaign is already on Your steps, and Sprout is active. The corrections sit beside the originals in /mnt/project-files/unfinished-work-2026-10-14.md. This stands unless you flip it.",
+   "why": "The board's steps lists and the sprout repo's commits through 2026-10-13 answer it. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-board-before-sweep",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "A session that sweeps your session logs for unfinished work reads this board's rows and Your steps before it ranks anything, and names the row or list it checked for each item. This stands unless you flip it.",
+   "why": "The sweep got three of eleven items wrong because it never read the board. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-email-steps",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The November 10 reminder's two Vercel settings and the topics backfill are on Your steps as 'The November 10 reminder', due 2026-10-24 and 2026-10-31. This stands unless you flip it.",
+   "why": "Your setup list of 2026-09-15 names the three steps, and only you can enter them. The Vercel connector could not list the variables, so nobody knows whether they are set. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-upload-limit",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "bars-engine's upload route caps images at 5 MB and PDFs at 10 MB, with a test. Today every type gets the 10 MB PDF limit. It is a fix and merges when its checks pass. This stands unless you flip it.",
+   "why": "src/app/api/assets/upload/route.ts line 31 states the 5 MB intent and line 109 enforces 10 MB for everything. A fix stays out of the feature pipeline. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-backlog-dupes",
+   "faces": [
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The 2,021 duplicate 'cert-cyoa-slides (follow-up)' rows at the end of bars-engine's BACKLOG.md collapse to the one row they repeat. Git keeps the old file. This stands unless you flip it.",
+   "why": "The seed ignores that section, so nothing you see changes; every session that reads the backlog stops paying for it. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-skill-dedupe",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The two deferral paragraphs in the six-faces skill become one, keeping every rule both carry. The change syncs to every repo. This stands unless you flip it.",
+   "why": "Lines 103 and 125 of .claude/skills/six-faces/SKILL.md say the same rule twice. It is a skill edit, not faces.yaml. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-jev-to-sheet",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "JEVI lands on bars-engine main's backlog by itself, and jev-asset-recount gets the corrected count (four known drifts, one live) beside its original wording. Both go to the jev-asset call sheet. This stands unless you flip it.",
+   "why": "jev-images-backlog and jev-asset-recount already stood. JEVI exists only on draft PR #256, and the count still says 'between two and five'. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-podcast-ticks",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The podcast strand ticks what shipped in the MTGOA podcast spec's task list and marks the question and guest forms as not built. This stands unless you flip it.",
+   "why": "The hub shipped on 2026-09-30 (cc4d4f35f), and every task still reads as open. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-pushhands-repair-later",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Pushhands repair becomes its own project after the first release. Nothing is built for it before your footage check. This stands unless you flip it.",
+   "why": "Your words of 2026-10-01: 'I do want fixes for the obvious problems the inspector finds. If this is taken care of in a later task I will defer to then'. No later task covers it, and the project's constitution keeps repair out of the first release. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-sprout-current",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Sprout's open decisions of 2026-10-03 are retired from the list, because later work took them up. This stands unless you flip it.",
+   "why": "docs/design.md line 354 settles the tile-day, and the sprout repo has commits through 2026-10-13. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-anastasia-as-is",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Anastasia's campaign gets no new work from the council. Its three steps stay on Your steps. This stands unless you flip it.",
+   "why": "Consent and release are reserved, and the steps already exist. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-flirtcraft-step7",
+   "faces": [
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The daily compost pass drops Flirtcraft's step 7 (create the tables by hand) once it confirms production created them. This stands unless you flip it.",
+   "why": "fc-migrate-on-deploy stood as yes, and step 9's sign-in link worked. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
   }
  ],
  "questions": [
@@ -13652,6 +13781,49 @@
      "v": "later",
      "label": "Decide after play",
      "c": "Stays one-sided until you have played the shadow on your phone."
+    }
+   ]
+  },
+  {
+   "id": "uw-ea-library",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "unfinished work 1",
+   "q": "The Emotional Alchemy move library has had five rulings waiting for your yes since September 16. Bring it back, defer it, or fold it into the cave? The council recommends deferring for a month.",
+   "why_you": "The cap of three game projects is your ruling, and whether this game outranks one inside it is your priority. The faces split: the Shaman wants it back now, the Regent holds it to the cap.",
+   "not_before": "It was raised in chat on 2026-09-16, before the board was the one place you rule, and it never reached the board.",
+   "research": {
+    "title": "Where the move library stopped",
+    "lead": "On 2026-09-16 you ruled each class gets eight moves of its own, one at each grip: start with two, earn six. The last summary called a class move a key: 'So the 6 moves you earn are the 6 places you've been faking it. That's the whole game, actually.'",
+    "sections": [
+     {
+      "h": "Waiting",
+      "p": "Five rulings (EA-11 the numbers, EA-12 eight moves per class, EA-13a/b/c the two eights, the ke edge, transcend moves), two interview answers, then a spec, research and 72 authored moves. EA-12 still reads 'ruled by the faces, pending Wendell'."
+     },
+     {
+      "h": "The cap",
+      "p": "st-cap-games-only counts the Big Mind cave, Root, the Sprout slice and the Cave of Lessons. This card game would be a fourth."
+     }
+    ],
+    "recommend": "The council's recommendation, not your ruling: defer for a month, so it returns with what changed."
+   },
+   "options": [
+    {
+     "v": "now",
+     "label": "Bring the five rulings to the board now",
+     "c": "Five rows appear for you to flip, and the library becomes a fourth game project unless you name one that waits."
+    },
+    {
+     "v": "defer",
+     "label": "Defer for a month (recommended)",
+     "c": "Nothing moves until 2026-11-14, and the spaced deferral brings it back with what changed."
+    },
+    {
+     "v": "fold",
+     "label": "Fold the class moves into the cave",
+     "c": "The Big Mind cave's chambers take up the idea of a class move as a key at the place a player has been faking it. The card game's spec stays where it is."
     }
    ]
   }
