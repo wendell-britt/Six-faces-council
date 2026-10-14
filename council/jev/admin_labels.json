@@ -89,8 +89,11 @@
    "doc": ".specify/specs/asset-register-design-system/spec.md",
    "line": 68,
    "statement": "**Format:** 4 move icons at 24×24px. One per move family: Wake Up / Grow Up / Show Up / Clean Up.",
-   "label": "open",
-   "board_question": "jev-lab-as-024"
+   "label": "cannot-tell",
+   "board_question": "jev-lab-as-024",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)",
+   "why": "Wendell, 2026-10-14: \"There should be 5 move icons now that there is an Open Up version. This is an artifact from before that change was made in the ontology\". The doc line is stale against the ontology, so it leaves the scoring pile."
   },
   {
    "id": "AS-025",
@@ -113,16 +116,20 @@
    "doc": ".specify/specs/asset-register-design-system/spec.md",
    "line": 115,
    "statement": "resolveProvenanceStamp(config) → sigil + mark chip (BAR card corner)",
-   "label": "open",
-   "board_question": "jev-lab-as-029"
+   "label": "agrees",
+   "board_question": "jev-lab-as-029",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)"
   },
   {
    "id": "AS-032",
    "doc": ".specify/specs/asset-register-design-system/spec.md",
    "line": 162,
    "statement": "- All colors must trace to `ELEMENT_TOKENS` or `SURFACE_TOKENS` in `card-tokens.ts`. No hardcoded hex.",
-   "label": "open",
-   "board_question": "jev-lab-as-032"
+   "label": "disagrees",
+   "board_question": "jev-lab-as-032",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)"
   },
   {
    "id": "AS-033",
@@ -153,8 +160,10 @@
    "doc": ".specify/specs/book-upload-vercel-client-exception/spec.md",
    "line": 56,
    "statement": "3. Upload a PDF (< 4.5 MB for Hobby).",
-   "label": "open",
-   "board_question": "jev-lab-as-064"
+   "label": "agrees",
+   "board_question": "jev-lab-as-064",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)"
   },
   {
    "id": "AS-147",
