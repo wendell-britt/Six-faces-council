@@ -141,7 +141,7 @@ def from_menu(menu):
     for it in menu.get("items", []):
         g = it.get("goal") if it.get("status") == "bridged" else None
         items.append({"id": f"menu-{it.get('key') or len(items)}", "text": short(it.get("text"), 240),
-                      "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task"}.get(it.get("source"), "")})
+                      "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task", "can_do": "Can do today"}.get(it.get("source"), "")})
     return items
 
 
@@ -346,13 +346,18 @@ def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=N
         notes["menu"] = "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
     raw["prs"], notes["prs"] = from_prs(prs_file)
     raw["backlog"], notes["backlog"] = from_backlog(bars or ROOT.parent / "bars-engine")
+    intake = data.get("intake") or {}
+    written = ({it["id"]: it["bridge"] for it in intake.get("items", [])}
+               if menu and intake.get("date") == menu.get("sessionDate") else {})
     cats = []
     for key, (title, blurb) in CATEGORIES.items():
         items = raw[key]
         for it in items:
             it["bridge"] = bridge(it["text"], goals, it.pop("named", None))
+            if key == "menu" and it["id"] in written:  # the board read's written reason wins (lens-intake-align)
+                it["bridge"] = written[it["id"]]
         # mm-menu-shape: aligned first, unaligned last, never hidden
-        items.sort(key=lambda it: ["named", "existing", "new", "unaligned"].index(it["bridge"]["kind"]))
+        items.sort(key=lambda it: ["goal", "named", "row", "pitch", "existing", "new", "unaligned"].index(it["bridge"]["kind"]))
         cats.append({"key": key, "title": title, "blurb": blurb, "items": items,
                      **({"note": notes[key]} if notes.get(key) else {})})
     return {"date": (menu or {}).get("sessionDate") or dt.date.today().isoformat(),

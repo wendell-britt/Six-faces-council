@@ -336,8 +336,10 @@ body.has-send{padding-bottom:120px}
   <details class="mo-cat" id="mo-lenses" open hidden><summary><b>Your Lens goals</b><span id="mo-lenses-sum"></span></summary>
     <dl class="mo-lens" id="mo-lens-list"></dl>
   </details>
-  <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">Write, mark what to do, seal</span></summary>
-    <p class="lede">Write whatever is here this morning. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
+  <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">List what you can do, write, seal</span></summary>
+    <p class="lede"><label for="ttv-can">Everything you can do today, one per line.</label> The next board read gives each one a written line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches for you to keep (lens-intake-align).</p>
+    <textarea id="ttv-can" class="ttv-write" rows="6" placeholder="One thing per line"></textarea>
+    <p class="lede">Then write whatever is here this morning, if you like. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
     <div class="ttv-lens" id="ttv-lens" hidden><p class="lede"><label>Lens with no goals yet: <select id="ttv-lens-pick"></select></label> <span id="ttv-lens-prompt"></span> If you write toward it, the board read also pitches year goals for it from your words, and each one you keep becomes an active goal in bars-engine (lens-pitch-goals).</p></div>
     <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
     <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines</button><div class="state" id="ttv-state"></div></div>
@@ -1421,10 +1423,15 @@ function moParse(text){
   if (!m || !Array.isArray(m.items)) throw new Error('This is not a sealed menu: it has no items.');
   return m;
 }
+/* lens-intake-align: the board read's written line for each intake item (council/intake_align.py), by menu item id. */
+let moWritten = {};
 function moMenuItems(m){
+  const I = DATA.intake;
+  moWritten = (I && I.date === m.sessionDate) ? Object.fromEntries((I.items || []).map(x => [x.id, x.bridge])) : {};
   return m.items.map((it, i) => { const g = it.status === 'bridged' ? it.goal : null;
-    return {id: 'menu-' + (it.key || i), text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task'}[it.source] || ''),
-      bridge: g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
+    const id = 'menu-' + (it.key || i), w = moWritten[id];
+    return {id, text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task', can_do: 'Can do today'}[it.source] || ''),
+      bridge: w ? w : g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
     .sort((a, b) => (a.bridge.kind === 'unaligned') - (b.bridge.kind === 'unaligned'));
 }
 function moApplyPaste(){
@@ -1444,6 +1451,10 @@ const moGoal = id => ((MO && MO.goals) || []).find(g => g.id === id);
 const moPicked = id => (moLive[id] && !moLive[id].removed) || moRecorded.has(id);
 function moBridgeText(b){
   if (!b) return '';
+  const why = b.why ? ' ' + esc(b.why) : '';
+  if (b.kind === 'goal') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.${why}`;
+  if (b.kind === 'row') return `Advances <b>${esc(b.rowTitle || b.rowId)}</b> on the board.${why}`;
+  if (b.kind === 'pitch') return `Pitched: a new ${esc(b.cadence || 'year')} goal, <b>${esc(b.title)}</b>, ${b.parentTitle ? 'under <b>' + esc(b.parentTitle) + '</b>' : 'in ' + esc(b.domain || 'a Lens domain')}. Keep or drop it on the Open tab.${why}`;
   if (b.kind === 'named') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
   if (b.kind === 'existing') return `Suggested: serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
   if (b.kind === 'new') return `Suggested: a new ${esc(b.cadence || 'week')} goal, <b>${esc(b.title)}</b>, under <b>${esc(b.parentTitle || (moGoal(b.parentId) || {}).title || 'a year goal')}</b>.`;
@@ -1541,19 +1552,26 @@ const ttvToday = () => new Date().toLocaleDateString('en-CA');
 function ttvSplit(text){
   return text.split(/\n+/).flatMap(p => p.match(/[^.!?]+[.!?]*["\u201d')\]]*/g) || []).map(l => l.trim()).filter(l => l.length > 1);
 }
+const TTV_CAN = 'board-ttv-can';
+const ttvCan = () => document.getElementById('ttv-can').value.split('\n').map(l => l.replace(/^\s*(?:[-*\u2022]|\d+[.)])\s*/, '').trim()).filter(l => l.length > 1);
 function ttvRender(){
   const box = document.getElementById('ttv-lines');
   box.innerHTML = ttvLines.map((l, i) => `<div class="mo-item ttv-line${l.todo ? ' kept' : ''}" data-i="${i}">
     <p class="mo-text">${esc(l.text)}</p>
     <div class="mo-ctl"><button type="button" class="mo-pick" data-k="todo" aria-pressed="${!!l.todo}">To do</button></div></div>`).join('');
   const todo = ttvLines.filter(l => l.todo).length, written = !!document.getElementById('ttv-write').value.trim();
-  document.getElementById('ttv-count').textContent = `${todo} to do`;
-  document.getElementById('ttv-seal').disabled = !db || !written;
+  const can = ttvCan().length;
+  document.getElementById('ttv-count').textContent = `${can} you can do, ${todo} to do from the write`;
+  document.getElementById('ttv-seal').disabled = !db || !(written || can);
 }
 (() => {
   const w = document.getElementById('ttv-write');
   try { const d = JSON.parse(localStorage.getItem(TTV_KEY) || 'null'); if (d && d.text) w.value = d.text; } catch {}
   w.addEventListener('input', () => { ttvRender(); try { localStorage.setItem(TTV_KEY, JSON.stringify({date: ttvToday(), text: w.value})); } catch {} });
+  const c = document.getElementById('ttv-can');
+  try { const d = JSON.parse(localStorage.getItem(TTV_CAN) || 'null'); if (d && d.text) c.value = d.text; } catch {}
+  c.addEventListener('input', () => { ttvRender(); try { localStorage.setItem(TTV_CAN, JSON.stringify({date: ttvToday(), text: c.value})); } catch {} });
+  ttvRender();
 })();
 document.getElementById('ttv-find').addEventListener('click', () => {
   const was = Object.fromEntries(ttvLines.map(l => [l.text, l]));
@@ -1567,17 +1585,19 @@ document.getElementById('ttv-lines').addEventListener('click', e => {
 });
 document.getElementById('ttv-seal').addEventListener('click', async () => {
   const st = document.getElementById('ttv-state'), date = ttvToday(), now = new Date().toISOString();
-  const items = ttvLines.filter(l => l.todo).map((l, i) => ({key: `board-${date}-${i + 1}`, text: l.text, source: 'kept_line', status: 'unaligned', goal: null}));
+  const items = ttvCan().map((t, i) => ({key: `board-${date}-c${i + 1}`, text: t, source: 'can_do', status: 'unaligned', goal: null}))
+    .concat(ttvLines.filter(l => l.todo).map((l, i) => ({key: `board-${date}-${i + 1}`, text: l.text, source: 'kept_line', status: 'unaligned', goal: null})));
   const text = document.getElementById('ttv-write').value.trim();
   const doc = {menu: JSON.stringify({version: 1, origin: 'board', sessionDate: date, sealedAt: now, items}), sessionDate: date, savedAt: now};
   if (!db){ st.textContent = 'This view cannot save.'; return; }
   try {
     const lens = document.getElementById('ttv-lens').hidden ? '' : document.getElementById('ttv-lens-pick').value;
-    await db.doc('morning/freewrite').set(Object.assign({text, sessionDate: date, savedAt: now}, lens ? {lensDomain: lens} : {}));
+    if (text) await db.doc('morning/freewrite').set(Object.assign({text, sessionDate: date, savedAt: now}, lens ? {lensDomain: lens} : {}));
     await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); moOpen.add('menu');
-    ttvLines = []; document.getElementById('ttv-write').value = ''; try { localStorage.removeItem(TTV_KEY); } catch {}
+    ttvLines = []; document.getElementById('ttv-write').value = ''; document.getElementById('ttv-can').value = '';
+    try { localStorage.removeItem(TTV_KEY); localStorage.removeItem(TTV_CAN); } catch {}
     ttvRender(); renderMorning();
-    st.textContent = `Sealed: ${items.length} to do. Pick from your lines below, then Send to Claude; the board read pitches BARs from the free write for you to keep, then deletes it.`;
+    st.textContent = `Sealed: ${items.length} items. Pick from them below, then Send to Claude; the board read writes where each one goes${text ? ', pitches BARs from the free write for you to keep, then deletes it' : ''}.`;
   } catch { st.textContent = 'Not sealed. Your free write is still here; try again.'; }
 });
 function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
