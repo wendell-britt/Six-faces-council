@@ -70,6 +70,11 @@ are put to it; each written answer thins the shadow by 3 and is kept in the run 
 spirit walks out as a spirit in the shadow colour (`shadow`, `shadowOf`, polarity 0, so it counts as seen). Flooding has
 none.
 
+Board read 2026-10-14 (overruling the dissolving thread's skip): a shadow spirit gets an element when it is fully revealed,
+and then it can be dissolved. Built in #326: once the shadow clears to 0 with its spirit called up, the player names the
+element it shows. It walks out with that `element`, `revealed: true`, and a colour halfway from the shadow's to its
+element's. Until then `element` stays null. The dissolving thread (#327) reads it through `canDissolve(o)`.
+
 ## State
 
-- 2026-10-14: both poles built in bars-engine #326 (stacked on #324 and #317), shadow-test 46 of 46, shadow spirits included.
+- 2026-10-14: both poles built in bars-engine #326 (stacked on #324 and #317), shadow-test 50 of 50, shadow spirits and the full reveal included; cave-test 385 of 385. Marked ready.
