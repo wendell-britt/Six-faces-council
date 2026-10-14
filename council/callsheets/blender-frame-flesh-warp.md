@@ -25,12 +25,21 @@
   Self, Emotional Body, Fixer, Protector, Skeptic, Victim), since the record already maps a blockage to a daemon and a
   daemon to a spirit family (sg-body-from, ch1-npc-from-blockage). No board question needed.
 
-## Next thread (Opus, fresh): items 2 and 3
-- Brief: add `WARP` beside `BUILDS` in bars-engine `content/ontology-game/cave/character.py`, one row per daemon (limb
-  ratio, head size, spine curve, stoop, one joint collapsed), applied after the fused body and before the weights;
-  every warped figure must pass `census.py --kind humanoid` and J4's walk check. Then the 12-figure sheet from one
-  frame, each one number away, to /mnt/project-files/3d-build/. Own bars-engine #325 until it merges (drop the watch
-  then), and Six-faces-council #150.
+## Built (2026-10-14, bars-engine #328): items 2 and 3
+- Item 2, the warp: `WARP` beside `BUILDS` in `content/ontology-game/cave/character.py`, one row per daemon (protector,
+  controller, skeptic, fixer, victim, damaged-self, emotional-body). Five numbers per row: `arms` (arm length; legs stay,
+  so height and stride stay), `head`, `curve` (upper back rounds forward, minus arches), `stoop` (lean from the waist),
+  `collapse` (one joint held in its natural bend). Applied after the fused body and before the weights, so rig,
+  weights and walk follow it; bands are painted at rest positions. Row numbers are first choices read from each
+  daemon's "in you" line in `council/daemons/daemons.yaml`.
+- Item 3, the sheet: `--one-number --sheet` (frame plus eleven figures, each one number off) and `--daemons --sheet`
+  (frame plus the seven rows), front three-quarter and side. Files: /mnt/project-files/3d-build/npc-warp-2026-10-14/
+  (`one-number.png`, `one-number-side.png`, `daemons.png`, `daemons-side.png`, the eight GLBs, `checks.txt`).
+- All twenty figures pass `census.py --kind humanoid` and J4's walk check; test J6 asserts it for the daemon set.
+
+## Next
+- His look at the two sheets. Then: the warp reads the player's charge (which daemon holds the blockage) to make the
+  Chapter 1 NPC, and the J5 garments are checked on a warped body (the robe is skinned to the same rig).
 
 ## What we already follow
 - Version pinned: `bpy==5.2.2` on Python 3.13 (tools/blender-cloud/README.md). Matches the tweet's current LTS.
@@ -53,4 +62,4 @@
 - EXACT booleans, `gpu.init()` offscreen sheets: no booleans in these scripts, and Cycles CPU works.
 
 ## Waiting on
-- Nothing from Wendell. Items 2 and 3 start in a fresh thread (above).
+- His look at the one-number and daemon sheets (bars-engine #328).
