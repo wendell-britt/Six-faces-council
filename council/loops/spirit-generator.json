@@ -69,9 +69,18 @@
     },
     {
       "round": 8,
-      "status": "next",
+      "status": "done",
       "builds": "The second body family, the Player's Romp (sg-body-from A: fox, otter or kid goat), with its fox base first: its own gas drift and core cut, then hologram, living creature and highest ally form in all five elements, carrying the shared eye, cloth, beads and element styling, and Meridia's nation layer as a switch. Concept art is missing, so the round writes the image prompts first (missing-art rule) and builds from their description.",
       "check": "Contact sheet of the fox's 25 renders beside the Shellback tortoise; the fox reads as a fox at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 9,
+      "status": "next",
+      "builds": "The Romp's second base, the otter, through all five stages in all five elements, on the fox's gas and core, carrying the shared eye, cloth, beads and element styling, with Meridia's layer as a switch; built from its image prompt in council/loops/prompts/spirit-generator-r8.md unless his art or his look at round 8 arrives first. A redirect from his look at round 7 or 8 is folded in first.",
+      "check": "Contact sheet of the otter's 25 renders beside the fox and the tortoise; the otter reads as an otter at the 96 px sprite.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus"
