@@ -8106,6 +8106,17 @@
    "auto": false,
    "pos": "The robe below the belt moves as cloth in the game itself, not as weights glued to the leg bones. cave.js runs a small mass-spring cloth on the skirt's own mesh every frame: the belt row is pinned to the hips, gravity and the body's motion swing it and let it settle, and the thigh and shin push it out where they meet it. The front and back panels are only joined above the slit, so the slit opens when a leg strides through and falls closed when it passes. Blender keeps making the standing drape and runs the same cloth over the walk for the tests and the pictures. The bone-weight slit fixes from rounds 3 and 4 stop.",
    "why": "Wendell, 2026-10-14: \"We're missing something important about how the physics of how the bottom robe is supposed to move. It's not moving like clothes and every fix is still too localized\". Since J5 the skirt is draped once standing and then rigidly skinned, so nothing in its motion is physics. A baked cloth loop would fit only one walk speed, and cave.js varies the stride and turns."
+  },
+  {
+   "id": "pod-pragya-guest",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "podcast guests",
+   "auto": true,
+   "pos": "Pragya is on the Outreach tab as a Flirtcraft guest for an episode on shame, and as council you can consult, not a cohost. Their yes to the name Flirtcraft comes with the right to audit the project, so the cut and show notes go to them before release. SlutCon is never mentioned with them or paired with their episode. The episode prep and your Calendly message are drafted; you send the link. This stands unless you flip it.",
+   "why": "Your recap of the 2026-10-14 call and your words: \"They are down to be on an episode of Flirtcraft and gave me permission to use the title. They aren't fully on board with being a cohost, but I've got the go ahead to move forward and use them as council.\" Source: project files podcast/episode-shame-pragya.md, podcast/guests/guest-list.md"
   }
  ],
  "questions": [
@@ -25205,6 +25216,13 @@
      ],
      "positions": [
       "pod-guests-list"
+     ]
+    },
+    {
+     "n": 9,
+     "questions": [],
+     "positions": [
+      "pod-pragya-guest"
      ]
     }
    ]
