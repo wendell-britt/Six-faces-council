@@ -1,0 +1,51 @@
+{
+ "positions": [
+  {
+   "id": "ch1-source",
+   "faces": ["regent", "sage"],
+   "pass": "chapter 1 demo map",
+   "auto": true,
+   "pos": "The demo's Chapter 1 is the manuscript's chapter 1, \"The Infinite Arcade: What You Spend, and What Comes Back\" (wendell-britt/mtgoa-manuscript, manuscript/ch1.md, canon for the first edition). The bars-engine lead-magnet reader at /mastering-allyship/chapter-1/read carries an older text titled \"The Call to Play\" and the demo does not use it. This stands unless you flip it.",
+   "why": "game-masters-guide corpus/products.yaml names manuscript ch1 to ch9 as canon (commit d2e1749). The two titles differ, so one source has to win before anything is extracted."
+  },
+  {
+   "id": "ch1-pipeline",
+   "faces": ["architect", "challenger"],
+   "pass": "chapter 1 demo map",
+   "auto": true,
+   "pos": "Chapter 1 goes through the same four steps the Skilled Helper went through: pull its milestones, lessons and beliefs; turn them into story with teaching NPCs; write the encounters and run the guessing test; then you play it on your phone. The design ontology (ontology/ in Six-faces-council, v0.1) is the check at each step. It is already in the council repo, so it needs nothing from you to start.",
+   "why": "council/moves/text-to-campaign.md; the Skilled Helper slice taught a test player 24 of 27 against your 85% bar (skilled-helper callsheet, sprout #48). ontology/manifest.yaml loads it for game design."
+  },
+  {
+   "id": "ch1-deck-hand",
+   "faces": ["diplomat", "shaman", "architect"],
+   "pass": "chapter 1 demo map",
+   "auto": true,
+   "pos": "The Allyship Deck is the player's hand. Each of its 147 cards is one move (Wake Up, Clean Up, Grow Up, Show Up) through one face in one domain, with its own question. In the demo, when a blockage stops the player, they answer it by playing a card, and the card's question is what the encounter asks. Chapter 1 deals only Wake Up cards; later chapters open the other moves and the faces. Someone holding the printed deck plays the same card at a table, so the non-AI version works the same way. Teachers still hand over the moves in fights (sf-moves-from-people): a card is how a taught move shows up in your hand. This stands unless you flip it.",
+   "why": "bars-engine public/allyship-deck/allyship-deck.json (147 cards, fields move, operation, domain, primaryQuestion, forbiddenMoves). Your words, 2026-10-14: \"We want to incorporate the allyship deck things as well but I don't rightly know how to do that yet.\""
+  },
+  {
+   "id": "ch1-npc-from-blockage",
+   "faces": ["shaman", "architect"],
+   "pass": "chapter 1 demo map",
+   "auto": true,
+   "pos": "Character and NPC generation from player blockages is the spirit generator: the player's charge (feeling, place, strength, urge) makes the spirit, and the urge picks its family (sg-body-from). The demo uses it as built on sprout #51, with bodies from the Blender spirit pipeline (the Shellback round already renders all five elements as models and sprites). The book's teaching NPCs are written by hand in step 2, not generated.",
+   "why": "spirit-generator callsheet; sg-charge-disc, sg-body-from = A; /mnt/project-files/3d-build/spirit-shellback-2026-10-14/round2 (25 models, 25 sprites)."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ch1-where",
+   "faces": ["challenger", "regent", "architect"],
+   "pass": "chapter 1 demo map",
+   "q": "Where should the Chapter 1 demo be played? The council recommends Sprout, with Blender-made art.",
+   "why_you": "You named both, and the answer decides what the next month of building is for. Sprout already runs a book through to encounters, fights and the spirit generator; the 3D cave has the WAVE room and the Blender assets but no book has run through it, and its level skeleton is not built yet.",
+   "not_before": "The goal of a Chapter 1 demo for the Kickstarter was set in your message of 14 October. The map is council/callsheets/chapter1-demo.md.",
+   "options": [
+    {"v": "sprout", "label": "Sprout, Blender art (recommended)", "c": "Chapter 1 is a phone tap-through in the Sprout world, like the Skilled Helper tracks. Spirits and NPCs are Blender models rendered as sprites, so the Blender pipeline is in the demo. Fastest to a playable demo."},
+    {"v": "cave", "label": "The 3D cave", "c": "Chapter 1 is built in the bars-engine cave, starting in the WAVE room. It shows best on video, but the level skeleton and a book-to-cave path have to be built first."},
+    {"v": "both", "label": "Sprout, ending in the cave", "c": "Chapter 1 plays in Sprout and its last scene opens a door into the 3D WAVE room where the player's own spirit appears. Shows both, costs the most."}
+   ]
+  }
+ ]
+}
