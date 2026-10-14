@@ -8543,6 +8543,61 @@
    "auto": true,
    "pos": "An NPC made from a player's blockage wears its daemon's warp and speaks from that daemon's set. Its boss answer names who it defers to, which is the next NPC the player meets. For the Chapter 1 demo, the Player's question \"How does the other daemons get in your way?\", answered at the start, picks which daemons appear and in what order. This stands unless you flip it.",
    "why": "Your north star: NPC generation based on player blockages, for a gamified Chapter 1. The warp table is bars-engine #328; council/daemons/QUESTIONS.md lays out the story use."
+  },
+  {
+   "id": "ea11-one-spread",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "Every class uses the same eleven numbers, arranged its own way: gate thresholds 0, 0, 1, 1, 2, 2, 3, 4 and operation prices 0, 2, 3. So every class has one signature operation, two free grips and one dearest cell, and the engine rejects a profile off the spread. Type 5's published numbers are withdrawn and re-laid. This stands unless you flip it.",
+   "why": "Nine classes now cost the same in total, so no class is a harder life than another; what differs is where it is hard. Source: 04 Quests/Emotional Alchemy Game/spec/EA-11_CLASS_PROFILE_METHOD_SIX_FACES.md §7, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea12-eight-moves",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "Each class carries eight named moves, one at each gate. It starts with two and unlocks six by running basic encounters until each gate's threshold is met. An authored move changes a trigger, adds an effect the grid has no verb for, or edits the preconditions of your own moves. It never re-prices a cell, restates a derived cell or fires without a trigger in the fiction. 72 authored moves sit beside the 200 derived cards. This stands unless you flip it.",
+   "why": "Your words of 2026-09-15 called two free moves too thin to be a class, and this is the shape you asked for. Source: 04 Quests/Emotional Alchemy Game/spec/EA-12_CLASS_MOVES_SIX_FACES.md §7, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea13a-two-eights",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "The game's eight taiji gates and the book's eight daemon Gates are unrelated, and the class text says so in one sentence. A class move is written for its gate and never names which daemon it meets. Where the book's Fear lives in the game is left for the channel pass. This stands unless you flip it.",
+   "why": "In the game, the book's eight Gates are five retainers, a load meter, the Player, and Fear, which has no home yet. A one-to-one map would fix in place what the game derives per player. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13a_THE_TWO_EIGHTS_SIX_FACES.md §5, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea13b-ke-release",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "A class move acts on a ke edge only by releasing grip, naming the direction first, and on a sheng edge by transition. 'Move across the ke cycle' is retired from the product's language, and 'hold the tension' is barred as move text. This stands unless you flip it.",
+   "why": "Your 'across' is granted in the one form MECHANISM allows: the player does get to the other side, by letting go. MECHANISM stands unamended. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13b_THE_KE_EDGE_SIX_FACES.md §6, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea13c-key-not-transcend",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "Grow Up stays the transcend move for everyone. A class move is a key: it makes a gate passable for that class, and the player integrates the poles by running the operation the key opened. Before the key, the class runs its counterfeit at that gate, so the six moves a class earns are the six places it has been faking it. This stands unless you flip it.",
+   "why": "It binds EA-09c's counterfeit, EA-12's unlock and the transcend operation into one sequence a player lives. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13c_TRANSCEND_MOVES_SIX_FACES.md §6, ruled by the faces 2026-09-15, pending you since."
   }
  ],
  "questions": [
@@ -13901,6 +13956,44 @@
      "v": "fold",
      "label": "Fold the class moves into the cave",
      "c": "The Big Mind cave's chambers take up the idea of a class move as a key at the place a player has been faking it. The card game's spec stays where it is."
+    }
+   ]
+  },
+  {
+   "id": "ea-cap-which-waits",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "emotional alchemy library",
+   "q": "You brought the move library back now, which makes it a fourth game beside your cap of three. Which waits, or does the cap rise to four?",
+   "why_you": "The cap of three is your ruling (st-cap-games-only), and which game gives way is your priority.",
+   "not_before": "The move library question offered 'now' with the note that it becomes a fourth unless you name one that waits. You picked now without naming one.",
+   "options": [
+    {
+     "v": "four",
+     "label": "Raise the cap to four",
+     "c": "All four game projects and the move library run; each gets fewer threads."
+    },
+    {
+     "v": "cave-of-lessons",
+     "label": "The Cave of Lessons waits",
+     "c": "Its phone play and fixes pause; the WAVE room and Big Mind cave keep going."
+    },
+    {
+     "v": "root",
+     "label": "Root waits",
+     "c": "Root's phone test and the five friends pause."
+    },
+    {
+     "v": "sprout",
+     "label": "The Sprout slice waits",
+     "c": "The wave battle, spirit generator and Skilled Helper campaign pause."
+    },
+    {
+     "v": "library-slow",
+     "label": "The library runs only on the board",
+     "c": "Its rulings and questions go on the board, and no thread builds it until another game finishes."
     }
    ]
   }
