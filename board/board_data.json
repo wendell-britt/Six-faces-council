@@ -21494,6 +21494,18 @@
      "architect"
     ],
     "pass": "spirit look research"
+   },
+   "ttv-board-home": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T17:57:17.448Z",
+    "record": "council/ledger/2026-10-14-pull-175717.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "tap the vein on the board"
    }
   },
   "questions": {
@@ -23521,6 +23533,19 @@
      "architect"
     ],
     "pass": "spirit look research"
+   },
+   "ttv-raw-bars": {
+    "decision": "read-delete",
+    "label": "Read it once for BARs, then delete it",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T17:57:09.842Z",
+    "record": "council/ledger/2026-10-14-pull-175709.json (six-faces-council)",
+    "steer": "For now read it and delete but this is the power of having a private server like in bars engine",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "tap the vein on the board"
    }
   },
   "causes": {
@@ -24832,7 +24857,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-14T00:27:03Z",
+ "steps_recorded_through": "2026-10-14T16:40:00Z",
  "morning": {
   "date": "2026-10-13",
   "gathered_at": "2026-10-13T15:45:41Z",
@@ -25923,5 +25948,20 @@
     "note": "no /nonexistent/.specify/backlog/BACKLOG.md; pass --bars <bars-engine checkout>"
    }
   ]
- }
+ },
+ "picks": [
+  {
+   "id": "menu-task:cmv5qqi22001i7skoiol1pz27",
+   "date": "2026-10-13",
+   "category": "menu",
+   "text": "Ping Dan",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no Lens goals were read this morning"
+   },
+   "note": "",
+   "saved_at": "2026-10-14T17:55:24.629Z",
+   "record": "council/ledger/2026-10-14-pull-175709.json (six-faces-council)"
+  }
+ ]
 }
