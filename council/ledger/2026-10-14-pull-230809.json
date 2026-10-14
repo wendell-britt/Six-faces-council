@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T23:08:09.761Z",
+ "answers": {
+  "jev-trial-result": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:08:04.563Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "jev-next-pile-with-code-map": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:08:09.761Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
