@@ -36,11 +36,16 @@ The Morning tab's "Tap the Vein here" box runs the ritual on the board itself:
    up, and pitches the lines worth keeping as BARs, each with the slot from game-masters-guide `corpus/products.yaml`
    it would go to. `python3 council/ttv_bars.py pitch <dir>/morning/freewrite.json --pitches <file> --summary "..."`
    turns them into board questions (keep in that slot, keep unplaced, or not a BAR) and refuses any line that is not
-   in the free write word for word. The read adds the rows with `board/sync_board.py --rows`, republishes, then
+   in the free write word for word. When the free write carries `lensDomain` (the box offered an empty Lens domain's
+   prompt, `lens-pitch-goals`), the read also pitches one to three year goals for that domain, each quoting a line of
+   his: `python3 council/lens_goals.py pitch <dir>/morning/freewrite.json --pitches <file>`, with
+   `[{"title", "line", "why"}]`. The read adds the rows with `board/sync_board.py --rows`, republishes, then
    deletes the doc (ArtifactData delete, collection `morning`, doc `freewrite`) and its local copy.
 5. He answers the pitches on the Open tab and sends. The read that records them runs `python3 council/ttv_bars.py
    accepted --write`, which writes one BAR per kept pitch into wendell-britt/game-masters-guide `corpus/bars/` (tag
-   `tap-the-vein`), and opens a pull request there.
+   `tap-the-vein`), and opens a pull request there. It also runs `python3 council/lens_goals.py kept --send`, which
+   posts each kept goal to bars-engine's `POST /api/lenses/goals` as an active year goal (safe to run twice), then
+   `python3 council/morning.py --write` so the Lenses panel shows it.
 
 Wendell, 2026-10-14, after the first version sliced the page sentence by sentence: "I think the tap the being should
 be read and summarized before bars are chosen. It a bit too raw for me to know what should be a bar and currently it
