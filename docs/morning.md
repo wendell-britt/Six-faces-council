@@ -26,20 +26,26 @@ we are doing from our podcasting episodes and creating robust context web that o
 
 The Morning tab's "Tap the Vein here" box runs the ritual on the board itself:
 
-1. He writes. The free write is kept only in his browser (localStorage) and is cleared when he seals; it is never
-   saved to the board's store, so no session reads it (`mm-raw` stands).
-2. "Find my lines" splits the write into lines. He marks each one **To do**, **Keep as a BAR**, both, or neither.
+1. He writes. Until he seals, the free write is kept only in his browser (localStorage).
+2. "Find my lines" splits the write into lines, and he marks the ones **To do**.
 3. "Seal the menu" saves `morning/menu` exactly as a pasted menu is saved, with the To do lines as unaligned kept
-   lines and the BAR lines in the same doc's `bars` field. His To do lines appear in the "From your free write"
+   lines, and saves the free write at `morning/freewrite`. His To do lines appear in the "From your free write"
    category at once, where he picks a Lens goal for each and picks up to seven, then Send to Claude.
-4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, plus
-   `python3 council/ttv_bars.py <dir>/morning/menu.json --write` when BARs were marked. That writes one BAR per line
-   into wendell-britt/game-masters-guide `corpus/bars/` (`kind: bar`, `slot: unplaced`, tag `tap-the-vein`), and the
-   read opens a pull request there. From the corpus the BARs feed products the same way the podcast BARs do.
+4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, and
+   `morning/freewrite` while it exists. The read reads the free write once, picks the lines worth keeping in his
+   exact words, and runs `python3 council/ttv_bars.py <dir>/morning/freewrite.json --line "<his words>" ... --write`.
+   The script refuses any line that is not in the free write word for word, and writes one BAR per line into
+   wendell-britt/game-masters-guide `corpus/bars/` (`kind: bar`, `slot: unplaced`, tag `tap-the-vein`). The read opens
+   a pull request there, then deletes the doc (ArtifactData delete, collection `morning`, doc `freewrite`) and its
+   local copy.
+
+Wendell ruled `ttv-raw-bars` on 2026-10-14: read it once for BARs, then delete it. His steer: "For now read it and
+delete but this is the power of having a private server like in bars engine". This widens `mm-raw` for the board
+box. A sealed free write sits in the board's store until the next board read deletes it. A private server for the
+free write, as bars-engine has, is a later step.
 
 bars-engine's Tap the Vein stays the home of tasks, charge and Lens goals; the board box is the front door he uses
-where he picks his work. Whether the council may read the whole free write to find BARs itself, the way it mines an
-episode, is his call (board row `ttv-raw-bars`).
+where he picks his work (`ttv-board-home`).
 
 ## The categories
 

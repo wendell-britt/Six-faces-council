@@ -43,6 +43,16 @@ class TtvBarsTest(unittest.TestCase):
         self.write({**DOC, "bars": ["Getting it wrong gets you closer, every time."]})
         self.assertTrue((self.bars / "2026-10-14-getting-it-wrong-gets-you-closer-2.md").exists())
 
+    def test_line_must_be_in_the_free_write(self):
+        doc = {"sessionDate": "2026-10-14", "text": "I hold the frame.\nThen   I let it   go."}
+        self.assertEqual(ttv.not_in_write(doc, ["Then I let it go.", "I let go of the frame."]), ["I let go of the frame."])
+        self.write_lines(doc, ["Then I let it go."])
+        self.assertTrue((self.bars / "2026-10-14-then-i-let-it-go.md").exists())
+
+    def write_lines(self, doc, lines):
+        for path, text in ttv.plan(doc, self.bars, lines):
+            path.write_text(text, encoding="utf-8")
+
     def test_no_bars_no_files(self):
         self.assertEqual(ttv.plan({"sessionDate": "2026-10-14", "bars": []}, self.bars), [])
 
