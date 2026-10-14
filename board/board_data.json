@@ -22350,6 +22350,41 @@
      "shaman"
     ],
     "pass": "perceptual shadow"
+   },
+   "ps-polarity": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:37:05.517Z",
+    "record": "council/ledger/2026-10-14-pull-223726.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "perceptual shadow"
+   },
+   "ps-run-record": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:37:11.069Z",
+    "record": "council/ledger/2026-10-14-pull-223726.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "perceptual shadow"
+   },
+   "j5-skirt-cloth": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T22:37:26.021Z",
+    "record": "council/ledger/2026-10-14-pull-223726.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "j5-round4"
    }
   },
   "questions": {
