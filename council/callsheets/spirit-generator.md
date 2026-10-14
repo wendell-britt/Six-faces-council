@@ -13,8 +13,10 @@
 
 - Board read of 2026-10-14 01:43 UTC (ledger `2026-10-14-pull-014324.json`): `sg-body-from` = A, the urge picks the family (eight daemon families, two or three animal bases each, 25 species become skins). `sg-look-layers`, `sg-breed-names`, `sg-assets-modular` and `nation-elements` stand. `sg-shape-choice` stands with his steer: many spirits will be defeated and drop loot, and that loot can be offered to spirits the player allies with. `sg-grows-into-shape` is overruled: no outline stage; he wants a ghost or geometric, holographic look, starting as a gas that solidifies into a core, which then makes a holographic ally projected into the world, like Steven Universe. The Level 3 and 5 stage text needs rewriting to this.
 
+- Spirit art proof 1 (2026-10-14, thread "Spirit look and feel"): positions `sg-holo-stages` (gas at level 1, core at 3, hologram projected from the core at 5; a beaten ally falls back into its core) and `sg-loot-offering` (defeated wild spirits drop shards; an offered shard adds its piece to the ally's next offer). The Shellback in three stages and five elements: page https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85, script `tools/blender-cloud/content/spirits/shellback.py` (bars-engine, branch `claude/project-thread-0qykoj`), files `/mnt/project-files/3d-build/spirit-shellback-2026-10-14/`. Next after his look: the other two animal bases, one nation style, then a second family.
+
 ## Waiting on
-- Rewrite `sg-grows-into-shape` to the gas, core, hologram stages and put it back on the board as a position.
+- His look at the Shellback proof page.
 - First art proof: one family (Shellback) through the stages in all five elements, now that `sg-body-from` is answered.
 - His phone play of the slice: board step `spirit-generator-01` (Your steps tab).
 - Whether `sg-overcharge` stands (board).
