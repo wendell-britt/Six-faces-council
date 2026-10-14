@@ -4,6 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
+- [element-settings](element-settings.md), 2026-10-14: a cave-like land for each element (metal cave, fire mountain, earth plains, water island with lagoon, wood forest); design only; five `el-*` positions; wood first after the demo.
 - [perceptual-shadow](perceptual-shadow.md), 2026-10-14: perceptual shadow in the WAVE room built (bars-engine PR on #324): two signals, four shadows, practices, polarity; `ps-polarity-poles` on the board.
 - [spirit-dissolve](spirit-dissolve.md), 2026-10-14: dissolve a spirit into yourself, ice to water to gas to pure spirit, for mana into the element's stat; built in the cave (bars-engine #327, on #324), positions `sd-density-ladder`, `sd-mana-to-stat`, `sd-gone-after`; next his play, then the Big Mind cave and the spirit generator's allies.
 - [jev-asset](jev-asset.md), 2026-10-14: first run done, mark passed (2 of 2 catches, 1 false flag of 17); next a second unseen pile with a code map (`council/jev/results_2026-10-14.md`).
