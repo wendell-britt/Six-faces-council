@@ -4,7 +4,8 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
-- [chapter1-demo](chapter1-demo.md), 2026-10-14: map of what the Kickstarter's Chapter 1 demo needs across the repos; four `ch1-*` positions and question `ch1-where` (Sprout recommended) on the board; Chapter 1 extract done (sprout #52); next is step 2, story and teaching NPCs, in a fresh thread.
+- [jev-asset](jev-asset.md), 2026-10-14: `jev-asset-piles` = admin-first; 16 of the 20 admin rows labelled by Claude (`council/jev/admin_labels.json`), 4 one-tap questions `jev-lab-as-*` on the board; then size the teaching pile.
+- [chapter1-demo](chapter1-demo.md), 2026-10-14: map of what the Kickstarter's Chapter 1 demo needs across the repos; four `ch1-*` positions and question `ch1-where` (Sprout recommended) on the board; next is the Chapter 1 extract from mtgoa-manuscript in a fresh thread.
 - [shame-coaching](shame-coaching.md), 2026-10-13: field research and pass shame1; six `sh-*` positions, questions `sh-lead` and `sh-ek-cert` on the board; shame-led pitch test T1 due 11-07.
 - [cave-levels](cave-levels.md), 2026-10-13: level plan in bars-engine #307 (draft, LEVELS.md): WAVE room as home, portal to the hall of the six, one tunnel per face as its minigame, skill branches, the centre of the self; six `lv-*` positions on the board; next the walkable skeleton in a fresh thread.
 - Daily compost pass (docs/compost-pass.md), 2026-10-12: routine each morning at 6:47 Pacific starts a thread that keeps, drops or takes over Wendell's open steps. First pass dropped four, took over one check, rewrote two.
