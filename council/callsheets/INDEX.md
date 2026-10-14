@@ -4,7 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
-- [jev-asset](jev-asset.md), 2026-10-14: `jev-asset-piles` = admin-first; 16 of the 20 admin rows labelled by Claude (`council/jev/admin_labels.json`), 4 one-tap questions `jev-lab-as-*` on the board; then size the teaching pile.
+- [jev-asset](jev-asset.md), 2026-10-14: `jev-asset-piles` = admin-first; scoring pile frozen at 19 rows (`council/jev/scoring_pile_2026-10-14.json`); next fix the mark in a dated file, then the teaching-pile size on the board.
 - [chapter1-demo](chapter1-demo.md), 2026-10-14: Kickstarter Chapter 1 demo; extract, story, encounters and the phone page with Pip and the Shellback spirits drafted (sprout #52 to #55, stacked); next is step 5, his phone play, in a fresh thread.
 - [shame-coaching](shame-coaching.md), 2026-10-13: field research and pass shame1; six `sh-*` positions, questions `sh-lead` and `sh-ek-cert` on the board; shame-led pitch test T1 due 11-07.
 - [cave-levels](cave-levels.md), 2026-10-13: level plan in bars-engine #307 (draft, LEVELS.md): WAVE room as home, portal to the hall of the six, one tunnel per face as its minigame, skill branches, the centre of the self; six `lv-*` positions on the board; next the walkable skeleton in a fresh thread.
