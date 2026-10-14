@@ -20,7 +20,7 @@ skills and character and NPC generation based on player blockages."
 
 ## Path to the demo
 1. Step 1 of text-to-campaign on Chapter 1: `ch1/extract.yaml` (milestones, lessons, beliefs, the blockages a
-   reader hits). **Next move, starts now.**
+   reader hits). Done 2026-10-14: sprout `campaigns/mtgoa-ch1/extract.yaml`, draft PR sprout #52.
 2. Step 2: story and teaching NPCs, with Wake Up cards dealt as the player's hand.
 3. Step 3: encounters and the guessing test; the player's own blockage becomes a spirit via #51.
 4. Blender sprites for the Chapter 1 spirits and NPCs onto the page.
@@ -31,6 +31,9 @@ skills and character and NPC generation based on player blockages."
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
 
 ## Next thread brief
-Add wendell-britt/mtgoa-manuscript (list_repos shows it, push allowed). Read `manuscript/ch1.md` and the Skilled
-Helper's `extract.yaml` in sprout as the model. Write the Chapter 1 extract in sprout under `mtgoa-ch1/`, draft PR.
-Load the design-ontology skill (game_design profile). Opus, one thread.
+Step 2, story and teaching NPCs, from sprout `campaigns/mtgoa-ch1/extract.yaml` (#52; build on its branch if it has
+not merged) and Sprout's design record, the way Skilled Helper `story.md` was written. Owner Shaman, checker
+Diplomat, Opus. Deal Wake Up cards from bars-engine `public/allyship-deck/allyship-deck.json` (`ch1-deck-hand`).
+Read the extract's `shaman_check.flag_for_step_2` (does the player sit in the ally's seat or meet the Arcade through
+teaching NPCs) and `ontology_check` first. Where the Arcade lives waits on `ch1-where`; write the story so it holds in
+Sprout (the recommendation) and note what would change for the cave. Run it as one thread.
