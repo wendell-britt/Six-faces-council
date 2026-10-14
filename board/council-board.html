@@ -259,6 +259,11 @@ body.has-send{padding-bottom:120px}
 .mo-pick{font:inherit;font-size:.88rem;padding:5px 14px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
 .mo-pick[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .mo-pick:disabled{opacity:.45;cursor:not-allowed}
+/* Tap the Vein on the board (2026-10-14, Wendell: "so that I can do the tap the vein directly from the environemnt where
+   I'll be using that information"). The free write stays in this browser; only lines he marks are saved (mm-raw). */
+.ttv-write{width:100%;min-height:10em}
+.ttv-line .mo-ctl{margin-top:4px}
+.ttv-line.kept{box-shadow:inset 4px 0 0 var(--accent);padding-left:12px}
 .mo-more{font:inherit;font-size:.85rem;margin:8px 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
 
 /* Blocker panel (Wendell, 2026-10-12: an overdue step "needs to actually run a player through the blockage and save the
@@ -322,6 +327,13 @@ body.has-send{padding-bottom:120px}
 <section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
   <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
   <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
+  <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">Write, keep your lines, seal</span></summary>
+    <p class="lede">Write whatever is here this morning. The free write stays in this browser and is never saved to the board. Then find your lines: mark the ones to do, and the ones in your own words worth keeping as BARs for the corpus. Seal, and only the marked lines leave this box.</p>
+    <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
+    <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines</button><div class="state" id="ttv-state"></div></div>
+    <div id="ttv-lines"></div>
+    <div class="ctl" id="ttv-seal-row" hidden><button class="save" id="ttv-seal" type="button">Seal the menu</button><div class="state" id="ttv-count"></div></div>
+  </details>
   <details class="mo-cat mo-paste" id="mo-paste"><summary><b>Or paste this morning's menu</b><span id="mo-paste-sum">From Tap the Vein's Copy the sealed menu button</span></summary>
     <p class="lede">If the council could not fetch your menu, paste it here. Your kept lines show as soon as you save. Only the sealed menu is read; your free write never leaves Tap the Vein.</p>
     <textarea id="mo-paste-text" rows="4" placeholder="Paste the copied menu here"></textarea>
@@ -1478,6 +1490,55 @@ document.getElementById('mo-paste-save').addEventListener('click', async () => {
     document.getElementById('mo-paste-text').value = ''; moOpen.add('menu'); renderMorning(); }
   catch { st.textContent = 'Not saved. Try again.'; }
 });
+/* Tap the Vein on the board. The free write lives only in localStorage on this device and is cleared at seal; the
+   sealed menu is saved at morning/menu exactly as a pasted one is, so pull.py, morning.py and the Send button need no
+   new path. Lines marked BAR ride in the same doc's `bars` field, and council/ttv_bars.py writes each one, unedited,
+   into the corpus (game-masters-guide corpus/bars). */
+const TTV_KEY = 'board-ttv-draft';
+let ttvLines = [];
+const ttvToday = () => new Date().toLocaleDateString('en-CA');
+function ttvSplit(text){
+  return text.split(/\n+/).flatMap(p => p.match(/[^.!?]+[.!?]*["\u201d')\]]*/g) || []).map(l => l.trim()).filter(l => l.length > 1);
+}
+function ttvRender(){
+  const box = document.getElementById('ttv-lines');
+  box.innerHTML = ttvLines.map((l, i) => `<div class="mo-item ttv-line${l.todo || l.bar ? ' kept' : ''}" data-i="${i}">
+    <p class="mo-text">${esc(l.text)}</p>
+    <div class="mo-ctl"><button type="button" class="mo-pick" data-k="todo" aria-pressed="${!!l.todo}">To do</button>
+      <button type="button" class="mo-pick" data-k="bar" aria-pressed="${!!l.bar}">Keep as a BAR</button></div></div>`).join('');
+  const todo = ttvLines.filter(l => l.todo).length, bars = ttvLines.filter(l => l.bar).length;
+  document.getElementById('ttv-seal-row').hidden = !ttvLines.length;
+  document.getElementById('ttv-count').textContent = `${todo} to do, ${bars} BAR${bars === 1 ? '' : 's'}`;
+  document.getElementById('ttv-seal').disabled = !db || !(todo || bars);
+}
+(() => {
+  const w = document.getElementById('ttv-write');
+  try { const d = JSON.parse(localStorage.getItem(TTV_KEY) || 'null'); if (d && d.text) w.value = d.text; } catch {}
+  w.addEventListener('input', () => { try { localStorage.setItem(TTV_KEY, JSON.stringify({date: ttvToday(), text: w.value})); } catch {} });
+})();
+document.getElementById('ttv-find').addEventListener('click', () => {
+  const was = Object.fromEntries(ttvLines.map(l => [l.text, l]));
+  ttvLines = ttvSplit(document.getElementById('ttv-write').value).map(t => was[t] || {text: t, todo: false, bar: false});
+  document.getElementById('ttv-state').textContent = ttvLines.length ? '' : 'Nothing written yet.';
+  ttvRender();
+});
+document.getElementById('ttv-lines').addEventListener('click', e => {
+  const b = e.target.closest('.mo-pick'), row = e.target.closest('.ttv-line'); if (!b || !row) return;
+  const l = ttvLines[+row.dataset.i]; l[b.dataset.k] = !l[b.dataset.k]; ttvRender();
+});
+document.getElementById('ttv-seal').addEventListener('click', async () => {
+  const st = document.getElementById('ttv-state'), date = ttvToday(), now = new Date().toISOString();
+  const items = ttvLines.filter(l => l.todo).map((l, i) => ({key: `board-${date}-${i + 1}`, text: l.text, source: 'kept_line', status: 'unaligned', goal: null}));
+  const bars = ttvLines.filter(l => l.bar).map(l => l.text);
+  const doc = {menu: JSON.stringify({version: 1, origin: 'board', sessionDate: date, sealedAt: now, items}), sessionDate: date, savedAt: now, bars};
+  if (!db){ st.textContent = 'This view cannot save.'; return; }
+  try {
+    await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); moOpen.add('menu');
+    ttvLines = []; document.getElementById('ttv-write').value = ''; try { localStorage.removeItem(TTV_KEY); } catch {}
+    ttvRender(); renderMorning();
+    st.textContent = `Sealed: ${items.length} to do, ${bars.length} BAR${bars.length === 1 ? '' : 's'}. Pick from your lines below, then Send to Claude.`;
+  } catch { st.textContent = 'Not sealed. Your free write is still here; try again.'; }
+});
 function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
 document.getElementById('mo-cats').addEventListener('toggle', e => {
   const d = e.target.closest('.mo-cat'); if (!d || !d.dataset.cat) return;
@@ -1526,7 +1587,7 @@ render();
   db = window.claude && window.claude.use ? await window.claude.use('db') : null;
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
   window.claude.use('mcp').then(m => { mcp = m; renderSend(); }, () => {});
-  renderMorning();
+  renderMorning(); ttvRender();
   db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); }, () => {});
   db.collection('picks').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); moLive = next; renderMorning(); }, () => {});
   db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
