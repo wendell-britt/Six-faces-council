@@ -4,6 +4,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive.
 
 ## Open strands
+- [perceptual-shadow](perceptual-shadow.md), 2026-10-14: perceptual shadow in the WAVE room built (bars-engine PR on #324): two signals, four shadows, practices, polarity; `ps-polarity-poles` on the board.
 - [jev-asset](jev-asset.md), 2026-10-14: `jev-asset-piles` = admin-first; scoring pile frozen at 19 rows (`council/jev/scoring_pile_2026-10-14.json`); next fix the mark in a dated file, then the teaching-pile size on the board.
 - [chapter1-demo](chapter1-demo.md), 2026-10-14: Kickstarter Chapter 1 demo; extract, story, encounters and the phone page with Pip and the Shellback spirits drafted (sprout #52 to #55, stacked); next is step 5, his phone play, in a fresh thread.
 - [shame-coaching](shame-coaching.md), 2026-10-13: field research and pass shame1; six `sh-*` positions, questions `sh-lead` and `sh-ek-cert` on the board; shame-led pitch test T1 due 11-07.
