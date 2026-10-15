@@ -15,14 +15,14 @@ None before the build. Alpha tagging occurs only after the documented gates pass
 - [x] [claude] Produce the implementation-ready fictional Roadblock Encounter brief.
 - [x] [claude] Record every friction and observed ontology/package failure without silently repairing it.
 - [x] [claude] Run the spec's cheap falsification test.
-- [ ] [claude] Open PR 1 with declared fork space and no Phase B changes.
+- [x] [claude] Open PR 1 with declared fork space and no Phase B changes.
 
 ## PR 2 — Face packaging and hardening
 
-- [ ] [claude] Define a shared face output schema.
-- [ ] [claude] Package Shaman, Architect, Challenger, Regent, Diplomat, and Sage explicitly.
-- [ ] [claude] Add adversarial semantic fixtures derived from dogfood failures and known invariants.
-- [ ] [claude] Add structural validators for routing, links, IDs, aliases, supersession, and forbidden terms.
+- [x] [claude] Define a shared face output schema.
+- [x] [claude] Package Shaman, Architect, Challenger, Regent, Diplomat, and Sage explicitly.
+- [x] [claude] Add adversarial semantic fixtures derived from dogfood failures and known invariants.
+- [x] [claude] Add structural validators for routing, links, IDs, aliases, supersession, and forbidden terms.
 - [ ] [claude] Run the face-distinction prompt twice and preserve dissent.
 
 ## PR 3 — Clean verification and release
