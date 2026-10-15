@@ -32,7 +32,7 @@ silent one.
 |---|------|-----------------|-------------------------------|--------------|----------|
 | 1 | Open https://bars-engine.vercel.app/board | Next.js route, sign-in cookie, single owner (`BOARD_OWNER_PLAYER_ID`) | Vercel hosting; GitHub raw for the page (cached 5 min, last good copy kept in memory) | Vercel down; raw.githubusercontent.com down with a cold cache: 503 page | yes |
 | 2 | Save an answer | POST `/api/board/saves`, checked against `schema/board-save.schema.json`, row in `BoardSave` | Vercel functions; the Postgres provider behind `DATABASE_URL` | 4xx/5xx: the control shows "Not saved" and the answer stays on screen | yes |
-| 3 | Schedule | `.github/workflows/board-pull.yml`, every 15 min | GitHub Actions (free minutes on a public repo) | cron delayed under load; **GitHub disables schedules in a public repo after 60 days without activity** | a run that never happens is silent; see "What is left" |
+| 3 | Schedule | `.github/workflows/board-pull.yml`, cron every 15 min | GitHub Actions (free minutes on a public repo) | **GitHub drops most scheduled runs in this repo: the steward's hourly cron ran 52 times in 287 hours (median gap 5.6 h, longest 10.5 h); board-pull's 15-minute cron had not run once in the first hour.** GitHub also disables schedules after 60 days without activity | a run that never happens is silent; see "Root cause" |
 | 4 | Fetch the store | `board/fetch_store.py fetch` → GET `/api/board/pull` | Vercel, Postgres, `BOARD_PULL_TOKEN` in both places | token missing or rotated on one side: 401 | red run, emailed |
 | 5 | Record | `board/pull.py --push --no-room`, unchanged | GitHub (`GITHUB_TOKEN`, contents: write) | push race (retries, merge drivers); a branch rule that forbids pushes to main | red run |
 | 6 | Pasted morning menu | `council/morning.py --menu --write` | bars-engine, `COUNCIL_MENU_TOKEN` | secret missing: warning, menu left unacknowledged, so step 9 goes red after 6 h | yellow, then red |
@@ -43,6 +43,41 @@ silent one.
 
 No AI vendor and no token quota sits between a save and main. The pieces that remain are hosting (Vercel), the
 database provider, and GitHub, each of which fails loudly except a schedule that stops firing.
+
+## Root cause (2026-10-15, measured after the first runs)
+
+The first read of the 20:09 stall named the cause as "an AI vendor's quota sits between a save and main" and moved
+the trigger to GitHub Actions. Three problems followed in the first two hours: the steward could not import the new
+contract test, run 2 acknowledged three saves and recorded one with no reason, and the 15-minute schedule did not
+fire. Each one has the same cause as the stall.
+
+**The design was checked against its own description, not against what its dependencies do.**
+
+- The trigger. A Claude routine was replaced by a GitHub cron, and neither was measured. This repo's Actions
+  history already showed the answer before the kit was written: the steward's hourly cron (`17 * * * *`) ran 52
+  times between 2026-10-03 23:04 and 2026-10-15 22:18, which is 287 hours. The median gap was 5.6 hours, the 90th
+  percentile 7.3 and the longest 10.5. GitHub drops scheduled runs under load and does not queue them. A 15-minute cron is a
+  hope, not a schedule. The page's note ("The pull runs every 15 minutes, so this is late") repeats the same
+  unmeasured claim.
+- The alarm. `board/staleness.py` runs inside board-pull, so when the schedule does not fire, the alarm does not fire
+  either. The stall at 20:09 was silent for the same reason: the routine that failed was also the step that would have
+  reported it. The page's late note in bars-engine is the one alarm that lives outside the job.
+- The ledger. Nothing tracked each save from arrival to main. The 20:09 Send asked for four picks main already held,
+  and run 2 acknowledged two saves no one could name. `ack` now gives each save a status (below), which fixes the
+  record but not the trigger.
+- The gate. The patch was verified with `pytest` after installing jsonschema, and the repo merges on the steward's
+  `unittest` run with only pyyaml. The landing session tested the command it was given instead of the gate that decides
+  the merge (fixed in #174).
+
+What follows from it:
+
+1. A save starts its own pull. The save is the event, so the event should trigger the work: bars-engine calls
+   GitHub's `workflow_dispatch` for board-pull when a save lands. The cron stays as a sweep for anything missed. This needs a
+   GitHub credential in Vercel, which is Wendell's to create or refuse; the question is on the Council Board
+   (`np-pull-trigger`).
+2. The alarm lives where he saves, and measures what matters. The page warns from the oldest pending save's age, not
+   from the last pull's age: with no pending saves, a long gap between pulls is not late. bars-engine already holds both numbers.
+3. Claims in this file are measured. A figure here cites the run history or a test that checks it.
 
 ## Every acknowledged save is accounted for
 
