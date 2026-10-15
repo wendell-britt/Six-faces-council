@@ -46,7 +46,7 @@ jobs:
           git config merge.boardjson.driver "python3 council/tools/board_merge.py %O %A %B"
           git config merge.ours.driver true
       - name: Contract tests
-        run: python3 -m pytest -q tests/test_save_contract.py tests/test_agents_md.py
+        run: python3 -m pytest -q tests/test_save_contract.py tests/test_agents_md.py tests/test_save_accounting.py
       - name: Fetch the store from bars-engine
         run: python3 board/fetch_store.py fetch store
       - name: Record with pull.py
@@ -82,8 +82,11 @@ jobs:
           git fetch -q origin main && test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
       - name: Acknowledge what main records
         run: |
+          # Every pending save gets a status (recorded, superseded, nothing-to-record, held, unaccounted). An
+          # unaccounted save stays unacknowledged and fails this step (board/fetch_store.py).
+          set -o pipefail
           python3 board/fetch_store.py ack store --record "six-faces-council@$(git rev-parse --short HEAD)" \
-            ${{ steps.morning.outputs.skip && format('--except {0}', steps.morning.outputs.skip) || '' }}
+            ${{ steps.morning.outputs.skip && format('--except {0}', steps.morning.outputs.skip) || '' }} | tee ack.log
       - name: Staleness check (6 hours)
         if: always()
         run: |
@@ -93,5 +96,6 @@ jobs:
         if: always()
         run: |
           { echo "### Board pull"; echo '```'; cat pull.log 2>/dev/null; echo '```';
+            echo "### Saves accounted"; echo '```'; cat ack.log 2>/dev/null; echo '```';
             echo "### Staleness"; echo '```'; cat stale.log 2>/dev/null; echo '```';
             echo "### Needs work"; echo '```'; python3 board/needs_work.py; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
