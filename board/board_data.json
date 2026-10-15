@@ -8620,6 +8620,50 @@
    "auto": true,
    "pos": "Each daemon's body holds one of Ruella Frank's six fundamental movements stuck in its protective form: Protector push (a stop: both palms out, fingers up, braced into the push), Controller grasp (fists drawn to the chest, rigid and tall), Skeptic pull (drawn back and turned aside, weight on the back knee), Fixer reach (pitched forward, both arms out), Victim yield collapsed (sunk into the knees, head hung), Damaged Self release refused (curled round its own middle), Emotional Body release too soon (arms flung wide, head back). The Player stands soft and open with all six available. Integration in play is the held movement completing, animated in a later round. This stands unless you flip it.",
    "why": "Your note of 2026-10-14: the first poses were subtle nods; build a gestural language on the six movements, with the daemons protecting the vulnerable child until they are renegotiated. Sheets in /mnt/project-files/3d-build/npc-gesture-2026-10-14/; code on bars-engine #328; record in council/daemons/GESTURES.md."
+  },
+  {
+   "id": "np-kids-first",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "nonprofit structure",
+   "auto": true,
+   "pos": "The nonprofit serves children first. Adult education runs as a division of the same nonprofit, on the same technology, so one game engine and one design ontology serve both. Grant applications lead with the kids' programs, and the adult work (the allyship book, speaking, coaching) is the second program line. This stands unless you flip it.",
+   "why": "Your words in chat on 2026-10-15, after the nonprofit review found that no repo names kids as the audience: \"It could very easily be a division of a non-profit that focuses on kids since anything I make will run off the same technology.\" Also: \"Since we are making games children will be able to use it and potentially there are more grants available.\" bars-engine src/app/nonprofit/page.tsx still has no purpose paragraph and says \"Not yet incorporated, no 501(c)(3) determination\"."
+  },
+  {
+   "id": "np-red-door-precedent",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "nonprofit structure",
+   "auto": true,
+   "pos": "The August Wilson Red Door Project is the model for one organization with a school program and an adult program. Its school program is the August Wilson Monologue Competition for grades 10 to 12. Its adult work is theater and dialogue on race, including a play made with Portland police officers. The Collins Foundation gave it $50,000 over one year in 2019 for arts programs on race and public safety. The grant pitch cites it as a precedent you worked inside. This stands unless you flip it.",
+   "why": "Your words in chat on 2026-10-15: \"August Wilson red door project is an organization I've worked for in the past that does programming for schools and for adults as well\". The program facts come from web sources dated 2016 to 2019 (Concordia Neighborhood Association, Oregon ArtsWatch, Portland Tribune, Portland Monthly, Collins Foundation grant list). Its current programs were not checked."
+  },
+  {
+   "id": "np-mentorschip-both-ways",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "nonprofit structure",
+   "auto": true,
+   "pos": "The talk with Dr. Micah McCrary-Dennis, founder of MentorSchip, covers both directions. You adapt MentorSchip's work for adults, and the games go to MentorSchip's students as a first program site and a source of real playtests with kids. The joint pitch pairs inner resources with outer ones: introspection games beside scholarship readiness, for the same kids. Both organizations have published no outcome numbers, so a joint pilot with before and after measures is the grant asset for both. This stands unless you flip it.",
+   "why": "Your words in chat on 2026-10-15: \"I have a homie who is the founder of mentorschip who has done work in this space. I'd been talking with him about adapting his organizations work to adult education as well\". mentorschip.com, read 2026-10-15: a Portland \"certified 501(c)(3) nonprofit education charity\" with the vision \"DEBT-FREE EDUCATION FOR ALL\"; the founder brings students into the scholarship process \"as early as age 10\"; it runs FAFSA Quest and a beta augmented-reality scholarship hunt; its impact counters are blank. bars-engine src/app/nonprofit/page.tsx lists \"a first program site\" among its four needs."
+  },
+  {
+   "id": "np-kids-content-review",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "nonprofit structure",
+   "auto": true,
+   "pos": "Before any child plays Sprout Plot, Root or the caves, each gets a kids' content and data review. The content review covers the founder's backstory (\"the children were dying\"), the law that a human who kills a human is a monster, the Big Mind cave's line about childhood abuse, and Root's knockdowns. The data review decides whether free text is stored, keeps the playtest kit's consent card that records no identity, follows COPPA for any player under 13, and states \"a game, not therapy\" with a crisis resource. This stands unless you flip it.",
+   "why": "Follows from np-kids-first. Sources: sprout docs/design.md (World and story); sprout council/daemons/reports/2026-10-10-big-mind-cave-protector.md, which asks to \"State plainly that this is a game, not therapy, and give a crisis resource\" and flags that \"nobody has decided whether free text is stored\"; sprout docs/playtest.md (consent card)."
   }
  ],
  "questions": [
@@ -14016,6 +14060,72 @@
      "v": "library-slow",
      "label": "The library runs only on the board",
      "c": "Its rulings and questions go on the board, and no thread builds it until another game finishes."
+    }
+   ]
+  },
+  {
+   "id": "np-age-band",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "nonprofit structure",
+   "q": "Which age band does the kids' side serve first?",
+   "why_you": "No repo states an age range, and funders, schools and the content review all start from it. It is a call about who you serve.",
+   "not_before": "Your ruling of 2026-10-15 put kids first without naming ages. MentorSchip starts students \"as early as age 10\".",
+   "options": [
+    {
+     "v": "middle",
+     "label": "Middle school, about 10 to 14",
+     "c": "Matches where MentorSchip starts. Sprout's farming RPG and push hands fit this band. Players under 13 bring COPPA rules if the game collects anything from them."
+    },
+    {
+     "v": "high",
+     "label": "High school, about 14 to 18",
+     "c": "Matches Red Door's grades 10 to 12 and MentorSchip's scholarship years. The heavier story lines need the least softening."
+    },
+    {
+     "v": "elementary",
+     "label": "Elementary, about 8 to 11",
+     "c": "Needs the most content and reading-level change, and COPPA applies throughout."
+    },
+    {
+     "v": "after-mentorschip",
+     "label": "Set it after the MentorSchip talk",
+     "c": "His students decide the band, and the content review waits until then."
+    }
+   ]
+  },
+  {
+   "id": "np-mentorschip-shape",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "nonprofit structure",
+   "q": "What shape should the tie with MentorSchip take?",
+   "why_you": "It decides who applies for grants and whose name is on them. Only you and he can settle it.",
+   "not_before": "Your words of 2026-10-15 name the conversation and leave the structure open.",
+   "options": [
+    {
+     "v": "partner",
+     "label": "Two organizations, one joint program",
+     "c": "Each keeps its own board. Grants name both, or one applies with the other as program partner."
+    },
+    {
+     "v": "sponsor",
+     "label": "MentorSchip sponsors your programs for now",
+     "c": "You take grants before your own 501(c)(3). Its site says it is a 501(c)(3); confirm that on the IRS Tax Exempt Organization Search first."
+    },
+    {
+     "v": "one-org",
+     "label": "One organization with a kids' division and an adult division",
+     "c": "The Red Door shape. It needs the most legal and governance work up front."
+    },
+    {
+     "v": "after-talk",
+     "label": "Decide after the talk",
+     "c": "Nothing is built on the structure until you report back."
     }
    ]
   }
