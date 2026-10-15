@@ -1,0 +1,246 @@
+{
+ "note": "Labels written by Claude from the doc line and the code before the model ran (commit of this file precedes the run). Not edited after. Borderline rows are reported apart and left out of the score; cannot-tell rows likewise.",
+ "source": "johnair01/bars-engine main 1885d16 (same commit as the first run)",
+ "labels": {
+  "B2-001": {
+   "label": "agrees",
+   "why": "schema.prisma:516-530 BarForgeRecord @@map(\"bar_forge_records\"); db:generate/migrate exist.",
+   "borderline": false
+  },
+  "B2-002": {
+   "label": "agrees",
+   "why": "src/lib/bars-api-auth.ts: 503 when BARS_API_KEY unset, 401 when bearer differs.",
+   "borderline": false
+  },
+  "B2-003": {
+   "label": "agrees",
+   "why": "match-bar-to-quests.ts: status in active|draft (:102), moveTypeMatchesWave filter (:129), TYPE_TO_LOCK +10, polarityScore substring on title/description/nation/archetype/allyshipDomain.",
+   "borderline": false
+  },
+  "B2-004": {
+   "label": "agrees",
+   "why": "bar-registry/route.ts: default 100, cap 500; sample>0 uses ORDER BY RANDOM() LIMIT sample (limit unused).",
+   "borderline": false
+  },
+  "B2-005": {
+   "label": "agrees",
+   "why": "route.ts: sample clamped 0..500, $queryRaw ORDER BY RANDOM().",
+   "borderline": false
+  },
+  "B2-006": {
+   "label": "agrees",
+   "why": "route.ts payload count = records.length; totalCount only with includeTotal.",
+   "borderline": false
+  },
+  "B2-007": {
+   "label": "agrees",
+   "why": "bar-registry/[id]/route.ts returns {record} or 404 {error:Not found}.",
+   "borderline": false
+  },
+  "B2-008": {
+   "label": "disagrees",
+   "why": "openapi/bar-forge-custom-gpt.yaml does list the three game-master paths, but no route for /api/game-master/* exists in src/, backend/ or scripts/ (grep collective-context finds none). The doc presents them as live routes under the same key.",
+   "borderline": true
+  },
+  "B2-009": {
+   "label": "agrees",
+   "why": "match-bar-to-quests.ts:177-186 prefixes gm_face:<name> in debug.matchedOn.",
+   "borderline": false
+  },
+  "B2-010": {
+   "label": "agrees",
+   "why": "bar-registry/route.ts mergedMetadata puts gameMasterFace into metadataJson.",
+   "borderline": false
+  },
+  "B2-011": {
+   "label": "agrees",
+   "why": "books-context-api-auth.ts returns 503 when BOOKS_CONTEXT_API_KEY unset.",
+   "borderline": false
+  },
+  "B2-012": {
+   "label": "agrees",
+   "why": "api/admin/books/route.ts non-compact select/response has exactly these fields.",
+   "borderline": false
+  },
+  "B2-013": {
+   "label": "agrees",
+   "why": "route.ts compact map: id,title,author,slug,status,threadId.",
+   "borderline": false
+  },
+  "B2-014": {
+   "label": "agrees",
+   "why": "books/[id]/route.ts maxChars default 80000, clamp 500000; slices when longer.",
+   "borderline": false
+  },
+  "B2-015": {
+   "label": "agrees",
+   "why": "quests/route.ts valid statuses draft|active|archived|all, default all.",
+   "borderline": false
+  },
+  "B2-016": {
+   "label": "agrees",
+   "why": "quests/route.ts compact map: id,title,status,moveType.",
+   "borderline": false
+  },
+  "B2-017": {
+   "label": "disagrees",
+   "why": "quests/route.ts returns 404 only when the book id is missing; a book with no generated quests returns 200 with quests:[] and count:0.",
+   "borderline": false
+  },
+  "B2-018": {
+   "label": "agrees",
+   "why": "src/actions/books.ts:279 listBooks selects adminBookHubSelect, no extractedText.",
+   "borderline": false
+  },
+  "B2-019": {
+   "label": "agrees",
+   "why": "book-quest-review.ts:26,46 getBookDraftQuests/getBookApprovedQuests filter completionEffects contains \"bookId\":\"<id>\" with status draft/active; quests route uses the same filter.",
+   "borderline": false
+  },
+  "B2-020": {
+   "label": "agrees",
+   "why": "scripts/verify-server-action-type-reexports.ts bans export type { and export { type in use-server files.",
+   "borderline": false
+  },
+  "B2-021": {
+   "label": "agrees",
+   "why": "verify-prisma-schema.ts runs prisma validate with a placeholder DATABASE_URL when unset.",
+   "borderline": false
+  },
+  "B2-022": {
+   "label": "disagrees",
+   "why": "package.json verify:build-reliability also runs verify:transformation-registry-lockstep and verify:face-meta-lockstep: four checks, not two.",
+   "borderline": false
+  },
+  "B2-023": {
+   "label": "agrees",
+   "why": "package.json check = db:generate && verify:build-reliability && lint && tsc --noEmit.",
+   "borderline": false
+  },
+  "B2-024": {
+   "label": "disagrees",
+   "why": ".husky/pre-commit runs npm run precommit:check = check (incl. lint) && validate-manifest. The doc omits lint and names build:type-check, which is only the same tsc call inside check. Minor.",
+   "borderline": true
+  },
+  "B2-025": {
+   "label": "agrees",
+   "why": ".github/workflows/frontend-check.yml runs npm run check on push to main/master and on every pull_request.",
+   "borderline": false
+  },
+  "B2-026": {
+   "label": "disagrees",
+   "why": "package.json has no strand:consult:build-reliability script.",
+   "borderline": false
+  },
+  "B2-027": {
+   "label": "agrees",
+   "why": "scripts/build-with-env.ts runs prisma migrate deploy when DATABASE_URL is set, except Vercel Preview or SKIP_PRISMA_MIGRATE_DEPLOY=1. Row says Production / Vercel build; Preview skip makes it borderline.",
+   "borderline": true
+  },
+  "B2-028": {
+   "label": "agrees",
+   "why": "scripts/db-sync.ts runs prisma generate and a hash check only; never pushes.",
+   "borderline": false
+  },
+  "B2-029": {
+   "label": "agrees",
+   "why": "package.json db:push prints FORBIDDEN and exits 1.",
+   "borderline": false
+  },
+  "B2-030": {
+   "label": "agrees",
+   "why": "scripts/record-schema-hash.ts writes the md5 of schema.prisma to .prisma_hash; db-sync compares it.",
+   "borderline": false
+  },
+  "B2-031": {
+   "label": "agrees",
+   "why": "db:push exits with an error; db-sync generates only and exits 1 when the hash differs.",
+   "borderline": false
+  },
+  "B2-032": {
+   "label": "agrees",
+   "why": "prisma/migrations has no 20250306000000_playbook_to_archetype_rename folder.",
+   "borderline": false
+  },
+  "B2-033": {
+   "label": "agrees",
+   "why": "20260629124500 re-creates both tap_the_vein tables without lensFaceKey/eaChannel/chargeStrength and with lensGoalId/lifeLensDomain; 20260624160338 has the three columns; 20260810193000 is additive repair.",
+   "borderline": false
+  },
+  "B2-034": {
+   "label": "cannot-tell",
+   "why": "package.json has no engines field and no .nvmrc; CI uses Node 22. Nothing contradicts v18+ and nothing confirms it.",
+   "borderline": true
+  },
+  "B2-035": {
+   "label": "disagrees",
+   "why": "package.json db:push exits with FORBIDDEN; docs/DB_STRATEGY.md says db push is forbidden for humans and agents. \"local iteration only\" is stale.",
+   "borderline": false
+  },
+  "B2-036": {
+   "label": "agrees",
+   "why": "scripts/preflight-env.ts checks env vars and runs prisma.$connect + SELECT 1.",
+   "borderline": false
+  },
+  "B2-037": {
+   "label": "agrees",
+   "why": "scripts/build-with-env.ts migrates then builds with DATABASE_URL, else skips migrate and generates (Preview skip aside).",
+   "borderline": false
+  },
+  "B2-038": {
+   "label": "disagrees",
+   "why": "Same as BUILD_RELIABILITY.md:14: pre-commit runs precommit:check which includes lint and the two lockstep checks.",
+   "borderline": true
+  },
+  "B2-039": {
+   "label": "agrees",
+   "why": "src/lib/openai.ts passes the untrimmed key through.",
+   "borderline": false
+  },
+  "B2-040": {
+   "label": "disagrees",
+   "why": "getOpenAI is imported in 16+ files in src/ (quest-grammar, cultural-substrate, copy-improvement, birthday-onboarding, alchemy-engine, threshold-encounter ...), not 2.",
+   "borderline": false
+  },
+  "B2-041": {
+   "label": "agrees",
+   "why": "book-analyze.ts exports analyzeBook; default model BOOK_ANALYSIS_MODEL || gpt-4o-mini (:37).",
+   "borderline": false
+  },
+  "B2-042": {
+   "label": "disagrees",
+   "why": "src/actions/generate-quest.ts has no generateQuestCore, no getOpenAI and no model id.",
+   "borderline": false
+  },
+  "B2-043": {
+   "label": "agrees",
+   "why": "ai-with-cache.ts: 15000 ms wait and retry on rate limit/429/TPM.",
+   "borderline": false
+  },
+  "B2-044": {
+   "label": "agrees",
+   "why": "book-analyze.ts:37 BOOK_ANALYSIS_MODEL default gpt-4o-mini.",
+   "borderline": false
+  },
+  "B2-045": {
+   "label": "disagrees",
+   "why": "QUEST_GEN_MODEL appears nowhere in src/, scripts/ or .env.example.",
+   "borderline": false
+  },
+  "B2-046": {
+   "label": "disagrees",
+   "why": "QUEST_GEN_AI_ENABLED appears nowhere in src/; generate-quest.ts checks QUEST_GRAMMAR_AI_ENABLED.",
+   "borderline": false
+  },
+  "B2-047": {
+   "label": "agrees",
+   "why": "quest-grammar.ts:144 QUEST_GRAMMAR_AI_MODEL || gpt-4o.",
+   "borderline": false
+  },
+  "B2-048": {
+   "label": "agrees",
+   "why": "ai-with-cache.ts DEFAULT_TTL_MS 7 days; model AiResponseCache at schema.prisma:3361.",
+   "borderline": false
+  }
+ }
+}
