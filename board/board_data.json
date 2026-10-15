@@ -8664,6 +8664,17 @@
    "auto": true,
    "pos": "Before any child plays Sprout Plot, Root or the caves, each gets a kids' content and data review. The content review covers the founder's backstory (\"the children were dying\"), the law that a human who kills a human is a monster, the Big Mind cave's line about childhood abuse, and Root's knockdowns. The data review decides whether free text is stored, keeps the playtest kit's consent card that records no identity, follows COPPA for any player under 13, and states \"a game, not therapy\" with a crisis resource. This stands unless you flip it.",
    "why": "Follows from np-kids-first. Sources: sprout docs/design.md (World and story); sprout council/daemons/reports/2026-10-10-big-mind-cave-protector.md, which asks to \"State plainly that this is a game, not therapy, and give a crisis resource\" and flags that \"nobody has decided whether free text is stored\"; sprout docs/playtest.md (consent card)."
+  },
+  {
+   "id": "np-pull-alarm-age",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "board plumbing",
+   "auto": true,
+   "pos": "The board page warns from the age of the oldest save main has not recorded, not from the time of the last pull. With no saves waiting, a long gap between pulls shows no warning; a save waiting more than an hour shows one, with its age. The page stops saying the pull runs every 15 minutes. This stands unless you flip it.",
+   "why": "The 20:09 stall was silent because the step that failed was the one that would have reported it, and staleness.py runs inside the same scheduled job it watches. The page's note is the one alarm outside the job, but it measures the last pull, which GitHub's schedule makes late most of the time (docs/failure-modes.md, Root cause). bars-engine already holds every save's receivedAt and recordedAt."
   }
  ],
  "questions": [
@@ -14126,6 +14137,29 @@
      "v": "after-talk",
      "label": "Decide after the talk",
      "c": "Nothing is built on the structure until you report back."
+    }
+   ]
+  },
+  {
+   "id": "np-pull-trigger",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "board plumbing",
+   "q": "Should a save start its own pull to main, using a GitHub token you create for bars-engine?",
+   "why_you": "It needs a credential on your GitHub account stored in Vercel. Only you can create it or refuse it.",
+   "not_before": "The kit assumed GitHub runs board-pull every 15 minutes. Measured on 2026-10-15: this repo's hourly cron ran 52 times in 287 hours, a median of 5.6 hours apart and up to 10.5 hours (docs/failure-modes.md, Root cause).",
+   "options": [
+    {
+     "v": "token",
+     "label": "Yes: a save starts board-pull",
+     "c": "You create a fine-grained GitHub token for Six-faces-council with Actions read and write only, and set it in Vercel as BOARD_DISPATCH_TOKEN. A save reaches main in about a minute. The cron stays as a sweep. If the token expires, saves fall back to the cron and the page says so."
+    },
+    {
+     "v": "cron",
+     "label": "No: keep the schedule only",
+     "c": "No new credential. A save usually reaches main 3 to 10 hours later. The page warns when a save has waited too long, and you can run board-pull by hand from the Actions tab."
     }
    ]
   }
