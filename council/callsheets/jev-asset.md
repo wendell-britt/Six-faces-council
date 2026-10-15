@@ -19,7 +19,11 @@ afterwards. Steer: the labelling must not be a spreadsheet to him.
 - Run 2026-10-14 (results in `council/jev/results_2026-10-14.md`): practice 27 of 30 match the labels (misses AS-182, AS-100, AS-101: the model never searched bars-engine `backend/`).
   Scoring pile: catches 2 of 2, false flags 1 of 17 (AS-002), mark passed. The constant-extraction script (`council/jev/constant_baseline.py`, written for the run) caught 0 of 2 and flagged 3 agreeing rows.
   Board positions `jev-trial-result` and `jev-next-pile-with-code-map` stand unless flipped.
-- Next: write a second pile of new, unseen doc rows labelled before the run, with a fixed code map in the run brief (src/, prisma/schema.prisma, scripts/, backend/, package.json, public/); then run the model once. Wendell may flip AS-002 to disagrees; apply it before any rerun of the stats, never to the frozen file.
+- Superseded 2026-10-14: second pile run (see below).
+- (old) Next: write a second pile of new, unseen doc rows labelled before the run, with a fixed code map in the run brief (src/, prisma/schema.prisma, scripts/, backend/, package.json, public/); then run the model once. Wendell may flip AS-002 to disagrees; apply it before any rerun of the stats, never to the frozen file.
 - Stale doc: the move-icon line (AS-024) says 4 icons; the ontology has 5 since Open Up. Only that row was affected, and it is already out.
   The doc itself in bars-engine `.specify/specs/asset-register-design-system/spec.md` line 68 still needs the fix.
+
+- Second pile run 2026-10-14 (results `council/jev/results_pile2_2026-10-14.md`): 48 new rows from 7 unseen docs, labelled in commit 8551d94 before the run, fixed code map in the brief. Catches 8 of 8, false flags 0 of 35 (43 clear rows), 5 borderline rows apart (B2-008, 024, 027, 034, 038). Script baseline 3 of 8, 8 false flags. Board positions `jev-pile2-result` and `jev-pile2-borderline` stand unless flipped.
+- Next: run the model with the code map over one whole unlabelled doc (`docs/OPENAI_API_USAGE.md` first) and hand Wendell the flags as a fix list; the doc fixes found (BUILD_RELIABILITY, DEVELOPER_ONBOARDING, OPENAI_API_USAGE, BOOKS_CONTEXT_API) can go to bars-engine as one doc-fix PR. The AS-002 / spec.md line-68 fixes from before are still open.
 - From the unfinished-work pass (2026-10-14, `uw-jev-to-sheet`): land JEVI on bars-engine main's backlog by itself (today it lives only on draft #256), and give `jev-asset-recount` the corrected count, four known drifts with one live, beside its original wording.
