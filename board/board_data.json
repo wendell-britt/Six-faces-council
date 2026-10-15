@@ -27053,8 +27053,9 @@
  ],
  "steps_recorded_through": "2026-10-14T22:43:52Z",
  "morning": {
-  "date": "2026-10-14",
-  "gathered_at": "2026-10-14T18:40:28Z",
+  "date": "2026-10-15",
+  "gathered_at": "2026-10-15T21:55:10Z",
+  "sealed": "2026-10-15",
   "pick_limit": 7,
   "goals": [],
   "lenses": {
@@ -27096,103 +27097,59 @@
     "key": "menu",
     "title": "From your free write",
     "blurb": "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).",
-    "items": [],
-    "note": "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
-   },
-   {
-    "key": "board",
-    "title": "Waiting on you on the board",
-    "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
     "items": [
      {
-      "id": "board-jev-asset-piles",
-      "text": "For the asset trial, how many statements do you label, and which ones first?",
-      "ref": "jev-asset-piles",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "question, jev asset",
+      "id": "menu-task:cmv9yesei000213u0weuoya6f",
+      "text": "Respond to Madi",
+      "note": "Task",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "board-loop-ahead-two",
-      "text": "Art and design rounds now start themselves. Each strand with a contract (council/loops/<strand>.json, docs/loops.md) names its next round, how it is checked and its budget; when a round ends, the coordinator starts the next one without…",
-      "ref": "loop-ahead-two",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, loop engineering",
+      "id": "menu-task:cmv9yete9000b13u0tih30ze6",
+      "text": "Reach out to Marina",
+      "note": "Task",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "board-loop-auto-gate",
-      "text": "A round starts itself only when its gate is auto: no money spent, no account signed into or changed, nothing published outside the project, and no council/faces.yaml change. A round that needs your eyes, money or accounts waits and shows…",
-      "ref": "loop-auto-gate",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, loop engineering",
+      "id": "menu-task:cmv9yeuah000k13u0k6cbyoyq",
+      "text": "Start a newsletter",
+      "note": "Task",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "board-lens-board-reads-goals",
-      "text": "The board reads your Lens goals every morning through a goals export from bars-engine, without needing a sealed bars-engine menu, and shows them on the Morning tab under each domain. An empty domain shows as \"No goals here yet\".",
-      "ref": "lens-board-reads-goals",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
+      "id": "menu-task:cmv9yex46001213u0maguuehe",
+      "text": "Make a Facebook post for my coaching site",
+      "note": "Task",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "board-lens-pitch-goals",
-      "text": "When a domain has no goals, the board's Tap the Vein box offers that domain's prompt. The board read pitches year goals from what you wrote, quoting your line, and each pitch you keep is written to bars-engine as an active Lens goal. The…",
-      "ref": "lens-pitch-goals",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-intake-align",
-      "text": "The full Tap the Vein intake lists everything you can do today, and the board read gives each item one line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches. Each line carries a written reason, not a word…",
-      "ref": "lens-intake-align",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-order",
-      "text": "Build order: the goals export and the Lenses panel first, goal pitches second, the full intake third. The alignment check needs goals to align to. Locking one domain at bars-engine.vercel.app/lenses/onboarding before then is optional and…",
-      "ref": "lens-order",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-domains-stand",
-      "text": "bars-engine's five domains (relationships, career, money, health, allyship) stay as the Lens domains until you name others.",
-      "ref": "lens-domains-stand",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
+      "id": "menu-line:schedule time with dre",
+      "text": "Schedule time with Dre",
+      "note": "Kept line",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      }
     ]
+   },
+   {
+    "key": "board",
+    "title": "Waiting on you on the board",
+    "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
+    "items": []
    },
    {
     "key": "steps",
@@ -28102,228 +28059,8 @@
     "key": "prs",
     "title": "Open pull requests",
     "blurb": "Pull requests open in the council, bars-engine and the Game Master's guide.",
-    "items": [
-     {
-      "id": "pr-six-faces-council-135",
-      "text": "Read and send Lens goals through the environment's key",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/135",
-      "note": "six-faces-council #135",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-six-faces-council-115",
-      "text": "Move file: the guessing test's two checks (wording and taught player)",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/115",
-      "note": "six-faces-council #115 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-six-faces-council-112",
-      "text": "Record shame1 rulings in the shame-coaching callsheet",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/112",
-      "note": "six-faces-council #112 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-six-faces-council-100",
-      "text": "Blender pipeline test call sheet: procgen roots and mushrooms",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/100",
-      "note": "six-faces-council #100 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-six-faces-council-77",
-      "text": "Root call sheet: shell built, next is the phone test",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/77",
-      "note": "six-faces-council #77 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-318",
-      "text": "Spirit art proof: the Shellback from gas to highest ally form",
-      "link": "https://github.com/johnair01/bars-engine/pull/318",
-      "note": "bars-engine #318 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-317",
-      "text": "Cave: free walking everywhere, and the hall of the six's gates become doors",
-      "link": "https://github.com/johnair01/bars-engine/pull/317",
-      "note": "bars-engine #317 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-316",
-      "text": "Cave rooms from a written description: spec, builder, first proof",
-      "link": "https://github.com/johnair01/bars-engine/pull/316",
-      "note": "bars-engine #316 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-315",
-      "text": "J5: robe, sash and topknot as skinned garments on the cave figure",
-      "link": "https://github.com/johnair01/bars-engine/pull/315",
-      "note": "bars-engine #315 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-314",
-      "text": "Big Mind cave: the daemon path's seven chambers and the child at the centre",
-      "link": "https://github.com/johnair01/bars-engine/pull/314",
-      "note": "bars-engine #314 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-307",
-      "text": "Cave levels: home, the hall of the six, six tunnels, the centre of the self",
-      "link": "https://github.com/johnair01/bars-engine/pull/307",
-      "note": "bars-engine #307 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-293",
-      "text": "Blender pipeline: Blendkit tests pass; procedural roots and mushrooms",
-      "link": "https://github.com/johnair01/bars-engine/pull/293",
-      "note": "bars-engine #293 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-279",
-      "text": "Setup Vercel Web Analytics integration",
-      "link": "https://github.com/johnair01/bars-engine/pull/279",
-      "note": "bars-engine #279 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-256",
-      "text": "council: daemons and casting into bars-engine; Jev pass and trial spec",
-      "link": "https://github.com/johnair01/bars-engine/pull/256",
-      "note": "bars-engine #256 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-230",
-      "text": "Add Day 12 resource question practice",
-      "link": "https://github.com/johnair01/bars-engine/pull/230",
-      "note": "bars-engine #230",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-190",
-      "text": "Add Card-to-Carousel Brief flow",
-      "link": "https://github.com/johnair01/bars-engine/pull/190",
-      "note": "bars-engine #190",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-164",
-      "text": "PMA Phase B + humane notifications (HNTF)",
-      "link": "https://github.com/johnair01/bars-engine/pull/164",
-      "note": "bars-engine #164",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-156",
-      "text": "Implement Lenses onboarding and TTV lineage",
-      "link": "https://github.com/johnair01/bars-engine/pull/156",
-      "note": "bars-engine #156",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-140",
-      "text": "Add playable Inner Garden Chapter 1",
-      "link": "https://github.com/johnair01/bars-engine/pull/140",
-      "note": "bars-engine #140 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-73",
-      "text": "feat: ship #41 campaign hierarchy wiring + #45 walkable demo fallback",
-      "link": "https://github.com/johnair01/bars-engine/pull/73",
-      "note": "bars-engine #73 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-70",
-      "text": "fix(backend): standardize port to 8080 in railway.json",
-      "link": "https://github.com/johnair01/bars-engine/pull/70",
-      "note": "bars-engine #70",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-61",
-      "text": "feat: port handbook/wiki UI pages and API docs",
-      "link": "https://github.com/johnair01/bars-engine/pull/61",
-      "note": "bars-engine #61 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     }
-    ]
+    "items": [],
+    "note": "no GitHub token in this session; pass --prs <file> saved from the GitHub tools"
    },
    {
     "key": "backlog",
