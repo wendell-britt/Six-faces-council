@@ -1,0 +1,16 @@
+{
+ "date": "2026-10-15",
+ "kind": "board-pull",
+ "newest_save": "2026-10-15T22:01:10.939Z",
+ "answers": {},
+ "steer": {
+  "text": "Context for the agents is that we’re are building a playable ontology for helping people install integral consciousness somatic awareness and shadow work though accessible story driven play. ",
+  "savedAt": "2026-10-15T22:01:10.939Z"
+ },
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "steer/general: \"Context for the agents is that we’re are building a playable ontology for helping people install integral consciousness somatic awareness and shadow work though accessible story driven play. \""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
