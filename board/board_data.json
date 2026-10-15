@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-15",
  "positions": [
   {
    "id": "build",
@@ -23372,6 +23372,18 @@
      "challenger"
     ],
     "pass": "spirit look round 11"
+   },
+   "dg-six-movements": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-15",
+    "saved_at": "2026-10-15T00:08:26.486Z",
+    "record": "council/ledger/2026-10-15-pull-000826.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "Daemon gestures"
    }
   },
   "questions": {
