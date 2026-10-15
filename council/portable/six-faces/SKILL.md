@@ -36,7 +36,8 @@ the pass used. If Wendell has ruled since either copy, his newer words win.
    Each delivers what its entry lists, in short paragraphs with a subject and a finite verb. Where this
    session can run subagents, a face may send its daemons (`daemon-protector` and the others) to work one
    specific problem in its domain, for the Player, through the five moves. Where it cannot, the face reads
-   the daemon's entry in `council/daemons/daemons.yaml` itself, or skips it and says so.
+   the daemon's entry in `council/daemons/daemons.yaml` itself, with its question set in
+   `council/daemons/questions.yaml`, or skips it and says so.
 6. **Verdicts table.** One row per face.
 7. **Dissent check.** Say whether the pass was unanimous. Treat a unanimous pass as a warning sign
    and say so in the pass.

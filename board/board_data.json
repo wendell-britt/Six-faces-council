@@ -8282,6 +8282,344 @@
    "auto": true,
    "pos": "Before the next pile, the run brief gets a fixed list of where bars-engine code lives (src/, prisma/schema.prisma, scripts/, backend/, package.json, public/), and the second pile uses new rows from docs the model has not seen, labelled by Claude before the run. This stands unless you flip it.",
    "why": "All three practice misses (AS-182, AS-100, AS-101) came from the model never searching backend/ in bars-engine, where the checks and status values live. A code map fixes that without changing the mark, and a fresh labelled pile tests what two positives cannot. Report: council/jev/results_2026-10-14.md"
+  },
+  {
+   "id": "el-mapping",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Each element gets a land after Magic's: metal is the cave (swamp), fire a volcanic mountain, earth open plains with a barrow, water an island, wood an old forest. Fire takes the mountain and earth the plains so the two do not share one. This stands unless you flip it.",
+   "why": "His mapping of 14 October, with earth as plains because mountain is fire's. Sheet: council/callsheets/element-settings.md."
+  },
+  {
+   "id": "el-water-interior",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Water is an island outside and a lagoon inside, entered by wading, with the reef as the lagoon's floor. This stands unless you flip it.",
+   "why": "He offered reef or lagoon and settled on island; the lagoon is the one that has a floor and a still surface to stand on, and the reef rides under it."
+  },
+  {
+   "id": "el-skeleton",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Every land uses the WAVE room's seven stretches and the hall of the six unchanged. Only the dressing changes: light, fog, ground and pieces. This stands unless you flip it.",
+   "why": "The look table (STEP_LOOK, FACE_LOOK) already works this way, so one skeleton serves five lands and nothing is rebuilt per element."
+  },
+  {
+   "id": "el-demo-scope",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "The Chapter 1 demo keeps the cave as its only setting. The other four lands come after it. This stands unless you flip it.",
+   "why": "The Kickstarter gate is a working gamified Chapter 1 that ends in the cave (chapter1-demo.md); adding lands first spends the demo's time on breadth."
+  },
+  {
+   "id": "el-first-setting",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "Element settings",
+   "auto": true,
+   "pos": "Wood is the first land built after the demo gate, from one paragraph through room-from-text, ahead of fire, earth and water. This stands unless you flip it.",
+   "why": "The forest has the most already made: procgen roots and mushrooms, the greenery picks and the grass clump. It is the cheapest test of whether a land reads as a land."
+  },
+  {
+   "id": "uw-list-corrected",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Three items on the unfinished-work list were wrong. Flirtcraft's database is done, Anastasia's campaign is already on Your steps, and Sprout is active. The corrections sit beside the originals in /mnt/project-files/unfinished-work-2026-10-14.md. This stands unless you flip it.",
+   "why": "The board's steps lists and the sprout repo's commits through 2026-10-13 answer it. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-board-before-sweep",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "A session that sweeps your session logs for unfinished work reads this board's rows and Your steps before it ranks anything, and names the row or list it checked for each item. This stands unless you flip it.",
+   "why": "The sweep got three of eleven items wrong because it never read the board. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-email-steps",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The November 10 reminder's two Vercel settings and the topics backfill are on Your steps as 'The November 10 reminder', due 2026-10-24 and 2026-10-31. This stands unless you flip it.",
+   "why": "Your setup list of 2026-09-15 names the three steps, and only you can enter them. The Vercel connector could not list the variables, so nobody knows whether they are set. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-upload-limit",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "bars-engine's upload route caps images at 5 MB and PDFs at 10 MB, with a test. Today every type gets the 10 MB PDF limit. It is a fix and merges when its checks pass. This stands unless you flip it.",
+   "why": "src/app/api/assets/upload/route.ts line 31 states the 5 MB intent and line 109 enforces 10 MB for everything. A fix stays out of the feature pipeline. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-backlog-dupes",
+   "faces": [
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The 2,021 duplicate 'cert-cyoa-slides (follow-up)' rows at the end of bars-engine's BACKLOG.md collapse to the one row they repeat. Git keeps the old file. This stands unless you flip it.",
+   "why": "The seed ignores that section, so nothing you see changes; every session that reads the backlog stops paying for it. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-skill-dedupe",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The two deferral paragraphs in the six-faces skill become one, keeping every rule both carry. The change syncs to every repo. This stands unless you flip it.",
+   "why": "Lines 103 and 125 of .claude/skills/six-faces/SKILL.md say the same rule twice. It is a skill edit, not faces.yaml. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-jev-to-sheet",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "JEVI lands on bars-engine main's backlog by itself, and jev-asset-recount gets the corrected count (four known drifts, one live) beside its original wording. Both go to the jev-asset call sheet. This stands unless you flip it.",
+   "why": "jev-images-backlog and jev-asset-recount already stood. JEVI exists only on draft PR #256, and the count still says 'between two and five'. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-podcast-ticks",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The podcast strand ticks what shipped in the MTGOA podcast spec's task list and marks the question and guest forms as not built. This stands unless you flip it.",
+   "why": "The hub shipped on 2026-09-30 (cc4d4f35f), and every task still reads as open. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-pushhands-repair-later",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Pushhands repair becomes its own project after the first release. Nothing is built for it before your footage check. This stands unless you flip it.",
+   "why": "Your words of 2026-10-01: 'I do want fixes for the obvious problems the inspector finds. If this is taken care of in a later task I will defer to then'. No later task covers it, and the project's constitution keeps repair out of the first release. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-sprout-current",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Sprout's open decisions of 2026-10-03 are retired from the list, because later work took them up. This stands unless you flip it.",
+   "why": "docs/design.md line 354 settles the tile-day, and the sprout repo has commits through 2026-10-13. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-anastasia-as-is",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "Anastasia's campaign gets no new work from the council. Its three steps stay on Your steps. This stands unless you flip it.",
+   "why": "Consent and release are reserved, and the steps already exist. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "uw-flirtcraft-step7",
+   "faces": [
+    "architect"
+   ],
+   "pass": "unfinished work 1",
+   "auto": true,
+   "pos": "The daily compost pass drops Flirtcraft's step 7 (create the tables by hand) once it confirms production created them. This stands unless you flip it.",
+   "why": "fc-migrate-on-deploy stood as yes, and step 9's sign-in link worked. Source: council/passes/6FACE_PASS_unfinished-work1_2026-10-14.md"
+  },
+  {
+   "id": "jev-pile2-result",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "The doc-drift model, given the fixed code map, caught all 8 clear disagreements on 48 new rows from 7 docs it had not seen and flagged 0 of the 35 agreeing rows. The next move is to run it over one whole unlabelled doc (docs/OPENAI_API_USAGE.md first) and hand you the flags as a fix list, with the doc fixes going to bars-engine as one PR. This stands unless you flip it.",
+   "why": "Counts: catches 8 of 8 (true rate plausibly 63% to 100%), false flags 0 of 35 (plausibly under 10%). The constant script caught 3 of 8 and flagged 8 of 35. Limits: I picked the docs and wrote the labels from the same code the model read, and checkable API and script claims are easier than design prose. Labels were pushed before the run (Six-faces-council 8551d94). Report: council/jev/results_pile2_2026-10-14.md"
+  },
+  {
+   "id": "jev-pile2-borderline",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Five rows of the second pile were borderline and stay out of the counts, with my readings: B2-008 disagrees (the OpenAPI file lists three game-master routes that do not exist in src/), B2-024 and B2-038 disagree (pre-commit also runs lint, which the docs omit), B2-027 agrees (Preview builds skip migrate deploy), and B2-034 (the Node v18+ line) is now disagrees, because the repo has no engines field, CI runs Node 22 and Next 16 needs Node 20 or later. These stand unless you flip one.",
+   "why": "The model agreed on B2-008, 024, 027 and 038 and disagreed on B2-034. If B2-034 counts as a catch, the score becomes 9 of 9. The Next 16 Node floor comes from Next's published requirement and was not checked inside the repo. Labels: council/jev/pile2_labels_2026-10-14.json"
+  },
+  {
+   "id": "dq-home",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "Your question sets for the daemons live in council/daemons/questions.yaml, in your exact words with a plain form beside each, and travel to every council repo with daemons.yaml. Each daemon agent answers its own set about the problem before the five moves. The game reads a copy (bars-engine content/ontology-game/daemons/questions.js) and the corpus keeps them as BARs. This stands unless you flip it.",
+   "why": "Your note of 14 October: \"Updating ontology for the daemons. In the game master agents and in the games itself.\" daemons.yaml is overwritten from friendcraft by refresh.py, so the sets sit beside it. Six-faces-council #159, bars-engine #329, game-masters-guide #4."
+  },
+  {
+   "id": "dq-boss-chain",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "Every set shares four questions: what the daemon works on, who it works for, how that serves its boss, and what happens without it. The boss answers link the daemons into a chain that ends at the Protector (the body's survival) or the Player. In play, the daemon a part names as its boss is the next one offered. This stands unless you flip it.",
+   "why": "Your Controller set lists its bosses, \"(The protector? The self, the controller, the vulnerable child)\", and asks a different follow-up for each. The Protector's set asks about physical survival in place of a boss, and the Player's asks how the others get in its way."
+  },
+  {
+   "id": "dq-protector-chamber",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "The Big Mind Protector chamber asks your four Protector questions after \"What do you protect the self from?\". Its earlier questions stay, so a charge that falls fast still reaches the ready line first. Each later chamber on the daemon path is met with that daemon's own set, the Controller's next. This stands unless you flip it.",
+   "why": "dp-seven and dp-pass-rule set the chambers. The test checks the chamber's questions against questions.js so they cannot drift (bars-engine #329, 179 checks pass)."
+  },
+  {
+   "id": "dq-shadow",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "The shadow spirit keeps its one question per daemon as the door. Picking a daemon opens that daemon's whole set, and one answered set counts as one practice for the shadow. The boss it names is the next daemon offered. This stands unless you flip it.",
+   "why": "The perceptual shadow (bars-engine #326) already asks one question per daemon from your earlier note. The richer sets were sent to that thread to build on its own branch."
+  },
+  {
+   "id": "dq-npc",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "Daemon questions",
+   "auto": true,
+   "pos": "An NPC made from a player's blockage wears its daemon's warp and speaks from that daemon's set. Its boss answer names who it defers to, which is the next NPC the player meets. For the Chapter 1 demo, the Player's question \"How does the other daemons get in your way?\", answered at the start, picks which daemons appear and in what order. This stands unless you flip it.",
+   "why": "Your north star: NPC generation based on player blockages, for a gamified Chapter 1. The warp table is bars-engine #328; council/daemons/QUESTIONS.md lays out the story use."
+  },
+  {
+   "id": "ea11-one-spread",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "Every class uses the same eleven numbers, arranged its own way: gate thresholds 0, 0, 1, 1, 2, 2, 3, 4 and operation prices 0, 2, 3. So every class has one signature operation, two free grips and one dearest cell, and the engine rejects a profile off the spread. Type 5's published numbers are withdrawn and re-laid. This stands unless you flip it.",
+   "why": "Nine classes now cost the same in total, so no class is a harder life than another; what differs is where it is hard. Source: 04 Quests/Emotional Alchemy Game/spec/EA-11_CLASS_PROFILE_METHOD_SIX_FACES.md §7, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea12-eight-moves",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "Each class carries eight named moves, one at each gate. It starts with two and unlocks six by running basic encounters until each gate's threshold is met. An authored move changes a trigger, adds an effect the grid has no verb for, or edits the preconditions of your own moves. It never re-prices a cell, restates a derived cell or fires without a trigger in the fiction. 72 authored moves sit beside the 200 derived cards. This stands unless you flip it.",
+   "why": "Your words of 2026-09-15 called two free moves too thin to be a class, and this is the shape you asked for. Source: 04 Quests/Emotional Alchemy Game/spec/EA-12_CLASS_MOVES_SIX_FACES.md §7, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea13a-two-eights",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "The game's eight taiji gates and the book's eight daemon Gates are unrelated, and the class text says so in one sentence. A class move is written for its gate and never names which daemon it meets. Where the book's Fear lives in the game is left for the channel pass. This stands unless you flip it.",
+   "why": "In the game, the book's eight Gates are five retainers, a load meter, the Player, and Fear, which has no home yet. A one-to-one map would fix in place what the game derives per player. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13a_THE_TWO_EIGHTS_SIX_FACES.md §5, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea13b-ke-release",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "A class move acts on a ke edge only by releasing grip, naming the direction first, and on a sheng edge by transition. 'Move across the ke cycle' is retired from the product's language, and 'hold the tension' is barred as move text. This stands unless you flip it.",
+   "why": "Your 'across' is granted in the one form MECHANISM allows: the player does get to the other side, by letting go. MECHANISM stands unamended. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13b_THE_KE_EDGE_SIX_FACES.md §6, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "ea13c-key-not-transcend",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "emotional alchemy library",
+   "auto": true,
+   "pos": "Grow Up stays the transcend move for everyone. A class move is a key: it makes a gate passable for that class, and the player integrates the poles by running the operation the key opened. Before the key, the class runs its counterfeit at that gate, so the six moves a class earns are the six places it has been faking it. This stands unless you flip it.",
+   "why": "It binds EA-09c's counterfeit, EA-12's unlock and the transcend operation into one sequence a player lives. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13c_TRANSCEND_MOVES_SIX_FACES.md §6, ruled by the faces 2026-09-15, pending you since."
+  },
+  {
+   "id": "sg-romp-four-feet",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "spirit look round 11",
+   "auto": true,
+   "pos": "Every living creature stands on its own four feet on the ground, in a plain standing pose a four-legged rig can walk: no rock or prop under it and nothing held in its paws. Only the highest ally form stands upright. Round 11 rebuilt the otter (long and low on short legs, its jade token now hung from its beads), the kid goat (standing, its bell still at its throat) and the fox (its lifted forepaw is down, because a raised paw breaks the same rule). Each leg is one mirrored chain from shoulder to paw or hip to paw, and the spirit rig in bars-engine #325 skins and walks all three with no bones outside the body. This stands unless you flip it.",
+   "why": "Your words on the otter, 2026-10-14: \"Otters body is all jacked up. The legs point in strange ways ... The rock is also strange ... this will create issues with having it move and rigging and animations etc\". The record already makes the living creature the animal and only the highest ally form humanoid (sg-holo-stages, round 8's wanderer outfit). Proof page https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85 version 14."
+  },
+  {
+   "id": "dg-six-movements",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "Daemon gestures",
+   "auto": true,
+   "pos": "Each daemon's body holds one of Ruella Frank's six fundamental movements stuck in its protective form: Protector push (a stop: both palms out, fingers up, braced into the push), Controller grasp (fists drawn to the chest, rigid and tall), Skeptic pull (drawn back and turned aside, weight on the back knee), Fixer reach (pitched forward, both arms out), Victim yield collapsed (sunk into the knees, head hung), Damaged Self release refused (curled round its own middle), Emotional Body release too soon (arms flung wide, head back). The Player stands soft and open with all six available. Integration in play is the held movement completing, animated in a later round. This stands unless you flip it.",
+   "why": "Your note of 2026-10-14: the first poses were subtle nods; build a gestural language on the six movements, with the daemons protecting the vulnerable child until they are renegotiated. Sheets in /mnt/project-files/3d-build/npc-gesture-2026-10-14/; code on bars-engine #328; record in council/daemons/GESTURES.md."
   }
  ],
  "questions": [
@@ -13597,6 +13935,87 @@
      "v": "later",
      "label": "Decide after play",
      "c": "Stays one-sided until you have played the shadow on your phone."
+    }
+   ]
+  },
+  {
+   "id": "uw-ea-library",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "unfinished work 1",
+   "q": "The Emotional Alchemy move library has had five rulings waiting for your yes since September 16. Bring it back, defer it, or fold it into the cave? The council recommends deferring for a month.",
+   "why_you": "The cap of three game projects is your ruling, and whether this game outranks one inside it is your priority. The faces split: the Shaman wants it back now, the Regent holds it to the cap.",
+   "not_before": "It was raised in chat on 2026-09-16, before the board was the one place you rule, and it never reached the board.",
+   "research": {
+    "title": "Where the move library stopped",
+    "lead": "On 2026-09-16 you ruled each class gets eight moves of its own, one at each grip: start with two, earn six. The last summary called a class move a key: 'So the 6 moves you earn are the 6 places you've been faking it. That's the whole game, actually.'",
+    "sections": [
+     {
+      "h": "Waiting",
+      "p": "Five rulings (EA-11 the numbers, EA-12 eight moves per class, EA-13a/b/c the two eights, the ke edge, transcend moves), two interview answers, then a spec, research and 72 authored moves. EA-12 still reads 'ruled by the faces, pending Wendell'."
+     },
+     {
+      "h": "The cap",
+      "p": "st-cap-games-only counts the Big Mind cave, Root, the Sprout slice and the Cave of Lessons. This card game would be a fourth."
+     }
+    ],
+    "recommend": "The council's recommendation, not your ruling: defer for a month, so it returns with what changed."
+   },
+   "options": [
+    {
+     "v": "now",
+     "label": "Bring the five rulings to the board now",
+     "c": "Five rows appear for you to flip, and the library becomes a fourth game project unless you name one that waits."
+    },
+    {
+     "v": "defer",
+     "label": "Defer for a month (recommended)",
+     "c": "Nothing moves until 2026-11-14, and the spaced deferral brings it back with what changed."
+    },
+    {
+     "v": "fold",
+     "label": "Fold the class moves into the cave",
+     "c": "The Big Mind cave's chambers take up the idea of a class move as a key at the place a player has been faking it. The card game's spec stays where it is."
+    }
+   ]
+  },
+  {
+   "id": "ea-cap-which-waits",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "emotional alchemy library",
+   "q": "You brought the move library back now, which makes it a fourth game beside your cap of three. Which waits, or does the cap rise to four?",
+   "why_you": "The cap of three is your ruling (st-cap-games-only), and which game gives way is your priority.",
+   "not_before": "The move library question offered 'now' with the note that it becomes a fourth unless you name one that waits. You picked now without naming one.",
+   "options": [
+    {
+     "v": "four",
+     "label": "Raise the cap to four",
+     "c": "All four game projects and the move library run; each gets fewer threads."
+    },
+    {
+     "v": "cave-of-lessons",
+     "label": "The Cave of Lessons waits",
+     "c": "Its phone play and fixes pause; the WAVE room and Big Mind cave keep going."
+    },
+    {
+     "v": "root",
+     "label": "Root waits",
+     "c": "Root's phone test and the five friends pause."
+    },
+    {
+     "v": "sprout",
+     "label": "The Sprout slice waits",
+     "c": "The wave battle, spirit generator and Skilled Helper campaign pause."
+    },
+    {
+     "v": "library-slow",
+     "label": "The library runs only on the board",
+     "c": "Its rulings and questions go on the board, and no thread builds it until another game finishes."
     }
    ]
   }
@@ -22595,6 +23014,364 @@
      "challenger"
     ],
     "pass": "jev asset"
+   },
+   "el-mapping": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:18:50.737Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "Element settings"
+   },
+   "el-water-interior": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:18:58.040Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "Element settings"
+   },
+   "el-skeleton": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:04.558Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "Element settings"
+   },
+   "el-demo-scope": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:09.189Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "Element settings"
+   },
+   "el-first-setting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:13.490Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "Element settings"
+   },
+   "uw-list-corrected": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:19.912Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-board-before-sweep": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:24.015Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-email-steps": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:24.949Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-upload-limit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:32.954Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-backlog-dupes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:41.436Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-skill-dedupe": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:47.837Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-jev-to-sheet": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:53.456Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-podcast-ticks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:19:58.407Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-pushhands-repair-later": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:01.741Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-sprout-current": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:04.641Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-anastasia-as-is": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:08.125Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "uw-flirtcraft-step7": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:11.634Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "jev-pile2-result": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:17.478Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-pile2-borderline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:20:23.484Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "jev asset"
+   },
+   "dq-home": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:25:53.580Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-boss-chain": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:01.903Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-protector-chamber": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:10.803Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-shadow": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:23.572Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "Daemon questions"
+   },
+   "dq-npc": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:32.507Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "Daemon questions"
+   },
+   "ea11-one-spread": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:38.923Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea12-eight-moves": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:26:46.341Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea13a-two-eights": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:27:02.799Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "steer": "They aren’t unrelated. I’ve been putting off integrating them",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea13b-ke-release": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:27:12.066Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "ea13c-key-not-transcend": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:27:18.015Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "emotional alchemy library"
+   },
+   "sg-romp-four-feet": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:38:23.300Z",
+    "record": "council/ledger/2026-10-14-pull-233823.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "spirit look round 11"
    }
   },
   "questions": {
@@ -24737,6 +25514,31 @@
      "shaman"
     ],
     "pass": "perceptual shadow"
+   },
+   "uw-ea-library": {
+    "decision": "now",
+    "label": "Bring the five rulings to the board now",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:18:37.781Z",
+    "record": "council/ledger/2026-10-14-pull-232023.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "unfinished work 1"
+   },
+   "ea-cap-which-waits": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-14",
+    "saved_at": "2026-10-14T23:25:46.499Z",
+    "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
+    "steer": "The move library is something all the games use so we can choose which games have the best fit (sprout and cave of lessons fit)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "emotional alchemy library"
    }
   },
   "causes": {
