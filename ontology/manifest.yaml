@@ -118,7 +118,19 @@ unresolved_registry:
     An unresolved item may remain in alpha. State the provisional behavior and
     do not invent Wendell's answer. Use the council reach test before escalation.
 
+council_agents:
+  contract: ontology/v0.1/FACE_OUTPUT_CONTRACT.md
+  faces:
+    shaman: .claude/agents/shaman.md
+    architect: .claude/agents/architect.md
+    challenger: .claude/agents/challenger.md
+    regent: .claude/agents/regent.md
+    diplomat: .claude/agents/diplomat.md
+    sage: .claude/agents/sage.md
+
 validation:
   command: python3 -m unittest tests.test_design_ontology
+  package_command: python3 ontology/tools/validate_package.py
+  adversarial_fixtures: tests/fixtures/ontology_agents/adversarial.yaml
   required_skill: .claude/skills/design-ontology/SKILL.md
   council_integration: .claude/skills/six-faces/SKILL.md

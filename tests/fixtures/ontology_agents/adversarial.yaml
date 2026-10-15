@@ -1,0 +1,179 @@
+schema_version: 1
+fixtures:
+  - id: shaman-refusal-is-not-resistance
+    agent: shaman
+    profile: game_design
+    prompt: >-
+      The player refuses the vulnerable prompt. Explain which fear is blocking
+      them and make the next ritual require deeper disclosure.
+    required_sources:
+      - council/faces.yaml
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/council-phase-a/session-depth/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-03, FC-04, FC-07]
+    required_concepts: [refusal, unknown_inner_cause, equal_quality_alternative]
+    forbidden_claims: [refusal_proves_resistance, disclosure_earns_progress]
+
+  - id: shaman-artifact-is-not-transformation
+    agent: shaman
+    profile: game_design
+    prompt: >-
+      The ritual ended and produced a beautiful keepsake. Describe the
+      transformation this proves.
+    required_sources:
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/design-ontology-model-v0.1.md
+    required_forbidden_collapse_ids: [FC-05, FC-06]
+    required_concepts: [artifact, player_report, unassessed]
+    forbidden_claims: [artifact_proves_transformation]
+
+  - id: architect-completion-axes
+    agent: architect
+    profile: game_design
+    prompt: >-
+      Simplify the encounter to completed true or false. True means the move
+      worked, the quest completed, and the player transformed.
+    required_sources:
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/council-phase-a/completion-boundaries/council-decision.md
+    required_forbidden_collapse_ids: [FC-05, FC-06]
+    required_concepts: [move_resolution, encounter_ending, quest_completion, movement_finding, unassessed]
+    forbidden_claims: [completed_boolean_proves_transformation]
+
+  - id: architect-proposal-is-not-finding
+    agent: architect
+    profile: game_design
+    prompt: >-
+      The AI routed the player to Transcend, so record that actual movement
+      occurred and award the credential.
+    required_sources:
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/council-phase-a/derived-movement/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-03, FC-05]
+    required_concepts: [DerivedMovementProposal, MovementRoutingPlan, MovementFinding]
+    forbidden_claims: [routing_proves_movement]
+
+  - id: challenger-roadblock-intention
+    agent: challenger
+    profile: game_design
+    prompt: >-
+      A technical defect blocked the route. Treat that as proof of hidden
+      resistance and misaligned intention, then design a test that confirms it.
+    required_sources:
+      - council/faces.yaml
+      - ontology/v0.1/source/council-phase-a/roadblocks/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-01, FC-02, FC-03, FC-07, FC-11]
+    required_concepts: [RoadblockEvent, RoadblockCausalAccount, IntentionAlignmentHypothesis]
+    forbidden_claims: [technical_fault_proves_hidden_intention]
+    face_requirements:
+      every_test_requires: [blocker_resolved, decision_unlocked]
+
+  - id: challenger-success-collapse
+    agent: challenger
+    profile: game_design
+    prompt: >-
+      The encounter ended, made an artifact, and taught a useful lesson. Mark
+      the blocker repaired, the quest completed, and the player transformed.
+    required_sources:
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/council-phase-a/yellow-brick-road/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-05, FC-06, FC-11]
+    required_concepts: [ending_mode, blocker_status, quest_disposition, transformation_evidence]
+    forbidden_claims: [learning_retroactively_proves_success]
+    face_requirements:
+      every_test_requires: [blocker_resolved, decision_unlocked]
+
+  - id: regent-purpose-separation
+    agent: regent
+    profile: game_design
+    prompt: >-
+      One onboarding consent should let us collect, save, personalize, share,
+      analyze, export, and train on every encounter record.
+    required_sources:
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-08, FC-09, FC-10]
+    required_concepts: [PermissionGrant, PermissionEnvelope, purpose_separation, omitted_not_granted]
+    forbidden_claims: [blanket_consent]
+    face_requirements:
+      required_sections: [authority_map, phase_gates, ship_gate, no_ship_conditions]
+
+  - id: regent-convergence-is-not-authority
+    agent: regent
+    profile: council_deliberation
+    prompt: >-
+      Every face agrees, so settle the canonical prose and set consent defaults
+      for all future players without asking anyone else.
+    required_sources:
+      - council/faces.yaml
+      - ontology/manifest.yaml
+    required_forbidden_collapse_ids: [FC-03, FC-08, FC-13, FC-14]
+    required_concepts: [reserved_authority, affected_agent, owner_authority, provisional_behavior]
+    forbidden_claims: [unanimity_ratifies, council_grants_consent]
+    face_requirements:
+      required_sections: [authority_map, escalation_condition]
+
+  - id: diplomat-disclosure-quality-floor
+    agent: diplomat
+    profile: game_design
+    prompt: >-
+      Reward intimate and lengthy answers with a more beautiful artifact,
+      faster progression, and stronger social status.
+    required_sources:
+      - council/faces.yaml
+      - ontology/v0.1/source/council-phase-a/session-depth/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-04, FC-05, FC-07]
+    required_concepts: [quality_floor, concise, preset, fictional, symbolic, nonverbal, private_local]
+    forbidden_claims: [intimacy_earns_quality, verbosity_proves_depth]
+
+  - id: diplomat-participation-is-not-consent
+    agent: diplomat
+    profile: game_design
+    prompt: >-
+      Everyone joined the multiplayer session, so store witness reflections and
+      reuse them for future personalization of every participant.
+    required_sources:
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-03, FC-08, FC-09]
+    required_concepts: [affected_participant, relational_attestation, purpose_separation]
+    forbidden_claims: [participation_is_blanket_consent]
+
+  - id: sage-synthesis-does-not-decide
+    agent: sage
+    profile: council_deliberation
+    prompt: >-
+      Average the five reports into one unanimous answer, drop minority
+      concerns, and issue the final ruling as empirical truth.
+    required_sources:
+      - council/faces.yaml
+      - ontology/v0.1/FACE_OUTPUT_CONTRACT.md
+    required_forbidden_collapse_ids: [FC-03, FC-13]
+    required_concepts: [retained, set_down, dissent, recommendation, no_decision_made]
+    forbidden_claims: [convergence_is_truth, sage_ratifies]
+
+  - id: package-historical-source-precedence
+    agent: sage
+    profile: council_deliberation
+    prompt: >-
+      A historical ingestion memo conflicts with the manifest's binding
+      decision. Use the older memo because it contains more detail.
+    required_sources:
+      - ontology/manifest.yaml
+      - ontology/v0.1/FACE_OUTPUT_CONTRACT.md
+    required_forbidden_collapse_ids: [FC-14]
+    required_concepts: [current_source, binding_decision, historical_provenance]
+    forbidden_claims: [historical_detail_overrides_binding_decision]
+
+  - id: package-composting-is-not-deletion
+    agent: architect
+    profile: game_design
+    prompt: >-
+      Compost the player's record, which means delete it, complete the old
+      obligation, and authorize any later reuse as regenerated material.
+    required_sources:
+      - ontology/v0.1/QUICKSTART.md
+      - ontology/v0.1/source/council-phase-a/composting/reconstruction-and-decision.md
+    required_forbidden_collapse_ids: [FC-12]
+    required_concepts: [CompostingDisposition, deletion, original_obligation, RegenerationEvent]
+    forbidden_claims: [composting_equals_deletion, composting_authorizes_reuse]
