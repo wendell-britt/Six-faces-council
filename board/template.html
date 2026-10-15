@@ -143,6 +143,17 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-later-note{font-size:.85rem;color:var(--warn);margin:0}
 /* Due dates (Wendell, 2026-10-06): every step has a deadline, so a step that slips shows up as charge to work with. */
 .st-due-over{color:var(--warn);font-weight:600}
+/* Files to review on a step (Wendell, 2026-10-14, blocker on anastasia-campaign-live-01: "If I Can click the file see
+   whats going on and update the notes that would get me unblocked"). The draft sits in the card, open, with its own notes. */
+.st-files{display:grid;gap:8px}
+.st-file{border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:var(--panel)}
+.st-file > summary{font-weight:600;color:var(--fg)!important;min-height:32px;display:flex;align-items:center;gap:8px}
+.st-file-kind{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:400}
+.st-file-text{white-space:pre-wrap;overflow-wrap:anywhere;max-height:60vh;overflow:auto;background:var(--accent-soft);border-radius:4px;padding:10px 12px;margin:6px 0;font-size:.93rem;line-height:1.5;color:var(--fg)}
+.st-file img{max-width:100%;height:auto;border-radius:4px;margin:6px 0;display:block}
+.st-file-cap{font-size:.85rem;color:var(--muted);margin:4px 0}
+.st-file-bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0}
+.st-file label{font-size:.85rem;color:var(--muted);display:block;margin-top:6px}
 .st-charge{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem;margin:0}
 .st-move{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}
 .st-move input{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
@@ -259,6 +270,12 @@ body.has-send{padding-bottom:120px}
 .mo-pick{font:inherit;font-size:.88rem;padding:5px 14px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
 .mo-pick[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
 .mo-pick:disabled{opacity:.45;cursor:not-allowed}
+/* Lenses panel (lens-board-reads-goals, 2026-10-14): his active Lens goals by domain, empty domains shown as empty. */
+.mo-lens{display:grid;grid-template-columns:minmax(7.5rem,max-content) 1fr;gap:6px 14px;padding:4px 0 12px}
+.mo-lens dt{font-weight:600}
+.mo-lens dd{margin:0;overflow-wrap:anywhere}
+.mo-lens dd.none{color:var(--muted)}
+.mo-lens ul{margin:0;padding-left:1.1em}
 /* Tap the Vein on the board (2026-10-14, Wendell: "so that I can do the tap the vein directly from the environemnt where
    I'll be using that information"). The free write stays in this browser; only lines he marks are saved (mm-raw). */
 .ttv-write{width:100%;min-height:10em}
@@ -293,6 +310,12 @@ body.has-send{padding-bottom:120px}
 .bk-log li{margin:2px 0}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .bk-past{font-size:.85rem;color:var(--muted);margin:0}
+/* Tap the Vein first (ttv-first, Wendell 2026-10-14): until today's is sealed, done in bars-engine or skipped, the board
+   opens on the Morning tab and holds the other tabs. */
+.ttv-gate{display:none;border:1px solid var(--accent);border-radius:8px;padding:12px 14px;margin:12px 0}
+body.ttv-held .ttv-gate{display:block}
+body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
+.ttv-gate .ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 </style>
 
 <h1>Council Board</h1>
@@ -307,6 +330,10 @@ body.has-send{padding-bottom:120px}
   <button class="tab" role="tab" id="tab-resolved" aria-selected="false" aria-controls="view-resolved">Resolved<b id="n-resolved">0</b></button>
 </div>
 <div class="banner" id="banner">This view cannot save. Your choices stay on screen only.</div>
+<div class="ttv-gate" id="ttv-gate" role="region" aria-label="Tap the Vein first">
+  <p class="lede" style="margin:0"><b>Tap the Vein comes first today.</b> Seal it in the box below and the rest of the board opens. The next board read takes in what you sealed.</p>
+  <div class="ctl"><button type="button" id="ttv-recheck" hidden>Check bars-engine again</button><button type="button" id="ttv-skip">Skip today</button><span class="state" id="ttv-gate-state"></span></div>
+</div>
 
 <section id="view-open" role="tabpanel" aria-labelledby="tab-open">
   <div id="bt-map" class="bt-map" hidden></div>
@@ -327,12 +354,18 @@ body.has-send{padding-bottom:120px}
 <section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
   <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
   <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
-  <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">Write, keep your lines, seal</span></summary>
-    <p class="lede">Write whatever is here this morning. The free write stays in this browser and is never saved to the board. Then find your lines: mark the ones to do, and the ones in your own words worth keeping as BARs for the corpus. Seal, and only the marked lines leave this box.</p>
+  <details class="mo-cat" id="mo-lenses" open hidden><summary><b>Your Lens goals</b><span id="mo-lenses-sum"></span></summary>
+    <dl class="mo-lens" id="mo-lens-list"></dl>
+  </details>
+  <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">List what you can do, write, seal</span></summary>
+    <p class="lede"><label for="ttv-can">Everything you can do today, one per line.</label> The next board read gives each one a written line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches for you to keep (lens-intake-align).</p>
+    <textarea id="ttv-can" class="ttv-write" rows="6" placeholder="One thing per line"></textarea>
+    <p class="lede">Then write whatever is here this morning, if you like. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
+    <div class="ttv-lens" id="ttv-lens" hidden><p class="lede"><label>Lens with no goals yet: <select id="ttv-lens-pick"></select></label> <span id="ttv-lens-prompt"></span> If you write toward it, the board read also pitches year goals for it from your words, and each one you keep becomes an active goal in bars-engine (lens-pitch-goals).</p></div>
     <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
     <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines</button><div class="state" id="ttv-state"></div></div>
     <div id="ttv-lines"></div>
-    <div class="ctl" id="ttv-seal-row" hidden><button class="save" id="ttv-seal" type="button">Seal the menu</button><div class="state" id="ttv-count"></div></div>
+    <div class="ctl" id="ttv-seal-row"><button class="save" id="ttv-seal" type="button">Seal the menu</button><div class="state" id="ttv-count"></div></div>
   </details>
   <details class="mo-cat mo-paste" id="mo-paste"><summary><b>Or paste this morning's menu</b><span id="mo-paste-sum">From Tap the Vein's Copy the sealed menu button</span></summary>
     <p class="lede">If the council could not fetch your menu, paste it here. Your kept lines show as soon as you save. Only the sealed menu is read; your free write never leaves Tap the Vein.</p>
@@ -412,6 +445,16 @@ body.has-send{padding-bottom:120px}
         <div class="bt-hp">turns <div class="bt-bar"><i id="bt-turns"></i></div><span id="bt-turnn"></span></div></div>
     </div>
     <div class="bt-box" id="bt-box" aria-live="polite"></div>
+  </div>
+</div>
+
+<div class="bt-screen" id="ttv-wave" role="dialog" aria-modal="true" aria-labelledby="ttv-wave-title">
+  <div class="bt-stage">
+    <b id="ttv-wave-title" style="font-family:var(--display);font-size:1.1rem">Something is in the way of Tap the Vein</b>
+    <div class="bt-box"><p class="bt-say" id="ttv-wave-say"></p>
+      <p class="bt-sub">The WAVE room meets it as a charge: Welcome, Witness, Acknowledge, Allow, Validate, then the 3-2-1 if it stays. It opens in a new tab.</p>
+      <div class="bt-row"><a class="save" id="ttv-wave-go" target="_blank" rel="noopener" href="#">Go into the WAVE room</a><button type="button" class="bt-link" id="ttv-wave-here">Work it here on the board instead</button></div>
+      <div class="bt-row"><span></span><button type="button" class="bt-link" id="ttv-wave-close">Not now</button></div></div>
   </div>
 </div>
 
@@ -882,12 +925,12 @@ function bkScale(key, v){
 }
 const bkPicks = (key, list, on, multi) => `<div class="bk-picks" role="group">${list.map(x => { const [v, l, hint] = Array.isArray(x) ? x : [x, x];
   return `<button type="button" data-bk="${multi ? 'multi' : 'pick'}" data-k="${key}" data-v="${esc(v)}" aria-pressed="${multi ? (on || []).includes(v) : on === v}"${hint ? ` title="${esc(hint)}"` : ''}>${esc(l)}</button>`; }).join('')}</div>`;
-function openBlocker(id){
-  const s = stSteps[id]; if (!s) return;
+function openBlocker(id, step){
+  const s = step || stSteps[id]; if (!s) return;
   const at = new Date().toISOString(), over = stDaysLeft(s.due);
   bk = {id, stage: 'start', note: '', draft: {}, rec: {engine: 'board-wave', version: 1, step: id, list: s.list || '', task: s.do || '',
     due: s.due || '', overdueDays: over !== null && over < 0 ? -over : 0, startedAt: at, savedAt: at, status: 'open', stage: 'start',
-    charge: {before: null, after: null}, rounds: [], resolution: null},
+    charge: {before: null, after: null}, rounds: [], resolution: null, ...(s.skipStreak ? {skipStreak: s.skipStreak} : {})},
     key: `${id}--${Date.now().toString(36)}`};
   $b('bk-screen').classList.add('on'); document.body.style.overflow = 'hidden';
   bkDraw();
@@ -1012,7 +1055,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeB
 
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
-const stDrafts = {}, stSecrets = {};
+const stDrafts = {}, stSecrets = {}, stFileDrafts = {};
 // Which device Wendell is on. Starts from the screen (a touch screen counts as a phone) and keeps his choice on this device.
 let stWhere = (() => { try { const v = localStorage.getItem('st-where'); if (v === 'phone' || v === 'computer') return v; } catch {} return matchMedia('(pointer: coarse)').matches ? 'phone' : 'computer'; })();
 const stLater = s => stWhere === 'phone' && s.device === 'computer' && !s.done && !s.retired;
@@ -1047,7 +1090,32 @@ function stPeek(s, over){
   if (s.device === 'computer' && !s.done) bits.push('Computer');
   if (s.optional) bits.push('Optional');
   if (s.note) bits.push('Has a note');
+  const nf = stFiles(s).length;
+  if (nf) bits.push(`${nf} to review`);
   return bits.join(' · ');
+}
+/* A step's files: [{id, title, kind: text|image|link, text, src, href, caption}], written by the session that publishes
+   the step. Text shows in full, an image shows inline, a link opens. Each has a notes box that saves to fileNotes.<id>
+   on the step, which pull.py records and lists as needs work, the same as a step note. */
+const stFileId = f => String(f && f.id || '').replace(/[^A-Za-z0-9_-]/g, '');
+const stFiles = s => (Array.isArray(s.files) ? s.files : []).filter(f => f && stFileId(f));
+const stImg = u => /^https:\/\//i.test(String(u || '')) || /^data:image\/(png|jpe?g|gif|webp);/i.test(String(u || ''));
+function stFile(id, s, f){
+  const fid = stFileId(f), key = id + '--' + fid, saved = ((s.fileNotes || {})[fid] || {});
+  const kind = f.kind || (f.text ? 'text' : f.src ? 'image' : 'link');
+  let body = '';
+  if (kind === 'text') body = `<div class="st-file-text" id="sf-${key}">${esc(f.text || '')}</div><div class="st-file-bar"><button type="button" class="st-btn" data-copy="sf-${key}">Copy</button></div>`;
+  else if (kind === 'image' && stImg(f.src)) body = `<img src="${esc(f.src)}" alt="${esc(f.title || 'Attached image')}" loading="lazy">`;
+  if (stHref(f.href)) body += `<div class="st-file-bar"><a class="st-btn" href="${esc(f.href)}" target="_blank" rel="noopener">${esc(kind === 'link' ? 'Open it' : 'Open the full file')}</a></div>`;
+  const cap = f.caption ? `<p class="st-file-cap">${esc(f.caption)}</p>` : '';
+  return `<details class="st-file" data-group="sf-${key}"${stOpenGroups.has('sfc-' + key) ? '' : ' open'}>
+    <summary>${esc(f.title || 'Attached file')} <span class="st-file-kind">${esc(kind)}</span></summary>
+    ${cap}${body}
+    ${saved.text ? `<div class="st-note">Your notes: ${esc(saved.text)}</div>` : ''}
+    <label for="sfn-${key}">Your notes on this</label>
+    <textarea id="sfn-${key}" placeholder="What to change, cut or keep. Claude reads it.">${esc(stFileDrafts[key] ?? saved.text ?? '')}</textarea>
+    <button type="button" class="st-btn" data-fnote="${id}" data-fid="${fid}">Save notes</button> <span class="st-state" id="sfs-${key}"></span>
+  </details>`;
 }
 function stStep(id, s){
   if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
@@ -1055,6 +1123,7 @@ function stStep(id, s){
   const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}${stHref(s.href2) ? `<br><a href="${esc(s.href2)}" target="_blank" rel="noopener">${esc(s.where2 || 'Then open this')}</a>` : ''}</div></div>` : '';
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
   const gen = s.generate ? `<div class="st-row"><span>Secret</span><div class="st-val"><button type="button" class="st-btn st-solid" data-gen="${id}" data-len="${Number(s.generate)||48}">Make a new secret</button><code id="sg-${id}" ${stSecrets[id]?'':'hidden'}>${esc(stSecrets[id]||'')}</code><button type="button" class="st-btn" data-copy="sg-${id}" id="sgc-${id}" ${stSecrets[id]?'':'hidden'}>Copy</button></div></div><p class="st-src">It is made on this device and never saved anywhere. Paste it straight in, and make a new one if you lose it.</p>` : '';
+  const files = stFiles(s).length ? `<div class="st-files">${stFiles(s).map(f => stFile(id, s, f)).join('')}</div>` : '';
   const check = s.check ? `<div class="st-row"><span>Check</span><div class="st-val">${esc(s.check)}</div></div>` : '';
   const over = stOverdue(s);
   const due = s.due && !s.done ? `<div class="st-row"><span>Due</span><div class="st-val${over ? ' st-due-over' : ''}">${esc(stDueText(s.due))}</div></div>` : '';
@@ -1072,7 +1141,7 @@ function stStep(id, s){
       <details class="st-fold" data-group="s-${id}"${stOpenGroups.has('s-' + id) ? ' open' : ''}>
       <summary><span class="st-do">${esc(s.do)}</span><span class="st-peek">${stPeek(s, over)}</span></summary>
       <div class="st-more">
-      ${where}${enter}${gen}${check}${due}${charge}${past}
+      ${files}${where}${enter}${gen}${check}${due}${charge}${past}
       <div class="st-chips">${chips.join('')}</div>
       ${s.note ? `<div class="st-note">Your note: ${esc(s.note)}</div>` : ''}
       <details${over ? ' open' : ''}><summary>Stuck, or something looks different?</summary>
@@ -1131,8 +1200,16 @@ function stSecret(len){
 }
 const stepsView = document.getElementById('view-steps');
 // Remember which Completed groups are open, since every save redraws the tab.
-stepsView.addEventListener('toggle', e => { const g = e.target.dataset && e.target.dataset.group; if (!g) return; if (e.target.open) stOpenGroups.add(g); else stOpenGroups.delete(g); }, true);
-stepsView.addEventListener('input', e => { if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value; });
+stepsView.addEventListener('toggle', e => {
+  const g = e.target.dataset && e.target.dataset.group; if (!g) return;
+  // A file opens by default, so what is kept is that he closed it.
+  if (g.startsWith('sf-')){ const c = 'sfc-' + g.slice(3); if (e.target.open) stOpenGroups.delete(c); else stOpenGroups.add(c); return; }
+  if (e.target.open) stOpenGroups.add(g); else stOpenGroups.delete(g);
+}, true);
+stepsView.addEventListener('input', e => {
+  if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value;
+  if (e.target.id && e.target.id.startsWith('sfn-')) stFileDrafts[e.target.id.slice(4)] = e.target.value;
+});
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.where){
@@ -1168,6 +1245,15 @@ stepsView.addEventListener('click', async e => {
     const moved = [...(s.moved || []), {from: s.due || null, to: v, at: new Date().toISOString()}];
     try { await db.doc('steps/' + id).update({due: v, moved}); st.textContent = 'Date moved. Claude reads it.'; }
     catch (err){ st.textContent = 'Could not move the date (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (t.dataset.fnote){
+    const id = t.dataset.fnote, fid = t.dataset.fid, key = id + '--' + fid, st = document.getElementById('sfs-' + key), s = stSteps[id];
+    const text = (document.getElementById('sfn-' + key).value || '').trim();
+    if (!db || !s){ st.textContent = 'Not saved in this view.'; return; }
+    const fileNotes = {...(s.fileNotes || {}), [fid]: {text, at: new Date().toISOString()}};
+    try { await db.doc('steps/' + id).update({fileNotes}); delete stFileDrafts[key]; st.textContent = 'Saved. Claude reads it.'; }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
     return;
   }
   if (t.dataset.note){
@@ -1344,7 +1430,7 @@ function pendingSaves(){
     if (!d.removed && !moRecorded.has(id) && after(d.savedAt)) out.push('picks/' + id);
   }
   for (const id of Object.keys(stSteps)){
-    const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at)].filter(Boolean).sort().pop();
+    const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at), ...Object.values(s.fileNotes || {}).map(n => n && n.at)].filter(Boolean).sort().pop();
     if (t && t > PICKUP_SINCE && after(t)) out.push('steps/' + id);
   }
   // A run of the blocker panel counts once it is saved, finished or not, so a run left half way still reaches Claude.
@@ -1411,10 +1497,15 @@ function moParse(text){
   if (!m || !Array.isArray(m.items)) throw new Error('This is not a sealed menu: it has no items.');
   return m;
 }
+/* lens-intake-align: the board read's written line for each intake item (council/intake_align.py), by menu item id. */
+let moWritten = {};
 function moMenuItems(m){
+  const I = DATA.intake;
+  moWritten = (I && I.date === m.sessionDate) ? Object.fromEntries((I.items || []).map(x => [x.id, x.bridge])) : {};
   return m.items.map((it, i) => { const g = it.status === 'bridged' ? it.goal : null;
-    return {id: 'menu-' + (it.key || i), text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task'}[it.source] || ''),
-      bridge: g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
+    const id = 'menu-' + (it.key || i), w = moWritten[id];
+    return {id, text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task', can_do: 'Can do today'}[it.source] || ''),
+      bridge: w ? w : g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
     .sort((a, b) => (a.bridge.kind === 'unaligned') - (b.bridge.kind === 'unaligned'));
 }
 function moApplyPaste(){
@@ -1423,7 +1514,7 @@ function moApplyPaste(){
   let m; try { m = moParse(moPaste.menu); } catch { MO = base || null; return; }
   const goals = (m.goals && m.goals.length) ? m.goals : Object.values(Object.fromEntries(m.items.filter(i => i.goal).map(i => [i.goal.id, {id: i.goal.id, title: i.goal.title, domain: i.goal.domain, cadence: i.goal.cadence}])));
   const cat = {key: 'menu', title: 'From your free write', blurb: 'The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).', items: moMenuItems(m)};
-  MO = {date: m.sessionDate || (base && base.date), pick_limit: 7, goals: (base && base.goals && base.goals.length) ? base.goals : goals,
+  MO = {date: m.sessionDate || (base && base.date), pick_limit: 7, goals: (base && base.goals && base.goals.length) ? base.goals : goals, lenses: base && base.lenses,
         categories: [cat, ...((base && base.categories) || []).filter(c => c.key !== 'menu')]};
 }
 const moRecorded = new Set((DATA.picks || []).map(p => p.id));
@@ -1434,6 +1525,10 @@ const moGoal = id => ((MO && MO.goals) || []).find(g => g.id === id);
 const moPicked = id => (moLive[id] && !moLive[id].removed) || moRecorded.has(id);
 function moBridgeText(b){
   if (!b) return '';
+  const why = b.why ? ' ' + esc(b.why) : '';
+  if (b.kind === 'goal') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.${why}`;
+  if (b.kind === 'row') return `Advances <b>${esc(b.rowTitle || b.rowId)}</b> on the board.${why}`;
+  if (b.kind === 'pitch') return `Pitched: a new ${esc(b.cadence || 'year')} goal, <b>${esc(b.title)}</b>, ${b.parentTitle ? 'under <b>' + esc(b.parentTitle) + '</b>' : 'in ' + esc(b.domain || 'a Lens domain')}. Keep or drop it on the Open tab.${why}`;
   if (b.kind === 'named') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
   if (b.kind === 'existing') return `Suggested: serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
   if (b.kind === 'new') return `Suggested: a new ${esc(b.cadence || 'week')} goal, <b>${esc(b.title)}</b>, under <b>${esc(b.parentTitle || (moGoal(b.parentId) || {}).title || 'a year goal')}</b>.`;
@@ -1459,9 +1554,38 @@ function moItem(it, cat, full){
       <button type="button" class="mo-pick" aria-pressed="${picked}"${rec||full_||!db?' disabled':''}>${rec ? 'Picked, recorded' : picked ? 'Picked' : full_ ? 'Seven picked' : 'Pick'}</button>
     </div></div>`;
 }
+/* The Lenses panel: council/morning.py reads /api/lenses/goals into DATA.morning.lenses (lens-board-reads-goals). */
+function renderLenses(){
+  const L = MO && MO.lenses, box = document.getElementById('mo-lenses');
+  box.hidden = !L;
+  if (!L) return;
+  const n = L.domains.reduce((k, d) => k + d.goals.length, 0);
+  document.getElementById('mo-lenses-sum').textContent = (n ? `${n} active goal${n === 1 ? '' : 's'}` : 'No active goals yet') + (L.note ? ` · ${L.note}` : '');
+  document.getElementById('mo-lens-list').innerHTML = L.domains.map(d => `<dt>${esc(d.label)}</dt>` + (d.goals.length
+    ? `<dd><ul>${d.goals.map(g => `<li>${esc(g.title)}${g.cadence ? ' (' + esc(g.cadence) + ')' : ''}</li>`).join('')}</ul></dd>`
+    : '<dd class="none">No goals here yet</dd>')).join('');
+}
+/* An empty domain's prompt in the Tap the Vein box (lens-pitch-goals, 2026-10-14). One domain a morning, by date;
+   he can pick another. Sealing saves the domain with the free write so the board read pitches goals for it. */
+function renderTtvLens(){
+  const L = MO && MO.lenses, box = document.getElementById('ttv-lens'), pick = document.getElementById('ttv-lens-pick');
+  const empty = L ? L.domains.filter(d => !d.goals.length) : [];
+  box.hidden = !empty.length;
+  if (!empty.length) return;
+  const keys = empty.map(d => d.key).join(',');
+  if (pick.dataset.keys !== keys){
+    const day = Math.floor(Date.parse(new Date().toLocaleDateString('en-CA')) / 864e5);
+    pick.innerHTML = empty.map(d => `<option value="${esc(d.key)}">${esc(d.label)}</option>`).join('') + '<option value="">None today</option>';
+    pick.value = empty[day % empty.length].key; pick.dataset.keys = keys;
+  }
+  const d = empty.find(x => x.key === pick.value);
+  document.getElementById('ttv-lens-prompt').textContent = d ? d.prompt || '' : '';
+}
+document.getElementById('ttv-lens-pick').addEventListener('change', renderTtvLens);
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
+  renderLenses(); renderTtvLens();
   document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
@@ -1490,35 +1614,42 @@ document.getElementById('mo-paste-save').addEventListener('click', async () => {
     document.getElementById('mo-paste-text').value = ''; moOpen.add('menu'); renderMorning(); }
   catch { st.textContent = 'Not saved. Try again.'; }
 });
-/* Tap the Vein on the board. The free write lives only in localStorage on this device and is cleared at seal; the
-   sealed menu is saved at morning/menu exactly as a pasted one is, so pull.py, morning.py and the Send button need no
-   new path. Lines marked BAR ride in the same doc's `bars` field, and council/ttv_bars.py writes each one, unedited,
-   into the corpus (game-masters-guide corpus/bars). */
+/* Tap the Vein on the board. Until seal the free write lives only in localStorage on this device. The sealed menu is
+   saved at morning/menu exactly as a pasted one is, so pull.py, morning.py and the Send button need no new path. The
+   free write itself is saved at morning/freewrite (ttv-raw-bars, Wendell 2026-10-14: read it once for BARs, then
+   delete it). The next board read summarizes it and pitches BARs as board questions (council/ttv_bars.py pitch),
+   then deletes the doc; the pitches he keeps become corpus BARs (Wendell, 2026-10-14: "I think the tap the being
+   should be read and summarized before bars are chosen"). */
 const TTV_KEY = 'board-ttv-draft';
 let ttvLines = [];
 const ttvToday = () => new Date().toLocaleDateString('en-CA');
 function ttvSplit(text){
   return text.split(/\n+/).flatMap(p => p.match(/[^.!?]+[.!?]*["\u201d')\]]*/g) || []).map(l => l.trim()).filter(l => l.length > 1);
 }
+const TTV_CAN = 'board-ttv-can';
+const ttvCan = () => document.getElementById('ttv-can').value.split('\n').map(l => l.replace(/^\s*(?:[-*\u2022]|\d+[.)])\s*/, '').trim()).filter(l => l.length > 1);
 function ttvRender(){
   const box = document.getElementById('ttv-lines');
-  box.innerHTML = ttvLines.map((l, i) => `<div class="mo-item ttv-line${l.todo || l.bar ? ' kept' : ''}" data-i="${i}">
+  box.innerHTML = ttvLines.map((l, i) => `<div class="mo-item ttv-line${l.todo ? ' kept' : ''}" data-i="${i}">
     <p class="mo-text">${esc(l.text)}</p>
-    <div class="mo-ctl"><button type="button" class="mo-pick" data-k="todo" aria-pressed="${!!l.todo}">To do</button>
-      <button type="button" class="mo-pick" data-k="bar" aria-pressed="${!!l.bar}">Keep as a BAR</button></div></div>`).join('');
-  const todo = ttvLines.filter(l => l.todo).length, bars = ttvLines.filter(l => l.bar).length;
-  document.getElementById('ttv-seal-row').hidden = !ttvLines.length;
-  document.getElementById('ttv-count').textContent = `${todo} to do, ${bars} BAR${bars === 1 ? '' : 's'}`;
-  document.getElementById('ttv-seal').disabled = !db || !(todo || bars);
+    <div class="mo-ctl"><button type="button" class="mo-pick" data-k="todo" aria-pressed="${!!l.todo}">To do</button></div></div>`).join('');
+  const todo = ttvLines.filter(l => l.todo).length, written = !!document.getElementById('ttv-write').value.trim();
+  const can = ttvCan().length;
+  document.getElementById('ttv-count').textContent = `${can} you can do, ${todo} to do from the write`;
+  document.getElementById('ttv-seal').disabled = !db || !(written || can);
 }
 (() => {
   const w = document.getElementById('ttv-write');
   try { const d = JSON.parse(localStorage.getItem(TTV_KEY) || 'null'); if (d && d.text) w.value = d.text; } catch {}
-  w.addEventListener('input', () => { try { localStorage.setItem(TTV_KEY, JSON.stringify({date: ttvToday(), text: w.value})); } catch {} });
+  w.addEventListener('input', () => { ttvRender(); try { localStorage.setItem(TTV_KEY, JSON.stringify({date: ttvToday(), text: w.value})); } catch {} });
+  const c = document.getElementById('ttv-can');
+  try { const d = JSON.parse(localStorage.getItem(TTV_CAN) || 'null'); if (d && d.text) c.value = d.text; } catch {}
+  c.addEventListener('input', () => { ttvRender(); try { localStorage.setItem(TTV_CAN, JSON.stringify({date: ttvToday(), text: c.value})); } catch {} });
+  ttvRender();
 })();
 document.getElementById('ttv-find').addEventListener('click', () => {
   const was = Object.fromEntries(ttvLines.map(l => [l.text, l]));
-  ttvLines = ttvSplit(document.getElementById('ttv-write').value).map(t => was[t] || {text: t, todo: false, bar: false});
+  ttvLines = ttvSplit(document.getElementById('ttv-write').value).map(t => was[t] || {text: t, todo: false});
   document.getElementById('ttv-state').textContent = ttvLines.length ? '' : 'Nothing written yet.';
   ttvRender();
 });
@@ -1528,16 +1659,90 @@ document.getElementById('ttv-lines').addEventListener('click', e => {
 });
 document.getElementById('ttv-seal').addEventListener('click', async () => {
   const st = document.getElementById('ttv-state'), date = ttvToday(), now = new Date().toISOString();
-  const items = ttvLines.filter(l => l.todo).map((l, i) => ({key: `board-${date}-${i + 1}`, text: l.text, source: 'kept_line', status: 'unaligned', goal: null}));
-  const bars = ttvLines.filter(l => l.bar).map(l => l.text);
-  const doc = {menu: JSON.stringify({version: 1, origin: 'board', sessionDate: date, sealedAt: now, items}), sessionDate: date, savedAt: now, bars};
+  const items = ttvCan().map((t, i) => ({key: `board-${date}-c${i + 1}`, text: t, source: 'can_do', status: 'unaligned', goal: null}))
+    .concat(ttvLines.filter(l => l.todo).map((l, i) => ({key: `board-${date}-${i + 1}`, text: l.text, source: 'kept_line', status: 'unaligned', goal: null})));
+  const text = document.getElementById('ttv-write').value.trim();
+  const doc = {menu: JSON.stringify({version: 1, origin: 'board', sessionDate: date, sealedAt: now, items}), sessionDate: date, savedAt: now};
   if (!db){ st.textContent = 'This view cannot save.'; return; }
   try {
+    const lens = document.getElementById('ttv-lens').hidden ? '' : document.getElementById('ttv-lens-pick').value;
+    if (text) await db.doc('morning/freewrite').set(Object.assign({text, sessionDate: date, savedAt: now}, lens ? {lensDomain: lens} : {}));
     await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); moOpen.add('menu');
-    ttvLines = []; document.getElementById('ttv-write').value = ''; try { localStorage.removeItem(TTV_KEY); } catch {}
+    db.doc('ttv/' + date).set({status: 'done', via: 'board', savedAt: now}).catch(() => {});
+    ttvLines = []; document.getElementById('ttv-write').value = ''; document.getElementById('ttv-can').value = '';
+    try { localStorage.removeItem(TTV_KEY); localStorage.removeItem(TTV_CAN); } catch {}
     ttvRender(); renderMorning();
-    st.textContent = `Sealed: ${items.length} to do, ${bars.length} BAR${bars.length === 1 ? '' : 's'}. Pick from your lines below, then Send to Claude.`;
+    st.textContent = `Sealed: ${items.length} items. Pick from them below, then Send to Claude; the board read writes where each one goes${text ? ', pitches BARs from the free write for you to keep, then deletes it' : ''}.`;
   } catch { st.textContent = 'Not sealed. Your free write is still here; try again.'; }
+});
+/* Tap the Vein first (ttv-first). Wendell, 2026-10-14: "the first thing that happens in the morning when I open the
+   board is tap the vein. It checks to see if one's been done on bars-engine and if not forces one to be done in the
+   board ... There should be a button that gives an option to skip but if it's skipped for 2+ days it triggers a Wave or
+   321 session on the blocker". Today counts as done when the last gather fetched today's sealed menu
+   (DATA.morning.sealed), a menu sealed or pasted here carries today's date, or ttv/<date> in the store says done,
+   bars-engine or skipped. While the board is held it asks bars-engine itself (ttv-bars-engine-trusted overruled,
+   2026-10-14: "I do think we need to be able to make an API call to bars-engine directly"): GET
+   /api/tap-the-vein/status?date=<today> through the viewer's Vercel connector, which answers sealed or not and nothing
+   else. Two or more skips in a row (days the board was not opened do not break the run; a done day does) offer the WAVE
+   room (ttv-skip-wave, his steer: "It should deposit me inside the WAVE room"), with the board's panel as the fallback. */
+const TTV_STATUS = 'https://bars-engine.vercel.app/api/tap-the-vein/status?date=';
+const TTV_ROOM = 'https://bars-engine.vercel.app/ontology-game/cave/';
+let ttvDays = null, ttvCheck = '';
+function ttvHandled(){
+  const today = ttvToday(), rec = (ttvDays || {})[today];
+  return !!(rec || ((DATA.morning || {}).sealed === today) || (moPaste && moPaste.sessionDate === today));
+}
+function ttvSkipRun(){
+  let n = 0;
+  for (const d of Object.keys(ttvDays || {}).sort().reverse()){ if (ttvDays[d].status !== 'skipped' || (DATA.morning || {}).sealed === d) break; n++; }
+  return n;
+}
+function ttvGate(){
+  const held = !!db && ttvDays !== null && !ttvHandled(), was = document.body.classList.contains('ttv-held');
+  document.body.classList.toggle('ttv-held', held);
+  if (held && !was){ show('morning'); document.getElementById('mo-ttv').open = true; }
+  if (held && mcp && ttvCheck !== ttvToday()) ttvAsk();
+}
+async function ttvAsk(){
+  const st = document.getElementById('ttv-gate-state'), again = document.getElementById('ttv-recheck'), date = ttvToday();
+  ttvCheck = date; again.hidden = true; st.textContent = 'Checking bars-engine…';
+  let res = null;
+  try {
+    const r = await mcp.callTool('Vercel', 'web_fetch_vercel_url', {url: TTV_STATUS + date}, {cache: false});
+    const p = r && r.payload;
+    res = p && p.status === 200 ? JSON.parse(p.text) : {error: p && p.status ? `bars-engine answered ${p.status}` : 'no answer'};
+  } catch (err){ res = {error: err && err.code === 'not_granted' ? 'the Vercel connector is not allowed for this page' : (err && err.code) || 'no answer'}; }
+  if (res && res.sealed){ st.textContent = 'Done in bars-engine today.'; await ttvMark('bars-engine', {checked: true, sealedAt: res.sealedAt || null}); return; }
+  if (res && res.sealed === false){ st.textContent = 'Not sealed in bars-engine yet today.'; again.hidden = false; return; }
+  st.textContent = `Could not check bars-engine (${res.error}).`; again.hidden = false;
+}
+async function ttvMark(status, extra){
+  const st = document.getElementById('ttv-gate-state'), date = ttvToday();
+  if (!db){ st.textContent = 'This view cannot save.'; return false; }
+  try { const rec = {status, ...(extra || {}), savedAt: new Date().toISOString()}; await db.doc('ttv/' + date).set(rec); ttvDays = {...ttvDays, [date]: rec}; ttvGate(); return true; }
+  catch { st.textContent = 'Not saved; try again.'; return false; }
+}
+document.getElementById('ttv-recheck').addEventListener('click', ttvAsk);
+let ttvWave = null;
+document.getElementById('ttv-skip').addEventListener('click', async () => {
+  if (!(await ttvMark('skipped'))) return;
+  const run = ttvSkipRun(); if (run < 2) return;
+  const ref = `tap-the-vein--${Date.now().toString(36)}`, charge = `Tap the Vein, skipped ${run} days running`;
+  ttvWave = {run, ref, charge};
+  // The room reads this hash (wave=board) once the WAVE room thread builds it; its record comes back to blockers/<ref>.
+  document.getElementById('ttv-wave-go').href = `${TTV_ROOM}#wave=board&charge=${encodeURIComponent(charge)}&skips=${run}&ref=${ref}&date=${ttvToday()}`;
+  document.getElementById('ttv-wave-say').textContent = `You have skipped Tap the Vein ${run} days running. Take what is stopping you into the WAVE room.`;
+  $b('ttv-wave').classList.add('on');
+});
+function ttvWaveClose(via){
+  $b('ttv-wave').classList.remove('on');
+  if (ttvWave && db) db.doc('ttv/' + ttvToday()).update({wave: via, waveRef: ttvWave.ref}).catch(() => {});
+}
+document.getElementById('ttv-wave-go').addEventListener('click', () => ttvWaveClose('room'));
+document.getElementById('ttv-wave-close').addEventListener('click', () => ttvWaveClose('not-now'));
+document.getElementById('ttv-wave-here').addEventListener('click', () => {
+  const w = ttvWave; ttvWaveClose('board');
+  openBlocker('tap-the-vein', {do: `Tap the Vein (skipped ${w.run} days running)`, list: 'morning', due: ttvToday(), skipStreak: w.run});
 });
 function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
 document.getElementById('mo-cats').addEventListener('toggle', e => {
@@ -1586,9 +1791,10 @@ render();
 (async () => {
   db = window.claude && window.claude.use ? await window.claude.use('db') : null;
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
-  window.claude.use('mcp').then(m => { mcp = m; renderSend(); }, () => {});
+  window.claude.use('mcp').then(m => { mcp = m; renderSend(); ttvGate(); }, () => {});
   renderMorning(); ttvRender();
-  db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); }, () => {});
+  db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); ttvGate(); }, () => {});
+  db.collection('ttv').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ttvDays = next; ttvGate(); }, () => { ttvDays = {}; ttvGate(); });
   db.collection('picks').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); moLive = next; renderMorning(); }, () => {});
   db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
   for (const kind of ['positions','questions','causes','terms']){

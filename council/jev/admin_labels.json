@@ -1,0 +1,177 @@
+{
+ "note": "Admin-art scoring pile (20 rows). Rows read by Claude from the doc line and code at bars-engine main, 2026-10-14. Wendell's steer: do the labelling, bring only real judgement calls. The four open rows are board questions jev-lab-*.",
+ "pile": "scoring",
+ "labelled_on": "2026-10-14",
+ "labelled_by": "claude (read-through)",
+ "rows": [
+  {
+   "id": "AS-001",
+   "doc": ".specify/specs/asset-management-bar-upload-walkable-sprites/spec.md",
+   "line": 69,
+   "statement": "- **FR1**: Add `Asset` model: id, type, url, mimeType, metadataJson, ownerId, customBarId?, createdAt. Types: `bar_attachment`, `sprite`, `tile`.",
+   "label": "agrees",
+   "why": "The Asset model has every listed field (plus an extra `side`). Types are not enforced in the schema."
+  },
+  {
+   "id": "AS-002",
+   "doc": ".specify/specs/asset-management-bar-upload-walkable-sprites/spec.md",
+   "line": 71,
+   "statement": "- **FR3**: Asset storage: Vercel Blob when BLOB_READ_WRITE_TOKEN set; else `public/uploads/assets/{id}/{filename}`.",
+   "label": "agrees",
+   "why": "assets.ts saves to Vercel Blob when the token is set, else to public/uploads/assets/{id}/file.ext."
+  },
+  {
+   "id": "AS-005",
+   "doc": ".specify/specs/asset-management-bar-upload-walkable-sprites/spec.md",
+   "line": 99,
+   "statement": "type String // bar_attachment | sprite | tile",
+   "label": "agrees",
+   "why": "`type` is a plain string on Asset, with bar_attachment / sprite / tile as the documented values."
+  },
+  {
+   "id": "AS-006",
+   "doc": ".specify/specs/asset-management-bar-upload-walkable-sprites/spec.md",
+   "line": 102,
+   "statement": "metadataJson String? @map(\"metadata_json\") // { intention?, altText?, ... }",
+   "label": "agrees",
+   "why": "`metadataJson` is an optional string mapped to metadata_json."
+  },
+  {
+   "id": "AS-007",
+   "doc": ".specify/specs/asset-management-bar-upload-walkable-sprites/spec.md",
+   "line": 106,
+   "statement": "owner Player @relation(fields: [ownerId], references: [id])",
+   "label": "agrees",
+   "why": "Asset.owner is a Player relation on ownerId (it also cascades on delete, which the doc does not mention)."
+  },
+  {
+   "id": "AS-011",
+   "doc": ".specify/specs/asset-management-bar-upload-walkable-sprites/spec.md",
+   "line": 240,
+   "statement": "- Asset upload: max file size 5 MB for images; 10 MB for PDFs.",
+   "label": "disagrees",
+   "why": "The route declares 5 MB for images and 10 MB for PDFs, but the upload handler passes the 10 MB figure for every file, so an 8 MB image gets through."
+  },
+  {
+   "id": "AS-014",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 31,
+   "statement": "- Nation sigil: 24×24px pixel glyph. 5 glyphs (one per element-nation). Designed, not Unicode.",
+   "label": "agrees",
+   "why": "The sigil check expects 24x24 RGBA in sigils/nation. The folder does not exist yet, so the 5 glyphs are unchecked."
+  },
+  {
+   "id": "AS-015",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 32,
+   "statement": "- Archetype mark: 16×16px geometric mark. 8 marks (role marks, shared across nations).",
+   "label": "agrees",
+   "why": "The check expects 16x16 RGBA in sigils/archetype. Folder not made yet."
+  },
+  {
+   "id": "AS-016",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 33,
+   "statement": "**Asset count:** 13 marks total. Not yet generated.",
+   "label": "agrees",
+   "why": "5 nation + 8 archetype = 13, and the code says \"not yet generated\"; the folders are absent."
+  },
+  {
+   "id": "AS-017",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 44,
+   "statement": "**Format:** 64×96px cropped square. Derived from Cosmic art — CSS crop at `object-position: center 15%`",
+   "label": "agrees",
+   "why": "register-portrait.ts uses object-position center 15%. The 64x96 size is not in code, but the crop matches."
+  },
+  {
+   "id": "AS-024",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 68,
+   "statement": "**Format:** 4 move icons at 24×24px. One per move family: Wake Up / Grow Up / Show Up / Clean Up.",
+   "label": "cannot-tell",
+   "board_question": "jev-lab-as-024",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)",
+   "why": "Wendell, 2026-10-14: \"There should be 5 move icons now that there is an Open Up version. This is an artifact from before that change was made in the ontology\". The doc line is stale against the ontology, so it leaves the scoring pile."
+  },
+  {
+   "id": "AS-025",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 79,
+   "statement": "**Format:** Tileable 64×64px RGBA PNG. Near-black on `#0a0908` base. Subtle grain — readable",
+   "label": "agrees",
+   "why": "public/textures/zone-lobby.png is a 64x64 RGBA PNG."
+  },
+  {
+   "id": "AS-026",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 91,
+   "statement": "No image assets required — color derives from ELEMENT_TOKENS automatically.",
+   "label": "agrees",
+   "why": "Element colours come from ELEMENT_TOKENS in card-tokens.ts."
+  },
+  {
+   "id": "AS-029",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 115,
+   "statement": "resolveProvenanceStamp(config) → sigil + mark chip (BAR card corner)",
+   "label": "agrees",
+   "board_question": "jev-lab-as-029",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)"
+  },
+  {
+   "id": "AS-032",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 162,
+   "statement": "- All colors must trace to `ELEMENT_TOKENS` or `SURFACE_TOKENS` in `card-tokens.ts`. No hardcoded hex.",
+   "label": "disagrees",
+   "board_question": "jev-lab-as-032",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)"
+  },
+  {
+   "id": "AS-033",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 166,
+   "statement": "- `src/lib/ui/card-tokens.ts` — ELEMENT_TOKENS, SURFACE_TOKENS (authoritative color source)",
+   "label": "agrees",
+   "why": "card-tokens.ts defines both ELEMENT_TOKENS and SURFACE_TOKENS."
+  },
+  {
+   "id": "AS-034",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 167,
+   "statement": "- `src/lib/avatar-utils.ts` — AvatarConfig, getWalkableSpriteUrl (existing; extend with resolvers)",
+   "label": "agrees",
+   "why": "avatar-utils.ts exports getWalkableSpriteUrl and AvatarConfig."
+  },
+  {
+   "id": "AS-036",
+   "doc": ".specify/specs/asset-register-design-system/spec.md",
+   "line": 170,
+   "statement": "- `.specify/specs/provenance-stamp-system/spec.md` — Provenance Stamp implementation",
+   "label": "agrees",
+   "why": ".specify/specs/provenance-stamp-system/spec.md exists."
+  },
+  {
+   "id": "AS-064",
+   "doc": ".specify/specs/book-upload-vercel-client-exception/spec.md",
+   "line": 56,
+   "statement": "3. Upload a PDF (< 4.5 MB for Hobby).",
+   "label": "agrees",
+   "board_question": "jev-lab-as-064",
+   "answered_on": "2026-10-14",
+   "answered_by": "wendell (board)"
+  },
+  {
+   "id": "AS-147",
+   "doc": "docs/ENV_AND_VERCEL.md",
+   "line": 33,
+   "statement": "For BAR photo uploads and book PDFs: `BLOB_READ_WRITE_TOKEN` (from Vercel Blob store — create in Dashboard → Storage). Without it, uploads fail with FUNCTION_PAYLOAD_TOO_LARGE or fall back to local filesystem (which fails on Vercel).",
+   "label": "agrees",
+   "why": "assets.ts and the upload route both depend on BLOB_READ_WRITE_TOKEN; the route answers 503 without it."
+  }
+ ]
+}

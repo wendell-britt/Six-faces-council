@@ -49,6 +49,14 @@ current_sources:
   process_log:
     path: ontology/v0.1/source/design-ontology-process-log.md
     status: active_history
+  daemon_questions:
+    path: council/daemons/questions.yaml
+    status: owner_statement
+    note: >-
+      Wendell's questions for each of the seven daemons and the Player
+      (2026-10-14), in his exact words, on one shared skeleton: what the
+      daemon works on, who it works for, how that serves its boss, and what
+      happens without it. The daemons themselves stay in council/daemons/daemons.yaml.
 
 binding_decisions:
   constitutional_succession:

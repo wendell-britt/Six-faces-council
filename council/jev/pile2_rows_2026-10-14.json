@@ -1,0 +1,295 @@
+{
+ "note": "Second pile, unseen docs. Model-facing: no labels.",
+ "source": "johnair01/bars-engine main 1885d16 (same commit as the first run)",
+ "count": 48,
+ "rows": [
+  {
+   "id": "B2-001",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 9,
+   "statement": "3. Run migrations so `bar_forge_records` exists: `npx prisma migrate deploy` (or `migrate dev` locally)."
+  },
+  {
+   "id": "B2-002",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 20,
+   "statement": "If the env var is missing on the server, matching/registry routes return **503** with a clear message. Wrong key → **401**."
+  },
+  {
+   "id": "B2-003",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 55,
+   "statement": "Matching filters quests to `status` in `active` | `draft`, then keeps rows whose `moveType` matches the requested wave phase, ranks by `analysis.type` → `lockType` heuristic, then boosts by polarity substring hits on title/description/nation/archetype/allyship domain."
+  },
+  {
+   "id": "B2-004",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 88,
+   "statement": "| `limit` | Max rows (default **100**, max **500**). **Ignored** when `sample` is set. |"
+  },
+  {
+   "id": "B2-005",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 89,
+   "statement": "| `sample` | If set (1–500), return that many rows in **random** order (`ORDER BY RANDOM()`). For “give me a random set of BARs.” |"
+  },
+  {
+   "id": "B2-006",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 93,
+   "statement": "`count` is always the length of `records` in this response; `totalCount` is the full table size when requested."
+  },
+  {
+   "id": "B2-007",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 105,
+   "statement": "Response: `{ \"record\": { ... } }` or **404**"
+  },
+  {
+   "id": "B2-008",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 110,
+   "statement": "- **Custom GPT (recommended import):** [openapi/bar-forge-custom-gpt.yaml](../openapi/bar-forge-custom-gpt.yaml) — BAR Forge routes **plus** `/api/game-master/collective-context`, `/api/game-master/move`, `/api/game-master/resolve-quest` (same `BARS_API_KEY`). Also includes **`info.x-gm-faces`**, **`tags`** per sect, and optional **`gameMasterFace`** on match/registry bodies (stored in registry `metadataJson`)."
+  },
+  {
+   "id": "B2-009",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 116,
+   "statement": "- **POST match** — echoed in `debug.matchedOn` as `gm_face:<name>` when set."
+  },
+  {
+   "id": "B2-010",
+   "doc": "docs/BAR_FORGE_API.md",
+   "line": 117,
+   "statement": "- **POST registry** — merged into `metadataJson.gameMasterFace` (with any client `metadataJson`)."
+  },
+  {
+   "id": "B2-011",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 19,
+   "statement": "If the env var is missing on the server, the API returns **503** with a clear message."
+  },
+  {
+   "id": "B2-012",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 35,
+   "statement": "- Default: `id`, `title`, `author`, `slug`, `sourcePdfUrl`, `status`, `metadataJson`, `createdAt`, `updatedAt`, `threadId`"
+  },
+  {
+   "id": "B2-013",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 36,
+   "statement": "- **`compact=1`**: only `id`, `title`, `author`, `slug`, `status`, `threadId` — smallest payload for indexing"
+  },
+  {
+   "id": "B2-014",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 50,
+   "statement": "- **`extractedText=1`**: includes extracted PDF text, truncated to **`maxChars`** (default `80000`, max `500000`)."
+  },
+  {
+   "id": "B2-015",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 65,
+   "statement": "- **`status`**: `draft` | `active` | `archived` | `all` (default `all`)"
+  },
+  {
+   "id": "B2-016",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 66,
+   "statement": "- **`compact=1`**: only `id`, `title`, `status`, `moveType`"
+  },
+  {
+   "id": "B2-017",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 102,
+   "statement": "- **404 on /quests** — Book id wrong, or no generated quests yet for that book."
+  },
+  {
+   "id": "B2-018",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 108,
+   "statement": "- List matches `listBooks()` in `src/actions/books.ts` (no `extractedText` on the list)."
+  },
+  {
+   "id": "B2-019",
+   "doc": "docs/BOOKS_CONTEXT_API.md",
+   "line": 109,
+   "statement": "- Quests match `getBookDraftQuests` / `getBookApprovedQuests` filters in `src/actions/book-quest-review.ts` (same `bookId` in `completionEffects`)."
+  },
+  {
+   "id": "B2-020",
+   "doc": "docs/BUILD_RELIABILITY.md",
+   "line": 9,
+   "statement": "| `npm run verify:server-action-types` | Forbids `export type { … }` / `export { type X }` in files with `\"use server\"` (Turbopack / server-action barrel issue). |"
+  },
+  {
+   "id": "B2-021",
+   "doc": "docs/BUILD_RELIABILITY.md",
+   "line": 10,
+   "statement": "| `npm run verify:prisma-schema` | Runs `prisma validate` (uses placeholder `DATABASE_URL` if unset). |"
+  },
+  {
+   "id": "B2-022",
+   "doc": "docs/BUILD_RELIABILITY.md",
+   "line": 11,
+   "statement": "| `npm run verify:build-reliability` | Both checks above. |"
+  },
+  {
+   "id": "B2-023",
+   "doc": "docs/BUILD_RELIABILITY.md",
+   "line": 12,
+   "statement": "| `npm run check` | `prisma generate` → verify → `eslint` → `tsc --noEmit`. |"
+  },
+  {
+   "id": "B2-024",
+   "doc": "docs/BUILD_RELIABILITY.md",
+   "line": 14,
+   "statement": "**Pre-commit** (husky): `db:generate` → `verify:build-reliability` → `build:type-check` → `validate-manifest`."
+  },
+  {
+   "id": "B2-025",
+   "doc": "docs/BUILD_RELIABILITY.md",
+   "line": 16,
+   "statement": "**CI**: `.github/workflows/frontend-check.yml` runs `npm run check` on push/PR."
+  },
+  {
+   "id": "B2-026",
+   "doc": "docs/BUILD_RELIABILITY.md",
+   "line": 27,
+   "statement": "npm run strand:consult:build-reliability"
+  },
+  {
+   "id": "B2-027",
+   "doc": "docs/DB_STRATEGY.md",
+   "line": 9,
+   "statement": "| **Production / Vercel build** | `prisma migrate deploy` (build runs this when `DATABASE_URL` is set) |"
+  },
+  {
+   "id": "B2-028",
+   "doc": "docs/DB_STRATEGY.md",
+   "line": 12,
+   "statement": "| **After schema change** | `npm run db:sync` (generates client; **does not** push schema) or `npm run db:generate` |"
+  },
+  {
+   "id": "B2-029",
+   "doc": "docs/DB_STRATEGY.md",
+   "line": 14,
+   "statement": "**Never** run `npx prisma db push` or `npm run db:push` (script exits with a hard error)."
+  },
+  {
+   "id": "B2-030",
+   "doc": "docs/DB_STRATEGY.md",
+   "line": 22,
+   "statement": "5. `npm run db:record-schema-hash` — updates `.prisma_hash` so `npm run db:sync` stops erroring."
+  },
+  {
+   "id": "B2-031",
+   "doc": "docs/PRISMA_MIGRATE_STRATEGY.md",
+   "line": 10,
+   "statement": "- **`scripts/db-sync.ts`** runs **`prisma generate` only**; it never pushes. If `schema.prisma` changed since your local `.prisma_hash`, it fails until you run **`migrate dev` / `migrate deploy`** and **`npm run db:record-schema-hash`**."
+  },
+  {
+   "id": "B2-032",
+   "doc": "docs/PRISMA_MIGRATE_STRATEGY.md",
+   "line": 11,
+   "statement": "- **Legacy damage:** `20250306000000_playbook_to_archetype_rename` was removed (wrong order + duplicate). **Gaps** (e.g. `adventures`) from old `db push` are why **`migrate reset` on an empty DB** can still fail until Path B (squash) is done."
+  },
+  {
+   "id": "B2-033",
+   "doc": "docs/PRISMA_MIGRATE_STRATEGY.md",
+   "line": 12,
+   "statement": "- **Legacy damage — duplicate `CREATE TABLE`:** `20260629124500_add_lenses_goal_onboarding` re-declares `tap_the_vein_daily_sessions` and `tap_the_vein_tasks`, which `20260624160338_add_tap_the_vein` already created — with a *different*, divergent-branch column set (no `lensFaceKey` / `eaChannel` / `chargeStrength`; extra `lensGoalId` / `lifeLensDomain`). Whichever of the two actually ran decides the table shape, so databases disagree. Production ended up on the second shape and every `/tap-the-vein` read failed with **P2022**; `20260810193000_repair_tap_the_vein_columns` reconciles it additively. **When doing the Path B squash, resolve this pair against `schema.prisma` rather than replaying either one.**"
+  },
+  {
+   "id": "B2-034",
+   "doc": "docs/DEVELOPER_ONBOARDING.md",
+   "line": 9,
+   "statement": "The project requires **Node.js v18+** and npm (bundled with Node)."
+  },
+  {
+   "id": "B2-035",
+   "doc": "docs/DEVELOPER_ONBOARDING.md",
+   "line": 112,
+   "statement": "**⚠️ Never use `db push` on shared or production databases.** Always create a migration file (`npx prisma migrate dev --name describe_change`) for schema changes. `db push` is for local iteration only and can cause data loss or schema drift when used against production."
+  },
+  {
+   "id": "B2-036",
+   "doc": "docs/DEVELOPER_ONBOARDING.md",
+   "line": 122,
+   "statement": "| `npm run smoke` | Checks `DATABASE_URL` and database connectivity |"
+  },
+  {
+   "id": "B2-037",
+   "doc": "docs/DEVELOPER_ONBOARDING.md",
+   "line": 124,
+   "statement": "| `npm run build` | Next.js build. With `DATABASE_URL` set: runs migrate deploy + build. Without: skips migrate, runs generate + build (for type-check/compile verification). |"
+  },
+  {
+   "id": "B2-038",
+   "doc": "docs/DEVELOPER_ONBOARDING.md",
+   "line": 127,
+   "statement": "**Server actions:** Do not use `export type { X } from '…'` in files with `\"use server\"` — import shared types from `src/lib/*` instead. Husky pre-commit runs `verify:build-reliability` (plus generate, type-check, validate-manifest)."
+  },
+  {
+   "id": "B2-039",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 68,
+   "statement": "- Does **not** trim the key before passing (potential improvement for env file quirks)"
+  },
+  {
+   "id": "B2-040",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 83,
+   "statement": "## 3. Current AI features (2 call sites)"
+  },
+  {
+   "id": "B2-041",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 87,
+   "statement": "| Book analysis | `src/actions/book-analyze.ts` | `analyzeBook` | gpt-4o-mini (default) | Extract quests from PDF text chunks |"
+  },
+  {
+   "id": "B2-042",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 88,
+   "statement": "| I Ching quest gen | `src/actions/generate-quest.ts` | `generateQuestCore` | gpt-4o (default) | Create a quest from hexagram + playbook |"
+  },
+  {
+   "id": "B2-043",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 92,
+   "statement": "- **Rate-limit retry** — 15s wait and retry on TPM/429 errors"
+  },
+  {
+   "id": "B2-044",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 129,
+   "statement": "| `BOOK_ANALYSIS_MODEL` | gpt-4o-mini | Model for book analysis (cheaper, higher TPM) |"
+  },
+  {
+   "id": "B2-045",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 130,
+   "statement": "| `QUEST_GEN_MODEL` | gpt-4o | Model for I Ching quest generation |"
+  },
+  {
+   "id": "B2-046",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 132,
+   "statement": "| `QUEST_GEN_AI_ENABLED` | (unset = enabled) | Set to `false` to disable quest gen AI |"
+  },
+  {
+   "id": "B2-047",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 134,
+   "statement": "| `QUEST_GRAMMAR_AI_MODEL` | gpt-4o | Model for quest grammar node text generation |"
+  },
+  {
+   "id": "B2-048",
+   "doc": "docs/OPENAI_API_USAGE.md",
+   "line": 136,
+   "statement": "**Caching**: Responses are cached in `AiResponseCache` (7-day TTL). Re-running analysis on the same book or generating a quest with the same hexagram+playbook+lens returns cached results."
+  }
+ ]
+}

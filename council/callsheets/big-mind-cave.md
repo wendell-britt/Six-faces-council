@@ -1,4 +1,4 @@
-2026-10-13 (updated 05:40)
+2026-10-15 (updated 00:45)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -46,6 +46,48 @@ room wears the J1 stone. Only charges worked through the whole W.A.V.E. go throu
 bigmind-test 178 pass. Phone page version 23 (carries #310 too). Next: his walk round the room and through the Big Mind
 door, then the next six chambers and the centre built inside the Big Mind cave (`dp-seven`, `dp-centre`, `dp-progress`),
 in a fresh thread.
+
+**2026-10-14, the Controller's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #330 (draft, branch
+`claude/project-thread-arzqhz`) opens the second chamber on the daemon path. Walking on past the Protector builds the cave
+again around the Controller, which asks Wendell's five Controller questions (`daemons/questions.js`). At "Who do you work
+for?" the player picks the Protector, the self, control itself or the vulnerable child, and the method question that follows
+asks his follow-up for that boss (`byBoss`; the vulnerable child keeps the plain question, since he gave none). The boss is
+saved and shown at the mouth. The save gains `chamber`; the Skeptic waits at the shut mouth past it. bigmind-test 210 pass.
+Next: his play of the Controller's chamber, then the Skeptic's chamber with its set, in a fresh thread.
+
+**2026-10-15, the Skeptic's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #331 (draft, branch
+`claude/project-thread-th18ej`, stacked on #330) opens the third chamber. Walking on past the Controller builds the cave
+again around the Skeptic, which asks Wendell's four Skeptic questions (`daemons/questions.js`). At his plain "Who do you
+work for?" the player picks the Protector, the Controller, the self or the vulnerable child. When the boss is a voice already
+heard, the guide adds what it said of its own boss ("And the Controller told you it answers to the Protector."), so the chain
+shows in play. The method question keeps his one wording; its cards change with the boss. The Fixer waits at the shut mouth
+past it. bigmind-test 236 pass. Next: merge #330 then #331, then the Fixer's chamber with its set in a fresh thread, stacked on
+#331 if it has not merged.
+
+**2026-10-15, the Fixer's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #332 (draft, branch
+`claude/project-thread-7v9lbl`, stacked on #331) opens the fourth chamber. Walking on past the Skeptic builds the cave again
+around the Fixer, which asks Wendell's four Fixer questions (`daemons/questions.js`): what it fixes, who it works for, how
+fixing (repairing or holding in place) serves who it works for, and what would happen if it weren't there. The Controller is
+one of its bosses, so picking it shows the chain. #332 also carries #330's newest commit (the charge goes down while a voice
+holds back, and what moved it is kept), and the test walks it in the Fixer's chamber. The Emotional Body waits at the shut
+mouth past it. bigmind-test 272 pass. Next: merge #330, #331, #332 in order, then the Emotional Body's chamber with its set in
+a fresh thread.
+
+**2026-10-15, the Emotional Body's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #333 (draft, branch
+`claude/project-thread-ntdz6u`, stacked on #332) opens the fifth chamber. Walking on past the Fixer builds the cave again
+around the Emotional Body, which asks Wendell's four Emotional Body questions (`daemons/questions.js`): what it feels, who it
+works for, what happens if it isn't there, and his new measure question, "How do you know you've done a good job?" His set
+has no method question, so the measure question's cards change with the boss. The Controller as boss shows the chain. The
+Victim waits at the shut mouth past it. bigmind-test 298 pass. Next: merge #330, #331, #332, #333 in order, then the
+Victim's chamber with its set in a fresh thread.
+
+**2026-10-15, the Victim's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #334 (draft, branch
+`claude/project-thread-skyonm`, stacked on #333) opens the sixth chamber. Walking on past the Emotional Body builds the cave
+again around the Victim, which asks Wendell's five Victim questions (`daemons/questions.js`): the sympathetic stories it
+tells, who it works for, who it advocates for, the shadow sympathy its advocacy gets it, and what happens if it isn't there.
+His set has no method question, so the advocacy question, right after the boss, is the one whose cards change with the boss.
+The Controller as boss shows the chain. The Damaged Self waits at the shut mouth past it. bigmind-test 325 pass. Next: merge
+#330 to #334 in order, then the Damaged Self's chamber, the last on the path, with its set in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth

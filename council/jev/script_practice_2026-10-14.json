@@ -1,0 +1,139 @@
+{
+ "AS-037": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-041": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-042": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-055": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-056": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-058": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-059": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-101": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-182": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-150": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-155": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-156": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-009": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-031": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-039": {
+  "flag": true,
+  "unmatched": [
+   "female.png",
+   "male.png",
+   "neutral.png",
+   "public/sprites/parts/base/"
+  ]
+ },
+ "AS-089": {
+  "flag": true,
+  "unmatched": [
+   "scripts/sprites/palette-swap.lua"
+  ]
+ },
+ "AS-098": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-099": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-100": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-102": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-105": {
+  "flag": true,
+  "unmatched": [
+   "/api/admin/sprites/review/:id/approve"
+  ]
+ },
+ "AS-107": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-112": {
+  "flag": true,
+  "unmatched": [
+   "npm run sprites:validate-walkable"
+  ]
+ },
+ "AS-115": {
+  "flag": true,
+  "unmatched": [
+   "scripts/validate-walkable-sprites.ts"
+  ]
+ },
+ "AS-013": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-131": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-137": {
+  "flag": false,
+  "unmatched": []
+ },
+ "AS-141": {
+  "flag": true,
+  "unmatched": [
+   "--delay-ms=15000"
+  ]
+ },
+ "AS-144": {
+  "flag": true,
+  "unmatched": [
+   "src/lib/ui/card-art-registry.ts"
+  ]
+ },
+ "AS-195": {
+  "flag": false,
+  "unmatched": []
+ }
+}

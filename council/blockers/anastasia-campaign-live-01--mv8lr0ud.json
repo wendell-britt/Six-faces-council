@@ -1,0 +1,34 @@
+{
+ "charge": {
+  "after": null,
+  "before": 5
+ },
+ "due": "2026-10-12",
+ "engine": "board-wave",
+ "list": "anastasia-campaign-live",
+ "overdueDays": 2,
+ "resolution": null,
+ "rounds": [
+  {
+   "aligned": false,
+   "body": [
+    "Hollow"
+   ],
+   "element": "earth",
+   "felt": "",
+   "from": "the step",
+   "kind": "unclear",
+   "name": "Avoiding being imperfect.",
+   "partStayed": false,
+   "purpose": "It's protecting putting something confusing in front of someone who is recieving help and care from me",
+   "validated": true
+  }
+ ],
+ "savedAt": "2026-10-14T21:09:52.645Z",
+ "stage": "end",
+ "startedAt": "2026-10-14T21:08:44.677Z",
+ "status": "open",
+ "step": "anastasia-campaign-live-01",
+ "task": "Send Anastasia the draft and ask for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in public. A photo and her Facebook post are optional.",
+ "version": 1
+}

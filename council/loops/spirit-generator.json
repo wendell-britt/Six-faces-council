@@ -1,0 +1,107 @@
+{
+  "strand": "spirit-generator",
+  "callsheet": "council/callsheets/spirit-generator.md",
+  "loop": "spirit look art rounds (Shellback proof)",
+  "max_ahead": 2,
+  "last_look": {
+    "round": 9,
+    "at": "2026-10-14T23:24:08Z",
+    "label": "spirit-generator-r9"
+  },
+  "rounds": [
+    {
+      "round": 1,
+      "status": "done",
+      "builds": "Living creature and highest ally form rebuilt after the Taoist Tortoise concept.",
+      "thread": "Natural spirit forms"
+    },
+    {
+      "round": 2,
+      "status": "done",
+      "builds": "Each element sets shell material, growth, skin, cloth and aura.",
+      "thread": "Spirit forms round 2"
+    },
+    {
+      "round": 3,
+      "status": "done",
+      "builds": "One shared eye with element iris colour; organic lava crust for fire; water ribbons for the water aura.",
+      "check": "Contact sheet of all 25 renders, page version 5, eyes read as eyes at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "thread": "Spirit forms round 3"
+    },
+    {
+      "round": 4,
+      "status": "done",
+      "builds": "The Shellback family's other two animal bases, armadillo and pangolin, through all five stages in all five elements, carrying round 3's eyes and element styling.",
+      "check": "Contact sheet of 50 renders beside the tortoise; each base reads as its animal at the 96 px sprite; the page gains a base picker.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 5,
+      "status": "done",
+      "builds": "The head after his players' look at round 3: a face closer to the Taoist Tortoise concept, smaller and more realistic eyes, and a new mouth, for all three bases.",
+      "check": "Contact sheet of the three bases' creature and ally-form heads before and after, in all five elements; eyes read at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 6,
+      "status": "done",
+      "builds": "The faces after his look at rounds 4 and 5: a flatter tortoise face; the armadillo's whole face pointier, with more pointed ears, eyes on the side of the head and a flat snout; the pangolin's eyes spaced further apart, a shorter nose than the armadillo, and head scales that fold back into the shell and float like loose scales.",
+      "check": "Heads before and after for the three bases in all five elements; each base still reads as its animal at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 7,
+      "status": "done",
+      "builds": "His look at round 6 first: the tortoise's round 6 head flattening reverted to round 5's domed skull, with the snout raised 30% of the way toward the crown (armadillo and pangolin kept as they are). Then one nation style, Meridia's, carried across the Shellback stages.",
+      "check": "Tortoise heads before and after; the same contact sheet with and without the nation style.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 8,
+      "status": "done",
+      "builds": "The second body family, the Player's Romp (sg-body-from A: fox, otter or kid goat), with its fox base first: its own gas drift and core cut, then hologram, living creature and highest ally form in all five elements, carrying the shared eye, cloth, beads and element styling, and Meridia's nation layer as a switch. Concept art is missing, so the round writes the image prompts first (missing-art rule) and builds from their description.",
+      "check": "Contact sheet of the fox's 25 renders beside the Shellback tortoise; the fox reads as a fox at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 9,
+      "status": "done",
+      "builds": "The Romp's second base, the otter, through all five stages in all five elements, on the fox's gas and core, carrying the shared eye, beads and element styling, with Meridia's layer as a switch; built from its image prompt in council/loops/prompts/spirit-generator-r8.md. It follows his look at round 8: the Romp's upright form is a wanderer (tunic, sash, scarf, satchel, lantern), not the sage's robe and staff, and its core is a jade token, never a mark on the fur.",
+      "check": "Contact sheet of the otter's 25 renders beside the fox and the tortoise; the otter reads as an otter at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 10,
+      "status": "done",
+      "builds": "The Romp's third base, the kid goat, through all five stages in all five elements, on the Romp's gas and core, carrying the shared eye, beads and element styling, with Meridia's layer as a switch; built from its image prompt in council/loops/prompts/spirit-generator-r8.md. Its upright form wears the Romp's wanderer outfit (tunic, sash, scarf, satchel, lantern), and its core is a jade token or the prompt's engraved bell, never a mark on the coat.",
+      "check": "Contact sheet of the kid goat's 25 renders beside the otter, the fox and the tortoise; the kid goat reads as a kid goat at the 96 px sprite.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    },
+    {
+      "round": 11,
+      "status": "done",
+      "builds": "His look at round 9 (2026-10-14 23:24, redirect): the otter's legs point in strange ways, and lying on a rock will fight movement, rigging and animation. Position, stands unless he flips it (the record already makes the living creature the animal and only the highest ally form humanoid): every Romp living creature is a quadruped standing on its own four feet on the ground, in a neutral stance a quadruped rig can animate, with no prop under it or in its paws. Rebuild the otter's and the kid goat's creature stages that way (the goat's mid-leap off a rock has the same problem) with clean, symmetric leg chains (shoulder, elbow, wrist, paw; hip, knee, hock, paw) that match the skeleton-first spirit rigs (bars-engine #325, read-only here); the otter keeps its long low body and tail, its token moves to the beads, the goat's bell stays at its throat. Check the fox's lifted forepaw against the same rule. Upright forms are unchanged. Put the position on the board as a row.",
+      "check": "Side and three-quarter renders of the otter, kid goat and fox creatures in all five elements, four feet flat on the ground, legs bending the way the animal's do; sprite sheet beside round 10's.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus"
+    }
+  ]
+}

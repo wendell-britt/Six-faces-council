@@ -26,20 +26,100 @@ we are doing from our podcasting episodes and creating robust context web that o
 
 The Morning tab's "Tap the Vein here" box runs the ritual on the board itself:
 
-1. He writes. The free write is kept only in his browser (localStorage) and is cleared when he seals; it is never
-   saved to the board's store, so no session reads it (`mm-raw` stands).
-2. "Find my lines" splits the write into lines. He marks each one **To do**, **Keep as a BAR**, both, or neither.
+1. He writes. Until he seals, the free write is kept only in his browser (localStorage).
+2. "Find my lines" splits the write into lines, and he marks the ones **To do**.
 3. "Seal the menu" saves `morning/menu` exactly as a pasted menu is saved, with the To do lines as unaligned kept
-   lines and the BAR lines in the same doc's `bars` field. His To do lines appear in the "From your free write"
+   lines, and saves the free write at `morning/freewrite`. His To do lines appear in the "From your free write"
    category at once, where he picks a Lens goal for each and picks up to seven, then Send to Claude.
-4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, plus
-   `python3 council/ttv_bars.py <dir>/morning/menu.json --write` when BARs were marked. That writes one BAR per line
-   into wendell-britt/game-masters-guide `corpus/bars/` (`kind: bar`, `slot: unplaced`, tag `tap-the-vein`), and the
-   read opens a pull request there. From the corpus the BARs feed products the same way the podcast BARs do.
+4. The board read runs `board/pull.py`, which lists `morning/menu` under needs work as before, and
+   `morning/freewrite` while it exists. The read reads the free write once, writes two or three sentences summing it
+   up, and pitches the lines worth keeping as BARs, each with the slot from game-masters-guide `corpus/products.yaml`
+   it would go to. `python3 council/ttv_bars.py pitch <dir>/morning/freewrite.json --pitches <file> --summary "..."`
+   turns them into board questions (keep in that slot, keep unplaced, or not a BAR) and refuses any line that is not
+   in the free write word for word. When the free write carries `lensDomain` (the box offered an empty Lens domain's
+   prompt, `lens-pitch-goals`), the read also pitches one to three year goals for that domain, each quoting a line of
+   his: `python3 council/lens_goals.py pitch <dir>/morning/freewrite.json --pitches <file>`, with
+   `[{"title", "line", "why"}]`. The read adds the rows with `board/sync_board.py --rows`, republishes, then
+   deletes the doc (ArtifactData delete, collection `morning`, doc `freewrite`) and its local copy.
+5. He answers the pitches on the Open tab and sends. The read that records them runs `python3 council/ttv_bars.py
+   accepted --write`, which writes one BAR per kept pitch into wendell-britt/game-masters-guide `corpus/bars/` (tag
+   `tap-the-vein`), and opens a pull request there. It also runs `python3 council/lens_goals.py kept --send`, which
+   posts each kept goal to bars-engine's `POST /api/lenses/goals` as an active year goal (safe to run twice), then
+   `python3 council/morning.py --write` so the Lenses panel shows it.
+
+Wendell, 2026-10-14, after the first version sliced the page sentence by sentence: "I think the tap the being should
+be read and summarized before bars are chosen. It a bit too raw for me to know what should be a bar and currently it
+seems to just slice the page sentence by sentence. This is something where I'd want to use AI to summarize and make
+pitches for where things should go."
+
+Wendell ruled `ttv-raw-bars` on 2026-10-14: read it once for BARs, then delete it. His steer: "For now read it and
+delete but this is the power of having a private server like in bars engine". This widens `mm-raw` for the board
+box. A sealed free write sits in the board's store until the next board read deletes it. A private server for the
+free write, as bars-engine has, is a later step.
 
 bars-engine's Tap the Vein stays the home of tasks, charge and Lens goals; the board box is the front door he uses
-where he picks his work. Whether the council may read the whole free write to find BARs itself, the way it mines an
-episode, is his call (board row `ttv-raw-bars`).
+where he picks his work (`ttv-board-home`).
+
+## Tap the Vein first
+
+Wendell, 2026-10-14: "So let's have it be that the first thing that happens in the morning when I open the board is tap
+the vein. It checks to see if one's been done on bars-engine and if not forces one to be done in the board and then
+ingests it into the board after completion. There should be a button that gives an option to skip but if it's skipped
+for 2+ days it triggers a Wave or 321 session on the blocker that's stopping me from using it".
+
+- Until today is handled, the board opens on the Morning tab with the Tap the Vein box open, and the other tabs are
+  held. Today is handled when the last gather fetched today's sealed menu from bars-engine (`morning.sealed`, written
+  by `council/morning.py`), a menu sealed or pasted on the board carries today's date, or the store's `ttv/<date>` says
+  `done` (written at seal), `bars-engine` or `skipped`. The date is the browser's local date.
+- The board asks bars-engine itself (Wendell overruled `ttv-bars-engine-trusted` on 2026-10-14: "I do think we need to
+  be able to make an API call to bars-engine directly if this is the case"). While held, it calls bars-engine's
+  `GET /api/tap-the-vein/status?date=<today>` through the viewer's Vercel connector (`web_fetch_vercel_url`). The route
+  takes no token and answers only `{date, sealed, sealedAt}`; the menu stays behind the token. Sealed there saves
+  `ttv/<date>` as `bars-engine` with `checked: true`, the board opens, `board/pull.py` lists it under needs work, and
+  the read fetches that menu with `council/morning.py --fetch <date> --write`. Not sealed, or no answer, keeps the board
+  held with "Check bars-engine again".
+- Sealing on the board is ingested the way it already was: `morning/menu` and `morning/freewrite`, read by the next
+  board read.
+- "Skip today" saves `ttv/<date>` as `skipped`. When that makes two or more skips in a row (a done day breaks the run;
+  a day the board was not opened does not), the board offers the WAVE room (`ttv-skip-wave`, his steer: "It should
+  deposit me inside the WAVE room and we should move to have the WAVE room be able to metabolize context specific
+  charges and send the results to the board"). "Go into the WAVE room" opens
+  `https://bars-engine.vercel.app/ontology-game/cave/#wave=board&charge=<words>&skips=<n>&ref=tap-the-vein--<time>&date=<day>`
+  in a new tab; "Work it here on the board instead" opens the board's blocker panel (`docs/blocker-panel.md`). The
+  choice is saved on `ttv/<date>` as `wave` (`room`, `board` or `not-now`) with `waveRef`.
+- The room side is the WAVE room thread's work: reading that hash to open the room with the charge, and sending the
+  run back as a `blockers/<ref>` record with `engine: "wave-room"` (the contract in `docs/blocker-panel.md`, "Plugging
+  in the WAVE room"). Until it does, the link opens the cave's front page.
+
+## Everything you can do today
+
+`lens-intake-align` (Lenses pass 1, 2026-10-14): "The full intake lists what you can do today; the board read gives
+each item one line: the goal it serves, the board row it advances, or a pitched smaller goal. The reason is written,
+not word overlap."
+
+1. In the Tap the Vein box he lists everything he can do today, one per line, above the free write. The free write is
+   optional now. Sealing saves the list with any To do lines as one menu at `morning/menu` (list items carry
+   `source: can_do`); the free write is saved only when there is one.
+2. The board read that finds `morning/menu` under needs work reads each item against his Lens goals
+   (`morning.goals`), the open board rows and the free write, and writes one sentence on where it goes. It saves them
+   as `[{"line", "why", and one of "goal": <goal id>, "row": <board row id>, "pitch": {"title", "parentId"} or
+   {"title", "domain"}}]` and runs `python3 council/intake_align.py <dir>/morning/menu.json --aligns <file> --write`.
+   The script refuses an item left out, reworded or aligned twice, a goal or row that does not exist, and a reason
+   under four words. A pitch with a parent is one cadence smaller under that goal; without goals, it is a year goal in
+   a domain. Each pitch becomes a question on the Open tab.
+3. Then `python3 council/morning.py --write`, commit on main and republish. Each item on the Morning tab shows its
+   written line, and he can still change its goal before he picks.
+4. The read that records his answers runs `python3 council/lens_goals.py kept --send`, which sends kept intake
+   pitches with their parent, so bars-engine files a smaller goal under it (bars-engine `POST /api/lenses/goals`,
+   `parentId`).
+
+## Lens goals on the Morning tab
+
+`lens-board-reads-goals` (Lenses pass 1, 2026-10-14): the board reads his Lens goals every morning without needing a
+sealed menu. `council/morning.py` reads bars-engine's `GET /api/lenses/goals` with the same `COUNCIL_MENU_TOKEN`
+(or a saved copy with `--goals <file>`), and its goals win over the menu's goals list. The Morning tab shows them in
+the "Your Lens goals" panel, one row per domain, with an empty domain shown as "No goals here yet". When the export
+cannot be read, the panel says why and falls back to the goals in the sealed menu.
 
 ## The categories
 
