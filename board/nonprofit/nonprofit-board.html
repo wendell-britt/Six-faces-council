@@ -1,0 +1,1814 @@
+<title>Nonprofit Board</title>
+<style>#tab-morning,#tab-outreach{display:none!important}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: three views. Open is the default and holds only work waiting on Wendell; Resolved holds every decision, grouped, compact. */
+:root{
+  --bg:#f6f5f1; --fg:#1d1f1e; --muted:#5d625f; --line:#d9d8d1; --panel:#ffffff;
+  --accent:#1f6f6a; --accent-ink:#ffffff; --accent-soft:#e1efed; --warn:#9a4b1e; --warn-bg:#f8e9df; --ok:#2f7a3b;
+  --f-shaman:#8b3a8f; --f-challenger:#b3331f; --f-regent:#a9741a; --f-architect:#c9681b; --f-diplomat:#2f7a3b; --f-sage:#1f6f6a;
+  --display:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+  --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#17191a; --fg:#ece9e1; --muted:#a4a8a3; --line:#33373a; --panel:#1f2224;
+  --accent:#5fc2ba; --accent-ink:#0f1a19; --accent-soft:#1e3533; --warn:#e8a06e; --warn-bg:#3a2a1f; --ok:#7cc488; color-scheme:dark; } }
+:root[data-theme="dark"]{
+  --bg:#17191a; --fg:#ece9e1; --muted:#a4a8a3; --line:#33373a; --panel:#1f2224;
+  --accent:#5fc2ba; --accent-ink:#0f1a19; --accent-soft:#1e3533; --warn:#e8a06e; --warn-bg:#3a2a1f; --ok:#7cc488; color-scheme:dark; }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.5;padding-block:24px 48px;padding-inline:16px;max-width:860px;margin:0 auto}
+h1{font-family:var(--display);font-weight:600;font-size:1.9rem;margin:0 0 6px;text-wrap:balance}
+h2{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:28px 0 8px}
+p{margin:0 0 10px;max-width:68ch}
+.lede{color:var(--muted)}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:18px 0 6px}
+.tab{font:inherit;font-weight:500;padding:8px 14px;border:0;border-bottom:2px solid transparent;background:none;color:var(--muted);cursor:pointer}
+.tab[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+.tab b{font-variant-numeric:tabular-nums;margin-left:4px}
+.tab{white-space:nowrap}
+.st-where[hidden]{display:none}
+@media (max-width:560px){ .tab{padding:8px 6px;font-size:.94rem} .tabs{gap:0;overflow-x:auto} }
+.banner{display:none;background:var(--warn-bg);color:var(--warn);padding:10px 12px;border-radius:4px;margin:12px 0;font-size:.92rem}
+.banner.on{display:block}
+.context{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;margin:16px 0 8px}
+.empty{background:var(--accent-soft);border-radius:6px;padding:16px;margin:16px 0;font-weight:500}
+textarea,input[type=text]{width:100%;font:inherit;font-size:.95rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:8px}
+textarea{min-height:44px;resize:vertical}
+textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.row{padding:16px 0;border-top:1px solid var(--line)}
+.row.over{box-shadow:inset 4px 0 0 var(--warn);padding-left:12px}
+.meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-bottom:6px;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.chip{display:inline-block;padding:1px 7px;border-radius:3px;color:#fff;font-weight:600}
+.chip.shaman{background:var(--f-shaman)}.chip.challenger{background:var(--f-challenger)}.chip.regent{background:var(--f-regent)}
+.chip.architect{background:var(--f-architect)}.chip.diplomat{background:var(--f-diplomat)}.chip.sage{background:var(--f-sage)}
+.tag{border:1px solid var(--muted);border-radius:3px;padding:0 6px}
+.pos{font-size:1.02rem;font-weight:500;margin:0 0 6px;max-width:72ch}
+.why{color:var(--muted);font-size:.92rem;margin:0 0 8px;max-width:72ch}
+.why span{font-family:var(--mono);font-size:.78rem}
+.ctl{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;margin-top:8px}
+.seg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.seg button{font:inherit;font-size:.9rem;padding:6px 12px;border:0;background:var(--panel);color:var(--fg);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.seg button.o[aria-pressed="true"]{background:var(--warn);color:#fff}
+.steer{flex:1 1 260px;min-width:0;display:grid;gap:6px}
+.save{font:inherit;font-size:.9rem;padding:6px 14px;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:var(--accent-ink);cursor:pointer}
+.state{font-size:.82rem;color:var(--muted);margin-top:6px;min-height:1.2em}
+.defer{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:.85rem;color:var(--muted)}
+.defer select{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
+.defer button{font:inherit;font-size:.85rem;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
+.duenote{font-size:.85rem;color:var(--muted);margin:10px 0 0}
+.review{background:var(--accent-soft);border-radius:6px;padding:10px 12px;margin:6px 0 10px;max-width:72ch}
+.review h3{font-family:var(--display);font-weight:500;font-size:1rem;margin:0 0 6px}
+.review ul{margin:4px 0 8px;padding-left:18px;font-size:.92rem}
+.review p{font-size:.92rem;margin:0 0 6px}
+.research{background:var(--accent-soft);border-radius:6px;padding:12px 14px;margin:8px 0 12px;max-width:72ch}
+.research h3{font-family:var(--display);font-weight:500;font-size:1.02rem;margin:0 0 8px}
+.research h4{font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px;font-weight:600}
+.research p{font-size:.95rem;margin:0 0 6px}
+.research p.lead{font-size:1.02rem}
+.research ul{margin:2px 0 6px;padding-left:20px;font-size:.95rem}
+.research li{margin:3px 0}
+.research .rec{border-left:3px solid var(--accent);padding-left:10px}
+.research details{margin-top:10px;font-size:.88rem}
+.research summary{cursor:pointer;color:var(--muted)}
+.research a{color:var(--accent);overflow-wrap:anywhere}
+.opts{display:grid;gap:8px;margin-top:4px}
+.opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;max-width:72ch}
+.opt:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.opt input{margin-right:6px}
+.oc{color:var(--muted);font-size:.9rem}
+.done{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;padding:10px 0;border-top:1px solid var(--line);align-items:baseline}
+.done .t{min-width:0}
+.done .d{font-size:.82rem;font-weight:600;padding:1px 8px;border-radius:3px;background:var(--accent-soft);color:var(--fg);white-space:nowrap}
+.done .d.retire,.done .d.overrule{background:var(--warn-bg);color:var(--warn)}
+.done .w{grid-column:1 / -1;font-size:.8rem;color:var(--muted)}
+.done .w.pending{color:var(--warn)}
+code{font-family:var(--mono);font-size:.86em}
+/* Your steps tab: the steps only Wendell can take, numbered because the order is real. Prefixed st- to stay clear of the board's classes. */
+.st-list{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px;margin:18px 0}
+.st-list header{display:grid;gap:4px;margin-bottom:10px}
+.st-meta{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.76rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.st-repo{border:1px solid var(--muted);border-radius:3px;padding:0 6px}
+.st-count{font-variant-numeric:tabular-nums}
+.st-bar{height:4px;background:var(--line);border-radius:2px;overflow:hidden;margin-top:6px}
+.st-bar i{display:block;height:100%;background:var(--accent)}
+.st-why{color:var(--muted);font-size:.93rem;margin:0}
+.st-src{color:var(--muted);font-size:.8rem;margin:0}
+ol.st-steps{list-style:none;margin:0;padding:0}
+.st-step{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 12px;padding:14px 0;border-top:1px solid var(--line)}
+.st-tick{width:44px;height:44px;border:2px solid var(--accent);border-radius:6px;background:var(--panel);font:600 1.1rem var(--body);cursor:pointer;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums;color:var(--accent)}
+.st-closed{border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
+.st-closed > summary,.st-finished > summary{cursor:pointer;color:var(--muted);font-weight:500;padding:10px 0}
+.st-finished{margin:18px 0}
+.st-finished > summary{font-family:var(--display);font-size:1.15rem;color:var(--fg)}
+.st-step.st-done .st-tick{background:var(--accent);color:var(--accent-ink)}
+.st-body{min-width:0;display:grid;gap:6px}
+.st-do{font-weight:600;font-size:1.02rem;margin:0}
+.st-step.st-done .st-do{color:var(--muted);text-decoration:line-through;text-decoration-thickness:1px}
+.st-row{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:8px;font-size:.93rem;align-items:baseline}
+.st-row > span:first-child{font-family:var(--mono);font-size:.74rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.st-val{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-width:0}
+.st-val code{background:var(--accent-soft);padding:3px 7px;border-radius:3px;overflow-wrap:anywhere}
+.st-btn{font:inherit;font-size:.85rem;padding:5px 10px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
+.st-btn.st-solid{background:var(--accent);color:var(--accent-ink)}
+.st-chips{display:flex;flex-wrap:wrap;gap:6px}
+.st-chip{font-size:.74rem;padding:1px 8px;border-radius:10px;background:var(--accent-soft);color:var(--fg)}
+.st-chip.st-safe{background:var(--accent-soft);color:var(--ok)}
+.st-chip.st-opt{background:var(--warn-bg);color:var(--warn)}
+.st-note{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem}
+.st-step .st-fold > summary{list-style:none;cursor:pointer;display:grid;gap:2px;color:var(--fg);padding:2px 0;min-height:44px;align-content:center}
+.st-fold > summary::-webkit-details-marker{display:none}
+.st-fold > summary .st-do{display:block;padding-right:22px;position:relative}
+.st-fold > summary .st-do::after{content:"\25B8";position:absolute;right:0;top:0;color:var(--muted);transition:transform .15s}
+.st-fold[open] > summary .st-do::after{transform:rotate(90deg)}
+.st-peek{font-size:.8rem;color:var(--muted)}
+.st-peek:empty{display:none}
+.st-fold[open] > summary .st-peek{display:none}
+.st-more{display:grid;gap:6px;margin-top:6px}
+.st-step .st-fold{font-size:inherit}
+.st-step details{font-size:.9rem}
+.st-step summary{cursor:pointer;color:var(--muted)}
+.st-step textarea{margin-top:6px}
+.st-state{font-size:.8rem;color:var(--muted);min-height:1.2em}
+/* Where you are (Wendell, 2026-10-06: "be able to tag activities as needing a computer"). On a phone, steps that need a
+   computer fold to one line so the list shows what can be done now. The choice is kept on this device only. */
+.st-where{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:14px 0 4px}
+.st-where .seg button{padding:8px 14px}
+.st-sum{font-size:.9rem;color:var(--muted);margin:0}
+.st-chip.st-pc{background:var(--warn-bg);color:var(--warn);font-weight:600}
+.st-step.st-later{grid-template-columns:44px minmax(0,1fr);opacity:.62;padding:8px 0}
+.st-step.st-later .st-tick{width:28px;height:28px;font-size:.85rem;border-width:1px}
+.st-step.st-later .st-do{font-weight:500;font-size:.95rem}
+.st-later-note{font-size:.85rem;color:var(--warn);margin:0}
+/* Due dates (Wendell, 2026-10-06): every step has a deadline, so a step that slips shows up as charge to work with. */
+.st-due-over{color:var(--warn);font-weight:600}
+/* Files to review on a step (Wendell, 2026-10-14, blocker on anastasia-campaign-live-01: "If I Can click the file see
+   whats going on and update the notes that would get me unblocked"). The draft sits in the card, open, with its own notes. */
+.st-files{display:grid;gap:8px}
+.st-file{border:1px solid var(--line);border-radius:6px;padding:8px 10px;background:var(--panel)}
+.st-file > summary{font-weight:600;color:var(--fg)!important;min-height:32px;display:flex;align-items:center;gap:8px}
+.st-file-kind{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:400}
+.st-file-text{white-space:pre-wrap;overflow-wrap:anywhere;max-height:60vh;overflow:auto;background:var(--accent-soft);border-radius:4px;padding:10px 12px;margin:6px 0;font-size:.93rem;line-height:1.5;color:var(--fg)}
+.st-file img{max-width:100%;height:auto;border-radius:4px;margin:6px 0;display:block}
+.st-file-cap{font-size:.85rem;color:var(--muted);margin:4px 0}
+.st-file-bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:4px 0}
+.st-file label{font-size:.85rem;color:var(--muted);display:block;margin-top:6px}
+.st-charge{background:var(--warn-bg);color:var(--warn);border-radius:4px;padding:6px 8px;font-size:.9rem;margin:0}
+.st-move{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}
+.st-move input{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
+/* Battles, Wendell 2026-10-04: "The the board is the world map and emergent new feature is like a pokemon battle [...] I
+   through the battle and at the end the board is updated". A feature request run is an encounter on the Open tab; its
+   questions and positions are played as turns in a battle screen, and each turn saves to the same store as a row. bt- prefix. */
+.bt-map{margin:18px 0 8px}
+.bt-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px}
+.bt-tile{display:grid;grid-template-columns:56px minmax(0,1fr);gap:10px;align-items:center;text-align:left;font:inherit;color:var(--fg);background:var(--panel);border:2px solid var(--line);border-radius:8px;padding:10px;cursor:pointer}
+.bt-tile:hover{border-color:var(--accent)}
+.bt-tile.bt-won{opacity:.6}
+.bt-tile b{display:block;font-family:var(--display);font-size:1.02rem}
+.bt-tile small{color:var(--muted);font-size:.8rem}
+.bt-mon{image-rendering:pixelated;display:block}
+.bt-screen{position:fixed;inset:0;z-index:20;background:var(--bg);overflow:auto;padding:16px;display:none}
+.bt-screen.on{display:block}
+.bt-stage{max-width:640px;margin:0 auto;display:grid;gap:12px}
+.bt-field{position:relative;border:2px solid var(--fg);border-radius:8px;min-height:250px;background:linear-gradient(var(--accent-soft) 0 58%, var(--panel) 58%);overflow:hidden}
+.bt-hud{position:absolute;background:var(--panel);border:2px solid var(--fg);border-radius:6px;padding:6px 10px;min-width:190px;max-width:62%}
+.bt-hud.bt-foe{top:12px;left:12px}
+.bt-hud.bt-you{bottom:12px;right:12px}
+.bt-hud b{font-family:var(--mono);font-size:.86rem;letter-spacing:.04em;text-transform:uppercase}
+.bt-lv{float:right;font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-left:8px}
+.bt-hp{display:flex;gap:6px;align-items:center;font-family:var(--mono);font-size:.72rem;margin-top:4px}
+.bt-bar{flex:1;height:7px;border:1px solid var(--fg);border-radius:4px;overflow:hidden;background:var(--bg)}
+.bt-bar i{display:block;height:100%;background:var(--ok);transition:width .6s}
+.bt-bar i.bt-low{background:var(--warn)}
+.bt-sprite{position:absolute;top:22px;right:30px}
+.bt-party{position:absolute;bottom:20px;left:14px;display:flex;flex-wrap:wrap;gap:4px;max-width:46%}
+.bt-party .chip{font-size:.68rem}
+.bt-box{border:3px double var(--fg);border-radius:8px;background:var(--panel);padding:12px 14px;min-height:96px}
+.bt-say{margin:0 0 6px;font-size:1rem;max-width:none}
+.bt-sub{color:var(--muted);font-size:.88rem;margin:0 0 6px}
+.bt-moves{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}
+.bt-move{font:inherit;text-align:left;padding:10px 12px;border:2px solid var(--fg);border-radius:6px;background:var(--bg);color:var(--fg);cursor:pointer}
+.bt-move:hover,.bt-move:focus-visible{border-color:var(--accent);background:var(--accent-soft)}
+.bt-move b{display:block}
+.bt-move span{color:var(--muted);font-size:.86rem}
+.bt-move.bt-over{border-color:var(--warn)}
+.bt-move[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 2px var(--accent)}
+.bt-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.bt-link{font:inherit;font-size:.88rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:4px 0;text-decoration:underline}
+.bt-steer{margin-top:8px}
+.bt-log{font-size:.85rem;color:var(--muted);margin:0;padding-left:18px}
+@keyframes bt-hit{0%,100%{transform:none}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.bt-hit{animation:bt-hit .35s}
+@media (prefers-reduced-motion: reduce){.bt-hit{animation:none}.bt-bar i{transition:none}}
+/* Send to Claude (board-auto-pickup, 2026-10-06). Wendell's answers sat unread for 25 minutes because nothing tells a
+   session the board was saved. Once anything is saved and not yet sent, this bar offers one button that fires the
+   project's pickup routine through the Claude Code Remote connector, and a Claude records and acts on the answers. */
+.send{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--panel);border-top:2px solid var(--accent);padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));display:none}
+.send.on{display:block}
+body.has-send{padding-bottom:120px}
+.send-in{max-width:860px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
+.send-in p{margin:0;font-size:.92rem;flex:1 1 240px}
+.send-in .save{padding:8px 16px;font-weight:600}
+.send-in .save:disabled{opacity:.6;cursor:default}
+/* Close (Wendell, 2026-10-06: "needs to be able to be dismissed so we can access the button underneath"). Closing hides
+   the bar until something new is saved; on this device only. */
+.send-x{font:inherit;font-size:1.3rem;line-height:1;width:44px;height:44px;flex:0 0 44px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--muted);cursor:pointer}
+/* Outreach (outreach-on-board, 2026-10-08). The Podcast Outreach page's contacts and shows live in this board's store,
+   so a chase saved on Your steps writes the contact itself and no session carries it across. */
+.oc-shows{display:flex;flex-wrap:wrap;gap:4px;margin:14px 0 4px}
+.oc-shows button{font:inherit;font-size:.88rem;padding:6px 10px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--muted);cursor:pointer}
+.oc-shows button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.oc-tally{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin:6px 0 0}
+.oc-row{padding:14px 0 14px 12px;border-top:1px solid var(--line);box-shadow:inset 3px 0 0 var(--line)}
+.oc-row.go{box-shadow:inset 3px 0 0 var(--ok)}
+.oc-row.flag{box-shadow:inset 3px 0 0 var(--warn)}
+.oc-head{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.oc-who{font-weight:600;font-size:1.02rem;margin:0}
+.oc-who a{color:inherit}
+.oc-role{font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.oc-why{color:var(--muted);font-size:.93rem;margin:6px 0 0}
+.oc-notes{font-size:.88rem;margin:4px 0 0;white-space:pre-line}
+.oc-meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-family:var(--mono);font-size:.76rem;color:var(--muted);margin-top:8px}
+.oc-flag{color:var(--warn);font-weight:600;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;display:inline-block}
+.oc-pick{font:inherit;font-size:.82rem;padding:3px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
+.oc-add{border-top:1px solid var(--line);margin-top:18px;padding-top:12px}
+.oc-add summary{cursor:pointer;color:var(--muted);font-weight:500}
+.oc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.oc-grid label{display:grid;gap:3px;font-size:.82rem;color:var(--muted);min-width:0}
+.oc-grid .full{grid-column:1/-1}
+.oc-grid input,.oc-grid select{width:100%;font:inherit;font-size:.95rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:7px 8px}
+@media (max-width:560px){ .oc-grid{grid-template-columns:1fr} }
+.ch-form{display:grid;gap:8px;margin-top:4px}
+.ch-acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ch-acts button{font:inherit;font-size:.95rem;min-height:44px;padding:6px 8px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
+.ch-acts button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.ch-line{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.ch-line input[type=date]{font:inherit;font-size:.95rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:6px 8px}
+.ch-line input[type=text]{flex:1 1 200px;width:auto}
+/* Morning tab (mm-backlog-sources, mm-menu-shape, 2026-10-09): each source its own category to explore, every item
+   bridged to a Lens goal, at most seven picks. Prefixed mo-. */
+.mo-head{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;margin:14px 0 4px}
+.mo-count{font-variant-numeric:tabular-nums;font-weight:600}
+.mo-cat{background:var(--panel);border:1px solid var(--line);border-radius:6px;margin:10px 0;padding:0 14px}
+.mo-cat>summary{cursor:pointer;padding:12px 0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;list-style:none}
+.mo-cat>summary::-webkit-details-marker{display:none}
+.mo-cat>summary::before{content:"▸";color:var(--muted);width:1em}
+.mo-cat[open]>summary::before{content:"▾"}
+.mo-cat>summary b{font-family:var(--display);font-weight:500;font-size:1.05rem}
+.mo-cat>summary span{color:var(--muted);font-size:.85rem}
+.mo-item{padding:12px 0;border-top:1px solid var(--line)}
+.mo-item.picked{box-shadow:inset 4px 0 0 var(--accent);padding-left:12px}
+.mo-text{margin:0 0 4px;max-width:72ch;overflow-wrap:anywhere}
+.mo-note{font-size:.82rem;color:var(--muted);margin:0 0 6px}
+.mo-note a{color:var(--accent)}
+.mo-bridge{font-size:.9rem;margin:0 0 6px;max-width:72ch}
+.mo-bridge.unaligned{color:var(--warn)}
+.mo-ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.mo-ctl select{font:inherit;font-size:.85rem;padding:4px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);max-width:100%}
+.mo-ctl input[type=text]{flex:1 1 200px;width:auto;padding:5px 8px}
+.mo-pick{font:inherit;font-size:.88rem;padding:5px 14px;border:1px solid var(--accent);border-radius:4px;background:var(--panel);color:var(--accent);cursor:pointer}
+.mo-pick[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.mo-pick:disabled{opacity:.45;cursor:not-allowed}
+/* Lenses panel (lens-board-reads-goals, 2026-10-14): his active Lens goals by domain, empty domains shown as empty. */
+.mo-lens{display:grid;grid-template-columns:minmax(7.5rem,max-content) 1fr;gap:6px 14px;padding:4px 0 12px}
+.mo-lens dt{font-weight:600}
+.mo-lens dd{margin:0;overflow-wrap:anywhere}
+.mo-lens dd.none{color:var(--muted)}
+.mo-lens ul{margin:0;padding-left:1.1em}
+/* Tap the Vein on the board (2026-10-14, Wendell: "so that I can do the tap the vein directly from the environemnt where
+   I'll be using that information"). The free write stays in this browser; only lines he marks are saved (mm-raw). */
+.ttv-write{width:100%;min-height:10em}
+.ttv-line .mo-ctl{margin-top:4px}
+.ttv-line.kept{box-shadow:inset 4px 0 0 var(--accent);padding-left:12px}
+.mo-more{font:inherit;font-size:.85rem;margin:8px 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
+
+/* Blocker panel (Wendell, 2026-10-12: an overdue step "needs to actually run a player through the blockage and save the
+   data about the specific task that was blocked and what came up for the player and how it was resolved"). The board's
+   own light version, shaped as the WAVE room's steps (Welcome, Acknowledge, Validate, Exhale, a staged 3-2-1 for a part
+   that stays) so the room or the Ontology game can take over the same record later. Each stage saves to blockers/ in
+   the store; board/pull.py copies the records to council/blockers/ on main. bk- prefix; it borrows the battle screen. */
+#bk-screen{z-index:40}
+.bk-wave{display:flex;gap:6px;justify-content:center;font-family:var(--mono);font-size:.8rem;letter-spacing:.06em}
+.bk-wave span{padding:4px 10px;border:1px solid var(--line);border-radius:14px;color:var(--muted)}
+.bk-wave span.on{border-color:var(--accent);background:var(--accent);color:var(--accent-ink)}
+.bk-wave span.past{border-color:var(--accent);color:var(--accent)}
+.bk-task{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.bk-task b{display:block;font-size:1.02rem}
+.bk-task small{color:var(--warn);font-size:.85rem}
+.bk-box textarea,.bk-box input[type=text]{margin:4px 0 8px}
+.bk-picks{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 10px}
+.bk-picks button{font:inherit;font-size:.88rem;min-height:40px;padding:6px 12px;border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--fg);cursor:pointer}
+.bk-picks button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.bk-scale{display:grid;grid-template-columns:repeat(11,minmax(0,1fr));gap:3px;margin:4px 0 10px}
+.bk-scale button{font:inherit;font-size:.85rem;min-height:40px;padding:0;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer;font-variant-numeric:tabular-nums}
+.bk-scale button[aria-pressed="true"]{background:var(--warn);border-color:var(--warn);color:#fff}
+.bk-breath{width:120px;height:120px;margin:10px auto;border-radius:50%;background:var(--accent-soft);border:2px solid var(--accent);animation:bk-breath 8s ease-in-out 2}
+@keyframes bk-breath{0%,100%{transform:scale(.6)}45%{transform:scale(1)}55%{transform:scale(1)}}
+@media (prefers-reduced-motion: reduce){.bk-breath{animation:none}}
+.bk-log{font-size:.88rem;margin:4px 0 8px;padding-left:18px}
+.bk-log li{margin:2px 0}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bk-past{font-size:.85rem;color:var(--muted);margin:0}
+/* Tap the Vein first (ttv-first, Wendell 2026-10-14): until today's is sealed, done in bars-engine or skipped, the board
+   opens on the Morning tab and holds the other tabs. */
+.ttv-gate{display:none;border:1px solid var(--accent);border-radius:8px;padding:12px 14px;margin:12px 0}
+body.ttv-held .ttv-gate{display:block}
+body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
+.ttv-gate .ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+</style>
+
+<h1>Nonprofit Board</h1>
+<p class="lede">Work from the six faces that waits on you. Anything you decide moves to Resolved. When you have saved, press Send to Claude at the bottom, and Claude records it and starts the work.</p>
+<p class="lede">Steps only you can take, such as a setting in Vercel, are on the Your steps tab. Tick each one as you go; Claude reads the ticks.</p>
+
+<div class="tabs" role="tablist">
+  <button class="tab" role="tab" id="tab-open" aria-selected="true" aria-controls="view-open">Open<b id="n-open">0</b></button>
+  <button class="tab" role="tab" id="tab-morning" aria-selected="false" aria-controls="view-morning">Morning<b id="n-morning">0</b></button>
+  <button class="tab" role="tab" id="tab-steps" aria-selected="false" aria-controls="view-steps">Your steps<b id="n-steps">0</b></button>
+  <button class="tab" role="tab" id="tab-outreach" aria-selected="false" aria-controls="view-outreach">Outreach<b id="n-outreach">0</b></button>
+  <button class="tab" role="tab" id="tab-resolved" aria-selected="false" aria-controls="view-resolved">Resolved<b id="n-resolved">0</b></button>
+</div>
+<div class="banner" id="banner">This view cannot save. Your choices stay on screen only.</div>
+<div class="ttv-gate" id="ttv-gate" role="region" aria-label="Tap the Vein first">
+  <p class="lede" style="margin:0"><b>Tap the Vein comes first today.</b> Seal it in the box below and the rest of the board opens. The next board read takes in what you sealed.</p>
+  <div class="ctl"><button type="button" id="ttv-recheck" hidden>Check bars-engine again</button><button type="button" id="ttv-skip">Skip today</button><span class="state" id="ttv-gate-state"></span></div>
+</div>
+
+<section id="view-open" role="tabpanel" aria-labelledby="tab-open">
+  <div id="bt-map" class="bt-map" hidden></div>
+  <div class="context">
+    <h2 style="margin-top:0">Context for the agents</h2>
+    <p class="lede">Anything every face should carry into the next pass, or anything you want reopened.</p>
+    <textarea id="ctx" placeholder="Extra context or steering for the six"></textarea>
+    <div class="ctl"><button class="save" id="ctx-save">Save context</button><div class="state" id="ctx-state"></div></div>
+  </div>
+  <div id="open-empty" class="empty" hidden>Nothing is waiting on you.</div>
+  <div id="open-q"></div>
+  <div id="open-t"></div>
+  <div id="open-p"></div>
+  <div id="open-c"></div>
+  <p class="duenote" id="open-deferred" hidden></p>
+</section>
+
+<section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
+  <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
+  <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
+  <details class="mo-cat" id="mo-lenses" open hidden><summary><b>Your Lens goals</b><span id="mo-lenses-sum"></span></summary>
+    <dl class="mo-lens" id="mo-lens-list"></dl>
+  </details>
+  <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">List what you can do, write, seal</span></summary>
+    <p class="lede"><label for="ttv-can">Everything you can do today, one per line.</label> The next board read gives each one a written line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches for you to keep (lens-intake-align).</p>
+    <textarea id="ttv-can" class="ttv-write" rows="6" placeholder="One thing per line"></textarea>
+    <p class="lede">Then write whatever is here this morning, if you like. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
+    <div class="ttv-lens" id="ttv-lens" hidden><p class="lede"><label>Lens with no goals yet: <select id="ttv-lens-pick"></select></label> <span id="ttv-lens-prompt"></span> If you write toward it, the board read also pitches year goals for it from your words, and each one you keep becomes an active goal in bars-engine (lens-pitch-goals).</p></div>
+    <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
+    <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines</button><div class="state" id="ttv-state"></div></div>
+    <div id="ttv-lines"></div>
+    <div class="ctl" id="ttv-seal-row"><button class="save" id="ttv-seal" type="button">Seal the menu</button><div class="state" id="ttv-count"></div></div>
+  </details>
+  <details class="mo-cat mo-paste" id="mo-paste"><summary><b>Or paste this morning's menu</b><span id="mo-paste-sum">From Tap the Vein's Copy the sealed menu button</span></summary>
+    <p class="lede">If the council could not fetch your menu, paste it here. Your kept lines show as soon as you save. Only the sealed menu is read; your free write never leaves Tap the Vein.</p>
+    <textarea id="mo-paste-text" rows="4" placeholder="Paste the copied menu here"></textarea>
+    <div class="ctl"><button class="save" id="mo-paste-save" type="button">Save the menu</button><div class="state" id="mo-paste-state"></div></div>
+  </details>
+  <div id="mo-empty" class="empty" hidden>No morning gathered yet. Paste your sealed menu above, or a council session gathers it with the open work.</div>
+  <div id="mo-cats"></div>
+</section>
+
+<section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
+  <p class="lede" style="margin-top:14px">Only the steps nobody else can take, because they need your accounts, your money or your eyes. Each one says where to go, what to enter, how you will know it worked, and when it is due.</p>
+  <div class="st-where" id="st-where">
+    <span class="st-sum">I'm on my</span>
+    <div class="seg" role="group" aria-label="Which device you are on">
+      <button type="button" data-where="phone" aria-pressed="false">Phone</button>
+      <button type="button" data-where="computer" aria-pressed="false">Computer</button>
+    </div>
+    <p class="st-sum" id="st-where-sum"></p>
+  </div>
+  <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
+  <div id="steps-chase"></div>
+  <div id="steps-todo"></div>
+  <div id="steps-done"></div>
+</section>
+
+<section id="view-outreach" role="tabpanel" aria-labelledby="tab-outreach" hidden>
+  <p class="lede" style="margin-top:14px">Everyone you are asking onto a show, and where each ask stands. Anyone due a chase is also on Your steps under Podcast chases, and saving a chase there updates the row here.</p>
+  <div class="oc-shows" id="oc-shows" role="group" aria-label="Show"></div>
+  <p class="oc-tally" id="oc-tally"></p>
+  <div id="oc-empty" class="empty" hidden>No one on the list yet.</div>
+  <div id="oc-rows"></div>
+  <details class="oc-add"><summary>Add someone</summary>
+    <form class="oc-grid" id="oc-add">
+      <label class="full">Name<input id="oa-name" required autocomplete="off"></label>
+      <label>Host or guest<select id="oa-role"><option>Guest</option><option>Host</option></select></label>
+      <label>Show<input id="oa-show" list="oc-showlist" autocomplete="off"><datalist id="oc-showlist"></datalist></label>
+      <label class="full">Contact or link<input id="oa-contact" autocomplete="off" placeholder="https://…"></label>
+      <label class="full">Why them<input id="oa-why" autocomplete="off"></label>
+      <label>Status<select id="oa-status"></select></label>
+      <label>Last touch<input id="oa-last" type="date"></label>
+      <label>Next touch<input id="oa-next" type="date"></label>
+      <label>Notes<input id="oa-notes" autocomplete="off"></label>
+      <div class="ctl full"><button class="save" type="submit">Add to the list</button><div class="state" id="oa-state"></div></div>
+    </form>
+  </details>
+  <details class="oc-add"><summary>Add a show</summary>
+    <form class="oc-grid" id="oc-addshow">
+      <label class="full">Show name<input id="os-name" required autocomplete="off"></label>
+      <div class="ctl full"><button class="save" type="submit">Add the show</button><div class="state" id="os-state"></div></div>
+    </form>
+  </details>
+</section>
+
+<section id="view-resolved" role="tabpanel" aria-labelledby="tab-resolved" hidden>
+  <p class="lede" style="margin-top:14px">Every decision so far, with where it was recorded. To reopen one, say so in the context box on the Open tab.</p>
+  <div id="res-d"></div>
+  <div id="res-q"></div>
+  <div id="res-t"></div>
+  <div id="res-c"></div>
+  <div id="res-p"></div>
+  <div id="res-s"></div>
+</section>
+
+<div class="send" id="send" role="region" aria-label="Send to Claude" aria-live="polite">
+  <div class="send-in"><p id="send-msg"></p><button type="button" class="save" id="send-btn" hidden>Send to Claude</button><button type="button" class="send-x" id="send-x" aria-label="Close this bar">×</button></div>
+</div>
+
+<div class="bt-screen" id="bt-screen" role="dialog" aria-modal="true" aria-labelledby="bt-name">
+  <div class="bt-stage">
+    <div class="bt-field" id="bt-field">
+      <div class="bt-hud bt-foe"><b id="bt-name"></b><span class="bt-lv" id="bt-lv"></span>
+        <div class="bt-hp">HP <div class="bt-bar"><i id="bt-hp"></i></div><span id="bt-hpn"></span></div></div>
+      <div class="bt-sprite" id="bt-sprite"></div>
+      <div class="bt-party" id="bt-party"></div>
+      <div class="bt-hud bt-you"><b>The council</b><span class="bt-lv">six faces</span>
+        <div class="bt-hp">turns <div class="bt-bar"><i id="bt-turns"></i></div><span id="bt-turnn"></span></div></div>
+    </div>
+    <div class="bt-box" id="bt-box" aria-live="polite"></div>
+  </div>
+</div>
+
+<div class="bt-screen" id="ttv-wave" role="dialog" aria-modal="true" aria-labelledby="ttv-wave-title">
+  <div class="bt-stage">
+    <b id="ttv-wave-title" style="font-family:var(--display);font-size:1.1rem">Something is in the way of Tap the Vein</b>
+    <div class="bt-box"><p class="bt-say" id="ttv-wave-say"></p>
+      <p class="bt-sub">The WAVE room meets it as a charge: Welcome, Witness, Acknowledge, Allow, Validate, then the 3-2-1 if it stays. It opens in a new tab.</p>
+      <div class="bt-row"><a class="save" id="ttv-wave-go" target="_blank" rel="noopener" href="#">Go into the WAVE room</a><button type="button" class="bt-link" id="ttv-wave-here">Work it here on the board instead</button></div>
+      <div class="bt-row"><span></span><button type="button" class="bt-link" id="ttv-wave-close">Not now</button></div></div>
+  </div>
+</div>
+
+<div class="bt-screen" id="bk-screen" role="dialog" aria-modal="true" aria-labelledby="bk-title">
+  <div class="bt-stage">
+    <div class="bt-row"><b id="bk-title" style="font-family:var(--display);font-size:1.1rem">Work through what's in the way</b><button type="button" class="bt-link" data-bk="close">Close (what you wrote is saved)</button></div>
+    <div class="bk-wave" id="bk-wave" aria-hidden="true"></div>
+    <div class="bk-task" id="bk-task"></div>
+    <div class="bt-box bk-box" id="bk-box" aria-live="polite"></div>
+  </div>
+</div>
+
+<script id="board-data" type="application/json">{"updated": "2026-10-15", "positions": [{"id": "np-kids-first", "faces": ["regent", "diplomat"], "pass": "nonprofit structure", "auto": true, "pos": "The nonprofit serves children first. Adult education runs as a division of the same nonprofit, on the same technology, so one game engine and one design ontology serve both. Grant applications lead with the kids' programs, and the adult work (the allyship book, speaking, coaching) is the second program line. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15, after the nonprofit review found that no repo names kids as the audience: \"It could very easily be a division of a non-profit that focuses on kids since anything I make will run off the same technology.\" Also: \"Since we are making games children will be able to use it and potentially there are more grants available.\" bars-engine src/app/nonprofit/page.tsx still has no purpose paragraph and says \"Not yet incorporated, no 501(c)(3) determination\"."}, {"id": "np-red-door-precedent", "faces": ["regent", "architect"], "pass": "nonprofit structure", "auto": true, "pos": "The August Wilson Red Door Project is the model for one organization with a school program and an adult program. Its school program is the August Wilson Monologue Competition for grades 10 to 12. Its adult work is theater and dialogue on race, including a play made with Portland police officers. The Collins Foundation gave it $50,000 over one year in 2019 for arts programs on race and public safety. The grant pitch cites it as a precedent you worked inside. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15: \"August Wilson red door project is an organization I've worked for in the past that does programming for schools and for adults as well\". The program facts come from web sources dated 2016 to 2019 (Concordia Neighborhood Association, Oregon ArtsWatch, Portland Tribune, Portland Monthly, Collins Foundation grant list). Its current programs were not checked."}, {"id": "np-mentorschip-both-ways", "faces": ["diplomat", "challenger"], "pass": "nonprofit structure", "auto": true, "pos": "The talk with Dr. Micah McCrary-Dennis, founder of MentorSchip, covers both directions. You adapt MentorSchip's work for adults, and the games go to MentorSchip's students as a first program site and a source of real playtests with kids. The joint pitch pairs inner resources with outer ones: introspection games beside scholarship readiness, for the same kids. Both organizations have published no outcome numbers, so a joint pilot with before and after measures is the grant asset for both. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15: \"I have a homie who is the founder of mentorschip who has done work in this space. I'd been talking with him about adapting his organizations work to adult education as well\". mentorschip.com, read 2026-10-15: a Portland \"certified 501(c)(3) nonprofit education charity\" with the vision \"DEBT-FREE EDUCATION FOR ALL\"; the founder brings students into the scholarship process \"as early as age 10\"; it runs FAFSA Quest and a beta augmented-reality scholarship hunt; its impact counters are blank. bars-engine src/app/nonprofit/page.tsx lists \"a first program site\" among its four needs."}, {"id": "np-kids-content-review", "faces": ["shaman", "regent"], "pass": "nonprofit structure", "auto": true, "pos": "Before any child plays Sprout Plot, Root or the caves, each gets a kids' content and data review. The content review covers the founder's backstory (\"the children were dying\"), the law that a human who kills a human is a monster, the Big Mind cave's line about childhood abuse, and Root's knockdowns. The data review decides whether free text is stored, keeps the playtest kit's consent card that records no identity, follows COPPA for any player under 13, and states \"a game, not therapy\" with a crisis resource. This stands unless you flip it.", "why": "Follows from np-kids-first. Sources: sprout docs/design.md (World and story); sprout council/daemons/reports/2026-10-10-big-mind-cave-protector.md, which asks to \"State plainly that this is a game, not therapy, and give a crisis resource\" and flags that \"nobody has decided whether free text is stored\"; sprout docs/playtest.md (consent card)."}], "questions": [{"id": "np-age-band", "faces": ["regent", "diplomat"], "pass": "nonprofit structure", "q": "Which age band does the kids' side serve first?", "why_you": "No repo states an age range, and funders, schools and the content review all start from it. It is a call about who you serve.", "not_before": "Your ruling of 2026-10-15 put kids first without naming ages. MentorSchip starts students \"as early as age 10\".", "options": [{"v": "middle", "label": "Middle school, about 10 to 14", "c": "Matches where MentorSchip starts. Sprout's farming RPG and push hands fit this band. Players under 13 bring COPPA rules if the game collects anything from them."}, {"v": "high", "label": "High school, about 14 to 18", "c": "Matches Red Door's grades 10 to 12 and MentorSchip's scholarship years. The heavier story lines need the least softening."}, {"v": "elementary", "label": "Elementary, about 8 to 11", "c": "Needs the most content and reading-level change, and COPPA applies throughout."}, {"v": "after-mentorschip", "label": "Set it after the MentorSchip talk", "c": "His students decide the band, and the content review waits until then."}]}, {"id": "np-mentorschip-shape", "faces": ["regent", "architect"], "pass": "nonprofit structure", "q": "What shape should the tie with MentorSchip take?", "why_you": "It decides who applies for grants and whose name is on them. Only you and he can settle it.", "not_before": "Your words of 2026-10-15 name the conversation and leave the structure open.", "options": [{"v": "partner", "label": "Two organizations, one joint program", "c": "Each keeps its own board. Grants name both, or one applies with the other as program partner."}, {"v": "sponsor", "label": "MentorSchip sponsors your programs for now", "c": "You take grants before your own 501(c)(3). Its site says it is a 501(c)(3); confirm that on the IRS Tax Exempt Organization Search first."}, {"v": "one-org", "label": "One organization with a kids' division and an adult division", "c": "The Red Door shape. It needs the most legal and governance work up front."}, {"v": "after-talk", "label": "Decide after the talk", "c": "Nothing is built on the structure until you report back."}]}], "causes": [], "terms": [], "resolved": {"positions": {}, "questions": {}, "causes": {}, "terms": {}}, "steers_recorded": [], "steer_recorded_through": "", "battles": [], "steps_recorded_through": "", "morning": null, "picks": []}</script>
+<script>
+const DATA = JSON.parse(document.getElementById('board-data').textContent);
+const R = DATA.resolved;
+const live = {positions:{}, questions:{}, causes:{}, terms:{}};
+let liveSteer = null, db = null;
+// Send to Claude: the routine it fires, the last send (pickup/last in the store), and steps changed before this date
+// are never counted, so ticks Claude already read do not light the bar.
+const PICKUP_TRIGGER = 'trig_01L138vKTaN9MSJoFKRmaBNx', PICKUP_SINCE = '2026-10-06T20:00:00Z';
+let mcp = null, lastSent = null, sendBusy = false, sendNote = '', sendNoteTimer = 0;
+let sendClosed = (() => { try { return localStorage.getItem('board-send-closed'); } catch { return null; } })();
+const local = {positions:{}, questions:{}, terms:{}, causes:{}};
+
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const chips = fs => (fs||[]).map(f => `<span class="chip ${esc(f)}">${esc(f)}</span>`).join('');
+const LABEL = {stands:'Stands', overrule:'Overruled', adopt:'Adopted', retire:'Retired', not_yet:'Not yet', not_a_term:'Not a term', kept:'Kept'};
+
+/* A store row counts as a new save when it is later than the save the record holds. A deferral's record carries its
+   save time in history, so a save later the same day counts; before 2026-10-04 a record held only a date, so a
+   same-day save after a deferral looked already recorded, and Wendell's overrule of fr-belief-readings seemed not to
+   save ("it didn't let me save"). Records with only a date still compare against the end of that day. */
+const recordedAt = r => { const h = r.history || [], t = r.saved_at || (h.length && h[h.length - 1].saved_at);
+  return t ? Date.parse(t) + 999 : Date.parse(r.recorded + 'T23:59:59Z'); };
+function status(kind, id){
+  const s = live[kind][id], r = R[kind][id];
+  if (s && (!r || (s.savedAt && Date.parse(s.savedAt) > recordedAt(r)))) return 'saved';
+  if (r) return 'recorded';
+  return 'open';
+}
+const isOpen = (kind, id) => status(kind, id) === 'open' || (typeof isDueBack === 'function' && isDueBack(kind, id));
+
+function section(title, lede, html){ return html ? `<h2>${title}</h2>${lede?`<p class="lede">${lede}</p>`:''}${html}` : ''; }
+
+/* Deferring, Wendell 2026-10-03: "We need to be able to defer projects so they don't get trapped on the board,
+   but we are also collecting data about priority". A deferred item leaves the Open tab, keeps its steer, and
+   comes back by itself when its date passes. Each deferral is recorded in the ledger as priority data. */
+const UNTIL = [['week','in a week'],['month','in a month'],['ask','when I ask']];
+/* Spaced repetition, Wendell 2026-10-03: "We want to use spaced repetition so that tasks that are deferred come back and
+   the council can weigh in on them in new context." The ladder is Wendell's, the same day: "1 hr to 6 hours to 24 hours to
+   3 days to a week to 2 weeks to a month". A spaced deferral steps to the first rung longer than the item's last wait, and
+   past the top it stays at a month; those two readings are the session's. council/due.py holds the same ladder, and the
+   session that records a deferral uses it. */
+const LADDER = [1, 6, 24, 72, 168, 336, 720];
+const HUMAN = {1:'1 hour', 6:'6 hours', 24:'1 day', 72:'3 days', 168:'1 week', 336:'2 weeks', 720:'1 month'};
+const human = h => HUMAN[h] || (h < 24 ? h + ' hours' : Math.round(h / 24) + ' days');
+const deferrals = r => r ? (r.history || (r.decision === 'deferred' ? [{recorded:r.recorded, until:r.until}] : [])) : [];
+const waitOf = d => d.hours || (d.days ? d.days * 24 : 0) || ((d.saved_at || d.recorded) && d.until ? Math.round((Date.parse(d.until) - Date.parse(d.saved_at || d.recorded)) / 36e5) : 0);
+const TIMES = ['', 'once', 'twice', 'three times', 'four times', 'five times', 'six times', 'seven times', 'eight times', 'nine times', 'ten times'];
+const times = n => TIMES[n] || n + ' times';
+const nextHours = (kind, id) => { const w = deferrals(R[kind][id]).map(waitOf).filter(Boolean); return w.length ? (LADDER.find(r => r > w[w.length - 1]) || LADDER[LADDER.length - 1]) : LADDER[0]; };
+const deferCtl = (kind, id) => `<div class="defer"><select id="du-${kind}-${id}" aria-label="Bring it back"><option value="spaced" data-hours="${nextHours(kind, id)}">bring back in ${human(nextHours(kind, id))} (spaced)</option>${UNTIL.map(([v,l])=>`<option value="${v}">bring back ${l}</option>`).join('')}</select><button type="button" data-defer="${kind}" data-id="${id}">Defer</button></div>`;
+// An until is a UTC time, or a date alone for the first deferrals; a date alone sorts before that day's times, so it is due from midnight.
+const now = () => new Date().toISOString();
+const isDeferredNow = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && (!r.until || r.until > now())); };
+// A store row older than the ledger record is the one the record already holds, so only a newer save (status 'saved') counts.
+const isDueBack = (kind, id) => { const r = R[kind][id]; return !!(r && r.decision === 'deferred' && r.until && r.until <= now() && status(kind, id) !== 'saved'); };
+const savedDefer = (kind, id) => status(kind, id) === 'saved' && !!live[kind][id].deferred;
+
+/* An item back from a deferral carries the council's re-weigh as `review` on its row: what changed while it
+   waited, each face's line under a fresh cast, and what the council recommends. council/due.py gathers the
+   changes; the session that reads the board writes the review. */
+function reviewBox(kind, item){
+  const h = deferrals(R[kind][item.id]), last = h[h.length - 1] || {}, r = item.review;
+  if (!r) return isDueBack(kind, item.id) ? `<p class="duenote">You deferred this ${times(h.length)}, and its date has passed. The council re-weighs it in the next session that reads the board.</p>` : '';
+  return `<div class="review"><h3>Since you deferred this</h3>
+    <p>You deferred it ${times(h.length)}, most recently on ${esc(last.recorded)}${last.steer ? `: “${esc(last.steer)}”` : '.'}</p>
+    ${(r.changed||[]).length ? `<ul>${r.changed.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : '<p>Nothing in the record changed while it waited.</p>'}
+    ${(r.faces||[]).map(f => `<p><b>${esc(f.face)}</b>${f.cast ? ` <span class="oc">under ${esc(f.cast)}</span>` : ''}: ${esc(f.line)}</p>`).join('')}
+    ${r.recommend ? `<p><b>The council recommends:</b> ${esc(r.recommend)}</p>` : ''}</div>`;
+}
+
+// Research the council returned when Wendell sent a question back (spec: .specify/specs/board-send-back/).
+// Short lead first, then lists. Every field is optional; sources open in a new tab.
+function researchBox(item){
+  const r = item.research; if (!r) return '';
+  const ul = xs => xs && xs.length ? `<ul>${xs.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+  const sec = (h, body) => body ? `<h4>${esc(h)}</h4>${body}` : '';
+  return `<div class="research"><h3>${esc(r.title || 'Research you asked for')}</h3>
+    ${r.lead ? `<p class="lead">${esc(r.lead)}</p>` : ''}
+    ${(r.sections||[]).map(s => sec(s.h, (s.p ? `<p>${esc(s.p)}</p>` : '') + ul(s.items))).join('')}
+    ${r.recommend ? sec('What the council recommends', `<p class="rec">${esc(r.recommend)}</p>`) : ''}
+    ${(r.sources||[]).length || r.unchecked ? `<details><summary>Sources the council checked</summary>${ul((r.sources||[]).map(s => s.text))}${(r.sources||[]).map(s => `<p><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a></p>`).join('')}${r.unchecked ? `<p>${esc(r.unchecked)}</p>` : ''}</details>` : ''}
+  </div>`;
+}
+
+/* Multi-select, Wendell on the board, 2026-10-04 (cc-feeling): "We should be able to chose up to 3 options here." A
+   question with max above 1 takes up to that many picks. It saves choices in order, and choice as the first, so a reader
+   of the old shape still finds one answer. */
+const picks = st => st.choices || (st.choice ? [st.choice] : []);
+const pickLabel = (q, l) => picks(l).map(v => (q.options.find(o => o.v === v) || {}).label || v).join(', ');
+function qRow(q){
+  const st = local.questions[q.id] || {choice:'', steer:''};
+  return `<section class="row" id="q-${q.id}">
+    <div class="meta">${chips(q.faces)}<span>question</span></div>
+    <p class="pos">${esc(q.q)}</p>
+    ${reviewBox('questions', q)}
+    ${researchBox(q)}
+    <p class="why"><span>why only you</span> ${esc(q.why_you)}</p>
+    <p class="why"><span>why not before</span> ${esc(q.not_before)}</p>
+    ${q.max > 1 ? `<p class="why"><span>pick</span> up to ${q.max}</p>` : ''}
+    <div class="opts">${q.options.map(o => `<label class="opt"><input type="${q.max > 1 ? 'checkbox' : 'radio'}" name="q-${q.id}" value="${esc(o.v)}" id="q-${q.id}-${esc(o.v)}"${picks(st).includes(o.v)?' checked':''}> <b>${esc(o.label)}</b><br><span class="oc">${esc(o.c)}</span></label>`).join('')}</div>
+    <div class="ctl"><div class="steer"><textarea id="qs-${q.id}" placeholder="Steer, in your words">${esc(st.steer)}</textarea></div>
+    <div><button type="button" class="save" data-kind="questions" data-id="${q.id}">Save</button><div class="state" id="st-questions-${q.id}"></div></div></div>
+    ${deferCtl('questions', q.id)}
+  </section>`;
+}
+const TACT = [['adopt','Adopt'],['not_yet','Not yet'],['retire','Retire'],['not_a_term','Not a term']];
+function tRow(t){
+  const st = local.terms[t.id] || {action:t.rec, rename:'', steer:''};
+  return `<section class="row" id="t-${t.id}">
+    <div class="meta"><span class="tag">council: ${esc(LABEL[t.rec]||t.rec)}</span><span>${esc(t.repo)}</span>${(t.register||[]).map(r=>`<span>${esc(r)}</span>`).join('')}</div>
+    <p class="pos"><b>${esc(t.term)}</b>${t.plain?` · ${esc(t.plain)}`:''}</p>
+    ${t.eli5?`<p class="why"><span>plainly</span> ${esc(t.eli5)}</p>`:''}
+    ${t.usage?`<p class="why"><span>in use</span> ${esc(t.usage)}</p>`:''}
+    <p class="why"><span>whose</span> ${esc(t.whose)} · <span>why</span> ${esc(t.why)}</p>
+    <div class="ctl"><div class="seg" role="group" aria-label="Decision for ${esc(t.term)}">${TACT.map(([v,l])=>`<button type="button" class="${v==='retire'?'o':'s'}" data-pick="terms" data-id="${t.id}" data-v="${v}" aria-pressed="${st.action===v}">${l}</button>`).join('')}</div>
+    <div class="steer"><input type="text" id="tr-${t.id}" placeholder="Rename to (optional)" value="${esc(st.rename)}"><textarea id="ts-${t.id}" placeholder="Steer: usage, register, or why">${esc(st.steer)}</textarea></div>
+    <div><button type="button" class="save" data-kind="terms" data-id="${t.id}">Save</button><div class="state" id="st-terms-${t.id}"></div></div></div>
+  </section>`;
+}
+function pRow(p){
+  const st = local.positions[p.id] || {status:'stands', steer:''};
+  return `<section class="row${st.status==='overrule'?' over':''}" id="p-${p.id}">
+    <div class="meta">${chips(p.faces)}<span>${esc(p.pass==='flirtcraft'?'flirtcraft':(p.pass==='research'?'research':'pass '+p.pass))}</span></div>
+    <p class="pos">${esc(p.pos)}</p>
+    ${reviewBox('positions', p)}
+    <p class="why"><span>why it did not reach you</span> ${esc(p.why)}</p>
+    <div class="ctl"><div class="seg" role="group" aria-label="Status"><button type="button" data-pick="positions" data-id="${p.id}" data-v="stands" aria-pressed="${st.status==='stands'}">Stands</button><button type="button" class="o" data-pick="positions" data-id="${p.id}" data-v="overrule" aria-pressed="${st.status==='overrule'}">Overrule</button></div>
+    <div class="steer"><textarea id="ps-${p.id}" placeholder="Steer: what the face should carry forward">${esc(st.steer)}</textarea></div>
+    <div><button type="button" class="save" data-kind="positions" data-id="${p.id}">Save</button><div class="state" id="st-positions-${p.id}"></div></div></div>
+    ${deferCtl('positions', p.id)}
+  </section>`;
+}
+function cRow(c){
+  return `<section class="row" id="c-${c.id}"><div class="meta"><span>proposed cause</span><span>${c.count} in the record</span></div>
+    <p class="pos"><code>${esc(c.id)}</code></p><p class="why">${esc(c.desc)}</p>
+    <div class="ctl"><div class="steer"><input type="text" id="cn-${c.id}" placeholder="Keep, or the name you would use"></div>
+    <div><button type="button" class="save" data-kind="causes" data-id="${c.id}">Save</button><div class="state" id="st-causes-${c.id}"></div></div></div></section>`;
+}
+
+function doneRow(kind, item, title){
+  const s = status(kind, item.id), r = R[kind][item.id], l = live[kind][item.id];
+  let dec, where;
+  if (s === 'saved'){
+    dec = l.deferred ? 'Deferred, back ' + (l.until === 'spaced' ? `in ${human(l.hours)}` : (UNTIL.find(u=>u[0]===l.until)||[0,'when you ask'])[1])
+        : kind==='questions' ? pickLabel(item, l) || 'Steer only'
+        : kind==='terms' ? (LABEL[l.action]||l.action) + (l.rename?` as "${l.rename}"`:'')
+        : kind==='causes' ? (l.kept ? 'Kept' : `Renamed "${l.name}"`)
+        : LABEL[l.status]||l.status;
+    where = `<div class="w pending">Saved, waiting to be recorded. Send to Claude picks it up.</div>`;
+  } else {
+    dec = r.decision === 'deferred' ? (r.until ? 'Deferred until ' + (r.until.length > 10 ? new Date(r.until).toLocaleString([], {dateStyle:'medium', timeStyle:'short'}) : r.until) : 'Deferred until you ask') : (r.label || LABEL[r.decision] || r.decision);
+    where = `<div class="w">Recorded ${esc(r.recorded)} · <code>${esc(r.record.replace('ledger/',''))}</code></div>`;
+  }
+  const cls = /retire|overrul/i.test(dec) ? 'd retire' : 'd';
+  return `<div class="done"><div class="t">${title}</div><div class="${cls}">${esc(dec)}</div>${where}</div>`;
+}
+
+function render(){
+  const oq = DATA.questions.filter(q => isOpen('questions', q.id) && !inBattle.questions.has(q.id));
+  const ot = DATA.terms.filter(t => isOpen('terms', t.id));
+  const op = DATA.positions.filter(p => isOpen('positions', p.id) && !inBattle.positions.has(p.id));
+  const oc = DATA.causes.filter(c => isOpen('causes', c.id));
+  document.getElementById('open-q').innerHTML = section('Questions only you can answer', 'Each passed the reach test: its face could not answer it from the record, and your answer changes what gets built.', oq.map(qRow).join(''));
+  document.getElementById('open-t').innerHTML = section('Terms', 'The council recommends; you decide. Adopt puts the term in that repo’s glossary as proposed. Nothing locks until you say so.', ot.map(tRow).join(''));
+  document.getElementById('open-p').innerHTML = section('Positions', 'Each stands unless you overrule it. A steer becomes that face’s lesson.', op.map(pRow).join(''));
+  document.getElementById('open-c').innerHTML = section('Causes to name', '', oc.map(cRow).join(''));
+  const nOpen = oq.length + ot.length + op.length + oc.length + renderMap();
+  document.getElementById('open-empty').hidden = nOpen > 0;
+  document.getElementById('n-open').textContent = nOpen;
+  renderSend();
+  const deferred = kind => item => (isDeferredNow(kind, item.id) && status(kind, item.id) !== 'saved') || savedDefer(kind, item.id);
+  const nDef = DATA.questions.filter(deferred('questions')).length + DATA.positions.filter(deferred('positions')).length;
+  const dn = document.getElementById('open-deferred'); dn.hidden = !nDef;
+  dn.textContent = nDef ? `You deferred ${nDef === 1 ? 'one item' : nDef + ' items'}. Each waits on the Resolved tab and comes back when its date passes.` : '';
+
+  const dq = DATA.questions.filter(q => !isOpen('questions', q.id) && deferred('questions')(q));
+  const dp = DATA.positions.filter(p => !isOpen('positions', p.id) && deferred('positions')(p));
+  // A deferred item keeps its controls, so it can be decided before its date passes (Wendell, 2026-10-04).
+  const later = (kind, item, title, row) => doneRow(kind, item, title).replace(/<\/div>$/, `<details class="w"><summary>Decide it now</summary>${row(item)}</details></div>`);
+  document.getElementById('res-d').innerHTML = section('Deferred', 'Each item here comes back to the Open tab when its date passes. Every deferral stays in the record as data about priority. Open one to decide it now.',
+    dq.map(q => later('questions', q, esc(q.q), qRow)).join('') + dp.map(p => later('positions', p, esc(p.pos), pRow)).join(''));
+  const rq = DATA.questions.filter(q => !isOpen('questions', q.id) && !deferred('questions')(q));
+  const rt = DATA.terms.filter(t => !isOpen('terms', t.id));
+  const rp = DATA.positions.filter(p => !isOpen('positions', p.id) && !deferred('positions')(p));
+  const rc = DATA.causes.filter(c => !isOpen('causes', c.id));
+  document.getElementById('res-q').innerHTML = section('Questions', '', rq.map(q => doneRow('questions', q, esc(q.q))).join(''));
+  document.getElementById('res-t').innerHTML = section('Terms', '', rt.map(t => doneRow('terms', t, `<b>${esc(t.term)}</b> <span class="lede">· ${esc(t.repo)}</span>`)).join(''));
+  document.getElementById('res-c').innerHTML = section('Causes', '', rc.map(c => doneRow('causes', c, `<code>${esc(c.id)}</code>`)).join(''));
+  document.getElementById('res-p').innerHTML = section('Positions', '', rp.map(p => doneRow('positions', p, esc(p.pos))).join(''));
+  const steers = DATA.steers_recorded.map(s => `<div class="done"><div class="t">${esc(s.text)}</div><div class="d">Steer</div><div class="w">Recorded · <code>${esc(s.record.replace('ledger/',''))}</code></div></div>`).join('');
+  document.getElementById('res-s').innerHTML = section('Steers', '', steers);
+  document.getElementById('n-resolved').textContent = dq.length + dp.length + rq.length + rt.length + rp.length + rc.length + DATA.steers_recorded.length;
+
+  const ctx = document.getElementById('ctx');
+  if (document.activeElement !== ctx) ctx.value = (liveSteer && liveSteer.savedAt > DATA.steer_recorded_through) ? (liveSteer.text || '') : '';
+}
+
+function show(which){
+  for (const v of ['open','morning','steps','outreach','resolved']){
+    document.getElementById('tab-'+v).setAttribute('aria-selected', String(v === which));
+    document.getElementById('view-'+v).hidden = v !== which;
+  }
+}
+document.getElementById('tab-open').addEventListener('click', () => { show('open'); try { history.replaceState(null, '', '#open'); } catch (e) {} });
+document.getElementById('tab-resolved').addEventListener('click', () => { show('resolved'); try { history.replaceState(null, '', '#resolved'); } catch (e) {} });
+document.getElementById('tab-steps').addEventListener('click', () => { show('steps'); try { history.replaceState(null, '', '#steps'); } catch (e) {} });
+document.getElementById('tab-outreach').addEventListener('click', () => { show('outreach'); try { history.replaceState(null, '', '#outreach'); } catch (e) {} });
+document.getElementById('tab-morning').addEventListener('click', () => { show('morning'); try { history.replaceState(null, '', '#morning'); } catch (e) {} });
+show(['#resolved','#steps','#outreach','#morning'].includes(location.hash) ? location.hash.slice(1) : 'open');
+
+// The Open tab's rows, and deferred rows opened on the Resolved tab, share these handlers.
+const openView = {addEventListener: (t, f) => ['view-open', 'view-resolved'].forEach(v => document.getElementById(v).addEventListener(t, f))};
+openView.addEventListener('change', e => {
+  const r = e.target; if (r.type !== 'radio' && r.type !== 'checkbox') return;
+  const id = r.name.slice(2), q = DATA.questions.find(x => x.id === id) || {};
+  if (r.type === 'checkbox'){
+    const on = [...r.closest('.opts').querySelectorAll('input:checked')].map(x => x.value);
+    if (on.length > q.max){ r.checked = false; on.splice(on.indexOf(r.value), 1); }
+    local.questions[id] = {...(local.questions[id]||{steer:''}), choice:on[0]||'', choices:on};
+  } else local.questions[id] = {...(local.questions[id]||{steer:''}), choice:r.value};
+});
+openView.addEventListener('click', async e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.pick){
+    const k = b.dataset.pick, id = b.dataset.id;
+    if (k === 'terms') local.terms[id] = {...(local.terms[id] || {action:'', rename:'', steer:''}), action:b.dataset.v};
+    if (k === 'positions') local.positions[id] = {...(local.positions[id] || {steer:''}), status:b.dataset.v};
+    b.parentElement.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    if (k === 'positions') document.getElementById('p-'+id).classList.toggle('over', b.dataset.v === 'overrule');
+    return;
+  }
+  if (b.dataset.defer){
+    const kind = b.dataset.defer, id = b.dataset.id, st = document.getElementById(`st-${kind}-${id}`);
+    const steerEl = document.getElementById((kind === 'questions' ? 'qs-' : 'ps-') + id);
+    const sel = document.getElementById(`du-${kind}-${id}`);
+    const body = {deferred:true, until:sel.value, steer:steerEl ? steerEl.value : '', savedAt:new Date().toISOString()};
+    if (sel.value === 'spaced') body.hours = Number(sel.selectedOptions[0].dataset.hours);
+    if (!db){ st.textContent = 'Not saved in this view.'; return; }
+    try { await db.doc(`${kind}/${id}`).set(body); live[kind][id] = body; render(); }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (!b.dataset.kind) return;
+  const kind = b.dataset.kind, id = b.dataset.id, st = document.getElementById(`st-${kind}-${id}`);
+  let body;
+  if (kind === 'questions'){
+    const q = local.questions[id] || {choice:''}; const steer = document.getElementById('qs-'+id).value;
+    if (!q.choice && !steer.trim()){ st.textContent = 'Pick an option or write a steer first.'; return; }
+    body = {choice:q.choice||'', steer}; if (q.choices) body.choices = q.choices;
+  } else if (kind === 'terms'){
+    const t = DATA.terms.find(x => x.id === id), l = local.terms[id] || {};
+    body = {action:l.action || t.rec, rename:document.getElementById('tr-'+id).value.trim(), steer:document.getElementById('ts-'+id).value};
+  } else if (kind === 'positions'){
+    const l = local.positions[id] || {};
+    body = {status:l.status || 'stands', steer:document.getElementById('ps-'+id).value};
+  } else {
+    const name = document.getElementById('cn-'+id).value.trim(); body = {name:name || id, kept:!name};
+  }
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  body.savedAt = new Date().toISOString();
+  try { await db.doc(`${kind}/${id}`).set(body); live[kind][id] = body; render(); }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
+document.getElementById('ctx-save').addEventListener('click', async () => {
+  const st = document.getElementById('ctx-state'), text = document.getElementById('ctx').value;
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  try { await db.doc('steer/general').set({text, savedAt:new Date().toISOString()}); st.textContent = 'Saved.'; }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
+
+// ---- Battles ----
+/* Wendell, 2026-10-04: "I'd like it to be kind of like a minigame. The the board is the world map and emergent new
+   feature is like a pokemon battle [...] I through the battle and at the end the board is updated". A battle is a
+   feature request run (council/moves/feature-request.md): DATA.battles lists each one with its rounds, and each round
+   names question and position rows that already exist on the board. A turn saves exactly what the row's own Save
+   saves, so a board read records a battle like any other row. Rows in a battle are left off the Open lists, so each
+   lives in one place. Running away saves nothing, and the battle waits on the map. The creature is drawn from the
+   battle's id, and its element only picks its colours: both are the session's design, not a ruling.
+   Going back, Wendell 2026-10-04: "On the council board I need to be able to “go back” if I overrule without context
+   (like I just did)". Every saved turn can be replayed: from the turn just played, from the previous turn, and from the
+   list at the end of a battle, including one already understood. A replayed turn shows the earlier answer and its
+   words, saves over it, and keeps the earlier answer in the row's `previous` field so the board read sees both. */
+const BATTLES = DATA.battles || [];
+const inBattle = {questions:new Set(), positions:new Set()};
+BATTLES.forEach(b => (b.rounds||[]).forEach(r => { (r.questions||[]).forEach(id => inBattle.questions.add(id)); (r.positions||[]).forEach(id => inBattle.positions.add(id)); }));
+const PAL = {wood:['#2f7a3b','#9fd18b','#1d3b22'], fire:['#b3331f','#f2a65a','#4a160d'], earth:['#a9741a','#ead08f','#4a3410'],
+  metal:['#6d7a86','#dfe6ec','#2a3138'], water:['#1f5f8b','#8cc7e8','#0f2a3d']};
+function monster(id, element, px){
+  let h = 2166136261; for (const c of id) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+  const rnd = () => (h = Math.imul(h ^ (h >>> 15), 2246822519) >>> 0, h / 4294967296);
+  const [body, light, ink] = PAL[element] || PAL.earth, N = 10, cells = [];
+  for (let y = 0; y < N; y++) for (let x = 0; x < N / 2; x++) {
+    const edge = Math.abs(x - N / 2 + .5) + Math.abs(y - N / 2 + .5) * .8, r = rnd();
+    const fill = edge < 3 ? (r < .85 ? body : light) : edge < 5 ? (r < .55 ? body : r < .7 ? light : null) : (r < .12 ? body : null);
+    if (fill) { cells.push([x, y, fill]); cells.push([N - 1 - x, y, fill]); }
+  }
+  const eyeY = 3 + Math.floor(rnd() * 2); cells.push([3, eyeY, ink], [6, eyeY, ink]);
+  return `<svg class="bt-mon" width="${px}" height="${px}" viewBox="0 0 ${N} ${N}" aria-hidden="true" shape-rendering="crispEdges">${cells.map(([x,y,f]) => `<rect x="${x}" y="${y}" width="1" height="1" fill="${f}"/>`).join('')}</svg>`;
+}
+const bTurns = b => (b.rounds||[]).flatMap(r => [...(r.questions||[]).map(id => ({kind:'questions', id, round:r.n})), ...(r.positions||[]).map(id => ({kind:'positions', id, round:r.n}))])
+  .filter(t => DATA[t.kind].some(x => x.id === t.id));
+const bOpen = b => bTurns(b).filter(t => isOpen(t.kind, t.id));
+const bRound = b => Math.max(1, ...(b.rounds||[]).map(r => r.n || 1));
+
+function renderMap(){
+  const el = document.getElementById('bt-map');
+  if (!BATTLES.length){ el.hidden = true; return 0; }
+  el.hidden = false;
+  const active = BATTLES.filter(b => bOpen(b).length);
+  el.innerHTML = `<h2>Encounters</h2><p class="lede">Each one is a feature request. Play it through: every answer saves as you go, and the board updates when it ends.</p>
+    <div class="bt-tiles">${BATTLES.map(b => { const open = bOpen(b).length, all = bTurns(b).length;
+      return `<button type="button" class="bt-tile${open ? '' : ' bt-won'}" data-battle="${esc(b.id)}">${monster(b.id, b.element, 56)}
+        <span><b>${esc(b.name)}</b><small>${esc(b.repo || '')} · round ${bRound(b)} · ${open ? `${open} of ${all} turns left` : 'understood'}</small></span></button>`; }).join('')}</div>`;
+  return active.length;
+}
+
+let bt = null;   // {b, queue, i, log, steer}
+const $b = id => document.getElementById(id);
+function btHud(){
+  const all = bTurns(bt.b).length, left = bOpen(bt.b).length, done = bt.i;
+  const hp = $b('bt-hp'); hp.style.width = (all ? left / all * 100 : 0) + '%'; hp.classList.toggle('bt-low', left / Math.max(all,1) < .34);
+  $b('bt-hpn').textContent = `${left}/${all}`;
+  $b('bt-turns').style.width = (bt.queue.length ? done / bt.queue.length * 100 : 100) + '%';
+  $b('bt-turnn').textContent = `${Math.min(done, bt.queue.length)}/${bt.queue.length}`;
+}
+function btSay(html){ $b('bt-box').innerHTML = html; const f = $b('bt-box').querySelector('button,textarea'); if (f) f.focus(); }
+function openBattle(id){
+  const b = BATTLES.find(x => x.id === id); if (!b) return;
+  bt = {b, queue: bOpen(b), i: 0, log: []};
+  $b('bt-name').textContent = b.name; $b('bt-lv').textContent = 'Rd ' + bRound(b);
+  $b('bt-sprite').innerHTML = monster(b.id, b.element, 112);
+  $b('bt-party').innerHTML = chips(['shaman','architect','challenger','regent','diplomat','sage']);
+  $b('bt-screen').classList.add('on'); document.body.style.overflow = 'hidden'; btHud();
+  if (!bt.queue.length) { bt.queue = btReview(b); bt.i = bt.queue.length; return btEnd(); }
+  btSay(`<p class="bt-say">A wild <b>${esc(b.name)}</b> appeared!</p>
+    ${b.intro ? `<p class="bt-sub">${esc(b.intro)}</p>` : ''}
+    ${b.record ? `<p class="bt-sub">Its full description: <code>${esc(b.record)}</code></p>` : ''}
+    <div class="bt-row"><button type="button" class="save" data-bt="next">Fight</button><button type="button" class="bt-link" data-bt="run">Run (nothing is saved)</button></div>`);
+}
+// the latest round's turns, which a board read has not recorded yet: the ones that can still be changed
+const btReview = b => bTurns(b).filter(t => t.round === bRound(b) && live[t.kind][t.id] && !resolvedOf(t.kind, t.id));
+const resolvedOf = (kind, id) => ((DATA.resolved || {})[kind] || {})[id];
+const btWas = t => live[t.kind][t.id] || null;
+function btBack(){
+  const was = btWas(bt.queue[bt.i]);
+  if (!was) return '';
+  const row = DATA[bt.queue[bt.i].kind].find(x => x.id === bt.queue[bt.i].id);
+  const said = bt.queue[bt.i].kind === 'questions' ? (pickLabel(row, was) || 'In your words') : (was.status === 'overrule' ? 'Overruled' : 'Stands');
+  return `<p class="bt-sub">You answered <b>${esc(said)}</b>${was.steer ? ` and wrote: “${esc(was.steer)}”` : ''}. A new answer saves over it, and the board keeps the earlier one.</p>`;
+}
+function btTurn(){
+  btHud();
+  if (bt.i >= bt.queue.length) return btEnd();
+  const t = bt.queue[bt.i], row = DATA[t.kind].find(x => x.id === t.id), who = (row.faces||[])[0] || 'sage', was = btWas(t);
+  const backLink = bt.i > 0 ? `<button type="button" class="bt-link" data-bt="prev">Go back a turn</button>` : '<span></span>';
+  if (t.kind === 'questions'){
+    btSay(`<p class="bt-sub">${chips(row.faces)} ask:</p><p class="bt-say">${esc(row.q)}</p>
+      <p class="bt-sub">${esc(row.why_you)}</p>
+      ${row.max > 1 ? `<p class="bt-sub">Pick up to ${row.max} moves, then use them.</p>` : ''}
+      <div class="bt-moves">${row.options.map(o => `<button type="button" class="bt-move" data-bt="${row.max > 1 ? 'toggle' : 'pick'}" data-v="${esc(o.v)}"${row.max > 1 ? ' aria-pressed="false"' : ''}><b>${esc(o.label)}</b><span>${esc(o.c)}</span></button>`).join('')}</div>
+      ${row.max > 1 ? `<div class="bt-row"><button type="button" class="save" data-bt="usepicks">Use these moves</button></div>` : ''}
+      ${btBack()}
+      <textarea class="bt-steer" id="bt-steer" placeholder="Say it in your words instead, or as well (optional)">${esc(was && was.steer || '')}</textarea>
+      <div class="bt-row"><button type="button" class="bt-link" data-bt="steeronly">Answer with these words only</button>${backLink}<button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
+  } else {
+    btSay(`<p class="bt-sub">${chips(row.faces)} play a position:</p><p class="bt-say">${esc(row.pos)}</p>
+      <p class="bt-sub">${esc(row.why)}</p>
+      <div class="bt-moves"><button type="button" class="bt-move" data-bt="stand"><b>Let it stand</b><span>The council goes ahead on it.</span></button>
+      <button type="button" class="bt-move bt-over" data-bt="overrule"><b>Overrule</b><span>The council drops it; your words below become that face's lesson.</span></button></div>
+      ${btBack()}
+      <textarea class="bt-steer" id="bt-steer" placeholder="Steer: what the face should carry forward (optional)">${esc(was && was.steer || '')}</textarea>
+      <div class="bt-row">${backLink}<button type="button" class="bt-link" data-bt="run">Run (answers so far are saved)</button></div>`);
+  }
+}
+async function btSave(body){
+  const t = bt.queue[bt.i];
+  body.steer = ($b('bt-steer') || {}).value || ''; body.savedAt = new Date().toISOString(); body.via = 'battle:' + bt.b.id;
+  const was = btWas(t);
+  if (was) body.previous = {status: was.status || null, choice: was.choice || null, choices: was.choices || null, steer: was.steer || '', savedAt: was.savedAt || null};
+  if (t.kind === 'questions' && !body.choice && !body.steer.trim()) { btSay($b('bt-box').innerHTML.replace('<textarea', '<p class="bt-sub" style="color:var(--warn)">Write your words first.</p><textarea')); return; }
+  if (db){
+    try { await db.doc(`${t.kind}/${t.id}`).set(body); live[t.kind][t.id] = body; }
+    catch (err){ btSay(`<p class="bt-say">That turn did not save (${esc(err && err.code || 'error')}).</p><div class="bt-row"><button type="button" class="save" data-bt="retry">Try the turn again</button><button type="button" class="bt-link" data-bt="run">Run</button></div>`); return; }
+  } else live[t.kind][t.id] = body;   // a view without the store plays on, and says so at the end
+  const row = DATA[t.kind].find(x => x.id === t.id);
+  const said = t.kind === 'questions' ? (pickLabel(row, body) || 'In your words') : (body.status === 'overrule' ? 'Overruled' : 'Stands');
+  bt.log.push(`${t.kind === 'questions' ? row.q : row.pos} · ${said}`);
+  bt.i++;
+  const f = $b('bt-field'); f.classList.remove('bt-hit'); void f.offsetWidth; f.classList.add('bt-hit');
+  btHud(); render();
+  btSay(`<p class="bt-say">${body.status === 'overrule' ? 'You overruled it.' : 'It’s super effective!'} <b>${esc(said)}</b></p>
+    <div class="bt-row"><button type="button" class="save" data-bt="next">${bt.i < bt.queue.length ? 'Next turn' : 'Finish'}</button><button type="button" class="bt-link" data-bt="prev">Go back and change it</button></div>`);
+}
+function btEnd(){
+  btHud(); const left = bOpen(bt.b).length;
+  btSay(left ? `<p class="bt-say"><b>${esc(bt.b.name)}</b> is still standing, with ${left} ${left === 1 ? 'turn' : 'turns'} left.</p>`
+    : `<p class="bt-say"><b>${esc(bt.b.name)}</b> was understood!</p><p class="bt-sub">${db ? 'Your answers are on the board. Press Send to Claude below, and the council writes the next round or the spec kit.' : 'This view cannot save, so your answers stay on screen only.'}</p>`
+    + (bt.log.length ? `<ul class="bt-log">${bt.log.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : '')
+    + btReviewList()
+    + `<div class="bt-row"><button type="button" class="save" data-bt="run">Back to the map</button></div>`);
+}
+function btReviewList(){
+  const list = btReview(bt.b);
+  if (!list.length) return '';
+  return `<p class="bt-sub">Change a turn of round ${bRound(bt.b)} before the council reads it:</p><div class="bt-moves">${list.map((t, k) => {
+    const row = DATA[t.kind].find(x => x.id === t.id), was = live[t.kind][t.id];
+    const said = t.kind === 'questions' ? (pickLabel(row, was) || 'In your words') : (was.status === 'overrule' ? 'Overruled' : 'Stands');
+    return `<button type="button" class="bt-move" data-bt="goto" data-k="${k}"><b>${esc(said)}</b><span>${esc(t.kind === 'questions' ? row.q : row.pos)}</span></button>`; }).join('')}</div>`;
+}
+function closeBattle(){ $b('bt-screen').classList.remove('on'); document.body.style.overflow = ''; bt = null; render(); }
+document.addEventListener('click', e => {
+  const tile = e.target.closest('[data-battle]'); if (tile) return openBattle(tile.dataset.battle);
+  const b = e.target.closest('[data-bt]'); if (!b || !bt) return;
+  const a = b.dataset.bt;
+  if (a === 'run') return closeBattle();
+  if (a === 'next' || a === 'retry') return btTurn();
+  if (a === 'prev'){ bt.i = Math.max(0, bt.i - 1); return btTurn(); }
+  if (a === 'goto'){ bt.queue = btReview(bt.b); bt.i = Number(b.dataset.k) || 0; return btTurn(); }
+  if (a === 'pick') return btSave({choice: b.dataset.v});
+  if (a === 'steeronly') return btSave({choice: ''});
+  if (a === 'toggle'){
+    const row = DATA.questions.find(x => x.id === bt.queue[bt.i].id), on = b.getAttribute('aria-pressed') === 'true';
+    if (!on && $b('bt-box').querySelectorAll('[data-bt="toggle"][aria-pressed="true"]').length >= row.max) return;
+    b.setAttribute('aria-pressed', String(!on)); return;
+  }
+  if (a === 'usepicks'){
+    const v = [...$b('bt-box').querySelectorAll('[data-bt="toggle"][aria-pressed="true"]')].map(x => x.dataset.v);
+    return btSave(v.length ? {choice: v[0], choices: v} : {choice: ''});
+  }
+  if (a === 'stand') return btSave({status: 'stands'});
+  if (a === 'overrule') return btSave({status: 'overrule'});
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && bt) closeBattle(); });
+
+// ---- Blocker panel (bk-) ----
+/* An overdue step, or any open step marked stuck, opens this panel. It runs the player through the block in the WAVE
+   room's order and saves one record per run to blockers/<id>: the step, what came up at each stage, any part worked
+   with a 3-2-1, and how it ended. Every stage saves, so a run left half way still says what came up. The stage words
+   are the Ontology game's WAVE_STEPS (bars-engine content/ontology-game/game.jsx) where it has them. */
+let bkRecs = {}, bk = null;
+const BK_ELEMENTS = [['metal', 'Metal', 'fear, or a risk'], ['water', 'Water', 'sadness, something far away'], ['fire', 'Fire', 'anger, an obstacle'], ['wood', 'Wood', 'joy, or restless energy'], ['earth', 'Earth', 'flat, or numb']];
+const BK_KINDS = [['feeling', 'A feeling about it'], ['missing', 'Something is missing', 'information, access, a tool'], ['time', 'No time or energy'], ['unclear', 'The step is unclear', 'or I doubt it is right']];
+const BK_BODY = ['Tight', 'Heavy', 'Buzzing', 'Hot', 'Hollow', 'Numb', 'Restless', 'Nothing yet'];
+const BK_ENDS = [['now', 'Do it now', 'Write the smallest first move'], ['moved', 'Move the date', 'Pick a day it can happen'],
+  ['change', 'The step needs changing', 'Say what would make it doable'], ['drop', 'Drop the step', 'Say why it no longer belongs'],
+  ['stuck', 'Still stuck', 'Leave it open; Claude reads what came up']];
+const BK_MAX_ROUNDS = 3;
+const bkOf = id => Object.entries(bkRecs).filter(([, r]) => r.step === id).sort((a, b) => String(b[1].savedAt).localeCompare(String(a[1].savedAt)));
+const bkWave = s => ({start: -1, welcome: 0, acknowledge: 1, validate: 2, exhale: 3, out: 3, part: 3, face: 3, talk: 3, be: 3, end: 4, done: 5})[s] ?? -1;
+const bkRound = () => bk.rec.rounds[bk.rec.rounds.length - 1];
+const bkVal = id => (($b(id) || {}).value || '').trim();
+function bkScale(key, v){
+  return `<div class="bk-scale" role="group" aria-label="Charge from 0 to 10">${Array.from({length: 11}, (_, n) =>
+    `<button type="button" data-bk="scale" data-k="${key}" data-v="${n}" aria-pressed="${v === n}">${n}</button>`).join('')}</div>`;
+}
+const bkPicks = (key, list, on, multi) => `<div class="bk-picks" role="group">${list.map(x => { const [v, l, hint] = Array.isArray(x) ? x : [x, x];
+  return `<button type="button" data-bk="${multi ? 'multi' : 'pick'}" data-k="${key}" data-v="${esc(v)}" aria-pressed="${multi ? (on || []).includes(v) : on === v}"${hint ? ` title="${esc(hint)}"` : ''}>${esc(l)}</button>`; }).join('')}</div>`;
+function openBlocker(id, step){
+  const s = step || stSteps[id]; if (!s) return;
+  const at = new Date().toISOString(), over = stDaysLeft(s.due);
+  bk = {id, stage: 'start', note: '', draft: {}, rec: {engine: 'board-wave', version: 1, step: id, list: s.list || '', task: s.do || '',
+    due: s.due || '', overdueDays: over !== null && over < 0 ? -over : 0, startedAt: at, savedAt: at, status: 'open', stage: 'start',
+    charge: {before: null, after: null}, rounds: [], resolution: null, ...(s.skipStreak ? {skipStreak: s.skipStreak} : {})},
+    key: `${id}--${Date.now().toString(36)}`};
+  $b('bk-screen').classList.add('on'); document.body.style.overflow = 'hidden';
+  bkDraw();
+}
+function closeBlocker(){ $b('bk-screen').classList.remove('on'); document.body.style.overflow = ''; bk = null; renderSteps(); }
+async function bkSave(){
+  const r = bk.rec; r.stage = bk.stage; r.savedAt = new Date().toISOString();
+  if (!db){ bk.note = 'This view cannot save, so this run stays on screen only.'; return true; }
+  try { await db.doc('blockers/' + bk.key).set(JSON.parse(JSON.stringify(r))); bkRecs[bk.key] = {...r}; bk.note = ''; return true; }
+  catch (err){ bk.note = `That stage did not save (${err && err.code || 'error'}). Try again.`; return false; }
+}
+function bkDraw(){
+  const r = bk.rec, s = stSteps[bk.id] || {}, w = bkWave(bk.stage), rd = r.rounds.length ? bkRound() : null, d = bk.draft;
+  $b('bk-wave').innerHTML = ['Welcome', 'Acknowledge', 'Validate', 'Exhale'].map((l, i) => `<span class="${i === w ? 'on' : i < w ? 'past' : ''}">${l[0]}<span class="sr-only"> ${l}</span></span>`).join('');
+  $b('bk-task').innerHTML = `<b>${esc(r.task)}</b>${r.overdueDays ? `<small>Overdue by ${r.overdueDays} day${r.overdueDays === 1 ? '' : 's'}</small>` : ''}${r.rounds.length > 1 ? `<small style="color:var(--muted)"> · round ${r.rounds.length}: ${esc(rd.from || '')}</small>` : ''}`;
+  const warn = bk.note ? `<p class="bt-sub" style="color:var(--warn)">${esc(bk.note)}</p>` : '';
+  const go = (label, a = 'next') => `<div class="bt-row"><span></span><button type="button" class="save" data-bk="${a}">${label}</button></div>`;
+  let h = '';
+  if (bk.stage === 'start') h = `<p class="bt-say">Before anything moves: how much charge does this step carry for you right now?</p><p class="bt-sub">0 is none, 10 is all of you.</p>${bkScale('before', r.charge.before)}${go('Begin')}`;
+  else if (bk.stage === 'welcome') h = `<p class="bt-say"><b>Welcome.</b> ${r.rounds.length > 1 ? 'Let this part be here for a moment, without needing it to move yet.' : 'Let what\'s in the way be here for a moment, without needing it to move yet.'}</p>
+    <p class="bt-sub">Picture yourself starting the step. What do you notice in your body?</p>${bkPicks('body', BK_BODY, d.body, true)}
+    <textarea id="bk-t1" placeholder="Where it is, what it feels like (optional)">${esc(d.t1 || '')}</textarea>${go('I\'ve welcomed it')}`;
+  else if (bk.stage === 'acknowledge') h = `<p class="bt-say"><b>Acknowledge.</b> Admit that it's here. You don't have to like it. Give it a name.</p>
+    <input type="text" id="bk-t1" placeholder="Its name, in a word or a few" value="${esc(d.t1 || '')}">
+    <p class="bt-sub">Which element is it closest to?</p>${bkPicks('element', BK_ELEMENTS, d.element)}
+    <p class="bt-sub">What kind of block is it?</p>${bkPicks('kind', BK_KINDS, d.kind)}${go('I acknowledge it')}`;
+  else if (bk.stage === 'validate') h = `<p class="bt-say"><b>Validate.</b> Your body has the right to feel this, whatever it is.</p>
+    <p class="bt-sub">What has ${esc(rd.name || 'it')} been trying to do for you?</p><textarea id="bk-t1" placeholder="What it protects, or what it wants (optional)">${esc(d.t1 || '')}</textarea>${go('I validate that')}`;
+  else if (bk.stage === 'exhale') h = `<p class="bt-say"><b>Exhale.</b> Is ${esc(rd.name || 'this feeling')} in alignment with what you actually want right now?</p>
+    <div class="bt-moves"><button type="button" class="bt-move" data-bk="aligned"><b>Yes, it's telling me something true</b><span>It stays, and it shapes what happens to the step.</span></button>
+    <button type="button" class="bt-move" data-bk="exit"><b>No, it can go</b><span>Show it the door on an exhale.</span></button></div>`;
+  else if (bk.stage === 'out') h = `<p class="bt-say">Breathe in. On the long exhale, let ${esc(rd.name || 'it')} leave through the door.</p><div class="bk-breath" aria-hidden="true"></div>${go('It\'s out')}`;
+  else if (bk.stage === 'part') h = `<p class="bt-say">Is any part of you still here, saying ${esc(rd.name || 'it')} should stay?</p>
+    <div class="bt-moves"><button type="button" class="bt-move" data-bk="part-yes"><b>Yes, a part is holding on</b><span>Meet it with a 3-2-1, then welcome it as its own charge.</span></button>
+    <button type="button" class="bt-move" data-bk="part-no"><b>No, nothing is holding on</b><span>Decide what happens to the step.</span></button></div>`;
+  else if (bk.stage === 'face') h = `<p class="bt-say"><b>3. Face it.</b> Describe the part as "it": what does it look like, where is it, what is it doing?</p><textarea id="bk-t1" placeholder="It is…">${esc(d.t1 || '')}</textarea>${go('Next: talk to it')}`;
+  else if (bk.stage === 'talk') h = `<p class="bt-say"><b>2. Talk to it.</b> Speak to it as "you". Ask what it wants. What does it say back?</p><textarea id="bk-t1" placeholder="You… / It says…">${esc(d.t1 || '')}</textarea>${go('Next: be it')}`;
+  else if (bk.stage === 'be') h = `<p class="bt-say"><b>1. Be it.</b> Speak as the part, as "I".</p><textarea id="bk-t1" placeholder="I am… and I want…">${esc(d.t1 || '')}</textarea>${go(r.rounds.length < BK_MAX_ROUNDS ? 'Welcome it as its own charge' : 'Decide what happens to the step')}`;
+  else if (bk.stage === 'end'){
+    const pick = d.end, need = {now: 'The smallest first move', change: 'What would make it doable', drop: 'Why it no longer belongs', stuck: 'Anything Claude should know (optional)', moved: 'Why this day'}[pick];
+    h = `<p class="bt-say">What happens to the step now?</p><div class="bt-moves">${BK_ENDS.map(([v, l, sub]) => `<button type="button" class="bt-move" data-bk="end" data-v="${v}" aria-pressed="${pick === v}"><b>${l}</b><span>${sub}</span></button>`).join('')}</div>
+      ${pick === 'moved' ? `<div class="st-move"><label for="bk-date">Move it to</label><input type="date" id="bk-date" value="${esc(d.date || '')}"></div>` : ''}
+      ${pick ? `<textarea id="bk-t1" placeholder="${need}">${esc(d.t1 || '')}</textarea><p class="bt-sub">And the charge now, from 0 to 10?</p>${bkScale('after', r.charge.after)}${go('Save and finish', 'finish')}` : ''}`;
+  }
+  else if (bk.stage === 'done'){
+    const e = r.resolution || {}, l = (BK_ENDS.find(x => x[0] === e.kind) || [])[1] || e.kind;
+    h = `<p class="bt-say">${e.kind === 'stuck' ? 'It is still in the way, and now it has a name.' : 'Worked through.'} <b>${esc(l)}</b>${e.date ? ` · ${esc(stFmt(e.date))}` : ''}</p>
+      <ul class="bk-log">${r.rounds.map(x => `<li>${esc(x.name || 'unnamed')}${x.element ? ` (${esc((BK_ELEMENTS.find(e => e[0] === x.element) || [])[1] || x.element)})` : ''}: ${x.aligned ? 'stayed' : 'shown the door'}${x.part321 ? ', a part was met' : ''}</li>`).join('')}</ul>
+      ${r.charge.before !== null && r.charge.after !== null ? `<p class="bt-sub">Charge ${r.charge.before} to ${r.charge.after}.</p>` : ''}
+      <p class="bt-sub">${db ? 'The run is saved on the board. Go back to your steps and press Send to Claude, and Claude reads what came up.' : 'This view cannot save, so the run stays on screen only.'}</p>${go('Back to your steps', 'close')}`;
+  }
+  $b('bk-box').innerHTML = warn + h;
+  const f = $b('bk-t1'); if (f) f.focus();
+}
+function bkKeep(){ const t = $b('bk-t1'); if (t) bk.draft.t1 = t.value; const dt = $b('bk-date'); if (dt) bk.draft.date = dt.value; }
+async function bkNext(){
+  const r = bk.rec, d = bk.draft, t1 = bkVal('bk-t1'), from = bk.stage, snap = JSON.stringify(r);
+  bk.note = '';
+  if (from === 'start'){ if (r.charge.before === null){ bk.note = 'Pick a number first.'; return bkDraw(); } r.rounds.push({from: 'the step'}); bk.stage = 'welcome'; }
+  else if (from === 'welcome'){ Object.assign(bkRound(), {body: d.body || [], felt: t1}); bk.stage = 'acknowledge'; }
+  else if (from === 'acknowledge'){
+    if (!t1){ bk.note = 'Give it a name first, even a rough one.'; bk.draft.t1 = ''; return bkDraw(); }
+    Object.assign(bkRound(), {name: t1, element: d.element || '', kind: d.kind || ''}); bk.stage = 'validate';
+  }
+  else if (from === 'validate'){ Object.assign(bkRound(), {validated: true, purpose: t1}); bk.stage = 'exhale'; }
+  else if (from === 'out') bk.stage = 'part';
+  else if (from === 'face'){ bkRound().part321 = {face: t1}; bk.stage = 'talk'; }
+  else if (from === 'talk'){ bkRound().part321.talk = t1; bk.stage = 'be'; }
+  else if (from === 'be'){
+    bkRound().part321.be = t1;
+    if (r.rounds.length < BK_MAX_ROUNDS){ r.rounds.push({from: `a part of ${bkRound().name || 'it'}`}); bk.stage = 'welcome'; }
+    else bk.stage = 'end';
+  }
+  const was = bk.draft; bk.draft = {};
+  if (!(await bkSave())){ bk.rec = JSON.parse(snap); bk.stage = from; bk.draft = {...was, t1}; }
+  bkDraw();
+}
+async function bkFinish(){
+  const r = bk.rec, d = bk.draft, kind = d.end, text = bkVal('bk-t1'), date = ($b('bk-date') || {}).value || '';
+  bkKeep(); bk.note = '';
+  if (!kind) return;
+  if (kind === 'moved' && !/^\d{4}-\d{2}-\d{2}$/.test(date)){ bk.note = 'Pick the new date first.'; return bkDraw(); }
+  if (['now', 'change', 'drop'].includes(kind) && !text){ bk.note = 'A line here is what Claude acts on. Write one first.'; return bkDraw(); }
+  if (r.charge.after === null){ bk.note = 'Pick the charge now, from 0 to 10.'; return bkDraw(); }
+  const at = new Date().toISOString();
+  r.resolution = {kind, text, ...(kind === 'moved' ? {date} : {}), at};
+  r.status = kind === 'stuck' ? 'stuck' : 'resolved'; r.finishedAt = at;
+  bk.stage = 'done';
+  if (!(await bkSave())){ r.status = 'open'; r.resolution = null; bk.stage = 'end'; return bkDraw(); }
+  // The step carries a pointer to its latest run; a moved date is moved the way the Move button moves it, with the why.
+  const s = stSteps[bk.id];
+  if (db && s){
+    const patch = {blocker: bk.key, blockerAt: at};
+    if (kind === 'moved') Object.assign(patch, {due: date, moved: [...(s.moved || []), {from: s.due || null, to: date, at, why: text, via: 'blocker'}]});
+    try { await db.doc('steps/' + bk.id).update(patch); } catch {}
+  }
+  bkDraw();
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-bk]'); if (!b) return;
+  const a = b.dataset.bk;
+  if (a === 'open') return openBlocker(b.dataset.step);
+  if (!bk) return;
+  if (a === 'close') return closeBlocker();
+  if (a === 'next') return bkNext();
+  if (a === 'finish') return bkFinish();
+  bkKeep();
+  if (a === 'scale'){ bk.rec.charge[b.dataset.k] = Number(b.dataset.v); return bkDraw(); }
+  if (a === 'pick'){ bk.draft[b.dataset.k] = bk.draft[b.dataset.k] === b.dataset.v ? '' : b.dataset.v; return bkDraw(); }
+  if (a === 'multi'){ const l = bk.draft[b.dataset.k] = bk.draft[b.dataset.k] || []; const i = l.indexOf(b.dataset.v); if (i < 0) l.push(b.dataset.v); else l.splice(i, 1); return bkDraw(); }
+  if (a === 'end'){ bk.draft.end = b.dataset.v; return bkDraw(); }
+  if (a === 'aligned' || a === 'exit'){
+    bkRound().aligned = a === 'aligned'; const from = bk.stage; bk.stage = a === 'aligned' ? 'end' : 'out';
+    return bkSave().then(ok => { if (!ok) bk.stage = from; bkDraw(); });
+  }
+  if (a === 'part-yes' || a === 'part-no'){
+    bkRound().partStayed = a === 'part-yes'; const from = bk.stage; bk.stage = a === 'part-yes' ? 'face' : 'end';
+    return bkSave().then(ok => { if (!ok) bk.stage = from; bkDraw(); });
+  }
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeBlocker(); });
+
+// ---- Your steps ----
+let stLists = {}, stSteps = {};
+const stDrafts = {}, stSecrets = {}, stFileDrafts = {};
+// Which device Wendell is on. Starts from the screen (a touch screen counts as a phone) and keeps his choice on this device.
+let stWhere = (() => { try { const v = localStorage.getItem('st-where'); if (v === 'phone' || v === 'computer') return v; } catch {} return matchMedia('(pointer: coarse)').matches ? 'phone' : 'computer'; })();
+const stLater = s => stWhere === 'phone' && s.device === 'computer' && !s.done && !s.retired;
+const stHref = h => /^https:\/\//.test(h || '') ? h : '';
+const stOf = id => Object.entries(stSteps).filter(([,s]) => s.list === id).sort((a,b) => (a[1].n||0) - (b[1].n||0));
+const stReq = arr => arr.filter(([,s]) => !s.optional && !s.retired);
+// A due date is a plain YYYY-MM-DD in Wendell's local day. Days left are counted in whole local days.
+const stToday = () => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); };
+const stDay = v => { const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(v || ''); return m ? new Date(+m[1], +m[2] - 1, +m[3]) : null; };
+const stDaysLeft = v => { const d = stDay(v); return d ? Math.round((d - stToday()) / 86400000) : null; };
+const stFmt = v => { const d = stDay(v); return d ? d.toLocaleDateString(undefined, {weekday:'short', day:'numeric', month:'short'}) : ''; };
+function stDueText(v){
+  const n = stDaysLeft(v); if (n === null) return '';
+  if (n < 0) return `Overdue by ${-n} day${n === -1 ? '' : 's'} (was ${stFmt(v)})`;
+  if (n === 0) return `Today, ${stFmt(v)}`;
+  if (n === 1) return `Tomorrow, ${stFmt(v)}`;
+  return `${stFmt(v)}, in ${n} days`;
+}
+const stOverdue = s => !s.done && !s.retired && !s.optional && (stDaysLeft(s.due) ?? 0) < 0;
+/* Wendell, 2026-10-06: "Completed actions or Cancelled steps should move into completed and then should also be collapsible".
+   A step is closed when it is done or withdrawn (retired). A list is finished when it has steps and none of its required ones
+   is still open, so a list whose steps were all withdrawn leaves the open list too. Closed steps sit in a collapsed group. */
+const stClosed = s => !!(s.done || s.retired);
+const stFinished = id => { const all = stOf(id); return all.length > 0 && stReq(all).every(([,s]) => s.done); };
+const stOpenGroups = new Set();
+/* Wendell, 2026-10-12: "we also need the ability to collapse steps so I can see all the open items and open them up when I
+   want to get more info". Each step folds to its one line plus a short peek (due, overdue, computer, note); tapping the line
+   opens the rest. Which steps are open is kept across redraws, like the Completed groups. */
+function stPeek(s, over){
+  const bits = [];
+  if (s.due && !s.done) bits.push(over ? `<b class="st-due-over">Overdue</b>` : esc(stFmt(s.due)));
+  if (s.device === 'computer' && !s.done) bits.push('Computer');
+  if (s.optional) bits.push('Optional');
+  if (s.note) bits.push('Has a note');
+  const nf = stFiles(s).length;
+  if (nf) bits.push(`${nf} to review`);
+  return bits.join(' · ');
+}
+/* A step's files: [{id, title, kind: text|image|link, text, src, href, caption}], written by the session that publishes
+   the step. Text shows in full, an image shows inline, a link opens. Each has a notes box that saves to fileNotes.<id>
+   on the step, which pull.py records and lists as needs work, the same as a step note. */
+const stFileId = f => String(f && f.id || '').replace(/[^A-Za-z0-9_-]/g, '');
+const stFiles = s => (Array.isArray(s.files) ? s.files : []).filter(f => f && stFileId(f));
+const stImg = u => /^https:\/\//i.test(String(u || '')) || /^data:image\/(png|jpe?g|gif|webp);/i.test(String(u || ''));
+function stFile(id, s, f){
+  const fid = stFileId(f), key = id + '--' + fid, saved = ((s.fileNotes || {})[fid] || {});
+  const kind = f.kind || (f.text ? 'text' : f.src ? 'image' : 'link');
+  let body = '';
+  if (kind === 'text') body = `<div class="st-file-text" id="sf-${key}">${esc(f.text || '')}</div><div class="st-file-bar"><button type="button" class="st-btn" data-copy="sf-${key}">Copy</button></div>`;
+  else if (kind === 'image' && stImg(f.src)) body = `<img src="${esc(f.src)}" alt="${esc(f.title || 'Attached image')}" loading="lazy">`;
+  if (stHref(f.href)) body += `<div class="st-file-bar"><a class="st-btn" href="${esc(f.href)}" target="_blank" rel="noopener">${esc(kind === 'link' ? 'Open it' : 'Open the full file')}</a></div>`;
+  const cap = f.caption ? `<p class="st-file-cap">${esc(f.caption)}</p>` : '';
+  return `<details class="st-file" data-group="sf-${key}"${stOpenGroups.has('sfc-' + key) ? '' : ' open'}>
+    <summary>${esc(f.title || 'Attached file')} <span class="st-file-kind">${esc(kind)}</span></summary>
+    ${cap}${body}
+    ${saved.text ? `<div class="st-note">Your notes: ${esc(saved.text)}</div>` : ''}
+    <label for="sfn-${key}">Your notes on this</label>
+    <textarea id="sfn-${key}" placeholder="What to change, cut or keep. Claude reads it.">${esc(stFileDrafts[key] ?? saved.text ?? '')}</textarea>
+    <button type="button" class="st-btn" data-fnote="${id}" data-fid="${fid}">Save notes</button> <span class="st-state" id="sfs-${key}"></span>
+  </details>`;
+}
+function stStep(id, s){
+  if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
+  if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
+  const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}${stHref(s.href2) ? `<br><a href="${esc(s.href2)}" target="_blank" rel="noopener">${esc(s.where2 || 'Then open this')}</a>` : ''}</div></div>` : '';
+  const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
+  const gen = s.generate ? `<div class="st-row"><span>Secret</span><div class="st-val"><button type="button" class="st-btn st-solid" data-gen="${id}" data-len="${Number(s.generate)||48}">Make a new secret</button><code id="sg-${id}" ${stSecrets[id]?'':'hidden'}>${esc(stSecrets[id]||'')}</code><button type="button" class="st-btn" data-copy="sg-${id}" id="sgc-${id}" ${stSecrets[id]?'':'hidden'}>Copy</button></div></div><p class="st-src">It is made on this device and never saved anywhere. Paste it straight in, and make a new one if you lose it.</p>` : '';
+  const files = stFiles(s).length ? `<div class="st-files">${stFiles(s).map(f => stFile(id, s, f)).join('')}</div>` : '';
+  const check = s.check ? `<div class="st-row"><span>Check</span><div class="st-val">${esc(s.check)}</div></div>` : '';
+  const over = stOverdue(s);
+  const due = s.due && !s.done ? `<div class="st-row"><span>Due</span><div class="st-val${over ? ' st-due-over' : ''}">${esc(stDueText(s.due))}</div></div>` : '';
+  const runs = bkOf(id), last = runs[0] && runs[0][1];
+  const work = `<button type="button" class="st-btn${over ? ' st-solid' : ''}" data-bk="open" data-step="${id}">Work through what's in the way</button>`;
+  const charge = over ? `<p class="st-charge">This one slipped. Whatever is in the way is charge to metabolize. Work through it here, step by step, or move the date below and say why. Claude reads both.</p><div>${work}</div>` : '';
+  const past = last ? `<p class="bk-past">Worked through ${runs.length} time${runs.length === 1 ? '' : 's'}. Last time: ${esc((last.rounds || []).map(x => x.name).filter(Boolean).join(', then ') || 'nothing named yet')}. ${esc(last.status === 'open' ? 'Left at ' + last.stage : 'Ended: ' + String((BK_ENDS.find(x => x[0] === (last.resolution || {}).kind) || [])[1] || last.status).toLowerCase())}.</p>` : '';
+  const moved = (s.moved || []).length ? `<p class="st-src">Date moved ${s.moved.length} time${s.moved.length === 1 ? '' : 's'}.</p>` : '';
+  const chips = [s.device === 'computer' ? '<span class="st-chip st-pc">Needs a computer</span>' : '<span class="st-chip">Works on a phone</span>'];
+  if (s.stopSafe) chips.push('<span class="st-chip st-safe">Safe to stop after this</span>');
+  if (s.optional) chips.push('<span class="st-chip st-opt">Optional</span>');
+  return `<li class="st-step${s.done?' st-done':''}" id="s-${id}">
+    <button type="button" class="st-tick" data-tick="${id}" aria-pressed="${!!s.done}" aria-label="Step ${esc(s.n)}: ${s.done?'done, tap to undo':'tap when done'}">${s.done?'✓':esc(s.n)}</button>
+    <div class="st-body">
+      <details class="st-fold" data-group="s-${id}"${stOpenGroups.has('s-' + id) ? ' open' : ''}>
+      <summary><span class="st-do">${esc(s.do)}</span><span class="st-peek">${stPeek(s, over)}</span></summary>
+      <div class="st-more">
+      ${files}${where}${enter}${gen}${check}${due}${charge}${past}
+      <div class="st-chips">${chips.join('')}</div>
+      ${s.note ? `<div class="st-note">Your note: ${esc(s.note)}</div>` : ''}
+      <details${over ? ' open' : ''}><summary>Stuck, or something looks different?</summary>
+        <textarea id="sn-${id}" placeholder="Say what you see, or what feels in the way. Claude reads it.">${esc(stDrafts[id] ?? s.note ?? '')}</textarea>
+        <button type="button" class="st-btn" data-note="${id}">Save note</button> ${over || s.done ? '' : work} <span class="st-state" id="sns-${id}"></span>
+        ${s.done ? '' : `<div class="st-move"><label for="sd-${id}">Move the date to</label><input type="date" id="sd-${id}" value="${esc(s.due || '')}"><button type="button" class="st-btn" data-move="${id}">Move</button></div>${moved}`}
+      </details>
+      </div></details>
+    </div>
+  </li>`;
+}
+function stList(id, l){
+  const all = stOf(id), req = stReq(all), n = req.filter(([,s]) => s.done).length;
+  const pct = req.length ? Math.round(100 * n / req.length) : 0;
+  const next = req.filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0];
+  const nextTxt = next ? `<span class="${stDaysLeft(next) < 0 ? 'st-due-over' : ''}">Next due ${esc(stFmt(next))}</span>` : '';
+  const open = all.filter(([,s]) => !stClosed(s)), closed = all.filter(([,s]) => stClosed(s));
+  const withdrawn = all.filter(([,s]) => s.retired).length;
+  const count = req.length ? `${n} of ${req.length} done` : 'Nothing left to do';
+  const closedHtml = closed.length ? `<details class="st-closed" data-group="g-${id}"${stOpenGroups.has('g-' + id) ? ' open' : ''}><summary>Completed (${closed.length})</summary><ol class="st-steps">${closed.map(([sid, s]) => stStep(sid, s)).join('')}</ol></details>` : '';
+  return `<article class="st-list" id="l-${id}"><header>
+    <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${count}${withdrawn ? `, ${withdrawn} withdrawn` : ''}</span>${nextTxt}${(() => { const pc = req.filter(([,s]) => !s.done && s.device === 'computer').length; return pc ? `<span class="st-chip st-pc">${pc} need${pc === 1 ? 's' : ''} a computer</span>` : ''; })()}</div>
+    <h2 style="margin:0">${esc(l.title)}</h2>
+    ${l.why ? `<p class="st-why">${esc(l.why)}</p>` : ''}${l.source ? `<p class="st-src">From ${esc(l.source)}</p>` : ''}
+    <div class="st-bar" aria-hidden="true"><i style="width:${pct}%"></i></div></header>
+    ${open.length ? `<ol class="st-steps">${open.map(([sid, s]) => stStep(sid, s)).join('')}</ol>` : ''}${closedHtml}</article>`;
+}
+function renderSteps(){
+  renderSend();
+  const active = document.activeElement && document.activeElement.id;
+  // Lists with the soonest open due date come first; lists without one keep their order after them.
+  const nextDue = id => stReq(stOf(id)).filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0] || '9999';
+  const ids = Object.keys(stLists).sort((a,b) => nextDue(a).localeCompare(nextDue(b)) || (stLists[a].order||0) - (stLists[b].order||0) || String(stLists[a].created||'').localeCompare(String(stLists[b].created||'')));
+  /* A list with no steps has nothing to do and nothing done, so it shows nowhere (Wendell, 2026-10-12, of the empty
+     Morning moves list: "is this working? Why is it on my todo list?"). */
+  const live = ids.filter(id => stOf(id).length > 0);
+  const todo = live.filter(id => !stFinished(id)), done = live.filter(id => stFinished(id));
+  document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
+  document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
+  const chases = ocChases();
+  document.getElementById('steps-chase').innerHTML = chList(chases);
+  document.getElementById('steps-empty').hidden = todo.length > 0 || chases.length > 0;
+  document.getElementById('n-steps').textContent = todo.length + (chases.some(c => c.chase) ? 1 : 0);
+  const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
+  const pc = open.filter(([,s]) => s.device === 'computer').length;
+  document.querySelectorAll('[data-where]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.where === stWhere)));
+  document.getElementById('st-where').hidden = open.length === 0;
+  document.getElementById('st-where-sum').textContent = stWhere === 'phone'
+    ? `${open.length - pc} you can do now, ${pc} waiting for a computer.`
+    : `${open.length} open, ${pc} of them need a computer.`;
+  if (active){ const el = document.getElementById(active); if (el && el.closest('#view-steps')) el.focus(); }
+}
+function stSecret(len){
+  const bytes = new Uint8Array(Math.ceil(len * 3 / 4) + 3); crypto.getRandomValues(bytes);
+  return btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'').slice(0, len);
+}
+const stepsView = document.getElementById('view-steps');
+// Remember which Completed groups are open, since every save redraws the tab.
+stepsView.addEventListener('toggle', e => {
+  const g = e.target.dataset && e.target.dataset.group; if (!g) return;
+  // A file opens by default, so what is kept is that he closed it.
+  if (g.startsWith('sf-')){ const c = 'sfc-' + g.slice(3); if (e.target.open) stOpenGroups.delete(c); else stOpenGroups.add(c); return; }
+  if (e.target.open) stOpenGroups.add(g); else stOpenGroups.delete(g);
+}, true);
+stepsView.addEventListener('input', e => {
+  if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value;
+  if (e.target.id && e.target.id.startsWith('sfn-')) stFileDrafts[e.target.id.slice(4)] = e.target.value;
+});
+stepsView.addEventListener('click', async e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.where){
+    stWhere = t.dataset.where; try { localStorage.setItem('st-where', stWhere); } catch {}
+    renderSteps(); return;
+  }
+  if (t.dataset.copy){
+    const el = document.getElementById(t.dataset.copy); if (!el) return;
+    try { await navigator.clipboard.writeText(el.textContent); t.textContent = 'Copied'; setTimeout(() => { t.textContent = 'Copy'; }, 1500); }
+    catch (err){ const r = document.createRange(); r.selectNodeContents(el); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); t.textContent = 'Selected, copy it'; }
+    return;
+  }
+  if (t.dataset.gen){
+    const id = t.dataset.gen; stSecrets[id] = stSecret(Number(t.dataset.len) || 48);
+    const code = document.getElementById('sg-' + id), copy = document.getElementById('sgc-' + id);
+    code.textContent = stSecrets[id]; code.hidden = false; copy.hidden = false; return;
+  }
+  if (t.dataset.tick){
+    const id = t.dataset.tick, s = stSteps[id]; if (!s) return;
+    if (!db){ document.getElementById('banner').classList.add('on'); return; }
+    const done = !s.done, at = done ? new Date().toISOString() : null;
+    stSteps[id] = {...s, done, doneAt: at}; renderSteps();
+    try { await db.doc('steps/' + id).update({done, doneAt: at}); }
+    catch (err){ stSteps[id] = s; renderSteps(); const st = document.getElementById('sns-' + id); if (st) st.textContent = 'Could not save the tick (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (t.dataset.move){
+    const id = t.dataset.move, s = stSteps[id], st = document.getElementById('sns-' + id);
+    const v = (document.getElementById('sd-' + id).value || '').trim();
+    if (!s || !/^\d{4}-\d{2}-\d{2}$/.test(v) || v === s.due){ if (st) st.textContent = 'Pick a new date first.'; return; }
+    if (!db){ st.textContent = 'Not saved in this view.'; return; }
+    // Each move keeps the date it replaced, so how often a step slips is part of the record.
+    const moved = [...(s.moved || []), {from: s.due || null, to: v, at: new Date().toISOString()}];
+    try { await db.doc('steps/' + id).update({due: v, moved}); st.textContent = 'Date moved. Claude reads it.'; }
+    catch (err){ st.textContent = 'Could not move the date (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (t.dataset.fnote){
+    const id = t.dataset.fnote, fid = t.dataset.fid, key = id + '--' + fid, st = document.getElementById('sfs-' + key), s = stSteps[id];
+    const text = (document.getElementById('sfn-' + key).value || '').trim();
+    if (!db || !s){ st.textContent = 'Not saved in this view.'; return; }
+    const fileNotes = {...(s.fileNotes || {}), [fid]: {text, at: new Date().toISOString()}};
+    try { await db.doc('steps/' + id).update({fileNotes}); delete stFileDrafts[key]; st.textContent = 'Saved. Claude reads it.'; }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (t.dataset.note){
+    const id = t.dataset.note, st = document.getElementById('sns-' + id);
+    const text = (document.getElementById('sn-' + id).value || '').trim();
+    if (!db){ st.textContent = 'Not saved in this view.'; return; }
+    try { await db.doc('steps/' + id).update({note: text, noteAt: new Date().toISOString()}); delete stDrafts[id]; st.textContent = 'Saved. Claude reads it.'; }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+  }
+});
+// ---- Outreach and Podcast chases (outreach-on-board, outreach-chases-live, outreach-no-send; 2026-10-08) ----
+/* The contacts and shows came over from the Podcast Outreach page with their ids. A chase is computed from a contact by
+   the morning brief's three rules, so nothing is copied and a chase leaves the list when its rule stops firing. Saving
+   a chase writes the contact and nothing else: contacts are not in pendingSaves, so the Send bar stays dark. */
+let ocContacts = {}, ocShows = {}, ocFilter = 'All';
+const OC_STATUSES = ['Identified', 'Pitched', 'Followed up', 'Booked', 'Recorded', 'Published', 'Shared', 'Declined'];
+const OC_GO = new Set(['Booked', 'Recorded', 'Published', 'Shared']);
+const OC_FOLLOW_UP_DAYS = 5;
+const ocIso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+const ocPlus = n => { const d = stToday(); d.setDate(d.getDate() + n); return ocIso(d); };
+const ocHttp = u => /^https?:\/\//i.test(String(u || '').trim());
+// Which of the brief's rules fire for a contact, in its order; empty when none.
+function ocWhy(c){
+  const out = [], days = stDaysLeft(c.nextTouch), since = stDaysLeft(c.lastTouch);
+  if (String(c.flag || '').toUpperCase().includes('FOLLOW UP NOW')) out.push('Flagged to follow up now');
+  if (days !== null && days <= 0) out.push(days === 0 ? 'Next touch is today' : `Next touch was ${stFmt(c.nextTouch)}`);
+  if (c.status === 'Pitched' && since !== null && -since >= OC_FOLLOW_UP_DAYS) out.push(`Pitched ${-since} days ago`);
+  return out;
+}
+const ocNeeds = c => ocWhy(c).length > 0;
+// A Booked contact whose next touch is in the next three days is a recording coming up, not a chase.
+const ocRecording = c => { const d = stDaysLeft(c.nextTouch); return c.status === 'Booked' && d !== null && d > 0 && d <= 3; };
+function ocChases(){
+  return Object.entries(ocContacts).map(([id, c]) => ({id, c, why: ocWhy(c), chase: ocNeeds(c), rec: !ocNeeds(c) && ocRecording(c)}))
+    .filter(x => x.chase || x.rec)
+    .sort((a, b) => (b.chase - a.chase) || String(a.c.name || '').localeCompare(String(b.c.name || '')));
+}
+const chDraft = {};
+const CH_ACTS = [['sent', 'Sent'], ['booked', 'Booked'], ['notnow', 'Not now']];
+function chItem({id, c, why, rec}){
+  const d = chDraft[id] || {}, date = d.date || ocPlus(OC_FOLLOW_UP_DAYS);
+  const last = String(c.notes || '').split('\n')[0];
+  const acts = rec ? [['recorded', 'Recorded']] : CH_ACTS;
+  return `<li class="st-step" id="ch-${esc(id)}"><span class="st-tick" aria-hidden="true">${rec ? '●' : '!'}</span><div class="st-body">
+    <p class="st-do">${ocHttp(c.contact) ? `<a href="${esc(c.contact)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}</p>
+    <div class="st-chips"><span class="st-chip">${esc(c.show || 'No show')}</span><span class="st-chip">${esc(c.status || 'Identified')}</span>${rec ? `<span class="st-chip st-safe">Recording ${esc(stFmt(c.nextTouch))}</span>` : why.map(w => `<span class="st-chip st-opt">${esc(w)}</span>`).join('')}</div>
+    ${c.why ? `<p class="st-why">${esc(c.why)}</p>` : ''}
+    <div class="st-row"><span>Last</span><span>${c.lastTouch ? esc(stFmt(c.lastTouch)) : 'No touch on record'}${last ? `. ${esc(last)}` : ''}</span></div>
+    <div class="ch-form">
+      <div class="ch-acts" role="group" aria-label="What happened with ${esc(c.name)}" style="grid-template-columns:repeat(${acts.length},minmax(0,1fr))">${acts.map(([v, l]) => `<button type="button" data-ch-act="${v}" data-ch="${esc(id)}" aria-pressed="${d.act === v}">${l}</button>`).join('')}</div>
+      <div class="ch-line"><label class="st-sum" for="chd-${esc(id)}">Next touch</label><input type="date" id="chd-${esc(id)}" value="${esc(date)}"></div>
+      <div class="ch-line"><input type="text" id="chn-${esc(id)}" placeholder="A note, if any" value="${esc(d.note || '')}"><button type="button" class="save" data-ch-save="${esc(id)}">Save</button></div>
+      <div class="st-state" id="chs-${esc(id)}" aria-live="polite"></div>
+    </div></div></li>`;
+}
+function chList(items){
+  if (!items.length) return '';
+  const n = items.filter(x => x.chase).length, r = items.length - n;
+  const count = [n ? `${n} to chase` : '', r ? `${r} recording${r === 1 ? '' : 's'} coming up` : ''].filter(Boolean).join(', ');
+  return `<article class="st-list" id="l-podcast-chases"><header>
+    <div class="st-meta"><span class="st-repo">Outreach</span><span class="st-count">${count}</span></div>
+    <h2 style="margin:0">Podcast chases</h2>
+    <p class="st-why">Each of these is a message from you to someone who knows you. Say what happened and the row on the Outreach tab updates; the chase leaves this list once it is no longer due.</p></header>
+    <ol class="st-steps">${items.map(chItem).join('')}</ol></article>`;
+}
+async function chSave(id){
+  const c = ocContacts[id], st = document.getElementById('chs-' + id); if (!c) return;
+  const d = chDraft[id] || {};
+  d.date = document.getElementById('chd-' + id).value || ''; d.note = (document.getElementById('chn-' + id).value || '').trim();
+  chDraft[id] = d;
+  if (!d.act){ st.textContent = 'Pick what happened first.'; return; }
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  const today = ocIso(stToday()), label = {sent: 'Sent', booked: 'Booked', notnow: 'Not now', recorded: 'Recorded'}[d.act];
+  let status = c.status || 'Identified';
+  if (d.act === 'sent') status = status === 'Identified' ? 'Pitched' : (status === 'Pitched' || status === 'Followed up') ? 'Followed up' : status;
+  if (d.act === 'booked') status = 'Booked';
+  if (d.act === 'recorded') status = 'Recorded';
+  const line = `${today}: ${label}${d.date && d.act !== 'recorded' ? `, next touch ${d.date}` : ''}.${d.note ? ' ' + d.note : ''}`;
+  const patch = {status, lastTouch: today, nextTouch: d.act === 'recorded' ? '' : d.date, flag: '', notes: c.notes ? line + '\n' + c.notes : line};
+  st.textContent = 'Saving…';
+  try { await db.doc('contacts/' + id).update(patch); delete chDraft[id]; ocContacts[id] = {...c, ...patch}; renderOutreach(); renderSteps(); }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+}
+stepsView.addEventListener('input', e => {
+  const m = /^ch([dn])-(.+)$/.exec(e.target.id || ''); if (!m) return;
+  const d = chDraft[m[2]] = chDraft[m[2]] || {};
+  if (m[1] === 'd') d.date = e.target.value; else d.note = e.target.value;
+});
+stepsView.addEventListener('click', e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.chAct){
+    const id = t.dataset.ch, d = chDraft[id] = chDraft[id] || {};
+    d.act = d.act === t.dataset.chAct ? '' : t.dataset.chAct;
+    d.date = document.getElementById('chd-' + id).value; d.note = document.getElementById('chn-' + id).value;
+    renderSteps(); const b = document.querySelector(`[data-ch="${CSS.escape(id)}"][data-ch-act="${t.dataset.chAct}"]`); if (b) b.focus();
+  }
+  if (t.dataset.chSave) chSave(t.dataset.chSave);
+});
+// The Outreach tab: the old page's view, writing this board's store.
+function ocShowNames(){
+  const names = Object.values(ocShows).sort((a, b) => ((a.order ?? 999) - (b.order ?? 999)) || String(a.name || '').localeCompare(String(b.name || ''))).map(s => s.name).filter(Boolean);
+  Object.values(ocContacts).forEach(c => { if (c.show && !names.includes(c.show)) names.push(c.show); });
+  return names;
+}
+function renderOutreach(){
+  const all = Object.entries(ocContacts), names = ocShowNames();
+  const tabs = ['All', ...names, ...(all.some(([, c]) => !c.show) ? ['Unsorted'] : [])];
+  if (!tabs.includes(ocFilter)) ocFilter = 'All';
+  document.getElementById('n-outreach').textContent = all.filter(([, c]) => ocNeeds(c)).length;
+  document.getElementById('oc-shows').innerHTML = tabs.length > 1 ? tabs.map(n => `<button type="button" data-oc-show="${esc(n)}" aria-pressed="${n === ocFilter}">${esc(n)}</button>`).join('') : '';
+  document.getElementById('oc-showlist').innerHTML = names.map(n => `<option value="${esc(n)}">`).join('');
+  const shown = all.filter(([, c]) => ocFilter === 'All' || (ocFilter === 'Unsorted' ? !c.show : c.show === ocFilter))
+    .sort((a, b) => (ocNeeds(b[1]) - ocNeeds(a[1])) || String(a[1].name || '').localeCompare(String(b[1].name || '')));
+  document.getElementById('oc-tally').textContent = all.length ? `${shown.length} ${shown.length === 1 ? 'contact' : 'contacts'}, ${shown.filter(([, c]) => ocNeeds(c)).length} to chase` : '';
+  document.getElementById('oc-empty').hidden = shown.length > 0;
+  document.getElementById('oc-empty').textContent = ocFilter === 'All' ? 'No one on the list yet.' : `Nobody on ${ocFilter} yet.`;
+  document.getElementById('oc-rows').innerHTML = shown.map(([id, c]) => {
+    const need = ocNeeds(c), tone = need ? 'flag' : OC_GO.has(c.status) ? 'go' : '';
+    return `<div class="oc-row ${tone}"><div class="oc-head">
+      <p class="oc-who">${ocHttp(c.contact) ? `<a href="${esc(c.contact)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name)}</p>
+      <span class="oc-role">${esc([c.role, c.show].filter(Boolean).join(' · '))}</span>
+      <select class="oc-pick" data-oc-status="${esc(id)}" aria-label="Status for ${esc(c.name)}">${OC_STATUSES.map(s => `<option${s === c.status ? ' selected' : ''}>${s}</option>`).join('')}</select></div>
+      ${c.why ? `<p class="oc-why">${esc(c.why)}</p>` : ''}${c.notes ? `<p class="oc-notes">${esc(c.notes)}</p>` : ''}
+      <div class="oc-meta"><span>Last touch ${c.lastTouch ? esc(stFmt(c.lastTouch)) : 'none'}</span><span>Next touch ${c.nextTouch ? esc(stFmt(c.nextTouch)) : 'none'}</span>${c.contact && !ocHttp(c.contact) ? `<span>${esc(c.contact)}</span>` : ''}</div>
+      ${need ? `<span class="oc-flag">Follow up now</span>` : ''}</div>`;
+  }).join('');
+}
+const ocView = document.getElementById('view-outreach');
+document.getElementById('oa-status').innerHTML = OC_STATUSES.map(s => `<option>${s}</option>`).join('');
+ocView.addEventListener('click', e => { const t = e.target.closest('[data-oc-show]'); if (t){ ocFilter = t.dataset.ocShow; renderOutreach(); } });
+ocView.addEventListener('change', async e => {
+  const id = e.target.dataset && e.target.dataset.ocStatus; if (!id) return;
+  const c = ocContacts[id], v = e.target.value; if (!c) return;
+  if (!db){ document.getElementById('banner').classList.add('on'); return; }
+  ocContacts[id] = {...c, status: v}; renderOutreach(); renderSteps();
+  try { await db.doc('contacts/' + id).update({status: v}); } catch { ocContacts[id] = c; renderOutreach(); renderSteps(); }
+});
+const ocSlug = n => (String(n).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'contact') + '-' + Math.random().toString(36).slice(2, 7);
+document.getElementById('oc-add').addEventListener('submit', async e => {
+  e.preventDefault();
+  const st = document.getElementById('oa-state'), v = k => document.getElementById('oa-' + k).value.trim(), name = v('name');
+  if (!name) return;
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  const rec = {name, role: v('role'), show: v('show'), contact: v('contact'), why: v('why'), status: v('status'), lastTouch: v('last'), nextTouch: v('next'), notes: v('notes'), flag: ''};
+  st.textContent = 'Saving…';
+  try { await db.doc('contacts/' + ocSlug(name)).set(rec); st.textContent = name + ' added.'; e.target.reset(); }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
+document.getElementById('oc-addshow').addEventListener('submit', async e => {
+  e.preventDefault();
+  const st = document.getElementById('os-state'), name = document.getElementById('os-name').value.trim();
+  if (!name) return;
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  if (ocShowNames().includes(name)){ st.textContent = name + ' is already a show.'; return; }
+  st.textContent = 'Saving…';
+  try { await db.doc('shows/' + ocSlug(name)).set({name, order: Object.keys(ocShows).length + 1}); st.textContent = name + ' added.'; e.target.reset(); }
+  catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
+renderOutreach();
+
+// ---- Send to Claude ----
+/* What counts as unsent: a row saved and not yet recorded, the context box saved since the last record, and a step
+   ticked, noted or moved, and a blocker panel run; each only when it is later than the last send. */
+function pendingSaves(){
+  const since = (lastSent && lastSent.sentAt) || '';
+  const after = t => !t || t > since;
+  const out = [];
+  for (const kind of ['questions', 'positions', 'terms', 'causes'])
+    for (const id of Object.keys(live[kind])) if (status(kind, id) === 'saved' && after(live[kind][id].savedAt)) out.push(kind + '/' + id);
+  if (liveSteer && (liveSteer.text || '').trim() && liveSteer.savedAt > (DATA.steer_recorded_through || '') && after(liveSteer.savedAt)) out.push('steer/general');
+  if (moPaste && moPaste.savedAt > ((DATA.morning && DATA.morning.gathered_at) || '') && after(moPaste.savedAt)) out.push('morning/menu');
+  for (const id of Object.keys(moLive)){
+    const d = moLive[id];
+    if (!d.removed && !moRecorded.has(id) && after(d.savedAt)) out.push('picks/' + id);
+  }
+  for (const id of Object.keys(stSteps)){
+    const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at), ...Object.values(s.fileNotes || {}).map(n => n && n.at)].filter(Boolean).sort().pop();
+    if (t && t > PICKUP_SINCE && after(t)) out.push('steps/' + id);
+  }
+  // A run of the blocker panel counts once it is saved, finished or not, so a run left half way still reaches Claude.
+  for (const id of Object.keys(bkRecs)) if (bkRecs[id].savedAt && after(bkRecs[id].savedAt)) out.push('blockers/' + id);
+  return out;
+}
+function renderSend(){
+  const bar = document.getElementById('send'); if (!bar) return;
+  const list = db ? pendingSaves() : [], btn = document.getElementById('send-btn'), msg = document.getElementById('send-msg');
+  const sig = list.join(',');
+  const on = !!(sendNote || (list.length && sig !== sendClosed));
+  bar.classList.toggle('on', on); document.body.classList.toggle('has-send', on);
+  if (!on) return;
+  const n = list.length, what = n === 1 ? 'One answer is' : n + ' answers are';
+  btn.hidden = !mcp || !n; btn.disabled = sendBusy;
+  if (sendNote) msg.textContent = sendNote;
+  else msg.textContent = mcp ? `${what} saved and not yet sent. Send ${n === 1 ? 'it' : 'them'}, and a Claude records ${n === 1 ? 'it' : 'them'} and starts the work.`
+    : `${what} saved. This view cannot reach Claude, so tell Claude in chat that you saved.`;
+}
+function sendError(err){
+  const code = err && err.code;
+  if (code === 'needs_reauth') return 'Claude Code Remote needs signing in again: reconnect it in claude.ai Settings, Connectors, then send again.';
+  if (code === 'server_not_connected' || code === 'selection_required') return 'This page cannot find your Claude Code Remote connector. Add it in claude.ai Settings, Connectors, or tell Claude in chat that you saved.';
+  if (code === 'not_in_manifest' || code === 'not_granted' || code === 'capability_disabled') return 'Sending is turned off for this page. Allow Claude Code Remote in the page’s Permissions menu, or tell Claude in chat that you saved.';
+  if (code === 'blocked_by_policy' || code === 'approval_required') return 'Your organization blocks sending from this page. Tell Claude in chat that you saved.';
+  if (code === 'tool_error') return 'The pickup routine refused the send (' + ((err && err.message) || 'no reason given') + '). Tell Claude in chat that you saved.';
+  // server_unavailable, upstream_error, cancelled and anything new: the routine may have fired, so a second press is the viewer's call.
+  return 'It may not have gone through (' + (code || 'error') + '). Check the project for a new message before sending again.';
+}
+function flashSend(text){
+  sendNote = text; clearTimeout(sendNoteTimer);
+  sendNoteTimer = setTimeout(() => { sendNote = ''; renderSend(); }, 12000);
+  renderSend();
+}
+document.getElementById('send-x').addEventListener('click', () => {
+  sendClosed = (db ? pendingSaves() : []).join(','); sendNote = ''; clearTimeout(sendNoteTimer);
+  try { localStorage.setItem('board-send-closed', sendClosed); } catch {}
+  renderSend();
+});
+document.getElementById('send-btn').addEventListener('click', async () => {
+  const list = pendingSaves(); if (sendBusy || !mcp || !list.length) return;
+  sendBusy = true; sendNote = 'Sending…'; renderSend();
+  const at = new Date().toISOString();
+  const text = `Wendell pressed Send to Claude on the Nonprofit Board at ${at}. Saved since the last send: ${list.join(', ')}.`;
+  try {
+    await mcp.callTool('Claude Code Remote', 'fire_trigger', {trigger_id: PICKUP_TRIGGER, text});
+    lastSent = {sentAt: at, rows: list};
+    try { await db.doc('pickup/last').set(lastSent); } catch {}
+    sendBusy = false; flashSend('Sent. A Claude in your project is picking them up now.');
+  } catch (err){ sendBusy = false; flashSend(sendError(err)); }
+});
+
+/* The Morning tab. Wendell, 2026-10-09, on mm-backlog-sources: "Keep them as separate categories people can explore so
+   they aren't just one long list". On mm-menu-shape: "All items need a bridge to lens goals and game masters suggest
+   ways to align to lens goals or suggest adding lens goals a smaller time scales to integrate (side quests merging
+   into main quest)". council/morning.py gathers DATA.morning; a pick saves picks/<item id> in the store, and
+   board/pull.py records it and asks the next board read for one thread per pick (mm-picks-become-threads). */
+let MO = DATA.morning || null, moPaste = null;
+/* The pasted menu (mm-menu-transport, option b): Tap the Vein's sealed-menu JSON, saved at morning/menu. Its lines
+   replace the gathered menu category as soon as it is saved; the other categories wait for morning.py. */
+function moParse(text){
+  const m = JSON.parse(text);
+  if (/"rawEntry"/.test(text)) throw new Error('This carries your free write. Paste only the sealed menu.');
+  if (!m || !Array.isArray(m.items)) throw new Error('This is not a sealed menu: it has no items.');
+  return m;
+}
+/* lens-intake-align: the board read's written line for each intake item (council/intake_align.py), by menu item id. */
+let moWritten = {};
+function moMenuItems(m){
+  const I = DATA.intake;
+  moWritten = (I && I.date === m.sessionDate) ? Object.fromEntries((I.items || []).map(x => [x.id, x.bridge])) : {};
+  return m.items.map((it, i) => { const g = it.status === 'bridged' ? it.goal : null;
+    const id = 'menu-' + (it.key || i), w = moWritten[id];
+    return {id, text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task', can_do: 'Can do today'}[it.source] || ''),
+      bridge: w ? w : g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
+    .sort((a, b) => (a.bridge.kind === 'unaligned') - (b.bridge.kind === 'unaligned'));
+}
+function moApplyPaste(){
+  const base = DATA.morning;
+  if (!moPaste || (base && base.gathered_at && moPaste.savedAt < base.gathered_at)){ MO = base || null; return; }
+  let m; try { m = moParse(moPaste.menu); } catch { MO = base || null; return; }
+  const goals = (m.goals && m.goals.length) ? m.goals : Object.values(Object.fromEntries(m.items.filter(i => i.goal).map(i => [i.goal.id, {id: i.goal.id, title: i.goal.title, domain: i.goal.domain, cadence: i.goal.cadence}])));
+  const cat = {key: 'menu', title: 'From your free write', blurb: 'The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).', items: moMenuItems(m)};
+  MO = {date: m.sessionDate || (base && base.date), pick_limit: 7, goals: (base && base.goals && base.goals.length) ? base.goals : goals, lenses: base && base.lenses,
+        categories: [cat, ...((base && base.categories) || []).filter(c => c.key !== 'menu')]};
+}
+const moRecorded = new Set((DATA.picks || []).map(p => p.id));
+let moLive = {}, moEdits = {}, moShown = {};
+const MO_PAGE = 12;
+const moOpen = (() => { try { return new Set(JSON.parse(localStorage.getItem('board-mo-open') || '["menu"]')); } catch { return new Set(['menu']); } })();
+const moGoal = id => ((MO && MO.goals) || []).find(g => g.id === id);
+const moPicked = id => (moLive[id] && !moLive[id].removed) || moRecorded.has(id);
+function moBridgeText(b){
+  if (!b) return '';
+  const why = b.why ? ' ' + esc(b.why) : '';
+  if (b.kind === 'goal') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.${why}`;
+  if (b.kind === 'row') return `Advances <b>${esc(b.rowTitle || b.rowId)}</b> on the board.${why}`;
+  if (b.kind === 'pitch') return `Pitched: a new ${esc(b.cadence || 'year')} goal, <b>${esc(b.title)}</b>, ${b.parentTitle ? 'under <b>' + esc(b.parentTitle) + '</b>' : 'in ' + esc(b.domain || 'a Lens domain')}. Keep or drop it on the Open tab.${why}`;
+  if (b.kind === 'named') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
+  if (b.kind === 'existing') return `Suggested: serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
+  if (b.kind === 'new') return `Suggested: a new ${esc(b.cadence || 'week')} goal, <b>${esc(b.title)}</b>, under <b>${esc(b.parentTitle || (moGoal(b.parentId) || {}).title || 'a year goal')}</b>.`;
+  return `Unaligned: ${esc(b.why || 'no goal yet')}. Pick a goal or a new smaller one, or keep it unaligned.`;
+}
+function moCurrent(it){ return moEdits[it.id] || (moLive[it.id] && moLive[it.id].bridge) || it.bridge; }
+function moItem(it, cat, full){
+  const b = moCurrent(it), picked = moPicked(it.id), rec = moRecorded.has(it.id);
+  const goals = (MO.goals || []);
+  const val = b.kind === 'unaligned' ? 'none' : b.kind === 'new' ? 'new' : 'g:' + (b.goalId || '');
+  const opts = [`<option value="none"${val==='none'?' selected':''}>No goal (unaligned)</option>`]
+    .concat(goals.map(g => `<option value="g:${esc(g.id)}"${val==='g:'+g.id?' selected':''}>${esc(g.title)} (${esc(g.cadence)})</option>`))
+    .concat([`<option value="new"${val==='new'?' selected':''}>A new smaller goal…</option>`]).join('');
+  const parentOpts = goals.map(g => `<option value="${esc(g.id)}"${(b.parentId===g.id)?' selected':''}>under ${esc(g.title)}</option>`).join('');
+  const note = [it.note && esc(it.note), it.link && `<a href="${esc(it.link)}" target="_blank" rel="noopener">open</a>`].filter(Boolean).join(' · ');
+  const limit = (MO.pick_limit || 7), full_ = full && !picked;
+  return `<div class="mo-item${picked?' picked':''}" data-id="${esc(it.id)}" data-cat="${esc(cat)}">
+    <p class="mo-text">${esc(it.text)}</p>${note ? `<p class="mo-note">${note}</p>` : ''}
+    <p class="mo-bridge${b.kind==='unaligned'?' unaligned':''}">${moBridgeText(b)}</p>
+    <div class="mo-ctl">
+      ${goals.length && !rec ? `<select class="mo-goal" aria-label="Lens goal for this item">${opts}</select>` : ''}
+      ${b.kind==='new' && !rec ? `<input type="text" class="mo-new" aria-label="New goal" value="${esc(b.title||'')}"><select class="mo-parent" aria-label="Under which goal">${parentOpts}</select>` : ''}
+      <button type="button" class="mo-pick" aria-pressed="${picked}"${rec||full_||!db?' disabled':''}>${rec ? 'Picked, recorded' : picked ? 'Picked' : full_ ? 'Seven picked' : 'Pick'}</button>
+    </div></div>`;
+}
+/* The Lenses panel: council/morning.py reads /api/lenses/goals into DATA.morning.lenses (lens-board-reads-goals). */
+function renderLenses(){
+  const L = MO && MO.lenses, box = document.getElementById('mo-lenses');
+  box.hidden = !L;
+  if (!L) return;
+  const n = L.domains.reduce((k, d) => k + d.goals.length, 0);
+  document.getElementById('mo-lenses-sum').textContent = (n ? `${n} active goal${n === 1 ? '' : 's'}` : 'No active goals yet') + (L.note ? ` · ${L.note}` : '');
+  document.getElementById('mo-lens-list').innerHTML = L.domains.map(d => `<dt>${esc(d.label)}</dt>` + (d.goals.length
+    ? `<dd><ul>${d.goals.map(g => `<li>${esc(g.title)}${g.cadence ? ' (' + esc(g.cadence) + ')' : ''}</li>`).join('')}</ul></dd>`
+    : '<dd class="none">No goals here yet</dd>')).join('');
+}
+/* An empty domain's prompt in the Tap the Vein box (lens-pitch-goals, 2026-10-14). One domain a morning, by date;
+   he can pick another. Sealing saves the domain with the free write so the board read pitches goals for it. */
+function renderTtvLens(){
+  const L = MO && MO.lenses, box = document.getElementById('ttv-lens'), pick = document.getElementById('ttv-lens-pick');
+  const empty = L ? L.domains.filter(d => !d.goals.length) : [];
+  box.hidden = !empty.length;
+  if (!empty.length) return;
+  const keys = empty.map(d => d.key).join(',');
+  if (pick.dataset.keys !== keys){
+    const day = Math.floor(Date.parse(new Date().toLocaleDateString('en-CA')) / 864e5);
+    pick.innerHTML = empty.map(d => `<option value="${esc(d.key)}">${esc(d.label)}</option>`).join('') + '<option value="">None today</option>';
+    pick.value = empty[day % empty.length].key; pick.dataset.keys = keys;
+  }
+  const d = empty.find(x => x.key === pick.value);
+  document.getElementById('ttv-lens-prompt').textContent = d ? d.prompt || '' : '';
+}
+document.getElementById('ttv-lens-pick').addEventListener('change', renderTtvLens);
+function renderMorning(){
+  const cats = document.getElementById('mo-cats');
+  document.getElementById('mo-empty').hidden = !!MO;
+  renderLenses(); renderTtvLens();
+  document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
+  if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
+  const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
+  const n = [...ids].filter(moPicked).length, limit = MO.pick_limit || 7;
+  document.getElementById('n-morning').textContent = n;
+  document.getElementById('mo-lede').textContent = `Gathered ${MO.date}. Open a category to explore it. Pick up to ${limit}; each pick becomes a board row, and the next board read starts a thread for it.`;
+  document.getElementById('mo-count').textContent = `${n} of ${limit} picked`;
+  if (cats.contains(document.activeElement) && document.activeElement.matches('input')) return;
+  cats.innerHTML = MO.categories.map(c => {
+    const aligned = c.items.filter(i => moCurrent(i).kind !== 'unaligned').length;
+    const shown = moShown[c.key] || MO_PAGE, items = c.items.slice(0, shown);
+    const more = c.items.length > shown ? `<button type="button" class="mo-more" data-cat="${esc(c.key)}">Show ${Math.min(MO_PAGE, c.items.length - shown)} more of ${c.items.length - shown}</button>` : '';
+    return `<details class="mo-cat" data-cat="${esc(c.key)}"${moOpen.has(c.key)?' open':''}>
+      <summary><b>${esc(c.title)}</b><span>${c.items.length} item${c.items.length===1?'':'s'}${c.items.length ? `, ${aligned} with a goal` : ''}</span></summary>
+      <p class="lede">${esc(c.blurb)}${c.note ? ' ' + esc(c.note) + '.' : ''}</p>
+      ${items.map(it => moItem(it, c.key, n >= limit)).join('')}${more}</details>`;
+  }).join('');
+  renderSend();
+}
+document.getElementById('mo-paste-save').addEventListener('click', async () => {
+  const st = document.getElementById('mo-paste-state'), text = document.getElementById('mo-paste-text').value.trim();
+  let m; try { m = moParse(text); } catch (e) { st.textContent = e.message || 'That is not the copied menu.'; return; }
+  if (!db){ st.textContent = 'This view cannot save.'; return; }
+  const doc = {menu: text, sessionDate: m.sessionDate || '', savedAt: new Date().toISOString()};
+  try { await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); st.textContent = `Saved ${m.items.length} item${m.items.length === 1 ? '' : 's'}.`;
+    document.getElementById('mo-paste-text').value = ''; moOpen.add('menu'); renderMorning(); }
+  catch { st.textContent = 'Not saved. Try again.'; }
+});
+/* Tap the Vein on the board. Until seal the free write lives only in localStorage on this device. The sealed menu is
+   saved at morning/menu exactly as a pasted one is, so pull.py, morning.py and the Send button need no new path. The
+   free write itself is saved at morning/freewrite (ttv-raw-bars, Wendell 2026-10-14: read it once for BARs, then
+   delete it). The next board read summarizes it and pitches BARs as board questions (council/ttv_bars.py pitch),
+   then deletes the doc; the pitches he keeps become corpus BARs (Wendell, 2026-10-14: "I think the tap the being
+   should be read and summarized before bars are chosen"). */
+const TTV_KEY = 'board-ttv-draft';
+let ttvLines = [];
+const ttvToday = () => new Date().toLocaleDateString('en-CA');
+function ttvSplit(text){
+  return text.split(/\n+/).flatMap(p => p.match(/[^.!?]+[.!?]*["\u201d')\]]*/g) || []).map(l => l.trim()).filter(l => l.length > 1);
+}
+const TTV_CAN = 'board-ttv-can';
+const ttvCan = () => document.getElementById('ttv-can').value.split('\n').map(l => l.replace(/^\s*(?:[-*\u2022]|\d+[.)])\s*/, '').trim()).filter(l => l.length > 1);
+function ttvRender(){
+  const box = document.getElementById('ttv-lines');
+  box.innerHTML = ttvLines.map((l, i) => `<div class="mo-item ttv-line${l.todo ? ' kept' : ''}" data-i="${i}">
+    <p class="mo-text">${esc(l.text)}</p>
+    <div class="mo-ctl"><button type="button" class="mo-pick" data-k="todo" aria-pressed="${!!l.todo}">To do</button></div></div>`).join('');
+  const todo = ttvLines.filter(l => l.todo).length, written = !!document.getElementById('ttv-write').value.trim();
+  const can = ttvCan().length;
+  document.getElementById('ttv-count').textContent = `${can} you can do, ${todo} to do from the write`;
+  document.getElementById('ttv-seal').disabled = !db || !(written || can);
+}
+(() => {
+  const w = document.getElementById('ttv-write');
+  try { const d = JSON.parse(localStorage.getItem(TTV_KEY) || 'null'); if (d && d.text) w.value = d.text; } catch {}
+  w.addEventListener('input', () => { ttvRender(); try { localStorage.setItem(TTV_KEY, JSON.stringify({date: ttvToday(), text: w.value})); } catch {} });
+  const c = document.getElementById('ttv-can');
+  try { const d = JSON.parse(localStorage.getItem(TTV_CAN) || 'null'); if (d && d.text) c.value = d.text; } catch {}
+  c.addEventListener('input', () => { ttvRender(); try { localStorage.setItem(TTV_CAN, JSON.stringify({date: ttvToday(), text: c.value})); } catch {} });
+  ttvRender();
+})();
+document.getElementById('ttv-find').addEventListener('click', () => {
+  const was = Object.fromEntries(ttvLines.map(l => [l.text, l]));
+  ttvLines = ttvSplit(document.getElementById('ttv-write').value).map(t => was[t] || {text: t, todo: false});
+  document.getElementById('ttv-state').textContent = ttvLines.length ? '' : 'Nothing written yet.';
+  ttvRender();
+});
+document.getElementById('ttv-lines').addEventListener('click', e => {
+  const b = e.target.closest('.mo-pick'), row = e.target.closest('.ttv-line'); if (!b || !row) return;
+  const l = ttvLines[+row.dataset.i]; l[b.dataset.k] = !l[b.dataset.k]; ttvRender();
+});
+document.getElementById('ttv-seal').addEventListener('click', async () => {
+  const st = document.getElementById('ttv-state'), date = ttvToday(), now = new Date().toISOString();
+  const items = ttvCan().map((t, i) => ({key: `board-${date}-c${i + 1}`, text: t, source: 'can_do', status: 'unaligned', goal: null}))
+    .concat(ttvLines.filter(l => l.todo).map((l, i) => ({key: `board-${date}-${i + 1}`, text: l.text, source: 'kept_line', status: 'unaligned', goal: null})));
+  const text = document.getElementById('ttv-write').value.trim();
+  const doc = {menu: JSON.stringify({version: 1, origin: 'board', sessionDate: date, sealedAt: now, items}), sessionDate: date, savedAt: now};
+  if (!db){ st.textContent = 'This view cannot save.'; return; }
+  try {
+    const lens = document.getElementById('ttv-lens').hidden ? '' : document.getElementById('ttv-lens-pick').value;
+    if (text) await db.doc('morning/freewrite').set(Object.assign({text, sessionDate: date, savedAt: now}, lens ? {lensDomain: lens} : {}));
+    await db.doc('morning/menu').set(doc); moPaste = doc; moApplyPaste(); moOpen.add('menu');
+    db.doc('ttv/' + date).set({status: 'done', via: 'board', savedAt: now}).catch(() => {});
+    ttvLines = []; document.getElementById('ttv-write').value = ''; document.getElementById('ttv-can').value = '';
+    try { localStorage.removeItem(TTV_KEY); localStorage.removeItem(TTV_CAN); } catch {}
+    ttvRender(); renderMorning();
+    st.textContent = `Sealed: ${items.length} items. Pick from them below, then Send to Claude; the board read writes where each one goes${text ? ', pitches BARs from the free write for you to keep, then deletes it' : ''}.`;
+  } catch { st.textContent = 'Not sealed. Your free write is still here; try again.'; }
+});
+/* Tap the Vein first (ttv-first). Wendell, 2026-10-14: "the first thing that happens in the morning when I open the
+   board is tap the vein. It checks to see if one's been done on bars-engine and if not forces one to be done in the
+   board ... There should be a button that gives an option to skip but if it's skipped for 2+ days it triggers a Wave or
+   321 session on the blocker". Today counts as done when the last gather fetched today's sealed menu
+   (DATA.morning.sealed), a menu sealed or pasted here carries today's date, or ttv/<date> in the store says done,
+   bars-engine or skipped. While the board is held it asks bars-engine itself (ttv-bars-engine-trusted overruled,
+   2026-10-14: "I do think we need to be able to make an API call to bars-engine directly"): GET
+   /api/tap-the-vein/status?date=<today> through the viewer's Vercel connector, which answers sealed or not and nothing
+   else. Two or more skips in a row (days the board was not opened do not break the run; a done day does) offer the WAVE
+   room (ttv-skip-wave, his steer: "It should deposit me inside the WAVE room"), with the board's panel as the fallback. */
+const TTV_STATUS = 'https://bars-engine.vercel.app/api/tap-the-vein/status?date=';
+const TTV_ROOM = 'https://bars-engine.vercel.app/ontology-game/cave/';
+let ttvDays = null, ttvCheck = '';
+function ttvHandled(){
+  const today = ttvToday(), rec = (ttvDays || {})[today];
+  return !!(rec || ((DATA.morning || {}).sealed === today) || (moPaste && moPaste.sessionDate === today));
+}
+function ttvSkipRun(){
+  let n = 0;
+  for (const d of Object.keys(ttvDays || {}).sort().reverse()){ if (ttvDays[d].status !== 'skipped' || (DATA.morning || {}).sealed === d) break; n++; }
+  return n;
+}
+function ttvGate(){
+  const held = !!db && ttvDays !== null && !ttvHandled(), was = document.body.classList.contains('ttv-held');
+  document.body.classList.toggle('ttv-held', held);
+  if (held && !was){ show('morning'); document.getElementById('mo-ttv').open = true; }
+  if (held && mcp && ttvCheck !== ttvToday()) ttvAsk();
+}
+async function ttvAsk(){
+  const st = document.getElementById('ttv-gate-state'), again = document.getElementById('ttv-recheck'), date = ttvToday();
+  ttvCheck = date; again.hidden = true; st.textContent = 'Checking bars-engine…';
+  let res = null;
+  try {
+    const r = await mcp.callTool('Vercel', 'web_fetch_vercel_url', {url: TTV_STATUS + date}, {cache: false});
+    const p = r && r.payload;
+    res = p && p.status === 200 ? JSON.parse(p.text) : {error: p && p.status ? `bars-engine answered ${p.status}` : 'no answer'};
+  } catch (err){ res = {error: err && err.code === 'not_granted' ? 'the Vercel connector is not allowed for this page' : (err && err.code) || 'no answer'}; }
+  if (res && res.sealed){ st.textContent = 'Done in bars-engine today.'; await ttvMark('bars-engine', {checked: true, sealedAt: res.sealedAt || null}); return; }
+  if (res && res.sealed === false){ st.textContent = 'Not sealed in bars-engine yet today.'; again.hidden = false; return; }
+  st.textContent = `Could not check bars-engine (${res.error}).`; again.hidden = false;
+}
+async function ttvMark(status, extra){
+  const st = document.getElementById('ttv-gate-state'), date = ttvToday();
+  if (!db){ st.textContent = 'This view cannot save.'; return false; }
+  try { const rec = {status, ...(extra || {}), savedAt: new Date().toISOString()}; await db.doc('ttv/' + date).set(rec); ttvDays = {...ttvDays, [date]: rec}; ttvGate(); return true; }
+  catch { st.textContent = 'Not saved; try again.'; return false; }
+}
+document.getElementById('ttv-recheck').addEventListener('click', ttvAsk);
+let ttvWave = null;
+document.getElementById('ttv-skip').addEventListener('click', async () => {
+  if (!(await ttvMark('skipped'))) return;
+  const run = ttvSkipRun(); if (run < 2) return;
+  const ref = `tap-the-vein--${Date.now().toString(36)}`, charge = `Tap the Vein, skipped ${run} days running`;
+  ttvWave = {run, ref, charge};
+  // The room reads this hash (wave=board) once the WAVE room thread builds it; its record comes back to blockers/<ref>.
+  document.getElementById('ttv-wave-go').href = `${TTV_ROOM}#wave=board&charge=${encodeURIComponent(charge)}&skips=${run}&ref=${ref}&date=${ttvToday()}`;
+  document.getElementById('ttv-wave-say').textContent = `You have skipped Tap the Vein ${run} days running. Take what is stopping you into the WAVE room.`;
+  $b('ttv-wave').classList.add('on');
+});
+function ttvWaveClose(via){
+  $b('ttv-wave').classList.remove('on');
+  if (ttvWave && db) db.doc('ttv/' + ttvToday()).update({wave: via, waveRef: ttvWave.ref}).catch(() => {});
+}
+document.getElementById('ttv-wave-go').addEventListener('click', () => ttvWaveClose('room'));
+document.getElementById('ttv-wave-close').addEventListener('click', () => ttvWaveClose('not-now'));
+document.getElementById('ttv-wave-here').addEventListener('click', () => {
+  const w = ttvWave; ttvWaveClose('board');
+  openBlocker('tap-the-vein', {do: `Tap the Vein (skipped ${w.run} days running)`, list: 'morning', due: ttvToday(), skipStreak: w.run});
+});
+function moItemById(id){ for (const c of MO.categories) for (const it of c.items) if (it.id === id) return [it, c.key]; return [null, null]; }
+document.getElementById('mo-cats').addEventListener('toggle', e => {
+  const d = e.target.closest('.mo-cat'); if (!d || !d.dataset.cat) return;
+  d.open ? moOpen.add(d.dataset.cat) : moOpen.delete(d.dataset.cat);
+  try { localStorage.setItem('board-mo-open', JSON.stringify([...moOpen])); } catch {}
+}, true);
+document.getElementById('mo-cats').addEventListener('click', async e => {
+  const more = e.target.closest('.mo-more');
+  if (more){ moShown[more.dataset.cat] = (moShown[more.dataset.cat] || MO_PAGE) + MO_PAGE; renderMorning(); return; }
+  const btn = e.target.closest('.mo-pick'); if (!btn || !db) return;
+  const row = btn.closest('.mo-item'), [it, cat] = moItemById(row.dataset.id); if (!it) return;
+  const now = new Date().toISOString();
+  const doc = moPicked(it.id) ? {removed: true, savedAt: now}
+    : {date: MO.date, category: cat, text: it.text, link: it.link || '', ref: it.ref || '', bridge: moCurrent(it), savedAt: now};
+  btn.disabled = true;
+  try { await db.doc('picks/' + it.id).set(doc); moLive[it.id] = doc; } catch { btn.textContent = 'Not saved'; }
+  renderMorning();
+});
+document.getElementById('mo-cats').addEventListener('change', e => {
+  const row = e.target.closest('.mo-item'); if (!row) return;
+  const [it] = moItemById(row.dataset.id); if (!it) return;
+  const goals = MO.goals || [], cur = moCurrent(it);
+  let b = cur;
+  if (e.target.matches('.mo-goal')){
+    const v = e.target.value;
+    if (v === 'none') b = {kind: 'unaligned', why: 'you kept it unaligned'};
+    else if (v === 'new'){ const top = goals.find(g => g.cadence === 'year') || goals[0] || {};
+      b = {kind: 'new', title: it.text.slice(0, 90), parentId: cur.parentId || top.id, parentTitle: cur.parentTitle || top.title, cadence: cur.cadence && cur.kind === 'new' ? cur.cadence : 'week'}; }
+    else { const g = goals.find(g => 'g:' + g.id === v) || {}; b = {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence}; }
+  } else if (e.target.matches('.mo-parent')){
+    const g = goals.find(g => g.id === e.target.value) || {};
+    const next = {year: 'quarter', quarter: 'month', month: 'week', week: 'week'};
+    b = {...cur, parentId: g.id, parentTitle: g.title, cadence: next[g.cadence] || 'week'};
+  } else if (e.target.matches('.mo-new')) b = {...cur, title: e.target.value.trim()};
+  else return;
+  moEdits[it.id] = b;
+  if (moLive[it.id] && !moLive[it.id].removed && db){ const d = {...moLive[it.id], bridge: b, savedAt: new Date().toISOString()}; moLive[it.id] = d; db.doc('picks/' + it.id).set(d).catch(() => {}); }
+  renderMorning();
+});
+renderMorning();
+
+renderSteps();
+
+render();
+(async () => {
+  db = window.claude && window.claude.use ? await window.claude.use('db') : null;
+  if (!db){ document.getElementById('banner').classList.add('on'); return; }
+  window.claude.use('mcp').then(m => { mcp = m; renderSend(); ttvGate(); }, () => {});
+  renderMorning(); ttvRender();
+  db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); ttvGate(); }, () => {});
+  db.collection('ttv').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ttvDays = next; ttvGate(); }, () => { ttvDays = {}; ttvGate(); });
+  db.collection('picks').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); moLive = next; renderMorning(); }, () => {});
+  db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
+  for (const kind of ['positions','questions','causes','terms']){
+    db.collection(kind).onSnapshot(snap => {
+      snap.docs.forEach(d => { if (d.exists) live[kind][d.id] = d.data(); });
+      render();
+    }, () => {});
+  }
+  db.doc('steer/general').onSnapshot(d => { liveSteer = d.exists ? d.data() : null; render(); }, () => {});
+  db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; renderSteps(); }, () => {});
+  db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; renderOutreach(); renderSteps(); }, () => {});
+  db.collection('shows').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocShows = next; renderOutreach(); }, () => {});
+  db.collection('blockers').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); bkRecs = next; if (!bk) renderSteps(); else renderSend(); }, () => {});
+  db.collection('steps').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stSteps = next; renderSteps(); }, () => {});
+})();
+</script>
