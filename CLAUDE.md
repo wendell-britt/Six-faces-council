@@ -1,5 +1,7 @@
 # Working rules: six-faces-council
 
+Any other agent reads `AGENTS.md`, which carries these rules; `tests/test_agents_md.py` keeps the two in step.
+
 This file is loaded on every turn, so the council's rules survive a long session being summarized. Before
 2026-10-03 the board rule below reached a session only through the session-start hook and the skill. In one long
 session, a summary dropped it and kept friendcraft's "the ask, stated as a question", and five questions reached
@@ -18,6 +20,24 @@ Wendell in chat. His words: "These questions shouldn't be showing up here".
   (friendcraft-manuacript #27).
 - An answer he gives in chat counts as a ruling. Record it the way a board answer is recorded. A chat answer does not
   make the next question a chat question.
+
+## The Nonprofit Board's saves
+
+- The Nonprofit Board is served by bars-engine at https://bars-engine.vercel.app/board behind Wendell's own sign-in,
+  and every save goes to Postgres through bars-engine's API (POST /api/board/saves). Its rows are the `np-` rows of
+  `board/board_data.json` on main; bars-engine reads `board/nonprofit/nonprofit-board.html` from main, so a row that
+  lands on main is on the board without a republish.
+- Saves reach main through `.github/workflows/board-pull.yml` every 15 minutes, with no AI involved:
+  `board/fetch_store.py fetch`, `board/pull.py --push --no-room`, `council/morning.py` for a pasted menu,
+  `board/nonprofit/build.py`, `board/fetch_store.py ack`, then `board/staleness.py`, which fails the run when a save
+  has waited more than six hours. Anyone with `BOARD_PULL_TOKEN` can run the same lines by hand.
+- A save follows `schema/board-save.schema.json`. A change to the save shape changes the schema, the fixtures in
+  `tests/fixtures/board-saves` and bars-engine's copy of both in one pair of pull requests; `tests/test_save_contract.py`
+  and bars-engine's `board-save-contract.test.ts` must both pass.
+- What his answers still ask for is the needs-work list: `python3 board/needs_work.py`. Finish an item with the change it
+  asks for and one entry for its key in `council/needs-work-done.json`, in the same pull request. A needs-work item
+  that turns into a question for him goes through the reach test and onto the board like any other question.
+- Why it works this way, and what each step depends on: `docs/failure-modes.md`.
 
 ## Short sessions
 
