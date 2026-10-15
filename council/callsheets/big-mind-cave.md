@@ -1,4 +1,4 @@
-2026-10-15 (updated 00:20)
+2026-10-15 (updated 00:45)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -72,6 +72,14 @@ one of its bosses, so picking it shows the chain. #332 also carries #330's newes
 holds back, and what moved it is kept), and the test walks it in the Fixer's chamber. The Emotional Body waits at the shut
 mouth past it. bigmind-test 272 pass. Next: merge #330, #331, #332 in order, then the Emotional Body's chamber with its set in
 a fresh thread.
+
+**2026-10-15, the Emotional Body's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #333 (draft, branch
+`claude/project-thread-ntdz6u`, stacked on #332) opens the fifth chamber. Walking on past the Fixer builds the cave again
+around the Emotional Body, which asks Wendell's four Emotional Body questions (`daemons/questions.js`): what it feels, who it
+works for, what happens if it isn't there, and his new measure question, "How do you know you've done a good job?" His set
+has no method question, so the measure question's cards change with the boss. The Controller as boss shows the chain. The
+Victim waits at the shut mouth past it. bigmind-test 298 pass. Next: merge #330, #331, #332, #333 in order, then the
+Victim's chamber with its set in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
