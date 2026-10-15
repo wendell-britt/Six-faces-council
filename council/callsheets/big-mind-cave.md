@@ -81,6 +81,14 @@ has no method question, so the measure question's cards change with the boss. Th
 Victim waits at the shut mouth past it. bigmind-test 298 pass. Next: merge #330, #331, #332, #333 in order, then the
 Victim's chamber with its set in a fresh thread.
 
+**2026-10-15, the Victim's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #334 (draft, branch
+`claude/project-thread-skyonm`, stacked on #333) opens the sixth chamber. Walking on past the Emotional Body builds the cave
+again around the Victim, which asks Wendell's five Victim questions (`daemons/questions.js`): the sympathetic stories it
+tells, who it works for, who it advocates for, the shadow sympathy its advocacy gets it, and what happens if it isn't there.
+His set has no method question, so the advocacy question, right after the boss, is the one whose cards change with the boss.
+The Controller as boss shows the chain. The Damaged Self waits at the shut mouth past it. bigmind-test 325 pass. Next: merge
+#330 to #334 in order, then the Damaged Self's chamber, the last on the path, with its set in a fresh thread.
+
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
 whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-place`, `bms-block-sits`, `bms-spirits-follow`,
