@@ -1,4 +1,4 @@
-2026-10-14 (updated 23:50)
+2026-10-15 (updated 00:20)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -54,6 +54,15 @@ for?" the player picks the Protector, the self, control itself or the vulnerable
 asks his follow-up for that boss (`byBoss`; the vulnerable child keeps the plain question, since he gave none). The boss is
 saved and shown at the mouth. The save gains `chamber`; the Skeptic waits at the shut mouth past it. bigmind-test 210 pass.
 Next: his play of the Controller's chamber, then the Skeptic's chamber with its set, in a fresh thread.
+
+**2026-10-15, the Skeptic's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #331 (draft, branch
+`claude/project-thread-th18ej`, stacked on #330) opens the third chamber. Walking on past the Controller builds the cave
+again around the Skeptic, which asks Wendell's four Skeptic questions (`daemons/questions.js`). At his plain "Who do you
+work for?" the player picks the Protector, the Controller, the self or the vulnerable child. When the boss is a voice already
+heard, the guide adds what it said of its own boss ("And the Controller told you it answers to the Protector."), so the chain
+shows in play. The method question keeps his one wording; its cards change with the boss. The Fixer waits at the shut mouth
+past it. bigmind-test 236 pass. Next: merge #330 then #331, then the Fixer's chamber with its set in a fresh thread, stacked on
+#331 if it has not merged.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
