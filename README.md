@@ -29,6 +29,8 @@ synthesises without deciding, and Wendell rules on a board.
 - `council/passes/` holds the council's passes on its own design, from pass five on.
 - `council/tools/voice_lint.py` is the house voice lint, shared with every council repo.
 - `board/` builds the board Wendell rules on: https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho
+- `board/nonprofit/` builds the Nonprofit Board, the same page with only the nonprofit's rows, in the claude.ai
+  organization the council board is not in: https://claude.ai/artifact/8vRXALGmMZKw8g3DdsY8oe
 - `docs/council-explainer.html` is the plain explainer, published at
   https://claude.ai/artifact/QBxhTQHYb4xRpUjszrX64Z
 - `council/ledger/` holds the records of decisions about the council itself. Records about a
