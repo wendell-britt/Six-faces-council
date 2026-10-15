@@ -29,8 +29,8 @@ None before the build. Alpha tagging occurs only after the documented gates pass
 
 - [ ] [claude] Verify skill and face discovery from a fresh checkout/session without inherited conversation.
 - [ ] [claude] Repeat after context compaction if the environment supports it.
-- [ ] [claude] Replace the stale readiness assessment with evidence from the run.
-- [ ] [claude] Publish installation, use, tested-environment, known-gap, and update instructions.
+- [x] [claude] Replace the stale readiness assessment with evidence from the run.
+- [x] [claude] Publish installation, use, tested-environment, known-gap, and update instructions.
 - [ ] [claude] Run the complete validation suite.
 - [ ] [claude] Tag only the exact commit that passes every gate.
 

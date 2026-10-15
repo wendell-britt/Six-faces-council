@@ -49,6 +49,9 @@ current_sources:
   process_log:
     path: ontology/v0.1/source/design-ontology-process-log.md
     status: active_history
+  release_record:
+    path: ontology/v0.1/RELEASE.md
+    status: candidate_gate_record
   daemon_questions:
     path: council/daemons/questions.yaml
     status: owner_statement
