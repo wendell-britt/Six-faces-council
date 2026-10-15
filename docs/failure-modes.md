@@ -37,12 +37,28 @@ silent one.
 | 5 | Record | `board/pull.py --push --no-room`, unchanged | GitHub (`GITHUB_TOKEN`, contents: write) | push race (retries, merge drivers); a branch rule that forbids pushes to main | red run |
 | 6 | Pasted morning menu | `council/morning.py --menu --write` | bars-engine, `COUNCIL_MENU_TOKEN` | secret missing: warning, menu left unacknowledged, so step 9 goes red after 6 h | yellow, then red |
 | 7 | Rebuild the board | `board/nonprofit/build.py`, push | GitHub | template line moved: build asserts | red run |
-| 8 | Acknowledge | `fetch_store.py ack` → POST `/api/board/pull` | Vercel, Postgres | fails after push: saves stay unacknowledged; the next run finds them recorded and acks them | red run, self-healing |
+| 8 | Account and acknowledge | `fetch_store.py ack` → POST `/api/board/pull`, one call per status | Vercel, Postgres | a save neither on main nor passed over on purpose: left unacknowledged, step fails; fails after push: the next run finds them recorded and acks them | red run, self-healing; the summary's "Saves accounted" table names every save |
 | 9 | Staleness | `board/staleness.py --hours 6` | Vercel, Postgres | any save unrecorded > 6 h | red run, emailed |
 | 10 | Act on needs-work | `board/needs_work.py`, `AGENTS.md` | none: any agent (Claude, Codex, ChatGPT, API) or a person | nobody picks it up; the list keeps it | the Action's summary lists it |
 
 No AI vendor and no token quota sits between a save and main. The pieces that remain are hosting (Vercel), the
 database provider, and GitHub, each of which fails loudly except a schedule that stops firing.
+
+## Every acknowledged save is accounted for
+
+Run 2 (2026-10-15 22:22) acknowledged three saves and recorded one, and nothing said what the other two were. Since
+then `fetch_store.py ack` gives every pending save one status before anything is acknowledged, prints the table to
+the run summary, and sends each status as its own acknowledgement, so `board_saves.record` in bars-engine reads, for
+example, `six-faces-council@a491791 superseded`:
+
+- `recorded`: main holds it. `superseded`: a newer save of the same document came in, and only the newest is judged.
+- `nothing-to-record`: the newest save holds nothing pull.py records (an emptied answer, a removed pick).
+- `held`: left unacknowledged on purpose (`--except`, or a freewrite or Tap the Vein for a session), so step 9 goes
+  red after six hours if nobody does it.
+- `unaccounted`: anything else. It stays unacknowledged and the step fails.
+
+Run 2's two unexplained saves were acknowledged before this existed; their rows carry `six-faces-council@a491791`
+with no status, and only a query on `board_saves` can say what they were.
 
 ## What is left
 
