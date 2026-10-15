@@ -1,4 +1,5 @@
 import unittest
+import importlib.util
 from pathlib import Path
 
 import yaml
@@ -6,6 +7,15 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "ontology" / "manifest.yaml"
+VALIDATOR_PATH = ROOT / "ontology" / "tools" / "validate_package.py"
+
+
+def load_validator():
+    spec = importlib.util.spec_from_file_location("validate_ontology_package", VALIDATOR_PATH)
+    module = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(module)
+    return module
 
 
 class DesignOntologyPackageTests(unittest.TestCase):
@@ -33,6 +43,9 @@ class DesignOntologyPackageTests(unittest.TestCase):
         paths.add(self.manifest["unresolved_registry"]["source"])
         paths.add(self.manifest["validation"]["required_skill"])
         paths.add(self.manifest["validation"]["council_integration"])
+        paths.add(self.manifest["validation"]["adversarial_fixtures"])
+        paths.add(self.manifest["council_agents"]["contract"])
+        paths.update(self.manifest["council_agents"]["faces"].values())
 
         missing = [path for path in sorted(paths) if not (ROOT / path).is_file()]
         self.assertEqual(missing, [])
@@ -123,6 +136,10 @@ class DesignOntologyPackageTests(unittest.TestCase):
         self.assertIn("ConsentRecord is evidence of a past decision", decision)
         self.assertIn("Every derivative inherits a permission envelope", decision)
         self.assertIn("BARS reconciliation test", decision)
+
+    def test_packaged_face_agents_and_adversarial_contract_validate(self):
+        validator = load_validator()
+        self.assertEqual(validator.validate_package(), [])
 
 
 if __name__ == "__main__":
