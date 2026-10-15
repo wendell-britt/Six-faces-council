@@ -2,6 +2,13 @@
 # Board plumbing (pickup, pull, rows waiting)
 
 ## Next
+- Root cause of the board-pull gaps (2026-10-15, docs/failure-modes.md "Root cause"): GitHub drops most of this repo's
+  scheduled runs, and the staleness alarm runs inside the job it watches. Build `np-pull-alarm-age` in bars-engine
+  (the page warns from the oldest unrecorded save's age; drop the "every 15 minutes" line). If Wendell answers
+  `np-pull-trigger` with token, bars-engine calls workflow_dispatch for board-pull after each save, using
+  BOARD_DISPATCH_TOKEN, and the cron stays as a sweep.
+- The Council Board artifact needs a republish from a session signed in to its organization: main has rows the live
+  page lacks (np-pull-trigger, np-pull-alarm-age).
 - Step notes (2026-10-12, #87): a board read now lists six collections, steps included. The coordinator updates the pickup routine prompt to name `steps` (docs/pickup.md has the text). Act on the 8 needs-work items in council/ledger/2026-10-12-pull-170058.json: copy-paste terminal instructions as a rule for every step (morning-menu-key-02), gs-1 step-by-step with file location, two links on flirtcraft-own-database-06, an unblocking process for virtual-launch-restart-01.
 - Check with `get_trigger trig_01L138vKTaN9MSJoFKRmaBNx` that the prompt says: pull, then act; never `add_repo`.
 - Check the standing daily session carries step 1b for `trig_01F8fDdkjYEeMCfdozj6w3tt` (run pull.py, do not fire the pickup routine). That routine is switched off, not deleted (daily stopped 2026-10-08, `daily-stopped`).
