@@ -64,6 +64,15 @@ shows in play. The method question keeps his one wording; its cards change with 
 past it. bigmind-test 236 pass. Next: merge #330 then #331, then the Fixer's chamber with its set in a fresh thread, stacked on
 #331 if it has not merged.
 
+**2026-10-15, the Fixer's chamber (`dp-seven`, `dq-boss-chain`):** bars-engine #332 (draft, branch
+`claude/project-thread-7v9lbl`, stacked on #331) opens the fourth chamber. Walking on past the Skeptic builds the cave again
+around the Fixer, which asks Wendell's four Fixer questions (`daemons/questions.js`): what it fixes, who it works for, how
+fixing (repairing or holding in place) serves who it works for, and what would happen if it weren't there. The Controller is
+one of its bosses, so picking it shows the chain. #332 also carries #330's newest commit (the charge goes down while a voice
+holds back, and what moved it is kept), and the test walks it in the Fixer's chamber. The Emotional Body waits at the shut
+mouth past it. bigmind-test 272 pass. Next: merge #330, #331, #332 in order, then the Emotional Body's chamber with its set in
+a fresh thread.
+
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
 whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-place`, `bms-block-sits`, `bms-spirits-follow`,
