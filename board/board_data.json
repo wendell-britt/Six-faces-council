@@ -23494,6 +23494,54 @@
      "architect"
     ],
     "pass": "Daemon gestures"
+   },
+   "np-kids-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-15",
+    "saved_at": "2026-10-15T19:53:35.334Z",
+    "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "nonprofit structure"
+   },
+   "np-red-door-precedent": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-15",
+    "saved_at": "2026-10-15T19:53:40.437Z",
+    "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "nonprofit structure"
+   },
+   "np-mentorschip-both-ways": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-15",
+    "saved_at": "2026-10-15T19:53:48.712Z",
+    "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "nonprofit structure"
+   },
+   "np-kids-content-review": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-15",
+    "saved_at": "2026-10-15T19:53:57.580Z",
+    "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "nonprofit structure"
    }
   },
   "questions": {
@@ -25661,6 +25709,30 @@
      "shaman"
     ],
     "pass": "emotional alchemy library"
+   },
+   "np-age-band": {
+    "decision": "high",
+    "label": "High school, about 14 to 18",
+    "recorded": "2026-10-15",
+    "saved_at": "2026-10-15T19:53:03.224Z",
+    "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "nonprofit structure"
+   },
+   "np-mentorschip-shape": {
+    "decision": "after-talk",
+    "label": "Decide after the talk",
+    "recorded": "2026-10-15",
+    "saved_at": "2026-10-15T19:53:27.049Z",
+    "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "nonprofit structure"
    }
   },
   "causes": {
@@ -29125,6 +29197,58 @@
    "note": "",
    "saved_at": "2026-10-14T17:55:24.629Z",
    "record": "council/ledger/2026-10-14-pull-175709.json (six-faces-council)"
+  },
+  {
+   "id": "menu-task:cmv9yete9000b13u0tih30ze6",
+   "date": "2026-10-15",
+   "category": "menu",
+   "text": "Reach out to Marina",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "note": "",
+   "saved_at": "2026-10-15T19:52:28.725Z",
+   "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"
+  },
+  {
+   "id": "menu-task:cmv9yex46001213u0maguuehe",
+   "date": "2026-10-15",
+   "category": "menu",
+   "text": "Make a Facebook post for my coaching site",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "note": "",
+   "saved_at": "2026-10-15T19:52:33.075Z",
+   "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"
+  },
+  {
+   "id": "menu-task:cmv9yeuah000k13u0k6cbyoyq",
+   "date": "2026-10-15",
+   "category": "menu",
+   "text": "Start a newsletter",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "note": "",
+   "saved_at": "2026-10-15T19:52:35.791Z",
+   "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"
+  },
+  {
+   "id": "menu-task:cmv9yesei000213u0weuoya6f",
+   "date": "2026-10-15",
+   "category": "menu",
+   "text": "Respond to Madi",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "note": "",
+   "saved_at": "2026-10-15T19:52:44.380Z",
+   "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"
   }
  ]
 }
