@@ -1,0 +1,5 @@
+{
+ "since": "2026-10-15T00:00:00Z",
+ "note": "One entry per finished needs-work item, keyed <ledger stem>#<row> as board/needs_work.py prints it: {\"by\": who did it (person, Claude, Codex, ...), \"ref\": the pull request or commit, \"at\": ISO time}. Items in pulls before since were worked by board-read threads before this file existed.",
+ "done": {}
+}

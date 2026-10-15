@@ -123,3 +123,27 @@ Fixed by archiving the session. Rules that follow:
 - A session the routine fired (origin `force_run_trigger`) that is not the coordinator and is still running after its
   one project-chat line is archived. It never resumes a worker that a `worker_restart` stopped.
 - A change to the routine's prompt is followed by archiving any session that an earlier version of the prompt started.
+
+### The Nonprofit Board Send that ran out of tokens, 2026-10-15 20:09 (fixed 2026-10-16)
+
+At 20:09:44 UTC the Send button fired `trig_013Qmc7KZJNNDXAiLbuncGva`. The run (session `cse_01Dw9RF7MbLEDvfL8ANSqqNn`)
+stayed pending because the account had no tokens left. `fire_trigger` had returned, so the page wrote `pickup/last` at
+20:09:48 and the Send bar went dark: nothing on the board or anywhere else said the run never started.
+
+What it stranded, from the store read at 20:2x UTC: the Send named `morning/menu` and four picks. The picks and the
+board's two questions and four positions were already on main in `2026-10-15-pull-195357` (pushed 19:55), so
+`pull.py` on that store prints "every saved answer is recorded". The one save main lacks is the menu he pasted at
+19:52:17, which `pull.py` hands to a session for `council/morning.py` and never records itself. `board/staleness.py
+--store` on that read reports it (0 at 6 hours at the time of the read, since it was 30 minutes old; 1 at 0 hours).
+
+Recovery: bars-engine holds the same menu (sealed in Tap the Vein at 19:51:33), so the first manual board-pull run,
+with input `menu_date=2026-10-15`, fetches it with `COUNCIL_MENU_TOKEN` and records it; no import or database access
+is needed. `scripts/board-import-artifact-store.ts` in bars-engine can still copy the old artifact store over. It was not gathered by hand:
+a gather without the Lens-goals token blanks the lenses panel on main.
+
+Rules that follow (docs/failure-modes.md):
+
+- A save reaches main without any AI: bars-engine stores it, `.github/workflows/board-pull.yml` records it.
+- Every step fails loudly. A save waiting more than six hours turns the Action red (`board/staleness.py`).
+- A pasted morning menu is recorded by the same Action, not left as a needs-work line.
+- No Claude routine is between the board and main. `trig_013Qmc7KZJNNDXAiLbuncGva` is switched off.
