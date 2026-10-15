@@ -13,7 +13,9 @@ The caller supplies:
 - the relevant repository or artifact scope;
 - the selected load profile from `ontology/manifest.yaml`;
 - known evidence, exclusions, and reserved matters;
-- the face's I Ching cast, or permission to run `council/iching/cast.py <face>`.
+- the face's I Ching cast, produced by the caller with `python3 council/iching/cast.py <face>`.
+
+The caller casts before invoking the face. Face agents deliberately have no shell or write capability. If the cast is absent, the face returns `insufficient_evidence` and the exact caller-side cast command rather than deliberating out of order.
 
 Every face reads:
 
