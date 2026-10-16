@@ -94,6 +94,9 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
 ## What it leaves alone
 
 - It never publishes, schedules, uploads or posts anything, and it never messages a guest. Publishing under his name is reserved to him.
+  One exception, from pass `podcast-pipeline2` (2026-10-16): a queue he approves on the board publishes through
+  `.github/workflows/publish-queue.yml`. His approval is the publishing act (`pa-approval-publishes`); the session
+  writes the queue and its approval row and publishes nothing itself (`council/podcast/publish/README.md`).
 - It writes no quote of a guest that the recording does not hold, and it keeps a guest's family and health details
   out of public copy unless the guest offered them for that purpose.
 - A guest named in the copy is a person named in public, which is on the reserved list. The description therefore
