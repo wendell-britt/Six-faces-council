@@ -121,9 +121,11 @@
   Mind tube from the cave kit. Renders: /mnt/project-files/3d-build/daemon-bodies-2026-10-16/.
 - Rebake after any `character.py` change to a rest shape: `character.py --daemons --out X`, then `bake_daemons.py X
   content/ontology-game/cave/daemons`.
-- Next for this art line: play the Integrate action in the cave (needs the skinned body: joints and weights in the
-  bake and a small skinning path in cave.js), once his look at #351 approves the movement; trust stances once the trust
-  build names them.
+- #353 merged 2026-10-16. Next for this art line, one fresh Opus thread once bars-engine #355 (trust) merges: skin the
+  baked bodies (joints and weights in `bake_daemons.py`, a small skinning path in `cave.js`) and pose each chamber
+  voice by `voice.userData.stance` from #355 (`window.__oagBigMind.STANCES`: guarded, testing, softening, trusting,
+  willing, hurt, repaired, each a variation on its held movement in GESTURES.md). The same skinning carries the
+  Integrate action (#351) into the cave once his look approves it. #355 already rewrote the arrival lines.
 
 ## Waiting on
 - Wendell's look at the Controller letting go (3D view above), then the other six rows.
