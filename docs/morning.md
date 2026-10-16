@@ -113,6 +113,35 @@ not word overlap."
    pitches with their parent, so bars-engine files a smaller goal under it (bars-engine `POST /api/lenses/goals`,
    `parentId`).
 
+## The loop, seed to fruit (pass ttv-loop 1)
+
+Wendell, 2026-10-16: "once a taget's generted fromks tap the vein how does it get ingested? How does the council act on
+the actions that I Want to do? How does the process help us grow up teh tasks (Which are essentially barSeeds) into
+fruit." The pass is `council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md`.
+
+- **Ingested.** A commitment is a bars-engine task (`mm-where`). The board's intake gives each item one written line
+  (`council/intake_align.py`): a Lens goal, a board row, a call sheet strand (`"strand": "<sheet>"`, work already
+  happening, carrying the strand's `lens: <goal id>` line once he has kept one), a pitched smaller goal, or `"none": true`,
+  no home yet, which is a real result (`ttv-no-home-yet`). Next build: the board's seal writes each item to bars-engine
+  as a task, so one id runs from the morning to its thread (`ttv-one-store`).
+- **Acted on.** He picks; each pick becomes a board row and a thread (`mm-picks-become-threads`). An item that joins a
+  strand goes to that strand's thread or call sheet as a next step rather than a new thread.
+- **Grown.** A task becomes a BAR only when he keeps it as one (`ttv-task-not-bar`). It bears fruit when something
+  happened outside (sent, merged, done with a link) and he marks it; a stage the council moves it to is not fruit.
+  Letting it go needs no reason ("Just let it go" in bars-engine) and stops carrying and resurfacing (`ttv-fruit-is-his`).
+- **Lenses emerge.** For a creator who skipped the intake, the council reads his saved bars-engine free writes for goals
+  that return (`ttv-saved-read-scoped`, `ttv-lens-emerge`):
+  1. `python3 council/lens_emerge.py fetch --out <scratch>/vein.json` reads `GET /api/tap-the-vein/history` (same token
+     as the menu) into a scratch folder; it refuses a path inside the repo. bars-engine logs each read with no text.
+  2. The read pitches at most five goals, each quoting his words from two or more mornings with their dates:
+     `python3 council/lens_emerge.py pitch <scratch>/vein.json --pitches p.json > rows.json`, then
+     `board/sync_board.py --rows`. It deletes the scratch copy.
+  3. He keeps or drops each on the Open tab; `python3 council/lens_goals.py kept --send` writes kept ones to bars-engine.
+  4. Once a goal exists, a strand's call sheet gets a `lens: <goal id>` line only after he keeps that pairing. A strand
+     with none keeps running.
+- **The board's box** runs one phase at a time under a rail (what you can do, free write, keep your lines, seal), with
+  bars-engine's line "No floor to clear · no streak to keep · stuckness is data, not failure" (`ttv-board-one-phase`).
+
 ## Lens goals on the Morning tab
 
 `lens-board-reads-goals` (Lenses pass 1, 2026-10-14): the board reads his Lens goals every morning without needing a
