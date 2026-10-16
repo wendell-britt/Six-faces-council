@@ -380,7 +380,7 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
     <p class="ttv-ethic">No floor to clear · no streak to keep · stuckness is data, not failure</p>
     <div class="ttv-phase" data-p="1">
       <p class="ttv-eyebrow">1 of 4 · What you can do</p>
-      <p class="lede"><label for="ttv-can">Everything you can do today, one per line.</label> A task with no home yet is fine; the next board read suggests one.</p>
+      <p class="lede"><label for="ttv-can">Everything you can do today, one per line.</label> A task with no home yet is fine; the next board read suggests one, or offers a shadow quest to find it.</p>
       <textarea id="ttv-can" class="ttv-write" rows="6" placeholder="One thing per line"></textarea>
     </div>
     <div class="ttv-phase" data-p="2" hidden>
@@ -1581,7 +1581,7 @@ function moBridgeText(b){
   if (b.kind === 'goal') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.${why}`;
   if (b.kind === 'row') return `Advances <b>${esc(b.rowTitle || b.rowId)}</b> on the board.${why}`;
   if (b.kind === 'strand') return `Joins <b>${esc(b.strandTitle || b.strand)}</b>, work already happening${b.goalTitle ? ', which serves <b>' + esc(b.goalTitle) + '</b>' : ''}.${why}`;
-  if (b.kind === 'none') return `No home yet, and that is fine.${why}`;
+  if (b.kind === 'none') return `No home yet that anyone can see.${b.shadow ? ' <b>Shadow quest</b>, if you want it: ' + esc(b.shadow) : ''}${why}`;
   if (b.kind === 'pitch') return `Pitched: a new ${esc(b.cadence || 'year')} goal, <b>${esc(b.title)}</b>, ${b.parentTitle ? 'under <b>' + esc(b.parentTitle) + '</b>' : 'in ' + esc(b.domain || 'a Lens domain')}. Keep or drop it on the Open tab.${why}`;
   if (b.kind === 'named') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
   if (b.kind === 'existing') return `Suggested: serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
