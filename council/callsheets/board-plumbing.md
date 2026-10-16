@@ -2,10 +2,11 @@
 # Board plumbing (pickup, pull, rows waiting)
 
 ## Next
-- `np-pull-alarm-age` is built (bars-engine PR below; Wendell merges after the Vercel check). Still open: when he
-  answers `np-pull-trigger` with token, bars-engine calls workflow_dispatch for board-pull after each save (throttled
-  to one a minute, a failed call never fails the save, env BOARD_DISPATCH_TOKEN he creates), with a test and a line
-  in docs/failure-modes.md; the cron stays as a sweep. Unanswered on main 2026-10-15, so nothing was built for it.
+- `np-pull-alarm-age` is merged (bars-engine #336). Wendell answered `np-pull-trigger` with token (chat, 2026-10-16):
+  bars-engine dispatches board-pull after each save (PR in bars-engine; docs/failure-modes.md has the line). Waiting on
+  Wendell: create a fine-grained GitHub token for Six-faces-council (Actions read and write only) and set it in Vercel
+  as `BOARD_DISPATCH_TOKEN`. Until then saves fall back to the cron and the page alarm. Open follow-up: the option
+  promised the page says so when the token has expired; not built.
 - The Council Board artifact needs a republish from a session signed in to its organization: main has rows the live
   page lacks (np-pull-trigger, np-pull-alarm-age).
 - Step notes (2026-10-12, #87): a board read now lists six collections, steps included. The coordinator updates the pickup routine prompt to name `steps` (docs/pickup.md has the text). Act on the 8 needs-work items in council/ledger/2026-10-12-pull-170058.json: copy-paste terminal instructions as a rule for every step (morning-menu-key-02), gs-1 step-by-step with file location, two links on flirtcraft-own-database-06, an unblocking process for virtual-launch-restart-01.

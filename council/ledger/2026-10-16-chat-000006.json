@@ -1,0 +1,20 @@
+{
+ "date": "2026-10-16",
+ "kind": "chat-ruling",
+ "newest_save": "2026-10-16T00:00:06.000Z",
+ "answers": {
+  "np-pull-trigger": {
+   "kind": "question",
+   "decision": "token",
+   "text": "Token (answered in chat)",
+   "savedAt": "2026-10-16T00:00:06.000Z"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/np-pull-trigger: Yes: a save starts board-pull (bars-engine dispatch, BOARD_DISPATCH_TOKEN; Wendell creates the token)"
+ ],
+ "note": "Recorded from a chat answer, the way board/pull.py records a board answer."
+}
