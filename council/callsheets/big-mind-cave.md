@@ -1,7 +1,48 @@
-2026-10-16 (updated 18:50)
+2026-10-16 (updated 22:35)
+ontology: default; touches: TrustState, ConsentRecord, MovementFinding
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
+**2026-10-16, trust, 3-2-1, spirits and solo play (pass `big-mind-trust1`):** Wendell's walkthrough notes of 21:52 after
+playing the path to the centre. Pass `council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md`, ledger
+`council/ledger/2026-10-16-big-mind-trust1.json`, rows `council/callsheets/rows/big-mind-trust-2026-10-16.json`. Fifteen
+`bmt-*` positions stand: charge is the voice's burden, trust its relationship with you (`bmt-burden-trust`); three
+actions from the voice's seat, can you, will you, are you good (`bmt-three-moves`); two roads past a voice, charge 3 or
+below or all three seen, refusal still open (`bmt-two-roads`); benevolence in the voice's words only, his excavation
+ruling (`bmt-good-in-words`); trust never falls (`bmt-never-falls`); three-part trust is game-local, the ontology's
+TrustState untouched (`bmt-ontology-local`); the feeling on meeting a voice spawns a spirit, and a spirit shown to a
+voice counts once as "can you" (`bmt-meeting-spirit`, `bmt-show-spirit`, which changes half of `bms-voices-respond`);
+full 3-2-1 offered, skippable, never a gate (`bmt-321-offer`); the next voice hidden until its chamber
+(`bmt-hidden-next`); free walking and running (`bmt-free-walk`); a closing rite (`bmt-return`); ask again every visit
+(`bmt-ask-again`); the build order (`bmt-build-order`). He answered both questions A at 22:05 and overruled `bmt-three-moves` and `bmt-show-spirit`; five revised positions and
+question `bmt-accountability` are on the board.
+Build threads, one pull request each, all on bigmind.js so in order:
+1. **Hidden next voice and free walking** (`bmt-hidden-next`, `bmt-free-walk`): started now, Sonnet. The end of each
+   hallway shows the shut mouth breathing with its light and a sound, no figure; voices met still wait by the wall; walk
+   or run freely, tap-to-walk kept, the chamber threshold still stops you; rewrite the bigmind-test checks that expect a
+   figure in the shut mouth. Test T4 at his next play.
+2. **Trust** (as revised on his answers of 22:05 to 22:11: `bmt-trust-shown` A, `bmt-honest-moves`, `bmt-keep-talking`,
+   `bmt-goodness-models`, `bmt-trust-falls`, `bmt-spirits-vouch`, `bmt-ask-again`, `bmt-return`): Opus, after build 1
+   merges. Marks for can and will, each with a plain line of what the voice saw; good only in the voice's words, against
+   its own picture of goodness (seven drafts in `bmt-goodness-models`). Trust actions anywhere on the path, each voice with
+   a right answer, counted only when the voice's charge eases on the next check-in. Marks keep kept, broken and repaired;
+   a broken promise or a push past a refusal lowers one; owning it repairs it (`bmt-accountability` answered A at 22:23:
+   the council's reading). After the voice is willing to step aside the player can keep talking. The meeting spirit becomes an ally
+   once its voice trusts you and vouches at later chambers and, together, at the centre's mouth. Save per the Architect:
+   `voices[id].trust = { seen:[{dim, kind, at}], promises:[{kind, made, kept}] }` plus `broken`/`repaired`, no words.
+   The trust stances list goes to the art thread.
+3. **Full 3-2-1 and the meeting spirit** (`bmt-321-offer`, `bmt-meeting-spirit`): after build 2; reuse `K.talk321` with an
+   optional `beforeOne` hook in cave.js; phase 1 opens only through the voice's permission.
+4. **Art, alongside** (`bmt-build-order`): the WARP daemon bodies (bars-engine #328 lineage, GESTURES.md) replace the
+   placeholder daemon body in the Big Mind cave first, under a phone load budget; then dressing the cave; trust stances
+   once build 2 names them. Owned by the blender-frame-flesh-warp strand.
+   **Built 2026-10-16, bars-engine #353:** bodies and dressing in (details in blender-frame-flesh-warp.md). Phone page
+   https://claude.ai/artifact/4i1rCSGwGAwhjbjK7s7TLC. Left for the bigmind.js owner: the `arrive` lines still describe
+   the stand-in's props (a shield, a measuring rod, a lens, a wrench, a bundle, a crack); rewrite them to the held
+   movements in GESTURES.md in whichever build next edits bigmind.js. The centre's child is still the avatar; the
+   baked `player` body is ready for it (`K.buildDaemon(THREE, row, h)` with a row whose id is `player`).
+Tests T1 (solo against facilitated, by 2026-10-30) and T2 (card-only parity, after build 2) are in the pass.
+
 bars-engine PR #282 (branch `claude/project-thread-0wytio`, stacked on #278) holds the 20:43 steer (every sit-down spawns a spirit,
 `bms-away-lighter`) and his 21:15 playtest notes: a breathing ring on every W.A.V.E. and sitting step, the charge seen in the scene
 through the poll's W.A.V.E. (grows by the Allow sliders; release lifts and fades it, stay makes it a spirit), Appreciate with

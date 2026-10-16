@@ -3,10 +3,13 @@
   "callsheet": "council/callsheets/spirit-generator.md",
   "loop": "spirit look art rounds (Shellback proof)",
   "max_ahead": 2,
+  "every_round": [
+    "the round's new or changed models in the spirit page's 3D viewer, each state and element he can pick, turn and zoom on his phone (page/viewer_models.py in bars-engine, .txt files published beside the page; Wendell, 2026-10-16: \"that's where I'm doing a lot of my visual review from\")"
+  ],
   "last_look": {
-    "round": 11,
-    "at": "2026-10-16T20:55:22Z",
-    "label": "spirit-generator-r11"
+    "round": 13,
+    "at": "2026-10-16T22:13:30Z",
+    "label": "spirit-generator-r13"
   },
   "rounds": [
     {
@@ -125,9 +128,19 @@
     },
     {
       "round": 14,
+      "status": "done",
+      "builds": "The Tinker's other two bases, the beaver and the aye-aye (council/loops/prompts/spirit-generator-r13.md), on the raccoon's gas, cog core and ally outfit, each built with its three states from the start (the Fixer's reach held and finished, TINKER_POSE and TINKER_ALLY in shellback.py), on four feet with nothing in its paws. If his look at page version 17 (the raccoon in 3D) redirects the raccoon or the family, that comes first.",
+      "check": "Contact sheet of each base's 25 renders beside the raccoon; each reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind. Both bases in the page's 3D viewer in every element, form and state.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "ontology_profile": "default"
+    },
+    {
+      "round": 15,
       "status": "next",
-      "builds": "The Tinker's other two bases, the beaver and the aye-aye (council/loops/prompts/spirit-generator-r13.md), on the raccoon's gas, cog core and ally outfit, each built with its three states from the start (the Fixer's reach held and finished, TINKER_POSE and TINKER_ALLY in shellback.py), on four feet with nothing in its paws. If his look at page version 16 redirects the raccoon or the family, that comes first.",
-      "check": "Contact sheet of each base's 25 renders beside the raccoon; each reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind.",
+      "builds": "The fourth daemon family's first base (sg-body-from A: the urge picks the family), the Controller's family by default, since the NPC integration animation starts with the Controller's fist opening. Written image prompt first, naming the family and its two or three bases (missing-art rule); the family's own gas and core; living creature a quadruped on its own four feet with nothing in its paws (sg-romp-four-feet); built with its three satisfaction states from the start through shellback.py --state, its dissatisfied stance the Controller's held movement from GESTURES.md pushed further (ss-feral-stance). If his look at page version 18 (the beaver and aye-aye) redirects the Tinker, that comes first.",
+      "check": "Contact sheet of the base's 25 renders beside the raccoon and the tortoise; reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind. The base in the page's 3D viewer in every element, form and state.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus",

@@ -35,4 +35,4 @@ a grasp that lets go. The poses are rows of `WARP` in bars-engine `content/ontol
 ## Next
 
 Animate integration: each daemon's movement completing over a few seconds, from its held shape to the Player's open
-stance. That is the gamified moment, so it waits until he has looked at the held shapes.
+stance. That is the gamified moment. The Controller is built (bars-engine #351, the `Integrate` action); the other six wait on his look at it.
