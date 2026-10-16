@@ -25492,6 +25492,149 @@
      "challenger"
     ],
     "pass": "big-mind trust 1, after your answers"
+   },
+   "rc-is-relationship": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:33:25.109Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-joint-checkin": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:34:24.804Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "I think people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren’t there",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-pictures-private": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:34:39.608Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-feeds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:35:38.273Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "Also fed by metabolized charge offered to the relationship and inspirations and ideas and desires",
+    "faces": [
+     "architect",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-offer-received": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:36:16.137Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "Can show up in the garden but needs to be co-tended for it to affect the between",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-exit": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:06.585Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "People can tend asynchronously, but you do need consent to formally end the relationship and take whatever parts of the between you want to keep. I imagine it as the relationship between stays with the players (copied with its history) but the garden is shut down (or even changed into another relationship type.",
+    "faces": [
+     "regent",
+     "diplomat",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-spirits-visit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:17.034Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-agreements-bars": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:27.985Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-goal": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:35.745Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-credit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:44.100Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-order": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:40:01.032Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "“The next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.“\n\nThat’s too slow. We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players",
+    "faces": [
+     "regent",
+     "challenger",
+     "sage"
+    ],
+    "pass": "relationship creature 1"
    }
   },
   "questions": {
@@ -27791,6 +27934,46 @@
      "regent"
     ],
     "pass": "big-mind trust 1, after your answers"
+   },
+   "rc-name": {
+    "decision": "A",
+    "label": "The Between",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:32:04.585Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-stale": {
+    "decision": "B",
+    "label": "Plain neglect too",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:32:11.003Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat",
+     "shaman",
+     "architect"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-who-holds": {
+    "decision": "A",
+    "label": "Two people, one can start",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:33:11.242Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "By extension (and especially for flirtcraft) you can start alone tending  to a spirit that’s the charge that you project on someone you aren’t in relationship with. When the other person joins it becomes a between",
+    "faces": [
+     "architect",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
    }
   },
   "causes": {
