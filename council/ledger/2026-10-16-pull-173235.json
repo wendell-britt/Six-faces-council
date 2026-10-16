@@ -1,0 +1,69 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T17:32:35.998Z",
+ "answers": {
+  "zo-automations": {
+   "kind": "question",
+   "choice": "census",
+   "savedAt": "2026-10-16T17:31:27.098Z",
+   "steer": ""
+  },
+  "pp-who-schedules": {
+   "kind": "question",
+   "choice": "sitting",
+   "savedAt": "2026-10-16T17:31:51.130Z",
+   "steer": ""
+  },
+  "pp-posting-is-the-bottleneck": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:31:59.731Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pp-one-sitting": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:32:06.915Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pp-zoom-to-movies": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:32:12.948Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pp-guest-kit": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:32:16.031Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pp-done-means-out": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:32:20.349Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pp-hours-to-guesting": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:32:26.015Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "np-pull-alarm-age": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:32:35.998Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/zo-automations: Run the census and propose the list",
+  "questions/pp-who-schedules: You schedule them in one computer sitting (Challenger)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

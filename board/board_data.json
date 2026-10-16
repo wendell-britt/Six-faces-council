@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "positions": [
   {
    "id": "build",
@@ -23826,6 +23826,89 @@
      "challenger"
     ],
     "pass": "zo-environment"
+   },
+   "pp-posting-is-the-bottleneck": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:31:59.731Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-one-sitting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:06.915Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-zoom-to-movies": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:12.948Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-guest-kit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:16.031Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-done-means-out": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:20.349Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-hours-to-guesting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:26.015Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "np-pull-alarm-age": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:35.998Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "board plumbing"
    }
   },
   "questions": {
@@ -26041,6 +26124,30 @@
      "regent"
     ],
     "pass": "board plumbing"
+   },
+   "zo-automations": {
+    "decision": "census",
+    "label": "Run the census and propose the list",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:31:27.098Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "zo-environment"
+   },
+   "pp-who-schedules": {
+    "decision": "sitting",
+    "label": "You schedule them in one computer sitting (Challenger)",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:31:51.130Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "podcast pipeline 1"
    }
   },
   "causes": {
