@@ -23996,6 +23996,160 @@
      "architect"
     ],
     "pass": "board plumbing"
+   },
+   "of-load-where-decided": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:13.564Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-callsheet-line": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:22.280Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-compost-split": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:30.713Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-term-check": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:36.146Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-precedence": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:43.580Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-wave-room": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:51.130Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-sabotage-offer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:57.564Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "pa-github-timer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:16.114Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-approval-publishes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:21.664Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-token-in-secrets": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:26.047Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-pilot-ep3": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:30.347Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-numbers-auto": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:33.464Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-failure-step": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:36.514Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "podcast pipeline 2"
    }
   },
   "questions": {
@@ -26235,6 +26389,18 @@
      "regent"
     ],
     "pass": "podcast pipeline 1"
+   },
+   "pa-x-api": {
+    "decision": "by-hand",
+    "label": "Keep X by hand (council lean: Challenger, Regent)",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:49:42.046Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "podcast pipeline 2"
    }
   },
   "causes": {
@@ -27558,7 +27724,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-14T22:43:52Z",
+ "steps_recorded_through": "2026-10-16T17:50:00Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
