@@ -5,7 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
-- [relationship-creature](relationship-creature.md), 2026-10-16: the Between, a creature two people co-tend (Kardos credited); his answers 22:40 recorded (`rc-spark`, `rc-tend-alone`, `rc-stale-neglect`, `rc-end-together`, `rc-demo-garden`); next the demo garden, one shared-store page both people open, build brief in the sheet.
+- [relationship-creature](relationship-creature.md), 2026-10-16: the Between, a creature two people co-tend (Kardos credited); his answers 22:40 recorded (`rc-spark`, `rc-tend-alone`, `rc-stale-neglect`, `rc-end-together`, `rc-demo-garden`); demo garden built 10-16 (https://claude.ai/artifact/W4MpDsm5xnnaLGcoPNWVv6); next his play, then round 2 from his notes.
 - [ontology-flows](ontology-flows.md), 2026-10-16: which flow loads the design ontology (pass ontology-flows 1, #184); tests T1 to T4 due 10-21 to 11-16.
 - [element-settings](element-settings.md), 2026-10-14: a cave-like land for each element (metal cave, fire mountain, earth plains, water island with lagoon, wood forest); design only; five `el-*` positions; wood first after the demo.
 - [perceptual-shadow](perceptual-shadow.md), 2026-10-16: done. Perceptual shadow (both poles, shadow spirits with the daemons' question sets, the full reveal) merged in bars-engine #326.

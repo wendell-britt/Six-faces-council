@@ -27,6 +27,21 @@ Between when they join. He overruled `rc-joint-checkin`, `rc-exit` and `rc-order
 (rows `council/callsheets/rows/relationship-creature-answers-2026-10-16.json`): `rc-spark`, `rc-tend-alone`,
 `rc-stale-neglect`, `rc-end-together`, `rc-demo-garden`. T2 (paper play) is dropped by his overrule.
 
+**2026-10-16, 23:20, demo garden built:** https://claude.ai/artifact/W4MpDsm5xnnaLGcoPNWVv6 (the Between Garden).
+One page with a shared store (db, user, downloads). Setup asks who, what kind, what he hopes for; spark until the other
+person asks to join and he welcomes them, then the Between with history kept. Three states from satisfaction
+(charged, steadied, allied, base 3, fed by agreed agreements and offerings said yes to), stale after 5 days untended
+(dims, never dies, any tending airs it out). Agreements run drafted, proposed, agreed, revisit, retired, composted;
+revisit, a named break, retire and compost each wait for the other's yes. Offerings wait for a yes; a charge arrives
+sealed and can pass unopened. "While you were away" lists the other's acts with no counts. Pictures stay in
+localStorage until shown; drift is the two shown pictures side by side, "Not compared" otherwise. Visiting spirits
+stay their owner's. Ending needs both; each ticks what to keep (private) and takes a JSON copy; the garden closes or
+changes kind. Silent exit closes it with no trace of who; help lines shown. Writes made offline wait on the device and
+send when back. Tested with a mock store in two pages at once and one page offline (all 15 steps pass); the real store
+was checked with a read and a refused contributor write to another person's shown pictures. The other person needs
+Editor (outside the organization) or Contributor access from the Share menu to tend it.
+Next: his play, then round 2 from his notes.
+
 ### Build brief: the demo garden (next thread, Opus, one pull request or artifact)
 His words (rc-order): "We should create a demo garden that I can play with a design with one relationship I want to work
 on. It should be able to be accessed synchronously and synchronously by the two players".
@@ -66,7 +81,7 @@ on. It should be able to be accessed synchronously and synchronously by the two 
    `src/lib/garden/plant.ts`.
 
 ## Waiting on
-Nothing from Wendell until the demo garden is built; then his play.
+His play in the demo garden (link above), then round 2 from his notes.
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
