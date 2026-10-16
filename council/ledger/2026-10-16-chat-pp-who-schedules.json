@@ -1,0 +1,13 @@
+{
+ "date": "2026-10-16",
+ "kind": "chat-ruling",
+ "pass": "podcast pipeline 1",
+ "ruling": "Wendell in the project chat, 2026-10-16 17:33 UTC: 'So now we need to figure out how to connect to meta Business suite'",
+ "decides": [
+  {
+   "id": "pp-who-schedules",
+   "decision": "sitting"
+  }
+ ],
+ "note": "Chat answer counts as a ruling (working rules). He picked Meta Business Suite, which is the one-computer-sitting option. No Meta Business Suite connector exists in Claude's directory and the thread has no browser tools, so the sitting runs from a posting pack; Claude scheduling through Meta's publishing API stays a later build. Episode 2 is the pilot (podcast/ep02-tom-hurlburt/posting-pack-meta-business-suite.md)."
+}
