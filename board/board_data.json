@@ -14222,6 +14222,29 @@
      "c": "Paused loops stay paused; stale reminders keep firing at dead work and spend tokens."
     }
    ]
+  },
+  {
+   "id": "board-home",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "board plumbing",
+   "q": "Should bars-engine be the one home of the Council Board, served at /board/council from main and saving to Postgres, with the claude.ai artifact retired after a short overlap?",
+   "why_you": "It moves where you and every session read and write the board, and retires the page that needed an org sign-in to republish.",
+   "not_before": "The Nonprofit Board already works this way (bars-engine /board, saves in Postgres, board-pull to main), the save contract already accepts a council board, and the artifact sits in a second organization that this session could not reach (2026-10-16).",
+   "options": [
+    {
+     "v": "bars-engine",
+     "label": "Yes: bars-engine is the home",
+     "c": "A council route serves board/council-board.html from main behind your sign-in, saves go through /api/board/saves, board-pull records them. The artifact stays as a stopgap until the route has run clean for a few days, then retires."
+    },
+    {
+     "v": "artifact",
+     "label": "No: keep the artifact",
+     "c": "The board stays a claude.ai artifact republished from the owning organization."
+    }
+   ]
   }
  ],
  "causes": [
@@ -25834,6 +25857,18 @@
     "recorded": "2026-10-16",
     "saved_at": "2026-10-16T00:00:06.000Z",
     "record": "council/ledger/2026-10-16-chat-000006.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "board plumbing"
+   },
+   "board-home": {
+    "decision": "bars-engine",
+    "label": "Yes: bars-engine is the home",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T16:38:30.000Z",
+    "record": "council/ledger/2026-10-16-chat-163830.json (six-faces-council)",
     "faces": [
      "architect",
      "regent"
