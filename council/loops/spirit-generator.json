@@ -4,9 +4,9 @@
   "loop": "spirit look art rounds (Shellback proof)",
   "max_ahead": 2,
   "last_look": {
-    "round": 9,
-    "at": "2026-10-14T23:24:08Z",
-    "label": "spirit-generator-r9"
+    "round": 11,
+    "at": "2026-10-16T20:55:22Z",
+    "label": "spirit-generator-r11"
   },
   "rounds": [
     {
@@ -105,9 +105,19 @@
     },
     {
       "round": 12,
-      "status": "next",
+      "status": "done",
       "builds": "Spirit states (pass spirit-states 1, 2026-10-16, positions ss-markers, ss-feral-stance, ss-not-veiled): the Shellback tortoise in one element (wood, his reference) in all five forms by three states, dissatisfied, neutral and satisfied, built on the same model as a rig pose plus material settings (no second model). Dissatisfied: the Protector's push held and braced (forelegs wide, head low under the rim, shell tipped forward), ragged inward-pulling aura in a darker, denser shade, narrowed eyes with a hot glint, cracked stuttering core, rougher shell and skin. Satisfied: the push completed and open, slow smooth wider aura with a bright rim (brightness, not gold), soft eyes, whole steady core. Neutral: today's render. Gas shows aura only, core the core, hologram aura and scanline. Living creature stays on four feet. Plus the veil test pair: the dissatisfied creature beside one veiled at polarity 6 and one flooding at -6. Comes before the next family's first base so every later family is built with its states from the start.",
       "check": "State squint test: fifteen 96 px sprites shuffled with labels off; pass if 13 of 15 are sorted by state. Veil test: no pair of dissatisfied, veiled and flooding confused.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "ontology_profile": "default"
+    },
+    {
+      "round": 13,
+      "status": "next",
+      "builds": "The third daemon family's first base (sg-body-from A: the urge picks the family; the callsheet's family list names which of the six remaining daemons comes next, the Fixer's family by default, since the Chapter 1 demo's boss is the Fixer). Written image prompt first if no concept art exists (missing-art rule). Living creature a quadruped on its own four feet (sg-romp-four-feet); built with its three satisfaction states from the start through shellback.py --state, its dissatisfied stance the family daemon's held movement from GESTURES.md pushed further (ss-feral-stance).",
+      "check": "Contact sheet of the base's 25 renders beside the tortoise and the fox; the base reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in one element sorts 13 of 15 blind.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus",
