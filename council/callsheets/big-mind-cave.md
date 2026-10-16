@@ -89,6 +89,20 @@ His set has no method question, so the advocacy question, right after the boss, 
 The Controller as boss shows the chain. The Damaged Self waits at the shut mouth past it. bigmind-test 325 pass. Next: merge
 #330 to #334 in order, then the Damaged Self's chamber, the last on the path, with its set in a fresh thread.
 
+**2026-10-15, the Damaged Self's chamber and the end of the path (`dp-seven`, `dq-boss-chain`, `dp-centre`):** bars-engine
+#339 (draft, branch `claude/project-thread-xq88h8`, stacked on #333's branch, which now carries #334) opens the seventh and last chamber. Walking on past the
+Victim builds the cave around the Damaged Self ("I'll take that one. Whatever it is. It was probably me."), which asks
+Wendell's five Damaged Self questions (`daemons/questions.js`): what damage it takes, from what or whom, who it works for,
+how its job changes depending on who it works for, and what would happen if it weren't there. The job question keeps his
+wording and its cards change with the boss; the Controller as boss shows the chain. Before the player stands where it
+stands, the chamber asks first (go on, rest, or go back up), as the cave's Be it does (`bmc-safety`,
+`cave-321-damaged-self-ask`). Past it the path ends: the vulnerable child waits at the shut mouth of the centre, per
+`dp-centre`, with no "Walk on". Next: merge #330 to #334 and this one in order, then build the centre in a fresh thread.
+The centre thread first squares `dp-centre` ("The child is seen, not questioned") with Wendell's own Player set in
+`daemons/questions.js` (what are you learning, how are you growing, how do the other daemons get in your way), which is
+newer and in his words, so the recommended position is that the child is asked his six, gently, with the voices met on
+the way there as spirits; that goes on the board as a standing position, not a question.
+
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
 whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-place`, `bms-block-sits`, `bms-spirits-follow`,
