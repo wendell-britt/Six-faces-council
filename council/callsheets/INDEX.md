@@ -7,7 +7,7 @@ profile its threads load (docs/ontology-in-flows.md).
 ## Open strands
 - [ontology-flows](ontology-flows.md), 2026-10-16: which flow loads the design ontology (pass ontology-flows 1, #184); tests T1 to T4 due 10-21 to 11-16.
 - [element-settings](element-settings.md), 2026-10-14: a cave-like land for each element (metal cave, fire mountain, earth plains, water island with lagoon, wood forest); design only; five `el-*` positions; wood first after the demo.
-- [perceptual-shadow](perceptual-shadow.md), 2026-10-14: perceptual shadow in the WAVE room built (bars-engine PR on #324): two signals, four shadows, practices, polarity; `ps-polarity-poles` on the board.
+- [perceptual-shadow](perceptual-shadow.md), 2026-10-16: done. Perceptual shadow (both poles, shadow spirits with the daemons' question sets, the full reveal) merged in bars-engine #326.
 - [spirit-dissolve](spirit-dissolve.md), 2026-10-14: dissolve a spirit into yourself, ice to water to gas to pure spirit, for mana into the element's stat; built in the cave (bars-engine #327, on #324), positions `sd-density-ladder`, `sd-mana-to-stat`, `sd-gone-after`; next his play, then the Big Mind cave and the spirit generator's allies.
 - [jev-asset](jev-asset.md), 2026-10-14: first run done, mark passed (2 of 2 catches, 1 false flag of 17); next a second unseen pile with a code map (`council/jev/results_2026-10-14.md`).
 - [chapter1-demo](chapter1-demo.md), 2026-10-14: Kickstarter Chapter 1 demo; extract, story, encounters and the phone page with Pip and the Shellback spirits drafted (sprout #52 to #55, stacked); next is step 5, his phone play, in a fresh thread.
