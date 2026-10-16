@@ -48,11 +48,25 @@ bars-engine, branch `claude/seed-library-g3qu9x`:
 - `GET /api/tap-the-vein/seed-library` for the council;
 - pure rules and tests in `src/lib/tap-the-vein/seed-library.ts` (`npm run test:ttv-seed-library`).
 
+## The board's surface
+
+Built 2026-10-16 (Six-faces-council `claude/seed-library-board-4vdnzv`, bars-engine branch of the same name):
+
+- **Seed library panel** on the Morning tab, under the Lenses panel. `council/morning.py` reads
+  `GET /api/tap-the-vein/seed-library` (or a saved copy with `--seeds`) into `morning.seeds`. The panel is closed and
+  its row shows no count. Each seed shows its text, the day it was named and the day it was set aside, and nothing
+  else: no age, no reminder. Drawing and letting go link to Tap the Vein.
+- **"Set aside"** beside each sealed intake item that has a task id (bars-engine's seal gives one, `ttv-one-store`).
+  It saves `seeds/<taskId>` on board=council (`schema/board-save.schema.json`, collection `seeds`). bars-engine's save
+  route rests that task in the same transaction, with the same dated note as the card's button
+  (`src/lib/tap-the-vein/board-set-aside.ts`), and stores the save as already recorded, so it never waits for main.
+  Only a live task (committed or in progress) can rest; anything else is refused and nothing is saved.
+- Only the board served by bars-engine (/board/council) can write to bars-engine. On the claude.ai page the button
+  is a link to that board instead.
+- Until the next gather, a set-aside made on the board shows in the panel from the board's own store.
+
 ## Next
 
-1. **The board's surface**, once bars-engine #341 merges (it makes the board's intake items real tasks): a seed library
-   panel on the Morning tab read by `council/morning.py` from the export, and "Set aside" beside each intake item, which
-   the board writes to bars-engine. A fresh thread on Opus owns it.
-2. **Test SL1, 2026-10-30** (Challenger's form): count set-asides, draws and let-gos since the build. Drawn seeds mean
+1. **Test SL1, 2026-10-30** (Challenger's form): count set-asides, draws and let-gos since the build. Drawn seeds mean
    the library is used. A library that only grows is reported on the board as an observation, with no automatic
    action on the seeds.
