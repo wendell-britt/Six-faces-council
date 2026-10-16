@@ -4,6 +4,13 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-16, thread "seed library board" (this repo's and bars-engine's branch claude/seed-library-board-4vdnzv): the
+board's surface is built. The Morning tab has a closed Seed library panel that `council/morning.py` reads from
+`GET /api/tap-the-vein/seed-library` (`--seeds` for a saved copy), and "Set aside" beside each sealed item with a task
+id, saved as `seeds/<taskId>`, which bars-engine's save route turns into the same rest as the card's button. It works
+on /board/council (bars-engine); on the claude.ai page the button links there. bars-engine #342 merged; this branch
+carries Six-faces-council #192. Still open: test SL1 on 2026-10-30; the first `morning.py --write` after bars-engine deploys fills the panel.
+
 2026-10-16, thread "seed library" (bars-engine branch claude/seed-library-g3qu9x, this repo's branch of the same name,
 stacked on #191): Next item (2) below is built in bars-engine. A live task can be set aside as `resting`, drawn back into
 today as the same task, or let go from the library with no reason; the council reads it through

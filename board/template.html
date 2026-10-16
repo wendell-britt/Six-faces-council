@@ -285,6 +285,12 @@ body.has-send{padding-bottom:120px}
 .mo-lens dd{margin:0;overflow-wrap:anywhere}
 .mo-lens dd.none{color:var(--muted)}
 .mo-lens ul{margin:0;padding-left:1.1em}
+/* Seed library (docs/seed-library.md, 2026-10-16): what he set aside, read only, closed, its row showing no count. */
+.mo-seed{padding:8px 0;border-top:1px solid var(--line)}
+.mo-seed:first-of-type{border-top:0}
+.mo-aside{font:inherit;font-size:.88rem;padding:5px 14px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
+.mo-aside:disabled{opacity:.6;cursor:default}
+.mo-rest{font-size:.85rem;color:var(--muted)}
 /* Tap the Vein on the board (2026-10-14, Wendell: "so that I can do the tap the vein directly from the environemnt where
    I'll be using that information"). The free write stays in this browser; only lines he marks are saved (mm-raw). */
 .ttv-write{width:100%;min-height:10em}
@@ -373,6 +379,10 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
   <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
   <details class="mo-cat" id="mo-lenses" open hidden><summary><b>Your Lens goals</b><span id="mo-lenses-sum"></span></summary>
     <dl class="mo-lens" id="mo-lens-list"></dl>
+  </details>
+  <details class="mo-cat" id="mo-seeds" hidden><summary><b>Seed library</b><span>What you set aside to draw from later</span></summary>
+    <p class="lede">Each seed rests here until you draw it into a day or let it go, both in <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a>. A seed asks nothing of you while it rests.</p>
+    <div id="mo-seed-list"></div>
   </details>
   <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">List what you can do, write, seal</span></summary>
     <!-- One phase at a time, as bars-engine's runner does (pass ttv-loop 1, ttv-board-one-phase). -->
@@ -1556,7 +1566,7 @@ function moMenuItems(m){
   moWritten = (I && I.date === m.sessionDate) ? Object.fromEntries((I.items || []).map(x => [x.id, x.bridge])) : {};
   return m.items.map((it, i) => { const g = it.status === 'bridged' ? it.goal : null;
     const id = 'menu-' + (it.key || i), w = moWritten[id];
-    return {id, text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task', can_do: 'Can do today'}[it.source] || ''),
+    return {id, text: String(it.text || '').slice(0, 240), taskId: it.taskId || undefined, note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task', can_do: 'Can do today'}[it.source] || ''),
       bridge: w ? w : g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
     .sort((a, b) => (a.bridge.kind === 'unaligned') - (b.bridge.kind === 'unaligned'));
 }
@@ -1598,7 +1608,9 @@ function moItem(it, cat, full){
     .concat([`<option value="new"${val==='new'?' selected':''}>A new smaller goal…</option>`]).join('');
   const parentOpts = goals.map(g => `<option value="${esc(g.id)}"${(b.parentId===g.id)?' selected':''}>under ${esc(g.title)}</option>`).join('');
   const note = [it.note && esc(it.note), it.link && `<a href="${esc(it.link)}" target="_blank" rel="noopener">open</a>`].filter(Boolean).join(' · ');
-  const limit = (MO.pick_limit || 7), full_ = full && !picked;
+  const limit = (MO.pick_limit || 7), full_ = full && !picked, aside = moAside(it);
+  if (aside === 'resting') return `<div class="mo-item" data-id="${esc(it.id)}" data-cat="${esc(cat)}">
+    <p class="mo-text">${esc(it.text)}</p><p class="mo-rest">Set aside, resting in your seed library.</p></div>`;
   return `<div class="mo-item${picked?' picked':''}" data-id="${esc(it.id)}" data-cat="${esc(cat)}">
     <p class="mo-text">${esc(it.text)}</p>${note ? `<p class="mo-note">${note}</p>` : ''}
     <p class="mo-bridge${b.kind==='unaligned'?' unaligned':''}">${moBridgeText(b)}</p>
@@ -1606,7 +1618,36 @@ function moItem(it, cat, full){
       ${goals.length && !rec ? `<select class="mo-goal" aria-label="Lens goal for this item">${opts}</select>` : ''}
       ${b.kind==='new' && !rec ? `<input type="text" class="mo-new" aria-label="New goal" value="${esc(b.title||'')}"><select class="mo-parent" aria-label="Under which goal">${parentOpts}</select>` : ''}
       <button type="button" class="mo-pick" aria-pressed="${picked}"${rec||full_||!db?' disabled':''}>${rec ? 'Picked, recorded' : picked ? 'Picked' : full_ ? 'Seven picked' : 'Pick'}</button>
+      ${aside === 'button' ? '<button type="button" class="mo-aside">Set aside</button>'
+        : aside === 'elsewhere' ? `<a class="mo-note" href="${SD_HOME}" target="_blank" rel="noopener">Set aside from the board on bars-engine</a>` : ''}
     </div></div>`;
+}
+/* The seed library (docs/seed-library.md). council/morning.py reads bars-engine's export into DATA.morning.seeds;
+   "Set aside" saves seeds/<taskId>, and bars-engine rests that task in the same save. Only the board served by
+   bars-engine can do that (its shim sets window.claude.barsEngine), so elsewhere the item links there instead. A
+   sealed item has a taskId only once bars-engine's seal gave it one (ttv-one-store). Drawing and letting go stay in
+   bars-engine; nothing here counts, dates or nudges a resting seed (sl-no-pressure). */
+const SD_HOME = 'https://bars-engine.vercel.app/board/council';
+const SD_HERE = !!(window.claude && window.claude.barsEngine);
+let sdLive = {};
+function sdSeeds(){
+  const read = (MO && MO.seeds && MO.seeds.seeds) || [], ids = new Set(read.map(x => x.id));
+  const fresh = Object.values(sdLive).filter(d => d.taskId && !ids.has(d.taskId) && !(MO && MO.seeds && MO.seeds.read && d.savedAt < (MO.gathered_at || '')))
+    .map(d => ({id: d.taskId, text: d.text || '', fromDay: d.date || null, restedOn: String(d.savedAt || '').slice(0, 10)}));
+  return [...fresh.sort((a, b) => String(b.restedOn).localeCompare(String(a.restedOn))), ...read];
+}
+function moAside(it){
+  if (!it.taskId) return '';
+  if (sdSeeds().some(x => x.id === it.taskId)) return 'resting';
+  return SD_HERE && db ? 'button' : 'elsewhere';
+}
+function renderSeeds(){
+  const box = document.getElementById('mo-seeds'), seeds = sdSeeds(), S = MO && MO.seeds;
+  box.hidden = !(S || seeds.length);
+  if (box.hidden) return;
+  document.getElementById('mo-seed-list').innerHTML = seeds.length
+    ? seeds.map(x => `<div class="mo-seed"><p class="mo-text">${esc(x.text)}</p><p class="mo-note">${x.fromDay ? 'Named ' + esc(x.fromDay) : ''}${x.fromDay && x.restedOn ? ' · ' : ''}${x.restedOn ? 'set aside ' + esc(x.restedOn) : ''}</p></div>`).join('')
+    : `<p class="empty">${S && S.note ? esc(S.note) + '.' : 'Nothing resting here.'}</p>`;
 }
 /* The Lenses panel: council/morning.py reads /api/lenses/goals into DATA.morning.lenses (lens-board-reads-goals). */
 function renderLenses(){
@@ -1639,7 +1680,7 @@ document.getElementById('ttv-lens-pick').addEventListener('change', renderTtvLen
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
-  renderLenses(); renderTtvLens();
+  renderLenses(); renderTtvLens(); renderSeeds();
   document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
@@ -1823,6 +1864,16 @@ document.getElementById('mo-cats').addEventListener('toggle', e => {
 document.getElementById('mo-cats').addEventListener('click', async e => {
   const more = e.target.closest('.mo-more');
   if (more){ moShown[more.dataset.cat] = (moShown[more.dataset.cat] || MO_PAGE) + MO_PAGE; renderMorning(); return; }
+  const aside = e.target.closest('.mo-aside');
+  if (aside && db){
+    const [it] = moItemById(aside.closest('.mo-item').dataset.id); if (!it || !it.taskId) return;
+    const doc = {taskId: it.taskId, text: it.text, date: MO.date, savedAt: new Date().toISOString()};
+    aside.disabled = true; aside.textContent = 'Setting aside';
+    try { await db.doc('seeds/' + it.taskId).set(doc); sdLive[it.taskId] = doc; renderMorning(); }
+    catch (err) { aside.disabled = false; aside.textContent = 'Not set aside. Try again';
+      aside.title = String((err && err.message) || ''); }
+    return;
+  }
   const btn = e.target.closest('.mo-pick'); if (!btn || !db) return;
   const row = btn.closest('.mo-item'), [it, cat] = moItemById(row.dataset.id); if (!it) return;
   const now = new Date().toISOString();
@@ -1865,6 +1916,7 @@ render();
   renderMorning(); ttvRender();
   db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); ttvGate(); }, () => {});
   db.collection('ttv').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ttvDays = next; ttvGate(); }, () => { ttvDays = {}; ttvGate(); });
+  db.collection('seeds').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); sdLive = next; renderMorning(); }, () => {});
   db.collection('picks').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); moLive = next; renderMorning(); }, () => {});
   db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
   for (const kind of ['positions','questions','causes','terms']){
