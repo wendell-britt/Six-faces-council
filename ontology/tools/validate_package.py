@@ -93,6 +93,16 @@ def validate_manifest(manifest: Any, errors: list[str]) -> None:
     historical = manifest.get("historical_material", {})
     if "current or binding" not in historical.get("retrieval_rule", ""):
         errors.append("historical_material must state current/binding source precedence")
+    discipline = manifest.get("package", {}).get("session_discipline", {})
+    expected_discipline = {
+        "unit": "one_bounded_task_or_goal",
+        "start": "fresh_session",
+        "finish": "verify_record_and_stop",
+        "scope_change": "start_new_session",
+        "compaction_policy": "do_not_design_for_compaction",
+    }
+    if discipline != expected_discipline:
+        errors.append("package.session_discipline must preserve the bounded fresh-session contract")
 
 
 def validate_yaml_documents(errors: list[str]) -> None:
@@ -113,6 +123,9 @@ def validate_contract(manifest: dict[str, Any], errors: list[str]) -> None:
         )
     if "Historical records do not outrank current or binding sources" not in text:
         errors.append("face output contract must preserve manifest source precedence")
+    for marker in ("one bounded task or goal", "fresh session", "context compaction"):
+        if marker not in text:
+            errors.append(f"face output contract must preserve session marker {marker!r}")
 
 
 def frontmatter_name(text: str) -> str | None:
