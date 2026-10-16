@@ -8881,6 +8881,94 @@
    "auto": true,
    "pos": "A post that fails to publish puts a step on your list within the hour, saying what failed and what to do. This stands unless you flip it.",
    "why": "Flirtcraft's deploys failed for three weeks unheard (fc-silent-failure). Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "ttv-board-one-phase",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "The board's Tap the Vein box runs one phase at a time under a rail (what you can do, free write, keep your lines, seal), with bars-engine's line \"No floor to clear · no streak to keep · stuckness is data, not failure\". The notice on how your words are used sits one click away.",
+   "why": "Your 10-16 ask for the board to feel like bars-engine. Built in Six-faces-council #187. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-no-home-yet",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A commitment with no Lens goal reads \"no home yet, and that is fine\", never \"shadow quest\". The next board read suggests a home, and you keep it, correct it or leave it.",
+   "why": "With no goals, every commit in bars-engine said \"commit them as shadow quests\". Built in bars-engine #340 and Six-faces-council #187. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-align-to-work",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "Each item on your intake can join work already happening, a call sheet strand, besides a goal, a board row or a pitched goal. A strand's Lens goal rides along once you have kept one for it, and a strand with none keeps running.",
+   "why": "Your 10-16 words: \"align them with work that's aready happening and then align the work that's already happening to lenses\". Built in Six-faces-council #187. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-saved-read-scoped",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "The council reads your saved bars-engine free writes only to pitch Lens goals, through a read bars-engine logs, keeps no copy, and writes back only the pitches you keep. Other uses of those writes (BAR pitches, the board, a scheduled read) are not granted.",
+   "why": "Your 10-16 words: \"a council analysis of saved tap the vein\", and your steer on ttv-raw-bars: \"the power of having a private server like in bars engine\". The Shaman dissents: it would ask you about entries written before today first. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-lens-emerge",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A Lens goal is pitched only when it returns: each pitch quotes your words from at least two mornings, with their dates, at most five pitches a run. You keep or drop each one on the Open tab.",
+   "why": "Shaman's reading: a change is trusted once it has been said more than once. Built as council/lens_emerge.py (Six-faces-council #187) on bars-engine's history export (#340). Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-fruit-is-his",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A seed bears fruit when an outside event happened (sent, merged, done with a link) and you mark it; a stage the council moves it to is not fruit. Letting a task go needs no reason and stops carrying and resurfacing it.",
+   "why": "The ontology's composting decision: a release owes the garden no harvest. bars-engine now offers \"Just let it go\" first (#340). Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-task-not-bar",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A commitment becomes a BAR only when you keep it as one.",
+   "why": "The ontology's BAR scope: capture creates lineage, not an obligation, and a task is an obligation. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-one-store",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "Next build: the board's seal writes each item to bars-engine as a task, so every commitment carries one id from the morning to its thread, and alignment is stored as links you accept.",
+   "why": "Today one commitment can become six unlinked records (a task, a store line, an alignment line, a BAR, a board row, a thread). Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
   }
  ],
  "questions": [
