@@ -115,9 +115,19 @@
     },
     {
       "round": 13,
-      "status": "next",
+      "status": "done",
       "builds": "The third daemon family's first base (sg-body-from A: the urge picks the family; the callsheet's family list names which of the six remaining daemons comes next, the Fixer's family by default, since the Chapter 1 demo's boss is the Fixer). Written image prompt first if no concept art exists (missing-art rule). Living creature a quadruped on its own four feet (sg-romp-four-feet); built with its three satisfaction states from the start through shellback.py --state, its dissatisfied stance the family daemon's held movement from GESTURES.md pushed further (ss-feral-stance).",
       "check": "Contact sheet of the base's 25 renders beside the tortoise and the fox; the base reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in one element sorts 13 of 15 blind.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "ontology_profile": "default"
+    },
+    {
+      "round": 14,
+      "status": "next",
+      "builds": "The Tinker's other two bases, the beaver and the aye-aye (council/loops/prompts/spirit-generator-r13.md), on the raccoon's gas, cog core and ally outfit, each built with its three states from the start (the Fixer's reach held and finished, TINKER_POSE and TINKER_ALLY in shellback.py), on four feet with nothing in its paws. If his look at page version 16 redirects the raccoon or the family, that comes first.",
+      "check": "Contact sheet of each base's 25 renders beside the raccoon; each reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus",
