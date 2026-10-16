@@ -9112,6 +9112,28 @@
    "auto": true,
    "pos": "The library lives in bars-engine. Next build: the board shows it on the Morning tab and offers Set aside beside each intake item, once bars-engine #341 and #342 merge. Test SL1 on 2026-10-30 counts set-asides, draws and let-gos.",
    "why": "Drawing and letting go stay in one store, bars-engine; the board reads GET /api/tap-the-vein/seed-library with the council token. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-resurface-ladder",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "A resting seed comes back on a spaced ladder: 3 days after you set it aside, then 7, 14, 30 and 60 days after each return, then every 90 days for as long as it rests. It shows at the top of the Morning tab and in Tap the Vein for three days, with Draw into today, Keep resting and Let go. Keeping it resting, or passing it by, sends it one rung further. At most three come back on one day.",
+   "why": "Your overrule of sl-no-pressure: \"We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board\". Widening intervals are spaced repetition's core; a three-day window keeps one skipped morning from losing a seed; the cap of three keeps a large library from flooding a morning. Built in bars-engine #345 and Six-faces-council #197. Test SL1 on 2026-10-30 adds which rung each draw came from. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-resurface-not-a-draw",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "Coming back is being seen, not being drawn. A resurfaced seed stays resting: out of the day's five and never a carry until you draw it, and silence never composts it. Drawing it is still the same task (sl-draw-same-task).",
+   "why": "Reconciles the ladder with sl-resting-not-compost and sl-draw-same-task, which you let stand: the ontology's \"reactivation requires a new explicit decision\" and \"silence is not composting\". Source: docs/seed-library.md"
   }
  ],
  "questions": [
