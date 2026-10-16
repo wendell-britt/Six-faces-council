@@ -5,6 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
+- [ontology-flows](ontology-flows.md), 2026-10-16: which flow loads the design ontology (pass ontology-flows 1, #184); tests T1 to T4 due 10-21 to 11-16.
 - [element-settings](element-settings.md), 2026-10-14: a cave-like land for each element (metal cave, fire mountain, earth plains, water island with lagoon, wood forest); design only; five `el-*` positions; wood first after the demo.
 - [perceptual-shadow](perceptual-shadow.md), 2026-10-14: perceptual shadow in the WAVE room built (bars-engine PR on #324): two signals, four shadows, practices, polarity; `ps-polarity-poles` on the board.
 - [spirit-dissolve](spirit-dissolve.md), 2026-10-14: dissolve a spirit into yourself, ice to water to gas to pure spirit, for mana into the element's stat; built in the cave (bars-engine #327, on #324), positions `sd-density-ladder`, `sd-mana-to-stat`, `sd-gone-after`; next his play, then the Big Mind cave and the spirit generator's allies.
