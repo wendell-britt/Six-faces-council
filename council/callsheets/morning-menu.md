@@ -4,6 +4,21 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-16, thread "lens emergence" (bars-engine #341, this repo's branch claude/lens-emergence-ittf5k): board read 1759
+flipped two positions and added one. Done here: `lens_emerge.py` pitches paraphrase each morning and cite only its date,
+refusing a gist that copies six of his words in a row (`ttv-lens-emerge`); `intake_align.py` gives every no-home-yet
+item an optional shadow quest, the question that would bring out its hidden alignment (`ttv-no-home-yet`); and
+`ttv-one-store` is bars-engine #341 (the council seal on /board/council writes each item as a task, the menu carries
+`taskId` and `barId`). Still open, in order: (1) T1, due 10-18: the key is refused (401 on menu and lens goals,
+`/api/tap-the-vein/history` still deploying at 18:00 UTC); Your steps list `menu-key-match` asks him to put one new key in
+Vercel, the cloud environment and the GitHub secret. Once he ticks it, a fresh thread runs `lens_emerge.py fetch`,
+pitches at most five goals with `pitch`, lands the rows with `board/sync_board.py --rows` and deletes the scratch copy.
+(2) The seed library (`ttv-fruit-is-his` stands with his addition, "We should also be able to defer those into a seed
+library that can be drawn from"): set-aside items go to a library he draws from later. It needs a bars-engine status
+or table plus a board surface, so it is a council pass or a design thread first. (3) Taking a shadow quest: today the
+board only shows the question. Making it a bars-engine shadow quest on the item's task (QLA already mints shadow quests)
+is the follow-up once #341 merges.
+
 2026-10-16, pass ttv-loop 1 (`council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md`, eight `ttv-*` positions, no
 questions): built on draft PRs, bars-engine `GET /api/tap-the-vein/history` and optional compost reason, council
 `council/lens_emerge.py`, strand and no-home-yet alignments in `intake_align.py`, and the board box as a four-phase
