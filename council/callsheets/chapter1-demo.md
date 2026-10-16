@@ -35,16 +35,26 @@ skills and character and NPC generation based on player blockages."
    a character-parts look; the warden is the Shellback round 2 Earth creature; the player's spirit is the ascended form
    of the charge's element. The end screen logs the card played at each moment, with a fixer check line for A6 and A8.
    A7's lines 2 to 6 are stand-ins from extract.yaml r3 to r7 until the manuscript's lines are wired.
-5. His phone play, then fixes; then a short video for the Kickstarter page.
+5. His phone play. Done 2026-10-16 20:41 (step `chapter1-demo-play-01`, note recorded here). He played the Arcade
+   once with no complaint about the page. Fixer check: he did NOT play "Which Fight Is Yours" at the hunters' choice
+   (A6) or in the hollow (A8). Cards played: A2 What's Actually Scarce, A3 The Story the Lack Tells, A4 What's Going
+   Unseen, A6 whole What's Actually Scarce (written: Which Fight Is Yours), A6 hunters What's Going Unseen (written:
+   Who's at Risk), A8 hollow The Story the Lack Tells (written: What Doesn't Want Light). So the feared fixer repeat
+   did not show, and the late cards did not match: 3 of 6 on his play (A2, A3, A4 match; A6 x2 and A8 miss), against
+   12 of 18 on paper. One play is one player, so no card changes yet; his stance was "The one who makes the right move
+   easy" and his spirit was fire, controller, named "I like having it handled before anyone asks." The page needed no
+   fix. A6 and A8 cards are the open finding: a second playtest (another player, or him as a non-fixer) decides them.
+6. A short video for the Kickstarter page. Plan: 60 to 90 seconds, phone-size screen capture of the published page in
+   headless Chromium replaying his logged choices (Playwright, 390 px wide). Shots: arcade and Tam, Yun, Ede (10 s);
+   dealt hand of Wake Up cards (8 s); Pip's hut and the warden (15 s); the hunters' choice (10 s); the hollow and the
+   spirit made from his charge (15 s); end screen with the card log (10 s); title card with the book name and the
+   Kickstarter ask (5 s). Captions on screen, no voice. Not started: it waits on his go, since a public video is
+   outward-facing.
 
 ## Waiting on
 - Nothing from Wendell. `ch1-where` answered 2026-10-14: Sprout ending in the cave, 2D or 3D character, all three loops.
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
 
 ## Next thread brief
-Step 5 is his phone play. Put one step on the board's Your steps tab: open https://claude.ai/artifact/G4mj4M4zuUeHfWfQx4r6KE
-on his phone, play once as a fixer would (reach for the big moves at Pip's hut), then tap "Copy this" on the end
-screen and paste the log into the step's note. Say it takes about ten minutes. Own sprout #52 to #55 (stacked; watch
-any still open and drop each watch once it merges). When his note arrives: read the fixer check line (did he play
-"Which Fight Is Yours" at the hunters' choice and in the hollow?), fix what the play shows in `prototype/ch1-arcade.html`
-and republish the same artifact link, then plan the short Kickstarter video. Lean: he is near his weekly limit.
+Step 6, the Kickstarter video, waits on Wendell's go. Step 5 is done (above). A6 and A8 card fit needs a second player
+before any card changes. Sprout #52 to #55 are stacked and open; merge them in order when he says.
