@@ -377,11 +377,15 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
 <section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
   <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
   <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
+  <details class="mo-cat" id="mo-back" open hidden><summary><b>Back from your seed library</b><span>Seeds that came back today</span></summary>
+    <p class="lede">A seed you set aside comes back 3 days later, then 7, 14, 30, 60, and every 90 after that. In <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a> you can draw it into today, keep it resting, or let it go. If you pass it by, it comes back later; it is never let go for you.</p>
+    <div id="mo-back-list"></div>
+  </details>
   <details class="mo-cat" id="mo-lenses" open hidden><summary><b>Your Lens goals</b><span id="mo-lenses-sum"></span></summary>
     <dl class="mo-lens" id="mo-lens-list"></dl>
   </details>
   <details class="mo-cat" id="mo-seeds" hidden><summary><b>Seed library</b><span>What you set aside to draw from later</span></summary>
-    <p class="lede">Each seed rests here until you draw it into a day or let it go, both in <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a>. A seed asks nothing of you while it rests.</p>
+    <p class="lede">Each seed rests here until you draw it into a day or let it go, both in <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a>. While it rests it comes back now and then, at the top of this tab.</p>
     <div id="mo-seed-list"></div>
   </details>
   <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">List what you can do, write, seal</span></summary>
@@ -1626,7 +1630,8 @@ function moItem(it, cat, full){
    "Set aside" saves seeds/<taskId>, and bars-engine rests that task in the same save. Only the board served by
    bars-engine can do that (its shim sets window.claude.barsEngine), so elsewhere the item links there instead. A
    sealed item has a taskId only once bars-engine's seal gave it one (ttv-one-store). Drawing and letting go stay in
-   bars-engine; nothing here counts, dates or nudges a resting seed (sl-no-pressure). */
+   bars-engine. The few seeds bars-engine resurfaced today on its spaced ladder (DATA.morning.seeds.back,
+   sl-resurface-ladder) show open at the top of the tab; drawing or keeping one resting happens in Tap the Vein. */
 const SD_HOME = 'https://bars-engine.vercel.app/board/council';
 const SD_HERE = !!(window.claude && window.claude.barsEngine);
 let sdLive = {};
@@ -1648,6 +1653,15 @@ function renderSeeds(){
   document.getElementById('mo-seed-list').innerHTML = seeds.length
     ? seeds.map(x => `<div class="mo-seed"><p class="mo-text">${esc(x.text)}</p><p class="mo-note">${x.fromDay ? 'Named ' + esc(x.fromDay) : ''}${x.fromDay && x.restedOn ? ' · ' : ''}${x.restedOn ? 'set aside ' + esc(x.restedOn) : ''}</p></div>`).join('')
     : `<p class="empty">${S && S.note ? esc(S.note) + '.' : 'Nothing resting here.'}</p>`;
+}
+function renderBack(){
+  const S = MO && MO.seeds, box = document.getElementById('mo-back');
+  const resting = new Set(sdSeeds().map(x => x.id)), byId = {};
+  ((S && S.seeds) || []).forEach(x => { byId[x.id] = x; });
+  const back = ((S && S.back) || []).map(id => byId[id]).filter(x => x && resting.has(x.id));
+  box.hidden = !back.length;
+  if (box.hidden) return;
+  document.getElementById('mo-back-list').innerHTML = back.map(x => `<div class="mo-seed"><p class="mo-text">${esc(x.text)}</p><p class="mo-note">${x.fromDay ? 'Named ' + esc(x.fromDay) : ''}${x.fromDay && x.restedOn ? ' · ' : ''}${x.restedOn ? 'set aside ' + esc(x.restedOn) : ''} · <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">draw, keep resting or let go</a></p></div>`).join('');
 }
 /* The Lenses panel: council/morning.py reads /api/lenses/goals into DATA.morning.lenses (lens-board-reads-goals). */
 function renderLenses(){
@@ -1680,7 +1694,7 @@ document.getElementById('ttv-lens-pick').addEventListener('change', renderTtvLen
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
-  renderLenses(); renderTtvLens(); renderSeeds();
+  renderBack(); renderLenses(); renderTtvLens(); renderSeeds();
   document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
