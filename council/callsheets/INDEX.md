@@ -1,7 +1,8 @@
 # Call sheets
 
 Read this file, then the one sheet for your strand. At the end update that sheet and this file; append to
-`council/HANDOFF.md` only as the archive.
+`council/HANDOFF.md` only as the archive. A sheet's `ontology:` line, when it has one, names the only ontology
+profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
 - [element-settings](element-settings.md), 2026-10-14: a cave-like land for each element (metal cave, fire mountain, earth plains, water island with lagoon, wood forest); design only; five `el-*` positions; wood first after the demo.

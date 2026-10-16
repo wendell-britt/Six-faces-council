@@ -8675,6 +8675,83 @@
    "auto": true,
    "pos": "The board page warns from the age of the oldest save main has not recorded, not from the time of the last pull. With no saves waiting, a long gap between pulls shows no warning; a save waiting more than an hour shows one, with its age. The page stops saying the pull runs every 15 minutes. This stands unless you flip it.",
    "why": "The 20:09 stall was silent because the step that failed was the one that would have reported it, and staleness.py runs inside the same scheduled job it watches. The page's note is the one alarm outside the job, but it measures the last pull, which GitHub's schedule makes late most of the time (docs/failure-modes.md, Root cause). bars-engine already holds every save's receivedAt and recordedAt."
+  },
+  {
+   "id": "of-load-where-decided",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The game ontology loads only where a design decision is made: a council pass on a game, mechanic or design tool, and a strand thread that designs a mechanic. Board reads, pulls, Nonprofit saves, needs-work and the compost pass load none of it; they carry its rules as a sentence or a check. This stands unless you flip it.",
+   "why": "All five faces agreed. The lightest profile costs about 5,000 tokens and the others about 29,000, paid again on every tool call in threads that already open at 100,000 or more. docs/ontology-in-flows.md has the table. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-callsheet-line",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "A strand that designs game mechanics may carry one 'ontology:' line on its callsheet naming the one profile its threads load. Its first design thread sets it; old sheets are not backfilled; a loop round may name one too, and without it a round loads nothing. This stands unless you flip it.",
+   "why": "Four faces support it now. The Challenger holds it until a test shows the ontology changed a decision: test T1 replays three recent mechanic positions by 2026-10-23, and if none would have changed, the line is dropped. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-compost-split",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The daily compost pass now tells two drops apart: composted (nothing depends on it; it comes back only as a new step that cites the old one) and superseded (a duplicate or a later change, naming what replaced it). It never says a step was dropped because you did not act, and it never sorts the ontology folder. This stands unless you flip it.",
+   "why": "The ontology's composting decision: composting ends an obligation and owes nothing back, and it is not supersession. docs/compost-pass.md carries the wording. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-term-check",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "A free script checks callsheets, docs and open board rows for retired or reserved ontology words and for wording that names your rest as a failing. It warns and never blocks a save. This stands unless you flip it.",
+   "why": "Today's record came back clean, so the Challenger counts it as unproven. It costs no tokens to run and is kept until 2026-11-16; if it has caught nothing by then, it is dropped. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-precedence",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The council's working rules govern how work moves (where, when, which model, who is asked). The ontology's binding decisions govern what game objects mean. A real conflict between the two goes on the board as a row, and neither wins silently. Claude threads never edit the ontology text; they write a position or a note for the Codex side. This stands unless you flip it.",
+   "why": "Both sets of rules are yours, so the council cannot settle a conflict between them; the manifest names you as owner of the ontology. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-wave-room",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The name 'WAVE room' stays. This stands unless you flip it.",
+   "why": "The ontology reserves WAVE for the Open Up breathing practice. The room runs the manual W.A.V.E. breath (Welcome, Acknowledge, Validate, Exhale), per the wave-room callsheet of 2026-10-13, so the name fits. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-sabotage-offer",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "Your 2026-09-09 lesson, to assume self-sabotage when there is a block with the choice to skip, is used as an offered frame and never recorded as a finding. This stands unless you flip it.",
+   "why": "Your lesson calls it an offer ('An offer is not a requirement'), and the ontology's roadblock decision allows an offered intention hypothesis but never an asserted one. faces.yaml is unchanged. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
   }
  ],
  "questions": [
