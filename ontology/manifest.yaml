@@ -134,6 +134,8 @@ council_agents:
 validation:
   command: python3 -m unittest tests.test_design_ontology
   package_command: python3 ontology/tools/validate_package.py
+  clean_council_command: python3 ontology/tools/validate_clean_councils.py
   adversarial_fixtures: tests/fixtures/ontology_agents/adversarial.yaml
+  clean_council_evidence: council/passes/ontology-alpha-clean-councils-2026-10-15.json
   required_skill: .claude/skills/design-ontology/SKILL.md
   council_integration: .claude/skills/six-faces/SKILL.md
