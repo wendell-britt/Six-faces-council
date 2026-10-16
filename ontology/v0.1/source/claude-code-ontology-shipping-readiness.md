@@ -2,7 +2,7 @@
 
 **Assessment date:** 2026-10-15
 
-**Target:** repo-local `0.1.0-alpha.1`
+**Target:** repo-local `0.1.0-alpha.2`
 
 **Assessment:** verified repo-local alpha candidate
 
@@ -31,12 +31,12 @@ These figures describe packaging confidence, not philosophical completeness or e
 - passing clean-worktree structural validation and complete repository suite: 84 tests, 1 skip, 24 subtests;
 - two fresh, non-persistent five-face councils plus Sage syntheses, preserved and machine-validated.
 
-## Remaining post-alpha work
+## Operating discipline
 
-The live runs did not force context compaction because Claude Code's non-persistent print mode exposes no deterministic trigger for it. Run that durability test when the environment provides one. Execute the remaining adversarial fixtures through a live runner over later iterations; their structural contracts already pass.
+Use one fresh session for one bounded task or goal, then complete, verify, record, and stop the work. Move a materially different goal into a new session with an explicit handoff. Context compaction is therefore outside the operating model rather than an untested durability requirement.
 
 Product code, not this prompt package, must enforce privacy for real player data. The alpha also excludes Phase B sorting and cross-project plugin packaging.
 
 ## Ship decision
 
-Tag the exact commit that preserves this evidence and passes repository checks as `0.1.0-alpha.1`. No Phase B sorting or real-player-data workflow is required for this repo-local alpha.
+Tag the exact commit that preserves this evidence and the session discipline, then passes repository checks, as `0.1.0-alpha.2`. No Phase B sorting or real-player-data workflow is required for this repo-local alpha.

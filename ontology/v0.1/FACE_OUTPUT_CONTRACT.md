@@ -15,6 +15,8 @@ The caller supplies:
 - known evidence, exclusions, and reserved matters;
 - the face's I Ching cast, produced by the caller with `python3 council/iching/cast.py <face>`.
 
+One invocation serves one bounded task or goal. The caller starts a fresh session, completes and verifies that goal, records any handoff, and stops. A materially different goal starts a new session; it is not appended to the current council context.
+
 The caller casts before invoking the face. Face agents deliberately have no shell or write capability. If the cast is absent, the face returns `insufficient_evidence` and the exact caller-side cast command rather than deliberating out of order.
 
 Every face reads:
@@ -26,6 +28,8 @@ Every face reads:
 5. task evidence named by the caller.
 
 Historical records do not outrank current or binding sources named by the manifest.
+
+If the request contains multiple independent goals, silently expands beyond the named scope, or approaches context compaction, the face completes only the bounded goal it was given and recommends a fresh session for the remainder. It does not optimize for surviving compaction.
 
 ## Required response
 

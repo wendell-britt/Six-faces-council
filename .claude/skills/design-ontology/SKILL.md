@@ -5,6 +5,12 @@ description: Apply Wendell Britt's integral design ontology when designing, buil
 
 # Design ontology
 
+## Session discipline
+
+Use one fresh session for one bounded task or goal. State that task before loading a profile. Finish it, verify it, record any handoff, and stop.
+
+Do not accumulate unrelated goals, broaden the task in place, or treat context compaction as ordinary workflow. If the goal materially changes, preserve the current result and start a new session with a fresh bounded brief. A request that would require compaction is evidence that the session should split, not a prompt to retain more conversational memory.
+
 ## Load deliberately
 
 1. Read `ontology/manifest.yaml`.

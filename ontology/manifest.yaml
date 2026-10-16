@@ -1,6 +1,6 @@
 package:
   id: wendell-design-ontology
-  version: 0.1.0-alpha.1
+  version: 0.1.0-alpha.2
   status: provisional
   owner: Wendell Britt
   home: ontology/v0.1
@@ -8,6 +8,12 @@ package:
     Guide the Six Faces council while it designs and builds games, preserving
     Wendell's aesthetics, player authorship, integral attention, evidence
     boundaries, and provenance.
+  session_discipline:
+    unit: one_bounded_task_or_goal
+    start: fresh_session
+    finish: verify_record_and_stop
+    scope_change: start_new_session
+    compaction_policy: do_not_design_for_compaction
 
 load_profiles:
   default:
