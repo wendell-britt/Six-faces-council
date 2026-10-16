@@ -24954,6 +24954,189 @@
      "shaman"
     ],
     "pass": "spirit round 13"
+   },
+   "bmt-burden-trust": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:06:00.280Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-three-moves": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:07:26.530Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "You can take these actions before you get in the voices seat. I do think there is a right answer but only honest plays should get you progress as made manifest through charge metabolizing",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-two-roads": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:07:59.647Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-good-in-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:08:58.191Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "This is tricky. They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-never-falls": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:09:24.870Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "I think trust should be able to fall. This is the accountability matrix",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-ontology-local": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:09:32.798Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-meeting-spirit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:09:40.898Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-show-spirit": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:06.648Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "I think there is an opportunity to use the spirits and your allied relationship with them AS proof. The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you",
+    "faces": [
+     "architect",
+     "regent",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-321-offer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:16.585Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-hidden-next": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:24.771Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-free-walk": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:32.322Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-return": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:36.872Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-ask-again": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:40.857Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-build-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:47.607Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-feel": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:55.375Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
    }
   },
   "questions": {
@@ -27216,6 +27399,32 @@
      "challenger"
     ],
     "pass": "spirit states 1"
+   },
+   "bmt-trust-shown": {
+    "decision": "A",
+    "label": "Marks for can and will, good in words",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:05:38.808Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-solo-depth": {
+    "decision": "A",
+    "label": "The whole path, with check-ins",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:05:49.406Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
    }
   },
   "causes": {
@@ -28539,7 +28748,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-16T21:20:00Z",
+ "steps_recorded_through": "2026-10-16T21:58:33Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
