@@ -1,4 +1,4 @@
-2026-10-15 (updated 00:45)
+2026-10-16 (updated 18:50)
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
@@ -102,6 +102,14 @@ The centre thread first squares `dp-centre` ("The child is seen, not questioned"
 `daemons/questions.js` (what are you learning, how are you growing, how do the other daemons get in your way), which is
 newer and in his words, so the recommended position is that the child is asked his six, gently, with the voices met on
 the way there as spirits; that goes on the board as a standing position, not a question.
+
+**2026-10-16, the centre (`dp-centre`, `dp-centre-asked`):** bars-engine PR (branch `claude/bigmind-centre-9t6yut`) opens the
+centre. Past the Damaged Self, "Walk on, into the centre" opens the shut mouth; the voices met on the way stand around the
+child as spirits. The child is seen first ("Be with it" asks nothing); "Ask it, gently" asks Wendell's six Player questions
+from `daemons/questions.js`, with cards and the child's own words, any of them let go, no charge and no permission. A voice
+it names as in its way comes closer. Only kept lines are saved (`centre` in the save). Board `dp-centre-asked` stands unless
+he flips it. Next: his play of the centre, then the centre's two ways (the hall of the six, the second cave) and the guide
+revealed as the integrated voice (`bm-guide`), in a fresh thread.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
