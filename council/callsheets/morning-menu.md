@@ -4,7 +4,14 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
-2026-10-16, board read 2031: `sl-no-pressure` overruled by his steer: "We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board". A seed no longer rests silently forever: a resting task resurfaces on a spaced schedule (the rest lengthens each time he lets it pass), still asking nothing and still drawn or let go with no reason. Design pass owed: the interval ladder, what "pull in" shows on the board and in Tap the Vein, how this sits with `sl-resting-not-compost` and `sl-draw-same-task`, and a rewrite of `docs/seed-library.md`'s no-pressure rule. Opus thread, bars-engine and this repo; test SL1 (2026-10-30) should cover it.
+2026-10-16, thread "spaced resurfacing" (branch claude/project-thread-9rf0rk in both repos; bars-engine #345,
+Six-faces-council #197): board read 2031 overruled `sl-no-pressure` ("We need a mechanics to pull in tasks that are
+resting and use spaced repetition to get it back into the board"). Built: a resting seed comes back 3, 7, 14, 30, 60,
+then every 90 days, shown three days, at most three a day; Keep resting or passing it by climbs a rung; silence never
+composts it. Tap the Vein shows "Back from the seed library" with Draw, Keep resting and Let go; the board's Morning
+tab shows today's at the top, linking there. Positions `sl-resurface-ladder` and `sl-resurface-not-a-draw` are on the
+board. `docs/seed-library.md` rule 1 is rewritten. Still open: SL1 on 2026-10-30 now also counts keeps and the rung
+each draw came from; Keep resting from the board itself waits on SL1 (a save-schema change in both repos).
 
 2026-10-16, thread "seed library board" (this repo's and bars-engine's branch claude/seed-library-board-4vdnzv): the
 board's surface is built. The Morning tab has a closed Seed library panel that `council/morning.py` reads from

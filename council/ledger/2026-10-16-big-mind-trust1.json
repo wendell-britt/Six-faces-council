@@ -1,0 +1,47 @@
+{
+ "date": "2026-10-16",
+ "battle": "big-mind-trust",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Big-mind trust pass 1, on Wendell's walkthrough notes of 2026-10-16 21:52 after playing the daemon path to the centre (bars-engine #343). Design ontology default profile (QUICKSTART: trust, disclosure, evidence, lifecycle). Five face subagents (Shaman, Architect, Challenger, Regent, Diplomat); the Sage synthesized in the main session. Fifteen bmt-* positions; questions bmt-trust-shown and bmt-solo-depth survived the reach test. Dissent: Architect would show three trust marks, Shaman and Challenger none; Challenger would hold the full 3-2-1 until a solo test. Conflict recorded: the ontology's TrustState is capability and integrity; his note adds benevolence (bmt-ontology-local, game-local, ontology text untouched). His earlier excavation ruling to leave benevolence out of the mechanic found by the Diplomat (aesthetic-source-research-round-1.md response 6).",
+ "steer": "This first round is pretty good. I want to add a trust mechanics so that it feels like more of a game. Trust is\ncapability integrity and benevolence\n\nCan you do x will you do x and do you seem like a good person.\n\nTo get the voices to trust you and remove their burden is a part of the game. There should be actions the player can\ntake from the perspective of the daemon to show they are trustworthy in more dimensions.\n\nThis means we can use this as a skill that people can use to develop inner trust.\n\nWe can also lean more into 321 and let people do full 321 dialogues with each part. I think we're at the point where we\ncan bring spirits into the game as well. The game can ask the player how THEY feel about encountering a part and this\nwould spawn a spirit the players can walk through the cave with and the spirits can also show they daemons how resources\nthe players are.\n\nAlso the next daemon shows up at the end of the path before the cave where they show up is at. We can remove this each\nof the shifts are getting permission from the player to move forward and giving the daemon too early ruins the magic of\nthis.\n\nI think we can also open it up to free walking so players can walk or run to the next space and we can also start\nthinking about dressing the cave and developing models for each of the daemons now so they are game ready and not just\nplace holders.\n\nWe want to use the game design ontology to plan what changes we want to make so I'd spin up a design thread where we can\nhave a back and forth about what we want to feel and how to negotiate the fact this process is usually facilitated but\nwe want it to be able to be played alone but still have the depth of experience in alignment with the big mind\ntranscript",
+ "pass_file": "council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md",
+ "rows_file": "council/callsheets/rows/big-mind-trust-2026-10-16.json",
+ "casts": {
+  "shaman": "32 Endurance, line 1 changing, to 34 Vigour",
+  "architect": "20 Witnessing, lines 3 and 6, to 39 Impasse",
+  "challenger": "10 Footing, no changing lines",
+  "regent": "13 Fellowship, line 5, to 30 Burning",
+  "diplomat": "20 Witnessing, lines 4 5 6, to 16 Anticipation",
+  "sage": "49 Molting, line 6 changing (rest of output cut off)"
+ },
+ "positions": [
+  "bmt-feel",
+  "bmt-burden-trust",
+  "bmt-three-moves",
+  "bmt-two-roads",
+  "bmt-good-in-words",
+  "bmt-never-falls",
+  "bmt-ontology-local",
+  "bmt-meeting-spirit",
+  "bmt-show-spirit",
+  "bmt-321-offer",
+  "bmt-hidden-next",
+  "bmt-free-walk",
+  "bmt-return",
+  "bmt-ask-again",
+  "bmt-build-order"
+ ],
+ "questions": [
+  "bmt-trust-shown",
+  "bmt-solo-depth"
+ ],
+ "tests": [
+  "T1 2026-10-30 solo vs facilitated play by a Big Mind player other than Wendell",
+  "T2 2026-10-30 card-only vs typing player parity",
+  "T3 after trust build: actions picked to open the voice means currency",
+  "T4 next play: hidden next voice leaves him unsure where to walk"
+ ],
+ "subagent_tokens": 277791,
+ "board": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
+}
