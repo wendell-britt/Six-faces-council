@@ -25,6 +25,13 @@ def save(p, c):
     p.write_text(json.dumps(c, indent=2, ensure_ascii=False) + "\n")
 
 
+def profiles():
+    """Load profile names from ontology/manifest.yaml, read without a YAML dependency."""
+    text = (HERE.parents[1] / "ontology/manifest.yaml").read_text()
+    block = text.split("load_profiles:", 1)[1].split("\n\n", 1)[0]
+    return {l.strip()[:-1] for l in block.splitlines() if l.startswith("  ") and not l.startswith("   ") and l.strip().endswith(":")}
+
+
 def find(c, n):
     for r in c["rounds"]:
         if r["round"] == n:
@@ -71,7 +78,11 @@ def main():
     p, c = load(a.strand)
     r = find(c, a.round)
     if a.cmd == "start":
+        prof = r.get("ontology_profile")
+        if prof and prof != "none" and prof not in profiles():
+            sys.exit(f"round {a.round}: ontology_profile {prof!r} is not a profile in ontology/manifest.yaml")
         r["status"] = "running"
+        print(f"ontology: load {prof} only (docs/ontology-in-flows.md)" if prof and prof != "none" else "ontology: load none")
     elif a.cmd == "finish":
         r["status"] = "done"
         if not any(x["status"] == "next" for x in c["rounds"]):

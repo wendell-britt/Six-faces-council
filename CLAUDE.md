@@ -78,7 +78,8 @@ projects more effectively between that and Jev we can save a lot of tokens"
 
 - The council's skill: `.claude/skills/six-faces/SKILL.md`. The pipeline: `council/pipeline.yaml`.
 - The game-design ontology: `ontology/manifest.yaml`. For game design or game building, load
-  `.claude/skills/design-ontology/SKILL.md`; do not load the complete provenance archive by default.
+  `.claude/skills/design-ontology/SKILL.md`; do not load the complete provenance archive by default. Clerical
+  flows load none of it: `docs/ontology-in-flows.md` says which flow loads what.
 - Before acting on any ruling, pull the board: save its store with ArtifactData and run `python3 board/pull.py
   <dir> --push`. Saved answers reach main this way, from any session, safe to run twice; the Send button only asks
   for the work to start (Wendell, `pickup-pull-model`, 2026-10-07; docs/pickup.md).
