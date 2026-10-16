@@ -8,12 +8,12 @@ phone posts in Your steps `podcast-ep2-clips-03` to `-06`. Plan for about 30 min
 
 | Clip | Length | Post on | Cover file | File name starts with |
 |---|---|---|---|---|
-| 1. Tom on how long do you want to feel this way | 37 s | Fri 16 Oct (now, or any time today) | `cover-clip1-how-long.jpg` | clip 1 |
-| 2. Charity as domination | 59 s | Sun 18 Oct | `cover-clip2-charity.jpg` | clip 2 |
-| 3. How would you like to feel | 74 s | Wed 21 Oct | `cover-clip3-how-would-you-like-to-feel.jpg` | clip 3 |
-| 4. Tom on allowing the purpose | 72 s | Sat 24 Oct | `cover-clip4-allow-the-purpose.jpg` | clip 4 |
+| 1. Tom on how long do you want to feel this way | 37 s | Mon 19 Oct | `cover-clip1-how-long.jpg` | clip 1 |
+| 2. Charity as domination | 59 s | Wed 21 Oct | `cover-clip2-charity.jpg` | clip 2 |
+| 3. How would you like to feel | 74 s | Sat 24 Oct | `cover-clip3-how-would-you-like-to-feel.jpg` | clip 3 |
+| 4. Tom on allowing the purpose | 72 s | Tue 27 Oct | `cover-clip4-allow-the-purpose.jpg` | clip 4 |
 
-If you already posted a clip, skip its row. Dates are the ones Your steps holds now.
+If you already posted a clip, skip its row. Dates are the ones Your steps holds now (moved by you on the board, 2026-10-16 17:51 UTC).
 
 ## Where the files are
 
@@ -42,7 +42,6 @@ That opens the folder in Finder, the captions in TextEdit, and Business Suite's 
    Facebook caption, paste the Facebook caption there.
 6. Turn on auto captions if the composer shows the toggle. Instagram generates them from the audio.
 7. Under Scheduling, pick "Schedule", set the date from the table above and a time (the board's usual slot is fine, or 9:00 am Pacific), and click Schedule.
-8. Clip 1 is due today: choose Publish now instead of Schedule.
 
 Check Instagram's auto captions against the words in `captions.md` once the Reel is live. Clip 4's file flags two words, Almaas and "con into", to check against the audio.
 
@@ -63,4 +62,4 @@ Business Suite does not cover X. Open x.com, post each clip's X caption from `ca
 
 ## After
 
-Tick `podcast-ep2-clips-03` to `-06` on Your steps. Nine days after clip 1, paste each clip's views, saves and shares in the podcast thread (`podcast-ep2-clips-07`); that test is the falsifier for the 2026-10-26 check, "every post on episode 2's list is published or scheduled".
+Tick `podcast-ep2-clips-03` to `-06` on Your steps. Nine days after clip 1, paste each clip's views, saves and shares in the podcast thread (`podcast-ep2-clips-07`, now 5 Nov). Scheduling all four in this sitting meets the 2026-10-26 check, "every post on episode 2's list is published or scheduled".
