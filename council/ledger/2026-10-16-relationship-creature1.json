@@ -1,0 +1,55 @@
+{
+ "date": "2026-10-16",
+ "battle": "fr-between",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Relationship creature pass 1, on Wendell's message of 2026-10-16 22:20 proposing a co-tended relationship creature (Eri Kardos, Relationship Agreements) for Mastering Allyship, Flirtcraft and Friendcraft. Design ontology default profile. Five face subagents (about 225k tokens); the Sage synthesized in the main session; no daemons. Eleven rc-* positions; questions rc-name, rc-stale, rc-who-holds survived the reach test. Dissent: Challenger and Shaman allow no decay from absence, the Diplomat would let neglect make it stale, the Architect takes the agreed-rhythm middle line and alone would build now. Source check: nothing public confirms what Fred stands for in the book. Challenger's desk check T1 run in the pass, adding rc-offer-received.",
+ "steer": "Ok for mastering allyship flirtcraft and friendcraft I want to introduce a new feature. Essentially these games involve tracking a creature in the LL intersubjective space that players co-tend with the people they are in relationship with. The creatures are fed by metabolized charge and live in a garden made out of BarQuests. The game is to keep the relationship healthy. [...] Players can bring their own spirits to the collective garden but they are always co-tending their \"fred\" (definitely want another name). They can also tend to their projection of their partner AND their own concept of the Fred so they can see when what's being imagined is drifting. I'd like to have the 6 game masters weigh in with the design ontology to explore this more",
+ "pass": "council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md",
+ "casts": {
+  "shaman": "56 Passing Through, line 6, becoming 62 Overstep",
+  "architect": "25 Candour, lines 1 and 3, becoming 33 Retreat",
+  "challenger": "26 Reserves, line 1, becoming 18 Stale Air",
+  "regent": "17 Following, line 4, becoming 3 Sprouting",
+  "diplomat": "32 Endurance, lines 4 and 6, becoming 18 Stale Air",
+  "sage": "53 Emergence, line 5, becoming 52 Stillness"
+ },
+ "positions": [
+  "rc-is-relationship",
+  "rc-joint-checkin",
+  "rc-pictures-private",
+  "rc-feeds",
+  "rc-offer-received",
+  "rc-exit",
+  "rc-spirits-visit",
+  "rc-agreements-bars",
+  "rc-goal",
+  "rc-credit",
+  "rc-order"
+ ],
+ "questions": [
+  "rc-name",
+  "rc-stale",
+  "rc-who-holds"
+ ],
+ "unanimous": false,
+ "subagent_tokens": 225000,
+ "tests": [
+  {
+   "id": "T1",
+   "what": "desk check of four scenarios",
+   "due": "2026-10-20",
+   "result": "passed in the pass with rc-offer-received"
+  },
+  {
+   "id": "T2",
+   "what": "paper play with one willing person",
+   "due": "2026-10-30"
+  },
+  {
+   "id": "T3",
+   "what": "source read: what Fred stands for",
+   "due": "2026-10-23"
+  }
+ ]
+}
