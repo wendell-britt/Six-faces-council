@@ -72,12 +72,12 @@ Canonical prose, consent or release for real participants, money, and anything n
 
 ## Definition of done
 
-- [ ] The dogfood Roadblock Encounter is usable as an implementation handoff.
-- [ ] Observed failures are preserved and converted into package contracts.
-- [ ] Six explicit face packages and their shared output schema exist.
-- [ ] Adversarial fixtures and structural validators pass.
-- [ ] A fresh checkout/session reproduces a conforming design run without this conversation.
-- [ ] Installation, usage, tested environment, known gaps, and update instructions are current.
-- [ ] The release example and failed versions remain available as provenance.
-- [ ] No Phase B sorting or real-player-data workflow entered scope.
+- [x] The dogfood Roadblock Encounter is usable as an implementation handoff.
+- [x] Observed failures are preserved and converted into package contracts.
+- [x] Six explicit face packages and their shared output schema exist.
+- [x] Adversarial fixtures and structural validators pass.
+- [x] A fresh checkout/session reproduces a conforming design run without this conversation.
+- [x] Installation, usage, tested environment, known gaps, and update instructions are current.
+- [x] The release example and failed versions remain available as provenance.
+- [x] No Phase B sorting or real-player-data workflow entered scope.
 - [ ] The passing commit is tagged `0.1.0-alpha.1` only after every gate succeeds.

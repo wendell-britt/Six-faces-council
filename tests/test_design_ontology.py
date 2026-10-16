@@ -8,6 +8,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "ontology" / "manifest.yaml"
 VALIDATOR_PATH = ROOT / "ontology" / "tools" / "validate_package.py"
+CLEAN_COUNCIL_VALIDATOR_PATH = ROOT / "ontology" / "tools" / "validate_clean_councils.py"
 
 
 def load_validator():
@@ -44,6 +45,7 @@ class DesignOntologyPackageTests(unittest.TestCase):
         paths.add(self.manifest["validation"]["required_skill"])
         paths.add(self.manifest["validation"]["council_integration"])
         paths.add(self.manifest["validation"]["adversarial_fixtures"])
+        paths.add(self.manifest["validation"]["clean_council_evidence"])
         paths.add(self.manifest["council_agents"]["contract"])
         paths.update(self.manifest["council_agents"]["faces"].values())
 
@@ -140,6 +142,15 @@ class DesignOntologyPackageTests(unittest.TestCase):
     def test_packaged_face_agents_and_adversarial_contract_validate(self):
         validator = load_validator()
         self.assertEqual(validator.validate_package(), [])
+
+    def test_clean_council_release_evidence_validates(self):
+        spec = importlib.util.spec_from_file_location(
+            "validate_clean_councils", CLEAN_COUNCIL_VALIDATOR_PATH
+        )
+        module = importlib.util.module_from_spec(spec)
+        assert spec.loader is not None
+        spec.loader.exec_module(module)
+        self.assertEqual(module.main(), 0)
 
 
 if __name__ == "__main__":
