@@ -9057,6 +9057,61 @@
    "auto": true,
    "pos": "A dissatisfied spirit is a real choice to fight with, not only a penalty. Its signature move lands harder (one more Power step), while it still heeds you only every other turn (sg-overcharge) and reaches no other element. A player may keep a spirit feral on purpose. The copy never calls it bad, broken or corrupt; it is unsettled, and its card says what it is protecting. Numbers are placeholders. This stands unless you flip it.",
    "why": "If dissatisfied is only worse, every player flees it, and the state becomes a meter of how well they are doing, which the ontology forbids (development is never whole-person rank; refusal and no-shift stay valid). Monster Rancher's loyalty already works this way: a disobedient monster is still strong."
+  },
+  {
+   "id": "dp-centre-asked",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "The daemon path",
+   "auto": true,
+   "pos": "At the centre the child is seen first: nothing has to be asked, and \"Be with it\" ends the visit with nothing asked. If you choose to ask, it is asked your six Player questions (what are you learning, growing, feeling, exploring, how do the other daemons get in your way, what would happen if you weren't there), gently, one at a time, each with cards and your own words, and any can be let go. There is no charge to read and no permission to win. The voices you met on the way stand around the child as spirits, and one it names as in its way comes closer. This stands unless you flip it.",
+   "why": "dp-centre (13 Oct) said \"The child is seen, not questioned\"; your Player set in daemons/questions.js (14 Oct) is newer and in your words, so both hold: seen first, asked only if you choose. The ontology: intimate disclosure is not progression currency, and rest or no-shift is a valid end. Built in bars-engine content/ontology-game/bigmind/bigmind.js (the centre)."
+  },
+  {
+   "id": "sl-resting-not-compost",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "Setting a task aside puts it in your seed library as resting, which is not composting: a resting task stays yours to draw back, a composted one is released and owes nothing.",
+   "why": "Your addition to ttv-fruit-is-his: \"We should also be able to defer those into a seed library that can be drawn from\". The ontology keeps resting and composted as separate work dispositions. Built in bars-engine #342. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-no-pressure",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "While a task rests it carries no pressure: out of the day's count, never carried, no reminder or expiry, and nothing brings it back unasked. The library opens only when you open it, and its closed row shows no count.",
+   "why": "The ontology's composting rules (no hidden active backlog; silence is not composting) applied to a deferral. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-draw-same-task",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "Drawing a seed moves the same task, with its quest or BAR and notes, into today as a commitment. It counts toward the day's five and is not a carry. Setting aside and drawing each leave a dated note on the task.",
+   "why": "Keeps one id from the morning to its thread (ttv-one-store) and keeps test T4's carry count honest. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-board-reads-library",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "The library lives in bars-engine. Next build: the board shows it on the Morning tab and offers Set aside beside each intake item, once bars-engine #341 and #342 merge. Test SL1 on 2026-10-30 counts set-asides, draws and let-gos.",
+   "why": "Drawing and letting go stay in one store, bars-engine; the board reads GET /api/tap-the-vein/seed-library with the council token. Source: docs/seed-library.md"
   }
  ],
  "questions": [
