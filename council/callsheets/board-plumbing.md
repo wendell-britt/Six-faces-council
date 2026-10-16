@@ -17,6 +17,14 @@
   a few clean days. One owner only by design (`BOARD_OWNER_PLAYER_ID`); other people editing the board is a separate ask.
 - Stopgap until then: the Council Board artifact (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) needs one republish
   from a session signed in to its organization (Wendell, 10 am 2026-10-16), since main has rows the live page lacks.
+- Write-race remediation (2026-10-16, from zo-environment pass 1 + two absorbed collisions the same day):
+  (1) fetch before you record, push immediately after — one standing line in `council-sync.sh` output reaches every
+  council repo at session start; (2) rulings stay append-only ledger files, and `board_data.json` row-moves ride in
+  the same commit as the ruling's ledger record, so a rebase resolves a ruling atomically; (3) no lock service.
+  Both 2026-10-16 collisions (zo-environment pass push vs steward PR #178; chat-ruling recording vs PR #181) were
+  absorbed by fetch, rebase, row-union, rebuild at about two minutes each. The hook line goes in with the
+  board-home build thread; np-pull-trigger (push per save) raises collision frequency and makes the discipline
+  load-bearing rather than optional.
 - Step notes (2026-10-12, #87): a board read now lists six collections, steps included. The coordinator updates the pickup routine prompt to name `steps` (docs/pickup.md has the text). Act on the 8 needs-work items in council/ledger/2026-10-12-pull-170058.json: copy-paste terminal instructions as a rule for every step (morning-menu-key-02), gs-1 step-by-step with file location, two links on flirtcraft-own-database-06, an unblocking process for virtual-launch-restart-01.
 - Check with `get_trigger trig_01L138vKTaN9MSJoFKRmaBNx` that the prompt says: pull, then act; never `add_repo`.
 - Check the standing daily session carries step 1b for `trig_01F8fDdkjYEeMCfdozj6w3tt` (run pull.py, do not fire the pickup routine). That routine is switched off, not deleted (daily stopped 2026-10-08, `daily-stopped`).
