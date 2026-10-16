@@ -1,0 +1,99 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T20:31:23.110Z",
+ "answers": {
+  "ss-push-down": {
+   "kind": "question",
+   "choice": "C",
+   "savedAt": "2026-10-16T19:51:39.733Z",
+   "steer": ""
+  },
+  "ss-three-states": {
+   "kind": "position",
+   "savedAt": "2026-10-16T19:59:43.784Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ss-intake-start": {
+   "kind": "position",
+   "savedAt": "2026-10-16T19:59:57.630Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ss-markers": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:29:09.791Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ss-feral-stance": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:29:30.670Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ss-not-veiled": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:29:39.693Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ss-shift-up": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:29:52.800Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ss-cross-element": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:29:59.217Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ss-feral-trade": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:30:10.323Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dp-centre-asked": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:30:24.426Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sl-resting-not-compost": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:30:31.377Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sl-no-pressure": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:31:09.639Z",
+   "status": "overrule",
+   "steer": "We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board "
+  },
+  "sl-draw-same-task": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:31:18.709Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sl-board-reads-library": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:31:23.110Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/ss-push-down: Yes, on any spirit, your own too",
+  "positions/sl-no-pressure: Overruled (steer: \"We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
