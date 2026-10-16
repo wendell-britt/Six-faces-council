@@ -273,3 +273,22 @@ the full 3-2-1 until a solo test.
   stronger cue. (Regent)
 
 Subagents: five face agents, about 278,000 tokens in total. No daemons were sent.
+
+## After his answers (board read 22:12, ledger `council/ledger/2026-10-16-pull-221155.json`)
+
+Answered: `bmt-trust-shown` A (marks for can and will, good in words); `bmt-solo-depth` A (the whole path, with
+check-ins). Thirteen positions stand, five of them with steers. Overruled: `bmt-three-moves` and `bmt-show-spirit`.
+
+- `bmt-three-moves` (overruled): "You can take these actions before you get in the voices seat. I do think there is a
+  right answer but only honest plays should get you progress as made manifest through charge metabolizing". Replaced by
+  `bmt-honest-moves`. The Challenger's position that no card is the right one is overruled; his lesson for that face.
+- `bmt-show-spirit` (overruled): "The spirits can vouch for you. The way I see this game is like at the end of pokemon
+  where you show the badges you've collected to be let into victory road." Replaced by `bmt-spirits-vouch`.
+- `bmt-two-roads` stands, steer "Once it's willing to step aside isn't always the end of the interaction": `bmt-keep-talking`.
+- `bmt-good-in-words` stands, steer "They each have a mental model of what goodness looks like": `bmt-goodness-models`.
+- `bmt-never-falls` stands with the steer "I think trust should be able to fall. This is the accountability matrix". The
+  steer is the later, more specific word, so `bmt-trust-falls` replaces the never-falls rule; rest and Not now still
+  lower nothing (`bm-decline`). Nothing in the record names an accountability matrix, so `bmt-accountability` asks.
+
+Scope of the two running builds is unchanged (hidden next voice and free walking; WARP bodies). The trust build's brief on
+the callsheet takes all five revisions.
