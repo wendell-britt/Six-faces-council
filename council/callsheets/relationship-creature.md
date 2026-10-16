@@ -1,4 +1,4 @@
-2026-10-16 (updated 22:50)
+2026-10-16 (updated 23:45)
 ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
@@ -47,6 +47,31 @@ for it to be a 3d game space not unlike the WAVE room but 2 people can inhabit i
 might be useful for an intake but the output should be a 3D space where the spirits and daemons can interact and walk
 around. Let's use the design ontology for this". The 2D page (https://claude.ai/artifact/W4MpDsm5xnnaLGcoPNWVv6) stays
 as the intake; the play space is 3D.
+
+**2026-10-16, 23:16, board read (ledger `council/ledger/2026-10-16-pull-231549.json`):** `rc-spark` stands with his steer:
+"History should start when the other person joins. The player who jumped ahead should metabolize their charge or just
+have it as a personal spirit." `rc-tend-alone`, `rc-stale-neglect`, `rc-end-together`, `rc-demo-garden` stand.
+
+**2026-10-16, 23:45, the Between in 3D built:** https://claude.ai/artifact/NTi4jcpaHkDEMnqpVA9LBq. Ontology read
+first: `council/passes/BETWEEN_3D_ontology_2026-10-16.md` (default profile; every fork settled by an `rc-*` position or
+his steer, nothing to the board). One three.js page under the WAVE cave's dome (bars-engine `rooms/wave-room/room.glb`)
+with `db`, `room`, `user`, `downloads`. Each person walks (tap the floor, drag to look, WASD) and sees the other live,
+with a ring of their hue at their feet (teal for whoever started, plum for whoever joined). The Between stands in the
+middle (a plum flame while it is a spark), breathing 4 in, 6 out, jittery when charged, in leaf when allied, grey and
+dim when stale. Agreements are plants planted where you stand (seed, bud, flower in both hues, drooping amber,
+stone, soil); offerings are lights set on stones, sealed charge a dark shell; walking up gives the acts (take it in,
+let it pass, open it, propose, agree, ask to revisit...), and a yes flies the light into the Between. Spirits (fox or
+tortoise in their element's colour) and daemons (the WARP bodies, npc-gesture 10-14) walk paths drawn from their seed
+and the shared clock, so both screens agree; they stop and face whatever they meet, and a daemon meeting the other
+person's walker says so. Only the owner can call a walker over or send it home; the other can greet it. His steer:
+when the starter welcomes the other in, the spark's items leave the shared store for the starter's private store, and
+the spark walks on as their own fire spirit or composts; the Between's history starts at the welcome. Pictures,
+"While you were away", ending, silent exit and credit carry over from the intake. Models ship as `.json` glTF files
+beside the page (Artifacts do not serve `.glb`). His intake garden (Ari, romance or flirting, "Become powerful
+together", a spark) was copied into the new page's store. Tested in a browser with a stand-in store, a desktop page
+and a phone page at once: join, welcome, sealed offering opened and taken in, daemons and a spirit brought,
+agreement planted, proposed and agreed, one page away while the other tended, then back to "While you were away".
+Next: his play; round 2 from his notes.
 
 ### Build brief: the Between in 3D (next thread, Opus, load design-ontology)
 - **Ontology first.** Load `.claude/skills/design-ontology/SKILL.md` and the profile `ontology/manifest.yaml` names for
@@ -109,7 +134,8 @@ on. It should be able to be accessed synchronously and synchronously by the two 
    `src/lib/garden/plant.ts`.
 
 ## Waiting on
-The 3D build thread (brief above). Then his play.
+His play in the 3D garden (https://claude.ai/artifact/NTi4jcpaHkDEMnqpVA9LBq). Ari can join once he shares
+the page from its Share menu.
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
