@@ -25216,6 +25216,68 @@
      "shaman"
     ],
     "pass": "big-mind trust 1"
+   },
+   "bmt-keep-talking": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:15.923Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-goodness-models": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:36.322Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman",
+     "architect"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-trust-falls": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:43.963Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-spirits-vouch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:57.333Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "regent"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-honest-moves": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:23:06.570Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1, after your answers"
    }
   },
   "questions": {
@@ -27504,6 +27566,17 @@
      "shaman"
     ],
     "pass": "big-mind trust 1"
+   },
+   "bmt-accountability": {
+    "decision": "A",
+    "label": "The council's reading",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:09.375Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1, after your answers"
    }
   },
   "causes": {
