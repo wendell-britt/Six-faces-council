@@ -81,6 +81,12 @@
   `INTEGRATE` row. Skin weights now reuse the pre-warp blend so a fist opens without tearing. Test J7.
 - #325 and #328 merged 2026-10-16. Renders: /mnt/project-files/3d-build/npc-integrate-2026-10-16/. 3D view:
   https://claude.ai/artifact/515E62dAHmCaVffBw7EDSm
+- His look at round 1 (2026-10-16): "Let the controller hands fall to their sides in a slightly more relaxed posture
+  at the end". Round 2 (bars-engine #352): the `controller` INTEGRATE row now carries its own `"to"`, merged over
+  `INTEGRATE_TO` (shoulder flex 0.06 out 0.0, elbow 0.18, wrist 0, neck 0.02, curve and stoop 0.03), so the arms end
+  hanging close at the sides. J7 passes, 298 KB. 3D page republished as version 2; renders in
+  /mnt/project-files/3d-build/npc-integrate-2026-10-16/round2-relaxed/. Board step `controller-letgo-look-02`
+  (list blender-cloud-test, step 17). Other daemons whose open stance should not be the Player's can use `"to"` too.
 - Next, after his look at the Controller: one `INTEGRATE` row per daemon (Protector's push landing, Skeptic's pull
   returning, Fixer's reach arriving, Victim rising from the yield, Damaged Self's release, Emotional Body gathering
   back), in a fresh thread, one round each or all six on one sheet; then the cave plays Integrate when the player's
