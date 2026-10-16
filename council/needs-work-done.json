@@ -1,5 +1,11 @@
 {
  "since": "2026-10-15T00:00:00Z",
  "note": "One entry per finished needs-work item, keyed <ledger stem>#<row> as board/needs_work.py prints it: {\"by\": who did it (person, Claude, Codex, ...), \"ref\": the pull request or commit, \"at\": ISO time}. Items in pulls before since were worked by board-read threads before this file existed.",
- "done": {}
+ "done": {
+  "2026-10-16-pull-173235#questions/pp-who-schedules": {
+   "by": "Claude",
+   "ref": "podcast-pipeline steps 02-03 on the board store; posting pack /mnt/project-files/podcast/ep02-tom-hurlburt/posting-pack-meta-business-suite.md",
+   "at": "2026-10-16T17:52:00Z"
+  }
+ }
 }
