@@ -75,6 +75,9 @@ What follows from it:
    GitHub's `workflow_dispatch` for board-pull when a save lands. The cron stays as a sweep for anything missed. This needs a
    GitHub credential in Vercel, which is Wendell's to create or refuse; the question is on the Council Board
    (`np-pull-trigger`).
+   He answered `token` on 2026-10-16 (`resolved.questions["np-pull-trigger"]`). bars-engine sends the dispatch after
+   a save is stored, with `BOARD_DISPATCH_TOKEN`, at most once a minute; a missing token or a failed call is logged and
+   never fails the save, so the cron carries it.
 2. The alarm lives where he saves, and measures what matters. The page warns from the oldest pending save's age, not
    from the last pull's age: with no pending saves, a long gap between pulls is not late. bars-engine already holds both numbers.
 3. Claims in this file are measured. A figure here cites the run history or a test that checks it.

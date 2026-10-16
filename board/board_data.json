@@ -25767,6 +25767,18 @@
      "architect"
     ],
     "pass": "nonprofit structure"
+   },
+   "np-pull-trigger": {
+    "decision": "token",
+    "label": "Yes: a save starts board-pull",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T00:00:06.000Z",
+    "record": "council/ledger/2026-10-16-chat-000006.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "board plumbing"
    }
   },
   "causes": {
