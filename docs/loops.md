@@ -7,7 +7,8 @@ grader, but his look stops being what starts the next round. Piloted on the spir
 ## The four pieces
 
 1. **A next-round contract per strand**: `council/loops/<strand>.json`, beside the callsheet. Each round says what it
-   builds, how it is checked, its gate and its budget. Gates: `auto`, or `eyes`, `money`, `accounts` (needs him).
+   builds, how it is checked, its gate and its budget. An optional `ontology_profile` names the one manifest profile
+   the round loads (docs/ontology-in-flows.md); without it the round loads none. Gates: `auto`, or `eyes`, `money`, `accounts` (needs him).
    Statuses: `done`, `running`, `next`, `queued`, `held`.
 2. **Continuation**: when a round ends, its thread runs `python3 council/loops/next_round.py finish <strand> <n>`
    and pushes the change. If the tool then says a round may start, the thread names that round in its last reply
