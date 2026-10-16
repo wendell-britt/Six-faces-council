@@ -131,6 +131,8 @@ fruit." The pass is `council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md`.
 - **Grown.** A task becomes a BAR only when he keeps it as one (`ttv-task-not-bar`). It bears fruit when something
   happened outside (sent, merged, done with a link) and he marks it; a stage the council moves it to is not fruit.
   Letting it go needs no reason ("Just let it go" in bars-engine) and stops carrying and resurfacing (`ttv-fruit-is-his`).
+- **Set aside.** A live task can rest in his seed library instead: out of the day, never carried or resurfaced, drawn
+  back into a day only when he chooses, as the same task (`docs/seed-library.md`, the `sl-*` positions).
 - **Lenses emerge.** For a creator who skipped the intake, the council reads his saved bars-engine free writes for goals
   that return (`ttv-saved-read-scoped`, `ttv-lens-emerge`):
   1. `python3 council/lens_emerge.py fetch --out <scratch>/vein.json` reads `GET /api/tap-the-vein/history` (same token
