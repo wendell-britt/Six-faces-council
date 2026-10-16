@@ -64,6 +64,7 @@ def main():
     ap.add_argument("--words")
     ap.add_argument("--render")
     ap.add_argument("--at")
+    ap.add_argument("--delivered", action="store_true", help="finish: every_round deliverables are on the page")
     a = ap.parse_args()
 
     if a.cmd == "status":
@@ -83,7 +84,11 @@ def main():
             sys.exit(f"round {a.round}: ontology_profile {prof!r} is not a profile in ontology/manifest.yaml")
         r["status"] = "running"
         print(f"ontology: load {prof} only (docs/ontology-in-flows.md)" if prof and prof != "none" else "ontology: load none")
+        for d in c.get("every_round", []):
+            print(f"every round delivers: {d}")
     elif a.cmd == "finish":
+        if c.get("every_round") and not a.delivered:
+            sys.exit("finish needs --delivered: every round delivers " + "; ".join(c["every_round"]))
         r["status"] = "done"
         if not any(x["status"] == "next" for x in c["rounds"]):
             q = next((x for x in c["rounds"] if x["status"] == "queued"), None)
