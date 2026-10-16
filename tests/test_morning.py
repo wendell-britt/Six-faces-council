@@ -80,6 +80,21 @@ class MorningTest(unittest.TestCase):
         self.assertEqual(m["lenses"]["note"], "goals export not read: x")
         self.assertTrue(all(d["goals"] == [] for d in m["lenses"]["domains"]))
 
+    def test_seed_library_is_read_only_and_carries_no_age(self):
+        morning.from_prs = lambda path=None: ([], None)
+        export = {"seeds": [{"id": "t9", "text": "Call the printer", "fromDay": "2026-10-14",
+                             "restedAt": "2026-10-16T18:00:00.000Z", "lensGoalId": None, "barId": None, "questId": None}]}
+        m = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_export=export)
+        self.assertEqual(m["seeds"], {"seeds": [{"id": "t9", "text": "Call the printer", "fromDay": "2026-10-14",
+                                                 "restedOn": "2026-10-16"}], "read": True})
+        unread = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_note="seed library not read: 401")
+        self.assertEqual(unread["seeds"], {"seeds": [], "read": False, "note": "seed library not read: 401"})
+
+    def test_sealed_items_carry_their_task_id_for_set_aside(self):
+        menu = dict(MENU, items=[dict(MENU["items"][0], taskId="t1"), *MENU["items"][1:]])
+        items = morning.from_menu(menu)
+        self.assertEqual(items[0]["taskId"], "t1")
+        self.assertNotIn("taskId", items[1])
 
     def test_steps_due_today_are_gathered_and_done_ones_skipped(self):
         import tempfile, pathlib
