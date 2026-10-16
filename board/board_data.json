@@ -25764,6 +25764,18 @@
      "sage"
     ],
     "pass": "relationship creature 1, after your answers"
+   },
+   "sg-holdfast-family": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T23:47:51.443Z",
+    "record": "council/ledger/2026-10-16-pull-234751.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit round 15"
    }
   },
   "questions": {
@@ -29457,7 +29469,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-16T21:58:33Z",
+ "steps_recorded_through": "2026-10-16T23:33:04Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
