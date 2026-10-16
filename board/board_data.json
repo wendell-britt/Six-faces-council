@@ -25691,6 +25691,68 @@
      "sage"
     ],
     "pass": "relationship creature 1"
+   },
+   "rc-spark": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T23:15:09.298Z",
+    "record": "council/ledger/2026-10-16-pull-231549.json (six-faces-council)",
+    "steer": "History should start when the other person joins. The player who jumped ahead should metabolize their charge or just have it as a personal spirit",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "relationship creature 1, after your answers"
+   },
+   "rc-tend-alone": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T23:15:21.923Z",
+    "record": "council/ledger/2026-10-16-pull-231549.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1, after your answers"
+   },
+   "rc-stale-neglect": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T23:15:29.774Z",
+    "record": "council/ledger/2026-10-16-pull-231549.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1, after your answers"
+   },
+   "rc-end-together": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T23:15:38.747Z",
+    "record": "council/ledger/2026-10-16-pull-231549.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "relationship creature 1, after your answers"
+   },
+   "rc-demo-garden": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T23:15:49.249Z",
+    "record": "council/ledger/2026-10-16-pull-231549.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect",
+     "sage"
+    ],
+    "pass": "relationship creature 1, after your answers"
    }
   },
   "questions": {
