@@ -103,7 +103,7 @@ The centre thread first squares `dp-centre` ("The child is seen, not questioned"
 newer and in his words, so the recommended position is that the child is asked his six, gently, with the voices met on
 the way there as spirits; that goes on the board as a standing position, not a question.
 
-**2026-10-16, the centre (`dp-centre`, `dp-centre-asked`):** bars-engine PR (branch `claude/bigmind-centre-9t6yut`) opens the
+**2026-10-16, the centre (`dp-centre`, `dp-centre-asked`):** bars-engine #343 (merged 2026-10-16) opens the
 centre. Past the Damaged Self, "Walk on, into the centre" opens the shut mouth; the voices met on the way stand around the
 child as spirits. The child is seen first ("Be with it" asks nothing); "Ask it, gently" asks Wendell's six Player questions
 from `daemons/questions.js`, with cards and the child's own words, any of them let go, no charge and no permission. A voice
