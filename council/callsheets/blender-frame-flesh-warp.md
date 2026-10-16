@@ -57,10 +57,34 @@
 - Sheets: /mnt/project-files/3d-build/npc-gesture-2026-10-14/ (daemons.png, daemons-side.png, one-number.png,
   one-number-side.png).
 
+## Round 3, the hands (done 2026-10-16)
+- His looks, 2026-10-16: "Better but controller still looks weird and the hands are still off. Let's do some research on
+  how to properly rig and use hands"; then "Problem areas" (a crumpled stop wrist, torn finger webbing); then "Close to
+  perfection. The wrist joints for the protector are still a little weird"; then "Perfect. Let's do the next thing".
+- Built on bars-engine #328: 15 finger bones per hand (46 bones in all), one open mesh, and `HAND_POSES` open, relaxed
+  and fist as curls and a spread; the hand and the body never share a vertex; the wrist is a ball on the joint. The
+  Controller sets its fists on its hips. Research in `council/daemons/HANDS.md`. All rig tests pass, every figure under
+  300 KB. Sheets in /mnt/project-files/3d-build/npc-gesture-2026-10-14/.
+
 ## Next thread (Opus, fresh): integration, the held movement completing
-- Waits on his look at the round 2 sheets. Then animate each daemon's movement completing over a few seconds, from its
-  held shape to the Player's open stance (a push that lands, a grasp that lets go), as a second action beside Walk.
-- Owns bars-engine #328 if it is still open.
+- His look is in ("Perfect", 2026-10-16). Animate each daemon's movement completing over a few seconds, from its held
+  shape to the Player's open stance (a push that lands, a grasp that lets go), as a second action beside Walk. Start
+  with the Controller: its fists open (fist to relaxed on the finger bones) as the arms come off the hips. The walk keys
+  no finger bones, so the action may key them.
+- Owns bars-engine #328 (and watches #325) until they merge.
+
+## Round 4, integration: the Controller lets go (built 2026-10-16, bars-engine #351)
+- `character.py --warp controller --integrate` adds a second action, Integrate, beside Walk: half a second held, three
+  seconds of the move, half a second still. Elbows swing in first so the fists clear the hips outward, the shoulders
+  follow, the fists open finger by finger (thumb last), chest and chin settle into the Player's stance (`INTEGRATE_TO`:
+  the Player's gesture, curve and stoop, relaxed hands; the daemon keeps its own proportions). Timing per joint is the
+  `INTEGRATE` row. Skin weights now reuse the pre-warp blend so a fist opens without tearing. Test J7.
+- #325 and #328 merged 2026-10-16. Renders: /mnt/project-files/3d-build/npc-integrate-2026-10-16/. 3D view:
+  https://claude.ai/artifact/515E62dAHmCaVffBw7EDSm
+- Next, after his look at the Controller: one `INTEGRATE` row per daemon (Protector's push landing, Skeptic's pull
+  returning, Fixer's reach arriving, Victim rising from the yield, Damaged Self's release, Emotional Body gathering
+  back), in a fresh thread, one round each or all six on one sheet; then the cave plays Integrate when the player's
+  move completes the daemon's movement. On a "no", tune the Controller from his note first.
 
 ## What we already follow
 - Version pinned: `bpy==5.2.2` on Python 3.13 (tools/blender-cloud/README.md). Matches the tweet's current LTS.
@@ -83,4 +107,4 @@
 - EXACT booleans, `gpu.init()` offscreen sheets: no booleans in these scripts, and Cycles CPU works.
 
 ## Waiting on
-- His look at the round 2 sheets (board row `dg-six-movements`). The integration round waits on it.
+- Wendell's look at the Controller letting go (3D view above), then the other six rows.

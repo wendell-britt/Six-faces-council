@@ -24,6 +24,9 @@
   store (pointing them over before the store is moved would read an empty Postgres). (6) LEFT — retire the artifact
   after a few clean days. One owner only by design (`BOARD_OWNER_PLAYER_ID`); other people editing the board is a
   separate ask.
+  Follow-up in bars-engine #338 (draft, on main's board-home): the council page's Send bar is patched at serve time (button
+  hidden, "saved and waiting for the board pull", as board/nonprofit/build.py does), `/api/board/pull` rejects a `board`
+  other than nonprofit or council, tests for both. Another session landed steps 1-3 first; #338 was merged onto it.
 - Stopgap until then: the Council Board artifact (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) needs one republish
   from a session signed in to its organization (Wendell, 10 am 2026-10-16), since main has rows the live page lacks.
 - Write-race remediation (2026-10-16, from zo-environment pass 1 + two absorbed collisions the same day):

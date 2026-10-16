@@ -1,0 +1,129 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T22:11:55.375Z",
+ "answers": {
+  "bmt-trust-shown": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-16T22:05:38.808Z",
+   "steer": ""
+  },
+  "bmt-solo-depth": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-16T22:05:49.406Z",
+   "steer": ""
+  },
+  "bmt-burden-trust": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:06:00.280Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-three-moves": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:07:26.530Z",
+   "status": "overrule",
+   "steer": "You can take these actions before you get in the voices seat. I do think there is a right answer but only honest plays should get you progress as made manifest through charge metabolizing "
+  },
+  "bmt-two-roads": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:07:59.647Z",
+   "status": "stands",
+   "steer": "I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction "
+  },
+  "bmt-good-in-words": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:08:58.191Z",
+   "status": "stands",
+   "steer": "This is tricky. They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs"
+  },
+  "bmt-never-falls": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:09:24.870Z",
+   "status": "stands",
+   "steer": "I think trust should be able to fall. This is the accountability matrix "
+  },
+  "bmt-ontology-local": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:09:32.798Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-meeting-spirit": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:09:40.898Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-show-spirit": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:06.648Z",
+   "status": "overrule",
+   "steer": "I think there is an opportunity to use the spirits and your allied relationship with them AS proof. The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you "
+  },
+  "bmt-321-offer": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:16.585Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-hidden-next": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:24.771Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-free-walk": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:32.322Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-return": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:36.872Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-ask-again": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:40.857Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-build-order": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:47.607Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-feel": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:11:55.375Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-07",
+   "at": "2026-10-16T21:58:33Z",
+   "what": "ticked",
+   "do": "Look at round 7 of the clothing (J5). Your note on round 6 said the hems were better but the arms and legs were still a bit jittery. Most of that was the walk itself: the knee, the elbow and the hips' sink started at full speed from a standstill twice a step, and the ankles and sleeve cuffs jerked with them. The walk also paused for a moment at each loop. Round 7 rounds those corners and removes the pause, so the ankles and cuffs move about ten times more smoothly. The hem's turned-in fold used to stick out from the hem in cream teeth. It now lies flat against the cloth. Open j5r7-cuffs-hem-close.jpg first: round 6 is on top and round 7 underneath, for the same eight moments of a step. j5r7-cloth-walk.jpg shows the whole figure from the side: a normal stride, a fast stride, a turn, and a stop. j5r7-set-walk.jpg, j5r7-set-sheet.jpg and j5r7-garments-sheet.jpg show the walk from three sides and all nine figures. Under this step, note 'yes' or what still looks wrong."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "questions/bmt-trust-shown: Marks for can and will, good in words",
+  "questions/bmt-solo-depth: The whole path, with check-ins",
+  "positions/bmt-three-moves: Overruled (steer: \"You can take these actions before you get in the voices seat. I do think there is a right answer but only honest plays should get you progress as made manifest through charge metabolizing\")",
+  "positions/bmt-two-roads: Stands (steer: \"I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction\")",
+  "positions/bmt-good-in-words: Stands (steer: \"This is tricky. They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs\")",
+  "positions/bmt-never-falls: Stands (steer: \"I think trust should be able to fall. This is the accountability matrix\")",
+  "positions/bmt-show-spirit: Overruled (steer: \"I think there is an opportunity to use the spirits and your allied relationship with them AS proof. The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

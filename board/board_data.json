@@ -8618,8 +8618,8 @@
    ],
    "pass": "Daemon gestures",
    "auto": true,
-   "pos": "Each daemon's body holds one of Ruella Frank's six fundamental movements stuck in its protective form: Protector push (a stop: both palms out, fingers up, braced into the push), Controller grasp (fists drawn to the chest, rigid and tall), Skeptic pull (drawn back and turned aside, weight on the back knee), Fixer reach (pitched forward, both arms out), Victim yield collapsed (sunk into the knees, head hung), Damaged Self release refused (curled round its own middle), Emotional Body release too soon (arms flung wide, head back). The Player stands soft and open with all six available. Integration in play is the held movement completing, animated in a later round. This stands unless you flip it.",
-   "why": "Your note of 2026-10-14: the first poses were subtle nods; build a gestural language on the six movements, with the daemons protecting the vulnerable child until they are renegotiated. Sheets in /mnt/project-files/3d-build/npc-gesture-2026-10-14/; code on bars-engine #328; record in council/daemons/GESTURES.md."
+   "pos": "Each daemon's body holds one of Ruella Frank's six fundamental movements stuck in its protective form: Protector push (a stop: both palms out, fingers up, braced into the push), Controller grasp (fists clenched and set on the hips, elbows out, rigid and tall), Skeptic pull (drawn back and turned aside, weight on the back knee), Fixer reach (pitched forward, both arms out), Victim yield collapsed (sunk into the knees, head hung), Damaged Self release refused (curled round its own middle), Emotional Body release too soon (arms flung wide, head back). The Player stands soft and open with all six available. Hands are rigged as game hands are, with three bones to a finger, so open, relaxed and fist are poses of one hand and a held fist can open in play. Integration in play is the held movement completing, animated in a later round. This stands unless you flip it.",
+   "why": "Your note of 2026-10-14: the first poses were subtle nods; build a gestural language on the six movements, with the daemons protecting the vulnerable child until they are renegotiated. Sheets in /mnt/project-files/3d-build/npc-gesture-2026-10-14/; code on bars-engine #328; record in council/daemons/GESTURES.md, hand research in council/daemons/HANDS.md. Your look of 2026-10-16 found the Controller weird and the hands off; both remade."
   },
   {
    "id": "np-kids-first",
@@ -8817,6 +8817,737 @@
    "auto": true,
    "pos": "Your 2026-09-09 lesson, to assume self-sabotage when there is a block with the choice to skip, is used as an offered frame and never recorded as a finding. This stands unless you flip it.",
    "why": "Your lesson calls it an offer ('An offer is not a requirement'), and the ontology's roadblock decision allows an offered intention hypothesis but never an asserted one. faces.yaml is unchanged. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "pa-github-timer",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Approved posts publish from a new GitHub timer on the council repo every fifteen minutes, beside the board's own timer. Clips go to Meta by direct upload from a GitHub release, so there is no paid scheduler and no paid host: the build costs $0 a month for Instagram and Facebook. This stands unless you flip it.",
+   "why": "Instagram's API has no scheduling field, so something must wake at the hour. GitHub Actions is free on the public council repo, as board-pull.yml shows. Meta allows resumable upload of a local file for Facebook Login for Business apps. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-approval-publishes",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Your approval of an episode's queue on this board is the publishing act. Each post shows whole, with its cover, caption, networks and date. Nothing goes out without the approval, and a post changed afterwards goes back to you. This stands unless you flip it.",
+   "why": "Posting under your name is reserved to you (reserved in faces.yaml); pass one recorded the approve-once shape. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-token-in-secrets",
+   "faces": [
+    "regent"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "The Meta token is a never-expiring system user token you make and paste into the council repo's GitHub secrets yourself (Your steps, meta-publishing-setup). It never appears in chat, a step, a note or a file. This stands unless you flip it.",
+   "why": "A secret is never written to a step (pipeline.yaml); only the timer reads it. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-pilot-ep3",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Episode 2 still goes out through the Meta Business Suite sitting you picked. Episode 3 is the first queue, once a dry run passes: one of episode 2's clips uploads to Meta without being published. This stands unless you flip it.",
+   "why": "Your pick on pp-who-schedules; the Challenger's falsification test. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-numbers-auto",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Once posting runs, the timer reads each post's plays, saves and shares every Monday into the episode's results, and your 'note the numbers' step is retired. This stands unless you flip it.",
+   "why": "pod-promo-rhythm's review after three episodes needs the numbers; both of your numbers steps are still open. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-failure-step",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "A post that fails to publish puts a step on your list within the hour, saying what failed and what to do. This stands unless you flip it.",
+   "why": "Flirtcraft's deploys failed for three weeks unheard (fc-silent-failure). Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "ttv-board-one-phase",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "The board's Tap the Vein box runs one phase at a time under a rail (what you can do, free write, keep your lines, seal), with bars-engine's line \"No floor to clear · no streak to keep · stuckness is data, not failure\". The notice on how your words are used sits one click away.",
+   "why": "Your 10-16 ask for the board to feel like bars-engine. Built in Six-faces-council #187. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-no-home-yet",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A commitment with no Lens goal reads \"no home yet, and that is fine\", never \"shadow quest\". The next board read suggests a home, and you keep it, correct it or leave it.",
+   "why": "With no goals, every commit in bars-engine said \"commit them as shadow quests\". Built in bars-engine #340 and Six-faces-council #187. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-align-to-work",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "Each item on your intake can join work already happening, a call sheet strand, besides a goal, a board row or a pitched goal. A strand's Lens goal rides along once you have kept one for it, and a strand with none keeps running.",
+   "why": "Your 10-16 words: \"align them with work that's aready happening and then align the work that's already happening to lenses\". Built in Six-faces-council #187. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-saved-read-scoped",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "The council reads your saved bars-engine free writes only to pitch Lens goals, through a read bars-engine logs, keeps no copy, and writes back only the pitches you keep. Other uses of those writes (BAR pitches, the board, a scheduled read) are not granted.",
+   "why": "Your 10-16 words: \"a council analysis of saved tap the vein\", and your steer on ttv-raw-bars: \"the power of having a private server like in bars engine\". The Shaman dissents: it would ask you about entries written before today first. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-lens-emerge",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A Lens goal is pitched only when it returns: each pitch quotes your words from at least two mornings, with their dates, at most five pitches a run. You keep or drop each one on the Open tab.",
+   "why": "Shaman's reading: a change is trusted once it has been said more than once. Built as council/lens_emerge.py (Six-faces-council #187) on bars-engine's history export (#340). Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-fruit-is-his",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A seed bears fruit when an outside event happened (sent, merged, done with a link) and you mark it; a stage the council moves it to is not fruit. Letting a task go needs no reason and stops carrying and resurfacing it.",
+   "why": "The ontology's composting decision: a release owes the garden no harvest. bars-engine now offers \"Just let it go\" first (#340). Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-task-not-bar",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "A commitment becomes a BAR only when you keep it as one.",
+   "why": "The ontology's BAR scope: capture creates lineage, not an obligation, and a task is an obligation. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ttv-one-store",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "ttv-loop 1",
+   "auto": true,
+   "pos": "Next build: the board's seal writes each item to bars-engine as a task, so every commitment carries one id from the morning to its thread, and alignment is stored as links you accept.",
+   "why": "Today one commitment can become six unlinked records (a task, a store line, an alignment line, a BAR, a board row, a thread). Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ss-three-states",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Every spirit and ally shows one of three states, dissatisfied, neutral or satisfied, read from the satisfaction number it already has (1 to 10). 1 to 4 is dissatisfied, 5 to 7 neutral, 8 to 10 satisfied, so the line sits where sg-overcharge already puts it (an ally heeds you fully from 5). The state is a state, never a trait: the same spirit moves between all three in play. The three moods design.md gives every spirit (charged, steadied, allied) become these three looks: charged is dissatisfied, steadied is neutral, and the allied mood is satisfied, while \"allied\" stays the word for the bond. No new inventory: 25 species with three moods each was already the count. Band edges are placeholders. This stands unless you flip it.",
+   "why": "Your message, 16 October: \"we need to also introduce the Satisfied, Dissatisfied, and Neutral versions of it in whatever intake it's coming in as.\" The words are Emotional Alchemy's own three altitudes of a channel (bars-engine src/lib/quest-grammar/emotional-vector-resolver.ts). Satisfaction already does Monster Rancher's loyalty job (spirit-growth-by-training, sg-overcharge), and demo-spirit-count and demo-daemon-count already gave every spirit three moods. The ontology keeps states apart from traits (QUICKSTART, AQAL attention). Pass: council/passes/6FACE_PASS_spirit-states1_2026-10-16.md."
+  },
+  {
+   "id": "ss-intake-start",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "A spirit's first state comes from what its intake already records, and no intake asks a new question. From the spirit generator: a charge within your limit joins neutral (satisfaction 5); a charge past it joins dissatisfied (satisfaction 1, sg-overcharge). No charge joins satisfied, because a charge is a dissatisfied configuration when it comes in. A wild spirit in the forest or the ring is met dissatisfied: it is the charge before anyone has listened to it. In the cave, a spirit leaves the W.A.V.E. in the state your own answer gives it: satisfied only if you named a gold state (ff-name-what-is-here), neutral if you named none, and dissatisfied if you said it is still too much. A spirit that leaves dissatisfied is a valid ending and says nothing about you. The charge's own record is never rewritten. This stands unless you flip it.",
+   "why": "\"in whatever intake it's coming in as\". The resolver steps a charge that reads satisfied back to neutral (\"can't start from satisfaction\", emotional-vector-resolver.ts:147), and the ontology calls the dissatisfied configuration the charge's formal record and forbids folding satisfaction into it (design-ontology-model-v0.1.md, rule 26). Your own report has primary authority over whether you are satisfied, and a system trace never proves it (model, evidence table), so the cave reads your answer, not the charge number."
+  },
+  {
+   "id": "ss-markers",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Satisfaction owns its own layer of the look and repaints no other. It shows through four markers: stance, aura, eyes and core, and surface. Each state shows on at least two that are not colour, so it reads at the 96 px sprite and for a player who cannot tell the colours apart. Dissatisfied: the family's held stance pushed to its extreme, a ragged aura that pulls in and flickers in a darker, denser shade of the element, narrowed eyes with a hot glint, a cracked core that stutters, and on the living creature and the ally form a rougher coat with raised scales, plates or fur. Neutral: today's renders. Satisfied: the stance completed and open, a slow, smooth, wider aura with a bright rim, soft eyes, a whole core with a steady glow, and a smooth coat. The forms thin the list: the gas shows aura only (jagged fast swarm, steady drift, slow glowing drift), the core shows the core, the hologram shows aura and scanline (torn and static, steady, clean), and the creature and ally form show all four. The states are built on the same model as a rig pose and material settings, never as a second model. This stands unless you flip it.",
+   "why": "\"The creatures should be darker and more feral in dissatisfaction. We'll need to think through design markers that show the state.\" sg-look-layers gives each input one layer; sg-assets-modular gives one rig per family; round 2 of the spirit art found an aura alone is lost at 96 px, so no state rests on one marker."
+  },
+  {
+   "id": "ss-feral-stance",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "A dissatisfied spirit's stance is its family's daemon movement held stuck, from the gesture table (council/daemons/GESTURES.md), pushed further than the daemon itself holds it. The Protector's Shellback braces into its push: forelegs planted wide, head drawn low under the shell's rim, shell tipped forward like a shield. A satisfied spirit wears the same movement completed, the push that has landed and let go. The Romp, the Player's family, has all six movements open, so a dissatisfied Romp turns skittish and wild (ears flat, hackles up, tail lashing, weight on its back feet) rather than borrowing another daemon's hold. Every living creature stays on its own four feet (sg-romp-four-feet), so each stance is a pose the family's rig can walk out of. This stands unless you flip it.",
+   "why": "Your words of 14 October: daemons \"emerge as a way to protect the vulnerable child through egos development until they need to be renegotiated with and integrated for the child to move into adulthood. This is essentially one of the things we are gamifying.\" A spirit's family is its daemon (sg-body-from A), so a feral spirit is a protector held past its time, not a corrupted one. dg-six-movements gave each daemon its movement."
+  },
+  {
+   "id": "ss-not-veiled",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Dissatisfied darkness is dense and solid. A veiled spirit (perceptual shadow, polarity above 0) is faint and fogged, and a flooding one (polarity below 0) glares too big and too bright. No marker is shared among the three. While a spirit is veiled its state does not show: the card reads \"can't see it yet\", and the state appears once it is revealed, the same moment it takes its element (sd-shadow-skip, his steer). This stands unless you flip it.",
+   "why": "ps-polarity already darkens a veiled spirit's aura (\"at 10 only a faint outline shows and its aura is dark\"), so \"darker\" for dissatisfied would read as hidden. bars-engine #326 and #327 read polarity; a state shown through a veil would tell the player what the shadow hides."
+  },
+  {
+   "id": "ss-shift-up",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Satisfaction rises through moves the record already has, and they now show. Spars that listen, an offered shard (sg-loot-offering), and feeding a wild spirit the element that generates its own (enc-steady-rests) each raise it a step. Each element's Transcend move (Step Through for Metal, Reclaim Meaning for Water, Commit to Growth for Wood, Achieve Breakthrough for Fire, Stabilize Coherence for Earth) is the spirit's tending move: once a fight, it raises its own satisfaction by two. It falls through play: Fight alone, an overcharge's spill, and a spirit left out of every spar for a week of play. The look changes only when the number crosses a band edge, with one line saying what moved it (\"Your Shellback settled: three spars that listened\"). Numbers are placeholders. This stands unless you flip it.",
+   "why": "\"Downwind there will need to be moves that allow a player to shift a spirit\". The fifteen canonical moves name five Transcend moves as the within-channel completion (bars-engine src/lib/quest-grammar/move-engine.ts), and sg-loop-trains already lowers satisfaction for Fight alone. Whether a move may also push a spirit down is your question ss-push-down."
+  },
+  {
+   "id": "ss-cross-element",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Only the living creature and the ally form take on moves of other elements, and the state sets how far they reach. Dissatisfied: its signature move and its own element's moves only. Neutral: it may also learn and use moves of the two elements on its generating cycle (the one that feeds it and the one it feeds; wood learns from water and fire). Satisfied: it may also use the two on its controlling cycle, so a satisfied spirit can reach all five. A spirit keeps a move it learned when it drops a state, but cannot use it until it climbs back. Generating moves give a point of the fight's energy and controlling moves cost one, as the canon's economy has it. The gas, the core and the hologram keep to their own element. This stands unless you flip it.",
+   "why": "\"OR in allied or creature state able to take on moves from other elements\", and your steer on sf-ally-moves: \"move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move\". The canon's five Generative and five Control moves join every pair of elements once (move-engine.ts), so the two cycles cover all four other elements between them and nothing new is invented."
+  },
+  {
+   "id": "ss-feral-trade",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "A dissatisfied spirit is a real choice to fight with, not only a penalty. Its signature move lands harder (one more Power step), while it still heeds you only every other turn (sg-overcharge) and reaches no other element. A player may keep a spirit feral on purpose. The copy never calls it bad, broken or corrupt; it is unsettled, and its card says what it is protecting. Numbers are placeholders. This stands unless you flip it.",
+   "why": "If dissatisfied is only worse, every player flees it, and the state becomes a meter of how well they are doing, which the ontology forbids (development is never whole-person rank; refusal and no-shift stay valid). Monster Rancher's loyalty already works this way: a disobedient monster is still strong."
+  },
+  {
+   "id": "dp-centre-asked",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "The daemon path",
+   "auto": true,
+   "pos": "At the centre the child is seen first: nothing has to be asked, and \"Be with it\" ends the visit with nothing asked. If you choose to ask, it is asked your six Player questions (what are you learning, growing, feeling, exploring, how do the other daemons get in your way, what would happen if you weren't there), gently, one at a time, each with cards and your own words, and any can be let go. There is no charge to read and no permission to win. The voices you met on the way stand around the child as spirits, and one it names as in its way comes closer. This stands unless you flip it.",
+   "why": "dp-centre (13 Oct) said \"The child is seen, not questioned\"; your Player set in daemons/questions.js (14 Oct) is newer and in your words, so both hold: seen first, asked only if you choose. The ontology: intimate disclosure is not progression currency, and rest or no-shift is a valid end. Built in bars-engine content/ontology-game/bigmind/bigmind.js (the centre)."
+  },
+  {
+   "id": "sl-resting-not-compost",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "Setting a task aside puts it in your seed library as resting, which is not composting: a resting task stays yours to draw back, a composted one is released and owes nothing.",
+   "why": "Your addition to ttv-fruit-is-his: \"We should also be able to defer those into a seed library that can be drawn from\". The ontology keeps resting and composted as separate work dispositions. Built in bars-engine #342. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-no-pressure",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "While a task rests it carries no pressure: out of the day's count, never carried, no reminder or expiry, and nothing brings it back unasked. The library opens only when you open it, and its closed row shows no count.",
+   "why": "The ontology's composting rules (no hidden active backlog; silence is not composting) applied to a deferral. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-draw-same-task",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "Drawing a seed moves the same task, with its quest or BAR and notes, into today as a commitment. It counts toward the day's five and is not a carry. Setting aside and drawing each leave a dated note on the task.",
+   "why": "Keeps one id from the morning to its thread (ttv-one-store) and keeps test T4's carry count honest. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-board-reads-library",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "The library lives in bars-engine. Next build: the board shows it on the Morning tab and offers Set aside beside each intake item, once bars-engine #341 and #342 merge. Test SL1 on 2026-10-30 counts set-asides, draws and let-gos.",
+   "why": "Drawing and letting go stay in one store, bars-engine; the board reads GET /api/tap-the-vein/seed-library with the council token. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-resurface-ladder",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "A resting seed comes back on a spaced ladder: 3 days after you set it aside, then 7, 14, 30 and 60 days after each return, then every 90 days for as long as it rests. It shows at the top of the Morning tab and in Tap the Vein for three days, with Draw into today, Keep resting and Let go. Keeping it resting, or passing it by, sends it one rung further. At most three come back on one day.",
+   "why": "Your overrule of sl-no-pressure: \"We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board\". Widening intervals are spaced repetition's core; a three-day window keeps one skipped morning from losing a seed; the cap of three keeps a large library from flooding a morning. Built in bars-engine #345 and Six-faces-council #197. Test SL1 on 2026-10-30 adds which rung each draw came from. Source: docs/seed-library.md"
+  },
+  {
+   "id": "sl-resurface-not-a-draw",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "seed library",
+   "auto": true,
+   "pos": "Coming back is being seen, not being drawn. A resurfaced seed stays resting: out of the day's five and never a carry until you draw it, and silence never composts it. Drawing it is still the same task (sl-draw-same-task).",
+   "why": "Reconciles the ladder with sl-resting-not-compost and sl-draw-same-task, which you let stand: the ontology's \"reactivation requires a new explicit decision\" and \"silence is not composting\". Source: docs/seed-library.md"
+  },
+  {
+   "id": "sg-tinker-family",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "spirit round 13",
+   "auto": true,
+   "pos": "The Fixer's body family is the Tinker, with three animal bases: the raccoon, the beaver and the aye-aye, three animals that fix with their hands. The raccoon is built first (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85, version 16). Its gas reaches forward as an arm that splays into five fingers, its core is a faceted cog, and its ally form is a tinkerer in apron, tool belt and goggles. Its states are the Fixer's reach: dissatisfied holds the reach and pushes it further, satisfied has finished it. Family names are drafts. This stands unless you flip it.",
+   "why": "The urge picks the family (sg-body-from A) and the Fixer is the Chapter 1 demo's boss, so his family came next. The board's own loot example already names \"a Tinker's claw shard\" (sg-loot-offering), and the Fixer turns a feeling into a problem to solve, so the bases are animals that work with their hands. No art existed, so the image prompts were written first: council/loops/prompts/spirit-generator-r13.md. A blind sort of its fifteen state sprites got 15 of 15."
+  },
+  {
+   "id": "bmt-feel",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "What the cave should feel like: being tested by something old in you that has a reason to doubt, and then being let in by it. Accompanied without being watched, tenderness at the centre, and back in your ordinary day at the end with one move you can use. This stands unless you flip it.",
+   "why": "Your note asked what we want to feel. The Shaman named it from the facilitator's four jobs (pace, permission, witness, the return) and the Shaman lesson \"The player leaves with a move they can use.\" Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-burden-trust",
+   "faces": [
+    "architect"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Charge is the voice's burden in this sitting; trust is its relationship with you, kept across sittings. A voice can be heavily charged and trust you, or calm and not trust you yet. This stands unless you flip it.",
+   "why": "Your words: \"To get the voices to trust you and remove their burden is a part of the game.\" Today one number does both jobs (bigmind.js, READY at 3). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-three-moves",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Trust is earned by three actions taken from the voice's seat. Can you: do what it fears you can't (sit with what it guards, hold a W.A.V.E., wait through its refusal). Will you: make it one small promise that resting or leaving can keep, which the cave checks when you come back. Are you good: honour its refusal and tell it, in a card or your own words, what you would do for it. No answer is the right card, and how much you say buys nothing. This stands unless you flip it.",
+   "why": "Your \"Can you do x will you do x and do you seem like a good person\" and \"actions the player can take from the perspective of the daemon\". The ontology: relationship needs kept commitments, demonstrated capability and the possibility of refusal; intimate disclosure is not progression currency (QUICKSTART). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-two-roads",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "A voice offers to step aside when its charge is 3 or below, as now (dp-pass-rule), or when it has seen all three kinds of trust. It can still refuse on either road, and its refusal says what it hasn't seen yet (\"I don't know that you can hold it\"). This stands unless you flip it.",
+   "why": "Keeps your charge rule and adds trust as the game you asked for. The Challenger's breakpoint: a voice that must step aside once trust is full is a vending machine, so refusal stays open. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-good-in-words",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Benevolence, \"are you good\", is the voice's own read of you, said in its words and stance. It is never a meter you fill. This stands unless you flip it.",
+   "why": "Your excavation answer (ontology/v0.1/source/aesthetic-source-research-round-1.md, response 6): \"For the game mechanic, leave benevolence out because it is too difficult to gamify responsibly.\" Today's note puts it back in trust; this keeps it in trust without a score. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-never-falls",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Trust never falls. Rest, Not now, silence and \"I don't know\" leave it where it was. A promise not yet kept stays visible as not yet kept, and the voice says so when you come back. This stands unless you flip it.",
+   "why": "bm-decline (declining is a full move) and the ontology's lifecycle grammar (rest, refusal and no-shift may validly end an encounter). The Challenger's option for keeping stakes without punishing rest. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-ontology-local",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Three-part trust is a game-local extension in the cave. The ontology's TrustState stays capability and integrity, a reconciliation note records the difference, and the ontology changes only if you say so. This stands unless you flip it.",
+   "why": "The ontology defines TrustState as \"situated evidence of capability and integrity\" (design-ontology-model-v0.1.md line 95). docs/ontology-in-flows.md: a conflict goes on the board and Claude threads never edit ontology/. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-meeting-spirit",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "When you meet a voice, the game asks how you feel meeting it, with \"no word yet\" as an equal answer. Your answer spawns a spirit that walks the cave with you; a \"no word yet\" spirit is grey until named and plays the same. This stands unless you flip it.",
+   "why": "Your words: \"The game can ask the player how THEY feel about encountering a part and this would spawn a spirit.\" bms-spirits-follow and the grey \"A charge\" route already exist. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-show-spirit",
+   "faces": [
+    "architect",
+    "regent",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "You can choose to show one of your spirits to a voice. Showing it counts once as \"can you\": it shows the voice what you have already worked through. How many spirits you carry adds nothing, and spirits never move a voice's charge. This changes half of bms-voices-respond, which said spirits never move trust. This stands unless you flip it.",
+   "why": "Your words: \"the spirits can also show they daemons how resources the players are.\" The Challenger's breakpoint: if every sit-down counted, sitting down would become farming, so only a spirit you deliberately show counts. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-321-offer",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "A full 3-2-1 with any voice is offered at its chamber (\"Talk it through\") and from its seat, in cards, gesture or your own words. It stays skippable and never gates stepping aside. Being it opens only with the voice's permission. This stands unless you flip it.",
+   "why": "Your \"let people do full 321 dialogues with each part\", and your 12 October rule: \"321s are optional and should have an option to skip\". It reuses the cave's typed 3-2-1 (K.talk321). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-hidden-next",
+   "faces": [
+    "challenger",
+    "regent",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "The next voice is hidden until you reach its chamber. The end of each hallway shows the shut mouth breathing, with its light and a sound behind it. Voices you have already met still wait by the wall. This stands unless you flip it.",
+   "why": "Your words: \"giving the daemon too early ruins the magic of this.\" Not now still sits at every first meeting, so hiding the figure costs no safety. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-free-walk",
+   "faces": [
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Walk or run freely through every hallway; tap-to-walk stays as a one-touch route. Each chamber threshold still stops you, and nothing reads your speed as meaning anything. This stands unless you flip it.",
+   "why": "Your words: \"open it up to free walking so players can walk or run to the next space\". Free walking already runs in the WAVE room (bars-engine #317). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-return",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "A closing rite at the mouth that you can skip: thank the voices, take one breath, return to the WAVE room, with one plain line naming the move you practised. This stands unless you flip it.",
+   "why": "A facilitator holds pace, permission, witness and the return; the game holds the first three and nothing yet holds the return. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-ask-again",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Every visit asks \"May I speak to...\" again, whatever the save holds. This stands unless you flip it.",
+   "why": "QUICKSTART: a ConsentRecord is evidence of a past grant, not permanent proof of present willingness. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-build-order",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "The builds run one thread and one pull request each: the hidden next voice with free walking first; then trust; then the full 3-2-1 and the meeting spirit; and the art alongside (the WARP daemon bodies from bars-engine #328 wired in first, then dressing the cave, under a phone load budget, with the trust stances added once the trust build names them). This stands unless you flip it.",
+   "why": "All the cave builds change bigmind.js, so they go in order. The Challenger: no trust stance goes into the models before the trust build names the stances. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-honest-moves",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Trust actions can be taken anywhere on the path: in the hallway, at the mouth, while you ask, and from the voice's seat. Each voice has a right answer, which is what it needs from you. An action counts only when it is played honestly, and that shows as the voice's charge easing on the next check-in. A right card with no easing moves nothing. This stands unless you flip it.",
+   "why": "Your steer on bmt-three-moves (overruled, 22:07): \"You can take these actions before you get in the voices seat. I do think there is a right answer but only honest plays should get you progress as made manifest through charge metabolizing\". The charge is your report, so honesty rests on your report, as the ontology's evidence rules say it must. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-keep-talking",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "When a voice is willing to step aside, you can keep talking with it: its questions, the full 3-2-1, or simply staying with it. Walking on is your choice, and the voice waits until you make it. This stands unless you flip it.",
+   "why": "Your steer on bmt-two-roads (stands, 22:07): \"I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-goodness-models",
+   "faces": [
+    "diplomat",
+    "shaman",
+    "architect"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Each voice has its own picture of what good looks like. Drafts: for the Protector, good keeps us safe; the Controller, good meets the standard; the Skeptic, good is honest about what is here; the Fixer, good doesn't leave what's broken; the Emotional Body, good feels it all the way; the Victim, good hears the whole story; the Damaged Self, good doesn't let someone else take the hit. You earn its read of you in two ways: act on its picture honestly, or show it where you already share that picture from where you stand (\"You keep us safe by watching. I keep us safe by going slowly.\"). Its read still shows only in its words. The seven pictures are drafts. This stands unless you flip it.",
+   "why": "Your steer on bmt-good-in-words (stands, 22:08): \"They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs\". The pictures are drawn from each daemon's row and your question sets in daemons/questions.js. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-trust-falls",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Trust can fall. A broken promise lowers that voice's will mark, and pushing past its refusal lowers its read of your goodness. Rest, Not now, silence and \"I don't know\" never lower it. A fall can be repaired: owning it to the voice (\"I said I'd come back, and I didn't\") is an honest move and counts as one. Each voice keeps its marks as kept, broken and repaired. This stands unless you flip it.",
+   "why": "Your steer on bmt-never-falls (22:09): \"I think trust should be able to fall. This is the accountability matrix\". Rest and Not now stay safe on bm-decline (declining is a full move). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-spirits-vouch",
+   "faces": [
+    "shaman",
+    "architect",
+    "regent"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Your spirits vouch for you. The spirit born when you met a voice becomes your ally once that voice trusts you, and it is proof you learned what that voice needs. At each later chamber the voice asks who vouches for you, and your allied spirits answer in that voice's terms (\"The Protector's spirit says you kept watch.\"). At the mouth of the centre they vouch together, like the badges shown at Victory Road. How many spirits you carry adds nothing; what vouches is the alliance. This stands unless you flip it.",
+   "why": "Your steer on bmt-show-spirit (overruled, 22:11): \"The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "rc-is-relationship",
+   "faces": [
+    "shaman",
+    "architect",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The creature is the relationship itself, the third presence two people tend. The fears and default assumptions the pasted summary calls Freds already have a home: they are each person's daemons. They reach the garden only as spirits a player chooses to bring, or as the creature's veiled parts that a check-in can reveal. What the Big Mind cave does inside one person, the garden does between two. This stands unless you flip it.",
+   "why": "Your words: \"a creature in the LL intersubjective space that players co-tend with the people they are in relationship with.\" Nothing public confirms what Fred stands for in the book (the only public line, Multiamory episode 103, says a blue furry monster named Fred \"can help change the way you think about your romantic relationships\"). Veiled parts follow ss-not-veiled. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-joint-checkin",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Only a check-in both people hold changes the shared creature. Anything one person enters alone is their own picture. Between check-ins the creature shows its last shared reading and how long ago it was, so it reads unchecked, never sick. This stands unless you flip it.",
+   "why": "The ontology: relational attestation establishes another person's experience, never the first person's inward truth (QUICKSTART, Evidence authority). The Architect's third state between healthy and sick. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-pictures-private",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Each person can tend two pictures of their own: the creature as they imagine it, and the other person as they imagine them. Both stay on that person's device and are never scored. At a check-in either may show a picture, as you show a spirit to a voice. Drift is the gap between two shown pictures, shown as a difference and never as an error; if either holds back it reads \"not compared\", and holding back costs nothing. No AI guesses either person. This stands unless you flip it.",
+   "why": "Your words: \"tend to their projection of their partner AND their own concept of the Fred so they can see when what's being imagined is drifting.\" All five faces put privacy first: scoring my picture of you against your report makes your inner life the answer key (QUICKSTART, Privacy and consent; constitution 10; bmt-show-spirit). Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-feeds",
+   "faces": [
+    "architect",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The creature is fed by agreements kept, check-ins of any length or kind, breaks owned and repaired, and charge a person has worked through and chooses to offer. A tap, a card, a gesture or a paper drawing feeds it as much as a long letter, and nothing shows who fed it. A broken agreement or a push past the other's refusal lowers it, and owning it to the other person repairs it. Rest, silence, \"not now\" and an argument said out loud never lower it. This stands unless you flip it.",
+   "why": "These are the cave's trust rules carried over (bmt-trust-falls, bmt-never-falls). \"Intimate disclosure is not progression currency\" (QUICKSTART, Session depth). Whether plain neglect can also make it stale is the open question rc-stale. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-offer-received",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "A charge one person offers to the shared garden is shown to the other person before it lands, and they can decline it. A charge about the other person never arrives unannounced. This stands unless you flip it.",
+   "why": "The Challenger's desk check, run in the pass, found this missing: a grievance fed into the shared garden would reach the other person without their say. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-exit",
+   "faces": [
+    "regent",
+    "diplomat",
+    "challenger",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The shared creature opens only when both people say yes that session. Either can rest it or leave alone, at any time. Leaving composts it, with no death and no blame, and each person keeps only their own pictures. Exits leave no trace: no read receipts, no last-seen times, no record of who left. A player who says the relationship is hurting them gets a silent exit and a line to outside help; the other sees an ordinary departure. This stands unless you flip it.",
+   "why": "Consent is authorization now, never a stored yes (QUICKSTART, Privacy and consent; bmt-ask-again). Composting is a valid completion. The Diplomat's harm path, recommended A, held as a position because it can change later without loss. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-spirits-visit",
+   "faces": [
+    "architect"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Your own spirits can visit the shared garden and stay yours. The other person can see them and cannot command them. This stands unless you flip it.",
+   "why": "Your words: \"Players can bring their own spirits to the collective garden.\" The ontology: \"Access to an ally is not command.\" Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-agreements-bars",
+   "faces": [
+    "architect"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "An agreement is a BAR planted in the pair's own garden, with a life: drafted, proposed, agreed by both, up for revisit, then retired or composted. That carries the book's living agreement in the council's own words. The shared garden gets its own id, and only its members can plant there. This stands unless you flip it.",
+   "why": "Today every garden is personal (bars-engine src/lib/lenses/ensure.ts, src/lib/garden/plant.ts), and the planting writer does not check membership, so a shared garden makes that check load-bearing. QUICKSTART defines BAR scope. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-goal",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Keeping the relationship healthy means keeping its agreement honest and current. An honest ending, renegotiated or closed with a closing rite, is a valid completion and never a loss. This stands unless you flip it.",
+   "why": "Your words: \"The game is to keep the relationship healthy.\" Strip the image and a health meter is a guilt meter one partner can point at (the Challenger's dissent); the ontology lets endings and composting complete (QUICKSTART, Lifecycle grammar, Composting). Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-credit",
+   "faces": [
+    "regent"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The creature is never called Fred. Eri Kardos's Relationship Agreements (2016) is credited in the council's own words, and the book's meaning of Fred stays marked unconfirmed until someone reads it. Any public mention of her, including the Kickstarter, waits on your word. This stands unless you flip it.",
+   "why": "You asked for another name. Copying her text is out; naming a person in public is reserved to you (council/faces.yaml). Test T3 reads the source by 10-23. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-order",
+   "faces": [
+    "regent",
+    "challenger",
+    "sage"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Nothing is built from this pass, and the creature stays out of the Chapter 1 demo. Its first home is Friendcraft's redesign pass, which already plans BARs for friendship and basic moves rethought with emotional alchemy. The next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.",
+   "why": "el-demo-scope keeps the demo to the cave; st-cap-games-only puts Flirtcraft and Friendcraft outside the cap; council/callsheets/friendcraft.md has the redesign waiting. Four of five faces would build nothing before a paper play. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-spark",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "You can start alone. What you tend then is a spirit made of the charge you project onto someone you are not yet in a relationship with, which suits Flirtcraft most. When that person joins, the spirit becomes your Between, and its history comes with it. This stands unless you flip it.",
+   "why": "Your steer on rc-who-holds: \"you can start alone tending to a spirit that's the charge that you project on someone you aren't in relationship with. When the other person joins it becomes a between\". Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-tend-alone",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Either person can tend the Between alone, at any time. What one person does alone waits in the garden as an offer, and the Between itself changes only when the other says yes. Each person can see how the other has been holding space while they were away: what they planted, watered or offered, shown as the acts themselves, never as a count or a comparison of who did more. This stands unless you flip it.",
+   "why": "Your overrule of rc-joint-checkin: \"people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren't there\". The no-count rule keeps the Diplomat's scoreboard warning. Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-stale-neglect",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Left untended for a while, the Between goes stale: it dims and its garden dries. It never dies, and either person's tending airs it out. Staleness belongs to the pair and never names who was away. This stands unless you flip it.",
+   "why": "Your answer B on rc-stale (plain neglect too). Never dying and naming no one keep the Challenger's guilt-meter warning. Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-end-together",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Tending runs at each person's own pace, and ending the relationship formally takes both people's consent. Each person chooses which parts of the Between to keep. Each leaves with the Between copied, history and all, and the shared garden either closes or turns into a garden for a different kind of relationship. This stands unless you flip it.",
+   "why": "Your overrule of rc-exit: \"you do need consent to formally end the relationship and take whatever parts of the between you want to keep [...] the relationship between stays with the players (copied with its history) but the garden is shut down (or even changed into another relationship type.\" The silent exit and outside-help line for someone being hurt stay from rc-exit. Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-demo-garden",
+   "faces": [
+    "regent",
+    "architect",
+    "sage"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Build a demo garden now, with no paper play first. It is one page both people open from the same link, alone or at the same time, holding one shared Between, its garden of BARs and a log of each person's tending. When you open it, the page asks you about the one relationship you want to work on, and that relationship lives only in the garden's store. Pictures of the other person stay in each person's own browser. No AI runs in play. This stands unless you flip it.",
+   "why": "Your overrule of rc-order: \"We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players\". A page with a shared store is the fastest route both of you can reach (the board already runs on one). Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
   }
  ],
  "questions": [
@@ -14381,6 +15112,223 @@
      "v": "by-hand",
      "label": "Keep posting each clip on its day",
      "c": "Nothing changes, and the posts keep depending on finding the moment each day."
+    }
+   ]
+  },
+  {
+   "id": "pa-x-api",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "podcast pipeline 2",
+   "q": "Should X posts go out by the same timer? The council recommends keeping X by hand until the clips' numbers show X brings anyone.",
+   "why_you": "It is money and posting under your name. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md",
+   "not_before": "Pass one kept X out of Meta Business Suite, and nothing had priced X's API until today.",
+   "options": [
+    {
+     "v": "by-hand",
+     "label": "Keep X by hand (council lean: Challenger, Regent)",
+     "c": "It costs nothing. You post on x.com, or use its own schedule button in the same sitting."
+    },
+    {
+     "v": "timer",
+     "label": "Add X to the timer",
+     "c": "About $0.20 a post with a link by postproxy.dev's 2026 figures, so about $1 an episode, bought as X credits. You make an X developer account and its keys go into GitHub secrets the same way."
+    }
+   ]
+  },
+  {
+   "id": "ss-push-down",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "spirit states 1",
+   "q": "Should a fight move be able to unsettle a spirit, pushing it from satisfied toward dissatisfied? The council recommends A.",
+   "why_you": "Your message says \"moves that allow a player to shift a spirit from satisfied to dissatisfied\". The record answers the shift upward (ss-shift-up), and it lets play lower satisfaction, but nothing in it says whether you want a move made for pushing a spirit down. Only you know whether that sentence meant it as written, and the answer adds or leaves out a kind of move.",
+   "not_before": "Raised by spirit states pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Yes, on wild and rival spirits only",
+     "c": "Fights gain an unsettle move per element (its controlling cycle). A riled wild spirit hits harder and is easier to read but harder to befriend. No move ever unsettles your own ally, and the cave's W.A.V.E. has none."
+    },
+    {
+     "v": "B",
+     "label": "B. No, play lowers it, no move does",
+     "c": "Only Fight alone, an overcharge's spill and neglect lower satisfaction. Fewer moves to build and balance; the downward shift stays a consequence, never a tactic."
+    },
+    {
+     "v": "C",
+     "label": "C. Yes, on any spirit, your own too",
+     "c": "A player can rile their own ally for the feral trade's harder hit. Most freedom; the risk is a move that turns the player's own charge against them, so its copy and its cost need their own pass."
+    }
+   ]
+  },
+  {
+   "id": "bmt-trust-shown",
+   "faces": [
+    "diplomat",
+    "architect",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "q": "How should a voice's trust show in the Big Mind cave, now that you want it to feel more like a game? The council recommends A.",
+   "why_you": "You asked for trust \"so that it feels like more of a game\", and in the ontology excavation you ruled \"leave benevolence out because it is too difficult to gamify responsibly.\" Only you know how game-like you mean it, and the answer decides what the trust build draws.",
+   "not_before": "Raised by big-mind trust pass 1, 2026-10-16, on your walkthrough notes of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Marks for can and will, good in words",
+     "c": "Two marks beside each voice fill as it sees you keep promises and do what it feared you couldn't, each with a plain line of what it saw. Whether you seem good shows only in its words and stance. Game-like, and keeps your benevolence ruling."
+    },
+    {
+     "v": "B",
+     "label": "B. Three marks",
+     "c": "Can, will and good each get a mark. The most game-like and legible. Goodness becomes something you fill, which your earlier ruling ruled out."
+    },
+    {
+     "v": "C",
+     "label": "C. No marks, words and stance only",
+     "c": "The voice says what it has seen and its body changes; the charge stays the only number on screen. Most mysterious, least like a game, and harder to know what to try next."
+    }
+   ]
+  },
+  {
+   "id": "bmt-solo-depth",
+   "faces": [
+    "regent",
+    "challenger",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "q": "Once the Big Mind cave reaches players other than you, how far may someone go alone? The council recommends A.",
+   "why_you": "Your note wants it \"played alone but still have the depth\". Your 4 October board answer (bm-safety) said the free daemon experience stops before the Damaged Self and \"the deeper voices belong to a facilitated session.\" Weighing those is about safety and consent, which are yours.",
+   "not_before": "Raised by big-mind trust pass 1, 2026-10-16. Until today the cave had one player, you.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. The whole path, with check-ins",
+     "c": "A lone player can reach the child, behind the existing asks before the Damaged Self and the centre, the crisis line at the mouth, and the new return rite. Fullest depth; bm-safety stays as the coaching site's rule only."
+    },
+    {
+     "v": "B",
+     "label": "B. Alone stops before the Damaged Self",
+     "c": "A lone player meets the first five voices; the Damaged Self and the centre open in a facilitated session. Safest, and it holds bm-safety everywhere; most players never reach the child."
+    },
+    {
+     "v": "C",
+     "label": "C. The whole path after one full visit",
+     "c": "The first visit stops before the Damaged Self; a player who comes back opens the rest. Depth is earned by return; one more rule to build and explain."
+    }
+   ]
+  },
+  {
+   "id": "bmt-accountability",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "q": "Is \"the accountability matrix\" a framework of your own the cave should follow? The council recommends A, and the trust build uses it until you say otherwise.",
+   "why_you": "Your steer on bmt-never-falls says \"This is the accountability matrix\". Nothing in the council's record, the ontology or the three repos names an accountability matrix, so only you know whether it is a framework with its own rules. The answer sets what makes trust fall and come back.",
+   "not_before": "Raised after your board answers of 2026-10-16, 22:09.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. The council's reading",
+     "c": "Each voice keeps can, will and good as kept, broken or repaired. A broken promise or a push past a refusal lowers a mark; owning it to the voice repairs it. Built now, in the trust build."
+    },
+    {
+     "v": "B",
+     "label": "B. A framework of mine",
+     "c": "Write or paste it in the steer box. The trust build holds the falls until it is read, then follows your framework."
+    }
+   ]
+  },
+  {
+   "id": "rc-name",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "q": "What should the co-tended creature be called, now that Fred is out? The council recommends A.",
+   "why_you": "You said \"definitely want another name\", and naming is yours. If you have the book, a line in the steer box on what Fred stands for there settles test T3 too.",
+   "not_before": "Raised by relationship creature pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. The Between",
+     "c": "The family name is the Between (\"we tend our Between\"), and each pair names its own creature once it settles, as spirits get breed names. Works for friends as well as lovers."
+    },
+    {
+     "v": "B",
+     "label": "B. The Kith",
+     "c": "An old word for the people you belong with. Warmer and stranger; reads well in Friendcraft."
+    },
+    {
+     "v": "C",
+     "label": "C. My own word",
+     "c": "Write it in the steer box."
+    }
+   ]
+  },
+  {
+   "id": "rc-stale",
+   "faces": [
+    "challenger",
+    "diplomat",
+    "shaman",
+    "architect"
+   ],
+   "pass": "relationship creature 1",
+   "q": "Can the creature go stale when nobody tends it? The council recommends A.",
+   "why_you": "The faces split. The Challenger and the Shaman say any decay from absence turns love into a chore and the creature into a guilt meter. The Diplomat says a creature that can go stale is a real stake worth keeping. Only you know how much the game should push.",
+   "not_before": "Raised by relationship creature pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Only a broken agreement",
+     "c": "It goes stale only when the pair miss a check-in rhythm they agreed to, which is itself an agreement. Owning it airs it out. Absence with no agreement never touches it."
+    },
+    {
+     "v": "B",
+     "label": "B. Plain neglect too",
+     "c": "Left alone for a while it goes stale, never dies, and a check-in airs it out. More of a game; risks someone pointing at it."
+    },
+    {
+     "v": "C",
+     "label": "C. Never",
+     "c": "Nothing lowers it except a broken agreement or a push past a refusal. Safest; the least pull to come back."
+    }
+   ]
+  },
+  {
+   "id": "rc-who-holds",
+   "faces": [
+    "architect",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "q": "Who can hold a creature together, and can one person start alone? The council recommends A.",
+   "why_you": "Your message names three games and \"the people they are in relationship with\", with no number. bars-engine has only personal gardens. The answer sets the shared garden's shape and who plays the first paper test.",
+   "not_before": "Raised by relationship creature pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Two people, one can start",
+     "c": "Any two people of any relationship. One can start and invite; the creature waits unborn, as gas, until the other joins and the first check-in runs. Groups come later on the same design."
+    },
+    {
+     "v": "B",
+     "label": "B. Groups from the start",
+     "c": "Two or more, so a friend circle or a team of allies can hold one. Needs every member's consent and rules for one leaving."
+    },
+    {
+     "v": "C",
+     "label": "C. Both must join first",
+     "c": "Nothing exists until both have joined. Cleanest consent; nothing to do while you wait."
     }
    ]
   }
@@ -23909,6 +24857,840 @@
      "architect"
     ],
     "pass": "board plumbing"
+   },
+   "of-load-where-decided": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:13.564Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-callsheet-line": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:22.280Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-compost-split": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:30.713Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-term-check": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:36.146Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-precedence": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:43.580Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-wave-room": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:51.130Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "of-sabotage-offer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:50:57.564Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "ontology flows 1"
+   },
+   "pa-github-timer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:16.114Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-approval-publishes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:21.664Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-token-in-secrets": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:26.047Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-pilot-ep3": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:30.347Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-numbers-auto": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:33.464Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "pa-failure-step": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:51:36.514Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "ttv-board-one-phase": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:56:30.005Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-no-home-yet": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:57:24.321Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "steer": "I think it should introduce a shadow quest to find alignment. The quest should be optional but a shadow quest is the type of gamification that is important for this work. The assumption that work that is unassigned has a shadow alignment that can't be seen and must be emerged",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-align-to-work": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:57:31.288Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-saved-read-scoped": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:58:01.528Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-lens-emerge": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:58:37.723Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "steer": "So we don't want to quite the words directly because the writing is so raw. It's ok for the Council to paraphrase, they only need to cite the date",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-fruit-is-his": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:59:02.416Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "steer": "We should also be able to defer those into a seed library that can be drawn from",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-task-not-bar": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:59:06.416Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-one-store": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:59:10.784Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ss-three-states": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T19:59:43.784Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-intake-start": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T19:59:57.630Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-markers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:09.791Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-feral-stance": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:30.670Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-not-veiled": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:39.693Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-shift-up": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:52.800Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-cross-element": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:59.217Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-feral-trade": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:30:10.323Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "spirit states 1"
+   },
+   "dp-centre-asked": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:30:24.426Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "The daemon path"
+   },
+   "sl-resting-not-compost": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:30:31.377Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "seed library"
+   },
+   "sl-no-pressure": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:31:09.639Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "steer": "We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "seed library"
+   },
+   "sl-draw-same-task": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:31:18.709Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "seed library"
+   },
+   "sl-board-reads-library": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:31:23.110Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "seed library"
+   },
+   "sl-resurface-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:52:53.505Z",
+    "record": "council/ledger/2026-10-16-pull-205300.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "seed library"
+   },
+   "sl-resurface-not-a-draw": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:53:00.668Z",
+    "record": "council/ledger/2026-10-16-pull-205300.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "seed library"
+   },
+   "sg-tinker-family": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T21:55:10.680Z",
+    "record": "council/ledger/2026-10-16-pull-215510.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit round 13"
+   },
+   "bmt-burden-trust": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:06:00.280Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-three-moves": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:07:26.530Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "You can take these actions before you get in the voices seat. I do think there is a right answer but only honest plays should get you progress as made manifest through charge metabolizing",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-two-roads": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:07:59.647Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-good-in-words": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:08:58.191Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "This is tricky. They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-never-falls": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:09:24.870Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "I think trust should be able to fall. This is the accountability matrix",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-ontology-local": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:09:32.798Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-meeting-spirit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:09:40.898Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-show-spirit": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:06.648Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "steer": "I think there is an opportunity to use the spirits and your allied relationship with them AS proof. The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you",
+    "faces": [
+     "architect",
+     "regent",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-321-offer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:16.585Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-hidden-next": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:24.771Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-free-walk": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:32.322Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-return": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:36.872Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-ask-again": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:40.857Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-build-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:47.607Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-feel": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:11:55.375Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-keep-talking": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:15.923Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-goodness-models": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:36.322Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman",
+     "architect"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-trust-falls": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:43.963Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-spirits-vouch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:57.333Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "regent"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "bmt-honest-moves": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:23:06.570Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "rc-is-relationship": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:33:25.109Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-joint-checkin": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:34:24.804Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "I think people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren’t there",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-pictures-private": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:34:39.608Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-feeds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:35:38.273Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "Also fed by metabolized charge offered to the relationship and inspirations and ideas and desires",
+    "faces": [
+     "architect",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-offer-received": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:36:16.137Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "Can show up in the garden but needs to be co-tended for it to affect the between",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-exit": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:06.585Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "People can tend asynchronously, but you do need consent to formally end the relationship and take whatever parts of the between you want to keep. I imagine it as the relationship between stays with the players (copied with its history) but the garden is shut down (or even changed into another relationship type.",
+    "faces": [
+     "regent",
+     "diplomat",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-spirits-visit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:17.034Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-agreements-bars": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:27.985Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-goal": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:35.745Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-credit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:38:44.100Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-order": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:40:01.032Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "“The next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.“\n\nThat’s too slow. We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players",
+    "faces": [
+     "regent",
+     "challenger",
+     "sage"
+    ],
+    "pass": "relationship creature 1"
    }
   },
   "questions": {
@@ -26148,6 +27930,106 @@
      "regent"
     ],
     "pass": "podcast pipeline 1"
+   },
+   "pa-x-api": {
+    "decision": "by-hand",
+    "label": "Keep X by hand (council lean: Challenger, Regent)",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:49:42.046Z",
+    "record": "council/ledger/2026-10-16-pull-175136.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "podcast pipeline 2"
+   },
+   "ss-push-down": {
+    "decision": "C",
+    "label": "Yes, on any spirit, your own too",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T19:51:39.733Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "spirit states 1"
+   },
+   "bmt-trust-shown": {
+    "decision": "A",
+    "label": "Marks for can and will, good in words",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:05:38.808Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-solo-depth": {
+    "decision": "A",
+    "label": "The whole path, with check-ins",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:05:49.406Z",
+    "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "big-mind trust 1"
+   },
+   "bmt-accountability": {
+    "decision": "A",
+    "label": "The council's reading",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:22:09.375Z",
+    "record": "council/ledger/2026-10-16-pull-222306.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "big-mind trust 1, after your answers"
+   },
+   "rc-name": {
+    "decision": "A",
+    "label": "The Between",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:32:04.585Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-stale": {
+    "decision": "B",
+    "label": "Plain neglect too",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:32:11.003Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat",
+     "shaman",
+     "architect"
+    ],
+    "pass": "relationship creature 1"
+   },
+   "rc-who-holds": {
+    "decision": "A",
+    "label": "Two people, one can start",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T22:33:11.242Z",
+    "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
+    "steer": "By extension (and especially for flirtcraft) you can start alone tending  to a spirit that’s the charge that you project on someone you aren’t in relationship with. When the other person joins it becomes a between",
+    "faces": [
+     "architect",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "relationship creature 1"
    }
   },
   "causes": {
@@ -27469,9 +29351,40 @@
      ]
     }
    ]
+  },
+  {
+   "id": "fr-between",
+   "name": "The Between",
+   "repo": "six-faces-council",
+   "element": "wood",
+   "record": "council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md; council/callsheets/relationship-creature.md",
+   "intro": "It wants to be the relationship two people tend together, fed by charge each has worked through, in a garden of their shared agreements. The council made it out of the cave's trust rules and kept each person's pictures private. What it needs from you is its name, whether neglect can make it stale, and who can hold one.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "rc-name",
+      "rc-stale",
+      "rc-who-holds"
+     ],
+     "positions": [
+      "rc-is-relationship",
+      "rc-joint-checkin",
+      "rc-pictures-private",
+      "rc-feeds",
+      "rc-offer-received",
+      "rc-exit",
+      "rc-spirits-visit",
+      "rc-agreements-bars",
+      "rc-goal",
+      "rc-credit",
+      "rc-order"
+     ]
+    }
+   ]
   }
  ],
- "steps_recorded_through": "2026-10-14T22:43:52Z",
+ "steps_recorded_through": "2026-10-16T21:58:33Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",

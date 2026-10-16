@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/wendell-britt/six-faces-council/schema/publish-queue.schema.json",
+  "title": "An episode's publish queue (council/podcast/queue/<episode>.json)",
+  "description": "Written by the session that prepares an episode's posts, approved by Wendell on the board (pa-approval-publishes), published by .github/workflows/publish-queue.yml. The approval covers `episode` and `posts` only; `state` and `numbers` are written by the workflow.",
+  "type": "object",
+  "required": ["episode", "approval_row", "posts"],
+  "additionalProperties": false,
+  "properties": {
+    "episode": {"type": "string", "pattern": "^[a-z0-9-]+$", "description": "Matches the file name, e.g. mtgoa-ep03."},
+    "title": {"type": "string", "description": "How the board names the episode, e.g. Episode 3, with Marina."},
+    "approval_row": {"type": "string", "pattern": "^pq-[a-z0-9-]+$", "description": "The board question whose answer approves this queue."},
+    "posts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "at", "networks", "captions"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "title": {"type": "string", "description": "A few words for the board and the issue, e.g. Clip 1, how long (Tom)."},
+          "kind": {"enum": ["reel", "image"]},
+          "at": {"type": "string", "description": "When it publishes: ISO 8601 with an offset, e.g. 2026-10-19T09:00:00-07:00."},
+          "networks": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["instagram", "facebook"]}},
+          "clip": {
+            "type": "object",
+            "description": "Reels only. A GitHub release asset on this repo, or a local path (tests and container-test only).",
+            "additionalProperties": false,
+            "properties": {"release": {"type": "string"}, "asset": {"type": "string"}, "path": {"type": "string"}}
+          },
+          "cover": {"type": "string", "description": "Reels only. Repo path of the cover JPEG (9:16, 8 MB or less). Published as its raw.githubusercontent.com URL on main."},
+          "image": {"type": "string", "description": "Image posts only. Repo path of the JPEG."},
+          "captions": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {"instagram": {"type": "string", "maxLength": 2200}, "facebook": {"type": "string"}}
+          },
+          "share_to_feed": {"type": "boolean", "default": true},
+          "collaborators": {"type": "array", "maxItems": 3, "items": {"type": "string"}, "description": "Instagram handles, only when Wendell names them (Diplomat, pass podcast-pipeline2)."}
+        }
+      }
+    },
+    "state": {"type": "object", "description": "Per post, per network: status (published, failed, missed), ids, times, error. Written by the workflow."},
+    "numbers": {"type": "object", "description": "Per post, per network, per Monday: the insights read back (pa-numbers-auto). Written by the workflow."}
+  }
+}

@@ -31,11 +31,20 @@ bars-engine's /api/lenses/goals, read with the same $COUNCIL_MENU_TOKEN, or a sa
 export wins over the menu's goals list. The board's Morning tab shows them as a Lenses panel, one row per domain,
 with an empty domain shown as empty.
 
+His seed library comes the same way (docs/seed-library.md, `sl-board-reads-library`): bars-engine's
+/api/tap-the-vein/seed-library, the commitments he set aside to draw from later, or a saved copy with --seeds. The
+Morning tab shows it read only and closed, with no count; drawing, keeping resting and letting go happen in
+bars-engine. Seeds come back on the spaced-resurfacing ladder (Wendell overruled `sl-no-pressure`, 2026-10-16:
+"use spaced repetition to get it back into the board"): the export marks at most three a day as resurfaced, and the
+Morning tab shows those open at its top. Each sealed intake item carries the task id bars-engine gave it (`ttv-one-store`), which the board's
+"Set aside" button saves as seeds/<taskId>.
+
     python3 council/morning.py --fetch 2026-10-10        # fetch the sealed menu itself ($COUNCIL_MENU_TOKEN), then report
     python3 council/morning.py --menu <file>             # report: categories, counts, bridges; writes nothing
     python3 council/morning.py --menu <file> --write     # also writes `morning` into board/board_data.json and
                                                          # rebuilds the page; commit on main and republish
     python3 council/morning.py --goals <file>            # read Lens goals from a saved /api/lenses/goals export
+    python3 council/morning.py --seeds <file>            # read the seed library from a saved export
     python3 council/morning.py --json                    # the gathered morning as JSON, for checking
 """
 import argparse
@@ -141,12 +150,14 @@ def from_menu(menu):
     for it in menu.get("items", []):
         g = it.get("goal") if it.get("status") == "bridged" else None
         items.append({"id": f"menu-{it.get('key') or len(items)}", "text": short(it.get("text"), 240),
-                      "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task", "can_do": "Can do today"}.get(it.get("source"), "")})
+                      "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task", "can_do": "Can do today"}.get(it.get("source"), ""),
+                      **({"taskId": it["taskId"]} if it.get("taskId") else {})})
     return items
 
 
 MENU_URL = "https://bars-engine.vercel.app/api/tap-the-vein/menu"
 GOALS_URL = "https://bars-engine.vercel.app/api/lenses/goals"
+SEEDS_URL = "https://bars-engine.vercel.app/api/tap-the-vein/seed-library"
 
 
 def fetch_json(url, what, out=None):
@@ -180,6 +191,35 @@ def fetch_menu(date, out):
 def fetch_goals():
     """His active Lens goals from /api/lenses/goals (lens-board-reads-goals). Returns (export, None) or (None, reason)."""
     return fetch_json(GOALS_URL, "Lens goals export")
+
+
+def fetch_seeds():
+    """His seed library from /api/tap-the-vein/seed-library (sl-board-reads-library). Returns (export, None) or (None, reason)."""
+    return fetch_json(SEEDS_URL, "seed library export")
+
+
+def seed_library(export, note=None):
+    """The seed library panel: each resting seed's text, the day it was named and the day it was set aside, newest set
+    aside first, read only. `back` lists the seeds bars-engine resurfaced today on its spaced ladder
+    (docs/seed-library.md, `sl-resurface-ladder`), in the order they came back; an export from before the ladder has
+    none."""
+    seeds, back = [], []
+    for s in (export or {}).get("seeds", []):
+        if not s.get("id"):
+            continue
+        seed = {"id": s["id"], "text": short(s.get("text"), 240), "fromDay": s.get("fromDay"),
+                "restedOn": (s.get("restDay") or s.get("restedAt") or "")[:10] or None}
+        if s.get("dueDay"):
+            seed["dueDay"] = s["dueDay"]
+            seed["rung"] = s.get("rung", 0)
+        seeds.append(seed)
+        if s.get("resurfaced"):
+            back.append(seed)
+    back.sort(key=lambda x: (x.get("dueDay") or "", x.get("restedOn") or "", x["id"]))
+    out = {"seeds": seeds, "back": [x["id"] for x in back], "read": export is not None}
+    if note:
+        out["note"] = note
+    return out
 
 
 def lenses(goals, note=None):
@@ -332,7 +372,8 @@ def slug(s):
 
 # ---------- gather ----------
 
-def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=None, goals_note=None):
+def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=None, goals_note=None,
+           seeds_export=None, seeds_note=None):
     data = data if data is not None else json.loads(BOARD.read_text(encoding="utf-8"))
     if goals_export is not None:
         goals = [g for g in goals_export.get("goals", []) if g.get("status", "active") == "active"]
@@ -366,12 +407,15 @@ def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=N
             "pick_limit": 7,
             "goals": [{k: g.get(k) for k in ("id", "title", "domain", "cadence", "parentId")} for g in goals],
             "lenses": lenses(goals, goals_note),
+            "seeds": seed_library(seeds_export, seeds_note or (None if seeds_export is not None else "seed library not read")),
             "categories": cats}
 
 
 def report(m):
     print(f"morning {m['date']}: {len(m['goals'])} Lens goals read" + (f" [{m['lenses']['note']}]" if m["lenses"].get("note") else ""))
     print("  lenses   " + ", ".join(f"{d['key']} {len(d['goals'])}" for d in m["lenses"]["domains"]))
+    sl = m["seeds"]
+    print(f"  seeds    {len(sl['seeds'])} resting, {len(sl['back'])} back today" + (f"  [{sl['note']}]" if sl.get("note") else ""))
     for c in m["categories"]:
         kinds = {}
         for it in c["items"]:
@@ -386,6 +430,7 @@ def main(argv=None):
     ap.add_argument("--fetch", metavar="DATE", help="fetch the sealed menu for DATE (YYYY-MM-DD) with $COUNCIL_MENU_TOKEN")
     ap.add_argument("--out", default="morning-menu.json", help="where --fetch saves the menu (default ./morning-menu.json)")
     ap.add_argument("--goals", help="a saved /api/lenses/goals export; default fetches it with $COUNCIL_MENU_TOKEN")
+    ap.add_argument("--seeds", help="a saved /api/tap-the-vein/seed-library export; default fetches it with $COUNCIL_MENU_TOKEN")
     ap.add_argument("--prs", help="open pull requests saved to a file: [{repo, number, title, url, draft}]")
     ap.add_argument("--steps", help="the board store's steps collection saved to a folder (ArtifactData out_dir/steps)")
     ap.add_argument("--bars", help="a bars-engine checkout (default ../bars-engine)")
@@ -401,7 +446,12 @@ def main(argv=None):
     else:
         goals_export, goals_note = fetch_goals()
         goals_note = goals_note and f"goals export not read: {goals_note}"
-    m = gather(menu, a.prs, a.bars, data, a.steps, goals_export, goals_note)
+    if a.seeds:
+        seeds_export, seeds_note = json.loads(Path(a.seeds).read_text(encoding="utf-8")), None
+    else:
+        seeds_export, seeds_note = fetch_seeds()
+        seeds_note = seeds_note and f"seed library not read: {seeds_note}"
+    m = gather(menu, a.prs, a.bars, data, a.steps, goals_export, goals_note, seeds_export, seeds_note)
     if a.json:
         print(json.dumps(m, ensure_ascii=False, indent=1))
         return
