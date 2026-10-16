@@ -1,0 +1,50 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T22:23:06.570Z",
+ "answers": {
+  "bmt-accountability": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-16T22:22:09.375Z",
+   "steer": ""
+  },
+  "bmt-keep-talking": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:22:15.923Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-goodness-models": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:22:36.322Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-trust-falls": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:22:43.963Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-spirits-vouch": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:22:57.333Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bmt-honest-moves": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:23:06.570Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/bmt-accountability: The council's reading"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
