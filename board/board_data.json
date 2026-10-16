@@ -8675,38 +8675,6 @@
    "auto": true,
    "pos": "The board page warns from the age of the oldest save main has not recorded, not from the time of the last pull. With no saves waiting, a long gap between pulls shows no warning; a save waiting more than an hour shows one, with its age. The page stops saying the pull runs every 15 minutes. This stands unless you flip it.",
    "why": "The 20:09 stall was silent because the step that failed was the one that would have reported it, and staleness.py runs inside the same scheduled job it watches. The page's note is the one alarm outside the job, but it measures the last pull, which GitHub's schedule makes late most of the time (docs/failure-modes.md, Root cause). bars-engine already holds every save's receivedAt and recordedAt."
-  },
-  {
-   "id": "zo-division",
-   "faces": [
-    "architect",
-    "sage",
-    "diplomat"
-   ],
-   "pass": "zo-environment",
-   "auto": true,
-   "pos": "This environment (Zo) is the standing machine: scheduled sense-and-respond work, needs_work execution, bars-engine development, hosting of community surfaces, and the SMS/email channel. Claude sessions remain where rulings happen: the store, the artifact, the republish. Main is the one merge point both doors write through.",
-   "why": "Follows x-one-home (pass 4): one place to look beats separated surfaces. Verified today: push access, deterministic rebuild, needs_work.py runs from the clone."
-  },
-  {
-   "id": "zo-gates",
-   "faces": [
-    "regent"
-   ],
-   "pass": "zo-environment",
-   "auto": true,
-   "pos": "What never runs from Zo: faces.yaml edits, canonical prose, store ingestion, artifact republish. The reserved list binds every machine equally; non-negotiables travel.",
-   "why": "The reserved list is in council/faces.yaml; board/pull.py and the skill's landing rules name the store and republish as Claude-side work."
-  },
-  {
-   "id": "zo-guards",
-   "faces": [
-    "challenger"
-   ],
-   "pass": "zo-environment",
-   "auto": true,
-   "pos": "Before any scheduled agent in Zo acts on council state: (1) one board-row write is tested against a live board-pull run; (2) the token-quota rule is wired into any scheduled Zo work. Both are conditions, not rejections.",
-   "why": "Falsification test is named in the pass; the quota rule exists in this workspace's rules. The race is real because the 15-minute workflow commits to the same file."
   }
  ],
  "questions": [
@@ -23659,6 +23627,35 @@
      "regent"
     ],
     "pass": "nonprofit structure"
+   },
+   "zo-division": {
+    "decision": "stands",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-zo-environment-ruling.json",
+    "faces": [
+     "architect",
+     "sage",
+     "diplomat"
+    ],
+    "pass": "zo-environment"
+   },
+   "zo-gates": {
+    "decision": "stands",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-zo-environment-ruling.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "zo-environment"
+   },
+   "zo-guards": {
+    "decision": "stands",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-zo-environment-ruling.json",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "zo-environment"
    }
   },
   "questions": {
