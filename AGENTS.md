@@ -54,7 +54,7 @@ This file is for any coding agent (Codex, Claude, or another) and for people. It
 
 - The council's method: `.claude/skills/six-faces/SKILL.md` (plain Markdown; any agent can read it). The pipeline:
   `council/pipeline.yaml`. The faces and the reach test: `council/faces.yaml`.
-- The game-design ontology: `ontology/manifest.yaml`.
+- The game-design ontology: `ontology/manifest.yaml`. Which flow loads what: `docs/ontology-in-flows.md`.
 - Board data, ledger records and lessons are written on main only, through `board/pull.py` (saves) and
   `board/sync_board.py` (rows; `docs/merging.md`). `council/faces.yaml` changes only by his ruling.
 - Deferred items: `python3 council/due.py --ahead 7`.

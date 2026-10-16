@@ -25,9 +25,14 @@ Sonnet. The pass is one session and ends when its reply is posted (short session
    - **Keep.** It still serves a live goal and only he can do it. If it lacks full context or a place to find each
      item, rewrite it so it has them (Wendell's rule of 2026-10-12). If a piece is missing, it becomes a find-it
      step: what to find, why it matters, and what the game masters do if it is not found.
-   - **Drop (compost).** Nothing depends on it any more, it duplicates another step, or a later change made it moot.
-     Set `retired` to one sentence that says "Dropped on <date> by the daily pass" and why, keeping any link he
-     might still want.
+   - **Drop (compost).** Nothing depends on it any more. Set `retired` to one sentence that says "Composted on
+     <date> by the daily pass", why, and that bringing it back takes a new step, keeping any link he might still want.
+     Composting ends the obligation and owes nothing back; a composted step is never revived silently, only by a new
+     step that cites its id (ontology QUICKSTART, Composting).
+   - **Drop (superseded).** It duplicates another step, or a later change made it moot. Say "Superseded on <date> by
+     the daily pass by <step id or change>" in `retired`, so the link to what replaced it survives.
+   - Never write that a step was dropped because he did not act on it; say what made it unneeded. The pass never
+     sorts `ontology/` (docs/ontology-in-flows.md).
    - **Take over.** Claude can do it, or check it, with the tools a session has. Do it in this thread when the work
      is small; otherwise start the work (a thread, a PR) and rewrite the step so what is left for him is only what
      needs his accounts, money or eyes. Rewrite or tick the step to match.
