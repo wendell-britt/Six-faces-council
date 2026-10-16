@@ -1,0 +1,119 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T22:40:01.032Z",
+ "answers": {
+  "rc-name": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-16T22:32:04.585Z",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-stale": {
+   "kind": "question",
+   "choice": "B",
+   "savedAt": "2026-10-16T22:32:11.003Z",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-who-holds": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-16T22:33:11.242Z",
+   "steer": "By extension (and especially for flirtcraft) you can start alone tending  to a spirit that’s the charge that you project on someone you aren’t in relationship with. When the other person joins it becomes a between",
+   "via": "battle:fr-between"
+  },
+  "rc-is-relationship": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:33:25.109Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-joint-checkin": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:34:24.804Z",
+   "status": "overrule",
+   "steer": "I think people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren’t there ",
+   "via": "battle:fr-between"
+  },
+  "rc-pictures-private": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:34:39.608Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-feeds": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:35:38.273Z",
+   "status": "stands",
+   "steer": "Also fed by metabolized charge offered to the relationship and inspirations and ideas and desires ",
+   "via": "battle:fr-between"
+  },
+  "rc-offer-received": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:36:16.137Z",
+   "status": "stands",
+   "steer": "Can show up in the garden but needs to be co-tended for it to affect the between",
+   "via": "battle:fr-between"
+  },
+  "rc-exit": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:38:06.585Z",
+   "status": "overrule",
+   "steer": "People can tend asynchronously, but you do need consent to formally end the relationship and take whatever parts of the between you want to keep. I imagine it as the relationship between stays with the players (copied with its history) but the garden is shut down (or even changed into another relationship type. ",
+   "via": "battle:fr-between"
+  },
+  "rc-spirits-visit": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:38:17.034Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-agreements-bars": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:38:27.985Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-goal": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:38:35.745Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-credit": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:38:44.100Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-between"
+  },
+  "rc-order": {
+   "kind": "position",
+   "savedAt": "2026-10-16T22:40:01.032Z",
+   "status": "overrule",
+   "steer": "“The next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.“\n\nThat’s too slow. We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players ",
+   "via": "battle:fr-between"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/rc-name: The Between",
+  "questions/rc-stale: Plain neglect too",
+  "questions/rc-who-holds: Two people, one can start (steer: \"By extension (and especially for flirtcraft) you can start alone tending  to a spirit that’s the charge that you project on someone you aren’t in relationship with. When the other person joins it becomes a between\")",
+  "positions/rc-joint-checkin: Overruled (steer: \"I think people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren’t there\")",
+  "positions/rc-feeds: Stands (steer: \"Also fed by metabolized charge offered to the relationship and inspirations and ideas and desires\")",
+  "positions/rc-offer-received: Stands (steer: \"Can show up in the garden but needs to be co-tended for it to affect the between\")",
+  "positions/rc-exit: Overruled (steer: \"People can tend asynchronously, but you do need consent to formally end the relationship and take whatever parts of the between you want to keep. I imagine it as the relationship between stays with the players (copied with its history) but the garden is shut down (or even changed into another relationship type.\")",
+  "positions/rc-order: Overruled (steer: \"“The next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.“\n\nThat’s too slow. We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
