@@ -8969,6 +8969,94 @@
    "auto": true,
    "pos": "Next build: the board's seal writes each item to bars-engine as a task, so every commitment carries one id from the morning to its thread, and alignment is stored as links you accept.",
    "why": "Today one commitment can become six unlinked records (a task, a store line, an alignment line, a BAR, a board row, a thread). Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
+  },
+  {
+   "id": "ss-three-states",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Every spirit and ally shows one of three states, dissatisfied, neutral or satisfied, read from the satisfaction number it already has (1 to 10). 1 to 4 is dissatisfied, 5 to 7 neutral, 8 to 10 satisfied, so the line sits where sg-overcharge already puts it (an ally heeds you fully from 5). The state is a state, never a trait: the same spirit moves between all three in play. The three moods design.md gives every spirit (charged, steadied, allied) become these three looks: charged is dissatisfied, steadied is neutral, and the allied mood is satisfied, while \"allied\" stays the word for the bond. No new inventory: 25 species with three moods each was already the count. Band edges are placeholders. This stands unless you flip it.",
+   "why": "Your message, 16 October: \"we need to also introduce the Satisfied, Dissatisfied, and Neutral versions of it in whatever intake it's coming in as.\" The words are Emotional Alchemy's own three altitudes of a channel (bars-engine src/lib/quest-grammar/emotional-vector-resolver.ts). Satisfaction already does Monster Rancher's loyalty job (spirit-growth-by-training, sg-overcharge), and demo-spirit-count and demo-daemon-count already gave every spirit three moods. The ontology keeps states apart from traits (QUICKSTART, AQAL attention). Pass: council/passes/6FACE_PASS_spirit-states1_2026-10-16.md."
+  },
+  {
+   "id": "ss-intake-start",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "A spirit's first state comes from what its intake already records, and no intake asks a new question. From the spirit generator: a charge within your limit joins neutral (satisfaction 5); a charge past it joins dissatisfied (satisfaction 1, sg-overcharge). No charge joins satisfied, because a charge is a dissatisfied configuration when it comes in. A wild spirit in the forest or the ring is met dissatisfied: it is the charge before anyone has listened to it. In the cave, a spirit leaves the W.A.V.E. in the state your own answer gives it: satisfied only if you named a gold state (ff-name-what-is-here), neutral if you named none, and dissatisfied if you said it is still too much. A spirit that leaves dissatisfied is a valid ending and says nothing about you. The charge's own record is never rewritten. This stands unless you flip it.",
+   "why": "\"in whatever intake it's coming in as\". The resolver steps a charge that reads satisfied back to neutral (\"can't start from satisfaction\", emotional-vector-resolver.ts:147), and the ontology calls the dissatisfied configuration the charge's formal record and forbids folding satisfaction into it (design-ontology-model-v0.1.md, rule 26). Your own report has primary authority over whether you are satisfied, and a system trace never proves it (model, evidence table), so the cave reads your answer, not the charge number."
+  },
+  {
+   "id": "ss-markers",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Satisfaction owns its own layer of the look and repaints no other. It shows through four markers: stance, aura, eyes and core, and surface. Each state shows on at least two that are not colour, so it reads at the 96 px sprite and for a player who cannot tell the colours apart. Dissatisfied: the family's held stance pushed to its extreme, a ragged aura that pulls in and flickers in a darker, denser shade of the element, narrowed eyes with a hot glint, a cracked core that stutters, and on the living creature and the ally form a rougher coat with raised scales, plates or fur. Neutral: today's renders. Satisfied: the stance completed and open, a slow, smooth, wider aura with a bright rim, soft eyes, a whole core with a steady glow, and a smooth coat. The forms thin the list: the gas shows aura only (jagged fast swarm, steady drift, slow glowing drift), the core shows the core, the hologram shows aura and scanline (torn and static, steady, clean), and the creature and ally form show all four. The states are built on the same model as a rig pose and material settings, never as a second model. This stands unless you flip it.",
+   "why": "\"The creatures should be darker and more feral in dissatisfaction. We'll need to think through design markers that show the state.\" sg-look-layers gives each input one layer; sg-assets-modular gives one rig per family; round 2 of the spirit art found an aura alone is lost at 96 px, so no state rests on one marker."
+  },
+  {
+   "id": "ss-feral-stance",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "A dissatisfied spirit's stance is its family's daemon movement held stuck, from the gesture table (council/daemons/GESTURES.md), pushed further than the daemon itself holds it. The Protector's Shellback braces into its push: forelegs planted wide, head drawn low under the shell's rim, shell tipped forward like a shield. A satisfied spirit wears the same movement completed, the push that has landed and let go. The Romp, the Player's family, has all six movements open, so a dissatisfied Romp turns skittish and wild (ears flat, hackles up, tail lashing, weight on its back feet) rather than borrowing another daemon's hold. Every living creature stays on its own four feet (sg-romp-four-feet), so each stance is a pose the family's rig can walk out of. This stands unless you flip it.",
+   "why": "Your words of 14 October: daemons \"emerge as a way to protect the vulnerable child through egos development until they need to be renegotiated with and integrated for the child to move into adulthood. This is essentially one of the things we are gamifying.\" A spirit's family is its daemon (sg-body-from A), so a feral spirit is a protector held past its time, not a corrupted one. dg-six-movements gave each daemon its movement."
+  },
+  {
+   "id": "ss-not-veiled",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Dissatisfied darkness is dense and solid. A veiled spirit (perceptual shadow, polarity above 0) is faint and fogged, and a flooding one (polarity below 0) glares too big and too bright. No marker is shared among the three. While a spirit is veiled its state does not show: the card reads \"can't see it yet\", and the state appears once it is revealed, the same moment it takes its element (sd-shadow-skip, his steer). This stands unless you flip it.",
+   "why": "ps-polarity already darkens a veiled spirit's aura (\"at 10 only a faint outline shows and its aura is dark\"), so \"darker\" for dissatisfied would read as hidden. bars-engine #326 and #327 read polarity; a state shown through a veil would tell the player what the shadow hides."
+  },
+  {
+   "id": "ss-shift-up",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Satisfaction rises through moves the record already has, and they now show. Spars that listen, an offered shard (sg-loot-offering), and feeding a wild spirit the element that generates its own (enc-steady-rests) each raise it a step. Each element's Transcend move (Step Through for Metal, Reclaim Meaning for Water, Commit to Growth for Wood, Achieve Breakthrough for Fire, Stabilize Coherence for Earth) is the spirit's tending move: once a fight, it raises its own satisfaction by two. It falls through play: Fight alone, an overcharge's spill, and a spirit left out of every spar for a week of play. The look changes only when the number crosses a band edge, with one line saying what moved it (\"Your Shellback settled: three spars that listened\"). Numbers are placeholders. This stands unless you flip it.",
+   "why": "\"Downwind there will need to be moves that allow a player to shift a spirit\". The fifteen canonical moves name five Transcend moves as the within-channel completion (bars-engine src/lib/quest-grammar/move-engine.ts), and sg-loop-trains already lowers satisfaction for Fight alone. Whether a move may also push a spirit down is your question ss-push-down."
+  },
+  {
+   "id": "ss-cross-element",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "Only the living creature and the ally form take on moves of other elements, and the state sets how far they reach. Dissatisfied: its signature move and its own element's moves only. Neutral: it may also learn and use moves of the two elements on its generating cycle (the one that feeds it and the one it feeds; wood learns from water and fire). Satisfied: it may also use the two on its controlling cycle, so a satisfied spirit can reach all five. A spirit keeps a move it learned when it drops a state, but cannot use it until it climbs back. Generating moves give a point of the fight's energy and controlling moves cost one, as the canon's economy has it. The gas, the core and the hologram keep to their own element. This stands unless you flip it.",
+   "why": "\"OR in allied or creature state able to take on moves from other elements\", and your steer on sf-ally-moves: \"move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move\". The canon's five Generative and five Control moves join every pair of elements once (move-engine.ts), so the two cycles cover all four other elements between them and nothing new is invented."
+  },
+  {
+   "id": "ss-feral-trade",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "spirit states 1",
+   "auto": true,
+   "pos": "A dissatisfied spirit is a real choice to fight with, not only a penalty. Its signature move lands harder (one more Power step), while it still heeds you only every other turn (sg-overcharge) and reaches no other element. A player may keep a spirit feral on purpose. The copy never calls it bad, broken or corrupt; it is unsettled, and its card says what it is protecting. Numbers are placeholders. This stands unless you flip it.",
+   "why": "If dissatisfied is only worse, every player flees it, and the state becomes a meter of how well they are doing, which the ontology forbids (development is never whole-person rank; refusal and no-shift stay valid). Monster Rancher's loyalty already works this way: a disobedient monster is still strong."
   }
  ],
  "questions": [
@@ -14556,6 +14644,33 @@
      "v": "timer",
      "label": "Add X to the timer",
      "c": "About $0.20 a post with a link by postproxy.dev's 2026 figures, so about $1 an episode, bought as X credits. You make an X developer account and its keys go into GitHub secrets the same way."
+    }
+   ]
+  },
+  {
+   "id": "ss-push-down",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "spirit states 1",
+   "q": "Should a fight move be able to unsettle a spirit, pushing it from satisfied toward dissatisfied? The council recommends A.",
+   "why_you": "Your message says \"moves that allow a player to shift a spirit from satisfied to dissatisfied\". The record answers the shift upward (ss-shift-up), and it lets play lower satisfaction, but nothing in it says whether you want a move made for pushing a spirit down. Only you know whether that sentence meant it as written, and the answer adds or leaves out a kind of move.",
+   "not_before": "Raised by spirit states pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Yes, on wild and rival spirits only",
+     "c": "Fights gain an unsettle move per element (its controlling cycle). A riled wild spirit hits harder and is easier to read but harder to befriend. No move ever unsettles your own ally, and the cave's W.A.V.E. has none."
+    },
+    {
+     "v": "B",
+     "label": "B. No, play lowers it, no move does",
+     "c": "Only Fight alone, an overcharge's spill and neglect lower satisfaction. Fewer moves to build and balance; the downward shift stays a consequence, never a tactic."
+    },
+    {
+     "v": "C",
+     "label": "C. Yes, on any spirit, your own too",
+     "c": "A player can rile their own ally for the feral trade's harder hit. Most freedom; the risk is a move that turns the player's own charge against them, so its copy and its cost need their own pass."
     }
    ]
   }
