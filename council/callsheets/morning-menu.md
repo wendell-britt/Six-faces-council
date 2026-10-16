@@ -4,6 +4,36 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-16, thread "seed library board" (this repo's and bars-engine's branch claude/seed-library-board-4vdnzv): the
+board's surface is built. The Morning tab has a closed Seed library panel that `council/morning.py` reads from
+`GET /api/tap-the-vein/seed-library` (`--seeds` for a saved copy), and "Set aside" beside each sealed item with a task
+id, saved as `seeds/<taskId>`, which bars-engine's save route turns into the same rest as the card's button. It works
+on /board/council (bars-engine); on the claude.ai page the button links there. bars-engine #342 and Six-faces-council
+#192 merged. Still open: test SL1 on 2026-10-30; the first `morning.py --write` after bars-engine deploys fills the panel.
+
+2026-10-16, thread "seed library" (bars-engine branch claude/seed-library-g3qu9x, this repo's branch of the same name,
+stacked on #191): Next item (2) below is built in bars-engine. A live task can be set aside as `resting`, drawn back into
+today as the same task, or let go from the library with no reason; the council reads it through
+`GET /api/tap-the-vein/seed-library`. Design and rules: `docs/seed-library.md`; positions `sl-resting-not-compost`,
+`sl-no-pressure`, `sl-draw-same-task`, `sl-board-reads-library`. Still open: the board's surface (a seed library panel on the
+Morning tab read by `council/morning.py` from the export, and "Set aside" beside each intake item, written to bars-engine),
+a fresh Opus thread that owns bars-engine #342 and Six-faces-council #192 and stacks on #341 and #342 until they merge;
+test SL1 on 2026-10-30.
+
+2026-10-16, thread "lens emergence" (bars-engine #341, this repo's branch claude/lens-emergence-ittf5k): board read 1759
+flipped two positions and added one. Done here: `lens_emerge.py` pitches paraphrase each morning and cite only its date,
+refusing a gist that copies six of his words in a row (`ttv-lens-emerge`); `intake_align.py` gives every no-home-yet
+item an optional shadow quest, the question that would bring out its hidden alignment (`ttv-no-home-yet`); and
+`ttv-one-store` is bars-engine #341 (the council seal on /board/council writes each item as a task, the menu carries
+`taskId` and `barId`). Still open, in order: (1) T1, due 10-18: the key is refused (401 on menu and lens goals,
+`/api/tap-the-vein/history` still deploying at 18:00 UTC); Your steps list `menu-key-match` asks him to put one new key in
+Vercel, the cloud environment and the GitHub secret. Once he ticks it, a fresh thread runs `lens_emerge.py fetch`,
+pitches at most five goals with `pitch`, lands the rows with `board/sync_board.py --rows` and deletes the scratch copy.
+(2) The seed library (`ttv-fruit-is-his` stands with his addition, "We should also be able to defer those into a seed
+library that can be drawn from"): built in bars-engine by the "seed library" thread above; the board surface is next. (3) Taking a shadow quest: today the
+board only shows the question. Making it a bars-engine shadow quest on the item's task (QLA already mints shadow quests)
+is the follow-up once #341 merges.
+
 2026-10-16, pass ttv-loop 1 (`council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md`, eight `ttv-*` positions, no
 questions): built on draft PRs, bars-engine `GET /api/tap-the-vein/history` and optional compost reason, council
 `council/lens_emerge.py`, strand and no-home-yet alignments in `intake_align.py`, and the board box as a four-phase

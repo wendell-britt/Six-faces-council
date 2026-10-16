@@ -28,8 +28,8 @@ HIST = {"version": 1, "since": "2026-07-18", "days": [
      "seeds": [{"id": "t2", "status": "composted", "maturity": None}]},
 ]}
 GOOD = {"title": "Put the book in people's hands", "domain": "career", "why": "It returns on both mornings unprompted.",
-        "lines": [{"date": "2026-10-10", "line": "I want it in people's hands."},
-                  {"date": "2026-10-14", "line": "I want it in people's hands by spring."}]}
+        "seen": [{"date": "2026-10-10", "gist": "The book pulls at him; he wants readers holding it."},
+                 {"date": "2026-10-14", "gist": "The book again, now with spring as the date."}]}
 
 
 class LensEmergeTest(unittest.TestCase):
@@ -37,12 +37,18 @@ class LensEmergeTest(unittest.TestCase):
         self.assertEqual(emerge.check(HIST, [GOOD]), [])
 
     def test_one_morning_is_not_emergence(self):
-        one = dict(GOOD, lines=GOOD["lines"][:1])
+        one = dict(GOOD, seen=GOOD["seen"][:1])
         self.assertTrue(any("returns on two or more" in b for b in emerge.check(HIST, [one])))
 
-    def test_his_exact_words_only(self):
-        bent = dict(GOOD, lines=[GOOD["lines"][0], {"date": "2026-10-14", "line": "I need the book out."}])
-        self.assertTrue(any("word for word" in b for b in emerge.check(HIST, [bent])))
+    def test_paraphrase_never_quotes(self):
+        quoted = dict(GOOD, seen=[GOOD["seen"][0], {"date": "2026-10-14", "gist": "He wrote: I want it in people's hands by spring."}])
+        self.assertTrue(any("copies his words" in b for b in emerge.check(HIST, [quoted])))
+        old_shape = dict(GOOD, lines=[{"date": "2026-10-10", "line": "I want it in people's hands."}])
+        self.assertTrue(any("cite only its date" in b for b in emerge.check(HIST, [old_shape])))
+
+    def test_a_date_needs_a_free_write(self):
+        nowhere = dict(GOOD, seen=[GOOD["seen"][0], {"date": "2026-10-12", "gist": "The book came up again."}])
+        self.assertTrue(any("no free write on 2026-10-12" in b for b in emerge.check(HIST, [nowhere])))
 
     def test_domain_and_cap(self):
         self.assertTrue(emerge.check(HIST, [dict(GOOD, domain="fame")]))
@@ -51,9 +57,13 @@ class LensEmergeTest(unittest.TestCase):
     def test_rows_are_what_lens_goals_kept_sends(self):
         row = emerge.pitch_rows(HIST, [GOOD])[0]
         self.assertEqual(row["id"], "lens-emerge-2026-10-14-1")
-        self.assertIn("2026-10-10:", row["why_you"])
+        self.assertIn("On 2026-10-10:", row["why_you"])
+        self.assertNotIn("in people's hands", row["why_you"])
         data = {"questions": [row], "resolved": {"questions": {row["id"]: {"decision": "keep"}}}}
-        self.assertEqual(lens_goals.kept(data)[0]["title"], GOOD["title"])
+        kept = lens_goals.kept(data)[0]
+        self.assertEqual(kept["title"], GOOD["title"])
+        self.assertIn("in the council's words", kept["source"])
+        self.assertNotIn("“", kept["source"])
 
     def test_history_never_lands_in_the_repo(self):
         with self.assertRaises(SystemExit):
@@ -69,17 +79,26 @@ class IntakeToWorkTest(unittest.TestCase):
 
     def test_strand_and_no_home_yet(self):
         aligns = [{"line": "Fix the Morning tab", "strand": "morning-menu", "why": "This is the morning menu strand's work."},
-                  {"line": "Walk by the river", "none": True, "why": "Rest; no goal or strand needs it."}]
+                  {"line": "Walk by the river", "none": True, "why": "Rest; no goal or strand needs it.",
+                   "shadow": "What does the river give back to the work?"}]
         out, pitches, bad = intake.align(self.MENU, aligns, {"morning": {"goals": []}})
         self.assertEqual(bad, [])
         self.assertEqual(out["items"][0]["bridge"]["kind"], "strand")
         self.assertEqual(out["items"][0]["bridge"]["strand"], "morning-menu")
         self.assertEqual(out["items"][1]["bridge"]["kind"], "none")
+        self.assertEqual(out["items"][1]["bridge"]["shadow"], "What does the river give back to the work?")
         self.assertEqual(pitches, [])
+
+    def test_no_home_yet_offers_a_shadow_quest(self):
+        aligns = [{"line": "Fix the Morning tab", "strand": "morning-menu", "why": "This is the morning menu strand's work."},
+                  {"line": "Walk by the river", "none": True, "why": "Rest; no goal or strand needs it."}]
+        _, _, bad = intake.align(self.MENU, aligns, {"morning": {"goals": []}})
+        self.assertTrue(any("shadow quest" in b for b in bad))
 
     def test_unknown_strand_is_refused(self):
         aligns = [{"line": "Fix the Morning tab", "strand": "../HANDOFF", "why": "four words or more here"},
-                  {"line": "Walk by the river", "none": True, "why": "Rest; no goal or strand needs it."}]
+                  {"line": "Walk by the river", "none": True, "why": "Rest; no goal or strand needs it.",
+                   "shadow": "What does the river give back?"}]
         _, _, bad = intake.align(self.MENU, aligns, {"morning": {"goals": []}})
         self.assertTrue(any("no call sheet" in b for b in bad))
 

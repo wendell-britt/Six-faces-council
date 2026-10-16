@@ -24,7 +24,9 @@ Usage:
                      and one of "goal": "<goal id>" | "row": "<board row id>"
                                | "strand": "<call sheet name, e.g. morning-menu>" (work already happening)
                                | "pitch": {"title": "<a few words>", "parentId": "<goal id>"} or {"title", "domain"}
-                               | "none": true (no home yet, a real result; the why says what it is waiting for)}]
+                               | "none": true with "shadow": "<the question its optional shadow quest asks>"}]
+      No home yet means its alignment is there but not yet seen. Wendell, board, `ttv-no-home-yet` overruled
+      2026-10-16: "I think it should introduce a shadow quest to find alignment. The quest should be optional".
 """
 import argparse
 import datetime as dt
@@ -110,8 +112,13 @@ def align(menu, aligns, data):
                 continue
             b = {"kind": "strand", **st}
         elif kinds[0] == "none":
-            # No home yet is a real result (ttv-no-home-yet); the reason still has to be written.
-            b = {"kind": "none"}
+            # No home yet offers an optional shadow quest that emerges the alignment it already has but nobody can see
+            # (ttv-no-home-yet, overruled 2026-10-16). The reason and the quest's question both have to be written.
+            shadow = norm(a.get("shadow", ""))
+            if len(shadow.split()) < 4:
+                bad.append(f"no home yet needs a shadow quest: one question of four words or more: {line!r}")
+                continue
+            b = {"kind": "none", "shadow": shadow}
         else:
             p, n = a["pitch"], len(pitches) + 1
             title = norm(p.get("title", ""))
