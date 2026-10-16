@@ -8675,6 +8675,38 @@
    "auto": true,
    "pos": "The board page warns from the age of the oldest save main has not recorded, not from the time of the last pull. With no saves waiting, a long gap between pulls shows no warning; a save waiting more than an hour shows one, with its age. The page stops saying the pull runs every 15 minutes. This stands unless you flip it.",
    "why": "The 20:09 stall was silent because the step that failed was the one that would have reported it, and staleness.py runs inside the same scheduled job it watches. The page's note is the one alarm outside the job, but it measures the last pull, which GitHub's schedule makes late most of the time (docs/failure-modes.md, Root cause). bars-engine already holds every save's receivedAt and recordedAt."
+  },
+  {
+   "id": "zo-division",
+   "faces": [
+    "architect",
+    "sage",
+    "diplomat"
+   ],
+   "pass": "zo-environment",
+   "auto": true,
+   "pos": "This environment (Zo) is the standing machine: scheduled sense-and-respond work, needs_work execution, bars-engine development, hosting of community surfaces, and the SMS/email channel. Claude sessions remain where rulings happen: the store, the artifact, the republish. Main is the one merge point both doors write through.",
+   "why": "Follows x-one-home (pass 4): one place to look beats separated surfaces. Verified today: push access, deterministic rebuild, needs_work.py runs from the clone."
+  },
+  {
+   "id": "zo-gates",
+   "faces": [
+    "regent"
+   ],
+   "pass": "zo-environment",
+   "auto": true,
+   "pos": "What never runs from Zo: faces.yaml edits, canonical prose, store ingestion, artifact republish. The reserved list binds every machine equally; non-negotiables travel.",
+   "why": "The reserved list is in council/faces.yaml; board/pull.py and the skill's landing rules name the store and republish as Claude-side work."
+  },
+  {
+   "id": "zo-guards",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "zo-environment",
+   "auto": true,
+   "pos": "Before any scheduled agent in Zo acts on council state: (1) one board-row write is tested against a live board-pull run; (2) the token-quota rule is wired into any scheduled Zo work. Both are conditions, not rejections.",
+   "why": "Falsification test is named in the pass; the quota rule exists in this workspace's rules. The race is real because the 15-minute workflow commits to the same file."
   }
  ],
  "questions": [
@@ -14160,6 +14192,34 @@
      "v": "cron",
      "label": "No: keep the schedule only",
      "c": "No new credential. A save usually reaches main 3 to 10 hours later. The page warns when a save has waited too long, and you can run board-pull by hand from the Actions tab."
+    }
+   ]
+  },
+  {
+   "id": "zo-automations",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "zo-environment",
+   "q": "Eight standing automations in Zo were built for the book era. Which are retired, rescheduled, or re-pointed at council work?",
+   "why_you": "Retiring or re-pointing your automations touches money and your infrastructure, and your rule requires the full list shown to you with explicit approval before any change.",
+   "not_before": "The automations predate the council's move to six-faces-council, and no pass has audited them against the finished-book state (MTGOA shipped 2026-09-25).",
+   "options": [
+    {
+     "v": "census",
+     "label": "Run the census and propose the list",
+     "c": "Zo lists all eight with last-run state and cost signals, you flip rows. Nothing is retired without your approval."
+    },
+    {
+     "v": "re-point",
+     "label": "Keep the slots, re-point them at council work",
+     "c": "The paused MTGOA loops and stale reminders become council monitors (due.py watch, staleness watch). Same schedule, new work."
+    },
+    {
+     "v": "as-is",
+     "label": "Leave them as they are",
+     "c": "Paused loops stay paused; stale reminders keep firing at dead work and spend tokens."
     }
    ]
   }
