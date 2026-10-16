@@ -1,0 +1,60 @@
+{
+ "positions": [
+  {
+   "id": "rc-spark",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "You can start alone. What you tend then is a spirit made of the charge you project onto someone you are not yet in a relationship with, which suits Flirtcraft most. When that person joins, the spirit becomes your Between, and its history comes with it. This stands unless you flip it.",
+   "why": "Your steer on rc-who-holds: \"you can start alone tending to a spirit that's the charge that you project on someone you aren't in relationship with. When the other person joins it becomes a between\". Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-tend-alone",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Either person can tend the Between alone, at any time. What one person does alone waits in the garden as an offer, and the Between itself changes only when the other says yes. Each person can see how the other has been holding space while they were away: what they planted, watered or offered, shown as the acts themselves, never as a count or a comparison of who did more. This stands unless you flip it.",
+   "why": "Your overrule of rc-joint-checkin: \"people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren't there\". The no-count rule keeps the Diplomat's scoreboard warning. Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-stale-neglect",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Left untended for a while, the Between goes stale: it dims and its garden dries. It never dies, and either person's tending airs it out. Staleness belongs to the pair and never names who was away. This stands unless you flip it.",
+   "why": "Your answer B on rc-stale (plain neglect too). Never dying and naming no one keep the Challenger's guilt-meter warning. Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-end-together",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Tending runs at each person's own pace, and ending the relationship formally takes both people's consent. Each person chooses which parts of the Between to keep. Each leaves with the Between copied, history and all, and the shared garden either closes or turns into a garden for a different kind of relationship. This stands unless you flip it.",
+   "why": "Your overrule of rc-exit: \"you do need consent to formally end the relationship and take whatever parts of the between you want to keep [...] the relationship between stays with the players (copied with its history) but the garden is shut down (or even changed into another relationship type.\" The silent exit and outside-help line for someone being hurt stay from rc-exit. Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  },
+  {
+   "id": "rc-demo-garden",
+   "faces": [
+    "regent",
+    "architect",
+    "sage"
+   ],
+   "pass": "relationship creature 1, after your answers",
+   "auto": true,
+   "pos": "Build a demo garden now, with no paper play first. It is one page both people open from the same link, alone or at the same time, holding one shared Between, its garden of BARs and a log of each person's tending. When you open it, the page asks you about the one relationship you want to work on, and that relationship lives only in the garden's store. Pictures of the other person stay in each person's own browser. No AI runs in play. This stands unless you flip it.",
+   "why": "Your overrule of rc-order: \"We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players\". A page with a shared store is the fastest route both of you can reach (the board already runs on one). Source: council/callsheets/relationship-creature.md (revision of 2026-10-16, 22:40)"
+  }
+ ]
+}
