@@ -24507,6 +24507,163 @@
      "challenger"
     ],
     "pass": "ttv-loop 1"
+   },
+   "ss-three-states": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T19:59:43.784Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-intake-start": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T19:59:57.630Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-markers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:09.791Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-feral-stance": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:30.670Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-not-veiled": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:39.693Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-shift-up": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:52.800Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-cross-element": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:29:59.217Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirit states 1"
+   },
+   "ss-feral-trade": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:30:10.323Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "spirit states 1"
+   },
+   "dp-centre-asked": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:30:24.426Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "The daemon path"
+   },
+   "sl-resting-not-compost": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:30:31.377Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "seed library"
+   },
+   "sl-no-pressure": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:31:09.639Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "steer": "We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "seed library"
+   },
+   "sl-draw-same-task": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:31:18.709Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "seed library"
+   },
+   "sl-board-reads-library": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:31:23.110Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "seed library"
    }
   },
   "questions": {
@@ -26758,6 +26915,17 @@
      "regent"
     ],
     "pass": "podcast pipeline 2"
+   },
+   "ss-push-down": {
+    "decision": "C",
+    "label": "Yes, on any spirit, your own too",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T19:51:39.733Z",
+    "record": "council/ledger/2026-10-16-pull-203123.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "spirit states 1"
    }
   },
   "causes": {
