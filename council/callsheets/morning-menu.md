@@ -9,8 +9,9 @@ stacked on #191): Next item (2) below is built in bars-engine. A live task can b
 today as the same task, or let go from the library with no reason; the council reads it through
 `GET /api/tap-the-vein/seed-library`. Design and rules: `docs/seed-library.md`; positions `sl-resting-not-compost`,
 `sl-no-pressure`, `sl-draw-same-task`, `sl-board-reads-library`. Still open: the board's surface (a seed library panel on the
-Morning tab and "Set aside" beside each intake item), a fresh Opus thread once bars-engine #341 and the seed library
-PR merge; test SL1 on 2026-10-30.
+Morning tab read by `council/morning.py` from the export, and "Set aside" beside each intake item, written to bars-engine),
+a fresh Opus thread that owns bars-engine #342 and Six-faces-council #192 and stacks on #341 and #342 until they merge;
+test SL1 on 2026-10-30.
 
 2026-10-16, thread "lens emergence" (bars-engine #341, this repo's branch claude/lens-emergence-ittf5k): board read 1759
 flipped two positions and added one. Done here: `lens_emerge.py` pitches paraphrase each morning and cite only its date,
