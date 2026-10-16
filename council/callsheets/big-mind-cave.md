@@ -14,17 +14,23 @@ TrustState untouched (`bmt-ontology-local`); the feeling on meeting a voice spaw
 voice counts once as "can you" (`bmt-meeting-spirit`, `bmt-show-spirit`, which changes half of `bms-voices-respond`);
 full 3-2-1 offered, skippable, never a gate (`bmt-321-offer`); the next voice hidden until its chamber
 (`bmt-hidden-next`); free walking and running (`bmt-free-walk`); a closing rite (`bmt-return`); ask again every visit
-(`bmt-ask-again`); the build order (`bmt-build-order`). Questions on the board: `bmt-trust-shown` (recommended A: marks
-for can and will, good in words) and `bmt-solo-depth` (recommended A: the whole path alone behind the check-ins).
+(`bmt-ask-again`); the build order (`bmt-build-order`). He answered both questions A at 22:05 and overruled `bmt-three-moves` and `bmt-show-spirit`; five revised positions and
+question `bmt-accountability` are on the board.
 Build threads, one pull request each, all on bigmind.js so in order:
 1. **Hidden next voice and free walking** (`bmt-hidden-next`, `bmt-free-walk`): started now, Sonnet. The end of each
    hallway shows the shut mouth breathing with its light and a sound, no figure; voices met still wait by the wall; walk
    or run freely, tap-to-walk kept, the chamber threshold still stops you; rewrite the bigmind-test checks that expect a
    figure in the shut mouth. Test T4 at his next play.
-2. **Trust** (`bmt-burden-trust` to `bmt-show-spirit`, `bmt-ask-again`, `bmt-return`): Opus, after build 1 merges and his
-   answer to `bmt-trust-shown` (or on its recommended A if he has not answered by 2026-10-19). Model per the Architect in
-   the pass: `voices[id].trust = { seen:[{dim, kind, at}], promises:[{kind, made, kept}] }`, no words saved; refusals
-   name the missing dimension; the trust stances list for the art thread.
+2. **Trust** (as revised on his answers of 22:05 to 22:11: `bmt-trust-shown` A, `bmt-honest-moves`, `bmt-keep-talking`,
+   `bmt-goodness-models`, `bmt-trust-falls`, `bmt-spirits-vouch`, `bmt-ask-again`, `bmt-return`): Opus, after build 1
+   merges. Marks for can and will, each with a plain line of what the voice saw; good only in the voice's words, against
+   its own picture of goodness (seven drafts in `bmt-goodness-models`). Trust actions anywhere on the path, each voice with
+   a right answer, counted only when the voice's charge eases on the next check-in. Marks keep kept, broken and repaired;
+   a broken promise or a push past a refusal lowers one; owning it repairs it (falls wait on `bmt-accountability` only if
+   he answers B). After the voice is willing to step aside the player can keep talking. The meeting spirit becomes an ally
+   once its voice trusts you and vouches at later chambers and, together, at the centre's mouth. Save per the Architect:
+   `voices[id].trust = { seen:[{dim, kind, at}], promises:[{kind, made, kept}] }` plus `broken`/`repaired`, no words.
+   The trust stances list goes to the art thread.
 3. **Full 3-2-1 and the meeting spirit** (`bmt-321-offer`, `bmt-meeting-spirit`): after build 2; reuse `K.talk321` with an
    optional `beforeOne` hook in cave.js; phase 1 opens only through the voice's permission.
 4. **Art, alongside** (`bmt-build-order`): the WARP daemon bodies (bars-engine #328 lineage, GESTURES.md) replace the
