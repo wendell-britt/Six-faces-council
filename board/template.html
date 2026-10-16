@@ -72,6 +72,15 @@ textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);
 .research .rec{border-left:3px solid var(--accent);padding-left:10px}
 .research details{margin-top:10px;font-size:.88rem}
 .research summary{cursor:pointer;color:var(--muted)}
+/* A publish queue's approval row (pa-approval-publishes, pass podcast-pipeline2): every post whole, cover and words. */
+.queue{display:grid;gap:12px;margin:8px 0 12px;max-width:72ch}
+.qpost{display:grid;grid-template-columns:120px 1fr;gap:12px;background:var(--accent-soft);border-radius:6px;padding:10px 12px}
+.qpost img{width:120px;height:auto;border-radius:4px;display:block}
+.qpost h4{margin:0 0 4px;font-size:.95rem}
+.qpost .qwhen{font-size:.82rem;color:var(--muted);margin:0 0 6px}
+.qpost .qcap{font-size:.92rem;white-space:pre-wrap;margin:0 0 8px}
+.qpost .qnet{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+@media (max-width:480px){.qpost{grid-template-columns:1fr}.qpost img{width:160px}}
 .research a{color:var(--accent);overflow-wrap:anywhere}
 .opts{display:grid;gap:8px;margin-top:4px}
 .opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;max-width:72ch}
@@ -557,6 +566,20 @@ function researchBox(item){
    of the old shape still finds one answer. */
 const picks = st => st.choices || (st.choice ? [st.choice] : []);
 const pickLabel = (q, l) => picks(l).map(v => (q.options.find(o => o.v === v) || {}).label || v).join(', ');
+/* The approval row for a publish queue carries queue.posts (council/podcast/publish/publish.py approval-row). Each post
+   shows whole, its cover or image and every network's caption, so the approval is a real yes (Shaman, podcast-pipeline2). */
+const NET = {instagram:'Instagram', facebook:'Facebook Page'};
+function queueBox(q){
+  const posts = (q.queue && q.queue.posts) || [];
+  if (!posts.length) return '';
+  const day = s => { const d = new Date(s); return isNaN(d) ? s : d.toLocaleString(undefined, {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); };
+  return `<div class="queue">${posts.map(p => `<div class="qpost">
+    ${/^https:\/\//.test(p.image_url || '') ? `<img src="${esc(p.image_url)}" alt="${esc((p.kind === 'reel' ? 'Cover for ' : 'Image for ') + (p.title || p.id))}" loading="lazy">` : '<div></div>'}
+    <div><h4>${esc(p.title || p.id)}</h4>
+    <p class="qwhen">${esc(day(p.at))} · ${esc(p.kind === 'reel' ? 'Reel' + (p.clip ? ', ' + p.clip : '') : 'image post')} · ${esc((p.networks || []).map(n => NET[n] || n).join(' and '))}${(p.collaborators || []).length ? ' · with ' + esc(p.collaborators.join(', ')) : ''}</p>
+    ${Object.entries(p.captions || {}).map(([n, c]) => `<span class="qnet">${esc(NET[n] || n)}</span><p class="qcap">${esc(c)}</p>`).join('')}</div>
+  </div>`).join('')}</div>`;
+}
 function qRow(q){
   const st = local.questions[q.id] || {choice:'', steer:''};
   return `<section class="row" id="q-${q.id}">
@@ -564,6 +587,7 @@ function qRow(q){
     <p class="pos">${esc(q.q)}</p>
     ${reviewBox('questions', q)}
     ${researchBox(q)}
+    ${queueBox(q)}
     <p class="why"><span>why only you</span> ${esc(q.why_you)}</p>
     <p class="why"><span>why not before</span> ${esc(q.not_before)}</p>
     ${q.max > 1 ? `<p class="why"><span>pick</span> up to ${q.max}</p>` : ''}
