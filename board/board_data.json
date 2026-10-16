@@ -24721,6 +24721,18 @@
      "regent"
     ],
     "pass": "seed library"
+   },
+   "sg-tinker-family": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T21:55:10.680Z",
+    "record": "council/ledger/2026-10-16-pull-215510.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit round 13"
    }
   },
   "questions": {
@@ -28306,7 +28318,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-16T20:41:35.561Z",
+ "steps_recorded_through": "2026-10-16T21:20:00Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
