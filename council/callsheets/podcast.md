@@ -2,6 +2,7 @@
 # Podcasts and outreach (MTGOA, Flirtcraft)
 
 ## Next
+- 2026-10-16, pass `podcast-pipeline1` (`council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md`): posting is the bottleneck. Waiting on `pp-who-schedules` (Metricool queue vs one computer sitting vs as now); episode 2's remaining clips are the pilot. Once he answers: for Metricool, suggest the connector and build the queue for ep 2; for the sitting, write a posting pack and one computer step. Zoom-to-Movies step is on `podcast-pipeline`. Tests: 2026-10-26 ep 2 fully out or scheduled; ep 3 at four touches or fewer.
 - Ep 2 (Tom Hurlburt): Your steps `podcast-ep2-youtube` after `pod2-title`/`pod2-thumb-pick` (aging parents title and thumbnail A picked). Ep 2 clips post Oct 9, 12, 16, 19 (`podcast-ep2-clips`); captions carry `[episode link]`.
 - Ep 1: Spotify link (step 5 of `podcast-spotify`) goes into flirtcraft `lib/podcast.ts` `embedUrl` and the Spotify `href`. Clips: `podcast-ep1-clips`, `flirtcraft-ep1-clips`; captions wait on `pod1-isaac-handle` and the link.
 - Recut episode 1 longer per `pod-clip-length` (new thread).
