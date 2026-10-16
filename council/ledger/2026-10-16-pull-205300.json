@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T20:53:00.668Z",
+ "answers": {
+  "sl-resurface-ladder": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:52:53.505Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sl-resurface-not-a-draw": {
+   "kind": "position",
+   "savedAt": "2026-10-16T20:53:00.668Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
