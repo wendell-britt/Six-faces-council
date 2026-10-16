@@ -1,0 +1,104 @@
+# Publishes approved podcast posts to Instagram and the Facebook Page, with no AI involved (pass podcast-pipeline2,
+# pa-github-timer). Every fifteen minutes it runs council/podcast/publish/publish.py on the queues in
+# council/podcast/queue/, publishes what is due in queues Wendell approved on the board (pa-approval-publishes), and
+# commits the post ids back. A post that fails or misses its window opens an issue assigned to him (pa-failure-step).
+# On Mondays it reads each published post's numbers into its queue (pa-numbers-auto).
+# Secret: META_TOKEN, the system user token he pastes himself (pa-token-in-secrets, Your steps meta-publishing-setup).
+# Variables (optional): META_PAGE_ID when the token reaches more than one Page, META_GRAPH_VERSION.
+# With no META_TOKEN it runs only the offline dry run (publish.py plan), so the timer is safe to land before setup.
+name: publish-queue
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+    - cron: "30 15 * * 1"   # Mondays 15:30 UTC: the numbers
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "plan (offline dry run), accounts (check the token), container-test (the gate before episode 3), numbers, or run"
+        required: true
+        default: plan
+        type: choice
+        options: [plan, accounts, container-test, numbers, run]
+      clip:
+        description: "container-test only: release:<tag>/<asset>, e.g. release:pod-ep02/ep02-clip1-how-long.mp4"
+        required: false
+        default: ""
+      cover:
+        description: "container-test only: repo path of the cover JPEG on main"
+        required: false
+        default: ""
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: publish-queue
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      META_TOKEN: ${{ secrets.META_TOKEN }}
+      META_PAGE_ID: ${{ vars.META_PAGE_ID }}
+      META_GRAPH_VERSION: ${{ vars.META_GRAPH_VERSION || 'v24.0' }}
+      MODE: ${{ inputs.mode || (github.event.schedule == '30 15 * * 1' && 'numbers' || 'run') }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - name: Check the queues
+        continue-on-error: true   # an invalid queue is skipped by the run; the others still publish
+        run: python3 council/podcast/publish/publish.py check
+      - name: Dry run (no token, or asked for)
+        if: env.META_TOKEN == '' || env.MODE == 'plan'
+        run: |
+          python3 council/podcast/publish/publish.py plan | tee plan.log
+          if [ -z "$META_TOKEN" ]; then echo "::notice::META_TOKEN is not set; dry run only"; fi
+      - name: Publish what is due
+        if: env.META_TOKEN != '' && env.MODE == 'run'
+        run: python3 council/podcast/publish/publish.py run --failures-out failures.json
+      - name: Read the numbers
+        if: env.META_TOKEN != '' && env.MODE == 'numbers'
+        run: python3 council/podcast/publish/publish.py numbers
+      - name: Check the token's accounts
+        if: env.META_TOKEN != '' && env.MODE == 'accounts'
+        run: python3 council/podcast/publish/publish.py accounts
+      - name: Container test (uploads, never publishes)
+        if: env.META_TOKEN != '' && env.MODE == 'container-test'
+        env:
+          CLIP: ${{ inputs.clip }}
+          COVER: ${{ inputs.cover }}
+        run: python3 council/podcast/publish/publish.py container-test --clip "$CLIP" --cover "$COVER"
+      - name: Commit what was published
+        if: always() && env.META_TOKEN != ''
+        run: |
+          git config user.name "publish-queue[bot]"
+          git config user.email "publish-queue[bot]@users.noreply.github.com"
+          git add council/podcast/queue
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Publish queue: record ${MODE} $(date -u +%FT%TZ)"
+          for i in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; done
+          exit 1
+      - name: Open an issue for each failure
+        if: always() && hashFiles('failures.json') != ''
+        run: |
+          python3 - <<'EOF'
+          import json, subprocess
+          for x in json.load(open("failures.json")):
+              if x["retrying"]:
+                  continue   # the next run tries again; an issue opens when it stops trying
+              title = f"Post not published: {x['title']} on {x['network']} ({x['status']})"
+              body = (f"{x['title']} was due on {x['network']} at {x['at']} and was not published.\n\n"
+                      f"What failed: {x['error']}\n\nStage: {x['stage']}. "
+                      + ("The timer will try again on its next run.\n\n" if x["retrying"] else
+                         "The timer will not try again on its own.\n\n")
+                      + f"Queue: `{x['queue']}`, post `{x['post']}`. Raised by publish-queue (pa-failure-step).")
+              subprocess.run(["gh", "issue", "create", "--title", title, "--body", body,
+                              "--assignee", "wendell-britt"], check=False)
+          EOF
+      - name: Summary
+        if: always()
+        run: |
+          { echo "### Publish queue (${MODE})"; echo '```'; python3 council/podcast/publish/publish.py check;
+            cat plan.log 2>/dev/null; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
