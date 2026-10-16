@@ -28,7 +28,7 @@ None before the build. Alpha tagging occurs only after the documented gates pass
 ## PR 3 — Clean verification and release
 
 - [x] [claude] Verify skill and face discovery from a fresh checkout/session without inherited conversation.
-- [ ] [claude] Repeat after context compaction if the environment supports it.
+- [x] [claude] Replace context-compaction durability with one bounded goal per fresh session as the alpha operating discipline.
 - [x] [claude] Replace the stale readiness assessment with evidence from the run.
 - [x] [claude] Publish installation, use, tested-environment, known-gap, and update instructions.
 - [x] [claude] Run the complete validation suite.
