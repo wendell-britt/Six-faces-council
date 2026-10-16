@@ -36,6 +36,11 @@ Build threads, one pull request each, all on bigmind.js so in order:
 4. **Art, alongside** (`bmt-build-order`): the WARP daemon bodies (bars-engine #328 lineage, GESTURES.md) replace the
    placeholder daemon body in the Big Mind cave first, under a phone load budget; then dressing the cave; trust stances
    once build 2 names them. Owned by the blender-frame-flesh-warp strand.
+   **Built 2026-10-16, bars-engine #353:** bodies and dressing in (details in blender-frame-flesh-warp.md). Phone page
+   https://claude.ai/artifact/4i1rCSGwGAwhjbjK7s7TLC. Left for the bigmind.js owner: the `arrive` lines still describe
+   the stand-in's props (a shield, a measuring rod, a lens, a wrench, a bundle, a crack); rewrite them to the held
+   movements in GESTURES.md in whichever build next edits bigmind.js. The centre's child is still the avatar; the
+   baked `player` body is ready for it (`K.buildDaemon(THREE, row, h)` with a row whose id is `player`).
 Tests T1 (solo against facilitated, by 2026-10-30) and T2 (card-only parity, after build 2) are in the pass.
 
 bars-engine PR #282 (branch `claude/project-thread-0wytio`, stacked on #278) holds the 20:43 steer (every sit-down spawns a spirit,
