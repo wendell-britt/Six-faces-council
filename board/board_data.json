@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "positions": [
   {
    "id": "build",
@@ -8677,36 +8677,210 @@
    "why": "The 20:09 stall was silent because the step that failed was the one that would have reported it, and staleness.py runs inside the same scheduled job it watches. The page's note is the one alarm outside the job, but it measures the last pull, which GitHub's schedule makes late most of the time (docs/failure-modes.md, Root cause). bars-engine already holds every save's receivedAt and recordedAt."
   },
   {
-   "id": "zo-division",
+   "id": "pp-posting-is-the-bottleneck",
    "faces": [
-    "architect",
-    "sage",
-    "diplomat"
+    "challenger",
+    "architect"
    ],
-   "pass": "zo-environment",
+   "pass": "podcast pipeline 1",
    "auto": true,
-   "pos": "This environment (Zo) is the standing machine: scheduled sense-and-respond work, needs_work execution, bars-engine development, hosting of community surfaces, and the SMS/email channel. Claude sessions remain where rulings happen: the store, the artifact, the republish. Main is the one merge point both doors write through.",
-   "why": "Follows x-one-home (pass 4): one place to look beats separated surfaces. Verified today: push access, deterministic rebuild, needs_work.py runs from the clone."
+   "pos": "The making is not the bottleneck: Claude's work on episode 2 took about half an hour (titles, thumbnails and the description in 9 minutes, four clips and covers in 16). The hours and the stalls are in the posting: none of episode 2's seven posting steps is ticked nine days later, and episode 1's clip 3 is past due. So the council automates the posting side first. This stands unless you flip it.",
+   "why": "The steps lists podcast-ep2-clips, podcast-ep1-clips and podcast-ep2-youtube, read 2026-10-16. What you did in one computer sitting got done (the four YouTube steps; the 10/12 catch-up); single posts spread over days on the phone slipped. Source: council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md"
   },
   {
-   "id": "zo-gates",
+   "id": "pp-one-sitting",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "podcast pipeline 1",
+   "auto": true,
+   "pos": "Each episode gets one sitting on the board: the title, the thumbnail and the clip moments together as one battle, and the same thread cuts the clips and covers right after your picks. No more starting a second thread for a recut. This stands unless you flip it.",
+   "why": "Episode 1's clips took three threads, and you had to ask \"ok we've made those changes?\" when a recut had been put off to a thread you had to start. The clip rules found in those rounds are now in the cut and cover scripts. Source: council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md"
+  },
+  {
+   "id": "pp-zoom-to-movies",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "podcast pipeline 1",
+   "auto": true,
+   "pos": "Zoom saves your local recordings into Movies/Zoom on your Mac, a folder this project can already reach, so a session finds each recording itself and you no longer attach it. You change the setting once (Your steps, podcast-pipeline). Recording in HD fixes episode 1's 640 by 360 source. This stands unless you flip it.",
+   "why": "pod-zoom-phone: Claude's cloud sessions cannot reach zoom.us. ~/Movies is one of your approved folders. Source: council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md"
+  },
+  {
+   "id": "pp-guest-kit",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "podcast pipeline 1",
+   "auto": true,
+   "pos": "Each guest gets one Google Drive folder with their clips, covers and captions, and Claude writes the note to them as a draft in your Gmail. You send it. This stands unless you flip it.",
+   "why": "Tom has no social accounts, so his clips go by text or email (podcast-ep2-clips-02, still open), and you ruled tag-only for Isaac (pod1-isaac-handle). A message to a guest is yours to send. Source: council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md"
+  },
+  {
+   "id": "pp-done-means-out",
    "faces": [
     "regent"
    ],
-   "pass": "zo-environment",
+   "pass": "podcast pipeline 1",
    "auto": true,
-   "pos": "What never runs from Zo: faces.yaml edits, canonical prose, store ingestion, artifact republish. The reserved list binds every machine equally; non-negotiables travel.",
-   "why": "The reserved list is in council/faces.yaml; board/pull.py and the skill's landing rules name the store and republish as Claude-side work."
+   "pos": "An episode counts as done when every post on its list is published or scheduled and the guest has their kit, not when the files exist. This stands unless you flip it.",
+   "why": "Episode 2's files were finished on 10/08 and nothing had gone out by 10/16. Source: council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md"
   },
   {
-   "id": "zo-guards",
+   "id": "pp-hours-to-guesting",
+   "faces": [
+    "sage",
+    "challenger"
+   ],
+   "pass": "podcast pipeline 1",
+   "auto": true,
+   "pos": "The hours this frees are counted against your guest pitches (Your steps coaching-pipeline-04), the pipe you picked for bringing in money. This stands unless you flip it.",
+   "why": "lg-first-pipe, ruled guesting on 2026-10-10. Source: council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md"
+  },
+  {
+   "id": "of-load-where-decided",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The game ontology loads only where a design decision is made: a council pass on a game, mechanic or design tool, and a strand thread that designs a mechanic. Board reads, pulls, Nonprofit saves, needs-work and the compost pass load none of it; they carry its rules as a sentence or a check. This stands unless you flip it.",
+   "why": "All five faces agreed. The lightest profile costs about 5,000 tokens and the others about 29,000, paid again on every tool call in threads that already open at 100,000 or more. docs/ontology-in-flows.md has the table. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-callsheet-line",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "A strand that designs game mechanics may carry one 'ontology:' line on its callsheet naming the one profile its threads load. Its first design thread sets it; old sheets are not backfilled; a loop round may name one too, and without it a round loads nothing. This stands unless you flip it.",
+   "why": "Four faces support it now. The Challenger holds it until a test shows the ontology changed a decision: test T1 replays three recent mechanic positions by 2026-10-23, and if none would have changed, the line is dropped. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-compost-split",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The daily compost pass now tells two drops apart: composted (nothing depends on it; it comes back only as a new step that cites the old one) and superseded (a duplicate or a later change, naming what replaced it). It never says a step was dropped because you did not act, and it never sorts the ontology folder. This stands unless you flip it.",
+   "why": "The ontology's composting decision: composting ends an obligation and owes nothing back, and it is not supersession. docs/compost-pass.md carries the wording. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-term-check",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "A free script checks callsheets, docs and open board rows for retired or reserved ontology words and for wording that names your rest as a failing. It warns and never blocks a save. This stands unless you flip it.",
+   "why": "Today's record came back clean, so the Challenger counts it as unproven. It costs no tokens to run and is kept until 2026-11-16; if it has caught nothing by then, it is dropped. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-precedence",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The council's working rules govern how work moves (where, when, which model, who is asked). The ontology's binding decisions govern what game objects mean. A real conflict between the two goes on the board as a row, and neither wins silently. Claude threads never edit the ontology text; they write a position or a note for the Codex side. This stands unless you flip it.",
+   "why": "Both sets of rules are yours, so the council cannot settle a conflict between them; the manifest names you as owner of the ontology. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-wave-room",
+   "faces": [
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "The name 'WAVE room' stays. This stands unless you flip it.",
+   "why": "The ontology reserves WAVE for the Open Up breathing practice. The room runs the manual W.A.V.E. breath (Welcome, Acknowledge, Validate, Exhale), per the wave-room callsheet of 2026-10-13, so the name fits. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "of-sabotage-offer",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "ontology flows 1",
+   "auto": true,
+   "pos": "Your 2026-09-09 lesson, to assume self-sabotage when there is a block with the choice to skip, is used as an offered frame and never recorded as a finding. This stands unless you flip it.",
+   "why": "Your lesson calls it an offer ('An offer is not a requirement'), and the ontology's roadblock decision allows an offered intention hypothesis but never an asserted one. faces.yaml is unchanged. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "pa-github-timer",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Approved posts publish from a new GitHub timer on the council repo every fifteen minutes, beside the board's own timer. Clips go to Meta by direct upload from a GitHub release, so there is no paid scheduler and no paid host: the build costs $0 a month for Instagram and Facebook. This stands unless you flip it.",
+   "why": "Instagram's API has no scheduling field, so something must wake at the hour. GitHub Actions is free on the public council repo, as board-pull.yml shows. Meta allows resumable upload of a local file for Facebook Login for Business apps. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-approval-publishes",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Your approval of an episode's queue on this board is the publishing act. Each post shows whole, with its cover, caption, networks and date. Nothing goes out without the approval, and a post changed afterwards goes back to you. This stands unless you flip it.",
+   "why": "Posting under your name is reserved to you (reserved in faces.yaml); pass one recorded the approve-once shape. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-token-in-secrets",
+   "faces": [
+    "regent"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "The Meta token is a never-expiring system user token you make and paste into the council repo's GitHub secrets yourself (Your steps, meta-publishing-setup). It never appears in chat, a step, a note or a file. This stands unless you flip it.",
+   "why": "A secret is never written to a step (pipeline.yaml); only the timer reads it. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-pilot-ep3",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Episode 2 still goes out through the Meta Business Suite sitting you picked. Episode 3 is the first queue, once a dry run passes: one of episode 2's clips uploads to Meta without being published. This stands unless you flip it.",
+   "why": "Your pick on pp-who-schedules; the Challenger's falsification test. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-numbers-auto",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Once posting runs, the timer reads each post's plays, saves and shares every Monday into the episode's results, and your 'note the numbers' step is retired. This stands unless you flip it.",
+   "why": "pod-promo-rhythm's review after three episodes needs the numbers; both of your numbers steps are still open. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-failure-step",
    "faces": [
     "challenger"
    ],
-   "pass": "zo-environment",
+   "pass": "podcast pipeline 2",
    "auto": true,
-   "pos": "Before any scheduled agent in Zo acts on council state: (1) one board-row write is tested against a live board-pull run; (2) the token-quota rule is wired into any scheduled Zo work. Both are conditions, not rejections.",
-   "why": "Falsification test is named in the pass; the quota rule exists in this workspace's rules. The race is real because the 15-minute workflow commits to the same file."
+   "pos": "A post that fails to publish puts a step on your list within the hour, saying what failed and what to do. This stands unless you flip it.",
+   "why": "Flirtcraft's deploys failed for three weeks unheard (fc-silent-failure). Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
   }
  ],
  "questions": [
@@ -14243,6 +14417,57 @@
      "v": "artifact",
      "label": "No: keep the artifact",
      "c": "The board stays a claude.ai artifact republished from the owning organization."
+    }
+   ]
+  },
+  {
+   "id": "pp-who-schedules",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "podcast pipeline 1",
+   "q": "Who puts each episode's posts on the schedule? The council recommends Claude queueing them in Metricool for your one approval per episode.",
+   "why_you": "Posting under your name and money are both reserved to you, and the podcast move says a session never schedules. Episode 2's remaining clips are the pilot for whichever you pick. Source: council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md",
+   "not_before": "The move was written on 2026-10-07 with posting reserved and no scheduler on record; this is the first pass on the pipeline itself.",
+   "options": [
+    {
+     "v": "metricool",
+     "label": "Claude queues them in Metricool; you approve once per episode (council lean: Shaman, Architect)",
+     "c": "You connect Metricool to Claude and pick a paid plan (from about $25 a month, plus $10 for X, by Buffer's 2026 figures). Every post sits in the queue with its cover, caption and date, and Claude reads the clip numbers back each Monday."
+    },
+    {
+     "v": "sitting",
+     "label": "You schedule them in one computer sitting (Challenger)",
+     "c": "Nothing is bought. Claude prepares a posting pack, Meta Business Suite schedules Instagram and Facebook for free, and X goes up by hand. The numbers stay a manual step."
+    },
+    {
+     "v": "by-hand",
+     "label": "Keep posting each clip on its day",
+     "c": "Nothing changes, and the posts keep depending on finding the moment each day."
+    }
+   ]
+  },
+  {
+   "id": "pa-x-api",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "podcast pipeline 2",
+   "q": "Should X posts go out by the same timer? The council recommends keeping X by hand until the clips' numbers show X brings anyone.",
+   "why_you": "It is money and posting under your name. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md",
+   "not_before": "Pass one kept X out of Meta Business Suite, and nothing had priced X's API until today.",
+   "options": [
+    {
+     "v": "by-hand",
+     "label": "Keep X by hand (council lean: Challenger, Regent)",
+     "c": "It costs nothing. You post on x.com, or use its own schedule button in the same sitting."
+    },
+    {
+     "v": "timer",
+     "label": "Add X to the timer",
+     "c": "About $0.20 a post with a link by postproxy.dev's 2026 figures, so about $1 an episode, bought as X credits. You make an X developer account and its keys go into GitHub secrets the same way."
     }
    ]
   }
@@ -23659,6 +23884,118 @@
      "regent"
     ],
     "pass": "nonprofit structure"
+   },
+   "zo-division": {
+    "decision": "stands",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-zo-environment-ruling.json",
+    "faces": [
+     "architect",
+     "sage",
+     "diplomat"
+    ],
+    "pass": "zo-environment"
+   },
+   "zo-gates": {
+    "decision": "stands",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-zo-environment-ruling.json",
+    "faces": [
+     "regent"
+    ],
+    "pass": "zo-environment"
+   },
+   "zo-guards": {
+    "decision": "stands",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-zo-environment-ruling.json",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "zo-environment"
+   },
+   "pp-posting-is-the-bottleneck": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:31:59.731Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-one-sitting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:06.915Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-zoom-to-movies": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:12.948Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-guest-kit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:16.031Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-done-means-out": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:20.349Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "pp-hours-to-guesting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:26.015Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "podcast pipeline 1"
+   },
+   "np-pull-alarm-age": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:32:35.998Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "board plumbing"
    }
   },
   "questions": {
@@ -25874,6 +26211,30 @@
      "regent"
     ],
     "pass": "board plumbing"
+   },
+   "zo-automations": {
+    "decision": "census",
+    "label": "Run the census and propose the list",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:31:27.098Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "zo-environment"
+   },
+   "pp-who-schedules": {
+    "decision": "sitting",
+    "label": "You schedule them in one computer sitting (Challenger)",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:31:51.130Z",
+    "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "podcast pipeline 1"
    }
   },
   "causes": {
@@ -27199,8 +27560,8 @@
  ],
  "steps_recorded_through": "2026-10-14T22:43:52Z",
  "morning": {
-  "date": "2026-10-15",
-  "gathered_at": "2026-10-15T21:55:10Z",
+  "date": "2026-10-14",
+  "gathered_at": "2026-10-14T18:40:28Z",
   "sealed": "2026-10-15",
   "pick_limit": 7,
   "goals": [],
@@ -29058,6 +29419,335 @@
       "text": "Prompt deck draw + shared hand: (52 topo; rank→Wake/Clean/Grow/Show levels + wild; pick deck → draw; one 5-slot hand across archetype+nation decks; per-deck play-cycle discard; reshuffle when empty; discard ≠ grid — BarBinding untouched…",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/prompt-deck-draw-hand/spec.md",
       "note": "1.34 PDH",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
+   },
+   {
+    "key": "menu",
+    "title": "From your free write",
+    "blurb": "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).",
+    "items": [],
+    "note": "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
+   },
+   {
+    "key": "board",
+    "title": "Waiting on you on the board",
+    "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
+    "items": [
+     {
+      "id": "board-jev-asset-piles",
+      "text": "For the asset trial, how many statements do you label, and which ones first?",
+      "ref": "jev-asset-piles",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "question, jev asset",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-loop-ahead-two",
+      "text": "Art and design rounds now start themselves. Each strand with a contract (council/loops/<strand>.json, docs/loops.md) names its next round, how it is checked and its budget; when a round ends, the coordinator starts the next one without…",
+      "ref": "loop-ahead-two",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, loop engineering",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-loop-auto-gate",
+      "text": "A round starts itself only when its gate is auto: no money spent, no account signed into or changed, nothing published outside the project, and no council/faces.yaml change. A round that needs your eyes, money or accounts waits and shows…",
+      "ref": "loop-auto-gate",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, loop engineering",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-lens-board-reads-goals",
+      "text": "The board reads your Lens goals every morning through a goals export from bars-engine, without needing a sealed bars-engine menu, and shows them on the Morning tab under each domain. An empty domain shows as \"No goals here yet\".",
+      "ref": "lens-board-reads-goals",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, lenses 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-lens-pitch-goals",
+      "text": "When a domain has no goals, the board's Tap the Vein box offers that domain's prompt. The board read pitches year goals from what you wrote, quoting your line, and each pitch you keep is written to bars-engine as an active Lens goal. The…",
+      "ref": "lens-pitch-goals",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, lenses 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-lens-intake-align",
+      "text": "The full Tap the Vein intake lists everything you can do today, and the board read gives each item one line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches. Each line carries a written reason, not a word…",
+      "ref": "lens-intake-align",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, lenses 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-lens-order",
+      "text": "Build order: the goals export and the Lenses panel first, goal pitches second, the full intake third. The alignment check needs goals to align to. Locking one domain at bars-engine.vercel.app/lenses/onboarding before then is optional and…",
+      "ref": "lens-order",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, lenses 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-lens-domains-stand",
+      "text": "bars-engine's five domains (relationships, career, money, health, allyship) stay as the Lens domains until you name others.",
+      "ref": "lens-domains-stand",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, lenses 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
+   },
+   {
+    "key": "prs",
+    "title": "Open pull requests",
+    "blurb": "Pull requests open in the council, bars-engine and the Game Master's guide.",
+    "items": [
+     {
+      "id": "pr-six-faces-council-135",
+      "text": "Read and send Lens goals through the environment's key",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/135",
+      "note": "six-faces-council #135",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-six-faces-council-115",
+      "text": "Move file: the guessing test's two checks (wording and taught player)",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/115",
+      "note": "six-faces-council #115 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-six-faces-council-112",
+      "text": "Record shame1 rulings in the shame-coaching callsheet",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/112",
+      "note": "six-faces-council #112 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-six-faces-council-100",
+      "text": "Blender pipeline test call sheet: procgen roots and mushrooms",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/100",
+      "note": "six-faces-council #100 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-six-faces-council-77",
+      "text": "Root call sheet: shell built, next is the phone test",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/77",
+      "note": "six-faces-council #77 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-318",
+      "text": "Spirit art proof: the Shellback from gas to highest ally form",
+      "link": "https://github.com/johnair01/bars-engine/pull/318",
+      "note": "bars-engine #318 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-317",
+      "text": "Cave: free walking everywhere, and the hall of the six's gates become doors",
+      "link": "https://github.com/johnair01/bars-engine/pull/317",
+      "note": "bars-engine #317 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-316",
+      "text": "Cave rooms from a written description: spec, builder, first proof",
+      "link": "https://github.com/johnair01/bars-engine/pull/316",
+      "note": "bars-engine #316 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-315",
+      "text": "J5: robe, sash and topknot as skinned garments on the cave figure",
+      "link": "https://github.com/johnair01/bars-engine/pull/315",
+      "note": "bars-engine #315 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-314",
+      "text": "Big Mind cave: the daemon path's seven chambers and the child at the centre",
+      "link": "https://github.com/johnair01/bars-engine/pull/314",
+      "note": "bars-engine #314 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-307",
+      "text": "Cave levels: home, the hall of the six, six tunnels, the centre of the self",
+      "link": "https://github.com/johnair01/bars-engine/pull/307",
+      "note": "bars-engine #307 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-293",
+      "text": "Blender pipeline: Blendkit tests pass; procedural roots and mushrooms",
+      "link": "https://github.com/johnair01/bars-engine/pull/293",
+      "note": "bars-engine #293 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-279",
+      "text": "Setup Vercel Web Analytics integration",
+      "link": "https://github.com/johnair01/bars-engine/pull/279",
+      "note": "bars-engine #279 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-256",
+      "text": "council: daemons and casting into bars-engine; Jev pass and trial spec",
+      "link": "https://github.com/johnair01/bars-engine/pull/256",
+      "note": "bars-engine #256 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-230",
+      "text": "Add Day 12 resource question practice",
+      "link": "https://github.com/johnair01/bars-engine/pull/230",
+      "note": "bars-engine #230",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-190",
+      "text": "Add Card-to-Carousel Brief flow",
+      "link": "https://github.com/johnair01/bars-engine/pull/190",
+      "note": "bars-engine #190",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-164",
+      "text": "PMA Phase B + humane notifications (HNTF)",
+      "link": "https://github.com/johnair01/bars-engine/pull/164",
+      "note": "bars-engine #164",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-156",
+      "text": "Implement Lenses onboarding and TTV lineage",
+      "link": "https://github.com/johnair01/bars-engine/pull/156",
+      "note": "bars-engine #156",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-140",
+      "text": "Add playable Inner Garden Chapter 1",
+      "link": "https://github.com/johnair01/bars-engine/pull/140",
+      "note": "bars-engine #140 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-73",
+      "text": "feat: ship #41 campaign hierarchy wiring + #45 walkable demo fallback",
+      "link": "https://github.com/johnair01/bars-engine/pull/73",
+      "note": "bars-engine #73 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-70",
+      "text": "fix(backend): standardize port to 8080 in railway.json",
+      "link": "https://github.com/johnair01/bars-engine/pull/70",
+      "note": "bars-engine #70",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-61",
+      "text": "feat: port handbook/wiki UI pages and API docs",
+      "link": "https://github.com/johnair01/bars-engine/pull/61",
+      "note": "bars-engine #61 (draft)",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"

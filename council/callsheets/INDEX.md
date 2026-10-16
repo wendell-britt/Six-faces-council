@@ -1,11 +1,13 @@
 # Call sheets
 
 Read this file, then the one sheet for your strand. At the end update that sheet and this file; append to
-`council/HANDOFF.md` only as the archive.
+`council/HANDOFF.md` only as the archive. A sheet's `ontology:` line, when it has one, names the only ontology
+profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
+- [ontology-flows](ontology-flows.md), 2026-10-16: which flow loads the design ontology (pass ontology-flows 1, #184); tests T1 to T4 due 10-21 to 11-16.
 - [element-settings](element-settings.md), 2026-10-14: a cave-like land for each element (metal cave, fire mountain, earth plains, water island with lagoon, wood forest); design only; five `el-*` positions; wood first after the demo.
-- [perceptual-shadow](perceptual-shadow.md), 2026-10-14: perceptual shadow in the WAVE room built (bars-engine PR on #324): two signals, four shadows, practices, polarity; `ps-polarity-poles` on the board.
+- [perceptual-shadow](perceptual-shadow.md), 2026-10-16: done. Perceptual shadow (both poles, shadow spirits with the daemons' question sets, the full reveal) merged in bars-engine #326.
 - [spirit-dissolve](spirit-dissolve.md), 2026-10-14: dissolve a spirit into yourself, ice to water to gas to pure spirit, for mana into the element's stat; built in the cave (bars-engine #327, on #324), positions `sd-density-ladder`, `sd-mana-to-stat`, `sd-gone-after`; next his play, then the Big Mind cave and the spirit generator's allies.
 - [jev-asset](jev-asset.md), 2026-10-14: first run done, mark passed (2 of 2 catches, 1 false flag of 17); next a second unseen pile with a code map (`council/jev/results_2026-10-14.md`).
 - [chapter1-demo](chapter1-demo.md), 2026-10-14: Kickstarter Chapter 1 demo; extract, story, encounters and the phone page with Pip and the Shellback spirits drafted (sprout #52 to #55, stacked); next is step 5, his phone play, in a fresh thread.
@@ -33,7 +35,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 - [wave-battle](wave-battle.md), 2026-10-13: Ama Rell's Fixer build 2 (ally spirits fight, own power when none) on sprout #50, page https://claude.ai/artifact/71kzY5py5F4oxd54iQd3rU; waits on Wendell's phone play, then B1.
 - [spirit-generator](spirit-generator.md), 2026-10-13: first slice built on sprout #51 (stacked on #50), page https://claude.ai/artifact/YBSfbjXF3gaTmW2ZxA1M3w, all three `sg-first-slice` checks pass; `sg-work-grows` = A, overcharge consequence built (`sg-overcharge`); waits on his phone play (board step `spirit-generator-01`). 2026-10-14: look and feel research page https://claude.ai/artifact/THk55W1vRRTm49iwJifh4j; `sg-body-from` on the board before spirit art. Round 7 (his tortoise snout fix, then Meridia's nation style) on page https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85 v9; round 8 (the Romp fox) on v10; his round 8 look fixed on v11; round 9 (the otter) on v12; round 10 (kid goat) may start; image prompts in `council/loops/prompts/spirit-generator-r5.md`, `-r7.md` and `-r8.md`. 2026-10-14 round 10: the Romp complete (fox, otter, kid goat) on bars-engine #318, proof page version 13; his look at round 9 (otter legs, rock) started round 11: Romp creatures stand on four feet, rig-ready, proof page version 14, position `sg-romp-four-feet`; rig patch for #325 in `round11/rig/`; waits on his look.
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.
-- [board-plumbing](board-plumbing.md), 2026-10-16: `board-home` first half built (bars-engine #338, draft: `/board/council`); next the council pull on main, the store move into Postgres, republish, repointing, retire; plus check pickup prompts, record answers saved since 10-03.
+- [board-plumbing](board-plumbing.md), 2026-10-16: board-home build: bars-engine `/board/council` serves `board/council-board.html` behind the owner sign-in (bars-engine commit eb41f7eb), shim parameterized, save contract confirmed council-aware; left: move the artifact's saved store into Postgres with ArtifactData (Claude session in the owning org), then point AGENTS.md, CLAUDE.md, docs/pickup.md and the pickup routine at the new page; retire the artifact after a few clean days. Send-bar patch and pull-route board check in bars-engine #338 (draft).
 - [friendcraft](friendcraft.md), 2026-10-06: redesign pass, Part 0 interview, outline, each its own thread.
 
 ## Closed (no sheet)

@@ -78,3 +78,6 @@ element's. Until then `element` stays null. The dissolving thread (#327) reads i
 ## State
 
 - 2026-10-14: both poles built in bars-engine #326 (stacked on #324 and #317), shadow-test 50 of 50, shadow spirits and the full reveal included; cave-test 385 of 385. Marked ready.
+- 2026-10-14: the shadow spirit asks each daemon's own question set (bars-engine #329's `daemons/questions.js`); a boss
+  that names a daemon offers that daemon next; one finished set is one practice. shadow-test 54 of 54.
+- 2026-10-16: merged to main in bars-engine #326, after #317 and #324. Nothing open on this strand.

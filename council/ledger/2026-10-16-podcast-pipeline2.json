@@ -1,0 +1,613 @@
+{
+ "date": "2026-10-16",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "podcast",
+ "record": "council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md",
+ "report": null,
+ "product": null,
+ "called_by": "Wendell, Mastering the Game of Allyship project chat, 2026-10-16 17:42 UTC (\"let's create a plan for getting this set up including costs etc\"); relayed by the project coordinator",
+ "convened_by": "council",
+ "invoked_from": "claude-code",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    8,
+    6,
+    7,
+    9
+   ],
+   "changing_lines": [
+    4,
+    6
+   ],
+   "n": 42,
+   "name": "Windfall",
+   "cn": "益",
+   "pinyin": "yì",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "More is arriving than you put in.",
+   "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+   "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 17,
+    "name": "Following",
+    "cn": "隨",
+    "pinyin": "suí",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "shows": "You broke the pattern open, and you are now inside what it opened.",
+    "image": "☳ thunder beneath ☱ lake. Thunder has gone quiet under the water and travels where the water travels.",
+    "situation": "Falling in with something already in motion. The old text says to go indoors at dusk and rest, because the season has turned and the correct action now is to stop leading. The commentary adds that the one who follows well is in turn followed.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    9,
+    6,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2,
+    3,
+    4
+   ],
+   "n": 9,
+   "name": "Restraint",
+   "cn": "小畜",
+   "pinyin": "xiǎo chù",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "A small rule you never revisited is holding all of this.",
+   "image": "☰ heaven beneath ☴ wind. One yielding line holding five firm ones, the way weather is held by wind.",
+   "situation": "A small force restrains a large one here, and the large one is permitting it. The single yielding line's whole strength is position. The tradition reads the restraint as accumulation: force that cannot discharge yet is being stored.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 25,
+    "name": "Candour",
+    "cn": "無妄",
+    "pinyin": "wú wàng",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     1,
+     1
+    ],
+    "shows": "Your next move has no calculation in it, and that is the exposure.",
+    "image": "☳ thunder beneath ☰ heaven. Movement underneath the sky, going the sky's own way.",
+    "situation": "The name means without falsity, and the figure describes action with no calculation folded into it. The old text puts the unlooked-for misfortune here as well — the cow left tied that a passing traveller takes. Acting straight leaves you open to whatever arrives.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    7,
+    8,
+    8,
+    7
+   ],
+   "changing_lines": [],
+   "n": 52,
+   "name": "Stillness",
+   "cn": "艮",
+   "pinyin": "gèn",
+   "lines": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shows": "The move is to stop while the wanting is still running.",
+   "image": "☶ mountain beneath ☶ mountain. A firm line rests at the top of each half, and both halves have stopped.",
+   "situation": "Keeping still. The old text works up the body — the toes, the calves, the waist, the trunk, the jaws — and says to still the back until the self drops out of view, after which you can cross your own courtyard alone. Stillness here is a practice with a sequence to it.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    9,
+    6,
+    6,
+    9
+   ],
+   "changing_lines": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "n": 18,
+   "name": "Stale Air",
+   "cn": "蠱",
+   "pinyin": "gǔ",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shows": "This went off from being left alone.",
+   "image": "☴ wind beneath ☶ mountain. Still air trapped under a mountain, going stale.",
+   "situation": "Something has spoiled through inattention rather than through damage. The character shows a bowl with worms in it: what happens to a thing left standing. The instruction is unusual in the set — it gives three days before and three days after, so the work of repair is bracketed by thinking about how it got here.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 47,
+    "name": "Drained",
+    "cn": "困",
+    "pinyin": "kùn",
+    "lines": [
+     0,
+     1,
+     0,
+     1,
+     1,
+     0
+    ],
+    "shows": "The explaining continues and the basin is dry.",
+    "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+    "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 6,
+   "name": "Divergence",
+   "cn": "訟",
+   "pinyin": "sòng",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are going deeper and pushing forward at once, and the two cancel.",
+   "image": "☵ water beneath ☰ heaven. Heaven rises, water sinks. The two halves are travelling apart.",
+   "situation": "Two forces inside one figure heading opposite ways, so the friction here is structural. The counsel is to stop at the halfway point and to decline the great river, because a dispute carried to its end costs more than whatever was in dispute.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    6,
+    9,
+    7,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    1,
+    2
+   ],
+   "n": 44,
+   "name": "Serendipity",
+   "cn": "姤",
+   "pinyin": "gòu",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are building on one piece of evidence.",
+   "image": "☴ wind beneath ☰ heaven. One soft line has entered beneath five hard ones.",
+   "situation": "Wind under heaven touches everything without choosing what it touches. The smallest possible arrival at the base of something large and already settled. It does not feel small. That is what makes it worth watching rather than seizing.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 13,
+    "name": "Fellowship",
+    "cn": "同人",
+    "pinyin": "tóng rén",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are walking the same way and neither of you has said so.",
+    "image": "☲ fire beneath ☰ heaven. Fire rising to meet the sky it is already heading for.",
+    "situation": "Two things going the same way, which is what makes company possible. The old text sets this in the open country, out where the group has no walls around it, and says the union works when it is available to anyone who arrives.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  }
+ ],
+ "positions": [
+  "pa-github-timer",
+  "pa-approval-publishes",
+  "pa-token-in-secrets",
+  "pa-pilot-ep3",
+  "pa-numbers-auto",
+  "pa-failure-step"
+ ],
+ "questions": [
+  "pa-x-api"
+ ],
+ "dissent": true,
+ "dissents": [
+  {
+   "face": "challenger",
+   "on": "build timing",
+   "for": "run episode 2's sitting before building"
+  }
+ ],
+ "steps_list": "meta-publishing-setup",
+ "tests": [
+  {
+   "due": "before episode 3",
+   "test": "One of episode 2's clips reaches a FINISHED Instagram container without being published."
+  },
+  {
+   "due": "episode 3's first Reel",
+   "test": "It shows Instagram auto captions and a logged-out viewer can see it."
+  },
+  {
+   "due": "episode 3",
+   "test": "Every queued post publishes on its day with no touch from Wendell after the approval."
+  }
+ ],
+ "lessons_pending": []
+}
