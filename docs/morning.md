@@ -122,8 +122,10 @@ fruit." The pass is `council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md`.
 - **Ingested.** A commitment is a bars-engine task (`mm-where`). The board's intake gives each item one written line
   (`council/intake_align.py`): a Lens goal, a board row, a call sheet strand (`"strand": "<sheet>"`, work already
   happening, carrying the strand's `lens: <goal id>` line once he has kept one), a pitched smaller goal, or `"none": true`,
-  no home yet, which is a real result (`ttv-no-home-yet`). Next build: the board's seal writes each item to bars-engine
-  as a task, so one id runs from the morning to its thread (`ttv-one-store`).
+  no home yet. An item with no home has an alignment nobody can see yet, so it carries `"shadow"`, the question of an
+  optional shadow quest that would bring it out (`ttv-no-home-yet`, overruled 2026-10-16). On the board served by
+  bars-engine (/board/council), the seal writes each item to bars-engine as a task and the saved menu carries its
+  `taskId`, so one id runs from the morning to its thread (`ttv-one-store`, bars-engine #341).
 - **Acted on.** He picks; each pick becomes a board row and a thread (`mm-picks-become-threads`). An item that joins a
   strand goes to that strand's thread or call sheet as a next step rather than a new thread.
 - **Grown.** A task becomes a BAR only when he keeps it as one (`ttv-task-not-bar`). It bears fruit when something
@@ -133,7 +135,9 @@ fruit." The pass is `council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md`.
   that return (`ttv-saved-read-scoped`, `ttv-lens-emerge`):
   1. `python3 council/lens_emerge.py fetch --out <scratch>/vein.json` reads `GET /api/tap-the-vein/history` (same token
      as the menu) into a scratch folder; it refuses a path inside the repo. bars-engine logs each read with no text.
-  2. The read pitches at most five goals, each quoting his words from two or more mornings with their dates:
+  2. The read pitches at most five goals, each paraphrasing what he wrote on two or more mornings and citing only
+     the dates; his words are never quoted, because the writing is raw (`ttv-lens-emerge`, overruled 2026-10-16).
+     `pitch` refuses a gist that copies six or more of his words in a row:
      `python3 council/lens_emerge.py pitch <scratch>/vein.json --pitches p.json > rows.json`, then
      `board/sync_board.py --rows`. It deletes the scratch copy.
   3. He keeps or drops each on the Open tab; `python3 council/lens_goals.py kept --send` writes kept ones to bars-engine.

@@ -11,8 +11,10 @@ through GET /api/tap-the-vein/history and never writes them into this repo:
 
 1. `fetch` saves the history to a file OUTSIDE the repo (a scratch folder), and refuses a path inside it.
 2. The lens emergence read (a council thread) reads every free write once and pitches goals. A goal emerges when it
-   returns: each pitch quotes his words from at least two different days. `pitch` refuses a line that is not word
-   for word in that day's free write, and a pitch resting on one morning.
+   returns: each pitch paraphrases what he wrote on at least two different days and cites only the date. His words
+   are never quoted, because the writing is raw (Wendell, board, `ttv-lens-emerge` overruled 2026-10-16: "It's ok
+   for the Council to paraphrase, they only need to cite the date"). `pitch` refuses a date with no free write, a
+   gist that copies six or more of his words in a row, and a pitch resting on one morning.
 3. Each pitch becomes a board question in the shape council/lens_goals.py already sends, so after he answers,
    `python3 council/lens_goals.py kept --send` writes each kept goal to bars-engine as an active year goal.
 4. The read deletes its scratch copy.
@@ -22,7 +24,7 @@ Usage:
   python3 council/lens_emerge.py summary <scratch>/vein.json            # days, words, seeds by maturity
   python3 council/lens_emerge.py pitch <scratch>/vein.json --pitches p.json > rows.json
       p.json: [{"title": "<goal, a few words>", "domain": "<lens domain>", "why": "<one sentence>",
-                "lines": [{"date": "YYYY-MM-DD", "line": "<his exact words>"}, ...]}]
+                "seen": [{"date": "YYYY-MM-DD", "gist": "<what he wrote that day, in the council's words>"}, ...]}]
 """
 import argparse
 import collections
@@ -40,6 +42,7 @@ from ttv_bars import ROOT, norm  # noqa: E402
 HISTORY_URL = "https://bars-engine.vercel.app/api/tap-the-vein/history"
 PASS = "lenses: goals emerging from saved free writes"
 MAX_PITCHES = 5
+COPY_RUN = 6  # a gist sharing this many words in a row with that day's free write is a quote, not a paraphrase
 
 
 def fetch(out, since=None):
@@ -75,9 +78,17 @@ def summary(hist):
     return "\n".join(lines)
 
 
+def copied_run(gist, freewrite, n=COPY_RUN):
+    """The first run of n words the gist shares with the free write, or None."""
+    words = lambda t: "".join(c if c.isalnum() or c == "'" else " " for c in t.lower()).split()
+    g, f = words(gist), words(freewrite)
+    runs = {tuple(f[i:i + n]) for i in range(len(f) - n + 1)}
+    return next((" ".join(g[i:i + n]) for i in range(len(g) - n + 1) if tuple(g[i:i + n]) in runs), None)
+
+
 def check(hist, pitches):
     """Problems with the read's pitches; an empty list means they stand."""
-    writes = {d["date"]: norm(d.get("freewrite", "")) for d in hist.get("days", [])}
+    writes = {d["date"]: d.get("freewrite", "") for d in hist.get("days", []) if d.get("freewrite", "").strip()}
     bad = []
     if len(pitches) > MAX_PITCHES:
         bad.append(f"{len(pitches)} pitches; at most {MAX_PITCHES}, so each one is worth his look")
@@ -87,15 +98,21 @@ def check(hist, pitches):
             bad.append(f"{title!r}: domain must be one of {', '.join(DOMAINS)}")
         if len(norm(p.get("why", "")).split()) < 4:
             bad.append(f"{title!r}: the why is under four words")
+        if "lines" in p:
+            bad.append(f"{title!r}: quotes his lines; paraphrase each morning under `seen` and cite only its date")
         dates = set()
-        for q in p.get("lines", []):
-            line, date = norm(q.get("line", "")), q.get("date")
-            if not line or line not in writes.get(date, ""):
-                bad.append(f"{title!r}: not in the {date} free write word for word: {line[:80]!r}")
+        for s in p.get("seen", []):
+            gist, date = norm(s.get("gist", "")), s.get("date")
+            if date not in writes:
+                bad.append(f"{title!r}: no free write on {date}")
+            elif len(gist.split()) < 3:
+                bad.append(f"{title!r}: the {date} gist is under three words")
+            elif run := copied_run(gist, writes[date]):
+                bad.append(f"{title!r}: the {date} gist copies his words ({run!r}); say it in the council's words")
             else:
                 dates.add(date)
         if len(dates) < 2:
-            bad.append(f"{title!r}: quotes {len(dates)} morning(s); a goal emerges when it returns on two or more")
+            bad.append(f"{title!r}: rests on {len(dates)} morning(s); a goal emerges when it returns on two or more")
     return bad
 
 
@@ -104,22 +121,25 @@ def pitch_rows(hist, pitches):
     rows = []
     for i, p in enumerate(pitches, 1):
         goal, domain = norm(p["title"]), p["domain"]
-        quotes = sorted(p["lines"], key=lambda q: q["date"])
-        said = quotes[-1]["date"]
-        heard = " ".join(f"{q['date']}: “{norm(q['line'])}”" for q in quotes)
+        seen = sorted(p["seen"], key=lambda s: s["date"])
+        said = seen[-1]["date"]
+        heard = " ".join(f"On {s['date']}: {norm(s['gist']).rstrip('.')}." for s in seen)
         rows.append({
             "id": f"lens-emerge-{said}-{i}", "faces": ["shaman", "regent"], "pass": PASS,
             "q": f"Keep “{goal}” as a {domain} goal for this year?",
-            "why_you": f"It came back across {len(quotes)} mornings. {heard} {norm(p.get('why', ''))}".strip(),
+            "why_you": f"It came back across {len(seen)} mornings, in the council's words: {heard} "
+                       f"{norm(p.get('why', ''))}".strip(),
             "not_before": "You have no Lens goals yet and skipped the intake as the game's creator, so the council "
-                          "read your saved free writes for goals that recur (ttv-lens-emerge).",
+                          "read your saved free writes for goals that recur (ttv-lens-emerge). It paraphrases and "
+                          "cites dates only; your words are not quoted.",
             "options": [
                 {"v": "keep", "label": "A. Keep it (recommended)",
                  "c": f"It becomes an active {domain} year goal in bars-engine, and the Lenses panel shows it."},
                 {"v": "no", "label": "B. Not a goal",
                  "c": "Nothing is saved. Rename it in your steer and the next read pitches your wording."}],
             "why": "Pitched by the lens emergence read from saved free writes (council/lens_emerge.py pitch).",
-            "lens_goal": goal, "lens_domain": domain, "lens_line": norm(quotes[-1]["line"]), "said": said,
+            "lens_goal": goal, "lens_domain": domain, "lens_line": norm(seen[-1]["gist"]), "lens_paraphrase": True,
+            "said": said,
         })
     return rows
 
