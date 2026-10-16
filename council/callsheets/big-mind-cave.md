@@ -1,4 +1,4 @@
-2026-10-16 (updated 22:30)
+2026-10-16 (updated 22:35)
 ontology: default; touches: TrustState, ConsentRecord, MovementFinding
 # Big Mind cave (battle fr-big-mind-cave)
 
@@ -26,8 +26,8 @@ Build threads, one pull request each, all on bigmind.js so in order:
    merges. Marks for can and will, each with a plain line of what the voice saw; good only in the voice's words, against
    its own picture of goodness (seven drafts in `bmt-goodness-models`). Trust actions anywhere on the path, each voice with
    a right answer, counted only when the voice's charge eases on the next check-in. Marks keep kept, broken and repaired;
-   a broken promise or a push past a refusal lowers one; owning it repairs it (falls wait on `bmt-accountability` only if
-   he answers B). After the voice is willing to step aside the player can keep talking. The meeting spirit becomes an ally
+   a broken promise or a push past a refusal lowers one; owning it repairs it (`bmt-accountability` answered A at 22:23:
+   the council's reading). After the voice is willing to step aside the player can keep talking. The meeting spirit becomes an ally
    once its voice trusts you and vouches at later chambers and, together, at the centre's mouth. Save per the Architect:
    `voices[id].trust = { seen:[{dim, kind, at}], promises:[{kind, made, kept}] }` plus `broken`/`repaired`, no words.
    The trust stances list goes to the art thread.
