@@ -111,6 +111,23 @@ it names as in its way comes closer. Only kept lines are saved (`centre` in the 
 he flips it. Next: his play of the centre, then the centre's two ways (the hall of the six, the second cave) and the guide
 revealed as the integrated voice (`bm-guide`), in a fresh thread.
 
+**2026-10-16 21:52, Wendell's play of the centre (chat ruling, his words in the project thread "Big Mind cave centre"):**
+"This first round is pretty good." His notes, which the next design thread works from:
+- Trust mechanics so it feels like more of a game. Trust is capability, integrity and benevolence ("Can you do x will you do
+  x and do you seem like a good person"). Getting the voices to trust you and remove their burden is part of the game; the
+  player takes actions from the daemon's perspective to show trustworthiness in more dimensions. A skill for developing
+  inner trust.
+- Lean more into 3-2-1: full 3-2-1 dialogues with each part.
+- Spirits in play: the game asks how the player feels about encountering a part, which spawns a spirit that walks the cave
+  with them; spirits can show the daemons how resourced the player is.
+- Remove the next daemon waiting at the end of the path before its cave: each shift is getting permission to move forward,
+  and showing the daemon too early ruins the magic.
+- Free walking: walk or run to the next space.
+- Dress the cave and build game-ready models for each daemon instead of placeholders.
+- Plan it with the game design ontology in a design thread: a back and forth on what it should feel like, and how to
+  negotiate that the process is usually facilitated but should be playable alone with the depth of the Big Mind transcript.
+Next: that design thread (ontology: game_design; touches: trust, PartsDialogue, Spirit), started by the coordinator.
+
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth
 whether a charge's spirits are kept or let go); `bms-sit-anywhere`, `bms-in-place`, `bms-block-sits`, `bms-spirits-follow`,
