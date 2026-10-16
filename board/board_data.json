@@ -24686,6 +24686,30 @@
      "diplomat"
     ],
     "pass": "seed library"
+   },
+   "sl-resurface-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:52:53.505Z",
+    "record": "council/ledger/2026-10-16-pull-205300.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "seed library"
+   },
+   "sl-resurface-not-a-draw": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T20:53:00.668Z",
+    "record": "council/ledger/2026-10-16-pull-205300.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "seed library"
    }
   },
   "questions": {
