@@ -24,3 +24,5 @@ Nothing in fr-demo waits on Wendell. Separate: his context note, 23:26 UTC: "I w
 
 ## Archive
 HANDOFF.md: "Open on 2026-10-06, from board read 2002"; "Open on 2026-10-06, from board read 2330"; "Open on 2026-10-06, from the WAVE teaching pass (`fr-demo` round 11)"
+
+- His play of Ama Rell's Fixer (2026-10-16 20:38, step `spirit-fight-ama-rell-01`, board read): "Worked through it. It's fine but it's a bit too abstract and not in alignment with the playstyle I'm looking for". Reading: the fight does not yet match his `bi-what-for` steer (monster fights, turn-based, wuxing weaknesses first). Next, in a fresh Opus thread owning sprout #50: make the fight concrete and Pokemon-like (spirit sprites facing, named moves with elements, HP, weakness shown on the chart), keeping the talk before it, then put it back in front of him as a new step. Recommended over asking him what playstyle he means: his steers `bi-what-for`, `sf-ally-moves` and `sf-who-fights` already name it.
