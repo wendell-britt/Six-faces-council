@@ -1,0 +1,47 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T20:41:35.561Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-06",
+   "at": "2026-10-16T20:34:49Z",
+   "what": "ticked",
+   "do": "Look at round 6 of the clothing (J5). Your note on round 5 said the hem needed weight to pull the robe down, the cloth was defying gravity, and the belt jittered. Round 6 gives the hem four times the cloth's weight and keeps the skirt close to a skirt shape that follows the legs, so a hem with nothing under it now hangs about 4 mm from where it should (round 5: 7 cm). The belt jitter had two sources in the game itself: the walk's hip and hem joints swung the long way round between frames, and points near the legs buzzed. Both are fixed, and a test now fails if the belt moves more than 0.2 mm standing or 10 mm walking. j5r6-cloth-walk.jpg shows the average dusk figure from the side. The top row is a normal stride, then a fast stride, then a turn, and the bottom row is the figure slowing to a stop: look there first, the hem should end hanging straight down. j5r6-set-walk.jpg shows four points of the walk from the front, side and back, with the belt and its tails. j5r6-set-sheet.jpg and j5r6-garments-sheet.jpg show all nine figures. The edge trim is still a little ragged in places; that gets cleaned up once the movement is right. Under this step, note 'yes' or what still looks wrong."
+  },
+  {
+   "id": "podcast-ep1-clips-04",
+   "at": "2026-10-16T20:36:57.419Z",
+   "what": "ticked",
+   "do": "Post clip 3, Isaac on corporate allyship events (now 52 seconds), the same way, with auto captions on and cover-clip3-most-caring.jpg as the cover, and tag Isaac in the Reel and on X (you picked tag only, no collab invite)."
+  },
+  {
+   "id": "spirit-fight-ama-rell-01",
+   "at": "2026-10-16T20:38:24.556Z",
+   "what": "note",
+   "note": "Worked through it. It’s fine but it’s a bit too abstract and not in alignment with the playstyle I’m looking for",
+   "do": "Play the Ama Rell's Fixer fight once or twice on your phone, then write in this step's note whether it was fun and what it meant to you."
+  },
+  {
+   "id": "chapter1-demo-play-01",
+   "at": "2026-10-16T20:41:32.707Z",
+   "what": "note",
+   "note": "Chapter 1 demo, 2026-10-16 20:41\nA2  a2-tank     played What's Actually Scarce\nA3  a3-loan     played The Story the Lack Tells\nA4  a4-report   played What's Going Unseen\nA6  a6-whole    played What's Actually Scarce  (card written for it: Which Fight Is Yours)\nA6  a6-hunters  played What's Going Unseen  (card written for it: Who's at Risk)\nA8  a8-hollow   played The Story the Lack Tells  (card written for it: What Doesn't Want Light)\nStance: The one who makes the right move easy\nWarden: full_mana, one_detail, tell_cost, one_detail, sit_outside, same_time\nPip: “The night you knocked, I nearly left. Then you came back with water. That one counted.”\nSpirit: fire, controller, named: I like having it handled before anyone asks.\nFixer check (A6 hunters, A8 hollow): a6-hunters: What's Going Unseen; a8-hollow: The Story the Lack Tells",
+   "do": "Play Chapter 1 once as a fixer would, reaching for the big moves at Pip's hut. About ten minutes. At the end screen tap 'Copy this', then paste what it copied into this step's note."
+  },
+  {
+   "id": "chapter1-demo-play-01",
+   "at": "2026-10-16T20:41:35.561Z",
+   "what": "ticked",
+   "do": "Play Chapter 1 once as a fixer would, reaching for the big moves at Pip's hut. About ten minutes. At the end screen tap 'Copy this', then paste what it copied into this step's note."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/spirit-fight-ama-rell-01: note \"Worked through it. It’s fine but it’s a bit too abstract and not in alignment with the playstyle I’m looking for\"",
+  "steps/chapter1-demo-play-01: note \"Chapter 1 demo, 2026-10-16 20:41\nA2  a2-tank     played What's Actually Scarce\nA3  a3-loan     played The Story the Lack Tells\nA4  a4-report   played What's Going Unseen\nA6  a6-whole    played What's Actually Scarce  (card written for it: Which Fight Is Yours)\nA6  a6-hunters  played What's Going Unseen  (card written for it: Who's at Risk)\nA8  a8-hollow   played The Story the Lack Tells  (card written for it: What Doesn't Want Light)\nStance: The one who makes the right move easy\nWarden: full_mana, one_detail, tell_cost, one_detail, sit_outside, same_time\nPip: “The night you knocked, I nearly left. Then you came back with water. That one counted.”\nSpirit: fire, controller, named: I like having it handled before anyone asks.\nFixer check (A6 hunters, A8 hollow): a6-hunters: What's Going Unseen; a8-hollow: The Story the Lack Tells\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
