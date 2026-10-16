@@ -7,14 +7,23 @@
   Wendell: create a fine-grained GitHub token for Six-faces-council (Actions read and write only) and set it in Vercel
   as `BOARD_DISPATCH_TOKEN`. Until then saves fall back to the cron and the page alarm. Open follow-up: the option
   promised the page says so when the token has expired; not built.
-- `board-home` (Wendell, chat, 2026-10-16): bars-engine becomes the one home of the Council Board. Build in a fresh thread:
-  (1) bars-engine route `/board/council` (or a `board` parameter on `/board`) serving `board/council-board.html` from
-  main behind the owner sign-in, like src/app/board/route.ts; (2) extend the page shim for whatever the council page
-  calls beyond the nonprofit page's store calls (check `pickup` and every collection it reads); (3) confirm
-  /api/board/pull and `board/fetch_store.py` handle `board=council` and its documents; (4) move the artifact's saved
-  store into Postgres once, so no save is lost (read it with ArtifactData from the owning organization); (5) point
-  AGENTS.md, CLAUDE.md, docs/pickup.md and the pickup routine at the new page and store; (6) retire the artifact after
-  a few clean days. One owner only by design (`BOARD_OWNER_PLAYER_ID`); other people editing the board is a separate ask.
+- `board-home` (Wendell, 2026-10-16, board row `board-home`, decision "bars-engine"): first half built in bars-engine #338
+  (draft; Wendell merges after the Vercel check): `/board/council` serves `board/council-board.html` from main behind
+  the owner sign-in, shim board constant `council`, Send bar patched at serve time (a save starts its own board-pull),
+  `/api/board/pull` validates `board`. The council page's store calls all fit the existing save contract, so schema and
+  fixtures did not change. Left, each in a fresh thread:
+  - Pull the council board on main: `.github/workflows/board-pull.yml` has `BOARD: nonprofit` only, so council saves
+    are not recorded until it runs the same steps with `BOARD=council` (a matrix or a second job), and
+    `board/pull.py` with the council board's room flag (it runs `--no-room` for the nonprofit). Also build.py for the
+    council page is not needed (board/build_board.py already writes it). Then check `board/staleness.py` per board.
+  - Move the artifact's saved store into Postgres once, so no save is lost: needs a session signed in to the artifact's
+    organization (`/login` there); read each collection with ArtifactData, POST each doc to `/api/board/saves`
+    (`board: council`) or insert `BoardSave` rows with the original times, marked recorded where main holds them.
+  - Republish the artifact (stopgap) from that same session; main has rows the live page lacks.
+  - Point AGENTS.md, CLAUDE.md, docs/pickup.md and the pickup routine at https://bars-engine.vercel.app/board/council
+    and the Postgres store (`fetch_store.py` with `BOARD=council`).
+  - Retire the artifact only after `/board/council` has run clean for a few days. One owner only by design
+    (`BOARD_OWNER_PLAYER_ID`); other people editing the board is a separate ask.
 - Stopgap until then: the Council Board artifact (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho) needs one republish
   from a session signed in to its organization (Wendell, 10 am 2026-10-16), since main has rows the live page lacks.
 - Step notes (2026-10-12, #87): a board read now lists six collections, steps included. The coordinator updates the pickup routine prompt to name `steps` (docs/pickup.md has the text). Act on the 8 needs-work items in council/ledger/2026-10-12-pull-170058.json: copy-paste terminal instructions as a rule for every step (morning-menu-key-02), gs-1 step-by-step with file location, two links on flirtcraft-own-database-06, an unblocking process for virtual-launch-restart-01.
