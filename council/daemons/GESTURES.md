@@ -24,7 +24,7 @@ a grasp that lets go. The poses are rows of `WARP` in bars-engine `content/ontol
 | Daemon | Movement held | The body |
 |---|---|---|
 | Protector | push | a stop: both palms out at shoulder height, fingers up, arms nearly straight, set into the push over a bent front knee (his look, 2026-10-14: the first, straight-armed try "looks like a zombie") |
-| Controller | grasp | fists drawn up to the chest, elbows tight to the ribs, chest and chin up, feet together, rigid and tall |
+| Controller | grasp | fists clenched and set on the hips, elbows out wide, chest and chin up, feet together, rigid and tall (his look, 2026-10-16: the fists drawn to the chest "still looks weird") |
 | Skeptic | pull | chest and head drawn back and turned aside, elbows pulled behind, hands drawn in to the belly, weight on the back knee |
 | Fixer | reach | pitched far forward over a bent front knee, both long arms out to the problem, head up, back leg trailing |
 | Victim | yield, collapsed | sunk into the knees, back rounded, head hung, arms hanging long and heavy |
