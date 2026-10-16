@@ -1,0 +1,51 @@
+{
+ "date": "2026-10-16",
+ "battle": "ttv-loop",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Tap the Vein as one loop, pass 1, on Wendell's 17:39 message in the thread \"Tap the Vein: ingestion, council action, lenses\". Design ontology applied (QUICKSTART plus bar_scope, composting, privacy_consent_authority, roadblocks). Eight ttv-* positions, no question survived the reach test. Dissents: Shaman (ask before reading entries written under mm-raw), Architect (run emergence on bars-engine's server), Challenger (run the overdue real morning before building more). Built: bars-engine #340 (history export, compost needs no reason), Six-faces-council #187 (lens_emerge.py, strand and no-home-yet alignment, board stepper). Five face subagents, about 291,000 tokens; no daemons.",
+ "steer": "ok I want to apply the game design ontology to the tap the vein flow. Specifically I Want the version on the board to have the same ergonimic feeling as that on bars engine, but I also need the bars engine flow to have the completeness of the board.",
+ "pass_file": "council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md",
+ "casts": {
+  "shaman": "49>17",
+  "architect": "34>15",
+  "challenger": "36>60",
+  "regent": "53",
+  "diplomat": "47>8",
+  "sage": "40>31"
+ },
+ "positions": [
+  "ttv-board-one-phase",
+  "ttv-no-home-yet",
+  "ttv-align-to-work",
+  "ttv-saved-read-scoped",
+  "ttv-lens-emerge",
+  "ttv-fruit-is-his",
+  "ttv-task-not-bar",
+  "ttv-one-store"
+ ],
+ "questions": [],
+ "tests": [
+  {
+   "id": "T1",
+   "due": "2026-10-18",
+   "what": "first emergence run: how many saved free writes, any pitch quoting two mornings"
+  },
+  {
+   "id": "T2",
+   "due": "2026-10-21",
+   "what": "one real morning end to end; records per commitment"
+  },
+  {
+   "id": "T3",
+   "due": "2026-10-23",
+   "what": "decoy strands through the aligner"
+  },
+  {
+   "id": "T4",
+   "due": "2026-10-23",
+   "what": "tasks carried twice with no decision"
+  }
+ ],
+ "board": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
+}

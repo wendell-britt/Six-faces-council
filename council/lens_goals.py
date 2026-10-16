@@ -69,7 +69,9 @@ def kept(data):
         if q.get("lens_goal") and r and r.get("decision") == "keep":
             where = "intake" if q.get("pass", "").startswith("lenses: aligning") else "free write"
             out.append({"domain": q["lens_domain"], "title": q["lens_goal"],
-                        "source": f"Council Board, {q['id']}, from his {q['said']} {where}: “{q['lens_line']}”",
+                        "source": f"Council Board, {q['id']}, from his {q['said']} {where}"
+                                  + (f", in the council's words: {q['lens_line']}" if q.get("lens_paraphrase")
+                                     else f": “{q['lens_line']}”"),
                         **({"parentId": q["lens_parent"]} if q.get("lens_parent") else {})})
     return out
 
