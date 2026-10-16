@@ -1,10 +1,10 @@
 # Design ontology 0.1.0-alpha.1 release record
 
-**Release status:** candidate; tag withheld
+**Release status:** verified candidate; ready to tag after repository checks
 
 **Candidate verification date:** 2026-10-15
 
-**Candidate base:** `7e43221` (merged PR 171)
+**Verification base:** `7024722` (clean worktree from `origin/main`)
 
 ## What is usable now
 
@@ -17,20 +17,23 @@ It is suitable for ontology-guided fictional game design and council review when
 - macOS host, zsh, Python 3.14
 - clean Git worktree created from `origin/main`
 - package validator: pass
-- full test suite: 56 tests pass
+- complete repository suite in the CI-declared dependency environment: 84 tests pass, 1 skipped, 24 subtests pass
 - face-output contract voice lint: zero hard findings on the merged hardening content
+- two authenticated, non-persistent Claude Code councils: pass
+- clean-council semantic validator: pass
 
 The clean worktree found and validated the manifest, skill route, six agent definitions, contract, source links, YAML documents, compatibility aliases, historical-source precedence, and adversarial fixture coverage without relying on uncommitted files.
 
-## Open release gate
+## Behavioral verification
 
-Fresh Claude Code behavioral execution is not yet verified. The installed `claude` command returned `Not logged in · Please run /login` for each attempted face invocation. Therefore the two independent face-distinction runs, context-compaction behavior, and alpha tag are not claimed.
+Two independent councils ran from the clean worktree with fresh, non-persistent Claude Code sessions. Each round independently invoked Shaman, Architect, Challenger, Regent, and Diplomat with caller-supplied casts, then passed their unedited reports to Sage.
 
-After Claude Code is authenticated, run the same bounded Roadblock Encounter through Shaman, Architect, Challenger, Regent, and Diplomat independently with caller-supplied casts, then give all five unedited reports to Sage. Repeat from a second fresh session. Preserve verdicts and dissent seeds, and confirm Sage recommends without deciding.
+Both rounds preserved their casts and required headings, produced recognizable face distinctions, covered every scenario-relevant forbidden collapse, retained dissent, and gave bounded verdicts. Both Sage reports accounted for every face, applied the reach test, marked convergence as a flag rather than proof, and recommended without deciding. Raw reports are preserved in `council/passes/ontology-alpha-clean-councils-2026-10-15.json` and checked by `ontology/tools/validate_clean_councils.py`.
 
 ## Known gaps and non-goals
 
-- Fixtures are machine-checkable semantic contracts; an authenticated model runner has not yet executed them.
+- The clean runs tested the Roadblock Encounter rather than executing every adversarial fixture through a live model.
+- Forced context compaction was not tested because non-persistent print mode exposes no deterministic compaction trigger; this remains a post-alpha durability test.
 - This alpha does not technically enforce permissions for real player data. Use fictional or synthetic material until product-level controls exist.
 - Phase B active/reference/compost sorting is not authorized.
 - This is not yet a reusable cross-project plugin or MCP server.
