@@ -42,6 +42,34 @@ was checked with a read and a refused contributor write to another person's show
 Editor (outside the organization) or Contributor access from the Share menu to tend it.
 Next: his play, then round 2 from his notes.
 
+**2026-10-16, 23:05, his look at the demo garden (ruling, in chat):** "Ok the garden is a bit too abstract. I'm looking
+for it to be a 3d game space not unlike the WAVE room but 2 people can inhabit it and it's interactable. This version
+might be useful for an intake but the output should be a 3D space where the spirits and daemons can interact and walk
+around. Let's use the design ontology for this". The 2D page (https://claude.ai/artifact/W4MpDsm5xnnaLGcoPNWVv6) stays
+as the intake; the play space is 3D.
+
+### Build brief: the Between in 3D (next thread, Opus, load design-ontology)
+- **Ontology first.** Load `.claude/skills/design-ontology/SKILL.md` and the profile `ontology/manifest.yaml` names for
+  relationship and trust mechanics (touches: Relationship, PermissionEnvelope, TrustState). Map each `rc-*` ruling onto
+  what it becomes in the space before building; anything the ontology and the rulings can't settle goes through the
+  reach test and onto the board, never to chat.
+- **What he asked for:** a 3D space like the WAVE room (bars-engine `content/ontology-game/cave/`, `openRoom` in
+  `cave.js`, DESIGN.md "The WAVE room"), which two people inhabit at once or in turn, where the Between, each person's
+  visiting spirits and their daemons walk around and interact, and where the garden's acts (offering, agreeing, saying
+  yes, tending) are things you do in the space.
+- **Default route (position, stands unless he flips it):** a three.js Artifact page with `db` (the garden, persistent),
+  `room` (live presence: both figures, their walking, live acts) and `assets` (the existing spirit and daemon .glb
+  files: `/mnt/project-files/3d-build/npc-warp-2026-10-14/`, `spirit-rig-2026-10-14/glb/`), reusing the cave kit and
+  the WAVE room's look. It reuses the intake page's store shape where it can (garden/main, items, spirits, shown), so
+  the intake's setup carries into the space. Reason: an Artifact already gives both people one link, sign-in, a shared
+  store and live presence; bars-engine has the WAVE room code but no live two-player channel. Port into bars-engine
+  later if the space earns it.
+- **Rulings still hold:** nothing changes the Between without the other's yes; async tending; holding-space log with no
+  counts; pictures private until shown; stale dims, never dies; ending needs both; silent exit; Kardos credited, never
+  Fred.
+- **Done:** published, two-viewer test (two figures moving at once, one acting while the other is away), phone width,
+  his link in the reply; then his play.
+
 ### Build brief: the demo garden (next thread, Opus, one pull request or artifact)
 His words (rc-order): "We should create a demo garden that I can play with a design with one relationship I want to work
 on. It should be able to be accessed synchronously and synchronously by the two players".
@@ -81,7 +109,7 @@ on. It should be able to be accessed synchronously and synchronously by the two 
    `src/lib/garden/plant.ts`.
 
 ## Waiting on
-His play in the demo garden (link above), then round 2 from his notes.
+The 3D build thread (brief above). Then his play.
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
