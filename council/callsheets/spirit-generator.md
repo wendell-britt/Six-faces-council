@@ -67,6 +67,8 @@ ontology: game_design; touches: State, SatisfactionReport, TensionConfiguration
 
 - Spirit states pass 1 (2026-10-16, thread "Spirit satisfaction states", `council/passes/6FACE_PASS_spirit-states1_2026-10-16.md`, ledger `2026-10-16-spirit-states1.json`, rows `council/callsheets/rows/spirit-states-2026-10-16.json`), on his message: "we need to also introduce the Satisfied, Dissatisfied, and Neutral versions of it in whatever intake it's coming in as. The creatures should be darker and more feral in dissatisfaction." Positions on the board (stand unless he flips them): `ss-three-states` (bands of the existing satisfaction 1 to 10: 1-4, 5-7, 8-10; design.md's moods charged, steadied, allied map onto them), `ss-intake-start` (generator: neutral, or 1 if overcharged; wild spirits met dissatisfied; the cave reads his named gold, never the charge number), `ss-markers` (own layer; stance, aura, eyes and core, surface; two non-colour markers per state; pose plus material, no second model), `ss-feral-stance` (the family daemon's held movement from GESTURES.md, pushed further; satisfied completes it), `ss-not-veiled` (dense dark vs faint veiled vs bright flooding; a veiled spirit's state does not show), `ss-shift-up` (listening spars, shards, the generating feed, each element's Transcend move as a once-a-fight tending move), `ss-cross-element` (creature and ally form only: own element when dissatisfied, generating cycle at neutral, controlling cycle at satisfied), `ss-feral-trade` (feral signature hits harder, heeds every other turn). Question `ss-push-down` (a move that unsettles a spirit: A wild and rival only, recommended; B none; C any). Next: round 12 of the loop contract is the state sheet (Shellback tortoise, wood, five forms by three states, plus the veil test pair, then the squint test); it waits on his look at page version 14 and now comes before the next family's first base (round 13), so later families are built with their states. The moves (`ss-shift-up`, `ss-cross-element`, `ss-feral-trade`) are a sprout build after the signature-move build above, on Opus.
 
+- His ruling on `ss-push-down` (board, 2026-10-16 19:51, pull 203123): C, a move that unsettles a spirit works on any spirit, his own too. It lands with the sprout build of `ss-shift-up`, `ss-cross-element` and `ss-feral-trade`: no wild-or-rival gate on the push, and a spirit he owns can be pushed down a band like any other.
+
 ## Waiting on
 - His look at round 7 (tortoise face and Meridia, page version 9) and at the fixed fox (version 11).
 - His look at the kid goat (version 13).
@@ -75,7 +77,6 @@ ontology: game_design; touches: State, SatisfactionReport, TensionConfiguration
 - First art proof: one family (Shellback) through the stages in all five elements, now that `sg-body-from` is answered.
 - His phone play of the slice: board step `spirit-generator-01` (Your steps tab).
 - Whether `sg-overcharge` stands (board).
-- His answer on `ss-push-down` (board).
 
 ## Files
 - Pass: `council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md`; rows `council/callsheets/rows/spirit-gen1-2026-10-13.json`; ledger `2026-10-13-spirit-gen1.json`.

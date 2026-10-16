@@ -4,6 +4,8 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-16, board read 2031: `sl-no-pressure` overruled by his steer: "We need a mechanics to pull in tasks that are resting and use spaced repetition to get it back into the board". A seed no longer rests silently forever: a resting task resurfaces on a spaced schedule (the rest lengthens each time he lets it pass), still asking nothing and still drawn or let go with no reason. Design pass owed: the interval ladder, what "pull in" shows on the board and in Tap the Vein, how this sits with `sl-resting-not-compost` and `sl-draw-same-task`, and a rewrite of `docs/seed-library.md`'s no-pressure rule. Opus thread, bars-engine and this repo; test SL1 (2026-10-30) should cover it.
+
 2026-10-16, thread "seed library board" (this repo's and bars-engine's branch claude/seed-library-board-4vdnzv): the
 board's surface is built. The Morning tab has a closed Seed library panel that `council/morning.py` reads from
 `GET /api/tap-the-vein/seed-library` (`--seeds` for a saved copy), and "Set aside" beside each sealed item with a task
