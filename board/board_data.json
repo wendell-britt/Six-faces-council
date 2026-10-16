@@ -9057,6 +9057,17 @@
    "auto": true,
    "pos": "A dissatisfied spirit is a real choice to fight with, not only a penalty. Its signature move lands harder (one more Power step), while it still heeds you only every other turn (sg-overcharge) and reaches no other element. A player may keep a spirit feral on purpose. The copy never calls it bad, broken or corrupt; it is unsettled, and its card says what it is protecting. Numbers are placeholders. This stands unless you flip it.",
    "why": "If dissatisfied is only worse, every player flees it, and the state becomes a meter of how well they are doing, which the ontology forbids (development is never whole-person rank; refusal and no-shift stay valid). Monster Rancher's loyalty already works this way: a disobedient monster is still strong."
+  },
+  {
+   "id": "dp-centre-asked",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "The daemon path",
+   "auto": true,
+   "pos": "At the centre the child is seen first: nothing has to be asked, and \"Be with it\" ends the visit with nothing asked. If you choose to ask, it is asked your six Player questions (what are you learning, growing, feeling, exploring, how do the other daemons get in your way, what would happen if you weren't there), gently, one at a time, each with cards and your own words, and any can be left quiet. There is no charge to read and no permission to win. The voices you met on the way stand around the child as spirits, and one it names as in its way comes closer. This stands unless you flip it.",
+   "why": "dp-centre (13 Oct) said \"The child is seen, not questioned\"; your Player set in daemons/questions.js (14 Oct) is newer and in your words, so both hold: seen first, asked only if you choose. The ontology: intimate disclosure is not progression currency, and rest or no-shift is a valid end. Built in bars-engine content/ontology-game/bigmind/bigmind.js (the centre)."
   }
  ],
  "questions": [
