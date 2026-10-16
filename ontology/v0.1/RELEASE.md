@@ -1,6 +1,6 @@
-# Design ontology 0.1.0-alpha.1 release record
+# Design ontology 0.1.0-alpha.2 release record
 
-**Release status:** verified candidate; ready to tag after repository checks
+**Release status:** candidate
 
 **Candidate verification date:** 2026-10-15
 
@@ -33,7 +33,7 @@ Both rounds preserved their casts and required headings, produced recognizable f
 ## Known gaps and non-goals
 
 - The clean runs tested the Roadblock Encounter rather than executing every adversarial fixture through a live model.
-- Forced context compaction was not tested because non-persistent print mode exposes no deterministic compaction trigger; this remains a post-alpha durability test.
+- Long-session and context-compaction durability are non-goals. The package requires one fresh session per bounded task or goal; material scope changes require a handoff into a new session.
 - This alpha does not technically enforce permissions for real player data. Use fictional or synthetic material until product-level controls exist.
 - Phase B active/reference/compost sorting is not authorized.
 - This is not yet a reusable cross-project plugin or MCP server.
@@ -41,4 +41,4 @@ Both rounds preserved their casts and required headings, produced recognizable f
 
 ## Release rule
 
-Tag only the exact commit for which the clean-session runs, package validator, full test suite, release record, and repository checks all pass. If behavior differs from this record, update it before tagging.
+Tag only the exact commit for which the session-discipline contract, clean-session runs, package validator, full test suite, release record, and repository checks all pass. If behavior differs from this record, update it before tagging.

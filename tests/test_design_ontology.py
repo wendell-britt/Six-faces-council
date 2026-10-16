@@ -29,9 +29,20 @@ class DesignOntologyPackageTests(unittest.TestCase):
 
     def test_manifest_declares_provisional_alpha(self):
         package = self.manifest["package"]
-        self.assertEqual(package["version"], "0.1.0-alpha.1")
+        self.assertEqual(package["version"], "0.1.0-alpha.2")
         self.assertEqual(package["status"], "provisional")
         self.assertEqual(package["owner"], "Wendell Britt")
+        self.assertEqual(package["session_discipline"]["unit"], "one_bounded_task_or_goal")
+        self.assertEqual(package["session_discipline"]["scope_change"], "start_new_session")
+        self.assertEqual(package["session_discipline"]["compaction_policy"], "do_not_design_for_compaction")
+
+    def test_skill_and_face_contract_enforce_bounded_sessions(self):
+        skill = (ROOT / ".claude" / "skills" / "design-ontology" / "SKILL.md").read_text()
+        contract = (ROOT / self.manifest["council_agents"]["contract"]).read_text()
+        for text in (skill, contract):
+            self.assertIn("one bounded task or goal", text)
+            self.assertIn("fresh session", text)
+            self.assertIn("context compaction", text)
 
     def test_every_routed_source_exists(self):
         paths = set()

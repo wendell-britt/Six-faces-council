@@ -10,7 +10,13 @@ Start with:
 
 `v0.1/source/` preserves the complete exported research, philosophy, formal model, council ingestion, crosswalks, decisions, and process log. It is provenance, not default context. Load it through the manifest so historical or superseded language does not silently replace current decisions.
 
-Version `0.1.0-alpha.1` is provisional. It can guide real game-design work while remaining corrigible through evidence, council deliberation, play, and Wendell's rulings.
+Version `0.1.0-alpha.2` is provisional. It can guide real game-design work while remaining corrigible through evidence, council deliberation, play, and Wendell's rulings.
+
+## Session discipline
+
+Use one fresh session for one bounded task or goal. State the goal, select one manifest profile, do the work, verify and record the result, then stop. Start a new session when the goal changes or new work would materially widen the scope.
+
+This alpha deliberately does not optimize long conversations for context compaction. Needing compaction means the work should be split into a new bounded session with an explicit handoff.
 
 ## Install and verify
 
