@@ -73,6 +73,19 @@
   no finger bones, so the action may key them.
 - Owns bars-engine #328 (and watches #325) until they merge.
 
+## Round 4, integration: the Controller lets go (built 2026-10-16, bars-engine #351)
+- `character.py --warp controller --integrate` adds a second action, Integrate, beside Walk: half a second held, three
+  seconds of the move, half a second still. Elbows swing in first so the fists clear the hips outward, the shoulders
+  follow, the fists open finger by finger (thumb last), chest and chin settle into the Player's stance (`INTEGRATE_TO`:
+  the Player's gesture, curve and stoop, relaxed hands; the daemon keeps its own proportions). Timing per joint is the
+  `INTEGRATE` row. Skin weights now reuse the pre-warp blend so a fist opens without tearing. Test J7.
+- #325 and #328 merged 2026-10-16. Renders: /mnt/project-files/3d-build/npc-integrate-2026-10-16/. 3D view:
+  https://claude.ai/artifact/515E62dAHmCaVffBw7EDSm
+- Next, after his look at the Controller: one `INTEGRATE` row per daemon (Protector's push landing, Skeptic's pull
+  returning, Fixer's reach arriving, Victim rising from the yield, Damaged Self's release, Emotional Body gathering
+  back), in a fresh thread, one round each or all six on one sheet; then the cave plays Integrate when the player's
+  move completes the daemon's movement. On a "no", tune the Controller from his note first.
+
 ## What we already follow
 - Version pinned: `bpy==5.2.2` on Python 3.13 (tools/blender-cloud/README.md). Matches the tweet's current LTS.
 - Scale convention: GLB exports 1 unit = 1 m; characters are 1.75 m. Cameras and dims in the cave scripts agree.
@@ -94,4 +107,4 @@
 - EXACT booleans, `gpu.init()` offscreen sheets: no booleans in these scripts, and Cycles CPU works.
 
 ## Waiting on
-- Nothing; the integration round may start.
+- Wendell's look at the Controller letting go (3D view above), then the other six rows.
