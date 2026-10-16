@@ -8817,6 +8817,70 @@
    "auto": true,
    "pos": "Your 2026-09-09 lesson, to assume self-sabotage when there is a block with the choice to skip, is used as an offered frame and never recorded as a finding. This stands unless you flip it.",
    "why": "Your lesson calls it an offer ('An offer is not a requirement'), and the ontology's roadblock decision allows an offered intention hypothesis but never an asserted one. faces.yaml is unchanged. Pass: council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md"
+  },
+  {
+   "id": "pa-github-timer",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Approved posts publish from a new GitHub timer on the council repo every fifteen minutes, beside the board's own timer. Clips go to Meta by direct upload from a GitHub release, so there is no paid scheduler and no paid host: the build costs $0 a month for Instagram and Facebook. This stands unless you flip it.",
+   "why": "Instagram's API has no scheduling field, so something must wake at the hour. GitHub Actions is free on the public council repo, as board-pull.yml shows. Meta allows resumable upload of a local file for Facebook Login for Business apps. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-approval-publishes",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Your approval of an episode's queue on this board is the publishing act. Each post shows whole, with its cover, caption, networks and date. Nothing goes out without the approval, and a post changed afterwards goes back to you. This stands unless you flip it.",
+   "why": "Posting under your name is reserved to you (reserved in faces.yaml); pass one recorded the approve-once shape. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-token-in-secrets",
+   "faces": [
+    "regent"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "The Meta token is a never-expiring system user token you make and paste into the council repo's GitHub secrets yourself (Your steps, meta-publishing-setup). It never appears in chat, a step, a note or a file. This stands unless you flip it.",
+   "why": "A secret is never written to a step (pipeline.yaml); only the timer reads it. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-pilot-ep3",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Episode 2 still goes out through the Meta Business Suite sitting you picked. Episode 3 is the first queue, once a dry run passes: one of episode 2's clips uploads to Meta without being published. This stands unless you flip it.",
+   "why": "Your pick on pp-who-schedules; the Challenger's falsification test. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-numbers-auto",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "Once posting runs, the timer reads each post's plays, saves and shares every Monday into the episode's results, and your 'note the numbers' step is retired. This stands unless you flip it.",
+   "why": "pod-promo-rhythm's review after three episodes needs the numbers; both of your numbers steps are still open. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
+  },
+  {
+   "id": "pa-failure-step",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "podcast pipeline 2",
+   "auto": true,
+   "pos": "A post that fails to publish puts a step on your list within the hour, saying what failed and what to do. This stands unless you flip it.",
+   "why": "Flirtcraft's deploys failed for three weeks unheard (fc-silent-failure). Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md"
   }
  ],
  "questions": [
@@ -14381,6 +14445,29 @@
      "v": "by-hand",
      "label": "Keep posting each clip on its day",
      "c": "Nothing changes, and the posts keep depending on finding the moment each day."
+    }
+   ]
+  },
+  {
+   "id": "pa-x-api",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "podcast pipeline 2",
+   "q": "Should X posts go out by the same timer? The council recommends keeping X by hand until the clips' numbers show X brings anyone.",
+   "why_you": "It is money and posting under your name. Source: council/passes/6FACE_PASS_podcast-pipeline2_2026-10-16.md",
+   "not_before": "Pass one kept X out of Meta Business Suite, and nothing had priced X's API until today.",
+   "options": [
+    {
+     "v": "by-hand",
+     "label": "Keep X by hand (council lean: Challenger, Regent)",
+     "c": "It costs nothing. You post on x.com, or use its own schedule button in the same sitting."
+    },
+    {
+     "v": "timer",
+     "label": "Add X to the timer",
+     "c": "About $0.20 a post with a link by postproxy.dev's 2026 figures, so about $1 an episode, bought as X credits. You make an X developer account and its keys go into GitHub secrets the same way."
     }
    ]
   }
