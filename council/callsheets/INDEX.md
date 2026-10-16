@@ -26,7 +26,7 @@ profile its threads load (docs/ontology-in-flows.md).
 - [studio](studio.md), 2026-10-10: cave pilot through gates 0 to 2; Sprout mock v2 and second cold round; retro 10-17.
 - [big-mind-cave](big-mind-cave.md), 2026-10-15: the daemon path's chambers inside the Big Mind cave; Controller (bars-engine #330), Skeptic (#331), Fixer (#332), Emotional Body (#333) and Victim (#334), stacked, built with Wendell's sets and the boss chain; next merge them in order, then the Damaged Self's chamber in a fresh thread.
 - [cave-of-lessons](cave-of-lessons.md), 2026-10-10: `cave-321-form` on the board; Wendell's phone play, then fixes from his notes.
-- [morning-menu](morning-menu.md), 2026-10-09: build Lenses intake, Tap the Vein menu, morning.py.
+- [morning-menu](morning-menu.md), 2026-10-16: pass ttv-loop 1 built the lens emergence read (saved free writes, goals that return across mornings), strand alignment and the board stepper (draft PRs); next the first emergence run (T1 by 10-18), then the board seal writing tasks to bars-engine.
 - [coaching-site](coaching-site.md), 2026-10-09: Wendell plays #270 on his phone by 10-12, then merge.
 - [podcast](podcast.md), 2026-10-09: ep 2 title and thumbnail, Spotify link, clips, outreach sends.
 - [flirtcraft](flirtcraft.md), 2026-10-09: finish own database and sign-in before promoting; loop fixes PR.
