@@ -91,6 +91,11 @@
    "by": "Claude",
    "ref": "relationship creature revision: rows council/callsheets/rows/relationship-creature-answers-2026-10-16.json on the board (36f496b), callsheet relationship-creature.md build brief",
    "at": "2026-10-16T22:50:00Z"
+  },
+  "2026-10-16-pull-203123#questions/ss-push-down": {
+   "by": "Claude",
+   "ref": "council/callsheets/spirit-generator.md (ruling C recorded; the move build is the sprout build already queued there)",
+   "at": "2026-10-16T20:45:00Z"
   }
  }
 }
