@@ -1,0 +1,20 @@
+{
+ "date": "2026-10-16",
+ "kind": "chat-ruling",
+ "newest_save": "2026-10-16T16:38:30.000Z",
+ "answers": {
+  "board-home": {
+   "kind": "question",
+   "decision": "bars-engine",
+   "text": "Let's do that (chat, after the proposal to make bars-engine the one home of the Council Board)",
+   "savedAt": "2026-10-16T16:38:30.000Z"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/board-home: Yes: bars-engine is the home (build per council/callsheets/board-plumbing.md, Next)"
+ ],
+ "note": "Recorded from a chat answer, the way board/pull.py records a board answer."
+}
