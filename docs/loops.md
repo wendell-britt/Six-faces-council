@@ -14,6 +14,9 @@ grader, but his look stops being what starts the next round. Piloted on the spir
    and pushes the change. If the tool then says a round may start, the thread names that round in its last reply
    and in its send_message handoff, and the coordinator starts it at once (the handoff rule in CLAUDE.md). The
    new thread runs `next_round.py start <strand> <n>` first.
+   A contract's `every_round` list names what every round delivers whatever it builds (the spirit loop: the models in
+   the page's 3D viewer, since round 13 shipped without them and that is where Wendell reviews). `start` prints the
+   list, and `finish` refuses without `--delivered`.
 3. **His look is a veto with a leash**: a round starts itself only when it is at most `max_ahead` (2) rounds past
    his last look. His look is recorded with `next_round.py look <strand> <n> --verdict keep-going|redirect|stop
    --words "<his words>"`. A redirect rewrites the next round's `builds` before it starts (or the running round

@@ -1,0 +1,253 @@
+{
+ "positions": [
+  {
+   "id": "rc-is-relationship",
+   "faces": [
+    "shaman",
+    "architect",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The creature is the relationship itself, the third presence two people tend. The fears and default assumptions the pasted summary calls Freds already have a home: they are each person's daemons. They reach the garden only as spirits a player chooses to bring, or as the creature's veiled parts that a check-in can reveal. What the Big Mind cave does inside one person, the garden does between two. This stands unless you flip it.",
+   "why": "Your words: \"a creature in the LL intersubjective space that players co-tend with the people they are in relationship with.\" Nothing public confirms what Fred stands for in the book (the only public line, Multiamory episode 103, says a blue furry monster named Fred \"can help change the way you think about your romantic relationships\"). Veiled parts follow ss-not-veiled. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-joint-checkin",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Only a check-in both people hold changes the shared creature. Anything one person enters alone is their own picture. Between check-ins the creature shows its last shared reading and how long ago it was, so it reads unchecked, never sick. This stands unless you flip it.",
+   "why": "The ontology: relational attestation establishes another person's experience, never the first person's inward truth (QUICKSTART, Evidence authority). The Architect's third state between healthy and sick. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-pictures-private",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Each person can tend two pictures of their own: the creature as they imagine it, and the other person as they imagine them. Both stay on that person's device and are never scored. At a check-in either may show a picture, as you show a spirit to a voice. Drift is the gap between two shown pictures, shown as a difference and never as an error; if either holds back it reads \"not compared\", and holding back costs nothing. No AI guesses either person. This stands unless you flip it.",
+   "why": "Your words: \"tend to their projection of their partner AND their own concept of the Fred so they can see when what's being imagined is drifting.\" All five faces put privacy first: scoring my picture of you against your report makes your inner life the answer key (QUICKSTART, Privacy and consent; constitution 10; bmt-show-spirit). Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-feeds",
+   "faces": [
+    "architect",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The creature is fed by agreements kept, check-ins of any length or kind, breaks owned and repaired, and charge a person has worked through and chooses to offer. A tap, a card, a gesture or a paper drawing feeds it as much as a long letter, and nothing shows who fed it. A broken agreement or a push past the other's refusal lowers it, and owning it to the other person repairs it. Rest, silence, \"not now\" and an argument said out loud never lower it. This stands unless you flip it.",
+   "why": "These are the cave's trust rules carried over (bmt-trust-falls, bmt-never-falls). \"Intimate disclosure is not progression currency\" (QUICKSTART, Session depth). Whether plain neglect can also make it stale is the open question rc-stale. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-offer-received",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "A charge one person offers to the shared garden is shown to the other person before it lands, and they can decline it. A charge about the other person never arrives unannounced. This stands unless you flip it.",
+   "why": "The Challenger's desk check, run in the pass, found this missing: a grievance fed into the shared garden would reach the other person without their say. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-exit",
+   "faces": [
+    "regent",
+    "diplomat",
+    "challenger",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The shared creature opens only when both people say yes that session. Either can rest it or leave alone, at any time. Leaving composts it, with no death and no blame, and each person keeps only their own pictures. Exits leave no trace: no read receipts, no last-seen times, no record of who left. A player who says the relationship is hurting them gets a silent exit and a line to outside help; the other sees an ordinary departure. This stands unless you flip it.",
+   "why": "Consent is authorization now, never a stored yes (QUICKSTART, Privacy and consent; bmt-ask-again). Composting is a valid completion. The Diplomat's harm path, recommended A, held as a position because it can change later without loss. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-spirits-visit",
+   "faces": [
+    "architect"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Your own spirits can visit the shared garden and stay yours. The other person can see them and cannot command them. This stands unless you flip it.",
+   "why": "Your words: \"Players can bring their own spirits to the collective garden.\" The ontology: \"Access to an ally is not command.\" Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-agreements-bars",
+   "faces": [
+    "architect"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "An agreement is a BAR planted in the pair's own garden, with a life: drafted, proposed, agreed by both, up for revisit, then retired or composted. That carries the book's living agreement in the council's own words. The shared garden gets its own id, and only its members can plant there. This stands unless you flip it.",
+   "why": "Today every garden is personal (bars-engine src/lib/lenses/ensure.ts, src/lib/garden/plant.ts), and the planting writer does not check membership, so a shared garden makes that check load-bearing. QUICKSTART defines BAR scope. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-goal",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Keeping the relationship healthy means keeping its agreement honest and current. An honest ending, renegotiated or closed with a closing rite, is a valid completion and never a loss. This stands unless you flip it.",
+   "why": "Your words: \"The game is to keep the relationship healthy.\" Strip the image and a health meter is a guilt meter one partner can point at (the Challenger's dissent); the ontology lets endings and composting complete (QUICKSTART, Lifecycle grammar, Composting). Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-credit",
+   "faces": [
+    "regent"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "The creature is never called Fred. Eri Kardos's Relationship Agreements (2016) is credited in the council's own words, and the book's meaning of Fred stays marked unconfirmed until someone reads it. Any public mention of her, including the Kickstarter, waits on your word. This stands unless you flip it.",
+   "why": "You asked for another name. Copying her text is out; naming a person in public is reserved to you (council/faces.yaml). Test T3 reads the source by 10-23. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  },
+  {
+   "id": "rc-order",
+   "faces": [
+    "regent",
+    "challenger",
+    "sage"
+   ],
+   "pass": "relationship creature 1",
+   "auto": true,
+   "pos": "Nothing is built from this pass, and the creature stays out of the Chapter 1 demo. Its first home is Friendcraft's redesign pass, which already plans BARs for friendship and basic moves rethought with emotional alchemy. The next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.",
+   "why": "el-demo-scope keeps the demo to the cave; st-cap-games-only puts Flirtcraft and Friendcraft outside the cap; council/callsheets/friendcraft.md has the redesign waiting. Four of five faces would build nothing before a paper play. Source: council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md"
+  }
+ ],
+ "questions": [
+  {
+   "id": "rc-name",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "relationship creature 1",
+   "q": "What should the co-tended creature be called, now that Fred is out? The council recommends A.",
+   "why_you": "You said \"definitely want another name\", and naming is yours. If you have the book, a line in the steer box on what Fred stands for there settles test T3 too.",
+   "not_before": "Raised by relationship creature pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. The Between",
+     "c": "The family name is the Between (\"we tend our Between\"), and each pair names its own creature once it settles, as spirits get breed names. Works for friends as well as lovers."
+    },
+    {
+     "v": "B",
+     "label": "B. The Kith",
+     "c": "An old word for the people you belong with. Warmer and stranger; reads well in Friendcraft."
+    },
+    {
+     "v": "C",
+     "label": "C. My own word",
+     "c": "Write it in the steer box."
+    }
+   ]
+  },
+  {
+   "id": "rc-stale",
+   "faces": [
+    "challenger",
+    "diplomat",
+    "shaman",
+    "architect"
+   ],
+   "pass": "relationship creature 1",
+   "q": "Can the creature go stale when nobody tends it? The council recommends A.",
+   "why_you": "The faces split. The Challenger and the Shaman say any decay from absence turns love into a chore and the creature into a guilt meter. The Diplomat says a creature that can go stale is a real stake worth keeping. Only you know how much the game should push.",
+   "not_before": "Raised by relationship creature pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Only a broken agreement",
+     "c": "It goes stale only when the pair miss a check-in rhythm they agreed to, which is itself an agreement. Owning it airs it out. Absence with no agreement never touches it."
+    },
+    {
+     "v": "B",
+     "label": "B. Plain neglect too",
+     "c": "Left alone for a while it goes stale, never dies, and a check-in airs it out. More of a game; risks someone pointing at it."
+    },
+    {
+     "v": "C",
+     "label": "C. Never",
+     "c": "Nothing lowers it except a broken agreement or a push past a refusal. Safest; the least pull to come back."
+    }
+   ]
+  },
+  {
+   "id": "rc-who-holds",
+   "faces": [
+    "architect",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "relationship creature 1",
+   "q": "Who can hold a creature together, and can one person start alone? The council recommends A.",
+   "why_you": "Your message names three games and \"the people they are in relationship with\", with no number. bars-engine has only personal gardens. The answer sets the shared garden's shape and who plays the first paper test.",
+   "not_before": "Raised by relationship creature pass 1, 2026-10-16, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Two people, one can start",
+     "c": "Any two people of any relationship. One can start and invite; the creature waits unborn, as gas, until the other joins and the first check-in runs. Groups come later on the same design."
+    },
+    {
+     "v": "B",
+     "label": "B. Groups from the start",
+     "c": "Two or more, so a friend circle or a team of allies can hold one. Needs every member's consent and rules for one leaving."
+    },
+    {
+     "v": "C",
+     "label": "C. Both must join first",
+     "c": "Nothing exists until both have joined. Cleanest consent; nothing to do while you wait."
+    }
+   ]
+  }
+ ],
+ "battles": [
+  {
+   "id": "fr-between",
+   "name": "The Between",
+   "repo": "six-faces-council",
+   "element": "wood",
+   "record": "council/passes/6FACE_PASS_relationship-creature1_2026-10-16.md; council/callsheets/relationship-creature.md",
+   "intro": "It wants to be the relationship two people tend together, fed by charge each has worked through, in a garden of their shared agreements. The council made it out of the cave's trust rules and kept each person's pictures private. What it needs from you is its name, whether neglect can make it stale, and who can hold one.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "rc-name",
+      "rc-stale",
+      "rc-who-holds"
+     ],
+     "positions": [
+      "rc-is-relationship",
+      "rc-joint-checkin",
+      "rc-pictures-private",
+      "rc-feeds",
+      "rc-offer-received",
+      "rc-exit",
+      "rc-spirits-visit",
+      "rc-agreements-bars",
+      "rc-goal",
+      "rc-credit",
+      "rc-order"
+     ]
+    }
+   ]
+  }
+ ]
+}
