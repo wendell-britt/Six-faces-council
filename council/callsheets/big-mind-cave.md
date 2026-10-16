@@ -31,6 +31,11 @@ Build threads, one pull request each, all on bigmind.js so in order:
    once its voice trusts you and vouches at later chambers and, together, at the centre's mouth. Save per the Architect:
    `voices[id].trust = { seen:[{dim, kind, at}], promises:[{kind, made, kept}] }` plus `broken`/`repaired`, no words.
    The trust stances list goes to the art thread.
+   **Built 2026-10-16: bars-engine #355 (draft), bigmind-test 444 pass.** Right answers per voice (can/will): Protector wait/return,
+   Controller pace/return, Skeptic hold/visit, Fixer sit/return, Emotional Body hold/visit, Victim wait/visit, Damaged Self
+   pace/return (drafts). Going back in always re-meets the chamber's voice (`bmt-ask-again`). Stances sent to the art thread:
+   guarded, testing, softening, trusting, willing, hurt, repaired. Arrival lines now name the GESTURES.md held movements.
+   Next: Wendell plays it (T4, plus the shut-mouth sound on a device); when #355 merges, build 3 starts.
 3. **Full 3-2-1 and the meeting spirit** (`bmt-321-offer`, `bmt-meeting-spirit`): after build 2; reuse `K.talk321` with an
    optional `beforeOne` hook in cave.js; phase 1 opens only through the voice's permission.
 4. **Art, alongside** (`bmt-build-order`): the WARP daemon bodies (bars-engine #328 lineage, GESTURES.md) replace the
