@@ -4,6 +4,15 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-16, thread "seed library" (bars-engine branch claude/seed-library-g3qu9x, this repo's branch of the same name,
+stacked on #191): Next item (2) below is built in bars-engine. A live task can be set aside as `resting`, drawn back into
+today as the same task, or let go from the library with no reason; the council reads it through
+`GET /api/tap-the-vein/seed-library`. Design and rules: `docs/seed-library.md`; positions `sl-resting-not-compost`,
+`sl-no-pressure`, `sl-draw-same-task`, `sl-board-reads-library`. Still open: the board's surface (a seed library panel on the
+Morning tab read by `council/morning.py` from the export, and "Set aside" beside each intake item, written to bars-engine),
+a fresh Opus thread that owns bars-engine #342 and Six-faces-council #192 and stacks on #341 and #342 until they merge;
+test SL1 on 2026-10-30.
+
 2026-10-16, thread "lens emergence" (bars-engine #341, this repo's branch claude/lens-emergence-ittf5k): board read 1759
 flipped two positions and added one. Done here: `lens_emerge.py` pitches paraphrase each morning and cite only its date,
 refusing a gist that copies six of his words in a row (`ttv-lens-emerge`); `intake_align.py` gives every no-home-yet
@@ -14,8 +23,7 @@ item an optional shadow quest, the question that would bring out its hidden alig
 Vercel, the cloud environment and the GitHub secret. Once he ticks it, a fresh thread runs `lens_emerge.py fetch`,
 pitches at most five goals with `pitch`, lands the rows with `board/sync_board.py --rows` and deletes the scratch copy.
 (2) The seed library (`ttv-fruit-is-his` stands with his addition, "We should also be able to defer those into a seed
-library that can be drawn from"): set-aside items go to a library he draws from later. It needs a bars-engine status
-or table plus a board surface, so it is a council pass or a design thread first. (3) Taking a shadow quest: today the
+library that can be drawn from"): built in bars-engine by the "seed library" thread above; the board surface is next. (3) Taking a shadow quest: today the
 board only shows the question. Making it a bars-engine shadow quest on the item's task (QLA already mints shadow quests)
 is the follow-up once #341 merges.
 
