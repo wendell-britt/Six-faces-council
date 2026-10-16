@@ -1,0 +1,153 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T17:51:36.514Z",
+ "answers": {
+  "pa-x-api": {
+   "kind": "question",
+   "choice": "by-hand",
+   "savedAt": "2026-10-16T17:49:42.046Z",
+   "steer": ""
+  },
+  "of-load-where-decided": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:50:13.564Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "of-callsheet-line": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:50:22.280Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "of-compost-split": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:50:30.713Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "of-term-check": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:50:36.146Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "of-precedence": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:50:43.580Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "of-wave-room": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:50:51.130Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "of-sabotage-offer": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:50:57.564Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pa-github-timer": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:51:16.114Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pa-approval-publishes": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:51:21.664Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pa-token-in-secrets": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:51:26.047Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pa-pilot-ep3": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:51:30.347Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pa-numbers-auto": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:51:33.464Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pa-failure-step": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:51:36.514Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "podcast-ep2-clips-01",
+   "at": "2026-10-16T17:50:00Z",
+   "what": "moved",
+   "from": "2026-10-14",
+   "to": "2026-10-17",
+   "do": "Post that episode 2 is out, if you have not yet: the YouTube thumbnail on Instagram with the day 0 caption, and the same caption with the link on Facebook and X."
+  },
+  {
+   "id": "podcast-ep2-clips-03",
+   "at": "2026-10-16T17:50:00Z",
+   "what": "moved",
+   "from": "2026-10-16",
+   "to": "2026-10-19",
+   "do": "Post clip 1, Tom on how long do you want to feel this way (37 seconds), as an Instagram Reel with Share to Facebook on and auto captions on, then post it on X. Before sharing, tap Edit cover, then Add from camera roll, and pick cover-clip1-how-long.jpg. Check Instagram's captions against the words in captions.md before you post. Put the episode 2 link where the X caption says [episode link]."
+  },
+  {
+   "id": "podcast-ep2-clips-04",
+   "at": "2026-10-16T17:50:00Z",
+   "what": "moved",
+   "from": "2026-10-18",
+   "to": "2026-10-21",
+   "do": "Post clip 2, charity as domination (59 seconds), the same way, with auto captions on and cover-clip2-charity.jpg as the cover."
+  },
+  {
+   "id": "podcast-ep2-clips-05",
+   "at": "2026-10-16T17:50:00Z",
+   "what": "moved",
+   "from": "2026-10-21",
+   "to": "2026-10-24",
+   "do": "Post clip 3, how would you like to feel (74 seconds), the same way, with auto captions on and cover-clip3-how-would-you-like-to-feel.jpg as the cover."
+  },
+  {
+   "id": "podcast-ep2-clips-06",
+   "at": "2026-10-16T17:50:00Z",
+   "what": "moved",
+   "from": "2026-10-24",
+   "to": "2026-10-27",
+   "do": "Post clip 4, Tom on allowing the purpose (72 seconds), the same way, with auto captions on and cover-clip4-allow-the-purpose.jpg as the cover. Check the two words captions.md flags (Almaas, and con into) against the audio."
+  },
+  {
+   "id": "podcast-ep2-clips-07",
+   "at": "2026-10-16T17:50:00Z",
+   "what": "moved",
+   "from": "2026-10-25",
+   "to": "2026-11-05",
+   "do": "Nine days after clip 1, note each clip's views, saves and shares from the platforms' insights, and paste them in the podcast thread."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "questions/pa-x-api: Keep X by hand (council lean: Challenger, Regent)",
+  "steps/podcast-ep2-clips-01: moved from 2026-10-14 to 2026-10-17",
+  "steps/podcast-ep2-clips-03: moved from 2026-10-16 to 2026-10-19",
+  "steps/podcast-ep2-clips-04: moved from 2026-10-18 to 2026-10-21",
+  "steps/podcast-ep2-clips-05: moved from 2026-10-21 to 2026-10-24",
+  "steps/podcast-ep2-clips-06: moved from 2026-10-24 to 2026-10-27",
+  "steps/podcast-ep2-clips-07: moved from 2026-10-25 to 2026-11-05"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
