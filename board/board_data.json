@@ -9308,6 +9308,63 @@
    "auto": true,
    "pos": "The builds run one thread and one pull request each: the hidden next voice with free walking first; then trust; then the full 3-2-1 and the meeting spirit; and the art alongside (the WARP daemon bodies from bars-engine #328 wired in first, then dressing the cave, under a phone load budget, with the trust stances added once the trust build names them). This stands unless you flip it.",
    "why": "All the cave builds change bigmind.js, so they go in order. The Challenger: no trust stance goes into the models before the trust build names the stances. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-honest-moves",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Trust actions can be taken anywhere on the path: in the hallway, at the mouth, while you ask, and from the voice's seat. Each voice has a right answer, which is what it needs from you. An action counts only when it is played honestly, and that shows as the voice's charge easing on the next check-in. A right card with no easing moves nothing. This stands unless you flip it.",
+   "why": "Your steer on bmt-three-moves (overruled, 22:07): \"You can take these actions before you get in the voices seat. I do think there is a right answer but only honest plays should get you progress as made manifest through charge metabolizing\". The charge is your report, so honesty rests on your report, as the ontology's evidence rules say it must. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-keep-talking",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "When a voice is willing to step aside, you can keep talking with it: its questions, the full 3-2-1, or simply staying with it. Walking on is your choice, and the voice waits until you make it. This stands unless you flip it.",
+   "why": "Your steer on bmt-two-roads (stands, 22:07): \"I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-goodness-models",
+   "faces": [
+    "diplomat",
+    "shaman",
+    "architect"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Each voice has its own picture of what good looks like. Drafts: for the Protector, good keeps us safe; the Controller, good meets the standard; the Skeptic, good is honest about what is here; the Fixer, good doesn't leave what's broken; the Emotional Body, good feels it all the way; the Victim, good hears the whole story; the Damaged Self, good doesn't let someone else take the hit. You earn its read of you in two ways: act on its picture honestly, or show it where you already share that picture from where you stand (\"You keep us safe by watching. I keep us safe by going slowly.\"). Its read still shows only in its words. The seven pictures are drafts. This stands unless you flip it.",
+   "why": "Your steer on bmt-good-in-words (stands, 22:08): \"They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs\". The pictures are drawn from each daemon's row and your question sets in daemons/questions.js. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-trust-falls",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Trust can fall. A broken promise lowers that voice's will mark, and pushing past its refusal lowers its read of your goodness. Rest, Not now, silence and \"I don't know\" never lower it. A fall can be repaired: owning it to the voice (\"I said I'd come back, and I didn't\") is an honest move and counts as one. Each voice keeps its marks as kept, broken and repaired. This stands unless you flip it.",
+   "why": "Your steer on bmt-never-falls (22:09): \"I think trust should be able to fall. This is the accountability matrix\". Rest and Not now stay safe on bm-decline (declining is a full move). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+  },
+  {
+   "id": "bmt-spirits-vouch",
+   "faces": [
+    "shaman",
+    "architect",
+    "regent"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "auto": true,
+   "pos": "Your spirits vouch for you. The spirit born when you met a voice becomes your ally once that voice trusts you, and it is proof you learned what that voice needs. At each later chamber the voice asks who vouches for you, and your allied spirits answer in that voice's terms (\"The Protector's spirit says you kept watch.\"). At the mouth of the centre they vouch together, like the badges shown at Victory Road. How many spirits you carry adds nothing; what vouches is the alliance. This stands unless you flip it.",
+   "why": "Your steer on bmt-show-spirit (overruled, 22:11): \"The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
   }
  ],
  "questions": [
@@ -14980,6 +15037,28 @@
      "v": "C",
      "label": "C. The whole path after one full visit",
      "c": "The first visit stops before the Damaged Self; a player who comes back opens the rest. Depth is earned by return; one more rule to build and explain."
+    }
+   ]
+  },
+  {
+   "id": "bmt-accountability",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1, after your answers",
+   "q": "Is \"the accountability matrix\" a framework of your own the cave should follow? The council recommends A, and the trust build uses it until you say otherwise.",
+   "why_you": "Your steer on bmt-never-falls says \"This is the accountability matrix\". Nothing in the council's record, the ontology or the three repos names an accountability matrix, so only you know whether it is a framework with its own rules. The answer sets what makes trust fall and come back.",
+   "not_before": "Raised after your board answers of 2026-10-16, 22:09.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. The council's reading",
+     "c": "Each voice keeps can, will and good as kept, broken or repaired. A broken promise or a push past a refusal lowers a mark; owning it to the voice repairs it. Built now, in the trust build."
+    },
+    {
+     "v": "B",
+     "label": "B. A framework of mine",
+     "c": "Write or paste it in the steer box. The trust build holds the falls until it is read, then follows your framework."
     }
    ]
   }
