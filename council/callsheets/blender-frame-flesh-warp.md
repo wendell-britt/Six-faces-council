@@ -112,5 +112,18 @@
 - The Blender MCP servers. We run scripts in a pinned venv; the tweet's own warning about unguarded code applies.
 - EXACT booleans, `gpu.init()` offscreen sheets: no booleans in these scripts, and Cycles CPU works.
 
+## Built (2026-10-16, bars-engine #353): the bodies in the cave
+- `content/ontology-game/cave/bake_daemons.py` (plain Python) bakes `character.py --daemons` into one GLB per daemon
+  and the Player: 16-bit positions, 8-bit normals, a robe band per vertex, 88-89 KB and 6,328 triangles each (budget
+  96 KB, 7,000). Static held pose only; the rig and the Integrate action are not played in the cave yet.
+- `cave.js` fetches a body the first time a scene asks for that daemon and swaps it in for the stand-in (Big Mind
+  chambers and the Cave of Lessons' daemon stops alike); the robe takes the daemon's colour. `dressCave` dresses the Big
+  Mind tube from the cave kit. Renders: /mnt/project-files/3d-build/daemon-bodies-2026-10-16/.
+- Rebake after any `character.py` change to a rest shape: `character.py --daemons --out X`, then `bake_daemons.py X
+  content/ontology-game/cave/daemons`.
+- Next for this art line: play the Integrate action in the cave (needs the skinned body: joints and weights in the
+  bake and a small skinning path in cave.js), once his look at #351 approves the movement; trust stances once the trust
+  build names them.
+
 ## Waiting on
 - Wendell's look at the Controller letting go (3D view above), then the other six rows.
