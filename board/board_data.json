@@ -24238,6 +24238,105 @@
      "challenger"
     ],
     "pass": "podcast pipeline 2"
+   },
+   "ttv-board-one-phase": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:56:30.005Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-no-home-yet": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:57:24.321Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "steer": "I think it should introduce a shadow quest to find alignment. The quest should be optional but a shadow quest is the type of gamification that is important for this work. The assumption that work that is unassigned has a shadow alignment that can't be seen and must be emerged",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-align-to-work": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:57:31.288Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-saved-read-scoped": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:58:01.528Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-lens-emerge": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:58:37.723Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "steer": "So we don't want to quite the words directly because the writing is so raw. It's ok for the Council to paraphrase, they only need to cite the date",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-fruit-is-his": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:59:02.416Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "steer": "We should also be able to defer those into a seed library that can be drawn from",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-task-not-bar": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:59:06.416Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "ttv-loop 1"
+   },
+   "ttv-one-store": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-16",
+    "saved_at": "2026-10-16T17:59:10.784Z",
+    "record": "council/ledger/2026-10-16-pull-175910.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ttv-loop 1"
    }
   },
   "questions": {
