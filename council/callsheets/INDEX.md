@@ -4,7 +4,8 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 `council/HANDOFF.md` only as the archive. A sheet's `ontology:` line, when it has one, names the only ontology
 profile its threads load (docs/ontology-in-flows.md).
 
-## Open strands
+## Open strands- [engine-slice](engine-slice.md), 2026-10-16: the four-layer slice pass merged; sprout ruled the home and registered in repos.yaml; sprout already has a built slice waiting on playtest — next reconcile `sprout/docs/slice-plan.md` against the pass's contract.
+
 - [inner-creatures](inner-creatures.md), 2026-10-17: children raise inner creatures (Chiang's digients, parts work); research note maps 88 Marble social-emotional topics to channel, move and quadrant and derives 42 kata by age band (`council/research/2026-10-17-marble-kata/`); Wood thin, Open Up nearly absent; next a blind re-map, the empty 5-to-7 forms, a clinician read.
 - [relationship-creature](relationship-creature.md), 2026-10-16: the Between, a creature two people co-tend (Kardos credited); his answers 22:40 recorded (`rc-spark`, `rc-tend-alone`, `rc-stale-neglect`, `rc-end-together`, `rc-demo-garden`); demo garden built 10-16 (https://claude.ai/artifact/W4MpDsm5xnnaLGcoPNWVv6); his look 23:05: too abstract, the page becomes the intake and the play space is 3D; 3D garden built 10-16 (https://claude.ai/artifact/NTi4jcpaHkDEMnqpVA9LBq) never opened on his phone; hosting pass 10-17 moves it to bars-engine; port merged 10-17 (bars-engine #357, https://bars-engine.vercel.app/ontology-game/between); next his iPhone check on Your steps (`between-on-bars-engine`), then the spark carry once the menu key works; round 2 (cozy and fun, after Ari's look): his four ChatGPT views landed 10-17, build brief "round 2, the hollow" ready for a fresh Opus thread.
 - [ontology-flows](ontology-flows.md), 2026-10-16: which flow loads the design ontology (pass ontology-flows 1, #184); tests T1 to T4 due 10-21 to 11-16.
