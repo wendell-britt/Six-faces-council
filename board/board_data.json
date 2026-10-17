@@ -10113,6 +10113,18 @@
    "auto": true,
    "pos": "Each engagement has a one-page consent form the client signs before work starts: who made it (human-made); AI use ticked by the client, with none as the default, then admin only, AI in drafts the artist reworks, or other; which assets enter the commons and who may use them; consent to share the hour log and write-up with private details removed; the right to withdraw AI consent at any time. This stands unless you flip it.",
    "why": "Your answer C on q-ac-ai-boundary: case by case per client consent, recorded in the commons. Human-made as the default box answers Portland's allergy to AI (bars-engine CLAUDE.md). The form's text is in the pass file."
+  },
+  {
+   "id": "pos-ac-commons-license",
+   "faces": [
+    "regent",
+    "diplomat",
+    "architect"
+   ],
+   "pass": "artist-corps T3",
+   "auto": true,
+   "pos": "The commons license: the artist keeps the copyright; the client gets a perpetual, royalty-free license to use and adapt the work for its own mission, and its own marks never enter the commons; member non-profits may use commons assets free with the credit line; nobody may sell them, use them for a for-profit client, or train AI on them without the artist's written consent. Every commons hour is paid in dollars and priced into the engagement; no per-use royalties until the Phase 2 pass. This stands unless you flip it.",
+   "why": "Test T3 (due 2026-11-06). Keeping copyright with the artist fits your 'Contractors to cooperative member pipeline' steer and pos-ac-paid-hours; the AI-training bar answers Portland's allergy to AI. A lawyer checks it with T4, and if commons hours must be wages the corps would own those assets by law, so that is the lawyer's first question. Full page: council/artist-corps/commons-license.md."
   }
  ],
  "questions": [
