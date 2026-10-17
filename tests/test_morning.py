@@ -80,6 +80,32 @@ class MorningTest(unittest.TestCase):
         self.assertEqual(m["lenses"]["note"], "goals export not read: x")
         self.assertTrue(all(d["goals"] == [] for d in m["lenses"]["domains"]))
 
+    def test_seed_library_is_read_only(self):
+        morning.from_prs = lambda path=None: ([], None)
+        export = {"seeds": [{"id": "t9", "text": "Call the printer", "fromDay": "2026-10-14",
+                             "restedAt": "2026-10-16T18:00:00.000Z", "lensGoalId": None, "barId": None, "questId": None}]}
+        m = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_export=export)
+        self.assertEqual(m["seeds"], {"seeds": [{"id": "t9", "text": "Call the printer", "fromDay": "2026-10-14",
+                                                 "restedOn": "2026-10-16"}], "back": [], "read": True})
+        unread = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_note="seed library not read: 401")
+        self.assertEqual(unread["seeds"], {"seeds": [], "back": [], "read": False, "note": "seed library not read: 401"})
+
+    def test_resurfaced_seeds_come_back_in_order(self):
+        morning.from_prs = lambda path=None: ([], None)
+        seed = lambda i, due, rested, back: {"id": i, "text": f"seed {i}", "fromDay": rested, "restedAt": f"{rested}T09:00:00.000Z",
+                                              "restDay": rested, "rung": 0, "dueDay": due, "resurfaced": back}
+        export = {"seeds": [seed("a", "2026-10-19", "2026-10-16", True), seed("b", "2026-10-18", "2026-10-15", True),
+                            seed("c", "2026-10-20", "2026-10-17", False)], "ladder": [3, 7, 14, 30, 60, 90]}
+        m = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_export=export)
+        self.assertEqual(m["seeds"]["back"], ["b", "a"])
+        self.assertEqual(m["seeds"]["seeds"][2], {"id": "c", "text": "seed c", "fromDay": "2026-10-17",
+                                                  "restedOn": "2026-10-17", "dueDay": "2026-10-20", "rung": 0})
+
+    def test_sealed_items_carry_their_task_id_for_set_aside(self):
+        menu = dict(MENU, items=[dict(MENU["items"][0], taskId="t1"), *MENU["items"][1:]])
+        items = morning.from_menu(menu)
+        self.assertEqual(items[0]["taskId"], "t1")
+        self.assertNotIn("taskId", items[1])
 
     def test_steps_due_today_are_gathered_and_done_ones_skipped(self):
         import tempfile, pathlib

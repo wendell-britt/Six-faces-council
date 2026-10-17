@@ -22,11 +22,16 @@ Usage:
   python3 council/intake_align.py <store>/morning/menu.json --aligns aligns.json --write  # write and rebuild
       aligns.json: [{"line": "<item, word for word>", "why": "<one sentence>",
                      and one of "goal": "<goal id>" | "row": "<board row id>"
-                               | "pitch": {"title": "<a few words>", "parentId": "<goal id>"} or {"title", "domain"}}]
+                               | "strand": "<call sheet name, e.g. morning-menu>" (work already happening)
+                               | "pitch": {"title": "<a few words>", "parentId": "<goal id>"} or {"title", "domain"}
+                               | "none": true with "shadow": "<the question its optional shadow quest asks>"}]
+      No home yet means its alignment is there but not yet seen. Wendell, board, `ttv-no-home-yet` overruled
+      2026-10-16: "I think it should introduce a shadow quest to find alignment. The quest should be optional".
 """
 import argparse
 import datetime as dt
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -43,6 +48,27 @@ def row_title(r):
     return norm(r.get("q") or r.get("pos") or r.get("id"))[:140]
 
 
+CALLSHEETS = ROOT / "council" / "callsheets"
+LENS_LINE = re.compile(r"^lens:\s*(\S+)", re.M)
+
+
+def strand(name, goals):
+    """{strand, strandTitle[, goalId, goalTitle]} for a call sheet, or None. A sheet's `lens: <goal id>` line is
+    written only after he keeps that goal for the strand; a strand without one keeps running."""
+    if not re.fullmatch(r"[a-z0-9-]+", name or "") or name == "INDEX":
+        return None
+    path = CALLSHEETS / f"{name}.md"
+    if not path.is_file():
+        return None
+    text = path.read_text(encoding="utf-8")
+    head = next((ln[2:].strip() for ln in text.splitlines() if ln.startswith("# ")), name)
+    out = {"strand": name, "strandTitle": head}
+    m = LENS_LINE.search(text)
+    if m and m.group(1) in goals:
+        out |= {"goalId": m.group(1), "goalTitle": goals[m.group(1)]["title"]}
+    return out
+
+
 def align(menu, aligns, data):
     """(intake, pitch questions, problems). Problems stop the write."""
     goals = {g["id"]: g for g in (data.get("morning") or {}).get("goals") or []}
@@ -53,7 +79,7 @@ def align(menu, aligns, data):
     bad, seen, items, pitches = [], set(), [], []
     for a in aligns:
         line, why = norm(a.get("line", "")), norm(a.get("why", ""))
-        kinds = [k for k in ("goal", "row", "pitch") if a.get(k)]
+        kinds = [k for k in ("goal", "row", "strand", "pitch", "none") if a.get(k)]
         if line not in lines:
             bad.append(f"not an intake item word for word: {line!r}")
             continue
@@ -61,7 +87,7 @@ def align(menu, aligns, data):
             bad.append(f"aligned twice: {line!r}")
         seen.add(line)
         if len(kinds) != 1:
-            bad.append(f"needs exactly one of goal, row, pitch: {line!r}")
+            bad.append(f"needs exactly one of goal, row, strand, pitch, none: {line!r}")
             continue
         if len(why.split()) < 4:
             bad.append(f"the reason is not written out: {line!r}")
@@ -77,6 +103,22 @@ def align(menu, aligns, data):
                 bad.append(f"no board row with id {a['row']!r}")
                 continue
             b = {"kind": "row", "rowId": r["id"], "rowTitle": row_title(r)}
+        elif kinds[0] == "strand":
+            # Work already happening (pass ttv-loop 1, ttv-align-to-work): a call sheet strand. The strand's Lens goal,
+            # when he has kept one for it, rides along so the item reaches a lens through the work.
+            st = strand(a["strand"], goals)
+            if not st:
+                bad.append(f"no call sheet council/callsheets/{a['strand']}.md")
+                continue
+            b = {"kind": "strand", **st}
+        elif kinds[0] == "none":
+            # No home yet offers an optional shadow quest that emerges the alignment it already has but nobody can see
+            # (ttv-no-home-yet, overruled 2026-10-16). The reason and the quest's question both have to be written.
+            shadow = norm(a.get("shadow", ""))
+            if len(shadow.split()) < 4:
+                bad.append(f"no home yet needs a shadow quest: one question of four words or more: {line!r}")
+                continue
+            b = {"kind": "none", "shadow": shadow}
         else:
             p, n = a["pitch"], len(pitches) + 1
             title = norm(p.get("title", ""))

@@ -73,6 +73,15 @@ textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);
 .research .rec{border-left:3px solid var(--accent);padding-left:10px}
 .research details{margin-top:10px;font-size:.88rem}
 .research summary{cursor:pointer;color:var(--muted)}
+/* A publish queue's approval row (pa-approval-publishes, pass podcast-pipeline2): every post whole, cover and words. */
+.queue{display:grid;gap:12px;margin:8px 0 12px;max-width:72ch}
+.qpost{display:grid;grid-template-columns:120px 1fr;gap:12px;background:var(--accent-soft);border-radius:6px;padding:10px 12px}
+.qpost img{width:120px;height:auto;border-radius:4px;display:block}
+.qpost h4{margin:0 0 4px;font-size:.95rem}
+.qpost .qwhen{font-size:.82rem;color:var(--muted);margin:0 0 6px}
+.qpost .qcap{font-size:.92rem;white-space:pre-wrap;margin:0 0 8px}
+.qpost .qnet{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+@media (max-width:480px){.qpost{grid-template-columns:1fr}.qpost img{width:160px}}
 .research a{color:var(--accent);overflow-wrap:anywhere}
 .opts{display:grid;gap:8px;margin-top:4px}
 .opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;max-width:72ch}
@@ -277,11 +286,25 @@ body.has-send{padding-bottom:120px}
 .mo-lens dd{margin:0;overflow-wrap:anywhere}
 .mo-lens dd.none{color:var(--muted)}
 .mo-lens ul{margin:0;padding-left:1.1em}
+/* Seed library (docs/seed-library.md, 2026-10-16): what he set aside, read only, closed, its row showing no count. */
+.mo-seed{padding:8px 0;border-top:1px solid var(--line)}
+.mo-seed:first-of-type{border-top:0}
+.mo-aside{font:inherit;font-size:.88rem;padding:5px 14px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
+.mo-aside:disabled{opacity:.6;cursor:default}
+.mo-rest{font-size:.85rem;color:var(--muted)}
 /* Tap the Vein on the board (2026-10-14, Wendell: "so that I can do the tap the vein directly from the environemnt where
    I'll be using that information"). The free write stays in this browser; only lines he marks are saved (mm-raw). */
 .ttv-write{width:100%;min-height:10em}
 .ttv-line .mo-ctl{margin-top:4px}
 .ttv-line.kept{box-shadow:inset 4px 0 0 var(--accent);padding-left:12px}
+/* Pass ttv-loop 1 (2026-10-16): the board's box takes bars-engine's feel, one phase at a time under a rail. */
+.ttv-rail{display:flex;gap:6px;margin:10px 0 4px}
+.ttv-rail span{flex:1;height:5px;border-radius:9999px;background:var(--line)}
+.ttv-rail span.on{background:var(--accent)}
+.ttv-ethic{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:4px 0 10px}
+.ttv-eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:6px 0}
+.ttv-nav{justify-content:space-between}
+.ttv-how summary{cursor:pointer;color:var(--muted);font-size:.85rem;margin-top:10px}
 .mo-more{font:inherit;font-size:.85rem;margin:8px 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
 
 /* Blocker panel (Wendell, 2026-10-12: an overdue step "needs to actually run a player through the blockage and save the
@@ -355,18 +378,46 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
 <section id="view-morning" role="tabpanel" aria-labelledby="tab-morning" hidden>
   <div class="mo-head"><p class="lede" id="mo-lede" style="margin:0"></p><span class="mo-count" id="mo-count"></span></div>
   <p class="lede"><a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Open Tap the Vein</a> to write, keep your lines and seal the menu. It opens the bars-engine site in a new tab.</p>
+  <details class="mo-cat" id="mo-back" open hidden><summary><b>Back from your seed library</b><span>Seeds that came back today</span></summary>
+    <p class="lede">A seed you set aside comes back 3 days later, then 7, 14, 30, 60, and every 90 after that. In <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a> you can draw it into today, keep it resting, or let it go. If you pass it by, it comes back later; it is never let go for you.</p>
+    <div id="mo-back-list"></div>
+  </details>
   <details class="mo-cat" id="mo-lenses" open hidden><summary><b>Your Lens goals</b><span id="mo-lenses-sum"></span></summary>
     <dl class="mo-lens" id="mo-lens-list"></dl>
   </details>
+  <details class="mo-cat" id="mo-seeds" hidden><summary><b>Seed library</b><span>What you set aside to draw from later</span></summary>
+    <p class="lede">Each seed rests here until you draw it into a day or let it go, both in <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a>. While it rests it comes back now and then, at the top of this tab.</p>
+    <div id="mo-seed-list"></div>
+  </details>
   <details class="mo-cat mo-ttv" id="mo-ttv"><summary><b>Tap the Vein here</b><span id="mo-ttv-sum">List what you can do, write, seal</span></summary>
-    <p class="lede"><label for="ttv-can">Everything you can do today, one per line.</label> The next board read gives each one a written line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches for you to keep (lens-intake-align).</p>
-    <textarea id="ttv-can" class="ttv-write" rows="6" placeholder="One thing per line"></textarea>
-    <p class="lede">Then write whatever is here this morning, if you like. Find your lines and mark the ones to do, then seal. Sealing saves the free write to the board. The next board read summarizes it, pitches the lines worth keeping as BARs on the Open tab with the slot each would go to, and deletes the free write (ttv-raw-bars). Only the pitches you keep become BARs.</p>
-    <div class="ttv-lens" id="ttv-lens" hidden><p class="lede"><label>Lens with no goals yet: <select id="ttv-lens-pick"></select></label> <span id="ttv-lens-prompt"></span> If you write toward it, the board read also pitches year goals for it from your words, and each one you keep becomes an active goal in bars-engine (lens-pitch-goals).</p></div>
-    <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="Write freely"></textarea>
-    <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines</button><div class="state" id="ttv-state"></div></div>
-    <div id="ttv-lines"></div>
-    <div class="ctl" id="ttv-seal-row"><button class="save" id="ttv-seal" type="button">Seal the menu</button><div class="state" id="ttv-count"></div></div>
+    <!-- One phase at a time, as bars-engine's runner does (pass ttv-loop 1, ttv-board-one-phase). -->
+    <div class="ttv-rail" id="ttv-rail" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <p class="ttv-ethic">No floor to clear · no streak to keep · stuckness is data, not failure</p>
+    <div class="ttv-phase" data-p="1">
+      <p class="ttv-eyebrow">1 of 4 · What you can do</p>
+      <p class="lede"><label for="ttv-can">Everything you can do today, one per line.</label> A task with no home yet is fine; the next board read suggests one, or offers a shadow quest to find it.</p>
+      <textarea id="ttv-can" class="ttv-write" rows="6" placeholder="One thing per line"></textarea>
+    </div>
+    <div class="ttv-phase" data-p="2" hidden>
+      <p class="ttv-eyebrow">2 of 4 · Free write, if you like</p>
+      <div class="ttv-lens" id="ttv-lens" hidden><p class="lede"><label>An open Lens: <select id="ttv-lens-pick"></select></label> <span id="ttv-lens-prompt"></span></p></div>
+      <textarea id="ttv-write" class="ttv-write" rows="8" placeholder="What's alive this morning? Raw, unjudged."></textarea>
+    </div>
+    <div class="ttv-phase" data-p="3" hidden>
+      <p class="ttv-eyebrow">3 of 4 · Keep your lines</p>
+      <p class="lede">Mark the lines from your write you will do today. Leave the rest.</p>
+      <div class="ctl"><button class="save" id="ttv-find" type="button">Find my lines again</button><div class="state" id="ttv-state"></div></div>
+      <div id="ttv-lines"></div>
+    </div>
+    <div class="ttv-phase" data-p="4" hidden>
+      <p class="ttv-eyebrow">4 of 4 · Seal</p>
+      <div class="ctl" id="ttv-seal-row"><button class="save" id="ttv-seal" type="button">Seal the menu</button><div class="state" id="ttv-count"></div></div>
+    </div>
+    <div class="ctl ttv-nav"><button type="button" class="mo-more" id="ttv-back">Back</button><button type="button" class="save" id="ttv-next">Next</button></div>
+    <div class="state" id="ttv-done" role="status"></div>
+    <details class="ttv-how"><summary>How your words are used</summary>
+      <p class="lede">The free write stays in this browser until you seal. Sealing saves your list and any lines you marked as the morning menu, and the free write to the board. The next board read gives each item one written line: the Lens goal it serves, the board row or strand it advances, or a smaller goal it pitches (lens-intake-align). It summarizes the free write, pitches the lines worth keeping as BARs with the slot each would go to, and deletes the free write (ttv-raw-bars). When you write toward an open Lens, it also pitches year goals for it from your words (lens-pitch-goals). Only pitches you keep become BARs or goals.</p>
+    </details>
   </details>
   <details class="mo-cat mo-paste" id="mo-paste"><summary><b>Or paste this morning's menu</b><span id="mo-paste-sum">From Tap the Vein's Copy the sealed menu button</span></summary>
     <p class="lede">If the council could not fetch your menu, paste it here. Your kept lines show as soon as you save. Only the sealed menu is read; your free write never leaves Tap the Vein.</p>
@@ -468,7 +519,7 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
   </div>
 </div>
 
-<script id="board-data" type="application/json">{"updated": "2026-10-15", "positions": [{"id": "np-kids-first", "faces": ["regent", "diplomat"], "pass": "nonprofit structure", "auto": true, "pos": "The nonprofit serves children first. Adult education runs as a division of the same nonprofit, on the same technology, so one game engine and one design ontology serve both. Grant applications lead with the kids' programs, and the adult work (the allyship book, speaking, coaching) is the second program line. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15, after the nonprofit review found that no repo names kids as the audience: \"It could very easily be a division of a non-profit that focuses on kids since anything I make will run off the same technology.\" Also: \"Since we are making games children will be able to use it and potentially there are more grants available.\" bars-engine src/app/nonprofit/page.tsx still has no purpose paragraph and says \"Not yet incorporated, no 501(c)(3) determination\"."}, {"id": "np-red-door-precedent", "faces": ["regent", "architect"], "pass": "nonprofit structure", "auto": true, "pos": "The August Wilson Red Door Project is the model for one organization with a school program and an adult program. Its school program is the August Wilson Monologue Competition for grades 10 to 12. Its adult work is theater and dialogue on race, including a play made with Portland police officers. The Collins Foundation gave it $50,000 over one year in 2019 for arts programs on race and public safety. The grant pitch cites it as a precedent you worked inside. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15: \"August Wilson red door project is an organization I've worked for in the past that does programming for schools and for adults as well\". The program facts come from web sources dated 2016 to 2019 (Concordia Neighborhood Association, Oregon ArtsWatch, Portland Tribune, Portland Monthly, Collins Foundation grant list). Its current programs were not checked."}, {"id": "np-mentorschip-both-ways", "faces": ["diplomat", "challenger"], "pass": "nonprofit structure", "auto": true, "pos": "The talk with Dr. Micah McCrary-Dennis, founder of MentorSchip, covers both directions. You adapt MentorSchip's work for adults, and the games go to MentorSchip's students as a first program site and a source of real playtests with kids. The joint pitch pairs inner resources with outer ones: introspection games beside scholarship readiness, for the same kids. Both organizations have published no outcome numbers, so a joint pilot with before and after measures is the grant asset for both. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15: \"I have a homie who is the founder of mentorschip who has done work in this space. I'd been talking with him about adapting his organizations work to adult education as well\". mentorschip.com, read 2026-10-15: a Portland \"certified 501(c)(3) nonprofit education charity\" with the vision \"DEBT-FREE EDUCATION FOR ALL\"; the founder brings students into the scholarship process \"as early as age 10\"; it runs FAFSA Quest and a beta augmented-reality scholarship hunt; its impact counters are blank. bars-engine src/app/nonprofit/page.tsx lists \"a first program site\" among its four needs."}, {"id": "np-kids-content-review", "faces": ["shaman", "regent"], "pass": "nonprofit structure", "auto": true, "pos": "Before any child plays Sprout Plot, Root or the caves, each gets a kids' content and data review. The content review covers the founder's backstory (\"the children were dying\"), the law that a human who kills a human is a monster, the Big Mind cave's line about childhood abuse, and Root's knockdowns. The data review decides whether free text is stored, keeps the playtest kit's consent card that records no identity, follows COPPA for any player under 13, and states \"a game, not therapy\" with a crisis resource. This stands unless you flip it.", "why": "Follows from np-kids-first. Sources: sprout docs/design.md (World and story); sprout council/daemons/reports/2026-10-10-big-mind-cave-protector.md, which asks to \"State plainly that this is a game, not therapy, and give a crisis resource\" and flags that \"nobody has decided whether free text is stored\"; sprout docs/playtest.md (consent card)."}, {"id": "np-pull-alarm-age", "faces": ["challenger", "architect"], "pass": "board plumbing", "auto": true, "pos": "The board page warns from the age of the oldest save main has not recorded, not from the time of the last pull. With no saves waiting, a long gap between pulls shows no warning; a save waiting more than an hour shows one, with its age. The page stops saying the pull runs every 15 minutes. This stands unless you flip it.", "why": "The 20:09 stall was silent because the step that failed was the one that would have reported it, and staleness.py runs inside the same scheduled job it watches. The page's note is the one alarm outside the job, but it measures the last pull, which GitHub's schedule makes late most of the time (docs/failure-modes.md, Root cause). bars-engine already holds every save's receivedAt and recordedAt."}], "questions": [{"id": "np-age-band", "faces": ["regent", "diplomat"], "pass": "nonprofit structure", "q": "Which age band does the kids' side serve first?", "why_you": "No repo states an age range, and funders, schools and the content review all start from it. It is a call about who you serve.", "not_before": "Your ruling of 2026-10-15 put kids first without naming ages. MentorSchip starts students \"as early as age 10\".", "options": [{"v": "middle", "label": "Middle school, about 10 to 14", "c": "Matches where MentorSchip starts. Sprout's farming RPG and push hands fit this band. Players under 13 bring COPPA rules if the game collects anything from them."}, {"v": "high", "label": "High school, about 14 to 18", "c": "Matches Red Door's grades 10 to 12 and MentorSchip's scholarship years. The heavier story lines need the least softening."}, {"v": "elementary", "label": "Elementary, about 8 to 11", "c": "Needs the most content and reading-level change, and COPPA applies throughout."}, {"v": "after-mentorschip", "label": "Set it after the MentorSchip talk", "c": "His students decide the band, and the content review waits until then."}]}, {"id": "np-mentorschip-shape", "faces": ["regent", "architect"], "pass": "nonprofit structure", "q": "What shape should the tie with MentorSchip take?", "why_you": "It decides who applies for grants and whose name is on them. Only you and he can settle it.", "not_before": "Your words of 2026-10-15 name the conversation and leave the structure open.", "options": [{"v": "partner", "label": "Two organizations, one joint program", "c": "Each keeps its own board. Grants name both, or one applies with the other as program partner."}, {"v": "sponsor", "label": "MentorSchip sponsors your programs for now", "c": "You take grants before your own 501(c)(3). Its site says it is a 501(c)(3); confirm that on the IRS Tax Exempt Organization Search first."}, {"v": "one-org", "label": "One organization with a kids' division and an adult division", "c": "The Red Door shape. It needs the most legal and governance work up front."}, {"v": "after-talk", "label": "Decide after the talk", "c": "Nothing is built on the structure until you report back."}]}, {"id": "np-pull-trigger", "faces": ["architect", "regent"], "pass": "board plumbing", "q": "Should a save start its own pull to main, using a GitHub token you create for bars-engine?", "why_you": "It needs a credential on your GitHub account stored in Vercel. Only you can create it or refuse it.", "not_before": "The kit assumed GitHub runs board-pull every 15 minutes. Measured on 2026-10-15: this repo's hourly cron ran 52 times in 287 hours, a median of 5.6 hours apart and up to 10.5 hours (docs/failure-modes.md, Root cause).", "options": [{"v": "token", "label": "Yes: a save starts board-pull", "c": "You create a fine-grained GitHub token for Six-faces-council with Actions read and write only, and set it in Vercel as BOARD_DISPATCH_TOKEN. A save reaches main in about a minute. The cron stays as a sweep. If the token expires, saves fall back to the cron and the page says so."}, {"v": "cron", "label": "No: keep the schedule only", "c": "No new credential. A save usually reaches main 3 to 10 hours later. The page warns when a save has waited too long, and you can run board-pull by hand from the Actions tab."}]}], "causes": [], "terms": [], "resolved": {"positions": {"np-kids-first": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:35.334Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "diplomat"], "pass": "nonprofit structure"}, "np-red-door-precedent": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:40.437Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "architect"], "pass": "nonprofit structure"}, "np-mentorschip-both-ways": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:48.712Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["diplomat", "challenger"], "pass": "nonprofit structure"}, "np-kids-content-review": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:57.580Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["shaman", "regent"], "pass": "nonprofit structure"}}, "questions": {"np-age-band": {"decision": "high", "label": "High school, about 14 to 18", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:03.224Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "diplomat"], "pass": "nonprofit structure"}, "np-mentorschip-shape": {"decision": "after-talk", "label": "Decide after the talk", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:27.049Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "architect"], "pass": "nonprofit structure"}, "np-pull-trigger": {"decision": "token", "label": "Yes: a save starts board-pull", "recorded": "2026-10-16", "saved_at": "2026-10-16T00:00:06.000Z", "record": "council/ledger/2026-10-16-chat-000006.json (six-faces-council)", "faces": ["architect", "regent"], "pass": "board plumbing"}}, "causes": {}, "terms": {}}, "steers_recorded": [], "steer_recorded_through": "2026-10-15T22:01:10.939Z", "battles": [], "steps_recorded_through": "2026-10-14T22:43:52Z", "morning": null, "picks": [{"id": "menu-task:cmv5qqi22001i7skoiol1pz27", "date": "2026-10-13", "category": "menu", "text": "Ping Dan", "bridge": {"kind": "unaligned", "why": "no Lens goals were read this morning"}, "note": "", "saved_at": "2026-10-14T17:55:24.629Z", "record": "council/ledger/2026-10-14-pull-175709.json (six-faces-council)"}, {"id": "menu-task:cmv9yete9000b13u0tih30ze6", "date": "2026-10-15", "category": "menu", "text": "Reach out to Marina", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:28.725Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}, {"id": "menu-task:cmv9yex46001213u0maguuehe", "date": "2026-10-15", "category": "menu", "text": "Make a Facebook post for my coaching site", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:33.075Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}, {"id": "menu-task:cmv9yeuah000k13u0k6cbyoyq", "date": "2026-10-15", "category": "menu", "text": "Start a newsletter", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:35.791Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}, {"id": "menu-task:cmv9yesei000213u0weuoya6f", "date": "2026-10-15", "category": "menu", "text": "Respond to Madi", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:44.380Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}]}</script>
+<script id="board-data" type="application/json">{"updated": "2026-10-16", "positions": [{"id": "np-kids-first", "faces": ["regent", "diplomat"], "pass": "nonprofit structure", "auto": true, "pos": "The nonprofit serves children first. Adult education runs as a division of the same nonprofit, on the same technology, so one game engine and one design ontology serve both. Grant applications lead with the kids' programs, and the adult work (the allyship book, speaking, coaching) is the second program line. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15, after the nonprofit review found that no repo names kids as the audience: \"It could very easily be a division of a non-profit that focuses on kids since anything I make will run off the same technology.\" Also: \"Since we are making games children will be able to use it and potentially there are more grants available.\" bars-engine src/app/nonprofit/page.tsx still has no purpose paragraph and says \"Not yet incorporated, no 501(c)(3) determination\"."}, {"id": "np-red-door-precedent", "faces": ["regent", "architect"], "pass": "nonprofit structure", "auto": true, "pos": "The August Wilson Red Door Project is the model for one organization with a school program and an adult program. Its school program is the August Wilson Monologue Competition for grades 10 to 12. Its adult work is theater and dialogue on race, including a play made with Portland police officers. The Collins Foundation gave it $50,000 over one year in 2019 for arts programs on race and public safety. The grant pitch cites it as a precedent you worked inside. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15: \"August Wilson red door project is an organization I've worked for in the past that does programming for schools and for adults as well\". The program facts come from web sources dated 2016 to 2019 (Concordia Neighborhood Association, Oregon ArtsWatch, Portland Tribune, Portland Monthly, Collins Foundation grant list). Its current programs were not checked."}, {"id": "np-mentorschip-both-ways", "faces": ["diplomat", "challenger"], "pass": "nonprofit structure", "auto": true, "pos": "The talk with Dr. Micah McCrary-Dennis, founder of MentorSchip, covers both directions. You adapt MentorSchip's work for adults, and the games go to MentorSchip's students as a first program site and a source of real playtests with kids. The joint pitch pairs inner resources with outer ones: introspection games beside scholarship readiness, for the same kids. Both organizations have published no outcome numbers, so a joint pilot with before and after measures is the grant asset for both. This stands unless you flip it.", "why": "Your words in chat on 2026-10-15: \"I have a homie who is the founder of mentorschip who has done work in this space. I'd been talking with him about adapting his organizations work to adult education as well\". mentorschip.com, read 2026-10-15: a Portland \"certified 501(c)(3) nonprofit education charity\" with the vision \"DEBT-FREE EDUCATION FOR ALL\"; the founder brings students into the scholarship process \"as early as age 10\"; it runs FAFSA Quest and a beta augmented-reality scholarship hunt; its impact counters are blank. bars-engine src/app/nonprofit/page.tsx lists \"a first program site\" among its four needs."}, {"id": "np-kids-content-review", "faces": ["shaman", "regent"], "pass": "nonprofit structure", "auto": true, "pos": "Before any child plays Sprout Plot, Root or the caves, each gets a kids' content and data review. The content review covers the founder's backstory (\"the children were dying\"), the law that a human who kills a human is a monster, the Big Mind cave's line about childhood abuse, and Root's knockdowns. The data review decides whether free text is stored, keeps the playtest kit's consent card that records no identity, follows COPPA for any player under 13, and states \"a game, not therapy\" with a crisis resource. This stands unless you flip it.", "why": "Follows from np-kids-first. Sources: sprout docs/design.md (World and story); sprout council/daemons/reports/2026-10-10-big-mind-cave-protector.md, which asks to \"State plainly that this is a game, not therapy, and give a crisis resource\" and flags that \"nobody has decided whether free text is stored\"; sprout docs/playtest.md (consent card)."}, {"id": "np-pull-alarm-age", "faces": ["challenger", "architect"], "pass": "board plumbing", "auto": true, "pos": "The board page warns from the age of the oldest save main has not recorded, not from the time of the last pull. With no saves waiting, a long gap between pulls shows no warning; a save waiting more than an hour shows one, with its age. The page stops saying the pull runs every 15 minutes. This stands unless you flip it.", "why": "The 20:09 stall was silent because the step that failed was the one that would have reported it, and staleness.py runs inside the same scheduled job it watches. The page's note is the one alarm outside the job, but it measures the last pull, which GitHub's schedule makes late most of the time (docs/failure-modes.md, Root cause). bars-engine already holds every save's receivedAt and recordedAt."}], "questions": [{"id": "np-age-band", "faces": ["regent", "diplomat"], "pass": "nonprofit structure", "q": "Which age band does the kids' side serve first?", "why_you": "No repo states an age range, and funders, schools and the content review all start from it. It is a call about who you serve.", "not_before": "Your ruling of 2026-10-15 put kids first without naming ages. MentorSchip starts students \"as early as age 10\".", "options": [{"v": "middle", "label": "Middle school, about 10 to 14", "c": "Matches where MentorSchip starts. Sprout's farming RPG and push hands fit this band. Players under 13 bring COPPA rules if the game collects anything from them."}, {"v": "high", "label": "High school, about 14 to 18", "c": "Matches Red Door's grades 10 to 12 and MentorSchip's scholarship years. The heavier story lines need the least softening."}, {"v": "elementary", "label": "Elementary, about 8 to 11", "c": "Needs the most content and reading-level change, and COPPA applies throughout."}, {"v": "after-mentorschip", "label": "Set it after the MentorSchip talk", "c": "His students decide the band, and the content review waits until then."}]}, {"id": "np-mentorschip-shape", "faces": ["regent", "architect"], "pass": "nonprofit structure", "q": "What shape should the tie with MentorSchip take?", "why_you": "It decides who applies for grants and whose name is on them. Only you and he can settle it.", "not_before": "Your words of 2026-10-15 name the conversation and leave the structure open.", "options": [{"v": "partner", "label": "Two organizations, one joint program", "c": "Each keeps its own board. Grants name both, or one applies with the other as program partner."}, {"v": "sponsor", "label": "MentorSchip sponsors your programs for now", "c": "You take grants before your own 501(c)(3). Its site says it is a 501(c)(3); confirm that on the IRS Tax Exempt Organization Search first."}, {"v": "one-org", "label": "One organization with a kids' division and an adult division", "c": "The Red Door shape. It needs the most legal and governance work up front."}, {"v": "after-talk", "label": "Decide after the talk", "c": "Nothing is built on the structure until you report back."}]}, {"id": "np-pull-trigger", "faces": ["architect", "regent"], "pass": "board plumbing", "q": "Should a save start its own pull to main, using a GitHub token you create for bars-engine?", "why_you": "It needs a credential on your GitHub account stored in Vercel. Only you can create it or refuse it.", "not_before": "The kit assumed GitHub runs board-pull every 15 minutes. Measured on 2026-10-15: this repo's hourly cron ran 52 times in 287 hours, a median of 5.6 hours apart and up to 10.5 hours (docs/failure-modes.md, Root cause).", "options": [{"v": "token", "label": "Yes: a save starts board-pull", "c": "You create a fine-grained GitHub token for Six-faces-council with Actions read and write only, and set it in Vercel as BOARD_DISPATCH_TOKEN. A save reaches main in about a minute. The cron stays as a sweep. If the token expires, saves fall back to the cron and the page says so."}, {"v": "cron", "label": "No: keep the schedule only", "c": "No new credential. A save usually reaches main 3 to 10 hours later. The page warns when a save has waited too long, and you can run board-pull by hand from the Actions tab."}]}], "causes": [], "terms": [], "resolved": {"positions": {"np-kids-first": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:35.334Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "diplomat"], "pass": "nonprofit structure"}, "np-red-door-precedent": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:40.437Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "architect"], "pass": "nonprofit structure"}, "np-mentorschip-both-ways": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:48.712Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["diplomat", "challenger"], "pass": "nonprofit structure"}, "np-kids-content-review": {"decision": "stands", "label": "Stands", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:57.580Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["shaman", "regent"], "pass": "nonprofit structure"}, "np-pull-alarm-age": {"decision": "stands", "label": "Stands", "recorded": "2026-10-16", "saved_at": "2026-10-16T17:32:35.998Z", "record": "council/ledger/2026-10-16-pull-173235.json (six-faces-council)", "faces": ["challenger", "architect"], "pass": "board plumbing"}}, "questions": {"np-age-band": {"decision": "high", "label": "High school, about 14 to 18", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:03.224Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "diplomat"], "pass": "nonprofit structure"}, "np-mentorschip-shape": {"decision": "after-talk", "label": "Decide after the talk", "recorded": "2026-10-15", "saved_at": "2026-10-15T19:53:27.049Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)", "faces": ["regent", "architect"], "pass": "nonprofit structure"}, "np-pull-trigger": {"decision": "token", "label": "Yes: a save starts board-pull", "recorded": "2026-10-16", "saved_at": "2026-10-16T00:00:06.000Z", "record": "council/ledger/2026-10-16-chat-000006.json (six-faces-council)", "faces": ["architect", "regent"], "pass": "board plumbing"}}, "causes": {}, "terms": {}}, "steers_recorded": [], "steer_recorded_through": "2026-10-15T22:01:10.939Z", "battles": [], "steps_recorded_through": "2026-10-16T23:33:04Z", "morning": null, "picks": [{"id": "menu-task:cmv5qqi22001i7skoiol1pz27", "date": "2026-10-13", "category": "menu", "text": "Ping Dan", "bridge": {"kind": "unaligned", "why": "no Lens goals were read this morning"}, "note": "", "saved_at": "2026-10-14T17:55:24.629Z", "record": "council/ledger/2026-10-14-pull-175709.json (six-faces-council)"}, {"id": "menu-task:cmv9yete9000b13u0tih30ze6", "date": "2026-10-15", "category": "menu", "text": "Reach out to Marina", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:28.725Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}, {"id": "menu-task:cmv9yex46001213u0maguuehe", "date": "2026-10-15", "category": "menu", "text": "Make a Facebook post for my coaching site", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:33.075Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}, {"id": "menu-task:cmv9yeuah000k13u0k6cbyoyq", "date": "2026-10-15", "category": "menu", "text": "Start a newsletter", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:35.791Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}, {"id": "menu-task:cmv9yesei000213u0weuoya6f", "date": "2026-10-15", "category": "menu", "text": "Respond to Madi", "bridge": {"kind": "unaligned", "why": "no goal chosen at seal"}, "note": "", "saved_at": "2026-10-15T19:52:44.380Z", "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"}]}</script>
 <script>
 const DATA = JSON.parse(document.getElementById('board-data').textContent);
 const R = DATA.resolved;
@@ -558,6 +609,20 @@ function researchBox(item){
    of the old shape still finds one answer. */
 const picks = st => st.choices || (st.choice ? [st.choice] : []);
 const pickLabel = (q, l) => picks(l).map(v => (q.options.find(o => o.v === v) || {}).label || v).join(', ');
+/* The approval row for a publish queue carries queue.posts (council/podcast/publish/publish.py approval-row). Each post
+   shows whole, its cover or image and every network's caption, so the approval is a real yes (Shaman, podcast-pipeline2). */
+const NET = {instagram:'Instagram', facebook:'Facebook Page'};
+function queueBox(q){
+  const posts = (q.queue && q.queue.posts) || [];
+  if (!posts.length) return '';
+  const day = s => { const d = new Date(s); return isNaN(d) ? s : d.toLocaleString(undefined, {weekday:'short', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}); };
+  return `<div class="queue">${posts.map(p => `<div class="qpost">
+    ${/^https:\/\//.test(p.image_url || '') ? `<img src="${esc(p.image_url)}" alt="${esc((p.kind === 'reel' ? 'Cover for ' : 'Image for ') + (p.title || p.id))}" loading="lazy">` : '<div></div>'}
+    <div><h4>${esc(p.title || p.id)}</h4>
+    <p class="qwhen">${esc(day(p.at))} · ${esc(p.kind === 'reel' ? 'Reel' + (p.clip ? ', ' + p.clip : '') : 'image post')} · ${esc((p.networks || []).map(n => NET[n] || n).join(' and '))}${(p.collaborators || []).length ? ' · with ' + esc(p.collaborators.join(', ')) : ''}</p>
+    ${Object.entries(p.captions || {}).map(([n, c]) => `<span class="qnet">${esc(NET[n] || n)}</span><p class="qcap">${esc(c)}</p>`).join('')}</div>
+  </div>`).join('')}</div>`;
+}
 function qRow(q){
   const st = local.questions[q.id] || {choice:'', steer:''};
   return `<section class="row" id="q-${q.id}">
@@ -565,6 +630,7 @@ function qRow(q){
     <p class="pos">${esc(q.q)}</p>
     ${reviewBox('questions', q)}
     ${researchBox(q)}
+    ${queueBox(q)}
     <p class="why"><span>why only you</span> ${esc(q.why_you)}</p>
     <p class="why"><span>why not before</span> ${esc(q.not_before)}</p>
     ${q.max > 1 ? `<p class="why"><span>pick</span> up to ${q.max}</p>` : ''}
@@ -1505,7 +1571,7 @@ function moMenuItems(m){
   moWritten = (I && I.date === m.sessionDate) ? Object.fromEntries((I.items || []).map(x => [x.id, x.bridge])) : {};
   return m.items.map((it, i) => { const g = it.status === 'bridged' ? it.goal : null;
     const id = 'menu-' + (it.key || i), w = moWritten[id];
-    return {id, text: String(it.text || '').slice(0, 240), note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task', can_do: 'Can do today'}[it.source] || ''),
+    return {id, text: String(it.text || '').slice(0, 240), taskId: it.taskId || undefined, note: (g && g.trace) || ({kept_line: 'Kept line', task: 'Task', can_do: 'Can do today'}[it.source] || ''),
       bridge: w ? w : g ? {kind: 'named', goalId: g.id, goalTitle: g.title, cadence: g.cadence} : {kind: 'unaligned', why: 'no goal chosen at seal'}}; })
     .sort((a, b) => (a.bridge.kind === 'unaligned') - (b.bridge.kind === 'unaligned'));
 }
@@ -1529,6 +1595,8 @@ function moBridgeText(b){
   const why = b.why ? ' ' + esc(b.why) : '';
   if (b.kind === 'goal') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.${why}`;
   if (b.kind === 'row') return `Advances <b>${esc(b.rowTitle || b.rowId)}</b> on the board.${why}`;
+  if (b.kind === 'strand') return `Joins <b>${esc(b.strandTitle || b.strand)}</b>, work already happening${b.goalTitle ? ', which serves <b>' + esc(b.goalTitle) + '</b>' : ''}.${why}`;
+  if (b.kind === 'none') return `No home yet that anyone can see.${b.shadow ? ' <b>Shadow quest</b>, if you want it: ' + esc(b.shadow) : ''}${why}`;
   if (b.kind === 'pitch') return `Pitched: a new ${esc(b.cadence || 'year')} goal, <b>${esc(b.title)}</b>, ${b.parentTitle ? 'under <b>' + esc(b.parentTitle) + '</b>' : 'in ' + esc(b.domain || 'a Lens domain')}. Keep or drop it on the Open tab.${why}`;
   if (b.kind === 'named') return `Serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
   if (b.kind === 'existing') return `Suggested: serves <b>${esc(b.goalTitle)}</b>${b.cadence ? ' (' + esc(b.cadence) + ')' : ''}.`;
@@ -1545,7 +1613,9 @@ function moItem(it, cat, full){
     .concat([`<option value="new"${val==='new'?' selected':''}>A new smaller goal…</option>`]).join('');
   const parentOpts = goals.map(g => `<option value="${esc(g.id)}"${(b.parentId===g.id)?' selected':''}>under ${esc(g.title)}</option>`).join('');
   const note = [it.note && esc(it.note), it.link && `<a href="${esc(it.link)}" target="_blank" rel="noopener">open</a>`].filter(Boolean).join(' · ');
-  const limit = (MO.pick_limit || 7), full_ = full && !picked;
+  const limit = (MO.pick_limit || 7), full_ = full && !picked, aside = moAside(it);
+  if (aside === 'resting') return `<div class="mo-item" data-id="${esc(it.id)}" data-cat="${esc(cat)}">
+    <p class="mo-text">${esc(it.text)}</p><p class="mo-rest">Set aside, resting in your seed library.</p></div>`;
   return `<div class="mo-item${picked?' picked':''}" data-id="${esc(it.id)}" data-cat="${esc(cat)}">
     <p class="mo-text">${esc(it.text)}</p>${note ? `<p class="mo-note">${note}</p>` : ''}
     <p class="mo-bridge${b.kind==='unaligned'?' unaligned':''}">${moBridgeText(b)}</p>
@@ -1553,7 +1623,46 @@ function moItem(it, cat, full){
       ${goals.length && !rec ? `<select class="mo-goal" aria-label="Lens goal for this item">${opts}</select>` : ''}
       ${b.kind==='new' && !rec ? `<input type="text" class="mo-new" aria-label="New goal" value="${esc(b.title||'')}"><select class="mo-parent" aria-label="Under which goal">${parentOpts}</select>` : ''}
       <button type="button" class="mo-pick" aria-pressed="${picked}"${rec||full_||!db?' disabled':''}>${rec ? 'Picked, recorded' : picked ? 'Picked' : full_ ? 'Seven picked' : 'Pick'}</button>
+      ${aside === 'button' ? '<button type="button" class="mo-aside">Set aside</button>'
+        : aside === 'elsewhere' ? `<a class="mo-note" href="${SD_HOME}" target="_blank" rel="noopener">Set aside from the board on bars-engine</a>` : ''}
     </div></div>`;
+}
+/* The seed library (docs/seed-library.md). council/morning.py reads bars-engine's export into DATA.morning.seeds;
+   "Set aside" saves seeds/<taskId>, and bars-engine rests that task in the same save. Only the board served by
+   bars-engine can do that (its shim sets window.claude.barsEngine), so elsewhere the item links there instead. A
+   sealed item has a taskId only once bars-engine's seal gave it one (ttv-one-store). Drawing and letting go stay in
+   bars-engine. The few seeds bars-engine resurfaced today on its spaced ladder (DATA.morning.seeds.back,
+   sl-resurface-ladder) show open at the top of the tab; drawing or keeping one resting happens in Tap the Vein. */
+const SD_HOME = 'https://bars-engine.vercel.app/board/council';
+const SD_HERE = !!(window.claude && window.claude.barsEngine);
+let sdLive = {};
+function sdSeeds(){
+  const read = (MO && MO.seeds && MO.seeds.seeds) || [], ids = new Set(read.map(x => x.id));
+  const fresh = Object.values(sdLive).filter(d => d.taskId && !ids.has(d.taskId) && !(MO && MO.seeds && MO.seeds.read && d.savedAt < (MO.gathered_at || '')))
+    .map(d => ({id: d.taskId, text: d.text || '', fromDay: d.date || null, restedOn: String(d.savedAt || '').slice(0, 10)}));
+  return [...fresh.sort((a, b) => String(b.restedOn).localeCompare(String(a.restedOn))), ...read];
+}
+function moAside(it){
+  if (!it.taskId) return '';
+  if (sdSeeds().some(x => x.id === it.taskId)) return 'resting';
+  return SD_HERE && db ? 'button' : 'elsewhere';
+}
+function renderSeeds(){
+  const box = document.getElementById('mo-seeds'), seeds = sdSeeds(), S = MO && MO.seeds;
+  box.hidden = !(S || seeds.length);
+  if (box.hidden) return;
+  document.getElementById('mo-seed-list').innerHTML = seeds.length
+    ? seeds.map(x => `<div class="mo-seed"><p class="mo-text">${esc(x.text)}</p><p class="mo-note">${x.fromDay ? 'Named ' + esc(x.fromDay) : ''}${x.fromDay && x.restedOn ? ' · ' : ''}${x.restedOn ? 'set aside ' + esc(x.restedOn) : ''}</p></div>`).join('')
+    : `<p class="empty">${S && S.note ? esc(S.note) + '.' : 'Nothing resting here.'}</p>`;
+}
+function renderBack(){
+  const S = MO && MO.seeds, box = document.getElementById('mo-back');
+  const resting = new Set(sdSeeds().map(x => x.id)), byId = {};
+  ((S && S.seeds) || []).forEach(x => { byId[x.id] = x; });
+  const back = ((S && S.back) || []).map(id => byId[id]).filter(x => x && resting.has(x.id));
+  box.hidden = !back.length;
+  if (box.hidden) return;
+  document.getElementById('mo-back-list').innerHTML = back.map(x => `<div class="mo-seed"><p class="mo-text">${esc(x.text)}</p><p class="mo-note">${x.fromDay ? 'Named ' + esc(x.fromDay) : ''}${x.fromDay && x.restedOn ? ' · ' : ''}${x.restedOn ? 'set aside ' + esc(x.restedOn) : ''} · <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">draw, keep resting or let go</a></p></div>`).join('');
 }
 /* The Lenses panel: council/morning.py reads /api/lenses/goals into DATA.morning.lenses (lens-board-reads-goals). */
 function renderLenses(){
@@ -1586,7 +1695,7 @@ document.getElementById('ttv-lens-pick').addEventListener('change', renderTtvLen
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
-  renderLenses(); renderTtvLens();
+  renderBack(); renderLenses(); renderTtvLens(); renderSeeds();
   document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
@@ -1648,18 +1757,34 @@ function ttvRender(){
   c.addEventListener('input', () => { ttvRender(); try { localStorage.setItem(TTV_CAN, JSON.stringify({date: ttvToday(), text: c.value})); } catch {} });
   ttvRender();
 })();
-document.getElementById('ttv-find').addEventListener('click', () => {
+/* The phase rail (ttv-board-one-phase). Moving into "Keep your lines" finds the lines; a day with no free write skips it. */
+let ttvPhase = 1;
+function ttvGo(n){
+  const written = !!document.getElementById('ttv-write').value.trim();
+  if (n === 3 && !written) n = ttvPhase < 3 ? 4 : 2;
+  if (n === 3) ttvFind();
+  ttvPhase = Math.max(1, Math.min(4, n));
+  document.querySelectorAll('#mo-ttv .ttv-phase').forEach(p => { p.hidden = +p.dataset.p !== ttvPhase; });
+  document.querySelectorAll('#ttv-rail span').forEach((s, i) => s.classList.toggle('on', i < ttvPhase));
+  document.getElementById('ttv-back').hidden = ttvPhase === 1;
+  document.getElementById('ttv-next').hidden = ttvPhase === 4;
+}
+document.getElementById('ttv-back').addEventListener('click', () => ttvGo(ttvPhase - 1));
+document.getElementById('ttv-next').addEventListener('click', () => ttvGo(ttvPhase + 1));
+function ttvFind(){
   const was = Object.fromEntries(ttvLines.map(l => [l.text, l]));
   ttvLines = ttvSplit(document.getElementById('ttv-write').value).map(t => was[t] || {text: t, todo: false});
   document.getElementById('ttv-state').textContent = ttvLines.length ? '' : 'Nothing written yet.';
   ttvRender();
-});
+}
+document.getElementById('ttv-find').addEventListener('click', ttvFind);
+ttvGo(1);
 document.getElementById('ttv-lines').addEventListener('click', e => {
   const b = e.target.closest('.mo-pick'), row = e.target.closest('.ttv-line'); if (!b || !row) return;
   const l = ttvLines[+row.dataset.i]; l[b.dataset.k] = !l[b.dataset.k]; ttvRender();
 });
 document.getElementById('ttv-seal').addEventListener('click', async () => {
-  const st = document.getElementById('ttv-state'), date = ttvToday(), now = new Date().toISOString();
+  const st = document.getElementById('ttv-done'), date = ttvToday(), now = new Date().toISOString();
   const items = ttvCan().map((t, i) => ({key: `board-${date}-c${i + 1}`, text: t, source: 'can_do', status: 'unaligned', goal: null}))
     .concat(ttvLines.filter(l => l.todo).map((l, i) => ({key: `board-${date}-${i + 1}`, text: l.text, source: 'kept_line', status: 'unaligned', goal: null})));
   const text = document.getElementById('ttv-write').value.trim();
@@ -1672,7 +1797,7 @@ document.getElementById('ttv-seal').addEventListener('click', async () => {
     db.doc('ttv/' + date).set({status: 'done', via: 'board', savedAt: now}).catch(() => {});
     ttvLines = []; document.getElementById('ttv-write').value = ''; document.getElementById('ttv-can').value = '';
     try { localStorage.removeItem(TTV_KEY); localStorage.removeItem(TTV_CAN); } catch {}
-    ttvRender(); renderMorning();
+    ttvRender(); renderMorning(); ttvGo(1);
     st.textContent = `Sealed: ${items.length} items. Pick from them below, then Send to Claude; the board read writes where each one goes${text ? ', pitches BARs from the free write for you to keep, then deletes it' : ''}.`;
   } catch { st.textContent = 'Not sealed. Your free write is still here; try again.'; }
 });
@@ -1754,6 +1879,16 @@ document.getElementById('mo-cats').addEventListener('toggle', e => {
 document.getElementById('mo-cats').addEventListener('click', async e => {
   const more = e.target.closest('.mo-more');
   if (more){ moShown[more.dataset.cat] = (moShown[more.dataset.cat] || MO_PAGE) + MO_PAGE; renderMorning(); return; }
+  const aside = e.target.closest('.mo-aside');
+  if (aside && db){
+    const [it] = moItemById(aside.closest('.mo-item').dataset.id); if (!it || !it.taskId) return;
+    const doc = {taskId: it.taskId, text: it.text, date: MO.date, savedAt: new Date().toISOString()};
+    aside.disabled = true; aside.textContent = 'Setting aside';
+    try { await db.doc('seeds/' + it.taskId).set(doc); sdLive[it.taskId] = doc; renderMorning(); }
+    catch (err) { aside.disabled = false; aside.textContent = 'Not set aside. Try again';
+      aside.title = String((err && err.message) || ''); }
+    return;
+  }
   const btn = e.target.closest('.mo-pick'); if (!btn || !db) return;
   const row = btn.closest('.mo-item'), [it, cat] = moItemById(row.dataset.id); if (!it) return;
   const now = new Date().toISOString();
@@ -1796,6 +1931,7 @@ render();
   renderMorning(); ttvRender();
   db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); ttvGate(); }, () => {});
   db.collection('ttv').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ttvDays = next; ttvGate(); }, () => { ttvDays = {}; ttvGate(); });
+  db.collection('seeds').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); sdLive = next; renderMorning(); }, () => {});
   db.collection('picks').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); moLive = next; renderMorning(); }, () => {});
   db.doc('pickup/last').onSnapshot(d => { lastSent = d.exists ? d.data() : null; renderSend(); }, () => {});
   for (const kind of ['positions','questions','causes','terms']){

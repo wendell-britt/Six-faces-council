@@ -1,0 +1,25 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T21:55:10.680Z",
+ "answers": {
+  "sg-tinker-family": {
+   "kind": "position",
+   "savedAt": "2026-10-16T21:55:10.680Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "spirit-fight-ama-rell-01",
+   "at": "2026-10-16T21:20:00Z",
+   "what": "ticked",
+   "do": "Play the Ama Rell's Fixer fight once or twice on your phone, then write in this step's note whether it was fun and what it meant to you."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

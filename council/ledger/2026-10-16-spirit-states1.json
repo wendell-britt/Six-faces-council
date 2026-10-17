@@ -1,0 +1,53 @@
+{
+ "date": "2026-10-16",
+ "battle": "spirit-states",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Spirit states pass 1, on Wendell's 17:55 message opening the thread \"Spirit satisfaction states\". Exploratory: positions and one question, no art or code. Design ontology applied (QUICKSTART plus the game_design model's State, SatisfactionReport, TensionConfiguration, evidence table, rule 26). Eight ss-* positions; question ss-push-down survived the reach test. Dissent on the downward move: Shaman leans B, Regent and Diplomat A, Architect indifferent, Challenger asks him. No face subagents, no daemons.",
+ "steer": "For the Sprits and Allies that we're working on for WAVE and Sprout game we need to also introduce the Satisfied, Dissatisfied, and Neutral versions of it in whatever intake it's coming in as. The creatures should be darker and more feral in dissatisfaction. We'll need to think through design markers that show the state. Downwind there will need to be moves that allow a player to shift a spriti from satisfied to dissatisfied OR in allied or creature state able to take on moves from other elements. This isn't fully thought out, but was something in my brain that I wanted to see how the 6 game masters and design ontology would handle.",
+ "pass_file": "council/passes/6FACE_PASS_spirit-states1_2026-10-16.md",
+ "rows_file": "council/callsheets/rows/spirit-states-2026-10-16.json",
+ "casts": {
+  "shaman": "37>63",
+  "architect": "44>1",
+  "challenger": "39>13",
+  "regent": "57>59",
+  "diplomat": "15>37",
+  "sage": "40"
+ },
+ "positions": [
+  "ss-three-states",
+  "ss-intake-start",
+  "ss-markers",
+  "ss-feral-stance",
+  "ss-not-veiled",
+  "ss-shift-up",
+  "ss-cross-element",
+  "ss-feral-trade"
+ ],
+ "questions": [
+  "ss-push-down"
+ ],
+ "tests": [
+  {
+   "name": "state squint test",
+   "when": "with the state art round, after his look at spirit page version 14",
+   "resolves": "do the markers read at 96 px",
+   "pass_if": "13 of 15 shuffled sprites (one element, five forms by three states) sorted by state"
+  },
+  {
+   "name": "veil test",
+   "when": "with the state art round",
+   "resolves": "does dissatisfied collide with perceptual shadow",
+   "pass_if": "dissatisfied, veiled (polarity 6) and flooding (-6) never confused"
+  },
+  {
+   "name": "feral trade test",
+   "when": "with the moves build on sprout",
+   "resolves": "is dissatisfied a choice or only a penalty",
+   "pass_if": "a feral-keeping policy in check-spirit-gen.mjs wins some fights the masher loses"
+  }
+ ],
+ "subagent_tokens": 0,
+ "board": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
+}

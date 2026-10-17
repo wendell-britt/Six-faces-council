@@ -1,0 +1,25 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T23:47:51.443Z",
+ "answers": {
+  "sg-holdfast-family": {
+   "kind": "position",
+   "savedAt": "2026-10-16T23:47:51.443Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-08",
+   "at": "2026-10-16T23:33:04Z",
+   "what": "ticked",
+   "do": "Look at round 8 of the clothing (J5). Your round 7 note circled two places. The hem at the slits: a few points of the hem's turned-in fold were tied to the cloth on the other side of the slit, so when the slit opened they stretched across it as flat cream bars. Each fold point is now tied to cloth on its own side, on all nine robes, and a test checks it. The sleeve cuffs: the sleeve's open end was 40 cm deep and hung below the hand as a stiff flap, folding over it and showing the cuff trim only in torn patches. The sleeve now narrows from the elbow to a 26 cm end, its seams are sewn to the cuff's corners, and the cuff is an even cream band at the wrist with the hand showing. Open j5r8-cuffs-hem-close.jpg first: round 7 above round 8, for the same moments of a step (two pairs of rows). j5r8-cloth-walk.jpg shows the whole figure from the side; j5r8-set-walk.jpg, j5r8-set-sheet.jpg and j5r8-garments-sheet.jpg show the walk from three sides and all nine figures. Under this step, note 'yes' or what still looks wrong."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

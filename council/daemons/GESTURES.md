@@ -24,7 +24,7 @@ a grasp that lets go. The poses are rows of `WARP` in bars-engine `content/ontol
 | Daemon | Movement held | The body |
 |---|---|---|
 | Protector | push | a stop: both palms out at shoulder height, fingers up, arms nearly straight, set into the push over a bent front knee (his look, 2026-10-14: the first, straight-armed try "looks like a zombie") |
-| Controller | grasp | fists drawn up to the chest, elbows tight to the ribs, chest and chin up, feet together, rigid and tall |
+| Controller | grasp | fists clenched and set on the hips, elbows out wide, chest and chin up, feet together, rigid and tall (his look, 2026-10-16: the fists drawn to the chest "still looks weird") |
 | Skeptic | pull | chest and head drawn back and turned aside, elbows pulled behind, hands drawn in to the belly, weight on the back knee |
 | Fixer | reach | pitched far forward over a bent front knee, both long arms out to the problem, head up, back leg trailing |
 | Victim | yield, collapsed | sunk into the knees, back rounded, head hung, arms hanging long and heavy |
@@ -32,7 +32,26 @@ a grasp that lets go. The poses are rows of `WARP` in bars-engine `content/ontol
 | Emotional Body | release too soon | arms flung wide and up, palms open, chest thrown up and head back, up on the front foot |
 | Player | all six available | the child's proportions, soft, upright and open, palms turned forward |
 
+## Honored and charged (bars-engine #356; stands unless he flips it)
+
+Wendell, 2026-10-16: "They need to end not in a neutral pose but essentially in the honored version of their pose
+empowered and healthy versus resistant and charged. How would these voices relate to a healthy inner child". Charged is
+the held movement pushed further (the WARP row times 1.4). Honored is the same movement completed in health, the job it
+does for a child who is safe, standing toward the child. Rows are `HONORED` in bars-engine `content/ontology-game/cave/character.py`.
+
+| Daemon | Movement honored | With a healthy child |
+|---|---|---|
+| Protector | push lands as a boundary | planted wide, one arm out low keeping a space, the other hand on its heart: behind me you can play |
+| Controller | grasp held lightly | upright and easy, one hand held out low and open, offering a hand to hold |
+| Skeptic | pull as discernment | weight even, a hand at the chin, the other arm across the body: considering on the child's behalf |
+| Fixer | reach offered | a soft lean, one hand reaching down to help the child up, the head bowed to it |
+| Victim | yield becomes the story | the storyteller, a jester or performer: chest up, one arm swept high presenting the tale, the other palm up, "and then..." (his note, 2026-10-17: "They've become the storyteller") |
+| Damaged Self | release, at last | bring it on: wide stance, chest out, chin up, arms flung open low with palms forward; it can take the hit so the child never has to (his note, 2026-10-17) |
+| Emotional Body | release in its time | both feet planted, both hands on its heart, chest open, head lifted |
+
+Every daemon's let-go (its Integrate action) now ends in its honored form.
+
 ## Next
 
 Animate integration: each daemon's movement completing over a few seconds, from its held shape to the Player's open
-stance. That is the gamified moment, so it waits until he has looked at the held shapes.
+stance. That is the gamified moment. The Controller is built (bars-engine #351, the `Integrate` action); the other six wait on his look at it.

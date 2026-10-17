@@ -1,7 +1,113 @@
-2026-10-15 (updated 00:45)
+2026-10-17 (updated 04:45)
+ontology: default; touches: TrustState, ConsentRecord, MovementFinding
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
+**2026-10-17, build 4 amended on his board answers (04:18 to 04:22, ledger `council/ledger/2026-10-17-pull-042234.json`):**
+bars-engine #362 was built on the first brief and changes on its own branch, one more commit, Sonnet. New rows
+`council/callsheets/rows/daemon-meeting-answers-2026-10-17.json`. `dmt-trainer` = A: the daemon is never fought; the
+hallway spirit is a wild spirit of that chamber's daemon's family, sat with, and once it settles it stands up as the
+honored daemon (`dmt-ally-honored`). Three changes to #362:
+1. **No storyteller line** (`dmt-victim-leads-review`): remove `APPROACH_LINE` and the "approach-line" screen; the
+   hallway opens straight on the body ask, with "Skip all, walk on" beside it. His "storyteller" meant the Victim leads
+   the council's review, not a line in the game.
+2. **Body ask in two rows** (`dmt-body-blockers`): one card, "What does it feel like?" over K.TEXTURES' words
+   (tightness, tension first, then strength, numbness, plus "moving freely" and "something else") and "What is your body
+   doing?" over the seven movement words; either, both or neither, own words, no word yet. Save
+   `approach.texture` beside `approach.body`. The sensation sets the meeting spirit's texture with the table the
+   3-2-1 and the walls already use (tightness drawn in, tension tall and taut, strength bright, numbness fogged).
+   Numbness still asks faint or clear; "moving freely" changes nothing else.
+3. **Family from the chamber, merge on mismatch** (`dmt-same-order`): the spirit's family is always the chamber's daemon
+   (the book's order, unchanged). Feeling to element, sensation to texture, veil to polarity, settled to state. If the
+   movement picked belongs to another daemon (bracing = Protector, gripping = Controller, pulling back = Skeptic,
+   leaning in = Fixer, sinking = Victim, curling in = Damaged Self, flinging open = Emotional Body), save
+   `approach.merged = <that daemon id>`, wrap the spirit in that daemon's chamber gas, and show one line, "Something of
+   another voice is in this one." Never name it. A matching movement or none: no merge.
+Unchanged from the first brief: four asks at most, veil before settled, a faint answer never shows the settled ask, no
+number on any screen, asked every visit, no words saved, walking on always passes. Checks to add: no "and then..." line
+in any hallway; a mismatched movement saves `merged` and shows the line without a daemon's name; a matching one saves
+none. Tests at his first play: approach play and born-of-my-answer (now four of five layers: element, texture, veil,
+state, merge). Sprout follows `dmt-trainer` A too: its spirit slice's "fight the Fixer" becomes a spar with the
+Fixer's spirits (spirit-generator callsheet).
+
+<details><summary>First brief of build 4 (superseded above)</summary>
+
+**2026-10-17, build 4: the approach check-in (pass `daemon-meeting1`):** after bars-engine #361 merges, one pull request on
+bigmind.js, Sonnet (design settled). Positions `dmt-approach-checkin`, `dmt-body-first`, `dmt-storyteller-line`,
+`dmt-two-axes`, `dmt-spirit-from-answers`, `dmt-vouch-once` (rows `council/callsheets/rows/daemon-meeting-2026-10-17.json`).
+In each hallway before the shut mouth: the Victim's one storyteller line ending "and then..."; then up to four skippable
+asks in order: body (plain movement words: bracing, gripping, pulling back, leaning in, sinking, curling in, flinging
+open; never naming a daemon), feeling (#361's five, own words, no word yet), faint or far away / too much / clear
+(polarity: veiled, flooding, clear), and only when not faint, sits all right / neither / wants something (state band).
+Each answer shows at once: the mouth's light takes the element's colour and the meeting spirit forms from existing layers
+(feeling to element, movement to family, veil to polarity, settled to state; unbuilt families use the chamber's gas and
+core). "Skip all" and walking on always pass. Asked every visit. Save `voices[id].approach = {body, feeling, veil, state,
+at}`, no words. Checks: a faint answer never shows the settled ask; no screen prints a number. Tests at his first play:
+approach play (over a minute, or all four skipped twice, cuts to two asks) and born-of-my-answer (three of four layers
+recognised). `dmt-trainer` (fight a daemon's spirits?) waits on his answer and blocks nothing here.
+
+</details>
+
+**2026-10-16, trust, 3-2-1, spirits and solo play (pass `big-mind-trust1`):** Wendell's walkthrough notes of 21:52 after
+playing the path to the centre. Pass `council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md`, ledger
+`council/ledger/2026-10-16-big-mind-trust1.json`, rows `council/callsheets/rows/big-mind-trust-2026-10-16.json`. Fifteen
+`bmt-*` positions stand: charge is the voice's burden, trust its relationship with you (`bmt-burden-trust`); three
+actions from the voice's seat, can you, will you, are you good (`bmt-three-moves`); two roads past a voice, charge 3 or
+below or all three seen, refusal still open (`bmt-two-roads`); benevolence in the voice's words only, his excavation
+ruling (`bmt-good-in-words`); trust never falls (`bmt-never-falls`); three-part trust is game-local, the ontology's
+TrustState untouched (`bmt-ontology-local`); the feeling on meeting a voice spawns a spirit, and a spirit shown to a
+voice counts once as "can you" (`bmt-meeting-spirit`, `bmt-show-spirit`, which changes half of `bms-voices-respond`);
+full 3-2-1 offered, skippable, never a gate (`bmt-321-offer`); the next voice hidden until its chamber
+(`bmt-hidden-next`); free walking and running (`bmt-free-walk`); a closing rite (`bmt-return`); ask again every visit
+(`bmt-ask-again`); the build order (`bmt-build-order`). He answered both questions A at 22:05 and overruled `bmt-three-moves` and `bmt-show-spirit`; five revised positions and
+question `bmt-accountability` are on the board.
+Build threads, one pull request each, all on bigmind.js so in order:
+1. **Hidden next voice and free walking** (`bmt-hidden-next`, `bmt-free-walk`): started now, Sonnet. The end of each
+   hallway shows the shut mouth breathing with its light and a sound, no figure; voices met still wait by the wall; walk
+   or run freely, tap-to-walk kept, the chamber threshold still stops you; rewrite the bigmind-test checks that expect a
+   figure in the shut mouth. Test T4 at his next play.
+2. **Trust** (as revised on his answers of 22:05 to 22:11: `bmt-trust-shown` A, `bmt-honest-moves`, `bmt-keep-talking`,
+   `bmt-goodness-models`, `bmt-trust-falls`, `bmt-spirits-vouch`, `bmt-ask-again`, `bmt-return`): Opus, after build 1
+   merges. Marks for can and will, each with a plain line of what the voice saw; good only in the voice's words, against
+   its own picture of goodness (seven drafts in `bmt-goodness-models`). Trust actions anywhere on the path, each voice with
+   a right answer, counted only when the voice's charge eases on the next check-in. Marks keep kept, broken and repaired;
+   a broken promise or a push past a refusal lowers one; owning it repairs it (`bmt-accountability` answered A at 22:23:
+   the council's reading). After the voice is willing to step aside the player can keep talking. The meeting spirit becomes an ally
+   once its voice trusts you and vouches at later chambers and, together, at the centre's mouth. Save per the Architect:
+   `voices[id].trust = { seen:[{dim, kind, at}], promises:[{kind, made, kept}] }` plus `broken`/`repaired`, no words.
+   The trust stances list goes to the art thread.
+   **Built 2026-10-16: bars-engine #355 (draft), bigmind-test 444 pass.** Right answers per voice (can/will): Protector wait/return,
+   Controller pace/return, Skeptic hold/visit, Fixer sit/return, Emotional Body hold/visit, Victim wait/visit, Damaged Self
+   pace/return (drafts). Going back in always re-meets the chamber's voice (`bmt-ask-again`). Stances sent to the art thread:
+   guarded, testing, softening, trusting, willing, hurt, repaired. Arrival lines now name the GESTURES.md held movements.
+   Next: Wendell plays it (T4, plus the shut-mouth sound on a device); when #355 merges, build 3 starts.
+3. **Full 3-2-1 and the meeting spirit** (`bmt-321-offer`, `bmt-meeting-spirit`): after build 2; reuse `K.talk321` with an
+   optional `beforeOne` hook in cave.js; phase 1 opens only through the voice's permission.
+   **Built 2026-10-17: bars-engine #361 (draft), bigmind-test 491 pass, cave-test 385 pass.** "Talk it through (3-2-1)" at
+   every poll, on the willing voice and from its seat; cards, a gesture (the voice's held movement at Be it) and an open line
+   on every turn; Be it asks `permit("be")` with the refusal path, and "Stay on your own side of it" reads the charge without
+   it. The reading after is a check-in. Only `voices[id].talked` is saved, never the words. talk321 gained `beforeOne` and
+   `cards`. First meeting asks "How do you feel, meeting it?" (five feelings with elements, No word yet, own words); the
+   spirit is saved as `voices[id].spirit` and becomes the ally once the voice trusts you. Permission lines, cards and
+   gestures are drafts. Next: merge #361, then Wendell plays T4 with a 3-2-1 in one chamber; the skinning thread's #356
+   let-go could play when a 3-2-1 ends with the voice willing (a later build, not this one).
+   **Built 2026-10-17, bars-engine #363 (draft), bigmind-test 497 pass: the let-go after a willing 3-2-1.** When a 3-2-1
+   ends with the voice willing (charge 3 or below, all three seen, or already willing), the panel steps away, the camera
+   moves off the player, the body eases to its held shape and plays its #356 Integrate action into its honored form, and
+   it stands willing; the line is "The Protector lets go. This is how it stands when it is honored." Once a visit, after
+   any easing, never while a fall is unowned; from its seat it plays when the voice is back at its post. Clip:
+   /mnt/project-files/3d-build/bigmind-letgo-2026-10-17/protector-letgo-after-321.mp4. His look folds into T4: after
+   one 3-2-1 that brings a voice to 3 or below, does the let-go read as that voice letting go?
+4. **Art, alongside** (`bmt-build-order`): the WARP daemon bodies (bars-engine #328 lineage, GESTURES.md) replace the
+   placeholder daemon body in the Big Mind cave first, under a phone load budget; then dressing the cave; trust stances
+   once build 2 names them. Owned by the blender-frame-flesh-warp strand.
+   **Built 2026-10-16, bars-engine #353:** bodies and dressing in (details in blender-frame-flesh-warp.md). Phone page
+   https://claude.ai/artifact/4i1rCSGwGAwhjbjK7s7TLC. Left for the bigmind.js owner: the `arrive` lines still describe
+   the stand-in's props (a shield, a measuring rod, a lens, a wrench, a bundle, a crack); rewrite them to the held
+   movements in GESTURES.md in whichever build next edits bigmind.js. The centre's child is still the avatar; the
+   baked `player` body is ready for it (`K.buildDaemon(THREE, row, h)` with a row whose id is `player`).
+Tests T1 (solo against facilitated, by 2026-10-30) and T2 (card-only parity, after build 2) are in the pass.
+
 bars-engine PR #282 (branch `claude/project-thread-0wytio`, stacked on #278) holds the 20:43 steer (every sit-down spawns a spirit,
 `bms-away-lighter`) and his 21:15 playtest notes: a breathing ring on every W.A.V.E. and sitting step, the charge seen in the scene
 through the poll's W.A.V.E. (grows by the Allow sliders; release lifts and fades it, stay makes it a spirit), Appreciate with
@@ -102,6 +208,31 @@ The centre thread first squares `dp-centre` ("The child is seen, not questioned"
 `daemons/questions.js` (what are you learning, how are you growing, how do the other daemons get in your way), which is
 newer and in his words, so the recommended position is that the child is asked his six, gently, with the voices met on
 the way there as spirits; that goes on the board as a standing position, not a question.
+
+**2026-10-16, the centre (`dp-centre`, `dp-centre-asked`):** bars-engine #343 (merged 2026-10-16) opens the
+centre. Past the Damaged Self, "Walk on, into the centre" opens the shut mouth; the voices met on the way stand around the
+child as spirits. The child is seen first ("Be with it" asks nothing); "Ask it, gently" asks Wendell's six Player questions
+from `daemons/questions.js`, with cards and the child's own words, any of them let go, no charge and no permission. A voice
+it names as in its way comes closer. Only kept lines are saved (`centre` in the save). Board `dp-centre-asked` stands unless
+he flips it. Next: his play of the centre, then the centre's two ways (the hall of the six, the second cave) and the guide
+revealed as the integrated voice (`bm-guide`), in a fresh thread.
+
+**2026-10-16 21:52, Wendell's play of the centre (chat ruling, his words in the project thread "Big Mind cave centre"):**
+"This first round is pretty good." His notes, which the next design thread works from:
+- Trust mechanics so it feels like more of a game. Trust is capability, integrity and benevolence ("Can you do x will you do
+  x and do you seem like a good person"). Getting the voices to trust you and remove their burden is part of the game; the
+  player takes actions from the daemon's perspective to show trustworthiness in more dimensions. A skill for developing
+  inner trust.
+- Lean more into 3-2-1: full 3-2-1 dialogues with each part.
+- Spirits in play: the game asks how the player feels about encountering a part, which spawns a spirit that walks the cave
+  with them; spirits can show the daemons how resourced the player is.
+- Remove the next daemon waiting at the end of the path before its cave: each shift is getting permission to move forward,
+  and showing the daemon too early ruins the magic.
+- Free walking: walk or run to the next space.
+- Dress the cave and build game-ready models for each daemon instead of placeholders.
+- Plan it with the game design ontology in a design thread: a back and forth on what it should feel like, and how to
+  negotiate that the process is usually facilitated but should be playable alone with the depth of the Big Mind transcript.
+Next: that design thread (ontology: game_design; touches: trust, PartsDialogue, Spirit), started by the coordinator.
 
 ## Waiting on
 Answered 2026-10-12: `bms-sit-whom` pick (you pick each time who to sit with) and `bms-spirits-after` choose (you choose at the mouth

@@ -1,0 +1,28 @@
+{
+  "id": "2026-10-16-six-faces-council-store-visibility-ruling",
+  "date": "2026-10-16",
+  "project": "six-faces-council",
+  "cause": "council-design",
+  "question": "Where does the visibility fix for the board's store live: claude.ai login in Zo's browser, or the Claude session path where board reads already run?",
+  "convened_by": "wendell",
+  "invoked_from": "zo",
+  "source": "Zo chat ruling on the outreach-drafts spec, conversation con_rcg8H3Fr3nfzNWUN, 2026-10-15",
+  "questions": {
+    "store-visibility-first": {
+      "choice": "all-environments",
+      "saved_at": "2026-10-15T17:00:00Z-approx"
+    }
+  },
+  "positions": {},
+  "overruled": [],
+  "steers": {
+    "wendell": "Yes this is the first thing to fix because all environments need to be able to access and interface with that data"
+  },
+  "lessons": {},
+  "acted_on": [
+    "Ruling recorded; the either/or in the outreach-drafts spec is answered: neither claude.ai-login-in-Zo nor Claude-only execution — the store itself reaches main so every environment reads it from git",
+    "Spec opened: .specify/specs/full-store-mirror/spec.md (intake and spec stage; plan and build wait for Wendell's word)",
+    "Ground truth verified: schema accepts contacts/shows/lists/pickup, fetch_store.py STORE_DIRS and bars-engine save.ts both exclude them, board-pull.yml runs the token flow every 15 minutes with no AI"
+  ],
+  "note": "Chat ruling recorded per the rule that an answer given in chat counts as a ruling. No board rows were added from Zo; republish capability was not assumed."
+}
