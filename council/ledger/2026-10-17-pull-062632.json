@@ -1,0 +1,61 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T06:26:32.279Z",
+ "answers": {
+  "q-slice-typechart-inferred": {
+   "kind": "question",
+   "choice": "",
+   "savedAt": "2026-10-17T06:22:52.344Z",
+   "steer": "We’ll need to do deeper research on this. Let’s let the 6 game masters go after this but with the pokemon type system as a model and how the pokemon moves use the pokemon stats to balance the game "
+  },
+  "q-slice-playtest-order": {
+   "kind": "question",
+   "choice": "B",
+   "savedAt": "2026-10-17T06:23:23.263Z",
+   "steer": ""
+  },
+  "pos-slice-day": {
+   "kind": "position",
+   "savedAt": "2026-10-17T06:23:39.970Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-slice-rules": {
+   "kind": "position",
+   "savedAt": "2026-10-17T06:24:12.143Z",
+   "status": "overrule",
+   "steer": "We need to explain this to the degree is makes sense to me before we move forward. This sounds like mumbo jumbo "
+  },
+  "pos-slice-passage": {
+   "kind": "position",
+   "savedAt": "2026-10-17T06:25:05.420Z",
+   "status": "overrule",
+   "steer": "These are the main things we need feasibility testing on. If we get this engine going then generating content will be a breeze "
+  },
+  "pos-slice-encounter": {
+   "kind": "position",
+   "savedAt": "2026-10-17T06:26:08.565Z",
+   "status": "overrule",
+   "steer": "We may need to think through this more. It feels like there is a gap we’re skipping over to keep it coherent with work we’ve already done. Let’s have the 6 game masters explore how to actually bridge this gap rather than papering over it"
+  },
+  "q-slice-heart-pool": {
+   "kind": "question",
+   "choice": "C",
+   "savedAt": "2026-10-17T06:26:32.279Z",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/q-slice-typechart-inferred: Steer only (steer: \"We’ll need to do deeper research on this. Let’s let the 6 game masters go after this but with the pokemon type system as a model and how the pokemon moves use the pokemon stats to balance the game\")",
+  "questions/q-slice-playtest-order: Build the engine slice first, one combined playtest after",
+  "positions/pos-slice-rules: Overruled (steer: \"We need to explain this to the degree is makes sense to me before we move forward. This sounds like mumbo jumbo\")",
+  "positions/pos-slice-passage: Overruled (steer: \"These are the main things we need feasibility testing on. If we get this engine going then generating content will be a breeze\")",
+  "positions/pos-slice-encounter: Overruled (steer: \"We may need to think through this more. It feels like there is a gap we’re skipping over to keep it coherent with work we’ve already done. Let’s have the 6 game masters explore how to actually bridge this gap rather than papering over it\")",
+  "questions/q-slice-heart-pool: Keep the pool now, revisit after the first live playtest"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
