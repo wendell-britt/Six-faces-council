@@ -27392,6 +27392,18 @@
      "architect"
     ],
     "pass": "artist-corps 2"
+   },
+   "sg-ballad-family": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T22:16:25.597Z",
+    "record": "council/ledger/2026-10-17-pull-221625.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit round 19"
    }
   },
   "questions": {
@@ -29899,6 +29911,19 @@
      "diplomat"
     ],
     "pass": "engine-slice 2 (2d6 example)"
+   },
+   "q-slice-chart-stats": {
+    "decision": "A",
+    "label": "Keep today's chart for the playtest",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T22:16:00.201Z",
+    "record": "council/ledger/2026-10-17-pull-221625.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect",
+     "regent"
+    ],
+    "pass": "engine-slice build (test 5)"
    }
   },
   "causes": {
