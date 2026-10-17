@@ -53,9 +53,35 @@ reach test passes:
 - No code, no balance changes, no story text — sprout's CLAUDE.md rules and placeholder numbers stay
   untouched. Building waits for a following session and the standing positions.
 
-## Rulings and positions
+## Rulings and positions (2026-10-17 board answers, pull 062632)
 
-- Board rows `pos-slice-day`, `pos-slice-passage`, `pos-slice-encounter`, `pos-slice-rules` stand;
-  question `slice-substrate-home` resolved 2026-10-16 (sprout).
+Reconciliation session ran 2026-10-16/17: `docs/engine-contract.md` in sprout names the gap per layer;
+board rows added. Wendell answered everything on the board (ledger
+`council/ledger/2026-10-17-pull-062632.json`):
+
+- `q-slice-playtest-order` → **B** — build the engine slice first, one combined playtest after.
+  The deferred live playtest stays deferred until the engine slice exists.
+- `q-slice-heart-pool` → **C** — keep the pool now, revisit after the first live playtest.
+- `q-slice-typechart-inferred` → **steer** — deeper research first: a 6-face pass using the Pokémon
+  type system as the model, specifically how Pokémon moves use Pokémon stats to balance the game.
+- `pos-slice-day` → **stands** (no steer). The no-day-clock gap is acknowledged as the current shape.
+- `pos-slice-rules` → **overruled**, steer: explain it in plain terms, to the degree it makes sense
+  to Wendell, before anything moves forward — "this sounds like mumbo jumbo".
+- `pos-slice-passage` → **overruled**, steer: the narrative layer is the main thing needing
+  feasibility testing; if the engine goes, generating content becomes easy.
+- `pos-slice-encounter` → **overruled**, steer: don't paper over the two-engine gap — have the six
+  faces explore how to actually bridge it.
+
+## Next work (one session each, in the order Wendell's steers set)
+
+1. **Plain-language re-explanation** of `pos-slice-rules` (the shared resolution layer) — no jargon,
+   no board row until he says it makes sense. Chat-first, per his steer.
+2. **Six-face pass: encounter-gap bridge** — how the trust reducer and sprout's fight actually
+   become one engine, not a papered-over seam. Queued as research, not build.
+3. **Six-face research pass: type chart** — Pokémon type system as model: how moves use stats to
+   balance types. Feeds the S4 inferred relations.
+4. **Feasibility testing** of the narrative/IR layer (passage steer) — prove the engine before
+   generating content.
+5. Then the engine slice build (ruling B), one combined playtest after.
 - Zo-environment guards apply: local dev, not scheduled agent work; race test and quota wiring
   before any automation.
