@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-17",
+  "pass": "daemon-meeting1",
+  "daemon": "skeptic",
+  "face": "challenger",
+  "cast": "23 -> 27",
+  "model": null,
+  "tokens": "85577",
+  "report": "2026-10-17-daemon-meeting1-skeptic.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "The spirit slice has the Player spar, then \"fight the Fixer\" [1].",
+        "Blocked: the record fights daemons in the slice and meets them in the cave [1][7], and the badge rule does not say whether a defeated spirit still vouches [4][5].",
+        "The slice has the Player fight the Fixer [1], while the cave meets the Fixer as a voice to trust [7]."
+      ],
+      "url": null,
+      "quote": "then fight the Fixer.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "A dissatisfied spirit \"is a real choice to fight with\" [2]."
+      ],
+      "url": null,
+      "quote": "A dissatisfied spirit is a real choice to fight with.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "A spirit's family is its daemon, and a feral spirit \"is a protector held past its time\" [3].",
+        "Composted: daemons fighting the Player, since that turns the protector against the child [3][8]; count and volume as currency, which the ontology forbids [6][9]; the number, since the cave reads only the player's named gold word [12].",
+        "The daemon's dissatisfied form is its boss form [3]."
+      ],
+      "url": null,
+      "quote": "a feral spirit is a protector held past its time, not a corrupted one,",
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "Blocked: the record fights daemons in the slice and meets them in the cave [1][7], and the badge rule does not say whether a defeated spirit still vouches [4][5].",
+        "When a spirit is defeated, does it still vouch for the player at the next voice [4][5]?"
+      ],
+      "url": null,
+      "quote": "many spirits will be defeated and drop loot.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "Wendell's own steer reaches for Pokemon badges: \"show the badges you've collected to be let into victory road\" [5].",
+        "Blocked: the record fights daemons in the slice and meets them in the cave [1][7], and the badge rule does not say whether a defeated spirit still vouches [4][5].",
+        "When a spirit is defeated, does it still vouch for the player at the next voice [4][5]?"
+      ],
+      "url": null,
+      "quote": "show the badges you've collected to be let into victory road.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [
+        "The ontology says \"Intimate disclosure is not progression currency\" [6].",
+        "Composted: daemons fighting the Player, since that turns the protector against the child [3][8]; count and volume as currency, which the ontology forbids [6][9]; the number, since the cave reads only the player's named gold word [12].",
+        "Vouching counts a named feeling once, with the bigmind-test check above [6]."
+      ],
+      "url": null,
+      "quote": "Intimate disclosure is not progression currency.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 7,
+      "claims": [
+        "Blocked: the record fights daemons in the slice and meets them in the cave [1][7], and the badge rule does not say whether a defeated spirit still vouches [4][5].",
+        "Satisfied or dissatisfied comes only from a gold word the player names [7][12].",
+        "The slice has the Player fight the Fixer [1], while the cave meets the Fixer as a voice to trust [7]."
+      ],
+      "url": null,
+      "quote": "counted only when the voice's charge eases on the next check-in",
+      "label": "unlabelled"
+    },
+    {
+      "n": 8,
+      "claims": [
+        "The skeptic entry names no boss [8], so this is my reading.",
+        "Composted: daemons fighting the Player, since that turns the protector against the child [3][8]; count and volume as currency, which the ontology forbids [6][9]; the number, since the cave reads only the player's named gold word [12].",
+        "My Auditor form would take the counter-position against the trainer frame before the record shows a conflict, so stop me at any doubt no file can answer [8]."
+      ],
+      "url": null,
+      "quote": "Refuse the evidence until it is unarguable, which it never is.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 9,
+      "claims": [
+        "Composted: daemons fighting the Player, since that turns the protector against the child [3][8]; count and volume as currency, which the ontology forbids [6][9]; the number, since the cave reads only the player's named gold word [12]."
+      ],
+      "url": null,
+      "quote": "treat disclosure volume, pain magnitude, or vulnerability performance as progression currency.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 10,
+      "claims": [
+        "Skippable routes are required [10].",
+        "It makes the game more enjoyable, because each spirit has a reason and each voice can be met by a question the Player may skip [10]."
+      ],
+      "url": null,
+      "quote": "Equivalent expressive routes and a quality floor protect concise, private ... participation.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 11,
+      "claims": [
+        "\"To hedge is to hold back from committing\" [11]."
+      ],
+      "url": null,
+      "quote": "the Hedge (to hedge is to hold back from committing).",
+      "label": "unlabelled"
+    },
+    {
+      "n": 12,
+      "claims": [
+        "Composted: daemons fighting the Player, since that turns the protector against the child [3][8]; count and volume as currency, which the ontology forbids [6][9]; the number, since the cave reads only the player's named gold word [12].",
+        "Satisfied or dissatisfied comes only from a gold word the player names [7][12]."
+      ],
+      "url": null,
+      "quote": "the cave reads his named gold, never the charge number.",
+      "label": "unlabelled"
+    }
+  ]
+}
