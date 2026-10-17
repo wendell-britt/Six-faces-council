@@ -187,6 +187,12 @@ Open, in order:
    (`concept-vs-build.jpg`). His try: Your steps list `between-round2-try` step 01 (preview link, share token until
    18 Oct 04:27 UTC). Next: his note on that step decides fixes or round 3 (gaps 6 to 10); Ari's invite only after he
    ticks it. Sitting together was tested with two local players only.
+   **Round 3 started (2026-10-17):** `ppo-who-paints` answered "code-paints": our code paints the four views. bars-engine #367
+   (draft, on #366) adds `public/between/paint.js`, a painterly patch to three's standard material keyed to the concept
+   views' luminance ramp (banded light, brush noise, warm shadow fill, rim; `?paint=0` for plain). Pictures:
+   `/mnt/project-files/between/round3/`. His try: Your steps `between-round3-try` step 01 (due 10-19); his note picks
+   textures next or gaps 6 to 10. Not yet measured on his phone. Sitters and creature in the four views were not
+   captured (store-down run).
 
 ### Build brief: round 2, the hollow (next thread, Opus, bars-engine; load design-ontology default profile)
 - **Look at the four views first** (`/mnt/project-files/between/round2/concept/`); they are the target. Gap list and
