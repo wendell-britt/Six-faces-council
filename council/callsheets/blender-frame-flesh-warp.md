@@ -127,5 +127,30 @@
   willing, hurt, repaired, each a variation on its held movement in GESTURES.md). The same skinning carries the
   Integrate action (#351) into the cave once his look approves it. #355 already rewrote the arrival lines.
 
-## Waiting on
-- Wendell's look at the Controller letting go (3D view above), then the other six rows.
+## Built (2026-10-16, bars-engine #356): skinned bodies, trust stances, honored ends, a let-go for all seven
+- The baked bodies are skinned (46 joints, two a vertex) and pose themselves from `voice.userData.stance`
+  (`cave.js` `BODY_STANCES`). His look at the first stances: "many of the daemons are too subtle in their changes. We
+  need them to be more exaggerated so it's obvious when shifts are happening. They need to end not in a neutral pose but
+  essentially in the honored version of their pose empowered and healthy versus resistant and charged. How would these
+  voices relate to a healthy inner child". So each body moves between two ends: **charged** (the WARP row times 1.4;
+  guarded, testing, hurt) and **honored** (`character.py` `HONORED`; softening, trusting, willing, repaired). The honored
+  forms are a position that stands unless he flips it; GESTURES.md has the table.
+- His next note, "we need 'let go' stances for all the daemons", is the yes on `controller-letgo-look-02`: every daemon
+  now has an `INTEGRATE` row ending in its honored form (the Controller's too, replacing the relaxed arms of #352), baked
+  into the bodies. `integrateBody(g)` plays it; no scene calls it yet.
+- 3D page (all eight, every stance, a Let go button): https://claude.ai/artifact/FE5zEcpm99qdYXB1aCxwuK
+- Next: (1) his look at the honored forms and the let-go on that page; (2) the Big Mind build that decides when the cave
+  plays the let-go (the player's move completing the daemon's movement) calls `integrateBody` and sets a stance that
+  stays honored; (3) backlog, not now: props for each daemon that show the nature of its job (Wendell, 2026-10-16: "We
+  will eventually need props and such for them as well to really hit home the nature of their jobs").
+
+## His look (2026-10-17 01:45 UTC)
+- Approved: "the let gos are where I want them to be." #356 and council #228 merge on it.
+
+## Next: council pass on meeting a daemon (new thread, Opus)
+His words, 2026-10-17: "The next thing we need to do is be able to have players as they get closer to the daemon to answer questions about how their body is responding to knowing they are going to meet a protector what kind of emotions are present and are the flooded veils satisfied or dissatisfied. I want to see how much of the spirit asset work we can use to break this down. I don't know if the daemons are pokemon trainers have have their own spirits that you can battle. OR IF the boss spirit becomes a daemon of the variety of our daemon ontology. Let's have the 6 game masters weigh in on this and specifically have the daemons self advocate for this. I think the victim at the storyteller level and as the sage should lead the charge"
+- A six-faces pass (`.claude/skills/six-faces/SKILL.md`, design-ontology loaded for a mechanic). The Victim at its honored storyteller level leads, speaking with the Sage. Every daemon advocates for itself through its own agent (daemon-*).
+- Questions for the pass: (1) the approach check-in: as the player walks toward a daemon, what the body is doing, which emotions are present, and whether the flooded and veiled states are satisfied or dissatisfied; (2) how the spirit assets (spirit-generator callsheet, the Holdfast and other families with their states) break this down; (3) whether daemons keep spirits the player can battle, like trainers, or whether a boss spirit becomes a daemon of the daemon ontology, or both.
+- Inputs: council/daemons/GESTURES.md (honored and charged forms), council/daemons/questions.yaml, council/callsheets/big-mind-cave.md, council/callsheets/spirit-generator.md, bars-engine bigmind.js STANCES.
+- What survives the reach test goes to the board; the rest stands as positions.
+- Backlog: props for each daemon's job.
