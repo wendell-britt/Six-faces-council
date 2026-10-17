@@ -7,9 +7,9 @@
     "the round's new or changed models in the spirit page's 3D viewer, each state and element he can pick, turn and zoom on his phone (page/viewer_models.py in bars-engine, .txt files published beside the page; Wendell, 2026-10-16: \"that's where I'm doing a lot of my visual review from\")"
   ],
   "last_look": {
-    "round": 13,
-    "at": "2026-10-16T22:13:30Z",
-    "label": "spirit-generator-r13"
+    "round": 15,
+    "at": "2026-10-16T23:50:20Z",
+    "label": "spirit-generator-r15"
   },
   "rounds": [
     {
@@ -148,9 +148,19 @@
     },
     {
       "round": 16,
-      "status": "next",
+      "status": "done",
       "builds": "The Holdfast's other two bases, the meerkat and the koala (council/loops/prompts/spirit-generator-r15.md), on the badger's gas, clasped core, key ring and warden's coat, each built with its three states from the start (the Controller's grasp held and let go, HOLDFAST_POSE and HOLDFAST_ALLY in shellback.py), on four feet with nothing in its paws. If his look at page version 19 (the badger in 3D) redirects the badger or the family, that comes first.",
       "check": "Contact sheet of each base's 25 renders beside the badger; each reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind. Both bases in the page's 3D viewer in every element, form and state.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "ontology_profile": "default"
+    },
+    {
+      "round": 17,
+      "status": "next",
+      "builds": "The fifth daemon family's first base (sg-body-from A: the urge picks the family), the Skeptic's by default, the next row of GESTURES.md after the Controller. Written image prompt first, naming the family and its two or three bases (missing-art rule); the family's own gas and core; living creature a quadruped on its own four feet with nothing in its paws (sg-romp-four-feet); built with its three satisfaction states from the start through shellback.py --state, its dissatisfied stance the Skeptic's pull from GESTURES.md pushed further (ss-feral-stance), its models packed per state and element (viewer_models.py --pack). If his look at page version 21 (the meerkat and koala) redirects the Holdfast, that comes first.",
+      "check": "Contact sheet of the base's 25 renders beside the badger and the raccoon; reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind. The base in the page's 3D viewer in every element, form and state.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus",
