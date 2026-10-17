@@ -160,8 +160,23 @@ on. It should be able to be accessed synchronously and synchronously by the two 
    `src/lib/garden/plant.ts`.
 
 ## Waiting on
-The port thread ("The Between on bars-engine", brief above), then his tick on the device step. The artifact page stays
-as it is until then.
+2026-10-17: the port merged (bars-engine #357). The garden is at https://bars-engine.vercel.app/ontology-game/between,
+behind bars-engine sign-in, with its own Postgres tables (migration `20261017120000_add_between_garden`), API routes
+under `/api/between`, models in `public/between/m/`, and the cave build's cave model. Two people only; the second joins by
+the invite link in the page's More sheet. Local two-player test passed (join, welcome, sealed offering, agreement,
+daemon, presence, a stranger refused).
+
+Open, in order:
+1. **His device check**, Your steps list `between-on-bars-engine` (step 01 open it on the iPhone, step 02 tend the
+   spark). A stuck screen comes back as the step's note; troubleshoot from that text, no more artifact patches.
+2. **Carry the spark** (`bh-spark-carries`): POST `/api/between/carry` with the artifact store's `garden/main` and
+   `from: "artifact:NTi4jcpaHkDEMnqpVA9LBq"`, bearer COUNCIL_MENU_TOKEN. Blocked while that key returns 401 (the
+   menu-key-match steps). The route is idempotent and answers "not needed" if he has already replanted under step 02,
+   so either order is safe. Read the store with ArtifactData in the thread that runs it; its contents go nowhere else.
+3. **Share with Ari** only after step 02 is ticked: copy the invite link from the More sheet. If Ari can't make a
+   bars-engine account, that is a board question.
+4. Round 2 from his play notes, on Opus, from the 23:45 entry. The artifact page stays as it is and is retired once he
+   plays here.
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
