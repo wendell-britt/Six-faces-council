@@ -1,4 +1,4 @@
-2026-10-17 (updated 03:15)
+2026-10-17 (updated 04:45)
 ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
@@ -178,9 +178,36 @@ Open, in order:
 4. **Round 2, cozy and fun** (2026-10-17, board read 01:40: `bh-async-first` overruled after Ari said it is not cozy or
    fun enough). Gap list and the ChatGPT prompt: `council/passes/BETWEEN_round2_cozy_2026-10-17.md`. Waiting on his
    concept image, Your steps list `between-round2-concept` step 01; he attaches it in the thread "Between round 2: cozy".
-   Then one Opus thread builds place, light, creature and sitting together (gaps 1 to 5) as one bars-engine pull
-   request, opens it on an iPhone, and puts a "try this" step on the board; gaps 6 to 10 are round 3. The artifact page
-   stays as it is and is retired once he plays here.
+   **Image in (2026-10-17 04:37):** four views from ChatGPT, in his Drive folder "Cave studio inbox" and copied to
+   `/mnt/project-files/between/round2/concept/the-between-view-1.png` to `-4.png` (step 01 ticked). Build brief below
+   ("Build brief: round 2, the hollow"). Gaps 6 to 10 are round 3. The artifact page stays as it is and is retired once
+   he plays here.
+
+### Build brief: round 2, the hollow (next thread, Opus, bars-engine; load design-ontology default profile)
+- **Look at the four views first** (`/mnt/project-files/between/round2/concept/`); they are the target. Gap list and
+  reasons: `council/passes/BETWEEN_round2_cozy_2026-10-17.md`. Build gaps 1 to 5 in one bars-engine pull request.
+- **The place (gaps 1, 2):** replace the WAVE dome with a hollow under a great tree's roots: arching root walls and
+  vines, a stone hearth with shelves of pots on one side, two hanging paper lanterns, and one wide opening onto a dusk
+  valley (gradient sky, sun low over mountains, a river, pines). Inside, a round raised mossy dais with a stone rim; a
+  stream with stepping stones, lily pads and glowing crystals runs past it toward the opening, a rope fence at the
+  edge. Small enough that both figures and the creature fill the frame on a phone. Light: warm pools from hearth and
+  lanterns (flicker), cool blue dusk outside. Default: procedural three.js geometry plus the existing kit, kept light
+  for an iPhone; Blender only if a part can't be made to read in code.
+- **Alive when idle (gap 3):** fire flicker, fireflies, water shimmer, leaves sway; quiet ambient sound (fire, water,
+  night insects) through Web Audio, starting on the first tap, with a mute toggle.
+- **The Between (gap 4):** the round, fluffy, leaf-scaled creature from the views, teal fading to plum, a sleepy smile,
+  a sprout on top. It opens its eyes and turns toward whoever arrives, bounces when an offering flies in, sleeps when
+  nobody is there, dims when stale. Spark phase: the same creature small and plum only. States from satisfaction keep
+  their meaning (charged jittery, allied leafier).
+- **Together (gap 5):** cushions on the dais, one teal, one plum; tap a cushion to sit there (sit pose, in code if the
+  player model has no clip). When both sit, the camera eases to the low view of view 3 and the creature glows
+  between them. Waving from the near sheet. Agreements grow as the glowing lotus flowers; offerings rest on the low
+  table or stones; the fox and tortoise keep their walkers (the fox curls up asleep near a sitting owner).
+- **Keeps:** the store, API, sign-in, invite link and every `rc-*` ruling from #357; only the scene, creature, bodies'
+  poses and camera change. Sheets keep working.
+- **Done:** build and check pass; screenshots beside the four views at phone and desktop size in
+  `/mnt/project-files/between/round2/build/`; it opens on an iPhone-size WebKit run with no errors; then a Your steps
+  card "try this" with the preview link (bh-device-gate). Ari gets it only after he has tried it.
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
