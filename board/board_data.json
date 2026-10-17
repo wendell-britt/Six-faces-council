@@ -26525,6 +26525,53 @@
      "sage"
     ],
     "pass": "daemon meeting 1, after your answers"
+   },
+   "slice-contract": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:08:37.877Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "slice 1"
+   },
+   "slice-ontology-types": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:08:59.242Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "slice 1"
+   },
+   "slice-falsifier": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:09:05.811Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "slice 1"
+   },
+   "slice-reuse": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:09:13.342Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "slice 1"
    }
   },
   "questions": {
