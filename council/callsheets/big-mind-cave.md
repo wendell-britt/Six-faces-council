@@ -1,4 +1,4 @@
-2026-10-16 (updated 22:35)
+2026-10-17 (updated 03:10)
 ontology: default; touches: TrustState, ConsentRecord, MovementFinding
 # Big Mind cave (battle fr-big-mind-cave)
 
@@ -38,6 +38,14 @@ Build threads, one pull request each, all on bigmind.js so in order:
    Next: Wendell plays it (T4, plus the shut-mouth sound on a device); when #355 merges, build 3 starts.
 3. **Full 3-2-1 and the meeting spirit** (`bmt-321-offer`, `bmt-meeting-spirit`): after build 2; reuse `K.talk321` with an
    optional `beforeOne` hook in cave.js; phase 1 opens only through the voice's permission.
+   **Built 2026-10-17: bars-engine #361 (draft), bigmind-test 491 pass, cave-test 385 pass.** "Talk it through (3-2-1)" at
+   every poll, on the willing voice and from its seat; cards, a gesture (the voice's held movement at Be it) and an open line
+   on every turn; Be it asks `permit("be")` with the refusal path, and "Stay on your own side of it" reads the charge without
+   it. The reading after is a check-in. Only `voices[id].talked` is saved, never the words. talk321 gained `beforeOne` and
+   `cards`. First meeting asks "How do you feel, meeting it?" (five feelings with elements, No word yet, own words); the
+   spirit is saved as `voices[id].spirit` and becomes the ally once the voice trusts you. Permission lines, cards and
+   gestures are drafts. Next: merge #361, then Wendell plays T4 with a 3-2-1 in one chamber; the skinning thread's #356
+   let-go could play when a 3-2-1 ends with the voice willing (a later build, not this one).
 4. **Art, alongside** (`bmt-build-order`): the WARP daemon bodies (bars-engine #328 lineage, GESTURES.md) replace the
    placeholder daemon body in the Big Mind cave first, under a phone load budget; then dressing the cave; trust stances
    once build 2 names them. Owned by the blender-frame-flesh-warp strand.
