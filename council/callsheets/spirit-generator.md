@@ -7,6 +7,10 @@ ontology: game_design; touches: State, SatisfactionReport, TensionConfiguration
 - Every element for every base (Wendell, 2026-10-16 23:50, his look at the badger on page version 19): "Once all the animals are in we will have to go back and make sure they have assets for each of the elements. We don’t need to do that now as we’re still at proof of concept but I’ve noticed the new ones have only been rendered as wood". Not before every family's bases are built. The exact gaps on the published spirit page (round 15's check): raccoon, beaver, aye-aye and badger already have all five elements in the 3D viewer for neutral, dissatisfied and satisfied. Missing: (1) veiled and flooding exist in wood only, for every stateful base; (2) each round's state sheet, squint sheet and veil pictures are wood only; (3) the stateless bases (tortoise, armadillo, pangolin, fox, otter, kid goat) have no state variants at all, so they need all three states in all five elements first. One thread per family when it starts; renders run in the background.
 
 ## Next
+- Sprout's first slice, on `dmt-trainer` A (his answer 2026-10-17 04:18, "Both, in order; the daemon is never fought"):
+  the slice's last step, "then fight the Fixer", becomes a spar with the Fixer's family spirits (wild, dissatisfied);
+  the last to settle rises into the Fixer's honored self and joins you (`dmt-ally-honored`). The Fixer itself is never a
+  target. A sprout change in its own thread, after the Chapter 1 demo thread's open sprout pull requests (#52 to #55).
 - Flooded squint, for the next round (pass `daemon-meeting1`, position `dmt-two-axes`): one Holdfast in fire, flooded at -6,
   in all three states, shuffled with labels off; if the three cannot be sorted, a flooded spirit's state is hidden like a
   veiled one's and `dmt-two-axes` changes. Also queued by that pass: each family's satisfied upright ally takes its
