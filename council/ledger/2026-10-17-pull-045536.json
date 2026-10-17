@@ -1,0 +1,37 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T04:55:36.975Z",
+ "answers": {
+  "dmt-body-blockers": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:55:14.261Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dmt-same-order": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:55:25.919Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dmt-victim-leads-review": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:55:36.975Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "between-round2-concept-01",
+   "at": "2026-10-17T04:37:09Z",
+   "what": "ticked",
+   "do": "1. Open a new ChatGPT chat and paste this prompt exactly:\n\nConcept art for a cozy two-player 3D game space called \"the Between\". It is a small, warm hideaway two people share and tend together: a hollow tucked under the roots of a great old tree, open on one side to a dusky forest with the first stars out. Inside: a low round nook lined with moss, floor cushions and a woven blanket where two people can sit side by side, a small hearth or cluster of paper lanterns giving pools of warm amber light, fireflies drifting, a little stream or pool catching the light. In the middle lives the Between itself: a small, soft, round creature made of light and leaves, half teal and half plum, with a gentle sleepy face, clearly alive and happy to see the two of them. Around it a little garden: a few plants in bloom (each one an agreement the two of them made), and smooth stones with small glowing lights resting on them (gifts they brought each other). Two people in simple robes, one with a teal glow at their feet and one with a plum glow, sit close on the cushions; a small fox and a tortoise, glowing faintly in nature colours, wander nearby. Mood: safe, tender, playful, lived-in, the place you want to stay in all evening. Style: stylized 3D game art with soft rounded shapes and hand-painted textures, warm golden-hour and lantern light against cool blue dusk outside, gentle shadows, a three-quarter view from slightly above. No text, no interface, not photorealistic, not dark or eerie. Wide 16:9.\n\n2. Ask for changes in your own words until it feels right, and show Ari. Swap anything (the tree hollow, the creature) for what you two picture.\n3. Save the image you both like and attach it as a message in the thread \"Between round 2: cozy\" (link below), with a line on what you or Ari love in it."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
