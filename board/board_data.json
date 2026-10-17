@@ -9884,6 +9884,72 @@
    "why": "The two engines do different jobs: the trust reducer is an allyship-domain trust loop proven completable by simulation (bars-engine .specify/specs/trust-encounter-loop/plan.md); sprout's fight teaches the ontology's cycle through Demand, satisfaction and Ting (slice/fight.js, from design.md). Forcing unification now is speculative generality; shared vocabulary is the Regent's rule (no invented terms; slice-ontology-types). Sprout also holds a third local form, wave.js, which already reuses fight.js's CYCLE. Reconciliation: sprout docs/engine-contract.md"
   },
   {
+   "id": "pos-ac-commons-engine",
+   "faces": [
+    "architect"
+   ],
+   "pass": "artist-corps 1",
+   "auto": true,
+   "pos": "The compounding asset commons is the org's core mechanic, not a side program. Every engagement deposits licensed reusable assets (brand systems, comms kits, layout libraries) back to member non-profits, so the marginal cost of the next human-made engagement falls the way AI's marginal cost falls. This is the only way 'low cost of engagement' survives contact with arithmetic.",
+   "why": "Ontology #5 (mechanics claim reality): what the org tracks and licenses is what it treats as real. The idea already contained this — 'artists continue work on the creation of assets of the system itself' — unnamed as the engine."
+  },
+  {
+   "id": "pos-ac-paid-hours",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "artist-corps 1",
+   "auto": true,
+   "pos": "All artist labor is tracked and paid: client work, commons work, and awareness work. No unpaid mission labor, no exposure-to-opportunity compensation, anywhere in the structure.",
+   "why": "Ontology #12 (the helper remains inside the field of care: helping must not require self-erasure). The idea's 'continue work on the assets of the system itself' reads as unpaid hours for a cause unless payment is structural."
+  },
+  {
+   "id": "pos-ac-embedded-not-marketplace",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "artist-corps 1",
+   "auto": true,
+   "pos": "Placement is an embedded agency doing one engagement at a time, not a marketplace platform. Phase 1 is one artist, one non-profit, one funded deliverable, fully documented.",
+   "why": "Two-sided marketplaces die of cold start (no artists without funded placements, no placements without a roster). The ontology's smallest-meaningful-loop counterweight applies directly."
+  },
+  {
+   "id": "pos-ac-curriculum-from-evidence",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "artist-corps 1",
+   "auto": true,
+   "pos": "Curriculum is reverse-engineered from what Phase 1 real engagements actually demanded. No curriculum is designed before evidence exists.",
+   "why": "Ontology #6 (development changes possibility, within a named line). A curriculum designed in a vacuum trains for imaginary work."
+  },
+  {
+   "id": "pos-ac-provenance-frame",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "artist-corps 1",
+   "auto": true,
+   "pos": "External framing is 'human-made, provenance-documented, craft capacity.' 'AI-slop' stays internal shorthand and never becomes the fundraising or brand frame.",
+   "why": "Regent term test: does the term shame anyone? 'Anti-AI' reads as culture war to funders and press; 'human-made provenance' reads as quality assurance and heritage. Same truth, different door."
+  },
+  {
+   "id": "pos-ac-minimal-holacracy",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "artist-corps 1",
+   "auto": true,
+   "pos": "Holacracy starts as minimal circles around the actual work, not a full constitution. Governance grows with headcount and is evidence-gated like everything else.",
+   "why": "Challenger anti-pattern: holacracy's governance overhead is a known burn mechanism in under-resourced orgs. Ontology session discipline (one bounded task) supports small circles over grand constitutions."
+  },
+  {
    "id": "pos-slice-bridge",
    "faces": [
     "diplomat",
@@ -15926,6 +15992,112 @@
      "v": "C",
      "label": "Keep deferred until more content",
      "c": "Status quo; the automated playtests stand in. Cost: the contract's falsifiers (what the resolution changed) stay unrun, and every layer above the loop is built on an untested felt moment."
+    }
+   ]
+  },
+  {
+   "id": "q-ac-ai-boundary",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "artist-corps 1",
+   "q": "What does 'AI-allergic' bind, operationally — for the org itself as well as for client work?",
+   "why_you": "Consent and release are reserved to you, and this boundary defines the org's brand promise and its cost structure simultaneously.",
+   "not_before": "The idea is one day old; no prior record defines the term operationally.",
+   "options": [
+    {
+     "v": "a",
+     "label": "Org fully AI-free",
+     "c": "Artists may use whatever each client consents to; purest brand, highest cost everywhere including this council pipeline."
+    },
+    {
+     "v": "b",
+     "label": "AI-free in client-facing creative work only",
+     "c": "Org operations (books, scheduling, research) may use AI; cheapest version that keeps the client-facing promise honest."
+    },
+    {
+     "v": "c",
+     "label": "Case-by-case per client consent",
+     "c": "Recorded per engagement; most fundable and flexible, but easiest to explain away later."
+    }
+   ]
+  },
+  {
+   "id": "q-ac-employment-form",
+   "faces": [
+    "regent"
+   ],
+   "pass": "artist-corps 1",
+   "q": "What is the artist's employment form: employees, cooperative members, or contracted practitioners with placement fees?",
+   "why_you": "Money and legal form are reserved to you. This choice determines whether the org actually solves the fear it exists for.",
+   "not_before": "No legal or compensation structure existed before this pass.",
+   "options": [
+    {
+     "v": "a",
+     "label": "W-2 employees",
+     "c": "Maximum security for artists, maximum overhead for the org; the fear of not making a living is answered most directly."
+    },
+    {
+     "v": "b",
+     "label": "Cooperative members",
+     "c": "Fits holacracy, shares risk and ownership; slower to administer and unusual to grantmakers."
+    },
+    {
+     "v": "c",
+     "label": "Contractors + placement fees",
+     "c": "Cheapest and fastest, weakest at solving the livelihood fear; risks becoming the gig economy with better branding."
+    }
+   ]
+  },
+  {
+   "id": "q-ac-standalone-or-inside",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "artist-corps 1",
+   "q": "Standalone 501(c)(3), a program inside an existing organization, or a hybrid structure?",
+   "why_you": "Money and legal form are reserved to you.",
+   "not_before": "Same — the question could not exist until the org was named.",
+   "options": [
+    {
+     "v": "a",
+     "label": "Standalone 501(c)(3)",
+     "c": "Slow to found, clean story, full autonomy."
+    },
+    {
+     "v": "b",
+     "label": "Program inside an existing org",
+     "c": "Borrows trust and fiscal sponsorship; costs autonomy and possibly the 'we refuse AI' story if the host uses AI."
+    },
+    {
+     "v": "c",
+     "label": "Hybrid (e.g. L3C / fiscally sponsored project)",
+     "c": "Fast, flexible, complicates grants that want a clean 501(c)(3)."
+    }
+   ]
+  },
+  {
+   "id": "q-ac-first-anchor",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "artist-corps 1",
+   "q": "Which community and which anchor non-profit for the Phase 1 engagement?",
+   "why_you": "Relationships are facts only you hold; the warm-vs-cold start choice shapes what Phase 1 proves.",
+   "not_before": "Phase 1 did not exist until this pass.",
+   "options": [
+    {
+     "v": "a",
+     "label": "Warm start in your network",
+     "c": "Faster to a real engagement; the proof is self-referential and grantmakers may discount it."
+    },
+    {
+     "v": "b",
+     "label": "Cold start in a chosen city",
+     "c": "Slower and more expensive; produces a cleaner, more generalizable proof."
     }
    ]
   },
