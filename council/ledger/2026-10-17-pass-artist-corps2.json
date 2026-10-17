@@ -1,0 +1,56 @@
+{
+ "date": "2026-10-17",
+ "battle": "artist-corps",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Pass 2 on the artist corps, called by the callsheet's Next section after Wendell's 2026-10-17 board answers. No ontology, no daemons. Resolved: the Phase 1 definition-of-done (T2 met), outside money only, T1 design, plain hour log now (SourceCred no, timebanking re-weighed at Phase 2), a three-stage contractor-to-cooperative pipeline with a lawyer flag, and the one-page consent form. No questions reach the board; the anchor non-profit goes to Your steps as artist-corps-anchor-01.",
+ "pass": "council/passes/6FACE_PASS_artist-corps2_2026-10-17.md",
+ "casts": {
+  "shaman": "58 Banter, lines 3, 5, becoming 34 Vigour",
+  "architect": "59 Dispersal, lines 3, 4, becoming 44 Serendipity",
+  "challenger": "3 Sprouting, lines 1, becoming 8 Alliance",
+  "regent": "51 Shock, lines 2, 3, becoming 34 Vigour",
+  "diplomat": "59 Dispersal, lines 3, 4, becoming 44 Serendipity",
+  "sage": "8 Alliance, lines 1, 5, becoming 24 Turning"
+ },
+ "positions": [
+  "pos-ac-phase1-done",
+  "pos-ac-outside-money",
+  "pos-ac-t1-design",
+  "pos-ac-legibility-later",
+  "pos-ac-coop-pipeline",
+  "pos-ac-consent-form"
+ ],
+ "questions": [],
+ "steps": [
+  "artist-corps-anchor-01"
+ ],
+ "unanimous": false,
+ "dissent": "Shaman would trial a timebank among artists before Phase 2; the Architect's gate stands as the position.",
+ "subagent_tokens": 0,
+ "ruling": "pending",
+ "tests": [
+  {
+   "id": "T1",
+   "what": "price the anchor's deliverable human-only against its current spend; gap in dollars",
+   "due": "2026-10-30"
+  },
+  {
+   "id": "T3",
+   "what": "commons license one-pager: ownership, use rights, payment",
+   "due": "2026-11-06"
+  },
+  {
+   "id": "T4",
+   "what": "a lawyer's answer on the contractor agreement and the three classification questions",
+   "due": "2026-11-20"
+  }
+ ],
+ "scored": [
+  {
+   "id": "T2",
+   "result": "met",
+   "by": "pos-ac-phase1-done"
+  }
+ ]
+}
