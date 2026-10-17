@@ -128,3 +128,21 @@ including negative ones, rolled against a 2d6 table. The third example is `counc
 percentage. The revised question is `q-slice-referee-clear-3`. **On A:** one fresh Opus thread in sprout builds
 `pos-slice-feasibility` tests 1 to 5 as in "Next" above, story and faction on the 2d6 table, battle on its percentage.
 **On C:** the same build with battle also on 2d6 (the chart becomes its modifier). **On B:** another short example.
+
+## Built (2026-10-17): feasibility tests 1 to 5
+
+Wendell answered `q-slice-referee-clear-3` A. sprout #56 (`docs/engine-contract.md`; ledger
+`council/ledger/2026-10-17-engine-slice-build.json`) builds the referee and logbook, a scene from a logbook line, sleep
+and the day's page, one line shape (fight, offering, talk, and a bars-engine trust-loop fixture), and the
+chart-and-stats bots. `npm run test:engine` and `npm run sim:chart` in sprout; all three falsifiers green, no number in
+`data/slice.json` changed. The game screen does not use the engine yet. Tests `slice-bots-chart` and
+`slice-referee-off` are green. The board question is `q-slice-chart-stats`: the odds cap hides the stats.
+
+## Next (waits on `q-slice-chart-stats`)
+
+- **On A (recommended):** one fresh Opus thread in sprout puts the referee and story layer on the slice's screen
+  (`slice/main.js`: pass a referee to `act` and `offer`, sleep in the farmhouse, Mara at the gate) for the one
+  combined playtest. Today's chart; sprout #56 must merge first.
+- **On B:** a short bots-only round in `tools/chart-stats.mjs` lets a family move the offering odds, numbers back to
+  the board.
+- **On C:** the same screen build, with the fight reading `data/engine.json` `simulation` as its chart.
