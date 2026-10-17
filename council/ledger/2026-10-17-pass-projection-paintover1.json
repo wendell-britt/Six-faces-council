@@ -1,0 +1,255 @@
+{
+ "date": "2026-10-17",
+ "pass": "projection-paintover 1",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "file": "council/passes/6FACE_PASS_projection-paintover1_2026-10-17.md",
+ "called_by": "Wendell",
+ "question": "Let’s bring in the game design ontology and add this as a technique. I’d want to see how each of the game master faces would interface with this kind of pipeline",
+ "subject": "projection paint-over (concept art projected onto a 3D blockout)",
+ "ontology_profile": "QUICKSTART (light) plus docs/codex/asset-sources-brief.md",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "values": [
+    6,
+    7,
+    8,
+    8,
+    9,
+    7
+   ],
+   "changing_lines": [
+    1,
+    5
+   ],
+   "n": 59,
+   "name": "Dispersal",
+   "becomes": {
+    "n": 41,
+    "name": "Spending"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "values": [
+    8,
+    7,
+    8,
+    6,
+    8,
+    8
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 7,
+   "name": "Muster",
+   "becomes": {
+    "n": 40,
+    "name": "Thaw"
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "values": [
+    8,
+    7,
+    7,
+    7,
+    9,
+    9
+   ],
+   "changing_lines": [
+    5,
+    6
+   ],
+   "n": 44,
+   "name": "Serendipity",
+   "becomes": {
+    "n": 32,
+    "name": "Endurance"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "values": [
+    7,
+    9,
+    7,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2
+   ],
+   "n": 1,
+   "name": "Unbroken",
+   "becomes": {
+    "n": 13,
+    "name": "Fellowship"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "values": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    7
+   ],
+   "changing_lines": [],
+   "n": 23,
+   "name": "Erosion",
+   "becomes": null
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    6,
+    6,
+    7
+   ],
+   "changing_lines": [
+    4,
+    5
+   ],
+   "n": 18,
+   "name": "Stale Air",
+   "cn": "蠱",
+   "pinyin": "gǔ",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shows": "This went off from being left alone.",
+   "image": "☴ wind beneath ☶ mountain. Still air trapped under a mountain, going stale.",
+   "situation": "Something has spoiled through inattention rather than through damage. The character shows a bowl with worms in it: what happens to a thing left standing. The instruction is unusual in the set — it gives three days before and three days after, so the work of repair is bracketed by thinking about how it got here.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 44,
+    "name": "Serendipity",
+    "cn": "姤",
+    "pinyin": "gòu",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are building on one piece of evidence.",
+    "image": "☴ wind beneath ☰ heaven. One soft line has entered beneath five hard ones.",
+    "situation": "Wind under heaven touches everything without choosing what it touches. The smallest possible arrival at the base of something large and already settled. It does not feel small. That is what makes it worth watching rather than seizing.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   },
+   "note": "recast: the first Sage cast printed past the output window before it was read"
+  }
+ ],
+ "daemons": [],
+ "subagent_tokens": 0,
+ "positions": [
+  "ppo-technique",
+  "ppo-paint-channel",
+  "ppo-offaxis-first"
+ ],
+ "questions": [
+  "ppo-who-paints"
+ ],
+ "board": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "unanimous": false,
+ "dissent": [
+  "Architect would bake the projection onto far cave surfaces; the other four keep it out of the caves",
+  "Shaman and Diplomat want a hand-painted route as the plan; Challenger wants the off-axis test first"
+ ],
+ "tests": [
+  {
+   "id": "ppo-offaxis",
+   "face": "challenger",
+   "due": "when Between round 3 starts"
+  },
+  {
+   "id": "ppo-seams",
+   "face": "architect",
+   "due": "with ppo-offaxis"
+  },
+  {
+   "id": "ppo-codex-applied",
+   "face": "regent",
+   "due": "2026-10-24"
+  }
+ ],
+ "codex_brief": "docs/codex/projection-paint-over-brief.md",
+ "lessons_pending": []
+}
