@@ -56,6 +56,7 @@ the board as a row; neither wins silently.
 ## Changes to the ontology itself
 
 The ontology is written with Codex and lands in `ontology/`. A Claude-side thread that finds a conflict writes a
-board position or a reconciliation note and leaves the ontology text alone. No flow sorts `ontology/` into active,
+board position or a reconciliation note and leaves the ontology text alone. A change Wendell asks for goes to Codex as a brief
+in `docs/codex/` (the first is `asset-sources-brief.md`, 2026-10-17). No flow sorts `ontology/` into active,
 reference and compost (Phase B is not authorized, `ontology/v0.1/RELEASE.md`). The ontology does not protect real
 player data yet; flows that touch real data follow their own rules.

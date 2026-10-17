@@ -9760,6 +9760,128 @@
    "auto": true,
    "pos": "The three unbuilt families come next in the spirit loop's family rounds: the Victim's built as the teller (its urge, to be heard), the Damaged Self's as the one who stands in front, the Emotional Body's from the five feelings. This stands unless you flip it.",
    "why": "The Victim's report: \"Build my family as a teller, not a victim.\" The spirit loop contract builds one family a round (council/loops/spirit-generator.json). Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-body-blockers",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "daemon meeting 1, after your answers",
+   "auto": true,
+   "pos": "The body ask comes first and mixes the four blocked sensations with the movements, on one card in two rows. What it feels like: tightness, tension, strength, numbness, moving freely, or something else, in the body map's words, tightness and tension first. What your body is doing: bracing, gripping, pulling back, leaning in, sinking, curling in, flinging open. Pick from either row, both or neither; \"no word yet\" and your own words are equal answers. It is your report, never the game's reading: no screen names a daemon from it. The sensation dresses the meeting spirit in the texture the cave already uses (tightness drawn in, tension tall and taut, strength bright, numbness fogged). Numbness and the faint-or-clear ask stay separate questions, and \"moving freely\" is taken at its word. This stands unless you flip it.",
+   "why": "Your steer on dmt-body-first (overruled, 04:20): \"We want to mix this with the blockers constriction strength tension and numbness as well\". Your ruling of 2026-10-12 names the four blocked sensations (Frantzis), with everything else free-flowing qi and aliveness; sb-sensation-order puts tension and constriction early. The cave's texture table is bars-engine body-map.js and bigmind.js K.TEXTURES. ps-numbness-link, ff-no-daemon-on-aliveness. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md, after your answers."
+  },
+  {
+   "id": "dmt-victim-leads-review",
+   "faces": [
+    "sage"
+   ],
+   "pass": "daemon meeting 1, after your answers",
+   "auto": true,
+   "pos": "The Victim speaks nowhere in the hallway, and no storyteller line is added to the game. Your words about the storyteller were about the council: the Victim, at its storyteller level, leads the six game masters' review of meeting a daemon beside the Sage. It runs first and frames the pass, as it did in daemon meeting pass 1, and every later pass on this subject calls it first. This stands unless you flip it.",
+   "why": "Your steer on dmt-storyteller-line (overruled, 04:20): \"I meant the Victim daemon in the 6 game master Review\", on your message of 01:45: \"I think the victim at the storyteller level and as the sage should lead the charge\". Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md, after your answers."
+  },
+  {
+   "id": "dmt-same-order",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "daemon meeting 1, after your answers",
+   "auto": true,
+   "pos": "Everyone meets the daemons in the same order, at least at first: the book's order, the Player last. The spirit that forms in each hallway is always of that chamber's daemon's family, a wild spirit of the daemon you are walking toward, sat with and never fought; once it settles it stands up as the daemon's honored self (dmt-ally-honored). Your answers dress it: the feeling sets its colour, the sensation its texture, faint or too much the veil or flood, settled or not the state. The movement you pick connects only when it does not match: a movement that belongs to another daemon (bracing, the Protector's push, in the Fixer's hallway) shows this daemon merged with that one, and the spirit carries the other daemon's chamber gas wrapped round it. The game says \"something of another voice is in this one\" and never names it. A matching movement, or none, changes nothing. What a merged daemon does next is the next pass's question. This stands unless you flip it.",
+   "why": "Your steer on dmt-spirit-from-answers (overruled, 04:21): \"We want people to go through the same order at least at first. This only connects if it's a daemon who is merged with another one if the sensation doesn't match\". ds-daemon-order (A, the book's order). dmt-trainer A: a daemon's wild family spirits come first and the daemon is never fought. The match is read on the movement, because each daemon holds one movement (GESTURES.md) and the record gives no daemon a blocked sensation of its own; that reading is inferred. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md, after your answers."
+  },
+  {
+   "id": "slice-contract",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice is biggest when it exercises all four layers once each — one day loop, one rules resolution, one Twine passage, one trust-encounter — not when it adds content volume. This stands unless you flip it.",
+   "why": "The four-layer contract was named in chat on 2026-10-16, and the ontology names the smallest meaningful loop as the counterweight that bounds scope (ontology/v0.1/QUICKSTART.md). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "slice-ontology-types",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice's state uses v0.1 first-class objects — EncounterDefinition/Occurrence, MoveInvocation, CompletionContract, independent state axes — and anything the seams need beyond v0.1 goes through term_pass rather than inventing vocabulary. This stands unless you flip it.",
+   "why": "The completion-boundaries council decision of 2026-10-12 made these first-class, and the machine vocabulary is the machine's language (ontology/v0.1/source/design-ontology-v0.1.yaml). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "slice-falsifier",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice contains one stake only the rules surface can resolve, and its pass condition is that a playtester can say what changed about the story without being told. This stands unless you flip it.",
+   "why": "Your lesson of 2026-10-03 (mh-gate-zero): a test names the open blocker it resolves — here the open blocker is whether the tabletop layer is load-bearing or decoration, which the ontology states as mechanics make claims about reality (QUICKSTART, principle 5). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "slice-reuse",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice is assembled from verified existing assets — the trust reducer, the walkable-sprite slice, the Twine IR compiler, the world-state-provider pattern — and forks nothing. This stands unless you flip it.",
+   "why": "The zo-environment pass of 2026-10-15 verified these assets locally in bars-engine (council/passes/6FACE_PASS_zo-environment1_2026-10-15.md), and your 2026-10-03 lesson (mh-scope-only) runs work beside the gate it serves. Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "pos-slice-day",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "The built slice has no day clock — it is a loop, not a day. The grounding choice fires per fight (slice/state.js `ground()`), not per day-commit, and autoplay.js plays fight loops, not days. The day engine (sleep, day-commit, a clock the season can read) is unbuilt and is the first seam the engine slice adds. The built slice's `events` log is the seed of that day's resolution record.",
+   "why": "Evidence: slice/state.js holds heart, drain, edgePts and counters but no clock; sprout docs/decisions/whats-next.md named the missing game shell ('no clock driving the day and the season, no save') on 2026-10-02, before the four-layer contract existed. Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md; reconciliation: sprout docs/engine-contract.md"
+  },
+  {
+   "id": "pos-slice-rules",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "The slice's numbers are declared in data/slice.json but resolution is per feature: fight.js rolls its own type-chart damage, wave.js its own restraint multipliers (it does reuse fight.js's CYCLE), offering.js its own odds. There is no shared resolution layer, no declared roll, and no resolution records — state.events logs outcomes for the playtest, not EncounterOccurrence or MoveInvocation. The engine slice's rules surface is the first shared resolver; until one exists the substrate-removal falsifier cannot run, because there is no single surface to stub out.",
+   "why": "Evidence: slice/fight.js, slice/wave.js, slice/offering.js each resolve independently; slice/state.js events are playtest logs. The falsifier is position slice-falsifier (challenger). Ontology vocabulary: ontology/v0.1/source/design-ontology-v0.1.yaml (EncounterOccurrence, MoveInvocation). Reconciliation: sprout docs/engine-contract.md"
+  },
+  {
+   "id": "pos-slice-passage",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "No story graph, no IR, and no predicate-fired passages exist in the built slice — the narrative seam is a scripted arrival plus placeholder text. What exists and stays: edgePts recognition is the tension representation already built — the playtest asks 'why did the edge change?' without naming a cause, which is the TensionSnapshot/MovementFinding grammar played by hand. When a passage first fires on a world predicate, the slice borrows the bars-engine twine IR; it does not fork it.",
+   "why": "Evidence: slice/main.js scenes are scripted; all story strings are placeholders in data/slice.json; slice/playtest.js and data/slice.json playtest.survey carry the recognition check. Ontology: QUICKSTART, Representations and findings. Reuse rule: position slice-reuse (diplomat, architect). Reconciliation: sprout docs/engine-contract.md"
+  },
+  {
+   "id": "pos-slice-encounter",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "Sprout's negotiation fight is the engine slice's local encounter form. The bars-engine trust reducer stays a borrowed library — its pattern, and a called library if a seam ever needs it; nothing moves between repos. The seam adopts v0.1's EncounterDefinition and EncounterOccurrence as the record shape both engines can emit, so the day loop and rules surface read encounters without knowing which engine ran. Unification is not proposed; adaptation is the record shape only.",
+   "why": "The two engines do different jobs: the trust reducer is an allyship-domain trust loop proven completable by simulation (bars-engine .specify/specs/trust-encounter-loop/plan.md); sprout's fight teaches the ontology's cycle through Demand, satisfaction and Ting (slice/fight.js, from design.md). Forcing unification now is speculative generality; shared vocabulary is the Regent's rule (no invented terms; slice-ontology-types). Sprout also holds a third local form, wave.js, which already reuses fight.js's CYCLE. Reconciliation: sprout docs/engine-contract.md"
   }
  ],
  "questions": [
@@ -15596,6 +15718,118 @@
      "v": "C",
      "label": "C. Re-cut into panels",
      "c": "The Challenger's lever: the sleeve is cut into panels or strips that swing on their own. A bigger build, and the robe looks different."
+    }
+   ]
+  },
+  {
+   "id": "slice-substrate-home",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "slice 1",
+   "q": "Where does the four-layer engine substrate live: in bars-engine, in sprout, or in a new registered repo with sprout as its first client?",
+   "why_you": "A repo decision is infrastructure and money you own. Sprout is the game's home in the battles but is not on the council's registered-repos list, and the ontology-game content already lives in bars-engine. Moving or adding repos is standing work only you can authorize.",
+   "not_before": "The four-layer contract was named in chat on 2026-10-16 and this is the first pass on the slice; no ruling exists on where the substrate lives, and the spec kit cannot open without a home.",
+   "options": [
+    {
+     "v": "bars-engine",
+     "label": "bars-engine",
+     "c": "Fastest: every verified asset is local. Risk: the game's identity dilutes inside a large repo, and sprout's battles keep pointing elsewhere."
+    },
+    {
+     "v": "sprout",
+     "label": "sprout",
+     "c": "Honors the battles' home. Risk: sprout is not cloned or registered locally, so setup cost lands before any slice code runs."
+    },
+    {
+     "v": "new-registered-repo",
+     "label": "new registered repo",
+     "c": "A clean substrate contract with sprout as first client. Risk: new infrastructure is your authority and carries standing cost."
+    }
+   ]
+  },
+  {
+   "id": "q-slice-typechart-inferred",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "engine-slice 1",
+   "q": "The S4 fight's type chart has five relations. design.md decided three (controlling hits hard, generating feeds, being controlled hurts). The other two are the builder's inference, marked 'tell me what you want': same element deals 3 damage, generated-by deals 2. What should the two inferred relations do?",
+   "why_you": "design.md is the rules source and is silent on these two relations; changing them is a game-rule change your sprout rules reserve to you. The placeholders already teach something — a player trying the same-element or generated-by stance is learning the cycle from the fight's feedback.",
+   "not_before": "The slice-plan flagged both relations to you at build time (S4, 'Tell me what you want'); the council first read the full chart on 2026-10-16, and no pass has ruled on the cycle's table.",
+   "options": [
+    {
+     "v": "A",
+     "label": "Ratify the placeholders as canon (same = a little damage; generated-by = almost none)",
+     "c": "What the build teaches now becomes canon and the playtest data stays valid. Risk: same-element reads as an attack inside a cycle the game teaches as nourishing."
+    },
+    {
+     "v": "B",
+     "label": "Same-element feeds (satisfaction, no damage)",
+     "c": "The generating cycle stays nourishing in every relation. Risk: two of five stances feed, which softens the fight's pressure and the Demand ladder."
+    },
+    {
+     "v": "C",
+     "label": "Leave them as placeholders and let the first live playtest decide",
+     "c": "No canon yet; the recognition data decides. Risk: the playtest's answers are collected under numbers that are not yet what you mean."
+    }
+   ]
+  },
+  {
+   "id": "q-slice-heart-pool",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "engine-slice 1",
+   "q": "The grey edge: S3 built it as its own pool (edgePts), with a heart that never drops and drain as a running total. design.md's decision line says the edge is 'driven by one number', and you were asked whether the heart itself should drop instead. Keep the separate pool, or make the edge drain minus heart?",
+   "why_you": "It changes design.md's resources table — the heart is currently never lowered — and design.md is canon only you change. The engine contract makes this state model load-bearing for every layer above it.",
+   "not_before": "The slice-plan recorded the question when S3 was built ('Tell me if you would rather the heart itself drop'); the council read it first on 2026-10-16 and no pass has ruled on the pool.",
+   "options": [
+    {
+     "v": "A",
+     "label": "Keep the separate pool (as built)",
+     "c": "Every grounding stays visible as its own cause, and the heart stays a one-way blessing per design.md's resources table. Cost: three numbers where the decision line says one, and the edge no longer literally summarizes heart against drain."
+    },
+    {
+     "v": "B",
+     "label": "Edge = drain minus heart, with the heart allowed to drop",
+     "c": "Two numbers, and the edge is the arithmetic the decision line describes. Cost: it contradicts 'never lowered', and three earth groundings would absorb every later well grounding — the reason S3 moved away from it."
+    },
+    {
+     "v": "C",
+     "label": "Keep the pool now, revisit after the first live playtest",
+     "c": "The recognition question tests visibility as built. Cost: a ruling deferred, and the numbers are still placeholders either way."
+    }
+   ]
+  },
+  {
+   "id": "q-slice-playtest-order",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "engine-slice 1",
+   "q": "The live playtest is deferred (ruled 2026-10-02: run it once there is more game content). The engine contract now interposes a reconciliation slice — day loop, rules surface, passage seam, encounter record shape. Does the first live playtest run on the built slice as it stands, after the engine slice adds its seams, or stay deferred until content?",
+   "why_you": "It is your play: the deferral ruling and the roadmap's gate rule ('no phase starts until the gate before it passes') are both your lines, and whats-next.md says the gate line no longer matches your order.",
+   "not_before": "The deferral ruled 2026-10-02, before the four-layer contract existed; nothing has reconciled the two since.",
+   "options": [
+    {
+     "v": "A",
+     "label": "Playtest the built slice first",
+     "c": "The loop's felt verdict arrives before more scaffolding, and the engine slice builds on tested ground. Cost: a second playtest later for the engine seams."
+    },
+    {
+     "v": "B",
+     "label": "Build the engine slice first, one combined playtest after",
+     "c": "One playtest covers loop and contract. Cost: two variables per playtest — if the felt moment fails, you cannot tell whether the loop or the new seam is at fault."
+    },
+    {
+     "v": "C",
+     "label": "Keep deferred until more content",
+     "c": "Status quo; the automated playtests stand in. Cost: the contract's falsifiers (what the resolution changed) stay unrun, and every layer above the loop is built on an untested felt moment."
     }
    ]
   }
@@ -26255,6 +26489,89 @@
      "diplomat"
     ],
     "pass": "daemon meeting 1"
+   },
+   "dmt-body-blockers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:55:14.261Z",
+    "record": "council/ledger/2026-10-17-pull-045536.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "daemon meeting 1, after your answers"
+   },
+   "dmt-same-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:55:25.919Z",
+    "record": "council/ledger/2026-10-17-pull-045536.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "daemon meeting 1, after your answers"
+   },
+   "dmt-victim-leads-review": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:55:36.975Z",
+    "record": "council/ledger/2026-10-17-pull-045536.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "daemon meeting 1, after your answers"
+   },
+   "slice-contract": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:08:37.877Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "slice 1"
+   },
+   "slice-ontology-types": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:08:59.242Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "slice 1"
+   },
+   "slice-falsifier": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:09:05.811Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "slice 1"
+   },
+   "slice-reuse": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T05:09:13.342Z",
+    "record": "council/ledger/2026-10-17-pull-050913.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "slice 1"
    }
   },
   "questions": {
@@ -28617,6 +28934,16 @@
      "challenger"
     ],
     "pass": "cloth designer 1"
+   },
+   "slice-substrate-home": {
+    "decision": "sprout",
+    "label": "Sprout - registered and cloned; slice and substrate build there",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-sprout-registration.json",
+    "faces": [
+     "regent",
+     "architect"
+    ]
    }
   },
   "causes": {
@@ -29971,7 +30298,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-17T01:36:16.000Z",
+ "steps_recorded_through": "2026-10-17T04:37:09Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
