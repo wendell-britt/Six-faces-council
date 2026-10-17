@@ -29600,7 +29600,8 @@
      "regent",
      "diplomat"
     ],
-    "pass": "artist-corps 1"
+    "pass": "artist-corps 1",
+    "chat_steer": "Wendell, chat 2026-10-16: 'we are making a human craft guild but intelligently where we aren't cutting off our own nose to spite our face re: technological accessibility. The benefit of AI is getting transformative technology in the hands of people and freeing humans up to make art that feeds their soul and connecting them with people who are willing to pay a premium for this (via grants crowdfunding and educational programming)'. Gloss on choice c; full text in ledger/2026-10-16-steer-artist-corps1.json."
    },
    "q-ac-employment-form": {
     "decision": "c",
