@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17 04:49",
+ "updated": "2026-10-17",
  "positions": [
   {
    "id": "build",
@@ -9836,6 +9836,52 @@
    "auto": true,
    "pos": "The slice is assembled from verified existing assets — the trust reducer, the walkable-sprite slice, the Twine IR compiler, the world-state-provider pattern — and forks nothing. This stands unless you flip it.",
    "why": "The zo-environment pass of 2026-10-15 verified these assets locally in bars-engine (council/passes/6FACE_PASS_zo-environment1_2026-10-15.md), and your 2026-10-03 lesson (mh-scope-only) runs work beside the gate it serves. Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "pos-slice-day",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "The built slice has no day clock — it is a loop, not a day. The grounding choice fires per fight (slice/state.js `ground()`), not per day-commit, and autoplay.js plays fight loops, not days. The day engine (sleep, day-commit, a clock the season can read) is unbuilt and is the first seam the engine slice adds. The built slice's `events` log is the seed of that day's resolution record.",
+   "why": "Evidence: slice/state.js holds heart, drain, edgePts and counters but no clock; sprout docs/decisions/whats-next.md named the missing game shell ('no clock driving the day and the season, no save') on 2026-10-02, before the four-layer contract existed. Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md; reconciliation: sprout docs/engine-contract.md"
+  },
+  {
+   "id": "pos-slice-rules",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "The slice's numbers are declared in data/slice.json but resolution is per feature: fight.js rolls its own type-chart damage, wave.js its own restraint multipliers (it does reuse fight.js's CYCLE), offering.js its own odds. There is no shared resolution layer, no declared roll, and no resolution records — state.events logs outcomes for the playtest, not EncounterOccurrence or MoveInvocation. The engine slice's rules surface is the first shared resolver; until one exists the substrate-removal falsifier cannot run, because there is no single surface to stub out.",
+   "why": "Evidence: slice/fight.js, slice/wave.js, slice/offering.js each resolve independently; slice/state.js events are playtest logs. The falsifier is position slice-falsifier (challenger). Ontology vocabulary: ontology/v0.1/source/design-ontology-v0.1.yaml (EncounterOccurrence, MoveInvocation). Reconciliation: sprout docs/engine-contract.md"
+  },
+  {
+   "id": "pos-slice-passage",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "No story graph, no IR, and no predicate-fired passages exist in the built slice — the narrative seam is a scripted arrival plus placeholder text. What exists and stays: edgePts recognition is the tension representation already built — the playtest asks 'why did the edge change?' without naming a cause, which is the TensionSnapshot/MovementFinding grammar played by hand. When a passage first fires on a world predicate, the slice borrows the bars-engine twine IR; it does not fork it.",
+   "why": "Evidence: slice/main.js scenes are scripted; all story strings are placeholders in data/slice.json; slice/playtest.js and data/slice.json playtest.survey carry the recognition check. Ontology: QUICKSTART, Representations and findings. Reuse rule: position slice-reuse (diplomat, architect). Reconciliation: sprout docs/engine-contract.md"
+  },
+  {
+   "id": "pos-slice-encounter",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "engine-slice 1",
+   "auto": true,
+   "pos": "Sprout's negotiation fight is the engine slice's local encounter form. The bars-engine trust reducer stays a borrowed library — its pattern, and a called library if a seam ever needs it; nothing moves between repos. The seam adopts v0.1's EncounterDefinition and EncounterOccurrence as the record shape both engines can emit, so the day loop and rules surface read encounters without knowing which engine ran. Unification is not proposed; adaptation is the record shape only.",
+   "why": "The two engines do different jobs: the trust reducer is an allyship-domain trust loop proven completable by simulation (bars-engine .specify/specs/trust-encounter-loop/plan.md); sprout's fight teaches the ontology's cycle through Demand, satisfaction and Ting (slice/fight.js, from design.md). Forcing unification now is speculative generality; shared vocabulary is the Regent's rule (no invented terms; slice-ontology-types). Sprout also holds a third local form, wave.js, which already reuses fight.js's CYCLE. Reconciliation: sprout docs/engine-contract.md"
   }
  ],
  "questions": [
@@ -15697,6 +15743,81 @@
     {
      "label": "new registered repo",
      "consequence": "A clean substrate contract with sprout as first client. Risk: new infrastructure is your authority and carries standing cost."
+    }
+   ]
+  },
+  {
+   "id": "q-slice-typechart-inferred",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "engine-slice 1",
+   "q": "The S4 fight's type chart has five relations. design.md decided three (controlling hits hard, generating feeds, being controlled hurts). The other two are the builder's inference, marked 'tell me what you want': same element deals 3 damage, generated-by deals 2. What should the two inferred relations do?",
+   "why_you": "design.md is the rules source and is silent on these two relations; changing them is a game-rule change your sprout rules reserve to you. The placeholders already teach something — a player trying the same-element or generated-by stance is learning the cycle from the fight's feedback.",
+   "not_before": "The slice-plan flagged both relations to you at build time (S4, 'Tell me what you want'); the council first read the full chart on 2026-10-16, and no pass has ruled on the cycle's table.",
+   "options": [
+    {
+     "label": "Ratify the placeholders as canon (same = a little damage; generated-by = almost none)",
+     "consequence": "What the build teaches now becomes canon and the playtest data stays valid. Risk: same-element reads as an attack inside a cycle the game teaches as nourishing."
+    },
+    {
+     "label": "Same-element feeds (satisfaction, no damage)",
+     "consequence": "The generating cycle stays nourishing in every relation. Risk: two of five stances feed, which softens the fight's pressure and the Demand ladder."
+    },
+    {
+     "label": "Leave them as placeholders and let the first live playtest decide",
+     "consequence": "No canon yet; the recognition data decides. Risk: the playtest's answers are collected under numbers that are not yet what you mean."
+    }
+   ]
+  },
+  {
+   "id": "q-slice-heart-pool",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "engine-slice 1",
+   "q": "The grey edge: S3 built it as its own pool (edgePts), with a heart that never drops and drain as a running total. design.md's decision line says the edge is 'driven by one number', and you were asked whether the heart itself should drop instead. Keep the separate pool, or make the edge drain minus heart?",
+   "why_you": "It changes design.md's resources table — the heart is currently never lowered — and design.md is canon only you change. The engine contract makes this state model load-bearing for every layer above it.",
+   "not_before": "The slice-plan recorded the question when S3 was built ('Tell me if you would rather the heart itself drop'); the council read it first on 2026-10-16 and no pass has ruled on the pool.",
+   "options": [
+    {
+     "label": "Keep the separate pool (as built)",
+     "consequence": "Every grounding stays visible as its own cause, and the heart stays a one-way blessing per design.md's resources table. Cost: three numbers where the decision line says one, and the edge no longer literally summarizes heart against drain."
+    },
+    {
+     "label": "Edge = drain minus heart, with the heart allowed to drop",
+     "consequence": "Two numbers, and the edge is the arithmetic the decision line describes. Cost: it contradicts 'never lowered', and three earth groundings would absorb every later well grounding — the reason S3 moved away from it."
+    },
+    {
+     "label": "Keep the pool now, revisit after the first live playtest",
+     "consequence": "The recognition question tests visibility as built. Cost: a ruling deferred, and the numbers are still placeholders either way."
+    }
+   ]
+  },
+  {
+   "id": "q-slice-playtest-order",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "engine-slice 1",
+   "q": "The live playtest is deferred (ruled 2026-10-02: run it once there is more game content). The engine contract now interposes a reconciliation slice — day loop, rules surface, passage seam, encounter record shape. Does the first live playtest run on the built slice as it stands, after the engine slice adds its seams, or stay deferred until content?",
+   "why_you": "It is your play: the deferral ruling and the roadmap's gate rule ('no phase starts until the gate before it passes') are both your lines, and whats-next.md says the gate line no longer matches your order.",
+   "not_before": "The deferral ruled 2026-10-02, before the four-layer contract existed; nothing has reconciled the two since.",
+   "options": [
+    {
+     "label": "Playtest the built slice first",
+     "consequence": "The loop's felt verdict arrives before more scaffolding, and the engine slice builds on tested ground. Cost: a second playtest later for the engine seams."
+    },
+    {
+     "label": "Build the engine slice first, one combined playtest after",
+     "consequence": "One playtest covers loop and contract. Cost: two variables per playtest — if the felt moment fails, you cannot tell whether the loop or the new seam is at fault."
+    },
+    {
+     "label": "Keep deferred until more content",
+     "consequence": "Status quo; the automated playtests stand in. Cost: the contract's falsifiers (what the resolution changed) stay unrun, and every layer above the loop is built on an untested felt moment."
     }
    ]
   }
