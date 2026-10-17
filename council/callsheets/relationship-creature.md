@@ -1,4 +1,4 @@
-2026-10-16 (updated 23:45)
+2026-10-17 (updated 00:45)
 ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
@@ -73,6 +73,32 @@ and a phone page at once: join, welcome, sealed offering opened and taken in, da
 agreement planted, proposed and agreed, one page away while the other tended, then back to "While you were away".
 Next: his play; round 2 from his notes.
 
+**2026-10-17, 00:45, hosting pass `between-hosting1`:** the 3D page never opened on his iPhone in the Claude app.
+Three patches (textures, inline cave with timeouts, a limit on the store read) each passed in desktop Chromium with a
+stand-in store and failed on his phone; the last visible stop was the artifact platform's own store read. He called
+the six: "This will ultimately be hosted on the web ... Also the WAVE and CAVES are all working on bars-engine". Pass
+`council/passes/6FACE_PASS_between-hosting1_2026-10-17.md`, ledger `council/ledger/2026-10-17-between-hosting1.json`,
+rows `council/callsheets/rows/between-hosting-2026-10-17.json`. Five `bh-*` positions stand: stop patching the
+artifact (it stays published, untouched, holding Ari's spark), move the Between to bars-engine behind sign-in, async
+first with polling for presence, nothing reaches him as "try this" until it has opened on an iPhone, and the spark
+moves to the new store in the port thread. Patched page source (version 4) is the artifact itself.
+
+### Build brief: the Between on bars-engine (next thread, Opus, bars-engine)
+- **Start from** the artifact page's source (Artifact read of https://claude.ai/artifact/NTi4jcpaHkDEMnqpVA9LBq): the
+  scene, walkers, garden, sheets and acts carry over; replace only the boot and the store calls. Drop the artifact-only
+  workarounds (inline models, capability timeouts, the texture-loader override) unless a WebKit test shows one is needed.
+- **Where:** a route beside the caves (`/ontology-game/between`), behind his sign-in like `/board`, models served from
+  `public/` as `.glb`. Store in Postgres with a Prisma migration (migrate, never `db push`), tables in the garden's
+  shape: garden (with members), items, spirits, daemons, shown, plus each person's private note. API routes do the
+  writes; the page polls every few seconds for presence and changes (`bh-async-first`).
+- **Membership:** only the garden's two members read or write it (`src/lib/garden/plant.ts` per the callsheet). Ari
+  joins by an invitation link and signs in; if Ari cannot get an account, that becomes a board question then.
+- **Carry the spark** (`bh-spark-carries`): read the artifact's store once with ArtifactData, write it once to the new
+  tables; nothing goes into a repo, log or reply.
+- **Rulings hold:** every `rc-*` ruling the 3D page carries, unchanged.
+- **Done** (`bh-device-gate`): build and check pass, a Vercel preview link opens on his iPhone (a Your steps card with
+  the link, what to tap, and what he should see), and he tends the spark. Only then is it shared with Ari.
+
 ### Build brief: the Between in 3D (next thread, Opus, load design-ontology)
 - **Ontology first.** Load `.claude/skills/design-ontology/SKILL.md` and the profile `ontology/manifest.yaml` names for
   relationship and trust mechanics (touches: Relationship, PermissionEnvelope, TrustState). Map each `rc-*` ruling onto
@@ -134,8 +160,8 @@ on. It should be able to be accessed synchronously and synchronously by the two 
    `src/lib/garden/plant.ts`.
 
 ## Waiting on
-His play in the 3D garden (https://claude.ai/artifact/NTi4jcpaHkDEMnqpVA9LBq). Ari can join once he shares
-the page from its Share menu.
+The port thread ("The Between on bars-engine", brief above), then his tick on the device step. The artifact page stays
+as it is until then.
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
