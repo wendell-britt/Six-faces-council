@@ -151,6 +151,11 @@
    "by": "Claude",
    "ref": "council/passes/6FACE_PASS_slice2_2026-10-17.md; board rows pos-slice-bridge, pos-slice-chart-stats, pos-slice-feasibility, q-slice-referee-clear",
    "at": "2026-10-17T07:10:00Z"
+  },
+  "2026-10-17-pull-200544#positions/ppo-technique": {
+   "by": "Claude",
+   "ref": "ontology/v0.1/source/design-ontology-v0.1.yaml asset_sourcing section; read as 'do the brief in Claude' instead of a Codex paste",
+   "at": "2026-10-17T20:20:00Z"
   }
  }
 }
