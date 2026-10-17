@@ -1,4 +1,4 @@
-2026-10-17 (updated 03:10)
+2026-10-17 (updated 04:00)
 ontology: default; touches: TrustState, ConsentRecord, MovementFinding
 # Big Mind cave (battle fr-big-mind-cave)
 
@@ -60,6 +60,13 @@ Build threads, one pull request each, all on bigmind.js so in order:
    spirit is saved as `voices[id].spirit` and becomes the ally once the voice trusts you. Permission lines, cards and
    gestures are drafts. Next: merge #361, then Wendell plays T4 with a 3-2-1 in one chamber; the skinning thread's #356
    let-go could play when a 3-2-1 ends with the voice willing (a later build, not this one).
+   **Built 2026-10-17, bars-engine #363 (draft), bigmind-test 497 pass: the let-go after a willing 3-2-1.** When a 3-2-1
+   ends with the voice willing (charge 3 or below, all three seen, or already willing), the panel steps away, the camera
+   moves off the player, the body eases to its held shape and plays its #356 Integrate action into its honored form, and
+   it stands willing; the line is "The Protector lets go. This is how it stands when it is honored." Once a visit, after
+   any easing, never while a fall is unowned; from its seat it plays when the voice is back at its post. Clip:
+   /mnt/project-files/3d-build/bigmind-letgo-2026-10-17/protector-letgo-after-321.mp4. His look folds into T4: after
+   one 3-2-1 that brings a voice to 3 or below, does the let-go read as that voice letting go?
 4. **Art, alongside** (`bmt-build-order`): the WARP daemon bodies (bars-engine #328 lineage, GESTURES.md) replace the
    placeholder daemon body in the Big Mind cave first, under a phone load budget; then dressing the cave; trust stances
    once build 2 names them. Owned by the blender-frame-flesh-warp strand.
