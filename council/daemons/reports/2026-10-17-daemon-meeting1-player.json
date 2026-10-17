@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-17",
+  "pass": "daemon-meeting1",
+  "daemon": "player",
+  "face": "diplomat",
+  "cast": "46 -> 34",
+  "model": null,
+  "tokens": "31399",
+  "report": "2026-10-17-daemon-meeting1-player.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}

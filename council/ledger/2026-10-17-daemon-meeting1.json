@@ -1,0 +1,72 @@
+{
+ "date": "2026-10-17",
+ "battle": "daemon-meeting",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Daemon meeting pass 1, on Wendell's 01:45 message (thread \"Daemon skinning and stances\"). Every daemon self-advocated through its own agent; the Victim led at its storyteller level, with the Sage. Design ontology applied (QUICKSTART). Nine dmt-* positions; question dmt-trainer survived the reach test. Dissent on fighting: daemons and Shaman meet only, Regent and Diplomat accept spars with the daemon never the target, Architect indifferent, Challenger asks him. Builds on bars-engine #361.",
+ "steer": "Les the let gos are where I want them to be. The next thing we need to do is be able to have players as they get closer to the daemon to answer questions about how their body is responding to knowing they are going to meet a protector what kind of emotions are present and are the flooded veils satisfied or dissatisfied. I want to see how much of the spirit asset work we can use to break this down. I don't know if the daemons are pokemon trainers have have their own spirits that you can battle. OR IF the boss spirit becomes a daemon of the variety of our daemon ontology. Let's have the 6 game masters weigh in on this and specifically have the daemons self advocate for this. I think the victim at the storyteller level and as the sage should lead the charge",
+ "pass_file": "council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md",
+ "rows_file": "council/callsheets/rows/daemon-meeting-2026-10-17.json",
+ "casts": {
+  "shaman": "17",
+  "architect": "52>56",
+  "challenger": "19>35",
+  "regent": "27>7",
+  "diplomat": "6>57",
+  "sage": "43>28",
+  "daemon-victim": "59>24",
+  "daemon-protector": "6>10",
+  "daemon-controller": "48>7",
+  "daemon-skeptic": "23>27",
+  "daemon-fixer": "19>42",
+  "daemon-damaged-self": "50",
+  "daemon-emotional-body": "11>7",
+  "daemon-player": "46>34"
+ },
+ "daemon_reports": [
+  "council/daemons/reports/2026-10-17-daemon-meeting1-victim.md",
+  "council/daemons/reports/2026-10-17-daemon-meeting1-protector.md",
+  "council/daemons/reports/2026-10-17-daemon-meeting1-controller.md",
+  "council/daemons/reports/2026-10-17-daemon-meeting1-skeptic.md",
+  "council/daemons/reports/2026-10-17-daemon-meeting1-fixer.md",
+  "council/daemons/reports/2026-10-17-daemon-meeting1-damaged-self.md",
+  "council/daemons/reports/2026-10-17-daemon-meeting1-emotional-body.md",
+  "council/daemons/reports/2026-10-17-daemon-meeting1-player.md"
+ ],
+ "subagent_tokens": 413233,
+ "positions": [
+  "dmt-approach-checkin",
+  "dmt-body-first",
+  "dmt-storyteller-line",
+  "dmt-two-axes",
+  "dmt-spirit-from-answers",
+  "dmt-ally-honored",
+  "dmt-vouch-once",
+  "dmt-bring-it-on",
+  "dmt-next-families"
+ ],
+ "questions": [
+  "dmt-trainer"
+ ],
+ "tests": [
+  {
+   "name": "approach play",
+   "due": "his first play of Big Mind build 4",
+   "resolves": "are four asks too many",
+   "fails_if": "any approach over a minute, or all four skipped twice"
+  },
+  {
+   "name": "flooded squint",
+   "due": "next spirit-loop round",
+   "resolves": "does a flooded spirit show its state",
+   "fails_if": "three flooded states of one Holdfast in fire cannot be sorted"
+  },
+  {
+   "name": "born of my answer",
+   "due": "his first play of Big Mind build 4",
+   "resolves": "does the spirit read as his answer",
+   "fails_if": "fewer than three of four layers recognised"
+  }
+ ],
+ "dissent": true
+}

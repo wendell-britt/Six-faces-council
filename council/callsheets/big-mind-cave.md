@@ -3,6 +3,20 @@ ontology: default; touches: TrustState, ConsentRecord, MovementFinding
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
+**2026-10-17, build 4: the approach check-in (pass `daemon-meeting1`):** after bars-engine #361 merges, one pull request on
+bigmind.js, Sonnet (design settled). Positions `dmt-approach-checkin`, `dmt-body-first`, `dmt-storyteller-line`,
+`dmt-two-axes`, `dmt-spirit-from-answers`, `dmt-vouch-once` (rows `council/callsheets/rows/daemon-meeting-2026-10-17.json`).
+In each hallway before the shut mouth: the Victim's one storyteller line ending "and then..."; then up to four skippable
+asks in order: body (plain movement words: bracing, gripping, pulling back, leaning in, sinking, curling in, flinging
+open; never naming a daemon), feeling (#361's five, own words, no word yet), faint or far away / too much / clear
+(polarity: veiled, flooding, clear), and only when not faint, sits all right / neither / wants something (state band).
+Each answer shows at once: the mouth's light takes the element's colour and the meeting spirit forms from existing layers
+(feeling to element, movement to family, veil to polarity, settled to state; unbuilt families use the chamber's gas and
+core). "Skip all" and walking on always pass. Asked every visit. Save `voices[id].approach = {body, feeling, veil, state,
+at}`, no words. Checks: a faint answer never shows the settled ask; no screen prints a number. Tests at his first play:
+approach play (over a minute, or all four skipped twice, cuts to two asks) and born-of-my-answer (three of four layers
+recognised). `dmt-trainer` (fight a daemon's spirits?) waits on his answer and blocks nothing here.
+
 **2026-10-16, trust, 3-2-1, spirits and solo play (pass `big-mind-trust1`):** Wendell's walkthrough notes of 21:52 after
 playing the path to the centre. Pass `council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md`, ledger
 `council/ledger/2026-10-16-big-mind-trust1.json`, rows `council/callsheets/rows/big-mind-trust-2026-10-16.json`. Fifteen
