@@ -9,7 +9,7 @@
    "pass": 1,
    "auto": false,
    "pos": "The council is a definition file with a lessons list per face, a skill that convenes a pass and records it, and a stats script. Nothing in Python until a surface needs it.",
-   "why": "Five faces converged on it in pass one. The anchor rules out the bars-engine backend because the Claude surfaces you decide in do not have it. Source: 6FACE_PASS1 § Sage."
+   "why": "Five faces converged on it in pass one. The anchor rules out the bars-engine backend because the Claude surfaces you decide in do not have it. Source: 6FACE_PASS1 \u00a7 Sage."
   },
   {
    "id": "ledger",
@@ -20,7 +20,7 @@
    "pass": 1,
    "auto": false,
    "pos": "One record per repo, beside the decision it belongs to, pointing at the decision-log entry that holds the ruling.",
-   "why": "A friendcraft session cannot see bars-engine, so a record there is invisible when needed. A ruling is written once, in the decision log. Source: PASS1 § Architect, § Regent."
+   "why": "A friendcraft session cannot see bars-engine, so a record there is invisible when needed. A ruling is written once, in the decision log. Source: PASS1 \u00a7 Architect, \u00a7 Regent."
   },
   {
    "id": "ceding",
@@ -31,7 +31,7 @@
    "pass": 1,
    "auto": false,
    "pos": "The run length before a face answers alone stays unset until you set it. A delegated face drafts a ruling; you confirm it with a word.",
-   "why": "The Numbers rule in the working rules: no number inferred on your behalf. The Challenger says it is not due until ten rulings exist. Source: PASS1 § Regent, § Shaman."
+   "why": "The Numbers rule in the working rules: no number inferred on your behalf. The Challenger says it is not due until ten rulings exist. Source: PASS1 \u00a7 Regent, \u00a7 Shaman."
   },
   {
    "id": "reserved",
@@ -40,8 +40,8 @@
    ],
    "pass": 1,
    "auto": false,
-   "pos": "Reserved, never delegated: canonical prose, consent and release, money, anything naming a person, and the council’s own definition file.",
-   "why": "Four were the spec’s defaults; the fifth the Regent added. Adding to a rule is the Sage’s job rather than a question for you. Source: PASS1 § Regent."
+   "pos": "Reserved, never delegated: canonical prose, consent and release, money, anything naming a person, and the council\u2019s own definition file.",
+   "why": "Four were the spec\u2019s defaults; the fifth the Regent added. Adding to a rule is the Sage\u2019s job rather than a question for you. Source: PASS1 \u00a7 Regent."
   },
   {
    "id": "model",
@@ -52,7 +52,7 @@
    "pass": 1,
    "auto": false,
    "pos": "The council runs on whichever Claude you are talking to. The second-model experiment for the Challenger is a note, not a design decision.",
-   "why": "Your anchor: the greatest utility is inside your Claude flow. The Challenger: an untested idea stays out of the decisions table. Source: PASS1 § Architect, § Challenger."
+   "why": "Your anchor: the greatest utility is inside your Claude flow. The Challenger: an untested idea stays out of the decisions table. Source: PASS1 \u00a7 Architect, \u00a7 Challenger."
   },
   {
    "id": "six",
@@ -72,7 +72,7 @@
    "pass": 2,
    "auto": true,
    "pos": "A pass has two typed outputs: product and questions. A question carries its owner face, options, the consequence of each, and one line on why only you can answer it.",
-   "why": "Your brief: questions and interfaceable product are two separate things. Nobody asked you this before because pass one typed them as one. Source: PASS2 § Architect."
+   "why": "Your brief: questions and interfaceable product are two separate things. Nobody asked you this before because pass one typed them as one. Source: PASS2 \u00a7 Architect."
   },
   {
    "id": "reach",
@@ -84,7 +84,7 @@
    "pass": 2,
    "auto": true,
    "pos": "Before a question reaches you, its face answers it from the record with a citation, or says what is missing. It reaches you only when what is missing is your preference or a fact only you hold, and only if your answer changes what gets built.",
-   "why": "Your brief: recursive calls to solve constant reaching. Pass one scored zero of six under this test. Not asked before because the test did not exist. Source: PASS2 § Challenger, § Regent."
+   "why": "Your brief: recursive calls to solve constant reaching. Pass one scored zero of six under this test. Not asked before because the test did not exist. Source: PASS2 \u00a7 Challenger, \u00a7 Regent."
   },
   {
    "id": "chat",
@@ -94,7 +94,7 @@
    "pass": 2,
    "auto": true,
    "pos": "Chat carries context and steering. The pass lives in its file and on this board. The chat reply of a pass is what changed and a link.",
-   "why": "Your brief: chat should be for extra context and steering. Source: PASS2 § Diplomat."
+   "why": "Your brief: chat should be for extra context and steering. Source: PASS2 \u00a7 Diplomat."
   },
   {
    "id": "interface",
@@ -105,7 +105,7 @@
    "pass": 2,
    "auto": true,
    "pos": "In the Claude flow the interface is a page with a store, like this one. In bars-engine it becomes a CYOA quest later. Rows the council answered without you stay visible here and can be flipped.",
-   "why": "The anchor, plus the Shaman’s guard: a hidden auto-answer is a silent decision. Source: PASS2 § Architect, § Shaman."
+   "why": "The anchor, plus the Shaman\u2019s guard: a hidden auto-answer is a silent decision. Source: PASS2 \u00a7 Architect, \u00a7 Shaman."
   },
   {
    "id": "colours",
@@ -115,8 +115,8 @@
    ],
    "pass": "research",
    "auto": true,
-   "pos": "The definition file names altitudes in Wilber’s 2006 scheme (Magenta, Amber, Teal) and says so. The Blue in the agents package docstring is Beck and Cowan’s 1996 name for the same level and is corrected to Amber.",
-   "why": "game-master-sects.md already rules Amber canonical. The research confirms Blue and Amber are one level, Graves D-Q. Source: RESEARCH §1."
+   "pos": "The definition file names altitudes in Wilber\u2019s 2006 scheme (Magenta, Amber, Teal) and says so. The Blue in the agents package docstring is Beck and Cowan\u2019s 1996 name for the same level and is corrected to Amber.",
+   "why": "game-master-sects.md already rules Amber canonical. The research confirms Blue and Amber are one level, Graves D-Q. Source: RESEARCH \u00a71."
   },
   {
    "id": "torbert",
@@ -126,8 +126,8 @@
    ],
    "pass": "research",
    "auto": true,
-   "pos": "The council never cites Torbert’s Diplomat for its own. Torbert’s Diplomat is the conformist logic at Amber; the council’s Diplomat is Green and corresponds to Torbert’s Individualist.",
-   "why": "A fact about two published models, not a preference. Source: RESEARCH §3."
+   "pos": "The council never cites Torbert\u2019s Diplomat for its own. Torbert\u2019s Diplomat is the conformist logic at Amber; the council\u2019s Diplomat is Green and corresponds to Torbert\u2019s Individualist.",
+   "why": "A fact about two published models, not a preference. Source: RESEARCH \u00a73."
   },
   {
    "id": "standing",
@@ -137,8 +137,8 @@
    ],
    "pass": "research",
    "auto": true,
-   "pos": "The definition file says what the model stands on: Graves’s data was never replicated, no validated instrument places a person at a level, Cowan doubted the tier break, and the Mean Green Meme was invented to shame Green. The levels are lenses on a question and never a rating of a person.",
-   "why": "The §2c test in the working rules, applied to the theory itself. Source: RESEARCH §4."
+   "pos": "The definition file says what the model stands on: Graves\u2019s data was never replicated, no validated instrument places a person at a level, Cowan doubted the tier break, and the Mean Green Meme was invented to shame Green. The levels are lenses on a question and never a rating of a person.",
+   "why": "The \u00a72c test in the working rules, applied to the theory itself. Source: RESEARCH \u00a74."
   },
   {
    "id": "lens",
@@ -148,8 +148,8 @@
    ],
    "pass": "research",
    "auto": true,
-   "pos": "Each face’s entry states what it sees that later levels lose. The Sage’s synthesis must carry every face’s contribution or name which it dropped.",
-   "why": "Beck and Cowan: no vMEME is better than another. Wilber: a stage transcended by dissociation becomes an allergy. Source: RESEARCH §5."
+   "pos": "Each face\u2019s entry states what it sees that later levels lose. The Sage\u2019s synthesis must carry every face\u2019s contribution or name which it dropped.",
+   "why": "Beck and Cowan: no vMEME is better than another. Wilber: a stage transcended by dissociation becomes an allergy. Source: RESEARCH \u00a75."
   },
   {
    "id": "dissent",
@@ -160,7 +160,7 @@
    "pass": "research",
    "auto": true,
    "pos": "Seats get stated, unequal agreeableness, with the Challenger set to disagree. Anonymised verdicts go to the Sage before synthesis. A second model backbone per seat is an experiment recorded in the ledger, not a rule.",
-   "why": "Pass six’s blind-sector finding is in the literature, with two mitigations named: mixed agreeableness across roles and anonymised authorship. Source: RESEARCH §6."
+   "why": "Pass six\u2019s blind-sector finding is in the literature, with two mitigations named: mixed agreeableness across roles and anonymised authorship. Source: RESEARCH \u00a76."
   },
   {
    "id": "kin",
@@ -169,8 +169,8 @@
    ],
    "pass": "research",
    "auto": true,
-   "pos": "The definition file cites the nearest kin, Six Thinking Hats agents, llm-council and the Stanford playbook paper, so the claim that nothing combines worldview seats with per-seat lessons from a human’s rulings stays checkable.",
-   "why": "A claim of novelty with no citations is the Muhani tell. Source: RESEARCH §6."
+   "pos": "The definition file cites the nearest kin, Six Thinking Hats agents, llm-council and the Stanford playbook paper, so the claim that nothing combines worldview seats with per-seat lessons from a human\u2019s rulings stays checkable.",
+   "why": "A claim of novelty with no citations is the Muhani tell. Source: RESEARCH \u00a76."
   },
   {
    "id": "verify",
@@ -180,7 +180,7 @@
    "pass": "research",
    "auto": true,
    "pos": "Every quotation in the research note came through a search index because the container could not open pages. None of it goes into a book, a wiki or a public page until the linked page has been opened and the quote checked.",
-   "why": "The interview-material rule’s spirit: an unchecked quote is not a quote. Source: RESEARCH, header."
+   "why": "The interview-material rule\u2019s spirit: an unchecked quote is not a quote. Source: RESEARCH, header."
   },
   {
    "id": "fc-build-generate",
@@ -190,7 +190,7 @@
    ],
    "pass": "flirtcraft",
    "auto": true,
-   "pos": "Flirtcraft’s build runs prisma generate before next build. Vercel’s npm blocks Prisma’s install script, so the client was never generated and every deploy since Sept 12 failed the type check.",
+   "pos": "Flirtcraft\u2019s build runs prisma generate before next build. Vercel\u2019s npm blocks Prisma\u2019s install script, so the client was never generated and every deploy since Sept 12 failed the type check.",
    "why": "Reproduced exactly with install scripts blocked, and fixed in the same copy: build, type check and tests pass. Source: flirtcraft 6FACE_PASS1_2026-10-02.md E3, E4."
   },
   {
@@ -726,7 +726,7 @@
    ],
    "pass": "guide next",
    "auto": true,
-   "pos": "The council checks the Guide's before-print list against public sources now: the trigrams' Earlier Heaven placements, their yin and yang assignments, their Later Heaven elements, and the Shuo Gua's body correspondence for Duì, all in Legge, and the Clausewitz fog-of-war attribution. This stands unless you flip it.",
+   "pos": "The council checks the Guide's before-print list against public sources now: the trigrams' Earlier Heaven placements, their yin and yang assignments, their Later Heaven elements, and the Shuo Gua's body correspondence for Du\u00ec, all in Legge, and the Clausewitz fog-of-war attribution. This stands unless you flip it.",
    "why": "These are facts in public sources, not preferences, and checking them needs nothing from you. Source: the Guide's tab Council: What Next (2026-10-03), in the Art of War artifact."
   },
   {
@@ -941,7 +941,7 @@
    "pass": "8",
    "auto": true,
    "pos": "The council runs its next pass on what the scheduled session may take up on its own while you are away, and where its limits are. The pass brings positions and questions here, and the session takes up nothing new until you rule on them. This stands unless you flip it.",
-   "why": "Your steer on sd-when: \"It should be able to check in it’s own and eventually find work to do that pushes the needle even if I’m unavailable\". Running a pass needs nothing from you, and the limits it proposes come to you as rows. Source: council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
+   "why": "Your steer on sd-when: \"It should be able to check in it\u2019s own and eventually find work to do that pushes the needle even if I\u2019m unavailable\". Running a pass needs nothing from you, and the limits it proposes come to you as rows. Source: council/ledger/2026-10-03-board-read-22.json (six-faces-council)"
   },
   {
    "id": "lesson-challenger-ladder",
@@ -961,7 +961,7 @@
    ],
    "pass": "8",
    "auto": true,
-   "pos": "The council gains a lesson from your words of 2026-10-03, \"These questions shouldn’t be showing up here\": every question for you goes on this board, and a chat reply only says that the board has new rows. A session that writes a question in chat has skipped the reach test. It goes into faces.yaml at your next board read unless you flip it.",
+   "pos": "The council gains a lesson from your words of 2026-10-03, \"These questions shouldn\u2019t be showing up here\": every question for you goes on this board, and a chat reply only says that the board has new rows. A session that writes a question in chat has skipped the reach test. It goes into faces.yaml at your next board read unless you flip it.",
    "why": "Three questions reached you in chat today. The rule already existed in the skill, \"The board is the only home for positions and questions\", and the session did not apply it. Source: your message in chat, 2026-10-03."
   },
   {
@@ -1025,7 +1025,7 @@
    "pass": "9",
    "auto": true,
    "pos": "After the re-weigh, each daily run takes up one of your five moves, in your order: Wake up, Open up, Clean up, Grow up, Show up, one a day in rotation. When the day's move finds nothing, the run does research instead. This stands unless you flip it.",
-   "why": "Your steer on sd-autonomy-pass named the moves and said \"We can always do research as “something new”\". One move a day is the council's choice. Source: council/passes/6FACE_PASS9_2026-10-03.md (six-faces-council)"
+   "why": "Your steer on sd-autonomy-pass named the moves and said \"We can always do research as \u201csomething new\u201d\". One move a day is the council's choice. Source: council/passes/6FACE_PASS9_2026-10-03.md (six-faces-council)"
   },
   {
    "id": "fm-limits",
@@ -1647,7 +1647,7 @@
    "pass": "11",
    "auto": true,
    "pos": "Sprout's design doc gains one sentence beside the six gates: \"The Emotional Body is not a gate. The farm loop is Emotional Alchemy, so the Emotional Body is the world the player works in.\" It goes in on your next board read unless you flip it or reword it.",
-   "why": "The book seats seven daemons and the final bout has six gates, so a later session could add a seventh to match. The design doc is yours, so the sentence is shown whole first. Source: sprout docs/design.md, the final bout; MTGOA Daemons — Breakdown."
+   "why": "The book seats seven daemons and the final bout has six gates, so a later session could add a seventh to match. The design doc is yours, so the sentence is shown whole first. Source: sprout docs/design.md, the final bout; MTGOA Daemons \u2014 Breakdown."
   },
   {
    "id": "rg-shared-cloth-pass",
@@ -1944,8 +1944,8 @@
    ],
    "pass": "root-game queue",
    "auto": true,
-   "pos": "Root-game's stance by move: Kào and Zhǒu, the shoulder and the elbow strikes, stand close (the front legs 3 cm apart, the clothes squashed between). Every other gate and listening leave space for the clothes, 6 cm asked for. It stays behind a switch on the preview until its marks pass. This stands unless you flip it.",
-   "why": "Your ruling on rg-front-legs (C, it changes with the move) left which moves stand close. The record answers it: Kào brings the two chests within 10-20 cm (root-game research/6FACE_CORNERS_RANGE_2026-10-01.md), and the elbow strikes from the same range; the other gates are worked at the hands. Built and measured: the other gates now stand 4.4 cm apart at the median (3.0 before), but on the drawn bodies two of nine meetings gain jumps, so it is off by default. Source: root-game HANDOFF.md, queue item 2; engine/kit_engine.js, STANCE BY MOVE"
+   "pos": "Root-game's stance by move: K\u00e0o and Zh\u01d2u, the shoulder and the elbow strikes, stand close (the front legs 3 cm apart, the clothes squashed between). Every other gate and listening leave space for the clothes, 6 cm asked for. It stays behind a switch on the preview until its marks pass. This stands unless you flip it.",
+   "why": "Your ruling on rg-front-legs (C, it changes with the move) left which moves stand close. The record answers it: K\u00e0o brings the two chests within 10-20 cm (root-game research/6FACE_CORNERS_RANGE_2026-10-01.md), and the elbow strikes from the same range; the other gates are worked at the hands. Built and measured: the other gates now stand 4.4 cm apart at the median (3.0 before), but on the drawn bodies two of nine meetings gain jumps, so it is off by default. Source: root-game HANDOFF.md, queue item 2; engine/kit_engine.js, STANCE BY MOVE"
   },
   {
    "id": "tr-foreign",
@@ -2020,7 +2020,7 @@
    ],
    "pass": "sprout ranks and badges",
    "auto": true,
-   "pos": "Merit badges are awarded from counters the game already keeps: tool and gate levels by proper use, bouts and village gates won (the Pokémon badges), bounties, and healing the forest (the service a rank asks for). No badge is ever bought. This stands unless you flip it.",
+   "pos": "Merit badges are awarded from counters the game already keeps: tool and gate levels by proper use, bouts and village gates won (the Pok\u00e9mon badges), bounties, and healing the forest (the service a rank asks for). No badge is ever bought. This stands unless you flip it.",
    "why": "Pillar 3, \"Skill is bought only with skillful play\", and pillar 2, \"Giving back pays\" (docs/design.md). Scouting's Star, Life and Eagle ask for merit badges and service hours (Wikipedia, Ranks in Scouts BSA). Source: sprout .specify/specs/ranks-and-badges/request.md"
   },
   {
@@ -2675,7 +2675,7 @@
    ],
    "pass": "sprout demo 4",
    "auto": true,
-   "pos": "A daemon battle plays like a Pokémon battle. Each turn the player picks one of four moves, each move takes HP from the daemon, and the daemon strikes back. Every move is an inner move, and its line walks the player through it as they choose it, so doing the move in the game is doing it. At zero HP the daemon is rested and the grounding follows. Wood, Fire, Earth, Metal and Water stances stay with the spirit negotiation. This stands unless you flip it.",
+   "pos": "A daemon battle plays like a Pok\u00e9mon battle. Each turn the player picks one of four moves, each move takes HP from the daemon, and the daemon strikes back. Every move is an inner move, and its line walks the player through it as they choose it, so doing the move in the game is doing it. At zero HP the daemon is rested and the grounding follows. Wood, Fire, Earth, Metal and Water stances stay with the spirit negotiation. This stands unless you flip it.",
    "why": "Your steer on enc-steady-rests: 'more like pokemon battles where the moves do HP to the daemon and each of the moves is an inner move the player can do to get the emotional alchemy effects in themselves.' Source: council/ledger/2026-10-06-demo-round3.json"
   },
   {
@@ -2786,7 +2786,7 @@
    "pass": "book shipping",
    "auto": true,
    "pos": "Backer books ship in one batch a month, bought from the /ally/mom budget's $100 print line and split by its own rule: half the copies go to Kickstarter backers, signed, with a pin where one is owed, and half become signed stock for $40 sales. The $10.40 allowance pays each backer's mailer. This stands unless you flip it.",
-   "why": "Your words: “We’re doing rolling shipping through KDP in batches in alignment with the plan for /ally/mom”. The budget's lines: bars-engine src/lib/family-support/financial-snapshot.ts lines 44–51. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
+   "why": "Your words: \u201cWe\u2019re doing rolling shipping through KDP in batches in alignment with the plan for /ally/mom\u201d. The budget's lines: bars-engine src/lib/family-support/financial-snapshot.ts lines 44\u201351. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
   },
   {
    "id": "ship-gumroad-first",
@@ -2808,7 +2808,7 @@
    "pass": "book shipping",
    "auto": true,
    "pos": "Before batch one, every backer gets one message: what is happening, their place in the queue, the cadence, and a way to reply that confirms their address or takes the ebook only. Each batch is then announced on the day it is ordered. The council drafts the message and you approve it before it goes out in your name. This stands unless you flip it.",
-   "why": "The August update promised “I'll tell you the day the press run is ordered, on the day it's ordered.” Under batches that promise holds per batch. The Shaman: a pace nobody names reads as being forgotten. Taking the ebook only is offered as a free choice, never asked for. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
+   "why": "The August update promised \u201cI'll tell you the day the press run is ordered, on the day it's ordered.\u201d Under batches that promise holds per batch. The Shaman: a pace nobody names reads as being forgotten. Taking the ebook only is offered as a free choice, never asked for. Source: council/passes/6FACE_PASS12_2026-10-06.md (six-faces-council)"
   },
   {
    "id": "ship-address-per-batch",
@@ -3079,8 +3079,8 @@
    ],
    "pass": "sprout demo 6",
    "auto": true,
-   "pos": "Acknowledge drops the naming choice. It is the battle's main attack, as a Pokémon move is: the player picks it, it lands, and the game shows the daemon's name and type when the hit lands, so the name comes from the game and never from a quiz. Its strength follows the type chart: the more Welcome has shown and the better the player's stance answers the charge's feeling, the harder it hits. Replay comes from the matchups, from which daemon carries which belief, and from filling the record. This replaces wave-naming. This stands unless you flip it.",
-   "why": "Your overrule of wave-naming: 'I don't know how we'd come up with the daemon names or how this would connect in replay ability... strays too far from what makes pokemon work.' In Pokémon the game names the foe and the player's skill is in the matchup."
+   "pos": "Acknowledge drops the naming choice. It is the battle's main attack, as a Pok\u00e9mon move is: the player picks it, it lands, and the game shows the daemon's name and type when the hit lands, so the name comes from the game and never from a quiz. Its strength follows the type chart: the more Welcome has shown and the better the player's stance answers the charge's feeling, the harder it hits. Replay comes from the matchups, from which daemon carries which belief, and from filling the record. This replaces wave-naming. This stands unless you flip it.",
+   "why": "Your overrule of wave-naming: 'I don't know how we'd come up with the daemon names or how this would connect in replay ability... strays too far from what makes pokemon work.' In Pok\u00e9mon the game names the foe and the player's skill is in the matchup."
   },
   {
    "id": "wave-offered-feeling",
@@ -3113,7 +3113,7 @@
    "pass": "podcast",
    "auto": true,
    "pos": "The council drafts three podcast covers in Mastering Allyship's look, taken from its live site's colors, type and layout in the bars-engine repo, and brings them back as a question for you to pick one. Each is a 3000 by 3000 pixel square that stays readable as a small thumbnail.",
-   "why": "Your steer on pod-art-drafts: \"I think it should be more like Mastering Allyship. That’s the most robust one and flirtcraft really hasn’t gotten a design pass yet\". Source: council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
+   "why": "Your steer on pod-art-drafts: \"I think it should be more like Mastering Allyship. That\u2019s the most robust one and flirtcraft really hasn\u2019t gotten a design pass yet\". Source: council/ledger/2026-10-06-board-read-1946.json (six-faces-council)"
   },
   {
    "id": "pod-ep1-from-audio",
@@ -3280,7 +3280,7 @@
    "pass": "ontology game 2",
    "auto": true,
    "pos": "Neutrality's job is the one your book gives it: detachment and perspective, the view that lets you see the whole. Its two questions are 'What are you stepping back from?' and 'From there, what can you see of the whole?'. The questions are the council's wording. This stands unless you flip it.",
-   "why": "You asked for help with Neutrality's job, and your book already answers it: 'Neutrality's job is detachment and perspective—the view that lets you see the whole' (Mastering the Game of Allyship, compiled 29 May 2026). Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md, addendum"
+   "why": "You asked for help with Neutrality's job, and your book already answers it: 'Neutrality's job is detachment and perspective\u2014the view that lets you see the whole' (Mastering the Game of Allyship, compiled 29 May 2026). Source: bars-engine content/ontology-game/6FACE_PASS2_2026-10-06.md, addendum"
   },
   {
    "id": "oag-body-figure",
@@ -3334,7 +3334,7 @@
    ],
    "pass": "sprout demo 9",
    "auto": true,
-   "pos": "Acknowledge is not a separate button. The player fights with Root's eight trigram moves, and using a move is acknowledging the spirit. Each turn the spirit strikes with a trigram from its stance, and the player answers with a stance and a trigram, as in Root. The right answer is the gate that follows the strike in Root's cycles (Péng, Lǚ, Jǐ, Àn, and Cǎi, Zhǒu, Liè, Kào): it leads the push into emptiness, takes HP from the charge, and gives the player the next move. Any other answer lets the push land. The player's stance against the spirit's stance is the type chart, by the restraining cycle Root already uses. The daemon's name and type show when the first right answer lands. Each daemon strikes with habits drawn from its aim, as Root's nations do, so learning a daemon's habits is the replay; the habit table is a placeholder. This replaces wave-acknowledge-turn. This stands unless you flip it.",
+   "pos": "Acknowledge is not a separate button. The player fights with Root's eight trigram moves, and using a move is acknowledging the spirit. Each turn the spirit strikes with a trigram from its stance, and the player answers with a stance and a trigram, as in Root. The right answer is the gate that follows the strike in Root's cycles (P\u00e9ng, L\u01da, J\u01d0, \u00c0n, and C\u01cei, Zh\u01d2u, Li\u00e8, K\u00e0o): it leads the push into emptiness, takes HP from the charge, and gives the player the next move. Any other answer lets the push land. The player's stance against the spirit's stance is the type chart, by the restraining cycle Root already uses. The daemon's name and type show when the first right answer lands. Each daemon strikes with habits drawn from its aim, as Root's nations do, so learning a daemon's habits is the replay; the habit table is a placeholder. This replaces wave-acknowledge-turn. This stands unless you flip it.",
    "why": "Your overrule of wave-acknowledge-turn: 'I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I'm looking for. Specifically. Using a move IS acknowledging the spirit welcoming is like listening.' Root's rules: sprout root-fight/index.html, 'How it works'. Research: /mnt/project-files/demo/wave-acknowledge-research.md, round 9"
   },
   {
@@ -3345,8 +3345,8 @@
    ],
    "pass": "sprout demo 9",
    "auto": true,
-   "pos": "Welcome is listening, as Root's lessons teach it: 聽 (ting) is knowing a move has begun, and 懂 (dong) is knowing which gate is coming. A player who Welcomes spends the turn not answering, and the spirit's strike plays slowly and holds before it lands, as on Root's easy tier. As wave-damage has it, that turn's push lands in full. The first Welcome shows the spirit's stance, which is its feeling and element. The second shows which gate is coming, so the next answer can be right. A player who answers without Welcoming reads the strike from the body alone, as on Root's hard tier. The feeling and urge the player offers (wave-spirit-from-charge) still make the spirit. This stands unless you flip it.",
-   "why": "Your words: 'welcoming is like listening.' Root's Listen and Name the gate lessons teach 聽 and 懂 (root-fight/index.html, lessons 'listen' and 'identify'), and its easy tier holds each strike before it lands."
+   "pos": "Welcome is listening, as Root's lessons teach it: \u807d (ting) is knowing a move has begun, and \u61c2 (dong) is knowing which gate is coming. A player who Welcomes spends the turn not answering, and the spirit's strike plays slowly and holds before it lands, as on Root's easy tier. As wave-damage has it, that turn's push lands in full. The first Welcome shows the spirit's stance, which is its feeling and element. The second shows which gate is coming, so the next answer can be right. A player who answers without Welcoming reads the strike from the body alone, as on Root's hard tier. The feeling and urge the player offers (wave-spirit-from-charge) still make the spirit. This stands unless you flip it.",
+   "why": "Your words: 'welcoming is like listening.' Root's Listen and Name the gate lessons teach \u807d and \u61c2 (root-fight/index.html, lessons 'listen' and 'identify'), and its easy tier holds each strike before it lands."
   },
   {
    "id": "wave-seize-validate",
@@ -3356,7 +3356,7 @@
    ],
    "pass": "sprout demo 9",
    "auto": true,
-   "pos": "Validate and Exhale take Root's seize (拿 na). After a right answer the player can keep holding it. Holding is Validate: the player stays with the spirit while its charge drains, and the hold writes its Witness Book page (wave-record). Letting go in the bright window is Exhale. A plain release grounds the charge (wave-release-grounds). Holding from the stance the spirit's feeling feeds is Root's borrowing (借 jie), and an Exhale from there integrates the daemon. Hold too long and the spirit slips free and strikes. This stands unless you flip it.",
+   "pos": "Validate and Exhale take Root's seize (\u62ff na). After a right answer the player can keep holding it. Holding is Validate: the player stays with the spirit while its charge drains, and the hold writes its Witness Book page (wave-record). Letting go in the bright window is Exhale. A plain release grounds the charge (wave-release-grounds). Holding from the stance the spirit's feeling feeds is Root's borrowing (\u501f jie), and an Exhale from there integrates the daemon. Hold too long and the spirit slips free and strikes. This stands unless you flip it.",
    "why": "Root's seize: 'keep holding the answer as it lands and you hold the stumbling attacker while their composure drains. Release while the bar is bright to issue... Seize from the stance their channel feeds and you borrow their force' (root-fight/index.html). With moves as Acknowledge and listening as Welcome, seize is the council's reading of the two remaining steps."
   },
   {
@@ -3442,7 +3442,7 @@
    "pass": "flirtcraft loop 1",
    "auto": true,
    "pos": "The stance screen and the 'Where you are' screen become one, so the run is six steps. Naming where you are still comes before the draw. This stands unless you flip it.",
-   "why": "The same sentence shows on two screens in a row, and the code records collapsing them as open. GRAMMAR.md §7a's reason for the screen is kept. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
+   "why": "The same sentence shows on two screens in a row, and the code records collapsing them as open. GRAMMAR.md \u00a77a's reason for the screen is kept. Source: flirtcraft 6FACE_PASS3_2026-10-06.md (branch claude/project-thread-fljybw)"
   },
   {
    "id": "orient-bridge",
@@ -3495,7 +3495,7 @@
    "pass": "flirtcraft book outline",
    "auto": true,
    "pos": "Part II gives each of the eight crafts a chapter, in the order of the five steps of service (Approach, Probe, Present, Listen, End), and every chapter has the same parts: what the craft does, the myth and what it sounds like, the notice move, the do move, the brake, the version for a night alone, and one scene. This stands unless you flip it.",
-   "why": "Your ruling of 2026-09-11 that flirting is service gave the crafts an order (GRAMMAR.md §11). Source: flirtcraft book/OUTLINE.md"
+   "why": "Your ruling of 2026-09-11 that flirting is service gave the crafts an order (GRAMMAR.md \u00a711). Source: flirtcraft book/OUTLINE.md"
   },
   {
    "id": "book-binds-after-crafts",
@@ -3506,7 +3506,7 @@
    "pass": "flirtcraft book outline",
    "auto": true,
    "pos": "Binds come after all eight crafts, in their own part, since a bind pairs two crafts the reader already knows. This stands unless you flip it.",
-   "why": "GRAMMAR.md §0a and §12v: a card names the relationship between two myths, and a bind turns a character judgement into two rules. Source: flirtcraft book/OUTLINE.md"
+   "why": "GRAMMAR.md \u00a70a and \u00a712v: a card names the relationship between two myths, and a bind turns a character judgement into two rules. Source: flirtcraft book/OUTLINE.md"
   },
   {
    "id": "book-part-zero-stories",
@@ -3516,7 +3516,7 @@
    "pass": "flirtcraft book outline",
    "auto": true,
    "pos": "Part 0 answers why a book about allyship leads to a flirting game, from your own stories, gathered by interview one story per thread as Friendcraft's Part 0 is. This stands unless you flip it.",
-   "why": "Both cold readers asked that question (flirtcraft FOUNDER_SIX_FACES.md §7), and your answer on fcm-p8b-interview set the interview method for Friendcraft. Source: flirtcraft book/OUTLINE.md"
+   "why": "Both cold readers asked that question (flirtcraft FOUNDER_SIX_FACES.md \u00a77), and your answer on fcm-p8b-interview set the interview method for Friendcraft. Source: flirtcraft book/OUTLINE.md"
   },
   {
    "id": "book-plain-first",
@@ -3527,7 +3527,7 @@
    "pass": "flirtcraft book outline",
    "auto": true,
    "pos": "In the book every term enters with one plain sentence, and the trigram names, elements and Chinese terms follow as subtitles, matching what you settle for the app on orient-terms. This stands unless you flip it.",
-   "why": "The loop audit found about twenty unexplained terms on a first paid run, and GRAMMAR.md §12x keeps theory words out of the copy. Source: flirtcraft book/OUTLINE.md"
+   "why": "The loop audit found about twenty unexplained terms on a first paid run, and GRAMMAR.md \u00a712x keeps theory words out of the copy. Source: flirtcraft book/OUTLINE.md"
   },
   {
    "id": "wave-taught-fight",
@@ -3547,7 +3547,7 @@
     "architect",
     "challenger"
    ],
-   "pos": "The battle opens with Welcome, the five stances and the four straight gates (Péng, Lǚ, Jǐ, Àn). The dojo teaches two of them, then all four, before the strip, and early spirits strike only with gates the player holds. The full game keeps all eight; this is the teaching order, not a cap. This stands unless you flip it.",
+   "pos": "The battle opens with Welcome, the five stances and the four straight gates (P\u00e9ng, L\u01da, J\u01d0, \u00c0n). The dojo teaches two of them, then all four, before the strip, and early spirits strike only with gates the player holds. The full game keeps all eight; this is the teaching order, not a cap. This stands unless you flip it.",
    "why": "Your words: 'all 8 from the start seems like too much it would need to be a progression from Basic moves to advanced moves'. Root's own lessons teach the straight four before the corner four, and taijiquan teaches push hands the same way. The build reruns the bot test with the straight four only. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
    "auto": true,
    "pass": "sprout demo 11"
@@ -3558,7 +3558,7 @@
     "architect",
     "shaman"
    ],
-   "pos": "The four corner gates (Cǎi, Zhǒu, Liè, Kào) are learned from spirits. Once the straight four are learned, a spirit may strike with one corner gate the player has not learned. Welcoming it shows that gate's weather, and Validating it writes the answering gate into the Witness Book and unlocks it. In the full game each village then deepens its own style. This stands unless you flip it.",
+   "pos": "The four corner gates (C\u01cei, Zh\u01d2u, Li\u00e8, K\u00e0o) are learned from spirits. Once the straight four are learned, a spirit may strike with one corner gate the player has not learned. Welcoming it shows that gate's weather, and Validating it writes the answering gate into the Witness Book and unlocks it. In the full game each village then deepens its own style. This stands unless you flip it.",
    "why": "The demo ends at milestone 5, before the grid's chambers have move names, so an unlock from the spirits stays inside the demo's own loop. It uses the Witness Book that round 5 built. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
    "auto": true,
    "pass": "sprout demo 11"
@@ -3580,7 +3580,7 @@
    "faces": [
     "diplomat"
    ],
-   "pos": "Each answer button shows its trigram's image and a plain verb first, such as '☰ Heaven, rise', with the gate's name second. The spirit's strike shows as its weather, so reading a strike is reading weather, not reading a name. This stands unless you flip it.",
+   "pos": "Each answer button shows its trigram's image and a plain verb first, such as '\u2630 Heaven, rise', with the gate's name second. The spirit's strike shows as its weather, so reading a strike is reading weather, not reading a name. This stands unless you flip it.",
    "why": "Your words: 'It's too abstract to make sense as it is now.' The battle shows bare Root gate names today. Source: /mnt/project-files/demo/wave-teaching-pass.md (fr-demo round 11)",
    "auto": true,
    "pass": "sprout demo 11"
@@ -3591,7 +3591,7 @@
     "diplomat",
     "shaman"
    ],
-   "pos": "The eight moves get plain English names, each a force of nature and a verb: Sky Lift (Péng ☰), Earth Yield (Lǚ ☷), River Fill (Jǐ ☵), Flame Follow (Àn ☲), Wind Draw (Cǎi ☴), Lake Gather (Zhǒu ☱), Thunder Split (Liè ☳) and Mountain Stand (Kào ☶). The battle screen shows only the English name and the trigram's glyph. The Chinese gate name appears once, when the teacher first teaches a move, and stays on its Witness Book page for players who want it. Each name says what the move does to the spirit's push: lift it so it cannot land, yield so it passes, fill the gap it leaves, follow it as it turns, draw it down, gather it close, split it in two, stand still so it meets weight. This replaces wave-buttons-image-first and stands unless you flip it.",
+   "pos": "The eight moves get plain English names, each a force of nature and a verb: Sky Lift (P\u00e9ng \u2630), Earth Yield (L\u01da \u2637), River Fill (J\u01d0 \u2635), Flame Follow (\u00c0n \u2632), Wind Draw (C\u01cei \u2634), Lake Gather (Zh\u01d2u \u2631), Thunder Split (Li\u00e8 \u2633) and Mountain Stand (K\u00e0o \u2636). The battle screen shows only the English name and the trigram's glyph. The Chinese gate name appears once, when the teacher first teaches a move, and stays on its Witness Book page for players who want it. Each name says what the move does to the spirit's push: lift it so it cannot land, yield so it passes, fill the gap it leaves, follow it as it turns, draw it down, gather it close, split it in two, stand still so it meets weight. This replaces wave-buttons-image-first and stands unless you flip it.",
    "why": "Your words: 'we still need to do translate work so that the moves mean something to America players who aren't studying Chinese'. The verbs come from the round 11 trigram table; the names pair each trigram's image with what the gate does. Source: Wendell's chat steer in the WAVE teaching thread, 2026-10-07 00:00 (council/ledger/2026-10-07-demo-round12-chat.json)",
    "auto": true,
    "pass": "sprout demo 12"
@@ -5080,7 +5080,7 @@
    "pass": "app promotion 1",
    "auto": true,
    "pos": "Nothing points people at the Flirtcraft app until sign-in works: steps 5 to 9 of Your steps list 'Give flirtcraft its own database', then one free rep on your phone with a real email, and the link arrives. Podcast posts keep going meanwhile, because they point at the episode.",
-   "why": "The board shows those steps open, and the list says sign-in and the intake's last step fail for every visitor until they are done. A visitor a post brings in reaches the email step and never gets the reading. Source: /mnt/project-files/marketing/app-promotion-plan.md §1"
+   "why": "The board shows those steps open, and the list says sign-in and the intake's last step fail for every visitor until they are done. A visitor a post brings in reaches the email step and never gets the reading. Source: /mnt/project-files/marketing/app-promotion-plan.md \u00a71"
   },
   {
    "id": "promo-founding-season",
@@ -5091,7 +5091,7 @@
    "pass": "app promotion 1",
    "auto": true,
    "pos": "The first push sells nothing. While the paywall is off, posts ask for one free rep; everyone who plays becomes a founding player, keeps playing free, and is asked for one sentence. Those sentences are what later sells the subscription to strangers.",
-   "why": "Production answers with the door open today (lib/door.ts), and founding grants and the sentence ask are already built (app/founding.tsx). The outside analysis found no trust signals of any kind. Source: marketing/app-promotion-plan.md §2"
+   "why": "Production answers with the door open today (lib/door.ts), and founding grants and the sentence ask are already built (app/founding.tsx). The outside analysis found no trust signals of any kind. Source: marketing/app-promotion-plan.md \u00a72"
   },
   {
    "id": "promo-caption-cta",
@@ -5101,7 +5101,7 @@
    "pass": "app promotion 1",
    "auto": true,
    "pos": "Every episode post and clip caption ends with two lines: the episode link, then 'Your first rep is free: flirtcraft.app'. Episode 1's remaining clips take it from the next post, once sign-in works.",
-   "why": "The podcast already reaches people on a set rhythm (pod-promo-rhythm), and /podcast already has a Play the free rep button. This adds no posting days. Source: marketing/app-promotion-plan.md §3"
+   "why": "The podcast already reaches people on a set rhythm (pod-promo-rhythm), and /podcast already has a Play the free rep button. This adds no posting days. Source: marketing/app-promotion-plan.md \u00a73"
   },
   {
    "id": "promo-x-first",
@@ -5112,7 +5112,7 @@
    "pass": "app promotion 1",
    "auto": true,
    "pos": "X is the first new place, aimed at the readers QC already has: people who think out loud about dating and permission. The handle is as close to 'flirtcraft' as is free, the episode 1 post is pinned, and one short thread a week comes from the episode's book harvest.",
-   "why": "QC is a writer from Twitter (episode-1.md), and the harvest holds twenty ideas ready to post. Source: marketing/app-promotion-plan.md §3"
+   "why": "QC is a writer from Twitter (episode-1.md), and the harvest holds twenty ideas ready to post. Source: marketing/app-promotion-plan.md \u00a73"
   },
   {
    "id": "promo-reddit-listen",
@@ -5123,7 +5123,7 @@
    "pass": "app promotion 1",
    "auto": true,
    "pos": "Reddit is a personal account in your name. Two weeks of honest comments with no links, then drills written out in full, with a link only where a subreddit's rules allow it and 'I made this' said plainly.",
-   "why": "Most dating and social-skills subreddits remove self-promotion and some ban on one link. Each subreddit's rules are to be read before posting; this plan did not check them. Source: marketing/app-promotion-plan.md §4"
+   "why": "Most dating and social-skills subreddits remove self-promotion and some ban on one link. Each subreddit's rules are to be read before posting; this plan did not check them. Source: marketing/app-promotion-plan.md \u00a74"
   },
   {
    "id": "promo-facebook-personal",
@@ -5133,7 +5133,7 @@
    "pass": "app promotion 1",
    "auto": true,
    "pos": "The Facebook announcement goes out from your personal profile, the same day as Instagram and X, once sign-in works. The people who already know you are the first founding players. A Flirtcraft page can wait. The draft is in the plan.",
-   "why": "Your message named a Facebook announcement. A new page starts with nobody; your profile does not. Source: marketing/app-promotion-plan.md §5"
+   "why": "Your message named a Facebook announcement. A new page starts with nobody; your profile does not. Source: marketing/app-promotion-plan.md \u00a75"
   },
   {
    "id": "promo-monday-numbers",
@@ -5144,7 +5144,7 @@
    "pass": "app promotion 1",
    "auto": true,
    "pos": "Every Monday five numbers from HeyCatch go into marketing/numbers.md: visits by source, free reps started, free reps finished, sign-ins, and sentences received. After three episodes the place that brings nobody is dropped and the one that brings players is doubled.",
-   "why": "HeyCatch already records visits and sign-ups (lib/analytics.ts), and pod-promo-rhythm sets the same three-episode review for clips. Source: marketing/app-promotion-plan.md §3"
+   "why": "HeyCatch already records visits and sign-ups (lib/analytics.ts), and pod-promo-rhythm sets the same three-episode review for clips. Source: marketing/app-promotion-plan.md \u00a73"
   },
   {
    "id": "pod-social-launch",
@@ -6110,7 +6110,7 @@
    "pass": "3D build, 3-2-1",
    "auto": true,
    "pos": "However the 3-2-1 looks in the cave, you write every line of it, the daemon's answers included. The daemon's figure may move, but it never speaks words the cave wrote.",
-   "why": "The chat being ported keeps one thread you write ('Answer as the block…' in Clean321Flow), bars-engine's rules keep a non-AI version first, and the Skeptic daemon found a scripted answer is the weaker arm. Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
+   "why": "The chat being ported keeps one thread you write ('Answer as the block\u2026' in Clean321Flow), bars-engine's rules keep a non-AI version first, and the Skeptic daemon found a scripted answer is the weaker arm. Source: council/passes/6FACE_PASS_3d-build-321_2026-10-10.md"
   },
   {
    "id": "cave-321-pronoun-places",
@@ -6163,7 +6163,7 @@
    "pass": "Pruner's track pass 2",
    "auto": true,
    "pos": "A wrong answer in a talk does two things. It seeds the daemon whose line the player picked (and a spirit where the place has one) into the road's random encounters while the talk is going wrong. And it leaves the player a charge that is carried from beat to beat until they deal with it in a fight. Getting the talk right stops the seeding; it does not banish the daemon or clear the charge. Fights are offered, never forced. This refines p2n-stakes C. This stands unless you flip it.",
-   "why": "Your words in chat, 2026-10-10: ““Wrong answers” trigger available spirit and daemon fights in the world for the duration of the player getting it right in the relational encounter”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml, the road block (sprout pull request #38) Corrected 2026-10-11 from your note on the tap-through: “The daemon is still out in the game. Getting it wrong seeds the random encounter but the charge from getting it wrong still had to be dealt with.”"
+   "why": "Your words in chat, 2026-10-10: \u201c\u201cWrong answers\u201d trigger available spirit and daemon fights in the world for the duration of the player getting it right in the relational encounter\u201d. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml, the road block (sprout pull request #38) Corrected 2026-10-11 from your note on the tap-through: \u201cThe daemon is still out in the game. Getting it wrong seeds the random encounter but the charge from getting it wrong still had to be dealt with.\u201d"
   },
   {
    "id": "rp-stage-first",
@@ -6422,7 +6422,7 @@
    "pass": "Pruner's track pass 2",
    "auto": true,
    "pos": "A partial line (It holds) no longer ends the moment. It is struck like a wrong line, so the player narrows the choices and then picks the right path. A wrong line always spawns its daemon on the road. A partial rolls a die and spawns on 1 to 3: its daemon, or a spirit of the person's element need where it has none. The die grows with the Signature rank, one die per rank: d4, d6, d8, d10, d12, d20, d100. Ranks 1 to 5 open in Part II and 6 and 7 later, so a skilled player spawns less (75% at d4, 25% at d12, 3% at d100). The die sizes and the 1-to-3 face are council choices. This stands unless you flip it.",
-   "why": "Your words in chat, 2026-10-11: “For the it holds options the reward should be process of elimination then they should be able to choose the correct paths. It holds should roll a die to see if a daemon or spirit spawns wrong answers spawn a daemon or spirit”. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml (sprout pull request #38) The growing die is from your next note: “The odds should connect to a die that increased through play. The more skilled you get the less likely a daemon is spawned when you make a mistake”. Then: “Let’s go all the way to d20 and d100”."
+   "why": "Your words in chat, 2026-10-11: \u201cFor the it holds options the reward should be process of elimination then they should be able to choose the correct paths. It holds should roll a die to see if a daemon or spirit spawns wrong answers spawn a daemon or spirit\u201d. Built in the Pruner's track tap-through. Source: sprout campaigns/skilled-helper/part-two/encounters.yaml (sprout pull request #38) The growing die is from your next note: \u201cThe odds should connect to a die that increased through play. The more skilled you get the less likely a daemon is spawned when you make a mistake\u201d. Then: \u201cLet\u2019s go all the way to d20 and d100\u201d."
   },
   {
    "id": "bmw-offer",
@@ -7018,7 +7018,7 @@
    "pass": "blocked-move 1",
    "auto": true,
    "pos": "With more than one daemon picked, one is worked at a time and the others wait at the door. The depth cap counts blocks inside blocks, and at the cap the game names it once, offers outside support and pauses. This stands unless you flip it.",
-   "why": "the wave room already holds up to three creatures with a fourth waiting at the door, and your overrule of oag-wave-depth: \"cap the depth so players don’t get lost in the minutiae\". The cap number is the council's three and the notice wording is yours."
+   "why": "the wave room already holds up to three creatures with a fourth waiting at the door, and your overrule of oag-wave-depth: \"cap the depth so players don\u2019t get lost in the minutiae\". The cap number is the council's three and the notice wording is yours."
   },
   {
    "id": "sb-no-pass-at-daemon",
@@ -7730,7 +7730,7 @@
    "pass": "spirit fight build 2",
    "auto": true,
    "pos": "An ally spirit fights with moves of its own element. It knows one move from level 1, learns a stronger move at level 3 that it can use once a fight, and learns a third at level 5. It gains a level each time it wins a fight while still standing. While it stands in front, the pushes hit it; once it is spent, you fight on your own power with Master Yun's moves. Move names and numbers are placeholders. This stands unless you flip it.",
-   "why": "Your answer to sf-who-fights (\"Your ally spirits unless you don't have any and then you have to fight on your own power\") and design.md's Decided ally rules: spirits level by fighting and sparring, never by working, and the player takes the hits the spirits cannot weather. Pokémon teaches moves by level the same way. Built in sprout #50."
+   "why": "Your answer to sf-who-fights (\"Your ally spirits unless you don't have any and then you have to fight on your own power\") and design.md's Decided ally rules: spirits level by fighting and sparring, never by working, and the player takes the hits the spirits cannot weather. Pok\u00e9mon teaches moves by level the same way. Built in sprout #50."
   },
   {
    "id": "sf-ally-pick",
@@ -7763,7 +7763,7 @@
    "pass": "spirit fight build 3",
    "auto": true,
    "pos": "The spirit generator in the style of Monster Rancher, and the places where spirits train and grow stronger by getting better at the game's whole loop, are a new strand. They get their own intake pass in a fresh thread, separate from this fight. That pass starts from design.md's spirit and ally rules and from ds-tiers, and puts one fork to you there: today a Decided rule says spirits do not grow by working, only by sparring and fighting. This fight keeps placeholder allies until the generator exists. This stands unless you flip it.",
-   "why": "Your chat, 13 October: \"We will need to develop a spirit generator à la monster rancher and contexts for spirits to train and grow stronger by getting better at the overall game loop\". The short-sessions rule gives each piece of work its own thread."
+   "why": "Your chat, 13 October: \"We will need to develop a spirit generator \u00e0 la monster rancher and contexts for spirits to train and grow stronger by getting better at the overall game loop\". The short-sessions rule gives each piece of work its own thread."
   },
   {
    "id": "sg-charge-disc",
@@ -7774,7 +7774,7 @@
    "pass": "spirit generator 1",
    "auto": true,
    "pos": "Your charge is the disc. In Monster Rancher you put a CD in the shrine and it becomes a monster; here a spirit is born when a daemon you met through the whole W.A.V.E. joins you, and it is made from that charge. The feeling sets its element, where you met it sets its species among the 25, the strength (a little, a lot, too much) sets its starting stats, and the urge sets its two leading stats. The same charge always makes the same spirit. Each stat shows a grade from E to S on its status screen, never in the fight. Story mode draws from a table. This stands unless you flip it.",
-   "why": "Your chat, 13 October: \"We will need to develop a spirit generator à la monster rancher\". The record already makes the daemon from your charge (wave-spirit-from-charge), turns a met daemon into a companion (wave-integrate-ladder), sets 25 species (demo-spirit-count) and five stats (spirit-five-stats), and design.md cites Monster Rancher 2's E to S grades. Source: council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md"
+   "why": "Your chat, 13 October: \"We will need to develop a spirit generator \u00e0 la monster rancher\". The record already makes the daemon from your charge (wave-spirit-from-charge), turns a met daemon into a companion (wave-integrate-ladder), sets 25 species (demo-spirit-count) and five stats (spirit-five-stats), and design.md cites Monster Rancher 2's E to S grades. Source: council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md"
   },
   {
    "id": "sg-loop-trains",
@@ -7884,7 +7884,7 @@
    "pass": "spirit look research",
    "auto": true,
    "pos": "Your steer, built as the new growth (it replaces sg-grows-into-shape). A spirit has three stages. Level 1, gas: a drifting cloud of motes in its element's colours, thickest at the heart, with no shape; the way it drifts hints at the urge. Level 3, core: the gas solidifies into a faceted core, a gem cut for its family (the Shellback's is a six-sided double pyramid, a shell scute made solid), with a few motes still circling it. Level 5, hologram: the core projects a body of light into the world from a projector ring, the way the gems in Steven Universe project their forms. The body is faceted, see-through and scanlined, in its family's shape and the animal base you picked, with the core showing at its chest; the nation's style and the pieces you choose are projected onto it. An ally beaten in a fight falls back into its core and projects again after rest, so a spirit is never lost. Levels are placeholders. First proof: the Shellback in all three stages and five elements, as models and sprites (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85). This stands unless you flip it.",
-   "why": "Your steer on sg-grows-into-shape, board read 2026-10-14 01:43: \"I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe\". sg-body-from A (the urge picks the family). spirit-growth-by-training (no death)."
+   "why": "Your steer on sg-grows-into-shape, board read 2026-10-14 01:43: \"I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas\u2019s that solidifying into a core which then makes for a holographic ally that\u2019s being projected into the world. Kind of like Steven Universe\". sg-body-from A (the urge picks the family). spirit-growth-by-training (no death)."
   },
   {
    "id": "sg-loot-offering",
@@ -7906,7 +7906,7 @@
    "pass": "spirit look research",
    "auto": true,
    "pos": "Your steer on sg-holo-stages, built (this extends it): a spirit has five stages. Level 1, gas: a drifting cloud of motes in its element's colours, thickest at the heart, with no shape; the way it drifts hints at the urge. Level 3, core: the gas solidifies into a faceted core, a gem cut for its family (the Shellback's is a six-sided double pyramid, a shell scute made solid), with a few motes still circling it. Level 5, hologram: the core projects a body of light into the world from a projector ring, the way the gems in Steven Universe project their forms; it is faceted, see-through and scanlined, with the core showing at its chest. Then the living creature: the hologram becomes flesh, an animal in the world in its family's shape and the animal base you picked, its core set into its body. Last, the highest ally form: the creature stands up as a humanoid of its kind (the Shellback becomes an upright guardian, shell on its back, core at its heart). The nation's style and the pieces you choose carry through every stage from the hologram on. An ally beaten in a fight falls back into its core and forms again after rest, so a spirit is never lost. Levels for the last two stages are not set; until a build needs them, the living creature comes at level 7 and the highest form at level 10 (placeholders). Proof: the Shellback in all five stages and five elements, as models and sprites (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85). This stands unless you flip it.",
-   "why": "Your steer on sg-grows-into-shape, board read 2026-10-14 01:43: \"I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe\". sg-body-from A (the urge picks the family). spirit-growth-by-training (no death). Your steer on sg-holo-stages, board read 2026-10-14 02:13: \"Perfect I do think there should be one more stage where it looks like a living creature in the world and the final stage is where it becomes a humanoid exponential of the creature in its highest ally form.\""
+   "why": "Your steer on sg-grows-into-shape, board read 2026-10-14 01:43: \"I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas\u2019s that solidifying into a core which then makes for a holographic ally that\u2019s being projected into the world. Kind of like Steven Universe\". sg-body-from A (the urge picks the family). spirit-growth-by-training (no death). Your steer on sg-holo-stages, board read 2026-10-14 02:13: \"Perfect I do think there should be one more stage where it looks like a living creature in the world and the final stage is where it becomes a humanoid exponential of the creature in its highest ally form.\""
   },
   {
    "id": "ttv-board-home",
@@ -8553,7 +8553,7 @@
    "pass": "emotional alchemy library",
    "auto": true,
    "pos": "Every class uses the same eleven numbers, arranged its own way: gate thresholds 0, 0, 1, 1, 2, 2, 3, 4 and operation prices 0, 2, 3. So every class has one signature operation, two free grips and one dearest cell, and the engine rejects a profile off the spread. Type 5's published numbers are withdrawn and re-laid. This stands unless you flip it.",
-   "why": "Nine classes now cost the same in total, so no class is a harder life than another; what differs is where it is hard. Source: 04 Quests/Emotional Alchemy Game/spec/EA-11_CLASS_PROFILE_METHOD_SIX_FACES.md §7, ruled by the faces 2026-09-15, pending you since."
+   "why": "Nine classes now cost the same in total, so no class is a harder life than another; what differs is where it is hard. Source: 04 Quests/Emotional Alchemy Game/spec/EA-11_CLASS_PROFILE_METHOD_SIX_FACES.md \u00a77, ruled by the faces 2026-09-15, pending you since."
   },
   {
    "id": "ea12-eight-moves",
@@ -8564,7 +8564,7 @@
    "pass": "emotional alchemy library",
    "auto": true,
    "pos": "Each class carries eight named moves, one at each gate. It starts with two and unlocks six by running basic encounters until each gate's threshold is met. An authored move changes a trigger, adds an effect the grid has no verb for, or edits the preconditions of your own moves. It never re-prices a cell, restates a derived cell or fires without a trigger in the fiction. 72 authored moves sit beside the 200 derived cards. This stands unless you flip it.",
-   "why": "Your words of 2026-09-15 called two free moves too thin to be a class, and this is the shape you asked for. Source: 04 Quests/Emotional Alchemy Game/spec/EA-12_CLASS_MOVES_SIX_FACES.md §7, ruled by the faces 2026-09-15, pending you since."
+   "why": "Your words of 2026-09-15 called two free moves too thin to be a class, and this is the shape you asked for. Source: 04 Quests/Emotional Alchemy Game/spec/EA-12_CLASS_MOVES_SIX_FACES.md \u00a77, ruled by the faces 2026-09-15, pending you since."
   },
   {
    "id": "ea13a-two-eights",
@@ -8575,7 +8575,7 @@
    "pass": "emotional alchemy library",
    "auto": true,
    "pos": "The game's eight taiji gates and the book's eight daemon Gates are unrelated, and the class text says so in one sentence. A class move is written for its gate and never names which daemon it meets. Where the book's Fear lives in the game is left for the channel pass. This stands unless you flip it.",
-   "why": "In the game, the book's eight Gates are five retainers, a load meter, the Player, and Fear, which has no home yet. A one-to-one map would fix in place what the game derives per player. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13a_THE_TWO_EIGHTS_SIX_FACES.md §5, ruled by the faces 2026-09-15, pending you since."
+   "why": "In the game, the book's eight Gates are five retainers, a load meter, the Player, and Fear, which has no home yet. A one-to-one map would fix in place what the game derives per player. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13a_THE_TWO_EIGHTS_SIX_FACES.md \u00a75, ruled by the faces 2026-09-15, pending you since."
   },
   {
    "id": "ea13b-ke-release",
@@ -8586,7 +8586,7 @@
    "pass": "emotional alchemy library",
    "auto": true,
    "pos": "A class move acts on a ke edge only by releasing grip, naming the direction first, and on a sheng edge by transition. 'Move across the ke cycle' is retired from the product's language, and 'hold the tension' is barred as move text. This stands unless you flip it.",
-   "why": "Your 'across' is granted in the one form MECHANISM allows: the player does get to the other side, by letting go. MECHANISM stands unamended. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13b_THE_KE_EDGE_SIX_FACES.md §6, ruled by the faces 2026-09-15, pending you since."
+   "why": "Your 'across' is granted in the one form MECHANISM allows: the player does get to the other side, by letting go. MECHANISM stands unamended. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13b_THE_KE_EDGE_SIX_FACES.md \u00a76, ruled by the faces 2026-09-15, pending you since."
   },
   {
    "id": "ea13c-key-not-transcend",
@@ -8597,7 +8597,7 @@
    "pass": "emotional alchemy library",
    "auto": true,
    "pos": "Grow Up stays the transcend move for everyone. A class move is a key: it makes a gate passable for that class, and the player integrates the poles by running the operation the key opened. Before the key, the class runs its counterfeit at that gate, so the six moves a class earns are the six places it has been faking it. This stands unless you flip it.",
-   "why": "It binds EA-09c's counterfeit, EA-12's unlock and the transcend operation into one sequence a player lives. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13c_TRANSCEND_MOVES_SIX_FACES.md §6, ruled by the faces 2026-09-15, pending you since."
+   "why": "It binds EA-09c's counterfeit, EA-12's unlock and the transcend operation into one sequence a player lives. Source: 04 Quests/Emotional Alchemy Game/spec/EA-13c_TRANSCEND_MOVES_SIX_FACES.md \u00a76, ruled by the faces 2026-09-15, pending you since."
   },
   {
    "id": "sg-romp-four-feet",
@@ -8890,7 +8890,7 @@
    ],
    "pass": "ttv-loop 1",
    "auto": true,
-   "pos": "The board's Tap the Vein box runs one phase at a time under a rail (what you can do, free write, keep your lines, seal), with bars-engine's line \"No floor to clear · no streak to keep · stuckness is data, not failure\". The notice on how your words are used sits one click away.",
+   "pos": "The board's Tap the Vein box runs one phase at a time under a rail (what you can do, free write, keep your lines, seal), with bars-engine's line \"No floor to clear \u00b7 no streak to keep \u00b7 stuckness is data, not failure\". The notice on how your words are used sits one click away.",
    "why": "Your 10-16 ask for the board to feel like bars-engine. Built in Six-faces-council #187. Source: council/passes/6FACE_PASS_ttv-loop1_2026-10-16.md"
   },
   {
@@ -9329,7 +9329,7 @@
    "pass": "big-mind trust 1, after your answers",
    "auto": true,
    "pos": "When a voice is willing to step aside, you can keep talking with it: its questions, the full 3-2-1, or simply staying with it. Walking on is your choice, and the voice waits until you make it. This stands unless you flip it.",
-   "why": "Your steer on bmt-two-roads (stands, 22:07): \"I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+   "why": "Your steer on bmt-two-roads (stands, 22:07): \"I think if people want to keep talking to it they should be able to. Once it\u2019s willing to step aside isn\u2019t always the end of the interaction\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
   },
   {
    "id": "bmt-goodness-models",
@@ -9341,7 +9341,7 @@
    "pass": "big-mind trust 1, after your answers",
    "auto": true,
    "pos": "Each voice has its own picture of what good looks like. Drafts: for the Protector, good keeps us safe; the Controller, good meets the standard; the Skeptic, good is honest about what is here; the Fixer, good doesn't leave what's broken; the Emotional Body, good feels it all the way; the Victim, good hears the whole story; the Damaged Self, good doesn't let someone else take the hit. You earn its read of you in two ways: act on its picture honestly, or show it where you already share that picture from where you stand (\"You keep us safe by watching. I keep us safe by going slowly.\"). Its read still shows only in its words. The seven pictures are drafts. This stands unless you flip it.",
-   "why": "Your steer on bmt-good-in-words (stands, 22:08): \"They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs\". The pictures are drawn from each daemon's row and your question sets in daemons/questions.js. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+   "why": "Your steer on bmt-good-in-words (stands, 22:08): \"They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that\u2019s authentic or even show the ways in which they are already aligned but from different POVs\". The pictures are drawn from each daemon's row and your question sets in daemons/questions.js. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
   },
   {
    "id": "bmt-trust-falls",
@@ -9364,7 +9364,7 @@
    "pass": "big-mind trust 1, after your answers",
    "auto": true,
    "pos": "Your spirits vouch for you. The spirit born when you met a voice becomes your ally once that voice trusts you, and it is proof you learned what that voice needs. At each later chamber the voice asks who vouches for you, and your allied spirits answer in that voice's terms (\"The Protector's spirit says you kept watch.\"). At the mouth of the centre they vouch together, like the badges shown at Victory Road. How many spirits you carry adds nothing; what vouches is the alliance. This stands unless you flip it.",
-   "why": "Your steer on bmt-show-spirit (overruled, 22:11): \"The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
+   "why": "Your steer on bmt-show-spirit (overruled, 22:11): \"The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you\u2019ve collected to be let into victory road. The spirits you\u2019ve collected are proof that you\u2019ve learned what those parts need from you\". Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md, after your answers of 22:05 to 22:11."
   },
   {
    "id": "rc-is-relationship",
@@ -9802,7 +9802,7 @@
    ],
    "pass": "slice 1",
    "auto": true,
-   "pos": "The slice is biggest when it exercises all four layers once each — one day loop, one rules resolution, one Twine passage, one trust-encounter — not when it adds content volume. This stands unless you flip it.",
+   "pos": "The slice is biggest when it exercises all four layers once each \u2014 one day loop, one rules resolution, one Twine passage, one trust-encounter \u2014 not when it adds content volume. This stands unless you flip it.",
    "why": "The four-layer contract was named in chat on 2026-10-16, and the ontology names the smallest meaningful loop as the counterweight that bounds scope (ontology/v0.1/QUICKSTART.md). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
   },
   {
@@ -9813,7 +9813,7 @@
    ],
    "pass": "slice 1",
    "auto": true,
-   "pos": "The slice's state uses v0.1 first-class objects — EncounterDefinition/Occurrence, MoveInvocation, CompletionContract, independent state axes — and anything the seams need beyond v0.1 goes through term_pass rather than inventing vocabulary. This stands unless you flip it.",
+   "pos": "The slice's state uses v0.1 first-class objects \u2014 EncounterDefinition/Occurrence, MoveInvocation, CompletionContract, independent state axes \u2014 and anything the seams need beyond v0.1 goes through term_pass rather than inventing vocabulary. This stands unless you flip it.",
    "why": "The completion-boundaries council decision of 2026-10-12 made these first-class, and the machine vocabulary is the machine's language (ontology/v0.1/source/design-ontology-v0.1.yaml). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
   },
   {
@@ -9824,7 +9824,7 @@
    "pass": "slice 1",
    "auto": true,
    "pos": "The slice contains one stake only the rules surface can resolve, and its pass condition is that a playtester can say what changed about the story without being told. This stands unless you flip it.",
-   "why": "Your lesson of 2026-10-03 (mh-gate-zero): a test names the open blocker it resolves — here the open blocker is whether the tabletop layer is load-bearing or decoration, which the ontology states as mechanics make claims about reality (QUICKSTART, principle 5). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+   "why": "Your lesson of 2026-10-03 (mh-gate-zero): a test names the open blocker it resolves \u2014 here the open blocker is whether the tabletop layer is load-bearing or decoration, which the ontology states as mechanics make claims about reality (QUICKSTART, principle 5). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
   },
   {
    "id": "slice-reuse",
@@ -9834,7 +9834,7 @@
    ],
    "pass": "slice 1",
    "auto": true,
-   "pos": "The slice is assembled from verified existing assets — the trust reducer, the walkable-sprite slice, the Twine IR compiler, the world-state-provider pattern — and forks nothing. This stands unless you flip it.",
+   "pos": "The slice is assembled from verified existing assets \u2014 the trust reducer, the walkable-sprite slice, the Twine IR compiler, the world-state-provider pattern \u2014 and forks nothing. This stands unless you flip it.",
    "why": "The zo-environment pass of 2026-10-15 verified these assets locally in bars-engine (council/passes/6FACE_PASS_zo-environment1_2026-10-15.md), and your 2026-10-03 lesson (mh-scope-only) runs work beside the gate it serves. Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
   }
  ],
@@ -9846,8 +9846,8 @@
     "regent"
    ],
    "q": "May the Sage rule on a non-reserved question when the five disagree, or does the Sage only synthesise and carry the dissent to you?",
-   "why_you": "The record holds both answers. Pass one’s header says the Sage rules; the Regent in the same pass quoted the earlier ruling that the Sage does not overturn the Regent. Only your preference settles it, and the skill’s Sage step is built differently either way.",
-   "not_before": "Nobody asked because every pass so far ended for you to rule, so the Sage’s authority was never exercised.",
+   "why_you": "The record holds both answers. Pass one\u2019s header says the Sage rules; the Regent in the same pass quoted the earlier ruling that the Sage does not overturn the Regent. Only your preference settles it, and the skill\u2019s Sage step is built differently either way.",
+   "not_before": "Nobody asked because every pass so far ended for you to rule, so the Sage\u2019s authority was never exercised.",
    "options": [
     {
      "v": "synthesise",
@@ -11795,7 +11795,7 @@
    ],
    "pass": "sprout character creation 17",
    "q": "Do the narrower dress and the straight feet read as you asked? Every sheet saves from the download page, https://claude.ai/artifact/8j3eF4VV1XpQUZZyn3BtWf, and the files are in /mnt/project-files/character-creation/.",
-   "why_you": "Your steer: \"Dress needs to come in a lot. Right now the dress opening is shoulder length it should be about 2/3 that. Also she’s duck footed. The feet should be pointed straight down with little space between the feet\". The hem is now two thirds of the shoulder width, arms included, and from the front her boots point straight down, a pixel apart. The side view keeps its walking stride.",
+   "why_you": "Your steer: \"Dress needs to come in a lot. Right now the dress opening is shoulder length it should be about 2/3 that. Also she\u2019s duck footed. The feet should be pointed straight down with little space between the feet\". The hem is now two thirds of the shoulder width, arms included, and from the front her boots point straight down, a pixel apart. The side view keeps its walking stride.",
    "options": [
     {
      "v": "approve",
@@ -11841,7 +11841,7 @@
    ],
    "pass": "sprout character creation 20",
    "q": "Do the three-quarter side view, the hip sway and the smaller bust read as you asked? Every sheet saves from the download page, https://claude.ai/artifact/8j3eF4VV1XpQUZZyn3BtWf.",
-   "why_you": "Your steer: \"in the profile it’s a 3/4 profile in the chest and profile in the legs. so we need to think about how to make the legs not look so small. And have a proper movement with a bit of hip sway\". From the side, each leg is now 6 px wide, the far leg set back in shadow and the feet turned forward. Over the walk the hips, skirt and legs shift a pixel and back. The near breast stands a pixel off the chest, and the far one shows as a shade.",
+   "why_you": "Your steer: \"in the profile it\u2019s a 3/4 profile in the chest and profile in the legs. so we need to think about how to make the legs not look so small. And have a proper movement with a bit of hip sway\". From the side, each leg is now 6 px wide, the far leg set back in shadow and the feet turned forward. Over the walk the hips, skirt and legs shift a pixel and back. The near breast stands a pixel off the chest, and the far one shows as a shade.",
    "options": [
     {
      "v": "approve",
@@ -12564,7 +12564,7 @@
    ],
    "pass": "sprout demo 5",
    "q": "What does integrating a daemon give the player?",
-   "why_you": "Whether daemons are caught and kept, Pokémon style, is your call about what the game is, and the record does not say. The answer decides whether the next build makes a move set, a companion system or stats.",
+   "why_you": "Whether daemons are caught and kept, Pok\u00e9mon style, is your call about what the game is, and the record does not say. The answer decides whether the next build makes a move set, a companion system or stats.",
    "not_before": "Integration first appeared in your round 4 steer: 'Exhale could be release the spirit OR integrate the spirit (express)'.",
    "options": [
     {
@@ -12575,7 +12575,7 @@
     {
      "v": "companion",
      "label": "B. A companion",
-     "c": "The integrated daemon walks with the player and acts once per fight, like a caught Pokémon. Needs companion art, behaviour and a party screen on top of A's work."
+     "c": "The integrated daemon walks with the player and acts once per fight, like a caught Pok\u00e9mon. Needs companion art, behaviour and a party screen on top of A's work."
     },
     {
      "v": "stat",
@@ -13673,7 +13673,7 @@
    ],
    "pass": "app promotion 1",
    "q": "When should the Flirtcraft paywall go on?",
-   "why_you": "Turning on a paywall is money, which is reserved to you, and no ruling sets its timing. Stripe setup in LAUNCH_CHECKLIST.md §3 has to come first either way.",
+   "why_you": "Turning on a paywall is money, which is reserved to you, and no ruling sets its timing. Stripe setup in LAUNCH_CHECKLIST.md \u00a73 has to come first either way.",
    "not_before": "Until today nothing was promoting the app, so the door being open cost nothing.",
    "options": [
     {
@@ -14698,7 +14698,7 @@
     {
      "v": "type-chart",
      "label": "A. Type chart (recommended)",
-     "c": "Every move works. A move made from the element that controls the spirit's feeling lands double (water on fire); one that feeds it lands half. No wrong move, only stronger and weaker, as in Pokémon."
+     "c": "Every move works. A move made from the element that controls the spirit's feeling lands double (water on fire); one that feeds it lands half. No wrong move, only stronger and weaker, as in Pok\u00e9mon."
     },
     {
      "v": "answer-key",
@@ -14722,18 +14722,18 @@
    ],
    "pass": "spirit fight build 1",
    "q": "Whose moves are used in a spirit fight: yours, or your ally spirit's?",
-   "why_you": "Two of your own rulings point different ways. design.md (Decided, allies) says \"In forest fights the ally fights the other spirit\", which is Pokémon. Pass 3 and magic-from-teachers have you fight your own urge with moves people taught you. The answer decides what the next build of Ama Rell's Fixer shows.",
+   "why_you": "Two of your own rulings point different ways. design.md (Decided, allies) says \"In forest fights the ally fights the other spirit\", which is Pok\u00e9mon. Pass 3 and magic-from-teachers have you fight your own urge with moves people taught you. The answer decides what the next build of Ama Rell's Fixer shows.",
    "not_before": "Every spirit fight built so far had you fighting alone, and nobody set it against the Decided ally rule until you asked where the moves come from.",
    "options": [
     {
      "v": "ally",
      "label": "A. Your ally spirit fights (recommended)",
-     "c": "As in Pokémon. You befriend a spirit, it fights the urge with the moves of its element, and it levels by sparring and fighting. Each turn you pick its move. You still finish by listening. This fits your monster-fight steer and the Decided ally rule. Part II's traveler would need an ally first."
+     "c": "As in Pok\u00e9mon. You befriend a spirit, it fights the urge with the moves of its element, and it levels by sparring and fighting. Each turn you pick its move. You still finish by listening. This fits your monster-fight steer and the Decided ally rule. Part II's traveler would need an ally first."
     },
     {
      "v": "you",
      "label": "B. You fight with what people taught you",
-     "c": "Your moves come from Yun, the villages and the spirits, and grow by use, as sf-moves-from-people and sf-moves-grow say. The urge is yours, so you meet it yourself. Avatar more than Pokémon."
+     "c": "Your moves come from Yun, the villages and the spirits, and grow by use, as sf-moves-from-people and sf-moves-grow say. The urge is yours, so you meet it yourself. Avatar more than Pok\u00e9mon."
     },
     {
      "v": "both",
@@ -15793,7 +15793,7 @@
    "usage": "The card names the move; the play is when you send it to Dana.",
    "replaces": null,
    "collisions": [
-    "flirtcraft GRAMMAR.md §6: a deck noun that belongs in a reading, never in an instruction"
+    "flirtcraft GRAMMAR.md \u00a76: a deck noun that belongs in a reading, never in an instruction"
    ],
    "why": "Usage rule settles the collision: a reading word in both repos, never inside a move's instruction.",
    "flag": null,
@@ -15869,7 +15869,7 @@
    "collisions": [],
    "why": "Survives said flatly, and Beck and Cowan hold it up.",
    "flag": "Diplomat would hold it at not yet because it is quotable; the Challenger's flat test passed.",
-   "source": "RESEARCH_lineage-and-prior-art_2026-10-02.md §5"
+   "source": "RESEARCH_lineage-and-prior-art_2026-10-02.md \u00a75"
   },
   {
    "id": "non-deference-by-structure",
@@ -15949,7 +15949,7 @@
    "collisions": [],
    "why": "A category name doing the work of an argument.",
    "flag": null,
-   "source": "CLAUDE.md § Guardrails, over-applied"
+   "source": "CLAUDE.md \u00a7 Guardrails, over-applied"
   },
   {
    "id": "friendcraft-serves-the-friend",
@@ -15965,7 +15965,7 @@
    "collisions": [],
    "why": "Replaced by Wendell's correction one level up.",
    "flag": null,
-   "source": "CLAUDE.md § Back on Muhani"
+   "source": "CLAUDE.md \u00a7 Back on Muhani"
   },
   {
    "id": "generated-invitations-are-corrupting",
@@ -15981,7 +15981,7 @@
    "collisions": [],
    "why": "Plainly false said flatly.",
    "flag": null,
-   "source": "CLAUDE.md § A fourth variant"
+   "source": "CLAUDE.md \u00a7 A fourth variant"
   },
   {
    "id": "sighting",
@@ -19251,7 +19251,7 @@
    "wave-acknowledge-turn": {
     "decision": "overrule",
     "label": "Overruled",
-    "steer": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I’m looking for. Specifically. \n\nUsing a move IS acknowledging the spirit welcoming is like listening. ",
+    "steer": "Ok I think this is where we can use the trigrams as moves. The merging of root and the mechanics of spirit battle has the solution I think I\u2019m looking for. Specifically. \n\nUsing a move IS acknowledging the spirit welcoming is like listening. ",
     "recorded": "2026-10-06",
     "record": "council/ledger/2026-10-06-board-read-2004.json (six-faces-council)",
     "faces": [
@@ -20271,7 +20271,7 @@
     "recorded": "2026-10-07",
     "saved_at": "2026-10-07T21:02:31.218Z",
     "record": "council/ledger/2026-10-07-pull-210618.json (six-faces-council)",
-    "steer": "The beginning wave is an opening up move that allows what’s alive for the user to emerge. After that first wave we can have the player dig deeper into what they want to work on specifically",
+    "steer": "The beginning wave is an opening up move that allows what\u2019s alive for the user to emerge. After that first wave we can have the player dig deeper into what they want to work on specifically",
     "faces": [
      "architect",
      "shaman"
@@ -20654,7 +20654,7 @@
     "recorded": "2026-10-09",
     "saved_at": "2026-10-09T18:14:28.203Z",
     "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
-    "steer": "Let’s have the chamber change to meet the spot. Branching off if there are multiple body sensations with portals\nOr paths that connect them",
+    "steer": "Let\u2019s have the chamber change to meet the spot. Branching off if there are multiple body sensations with portals\nOr paths that connect them",
     "faces": [
      "regent",
      "challenger"
@@ -20703,7 +20703,7 @@
     "recorded": "2026-10-09",
     "saved_at": "2026-10-09T18:15:29.329Z",
     "record": "council/ledger/2026-10-09-pull-181703.json (six-faces-council)",
-    "steer": "Keep them as separate categories people can explore so they aren’t just one long list",
+    "steer": "Keep them as separate categories people can explore so they aren\u2019t just one long list",
     "faces": [
      "regent",
      "architect"
@@ -21551,7 +21551,7 @@
     "recorded": "2026-10-10",
     "saved_at": "2026-10-10T02:00:40.516Z",
     "record": "council/ledger/2026-10-10-pull-020047.json (six-faces-council)",
-    "steer": "We shouldn’t have a skip. If a daemon pops up then it needs to be worked with. We can pivot to a 321 discussion with the part until is feels satisfied",
+    "steer": "We shouldn\u2019t have a skip. If a daemon pops up then it needs to be worked with. We can pivot to a 321 discussion with the part until is feels satisfied",
     "faces": [
      "challenger",
      "regent"
@@ -21694,7 +21694,7 @@
     "recorded": "2026-10-10",
     "saved_at": "2026-10-10T14:53:11.919Z",
     "record": "council/ledger/2026-10-10-pull-145514.json (six-faces-council)",
-    "steer": "I can imagine story beats that happen without an item changing hands. I think items are the main way but I’m\nThinking of tasks within a quest may not always be connected with items changing hands",
+    "steer": "I can imagine story beats that happen without an item changing hands. I think items are the main way but I\u2019m\nThinking of tasks within a quest may not always be connected with items changing hands",
     "faces": [
      "shaman",
      "diplomat"
@@ -22311,7 +22311,7 @@
     "recorded": "2026-10-10",
     "saved_at": "2026-10-10T23:29:05.582Z",
     "record": "council/ledger/2026-10-10-pull-232919.json (six-faces-council)",
-    "steer": "We should make a note to fix that in bars engine explore how it’s being used and deprecate it if it’s diverted",
+    "steer": "We should make a note to fix that in bars engine explore how it\u2019s being used and deprecate it if it\u2019s diverted",
     "faces": [
      "challenger"
     ],
@@ -23188,7 +23188,7 @@
     "recorded": "2026-10-13",
     "saved_at": "2026-10-13T00:24:13.933Z",
     "record": "council/ledger/2026-10-13-pull-002421.json (six-faces-council)",
-    "steer": "Use as much as we can from the root game for this as we’ve already done many garment tests there",
+    "steer": "Use as much as we can from the root game for this as we\u2019ve already done many garment tests there",
     "faces": [
      "architect",
      "challenger"
@@ -23696,7 +23696,7 @@
     "recorded": "2026-10-13",
     "saved_at": "2026-10-13T21:17:47.662Z",
     "record": "council/ledger/2026-10-13-pull-211757.json (six-faces-council)",
-    "steer": "This is something to think more about. If the charge is present it’s got its hands on the joystick. We can have people be responsible to getting their hands back on the joystick without blaming them for it having been taken away",
+    "steer": "This is something to think more about. If the charge is present it\u2019s got its hands on the joystick. We can have people be responsible to getting their hands back on the joystick without blaming them for it having been taken away",
     "faces": [
      "challenger",
      "regent"
@@ -24153,7 +24153,7 @@
     "recorded": "2026-10-13",
     "saved_at": "2026-10-13T23:58:45.024Z",
     "record": "council/ledger/2026-10-13-pull-235845.json (six-faces-council)",
-    "steer": "I do think that move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move (think pokemon starters) \n\nMove elements and spirit ally elements combine but aren’t essentially aligned",
+    "steer": "I do think that move sets should operate like pokemon where a spirit can learn moves from other channels but always has a signature move (think pokemon starters) \n\nMove elements and spirit ally elements combine but aren\u2019t essentially aligned",
     "faces": [
      "architect",
      "diplomat"
@@ -24190,7 +24190,7 @@
     "recorded": "2026-10-14",
     "saved_at": "2026-10-14T01:42:03.481Z",
     "record": "council/ledger/2026-10-14-pull-014324.json (six-faces-council)",
-    "steer": "I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe",
+    "steer": "I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas\u2019s that solidifying into a core which then makes for a holographic ally that\u2019s being projected into the world. Kind of like Steven Universe",
     "faces": [
      "shaman",
      "diplomat"
@@ -24422,7 +24422,7 @@
     "recorded": "2026-10-14",
     "saved_at": "2026-10-14T18:45:01.558Z",
     "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
-    "steer": "If art is needed and there isn’t any art available we should generate a prompt OR a design intake to get clear on what asset should be made",
+    "steer": "If art is needed and there isn\u2019t any art available we should generate a prompt OR a design intake to get clear on what asset should be made",
     "faces": [
      "regent",
      "challenger"
@@ -24665,7 +24665,7 @@
     "recorded": "2026-10-14",
     "saved_at": "2026-10-14T22:52:12.401Z",
     "record": "council/ledger/2026-10-14-pull-225212.json (six-faces-council)",
-    "steer": "It has an element and can be dissolved but only after it’s fully revealed. Fully revealing it means tying it to an element",
+    "steer": "It has an element and can be dissolved but only after it\u2019s fully revealed. Fully revealing it means tying it to an element",
     "faces": [
      "shaman",
      "diplomat"
@@ -25011,7 +25011,7 @@
     "recorded": "2026-10-14",
     "saved_at": "2026-10-14T23:27:02.799Z",
     "record": "council/ledger/2026-10-14-pull-232718.json (six-faces-council)",
-    "steer": "They aren’t unrelated. I’ve been putting off integrating them",
+    "steer": "They aren\u2019t unrelated. I\u2019ve been putting off integrating them",
     "faces": [
      "regent",
      "challenger"
@@ -25703,7 +25703,7 @@
     "recorded": "2026-10-16",
     "saved_at": "2026-10-16T22:07:59.647Z",
     "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
-    "steer": "I think if people want to keep talking to it they should be able to. Once it’s willing to step aside isn’t always the end of the interaction",
+    "steer": "I think if people want to keep talking to it they should be able to. Once it\u2019s willing to step aside isn\u2019t always the end of the interaction",
     "faces": [
      "architect",
      "regent"
@@ -25716,7 +25716,7 @@
     "recorded": "2026-10-16",
     "saved_at": "2026-10-16T22:08:58.191Z",
     "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
-    "steer": "This is tricky. They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that’s authentic or even show the ways in which they are already aligned but from different POVs",
+    "steer": "This is tricky. They each have a mental model of what goodness looks like and the game is to figure out how to align with that in a way that\u2019s authentic or even show the ways in which they are already aligned but from different POVs",
     "faces": [
      "diplomat",
      "shaman"
@@ -25765,7 +25765,7 @@
     "recorded": "2026-10-16",
     "saved_at": "2026-10-16T22:11:06.648Z",
     "record": "council/ledger/2026-10-16-pull-221155.json (six-faces-council)",
-    "steer": "I think there is an opportunity to use the spirits and your allied relationship with them AS proof. The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you’ve collected to be let into victory road. The spirits you’ve collected are proof that you’ve learned what those parts need from you",
+    "steer": "I think there is an opportunity to use the spirits and your allied relationship with them AS proof. The spirits can vouch for you. The way I see this game is like at the end of pokemon where you show the badges you\u2019ve collected to be let into victory road. The spirits you\u2019ve collected are proof that you\u2019ve learned what those parts need from you",
     "faces": [
      "architect",
      "regent",
@@ -25937,7 +25937,7 @@
     "recorded": "2026-10-16",
     "saved_at": "2026-10-16T22:34:24.804Z",
     "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
-    "steer": "I think people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren’t there",
+    "steer": "I think people can tend to the relationship by themselves but nothing changes without the consent of the other. People can see how others are holding space for their relationship when they aren\u2019t there",
     "faces": [
      "architect",
      "shaman"
@@ -26052,7 +26052,7 @@
     "recorded": "2026-10-16",
     "saved_at": "2026-10-16T22:40:01.032Z",
     "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
-    "steer": "“The next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.“\n\nThat’s too slow. We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players",
+    "steer": "\u201cThe next move is a paper play: one willing person, one agreement, a drawn creature and two check-ins over a week. This stands unless you flip it.\u201c\n\nThat\u2019s too slow. We should create a demo garden that I can play with a design with one relationship I want to work on. It should be able to be accessed synchronously and synchronously by the two players",
     "faces": [
      "regent",
      "challenger",
@@ -26168,7 +26168,7 @@
     "recorded": "2026-10-17",
     "saved_at": "2026-10-17T01:40:00.501Z",
     "record": "council/ledger/2026-10-17-pull-014028.json (six-faces-council)",
-    "steer": "No I pitched this to Ari and they said it’s not enough and I might not be going far enough in how cozy and fun to be in this space needs to be. She’s pre-empting the kind of refinement passes she’s seen me do with our agents in the past and is already excited for the v5 of this. We want to explore what we’d need to deftly meet the expectations based on what our oneshot and the current state of the environment is. We can actually generate an image with ChatGPT as a concept image and build from there as a way to create strong immersion",
+    "steer": "No I pitched this to Ari and they said it\u2019s not enough and I might not be going far enough in how cozy and fun to be in this space needs to be. She\u2019s pre-empting the kind of refinement passes she\u2019s seen me do with our agents in the past and is already excited for the v5 of this. We want to explore what we\u2019d need to deftly meet the expectations based on what our oneshot and the current state of the environment is. We can actually generate an image with ChatGPT as a concept image and build from there as a way to create strong immersion",
     "faces": [
      "architect",
      "challenger"
@@ -26305,7 +26305,7 @@
     "recorded": "2026-10-17",
     "saved_at": "2026-10-17T04:21:51.212Z",
     "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
-    "steer": "We want people to go through  the same order at least at first. This only connects if it’s a daemon who is merged with another one if the sensation doesn’t match",
+    "steer": "We want people to go through  the same order at least at first. This only connects if it\u2019s a daemon who is merged with another one if the sensation doesn\u2019t match",
     "faces": [
      "architect",
      "challenger"
@@ -28045,7 +28045,7 @@
     "recorded": "2026-10-10",
     "saved_at": "2026-10-10T20:59:52.183Z",
     "record": "council/ledger/2026-10-10-pull-210046.json (six-faces-council)",
-    "steer": "Let’s do root and sprout slice since cave of lessons and big mind cave are both part of the same project- they are just forked",
+    "steer": "Let\u2019s do root and sprout slice since cave of lessons and big mind cave are both part of the same project- they are just forked",
     "faces": [
      "regent",
      "sage"
@@ -28328,7 +28328,7 @@
     "recorded": "2026-10-13",
     "saved_at": "2026-10-13T23:02:07.049Z",
     "record": "council/ledger/2026-10-13-pull-230404.json (six-faces-council)",
-    "steer": "The monsters of this game are established as the spiritual embodiment of people using their emotional energy wrong. They are Monster fights akin to pokemon and classic RPGs. I think we should start there and see if there’s a way to layer the emotional alchemy on top of it. Right now using turn based and wuxing weaknesses is the best bet for now.",
+    "steer": "The monsters of this game are established as the spiritual embodiment of people using their emotional energy wrong. They are Monster fights akin to pokemon and classic RPGs. I think we should start there and see if there\u2019s a way to layer the emotional alchemy on top of it. Right now using turn based and wuxing weaknesses is the best bet for now.",
     "faces": [
      "shaman",
      "regent"
@@ -28353,7 +28353,7 @@
     "recorded": "2026-10-13",
     "saved_at": "2026-10-13T23:21:51.241Z",
     "record": "council/ledger/2026-10-13-pull-232238.json (six-faces-council)",
-    "steer": "Your ally spirits unless you don’t have any and then you have to fight on your own power",
+    "steer": "Your ally spirits unless you don\u2019t have any and then you have to fight on your own power",
     "faces": [
      "architect",
      "shaman"
@@ -28403,7 +28403,7 @@
     "recorded": "2026-10-14",
     "saved_at": "2026-10-14T18:43:06.857Z",
     "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
-    "steer": "We need to make sure this UI is ergonomic for someone who doesn’t spend time in data tables a lot and gets overwhelmed by spreadsheets and the like",
+    "steer": "We need to make sure this UI is ergonomic for someone who doesn\u2019t spend time in data tables a lot and gets overwhelmed by spreadsheets and the like",
     "faces": [
      "diplomat",
      "architect",
@@ -28417,7 +28417,7 @@
     "recorded": "2026-10-14",
     "saved_at": "2026-10-14T18:46:16.131Z",
     "record": "council/ledger/2026-10-14-pull-184616.json (six-faces-council)",
-    "steer": "We want the walkthrough to have players able to walk either a 3d or 2d character through the sprout world. The skilled helper paths were good for testing the story branches but they don’t actually include the major game loops (farming and fighting and exploring)",
+    "steer": "We want the walkthrough to have players able to walk either a 3d or 2d character through the sprout world. The skilled helper paths were good for testing the story branches but they don\u2019t actually include the major game loops (farming and fighting and exploring)",
     "faces": [
      "challenger",
      "regent",
@@ -28688,7 +28688,7 @@
     "recorded": "2026-10-16",
     "saved_at": "2026-10-16T22:33:11.242Z",
     "record": "council/ledger/2026-10-16-pull-224001.json (six-faces-council)",
-    "steer": "By extension (and especially for flirtcraft) you can start alone tending  to a spirit that’s the charge that you project on someone you aren’t in relationship with. When the other person joins it becomes a between",
+    "steer": "By extension (and especially for flirtcraft) you can start alone tending  to a spirit that\u2019s the charge that you project on someone you aren\u2019t in relationship with. When the other person joins it becomes a between",
     "faces": [
      "architect",
      "diplomat",
@@ -28718,6 +28718,16 @@
      "challenger"
     ],
     "pass": "cloth designer 1"
+   },
+   "slice-substrate-home": {
+    "decision": "sprout",
+    "label": "Sprout - registered and cloned; slice and substrate build there",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-sprout-registration.json",
+    "faces": [
+     "regent",
+     "architect"
+    ]
    }
   },
   "causes": {
@@ -28892,7 +28902,7 @@
    "record": "sprout council/ledger/2026-10-04-character-creation-round3.json"
   },
   {
-   "text": "On pr-act3-sources: Let’s call the project a quest. We also want to think about the game in terms of encounters quests adventures and campaigns  \n\nA project would be an adventure (which is a series of quests and encounters) to attain the last rank \n\nThis also allows for post main story progress to continue ",
+   "text": "On pr-act3-sources: Let\u2019s call the project a quest. We also want to think about the game in terms of encounters quests adventures and campaigns  \n\nA project would be an adventure (which is a series of quests and encounters) to attain the last rank \n\nThis also allows for post main story progress to continue ",
    "savedAt": "2026-10-04T13:36:38.006Z",
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
   },
@@ -28902,7 +28912,7 @@
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
   },
   {
-   "text": "On pr-test-result: I need to know what the implications of this are. We want to steal the scouting structure but we’ll let the games needs decided how many badges. Paper Mario also has a lot of badges as well. And the available badges in BSA is larger than the required amount ",
+   "text": "On pr-test-result: I need to know what the implications of this are. We want to steal the scouting structure but we\u2019ll let the games needs decided how many badges. Paper Mario also has a lot of badges as well. And the available badges in BSA is larger than the required amount ",
    "savedAt": "2026-10-04T13:40:06.741Z",
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round2.json (pull request #17)"
   },
@@ -28912,12 +28922,12 @@
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round3.json (pull request #17)"
   },
   {
-   "text": "On pr-grid-built (said in chat): On the council board I need to be able to “go back” if I overrule without context (like I just did) \n\nThe context is here. The sphere grid works because it acts as a labyrinth not hub and spoke. The path spirals and fractals. We need to do a study of how the sphere grid operates to get a clearer picture of this",
+   "text": "On pr-grid-built (said in chat): On the council board I need to be able to \u201cgo back\u201d if I overrule without context (like I just did) \n\nThe context is here. The sphere grid works because it acts as a labyrinth not hub and spoke. The path spirals and fractals. We need to do a study of how the sphere grid operates to get a clearer picture of this",
    "savedAt": "2026-10-04T14:19:48Z",
    "record": "sprout council/ledger/2026-10-04-ranks-and-badges-round4.json (pull request #17)"
   },
   {
-   "text": "On pr-branch-emphasis: Branches aren’t based on stats like the sphere grid branches unlock moves and the specific build of stats that would support the subtype of the type of character you’re building as you traverse the path ",
+   "text": "On pr-branch-emphasis: Branches aren\u2019t based on stats like the sphere grid branches unlock moves and the specific build of stats that would support the subtype of the type of character you\u2019re building as you traverse the path ",
    "savedAt": "2026-10-04T14:20:54.344Z",
    "record": "council/ledger/2026-10-04-board-read-saved-answers.json (six-faces-council); acted on in sprout council/ledger/2026-10-04-ranks-and-badges-round5.json (pull request #17)"
   },
@@ -28992,7 +29002,7 @@
    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
   },
   {
-   "text": "On oag-wave-depth: \"I do think we should cap the depth so players don’t get lost in the minutiae. We can have a notice that lets them know they are going in too deep and they might next external support about it and maybe a link to booking a call with me \"",
+   "text": "On oag-wave-depth: \"I do think we should cap the depth so players don\u2019t get lost in the minutiae. We can have a notice that lets them know they are going in too deep and they might next external support about it and maybe a link to booking a call with me \"",
    "savedAt": "2026-10-06T19:05:23.417Z",
    "record": "council/ledger/2026-10-06-board-read-1907.json (six-faces-council)"
   },
@@ -29007,7 +29017,7 @@
    "record": "council/ledger/2026-10-06-board-read-2330.json (six-faces-council)"
   },
   {
-   "text": "Context for the agents is that we’re are building a playable ontology for helping people install integral consciousness somatic awareness and shadow work though accessible story driven play. ",
+   "text": "Context for the agents is that we\u2019re are building a playable ontology for helping people install integral consciousness somatic awareness and shadow work though accessible story driven play. ",
    "savedAt": "2026-10-15T22:01:10.939Z",
    "record": "council/ledger/2026-10-15-pull-220110.json (six-faces-council)"
   }
@@ -29235,7 +29245,7 @@
    "repo": "sprout",
    "element": "metal",
    "record": "sprout .specify/specs/ranks-and-badges/request.md",
-   "intro": "It wants progression to be a rank ladder like Scouting's, with badges won like Pokémon's and worn like Paper Mario's, and a grid where the player spends what play earned, like Final Fantasy X.",
+   "intro": "It wants progression to be a rank ladder like Scouting's, with badges won like Pok\u00e9mon's and worn like Paper Mario's, and a grid where the player spends what play earned, like Final Fantasy X.",
    "rounds": [
     {
      "n": 1,
@@ -30185,7 +30195,7 @@
     "items": [
      {
       "id": "due-mm-set-aside",
-      "text": "Motion2MixamoRig, which lifts a person in a video or photo onto a Mixamo rig, is set aside for now and returns when you ask. Its chain is for non-commercial use: SMPL-X allows only non-commercial research, education or artistic projects,…",
+      "text": "Motion2MixamoRig, which lifts a person in a video or photo onto a Mixamo rig, is set aside for now and returns when you ask. Its chain is for non-commercial use: SMPL-X allows only non-commercial research, education or artistic projects,\u2026",
       "ref": "mm-set-aside",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#resolved",
       "note": "when you ask",
@@ -30230,7 +30240,7 @@
      },
      {
       "id": "handoff-2026-10-08-still-to-measure",
-      "text": "Still to measure: what else fills the opening 102,000 (CLAUDE.md files of the attached repos, the hook output, the platform prompt), and how much of a typical thread is command output (the Jev trimmer signal, project files…",
+      "text": "Still to measure: what else fills the opening 102,000 (CLAUDE.md files of the attached repos, the hook output, the platform prompt), and how much of a typical thread is command output (the Jev trimmer signal, project files\u2026",
       "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
       "bridge": {
        "kind": "unaligned",
@@ -30302,7 +30312,7 @@
      },
      {
       "id": "handoff-2026-10-06-three-pieces-of-work-each-its-own-thread",
-      "text": "Three pieces of work, each its own thread.: Wendell's board answers (friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json) set them: fcm-p8b-redesign (Friendcraft's design pass: work like flirtcraft, BARs for…",
+      "text": "Three pieces of work, each its own thread.: Wendell's board answers (friendcraft council/ledger/2026-10-06-friendcraft-manuacript-pass8-board-read.json) set them: fcm-p8b-redesign (Friendcraft's design pass: work like flirtcraft, BARs for\u2026",
       "note": "Open on 2026-10-06, from the Friendcraft next-steps thread (friendcraft pass 8)",
       "bridge": {
        "kind": "unaligned",
@@ -30473,7 +30483,7 @@
      },
      {
       "id": "handoff-2026-10-06-work-the-answers-begin",
-      "text": "Work the answers begin: wave-acknowledge-turn overruled (steer: a trigram move is the acknowledgement, welcoming is listening) for the WAVE thread; oag-faces-names chose plain words, steer: a popup page per face, for the ontology game…",
+      "text": "Work the answers begin: wave-acknowledge-turn overruled (steer: a trigram move is the acknowledgement, welcoming is listening) for the WAVE thread; oag-faces-names chose plain words, steer: a popup page per face, for the ontology game\u2026",
       "note": "Open on 2026-10-06, from the board pickup thread",
       "bridge": {
        "kind": "unaligned",
@@ -30491,7 +30501,7 @@
      },
      {
       "id": "handoff-2026-10-06-on-the-board",
-      "text": "On the board: seven positions (loop-fix-labels, loop-draw-means-drawn, loop-one-move, loop-posture-once, orient-bridge, orient-on-your-own, orient-reflection-to-wall) stand unless he flips them; two questions wait on him…",
+      "text": "On the board: seven positions (loop-fix-labels, loop-draw-means-drawn, loop-one-move, loop-posture-once, orient-bridge, orient-on-your-own, orient-reflection-to-wall) stand unless he flips them; two questions wait on him\u2026",
       "note": "Open on 2026-10-06, from the Flirtcraft loop audit thread (battle `fr-orient-new-players`)",
       "bridge": {
        "kind": "unaligned",
@@ -30563,7 +30573,7 @@
      },
      {
       "id": "handoff-2026-10-06-for-the-app-not-the-book",
-      "text": "For the app, not the book: GRAMMAR.md §12g renamed fear's gold to wonder; lib/decks.json still says excitement in both fear cultivate rungs.",
+      "text": "For the app, not the book: GRAMMAR.md \u00a712g renamed fear's gold to wonder; lib/decks.json still says excitement in both fear cultivate rungs.",
       "note": "Open on 2026-10-06, from the Flirtcraft book outline thread (battle `fr-book`)",
       "bridge": {
        "kind": "unaligned",
@@ -30572,7 +30582,7 @@
      },
      {
       "id": "handoff-2026-10-06-on-the-board",
-      "text": "On the board: question wave-teacher (A Master Yun recommended, B Captain Rue, C Cael) waits on Wendell; positions wave-taught-fight, wave-straight-first, wave-corners-from-spirits, wave-gates-in-the-world (a story draft, Proposed) and…",
+      "text": "On the board: question wave-teacher (A Master Yun recommended, B Captain Rue, C Cael) waits on Wendell; positions wave-taught-fight, wave-straight-first, wave-corners-from-spirits, wave-gates-in-the-world (a story draft, Proposed) and\u2026",
       "note": "Open on 2026-10-06, from the WAVE teaching pass (`fr-demo` round 11)",
       "bridge": {
        "kind": "unaligned",
@@ -30644,7 +30654,7 @@
      },
      {
       "id": "handoff-2026-10-07-waiting-on-the-sessions-that-own-the-prompts",
-      "text": "Waiting on the sessions that own the prompts: the coordinator was sent the new prompt for trig_01L138vKTaN9MSJoFKRmaBNx (pull, then act; never add_repo), and the standing daily session the new step 1b for trig_01F8fDdkjYEeMCfdozj6w3tt…",
+      "text": "Waiting on the sessions that own the prompts: the coordinator was sent the new prompt for trig_01L138vKTaN9MSJoFKRmaBNx (pull, then act; never add_repo), and the standing daily session the new step 1b for trig_01F8fDdkjYEeMCfdozj6w3tt\u2026",
       "note": "Open on 2026-10-07, from the pickup hostile review",
       "bridge": {
        "kind": "unaligned",
@@ -30689,7 +30699,7 @@
      },
      {
       "id": "handoff-2026-10-07-retro-1",
-      "text": "Retro 1: (council/passes/6FACE_RETRO1_2026-10-07.md, ledger council/ledger/2026-10-07-retro1.json) found three repeating patterns in the 32 overrules: the Architect's designs not playing like the game he named (or missing the answer…",
+      "text": "Retro 1: (council/passes/6FACE_RETRO1_2026-10-07.md, ledger council/ledger/2026-10-07-retro1.json) found three repeating patterns in the 32 overrules: the Architect's designs not playing like the game he named (or missing the answer\u2026",
       "note": "Open on 2026-10-07, from retro 1",
       "bridge": {
        "kind": "unaligned",
@@ -30698,7 +30708,7 @@
      },
      {
       "id": "handoff-2026-10-07-on-the-board-standing-unless-he-flips-them",
-      "text": "On the board, standing unless he flips them: retro1-rhythm-holds, lesson-architect-sources, lesson-challenger-shared-frame, lesson-challenger-gate-release, lesson-regent-purpose-first, lesson-diplomat-plain-names,…",
+      "text": "On the board, standing unless he flips them: retro1-rhythm-holds, lesson-architect-sources, lesson-challenger-shared-frame, lesson-challenger-gate-release, lesson-regent-purpose-first, lesson-diplomat-plain-names,\u2026",
       "note": "Open on 2026-10-07, from retro 1",
       "bridge": {
        "kind": "unaligned",
@@ -30743,7 +30753,7 @@
      },
      {
       "id": "handoff-2026-10-07-on-the-board-standing-unless-he-flips-them",
-      "text": "On the board, standing unless he flips them: ttc-move, ttc-section-unit, ttc-two-faces, ttc-model-by-step, ttc-validate-by-position, ttc-files-in-sprout (answers the spec's home: Sprout), ttc-slice-bar-validator (answers the…",
+      "text": "On the board, standing unless he flips them: ttc-move, ttc-section-unit, ttc-two-faces, ttc-model-by-step, ttc-validate-by-position, ttc-files-in-sprout (answers the spec's home: Sprout), ttc-slice-bar-validator (answers the\u2026",
       "note": "Open on 2026-10-07, from texts-to-campaigns pass 1",
       "bridge": {
        "kind": "unaligned",
@@ -30788,7 +30798,7 @@
      },
      {
       "id": "handoff-2026-10-08-built",
-      "text": "Built: (council/ledger/2026-10-08-outreach-tab-build.json): the board has an Outreach tab and a live Podcast chases list on Your steps, both on the board's own contacts and shows, copied from…",
+      "text": "Built: (council/ledger/2026-10-08-outreach-tab-build.json): the board has an Outreach tab and a live Podcast chases list on Your steps, both on the board's own contacts and shows, copied from\u2026",
       "note": "Open on 2026-10-08, from the outreach-on-board pass",
       "bridge": {
        "kind": "unaligned",
@@ -30797,7 +30807,7 @@
      },
      {
       "id": "handoff-2026-10-08-dated-checks-by-2026-10-15",
-      "text": "Dated checks, by 2026-10-15: a chase Wendell saves shows on the contact at once; the first weekday morning brief after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower on his…",
+      "text": "Dated checks, by 2026-10-15: a chase Wendell saves shows on the contact at once; the first weekday morning brief after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower on his\u2026",
       "note": "Open on 2026-10-08, from the outreach-on-board pass",
       "bridge": {
        "kind": "unaligned",
@@ -30824,7 +30834,7 @@
      },
      {
       "id": "handoff-2026-10-09-answered-2026-10-09-17-30-utc",
-      "text": "Answered 2026-10-09 17:30 UTC: c3d-path = web, with his steer: \"I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside…",
+      "text": "Answered 2026-10-09 17:30 UTC: c3d-path = web, with his steer: \"I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside\u2026",
       "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
       "bridge": {
        "kind": "unaligned",
@@ -30860,7 +30870,7 @@
      },
      {
       "id": "handoff-2026-10-08-built",
-      "text": "Built: (council/ledger/2026-10-08-outreach-tab-build.json): the board has an Outreach tab and a live Podcast chases list on Your steps, both on the board's own contacts and shows, copied from…",
+      "text": "Built: (council/ledger/2026-10-08-outreach-tab-build.json): the board has an Outreach tab and a live Podcast chases list on Your steps, both on the board's own contacts and shows, copied from\u2026",
       "note": "Open on 2026-10-08, from the outreach-on-board pass",
       "bridge": {
        "kind": "unaligned",
@@ -30869,7 +30879,7 @@
      },
      {
       "id": "handoff-2026-10-08-dated-checks-by-2026-10-15",
-      "text": "Dated checks, by 2026-10-15: a chase Wendell saves shows on the contact at once; the first weekday morning brief after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower on his…",
+      "text": "Dated checks, by 2026-10-15: a chase Wendell saves shows on the contact at once; the first weekday morning brief after the build lists chases from the board's store (its run on 2026-10-08 is the first); the board opens no slower on his\u2026",
       "note": "Open on 2026-10-08, from the outreach-on-board pass",
       "bridge": {
        "kind": "unaligned",
@@ -30896,7 +30906,7 @@
      },
      {
       "id": "handoff-2026-10-09-answered-2026-10-09-17-30-utc",
-      "text": "Answered 2026-10-09 17:30 UTC: c3d-path = web, with his steer: \"I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside…",
+      "text": "Answered 2026-10-09 17:30 UTC: c3d-path = web, with his steer: \"I do think we should fork the ontology game if this is the case, or rather create a version where the game happens inside the body map instead of the body map being inside\u2026",
       "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
       "bridge": {
        "kind": "unaligned",
@@ -30905,7 +30915,7 @@
      },
      {
       "id": "handoff-2026-10-09-next-day-3",
-      "text": "Next, day 3: in a new thread on Sonnet, branch claude/project-thread-ottswt: in cave.js, build one generic chamber (drop the spot width/height/length/bend), add the portal step (charge, channel, face) before the chamber forms and dress…",
+      "text": "Next, day 3: in a new thread on Sonnet, branch claude/project-thread-ottswt: in cave.js, build one generic chamber (drop the spot width/height/length/bend), add the portal step (charge, channel, face) before the chamber forms and dress\u2026",
       "note": "Open on 2026-10-09, from the 3D build options thread (pass 2)",
       "bridge": {
        "kind": "unaligned",
@@ -30932,7 +30942,7 @@
      },
      {
       "id": "handoff-2026-10-09-first-run",
-      "text": "First run: invitations for Marina and Dustin Muñoz de Martínez, Adam (Masculine Witness) and the WMHCA gala counselors are in the MTGOA project files at podcast/outreach/invitations-2026-10-09.md; the three new contacts are on the…",
+      "text": "First run: invitations for Marina and Dustin Mu\u00f1oz de Mart\u00ednez, Adam (Masculine Witness) and the WMHCA gala counselors are in the MTGOA project files at podcast/outreach/invitations-2026-10-09.md; the three new contacts are on the\u2026",
       "note": "Open on 2026-10-09, from the MTGOA podcast invitations thread",
       "bridge": {
        "kind": "unaligned",
@@ -31022,7 +31032,7 @@
      },
      {
       "id": "handoff-2026-10-09-wendell-s-playtest-2026-10-09-evening",
-      "text": "Wendell's playtest (2026-10-09 evening): wrong picks need a clear reason and a visible, narrative consequence, and should move the player forward without feeling punitive; his play tester pointed to Spiritfarer (the play is finding what…",
+      "text": "Wendell's playtest (2026-10-09 evening): wrong picks need a clear reason and a visible, narrative consequence, and should move the player forward without feeling punitive; his play tester pointed to Spiritfarer (the play is finding what\u2026",
       "note": "Open on 2026-10-09, from the helper skills pass (The Skilled Helper introduction)",
       "bridge": {
        "kind": "unaligned",
@@ -31090,7 +31100,7 @@
     "items": [
      {
       "id": "backlog-mlbr",
-      "text": "MtGoA Launch + Barn Raising — July fundraiser party: coordinator reframing the cancelled Bruised Banana residency into the real event: a July 2026 party at the Bruised Banana venue = Mastering the Game of Allyship Launch Party + Wendell's…",
+      "text": "MtGoA Launch + Barn Raising \u2014 July fundraiser party: coordinator reframing the cancelled Bruised Banana residency into the real event: a July 2026 party at the Bruised Banana venue = Mastering the Game of Allyship Launch Party + Wendell's\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/mtgoa-launch-barn-raising-party/spec.md",
       "note": "1.00 MLBR",
       "bridge": {
@@ -31100,7 +31110,7 @@
      },
      {
       "id": "backlog-parv",
-      "text": "Partiful link integration — July party invite: wire the Partiful event URL into the invite BAR + event Instance for the July 18, 2026 MtGoA Launch + Barn Raising. Reuse CustomBar.partifulUrl + eventSlug (EIP); RSVP CTA on the invite,…",
+      "text": "Partiful link integration \u2014 July party invite: wire the Partiful event URL into the invite BAR + event Instance for the July 18, 2026 MtGoA Launch + Barn Raising. Reuse CustomBar.partifulUrl + eventSlug (EIP); RSVP CTA on the invite,\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/partiful-link-integration.md",
       "note": "1.00.1 PARV",
       "bridge": {
@@ -31110,7 +31120,7 @@
      },
      {
       "id": "backlog-mbld",
-      "text": "Barn Raising — Live Data: back the three-wall Milestone BAR (car / pre-sale / runway) with real contributions: add CampaignMilestone.wallKey (additive migration), getBarnSnapshot(campaignRef), seed the July 18 event Instance + 3 walls…",
+      "text": "Barn Raising \u2014 Live Data: back the three-wall Milestone BAR (car / pre-sale / runway) with real contributions: add CampaignMilestone.wallKey (additive migration), getBarnSnapshot(campaignRef), seed the July 18 event Instance + 3 walls\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/barn-raising-live-data/spec.md",
       "note": "1.00.2 MBLD",
       "bridge": {
@@ -31120,7 +31130,7 @@
      },
      {
       "id": "backlog-mmsc",
-      "text": "MtGoA Menu — Skeuomorphic CYOA Redesign: redesign /mastering-allyship/hub from flat black-on-black-with-accents (reads \"AI-generated\") into a skeuomorphic, CYOA-forward menu where the 8 spokes feel like real objects (like the handbook…",
+      "text": "MtGoA Menu \u2014 Skeuomorphic CYOA Redesign: redesign /mastering-allyship/hub from flat black-on-black-with-accents (reads \"AI-generated\") into a skeuomorphic, CYOA-forward menu where the 8 spokes feel like real objects (like the handbook\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/mtgoa-menu-skeuomorphic-cyoa/spec.md",
       "note": "1.00.3 MMSC",
       "bridge": {
@@ -31130,7 +31140,7 @@
      },
      {
       "id": "backlog-mqsp",
-      "text": "Mobility Quest — Superpower Polarity Campaign: interactive campaign route fronted by a superpower-discovery CYOA intake and backed by tiered, scoped skill/time donation toward milestones. Organizing primitive: Card × Superpower ×…",
+      "text": "Mobility Quest \u2014 Superpower Polarity Campaign: interactive campaign route fronted by a superpower-discovery CYOA intake and backed by tiered, scoped skill/time donation toward milestones. Organizing primitive: Card \u00d7 Superpower \u00d7\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/mobility-quest-superpower-campaign/spec.md",
       "note": "1.05 MQSP",
       "bridge": {
@@ -31140,7 +31150,7 @@
      },
      {
       "id": "backlog-spqd",
-      "text": "Superpower Quiz Design: deterministic, offline, anti-extractive quiz assigning 1 of 7 superpowers + orientation for [1.05 MQSP](.specify/specs/mobility-quest-superpower-campaign/spec.md). Grounded in deep-research…",
+      "text": "Superpower Quiz Design: deterministic, offline, anti-extractive quiz assigning 1 of 7 superpowers + orientation for [1.05 MQSP](.specify/specs/mobility-quest-superpower-campaign/spec.md). Grounded in deep-research\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/superpower-quiz-design/spec.md",
       "note": "1.05.1 SPQD",
       "bridge": {
@@ -31150,7 +31160,7 @@
      },
      {
       "id": "backlog-spc",
-      "text": "750words Personal Sentiment Capture: self-hosted writing surface with 750-word goal, daily streak tracking (black-hat gamification acceptable), manual mood tag selection from Wuxing feeling-chip vocabulary, private WritingSession storage,…",
+      "text": "750words Personal Sentiment Capture: self-hosted writing surface with 750-word goal, daily streak tracking (black-hat gamification acceptable), manual mood tag selection from Wuxing feeling-chip vocabulary, private WritingSession storage,\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/personal-ops-funnel/spec.md",
       "note": "2.01 SPC",
       "bridge": {
@@ -31160,8 +31170,8 @@
      },
      {
       "id": "backlog-brs",
-      "text": "BAR Stewardship Flow: dedicated action for tending planted BAR seeds: attach soil/context, link to quest, write next action, route to LDM guide, or compost. Closes the personal ops loop: SPC → practice → BAR seed → stewardship → quest →…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/personal-ops-funnel/spec.md § BAR Stewardship",
+      "text": "BAR Stewardship Flow: dedicated action for tending planted BAR seeds: attach soil/context, link to quest, write next action, route to LDM guide, or compost. Closes the personal ops loop: SPC \u2192 practice \u2192 BAR seed \u2192 stewardship \u2192 quest \u2192\u2026",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/personal-ops-funnel/spec.md \u00a7 BAR Stewardship",
       "note": "2.01.1 BRS",
       "bridge": {
        "kind": "unaligned",
@@ -31170,7 +31180,7 @@
      },
      {
       "id": "backlog-inq",
-      "text": "Inquiry (The Work): mobile-first single-session Inquiry practice distilled from Byron Katie's The Work: 1 belief → 4 questions → turnaround → emotional alchemy (dissatisfied/desired feeling) → BAR seed dispatch. No guide NPCs. Parallel to…",
+      "text": "Inquiry (The Work): mobile-first single-session Inquiry practice distilled from Byron Katie's The Work: 1 belief \u2192 4 questions \u2192 turnaround \u2192 emotional alchemy (dissatisfied/desired feeling) \u2192 BAR seed dispatch. No guide NPCs. Parallel to\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/inquiry-lite/spec.md",
       "note": "2.02 INQ",
       "bridge": {
@@ -31180,7 +31190,7 @@
      },
      {
       "id": "backlog-bsm",
-      "text": "BAR Seed Garden / Nursery UI: player-facing BAR backlog as explorable terrain: soil context attachment (campaign/thread/nation/archetype), maturity state machine (Wake → Clean → Grow → Show → Integrate), compost action with release note,…",
+      "text": "BAR Seed Garden / Nursery UI: player-facing BAR backlog as explorable terrain: soil context attachment (campaign/thread/nation/archetype), maturity state machine (Wake \u2192 Clean \u2192 Grow \u2192 Show \u2192 Integrate), compost action with release note,\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bar-seed-metabolization/spec.md",
       "note": "2.03 BSM",
       "bridge": {
@@ -31190,7 +31200,7 @@
      },
      {
       "id": "backlog-eat",
-      "text": "EA Translator Research: Natural language feeling → EA channel classifier: keyword/idiom mapping, contextual disambiguation, 25-pair EA move matrix, 50-case test corpus. Feeds INQ feeling chip auto-classification + FSR Shaman pass…",
+      "text": "EA Translator Research: Natural language feeling \u2192 EA channel classifier: keyword/idiom mapping, contextual disambiguation, 25-pair EA move matrix, 50-case test corpus. Feeds INQ feeling chip auto-classification + FSR Shaman pass\u2026",
       "link": "",
       "note": "2.05 EAT",
       "bridge": {
@@ -31200,7 +31210,7 @@
      },
      {
       "id": "backlog-sat",
-      "text": "Satisfaction Capture: End-of-day ritual: identify which of 5 satisfied states fired today (Triumph=Wood/Fire, Poignance=Water/Sadness, Bliss=Wood/Joy, Peace=Earth/Neutral, Excitement=Metal/Fear). Create plan to leverage each into…",
+      "text": "Satisfaction Capture: End-of-day ritual: identify which of 5 satisfied states fired today (Triumph=Wood/Fire, Poignance=Water/Sadness, Bliss=Wood/Joy, Peace=Earth/Neutral, Excitement=Metal/Fear). Create plan to leverage each into\u2026",
       "link": "",
       "note": "2.06 SAT",
       "bridge": {
@@ -31210,7 +31220,7 @@
      },
      {
       "id": "backlog-ami",
-      "text": "Applied Mode Intake Conversation: MTGOA Migration Brief priority #8. Scripted-first / dual-track IntakeConversation: a pure intakeReducer walks the Six Unpacking Questions → IntakeConfig → buildEncounterFromIntake() synthesizes a…",
+      "text": "Applied Mode Intake Conversation: MTGOA Migration Brief priority #8. Scripted-first / dual-track IntakeConversation: a pure intakeReducer walks the Six Unpacking Questions \u2192 IntakeConfig \u2192 buildEncounterFromIntake() synthesizes a\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/applied-mode-intake-conversation/spec.md",
       "note": "2.07 AMI",
       "bridge": {
@@ -31220,7 +31230,7 @@
      },
      {
       "id": "backlog-ttve",
-      "text": "Tap the Vein Tier 2 — Vibeulon economy: (Phase A) — mint ♦+1 when a TTV task completes (idempotent via TapTheVeinTask.rewardMintedAt), through the existing wallet/ledger (db.vibulon, src/actions/economy.ts) — no parallel currency. Makes…",
+      "text": "Tap the Vein Tier 2 \u2014 Vibeulon economy: (Phase A) \u2014 mint \u2666+1 when a TTV task completes (idempotent via TapTheVeinTask.rewardMintedAt), through the existing wallet/ledger (db.vibulon, src/actions/economy.ts) \u2014 no parallel currency. Makes\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/tap-the-vein-tier-2/spec.md",
       "note": "2.08 TTVE",
       "bridge": {
@@ -31230,7 +31240,7 @@
      },
      {
       "id": "backlog-ttv3",
-      "text": "Tap the Vein Tier 2 — inline 3·2·1 thread: (Phase B) — optional Clean Up between Brainstorm and Commit: autosaved chat thread (Face it → Talk to it → Be it), voice switcher only on phase 2, before/after charge sliders; charge drop > 2…",
+      "text": "Tap the Vein Tier 2 \u2014 inline 3\u00b72\u00b71 thread: (Phase B) \u2014 optional Clean Up between Brainstorm and Commit: autosaved chat thread (Face it \u2192 Talk to it \u2192 Be it), voice switcher only on phase 2, before/after charge sliders; charge drop > 2\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/tap-the-vein-tier-2/spec.md",
       "note": "2.09 TTV3",
       "bridge": {
@@ -31240,7 +31250,7 @@
      },
      {
       "id": "backlog-ttvs",
-      "text": "Tap the Vein Tier 2 — idea storm → distill → vault: (Phase C) — timed raw-idea dump → distill to a hand of ≤5 (today's play) → merge → send to Vault; Vault economy 5 free deposits/day then ♦1 (via TTVE); new TapTheVeinIdea model;…",
+      "text": "Tap the Vein Tier 2 \u2014 idea storm \u2192 distill \u2192 vault: (Phase C) \u2014 timed raw-idea dump \u2192 distill to a hand of \u22645 (today's play) \u2192 merge \u2192 send to Vault; Vault economy 5 free deposits/day then \u26661 (via TTVE); new TapTheVeinIdea model;\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/tap-the-vein-tier-2/spec.md",
       "note": "2.10 TTVS",
       "bridge": {
@@ -31250,7 +31260,7 @@
      },
      {
       "id": "backlog-pma",
-      "text": "Productivity Modality Alignment: research authority for aligning bars-engine with open-source GTD/GSD productivity patterns (Tandem, Mindwtr, PARA, etc.) without todo-app chrome: reusable…",
+      "text": "Productivity Modality Alignment: research authority for aligning bars-engine with open-source GTD/GSD productivity patterns (Tandem, Mindwtr, PARA, etc.) without todo-app chrome: reusable\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/productivity-modality-alignment/spec.md",
       "note": "2.12 PMA",
       "bridge": {
@@ -31260,7 +31270,7 @@
      },
      {
       "id": "backlog-cgla",
-      "text": "Core Game Loop Audit: audit of how a BAR flows capture → charge → 3·2·1 → quest → daemon and a remediation map for the holes. The mechanics mostly exist (grow-to-quest/daemon/artifact wired on /bars/[id]; captureBar;…",
+      "text": "Core Game Loop Audit: audit of how a BAR flows capture \u2192 charge \u2192 3\u00b72\u00b71 \u2192 quest \u2192 daemon and a remediation map for the holes. The mechanics mostly exist (grow-to-quest/daemon/artifact wired on /bars/[id]; captureBar;\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/core-game-loop-audit/spec.md",
       "note": "1.45 CGLA",
       "bridge": {
@@ -31270,7 +31280,7 @@
      },
      {
       "id": "backlog-cgl1",
-      "text": "CGLA H1 — TTV tasks become BARs: a TapTheVeinTask becomes a linked CustomBar (type:bar, maturity captured) so it can be tuned / charged / 3·2·1'd / grown to a quest / become a daemon. Lazy (decided): BAR minted only on a deliberate…",
+      "text": "CGLA H1 \u2014 TTV tasks become BARs: a TapTheVeinTask becomes a linked CustomBar (type:bar, maturity captured) so it can be tuned / charged / 3\u00b72\u00b71'd / grown to a quest / become a daemon. Lazy (decided): BAR minted only on a deliberate\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/core-game-loop-audit/spec.md",
       "note": "1.45.1 CGL1",
       "bridge": {
@@ -31280,7 +31290,7 @@
      },
      {
       "id": "backlog-cgl2",
-      "text": "CGLA H2/H3/H6 — BAR loop wiring: unified \"all my BARs\" view (reuse list actions), a \"Do a 3·2·1 on this\" button on /bars/[id] + charge card (/shadow/321?chargeBarId=), and inline tune on the BAR detail page. Discoverability/wiring only —…",
+      "text": "CGLA H2/H3/H6 \u2014 BAR loop wiring: unified \"all my BARs\" view (reuse list actions), a \"Do a 3\u00b72\u00b71 on this\" button on /bars/[id] + charge card (/shadow/321?chargeBarId=), and inline tune on the BAR detail page. Discoverability/wiring only \u2014\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/core-game-loop-audit/spec.md",
       "note": "1.45.2 CGL2",
       "bridge": {
@@ -31290,7 +31300,7 @@
      },
      {
       "id": "backlog-strd",
-      "text": "Strand Process — Integrate or Deprecate: decision + cleanup, judged by value. Issue #21 promised five capabilities (isolation, failure detection, token budgets, resumable state, multi-agent coordination); the shipped CLI is a YAML record…",
+      "text": "Strand Process \u2014 Integrate or Deprecate: decision + cleanup, judged by value. Issue #21 promised five capabilities (isolation, failure detection, token budgets, resumable state, multi-agent coordination); the shipped CLI is a YAML record\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/strand-process-decision/spec.md",
       "note": "2.13 STRD",
       "bridge": {
@@ -31300,7 +31310,7 @@
      },
      {
       "id": "backlog-wfi",
-      "text": "World From Image: one image → PlanScene (top-down terrain grid, object footprints, doors/spawns) → per-game emitters: sprout specs/maps/.json first (checked by map:check), then bars-engine RealmData. Producer:…",
+      "text": "World From Image: one image \u2192 PlanScene (top-down terrain grid, object footprints, doors/spawns) \u2192 per-game emitters: sprout specs/maps/.json first (checked by map:check), then bars-engine RealmData. Producer:\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/world-from-image/spec.md",
       "note": "2.14 WFI",
       "bridge": {
@@ -31310,7 +31320,7 @@
      },
      {
       "id": "backlog-qla",
-      "text": "Quest Lineage & Shadow Alignment: close the NOW loop so TTV commits land aligned: Vault becomes the single canonical inventory (retire the /bars vs Vault split + 50-cap); TTV commits are born as quests via shared mintQuestFromText…",
+      "text": "Quest Lineage & Shadow Alignment: close the NOW loop so TTV commits land aligned: Vault becomes the single canonical inventory (retire the /bars vs Vault split + 50-cap); TTV commits are born as quests via shared mintQuestFromText\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/quest-lineage-alignment/spec.md",
       "note": "1.46 QLA",
       "bridge": {
@@ -31320,7 +31330,7 @@
      },
      {
       "id": "backlog-lens",
-      "text": "Lens Integration Refactor: replace the flat planning flow with a Lens-driven developmental architecture: Lenses as first-class temporal objects (new Observatory: orientation→vision→year→quarter→month→week→today), every BAR grown under a…",
+      "text": "Lens Integration Refactor: replace the flat planning flow with a Lens-driven developmental architecture: Lenses as first-class temporal objects (new Observatory: orientation\u2192vision\u2192year\u2192quarter\u2192month\u2192week\u2192today), every BAR grown under a\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
       "note": "1.40 LENS",
       "bridge": {
@@ -31330,7 +31340,7 @@
      },
      {
       "id": "backlog-lens1",
-      "text": "Lens P1 — Lens entity + Observatory: Lens model (type/title/parentLensId/playerId) + /observatory with 7 independently-navigable levels + auto-minted daily Lens. No BAR changes yet. Verification: cert-observatory-v1.",
+      "text": "Lens P1 \u2014 Lens entity + Observatory: Lens model (type/title/parentLensId/playerId) + /observatory with 7 independently-navigable levels + auto-minted daily Lens. No BAR changes yet. Verification: cert-observatory-v1.",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
       "note": "1.40.1 LENS1",
       "bridge": {
@@ -31340,7 +31350,7 @@
      },
      {
       "id": "backlog-lens2",
-      "text": "Lens P2 — BAR.lensId: add CustomBar.lensId (+ experienceIntent) and have Daily TTV commitTask attach lensId. No developmentStage — core stays developmental-level agnostic; existing maturity untouched. Verification: cert-bar-lens-v1.",
+      "text": "Lens P2 \u2014 BAR.lensId: add CustomBar.lensId (+ experienceIntent) and have Daily TTV commitTask attach lensId. No developmentStage \u2014 core stays developmental-level agnostic; existing maturity untouched. Verification: cert-bar-lens-v1.",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
       "note": "1.40.2 LENS2",
       "bridge": {
@@ -31350,7 +31360,7 @@
      },
      {
       "id": "backlog-lens3",
-      "text": "Lens P3 — Garden first-class + Plant flow: Garden entity + CustomBar.gardenId + experienceIntent; Choose Lens → Six Questions → Plant; /garden (personal) shows Planted+ only, separate from Hand/Vault/World. Verification:…",
+      "text": "Lens P3 \u2014 Garden first-class + Plant flow: Garden entity + CustomBar.gardenId + experienceIntent; Choose Lens \u2192 Six Questions \u2192 Plant; /garden (personal) shows Planted+ only, separate from Hand/Vault/World. Verification:\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
       "note": "1.40.3 LENS3",
       "bridge": {
@@ -31360,7 +31370,7 @@
      },
      {
       "id": "backlog-lens4",
-      "text": "Lens P4 — Provenance graph + Vibeulon attribution: ProvenanceLink + CustomBar.parentQuestId; getBarProvenance(barId) queryable graph; Vibulon gains completedBARId/lensId/campaignId/emotionalChannel/growthSource; refit mintVibulon (incl.…",
+      "text": "Lens P4 \u2014 Provenance graph + Vibeulon attribution: ProvenanceLink + CustomBar.parentQuestId; getBarProvenance(barId) queryable graph; Vibulon gains completedBARId/lensId/campaignId/emotionalChannel/growthSource; refit mintVibulon (incl.\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
       "note": "1.40.4 LENS4",
       "bridge": {
@@ -31370,7 +31380,7 @@
      },
      {
       "id": "backlog-lwx",
-      "text": "Living-World Experience: the experience + navigation layer that makes the app feel like a living world (Pokémon PC / Harvest Moon / BotW, not Notion/Jira). Destinations Observatory / Garden / Vault / World + Hand glance-in-NOW→/hand +…",
+      "text": "Living-World Experience: the experience + navigation layer that makes the app feel like a living world (Pok\u00e9mon PC / Harvest Moon / BotW, not Notion/Jira). Destinations Observatory / Garden / Vault / World + Hand glance-in-NOW\u2192/hand +\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/living-world-experience/spec.md",
       "note": "1.41 LWX",
       "bridge": {
@@ -31380,7 +31390,7 @@
      },
      {
       "id": "backlog-lpmig",
-      "text": "Migration deploy flow — sandbox-authored, prod-applied: codify the author-in-web/Codex (DB-free migrate diff) → apply-on-Vercel-Production / Mac lever flow so agents stop fighting the DB from sandboxes; verify/apply the…",
+      "text": "Migration deploy flow \u2014 sandbox-authored, prod-applied: codify the author-in-web/Codex (DB-free migrate diff) \u2192 apply-on-Vercel-Production / Mac lever flow so agents stop fighting the DB from sandboxes; verify/apply the\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/migration-deploy-flow.md",
       "note": "1.60 LPMIG",
       "bridge": {
@@ -31390,7 +31400,7 @@
      },
      {
       "id": "backlog-migci",
-      "text": "CI gate — migration chain applies on empty Postgres: GitHub Actions job on PRs touching prisma/: empty Postgres + migrate deploy, fail on any unapplied/broken migration (the durable fix for DB-free-authored migrations). Surfaces legacy…",
+      "text": "CI gate \u2014 migration chain applies on empty Postgres: GitHub Actions job on PRs touching prisma/: empty Postgres + migrate deploy, fail on any unapplied/broken migration (the durable fix for DB-free-authored migrations). Surfaces legacy\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/migrate-deploy-ci-gate.md",
       "note": "1.61 MIGCI",
       "bridge": {
@@ -31400,7 +31410,7 @@
      },
      {
       "id": "backlog-gsku",
-      "text": "Wire non-book SKU Gumroad product ids: set GUMROAD_PRODUCT_ID_<SKU> for deck / RPG handbook / subscription / etc. so the /redeem license-verify fallback (resolveLicense) resolves every offer, not just the book; document the env…",
+      "text": "Wire non-book SKU Gumroad product ids: set GUMROAD_PRODUCT_ID_<SKU> for deck / RPG handbook / subscription / etc. so the /redeem license-verify fallback (resolveLicense) resolves every offer, not just the book; document the env\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/gumroad-sku-product-ids.md",
       "note": "1.62 GSKU",
       "bridge": {
@@ -31440,7 +31450,7 @@
      },
      {
       "id": "backlog-bcc",
-      "text": "BAR Capture Consolidation: make /bars/capture the sole BAR creation surface by closing 4 canvas gaps: (1) post-capture confirmation overlay (\"A seed is on the board\" + \"Tune now →\" + \"Back to board\"); (2) intent/tags field (storyContent)…",
+      "text": "BAR Capture Consolidation: make /bars/capture the sole BAR creation surface by closing 4 canvas gaps: (1) post-capture confirmation overlay (\"A seed is on the board\" + \"Tune now \u2192\" + \"Back to board\"); (2) intent/tags field (storyContent)\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bar-capture-consolidation/spec.md",
       "note": "1.39.6 BCC",
       "bridge": {
@@ -31450,7 +31460,7 @@
      },
      {
       "id": "backlog-bde",
-      "text": "321 → BAR draft experience: (tweet-like BAR; BarDraftFrom321 + short composed body; system title non-prominent; quick path: allyship domain required, nation/archetype gating hidden; optional image; reversible artifact dispatch;…",
+      "text": "321 \u2192 BAR draft experience: (tweet-like BAR; BarDraftFrom321 + short composed body; system title non-prominent; quick path: allyship domain required, nation/archetype gating hidden; optional image; reversible artifact dispatch;\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/321-bar-draft-experience/spec.md",
       "note": "1.40 BDE",
       "bridge": {
@@ -31460,7 +31470,7 @@
      },
      {
       "id": "backlog-cbb",
-      "text": "CYOA blueprint → BAR metabolism: (auth-aware CTAs; cardinality-aware copy; in-voice choice labels; blueprint → prompt library → BAR ledger; modal + Transcendence recap; hexagram state in cyoaState; milestone hooks)",
+      "text": "CYOA blueprint \u2192 BAR metabolism: (auth-aware CTAs; cardinality-aware copy; in-voice choice labels; blueprint \u2192 prompt library \u2192 BAR ledger; modal + Transcendence recap; hexagram state in cyoaState; milestone hooks)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/cyoa-blueprint-bar-metabolism/spec.md",
       "note": "1.41 CBB",
       "bridge": {
@@ -31480,7 +31490,7 @@
      },
      {
       "id": "backlog-pfcg",
-      "text": "Player-facing CYOA generator: (ITD additions: coach identity anchor, revenue Phase 0, designer shadow checkpoint — see spec.md) (sovereignty-first; BAR→quest→CYOA; vibey UI + quality bar; earned dominion; campaign proposal queue; phases…",
+      "text": "Player-facing CYOA generator: (ITD additions: coach identity anchor, revenue Phase 0, designer shadow checkpoint \u2014 see spec.md) (sovereignty-first; BAR\u2192quest\u2192CYOA; vibey UI + quality bar; earned dominion; campaign proposal queue; phases\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/player-facing-cyoa-generator/spec.md",
       "note": "1.43 PFCG",
       "bridge": {
@@ -31490,7 +31500,7 @@
      },
      {
       "id": "backlog-pmel",
-      "text": "Party mini-game — event game layer: (Bruised Banana Apr 4/5 bingo pilot; 3×3 tap grid → optional BAR vault stamp party-mini-game-v1; taxonomy path for author-defined mini-games)",
+      "text": "Party mini-game \u2014 event game layer: (Bruised Banana Apr 4/5 bingo pilot; 3\u00d73 tap grid \u2192 optional BAR vault stamp party-mini-game-v1; taxonomy path for author-defined mini-games)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/party-mini-game-event-layer/spec.md",
       "note": "1.44 PMEL",
       "bridge": {
@@ -31510,7 +31520,7 @@
      },
      {
       "id": "backlog-eip",
-      "text": "Event invite BAR — party + Partiful + event-scoped initiation: (BAR as primary invite; partifulUrl + eventSlug; /campaign/event/[eventSlug]/initiation; dedicated Twine Adventure per event; extends event_invite CYOA MVP)",
+      "text": "Event invite BAR \u2014 party + Partiful + event-scoped initiation: (BAR as primary invite; partifulUrl + eventSlug; /campaign/event/[eventSlug]/initiation; dedicated Twine Adventure per event; extends event_invite CYOA MVP)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/event-invite-party-initiation/spec.md",
       "note": "1.46 EIP",
       "bridge": {
@@ -31520,7 +31530,7 @@
      },
      {
       "id": "backlog-ppt",
-      "text": "Public teaser — /play loop (no account): logged-out /play explains Charge → Scene Atlas → I Ching; login/join CTAs w/ callbackUrl; no fake playable steps without auth",
+      "text": "Public teaser \u2014 /play loop (no account): logged-out /play explains Charge \u2192 Scene Atlas \u2192 I Ching; login/join CTAs w/ callbackUrl; no fake playable steps without auth",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/play-public-teaser-loop/spec.md",
       "note": "1.48 PPT",
       "bridge": {
@@ -31530,7 +31540,7 @@
      },
      {
       "id": "backlog-obt",
-      "text": "Offer BAR (timebank) + DSW modal: Time/Space paths on /event/donate/wizard open a modal to create an offerBAR (marketplace-oriented metadata: skilled/unskilled, hours, scheduling); aligns with time-banking norms ([TimeBank Boulder —…",
+      "text": "Offer BAR (timebank) + DSW modal: Time/Space paths on /event/donate/wizard open a modal to create an offerBAR (marketplace-oriented metadata: skilled/unskilled, hours, scheduling); aligns with time-banking norms ([TimeBank Boulder \u2014\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/offer-bar-timebank-wizard-modal/spec.md",
       "note": "1.52 OBT",
       "bridge": {
@@ -31550,7 +31560,7 @@
      },
      {
       "id": "backlog-smb",
-      "text": "Spoke move seed beds: hub spoke → BAR (required to finish) → nursery: four move beds per (campaignRef, spoke); first mover per (campaignRef, spokeIndex, moveType) anchors spoke BAR; anyone plants with any BAR or waters campaign_kernel;…",
+      "text": "Spoke move seed beds: hub spoke \u2192 BAR (required to finish) \u2192 nursery: four move beds per (campaignRef, spoke); first mover per (campaignRef, spokeIndex, moveType) anchors spoke BAR; anyone plants with any BAR or waters campaign_kernel;\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/spoke-move-seed-beds/spec.md",
       "note": "1.56 SMB",
       "bridge": {
@@ -31560,7 +31570,7 @@
      },
      {
       "id": "backlog-lcg",
-      "text": "Library-conditioned GM generation: retrieve Book.extractedText chunks into GM passage generation (cite-or-silence); optional Instance defaults (Phase B); golden traces + cert cert-library-conditioned-gm-v1; trains six faces on…",
+      "text": "Library-conditioned GM generation: retrieve Book.extractedText chunks into GM passage generation (cite-or-silence); optional Instance defaults (Phase B); golden traces + cert cert-library-conditioned-gm-v1; trains six faces on\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/library-conditioned-gm-generation/spec.md",
       "note": "1.57 LCG",
       "bridge": {
@@ -31570,7 +31580,7 @@
      },
      {
       "id": "backlog-csc",
-      "text": "Campaign subcampaigns: Path C ontology: domain-keyed child campaigns under parent campaignRef (e.g. bruised-banana + RAISE_AWARENESS orientation); nested depth + compound refs; reconcile with ACEC (awareness run vs long-lived subcampaign…",
+      "text": "Campaign subcampaigns: Path C ontology: domain-keyed child campaigns under parent campaignRef (e.g. bruised-banana + RAISE_AWARENESS orientation); nested depth + compound refs; reconcile with ACEC (awareness run vs long-lived subcampaign\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/campaign-subcampaigns/spec.md",
       "note": "1.59 CSC",
       "bridge": {
@@ -31580,7 +31590,7 @@
      },
      {
       "id": "backlog-cfb",
-      "text": "Cert feedback blob persistence: Cert & site-signal feedback → durable storage (Vercel Blob). Today POST /api/feedback/cert, POST /api/feedback/site-signal, and [quest-engine Share Your Signal append](../../src/actions/quest-engine.ts)…",
+      "text": "Cert feedback blob persistence: Cert & site-signal feedback \u2192 durable storage (Vercel Blob). Today POST /api/feedback/cert, POST /api/feedback/site-signal, and [quest-engine Share Your Signal append](../../src/actions/quest-engine.ts)\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/cert-feedback-blob-persistence/spec.md",
       "note": "1.60 CFB",
       "bridge": {
@@ -31590,7 +31600,7 @@
      },
      {
       "id": "backlog-snp",
-      "text": "Spatial navigator + awake signal (parent epic) — Shipped (slice): CFB v1 Blob mirror + feedback:export-blob + site-signal bottom-sheet / lighter overlay (awake signal UX). Remaining: SMB, BUO, CSC, HSM P2, BLW scoped. — Use case: players…",
+      "text": "Spatial navigator + awake signal (parent epic) \u2014 Shipped (slice): CFB v1 Blob mirror + feedback:export-blob + site-signal bottom-sheet / lighter overlay (awake signal UX). Remaining: SMB, BUO, CSC, HSM P2, BLW scoped. \u2014 Use case: players\u2026",
       "link": "",
       "note": "1.71 SNP",
       "bridge": {
@@ -31600,7 +31610,7 @@
      },
      {
       "id": "backlog-gscp",
-      "text": "Generated spoke CYOA pipeline: v1: generated grammatical CYOA per hub spoke; opening = campaign context + fortune + live milestone + fundraising; four-move focus + charge (spoke-scoped); cultivation sifu (six GM faces) → signature…",
+      "text": "Generated spoke CYOA pipeline: v1: generated grammatical CYOA per hub spoke; opening = campaign context + fortune + live milestone + fundraising; four-move focus + charge (spoke-scoped); cultivation sifu (six GM faces) \u2192 signature\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specs/generated-spoke-cyoa-pipeline/spec.md",
       "note": "1.72 GSCP",
       "bridge": {
@@ -31610,7 +31620,7 @@
      },
      {
       "id": "backlog-cog",
-      "text": "Campaign ontology + campaignRef spine (batched) — [campaign-ontology-alignment](../specs/campaign-ontology-alignment/spec.md) + [campaignref-inventory-audit](../specs/campaignref-inventory-audit/spec.md). GitHub: [#39 Docs: Campaign…",
+      "text": "Campaign ontology + campaignRef spine (batched) \u2014 [campaign-ontology-alignment](../specs/campaign-ontology-alignment/spec.md) + [campaignref-inventory-audit](../specs/campaignref-inventory-audit/spec.md). GitHub: [#39 Docs: Campaign\u2026",
       "link": "",
       "note": "1.74 COG",
       "bridge": {
@@ -31620,7 +31630,7 @@
      },
      {
       "id": "backlog-hwc",
-      "text": "Humanoid v1 walkable contract: 512×64 RGBA, anchor (32,56), npm run sprites:validate-humanoid. GitHub: [#45 Spike: Walkable sprite pipeline demo (env + WASD)](https://github.com/johnair01/bars-engine/issues/45) (demo spike; contract +…",
+      "text": "Humanoid v1 walkable contract: 512\u00d764 RGBA, anchor (32,56), npm run sprites:validate-humanoid. GitHub: [#45 Spike: Walkable sprite pipeline demo (env + WASD)](https://github.com/johnair01/bars-engine/issues/45) (demo spike; contract +\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specs/humanoid-v1-walkable-contract/spec.md",
       "note": "1.75 HWC",
       "bridge": {
@@ -31640,7 +31650,7 @@
      },
      {
       "id": "backlog-bcs",
-      "text": "Book → CYOA stewardship (1st party): . GitHub: [#46 Spec: 1st-party book → CYOA stewardship (Phase A pilot)](https://github.com/johnair01/bars-engine/issues/46). Batch with Book OS v1 when…",
+      "text": "Book \u2192 CYOA stewardship (1st party): . GitHub: [#46 Spec: 1st-party book \u2192 CYOA stewardship (Phase A pilot)](https://github.com/johnair01/bars-engine/issues/46). Batch with Book OS v1 when\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specs/book-cyoa-stewardship/spec.md",
       "note": "1.77 BCS",
       "bridge": {
@@ -31650,7 +31660,7 @@
      },
      {
       "id": "backlog-adl",
-      "text": "Allyship Deck Literacy: make the deck legible + actionable without a guidebook. P1 deep-linkable /deck/glossary (built from move-library data) + inline term links on cards; P2 \"Your move\" — surface the submove action (MoveCard.action) on…",
+      "text": "Allyship Deck Literacy: make the deck legible + actionable without a guidebook. P1 deep-linkable /deck/glossary (built from move-library data) + inline term links on cards; P2 \"Your move\" \u2014 surface the submove action (MoveCard.action) on\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specs/allyship-deck-literacy/spec.md",
       "note": "1.81.1 ADL",
       "bridge": {
@@ -31660,7 +31670,7 @@
      },
      {
       "id": "backlog-tsg",
-      "text": "Throughput Spine — Go-Live: consolidating epic that makes the personal→collective spine walkable end-to-end: capture → seed (quest/daemon/artifact) → tend (Vault) → attach to a campaign → advance a well-crafted milestone. Closes two…",
+      "text": "Throughput Spine \u2014 Go-Live: consolidating epic that makes the personal\u2192collective spine walkable end-to-end: capture \u2192 seed (quest/daemon/artifact) \u2192 tend (Vault) \u2192 attach to a campaign \u2192 advance a well-crafted milestone. Closes two\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specs/throughput-spine-go-live/spec.md",
       "note": "1.82 TSG",
       "bridge": {
@@ -31670,7 +31680,7 @@
      },
      {
       "id": "backlog-iax",
-      "text": "Integral Axes — allyship domain inner/outer: 4 domains × {inner,outer} = 8-cell board; 5 WAVE moves = inner column; WAVE_TO_DOMAIN → MOVE_CELL_AFFINITY (cosmetic Q1 flavor only, no progress/energy effect); Grow Up = ordinary inner move…",
+      "text": "Integral Axes \u2014 allyship domain inner/outer: 4 domains \u00d7 {inner,outer} = 8-cell board; 5 WAVE moves = inner column; WAVE_TO_DOMAIN \u2192 MOVE_CELL_AFFINITY (cosmetic Q1 flavor only, no progress/energy effect); Grow Up = ordinary inner move\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specs/integral-axes/spec.md",
       "note": "1.83 IAX",
       "bridge": {
@@ -31680,7 +31690,7 @@
      },
      {
       "id": "backlog-y",
-      "text": "Bruised Banana House Instance: (dedicated Instance + seed; v1 shipped: bruise-banana-house / campaignRef=bruised-banana-house, npm run seed:bb-house, [runbook](../../docs/BRUISED_BANANA_HOUSE_INSTANCE.md); recurring quests + house state…",
+      "text": "Bruised Banana House Instance: (dedicated Instance + seed; v1 shipped: bruise-banana-house / campaignRef=bruised-banana-house, npm run seed:bb-house, [runbook](../../docs/BRUISED_BANANA_HOUSE_INSTANCE.md); recurring quests + house state\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specs/bruised-banana-house-instance/spec.md",
       "note": "21 Y",
       "bridge": {
@@ -31700,7 +31710,7 @@
      },
      {
       "id": "backlog-el",
-      "text": "Attunement Translation: (Vibeulon economy: Global/Local; attune; transmute; VibeulonLedger) — Phase 1: [mint/burn audit](../../docs/ECONOMY_MINT_BURN_AUDIT.md); full attunement UI in spec tasks",
+      "text": "Attunement Translation: (Vibeulon economy: Global/Local; attune; transmute; VibeulonLedger) \u2014 Phase 1: [mint/burn audit](../../docs/ECONOMY_MINT_BURN_AUDIT.md); full attunement UI in spec tasks",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/attunement-translation/spec.md",
       "note": "0.73 EL",
       "bridge": {
@@ -31720,7 +31730,7 @@
      },
      {
       "id": "backlog-eq",
-      "text": "Wake-Up Campaign Birthday Pivot: (campaign as narrative funnel: 5 Acts — Fracture, Spiral, Greenhouse, Ask, Oath)",
+      "text": "Wake-Up Campaign Birthday Pivot: (campaign as narrative funnel: 5 Acts \u2014 Fracture, Spiral, Greenhouse, Ask, Oath)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/wake-up-campaign-birthday-pivot/spec.md",
       "note": "0.78 EQ",
       "bridge": {
@@ -31730,7 +31740,7 @@
      },
      {
       "id": "backlog-fm",
-      "text": "BAR → Quest Generation Engine v0: (BAR eligibility → interpretation → emotional alchemy → quest proposal → admin review → publication)",
+      "text": "BAR \u2192 Quest Generation Engine v0: (BAR eligibility \u2192 interpretation \u2192 emotional alchemy \u2192 quest proposal \u2192 admin review \u2192 publication)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bar-quest-generation-engine/spec.md",
       "note": "1.00 FM",
       "bridge": {
@@ -31760,7 +31770,7 @@
      },
      {
       "id": "backlog-gg",
-      "text": "Custom Portal Onboarding Flow v0: (invite token → 5-scene questionnaire → campaignState → createCampaignPlayer; extends Bruised Banana)",
+      "text": "Custom Portal Onboarding Flow v0: (invite token \u2192 5-scene questionnaire \u2192 campaignState \u2192 createCampaignPlayer; extends Bruised Banana)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/custom-portal-onboarding/spec.md",
       "note": "1.15 GG",
       "bridge": {
@@ -31770,7 +31780,7 @@
      },
      {
       "id": "backlog-dop",
-      "text": "Demo Orientation Preview: (shareable pre-signup orientation slice; token/slug → adventure bounds; handoff to signup w/ ref/invite; complements GP invites)",
+      "text": "Demo Orientation Preview: (shareable pre-signup orientation slice; token/slug \u2192 adventure bounds; handoff to signup w/ ref/invite; complements GP invites)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/demo-orientation-preview/spec.md",
       "note": "1.15.1 DOP",
       "bridge": {
@@ -31820,7 +31830,7 @@
      },
      {
       "id": "backlog-caf",
-      "text": "Campaign Authoring Flow: (top-down passage view with face badges + fill status; context panel in edit; per-passage AI generation; Phase 2: campaign hub + deck spawn; Phase 3: PDF bridge; Phase 4: kernel→whole campaign)",
+      "text": "Campaign Authoring Flow: (top-down passage view with face badges + fill status; context panel in edit; per-passage AI generation; Phase 2: campaign hub + deck spawn; Phase 3: PDF bridge; Phase 4: kernel\u2192whole campaign)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/campaign-authoring-flow/spec.md",
       "note": "0.03.5 CAF",
       "bridge": {
@@ -31840,7 +31850,7 @@
      },
      {
       "id": "backlog-sn",
-      "text": "321 Suggest Name Deterministic: (6-face grammar; multi-click suggest w/ attempt; name resolution persists; NPC merge from 321 metadata → matching agent players; daemon→NPC growth Phase 8)",
+      "text": "321 Suggest Name Deterministic: (6-face grammar; multi-click suggest w/ attempt; name resolution persists; NPC merge from 321 metadata \u2192 matching agent players; daemon\u2192NPC growth Phase 8)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/321-suggest-name/spec.md",
       "note": "1.25 SN",
       "bridge": {
@@ -31900,7 +31910,7 @@
      },
      {
       "id": "backlog-dsbd",
-      "text": "Dominion-Style BAR Decks: (Library → Decks → Hand; borrow nation/archetype decks; deck creation quest thread; campaign domain decks collective; ActorDeckState for BARs; charge/321 → Library)",
+      "text": "Dominion-Style BAR Decks: (Library \u2192 Decks \u2192 Hand; borrow nation/archetype decks; deck creation quest thread; campaign domain decks collective; ActorDeckState for BARs; charge/321 \u2192 Library)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/dominion-style-bar-decks/spec.md",
       "note": "1.30 DSBD",
       "bridge": {
@@ -31910,7 +31920,7 @@
      },
      {
       "id": "backlog-csg",
-      "text": "Scene Atlas: (52-card BarDeck; compass / personal divination map; 2×2 axes as four suits; BAR + BarBinding; pedagogy for all players; creator lab, private-by-default)",
+      "text": "Scene Atlas: (52-card BarDeck; compass / personal divination map; 2\u00d72 axes as four suits; BAR + BarBinding; pedagogy for all players; creator lab, private-by-default)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/creator-scene-grid-deck/spec.md",
       "note": "1.32 CSG",
       "bridge": {
@@ -31920,7 +31930,7 @@
      },
      {
       "id": "backlog-sag",
-      "text": "Scene Atlas Game Loop: (personal vs collective throughput; dashboard IA; daily Atlas limit; campaign I Ching; north star; Wii-style demos; Charge→Atlas bridge)",
+      "text": "Scene Atlas Game Loop: (personal vs collective throughput; dashboard IA; daily Atlas limit; campaign I Ching; north star; Wii-style demos; Charge\u2192Atlas bridge)",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/scene-atlas-game-loop/spec.md",
       "note": "1.33 SAG",
       "bridge": {
@@ -31930,7 +31940,7 @@
      },
      {
       "id": "backlog-pdh",
-      "text": "Prompt deck draw + shared hand: (52 topo; rank→Wake/Clean/Grow/Show levels + wild; pick deck → draw; one 5-slot hand across archetype+nation decks; per-deck play-cycle discard; reshuffle when empty; discard ≠ grid — BarBinding untouched…",
+      "text": "Prompt deck draw + shared hand: (52 topo; rank\u2192Wake/Clean/Grow/Show levels + wild; pick deck \u2192 draw; one 5-slot hand across archetype+nation decks; per-deck play-cycle discard; reshuffle when empty; discard \u2260 grid \u2014 BarBinding untouched\u2026",
       "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/prompt-deck-draw-hand/spec.md",
       "note": "1.34 PDH",
       "bridge": {
@@ -31965,7 +31975,7 @@
      },
      {
       "id": "board-loop-ahead-two",
-      "text": "Art and design rounds now start themselves. Each strand with a contract (council/loops/<strand>.json, docs/loops.md) names its next round, how it is checked and its budget; when a round ends, the coordinator starts the next one without…",
+      "text": "Art and design rounds now start themselves. Each strand with a contract (council/loops/<strand>.json, docs/loops.md) names its next round, how it is checked and its budget; when a round ends, the coordinator starts the next one without\u2026",
       "ref": "loop-ahead-two",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
       "note": "position, stands unless you flip it, loop engineering",
@@ -31976,7 +31986,7 @@
      },
      {
       "id": "board-loop-auto-gate",
-      "text": "A round starts itself only when its gate is auto: no money spent, no account signed into or changed, nothing published outside the project, and no council/faces.yaml change. A round that needs your eyes, money or accounts waits and shows…",
+      "text": "A round starts itself only when its gate is auto: no money spent, no account signed into or changed, nothing published outside the project, and no council/faces.yaml change. A round that needs your eyes, money or accounts waits and shows\u2026",
       "ref": "loop-auto-gate",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
       "note": "position, stands unless you flip it, loop engineering",
@@ -31998,7 +32008,7 @@
      },
      {
       "id": "board-lens-pitch-goals",
-      "text": "When a domain has no goals, the board's Tap the Vein box offers that domain's prompt. The board read pitches year goals from what you wrote, quoting your line, and each pitch you keep is written to bars-engine as an active Lens goal. The…",
+      "text": "When a domain has no goals, the board's Tap the Vein box offers that domain's prompt. The board read pitches year goals from what you wrote, quoting your line, and each pitch you keep is written to bars-engine as an active Lens goal. The\u2026",
       "ref": "lens-pitch-goals",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
       "note": "position, stands unless you flip it, lenses 1",
@@ -32009,7 +32019,7 @@
      },
      {
       "id": "board-lens-intake-align",
-      "text": "The full Tap the Vein intake lists everything you can do today, and the board read gives each item one line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches. Each line carries a written reason, not a word…",
+      "text": "The full Tap the Vein intake lists everything you can do today, and the board read gives each item one line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches. Each line carries a written reason, not a word\u2026",
       "ref": "lens-intake-align",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
       "note": "position, stands unless you flip it, lenses 1",
@@ -32020,7 +32030,7 @@
      },
      {
       "id": "board-lens-order",
-      "text": "Build order: the goals export and the Lenses panel first, goal pitches second, the full intake third. The alignment check needs goals to align to. Locking one domain at bars-engine.vercel.app/lenses/onboarding before then is optional and…",
+      "text": "Build order: the goals export and the Lenses panel first, goal pitches second, the full intake third. The alignment check needs goals to align to. Locking one domain at bars-engine.vercel.app/lenses/onboarding before then is optional and\u2026",
       "ref": "lens-order",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
       "note": "position, stands unless you flip it, lenses 1",
