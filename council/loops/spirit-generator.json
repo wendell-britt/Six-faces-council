@@ -4,7 +4,8 @@
   "loop": "spirit look art rounds (Shellback proof)",
   "max_ahead": 2,
   "every_round": [
-    "the round's new or changed models in the spirit page's 3D viewer, each state and element he can pick, turn and zoom on his phone (page/viewer_models.py in bars-engine, .txt files published beside the page; Wendell, 2026-10-16: \"that's where I'm doing a lot of my visual review from\")"
+    "the round's new or changed models in the spirit page's 3D viewer, each state and element he can pick, turn and zoom on his phone (page/viewer_models.py in bars-engine, one gzipped pack per state published beside the page, viewer_models.py --pack; Wendell, 2026-10-16: \"that's where I'm doing a lot of my visual review from\")",
+    "before any animal base is modelled or reshaped, real photographs of that animal pulled first (Wikimedia Commons or another free source, three or more views, saved as a reference sheet in the round's files folder) and the model checked against them for head carriage, ears, proportions and markings, never built from memory (Wendell via the coordinator, 2026-10-17: round 18's Pallas's cat was modelled from memory and looks wrong)"
   ],
   "last_look": {
     "round": 17,
@@ -178,9 +179,19 @@
     },
     {
       "round": 19,
-      "status": "next",
+      "status": "done",
       "builds": "First, room on the page: version 23 holds 494 of the 511 files a version may hold and its HTML is 13.8 MB of the 16 MB limit, so the next base does not fit as it stands. Repack every stateful base's viewer models one file per state ({element: {stage: model}}, viewer_models.py --pack extended, the page's PACKED reading it), which frees about 100 files, before adding anything. Then the sixth daemon family's first base, the Victim's by default (dmt-next-families: the Victim as the teller; the next row of GESTURES.md after the Skeptic and the Fixer, whose families exist). Written image prompt first, naming the family and its two or three bases (missing-art rule); the family's own gas and core; living creature a quadruped on its own four feet with nothing in its paws (sg-romp-four-feet); built with its three satisfaction states from the start through shellback.py --state, its dissatisfied stance the Victim's collapsed yield pushed further (ss-feral-stance); its satisfied upright ally takes the Victim's HONORED pose (dmt-ally-honored), models packed per state. If his look at page version 23 (the hedgehog and Pallas's cat) redirects the Hedge, that comes first.",
       "check": "Contact sheet of the base's 25 renders beside the llama and the badger; reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind, with a shuffle seed of its own (rounds 17 and 18 shared one). The base in the page's 3D viewer in every element, form and state, and every earlier base still loading after the repack.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "ontology_profile": "default"
+    },
+    {
+      "round": 20,
+      "status": "next",
+      "builds": "The Ballad's other two bases, the basset hound and the elephant (council/loops/prompts/spirit-generator-r19.md holds their image prompts), on the donkey's teardrop gas, bell core, scrolls and storyteller's tunic and belled collar (shellback.py's BALLAD tables, family \"ballad\"). Photographs of each animal pulled first and the models checked against them (every_round). Living creatures quadrupeds on their own four feet with nothing in their paws (sg-romp-four-feet), built with their three satisfaction states from the start through shellback.py --state: dissatisfied the Victim's collapsed yield pushed further (the hound's ears trailing, the elephant's trunk hung to the ground), satisfied the yield become the story (head up and voice raised: the hound baying, the elephant trumpeting, trunk up); the upright allies take the Victim's HONORED pose (dmt-ally-honored), models packed per state. If his look at page version 28 (the donkey) redirects the Ballad, that comes first.",
+      "check": "Contact sheet of each base's 25 renders beside the donkey and the llama; each reads as its animal at the 96 px sprite; each fifteen-sprite squint sheet in wood sorts 13 of 15 blind, each with a shuffle seed of its own (states_sheet.py --seed). Both bases in the page's 3D viewer in every element, form and state, and every earlier base still loading.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus",
