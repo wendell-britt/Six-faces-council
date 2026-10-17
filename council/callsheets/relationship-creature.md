@@ -1,4 +1,4 @@
-2026-10-17 (updated 00:45)
+2026-10-17 (updated 03:15)
 ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
@@ -175,8 +175,12 @@ Open, in order:
    so either order is safe. Read the store with ArtifactData in the thread that runs it; its contents go nowhere else.
 3. **Share with Ari** only after step 02 is ticked: copy the invite link from the More sheet. If Ari can't make a
    bars-engine account, that is a board question.
-4. Round 2 from his play notes, on Opus, from the 23:45 entry. The artifact page stays as it is and is retired once he
-   plays here.
+4. **Round 2, cozy and fun** (2026-10-17, board read 01:40: `bh-async-first` overruled after Ari said it is not cozy or
+   fun enough). Gap list and the ChatGPT prompt: `council/passes/BETWEEN_round2_cozy_2026-10-17.md`. Waiting on his
+   concept image, Your steps list `between-round2-concept` step 01; he attaches it in the thread "Between round 2: cozy".
+   Then one Opus thread builds place, light, creature and sitting together (gaps 1 to 5) as one bars-engine pull
+   request, opens it on an iPhone, and puts a "try this" step on the board; gaps 6 to 10 are round 3. The artifact page
+   stays as it is and is retired once he plays here.
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
