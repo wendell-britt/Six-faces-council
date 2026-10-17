@@ -1,0 +1,65 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T01:40:28.075Z",
+ "answers": {
+  "bh-stop-patching": {
+   "kind": "position",
+   "savedAt": "2026-10-17T01:37:38.569Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bh-move-to-bars-engine": {
+   "kind": "position",
+   "savedAt": "2026-10-17T01:37:48.416Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bh-async-first": {
+   "kind": "position",
+   "savedAt": "2026-10-17T01:40:00.501Z",
+   "status": "overrule",
+   "steer": "No I pitched this to Ari and they said it’s not enough and I might not be going far enough in how cozy and fun to be in this space needs to be. She’s pre-empting the kind of refinement passes she’s seen me do with our agents in the past and is already excited for the v5 of this. We want to explore what we’d need to deftly meet the expectations based on what our oneshot and the current state of the environment is. We can actually generate an image with ChatGPT as a concept image and build from there as a way to create strong immersion "
+  },
+  "bh-device-gate": {
+   "kind": "position",
+   "savedAt": "2026-10-17T01:40:07.714Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bh-spark-carries": {
+   "kind": "position",
+   "savedAt": "2026-10-17T01:40:14.714Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sg-hedge-family": {
+   "kind": "position",
+   "savedAt": "2026-10-17T01:40:28.075Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-cuffs-look-10",
+   "at": "2026-10-17T01:36:16.000Z",
+   "what": "ticked",
+   "do": "Look at the cuffs fix you asked for (\"we do still need to fix the cuffs\"). The sleeve ends came out of the drape as crumpled loops, so the cream cuff band was cut in torn patches, and a spike of the turned-under edge hung below each hand where the front and back of the sleeve meet. Each cuff is now a smooth ring round the forearm with an even cream band, the spike is gone, and the cuff moves with the forearm so it keeps its shape as the arm swings. Open j5r10-cuffs-walk-slow.mp4 first: round 9 on top, round 10 below, the right hand followed through one step from the side, the front three-quarter and behind, at a third of the speed (j5r10-cuffs-walk.mp4 is full speed). j5r10-cuffs-still.jpg shows both cuffs standing still, round 9 over round 10. The sleeve end is still a wide bell that hangs round the hand; say if you want it narrower or shorter. Under this step, note 'yes' or what still looks wrong."
+  },
+  {
+   "id": "j5-cuffs-look-10",
+   "at": "2026-10-17T01:36:16.000Z",
+   "what": "note",
+   "note": "(Given in the J5 cuffs thread, 2026-10-17 01:36) Better but still bad. They are moving like solid objects and not clothes.",
+   "do": "Look at the cuffs fix you asked for (\"we do still need to fix the cuffs\"). The sleeve ends came out of the drape as crumpled loops, so the cream cuff band was cut in torn patches, and a spike of the turned-under edge hung below each hand where the front and back of the sleeve meet. Each cuff is now a smooth ring round the forearm with an even cream band, the spike is gone, and the cuff moves with the forearm so it keeps its shape as the arm swings. Open j5r10-cuffs-walk-slow.mp4 first: round 9 on top, round 10 below, the right hand followed through one step from the side, the front three-quarter and behind, at a third of the speed (j5r10-cuffs-walk.mp4 is full speed). j5r10-cuffs-still.jpg shows both cuffs standing still, round 9 over round 10. The sleeve end is still a wide bell that hangs round the hand; say if you want it narrower or shorter. Under this step, note 'yes' or what still looks wrong."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "positions/bh-async-first: Overruled (steer: \"No I pitched this to Ari and they said it’s not enough and I might not be going far enough in how cozy and fun to be in this space needs to be. She’s pre-empting the kind of refinement passes she’s seen me do with our agents in the past and is already excited for the v5 of this. We want to explore what we’d need to deftly meet the expectations based on what our oneshot and the current state of the environment is. We can actually generate an image with ChatGPT as a concept image and build from there as a way to create strong immersion\")",
+  "steps/j5-cuffs-look-10: note \"(Given in the J5 cuffs thread, 2026-10-17 01:36) Better but still bad. They are moving like solid objects and not clothes.\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
