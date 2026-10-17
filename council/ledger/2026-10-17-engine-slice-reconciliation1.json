@@ -1,0 +1,25 @@
+{
+ "date": "2026-10-17",
+ "battle": "engine-slice-reconciliation",
+ "repo": "six-faces-council",
+ "kind": "reconciliation",
+ "note": "Engine-slice reconciliation session (callsheet council/callsheets/engine-slice.md): the built sprout slice measured against pass slice 1's four-layer contract. Analysis only — no code, no balance, no story text. The map is filled with evidence in sprout docs/engine-contract.md: layer 0 has no day clock (state.js holds heart/drain/edgePts/counters/events, loop not day); layer 1 has farm verbs and the grounding choice but no sleep/day-commit (fires per fight); layer 2 has all numbers declared in data/slice.json but per-feature resolution with no shared resolver and no resolution records — so the substrate-removal falsifier cannot run yet; layer 3 has no story graph or IR, but edgePts recognition stands as the tension representation (the playtest's no-hints recognition question); layer 4 has sprout's own negotiation fight plus wave.js as local forms. Position pos-slice-encounter declares sprout's fight the local form, the trust reducer a borrowed library (nothing moves between repos), and EncounterDefinition/EncounterOccurrence as the seam's record shape. Three owner items survived the reach test and are now board questions: q-slice-typechart-inferred, q-slice-heart-pool, q-slice-playtest-order. Wendell's 2026-10-16 ruling stands: sprout is the substrate home; bars-engine stays a library. Live-board sync pending: rows are on main's board_data.json; sync_board.py needs a saved live page to union with the Artifact store, and no claude.ai session is available in this environment.",
+ "pass": "engine-slice 1 (reconciliation)",
+ "cast": "none (reconciliation session per callsheet; analysis only)",
+ "rows_file": "council/callsheets/rows/engine-slice-2026-10-17.json",
+ "reconciliation": "sprout/docs/engine-contract.md",
+ "positions": [
+  "pos-slice-day",
+  "pos-slice-rules",
+  "pos-slice-passage",
+  "pos-slice-encounter"
+ ],
+ "questions": [
+  "q-slice-typechart-inferred",
+  "q-slice-heart-pool",
+  "q-slice-playtest-order"
+ ],
+ "flipped": [],
+ "dissent": false,
+ "recorded_by": "zo session con_isLAz4RD6RIU6UUD"
+}
