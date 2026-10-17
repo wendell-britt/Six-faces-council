@@ -9619,6 +9619,17 @@
    "auto": true,
    "pos": "Ari's spark and everything in the 3D garden's store move to the bars-engine store in the thread that builds the route: read once from the artifact, written once to Postgres, never into a repo or a reply. The garden is shared with Ari only after it opens on your phone. This stands unless you flip it.",
    "why": "The spark was copied into the 3D page's store the night it was built and is the one thing of yours in it. The Shaman: Ari's first sight of the garden should be one that works. Source: council/passes/6FACE_PASS_between-hosting1_2026-10-17.md"
+  },
+  {
+   "id": "sg-hedge-family",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "spirit round 17",
+   "auto": true,
+   "pos": "The Skeptic's body family is the Hedge, with three animal bases: the llama, the hedgehog and the Pallas's cat, three animals that draw back before they trust. The llama is built first (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85, version 22, in the 3D viewer). Its gas is a question mark of motes, its core is an almond-cut gem behind two bronze lids so only a slit shows, it carries a hand lens on a cord, and its ally form is an examiner in a long tunic under a hooded cape. Its states are the Skeptic's pull: dissatisfied draws the neck back and turns the head away, forefeet braced; satisfied reaches forward with the head turned toward you. Family names are drafts. This stands unless you flip it.",
+   "why": "The urge picks the family (sg-body-from A) and the Skeptic is the next row of GESTURES.md after the Controller. To hedge is to hold back from committing, and the Skeptic's movement is pull. The llama's long neck carries that pull further than any other body. No art existed, so the image prompts were written first: council/loops/prompts/spirit-generator-r17.md. A blind sort of its fifteen state sprites got 15 of 15."
   }
  ],
  "questions": [
