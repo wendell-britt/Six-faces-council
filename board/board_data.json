@@ -27082,6 +27082,79 @@
      "architect"
     ],
     "pass": "projection paint-over 1"
+   },
+   "pos-ac-embedded-not-marketplace": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:18:03.777Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "pos-ac-paid-hours": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:18:32.875Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "steer": "Yes and I’d even want to explore how to leverage sourcecred and timebanking for legibility",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "pos-ac-curriculum-from-evidence": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:18:40.737Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "pos-ac-provenance-frame": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:18:48.438Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "pos-ac-minimal-holacracy": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:18:52.324Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "pos-ac-commons-engine": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:19:04.674Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "artist-corps 1"
    }
   },
   "questions": {
@@ -29516,6 +29589,67 @@
      "shaman"
     ],
     "pass": "projection paint-over 1"
+   },
+   "q-ac-ai-boundary": {
+    "decision": "c",
+    "label": "Case-by-case per client consent",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:15:01.230Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "q-ac-employment-form": {
+    "decision": "c",
+    "label": "Contractors + placement fees",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:15:33.141Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "steer": "Contractors to cooperative member pipeline",
+    "faces": [
+     "regent"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "q-ac-standalone-or-inside": {
+    "decision": "a",
+    "label": "Standalone 501(c)(3)",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:15:48.006Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "q-ac-first-anchor": {
+    "decision": "a",
+    "label": "Warm start in your network",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:16:13.830Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "artist-corps 1"
+   },
+   "q-slice-referee-clear-2": {
+    "decision": "B",
+    "label": "Still unclear (say where in the steer box)",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:17:43.629Z",
+    "record": "council/ledger/2026-10-17-pull-201904.json (six-faces-council)",
+    "steer": "So the system in place id want to model for story beats the apocalypse engine. So the idea that there are ranked outcomes and negative outcomes roll against a table (the 2d6 model)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "engine-slice 2 (worked example)"
    }
   },
   "causes": {
