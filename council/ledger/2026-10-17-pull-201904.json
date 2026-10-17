@@ -1,0 +1,85 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T20:19:04.674Z",
+ "answers": {
+  "q-ac-ai-boundary": {
+   "kind": "question",
+   "choice": "c",
+   "savedAt": "2026-10-17T20:15:01.230Z",
+   "steer": ""
+  },
+  "q-ac-employment-form": {
+   "kind": "question",
+   "choice": "c",
+   "savedAt": "2026-10-17T20:15:33.141Z",
+   "steer": "Contractors to cooperative member pipeline "
+  },
+  "q-ac-standalone-or-inside": {
+   "kind": "question",
+   "choice": "a",
+   "savedAt": "2026-10-17T20:15:48.006Z",
+   "steer": ""
+  },
+  "q-ac-first-anchor": {
+   "kind": "question",
+   "choice": "a",
+   "savedAt": "2026-10-17T20:16:13.830Z",
+   "steer": ""
+  },
+  "q-slice-referee-clear-2": {
+   "kind": "question",
+   "choice": "B",
+   "savedAt": "2026-10-17T20:17:43.629Z",
+   "steer": "So the system in place id want to model for story beats the apocalypse engine. So the idea that there are ranked outcomes and negative outcomes roll against a table (the 2d6 model)"
+  },
+  "pos-ac-embedded-not-marketplace": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:18:03.777Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-paid-hours": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:18:32.875Z",
+   "status": "stands",
+   "steer": "Yes and I’d even want to explore how to leverage sourcecred and timebanking for legibility "
+  },
+  "pos-ac-curriculum-from-evidence": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:18:40.737Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-provenance-frame": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:18:48.438Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-minimal-holacracy": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:18:52.324Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-commons-engine": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:19:04.674Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/q-ac-ai-boundary: Case-by-case per client consent",
+  "questions/q-ac-employment-form: Contractors + placement fees (steer: \"Contractors to cooperative member pipeline\")",
+  "questions/q-ac-standalone-or-inside: Standalone 501(c)(3)",
+  "questions/q-ac-first-anchor: Warm start in your network",
+  "questions/q-slice-referee-clear-2: Still unclear (say where in the steer box) (steer: \"So the system in place id want to model for story beats the apocalypse engine. So the idea that there are ranked outcomes and negative outcomes roll against a table (the 2d6 model)\")",
+  "positions/pos-ac-paid-hours: Stands (steer: \"Yes and I’d even want to explore how to leverage sourcecred and timebanking for legibility\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
