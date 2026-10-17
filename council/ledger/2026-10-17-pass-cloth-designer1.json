@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-17",
+ "battle": "j5-cloth",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Cloth through a fashion designer's eyes, pass 1, called by Wendell in the J5 cuffs thread after round 10 (bars-engine #359). Two research subagents, no daemons. Builds on the cloth postmortem (XPBD + painted limits). Resolved: the robe reads solid because skinned sleeves share the arm's timing; spring-bone chains on the sleeve rims next, a mass map in the XPBD rebuild, the cut stays. Write-up: doc tab 'Through a designer's eyes' at https://claude.ai/artifact/Srk4nKN4GdbsriodvfSfgn.",
+ "steer": "Better but still bad. They are moving like solid objects and not clothes. Let's do some 6 game master research on deft ways to render clothes in environment similar to ours in the genre we are exploring and expanding into. If you were a fashion designer who decided they wanted to learn how to create clothes for games what intuitions and principles for how real cloth moves would be violated and what advantages does digital first have for giving the illusion of moving clothes?",
+ "pass": "council/passes/6FACE_PASS_cloth-designer1_2026-10-17.md",
+ "casts": {
+  "shaman": "17 Following, lines 2, 5, becoming 54",
+  "architect": "47 Drained, lines 1, 3, becoming 43",
+  "challenger": "29 Depths, lines 3, 4, becoming 28",
+  "regent": "1 Unbroken, lines 3, becoming 10",
+  "diplomat": "5 Hosting, lines 1, 4, 5, becoming 32",
+  "sage": "26 Reserves, lines 3, 6, becoming 19"
+ },
+ "positions": [
+  "cd-sleeve-springs",
+  "cd-hem-mass",
+  "cd-keep-cut"
+ ],
+ "questions": [],
+ "unanimous": false,
+ "dissent": "Challenger: a panel re-cut may be the real fix; raise it if the sleeves pass T1 and still read solid.",
+ "subagent_tokens": 197000,
+ "ruling": "pending",
+ "tests": [
+  {
+   "id": "T1",
+   "what": "sleeve rim lags the forearm 3 to 6 frames at the walk; rim coherence with the forearm below 0.8 (skinned today 1.0)",
+   "due": "2026-10-24"
+  },
+  {
+   "id": "T2",
+   "what": "no sleeve point inside the arm or body over the J4 walk and a fast arm swing",
+   "due": "2026-10-24"
+  },
+  {
+   "id": "T3",
+   "what": "springs for one figure under 0.2 ms on his iPhone",
+   "due": "2026-10-31"
+  }
+ ]
+}

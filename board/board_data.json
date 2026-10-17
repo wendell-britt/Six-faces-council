@@ -9630,6 +9630,41 @@
    "auto": true,
    "pos": "The Skeptic's body family is the Hedge, with three animal bases: the llama, the hedgehog and the Pallas's cat, three animals that draw back before they trust. The llama is built first (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85, version 22, in the 3D viewer). Its gas is a question mark of motes, its core is an almond-cut gem behind two bronze lids so only a slit shows, it carries a hand lens on a cord, and its ally form is an examiner in a long tunic under a hooded cape. Its states are the Skeptic's pull: dissatisfied draws the neck back and turns the head away, forefeet braced; satisfied reaches forward with the head turned toward you. Family names are drafts. This stands unless you flip it.",
    "why": "The urge picks the family (sg-body-from A) and the Skeptic is the next row of GESTURES.md after the Controller. To hedge is to hold back from committing, and the Skeptic's movement is pull. The llama's long neck carries that pull further than any other body. No art existed, so the image prompts were written first: council/loops/prompts/spirit-generator-r17.md. A blind sort of its fifteen state sprites got 15 of 15."
+  },
+  {
+   "id": "cd-sleeve-springs",
+   "faces": [
+    "architect",
+    "shaman",
+    "regent"
+   ],
+   "pass": "cloth designer 1",
+   "auto": true,
+   "pos": "The next cloth work gives the robe's sleeves spring-bone chains: two or three short chains per bell sleeve from the elbow, so the sleeve rim trails the arm and swings after it stops, with the clean cuff from round 10 riding the end of each chain. The same spring code runs in the game and in the test rig, and it is measured before you look: the rim must lag the forearm by 3 to 6 frames at a walk and stop moving in lockstep with it (tests T1 to T3 in the pass). Then a side-by-side clip goes on Your steps for your look. This stands unless you flip it.",
+   "why": "Your note on round 10 said the cuffs move like solid objects. The research names why: today's sleeves are skinned, so every point moves on the same frame as the arm, and studies of cloth perception (Bi et al. 2019) find that this uniform motion is exactly what makes cloth read as stiff. Spring chains are what stylized games ship for sleeves and sashes, and they do not wait on the skirt's rebuild. Write-up: tab 'Through a designer's eyes' at https://claude.ai/artifact/Srk4nKN4GdbsriodvfSfgn."
+  },
+  {
+   "id": "cd-hem-mass",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "cloth designer 1",
+   "auto": true,
+   "pos": "When the skirt's cloth is rebuilt on XPBD (the postmortem's plan), its painted maps gain a mass map that makes the hem and cuffs heavier than the body of the robe, so the hem swings wide and settles last. This stands unless you flip it.",
+   "why": "A designer weights a hem so it falls and swings; ours is the same weight all over. The mass map folds into a step the postmortem already plans, so it costs no extra round."
+  },
+  {
+   "id": "cd-keep-cut",
+   "faces": [
+    "regent",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "cloth designer 1",
+   "auto": true,
+   "pos": "The robe keeps its cut. Re-cutting it into panels or strips that move on their own stays a later lever, raised only if the sleeves pass their tests and you still say they read solid. This stands unless you flip it.",
+   "why": "A change of cut is your taste, and nothing yet says one is needed. The Challenger dissents: it thinks panels may be the real fix and wants them back on the table if the sleeves pass T1 and still read solid."
   }
  ],
  "questions": [
