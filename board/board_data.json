@@ -15570,6 +15570,34 @@
      "c": "In sprout each daemon fields a team of its family's spirits you battle like a gym leader, with a badge on a win; the cave stays a meeting. Most Pokemon-like; it builds a second combat loop to tune."
     }
    ]
+  },
+  {
+   "id": "cd-sleeve-open",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "cloth designer 1",
+   "q": "Widen the robe's sleeve openings so the cuffs can trail the hands? The council recommends A.",
+   "why_you": "Round 11 put the sleeves on springs, and the cuff now trails the forearm by 2 frames. The test the council set asks for 3 to 6, the lag that reads as cloth. The springs can reach 6, but then the hand passes about 6 cm through the cuff, because the opening is only a little wider than the hand. Round 8 narrowed it (CUFF_W from 0.40 to 0.26) when the sleeve was stiff. The record keeps the cut unless you change it (cd-keep-cut), because the robe's shape is your taste, so only you can answer. The council recommends A because the springs are built and tested, and a wider opening is the one change that lets them do their job. It is a setting in garments.py that can go back if you dislike the look.",
+   "not_before": "Raised by J5 round 11, 2026-10-17. It was held until the springs were measured (cd-keep-cut), and the measure says the opening is what limits them.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Widen the opening",
+     "c": "Round 12 widens the sleeve from mid-forearm back toward its round 7 width, so the cuff can swing 3 to 6 frames behind the hand without the hand going through it. The sleeve reads fuller, closer to a monk's robe."
+    },
+    {
+     "v": "B",
+     "label": "B. Keep the cut",
+     "c": "Round 11 stands as built, with the cuff trailing 2 frames. The next cloth work moves to the hem's weight (cd-hem-mass)."
+    },
+    {
+     "v": "C",
+     "label": "C. Re-cut into panels",
+     "c": "The Challenger's lever: the sleeve is cut into panels or strips that swing on their own. A bigger build, and the robe looks different."
+    }
+   ]
   }
  ],
  "causes": [
