@@ -26949,6 +26949,111 @@
      "diplomat"
     ],
     "pass": "engine-slice 1"
+   },
+   "pos-slice-bridge": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:03:51.411Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect",
+     "shaman",
+     "regent"
+    ],
+    "pass": "engine-slice 2"
+   },
+   "pos-slice-chart-stats": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:04:12.981Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "engine-slice 2"
+   },
+   "pos-slice-feasibility": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:04:25.200Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect",
+     "regent"
+    ],
+    "pass": "engine-slice 2"
+   },
+   "cd-panel-t1-eye": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:04:34.735Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect",
+     "regent"
+    ],
+    "pass": "J5 round 12, sleeve panels"
+   },
+   "cd-panel-cost": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:04:43.370Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent",
+     "architect"
+    ],
+    "pass": "J5 round 12, sleeve panels"
+   },
+   "ppo-paint-channel": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:05:06.090Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "projection paint-over 1"
+   },
+   "ppo-offaxis-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:05:12.706Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "projection paint-over 1"
+   },
+   "ppo-technique": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:05:27.995Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "steer": "We can do the brief in Claude",
+    "faces": [
+     "sage",
+     "regent",
+     "architect"
+    ],
+    "pass": "projection paint-over 1"
    }
   },
   "questions": {
@@ -29358,6 +29463,31 @@
      "regent"
     ],
     "pass": "engine-slice 1"
+   },
+   "q-slice-referee-clear": {
+    "decision": "B",
+    "label": "Not yet: explain more (say what's unclear in the steer box)",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:03:32.310Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "steer": "The roleplaying referee itself operates on multiple levels depending on the system.\n\nBattle mechanics and non battle skill mechanics. In this case the uncertainty would be around solving story encounters and faction relationships",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "engine-slice 2"
+   },
+   "ppo-who-paints": {
+    "decision": "code-paints",
+    "label": "Our code paints them",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T20:05:44.415Z",
+    "record": "council/ledger/2026-10-17-pull-200544.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "projection paint-over 1"
    }
   },
   "causes": {
