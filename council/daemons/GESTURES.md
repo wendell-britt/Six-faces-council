@@ -45,8 +45,8 @@ does for a child who is safe, standing toward the child. Rows are `HONORED` in b
 | Controller | grasp held lightly | upright and easy, one hand held out low and open, offering a hand to hold |
 | Skeptic | pull as discernment | weight even, a hand at the chin, the other arm across the body: considering on the child's behalf |
 | Fixer | reach offered | a soft lean, one hand reaching down to help the child up, the head bowed to it |
-| Victim | yield as rest | sunk low into strong knees, back straight, head up, palms open and forward: it can take the weight and be held |
-| Damaged Self | release, at last | upright, chest open, arms opened from its middle into a shelter for the child |
+| Victim | yield becomes the story | the storyteller, a jester or performer: chest up, one arm swept high presenting the tale, the other palm up, "and then..." (his note, 2026-10-17: "They've become the storyteller") |
+| Damaged Self | release, at last | bring it on: wide stance, chest out, chin up, arms flung open low with palms forward; it can take the hit so the child never has to (his note, 2026-10-17) |
 | Emotional Body | release in its time | both feet planted, both hands on its heart, chest open, head lifted |
 
 Every daemon's let-go (its Integrate action) now ends in its honored form.
