@@ -144,5 +144,13 @@
   stays honored; (3) backlog, not now: props for each daemon that show the nature of its job (Wendell, 2026-10-16: "We
   will eventually need props and such for them as well to really hit home the nature of their jobs").
 
-## Waiting on
-- Wendell's look at the honored forms and the let-go for all seven (bars-engine #356, 3D page above).
+## His look (2026-10-17 01:45 UTC)
+- Approved: "the let gos are where I want them to be." #356 and council #228 merge on it.
+
+## Next: council pass on meeting a daemon (new thread, Opus)
+His words, 2026-10-17: "The next thing we need to do is be able to have players as they get closer to the daemon to answer questions about how their body is responding to knowing they are going to meet a protector what kind of emotions are present and are the flooded veils satisfied or dissatisfied. I want to see how much of the spirit asset work we can use to break this down. I don't know if the daemons are pokemon trainers have have their own spirits that you can battle. OR IF the boss spirit becomes a daemon of the variety of our daemon ontology. Let's have the 6 game masters weigh in on this and specifically have the daemons self advocate for this. I think the victim at the storyteller level and as the sage should lead the charge"
+- A six-faces pass (`.claude/skills/six-faces/SKILL.md`, design-ontology loaded for a mechanic). The Victim at its honored storyteller level leads, speaking with the Sage. Every daemon advocates for itself through its own agent (daemon-*).
+- Questions for the pass: (1) the approach check-in: as the player walks toward a daemon, what the body is doing, which emotions are present, and whether the flooded and veiled states are satisfied or dissatisfied; (2) how the spirit assets (spirit-generator callsheet, the Holdfast and other families with their states) break this down; (3) whether daemons keep spirits the player can battle, like trainers, or whether a boss spirit becomes a daemon of the daemon ontology, or both.
+- Inputs: council/daemons/GESTURES.md (honored and charged forms), council/daemons/questions.yaml, council/callsheets/big-mind-cave.md, council/callsheets/spirit-generator.md, bars-engine bigmind.js STANCES.
+- What survives the reach test goes to the board; the rest stands as positions.
+- Backlog: props for each daemon's job.
