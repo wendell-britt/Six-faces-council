@@ -117,3 +117,14 @@ one referee procedure of five steps, two rule sets (battle chart, story need), a
 logbook lines. The revised question is `q-slice-referee-clear-2`. **On A:** one fresh Opus thread in sprout builds
 `pos-slice-feasibility` tests 1 to 5, as in "Next" above, and may take the example's logbook line shape as the
 starting point. **On B:** a second short Sonnet example answers the exact point he names.
+
+## Referee on 2d6 done (2026-10-17)
+
+Wendell answered `q-slice-referee-clear-2` B with a steer: story beats on the Apocalypse World model, ranked outcomes
+including negative ones, rolled against a 2d6 table. The third example is `council/passes/slice-referee-2d6_2026-10-17.md`
+(ledger `council/ledger/2026-10-17-referee-2d6-example.json`): fit becomes a modifier (listened +1, match +1, misread
+−1, standing for faction rolls, cap +3); 2d6 plus modifier reads hit 10+, partial 7–9 (player picks the cost), miss 6−
+(the referee takes the next rung of the faction's ranked consequence list; a hit climbs one back). Battle keeps its
+percentage. The revised question is `q-slice-referee-clear-3`. **On A:** one fresh Opus thread in sprout builds
+`pos-slice-feasibility` tests 1 to 5 as in "Next" above, story and faction on the 2d6 table, battle on its percentage.
+**On C:** the same build with battle also on 2d6 (the chart becomes its modifier). **On B:** another short example.
