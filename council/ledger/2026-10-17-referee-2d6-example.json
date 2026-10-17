@@ -1,0 +1,13 @@
+{
+ "date": "2026-10-17",
+ "kind": "answer",
+ "repo": "six-faces-council",
+ "file": "council/passes/slice-referee-2d6_2026-10-17.md",
+ "called_by": "Coordinator, on Wendell's B answer to q-slice-referee-clear-2 (council/ledger/2026-10-17-pull-201904.json)",
+ "question": "Answer his steer: model story beats on the Apocalypse World engine, with ranked outcomes, negative ones included, rolled against a 2d6 table.",
+ "ontology_profile": "QUICKSTART (light)",
+ "outputs": {
+  "questions": ["q-slice-referee-clear-3"]
+ },
+ "note": "Third worked example: one story encounter and one faction roll on 2d6 plus a modifier, read as hit (10+), partial (7-9, player picks the cost) or miss (6-, the referee takes the next rung of the faction's ranked consequence list). Battle keeps its percentage odds; option C on the board moves it to 2d6 too. All modifiers, costs and rungs are placeholders; nothing in sprout changes."
+}
