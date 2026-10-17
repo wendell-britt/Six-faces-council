@@ -9559,6 +9559,66 @@
    "auto": true,
    "pos": "The Controller's body family is the Holdfast, with three animal bases: the badger, the meerkat and the koala, three animals that hold on. The badger is built first (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85, version 19, in the 3D viewer). Its gas is a clenched fist of motes, its core is a square-cut gem held in four iron claws, and its ally form is a warden in a dark coat buttoned to a high collar with a ring of keys. Its states are the Controller's grasp: dissatisfied holds it further (legs locked, feet together, chin up), satisfied has let go. Family names are drafts. This stands unless you flip it.",
    "why": "The urge picks the family (sg-body-from A) and the NPC integration animation starts with the Controller's fist opening, so his family came next. A holdfast is the grip that keeps hold, and the Controller's movement is grasp (GESTURES.md). No art existed, so the image prompts were written first: council/loops/prompts/spirit-generator-r15.md. A first blind sort of its fifteen state sprites got 11 of 15, so the satisfied stance was widened; a fresh sort then got 15 of 15."
+  },
+  {
+   "id": "bh-stop-patching",
+   "faces": [
+    "challenger",
+    "regent",
+    "shaman"
+   ],
+   "pass": "between hosting 1",
+   "auto": true,
+   "pos": "No more fixes to the 3D Between artifact's plumbing. The page stays published as it is, as the reference design and the holder of Ari's spark, until the web version takes the spark over. This stands unless you flip it.",
+   "why": "Your words, 2026-10-17: \"This will ultimately be hosted on the web so let's sure we're being coherent about that mantras of trying to fix the artifact tool.\" Three patches passed in desktop Chromium with a stand-in store and failed on your phone; the code they touched is what a move to the web deletes. Source: council/passes/6FACE_PASS_between-hosting1_2026-10-17.md"
+  },
+  {
+   "id": "bh-move-to-bars-engine",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "between hosting 1",
+   "auto": true,
+   "pos": "The Between moves to bars-engine, at a route beside the caves behind your sign-in, with its own Postgres store in the garden's shape. It reuses the cave code and keeps every rc ruling. This stands unless you flip it.",
+   "why": "Your words: \"the WAVE and CAVES are all working on bars-engine\". The artifact was picked for its shared store and live presence; the store read is what hung on your phone, and bars-engine already has sign-in and Postgres (the Nonprofit Board). Source: council/passes/6FACE_PASS_between-hosting1_2026-10-17.md"
+  },
+  {
+   "id": "bh-async-first",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "between hosting 1",
+   "auto": true,
+   "pos": "The web version ships with async tending. The page checks for changes every few seconds, which also shows when the other person is there. A live channel is added only if your first play with Ari says that is not enough. This stands unless you flip it.",
+   "why": "rc-tend-alone and the 3D build brief's rulings make tending asynchronous; seeing each other walk is a pleasure, not the mechanic. The Challenger dissented: live presence is untested without it, so your first two-person play decides. Source: council/passes/6FACE_PASS_between-hosting1_2026-10-17.md"
+  },
+  {
+   "id": "bh-device-gate",
+   "faces": [
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "between hosting 1",
+   "auto": true,
+   "pos": "Nothing reaches you as \"try this\" until it has opened on an iPhone. The device check comes as a Your steps card with the preview link, what to tap and what you should see. A desktop test or a phone-sized window never counts as a phone test. This stands unless you flip it.",
+   "why": "The 3D build's done line was checked in desktop Chromium at phone width and failed on your phone three times. Your rule of 2026-10-12: every step carries full context. Source: council/passes/6FACE_PASS_between-hosting1_2026-10-17.md"
+  },
+  {
+   "id": "bh-spark-carries",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "between hosting 1",
+   "auto": true,
+   "pos": "Ari's spark and everything in the 3D garden's store move to the bars-engine store in the thread that builds the route: read once from the artifact, written once to Postgres, never into a repo or a reply. The garden is shared with Ari only after it opens on your phone. This stands unless you flip it.",
+   "why": "The spark was copied into the 3D page's store the night it was built and is the one thing of yours in it. The Shaman: Ari's first sight of the garden should be one that works. Source: council/passes/6FACE_PASS_between-hosting1_2026-10-17.md"
   }
  ],
  "questions": [
