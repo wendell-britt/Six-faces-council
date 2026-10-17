@@ -27264,6 +27264,94 @@
      "architect"
     ],
     "pass": "artist-corps 1"
+   },
+   "pos-ac-outside-money": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:29:55.549Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "artist-corps 2"
+   },
+   "pos-ac-t1-design": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:30:10.464Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "artist-corps 2"
+   },
+   "pos-ac-legibility-later": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:30:33.620Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "artist-corps 2"
+   },
+   "pos-ac-coop-pipeline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:30:49.340Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "architect"
+    ],
+    "pass": "artist-corps 2"
+   },
+   "pos-ac-consent-form": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:31:08.948Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "artist-corps 2"
+   },
+   "pos-ac-commons-license": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:31:19.591Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "architect"
+    ],
+    "pass": "artist-corps T3"
+   },
+   "pos-ac-phase1-done": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:31:26.796Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger",
+     "architect"
+    ],
+    "pass": "artist-corps 2"
    }
   },
   "questions": {
@@ -29759,6 +29847,18 @@
      "diplomat"
     ],
     "pass": "engine-slice 2 (worked example)"
+   },
+   "q-slice-referee-clear-3": {
+    "decision": "A",
+    "label": "Yes, that's it: build the referee",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T21:29:39.545Z",
+    "record": "council/ledger/2026-10-17-pull-213126.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "engine-slice 2 (2d6 example)"
    }
   },
   "causes": {
