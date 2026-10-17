@@ -26356,6 +26356,42 @@
      "diplomat"
     ],
     "pass": "daemon meeting 1"
+   },
+   "dmt-body-blockers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:55:14.261Z",
+    "record": "council/ledger/2026-10-17-pull-045536.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "daemon meeting 1, after your answers"
+   },
+   "dmt-same-order": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:55:25.919Z",
+    "record": "council/ledger/2026-10-17-pull-045536.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "daemon meeting 1, after your answers"
+   },
+   "dmt-victim-leads-review": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:55:36.975Z",
+    "record": "council/ledger/2026-10-17-pull-045536.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "daemon meeting 1, after your answers"
    }
   },
   "questions": {
@@ -30072,7 +30108,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-17T01:36:16.000Z",
+ "steps_recorded_through": "2026-10-17T04:37:09Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
