@@ -7,9 +7,9 @@
     "the round's new or changed models in the spirit page's 3D viewer, each state and element he can pick, turn and zoom on his phone (page/viewer_models.py in bars-engine, .txt files published beside the page; Wendell, 2026-10-16: \"that's where I'm doing a lot of my visual review from\")"
   ],
   "last_look": {
-    "round": 13,
-    "at": "2026-10-16T22:13:30Z",
-    "label": "spirit-generator-r13"
+    "round": 15,
+    "at": "2026-10-16T23:50:20Z",
+    "label": "spirit-generator-r15"
   },
   "rounds": [
     {
@@ -148,7 +148,7 @@
     },
     {
       "round": 16,
-      "status": "next",
+      "status": "running",
       "builds": "The Holdfast's other two bases, the meerkat and the koala (council/loops/prompts/spirit-generator-r15.md), on the badger's gas, clasped core, key ring and warden's coat, each built with its three states from the start (the Controller's grasp held and let go, HOLDFAST_POSE and HOLDFAST_ALLY in shellback.py), on four feet with nothing in its paws. If his look at page version 19 (the badger in 3D) redirects the badger or the family, that comes first.",
       "check": "Contact sheet of each base's 25 renders beside the badger; each reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind. Both bases in the page's 3D viewer in every element, form and state.",
       "gate": "auto",
