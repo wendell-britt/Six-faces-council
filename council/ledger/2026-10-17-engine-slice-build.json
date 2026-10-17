@@ -1,0 +1,18 @@
+{
+ "date": "2026-10-17",
+ "kind": "build",
+ "repo": "sprout",
+ "file": "docs/engine-contract.md",
+ "pr": "wendell-britt/sprout#56",
+ "called_by": "Coordinator, on Wendell's A answer to q-slice-referee-clear-3 (council/ledger/2026-10-17-pull-213126.json)",
+ "question": "Build pos-slice-feasibility tests 1 to 5 in sprout, story and faction on the 2d6 table, battle on its percentage, placeholder numbers unchanged.",
+ "ontology_profile": "QUICKSTART (light)",
+ "outputs": {
+  "questions": ["q-slice-chart-stats"]
+ },
+ "tests": {
+  "slice-bots-chart": "green: always-control 76% against restrain-then-feed 84-95% on the first offering in all 8 families; 3 distinct best lines across 8 families",
+  "slice-referee-off": "green: off, the logbook is empty, Mara never comes, standing stays 0, no door opens; fight and offering play identically over 200 seeds"
+ },
+ "note": "slice/referee.js (chart, percent, 2d6), slice/story.js (talk, faction request, Show Up Honestly, scene doors, sleep and the day's page), schemas/logbook-line.schema.json with a bars-engine trust-loop fixture. Finding for the board: every family's best line hits the 95% odds cap, so the invented stats change only fight length. q-slice-chart-stats replaces q-slice-typechart-inferred."
+}
