@@ -1,0 +1,13 @@
+{
+ "date": "2026-10-17",
+ "kind": "answer",
+ "repo": "six-faces-council",
+ "file": "council/passes/slice-referee-worked-example_2026-10-17.md",
+ "called_by": "Coordinator, on Wendell's B answer to q-slice-referee-clear (council/ledger/2026-10-17-pull-200544.json)",
+ "question": "Answer his note on the referee: it works at several levels, and he cannot see how it solves story encounters and faction relationships.",
+ "ontology_profile": "QUICKSTART (light)",
+ "outputs": {
+  "questions": ["q-slice-referee-clear-2"]
+ },
+ "note": "A worked example from the slice: one battle roll and one story and faction roll through the same five-step referee and logbook. All numbers are placeholders; nothing in sprout changes."
+}

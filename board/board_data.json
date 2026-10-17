@@ -16156,6 +16156,34 @@
      "c": "A session writes a painterly shader keyed to the concept's colours, so no person paints. No step for you and no AI art, and it will look less like the picture than a hand-painted view."
     }
    ]
+  },
+  {
+   "id": "q-slice-referee-clear-2",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "engine-slice 2 (worked example)",
+   "q": "You said the referee works on levels: battle rules and non-battle skill rules, and the part you could not see was how it solves a story encounter and a faction relationship. Here is one referee running both. Every uncertain action asks five questions: who is trying what against whom; how well does it fit what the other side needs (a battle rule set answers with the element chart, a story rule set answers with the need you listened for); what are the odds, then one roll; did it land; write one logbook line. BATTLE: you restrain the Earth spirit, then feed it. Odds 95%, roll 41, it lands, and the line reads 'offering, restrained then fed, ally, fed: yes'. STORY: because a line like 'offering, fed: no' is in the logbook, a neighbor from a faction called the Tenders (invented for this example) comes to the gate next morning. You listen first (it costs the beat) and learn she needs the plain truth; you tell it plainly. Odds 95%, roll 88, it lands, her trust goes 3 to 5, and the Tenders' standing with you goes up 1. If you guess without listening, the odds are 40% and a miss costs trust, but a safe move is always there. A faction is only a standing number that rises when lines about its members land; a story door is a condition on the logbook ('Tenders standing 2 or more'). Switch the referee off and Mara never arrives, the standing never moves, and the door never opens. The numbers are placeholders; the full walk-through is council/passes/slice-referee-worked-example_2026-10-17.md.",
+   "why_you": "You made 'does it make sense to you' the gate on the referee, and your note named exactly where it was unclear. Only you can say whether the example answers it.",
+   "not_before": "This replaces q-slice-referee-clear, which you answered B at 20:03 on 17 October. The first version had only a battle example; this one runs a story encounter and a faction through the same five steps.",
+   "options": [
+    {
+     "v": "A",
+     "label": "It makes sense: build the referee",
+     "c": "A fresh thread builds the five feasibility tests in sprout (pos-slice-feasibility), starting with the referee and its logbook, numbers unchanged."
+    },
+    {
+     "v": "B",
+     "label": "Still unclear (say where in the steer box)",
+     "c": "A second worked example answers the exact point you name, and the build waits."
+    },
+    {
+     "v": "C",
+     "label": "It makes sense, but I want something else",
+     "c": "Say what in the steer box; the six take it to a pass before anything is built."
+    }
+   ]
   }
  ],
  "causes": [
