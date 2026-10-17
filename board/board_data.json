@@ -9919,6 +9919,30 @@
    "auto": true,
    "pos": "The engine gets proven before any content is written. Five feasibility tests, in sprout: (1) the referee: the spirit fight and the ring offering both ask one referee and write to one logbook, with today's numbers unchanged; (2) one placeholder scene that fires because of a logbook line, not because a script says so; (3) one day that closes when you sleep and writes that day's page; (4) the Sprout fight writes the same logbook line that bars-engine's trust loop can write; (5) bots play the chart-and-stats model. The engine passes when a bot that always picks the controlling stance does worse than one that restrains then feeds, two spirit families of the same element need different best lines, and switching the referee off changes the logbook and the scene. Then one combined playtest, your answer B.",
    "why": "Your steer on pos-slice-passage: 'These are the main things we need feasibility testing on. If we get this engine going then generating content will be a breeze'. Your answer B on q-slice-playtest-order. The falsifiers are the Challenger's in council/passes/6FACE_PASS_slice2_2026-10-17.md. The build waits on q-slice-referee-clear."
+  },
+  {
+   "id": "cd-panel-t1-eye",
+   "faces": [
+    "challenger",
+    "architect",
+    "regent"
+   ],
+   "pass": "J5 round 12, sleeve panels",
+   "auto": true,
+   "pos": "A short cloth panel at the sleeve is judged by your eye in the clip. The test T1 (the cuff trailing the forearm by 3 to 6 frames, coherence under 0.8) is still measured and reported for the panels, and it no longer holds them back. This stands unless you flip it.",
+   "why": "T1 was written for a closed sleeve on springs. A 15 cm cloth panel swings at about 1.3 times a second, faster than the walk's arm swing of once a second, so it follows the arm in step: in round 12 the panels read lag 0 and coherence 0.93 to 0.95, and getting under 0.8 sent the panels flying 28 to 43 cm. Your own note was about the look (the cuffs \"moving like solid objects and not clothes\"), and you chose the panels for that look (cd-sleeve-open C). So the record answers it: the clip decides, and the numbers stay in the report. The Challenger keeps a test: if you still say the panels read solid in look step j5-panels-look-12, T1 comes back as the gate for the next cut."
+  },
+  {
+   "id": "cd-panel-cost",
+   "faces": [
+    "challenger",
+    "regent",
+    "architect"
+   ],
+   "pass": "J5 round 12, sleeve panels",
+   "auto": true,
+   "pos": "The sleeve panels stay as cloth, and the cloud's cost line for a robe with cloth sleeves is 5.5 ms a figure, up from 2.5. Your phone judges the frame rate when you play, as it does for the chamber (bpt-j1-frame-rate). The cuff's shake limit for a cloth cuff is 12 mm walking, up from 5, because it is now a hem that swings. This stands unless you flip it.",
+   "why": "On the same cloud runner, the robe with sleeves on springs costs 2.65 ms a figure and the cloth panels 4.85 to 5.0, because the panels add about 400 cloth points to the skirt's 570. The springs leave 17 forearm points through the sleeve at the walk, so they fail the clothing test J5; the cloth panels leave none. Trimming the edge test saved 0.6 ms; running it every other step saved 0.6 more but made the cuff shake 15.5 mm, so it was undone. The cloud browser draws without a graphics chip, so its numbers only bound the cloth's share. If you flip this, the next round cuts the panels to fewer cloth points, or the sleeves go back to springs and their 17 points through."
   }
  ],
  "questions": [
