@@ -15733,16 +15733,19 @@
    "not_before": "The four-layer contract was named in chat on 2026-10-16 and this is the first pass on the slice; no ruling exists on where the substrate lives, and the spec kit cannot open without a home.",
    "options": [
     {
+     "v": "bars-engine",
      "label": "bars-engine",
-     "consequence": "Fastest: every verified asset is local. Risk: the game's identity dilutes inside a large repo, and sprout's battles keep pointing elsewhere."
+     "c": "Fastest: every verified asset is local. Risk: the game's identity dilutes inside a large repo, and sprout's battles keep pointing elsewhere."
     },
     {
+     "v": "sprout",
      "label": "sprout",
-     "consequence": "Honors the battles' home. Risk: sprout is not cloned or registered locally, so setup cost lands before any slice code runs."
+     "c": "Honors the battles' home. Risk: sprout is not cloned or registered locally, so setup cost lands before any slice code runs."
     },
     {
+     "v": "new-registered-repo",
      "label": "new registered repo",
-     "consequence": "A clean substrate contract with sprout as first client. Risk: new infrastructure is your authority and carries standing cost."
+     "c": "A clean substrate contract with sprout as first client. Risk: new infrastructure is your authority and carries standing cost."
     }
    ]
   },
@@ -15758,16 +15761,19 @@
    "not_before": "The slice-plan flagged both relations to you at build time (S4, 'Tell me what you want'); the council first read the full chart on 2026-10-16, and no pass has ruled on the cycle's table.",
    "options": [
     {
+     "v": "A",
      "label": "Ratify the placeholders as canon (same = a little damage; generated-by = almost none)",
-     "consequence": "What the build teaches now becomes canon and the playtest data stays valid. Risk: same-element reads as an attack inside a cycle the game teaches as nourishing."
+     "c": "What the build teaches now becomes canon and the playtest data stays valid. Risk: same-element reads as an attack inside a cycle the game teaches as nourishing."
     },
     {
+     "v": "B",
      "label": "Same-element feeds (satisfaction, no damage)",
-     "consequence": "The generating cycle stays nourishing in every relation. Risk: two of five stances feed, which softens the fight's pressure and the Demand ladder."
+     "c": "The generating cycle stays nourishing in every relation. Risk: two of five stances feed, which softens the fight's pressure and the Demand ladder."
     },
     {
+     "v": "C",
      "label": "Leave them as placeholders and let the first live playtest decide",
-     "consequence": "No canon yet; the recognition data decides. Risk: the playtest's answers are collected under numbers that are not yet what you mean."
+     "c": "No canon yet; the recognition data decides. Risk: the playtest's answers are collected under numbers that are not yet what you mean."
     }
    ]
   },
@@ -15783,16 +15789,19 @@
    "not_before": "The slice-plan recorded the question when S3 was built ('Tell me if you would rather the heart itself drop'); the council read it first on 2026-10-16 and no pass has ruled on the pool.",
    "options": [
     {
+     "v": "A",
      "label": "Keep the separate pool (as built)",
-     "consequence": "Every grounding stays visible as its own cause, and the heart stays a one-way blessing per design.md's resources table. Cost: three numbers where the decision line says one, and the edge no longer literally summarizes heart against drain."
+     "c": "Every grounding stays visible as its own cause, and the heart stays a one-way blessing per design.md's resources table. Cost: three numbers where the decision line says one, and the edge no longer literally summarizes heart against drain."
     },
     {
+     "v": "B",
      "label": "Edge = drain minus heart, with the heart allowed to drop",
-     "consequence": "Two numbers, and the edge is the arithmetic the decision line describes. Cost: it contradicts 'never lowered', and three earth groundings would absorb every later well grounding — the reason S3 moved away from it."
+     "c": "Two numbers, and the edge is the arithmetic the decision line describes. Cost: it contradicts 'never lowered', and three earth groundings would absorb every later well grounding — the reason S3 moved away from it."
     },
     {
+     "v": "C",
      "label": "Keep the pool now, revisit after the first live playtest",
-     "consequence": "The recognition question tests visibility as built. Cost: a ruling deferred, and the numbers are still placeholders either way."
+     "c": "The recognition question tests visibility as built. Cost: a ruling deferred, and the numbers are still placeholders either way."
     }
    ]
   },
@@ -15808,16 +15817,19 @@
    "not_before": "The deferral ruled 2026-10-02, before the four-layer contract existed; nothing has reconciled the two since.",
    "options": [
     {
+     "v": "A",
      "label": "Playtest the built slice first",
-     "consequence": "The loop's felt verdict arrives before more scaffolding, and the engine slice builds on tested ground. Cost: a second playtest later for the engine seams."
+     "c": "The loop's felt verdict arrives before more scaffolding, and the engine slice builds on tested ground. Cost: a second playtest later for the engine seams."
     },
     {
+     "v": "B",
      "label": "Build the engine slice first, one combined playtest after",
-     "consequence": "One playtest covers loop and contract. Cost: two variables per playtest — if the felt moment fails, you cannot tell whether the loop or the new seam is at fault."
+     "c": "One playtest covers loop and contract. Cost: two variables per playtest — if the felt moment fails, you cannot tell whether the loop or the new seam is at fault."
     },
     {
+     "v": "C",
      "label": "Keep deferred until more content",
-     "consequence": "Status quo; the automated playtests stand in. Cost: the contract's falsifiers (what the resolution changed) stay unrun, and every layer above the loop is built on an untested felt moment."
+     "c": "Status quo; the automated playtests stand in. Cost: the contract's falsifiers (what the resolution changed) stay unrun, and every layer above the loop is built on an untested felt moment."
     }
    ]
   }
