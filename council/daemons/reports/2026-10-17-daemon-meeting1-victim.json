@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-17",
+  "pass": "daemon-meeting1",
+  "daemon": "victim",
+  "face": "sage",
+  "cast": "59 -> 24",
+  "model": "sonnet",
+  "tokens": "26534",
+  "report": "2026-10-17-daemon-meeting1-victim.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "I yield on their behalf (my gesture is yield, collapsed [1]).",
+        "Read the Victim-honored form, the storyteller whose \"and then...\" continues [1]."
+      ],
+      "url": null,
+      "quote": "Victim yield collapsed",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "The next chamber shows only breathing light and a sound [2].",
+        "Charge is read by slider, trust is kept separately, and satisfaction states exist [2][5].",
+        "Trust moves count only if it does [2]."
+      ],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Meeting a voice asks how YOU feel, and the answer spawns a spirit [3].",
+        "The answer spawns the walking spirit, as bmt-meeting-spirit says [3]."
+      ],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "Pay the Player gets: a walk that feels like a story, and a spirit that vouches for them [4].",
+        "My family, Victim, is unbuilt [4].",
+        "That is the Emotional Body's Commentator seat [4], and it takes the feeling from the player.",
+        "A charge nobody named: \"dissatisfied\" can read as \"you failed.\" Somatic report gives sensation, not one compulsory interpretation [4].",
+        "The satisfied spirit then vouches [4].",
+        "The urge to be heard picks it, per sg-body-from [4].",
+        "It protects the player from being told what they feel, from intimate disclosure becoming currency, and from a trial that reads dissatisfied as failure [4]."
+      ],
+      "url": null,
+      "quote": "Tells the story of seeing what nobody else sees",
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "Charge is read by slider, trust is kept separately, and satisfaction states exist [2][5].",
+        "A veiled or flooded spirit hides or swamps its own satisfaction state (ss-not-veiled) [5].",
+        "In the cave, satisfaction comes only from a named gold state, never a number [5].",
+        "The wild spirit is met dissatisfied, as the held movement pushed further [5]."
+      ],
+      "url": null,
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [],
+      "url": null,
+      "quote": "What shadow sympathy does your advocacy get you?",
+      "label": "unlabelled"
+    }
+  ]
+}
