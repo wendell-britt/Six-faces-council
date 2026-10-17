@@ -1,0 +1,36 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T05:09:13.342Z",
+ "answers": {
+  "slice-contract": {
+   "kind": "position",
+   "savedAt": "2026-10-17T05:08:37.877Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "slice-ontology-types": {
+   "kind": "position",
+   "savedAt": "2026-10-17T05:08:59.242Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "slice-falsifier": {
+   "kind": "position",
+   "savedAt": "2026-10-17T05:09:05.811Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "slice-reuse": {
+   "kind": "position",
+   "savedAt": "2026-10-17T05:09:13.342Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
