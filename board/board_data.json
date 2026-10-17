@@ -9943,6 +9943,41 @@
    "auto": true,
    "pos": "The sleeve panels stay as cloth, and the cloud's cost line for a robe with cloth sleeves is 5.5 ms a figure, up from 2.5. Your phone judges the frame rate when you play, as it does for the chamber (bpt-j1-frame-rate). The cuff's shake limit for a cloth cuff is 12 mm walking, up from 5, because it is now a hem that swings. This stands unless you flip it.",
    "why": "On the same cloud runner, the robe with sleeves on springs costs 2.65 ms a figure and the cloth panels 4.85 to 5.0, because the panels add about 400 cloth points to the skirt's 570. The springs leave 17 forearm points through the sleeve at the walk, so they fail the clothing test J5; the cloth panels leave none. Trimming the edge test saved 0.6 ms; running it every other step saved 0.6 more but made the cuff shake 15.5 mm, so it was undone. The cloud browser draws without a graphics chip, so its numbers only bound the cloth's share. If you flip this, the next round cuts the panels to fewer cloth points, or the sleeves go back to springs and their 17 points through."
+  },
+  {
+   "id": "ppo-technique",
+   "faces": [
+    "sage",
+    "regent",
+    "architect"
+   ],
+   "pass": "projection paint-over 1",
+   "auto": true,
+   "pos": "The projection paint-over (a concept rebuilt as simple blocks, rendered from fixed cameras, painted over, and the painting projected back onto the blocks) enters the design ontology as a technique, through a Codex brief. It fits small places seen from a few set views, like the Between, and does not fit the caves, where you walk freely. This stands unless you flip it.",
+   "why": "You asked for it to be added. The ontology is written with Codex (docs/ontology-in-flows.md), and the technique sits inside the asset_sourcing section the asset-sources brief adds, so there is one vocabulary. Source: council/passes/6FACE_PASS_projection-paintover1_2026-10-17.md; brief docs/codex/projection-paint-over-brief.md (PR #256)."
+  },
+  {
+   "id": "ppo-paint-channel",
+   "faces": [
+    "regent",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "projection paint-over 1",
+   "auto": true,
+   "pos": "A ChatGPT paint-over is a private preview. The painting that ships on a page is painted by a person or made by our own code, and its manifest row names the painter. GPT pictures animated with Minimax do not enter; characters stay on the rigged models we build. This stands unless you flip it.",
+   "why": "Your ruling cs-chatgpt-ai-art (concept only, 12 October): ChatGPT art is a reference and nothing from ChatGPT ships. Also cs-cc0-or-own and the first-class non-AI route. The post's pipeline ships a GPT painting as the whole surface, which that ruling forbids. Source: the pass, Regent and Challenger."
+  },
+  {
+   "id": "ppo-offaxis-first",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "projection paint-over 1",
+   "auto": true,
+   "pos": "No build ships the technique before one painted view, projected onto the hollow, holds up where a player actually sits and turns and 1 m off its camera. Round 3 of the Between also waits for your round 2 note. This stands unless you flip it.",
+   "why": "A projected painting smears on surfaces seen edge-on and has no paint where its camera could not see; the only evidence so far is one post. The Between thread already recommended changing one thing at a time. Source: the pass, Challenger; bh-device-gate."
   }
  ],
  "questions": [
@@ -15919,6 +15954,34 @@
      "v": "C",
      "label": "It makes sense, but I want something else",
      "c": "Say what in the steer box; the six take it to a pass before anything is built."
+    }
+   ]
+  },
+  {
+   "id": "ppo-who-paints",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "projection paint-over 1",
+   "q": "If round 3 of the Between uses the projection paint-over, who paints the four views that ship? The council recommends you paint them by hand.",
+   "why_you": "The record says a person or our own code paints what ships (ppo-paint-channel). It holds nothing on whether you want to paint, which person paints, or money for an artist, and money is reserved to you. Your answer decides what round 3 builds and which step you get.",
+   "not_before": "The technique reached the record today (17 October), from the post you shared in The Between thread.",
+   "options": [
+    {
+     "v": "you-paint",
+     "label": "You paint them by hand (recommended)",
+     "c": "You get one step: four screenshots of the hollow with faint outlines, to paint over on your phone or iPad in the concept's style. No money, your hand on the place, and Ari could paint a wall later if invited."
+    },
+    {
+     "v": "artist",
+     "label": "A hired artist paints them",
+     "c": "The council drafts a short brief and the painting template; you choose and pay the artist. Closest to the illustration, and it costs money and waiting."
+    },
+    {
+     "v": "code-paints",
+     "label": "Our code paints them",
+     "c": "A session writes a painterly shader keyed to the concept's colours, so no person paints. No step for you and no AI art, and it will look less like the picture than a hand-painted view."
     }
    ]
   }
