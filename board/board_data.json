@@ -26110,6 +26110,151 @@
      "shaman"
     ],
     "pass": "spirit round 17"
+   },
+   "cd-sleeve-springs": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:19:06.959Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman",
+     "regent"
+    ],
+    "pass": "cloth designer 1"
+   },
+   "cd-hem-mass": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:19:14.759Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "cloth designer 1"
+   },
+   "cd-keep-cut": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:19:20.426Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "cloth designer 1"
+   },
+   "dmt-approach-checkin": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:19:27.662Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat",
+     "regent"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-body-first": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:20:04.764Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "steer": "We want to mix this with the blockers constriction strength tension and numbness as well",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-storyteller-line": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:20:39.125Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "steer": "I meant the\nVictim daemon in the 6 game master\nReview",
+    "faces": [
+     "shaman",
+     "sage"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-two-axes": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:20:52.245Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-spirit-from-answers": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:21:51.212Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "steer": "We want people to go through  the same order at least at first. This only connects if it’s a daemon who is merged with another one if the sensation doesn’t match",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-ally-honored": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:22:07.012Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-vouch-once": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:22:16.981Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-bring-it-on": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:22:25.738Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "dmt-next-families": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:22:34.707Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "daemon meeting 1"
    }
   },
   "questions": {
@@ -28449,6 +28594,29 @@
      "shaman"
     ],
     "pass": "relationship creature 1"
+   },
+   "dmt-trainer": {
+    "decision": "A",
+    "label": "Both, in order; the daemon is never fought",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:18:40.616Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "daemon meeting 1"
+   },
+   "cd-sleeve-open": {
+    "decision": "C",
+    "label": "Re-cut into panels",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T04:18:57.035Z",
+    "record": "council/ledger/2026-10-17-pull-042234.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "cloth designer 1"
    }
   },
   "causes": {
