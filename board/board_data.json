@@ -28754,6 +28754,16 @@
      "challenger"
     ],
     "pass": "cloth designer 1"
+   },
+   "slice-substrate-home": {
+    "decision": "sprout",
+    "label": "Sprout - registered and cloned; slice and substrate build there",
+    "recorded": "2026-10-16",
+    "record": "ledger/2026-10-16-chat-sprout-registration.json",
+    "faces": [
+     "regent",
+     "architect"
+    ]
    }
   },
   "causes": {
