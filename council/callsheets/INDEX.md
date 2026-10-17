@@ -5,7 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
-- [artist-corps](artist-corps.md), 2026-10-17: artist-training non-profit; his rulings recorded (AI case-by-case per client consent, contractors to cooperative pipeline, standalone 501(c)(3), warm start; six `pos-ac-*` stand, SourceCred and timebanking to explore); next pass 2 starts with T2, the Phase 1 definition-of-done, due 10-23.
+- [artist-corps](artist-corps.md), 2026-10-17: artist-training non-profit; pass 2 done (Phase 1 definition-of-done, T1 design, plain hour log, contractor-to-cooperative pipeline, consent form); waits on Wendell's anchor step `artist-corps-anchor-01` (due 10-22) for T1; T3 commons license can start now.
 - [engine-slice](engine-slice.md), 2026-10-17: pass 2 done (plain rules explanation, Pokémon type-chart research, four-encounter bridge, feasibility tests); the build waits on board question q-slice-referee-clear.
 
 - [inner-creatures](inner-creatures.md), 2026-10-17: children raise inner creatures (Chiang's digients, parts work); research note maps 88 Marble social-emotional topics to channel, move and quadrant and derives 42 kata by age band (`council/research/2026-10-17-marble-kata/`); Wood thin, Open Up nearly absent; next a blind re-map, the empty 5-to-7 forms, a clinician read.

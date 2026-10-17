@@ -21,29 +21,31 @@ type of game. Wendell's answers of 2026-10-17 20:15 to 20:19 are recorded in
   SourceCred and timebanking for legibility, meaning how every hour (client, commons, awareness) becomes visible and
   countable. Exploration only; nothing adopted yet.
 
-## Next: pass artist-corps 2
+## Pass 2 (2026-10-17)
 
-Load no ontology (`docs/ontology-in-flows.md`). One thread, Opus, council pass. Challenger's dissent from pass 1 is the
-spine: economics before structure. Order:
+`council/passes/6FACE_PASS_artist-corps2_2026-10-17.md`, ledger `council/ledger/2026-10-17-pass-artist-corps2.json`.
+T2 is met: the Phase 1 definition-of-done is `pos-ac-phase1-done`. New positions: `pos-ac-outside-money`,
+`pos-ac-t1-design`, `pos-ac-legibility-later` (plain hour log; SourceCred no; timebanking at the Phase 2 pass; Shaman
+dissents), `pos-ac-coop-pipeline` (contractor, associate, member; lawyer flag, test T4 due 11-20), `pos-ac-consent-form`.
+No questions. Step `artist-corps-anchor-01` (list `artist-corps`, due 10-22) asks Wendell to name the anchor non-profit,
+or write "shortlist".
 
-1. T2 first, due 2026-10-23: write the Phase 1 definition-of-done (one artist, one non-profit, one funded
-   deliverable, fully documented; what "done" proves; what stops it). Nothing recruits before it exists.
-2. T1 design, due 2026-10-30: the test that scopes and prices one real non-profit deliverable human-only against that
-   org's current spend. Needs the anchor: the warm start means a non-profit from his network, which only he can name.
-   Put that to the reach test; if it survives it goes to the board as a step with full context, not a chat question.
-3. Paid-hours legibility research: SourceCred (what it measures, how it fails at small scale) and timebanking (hour for
-   hour credit, tax treatment of time credits). Recommend one, none or a later gate. Record as a position.
-4. Contractor-to-cooperative pipeline: the stages and what triggers a move from one to the next, kept minimal
-   (`pos-ac-minimal-holacracy`). Name the legal risk of contractor status for people working inside the commons and
-   flag it for a lawyer; do not settle it.
-5. Consent protocol under the AI ruling: the one-page form a client signs per engagement.
+## Next
 
-T3 (commons license one-pager, due 2026-11-06) stays after pass 2.
+1. **When the anchor step has a note** (board pull lists it as needs work): with a name, run T1 per `pos-ac-t1-design`
+   (the org's Form 990 on ProPublica's Nonprofit Explorer, then a short ask list for his contact as a step). With
+   "shortlist", draft up to five candidates from his own work (podcast guests, Bruised Banana residency, Portland groups
+   in the repos) as a new step to pick from. Sonnet is enough for either.
+2. **T3, due 2026-11-06, needs nothing from him:** the commons license one-pager (ownership, use rights, payment). Can
+   start now in a fresh thread, Opus.
+3. **T4, due 2026-11-20:** a lawyer reads the contractor agreement and answers the three classification questions in the
+   pass file. Finding the lawyer becomes a step only after T1 has a number, since Phase 1 may rescope.
 
-Recommended next move: start pass 2 with T2 this week, because its date is nearest (10-23), it needs nothing from
-Wendell, and it makes the T1 anchor question concrete.
+Recommended next move: start T3 now, because it is the only open item that needs nothing from Wendell, and the
+engagement agreement in Phase 1 item 2 needs its terms.
 
 ## Files
 
 - `council/ledger/2026-10-16-pass-artist-corps1.json`, `council/ledger/2026-10-17-pull-201904.json`
-- board rows `pos-ac-*`, `q-ac-*` in `board/board_data.json`
+- `council/ledger/2026-10-17-pass-artist-corps2.json`, `council/passes/6FACE_PASS_artist-corps2_2026-10-17.md`
+- board rows `pos-ac-*`, `q-ac-*` in `board/board_data.json`; step `artist-corps-anchor-01` in the board store
