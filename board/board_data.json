@@ -10044,6 +10044,75 @@
    "auto": true,
    "pos": "No build ships the technique before one painted view, projected onto the hollow, holds up where a player actually sits and turns and 1 m off its camera. Round 3 of the Between also waits for your round 2 note. This stands unless you flip it.",
    "why": "A projected painting smears on surfaces seen edge-on and has no paint where its camera could not see; the only evidence so far is one post. The Between thread already recommended changing one thing at a time. Source: the pass, Challenger; bh-device-gate."
+  },
+  {
+   "id": "pos-ac-phase1-done",
+   "faces": [
+    "regent",
+    "challenger",
+    "architect"
+   ],
+   "pass": "artist-corps 2",
+   "auto": true,
+   "pos": "Phase 1 is done when all nine items hold: the anchor is named and T1 has priced the deliverable; an agreement is signed (scope, price, dates, an interim commons clause); the org signs the consent form before work starts; the money comes from outside you; a lawyer reads the contractor agreement first; the org accepts the work in writing; the artist is paid in full for every hour within 30 days; one asset is in the commons with its provenance; and a closing write-up records the cost, the gap, and both sides' words. Nothing recruits before the first item. This stands unless you flip it.",
+   "why": "Test T2 from pass 1 (due 2026-10-23) asked for this before any recruitment. Challenger's pass 1 dissent (economics before structure) sets the order. Full list, what it proves and what stops it: council/passes/6FACE_PASS_artist-corps2_2026-10-17.md."
+  },
+  {
+   "id": "pos-ac-outside-money",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "artist-corps 2",
+   "auto": true,
+   "pos": "Phase 1 closes only on money from outside you: the org's budget, a grant or a sponsor. A run you pay for yourself is recorded as a rehearsal and does not close Phase 1. This stands unless you flip it.",
+   "why": "A warm start (your answer A on q-ac-first-anchor) already risks a self-referential proof, as pass 1 said. If you also fund it, Phase 1 shows only that you can buy art. The Shaman adds that a warm start invites a favour, which would break pos-ac-paid-hours."
+  },
+  {
+   "id": "pos-ac-t1-design",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "artist-corps 2",
+   "auto": true,
+   "pos": "T1 asks the anchor org for one deliverable it needs in the next six months and what it spent on that kind of work in the last twelve; scopes it in hours (client, commons, awareness) at a named rate source; and writes down the human-only price, current spend and the gap in dollars by 2026-10-30. If the price is over twice current spend and no funder covers the gap by 2026-11-30, Phase 1 rescopes smaller before anyone is recruited. This stands unless you flip it.",
+   "why": "Pass 1 set T1 (due 2026-10-30). It waits only on the org's name, now step artist-corps-anchor-01 on Your steps. Public spending comes from the org's Form 990 on ProPublica's Nonprofit Explorer where it files one."
+  },
+  {
+   "id": "pos-ac-legibility-later",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "artist-corps 2",
+   "auto": true,
+   "pos": "For now every hour goes in a plain log (date, person, hours, category, rate paid) and is paid in dollars. SourceCred: no. Timebanking: re-weighed at the Phase 2 pass, never as a stand-in for pay. This stands unless you flip it.",
+   "why": "Your steer on pos-ac-paid-hours asked to explore both. SourceCred's organisation dissolved in 2022 when grant money and interest ran out, and it needs many contributors to score; users said it felt like everyone rating each other. Timebank credits fit mutual aid, but the IRS ruling on them is not precedent and trading credits for services an artist sells is likely taxable barter. Portland already has a timebank (hOur Exchange) a later pass could partner with. The Shaman dissents: it would trial a timebank among artists sooner. Sources in the pass file."
+  },
+  {
+   "id": "pos-ac-coop-pipeline",
+   "faces": [
+    "regent",
+    "diplomat",
+    "architect"
+   ],
+   "pass": "artist-corps 2",
+   "auto": true,
+   "pos": "Three stages. Contractor: paid per engagement for every hour; moves on after two accepted engagements and a peer review. Associate: steady work, a vote on the commons' rules; moves on after six months and a members' vote. Member: holds a share and votes on everything. A lawyer answers whether commons and awareness hours can be contracted or must be wages, and what Oregon requires, before anyone signs (test T4, due 2026-11-20). This stands unless you flip it.",
+   "why": "Your steer on q-ac-employment-form: 'Contractors to cooperative member pipeline'. Kept minimal per pos-ac-minimal-holacracy. Commons work the corps directs points toward employee status under the IRS, Department of Labor and Oregon tests; the council flags it and does not settle it."
+  },
+  {
+   "id": "pos-ac-consent-form",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "artist-corps 2",
+   "auto": true,
+   "pos": "Each engagement has a one-page consent form the client signs before work starts: who made it (human-made); AI use ticked by the client, with none as the default, then admin only, AI in drafts the artist reworks, or other; which assets enter the commons and who may use them; consent to share the hour log and write-up with private details removed; the right to withdraw AI consent at any time. This stands unless you flip it.",
+   "why": "Your answer C on q-ac-ai-boundary: case by case per client consent, recorded in the commons. Human-made as the default box answers Portland's allergy to AI (bars-engine CLAUDE.md). The form's text is in the pass file."
   }
  ],
  "questions": [
