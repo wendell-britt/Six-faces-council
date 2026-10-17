@@ -147,7 +147,13 @@
 ## His look (2026-10-17 01:45 UTC)
 - Approved: "the let gos are where I want them to be." #356 and council #228 merge on it.
 
-## Next: council pass on meeting a daemon (new thread, Opus)
+## Done: council pass on meeting a daemon (2026-10-17)
+Pass `council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md`, ledger `2026-10-17-daemon-meeting1.json`, rows
+`council/callsheets/rows/daemon-meeting-2026-10-17.json`. Nine `dmt-*` positions on the board, question `dmt-trainer`.
+The build (approach check-in) is Big Mind build 4, owned by `council/callsheets/big-mind-cave.md`; the flooded squint
+rides the spirit loop's next round (`spirit-generator.md`). The brief, kept for the record:
+
+### The brief
 His words, 2026-10-17: "The next thing we need to do is be able to have players as they get closer to the daemon to answer questions about how their body is responding to knowing they are going to meet a protector what kind of emotions are present and are the flooded veils satisfied or dissatisfied. I want to see how much of the spirit asset work we can use to break this down. I don't know if the daemons are pokemon trainers have have their own spirits that you can battle. OR IF the boss spirit becomes a daemon of the variety of our daemon ontology. Let's have the 6 game masters weigh in on this and specifically have the daemons self advocate for this. I think the victim at the storyteller level and as the sage should lead the charge"
 - A six-faces pass (`.claude/skills/six-faces/SKILL.md`, design-ontology loaded for a mechanic). The Victim at its honored storyteller level leads, speaking with the Sage. Every daemon advocates for itself through its own agent (daemon-*).
 - Questions for the pass: (1) the approach check-in: as the player walks toward a daemon, what the body is doing, which emotions are present, and whether the flooded and veiled states are satisfied or dissatisfied; (2) how the spirit assets (spirit-generator callsheet, the Holdfast and other families with their states) break this down; (3) whether daemons keep spirits the player can battle, like trainers, or whether a boss spirit becomes a daemon of the daemon ontology, or both.
