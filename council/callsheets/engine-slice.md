@@ -146,3 +146,20 @@ chart-and-stats bots. `npm run test:engine` and `npm run sim:chart` in sprout; a
 - **On B:** a short bots-only round in `tools/chart-stats.mjs` lets a family move the offering odds, numbers back to
   the board.
 - **On C:** the same screen build, with the fight reading `data/engine.json` `simulation` as its chart.
+
+## Built (2026-10-17): the referee on the slice's screen
+
+Wendell answered `q-slice-chart-stats` A (keep today's chart for the playtest). sprout #57 (draft, stacked on #56; its
+base is #56's branch) gives the fight and the ring offering one referee, makes the farmhouse door end the day with its
+page, brings Mara to the east fence gap the morning after an unfed offering, and runs her talk on 2d6 with the chances
+shown before the roll. A Logbook button lists every line; `?referee=off` writes nothing. No number in
+`data/slice.json` changed. Screen text is placeholder copy in sprout `data/engine.json` `text`. Board step
+`slice-referee-playtest-01` (list `slice-referee-playtest`, due 10-20) is his combined playtest, run on his Mac with
+`npm run slice:serve` (the slice has no web host).
+
+## Next (waits on step `slice-referee-playtest-01`)
+
+- **His note says fine (or nothing to change):** a Sonnet thread marks #56 ready, merges it, retargets #57 to main and
+  marks it ready (sprout has no auto-merge: he merges or says to).
+- **His note names a change:** a fresh Opus thread owning #57 makes it, numbers unchanged unless he rules them.
+- **The Terminal line fails:** start a Remote Control session in /Users/wendellbritt/The Library to clone and serve it.
