@@ -121,6 +121,36 @@
    "by": "Claude",
    "ref": "daemon-meeting revision: rows council/callsheets/rows/daemon-meeting-answers-2026-10-17.json on the board, callsheet big-mind-cave.md build 4 amended",
    "at": "2026-10-17T04:50:00Z"
+  },
+  "2026-10-17-pull-062632#questions/q-slice-typechart-inferred": {
+   "by": "Claude",
+   "ref": "council/passes/6FACE_PASS_slice2_2026-10-17.md; board rows pos-slice-bridge, pos-slice-chart-stats, pos-slice-feasibility, q-slice-referee-clear",
+   "at": "2026-10-17T07:10:00Z"
+  },
+  "2026-10-17-pull-062632#questions/q-slice-playtest-order": {
+   "by": "Claude",
+   "ref": "council/passes/6FACE_PASS_slice2_2026-10-17.md; board rows pos-slice-bridge, pos-slice-chart-stats, pos-slice-feasibility, q-slice-referee-clear",
+   "at": "2026-10-17T07:10:00Z"
+  },
+  "2026-10-17-pull-062632#positions/pos-slice-rules": {
+   "by": "Claude",
+   "ref": "council/passes/6FACE_PASS_slice2_2026-10-17.md; board rows pos-slice-bridge, pos-slice-chart-stats, pos-slice-feasibility, q-slice-referee-clear",
+   "at": "2026-10-17T07:10:00Z"
+  },
+  "2026-10-17-pull-062632#positions/pos-slice-passage": {
+   "by": "Claude",
+   "ref": "council/passes/6FACE_PASS_slice2_2026-10-17.md; board rows pos-slice-bridge, pos-slice-chart-stats, pos-slice-feasibility, q-slice-referee-clear",
+   "at": "2026-10-17T07:10:00Z"
+  },
+  "2026-10-17-pull-062632#positions/pos-slice-encounter": {
+   "by": "Claude",
+   "ref": "council/passes/6FACE_PASS_slice2_2026-10-17.md; board rows pos-slice-bridge, pos-slice-chart-stats, pos-slice-feasibility, q-slice-referee-clear",
+   "at": "2026-10-17T07:10:00Z"
+  },
+  "2026-10-17-pull-062632#questions/q-slice-heart-pool": {
+   "by": "Claude",
+   "ref": "council/passes/6FACE_PASS_slice2_2026-10-17.md; board rows pos-slice-bridge, pos-slice-chart-stats, pos-slice-feasibility, q-slice-referee-clear",
+   "at": "2026-10-17T07:10:00Z"
   }
  }
 }
