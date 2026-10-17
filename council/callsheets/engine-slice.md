@@ -107,3 +107,13 @@ board rows added. Wendell answered everything on the board (ledger
 - **On B:** a short Sonnet thread answers his note with a worked example from the slice; the build waits.
 - `docs/engine-contract.md` is cited by pass 1 rows but is not on sprout main (checked 2026-10-17); the build
   thread looks for its branch or writes it fresh.
+
+## Referee worked example done (2026-10-17)
+
+Wendell answered `q-slice-referee-clear` B with a note: the referee works on several levels (battle and non-battle
+skill rules) and the unclear part is story encounters and faction relationships. The worked example is
+`council/passes/slice-referee-worked-example_2026-10-17.md` (ledger `council/ledger/2026-10-17-referee-worked-example.json`):
+one referee procedure of five steps, two rule sets (battle chart, story need), a faction as a standing moved only by
+logbook lines. The revised question is `q-slice-referee-clear-2`. **On A:** one fresh Opus thread in sprout builds
+`pos-slice-feasibility` tests 1 to 5, as in "Next" above, and may take the example's logbook line shape as the
+starting point. **On B:** a second short Sonnet example answers the exact point he names.
