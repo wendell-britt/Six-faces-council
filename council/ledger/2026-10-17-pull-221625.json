@@ -1,0 +1,26 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T22:16:25.597Z",
+ "answers": {
+  "q-slice-chart-stats": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-17T22:16:00.201Z",
+   "steer": ""
+  },
+  "sg-ballad-family": {
+   "kind": "position",
+   "savedAt": "2026-10-17T22:16:25.597Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/q-slice-chart-stats: Keep today's chart for the playtest"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
