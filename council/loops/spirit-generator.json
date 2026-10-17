@@ -158,9 +158,19 @@
     },
     {
       "round": 17,
-      "status": "next",
+      "status": "done",
       "builds": "The fifth daemon family's first base (sg-body-from A: the urge picks the family), the Skeptic's by default, the next row of GESTURES.md after the Controller. Written image prompt first, naming the family and its two or three bases (missing-art rule); the family's own gas and core; living creature a quadruped on its own four feet with nothing in its paws (sg-romp-four-feet); built with its three satisfaction states from the start through shellback.py --state, its dissatisfied stance the Skeptic's pull from GESTURES.md pushed further (ss-feral-stance), its models packed per state and element (viewer_models.py --pack). If his look at page version 21 (the meerkat and koala) redirects the Holdfast, that comes first.",
       "check": "Contact sheet of the base's 25 renders beside the badger and the raccoon; reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind. The base in the page's 3D viewer in every element, form and state.",
+      "gate": "auto",
+      "budget": "one thread, under 200,000 tokens",
+      "model": "opus",
+      "ontology_profile": "default"
+    },
+    {
+      "round": 18,
+      "status": "next",
+      "builds": "The Hedge's other two bases, the hedgehog and the Pallas's cat (council/loops/prompts/spirit-generator-r17.md), on the llama's question-mark gas, narrowed core, hand lens and examiner's tunic and cape, each built with its three states from the start (the Skeptic's pull held and completed, HEDGE_POSE and HEDGE_ALLY in shellback.py, extended per base as the HOLDFAST table was), on four feet with nothing in its paws, models packed per state and element (viewer_models.py --pack). If his look at page version 22 (the llama) redirects the llama or the family, that comes first.",
+      "check": "Contact sheet of each base's 25 renders beside the llama; each reads as its animal at the 96 px sprite; its fifteen-sprite squint sheet in wood sorts 13 of 15 blind. Both bases in the page's 3D viewer in every element, form and state.",
       "gate": "auto",
       "budget": "one thread, under 200,000 tokens",
       "model": "opus",
