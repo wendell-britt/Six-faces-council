@@ -1,0 +1,45 @@
+{
+ "date": "2026-10-17",
+ "battle": "fr-between",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Hosting pass 1 on the 3D Between, called by Wendell after three patches to the artifact page failed on his iPhone in the Claude app. No daemons, no face subagents; evidence from the thread record and both repos. Resolved: stop patching the artifact, move the Between to bars-engine behind sign-in, async first, device gate before any test link, carry Ari's spark across.",
+ "steer": "Ok let’s take a step back. We’re being quite silly about this. It’s still not working which leads me to believe we’re trying to brute force and hack a solution instead of taking a step back and troubleshooting. Let’s get the 6 game masters on this specifically why aren’t your tests translating to my environment and if we’re chasing something we’re going to need to change and remove anyway. This will ultimately be hosted on the web so let’s sure we’re being coherent about that mantras of trying to fix the artifact tool. Also the WAVE and CAVES are all working on bars-engine",
+ "pass": "council/passes/6FACE_PASS_between-hosting1_2026-10-17.md",
+ "casts": {
+  "shaman": "3 Sprouting, lines 1, 2, 3, becoming 48",
+  "architect": "59 Dispersal, lines 2, 6, becoming 8",
+  "challenger": "24 Turning, lines 1, 2, 6, becoming 4",
+  "regent": "16 Anticipation, lines 1, 4, becoming 24",
+  "diplomat": "30 Burning",
+  "sage": "38 Estrangement"
+ },
+ "positions": [
+  "bh-stop-patching",
+  "bh-move-to-bars-engine",
+  "bh-async-first",
+  "bh-device-gate",
+  "bh-spark-carries"
+ ],
+ "questions": [],
+ "unanimous": true,
+ "subagent_tokens": 0,
+ "tests": [
+  {
+   "id": "T1",
+   "what": "Big Mind cave opens on his iPhone",
+   "due": "2026-10-18",
+   "result": "provisional pass on his word; confirmed at T2"
+  },
+  {
+   "id": "T2",
+   "what": "bars-engine Between preview opens on his iPhone and he tends the spark",
+   "due": "2026-10-24"
+  },
+  {
+   "id": "T3",
+   "what": "first two-person play settles whether polling is enough",
+   "due": "after T2"
+  }
+ ]
+}
