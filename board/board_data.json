@@ -16184,6 +16184,34 @@
      "c": "Say what in the steer box; the six take it to a pass before anything is built."
     }
    ]
+  },
+  {
+   "id": "q-slice-referee-clear-3",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "engine-slice 2 (2d6 example)",
+   "q": "You asked for story beats on the Apocalypse World model: ranked outcomes, negative ones included, rolled against a 2d6 table. Here it is. The five steps stay; two change. The fit becomes a modifier (listened first +1, what you bring matches the need +1, a misread -1, and for a roll with a whole faction, your standing with it; capped at +3). Then roll two dice plus the modifier: 10 or more is a HIT, you get it cleanly; 7 to 9 is a PARTIAL, you get it and pick a cost from a short list; 6 or less is a MISS, and the referee takes the next consequence down that faction's ranked list. The Tenders' list runs Cool (that person's trust drops), Talk (standing drops), Close a door (the compost circle shuts), Act (they take back their seed share), Rupture. A hit climbs one rung back up; Show Up Honestly never rolls and never costs a rung. STORY: Mara at the gate, you listened and told it plainly, so +2: hit 42%, partial 42%, miss 17%. Roll 11: trust 3 to 5, Tenders +1, and she tells you another Tender's need. Roll 8: she trusts you, and you pick the cost, e.g. a day's chore at their field. Roll 5: rung 1, she steps back and trust drops to 2. FACTION: two days later you ask the Tenders for seed, rolling plus your standing (+1). A hit raises standing to +2, which opens the compost circle; a partial gets half the seed or a debt; a miss takes the next rung down. Battle keeps its percentage odds for now, since you named story beats. Every modifier, cost and rung is a placeholder; the full walk-through is council/passes/slice-referee-2d6_2026-10-17.md.",
+   "why_you": "You set 'does it make sense to you' as the gate on the referee, and your note named the model you want. Only you can say whether this is the Apocalypse World shape you meant.",
+   "not_before": "This replaces q-slice-referee-clear-2, which you answered B at 20:17 on 17 October with the 2d6 steer. The second version rolled story against a percentage; this one uses the 2d6 table with ranked results.",
+   "options": [
+    {
+     "v": "A",
+     "label": "Yes, that's it: build the referee",
+     "c": "A fresh thread builds the five feasibility tests in sprout (pos-slice-feasibility), with story and faction rolls on the 2d6 table and battle on its percentage, placeholder numbers unchanged."
+    },
+    {
+     "v": "B",
+     "label": "Still unclear (say where in the steer box)",
+     "c": "Another short example answers the exact point you name, and the build waits."
+    },
+    {
+     "v": "C",
+     "label": "Yes, and battle goes on 2d6 too",
+     "c": "The same build, with battle also rolled on the 2d6 table; the five-element chart becomes its modifier."
+    }
+   ]
   }
  ],
  "causes": [

@@ -156,6 +156,16 @@
    "by": "Claude",
    "ref": "ontology/v0.1/source/design-ontology-v0.1.yaml asset_sourcing section; read as 'do the brief in Claude' instead of a Codex paste",
    "at": "2026-10-17T20:20:00Z"
+  },
+  "2026-10-17-pull-200544#questions/q-slice-referee-clear": {
+   "by": "Claude",
+   "ref": "council/passes/slice-referee-worked-example_2026-10-17.md; board row q-slice-referee-clear-2",
+   "at": "2026-10-17T20:11:00Z"
+  },
+  "2026-10-17-pull-201904#questions/q-slice-referee-clear-2": {
+   "by": "Claude",
+   "ref": "council/passes/slice-referee-2d6_2026-10-17.md; board row q-slice-referee-clear-3",
+   "at": "2026-10-17T20:40:00Z"
   }
  }
 }
