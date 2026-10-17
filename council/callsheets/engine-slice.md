@@ -85,3 +85,25 @@ board rows added. Wendell answered everything on the board (ledger
 5. Then the engine slice build (ruling B), one combined playtest after.
 - Zo-environment guards apply: local dev, not scheduled agent work; race test and quota wiring
   before any automation.
+
+## Pass 2 done (2026-10-17): next-work items 1–3
+
+- Item 1: the plain explanation went to Wendell in the thread "slice engine answers" and is on the board as
+  `q-slice-referee-clear` (does it make enough sense to build on; A build, B explain more, C something else).
+- Items 2–3: `council/passes/6FACE_PASS_slice2_2026-10-17.md`, ledger `council/ledger/2026-10-17-pass-slice2.json`.
+  Positions `pos-slice-bridge` (four encounters, one shape: one referee and logbook, each engine keeps its chart),
+  `pos-slice-chart-stats` (Pokémon model in simulation only; numbers come back to him with data),
+  `pos-slice-feasibility` (five tests, three falsifiers). Simulation: `council/passes/slice2-sim/chart.mjs`
+  (`node chart.mjs <sprout checkout>`): with today's placeholders any damage-only line reaches 75% offering odds and
+  many reach the 95% cap; the two guessed relations never appear in a best line.
+
+## Next (waits on `q-slice-referee-clear`)
+
+- **On A:** one fresh Opus thread in sprout builds `pos-slice-feasibility` tests 1–5 in order, numbers unchanged
+  (sprout CLAUDE.md: no balance change). Load the ontology QUICKSTART only. Test 5 (chart and stats) runs in bots
+  only and brings its numbers back to the board as the replacement for `q-slice-typechart-inferred`. Bridge rule from
+  `pos-slice-bridge`: when the spirit is made of the player's own feeling, the player reports settledness; the game
+  computes only a creature's.
+- **On B:** a short Sonnet thread answers his note with a worked example from the slice; the build waits.
+- `docs/engine-contract.md` is cited by pass 1 rows but is not on sprout main (checked 2026-10-17); the build
+  thread looks for its branch or writes it fresh.
