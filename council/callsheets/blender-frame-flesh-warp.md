@@ -146,6 +146,8 @@
 
 ## His look (2026-10-17 01:45 UTC)
 - Approved: "the let gos are where I want them to be." #356 and council #228 merge on it.
+- Played in the cave (2026-10-17, bars-engine #363): Big Mind calls `integrateBody` when a 3-2-1 ends with the voice
+  willing, then holds the willing stance (honored). Details in big-mind-cave.md build 3.
 
 ## Done: council pass on meeting a daemon (2026-10-17)
 Pass `council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md`, ledger `2026-10-17-daemon-meeting1.json`, rows
