@@ -36,16 +36,19 @@ or write "shortlist".
    (the org's Form 990 on ProPublica's Nonprofit Explorer, then a short ask list for his contact as a step). With
    "shortlist", draft up to five candidates from his own work (podcast guests, Bruised Banana residency, Portland groups
    in the repos) as a new step to pick from. Sonnet is enough for either.
-2. **T3, due 2026-11-06, needs nothing from him:** the commons license one-pager (ownership, use rights, payment). Can
-   start now in a fresh thread, Opus.
+2. **T3 is met (2026-10-17):** `council/artist-corps/commons-license.md`, on the board as `pos-ac-commons-license`. The
+   artist keeps the copyright; the client gets a perpetual license for its own mission; member non-profits may use
+   commons assets free with the credit line; nobody may sell them or train AI on them without the artist's consent;
+   every commons hour is paid, no per-use royalties until the Phase 2 pass. It adds three questions for T4's lawyer.
 3. **T4, due 2026-11-20:** a lawyer reads the contractor agreement and answers the three classification questions in the
    pass file. Finding the lawyer becomes a step only after T1 has a number, since Phase 1 may rescope.
 
-Recommended next move: start T3 now, because it is the only open item that needs nothing from Wendell, and the
-engagement agreement in Phase 1 item 2 needs its terms.
+Recommended next move: wait for the anchor step (due 10-22), then run item 1. Nothing else on this strand needs
+doing before then: T3 is met and T4 waits on T1.
 
 ## Files
 
 - `council/ledger/2026-10-16-pass-artist-corps1.json`, `council/ledger/2026-10-17-pull-201904.json`
 - `council/ledger/2026-10-17-pass-artist-corps2.json`, `council/passes/6FACE_PASS_artist-corps2_2026-10-17.md`
+- `council/artist-corps/commons-license.md` (T3)
 - board rows `pos-ac-*`, `q-ac-*` in `board/board_data.json`; step `artist-corps-anchor-01` in the board store
