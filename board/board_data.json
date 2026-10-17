@@ -9882,6 +9882,43 @@
    "auto": true,
    "pos": "Sprout's negotiation fight is the engine slice's local encounter form. The bars-engine trust reducer stays a borrowed library — its pattern, and a called library if a seam ever needs it; nothing moves between repos. The seam adopts v0.1's EncounterDefinition and EncounterOccurrence as the record shape both engines can emit, so the day loop and rules surface read encounters without knowing which engine ran. Unification is not proposed; adaptation is the record shape only.",
    "why": "The two engines do different jobs: the trust reducer is an allyship-domain trust loop proven completable by simulation (bars-engine .specify/specs/trust-encounter-loop/plan.md); sprout's fight teaches the ontology's cycle through Demand, satisfaction and Ting (slice/fight.js, from design.md). Forcing unification now is speculative generality; shared vocabulary is the Regent's rule (no invented terms; slice-ontology-types). Sprout also holds a third local form, wave.js, which already reuses fight.js's CYCLE. Reconciliation: sprout docs/engine-contract.md"
+  },
+  {
+   "id": "pos-slice-bridge",
+   "faces": [
+    "diplomat",
+    "architect",
+    "shaman",
+    "regent"
+   ],
+   "pass": "engine-slice 2",
+   "auto": true,
+   "pos": "The four encounters already built are one encounter in four costumes: Sprout's spirit fight, Sprout's WAVE fight, bars-engine's trust loop and the daemon meeting. In each, a spirit has a need you can't see yet, and you have a listening move that costs you a turn (Listen, Welcome, Attune, the approach check-in). You answer by a chart (the five-element cycle, the trigram cycle, a card that meets the need). Something falls and something rises (Demand and satisfaction, the charge, shadows and trust). Each one can end in a friend, and walking away is allowed. The engine slice builds that shared shape once, as the referee and its logbook. Each engine keeps its own chart and moves, and no code moves between repos. One rule carries over from the daemon meeting: when the spirit is made of your own feeling, you say whether it is settled; the game only works out a creature's settledness, never yours.",
+   "why": "The side-by-side table is in council/passes/6FACE_PASS_slice2_2026-10-17.md (Diplomat). Sources: sprout slice/fight.js and slice/wave.js; bars-engine .specify/specs/trust-encounter-loop/spec.md; daemon meeting rows dmt-two-axes and dmt-spirit-from-answers (council #240, #244); constitution 10 in ontology QUICKSTART. This replaces pos-slice-encounter, which you overruled as papering over the gap."
+  },
+  {
+   "id": "pos-slice-chart-stats",
+   "faces": [
+    "architect",
+    "challenger",
+    "shaman"
+   ],
+   "pass": "engine-slice 2",
+   "auto": true,
+   "pos": "Pokémon's lesson for Sprout: the chart sets the ratios, and the stats and moves make the choices. Sprout's fight has no stats, and a simulation of every stance order up to six turns shows the chart barely matters. Hitting with the controlling stance twice already gives 75% odds on the offering, so does the same element four times, and many orders reach the 95% cap. The two guessed relations never appear in a best line. So the six model the fight on Pokémon in simulation, not in the game: each stance gets a power; each spirit gets an attack and a resist stat from its family (the daemon it belongs to); its element is its type; its strength (a little, a lot, too much) is its level; your bonded ally's element gives a same-type bonus, the way Pokémon gives 1.5x; Listen and feeding are the status moves. The chart becomes ratios: controls 2, same 1, generated-by ½, controlled-by turns back on you. The question about the two guessed relations comes back to you with the simulation's numbers.",
+   "why": "Research: council/daemons/reports/2026-10-17-slice2-controller.md and -skeptic.md (Pokémon's chart is mostly neutral with 2x, ½x and 0x cells; Gen II and Gen VI fixed imbalance by adding types, not weakening them; in a pure five-cycle the best reply to a known element is always the same). Simulation: council/passes/slice2-sim/chart.mjs against sprout main. Sprout's CLAUDE.md reserves balance to you, so nothing reaches the game without your answer. Answers your steer on q-slice-typechart-inferred."
+  },
+  {
+   "id": "pos-slice-feasibility",
+   "faces": [
+    "challenger",
+    "architect",
+    "regent"
+   ],
+   "pass": "engine-slice 2",
+   "auto": true,
+   "pos": "The engine gets proven before any content is written. Five feasibility tests, in sprout: (1) the referee: the spirit fight and the ring offering both ask one referee and write to one logbook, with today's numbers unchanged; (2) one placeholder scene that fires because of a logbook line, not because a script says so; (3) one day that closes when you sleep and writes that day's page; (4) the Sprout fight writes the same logbook line that bars-engine's trust loop can write; (5) bots play the chart-and-stats model. The engine passes when a bot that always picks the controlling stance does worse than one that restrains then feeds, two spirit families of the same element need different best lines, and switching the referee off changes the logbook and the scene. Then one combined playtest, your answer B.",
+   "why": "Your steer on pos-slice-passage: 'These are the main things we need feasibility testing on. If we get this engine going then generating content will be a breeze'. Your answer B on q-slice-playtest-order. The falsifiers are the Challenger's in council/passes/6FACE_PASS_slice2_2026-10-17.md. The build waits on q-slice-referee-clear."
   }
  ],
  "questions": [
@@ -15830,6 +15867,34 @@
      "v": "C",
      "label": "Keep deferred until more content",
      "c": "Status quo; the automated playtests stand in. Cost: the contract's falsifiers (what the resolution changed) stay unrun, and every layer above the loop is built on an untested felt moment."
+    }
+   ]
+  },
+  {
+   "id": "q-slice-referee-clear",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "engine-slice 2",
+   "q": "Does the plain explanation of the rules layer make enough sense to build on? Here it is: each part of the game does its own math today (the spirit fight, the ring offering and the WAVE fight each have their own numbers). A tabletop game has one rulebook: every uncertain action runs the same steps, and the GM writes down what happened. The engine slice would add one referee that every part of the game asks, and one logbook the story reads, so a scene can fire on a line like 'you beat this spirit down without ever feeding it'. The test: switch the referee off, and if the game plays the same, the rules layer was decoration.",
+   "why_you": "You set the gate yourself on pos-slice-rules: 'We need to explain this to the degree is makes sense to me before we move forward.' Only you can say whether it makes sense to you, and the referee is the first thing the engine build makes.",
+   "not_before": "The first version (pos-slice-rules, 2026-10-16) was written in record names, and you overruled it at 06:24 today. This plain version went to you in the slice engine thread today and is the first one written for a player.",
+   "options": [
+    {
+     "v": "A",
+     "label": "It makes sense: build the referee",
+     "c": "A fresh thread builds the five feasibility tests in sprout (pos-slice-feasibility), starting with the referee and its logbook, numbers unchanged."
+    },
+    {
+     "v": "B",
+     "label": "Not yet: explain more (say what's unclear in the steer box)",
+     "c": "The six answer your note with a worked example from the slice, and the build waits."
+    },
+    {
+     "v": "C",
+     "label": "It makes sense, but I want something else",
+     "c": "Say what in the steer box; the six take it to a pass before anything is built."
     }
    ]
   }
