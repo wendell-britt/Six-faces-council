@@ -156,6 +156,31 @@
    "by": "Claude",
    "ref": "ontology/v0.1/source/design-ontology-v0.1.yaml asset_sourcing section; read as 'do the brief in Claude' instead of a Codex paste",
    "at": "2026-10-17T20:20:00Z"
+  },
+  "2026-10-17-pull-201904#questions/q-ac-ai-boundary": {
+   "by": "Claude",
+   "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
+   "at": "2026-10-17T20:30:00Z"
+  },
+  "2026-10-17-pull-201904#questions/q-ac-employment-form": {
+   "by": "Claude",
+   "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
+   "at": "2026-10-17T20:30:00Z"
+  },
+  "2026-10-17-pull-201904#questions/q-ac-standalone-or-inside": {
+   "by": "Claude",
+   "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
+   "at": "2026-10-17T20:30:00Z"
+  },
+  "2026-10-17-pull-201904#questions/q-ac-first-anchor": {
+   "by": "Claude",
+   "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
+   "at": "2026-10-17T20:30:00Z"
+  },
+  "2026-10-17-pull-201904#positions/pos-ac-paid-hours": {
+   "by": "Claude",
+   "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
+   "at": "2026-10-17T20:30:00Z"
   }
  }
 }
