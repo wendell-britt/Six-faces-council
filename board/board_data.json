@@ -16293,6 +16293,35 @@
      "c": "The same build, with battle also rolled on the 2d6 table; the five-element chart becomes its modifier."
     }
    ]
+  },
+  {
+   "id": "q-slice-chart-stats",
+   "faces": [
+    "challenger",
+    "architect",
+    "regent"
+   ],
+   "pass": "engine-slice build (test 5)",
+   "q": "The engine slice is built in sprout (draft sprout #56): one referee, one logbook, Mara comes to the gate because yesterday's offering was written 'fed: no', and sleep writes the day's page. Bots then played the chart-and-stats model, with each daemon family given an invented attack, resist and appetite. All three checks pass. Restraining then feeding wins the ally on the first offering 84% to 95% of the time, against 76% for always hitting with the controlling stance, in all 8 families. The 8 families need 3 different best lines. With the referee off, nothing is written and Mara never comes. One finding cuts against the stats: every family's best line reaches the 95% odds cap, so the stats only change how many turns the fight takes (3, 5 or 6), never the odds. The two guessed relations (same element, generated-by) never show up in a best line. On 2d6 with Mara, a player who listens and brings the right card misses 16% of the time; one who guesses misses 52%. What should the chart do next?",
+   "why_you": "Sprout's rules reserve balance to you, and pass 2 said the chart's numbers come back to you once the bots have data. This replaces q-slice-typechart-inferred, which you steered toward the Pokémon stats research.",
+   "not_before": "The numbers are in sprout docs/engine-contract.md and come from tools/chart-stats.mjs. Nothing in the game's numbers changed.",
+   "options": [
+    {
+     "v": "A",
+     "label": "Keep today's chart for the playtest",
+     "c": "The next thread puts the referee on the slice's screen for the one combined playtest, using today's chart. The stats stay in the bots, and the guessed relations stay as they are until you have played it."
+    },
+    {
+     "v": "B",
+     "label": "Make the stats change the odds first",
+     "c": "A short bots-only round lets each family move the offering odds (for example, a lower cap for a stubborn family) and brings the numbers back here before anything reaches the game. The playtest waits for it."
+    },
+    {
+     "v": "C",
+     "label": "Put the stats model in the game now",
+     "c": "The spirit fight takes the ratios and the invented family stats into the slice as placeholders for the combined playtest."
+    }
+   ]
   }
  ],
  "causes": [
