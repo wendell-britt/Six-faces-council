@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17",
+ "updated": "2026-10-17 04:49",
  "positions": [
   {
    "id": "build",
@@ -9793,6 +9793,49 @@
    "auto": true,
    "pos": "Everyone meets the daemons in the same order, at least at first: the book's order, the Player last. The spirit that forms in each hallway is always of that chamber's daemon's family, a wild spirit of the daemon you are walking toward, sat with and never fought; once it settles it stands up as the daemon's honored self (dmt-ally-honored). Your answers dress it: the feeling sets its colour, the sensation its texture, faint or too much the veil or flood, settled or not the state. The movement you pick connects only when it does not match: a movement that belongs to another daemon (bracing, the Protector's push, in the Fixer's hallway) shows this daemon merged with that one, and the spirit carries the other daemon's chamber gas wrapped round it. The game says \"something of another voice is in this one\" and never names it. A matching movement, or none, changes nothing. What a merged daemon does next is the next pass's question. This stands unless you flip it.",
    "why": "Your steer on dmt-spirit-from-answers (overruled, 04:21): \"We want people to go through the same order at least at first. This only connects if it's a daemon who is merged with another one if the sensation doesn't match\". ds-daemon-order (A, the book's order). dmt-trainer A: a daemon's wild family spirits come first and the daemon is never fought. The match is read on the movement, because each daemon holds one movement (GESTURES.md) and the record gives no daemon a blocked sensation of its own; that reading is inferred. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md, after your answers."
+  },
+  {
+   "id": "slice-contract",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice is biggest when it exercises all four layers once each — one day loop, one rules resolution, one Twine passage, one trust-encounter — not when it adds content volume. This stands unless you flip it.",
+   "why": "The four-layer contract was named in chat on 2026-10-16, and the ontology names the smallest meaningful loop as the counterweight that bounds scope (ontology/v0.1/QUICKSTART.md). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "slice-ontology-types",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice's state uses v0.1 first-class objects — EncounterDefinition/Occurrence, MoveInvocation, CompletionContract, independent state axes — and anything the seams need beyond v0.1 goes through term_pass rather than inventing vocabulary. This stands unless you flip it.",
+   "why": "The completion-boundaries council decision of 2026-10-12 made these first-class, and the machine vocabulary is the machine's language (ontology/v0.1/source/design-ontology-v0.1.yaml). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "slice-falsifier",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice contains one stake only the rules surface can resolve, and its pass condition is that a playtester can say what changed about the story without being told. This stands unless you flip it.",
+   "why": "Your lesson of 2026-10-03 (mh-gate-zero): a test names the open blocker it resolves — here the open blocker is whether the tabletop layer is load-bearing or decoration, which the ontology states as mechanics make claims about reality (QUICKSTART, principle 5). Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
+  },
+  {
+   "id": "slice-reuse",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "slice 1",
+   "auto": true,
+   "pos": "The slice is assembled from verified existing assets — the trust reducer, the walkable-sprite slice, the Twine IR compiler, the world-state-provider pattern — and forks nothing. This stands unless you flip it.",
+   "why": "The zo-environment pass of 2026-10-15 verified these assets locally in bars-engine (council/passes/6FACE_PASS_zo-environment1_2026-10-15.md), and your 2026-10-03 lesson (mh-scope-only) runs work beside the gate it serves. Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md"
   }
  ],
  "questions": [
@@ -15629,6 +15672,31 @@
      "v": "C",
      "label": "C. Re-cut into panels",
      "c": "The Challenger's lever: the sleeve is cut into panels or strips that swing on their own. A bigger build, and the robe looks different."
+    }
+   ]
+  },
+  {
+   "id": "slice-substrate-home",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "slice 1",
+   "q": "Where does the four-layer engine substrate live: in bars-engine, in sprout, or in a new registered repo with sprout as its first client?",
+   "why_you": "A repo decision is infrastructure and money you own. Sprout is the game's home in the battles but is not on the council's registered-repos list, and the ontology-game content already lives in bars-engine. Moving or adding repos is standing work only you can authorize.",
+   "not_before": "The four-layer contract was named in chat on 2026-10-16 and this is the first pass on the slice; no ruling exists on where the substrate lives, and the spec kit cannot open without a home.",
+   "options": [
+    {
+     "label": "bars-engine",
+     "consequence": "Fastest: every verified asset is local. Risk: the game's identity dilutes inside a large repo, and sprout's battles keep pointing elsewhere."
+    },
+    {
+     "label": "sprout",
+     "consequence": "Honors the battles' home. Risk: sprout is not cloned or registered locally, so setup cost lands before any slice code runs."
+    },
+    {
+     "label": "new registered repo",
+     "consequence": "A clean substrate contract with sprout as first client. Risk: new infrastructure is your authority and carries standing cost."
     }
    ]
   }
