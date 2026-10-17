@@ -1,4 +1,4 @@
-2026-10-17 (updated 04:45)
+2026-10-17 (updated 05:30)
 ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
@@ -182,6 +182,11 @@ Open, in order:
    `/mnt/project-files/between/round2/concept/the-between-view-1.png` to `-4.png` (step 01 ticked). Build brief below
    ("Build brief: round 2, the hollow"). Gaps 6 to 10 are round 3. The artifact page stays as it is and is retired once
    he plays here.
+   **Built (2026-10-17 05:30):** bars-engine #366, the hollow (gaps 1 to 5), CI green, preview opened clean in an
+   iPhone-size WebKit run. Screenshots beside the four views: `/mnt/project-files/between/round2/build/`
+   (`concept-vs-build.jpg`). His try: Your steps list `between-round2-try` step 01 (preview link, share token until
+   18 Oct 04:27 UTC). Next: his note on that step decides fixes or round 3 (gaps 6 to 10); Ari's invite only after he
+   ticks it. Sitting together was tested with two local players only.
 
 ### Build brief: round 2, the hollow (next thread, Opus, bars-engine; load design-ontology default profile)
 - **Look at the four views first** (`/mnt/project-files/between/round2/concept/`); they are the target. Gap list and
