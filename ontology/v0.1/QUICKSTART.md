@@ -116,6 +116,8 @@ Charge is optional. A `ChargedBAR` is one specialization or role, alongside kern
 
 Keep the kernel distinct from its `BARExpression`. A BAR may bloom as a quest, rule, lore, feature specification, plan, norm, branch, or artifact without becoming reducible to that expression. Capture creates lineage, not implementation debt. Portability carries a permission policy; it never means unrestricted reuse.
 
+A game asset carries its source and licence; only own work and CC0 ship in a page, and AI concept art is a reference until rebuilt (a painted-over capture is a rebuild only when a person or our code paints it).
+
 ## Composting
 
 Composting is a governed lifecycle disposition that ends a named active obligation. It does not require a new artifact, lesson, transformation, fuel, later reuse, or recovered value.
