@@ -58,6 +58,13 @@ current_sources:
   release_record:
     path: ontology/v0.1/RELEASE.md
     status: candidate_gate_record
+  asset_pipeline:
+    path: docs/codex/asset-sources-brief.md
+    status: implementation_record
+    note: >-
+      The record itself is bars-engine tools/blender-cloud/README.md (another repo, so the path here is the brief that
+      points to it). Bars-engine test G6 (tools/blender-cloud/tests/test_offline.py) and build_viewer.py enforce
+      shipped_asset_has_source_and_licence and no_restricted_licence_in_extractable_build.
   daemon_questions:
     path: council/daemons/questions.yaml
     status: owner_statement
