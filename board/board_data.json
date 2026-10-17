@@ -9665,6 +9665,101 @@
    "auto": true,
    "pos": "The robe keeps its cut. Re-cutting it into panels or strips that move on their own stays a later lever, raised only if the sleeves pass their tests and you still say they read solid. This stands unless you flip it.",
    "why": "A change of cut is your taste, and nothing yet says one is needed. The Challenger dissents: it thinks panels may be the real fix and wants them back on the table if the sleeves pass T1 and still read solid."
+  },
+  {
+   "id": "dmt-approach-checkin",
+   "faces": [
+    "challenger",
+    "diplomat",
+    "regent"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "As you walk the hallway toward a voice's shut mouth, the game asks up to four questions, in this order: what your body is doing, what feeling is there, whether it is faint or far away, too much, or clear, and, unless it is faint, whether it sits all right with you, neither, or wants something. Every ask can be skipped, \"no word yet\" is an equal answer, and walking on is always an answer. Each answer shows at once: the mouth's breathing light takes the feeling's colour and a spirit forms beside you. It asks again every visit. It extends the meeting ask that Big Mind build 3 already has, and nothing about the door ever waits on it. This stands unless you flip it.",
+   "why": "Your words: \"have players as they get closer to the daemon to answer questions about how their body is responding ... what kind of emotions are present and are the flooded veils satisfied or dissatisfied.\" bars-engine #361 already asks how you feel meeting a voice. Six of seven daemons asked for the faint-or-too-much question before the settled one, because a veiled spirit's state does not show (ss-not-veiled). bmt-ask-again, bmt-two-roads. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-body-first",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "The body comes first and is your report, never the game's reading. Its cards are plain body words drawn from the six movements (bracing, gripping, pulling back, leaning in, sinking, curling in, flinging open), beside \"no word yet\" and your own words. The game never tells you which daemon a movement belongs to. This stands unless you flip it.",
+   "why": "The Emotional Body's report: \"give the body's sensation the first word, before any meaning is set\". The ontology: a somatic report establishes sensation, not one compulsory interpretation. The movements are GESTURES.md's six. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-storyteller-line",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "The Victim, as the storyteller, opens each hallway with one line that ends in \"and then...\", and you finish it, or walk on. That is the whole of its part: it never names a feeling for you. This stands unless you flip it.",
+   "why": "Your words: \"I think the victim at the storyteller level and as the sage should lead the charge\", and your note of 2026-10-17 on its let-go: \"They've become the storyteller\". The Victim's own overreach line: \"stop me after three questions\". Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-two-axes",
+   "faces": [
+    "architect"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "Faint-or-too-much and settled-or-not are two separate measures, so a flooded spirit can be satisfied or dissatisfied, and so can a veiled one: you say which. Polarity (veiled above 0, flooding below 0) is how hidden or overwhelming it is; satisfaction is how settled. A veiled spirit's state does not show; a flooded one shows it loud, too big and too bright, with its stance pushed. A flooded squint test checks that the three states still read when flooded. This stands unless you flip it.",
+   "why": "ps-polarity and ps-polarity-poles (-10 to 10), ss-three-states (1 to 10), ss-not-veiled. Round 12 rendered flooding in one pose only, so whether a flooded spirit's state reads is untested. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-spirit-from-answers",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "Your four answers build the meeting spirit from parts already made: the feeling picks the element, the body movement picks the family (the daemon whose movement it is, in place of the urge), faint or too much sets the veil or flood, and settled or not sets the state's pose and material. No built family needs a new model. Until the Victim's, Damaged Self's and Emotional Body's families exist, their spirits use the chamber's own gas and core. This stands unless you flip it.",
+   "why": "sg-look-layers (each input owns one layer), sg-body-from A, ps-polarity, ss-markers (pose plus material, no second model). The Fixer's report: \"favours reusing the Tinker assets already built over new art\". Families built: Shellback, Romp, Tinker, Holdfast, Hedge. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-ally-honored",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "The boss spirit already becomes the daemon: each family's satisfied upright ally takes its daemon's honored pose, so a spirit that settles stands up as a small honored daemon beside you. Nothing new is built for it beyond posing each family's satisfied ally from the HONORED rows. This stands unless you flip it.",
+   "why": "Your words: \"OR IF the boss spirit becomes a daemon of the variety of our daemon ontology.\" ss-feral-stance (satisfied completes the family daemon's held movement) and GESTURES.md (completing the movement is the honored form). Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-vouch-once",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "A meeting spirit vouches for you once, at later chambers and at the centre's mouth, however many words made it. Its state and veil do not change that; the voice's trust does. This stands unless you flip it.",
+   "why": "bmt-spirits-vouch; the ontology: \"Intimate disclosure is not progression currency.\" The Skeptic's report. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-bring-it-on",
+   "faces": [
+    "regent"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "The Damaged Self's \"bring it on\" takes the hits, not your charge. In any spirit fight its satisfied spirit draws blows onto itself and off your other spirits; the charge stays yours. This stands unless you flip it.",
+   "why": "Your note of 2026-10-17: \"bring it on\", it can take the hit so the child never has to (GESTURES.md). The ontology keeps personal meaning with the player, and bm-big-heart holds the Damaged Self and lets it be. It answered the Damaged Self's own question from the record. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
+  },
+  {
+   "id": "dmt-next-families",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "daemon meeting 1",
+   "auto": true,
+   "pos": "The three unbuilt families come next in the spirit loop's family rounds: the Victim's built as the teller (its urge, to be heard), the Damaged Self's as the one who stands in front, the Emotional Body's from the five feelings. This stands unless you flip it.",
+   "why": "The Victim's report: \"Build my family as a teller, not a victim.\" The spirit loop contract builds one family a round (council/loops/spirit-generator.json). Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md"
   }
  ],
  "questions": [
@@ -15446,6 +15541,33 @@
      "v": "C",
      "label": "C. Both must join first",
      "c": "Nothing exists until both have joined. Cleanest consent; nothing to do while you wait."
+    }
+   ]
+  },
+  {
+   "id": "dmt-trainer",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "daemon meeting 1",
+   "q": "When you meet a daemon, do you fight its spirits? The council recommends A.",
+   "why_you": "Your message says \"I don't know if the daemons are pokemon trainers have have their own spirits that you can battle. OR IF the boss spirit becomes a daemon\". The record does both: sprout's spirit slice ends \"then fight the Fixer\", while the Big Mind cave meets the Fixer as a voice to trust. Four of the seven daemons asked never to be fought. Your answer adds or removes a combat loop.",
+   "not_before": "Raised by daemon meeting pass 1, 2026-10-17, on your message of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Both, in order; the daemon is never fought",
+     "c": "A daemon's wild family spirits come first, met dissatisfied: sparred in sprout, sat with in the cave. The last to settle rises into the daemon's honored self and joins you (dmt-ally-honored). Sprout's \"fight the Fixer\" becomes a spar with the Fixer's spirits."
+    },
+    {
+     "v": "B",
+     "label": "B. Meet only, nothing fought",
+     "c": "No daemon's spirits are fought anywhere. Sprout's fight with the Fixer becomes a meeting, and sprout's spars stay with wild spirits that belong to no daemon."
+    },
+    {
+     "v": "C",
+     "label": "C. Daemons as trainers",
+     "c": "In sprout each daemon fields a team of its family's spirits you battle like a gym leader, with a badge on a win; the cave stays a meeting. Most Pokemon-like; it builds a second combat loop to tune."
     }
    ]
   }
