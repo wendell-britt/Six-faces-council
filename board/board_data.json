@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "positions": [
   {
    "id": "build",
@@ -25847,6 +25847,84 @@
      "shaman"
     ],
     "pass": "spirit round 15"
+   },
+   "bh-stop-patching": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T01:37:38.569Z",
+    "record": "council/ledger/2026-10-17-pull-014028.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent",
+     "shaman"
+    ],
+    "pass": "between hosting 1"
+   },
+   "bh-move-to-bars-engine": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T01:37:48.416Z",
+    "record": "council/ledger/2026-10-17-pull-014028.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "challenger",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "between hosting 1"
+   },
+   "bh-async-first": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T01:40:00.501Z",
+    "record": "council/ledger/2026-10-17-pull-014028.json (six-faces-council)",
+    "steer": "No I pitched this to Ari and they said it’s not enough and I might not be going far enough in how cozy and fun to be in this space needs to be. She’s pre-empting the kind of refinement passes she’s seen me do with our agents in the past and is already excited for the v5 of this. We want to explore what we’d need to deftly meet the expectations based on what our oneshot and the current state of the environment is. We can actually generate an image with ChatGPT as a concept image and build from there as a way to create strong immersion",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "between hosting 1"
+   },
+   "bh-device-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T01:40:07.714Z",
+    "record": "council/ledger/2026-10-17-pull-014028.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "between hosting 1"
+   },
+   "bh-spark-carries": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T01:40:14.714Z",
+    "record": "council/ledger/2026-10-17-pull-014028.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "between hosting 1"
+   },
+   "sg-hedge-family": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-17",
+    "saved_at": "2026-10-17T01:40:28.075Z",
+    "record": "council/ledger/2026-10-17-pull-014028.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit round 17"
    }
   },
   "questions": {
@@ -29540,7 +29618,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-16T23:33:04Z",
+ "steps_recorded_through": "2026-10-17T01:36:16.000Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",
