@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-17",
+  "pass": "slice2",
+  "daemon": "controller",
+  "face": "architect",
+  "cast": null,
+  "model": null,
+  "tokens": null,
+  "report": "2026-10-17-slice2-controller.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "The grid is attacker by defender, so it is not symmetric [1].",
+        "Dual types multiply the two numbers (4x, 0.25x), and an immunity overrides a weakness [1].",
+        "Fairy resists Fighting, Bug and Dark, is immune to Dragon, and hits Dragon super effectively [1][6].",
+        "Pokémon's chart is mostly neutral (204 of 324 by the count in [1])."
+      ],
+      "url": "https://billsarchive.com/articles/pokemon-type-chart.html",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Search snippets confirm STAB is 1.5 when the move shares a user type, type effectiveness applies per defending type, and the random factor is 0.85 to 1.00 [2][3]."
+      ],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Damage",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Search snippets confirm STAB is 1.5 when the move shares a user type, type effectiveness applies per defending type, and the random factor is 0.85 to 1.00 [2][3]."
+      ],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Special:Diff/2488007",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "From Gen IV each move carries its own category, so Sneasel's Ice and Dark moves no longer waste its stats [4]."
+      ],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Damage_category",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "Balance by addition: Fairy came in Gen VI (Dark and Steel in Gen II) [5]."
+      ],
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Elemental_types",
+      "quote": null,
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [
+        "Masuda said it was made to counter Dragon, and that weakening Dragon would have been sad [6].",
+        "Fairy resists Fighting, Bug and Dark, is immune to Dragon, and hits Dragon super effectively [1][6]."
+      ],
+      "url": "https://www.nintendojo.com/news/fairy-pokemon-result-of-unfair-dragon-advantage",
+      "quote": null,
+      "label": "unlabelled"
+    }
+  ]
+}
