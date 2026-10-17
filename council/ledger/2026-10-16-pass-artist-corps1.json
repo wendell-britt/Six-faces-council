@@ -1,0 +1,52 @@
+{
+ "date": "2026-10-16",
+ "battle": "artist-corps",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "note": "Development pass 1 on the artist-training non-profit idea (captured 2026-10-16 in The Library/00 Inbox), called by Wendell in chat. Framed by Wendell's ruling that a business/non-profit is a type of game; ontology QUICKSTART loaded for all faces. No daemons (rapid intake). Resolved: the compounding asset commons is the core mechanic, all artist hours paid, embedded engagements not a marketplace, curriculum from evidence, 'human-made provenance' as the external frame, minimal-circles holacracy. Four questions survive the reach test to the board (AI boundary scope, employment form, legal structure, first anchor). Write-up: The Library/00 Inbox/6FACE_PASS_artist-corps1_2026-10-16.md.",
+ "steer": "Develop this idea feel free to use that skill but we want to also be leveraging the 6 game masters repo (board) and the game design ontology (with the caveat that a business/non-profit is a type of game)",
+ "pass": "/home/workspace/The Library/00 Inbox/6FACE_PASS_artist-corps1_2026-10-16.md",
+ "casts": {
+  "shaman": "24 Turning, no changing lines",
+  "architect": "52 Stillness, lines 1, 3, becoming 27",
+  "challenger": "35 Sunrise, lines 1, 2, 4, becoming 41",
+  "regent": "47 Drained, lines 4, 5, becoming 7",
+  "diplomat": "23 Erosion, line 1, becoming 27",
+  "sage": "49 Molting, line 1, becoming 31"
+ },
+ "positions": [
+  "pos-ac-commons-engine",
+  "pos-ac-paid-hours",
+  "pos-ac-embedded-not-marketplace",
+  "pos-ac-curriculum-from-evidence",
+  "pos-ac-provenance-frame",
+  "pos-ac-minimal-holacracy"
+ ],
+ "questions": [
+  "q-ac-ai-boundary",
+  "q-ac-employment-form",
+  "q-ac-standalone-or-inside",
+  "q-ac-first-anchor"
+ ],
+ "unanimous": false,
+ "dissent": "Challenger: test the economics before designing the structure (T1 first, then architecture). Sage records it as the spine of the phase gates.",
+ "subagent_tokens": 0,
+ "ruling": "pending",
+ "tests": [
+  {
+   "id": "T1",
+   "what": "one real non-profit deliverable scoped and priced human-only against that org's current spend; gap in dollars written down",
+   "due": "2026-10-30"
+  },
+  {
+   "id": "T2",
+   "what": "Phase 1 definition-of-done exists before any artist recruitment",
+   "due": "2026-10-23"
+  },
+  {
+   "id": "T3",
+   "what": "commons license one-pager: ownership, use rights, payment",
+   "due": "2026-11-06"
+  }
+ ]
+}
