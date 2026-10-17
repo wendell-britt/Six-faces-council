@@ -1,8 +1,37 @@
-2026-10-17 (updated 04:00)
+2026-10-17 (updated 04:45)
 ontology: default; touches: TrustState, ConsentRecord, MovementFinding
 # Big Mind cave (battle fr-big-mind-cave)
 
 ## Next
+**2026-10-17, build 4 amended on his board answers (04:18 to 04:22, ledger `council/ledger/2026-10-17-pull-042234.json`):**
+bars-engine #362 was built on the first brief and changes on its own branch, one more commit, Sonnet. New rows
+`council/callsheets/rows/daemon-meeting-answers-2026-10-17.json`. `dmt-trainer` = A: the daemon is never fought; the
+hallway spirit is a wild spirit of that chamber's daemon's family, sat with, and once it settles it stands up as the
+honored daemon (`dmt-ally-honored`). Three changes to #362:
+1. **No storyteller line** (`dmt-victim-leads-review`): remove `APPROACH_LINE` and the "approach-line" screen; the
+   hallway opens straight on the body ask, with "Skip all, walk on" beside it. His "storyteller" meant the Victim leads
+   the council's review, not a line in the game.
+2. **Body ask in two rows** (`dmt-body-blockers`): one card, "What does it feel like?" over K.TEXTURES' words
+   (tightness, tension first, then strength, numbness, plus "moving freely" and "something else") and "What is your body
+   doing?" over the seven movement words; either, both or neither, own words, no word yet. Save
+   `approach.texture` beside `approach.body`. The sensation sets the meeting spirit's texture with the table the
+   3-2-1 and the walls already use (tightness drawn in, tension tall and taut, strength bright, numbness fogged).
+   Numbness still asks faint or clear; "moving freely" changes nothing else.
+3. **Family from the chamber, merge on mismatch** (`dmt-same-order`): the spirit's family is always the chamber's daemon
+   (the book's order, unchanged). Feeling to element, sensation to texture, veil to polarity, settled to state. If the
+   movement picked belongs to another daemon (bracing = Protector, gripping = Controller, pulling back = Skeptic,
+   leaning in = Fixer, sinking = Victim, curling in = Damaged Self, flinging open = Emotional Body), save
+   `approach.merged = <that daemon id>`, wrap the spirit in that daemon's chamber gas, and show one line, "Something of
+   another voice is in this one." Never name it. A matching movement or none: no merge.
+Unchanged from the first brief: four asks at most, veil before settled, a faint answer never shows the settled ask, no
+number on any screen, asked every visit, no words saved, walking on always passes. Checks to add: no "and then..." line
+in any hallway; a mismatched movement saves `merged` and shows the line without a daemon's name; a matching one saves
+none. Tests at his first play: approach play and born-of-my-answer (now four of five layers: element, texture, veil,
+state, merge). Sprout follows `dmt-trainer` A too: its spirit slice's "fight the Fixer" becomes a spar with the
+Fixer's spirits (spirit-generator callsheet).
+
+<details><summary>First brief of build 4 (superseded above)</summary>
+
 **2026-10-17, build 4: the approach check-in (pass `daemon-meeting1`):** after bars-engine #361 merges, one pull request on
 bigmind.js, Sonnet (design settled). Positions `dmt-approach-checkin`, `dmt-body-first`, `dmt-storyteller-line`,
 `dmt-two-axes`, `dmt-spirit-from-answers`, `dmt-vouch-once` (rows `council/callsheets/rows/daemon-meeting-2026-10-17.json`).
@@ -16,6 +45,8 @@ core). "Skip all" and walking on always pass. Asked every visit. Save `voices[id
 at}`, no words. Checks: a faint answer never shows the settled ask; no screen prints a number. Tests at his first play:
 approach play (over a minute, or all four skipped twice, cuts to two asks) and born-of-my-answer (three of four layers
 recognised). `dmt-trainer` (fight a daemon's spirits?) waits on his answer and blocks nothing here.
+
+</details>
 
 **2026-10-16, trust, 3-2-1, spirits and solo play (pass `big-mind-trust1`):** Wendell's walkthrough notes of 21:52 after
 playing the path to the centre. Pass `council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md`, ledger

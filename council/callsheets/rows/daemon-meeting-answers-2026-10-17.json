@@ -1,0 +1,29 @@
+{
+ "positions": [
+  {
+   "id": "dmt-body-blockers",
+   "faces": ["shaman", "architect"],
+   "pass": "daemon meeting 1, after your answers",
+   "auto": true,
+   "pos": "The body ask comes first and mixes the four blocked sensations with the movements, on one card in two rows. What it feels like: tightness, tension, strength, numbness, moving freely, or something else, in the body map's words, tightness and tension first. What your body is doing: bracing, gripping, pulling back, leaning in, sinking, curling in, flinging open. Pick from either row, both or neither; \"no word yet\" and your own words are equal answers. It is your report, never the game's reading: no screen names a daemon from it. The sensation dresses the meeting spirit in the texture the cave already uses (tightness drawn in, tension tall and taut, strength bright, numbness fogged). Numbness and the faint-or-clear ask stay separate questions, and \"moving freely\" is taken at its word. This stands unless you flip it.",
+   "why": "Your steer on dmt-body-first (overruled, 04:20): \"We want to mix this with the blockers constriction strength tension and numbness as well\". Your ruling of 2026-10-12 names the four blocked sensations (Frantzis), with everything else free-flowing qi and aliveness; sb-sensation-order puts tension and constriction early. The cave's texture table is bars-engine body-map.js and bigmind.js K.TEXTURES. ps-numbness-link, ff-no-daemon-on-aliveness. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md, after your answers."
+  },
+  {
+   "id": "dmt-victim-leads-review",
+   "faces": ["sage"],
+   "pass": "daemon meeting 1, after your answers",
+   "auto": true,
+   "pos": "The Victim speaks nowhere in the hallway, and no storyteller line is added to the game. Your words about the storyteller were about the council: the Victim, at its storyteller level, leads the six game masters' review of meeting a daemon beside the Sage. It runs first and frames the pass, as it did in daemon meeting pass 1, and every later pass on this subject calls it first. This stands unless you flip it.",
+   "why": "Your steer on dmt-storyteller-line (overruled, 04:20): \"I meant the Victim daemon in the 6 game master Review\", on your message of 01:45: \"I think the victim at the storyteller level and as the sage should lead the charge\". Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md, after your answers."
+  },
+  {
+   "id": "dmt-same-order",
+   "faces": ["architect", "challenger", "regent"],
+   "pass": "daemon meeting 1, after your answers",
+   "auto": true,
+   "pos": "Everyone meets the daemons in the same order, at least at first: the book's order, the Player last. The spirit that forms in each hallway is always of that chamber's daemon's family, a wild spirit of the daemon you are walking toward, sat with and never fought; once it settles it stands up as the daemon's honored self (dmt-ally-honored). Your answers dress it: the feeling sets its colour, the sensation its texture, faint or too much the veil or flood, settled or not the state. The movement you pick connects only when it does not match: a movement that belongs to another daemon (bracing, the Protector's push, in the Fixer's hallway) shows this daemon merged with that one, and the spirit carries the other daemon's chamber gas wrapped round it. The game says \"something of another voice is in this one\" and never names it. A matching movement, or none, changes nothing. What a merged daemon does next is the next pass's question. This stands unless you flip it.",
+   "why": "Your steer on dmt-spirit-from-answers (overruled, 04:21): \"We want people to go through the same order at least at first. This only connects if it's a daemon who is merged with another one if the sensation doesn't match\". ds-daemon-order (A, the book's order). dmt-trainer A: a daemon's wild family spirits come first and the daemon is never fought. The match is read on the movement, because each daemon holds one movement (GESTURES.md) and the record gives no daemon a blocked sensation of its own; that reading is inferred. Source: council/passes/6FACE_PASS_daemon-meeting1_2026-10-17.md, after your answers."
+  }
+ ],
+ "questions": []
+}
