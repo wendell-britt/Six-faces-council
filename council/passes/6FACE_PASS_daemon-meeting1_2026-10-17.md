@@ -284,3 +284,19 @@ and blocks neither.
 spirit-loop round. Next pass on the subject grades all three.
 
 **Backlog** (carried from the brief): props for each daemon's job.
+
+## After his answers (board read 04:22, ledger `council/ledger/2026-10-17-pull-042234.json`)
+
+`dmt-trainer` = A: the daemon is never fought. Overruled with his steers, and replaced (rows
+`council/callsheets/rows/daemon-meeting-answers-2026-10-17.json`):
+- `dmt-body-first` -> `dmt-body-blockers`. His steer: "We want to mix this with the blockers constriction strength
+  tension and numbness as well". The body card gets a second row, the four blocked sensations in the body map's words,
+  and the sensation sets the meeting spirit's texture from the table the cave already has.
+- `dmt-storyteller-line` -> `dmt-victim-leads-review`. His steer: "I meant the Victim daemon in the 6 game master
+  Review". The Victim leads the council's review of this subject; no storyteller line in the game.
+- `dmt-spirit-from-answers` -> `dmt-same-order`. His steer: "We want people to go through the same order at least at
+  first. This only connects if it's a daemon who is merged with another one if the sensation doesn't match". The family
+  is the chamber's daemon's, in the book's order; a movement that belongs to another daemon marks a merge. Reading the
+  match on the movement is inferred: each daemon holds one movement, and no daemon owns a blocked sensation in the record.
+The rest stand. The Big Mind build 4 brief is amended in `council/callsheets/big-mind-cave.md`; sprout's change is on the
+spirit-generator callsheet. The next pass on this subject (what a merged daemon does) calls the Victim first.
