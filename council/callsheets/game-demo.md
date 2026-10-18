@@ -28,6 +28,19 @@ game itself". Default taken: "the game" is the 3D cave game on bars-engine.verce
   `oag.tutorial.v1`). cave-test 393/0 with seven new title checks, bigmind-test 520/0. scout: 2, all on the page already.
   Not checked: a real phone's frame rate, Continue into Big Mind on a real save, screen-reader order.
 
+- **PR 2, The Arrival** (bars-engine #383, draft, stacked on #382; retarget to main once #382 merges; preview
+  https://bars-engine-git-claude-projec-0326eb-wendells-projects-9c1b16dc.vercel.app/ontology-game/cave ): a new player's first
+  WAVE room opens with its page tucked away; the chest light floats to each lesson with one glyph and no words (walk, look,
+  tap the floor on a spot in view, sit on the rug, the nearer door, with an edge arrow when it is out of view); each goes for
+  good once done, in any order; "I know this" (fixed at the bottom) skips one; ids kept in `oag.tutorial.v1`. The round-1
+  walking paragraph is gone. From the board the page stays up and lessons wait for Look around. cave-test Arrival block 16/16
+  (full run before the last fixes: 400 passed, the 4 fails all in the Arrival block, since fixed); shadow and board-wave
+  tests pass except their servers not serving walker.glb (from #381, not this PR). scout: 2, the room's own controls.
+  Not checked: a real phone, screen-reader reading of the glyph labels.
+  Next for PR 2: Wendell plays #382 then #383; merge #382, retarget #383 to main, mark ready. The cave's lessons (run,
+  glowing marks, word stones) were not in PR 2; fold them into PR 3 with Big Mind's glyphs, reusing `ROOM_LESSONS`'
+  pattern and `learn()`. Small fix owed: shadow-test and board-wave-test servers should serve `cave/player/walker.glb`.
+
 ## Next: the walkthrough, taught by doing (design settled here; build on Opus, then Sonnet for the later PRs)
 What a new player meets today (worker map, 2026-10-18): an HTML title page, a WAVE room whose first page is one overlay
 sentence about the stick, and a Big Mind mouth that is a rules list. Drag-look, run, prompts by the thumb, word panes,
@@ -52,7 +65,7 @@ Positions taken (they stand unless he flips them):
 
 PR order, one at a time, each with a playable link (bars-engine.vercel.app preview) and its own test checks:
 1. Title as a game screen with Continue and settings. Built: bars-engine #382.
-2. The Arrival: the lantern guide and the WAVE room lessons, saved in `oag.tutorial.v1`, replacing the round-1 sentence.
+2. The Arrival: the lantern guide and the WAVE room lessons, saved in `oag.tutorial.v1`, replacing the round-1 sentence. Built: bars-engine #383.
 3. Big Mind first-use glyphs for Self, Spirits, Trust, run, and the mouth rewrite.
 4. Sliders to a dial, keep list to cards, no `alert()`.
 Tests at his first play: T1 a new player reaches the WAVE room rug without reading a paragraph; T2 nothing he already
