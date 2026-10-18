@@ -3,6 +3,9 @@ ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
 ## Next
+**Crafting, 2026-10-18, pass `crafting-charge1`:** Wendell's message of 18:42 asked for six-face research on Minecraft, Roblox, No Man's Sky and Taoist cultivation crafting, aimed at turning inner charge into game assets and items. Pass `council/passes/6FACE_PASS_crafting-charge1_2026-10-18.md`, ledger `council/ledger/2026-10-18-crafting-charge1-pass.json`, rows `council/callsheets/rows/crafting-charge-2026-10-18.json`, doc https://claude.ai/code/artifact/c01e8825-0736-455a-8541-a877eb6d2627. All five faces backed slice 1 on conditions. Twelve `cc-*` positions stand (slice 1 is one ember into one lantern at the hearth, `cc-hearth-slice`; the sealed-text leak is fixed on the server first, `cc-seal-fix-first`; embers private, intensity is look only, element hidden unless shown, no staleness-holding item, no random failure, no two-person recipe before Ari reads one). Question on the board: `cc-first-made` (A lantern, recommended; B tea). Deferred: `cc-licence-conflict` (toolbox.yaml allows CC-BY, QUICKSTART only own work and CC0). Tests F1 (first shared session), F2 (Ari reads a recipe card), F3 (desk count of wuxing pairs).
+Next: a fresh Opus build thread on bars-engine, on the hollow (#366/#367), per the build brief at the end of the pass file: the server fix, then embers and lanterns, `bh-device-gate` iPhone first, Ari after. Name the scout line.
+
 **2026-10-16, pass `relationship-creature1`:** Wendell's message of 22:20 proposing a creature two people co-tend in the
 Lower-Left space, fed by worked-through charge, living in a garden of BARs, drawn from Eri Kardos's *Relationship
 Agreements* (2016), for Mastering Allyship, Flirtcraft and Friendcraft. Pass
