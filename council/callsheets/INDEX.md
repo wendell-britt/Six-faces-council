@@ -5,6 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
+- [walkthrough](walkthrough.md), 2026-10-18: golden-path build sprout #58 plays title to saved quest; the road's battle is now the Super NES face-off (sprout #59 on #58, position `battle-road-opens-face-off`); next his phone play.
 - [artist-corps](artist-corps.md), 2026-10-17: artist-training non-profit; pass 2 done (Phase 1 definition-of-done, T1 design, plain hour log, contractor-to-cooperative pipeline, consent form); waits on Wendell's anchor step `artist-corps-anchor-01` (due 10-22) for T1; T3 commons license met (`pos-ac-commons-license`).
 - [engine-slice](engine-slice.md), 2026-10-17: referee and story layer on the slice's screen in sprout #57 (draft, on #56); waits on Wendell's playtest, board step slice-referee-playtest-01.
 
