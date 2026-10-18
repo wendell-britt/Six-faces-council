@@ -22,3 +22,20 @@ battle system we've been working on k codex. ... This battle type for example ju
 - `npm run test:playtest` fails on #58's base too (tools/simulate-slice.mjs exits 1 when a farm-fight policy is
   stuck); not from this work.
 - Next build after his look: integration (Mother Ede's first Skilled Helper talk as quest 2), then the settlement.
+
+## Next: the spirit board's 2D sprites in the face-off (brief for the next thread)
+Wendell, 2026-10-18 19:07, after the face-off landed: "Ok now we've got this let's start introducing the 2d sprites from
+the spirit board. We have logic for veiled spirits and unveiled spirits and elemental version connected to various daemons".
+- Stack on sprout #59 (branch claude/project-thread-i8uuuw), which this thread owns along with #58; keep
+  `npm run walkthrough` at 8 of 8 and republish the phone build (https://claude.ai/artifact/ArJr2ii1LrquyXeoUi2AUy).
+- The art: the spirit generator's sprites rendered from the Blender families (spirit-generator.md; bars-engine #318
+  `tools/blender-cloud/content/spirits/`, page https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85 and its later
+  versions; the Victim's Ballad on v28). Each daemon has a family (`sg-body-from` A: the urge picks the family).
+- The logic to wire: the three states (`ss-three-states`, `ss-markers`), veiled and flooding (`ss-not-veiled`, perceptual
+  shadow, bars-engine #326), the element versions, and the daemon to family map (`dmt-*`, `ds-*` positions).
+- The hook: battle-ui.js already calls `drawSpiritArt(g, foe, x, y, scale, now)`, and main.js draws `record.battleAsset`
+  when a record has one. Today daemons on the strip are a coloured block (main.js `drawDaemon`). Default: on the strip the
+  foe is the encountered daemon's family spirit (wild, dissatisfied) in the worn element, veiled until Listen reveals it,
+  drawn from packed sprite assets by asset id (CLAUDE.md: data names ids, never paths). Sprites go through the SNES
+  profile check (15 colours per palette); remap colours first, never redraw without his approval.
+- Any design question goes through the reach test onto the Council Board.
