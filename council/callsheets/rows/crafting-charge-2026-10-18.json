@@ -1,0 +1,176 @@
+{
+ "positions": [
+  {
+   "id": "cc-hearth-slice",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "The first crafting build is one ember into one lantern at the hollow's hearth. It has no recipes, no randomness, no failure and no counts. This stands unless you flip it.",
+   "why": "All five faces backed slice 1 on conditions and cut the rest of the strawman. Pass: council/passes/6FACE_PASS_crafting-charge1_2026-10-18.md"
+  },
+  {
+   "id": "cc-seal-fix-first",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "Before anything is crafted, the sealed charge's text stops reaching the other member's device. The fix goes on the server first, then the hearth is built. This stands unless you flip it.",
+   "why": "bars-engine src/lib/between/store.ts:55-62 returns every item row to both members and garden.js:447 hides a sealed one only in the browser, so a sealed charge's text already reaches the other person's device. rc-pictures-private."
+  },
+  {
+   "id": "cc-move-sets-element",
+   "faces": [
+    "architect"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "The ember stores the move the player chose. Its element comes from the move's element pair in move-engine.ts, and a move that does not match the charge's element is rejected. This stands unless you flip it.",
+   "why": "bars-engine src/lib/quest-grammar/move-engine.ts:27-51 gives each of the 15 moves its pair, so move and element are one fact and storing both could disagree."
+  },
+  {
+   "id": "cc-pouch-private",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "Embers live in BetweenPrivate under a new key. No shared row holds an ember's text or intensity. This stands unless you flip it.",
+   "why": "BetweenPrivate takes only garden and spark today (rules.ts:17,31). rc-pictures-private; QUICKSTART: intimate disclosure is not progression currency."
+  },
+  {
+   "id": "cc-intensity-look",
+   "faces": [
+    "challenger",
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "A charge's intensity sets how big and bright its ember and lantern look and never what they do. This stands unless you flip it.",
+   "why": "QUICKSTART: disclosure is not a progression currency. A louder feeling buying a stronger item pays for bigger reported feelings."
+  },
+  {
+   "id": "cc-element-hidden",
+   "faces": [
+    "diplomat",
+    "challenger",
+    "regent"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "The element of a shared lantern is hidden from the other person unless its maker shows it. The lantern is the maker's own hue until then. This stands unless you flip it.",
+   "why": "Showing an element shows the feeling behind it (Metal is fear). rc-pictures-private. Diplomat's copy: a green wood ember, never the feeling word."
+  },
+  {
+   "id": "cc-no-stale-lantern",
+   "faces": [
+    "regent",
+    "shaman",
+    "challenger"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "No item holds off the Between's staleness. A made item never stands in for tending. The Diplomat dissents: an away-lantern is a good rest route. This stands unless you flip it.",
+   "why": "Your steer on rc-stale-neglect: plain neglect makes the Between stale. The Regent, Shaman and Challenger cut it; the Diplomat kept it as a rest route (FC-07)."
+  },
+  {
+   "id": "cc-no-failure",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "Slice 1 has no random failure. A lantern the maker lets go of 'went to ash', composts, and owes the maker nothing. This stands unless you flip it.",
+   "why": "QUICKSTART: composting is valid completion and owes no harvest. Random failure makes a slot machine (Challenger). Never the word failed (Shaman)."
+  },
+  {
+   "id": "cc-charge-only",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "Everything made at the hearth comes from charge. Preset and story feelings are the floor for someone with nothing worked through. The Diplomat raised a foraged route and that stays with her as a note. This stands unless you flip it.",
+   "why": "Your message of 2026-10-18 names inner charge as the source. A newcomer can still make an ember from a preset or a colour only, with the same result as a worked one."
+  },
+  {
+   "id": "cc-between-only",
+   "faces": [
+    "regent"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "Charges become embers only inside the Between for now. Carrying a charge in from charge capture needs its own permission record first. This stands unless you flip it.",
+   "why": "Smallest build. Moving a charge across games crosses a privacy boundary (ontology permission envelope) and is not asked for yet."
+  },
+  {
+   "id": "cc-lantern-offer",
+   "faces": [
+    "architect",
+    "regent",
+    "shaman"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "A lantern placed in shared space is an offer. It counts toward the Between once, on the other person's yes. Only its maker can move, take back or compost it, and the other cannot change the maker's mark. This stands unless you flip it.",
+   "why": "Your steer on rc-offer-received: needs to be co-tended to affect the Between. Architect T7: rules.ts:90-93 lets either member update any item today."
+  },
+  {
+   "id": "cc-no-joint-before-ari",
+   "faces": [
+    "challenger",
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "No recipe that needs both people ships until Ari has read one recipe card. That is a later Your steps item. This stands unless you flip it.",
+   "why": "A recipe that needs both reads as 'I need your anger', the paper play's fail case (Challenger F2). A stored ember is never a yes (Regent)."
+  },
+  {
+   "id": "cc-licence-conflict",
+   "faces": [
+    "regent"
+   ],
+   "pass": "crafting-charge1",
+   "auto": true,
+   "pos": "council/toolbox.yaml line 7 lets CC-BY assets ship with credit and ontology/v0.1/QUICKSTART.md allows only our own work and CC0. The stricter rule holds. This is deferred until a crafted item needs an outside model; the lantern is made in code, so it does not. This stands unless you flip it.",
+   "why": "Regent's finding. Nothing is built that needs the answer yet.",
+   "deferred": "until a crafted item needs an outside model"
+  }
+ ],
+ "questions": [
+  {
+   "id": "cc-first-made",
+   "faces": [
+    "sage",
+    "architect",
+    "challenger"
+   ],
+   "pass": "crafting-charge1",
+   "q": "Is the first item the two of you make at the hearth a lantern or a tea?",
+   "why_you": "Your message asks for both kinds of item, ones that customize the game world and ones that improve gameplay, and the faces split on the order. Four faces put the lantern first and the Architect puts tea first. Only you know which first moment you want Ari to have.",
+   "not_before": "There was no hearth to ask about until the hollow in rounds 2 and 3 (bars-engine #366, #367) and your message of 2026-10-18.",
+   "options": [
+    {
+     "v": "lantern",
+     "label": "A. The lantern (recommended)",
+     "c": "It customizes the hollow, one person can make it alone, and it ships smallest. Tea waits for slice 2. Four faces back this."
+    },
+    {
+     "v": "tea",
+     "label": "B. Tea from two bowls",
+     "c": "It changes play: each puts in an ember at the time and you drink when both sit. It needs both of you present and risks reading as 'I need your feeling' before Ari has been asked. The Architect backs this."
+    }
+   ]
+  }
+ ]
+}
