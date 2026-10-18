@@ -1,0 +1,30 @@
+{
+ "positions": [
+  {"id": "sic-family-cloud", "faces": ["shaman", "architect"], "pass": "spirits-in-caves1", "auto": true,
+   "pos": "The spirit that comes out of you when you meet a daemon wears that daemon's family as a cloud of motes in the colour of the feeling you named: the daemon's own gas drifts from its body to the spirit at your side. Anger before the Protector is a fire-coloured Shellback cloud. Damaged Self and Emotional Body spirits stay plain clouds until their families are built. This stands unless you flip it.",
+   "why": "Your message of 2026-10-18: \"pulling in a cloud spirit of the type of the daemon they are in front of\". The daemon picks the family (sg-body-from A) and the gas is the first form (sg-holo-stages). Source: council/passes/6FACE_PASS1_spirits-in-caves_2026-10-18.md"},
+  {"id": "sic-unfold-by-sitting", "faces": ["architect", "challenger", "shaman"], "pass": "spirits-in-caves1", "auto": true,
+   "pos": "Each W.A.V.E. sitting with a spirit, standing or sitting, in either cave, moves it along its unfolding: gas at first, core after 2 sittings, hologram after 4, creature after 6, standing ally after 8. A sitting that ends with no shift still counts. One sitting counts once per spirit per run, and no form locks anything away. This stands unless you flip it.",
+   "why": "Your order, gas to core to hologram to creature to standing ally. The spacing keeps sg-holo-stages' levels 1, 3, 5; the once-per-run rule is the Challenger's guard against grinding. Source: council/passes/6FACE_PASS1_spirits-in-caves_2026-10-18.md"},
+  {"id": "sic-one-store", "faces": ["architect"], "pass": "spirits-in-caves1", "auto": true,
+   "pos": "Both caves keep spirits in one save on the device: each spirit's name, element, family, sittings and where it was born, with its sittings listed. Big Mind's kept list reads from it, and Forget and Delete everything cover it. Nothing is sent anywhere. This stands unless you flip it.",
+   "why": "Your \"save spirits between runs and continue to cultivate them over time\". Today Big Mind saves its own and the starting cave keeps them one visit. Source: council/passes/6FACE_PASS1_spirits-in-caves_2026-10-18.md"},
+  {"id": "sic-loadout-three", "faces": ["architect", "regent"], "pass": "spirits-in-caves1", "auto": true,
+   "pos": "In the starting cave, at the rug where you sit for W.A.V.E., you choose up to three spirits to walk with you; the others wait there until you come back. This stands unless you flip it.",
+   "why": "Your \"choosing a spirit load out should be something you can do in the intro cave\". Three is how many the game already shows at your side (SPIRITS_SHOWN). Source: council/passes/6FACE_PASS1_spirits-in-caves_2026-10-18.md"},
+  {"id": "sic-first-cave-sitting", "faces": ["regent", "diplomat"], "pass": "spirits-in-caves1", "auto": true,
+   "pos": "Big Mind's features come to the starting cave, and its W.A.V.E. with spirits is the sitting-down version: you sit, the spirits you brought settle around you, and each one unfolds as you finish. This comes after the cloud, the unfolding and the save, in that order. This stands unless you flip it.",
+   "why": "Your message of 2026-10-18 on the first cave. The order is the Regent's: each piece needs the one before it. Source: council/passes/6FACE_PASS1_spirits-in-caves_2026-10-18.md"}
+ ],
+ "questions": [
+  {"id": "sic-demo-showcase", "faces": ["shaman", "architect", "sage"], "pass": "spirits-in-caves1",
+   "q": "How should the demo show a spirit's five forms to a new player?",
+   "why_you": "You asked to think through how the demo showcases these spirits. A first run reaches only the cloud, so the demo needs a way to show the rest, and which first impression you want is yours to pick. The Shaman leans to A, the Architect to C.",
+   "not_before": "Until your message of 2026-10-18 the caves had no spirit forms at all, so there was nothing to showcase.",
+   "options": [
+    {"v": "elder", "label": "A. An elder spirit (recommended)", "c": "A grown ally already lives in the intro cave and greets you; tapping it shows the five forms it came through. One family's art ships first. The Shaman backs this."},
+    {"v": "quick", "label": "B. Demo pace", "c": "In the demo every sitting moves a spirit a whole form, so a player sees cloud to ally in four sittings. It shows growth by doing but makes each sitting feel lighter."},
+    {"v": "gallery", "label": "C. A wall of forms", "c": "A wall in the intro cave shows each family's five forms as glowing statues. It shows the most and costs the most art. The Architect backs this."}
+   ]}
+ ]
+}
