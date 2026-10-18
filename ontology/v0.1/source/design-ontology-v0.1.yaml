@@ -865,6 +865,15 @@ asset_sourcing:
       may_ship_in_web_build: true_as_code
       may_appear_in: [shipped_pages]
       example: three.js
+    generated_mesh_rebuilt:
+      licence: the generating model's licence for its output (docs/asset-generation.md, licence read of 2026-10-18)
+      may_ship_in_web_build: true_when_both_conditions_hold
+      may_appear_in: [renders, previews, shipped_pages]
+      conditions:
+        - Retopologised and re-skinned to the J4 rig (hem bones included), passing the J4 tests.
+        - A plain, visible credit line says it began as a generated mesh and who reworked it.
+      ruling: board q-af-ship, option B, Wendell, 2026-10-18
+      example: an AssetFurnace (Pixal3D) body, retopologised and bound to the J4 skeleton
     ai_concept:
       licence: none_claimed
       may_ship_in_web_build: false
