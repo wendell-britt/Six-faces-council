@@ -60,6 +60,9 @@ This file is for any coding agent (Codex, Claude, or another) and for people. It
   tool do it (`python3 council/tools/scout.py <job>`, reading `council/toolbox.yaml`), does an unknown one (one worker
   search, keepers added to the toolbox). Build by hand only after that, and record the rung in a `scout:` line
   (Wendell, 2026-10-18: "Essentially a hack of ponytail but for asset pipeline and 3d production").
+- A build proves itself the cheapest way first (a probe number before a still, a still before a sheet or video),
+  leaves a check the next round can rerun, and ends its report with what was not checked (docs/tool-scout.md,
+  "Building it small").
 
 ## Where the rest lives
 
