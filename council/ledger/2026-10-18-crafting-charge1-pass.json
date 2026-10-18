@@ -1,0 +1,174 @@
+{
+ "date": "2026-10-18",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "The Between: crafting the charge",
+ "record": "council/passes/6FACE_PASS_crafting-charge1_2026-10-18.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's note in the project chat, 2026-10-18 18:42 UTC; thread started by the project coordinator",
+ "pulled_first": null,
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "changing_lines": [
+    3
+   ],
+   "n": 39,
+   "name": "Impasse",
+   "cn": "蹇",
+   "pinyin": "jiǎn",
+   "shows": "The direct route is closed and you have asked nobody.",
+   "becomes": {
+    "n": 8,
+    "name": "Alliance",
+    "cn": "比",
+    "pinyin": "bǐ",
+    "shows": "This is filling a hole you had before it started."
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "changing_lines": [
+    2,
+    3,
+    4
+   ],
+   "n": 2,
+   "name": "Bearing",
+   "cn": "坤",
+   "pinyin": "kūn",
+   "shows": "The whole weight of this is yours, unasked.",
+   "becomes": {
+    "n": 32,
+    "name": "Endurance",
+    "cn": "恆",
+    "pinyin": "héng",
+    "shows": "This exact exchange has happened before."
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "changing_lines": [
+    3,
+    5
+   ],
+   "n": 39,
+   "name": "Impasse",
+   "cn": "蹇",
+   "pinyin": "jiǎn",
+   "shows": "The direct route is closed and you have asked nobody.",
+   "becomes": {
+    "n": 2,
+    "name": "Bearing",
+    "cn": "坤",
+    "pinyin": "kūn",
+    "shows": "The whole weight of this is yours, unasked."
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "changing_lines": [
+    3
+   ],
+   "n": 26,
+   "name": "Reserves",
+   "cn": "大畜",
+   "pinyin": "dà chù",
+   "shows": "You have been storing this and never named the day.",
+   "becomes": {
+    "n": 41,
+    "name": "Spending",
+    "cn": "損",
+    "pinyin": "sǔn",
+    "shows": "This has a price and you have yet to name it."
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "changing_lines": [
+    1,
+    5
+   ],
+   "n": 56,
+   "name": "Passing Through",
+   "cn": "旅",
+   "pinyin": "lǚ",
+   "shows": "You are a stranger here, and you will be judged fast.",
+   "becomes": {
+    "n": 13,
+    "name": "Fellowship",
+    "cn": "同人",
+    "pinyin": "tóng rén",
+    "shows": "You are walking the same way and neither of you has said so."
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "changing_lines": [
+    3
+   ],
+   "n": 40,
+   "name": "Thaw",
+   "cn": "解",
+   "pinyin": "xiè",
+   "shows": "The knot just loosened, and the window is short.",
+   "becomes": {
+    "n": 32,
+    "name": "Endurance",
+    "cn": "恆",
+    "pinyin": "héng",
+    "shows": "This exact exchange has happened before."
+   }
+  }
+ ],
+ "positions": [
+  "cc-hearth-slice",
+  "cc-seal-fix-first",
+  "cc-move-sets-element",
+  "cc-pouch-private",
+  "cc-intensity-look",
+  "cc-element-hidden",
+  "cc-no-stale-lantern",
+  "cc-no-failure",
+  "cc-charge-only",
+  "cc-between-only",
+  "cc-lantern-offer",
+  "cc-no-joint-before-ari"
+ ],
+ "questions": [
+  "cc-first-made"
+ ],
+ "deferred": [
+  "cc-licence-conflict"
+ ],
+ "daemon_reports": [],
+ "unanimous": false,
+ "doc": "https://claude.ai/code/artifact/c01e8825-0736-455a-8541-a877eb6d2627",
+ "working_files": "project files council-passes/crafting-charge-2026-10-18/ (brief, five face reports, research-sandbox.md, research-cultivation.md, bars-engine-today.md)",
+ "verdicts": "all five faces support_with_conditions on slice 1; unanimous on the verdict, split on the slice's first item (Architect: tea; Shaman, Challenger, Regent, Diplomat: lantern)",
+ "cast_note": "The casts were made by cast.py in the pass thread; the coin tosses were not kept in the handoff, so only hexagrams and changing lines are recorded.",
+ "tests_dated": [
+  {
+   "id": "F1",
+   "when": "first shared session with the slice, after his iPhone check",
+   "test": "Fails if neither person makes a second lantern unprompted or either reports pressure. Unlocks recipes next versus the hollow's gaps 6 to 10."
+  },
+  {
+   "id": "F2",
+   "when": "after Ari reads one two-person recipe card",
+   "test": "Unlocks tea or joint recipes."
+  },
+  {
+   "id": "F3",
+   "when": "a desk count of wuxing pairs",
+   "test": "Unlocks whether element-pair variants can show."
+  }
+ ]
+}
