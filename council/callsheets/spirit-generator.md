@@ -93,6 +93,7 @@ ontology: game_design; touches: State, SatisfactionReport, TensionConfiguration
 - His look at the donkey (page version 28) or the Hedge (version 23) before round 20, the Ballad's basset hound and elephant (three rounds past his last look).
 
 ## Files
+- Publishing the page (from version 31, 2026-10-18, thread "Spirit page loads on demand", bars-engine #372): the page is a light index. Model packs live in the artifact's asset store (1 GiB, 5,000 files, kept across versions; Artifact pages cannot fetch from bars-engine.vercel.app) and load through `glb/manifest.json` when a base and state are picked; pictures live in `parts/<hash>.json` and load on scroll. Each round: `lighten.py split` on the page, `lighten.py stage` the new packs, upload the `.js` copies with Artifact publish (url, asset: true, 25 a call), `lighten.py manifest` the upload results, then publish index.html with the new parts and manifest. Never put packs in the page's published files again.
 - Pass: `council/passes/6FACE_PASS_spirit-gen1_2026-10-13.md`; rows `council/callsheets/rows/spirit-gen1-2026-10-13.json`; ledger `2026-10-13-spirit-gen1.json`.
 - Related: `wave-battle.md` (the fight page, sprout #50, `sf-stats-carry`, `sf-generator-next`).
 - His look at version 14 (2026-10-16 20:55, recorded with `next_round.py look spirit-generator 11`, keep-going): "Reviewed spirit page and it looks good what’s next for that work?"
