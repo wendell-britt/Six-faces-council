@@ -52,6 +52,18 @@ game itself". Default taken: "the game" is the 3D cave game on bars-engine.verce
   Positions taken: "sit out any question" left the mouth (every ask has its own decline); what leaves the device stayed as words.
   Not checked: the Spirits glyph in a browser, a real phone, screen-reader reading of the glyph labels.
   Next for PR 3: Wendell plays #382, #383, #384 in order; merge each, retargeting the next to main. Then PR 4 below.
+- **PR 4, the charge dial and kept cards** (bars-engine #385, draft, stacked on #384; retarget to main once #382 to #384 merge;
+  preview https://bars-engine-git-claude-projec-2978c9-wendells-projects-9c1b16dc.vercel.app/ontology-game/cave ): every 0 to 10
+  reading in the cave, the WAVE room and Big Mind (3-2-1 charge, Allow's size and brightness, Big Mind's charge polls) is a drawn
+  dial, `dial()` in cave.js on the kit: a ring from calm green to full coral, drag or tap, the number in its middle, the range
+  input kept inside unseen so keys, screen readers and test fills still work. The Big Mind mouth's kept list is a card per voice
+  (daemon-coloured edge, Forget on the card), spirits a card of chips; Delete everything asks again on the page. `alert()` is
+  gone: `notice()` puts a line at the foot of the screen (role status, or alert for a failure). cave-test 418/0, bigmind-test
+  541/0, shadow 54/0, board-wave 20/0; both main tests now fail on any browser dialog. scout: 2, the page's own range inputs
+  under an SVG. Left as they are: game.jsx's 1 to 10 block-size slider and its record-erase confirm (the 2D game).
+  Not checked: a real phone's thumb on the dial, screen-reader reading of the dial.
+  Next for PR 4: Wendell plays #382 to #385 in order; merge each, retargeting the next to main. That ends the walkthrough's
+  four PRs; T1 and T2 are tested at his first play.
 
 ## Next: the walkthrough, taught by doing (design settled here; build on Opus, then Sonnet for the later PRs)
 What a new player meets today (worker map, 2026-10-18): an HTML title page, a WAVE room whose first page is one overlay
@@ -79,6 +91,6 @@ PR order, one at a time, each with a playable link (bars-engine.vercel.app previ
 1. Title as a game screen with Continue and settings. Built: bars-engine #382.
 2. The Arrival: the lantern guide and the WAVE room lessons, saved in `oag.tutorial.v1`, replacing the round-1 sentence. Built: bars-engine #383.
 3. Big Mind first-use glyphs for Self, Spirits, Trust, run, and the mouth rewrite. Built: bars-engine #384.
-4. Sliders to a dial, keep list to cards, no `alert()`.
+4. Sliders to a dial, keep list to cards, no `alert()`. Built: bars-engine #385.
 Tests at his first play: T1 a new player reaches the WAVE room rug without reading a paragraph; T2 nothing he already
 did is taught twice.
