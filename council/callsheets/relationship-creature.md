@@ -173,7 +173,7 @@ Open, in order:
    `from: "artifact:NTi4jcpaHkDEMnqpVA9LBq"`, bearer COUNCIL_MENU_TOKEN. Blocked while that key returns 401 (the
    menu-key-match steps). The route is idempotent and answers "not needed" if he has already replanted under step 02,
    so either order is safe. Read the store with ArtifactData in the thread that runs it; its contents go nowhere else.
-3. **Share with Ari** only after step 02 is ticked: copy the invite link from the More sheet. If Ari can't make a
+3. **Share with Ari** (steps 01 and 02 ticked 2026-10-18 00:17 UTC, no notes; the invite is the only thing left, and only he can make it from the More sheet on his phone, since it needs his sign-in): copy the invite link from the More sheet. If Ari can't make a
    bars-engine account, that is a board question.
 4. **Round 2, cozy and fun** (2026-10-17, board read 01:40: `bh-async-first` overruled after Ari said it is not cozy or
    fun enough). Gap list and the ChatGPT prompt: `council/passes/BETWEEN_round2_cozy_2026-10-17.md`. Waiting on his
