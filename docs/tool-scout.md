@@ -25,6 +25,23 @@ material, a game system), it climbs these rungs and stops at the first one that 
    Keepers go into `council/toolbox.yaml` in the same pull request, so the next thread finds them at rung 3.
 5. **Build it.** Say in one line why rungs 3 and 4 did not hold.
 
+## Building it small
+
+When the ladder reaches rung 5, or adapts a tool at rung 3, the rest of Ponytail's prompt applies, translated for
+assets, 3D and game design:
+
+- **List what the round must reach before starting.** The exported GLB, the viewer page, the game route on
+  bars-engine, the callsheet, the board step. That list is the scope. Extra variants, options and "for later" dials
+  are not.
+- **Prove it the cheapest way first.** A number from a probe script beats a render, one still beats a sheet, a sheet
+  beats a video. Go up a step only when the cheaper proof passes and his check needs the next one. Renders and videos
+  cost a 3D thread the most to read back.
+- **Never cut** what his check asks for, rig-readiness (four feet, no props on living creatures), the licence rules
+  below, the route working in the game, and accessibility on anything a player touches.
+- **Every build leaves its check.** A probe script, a test or a measured number that the next round can rerun without
+  rereading the round (the J5 rounds' `probe.mjs` and the J5d cuff gap are the pattern).
+- **The report ends with what was not checked** and any risk he should know, in one or two lines.
+
 ## Gates and licences
 
 - A tool with `status: gated` needs money or an account. Its first use is a step for Wendell on the board's Your
