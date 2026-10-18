@@ -65,6 +65,7 @@ def main():
     ap.add_argument("--render")
     ap.add_argument("--at")
     ap.add_argument("--delivered", action="store_true", help="finish: every_round deliverables are on the page")
+    ap.add_argument("--scout", help="start or finish: the tool ladder's rung and tool for this round (docs/tool-scout.md)")
     a = ap.parse_args()
 
     if a.cmd == "status":
@@ -86,9 +87,20 @@ def main():
         print(f"ontology: load {prof} only (docs/ontology-in-flows.md)" if prof and prof != "none" else "ontology: load none")
         for d in c.get("every_round", []):
             print(f"every round delivers: {d}")
+        sys.path.insert(0, str(HERE.parent / "tools"))
+        import scout
+        print("tool ladder (docs/tool-scout.md), known tools for this round:")
+        for t in scout.match(r.get("builds", "")) or []:
+            print(f"  {scout.line(t)}")
+        if a.scout:
+            r["scout"] = a.scout
     elif a.cmd == "finish":
         if c.get("every_round") and not a.delivered:
             sys.exit("finish needs --delivered: every round delivers " + "; ".join(c["every_round"]))
+        if a.scout:
+            r["scout"] = a.scout
+        if not r.get("scout"):
+            print("note: no scout line; record the ladder rung with --scout (docs/tool-scout.md)")
         r["status"] = "done"
         if not any(x["status"] == "next" for x in c["rounds"]):
             q = next((x for x in c["rounds"] if x["status"] == "queued"), None)

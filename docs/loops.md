@@ -26,6 +26,11 @@ grader, but his look stops being what starts the next round. Piloted on the spir
 
 `python3 council/loops/next_round.py` with no arguments says, per strand, what may start now and why not.
 
+## Check for a tool first
+
+`next_round.py start` prints the known tools that fit the round's `builds` (`council/toolbox.yaml`), and the round
+records its rung of the tool ladder with `--scout` (docs/tool-scout.md); `finish` notes a round without one.
+
 ## Positions on the board
 
 `loop-ahead-two` (two rounds ahead of his last look) and `loop-auto-gate` (auto only where no money or accounts

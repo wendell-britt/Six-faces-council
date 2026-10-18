@@ -142,12 +142,14 @@ do not run it; `scope` in the file says which is which.
 1. **Spec kit first.** Scaffold `.specify/specs/<feature>/` from `council/spec-kit/`. In a repo with its own
    template, use that one and add the three council sections: the ask, whose decision, and how we will know
    it failed. The repo's own rules win on conventions.
-2. **Each stage has owning faces and a gate** (intake, spec, falsify, plan, build, verify, ship, close). A
+2. **Check for a tool before the plan.** The Architect climbs the tool ladder (`docs/tool-scout.md`) for each thing the
+   feature builds and names the rung and tool in a `scout:` line; a build at rung 5 says why no tool held.
+3. **Each stage has owning faces and a gate** (intake, spec, falsify, plan, build, verify, ship, close). A
    stage's output passes its gate before the next stage starts. The clarifying questions of a spec kit
    interview go through the reach test like any other question.
-3. **Three outputs, kept apart.** Questions go to the board. Steps only Wendell can take go to the board's Your steps tab.
+4. **Three outputs, kept apart.** Questions go to the board. Steps only Wendell can take go to the board's Your steps tab.
    Product goes to a pull request.
-4. **Steps.** Every `[wendell]` task passes the step test (only he can take it) and carries the full step
+5. **Steps.** Every `[wendell]` task passes the step test (only he can take it) and carries the full step
    shape: do, where, enter, check, device, and whether it is safe to stop after. Publish the feature's steps
    as one list with `ArtifactData` to the board's store, named as `steps_page` in `pipeline.yaml`: a `lists/<feature>` document
    (title, repo, why, source, order, created) and `steps/<feature>-<nn>` documents (list, n, do, where, href,
@@ -164,9 +166,9 @@ do not run it; `scope` in the file says which is which.
    account it needs and where it lives. If an input cannot be found, publish a find-it step instead: what is missing,
    why it matters, where it was last seen, and the remediation the game masters will run if he cannot find it
    (`step_missing_input` in `pipeline.yaml`).
-5. **Read his ticks.** The page records `done`, `doneAt` and `note` on each step. Read the list before any
+6. **Read his ticks.** The page records `done`, `doneAt` and `note` on each step. Read the list before any
    work that waits on a step. A note is a report from him; answer it in the next reply or in the pass.
-6. **Ship.** A feature whose gates pass goes on the board as a position that merges on the next board read
+7. **Ship.** A feature whose gates pass goes on the board as a position that merges on the next board read
    unless he flips it. A feature that touches a reserved item ships only on a board question he answers.
 
 ## The feature request move
