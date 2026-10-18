@@ -48,6 +48,8 @@ This file is for any coding agent (Codex, Claude, or another) and for people. It
 - Pull requests merge by themselves once ready and green (`docs/merging.md`); only a `council/faces.yaml` change or a
   daily branch waits for his label. Do not open a second pull request for work an open one covers.
 - Long jobs run in the background and write a short summary file; read it once when the job ends.
+- Hand off before the context passes 150,000 tokens. Every call rereads the whole context, so batch independent
+  calls and keep bulk reading (images, logs, searches) out of the main session.
 - Name the session's cost in its last report if your platform shows it.
 
 ## Where the rest lives
