@@ -27526,6 +27526,78 @@
      "shaman"
     ],
     "pass": "spirit round 19"
+   },
+   "af-route-per-class": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T00:59:25.808Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "asset cost, 2026-10-18"
+   },
+   "af-licence-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T00:59:29.194Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "asset cost, 2026-10-18"
+   },
+   "af-trial-capped": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T00:59:36.392Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "asset cost, 2026-10-18"
+   },
+   "af-ledger-fields": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T00:59:40.161Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "asset cost, 2026-10-18"
+   },
+   "af-sense-and-respond": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T00:59:49.412Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "asset cost, 2026-10-18"
+   },
+   "af-honest-labels": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T01:00:00.378Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "asset cost, 2026-10-18"
    }
   },
   "questions": {
@@ -30046,6 +30118,30 @@
      "regent"
     ],
     "pass": "engine-slice build (test 5)"
+   },
+   "q-af-ship": {
+    "decision": "B",
+    "label": "Retopologised and re-skinned counts as ours",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T00:58:49.705Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "asset cost, 2026-10-18"
+   },
+   "q-af-ceiling": {
+    "decision": "A",
+    "label": "$30 a month",
+    "recorded": "2026-10-18",
+    "saved_at": "2026-10-18T00:59:04.973Z",
+    "record": "council/ledger/2026-10-18-pull-010000.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "asset cost, 2026-10-18"
    }
   },
   "causes": {
