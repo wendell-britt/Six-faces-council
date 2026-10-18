@@ -154,3 +154,13 @@ Your steps when the build thread first republishes a page.
 - 2026-10-12 23:50, the brief for the plan thread: what the pipeline was, what had been tested by hand, what never had, and
   the six questions the plan had to answer. All six are answered in spec.md (tiers, exact or tolerance, the score trap,
   where the tests live and CI, fixtures). Full text in git history of this file.
+
+## Blender skills test (2026-10-18, next thread)
+bars-engine #374 and #375 vendored 21 of EL4CTEO/blender-skills' 22 skills into `.claude/skills/blender-*`, run via
+`tools/blender-cloud/skill_run.py` (bpy 5.2.2). Wendell asked for a test of their efficacy that shows the pipeline's
+state. Brief: (1) pipeline report card: run `qa_check`, `mesh_stats --budget web` and `rig_check` over every GLB we
+ship (cave-kit, figures, garments, daemons, spirits) in a background job; publish one artifact table, pass/fail per
+asset. (2) A/B on Sonnet: one fixed task (cave floor, 30 scattered ferns and moss rocks from
+/mnt/project-files/3d-build/blenderkit-greenery/picks, web GLB under 500 KB, preview render), one Agent worker with the
+skills and one told not to load them; score first-try success, failed Blender runs, tool calls and tokens. n=1 per
+arm, so say it is a smoke test. Known: the web preset's meshopt did not apply under bpy 5.2.2.
