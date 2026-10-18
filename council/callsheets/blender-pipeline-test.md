@@ -2,6 +2,8 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
+- Dials first (council pass 2026-10-18, "How to learn math for 3D game design without losing your mind", https://claude.ai/code/artifact/ddb0797e-cfe1-4b5e-a178-f3c9459b41ff): the next J5 round exposes Weight (mass and stiffness), Settle (damping) and Reach (how far a panel strays from the leg) as named 0-1 dials on its proof page, saved beside the asset in the `warp_numbers` shape, so Wendell's notes come back as dial moves. One dial, one idea; the model proposes values, his look locks them.
+
 J5 (clothing) is built: bars-engine draft #315. `content/ontology-game/cave/garments.py --all [--sheet]` cuts a robe
 (wide sleeves, crossed collar, slits to the knee), a sash (on the body, and `sash-robe` over the robe) and a topknot for
 each of the nine J4 figures in dusk, jade and hemp: 36 skinned GLBs, robe 109 to 119 KB, sash 20, topknot 28. J4's rig
