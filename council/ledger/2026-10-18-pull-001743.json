@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-18",
+ "kind": "board-pull",
+ "newest_save": "2026-10-18T00:17:43.113Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "between-on-bars-engine-01",
+   "at": "2026-10-18T00:17:36.901Z",
+   "what": "ticked",
+   "do": "On your iPhone, open the link below in Safari (not inside the Claude app). Sign in with your bars-engine account if it asks; it brings you back to the garden. Then tap the floor somewhere to walk."
+  },
+  {
+   "id": "between-on-bars-engine-02",
+   "at": "2026-10-18T00:17:43.113Z",
+   "what": "ticked",
+   "do": "Tend the spark once: tap \"Tend the spark\" in the bar at the bottom, pick what you are bringing, write a line, and send it. If you see the sheet asking who the garden is with instead of a spark, fill it in with the same name, kind and hopes you used in the old garden; that plants it again here."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
