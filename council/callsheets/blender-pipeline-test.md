@@ -170,4 +170,10 @@ Report: https://claude.ai/artifact/7AMbgzk3HMk8Gq8seTzSg6. Runner: `council/tool
 - 25 shipped GLBs: asset QA passes 2, web budget passes 20, rig_check passes 6 and crashes on 4 (fox, tortoise, fixer, emotional-body in `public/between/m`: `verts[::step]` slice at `rig_check.py:139`, fix with `list(verts)`).
 - Most QA red is expected (vertex-coloured figures have no UV; fox and tortoise dust particles read as floating). Real: cave kit 16,104 tris and an inverted-normal closed part, fox and tortoise 42k and 56k tris with 27 and 33 materials, room 41k tris and 17 materials.
 - A/B (n=1): skills arm 104k tokens, 19 calls, 4 of 9 runs failed, 296 KB; control 78k tokens, 9 calls, 3 of 8 failed, 359 KB. First full run valid in both. The skills arm shipped a cleaner file (QA gate drove removal of rock fragments; control had 190 floating-fragment flags).
+- Token overhead chased (2026-10-18, bars-engine #377): the extra calls were skill and script reading (5 calls, ~25 KB),
+  three runs lost to container limits (no libEGL, `mathutils.Noise`, WebP on 1-channel images), and QA output that
+  printed every flag. `skill_run.py` now prints counts with the full JSON in a file, and its header lists the limits and
+  the three calls. Re-run on Sonnet: skills 86k, 83k, 84.5k tokens (mean 9 calls), control 82.5k and 87k (mean 12).
+  The cleaner file needs the header's "delete fragments until floating is empty": the two runs before that line shipped
+  119 and 274 fragments, the run after it 0; controls shipped 121 and 301.
 - Next: fix rig_check, add a vertex-colour QA profile, set budgets for kit/room/spirits, resolve meshopt (absent in this bpy build).
