@@ -64,9 +64,15 @@ projects more effectively between that and Jev we can save a lot of tokens"
   their checks pass (docs/merging.md, Wendell, 2026-10-06); only a `council/faces.yaml` change or a daily branch
   waits for his label.
 - Name the session's cost in its last report, read from the platform after the work, never mid-turn.
-- Hand off before the context passes about 200,000 tokens, even mid-feature. The 4 October usage audit found
-  84% of spend was rereading context (`/mnt/project-files/usage-audit/audit-2026-10-04.md`). An art review
-  gets one thread per round.
+- Hand off before the context passes 150,000 tokens, even mid-feature. Check with `python3
+  council/tools/context_size.py` at each milestone; do not guess. The 18 October audit measured 90% of spend as the
+  context carried forward (65% rereading, 25% writing it to cache), up from 84% on 4 October, and threads that
+  ran past 200,000 tokens were 63 of 107 and $504 of $628 (`/mnt/project-files/usage-audit/audit-2026-10-18.md`).
+  An art review gets one thread per round.
+  A PostToolUse hook (`.claude/settings.json`, `council/tools/context_size.py --hook`) now adds the handoff order to every tool result once the context passes the line, so the check no longer depends on remembering it (2026-10-18; the 63 of 107 threads past the old line ran as few long turns, median 2 replies, with no user message to prompt a stop).
+- Every call rereads everything above it, so a call saved is a reread saved: batch independent tool calls into one
+  step, and send work that reads many files, images or logs (render checks, searches, CI logs) to an Agent worker
+  that returns a short verdict, so the reading never enters the thread.
 - Long jobs (Root renders, batches, test loops, sprite rebuilds) run in the background and write a short summary
   file. The thread reads that summary once when the job ends. It does not check in on the job while it runs.
 - Clerical work runs on Sonnet when the model can be chosen: recording board answers, landing rows, merges,
