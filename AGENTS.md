@@ -53,6 +53,14 @@ This file is for any coding agent (Codex, Claude, or another) and for people. It
   A PostToolUse hook (`.claude/settings.json`, `council/tools/context_size.py --hook`) now adds the handoff order to every tool result once the context passes the line, so the check no longer depends on remembering it (2026-10-18; the 63 of 107 threads past the old line ran as few long turns, median 2 replies, with no user message to prompt a stop).
 - Name the session's cost in its last report if your platform shows it.
 
+## Check for a tool before building
+
+- Before building anything new (a round, a model, a rig, an animation, a solver, a game system), climb the tool ladder
+  in `docs/tool-scout.md` and stop at the first rung that holds: does it need to exist, do we have it, does a known
+  tool do it (`python3 council/tools/scout.py <job>`, reading `council/toolbox.yaml`), does an unknown one (one worker
+  search, keepers added to the toolbox). Build by hand only after that, and record the rung in a `scout:` line
+  (Wendell, 2026-10-18: "Essentially a hack of ponytail but for asset pipeline and 3d production").
+
 ## Where the rest lives
 
 - The council's method: `.claude/skills/six-faces/SKILL.md` (plain Markdown; any agent can read it). The pipeline:

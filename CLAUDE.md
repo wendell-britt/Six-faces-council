@@ -80,6 +80,14 @@ projects more effectively between that and Jev we can save a lot of tokens"
   design and first story drafts stay on Opus. Fable runs only when Wendell asks for it by name. Sonnet saves
   about a quarter, not half, because rereading context costs the same on both models.
 
+## Check for a tool before building
+
+- Before building anything new (a round, a model, a rig, an animation, a solver, a game system), climb the tool ladder
+  in `docs/tool-scout.md` and stop at the first rung that holds: does it need to exist, do we have it, does a known
+  tool do it (`python3 council/tools/scout.py <job>`, reading `council/toolbox.yaml`), does an unknown one (one worker
+  search, keepers added to the toolbox). Build by hand only after that, and record the rung in a `scout:` line
+  (Wendell, 2026-10-18: "Essentially a hack of ponytail but for asset pipeline and 3d production").
+
 ## Where the rest lives
 
 - The council's skill: `.claude/skills/six-faces/SKILL.md`. The pipeline: `council/pipeline.yaml`.

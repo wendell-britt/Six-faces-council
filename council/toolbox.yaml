@@ -1,0 +1,114 @@
+# Known tools for building assets, 3D and game code. Read by council/tools/scout.py and the tool ladder
+# (docs/tool-scout.md). One entry per tool. Add a tool the moment a thread finds one that fits; never delete a tool
+# for being unused, mark it `rejected` with the reason instead.
+#
+# status: in_use (a strand ships with it), vendored (in a repo, ready), available (free, no account, untried),
+#         gated (needs money or an account: a step for Wendell before first use), rejected (with why).
+# licence: what the output may be used for. CC0, MIT, Apache use freely; CC-BY ships with a credit line;
+#          SA and GPL assets do not ship (board position cc-store-safe). "per asset" means read each asset's licence.
+
+tools:
+  - id: blender-skills
+    does: 21 Blender agent skills (rigging with Rigify, animation and mocap retargeting, cloth and physics, geometry nodes, retopology and UVs, asset QA, export, materials, lighting)
+    tags: [rig, rigging, skin, weights, animation, mocap, bvh, cloth, simulation, retopology, uv, export, glb, materials, scatter, qa]
+    where: bars-engine tools/blender-skills, run with skill_run.py (bars-engine #374, #375, #377)
+    licence: MIT (EL4CTEO/blender-skills)
+    status: vendored
+
+  - id: rigify
+    does: Blender's built-in rig generator; fit a human or animal metarig, generate IK/FK controls and deform bones
+    tags: [rig, rigging, armature, skeleton, ik, fk, character, animal, quadruped, daemon, figure]
+    where: ships with Blender; the blender-character-rigging skill drives it headless
+    licence: Blender add-on (GPL code); rigs and output are ours
+    status: available
+
+  - id: blender-cloth-bake
+    does: Blender's cloth solver baked over a fixed clip into shape keys or a point cache, played back in the game with no runtime solver
+    tags: [cloth, robe, skirt, sleeve, hem, garment, drape, bake, simulation, jitter]
+    where: built into Blender; blender-simulation skill; export baked shapes as glTF morph targets
+    licence: our output
+    status: available
+
+  - id: three-vrm-springbone
+    does: spring-bone chains for hair, sleeves, tails and loose cloth in three.js, tuned per chain
+    tags: [spring, bones, sleeve, hair, tail, cloth, secondary, motion, three.js, jiggle]
+    where: npm @pixiv/three-vrm (SpringBone works without VRM avatars via its joint classes)
+    licence: MIT
+    status: available
+
+  - id: mixamo
+    does: automatic humanoid rigging from an uploaded mesh plus a library of thousands of motion-captured clips (walks, idles, gestures)
+    tags: [rig, rigging, auto-rig, animation, mocap, walk, idle, gesture, humanoid, clips]
+    where: mixamo.com, Adobe sign-in
+    licence: royalty-free in games per Adobe's FAQ (read before first ship)
+    status: gated
+
+  - id: cmu-mocap
+    does: about 2,500 motion-capture clips (walking, gestures, martial arts, everyday movement) as BVH, retargeted in Blender
+    tags: [mocap, bvh, animation, walk, gesture, movement, martial, retarget, clips]
+    where: mocap.cs.cmu.edu; BVH conversions on the web; blender-animation skill retargets them
+    licence: free for any use per CMU; credit the lab
+    status: available
+
+  - id: blenderkit
+    does: searchable library of models, materials, HDRIs and brushes inside Blender
+    tags: [models, props, plants, greenery, rocks, materials, textures, hdri, cave, environment]
+    where: api.blenderkit.com (connected in env_01UaZ5uKunKKCcxV8RG64pFX); picks in /mnt/project-files/3d-build/blenderkit-greenery/
+    licence: per asset (royalty-free or CC0)
+    status: in_use
+
+  - id: assetfurnace
+    does: image to 3D mesh (Pixal3D backend only) on a rented cloud GPU
+    tags: [image-to-3d, mesh, generate, concept, model, creature, prop]
+    where: github.com/Bingeljell/image-to-3dlab; rules in docs/asset-generation.md
+    licence: Pixal3D MIT, DINOv3 encoder under its own licence; ships only retopologised and re-skinned (q-af-ship B)
+    status: gated
+
+  - id: quaternius
+    does: low-poly rigged and animated animals, characters, plants and props in glTF
+    tags: [animals, creature, character, rigged, animated, low-poly, nature, props, glb]
+    where: quaternius.com
+    licence: CC0
+    status: available
+
+  - id: kenney
+    does: game asset packs (3D props, nature, dungeon, UI, sounds)
+    tags: [props, ui, icons, sounds, dungeon, nature, low-poly, 2d]
+    where: kenney.nl
+    licence: CC0
+    status: available
+
+  - id: poly-haven
+    does: scanned PBR textures, HDRIs and models (rock, stone, ground, bark, moss)
+    tags: [textures, materials, pbr, hdri, rock, stone, cave, ground, models, lighting]
+    where: polyhaven.com (has an API)
+    licence: CC0
+    status: available
+
+  - id: ambientcg
+    does: PBR materials and HDRIs
+    tags: [textures, materials, pbr, rock, cave, ground, wood, fabric]
+    where: ambientcg.com
+    licence: CC0
+    status: available
+
+  - id: reference-photos
+    does: free photographs of real animals, plants and places for modelling against
+    tags: [reference, photos, animal, anatomy, proportions, markings]
+    where: Wikimedia Commons, iNaturalist (filter to CC0 or CC-BY)
+    licence: per photo; reference use only
+    status: in_use
+
+  - id: recast-navigation-js
+    does: navmesh building and pathfinding for walk-to-click and NPCs moving around obstacles in three.js
+    tags: [pathfinding, navmesh, walk, click, npc, movement, three.js, navigation]
+    where: npm recast-navigation
+    licence: MIT
+    status: available
+
+  - id: inkjs
+    does: inkle's ink branching-story language and runtime for the web
+    tags: [story, dialogue, branching, narrative, choices, script]
+    where: npm inkjs; Inky editor
+    licence: MIT
+    status: available
