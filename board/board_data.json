@@ -10136,6 +10136,72 @@
    "auto": true,
    "pos": "The Victim's body family is the Ballad, with three animal bases: the donkey, the basset hound and the elephant. Each has a heavy, hanging body and a voice. The donkey is built first (https://claude.ai/artifact/B9zYsNyxe6UVhRF3jcNP85, version 28, in the 3D viewer). Its gas is a teardrop of motes with three dots trailing off it (\"and then...\"). Its core is a teardrop-cut gem hung in the mouth of a small bronze bell. It carries two scrolls tied with a red cord, and its ally form is a storyteller in a long tunic and a jester's collar of belled points. Its states are the Victim's yield. Dissatisfied, it sinks into its knees with the head hung low and the ears out to the sides. Satisfied, it lifts its head toward you as if braying, ears up. Its ally takes the Victim's honored pose, one arm swept high presenting the tale and the other palm up. Family names are drafts. This stands unless you flip it.",
    "why": "The urge picks the family (sg-body-from A), and dmt-next-families builds the Victim as the teller, whose urge is to be heard. A ballad is a sorrow sung so that it is heard, and the honored Victim is the storyteller (GESTURES.md). No art existed, so the image prompts were written first: council/loops/prompts/spirit-generator-r19.md. The donkey was checked against photographs of real donkeys, and a blind sort of its fifteen state sprites got 15 of 15."
+  },
+  {
+   "id": "af-route-per-class",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "auto": true,
+   "pos": "Claude and Blender stay the shipping route for bodies, rigs and cloth. A generated mesh is a concept or blockout step. Each asset class picks its route: reuse, then a CC0 fetch, then a script, then generation, and generation only when a blockout would cost more than about two threads.",
+   "why": "Only own work and CC0 ship, and AI art is concept only (board cs-chatgpt-ai-art, 2026-10-12). Generated meshes will not carry the J4 hem bones, so for cloth and body-bound classes generation adds a step. Source: asset-cost pass, Architect and Regent."
+  },
+  {
+   "id": "af-licence-first",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "auto": true,
+   "pos": "Before any GPU spend, someone reads the output terms of Pixal3D and AssetFurnace and writes down what 'rebuilt' means. It costs nothing and runs first.",
+   "why": "The tool's own licence record does not clear a source; a channel is cleared only by Wendell's ruling (docs/codex/asset-sources-brief.md). Source: asset-cost pass, Challenger test 2, Regent."
+  },
+  {
+   "id": "af-trial-capped",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "auto": true,
+   "pos": "If the licence read passes, one timed trial runs on a cloud pod: one static daemon body, reference-only output, hard cap $3, an auto-stop or $5 spend alert set before the pod starts, and the pod ended the same session. The trial decides on measured rounds and cost, and Wendell starts it.",
+   "why": "The $3 and $10-30 a month figures are estimates and cover GPU time only; a forgotten pod costs about $10-17 a week. Money is reserved to Wendell (council/faces.yaml). Source: asset-cost pass, Challenger tests 1 and 5, Regent gates."
+  },
+  {
+   "id": "af-ledger-fields",
+   "faces": [
+    "architect"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "auto": true,
+   "pos": "Each asset's manifest sidecar gains three fields: route, rounds used, and token cost. The cost model then runs on measured numbers.",
+   "why": "There is no per-asset cost ledger today, so every route comparison is an estimate. J5 took 13+ rounds over 5 days (council/callsheets/blender-pipeline-test.md). Source: asset-cost pass, Architect."
+  },
+  {
+   "id": "af-sense-and-respond",
+   "faces": [
+    "architect",
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "auto": true,
+   "pos": "New assets are triggered by signals, not built ahead: a design thread proposes an entity with no manifest row; the second non-Wendell player or Ari asks what a placeholder is, stalls at a stand-in or draws their own picture; Wendell names the same defect twice; a test is red because an asset is missing. More than 3 rounds on one asset triggers a route review, not another round. Requests are logged as they come.",
+   "why": "Rounds are the dominant cost, and Wendell's look time is the scarcest input. No second-player test has run yet. Source: asset-cost pass, Architect, Diplomat, Challenger."
+  },
+  {
+   "id": "af-honest-labels",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "auto": true,
+   "pos": "Every asset's credit line says in plain words how it was made: hand-made by a named person, Claude-built from Wendell's concept, or tool-generated and reworked by a named person. A person is paid where the asset carries a relationship (the Between creature) or is what a Kickstarter backer sees first.",
+   "why": "The Portland community has a strong allergy to AI and the non-AI path is first class (bars-engine CLAUDE.md); artist-corps ruling #260 makes AI use case-by-case per client consent. Source: asset-cost pass, Diplomat and Shaman."
   }
  ],
  "questions": [
@@ -16331,6 +16397,62 @@
      "v": "C",
      "label": "Put the stats model in the game now",
      "c": "The spirit fight takes the ratios and the invented family stats into the slice as placeholders for the combined playtest."
+    }
+   ]
+  },
+  {
+   "id": "q-af-ship",
+   "faces": [
+    "regent",
+    "diplomat",
+    "challenger"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "q": "If a generated mesh is retopologised, re-skinned to the J4 rig and finished by us, may it ship? Today AssetFurnace output is uncleared, and AI output is concept only and rebuilt in production. The Regent, Architect and Challenger all stopped at this line; the trial and the licence read both depend on where you draw it.",
+   "why_you": "A source channel is cleared only by your ruling (docs/codex/asset-sources-brief.md), and whether 'rebuilt' counts as our own work is your preference and a promise to Portland that only you can set.",
+   "not_before": "AssetFurnace was not on the table before today (thread on image-to-3dlab, 2026-10-18).",
+   "options": [
+    {
+     "v": "A",
+     "label": "Concept only, always",
+     "c": "Generated meshes are references. Everything that ships is rebuilt from scratch in Blender or fetched as CC0. The trial, if run, judges sketching and blockout value only."
+    },
+    {
+     "v": "B",
+     "label": "Retopologised and re-skinned counts as ours",
+     "c": "A generated mesh can ship once we retopologise it and bind it to our rig, with a plain credit line. A new channel is added to the asset sources and the licence read decides which model's output is usable."
+    },
+    {
+     "v": "C",
+     "label": "Never, no matter how much is rebuilt",
+     "c": "Portland's promise is no generated geometry at all, even as a starting point. The tool is dropped and the trial does not run."
+    }
+   ]
+  },
+  {
+   "id": "q-af-ceiling",
+   "faces": [
+    "regent"
+   ],
+   "pass": "asset cost, 2026-10-18",
+   "q": "What is the monthly ceiling for cloud GPU spend on assets? The Regent recommends $30, the top of the $10-30 estimate, with a stop when it is reached and any pod idle over 30 minutes ended.",
+   "why_you": "Money is reserved and never delegated (council/faces.yaml).",
+   "not_before": "No cloud spend existed before this pass.",
+   "options": [
+    {
+     "v": "A",
+     "label": "$30 a month",
+     "c": "The trial and steady use fit inside it; the next thread sets the alert and stop rule to it."
+    },
+    {
+     "v": "B",
+     "label": "$10 a month",
+     "c": "Enough for the trial and light use; batches are small and the tool is used for sketching only."
+    },
+    {
+     "v": "C",
+     "label": "No spend yet",
+     "c": "Nothing runs on a cloud GPU until the second-player test and the licence read are done."
     }
    ]
   }
