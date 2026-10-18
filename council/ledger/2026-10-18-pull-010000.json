@@ -1,0 +1,63 @@
+{
+ "date": "2026-10-18",
+ "kind": "board-pull",
+ "newest_save": "2026-10-18T01:00:00.378Z",
+ "answers": {
+  "q-af-ship": {
+   "kind": "question",
+   "choice": "B",
+   "savedAt": "2026-10-18T00:58:49.705Z",
+   "steer": ""
+  },
+  "q-af-ceiling": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-18T00:59:04.973Z",
+   "steer": ""
+  },
+  "af-route-per-class": {
+   "kind": "position",
+   "savedAt": "2026-10-18T00:59:25.808Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "af-licence-first": {
+   "kind": "position",
+   "savedAt": "2026-10-18T00:59:29.194Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "af-trial-capped": {
+   "kind": "position",
+   "savedAt": "2026-10-18T00:59:36.392Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "af-ledger-fields": {
+   "kind": "position",
+   "savedAt": "2026-10-18T00:59:40.161Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "af-sense-and-respond": {
+   "kind": "position",
+   "savedAt": "2026-10-18T00:59:49.412Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "af-honest-labels": {
+   "kind": "position",
+   "savedAt": "2026-10-18T01:00:00.378Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/q-af-ship: Retopologised and re-skinned counts as ours",
+  "questions/q-af-ceiling: $30 a month"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
