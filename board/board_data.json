@@ -10202,6 +10202,17 @@
    "auto": true,
    "pos": "Every asset's credit line says in plain words how it was made: hand-made by a named person, Claude-built from Wendell's concept, or tool-generated and reworked by a named person. A person is paid where the asset carries a relationship (the Between creature) or is what a Kickstarter backer sees first.",
    "why": "The Portland community has a strong allergy to AI and the non-AI path is first class (bars-engine CLAUDE.md); artist-corps ruling #260 makes AI use case-by-case per client consent. Source: asset-cost pass, Diplomat and Shaman."
+  },
+  {
+   "id": "battle-road-opens-face-off",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "sprout walkthrough",
+   "auto": true,
+   "pos": "The east road's encounter opens the Super NES face-off battle (Fight, Magic, Listen, Item), not the 3D Moonlit Meridian fight. The W.A.V.E. panel is gone from the walkable build; its rules stay in wave.js because the face-off uses them. The 3D fight stays the separate fight screen it is now. This stands unless you flip it.",
+   "why": "Your words, 2026-10-18: 'This part should open a final fantasy style battle system OR the 3d battle system we've been working on k codex.' battle-face-off-screen already rules the road's battle is the SNES face-off, and CLAUDE.md keeps the SNES art rules for the world with the 3D fight as the one exemption. Build: sprout PR #58, walkthrough thread."
   }
  ],
  "questions": [
