@@ -1,0 +1,205 @@
+{
+ "positions": [
+  {
+   "id": "iv-look-only",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "A stronger feeling changes only how a ship part looks, never what it does. This stands unless you flip it.",
+   "why": "Carries cc-intensity-look over to the ship. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-element-by-move",
+   "faces": [
+    "architect"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "The move you work sets a part's element, the same way it sets an ember's. This stands unless you flip it.",
+   "why": "Carries cc-move-sets-element over to the ship. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-kind-chosen",
+   "faces": [
+    "sage",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "Finishing any route (a 321, a WAVE run, a preset, a symbol or a fiction) gives one ember, and you choose what kind of part it becomes. No practice is the only door to a part. This stands unless you flip it.",
+   "why": "Disclosure is not progression currency (QUICKSTART); presets are the floor (cc-charge-only); 321 stays skippable (bmt-321-offer). Architect, Shaman and Regent dissent: they wanted the practice to set the kind. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-no-bonus",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "The 321 bonus diamond for a big charge drop does not carry over to ship parts. This stands unless you flip it.",
+   "why": "It pays for a reported shift, which QUICKSTART rules out as currency. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-daemon-not-part",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "A daemon is never a ship part, a target or loot. An honored daemon may ride along as a passenger if you invite it. This stands unless you flip it.",
+   "why": "dmt-trainer: the daemon is never fought. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-no-private-decay",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "Nothing on your own ship or in your own world decays while you are away. This stands unless you flip it.",
+   "why": "rc-stale-neglect governs shared space only. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-no-mirror",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "The ship has no fuel gauge and no damage that reflects how much inner work you did. This stands unless you flip it.",
+   "why": "The Shaman's standing test: a dim cabin or 'repair needed' says something is wrong with the player. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-lineage",
+   "faces": [
+    "regent"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "Every part remembers the practice, move, date and your own label. If the source is deleted, the part keeps a tombstone and still works. This stands unless you flip it.",
+   "why": "QUICKSTART principle 11 (lineage) and its deletion rule. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-cave-only",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "Before the Chapter 1 demo the ship travels only the places already built: WAVE room, hall of doors, cave. This stands unless you flip it.",
+   "why": "element-settings.md: element lands come after the demo. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-private-line",
+   "faces": [
+    "regent"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "Ship code lives on the single-player cave line in bars-engine, not in the shared Between. This stands unless you flip it.",
+   "why": "cc-pouch-private and cc-lantern-offer: shared use waits for offer-and-yes. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-cc0",
+   "faces": [
+    "regent"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "Ship art is our own work or CC0 (Kenney Space Kit qualifies), and no Gummi or Starcruiser name ships. This stands unless you flip it.",
+   "why": "QUICKSTART licence rule; cc-licence-conflict. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-starcruiser",
+   "faces": [
+    "regent"
+   ],
+   "pass": "inner-vessel1",
+   "auto": true,
+   "pos": "'Starship cruiser' was read as Star Wars: Galactic Starcruiser, Disney's two-night immersive voyage. This stands unless you flip it.",
+   "why": "A council assumption; flip it if you meant another. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  }
+ ],
+ "questions": [
+  {
+   "id": "iv-q-what-ship",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "inner-vessel1",
+   "q": "When you picture the ship, what is it?",
+   "why_you": "It is a matter of your taste, and a living ship adds a character to your canon. The faces split.",
+   "not_before": "No pass had raised a ship until your message of 2026-10-18.",
+   "options": [
+    {
+     "v": "made",
+     "label": "A. A craft you build and fly",
+     "c": "Gummi-style editor on a grid; you can compost it. Highest editor risk (KH1's garage drove players off)."
+    },
+    {
+     "v": "home",
+     "label": "B. A home that moves (recommended)",
+     "c": "The WAVE room carries you, with a small grid of parts inside it. Reuses the room you already have; the Challenger's line."
+    },
+    {
+     "v": "kin",
+     "label": "C. Living kin",
+     "c": "It speaks and grows with you like No Man's Sky's Living Ship. Adds a new character and voice to write."
+    }
+   ]
+  },
+  {
+   "id": "iv-q-between-only",
+   "faces": [
+    "architect"
+   ],
+   "pass": "inner-vessel1",
+   "q": "Do ship parts lift your 'Between only' rule for crafting?",
+   "why_you": "cc-between-only is your own ruling from today, and a private ship crafts outside the Between.",
+   "not_before": "No pass had raised a ship until your message of 2026-10-18.",
+   "options": [
+    {
+     "v": "lift",
+     "label": "A. Lift it for the private ship (recommended)",
+     "c": "Embers can become ship parts, under their own permission record. The Between's rules stay as they are."
+    },
+    {
+     "v": "keep",
+     "label": "B. Keep it",
+     "c": "Ship parts wait until crafting leaves the Between."
+    }
+   ]
+  },
+  {
+   "id": "iv-q-demo-order",
+   "faces": [
+    "regent"
+   ],
+   "pass": "inner-vessel1",
+   "q": "Does the ship slice run beside the Chapter 1 demo or after it?",
+   "why_you": "Where it sits against the Kickstarter is a money call, which is yours.",
+   "not_before": "No pass had raised a ship until your message of 2026-10-18.",
+   "options": [
+    {
+     "v": "after",
+     "label": "A. After the demo (recommended)",
+     "c": "Design only now; nothing delays the demo. A build thread opens after your phone play."
+    },
+    {
+     "v": "beside",
+     "label": "B. A WAVE-room dock in the demo",
+     "c": "A fresh thread builds the data model and a dock now; it adds work to the demo path."
+    }
+   ]
+  }
+ ]
+}
