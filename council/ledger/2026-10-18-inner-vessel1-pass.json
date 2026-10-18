@@ -1,0 +1,662 @@
+{
+ "date": "2026-10-18",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "Inner vessel: a ship for inner space",
+ "record": "council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's message in the project chat, 2026-10-18 23:26 UTC; thread started by the project coordinator",
+ "pulled_first": null,
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    9,
+    8,
+    7
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 50,
+   "name": "The Cauldron",
+   "cn": "鼎",
+   "pinyin": "dǐng",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "This is being transformed, and you are carrying it by the handles.",
+   "image": "☴ wind beneath ☲ fire. Wood fed into flame underneath a standing vessel.",
+   "situation": "The bronze cauldron is a cooking pot and also the emblem of a legitimate house. Raw things go in and something else comes out. The old lines worry at the legs and the handles, because the vessel can be overturned, and what is inside goes with it.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "becomes": {
+    "n": 18,
+    "name": "Stale Air",
+    "cn": "蠱",
+    "pinyin": "gǔ",
+    "lines": [
+     0,
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "This went off from being left alone.",
+    "image": "☴ wind beneath ☶ mountain. Still air trapped under a mountain, going stale.",
+    "situation": "Something has spoiled through inattention rather than through damage. The character shows a bowl with worms in it: what happens to a thing left standing. The instruction is unusual in the set — it gives three days before and three days after, so the work of repair is bracketed by thinking about how it got here.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    7,
+    9,
+    7,
+    8
+   ],
+   "changing_lines": [
+    2,
+    4
+   ],
+   "n": 43,
+   "name": "Unsaid",
+   "cn": "夬",
+   "pinyin": "guài",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    0
+   ],
+   "shows": "One sentence is still unsaid, and it is going anyway.",
+   "image": "☰ heaven beneath ☱ lake. Five firm lines have risen and a single yielding one is left at the top.",
+   "situation": "Resolution. The old counsel is precise and full of caution: announce it truthfully in the king's court, know the danger you are in, and reach for words well before weapons. The last soft thing is on its way out, and the manner of its going is the entire subject.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 63,
+    "name": "Arrived",
+    "cn": "既濟",
+    "pinyin": "jì jì",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "shows": "This is finished, which is when it starts moving.",
+    "image": "☲ fire beneath ☵ water. Every line in the figure sits in its correct place, with the water above the fire.",
+    "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    6,
+    7,
+    8,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [
+    1
+   ],
+   "n": 7,
+   "name": "Muster",
+   "cn": "師",
+   "pinyin": "shī",
+   "lines": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "What would organise this is a fact you have not said.",
+   "image": "☵ water beneath ☷ earth. One firm line among five yielding ones, holding the whole figure to a shape.",
+   "situation": "Water stored underground: a resource that is present, invisible, and organised. The single strong line is the discipline that turns a crowd into a force. The old warning is that this works with an experienced hand and a clear cause, and the same gathering under any other conditions is a mob.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 19,
+    "name": "Spring",
+    "cn": "臨",
+    "pinyin": "lín",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "This is rising, and the window has an edge on it.",
+    "image": "☱ lake beneath ☷ earth. Two firm lines rising at the base, with the ground open above them.",
+    "situation": "Something is coming up and there is room above it. The old text puts a date on it, saying trouble arrives in the eighth month, which turns the reading into a clock: this is favourable and it is favourable now. Spring approaches, and the approach is the whole of it.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    6,
+    8,
+    9,
+    7,
+    8
+   ],
+   "changing_lines": [
+    2,
+    4
+   ],
+   "n": 17,
+   "name": "Following",
+   "cn": "隨",
+   "pinyin": "suí",
+   "lines": [
+    1,
+    0,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "You broke the pattern open, and you are now inside what it opened.",
+   "image": "☳ thunder beneath ☱ lake. Thunder has gone quiet under the water and travels where the water travels.",
+   "situation": "Falling in with something already in motion. The old text says to go indoors at dusk and rest, because the season has turned and the correct action now is to stop leading. The commentary adds that the one who follows well is in turn followed.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "becomes": {
+    "n": 60,
+    "name": "Measure",
+    "cn": "節",
+    "pinyin": "jié",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "You are past what you can hold and you have not said where the edge is.",
+    "image": "☱ lake beneath ☵ water. A lake with more water above it than the basin holds.",
+    "situation": "The character is the joint of a bamboo, the node that divides the stalk into lengths and makes it strong. Limitation as structure. The old text warns at once against bitter limitation, since a rule too harsh to keep gets broken and takes the rest of them with it.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    6,
+    6,
+    8
+   ],
+   "changing_lines": [
+    4,
+    5
+   ],
+   "n": 2,
+   "name": "Bearing",
+   "cn": "坤",
+   "pinyin": "kūn",
+   "lines": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "The whole weight of this is yours, unasked.",
+   "image": "☷ earth beneath ☷ earth. Six broken lines. Every one of them has a gap at the centre.",
+   "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 45,
+    "name": "Gathering",
+    "cn": "萃",
+    "pinyin": "cuì",
+    "lines": [
+     0,
+     0,
+     0,
+     1,
+     1,
+     0
+    ],
+    "shows": "You are in a room and you may have forgotten why you came.",
+    "image": "☷ earth beneath ☱ lake. Water collecting on open ground and pooling wherever it can.",
+    "situation": "Assembly. The old text puts a king at the temple and calls for a great offering, so this gathering has a centre and a price. Where numbers collect, the commentary says to keep your weapons in repair, because crowds bring what crowds bring.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    9,
+    8,
+    7,
+    8,
+    7,
+    8
+   ],
+   "changing_lines": [
+    1
+   ],
+   "n": 63,
+   "name": "Arrived",
+   "cn": "既濟",
+   "pinyin": "jì jì",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "shows": "This is finished, which is when it starts moving.",
+   "image": "☲ fire beneath ☵ water. Every line in the figure sits in its correct place, with the water above the fire.",
+   "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 39,
+    "name": "Impasse",
+    "cn": "蹇",
+    "pinyin": "jiǎn",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "shows": "The direct route is closed and you have asked nobody.",
+    "image": "☶ mountain beneath ☵ water. A mountain in front of you and deep water on the far side of it.",
+    "situation": "The character is a limp. Going forward is hard here, and the old counsel names the southwest as the favourable direction and sends you to find the great person. The instruction repeated through nearly every line is to turn back and come again with others.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  }
+ ],
+ "unanimous": false,
+ "dissent": [
+  "Challenger defers the vehicle",
+  "Architect, Shaman, Regent: practice sets kind",
+  "Diplomat: inner world later only"
+ ],
+ "positions": [
+  "iv-look-only",
+  "iv-element-by-move",
+  "iv-kind-chosen",
+  "iv-no-bonus",
+  "iv-daemon-not-part",
+  "iv-no-private-decay",
+  "iv-no-mirror",
+  "iv-lineage",
+  "iv-cave-only",
+  "iv-private-line",
+  "iv-cc0",
+  "iv-starcruiser"
+ ],
+ "questions": [
+  "iv-q-what-ship",
+  "iv-q-between-only",
+  "iv-q-demo-order"
+ ],
+ "rows": "council/callsheets/rows/inner-vessel-2026-10-18.json",
+ "subagent_tokens": 591000,
+ "daemons_sent": []
+}

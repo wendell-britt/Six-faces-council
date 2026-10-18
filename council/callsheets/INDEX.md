@@ -5,6 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
+- [inner-vessel](inner-vessel.md), 2026-10-18: pass inner-vessel1 done (twelve `iv-*` positions; `iv-q-what-ship`, `iv-q-between-only`, `iv-q-demo-order` on the board); nothing built; next waits on `iv-q-demo-order`.
 - [spirits-in-caves](spirits-in-caves.md), 2026-10-18: pass spirits-in-caves1 done (five `sic-*` positions, `sic-demo-showcase` on the board); slice 1, the family cloud for the meeting spirit, next in a fresh Opus thread.
 - [walkthrough](walkthrough.md), 2026-10-18: golden-path build sprout #58 plays title to saved quest; the road's battle is now the Super NES face-off (sprout #59 on #58, position `battle-road-opens-face-off`); next his phone play.
 - [artist-corps](artist-corps.md), 2026-10-17: artist-training non-profit; pass 2 done (Phase 1 definition-of-done, T1 design, plain hour log, contractor-to-cooperative pipeline, consent form); waits on Wendell's anchor step `artist-corps-anchor-01` (due 10-22) for T1; T3 commons license met (`pos-ac-commons-license`).
