@@ -1,0 +1,26 @@
+{
+ "date": "2026-10-15",
+ "repo": "six-faces-council",
+ "kind": "chat-ruling",
+ "note": "Wendell answered in chat (nonprofit review thread, 2026-10-15) that the nonprofit focuses on kids, with adult education as a division on the same technology, and named MentorSchip and the August Wilson Red Door Project. He then said: \"Record the rows on the board\". The live board is in another organization, so this session landed the rows on main through a board-only pull request; the next board session republishes the page.",
+ "steer": "So the kids organization is an important question. Since we are making games children will be able to use it and potentially there are more grants available. I have a homie who is the founder of mentorschip who has done work in this space. I’d been talking with him about adapting his organizations work to adult education as well\n\nIt could very easily be a division of a non-profit that focuses on kids since anything I make will run off the same technology. August Wilson red door project is an organization I’ve worked for in the past that does programming for schools and for adults as well",
+ "answers": {
+  "np-kids-first": {
+   "kind": "position",
+   "via": "chat",
+   "status": "ruling",
+   "at": "2026-10-15"
+  }
+ },
+ "positions": [
+  "np-kids-first",
+  "np-red-door-precedent",
+  "np-mentorschip-both-ways",
+  "np-kids-content-review"
+ ],
+ "questions": [
+  "np-age-band",
+  "np-mentorschip-shape"
+ ],
+ "page": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
+}

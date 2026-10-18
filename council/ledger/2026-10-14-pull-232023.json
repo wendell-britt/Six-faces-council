@@ -1,0 +1,134 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T23:20:23.484Z",
+ "answers": {
+  "uw-ea-library": {
+   "kind": "question",
+   "choice": "now",
+   "savedAt": "2026-10-14T23:18:37.781Z",
+   "steer": ""
+  },
+  "el-mapping": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:18:50.737Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "el-water-interior": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:18:58.040Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "el-skeleton": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:04.558Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "el-demo-scope": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:09.189Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "el-first-setting": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:13.490Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-list-corrected": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:19.912Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-board-before-sweep": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:24.015Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-email-steps": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:24.949Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-upload-limit": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:32.954Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-backlog-dupes": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:41.436Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-skill-dedupe": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:47.837Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-jev-to-sheet": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:53.456Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-podcast-ticks": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:19:58.407Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-pushhands-repair-later": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:20:01.741Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-sprout-current": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:20:04.641Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-anastasia-as-is": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:20:08.125Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uw-flirtcraft-step7": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:20:11.634Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "jev-pile2-result": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:20:17.478Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "jev-pile2-borderline": {
+   "kind": "position",
+   "savedAt": "2026-10-14T23:20:23.484Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/uw-ea-library: Bring the five rulings to the board now"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

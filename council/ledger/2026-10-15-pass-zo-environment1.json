@@ -1,0 +1,590 @@
+{
+ "date": "2026-10-15",
+ "pass": "zo-environment 1",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "file": "council/passes/6FACE_PASS_zo-environment1_2026-10-15.md",
+ "called_by": "Wendell, in chat: 'ok let's get the 6 game masters on what the most effective use of this environment would be'",
+ "question": "What is the most effective use of this environment (the Zo Computer), given the council is now cloned and registered here?",
+ "subject": "the Zo Computer environment",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    7,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 9,
+   "name": "Restraint",
+   "cn": "小畜",
+   "pinyin": "xiǎo chù",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "A small rule you never revisited is holding all of this.",
+   "image": "☰ heaven beneath ☴ wind. One yielding line holding five firm ones, the way weather is held by wind.",
+   "situation": "A small force restrains a large one here, and the large one is permitting it. The single yielding line's whole strength is position. The tradition reads the restraint as accumulation: force that cannot discharge yet is being stored.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    6,
+    8,
+    8,
+    6
+   ],
+   "changing_lines": [
+    3,
+    6
+   ],
+   "n": 24,
+   "name": "Turning",
+   "cn": "復",
+   "pinyin": "fù",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "shows": "What came back is one line deep.",
+   "image": "☳ thunder beneath ☷ earth. One firm line has come back at the very bottom, under five yielding ones.",
+   "situation": "The solstice, the point where light starts back. The old text gives seven days as the period of return, says friends come and it is fine, and treats going out and coming in as equally safe. What has come back is one line deep, and it is the whole event.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 22,
+    "name": "Adornment",
+    "cn": "賁",
+    "pinyin": "bì",
+    "lines": [
+     1,
+     0,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "You have dressed this, and the dressing is doing real work.",
+    "image": "☲ fire beneath ☶ mountain. A fire at the base of a hill, throwing light up the whole face of it.",
+    "situation": "Form applied to something already standing. The mountain gets lit and the rock stays rock. The tradition runs this figure upward toward plainness and gives the top line as white adornment, which is form that has run out of ornament.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    7,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 10,
+   "name": "Footing",
+   "cn": "履",
+   "pinyin": "lǚ",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are stepping onto ground that matters, and the play is what makes it safe.",
+   "image": "☱ lake beneath ☰ heaven. A small soft thing placed directly under the largest hard one.",
+   "situation": "The old line is about treading on a tiger's tail and coming away whole, which happens through the quality of the step. Conduct is the entire content here. Where you put your weight, in what order, at what speed, decides whether the ground holds.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    7,
+    7,
+    9,
+    7
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 33,
+   "name": "Retreat",
+   "cn": "遯",
+   "pinyin": "dùn",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "Leaving is available, and the timing decides what you keep.",
+   "image": "☶ mountain beneath ☰ heaven. Two yielding lines have come up underneath, and the firm lines are moving off.",
+   "situation": "Withdrawal in good order, at the moment that keeps it from becoming a rout. The old text calls it favourable and adds that the small is favourable too, which is the qualification: you keep something by leaving early with it.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 56,
+    "name": "Passing Through",
+    "cn": "旅",
+    "pinyin": "lǚ",
+    "lines": [
+     0,
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    "shows": "You are a stranger here, and you will be judged fast.",
+    "image": "☶ mountain beneath ☲ fire. Fire on a hillside, burning across it and moving on.",
+    "situation": "The traveller. The old text is full of small practical worries — the inn, the servant, the axe, the lost ox — because a stranger's resources are whatever they are carrying. Success here is called small outright, and the counsel is about conduct, since a traveller gets judged fast and on very little.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    6,
+    9,
+    6,
+    6
+   ],
+   "changing_lines": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "n": 16,
+   "name": "Anticipation",
+   "cn": "豫",
+   "pinyin": "yù",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "The good part has started and the event has not.",
+   "image": "☷ earth beneath ☳ thunder. Thunder coming up out of the ground, the sound arriving before the storm.",
+   "situation": "Stored energy at the point of release. The character carries both readiness and delight, and the old commentary attaches music to it — the thing that gathers a crowd before anything has happened. Preparation and pleasure are the same motion here.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 53,
+    "name": "Emergence",
+    "cn": "漸",
+    "pinyin": "jiàn",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "This has stages, and you are trying to skip one.",
+    "image": "☶ mountain beneath ☴ wind. A tree taking hold on a mountainside, advancing at the rate roots allow.",
+    "situation": "Gradual progress, by stages that cannot be skipped. The old text tracks wild geese across six landings — the shore, the rock, the plateau, the tree, the summit — and each is a place the bird stands on before the next. Speed here is set by the ground.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    9,
+    8,
+    8
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 32,
+   "name": "Endurance",
+   "cn": "恆",
+   "pinyin": "héng",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "This exact exchange has happened before.",
+   "image": "☴ wind beneath ☳ thunder. Wind underneath and thunder above, an arrangement that keeps recurring.",
+   "situation": "Duration. The old reading makes this a marriage: two things in fixed relative position, lasting because the position is stable. The counsel is to hold the course and keep moving, so what endures here is a motion that repeats.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 46,
+    "name": "Ascent",
+    "cn": "升",
+    "pinyin": "shēng",
+    "lines": [
+     0,
+     1,
+     1,
+     0,
+     0,
+     0
+    ],
+    "shows": "This is growing at a rate you cannot see day to day.",
+    "image": "☴ wind beneath ☷ earth. Wood pushing upward inside the ground, advancing by growth.",
+    "situation": "Rising in increments, in the dark, with no visible step between one state and the next. The old text says to seek the great person, to be free of anxiety, and that going south brings good fortune. The mode here is vegetal: slow the whole way, and cumulative.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  }
+ ],
+ "verdicts": {
+  "shaman": "carry work to Wendell as usable moves; never add a surface he must come check",
+  "architect": "main is the merge point; standing processes, channel, hosting, local dev live here",
+  "challenger": "automation census, race test, quota wiring before any scheduled work",
+  "regent": "non-negotiables travel; scheduled work waits on his ruling",
+  "diplomat": "migrate community surfaces; the bridge is main",
+  "sage": "standing machine here, rulings with Claude, conditions before scheduled work"
+ },
+ "dissent": "not unanimous: the Challenger holds the guards as conditions before scheduled work",
+ "positions": [
+  "zo-division",
+  "zo-gates",
+  "zo-guards"
+ ],
+ "questions": [
+  "zo-automations"
+ ],
+ "ruling": "pending"
+}

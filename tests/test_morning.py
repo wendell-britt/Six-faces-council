@@ -54,7 +54,7 @@ class MorningTest(unittest.TestCase):
         morning.from_prs = lambda path=None: ([], None)  # no network in tests
         m = morning.gather(MENU, prs_file=None, bars="/nonexistent", data=DATA)
         keys = [c["key"] for c in m["categories"]]
-        self.assertEqual(keys, ["menu", "board", "due", "handoff", "prs", "backlog"])
+        self.assertEqual(keys, ["menu", "board", "steps", "due", "handoff", "prs", "backlog"])
         menu = m["categories"][0]["items"]
         self.assertEqual(menu[0]["bridge"]["kind"], "named")
         self.assertEqual(menu[-1]["bridge"]["kind"], "unaligned")
@@ -62,6 +62,61 @@ class MorningTest(unittest.TestCase):
         board = m["categories"][1]["items"]
         self.assertEqual([i["ref"] for i in board], ["q-open"])
         self.assertEqual(m["pick_limit"], 7)
+
+    def test_goals_export_fills_every_lens_domain_and_wins_over_the_menu(self):
+        morning.from_prs = lambda path=None: ([], None)
+        export = {"goals": [{"id": "g-h", "title": "Walk daily", "domain": "health", "cadence": "month", "parentId": None}]}
+        m = morning.gather(MENU, bars="/nonexistent", data=DATA, goals_export=export)
+        self.assertEqual([g["id"] for g in m["goals"]], ["g-h"])
+        doms = {d["key"]: d for d in m["lenses"]["domains"]}
+        self.assertEqual(list(doms), ["relationships", "career", "money", "health", "allyship"])
+        self.assertEqual([g["title"] for g in doms["health"]["goals"]], ["Walk daily"])
+        self.assertEqual(doms["money"]["goals"], [], "an empty domain is kept, shown as empty")
+        self.assertNotIn("note", m["lenses"])
+
+    def test_without_the_export_lenses_say_where_goals_came_from(self):
+        morning.from_prs = lambda path=None: ([], None)
+        m = morning.gather(None, bars="/nonexistent", data=DATA, goals_note="goals export not read: x")
+        self.assertEqual(m["lenses"]["note"], "goals export not read: x")
+        self.assertTrue(all(d["goals"] == [] for d in m["lenses"]["domains"]))
+
+    def test_seed_library_is_read_only(self):
+        morning.from_prs = lambda path=None: ([], None)
+        export = {"seeds": [{"id": "t9", "text": "Call the printer", "fromDay": "2026-10-14",
+                             "restedAt": "2026-10-16T18:00:00.000Z", "lensGoalId": None, "barId": None, "questId": None}]}
+        m = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_export=export)
+        self.assertEqual(m["seeds"], {"seeds": [{"id": "t9", "text": "Call the printer", "fromDay": "2026-10-14",
+                                                 "restedOn": "2026-10-16"}], "back": [], "read": True})
+        unread = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_note="seed library not read: 401")
+        self.assertEqual(unread["seeds"], {"seeds": [], "back": [], "read": False, "note": "seed library not read: 401"})
+
+    def test_resurfaced_seeds_come_back_in_order(self):
+        morning.from_prs = lambda path=None: ([], None)
+        seed = lambda i, due, rested, back: {"id": i, "text": f"seed {i}", "fromDay": rested, "restedAt": f"{rested}T09:00:00.000Z",
+                                              "restDay": rested, "rung": 0, "dueDay": due, "resurfaced": back}
+        export = {"seeds": [seed("a", "2026-10-19", "2026-10-16", True), seed("b", "2026-10-18", "2026-10-15", True),
+                            seed("c", "2026-10-20", "2026-10-17", False)], "ladder": [3, 7, 14, 30, 60, 90]}
+        m = morning.gather(MENU, bars="/nonexistent", data=DATA, seeds_export=export)
+        self.assertEqual(m["seeds"]["back"], ["b", "a"])
+        self.assertEqual(m["seeds"]["seeds"][2], {"id": "c", "text": "seed c", "fromDay": "2026-10-17",
+                                                  "restedOn": "2026-10-17", "dueDay": "2026-10-20", "rung": 0})
+
+    def test_sealed_items_carry_their_task_id_for_set_aside(self):
+        menu = dict(MENU, items=[dict(MENU["items"][0], taskId="t1"), *MENU["items"][1:]])
+        items = morning.from_menu(menu)
+        self.assertEqual(items[0]["taskId"], "t1")
+        self.assertNotIn("taskId", items[1])
+
+    def test_steps_due_today_are_gathered_and_done_ones_skipped(self):
+        import tempfile, pathlib
+        with tempfile.TemporaryDirectory() as t:
+            t = pathlib.Path(t)
+            (t / "a.json").write_text(json.dumps({"do": "Publish the paperback", "due": "2026-10-13"}))
+            (t / "b.json").write_text(json.dumps({"do": "Already done", "due": "2026-10-13", "done": True}))
+            (t / "c.json").write_text(json.dumps({"do": "Later", "due": "2026-10-20"}))
+            (t / "d.json").write_text(json.dumps({"do": "Dropped", "due": "2026-10-12", "retired": "gone"}))
+            got = morning.from_steps(t, today="2026-10-13")
+        self.assertEqual([i["ref"] for i in got], ["a"])
 
 
 if __name__ == "__main__":

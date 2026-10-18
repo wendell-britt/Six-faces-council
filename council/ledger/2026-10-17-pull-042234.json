@@ -1,0 +1,103 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T04:22:34.707Z",
+ "answers": {
+  "dmt-trainer": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-17T04:18:40.616Z",
+   "steer": ""
+  },
+  "cd-sleeve-open": {
+   "kind": "question",
+   "choice": "C",
+   "savedAt": "2026-10-17T04:18:57.035Z",
+   "steer": ""
+  },
+  "cd-sleeve-springs": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:19:06.959Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cd-hem-mass": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:19:14.759Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cd-keep-cut": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:19:20.426Z",
+   "status": "overrule",
+   "steer": ""
+  },
+  "dmt-approach-checkin": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:19:27.662Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dmt-body-first": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:20:04.764Z",
+   "status": "overrule",
+   "steer": "We want to mix this with the blockers constriction strength tension and numbness as well "
+  },
+  "dmt-storyteller-line": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:20:39.125Z",
+   "status": "overrule",
+   "steer": "I meant the\nVictim daemon in the 6 game master\nReview "
+  },
+  "dmt-two-axes": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:20:52.245Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dmt-spirit-from-answers": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:21:51.212Z",
+   "status": "overrule",
+   "steer": "We want people to go through  the same order at least at first. This only connects if it’s a daemon who is merged with another one if the sensation doesn’t match "
+  },
+  "dmt-ally-honored": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:22:07.012Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dmt-vouch-once": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:22:16.981Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dmt-bring-it-on": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:22:25.738Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "dmt-next-families": {
+   "kind": "position",
+   "savedAt": "2026-10-17T04:22:34.707Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/dmt-trainer: Both, in order; the daemon is never fought",
+  "questions/cd-sleeve-open: Re-cut into panels",
+  "positions/cd-keep-cut: Overruled",
+  "positions/dmt-body-first: Overruled (steer: \"We want to mix this with the blockers constriction strength tension and numbness as well\")",
+  "positions/dmt-storyteller-line: Overruled (steer: \"I meant the\nVictim daemon in the 6 game master\nReview\")",
+  "positions/dmt-spirit-from-answers: Overruled (steer: \"We want people to go through  the same order at least at first. This only connects if it’s a daemon who is merged with another one if the sensation doesn’t match\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

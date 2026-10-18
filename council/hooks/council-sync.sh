@@ -31,6 +31,10 @@ rule="Standing rule: before you ask Wendell a question whose answer changes what
 # and any session about to act on a ruling records what is new first.
 pull_rule="Standing rule: before acting on a ruling, save the council board's store with ArtifactData and run python3 board/pull.py <dir> --push in the home repo (wendell-britt/six-faces-council). It records every saved answer main lacks and is safe to run twice."
 pipeline_rule="Standing rule: a new feature starts as a spec kit in .specify/specs/<name>/ from council/spec-kit/ and runs the six-faces pipeline in council/pipeline.yaml. A step only Wendell can take goes on the Your steps tab on the council board (https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps), never into chat."
+# Write-race discipline (2026-10-16, two absorbed collisions): fetch before you record; push immediately after;
+# on rejection, fetch, rebase, row-union, rebuild. Rulings are append-only ledger files, and board_data.json
+# changes ride in the same commit as their ledger record, so a rebase resolves a ruling atomically.
+discipline_rule="Standing rule: git fetch before you record; push immediately after; on rejection, fetch, rebase, row-union, rebuild. Rulings are append-only ledger files and board_data.json changes ride in the same commit as their ledger record."
 lessons() { grep -c '^      - date:' council/faces.yaml 2>/dev/null || echo 0; }
 
 # Merge drivers named in .gitattributes: the board's rows merge by id, and the built page is rebuilt.
@@ -39,17 +43,18 @@ if [ -f council/tools/board_merge.py ]; then
   git config merge.ours.driver true 2>/dev/null
 fi
 
-if [ "$origin" = "$home_repo" ] && [ -z "${COUNCIL_SOURCE_BASE:-}" ]; then
+if [ "${origin,,}" = "${home_repo,,}" ] && [ -z "${COUNCIL_SOURCE_BASE:-}" ]; then
   echo "Six-faces council: this repo is the home copy ($home_repo). $(lessons) face lessons in council/faces.yaml. Lessons and lens changes are made here."
   echo "$rule"
   echo "$pipeline_rule"
+  echo "$discipline_rule"
 echo "$pull_rule"
   exit 0
 fi
 
 base="${COUNCIL_SOURCE_BASE:-https://raw.githubusercontent.com/$home_repo/$ref}"
 label="$home_repo@$ref"; [ -n "${COUNCIL_SOURCE_BASE:-}" ] && label="$COUNCIL_SOURCE_BASE"
-files="council/faces.yaml council/pipeline.yaml council/spec-kit/spec.md council/spec-kit/plan.md council/spec-kit/tasks.md .claude/skills/six-faces/SKILL.md council/portable/six-faces/SKILL.md council/tools/voice_lint.py council/hooks/council-sync.sh council/daemons/daemons.yaml council/daemons/check_report.py council/daemons/save_report.py council/iching/hexagrams.yaml council/iching/cast.py council/strands.py council/census.py .claude/agents/daemon-protector.md .claude/agents/daemon-controller.md .claude/agents/daemon-skeptic.md .claude/agents/daemon-fixer.md .claude/agents/daemon-victim.md .claude/agents/daemon-damaged-self.md .claude/agents/daemon-emotional-body.md .claude/agents/daemon-player.md"
+files="council/faces.yaml council/pipeline.yaml council/spec-kit/spec.md council/spec-kit/plan.md council/spec-kit/tasks.md .claude/skills/six-faces/SKILL.md council/portable/six-faces/SKILL.md council/tools/voice_lint.py council/hooks/council-sync.sh council/daemons/daemons.yaml council/daemons/questions.yaml council/daemons/check_report.py council/daemons/save_report.py council/iching/hexagrams.yaml council/iching/cast.py council/strands.py council/census.py .claude/agents/daemon-protector.md .claude/agents/daemon-controller.md .claude/agents/daemon-skeptic.md .claude/agents/daemon-fixer.md .claude/agents/daemon-victim.md .claude/agents/daemon-damaged-self.md .claude/agents/daemon-emotional-body.md .claude/agents/daemon-player.md"
 changed=""; failed=""
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 for f in $files; do
@@ -76,5 +81,6 @@ else
 fi
 echo "$rule"
 echo "$pipeline_rule"
+echo "$discipline_rule"
 echo "$pull_rule"
 exit 0

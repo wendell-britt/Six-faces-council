@@ -1,0 +1,57 @@
+{
+ "date": "2026-10-13",
+ "kind": "board-pull",
+ "newest_save": "2026-10-13T22:01:13.460Z",
+ "answers": {
+  "gb-taught-target": {
+   "kind": "question",
+   "choice": "85",
+   "savedAt": "2026-10-13T22:00:43.249Z",
+   "steer": ""
+  },
+  "gb-two-checks": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:00:50.684Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gb-ceiling-stays": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:00:58.285Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gb-trap-report": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:01:03.800Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gb-varied-practice": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:01:08.687Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gb-step4-gate": {
+   "kind": "position",
+   "savedAt": "2026-10-13T22:01:13.460Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j3-look-02",
+   "at": "2026-10-13T21:43:31Z",
+   "what": "ticked",
+   "do": "Look at j3-round2-sheet.png. Each row shows your concept picture, then the piece rebuilt from your notes, seen from the front and from three-quarters. Each piece now carries its picture as a texture. Each mushroom has its own stem under a rimmed cap. The root is now a braid of four twisted strands with tapering tendrils falling from it, and it has its green glow. Outline match: mushrooms 0.822, amber crystals 0.855, root 0.910. Under this step, note either 'yes' or what is still wrong with each piece. On a yes, bars-engine #303 is marked ready and merges itself."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "questions/gb-taught-target: About 85%"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

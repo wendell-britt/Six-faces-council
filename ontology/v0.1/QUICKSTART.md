@@ -116,6 +116,8 @@ Charge is optional. A `ChargedBAR` is one specialization or role, alongside kern
 
 Keep the kernel distinct from its `BARExpression`. A BAR may bloom as a quest, rule, lore, feature specification, plan, norm, branch, or artifact without becoming reducible to that expression. Capture creates lineage, not implementation debt. Portability carries a permission policy; it never means unrestricted reuse.
 
+A game asset carries its source and licence; only own work and CC0 ship in a page, and AI concept art is a reference until rebuilt (a painted-over capture is a rebuild only when a person or our code paints it).
+
 ## Composting
 
 Composting is a governed lifecycle disposition that ends a named active obligation. It does not require a new artifact, lesson, transformation, fuel, later reuse, or recovered value.
@@ -135,6 +137,14 @@ BARS may frame AI remixing of a creator's archive as creative composting and “
 A player or creator may find the reuse generative, uncanny, inappropriate, exploitative, sacred, playful, grief-laden, “not mine,” or unresolved. Keep personal meaning, source authorship, generated authorship, attribution, identity or likeness, reuse permission, and shared-world consequence separate.
 
 A `DerivedVoice` is a character informed by a permitted corpus; it is not the source person, past self, or archived speaker. “Not mine” is a scoped correction that may reject meaning, authorship, attribution, identity, aesthetics, relationship, or permission. It must never be treated as resistance. Archive-based adaptation remains optional, with non-AI and non-reuse routes preserving the core game and quality floor.
+
+## Privacy and consent authority
+
+Consent is situated authorization for an operation now. A `ConsentRecord` is evidence of a past grant, refusal, or condition; it is not permanent proof of present willingness. `PermissionGrant` binds subject, data category, purpose, operation, processor, audience, context, duration, retention, descendant policy, correction, revocation, and deletion. Omitted purposes are not granted.
+
+`PermissionEnvelope` is the effective intersection of applicable grants, refusals, boundaries, source restrictions, and duties. It travels through `DerivationRecord` lineage to snapshots, psychographs, inferences, world material, BARs, council syntheses, analytics, exports, caches, and model artifacts. Structured extraction, aggregation, or generation does not automatically anonymize or release a derivative.
+
+Correction changes or contests a claim. Revocation ends future authority for a purpose. Deletion disposes of named content and descendants; it is not composting, archival, hiding, or account deactivation. Propagate each through reachable lineage, preserve only minimum permitted residual obligations, and report irreversible disclosures or technical limits honestly. Optional sensitive uses must not buy baseline quality, progress, power, credentials, or belonging.
 
 ## Evidence authority
 

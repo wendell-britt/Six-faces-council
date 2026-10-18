@@ -70,11 +70,12 @@ def checks():
     leftover = sh("git", "grep", "-lE", "^(<<<<<<<|>>>>>>>) ", "--", ".", check=False).stdout.split()
     problems += [f"conflict markers left in {p}" for p in leftover]
     # The board merge tests: a change to sync_board.py or board_merge.py that would drop a row fails here.
+    # pytest runs the unittest classes and the pytest-style files (the board-save contract) alike.
     if os.path.isdir("tests"):
-        r = sh("python3", "-m", "unittest", "discover", "-s", "tests", check=False)
+        r = sh("python3", "-m", "pytest", "-q", "tests", check=False)
         if r.returncode:
-            last = (r.stderr.strip().splitlines() or ["unknown failure"])[-1]
-            problems.append(f"tests fail (python3 -m unittest discover -s tests): {last}")
+            last = ((r.stdout + r.stderr).strip().splitlines() or ["unknown failure"])[-1]
+            problems.append(f"tests fail (python3 -m pytest -q tests): {last}")
     return problems
 
 

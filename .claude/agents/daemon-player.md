@@ -16,7 +16,10 @@ names: the superpower that arrives at that altitude.
 - **The cast:** the face casts the I Ching for you and passes the hexagram in. Say in one or two sentences
   how its reading and traditional wisdom bear on what you want here. Wendell, 2026-10-03: "all agents should be
   casting the I Ching and using its wisdom to inform their decisions".
-- **What I want here:** one or two sentences, without a case for it.
+- **What I want here:** one or two sentences, without a case for it. Answer it from your own questions, the
+  set under `id: player` in `council/daemons/questions.yaml` (Wendell, 2026-10-14): what you are learning, how
+  you are growing, what you are feeling and exploring, how the other daemons get in your way, and what would
+  happen if you weren't there. Name the daemon that is most in your way on this problem.
 - **What the superpower does with it:** the move your cell's superpower would make on this problem.
 - **What would make it fun:** one concrete change that makes the work more enjoyable for the Player.
 - **Show Up:** the one play you would carry forward, concrete enough to do today.

@@ -23,7 +23,7 @@ It runs when Wendell attaches an episode's transcript, audio or video in a proje
 recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes use it too (battle
 `fr-podcast-launch`, position `pod-ep1-from-audio`).
 
-## The six steps
+## The seven steps
 
 1. **Read the recording.** The session reads the whole transcript. A Zoom VTT has the speaker on each cue, and a
    few `grep` calls on phrases give chapter times. Claude's cloud sessions cannot open zoom.us
@@ -83,9 +83,20 @@ recorded. It runs for any show he hosts, so the Flirtcraft podcast's episodes us
    Your steps list that posts them on the rhythm in the project files' `podcast/episode-marketing-plan.md`: the
    episode on day 0, then one clip on days 2, 5 and 9.
 
+7. **Mine the recording.** Added on 2026-10-13 (board row `cp-ingest`). After the clips, the session saves the
+   transcript to `corpus/episodes/<show>-<number>-<guest>/` in the private repo wendell-britt/game-masters-guide and
+   writes each of Wendell's quotable lines as a BAR in `corpus/bars/`, in his exact words with the timestamp, from
+   `corpus/bars/_template.md`. The guest's lines stay in the transcript and become references only when a BAR needs
+   them. It groups the new BARs into at most five claims, and each claim goes on the board as a position that stands
+   unless he flips it. The corpus rules and the loop from podcast to BARs to books and back are in
+   `corpus/README.md` and `corpus/BARS.md` there.
+
 ## What it leaves alone
 
 - It never publishes, schedules, uploads or posts anything, and it never messages a guest. Publishing under his name is reserved to him.
+  One exception, from pass `podcast-pipeline2` (2026-10-16): a queue he approves on the board publishes through
+  `.github/workflows/publish-queue.yml`. His approval is the publishing act (`pa-approval-publishes`); the session
+  writes the queue and its approval row and publishes nothing itself (`council/podcast/publish/README.md`).
 - It writes no quote of a guest that the recording does not hold, and it keeps a guest's family and health details
   out of public copy unless the guest offered them for that purpose.
 - A guest named in the copy is a person named in public, which is on the reserved list. The description therefore

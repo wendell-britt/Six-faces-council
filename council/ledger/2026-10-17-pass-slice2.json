@@ -1,0 +1,685 @@
+{
+ "date": "2026-10-17",
+ "pass": "slice 2",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "file": "council/passes/6FACE_PASS_slice2_2026-10-17.md",
+ "called_by": "Coordinator, on Wendell's board answers of 2026-10-17 06:22-06:26 UTC (council/ledger/2026-10-17-pull-062632.json)",
+ "question": "Explain the rules layer plainly; research the type chart with Pokémon as the model; bridge Sprout's fight with the encounter work already done; put engine feasibility before content.",
+ "subject": "the engine slice, sprout",
+ "ontology_profile": "QUICKSTART (light)",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    8,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 47,
+   "name": "Drained",
+   "cn": "困",
+   "pinyin": "kùn",
+   "lines": [
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ],
+   "shows": "The explaining continues and the basin is dry.",
+   "image": "☵ water beneath ☱ lake. The water has gone out from under the lake and the bed is showing.",
+   "situation": "Exhaustion. The old text gives a stark warning about speech, saying that words spoken now will land badly. What it counsels instead is persistence held privately, because these conditions will outlast any argument made against them.",
+   "lower": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    9,
+    8,
+    8,
+    9
+   ],
+   "changing_lines": [
+    3,
+    6
+   ],
+   "n": 26,
+   "name": "Reserves",
+   "cn": "大畜",
+   "pinyin": "dà chù",
+   "lines": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "shows": "You have been storing this and never named the day.",
+   "image": "☰ heaven beneath ☶ mountain. The whole creative force held under a mountain and kept there.",
+   "situation": "Great accumulation. A large power restrained by something larger, so the holding builds it instead of souring it. The old counsel says to eat away from home and that crossing the great water is favourable, which reads as an instruction: the store was built for elsewhere, and now is when to spend it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "becomes": {
+    "n": 19,
+    "name": "Spring",
+    "cn": "臨",
+    "pinyin": "lín",
+    "lines": [
+     1,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "This is rising, and the window has an edge on it.",
+    "image": "☱ lake beneath ☷ earth. Two firm lines rising at the base, with the ground open above them.",
+    "situation": "Something is coming up and there is room above it. The old text puts a date on it, saying trouble arrives in the eighth month, which turns the reading into a clock: this is favourable and it is favourable now. Spring approaches, and the approach is the whole of it.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ]
+   ],
+   "values": [
+    9,
+    6,
+    9,
+    8,
+    8,
+    8
+   ],
+   "changing_lines": [
+    1,
+    2,
+    3
+   ],
+   "n": 36,
+   "name": "Nightfall",
+   "cn": "明夷",
+   "pinyin": "míng yí",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+   ],
+   "shows": "You are keeping a light covered, and it is still lit.",
+   "image": "☲ fire beneath ☷ earth. The sun gone under the ground, with its light still inside the figure.",
+   "situation": "The light is wounded and continues. The old reading gives a wise person under a bad ruler who keeps their brightness by covering it, and the counsel is to know the difficulty and stay firm inside it.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "becomes": {
+    "n": 7,
+    "name": "Muster",
+    "cn": "師",
+    "pinyin": "shī",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "What would organise this is a fact you have not said.",
+    "image": "☵ water beneath ☷ earth. One firm line among five yielding ones, holding the whole figure to a shape.",
+    "situation": "Water stored underground: a resource that is present, invisible, and organised. The single strong line is the discipline that turns a crowd into a force. The old warning is that this works with an experienced hand and a clear cause, and the same gathering under any other conditions is a mob.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    9,
+    7,
+    7,
+    8,
+    6
+   ],
+   "changing_lines": [
+    2,
+    6
+   ],
+   "n": 34,
+   "name": "Vigour",
+   "cn": "大壯",
+   "pinyin": "dà zhuàng",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "Force is available here and unaimed.",
+   "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+   "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 30,
+    "name": "Burning",
+    "cn": "離",
+    "pinyin": "lí",
+    "lines": [
+     1,
+     0,
+     1,
+     1,
+     0,
+     1
+    ],
+    "shows": "You keep saying the same true sentence, and it is consuming its subject.",
+    "image": "☲ fire beneath ☲ fire. A yielding line held between two firm ones, twice over, and the whole figure is light.",
+    "situation": "Fire exists by holding to what it burns, which is why the character carries both brightness and clinging. The old counsel is to care for the cow — the docile thing that keeps producing. Radiance here is maintained by feeding it.",
+    "lower": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    },
+    "upper": {
+     "trigram": "fire",
+     "symbol": "☲",
+     "name": "The Clinging",
+     "quality": "light, and what it depends on"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    6,
+    7,
+    6
+   ],
+   "changing_lines": [
+    4,
+    6
+   ],
+   "n": 60,
+   "name": "Measure",
+   "cn": "節",
+   "pinyin": "jié",
+   "lines": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   "shows": "You are past what you can hold and you have not said where the edge is.",
+   "image": "☱ lake beneath ☵ water. A lake with more water above it than the basin holds.",
+   "situation": "The character is the joint of a bamboo, the node that divides the stalk into lengths and makes it strong. Limitation as structure. The old text warns at once against bitter limitation, since a rule too harsh to keep gets broken and takes the rest of them with it.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 10,
+    "name": "Footing",
+    "cn": "履",
+    "pinyin": "lǚ",
+    "lines": [
+     1,
+     1,
+     0,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are stepping onto ground that matters, and the play is what makes it safe.",
+    "image": "☱ lake beneath ☰ heaven. A small soft thing placed directly under the largest hard one.",
+    "situation": "The old line is about treading on a tiger's tail and coming away whole, which happens through the quality of the step. Conduct is the entire content here. Where you put your weight, in what order, at what speed, decides whether the ground holds.",
+    "lower": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ]
+   ],
+   "values": [
+    7,
+    8,
+    9,
+    8,
+    9,
+    7
+   ],
+   "changing_lines": [
+    3,
+    5
+   ],
+   "n": 37,
+   "name": "Household",
+   "cn": "家人",
+   "pinyin": "jiā rén",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "An arrangement has formed here without being discussed.",
+   "image": "☲ fire beneath ☴ wind. Fire making its own draught, with the wind coming out of the flame.",
+   "situation": "The family. The old text begins with correctness inside the house and works outward, and the commentary's point is structural: positions held properly within produce order without. Wind out of fire — what happens in here goes out there.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 27,
+    "name": "Feeding",
+    "cn": "頤",
+    "pinyin": "yí",
+    "lines": [
+     1,
+     0,
+     0,
+     0,
+     0,
+     1
+    ],
+    "shows": "What this gives you is feeding you, uncounted.",
+    "image": "☳ thunder beneath ☶ mountain. Two firm lines at top and bottom with four open ones between them: a mouth.",
+    "situation": "The figure is a jaw and the subject is what goes into it. The old text says to look at what a person nourishes, and at what they seek to fill their own mouth with, and offers this as a way of reading someone. Movement below and stillness above, because the lower jaw does the work.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  }
+ ],
+ "daemons": [
+  {
+   "daemon": "controller",
+   "face": "architect",
+   "model": "sonnet",
+   "report": "council/daemons/reports/2026-10-17-slice2-controller.md",
+   "tokens": 29958
+  },
+  {
+   "daemon": "skeptic",
+   "face": "challenger",
+   "model": "sonnet",
+   "report": "council/daemons/reports/2026-10-17-slice2-skeptic.md",
+   "tokens": 40351
+  }
+ ],
+ "subagent_tokens": 70309,
+ "positions": [
+  "pos-slice-bridge",
+  "pos-slice-chart-stats",
+  "pos-slice-feasibility"
+ ],
+ "questions": [
+  "q-slice-referee-clear"
+ ],
+ "board": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho",
+ "unanimous": false,
+ "dissent": "Challenger supports the stats model only on its three falsifiers; Shaman doubts the guessed 'same element hurts' relation on what it teaches.",
+ "tests": [
+  {
+   "id": "slice-bots-chart",
+   "face": "challenger",
+   "due": "2026-10-24"
+  },
+  {
+   "id": "slice-referee-off",
+   "face": "architect",
+   "due": "2026-10-24"
+  },
+  {
+   "id": "slice-plain-rows",
+   "face": "diplomat",
+   "due": "standing"
+  }
+ ],
+ "lessons_pending": [
+  {
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "date": "2026-10-17",
+   "source": "pos-slice-rules overruled, council/ledger/2026-10-17-pull-062632.json",
+   "wendell": "We need to explain this to the degree is makes sense to me before we move forward. This sounds like mumbo jumbo",
+   "lesson": "A position is written as what the player would see; record names come after, as a gloss."
+  },
+  {
+   "faces": [
+    "architect",
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "date": "2026-10-17",
+   "source": "pos-slice-encounter overruled, same ledger",
+   "wendell": "It feels like there is a gap we’re skipping over to keep it coherent with work we’ve already done",
+   "lesson": "Line the existing engines up side by side before calling them separate jobs."
+  },
+  {
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "date": "2026-10-17",
+   "source": "pos-slice-passage overruled, same ledger",
+   "wendell": "These are the main things we need feasibility testing on",
+   "lesson": "When the layers are untested, the passage seam is a feasibility test, not a later content task."
+  }
+ ]
+}

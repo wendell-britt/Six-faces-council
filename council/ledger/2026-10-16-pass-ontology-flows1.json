@@ -1,0 +1,593 @@
+{
+ "date": "2026-10-16",
+ "pass": "ontology flows 1",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "file": "council/passes/6FACE_PASS_ontology-flows1_2026-10-16.md",
+ "called_by": "Wendell, in the project chat: \"We've also added a game design ontology to the six faces repo that is designed to be used in continuing our game design work. I'd say its important for us to review that using the 6 faces and figure out how best to deftly use the information and processes there in our flows in a way that remains deft and token efficient\"",
+ "question": "How should board reads, callsheets, round threads and loops, the compost pass and needs-work use the design ontology, deftly and token-efficiently?",
+ "subject": "ontology/ 0.1.0-alpha.2 in the council's flows",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    6,
+    9,
+    9
+   ],
+   "changing_lines": [
+    4,
+    5,
+    6
+   ],
+   "n": 57,
+   "name": "Persuasion",
+   "cn": "巽",
+   "pinyin": "xùn",
+   "lines": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    1
+   ],
+   "shows": "An effect is already happening that you have not admitted to.",
+   "image": "☴ wind beneath ☴ wind. A yielding line at the base of each half, and the figure gets in everywhere.",
+   "situation": "Wind repeated. The character means to enter, to kneel, to go underneath. The old counsel calls the success small and advises having somewhere to go and someone to see, and the mode throughout is gradual: a thing that works by getting under.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 32,
+    "name": "Endurance",
+    "cn": "恆",
+    "pinyin": "héng",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     0,
+     0
+    ],
+    "shows": "This exact exchange has happened before.",
+    "image": "☴ wind beneath ☳ thunder. Wind underneath and thunder above, an arrangement that keeps recurring.",
+    "situation": "Duration. The old reading makes this a marriage: two things in fixed relative position, lasting because the position is stable. The counsel is to hold the course and keep moving, so what endures here is a motion that repeats.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    7,
+    7,
+    7,
+    7,
+    9
+   ],
+   "changing_lines": [
+    6
+   ],
+   "n": 44,
+   "name": "Serendipity",
+   "cn": "姤",
+   "pinyin": "gòu",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are building on one piece of evidence.",
+   "image": "☴ wind beneath ☰ heaven. One soft line has entered beneath five hard ones.",
+   "situation": "Wind under heaven touches everything without choosing what it touches. The smallest possible arrival at the base of something large and already settled. It does not feel small. That is what makes it worth watching rather than seizing.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 28,
+    "name": "Overload",
+    "cn": "大過",
+    "pinyin": "dà guò",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     0
+    ],
+    "shows": "This is carrying more than what holds it up.",
+    "image": "☴ wind beneath ☱ lake. Four firm lines packed into the middle, with one yielding line at either end.",
+    "situation": "The ridgepole sags. All the weight is central and both supports are thin, so the structure carries more than its ends can take. The old text says it is favourable to have somewhere to go, which is the right counsel for a thing about to break: move.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "lake",
+     "symbol": "☱",
+     "name": "The Joyous",
+     "quality": "joyful"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     3,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    7,
+    8,
+    7
+   ],
+   "changing_lines": [],
+   "n": 38,
+   "name": "Estrangement",
+   "cn": "睽",
+   "pinyin": "kuí",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    1
+   ],
+   "shows": "You reached a conclusion from a distance.",
+   "image": "☱ lake beneath ☲ fire. Fire climbing and water settling, the two halves separating as they go.",
+   "situation": "Opposition by nature: two elements in one figure travelling opposite ways. The old text keeps its counsel small — in small matters, good fortune — and fills the lines with strange sightings. A pig covered in mud. A wagon dragged backwards. A stranger who turns out to be kin.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     3,
+     3
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    7,
+    8,
+    7,
+    8,
+    8
+   ],
+   "changing_lines": [],
+   "n": 54,
+   "name": "Home Field Advantage",
+   "cn": "歸妹",
+   "pinyin": "guī mèi",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "You are following rules nobody told you.",
+   "image": "☱ lake beneath ☳ thunder. Movement above, open water underneath, and the terms set by the upper half.",
+   "situation": "Entering an arrangement that was made before you got here. The old text is unusually blunt and calls every move unfavourable, because the one arriving takes the junior place in a house that already has its rules. Everything here runs on ground somebody else laid.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": [
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     2,
+     3
+    ],
+    [
+     3,
+     3,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     3,
+     3
+    ]
+   ],
+   "values": [
+    8,
+    8,
+    8,
+    9,
+    6,
+    8
+   ],
+   "changing_lines": [
+    4,
+    5
+   ],
+   "n": 16,
+   "name": "Anticipation",
+   "cn": "豫",
+   "pinyin": "yù",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "The good part has started and the event has not.",
+   "image": "☷ earth beneath ☳ thunder. Thunder coming up out of the ground, the sound arriving before the storm.",
+   "situation": "Stored energy at the point of release. The character carries both readiness and delight, and the old commentary attaches music to it — the thing that gathers a crowd before anything has happened. Preparation and pleasure are the same motion here.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 8,
+    "name": "Alliance",
+    "cn": "比",
+    "pinyin": "bǐ",
+    "lines": [
+     0,
+     0,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "This is filling a hole you had before it started.",
+    "image": "☷ earth beneath ☵ water. Water lying on ground, finding every hollow and filling it.",
+    "situation": "Water on earth touches at every point along the surface. Union across the whole of it. The classical note is about timing — those who arrive late to a union already forming find the places taken.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": [
+    [
+     2,
+     2,
+     3
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     2
+    ],
+    [
+     3,
+     3,
+     2
+    ],
+    [
+     3,
+     2,
+     2
+    ],
+    [
+     2,
+     2,
+     3
+    ]
+   ],
+   "values": [
+    7,
+    6,
+    6,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [
+    2,
+    3
+   ],
+   "n": 42,
+   "name": "Windfall",
+   "cn": "益",
+   "pinyin": "yì",
+   "lines": [
+    1,
+    0,
+    0,
+    0,
+    1,
+    1
+   ],
+   "shows": "More is arriving than you put in.",
+   "image": "☳ thunder beneath ☴ wind. Movement below, fed by what has come down from above.",
+   "situation": "Increase. The old text says it is favourable to have somewhere to go and to cross the great water, which makes this one of the few figures that says yes. The commentary attaches a duty to it: seeing good, move toward it; finding a fault in yourself, correct it.",
+   "lower": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "upper": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "becomes": {
+    "n": 9,
+    "name": "Restraint",
+    "cn": "小畜",
+    "pinyin": "xiǎo chù",
+    "lines": [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "A small rule you never revisited is holding all of this.",
+    "image": "☰ heaven beneath ☴ wind. One yielding line holding five firm ones, the way weather is held by wind.",
+    "situation": "A small force restrains a large one here, and the large one is permitting it. The single yielding line's whole strength is position. The tradition reads the restraint as accumulation: force that cannot discharge yet is being stored.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  }
+ ],
+ "verdicts": {
+  "shaman": "light fields and checks; never write his rest as deficiency",
+  "architect": "typed pointers and free checks, not loaded context",
+  "challenger": "load only at decision points; no field until T1",
+  "regent": "process rules govern process, binding decisions govern meaning; no new gates",
+  "diplomat": "translate at the seam; his rows stay plain",
+  "sage": "load where decided; elsewhere a sentence, a field or a check"
+ },
+ "dissent": "not unanimous: the Challenger holds the callsheet line until T1 and counts the term check unproven (T2)",
+ "positions": [
+  "of-load-where-decided",
+  "of-callsheet-line",
+  "of-compost-split",
+  "of-term-check",
+  "of-precedence",
+  "of-wave-room",
+  "of-sabotage-offer"
+ ],
+ "questions": [],
+ "subagent_tokens": 206569,
+ "ruling": "pending"
+}

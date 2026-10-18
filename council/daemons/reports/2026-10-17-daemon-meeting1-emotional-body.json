@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-17",
+  "pass": "daemon-meeting1",
+  "daemon": "emotional-body",
+  "face": "shaman",
+  "cast": "11 -> 7",
+  "model": null,
+  "tokens": "44334",
+  "report": "2026-10-17-daemon-meeting1-emotional-body.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [],
+      "url": null,
+      "quote": "Hand the feeling off before it has finished arriving",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "Who I work for: the Player, \"the centre the others work for or against\" [2].",
+        "My question set asks \"What do you feel?\" and has no body question [2]."
+      ],
+      "url": null,
+      "quote": "The Player has no boss either; it is the centre the others work for or against.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "Veiled and flooded are the two halves of one polarity: above 0 is veiled, below 0 floods [3][5]."
+      ],
+      "url": null,
+      "quote": "Polarity runs -10 to 10; below 0 the charge floods.",
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "If veiled, ask which veil: forgetting, distracting, dissociating, numbness [4].",
+        "If flooded, skip satisfaction and offer the three practices [4]."
+      ],
+      "url": null,
+      "quote": "At 0 the creature is clear",
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [
+        "Veiled and flooded are the two halves of one polarity: above 0 is veiled, below 0 floods [3][5].",
+        "A veiled spirit's satisfaction does not show [5].",
+        "The cave names satisfaction in gold states, never by a number [5].",
+        "Accept \"no word yet\" as a full answer [5].",
+        "The spirits vouch rather than fight [5].",
+        "It makes the approach more fun, because your body's report becomes a game move and \"no word yet\" still counts [5]."
+      ],
+      "url": null,
+      "quote": "Above 0 the spirit is VEILED",
+      "label": "unlabelled"
+    },
+    {
+      "n": 6,
+      "claims": [
+        "Pay: the charge gets used, not managed; \"somebody said the unsaid charge, and it landed\" [6]."
+      ],
+      "url": null,
+      "quote": "somebody said the unsaid charge, and it landed.",
+      "label": "unlabelled"
+    }
+  ]
+}

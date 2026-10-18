@@ -1,0 +1,242 @@
+{
+ "B2-001": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "prisma/migrations/20260329130000_add_bar_forge_record/migration.sql:3 creates bar_forge_records; schema.prisma:530 maps to it."
+ },
+ "B2-002": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/lib/bars-api-auth.ts returns 503 with message when BARS_API_KEY unset and 401 on wrong bearer."
+ },
+ "B2-003": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/lib/bar-forge/match-bar-to-quests.ts: status in active/draft (loadMatchable...), moveTypeMatchesWave filter, TYPE_TO_LOCK +10, polarity substring boost over title/description/nation/archetype/allyshipDomain."
+ },
+ "B2-004": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/app/api/bar-registry/route.ts GET: default 100, clamps to 500; limit unused when sample>0."
+ },
+ "B2-005": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "bar-registry/route.ts GET: sample clamped to 500, uses ORDER BY RANDOM() LIMIT sample."
+ },
+ "B2-006": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "bar-registry/route.ts: count = records.length, totalCount only when includeTotal set."
+ },
+ "B2-007": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/app/api/bar-registry/[id]/route.ts returns {record} or 404 'Not found'."
+ },
+ "B2-008": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "openapi/bar-forge-custom-gpt.yaml has game-master collective-context/move/resolve-quest paths (lines 219-283), x-gm-faces (16), tags (40), gameMasterFace (388,486); registry merges it into metadataJson."
+ },
+ "B2-009": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "match-bar-to-quests.ts:177 prefixes gm_face:<name> into debug.matchedOn."
+ },
+ "B2-010": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "bar-registry/route.ts mergedMetadata merges gameMasterFace into metadataJson."
+ },
+ "B2-011": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/lib/books-context-api-auth.ts returns 503 when BOOKS_CONTEXT_API_KEY missing, used by all admin/books routes."
+ },
+ "B2-012": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/app/api/admin/books/route.ts non-compact response contains exactly those fields."
+ },
+ "B2-013": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "admin/books/route.ts compact branch returns id,title,author,slug,status,threadId."
+ },
+ "B2-014": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "admin/books/[id]/route.ts: extractedText=1, maxChars default 80000, max 500000."
+ },
+ "B2-015": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "admin/books/[id]/quests/route.ts accepts draft|active|archived|all, default all."
+ },
+ "B2-016": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "quests/route.ts compact returns id,title,status,moveType."
+ },
+ "B2-017": {
+  "answer": "disagrees",
+  "confidence": "medium",
+  "reason": "quests/route.ts returns 404 only when the book is not found; a book with no generated quests returns 200 with empty list."
+ },
+ "B2-018": {
+  "answer": "agrees",
+  "confidence": "medium",
+  "reason": "src/actions/books.ts:279 listBooks selects adminBookHubSelect without extractedText and orders by createdAt desc like the API, though field sets differ slightly (API adds updatedAt)."
+ },
+ "B2-019": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "quests route filters completionEffects contains \"bookId\":\"<id>\" with same status filters as src/actions/book-quest-review.ts:32-37,49-54."
+ },
+ "B2-020": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "scripts/verify-server-action-type-reexports.ts flags export type { and export { type } in 'use server' files; package.json:131."
+ },
+ "B2-021": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "scripts/verify-prisma-schema.ts runs prisma validate with placeholder DATABASE_URL if unset."
+ },
+ "B2-022": {
+  "answer": "disagrees",
+  "confidence": "medium",
+  "reason": "package.json:135 verify:build-reliability runs four checks (also transformation-registry-lockstep and face-meta-lockstep), not just the two."
+ },
+ "B2-023": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "package.json:136 check = db:generate && verify:build-reliability && lint && tsc --noEmit."
+ },
+ "B2-024": {
+  "answer": "agrees",
+  "confidence": "medium",
+  "reason": "package.json:137/.husky/pre-commit run precommit:check = check (generate, verify, lint, tsc) + validate-manifest; matches except lint is omitted from the line."
+ },
+ "B2-025": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": ".github/workflows/frontend-check.yml runs npm run check on push to main/master and on pull_request."
+ },
+ "B2-026": {
+  "answer": "disagrees",
+  "confidence": "high",
+  "reason": "package.json has no strand:consult:build-reliability script (only seed:strand-agent, compost:strand-consults)."
+ },
+ "B2-027": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "scripts/build-with-env.ts runs prisma migrate deploy when DATABASE_URL is set (skipped only on Vercel preview)."
+ },
+ "B2-028": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "scripts/db-sync.ts runs prisma generate only, no push; package.json:30 db:generate."
+ },
+ "B2-029": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "package.json:29 db:push prints FORBIDDEN and exits 1."
+ },
+ "B2-030": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "scripts/record-schema-hash.ts writes .prisma_hash; db-sync.ts compares hash and exits 1 on mismatch."
+ },
+ "B2-031": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "scripts/db-sync.ts runs only prisma generate and exits 1 with migrate/record-schema-hash instructions when hash differs."
+ },
+ "B2-032": {
+  "answer": "agrees",
+  "confidence": "medium",
+  "reason": "No 20250306000000_playbook_to_archetype_rename in prisma/migrations; adventures table first altered in 20260313020000 migration, gap claim not verifiable."
+ },
+ "B2-033": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "20260629124500 migration.sql:79,100 re-creates both tables without lensFaceKey/eaChannel/chargeStrength and with lensGoalId/lifeLensDomain; 20260624160338 has those columns; 20260810193000 repair migration adds them additively."
+ },
+ "B2-034": {
+  "answer": "disagrees",
+  "confidence": "medium",
+  "reason": "No engines field in package.json; next 16.1.5 (package.json:268) needs Node >=20, @types/node ^20, CI uses node 22, so v18+ is not accurate."
+ },
+ "B2-035": {
+  "answer": "disagrees",
+  "confidence": "low",
+  "reason": "Code forbids db push entirely (package.json:29 db:push exits with error), contradicting 'db push is for local iteration only'."
+ },
+ "B2-036": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "package.json:140 smoke = scripts/preflight-env.ts which checks DB URL env and runs SELECT 1 connectivity."
+ },
+ "B2-037": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "scripts/build-with-env.ts: with DB URL runs migrate deploy then next build; header says without it does generate + build."
+ },
+ "B2-038": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "verify-server-action-type-reexports.ts forbids export type {} in use server files; precommit:check runs generate, verify:build-reliability, lint, tsc, validate-manifest."
+ },
+ "B2-039": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/lib/openai.ts getApiKey returns key untrimmed (only trims for emptiness check)."
+ },
+ "B2-040": {
+  "answer": "disagrees",
+  "confidence": "high",
+  "reason": "generateObject/AI is used in many places (quest-grammar.ts, copy-improvement.ts, birthday-onboarding/*, alchemy-engine/*, etc.), not just 2 call sites."
+ },
+ "B2-041": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/actions/book-analyze.ts:564 analyzeBook, line 37 default BOOK_ANALYSIS_MODEL || 'gpt-4o-mini', uses generateObjectWithCache."
+ },
+ "B2-042": {
+  "answer": "disagrees",
+  "confidence": "high",
+  "reason": "src/actions/generate-quest.ts has no generateQuestCore and no gpt-4o default; it delegates to compileQuestWithAI in quest-grammar.ts."
+ },
+ "B2-043": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/lib/ai-with-cache.ts generateWithRetry waits 15000ms on rate limit/429/TPM errors."
+ },
+ "B2-044": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/actions/book-analyze.ts:37 BOOK_ANALYSIS_MODEL default gpt-4o-mini."
+ },
+ "B2-045": {
+  "answer": "disagrees",
+  "confidence": "high",
+  "reason": "QUEST_GEN_MODEL is not referenced anywhere in src or scripts."
+ },
+ "B2-046": {
+  "answer": "disagrees",
+  "confidence": "high",
+  "reason": "QUEST_GEN_AI_ENABLED is not referenced in src; generate-quest.ts:76 checks QUEST_GRAMMAR_AI_ENABLED instead."
+ },
+ "B2-047": {
+  "answer": "agrees",
+  "confidence": "high",
+  "reason": "src/actions/quest-grammar.ts:144 uses QUEST_GRAMMAR_AI_MODEL || 'gpt-4o'."
+ },
+ "B2-048": {
+  "answer": "agrees",
+  "confidence": "medium",
+  "reason": "ai-with-cache.ts DEFAULT_TTL_MS = 7 days and AiResponseCache model exists (schema.prisma:3361); quest path goes via quest-grammar's cached calls."
+ }
+}

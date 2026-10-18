@@ -1,0 +1,14 @@
+{
+ "date": "2026-10-16",
+ "kind": "chat-ruling",
+ "pass": "slice 1",
+ "ruling": "Wendell in chat: \"Well that's definitely something to fix. Sprout needs to be one of those registered repos.\"",
+ "decides": [
+  {
+   "id": "slice-substrate-home",
+   "decision": "sprout"
+  }
+ ],
+ "note": "Ruling recorded per the working rules (a chat answer counts as a ruling). Actions taken in the same session: wendell-britt/sprout added to council/repos.yaml via council/install.py, sprout cloned at /home/workspace/sprout, council-sync hook run there and shared files refreshed. The engine slice and the tabletop rules substrate build in sprout. bars-engine stays a library of verified assets to borrow (trust reducer, twine IR compiler, world-state-provider pattern), not the substrate home. Discovery recorded for the next slice session: sprout already holds a built single-file prototype (prototype/index.html, ~150 SNES-profile PNGs), a 3D fight screen (root-fight/), a built slice awaiting Wendell's playtest (docs/slice-plan.md), and the full design at docs/design.md. Pass: council/passes/6FACE_PASS_slice1_2026-10-16.md",
+ "recorded_by": "zo session con_i6enyaYjOwBWyrGm"
+}

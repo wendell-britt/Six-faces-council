@@ -1,0 +1,78 @@
+{
+ "AS-001": {
+  "answer": "agrees",
+  "reason": "schema.prisma:1388 Asset has all listed fields (plus an extra `side`); assets.ts:69 uses bar_attachment."
+ },
+ "AS-002": {
+  "answer": "disagrees",
+  "reason": "Blob key is assets/{id}{ext} and the local fallback writes public/uploads/assets/{id}/file{ext} (assets.ts:95-98), not {filename}. Low confidence, minor."
+ },
+ "AS-005": {
+  "answer": "agrees",
+  "reason": "schema.prisma:1390 `type String`; values bar_attachment seen in assets.ts."
+ },
+ "AS-006": {
+  "answer": "agrees",
+  "reason": "schema.prisma:1393 `metadataJson String? @map(\"metadata_json\")`; assets.ts:72 stores {intention}."
+ },
+ "AS-007": {
+  "answer": "agrees",
+  "reason": "schema.prisma Asset has `owner Player @relation(fields: [ownerId], references: [id], onDelete: Cascade)`."
+ },
+ "AS-011": {
+  "answer": "disagrees",
+  "reason": "assets.ts:12-13 enforce 5/10 MB, but the client-upload route sets maximumSizeInBytes: MAX_PDF_BYTES (10 MB) for every allowed type, images included (api/assets/upload/route.ts:109), so images can reach 10 MB there."
+ },
+ "AS-014": {
+  "answer": "agrees",
+  "reason": "Design spec for assets not yet in the repo; no sigil files exist, consistent with AS-016 'not yet generated'."
+ },
+ "AS-015": {
+  "answer": "agrees",
+  "reason": "Same: planned 16x16 marks, none in public/, consistent with 'not yet generated'."
+ },
+ "AS-016": {
+  "answer": "agrees",
+  "reason": "5 sigils + 8 marks = 13, and no such assets exist in public/."
+ },
+ "AS-017": {
+  "answer": "agrees",
+  "reason": "register-portrait.ts:15 uses object-cover object-[center_15%]; the 64x96 size is not checkable in code."
+ },
+ "AS-025": {
+  "answer": "agrees",
+  "reason": "public/textures/zone-lobby|quest|vault.png are all 64x64 (read from PNG headers); the #0a0908 base was not checked."
+ },
+ "AS-026": {
+  "answer": "agrees",
+  "reason": "No image assets for element color; card-tokens.ts:39 ELEMENT_TOKENS supplies the colors."
+ },
+ "AS-029": {
+  "answer": "agrees",
+  "reason": "Not implemented yet; avatar-utils.ts header calls resolveProvenanceStamp() 'planned', matching a design contract."
+ },
+ "AS-032": {
+  "answer": "disagrees",
+  "reason": "Hardcoded hex values appear outside card-tokens.ts, e.g. #0a0908 in NowHome.tsx:66 and CaptureBox.tsx:75; 98 files in src/lib/ui and src/components contain hex colors."
+ },
+ "AS-033": {
+  "answer": "agrees",
+  "reason": "card-tokens.ts:39 exports ELEMENT_TOKENS and :205 SURFACE_TOKENS."
+ },
+ "AS-034": {
+  "answer": "agrees",
+  "reason": "avatar-utils.ts exports AvatarConfig (:13) and getWalkableSpriteUrl (:155)."
+ },
+ "AS-036": {
+  "answer": "agrees",
+  "reason": ".specify/specs/provenance-stamp-system/spec.md exists."
+ },
+ "AS-064": {
+  "answer": "agrees",
+  "reason": "books.ts:37,70 describe the 4.5 MB Vercel request limit and the client-upload path for larger files."
+ },
+ "AS-147": {
+  "answer": "agrees",
+  "reason": "assets.ts:82 and books.ts:104 branch on BLOB_READ_WRITE_TOKEN; the local filesystem fallback is the one that fails on Vercel."
+ }
+}

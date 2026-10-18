@@ -1,0 +1,174 @@
+{
+ "date": "2026-10-16",
+ "repo": "six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "podcast",
+ "record": "council/passes/6FACE_PASS_podcast-pipeline1_2026-10-16.md",
+ "report": null,
+ "product": null,
+ "called_by": "Wendell, Mastering the Game of Allyship project chat, 2026-10-16 17:09 UTC (\"ok we need to do a brainstorm to see about the best way to automate taking the Podcast episodes- uploading them, generating clips and publishing to social media.\"); thread started by the project coordinator",
+ "convened_by": "council",
+ "invoked_from": "claude-code",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "values": [
+    7,
+    7,
+    6,
+    9,
+    9,
+    8
+   ],
+   "changing_lines": [
+    3,
+    4,
+    5
+   ],
+   "n": 58,
+   "name": "Banter",
+   "becomes": {
+    "n": 11,
+    "name": "Mingling"
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "values": [
+    8,
+    7,
+    8,
+    8,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 29,
+   "name": "Depths"
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "values": [
+    7,
+    7,
+    8,
+    8,
+    7,
+    7
+   ],
+   "changing_lines": [],
+   "n": 61,
+   "name": "Incubation"
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "values": [
+    8,
+    8,
+    8,
+    6,
+    7,
+    9
+   ],
+   "changing_lines": [
+    4,
+    6
+   ],
+   "n": 20,
+   "name": "Witnessing",
+   "becomes": {
+    "n": 45,
+    "name": "Gathering"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "values": [
+    8,
+    8,
+    7,
+    6,
+    6,
+    8
+   ],
+   "changing_lines": [
+    4,
+    5
+   ],
+   "n": 15,
+   "name": "Understatement",
+   "becomes": {
+    "n": 31,
+    "name": "Mutuality"
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "values": [
+    8,
+    8,
+    7,
+    6,
+    7,
+    8
+   ],
+   "changing_lines": [
+    4
+   ],
+   "n": 39,
+   "name": "Impasse",
+   "becomes": {
+    "n": 31,
+    "name": "Mutuality"
+   }
+  }
+ ],
+ "positions": [
+  "pp-posting-is-the-bottleneck",
+  "pp-one-sitting",
+  "pp-zoom-to-movies",
+  "pp-guest-kit",
+  "pp-done-means-out",
+  "pp-hours-to-guesting"
+ ],
+ "questions": [
+  "pp-who-schedules"
+ ],
+ "dissent": true,
+ "dissents": [
+  {
+   "face": "challenger",
+   "on": "pp-who-schedules",
+   "for": "sitting"
+  },
+  {
+   "face": "challenger",
+   "on": "clip count",
+   "for": "two clips per episode; answered by pod-promo-rhythm's review after three episodes"
+  }
+ ],
+ "steps_list": "podcast-pipeline",
+ "tests": [
+  {
+   "due": "2026-10-26",
+   "test": "Every post on episode 2's list is published or scheduled."
+  },
+  {
+   "due": "episode 3",
+   "test": "Wendell's touches on the episode number four or fewer and the sitting takes under 45 minutes (both the council's numbers)."
+  },
+  {
+   "due": "first run of the picked option",
+   "test": "A clip goes from his Mac to a scheduled post or the posting pack without his hands."
+  }
+ ],
+ "lessons_pending": [],
+ "daemons": "none sent; one research subagent read the four podcast threads"
+}

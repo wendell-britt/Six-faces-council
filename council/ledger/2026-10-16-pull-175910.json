@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T17:59:10.784Z",
+ "answers": {
+  "ttv-board-one-phase": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:56:30.005Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttv-no-home-yet": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:57:24.321Z",
+   "status": "overrule",
+   "steer": "I think it should introduce a shadow quest to find alignment. The quest should be optional but a shadow quest is the type of gamification that is important for this work. The assumption that work that is unassigned has a shadow alignment that can't be seen and must be emerged"
+  },
+  "ttv-align-to-work": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:57:31.288Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttv-saved-read-scoped": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:58:01.528Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttv-lens-emerge": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:58:37.723Z",
+   "status": "overrule",
+   "steer": "So we don't want to quite the words directly because the writing is so raw. It's ok for the Council to paraphrase, they only need to cite the date"
+  },
+  "ttv-fruit-is-his": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:59:02.416Z",
+   "status": "stands",
+   "steer": "We should also be able to defer those into a seed library that can be drawn from"
+  },
+  "ttv-task-not-bar": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:59:06.416Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ttv-one-store": {
+   "kind": "position",
+   "savedAt": "2026-10-16T17:59:10.784Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/ttv-no-home-yet: Overruled (steer: \"I think it should introduce a shadow quest to find alignment. The quest should be optional but a shadow quest is the type of gamification that is important for this work. The assumption that work that is unassigned has a shadow alignment that can't be seen and must be emerged\")",
+  "positions/ttv-lens-emerge: Overruled (steer: \"So we don't want to quite the words directly because the writing is so raw. It's ok for the Council to paraphrase, they only need to cite the date\")",
+  "positions/ttv-fruit-is-his: Stands (steer: \"We should also be able to defer those into a seed library that can be drawn from\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

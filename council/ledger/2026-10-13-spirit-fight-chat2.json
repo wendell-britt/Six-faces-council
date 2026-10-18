@@ -1,0 +1,18 @@
+{
+ "date": "2026-10-13",
+ "battle": "wave-battle",
+ "repo": "sprout",
+ "kind": "chat-ruling",
+ "note": "Wendell played build 2 of Ama Rell's Fixer (sprout #50) and answered in the thread's chat; a chat answer counts as a ruling. Build 3 carries the stats steer (sf-stats-carry). The spirit generator and training contexts are a new strand, handed to a fresh intake thread (sf-generator-next).",
+ "answers": {
+  "sf-ally-pick": {
+   "kind": "position",
+   "via": "chat",
+   "status": "steer",
+   "steer": "Ok so a mismatched ally gets defeated too quickly. I do think this is where pokemon stats balance the game out and moves are bonuses on stats.\n\nWe will need to develop a spirit generator à la monster rancher and contexts for spirits to train and grow stronger by getting better at the overall game loop",
+   "at": "2026-10-13T23:33:51Z"
+  }
+ },
+ "positions": ["sf-stats-carry", "sf-generator-next"],
+ "questions": []
+}

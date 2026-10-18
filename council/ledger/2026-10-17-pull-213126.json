@@ -1,0 +1,62 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T21:31:26.796Z",
+ "answers": {
+  "q-slice-referee-clear-3": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-17T21:29:39.545Z",
+   "steer": ""
+  },
+  "pos-ac-outside-money": {
+   "kind": "position",
+   "savedAt": "2026-10-17T21:29:55.549Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-t1-design": {
+   "kind": "position",
+   "savedAt": "2026-10-17T21:30:10.464Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-legibility-later": {
+   "kind": "position",
+   "savedAt": "2026-10-17T21:30:33.620Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-coop-pipeline": {
+   "kind": "position",
+   "savedAt": "2026-10-17T21:30:49.340Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-consent-form": {
+   "kind": "position",
+   "savedAt": "2026-10-17T21:31:08.948Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-commons-license": {
+   "kind": "position",
+   "savedAt": "2026-10-17T21:31:19.591Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-ac-phase1-done": {
+   "kind": "position",
+   "savedAt": "2026-10-17T21:31:26.796Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/q-slice-referee-clear-3: Yes, that's it: build the referee"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

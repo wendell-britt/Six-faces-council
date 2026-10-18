@@ -76,7 +76,7 @@ entity_families:
   Agent:
     types: [Designer, GameMaster, Player, Ally, Helper, AI, Group, Institution, WorldAgent]
   DesignObject:
-    types: [Game, DesignTool, Mechanic, Rule, NarrativeElement, CharacterRole, WorldElement, AdaptiveSystem, MotivationMechanism, Credential, Interface, Ritual, Prompt, ArtifactTemplate]
+    types: [Game, DesignTool, Mechanic, Rule, NarrativeElement, CharacterRole, WorldElement, AdaptiveSystem, MotivationMechanism, Credential, Interface, Ritual, Prompt, ArtifactTemplate, SourceChannel, PipelineStage, Technique, CaptureCamera]
   PlayUnit:
     types: [EncounterDefinition, EncounterOccurrence, MoveDefinition, MoveInvocation, PracticeInstance, QuestDefinition, QuestInstance, ArcDefinition, ArcInstance, CampaignInstance, Session, CompletionContract, ParticipantExitRecord, EncounterEndRecord, MoveResolutionRecord, QuestDispositionRecord, ArcConclusionRecord, CompletionClaim, QuestCompletionClaim, InterruptionRecord, Checkpoint, ContinuationRecord]
   PhilosophyObject:
@@ -86,11 +86,11 @@ entity_families:
   ExperientialObject:
     types: [Charge, LivedTension, State, Performance, Action, ExperienceEvent, Transformation, Outcome, Consequence, SomaticReport, SatisfactionReport, DesiredStateReport, ActionIntention, TransformationRecord]
   RelationalObject:
-    types: [Relationship, TrustState, ConsentRecord, Boundary, Repair, CoordinationPattern, SharedMeaning, PurposePermission]
+    types: [Relationship, TrustState, ConsentRecord, Boundary, Repair, CoordinationPattern, SharedMeaning, PurposePermission, PermissionGrant, PermissionRefusal, PermissionEnvelope]
   EpistemicObject:
     types: [Claim, Observation, Interpretation, Hypothesis, EvidenceItem, TensionReport, TensionRepresentation, TensionConfiguration, DerivedMovementProposal, MovementFinding, DestinationClaim, RouteHypothesis, Uncertainty, Disagreement, Finding, Test]
   ProvenanceObject:
-    types: [Source, ProvenanceRecord, Artifact, Seed, Revision, LifecycleRecord, CompostRecord, TensionSnapshot, TransformationTrace, MovementSourceReport, MovementRoutingPlan, MovementRoutingAssignment, DivergenceRecord, BlockerRecord, RecoverabilityPath, ArtifactDispatch, ActionRecord, ConsequenceRecord]
+    types: [Source, ProvenanceRecord, Artifact, Seed, Revision, LifecycleRecord, CompostRecord, TensionSnapshot, TransformationTrace, MovementSourceReport, MovementRoutingPlan, MovementRoutingAssignment, DivergenceRecord, BlockerRecord, RecoverabilityPath, ArtifactDispatch, ActionRecord, ConsequenceRecord, DataSubjectClaim, DataAssetRecord, ProcessingEvent, DerivationRecord, AssetSourceRecord, CorrectionRecord, RevocationRecord, DeletionRequest, DeletionDisposition, PropagationRecord, ResidualObligationRecord]
   PsychographicObject:
     types: [Psychograph, TypePreference, DesiredState, PleasureSignature, DesignShadow, AccessibilityNeed, AudienceHypothesis]
   FaceNamespaceObject:
@@ -305,6 +305,94 @@ tension_representation:
     artifact: ArtifactDispatch
   required_metadata: [source_encounter, source_reports, report_time, derivation_time, schema_version, derivation_version, included_fields, omitted_fields, purpose, audience, field_authorship, uncertainty, confirmation_status, privacy_class, retention, deletion_behavior, permitted_uses, downstream_lineage]
   distinct_permission_purposes: [collection, local_processing, persistence, derivation, explanation, artifact_generation, personalization, npc_world_adaptation, collective_reuse, sharing_publication, analytics_evaluation, model_improvement, retention, correction, deletion, revocation]
+
+privacy_consent_authority:
+  decision_record: ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
+  governing_rule: >-
+    Consent is situated authorization; a ConsentRecord is historical evidence.
+    A concrete operation is allowed only by its current PermissionEnvelope.
+  permission_objects:
+    - PermissionGrant
+    - PermissionRefusal
+    - ConsentRecord
+    - PermissionEnvelope
+    - Boundary
+    - DataAssetRecord
+    - ProcessingEvent
+    - DerivationRecord
+    - CorrectionRecord
+    - RevocationRecord
+    - DeletionRequest
+    - DeletionDisposition
+    - PropagationRecord
+    - ResidualObligationRecord
+  permission_grant_required_fields:
+    - authority
+    - represented_subject
+    - data_categories
+    - source_records
+    - purpose
+    - operations
+    - processor_or_role
+    - audience
+    - visibility
+    - destination
+    - context_or_world
+    - effective_at
+    - duration_or_review_point
+    - retention_limit
+    - explanation_route
+    - correction_route
+    - descendant_policy
+    - export_policy
+    - revocation_behavior
+    - deletion_behavior
+    - notice_version
+    - evidence
+  distinct_operations:
+    - collection
+    - transient_processing
+    - persistence
+    - derivation
+    - personalization
+    - explanation
+    - visibility
+    - reuse
+    - sharing_publication
+    - export
+    - analytics_evaluation
+    - model_improvement
+    - retention
+    - correction
+    - deletion
+    - revocation
+  authority_map:
+    personal_interior_somatic_psychographic_identity_likeness_and_inference: represented_person
+    relational_or_multiplayer_contribution: affected_participant_for_own_contribution
+    creative_source: source_author_or_rights_holder_within_actual_authority
+    authored_world_material: designer_or_game_master_within_scope
+    official_council_record: ontology_owner_or_council_with_contributor_restrictions_preserved
+    administration: authorized_steward_with_no_new_purpose_authority
+  conflict_rule: intersection_of_applicable_authorities_and_restrictions
+  lifecycle: [proposed, granted, refused, active, renewed, narrowed, expired, revoked]
+  derivative_rule: descendants_inherit_the_effective_permission_envelope
+  data_class_defaults:
+    tension_snapshots: private
+    somatic_reports: private
+    psychographs: private_correctable_hypothesis
+    adaptive_inferences: proposal_only_visible_when_consequential
+    generated_world_material: lineage_bound
+    creative_source_corpora: reuse_authorization_required
+    council_records: minimize_or_separately_permission_personal_material
+    exports: manifest_and_onward_use_constraints_required
+    analytics_evaluation: minimum_fields_for_named_question
+    model_improvement: explicit_opt_in_only
+  correction_effect: contest_or_change_claim_and_propagate_to_active_use_and_descendants
+  revocation_effect: stop_future_authority_for_named_purpose_and_propagate_limits
+  deletion_is_not: [composting, archival, hiding, account_deactivation]
+  deletion_dispositions: [deleted, anonymized_with_stated_test, retained_under_named_obligation, unreachable, contested]
+  residual_rule: retain_minimum_obligation_metadata_without_deleted_content_or_rejected_interpretation
+  non_coercion_rule: optional_sensitive_use_never_buys_baseline_quality_progress_power_credentials_or_belonging
 
 yellow_brick_road:
   decision_record: outputs/council-phase-a/yellow-brick-road/reconstruction-and-decision.md
@@ -738,6 +826,143 @@ creative_reuse_and_personal_meaning:
     - no_hidden_collection_or_unauthorized_reuse
     - no_ai_reuse_gate_for_core_access_or_quality
 
+asset_sourcing:
+  decision_record: docs/codex/asset-sources-brief.md
+  technique_decision_record: council/passes/6FACE_PASS_projection-paintover1_2026-10-17.md
+  note: >-
+    Written directly into the ontology by a Claude thread on 2026-10-17, not by Codex. The coordinator read
+    Wendell's board steer on ppo-technique, "We can do the brief in Claude", as leave to skip the Codex paste.
+    That is a default reading; Wendell can correct it, and Codex may rework the entry.
+  objects:
+    - AssetSourceRecord
+    - SourceChannel
+    - PipelineStage
+    - Technique
+    - CaptureCamera
+  source_channels:
+    own_work_script:
+      licence: own_work
+      may_ship_in_web_build: true
+      may_appear_in: [renders, previews, shipped_pages]
+      example: procgen.py, cave/build_kit.py, character.py
+    blendkit_cc0:
+      licence: CC0
+      may_ship_in_web_build: true
+      may_appear_in: [renders, previews, shipped_pages]
+      example: Fern 02, Boulder 01 (fetched with license:cc_zero)
+    blendkit_royalty_free:
+      licence: Royalty Free
+      may_ship_in_web_build: false
+      may_appear_in: [renders, previews]
+      example: the first viewer's chair, replaced in version 5
+    cc0_library:
+      licence: CC0
+      may_ship_in_web_build: true
+      may_appear_in: [renders, previews, shipped_pages]
+      example: Poly Haven; ambientCG, Kenney and Quaternius (inferred CC0, check each asset's page)
+    code_library:
+      licence: MIT_or_similar
+      may_ship_in_web_build: true_as_code
+      may_appear_in: [shipped_pages]
+      example: three.js
+    generated_mesh_rebuilt:
+      licence: the generating model's licence for its output (docs/asset-generation.md, licence read of 2026-10-18)
+      may_ship_in_web_build: true_when_both_conditions_hold
+      may_appear_in: [renders, previews, shipped_pages]
+      conditions:
+        - Retopologised and re-skinned to the J4 rig (hem bones included), passing the J4 tests.
+        - A plain, visible credit line says it began as a generated mesh and who reworked it.
+      ruling: board q-af-ship, option B, Wendell, 2026-10-18
+      example: an AssetFurnace (Pixal3D) body, retopologised and bound to the J4 skeleton
+    ai_concept:
+      licence: none_claimed
+      may_ship_in_web_build: false
+      may_appear_in: [reference_for_a_rebuild]
+      example: Wendell's ChatGPT concept pictures
+    owner_reference:
+      licence: owner_own
+      may_ship_in_web_build: false
+      may_appear_in: [reference]
+      example: photos and sketches Wendell supplies
+  channel_rule: A source not on the list is not cleared until it is added here by Wendell's ruling.
+  pipeline_stages:
+    note: Each stage is a DerivationRecord from the stage before.
+    order:
+      - {id: concept}
+      - {id: source, tool: blenderkit_fetch.py}
+      - {id: prepare, tool: prepare_asset.py}
+      - {id: build, tools: [scene.py, procgen.py, from_picture.py, chamber.py]}
+      - {id: detail_and_bake, tools: [detail.py, bake_tiles.py]}
+      - {id: export, output: GLB}
+      - {id: register, output: manifest_row}
+      - {id: present, tools: [build_viewer.py, the_game_page]}
+  techniques:
+    projection_paint_over:
+      council_name_note: The council's word, expected to be cut if a better one turns up. Film calls the method camera-projection matte painting.
+      summary: >-
+        A concept picture is rebuilt as simple 3D blocks, the blocks are rendered from fixed cameras, a painter paints
+        over each render in the concept's style, and a shader or a bake projects each painting back onto the blocks
+        from its camera.
+      requires: [source_channels, pipeline_stages]
+      stages:
+        note: In order; each is a DerivationRecord from the stage before.
+        concept:
+          makes: the target picture
+          allowed_source_channels: [ai_concept, owner_reference, own_drawing]
+        blockout:
+          makes: the scene's own geometry, as it ships
+          allowed_source_channels: [own_work_script, blendkit_cc0, cc0_library]
+        capture:
+          makes: per CaptureCamera, a flat-lit colour render and a depth render
+          allowed_source_channels: [own_work_script]
+        paint_over:
+          makes: a painting at the capture's exact size
+          allowed_source_channels: [a_persons_own_work, own_work_script]
+          preview_only_channel: ai_concept
+        project:
+          makes: a projection shader, or a bake into ordinary textures
+          allowed_source_channels: [own_work_script]
+        live_layers:
+          makes: lights, particles, creatures and players drawn over the painting
+          allowed_source_channels: the channels each asset already uses
+      capture_camera_fields: [id, position, target, field_of_view, aspect, resolution, blockout_commit]
+      camera_rule: Every capture and painting names its camera id.
+      fits: small places seen from a few set views (the Between's hollow is the first)
+      poor_fit:
+        - free-walking spaces such as the caves
+        - whole scenes where the camera leaves the painted views
+      limits:
+        - surfaces seen edge-on stretch
+        - surfaces hidden from every camera have no paint and fall back to their plain material
+        - light is baked into the painting, so moving light is a live layer
+        - separately painted views can disagree at their seams
+      characters: >-
+        Outside the technique. Characters stay on rigged models built in the pipeline; GPT pictures animated by
+        Minimax or similar tools are ai_concept and do not ship.
+      evidence: >-
+        A claim that the build looks like the concept is tested from where a player actually stands and turns, and at
+        least 1 m off each capture camera, never from a still at the capture camera alone.
+      face_interfaces:
+        shaman: one line per view on what it should feel like to be there, and the felt check after
+        architect: the camera records, the projection or bake, the fallback for unseen surfaces
+        challenger: the off-axis test, the seam check, the phone budget
+        regent: an AssetSourceRecord per painting (channel, painter, camera id, blockout commit)
+        diplomat: the painting template and the step that hands it to whoever paints
+        sage: whether the technique fits a given scene, with the dissent kept
+      decision_record: council/passes/6FACE_PASS_projection-paintover1_2026-10-17.md
+  invariants:
+    - shipped_asset_has_source_and_licence
+    - no_restricted_licence_in_extractable_build
+    - ai_concept_is_reference_until_rebuilt
+    - every_shipped_asset_has_a_non_ai_route
+    - projected_painting_follows_source_channels
+  invariant_notes:
+    projected_painting_follows_source_channels: A painting that ships is a person's own work or our own code's, and carries its AssetSourceRecord.
+    every_shipped_asset_has_a_non_ai_route: ties to creative_reuse_and_personal_meaning.equivalent_routes
+  authority:
+    licence_terms: rights_holder (authority.creative_source_use)
+    admitted_channels: Wendell Britt (board c3d-cc0-only)
+
 integral_attention_declaration:
   required_fields:
     - intended_pleasure
@@ -835,6 +1060,8 @@ hard_invariants:
   - not_mine_is_a_valid_scoped_correction
   - stylistic_influence_contribution_generation_curation_acceptance_and_authorship_are_distinct
   - archive_based_adaptation_is_not_required_for_core_access_or_quality
+  - shipped_asset_has_source_and_licence
+  - no_restricted_licence_in_extractable_build
 
 minimum_record:
   required:

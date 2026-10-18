@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-16",
+ "kind": "board-pull",
+ "newest_save": "2026-10-16T23:15:49.249Z",
+ "answers": {
+  "rc-spark": {
+   "kind": "position",
+   "savedAt": "2026-10-16T23:15:09.298Z",
+   "status": "stands",
+   "steer": "History should start when the other person joins. The player who jumped ahead should metabolize their charge or just have it as a personal spirit "
+  },
+  "rc-tend-alone": {
+   "kind": "position",
+   "savedAt": "2026-10-16T23:15:21.923Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rc-stale-neglect": {
+   "kind": "position",
+   "savedAt": "2026-10-16T23:15:29.774Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rc-end-together": {
+   "kind": "position",
+   "savedAt": "2026-10-16T23:15:38.747Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rc-demo-garden": {
+   "kind": "position",
+   "savedAt": "2026-10-16T23:15:49.249Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/rc-spark: Stands (steer: \"History should start when the other person joins. The player who jumped ahead should metabolize their charge or just have it as a personal spirit\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

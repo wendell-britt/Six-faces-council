@@ -1,0 +1,227 @@
+{
+ "positions": [
+  {
+   "id": "bmt-feel",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "What the cave should feel like: being tested by something old in you that has a reason to doubt, and then being let in by it. Accompanied without being watched, tenderness at the centre, and back in your ordinary day at the end with one move you can use. This stands unless you flip it.",
+   "why": "Your note asked what we want to feel. The Shaman named it from the facilitator's four jobs (pace, permission, witness, the return) and the Shaman lesson \"The player leaves with a move they can use.\" Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-burden-trust",
+   "faces": [
+    "architect"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Charge is the voice's burden in this sitting; trust is its relationship with you, kept across sittings. A voice can be heavily charged and trust you, or calm and not trust you yet. This stands unless you flip it.",
+   "why": "Your words: \"To get the voices to trust you and remove their burden is a part of the game.\" Today one number does both jobs (bigmind.js, READY at 3). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-three-moves",
+   "faces": [
+    "shaman",
+    "architect",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Trust is earned by three actions taken from the voice's seat. Can you: do what it fears you can't (sit with what it guards, hold a W.A.V.E., wait through its refusal). Will you: make it one small promise that resting or leaving can keep, which the cave checks when you come back. Are you good: honour its refusal and tell it, in a card or your own words, what you would do for it. No answer is the right card, and how much you say buys nothing. This stands unless you flip it.",
+   "why": "Your \"Can you do x will you do x and do you seem like a good person\" and \"actions the player can take from the perspective of the daemon\". The ontology: relationship needs kept commitments, demonstrated capability and the possibility of refusal; intimate disclosure is not progression currency (QUICKSTART). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-two-roads",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "A voice offers to step aside when its charge is 3 or below, as now (dp-pass-rule), or when it has seen all three kinds of trust. It can still refuse on either road, and its refusal says what it hasn't seen yet (\"I don't know that you can hold it\"). This stands unless you flip it.",
+   "why": "Keeps your charge rule and adds trust as the game you asked for. The Challenger's breakpoint: a voice that must step aside once trust is full is a vending machine, so refusal stays open. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-good-in-words",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Benevolence, \"are you good\", is the voice's own read of you, said in its words and stance. It is never a meter you fill. This stands unless you flip it.",
+   "why": "Your excavation answer (ontology/v0.1/source/aesthetic-source-research-round-1.md, response 6): \"For the game mechanic, leave benevolence out because it is too difficult to gamify responsibly.\" Today's note puts it back in trust; this keeps it in trust without a score. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-never-falls",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Trust never falls. Rest, Not now, silence and \"I don't know\" leave it where it was. A promise not yet kept stays visible as not yet kept, and the voice says so when you come back. This stands unless you flip it.",
+   "why": "bm-decline (declining is a full move) and the ontology's lifecycle grammar (rest, refusal and no-shift may validly end an encounter). The Challenger's option for keeping stakes without punishing rest. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-ontology-local",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Three-part trust is a game-local extension in the cave. The ontology's TrustState stays capability and integrity, a reconciliation note records the difference, and the ontology changes only if you say so. This stands unless you flip it.",
+   "why": "The ontology defines TrustState as \"situated evidence of capability and integrity\" (design-ontology-model-v0.1.md line 95). docs/ontology-in-flows.md: a conflict goes on the board and Claude threads never edit ontology/. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-meeting-spirit",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "When you meet a voice, the game asks how you feel meeting it, with \"no word yet\" as an equal answer. Your answer spawns a spirit that walks the cave with you; a \"no word yet\" spirit is grey until named and plays the same. This stands unless you flip it.",
+   "why": "Your words: \"The game can ask the player how THEY feel about encountering a part and this would spawn a spirit.\" bms-spirits-follow and the grey \"A charge\" route already exist. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-show-spirit",
+   "faces": [
+    "architect",
+    "regent",
+    "challenger"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "You can choose to show one of your spirits to a voice. Showing it counts once as \"can you\": it shows the voice what you have already worked through. How many spirits you carry adds nothing, and spirits never move a voice's charge. This changes half of bms-voices-respond, which said spirits never move trust. This stands unless you flip it.",
+   "why": "Your words: \"the spirits can also show they daemons how resources the players are.\" The Challenger's breakpoint: if every sit-down counted, sitting down would become farming, so only a spirit you deliberately show counts. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-321-offer",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "A full 3-2-1 with any voice is offered at its chamber (\"Talk it through\") and from its seat, in cards, gesture or your own words. It stays skippable and never gates stepping aside. Being it opens only with the voice's permission. This stands unless you flip it.",
+   "why": "Your \"let people do full 321 dialogues with each part\", and your 12 October rule: \"321s are optional and should have an option to skip\". It reuses the cave's typed 3-2-1 (K.talk321). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-hidden-next",
+   "faces": [
+    "challenger",
+    "regent",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "The next voice is hidden until you reach its chamber. The end of each hallway shows the shut mouth breathing, with its light and a sound behind it. Voices you have already met still wait by the wall. This stands unless you flip it.",
+   "why": "Your words: \"giving the daemon too early ruins the magic of this.\" Not now still sits at every first meeting, so hiding the figure costs no safety. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-free-walk",
+   "faces": [
+    "challenger",
+    "regent",
+    "diplomat"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Walk or run freely through every hallway; tap-to-walk stays as a one-touch route. Each chamber threshold still stops you, and nothing reads your speed as meaning anything. This stands unless you flip it.",
+   "why": "Your words: \"open it up to free walking so players can walk or run to the next space\". Free walking already runs in the WAVE room (bars-engine #317). Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-return",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "A closing rite at the mouth that you can skip: thank the voices, take one breath, return to the WAVE room, with one plain line naming the move you practised. This stands unless you flip it.",
+   "why": "A facilitator holds pace, permission, witness and the return; the game holds the first three and nothing yet holds the return. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-ask-again",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "Every visit asks \"May I speak to...\" again, whatever the save holds. This stands unless you flip it.",
+   "why": "QUICKSTART: a ConsentRecord is evidence of a past grant, not permanent proof of present willingness. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  },
+  {
+   "id": "bmt-build-order",
+   "faces": [
+    "regent"
+   ],
+   "pass": "big-mind trust 1",
+   "auto": true,
+   "pos": "The builds run one thread and one pull request each: the hidden next voice with free walking first; then trust; then the full 3-2-1 and the meeting spirit; and the art alongside (the WARP daemon bodies from bars-engine #328 wired in first, then dressing the cave, under a phone load budget, with the trust stances added once the trust build names them). This stands unless you flip it.",
+   "why": "All the cave builds change bigmind.js, so they go in order. The Challenger: no trust stance goes into the models before the trust build names the stances. Source: council/passes/6FACE_PASS_big-mind-trust1_2026-10-16.md"
+  }
+ ],
+ "questions": [
+  {
+   "id": "bmt-trust-shown",
+   "faces": [
+    "diplomat",
+    "architect",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "q": "How should a voice's trust show in the Big Mind cave, now that you want it to feel more like a game? The council recommends A.",
+   "why_you": "You asked for trust \"so that it feels like more of a game\", and in the ontology excavation you ruled \"leave benevolence out because it is too difficult to gamify responsibly.\" Only you know how game-like you mean it, and the answer decides what the trust build draws.",
+   "not_before": "Raised by big-mind trust pass 1, 2026-10-16, on your walkthrough notes of that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Marks for can and will, good in words",
+     "c": "Two marks beside each voice fill as it sees you keep promises and do what it feared you couldn't, each with a plain line of what it saw. Whether you seem good shows only in its words and stance. Game-like, and keeps your benevolence ruling."
+    },
+    {
+     "v": "B",
+     "label": "B. Three marks",
+     "c": "Can, will and good each get a mark. The most game-like and legible. Goodness becomes something you fill, which your earlier ruling ruled out."
+    },
+    {
+     "v": "C",
+     "label": "C. No marks, words and stance only",
+     "c": "The voice says what it has seen and its body changes; the charge stays the only number on screen. Most mysterious, least like a game, and harder to know what to try next."
+    }
+   ]
+  },
+  {
+   "id": "bmt-solo-depth",
+   "faces": [
+    "regent",
+    "challenger",
+    "shaman"
+   ],
+   "pass": "big-mind trust 1",
+   "q": "Once the Big Mind cave reaches players other than you, how far may someone go alone? The council recommends A.",
+   "why_you": "Your note wants it \"played alone but still have the depth\". Your 4 October board answer (bm-safety) said the free daemon experience stops before the Damaged Self and \"the deeper voices belong to a facilitated session.\" Weighing those is about safety and consent, which are yours.",
+   "not_before": "Raised by big-mind trust pass 1, 2026-10-16. Until today the cave had one player, you.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. The whole path, with check-ins",
+     "c": "A lone player can reach the child, behind the existing asks before the Damaged Self and the centre, the crisis line at the mouth, and the new return rite. Fullest depth; bm-safety stays as the coaching site's rule only."
+    },
+    {
+     "v": "B",
+     "label": "B. Alone stops before the Damaged Self",
+     "c": "A lone player meets the first five voices; the Damaged Self and the centre open in a facilitated session. Safest, and it holds bm-safety everywhere; most players never reach the child."
+    },
+    {
+     "v": "C",
+     "label": "C. The whole path after one full visit",
+     "c": "The first visit stops before the Damaged Self; a player who comes back opens the rest. Depth is earned by return; one more rule to build and explain."
+    }
+   ]
+  }
+ ]
+}

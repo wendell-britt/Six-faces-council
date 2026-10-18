@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-17",
+  "pass": "daemon-meeting1",
+  "daemon": "fixer",
+  "face": "architect",
+  "cast": "19 -> 42",
+  "model": null,
+  "tokens": "72985",
+  "report": "2026-10-17-daemon-meeting1-fixer.md",
+  "pairs": [
+    {
+      "n": 1,
+      "claims": [
+        "The Tinker (raccoon, beaver, aye-aye) has states: `TINKER_POSE` is my reach, held and pushed further when dissatisfied and finished when satisfied [1].",
+        "Round 14 put 170 models in the 3D viewer [1].",
+        "The slice ends with \"fight the Fixer\" [1].",
+        "Round 13 and round 14 each sorted 15 of 15 [1]."
+      ],
+      "url": null,
+      "quote": "`TINKER_POSE` and `TINKER_ALLY` are the Fixer's reach, held and pushed further when dissatisfied",
+      "label": "unlabelled"
+    },
+    {
+      "n": 2,
+      "claims": [
+        "The bands 1-4, 5-7 and 8-10, the veil pair and the intake rule already exist [2].",
+        "My drop raises satisfaction once the spirit has been listened to or rested [2].",
+        "The cave reads a named gold state, never a charge number [2].",
+        "Should veiled or flooded be asked before satisfied or dissatisfied, since a veiled spirit's state does not show [2]?"
+      ],
+      "url": null,
+      "quote": "the cave reads his named gold, never the charge number",
+      "label": "unlabelled"
+    },
+    {
+      "n": 3,
+      "claims": [
+        "The Big Mind record says spirits are proof a part has learned what it needs [3].",
+        "Blocker: `bmt-meeting-spirit` is still a draft (bars-engine #361) [3], so the meeting spirit has no urge yet."
+      ],
+      "url": null,
+      "quote": "the spirits you've collected are proof that you've learned what those parts need from you",
+      "label": "unlabelled"
+    },
+    {
+      "n": 4,
+      "claims": [
+        "That fixes the person, which is the consultant's trap [4]."
+      ],
+      "url": null,
+      "quote": "a consultant is not a partner",
+      "label": "unlabelled"
+    },
+    {
+      "n": 5,
+      "claims": [],
+      "url": null,
+      "quote": "pitched far forward over a bent front knee, both long arms out to the problem",
+      "label": "unlabelled"
+    }
+  ]
+}

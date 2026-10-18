@@ -26,10 +26,25 @@ The menu file is the JSON bars-engine exports at /api/tap-the-vein/menu, or copi
 sealed menu" button, or the board's store holds once he pastes it (docs/morning.md). Its goals are also what backlog
 items are bridged to. Without it, every item is marked unaligned and the report says why.
 
+His Lens goals also come on their own, sealed menu or not (`lens-board-reads-goals`, Lenses pass 1, 2026-10-14):
+bars-engine's /api/lenses/goals, read with the same $COUNCIL_MENU_TOKEN, or a saved copy with --goals. The goals
+export wins over the menu's goals list. The board's Morning tab shows them as a Lenses panel, one row per domain,
+with an empty domain shown as empty.
+
+His seed library comes the same way (docs/seed-library.md, `sl-board-reads-library`): bars-engine's
+/api/tap-the-vein/seed-library, the commitments he set aside to draw from later, or a saved copy with --seeds. The
+Morning tab shows it read only and closed, with no count; drawing, keeping resting and letting go happen in
+bars-engine. Seeds come back on the spaced-resurfacing ladder (Wendell overruled `sl-no-pressure`, 2026-10-16:
+"use spaced repetition to get it back into the board"): the export marks at most three a day as resurfaced, and the
+Morning tab shows those open at its top. Each sealed intake item carries the task id bars-engine gave it (`ttv-one-store`), which the board's
+"Set aside" button saves as seeds/<taskId>.
+
     python3 council/morning.py --fetch 2026-10-10        # fetch the sealed menu itself ($COUNCIL_MENU_TOKEN), then report
     python3 council/morning.py --menu <file>             # report: categories, counts, bridges; writes nothing
     python3 council/morning.py --menu <file> --write     # also writes `morning` into board/board_data.json and
                                                          # rebuilds the page; commit on main and republish
+    python3 council/morning.py --goals <file>            # read Lens goals from a saved /api/lenses/goals export
+    python3 council/morning.py --seeds <file>            # read the seed library from a saved export
     python3 council/morning.py --json                    # the gathered morning as JSON, for checking
 """
 import argparse
@@ -55,11 +70,21 @@ import due  # noqa: E402
 CATEGORIES = {
     "menu": ("From your free write", "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw)."),
     "board": ("Waiting on you on the board", "Questions with no answer yet, and new positions that stand unless you flip them."),
+    "steps": ("Steps due today", "Your steps on the Your steps tab that are due today or overdue and not done."),
     "due": ("Deferred and due", "Items you deferred that come back within a week."),
     "handoff": ("Open in the handoff", "Work a thread left open in council/HANDOFF.md."),
     "prs": ("Open pull requests", "Pull requests open in the council, bars-engine and the Game Master's guide."),
     "backlog": ("bars-engine backlog", "Rows marked Ready in bars-engine's BACKLOG.md."),
 }
+
+# The five Lens domains in bars-engine's order (src/lib/lenses/domains.ts), for when only a menu's goals were read.
+LENS_DOMAINS = [
+    ("relationships", "Relationships", "Who are you with? What is the quality of contact? Write toward what you actually want."),
+    ("career", "Career", "What are you making, practicing, selling, serving, or becoming known for?"),
+    ("money", "Money", "What flow of income, stability, generosity, or receiving would change your life?"),
+    ("health", "Health", "What body, energy, rhythm, and practice would carry you?"),
+    ("allyship", "Allyship", "Who is better off because you showed up?"),
+]
 
 # Smaller time scales under a goal, for a suggested new goal (the side quest that merges into the main quest).
 SMALLER = {"year": "quarter", "quarter": "month", "month": "week", "week": "week"}
@@ -125,34 +150,87 @@ def from_menu(menu):
     for it in menu.get("items", []):
         g = it.get("goal") if it.get("status") == "bridged" else None
         items.append({"id": f"menu-{it.get('key') or len(items)}", "text": short(it.get("text"), 240),
-                      "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task"}.get(it.get("source"), "")})
+                      "named": (g or {}).get("id"), "note": (g or {}).get("trace") or {"kept_line": "Kept line", "task": "Task", "can_do": "Can do today"}.get(it.get("source"), ""),
+                      **({"taskId": it["taskId"]} if it.get("taskId") else {})})
     return items
 
 
 MENU_URL = "https://bars-engine.vercel.app/api/tap-the-vein/menu"
+GOALS_URL = "https://bars-engine.vercel.app/api/lenses/goals"
+SEEDS_URL = "https://bars-engine.vercel.app/api/tap-the-vein/seed-library"
 
 
-def fetch_menu(date, out):
-    """Fetch the sealed menu with $COUNCIL_MENU_TOKEN (mm-menu-transport: the council fetches it) and save it to out.
-    Returns the menu, or None with the reason printed. The token never reaches the output or the URL."""
+def fetch_json(url, what, out=None):
+    """GET a council export with $COUNCIL_MENU_TOKEN (mm-menu-transport: the council fetches it), saving it to out.
+    Returns (doc, None), or (None, reason). The token never reaches the output or the URL."""
+    # With no token in the session, the cloud environment's proxy adds it for bars-engine.vercel.app.
     token = os.environ.get("COUNCIL_MENU_TOKEN", "").strip()
-    if not token:
-        print("fetch: COUNCIL_MENU_TOKEN is not set in this session's cloud environment (docs/morning.md)")
-        return None
-    req = urllib.request.Request(f"{MENU_URL}?date={date}", headers={"Authorization": f"Bearer {token}"})
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"} if token else {})
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             text = r.read().decode("utf-8")
     except urllib.error.HTTPError as e:
-        print({401: "fetch: the key was refused (401); the board and Vercel hold different keys",
-               404: f"fetch: no menu sealed for {date} (404)",
-               503: "fetch: COUNCIL_MENU_TOKEN is not set in Vercel (503)"}.get(e.code, f"fetch: HTTP {e.code}"))
-        return None
+        return None, {401: "the key was refused (401); set COUNCIL_MENU_TOKEN or the proxy's key to the one in Vercel",
+                      404: f"no {what} (404)",
+                      503: "COUNCIL_MENU_TOKEN is not set in Vercel (503)"}.get(e.code, f"HTTP {e.code}")
     except (urllib.error.URLError, OSError) as e:
-        print(f"fetch: bars-engine.vercel.app is out of reach ({e}); allow it in the cloud environment's network access")
-        return None
-    Path(out).write_text(text, encoding="utf-8")
-    return json.loads(text)
+        return None, f"bars-engine.vercel.app is out of reach ({e}); allow it in the cloud environment's network access"
+    if out:
+        Path(out).write_text(text, encoding="utf-8")
+    return json.loads(text), None
+
+
+def fetch_menu(date, out):
+    """Fetch the sealed menu and save it to out. Returns the menu, or None with the reason printed."""
+    menu, why = fetch_json(f"{MENU_URL}?date={date}", f"menu sealed for {date}", out)
+    if why:
+        print(f"fetch: {why}")
+    return menu
+
+
+def fetch_goals():
+    """His active Lens goals from /api/lenses/goals (lens-board-reads-goals). Returns (export, None) or (None, reason)."""
+    return fetch_json(GOALS_URL, "Lens goals export")
+
+
+def fetch_seeds():
+    """His seed library from /api/tap-the-vein/seed-library (sl-board-reads-library). Returns (export, None) or (None, reason)."""
+    return fetch_json(SEEDS_URL, "seed library export")
+
+
+def seed_library(export, note=None):
+    """The seed library panel: each resting seed's text, the day it was named and the day it was set aside, newest set
+    aside first, read only. `back` lists the seeds bars-engine resurfaced today on its spaced ladder
+    (docs/seed-library.md, `sl-resurface-ladder`), in the order they came back; an export from before the ladder has
+    none."""
+    seeds, back = [], []
+    for s in (export or {}).get("seeds", []):
+        if not s.get("id"):
+            continue
+        seed = {"id": s["id"], "text": short(s.get("text"), 240), "fromDay": s.get("fromDay"),
+                "restedOn": (s.get("restDay") or s.get("restedAt") or "")[:10] or None}
+        if s.get("dueDay"):
+            seed["dueDay"] = s["dueDay"]
+            seed["rung"] = s.get("rung", 0)
+        seeds.append(seed)
+        if s.get("resurfaced"):
+            back.append(seed)
+    back.sort(key=lambda x: (x.get("dueDay") or "", x.get("restedOn") or "", x["id"]))
+    out = {"seeds": seeds, "back": [x["id"] for x in back], "read": export is not None}
+    if note:
+        out["note"] = note
+    return out
+
+
+def lenses(goals, note=None):
+    """The Lenses panel: every domain in order with its active goals, empty domains kept (lens-board-reads-goals)."""
+    out = {"domains": [{"key": k, "label": label, "prompt": prompt,
+                        "goals": [{f: g.get(f) for f in ("id", "title", "cadence", "parentId")}
+                                  for g in goals if g.get("domain") == k]}
+                       for k, label, prompt in LENS_DOMAINS]}
+    if note:
+        out["note"] = note
+    return out
 
 
 def menu_goals(menu):
@@ -200,6 +278,25 @@ def from_due(data, ahead=7):
         title = row.get("q") or row.get("pos") or id_
         items.append({"id": f"due-{id_}", "text": short(title, 240), "ref": id_, "link": BOARD_URL + "#resolved",
                       "note": f"due {until[:10]}" if until else "when you ask"})
+    return items
+
+
+def from_steps(store, today=None):
+    """Undone steps due today or earlier, from the board store's `steps` collection saved to a folder.
+
+    Steps live only in the store, never in board_data.json, so until 2026-10-13 a step due today never reached the
+    morning menu (Wendell: an item due today should have been picked up). A retired step is skipped."""
+    if not store:
+        return []
+    today = today or dt.date.today().isoformat()
+    items = []
+    for f in sorted(Path(store).glob("*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        if d.get("done") or d.get("retired") or not d.get("due") or d["due"] > today:
+            continue
+        items.append({"id": f"step-{f.stem}", "text": short(d.get("do", f.stem), 240), "ref": f.stem,
+                      "link": BOARD_URL + "#steps",
+                      "note": f"step, due {d['due']}" + (", optional" if d.get("optional") else "")})
     return items
 
 
@@ -275,34 +372,50 @@ def slug(s):
 
 # ---------- gather ----------
 
-def gather(menu, prs_file=None, bars=None, data=None):
+def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=None, goals_note=None,
+           seeds_export=None, seeds_note=None):
     data = data if data is not None else json.loads(BOARD.read_text(encoding="utf-8"))
-    goals = menu_goals(menu) if menu else []
+    if goals_export is not None:
+        goals = [g for g in goals_export.get("goals", []) if g.get("status", "active") == "active"]
+    else:
+        goals = menu_goals(menu) if menu else []
+        goals_note = goals_note or ("read from the sealed menu" if menu else "no Lens goals read this morning")
     notes = {}
-    raw = {"menu": from_menu(menu) if menu else [], "board": from_board(data), "due": from_due(data),
+    raw = {"menu": from_menu(menu) if menu else [], "board": from_board(data), "steps": from_steps(steps), "due": from_due(data),
            "handoff": from_handoff()}
     if not menu:
         notes["menu"] = "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
     raw["prs"], notes["prs"] = from_prs(prs_file)
     raw["backlog"], notes["backlog"] = from_backlog(bars or ROOT.parent / "bars-engine")
+    intake = data.get("intake") or {}
+    written = ({it["id"]: it["bridge"] for it in intake.get("items", [])}
+               if menu and intake.get("date") == menu.get("sessionDate") else {})
     cats = []
     for key, (title, blurb) in CATEGORIES.items():
         items = raw[key]
         for it in items:
             it["bridge"] = bridge(it["text"], goals, it.pop("named", None))
+            if key == "menu" and it["id"] in written:  # the board read's written reason wins (lens-intake-align)
+                it["bridge"] = written[it["id"]]
         # mm-menu-shape: aligned first, unaligned last, never hidden
-        items.sort(key=lambda it: ["named", "existing", "new", "unaligned"].index(it["bridge"]["kind"]))
+        items.sort(key=lambda it: ["goal", "named", "row", "pitch", "existing", "new", "unaligned"].index(it["bridge"]["kind"]))
         cats.append({"key": key, "title": title, "blurb": blurb, "items": items,
                      **({"note": notes[key]} if notes.get(key) else {})})
     return {"date": (menu or {}).get("sessionDate") or dt.date.today().isoformat(),
             "gathered_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "sealed": (menu or {}).get("sessionDate"),  # ttv-first: the board opens on Tap the Vein until today's is sealed
             "pick_limit": 7,
             "goals": [{k: g.get(k) for k in ("id", "title", "domain", "cadence", "parentId")} for g in goals],
+            "lenses": lenses(goals, goals_note),
+            "seeds": seed_library(seeds_export, seeds_note or (None if seeds_export is not None else "seed library not read")),
             "categories": cats}
 
 
 def report(m):
-    print(f"morning {m['date']}: {len(m['goals'])} Lens goals read")
+    print(f"morning {m['date']}: {len(m['goals'])} Lens goals read" + (f" [{m['lenses']['note']}]" if m["lenses"].get("note") else ""))
+    print("  lenses   " + ", ".join(f"{d['key']} {len(d['goals'])}" for d in m["lenses"]["domains"]))
+    sl = m["seeds"]
+    print(f"  seeds    {len(sl['seeds'])} resting, {len(sl['back'])} back today" + (f"  [{sl['note']}]" if sl.get("note") else ""))
     for c in m["categories"]:
         kinds = {}
         for it in c["items"]:
@@ -316,7 +429,10 @@ def main(argv=None):
     ap.add_argument("--menu", help="the Tap the Vein export saved to a file")
     ap.add_argument("--fetch", metavar="DATE", help="fetch the sealed menu for DATE (YYYY-MM-DD) with $COUNCIL_MENU_TOKEN")
     ap.add_argument("--out", default="morning-menu.json", help="where --fetch saves the menu (default ./morning-menu.json)")
+    ap.add_argument("--goals", help="a saved /api/lenses/goals export; default fetches it with $COUNCIL_MENU_TOKEN")
+    ap.add_argument("--seeds", help="a saved /api/tap-the-vein/seed-library export; default fetches it with $COUNCIL_MENU_TOKEN")
     ap.add_argument("--prs", help="open pull requests saved to a file: [{repo, number, title, url, draft}]")
+    ap.add_argument("--steps", help="the board store's steps collection saved to a folder (ArtifactData out_dir/steps)")
     ap.add_argument("--bars", help="a bars-engine checkout (default ../bars-engine)")
     ap.add_argument("--write", action="store_true", help="write `morning` into board/board_data.json and rebuild")
     ap.add_argument("--json", action="store_true", help="print the gathered morning as JSON")
@@ -325,7 +441,17 @@ def main(argv=None):
     if menu and "rawEntry" in json.dumps(menu):
         sys.exit("the menu file carries a rawEntry; only kept lines may leave Tap the Vein (mm-raw)")
     data = json.loads(BOARD.read_text(encoding="utf-8"))
-    m = gather(menu, a.prs, a.bars, data)
+    if a.goals:
+        goals_export, goals_note = json.loads(Path(a.goals).read_text(encoding="utf-8")), None
+    else:
+        goals_export, goals_note = fetch_goals()
+        goals_note = goals_note and f"goals export not read: {goals_note}"
+    if a.seeds:
+        seeds_export, seeds_note = json.loads(Path(a.seeds).read_text(encoding="utf-8")), None
+    else:
+        seeds_export, seeds_note = fetch_seeds()
+        seeds_note = seeds_note and f"seed library not read: {seeds_note}"
+    m = gather(menu, a.prs, a.bars, data, a.steps, goals_export, goals_note, seeds_export, seeds_note)
     if a.json:
         print(json.dumps(m, ensure_ascii=False, indent=1))
         return

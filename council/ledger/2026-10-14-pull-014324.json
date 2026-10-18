@@ -1,0 +1,58 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T01:43:24.349Z",
+ "answers": {
+  "sg-body-from": {
+   "kind": "question",
+   "choice": "urge",
+   "savedAt": "2026-10-14T01:38:35.501Z",
+   "steer": ""
+  },
+  "sg-look-layers": {
+   "kind": "position",
+   "savedAt": "2026-10-14T01:38:55.003Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sg-grows-into-shape": {
+   "kind": "position",
+   "savedAt": "2026-10-14T01:42:03.481Z",
+   "status": "overrule",
+   "steer": "I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe "
+  },
+  "sg-breed-names": {
+   "kind": "position",
+   "savedAt": "2026-10-14T01:42:15.426Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sg-assets-modular": {
+   "kind": "position",
+   "savedAt": "2026-10-14T01:42:30.778Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sg-shape-choice": {
+   "kind": "position",
+   "savedAt": "2026-10-14T01:43:16.441Z",
+   "status": "stands",
+   "steer": "Yes I think this connects. Many spirits I think will de defeated and drop loot and this loot can be offered to spirits the players ally with "
+  },
+  "nation-elements": {
+   "kind": "position",
+   "savedAt": "2026-10-14T01:43:24.349Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/sg-body-from: The urge picks the family, you pick its animal",
+  "positions/sg-grows-into-shape: Overruled (steer: \"I think the outline idea is going to be a bit too hard to make sense of. Something more like a ghost or a geometric version. Maybe more holographic. Maybe even starting as a gas’s that solidifying into a core which then makes for a holographic ally that’s being projected into the world. Kind of like Steven Universe\")",
+  "positions/sg-shape-choice: Stands (steer: \"Yes I think this connects. Many spirits I think will de defeated and drop loot and this loot can be offered to spirits the players ally with\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

@@ -1,0 +1,107 @@
+{
+ "date": "2026-10-15",
+ "kind": "board-pull",
+ "newest_save": "2026-10-15T19:53:57.580Z",
+ "answers": {
+  "menu-task:cmv9yete9000b13u0tih30ze6": {
+   "kind": "pick",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "category": "menu",
+   "date": "2026-10-15",
+   "link": "",
+   "ref": "",
+   "savedAt": "2026-10-15T19:52:28.725Z",
+   "text": "Reach out to Marina"
+  },
+  "menu-task:cmv9yex46001213u0maguuehe": {
+   "kind": "pick",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "category": "menu",
+   "date": "2026-10-15",
+   "link": "",
+   "ref": "",
+   "savedAt": "2026-10-15T19:52:33.075Z",
+   "text": "Make a Facebook post for my coaching site"
+  },
+  "menu-task:cmv9yeuah000k13u0k6cbyoyq": {
+   "kind": "pick",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "category": "menu",
+   "date": "2026-10-15",
+   "link": "",
+   "ref": "",
+   "savedAt": "2026-10-15T19:52:35.791Z",
+   "text": "Start a newsletter"
+  },
+  "menu-task:cmv9yesei000213u0weuoya6f": {
+   "kind": "pick",
+   "bridge": {
+    "kind": "unaligned",
+    "why": "no goal chosen at seal"
+   },
+   "category": "menu",
+   "date": "2026-10-15",
+   "link": "",
+   "ref": "",
+   "savedAt": "2026-10-15T19:52:44.380Z",
+   "text": "Respond to Madi"
+  },
+  "np-age-band": {
+   "kind": "question",
+   "choice": "high",
+   "savedAt": "2026-10-15T19:53:03.224Z",
+   "steer": ""
+  },
+  "np-mentorschip-shape": {
+   "kind": "question",
+   "choice": "after-talk",
+   "savedAt": "2026-10-15T19:53:27.049Z",
+   "steer": ""
+  },
+  "np-kids-first": {
+   "kind": "position",
+   "savedAt": "2026-10-15T19:53:35.334Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "np-red-door-precedent": {
+   "kind": "position",
+   "savedAt": "2026-10-15T19:53:40.437Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "np-mentorschip-both-ways": {
+   "kind": "position",
+   "savedAt": "2026-10-15T19:53:48.712Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "np-kids-content-review": {
+   "kind": "position",
+   "savedAt": "2026-10-15T19:53:57.580Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "picks/menu-task:cmv9yete9000b13u0tih30ze6: start a thread: \"Reach out to Marina\" (goal: unaligned)",
+  "picks/menu-task:cmv9yex46001213u0maguuehe: start a thread: \"Make a Facebook post for my coaching site\" (goal: unaligned)",
+  "picks/menu-task:cmv9yeuah000k13u0k6cbyoyq: start a thread: \"Start a newsletter\" (goal: unaligned)",
+  "picks/menu-task:cmv9yesei000213u0weuoya6f: start a thread: \"Respond to Madi\" (goal: unaligned)",
+  "questions/np-age-band: High school, about 14 to 18",
+  "questions/np-mentorschip-shape: Decide after the talk"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

@@ -1,0 +1,76 @@
+{
+ "date": "2026-10-17",
+ "kind": "board-pull",
+ "newest_save": "2026-10-17T20:05:44.415Z",
+ "answers": {
+  "q-slice-referee-clear": {
+   "kind": "question",
+   "choice": "B",
+   "savedAt": "2026-10-17T20:03:32.310Z",
+   "steer": "The roleplaying referee itself operates on multiple levels depending on the system.\n\nBattle mechanics and non battle skill mechanics. In this case the uncertainty would be around solving story encounters and faction relationships "
+  },
+  "pos-slice-bridge": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:03:51.411Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-slice-chart-stats": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:04:12.981Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "pos-slice-feasibility": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:04:25.200Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cd-panel-t1-eye": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:04:34.735Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cd-panel-cost": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:04:43.370Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ppo-paint-channel": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:05:06.090Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ppo-offaxis-first": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:05:12.706Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ppo-technique": {
+   "kind": "position",
+   "savedAt": "2026-10-17T20:05:27.995Z",
+   "status": "stands",
+   "steer": "We can do the brief in Claude "
+  },
+  "ppo-who-paints": {
+   "kind": "question",
+   "choice": "code-paints",
+   "savedAt": "2026-10-17T20:05:44.415Z",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/q-slice-referee-clear: Not yet: explain more (say what's unclear in the steer box) (steer: \"The roleplaying referee itself operates on multiple levels depending on the system.\n\nBattle mechanics and non battle skill mechanics. In this case the uncertainty would be around solving story encounters and faction relationships\")",
+  "positions/ppo-technique: Stands (steer: \"We can do the brief in Claude\")",
+  "questions/ppo-who-paints: Our code paints them"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

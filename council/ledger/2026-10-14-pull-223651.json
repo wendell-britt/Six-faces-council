@@ -1,0 +1,65 @@
+{
+ "date": "2026-10-14",
+ "kind": "board-pull",
+ "newest_save": "2026-10-14T22:36:51.232Z",
+ "answers": {
+  "pod-pragya-guest": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:35:14.949Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-podcast-launch"
+  },
+  "jev-teaching-pile": {
+   "kind": "question",
+   "choice": "30",
+   "savedAt": "2026-10-14T22:35:47.039Z",
+   "steer": ""
+  },
+  "ps-polarity-poles": {
+   "kind": "question",
+   "choice": "two",
+   "savedAt": "2026-10-14T22:36:13.291Z",
+   "steer": ""
+  },
+  "ps-trigger": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:36:23.526Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ps-four-kinds": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:36:36.263Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ps-practice": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:36:44.263Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ps-numbness-link": {
+   "kind": "position",
+   "savedAt": "2026-10-14T22:36:51.232Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-look-04",
+   "at": "2026-10-14T21:15:00Z",
+   "what": "ticked",
+   "do": "Look at round 4 of the clothing (J5). You had three notes on round 3, and a fourth after: the slit should separate and close as the leg moves. First, the slits. Near each slit, the front edge now follows its own side's thigh and the back edge follows the leg behind. A slit opens as its leg strides forward and closes as that leg passes back under the body. j5r4-slit-side-walk.jpg shows this from the figure's left side at eight points of one walk cycle. Second, the figures without robes were wearing what looked like a short robe. Their painted under-layer is now a plain short-sleeved top to the waist with a round neck, over the tied trousers. Third, the hems looked painted on. The hem and the cuffs are now turned back inside the robe, round a 6 mm fold and 3 cm up, so the edge has a body of its own. The hem is also stiffer in the cloth solver, as a sewn hem is. j5r4-set-walk.jpg shows the average dusk figure at four points of the walk, from the front, side and back. j5r4-garments-sheet.jpg shows each garment alone on all nine figures, with the plain tops in the middle and right columns. j5r4-set-sheet.jpg shows the whole set on all nine. Under this step, note 'yes' or what is still wrong."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "questions/jev-teaching-pile: 30 practice rows",
+  "questions/ps-polarity-poles: Hidden and flooding"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

@@ -1,6 +1,6 @@
 package:
   id: wendell-design-ontology
-  version: 0.1.0-alpha.1
+  version: 0.1.0-alpha.2
   status: provisional
   owner: Wendell Britt
   home: ontology/v0.1
@@ -8,6 +8,12 @@ package:
     Guide the Six Faces council while it designs and builds games, preserving
     Wendell's aesthetics, player authorship, integral attention, evidence
     boundaries, and provenance.
+  session_discipline:
+    unit: one_bounded_task_or_goal
+    start: fresh_session
+    finish: verify_record_and_stop
+    scope_change: start_new_session
+    compaction_policy: do_not_design_for_compaction
 
 load_profiles:
   default:
@@ -49,6 +55,24 @@ current_sources:
   process_log:
     path: ontology/v0.1/source/design-ontology-process-log.md
     status: active_history
+  release_record:
+    path: ontology/v0.1/RELEASE.md
+    status: candidate_gate_record
+  asset_pipeline:
+    path: docs/codex/asset-sources-brief.md
+    status: implementation_record
+    note: >-
+      The record itself is bars-engine tools/blender-cloud/README.md (another repo, so the path here is the brief that
+      points to it). Bars-engine test G6 (tools/blender-cloud/tests/test_offline.py) and build_viewer.py enforce
+      shipped_asset_has_source_and_licence and no_restricted_licence_in_extractable_build.
+  daemon_questions:
+    path: council/daemons/questions.yaml
+    status: owner_statement
+    note: >-
+      Wendell's questions for each of the seven daemons and the Player
+      (2026-10-14), in his exact words, on one shared skeleton: what the
+      daemon works on, who it works for, how that serves its boss, and what
+      happens without it. The daemons themselves stay in council/daemons/daemons.yaml.
 
 binding_decisions:
   constitutional_succession:
@@ -75,6 +99,8 @@ binding_decisions:
     path: ontology/v0.1/source/council-phase-a/composting/reconstruction-and-decision.md
   creative_reuse_meaning:
     path: ontology/v0.1/source/council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md
+  privacy_consent_authority:
+    path: ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
 
 historical_material:
   root: ontology/v0.1/source/council-phase-a
@@ -85,6 +111,10 @@ historical_material:
 
 authority:
   personal_inner_meaning: represented_player
+  personal_data_and_person_specific_inference: represented_person_with_other_affected_authorities_preserved
+  creative_source_use: source_author_or_rights_holder_within_actual_authority
+  relational_or_multiplayer_material: intersection_of_affected_participant_permissions
+  official_council_record: ontology_owner_or_council_with_contributor_restrictions_preserved
   ontology_constitution_and_personal_aesthetic: Wendell Britt
   authored_game_routing: designer_or_game_master_within_scope
   another_agents_consent_help_or_harm: affected_agent
@@ -104,7 +134,21 @@ unresolved_registry:
     An unresolved item may remain in alpha. State the provisional behavior and
     do not invent Wendell's answer. Use the council reach test before escalation.
 
+council_agents:
+  contract: ontology/v0.1/FACE_OUTPUT_CONTRACT.md
+  faces:
+    shaman: .claude/agents/shaman.md
+    architect: .claude/agents/architect.md
+    challenger: .claude/agents/challenger.md
+    regent: .claude/agents/regent.md
+    diplomat: .claude/agents/diplomat.md
+    sage: .claude/agents/sage.md
+
 validation:
   command: python3 -m unittest tests.test_design_ontology
+  package_command: python3 ontology/tools/validate_package.py
+  clean_council_command: python3 ontology/tools/validate_clean_councils.py
+  adversarial_fixtures: tests/fixtures/ontology_agents/adversarial.yaml
+  clean_council_evidence: council/passes/ontology-alpha-clean-councils-2026-10-15.json
   required_skill: .claude/skills/design-ontology/SKILL.md
   council_integration: .claude/skills/six-faces/SKILL.md
