@@ -69,6 +69,7 @@ projects more effectively between that and Jev we can save a lot of tokens"
   context carried forward (65% rereading, 25% writing it to cache), up from 84% on 4 October, and threads that
   ran past 200,000 tokens were 63 of 107 and $504 of $628 (`/mnt/project-files/usage-audit/audit-2026-10-18.md`).
   An art review gets one thread per round.
+  A PostToolUse hook (`.claude/settings.json`, `council/tools/context_size.py --hook`) now adds the handoff order to every tool result once the context passes the line, so the check no longer depends on remembering it (2026-10-18; the 63 of 107 threads past the old line ran as few long turns, median 2 replies, with no user message to prompt a stop).
 - Every call rereads everything above it, so a call saved is a reread saved: batch independent tool calls into one
   step, and send work that reads many files, images or logs (render checks, searches, CI logs) to an Agent worker
   that returns a short verdict, so the reading never enters the thread.
