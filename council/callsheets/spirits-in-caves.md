@@ -10,11 +10,21 @@ showcase; spirits saved between runs and cultivated; a loadout chosen in the int
 run stops, a run clip) belong to the thread changing the player figure's animation.
 
 ## Built
-- Nothing yet.
+- Slice 1, the family cloud (2026-10-19, thread "The family cloud"): bars-engine #387. `cave/spirit-forms.js` ports the
+  spirit page's `*_gas` functions to three.js points (150 motes, two sizes, every third darker, coloured by its element,
+  turned to the camera; trail, reach and fist tipped toward the viewer so the loops, fingers and knuckles show), inlined
+  before `cave.js` on both pages and on the kit as `spiritForms`. `buildSpirit(THREE, name, hex, form)` wears the gas when
+  `form.family` is set; otherwise the orb. `felt()` gives the meeting spirit `family: V.id, stage: "gas"` and streams its
+  motes from the voice's body over 1.8 s; reduced motion holds them still and fades in. Family and stage are kept in
+  `voices[id].spirit` and `save.spirits`; old saves take the voice's id. The Protector's Shellback gas on the page is the
+  plain cloud, so the Protector, Damaged Self and Emotional Body look alike for now. Checks: bigmind-test 524 of 524
+  (new: family protector, stage gas, 150 motes and no orb, motes out between daemon and spirit at a quarter of the birth,
+  within 0.6 of the spirit after), cave-test 387 of 387. Not done: the approach check-in's spirit (`approachShow`) and the
+  Cave of Lessons' sitting spirits stay orbs; no look on a phone; T1 waits on his play.
 
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
-1. **The family cloud** (`sic-family-cloud`). In `bigmind.js` `felt()` the new spirit gets `family: V.id`; it is saved in
+1. ~~**The family cloud**~~ built, bars-engine #387 (`sic-family-cloud`). In `bigmind.js` `felt()` the new spirit gets `family: V.id`; it is saved in
    `voices[id].spirit` and `save.spirits`. A new `cave/spirit-forms.js` (exported on the kit beside `buildSpirit`) draws the gas
    as motes in three.js in the element's colour, shaped per family as the spirit page's gas is (Holdfast a clenched fist, Hedge a
    question mark; read the page's family notes in spirit-generator.md, rounds 1 to 20); Damaged Self and Emotional Body get a
