@@ -4,6 +4,17 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-19, thread "work today or defer": the ttv-bars 1 build is done on sample data. `council/bar_read.py` checks one
+read per sealed line against every tb-* rule and writes it beside the line's alignment in `board_data.json` `intake`;
+the Morning tab shows each read as a face-off card under the Tap the Vein box ("The council's read", work-today cards
+first). bars-engine's history export now carries each task's `blockedAt` and `notes` count (johnair01/bars-engine #404);
+the Six-faces-council pull request on branch claude/project-thread-a871l9 holds the script, the card and
+`tests/test_bar_read.py` (sample: `tests/fixtures/bar-read/`, five lines, five checked reads). NEXT, a Sonnet board read
+once the menu key works (morning-menu `menu-key-match`): fetch the menu and history, write reads.json for the real sealed
+lines, run `python3 council/bar_read.py <menu> --reads reads.json --history <history> --write`, commit on main and
+republish. Tests F1 (10-26, he takes at least half the calls) and F2 (10-31, council work wins at most four in five) run
+from there. Not built: a tap on the card itself (the tap stays in Tap the Vein, tb-call-is-advice).
+
 2026-10-19, thread "Tap the Vein on the board": one UI is done. bars-engine #403 (/tap-the-vein/embed) merged; Six-faces-council
 #312 frames it on /board/council and merges after. Position `ttv-one-ui` is on the board. Pass ttv-bars 1
 (`council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md`, ledger `2026-10-19-ttv-bars1.json`) answered his second ask with six
