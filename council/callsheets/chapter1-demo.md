@@ -51,6 +51,16 @@ skills and character and NPC generation based on player blockages."
    Kickstarter ask (5 s). Captions on screen, no voice. Not started: it waits on his go, since a public video is
    outward-facing.
 
+## Revisit once the demo ships
+- Game engine (Wendell, 2026-10-19: "Ok this tracks let’s make sure this is documented as needing to be revisited
+  after chapter 1"). The cave stays on three.js at bars-engine.vercel.app through the demo, because of the shared
+  sign-in and saves, the shared-clock walkers that need no game server, and the phone link with nothing to install.
+  After the demo, weigh Godot (MIT, text scene files, headless, web export) against what three.js makes us hand-build:
+  cloth (J5 robe, thirteen rounds), daemon animation graphs, physics. First move is a Godot web-export probe of one cave chamber,
+  measuring load time and size on a phone. Unity is out: heavy web builds, a GUI editor and a licence.
+- Yuka (toolbox `yuka`) and the vendored game-AI skills (bars-engine #396) come up in the same review if the first
+  sparring encounter has not settled them.
+
 ## Waiting on
 - Nothing from Wendell. `ch1-where` answered 2026-10-14: Sprout ending in the cave, 2D or 3D character, all three loops.
 - Positions `ch1-source`, `ch1-pipeline`, `ch1-deck-hand`, `ch1-npc-from-blockage` stand unless he flips them.
