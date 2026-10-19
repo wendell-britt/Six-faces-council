@@ -1,0 +1,36 @@
+{
+ "date": "2026-10-19",
+ "kind": "board-pull",
+ "newest_save": "2026-10-19T23:35:34.009Z",
+ "answers": {
+  "mt-ke-by-start": {
+   "kind": "position",
+   "savedAt": "2026-10-19T23:35:19.125Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mt-sheng-up-one": {
+   "kind": "position",
+   "savedAt": "2026-10-19T23:35:24.308Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mt-transcend-two-steps": {
+   "kind": "position",
+   "savedAt": "2026-10-19T23:35:27.292Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mt-face-moves-seeded": {
+   "kind": "position",
+   "savedAt": "2026-10-19T23:35:34.009Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
