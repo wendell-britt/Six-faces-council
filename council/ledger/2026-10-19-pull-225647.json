@@ -1,0 +1,101 @@
+{
+ "date": "2026-10-19",
+ "kind": "board-pull",
+ "newest_save": "2026-10-19T22:56:47.692Z",
+ "answers": {
+  "iv-fuel-economy": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:53:28.530Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-ally-part-once": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:53:35.319Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-element-until-audit": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:53:45.455Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-demo-ungated": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:53:50.126Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mn-basic-moves-apart": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:54:00.120Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-bonus-as-fuel": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:54:03.499Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mn-checkin-fix": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:54:19.124Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mn-gold-names": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:54:33.776Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mn-root-fight-reply": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:54:56.294Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mn-ember-both": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:54:58.410Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "mn-transcend-plus-two": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:55:23.893Z",
+   "status": "overrule",
+   "steer": "yes I do think these should be separate. The 2 steps makes the most sense"
+  },
+  "mn-q-face-daemon": {
+   "kind": "question",
+   "choice": "own",
+   "savedAt": "2026-10-19T22:56:09.509Z",
+   "steer": "Daemons have habits and their own moves, but I don't think they have a home channel"
+  },
+  "mn-q-ke-state": {
+   "kind": "question",
+   "choice": "depends",
+   "savedAt": "2026-10-19T22:56:29.625Z",
+   "steer": ""
+  },
+  "mn-q-what-move-is": {
+   "kind": "question",
+   "choice": "both",
+   "savedAt": "2026-10-19T22:56:47.692Z",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/mn-transcend-plus-two: Overruled (steer: \"yes I do think these should be separate. The 2 steps makes the most sense\")",
+  "questions/mn-q-face-daemon: Each face and daemon owns its moves (steer: \"Daemons have habits and their own moves, but I don't think they have a home channel\")",
+  "questions/mn-q-ke-state: Depends on where you start",
+  "questions/mn-q-what-move-is: Both, kept as two layers"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
