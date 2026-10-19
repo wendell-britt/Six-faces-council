@@ -4,6 +4,20 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-19, thread "Tap the Vein on the board": one UI is done. bars-engine #403 (/tap-the-vein/embed) merged; Six-faces-council
+#312 frames it on /board/council and merges after. Position `ttv-one-ui` is on the board. Pass ttv-bars 1
+(`council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md`, ledger `2026-10-19-ttv-bars1.json`) answered his second ask with six
+positions and no question: `tb-sealed-is-bar` (sealing is the keeping; updates `ttv-task-not-bar`), `tb-face-unpacks`,
+`tb-context-first`, `tb-face-off`, `tb-call-is-advice`, `tb-loss-not-avoidance`. NEXT, fresh Opus thread, the build on sample
+data (the menu key is still 401): (1) bars-engine history export adds each task's notes count and `blockedAt`; (2)
+`council/bar_read.py` checks one read per sealed line (line word for word, taskId, barId, face, kernel, home from
+`intake_align.py`, missing from [next step, home, input, capacity, blocker], gathered with sources, workable, opponent from
+the same strand/row/goal else `needs_work.py` else the next callsheet entry, factors signal/ready/unlocks/waiting shown
+apart, call work-today/defer/join/let-go-offered, why) and writes them to `board_data.json` `intake`; (3) the Morning tab
+shows each read as a face-off card under the Tap the Vein frame; (4) a test in `tests/`. Done when a pasted five-line
+sample menu gives five checked reads on the board. Tests F1 (10-26, he takes at least half the calls) and F2 (10-31,
+council work wins at most four in five).
+
 2026-10-16, thread "spaced resurfacing" (branch claude/project-thread-9rf0rk in both repos; bars-engine #345,
 Six-faces-council #197): board read 2031 overruled `sl-no-pressure` ("We need a mechanics to pull in tasks that are
 resting and use spaced repetition to get it back into the board"). Built: a resting seed comes back 3, 7, 14, 30, 60,
