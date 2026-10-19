@@ -94,3 +94,22 @@ PR order, one at a time, each with a playable link (bars-engine.vercel.app previ
 4. Sliders to a dial, keep list to cards, no `alert()`. Built: bars-engine #385.
 Tests at his first play: T1 a new player reaches the WAVE room rug without reading a paragraph; T2 nothing he already
 did is taught twice.
+
+## Next: PR 5, screen space (brief for the next thread, 2026-10-19)
+Wendell, 2026-10-19, after playing: "Ok the buttons are taking up too much space on the screen. Is there a way to create menus so
+that we can more intelligently use space. Also they are randomly placed and players are telling me they don't quite know what
+everything or anything means. The camera is acting funky in the wave room and the character needs to actually be able to sit on
+the seat as opposed to walking through it / Biggest problem is still that the input screens are too big and one can see the
+action underneath. We could maybe solve this with camera movement but also breaking the screens up so their data isn't one
+semitransparent block"
+
+Build on Opus, stacked on bars-engine #385 (the new thread owns #382 to #385 too; they still wait on his "go", merge in order).
+Defaults taken (positions, stand unless he flips them on the board):
+- One Menu button in a fixed corner gathers the scattered controls (Breath ring, Calm, Sit down, Spirits, Self, Trust, the
+  gear), each a glyph with its word beside it. On screen stay only the walk stick and the one action the moment calls for.
+- Input screens become a solid bottom sheet, no taller than about half the screen, one step or question per card with Next
+  and Back, never one long translucent block. While a sheet is open the camera frames the figure in the top half.
+- WAVE room: find what "funky" is first (probe stills of the camera on the walk to the rug, sitting, and the doors; his words
+  only), then fix it. The figure walks to the seat, turns and sits on it at the seat's height; the seat blocks walking through.
+Run the tool-scout ladder first (a known three.js or web bottom-sheet/menu pattern, rung 3). Each piece gets cave-test checks
+and a playable preview link. Not done in this thread: nothing of PR 5 is built yet.
