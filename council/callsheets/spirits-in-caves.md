@@ -89,6 +89,18 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   timeout before reaching the hall). Not done: no look on a phone; Self does not pause a 3-2-1 or W.A.V.E. in progress, it only stops the walk;
   the six face branches are skipped in the new daemon checks (marked walked); `visit` is kept at the first page of a later meeting, with no minimum time.
 
+- Slice 5, the elder spirit, and a new spirit met at three (2026-10-19, thread "Elder spirit showcase"): bars-engine #398 (draft, branch
+  `claude/elder-spirit-showcase-g7jxmm`). Board `sic-demo-showcase` = elder; his note on `sic-first-cave-sitting` folded into 4b. scout: rung 2 for the
+  forms (the spirit page's GLBs, bake_spirits.py), rung 3 for decimation (gltf-transform simplify via npx). In home base (the WAVE room, taken
+  as the intro cave since the loadout lives there), a Shellback ally stands beside the door. The first Welcome page says it greets you; a tap plays
+  cloud, core, hologram, creature and standing ally 1.6 s apart, then a button per form with the sittings that bring it. It is never in the store.
+  `bake_spirits.py` LATE bakes the Shellback's creature (148 KB) and ally (131 KB, the page's `ascended`): welded and simplified, parent nodes
+  followed, y-up turned to the page's z-up, painted materials (skin, shell, cloth) toned by element. The ten earlier files bake byte-identical.
+  `spirit-forms.js` LATE draws creature and ally for the Shellback and the families wearing it. In the Cave of Lessons a newly met spirit
+  joins the loadout. With three of yours walking it waits while you let one rest in the WAVE room (out of the loadout, sittings kept) or leave
+  it, to be asked again next time. Checks: cave-test alone 441 of 441 (new: the card that asks one to rest, the rest, loadout, the elder's greeting, tap, form order,
+  Creature, Back). Not done: no look on a phone; unlit creature and ally read as one-colour silhouettes; other families have no creature or ally.
+
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
 1. ~~**The family cloud**~~ built, bars-engine #387 (`sic-family-cloud`). In `bigmind.js` `felt()` the new spirit gets `family: V.id`; it is saved in
@@ -115,7 +127,8 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
    - ~~4d~~ built, bars-engine #393: Trust and the can/will marks (`trustOffer`, `marksUi`), allies and vouching (`allyJoins`).
    - ~~4e~~ built, bars-engine #394 (draft): Self (`selfPause`), Run (`runBtn`), and saves across visits (`leave`), including trust kept across visits (`state.trust` in cave.js, shape
      as Big Mind's `voices[id].trust`), the falls (broken return on leaving, push past a refusal) and keeping the "return" promise on leaving.
-5. **The demo showcase**, on his answer to `sic-demo-showcase`.
+5. ~~**The demo showcase**~~ built, bars-engine #398 (`sic-demo-showcase` = elder). After it: creature and ally for the other families when the
+   spirit page bakes them (add to bake_spirits.py LATE and spirit-forms.js LATE); his look at the elder on a phone.
 
 Worker map (bars-engine main 7a81014): starting cave = Cave of Lessons, `cave/cave.js` (`start` :1818, WAVE room `openRoom`
 :3812, sitting `sitDown` :2946). Big Mind's features it lacks: Self (`selfPause` :1226), Trust and can/will marks (`trustOffer`
@@ -125,4 +138,4 @@ meters and easing, standing W.A.V.E. (`waveStart` :1434), let-go after 3-2-1 (`l
 `buildSpirit` cave.js:1572, `followSpirits` :1579, `SPIRITS_SHOWN = 3`; Big Mind save `oag.bigmind.v1`.
 
 ## Waiting on
-- His answer to `sic-demo-showcase` (slice 5 only).
+- His look at the elder and the five forms (preview of bars-engine #398, Sit in the WAVE room).
