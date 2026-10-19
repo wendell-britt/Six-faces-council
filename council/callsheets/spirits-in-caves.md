@@ -79,6 +79,15 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   count once as can. Trust is kept for the run only. Checks: cave-test alone 431 of 432 (camera pitch, known flaky). Not done: saves across
   visits, the falls (push past a refusal, a promise broken by leaving) and keeping "return" on leaving, all 4e; "visit" is kept only by meeting
   the daemon in a later block of the same run; Sit with it is two breaths, not the cave's sitting; no look on a phone; Own it moves untested.
+- Slice 4e, trust across visits, the falls, Self and Run (2026-10-19, thread "Trust saved across visits in the starting cave"): bars-engine #394 (draft). scout: rung 2, we
+  have it (Big Mind's `refused`/`pushed`/`breakReturn`/`trustSave`, ported). Trust is written to `oag.cave.trust.v1` as it changes and read back
+  when a daemon is met again: it says it remembers, names the falls not yet owned, stands as it was left, and its ally comes back at the hall. A refusal
+  ("Not now") offers waiting with it or "Ask again, now", a push that breaks its read of you. Leaving a daemon's side passage (a skip, Self's Walk back
+  out, a closed page) breaks the promise to return; Release keeps it. Own it repairs both falls (tested). Self and Run added to the levels (Run 2.1x, Shift too).
+  A promise is stored without its block; an open "return" promise is dropped on load. Checks: focused runs 26 of 26 and 12 of 12; full cave-test alone 455 of
+  456, the miss a hall camera-turn check right after the new Self re-entry (not re-run; camera checks are known flaky; an earlier full run stopped at a rug-walk
+  timeout before reaching the hall). Not done: no look on a phone; Self does not pause a 3-2-1 or W.A.V.E. in progress, it only stops the walk;
+  the six face branches are skipped in the new daemon checks (marked walked); `visit` is kept at the first page of a later meeting, with no minimum time.
 
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
@@ -104,7 +113,7 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
    - ~~4c~~ built, bars-engine #392: the standing W.A.V.E. beside a daemon (`waveStart`), the two charge meters and easing, and let-go after 3-2-1
      (`letGoVoice`); a standing W.A.V.E. beside a spirit's daemon counts its sitting, as in Big Mind.
    - ~~4d~~ built, bars-engine #393: Trust and the can/will marks (`trustOffer`, `marksUi`), allies and vouching (`allyJoins`).
-   - 4e, Self (`selfPause`), Run (`runBtn`), and saves across visits (`leave`), including trust kept across visits (`state.trust` in cave.js, shape
+   - ~~4e~~ built, bars-engine #394 (draft): Self (`selfPause`), Run (`runBtn`), and saves across visits (`leave`), including trust kept across visits (`state.trust` in cave.js, shape
      as Big Mind's `voices[id].trust`), the falls (broken return on leaving, push past a refusal) and keeping the "return" promise on leaving.
 5. **The demo showcase**, on his answer to `sic-demo-showcase`.
 
