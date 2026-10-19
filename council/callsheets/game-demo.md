@@ -122,13 +122,11 @@ and a playable preview link. Not done in this thread: nothing of PR 5 is built y
   seat came face on into a camera pinned to the wall. Fixed: stick forward held while the thumb is down, camera follows
   any walk, comes in and up near walls. Cushion is solid; seated pelvis 0.47 on cushion top 0.46. scout: 3.
 
-## Next: finish PR 5's tests (brief for the next thread, 2026-10-19)
-Own bars-engine #382 to #385 (waiting on his "go", merge in order) and #395 (branch claude/project-thread-f5767p). Make
-#395 green. cave-test 144/1 then a timeout, bigmind-test 175/3 then a timeout. Failing checks, which encode the old top
-modal: cave "the modal sits high" (rewrite: the sheet is in the bottom half and the figure is above it); bigmind "at
-Acknowledge the camera frames the charge below the panel" (it should now be above it); "seated, dragging the scene turns
-the camera" (start the drag above the sheet); "in Talk to it the text box stays in view". Timeouts: the Sit down click at
-cave-test:587 (`data-cave-sitbtn` disabled) and bigmind-test:68 (`data-bm-sitbtn` intercepted). Check whether the sheet or
-the Menu covers them, or whether the cushion now blocks a walk the test expects. Run the tests from a scratch folder with
-playwright and three@0.128.0, with `node_modules` linked beside each test copy and `daemons/` linked one level up. Then add
-the preview link to #395, mark it ready, and reply to Wendell in the thread.
+- **PR 5's tests** (2026-10-19): green. cave-test 423/423, bigmind-test 541/541, run one after the other (side by side,
+  Big Mind's re-entry walk times out). Fixes: Sit down and Trust wait just above an open sheet; Talk to it scrolls its box into
+  the sheet; Big Mind aims at the charge so it shows above the sheet; the card count is dots, no numbers. #395 marked ready.
+  Preview: https://bars-engine-git-claude-projec-aac69d-wendells-projects-9c1b16dc.vercel.app/ontology-game/cave
+
+## Next: merge on his "go" (brief for the next thread, 2026-10-19)
+bars-engine #382, #383, #384, #385, #395 are stacked and wait on Wendell's "go". On "go", merge in that order, retargeting
+each next one to main. A play note instead names a change: a fresh Opus thread on #395's branch (claude/project-thread-f5767p).
