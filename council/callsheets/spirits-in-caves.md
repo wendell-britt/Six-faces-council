@@ -62,15 +62,23 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   as `meet-<voice id>` (not asked again if the store has it). Checks: cave-test alone 403 of 403. Not done: no look on a phone or by
   eye; the check-in's spirit is an orb, not the family gas; 4c to 4e.
 
-- Slice 4c, the standing W.A.V.E. beside a daemon (2026-10-19, thread "A standing W.A.V.E. beside a daemon"): bars-engine #392 (draft). scout: rung 2, we have it
+- Slice 4c, the standing W.A.V.E. beside a daemon (2026-10-19, thread "A standing W.A.V.E. beside a daemon"): bars-engine #392 (merged). scout: rung 2, we have it
   (Big Mind's `waveStart`, `eased`, `letGoVoice`, ported). At the daemon's stop, "Breathe with it (W.A.V.E.)": your own charge first, then the
   seven steps standing, one breath each, the charge a shape beside you (element colour at Acknowledge, grows by Allow, dulls at Validate;
   Exhale stay walks with you as a spirit, release rises and fades). Two meters, It and You; only It decides stepping aside. A lower 3-2-1
   reading gives the easing (ring of light, meter glow, a line; most for crossing 3). Satisfied, the daemon plays its Integrate action before
   stepping aside. A W.A.V.E. to the end counts a sitting for `meet-<voice id>` (once a run, store kept); back partway counts none.
   Checks: cave-test alone 420 of 421 (the hall walk, a known timing miss). Lesson: a tween started inside a tween's end is dropped by the
-  render loop's filter; chain with setTimeout. Not done: no look on a phone; the Exhale stay path untested; "Something's in the way" inside
-  the W.A.V.E. not ported; 4d and 4e.
+  render loop's filter; chain with setTimeout. Not done: no look on a phone; the Exhale stay path now tested (#392); "Something's in the way" inside
+  the W.A.V.E. not ported.
+- Slice 4d, trust, the marks, allies and vouching (2026-10-19, thread "Trust and vouching in the starting cave"): bars-engine #393. scout: rung 2, we have it
+  (Big Mind's trust tables, `trustOffer`, `resolvePending`, `allyJoins`, copied unchanged). "Show it who you are" at the daemon's stop and on
+  its "satisfied?" page: can (wait a breath, W.A.V.E., sit as two breaths, go slowly), will (return, visit promises), good (share cards or
+  your own line). Two marks under the meters. A move counts only if the next 3-2-1 reading eases; the daemon says what it saw, hints, reads
+  you in its words, and its stance softens. All three seen: its spirit becomes the ally; at later daemons allies answer "Who vouches?" and
+  count once as can. Trust is kept for the run only. Checks: cave-test alone 431 of 432 (camera pitch, known flaky). Not done: saves across
+  visits, the falls (push past a refusal, a promise broken by leaving) and keeping "return" on leaving, all 4e; "visit" is kept only by meeting
+  the daemon in a later block of the same run; Sit with it is two breaths, not the cave's sitting; no look on a phone; Own it moves untested.
 
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
@@ -95,8 +103,9 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
      of Lessons' daemons give a family spirit into the store as Big Mind's do (`meet-<voice id>`), and `approach`.
    - ~~4c~~ built, bars-engine #392: the standing W.A.V.E. beside a daemon (`waveStart`), the two charge meters and easing, and let-go after 3-2-1
      (`letGoVoice`); a standing W.A.V.E. beside a spirit's daemon counts its sitting, as in Big Mind.
-   - 4d, Trust and the can/will marks (`trustOffer`, `marksUi`), allies and vouching (`allyJoins`).
-   - 4e, Self (`selfPause`), Run (`runBtn`), and saves across visits (`leave`).
+   - ~~4d~~ built, bars-engine #393: Trust and the can/will marks (`trustOffer`, `marksUi`), allies and vouching (`allyJoins`).
+   - 4e, Self (`selfPause`), Run (`runBtn`), and saves across visits (`leave`), including trust kept across visits (`state.trust` in cave.js, shape
+     as Big Mind's `voices[id].trust`), the falls (broken return on leaving, push past a refusal) and keeping the "return" promise on leaving.
 5. **The demo showcase**, on his answer to `sic-demo-showcase`.
 
 Worker map (bars-engine main 7a81014): starting cave = Cave of Lessons, `cave/cave.js` (`start` :1818, WAVE room `openRoom`
