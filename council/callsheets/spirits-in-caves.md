@@ -43,6 +43,15 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   cave-test 388 of 390 on a run beside the Big Mind test (two timing-looking fails; a rerun alone passed them before a walking
   timeout in an unrelated side passage). Not done: no look on a phone; the Holdfast's forms; the Cave of Lessons' charge
   spirits are still orbs.
+- Slice 4a, the sitting with your spirits (2026-10-19, thread "Big Mind's first cave sitting"): bars-engine PR on branch
+  `claude/project-thread-nb06ts`. scout: rung 2, we have it (`followSpirits`' spot function and `spirit-forms.js` `unfold`).
+  In the Cave of Lessons' sit-down W.A.V.E. (`sitDown`), the spirits walking in view (three at most) settle round the seated
+  figure, one at each side and one behind, and the Welcome step names them ("Fear and Hurry settle around you."). A W.A.V.E.
+  gone through to the end counts a sitting for each family spirit there (once a run, as before), the store keeps it, and a
+  spirit whose count crosses a stage unfolds where it sits; standing up partway counts none. Test fixes: the let-go and the
+  mocap clip checks wait on frames instead of a fixed time, the hall walk waits 30 s. Checks: cave-test alone on main 390 of
+  390; with the change 395 of 395 (one earlier run missed the hall walk at 15 s); bigmind-test 531 of 531. Not done: no look on a phone; Big Mind's
+  other features (4b to 4e).
 
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
@@ -60,7 +69,15 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
 3. ~~**One store and the loadout**~~ built, bars-engine #389 (see Built) ( Sonnet once its design reads clear; also bakes the Holdfast's forms when
    its GLBs exist, and draws a family spirit's stage in the Cave of Lessons) (`sic-one-store`, `sic-loadout-three`): `oag.spirits.v1`, read by both caves; the picker at the
    WAVE room rug.
-4. **Big Mind's features in the starting cave** (`sic-first-cave-sitting`), list in the worker map below.
+4. **Big Mind's features in the starting cave** (`sic-first-cave-sitting`), list in the worker map below. 4a, the sitting
+   with your spirits, built (see Built). The rest, one bars-engine pull request each from main, on Sonnet; check first what
+   the cave already has (it has its own 3-2-1, `talk321`, and the staged meeting):
+   - 4b, the meeting spirit and the approach check-in: `feelAsk`/`felt` when the player meets a chamber daemon, so the Cave
+     of Lessons' daemons give a family spirit into the store as Big Mind's do (`meet-<voice id>`), and `approach`.
+   - 4c, the standing W.A.V.E. beside a daemon (`waveStart`), the two charge meters and easing, and let-go after 3-2-1
+     (`letGoVoice`); a standing W.A.V.E. beside a spirit's daemon counts its sitting, as in Big Mind.
+   - 4d, Trust and the can/will marks (`trustOffer`, `marksUi`), allies and vouching (`allyJoins`).
+   - 4e, Self (`selfPause`), Run (`runBtn`), and saves across visits (`leave`).
 5. **The demo showcase**, on his answer to `sic-demo-showcase`.
 
 Worker map (bars-engine main 7a81014): starting cave = Cave of Lessons, `cave/cave.js` (`start` :1818, WAVE room `openRoom`
