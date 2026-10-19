@@ -34,8 +34,34 @@ ontology: default; touches: BAR, MovementFinding, CompostingDisposition
 - scout: 2 places, the cave as built; element lands wait for after the demo.
 - scout: 5 component table, a typed table in code, no Prisma model.
 
+## 2026-10-19: his answers, and the dock build
+
+- Answers (`council/ledger/2026-10-19-pull-223918.json`): `iv-q-demo-order` B (a WAVE-room dock in the demo),
+  `iv-q-between-only` A (lift it for the private ship), `iv-q-what-ship` B with his steer: "Honestly a mix of all three
+  is what I'm looking for. Probably B that extends to A (from the 3rd person aesthetic) and the story of whatever game
+  emerges (probably the single player version) is the living ship you have a relationship with."
+- Overruled: `iv-no-mirror` (charge is a fuel gauge, mined from environments like No Man's Sky; spirit energy powers the
+  ship), `iv-no-bonus` (the bonus carries over), `iv-cave-only` (places are reached from the ship; the ship does not
+  travel to them), `iv-starcruiser` (the model is *Spacecruiser Inquiry* by A. H. Almaas; Galactic Starcruiser stays only
+  as a model for an immersive voyage event). Steer kept on `iv-daemon-not-part` (stands): an ally daemon can make parts.
+- Open tension: `cc-move-sets-element` is overruled pending a move audit across surfaces, while `iv-element-by-move`
+  stands. The dock uses the worked charge's own element and leaves the move out until the audit lands.
+- Built: bars-engine `content/ontology-game/cave/vessel.js` (model, store `oag.vessel.v1`, dock panel) and
+  `vessel-test.mjs` (11 checks, plain node). The WAVE room has a "The ship" button; a charge worked through the whole
+  W.A.V.E. gives one ember (a 3-2-1 one when worked by 3-2-1, with the bonus as fuel); an ally daemon makes one part;
+  ending a visit to the hall or the Big Mind cave mines fuel; spirits aboard raise the tank and add fuel on each run.
+- Positions taken for the build (board rows `iv-fuel-economy`, `iv-demo-ungated`, `iv-ally-part-once`,
+  `iv-bonus-as-fuel`, `iv-element-until-audit` in `rows/inner-vessel-2026-10-19.json`; stand unless he flips them): start 3, tank 6 plus each aboard spirit's stage, waking a
+  part costs 1, a visit mines 2, the bonus gives 2; built places are charted from the start so nothing on the demo path
+  waits on fuel; fuel is spent on waking parts and, after the demo, on charting element lands.
+- scout: 5 hull grid and fit rule, hand-built in vessel.js (a 3x3 grid in DOM; pixi.js not needed at this size).
+- scout: 5 fuel gauge, a counter and a cap in vessel.js; no library fits a single number.
+- Not checked yet: the dock on his iPhone (G3); the Kenney Space Kit art (parts are labelled cells for now).
+
 ## Next
 
-1. Wait on `iv-q-demo-order`. A: no build thread before his Chapter 1 phone play. B: a fresh Opus thread opens G0 and G1.
+1. His look at the dock on his iPhone (preview link in the bars-engine pull request). A note naming a change: a fresh Opus thread on bars-engine
+   branch `claude/inner-vessel-build-vqaqgw`. Next build items, in order: fuel mined in the cave itself (crystal veins),
+   the living ship's voice (the C part of his answer), Kenney Space Kit art for parts, a third-person view of the hull.
 2. Tests due 2026-10-25 (destination count; paper card test only if he offers an evening), 2026-11-01 (G1 probe),
    2026-11-08 (five newcomers). Details at the end of the pass.
