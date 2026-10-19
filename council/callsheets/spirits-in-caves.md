@@ -33,6 +33,16 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   its voice; `sittings` saved with `voices[id].spirit`, stage derived on save. Checks: bigmind-test (one count for two
   W.A.V.E.s in a run, second run unfolds to core, only shellback-core.glb fetched, gas fading midway). Not done: no look on a
   phone or by eye at the hologram's facing; Cave of Lessons sittings still orbs (slice 3/4); T2 waits on his play.
+- Slice 3, one store and the loadout (2026-10-19, thread "One store and the loadout"): bars-engine #389 (draft, branch
+  `claude/project-thread-90co4f`). scout: rung 2, we have it (a plain localStorage module like `oag.bigmind.v1`).
+  `cave/spirit-store.js` keeps `oag.spirits.v1` = id, name, element, family, sittings, born, lineage, loadout; stage is derived
+  by `stageOf`, never stored. Big Mind writes the meeting spirit through as `meet-<voice id>` (larger sittings win, lineage entry
+  per sitting) and walks in loadout spirits it lacks, kept out of the mouth's keep list. `cave.js`: a family spirit wears its
+  stage form in the Cave of Lessons, the loadout is added in `levelStart`, a sitting with one counts once a run, and the rug in
+  the WAVE room offers "Your spirits" (three at most, a fourth refused until one rests). Checks: bigmind-test 531 of 531;
+  cave-test 388 of 390 on a run beside the Big Mind test (two timing-looking fails; a rerun alone passed them before a walking
+  timeout in an unrelated side passage). Not done: no look on a phone; the Holdfast's forms; the Cave of Lessons' charge
+  spirits are still orbs.
 
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
@@ -47,7 +57,7 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
 2. ~~**The unfolding**~~ built (see Built) (`sic-unfold-by-sitting`): sittings counted per spirit (once per run), stage from sittings (0/2/4/6/8);
    core and hologram from the GLBs (`/mnt/project-files/3d-build/spirit-shellback-2026-10-14/`, per base and element), fetched
    on demand and compressed; creature and ascended after. Climb the tool ladder first (docs/tool-scout.md).
-3. **One store and the loadout** (next thread, Sonnet once its design reads clear; also bakes the Holdfast's forms when
+3. ~~**One store and the loadout**~~ built, bars-engine #389 (see Built) ( Sonnet once its design reads clear; also bakes the Holdfast's forms when
    its GLBs exist, and draws a family spirit's stage in the Cave of Lessons) (`sic-one-store`, `sic-loadout-three`): `oag.spirits.v1`, read by both caves; the picker at the
    WAVE room rug.
 4. **Big Mind's features in the starting cave** (`sic-first-cave-sitting`), list in the worker map below.
