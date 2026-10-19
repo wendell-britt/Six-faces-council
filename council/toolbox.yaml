@@ -106,6 +106,20 @@ tools:
     licence: MIT
     status: available
 
+  - id: yuka
+    does: game AI for three.js scenes; steering (arrive, wander, pursuit, evade, interpose, offset pursuit), state machines, goal-driven agents, fuzzy logic, vision and memory, navmesh with A*
+    tags: [npc, daemon, steering, wander, approach, fsm, goal, fuzzy, perception, three.js, behaviour, sparring]
+    where: npm yuka (0.7.8, last release 2022, dormant but stable, ~33 KB gzipped); copies matrices onto three.js meshes. Per-frame state, so local encounters only; the cave's shared-clock walkers stay as they are
+    licence: MIT
+    status: available
+
+  - id: gamedev-agent-skills
+    does: agent skills for game AI, behaviour trees and utility AI, and branching dialogue; three vendored into bars-engine .claude/skills (ai-behavior-trees-utility-ai, game-ai, dialogue-systems), the other 71 are per-engine (Godot, Unity, Unreal, Roblox) and skipped
+    tags: [skills, npc, behaviour, behavior-tree, utility-ai, fsm, steering, dialogue, ink, game-feel, design]
+    where: github.com/gamedev-skills/awesome-gamedev-agent-skills skills/disciplines/<name>; no Blender skills (blender-skills covers those)
+    licence: Apache-2.0
+    status: in_use
+
   - id: inkjs
     does: inkle's ink branching-story language and runtime for the web
     tags: [story, dialogue, branching, narrative, choices, script]
