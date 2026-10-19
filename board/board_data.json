@@ -10700,6 +10700,82 @@
    "auto": true,
    "pos": "Each face owns the three moves bars-engine's lens-moves already gave it. Two moves have no face yet: Temper Action and Step Through. Daemons own moves too, with no home channel, and their lists come next. This stands unless you flip it.",
    "why": "Your answer to mn-q-face-daemon (each face and daemon owns its moves); lens-moves.ts is the only face-to-move map whose ids are all real moves."
+  },
+  {
+   "id": "ttv-one-ui",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "tap the vein on the board",
+   "auto": true,
+   "pos": "The board shows bars-engine's own Tap the Vein in its Morning tab, never a copy of it. The claude.ai page links out to it.",
+   "why": "Your words, 2026-10-19: \"They differ enough as to confuse me an annoy me\". Built in bars-engine #403 (/tap-the-vein/embed) and Six-faces-council #312 (the board frames it). Source: council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md"
+  },
+  {
+   "id": "tb-sealed-is-bar",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "ttv-bars 1",
+   "auto": true,
+   "pos": "A line you seal in Tap the Vein is a BAR the council can read. Today's task is one form of it; resting in the seed library or joining a strand is another. A BAR still creates no duty to build it. This updates ttv-task-not-bar: sealing is the keeping.",
+   "why": "Your words: \"the interface structure I beleive is bars itself\". Under mm-raw only lines you keep leave the free write, so every sealed line is one you chose, which is what the ontology asks of a BAR. Source: council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md"
+  },
+  {
+   "id": "tb-face-unpacks",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "ttv-bars 1",
+   "auto": true,
+   "pos": "One face reads each sealed line: what it is reaching for in one sentence, where it belongs, what stops it being worked today, and what the face found in the record to fill that gap. The read lives on the board, never in your task or its notes.",
+   "why": "Your words: \"unpack it or gather more context until it's able to be worked\". Your task notes are yours, and the ontology keeps collecting and adapting as separate permissions. Source: council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md"
+  },
+  {
+   "id": "tb-context-first",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "ttv-bars 1",
+   "auto": true,
+   "pos": "A free-write line gets its context gathered before it meets council work, so it is judged on what it is, not on what the council happens to know already.",
+   "why": "Your words: \"I need the information from my subconcious to be context aware\". The council writes its own work's context, so without this its work always looks readier. Source: council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md"
+  },
+  {
+   "id": "tb-face-off",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "ttv-bars 1",
+   "auto": true,
+   "pos": "Each read line meets the one piece of council work competing for the same hours. Four factors show one by one (your signal, how ready it is, what it unlocks, how long it has waited), never added into one score, and the call names the factor that decided it. A tie shows both, your free-write line first.",
+   "why": "Your words: \"a head to head battle mechanic of prioriities\". A summed score hides which side won on what. Source: council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md"
+  },
+  {
+   "id": "tb-call-is-advice",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "ttv-bars 1",
+   "auto": true,
+   "pos": "The council's call is advice: work it today, defer it to the seed library, join it to a strand, or (only ever offered) let it go. You tap the outcome in Tap the Vein. Nothing is deferred or composted for you.",
+   "why": "The Sage never decides (council/faces.yaml); Draw, Keep resting and Let go are your taps (sl-resurface-ladder); a rest is never compost (sl-resting-not-compost). Source: council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md"
+  },
+  {
+   "id": "tb-loss-not-avoidance",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "ttv-bars 1",
+   "auto": true,
+   "pos": "A line that keeps losing face-offs is read as missing conditions (no first step, no home, a missing input), never as avoidance. A longer charge note does not help a line win.",
+   "why": "The Shaman's standing test, and the ontology: a blocker \"does not prove misaligned intention\" and \"Intimate disclosure is not progression currency.\" Source: council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md"
   }
  ],
  "questions": [
