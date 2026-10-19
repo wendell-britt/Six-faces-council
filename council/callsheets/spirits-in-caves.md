@@ -62,6 +62,16 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   as `meet-<voice id>` (not asked again if the store has it). Checks: cave-test alone 403 of 403. Not done: no look on a phone or by
   eye; the check-in's spirit is an orb, not the family gas; 4c to 4e.
 
+- Slice 4c, the standing W.A.V.E. beside a daemon (2026-10-19, thread "A standing W.A.V.E. beside a daemon"): bars-engine #392 (draft). scout: rung 2, we have it
+  (Big Mind's `waveStart`, `eased`, `letGoVoice`, ported). At the daemon's stop, "Breathe with it (W.A.V.E.)": your own charge first, then the
+  seven steps standing, one breath each, the charge a shape beside you (element colour at Acknowledge, grows by Allow, dulls at Validate;
+  Exhale stay walks with you as a spirit, release rises and fades). Two meters, It and You; only It decides stepping aside. A lower 3-2-1
+  reading gives the easing (ring of light, meter glow, a line; most for crossing 3). Satisfied, the daemon plays its Integrate action before
+  stepping aside. A W.A.V.E. to the end counts a sitting for `meet-<voice id>` (once a run, store kept); back partway counts none.
+  Checks: cave-test alone 420 of 421 (the hall walk, a known timing miss). Lesson: a tween started inside a tween's end is dropped by the
+  render loop's filter; chain with setTimeout. Not done: no look on a phone; the Exhale stay path untested; "Something's in the way" inside
+  the W.A.V.E. not ported; 4d and 4e.
+
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
 1. ~~**The family cloud**~~ built, bars-engine #387 (`sic-family-cloud`). In `bigmind.js` `felt()` the new spirit gets `family: V.id`; it is saved in
@@ -83,7 +93,7 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
    the cave already has (it has its own 3-2-1, `talk321`, and the staged meeting):
    - ~~4b, the meeting spirit and the approach check-in~~ built, bars-engine #391: `feelAsk`/`felt` when the player meets a chamber daemon, so the Cave
      of Lessons' daemons give a family spirit into the store as Big Mind's do (`meet-<voice id>`), and `approach`.
-   - 4c, the standing W.A.V.E. beside a daemon (`waveStart`), the two charge meters and easing, and let-go after 3-2-1
+   - ~~4c~~ built, bars-engine #392: the standing W.A.V.E. beside a daemon (`waveStart`), the two charge meters and easing, and let-go after 3-2-1
      (`letGoVoice`); a standing W.A.V.E. beside a spirit's daemon counts its sitting, as in Big Mind.
    - 4d, Trust and the can/will marks (`trustOffer`, `marksUi`), allies and vouching (`allyJoins`).
    - 4e, Self (`selfPause`), Run (`runBtn`), and saves across visits (`leave`).
