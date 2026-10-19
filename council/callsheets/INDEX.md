@@ -5,6 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
+- [move-nature](move-nature.md), 2026-10-19: audit of what a move is across bars-engine, sprout and the council; pass `move-nature1` (six `mn-*` positions, three questions); next land rows, fix the check-in cycle bug, then the move table after his answers.
 - [inner-vessel](inner-vessel.md), 2026-10-18: pass inner-vessel1 done (twelve `iv-*` positions; `iv-q-what-ship`, `iv-q-between-only`, `iv-q-demo-order` on the board); nothing built; next waits on `iv-q-demo-order`.
 - [spirits-in-caves](spirits-in-caves.md), 2026-10-19: slices 1 to 3 and 4a (the sitting with your spirits) built; next 4b, the meeting spirit and approach check-in in the Cave of Lessons, in a fresh Sonnet thread; slice 5 waits on `sic-demo-showcase`.
 - [walkthrough](walkthrough.md), 2026-10-18: golden-path build sprout #58 plays title to saved quest; the road's battle is now the Super NES face-off (sprout #59 on #58); the 3D Moonlit Meridian plays the same rules beside it (sprout #61 on #59, `battle-road-opens-face-off` overruled 10-19); next his phone play.
