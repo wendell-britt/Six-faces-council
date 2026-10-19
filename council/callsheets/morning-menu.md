@@ -4,20 +4,19 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
-2026-10-19, thread "Tap the Vein on the board" (branch claude/vein-on-board-k3py5n, bars-engine #403, Six-faces-council
-#312, both draft): Wendell, 2026-10-19, the two UIs "differ enough as to confuse me an annoy me". Built: /board/council
-frames bars-engine's own runner at /tap-the-vein/embed (posts ttv-sealed to the gate); the claude.ai page links out; the
-board's own writer is retired. Position `ttv-one-ui` (the board shows bars-engine's page, never a copy) still to land on
-the board. NEXT, fresh Opus thread, owns #403 and #312 (merge #403 first): his second ask, "a way for the tasks generated
-in that board to be read and interpreted by the 6 game masters faces ... unpacked into language the council can use to
-prioritize the task and give advice on if it should be worked that day or deferred ... a head to head battle mechanic of
-priorities ... I need the information from my subconcious to be context aware ... the interface structure I beleive is
-bars itself. When a council member is able to see a player produces bar and unpack it or gather more context until it's
-able to be worked." Run a six-faces pass with the ontology (BAR, CompostingDisposition) on: each sealed task (bars-engine
-TapTheVeinTask, barId) read as a BAR; a face unpacks it or gathers context (board rows, strands, Lens goals via
-`council/morning.py`, `intake_align.py`) until workable; it faces off against council-held work; the advice is work today
-or defer (to the seed library, sl-resurface-ladder). Tool scout first. COUNCIL_MENU_TOKEN still 401 ("Menu key retest"
-owns it), so design from code and the paste fallback. Survivors of the reach test go to the board.
+2026-10-19, thread "Tap the Vein on the board": one UI is done. bars-engine #403 (/tap-the-vein/embed) merged; Six-faces-council
+#312 frames it on /board/council and merges after. Position `ttv-one-ui` is on the board. Pass ttv-bars 1
+(`council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md`, ledger `2026-10-19-ttv-bars1.json`) answered his second ask with six
+positions and no question: `tb-sealed-is-bar` (sealing is the keeping; updates `ttv-task-not-bar`), `tb-face-unpacks`,
+`tb-context-first`, `tb-face-off`, `tb-call-is-advice`, `tb-loss-not-avoidance`. NEXT, fresh Opus thread, the build on sample
+data (the menu key is still 401): (1) bars-engine history export adds each task's notes count and `blockedAt`; (2)
+`council/bar_read.py` checks one read per sealed line (line word for word, taskId, barId, face, kernel, home from
+`intake_align.py`, missing from [next step, home, input, capacity, blocker], gathered with sources, workable, opponent from
+the same strand/row/goal else `needs_work.py` else the next callsheet entry, factors signal/ready/unlocks/waiting shown
+apart, call work-today/defer/join/let-go-offered, why) and writes them to `board_data.json` `intake`; (3) the Morning tab
+shows each read as a face-off card under the Tap the Vein frame; (4) a test in `tests/`. Done when a pasted five-line
+sample menu gives five checked reads on the board. Tests F1 (10-26, he takes at least half the calls) and F2 (10-31,
+council work wins at most four in five).
 
 2026-10-16, thread "spaced resurfacing" (branch claude/project-thread-9rf0rk in both repos; bars-engine #345,
 Six-faces-council #197): board read 2031 overruled `sl-no-pressure` ("We need a mechanics to pull in tasks that are
