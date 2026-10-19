@@ -1,0 +1,17 @@
+{
+  "positions": [
+    {"id": "mt-ke-by-start", "faces": ["challenger", "architect"], "pass": "move-nature1", "auto": true,
+     "pos": "Your answer that control depends on where you start is now one rule everywhere: from satisfied it holds, from neutral it pulls back to dissatisfied, from dissatisfied it holds. So Temper Action from Anger dissatisfied ends at Fear dissatisfied in bars-engine, the ontology game and Sprout. This stands unless you flip it.",
+     "why": "The ontology game's routing table (bars-engine content/ontology-game/game.jsx) and the Sprout prototype already said this, noted there as checked against your three stated rules; only wuxing.ts disagreed, lowering satisfied to neutral."},
+    {"id": "mt-sheng-up-one", "faces": ["architect"], "pass": "move-nature1", "auto": true,
+     "pos": "A generative move carries the charge to the next channel on the sheng cycle and raises it one state, and satisfied stays satisfied. This stands unless you flip it.",
+     "why": "wuxing.ts, move-engine, the ontology game and the Sprout prototype all do this; only alchemy-graph's growth edges keep the same state."},
+    {"id": "mt-transcend-two-steps", "faces": ["regent"], "pass": "move-nature1", "auto": true,
+     "pos": "Following your overrule, Transcend is two steps in one channel: dissatisfied to neutral, then neutral to satisfied. A satisfied channel has no Transcend step. This stands unless you flip it.",
+     "why": "Your steer on mn-transcend-plus-two: 'The 2 steps makes the most sense'. wuxing.ts already stepped one at a time."},
+    {"id": "mt-face-moves-seeded", "faces": ["shaman", "diplomat"], "pass": "move-nature1", "auto": true,
+     "pos": "Each face owns the three moves bars-engine's lens-moves already gave it. Two moves have no face yet: Temper Action and Step Through. Daemons own moves too, with no home channel, and their lists come next. This stands unless you flip it.",
+     "why": "Your answer to mn-q-face-daemon (each face and daemon owns its moves); lens-moves.ts is the only face-to-move map whose ids are all real moves."}
+  ],
+  "questions": []
+}
