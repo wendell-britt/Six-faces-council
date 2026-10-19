@@ -21,6 +21,18 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   (new: family protector, stage gas, 150 motes and no orb, motes out between daemon and spirit at a quarter of the birth,
   within 0.6 of the spirit after), cave-test 387 of 387. Not done: the approach check-in's spirit (`approachShow`) and the
   Cave of Lessons' sitting spirits stay orbs; no look on a phone; T1 waits on his play.
+- Slice 2, the unfolding (2026-10-19, thread "Spirits unfolding as you sit"): bars-engine PR on branch
+  `claude/project-thread-6093c4`. scout: rung 2, we have it (bake_daemons.py's pattern: plain-Python bake to 16-bit GLBs,
+  hand parser in the page). `cave/bake_spirits.py` bakes core and hologram from the spirit page's fire GLBs, one file per
+  family (shapes are the same per element; the cave tints by its own hex, each material keeping tone, opacity, glow), welded,
+  normals and UVs dropped: 11 to 51 KB from 97 to 305 KB. Bases: Shellback tortoise, Romp fox, Tinker raccoon, Hedge pallas,
+  Ballad donkey. Holdfast has no GLBs (rounds 15 to 17 wrote none), so the Controller, Damaged Self and Emotional Body wear
+  the Shellback's. `spirit-forms.js` `stageOf` (0/2/4/6/8), `buildForm`, `unfold` (gas draws in and fades as the core grows;
+  core swells away as the hologram opens; reduced motion fades); creature and ally show the hologram until built. In
+  `bigmind.js` `satWith` counts once a run per spirit: sitting with it, sitting with its voice, or a standing W.A.V.E. beside
+  its voice; `sittings` saved with `voices[id].spirit`, stage derived on save. Checks: bigmind-test (one count for two
+  W.A.V.E.s in a run, second run unfolds to core, only shellback-core.glb fetched, gas fading midway). Not done: no look on a
+  phone or by eye at the hologram's facing; Cave of Lessons sittings still orbs (slice 3/4); T2 waits on his play.
 
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
@@ -32,10 +44,11 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
    label. Touch cave.js only where `buildSpirit` picks the form, since the walkthrough thread's #382 to #384 edit cave.js and
    bigmind.js heavily: build on main, and rebase onto whichever of those merges first. Checks: bigmind-test sees a Protector
    spirit built with family `protector` and stage `gas`, motes moving from the daemon; cave-test unchanged. Test T1 at his play.
-2. **The unfolding** (`sic-unfold-by-sitting`): sittings counted per spirit (once per run), stage from sittings (0/2/4/6/8);
+2. ~~**The unfolding**~~ built (see Built) (`sic-unfold-by-sitting`): sittings counted per spirit (once per run), stage from sittings (0/2/4/6/8);
    core and hologram from the GLBs (`/mnt/project-files/3d-build/spirit-shellback-2026-10-14/`, per base and element), fetched
    on demand and compressed; creature and ascended after. Climb the tool ladder first (docs/tool-scout.md).
-3. **One store and the loadout** (`sic-one-store`, `sic-loadout-three`): `oag.spirits.v1`, read by both caves; the picker at the
+3. **One store and the loadout** (next thread, Sonnet once its design reads clear; also bakes the Holdfast's forms when
+   its GLBs exist, and draws a family spirit's stage in the Cave of Lessons) (`sic-one-store`, `sic-loadout-three`): `oag.spirits.v1`, read by both caves; the picker at the
    WAVE room rug.
 4. **Big Mind's features in the starting cave** (`sic-first-cave-sitting`), list in the worker map below.
 5. **The demo showcase**, on his answer to `sic-demo-showcase`.
