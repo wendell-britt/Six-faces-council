@@ -28814,6 +28814,52 @@
      "regent"
     ],
     "pass": "move-nature1"
+   },
+   "mt-ke-by-start": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T23:35:19.125Z",
+    "record": "council/ledger/2026-10-19-pull-233534.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "move-nature1"
+   },
+   "mt-sheng-up-one": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T23:35:24.308Z",
+    "record": "council/ledger/2026-10-19-pull-233534.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "move-nature1"
+   },
+   "mt-transcend-two-steps": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T23:35:27.292Z",
+    "record": "council/ledger/2026-10-19-pull-233534.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "move-nature1"
+   },
+   "mt-face-moves-seeded": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T23:35:34.009Z",
+    "record": "council/ledger/2026-10-19-pull-233534.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "move-nature1"
    }
   },
   "questions": {
