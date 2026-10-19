@@ -1,0 +1,14 @@
+{
+ "date": "2026-10-19",
+ "kind": "pass",
+ "pass": "move-nature1",
+ "called_by": "Wendell, board overrule of cc-move-sets-element (ledger 2026-10-19-pull-223918.json)",
+ "file": "council/passes/6FACE_PASS_move-nature1_2026-10-19.md",
+ "evidence": "council/research/2026-10-19-move-audit.md",
+ "rows": "council/callsheets/rows/move-nature-2026-10-19.json",
+ "casts": {"shaman": "4>40", "architect": "35>6", "challenger": "2>64", "regent": "33>50", "diplomat": "32>6", "sage": "54>19"},
+ "positions": ["mn-basic-moves-apart", "mn-transcend-plus-two", "mn-ember-both", "mn-checkin-fix", "mn-root-fight-reply", "mn-gold-names"],
+ "questions": ["mn-q-what-move-is", "mn-q-ke-state", "mn-q-face-daemon"],
+ "unanimous": "on the grid as kernel; flagged in the pass",
+ "subagent_tokens": 519605
+}
