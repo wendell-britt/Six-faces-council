@@ -4,6 +4,21 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-19, thread "Tap the Vein on the board" (branch claude/vein-on-board-k3py5n, bars-engine #403, Six-faces-council
+#312, both draft): Wendell, 2026-10-19, the two UIs "differ enough as to confuse me an annoy me". Built: /board/council
+frames bars-engine's own runner at /tap-the-vein/embed (posts ttv-sealed to the gate); the claude.ai page links out; the
+board's own writer is retired. Position `ttv-one-ui` (the board shows bars-engine's page, never a copy) still to land on
+the board. NEXT, fresh Opus thread, owns #403 and #312 (merge #403 first): his second ask, "a way for the tasks generated
+in that board to be read and interpreted by the 6 game masters faces ... unpacked into language the council can use to
+prioritize the task and give advice on if it should be worked that day or deferred ... a head to head battle mechanic of
+priorities ... I need the information from my subconcious to be context aware ... the interface structure I beleive is
+bars itself. When a council member is able to see a player produces bar and unpack it or gather more context until it's
+able to be worked." Run a six-faces pass with the ontology (BAR, CompostingDisposition) on: each sealed task (bars-engine
+TapTheVeinTask, barId) read as a BAR; a face unpacks it or gathers context (board rows, strands, Lens goals via
+`council/morning.py`, `intake_align.py`) until workable; it faces off against council-held work; the advice is work today
+or defer (to the seed library, sl-resurface-ladder). Tool scout first. COUNCIL_MENU_TOKEN still 401 ("Menu key retest"
+owns it), so design from code and the paste fallback. Survivors of the reach test go to the board.
+
 2026-10-16, thread "spaced resurfacing" (branch claude/project-thread-9rf0rk in both repos; bars-engine #345,
 Six-faces-council #197): board read 2031 overruled `sl-no-pressure` ("We need a mechanics to pull in tasks that are
 resting and use spaced repetition to get it back into the board"). Built: a resting seed comes back 3, 7, 14, 30, 60,
