@@ -1,0 +1,155 @@
+{
+ "positions": [
+  {
+   "id": "mn-basic-moves-apart",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "move-nature1",
+   "auto": true,
+   "pos": "The five Basic Moves (Wake, Open, Clean, Grow, Show) and the fifteen moves stay two separate kinds of move, and every screen that shows one says which kind it is. This stands unless you flip it.",
+   "why": "Your ruling of 2026-10-10 (ontology wave-terminology owner decision) already split them; the audit found 'five moves' carrying four meanings in sprout."
+  },
+  {
+   "id": "mn-transcend-plus-two",
+   "faces": [
+    "regent"
+   ],
+   "pass": "move-nature1",
+   "auto": true,
+   "pos": "A Transcend move is one move inside a channel, from dissatisfied to satisfied. bars-engine's split of it into two steps (metabolize or stabilize, then transcend) goes. This stands unless you flip it.",
+   "why": "ss-shift-up (stands) and move-engine.ts energyDelta +2 agree; vector-move-families.ts and alchemy-graph.ts are the drift."
+  },
+  {
+   "id": "mn-ember-both",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "move-nature1",
+   "auto": true,
+   "pos": "In place of the overruled cc-move-sets-element: the crafting ember stores the move and the charge's element separately and rejects nothing, until you rule on what a move is. This stands unless you flip it.",
+   "why": "sf-ally-moves (stands, 2026-10-13): move elements and spirit elements 'combine but aren't essentially aligned'."
+  },
+  {
+   "id": "mn-checkin-fix",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "move-nature1",
+   "auto": true,
+   "pos": "The daily check-in in bars-engine shows the wrong next channel today: its own copy of the cycles runs sheng backwards and uses sheng as ke. A fix makes it read the server's tables. This stands unless you flip it.",
+   "why": "bars-engine src/components/dashboard/DailyCheckInQuest.tsx:13-18 against src/lib/alchemy/wuxing.ts:28-45; the server records the canonical target, so the screen and the record disagree."
+  },
+  {
+   "id": "mn-root-fight-reply",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "move-nature1",
+   "auto": true,
+   "pos": "In the push-hands fight, answering fire with water, which restrains fire, is a reply, not a ke move. It stays, and the code and copy name it a reply. This stands unless you flip it.",
+   "why": "sprout root-fight/index.html:150,423; every other surface runs ke from controller to controlled (fire to metal)."
+  },
+  {
+   "id": "mn-gold-names",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "move-nature1",
+   "auto": true,
+   "pos": "Satisfied names follow your list of 2026-10-12: Metal's is Wonder-Excitement, and Earth's channel is always Neutrality, never Neutral, so it is not mistaken for the neutral state. This stands unless you flip it.",
+   "why": "council/callsheets/somatic-ontology.md:19-24; code splits Metal between 'Excitement' and 'Wonder', and sprout docs/design.md says 'Neutral'."
+  }
+ ],
+ "questions": [
+  {
+   "id": "mn-q-what-move-is",
+   "faces": [
+    "architect",
+    "shaman",
+    "sage"
+   ],
+   "q": "At its root, is a move a step across the 15 squares (5 channels by 3 satisfaction states), or an action a character takes?",
+   "why_you": "You listed channels, states, sheng, ke, faces and daemons, but said the nature of a move is still being figured out. The record has both readings: move-engine treats a move as a pair of elements, and your spirit-fight rulings treat moves like Pokemon moves people teach.",
+   "not_before": "Nobody had laid the nine meanings of 'move' side by side until this audit (council/research/2026-10-19-move-audit.md).",
+   "options": [
+    {
+     "v": "grid",
+     "label": "A. A step across the 15 squares (recommended)",
+     "c": "One table of fifteen moves becomes the engine for every game; faces and daemons decide which step to offer and how it sounds. All five faces back this."
+    },
+    {
+     "v": "action",
+     "label": "B. A character's action",
+     "c": "Each face, daemon and spirit carries its own moves, and moving across the squares is one effect among others (damage, comfort, reveal). More variety, harder to keep games in step."
+    },
+    {
+     "v": "both",
+     "label": "C. Both, kept as two layers",
+     "c": "The squares are the engine and actions are named skins on top; a Pokemon-style move always maps to one step. Most work up front."
+    }
+   ],
+   "pass": "move-nature1"
+  },
+  {
+   "id": "mn-q-ke-state",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "q": "What does a control (ke) move do to how satisfied a channel is?",
+   "why_you": "Five surfaces disagree: move-engine and the check-in lower it one step, the Sprout slice and alchemy-graph hold it, the ontology game keeps a satisfied channel satisfied, and your ruling ea13b says ke acts only by releasing grip. Only you can say which feels true to the practice.",
+   "not_before": "Each surface was built separately; this is the first time they were compared.",
+   "options": [
+    {
+     "v": "hold",
+     "label": "A. Holds it; ke releases grip (recommended)",
+     "c": "Matches your ea13b ruling and the slice. Control never punishes; it loosens what is stuck. move-engine's -1 changes."
+    },
+    {
+     "v": "lower",
+     "label": "B. Lowers it one step",
+     "c": "Matches move-engine. Control has a cost, which gives fights tension, and Temper Action reads as a sacrifice."
+    },
+    {
+     "v": "depends",
+     "label": "C. Depends on where you start",
+     "c": "Like the Sprout prototype: from satisfied it holds, from neutral it pulls back. Richer, and needs a table per state."
+    }
+   ],
+   "pass": "move-nature1"
+  },
+  {
+   "id": "mn-q-face-daemon",
+   "faces": [
+    "shaman",
+    "regent",
+    "diplomat"
+   ],
+   "q": "How do the game master faces and the daemons attach to moves?",
+   "why_you": "faces.yaml ties no face to a move, while bars-engine has four face-to-move maps that disagree, and daemons' home elements in Sprout appear nowhere in the council record. This is a design preference only you hold.",
+   "not_before": "The four maps grew in separate features; nobody compared them before this audit.",
+   "options": [
+    {
+     "v": "layers",
+     "label": "A. Faces voice any move; daemons have habits (recommended)",
+     "c": "Any face can offer any move in its own register. Each daemon has a home channel and a move it reaches for when dissatisfied, and teaches moves once it is an ally. bars-engine's four maps collapse to one."
+    },
+    {
+     "v": "own",
+     "label": "B. Each face and daemon owns its moves",
+     "c": "Like lens-moves: each face has three moves. Clear identities, and some moves (Temper Action today) belong to no one."
+    },
+    {
+     "v": "later",
+     "label": "C. Settle the kernel first",
+     "c": "Rule A or B after the move table exists and you have played it."
+    }
+   ],
+   "pass": "move-nature1"
+  }
+ ]
+}
