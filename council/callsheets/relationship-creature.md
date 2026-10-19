@@ -225,3 +225,4 @@ Open, in order:
 
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
+- 2026-10-19 board: putting a charge into the shared lantern makes its element public (his steer on `cc-element-hidden`, which stands for the pouch).
