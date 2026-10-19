@@ -53,6 +53,15 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   390; with the change 395 of 395 (one earlier run missed the hall walk at 15 s); bigmind-test 531 of 531. Not done: no look on a phone; Big Mind's
   other features (4b to 4e).
 
+- Slice 4b, the meeting spirit and the approach check-in (2026-10-19, thread "The meeting spirit in the Cave of Lessons"): bars-engine
+  #391. scout: rung 2, we have it (Big Mind's `approach` and `feelAsk`/`felt`, ported). At the passage, once a daemon is named, the
+  approach check-in runs first (body texture and movement, feeling, nearness, state; each skippable, "Skip all, walk on" passes;
+  a meeting spirit forms before the daemon as the player answers; another voice's movement says "Something of another voice is in
+  this one"). The answers stay on the sitting (`__oagCave.approach()`) since the cave has no save across visits until 4e. Saying yes
+  to speaking asks once how you feel meeting it; a family spirit is born from the daemon's body, walks with the player and is kept
+  as `meet-<voice id>` (not asked again if the store has it). Checks: cave-test alone 403 of 403. Not done: no look on a phone or by
+  eye; the check-in's spirit is an orb, not the family gas; 4c to 4e.
+
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
 1. ~~**The family cloud**~~ built, bars-engine #387 (`sic-family-cloud`). In `bigmind.js` `felt()` the new spirit gets `family: V.id`; it is saved in
@@ -72,7 +81,7 @@ Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's de
 4. **Big Mind's features in the starting cave** (`sic-first-cave-sitting`), list in the worker map below. 4a, the sitting
    with your spirits, built (see Built). The rest, one bars-engine pull request each from main, on Sonnet; check first what
    the cave already has (it has its own 3-2-1, `talk321`, and the staged meeting):
-   - 4b, the meeting spirit and the approach check-in: `feelAsk`/`felt` when the player meets a chamber daemon, so the Cave
+   - ~~4b, the meeting spirit and the approach check-in~~ built, bars-engine #391: `feelAsk`/`felt` when the player meets a chamber daemon, so the Cave
      of Lessons' daemons give a family spirit into the store as Big Mind's do (`meet-<voice id>`), and `approach`.
    - 4c, the standing W.A.V.E. beside a daemon (`waveStart`), the two charge meters and easing, and let-go after 3-2-1
      (`letGoVoice`); a standing W.A.V.E. beside a spirit's daemon counts its sitting, as in Big Mind.
