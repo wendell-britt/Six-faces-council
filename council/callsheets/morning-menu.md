@@ -65,3 +65,5 @@ No answer owed. Ruled 18:21: `mm-where` = Tap the Vein, `mm-raw` = only kept lin
 
 ## Archive
 HANDOFF.md: "Open on 2026-10-09, morning menu (Tap the Vein and Lenses)"
+
+2026-10-19, thread "Lens emergence test run": T1 not run. `/api/tap-the-vein/history` with the proxy-injected `COUNCIL_MENU_TOKEN` still answers 401, though he ticked all three `menu-key-match` steps at 22:46. Steps 01-03 are rewritten and unticked (key saved once in his Passwords app, then pasted into Vercel, the cloud environment and the GitHub secret; the cloud step says what to do when there is no edit button: delete the row and add it again). Trigger unchanged: when he ticks all three, a fresh Sonnet thread makes one request first; 200 means run T1, 401 means the cloud secret differs from Vercel's.

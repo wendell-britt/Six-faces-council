@@ -191,6 +191,16 @@
    "by": "Claude",
    "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
    "at": "2026-10-17T20:30:00Z"
+  },
+  "2026-10-19-pull-224603#steps/menu-key-match-02": {
+   "by": "Claude",
+   "ref": "steps menu-key-match-01..03 rewritten on the board store (Passwords app as the one saved copy; delete-and-re-add path for the cloud secret); T1 test still 401",
+   "at": "2026-10-19T23:10:00Z"
+  },
+  "2026-10-19-pull-224603#steps/menu-key-match-01": {
+   "by": "Claude",
+   "ref": "steps menu-key-match-01..03 rewritten on the board store (Passwords app as the one saved copy; delete-and-re-add path for the cloud secret); T1 test still 401",
+   "at": "2026-10-19T23:10:00Z"
   }
  }
 }
