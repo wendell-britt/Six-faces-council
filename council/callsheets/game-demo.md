@@ -113,3 +113,22 @@ Defaults taken (positions, stand unless he flips them on the board):
   only), then fix it. The figure walks to the seat, turns and sits on it at the seat's height; the seat blocks walking through.
 Run the tool-scout ladder first (a known three.js or web bottom-sheet/menu pattern, rung 3). Each piece gets cave-test checks
 and a playable preview link. Not done in this thread: nothing of PR 5 is built yet.
+
+- **PR 5, screen space** (bars-engine #395, draft, stacked on #385; built 2026-10-19). One Menu in the top-left corner of
+  each scene holds its switches (cave: Breath ring, Calm, Spirits; room: Calm; Big Mind: Self, Spirits), each a glyph, its
+  word and a line on what it does, plus a key to what is on the screen. Pages are a solid sheet in the bottom half, one
+  card per field, dial or row of choices, with Back and Next; the scene lifts into the top half while a sheet is open
+  (`menu()`, `sheet()` in cave.js, on the kit). WAVE room "funky" camera, found by probe: walking to the doors behind the
+  seat came face on into a camera pinned to the wall. Fixed: stick forward held while the thumb is down, camera follows
+  any walk, comes in and up near walls. Cushion is solid; seated pelvis 0.47 on cushion top 0.46. scout: 3.
+
+## Next: finish PR 5's tests (brief for the next thread, 2026-10-19)
+Own bars-engine #382 to #385 (waiting on his "go", merge in order) and #395 (branch claude/project-thread-f5767p). Make
+#395 green. cave-test 144/1 then a timeout, bigmind-test 175/3 then a timeout. Failing checks, which encode the old top
+modal: cave "the modal sits high" (rewrite: the sheet is in the bottom half and the figure is above it); bigmind "at
+Acknowledge the camera frames the charge below the panel" (it should now be above it); "seated, dragging the scene turns
+the camera" (start the drag above the sheet); "in Talk to it the text box stays in view". Timeouts: the Sit down click at
+cave-test:587 (`data-cave-sitbtn` disabled) and bigmind-test:68 (`data-bm-sitbtn` intercepted). Check whether the sheet or
+the Menu covers them, or whether the cushion now blocks a walk the test expects. Run the tests from a scratch folder with
+playwright and three@0.128.0, with `node_modules` linked beside each test copy and `daemons/` linked one level up. Then add
+the preview link to #395, mark it ready, and reply to Wendell in the thread.
