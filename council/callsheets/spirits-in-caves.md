@@ -21,8 +21,8 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   (new: family protector, stage gas, 150 motes and no orb, motes out between daemon and spirit at a quarter of the birth,
   within 0.6 of the spirit after), cave-test 387 of 387. Not done: the approach check-in's spirit (`approachShow`) and the
   Cave of Lessons' sitting spirits stay orbs; no look on a phone; T1 waits on his play.
-- Slice 2, the unfolding (2026-10-19, thread "Spirits unfolding as you sit"): bars-engine PR on branch
-  `claude/project-thread-6093c4`. scout: rung 2, we have it (bake_daemons.py's pattern: plain-Python bake to 16-bit GLBs,
+- Slice 2, the unfolding (2026-10-19, thread "Spirits unfolding as you sit"): bars-engine #388 (branch
+  `claude/project-thread-6093c4`). scout: rung 2, we have it (bake_daemons.py's pattern: plain-Python bake to 16-bit GLBs,
   hand parser in the page). `cave/bake_spirits.py` bakes core and hologram from the spirit page's fire GLBs, one file per
   family (shapes are the same per element; the cave tints by its own hex, each material keeping tone, opacity, glow), welded,
   normals and UVs dropped: 11 to 51 KB from 97 to 305 KB. Bases: Shellback tortoise, Romp fox, Tinker raccoon, Hedge pallas,
