@@ -13,12 +13,22 @@ battle system we've been working on k codex. ... This battle type for example ju
   encounter opens the Super NES face-off from sprout #29 (Fight, Magic, Listen, Item; Master Yun's lesson the first
   time down the east road; the staff as gear per battle-fight-and-magic C). The W.A.V.E. panel is gone; wave.js stays
   only as the rules the face-off uses. The bot plays the face-off by its buttons (`data-cmd`).
-- Board: position `battle-road-opens-face-off` (face-off, not the 3D Moonlit Meridian fight) stands unless he flips it.
+- Board: `battle-road-opens-face-off` overruled 2026-10-19 (ledger council/ledger/2026-10-19-pull-223918.json): "I think we
+  should develop the SNES face-off alongside the 3d Moonlit meridian. I want to see how they develop in parallel using the
+  underlyin glogic, but a different UI". The road keeps the face-off; the Meridian now plays the same fight in 3D.
+- Face-off in 3D: sprout #61 (draft, stacked on #59, branch claude/snes-face-off-un5nbg). `slice/spar.js` is the one spar
+  both screens start; `npm run meridian` bundles slice/battle.js, spar.js and data/ into the Meridian's
+  `web/dist/faceoff.js` (it stays buildless); `web/dist/clips.js` maps each command to a cultivator clip. Rerun the
+  bundle after any rules change, or `npm run test:meridian` fails. test:meridian 16/16 (the 3D page, played by the WAVE
+  policy, replays line for line through slice/battle.js), test:battle 113, walkthrough passes. `?foe=spirit` for the spirit.
+  Not checked: a real phone; the Meridian's hosted Site is not redeployed.
 - Phone build: https://claude.ai/artifact/ArJr2ii1LrquyXeoUi2AUy (multi-file, two publishes for the 255-file limit).
 
 ## Open
 - His phone play of the face-off on the road.
-- #29 is now carried by #59; close #29 once #59 merges.
+- #29 is now carried by #59; close #29 once #59 merges. Merge #61 after #59 (retarget it to #58's branch or main then).
+- His look at the 3D face-off side by side with the SNES one: serve `root-fight/moonlit-meridian/web/dist` (e.g.
+  `python3 -m http.server` there) beside the slice's `?battle=daemon`.
 - `npm run test:playtest` fails on #58's base too (tools/simulate-slice.mjs exits 1 when a farm-fight policy is
   stuck); not from this work.
 - Next build after his look: integration (Mother Ede's first Skilled Helper talk as quest 2), then the settlement.

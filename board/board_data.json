@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-19",
  "positions": [
   {
    "id": "build",
@@ -10541,6 +10541,60 @@
    "auto": true,
    "pos": "'Starship cruiser' was read as Star Wars: Galactic Starcruiser, Disney's two-night immersive voyage. This stands unless you flip it.",
    "why": "A council assumption; flip it if you meant another. Pass: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md"
+  },
+  {
+   "id": "iv-fuel-economy",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "The ship starts with 3 fuel. The tank holds 6, plus one more for each stage each spirit aboard has grown. Waking a part on the hull takes 1 fuel. Ending a visit to the hall of the six or the Big Mind cave mines 2. Each spirit aboard adds 1 when you work a charge through the W.A.V.E. This stands unless you flip it.",
+   "why": "Your overrule of iv-no-mirror asked how much fuel the ship starts with and how it gets more, with No Man's Sky's mining and spirit energy as the answer. Small numbers keep the gauge readable at a glance. Pass and build: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-demo-ungated",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "Every place already built (the WAVE room, the hall of the six, the Big Mind cave) is open from the ship from the start, so nothing on the Chapter 1 demo path waits on fuel, and an empty tank never strands you. Fuel goes to waking parts now and to charting the element lands after the demo. This stands unless you flip it.",
+   "why": "cc-no-failure stands, and the demo is the Kickstarter's gate. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-ally-part-once",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "A daemon that becomes your ally makes one ember for the ship when it joins you, and you choose what part it becomes. The part remembers which daemon made it. The daemon itself is never the part. This stands unless you flip it.",
+   "why": "Your steer on iv-daemon-not-part: daemons in the living-ally state can create parts. One per ally keeps it a gift, not a farm. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-bonus-as-fuel",
+   "faces": [
+    "architect"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "The 3-2-1 bonus for a charge that drops by more than 2 carries over to the ship as 2 extra fuel. It never makes a part stronger. This stands unless you flip it.",
+   "why": "Your overrule of iv-no-bonus (\"I think it should\"), with iv-look-only standing. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-element-until-audit",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "Until the move audit you asked for lands, a ship part takes the element of the charge you worked, not of the move. This stands unless you flip it.",
+   "why": "You overruled cc-move-sets-element pending an audit of moves across surfaces, while iv-element-by-move stands. The charge's own element is what the W.A.V.E. room already knows. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
   }
  ],
  "questions": [
@@ -28062,6 +28116,384 @@
      "shaman"
     ],
     "pass": "asset cost, 2026-10-18"
+   },
+   "battle-road-opens-face-off": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:30:13.849Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "I think we should develop the SNES face-off alongside the 3d Moonlit meridian. I want to see how they develop in parallel using the underlyin glogic, but a different UI",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "sprout walkthrough"
+   },
+   "cc-hearth-slice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:30:17.811Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-seal-fix-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:30:26.159Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-move-sets-element": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:31:52.119Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "I don't know if move-engine is robust enough for this. We need to do an audit across surfaces because I Think this is where most drift is happening\nWe're still figruing out what the fundamental nature of a move is in the game \n5 channels X 3 satisfaction states sheng ke game master faces and daemons",
+    "faces": [
+     "architect"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-pouch-private": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:31:59.809Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-intensity-look": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:32:02.644Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-element-hidden": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:32:31.244Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "I think the act of putting it into the shared lantern should make it public.",
+    "faces": [
+     "diplomat",
+     "challenger",
+     "regent"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-no-stale-lantern": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:32:46.226Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman",
+     "challenger"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-no-failure": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:32:53.726Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-charge-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:33:02.727Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-between-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:33:07.559Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-lantern-offer": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:33:17.927Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent",
+     "shaman"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-no-joint-before-ari": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:33:21.777Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "cc-licence-conflict": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:33:31.842Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "sic-family-cloud": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:33:44.326Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirits-in-caves1"
+   },
+   "sic-unfold-by-sitting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:33:53.226Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "spirits-in-caves1"
+   },
+   "sic-one-store": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:34:01.159Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "spirits-in-caves1"
+   },
+   "sic-loadout-three": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:34:06.659Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirits-in-caves1"
+   },
+   "sic-first-cave-sitting": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:34:37.659Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "you can also find a new spirit in the cave, but you'd need to dismiss one of your own to make room for it if you go into the cave with max spirits.",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "spirits-in-caves1"
+   },
+   "iv-look-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:34:40.809Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-element-by-move": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:34:47.361Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-kind-chosen": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:34:51.311Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-no-bonus": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:35:00.613Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "I think it should",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-daemon-not-part": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:35:37.231Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "I do think that daemons should be able to create parts as well when they are in living ally state.",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-no-private-decay": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:35:41.632Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-no-mirror": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:36:55.265Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "I do think that charge operates as a kind of fuel gauge. we may need to figure out how to gamify this. how much fuel does the ship start with? How does it get more. This is where the no Mans sky system makes the most sense. you can mine fule for the ship from the environments. Spirits energy I do think can power the ship which means the more emotinoally aware someone is the more they can do with their ship",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-lineage": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:37:02.002Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-cave-only": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:37:33.348Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "I woudn't say the ship travels to these places so much as they are places one can travel to from the ship.",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-private-line": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:37:38.715Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-cc0": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:37:43.099Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-starcruiser": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:39:18.799Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "This should've been Spacecruiser Inquiry by A H Almas- though the Galactic Startcuiser wouldn't be a bad model for an immersive voyage event based off of this work",
+    "faces": [
+     "regent"
+    ],
+    "pass": "inner-vessel1"
    }
   },
   "questions": {
@@ -30606,6 +31038,67 @@
      "regent"
     ],
     "pass": "asset cost, 2026-10-18"
+   },
+   "cc-first-made": {
+    "decision": "lantern",
+    "label": "The lantern",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:27:35.913Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect",
+     "challenger"
+    ],
+    "pass": "crafting-charge1"
+   },
+   "sic-demo-showcase": {
+    "decision": "elder",
+    "label": "An elder spirit",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:27:53.146Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "sage"
+    ],
+    "pass": "spirits-in-caves1"
+   },
+   "iv-q-what-ship": {
+    "decision": "home",
+    "label": "A home that moves",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:28:52.995Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "steer": "Honestly a mix of all three is what I'm looking for. Probably B that extends to A (from the 3rd person aesthetic) and the story of whatever game emerges (probably the single player version) is the living ship you have a relationship with.",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-q-between-only": {
+    "decision": "lift",
+    "label": "Lift it for the private ship",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:29:11.011Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "inner-vessel1"
+   },
+   "iv-q-demo-order": {
+    "decision": "beside",
+    "label": "A WAVE-room dock in the demo",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:29:24.494Z",
+    "record": "council/ledger/2026-10-19-pull-223918.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "inner-vessel1"
    }
   },
   "causes": {
@@ -31960,7 +32453,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-18T00:17:43.113Z",
+ "steps_recorded_through": "2026-10-19T22:46:03.555Z",
  "morning": {
   "date": "2026-10-14",
   "gathered_at": "2026-10-14T18:40:28Z",

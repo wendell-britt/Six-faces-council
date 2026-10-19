@@ -1,0 +1,243 @@
+{
+ "date": "2026-10-19",
+ "kind": "board-pull",
+ "newest_save": "2026-10-19T22:39:18.799Z",
+ "answers": {
+  "cc-first-made": {
+   "kind": "question",
+   "choice": "lantern",
+   "savedAt": "2026-10-19T22:27:35.913Z",
+   "steer": ""
+  },
+  "sic-demo-showcase": {
+   "kind": "question",
+   "choice": "elder",
+   "savedAt": "2026-10-19T22:27:53.146Z",
+   "steer": ""
+  },
+  "iv-q-what-ship": {
+   "kind": "question",
+   "choice": "home",
+   "savedAt": "2026-10-19T22:28:52.995Z",
+   "steer": "Honestly a mix of all three is what I'm looking for. Probably B that extends to A (from the 3rd person aesthetic) and the story of whatever game emerges (probably the single player version) is the living ship you have a relationship with. "
+  },
+  "iv-q-between-only": {
+   "kind": "question",
+   "choice": "lift",
+   "savedAt": "2026-10-19T22:29:11.011Z",
+   "steer": ""
+  },
+  "iv-q-demo-order": {
+   "kind": "question",
+   "choice": "beside",
+   "savedAt": "2026-10-19T22:29:24.494Z",
+   "steer": ""
+  },
+  "battle-road-opens-face-off": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:30:13.849Z",
+   "status": "overrule",
+   "steer": "I think we should develop the SNES face-off alongside the 3d Moonlit meridian. I want to see how they develop in parallel using the underlyin glogic, but a different UI"
+  },
+  "cc-hearth-slice": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:30:17.811Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-seal-fix-first": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:30:26.159Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-move-sets-element": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:31:52.119Z",
+   "status": "overrule",
+   "steer": "I don't know if move-engine is robust enough for this. We need to do an audit across surfaces because I Think this is where most drift is happening\nWe're still figruing out what the fundamental nature of a move is in the game \n5 channels X 3 satisfaction states sheng ke game master faces and daemons"
+  },
+  "cc-pouch-private": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:31:59.809Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-intensity-look": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:32:02.644Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-element-hidden": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:32:31.244Z",
+   "status": "stands",
+   "steer": "I think the act of putting it into the shared lantern should make it public. "
+  },
+  "cc-no-stale-lantern": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:32:46.226Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-no-failure": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:32:53.726Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-charge-only": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:33:02.727Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-between-only": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:33:07.559Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-lantern-offer": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:33:17.927Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-no-joint-before-ari": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:33:21.777Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cc-licence-conflict": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:33:31.842Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sic-family-cloud": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:33:44.326Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sic-unfold-by-sitting": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:33:53.226Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sic-one-store": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:34:01.159Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sic-loadout-three": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:34:06.659Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sic-first-cave-sitting": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:34:37.659Z",
+   "status": "stands",
+   "steer": "you can also find a new spirit in the cave, but you'd need to dismiss one of your own to make room for it if you go into the cave with max spirits. \n"
+  },
+  "iv-look-only": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:34:40.809Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-element-by-move": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:34:47.361Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-kind-chosen": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:34:51.311Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-no-bonus": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:35:00.613Z",
+   "status": "overrule",
+   "steer": "I think it should "
+  },
+  "iv-daemon-not-part": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:35:37.231Z",
+   "status": "stands",
+   "steer": "I do think that daemons should be able to create parts as well when they are in living ally state. "
+  },
+  "iv-no-private-decay": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:35:41.632Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-no-mirror": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:36:55.265Z",
+   "status": "overrule",
+   "steer": "I do think that charge operates as a kind of fuel gauge. we may need to figure out how to gamify this. how much fuel does the ship start with? How does it get more. This is where the no Mans sky system makes the most sense. you can mine fule for the ship from the environments. Spirits energy I do think can power the ship which means the more emotinoally aware someone is the more they can do with their ship \n"
+  },
+  "iv-lineage": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:37:02.002Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-cave-only": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:37:33.348Z",
+   "status": "overrule",
+   "steer": "I woudn't say the ship travels to these places so much as they are places one can travel to from the ship. "
+  },
+  "iv-private-line": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:37:38.715Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-cc0": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:37:43.099Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "iv-starcruiser": {
+   "kind": "position",
+   "savedAt": "2026-10-19T22:39:18.799Z",
+   "status": "overrule",
+   "steer": "This should've been Spacecruiser Inquiry by A H Almas- though the Galactic Startcuiser wouldn't be a bad model for an immersive voyage event based off of this work "
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/cc-first-made: The lantern",
+  "questions/sic-demo-showcase: An elder spirit",
+  "questions/iv-q-what-ship: A home that moves (steer: \"Honestly a mix of all three is what I'm looking for. Probably B that extends to A (from the 3rd person aesthetic) and the story of whatever game emerges (probably the single player version) is the living ship you have a relationship with.\")",
+  "questions/iv-q-between-only: Lift it for the private ship",
+  "questions/iv-q-demo-order: A WAVE-room dock in the demo",
+  "positions/battle-road-opens-face-off: Overruled (steer: \"I think we should develop the SNES face-off alongside the 3d Moonlit meridian. I want to see how they develop in parallel using the underlyin glogic, but a different UI\")",
+  "positions/cc-move-sets-element: Overruled (steer: \"I don't know if move-engine is robust enough for this. We need to do an audit across surfaces because I Think this is where most drift is happening\nWe're still figruing out what the fundamental nature of a move is in the game \n5 channels X 3 satisfaction states sheng ke game master faces and daemons\")",
+  "positions/cc-element-hidden: Stands (steer: \"I think the act of putting it into the shared lantern should make it public.\")",
+  "positions/sic-first-cave-sitting: Stands (steer: \"you can also find a new spirit in the cave, but you'd need to dismiss one of your own to make room for it if you go into the cave with max spirits.\")",
+  "positions/iv-no-bonus: Overruled (steer: \"I think it should\")",
+  "positions/iv-daemon-not-part: Stands (steer: \"I do think that daemons should be able to create parts as well when they are in living ally state.\")",
+  "positions/iv-no-mirror: Overruled (steer: \"I do think that charge operates as a kind of fuel gauge. we may need to figure out how to gamify this. how much fuel does the ship start with? How does it get more. This is where the no Mans sky system makes the most sense. you can mine fule for the ship from the environments. Spirits energy I do think can power the ship which means the more emotinoally aware someone is the more they can do with their ship\")",
+  "positions/iv-cave-only: Overruled (steer: \"I woudn't say the ship travels to these places so much as they are places one can travel to from the ship.\")",
+  "positions/iv-starcruiser: Overruled (steer: \"This should've been Spacecruiser Inquiry by A H Almas- though the Galactic Startcuiser wouldn't be a bad model for an immersive voyage event based off of this work\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
