@@ -28643,6 +28643,135 @@
      "regent"
     ],
     "pass": "inner-vessel1"
+   },
+   "iv-fuel-economy": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:53:28.530Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "inner-vessel build 1"
+   },
+   "iv-ally-part-once": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:53:35.319Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "inner-vessel build 1"
+   },
+   "iv-element-until-audit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:53:45.455Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "inner-vessel build 1"
+   },
+   "iv-demo-ungated": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:53:50.126Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "inner-vessel build 1"
+   },
+   "mn-basic-moves-apart": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:54:00.120Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "move-nature1"
+   },
+   "iv-bonus-as-fuel": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:54:03.499Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "inner-vessel build 1"
+   },
+   "mn-checkin-fix": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:54:19.124Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "move-nature1"
+   },
+   "mn-gold-names": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:54:33.776Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "move-nature1"
+   },
+   "mn-root-fight-reply": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:54:56.294Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "move-nature1"
+   },
+   "mn-ember-both": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:54:58.410Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "move-nature1"
+   },
+   "mn-transcend-plus-two": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:55:23.893Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "steer": "yes I do think these should be separate. The 2 steps makes the most sense",
+    "faces": [
+     "regent"
+    ],
+    "pass": "move-nature1"
    }
   },
   "questions": {
@@ -31248,6 +31377,45 @@
      "regent"
     ],
     "pass": "inner-vessel1"
+   },
+   "mn-q-face-daemon": {
+    "decision": "own",
+    "label": "Each face and daemon owns its moves",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:56:09.509Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "steer": "Daemons have habits and their own moves, but I don't think they have a home channel",
+    "faces": [
+     "shaman",
+     "regent",
+     "diplomat"
+    ],
+    "pass": "move-nature1"
+   },
+   "mn-q-ke-state": {
+    "decision": "depends",
+    "label": "Depends on where you start",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:56:29.625Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "move-nature1"
+   },
+   "mn-q-what-move-is": {
+    "decision": "both",
+    "label": "Both, kept as two layers",
+    "recorded": "2026-10-19",
+    "saved_at": "2026-10-19T22:56:47.692Z",
+    "record": "council/ledger/2026-10-19-pull-225647.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman",
+     "sage"
+    ],
+    "pass": "move-nature1"
    }
   },
   "causes": {
