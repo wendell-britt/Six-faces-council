@@ -89,7 +89,7 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   timeout before reaching the hall). Not done: no look on a phone; Self does not pause a 3-2-1 or W.A.V.E. in progress, it only stops the walk;
   the six face branches are skipped in the new daemon checks (marked walked); `visit` is kept at the first page of a later meeting, with no minimum time.
 
-- Slice 5, the elder spirit, and making room for a new spirit (2026-10-19, thread "Elder spirit showcase"): bars-engine #398 (draft, branch
+- Slice 5, the elder spirit, and a new spirit met at three (2026-10-19, thread "Elder spirit showcase"): bars-engine #398 (draft, branch
   `claude/elder-spirit-showcase-g7jxmm`). Board `sic-demo-showcase` = elder; his note on `sic-first-cave-sitting` folded into 4b. scout: rung 2 for the
   forms (the spirit page's GLBs, bake_spirits.py), rung 3 for decimation (gltf-transform simplify via npx). In home base (the WAVE room, taken
   as the intro cave since the loadout lives there), a Shellback ally stands beside the door. The first Welcome page says it greets you; a tap plays
@@ -98,7 +98,7 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   followed, y-up turned to the page's z-up, painted materials (skin, shell, cloth) toned by element. The ten earlier files bake byte-identical.
   `spirit-forms.js` LATE draws creature and ally for the Shellback and the families wearing it. In the Cave of Lessons a newly met spirit
   joins the loadout. With three of yours walking it waits while you let one rest in the WAVE room (out of the loadout, sittings kept) or leave
-  it, to be asked again next time. Checks: cave-test alone 441 of 441 (new: room card, rest, loadout, the elder's greeting, tap, form order,
+  it, to be asked again next time. Checks: cave-test alone 441 of 441 (new: the card that asks one to rest, the rest, loadout, the elder's greeting, tap, form order,
   Creature, Back). Not done: no look on a phone; unlit creature and ally read as one-colour silhouettes; other families have no creature or ally.
 
 ## Next
