@@ -1,0 +1,58 @@
+{
+ "positions": [
+  {
+   "id": "iv-fuel-economy",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "The ship starts with 3 fuel. The tank holds 6, plus one more for each stage each spirit aboard has grown. Waking a part on the hull takes 1 fuel. Ending a visit to the hall of the six or the Big Mind cave mines 2. Each spirit aboard adds 1 when you work a charge through the W.A.V.E. This stands unless you flip it.",
+   "why": "Your overrule of iv-no-mirror asked how much fuel the ship starts with and how it gets more, with No Man's Sky's mining and spirit energy as the answer. Small numbers keep the gauge readable at a glance. Pass and build: council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-demo-ungated",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "Every place already built (the WAVE room, the hall of the six, the Big Mind cave) is open from the ship from the start, so nothing on the Chapter 1 demo path waits on fuel, and an empty tank never strands you. Fuel goes to waking parts now and to charting the element lands after the demo. This stands unless you flip it.",
+   "why": "cc-no-failure stands, and the demo is the Kickstarter's gate. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-ally-part-once",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "A daemon that becomes your ally makes one ember for the ship when it joins you, and you choose what part it becomes. The part remembers which daemon made it. The daemon itself is never the part. This stands unless you flip it.",
+   "why": "Your steer on iv-daemon-not-part: daemons in the living-ally state can create parts. One per ally keeps it a gift, not a farm. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-bonus-as-fuel",
+   "faces": [
+    "architect"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "The 3-2-1 bonus for a charge that drops by more than 2 carries over to the ship as 2 extra fuel. It never makes a part stronger. This stands unless you flip it.",
+   "why": "Your overrule of iv-no-bonus (\"I think it should\"), with iv-look-only standing. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  },
+  {
+   "id": "iv-element-until-audit",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "inner-vessel build 1",
+   "auto": true,
+   "pos": "Until the move audit you asked for lands, a ship part takes the element of the charge you worked, not of the move. This stands unless you flip it.",
+   "why": "You overruled cc-move-sets-element pending an audit of moves across surfaces, while iv-element-by-move stands. The charge's own element is what the W.A.V.E. room already knows. council/passes/6FACE_PASS_inner-vessel1_2026-10-18.md; council/callsheets/inner-vessel.md (2026-10-19)"
+  }
+ ]
+}
