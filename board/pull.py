@@ -169,6 +169,11 @@ def find_steps(data, store):
             if isinstance(n, dict) and (n.get("text") or "").strip() and n.get("at", "") > since:
                 out.append({"id": f.stem, "at": n["at"], "what": "file note", "file": fid, "title": titles.get(fid, fid),
                             "note": n["text"].strip(), "do": doc.get("do", "")})
+        # A discard from the hand (2026-10-20) is priority data: when, until when, and the vibeulon paid for it.
+        for d in doc.get("discards") or []:
+            if isinstance(d, dict) and d.get("at", "") > since:
+                out.append({"id": f.stem, "at": d["at"], "what": "discarded", "until": d.get("until"),
+                            "vibeulon": d.get("vibeulon"), "do": doc.get("do", "")})
         for m in doc.get("moved") or []:
             if m.get("at", "") > since:
                 out.append({"id": f.stem, "at": m["at"], "what": "moved", "from": m.get("from"), "to": m.get("to"),

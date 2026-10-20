@@ -140,6 +140,39 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-step summary{cursor:pointer;color:var(--muted)}
 .st-step textarea{margin-top:6px}
 .st-state{font-size:.8rem;color:var(--muted);min-height:1.2em}
+/* Your hand (Wendell, 2026-10-20): the steps tab deals at most five cards. hd- prefix. The shuffle is a riffle of the deck,
+   then the cards deal out one by one; it plays when the hand changes or he taps Shuffle, never on an ordinary redraw. */
+.hd{margin:16px 0 8px}
+.hd-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.hd-bar h2{margin:0;font-family:var(--display)}
+.hd-meta{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.hd-wallet{font-size:.85rem;padding:2px 10px;border:1px solid var(--accent);border-radius:12px;color:var(--accent);font-variant-numeric:tabular-nums}
+.hd-bar .st-btn{margin-left:auto}
+.hd-deckpile{position:relative;width:34px;height:46px;flex:none}
+.hd-deckpile i{position:absolute;inset:0;border:1.5px solid var(--accent);border-radius:5px;background:var(--accent-soft)}
+.hd-deckpile i:nth-child(2){transform:translate(2px,-2px)}
+.hd-deckpile i:nth-child(3){transform:translate(4px,-4px);background:var(--panel)}
+.hd.hd-anim .hd-deckpile i:nth-child(1){animation:hd-riffle-l .45s ease-in-out 2}
+.hd.hd-anim .hd-deckpile i:nth-child(3){animation:hd-riffle-r .45s ease-in-out 2}
+@keyframes hd-riffle-l{50%{transform:translate(-14px,2px) rotate(-12deg)}}
+@keyframes hd-riffle-r{50%{transform:translate(18px,-6px) rotate(12deg)}}
+ol.hd-cards{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;align-items:start}
+.hd-card{background:var(--panel);border:1.5px solid var(--accent);border-radius:10px;padding:12px 14px 10px;box-shadow:0 2px 0 var(--line),0 6px 14px rgba(0,0,0,.08);display:grid;gap:8px;min-width:0}
+.hd-card:has(details[open]){grid-column:1/-1}
+.hd-card.hd-over{border-color:var(--warn)}
+.hd-card.hd-new{animation:hd-deal .5s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--d) + var(--i) * 110ms)}
+@keyframes hd-deal{from{opacity:0;transform:translate(var(--dx),-40px) rotate(var(--r)) scale(.8)}}
+.hd-head{display:flex;justify-content:space-between;gap:8px;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.hd-from{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hd-card ol.st-steps .st-step{border-top:0;padding:0}
+.hd-card .st-list{margin:0;padding:0;border:0;background:none}
+.hd-ttv .st-do{margin:0}
+.hd-acts{display:flex;flex-wrap:wrap;gap:6px;border-top:1px dashed var(--line);padding-top:8px}
+.hd-acts .st-btn[disabled]{opacity:.45;cursor:not-allowed}
+.hd-away{font-size:.8rem;color:var(--muted)}
+.hd-deck{margin:18px 0}
+.hd-deck > summary{cursor:pointer;font-family:var(--display);font-size:1.15rem;padding:10px 0}
+@media (prefers-reduced-motion: reduce){.hd-card.hd-new,.hd.hd-anim .hd-deckpile i{animation:none}}
 /* Where you are (Wendell, 2026-10-06: "be able to tag activities as needing a computer"). On a phone, steps that need a
    computer fold to one line so the list shows what can be done now. The choice is kept on this device only. */
 .st-where{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:14px 0 4px}
@@ -424,8 +457,16 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
     <p class="st-sum" id="st-where-sum"></p>
   </div>
   <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
+  <div class="hd" id="hd" hidden>
+    <div class="hd-bar"><span class="hd-deckpile" aria-hidden="true"><i></i><i></i><i></i></span><h2>Your hand</h2><span class="hd-meta" id="hd-meta"></span><span class="hd-wallet" id="hd-wallet"></span><button type="button" class="st-btn" data-hd="shuffle">Shuffle</button></div>
+    <p class="st-src">Five cards at a time, Tap the Vein included. Inner work on a card (the WAVE run, with its 3-2-1) mints a vibeulon. Pay one to discard a card, and it comes back on the ladder: 3 days, then 7, 14, 30, 60 and 90.</p>
+    <p class="st-state" id="hd-state" role="status"></p>
+    <ol class="hd-cards" id="hd-cards"></ol>
+  </div>
+  <details class="hd-deck" id="hd-deck"><summary id="hd-deck-sum">The deck</summary>
   <div id="steps-chase"></div>
   <div id="steps-todo"></div>
+  </details>
   <div id="steps-done"></div>
 </section>
 
@@ -1032,6 +1073,7 @@ function bkDraw(){
     h = `<p class="bt-say">${e.kind === 'stuck' ? 'It is still in the way, and now it has a name.' : 'Worked through.'} <b>${esc(l)}</b>${e.date ? ` · ${esc(stFmt(e.date))}` : ''}</p>
       <ul class="bk-log">${r.rounds.map(x => `<li>${esc(x.name || 'unnamed')}${x.element ? ` (${esc((BK_ELEMENTS.find(e => e[0] === x.element) || [])[1] || x.element)})` : ''}: ${x.aligned ? 'stayed' : 'shown the door'}${x.part321 ? ', a part was met' : ''}</li>`).join('')}</ul>
       ${r.charge.before !== null && r.charge.after !== null ? `<p class="bt-sub">Charge ${r.charge.before} to ${r.charge.after}.</p>` : ''}
+      ${r.vibeulon ? '<p class="bt-sub"><b>This inner work minted a vibeulon.</b> Pay it in your hand to discard any card.</p>' : ''}
       <p class="bt-sub">${db ? 'The run is saved on the board. Go back to your steps and press Send to Claude, and Claude reads what came up.' : 'This view cannot save, so the run stays on screen only.'}</p>${go('Back to your steps', 'close')}`;
   }
   $b('bk-box').innerHTML = warn + h;
@@ -1070,8 +1112,9 @@ async function bkFinish(){
   const at = new Date().toISOString();
   r.resolution = {kind, text, ...(kind === 'moved' ? {date} : {}), at};
   r.status = kind === 'stuck' ? 'stuck' : 'resolved'; r.finishedAt = at;
+  r.vibeulon = {at, by: 'inner work'};
   bk.stage = 'done';
-  if (!(await bkSave())){ r.status = 'open'; r.resolution = null; bk.stage = 'end'; return bkDraw(); }
+  if (!(await bkSave())){ r.status = 'open'; r.resolution = null; delete r.vibeulon; bk.stage = 'end'; return bkDraw(); }
   // The step carries a pointer to its latest run; a moved date is moved the way the Move button moves it, with the why.
   const s = stSteps[bk.id];
   if (db && s){
@@ -1142,6 +1185,7 @@ function stPeek(s, over){
   if (s.device === 'computer' && !s.done) bits.push('Computer');
   if (s.optional) bits.push('Optional');
   if (s.note) bits.push('Has a note');
+  if (hdAway(s)) bits.unshift(`Discarded, back ${esc(stFmt(s.discardedUntil))}`);
   const nf = stFiles(s).length;
   if (nf) bits.push(`${nf} to review`);
   return bits.join(' · ');
@@ -1205,12 +1249,12 @@ function stStep(id, s){
     </div>
   </li>`;
 }
-function stList(id, l){
+function stList(id, l, skip = new Set()){
   const all = stOf(id), req = stReq(all), n = req.filter(([,s]) => s.done).length;
   const pct = req.length ? Math.round(100 * n / req.length) : 0;
   const next = req.filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0];
   const nextTxt = next ? `<span class="${stDaysLeft(next) < 0 ? 'st-due-over' : ''}">Next due ${esc(stFmt(next))}</span>` : '';
-  const open = all.filter(([,s]) => !stClosed(s)), closed = all.filter(([,s]) => stClosed(s));
+  const open = all.filter(([sid, s]) => !stClosed(s) && !skip.has(sid)), closed = all.filter(([,s]) => stClosed(s));
   const withdrawn = all.filter(([,s]) => s.retired).length;
   const count = req.length ? `${n} of ${req.length} done` : 'Nothing left to do';
   const closedHtml = closed.length ? `<details class="st-closed" data-group="g-${id}"${stOpenGroups.has('g-' + id) ? ' open' : ''}><summary>Completed (${closed.length})</summary><ol class="st-steps">${closed.map(([sid, s]) => stStep(sid, s)).join('')}</ol></details>` : '';
@@ -1231,13 +1275,17 @@ function renderSteps(){
      Morning moves list: "is this working? Why is it on my todo list?"). */
   const live = ids.filter(id => stOf(id).length > 0);
   const todo = live.filter(id => !stFinished(id)), done = live.filter(id => stFinished(id));
-  document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id])).join('');
+  const chases = ocChases(), hand = hdDraw(todo, chases), inHand = new Set(hand.map(c => c.id));
+  hdRender(hand);
+  document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id], inHand)).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
-  const chases = ocChases();
-  document.getElementById('steps-chase').innerHTML = chList(chases);
-  document.getElementById('steps-empty').hidden = todo.length > 0 || chases.length > 0;
-  document.getElementById('n-steps').textContent = todo.length + (chases.some(c => c.chase) ? 1 : 0);
+  document.getElementById('steps-chase').innerHTML = inHand.has('chases') ? '' : chList(chases);
+  document.getElementById('steps-empty').hidden = hand.length > 0 || todo.length > 0 || chases.length > 0;
+  document.getElementById('n-steps').textContent = hand.length;
   const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
+  const away = open.filter(([,s]) => hdAway(s)).length, waiting = open.filter(([sid]) => !inHand.has(sid)).length - away;
+  document.getElementById('hd-deck').hidden = todo.length === 0 && !(chases.length && !inHand.has('chases'));
+  document.getElementById('hd-deck-sum').textContent = `The deck: ${waiting} more step${waiting === 1 ? '' : 's'} waiting${away ? `, ${away} discarded until their day` : ''}`;
   const pc = open.filter(([,s]) => s.device === 'computer').length;
   document.querySelectorAll('[data-where]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.where === stWhere)));
   document.getElementById('st-where').hidden = open.length === 0;
@@ -1246,6 +1294,136 @@ function renderSteps(){
     : `${open.length} open, ${pc} of them need a computer.`;
   if (active){ const el = document.getElementById(active); if (el && el.closest('#view-steps')) el.focus(); }
 }
+/* ---- Your hand (hd-) ----
+   Wendell, 2026-10-20: "Tasks that i need to do (this in the your steps pane) should be rendered as cards with an animation
+   that shuffles them. I can only have 5 at a time in my "hand" this includes what comes from tap the vein. ... I can
+   discard a card if I do some inner work on it, a 321 a WAVE process- that would mint a vibeulon and I can pay a vibeulon
+   to discard the card". The hand is a view over the steps store: drawing it writes nothing. Five cards are drawn by
+   position hd-draw: today's Tap the Vein lines, then overdue steps (longest overdue first), then podcast chases, then by
+   due date, then the rest in list order. Steps are numbered because the order is real, so only a list's next step can be
+   drawn, and a list whose next step is discarded sits out until it comes back. Everything not in the hand stays in the
+   deck below it, whole. Inner work is the blocker panel's WAVE run with its 3-2-1; a finished run mints one vibeulon on its
+   blockers/ record (hd-mint). Discarding pays the oldest unspent one and writes discards[] and discardedUntil on the step;
+   the card comes back on the seed library's ladder (sl-resurface-ladder, council/bar_read.py's LADDER). A Tap the Vein
+   line becomes a step in the ttv list the first time he acts on it, so its tick, note, run and discard are a step's. */
+const HD_SIZE = 5;
+const HD_LADDER = [3, 7, 14, 30, 60, 90];
+let hdShown = '', hdPrev = new Set(), hdOrder = [], hdFresh = new Set(), hdRiffle = false, hdAnimUntil = 0, hdArmed = '';
+const hdAway = s => !!(s && s.discardedUntil && s.discardedUntil > new Date().toISOString());
+const hdDays = s => HD_LADDER[Math.min(((s && s.discards) || []).length, HD_LADDER.length - 1)];
+const hdTtvId = it => 'ttv-' + String(it.taskId || it.id || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 80);
+// Today's sealed Tap the Vein lines: the Morning tab's free-write category.
+function hdTtv(){
+  const cat = ((MO && MO.categories) || []).find(c => c.key === 'menu');
+  return ((cat && cat.items) || []).filter(it => it && it.text && (it.taskId || it.id)).map(it => ({id: hdTtvId(it), it}));
+}
+const hdSpent = () => new Set(Object.values(stSteps).flatMap(s => (s.discards || []).map(d => d.vibeulon)));
+function hdWallet(){
+  const spent = hdSpent();
+  return Object.entries(bkRecs).filter(([k, r]) => r && r.vibeulon && !spent.has(k))
+    .sort((a, b) => String(a[1].vibeulon.at || '').localeCompare(String(b[1].vibeulon.at || ''))).map(([k]) => k);
+}
+function hdDraw(todo, chases){
+  const cards = [], seen = new Set();
+  for (const x of hdTtv()){
+    const s = stSteps[x.id]; seen.add(x.id);
+    if (s && (stClosed(s) || hdAway(s))) continue;
+    cards.push(s ? {kind: 'step', id: x.id, s, rank: 0, key: '0'} : {kind: 'ttv', id: x.id, it: x.it, rank: 0, key: '0'});
+  }
+  for (const id of todo){
+    const req = stReq(stOf(id)).filter(([sid, s]) => !s.done && !seen.has(sid));
+    // A Tap the Vein line has no order behind it, so every open one can be drawn; a list's steps go one at a time.
+    for (const [sid, s] of id === 'ttv' ? req.filter(([, s]) => !hdAway(s)) : req.slice(0, 1).filter(([, s]) => !hdAway(s))){
+      const left = stDaysLeft(s.due);
+      cards.push({kind: 'step', id: sid, s, rank: id === 'ttv' ? 0 : left !== null && left < 0 ? 1 : s.due ? 3 : 4, key: id === 'ttv' ? '1' + String(s.created || '') : s.due || '9999'});
+    }
+  }
+  if (chases.some(c => c.chase)) cards.push({kind: 'chase', id: 'chases', chases, rank: 2, key: ''});
+  // A stable sort keeps renderSteps' list order for cards that tie.
+  return cards.sort((a, b) => a.rank - b.rank || a.key.localeCompare(b.key)).slice(0, HD_SIZE);
+}
+function hdShuffled(ids){
+  const a = [...ids];
+  for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
+  return a;
+}
+// Deal the whole hand again, after a riffle of the deck: on Shuffle, on opening the tab, and on the first hand of a load.
+function hdDealAll(){ hdFresh = new Set(hdOrder); hdRiffle = true; hdAnimUntil = Date.now() + 1800; }
+function hdCard(c, i, n, fresh){
+  const s = c.s || {}, ttv = c.kind === 'ttv' || s.list === 'ttv';
+  const style = `--i:${fresh};--d:${hdRiffle ? '.9s' : '0s'};--dx:${Math.round((i - (n - 1) / 2) * -70)}px;--r:${(i % 2 ? 1 : -1) * (8 + i * 3)}deg`;
+  const cls = `hd-card${c.kind === 'step' && stOverdue(s) ? ' hd-over' : ''}${fresh >= 0 ? ' hd-new' : ''}`;
+  const from = c.kind === 'chase' ? 'Podcast chases' : ttv ? 'Tap the Vein' : (stLists[s.list] || {}).title || s.list || '';
+  const head = `<div class="hd-head"><span class="hd-from">${esc(from)}</span><span>${i + 1} of ${n}</span></div>`;
+  if (c.kind === 'chase') return `<li class="${cls}" style="${style}" id="hd-chases">${head}${chList(c.chases)}</li>`;
+  const read = c.kind === 'ttv' && c.it.read;
+  const body = c.kind === 'ttv'
+    ? `<div class="hd-ttv"><p class="st-do">${esc(c.it.text)}</p>${read ? `<p class="st-src">${esc(FO_CALL[read.call] || read.call || '')}${read.why ? `: ${esc(read.why)}` : ''}</p>` : ''}</div>`
+    : `<ol class="st-steps">${stStep(c.id, s)}</ol>`;
+  const coins = hdWallet().length, armed = hdArmed === c.id;
+  const acts = `<div class="hd-acts">${c.kind === 'ttv' ? `<button type="button" class="st-btn st-solid" data-hd="done" data-id="${esc(c.id)}">Done</button>` : ''}
+    <button type="button" class="st-btn" data-hd="work" data-id="${esc(c.id)}">Inner work</button>
+    <button type="button" class="st-btn${armed ? ' st-solid' : ''}" data-hd="discard" data-id="${esc(c.id)}"${coins ? '' : ' disabled title="Inner work on a card mints the vibeulon a discard costs"'}>${armed ? `Pay 1 vibeulon: back in ${hdDays(s)} days` : 'Discard'}</button></div>`;
+  return `<li class="${cls}" style="${style}" id="hd-${esc(c.id)}">${head}${body}${acts}</li>`;
+}
+function hdRender(hand){
+  const box = document.getElementById('hd'), ids = hand.map(c => c.id), key = [...ids].sort().join('|');
+  box.hidden = !hand.length;
+  if (key !== hdShown){
+    hdOrder = [...hdOrder.filter(id => ids.includes(id)), ...ids.filter(id => !hdOrder.includes(id))];
+    if (!hdPrev.size) hdDealAll();
+    else { hdFresh = new Set(ids.filter(id => !hdPrev.has(id))); hdRiffle = false; hdAnimUntil = Date.now() + 1200; }
+    hdShown = key; hdPrev = new Set(ids);
+  }
+  if (Date.now() > hdAnimUntil){ hdFresh = new Set(); hdRiffle = false; }
+  box.classList.toggle('hd-anim', hdRiffle);
+  const byId = Object.fromEntries(hand.map(c => [c.id, c])), order = hdOrder.filter(id => byId[id]), fresh = order.filter(id => hdFresh.has(id));
+  document.getElementById('hd-cards').innerHTML = order.map((id, i) => hdCard(byId[id], i, order.length, fresh.indexOf(id))).join('');
+  const coins = hdWallet().length;
+  document.getElementById('hd-wallet').textContent = `${coins} vibeulon${coins === 1 ? '' : 's'}`;
+  document.getElementById('hd-meta').textContent = `${hand.length} of ${HD_SIZE}`;
+}
+// A Tap the Vein line is written as a step the first time he acts on it; a step is already one.
+async function hdEnsure(id){
+  if (stSteps[id]) return true;
+  const x = hdTtv().find(t => t.id === id); if (!x) return false;
+  const at = now();
+  if (!stLists.ttv){
+    const l = {title: 'From Tap the Vein', repo: 'tap the vein', why: 'Lines you sealed in Tap the Vein and then acted on in your hand.', source: 'Tap the Vein', created: at};
+    await db.doc('lists/ttv').set(l); stLists.ttv = l;
+  }
+  const n = Object.values(stSteps).filter(s => s.list === 'ttv').length + 1;
+  const s = {list: 'ttv', n, do: x.it.text, device: 'phone', source: 'tap-the-vein', ttv: {taskId: x.it.taskId || null, item: x.it.id || null, date: (MO && MO.date) || null}, created: at};
+  await db.doc('steps/' + id).set(s); stSteps[id] = s; return true;
+}
+async function hdClick(t){
+  const a = t.dataset.hd, id = t.dataset.id, st = document.getElementById('hd-state');
+  st.textContent = '';
+  if (a === 'shuffle'){ hdArmed = ''; hdOrder = hdShuffled(hdOrder); hdDealAll(); return renderSteps(); }
+  if (!db){ document.getElementById('banner').classList.add('on'); return; }
+  try { if (!(await hdEnsure(id))){ st.textContent = 'That card is no longer in the menu.'; return; } }
+  catch (err){ st.textContent = `That card could not be saved (${err && err.code || 'error'}).`; return; }
+  const s = stSteps[id];
+  if (a === 'work') return openBlocker(id);
+  if (a === 'done'){
+    const at = now(); stSteps[id] = {...s, done: true, doneAt: at}; renderSteps();
+    try { await db.doc('steps/' + id).update({done: true, doneAt: at}); }
+    catch (err){ stSteps[id] = s; renderSteps(); st.textContent = `Could not save the tick (${err && err.code || 'error'}).`; }
+    return;
+  }
+  if (a !== 'discard') return;
+  // Two taps: the first shows the price and the day it comes back, the second pays.
+  if (hdArmed !== id){ hdArmed = id; return renderSteps(); }
+  hdArmed = '';
+  const coin = hdWallet()[0];
+  if (!coin){ st.textContent = 'No vibeulon yet. Inner work on a card mints one.'; return renderSteps(); }
+  const at = new Date(), days = hdDays(s), until = new Date(at.getTime() + days * 864e5).toISOString();
+  const discards = [...(s.discards || []), {at: at.toISOString(), until, days, vibeulon: coin}];
+  stSteps[id] = {...s, discards, discardedUntil: until}; renderSteps();
+  try { await db.doc('steps/' + id).update({discards, discardedUntil: until}); st.textContent = `Discarded. It comes back on ${stFmt(until)}.`; }
+  catch (err){ stSteps[id] = s; renderSteps(); st.textContent = `Could not discard (${err && err.code || 'error'}).`; }
+}
+document.getElementById('tab-steps').addEventListener('click', () => { hdDealAll(); renderSteps(); });
 function stSecret(len){
   const bytes = new Uint8Array(Math.ceil(len * 3 / 4) + 3); crypto.getRandomValues(bytes);
   return btoa(String.fromCharCode(...bytes)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'').slice(0, len);
@@ -1264,6 +1442,7 @@ stepsView.addEventListener('input', e => {
 });
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.hd) return hdClick(t);
   if (t.dataset.where){
     stWhere = t.dataset.where; try { localStorage.setItem('st-where', stWhere); } catch {}
     renderSteps(); return;
