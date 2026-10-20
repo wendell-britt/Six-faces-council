@@ -32936,9 +32936,9 @@
  ],
  "steps_recorded_through": "2026-10-19T22:50:39.003Z",
  "morning": {
-  "date": "2026-10-14",
-  "gathered_at": "2026-10-14T18:40:28Z",
-  "sealed": "2026-10-15",
+  "date": "2026-10-20",
+  "gathered_at": "2026-10-20T00:23:57Z",
+  "sealed": null,
   "pick_limit": 7,
   "goals": [],
   "lenses": {
@@ -32973,54 +32973,211 @@
      "prompt": "Who is better off because you showed up?",
      "goals": []
     }
-   ]
+   ],
+   "note": "goals export not read: the key was refused (401); set COUNCIL_MENU_TOKEN or the proxy's key to the one in Vercel"
+  },
+  "seeds": {
+   "seeds": [],
+   "back": [],
+   "read": false,
+   "note": "seed library not read: the key was refused (401); set COUNCIL_MENU_TOKEN or the proxy's key to the one in Vercel"
   },
   "categories": [
    {
     "key": "menu",
     "title": "From your free write",
     "blurb": "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).",
+    "items": [],
+    "note": "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
+   },
+   {
+    "key": "board",
+    "title": "Waiting on you on the board",
+    "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
     "items": [
      {
-      "id": "menu-task:cmv9yesei000213u0weuoya6f",
-      "text": "Respond to Madi",
-      "note": "Task",
+      "id": "board-ttv-one-ui",
+      "text": "The board shows bars-engine's own Tap the Vein in its Morning tab, never a copy of it. The claude.ai page links out to it.",
+      "ref": "ttv-one-ui",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, tap the vein on the board",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "diplomat",
+       "kernel": "One Tap the Vein, the one bars-engine serves, so the two pages stop disagreeing on his screen.",
+       "date": "2026-10-20",
+       "list": "board",
+       "listTitle": "Waiting on you on the board",
+       "missing": [],
+       "gathered": [],
+       "workable": true,
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Waiting on you on the board",
+         "note": "The row quotes his words of 2026-10-19 about the two pages confusing him."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "Built and merged on 2026-10-19 in bars-engine #403 and Six-faces-council #312."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 0,
+         "note": "Nothing waits on it now that both pull requests are in."
+        },
+        "waiting": {
+         "days": 1,
+         "note": "One day on the waiting list as a standing position."
+        }
+       },
+       "call": "let-go-offered",
+       "decidedBy": "ready",
+       "why": "Both pull requests merged on 19 October, so this position already holds. It can leave the waiting list unless he wants to flip it."
+      }
+     },
+     {
+      "id": "board-tb-sealed-is-bar",
+      "text": "A line you seal in Tap the Vein is a BAR the council can read. Today's task is one form of it; resting in the seed library or joining a strand is another. A BAR still creates no duty to build it. This updates ttv-task-not-bar: sealing is…",
+      "ref": "tb-sealed-is-bar",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, ttv-bars 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "architect",
+       "kernel": "Every line he seals is a BAR the council may read, with no duty to build it.",
+       "date": "2026-10-20",
+       "list": "board",
+       "listTitle": "Waiting on you on the board",
+       "missing": [],
+       "gathered": [],
+       "workable": true,
+       "opponent": {
+        "kind": "callsheet",
+        "ref": "morning-menu",
+        "what": "the Morning lists flow that reads BARs",
+        "title": "morning-menu",
+        "entry": "2026-10-20, thread \"Morning lists into the faces' flow\" (branch claude/morning-lists-flow-ark0q6, draft PR on Six-faces-council): the orphaned Morning tab lists (waiting on you, steps, due, handoff, o"
+       },
+       "factors": {
+        "signal": {
+         "list": "Waiting on you on the board",
+         "note": "A standing position from pass ttv-bars 1 on 2026-10-19."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "council/bar_read.py already reads sealed lines by this rule."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 1,
+         "note": "It is the ground the morning-menu strand's reads stand on."
+        },
+        "waiting": {
+         "days": 1,
+         "note": "One day on the waiting list."
+        }
+       },
+       "call": "join",
+       "decidedBy": "unlocks",
+       "why": "The morning-menu strand already applies this rule in bar_read.py. It belongs with that work and needs nothing from him unless he flips it."
+      }
+     },
+     {
+      "id": "board-tb-face-unpacks",
+      "text": "One face reads each sealed line: what it is reaching for in one sentence, where it belongs, what stops it being worked today, and what the face found in the record to fill that gap. The read lives on the board, never in your task or its…",
+      "ref": "tb-face-unpacks",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, ttv-bars 1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "shaman",
+       "kernel": "Each sealed line gets one face that listens for what it reaches for before anyone judges it.",
+       "date": "2026-10-20",
+       "list": "board",
+       "listTitle": "Waiting on you on the board",
+       "missing": [],
+       "gathered": [],
+       "workable": true,
+       "opponent": {
+        "kind": "callsheet",
+        "ref": "morning-menu",
+        "what": "the faces' reads on the Morning tab",
+        "title": "morning-menu",
+        "entry": "2026-10-20, thread \"Morning lists into the faces' flow\" (branch claude/morning-lists-flow-ark0q6, draft PR on Six-faces-council): the orphaned Morning tab lists (waiting on you, steps, due, handoff, o"
+       },
+       "factors": {
+        "signal": {
+         "list": "Waiting on you on the board",
+         "note": "His words in the row ask the council to unpack a line until it can be worked."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "The reads he sees this morning are this rule in practice."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 1,
+         "note": "Each morning's reads depend on it."
+        },
+        "waiting": {
+         "days": 1,
+         "note": "One day on the waiting list."
+        }
+       },
+       "call": "join",
+       "decidedBy": "signal",
+       "why": "This morning's reads are this position at work. It rests inside the morning-menu strand and needs his look only if he wants it changed."
+      }
+     },
+     {
+      "id": "board-tb-context-first",
+      "text": "A free-write line gets its context gathered before it meets council work, so it is judged on what it is, not on what the council happens to know already.",
+      "ref": "tb-context-first",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, ttv-bars 1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "menu-task:cmv9yete9000b13u0tih30ze6",
-      "text": "Reach out to Marina",
-      "note": "Task",
+      "id": "board-tb-face-off",
+      "text": "Each read line meets the one piece of council work competing for the same hours. Four factors show one by one (your signal, how ready it is, what it unlocks, how long it has waited), never added into one score, and the call names the…",
+      "ref": "tb-face-off",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, ttv-bars 1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "menu-task:cmv9yeuah000k13u0k6cbyoyq",
-      "text": "Start a newsletter",
-      "note": "Task",
+      "id": "board-tb-call-is-advice",
+      "text": "The council's call is advice: work it today, defer it to the seed library, join it to a strand, or (only ever offered) let it go. You tap the outcome in Tap the Vein. Nothing is deferred or composted for you.",
+      "ref": "tb-call-is-advice",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, ttv-bars 1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "menu-task:cmv9yex46001213u0maguuehe",
-      "text": "Make a Facebook post for my coaching site",
-      "note": "Task",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "menu-line:schedule time with dre",
-      "text": "Schedule time with Dre",
-      "note": "Kept line",
+      "id": "board-tb-loss-not-avoidance",
+      "text": "A line that keeps losing face-offs is read as missing conditions (no first step, no home, a missing input), never as avoidance. A longer charge note does not help a line win.",
+      "ref": "tb-loss-not-avoidance",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, ttv-bars 1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
@@ -33029,16 +33186,585 @@
     ]
    },
    {
-    "key": "board",
-    "title": "Waiting on you on the board",
-    "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
-    "items": []
-   },
-   {
     "key": "steps",
     "title": "Steps due today",
     "blurb": "Your steps on the Your steps tab that are due today or overdue and not done.",
-    "items": []
+    "items": [
+     {
+      "id": "step-anastasia-campaign-live-01",
+      "text": "Read Anastasia's campaign draft in the box below, write any notes on it, then send it to her with the message in the Enter row. The message asks for six things: her yes to the story (or what to cut), her coaching rate, her booking link,…",
+      "ref": "anastasia-campaign-live-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-12",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "diplomat",
+       "kernel": "Anastasia sees her campaign draft and says yes to her story in her own words.",
+       "date": "2026-10-20",
+       "list": "steps",
+       "listTitle": "Steps due today",
+       "missing": [],
+       "gathered": [],
+       "workable": true,
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Steps due today",
+         "note": "Due 2026-10-12 on Your steps."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "The draft and the message are both in the step, so it can be sent as it stands."
+        },
+        "unlocks": {
+         "line": 2,
+         "council": 0,
+         "note": "Her answers open steps 02 and 03."
+        },
+        "waiting": {
+         "days": 8,
+         "note": "Eight days past its due date."
+        }
+       },
+       "call": "work-today",
+       "decidedBy": "waiting",
+       "why": "The draft and message are ready in the step, and both later steps wait on her reply. Sending it today starts the clock on her answers."
+      }
+     },
+     {
+      "id": "step-anastasia-campaign-live-02",
+      "text": "Paste or forward her answers into the Anastasia's campaign thread. Claude fills them into the draft and gives you the final text for each field.",
+      "ref": "anastasia-campaign-live-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-11",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "regent",
+       "kernel": "Her answers become the finished text for each field of her campaign.",
+       "date": "2026-10-20",
+       "list": "steps",
+       "listTitle": "Steps due today",
+       "missing": [
+        "input"
+       ],
+       "gathered": [],
+       "workable": [
+        "input"
+       ],
+       "opponent": {
+        "kind": "item",
+        "ref": "step-anastasia-campaign-live-01",
+        "what": "sending her the draft",
+        "title": "Steps due today",
+        "entry": "Read Anastasia's campaign draft in the box below, write any notes on it, then send it to her with the message in the Enter row. The message asks for six things: her yes to the story (or what to cut), "
+       },
+       "factors": {
+        "signal": {
+         "list": "Steps due today",
+         "note": "Due 2026-10-11 on Your steps, a day before the step it follows."
+        },
+        "ready": {
+         "lineMissing": [
+          "input"
+         ],
+         "note": "It needs her answers, which come only after step 01 is sent."
+        },
+        "unlocks": {
+         "line": 1,
+         "council": 0,
+         "note": "The finished fields open step 03."
+        },
+        "waiting": {
+         "days": 9,
+         "note": "Nine days past its due date."
+        }
+       },
+       "call": "defer",
+       "decidedBy": "ready",
+       "why": "This step waits on Anastasia's answers. It can rest until she replies to step 01."
+      }
+     },
+     {
+      "id": "step-anastasia-campaign-live-03",
+      "text": "Create the campaign in the site's admin with the finished fields, then approve it.",
+      "ref": "anastasia-campaign-live-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-12",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "challenger",
+       "kernel": "The campaign goes live in the site's admin once its fields are final.",
+       "date": "2026-10-20",
+       "list": "steps",
+       "listTitle": "Steps due today",
+       "missing": [
+        "input"
+       ],
+       "gathered": [],
+       "workable": [
+        "input"
+       ],
+       "opponent": {
+        "kind": "item",
+        "ref": "step-anastasia-campaign-live-01",
+        "what": "sending her the draft",
+        "title": "Steps due today",
+        "entry": "Read Anastasia's campaign draft in the box below, write any notes on it, then send it to her with the message in the Enter row. The message asks for six things: her yes to the story (or what to cut), "
+       },
+       "factors": {
+        "signal": {
+         "list": "Steps due today",
+         "note": "Due 2026-10-12 on Your steps, the same day as step 01."
+        },
+        "ready": {
+         "lineMissing": [
+          "input"
+         ],
+         "note": "It needs the finished fields from step 02."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 0,
+         "note": "It is the last step of the campaign."
+        },
+        "waiting": {
+         "days": 8,
+         "note": "Eight days past its due date."
+        }
+       },
+       "call": "defer",
+       "decidedBy": "ready",
+       "why": "The admin step needs the fields that step 02 produces. Its due date can move to follow her reply."
+      }
+     },
+     {
+      "id": "step-between-round3-try-01",
+      "text": "Open the link on your iPhone, sign in if asked, and look around the hollow. This is round 3 of the Between: the same place as round 2, now painted by our code so the light, shadows and colours lean toward your four concept views (warm…",
+      "ref": "between-round3-try-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-19",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-book-shipping-1",
+      "text": "Download a fresh Kickstarter backer report.",
+      "ref": "book-shipping-1",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-09",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-book-shipping-2",
+      "text": "Publish the paperback on KDP.",
+      "ref": "book-shipping-2",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-13",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-coaching-pipeline-04",
+      "text": "Send the first three guest pitches: Coaches Rising and The Embodiment Podcast this week, and Buddhist Geeks to Vince after his recording on 16 October. Each pitch is in the show's row on the Outreach tab, under Guesting. Fill or delete…",
+      "ref": "coaching-pipeline-04",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-19",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-ep1-clips-03",
+      "text": "Post the next three clips the same way, one every three or four days: Hot Girl Summer, then what a crush is, then QC's flirt even more.",
+      "ref": "flirtcraft-ep1-clips-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-01",
+      "text": "Make the Flirtcraft account on X, with the display name Flirtcraft Podcast. Add the avatar, header, the podcast bio and flirtcraft.app/podcast as the website, then post the first post with the cover, add the reply under it, and pin the…",
+      "ref": "flirtcraft-socials-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-10",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-02",
+      "text": "Post the podcast announcement on your Facebook profile with the podcast cover attached. It mentions the podcast only; the app gets its own post in step 6.",
+      "ref": "flirtcraft-socials-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-10",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-03",
+      "text": "Post clip 1, QC's permission to flirt, on X as a video with its X caption. The later clips go to X on the same days as Instagram, on the episode 1 clips list.",
+      "ref": "flirtcraft-socials-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-11",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-04",
+      "text": "Make a Reddit account in your own name and start commenting, with no links, for two weeks.",
+      "ref": "flirtcraft-socials-04",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-12",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-05",
+      "text": "Run the free rep on your phone with a real email, after the database steps are done.",
+      "ref": "flirtcraft-socials-05",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-flirtcraft-socials-06",
+      "text": "Post the app announcement on your Facebook profile, Instagram and X, the same day. Swap the X bio for the app bio, and from then on end every clip caption with: Your first rep is free: flirtcraft.app",
+      "ref": "flirtcraft-socials-06",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-15",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-j5-look-09",
+      "text": "Look at round 9 of the clothing (J5): the hem shaking where it brushes the shins. The shake did not come from the shins touching the cloth. It came from the band that eases the robe from the waist toward the body: when a leg carried the…",
+      "ref": "j5-look-09",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-j5-panels-look-12",
+      "text": "Look at the sleeves re-cut into panels (your pick on cd-sleeve-open: 'Re-cut into panels'), from your note that the cuffs moved \"like solid objects and not clothes\". Below the forearm each sleeve is now a front and a back panel of real…",
+      "ref": "j5-panels-look-12",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-menu-key-match-01",
+      "text": "Make a new key, save it in your Passwords app first, then put it in Vercel.",
+      "ref": "menu-key-match-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-menu-key-match-02",
+      "text": "Put the key from your Passwords app in this project's cloud environment. If there is no edit button, delete the old entry and add it again.",
+      "ref": "menu-key-match-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-menu-key-match-03",
+      "text": "Put the same key in the GitHub secret the board-pull Action uses to recover a sealed menu.",
+      "ref": "menu-key-match-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-paypal-funding-01",
+      "text": "Update from the 18 October pass: still failing. Since the 14 October pass PayPal emailed that Canva's $19.89 failed again on 15 and 17 October, that Patreon's payment failed on 14 October ($3.96) and again on 17 October ($4.46), and sent…",
+      "ref": "paypal-funding-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-07",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-podcast-ep1-clips-05",
+      "text": "Nine days after clip 1, note each clip's views, saves and shares from the platforms' insights, and paste them in the podcast thread.",
+      "ref": "podcast-ep1-clips-05",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-17",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-podcast-ep2-clips-01",
+      "text": "Post that episode 2 is out, if you have not yet: the YouTube thumbnail on Instagram with the day 0 caption, and the same caption with the link on Facebook and X.",
+      "ref": "podcast-ep2-clips-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-17",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-podcast-ep2-clips-02",
+      "text": "Send Tom his two clips (1, how long, and 4, allow the purpose) with their captions. He has no socials, so a text or an email.",
+      "ref": "podcast-ep2-clips-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-podcast-ep2-clips-03",
+      "text": "Post clip 1, Tom on how long do you want to feel this way (37 seconds), as an Instagram Reel with Share to Facebook on and auto captions on, then post it on X. Before sharing, tap Edit cover, then Add from camera roll, and pick…",
+      "ref": "podcast-ep2-clips-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-19",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-podcast-pipeline-03",
+      "text": "Schedule episode 2 in one sitting at your computer. Follow the numbered list in the pack: Part A set up, B day 0 post (publish now), C each clip as a Reel (Create reel, tick Instagram and Facebook, upload clip, cover, caption, Schedule),…",
+      "ref": "podcast-pipeline-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-replies-owed-20261013-1",
+      "text": "Ayça wrote back early this morning on the dinner thread, saying yes to the podcast invitation you sent Monday night — and she asked one question you have to answer before she can book: \"May i include my son, (16 years old?\" She cannot…",
+      "ref": "replies-owed-20261013-1",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-15",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-replies-owed-20261013-2",
+      "text": "Nora Elder wrote late this morning to thank you for her episode and she asked you something: whether you have \"a newsletter or anything you're sending out,\" because she wants to be on it and wants to stay in touch. She also sent her…",
+      "ref": "replies-owed-20261013-2",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-15",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-replies-owed-20261013-3",
+      "text": "Ariel Alon wrote to you directly this morning with the WMHCA call-for-proposals link for their \"Bridging Connections\" conference and a one-line nudge: \"I haven't started mine yet.\" She is waiting to hear whether you are submitting a…",
+      "ref": "replies-owed-20261013-3",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-15",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-replies-owed-20261014-1",
+      "text": "HostGator sent a payment failure notice yesterday morning: the renewal on your Hatchling plan did not go through and the account is past due at $395.61. The notice says plainly that paying is what keeps \"your website and other services…",
+      "ref": "replies-owed-20261014-1",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-16",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-slice-referee-playtest-01",
+      "text": "Play the slice once with the referee on. 1) Paste this one line into Terminal on your Mac: git clone https://github.com/wendell-britt/sprout ~/sprout-playtest 2>/dev/null; cd ~/sprout-playtest && git fetch origin…",
+      "ref": "slice-referee-playtest-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-20",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-spirit-fight-ama-rell-02",
+      "text": "Play build 4 of Ama Rell's Fixer, rebuilt after your note that build 3 was too abstract. It now plays like a monster battle: the Fixer's sprite faces your spirit on a field, each side has an HP box, a text box reads out every move, and…",
+      "ref": "spirit-fight-ama-rell-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-19",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-spirit-states-squint-01",
+      "text": "Sort the fifteen numbered spirit sprites into dissatisfied, neutral and satisfied, then type your three lists into this step's note. About two minutes.",
+      "ref": "spirit-states-squint-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-19, optional",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-virtual-launch-restart-04",
+      "text": "Question 1 of 6: What do you want to create with the virtual launch? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
+      "ref": "virtual-launch-restart-04",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-virtual-launch-restart-05",
+      "text": "Question 2 of 6: What will that get you? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
+      "ref": "virtual-launch-restart-05",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-virtual-launch-restart-06",
+      "text": "Question 3 of 6: What is life like now, for you and for the people you want there? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
+      "ref": "virtual-launch-restart-06",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-virtual-launch-restart-07",
+      "text": "Question 4 of 6: How does that feel? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
+      "ref": "virtual-launch-restart-07",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-virtual-launch-restart-08",
+      "text": "Question 5 of 6: What would have to be true for someone to feel that way? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
+      "ref": "virtual-launch-restart-08",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-virtual-launch-restart-09",
+      "text": "Question 6 of 6: What reservations do you have? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
+      "ref": "virtual-launch-restart-09",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-14",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-wmhca-proposal-01",
+      "text": "Fill the brackets in the presenter bio and the qualifications line with your real facts: how many years you have facilitated the voices process, any degree, any coaching or facilitation training, and the book's status. Leave out anything…",
+      "ref": "wmhca-proposal-01",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-15",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-wmhca-proposal-02",
+      "text": "Open the WMHCA call for speakers on Whova, make an account if it asks, and paste each section of the draft into the matching field. Where a field has a word limit, use the short version. Pick two hours and the Equity and Inclusion track…",
+      "ref": "wmhca-proposal-02",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-15",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "step-wmhca-proposal-03",
+      "text": "The call for proposals was due the morning of 15 October and that has passed. Your mail through 18 October holds no Whova confirmation and no extension notice. Email the committee chair and ask whether the call is still open or can be…",
+      "ref": "wmhca-proposal-03",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
+      "note": "step, due 2026-10-15",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
    },
    {
     "key": "due",
@@ -33054,6 +33780,45 @@
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "regent",
+       "kernel": "Motion capture onto a Mixamo rig waits until a use fits its non-commercial licences.",
+       "date": "2026-10-20",
+       "list": "due",
+       "listTitle": "Deferred and due",
+       "missing": [
+        "input"
+       ],
+       "gathered": [],
+       "workable": [
+        "input"
+       ],
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Deferred and due",
+         "note": "His words of 12 October: \"Let's skip this for now.\""
+        },
+        "ready": {
+         "lineMissing": [
+          "input"
+         ],
+         "note": "It returns only when he asks, and no strand has asked."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 0,
+         "note": "Nothing in the current strands waits on it."
+        },
+        "waiting": {
+         "days": 8,
+         "note": "Set aside eight days ago."
+        }
+       },
+       "call": "defer",
+       "decidedBy": "ready",
+       "why": "The row says it returns when he asks, and the licence limits still hold. It can rest on the ladder until a non-commercial use calls for it."
       }
      }
     ]
@@ -33070,6 +33835,47 @@
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "challenger",
+       "kernel": "A board read should take a handful of steps, and the number should prove it.",
+       "date": "2026-10-20",
+       "list": "handoff",
+       "listTitle": "Open in the handoff",
+       "missing": [
+        "next step"
+       ],
+       "gathered": [
+        {
+         "piece": "next step",
+         "found": "The call sheet says the next real read measures it against 30 steps and $1.54.",
+         "source": "callsheet:session-cost"
+        }
+       ],
+       "workable": true,
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Open in the handoff",
+         "note": "Open in the handoff since 2026-10-08."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "The 18 October usage audit measured board reads at $0.77 each on Sonnet, against $1.26 to $2.48 on 8 October."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 0,
+         "note": "The measurement it waited for has been taken."
+        },
+        "waiting": {
+         "days": 12,
+         "note": "Twelve days in the handoff."
+        }
+       },
+       "call": "let-go-offered",
+       "decidedBy": "ready",
+       "why": "The usage audit of 18 October already measured board reads well under the old cost. The session-cost sheet can mark it done."
       }
      },
      {
@@ -33079,6 +33885,45 @@
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "architect",
+       "kernel": "Every session starts lighter once the unused business plugins come off his account.",
+       "date": "2026-10-20",
+       "list": "handoff",
+       "listTitle": "Open in the handoff",
+       "missing": [
+        "input"
+       ],
+       "gathered": [],
+       "workable": [
+        "input"
+       ],
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Open in the handoff",
+         "note": "He chose remove-business on 2026-10-08; the call sheet waits on his tick."
+        },
+        "ready": {
+         "lineMissing": [
+          "input"
+         ],
+         "note": "Only he can remove account plugins, and the record holds no tick."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 1,
+         "note": "A smaller opening load lowers the cost of every thread."
+        },
+        "waiting": {
+         "days": 12,
+         "note": "Twelve days in the handoff."
+        }
+       },
+       "call": "defer",
+       "decidedBy": "ready",
+       "why": "The removal is his step in Customize, and the record has no tick yet. The 18 October audit still measured an opening load of 111,711 tokens, so the next read can check again."
       }
      },
      {
@@ -33088,6 +33933,39 @@
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "sage",
+       "kernel": "Clerical threads run on the cheaper model so the council's hours go further.",
+       "date": "2026-10-20",
+       "list": "handoff",
+       "listTitle": "Open in the handoff",
+       "missing": [],
+       "gathered": [],
+       "workable": true,
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Open in the handoff",
+         "note": "Open in the handoff since 2026-10-08."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "The rule is in CLAUDE.md and project memory, and the 18 October audit shows board reads on Sonnet."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 0,
+         "note": "Nothing waits on it."
+        },
+        "waiting": {
+         "days": 12,
+         "note": "Twelve days in the handoff."
+        }
+       },
+       "call": "let-go-offered",
+       "decidedBy": "ready",
+       "why": "The rule is written and the audit shows it applied. This handoff line can close."
       }
      },
      {
@@ -33942,1048 +34820,259 @@
     "key": "prs",
     "title": "Open pull requests",
     "blurb": "Pull requests open in the council, bars-engine and the Game Master's guide.",
-    "items": [],
-    "note": "no GitHub token in this session; pass --prs <file> saved from the GitHub tools"
-   },
-   {
-    "key": "backlog",
-    "title": "bars-engine backlog",
-    "blurb": "Rows marked Ready in bars-engine's BACKLOG.md.",
     "items": [
      {
-      "id": "backlog-mlbr",
-      "text": "MtGoA Launch + Barn Raising — July fundraiser party: coordinator reframing the cancelled Bruised Banana residency into the real event: a July 2026 party at the Bruised Banana venue = Mastering the Game of Allyship Launch Party + Wendell's…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/mtgoa-launch-barn-raising-party/spec.md",
-      "note": "1.00 MLBR",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-parv",
-      "text": "Partiful link integration — July party invite: wire the Partiful event URL into the invite BAR + event Instance for the July 18, 2026 MtGoA Launch + Barn Raising. Reuse CustomBar.partifulUrl + eventSlug (EIP); RSVP CTA on the invite,…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/partiful-link-integration.md",
-      "note": "1.00.1 PARV",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-mbld",
-      "text": "Barn Raising — Live Data: back the three-wall Milestone BAR (car / pre-sale / runway) with real contributions: add CampaignMilestone.wallKey (additive migration), getBarnSnapshot(campaignRef), seed the July 18 event Instance + 3 walls…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/barn-raising-live-data/spec.md",
-      "note": "1.00.2 MBLD",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-mmsc",
-      "text": "MtGoA Menu — Skeuomorphic CYOA Redesign: redesign /mastering-allyship/hub from flat black-on-black-with-accents (reads \"AI-generated\") into a skeuomorphic, CYOA-forward menu where the 8 spokes feel like real objects (like the handbook…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/mtgoa-menu-skeuomorphic-cyoa/spec.md",
-      "note": "1.00.3 MMSC",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-mqsp",
-      "text": "Mobility Quest — Superpower Polarity Campaign: interactive campaign route fronted by a superpower-discovery CYOA intake and backed by tiered, scoped skill/time donation toward milestones. Organizing primitive: Card × Superpower ×…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/mobility-quest-superpower-campaign/spec.md",
-      "note": "1.05 MQSP",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-spqd",
-      "text": "Superpower Quiz Design: deterministic, offline, anti-extractive quiz assigning 1 of 7 superpowers + orientation for [1.05 MQSP](.specify/specs/mobility-quest-superpower-campaign/spec.md). Grounded in deep-research…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/superpower-quiz-design/spec.md",
-      "note": "1.05.1 SPQD",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-spc",
-      "text": "750words Personal Sentiment Capture: self-hosted writing surface with 750-word goal, daily streak tracking (black-hat gamification acceptable), manual mood tag selection from Wuxing feeling-chip vocabulary, private WritingSession storage,…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/personal-ops-funnel/spec.md",
-      "note": "2.01 SPC",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-brs",
-      "text": "BAR Stewardship Flow: dedicated action for tending planted BAR seeds: attach soil/context, link to quest, write next action, route to LDM guide, or compost. Closes the personal ops loop: SPC → practice → BAR seed → stewardship → quest →…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/personal-ops-funnel/spec.md § BAR Stewardship",
-      "note": "2.01.1 BRS",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-inq",
-      "text": "Inquiry (The Work): mobile-first single-session Inquiry practice distilled from Byron Katie's The Work: 1 belief → 4 questions → turnaround → emotional alchemy (dissatisfied/desired feeling) → BAR seed dispatch. No guide NPCs. Parallel to…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/inquiry-lite/spec.md",
-      "note": "2.02 INQ",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-bsm",
-      "text": "BAR Seed Garden / Nursery UI: player-facing BAR backlog as explorable terrain: soil context attachment (campaign/thread/nation/archetype), maturity state machine (Wake → Clean → Grow → Show → Integrate), compost action with release note,…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bar-seed-metabolization/spec.md",
-      "note": "2.03 BSM",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-eat",
-      "text": "EA Translator Research: Natural language feeling → EA channel classifier: keyword/idiom mapping, contextual disambiguation, 25-pair EA move matrix, 50-case test corpus. Feeds INQ feeling chip auto-classification + FSR Shaman pass…",
-      "link": "",
-      "note": "2.05 EAT",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-sat",
-      "text": "Satisfaction Capture: End-of-day ritual: identify which of 5 satisfied states fired today (Triumph=Wood/Fire, Poignance=Water/Sadness, Bliss=Wood/Joy, Peace=Earth/Neutral, Excitement=Metal/Fear). Create plan to leverage each into…",
-      "link": "",
-      "note": "2.06 SAT",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-ami",
-      "text": "Applied Mode Intake Conversation: MTGOA Migration Brief priority #8. Scripted-first / dual-track IntakeConversation: a pure intakeReducer walks the Six Unpacking Questions → IntakeConfig → buildEncounterFromIntake() synthesizes a…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/applied-mode-intake-conversation/spec.md",
-      "note": "2.07 AMI",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-ttve",
-      "text": "Tap the Vein Tier 2 — Vibeulon economy: (Phase A) — mint ♦+1 when a TTV task completes (idempotent via TapTheVeinTask.rewardMintedAt), through the existing wallet/ledger (db.vibulon, src/actions/economy.ts) — no parallel currency. Makes…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/tap-the-vein-tier-2/spec.md",
-      "note": "2.08 TTVE",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-ttv3",
-      "text": "Tap the Vein Tier 2 — inline 3·2·1 thread: (Phase B) — optional Clean Up between Brainstorm and Commit: autosaved chat thread (Face it → Talk to it → Be it), voice switcher only on phase 2, before/after charge sliders; charge drop > 2…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/tap-the-vein-tier-2/spec.md",
-      "note": "2.09 TTV3",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-ttvs",
-      "text": "Tap the Vein Tier 2 — idea storm → distill → vault: (Phase C) — timed raw-idea dump → distill to a hand of ≤5 (today's play) → merge → send to Vault; Vault economy 5 free deposits/day then ♦1 (via TTVE); new TapTheVeinIdea model;…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/tap-the-vein-tier-2/spec.md",
-      "note": "2.10 TTVS",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-pma",
-      "text": "Productivity Modality Alignment: research authority for aligning bars-engine with open-source GTD/GSD productivity patterns (Tandem, Mindwtr, PARA, etc.) without todo-app chrome: reusable…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/productivity-modality-alignment/spec.md",
-      "note": "2.12 PMA",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-cgla",
-      "text": "Core Game Loop Audit: audit of how a BAR flows capture → charge → 3·2·1 → quest → daemon and a remediation map for the holes. The mechanics mostly exist (grow-to-quest/daemon/artifact wired on /bars/[id]; captureBar;…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/core-game-loop-audit/spec.md",
-      "note": "1.45 CGLA",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-cgl1",
-      "text": "CGLA H1 — TTV tasks become BARs: a TapTheVeinTask becomes a linked CustomBar (type:bar, maturity captured) so it can be tuned / charged / 3·2·1'd / grown to a quest / become a daemon. Lazy (decided): BAR minted only on a deliberate…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/core-game-loop-audit/spec.md",
-      "note": "1.45.1 CGL1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-cgl2",
-      "text": "CGLA H2/H3/H6 — BAR loop wiring: unified \"all my BARs\" view (reuse list actions), a \"Do a 3·2·1 on this\" button on /bars/[id] + charge card (/shadow/321?chargeBarId=), and inline tune on the BAR detail page. Discoverability/wiring only —…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/core-game-loop-audit/spec.md",
-      "note": "1.45.2 CGL2",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-strd",
-      "text": "Strand Process — Integrate or Deprecate: decision + cleanup, judged by value. Issue #21 promised five capabilities (isolation, failure detection, token budgets, resumable state, multi-agent coordination); the shipped CLI is a YAML record…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/strand-process-decision/spec.md",
-      "note": "2.13 STRD",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-wfi",
-      "text": "World From Image: one image → PlanScene (top-down terrain grid, object footprints, doors/spawns) → per-game emitters: sprout specs/maps/.json first (checked by map:check), then bars-engine RealmData. Producer:…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/world-from-image/spec.md",
-      "note": "2.14 WFI",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-qla",
-      "text": "Quest Lineage & Shadow Alignment: close the NOW loop so TTV commits land aligned: Vault becomes the single canonical inventory (retire the /bars vs Vault split + 50-cap); TTV commits are born as quests via shared mintQuestFromText…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/quest-lineage-alignment/spec.md",
-      "note": "1.46 QLA",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lens",
-      "text": "Lens Integration Refactor: replace the flat planning flow with a Lens-driven developmental architecture: Lenses as first-class temporal objects (new Observatory: orientation→vision→year→quarter→month→week→today), every BAR grown under a…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
-      "note": "1.40 LENS",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lens1",
-      "text": "Lens P1 — Lens entity + Observatory: Lens model (type/title/parentLensId/playerId) + /observatory with 7 independently-navigable levels + auto-minted daily Lens. No BAR changes yet. Verification: cert-observatory-v1.",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
-      "note": "1.40.1 LENS1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lens2",
-      "text": "Lens P2 — BAR.lensId: add CustomBar.lensId (+ experienceIntent) and have Daily TTV commitTask attach lensId. No developmentStage — core stays developmental-level agnostic; existing maturity untouched. Verification: cert-bar-lens-v1.",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
-      "note": "1.40.2 LENS2",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lens3",
-      "text": "Lens P3 — Garden first-class + Plant flow: Garden entity + CustomBar.gardenId + experienceIntent; Choose Lens → Six Questions → Plant; /garden (personal) shows Planted+ only, separate from Hand/Vault/World. Verification:…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
-      "note": "1.40.3 LENS3",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lens4",
-      "text": "Lens P4 — Provenance graph + Vibeulon attribution: ProvenanceLink + CustomBar.parentQuestId; getBarProvenance(barId) queryable graph; Vibulon gains completedBARId/lensId/campaignId/emotionalChannel/growthSource; refit mintVibulon (incl.…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/lens-integration-refactor/spec.md",
-      "note": "1.40.4 LENS4",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lwx",
-      "text": "Living-World Experience: the experience + navigation layer that makes the app feel like a living world (Pokémon PC / Harvest Moon / BotW, not Notion/Jira). Destinations Observatory / Garden / Vault / World + Hand glance-in-NOW→/hand +…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/living-world-experience/spec.md",
-      "note": "1.41 LWX",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lpmig",
-      "text": "Migration deploy flow — sandbox-authored, prod-applied: codify the author-in-web/Codex (DB-free migrate diff) → apply-on-Vercel-Production / Mac lever flow so agents stop fighting the DB from sandboxes; verify/apply the…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/migration-deploy-flow.md",
-      "note": "1.60 LPMIG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-migci",
-      "text": "CI gate — migration chain applies on empty Postgres: GitHub Actions job on PRs touching prisma/: empty Postgres + migrate deploy, fail on any unapplied/broken migration (the durable fix for DB-free-authored migrations). Surfaces legacy…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/migrate-deploy-ci-gate.md",
-      "note": "1.61 MIGCI",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-gsku",
-      "text": "Wire non-book SKU Gumroad product ids: set GUMROAD_PRODUCT_ID_<SKU> for deck / RPG handbook / subscription / etc. so the /redeem license-verify fallback (resolveLicense) resolves every offer, not just the book; document the env…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/backlog/prompts/gumroad-sku-product-ids.md",
-      "note": "1.62 GSKU",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-ards",
-      "text": "Asset Register Design System: (7 semantic registers: Cosmic/Provenance/Portrait/Walk/Chrome/Zone/Ceremony; forkability architecture; move icons; zone textures; coherence rules)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/asset-register-design-system/spec.md",
-      "note": "1.37 ARDS",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-casi",
-      "text": "Card Art Surface Integration: (wire 40 Cosmic images into 8 UI surfaces; DashboardHeader P1; wiki style guide P2; BAR card + Vault NationProvider + quest cards)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/card-art-surface-integration/spec.md",
-      "note": "1.38 CASI",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-pss",
-      "text": "Provenance Stamp System: (nation sigil + archetype mark on every BAR/quest; 13 pixel art marks; resolveProvenanceStamp(); persists through trades; schema: creatorNationKey/creatorArchetypeKey)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/provenance-stamp-system/spec.md",
-      "note": "1.39 PSS",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-bcc",
-      "text": "BAR Capture Consolidation: make /bars/capture the sole BAR creation surface by closing 4 canvas gaps: (1) post-capture confirmation overlay (\"A seed is on the board\" + \"Tune now →\" + \"Back to board\"); (2) intent/tags field (storyContent)…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bar-capture-consolidation/spec.md",
-      "note": "1.39.6 BCC",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-bde",
-      "text": "321 → BAR draft experience: (tweet-like BAR; BarDraftFrom321 + short composed body; system title non-prominent; quick path: allyship domain required, nation/archetype gating hidden; optional image; reversible artifact dispatch;…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/321-bar-draft-experience/spec.md",
-      "note": "1.40 BDE",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-cbb",
-      "text": "CYOA blueprint → BAR metabolism: (auth-aware CTAs; cardinality-aware copy; in-voice choice labels; blueprint → prompt library → BAR ledger; modal + Transcendence recap; hexagram state in cyoaState; milestone hooks)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/cyoa-blueprint-bar-metabolism/spec.md",
-      "note": "1.41 CBB",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-pdc",
-      "text": "Avatar Paper Doll Coherence: (shared anchor + layer offsets for portrait stack; art contract + CI; aligns with ARDS Portrait register; walkable sprites remain separate precomposed sheets)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/avatar-paper-doll-coherence/spec.md",
-      "note": "1.42 PDC",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-pfcg",
-      "text": "Player-facing CYOA generator: (ITD additions: coach identity anchor, revenue Phase 0, designer shadow checkpoint — see spec.md) (sovereignty-first; BAR→quest→CYOA; vibey UI + quality bar; earned dominion; campaign proposal queue; phases…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/player-facing-cyoa-generator/spec.md",
-      "note": "1.43 PFCG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-pmel",
-      "text": "Party mini-game — event game layer: (Bruised Banana Apr 4/5 bingo pilot; 3×3 tap grid → optional BAR vault stamp party-mini-game-v1; taxonomy path for author-defined mini-games)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/party-mini-game-event-layer/spec.md",
-      "note": "1.44 PMEL",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-abcl",
-      "text": "Admin books list overflow + home compass row layout: (wrap / See more / /admin/books/[id] hub; Four moves + Current move one row sm+, stack mobile; cert cert-admin-books-compass-compact-ui-v1)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/admin-books-compass-compact-ui/spec.md",
-      "note": "1.45 ABCL",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-eip",
-      "text": "Event invite BAR — party + Partiful + event-scoped initiation: (BAR as primary invite; partifulUrl + eventSlug; /campaign/event/[eventSlug]/initiation; dedicated Twine Adventure per event; extends event_invite CYOA MVP)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/event-invite-party-initiation/spec.md",
-      "note": "1.46 EIP",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-ppt",
-      "text": "Public teaser — /play loop (no account): logged-out /play explains Charge → Scene Atlas → I Ching; login/join CTAs w/ callbackUrl; no fake playable steps without auth",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/play-public-teaser-loop/spec.md",
-      "note": "1.48 PPT",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-obt",
-      "text": "Offer BAR (timebank) + DSW modal: Time/Space paths on /event/donate/wizard open a modal to create an offerBAR (marketplace-oriented metadata: skilled/unskilled, hours, scheduling); aligns with time-banking norms ([TimeBank Boulder —…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/offer-bar-timebank-wizard-modal/spec.md",
-      "note": "1.52 OBT",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-cbs",
-      "text": "Campaign branch seeds: players plant soft signals at a campaign passage (broken path + quiet suggest); water by returning players, stewards, or admins with weighted visibility; metabolize into Passage under UGA validation.",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/campaign-branch-seeds/spec.md",
-      "note": "1.54 CBS",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-smb",
-      "text": "Spoke move seed beds: hub spoke → BAR (required to finish) → nursery: four move beds per (campaignRef, spoke); first mover per (campaignRef, spokeIndex, moveType) anchors spoke BAR; anyone plants with any BAR or waters campaign_kernel;…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/spoke-move-seed-beds/spec.md",
-      "note": "1.56 SMB",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-lcg",
-      "text": "Library-conditioned GM generation: retrieve Book.extractedText chunks into GM passage generation (cite-or-silence); optional Instance defaults (Phase B); golden traces + cert cert-library-conditioned-gm-v1; trains six faces on…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/library-conditioned-gm-generation/spec.md",
-      "note": "1.57 LCG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-csc",
-      "text": "Campaign subcampaigns: Path C ontology: domain-keyed child campaigns under parent campaignRef (e.g. bruised-banana + RAISE_AWARENESS orientation); nested depth + compound refs; reconcile with ACEC (awareness run vs long-lived subcampaign…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/campaign-subcampaigns/spec.md",
-      "note": "1.59 CSC",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-cfb",
-      "text": "Cert feedback blob persistence: Cert & site-signal feedback → durable storage (Vercel Blob). Today POST /api/feedback/cert, POST /api/feedback/site-signal, and [quest-engine Share Your Signal append](../../src/actions/quest-engine.ts)…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/cert-feedback-blob-persistence/spec.md",
-      "note": "1.60 CFB",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-snp",
-      "text": "Spatial navigator + awake signal (parent epic) — Shipped (slice): CFB v1 Blob mirror + feedback:export-blob + site-signal bottom-sheet / lighter overlay (awake signal UX). Remaining: SMB, BUO, CSC, HSM P2, BLW scoped. — Use case: players…",
-      "link": "",
-      "note": "1.71 SNP",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-gscp",
-      "text": "Generated spoke CYOA pipeline: v1: generated grammatical CYOA per hub spoke; opening = campaign context + fortune + live milestone + fundraising; four-move focus + charge (spoke-scoped); cultivation sifu (six GM faces) → signature…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/generated-spoke-cyoa-pipeline/spec.md",
-      "note": "1.72 GSCP",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-cog",
-      "text": "Campaign ontology + campaignRef spine (batched) — [campaign-ontology-alignment](../specs/campaign-ontology-alignment/spec.md) + [campaignref-inventory-audit](../specs/campaignref-inventory-audit/spec.md). GitHub: [#39 Docs: Campaign…",
-      "link": "",
-      "note": "1.74 COG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-hwc",
-      "text": "Humanoid v1 walkable contract: 512×64 RGBA, anchor (32,56), npm run sprites:validate-humanoid. GitHub: [#45 Spike: Walkable sprite pipeline demo (env + WASD)](https://github.com/johnair01/bars-engine/issues/45) (demo spike; contract +…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/humanoid-v1-walkable-contract/spec.md",
-      "note": "1.75 HWC",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-piv",
-      "text": "Pixel identity system v0: CharacterIdentity, resolveWalkableSpriteUrl (@/lib/pixel-identity). (No dedicated GitHub issue; track under #45 epic or open child issue.)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/pixel-identity-system-v0/spec.md",
-      "note": "1.76 PIV",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-bcs",
-      "text": "Book → CYOA stewardship (1st party): . GitHub: [#46 Spec: 1st-party book → CYOA stewardship (Phase A pilot)](https://github.com/johnair01/bars-engine/issues/46). Batch with Book OS v1 when…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/book-cyoa-stewardship/spec.md",
-      "note": "1.77 BCS",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-adl",
-      "text": "Allyship Deck Literacy: make the deck legible + actionable without a guidebook. P1 deep-linkable /deck/glossary (built from move-library data) + inline term links on cards; P2 \"Your move\" — surface the submove action (MoveCard.action) on…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/allyship-deck-literacy/spec.md",
-      "note": "1.81.1 ADL",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-tsg",
-      "text": "Throughput Spine — Go-Live: consolidating epic that makes the personal→collective spine walkable end-to-end: capture → seed (quest/daemon/artifact) → tend (Vault) → attach to a campaign → advance a well-crafted milestone. Closes two…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/throughput-spine-go-live/spec.md",
-      "note": "1.82 TSG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-iax",
-      "text": "Integral Axes — allyship domain inner/outer: 4 domains × {inner,outer} = 8-cell board; 5 WAVE moves = inner column; WAVE_TO_DOMAIN → MOVE_CELL_AFFINITY (cosmetic Q1 flavor only, no progress/energy effect); Grow Up = ordinary inner move…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/integral-axes/spec.md",
-      "note": "1.83 IAX",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-y",
-      "text": "Bruised Banana House Instance: (dedicated Instance + seed; v1 shipped: bruise-banana-house / campaignRef=bruised-banana-house, npm run seed:bb-house, [runbook](../../docs/BRUISED_BANANA_HOUSE_INSTANCE.md); recurring quests + house state…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specs/bruised-banana-house-instance/spec.md",
-      "note": "21 Y",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-eh",
-      "text": "Superpower Move Extensions v0: (Allyship prestige; Connector, Storyteller, etc.; extends base archetypes for domain quests)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/superpower-move-extensions/spec.md",
-      "note": "0.69 EH",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-el",
-      "text": "Attunement Translation: (Vibeulon economy: Global/Local; attune; transmute; VibeulonLedger) — Phase 1: [mint/burn audit](../../docs/ECONOMY_MINT_BURN_AUDIT.md); full attunement UI in spec tasks",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/attunement-translation/spec.md",
-      "note": "0.73 EL",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-ep",
-      "text": "Sustainability and Onboarding Lore: (wiki: onboarding-path, sustainability, integral-emergence; Bruised Banana expansion)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/sustainability-onboarding-lore/spec.md",
-      "note": "0.77 EP",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-eq",
-      "text": "Wake-Up Campaign Birthday Pivot: (campaign as narrative funnel: 5 Acts — Fracture, Spiral, Greenhouse, Ask, Oath)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/wake-up-campaign-birthday-pivot/spec.md",
-      "note": "0.78 EQ",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-fm",
-      "text": "BAR → Quest Generation Engine v0: (BAR eligibility → interpretation → emotional alchemy → quest proposal → admin review → publication)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bar-quest-generation-engine/spec.md",
-      "note": "1.00 FM",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-fn",
-      "text": "Transformation Simulation Harness v0: (CLI: quest, agent, campaign, onboarding; full pipeline; deterministic; simulation-logs)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/transformation-simulation-harness/spec.md",
-      "note": "1.01 FN",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-rd",
-      "text": "Reflective Data Privacy + Shareability Model v0: (data classes; visibility levels; identity layers; derived artifact rules; agent access boundaries; provenance; consent; API-first)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/reflective-data-privacy-shareability/spec.md",
-      "note": "1.08 RD",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-gg",
-      "text": "Custom Portal Onboarding Flow v0: (invite token → 5-scene questionnaire → campaignState → createCampaignPlayer; extends Bruised Banana)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/custom-portal-onboarding/spec.md",
-      "note": "1.15 GG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-dop",
-      "text": "Demo Orientation Preview: (shareable pre-signup orientation slice; token/slug → adventure bounds; handoff to signup w/ ref/invite; complements GP invites)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/demo-orientation-preview/spec.md",
-      "note": "1.15.1 DOP",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-gj",
-      "text": "Campaign Playbook System v0: (living strategy doc per campaign; Kotter stages; domain strategy; RACI; manual + automated synthesis; export; deck)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/campaign-playbook-system/spec.md",
-      "note": "1.18 GJ",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-gk",
-      "text": "Campaign Invitation System v0: (invite actors with roles; RACI integration; consent-based; playbook integration; send/accept/decline/confirm-role)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/campaign-invitation-system/spec.md",
-      "note": "1.19 GK",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-du",
-      "text": "Deftness Uplevel: Character, Daemons, Agents: (Ouroboros interview; Archetype playbooks; Daemons discovery/level/summon; Sage coordination; agent-domain backlog ownership; 6-face parallel)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/deftness-uplevel-character-daemons-agents/spec.md",
-      "note": "1.23 DU",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-esc",
-      "text": "Encounter Slot Context Schema: (PassageSlot agent context fields; GenerateOptions campaign context; gather-resources encounter grammar; GM agent routing per slot)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/encounter-slot-context-schema/spec.md",
-      "note": "0.03.4 ESC",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-caf",
-      "text": "Campaign Authoring Flow: (top-down passage view with face badges + fill status; context panel in edit; per-passage AI generation; Phase 2: campaign hub + deck spawn; Phase 3: PDF bridge; Phase 4: kernel→whole campaign)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/campaign-authoring-flow/spec.md",
-      "note": "0.03.5 CAF",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-st",
-      "text": "Strand System for BARS Engine: (multi-agent investigation; strand-as-BAR; diagnostic strand + MCP trigger; Architect/Regent unified schema)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/strand-system-bars/spec.md",
-      "note": "1.24 ST",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-sn",
-      "text": "321 Suggest Name Deterministic: (6-face grammar; multi-click suggest w/ attempt; name resolution persists; NPC merge from 321 metadata → matching agent players; daemon→NPC growth Phase 8)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/321-suggest-name/spec.md",
-      "note": "1.25 SN",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-snl",
-      "text": "Shadow Name Library: (low-cost vast name library; externalized vocab; feedback loop; zero tokens at suggest)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/shadow-name-library/spec.md",
-      "note": "1.26 SNL",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-mee",
-      "text": "Emergent Move Ecology: (PDF move extraction; proposal queue; repeatable pipeline; library integration)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/move-ecology-emergent/spec.md",
-      "note": "1.27.1 MEE",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-buo",
-      "text": "BARs UI Overhaul: (talisman receive; BAR as seed for quests/daemons/artifacts; organize & compost; photo upload)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bars-ui-overhaul/spec.md",
-      "note": "1.28 BUO",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-bpcp",
-      "text": "BAR Physical Capture & Photo: (rotate uploaded photos; text OR photo at capture; front/back + FLIP UI)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/bar-physical-capture-photo/spec.md",
-      "note": "1.28.2 BPCP",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-nspe",
-      "text": "NPC & Simulated Player Content Ecology: (single-player companionship; simulated collaborators; persona cohort; NPC content proposal; test before real players)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/npc-simulated-player-content-ecology/spec.md",
-      "note": "1.29 NSPE",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-dsbd",
-      "text": "Dominion-Style BAR Decks: (Library → Decks → Hand; borrow nation/archetype decks; deck creation quest thread; campaign domain decks collective; ActorDeckState for BARs; charge/321 → Library)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/dominion-style-bar-decks/spec.md",
-      "note": "1.30 DSBD",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-csg",
-      "text": "Scene Atlas: (52-card BarDeck; compass / personal divination map; 2×2 axes as four suits; BAR + BarBinding; pedagogy for all players; creator lab, private-by-default)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/creator-scene-grid-deck/spec.md",
-      "note": "1.32 CSG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-sag",
-      "text": "Scene Atlas Game Loop: (personal vs collective throughput; dashboard IA; daily Atlas limit; campaign I Ching; north star; Wii-style demos; Charge→Atlas bridge)",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/scene-atlas-game-loop/spec.md",
-      "note": "1.33 SAG",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "backlog-pdh",
-      "text": "Prompt deck draw + shared hand: (52 topo; rank→Wake/Clean/Grow/Show levels + wild; pick deck → draw; one 5-slot hand across archetype+nation decks; per-deck play-cycle discard; reshuffle when empty; discard ≠ grid — BarBinding untouched…",
-      "link": "https://github.com/johnair01/bars-engine/blob/main/specify/specs/prompt-deck-draw-hand/spec.md",
-      "note": "1.34 PDH",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     }
-    ]
-   },
-   {
-    "key": "menu",
-    "title": "From your free write",
-    "blurb": "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).",
-    "items": [],
-    "note": "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
-   },
-   {
-    "key": "board",
-    "title": "Waiting on you on the board",
-    "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
-    "items": [
-     {
-      "id": "board-jev-asset-piles",
-      "text": "For the asset trial, how many statements do you label, and which ones first?",
-      "ref": "jev-asset-piles",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "question, jev asset",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-loop-ahead-two",
-      "text": "Art and design rounds now start themselves. Each strand with a contract (council/loops/<strand>.json, docs/loops.md) names its next round, how it is checked and its budget; when a round ends, the coordinator starts the next one without…",
-      "ref": "loop-ahead-two",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, loop engineering",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-loop-auto-gate",
-      "text": "A round starts itself only when its gate is auto: no money spent, no account signed into or changed, nothing published outside the project, and no council/faces.yaml change. A round that needs your eyes, money or accounts waits and shows…",
-      "ref": "loop-auto-gate",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, loop engineering",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-board-reads-goals",
-      "text": "The board reads your Lens goals every morning through a goals export from bars-engine, without needing a sealed bars-engine menu, and shows them on the Morning tab under each domain. An empty domain shows as \"No goals here yet\".",
-      "ref": "lens-board-reads-goals",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-pitch-goals",
-      "text": "When a domain has no goals, the board's Tap the Vein box offers that domain's prompt. The board read pitches year goals from what you wrote, quoting your line, and each pitch you keep is written to bars-engine as an active Lens goal. The…",
-      "ref": "lens-pitch-goals",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-intake-align",
-      "text": "The full Tap the Vein intake lists everything you can do today, and the board read gives each item one line: the Lens goal it serves, the board row it advances, or a smaller goal it pitches. Each line carries a written reason, not a word…",
-      "ref": "lens-intake-align",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-order",
-      "text": "Build order: the goals export and the Lenses panel first, goal pitches second, the full intake third. The alignment check needs goals to align to. Locking one domain at bars-engine.vercel.app/lenses/onboarding before then is optional and…",
-      "ref": "lens-order",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-lens-domains-stand",
-      "text": "bars-engine's five domains (relationships, career, money, health, allyship) stay as the Lens domains until you name others.",
-      "ref": "lens-domains-stand",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, lenses 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     }
-    ]
-   },
-   {
-    "key": "prs",
-    "title": "Open pull requests",
-    "blurb": "Pull requests open in the council, bars-engine and the Game Master's guide.",
-    "items": [
-     {
-      "id": "pr-six-faces-council-135",
-      "text": "Read and send Lens goals through the environment's key",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/135",
-      "note": "six-faces-council #135",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
+      "id": "pr-Six-faces-council-311",
+      "text": "Callsheet: the Fixer spar is built (sprout #63)",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/311",
+      "note": "Six-faces-council #311 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "architect",
+       "kernel": "The spirit-generator sheet records that the Fixer spar is built in sprout #63.",
+       "date": "2026-10-20",
+       "list": "prs",
+       "listTitle": "Open pull requests",
+       "missing": [
+        "next step"
+       ],
+       "gathered": [
+        {
+         "piece": "next step",
+         "found": "The pull request says it is one callsheet edit; his play of sprout #63 comes next.",
+         "source": "pr:wendell-britt/Six-faces-council#311"
+        }
+       ],
+       "workable": true,
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Open pull requests",
+         "note": "Draft, opened 2026-10-19."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "A one-file callsheet change; it merges by itself once marked ready and its checks pass."
+        },
+        "unlocks": {
+         "line": 1,
+         "council": 0,
+         "note": "It points the next thread at his play of the spar."
+        },
+        "waiting": {
+         "days": 1,
+         "note": "One day open."
+        }
+       },
+       "call": "work-today",
+       "decidedBy": "ready",
+       "why": "It is a one-file record change. A steward thread can mark it ready and let it merge today."
+      }
+     },
+     {
+      "id": "pr-Six-faces-council-308",
+      "text": "Podcast step 03 rewritten as a click-by-click walkthrough",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/308",
+      "note": "Six-faces-council #308 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "sage",
+       "kernel": "The podcast scheduling step reads as numbered clicks he can follow alone.",
+       "date": "2026-10-20",
+       "list": "prs",
+       "listTitle": "Open pull requests",
+       "missing": [
+        "next step"
+       ],
+       "gathered": [
+        {
+         "piece": "next step",
+         "found": "The step text is already in the store; this pull request records it in the podcast callsheet and the done log.",
+         "source": "pr:wendell-britt/Six-faces-council#308"
+        }
+       ],
+       "workable": true,
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "Open pull requests",
+         "note": "Draft, opened 2026-10-19 after he asked for more instructions."
+        },
+        "ready": {
+         "lineMissing": [],
+         "note": "Only the callsheet and needs-work-done.json change, so it is ready to merge."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 1,
+         "note": "It closes a needs-work item."
+        },
+        "waiting": {
+         "days": 1,
+         "note": "One day open."
+        }
+       },
+       "call": "work-today",
+       "decidedBy": "ready",
+       "why": "The step he reads is already rewritten in the store. Merging this records it, which a steward thread can do today."
+      }
+     },
      {
-      "id": "pr-six-faces-council-115",
+      "id": "pr-Six-faces-council-305",
+      "text": "Menu key steps rewritten; needs-work recorded",
+      "link": "https://github.com/wendell-britt/Six-faces-council/pull/305",
+      "note": "Six-faces-council #305 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "challenger",
+       "kernel": "The menu key steps become ones he can finish without a fragile copied token.",
+       "date": "2026-10-20",
+       "list": "prs",
+       "listTitle": "Open pull requests",
+       "missing": [
+        "blocker"
+       ],
+       "gathered": [],
+       "workable": [
+        "blocker"
+       ],
+       "opponent": {
+        "kind": "item",
+        "ref": "pr-Six-faces-council-308",
+        "what": "the podcast step record",
+        "title": "Open pull requests",
+        "entry": "Podcast step 03 rewritten as a click-by-click walkthrough"
+       },
+       "factors": {
+        "signal": {
+         "list": "Open pull requests",
+         "note": "Draft, opened 2026-10-19 after his notes on steps 01 and 02."
+        },
+        "ready": {
+         "lineMissing": [
+          "blocker"
+         ],
+         "note": "The pull request says the menu endpoint still answered 401 and test T1 did not run."
+        },
+        "unlocks": {
+         "line": 1,
+         "council": 1,
+         "note": "A working key lets the Morning menu reach bars-engine."
+        },
+        "waiting": {
+         "days": 1,
+         "note": "One day open."
+        }
+       },
+       "call": "defer",
+       "decidedBy": "ready",
+       "why": "The record change can merge, yet the menu endpoint still answers 401. The key work rests until that blocker has a fix in the morning-menu strand."
+      }
+     },
+     {
+      "id": "pr-Six-faces-council-115",
       "text": "Move file: the guessing test's two checks (wording and taught player)",
       "link": "https://github.com/wendell-britt/Six-faces-council/pull/115",
-      "note": "six-faces-council #115 (draft)",
+      "note": "Six-faces-council #115 (draft)",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "pr-six-faces-council-112",
+      "id": "pr-Six-faces-council-112",
       "text": "Record shame1 rulings in the shame-coaching callsheet",
       "link": "https://github.com/wendell-britt/Six-faces-council/pull/112",
-      "note": "six-faces-council #112 (draft)",
+      "note": "Six-faces-council #112 (draft)",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "pr-six-faces-council-100",
-      "text": "Blender pipeline test call sheet: procgen roots and mushrooms",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/100",
-      "note": "six-faces-council #100 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-six-faces-council-77",
+      "id": "pr-Six-faces-council-77",
       "text": "Root call sheet: shell built, next is the phone test",
       "link": "https://github.com/wendell-britt/Six-faces-council/pull/77",
-      "note": "six-faces-council #77 (draft)",
+      "note": "Six-faces-council #77 (draft)",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "pr-bars-engine-318",
-      "text": "Spirit art proof: the Shellback from gas to highest ally form",
-      "link": "https://github.com/johnair01/bars-engine/pull/318",
-      "note": "bars-engine #318 (draft)",
+      "id": "pr-bars-engine-404",
+      "text": "Tap the Vein history: each seed carries blockedAt and its notes count",
+      "link": "https://github.com/johnair01/bars-engine/pull/404",
+      "note": "bars-engine #404",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "pr-bars-engine-317",
-      "text": "Cave: free walking everywhere, and the hall of the six's gates become doors",
-      "link": "https://github.com/johnair01/bars-engine/pull/317",
-      "note": "bars-engine #317 (draft)",
+      "id": "pr-bars-engine-402",
+      "text": "Hosted allyship campaign pages, piloted with Annastasia's",
+      "link": "https://github.com/johnair01/bars-engine/pull/402",
+      "note": "bars-engine #402",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "pr-bars-engine-316",
-      "text": "Cave rooms from a written description: spec, builder, first proof",
-      "link": "https://github.com/johnair01/bars-engine/pull/316",
-      "note": "bars-engine #316 (draft)",
+      "id": "pr-bars-engine-400",
+      "text": "Public /privacy page for the MTGOA Publisher Meta app",
+      "link": "https://github.com/johnair01/bars-engine/pull/400",
+      "note": "bars-engine #400 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-399",
+      "text": "The inner vessel's dock in the WAVE room",
+      "link": "https://github.com/johnair01/bars-engine/pull/399",
+      "note": "bars-engine #399",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-398",
+      "text": "The elder spirit in home base shows a spirit's five forms; a new spirit at three asks one of yours to rest",
+      "link": "https://github.com/johnair01/bars-engine/pull/398",
+      "note": "bars-engine #398",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-380",
+      "text": "Between: embers and lanterns at the hollow's hearth (slice 1)",
+      "link": "https://github.com/johnair01/bars-engine/pull/380",
+      "note": "bars-engine #380 (draft)",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "pr-bars-engine-364",
+      "text": "J5 rounds 10 and 11: clean cuffs, sleeves on spring chains",
+      "link": "https://github.com/johnair01/bars-engine/pull/364",
+      "note": "bars-engine #364 (draft)",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
@@ -34994,16 +35083,6 @@
       "text": "J5: robe, sash and topknot as skinned garments on the cave figure",
       "link": "https://github.com/johnair01/bars-engine/pull/315",
       "note": "bars-engine #315 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-314",
-      "text": "Big Mind cave: the daemon path's seven chambers and the child at the centre",
-      "link": "https://github.com/johnair01/bars-engine/pull/314",
-      "note": "bars-engine #314 (draft)",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
@@ -35130,6 +35209,992 @@
       }
      }
     ]
+   },
+   {
+    "key": "backlog",
+    "title": "bars-engine backlog",
+    "blurb": "Rows marked Ready in bars-engine's BACKLOG.md.",
+    "items": [
+     {
+      "id": "backlog-mlbr",
+      "text": "MtGoA Launch + Barn Raising — July fundraiser party: coordinator reframing the cancelled Bruised Banana residency into the real event: a July 2026 party at the Bruised Banana venue = Mastering the Game of Allyship Launch Party + Wendell's…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/mtgoa-launch-barn-raising-party/spec.md",
+      "note": "1.00 MLBR",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "regent",
+       "kernel": "The game's launch and his Portland send-off become one party that funds the move.",
+       "date": "2026-10-20",
+       "list": "backlog",
+       "listTitle": "bars-engine backlog",
+       "missing": [
+        "input"
+       ],
+       "gathered": [],
+       "workable": [
+        "input"
+       ],
+       "opponent": null,
+       "factors": {
+        "signal": {
+         "list": "bars-engine backlog",
+         "note": "Top of bars-engine's backlog at 1.00, marked Ready."
+        },
+        "ready": {
+         "lineMissing": [
+          "input"
+         ],
+         "note": "The spec names July 18, 2026, which has passed, and the record holds no new date."
+        },
+        "unlocks": {
+         "line": 2,
+         "council": 0,
+         "note": "PARV and MBLD both hang on it."
+        },
+        "waiting": {
+         "days": 8,
+         "note": "The spec was last changed on 2026-10-12."
+        }
+       },
+       "call": "defer",
+       "decidedBy": "ready",
+       "why": "The party date in the spec has passed, and no new date is in the record. It rests until an event date exists; a question about one belongs on the Council Board."
+      }
+     },
+     {
+      "id": "backlog-parv",
+      "text": "Partiful link integration — July party invite: wire the Partiful event URL into the invite BAR + event Instance for the July 18, 2026 MtGoA Launch + Barn Raising. Reuse CustomBar.partifulUrl + eventSlug (EIP); RSVP CTA on the invite,…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/backlog/prompts/partiful-link-integration.md",
+      "note": "1.00.1 PARV",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "diplomat",
+       "kernel": "Guests reach the party RSVP in one tap from every public page.",
+       "date": "2026-10-20",
+       "list": "backlog",
+       "listTitle": "bars-engine backlog",
+       "missing": [
+        "input"
+       ],
+       "gathered": [],
+       "workable": [
+        "input"
+       ],
+       "opponent": {
+        "kind": "item",
+        "ref": "backlog-mlbr",
+        "what": "the launch party coordinator",
+        "title": "bars-engine backlog",
+        "entry": "MtGoA Launch + Barn Raising — July fundraiser party: coordinator reframing the cancelled Bruised Banana residency into the real event: a July 2026 party at the Bruised Banana venue = Mastering the Gam"
+       },
+       "factors": {
+        "signal": {
+         "list": "bars-engine backlog",
+         "note": "Backlog 1.00.1, marked Ready."
+        },
+        "ready": {
+         "lineMissing": [
+          "input"
+         ],
+         "note": "It wires a Partiful link for July 18, 2026, and that date has passed."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 0,
+         "note": "Nothing else waits on it."
+        },
+        "waiting": {
+         "days": 8,
+         "note": "The prompt was last changed on 2026-10-12."
+        }
+       },
+       "call": "let-go-offered",
+       "decidedBy": "ready",
+       "why": "The invite it wires is for a date that has passed. It can go, or wait on the ladder for a new party date."
+      }
+     },
+     {
+      "id": "backlog-mbld",
+      "text": "Barn Raising — Live Data: back the three-wall Milestone BAR (car / pre-sale / runway) with real contributions: add CampaignMilestone.wallKey (additive migration), getBarnSnapshot(campaignRef), seed the July 18 event Instance + 3 walls…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/barn-raising-live-data/spec.md",
+      "note": "1.00.2 MBLD",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      },
+      "read": {
+       "face": "architect",
+       "kernel": "The barn raising's three walls show real contributions as they come in.",
+       "date": "2026-10-20",
+       "list": "backlog",
+       "listTitle": "bars-engine backlog",
+       "missing": [
+        "input"
+       ],
+       "gathered": [],
+       "workable": [
+        "input"
+       ],
+       "opponent": {
+        "kind": "item",
+        "ref": "backlog-mlbr",
+        "what": "the launch party coordinator",
+        "title": "bars-engine backlog",
+        "entry": "MtGoA Launch + Barn Raising — July fundraiser party: coordinator reframing the cancelled Bruised Banana residency into the real event: a July 2026 party at the Bruised Banana venue = Mastering the Gam"
+       },
+       "factors": {
+        "signal": {
+         "list": "bars-engine backlog",
+         "note": "Backlog 1.00.2, marked Ready."
+        },
+        "ready": {
+         "lineMissing": [
+          "input"
+         ],
+         "note": "It seeds the July 18 event Instance, so it needs the event's real date first."
+        },
+        "unlocks": {
+         "line": 0,
+         "council": 0,
+         "note": "It opens nothing until the party has a date."
+        },
+        "waiting": {
+         "days": 8,
+         "note": "The spec was last changed on 2026-10-12."
+        }
+       },
+       "call": "defer",
+       "decidedBy": "unlocks",
+       "why": "The live walls serve an event with no current date. The build rests until the launch party has one."
+      }
+     },
+     {
+      "id": "backlog-mmsc",
+      "text": "MtGoA Menu — Skeuomorphic CYOA Redesign: redesign /mastering-allyship/hub from flat black-on-black-with-accents (reads \"AI-generated\") into a skeuomorphic, CYOA-forward menu where the 8 spokes feel like real objects (like the handbook…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/mtgoa-menu-skeuomorphic-cyoa/spec.md",
+      "note": "1.00.3 MMSC",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-mqsp",
+      "text": "Mobility Quest — Superpower Polarity Campaign: interactive campaign route fronted by a superpower-discovery CYOA intake and backed by tiered, scoped skill/time donation toward milestones. Organizing primitive: Card × Superpower ×…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/mobility-quest-superpower-campaign/spec.md",
+      "note": "1.05 MQSP",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-spqd",
+      "text": "Superpower Quiz Design: deterministic, offline, anti-extractive quiz assigning 1 of 7 superpowers + orientation for [1.05 MQSP](.specify/specs/mobility-quest-superpower-campaign/spec.md). Grounded in deep-research…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/superpower-quiz-design/spec.md",
+      "note": "1.05.1 SPQD",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-spc",
+      "text": "750words Personal Sentiment Capture: self-hosted writing surface with 750-word goal, daily streak tracking (black-hat gamification acceptable), manual mood tag selection from Wuxing feeling-chip vocabulary, private WritingSession storage,…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/personal-ops-funnel/spec.md",
+      "note": "2.01 SPC",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-brs",
+      "text": "BAR Stewardship Flow: dedicated action for tending planted BAR seeds: attach soil/context, link to quest, write next action, route to LDM guide, or compost. Closes the personal ops loop: SPC → practice → BAR seed → stewardship → quest →…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/personal-ops-funnel/spec.md § BAR Stewardship",
+      "note": "2.01.1 BRS",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-inq",
+      "text": "Inquiry (The Work): mobile-first single-session Inquiry practice distilled from Byron Katie's The Work: 1 belief → 4 questions → turnaround → emotional alchemy (dissatisfied/desired feeling) → BAR seed dispatch. No guide NPCs. Parallel to…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/inquiry-lite/spec.md",
+      "note": "2.02 INQ",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-bsm",
+      "text": "BAR Seed Garden / Nursery UI: player-facing BAR backlog as explorable terrain: soil context attachment (campaign/thread/nation/archetype), maturity state machine (Wake → Clean → Grow → Show → Integrate), compost action with release note,…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/bar-seed-metabolization/spec.md",
+      "note": "2.03 BSM",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-eat",
+      "text": "EA Translator Research: Natural language feeling → EA channel classifier: keyword/idiom mapping, contextual disambiguation, 25-pair EA move matrix, 50-case test corpus. Feeds INQ feeling chip auto-classification + FSR Shaman pass…",
+      "link": "",
+      "note": "2.05 EAT",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-sat",
+      "text": "Satisfaction Capture: End-of-day ritual: identify which of 5 satisfied states fired today (Triumph=Wood/Fire, Poignance=Water/Sadness, Bliss=Wood/Joy, Peace=Earth/Neutral, Excitement=Metal/Fear). Create plan to leverage each into…",
+      "link": "",
+      "note": "2.06 SAT",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-ami",
+      "text": "Applied Mode Intake Conversation: MTGOA Migration Brief priority #8. Scripted-first / dual-track IntakeConversation: a pure intakeReducer walks the Six Unpacking Questions → IntakeConfig → buildEncounterFromIntake() synthesizes a…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/applied-mode-intake-conversation/spec.md",
+      "note": "2.07 AMI",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-ttve",
+      "text": "Tap the Vein Tier 2 — Vibeulon economy: (Phase A) — mint ♦+1 when a TTV task completes (idempotent via TapTheVeinTask.rewardMintedAt), through the existing wallet/ledger (db.vibulon, src/actions/economy.ts) — no parallel currency. Makes…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/tap-the-vein-tier-2/spec.md",
+      "note": "2.08 TTVE",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-ttv3",
+      "text": "Tap the Vein Tier 2 — inline 3·2·1 thread: (Phase B) — optional Clean Up between Brainstorm and Commit: autosaved chat thread (Face it → Talk to it → Be it), voice switcher only on phase 2, before/after charge sliders; charge drop > 2…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/tap-the-vein-tier-2/spec.md",
+      "note": "2.09 TTV3",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-ttvs",
+      "text": "Tap the Vein Tier 2 — idea storm → distill → vault: (Phase C) — timed raw-idea dump → distill to a hand of ≤5 (today's play) → merge → send to Vault; Vault economy 5 free deposits/day then ♦1 (via TTVE); new TapTheVeinIdea model;…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/tap-the-vein-tier-2/spec.md",
+      "note": "2.10 TTVS",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-pma",
+      "text": "Productivity Modality Alignment: research authority for aligning bars-engine with open-source GTD/GSD productivity patterns (Tandem, Mindwtr, PARA, etc.) without todo-app chrome: reusable…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/productivity-modality-alignment/spec.md",
+      "note": "2.12 PMA",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-cgla",
+      "text": "Core Game Loop Audit: audit of how a BAR flows capture → charge → 3·2·1 → quest → daemon and a remediation map for the holes. The mechanics mostly exist (grow-to-quest/daemon/artifact wired on /bars/[id]; captureBar;…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/core-game-loop-audit/spec.md",
+      "note": "1.45 CGLA",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-cgl1",
+      "text": "CGLA H1 — TTV tasks become BARs: a TapTheVeinTask becomes a linked CustomBar (type:bar, maturity captured) so it can be tuned / charged / 3·2·1'd / grown to a quest / become a daemon. Lazy (decided): BAR minted only on a deliberate…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/core-game-loop-audit/spec.md",
+      "note": "1.45.1 CGL1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-cgl2",
+      "text": "CGLA H2/H3/H6 — BAR loop wiring: unified \"all my BARs\" view (reuse list actions), a \"Do a 3·2·1 on this\" button on /bars/[id] + charge card (/shadow/321?chargeBarId=), and inline tune on the BAR detail page. Discoverability/wiring only —…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/core-game-loop-audit/spec.md",
+      "note": "1.45.2 CGL2",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-strd",
+      "text": "Strand Process — Integrate or Deprecate: decision + cleanup, judged by value. Issue #21 promised five capabilities (isolation, failure detection, token budgets, resumable state, multi-agent coordination); the shipped CLI is a YAML record…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/strand-process-decision/spec.md",
+      "note": "2.13 STRD",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-wfi",
+      "text": "World From Image: one image → PlanScene (top-down terrain grid, object footprints, doors/spawns) → per-game emitters: sprout specs/maps/.json first (checked by map:check), then bars-engine RealmData. Producer:…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/world-from-image/spec.md",
+      "note": "2.14 WFI",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-qla",
+      "text": "Quest Lineage & Shadow Alignment: close the NOW loop so TTV commits land aligned: Vault becomes the single canonical inventory (retire the /bars vs Vault split + 50-cap); TTV commits are born as quests via shared mintQuestFromText…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/quest-lineage-alignment/spec.md",
+      "note": "1.46 QLA",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lens",
+      "text": "Lens Integration Refactor: replace the flat planning flow with a Lens-driven developmental architecture: Lenses as first-class temporal objects (new Observatory: orientation→vision→year→quarter→month→week→today), every BAR grown under a…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/lens-integration-refactor/spec.md",
+      "note": "1.40 LENS",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lens1",
+      "text": "Lens P1 — Lens entity + Observatory: Lens model (type/title/parentLensId/playerId) + /observatory with 7 independently-navigable levels + auto-minted daily Lens. No BAR changes yet. Verification: cert-observatory-v1.",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/lens-integration-refactor/spec.md",
+      "note": "1.40.1 LENS1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lens2",
+      "text": "Lens P2 — BAR.lensId: add CustomBar.lensId (+ experienceIntent) and have Daily TTV commitTask attach lensId. No developmentStage — core stays developmental-level agnostic; existing maturity untouched. Verification: cert-bar-lens-v1.",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/lens-integration-refactor/spec.md",
+      "note": "1.40.2 LENS2",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lens3",
+      "text": "Lens P3 — Garden first-class + Plant flow: Garden entity + CustomBar.gardenId + experienceIntent; Choose Lens → Six Questions → Plant; /garden (personal) shows Planted+ only, separate from Hand/Vault/World. Verification:…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/lens-integration-refactor/spec.md",
+      "note": "1.40.3 LENS3",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lens4",
+      "text": "Lens P4 — Provenance graph + Vibeulon attribution: ProvenanceLink + CustomBar.parentQuestId; getBarProvenance(barId) queryable graph; Vibulon gains completedBARId/lensId/campaignId/emotionalChannel/growthSource; refit mintVibulon (incl.…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/lens-integration-refactor/spec.md",
+      "note": "1.40.4 LENS4",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lwx",
+      "text": "Living-World Experience: the experience + navigation layer that makes the app feel like a living world (Pokémon PC / Harvest Moon / BotW, not Notion/Jira). Destinations Observatory / Garden / Vault / World + Hand glance-in-NOW→/hand +…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/living-world-experience/spec.md",
+      "note": "1.41 LWX",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lpmig",
+      "text": "Migration deploy flow — sandbox-authored, prod-applied: codify the author-in-web/Codex (DB-free migrate diff) → apply-on-Vercel-Production / Mac lever flow so agents stop fighting the DB from sandboxes; verify/apply the…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/backlog/prompts/migration-deploy-flow.md",
+      "note": "1.60 LPMIG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-migci",
+      "text": "CI gate — migration chain applies on empty Postgres: GitHub Actions job on PRs touching prisma/: empty Postgres + migrate deploy, fail on any unapplied/broken migration (the durable fix for DB-free-authored migrations). Surfaces legacy…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/backlog/prompts/migrate-deploy-ci-gate.md",
+      "note": "1.61 MIGCI",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-gsku",
+      "text": "Wire non-book SKU Gumroad product ids: set GUMROAD_PRODUCT_ID_<SKU> for deck / RPG handbook / subscription / etc. so the /redeem license-verify fallback (resolveLicense) resolves every offer, not just the book; document the env…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/backlog/prompts/gumroad-sku-product-ids.md",
+      "note": "1.62 GSKU",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-ards",
+      "text": "Asset Register Design System: (7 semantic registers: Cosmic/Provenance/Portrait/Walk/Chrome/Zone/Ceremony; forkability architecture; move icons; zone textures; coherence rules)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/asset-register-design-system/spec.md",
+      "note": "1.37 ARDS",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-casi",
+      "text": "Card Art Surface Integration: (wire 40 Cosmic images into 8 UI surfaces; DashboardHeader P1; wiki style guide P2; BAR card + Vault NationProvider + quest cards)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/card-art-surface-integration/spec.md",
+      "note": "1.38 CASI",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-pss",
+      "text": "Provenance Stamp System: (nation sigil + archetype mark on every BAR/quest; 13 pixel art marks; resolveProvenanceStamp(); persists through trades; schema: creatorNationKey/creatorArchetypeKey)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/provenance-stamp-system/spec.md",
+      "note": "1.39 PSS",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-bcc",
+      "text": "BAR Capture Consolidation: make /bars/capture the sole BAR creation surface by closing 4 canvas gaps: (1) post-capture confirmation overlay (\"A seed is on the board\" + \"Tune now →\" + \"Back to board\"); (2) intent/tags field (storyContent)…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/bar-capture-consolidation/spec.md",
+      "note": "1.39.6 BCC",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-bde",
+      "text": "321 → BAR draft experience: (tweet-like BAR; BarDraftFrom321 + short composed body; system title non-prominent; quick path: allyship domain required, nation/archetype gating hidden; optional image; reversible artifact dispatch;…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/321-bar-draft-experience/spec.md",
+      "note": "1.40 BDE",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-cbb",
+      "text": "CYOA blueprint → BAR metabolism: (auth-aware CTAs; cardinality-aware copy; in-voice choice labels; blueprint → prompt library → BAR ledger; modal + Transcendence recap; hexagram state in cyoaState; milestone hooks)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/cyoa-blueprint-bar-metabolism/spec.md",
+      "note": "1.41 CBB",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-pdc",
+      "text": "Avatar Paper Doll Coherence: (shared anchor + layer offsets for portrait stack; art contract + CI; aligns with ARDS Portrait register; walkable sprites remain separate precomposed sheets)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/avatar-paper-doll-coherence/spec.md",
+      "note": "1.42 PDC",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-pfcg",
+      "text": "Player-facing CYOA generator: (ITD additions: coach identity anchor, revenue Phase 0, designer shadow checkpoint — see spec.md) (sovereignty-first; BAR→quest→CYOA; vibey UI + quality bar; earned dominion; campaign proposal queue; phases…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/player-facing-cyoa-generator/spec.md",
+      "note": "1.43 PFCG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-pmel",
+      "text": "Party mini-game — event game layer: (Bruised Banana Apr 4/5 bingo pilot; 3×3 tap grid → optional BAR vault stamp party-mini-game-v1; taxonomy path for author-defined mini-games)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/party-mini-game-event-layer/spec.md",
+      "note": "1.44 PMEL",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-abcl",
+      "text": "Admin books list overflow + home compass row layout: (wrap / See more / /admin/books/[id] hub; Four moves + Current move one row sm+, stack mobile; cert cert-admin-books-compass-compact-ui-v1)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/admin-books-compass-compact-ui/spec.md",
+      "note": "1.45 ABCL",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-eip",
+      "text": "Event invite BAR — party + Partiful + event-scoped initiation: (BAR as primary invite; partifulUrl + eventSlug; /campaign/event/[eventSlug]/initiation; dedicated Twine Adventure per event; extends event_invite CYOA MVP)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/event-invite-party-initiation/spec.md",
+      "note": "1.46 EIP",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-ppt",
+      "text": "Public teaser — /play loop (no account): logged-out /play explains Charge → Scene Atlas → I Ching; login/join CTAs w/ callbackUrl; no fake playable steps without auth",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/play-public-teaser-loop/spec.md",
+      "note": "1.48 PPT",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-obt",
+      "text": "Offer BAR (timebank) + DSW modal: Time/Space paths on /event/donate/wizard open a modal to create an offerBAR (marketplace-oriented metadata: skilled/unskilled, hours, scheduling); aligns with time-banking norms ([TimeBank Boulder —…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/offer-bar-timebank-wizard-modal/spec.md",
+      "note": "1.52 OBT",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-cbs",
+      "text": "Campaign branch seeds: players plant soft signals at a campaign passage (broken path + quiet suggest); water by returning players, stewards, or admins with weighted visibility; metabolize into Passage under UGA validation.",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/campaign-branch-seeds/spec.md",
+      "note": "1.54 CBS",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-smb",
+      "text": "Spoke move seed beds: hub spoke → BAR (required to finish) → nursery: four move beds per (campaignRef, spoke); first mover per (campaignRef, spokeIndex, moveType) anchors spoke BAR; anyone plants with any BAR or waters campaign_kernel;…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/spoke-move-seed-beds/spec.md",
+      "note": "1.56 SMB",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-lcg",
+      "text": "Library-conditioned GM generation: retrieve Book.extractedText chunks into GM passage generation (cite-or-silence); optional Instance defaults (Phase B); golden traces + cert cert-library-conditioned-gm-v1; trains six faces on…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/library-conditioned-gm-generation/spec.md",
+      "note": "1.57 LCG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-csc",
+      "text": "Campaign subcampaigns: Path C ontology: domain-keyed child campaigns under parent campaignRef (e.g. bruised-banana + RAISE_AWARENESS orientation); nested depth + compound refs; reconcile with ACEC (awareness run vs long-lived subcampaign…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/campaign-subcampaigns/spec.md",
+      "note": "1.59 CSC",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-cfb",
+      "text": "Cert feedback blob persistence: Cert & site-signal feedback → durable storage (Vercel Blob). Today POST /api/feedback/cert, POST /api/feedback/site-signal, and [quest-engine Share Your Signal append](../../src/actions/quest-engine.ts)…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/cert-feedback-blob-persistence/spec.md",
+      "note": "1.60 CFB",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-snp",
+      "text": "Spatial navigator + awake signal (parent epic) — Shipped (slice): CFB v1 Blob mirror + feedback:export-blob + site-signal bottom-sheet / lighter overlay (awake signal UX). Remaining: SMB, BUO, CSC, HSM P2, BLW scoped. — Use case: players…",
+      "link": "",
+      "note": "1.71 SNP",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-gscp",
+      "text": "Generated spoke CYOA pipeline: v1: generated grammatical CYOA per hub spoke; opening = campaign context + fortune + live milestone + fundraising; four-move focus + charge (spoke-scoped); cultivation sifu (six GM faces) → signature…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/generated-spoke-cyoa-pipeline/spec.md",
+      "note": "1.72 GSCP",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-cog",
+      "text": "Campaign ontology + campaignRef spine (batched) — [campaign-ontology-alignment](../specs/campaign-ontology-alignment/spec.md) + [campaignref-inventory-audit](../specs/campaignref-inventory-audit/spec.md). GitHub: [#39 Docs: Campaign…",
+      "link": "",
+      "note": "1.74 COG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-hwc",
+      "text": "Humanoid v1 walkable contract: 512×64 RGBA, anchor (32,56), npm run sprites:validate-humanoid. GitHub: [#45 Spike: Walkable sprite pipeline demo (env + WASD)](https://github.com/johnair01/bars-engine/issues/45) (demo spike; contract +…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/humanoid-v1-walkable-contract/spec.md",
+      "note": "1.75 HWC",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-piv",
+      "text": "Pixel identity system v0: CharacterIdentity, resolveWalkableSpriteUrl (@/lib/pixel-identity). (No dedicated GitHub issue; track under #45 epic or open child issue.)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/pixel-identity-system-v0/spec.md",
+      "note": "1.76 PIV",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-bcs",
+      "text": "Book → CYOA stewardship (1st party): . GitHub: [#46 Spec: 1st-party book → CYOA stewardship (Phase A pilot)](https://github.com/johnair01/bars-engine/issues/46). Batch with Book OS v1 when…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/book-cyoa-stewardship/spec.md",
+      "note": "1.77 BCS",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-adl",
+      "text": "Allyship Deck Literacy: make the deck legible + actionable without a guidebook. P1 deep-linkable /deck/glossary (built from move-library data) + inline term links on cards; P2 \"Your move\" — surface the submove action (MoveCard.action) on…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/allyship-deck-literacy/spec.md",
+      "note": "1.81.1 ADL",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-tsg",
+      "text": "Throughput Spine — Go-Live: consolidating epic that makes the personal→collective spine walkable end-to-end: capture → seed (quest/daemon/artifact) → tend (Vault) → attach to a campaign → advance a well-crafted milestone. Closes two…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/throughput-spine-go-live/spec.md",
+      "note": "1.82 TSG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-iax",
+      "text": "Integral Axes — allyship domain inner/outer: 4 domains × {inner,outer} = 8-cell board; 5 WAVE moves = inner column; WAVE_TO_DOMAIN → MOVE_CELL_AFFINITY (cosmetic Q1 flavor only, no progress/energy effect); Grow Up = ordinary inner move…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/integral-axes/spec.md",
+      "note": "1.83 IAX",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-y",
+      "text": "Bruised Banana House Instance: (dedicated Instance + seed; v1 shipped: bruise-banana-house / campaignRef=bruised-banana-house, npm run seed:bb-house, [runbook](../../docs/BRUISED_BANANA_HOUSE_INSTANCE.md); recurring quests + house state…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/../specs/bruised-banana-house-instance/spec.md",
+      "note": "21 Y",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-eh",
+      "text": "Superpower Move Extensions v0: (Allyship prestige; Connector, Storyteller, etc.; extends base archetypes for domain quests)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/superpower-move-extensions/spec.md",
+      "note": "0.69 EH",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-el",
+      "text": "Attunement Translation: (Vibeulon economy: Global/Local; attune; transmute; VibeulonLedger) — Phase 1: [mint/burn audit](../../docs/ECONOMY_MINT_BURN_AUDIT.md); full attunement UI in spec tasks",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/attunement-translation/spec.md",
+      "note": "0.73 EL",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-ep",
+      "text": "Sustainability and Onboarding Lore: (wiki: onboarding-path, sustainability, integral-emergence; Bruised Banana expansion)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/sustainability-onboarding-lore/spec.md",
+      "note": "0.77 EP",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-eq",
+      "text": "Wake-Up Campaign Birthday Pivot: (campaign as narrative funnel: 5 Acts — Fracture, Spiral, Greenhouse, Ask, Oath)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/wake-up-campaign-birthday-pivot/spec.md",
+      "note": "0.78 EQ",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-fm",
+      "text": "BAR → Quest Generation Engine v0: (BAR eligibility → interpretation → emotional alchemy → quest proposal → admin review → publication)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/bar-quest-generation-engine/spec.md",
+      "note": "1.00 FM",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-fn",
+      "text": "Transformation Simulation Harness v0: (CLI: quest, agent, campaign, onboarding; full pipeline; deterministic; simulation-logs)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/transformation-simulation-harness/spec.md",
+      "note": "1.01 FN",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-rd",
+      "text": "Reflective Data Privacy + Shareability Model v0: (data classes; visibility levels; identity layers; derived artifact rules; agent access boundaries; provenance; consent; API-first)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/reflective-data-privacy-shareability/spec.md",
+      "note": "1.08 RD",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-gg",
+      "text": "Custom Portal Onboarding Flow v0: (invite token → 5-scene questionnaire → campaignState → createCampaignPlayer; extends Bruised Banana)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/custom-portal-onboarding/spec.md",
+      "note": "1.15 GG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-dop",
+      "text": "Demo Orientation Preview: (shareable pre-signup orientation slice; token/slug → adventure bounds; handoff to signup w/ ref/invite; complements GP invites)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/demo-orientation-preview/spec.md",
+      "note": "1.15.1 DOP",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-gj",
+      "text": "Campaign Playbook System v0: (living strategy doc per campaign; Kotter stages; domain strategy; RACI; manual + automated synthesis; export; deck)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/campaign-playbook-system/spec.md",
+      "note": "1.18 GJ",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-gk",
+      "text": "Campaign Invitation System v0: (invite actors with roles; RACI integration; consent-based; playbook integration; send/accept/decline/confirm-role)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/campaign-invitation-system/spec.md",
+      "note": "1.19 GK",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-du",
+      "text": "Deftness Uplevel: Character, Daemons, Agents: (Ouroboros interview; Archetype playbooks; Daemons discovery/level/summon; Sage coordination; agent-domain backlog ownership; 6-face parallel)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/deftness-uplevel-character-daemons-agents/spec.md",
+      "note": "1.23 DU",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-esc",
+      "text": "Encounter Slot Context Schema: (PassageSlot agent context fields; GenerateOptions campaign context; gather-resources encounter grammar; GM agent routing per slot)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/encounter-slot-context-schema/spec.md",
+      "note": "0.03.4 ESC",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-caf",
+      "text": "Campaign Authoring Flow: (top-down passage view with face badges + fill status; context panel in edit; per-passage AI generation; Phase 2: campaign hub + deck spawn; Phase 3: PDF bridge; Phase 4: kernel→whole campaign)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/campaign-authoring-flow/spec.md",
+      "note": "0.03.5 CAF",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-st",
+      "text": "Strand System for BARS Engine: (multi-agent investigation; strand-as-BAR; diagnostic strand + MCP trigger; Architect/Regent unified schema)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/strand-system-bars/spec.md",
+      "note": "1.24 ST",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-sn",
+      "text": "321 Suggest Name Deterministic: (6-face grammar; multi-click suggest w/ attempt; name resolution persists; NPC merge from 321 metadata → matching agent players; daemon→NPC growth Phase 8)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/321-suggest-name/spec.md",
+      "note": "1.25 SN",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-snl",
+      "text": "Shadow Name Library: (low-cost vast name library; externalized vocab; feedback loop; zero tokens at suggest)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/shadow-name-library/spec.md",
+      "note": "1.26 SNL",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-mee",
+      "text": "Emergent Move Ecology: (PDF move extraction; proposal queue; repeatable pipeline; library integration)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/move-ecology-emergent/spec.md",
+      "note": "1.27.1 MEE",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-buo",
+      "text": "BARs UI Overhaul: (talisman receive; BAR as seed for quests/daemons/artifacts; organize & compost; photo upload)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/bars-ui-overhaul/spec.md",
+      "note": "1.28 BUO",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-bpcp",
+      "text": "BAR Physical Capture & Photo: (rotate uploaded photos; text OR photo at capture; front/back + FLIP UI)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/bar-physical-capture-photo/spec.md",
+      "note": "1.28.2 BPCP",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-nspe",
+      "text": "NPC & Simulated Player Content Ecology: (single-player companionship; simulated collaborators; persona cohort; NPC content proposal; test before real players)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/npc-simulated-player-content-ecology/spec.md",
+      "note": "1.29 NSPE",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-dsbd",
+      "text": "Dominion-Style BAR Decks: (Library → Decks → Hand; borrow nation/archetype decks; deck creation quest thread; campaign domain decks collective; ActorDeckState for BARs; charge/321 → Library)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/dominion-style-bar-decks/spec.md",
+      "note": "1.30 DSBD",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-csg",
+      "text": "Scene Atlas: (52-card BarDeck; compass / personal divination map; 2×2 axes as four suits; BAR + BarBinding; pedagogy for all players; creator lab, private-by-default)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/creator-scene-grid-deck/spec.md",
+      "note": "1.32 CSG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-sag",
+      "text": "Scene Atlas Game Loop: (personal vs collective throughput; dashboard IA; daily Atlas limit; campaign I Ching; north star; Wii-style demos; Charge→Atlas bridge)",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/scene-atlas-game-loop/spec.md",
+      "note": "1.33 SAG",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "backlog-pdh",
+      "text": "Prompt deck draw + shared hand: (52 topo; rank→Wake/Clean/Grow/Show levels + wild; pick deck → draw; one 5-slot hand across archetype+nation decks; per-deck play-cycle discard; reshuffle when empty; discard ≠ grid — BarBinding untouched…",
+      "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/prompt-deck-draw-hand/spec.md",
+      "note": "1.34 PDH",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
    }
   ]
  },
@@ -35199,5 +36264,119 @@
    "saved_at": "2026-10-15T19:52:44.380Z",
    "record": "council/ledger/2026-10-15-pull-195357.json (six-faces-council)"
   }
- ]
+ ],
+ "list_reads": {
+  "board-ttv-one-ui": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "let-go-offered",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "board-tb-sealed-is-bar": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "join",
+   "rung": -1,
+   "next": "2026-10-21"
+  },
+  "board-tb-face-unpacks": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "join",
+   "rung": -1,
+   "next": "2026-10-21"
+  },
+  "step-anastasia-campaign-live-01": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "work-today",
+   "rung": -1,
+   "next": "2026-10-21"
+  },
+  "step-anastasia-campaign-live-02": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "defer",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "step-anastasia-campaign-live-03": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "defer",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "due-mm-set-aside": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "defer",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "handoff-2026-10-08-slim-the-board-read": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "let-go-offered",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "handoff-2026-10-08-plugins": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "defer",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "handoff-2026-10-08-sonnet-threads": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "let-go-offered",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "pr-Six-faces-council-311": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "work-today",
+   "rung": -1,
+   "next": "2026-10-21"
+  },
+  "pr-Six-faces-council-308": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "work-today",
+   "rung": -1,
+   "next": "2026-10-21"
+  },
+  "pr-Six-faces-council-305": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "defer",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "backlog-mlbr": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "defer",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "backlog-parv": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "let-go-offered",
+   "rung": 0,
+   "next": "2026-10-23"
+  },
+  "backlog-mbld": {
+   "first": "2026-10-20",
+   "date": "2026-10-20",
+   "call": "defer",
+   "rung": 0,
+   "next": "2026-10-23"
+  }
+ }
 }
