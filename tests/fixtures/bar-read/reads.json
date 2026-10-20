@@ -1,0 +1,211 @@
+[
+ {
+  "line": "Write the first page of the Kickstarter video script",
+  "face": "regent",
+  "kernel": "You want the launch to have a voice before the demo is finished.",
+  "home": {
+   "strand": "chapter1-demo",
+   "why": "The Kickstarter video waits on his go in the Chapter 1 demo strand."
+  },
+  "missing": [
+   "next step"
+  ],
+  "gathered": [
+   {
+    "piece": "next step",
+    "found": "The call sheet names your go on the Kickstarter video as the open step.",
+    "source": "callsheet:chapter1-demo"
+   }
+  ],
+  "opponent": {
+   "kind": "strand",
+   "ref": "chapter1-demo",
+   "what": "second player for the A6 and A8 cards"
+  },
+  "factors": {
+   "signal": {
+    "note": "Written today at medium charge."
+   },
+   "ready": {
+    "note": "The first page is the next step the sheet already names."
+   },
+   "unlocks": {
+    "line": 1,
+    "council": 1,
+    "note": "Each opens one Kickstarter step."
+   },
+   "waiting": {
+    "days": 1,
+    "note": "The second player was named yesterday."
+   }
+  },
+  "call": "work-today",
+  "decided_by": "signal",
+  "why": "Write the page this morning; the second player can wait a day without losing anything."
+ },
+ {
+  "line": "Make the face-off card on the board feel like one screen",
+  "face": "diplomat",
+  "kernel": "You want the morning to happen in one place, without switching between pages.",
+  "home": {
+   "row": "ttv-one-ui",
+   "why": "It carries the one-UI position into the card this build adds."
+  },
+  "missing": [],
+  "gathered": [],
+  "opponent": {
+   "kind": "row",
+   "ref": "ttv-one-ui",
+   "what": "the face-off card build on the Morning tab"
+  },
+  "factors": {
+   "signal": {
+    "note": "Written today."
+   },
+   "ready": {
+    "note": "Nothing is missing on either side."
+   },
+   "unlocks": {
+    "line": 0,
+    "council": 2,
+    "note": "The council build carries this line inside it."
+   },
+   "waiting": {
+    "days": 0,
+    "note": "Started today."
+   }
+  },
+  "call": "join",
+  "decided_by": "unlocks",
+  "why": "The card being built today is this line, so it rides along with that work."
+ },
+ {
+  "line": "Call Ari about the Between",
+  "face": "shaman",
+  "kernel": "You want Ari to meet the creature you are making together.",
+  "home": {
+   "strand": "relationship-creature",
+   "why": "The Between is the relationship creature strand, live on bars-engine."
+  },
+  "missing": [
+   "blocker",
+   "input"
+  ],
+  "gathered": [
+   {
+    "piece": "input",
+    "found": "The Between is live and the invite link is yours to make.",
+    "source": "callsheet:relationship-creature"
+   }
+  ],
+  "opponent": {
+   "kind": "strand",
+   "ref": "relationship-creature",
+   "what": "the Between's next round"
+  },
+  "factors": {
+   "signal": {
+    "note": "Carried twice at high charge."
+   },
+   "ready": {
+    "note": "His blocker on the task is still open."
+   },
+   "unlocks": {
+    "line": 2,
+    "council": 1,
+    "note": "The call opens Ari's spark and the invite."
+   },
+   "waiting": {
+    "days": 3,
+    "note": "The round has sat three days."
+   }
+  },
+  "call": "defer",
+  "decided_by": "ready",
+  "why": "Rest it until the blocker you marked clears; it comes back in three days."
+ },
+ {
+  "line": "Clean the studio corner so I can record",
+  "face": "challenger",
+  "kernel": "You want a place ready so recording can start without setup.",
+  "home": {
+   "strand": "podcast",
+   "why": "Recording the next episode runs through the podcast strand."
+  },
+  "missing": [
+   "capacity"
+  ],
+  "gathered": [
+   {
+    "piece": "capacity",
+    "found": "The podcast sheet plans episode two for one computer sitting.",
+    "source": "callsheet:podcast"
+   }
+  ],
+  "opponent": {
+   "kind": "strand",
+   "ref": "podcast",
+   "what": "episode two publishing steps"
+  },
+  "factors": {
+   "signal": {
+    "note": "Carried once at low charge."
+   },
+   "ready": {
+    "note": "An hour is all it asks."
+   },
+   "unlocks": {
+    "line": 1,
+    "council": 1,
+    "note": "Each clears the way for recording."
+   },
+   "waiting": {
+    "days": 2,
+    "note": "The handoff prompt has sat two days."
+   }
+  },
+  "call": "work-today",
+  "decided_by": "unlocks",
+  "why": "Clear the corner first; the publishing steps need a place to record."
+ },
+ {
+  "line": "Something about the old songs wants out",
+  "face": "shaman",
+  "kernel": "Old songs are asking to be heard again, maybe in the book's voice.",
+  "home": {
+   "none": true,
+   "shadow": "Which old song came to mind first, and where does it want to be sung?",
+   "why": "No goal or strand holds songs yet."
+  },
+  "missing": [
+   "home",
+   "next step"
+  ],
+  "gathered": [],
+  "opponent": {
+   "kind": "needs-work",
+   "ref": "SAMPLE#questions/x",
+   "what": "the open needs-work item at the top"
+  },
+  "factors": {
+   "signal": {
+    "note": "Written today at high charge."
+   },
+   "ready": {
+    "note": "It needs a home and a first step."
+   },
+   "unlocks": {
+    "line": 0,
+    "council": 1,
+    "note": "The needs-work item closes a recorded answer."
+   },
+   "waiting": {
+    "days": 1,
+    "note": "Recorded yesterday."
+   }
+  },
+  "call": "defer",
+  "decided_by": "ready",
+  "why": "Rest it with its shadow quest; when a song names itself it can find a home."
+ }
+]
