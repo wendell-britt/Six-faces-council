@@ -99,7 +99,8 @@ run stops, a run clip) belong to the thread changing the player figure's animati
   `spirit-forms.js` LATE draws creature and ally for the Shellback and the families wearing it. In the Cave of Lessons a newly met spirit
   joins the loadout. With three of yours walking it waits while you let one rest in the WAVE room (out of the loadout, sittings kept) or leave
   it, to be asked again next time. Checks: cave-test alone 441 of 441 (new: the card that asks one to rest, the rest, loadout, the elder's greeting, tap, form order,
-  Creature, Back). Not done: no look on a phone; unlit creature and ally read as one-colour silhouettes; other families have no creature or ally.
+  Creature, Back). His look (2026-10-19): every hologram lay on its side and the ally faced away; fixed in #398 (the bake turns Blender's
+  y-up to z-up for every stage; all five families checked by eye). The hall camera check fails on main too, with no fix yet. Not done: no look on a phone; unlit creature and ally read as one-colour silhouettes; other families have no creature or ally.
 
 ## Next
 Slices, one bars-engine pull request each from main (Opus for slice 1 and 2's design, Sonnet after):
