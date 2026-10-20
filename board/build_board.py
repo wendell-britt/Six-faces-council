@@ -17,6 +17,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import page_calls  # noqa: E402
+
 HERE = Path(__file__).resolve().parent
 
 
@@ -39,6 +42,11 @@ def main():
         print("WARNING: board_data.json has options the page cannot save:\n  " + "\n  ".join(problems), file=sys.stderr)
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     html = (HERE / "template.html").read_text().replace("__DATA__", blob)
+    # A call to a function the page no longer defines throws on load and blanks every tab fed by the store
+    # (council/postmortems/2026-10-20-steps-outreach-blank.md), so such a page is never written.
+    missing = page_calls.undefined_calls(html)
+    if missing:
+        sys.exit("refusing to build: the page calls names it never defines: " + ", ".join(missing))
     (HERE / "council-board.html").write_text(html)
     print("wrote council-board.html")
 
