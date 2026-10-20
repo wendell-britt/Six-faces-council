@@ -23,7 +23,7 @@
    "why": "rc-stale-neglect and rc-tend-alone already make staleness the pair's and change the Between only with both yeses; this carries the same rule to death. Source: the pass, Regent."},
   {"id": "sc-word", "faces": ["regent", "shaman"], "pass": "spirit care 1", "auto": true,
    "pos": "\"Corrupted\" is your word for a spirit taken by shadow from outside. \"Feral\" or \"unsettled\" stays the word for low satisfaction from the spirit's own charge, so the two never blur. The word a player reads for the shadowed state waits for a term pass. This stands unless you flip it.",
-   "why": "The spirit-states rows say a feral spirit is \"a protector held past its time, not a corrupted one\"; your new word names a different thing, a force acting on what you made. Source: the pass, Regent."},
+   "why": "The spirit-states rows say a feral spirit is \"a protector held past its time, not a corrupted one\"; your new word names something else, a force acting on what you made. Source: the pass, Regent."},
   {"id": "sc-strand", "faces": ["regent", "sage"], "pass": "spirit care 1", "auto": true,
    "pos": "Spirit care is its own strand (council/callsheets/spirit-care.md). It runs beside Chapter 1 and never blocks it, and it does not touch the spirit-generator rounds. The first build is a small simulation of four players coming back to their spirits: one who tends daily, one who is busy, one who rests, and one who vanishes for three weeks. It proves whether the stakes add care or guilt before any art or bars-engine work. This stands unless you flip it.",
    "why": "Work that serves the gate runs beside it (your Regent lesson, 2026-10-03). A probe comes before a still (CLAUDE.md, tool scout). Source: the pass, Regent, Challenger and Sage."}
