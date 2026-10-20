@@ -48,10 +48,11 @@ for old, new in [
     ("<title>Council Board</title>",
      "<title>Nonprofit Board</title>\n<style>#tab-morning,#tab-outreach{display:none!important}</style>"),
     ("<h1>Council Board</h1>", "<h1>Nonprofit Board</h1>"),
+    ("const STORE_MUST_HOLD = true;", "const STORE_MUST_HOLD = false;"),
     ("on the Council Board at", "on the Nonprofit Board at"),
 ]:
     html = html.replace(old, new, 1)
-for old in ("btn.hidden = !mcp || !n;", "This view cannot reach Claude"):
+for old in ("btn.hidden = !mcp || !n;", "This view cannot reach Claude", "const STORE_MUST_HOLD = true;"):
     assert old not in html, f"the template's Send bar changed ({old!r}); update build.py"
 html = html.replace("__DATA__", blob)
 (HERE / "nonprofit-board.html").write_text(html)
