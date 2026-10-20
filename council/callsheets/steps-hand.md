@@ -43,6 +43,14 @@ playing-card faces, not cards that carry text and controls; the fan is plain CSS
   at 390 and 1200 wide. Shots: /mnt/project-files/board-hand-2026-10-20/round2/.
 - Not checked: a real phone's touch on overlapping cards, and the live store's 160+ steps in the deck.
 
+## Left for the next thread (handoff at 183k, 2026-10-20)
+
+1. Once #320 merges, land the positions hd-hold, hd-back, hd-chases and hd-start from
+   /mnt/project-files/board-hand-2026-10-20/round2/rows.json with `board/sync_board.py --live <saved live page> --rows
+   <that file> --push`. Then edit hd-draw's last sentence on main so it matches hd-hold.
+2. Republish board/council-board.html from main to https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho. His steps data
+   still lives there, not on bars-engine. Reply to him with that link (Your steps tab) and the new rows.
+
 ## Round 2 brief, done (Wendell, 2026-10-20 19:02 UTC, on the live hand)
 
 His words: "Hand doesn't really feel like a card hand. The think I'm imagingin is card that can overlap each other in a
