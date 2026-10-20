@@ -390,10 +390,15 @@ def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=N
     intake = data.get("intake") or {}
     written = ({it["id"]: it["bridge"] for it in intake.get("items", [])}
                if menu and intake.get("date") == menu.get("sessionDate") else {})
+    # tb-lists-are-bars: a list item keeps the faces' last read across gathers, so a read is not lost to the next morning
+    reads = {it["id"]: it["read"] for c in (data.get("morning") or {}).get("categories") or [] if c.get("key") != "menu"
+             for it in c.get("items", []) if it.get("read")}
     cats = []
     for key, (title, blurb) in CATEGORIES.items():
         items = raw[key]
         for it in items:
+            if key != "menu" and it["id"] in reads:
+                it["read"] = reads[it["id"]]
             it["bridge"] = bridge(it["text"], goals, it.pop("named", None))
             if key == "menu" and it["id"] in written:  # the board read's written reason wins (lens-intake-align)
                 it["bridge"] = written[it["id"]]
