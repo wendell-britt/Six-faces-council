@@ -23,7 +23,27 @@ pay a vibeulon to discard the card)"
   (bars-engine `src/actions/economy.ts`) from the blockers records on main, only when he wants that.
 - Not checked: the shuffle on a real phone, and the hand against the live store's 160+ steps.
 
-## Next round brief (Wendell, 2026-10-20 19:02 UTC, on the live hand)
+## Built (steps-hand 2, the card table, 2026-10-20)
+
+scout: rung 3, no known tool. The toolbox has nothing for UI, and card libraries (deck-of-cards and the like) draw
+playing-card faces, not cards that carry text and controls; the fan is plain CSS transforms on the existing hd- code.
+
+- A felt table: the deck face down, the discard pile and Claude's pile face up, podcast chases as their own pile, and
+  the vibeulons as a coin stack. The hand is a fan of overlapping cards, an arc on a computer and a vertical fan on a
+  phone. Tapping a card picks it up: full size, the whole step, Inner work, Discard, Back in my hand, and "Give it back
+  to Claude".
+- The hand is held: `inHand: <iso>` on the step, written when he taps the deck. He draws only into a free slot; the deck
+  deals its top card in the hd-draw order. Done, discarded (pays a vibeulon) or handed back frees the slot; discard and
+  hand-back clear `inHand`. The hand starts empty on the first visit after this ships.
+- Give it back to Claude writes `aiBack: {text, automate, at}` and clears `inHand`, no vibeulon. `board/pull.py` lists
+  it as needs-work, `steps/<id>: back to AI (automate): "..."` (test in tests/test_pull.py). The card stays in Claude's
+  pile until Claude finishes the step or removes `aiBack`, which returns it to the deck.
+- Check: `node /mnt/project-files/board-hand-2026-10-20/check.mjs <built page> <out dir> [width]` plays the loop (draw
+  five, full hand refuses a sixth, pick up, hand back, mint, discard) and writes result.json and screenshots; it passed
+  at 390 and 1200 wide. Shots: /mnt/project-files/board-hand-2026-10-20/round2/.
+- Not checked: a real phone's touch on overlapping cards, and the live store's 160+ steps in the deck.
+
+## Round 2 brief, done (Wendell, 2026-10-20 19:02 UTC, on the live hand)
 
 His words: "Hand doesn't really feel like a card hand. The think I'm imagingin is card that can overlap each other in a
 fan (fan can be vertical) but I want the experience to feel like I'm playing cards this is still too.... dashboardy. The
