@@ -1843,7 +1843,7 @@ function pendingSaves(){
   }
   for (const id of Object.keys(stSteps)){
     const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at), ...Object.values(s.fileNotes || {}).map(n => n && n.at)].filter(Boolean).sort().pop();
-    if (t && t > PICKUP_SINCE && after(t)) out.push('steps/' + id);
+    if (t && t > PICKUP_SINCE && t > (DATA.steps_recorded_through || '') && after(t)) out.push('steps/' + id);
   }
   // A run of the blocker panel counts once it is saved, finished or not, so a run left half way still reaches Claude.
   for (const id of Object.keys(bkRecs)) if (bkRecs[id].savedAt && after(bkRecs[id].savedAt)) out.push('blockers/' + id);
