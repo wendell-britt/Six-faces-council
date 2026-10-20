@@ -127,6 +127,13 @@ class PullTest(unittest.TestCase):
         self.data = copy.deepcopy(DATA)
         self.assertEqual(first, self.pull())
 
+    def test_card_handed_back_to_ai_needs_work_once(self):
+        self.save("steps", "gs-2", {"do": "Post the clip", "aiBack": {"text": "same caption every week", "automate": True,
+                                                                     "at": "2026-10-20T19:30:00Z"}})
+        led = self.pull()
+        self.assertIn('steps/gs-2: back to AI (automate): "same caption every week"', led["needs_work"])
+        self.assertIsNone(self.pull())
+
     def test_step_note_and_move_need_work_once(self):
         # The 18:40 Send of 2026-10-12 carried only step notes, and pull.py never read the steps collection.
         self.save("steps", "gs-1", {"do": "Do it", "note": "need step by step", "noteAt": "2026-10-12T16:52:00Z",
