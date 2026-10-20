@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "positions": [
   {
    "id": "build",
@@ -28968,6 +28968,124 @@
      "diplomat"
     ],
     "pass": "move-nature1"
+   },
+   "ttv-one-ui": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:28:46.718Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "tap the vein on the board"
+   },
+   "tb-sealed-is-bar": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:28:55.847Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-face-unpacks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:04.381Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-context-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:11.946Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-face-off": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:21.246Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-call-is-advice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:27.647Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-loss-not-avoidance": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:34.580Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-lists-are-bars": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:37.163Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-slate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:43.797Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-pick-carries-read": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:48.947Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "ttv-bars 1"
    }
   },
   "questions": {
