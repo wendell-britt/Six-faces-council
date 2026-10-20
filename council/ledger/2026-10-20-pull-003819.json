@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-20",
+ "kind": "board-pull",
+ "newest_save": "2026-10-20T00:38:19.983Z",
+ "answers": {
+  "sh-sprout-host": {
+   "kind": "question",
+   "choice": "vercel",
+   "savedAt": "2026-10-20T00:37:58.266Z",
+   "steer": ""
+  },
+  "sh-web-not-repo": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:38:04.650Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sh-no-bars-branches": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:38:15.634Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sh-no-pages": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:38:17.166Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sh-demo-on-bars": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:38:19.983Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/sh-sprout-host: sprout gets its own Vercel project"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
