@@ -141,39 +141,87 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .st-step summary{cursor:pointer;color:var(--muted)}
 .st-step textarea{margin-top:6px}
 .st-state{font-size:.8rem;color:var(--muted);min-height:1.2em}
-/* Your hand (Wendell, 2026-10-20): the steps tab deals at most five cards. hd- prefix. The shuffle is a riffle of the deck,
-   then the cards deal out one by one; it plays when the hand changes or he taps Shuffle, never on an ordinary redraw. */
+/* Your hand (Wendell, 2026-10-20), round 2: a card table, not a dashboard. hd- prefix. A felt table holds the deck
+   (face down), the discard pile, Claude's pile and the vibeulons; the hand is a fan of overlapping cards, an arc on a
+   computer and a vertical fan on a phone. Cards are paper on every theme, so the card face sets its own ink. */
+:root{--felt:#1d5c40;--felt-deep:#0f3423;--rim:#5b3a22;--card:#fbf6ea;--card-ink:#22201b;--card-mute:#6d675b;--card-red:#a3301f;--coin:#c99a2e}
 .hd{margin:16px 0 8px}
-.hd-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
-.hd-bar h2{margin:0;font-family:var(--display)}
-.hd-meta{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
-.hd-wallet{font-size:.85rem;padding:2px 10px;border:1px solid var(--accent);border-radius:12px;color:var(--accent);font-variant-numeric:tabular-nums}
-.hd-bar .st-btn{margin-left:auto}
-.hd-deckpile{position:relative;width:34px;height:46px;flex:none}
-.hd-deckpile i{position:absolute;inset:0;border:1.5px solid var(--accent);border-radius:5px;background:var(--accent-soft)}
-.hd-deckpile i:nth-child(2){transform:translate(2px,-2px)}
-.hd-deckpile i:nth-child(3){transform:translate(4px,-4px);background:var(--panel)}
-.hd.hd-anim .hd-deckpile i:nth-child(1){animation:hd-riffle-l .45s ease-in-out 2}
-.hd.hd-anim .hd-deckpile i:nth-child(3){animation:hd-riffle-r .45s ease-in-out 2}
-@keyframes hd-riffle-l{50%{transform:translate(-14px,2px) rotate(-12deg)}}
+.hd-table{position:relative;border-radius:22px;padding:14px 14px 18px;background:radial-gradient(120% 90% at 50% 35%,var(--felt) 0%,var(--felt-deep) 100%);box-shadow:inset 0 0 0 7px var(--rim),inset 0 0 0 9px rgba(0,0,0,.35),inset 0 0 50px rgba(0,0,0,.45),0 6px 18px rgba(0,0,0,.18);color:#eef3ea;overflow:hidden}
+.hd-piles{display:flex;align-items:flex-end;gap:10px 14px;padding:6px 6px 0;flex-wrap:wrap}
+.hd-pile{position:relative;background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer;display:grid;justify-items:center;gap:6px}
+.hd-pile[disabled]{cursor:default}
+.hd-pl{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:#d7e4d8;font-variant-numeric:tabular-nums}
+.hd-stack{position:relative;width:58px;height:80px}
+.hd-stack i,.hd-mini{position:absolute;inset:0;border-radius:6px}
+.hd-stack i{background:repeating-linear-gradient(45deg,#7d2b25 0 5px,#93362e 5px 10px);border:3px solid var(--card);box-shadow:0 1px 2px rgba(0,0,0,.4);transform:translate(calc(var(--j) * -1.5px),calc(var(--j) * -1.5px))}
+.hd-stack.hd-none{border:2px dashed rgba(255,255,255,.3);border-radius:6px}
+.hd-deckpile:not([disabled]):hover .hd-stack i:last-child{transform:translate(-9px,-12px) rotate(-4deg)}
+.hd-deckpile:focus-visible{outline:2px solid #fff;outline-offset:4px;border-radius:6px}
+.hd-mini{background:var(--card);color:var(--card-ink);font-size:.58rem;line-height:1.2;padding:6px 5px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.45);text-align:left}
+.hd-mini:nth-child(1){transform:rotate(-7deg)}.hd-mini:nth-child(2){transform:rotate(5deg)}.hd-mini:nth-child(3){transform:rotate(-2deg)}
+.hd-claude .hd-mini{background:#e9e4f5}
+.hd-coins{display:grid;justify-items:center;gap:6px}
+@media (min-width:700px){.hd-coins{margin-left:auto}}
+.hd-coinstack{position:relative;width:40px;height:46px}
+.hd-coinstack i{position:absolute;left:2px;bottom:calc(var(--j) * 5px);width:36px;height:14px;border-radius:50%;background:radial-gradient(70% 70% at 40% 35%,#f3d47a,var(--coin));border:1px solid #7a5a12;box-shadow:0 1px 0 #6b4e10}
+.hd-say{margin:10px 6px 0;font-size:.85rem;color:#e3ece3;min-height:1.3em}
+.hd-fan{list-style:none;margin:0;padding:0;position:relative}
+.hd-card,.hd-slot{border-radius:12px}
+.hd-card{background:var(--card);color:var(--card-ink);box-shadow:0 1px 1px rgba(0,0,0,.25),0 8px 18px rgba(0,0,0,.35);transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s}
+.hd-card > button{all:unset;box-sizing:border-box;display:grid;grid-template-rows:auto 1fr auto;gap:6px;width:100%;height:100%;padding:10px 12px;cursor:pointer;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),inset 0 0 0 5px var(--card),inset 0 0 0 6px rgba(0,0,0,.06)}
+.hd-card > button:focus-visible{outline:3px solid #ffd76a;outline-offset:2px}
+.hd-idx{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--card-mute)}
+.hd-idx b{font-family:var(--display);font-size:1.05rem;letter-spacing:0;color:var(--card-ink)}
+.hd-idx span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hd-red .hd-idx b,.hd-red .hd-pip{color:var(--card-red)}
+.hd-text{font-family:var(--display);font-size:1rem;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5}
+.hd-pip{font-size:.72rem;color:var(--card-mute);font-variant-numeric:tabular-nums}
+.hd-slot{border:2px dashed rgba(255,255,255,.35);display:grid;place-items:center;text-align:center;font-size:.8rem;color:#d7e4d8;padding:8px}
+.hd-slot button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;height:100%;display:grid;place-items:end center;padding:0 10px 18px}
+.hd-slot{place-items:end center;padding-bottom:18px}
+@media (max-width:699px){.hd-stack{width:46px;height:64px}.hd-pl{font-size:.62rem}}
+@media (min-width:700px){.hd-slot{padding:0}.hd-slot button{place-items:center;padding:0 10px 0 64px}}
+.hd-slot button:focus-visible{outline:2px solid #fff}
+/* Phone: a vertical fan. Each card shows its top edge above the next one; the column bows like a held fan. */
+.hd-fan{display:flex;flex-direction:column;align-items:center;padding:16px 0 4px}
+.hd-fan > li{position:relative;width:min(86%,340px);height:150px;flex:none;transform:translateX(calc(var(--o2) * -5px)) rotate(calc(var(--o) * 2.2deg));transform-origin:150% 50%;z-index:var(--z)}
+.hd-fan > li + li{margin-top:-74px}
+.hd-fan > .hd-card:hover,.hd-fan > .hd-card:focus-within{transform:translateX(calc(var(--o2) * -5px - 22px)) rotate(calc(var(--o) * 2.2deg))}
+/* Computer: an arc, held from below. */
+@media (min-width:700px){
+  .hd-fan{display:block;height:350px}
+  .hd-fan > li{position:absolute;left:50%;bottom:48px;width:160px;height:228px;margin:0 0 0 -80px !important;transform-origin:50% 120%;transform:translateX(calc(var(--o) * 104px)) translateY(calc(var(--o2) * 7px)) rotate(calc(var(--o) * 6deg))}
+  .hd-fan > .hd-card:hover,.hd-fan > .hd-card:focus-within{transform:translateX(calc(var(--o) * 104px)) translateY(calc(var(--o2) * 7px - 34px)) rotate(calc(var(--o) * 6deg));z-index:9;box-shadow:0 2px 2px rgba(0,0,0,.25),0 18px 30px rgba(0,0,0,.45)}
+  .hd-text{-webkit-line-clamp:7}
+}
+.hd-card.hd-new{animation:hd-deal .55s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--d) + var(--i) * 120ms)}
+@keyframes hd-deal{from{opacity:0;transform:translate(-38vw,-140px) rotate(-30deg) scale(.45)}}
+.hd.hd-anim .hd-stack i:nth-last-child(1){animation:hd-riffle-l .42s ease-in-out 2}
+.hd.hd-anim .hd-stack i:nth-last-child(2){animation:hd-riffle-r .42s ease-in-out 2}
+@keyframes hd-riffle-l{50%{transform:translate(-16px,2px) rotate(-14deg)}}
 @keyframes hd-riffle-r{50%{transform:translate(18px,-6px) rotate(12deg)}}
-ol.hd-cards{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;align-items:start}
-.hd-card{background:var(--panel);border:1.5px solid var(--accent);border-radius:10px;padding:12px 14px 10px;box-shadow:0 2px 0 var(--line),0 6px 14px rgba(0,0,0,.08);display:grid;gap:8px;min-width:0}
-.hd-card:has(details[open]){grid-column:1/-1}
-.hd-card.hd-over{border-color:var(--warn)}
-.hd-card.hd-new{animation:hd-deal .5s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--d) + var(--i) * 110ms)}
-@keyframes hd-deal{from{opacity:0;transform:translate(var(--dx),-40px) rotate(var(--r)) scale(.8)}}
-.hd-head{display:flex;justify-content:space-between;gap:8px;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
-.hd-from{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.hd-card ol.st-steps .st-step{border-top:0;padding:0}
-.hd-card .st-list{margin:0;padding:0;border:0;background:none}
-.hd-ttv .st-do{margin:0}
-.hd-acts{display:flex;flex-wrap:wrap;gap:6px;border-top:1px dashed var(--line);padding-top:8px}
+/* The lifted card: out of the fan, full size, with everything the step holds. */
+.hd-lift{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px;overflow:auto}
+.hd-lift[hidden]{display:none}
+.hd-scrim{all:unset;position:fixed;inset:0;background:rgba(8,20,14,.62);backdrop-filter:blur(2px);cursor:pointer}
+.hd-face{--bg:#fbf6ea;--fg:#22201b;--muted:#6d675b;--line:#ddd3bf;--panel:#fffdf7;--accent:#1f6f6a;--accent-ink:#fff;--accent-soft:#e1efed;--warn:#9a4b1e;--warn-bg:#f8e9df;color-scheme:light}
+.hd-big{position:relative;width:min(100%,440px);max-height:calc(100vh - 32px);overflow:auto;background:var(--card);color:var(--card-ink);border-radius:16px;padding:16px 18px;box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px rgba(0,0,0,.08),0 24px 60px rgba(0,0,0,.55);display:grid;gap:12px;animation:hd-up .32s cubic-bezier(.2,.8,.2,1) both}
+@keyframes hd-up{from{opacity:.2;transform:translateY(90px) rotate(-4deg) scale(.6)}}
+.hd-big.hd-toss{animation:hd-toss .38s ease-in both}
+@keyframes hd-toss{to{opacity:0;transform:translate(-30vw,-60vh) rotate(-28deg) scale(.4)}}
+.hd-big.hd-give{animation:hd-give .38s ease-in both}
+@keyframes hd-give{to{opacity:0;transform:translate(20vw,-60vh) rotate(18deg) scale(.4)}}
+.hd-big ol.st-steps{margin:0}.hd-big .st-step{border-top:0;padding:0}
+.hd-acts{display:flex;flex-wrap:wrap;gap:6px;border-top:1px dashed var(--line);padding-top:10px}
 .hd-acts .st-btn[disabled]{opacity:.45;cursor:not-allowed}
-.hd-away{font-size:.8rem;color:var(--muted)}
+.hd-ai{border-top:1px dashed var(--line);padding-top:10px}
+.hd-ai summary{cursor:pointer;font-weight:600}
+.hd-ai label{display:flex;gap:8px;align-items:center;font-size:.9rem;margin:8px 0}
 .hd-deck{margin:18px 0}
 .hd-deck > summary{cursor:pointer;font-family:var(--display);font-size:1.15rem;padding:10px 0}
-@media (prefers-reduced-motion: reduce){.hd-card.hd-new,.hd.hd-anim .hd-deckpile i{animation:none}}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--felt:#174b34;--felt-deep:#0a2418;--rim:#3f2816} }
+:root[data-theme="dark"]{--felt:#174b34;--felt-deep:#0a2418;--rim:#3f2816}
+@media (prefers-reduced-motion: reduce){.hd-card.hd-new,.hd.hd-anim .hd-stack i,.hd-big,.hd-big.hd-toss,.hd-big.hd-give{animation:none}.hd-card{transition:none}}
 /* Where you are (Wendell, 2026-10-06: "be able to tag activities as needing a computer"). On a phone, steps that need a
    computer fold to one line so the list shows what can be done now. The choice is kept on this device only. */
 .st-where{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:14px 0 4px}
@@ -460,10 +508,9 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
   </div>
   <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
   <div class="hd" id="hd" hidden>
-    <div class="hd-bar"><span class="hd-deckpile" aria-hidden="true"><i></i><i></i><i></i></span><h2>Your hand</h2><span class="hd-meta" id="hd-meta"></span><span class="hd-wallet" id="hd-wallet"></span><button type="button" class="st-btn" data-hd="shuffle">Shuffle</button></div>
-    <p class="st-src">Five cards at a time, Tap the Vein included. Inner work on a card (the WAVE run, with its 3-2-1) mints a vibeulon. Pay one to discard a card, and it comes back on the ladder: 3 days, then 7, 14, 30, 60 and 90.</p>
-    <p class="st-state" id="hd-state" role="status"></p>
-    <ol class="hd-cards" id="hd-cards"></ol>
+    <h2 class="sr-only">Your hand</h2>
+    <div class="hd-table"><div class="hd-piles" id="hd-piles"></div><ol class="hd-fan" id="hd-fan" aria-label="Your hand"></ol><p class="hd-say" id="hd-state" role="status"></p></div>
+    <div class="hd-lift" id="hd-lift" hidden></div>
   </div>
   <details class="hd-deck" id="hd-deck"><summary id="hd-deck-sum">The deck</summary>
   <div id="steps-chase"></div>
@@ -1283,11 +1330,11 @@ function renderSteps(){
      Morning moves list: "is this working? Why is it on my todo list?"). */
   const live = ids.filter(id => stOf(id).length > 0);
   const todo = live.filter(id => !stFinished(id)), done = live.filter(id => stFinished(id));
-  const chases = ocChases(), hand = hdDraw(todo, chases), inHand = new Set(hand.map(c => c.id));
-  hdRender(hand);
+  const chases = ocChases(), hand = hdHand(), deck = hdDeck(todo), inHand = new Set(hand.map(c => c.id));
+  hdRender(hand, deck, chases);
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id], inHand)).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
-  document.getElementById('steps-chase').innerHTML = inHand.has('chases') ? '' : chList(chases);
+  document.getElementById('steps-chase').innerHTML = chList(chases);
   const stEmpty = document.getElementById('steps-empty'), stFault = STORE_MUST_HOLD && (stStore === 'empty' || stStore === 'failed');
   stEmpty.hidden = !stFault && (hand.length > 0 || todo.length > 0 || chases.length > 0);
   stEmpty.classList.toggle('store-fault', stFault);
@@ -1295,9 +1342,9 @@ function renderSteps(){
     : 'Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.';
   document.getElementById('n-steps').textContent = hand.length;
   const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
-  const away = open.filter(([,s]) => hdAway(s)).length, waiting = open.filter(([sid]) => !inHand.has(sid)).length - away;
-  document.getElementById('hd-deck').hidden = todo.length === 0 && !(chases.length && !inHand.has('chases'));
-  document.getElementById('hd-deck-sum').textContent = `The deck: ${waiting} more step${waiting === 1 ? '' : 's'} waiting${away ? `, ${away} discarded until their day` : ''}`;
+  const waiting = open.filter(([sid]) => !inHand.has(sid)).length;
+  document.getElementById('hd-deck').hidden = todo.length === 0 && !chases.length;
+  document.getElementById('hd-deck-sum').textContent = `Every step, face up: ${waiting} not in your hand`;
   const pc = open.filter(([,s]) => s.device === 'computer').length;
   document.querySelectorAll('[data-where]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.where === stWhere)));
   document.getElementById('st-where').hidden = open.length === 0;
@@ -1310,18 +1357,26 @@ function renderSteps(){
    Wendell, 2026-10-20: "Tasks that i need to do (this in the your steps pane) should be rendered as cards with an animation
    that shuffles them. I can only have 5 at a time in my "hand" this includes what comes from tap the vein. ... I can
    discard a card if I do some inner work on it, a 321 a WAVE process- that would mint a vibeulon and I can pay a vibeulon
-   to discard the card". The hand is a view over the steps store: drawing it writes nothing. Five cards are drawn by
-   position hd-draw: today's Tap the Vein lines, then overdue steps (longest overdue first), then podcast chases, then by
-   due date, then the rest in list order. Steps are numbered because the order is real, so only a list's next step can be
-   drawn, and a list whose next step is discarded sits out until it comes back. Everything not in the hand stays in the
-   deck below it, whole. Inner work is the blocker panel's WAVE run with its 3-2-1; a finished run mints one vibeulon on its
-   blockers/ record (hd-mint). Discarding pays the oldest unspent one and writes discards[] and discardedUntil on the step;
-   the card comes back on the seed library's ladder (sl-resurface-ladder, council/bar_read.py's LADDER). A Tap the Vein
-   line becomes a step in the ttv list the first time he acts on it, so its tick, note, run and discard are a step's. */
+   to discard the card". Round 2, the same day: "I want the experience to feel like I'm playing cards this is still
+   too.... dashboardy. ... the game loop be that I can take a card once I discarda a card and I have to do inner work to
+   discard a card. I Should also be able to add context to a card to push it back to AI if I identify an approach that can
+   be automated".
+   So the hand is held, not computed: a step is in the hand while it carries inHand (written when he draws it) and is not
+   done, discarded or handed back. He draws only into a free slot, and the deck deals its top card in the hd-draw order:
+   today's Tap the Vein lines, then overdue steps, then by due date, then the rest in list order; only a list's next step
+   is in the deck. Inner work is the blocker panel's WAVE run with its 3-2-1; a finished run mints one vibeulon on its
+   blockers/ record (hd-mint). Discarding pays the oldest unspent one, writes discards[] and discardedUntil, and clears
+   inHand; the card comes back to the deck on the seed library's ladder (sl-resurface-ladder). Handing a card back to
+   Claude writes aiBack {text, automate, at} and clears inHand, with no vibeulon (hd-back): board/pull.py lists it as
+   needs-work, and the card sits in Claude's pile until Claude finishes it or takes aiBack off. Podcast chases are a pile
+   on the table, not a card (hd-chases). A Tap the Vein line becomes a step in the ttv list when he draws it. */
 const HD_SIZE = 5;
 const HD_LADDER = [3, 7, 14, 30, 60, 90];
-let hdShown = '', hdPrev = new Set(), hdOrder = [], hdFresh = new Set(), hdRiffle = false, hdAnimUntil = 0, hdArmed = '';
+let hdShown = null, hdPrev = new Set(), hdFresh = new Set(), hdRiffle = false, hdAnimUntil = 0, hdArmed = '', hdLifted = '', hdLast = {hand: [], deck: []};
+const hdAiDrafts = {};
 const hdAway = s => !!(s && s.discardedUntil && s.discardedUntil > new Date().toISOString());
+const hdBack = s => !!(s && s.aiBack && !stClosed(s));
+const hdHeld = s => !!(s && s.inHand && !stClosed(s) && !hdAway(s) && !s.aiBack);
 const hdDays = s => HD_LADDER[Math.min(((s && s.discards) || []).length, HD_LADDER.length - 1)];
 const hdTtvId = it => 'ttv-' + String(it.taskId || it.id || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 80);
 // Today's sealed Tap the Vein lines: the Morning tab's free-write category.
@@ -1335,106 +1390,165 @@ function hdWallet(){
   return Object.entries(bkRecs).filter(([k, r]) => r && r.vibeulon && !spent.has(k))
     .sort((a, b) => String(a[1].vibeulon.at || '').localeCompare(String(b[1].vibeulon.at || ''))).map(([k]) => k);
 }
-function hdDraw(todo, chases){
-  const cards = [], seen = new Set();
+// The cards he holds, in the order he drew them.
+function hdHand(){
+  return Object.entries(stSteps).filter(([, s]) => hdHeld(s))
+    .sort((a, b) => String(a[1].inHand).localeCompare(String(b[1].inHand))).map(([id, s]) => ({kind: 'step', id, s}));
+}
+// The deck, top card first (position hd-draw).
+function hdDeck(todo){
+  const cards = [], seen = new Set(), out = s => stClosed(s) || hdAway(s) || hdHeld(s) || !!s.aiBack;
   for (const x of hdTtv()){
     const s = stSteps[x.id]; seen.add(x.id);
-    if (s && (stClosed(s) || hdAway(s))) continue;
+    if (s && out(s)) continue;
     cards.push(s ? {kind: 'step', id: x.id, s, rank: 0, key: '0'} : {kind: 'ttv', id: x.id, it: x.it, rank: 0, key: '0'});
   }
   for (const id of todo){
     const req = stReq(stOf(id)).filter(([sid, s]) => !s.done && !seen.has(sid));
-    // A Tap the Vein line has no order behind it, so every open one can be drawn; a list's steps go one at a time.
-    for (const [sid, s] of id === 'ttv' ? req.filter(([, s]) => !hdAway(s)) : req.slice(0, 1).filter(([, s]) => !hdAway(s))){
+    // A Tap the Vein line has no order behind it, so every open one is in the deck; a list's steps go one at a time.
+    for (const [sid, s] of (id === 'ttv' ? req : req.slice(0, 1)).filter(([, s]) => !out(s))){
       const left = stDaysLeft(s.due);
       cards.push({kind: 'step', id: sid, s, rank: id === 'ttv' ? 0 : left !== null && left < 0 ? 1 : s.due ? 3 : 4, key: id === 'ttv' ? '1' + String(s.created || '') : s.due || '9999'});
     }
   }
-  if (chases.some(c => c.chase)) cards.push({kind: 'chase', id: 'chases', chases, rank: 2, key: ''});
   // A stable sort keeps renderSteps' list order for cards that tie.
-  return cards.sort((a, b) => a.rank - b.rank || a.key.localeCompare(b.key)).slice(0, HD_SIZE);
+  return cards.sort((a, b) => a.rank - b.rank || a.key.localeCompare(b.key));
 }
-function hdShuffled(ids){
-  const a = [...ids];
-  for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
-  return a;
+// Deal the whole hand again, after a riffle of the deck: on opening the tab, and on the first hand of a load.
+function hdDealAll(){ hdFresh = new Set(hdLast.hand.map(c => c.id)); hdRiffle = true; hdAnimUntil = Date.now() + 1800; }
+const hdFrom = s => s.list === 'ttv' ? 'Tap the Vein' : (stLists[s.list] || {}).title || s.list || '';
+function hdPip(s){
+  const left = stDaysLeft(s.due);
+  if (left === null) return s.device === 'computer' ? 'Needs a computer' : 'No date';
+  return left < 0 ? `${-left} day${left === -1 ? '' : 's'} over` : left === 0 ? 'Due today' : `Due ${stFmt(s.due)}`;
 }
-// Deal the whole hand again, after a riffle of the deck: on Shuffle, on opening the tab, and on the first hand of a load.
-function hdDealAll(){ hdFresh = new Set(hdOrder); hdRiffle = true; hdAnimUntil = Date.now() + 1800; }
 function hdCard(c, i, n, fresh){
-  const s = c.s || {}, ttv = c.kind === 'ttv' || s.list === 'ttv';
-  const style = `--i:${fresh};--d:${hdRiffle ? '.9s' : '0s'};--dx:${Math.round((i - (n - 1) / 2) * -70)}px;--r:${(i % 2 ? 1 : -1) * (8 + i * 3)}deg`;
-  const cls = `hd-card${c.kind === 'step' && stOverdue(s) ? ' hd-over' : ''}${fresh >= 0 ? ' hd-new' : ''}`;
-  const from = c.kind === 'chase' ? 'Podcast chases' : ttv ? 'Tap the Vein' : (stLists[s.list] || {}).title || s.list || '';
-  const head = `<div class="hd-head"><span class="hd-from">${esc(from)}</span><span>${i + 1} of ${n}</span></div>`;
-  if (c.kind === 'chase') return `<li class="${cls}" style="${style}" id="hd-chases">${head}${chList(c.chases)}</li>`;
-  const read = c.kind === 'ttv' && c.it.read;
-  const body = c.kind === 'ttv'
-    ? `<div class="hd-ttv"><p class="st-do">${esc(c.it.text)}</p>${read ? `<p class="st-src">${esc(FO_CALL[read.call] || read.call || '')}${read.why ? `: ${esc(read.why)}` : ''}</p>` : ''}</div>`
-    : `<ol class="st-steps">${stStep(c.id, s)}</ol>`;
-  const coins = hdWallet().length, armed = hdArmed === c.id;
-  const acts = `<div class="hd-acts">${c.kind === 'ttv' ? `<button type="button" class="st-btn st-solid" data-hd="done" data-id="${esc(c.id)}">Done</button>` : ''}
-    <button type="button" class="st-btn" data-hd="work" data-id="${esc(c.id)}">Inner work</button>
-    <button type="button" class="st-btn${armed ? ' st-solid' : ''}" data-hd="discard" data-id="${esc(c.id)}"${coins ? '' : ' disabled title="Inner work on a card mints the vibeulon a discard costs"'}>${armed ? `Pay 1 vibeulon: back in ${hdDays(s)} days` : 'Discard'}</button></div>`;
-  return `<li class="${cls}" style="${style}" id="hd-${esc(c.id)}">${head}${body}${acts}</li>`;
+  const s = c.s, o = i - (n - 1) / 2, red = stOverdue(s);
+  const style = `--o:${o};--o2:${o * o};--z:${i + 1};--i:${fresh};--d:${hdRiffle ? '.85s' : '0s'}`;
+  const suit = s.list === 'ttv' ? '✶' : red ? '♦' : '♠';
+  return `<li class="hd-card${red ? ' hd-red' : ''}${fresh >= 0 ? ' hd-new' : ''}" style="${style}" id="hd-${esc(c.id)}"><button type="button" data-hd="lift" data-id="${esc(c.id)}" aria-label="${esc(s.do)}. Tap to pick it up.">
+    <span class="hd-idx"><b>${suit}</b><span>${esc(hdFrom(s))}</span></span>
+    <span class="hd-text">${esc(s.do)}</span>
+    <span class="hd-pip">${esc(hdPip(s))}</span></button></li>`;
 }
-function hdRender(hand){
-  const box = document.getElementById('hd'), ids = hand.map(c => c.id), key = [...ids].sort().join('|');
-  box.hidden = !hand.length;
+function hdSlot(i, n, free, canDraw){
+  const o = i - (n - 1) / 2, say = `${free} free slot${free === 1 ? '' : 's'}`;
+  return `<li class="hd-slot" style="--o:${o};--o2:${o * o};--z:${i + 1}">${canDraw ? `<button type="button" data-hd="draw">${say}. Tap to draw from the deck.</button>` : say}</li>`;
+}
+function hdLiftHtml(c){
+  const s = c.s, coins = hdWallet().length, armed = hdArmed === c.id;
+  return `<button type="button" class="hd-scrim" data-hd="close" aria-label="Put the card back in your hand"></button>
+  <div class="hd-big hd-face" role="dialog" aria-modal="true" aria-label="${esc(s.do)}" id="hd-big">
+    <div class="hd-idx"><b>${s.list === 'ttv' ? '✶' : stOverdue(s) ? '♦' : '♠'}</b><span>${esc(hdFrom(s))}</span></div>
+    <ol class="st-steps">${stStep(c.id, s)}</ol>
+    <div class="hd-acts">
+      <button type="button" class="st-btn" data-hd="work" data-id="${esc(c.id)}">Inner work</button>
+      <button type="button" class="st-btn${armed ? ' st-solid' : ''}" data-hd="discard" data-id="${esc(c.id)}"${coins ? '' : ' disabled title="Inner work on a card mints the vibeulon a discard costs"'}>${armed ? `Pay 1 vibeulon: back in ${hdDays(s)} days` : `Discard (${coins} vibeulon${coins === 1 ? '' : 's'})`}</button>
+      <button type="button" class="st-btn" data-hd="close" id="hd-close">Back in my hand</button>
+    </div>
+    <details class="hd-ai"${hdAiDrafts[c.id] ? ' open' : ''}><summary>Give it back to Claude</summary>
+      <p class="st-src">Say what Claude should know, or the way you see to automate it. The card leaves your hand with no vibeulon, and Claude picks it up.</p>
+      <textarea id="hda-${esc(c.id)}" placeholder="What Claude should know">${esc(hdAiDrafts[c.id] || '')}</textarea>
+      <label><input type="checkbox" id="hdx-${esc(c.id)}"> Claude could automate this</label>
+      <button type="button" class="st-btn st-solid" data-hd="ai" data-id="${esc(c.id)}">Hand it to Claude</button>
+    </details>
+    <p class="st-state" id="hd-lift-state" role="status"></p>
+  </div>`;
+}
+function hdRender(hand, deck, chases){
+  hdLast = {hand, deck};
+  const box = document.getElementById('hd'), ids = hand.map(c => c.id), key = ids.join('|');
+  const backs = Object.entries(stSteps).filter(([, s]) => hdBack(s)), away = Object.entries(stSteps).filter(([, s]) => hdAway(s) && !stClosed(s));
+  box.hidden = !hand.length && !deck.length && !backs.length && !away.length;
   if (key !== hdShown){
-    hdOrder = [...hdOrder.filter(id => ids.includes(id)), ...ids.filter(id => !hdOrder.includes(id))];
-    if (!hdPrev.size) hdDealAll();
-    else { hdFresh = new Set(ids.filter(id => !hdPrev.has(id))); hdRiffle = false; hdAnimUntil = Date.now() + 1200; }
+    if (hdShown === null) hdDealAll();
+    else { hdFresh = new Set(ids.filter(id => !hdPrev.has(id))); hdRiffle = false; hdAnimUntil = Date.now() + 1000; }
     hdShown = key; hdPrev = new Set(ids);
   }
   if (Date.now() > hdAnimUntil){ hdFresh = new Set(); hdRiffle = false; }
   box.classList.toggle('hd-anim', hdRiffle);
-  const byId = Object.fromEntries(hand.map(c => [c.id, c])), order = hdOrder.filter(id => byId[id]), fresh = order.filter(id => hdFresh.has(id));
-  document.getElementById('hd-cards').innerHTML = order.map((id, i) => hdCard(byId[id], i, order.length, fresh.indexOf(id))).join('');
-  const coins = hdWallet().length;
-  document.getElementById('hd-wallet').textContent = `${coins} vibeulon${coins === 1 ? '' : 's'}`;
-  document.getElementById('hd-meta').textContent = `${hand.length} of ${HD_SIZE}`;
+  // The fan holds the cards and one outline for the free slots, so it stays tight however many are free.
+  const free = Math.max(0, HD_SIZE - hand.length), n = hand.length + (free ? 1 : 0), fresh = ids.filter(id => hdFresh.has(id));
+  document.getElementById('hd-fan').innerHTML = hand.map((c, i) => hdCard(c, i, n, fresh.indexOf(c.id))).join('')
+    + (free ? hdSlot(hand.length, n, free, deck.length > 0) : '');
+  const backsN = Math.min(deck.length, 6), coins = hdWallet().length;
+  const lastAt = s => (s.discards || []).map(d => d.at).sort().pop() || '';
+  const topAway = away.sort((a, b) => lastAt(b[1]).localeCompare(lastAt(a[1]))).slice(0, 3).reverse();
+  const minis = list => list.map(([, s]) => `<span class="hd-mini">${esc(String(s.do).slice(0, 60))}</span>`).join('');
+  const chaseN = chases.filter(c => c.chase).length;
+  document.getElementById('hd-piles').innerHTML = `
+    <button type="button" class="hd-pile hd-deckpile" data-hd="draw"${free && deck.length ? '' : ' disabled'} aria-label="${free && deck.length ? 'Draw the top card. ' : ''}${deck.length} card${deck.length === 1 ? '' : 's'} in the deck">
+      <span class="hd-stack${backsN ? '' : ' hd-none'}">${Array.from({length: backsN}, (_, j) => `<i style="--j:${j}"></i>`).join('')}</span><span class="hd-pl">Deck · ${deck.length}</span></button>
+    <div class="hd-pile" aria-label="${away.length} discarded until their day"><span class="hd-stack${away.length ? '' : ' hd-none'}">${minis(topAway)}</span><span class="hd-pl">Discards · ${away.length}</span></div>
+    ${backs.length ? `<div class="hd-pile hd-claude" aria-label="${backs.length} with Claude"><span class="hd-stack">${minis(backs.slice(-3))}</span><span class="hd-pl">With Claude · ${backs.length}</span></div>` : ''}
+    ${chaseN ? `<button type="button" class="hd-pile" data-hd="chases" aria-label="${chaseN} podcast chases due"><span class="hd-stack"><span class="hd-mini">Podcast chases</span></span><span class="hd-pl">Chases · ${chaseN}</span></button>` : ''}
+    <div class="hd-coins" aria-label="${coins} vibeulon${coins === 1 ? '' : 's'}"><span class="hd-coinstack">${Array.from({length: Math.min(coins, 7)}, (_, j) => `<i style="--j:${j}"></i>`).join('')}</span><span class="hd-pl" id="hd-wallet">${coins} vibeulon${coins === 1 ? '' : 's'}</span></div>`;
+  const say = document.getElementById('hd-state');
+  if (!(Number(say.dataset.keep) > Date.now())) say.textContent = !free ? 'Your hand is full. Finish a card, or do inner work on one and pay the vibeulon to discard it.'
+    : deck.length ? `${free} free slot${free === 1 ? '' : 's'}. Tap the deck to draw.` : 'The deck is empty.';
+  const lift = document.getElementById('hd-lift'), held = hand.find(c => c.id === hdLifted);
+  if (!held) hdLifted = '';
+  const focus = document.activeElement && document.activeElement.closest && document.activeElement.closest('#hd-lift') ? document.activeElement.id : '';
+  lift.hidden = !held; lift.innerHTML = held ? hdLiftHtml(held) : '';
+  const big = document.getElementById('hd-big'); if (big && lift.dataset.shown === hdLifted) big.style.animation = 'none';
+  lift.dataset.shown = hdLifted;
+  if (focus && document.getElementById(focus)) document.getElementById(focus).focus();
 }
-// A Tap the Vein line is written as a step the first time he acts on it; a step is already one.
+function hdSay(text){ const say = document.getElementById('hd-state'); say.textContent = text; say.dataset.keep = String(Date.now() + 5000); }
+// A Tap the Vein line is written as a step the first time he draws it; a step is already one.
 async function hdEnsure(id){
   if (stSteps[id]) return true;
   const x = hdTtv().find(t => t.id === id); if (!x) return false;
   const at = now();
   if (!stLists.ttv){
-    const l = {title: 'From Tap the Vein', repo: 'tap the vein', why: 'Lines you sealed in Tap the Vein and then acted on in your hand.', source: 'Tap the Vein', created: at};
+    const l = {title: 'From Tap the Vein', repo: 'tap the vein', why: 'Lines you sealed in Tap the Vein and then drew into your hand.', source: 'Tap the Vein', created: at};
     await db.doc('lists/ttv').set(l); stLists.ttv = l;
   }
   const n = Object.values(stSteps).filter(s => s.list === 'ttv').length + 1;
   const s = {list: 'ttv', n, do: x.it.text, device: 'phone', source: 'tap-the-vein', ttv: {taskId: x.it.taskId || null, item: x.it.id || null, date: (MO && MO.date) || null}, created: at};
   await db.doc('steps/' + id).set(s); stSteps[id] = s; return true;
 }
+// Save fields on a step, showing them at once and putting the card back if the save fails.
+async function hdWrite(id, fields, ok){
+  const s = stSteps[id]; stSteps[id] = {...s, ...fields}; renderSteps();
+  try { await db.doc('steps/' + id).update(fields); if (ok){ hdSay(ok); renderSteps(); } }
+  catch (err){ stSteps[id] = s; hdSay(`That did not save (${err && err.code || 'error'}).`); renderSteps(); }
+}
+const hdOut = (cls, ms) => new Promise(r => { const b = document.getElementById('hd-big'); if (!b || matchMedia('(prefers-reduced-motion: reduce)').matches) return r(); b.classList.add(cls); setTimeout(r, ms); });
 async function hdClick(t){
-  const a = t.dataset.hd, id = t.dataset.id, st = document.getElementById('hd-state');
-  st.textContent = '';
-  if (a === 'shuffle'){ hdArmed = ''; hdOrder = hdShuffled(hdOrder); hdDealAll(); return renderSteps(); }
+  const a = t.dataset.hd, id = t.dataset.id;
+  if (a === 'close'){ hdLifted = ''; hdArmed = ''; renderSteps(); const c = id && document.querySelector(`#hd-${CSS.escape(id)} button`); if (c) c.focus(); return; }
+  if (a === 'lift'){ hdLifted = id; hdArmed = ''; stOpenGroups.add('s-' + id); renderSteps(); const c = document.getElementById('hd-close'); if (c) c.focus(); return; }
+  if (a === 'chases'){ const d = document.getElementById('hd-deck'); d.open = true; document.getElementById('steps-chase').scrollIntoView({behavior: 'smooth'}); return; }
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
-  try { if (!(await hdEnsure(id))){ st.textContent = 'That card is no longer in the menu.'; return; } }
-  catch (err){ st.textContent = `That card could not be saved (${err && err.code || 'error'}).`; return; }
-  const s = stSteps[id];
-  if (a === 'work') return openBlocker(id);
-  if (a === 'done'){
-    const at = now(); stSteps[id] = {...s, done: true, doneAt: at}; renderSteps();
-    try { await db.doc('steps/' + id).update({done: true, doneAt: at}); }
-    catch (err){ stSteps[id] = s; renderSteps(); st.textContent = `Could not save the tick (${err && err.code || 'error'}).`; }
-    return;
+  if (a === 'draw'){
+    const {hand, deck} = hdLast;
+    if (hand.length >= HD_SIZE) return hdSay('Your hand is full. Free a slot first.');
+    const top = deck[0]; if (!top) return hdSay('The deck is empty.');
+    try { if (!(await hdEnsure(top.id))) return hdSay('That card is no longer in the menu.'); }
+    catch (err){ return hdSay(`That card could not be saved (${err && err.code || 'error'}).`); }
+    return hdWrite(top.id, {inHand: now()});
+  }
+  const s = stSteps[id]; if (!s) return;
+  if (a === 'work'){ hdLifted = ''; renderSteps(); return openBlocker(id); }
+  if (a === 'ai'){
+    const text = (document.getElementById('hda-' + id).value || '').trim(), automate = document.getElementById('hdx-' + id).checked;
+    if (!text && !automate){ document.getElementById('hd-lift-state').textContent = 'Say what Claude should know, or tick the box.'; return; }
+    await hdOut('hd-give', 360); hdLifted = ''; delete hdAiDrafts[id];
+    return hdWrite(id, {aiBack: {text, automate, at: now()}, inHand: null}, 'Handed to Claude. The slot is free.');
   }
   if (a !== 'discard') return;
   // Two taps: the first shows the price and the day it comes back, the second pays.
   if (hdArmed !== id){ hdArmed = id; return renderSteps(); }
   hdArmed = '';
   const coin = hdWallet()[0];
-  if (!coin){ st.textContent = 'No vibeulon yet. Inner work on a card mints one.'; return renderSteps(); }
+  if (!coin){ hdSay('No vibeulon yet. Inner work on a card mints one.'); return renderSteps(); }
   const at = new Date(), days = hdDays(s), until = new Date(at.getTime() + days * 864e5).toISOString();
   const discards = [...(s.discards || []), {at: at.toISOString(), until, days, vibeulon: coin}];
-  stSteps[id] = {...s, discards, discardedUntil: until}; renderSteps();
-  try { await db.doc('steps/' + id).update({discards, discardedUntil: until}); st.textContent = `Discarded. It comes back on ${stFmt(until)}.`; }
-  catch (err){ stSteps[id] = s; renderSteps(); st.textContent = `Could not discard (${err && err.code || 'error'}).`; }
+  await hdOut('hd-toss', 360); hdLifted = '';
+  return hdWrite(id, {discards, discardedUntil: until, inHand: null}, `Discarded. It comes back to the deck on ${stFmt(until)}.`);
 }
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && hdLifted){ const id = hdLifted; hdLifted = ''; hdArmed = ''; renderSteps(); const c = document.querySelector(`#hd-${CSS.escape(id)} button`); if (c) c.focus(); } });
 document.getElementById('tab-steps').addEventListener('click', () => { hdDealAll(); renderSteps(); });
 function stSecret(len){
   const bytes = new Uint8Array(Math.ceil(len * 3 / 4) + 3); crypto.getRandomValues(bytes);
@@ -1450,11 +1564,13 @@ stepsView.addEventListener('toggle', e => {
 }, true);
 stepsView.addEventListener('input', e => {
   if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value;
+  if (e.target.id && e.target.id.startsWith('hda-')) hdAiDrafts[e.target.id.slice(4)] = e.target.value;
   if (e.target.id && e.target.id.startsWith('sfn-')) stFileDrafts[e.target.id.slice(4)] = e.target.value;
 });
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.hd) return hdClick(t);
+  if (t.dataset.bk && hdLifted){ hdLifted = ''; document.getElementById('hd-lift').hidden = true; }
   if (t.dataset.where){
     stWhere = t.dataset.where; try { localStorage.setItem('st-where', stWhere); } catch {}
     renderSteps(); return;
