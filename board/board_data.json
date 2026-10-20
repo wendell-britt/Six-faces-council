@@ -11054,6 +11054,17 @@
    "auto": true,
    "pos": "Spirit care is its own strand (council/callsheets/spirit-care.md). It runs beside Chapter 1 and never blocks it, and it does not touch the spirit-generator rounds. The first build is a small simulation of four players coming back to their spirits: one who tends daily, one who is busy, one who rests, and one who vanishes for three weeks. It proves whether the stakes add care or guilt before any art or bars-engine work. This stands unless you flip it.",
    "why": "Work that serves the gate runs beside it (your Regent lesson, 2026-10-03). A probe comes before a still (CLAUDE.md, tool scout). Source: the pass, Regent, Challenger and Sage."
+  },
+  {
+   "id": "sc-ladder-tuning",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "spirit care 1",
+   "auto": true,
+   "pos": "The simulation's numbers for sc-ladder: a spirit dies 21 days after its last care. Dimming lasts at least 2 days, stale at least 3, shadowed 4 and fading 3, so dimming and stale are each shorter than a week. A player who looks in once a week can miss both, which sc-ladder says each stage must avoid. Longer stages push death past three weeks. This stands unless you flip it, and it can wait for your answer to sc-undying and sc-after-death.",
+   "why": "sc-ladder requires the stage lengths to be tuned by a simulation and shown to you before they ship. Source: council/spirit-care/sim.py and README.md (Six-faces-council #327)."
   }
  ],
  "questions": [
