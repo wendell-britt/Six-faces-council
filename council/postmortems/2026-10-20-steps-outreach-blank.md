@@ -62,3 +62,17 @@ the Nonprofit Board, and has a case with the 19 October line in it. The steward 
 What it does not catch: a function that exists but throws, a name defined only on `window` by another script, and
 calls built by name at run time. A browser load of the built page against a stub store would catch those. It needs
 Chromium in CI, so it is left as the next step and was not built here.
+
+## The empty-store guard (2026-10-20, thread "Move board data into bars-engine")
+
+The second blank had a different cause: bars-engine's store for `board=council` never received the `lists`,
+`steps`, `contacts` and `shows` documents, so the page rendered an empty store as an empty day ("Nothing waiting on
+you", "No one on the list yet"). The template now treats an empty or failed `lists` or `contacts` snapshot as a
+broken store and says so in red, naming the claude.ai board as the place the data still is. The Nonprofit Board,
+whose lists can be empty, turns this off in its build (`STORE_MUST_HOLD`).
+
+`board/checks/store_fault.mjs` is the browser load the section above left for later: it opens a built page in
+Chromium against an empty and a filled stub store and reports what both tabs say. `tests/test_store_fault.py` runs it
+on both boards and skips where Node or Playwright is missing.
+
+Not checked: the bars-engine shim itself (`src/app/board/serve.ts`) in a browser; the check uses its own stub store.
