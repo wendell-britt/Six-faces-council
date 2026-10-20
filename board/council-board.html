@@ -309,6 +309,10 @@ body.has-send{padding-bottom:120px}
 .fo-f b{display:block;font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
 .fo-call{margin:0;font-size:.95rem;max-width:72ch}
 .fo-call b{color:var(--accent)}
+.fo-list{margin:0 0 6px;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.fo-h{margin:14px 0 2px;font-size:.95rem}
+.mo-read{margin:4px 0 6px;font-size:.9rem;max-width:72ch}
+.mo-read b.c{color:var(--accent)}
 .mo-more{font:inherit;font-size:.85rem;margin:8px 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
 
 /* Blocker panel (Wendell, 2026-10-12: an overdue step "needs to actually run a player through the blockage and save the
@@ -402,7 +406,7 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
     <div class="ctl"><button class="save" id="mo-paste-save" type="button">Save the menu</button><div class="state" id="mo-paste-state"></div></div>
   </details>
   <details class="mo-cat" id="mo-faceoff" open hidden><summary><b>The council's read</b><span id="mo-fo-sum"></span></summary>
-    <p class="lede">One face reads each line you sealed, gathers what the record already holds about it, and sets it beside the council work that wants the same hours. The call is advice. You tap what happens in <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a>.</p>
+    <p class="lede">One face reads each line you sealed, gathers what the record already holds about it, and sets it beside the council work that wants the same hours. The call is advice. You tap what happens in <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a>. A few items from each of the council's lists below are read the same way each morning; pick one and its thread starts with what the face gathered.</p>
     <div id="mo-fo-list"></div>
   </details>
   <div id="mo-empty" class="empty" hidden>No morning gathered yet. Paste your sealed menu above, or a council session gathers it with the open work.</div>
@@ -1584,6 +1588,11 @@ function moBridgeText(b){
   if (b.kind === 'new') return `Suggested: a new ${esc(b.cadence || 'week')} goal, <b>${esc(b.title)}</b>, under <b>${esc(b.parentTitle || (moGoal(b.parentId) || {}).title || 'a year goal')}</b>.`;
   return `Unaligned: ${esc(b.why || 'no goal yet')}. Pick a goal or a new smaller one, or keep it unaligned.`;
 }
+/* A list item the faces read (tb-lists-are-bars, council/bar_read.py --slate): its kernel and call, in one line. */
+function moReadLine(r){
+  const still = Array.isArray(r.workable) ? r.workable : [];
+  return `<p class="mo-read"><b>${esc(foFace(r.face))}</b> hears: ${esc(r.kernel)} <b class="c">${esc(FO_CALL[r.call] || r.call)}.</b>${still.length ? ' Still needs ' + still.map(m => esc(FO_NEEDS[m] || m)).join(' and ') + '.' : ''} <span class="lede">Read ${esc(r.date || '')}.</span></p>`;
+}
 function moCurrent(it){ return moEdits[it.id] || (moLive[it.id] && moLive[it.id].bridge) || it.bridge; }
 function moItem(it, cat, full){
   const b = moCurrent(it), picked = moPicked(it.id), rec = moRecorded.has(it.id);
@@ -1599,7 +1608,7 @@ function moItem(it, cat, full){
     <p class="mo-text">${esc(it.text)}</p><p class="mo-rest">Set aside, resting in your seed library.</p></div>`;
   return `<div class="mo-item${picked?' picked':''}" data-id="${esc(it.id)}" data-cat="${esc(cat)}">
     <p class="mo-text">${esc(it.text)}</p>${note ? `<p class="mo-note">${note}</p>` : ''}
-    <p class="mo-bridge${b.kind==='unaligned'?' unaligned':''}">${moBridgeText(b)}</p>
+    <p class="mo-bridge${b.kind==='unaligned'?' unaligned':''}">${moBridgeText(b)}</p>${it.read ? moReadLine(it.read) : ''}
     <div class="mo-ctl">
       ${goals.length && !rec ? `<select class="mo-goal" aria-label="Lens goal for this item">${opts}</select>` : ''}
       ${b.kind==='new' && !rec ? `<input type="text" class="mo-new" aria-label="New goal" value="${esc(b.title||'')}"><select class="mo-parent" aria-label="Under which goal">${parentOpts}</select>` : ''}
@@ -1698,6 +1707,7 @@ const FO_NEEDS = {'next step': 'a first step', 'home': 'a home in work you hold'
 const foFace = f => f ? f[0].toUpperCase() + f.slice(1) : 'A face';
 function foCard(it){
   const r = it.read, F = r.factors || {}, s = F.signal || {}, rd = F.ready || {}, u = F.unlocks || {}, w = F.waiting || {}, o = r.opponent || {};
+  if (r.list) return foListCard(it);
   const still = Array.isArray(r.workable) ? r.workable : [];
   const ctx = (r.gathered || []).map(g => `<li>Needed ${esc(FO_NEEDS[g.piece] || g.piece)}. Found in the record: ${esc(g.found)} <small>${esc(g.source)}</small></li>`)
     .concat(still.map(m => `<li class="still">Still needs ${esc(FO_NEEDS[m] || m)}.</li>`));
@@ -1718,15 +1728,44 @@ function foCard(it){
     <p class="fo-call"><b>${esc(FO_CALL[r.call] || r.call)}.</b> ${esc(r.why)}</p>
   </div>`;
 }
+/* A list item's card (tb-lists-are-bars): the same read, its rival a sealed line or other council work if one wants the
+   same hours, and a Pick that starts its thread with the read (tb-pick-carries-read). */
+function foListCard(it){
+  const r = it.read, F = r.factors || {}, s = F.signal || {}, rd = F.ready || {}, u = F.unlocks || {}, w = F.waiting || {}, o = r.opponent;
+  const still = Array.isArray(r.workable) ? r.workable : [];
+  const ctx = (r.gathered || []).map(g => `<li>Needed ${esc(FO_NEEDS[g.piece] || g.piece)}. Found in the record: ${esc(g.found)} <small>${esc(g.source)}</small></li>`)
+    .concat(still.map(m => `<li class="still">Still needs ${esc(FO_NEEDS[m] || m)}.</li>`));
+  const cell = (k, title, body, note) => `<div${r.decidedBy === k ? ' class="won"' : ''}><b>${title}${r.decidedBy === k ? ', decided it' : ''}</b>${body}${note ? '<br><span class="lede">' + esc(note) + '</span>' : ''}</div>`;
+  const picked = moPicked(it.id), rec = moRecorded.has(it.id);
+  return `<div class="fo mo-item" data-id="${esc(it.id)}">
+    <p class="fo-list">${esc(r.listTitle || r.list)} · read ${esc(r.date || '')}</p>
+    <p class="fo-line">${esc(it.text)}${it.link ? ` <a href="${esc(it.link)}" target="_blank" rel="noopener">open</a>` : ''}</p>
+    <p class="fo-kernel"><b>${esc(foFace(r.face))}</b> hears: ${esc(r.kernel)}</p>
+    ${ctx.length ? `<ul class="fo-ctx">${ctx.join('')}</ul>` : '<p class="fo-vs">Nothing was missing. It can be worked as it is.</p>'}
+    ${o ? `<p class="fo-vs">Up against <b>${esc(o.what || '')}</b>${o.title ? ', in ' + esc(String(o.title).replace(/\.+$/, '')) : ''}.</p>` : '<p class="fo-vs">Nothing else wants these hours today.</p>'}
+    <div class="fo-f">
+      ${cell('signal', 'Signal', `On ${esc(s.list || r.listTitle || 'the council\u2019s lists')}`, s.note)}
+      ${cell('ready', 'Ready', still.length ? 'Still needs ' + still.map(m => esc(FO_NEEDS[m] || m)).join(' and ') : 'Ready to work', rd.note)}
+      ${cell('unlocks', 'Unlocks', o ? `This ${u.line ?? '?'}, its rival ${u.council ?? '?'}` : `${u.line ?? '?'} other item${u.line === 1 ? '' : 's'}`, u.note)}
+      ${cell('waiting', 'Waiting', `${w.days ?? '?'} day${w.days === 1 ? '' : 's'} on the list`, w.note)}
+    </div>
+    <p class="fo-call"><b>${esc(FO_CALL[r.call] || r.call)}.</b> ${esc(r.why)}</p>
+    <div class="mo-ctl"><button type="button" class="mo-pick" aria-pressed="${picked}"${rec||!db?' disabled':''}>${rec ? 'Picked, recorded' : picked ? 'Picked' : 'Pick'}</button></div>
+  </div>`;
+}
 function renderFaceoff(){
   const box = document.getElementById('mo-faceoff'), I = DATA.intake;
   const items = ((I && I.items) || []).filter(it => it.read);
-  box.hidden = !items.length;
+  const listed = ((MO && MO.categories) || []).filter(c => c.key !== 'menu').flatMap(c => c.items.filter(it => it.read));
+  box.hidden = !items.length && !listed.length;
   if (box.hidden) return;
-  items.sort((a, b) => FO_ORDER.indexOf(a.read.call) - FO_ORDER.indexOf(b.read.call));
-  const today = items.filter(it => it.read.call === 'work-today').length;
-  document.getElementById('mo-fo-sum').textContent = `${I.date}: ${items.length} line${items.length === 1 ? '' : 's'}, ${today} to work today`;
-  document.getElementById('mo-fo-list').innerHTML = items.map(foCard).join('');
+  const byCall = (a, b) => FO_ORDER.indexOf(a.read.call) - FO_ORDER.indexOf(b.read.call);
+  items.sort(byCall); listed.sort(byCall);
+  const today = [...items, ...listed].filter(it => it.read.call === 'work-today').length;
+  document.getElementById('mo-fo-sum').textContent = [items.length ? `${I.date}: ${items.length} line${items.length === 1 ? '' : 's'}` : '',
+    listed.length ? `${listed.length} from the council's lists` : '', `${today} to work today`].filter(Boolean).join(', ');
+  document.getElementById('mo-fo-list').innerHTML = items.map(foCard).join('')
+    + (listed.length ? `<h4 class="fo-h">From the council's lists</h4>` + listed.map(foCard).join('') : '');
 }
 /* Tap the Vein in the Morning tab (ttv-one-ui). Where bars-engine serves this board (/board/council) the box frames
    bars-engine's own page, /tap-the-vein/embed, the same runner with no site chrome; it seals into bars-engine, and the
@@ -1828,6 +1867,10 @@ document.getElementById('mo-cats').addEventListener('click', async e => {
       aside.title = String((err && err.message) || ''); }
     return;
   }
+  moPickClick(e);
+});
+document.getElementById('mo-fo-list').addEventListener('click', moPickClick);
+async function moPickClick(e){
   const btn = e.target.closest('.mo-pick'); if (!btn || !db) return;
   const row = btn.closest('.mo-item'), [it, cat] = moItemById(row.dataset.id); if (!it) return;
   const now = new Date().toISOString();
@@ -1836,7 +1879,7 @@ document.getElementById('mo-cats').addEventListener('click', async e => {
   btn.disabled = true;
   try { await db.doc('picks/' + it.id).set(doc); moLive[it.id] = doc; } catch { btn.textContent = 'Not saved'; }
   renderMorning();
-});
+}
 document.getElementById('mo-cats').addEventListener('change', e => {
   const row = e.target.closest('.mo-item'); if (!row) return;
   const [it] = moItemById(row.dataset.id); if (!it) return;

@@ -136,6 +136,14 @@ def find_new(data, store):
     return new, general, find_steps(data, store)
 
 
+def read_brief(rd):
+    """The faces' read of a picked list item, in one line for the thread's brief (tb-pick-carries-read)."""
+    got = "; ".join(f'{g["piece"]}: {g["found"]} ({g["source"]})' for g in rd.get("gathered") or [])
+    still = rd.get("workable") if isinstance(rd.get("workable"), list) else []
+    return (f' (read {rd.get("date", "")}, {rd.get("face", "")}: "{rd.get("kernel", "")}"; call {rd.get("call")}'
+            + (f"; gathered {got}" if got else "") + (f'; still needs {", ".join(still)}' if still else "") + ")")
+
+
 def pasted_menu(data, store):
     """The sealed menu he pasted on the Morning tab, when it is newer than the last gather; else None."""
     f = store / "morning" / "menu.json"
@@ -211,11 +219,15 @@ def apply(data, new, general, steps, ledger_rel, blockers=()):
             b = doc.get("bridge") or {}
             goal = b.get("goalTitle") or (f"new {b.get('cadence')} goal \"{b.get('title')}\" under {b.get('parentTitle')}"
                                           if b.get("kind") == "new" else "unaligned")
+            # tb-pick-carries-read: a list item the faces read starts its thread with what they gathered
+            rd = next((it.get("read") for c in (data.get("morning") or {}).get("categories") or []
+                       for it in c.get("items", []) if it["id"] == rid and it.get("read")), None)
             data.setdefault("picks", []).append({"id": rid, "date": doc.get("date"), "category": doc.get("category"),
                                                  "text": doc.get("text"), "bridge": b, "note": doc.get("note", ""),
-                                                 "saved_at": doc["savedAt"], "record": record})
+                                                 "saved_at": doc["savedAt"], "record": record,
+                                                 **({"read": rd} if rd else {})})
             work.append(f'picks/{rid}: start a thread: "{doc.get("text")}" (goal: {goal})'
-                        + (f' (note: "{doc["note"]}")' if doc.get("note") else ""))
+                        + (f' (note: "{doc["note"]}")' if doc.get("note") else "") + (read_brief(rd) if rd else ""))
             continue
         if doc.get("deferred"):
             due.record(data, kind, rid, doc["savedAt"], doc.get("until") or "spaced", steer, record, doc.get("hours"))
