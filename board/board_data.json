@@ -11109,6 +11109,18 @@
    "auto": true,
    "pos": "Letting an offered quest go for good costs one vibeulon, the price of a hand discard, and a vibeulon is minted by a finished 3-2-1 or W.A.V.E. The spirit offers a fresh quest on the next visit. A player with no vibeulon can still say not now, and nothing gets worse for holding the quest. This stands unless you flip it.",
    "why": "Your steer on sc-spirit-bars: \"it should be an additional cost to fully get rid of a proffered quest\". The price comes from your own hand rule: \"pay a vibeulon to discard the card\" (steps-hand.md, hd-mint), so the cost of letting go is inner work, not a fine. Source: the pass, Regent and Challenger."
+  },
+  {
+   "id": "jev-asset-readers-label",
+   "faces": [
+    "architect",
+    "challenger",
+    "regent"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "Labels for the asset trial come from two independent model readers with the code open, blind to Wendell's labels and to each other. A row is settled when both readers agree, and Wendell rules only on rows where they differ. His own 19 labels are kept as saved and are not overwritten. The practice pile is labelled the same way when it is needed. This stands unless you flip it.",
+   "why": "Your words on the labelling page: 'it was very hard and it feels like something the llm should be able to verify for me'. The readers agree on 18 of 20 rows (9 agree, 9 differ, 2 split). Your labels match their consensus on 4 of the 19 you answered, and 9 of yours were can't-tell, which fits a task that needs the code open. A model label is not a ruling, so the council reports where you and the readers differ and does not hide it. Source: council/jev/asset_labels_compared.json and the two readers' reports in bars-engine, PR #256"
   }
  ],
  "questions": [
@@ -17714,6 +17726,61 @@
      "v": "C",
      "label": "C. Daemon shadow alone, an outside force in the Between",
      "c": "Your own spirits are taken by their daemon's shadow; a shared spirit is pressed by a force that weighs on the relationship from outside."
+    }
+   ]
+  },
+  {
+   "id": "jev-asset-additions",
+   "faces": [
+    "architect",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "jev asset",
+   "q": "When the code does something extra that a document does not mention, does the document count as matching?",
+   "why_you": "The two readers split on exactly two rows because of this one rule. It is your call on what counts as a mismatch, and it changes how many positives the trial has.",
+   "not_before": "The readers only just compared notes, and the split showed up in two specific rows.",
+   "research": {
+    "title": "Two rows, one rule",
+    "lead": "The readers agreed on 18 of the 20 rows. They split on two, and both splits come from one question: if the code does something the document does not say, is the document wrong?",
+    "sections": [
+     {
+      "h": "The two rows",
+      "items": [
+       "AS-007: the document shows a database line for the asset's owner. The code has the same line plus a rule that deleting a player also deletes their assets. The document never mentions the delete rule.",
+       "AS-026: the document says the ceremony card needs no image assets and takes its colour from the colour tokens. That is true. The effect that uses the colours depends on a style class that no stylesheet defines, so the glow probably never shows."
+      ]
+     },
+     {
+      "h": "Why it matters",
+      "p": "If extras count as a mismatch, both rows are positives and the trial has 11 known mismatches. If extras do not count, both rows are matches, and the trial has 9 mismatches. In both cases the council still reports the extra finding to you as a possible bug."
+     },
+     {
+      "h": "What the readers said",
+      "items": [
+       "Reader A counted both as a difference.",
+       "Reader B counted both as a match, noting the extra finding."
+      ]
+     }
+    ],
+    "recommend": "The council's recommendation, not your ruling: option B. A statement is judged on what it says. If the code does something extra that does not contradict the sentence, the label is 'agrees' and the extra is recorded as a separate finding. That keeps the trial's question clear (does the document say something false?) and keeps the possible bugs from being lost.",
+    "unchecked": "I checked the facts behind both rows in the code: the delete rule is in the schema, and no stylesheet defines the glow class."
+   },
+   "options": [
+    {
+     "v": "differ",
+     "label": "A. An extra behaviour counts as a mismatch",
+     "c": "Both rows are positives (11 mismatches in the 20). It is stricter, and a document would need to list everything the code does."
+    },
+    {
+     "v": "matches",
+     "label": "B. An extra behaviour counts as a match, recorded as a separate finding",
+     "c": "Both rows are matches (9 mismatches in the 20). Fits the question the trial asks, and nothing is lost because each extra is still reported. The council recommends this."
+    },
+    {
+     "v": "each",
+     "label": "C. Decide each row yourself",
+     "c": "The two rows come to you one at a time. It costs more of your time on each future split, which you said is hard."
     }
    ]
   }
