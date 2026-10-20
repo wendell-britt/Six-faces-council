@@ -174,6 +174,11 @@ def find_steps(data, store):
             if isinstance(d, dict) and d.get("at", "") > since:
                 out.append({"id": f.stem, "at": d["at"], "what": "discarded", "until": d.get("until"),
                             "vibeulon": d.get("vibeulon"), "do": doc.get("do", "")})
+        # Handed back to Claude from the hand (2026-10-20): his context, and whether he marked it as one Claude can automate.
+        back = doc.get("aiBack")
+        if isinstance(back, dict) and back.get("at", "") > since:
+            out.append({"id": f.stem, "at": back["at"], "what": "back to AI", "note": (back.get("text") or "").strip(),
+                        "automate": bool(back.get("automate")), "do": doc.get("do", "")})
         for m in doc.get("moved") or []:
             if m.get("at", "") > since:
                 out.append({"id": f.stem, "at": m["at"], "what": "moved", "from": m.get("from"), "to": m.get("to"),
@@ -261,6 +266,8 @@ def apply(data, new, general, steps, ledger_rel, blockers=()):
             work.append(f'steps/{e["id"]}: notes on "{e["title"]}": "{e["note"]}"')
         elif e["what"] == "moved":
             work.append(f'steps/{e["id"]}: moved from {e["from"]} to {e["to"]}')
+        elif e["what"] == "back to AI":
+            work.append(f'steps/{e["id"]}: back to AI{" (automate)" if e["automate"] else ""}: "{e["note"]}"')
     if steps:
         data["steps_recorded_through"] = max(data.get("steps_recorded_through", ""), steps[-1]["at"])
     work += [blocker_line(b) for b in blockers]
