@@ -1,0 +1,46 @@
+{
+ "version": 1,
+ "sessionDate": "2026-10-20",
+ "items": [
+  {
+   "key": "a1",
+   "text": "Write the first page of the Kickstarter video script",
+   "source": "kept_line",
+   "status": "unaligned",
+   "taskId": "t-a1",
+   "barId": "b-a1"
+  },
+  {
+   "key": "a2",
+   "text": "Make the face-off card on the board feel like one screen",
+   "source": "kept_line",
+   "status": "unaligned",
+   "taskId": "t-a2",
+   "barId": "b-a2"
+  },
+  {
+   "key": "a3",
+   "text": "Call Ari about the Between",
+   "source": "kept_line",
+   "status": "unaligned",
+   "taskId": "t-a3",
+   "barId": "b-a3"
+  },
+  {
+   "key": "a4",
+   "text": "Clean the studio corner so I can record",
+   "source": "kept_line",
+   "status": "unaligned",
+   "taskId": "t-a4",
+   "barId": "b-a4"
+  },
+  {
+   "key": "a5",
+   "text": "Something about the old songs wants out",
+   "source": "kept_line",
+   "status": "unaligned",
+   "taskId": "t-a5",
+   "barId": "b-a5"
+  }
+ ]
+}
