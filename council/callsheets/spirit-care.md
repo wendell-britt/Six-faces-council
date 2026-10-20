@@ -29,7 +29,23 @@ simulated spirit can die. Leave a test the next round reruns. Read his answers t
 they are in; otherwise run every option of `sc-undying` and `sc-after-death`. Scout: rung 2 (we have it) for quest
 BARs, bars-engine `src/lib/charge-quest-generator/generator.ts`.
 
+## Round 2, shadow copy and quest offers (Opus), done 2026-10-20
+
+His answers: sc-undying A, sc-after-death A, sc-shadow-what A (ledger 2026-10-20-pull-220519). Steers folded into
+sim.py and four positions in `council/callsheets/rows/spirit-care-offers-2026-10-20.json` (sc-shadow-copy,
+sc-offer-hold, sc-offer-rewrite, sc-offer-release). No new questions: the reach test answered each from his steers
+and the hand's vibeulon discard.
+
+## Brief 3, landing (Sonnet)
+
+Land `council/callsheets/rows/spirit-care-offers-2026-10-20.json` on the board the way Brief 1 did (save the live
+board, `python3 board/sync_board.py --live <saved page> --rows <file> --push`, republish). voice_lint's one hard
+finding is inside his quoted words; leave it.
+
 ## Later
+
+- Port to bars-engine: the spirit holds a quest (`generateQuestSuggestions`), buttons Yes / Not now / Rewrite /
+  Let it go (one vibeulon). Waits on hd-wallet (vibeulons in his bars-engine wallet).
 
 - Between round with one mortal shared spirit, after the cozy round 2 (`council/passes/BETWEEN_round2_cozy_2026-10-17.md`)
   lands. Changes the live copy "It cannot die" (bars-engine `public/between/garden.js:948`).
