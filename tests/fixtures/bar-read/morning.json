@@ -1,0 +1,14 @@
+{"date": "2026-10-20", "gathered_at": "2026-10-20T08:00:00Z", "pick_limit": 7, "goals": [],
+ "categories": [
+  {"key": "menu", "title": "From your free write", "items": [{"id": "menu-x", "text": "Call Ari about the Between", "bridge": {"kind": "unaligned"}}]},
+  {"key": "board", "title": "Waiting on you on the board", "items": []},
+  {"key": "handoff", "title": "Open in the handoff", "items": [
+   {"id": "handoff-a", "text": "Podcast episode two: publish once the Meta token is set.", "note": "Open on 2026-10-17, podcast", "bridge": {"kind": "unaligned"}},
+   {"id": "handoff-b", "text": "Slim the board read: built 2026-10-08, board/read.py.", "note": "Open on 2026-10-08", "bridge": {"kind": "unaligned"}},
+   {"id": "handoff-c", "text": "Seed library test SL1 on 2026-10-30.", "note": "Open on 2026-10-16", "bridge": {"kind": "unaligned"}},
+   {"id": "handoff-d", "text": "Lens goals first emergence run.", "note": "Open on 2026-10-16", "bridge": {"kind": "unaligned"}}]},
+  {"key": "prs", "title": "Open pull requests", "items": [
+   {"id": "pr-bars-engine-399", "text": "Inner-space ship dock", "link": "https://github.com/johnair01/bars-engine/pull/399", "note": "bars-engine #399", "bridge": {"kind": "unaligned"}}]},
+  {"key": "backlog", "title": "bars-engine backlog", "items": [
+   {"id": "backlog-smp", "text": "Sample spec: a ready backlog row", "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/sample/spec.md", "note": "P2 SMP", "bridge": {"kind": "unaligned"}}]}
+ ]}
