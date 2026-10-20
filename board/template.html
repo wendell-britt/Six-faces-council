@@ -159,6 +159,7 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .hd-mini{background:var(--card);color:var(--card-ink);font-size:.58rem;line-height:1.2;padding:6px 5px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.45);text-align:left}
 .hd-mini:nth-child(1){transform:rotate(-7deg)}.hd-mini:nth-child(2){transform:rotate(5deg)}.hd-mini:nth-child(3){transform:rotate(-2deg)}
 .hd-claude .hd-mini{background:#e9e4f5}
+.hd-chase .hd-idx b{color:#2d5d3a}
 .hd-coins{display:grid;justify-items:center;gap:6px}
 @media (min-width:700px){.hd-coins{margin-left:auto}}
 .hd-coinstack{position:relative;width:40px;height:46px}
@@ -166,14 +167,15 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .hd-say{margin:10px 6px 0;font-size:.85rem;color:#e3ece3;min-height:1.3em}
 .hd-fan{list-style:none;margin:0;padding:0;position:relative}
 .hd-card,.hd-slot{border-radius:12px}
-.hd-card{background:var(--card);color:var(--card-ink);box-shadow:0 1px 1px rgba(0,0,0,.25),0 8px 18px rgba(0,0,0,.35);transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s}
-.hd-card > button{all:unset;box-sizing:border-box;display:grid;grid-template-rows:auto 1fr auto;gap:6px;width:100%;height:100%;padding:10px 12px;cursor:pointer;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),inset 0 0 0 5px var(--card),inset 0 0 0 6px rgba(0,0,0,.06)}
+.hd-card{overflow:hidden;background:var(--card);color:var(--card-ink);box-shadow:0 1px 1px rgba(0,0,0,.25),0 8px 18px rgba(0,0,0,.35);transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s}
+.hd-card > button{all:unset;box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto 1fr auto;gap:6px;width:100%;height:100%;padding:10px 12px;cursor:pointer;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08),inset 0 0 0 5px var(--card),inset 0 0 0 6px rgba(0,0,0,.06)}
 .hd-card > button:focus-visible{outline:3px solid #ffd76a;outline-offset:2px}
-.hd-idx{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--card-mute)}
+.hd-idx{display:flex;align-items:baseline;gap:8px;min-width:0;font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--card-mute)}
 .hd-idx b{font-family:var(--display);font-size:1.05rem;letter-spacing:0;color:var(--card-ink)}
-.hd-idx span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hd-idx span{min-width:0;overflow:hidden;overflow-wrap:anywhere;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.hd-big .hd-idx span{display:block}
 .hd-red .hd-idx b,.hd-red .hd-pip{color:var(--card-red)}
-.hd-text{font-family:var(--display);font-size:1rem;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:5}
+.hd-text{min-width:0;overflow-wrap:anywhere;font-family:var(--display);font-size:1rem;line-height:1.3;overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;--l:5;-webkit-line-clamp:var(--l);max-height:calc(var(--l) * 1.3em);align-self:start}
 .hd-pip{font-size:.72rem;color:var(--card-mute);font-variant-numeric:tabular-nums}
 .hd-slot{border:2px dashed rgba(255,255,255,.35);display:grid;place-items:center;text-align:center;font-size:.8rem;color:#d7e4d8;padding:8px}
 .hd-slot button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;height:100%;display:grid;place-items:end center;padding:0 10px 18px}
@@ -184,14 +186,16 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 /* Phone: a vertical fan. Each card shows its top edge above the next one; the column bows like a held fan. */
 .hd-fan{display:flex;flex-direction:column;align-items:center;padding:16px 0 4px}
 .hd-fan > li{position:relative;width:min(86%,340px);height:150px;flex:none;transform:translateX(calc(var(--o2) * -5px)) rotate(calc(var(--o) * 2.2deg));transform-origin:150% 50%;z-index:var(--z)}
-.hd-fan > li + li{margin-top:-74px}
+.hd-fan > li + li{margin-top:-58px}
+/* A card with another card over it shows one line of its text, so no line is cut in half by the card in front. */
+@media (max-width:699px){.hd-fan > .hd-card:has(+ .hd-card) .hd-text{--l:1}}
 .hd-fan > .hd-card:hover,.hd-fan > .hd-card:focus-within{transform:translateX(calc(var(--o2) * -5px - 22px)) rotate(calc(var(--o) * 2.2deg))}
 /* Computer: an arc, held from below. */
 @media (min-width:700px){
   .hd-fan{display:block;height:350px}
   .hd-fan > li{position:absolute;left:50%;bottom:48px;width:160px;height:228px;margin:0 0 0 -80px !important;transform-origin:50% 120%;transform:translateX(calc(var(--o) * 104px)) translateY(calc(var(--o2) * 7px)) rotate(calc(var(--o) * 6deg))}
   .hd-fan > .hd-card:hover,.hd-fan > .hd-card:focus-within{transform:translateX(calc(var(--o) * 104px)) translateY(calc(var(--o2) * 7px - 34px)) rotate(calc(var(--o) * 6deg));z-index:9;box-shadow:0 2px 2px rgba(0,0,0,.25),0 18px 30px rgba(0,0,0,.45)}
-  .hd-text{-webkit-line-clamp:7}
+  .hd-text{--l:7}
 }
 .hd-card.hd-new{animation:hd-deal .55s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--d) + var(--i) * 120ms)}
 @keyframes hd-deal{from{opacity:0;transform:translate(-38vw,-140px) rotate(-30deg) scale(.45)}}
@@ -200,16 +204,22 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 @keyframes hd-riffle-l{50%{transform:translate(-16px,2px) rotate(-14deg)}}
 @keyframes hd-riffle-r{50%{transform:translate(18px,-6px) rotate(12deg)}}
 /* The lifted card: out of the fan, full size, with everything the step holds. */
-.hd-lift{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px;overflow:auto}
+.hd-lift{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px;overflow:hidden}
+html:has(.hd-lift:not([hidden])){overflow:hidden}
 .hd-lift[hidden]{display:none}
 .hd-scrim{all:unset;position:fixed;inset:0;background:rgba(8,20,14,.62);backdrop-filter:blur(2px);cursor:pointer}
 .hd-face{--bg:#fbf6ea;--fg:#22201b;--muted:#6d675b;--line:#ddd3bf;--panel:#fffdf7;--accent:#1f6f6a;--accent-ink:#fff;--accent-soft:#e1efed;--warn:#9a4b1e;--warn-bg:#f8e9df;color-scheme:light}
-.hd-big{position:relative;width:min(100%,440px);max-height:calc(100vh - 32px);overflow:auto;background:var(--card);color:var(--card-ink);border-radius:16px;padding:16px 18px;box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px rgba(0,0,0,.08),0 24px 60px rgba(0,0,0,.55);display:grid;gap:12px;animation:hd-up .32s cubic-bezier(.2,.8,.2,1) both}
+.hd-big{position:relative;width:min(100%,640px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;overflow-wrap:anywhere;background:var(--card);color:var(--card-ink);border-radius:16px;padding:16px 18px;box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px rgba(0,0,0,.08),0 24px 60px rgba(0,0,0,.55);display:grid;gap:12px;animation:hd-up .32s cubic-bezier(.2,.8,.2,1) both}
 @keyframes hd-up{from{opacity:.2;transform:translateY(90px) rotate(-4deg) scale(.6)}}
 .hd-big.hd-toss{animation:hd-toss .38s ease-in both}
 @keyframes hd-toss{to{opacity:0;transform:translate(-30vw,-60vh) rotate(-28deg) scale(.4)}}
 .hd-big.hd-give{animation:hd-give .38s ease-in both}
 @keyframes hd-give{to{opacity:0;transform:translate(20vw,-60vh) rotate(18deg) scale(.4)}}
+.hd-bar{position:sticky;top:-16px;z-index:1;display:flex;align-items:flex-start;gap:10px;margin:-16px -18px 0;padding:14px 18px 10px;background:var(--card);border-bottom:1px dashed var(--line)}
+.hd-bar .hd-idx{flex:1}
+.hd-x{all:unset;cursor:pointer;flex:none;width:36px;height:36px;display:grid;place-items:center;border-radius:50%;font-size:1.3rem;line-height:1;color:var(--card-ink);background:rgba(0,0,0,.06)}
+.hd-x:focus-visible{outline:3px solid #ffd76a}
+@media (max-width:699px){.hd-lift{padding:0}.hd-big{width:100%;height:100dvh;max-height:none;border-radius:0;align-content:start;padding-bottom:calc(24px + env(safe-area-inset-bottom))}.hd-bar{padding-top:calc(14px + env(safe-area-inset-top))}}
 .hd-big ol.st-steps{margin:0}.hd-big .st-step{border-top:0;padding:0}
 .hd-acts{display:flex;flex-wrap:wrap;gap:6px;border-top:1px dashed var(--line);padding-top:10px}
 .hd-acts .st-btn[disabled]{opacity:.45;cursor:not-allowed}
@@ -1333,7 +1343,7 @@ function renderSteps(){
   hdRender(hand, deck, chases);
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id], inHand)).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
-  document.getElementById('steps-chase').innerHTML = chList(chases);
+  document.getElementById('steps-chase').innerHTML = chList(chases.filter(x => !inHand.has(hdChaseId(x.id))));
   const stEmpty = document.getElementById('steps-empty'), stFault = STORE_MUST_HOLD && (stStore === 'empty' || stStore === 'failed');
   stEmpty.hidden = !stFault && (hand.length > 0 || todo.length > 0 || chases.length > 0);
   stEmpty.classList.toggle('store-fault', stFault);
@@ -1367,8 +1377,11 @@ function renderSteps(){
    blockers/ record (hd-mint). Discarding pays the oldest unspent one, writes discards[] and discardedUntil, and clears
    inHand; the card comes back to the deck on the seed library's ladder (sl-resurface-ladder). Handing a card back to
    Claude writes aiBack {text, automate, at} and clears inHand, with no vibeulon (hd-back): board/pull.py lists it as
-   needs-work, and the card sits in Claude's pile until Claude finishes it or takes aiBack off. Podcast chases are a pile
-   on the table, not a card (hd-chases). A Tap the Vein line becomes a step in the ttv list when he draws it. */
+   needs-work, and the card sits in Claude's pile until Claude finishes it or takes aiBack off. A Tap the Vein line becomes
+   a step in the ttv list when he draws it.
+   A podcast chase is its own card, one per contact due a chase (hd-chases; Wendell, 2026-10-20: "They should be a separate
+   card. If it takes an action from me it should be in the hand"). It sits in the deck after the overdue steps and is held
+   by inHand on its contacts/ record; saving the chase clears inHand, so the slot frees once he says what happened. */
 const HD_SIZE = 5;
 const HD_LADDER = [3, 7, 14, 30, 60, 90];
 let hdShown = null, hdPrev = new Set(), hdFresh = new Set(), hdRiffle = false, hdAnimUntil = 0, hdArmed = '', hdLifted = '', hdLast = {hand: [], deck: []};
@@ -1390,9 +1403,11 @@ function hdWallet(){
     .sort((a, b) => String(a[1].vibeulon.at || '').localeCompare(String(b[1].vibeulon.at || ''))).map(([k]) => k);
 }
 // The cards he holds, in the order he drew them.
+const hdChaseId = cid => 'chase-' + cid;
 function hdHand(){
-  return Object.entries(stSteps).filter(([, s]) => hdHeld(s))
-    .sort((a, b) => String(a[1].inHand).localeCompare(String(b[1].inHand))).map(([id, s]) => ({kind: 'step', id, s}));
+  const steps = Object.entries(stSteps).filter(([, s]) => hdHeld(s)).map(([id, s]) => ({kind: 'step', id, s, at: s.inHand}));
+  const chases = ocChases().filter(x => x.chase && x.c.inHand).map(x => ({kind: 'chase', id: hdChaseId(x.id), x, at: x.c.inHand}));
+  return [...steps, ...chases].sort((a, b) => String(a.at).localeCompare(String(b.at)));
 }
 // The deck, top card first (position hd-draw).
 function hdDeck(todo){
@@ -1410,6 +1425,7 @@ function hdDeck(todo){
       cards.push({kind: 'step', id: sid, s, rank: id === 'ttv' ? 0 : left !== null && left < 0 ? 1 : s.due ? 3 : 4, key: id === 'ttv' ? '1' + String(s.created || '') : s.due || '9999'});
     }
   }
+  for (const x of ocChases()) if (x.chase && !x.c.inHand) cards.push({kind: 'chase', id: hdChaseId(x.id), x, rank: 2, key: String(x.c.nextTouch || '')});
   // A stable sort keeps renderSteps' list order for cards that tie.
   return cards.sort((a, b) => a.rank - b.rank || a.key.localeCompare(b.key));
 }
@@ -1422,8 +1438,15 @@ function hdPip(s){
   return left < 0 ? `${-left} day${left === -1 ? '' : 's'} over` : left === 0 ? 'Due today' : `Due ${stFmt(s.due)}`;
 }
 function hdCard(c, i, n, fresh){
-  const s = c.s, o = i - (n - 1) / 2, red = stOverdue(s);
-  const style = `--o:${o};--o2:${o * o};--z:${i + 1};--i:${fresh};--d:${hdRiffle ? '.85s' : '0s'}`;
+  const style = `--o:${i - (n - 1) / 2};--o2:${(i - (n - 1) / 2) ** 2};--z:${i + 1};--i:${fresh};--d:${hdRiffle ? '.85s' : '0s'}`;
+  if (c.kind === 'chase'){
+    const {c: k, why} = c.x, text = `Chase ${k.name}${k.show ? `, ${k.show}` : ''}`;
+    return `<li class="hd-card hd-chase${fresh >= 0 ? ' hd-new' : ''}" style="${style}" id="hd-${esc(c.id)}"><button type="button" data-hd="lift" data-id="${esc(c.id)}" aria-label="${esc(text)}. Tap to pick it up.">
+    <span class="hd-idx"><b>♣</b><span>Podcast chase</span></span>
+    <span class="hd-text">${esc(text)}</span>
+    <span class="hd-pip">${esc(why.join(', '))}</span></button></li>`;
+  }
+  const s = c.s, red = stOverdue(s);
   const suit = s.list === 'ttv' ? '✶' : red ? '♦' : '♠';
   return `<li class="hd-card${red ? ' hd-red' : ''}${fresh >= 0 ? ' hd-new' : ''}" style="${style}" id="hd-${esc(c.id)}"><button type="button" data-hd="lift" data-id="${esc(c.id)}" aria-label="${esc(s.do)}. Tap to pick it up.">
     <span class="hd-idx"><b>${suit}</b><span>${esc(hdFrom(s))}</span></span>
@@ -1434,16 +1457,28 @@ function hdSlot(i, n, free, canDraw){
   const o = i - (n - 1) / 2, say = `${free} free slot${free === 1 ? '' : 's'}`;
   return `<li class="hd-slot" style="--o:${o};--o2:${o * o};--z:${i + 1}">${canDraw ? `<button type="button" data-hd="draw">${say}. Tap to draw from the deck.</button>` : say}</li>`;
 }
+const hdX = '<button type="button" class="hd-x" data-hd="close" id="hd-close" aria-label="Put the card back in your hand">×</button>';
+// A chase card picked up: the chase itself, whose Save writes the contact and frees the slot.
+function hdChaseLift(c){
+  return `<button type="button" class="hd-scrim" data-hd="close" aria-label="Put the card back in your hand"></button>
+  <div class="hd-big hd-face" role="dialog" aria-modal="true" aria-label="Chase ${esc(c.x.c.name)}" id="hd-big">
+    <div class="hd-bar"><div class="hd-idx"><b>♣</b><span>Podcast chase</span></div>${hdX}</div>
+    <ol class="st-steps">${chItem(c.x)}</ol>
+    <p class="st-src">Say what happened and save. The row on the Outreach tab updates and the slot in your hand frees.</p>
+    <div class="hd-acts"><button type="button" class="st-btn" data-hd="close">Back in my hand</button></div>
+  </div>`;
+}
 function hdLiftHtml(c){
+  if (c.kind === 'chase') return hdChaseLift(c);
   const s = c.s, coins = hdWallet().length, armed = hdArmed === c.id;
   return `<button type="button" class="hd-scrim" data-hd="close" aria-label="Put the card back in your hand"></button>
   <div class="hd-big hd-face" role="dialog" aria-modal="true" aria-label="${esc(s.do)}" id="hd-big">
-    <div class="hd-idx"><b>${s.list === 'ttv' ? '✶' : stOverdue(s) ? '♦' : '♠'}</b><span>${esc(hdFrom(s))}</span></div>
+    <div class="hd-bar"><div class="hd-idx"><b>${s.list === 'ttv' ? '✶' : stOverdue(s) ? '♦' : '♠'}</b><span>${esc(hdFrom(s))}</span></div>${hdX}</div>
     <ol class="st-steps">${stStep(c.id, s)}</ol>
     <div class="hd-acts">
       <button type="button" class="st-btn" data-hd="work" data-id="${esc(c.id)}">Inner work</button>
       <button type="button" class="st-btn${armed ? ' st-solid' : ''}" data-hd="discard" data-id="${esc(c.id)}"${coins ? '' : ' disabled title="Inner work on a card mints the vibeulon a discard costs"'}>${armed ? `Pay 1 vibeulon: back in ${hdDays(s)} days` : `Discard (${coins} vibeulon${coins === 1 ? '' : 's'})`}</button>
-      <button type="button" class="st-btn" data-hd="close" id="hd-close">Back in my hand</button>
+      <button type="button" class="st-btn" data-hd="close">Back in my hand</button>
     </div>
     <details class="hd-ai"${hdAiDrafts[c.id] ? ' open' : ''}><summary>Give it back to Claude</summary>
       <p class="st-src">Say what Claude should know, or the way you see to automate it. The card leaves your hand with no vibeulon, and Claude picks it up.</p>
@@ -1474,13 +1509,11 @@ function hdRender(hand, deck, chases){
   const lastAt = s => (s.discards || []).map(d => d.at).sort().pop() || '';
   const topAway = away.sort((a, b) => lastAt(b[1]).localeCompare(lastAt(a[1]))).slice(0, 3).reverse();
   const minis = list => list.map(([, s]) => `<span class="hd-mini">${esc(String(s.do).slice(0, 60))}</span>`).join('');
-  const chaseN = chases.filter(c => c.chase).length;
   document.getElementById('hd-piles').innerHTML = `
     <button type="button" class="hd-pile hd-deckpile" data-hd="draw"${free && deck.length ? '' : ' disabled'} aria-label="${free && deck.length ? 'Draw the top card. ' : ''}${deck.length} card${deck.length === 1 ? '' : 's'} in the deck">
       <span class="hd-stack${backsN ? '' : ' hd-none'}">${Array.from({length: backsN}, (_, j) => `<i style="--j:${j}"></i>`).join('')}</span><span class="hd-pl">Deck · ${deck.length}</span></button>
     <div class="hd-pile" aria-label="${away.length} discarded until their day"><span class="hd-stack${away.length ? '' : ' hd-none'}">${minis(topAway)}</span><span class="hd-pl">Discards · ${away.length}</span></div>
     ${backs.length ? `<div class="hd-pile hd-claude" aria-label="${backs.length} with Claude"><span class="hd-stack">${minis(backs.slice(-3))}</span><span class="hd-pl">With Claude · ${backs.length}</span></div>` : ''}
-    ${chaseN ? `<button type="button" class="hd-pile" data-hd="chases" aria-label="${chaseN} podcast chases due"><span class="hd-stack"><span class="hd-mini">Podcast chases</span></span><span class="hd-pl">Chases · ${chaseN}</span></button>` : ''}
     <div class="hd-coins" aria-label="${coins} vibeulon${coins === 1 ? '' : 's'}"><span class="hd-coinstack">${Array.from({length: Math.min(coins, 7)}, (_, j) => `<i style="--j:${j}"></i>`).join('')}</span><span class="hd-pl" id="hd-wallet">${coins} vibeulon${coins === 1 ? '' : 's'}</span></div>`;
   const say = document.getElementById('hd-state');
   if (!(Number(say.dataset.keep) > Date.now())) say.textContent = !free ? 'Your hand is full. Finish a card, or do inner work on one and pay the vibeulon to discard it.'
@@ -1513,17 +1546,22 @@ async function hdWrite(id, fields, ok){
   try { await db.doc('steps/' + id).update(fields); if (ok){ hdSay(ok); renderSteps(); } }
   catch (err){ stSteps[id] = s; hdSay(`That did not save (${err && err.code || 'error'}).`); renderSteps(); }
 }
+async function hdChaseWrite(cid, fields){
+  const c = ocContacts[cid]; ocContacts[cid] = {...c, ...fields}; renderSteps();
+  try { await db.doc('contacts/' + cid).update(fields); }
+  catch (err){ ocContacts[cid] = c; hdSay(`That did not save (${err && err.code || 'error'}).`); renderSteps(); }
+}
 const hdOut = (cls, ms) => new Promise(r => { const b = document.getElementById('hd-big'); if (!b || matchMedia('(prefers-reduced-motion: reduce)').matches) return r(); b.classList.add(cls); setTimeout(r, ms); });
 async function hdClick(t){
   const a = t.dataset.hd, id = t.dataset.id;
   if (a === 'close'){ hdLifted = ''; hdArmed = ''; renderSteps(); const c = id && document.querySelector(`#hd-${CSS.escape(id)} button`); if (c) c.focus(); return; }
   if (a === 'lift'){ hdLifted = id; hdArmed = ''; stOpenGroups.add('s-' + id); renderSteps(); const c = document.getElementById('hd-close'); if (c) c.focus(); return; }
-  if (a === 'chases'){ const d = document.getElementById('hd-deck'); d.open = true; document.getElementById('steps-chase').scrollIntoView({behavior: 'smooth'}); return; }
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
   if (a === 'draw'){
     const {hand, deck} = hdLast;
     if (hand.length >= HD_SIZE) return hdSay('Your hand is full. Free a slot first.');
     const top = deck[0]; if (!top) return hdSay('The deck is empty.');
+    if (top.kind === 'chase') return hdChaseWrite(top.x.id, {inHand: now()});
     try { if (!(await hdEnsure(top.id))) return hdSay('That card is no longer in the menu.'); }
     catch (err){ return hdSay(`That card could not be saved (${err && err.code || 'error'}).`); }
     return hdWrite(top.id, {inHand: now()});
@@ -1690,7 +1728,7 @@ async function chSave(id){
   if (d.act === 'booked') status = 'Booked';
   if (d.act === 'recorded') status = 'Recorded';
   const line = `${today}: ${label}${d.date && d.act !== 'recorded' ? `, next touch ${d.date}` : ''}.${d.note ? ' ' + d.note : ''}`;
-  const patch = {status, lastTouch: today, nextTouch: d.act === 'recorded' ? '' : d.date, flag: '', notes: c.notes ? line + '\n' + c.notes : line};
+  const patch = {status, lastTouch: today, nextTouch: d.act === 'recorded' ? '' : d.date, flag: '', notes: c.notes ? line + '\n' + c.notes : line, inHand: null};
   st.textContent = 'Saving…';
   try { await db.doc('contacts/' + id).update(patch); delete chDraft[id]; ocContacts[id] = {...c, ...patch}; renderOutreach(); renderSteps(); }
   catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
