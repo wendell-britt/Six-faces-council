@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "positions": [
   {
    "id": "build",
@@ -10808,6 +10808,48 @@
    "auto": true,
    "pos": "When you pick a list item, the faces' read goes into its thread's brief, so the thread starts from what was gathered and what is missing.",
    "why": "A pick that started cold would throw away the read. board/pull.py read_brief carries it. Source: council/callsheets/morning-menu.md (2026-10-20) and council/bar_read.py."
+  },
+  {
+   "id": "sh-no-bars-branches",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "sprout-hosting1",
+   "auto": true,
+   "pos": "No throwaway bars-engine branches carry sprout builds.",
+   "why": "Each would put a second repo's 11 MB build into bars-engine's history, run a full Next.js build to serve static files, and the safety check refused the copy twice. Source: council/passes/6FACE_PASS_sprout-hosting1_2026-10-20.md."
+  },
+  {
+   "id": "sh-no-pages",
+   "faces": [
+    "challenger"
+   ],
+   "pass": "sprout-hosting1",
+   "auto": true,
+   "pos": "GitHub Pages is not the sprout host.",
+   "why": "sprout is private with Pages off, and Pages gives one site per repo, never a link per pull request. Source: the pass's evidence list."
+  },
+  {
+   "id": "sh-web-not-repo",
+   "faces": [
+    "regent"
+   ],
+   "pass": "sprout-hosting1",
+   "auto": true,
+   "pos": "The 10-17 hosting ruling means on the web, with bars-engine's address as the public face; it does not require every game to live in the bars-engine repo.",
+   "why": "The Between pass rests on your words \"This will ultimately be hosted on the web\" (6FACE_PASS_between-hosting1_2026-10-17.md line 142); bars-engine was chosen because the WAVE and caves already worked there."
+  },
+  {
+   "id": "sh-demo-on-bars",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "sprout-hosting1",
+   "auto": true,
+   "pos": "Chapter 1's public demo is reached at a bars-engine.vercel.app path, whichever host builds it.",
+   "why": "A next.config rewrite to another origin does it without copying files, and keeps the Kickstarter link at the address the other games use."
   }
  ],
  "questions": [
@@ -17272,6 +17314,35 @@
     }
    ],
    "pass": "move-nature1"
+  },
+  {
+   "id": "sh-sprout-host",
+   "faces": [
+    "regent",
+    "architect",
+    "shaman"
+   ],
+   "q": "Where should each sprout pull request's play link come from?",
+   "why_you": "You said you are not quite ready for sprout to be another Vercel project. It is your account, and the record holds no reason for the hesitation, so the steer box is open for it.",
+   "not_before": "sprout has had no web host since it started (engine-slice callsheet); the gap showed only when the Fixer spar needed a link.",
+   "options": [
+    {
+     "v": "vercel",
+     "label": "A. sprout gets its own Vercel project (recommended)",
+     "c": "Vercel builds every sprout pull request and comments its link on it, with previews left open like bars-engine's. Nothing is built by hand, and bars-engine.vercel.app/chapter1 can point at it. Deleting the project undoes it."
+    },
+    {
+     "v": "blob",
+     "label": "B. bars-engine serves sprout builds",
+     "c": "A sprout workflow uploads each build to Blob and a bars-engine route serves it. One project, but five parts we build and keep running, and a thread posts each link."
+    },
+    {
+     "v": "local",
+     "label": "C. Keep previews on your Mac for now",
+     "c": "Nothing changes; each sprout pull request needs npm run slice:serve on your Mac, which breaks the one-link rule."
+    }
+   ],
+   "pass": "sprout-hosting1"
   }
  ],
  "causes": [
@@ -28968,6 +29039,124 @@
      "diplomat"
     ],
     "pass": "move-nature1"
+   },
+   "ttv-one-ui": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:28:46.718Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "tap the vein on the board"
+   },
+   "tb-sealed-is-bar": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:28:55.847Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-face-unpacks": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:04.381Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-context-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:11.946Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-face-off": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:21.246Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-call-is-advice": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:27.647Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-loss-not-avoidance": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:34.580Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-lists-are-bars": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:37.163Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-slate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:43.797Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "ttv-bars 1"
+   },
+   "tb-pick-carries-read": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:29:48.947Z",
+    "record": "council/ledger/2026-10-20-pull-002948.json (six-faces-council)",
+    "faces": [
+     "sage"
+    ],
+    "pass": "ttv-bars 1"
    }
   },
   "questions": {
