@@ -294,6 +294,21 @@ body.has-send{padding-bottom:120px}
 /* Tap the Vein on the board is bars-engine's own page in a frame (ttv-one-ui, Wendell 2026-10-19: "They differ enough
    as to confuse me an annoy me"), so the two can never differ again. */
 .ttv-frame{display:block;width:100%;height:min(86vh,900px);border:0;border-radius:8px;background:#0b0b10;margin-top:8px}
+/* The council's read of each sealed line (council/bar_read.py, pass ttv-bars 1): one face-off card per line. */
+.fo{padding:12px 0;border-top:1px solid var(--line)}
+.fo:first-of-type{border-top:0}
+.fo-line{margin:0 0 6px;padding-left:10px;border-left:3px solid var(--accent);max-width:72ch;overflow-wrap:anywhere}
+.fo-kernel{margin:0 0 8px;max-width:72ch}
+.fo-ctx{margin:0 0 8px;padding-left:1.1em;font-size:.9rem;max-width:72ch}
+.fo-ctx .still{color:var(--warn)}
+.fo-ctx small{color:var(--muted)}
+.fo-vs{font-size:.9rem;margin:0 0 8px;max-width:72ch}
+.fo-f{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin:0 0 8px}
+.fo-f div{border:1px solid var(--line);border-radius:4px;padding:6px 8px;font-size:.85rem}
+.fo-f div.won{border-color:var(--accent);background:var(--accent-soft)}
+.fo-f b{display:block;font-size:.75rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.fo-call{margin:0;font-size:.95rem;max-width:72ch}
+.fo-call b{color:var(--accent)}
 .mo-more{font:inherit;font-size:.85rem;margin:8px 0 12px;padding:5px 12px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);cursor:pointer}
 
 /* Blocker panel (Wendell, 2026-10-12: an overdue step "needs to actually run a player through the blockage and save the
@@ -385,6 +400,10 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
     <p class="lede">If the council could not fetch your menu, paste it here. Your kept lines show as soon as you save. Only the sealed menu is read; your free write never leaves Tap the Vein.</p>
     <textarea id="mo-paste-text" rows="4" placeholder="Paste the copied menu here"></textarea>
     <div class="ctl"><button class="save" id="mo-paste-save" type="button">Save the menu</button><div class="state" id="mo-paste-state"></div></div>
+  </details>
+  <details class="mo-cat" id="mo-faceoff" open hidden><summary><b>The council's read</b><span id="mo-fo-sum"></span></summary>
+    <p class="lede">One face reads each line you sealed, gathers what the record already holds about it, and sets it beside the council work that wants the same hours. The call is advice. You tap what happens in <a href="https://bars-engine.vercel.app/tap-the-vein" target="_blank" rel="noopener">Tap the Vein</a>.</p>
+    <div id="mo-fo-list"></div>
   </details>
   <div id="mo-empty" class="empty" hidden>No morning gathered yet. Paste your sealed menu above, or a council session gathers it with the open work.</div>
   <div id="mo-cats"></div>
@@ -1640,7 +1659,7 @@ function renderLenses(){
 function renderMorning(){
   const cats = document.getElementById('mo-cats');
   document.getElementById('mo-empty').hidden = !!MO;
-  renderBack(); renderLenses(); renderSeeds();
+  renderBack(); renderLenses(); renderSeeds(); renderFaceoff();
   document.getElementById('mo-paste-sum').textContent = moPaste ? `Saved ${String(moPaste.savedAt).slice(0, 16).replace('T', ' ')} UTC` : 'From Tap the Vein\u2019s Copy the sealed menu button';
   if (!MO){ cats.innerHTML = ''; document.getElementById('n-morning').textContent = 0; return; }
   const ids = new Set(MO.categories.flatMap(c => c.items.map(i => i.id)));
@@ -1669,6 +1688,46 @@ document.getElementById('mo-paste-save').addEventListener('click', async () => {
     document.getElementById('mo-paste-text').value = ''; moOpen.add('menu'); renderMorning(); }
   catch { st.textContent = 'Not saved. Try again.'; }
 });
+/* The council's read (pass ttv-bars 1, council/bar_read.py). Each sealed line is a BAR he kept (tb-sealed-is-bar); one
+   face says what it reaches for (tb-face-unpacks), gathers its context from the record first (tb-context-first), and sets
+   it against the council work for the same hours with four factors shown apart, never summed (tb-face-off). The call is
+   advice (tb-call-is-advice). The first card is a work-today one, so the read opens on its good news (the Diplomat). */
+const FO_CALL = {'work-today': 'Work it today', 'join': "Join it to the council's work", 'defer': 'Rest it in the seed library', 'let-go-offered': 'Let it go, if you want to'};
+const FO_ORDER = ['work-today', 'join', 'defer', 'let-go-offered'];
+const FO_NEEDS = {'next step': 'a first step', 'home': 'a home in work you hold', 'input': 'an input it is waiting on', 'capacity': 'hours today', 'blocker': 'its blocker cleared'};
+const foFace = f => f ? f[0].toUpperCase() + f.slice(1) : 'A face';
+function foCard(it){
+  const r = it.read, F = r.factors || {}, s = F.signal || {}, rd = F.ready || {}, u = F.unlocks || {}, w = F.waiting || {}, o = r.opponent || {};
+  const still = Array.isArray(r.workable) ? r.workable : [];
+  const ctx = (r.gathered || []).map(g => `<li>Needed ${esc(FO_NEEDS[g.piece] || g.piece)}. Found in the record: ${esc(g.found)} <small>${esc(g.source)}</small></li>`)
+    .concat(still.map(m => `<li class="still">Still needs ${esc(FO_NEEDS[m] || m)}.</li>`));
+  const sig = [s.wroteToday ? 'Written today' : `First written ${esc(s.firstDay || 'earlier')}`,
+    s.carryCount ? `carried ${s.carryCount} time${s.carryCount === 1 ? '' : 's'}` : '', s.chargeLevel ? `charge ${esc(s.chargeLevel)}` : ''].filter(Boolean).join(', ');
+  const cell = (k, title, body, note) => `<div${r.decidedBy === k ? ' class="won"' : ''}><b>${title}${r.decidedBy === k ? ', decided it' : ''}</b>${body}${note ? '<br><span class="lede">' + esc(note) + '</span>' : ''}</div>`;
+  return `<div class="fo" data-id="${esc(it.id)}">
+    <p class="fo-line">${esc(it.text)}</p>
+    <p class="fo-kernel"><b>${esc(foFace(r.face))}</b> hears: ${esc(r.kernel)}</p>
+    ${ctx.length ? `<ul class="fo-ctx">${ctx.join('')}</ul>` : '<p class="fo-vs">Nothing was missing. It can be worked as it is.</p>'}
+    <p class="fo-vs">Up against <b>${esc(o.what || '')}</b>${o.title ? ', in ' + esc(String(o.title).replace(/\.+$/, '')) : ''}.</p>
+    <div class="fo-f">
+      ${cell('signal', 'Signal', sig, s.note)}
+      ${cell('ready', 'Ready', still.length ? 'Your line still needs ' + still.map(m => esc(FO_NEEDS[m] || m)).join(' and ') : 'Your line is ready', (rd.notes ? rd.notes + ' note' + (rd.notes === 1 ? '' : 's') + ' of yours on it. ' : '') + (rd.note || ''))}
+      ${cell('unlocks', 'Unlocks', `Your line ${u.line ?? '?'}, the council's ${u.council ?? '?'}`, u.note)}
+      ${cell('waiting', 'Waiting', `The council's work, ${w.days ?? '?'} day${w.days === 1 ? '' : 's'}`, w.note)}
+    </div>
+    <p class="fo-call"><b>${esc(FO_CALL[r.call] || r.call)}.</b> ${esc(r.why)}</p>
+  </div>`;
+}
+function renderFaceoff(){
+  const box = document.getElementById('mo-faceoff'), I = DATA.intake;
+  const items = ((I && I.items) || []).filter(it => it.read);
+  box.hidden = !items.length;
+  if (box.hidden) return;
+  items.sort((a, b) => FO_ORDER.indexOf(a.read.call) - FO_ORDER.indexOf(b.read.call));
+  const today = items.filter(it => it.read.call === 'work-today').length;
+  document.getElementById('mo-fo-sum').textContent = `${I.date}: ${items.length} line${items.length === 1 ? '' : 's'}, ${today} to work today`;
+  document.getElementById('mo-fo-list').innerHTML = items.map(foCard).join('');
+}
 /* Tap the Vein in the Morning tab (ttv-one-ui). Where bars-engine serves this board (/board/council) the box frames
    bars-engine's own page, /tap-the-vein/embed, the same runner with no site chrome; it seals into bars-engine, and the
    menu reaches the board the way any sealed menu does (morning.py's fetch, or the paste below). The page posts
