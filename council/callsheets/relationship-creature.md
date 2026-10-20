@@ -226,3 +226,5 @@ Open, in order:
 ## Files
 - Pass, ledger and rows above. Source: Multiamory episode 103 page, https://www.multiamory.com/podcast/103.
 - 2026-10-19 board: putting a charge into the shared lantern makes its element public (his steer on `cc-element-hidden`, which stands for the pouch).
+- 2026-10-20 (Wendell, build thread, bars-engine #380): he could not open the Between from a link. Fix in #380: `/games` page (sign in, open The Between, Admin at the bottom) and eslint ignores `public/game`, `public/understood-app`, `public/ontology-game` (gitignored `npm run build` outputs that failed the pre-commit lint). Lanterns reach production only when #380 merges.
+- Done, admin refresh (his ask, 2026-10-20): bars-engine #406 merged; `/admin` opens on what he uses most and `/admin/games` is the development dashboard for the games on bars-engine.
