@@ -1910,7 +1910,7 @@ render();
   db = window.claude && window.claude.use ? await window.claude.use('db') : null;
   if (!db){ document.getElementById('banner').classList.add('on'); return; }
   window.claude.use('mcp').then(m => { mcp = m; renderSend(); ttvGate(); }, () => {});
-  renderMorning(); ttvRender();
+  renderMorning();
   db.doc('morning/menu').onSnapshot(d => { moPaste = d.exists ? d.data() : null; moApplyPaste(); renderMorning(); ttvGate(); }, () => {});
   db.collection('ttv').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ttvDays = next; ttvGate(); }, () => { ttvDays = {}; ttvGate(); });
   db.collection('seeds').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); sdLive = next; renderMorning(); }, () => {});
