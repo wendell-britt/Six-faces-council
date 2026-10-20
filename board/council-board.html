@@ -381,6 +381,7 @@ body.has-send{padding-bottom:120px}
 body.ttv-held .ttv-gate{display:block}
 body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
 .ttv-gate .ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.empty.store-fault{color:#b3261e;border:1px solid #b3261e;border-radius:6px;padding:10px 12px}
 </style>
 
 <h1>Council Board</h1>
@@ -1150,6 +1151,12 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeB
 
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
+/* The Council Board always has step lists and contacts, so an empty or failed snapshot of either is a broken store,
+   never an empty day. On 2026-10-20 bars-engine's copy had neither and the tab said "Nothing waiting on you"
+   (council/postmortems/2026-10-20-steps-outreach-blank.md). The Nonprofit Board's build turns this off. */
+const STORE_MUST_HOLD = true;
+let stStore = 'waiting', ocStore = 'waiting';  // waiting | ok | empty | failed
+const storeFault = (what, state) => `This board's store came back ${state === 'failed' ? 'with an error' : 'with no ' + what}, so this tab cannot show yours. Nothing is lost: the claude.ai board, https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, reads its own store.`;
 const stDrafts = {}, stSecrets = {}, stFileDrafts = {};
 // Which device Wendell is on. Starts from the screen (a touch screen counts as a phone) and keeps his choice on this device.
 let stWhere = (() => { try { const v = localStorage.getItem('st-where'); if (v === 'phone' || v === 'computer') return v; } catch {} return matchMedia('(pointer: coarse)').matches ? 'phone' : 'computer'; })();
@@ -1280,7 +1287,11 @@ function renderSteps(){
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id], inHand)).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
   document.getElementById('steps-chase').innerHTML = inHand.has('chases') ? '' : chList(chases);
-  document.getElementById('steps-empty').hidden = hand.length > 0 || todo.length > 0 || chases.length > 0;
+  const stEmpty = document.getElementById('steps-empty'), stFault = STORE_MUST_HOLD && (stStore === 'empty' || stStore === 'failed');
+  stEmpty.hidden = !stFault && (hand.length > 0 || todo.length > 0 || chases.length > 0);
+  stEmpty.classList.toggle('store-fault', stFault);
+  stEmpty.textContent = stFault ? storeFault('step lists', stStore)
+    : 'Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.';
   document.getElementById('n-steps').textContent = hand.length;
   const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
   const away = open.filter(([,s]) => hdAway(s)).length, waiting = open.filter(([sid]) => !inHand.has(sid)).length - away;
@@ -1599,8 +1610,11 @@ function renderOutreach(){
   const shown = all.filter(([, c]) => ocFilter === 'All' || (ocFilter === 'Unsorted' ? !c.show : c.show === ocFilter))
     .sort((a, b) => (ocNeeds(b[1]) - ocNeeds(a[1])) || String(a[1].name || '').localeCompare(String(b[1].name || '')));
   document.getElementById('oc-tally').textContent = all.length ? `${shown.length} ${shown.length === 1 ? 'contact' : 'contacts'}, ${shown.filter(([, c]) => ocNeeds(c)).length} to chase` : '';
-  document.getElementById('oc-empty').hidden = shown.length > 0;
-  document.getElementById('oc-empty').textContent = ocFilter === 'All' ? 'No one on the list yet.' : `Nobody on ${ocFilter} yet.`;
+  const ocFault = STORE_MUST_HOLD && (ocStore === 'empty' || ocStore === 'failed');
+  document.getElementById('oc-empty').hidden = !ocFault && shown.length > 0;
+  document.getElementById('oc-empty').classList.toggle('store-fault', ocFault);
+  document.getElementById('oc-empty').textContent = ocFault ? storeFault('contacts', ocStore)
+    : ocFilter === 'All' ? 'No one on the list yet.' : `Nobody on ${ocFilter} yet.`;
   document.getElementById('oc-rows').innerHTML = shown.map(([id, c]) => {
     const need = ocNeeds(c), tone = need ? 'flag' : OC_GO.has(c.status) ? 'go' : '';
     return `<div class="oc-row ${tone}"><div class="oc-head">
@@ -2102,8 +2116,8 @@ render();
     }, () => {});
   }
   db.doc('steer/general').onSnapshot(d => { liveSteer = d.exists ? d.data() : null; render(); }, () => {});
-  db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; renderSteps(); }, () => {});
-  db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; renderOutreach(); renderSteps(); }, () => {});
+  db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; stStore = snap.docs.length ? 'ok' : 'empty'; renderSteps(); }, () => { stStore = 'failed'; renderSteps(); });
+  db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; ocStore = snap.docs.length ? 'ok' : 'empty'; renderOutreach(); renderSteps(); }, () => { ocStore = 'failed'; renderOutreach(); });
   db.collection('shows').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocShows = next; renderOutreach(); }, () => {});
   db.collection('blockers').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); bkRecs = next; if (!bk) renderSteps(); else renderSend(); }, () => {});
   db.collection('steps').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stSteps = next; renderSteps(); }, () => {});
