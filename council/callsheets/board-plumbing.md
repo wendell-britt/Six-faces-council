@@ -98,3 +98,24 @@ Found, not yet fixed. Wendell, 18:53: "council board on bars-engine isn't showin
   instead of "Nothing waiting on you", and a test should cover it. Also run `check.mjs`-style browser loads against
   the bars-engine shim, not just the claude.ai runtime.
 - Until then he uses the claude.ai board, https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, which has everything.
+
+## Brief, 2026-10-20 19:40 UTC: the import, waiting on `bi-import-key` (thread "Move board data into bars-engine")
+
+Done: council #321 (empty `lists` or `contacts` store shows a red fault on the Council Board, Chromium check
+`board/checks/store_fault.mjs`, `tests/test_store_fault.py`); bars-engine #405 (`POST|GET /api/board/import`, off
+unless `BOARD_IMPORT_TOKEN` is set, token in `x-board-import-token` because the proxy sets Authorization for
+bars-engine). The board was republished (v489) with question `bi-import-key`. Setting the Vercel variable from a
+session was refused by the auto-mode safety check (secret-store write) without his yes; that is why it is a question.
+
+On his answer (fresh Sonnet thread, owns bars-engine #405 if still open):
+- **A (key):** cite his board answer, make a random token, `create_project_env` on bars-engine
+  (prj_xpwbBGjkXC2yogeFI7CAN8wvvEPF, team_5QFxOKe90znbkUyUT8wKvTNa), production, type sensitive; redeploy production
+  so it takes effect (#405 must be merged first). Export `lists`, `steps`, `contacts`, `shows` fresh with ArtifactData
+  `list` + `out_dir` into the scratchpad (never a repo: contacts hold outreach notes). POST in batches of 50 with
+  `dry: true` first, then for real; GET `?board=council` and compare counts with the export (10-20: 43, 163, 115, 5).
+  Then delete the variable and redeploy, and check the route answers 503. Give him
+  https://bars-engine.vercel.app/board/council to confirm.
+- **B (upload):** add owner-cookie auth to the same route and a file box on /board/council; leave the export as one
+  JSON file in /mnt/project-files/board-import/ and attach it.
+- Still open after either: board-home step 5, pointing sessions' step and contact writes at bars-engine, or the two
+  stores split again.
