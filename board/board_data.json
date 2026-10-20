@@ -29649,6 +29649,115 @@
      "shaman"
     ],
     "pass": "steps-hand 2"
+   },
+   "sc-ruling-mortal": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:03:16.712Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:03:26.061Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-rest": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:03:32.615Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-shadow-legible": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:03:55.013Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "steer": "It’s not framed as the players fault. But it is their responsibility",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-cleanup-care": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:04:06.186Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-spirit-bars": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:04:53.620Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "steer": "I think and offered quest can be deferred and we can even have a feature to rewrite or customize but it should be an additional cost to fully get rid of a proffered quest",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-between-decline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:05:03.741Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-word": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:05:09.724Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-strand": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:05:19.261Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "spirit care 1"
    }
   },
   "questions": {
@@ -32320,6 +32429,43 @@
      "diplomat"
     ],
     "pass": "board-import1"
+   },
+   "sc-undying": {
+    "decision": "A",
+    "label": "No, every spirit can die",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:02:43.789Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-after-death": {
+    "decision": "A",
+    "label": "A seed you can plant",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:02:51.345Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-shadow-what": {
+    "decision": "A",
+    "label": "Each daemon's own shadow",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:03:09.400Z",
+    "record": "council/ledger/2026-10-20-pull-220519.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit care 1"
    }
   },
   "causes": {

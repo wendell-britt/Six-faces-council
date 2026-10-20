@@ -1,0 +1,90 @@
+{
+ "date": "2026-10-20",
+ "kind": "board-pull",
+ "newest_save": "2026-10-20T22:05:19.261Z",
+ "answers": {
+  "sc-undying": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-20T22:02:43.789Z",
+   "steer": ""
+  },
+  "sc-after-death": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-20T22:02:51.345Z",
+   "steer": ""
+  },
+  "sc-shadow-what": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-20T22:03:09.400Z",
+   "steer": ""
+  },
+  "sc-ruling-mortal": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:03:16.712Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sc-ladder": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:03:26.061Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sc-rest": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:03:32.615Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sc-shadow-legible": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:03:55.013Z",
+   "status": "stands",
+   "steer": "It’s not framed as the players fault. But it is their responsibility "
+  },
+  "sc-cleanup-care": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:04:06.186Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sc-spirit-bars": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:04:53.620Z",
+   "status": "stands",
+   "steer": "I think and offered quest can be deferred and we can even have a feature to rewrite or customize but it should be an additional cost to fully get rid of a proffered quest "
+  },
+  "sc-between-decline": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:05:03.741Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sc-word": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:05:09.724Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "sc-strand": {
+   "kind": "position",
+   "savedAt": "2026-10-20T22:05:19.261Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/sc-undying: No, every spirit can die",
+  "questions/sc-after-death: A seed you can plant",
+  "questions/sc-shadow-what: Each daemon's own shadow",
+  "positions/sc-shadow-legible: Stands (steer: \"It’s not framed as the players fault. But it is their responsibility\")",
+  "positions/sc-spirit-bars: Stands (steer: \"I think and offered quest can be deferred and we can even have a feature to rewrite or customize but it should be an additional cost to fully get rid of a proffered quest\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
