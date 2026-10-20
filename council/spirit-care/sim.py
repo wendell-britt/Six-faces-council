@@ -12,14 +12,19 @@ tracks (satisfaction, vitality, shadow), the shadow sources (`sc-shadow-legible`
 and the quest templates (`sc-spirit-bars`). The numbers are the council's first guess, to be tuned here and shown to
 Wendell before they ship (`sc-ladder`: "The stage lengths are tuned by a simulation and shown to you").
 
-His three questions are not answered yet, so every option of `sc-undying` and `sc-after-death` runs.
+His answers (council/ledger/2026-10-20-pull-220519.json): sc-undying A, every spirit can die; sc-after-death A, it
+leaves a seed you can plant; sc-shadow-what A, each daemon's own shadow. The answered pair runs by default; `--all`
+still runs the other options. Two steers from the same pull are folded in: the shadow line's copy rule
+(sc-shadow-legible, "It's not framed as the players fault. But it is their responsibility") and the quest-offer rules
+(sc-spirit-bars: defer, rewrite, and an extra cost to get rid of an offered quest for good).
 
 scout: rung 2 (we have it). The quest offer mirrors bars-engine src/lib/charge-quest-generator/generator.ts: a
 need picks a move order the way EMOTION_MOVE_BIAS does, and the first template of the first move fills in. The port
 to bars-engine calls generateQuestSuggestions instead of TEMPLATES below.
 
 Usage:
-  python3 council/spirit-care/sim.py                     every option pair, one line per player, then the checks
+  python3 council/spirit-care/sim.py                     his answered pair, one line per player, then the checks
+  python3 council/spirit-care/sim.py --all               every option pair
   python3 council/spirit-care/sim.py --show A A          the return screens for one option pair
   python3 council/spirit-care/sim.py --days              the day-by-day stages for one pair (with --show)
 Exit 1 when a check fails.
@@ -68,11 +73,12 @@ CLEANUP_LIFT = 10                 # Clean Up also counts as care; it clears more
 UNSETTLED_AT = 3                  # sc-word: low satisfaction is "unsettled", never "corrupted"
 MOOD_DROP_EVERY = 3               # satisfaction falls one point per this many untended days
 
-# sc-shadow-legible: shadow always shows where it came from, and only lands on an untended day.
+# sc-shadow-what A: every shadow is the spirit's own daemon's urge pushed too far. The source is what fed it
+# (sc-shadow-legible: shadow always shows where it came from, and only lands on an untended day).
 SHADOW_SOURCES = {
-    "unworked charge": {"per_day": 4, "says": "an unworked charge has been sitting on it"},
-    "daemon pushed too far": {"per_day": 5, "says": "its own daemon's pattern has been pushed too far"},
-    "broken agreement": {"per_day": 6, "says": "an agreement between you went unkept"},
+    "unworked charge": {"per_day": 4, "fed_by": "fed by an unworked charge"},
+    "pattern left running": {"per_day": 5, "fed_by": "fed by the pattern itself"},
+    "broken agreement": {"per_day": 6, "fed_by": "fed by an agreement that went unkept"},
 }
 
 DAEMON_SHADOW = {
@@ -81,6 +87,24 @@ DAEMON_SHADOW = {
     "Fixer": "rush to fix",
     "Skeptic": "doubt",
 }
+
+# sc-shadow-copy, from his sc-shadow-legible steer: not the player's fault, but the player's to answer. The shadow
+# sentence has the shadow as its subject and never the player; the next sentence hands the player the response, as
+# someone able to give it, and the quest that gives it.
+SHADOW_LINE = "Shadow from the {daemon}'s {pattern} lies over {name}, {fed_by}."
+RESPONSE_LINE = "Tending it is yours to do, and {name} has a way to start."
+
+# sc-spirit-bars, with his steer: an offered quest is held by the spirit, one at a time, until it is done, rewritten
+# or let go. "Not now" and "Rewrite" are free and can be used any number of times; "Let it go" costs one vibeulon,
+# the price of a hand discard (council/callsheets/steps-hand.md, his words: "pay a vibeulon to discard the card"),
+# minted by a finished 3-2-1 or W.A.V.E. Without a vibeulon, "Not now" is still there and nothing gets worse.
+OFFER_CHOICES = {
+    "yes": {"cost": 0, "keeps": False},
+    "not now": {"cost": 0, "keeps": True},      # comes back on the next visit
+    "rewrite": {"cost": 0, "keeps": True},      # the player's words; must still cite a goal or agreement
+    "let it go": {"cost": 1, "keeps": False},   # one vibeulon; the spirit offers a fresh quest on the next visit
+}
+BUTTONS = "Yes, not now, or rewrite it. Letting it go for good costs a vibeulon."
 
 # sc-spirit-bars: a need picks the move order, as EMOTION_MOVE_BIAS does in generator.ts.
 NEED_MOVE_BIAS = {
@@ -106,10 +130,10 @@ AFTER_DEATH = {"A": "a seed to plant", "B": "a stone to remember", "C": "called 
 
 # Words a return screen never uses: no nag, no count, no blame (sc-cleanup-care, sc-shadow-legible, sc-rest).
 NEVER_SAY = ["streak", "missed you", "you forgot", "your fault", "neglect", "in a row", "you left", "abandon",
-             "while you were away", "failed"]
+             "while you were away", "failed", "you let", "you didn't", "because you", "should have"]
 
 DAYS = 28
-RECOMMENDED = ("A", "A")          # the council's recommendation on both questions; every check must pass here
+RECOMMENDED = ("A", "A")          # his answers on both questions (2026-10-20); every check must pass here
 STAKE_CHECKS = {"at least one spirit can die"}   # under the other options a miss is a finding, not a failure
 
 
@@ -135,6 +159,11 @@ def vanished(day):
     return {"care": True, "cleanup": day == 3}
 
 
+def deferrer(day):
+    """Tends every other day and answers every offered quest "not now"."""
+    return {"care": day % 2 == 0, "cleanup": day % 6 == 0, "answer": "not now"}
+
+
 @dataclass
 class Spirit:
     name: str
@@ -151,6 +180,7 @@ class Spirit:
     days_in_stage: int = 0
     asked: list = field(default_factory=list)      # stages at which it offered a quest in its own voice
     told: list = field(default_factory=list)       # who was told it reached fading
+    held: dict = None                              # the one quest it holds until done, rewritten or let go
     history: list = field(default_factory=list)
     seen_while_away: set = field(default_factory=set)
 
@@ -160,12 +190,14 @@ PLAYERS = [
     {"who": "daily", "life": daily, "return_day": DAYS,
      "spirits": [("Wren", "wood", "Fixer", "unworked charge")]},
     {"who": "busy", "life": busy, "return_day": DAYS,
-     "spirits": [("Ember", "fire", "Controller", "daemon pushed too far")]},
+     "spirits": [("Ember", "fire", "Controller", "pattern left running")]},
     {"who": "rest", "life": rest, "return_day": 17,
-     "spirits": [("Tide", "water", "Protector", "daemon pushed too far")]},
+     "spirits": [("Tide", "water", "Protector", "pattern left running")]},
     {"who": "vanished", "life": vanished, "return_day": DAYS,
-     "spirits": [("Moss", "earth", "Protector", "daemon pushed too far"),
+     "spirits": [("Moss", "earth", "Protector", "pattern left running"),
                  ("Pip", "metal", "Skeptic", "unworked charge")]},
+    {"who": "deferrer", "life": deferrer, "return_day": DAYS,
+     "spirits": [("Reed", "water", "Skeptic", "unworked charge")]},
 ]
 # sc-between-decline: a shared spirit tended by either person. The busy player and the vanished player share it.
 # A second shared spirit whose pair both go quiet, so the both-told rule and option C of sc-undying get exercised.
@@ -220,6 +252,7 @@ def step(spirit, acts, undying_option, people):
         spirit.stage, spirit.days_in_stage = STAGES[new], 0
         if spirit.stage in ("stale", "fading") and spirit.stage not in spirit.asked:
             spirit.asked.append(spirit.stage)       # it asks once, in its own voice, by offering a quest
+            offer(spirit)
         if spirit.stage == "fading":
             spirit.told = list(people)              # sc-between-decline: both are told before it can die
     else:
@@ -229,13 +262,37 @@ def step(spirit, acts, undying_option, people):
 
 # ---------------------------------------------------------------- the quest it offers
 
+def need_of(spirit):
+    return "shadow" if spirit.shadow >= 30 else "vitality" if spirit.vitality <= 60 else "none"
+
+
 def offer(spirit):
-    need = "shadow" if spirit.shadow >= 30 else "vitality" if spirit.vitality <= 60 else "none"
+    """The quest it holds, or a fresh one. An unrewritten held quest follows the spirit's need when the need changes;
+    a quest the player rewrote is theirs and the spirit never swaps it."""
+    need = need_of(spirit)
+    if spirit.held and (spirit.held["rewritten"] or spirit.held["need"] == need):
+        return spirit.held
     move = NEED_MOVE_BIAS[need][0]
     cites = SAMPLE_AGREEMENT if spirit.shared else SAMPLE_GOAL
     text = TEMPLATES[move].format(daemon=spirit.daemon, pattern=DAEMON_SHADOW[spirit.daemon], name=spirit.name,
                                   element=spirit.element, goal=cites)
-    return {"move": move, "text": text, "cites": cites}
+    spirit.held = {"move": move, "text": text, "cites": cites, "need": need, "rewritten": False}
+    return spirit.held
+
+
+def answer(spirit, choice, wallet, text=None):
+    """The player's answer to the held quest. Returns (accepted, vibeulons left); a refused answer changes nothing."""
+    rule = OFFER_CHOICES[choice]
+    q = spirit.held or offer(spirit)
+    if wallet < rule["cost"]:
+        return False, wallet
+    if choice == "rewrite":
+        if not text or q["cites"].split(" (")[0] not in text:
+            return False, wallet                    # a rewrite keeps what the quest serves
+        spirit.held = dict(q, text=text, rewritten=True)
+    elif not rule["keeps"]:
+        spirit.held = None
+    return True, wallet - rule["cost"]
 
 
 # ---------------------------------------------------------------- what they find when they come back
@@ -263,13 +320,14 @@ def return_screen(spirit, after_option):
     if spirit.stage == "thriving":
         lines.append(("report", f"{spirit.name} is {body}."))
     else:
-        report = f"{spirit.name} is {spirit.stage}: {body}."
+        lines.append(("report", f"{spirit.name} is {spirit.stage}: {body}."))
         if spirit.shadow >= 30:
-            report += f" The shadow is there because {SHADOW_SOURCES[spirit.source]['says']}."
-        lines.append(("report", report))
+            lines.append(("shadow", SHADOW_LINE.format(daemon=spirit.daemon, pattern=DAEMON_SHADOW[spirit.daemon],
+                                                       name=spirit.name, fed_by=SHADOW_SOURCES[spirit.source]["fed_by"])))
+            lines.append(("response", RESPONSE_LINE.format(name=spirit.name)))
     if spirit.satisfaction <= UNSETTLED_AT:
         lines.append(("report", f"It is unsettled, and will settle with company."))
-    lines.append(("offer", f"{spirit.name} offers a quest for {q['cites']}: {q['text']} Say yes, or not now."))
+    lines.append(("offer", f"{spirit.name} offers a quest for {q['cites']}: {q['text']} {BUTTONS}"))
     return lines
 
 
@@ -286,9 +344,16 @@ def run(undying_option, after_option):
         for i, spec in enumerate(p["spirits"]):
             # Under B the player chooses at bonding; this run has the vanished player bond Pip as undying.
             s = build(spec, undying=(undying_option == "B" and spec[0] == "Pip"))
+            wallet = 0
             for day in range(p["return_day"]):
-                step(s, p["life"](day), undying_option, [p["who"]])
-            results.append({"who": p["who"], "spirit": s, "screen": return_screen(s, after_option)})
+                acts = p["life"](day)
+                step(s, acts, undying_option, [p["who"]])
+                wallet += bool(acts.get("cleanup"))     # a finished 3-2-1 or W.A.V.E. mints a vibeulon (hd-mint)
+                if acts.get("care") and acts.get("answer"):
+                    offer(s)                            # a visit is when it offers
+                    answer(s, acts["answer"], wallet)
+            results.append({"who": p["who"], "spirit": s, "wallet": wallet,
+                            "screen": return_screen(s, after_option)})
     for pr in PAIRS:
         s = build(pr["spirit"], shared=True)
         for day in range(DAYS):
@@ -340,7 +405,40 @@ def checks(results, undying_option):
     out.append(("both of a pair are told at fading", bool(pairs) and all(r["spirit"].told == r["people"] for r in pairs)))
     out.append(("every offered quest cites a goal or agreement",
                 all(any(k == "offer" for k, _ in r["screen"]) for r in results)))
+    shadow_ok = True
+    for r in results:
+        sc = r["screen"]
+        for i, (k, t) in enumerate(sc):
+            if k == "shadow":
+                shadow_ok &= "you" not in t.lower().split() and any(v["fed_by"] in t for v in SHADOW_SOURCES.values())
+                shadow_ok &= i + 1 < len(sc) and sc[i + 1][0] == "response" and "yours" in sc[i + 1][1]
+    out.append(("the shadow line names what fed it, never the player, and hands the response over", shadow_ok))
+    d = next(r for r in results if r["who"] == "deferrer")
+    twin = build(next(p for p in PLAYERS if p["who"] == "deferrer")["spirits"][0])
+    for day in range(DAYS):
+        step(twin, {k: v for k, v in deferrer(day).items() if k != "answer"}, undying_option, ["deferrer"])
+    out.append(("saying not now never speeds a spirit's decline", d["spirit"].history == twin.history))
+    out.append(("a deferred quest stays with its spirit", d["spirit"].held is not None))
+    out.append(("the quest-offer rules hold", offer_rules_hold()))
     return out
+
+
+def offer_rules_hold():
+    """Let it go needs a vibeulon and not now is free; a rewrite keeps its citation and is never swapped."""
+    s = build(("Test", "wood", "Fixer", "unworked charge"))
+    offer(s)
+    ok, left = answer(s, "let it go", 0)
+    good = not ok and left == 0 and s.held is not None
+    ok, left = answer(s, "not now", 0)
+    good &= ok and left == 0 and s.held is not None
+    good &= not answer(s, "rewrite", 0, "Walk round the block.")[0]
+    mine = "Walk round the block, for a calmer morning."
+    good &= answer(s, "rewrite", 0, mine)[0] and s.held["text"] == mine
+    s.shadow = 60                                   # the need changes; the player's own words stay
+    good &= offer(s)["text"] == mine
+    ok, left = answer(s, "let it go", 2)
+    good &= ok and left == 1 and s.held is None
+    return good
 
 
 # ---------------------------------------------------------------- printing
@@ -356,8 +454,9 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--show", nargs=2, metavar=("UNDYING", "AFTER"), help="return screens for one option pair")
     ap.add_argument("--days", action="store_true", help="with --show: the stage on each day")
+    ap.add_argument("--all", action="store_true", help="every option pair, not only his answers")
     a = ap.parse_args(argv)
-    pairs = [tuple(a.show)] if a.show else [(u, d) for u in UNDYING for d in AFTER_DEATH]
+    pairs = [tuple(a.show)] if a.show else [(u, d) for u in UNDYING for d in AFTER_DEATH] if a.all else [RECOMMENDED]
     failed = 0
     for u, d in pairs:
         results = run(u, d)
