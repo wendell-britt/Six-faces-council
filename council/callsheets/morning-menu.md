@@ -4,6 +4,16 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-20, thread "Morning lists, first real read": #314 merged. The 10-20 morning is gathered on main (no sealed
+lines: the menu key still answers 401) and the faces read today's slate of 16 list items: work-today 3 (send Annastasia
+the draft, #311, #308), join 2, defer 7, let-go-offered 4. Positions tb-lists-are-bars, tb-slate, tb-pick-carries-read
+stand on the board (v486). Found and fixed on this thread's pull request: board/sync_board.py merged a stale live page's
+morning entry by entry, which is where main's duplicated 10-14 categories came from (now the later gather wins whole,
+tests/test_sync_board_morning.py), and morning.py's backlog links lost the dot in `.specify` and 404'd. NEXT: none
+for this strand until the menu key works; then the Sonnet board read in the 10-19 entry below reads sealed lines too.
+Checked in headless Chromium on main's build: the Morning tab shows seven categories and 16 read cards, each with a Pick button,
+no page errors. Not checked: a pick saved from /board/council (it loads behind his sign-in only).
+
 2026-10-20, thread "Morning lists into the faces' flow" (branch claude/morning-lists-flow-ark0q6, draft PR on
 Six-faces-council): the orphaned Morning tab lists (waiting on you, steps, due, handoff, open PRs, bars-engine backlog)
 are now BARs (tb-lists-are-bars). `python3 council/bar_read.py --slate` names up to 3 items per list each morning
