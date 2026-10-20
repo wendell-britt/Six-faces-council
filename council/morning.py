@@ -360,7 +360,8 @@ def from_backlog(bars):
         code = cells[1].strip("* ")
         m = re.match(r"\[([^\]]+)\]\(([^)]+)\)\s*(?:—\s*)?(.*)", cells[2])
         name, link, rest = (m.group(1), m.group(2), m.group(3)) if m else (re.sub(r"\*\*", "", cells[2]), "", "")
-        url = f"https://github.com/johnair01/bars-engine/blob/main/{link.lstrip('./')}" if link.startswith(".") else ""
+        # Links in BACKLOG.md are relative to the bars-engine root (".specify/specs/..."); lstrip('./') used to eat the dot.
+        url = f"https://github.com/johnair01/bars-engine/blob/main/{link.removeprefix('./')}" if link.startswith(".") else ""
         items.append({"id": f"backlog-{code.lower()}", "text": short(f"{name}: {re.sub(r'[*`]', '', rest)}", 240),
                       "link": url, "note": f"{cells[0].strip('* ')} {code}"})
     return items, None
@@ -390,10 +391,15 @@ def gather(menu, prs_file=None, bars=None, data=None, steps=None, goals_export=N
     intake = data.get("intake") or {}
     written = ({it["id"]: it["bridge"] for it in intake.get("items", [])}
                if menu and intake.get("date") == menu.get("sessionDate") else {})
+    # tb-lists-are-bars: a list item keeps the faces' last read across gathers, so a read is not lost to the next morning
+    reads = {it["id"]: it["read"] for c in (data.get("morning") or {}).get("categories") or [] if c.get("key") != "menu"
+             for it in c.get("items", []) if it.get("read")}
     cats = []
     for key, (title, blurb) in CATEGORIES.items():
         items = raw[key]
         for it in items:
+            if key != "menu" and it["id"] in reads:
+                it["read"] = reads[it["id"]]
             it["bridge"] = bridge(it["text"], goals, it.pop("named", None))
             if key == "menu" and it["id"] in written:  # the board read's written reason wins (lens-intake-align)
                 it["bridge"] = written[it["id"]]

@@ -4,6 +4,59 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-20, thread "Morning lists, first real read": #314 merged. The 10-20 morning is gathered on main (no sealed
+lines: the menu key still answers 401) and the faces read today's slate of 16 list items: work-today 3 (send Annastasia
+the draft, #311, #308), join 2, defer 7, let-go-offered 4. Positions tb-lists-are-bars, tb-slate, tb-pick-carries-read
+stand on the board (v486). Found and fixed on this thread's pull request: board/sync_board.py merged a stale live page's
+morning entry by entry, which is where main's duplicated 10-14 categories came from (now the later gather wins whole,
+tests/test_sync_board_morning.py), and morning.py's backlog links lost the dot in `.specify` and 404'd. NEXT: none
+for this strand until the menu key works; then the Sonnet board read in the 10-19 entry below reads sealed lines too.
+Checked in headless Chromium on main's build: the Morning tab shows seven categories and 16 read cards, each with a Pick button,
+no page errors. Not checked: a pick saved from /board/council (it loads behind his sign-in only).
+
+2026-10-20, thread "Morning lists into the faces' flow" (branch claude/morning-lists-flow-ark0q6, draft PR on
+Six-faces-council): the orphaned Morning tab lists (waiting on you, steps, due, handoff, open PRs, bars-engine backlog)
+are now BARs (tb-lists-are-bars). `python3 council/bar_read.py --slate` names up to 3 items per list each morning
+(tb-slate: never-read first, then deferrals due on the seed library's 3/7/14/30/60/90 ladder, `list_reads` in
+board_data.json); a face fills each read with the same rules as a sealed line (kernel, missing, gathered with sources,
+now also `spec:<bars-engine path>`, factors apart, call) and `bar_read.py --reads reads.json --write` checks and files it.
+A sealed line with no home can now meet a read list item (opponent kind `item`); a list item can meet a sealed line
+(`line`). The Morning tab shows list reads under "The council's read" with a Pick button, and a one-line read in each
+category. A pick carries the read into its thread brief (board/pull.py `read_brief`, tb-pick-carries-read).
+morning.py keeps each item's last read across gathers. Tests: tests/test_list_reads.py (fixtures in
+tests/fixtures/bar-read/). scout: rung 2, we have it (bar_read.py, morning.py, pull.py extended).
+NEXT, fresh thread that owns the PR: (1) drive CI green and let it merge; (2) on main, gather a fresh morning
+(`council/morning.py --prs <file from the GitHub tools> --bars ../bars-engine --write`; main's `morning` is from 10-14
+with duplicated categories, the fresh gather replaces it), run `--slate`, have a worker write the faces' reads, run
+`bar_read.py --reads reads.json --write`, land with board/sync_board.py and republish; (3) put positions tb-lists-are-bars,
+tb-slate, tb-pick-carries-read on the board as standing positions; (4) confirm on /board/council that the cards show
+and a pick saves. Not checked: the page in a browser (the script parses; no screenshot taken).
+
+2026-10-19, thread "work today or defer": the ttv-bars 1 build is done on sample data. `council/bar_read.py` checks one
+read per sealed line against every tb-* rule and writes it beside the line's alignment in `board_data.json` `intake`;
+the Morning tab shows each read as a face-off card under the Tap the Vein box ("The council's read", work-today cards
+first). bars-engine's history export now carries each task's `blockedAt` and `notes` count (johnair01/bars-engine #404);
+the Six-faces-council pull request on branch claude/project-thread-a871l9 holds the script, the card and
+`tests/test_bar_read.py` (sample: `tests/fixtures/bar-read/`, five lines, five checked reads). NEXT, a Sonnet board read
+once the menu key works (morning-menu `menu-key-match`): fetch the menu and history, write reads.json for the real sealed
+lines, run `python3 council/bar_read.py <menu> --reads reads.json --history <history> --write`, commit on main and
+republish. Tests F1 (10-26, he takes at least half the calls) and F2 (10-31, council work wins at most four in five) run
+from there. Not built: a tap on the card itself (the tap stays in Tap the Vein, tb-call-is-advice).
+
+2026-10-19, thread "Tap the Vein on the board": one UI is done. bars-engine #403 (/tap-the-vein/embed) merged; Six-faces-council
+#312 frames it on /board/council and merges after. Position `ttv-one-ui` is on the board. Pass ttv-bars 1
+(`council/passes/6FACE_PASS_ttv-bars1_2026-10-19.md`, ledger `2026-10-19-ttv-bars1.json`) answered his second ask with six
+positions and no question: `tb-sealed-is-bar` (sealing is the keeping; updates `ttv-task-not-bar`), `tb-face-unpacks`,
+`tb-context-first`, `tb-face-off`, `tb-call-is-advice`, `tb-loss-not-avoidance`. NEXT, fresh Opus thread, the build on sample
+data (the menu key is still 401): (1) bars-engine history export adds each task's notes count and `blockedAt`; (2)
+`council/bar_read.py` checks one read per sealed line (line word for word, taskId, barId, face, kernel, home from
+`intake_align.py`, missing from [next step, home, input, capacity, blocker], gathered with sources, workable, opponent from
+the same strand/row/goal else `needs_work.py` else the next callsheet entry, factors signal/ready/unlocks/waiting shown
+apart, call work-today/defer/join/let-go-offered, why) and writes them to `board_data.json` `intake`; (3) the Morning tab
+shows each read as a face-off card under the Tap the Vein frame; (4) a test in `tests/`. Done when a pasted five-line
+sample menu gives five checked reads on the board. Tests F1 (10-26, he takes at least half the calls) and F2 (10-31,
+council work wins at most four in five).
+
 2026-10-16, thread "spaced resurfacing" (branch claude/project-thread-9rf0rk in both repos; bars-engine #345,
 Six-faces-council #197): board read 2031 overruled `sl-no-pressure` ("We need a mechanics to pull in tasks that are
 resting and use spaced repetition to get it back into the board"). Built: a resting seed comes back 3, 7, 14, 30, 60,

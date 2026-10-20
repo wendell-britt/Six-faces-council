@@ -1,0 +1,33 @@
+{
+ "date": "2026-10-19",
+ "kind": "board-pull",
+ "newest_save": "2026-10-19T22:50:39.003Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "podcast-pipeline-01",
+   "at": "2026-10-19T22:48:53.200Z",
+   "what": "ticked",
+   "do": "In the Zoom app on your Mac, set where local recordings are saved to the Movies folder, and turn on HD video."
+  },
+  {
+   "id": "podcast-pipeline-02",
+   "at": "2026-10-19T22:49:46.603Z",
+   "what": "ticked",
+   "do": "Check that Meta Business Suite shows both your Instagram account and a Facebook Page for the show."
+  },
+  {
+   "id": "podcast-pipeline-03",
+   "at": "2026-10-19T22:50:39.003Z",
+   "what": "note",
+   "note": "we need more instructions for that. Can we have claude do this by screensharing and such?",
+   "do": "Schedule all of episode 2's posts in one sitting in Meta Business Suite: the day 0 post and the four clips, from the pack below."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/podcast-pipeline-03: note \"we need more instructions for that. Can we have claude do this by screensharing and such?\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

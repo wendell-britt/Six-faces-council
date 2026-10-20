@@ -1,0 +1,72 @@
+{
+ "date": "2026-10-20",
+ "kind": "board-pull",
+ "newest_save": "2026-10-20T00:29:48.947Z",
+ "answers": {
+  "ttv-one-ui": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:28:46.718Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-sealed-is-bar": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:28:55.847Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-face-unpacks": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:04.381Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-context-first": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:11.946Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-face-off": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:21.246Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-call-is-advice": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:27.647Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-loss-not-avoidance": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:34.580Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-lists-are-bars": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:37.163Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-slate": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:43.797Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tb-pick-carries-read": {
+   "kind": "position",
+   "savedAt": "2026-10-20T00:29:48.947Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

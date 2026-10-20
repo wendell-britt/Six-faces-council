@@ -1,0 +1,47 @@
+{
+ "date": "2026-10-19",
+ "kind": "board-pull",
+ "newest_save": "2026-10-19T22:46:03.555Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "menu-key-match-02",
+   "at": "2026-10-19T22:43:19.839Z",
+   "what": "note",
+   "note": "I don't know how to keep this in the bars-engine part of this. There's no button to edit the entry",
+   "do": "Put the same key in this project's cloud environment, which is what council sessions send to bars-engine."
+  },
+  {
+   "id": "menu-key-match-01",
+   "at": "2026-10-19T22:44:07.826Z",
+   "what": "note",
+   "note": "yeah in order to pull off steps 1-3 I need to be able to save the generated token which I have but its fragile to this process breaking",
+   "do": "Make a new key with the button below and replace the old one in bars-engine. Keep this page open: steps 2 and 3 need the same key."
+  },
+  {
+   "id": "menu-key-match-03",
+   "at": "2026-10-19T22:45:57.891Z",
+   "what": "ticked",
+   "do": "Put the same key in the GitHub secret the board-pull Action uses to recover a sealed menu."
+  },
+  {
+   "id": "menu-key-match-02",
+   "at": "2026-10-19T22:46:01.823Z",
+   "what": "ticked",
+   "do": "Put the same key in this project's cloud environment, which is what council sessions send to bars-engine."
+  },
+  {
+   "id": "menu-key-match-01",
+   "at": "2026-10-19T22:46:03.555Z",
+   "what": "ticked",
+   "do": "Make a new key with the button below and replace the old one in bars-engine. Keep this page open: steps 2 and 3 need the same key."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/menu-key-match-02: note \"I don't know how to keep this in the bars-engine part of this. There's no button to edit the entry\"",
+  "steps/menu-key-match-01: note \"yeah in order to pull off steps 1-3 I need to be able to save the generated token which I have but its fragile to this process breaking\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
