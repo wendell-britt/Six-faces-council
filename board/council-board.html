@@ -1086,7 +1086,15 @@ function openBlocker(id, step){
   $b('bk-screen').classList.add('on'); document.body.style.overflow = 'hidden';
   bkDraw();
 }
-function closeBlocker(){ $b('bk-screen').classList.remove('on'); document.body.style.overflow = ''; bk = null; renderSteps(); }
+/* Wendell, 2026-10-20, after inner work on a card in his hand: "Did the inner work in this and discarded it but it was
+   still in my hand". Inner work only mints the vibeulon; the discard is its own step. So a run on a held card ends with
+   a Discard button that pays at once, and closing the run puts the card back in his fingers with Discard armed. */
+function closeBlocker(){
+  const id = bk && bk.id, held = id && hdHeld(stSteps[id]);
+  $b('bk-screen').classList.remove('on'); document.body.style.overflow = ''; bk = null;
+  if (held && hdWallet().length){ hdLifted = id; hdArmed = id; }
+  renderSteps();
+}
 async function bkSave(){
   const r = bk.rec; r.stage = bk.stage; r.savedAt = new Date().toISOString();
   if (!db){ bk.note = 'This view cannot save, so this run stays on screen only.'; return true; }
@@ -1131,7 +1139,7 @@ function bkDraw(){
     h = `<p class="bt-say">${e.kind === 'stuck' ? 'It is still in the way, and now it has a name.' : 'Worked through.'} <b>${esc(l)}</b>${e.date ? ` · ${esc(stFmt(e.date))}` : ''}</p>
       <ul class="bk-log">${r.rounds.map(x => `<li>${esc(x.name || 'unnamed')}${x.element ? ` (${esc((BK_ELEMENTS.find(e => e[0] === x.element) || [])[1] || x.element)})` : ''}: ${x.aligned ? 'stayed' : 'shown the door'}${x.part321 ? ', a part was met' : ''}</li>`).join('')}</ul>
       ${r.charge.before !== null && r.charge.after !== null ? `<p class="bt-sub">Charge ${r.charge.before} to ${r.charge.after}.</p>` : ''}
-      ${r.vibeulon ? '<p class="bt-sub"><b>This inner work minted a vibeulon.</b> Pay it in your hand to discard any card.</p>' : ''}
+      ${r.vibeulon ? (hdHeld(stSteps[bk.id]) ? '<p class="bt-sub"><b>This inner work minted a vibeulon.</b> The card is still in your hand until you pay it to discard the card.</p>' + go('Pay the vibeulon and discard this card', 'discard') : '<p class="bt-sub"><b>This inner work minted a vibeulon.</b> Pay it in your hand to discard any card.</p>') : ''}
       <p class="bt-sub">${db ? 'The run is saved on the board. Go back to your steps and press Send to Claude, and Claude reads what came up.' : 'This view cannot save, so the run stays on screen only.'}</p>${go('Back to your steps', 'close')}`;
   }
   $b('bk-box').innerHTML = warn + h;
@@ -1188,6 +1196,7 @@ document.addEventListener('click', e => {
   if (a === 'open') return openBlocker(b.dataset.step);
   if (!bk) return;
   if (a === 'close') return closeBlocker();
+  if (a === 'discard'){ const id = bk.id; $b('bk-screen').classList.remove('on'); document.body.style.overflow = ''; bk = null; return hdDiscard(id); }
   if (a === 'next') return bkNext();
   if (a === 'finish') return bkFinish();
   bkKeep();
@@ -1578,7 +1587,11 @@ async function hdClick(t){
   // Two taps: the first shows the price and the day it comes back, the second pays.
   if (hdArmed !== id){ hdArmed = id; return renderSteps(); }
   hdArmed = '';
-  const coin = hdWallet()[0];
+  return hdDiscard(id);
+}
+// Pay the oldest unspent vibeulon and send the card to the discard pile until its day on the ladder.
+async function hdDiscard(id){
+  const s = stSteps[id], coin = hdWallet()[0]; if (!s) return;
   if (!coin){ hdSay('No vibeulon yet. Inner work on a card mints one.'); return renderSteps(); }
   const at = new Date(), days = hdDays(s), until = new Date(at.getTime() + days * 864e5).toISOString();
   const discards = [...(s.discards || []), {at: at.toISOString(), until, days, vibeulon: coin}];
