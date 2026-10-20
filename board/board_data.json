@@ -10850,6 +10850,70 @@
    "auto": true,
    "pos": "Chapter 1's public demo is reached at a bars-engine.vercel.app path, whichever host builds it.",
    "why": "A next.config rewrite to another origin does it without copying files, and keeps the Kickstarter link at the address the other games use."
+  },
+  {
+   "id": "hd-draw",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "steps-hand 1",
+   "auto": true,
+   "pos": "Your hand draws five cards in this order: today's Tap the Vein lines, then overdue steps (longest overdue first), then podcast chases, then steps by due date, then the rest in list order. Only a list's next step can be drawn.",
+   "why": "You said the five include what comes from Tap the Vein, and Tap the Vein comes first in the morning (ttv-first). Steps are numbered because their order is real, so step 3 never enters the hand before step 2. Moving a date can change which cards are drawn; if you want a card to stay in the hand until it is done or discarded, flip this."
+  },
+  {
+   "id": "hd-mint",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "steps-hand 1",
+   "auto": true,
+   "pos": "Inner work on a card is the board's WAVE run with its 3-2-1. Every run you finish mints one vibeulon, however it ends, including Still stuck. A run left half way mints nothing.",
+   "why": "You named the 3-2-1 and the WAVE process. The board's blocker panel already runs both step by step and saves each run (built 2026-10-12), so the hand opens it from a card. The work is the price, not the outcome."
+  },
+  {
+   "id": "hd-spend",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "steps-hand 1",
+   "auto": true,
+   "pos": "A vibeulon pays to discard any card in your hand, not only the card it was minted on. The discard takes two taps: the first shows the price and the day the card comes back.",
+   "why": "Vibeulons are a currency in bars-engine, and currency spends anywhere. If you want inner work on a card to buy that card's discard only, flip this."
+  },
+  {
+   "id": "hd-ladder",
+   "faces": [
+    "regent"
+   ],
+   "pass": "steps-hand 1",
+   "auto": true,
+   "pos": "A discarded card comes back 3 days later, then 7, 14, 30, 60 and 90 days on each later discard, the seed library's ladder.",
+   "why": "You said it comes back on the spaced repetition rules. The board's hour ladder (1 hour to a month) is for deferred council rows; the day ladder is the one Tap the Vein lines already rest on (sl-resurface-ladder)."
+  },
+  {
+   "id": "hd-wallet",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "steps-hand 1",
+   "auto": true,
+   "pos": "Board vibeulons are kept on the board's own records for now: each one is on the run that minted it, and each discard names the one it spent. Moving them into your bars-engine wallet is a later build.",
+   "why": "The claude.ai copy of the board cannot reach bars-engine, and the hand has to work on both copies. Every mint and spend reaches main through board/pull.py, so the wallet can be filled from the record later without losing any."
+  },
+  {
+   "id": "hd-deck",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "steps-hand 1",
+   "auto": true,
+   "pos": "Every open step not in your hand stays in a folded deck below it, whole, with discarded ones marked with the day they come back.",
+   "why": "The hand is a view over the steps store and drops nothing (the 2026-10-20 postmortem on blank steps). The deck is folded so the five cards are what you see first."
   }
  ],
  "questions": [
