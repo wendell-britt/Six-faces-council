@@ -29802,6 +29802,66 @@
      "sage"
     ],
     "pass": "spirit care 1"
+   },
+   "sc-ladder-tuning": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:23:41.704Z",
+    "record": "council/ledger/2026-10-20-pull-222414.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "spirit care 1"
+   },
+   "sc-shadow-copy": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:23:51.346Z",
+    "record": "council/ledger/2026-10-20-pull-222414.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "challenger"
+    ],
+    "pass": "spirit care 2"
+   },
+   "sc-offer-hold": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:23:59.537Z",
+    "record": "council/ledger/2026-10-20-pull-222414.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "spirit care 2"
+   },
+   "sc-offer-rewrite": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:24:07.198Z",
+    "record": "council/ledger/2026-10-20-pull-222414.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "spirit care 2"
+   },
+   "sc-offer-release": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T22:24:14.031Z",
+    "record": "council/ledger/2026-10-20-pull-222414.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "spirit care 2"
    }
   },
   "questions": {
