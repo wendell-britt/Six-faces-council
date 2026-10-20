@@ -17407,6 +17407,35 @@
     }
    ],
    "pass": "sprout-hosting1"
+  },
+  {
+   "id": "bi-import-key",
+   "faces": [
+    "regent",
+    "architect",
+    "diplomat"
+   ],
+   "q": "How should your steps and outreach get into the bars-engine board?",
+   "why_you": "The bars-engine Council Board (bars-engine.vercel.app/board/council) shows no steps and no outreach because its database never got them. The claude.ai board still has all of it: 43 step lists, 163 steps, 115 contacts and 5 shows. The import is built and tested; what is missing is a way in. No session can write to bars-engine's database, and adding even a one-time key to your Vercel settings is a change to your production account, so it needs your yes.",
+   "not_before": "Moving this data was step 4 of the board-home plan and was never done; it surfaced on 20 October when you saw the bars-engine board empty.",
+   "options": [
+    {
+     "v": "key",
+     "label": "A. Claude adds a one-time import key (recommended)",
+     "c": "Claude adds BOARD_IMPORT_TOKEN to bars-engine's Vercel settings, runs the import (it only adds, never overwrites, and a rerun adds nothing), checks the counts, then deletes the key. Nothing else for you to do; you get a link to check."
+    },
+    {
+     "v": "upload",
+     "label": "B. You drop in a file",
+     "c": "Claude builds an upload box on /board/council behind your sign-in and leaves the store as one file in this project. You download it and drop it in: three clicks, and no key is ever made."
+    },
+    {
+     "v": "wait",
+     "label": "C. Keep using the claude.ai board",
+     "c": "Nothing moves. The claude.ai board keeps working; the bars-engine board now says its store is empty instead of \"Nothing waiting on you\"."
+    }
+   ],
+   "pass": "board-import1"
   }
  ],
  "causes": [
