@@ -1,0 +1,60 @@
+{
+ "positions": [
+  {"id": "sc-ruling-mortal", "faces": ["regent"], "pass": "spirit care 1", "auto": true,
+   "pos": "Your message is recorded as a ruling: spirits can die or be taken by shadow when nobody tends them. It removes the no-death clause of spirit-growth-by-training and the \"never dies\" clause of rc-stale-neglect. The rest of both stands, including that staleness belongs to the pair and never names who was away. Ending a Between still composts it with no blame. This stands unless you flip it.",
+   "why": "Your words, 2026-10-20: \"The big thing is want to add is that the spirits CAN die or be corrupted from neglect\". Both no-death clauses were council positions, not your words. Source: council/passes/6FACE_PASS_spirit-care1_2026-10-20.md"},
+  {"id": "sc-ladder", "faces": ["architect", "shaman"], "pass": "spirit care 1", "auto": true,
+   "pos": "A spirit fades in stages that cannot be skipped: thriving, dimming, stale, shadowed, fading, gone. Each stage shows on its body and lasts long enough to be seen by a player who looks in once. Before it fades, the spirit asks for help in its own voice by offering a quest. Mortality is told to the player when the spirit bonds, never learned by losing one. The stage lengths are tuned by a simulation and shown to you before they ship. This stands unless you flip it.",
+   "why": "The ontology allows a real loss only when it is disclosed (disclose_irreversible_consequences). A staged decline answers the Challenger's guilt-meter warning from rc-stale. Source: the pass, Architect and Shaman."},
+  {"id": "sc-rest", "faces": ["architect", "diplomat"], "pass": "spirit care 1", "auto": true,
+   "pos": "A declared rest pauses fading and shadow for every spirit you hold. It is one tap, any length, from a phone. Silence without a declared rest counts as neglect. Coming back always welcomes you before it tells you what changed. This stands unless you flip it.",
+   "why": "The ontology says rest is a valid outcome and silence is never an automatic disposition; the design keeps both by making rest a choice and death a disclosed consequence. Source: the pass, Architect and Diplomat."},
+  {"id": "sc-shadow-legible", "faces": ["challenger", "architect"], "pass": "spirit care 1", "auto": true,
+   "pos": "Shadow always shows where it came from: an unworked charge, a broken agreement, or the spirit's own daemon family pushed too far. It is never shown as the player's fault, and it never lands at random on a spirit that is being tended. This stands unless you flip it.",
+   "why": "Shadow with no readable source feels like weather and teaches nothing. A roadblock names what it constrains without presuming an inner cause (ontology, BlockerRecord). Source: the pass, Challenger."},
+  {"id": "sc-cleanup-care", "faces": ["challenger", "diplomat"], "pass": "spirit care 1", "auto": true,
+   "pos": "One real act of care of any size, as in Finch, holds a spirit steady. Clean Up is what clears shadow: a 3-2-1, the W.A.V.E. breath, a spar, or a real-world step of self care or relationship care. Each clears more than it costs. No route needs you to disclose anything, and the spirit never nags or counts days. This stands unless you flip it.",
+   "why": "If daily Clean Up were the price of a living spirit, Clean Up would become the chore you asked to escape. Intimate disclosure is not progression currency (ontology QUICKSTART); a streak is coercion dressed as care (inner-vessel pass 1). Source: the pass, Challenger and Diplomat."},
+  {"id": "sc-spirit-bars", "faces": ["architect", "diplomat"], "pass": "spirit care 1", "auto": true,
+   "pos": "A spirit offers quest BARs. Each one is made from what the spirit needs now, its element and daemon family, and your Lens goals (alone) or the pair's agreements (in the Between), and it names the goal or agreement it serves. Templates make them first, so the loop works with no AI. An offered quest needs your yes, and saying no costs nothing. This stands unless you flip it.",
+   "why": "Your message: \"spirits would be able to generate quest bars that align with the goals of the single player or the Between agreements\". It also builds the unbuilt part of your Between brief, a garden \"made out of BarQuests\". bars-engine's charge-quest generator is the first tool to try. Source: the pass, Architect."},
+  {"id": "sc-between-decline", "faces": ["regent", "diplomat"], "pass": "spirit care 1", "auto": true,
+   "pos": "In the Between, a shared spirit's decline belongs to the pair. Either person's tending lifts it, and both are told when it reaches fading, before it can die. The decline never names who was away. This stands unless you flip it.",
+   "why": "rc-stale-neglect and rc-tend-alone already make staleness the pair's and change the Between only with both yeses; this carries the same rule to death. Source: the pass, Regent."},
+  {"id": "sc-word", "faces": ["regent", "shaman"], "pass": "spirit care 1", "auto": true,
+   "pos": "\"Corrupted\" is your word for a spirit taken by shadow from outside. \"Feral\" or \"unsettled\" stays the word for low satisfaction from the spirit's own charge, so the two never blur. The word a player reads for the shadowed state waits for a term pass. This stands unless you flip it.",
+   "why": "The spirit-states rows say a feral spirit is \"a protector held past its time, not a corrupted one\"; your new word names a different thing, a force acting on what you made. Source: the pass, Regent."},
+  {"id": "sc-strand", "faces": ["regent", "sage"], "pass": "spirit care 1", "auto": true,
+   "pos": "Spirit care is its own strand (council/callsheets/spirit-care.md). It runs beside Chapter 1 and never blocks it, and it does not touch the spirit-generator rounds. The first build is a small simulation of four players coming back to their spirits: one who tends daily, one who is busy, one who rests, and one who vanishes for three weeks. It proves whether the stakes add care or guilt before any art or bars-engine work. This stands unless you flip it.",
+   "why": "Work that serves the gate runs beside it (your Regent lesson, 2026-10-03). A probe comes before a still (CLAUDE.md, tool scout). Source: the pass, Regent, Challenger and Sage."}
+ ],
+ "questions": [
+  {"id": "sc-undying", "faces": ["regent", "diplomat", "challenger"], "pass": "spirit care 1",
+   "q": "Can a player keep a spirit that never dies? The council recommends A.",
+   "why_you": "Your message says spirits CAN die, and the council split on whether a player may opt out. The Diplomat would let people whose absences are not a choice keep an undying spirit; the Challenger says optional death makes it a setting, not a stake. Only you know which game you want, and the answer decides whether bonding asks the question at all.",
+   "not_before": "Raised by spirit care pass 1, 2026-10-20, on your message of that day. Earlier passes assumed spirits never die, so the question had no reason to exist.",
+   "options": [
+    {"v": "A", "label": "A. No, every spirit can die (recommended)", "c": "Bonding tells you the spirit is mortal. Declared rest pauses it. The stake is the same for everyone."},
+    {"v": "B", "label": "B. You choose at bonding", "c": "Each spirit is bonded as mortal or undying. An undying spirit still fades and is shadowed, but stops short of death."},
+    {"v": "C", "label": "C. Only shared spirits, by agreement", "c": "Solo spirits never die. In the Between, the pair makes mortality one of its agreements, so both said yes to the stake."}
+   ]},
+  {"id": "sc-after-death", "faces": ["shaman", "architect"], "pass": "spirit care 1",
+   "q": "What is left when a spirit dies? The council recommends A.",
+   "why_you": "Your message makes death possible but does not say whether it is final. The record has a compost shape (a let-go lantern goes to ash and owes nothing) but no rule for a creature. What death means in your game is your call, and it decides whether a death leads somewhere.",
+   "not_before": "Raised by spirit care pass 1, 2026-10-20; spirits could not die before today.",
+   "options": [
+    {"v": "A", "label": "A. A seed you can plant (recommended)", "c": "The spirit leaves a seed with its name and element. Planting it grows a new spirit that carries the old one's story, not its stats."},
+    {"v": "B", "label": "B. A stone to remember it by", "c": "The spirit is gone for good. A stone stays in your space or the Between garden with its name. The loss is final."},
+    {"v": "C", "label": "C. It can be called back once", "c": "A dead spirit can be brought back one time by a hard Clean Up quest. A second death is final."}
+   ]},
+  {"id": "sc-shadow-what", "faces": ["architect", "shaman"], "pass": "spirit care 1",
+   "q": "What are the shadow forces in the story? The council recommends A.",
+   "why_you": "Your message names shadow forces that act on what you have made, and nothing in the record says what they are. Whether they come from inside the daemons or from outside the self is a question about your book's world, and it decides what the player sees and fights against.",
+   "not_before": "Raised by spirit care pass 1, 2026-10-20; shadow in the record so far is only the 3-2-1 practice and the designer's shadows, never a force in the world.",
+   "options": [
+    {"v": "A", "label": "A. Each daemon's own shadow (recommended)", "c": "Shadow is a daemon's urge pushed too far, such as the Protector's walls or the Controller's grip, taking the spirit of that family. Clean Up works the pattern, which is the book's own move."},
+    {"v": "B", "label": "B. A force from outside", "c": "A named presence in the world (a blight, a fog, a figure) moves on whatever is untended. Easier to show and to fight, further from the inner work."},
+    {"v": "C", "label": "C. Daemon shadow alone, an outside force in the Between", "c": "Your own spirits are taken by their daemon's shadow; a shared spirit is pressed by a force that weighs on the relationship from outside."}
+   ]}
+ ]
+}
