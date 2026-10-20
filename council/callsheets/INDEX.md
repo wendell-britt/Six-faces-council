@@ -54,3 +54,4 @@ profile its threads load (docs/ontology-in-flows.md).
 - 2026-10-07, from the ontology game steers thread (listed twice): merged 2026-10-07 23:50 UTC; test 10 is on cave-of-lessons.
 - 2026-10-06, from the board pickup thread: fresh-session routine closed 2026-10-07; rest is in board-plumbing.
 - Repeated headings in HANDOFF.md (outreach-on-board, 3D build options pass 2): read once, in podcast and cave-of-lessons.
+- spirit-care.md: Finch folded into spirits; mortal spirits, shadow, spirit-made quest BARs (2026-10-20)
