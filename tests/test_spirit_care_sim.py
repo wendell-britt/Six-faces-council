@@ -1,6 +1,6 @@
 """council/spirit-care/sim.py: four players come back to mortal spirits (spirit care pass 1, the Challenger's test).
 
-Rerun after any change to the ladder, the tracks or the return copy. The recommended pair (A on sc-undying, A on
+Rerun after any change to the ladder, the tracks or the return copy. His answered pair (A on sc-undying, A on
 sc-after-death) must pass every check; under the other options only the stake check may miss.
 """
 import importlib.util
@@ -49,8 +49,18 @@ class SpiritCareSimTest(unittest.TestCase):
         self.assertFalse(sim.no_skip(["thriving", "dimming", "stale"]))   # dimming not held for its dwell
         self.assertTrue(sim.no_skip(["thriving", "dimming", "dimming", "dimming", "stale"]))
 
+    def test_shadow_line_names_the_source_not_the_player(self):
+        lines = [t for r in sim.run("A", "A") for k, t in r["screen"] if k == "shadow"]
+        self.assertTrue(lines)
+        for t in lines:
+            self.assertNotIn("you", t.lower().split(), t)
+
+    def test_quest_offer_rules(self):
+        self.assertTrue(sim.offer_rules_hold())
+
     def test_cli_exits_clean(self):
         self.assertEqual(sim.main([]), 0)
+        self.assertEqual(sim.main(["--all"]), 0)
 
 
 if __name__ == "__main__":
