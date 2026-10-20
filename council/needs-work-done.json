@@ -191,6 +191,11 @@
    "by": "Claude",
    "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
    "at": "2026-10-17T20:30:00Z"
+  },
+  "2026-10-19-pull-225039#steps/podcast-pipeline-03": {
+   "by": "Claude",
+   "ref": "council/callsheets/podcast.md (step rewritten as a click-by-click walkthrough; no computer-use tools in the thread)",
+   "at": "2026-10-19T23:05:00Z"
   }
  }
 }
