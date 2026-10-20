@@ -1,0 +1,81 @@
+{
+ "date": "2026-10-20",
+ "kind": "board-pull",
+ "newest_save": "2026-10-20T21:41:06.657Z",
+ "answers": {
+  "bi-import-key": {
+   "kind": "question",
+   "choice": "key",
+   "savedAt": "2026-10-20T21:40:04.595Z",
+   "steer": "I’d like us to keep that key in there and use it in GitHub actions as well"
+  },
+  "hd-mint": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:09.379Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-spend": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:11.763Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-ladder": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:13.396Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-wallet": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:14.930Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-deck": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:17.479Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-hold": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:19.664Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-back": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:25.714Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-chases": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:50.022Z",
+   "status": "stands",
+   "steer": "They should be a separate card. If it takes an action from me it should be in the hand "
+  },
+  "hd-draw": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:40:59.289Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hd-start": {
+   "kind": "position",
+   "savedAt": "2026-10-20T21:41:06.657Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/bi-import-key: Claude adds a one-time import key (steer: \"I’d like us to keep that key in there and use it in GitHub actions as well\")",
+  "positions/hd-chases: Stands (steer: \"They should be a separate card. If it takes an action from me it should be in the hand\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

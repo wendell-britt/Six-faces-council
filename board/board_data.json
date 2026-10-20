@@ -29338,6 +29338,123 @@
      "diplomat"
     ],
     "pass": "sprout-hosting1"
+   },
+   "hd-mint": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:09.379Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "steps-hand 1"
+   },
+   "hd-spend": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:11.763Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "steps-hand 1"
+   },
+   "hd-ladder": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:13.396Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "steps-hand 1"
+   },
+   "hd-wallet": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:14.930Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "steps-hand 1"
+   },
+   "hd-deck": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:17.479Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "steps-hand 1"
+   },
+   "hd-hold": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:19.664Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "steps-hand 2"
+   },
+   "hd-back": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:25.714Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "steps-hand 2"
+   },
+   "hd-chases": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:50.022Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "steer": "They should be a separate card. If it takes an action from me it should be in the hand",
+    "faces": [
+     "architect"
+    ],
+    "pass": "steps-hand 2"
+   },
+   "hd-draw": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:59.289Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "steps-hand 1"
+   },
+   "hd-start": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:41:06.657Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "steps-hand 2"
    }
   },
   "questions": {
@@ -31995,6 +32112,20 @@
      "shaman"
     ],
     "pass": "sprout-hosting1"
+   },
+   "bi-import-key": {
+    "decision": "key",
+    "label": "Claude adds a one-time import key",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T21:40:04.595Z",
+    "record": "council/ledger/2026-10-20-pull-214106.json (six-faces-council)",
+    "steer": "I’d like us to keep that key in there and use it in GitHub actions as well",
+    "faces": [
+     "regent",
+     "architect",
+     "diplomat"
+    ],
+    "pass": "board-import1"
    }
   },
   "causes": {
