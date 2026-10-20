@@ -163,3 +163,13 @@ shown before the roll. A Logbook button lists every line; `?referee=off` writes 
   marks it ready (sprout has no auto-merge: he merges or says to).
 - **His note names a change:** a fresh Opus thread owning #57 makes it, numbers unchanged unless he rules them.
 - **The Terminal line fails:** start a Remote Control session in /Users/wendellbritt/The Library to clone and serve it.
+
+## Hosting (2026-10-20)
+
+Six-face pass `sprout-hosting1` (`council/passes/6FACE_PASS_sprout-hosting1_2026-10-20.md`): throwaway bars-engine
+branches and GitHub Pages are out (`sh-no-bars-branches`, `sh-no-pages`); the public demo is reached at a
+bars-engine.vercel.app path (`sh-demo-on-bars`). Board question `sh-sprout-host` asks Wendell where per-PR links come
+from; the council recommends A, sprout as its own Vercel project (framework Other, build `node tools/build-slice.mjs`,
+output `build/slice`, preview protection off like bars-engine, first link checked unsigned at phone width). On A, a
+thread connects the project with the Vercel connector and posts the first link to the open sprout PR (#63). On B, a
+fresh Opus thread builds the Blob route. Until he answers, sprout PRs keep `npm run slice:serve`.
