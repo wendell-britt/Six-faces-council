@@ -76,3 +76,23 @@ Build (Opus, design-ontology loaded, one thread):
   (the deprecated WAVE term stays out); the rerunnable check /mnt/project-files/board-hand-2026-10-20/check.mjs (extend it).
 - Deliver: a hosted way to see it before merge if cheap, otherwise merged to main and the link
   https://bars-engine.vercel.app/board/council#steps. New positions on the board as rows.
+
+## Built (steps-hand 3, wraps, full view, chase cards, 2026-10-20)
+
+Wendell, 2026-10-20, with phone screenshots: "UI is broken we need to fix the wraps. We also need the ability to pull a
+card full screen to see the full info. Scrolling is fine". On hd-chases: "They should be a separate card. If it takes an
+action from me it should be in the hand".
+
+scout: rung 2, we have it. The fix is CSS on the existing hd- code; the overflow came from the card button's grid,
+whose one implicit column grew to the width of the unwrapped list title.
+
+- Cards: the label wraps to two lines, the text wraps and clamps, nothing crosses a card edge. On a phone a card with
+  another over it shows one line of its text, so no line is cut in half.
+- Picking a card up opens it full screen on a phone (a tall sheet on a computer), scrolling, with the close button in a
+  bar that stays at the top. The page behind does not scroll.
+- Each podcast chase that is due is its own card (♣) in the deck, after the overdue steps. Drawing one writes `inHand`
+  on its contacts/ record; saving the chase clears it and frees the slot. The chases pile is gone; the face-up list
+  below leaves out the chases in his hand.
+- Check: `/mnt/project-files/board-hand-2026-10-20/round3/check.mjs <built page> <out dir> [width]` (long texts, a chase,
+  edge test, full-screen size, scroll, chase save). Passed at 390 and 1200; round 2's check still passes.
+- Not checked: a real phone's touch, and iOS Safari's `100dvh` with the toolbar showing.
