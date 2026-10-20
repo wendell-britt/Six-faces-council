@@ -10914,6 +10914,48 @@
    "auto": true,
    "pos": "Every open step not in your hand stays in a folded deck below it, whole, with discarded ones marked with the day they come back.",
    "why": "The hand is a view over the steps store and drops nothing (the 2026-10-20 postmortem on blank steps). The deck is folded so the five cards are what you see first."
+  },
+  {
+   "id": "hd-hold",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "steps-hand 2",
+   "auto": true,
+   "pos": "A card stays in your hand until it is done, discarded or handed back to Claude. You draw only into a free slot, and the deck gives its top card in the hd-draw order. Moving a date no longer changes your hand.",
+   "why": "You asked for a loop where you take a card only after you discard one. Taking the top card keeps today's Tap the Vein lines and the overdue steps first. If you'd rather choose from a face-down spread, flip this."
+  },
+  {
+   "id": "hd-back",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "steps-hand 2",
+   "auto": true,
+   "pos": "When you give a card back to Claude, it leaves your hand with no vibeulon and waits in Claude's pile. The next board pull lists your note as work for Claude. When Claude finishes the step the card is gone, and when Claude hands it back it returns to the deck.",
+   "why": "Claude takes the work, so you shouldn't pay inner work for it. The automate box tells Claude to look for a way to do it every time, not just once."
+  },
+  {
+   "id": "hd-chases",
+   "faces": [
+    "architect"
+   ],
+   "pass": "steps-hand 2",
+   "auto": true,
+   "pos": "Podcast chases sit in their own pile on the table and take no slot in your hand. Tap the pile to open them.",
+   "why": "The chases are a group of asks and change every day, and a card in a held hand would go stale. The pile shows how many are due."
+  },
+  {
+   "id": "hd-start",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "steps-hand 2",
+   "auto": true,
+   "pos": "The first time you open the new table, your hand is empty and you draw your five from the deck yourself.",
+   "why": "A hand dealt without you would be the old computed hand under a new skin. Drawing the first five yourself makes the cards yours from the start."
   }
  ],
  "questions": [
