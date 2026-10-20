@@ -1,0 +1,33 @@
+{
+ "date": "2026-10-20",
+ "kind": "board-pull",
+ "newest_save": "2026-10-20T21:56:00.000Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "paypal-funding-01",
+   "at": "2026-10-20T21:54:31.221Z",
+   "what": "moved",
+   "from": "2026-10-07",
+   "to": "2027-01-20",
+   "do": "Update from the 20 October pass: still failing, and one deadline is today. PayPal emailed on 18 October that the $20.00 Liberated Syndication (Libsyn) payment failed again, sent a 'Reminder of Action Needed' about a negative balance the same day, and Patreon says the membership for Pierre Mortel expires unless the payment method is updated by 20 October. Earlier: Canva's $19.89 failed on 11, 15 and 17 October, Patreon's payment failed on 14 and 17 October ($3.96, $4.46), and PayPal sent an 'Action needed: PayPal Pay in 4' notice on 17 October. No Libsyn paid receipt has arrived. Add a working payment method to your PayPal wallet and retry the Liberated Syndication payment. Libsyn hosts the podcast feed, so this gates episodes and clips. HostGator's $395.61 renewal, on the same wallet, is on the Replies owed list. The Libsyn step from Replies owed is folded into this one."
+  },
+  {
+   "id": "paypal-funding-01",
+   "at": "2026-10-20T21:56:00.000Z",
+   "what": "discarded",
+   "until": "2026-10-23T21:56:00.000Z",
+   "vibeulon": "paypal-funding-01--mvh7y611",
+   "do": "Update from the 20 October pass: still failing, and one deadline is today. PayPal emailed on 18 October that the $20.00 Liberated Syndication (Libsyn) payment failed again, sent a 'Reminder of Action Needed' about a negative balance the same day, and Patreon says the membership for Pierre Mortel expires unless the payment method is updated by 20 October. Earlier: Canva's $19.89 failed on 11, 15 and 17 October, Patreon's payment failed on 14 and 17 October ($3.96, $4.46), and PayPal sent an 'Action needed: PayPal Pay in 4' notice on 17 October. No Libsyn paid receipt has arrived. Add a working payment method to your PayPal wallet and retry the Liberated Syndication payment. Libsyn hosts the podcast feed, so this gates episodes and clips. HostGator's $395.61 renewal, on the same wallet, is on the Replies owed list. The Libsyn step from Replies owed is folded into this one."
+  }
+ ],
+ "blockers": [
+  "council/blockers/paypal-funding-01--mvh7y611.json"
+ ],
+ "needs_work": [
+  "steps/paypal-funding-01: moved from 2026-10-07 to 2027-01-20",
+  "blockers/paypal-funding-01--mvh7y611: Update from the 20 October pass: still failing, and one deadline is today. PayPal emailed on 18 October that the $20.00 Liberated Syndication (Libsyn) payment failed again, sent a 'Reminder of Action Needed' about a negative balance the same day, and Patreon says the membership for Pierre Mortel expires unless the payment method is updated by 20 October. Earlier: Canva's $19.89 failed on 11, 15 and 17 October, Patreon's payment failed on 14 and 17 October ($3.96, $4.46), and PayPal sent an 'Action needed: PayPal Pay in 4' notice on 17 October. No Libsyn paid receipt has arrived. Add a working payment method to your PayPal wallet and retry the Liberated Syndication payment. Libsyn hosts the podcast feed, so this gates episodes and clips. HostGator's $395.61 renewal, on the same wallet, is on the Replies owed list. The Libsyn step from Replies owed is folded into this one. (Fuck the bills; moved the date to 2027-01-20: \"Because we should have money coming in by then that will make taking action make sense\", charge 9 to 4)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

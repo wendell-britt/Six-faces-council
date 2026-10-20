@@ -96,3 +96,11 @@ whose one implicit column grew to the width of the unwrapped list title.
 - Check: `/mnt/project-files/board-hand-2026-10-20/round3/check.mjs <built page> <out dir> [width]` (long texts, a chase,
   edge test, full-screen size, scroll, chase save). Passed at 390 and 1200; round 2's check still passes.
 - Not checked: a real phone's touch, and iOS Safari's `100dvh` with the toolbar showing.
+
+## Fixed (steps-hand 4, inner work then discard, 2026-10-20)
+
+Wendell, on the live board: "Did the inner work in this and discarded it but it was still in my hand". The run on his
+PayPal card minted a vibeulon and moved the date; nothing paid it to discard the card, so the card stayed held. Now a run
+on a held card ends with "Pay the vibeulon and discard this card", and closing the run lifts the card with Discard armed
+(one tap). His PayPal card was discarded by hand in the store with that run's vibeulon. Check:
+`/mnt/project-files/board-hand-2026-10-20/round4/check.mjs <built page> <out dir> [width]`.
