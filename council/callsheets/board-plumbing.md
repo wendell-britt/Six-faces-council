@@ -74,3 +74,27 @@ HANDOFF.md: "Open on 2026-10-03, when session_01BME8oqWjhm69ar2KZPiSDm handed of
   over uncommitted shared-file edits — the home-copy check compared `origin` (`Six-faces-council`) case-sensitively
   against `council/source.txt` (`six-faces-council`). Fixed in the same commit (4463914): the comparison now ignores
   case. If a shared-file edit vanishes at session start, this was why.
+
+## Brief, 2026-10-20 19:10 UTC: /board/council shows no steps or outreach (thread "Recover board steps and outreach")
+
+Found, not yet fixed. Wendell, 18:53: "council board on bars-engine isn't showing my next moves or the outreach options".
+- Cause: board-home step (4) above was never done. bars-engine's /board/council reads Postgres `board=council`, and
+  the `lists`, `steps`, `contacts` and `shows` docs live only in the claude.ai artifact store (43 lists, 163 steps,
+  115 contacts, 5 shows on 10-20). With no `lists`, Your steps shows "Nothing waiting on you"; with no `contacts`,
+  Outreach is empty. Not #318: main's page and the live claude.ai page (v488) both render everything against a copy of
+  the artifact store (Chromium with a stub store, no errors). The #316 reply's line that bars-engine was fixed was
+  never checked there; correct it in the postmortem.
+- Blocker: no session holds a write to Postgres. GET/POST /api/board/saves need his sign-in cookie; /api/board/pull
+  needs BOARD_PULL_TOKEN (GitHub secret, not in sessions); COUNCIL_MENU_TOKEN, which the proxy injects, still 401s.
+  `scripts/board-import-artifact-store.ts` in bars-engine does the import given DATABASE_URL. Never commit the
+  store to a repo: both repos are public and contacts hold his outreach notes.
+- Next thread (Opus, fresh): (1) put the write path on the board as a question per CLAUDE.md (options: a
+  BOARD_PULL_TOKEN-gated `POST /api/board/import` in bars-engine plus that token injected for sessions; run the
+  import once from his Mac by Remote Control with bars-engine's `.env`; or he OKs reading DATABASE_URL from Vercel
+  for one import), and (2) once it lands, export the four collections with ArtifactData and import with
+  `--board council`. Step (5), pointing sessions' step writes at Postgres, is still needed or the stores split again.
+- Guard to build (append to council/postmortems/2026-10-20-steps-outreach-blank.md): an empty `lists` snapshot
+  is an error, never an empty list. The template should show a banner ("this board's store has no step lists")
+  instead of "Nothing waiting on you", and a test should cover it. Also run `check.mjs`-style browser loads against
+  the bars-engine shim, not just the claude.ai runtime.
+- Until then he uses the claude.ai board, https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, which has everything.
