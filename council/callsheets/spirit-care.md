@@ -20,6 +20,8 @@ run `python3 council/tools/voice_lint.py` on the new rows first. Reply names the
 
 ## Brief 2, simulation (Opus)
 
+Brief 2 done, #327; findings in council/spirit-care/README.md.
+
 Build `council/spirit-care/sim.py` with the decline ladder (thriving, dimming, stale, shadowed, fading, gone) as data,
 three tracks (satisfaction, vitality, shadow), declared rest, and four players (daily, busy, rest, vanished three
 weeks). Print each player's return. Pass: the vanished player's return welcomes before it reports, and at least one
