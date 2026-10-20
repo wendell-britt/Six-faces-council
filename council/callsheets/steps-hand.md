@@ -73,6 +73,6 @@ Build (Opus, design-ontology loaded, one thread):
    Does the card leave the hand when handed back? Put that through the reach test (position: yes, without a vibeulon,
    since Claude takes it).
 - Keep: never drop step data (council/postmortems/2026-10-20-steps-outreach-blank.md); page_calls guard; term lint
-  ("WAVE order" is banned); the rerunnable check /mnt/project-files/board-hand-2026-10-20/check.mjs (extend it).
+  (the deprecated WAVE term stays out); the rerunnable check /mnt/project-files/board-hand-2026-10-20/check.mjs (extend it).
 - Deliver: a hosted way to see it before merge if cheap, otherwise merged to main and the link
   https://bars-engine.vercel.app/board/council#steps. New positions on the board as rows.
