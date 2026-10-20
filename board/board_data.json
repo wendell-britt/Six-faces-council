@@ -11121,6 +11121,17 @@
    "auto": true,
    "pos": "Labels for the asset trial come from two independent model readers with the code open, blind to Wendell's labels and to each other. A row is settled when both readers agree, and Wendell rules only on rows where they differ. His own 19 labels are kept as saved and are not overwritten. The practice pile is labelled the same way when it is needed. This stands unless you flip it.",
    "why": "Your words on the labelling page: 'it was very hard and it feels like something the llm should be able to verify for me'. The readers agree on 18 of 20 rows (9 agree, 9 differ, 2 split). Your labels match their consensus on 4 of the 19 you answered, and 9 of yours were can't-tell, which fits a task that needs the code open. A model label is not a ruling, so the council reports where you and the readers differ and does not hide it. Source: council/jev/asset_labels_compared.json and the two readers' reports in bars-engine, PR #256"
+  },
+  {
+   "id": "jev-trials-paused",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "jev asset",
+   "auto": true,
+   "pos": "The Jev trials are paused: the quote-to-claim check and the asset docs-versus-code trial. Nothing already built is removed, and the pass marks, sample sizes, the TypeSafe account and the data-terms reading are no longer due. They restart when a job that runs repeatedly needs cheap, fast judgments. This stands unless you flip it.",
+   "why": "Your words: 'Do 1 and 2', on the council's recommendation. No Jev call has been made. The audit that fed the asset trial was done better by Claude with the code open, and Jev's strength is cheap structured judgments in code that runs often, which nothing in the project needs today. What is saved and what would restart it is in council/jev/STATUS.md (bars-engine, PR #256). Fixes from the audit are in bars-engine#407."
   }
  ],
  "questions": [
