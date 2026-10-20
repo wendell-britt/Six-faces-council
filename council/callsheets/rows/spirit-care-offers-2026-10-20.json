@@ -1,0 +1,36 @@
+{
+  "positions": [
+    {
+      "id": "sc-shadow-copy",
+      "faces": ["diplomat", "challenger"],
+      "pass": "spirit care 2",
+      "auto": true,
+      "pos": "On a return screen the shadow gets two sentences. The first has the shadow as its subject and names what fed it, never the player: \"Shadow from the Skeptic's doubt lies over Pip, fed by an unworked charge.\" The second hands the player the answer, as someone able to give it: \"Tending it is yours to do, and Pip has a way to start.\" Then the spirit's quest. No screen says \"you let\", \"you didn't\", \"because you\" or \"should have\". This stands unless you flip it.",
+      "why": "Your steer on sc-shadow-legible: \"It's not framed as the players fault. But it is their responsibility\". Responsibility here is the ability to respond, so the line ends on what the player can do. With your sc-shadow-what answer every shadow is the spirit's own daemon's pattern; the source says what fed it. The sim checks every shadow line (council/spirit-care/sim.py). Source: the pass, Diplomat and Challenger."
+    },
+    {
+      "id": "sc-offer-hold",
+      "faces": ["architect", "regent"],
+      "pass": "spirit care 2",
+      "auto": true,
+      "pos": "A spirit holds one offered quest at a time, until it is done, rewritten or let go. \"Not now\" is free, can be said any number of times, and the quest comes back on the next visit. Saying not now never speeds a spirit's decline: care is what holds a spirit, not the quest. While the player hasn't rewritten it, the quest follows the spirit's need when the need changes. This stands unless you flip it.",
+      "why": "Your steer on sc-spirit-bars: \"an offered quest can be deferred\". Holding one quest is what gives letting go its meaning, the way a card holds a slot in your hand (steps-hand.md). Rest and refusal stay valid endings (ontology QUICKSTART). The sim's deferrer, who says not now every visit, declines exactly as a twin who saw no quests. Source: the pass, Architect and Regent."
+    },
+    {
+      "id": "sc-offer-rewrite",
+      "faces": ["shaman", "architect"],
+      "pass": "spirit care 2",
+      "auto": true,
+      "pos": "A player can rewrite an offered quest in their own words, free, any number of times. The rewrite keeps the goal or agreement it serves; a rewrite that drops it is sent back. Once rewritten, the quest is the player's and the spirit never swaps it. This stands unless you flip it.",
+      "why": "Your steer on sc-spirit-bars: \"we can even have a feature to rewrite or customize\". The citation keeps the quest tied to the goal or agreement it was made for (sc-spirit-bars). Player authorship is preserved (ontology QUICKSTART). Source: the pass, Shaman and Architect."
+    },
+    {
+      "id": "sc-offer-release",
+      "faces": ["regent", "challenger"],
+      "pass": "spirit care 2",
+      "auto": true,
+      "pos": "Letting an offered quest go for good costs one vibeulon, the price of a hand discard, and a vibeulon is minted by a finished 3-2-1 or W.A.V.E. The spirit offers a fresh quest on the next visit. A player with no vibeulon can still say not now, and nothing gets worse for holding the quest. This stands unless you flip it.",
+      "why": "Your steer on sc-spirit-bars: \"it should be an additional cost to fully get rid of a proffered quest\". The price comes from your own hand rule: \"pay a vibeulon to discard the card\" (steps-hand.md, hd-mint), so the cost of letting go is inner work, not a fine. Source: the pass, Regent and Challenger."
+    }
+  ]
+}
