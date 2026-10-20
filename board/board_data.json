@@ -29157,6 +29157,52 @@
      "sage"
     ],
     "pass": "ttv-bars 1"
+   },
+   "sh-web-not-repo": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:38:04.650Z",
+    "record": "council/ledger/2026-10-20-pull-003819.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "sprout-hosting1"
+   },
+   "sh-no-bars-branches": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:38:15.634Z",
+    "record": "council/ledger/2026-10-20-pull-003819.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "sprout-hosting1"
+   },
+   "sh-no-pages": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:38:17.166Z",
+    "record": "council/ledger/2026-10-20-pull-003819.json (six-faces-council)",
+    "faces": [
+     "challenger"
+    ],
+    "pass": "sprout-hosting1"
+   },
+   "sh-demo-on-bars": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:38:19.983Z",
+    "record": "council/ledger/2026-10-20-pull-003819.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "sprout-hosting1"
    }
   },
   "questions": {
@@ -31801,6 +31847,19 @@
      "sage"
     ],
     "pass": "move-nature1"
+   },
+   "sh-sprout-host": {
+    "decision": "vercel",
+    "label": "sprout gets its own Vercel project",
+    "recorded": "2026-10-20",
+    "saved_at": "2026-10-20T00:37:58.266Z",
+    "record": "council/ledger/2026-10-20-pull-003819.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect",
+     "shaman"
+    ],
+    "pass": "sprout-hosting1"
    }
   },
   "causes": {
