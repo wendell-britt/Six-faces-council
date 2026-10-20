@@ -1,0 +1,44 @@
+{
+ "charge": {
+  "after": 4,
+  "before": 9
+ },
+ "due": "2026-10-07",
+ "engine": "board-wave",
+ "finishedAt": "2026-10-20T21:54:31.221Z",
+ "list": "paypal-funding",
+ "overdueDays": 13,
+ "resolution": {
+  "at": "2026-10-20T21:54:31.221Z",
+  "date": "2027-01-20",
+  "kind": "moved",
+  "text": "Because we should have money coming in by then that will make taking action make sense"
+ },
+ "rounds": [
+  {
+   "aligned": false,
+   "body": [
+    "Numb"
+   ],
+   "element": "fire",
+   "felt": "Feels empty and non-important",
+   "from": "the step",
+   "kind": "time",
+   "name": "Fuck the bills",
+   "partStayed": false,
+   "purpose": "It’s been trying to keep my priorities in things that actually matter and move the needle. I don’t have 400 for host gator and I’m not using Libsyn or PayPal at the moment and my energy is focused on things that make me money so these are relevant",
+   "validated": true
+  }
+ ],
+ "savedAt": "2026-10-20T21:54:31.221Z",
+ "stage": "done",
+ "startedAt": "2026-10-20T21:52:18.949Z",
+ "status": "resolved",
+ "step": "paypal-funding-01",
+ "task": "Update from the 20 October pass: still failing, and one deadline is today. PayPal emailed on 18 October that the $20.00 Liberated Syndication (Libsyn) payment failed again, sent a 'Reminder of Action Needed' about a negative balance the same day, and Patreon says the membership for Pierre Mortel expires unless the payment method is updated by 20 October. Earlier: Canva's $19.89 failed on 11, 15 and 17 October, Patreon's payment failed on 14 and 17 October ($3.96, $4.46), and PayPal sent an 'Action needed: PayPal Pay in 4' notice on 17 October. No Libsyn paid receipt has arrived. Add a working payment method to your PayPal wallet and retry the Liberated Syndication payment. Libsyn hosts the podcast feed, so this gates episodes and clips. HostGator's $395.61 renewal, on the same wallet, is on the Replies owed list. The Libsyn step from Replies owed is folded into this one.",
+ "version": 1,
+ "vibeulon": {
+  "at": "2026-10-20T21:54:31.221Z",
+  "by": "inner work"
+ }
+}
