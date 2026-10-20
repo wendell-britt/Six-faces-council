@@ -33,6 +33,11 @@ TEMPLATE = HERE / "template.html"
 TAG = '<script id="board-data" type="application/json">'
 LISTS = ("positions", "questions", "terms", "causes", "battles")
 LATER = ("updated", "steer_recorded_through", "steps_recorded_through")
+SNAPSHOTS = ("morning",)
+
+
+def snap_key(d):
+    return (str(d.get("date", "")), str(d.get("gathered_at", "")))
 
 
 def git(*a, check=True):
@@ -77,7 +82,13 @@ def union(main, live, report, path="$"):
     """Main plus everything on live: live's version wins where both have a row, nothing is removed."""
     out = json.loads(json.dumps(main))
     for k, v in live.items():
-        if k in LATER and isinstance(v, str) and isinstance(out.get(k), str):
+        if k in SNAPSHOTS and isinstance(v, dict) and isinstance(out.get(k), dict):
+            # A gathered morning is one snapshot: the later gather wins whole. Merged entry by entry, a stale live page
+            # put its 10-14 categories beside today's and its date over today's (2026-10-20).
+            if snap_key(v) > snap_key(out[k]):
+                out[k] = v
+                report.append(f"from live: {k} (later snapshot)")
+        elif k in LATER and isinstance(v, str) and isinstance(out.get(k), str):
             out[k] = max(out[k], v)
         elif k in LISTS and isinstance(v, list):
             have = {r["id"]: n for n, r in enumerate(out.get(k, [])) if isinstance(r, dict) and "id" in r}
