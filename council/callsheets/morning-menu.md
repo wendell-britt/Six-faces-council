@@ -4,6 +4,24 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-20, thread "Morning lists into the faces' flow" (branch claude/morning-lists-flow-ark0q6, draft PR on
+Six-faces-council): the orphaned Morning tab lists (waiting on you, steps, due, handoff, open PRs, bars-engine backlog)
+are now BARs (tb-lists-are-bars). `python3 council/bar_read.py --slate` names up to 3 items per list each morning
+(tb-slate: never-read first, then deferrals due on the seed library's 3/7/14/30/60/90 ladder, `list_reads` in
+board_data.json); a face fills each read with the same rules as a sealed line (kernel, missing, gathered with sources,
+now also `spec:<bars-engine path>`, factors apart, call) and `bar_read.py --reads reads.json --write` checks and files it.
+A sealed line with no home can now meet a read list item (opponent kind `item`); a list item can meet a sealed line
+(`line`). The Morning tab shows list reads under "The council's read" with a Pick button, and a one-line read in each
+category. A pick carries the read into its thread brief (board/pull.py `read_brief`, tb-pick-carries-read).
+morning.py keeps each item's last read across gathers. Tests: tests/test_list_reads.py (fixtures in
+tests/fixtures/bar-read/). scout: rung 2, we have it (bar_read.py, morning.py, pull.py extended).
+NEXT, fresh thread that owns the PR: (1) drive CI green and let it merge; (2) on main, gather a fresh morning
+(`council/morning.py --prs <file from the GitHub tools> --bars ../bars-engine --write`; main's `morning` is from 10-14
+with duplicated categories, the fresh gather replaces it), run `--slate`, have a worker write the faces' reads, run
+`bar_read.py --reads reads.json --write`, land with board/sync_board.py and republish; (3) put positions tb-lists-are-bars,
+tb-slate, tb-pick-carries-read on the board as standing positions; (4) confirm on /board/council that the cards show
+and a pick saves. Not checked: the page in a browser (the script parses; no screenshot taken).
+
 2026-10-19, thread "work today or defer": the ttv-bars 1 build is done on sample data. `council/bar_read.py` checks one
 read per sealed line against every tb-* rule and writes it beside the line's alignment in `board_data.json` `intake`;
 the Morning tab shows each read as a face-off card under the Tap the Vein box ("The council's read", work-today cards
