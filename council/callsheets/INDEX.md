@@ -47,6 +47,7 @@ profile its threads load (docs/ontology-in-flows.md).
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.
 - [board-plumbing](board-plumbing.md), 2026-10-16: board-home build: bars-engine `/board/council` serves `board/council-board.html` behind the owner sign-in (bars-engine commit eb41f7eb), shim parameterized, save contract confirmed council-aware; left: move the artifact's saved store into Postgres with ArtifactData (Claude session in the owning org), then point AGENTS.md, CLAUDE.md, docs/pickup.md and the pickup routine at the new page; retire the artifact after a few clean days. Send-bar patch and pull-route board check in bars-engine #338 (draft).
 - [friendcraft](friendcraft.md), 2026-10-06: redesign pass, Part 0 interview, outline, each its own thread.
+- [steps-hand](steps-hand.md), 2026-10-20: Your steps is a five-card hand with a shuffle; inner work mints a vibeulon, a vibeulon pays a discard, the card comes back on the day ladder (hd-* positions). Left: bars-engine wallet (hd-wallet), a look on a real phone.
 
 ## Closed (no sheet)
 - 2026-10-05, from the standing daily session: daily stopped 2026-10-08 (`daily-stopped`), routine switched off.
