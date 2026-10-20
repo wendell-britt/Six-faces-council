@@ -140,6 +140,16 @@ class PullTest(unittest.TestCase):
         self.assertEqual(self.data["steps_recorded_through"], "2026-10-12T16:53:00Z")
         self.assertIsNone(self.pull())
 
+    def test_hand_discard_recorded_once_without_work(self):
+        # Wendell, 2026-10-20: a card discarded from the hand, paid with a vibeulon, comes back on the ladder.
+        self.save("steps", "gs-2", {"do": "Do it", "discardedUntil": "2026-10-23T03:00:00Z", "discards": [
+            {"at": "2026-10-20T03:00:00Z", "until": "2026-10-23T03:00:00Z", "days": 3, "vibeulon": "gs-2--k1"}]})
+        led = self.pull()
+        self.assertEqual([(e["what"], e["until"], e["vibeulon"]) for e in led["steps"]],
+                         [("discarded", "2026-10-23T03:00:00Z", "gs-2--k1")])
+        self.assertFalse([w for w in led["needs_work"] if "gs-2" in w])
+        self.assertIsNone(self.pull())
+
 
 if __name__ == "__main__":
     unittest.main()
