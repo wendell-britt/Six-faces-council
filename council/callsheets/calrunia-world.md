@@ -13,6 +13,12 @@ Wendell, 2026-10-21 01:31 UTC, overruling `ba-worlds-stored`: "We can start buil
 
 The passport contract, no art round, so `hx-looks-gate` is untouched. Read this sheet, the pass's "Build brief", and `calrunia/world.yaml`. Build: `schema/passport.schema.json` with fixtures and a contract test (pattern: the board-save contract); a guest passport in the browser that reads today's `oag.vessel.v1` and the cave's spirits into the passport shape without moving data; a Prisma model for the signed-in passport beside the Between's tables, migrations only, with claim-on-sign-in. Leave sprout as it is. Give a Vercel preview link. If `cw-front-door` is answered first, store the last place only if he picks C.
 
+## Passport (bars-engine #410, merged 2026-10-21)
+
+- Position, standing unless Wendell flips it: the passport field owners are spirits=cave, hand=sprout, and qi/vibeulons/embers=vessel. Every place reads every field. `cw-front-door` was answered A (the ship), so no last place is stored.
+- Built: schema, fixtures (including a Chapter 1 one), contract test, guest fold, `Passport` model, `/api/passport` claim. `/passport` is a developer view linked from `/admin/games` only; players never see a passport page (Wendell, 2026-10-21: "It looks terrible and I have no idea how someone would use it").
+- Not yet done: the live W1 run needs a signed-in player. The API answers 401 on production, as designed.
+
 ## Open
 
 - `cw-front-door`: ship, Sprout's settlement, or wherever you last were.
