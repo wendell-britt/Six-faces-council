@@ -177,3 +177,25 @@ small on a phone (the whole frame is); not checked on a real phone or Safari.
 TRIGGER: his look at the round 2 preview. Notes -> fresh Opus thread owning sprout #71 and bars-engine #420 on branch
 `claude/project-thread-3ag8x2`. Next after the fork settles: NPC guide models from the grey gate (his ask), then the
 outfit cuts on the figure if he keeps the 3D path.
+
+## Arcade arrival, round 3 brief (2026-10-21 21:50 UTC, his notes on round 2)
+
+His words: "the height change needs to also have screen shapes to match the new heights. Feel free to do some research on
+how arcade cabinets differ from each other and how their screens change. We also need to improve the button and joystick.
+On top of that when a player chooses the 3d version that model should be seen walking through the gate that they are
+headed through in the mist. I think we also need to start figuring out how to render the different robes in 3d. I think
+we've already done this work so look that up."
+
+Owns sprout #71 and bars-engine #420, branch `claude/project-thread-3ag8x2` in both. Opus.
+1. Scout first: one worker on real cabinet types (upright, cocktail, candy/Japanese, sit-down, cabaret/mini) and their
+   screen shapes (4:3 landscape, 3:4 portrait/vertical shooters, widescreen later); then in `arrival.py` give each
+   height a cabinet type with its own screen aspect, marquee and bezel. Chapter 1 cabinet stays as is (screen-rect).
+2. Controls in `arrival.py`: a real joystick (ball-top on a shaft, base plate) and round buttons in a row, per type.
+3. Figure path: when `form=figure`, the 3D figure walks the misty road through the grey gate (shot two). Cheapest
+   first: three.js overlay of `slice/figure.js` walking over the shot-two video/poster with the camera matched to
+   `shot2_pose`, before any Blender re-render with the figure in it.
+4. Robes in 3D: the J5 robe work exists (callsheet j5 / `/mnt/project-files/3d-build/j5-*`, robe/sash/topknot GLBs in
+   `j5-garments-2026-10-13`, cloth rounds to r13b, bars-engine #365/#364/#315). Map jacket, wrap dress and long coat
+   onto it in `figure.js`; send the reading to a worker.
+Re-render runs in the background (about 40 min, bpy==5.2.2 into /home/user/blenv, see tools/blender-cloud/README.md).
+sprout `*.glb` is in Git LFS and cloud sessions cannot push LFS: name models `.glb.bin`. Hand off at 150k.
