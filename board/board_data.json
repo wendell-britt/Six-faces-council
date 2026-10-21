@@ -11733,6 +11733,39 @@
    "auto": true,
    "pos": "Friendcraft guests sign no release form, as you ruled. At the end of each episode you ask on the record whether there is anything they want out, and their logged yes is the release on file that the book's interview rule asks for. Before a quote enters the book, the guest sees it in context. This stands unless you flip it.",
    "why": "Your steer on fcp-release, 2026-10-21: \"I think the release forms is a bit much\". friendcraft-manuacript CLAUDE.md still says interview material is quotable only under the release on file, so this says what counts as that release. Source: podcast/CONSENT_AND_RELEASE.md"
+  },
+  {
+   "id": "gw-form-by-step",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "wave-form1",
+   "auto": true,
+   "pos": "A charge comes through the door as an occluded gas: its motes spread wide, grey and faint behind a dark haze. Each step of the W.A.V.E. you do defines it a little more (Not now gives no credit), until at the fork it is a clear gas in its element's colour. The stage still comes from sittings, so one W.A.V.E. never turns it into a creature. A creature or ally walks on the floor with a step, a sway and its face to where it goes. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"they need to start as gas and become defined as a function of what work is done on them ... the spirit should show up in an occluded gas form and as it's worked through should turn into a fully formed spirit\" and \"spirit should be walking on the ground (if and when they turn into a creature)\". gs-door-gas, sic-unfold-by-sitting. Built in bars-engine on the door spirits branch."
+  },
+  {
+   "id": "gw-unkept-vibeulon",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "wave-form1",
+   "auto": true,
+   "pos": "A charge you do not keep condenses into one vibeulon as it goes out the door, a gold coin on the threshold with the name you give it, and the count goes to your purse in the spirit store (and the passport). It no longer walks out with you as a lighter spirit. This replaces release and the threshold light. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"When we do a WAVE and choose not to keep a spirit it should turn into a vibeulon\". sc-offer-release: a vibeulon is minted by a finished 3-2-1 or W.A.V.E."
+  },
+  {
+   "id": "gw-summon-price",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "wave-form1",
+   "auto": true,
+   "pos": "The price of summoning is the vibeulon the W.A.V.E. would mint. At the end of a Toward-it W.A.V.E. you choose: keep it as a spirit (its vibeulon stays inside it), or let it become a vibeulon. A charge one of your spirits carries offers Feed <name> instead of Keep, at the same price. The other way to read it, paying one vibeulon from the purse, would bar a new player's first summon, so it is not taken. This stands unless you flip it.",
+   "why": "Your overrule of gs-care-is-the-cost, 2026-10-21: \"Summoning has a price\". gs-two-acts, gs-same-charge-grows."
   }
  ],
  "questions": [
