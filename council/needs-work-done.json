@@ -256,6 +256,16 @@
    "by": "Claude",
    "ref": "pass calrunia-creator2: council/callsheets/calrunia-creator.md, rows council/callsheets/rows/calrunia-creator2-2026-10-21.json",
    "at": "2026-10-21T17:55:00Z"
+  },
+  "2026-10-21-pull-172912#questions/cr2-arrival-scene": {
+   "by": "Claude",
+   "ref": "council/callsheets/calrunia-creator.md 'Brief after that' rewritten for the Arcade cutscene; cr2-first-build row revised; build in thread 'Arcade arrival cutscene'",
+   "at": "2026-10-21T17:45:00Z"
+  },
+  "2026-10-21-pull-172912#positions/cr2-first-build": {
+   "by": "Claude",
+   "ref": "council/callsheets/calrunia-creator.md 'Brief after that' rewritten for the Arcade cutscene; cr2-first-build row revised; build in thread 'Arcade arrival cutscene'",
+   "at": "2026-10-21T17:45:00Z"
   }
  }
 }
