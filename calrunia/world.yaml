@@ -1,0 +1,49 @@
+# Calrunia: one world, many places. Pass calrunia-world1 (council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md).
+# Each place keeps its own engine and repo. What they share is this registry and the passport.
+# A place appears on a player's map only once it is built and they have entered it (cw-emergent-map).
+world: calrunia
+ruling: mh-calrunia-hall  # "Calrunia is Sprout's world", 2026-10-03
+membrane: BAR             # outer-world reality made playable inside Calrunia (bars-engine BARS_CALRUNIA_WORLD_MECHANICS.md)
+
+passport:  # the one record that crosses places (cw-passport); schema to be built in bars-engine
+  holds: [player, spirits, hand, qi, vibeulons, embers, places_reached]
+  home: bars-engine Postgres behind sign-in
+  guest: browser store until sign-in claims it (the Chapter 1 demo runs as a guest)
+
+places:
+  - id: vessel
+    is: the player's living ship, home and front door; holds the barn where your spirits live and the WAVE room
+    rulings: [iv-*, ba-barn-in-ship, cw-front-door]
+    family: recovery
+    code: bars-engine content/ontology-game/cave/vessel.js (oag.vessel.v1)
+    shared: no
+  - id: sprout
+    is: the settlement and farm you are pulled into in Act 0; chores, days, rings, five domains
+    family: training
+    code: wendell-britt/sprout (prototype/ch1-arcade.html for Chapter 1)
+    shared: no
+  - id: cave
+    is: the land inside you, where your daemons keep their chambers and wild spirits are settled
+    family: transformational
+    code: bars-engine content/ontology-game/cave, route /ontology-game/cave
+    shared: no
+  - id: root
+    is: the training ground for practice with another body (sparring, push hands, partner dance)
+    family: contest
+    code: root-game engine/play_*.js, played from artifacts
+    shared: two players
+  - id: between
+    is: the hollow two ships share; the relationship is the creature
+    family: relational
+    code: bars-engine /ontology-game/between, Postgres between_* tables
+    shared: two players, exists only between their two passports
+  - id: element-lands
+    is: one land per element (metal is the cave; wood first), after the Chapter 1 demo
+    family: transformational
+    code: none yet (council/callsheets/element-settings.md)
+    shared: no
+
+currency:  # cw-qi-meter-scales
+  qi: a meter practice fills, shown as the light and weather of where you are
+  vibeulon: condensed qi, spent like Cradle's scales; the only currency that crosses places
+  gold: stays friendcraft's, minted only by grounding (ff-gold-minted-by-grounding)
