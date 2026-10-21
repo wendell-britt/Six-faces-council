@@ -11613,6 +11613,116 @@
    "auto": true,
    "pos": "First build, with no art round: the look field in the passport with its contract test, a table from each key to Sprout's parts and the 3D figure's settings, and the cave and the Between colouring skin and cloth from it. Then body shapes as shape keys, and a sprite render of the 3D figure beside the Sprout traveler for your eye. This stands unless you flip it.",
    "why": "Contract before art, as the passport round did; hx-looks-gate stays untouched because nothing new is drawn. Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-scene-not-form",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "The character creator is the first scene of Chapter 1, played, not a form. You reach the settlement at dusk, take shape at the well by the south gate, unpack your satchel and are written onto a travel paper, then walk through the gate to Tam's farm. It runs under three minutes. This stands unless you flip it.",
+   "why": "Your overrule of cr-first-build: design from the player's seat, not tools and dashboards. c1w-first-route: Chapter 1 opens once in Sprout's settlement, so the first shaping happens there. Ede already keeps the south gate (sprout campaigns/mtgoa-ch1/story.md, s3). Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-mist-takes-shape",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "You walk in as road mist. Dragging the mist settles one of the three body shapes, and pulling it wider or narrower sets the build. The mist thins as you choose, so your figure forms by what you do, the way door spirits do. This stands unless you flip it.",
+   "why": "Your 2026-10-21 door-spirit note: start as occluded gas, form by work done. cr-first-menu stands: three body shapes, four builds. Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-well-reflection",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "Skin and hair are chosen in the well. You draw a bucket, and the water shows your reflection; eight river stones on the well's lip are the skin tones, and a swipe across the water changes the hair. The figure stays faceless. This stands unless you flip it.",
+   "why": "cave-avatar-self (faceless), ba-likeness-choices (choices, never a photo), cc-store-safe hair. Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-satchel-and-bundle",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "Your clothes come out of your satchel: the jacket, the wrap dress and the long coat, each named by what it is and open to everyone, dyed in the traveler's violet and saffron. One cloth bundle stays tied and will not open. It is the robe, and it unties when you say the oath at the mouth of the hollow. This stands unless you flip it.",
+   "why": "Your answer on cr-look-by-place: traveler first, robe earned. tr-outfits-open, tr-foreign. The oath is already in the story (A8). A tied bundle rewards inquiry (constitution 9). Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-no-gender-step",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "The creator has no gender step. Body shapes are named by shape. When Ede writes your travel paper she asks how folk should speak of you; the answer is optional and starts at they. This replaces the gender-first order of the current Sprout creator. This stands unless you flip it.",
+   "why": "cr-first-menu: three body shapes open to every gender. tr-outfits-open already freed outfits from gender. The player authors who they are (constitution 10). Source: sprout slice/creator.js, council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-travel-paper",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "The player never sees a passport. They see a travel paper that Ede writes at the gate, with their name and their look. Each place they reach stamps it. Underneath it is the passport, and the look keys ride the Chapter 1 link to the ship. This stands unless you flip it.",
+   "why": "Your 2026-10-21 word on /passport (\"It looks terrible\"), cw-passport, c1w-link-handoff. Source: council/callsheets/calrunia-world.md"
+  },
+  {
+   "id": "cr2-change-free",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "You can change your look at any time, free: at the well in Sprout and later at a looking-glass aboard the ship. A look never costs vibeulons and never gates progress. Earned pieces, like the robe, add to what you can wear; they never replace a choice. This stands unless you flip it.",
+   "why": "Belonging and baseline quality are never bought (ontology quickstart, session depth). Correction stays with the player. Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-roll-a-stranger",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "Every beat opens with \"choose for me\", and the whole scene can be skipped to a ready traveler. The test is time to the gate: under three minutes for a first player, under thirty seconds for a skip. This stands unless you flip it.",
+   "why": "Mii Maker puts random first; presets and skips keep the quality floor (ontology quickstart). Source: council/callsheets/calrunia-creator.md, survey of 2026-10-21"
+  },
+  {
+   "id": "cr2-reuse",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "We refit, not build from scratch. 2D: Sprout's own traveler parts, with the LPC generator's recipe file and credits export as the pattern (its code is GPL, so we copy the idea, not the code). 3D: CharacterStudio (MIT, three.js) for trait swapping and merging the figure into one mesh, fed our own meshes. Blender exports follow the Mozilla avatar maker's rule, where each filename names its slot on the one rig. Quaternius kits stay reference only, since only our own work and CC0 ship. This replaces cr-build-own and stands unless you flip it.",
+   "why": "Your overrule of cr-build-own asked for a survey of open-source creators. One worker survey on 2026-10-21 (github.com/M3-org/CharacterStudio, github.com/mozilla/hackweek-avatar-maker, github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator, quaternius.com/license.html). Ready Player Me shut down 31 January 2026. Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "cr2-first-build",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "calrunia-creator2",
+   "auto": true,
+   "pos": "First build: the well scene in Sprout, in place of today's step-by-step creator, opening the Chapter 1 page, with a preview link that opens on the scene. It uses the traveler sprites Sprout already draws, so no art round. Second: the looking-glass aboard the ship in 3D, a CharacterStudio refit reading the same choices. The look field in the passport is written once the ship reads it. This replaces cr-first-build and stands unless you flip it.",
+   "why": "c1w-first-route (Chapter 1 opens in Sprout), hx-looks-gate (no new art round), the Kickstarter gate (chapter1-demo.md). Source: council/callsheets/calrunia-creator.md"
   }
  ],
  "questions": [
@@ -18490,6 +18600,34 @@
      "v": "earned",
      "label": "C. Traveler first, robe earned (recommended)",
      "c": "You start as the traveler; the oath at the end of Chapter 1 gives you the robe, and you keep both."
+    }
+   ]
+  },
+  {
+   "id": "cr2-arrival-scene",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "calrunia-creator2",
+   "q": "Where does your traveler first take shape when they reach the settlement? The council recommends the well at the south gate.",
+   "why_you": "This is the book's first image of the player, and the story has no arrival scene yet. Each option keeps the same choices; only the place and who greets them change.",
+   "not_before": "Until today the creator was a form before the story. Making it a scene is the first time the story needs an arrival.",
+   "options": [
+    {
+     "v": "well",
+     "label": "A. The well at the south gate (recommended)",
+     "c": "You come in off the road as mist; Ede meets you at the well, and later opens this same gate to Pip."
+    },
+    {
+     "v": "barn",
+     "label": "B. Tam's barn at dawn",
+     "c": "You wake in Tam's barn and dress by a water trough; Tam's farm is what you see first."
+    },
+    {
+     "v": "arcade",
+     "label": "C. A cabinet in the Infinite Arcade",
+     "c": "Chapter 1's title frames it: you pick your player at an arcade cabinet, then step through the screen into the settlement."
     }
    ]
   }
