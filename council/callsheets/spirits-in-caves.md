@@ -139,4 +139,20 @@ meters and easing, standing W.A.V.E. (`waveStart` :1434), let-go after 3-2-1 (`l
 `buildSpirit` cave.js:1572, `followSpirits` :1579, `SPIRITS_SHOWN = 3`; Big Mind save `oag.bigmind.v1`.
 
 ## Waiting on
-- His look at the elder and the five forms (preview of bars-engine #398, Sit in the WAVE room).
+- His look at the elder after the card fix (brief of 2026-10-21 below; bars-engine #398).
+
+## Brief, 2026-10-21 01:20 UTC: the elder's card is too big (owns bars-engine #398)
+Wendell, 2026-10-21, on a phone screenshot of the open elder card: "Need to be able to minimize or x out of the menu so the
+player and the spirit can be in shot. It's really hard to see the most important parts of the screen"
+- Already on #398 (head 5dc68be, preview live): the ally and creature drawn solid in their own paint (bake_spirits.py
+  keeps per-part rgb and vertex colour for LATE stages; spirit-forms.js draws painted parts with MeshLambertMaterial), and the
+  elder faces the room's middle (buildForm option faceAt; ALLY_TURN -0.7, a form's front is its +x).
+- To do: in cave.js elderCard (openRoom, slice 5) make the card small: forms as one compact row of short buttons, the
+  says/form lines one short line, a minimize button that folds it to a small chip (tap to unfold), and an X that closes it
+  (elderClose). Keep the Welcome pane from covering the elder too (it has data-room-shrink "Look around"). The floating
+  "Shellback, an elder" label reads huge up close; shrink it while the card is open. Check on a 390x844 phone view that the
+  figure and the elder both show with the card open and minimized. Add cave-test checks for minimize and X.
+- Open test question: cave-test "walking onto the rug offers Sit down" failed twice locally on 5dc68be and passed on the prior
+  head (and once on 5dc68be with logging); in the failing runs the figure sat at the seat (0, 2.4) during the hidden-stick
+  thumb test. Find the cause before merge. The two hall camera checks fail on main too.
+- Then a testable preview link to him, and merge #398 once he says it looks right (bars-engine has no auto-merge).
