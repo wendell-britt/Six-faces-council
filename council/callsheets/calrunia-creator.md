@@ -112,10 +112,33 @@ only. Kenney Mini Characters CC0 but little to customise. No good free 3D-to-spr
    Run `python3 council/tools/voice_lint.py` on it.
 3. Reply to Wendell under 80 words naming the page, the board rows and the one question; no question in the reply.
 
-## Brief after that (Opus, sprout, first build; starts on his answer to cr2-arrival-scene or with A if it stands)
+## His answers, 2026-10-21 17:29 UTC (council/ledger/2026-10-21-pull-172912.json)
 
-Replace `slice/creator.html`/`creator.js` (gender-first wizard) with the arrival scene above, using the existing
-traveler parts (`tools/build-traveler.mjs`, `character-parts/`), opening `prototype/ch1-arcade.html`, carrying the look
-choices in the Chapter 1 link (`c1w-link-handoff`). Scout line: rung 2 (we have the parts) plus the LPC recipe idea.
-Give a one-click preview opened on the scene (artifact or the sprout host). Then the ship's looking-glass (bars-engine,
-CharacterStudio refit) as round 2.
+`cr2-arrival-scene` C, the Infinite Arcade (a cabinet), not the well. `cr2-first-build` overruled: "I Think I want to
+build the web scene in 3d in blender. Have it be like a cutscene for sprout". Read as the arrival scene ("web" for
+"well"); if he meant something else, the thread asks on the board. The other nine `cr2-*` positions stand. The row
+`cr2-first-build` now carries the revised build below.
+
+## Brief after that (Opus; Blender in bars-engine `tools/blender-cloud`, play in sprout)
+
+Scout: rung 2. We have headless Blender (`tools/blender-cloud`, bpy 5.2.2), the Average Dusk walker, CC0 BlenderKit
+fetch, the vendored blender-skills (animation, lighting, rendering) and Sprout's traveler parts. Nothing new to find.
+
+The scene, from the player's seat:
+1. **Shot one (Blender, about 8 s, rendered video).** Mist, a corridor of arcade cabinets going on forever, their
+   screens glowing; the camera drifts to one cabinet marked for Chapter 1. Its screen shows road mist. Low poly, dusk
+   palette; the cabinets are ours (box modelling), any prop from BlenderKit is CC0.
+2. **The cabinet screen (Sprout, interactive).** The video holds on its last frame; the creator runs inside the
+   screen rectangle, using the existing traveler sprites: mist takes shape (body, build), the screen goes dark and its
+   glass is the reflection (skin, hair), the satchel (outfit, dye, the tied bundle). "Choose for me" on every beat,
+   skip gives a ready traveler.
+3. **Shot two (Blender, about 5 s).** The camera pushes through the screen into light and comes out on the road to the
+   south gate.
+4. **The travel paper (Sprout).** Ede writes your name and how folk speak of you, then `prototype/ch1-arcade.html`
+   opens with the look in the link (`c1w-link-handoff`).
+
+Build: a Blender script in bars-engine `tools/blender-cloud/content/arcade/` (renders both shots, 720p WebM and MP4,
+under 3 MB each, plus poster stills and the screen rectangle as JSON); the creator in sprout replacing
+`slice/creator.html`/`creator.js`, playing the shots. Proof the cheap way first: a still of the corridor before the
+video. Preview: the sprout preview deploy opened on the scene. Then the ship's looking-glass (CharacterStudio refit)
+as round 2.
