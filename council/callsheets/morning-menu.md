@@ -129,3 +129,11 @@ First build: bars-engine #414, a read-only "Not chosen" section in Tap the Vein 
 Next, in order: (1) when #414 merges, his look at /tap-the-vein?view=unchosen; (2) "Draw into today" on a raw or
 unpicked line; (3) a store for the council's misses (declined menu suggestions, unpicked face-off cards,
 `uc-council-misses`); (4) if he answers `uc-who-reads` B or C, a weekly read in `council/bar_read.py`'s style. Test UC1 on 2026-11-04.
+
+**Weekly read built, 2026-10-21.** He answered `uc-who-reads` B (pull 17:16 UTC). bars-engine branch
+`claude/project-thread-klpz41`: table `ttv_unchosen_pitches`, GET/POST `/api/tap-the-vein/unchosen`, pitches in the Not
+chosen view (preview `?view=unchosen&sample=1`). Council: `council/unchosen_read.py`, `docs/unchosen-read.md`. Per his
+steer on `uc-pattern-returns`, a returning word gets a new pitch and the old one is composted beside it. Blocked on
+`COUNCIL_MENU_TOKEN` (401 on 10-21). TRIGGER: the token answers 200 and the bars-engine pull request has merged ->
+create a weekly routine (Mondays, one Sonnet thread per docs/unchosen-read.md, no chat line beyond the count), and run
+the first read. His look at the sample preview may steer the pitch card.
