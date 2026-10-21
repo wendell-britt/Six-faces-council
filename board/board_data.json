@@ -11132,6 +11132,28 @@
    "auto": true,
    "pos": "The Jev trials are paused: the quote-to-claim check and the asset docs-versus-code trial. Nothing already built is removed, and the pass marks, sample sizes, the TypeSafe account and the data-terms reading are no longer due. They restart when a job that runs repeatedly needs cheap, fast judgments. This stands unless you flip it.",
    "why": "Your words: 'Do 1 and 2', on the council's recommendation. No Jev call has been made. The audit that fed the asset trial was done better by Claude with the code open, and Jev's strength is cheap structured judgments in code that runs often, which nothing in the project needs today. What is saved and what would restart it is in council/jev/STATUS.md (bars-engine, PR #256). Fixes from the audit are in bars-engine#407."
+  },
+  {
+   "id": "hx-carry-feeds-spirit",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "Hexagram reading 2026-10-21",
+   "auto": true,
+   "pos": "The first content built from your hexagram reading is the link from a carried card to a wild spirit: a card drawn and put back three times wakes a spirit in the family of the daemon holding it, and you settle it by sparring (do it smaller, rewrite it, or compost it for a vibeulon). It proves itself first as a test in council/spirit-care/sim.py before any page. This stands unless you flip it.",
+   "why": "The other four proposals lean on this link, and the record shows nothing ties carryCount or discards to a daemon today. Source: /mnt/project-files/hexagram-reading/reading-2026-10-21.md"
+  },
+  {
+   "id": "hx-looks-gate",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "Hexagram reading 2026-10-21",
+   "auto": true,
+   "pos": "The spirit loop's rule, at most two rounds past your last look, extends to every strand: no new art or build round starts on a strand with two rounds you have not looked at. This stands unless you flip it.",
+   "why": "Building outruns looking: phone plays, the J5 look, the dock, v30 and the Chapter 1 play all wait, and 63 of 107 threads ran long. Source: docs/loops.md; usage audit 2026-10-18; the reading above."
   }
  ],
  "questions": [
