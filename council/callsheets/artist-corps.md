@@ -30,6 +30,15 @@ dissents), `pos-ac-coop-pipeline` (contractor, associate, member; lawyer flag, t
 No questions. Step `artist-corps-anchor-01` (list `artist-corps`, due 10-22) asks Wendell to name the anchor non-profit,
 or write "shortlist".
 
+## Anchor named (2026-10-21)
+
+His note on `artist-corps-anchor-01`: Mentor$Chip (Mentorschip Inc) or the Mastering the Game of Allyship Nonprofit.
+`council/artist-corps/t1-anchor-candidates.md` has the 990-EZ numbers (Mentorschip spent $11,757 in the year to July 2024;
+the Allyship nonprofit has no filing), the position (T1 runs on Mentorschip, the Allyship nonprofit is second) and the
+five-item ask list. **Open:** the ask list is not yet a step or an Outreach draft, because the board store answered 401
+on COUNCIL_MENU_TOKEN. When it answers 200, push a step "Ask your Mentorschip contact five questions" (the ask list, with
+the T1 due date 10-30) and an Outreach draft to the contact, via `board/store_write.py push`.
+
 ## Next
 
 1. **When the anchor step has a note** (board pull lists it as needs work): with a name, run T1 per `pos-ac-t1-design`
