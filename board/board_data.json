@@ -11766,6 +11766,50 @@
    "auto": true,
    "pos": "The price of summoning is the vibeulon the W.A.V.E. would mint. At the end of a Toward-it W.A.V.E. you choose: keep it as a spirit (its vibeulon stays inside it), or let it become a vibeulon. A charge one of your spirits carries offers Feed <name> instead of Keep, at the same price. The other way to read it, paying one vibeulon from the purse, would bar a new player's first summon, so it is not taken. This stands unless you flip it.",
    "why": "Your overrule of gs-care-is-the-cost, 2026-10-21: \"Summoning has a price\". gs-two-acts, gs-same-charge-grows."
+  },
+  {
+   "id": "em-send-is-permission",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "email-pipeline1",
+   "auto": true,
+   "pos": "Pressing Send on an email draft on the Outreach tab is your permission to send exactly that text from wendell@masteringallyship.com. It lights the Send bar, a stated exception to outreach-no-send. If the text changes after Send, nothing goes out. This stands unless you flip it.",
+   "why": "Your step note of 21 October: \"hitting the send button on the council board gives permission to send the email\"."
+  },
+  {
+   "id": "em-any-client-drafts",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "email-pipeline1",
+   "auto": true,
+   "pos": "Any client (Claude threads, Zo, Codex, routines) may draft an email onto a contact; only a Claude session holding the Gmail connector sends, and only what board/email_pipeline.py ready lists. This stands unless you flip it.",
+   "why": "The Gmail connector was checked on 21 October and is signed in as wendell@masteringallyship.com."
+  },
+  {
+   "id": "em-voice-pass",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "pass": "email-pipeline1",
+   "auto": true,
+   "pos": "The editorial pass for your voice is voice_lint on every draft plus your own edit on the draft card before Send. No extra rewriting step is added unless you ask for one. This stands unless you flip it.",
+   "why": "Send is already your read of the exact text, so a second rewriting step would add a gate you did not ask for."
+  },
+  {
+   "id": "em-self-test-first",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "email-pipeline1",
+   "auto": true,
+   "pos": "The first real send is a test email to your own address, drafted onto the live board once council #351 merges; you press Send, a session sends it and records the Gmail ids. Outreach to anyone else waits for that round trip to work. This stands unless you flip it.",
+   "why": "A send cannot be taken back, so the round trip is proven on your own address before any contact sees it."
   }
  ],
  "questions": [
