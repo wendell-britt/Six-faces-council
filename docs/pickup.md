@@ -57,6 +57,19 @@ ArtifactData: `{state: queued|working|review|new-thread, owner: "<thread or PR t
 The With Claude list on his Your steps tab shows each card's state and owner. Update `status` when the thread finishes
 (`review`, then tick the step done); a step with no `status` reads "Not picked up yet" to him. Rebuild and republish.
 
+## Blocking steps (2026-10-21)
+
+Wendell, 2026-10-21: "give me step by step instructions on the board for this as a highest blocking priority. I think
+things with this priority not unlike the daily tap the vein block access to the rest of the board until resolved or
+sent to Claude with more instructions". A step written with `blocking: true` holds the Council Board: it opens on Your
+steps, every other tab is held, and only the open blocking steps show, whole, ahead of the Tap the Vein gate. A step
+releases when he ticks it done, when it is withdrawn (`retired`), or when he sends it to Claude with more instructions,
+which writes `aiBack {text, automate: false, at, from: "blocking"}`. That card is routed like any With Claude card
+(above). A moved date or a discard does not release it. When the last one releases, Tap the Vein's gate takes over if
+today's is not done. Write `blocking` only when he asks for that priority, and keep each such step to one action with
+`where`, `enter` and `check`, since nothing else on the board is reachable until it is done. Check:
+`/mnt/project-files/board-blocking-2026-10-21/check.mjs`.
+
 ## The Send to Claude button
 
 `board/template.html` shows a bar at the bottom of the board once anything is saved and not yet sent: a row saved and

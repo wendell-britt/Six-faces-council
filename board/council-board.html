@@ -447,8 +447,18 @@ body.has-send{padding-bottom:120px}
 /* Tap the Vein first (ttv-first, Wendell 2026-10-14): until today's is sealed, done in bars-engine or skipped, the board
    opens on the Morning tab and holds the other tabs. */
 .ttv-gate{display:none;border:1px solid var(--accent);border-radius:8px;padding:12px 14px;margin:12px 0}
-body.ttv-held .ttv-gate{display:block}
-body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
+body.ttv-held:not(.blk-held) .ttv-gate{display:block}
+body.ttv-held:not(.blk-held) .tab:not(#tab-morning){opacity:.4;pointer-events:none}
+/* Blocking steps (blk-, Wendell 2026-10-21): a step with blocking: true holds the whole board on Your steps, ahead of
+   Tap the Vein, until he ticks it done or sends it to Claude with more instructions. */
+.blk-gate{display:none;border:2px solid #b3261e;border-radius:8px;padding:12px 14px;margin:14px 0}
+body.blk-held .blk-gate{display:block}
+body.blk-held .tab:not(#tab-steps){opacity:.4;pointer-events:none}
+body.blk-held #view-steps > :not(.blk-gate){display:none}
+.blk-gate h2{margin:0 0 4px;font-size:1.1rem}
+.blk-gate .st-steps{margin:10px 0 0}
+.blk-ask{list-style:none;margin:6px 0 14px 40px}
+.blk-ask textarea{width:100%;min-height:64px;box-sizing:border-box}
 .ttv-gate .ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .empty.store-fault{color:#b3261e;border:1px solid #b3261e;border-radius:6px;padding:10px 12px}
 </style>
@@ -517,6 +527,11 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
 </section>
 
 <section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
+  <div class="blk-gate" id="blk-gate" role="region" aria-label="Blocking steps first">
+    <h2 id="blk-head">This comes before anything else on the board</h2>
+    <p class="lede" style="margin:0">The rest of the board opens when each step below is ticked done or sent to Claude with more instructions.</p>
+    <ol class="st-steps" id="blk-list"></ol>
+  </div>
   <p class="lede" style="margin-top:14px">Only the steps nobody else can take, because they need your accounts, your money or your eyes. Each one says where to go, what to enter, how you will know it worked, and when it is due.</p>
   <div class="st-where" id="st-where">
     <span class="st-sum">I'm on my</span>
@@ -1258,6 +1273,32 @@ const stOverdue = s => !s.done && !s.retired && !s.optional && (stDaysLeft(s.due
    A step is closed when it is done or withdrawn (retired). A list is finished when it has steps and none of its required ones
    is still open, so a list whose steps were all withdrawn leaves the open list too. Closed steps sit in a collapsed group. */
 const stClosed = s => !!(s.done || s.retired);
+/* Blocking steps (blk-). Wendell, 2026-10-21: "give me step by step instructions on the board for this as a highest
+   blocking priority. I think things with this priority not unlike the daily tap the vein block access to the rest of
+   the board until resolved or sent to Claude with more instructions". A session writes blocking: true on a step in the
+   store. While any such step is open (not done, not withdrawn, not handed to Claude), the board opens on Your steps
+   with every other tab held and shows only those steps, whole and in list order, ahead of the Tap the Vein gate. Sending
+   one to Claude writes aiBack the way the hand does (hd-back), so it joins the With Claude list and a board read routes
+   it; a discard or a moved date does not release it. */
+const blkIs = s => !!(s && s.blocking && !stClosed(s) && !s.aiBack);
+const blkOpen = () => Object.entries(stSteps).filter(([, s]) => blkIs(s))
+  .sort((a, b) => String(a[1].list || '').localeCompare(String(b[1].list || '')) || (Number(a[1].n) || 0) - (Number(b[1].n) || 0));
+const blkDrafts = {};
+function blkGate(){
+  const open = blkOpen(), held = !!db && open.length > 0, was = document.body.classList.contains('blk-held');
+  document.body.classList.toggle('blk-held', held);
+  if (held){
+    open.forEach(([id]) => stOpenGroups.add('s-' + id));
+    const titles = [...new Set(open.map(([, s]) => (stLists[s.list] || {}).title).filter(Boolean))];
+    document.getElementById('blk-head').textContent = titles.length === 1 ? titles[0] : 'This comes before anything else on the board';
+    document.getElementById('blk-list').innerHTML = open.map(([id, s]) => stStep(id, s) + `<li class="blk-ask"><details${blkDrafts[id] ? ' open' : ''}><summary>Send this one to Claude with more instructions</summary>
+      <textarea id="bka-${id}" placeholder="What Claude should know or do instead. The board opens again once every step here is done or with Claude.">${esc(blkDrafts[id] || '')}</textarea>
+      <button type="button" class="st-btn st-solid" data-blk-ai="${id}">Send to Claude</button> <span class="st-state" id="bks-${id}"></span></details></li>`).join('');
+  } else document.getElementById('blk-list').innerHTML = '';
+  if (held && !was) show('steps');
+  // Tap the Vein's gate takes over again, opening on Morning as if the board had just loaded.
+  if (!held && was){ document.body.classList.remove('ttv-held'); ttvGate(); }
+}
 const stFinished = id => { const all = stOf(id); return all.length > 0 && stReq(all).every(([,s]) => s.done); };
 const stOpenGroups = new Set();
 /* Wendell, 2026-10-12: "we also need the ability to collapse steps so I can see all the open items and open them up when I
@@ -1298,7 +1339,7 @@ function stFile(id, s, f){
   </details>`;
 }
 function stStep(id, s){
-  if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
+  if (stLater(s) && !blkIs(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
   const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}${stHref(s.href2) ? `<br><a href="${esc(s.href2)}" target="_blank" rel="noopener">${esc(s.where2 || 'Then open this')}</a>` : ''}</div></div>` : '';
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
@@ -1360,6 +1401,9 @@ function renderSteps(){
   const live = ids.filter(id => stOf(id).length > 0);
   const todo = live.filter(id => !stFinished(id)), done = live.filter(id => stFinished(id));
   const chases = ocChases(), hand = hdHand(), deck = hdDeck(todo), inHand = new Set(hand.map(c => c.id));
+  blkGate();
+  // A blocking step is drawn in the gate only, never again in its list.
+  for (const [sid] of blkOpen()) inHand.add(sid);
   hdRender(hand, deck, chases);
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id], inHand)).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
@@ -1369,7 +1413,7 @@ function renderSteps(){
   stEmpty.classList.toggle('store-fault', stFault);
   stEmpty.textContent = stFault ? storeFault('step lists', stStore)
     : 'Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.';
-  document.getElementById('n-steps').textContent = hand.length;
+  document.getElementById('n-steps').textContent = hand.length + blkOpen().length;
   const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
   const waiting = open.filter(([sid]) => !inHand.has(sid)).length;
   document.getElementById('hd-deck').hidden = todo.length === 0 && !chases.length;
@@ -1408,7 +1452,7 @@ let hdShown = null, hdPrev = new Set(), hdFresh = new Set(), hdRiffle = false, h
 const hdAiDrafts = {};
 const hdAway = s => !!(s && s.discardedUntil && s.discardedUntil > new Date().toISOString());
 const hdBack = s => !!(s && s.aiBack && !stClosed(s));
-const hdHeld = s => !!(s && s.inHand && !stClosed(s) && !hdAway(s) && !s.aiBack);
+const hdHeld = s => !!(s && s.inHand && !stClosed(s) && !hdAway(s) && !s.aiBack && !blkIs(s));
 const hdDays = s => HD_LADDER[Math.min(((s && s.discards) || []).length, HD_LADDER.length - 1)];
 const hdTtvId = it => 'ttv-' + String(it.taskId || it.id || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 80);
 // Today's sealed Tap the Vein lines: the Morning tab's free-write category.
@@ -1431,7 +1475,7 @@ function hdHand(){
 }
 // The deck, top card first (position hd-draw).
 function hdDeck(todo){
-  const cards = [], seen = new Set(), out = s => stClosed(s) || hdAway(s) || hdHeld(s) || !!s.aiBack;
+  const cards = [], seen = new Set(), out = s => stClosed(s) || hdAway(s) || hdHeld(s) || !!s.aiBack || blkIs(s);
   for (const x of hdTtv()){
     const s = stSteps[x.id]; seen.add(x.id);
     if (s && out(s)) continue;
@@ -1633,11 +1677,19 @@ stepsView.addEventListener('toggle', e => {
 stepsView.addEventListener('input', e => {
   if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value;
   if (e.target.id && e.target.id.startsWith('hda-')) hdAiDrafts[e.target.id.slice(4)] = e.target.value;
+  if (e.target.id && e.target.id.startsWith('bka-')) blkDrafts[e.target.id.slice(4)] = e.target.value;
   if (e.target.id && e.target.id.startsWith('sfn-')) stFileDrafts[e.target.id.slice(4)] = e.target.value;
 });
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.hd) return hdClick(t);
+  if (t.dataset.blkAi){
+    const id = t.dataset.blkAi, text = (document.getElementById('bka-' + id).value || '').trim();
+    if (!text){ document.getElementById('bks-' + id).textContent = 'Say what Claude should know first.'; return; }
+    if (!db){ document.getElementById('banner').classList.add('on'); return; }
+    delete blkDrafts[id];
+    return hdWrite(id, {aiBack: {text, automate: false, at: now(), from: 'blocking'}, inHand: null}, 'Sent to Claude. It is on the With Claude list.');
+  }
   if (t.dataset.bk && hdLifted){ hdLifted = ''; document.getElementById('hd-lift').hidden = true; }
   if (t.dataset.where){
     stWhere = t.dataset.where; try { localStorage.setItem('st-where', stWhere); } catch {}
@@ -2269,6 +2321,7 @@ function ttvSkipRun(){
 function ttvGate(){
   const held = !!db && ttvDays !== null && !ttvHandled(), was = document.body.classList.contains('ttv-held');
   document.body.classList.toggle('ttv-held', held);
+  if (held && document.body.classList.contains('blk-held')) return;
   if (held && !was){ show('morning'); document.getElementById('mo-ttv').open = true; }
   if (held && mcp && ttvCheck !== ttvToday()) ttvAsk();
 }
