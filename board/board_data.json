@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "positions": [
   {
    "id": "build",
@@ -29962,6 +29962,55 @@
      "challenger"
     ],
     "pass": "spirit care 2"
+   },
+   "hx-carry-feeds-spirit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:16:40.989Z",
+    "record": "council/ledger/2026-10-21-pull-011653.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "Hexagram reading 2026-10-21"
+   },
+   "hx-looks-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:16:45.854Z",
+    "record": "council/ledger/2026-10-21-pull-011653.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "Hexagram reading 2026-10-21"
+   },
+   "jev-trials-paused": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:16:47.649Z",
+    "record": "council/ledger/2026-10-21-pull-011653.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "jev asset"
+   },
+   "jev-asset-readers-label": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:16:53.309Z",
+    "record": "council/ledger/2026-10-21-pull-011653.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "regent"
+    ],
+    "pass": "jev asset"
    }
   },
   "questions": {
@@ -32670,6 +32719,19 @@
      "shaman"
     ],
     "pass": "spirit care 1"
+   },
+   "jev-asset-additions": {
+    "decision": "matches",
+    "label": "An extra behaviour counts as a match, recorded as a separate finding",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:16:35.631Z",
+    "record": "council/ledger/2026-10-21-pull-011653.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "jev asset"
    }
   },
   "causes": {
