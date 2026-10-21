@@ -34886,8 +34886,8 @@
  "steps_recorded_through": "2026-10-20T21:56:00.000Z",
  "morning": {
   "date": "2026-10-20",
-  "gathered_at": "2026-10-20T00:23:57Z",
-  "sealed": null,
+  "gathered_at": "2026-10-21T17:02:44Z",
+  "sealed": "2026-10-20",
   "pick_limit": 7,
   "goals": [],
   "lenses": {
@@ -34922,22 +34922,69 @@
      "prompt": "Who is better off because you showed up?",
      "goals": []
     }
-   ],
-   "note": "goals export not read: the key was refused (401); set COUNCIL_MENU_TOKEN or the proxy's key to the one in Vercel"
+   ]
   },
   "seeds": {
    "seeds": [],
    "back": [],
-   "read": false,
-   "note": "seed library not read: the key was refused (401); set COUNCIL_MENU_TOKEN or the proxy's key to the one in Vercel"
+   "read": true
   },
   "categories": [
    {
     "key": "menu",
     "title": "From your free write",
     "blurb": "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).",
-    "items": [],
-    "note": "no menu read this morning; seal Tap the Vein, then fetch the export (docs/morning.md)"
+    "items": [
+     {
+      "id": "menu-task:cmvh1hcot000214khhcemrwdk",
+      "text": "Push my own coaching site.",
+      "note": "Task",
+      "taskId": "cmvh1hcot000214khhcemrwdk",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "menu-task:cmvh1hdt5000b14kh8u037rpy",
+      "text": "Send the Campaign site to Annastasia",
+      "note": "Task",
+      "taskId": "cmvh1hdt5000b14kh8u037rpy",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "menu-task:cmvh1hfbs000k14kh7ex7mu0r",
+      "text": "REach out to MArina to be on the Podcast",
+      "note": "Task",
+      "taskId": "cmvh1hfbs000k14kh7ex7mu0r",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "menu-task:cmvh1hgbt000t14khzuepor6c",
+      "text": "Finish the Social Media Automation",
+      "note": "Task",
+      "taskId": "cmvh1hgbt000t14khzuepor6c",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "menu-line:reach out to mark carpenter about gathertown",
+      "text": "Reach out to Mark Carpenter about Gathertown",
+      "note": "Kept line",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     }
+    ]
    },
    {
     "key": "board",
@@ -34945,188 +34992,154 @@
     "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
     "items": [
      {
-      "id": "board-ttv-one-ui",
-      "text": "The board shows bars-engine's own Tap the Vein in its Morning tab, never a copy of it. The claude.ai page links out to it.",
-      "ref": "ttv-one-ui",
+      "id": "board-uc-who-reads",
+      "text": "May the council read your unchosen Tap the Vein lines to find patterns? The council recommends once a week, in place.",
+      "ref": "uc-who-reads",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, tap the vein on the board",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "diplomat",
-       "kernel": "One Tap the Vein, the one bars-engine serves, so the two pages stop disagreeing on his screen.",
-       "date": "2026-10-20",
-       "list": "board",
-       "listTitle": "Waiting on you on the board",
-       "missing": [],
-       "gathered": [],
-       "workable": true,
-       "opponent": null,
-       "factors": {
-        "signal": {
-         "list": "Waiting on you on the board",
-         "note": "The row quotes his words of 2026-10-19 about the two pages confusing him."
-        },
-        "ready": {
-         "lineMissing": [],
-         "note": "Built and merged on 2026-10-19 in bars-engine #403 and Six-faces-council #312."
-        },
-        "unlocks": {
-         "line": 0,
-         "council": 0,
-         "note": "Nothing waits on it now that both pull requests are in."
-        },
-        "waiting": {
-         "days": 1,
-         "note": "One day on the waiting list as a standing position."
-        }
-       },
-       "call": "let-go-offered",
-       "decidedBy": "ready",
-       "why": "Both pull requests merged on 19 October, so this position already holds. It can leave the waiting list unless he wants to flip it."
-      }
-     },
-     {
-      "id": "board-tb-sealed-is-bar",
-      "text": "A line you seal in Tap the Vein is a BAR the council can read. Today's task is one form of it; resting in the seed library or joining a strand is another. A BAR still creates no duty to build it. This updates ttv-task-not-bar: sealing is…",
-      "ref": "tb-sealed-is-bar",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, ttv-bars 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "architect",
-       "kernel": "Every line he seals is a BAR the council may read, with no duty to build it.",
-       "date": "2026-10-20",
-       "list": "board",
-       "listTitle": "Waiting on you on the board",
-       "missing": [],
-       "gathered": [],
-       "workable": true,
-       "opponent": {
-        "kind": "callsheet",
-        "ref": "morning-menu",
-        "what": "the Morning lists flow that reads BARs",
-        "title": "morning-menu",
-        "entry": "2026-10-20, thread \"Morning lists into the faces' flow\" (branch claude/morning-lists-flow-ark0q6, draft PR on Six-faces-council): the orphaned Morning tab lists (waiting on you, steps, due, handoff, o"
-       },
-       "factors": {
-        "signal": {
-         "list": "Waiting on you on the board",
-         "note": "A standing position from pass ttv-bars 1 on 2026-10-19."
-        },
-        "ready": {
-         "lineMissing": [],
-         "note": "council/bar_read.py already reads sealed lines by this rule."
-        },
-        "unlocks": {
-         "line": 0,
-         "council": 1,
-         "note": "It is the ground the morning-menu strand's reads stand on."
-        },
-        "waiting": {
-         "days": 1,
-         "note": "One day on the waiting list."
-        }
-       },
-       "call": "join",
-       "decidedBy": "unlocks",
-       "why": "The morning-menu strand already applies this rule in bar_read.py. It belongs with that work and needs nothing from him unless he flips it."
-      }
-     },
-     {
-      "id": "board-tb-face-unpacks",
-      "text": "One face reads each sealed line: what it is reaching for in one sentence, where it belongs, what stops it being worked today, and what the face found in the record to fill that gap. The read lives on the board, never in your task or its…",
-      "ref": "tb-face-unpacks",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, ttv-bars 1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "shaman",
-       "kernel": "Each sealed line gets one face that listens for what it reaches for before anyone judges it.",
-       "date": "2026-10-20",
-       "list": "board",
-       "listTitle": "Waiting on you on the board",
-       "missing": [],
-       "gathered": [],
-       "workable": true,
-       "opponent": {
-        "kind": "callsheet",
-        "ref": "morning-menu",
-        "what": "the faces' reads on the Morning tab",
-        "title": "morning-menu",
-        "entry": "2026-10-20, thread \"Morning lists into the faces' flow\" (branch claude/morning-lists-flow-ark0q6, draft PR on Six-faces-council): the orphaned Morning tab lists (waiting on you, steps, due, handoff, o"
-       },
-       "factors": {
-        "signal": {
-         "list": "Waiting on you on the board",
-         "note": "His words in the row ask the council to unpack a line until it can be worked."
-        },
-        "ready": {
-         "lineMissing": [],
-         "note": "The reads he sees this morning are this rule in practice."
-        },
-        "unlocks": {
-         "line": 0,
-         "council": 1,
-         "note": "Each morning's reads depend on it."
-        },
-        "waiting": {
-         "days": 1,
-         "note": "One day on the waiting list."
-        }
-       },
-       "call": "join",
-       "decidedBy": "signal",
-       "why": "This morning's reads are this position at work. It rests inside the morning-menu strand and needs his look only if he wants it changed."
-      }
-     },
-     {
-      "id": "board-tb-context-first",
-      "text": "A free-write line gets its context gathered before it meets council work, so it is judged on what it is, not on what the council happens to know already.",
-      "ref": "tb-context-first",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, ttv-bars 1",
+      "note": "question, unchosen1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "board-tb-face-off",
-      "text": "Each read line meets the one piece of council work competing for the same hours. Four factors show one by one (your signal, how ready it is, what it unlocks, how long it has waited), never added into one score, and the call names the…",
-      "ref": "tb-face-off",
+      "id": "board-c1w-blank-card",
+      "text": "The Chapter 1 arrival aboard the ship always shows one blank card, and the spirit asks about it. The passport has no field for a blank card yet, so the page adds it on arrival. It becomes a passport field (a hand item with no title) when…",
+      "ref": "c1w-blank-card",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, ttv-bars 1",
+      "note": "position, stands unless you flip it, chapter1-calrunia1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "board-tb-call-is-advice",
-      "text": "The council's call is advice: work it today, defer it to the seed library, join it to a strand, or (only ever offered) let it go. You tap the outcome in Tap the Vein. Nothing is deferred or composted for you.",
-      "ref": "tb-call-is-advice",
+      "id": "board-gs-two-acts",
+      "text": "Summoning makes a new spirit; growing feeds one you already have. Summoning takes a charge worked through the whole W.A.V.E. that none of your spirits carries yet, and the new spirit comes out through the door as a gas cloud. Growing…",
+      "ref": "gs-two-acts",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, ttv-bars 1",
+      "note": "position, stands unless you flip it, grow-or-summon1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "board-tb-loss-not-avoidance",
-      "text": "A line that keeps losing face-offs is read as missing conditions (no first step, no home, a missing input), never as avoidance. A longer charge note does not help a line win.",
-      "ref": "tb-loss-not-avoidance",
+      "id": "board-gs-harvest-is-qi",
+      "text": "Harvested energy is qi. You harvest it by sitting, by practice and from the places you go; it fills the qi meter or flows straight into a spirit you choose, adding to that spirit's sittings, which carry it from gas to core to hologram to…",
+      "ref": "gs-harvest-is-qi",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, ttv-bars 1",
+      "note": "position, stands unless you flip it, grow-or-summon1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-gs-door-gas",
+      "text": "The blobs that come out of the door are your newly summoned spirits at the gas stage, one for each charge you worked through. Sitting with one grows it, as with any of your spirits. This stands unless you flip it.",
+      "ref": "gs-door-gas",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, grow-or-summon1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-gs-same-charge-grows",
+      "text": "A W.A.V.E. on a charge one of your spirits already carries grows that spirit and never makes a second. A new charge in a family you already have offers both at the end of the sitting, \"Feed Fear\" or \"Call a new one\", with the likelier…",
+      "ref": "gs-same-charge-grows",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, grow-or-summon1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-gs-show-the-flow",
+      "text": "You can see which one happened. Growing: motes stream from you into the spirit sitting with you, and it swells. Summoning: the motes gather into a new cloud that drifts out through the door. Reduced motion fades instead. This stands…",
+      "ref": "gs-show-the-flow",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, grow-or-summon1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-uc-keep-unchosen",
+      "text": "Every brainstorm line you name in Tap the Vein and don't choose is kept in bars-engine with its morning and what happened to it: left raw, composted, or marked play and not picked (lines past the day's cap or the menu's seven count here…",
+      "ref": "uc-keep-unchosen",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, unchosen1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-uc-not-chosen-view",
+      "text": "Tap the Vein gets a \"Not chosen\" section under the seed library, and on the opening and sealed screens. It opens only when you open it and shows no count while closed. It lists past mornings' unchosen lines in your words, newest first.…",
+      "ref": "uc-not-chosen-view",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, unchosen1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-uc-pattern-returns",
+      "text": "A pattern is a word that comes back on two or more mornings, counted by mornings, at most five shown. Tap one to see every line it came from, with dates. It reads \"keeps coming back\", never avoidance. This stands unless you flip it.",
+      "ref": "uc-pattern-returns",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, unchosen1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-uc-no-duty",
+      "text": "An unchosen line owes nothing: no reminders, no resurfacing, never a task unless you make it one. Composted lines show muted, as residue in a pattern, and are not offered back. This stands unless you flip it.",
+      "ref": "uc-no-duty",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, unchosen1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-uc-council-misses",
+      "text": "The faces' suggestions you decline on the menu and the face-off cards you don't pick are the council's misses, not your unchosen energy. A later build keeps them in their own store, so the council can measure its own aim. This stands…",
+      "ref": "uc-council-misses",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, unchosen1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-uc-links-by-hand",
+      "text": "Nothing unchosen is turned into qi, vibeulons or spirits. A pattern becomes a spirit only the way any charge does, when you take it through the W.A.V.E. The daily compost pass keeps to board steps. This stands unless you flip it.",
+      "ref": "uc-links-by-hand",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, unchosen1",
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
+      }
+     },
+     {
+      "id": "board-uc-first-build",
+      "text": "First build: the read-only \"Not chosen\" view in bars-engine, from lines already saved, with a test. Next: \"Draw into today\" on a raw or unpicked line, then the council's misses store. Test UC1 on 2026-11-04. This stands unless you flip it.",
+      "ref": "uc-first-build",
+      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
+      "note": "position, stands unless you flip it, unchosen1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
@@ -35138,582 +35151,7 @@
     "key": "steps",
     "title": "Steps due today",
     "blurb": "Your steps on the Your steps tab that are due today or overdue and not done.",
-    "items": [
-     {
-      "id": "step-anastasia-campaign-live-01",
-      "text": "Read Anastasia's campaign draft in the box below, write any notes on it, then send it to her with the message in the Enter row. The message asks for six things: her yes to the story (or what to cut), her coaching rate, her booking link,…",
-      "ref": "anastasia-campaign-live-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-12",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "diplomat",
-       "kernel": "Anastasia sees her campaign draft and says yes to her story in her own words.",
-       "date": "2026-10-20",
-       "list": "steps",
-       "listTitle": "Steps due today",
-       "missing": [],
-       "gathered": [],
-       "workable": true,
-       "opponent": null,
-       "factors": {
-        "signal": {
-         "list": "Steps due today",
-         "note": "Due 2026-10-12 on Your steps."
-        },
-        "ready": {
-         "lineMissing": [],
-         "note": "The draft and the message are both in the step, so it can be sent as it stands."
-        },
-        "unlocks": {
-         "line": 2,
-         "council": 0,
-         "note": "Her answers open steps 02 and 03."
-        },
-        "waiting": {
-         "days": 8,
-         "note": "Eight days past its due date."
-        }
-       },
-       "call": "work-today",
-       "decidedBy": "waiting",
-       "why": "The draft and message are ready in the step, and both later steps wait on her reply. Sending it today starts the clock on her answers."
-      }
-     },
-     {
-      "id": "step-anastasia-campaign-live-02",
-      "text": "Paste or forward her answers into the Anastasia's campaign thread. Claude fills them into the draft and gives you the final text for each field.",
-      "ref": "anastasia-campaign-live-02",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-11",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "regent",
-       "kernel": "Her answers become the finished text for each field of her campaign.",
-       "date": "2026-10-20",
-       "list": "steps",
-       "listTitle": "Steps due today",
-       "missing": [
-        "input"
-       ],
-       "gathered": [],
-       "workable": [
-        "input"
-       ],
-       "opponent": {
-        "kind": "item",
-        "ref": "step-anastasia-campaign-live-01",
-        "what": "sending her the draft",
-        "title": "Steps due today",
-        "entry": "Read Anastasia's campaign draft in the box below, write any notes on it, then send it to her with the message in the Enter row. The message asks for six things: her yes to the story (or what to cut), "
-       },
-       "factors": {
-        "signal": {
-         "list": "Steps due today",
-         "note": "Due 2026-10-11 on Your steps, a day before the step it follows."
-        },
-        "ready": {
-         "lineMissing": [
-          "input"
-         ],
-         "note": "It needs her answers, which come only after step 01 is sent."
-        },
-        "unlocks": {
-         "line": 1,
-         "council": 0,
-         "note": "The finished fields open step 03."
-        },
-        "waiting": {
-         "days": 9,
-         "note": "Nine days past its due date."
-        }
-       },
-       "call": "defer",
-       "decidedBy": "ready",
-       "why": "This step waits on Anastasia's answers. It can rest until she replies to step 01."
-      }
-     },
-     {
-      "id": "step-anastasia-campaign-live-03",
-      "text": "Create the campaign in the site's admin with the finished fields, then approve it.",
-      "ref": "anastasia-campaign-live-03",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-12",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "challenger",
-       "kernel": "The campaign goes live in the site's admin once its fields are final.",
-       "date": "2026-10-20",
-       "list": "steps",
-       "listTitle": "Steps due today",
-       "missing": [
-        "input"
-       ],
-       "gathered": [],
-       "workable": [
-        "input"
-       ],
-       "opponent": {
-        "kind": "item",
-        "ref": "step-anastasia-campaign-live-01",
-        "what": "sending her the draft",
-        "title": "Steps due today",
-        "entry": "Read Anastasia's campaign draft in the box below, write any notes on it, then send it to her with the message in the Enter row. The message asks for six things: her yes to the story (or what to cut), "
-       },
-       "factors": {
-        "signal": {
-         "list": "Steps due today",
-         "note": "Due 2026-10-12 on Your steps, the same day as step 01."
-        },
-        "ready": {
-         "lineMissing": [
-          "input"
-         ],
-         "note": "It needs the finished fields from step 02."
-        },
-        "unlocks": {
-         "line": 0,
-         "council": 0,
-         "note": "It is the last step of the campaign."
-        },
-        "waiting": {
-         "days": 8,
-         "note": "Eight days past its due date."
-        }
-       },
-       "call": "defer",
-       "decidedBy": "ready",
-       "why": "The admin step needs the fields that step 02 produces. Its due date can move to follow her reply."
-      }
-     },
-     {
-      "id": "step-between-round3-try-01",
-      "text": "Open the link on your iPhone, sign in if asked, and look around the hollow. This is round 3 of the Between: the same place as round 2, now painted by our code so the light, shadows and colours lean toward your four concept views (warm…",
-      "ref": "between-round3-try-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-19",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-book-shipping-1",
-      "text": "Download a fresh Kickstarter backer report.",
-      "ref": "book-shipping-1",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-09",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-book-shipping-2",
-      "text": "Publish the paperback on KDP.",
-      "ref": "book-shipping-2",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-13",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-coaching-pipeline-04",
-      "text": "Send the first three guest pitches: Coaches Rising and The Embodiment Podcast this week, and Buddhist Geeks to Vince after his recording on 16 October. Each pitch is in the show's row on the Outreach tab, under Guesting. Fill or delete…",
-      "ref": "coaching-pipeline-04",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-19",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-flirtcraft-ep1-clips-03",
-      "text": "Post the next three clips the same way, one every three or four days: Hot Girl Summer, then what a crush is, then QC's flirt even more.",
-      "ref": "flirtcraft-ep1-clips-03",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-flirtcraft-socials-01",
-      "text": "Make the Flirtcraft account on X, with the display name Flirtcraft Podcast. Add the avatar, header, the podcast bio and flirtcraft.app/podcast as the website, then post the first post with the cover, add the reply under it, and pin the…",
-      "ref": "flirtcraft-socials-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-10",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-flirtcraft-socials-02",
-      "text": "Post the podcast announcement on your Facebook profile with the podcast cover attached. It mentions the podcast only; the app gets its own post in step 6.",
-      "ref": "flirtcraft-socials-02",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-10",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-flirtcraft-socials-03",
-      "text": "Post clip 1, QC's permission to flirt, on X as a video with its X caption. The later clips go to X on the same days as Instagram, on the episode 1 clips list.",
-      "ref": "flirtcraft-socials-03",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-11",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-flirtcraft-socials-04",
-      "text": "Make a Reddit account in your own name and start commenting, with no links, for two weeks.",
-      "ref": "flirtcraft-socials-04",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-12",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-flirtcraft-socials-05",
-      "text": "Run the free rep on your phone with a real email, after the database steps are done.",
-      "ref": "flirtcraft-socials-05",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-flirtcraft-socials-06",
-      "text": "Post the app announcement on your Facebook profile, Instagram and X, the same day. Swap the X bio for the app bio, and from then on end every clip caption with: Your first rep is free: flirtcraft.app",
-      "ref": "flirtcraft-socials-06",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-15",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-j5-look-09",
-      "text": "Look at round 9 of the clothing (J5): the hem shaking where it brushes the shins. The shake did not come from the shins touching the cloth. It came from the band that eases the robe from the waist toward the body: when a leg carried the…",
-      "ref": "j5-look-09",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-j5-panels-look-12",
-      "text": "Look at the sleeves re-cut into panels (your pick on cd-sleeve-open: 'Re-cut into panels'), from your note that the cuffs moved \"like solid objects and not clothes\". Below the forearm each sleeve is now a front and a back panel of real…",
-      "ref": "j5-panels-look-12",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-menu-key-match-01",
-      "text": "Make a new key, save it in your Passwords app first, then put it in Vercel.",
-      "ref": "menu-key-match-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-menu-key-match-02",
-      "text": "Put the key from your Passwords app in this project's cloud environment. If there is no edit button, delete the old entry and add it again.",
-      "ref": "menu-key-match-02",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-menu-key-match-03",
-      "text": "Put the same key in the GitHub secret the board-pull Action uses to recover a sealed menu.",
-      "ref": "menu-key-match-03",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-paypal-funding-01",
-      "text": "Update from the 18 October pass: still failing. Since the 14 October pass PayPal emailed that Canva's $19.89 failed again on 15 and 17 October, that Patreon's payment failed on 14 October ($3.96) and again on 17 October ($4.46), and sent…",
-      "ref": "paypal-funding-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-07",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-podcast-ep1-clips-05",
-      "text": "Nine days after clip 1, note each clip's views, saves and shares from the platforms' insights, and paste them in the podcast thread.",
-      "ref": "podcast-ep1-clips-05",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-17",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-podcast-ep2-clips-01",
-      "text": "Post that episode 2 is out, if you have not yet: the YouTube thumbnail on Instagram with the day 0 caption, and the same caption with the link on Facebook and X.",
-      "ref": "podcast-ep2-clips-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-17",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-podcast-ep2-clips-02",
-      "text": "Send Tom his two clips (1, how long, and 4, allow the purpose) with their captions. He has no socials, so a text or an email.",
-      "ref": "podcast-ep2-clips-02",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-podcast-ep2-clips-03",
-      "text": "Post clip 1, Tom on how long do you want to feel this way (37 seconds), as an Instagram Reel with Share to Facebook on and auto captions on, then post it on X. Before sharing, tap Edit cover, then Add from camera roll, and pick…",
-      "ref": "podcast-ep2-clips-03",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-19",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-podcast-pipeline-03",
-      "text": "Schedule episode 2 in one sitting at your computer. Follow the numbered list in the pack: Part A set up, B day 0 post (publish now), C each clip as a Reel (Create reel, tick Instagram and Facebook, upload clip, cover, caption, Schedule),…",
-      "ref": "podcast-pipeline-03",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-replies-owed-20261013-1",
-      "text": "Ayça wrote back early this morning on the dinner thread, saying yes to the podcast invitation you sent Monday night — and she asked one question you have to answer before she can book: \"May i include my son, (16 years old?\" She cannot…",
-      "ref": "replies-owed-20261013-1",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-15",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-replies-owed-20261013-2",
-      "text": "Nora Elder wrote late this morning to thank you for her episode and she asked you something: whether you have \"a newsletter or anything you're sending out,\" because she wants to be on it and wants to stay in touch. She also sent her…",
-      "ref": "replies-owed-20261013-2",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-15",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-replies-owed-20261013-3",
-      "text": "Ariel Alon wrote to you directly this morning with the WMHCA call-for-proposals link for their \"Bridging Connections\" conference and a one-line nudge: \"I haven't started mine yet.\" She is waiting to hear whether you are submitting a…",
-      "ref": "replies-owed-20261013-3",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-15",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-replies-owed-20261014-1",
-      "text": "HostGator sent a payment failure notice yesterday morning: the renewal on your Hatchling plan did not go through and the account is past due at $395.61. The notice says plainly that paying is what keeps \"your website and other services…",
-      "ref": "replies-owed-20261014-1",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-16",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-slice-referee-playtest-01",
-      "text": "Play the slice once with the referee on. 1) Paste this one line into Terminal on your Mac: git clone https://github.com/wendell-britt/sprout ~/sprout-playtest 2>/dev/null; cd ~/sprout-playtest && git fetch origin…",
-      "ref": "slice-referee-playtest-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-20",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-spirit-fight-ama-rell-02",
-      "text": "Play build 4 of Ama Rell's Fixer, rebuilt after your note that build 3 was too abstract. It now plays like a monster battle: the Fixer's sprite faces your spirit on a field, each side has an HP box, a text box reads out every move, and…",
-      "ref": "spirit-fight-ama-rell-02",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-19",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-spirit-states-squint-01",
-      "text": "Sort the fifteen numbered spirit sprites into dissatisfied, neutral and satisfied, then type your three lists into this step's note. About two minutes.",
-      "ref": "spirit-states-squint-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-19, optional",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-virtual-launch-restart-04",
-      "text": "Question 1 of 6: What do you want to create with the virtual launch? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
-      "ref": "virtual-launch-restart-04",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-virtual-launch-restart-05",
-      "text": "Question 2 of 6: What will that get you? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
-      "ref": "virtual-launch-restart-05",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-virtual-launch-restart-06",
-      "text": "Question 3 of 6: What is life like now, for you and for the people you want there? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
-      "ref": "virtual-launch-restart-06",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-virtual-launch-restart-07",
-      "text": "Question 4 of 6: How does that feel? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
-      "ref": "virtual-launch-restart-07",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-virtual-launch-restart-08",
-      "text": "Question 5 of 6: What would have to be true for someone to feel that way? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
-      "ref": "virtual-launch-restart-08",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-virtual-launch-restart-09",
-      "text": "Question 6 of 6: What reservations do you have? Write the answer in this step's note. A sentence is enough, and you can add to it later.",
-      "ref": "virtual-launch-restart-09",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-14",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-wmhca-proposal-01",
-      "text": "Fill the brackets in the presenter bio and the qualifications line with your real facts: how many years you have facilitated the voices process, any degree, any coaching or facilitation training, and the book's status. Leave out anything…",
-      "ref": "wmhca-proposal-01",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-15",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-wmhca-proposal-02",
-      "text": "Open the WMHCA call for speakers on Whova, make an account if it asks, and paste each section of the draft into the matching field. Where a field has a word limit, use the short version. Pick two hours and the Equity and Inclusion track…",
-      "ref": "wmhca-proposal-02",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-15",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "step-wmhca-proposal-03",
-      "text": "The call for proposals was due the morning of 15 October and that has passed. Your mail through 18 October holds no Whova confirmation and no extension notice. Email the committee chair and ask whether the call is still open or can be…",
-      "ref": "wmhca-proposal-03",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#steps",
-      "note": "step, due 2026-10-15",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     }
-    ]
+    "items": []
    },
    {
     "key": "due",
@@ -35726,10 +35164,6 @@
       "ref": "mm-set-aside",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#resolved",
       "note": "when you ask",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
       "read": {
        "face": "regent",
        "kernel": "Motion capture onto a Mixamo rig waits until a use fits its non-commercial licences.",
@@ -35768,6 +35202,10 @@
        "call": "defer",
        "decidedBy": "ready",
        "why": "The row says it returns when he asks, and the licence limits still hold. It can rest on the ladder until a non-commercial use calls for it."
+      },
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
       }
      }
     ]
@@ -35781,10 +35219,6 @@
       "id": "handoff-2026-10-08-slim-the-board-read",
       "text": "Slim the board read: (board-read-slim): built 2026-10-08, board/read.py, steps in docs/pickup.md.",
       "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
       "read": {
        "face": "challenger",
        "kernel": "A board read should take a handful of steps, and the number should prove it.",
@@ -35825,16 +35259,16 @@
        "call": "let-go-offered",
        "decidedBy": "ready",
        "why": "The usage audit of 18 October already measured board reads well under the old cost. The session-cost sheet can mark it done."
+      },
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
       }
      },
      {
       "id": "handoff-2026-10-08-plugins",
       "text": "Plugins: (plugins-trim): Wendell chose remove-business (2026-10-08).",
       "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
       "read": {
        "face": "architect",
        "kernel": "Every session starts lighter once the unused business plugins come off his account.",
@@ -35873,16 +35307,16 @@
        "call": "defer",
        "decidedBy": "ready",
        "why": "The removal is his step in Customize, and the record has no tick yet. The 18 October audit still measured an opening load of 111,711 tokens, so the next read can check again."
+      },
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
       }
      },
      {
       "id": "handoff-2026-10-08-sonnet-threads",
       "text": "Sonnet threads: (threads-on-sonnet): written into project memory for the coordinator.",
       "note": "Open on 2026-10-08, cutting session cost (advisor thread)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
       "read": {
        "face": "sage",
        "kernel": "Clerical threads run on the cheaper model so the council's hours go further.",
@@ -35915,6 +35349,10 @@
        "call": "let-go-offered",
        "decidedBy": "ready",
        "why": "The rule is written and the audit shows it applied. This handoff line can close."
+      },
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
       }
      },
      {
@@ -36769,395 +36207,8 @@
     "key": "prs",
     "title": "Open pull requests",
     "blurb": "Pull requests open in the council, bars-engine and the Game Master's guide.",
-    "items": [
-     {
-      "id": "pr-Six-faces-council-311",
-      "text": "Callsheet: the Fixer spar is built (sprout #63)",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/311",
-      "note": "Six-faces-council #311 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "architect",
-       "kernel": "The spirit-generator sheet records that the Fixer spar is built in sprout #63.",
-       "date": "2026-10-20",
-       "list": "prs",
-       "listTitle": "Open pull requests",
-       "missing": [
-        "next step"
-       ],
-       "gathered": [
-        {
-         "piece": "next step",
-         "found": "The pull request says it is one callsheet edit; his play of sprout #63 comes next.",
-         "source": "pr:wendell-britt/Six-faces-council#311"
-        }
-       ],
-       "workable": true,
-       "opponent": null,
-       "factors": {
-        "signal": {
-         "list": "Open pull requests",
-         "note": "Draft, opened 2026-10-19."
-        },
-        "ready": {
-         "lineMissing": [],
-         "note": "A one-file callsheet change; it merges by itself once marked ready and its checks pass."
-        },
-        "unlocks": {
-         "line": 1,
-         "council": 0,
-         "note": "It points the next thread at his play of the spar."
-        },
-        "waiting": {
-         "days": 1,
-         "note": "One day open."
-        }
-       },
-       "call": "work-today",
-       "decidedBy": "ready",
-       "why": "It is a one-file record change. A steward thread can mark it ready and let it merge today."
-      }
-     },
-     {
-      "id": "pr-Six-faces-council-308",
-      "text": "Podcast step 03 rewritten as a click-by-click walkthrough",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/308",
-      "note": "Six-faces-council #308 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "sage",
-       "kernel": "The podcast scheduling step reads as numbered clicks he can follow alone.",
-       "date": "2026-10-20",
-       "list": "prs",
-       "listTitle": "Open pull requests",
-       "missing": [
-        "next step"
-       ],
-       "gathered": [
-        {
-         "piece": "next step",
-         "found": "The step text is already in the store; this pull request records it in the podcast callsheet and the done log.",
-         "source": "pr:wendell-britt/Six-faces-council#308"
-        }
-       ],
-       "workable": true,
-       "opponent": null,
-       "factors": {
-        "signal": {
-         "list": "Open pull requests",
-         "note": "Draft, opened 2026-10-19 after he asked for more instructions."
-        },
-        "ready": {
-         "lineMissing": [],
-         "note": "Only the callsheet and needs-work-done.json change, so it is ready to merge."
-        },
-        "unlocks": {
-         "line": 0,
-         "council": 1,
-         "note": "It closes a needs-work item."
-        },
-        "waiting": {
-         "days": 1,
-         "note": "One day open."
-        }
-       },
-       "call": "work-today",
-       "decidedBy": "ready",
-       "why": "The step he reads is already rewritten in the store. Merging this records it, which a steward thread can do today."
-      }
-     },
-     {
-      "id": "pr-Six-faces-council-305",
-      "text": "Menu key steps rewritten; needs-work recorded",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/305",
-      "note": "Six-faces-council #305 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
-      "read": {
-       "face": "challenger",
-       "kernel": "The menu key steps become ones he can finish without a fragile copied token.",
-       "date": "2026-10-20",
-       "list": "prs",
-       "listTitle": "Open pull requests",
-       "missing": [
-        "blocker"
-       ],
-       "gathered": [],
-       "workable": [
-        "blocker"
-       ],
-       "opponent": {
-        "kind": "item",
-        "ref": "pr-Six-faces-council-308",
-        "what": "the podcast step record",
-        "title": "Open pull requests",
-        "entry": "Podcast step 03 rewritten as a click-by-click walkthrough"
-       },
-       "factors": {
-        "signal": {
-         "list": "Open pull requests",
-         "note": "Draft, opened 2026-10-19 after his notes on steps 01 and 02."
-        },
-        "ready": {
-         "lineMissing": [
-          "blocker"
-         ],
-         "note": "The pull request says the menu endpoint still answered 401 and test T1 did not run."
-        },
-        "unlocks": {
-         "line": 1,
-         "council": 1,
-         "note": "A working key lets the Morning menu reach bars-engine."
-        },
-        "waiting": {
-         "days": 1,
-         "note": "One day open."
-        }
-       },
-       "call": "defer",
-       "decidedBy": "ready",
-       "why": "The record change can merge, yet the menu endpoint still answers 401. The key work rests until that blocker has a fix in the morning-menu strand."
-      }
-     },
-     {
-      "id": "pr-Six-faces-council-115",
-      "text": "Move file: the guessing test's two checks (wording and taught player)",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/115",
-      "note": "Six-faces-council #115 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-Six-faces-council-112",
-      "text": "Record shame1 rulings in the shame-coaching callsheet",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/112",
-      "note": "Six-faces-council #112 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-Six-faces-council-77",
-      "text": "Root call sheet: shell built, next is the phone test",
-      "link": "https://github.com/wendell-britt/Six-faces-council/pull/77",
-      "note": "Six-faces-council #77 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-404",
-      "text": "Tap the Vein history: each seed carries blockedAt and its notes count",
-      "link": "https://github.com/johnair01/bars-engine/pull/404",
-      "note": "bars-engine #404",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-402",
-      "text": "Hosted allyship campaign pages, piloted with Annastasia's",
-      "link": "https://github.com/johnair01/bars-engine/pull/402",
-      "note": "bars-engine #402",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-400",
-      "text": "Public /privacy page for the MTGOA Publisher Meta app",
-      "link": "https://github.com/johnair01/bars-engine/pull/400",
-      "note": "bars-engine #400 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-399",
-      "text": "The inner vessel's dock in the WAVE room",
-      "link": "https://github.com/johnair01/bars-engine/pull/399",
-      "note": "bars-engine #399",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-398",
-      "text": "The elder spirit in home base shows a spirit's five forms; a new spirit at three asks one of yours to rest",
-      "link": "https://github.com/johnair01/bars-engine/pull/398",
-      "note": "bars-engine #398",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-380",
-      "text": "Between: embers and lanterns at the hollow's hearth (slice 1)",
-      "link": "https://github.com/johnair01/bars-engine/pull/380",
-      "note": "bars-engine #380 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-364",
-      "text": "J5 rounds 10 and 11: clean cuffs, sleeves on spring chains",
-      "link": "https://github.com/johnair01/bars-engine/pull/364",
-      "note": "bars-engine #364 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-315",
-      "text": "J5: robe, sash and topknot as skinned garments on the cave figure",
-      "link": "https://github.com/johnair01/bars-engine/pull/315",
-      "note": "bars-engine #315 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-307",
-      "text": "Cave levels: home, the hall of the six, six tunnels, the centre of the self",
-      "link": "https://github.com/johnair01/bars-engine/pull/307",
-      "note": "bars-engine #307 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-293",
-      "text": "Blender pipeline: Blendkit tests pass; procedural roots and mushrooms",
-      "link": "https://github.com/johnair01/bars-engine/pull/293",
-      "note": "bars-engine #293 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-279",
-      "text": "Setup Vercel Web Analytics integration",
-      "link": "https://github.com/johnair01/bars-engine/pull/279",
-      "note": "bars-engine #279 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-256",
-      "text": "council: daemons and casting into bars-engine; Jev pass and trial spec",
-      "link": "https://github.com/johnair01/bars-engine/pull/256",
-      "note": "bars-engine #256 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-230",
-      "text": "Add Day 12 resource question practice",
-      "link": "https://github.com/johnair01/bars-engine/pull/230",
-      "note": "bars-engine #230",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-190",
-      "text": "Add Card-to-Carousel Brief flow",
-      "link": "https://github.com/johnair01/bars-engine/pull/190",
-      "note": "bars-engine #190",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-164",
-      "text": "PMA Phase B + humane notifications (HNTF)",
-      "link": "https://github.com/johnair01/bars-engine/pull/164",
-      "note": "bars-engine #164",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-156",
-      "text": "Implement Lenses onboarding and TTV lineage",
-      "link": "https://github.com/johnair01/bars-engine/pull/156",
-      "note": "bars-engine #156",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-140",
-      "text": "Add playable Inner Garden Chapter 1",
-      "link": "https://github.com/johnair01/bars-engine/pull/140",
-      "note": "bars-engine #140 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-73",
-      "text": "feat: ship #41 campaign hierarchy wiring + #45 walkable demo fallback",
-      "link": "https://github.com/johnair01/bars-engine/pull/73",
-      "note": "bars-engine #73 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-70",
-      "text": "fix(backend): standardize port to 8080 in railway.json",
-      "link": "https://github.com/johnair01/bars-engine/pull/70",
-      "note": "bars-engine #70",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "pr-bars-engine-61",
-      "text": "feat: port handbook/wiki UI pages and API docs",
-      "link": "https://github.com/johnair01/bars-engine/pull/61",
-      "note": "bars-engine #61 (draft)",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     }
-    ]
+    "items": [],
+    "note": "no GitHub token in this session; pass --prs <file> saved from the GitHub tools"
    },
    {
     "key": "backlog",
@@ -37169,10 +36220,6 @@
       "text": "MtGoA Launch + Barn Raising — July fundraiser party: coordinator reframing the cancelled Bruised Banana residency into the real event: a July 2026 party at the Bruised Banana venue = Mastering the Game of Allyship Launch Party + Wendell's…",
       "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/mtgoa-launch-barn-raising-party/spec.md",
       "note": "1.00 MLBR",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
       "read": {
        "face": "regent",
        "kernel": "The game's launch and his Portland send-off become one party that funds the move.",
@@ -37211,6 +36258,10 @@
        "call": "defer",
        "decidedBy": "ready",
        "why": "The party date in the spec has passed, and no new date is in the record. It rests until an event date exists; a question about one belongs on the Council Board."
+      },
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
       }
      },
      {
@@ -37218,10 +36269,6 @@
       "text": "Partiful link integration — July party invite: wire the Partiful event URL into the invite BAR + event Instance for the July 18, 2026 MtGoA Launch + Barn Raising. Reuse CustomBar.partifulUrl + eventSlug (EIP); RSVP CTA on the invite,…",
       "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/backlog/prompts/partiful-link-integration.md",
       "note": "1.00.1 PARV",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
       "read": {
        "face": "diplomat",
        "kernel": "Guests reach the party RSVP in one tap from every public page.",
@@ -37266,6 +36313,10 @@
        "call": "let-go-offered",
        "decidedBy": "ready",
        "why": "The invite it wires is for a date that has passed. It can go, or wait on the ladder for a new party date."
+      },
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
       }
      },
      {
@@ -37273,10 +36324,6 @@
       "text": "Barn Raising — Live Data: back the three-wall Milestone BAR (car / pre-sale / runway) with real contributions: add CampaignMilestone.wallKey (additive migration), getBarnSnapshot(campaignRef), seed the July 18 event Instance + 3 walls…",
       "link": "https://github.com/johnair01/bars-engine/blob/main/.specify/specs/barn-raising-live-data/spec.md",
       "note": "1.00.2 MBLD",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      },
       "read": {
        "face": "architect",
        "kernel": "The barn raising's three walls show real contributions as they come in.",
@@ -37321,6 +36368,10 @@
        "call": "defer",
        "decidedBy": "unlocks",
        "why": "The live walls serve an event with no current date. The build rests until the launch party has one."
+      },
+      "bridge": {
+       "kind": "unaligned",
+       "why": "no Lens goals were read this morning"
       }
      },
      {
