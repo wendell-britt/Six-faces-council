@@ -126,3 +126,11 @@ tools:
     where: npm inkjs; Inky editor
     licence: MIT
     status: available
+
+  - id: agent-beacon
+    does: captures coding-agent session traces (prompts, tools, commands, files, tokens) across Claude Code, Cursor, Codex and 20+ harnesses into local JSONL, with a local dashboard and skills that distill corrections into reviewed memory
+    tags: [memory, traces, session-history, tokens, cost, audit, telemetry, lessons]
+    where: github.com/Asymptote-Labs/agent-beacon (brew or .deb); cloud sessions need a setup script and env vars in the Claude environment plus Beacon Cloud or an S3/GCS bucket
+    licence: MIT
+    status: rejected
+    why: scouted 2026-10-21. Our threads run in Claude cloud containers, where Beacon records no token counts, and shipping transcripts out needs a third-party account or a bucket. Its memory loop duplicates callsheets, project memory, needs-work and lessons, and recall skills add context to every thread, which is the cost we are cutting. Revisit if the cost audit ever needs per-call traces from local desktop sessions.
