@@ -1,0 +1,148 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T17:16:30.387Z",
+ "answers": {
+  "uc-who-reads": {
+   "kind": "question",
+   "choice": "weekly",
+   "savedAt": "2026-10-21T17:10:18.804Z",
+   "steer": ""
+  },
+  "cr-look-by-place": {
+   "kind": "question",
+   "choice": "earned",
+   "savedAt": "2026-10-21T17:10:43.340Z",
+   "steer": ""
+  },
+  "gs-two-acts": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:10:47.339Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gs-harvest-is-qi": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:10:53.208Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gs-door-gas": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:10:58.874Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gs-same-charge-grows": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:11:02.455Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gs-show-the-flow": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:11:04.220Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uc-keep-unchosen": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:11:11.253Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uc-not-chosen-view": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:11:15.938Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uc-pattern-returns": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:11:54.837Z",
+   "status": "stands",
+   "steer": "And we should intelligently pitch a new action item based on the fact it's coming back. Then compost the old one. this way these unchosen fragments get better and more aligned over time\n"
+  },
+  "uc-no-duty": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:12:02.423Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uc-council-misses": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:12:10.201Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uc-links-by-hand": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:12:17.369Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "uc-first-build": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:12:20.718Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr-one-look": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:12:32.635Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr-build-own": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:14:23.250Z",
+   "status": "overrule",
+   "steer": "I'd need to know more about Ready Player Me to weigh in on this. I think it's worth another pass at what kinds of character creators are already out there that are open source and could fit our needs. Even if we don't sue them I'm certain there are aspects of these projects that we can use and refit for our purposes so we aren't building from scratch. We need to be using the design ontology when dealing with this because the UI that have been made on our v1 of the stuff we've been working on including the passport hasn't been very good"
+  },
+  "cr-first-menu": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:14:37.636Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr-first-build": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:15:35.817Z",
+   "status": "overrule",
+   "steer": "I think this look field in the passport is too small a first build. I think we can make something more robust that feels like a gamified experience. You rely too much on building things in tools and dashboards and we need to get better at thinking and designing from the POV of the player"
+  },
+  "c1w-blank-card": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:15:46.768Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "fcp-episode-shape": {
+   "kind": "question",
+   "choice": "two-kinds",
+   "savedAt": "2026-10-21T17:16:06.951Z",
+   "steer": "",
+   "via": "battle:fr-friendcraft-podcast"
+  },
+  "fcp-first-guests": {
+   "kind": "question",
+   "choice": "crew-first",
+   "savedAt": "2026-10-21T17:16:30.387Z",
+   "steer": "",
+   "via": "battle:fr-friendcraft-podcast"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/uc-who-reads: Once a week, in place",
+  "questions/cr-look-by-place: Traveler first, robe earned",
+  "positions/uc-pattern-returns: Stands (steer: \"And we should intelligently pitch a new action item based on the fact it's coming back. Then compost the old one. this way these unchosen fragments get better and more aligned over time\")",
+  "positions/cr-build-own: Overruled (steer: \"I'd need to know more about Ready Player Me to weigh in on this. I think it's worth another pass at what kinds of character creators are already out there that are open source and could fit our needs. Even if we don't sue them I'm certain there are aspects of these projects that we can use and refit for our purposes so we aren't building from scratch. We need to be using the design ontology when dealing with this because the UI that have been made on our v1 of the stuff we've been working on including the passport hasn't been very good\")",
+  "positions/cr-first-build: Overruled (steer: \"I think this look field in the passport is too small a first build. I think we can make something more robust that feels like a gamified experience. You rely too much on building things in tools and dashboards and we need to get better at thinking and designing from the POV of the player\")",
+  "questions/fcp-episode-shape: Two kinds of episode, alternating",
+  "questions/fcp-first-guests: Start with the crew in THE_CREW.md"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
