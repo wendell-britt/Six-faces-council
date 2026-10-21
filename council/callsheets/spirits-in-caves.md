@@ -165,3 +165,12 @@ player and the spirit can be in shot. It's really hard to see the most important
   fails on main and here (0.45, -0.77 off its back).
 - His next ask, "the controls are pretty clunky still", went to the coordinator as a separate research thread on phone 3D
   camera and touch controls.
+
+## Growing or summoning (pass grow-or-summon1, 2026-10-21)
+
+Wendell, 2026-10-21 15:02: "We need a difference between harvesting energy to grow an existing spirit or summoning a new
+one altogether". Pass `council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md`, six positions `gs-*` on the board, no
+question. Summoning needs a new charge worked through the whole W.A.V.E. and sends a gas spirit out through the door; growing
+spends harvested energy (sittings now, qi once it reaches the cave) on a spirit you have; the same charge only grows; the
+flow is seen (motes into a spirit, or a new cloud out the door); summoning's cost is care. Built by the thread "Sitting and
+door energy spirits" in its bars-engine pull request, with the pass's cave test.
