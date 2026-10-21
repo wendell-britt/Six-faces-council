@@ -43,7 +43,7 @@ profile its threads load (docs/ontology-in-flows.md).
 - [podcast](podcast.md), 2026-10-09: ep 2 title and thumbnail, Spotify link, clips, outreach sends.
 - [flirtcraft](flirtcraft.md), 2026-10-09: finish own database and sign-in before promoting; loop fixes PR.
 - [skilled-helper](skilled-helper.md), 2026-10-13: Part III rekeyed (sprout #48), taught player 24 of 27 against his 85%; next his phone play of the Lamp-keeper's track. His phone play of the Pruner's track fights (#41 on #38).
-- [session-cost](session-cost.md), 2026-10-08: measure slim board read; Wendell ticks plugins-trim.
+- [session-cost](session-cost.md), 2026-10-21: brief for a cost ledger and daily dashboard from get_session usage; 2026-10-08: measure slim board read; Wendell ticks plugins-trim.
 - [wave-battle](wave-battle.md), 2026-10-13: Ama Rell's Fixer build 2 (ally spirits fight, own power when none) on sprout #50, page https://claude.ai/artifact/71kzY5py5F4oxd54iQd3rU; waits on Wendell's phone play, then B1.
 - [spirit-generator](spirit-generator.md), 2026-10-17: round 19 built (page repacked one gzipped file per state, 125 files; the Victim's Ballad, first base the donkey, built against photographs, page v28 in the 3D viewer, blind squint 15 of 15; position `sg-ballad-family`); round 20 (the basset hound and elephant) waits on his look at v28.
 - [process-retro](process-retro.md), 2026-10-07: fold standing lessons into faces.yaml after his answers.
