@@ -199,3 +199,5 @@ Owns sprout #71 and bars-engine #420, branch `claude/project-thread-3ag8x2` in b
    onto it in `figure.js`; send the reading to a worker.
 Re-render runs in the background (about 40 min, bpy==5.2.2 into /home/user/blenv, see tools/blender-cloud/README.md).
 sprout `*.glb` is in Git LFS and cloud sessions cannot push LFS: name models `.glb.bin`. Hand off at 150k.
+3D math (2026-10-21, `docs/3d-math.md`): before the next mocap or sleeve round, try the cheap fixes first: quaternion
+BVH import, a per-bone roll check, and half the wrist twist on the lower forearm; frame the figure with `frameSphere`.
