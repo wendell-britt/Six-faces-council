@@ -1,0 +1,318 @@
+# Chapter 1, "The Infinite Arcade": the first pack through the story pipeline (council/story/PIPELINE.md).
+#
+# Stage 2, owned by the Shaman, checked by the Challenger. The source is sprout's decided Chapter 1:
+# campaigns/mtgoa-ch1/story.md (the A1 to A8 milestone track, each beat's gate and permanent change),
+# campaigns/mtgoa-ch1/beats.yaml (the engine's gate table, sprout PR #66) and extract.yaml (the m, l, t, b, r ids
+# the story cites). The places follow calrunia/world.yaml route `chapter1` (c1w-beats-are-places): no new engine,
+# each beat previews the practice of one place.
+#
+# A beat's `move` is the one the right choice asks for, from schema/move-table.json, owned by its face. The quote
+# field carries one line already decided in sprout's story.
+
+pack: calrunia-chapter1-arcade
+world: calrunia
+status: drafted  # stage 2 done; the Challenger's reading and a playtest are still owed before the chapter closes
+source:
+  repo: wendell-britt/sprout
+  locator: campaigns/mtgoa-ch1/story.md and beats.yaml, read 2026-10-21 (sprout PR #66)
+entry: a1-carry-one
+
+beats:
+  - id: a1-carry-one
+    kind: quest
+    place: sprout
+    face: shaman
+    move: water_wood
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a1.carry-one
+      - sprout:campaigns/mtgoa-ch1/story.md#a1-carry-one-m1-l2-l9-r2-t1
+      - mtgoa-ch1:extract#m1
+      - manuscript/ch1.md#l2
+      - calrunia/world.yaml#routes/chapter1
+    scene: A hunter's token sits uncollected on Old Tam's bin, and the player picks one person to carry out of the whole wall.
+    quote: You can't carry the whole wall. Carry one.
+    next: [a2-two-counters]
+    needs:
+      - id: set-sprout-bins
+        kind: set
+        brief: Old Tam's produce bins on the market side of the farm, three canvas stalls and a post a token can hang from, walkable in the demo's three-quarter camera.
+        tool: blenderkit
+        status: brief
+      - id: prop-hunter-token
+        kind: prop
+        brief: One uncollected hunter's token, weathered brass on a leather cord, reading at the 16 by 14 text box's scale.
+        tool: kenney
+        status: brief
+      - id: char-tam
+        kind: character
+        brief: Old Tam on the J4 rig, broad and work-coated with an apron, one hand on a crate, his face readable at the demo's camera distance.
+        tool: brief
+        status: brief
+    choices:
+      - line: Carry one, and say his name.
+        outcome: right
+      - line: Ask what the wall needs before choosing.
+        outcome: partial
+      - line: Carry the whole wall yourself.
+        outcome: wrong
+
+  - id: a2-two-counters
+    kind: encounter
+    place: sprout
+    face: regent
+    move: earth_transcend
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a2.two-counters
+      - sprout:campaigns/mtgoa-ch1/story.md#a2-two-counters-m3-m4-m9-l14-l26-l28-t2-t7
+      - mtgoa-ch1:extract#m3
+      - mtgoa-ch1:extract#m4
+      - manuscript/ch1.md#l14
+    scene: The day report arrives with coins, and Tam adds a second line with no number, the plot at rest, and asks whether there is more in the tank or less.
+    next: [a3-borrowed-mana]
+    needs:
+      - id: ui-day-report
+        kind: ui
+        brief: The day report card, a coins line and a second line with no number beside it, both readable inside the 16 by 14 text box.
+        tool: brief
+        status: brief
+      - id: set-withered-row
+        kind: set
+        brief: One withered row by the fence, four dead plants on bare soil that turn green in the same place when the player restores it, unmarked.
+        tool: blenderkit
+        status: brief
+      - id: vfx-plot-at-rest
+        kind: vfx
+        brief: A small steady sprite of field light over the resting plot, constant and unlabelled.
+        tool: brief
+        status: brief
+    choices:
+      - line: Say less, then restore the withered row.
+        outcome: right
+      - line: Say more, then read the second line again.
+        outcome: partial
+      - line: Say the numbers do not matter.
+        outcome: wrong
+
+  - id: a3-borrowed-mana
+    kind: encounter
+    place: root
+    face: challenger
+    move: fire_transcend
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a3.borrowed-mana
+      - sprout:campaigns/mtgoa-ch1/story.md#a3-borrowed-mana-m3-m2-l12-l13-b9-b10-r4
+      - mtgoa-ch1:extract#m2
+      - manuscript/ch1.md#l12
+      - calrunia/world.yaml#routes/chapter1
+    scene: Master Yun has the player raise the dojo gate twice, once on borrowed mana and once after a feeling has burned all the way through.
+    quote: Let it burn all the way. What's left is yours.
+    next: [a4-who-got-paid]
+    needs:
+      - id: set-dojo-gate
+        kind: set
+        brief: The dojo gate and its bar, one arm that rises under the player's push, with the mana meter standing beside it.
+        tool: blenderkit
+        status: brief
+      - id: ui-mana-due-date
+        kind: ui
+        brief: The mana bar carrying its due date, fuller the morning after a feeling is grounded and thinner after a borrowed push.
+        tool: brief
+        status: brief
+      - id: anim-ground-feeling
+        kind: animation
+        brief: One grounding beat before a gate, the stance settling and the feeling named, then the push, retargeted to the J4 rig.
+        tool: cmu-mocap
+        status: brief
+    choices:
+      - line: Ground the feeling first, then raise the gate.
+        outcome: right
+      - line: Raise it on borrowed mana and pay it back later.
+        outcome: partial
+      - line: Spend the whole bar at once.
+        outcome: wrong
+
+  - id: a4-who-got-paid
+    kind: encounter
+    place: root
+    face: architect
+    move: earth_metal
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a4.who-got-paid
+      - sprout:campaigns/mtgoa-ch1/story.md#a4-who-got-paid-m6-m7-l20-l21-l25-t4-t5
+      - mtgoa-ch1:extract#m6
+      - mtgoa-ch1:extract#m7
+      - manuscript/ch1.md#l21
+    scene: After a friendly bout with Sorrel the stands pay out and the sponsoring faction takes most of it, and Tam asks who got paid.
+    next: [a5-stance-on-empty]
+    needs:
+      - id: char-sorrel
+        kind: character
+        brief: Sorrel Vane on the J4 rig in sparring wraps, older than the player, his smile the same on a win and on a loss.
+        tool: brief
+        status: brief
+      - id: vfx-stands-credit
+        kind: vfx
+        brief: Standing credit rising over the crowd rail on a win and on a loss alike, the same number both ways.
+        tool: brief
+        status: brief
+      - id: ui-prize-purse
+        kind: ui
+        brief: The purse row on the next morning's report, the bout's earnings with the faction's cut taking most of the line.
+        tool: brief
+        status: brief
+    choices:
+      - line: Read the report, then thank Sorrel for the line that helped.
+        outcome: right
+      - line: Keep the cheers and let the report wait.
+        outcome: partial
+      - line: Say the crowd paid you, so you were paid.
+        outcome: wrong
+
+  - id: a5-stance-on-empty
+    kind: encounter
+    place: root
+    face: diplomat
+    move: earth_water
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a5.stance-on-empty
+      - sprout:campaigns/mtgoa-ch1/story.md#a5-your-stance-on-empty-m10-m11-m2-l29-l30-l31-t8-r11
+      - mtgoa-ch1:extract#m10
+      - mtgoa-ch1:extract#m11
+      - manuscript/ch1.md#l29
+    scene: Yun shows six stances on the dojo wall, the player takes the one they reach for without deciding, and a practice round on low mana shows what it becomes.
+    next: [a6-his-floor]
+    needs:
+      - id: set-dojo-wall-stances
+        kind: set
+        brief: The dojo wall with six stance panels, one per master, readable from the practice floor at the demo's camera distance.
+        tool: blenderkit
+        status: brief
+      - id: anim-stance-shadow
+        kind: animation
+        brief: Six stances and each one's version on empty, the stance overplaying through weight and balance; the palette stays put.
+        tool: cmu-mocap
+        status: brief
+      - id: ui-character-sheet
+        kind: ui
+        brief: The diary character sheet, holding stance, stance on empty, the myth, Pip, and the date, filling in as the chapter plays.
+        tool: brief
+        status: brief
+    choices:
+      - line: Name the stance and its version on empty before the round.
+        outcome: right
+      - line: Take the stance and find the shadow in play.
+        outcome: partial
+      - line: Pick the stance the wall flatters.
+        outcome: wrong
+
+  - id: a6-his-floor
+    kind: encounter
+    place: between
+    face: regent
+    move: wood_earth
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a6.his-floor
+      - sprout:campaigns/mtgoa-ch1/story.md#a6-his-floor-m5-m6-l15-l19-b12-b13-t3
+      - mtgoa-ch1:extract#m5
+      - mtgoa-ch1:extract#m6
+      - manuscript/ch1.md#l15
+      - calrunia/world.yaml#routes/chapter1
+    scene: Ede opens the gate at night and the player walks the grey strip to Pip's hut, where a warden spirit stops anyone who moves fast, loud, or carrying something.
+    next: [a7-the-oath]
+    needs:
+      - id: set-pip-hut
+        kind: set
+        brief: Pip's hut on the grey edge, a patched roof and a shut door with a step to sit on, the fog lifting as the player walks the strip.
+        tool: blenderkit
+        status: brief
+      - id: char-warden-spirit
+        kind: character
+        brief: The warden spirit at Pip's door, small and blocking anyone who moves fast, loud, or carrying something, built as a spirit generator preset with a blocking pose.
+        tool: brief
+        status: brief
+      - id: anim-three-small-moves
+        kind: animation
+        brief: The three small moves the warden accepts, water set down and leaving, coming back with one noticed detail, sitting outside without asking in.
+        tool: brief
+        status: brief
+    choices:
+      - line: Leave water and go, then come back and say you noticed the roof.
+        outcome: right
+      - line: Sit outside without asking to come in.
+        outcome: partial
+      - line: Call Pip home in front of the hunters.
+        outcome: wrong
+
+  - id: a7-the-oath
+    kind: quest
+    place: sprout
+    face: sage
+    move: wood_transcend
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a7.the-oath
+      - sprout:campaigns/mtgoa-ch1/story.md#a7-the-oath-m12-l23-l33-r1-r23-r14
+      - mtgoa-ch1:extract#m12
+      - manuscript/ch1.md#l23
+    scene: At the hollow's mouth the player says the seven lines aloud, one at a time, and the hollow's door opens.
+    next: [a8-the-hollow]
+    needs:
+      - id: ui-oath-seven-lines
+        kind: ui
+        brief: The oath, seven lines shown one at a time against the dark of the mouth and held until each is said aloud.
+        tool: brief
+        status: brief
+      - id: sfx-oath-answer
+        kind: audio
+        brief: The hollow's answer after each oath line, low and close, each answer ending before the next line begins.
+        tool: brief
+        status: brief
+
+  - id: a8-the-hollow
+    kind: encounter
+    place: vessel
+    face: shaman
+    move: metal_wood
+    cites:
+      - sprout:campaigns/mtgoa-ch1/beats.yaml#ch1.a8.the-hollow
+      - sprout:campaigns/mtgoa-ch1/story.md#a8-the-hollow-m8-m13-l24-b17-r9-t6-t10-t11
+      - mtgoa-ch1:extract#m8
+      - mtgoa-ch1:extract#m13
+      - manuscript/ch1.md#l24
+      - calrunia/world.yaml#routes/chapter1
+    scene: A spirit made from the player's own charge meets them in the hollow, and naming what it runs on, and grinning, settles it.
+    next: []
+    needs:
+      - id: char-spirit-from-charge
+        kind: character
+        brief: A spirit from the player's charge, generated from the spirit generator into the hollow's own silhouette, small enough to read beside one figure.
+        tool: brief
+        status: built
+        ref: bars-engine spirit generator, page v28 (council/callsheets/spirit-generator.md)
+      - id: char-hollow-spirit-close
+        kind: character
+        brief: The hollow's spirit up close, what it secretly enjoys showing in its shape and movement before the player names it.
+        tool: brief
+        status: brief
+      - id: set-hollow-mouth
+        kind: set
+        brief: The hollow's mouth behind Pip's hut, a stone throat wide enough for one figure whose dark reads as depth, opening onto the forest path.
+        tool: blenderkit
+        status: brief
+      - id: set-wave-room-handoff
+        kind: set
+        brief: The 3D WAVE room the hollow opens onto, the player's own spirit standing in it, reused from the room already built.
+        tool: brief
+        status: built
+        ref: bars-engine #317 (wave room, on #313 and #310)
+      - id: vfx-first-card
+        kind: vfx
+        brief: The player's first card drawn out of the hollow's mouth into their hand, one plain movement.
+        tool: brief
+        status: brief
+    choices:
+      - line: Name what you like about it, and grin.
+        outcome: right
+      - line: Name it without the grin.
+        outcome: partial
+      - line: Fight it and call it a monster.
+        outcome: wrong
