@@ -1,0 +1,28 @@
+{
+ "updated": "2026-10-21",
+ "positions": [
+  {"id": "cr-one-look", "faces": ["architect", "regent"], "pass": "calrunia-creator1", "auto": true,
+   "pos": "One look per player lives in the passport as keys only (body shape, build, skin, hair, outfit, palette), and each place maps the keys to its own art: Sprout to its traveler parts, the cave and the Between to the 3D figure, Root to the same rig. This stands unless you flip it.",
+   "why": "One world, one passport (cw-passport); one studio and one wardrobe for 2D and 3D (cs-one-studio, bpt-robe-theme). Keys let a 32 px sprite and a 3D figure share a look without sharing files. Source: council/callsheets/calrunia-creator.md"},
+  {"id": "cr-build-own", "faces": ["challenger", "architect"], "pass": "calrunia-creator1", "auto": true,
+   "pos": "We build the creator ourselves on tools we already use (Rigify, shape keys, three.js morph targets, our sprite render), with MakeHuman's CC0 shapes as reference. No hosted creator: Ready Player Me shut down in January 2026, and selfie creators break the no-photo rule. This stands unless you flip it.",
+   "why": "Tool ladder, rungs 3 and 4 (docs/tool-scout.md), one worker search on 2026-10-21; ba-likeness-choices rules out photos and face scans. Source: council/callsheets/calrunia-creator.md"},
+  {"id": "cr-first-menu", "faces": ["diplomat", "architect"], "pass": "calrunia-creator1", "auto": true,
+   "pos": "The first creator offers what Sprout's traveler already offers, carried into 3D: three body shapes open to every gender, four builds, eight skin tones, hair style and colour, and the outfit with its palette. Height, age, face marks, how you move and mobility aids come later. The 3D figure stays faceless. This stands unless you flip it.",
+   "why": "Your Sprout rulings tr-outfits-open and tr-builds-narrow, ba-likeness-choices (build, skin, hair, clothes, how they move) and cave-avatar-self (faceless). Source: council/callsheets/calrunia-creator.md"},
+  {"id": "cr-first-build", "faces": ["architect", "regent"], "pass": "calrunia-creator1", "auto": true,
+   "pos": "First build, with no art round: the look field in the passport with its contract test, a table from each key to Sprout's parts and the 3D figure's settings, and the cave and the Between colouring skin and cloth from it. Then body shapes as shape keys, and a sprite render of the 3D figure beside the Sprout traveler for your eye. This stands unless you flip it.",
+   "why": "Contract before art, as the passport round did; hx-looks-gate stays untouched because nothing new is drawn. Source: council/callsheets/calrunia-creator.md"}
+ ],
+ "questions": [
+  {"id": "cr-look-by-place", "faces": ["shaman", "diplomat"], "pass": "calrunia-creator1",
+   "q": "Does the player wear the traveler's look everywhere, or the robe set once inside? The council recommends the robe as something earned.",
+   "why_you": "Two of your rulings point different ways. In Sprout the player reads foreign: no topknot, violet and saffron, travel gear (tr-foreign). In the cave the player figure wears the robe set and topknot (bpt-robe-theme). Body, skin and hair stay the same either way; this decides which outfits the 3D figure needs first.",
+   "not_before": "Until today Sprout and the cave each had its own player. The Calrunia creator is the first time one look crosses both.",
+   "options": [
+    {"v": "traveler", "label": "A. Traveler everywhere", "c": "The 3D figure gets the three traveler outfits first; the robe set stays for the people of the world."},
+    {"v": "by-place", "label": "B. Outfit follows the place", "c": "Traveler in Sprout, robe aboard the ship and in the cave; the creator picks both."},
+    {"v": "earned", "label": "C. Traveler first, robe earned (recommended)", "c": "You start as the traveler; the oath at the end of Chapter 1 gives you the robe, and you keep both."}
+   ]}
+ ]
+}
