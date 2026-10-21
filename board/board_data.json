@@ -31685,6 +31685,18 @@
      "architect"
     ],
     "pass": "email-pipeline1"
+   },
+   "gw-shadow-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T21:42:40.648Z",
+    "record": "council/ledger/2026-10-21-pull-214240.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "wave-form1"
    }
   },
   "questions": {
@@ -35919,7 +35931,7 @@
  "steps_recorded_through": "2026-10-21T19:25:02.633Z",
  "morning": {
   "date": "2026-10-21",
-  "gathered_at": "2026-10-21T17:04:52Z",
+  "gathered_at": "2026-10-21T20:28:55Z",
   "sealed": "2026-10-21",
   "pick_limit": 7,
   "goals": [],
@@ -36026,154 +36038,11 @@
     "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
     "items": [
      {
-      "id": "board-uc-who-reads",
-      "text": "May the council read your unchosen Tap the Vein lines to find patterns? The council recommends once a week, in place.",
-      "ref": "uc-who-reads",
+      "id": "board-gw-shadow-first",
+      "text": "The shadow part appears as its own gas spirit in the shadow colour as soon as the shadow is named. It is a gate: you work it through with the unveil practice and the daemons' asks, then keep it as a spirit or let it become a vibeulon,…",
+      "ref": "gw-shadow-first",
       "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "question, unchosen1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-c1w-blank-card",
-      "text": "The Chapter 1 arrival aboard the ship always shows one blank card, and the spirit asks about it. The passport has no field for a blank card yet, so the page adds it on arrival. It becomes a passport field (a hand item with no title) when…",
-      "ref": "c1w-blank-card",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, chapter1-calrunia1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-gs-two-acts",
-      "text": "Summoning makes a new spirit; growing feeds one you already have. Summoning takes a charge worked through the whole W.A.V.E. that none of your spirits carries yet, and the new spirit comes out through the door as a gas cloud. Growing…",
-      "ref": "gs-two-acts",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, grow-or-summon1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-gs-harvest-is-qi",
-      "text": "Harvested energy is qi. You harvest it by sitting, by practice and from the places you go; it fills the qi meter or flows straight into a spirit you choose, adding to that spirit's sittings, which carry it from gas to core to hologram to…",
-      "ref": "gs-harvest-is-qi",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, grow-or-summon1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-gs-door-gas",
-      "text": "The blobs that come out of the door are your newly summoned spirits at the gas stage, one for each charge you worked through. Sitting with one grows it, as with any of your spirits. This stands unless you flip it.",
-      "ref": "gs-door-gas",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, grow-or-summon1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-gs-same-charge-grows",
-      "text": "A W.A.V.E. on a charge one of your spirits already carries grows that spirit and never makes a second. A new charge in a family you already have offers both at the end of the sitting, \"Feed Fear\" or \"Call a new one\", with the likelier…",
-      "ref": "gs-same-charge-grows",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, grow-or-summon1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-gs-show-the-flow",
-      "text": "You can see which one happened. Growing: motes stream from you into the spirit sitting with you, and it swells. Summoning: the motes gather into a new cloud that drifts out through the door. Reduced motion fades instead. This stands…",
-      "ref": "gs-show-the-flow",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, grow-or-summon1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-uc-keep-unchosen",
-      "text": "Every brainstorm line you name in Tap the Vein and don't choose is kept in bars-engine with its morning and what happened to it: left raw, composted, or marked play and not picked (lines past the day's cap or the menu's seven count here…",
-      "ref": "uc-keep-unchosen",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, unchosen1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-uc-not-chosen-view",
-      "text": "Tap the Vein gets a \"Not chosen\" section under the seed library, and on the opening and sealed screens. It opens only when you open it and shows no count while closed. It lists past mornings' unchosen lines in your words, newest first.…",
-      "ref": "uc-not-chosen-view",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, unchosen1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-uc-pattern-returns",
-      "text": "A pattern is a word that comes back on two or more mornings, counted by mornings, at most five shown. Tap one to see every line it came from, with dates. It reads \"keeps coming back\", never avoidance. This stands unless you flip it.",
-      "ref": "uc-pattern-returns",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, unchosen1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-uc-no-duty",
-      "text": "An unchosen line owes nothing: no reminders, no resurfacing, never a task unless you make it one. Composted lines show muted, as residue in a pattern, and are not offered back. This stands unless you flip it.",
-      "ref": "uc-no-duty",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, unchosen1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-uc-council-misses",
-      "text": "The faces' suggestions you decline on the menu and the face-off cards you don't pick are the council's misses, not your unchosen energy. A later build keeps them in their own store, so the council can measure its own aim. This stands…",
-      "ref": "uc-council-misses",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, unchosen1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-uc-links-by-hand",
-      "text": "Nothing unchosen is turned into qi, vibeulons or spirits. A pattern becomes a spirit only the way any charge does, when you take it through the W.A.V.E. The daily compost pass keeps to board steps. This stands unless you flip it.",
-      "ref": "uc-links-by-hand",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, unchosen1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     },
-     {
-      "id": "board-uc-first-build",
-      "text": "First build: the read-only \"Not chosen\" view in bars-engine, from lines already saved, with a test. Next: \"Draw into today\" on a raw or unpicked line, then the council's misses store. Test UC1 on 2026-11-04. This stands unless you flip it.",
-      "ref": "uc-first-build",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, unchosen1",
+      "note": "position, stands unless you flip it, wave-form1",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
