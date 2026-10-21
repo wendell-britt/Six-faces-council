@@ -134,3 +134,43 @@ tools:
     licence: MIT
     status: rejected
     why: scouted 2026-10-21. Our threads run in Claude cloud containers, where Beacon records no token counts, and shipping transcripts out needs a third-party account or a bucket. Its memory loop duplicates callsheets, project memory, needs-work and lessons, and recall skills add context to every thread, which is the cost we are cutting. Revisit if the cost audit ever needs per-call traces from local desktop sessions.
+
+  # Scouted for the story pipeline (council/story/PIPELINE.md) on 2026-10-21, rung 4 of the ladder.
+  - id: yarn-spinner
+    does: Yarn's branching-dialogue language and compiler; the CLI writes a .yarnc program plus CSV line and metadata tables, which are the useful half for a non-C# engine
+    tags: [story, dialogue, branching, narrative, quest, csv, localisation, script, yarn]
+    where: github.com/YarnSpinnerTool/YarnSpinner (core MIT); Unity package has a paid Yarn Spinner+ tier at $75 one-time; no official browser runtime
+    licence: MIT for the core and CLI; check the YSPL terms on any packaged release
+    status: available
+    why: our engine is three.js, so the CSV export is usable and the runtime is not. Read the CSV, keep the words in git.
+
+  - id: twine-tweego
+    does: Twine and its Tweego command-line compiler; Twee source to a standalone HTML story with Harlowe or Snowman
+    tags: [story, branching, prototype, html, interactivity, narrative]
+    where: twinery.org, motoslave.net/tweego
+    licence: free and open source; stories are yours
+    status: rejected
+    why: scouted 2026-10-21 for the story pipeline. Its output is a playable HTML bundle with the format's own runtime, not engine data, so a beat written in it would have to be rewritten for the game. Keep it for a prototype page only.
+
+  - id: articy-draft
+    does: a narrative-design database with visual flow, dialogue, entities, variables and JSON/XML export
+    tags: [story, dialogue, branching, narrative, quest, database, export, localisation, editor]
+    where: articy.com; exports JSON and XML for a custom pipeline, so no runtime is required
+    licence: proprietary; free edition to 700 objects, one seat at €79.99 a year
+    status: gated
+    why: worth it only if several writers ever share one chapter at once. Until then the pack in git is the source of truth and the check enforces it.
+
+  - id: arcweave
+    does: a browser graph editor for branching dialogue, quests and lore, exporting JSON, CSV/XLSX and Markdown
+    tags: [story, dialogue, branching, narrative, quest, export, editor, saas]
+    where: arcweave.com, docs.arcweave.com/project-tools/export
+    licence: proprietary SaaS; Basic free and non-commercial, Pro $15 a member a month billed yearly
+    status: gated
+
+  - id: godot-dialogic
+    does: a dialogue and visual-novel add-on for Godot with plain-text timelines and CSV localisation
+    tags: [story, dialogue, branching, narrative, godot, editor]
+    where: github.com/dialogic-godot/dialogic; Godot 4.5+, still in development
+    licence: MIT
+    status: rejected
+    why: scouted 2026-10-21 for the story pipeline. Godot-only, with no documented general JSON export, so a three.js game would write a converter and re-create the runtime. Revisit if Godot ever becomes an engine.
