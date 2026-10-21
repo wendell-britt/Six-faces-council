@@ -31337,6 +31337,127 @@
      "architect"
     ],
     "pass": "fcp-launch"
+   },
+   "cr2-scene-not-form": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:27:36.980Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-mist-takes-shape": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:27:49.379Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-well-reflection": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:28:02.837Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-satchel-and-bundle": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:28:13.103Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-no-gender-step": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:28:19.568Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-travel-paper": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:28:24.084Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-change-free": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:28:27.017Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-roll-a-stranger": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:28:30.218Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-reuse": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:28:44.550Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "calrunia-creator2"
+   },
+   "cr2-first-build": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:29:12.284Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "steer": "I Think I want to build the web scene in 3d in blender. Have it be like a cutscene for sprout",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "calrunia-creator2"
    }
   },
   "questions": {
@@ -34153,6 +34274,18 @@
      "regent"
     ],
     "pass": "fcp-launch"
+   },
+   "cr2-arrival-scene": {
+    "decision": "arcade",
+    "label": "A cabinet in the Infinite Arcade",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:27:25.622Z",
+    "record": "council/ledger/2026-10-21-pull-172912.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "calrunia-creator2"
    }
   },
   "causes": {
