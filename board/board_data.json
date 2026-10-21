@@ -31685,6 +31685,18 @@
      "architect"
     ],
     "pass": "email-pipeline1"
+   },
+   "gw-shadow-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T21:42:40.648Z",
+    "record": "council/ledger/2026-10-21-pull-214240.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "wave-form1"
    }
   },
   "questions": {
