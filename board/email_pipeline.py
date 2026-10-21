@@ -4,8 +4,11 @@
 
 A draft lives on the contact it is for, as one `draft` block on contacts/<id>:
 
-  {to: [...], cc: [...], subject, body, status, updated, lint: [...], author, approvedHash, approvedAt, note,
+  {to: [...], cc: [...], subject, body, status, updated, lint: [...], voice: [...], author, approvedHash, approvedAt, note,
    sendingAt, sentAt, messageId, threadId}
+
+The draft step runs the email voice pass (board/email_voice.py, docs/email-voice.md) and keeps its findings as
+`voice`. A draft with an unaccepted tell is refused: rewrite it, or pass --accept RULE:"reason".
 
 status is draft, send, revise, sending, sent or dropped. Any client may draft (a Claude thread, Zo, Codex, a routine);
 drafting never sends. Wendell reads and edits the draft on the tab. His Send press saves the text he saw, sets status
@@ -13,7 +16,7 @@ send and stores approvedHash, the sha256 of that exact text (approval_hash below
 crypto.subtle, and tests/test_email_pipeline.py pins one vector for both). Revise and Drop never send.
 
   python3 board/email_pipeline.py draft --store <dir> --contact <id> --to a@b --subject S --body-file f [--cc x@y]
-                                        [--author name] [--no-push]
+                                        [--author name] [--kind reply|outreach] [--accept RULE:"reason"] [--no-push]
   python3 board/email_pipeline.py ready <dir>
   python3 board/email_pipeline.py mark --store <dir> <contact> sending|sent [--message-id M --thread-id T] [--no-push]
   python3 board/email_pipeline.py refuse --store <dir> <contact> <reason> [--checked-sent-folder] [--no-push]
@@ -173,7 +176,14 @@ def lint(body):
     return [f'{h["rule"]} L{h["line"]}: {h["text"]}' for e in rep for h in e["hard"]]
 
 
-def make_draft(contact, to, cc, subject, body, author, findings, at):
+def _email_voice():
+    spec = importlib.util.spec_from_file_location("email_voice", HERE / "email_voice.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def make_draft(contact, to, cc, subject, body, author, findings, at, voice=None):
     old = contact.get("draft") if isinstance(contact.get("draft"), dict) else {}
     if old.get("status") in LOCKED:
         sys.exit(f"refusing: this contact's draft is in status {old['status']}; it was approved or is being sent")
@@ -181,7 +191,7 @@ def make_draft(contact, to, cc, subject, body, author, findings, at):
     if old.get("status") == "sent":  # keep the sent email's ids so a reply check can still find its thread
         previous.append({k: old.get(k) for k in ("subject", "sentAt", "messageId", "threadId")})
     d = {"to": list(to), "cc": list(cc or []), "subject": subject, "body": body, "status": "draft", "updated": at,
-         "lint": findings, "author": author, "approvedHash": None, "approvedAt": None, "note": "", "sendingAt": None,
+         "lint": findings, "voice": list(voice or []), "author": author, "approvedHash": None, "approvedAt": None, "note": "", "sendingAt": None,
          "sentAt": None, "messageId": None, "threadId": None}
     if previous:
         d["previous"] = previous
@@ -191,7 +201,17 @@ def make_draft(contact, to, cc, subject, body, author, findings, at):
 def cmd_draft(a):
     contact = load_contact(a.store, a.contact)
     body = Path(a.body_file).read_text(encoding="utf-8")
-    d = make_draft(contact, a.to, a.cc, a.subject, body, a.author, lint(body), now())
+    ev = _email_voice()
+    try:
+        accept = ev.parse_accepts(a.accept)
+    except ValueError as e:
+        sys.exit(f"refusing: {e}")
+    voice = ev.scan(body, a.kind, accept)
+    print(ev.report(voice, a.kind))
+    if ev.open_tells(voice):
+        sys.exit("refusing: the draft still reads as AI in the places marked TELL. Rewrite it, or pass "
+                 '--accept RULE:"reason" with a written reason for each rule that stays.')
+    d = make_draft(contact, a.to, a.cc, a.subject, body, a.author, lint(body), now(), voice)
     if d["lint"]:
         print("voice_lint findings (shown on the card):\n  " + "\n  ".join(d["lint"]))
     return write_draft(a.store, a.contact, contact, d, not a.no_push)
@@ -238,6 +258,8 @@ def main():
     p.add_argument("--subject", required=True)
     p.add_argument("--body-file", required=True)
     p.add_argument("--author", default="session")
+    p.add_argument("--kind", choices=("reply", "outreach"), default="outreach")
+    p.add_argument("--accept", action="append", default=[], metavar='RULE:"reason"')
     p.add_argument("--no-push", action="store_true")
     r = sub.add_parser("ready")
     r.add_argument("store")
