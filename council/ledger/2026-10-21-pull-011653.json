@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T01:16:53.309Z",
+ "answers": {
+  "jev-asset-additions": {
+   "kind": "question",
+   "choice": "matches",
+   "savedAt": "2026-10-21T01:16:35.631Z",
+   "steer": ""
+  },
+  "hx-carry-feeds-spirit": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:16:40.989Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "hx-looks-gate": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:16:45.854Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "jev-trials-paused": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:16:47.649Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "jev-asset-readers-label": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:16:53.309Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/jev-asset-additions: An extra behaviour counts as a match, recorded as a separate finding"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
