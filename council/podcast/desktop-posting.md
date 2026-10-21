@@ -42,3 +42,15 @@ claim about the show.
 
 Claude on Desktop has not been run on a Flirtcraft or Friendcraft post yet, and nobody has confirmed the ep 2 handoff
 ran end to end. The first run's report goes in `council/callsheets/podcast.md`.
+
+## Flirtcraft episode 1, clips 3 to 5 (cards `flirtcraft-ep1-clips-03`, `-06`, `-07`)
+
+Wendell, 2026-10-21, "back to AI (automate)": post the next three clips the same way, one every three or four days. They
+are the clips the Thumbnail Studio lists as 3 Hot Girl Summer, 6 What a crush is and 7 Flirt even more (QC). They go out
+on the Desktop route with the same rules: a handoff file, his go on each post, X by hand. Each is an Instagram Reel and a
+Facebook Reel through Business Suite, scheduled three or four days apart from the first date he gives.
+
+The captions and covers for these clips were written in the Flirtcraft podcast project's files, which this repo and this
+project do not hold (`flirtcraft-socials-02` has the same gap). The handoff therefore names the clips and their covers
+and has Claude on his Mac read each caption from the Flirtcraft podcast files on his Mac, show it to him, and post only
+what he approves. No thread writes these captions from memory.

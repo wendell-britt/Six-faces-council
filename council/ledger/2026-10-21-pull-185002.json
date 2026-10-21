@@ -1,0 +1,22 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T18:50:02.148Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "podcast-ep1-clips-05",
+   "at": "2026-10-21T18:50:02.148Z",
+   "what": "back to AI",
+   "note": "This is part of the now automated podcast pipeline",
+   "automate": false,
+   "do": "Nine days after clip 1, note each clip's views, saves and shares from the platforms' insights, and paste them in the podcast thread."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/podcast-ep1-clips-05: back to AI: \"This is part of the now automated podcast pipeline\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
