@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T17:56:49.000Z",
+ "answers": {
+  "fcp-cover-pick": {
+   "kind": "question",
+   "choice": "b-two-friends",
+   "savedAt": "2026-10-21T17:56:49.000Z",
+   "steer": "well now that I look at them I really likek the teal and purple one",
+   "via": "chat (replaces a-teal-hex saved on the board at 17:51)"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/fcp-cover-pick: B, Two friends (steer: \"well now that I look at them I really likek the teal and purple one\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
