@@ -199,3 +199,29 @@ Owns sprout #71 and bars-engine #420, branch `claude/project-thread-3ag8x2` in b
    onto it in `figure.js`; send the reading to a worker.
 Re-render runs in the background (about 40 min, bpy==5.2.2 into /home/user/blenv, see tools/blender-cloud/README.md).
 sprout `*.glb` is in Git LFS and cloud sessions cannot push LFS: name models `.glb.bin`. Hand off at 150k.
+
+## Arcade arrival, round 3 built (2026-10-21, thread "Arcade arrival round 3")
+
+Built on branch `claude/project-thread-3ag8x2`: bars-engine #420 `arrival.py` now has six cabinet types, each with its own
+screen (cocktail face-up 4:3, cabaret small 4:3, Astro City candy cabinet leaning 4:3 with rounded top and stool, upright
+4:3, vertical shooter 3:4 portrait, widescreen deluxe 16:9), ball-top joysticks on shafts and round buttons in rows
+(`--side Y` renders a check still). Chapter 1 cabinet and screen-rect unchanged. sprout #71: the figure walks up the road
+and through the south gate over shot two's last frame (`?beat=gate`, camera and fog matched to arrival.py); jacket,
+wrap dress and long coat are the J5 robe (`slice/figure/robe.glb.bin`, `sash.glb.bin`) cut at hip, mid-calf with sash,
+full length. Preview: https://sprout-git-claude-project-thr-7fd764-wendells-projects-9c1b16dc.vercel.app/creator.html?beat=gate
+Not checked: real phone, Safari.
+
+## Arcade arrival, round 4 brief (2026-10-21 22:08 UTC, his note on round 3)
+
+His words: "the walking motion of the 3d figure looks pretty unnatural. this figure would also need a pair of pants that
+are more than the base model. We'd need to create travel pants. We might already have some of this figured out in Root"
+
+Owns sprout #71 and bars-engine #420, branch `claude/project-thread-3ag8x2` in both. Opus. Scout first (docs/tool-scout.md).
+1. Walk: Average Dusk's `Walk` clip is hand-keyed. Look up the mocap retarget work (`/mnt/project-files/3d-build/autorig-mocap-2026-10-18/`
+   and `-fix-`, scripts/retarget.py; callsheets naming mocap) and a CC0 walk cycle; retarget onto the figure's rig, bake into
+   `figure/average-dusk.glb.bin` (keep `.glb.bin`, LFS). Prove with a side-by-side clip before swapping. Also check the gate
+   walk's speed matches the stride (`walkGate` in `slice/figure.js`: speed 2.0, timeScale speed/1.45).
+2. Travel pants: search Root's work for trousers/pants (one worker: Root repo/callsheets, `/mnt/project-files/` subfolders
+   for root, J5 `garments.py` on bars-engine #365 for the cloth pattern code). Build travel pants skinned to the same rig as
+   a separate `figure/pants.glb.bin`, worn under every cut, dyed from the look (shade colour).
+Send bulk reading to Agent workers; hand off at 150k.
