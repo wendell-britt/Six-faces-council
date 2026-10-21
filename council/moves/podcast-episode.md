@@ -5,6 +5,8 @@ title, a description with chapters, a YouTube thumbnail and three short clips fo
 Wendell picks the title, the thumbnail and the clip moments on the Council Board, and uploading and posting stay on
 his Your steps list.
 
+The whole pipeline across shows, with who owns what, is `council/podcast/PIPELINE.md`; this file is its stage 3.
+
 ## The ask, in his words
 
 Wendell, 2026-10-07, in the Mastering the Game of Allyship project, attaching the transcript of episode 2:
