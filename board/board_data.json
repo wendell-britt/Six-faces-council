@@ -34885,9 +34885,9 @@
  ],
  "steps_recorded_through": "2026-10-20T21:56:00.000Z",
  "morning": {
-  "date": "2026-10-21",
-  "gathered_at": "2026-10-21T17:02:45Z",
-  "sealed": "2026-10-21",
+  "date": "2026-10-20",
+  "gathered_at": "2026-10-21T17:04:51Z",
+  "sealed": "2026-10-20",
   "pick_limit": 7,
   "goals": [],
   "lenses": {
@@ -34936,50 +34936,49 @@
     "blurb": "The lines you kept this morning. Only kept lines leave Tap the Vein (mm-raw).",
     "items": [
      {
-      "id": "menu-task:cmviclyuf0004fikx8pdbhesx",
-      "text": "FInish Podcast Pipeline",
+      "id": "menu-task:cmvh1hcot000214khhcemrwdk",
+      "text": "Push my own coaching site.",
       "note": "Task",
-      "taskId": "cmviclyuf0004fikx8pdbhesx",
+      "taskId": "cmvh1hcot000214khhcemrwdk",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "menu-task:cmvicm0aj000dfikxn526y6xx",
-      "text": "Studying RPG story tools",
+      "id": "menu-task:cmvh1hdt5000b14kh8u037rpy",
+      "text": "Send the Campaign site to Annastasia",
       "note": "Task",
-      "taskId": "cmvicm0aj000dfikxn526y6xx",
+      "taskId": "cmvh1hdt5000b14kh8u037rpy",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "menu-task:cmvicm1ed000mfikxanan8wzn",
-      "text": "Automated Outreach Emails",
+      "id": "menu-task:cmvh1hfbs000k14kh7ex7mu0r",
+      "text": "REach out to MArina to be on the Podcast",
       "note": "Task",
-      "taskId": "cmvicm1ed000mfikxanan8wzn",
+      "taskId": "cmvh1hfbs000k14kh7ex7mu0r",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "menu-task:cmvicm2f7000vfikx347d423e",
-      "text": "Annastasia Campaign",
+      "id": "menu-task:cmvh1hgbt000t14khzuepor6c",
+      "text": "Finish the Social Media Automation",
       "note": "Task",
-      "taskId": "cmvicm2f7000vfikx347d423e",
+      "taskId": "cmvh1hgbt000t14khzuepor6c",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
       }
      },
      {
-      "id": "menu-task:cmvicm46a0014fikx7f01v82r",
-      "text": "Character Creation for Calrunia",
-      "note": "Task",
-      "taskId": "cmvicm46a0014fikx7f01v82r",
+      "id": "menu-line:reach out to mark carpenter about gathertown",
+      "text": "Reach out to Mark Carpenter about Gathertown",
+      "note": "Kept line",
       "bridge": {
        "kind": "unaligned",
        "why": "no Lens goals were read this morning"
