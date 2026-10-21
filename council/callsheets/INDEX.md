@@ -51,6 +51,7 @@ profile its threads load (docs/ontology-in-flows.md).
 - [board-plumbing](board-plumbing.md), 2026-10-21: /board/council was empty because the artifact store never reached Postgres. Empty-store guard merged (council #321); import route bars-engine #405; the import waits on board question `bi-import-key` (brief at the end of the sheet). Then step 5: point sessions' step and contact writes at bars-engine. 2026-10-21: a session with no Claude tools now picks the board up off main (`board/read.py --main-only`, `docs/pickup-here.md`) and lands rows with `sync_board.py --rows` and no live page.
 - [friendcraft](friendcraft.md), 2026-10-06: redesign pass, Part 0 interview, outline, each its own thread.
 - [steps-hand](steps-hand.md), 2026-10-20: Your steps is a five-card hand with a shuffle; inner work mints a vibeulon, a vibeulon pays a discard, the card comes back on the day ladder (hd-* positions). Left: bars-engine wallet (hd-wallet), a look on a real phone.
+- [email-pipeline](email-pipeline.md), 2026-10-21: drafts on a contact, Send on the board is permission to send (em-* positions); #351 builds the card and board/email_pipeline.py. Next: the test email to himself once #351 merges and the board is republished.
 
 ## Closed (no sheet)
 - 2026-10-05, from the standing daily session: daily stopped 2026-10-08 (`daily-stopped`), routine switched off.
@@ -58,4 +59,4 @@ profile its threads load (docs/ontology-in-flows.md).
 - 2026-10-06, from the board pickup thread: fresh-session routine closed 2026-10-07; rest is in board-plumbing.
 - Repeated headings in HANDOFF.md (outreach-on-board, 3D build options pass 2): read once, in podcast and cave-of-lessons.
 - spirit-care.md: Finch folded into spirits; mortal spirits, shadow, spirit-made quest BARs (2026-10-20)
-- calrunia-creator.md: the creator as the arrival scene of Chapter 1 (pass calrunia-creator2, cr2-* rows); next: land rows + page (Sonnet), then the Sprout well scene (Opus) (2026-10-21)
+- calrunia-creator.md: the creator as the arrival scene of Chapter 1; round 2 built (sprite or 3D fork, arcade gaps and heights: sprout #71, bars-engine #420), waiting on his look; next: NPC guide models from the grey gate (2026-10-21)

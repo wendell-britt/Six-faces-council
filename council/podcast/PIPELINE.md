@@ -41,8 +41,15 @@ consent and release, money). The one exception is a queue he approves on the boa
    9 (`episode-marketing-plan.md`). Two routes. The sitting: one computer session in Meta Business Suite from a
    posting pack (`ep02-posting-pack.md` is the pattern), X by hand (`pp-who-schedules`, `pa-x-api`). The queue: the
    session writes `council/podcast/queue/<episode>.json` and an approval row; his approve publishes Instagram and the
-   Page on the timer (`council/podcast/publish/README.md`). Ep 3 of MTGOA is the first queue.
-5. **Close.** Tick the episode's Your steps, put leftovers in `council/callsheets/podcast.md`, and record each of his
+   Page on the timer (`council/podcast/publish/README.md`). Ep 3 of MTGOA is the first queue. The third route, Claude on his Desktop driving Meta Business Suite with his go on each post, is the one in use now (`council/podcast/desktop-posting.md`).
+5. **Day-9 numbers.** Nine days after clip 1, each clip's views, saves and shares are read from the platforms' insights
+   and noted in `council/callsheets/podcast.md` (Wendell, 2026-10-21, `podcast-ep1-clips-05`: "This is part of the now
+   automated podcast pipeline"). Queue route: `publish.py numbers` already writes them into the queue file every Monday
+   once `META_TOKEN` is set. Desktop route: the thread hands Claude on his Mac a read-only task (open Business Suite
+   Insights, read each clip's numbers, change nothing, post nothing) and files what it reports. X numbers are read by
+   hand on x.com. The thread that finishes an episode schedules this read for day 9; the one that reads it compares the
+   clips (the marketing plan's test is whether a clip beats the episode link's reach). Ep 1 clips are the first read.
+6. **Close.** Tick the episode's Your steps, put leftovers in `council/callsheets/podcast.md`, and record each of his
    answers the way a board answer is recorded.
 
 ## Friendcraft's two extra steps

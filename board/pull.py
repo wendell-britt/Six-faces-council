@@ -10,7 +10,8 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
-  causes, steer, steps, blockers, picks, morning, ttv), query {"limit": 1000}, out_dir <dir>
+  causes, steer, steps, blockers, picks, morning, ttv, and contacts for outreach email drafts), query {"limit": 1000},
+  out_dir <dir>
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -186,6 +187,47 @@ def find_steps(data, store):
     return sorted(out, key=lambda e: e["at"])
 
 
+def find_unrouted(store):
+    """Needs-work lines for cards handed to Claude that no read has routed (with-claude-status, 2026-10-21). State, not
+    a recorded-through marker: a line shows while a step has `aiBack` and no `aiBack.status`, and leaves when a read
+    writes `aiBack.status` ({state: queued|working|review|new-thread, owner, link, note, at}), which the card's
+    With Claude list shows him."""
+    out = []
+    for f in sorted((store / "steps").glob("*.json")) if (store / "steps").is_dir() else []:
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        back = doc.get("aiBack")
+        if isinstance(back, dict) and not doc.get("done") and not isinstance(back.get("status"), dict):
+            out.append(f'steps/{f.stem}: with Claude since {back.get("at", "?")[:16]}, no owner yet: route it to its thread '
+                       f'or ask the coordinator for a new one, then write aiBack.status (docs/pickup.md, "With Claude cards")')
+    return out
+
+
+def find_drafts(store):
+    """Needs-work lines for outreach email drafts on contacts (outreach-drafts, 2026-10-21). They follow the drafts'
+    state, not a recorded-through marker: a line shows while the draft is in that state and leaves when a session
+    moves it on, so a rerun prints the same lines and writes nothing. They are printed, never written to the ledger
+    or main, because contacts stay off the public repos (board/store_write.py)."""
+    spec = importlib.util.spec_from_file_location("email_pipeline", HERE / "email_pipeline.py")
+    ep = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(ep)
+    out = []
+    c = ep.classify(store)
+    for r in c["ready"]:
+        out.append(f'contacts/{r["contact"]}: email approved to send "{r["subject"]}" '
+                   f'(python3 board/email_pipeline.py ready <dir>; a session with the Gmail connector sends it)')
+    for r in c["refused"]:
+        out.append(f'contacts/{r["contact"]}: email "{r["subject"]}" not sendable: {r["reason"]} '
+                   f'(python3 board/email_pipeline.py refuse)')
+    for r in c["stuck"]:
+        out.append(f'contacts/{r["contact"]}: email "{r["subject"]}" stuck in sending since {r["sendingAt"]}; '
+                   f'check the Sent folder by hand, never resend')
+    for cid, doc in ep.contacts(store).items():
+        d = doc.get("draft")
+        if isinstance(d, dict) and d.get("status") == "revise":
+            out.append(f'contacts/{cid}: email revise: "{(d.get("note") or "").strip()}" (on "{d.get("subject", "")}")')
+    return out
+
+
 def find_blockers(store):
     """Blocker panel runs (blockers/ in the store) that main lacks or holds an older save of. Wendell, 2026-10-12: the
     overdue card has to "save the data about the specific task that was blocked and what came up for the player and how
@@ -325,6 +367,12 @@ def main():
     if any(n["id"].startswith("ttv-2") for n in new if n["kind"] == "questions"):  # pitches he answered
         print("needs work:\n  ttv pitches answered: after recording, python3 council/ttv_bars.py accepted --write, then open a "
               "pull request in game-masters-guide")
+    unrouted = find_unrouted(store)
+    if unrouted:
+        print("needs work:\n  " + "\n  ".join(unrouted))
+    drafts = find_drafts(store)
+    if drafts:  # outreach-drafts: state on the contacts, printed every run while it holds
+        print("needs work:\n  " + "\n  ".join(drafts))
     if not new and not general and not steps and not blockers:
         print("every saved answer is recorded")
         return

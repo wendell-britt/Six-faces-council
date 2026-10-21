@@ -142,3 +142,38 @@ under 3 MB each, plus poster stills and the screen rectangle as JSON); the creat
 `slice/creator.html`/`creator.js`, playing the shots. Proof the cheap way first: a still of the corridor before the
 video. Preview: the sprout preview deploy opened on the scene. Then the ship's looking-glass (CharacterStudio refit)
 as round 2.
+
+## Arcade arrival, built (2026-10-21, thread "Arcade arrival cutscene")
+
+bars-engine #416 (`tools/blender-cloud/content/arcade/arrival.py`, `encode.sh`) renders the two shots (Cycles on CPU,
+46 min; shot1.mp4 430 KB, shot2.mp4 165 KB). sprout #70 replaces `slice/creator.*` with the scene, adds a dye option
+to `runtime/traveler.js` and a look reader in `ch1-arcade.html`. Preview (Vercel login):
+https://sprout-git-claude-project-thr-1570af-wendells-projects-9c1b16dc.vercel.app/creator.html (built slice serves the
+scene at `/creator.html`, Chapter 1 at `/ch1/`; `?beat=reflection` jumps). Stills: /mnt/project-files/arcade-arrival/.
+Checked in Playwright at phone and desktop sizes. Not checked: a real phone, Safari MP4, three halfway skin blends
+(fawn, chestnut, umber) by eye; the Chapter 1 cabinet does not stand out enough at the start of shot one.
+
+TRIGGER: his look at the preview. Notes -> fresh Opus thread owning #416 and #70 on branch
+`claude/project-thread-u7hkk7`. Next after that (position, stands from the look contract above and
+`c1w-link-handoff`): bars-engine writes the look from the Chapter 1 link into the guest passport (`look` in
+`schema/passport.schema.json`, fixtures, contract tests).
+
+## Arcade arrival, round 2 (2026-10-21, thread "Arcade arrival round 2")
+
+His notes on round 1: work through a 3D character that becomes the 2D sprite, or a fork where the player picks sprite or
+3D, the character's information the same either way ("I'm still testing which approach I like best"); space between the
+arcade consoles and varied heights; he loved the grey gate, and NPC guide models should extend from there.
+
+Built: sprout #71 (supersedes #70) and bars-engine #420 (supersedes #416, closed). The first beat in the Chapter 1 screen
+is the fork: Sprite or Figure (3D) (Average Dusk from J5, three.js, `slice/figure.js`), a switch on every beat, and
+Bake to pixels (the figure drawn at sprite size). The look string is unchanged; the form travels beside it as `&form=`
+and `&bake=1` and `sprout.form`. The arcade re-rendered with 0.45 m gaps, back walls and six cabinet heights.
+Preview (Vercel login): https://sprout-git-claude-project-thr-7fd764-wendells-projects-9c1b16dc.vercel.app/creator.html?beat=form
+Stills: /mnt/project-files/arcade-arrival/round2/.
+
+Not done: the figure's outfit cut (jacket, wrap dress, long coat all wear the robe; only the dye follows); the figure is
+small on a phone (the whole frame is); not checked on a real phone or Safari.
+
+TRIGGER: his look at the round 2 preview. Notes -> fresh Opus thread owning sprout #71 and bars-engine #420 on branch
+`claude/project-thread-3ag8x2`. Next after the fork settles: NPC guide models from the grey gate (his ask), then the
+outfit cuts on the figure if he keeps the 3D path.
