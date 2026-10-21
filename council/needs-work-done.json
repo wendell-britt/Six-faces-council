@@ -192,7 +192,6 @@
    "ref": "council/callsheets/artist-corps.md (rulings recorded, pass 2 brief)",
    "at": "2026-10-17T20:30:00Z"
   },
-<<<<<<< HEAD
   "2026-10-20-pull-214106#positions/hd-chases": {
    "by": "Claude",
    "ref": "board/template.html: each due podcast chase is its own card in the deck and hand (inHand on its contacts/ record); callsheet steps-hand.md round 3",
@@ -267,12 +266,11 @@
    "by": "Claude",
    "ref": "council/callsheets/calrunia-creator.md 'Brief after that' rewritten for the Arcade cutscene; cr2-first-build row revised; build in thread 'Arcade arrival cutscene'",
    "at": "2026-10-21T17:45:00Z"
-=======
+  },
   "2026-10-21-pull-175259#steps/ttv-cmviclyuf0004fikx8pdbhesx": {
    "by": "Claude",
    "ref": "council/podcast/PIPELINE.md (canonical podcast pipeline for all three shows)",
-   "at": "2026-10-21T18:20:00Z"
->>>>>>> 1a4bfcb (Podcast: canonical pipeline for all three shows, Friendcraft show cover A renderer)
+   "at": "2026-10-21T18:05:00Z"
   }
  }
 }
