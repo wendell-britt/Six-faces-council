@@ -11537,6 +11537,38 @@
    "auto": true,
    "pos": "First build: the read-only \"Not chosen\" view in bars-engine, from lines already saved, with a test. Next: \"Draw into today\" on a raw or unpicked line, then the council's misses store. Test UC1 on 2026-11-04. This stands unless you flip it.",
    "why": "Tool ladder rung 2: the data exists, so the build only reads it; no schema change. bars-engine pull request from the pass thread. Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
+  },
+  {
+   "id": "fcp-pipeline",
+   "faces": [
+    "architect"
+   ],
+   "pass": "fcp-launch",
+   "auto": true,
+   "pos": "The Friendcraft podcast runs the same pipeline as Mastering the Game of Allyship and Flirtcraft: the seven-step podcast episode move, the clip and cover standard, the Outreach tab and the posting packs. Two steps belong to this book alone: a harvest into the book's six extract buckets, and the guest's check of every quote before the manuscript. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"These are all sister shows and should follow the same podcast pipeline we've developed\". Source: friendcraft-manuacript podcast/PIPELINE.md; council/moves/podcast-episode.md"
+  },
+  {
+   "id": "fcp-host",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "fcp-launch",
+   "auto": true,
+   "pos": "The Friendcraft podcast is its own show on Spotify for Creators, as Flirtcraft is, with an RSS feed for Apple Podcasts. Each episode's video goes to YouTube, as the Allyship show's does. The upload steps go on Your steps once episode 1 is recorded. This stands unless you flip it.",
+   "why": "pod-host chose Spotify for Creators for Flirtcraft on 2026-10-06. podcast/FORMAT.md says video matters because the Kickstarter film comes out of the footage, and ruling 26 gave the show its own feed."
+  },
+  {
+   "id": "fcp-cover-drafts",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "fcp-launch",
+   "auto": true,
+   "pos": "The council drafts three Friendcraft podcast covers in Mastering Allyship's look with one strong colour change to friendcraft.app's teal, the way Flirtcraft's were changed to red, and brings them back as a question for you to pick one. The pick replaces the Friendcraft placeholder in the Podcast Thumbnail Studio. This stands unless you flip it.",
+   "why": "pod-art-ma and pod-art-recolor set this shape for Flirtcraft, and pod-thumb-studio holds a Friendcraft placeholder until the show has a cover."
   }
  ],
  "questions": [
@@ -18304,6 +18336,88 @@
      "v": "marked",
      "label": "C. Only lines you mark",
      "c": "Each unchosen line gets a \"show the council\" tick, and only ticked lines are read."
+    }
+   ]
+  },
+  {
+   "id": "fcp-episode-shape",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "fcp-launch",
+   "q": "What does a Friendcraft podcast episode make? The council recommends one thing made on air in every episode.",
+   "why_you": "You said the show is about making friends and making things with friends. The August format built a world on air and asked five set questions around it, and only you can say how far the new premise changes that.",
+   "not_before": "You started preproduction today, 2026-10-21. The format has stood since 2026-08-23 and nothing had asked it to change until now.",
+   "options": [
+    {
+     "v": "make-every-episode",
+     "label": "Make one thing in every episode (recommended)",
+     "c": "You and the friend agree before the call what you will make: a world, a song, a game, a plan. The hour makes it, and the five set questions run inside the making. The smallest change, and it keeps the August arc."
+    },
+    {
+     "v": "two-kinds",
+     "label": "Two kinds of episode, alternating",
+     "c": "Making episodes with your friends, Worldbuilding with Wendell style, and conversations with creative people about friendship as a creative act. Two formats to prepare for and two kinds of guest to find."
+    },
+    {
+     "v": "keep-arc",
+     "label": "Keep the August interview arc as it is",
+     "c": "The making happens off air, and the episode talks about it. Nothing in FORMAT.md changes."
+    }
+   ]
+  },
+  {
+   "id": "fcp-first-guests",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "fcp-launch",
+   "q": "Who are the first friends you want to make something with on the Friendcraft podcast? The council recommends you name three in the steer box.",
+   "why_you": "Naming a person is reserved to you, and only you know which of your friends want to make something with you on the record.",
+   "not_before": "You named the premise today, 2026-10-21. Your crew of five in conspirators/THE_CREW.md was named for the book, and none of them has been asked about the podcast.",
+   "options": [
+    {
+     "v": "name-them",
+     "label": "I will name three in the steer box (recommended)",
+     "c": "They go on the Outreach tab under a new show, Friendcraft, and the council drafts a friend-to-friend invitation for each that you send."
+    },
+    {
+     "v": "crew-first",
+     "label": "Start with the crew in THE_CREW.md",
+     "c": "Steven Fan, Ms. G, christine, Tasshin Fogleman and Visakan Veerasamy go on the Outreach tab, and the council drafts an invitation for each that you send."
+    },
+    {
+     "v": "council-list",
+     "label": "Have the council draft a list first",
+     "c": "The council puts twenty candidates on the Outreach tab, each with why they fit and a topic, as it did for Flirtcraft. None is contacted until you say so."
+    }
+   ]
+  },
+  {
+   "id": "fcp-release",
+   "faces": [
+    "regent"
+   ],
+   "pass": "fcp-launch",
+   "q": "Which release should Friendcraft podcast guests sign? The council recommends the Guest release form the other shows use, with Friendcraft's three consent moments.",
+   "why_you": "Consent and release are reserved to you. podcast/CONSENT_AND_RELEASE.md says a lawyer should review the Friendcraft draft before the first recording, and only you can decide whether that review happens first.",
+   "not_before": "Recording is now the next real step, as of 2026-10-21, and nothing can be recorded until this is answered.",
+   "options": [
+    {
+     "v": "shared-form",
+     "label": "The shared Guest release form, plus the three moments (recommended)",
+     "c": "Guests sign the same form as Allyship and Flirtcraft guests. The ask on the record at the end, and the check of every quote in context before the book, still run as CONSENT_AND_RELEASE.md says."
+    },
+    {
+     "v": "lawyer-first",
+     "label": "Have the Friendcraft draft reviewed by a lawyer first",
+     "c": "Recording waits until the review comes back. It costs money and time, and it gives a form written for a book made from interviews."
+    },
+    {
+     "v": "shared-now-review-later",
+     "label": "Shared form now, lawyer review before the book",
+     "c": "Episodes record now on the shared form, and the Friendcraft form is reviewed before any quote enters the manuscript."
     }
    ]
   }
@@ -34878,6 +34992,29 @@
       "rc-goal",
       "rc-credit",
       "rc-order"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fr-friendcraft-podcast",
+   "name": "Launching the Friendcraft podcast",
+   "repo": "friendcraft-manuacript",
+   "element": "wood",
+   "record": "friendcraft-manuacript podcast/PIPELINE.md",
+   "intro": "It wants the Friendcraft podcast started on the sister shows' pipeline: a show about making friends and making things with friends, where Wendell makes something with a friend on the record. Before anything is recorded it needs the episode's shape, the first guests and the release they sign.",
+   "rounds": [
+    {
+     "n": 1,
+     "questions": [
+      "fcp-episode-shape",
+      "fcp-first-guests",
+      "fcp-release"
+     ],
+     "positions": [
+      "fcp-pipeline",
+      "fcp-host",
+      "fcp-cover-drafts"
      ]
     }
    ]
