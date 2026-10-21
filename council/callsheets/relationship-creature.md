@@ -1,8 +1,28 @@
-2026-10-17 (updated 05:30)
+2026-10-17 (updated 2026-10-21)
 ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
 ## Next
+**2026-10-21, Ari's playtest (Wendell's message of 01:08 UTC, relayed in chat, word for word):**
+> I sent Ari’s link and the feedback was they wanted
+>
+> 1) an ability to design our room
+> 2) the ability to move objects around
+> 3) more ergonomic controls for someone who is already tired at looking at screens. She suggested captions and scrolling text that moves at the speed of comprehension and can be sped through
+> 4) they want to be able to customize their character to look and feel just like them
+> 5) they want the actions in the rooms to be spells. They’re attached to the idea of this as a dual cultivation space. Where players can create and design formations and moves. She wants the spirits movements to be more natural and a space for them that’s just their own like the barn in Stardew valley.
+>
+> She loved the idea of the gummy ship with a farm inside of it and really resonated with the ability to render worlds mathematically like no mans sky. She seemed to think this would be easy because of conversations she had with the developers and how they kept the cost of computation and rendering low by procedurally generating the world but only to the decree the player could see or travel
+>
+> Loved the ability to dance and wants to see how partners could use the root engine to play with each other and cultivate spirit energy
+>
+> She’s also been using the 5 elements negong by mantak chiu and was curious if there was a way for characters in the between could cultivate their spheres in alignment with emotional alchemy to raise qi for use in the room
+
+Ari's invite step is done: Wendell sent Ari the link (step 3 under Waiting on). Pass on the notes: `council/passes/6FACE_PASS_between-ari1_2026-10-21.md`.
+
+**2026-10-21, pass `between-ari1`** on Ari's notes (ledger `council/ledger/2026-10-21-between-ari1-pass.json`, rows `council/callsheets/rows/between-ari-2026-10-21.json`). Seven `ba-*` positions stand: round 4 is comfort (caption mode at a pace each player sets, moving your own items, spirits that pause and turn; `ba-round4-comfort`); spells start as one formation card to Ari, which also asks what the dance was (`ba-formation-card`); spells in plain words (`ba-spells-plain`); the spirit barn lives in each person's ship (`ba-barn-in-ship`); likeness by creator choices, never a photo (`ba-likeness-choices`); qi is the hollow's light, never a currency (`ba-qi-is-light`); procedural worlds and Root dance stored on their strands (`ba-worlds-stored`). Question: `ba-ari-look` (A, Ari's play counts as his look so round 4 starts, recommended; B, he looks first). Deferred: `ba-chia-credit`. Tests T1 (Ari reads the card, by 10-28), T2, T3.
+Next: (1) a Sonnet thread lands the `ba-*` rows on the board and publishes the formation-card step for Wendell to send Ari; (2) on `ba-ari-look` A, or his ticks on the hollow and lantern steps, a fresh Opus thread on bars-engine builds round 4 per the pass's build brief. Hold round 4 until then (`hx-looks-gate`).
+
 **Crafting, 2026-10-18, pass `crafting-charge1`:** Wendell's message of 18:42 asked for six-face research on Minecraft, Roblox, No Man's Sky and Taoist cultivation crafting, aimed at turning inner charge into game assets and items. Pass `council/passes/6FACE_PASS_crafting-charge1_2026-10-18.md`, ledger `council/ledger/2026-10-18-crafting-charge1-pass.json`, rows `council/callsheets/rows/crafting-charge-2026-10-18.json`, doc https://claude.ai/code/artifact/c01e8825-0736-455a-8541-a877eb6d2627. All five faces backed slice 1 on conditions. Twelve `cc-*` positions stand (slice 1 is one ember into one lantern at the hearth, `cc-hearth-slice`; the sealed-text leak is fixed on the server first, `cc-seal-fix-first`; embers private, intensity is look only, element hidden unless shown, no staleness-holding item, no random failure, no two-person recipe before Ari reads one). Question on the board: `cc-first-made` (A lantern, recommended; B tea). Deferred: `cc-licence-conflict` (toolbox.yaml allows CC-BY, QUICKSTART only own work and CC0). Tests F1 (first shared session), F2 (Ari reads a recipe card), F3 (desk count of wuxing pairs).
 Next: a fresh Opus build thread on bars-engine, on the hollow (#366/#367), per the build brief at the end of the pass file: the server fix, then embers and lanterns, `bh-device-gate` iPhone first, Ari after. Name the scout line.
 
@@ -176,7 +196,7 @@ Open, in order:
    `from: "artifact:NTi4jcpaHkDEMnqpVA9LBq"`, bearer COUNCIL_MENU_TOKEN. Blocked while that key returns 401 (the
    menu-key-match steps). The route is idempotent and answers "not needed" if he has already replanted under step 02,
    so either order is safe. Read the store with ArtifactData in the thread that runs it; its contents go nowhere else.
-3. **Share with Ari** (steps 01 and 02 ticked 2026-10-18 00:17 UTC, no notes; the invite is the only thing left, and only he can make it from the More sheet on his phone, since it needs his sign-in): copy the invite link from the More sheet. If Ari can't make a
+3. **Done 2026-10-21: shared with Ari** (Wendell sent the link; Ari's notes are under Next). Was: **Share with Ari** (steps 01 and 02 ticked 2026-10-18 00:17 UTC, no notes; the invite is the only thing left, and only he can make it from the More sheet on his phone, since it needs his sign-in): copy the invite link from the More sheet. If Ari can't make a
    bars-engine account, that is a board question.
 4. **Round 2, cozy and fun** (2026-10-17, board read 01:40: `bh-async-first` overruled after Ari said it is not cozy or
    fun enough). Gap list and the ChatGPT prompt: `council/passes/BETWEEN_round2_cozy_2026-10-17.md`. Waiting on his
