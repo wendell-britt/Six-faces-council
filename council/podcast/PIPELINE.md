@@ -41,7 +41,7 @@ consent and release, money). The one exception is a queue he approves on the boa
    9 (`episode-marketing-plan.md`). Two routes. The sitting: one computer session in Meta Business Suite from a
    posting pack (`ep02-posting-pack.md` is the pattern), X by hand (`pp-who-schedules`, `pa-x-api`). The queue: the
    session writes `council/podcast/queue/<episode>.json` and an approval row; his approve publishes Instagram and the
-   Page on the timer (`council/podcast/publish/README.md`). Ep 3 of MTGOA is the first queue.
+   Page on the timer (`council/podcast/publish/README.md`). Ep 3 of MTGOA is the first queue. The third route, Claude on his Desktop driving Meta Business Suite with his go on each post, is the one in use now (`council/podcast/desktop-posting.md`).
 5. **Close.** Tick the episode's Your steps, put leftovers in `council/callsheets/podcast.md`, and record each of his
    answers the way a board answer is recorded.
 
