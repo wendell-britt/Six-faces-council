@@ -159,6 +159,7 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .hd-mini{background:var(--card);color:var(--card-ink);font-size:.58rem;line-height:1.2;padding:6px 5px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.45);text-align:left}
 .hd-mini:nth-child(1){transform:rotate(-7deg)}.hd-mini:nth-child(2){transform:rotate(5deg)}.hd-mini:nth-child(3){transform:rotate(-2deg)}
 .hd-claude .hd-mini{background:#e9e4f5}
+.hd-wc{padding:4px 10px;font-size:13px}.hd-wc summary{cursor:pointer}.hd-wc ul{margin:6px 0 0;padding-left:18px}.hd-wc li{margin:4px 0}.hd-wc small{display:block;opacity:.75}
 .hd-chase .hd-idx b{color:#2d5d3a}
 .hd-coins{display:grid;justify-items:center;gap:6px}
 @media (min-width:700px){.hd-coins{margin-left:auto}}
@@ -528,7 +529,7 @@ body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
   <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
   <div class="hd" id="hd" hidden>
     <h2 class="sr-only">Your hand</h2>
-    <div class="hd-table"><div class="hd-piles" id="hd-piles"></div><ol class="hd-fan" id="hd-fan" aria-label="Your hand"></ol><p class="hd-say" id="hd-state" role="status"></p></div>
+    <div class="hd-table"><div class="hd-piles" id="hd-piles"></div><details class="hd-wc" id="hd-wc" hidden></details><ol class="hd-fan" id="hd-fan" aria-label="Your hand"></ol><p class="hd-say" id="hd-state" role="status"></p></div>
     <div class="hd-lift" id="hd-lift" hidden></div>
   </div>
   <details class="hd-deck" id="hd-deck"><summary id="hd-deck-sum">The deck</summary>
@@ -1534,6 +1535,13 @@ function hdRender(hand, deck, chases){
     <div class="hd-pile" aria-label="${away.length} discarded until their day"><span class="hd-stack${away.length ? '' : ' hd-none'}">${minis(topAway)}</span><span class="hd-pl">Discards · ${away.length}</span></div>
     ${backs.length ? `<div class="hd-pile hd-claude" aria-label="${backs.length} with Claude"><span class="hd-stack">${minis(backs.slice(-3))}</span><span class="hd-pl">With Claude · ${backs.length}</span></div>` : ''}
     <div class="hd-coins" aria-label="${coins} vibeulon${coins === 1 ? '' : 's'}"><span class="hd-coinstack">${Array.from({length: Math.min(coins, 7)}, (_, j) => `<i style="--j:${j}"></i>`).join('')}</span><span class="hd-pl" id="hd-wallet">${coins} vibeulon${coins === 1 ? '' : 's'}</span></div>`;
+  // With Claude list: each handed card with the status a board read wrote (aiBack.status), or "not picked up yet".
+  const wc = document.getElementById('hd-wc'), wcState = {queued: 'Queued', working: 'Being built', review: 'Waiting for your look', 'new-thread': 'Needs a new thread'};
+  wc.hidden = !backs.length;
+  wc.innerHTML = backs.length ? `<summary>With Claude · where each one is</summary><ul>${backs.map(([, s]) => {
+    const st = s.aiBack.status || {}, who = st.owner ? (/^https:/.test(st.link || '') ? `<a href="${esc(st.link)}" target="_blank" rel="noopener">${esc(st.owner)}</a>` : esc(st.owner)) : '';
+    return `<li>${esc(String(s.do).slice(0, 80))}<small>${st.state ? esc(wcState[st.state] || st.state) : 'Not picked up yet'}${who ? ' · ' + who : ''}${st.note ? ' · ' + esc(st.note) : ''}</small></li>`;
+  }).join('')}</ul>` : '';
   const say = document.getElementById('hd-state');
   if (!(Number(say.dataset.keep) > Date.now())) say.textContent = !free ? 'Your hand is full. Finish a card, or do inner work on one and pay the vibeulon to discard it.'
     : deck.length ? `${free} free slot${free === 1 ? '' : 's'}. Tap the deck to draw.` : 'The deck is empty.';
