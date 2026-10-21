@@ -74,3 +74,48 @@ shape keys, and a four-direction sprite render of the 3D figure beside the LPC t
 
 - Board: question `cr-look-by-place`, positions `cr-*` (rows file above). Rows landed on main and the board republished (2026-10-21).
   Deliverable page: https://claude.ai/artifact/GUcAH9AvymhZdEpLCp932V.
+
+## Pass calrunia-creator2: the creator as play (2026-10-21, Opus, design ontology game_design profile)
+
+His board answers (council/ledger/2026-10-21-pull-171630.json): `cr-look-by-place` C (traveler first, robe earned);
+`cr-build-own` overruled ("worth another pass at what kinds of character creators are already out there that are open
+source"; "the UI that have been made on our v1 ... hasn't been very good"); `cr-first-build` overruled ("too small a
+first build ... feels like a gamified experience ... designing from the POV of the player"). Rows:
+`council/callsheets/rows/calrunia-creator2-2026-10-21.json` (ten `cr2-*` positions, question `cr2-arrival-scene`).
+
+**The scene (player's seat).** Intrinsic pleasure: becoming someone by doing, and a small mystery you carry.
+1. Road mist: you walk in as fog; drag settles a body shape, a wide/narrow pull sets build; the fog thins as you choose.
+2. The well at the south gate: draw a bucket; the reflection shows you (faceless); eight river stones are skin; a swipe
+   on the water changes hair style and colour.
+3. The satchel: jacket, wrap dress, long coat, dyed violet or saffron. A tied bundle will not open: the robe, untied at
+   the oath at the hollow (A8).
+4. The travel paper: Ede writes your name and, if you like, how folk speak of you (default they). This is the passport
+   as the player sees it; places stamp it.
+5. Through the gate to Tam's farm (A1). "Choose for me" opens every beat; a skip gives a ready traveler.
+AQAL: UL the player authors who they are; UR gestures, not forms; LL Ede's welcome and the settlers' topknots read you as
+foreign; LR the look is keys in the passport, changeable free, never a cost or gate. Test: time to the gate (<3 min,
+skip <30 s), and whether he plays it on his phone without a word about the page.
+
+**Survey (one worker, 2026-10-21).** CharacterStudio (M3-org, MIT, three.js/VRM, active Aug 2026): trait swap, mesh
+merge, export; sample asset licences unchecked. Mozilla hackweek-avatar-maker (MPL code, CC-BY-SA models, dormant):
+copy its parts convention only. LPC generator (now LiberatedPixelCup org, GPL code, mixed art, active): copy the recipe
+JSON and credits export idea, not the code. Quaternius bases/outfits: Quaternius Asset License, not CC0, so reference
+only. Kenney Mini Characters CC0 but little to customise. No good free 3D-to-sprite add-on; render ourselves.
+
+## Brief for the next thread (Sonnet, Six-faces-council, clerical, design settled)
+
+1. Land the rows: save the live board with Artifact read, `python3 board/sync_board.py --live <saved> --rows
+   council/callsheets/rows/calrunia-creator2-2026-10-21.json --push -m "calrunia-creator2 rows"`, publish
+   `board/council-board.html` to https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho.
+2. Publish a short HTML page, "Calrunia Character Creator" (new artifact): the five beats as a storyboard, the survey
+   table, the reuse plan, the first build, the rows with the board link. Content is this section and the rows file.
+   Run `python3 council/tools/voice_lint.py` on it.
+3. Reply to Wendell under 80 words naming the page, the board rows and the one question; no question in the reply.
+
+## Brief after that (Opus, sprout, first build; starts on his answer to cr2-arrival-scene or with A if it stands)
+
+Replace `slice/creator.html`/`creator.js` (gender-first wizard) with the arrival scene above, using the existing
+traveler parts (`tools/build-traveler.mjs`, `character-parts/`), opening `prototype/ch1-arcade.html`, carrying the look
+choices in the Chapter 1 link (`c1w-link-handoff`). Scout line: rung 2 (we have the parts) plus the LPC recipe idea.
+Give a one-click preview opened on the scene (artifact or the sprout host). Then the ship's looking-glass (bars-engine,
+CharacterStudio refit) as round 2.

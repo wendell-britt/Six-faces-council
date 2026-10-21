@@ -1,0 +1,81 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T17:29:12.284Z",
+ "answers": {
+  "cr2-arrival-scene": {
+   "kind": "question",
+   "choice": "arcade",
+   "savedAt": "2026-10-21T17:27:25.622Z",
+   "steer": ""
+  },
+  "cr2-scene-not-form": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:27:36.980Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-mist-takes-shape": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:27:49.379Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-well-reflection": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:28:02.837Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-satchel-and-bundle": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:28:13.103Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-no-gender-step": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:28:19.568Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-travel-paper": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:28:24.084Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-change-free": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:28:27.017Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-roll-a-stranger": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:28:30.218Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-reuse": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:28:44.550Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cr2-first-build": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:29:12.284Z",
+   "status": "overrule",
+   "steer": "I Think I want to build the web scene in 3d in blender. Have it be like a cutscene for sprout"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/cr2-arrival-scene: A cabinet in the Infinite Arcade",
+  "positions/cr2-first-build: Overruled (steer: \"I Think I want to build the web scene in 3d in blender. Have it be like a cutscene for sprout\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
