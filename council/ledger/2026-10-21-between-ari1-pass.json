@@ -1,0 +1,426 @@
+{
+ "date": "2026-10-21",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "The Between: Ari's playtest",
+ "record": "council/passes/6FACE_PASS_between-ari1_2026-10-21.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's message of 2026-10-21 01:08 UTC relaying Ari's notes; thread started by the project coordinator",
+ "pulled_first": null,
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    7,
+    6,
+    7,
+    8,
+    7,
+    6
+   ],
+   "changing_lines": [
+    2,
+    6
+   ],
+   "n": 63,
+   "name": "Arrived",
+   "cn": "既濟",
+   "pinyin": "jì jì",
+   "lines": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0
+   ],
+   "shows": "This is finished, which is when it starts moving.",
+   "image": "☲ fire beneath ☵ water. Every line in the figure sits in its correct place, with the water above the fire.",
+   "situation": "After completion. This is the one figure where all six lines are correctly placed, which the tradition treats as the start of decline, since a thing entirely finished has one direction left to it. The old counsel gives good fortune at the outset and disorder at the end, and tells you to think about the trouble in advance.",
+   "lower": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   },
+   "upper": {
+    "trigram": "water",
+    "symbol": "☵",
+    "name": "The Abysmal",
+    "quality": "danger"
+   },
+   "becomes": {
+    "n": 9,
+    "name": "Restraint",
+    "cn": "小畜",
+    "pinyin": "xiǎo chù",
+    "lines": [
+     1,
+     1,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "A small rule you never revisited is holding all of this.",
+    "image": "☰ heaven beneath ☴ wind. One yielding line holding five firm ones, the way weather is held by wind.",
+    "situation": "A small force restrains a large one here, and the large one is permitting it. The single yielding line's whole strength is position. The tradition reads the restraint as accumulation: force that cannot discharge yet is being stored.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    8,
+    8,
+    6,
+    7,
+    6,
+    6
+   ],
+   "changing_lines": [
+    3,
+    5,
+    6
+   ],
+   "n": 16,
+   "name": "Anticipation",
+   "cn": "豫",
+   "pinyin": "yù",
+   "lines": [
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "shows": "The good part has started and the event has not.",
+   "image": "☷ earth beneath ☳ thunder. Thunder coming up out of the ground, the sound arriving before the storm.",
+   "situation": "Stored energy at the point of release. The character carries both readiness and delight, and the old commentary attaches music to it — the thing that gathers a crowd before anything has happened. Preparation and pleasure are the same motion here.",
+   "lower": {
+    "trigram": "earth",
+    "symbol": "☷",
+    "name": "The Receptive",
+    "quality": "yielding"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 33,
+    "name": "Retreat",
+    "cn": "遯",
+    "pinyin": "dùn",
+    "lines": [
+     0,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "Leaving is available, and the timing decides what you keep.",
+    "image": "☶ mountain beneath ☰ heaven. Two yielding lines have come up underneath, and the firm lines are moving off.",
+    "situation": "Withdrawal in good order, at the moment that keeps it from becoming a rout. The old text calls it favourable and adds that the small is favourable too, which is the qualification: you keep something by leaving early with it.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    9,
+    7,
+    8,
+    9,
+    9,
+    7
+   ],
+   "changing_lines": [
+    1,
+    4,
+    5
+   ],
+   "n": 10,
+   "name": "Footing",
+   "cn": "履",
+   "pinyin": "lǚ",
+   "lines": [
+    1,
+    1,
+    0,
+    1,
+    1,
+    1
+   ],
+   "shows": "You are stepping onto ground that matters, and the play is what makes it safe.",
+   "image": "☱ lake beneath ☰ heaven. A small soft thing placed directly under the largest hard one.",
+   "situation": "The old line is about treading on a tiger's tail and coming away whole, which happens through the quality of the step. Conduct is the entire content here. Where you put your weight, in what order, at what speed, decides whether the ground holds.",
+   "lower": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   },
+   "upper": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "becomes": {
+    "n": 4,
+    "name": "Fog",
+    "cn": "蒙",
+    "pinyin": "méng",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     0,
+     1
+    ],
+    "shows": "You are guessing where you could ask.",
+    "image": "☵ water beneath ☶ mountain. A spring at the foot of a peak, with mist over all of it.",
+    "situation": "Something is genuinely obscured, and the obscured thing is the one looking. The frame is a young person who has yet to learn, and the instruction runs toward the asker: the teacher answers the first question honestly and goes quiet by the third, because a question put three times has stopped being a question.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    8,
+    7,
+    7,
+    7,
+    8,
+    7
+   ],
+   "changing_lines": [],
+   "n": 50,
+   "name": "The Cauldron",
+   "cn": "鼎",
+   "pinyin": "dǐng",
+   "lines": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ],
+   "shows": "This is being transformed, and you are carrying it by the handles.",
+   "image": "☴ wind beneath ☲ fire. Wood fed into flame underneath a standing vessel.",
+   "situation": "The bronze cauldron is a cooking pot and also the emblem of a legitimate house. Raw things go in and something else comes out. The old lines worry at the legs and the handles, because the vessel can be overturned, and what is inside goes with it.",
+   "lower": {
+    "trigram": "wind",
+    "symbol": "☴",
+    "name": "The Gentle",
+    "quality": "penetrating"
+   },
+   "upper": {
+    "trigram": "fire",
+    "symbol": "☲",
+    "name": "The Clinging",
+    "quality": "light, and what it depends on"
+   }
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    7,
+    9,
+    9,
+    7,
+    8,
+    8
+   ],
+   "changing_lines": [
+    2,
+    3
+   ],
+   "n": 34,
+   "name": "Vigour",
+   "cn": "大壯",
+   "pinyin": "dà zhuàng",
+   "lines": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+   ],
+   "shows": "Force is available here and unaimed.",
+   "image": "☰ heaven beneath ☳ thunder. Four firm lines have risen and the entire lower half of the figure is force.",
+   "situation": "Great power at the moment it becomes available and before it has anywhere to go. The old image is a ram butting a hedge and catching its horns, which is what unaimed strength does. The counsel is about propriety, so the question the figure asks is where you point it.",
+   "lower": {
+    "trigram": "heaven",
+    "symbol": "☰",
+    "name": "The Creative",
+    "quality": "strong"
+   },
+   "upper": {
+    "trigram": "thunder",
+    "symbol": "☳",
+    "name": "The Arousing",
+    "quality": "movement"
+   },
+   "becomes": {
+    "n": 51,
+    "name": "Shock",
+    "cn": "震",
+    "pinyin": "zhèn",
+    "lines": [
+     1,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "shows": "It went off, and it will go off again.",
+    "image": "☳ thunder beneath ☳ thunder. One firm line arriving at the bottom, and then arriving again above it.",
+    "situation": "The shock comes, and then it comes a second time. The old text keeps a wonderful detail through it: laughing words, ha ha, and the man who keeps the sacrificial wine in the cup. Terror arrives from a hundred miles off, and the one still holding the ladle is the one who inherits.",
+    "lower": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    },
+    "upper": {
+     "trigram": "thunder",
+     "symbol": "☳",
+     "name": "The Arousing",
+     "quality": "movement"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": null,
+   "values": [
+    8,
+    8,
+    7,
+    7,
+    7,
+    8
+   ],
+   "changing_lines": [],
+   "n": 31,
+   "name": "Mutuality",
+   "cn": "咸",
+   "pinyin": "xián",
+   "lines": [
+    0,
+    0,
+    1,
+    1,
+    1,
+    0
+   ],
+   "shows": "The movement here arrived because you stopped.",
+   "image": "☶ mountain beneath ☱ lake. The mountain holds a hollow at its summit; the lake settles into it.",
+   "situation": "Stillness underneath, openness above. Influence runs both ways here only because the lower party stopped moving long enough to be shaped. The classical note is that this works because the young man takes the position beneath the young woman.",
+   "lower": {
+    "trigram": "mountain",
+    "symbol": "☶",
+    "name": "Keeping Still",
+    "quality": "rest"
+   },
+   "upper": {
+    "trigram": "lake",
+    "symbol": "☱",
+    "name": "The Joyous",
+    "quality": "joyful"
+   }
+  }
+ ],
+ "positions": [
+  "ba-round4-comfort",
+  "ba-formation-card",
+  "ba-spells-plain",
+  "ba-barn-in-ship",
+  "ba-likeness-choices",
+  "ba-qi-is-light",
+  "ba-worlds-stored"
+ ],
+ "questions": [
+  "ba-ari-look"
+ ],
+ "deferred": [
+  "ba-chia-credit"
+ ],
+ "daemon_reports": [],
+ "unanimous": false,
+ "verdicts": "all five faces support on round 4's contents and the formation card; split on order (Shaman, Architect, Diplomat: Ari's play opens the gate; Regent, Challenger: his look first)",
+ "cast_note": "Cast once by cast.py in the pass thread; tosses not kept, line values kept.",
+ "ontology_profile": "default",
+ "tests_dated": [
+  {
+   "id": "T1",
+   "due": "2026-10-28",
+   "test": "Ari reads the formation card and wants to cast it, or says what misses"
+  },
+  {
+   "id": "T2",
+   "due": "after round 4",
+   "test": "Wendell and Ari each read one sheet in caption mode on a phone"
+  },
+  {
+   "id": "T3",
+   "due": "after round 4",
+   "test": "a spirit pauses at a placed lantern on both screens at once"
+  }
+ ]
+}

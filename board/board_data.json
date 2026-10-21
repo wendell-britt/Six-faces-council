@@ -11154,6 +11154,170 @@
    "auto": true,
    "pos": "The spirit loop's rule, at most two rounds past your last look, extends to every strand: no new art or build round starts on a strand with two rounds you have not looked at. This stands unless you flip it.",
    "why": "Building outruns looking: phone plays, the J5 look, the dock, v30 and the Chapter 1 play all wait, and 63 of 107 threads ran long. Source: docs/loops.md; usage audit 2026-10-18; the reading above."
+  },
+  {
+   "id": "ba-round4-comfort",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "The next round of the Between builds three changes from Ari's notes: caption mode (text appears line by line at a pace each player sets, a tap shows it all, a still mode shows everything), moving your own items (a shared item moves only on the other's yes), and spirits that pause, sniff at nearby items and turn toward whoever arrives. Designing the hollow, spells and avatars wait for later rounds. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-formation-card",
+   "faces": [
+    "architect",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Spells and formations start as one formation card sent to Ari: two moves cast together, its name, its gesture and what it does in the hollow. Nothing is built until Ari reads it (cc-no-joint-before-ari). The card also asks Ari what the dance was, since the record holds no dance. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-spells-plain",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Shared acts in the hollow are called spells and named in plain words ('Light the lantern together'). Formation, sphere and qi sit in an optional 'what this is' line. A spell never asks for a stronger feeling and never needs both people present for its first part. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-barn-in-ship",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "The spirits' own space, Ari's Stardew barn, lives inside each person's ship, not in the shared Between, because spirits stay their owner's (rc-spirits-visit) and the ship is a home that moves (iv-q-what-ship). This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-likeness-choices",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Looking 'just like them' means choices (build, skin, hair, clothes, how they move) from the J4 character creator, never a photo or face scan, which would be personal data with its own permissions. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-qi-is-light",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Five-element practice in the Between raises qi as the hollow's light and weather, never as a meter or a currency; gold stays minted only by grounding (ff-gold-minted-by-grounding). The practice is our own breathing on the WAVE and the wuxing moves, credited in paraphrase, never copied. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-worlds-stored",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Procedural worlds (rendered only as far as you travel) go to the ship's world on the inner-vessel callsheet, and partner dance on Root goes to the Root callsheet. Neither is built from the Between now. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "cw-one-world",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Calrunia is the one world, and every game we build is a place in it: the ship, Sprout's settlement, the cave, Root, the Between, and later one land per element. Each place keeps its own engine and repo; what they share is the registry calrunia/world.yaml and the passport (mh-calrunia-hall, council #302). This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-passport",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "One player record, the passport, crosses places and nothing else does: you, your spirits with their care state, your hand of cards and BARs, qi, vibeulons, embers and the places you have reached. It lives in bars-engine Postgres behind sign-in; a guest keeps it in the browser until signing in claims it. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-qi-meter-scales",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Qi is a meter that practice fills, shown as the light and weather of where you are, and condensed qi is the vibeulon, spent like the scales in Cradle. The vibeulon is the one currency every place honours; gold stays friendcraft's, minted by grounding. This replaces \"never a meter or a currency\" in ba-qi-is-light, per your steer on it. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-between-two-ships",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "The Between is a place two ships make: it exists only between two passports, and each person's spirits visit it and stay their owner's (rc-spirits-visit, ba-barn-in-ship). This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-root-training-ground",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Root is Calrunia's training ground for practice with another body: sparring, push hands and partner dance (your steer on ba-formation-card). Practice there raises qi and grants no rank. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-cave-inner-land",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "The cave is the land inside you, where your daemons keep their chambers and the wild spirits of their families are settled (cave-levels, the daemon rulings). This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-emergent-map",
+   "faces": [
+    "architect"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "A place appears on your map once it is built and you have entered it, and a Between appears when two people make one. That is how the world emerges: from play and from what ships. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-chapter1-first",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Until Chapter 1 ships, world work is the registry and the passport only. The engine question stays deferred (council #302) and hx-looks-gate applies to each place on its own, so the world is never a way round a look you owe. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
   }
  ],
  "questions": [
@@ -17814,6 +17978,57 @@
      "v": "each",
      "label": "C. Decide each row yourself",
      "c": "The two rows come to you one at a time. It costs more of your time on each future split, which you said is hard."
+    }
+   ]
+  },
+  {
+   "id": "ba-ari-look",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "between-ari1",
+   "q": "Does Ari's play count as your look, so the Between's next round may start?",
+   "why_you": "hx-looks-gate names your look, and the Between has three builds you have not ticked (#366, #367, the lanterns #380). The record holds no ruling on whether the other player's play counts. Your answer decides whether a build thread starts now or waits for you.",
+   "not_before": "Ari had not played until your message of 2026-10-21.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "A. Yes, Ari's play counts (recommended)",
+     "c": "Round 4 starts now: captions at reading speed, moving your own items, spirits that move naturally. Your own look is owed before round 5. Shaman, Architect and Diplomat back this."
+    },
+    {
+     "v": "no",
+     "label": "B. No, I look first",
+     "c": "Round 4 waits until you tick the hollow and lantern steps on your phone. The formation card still goes to Ari now. Regent and Challenger back this."
+    }
+   ]
+  },
+  {
+   "id": "cw-front-door",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "calrunia-world1",
+   "q": "Where does a player step into Calrunia each time they play?",
+   "why_you": "The record points two ways. Your inner-vessel rulings make the ship the hub that places are reached from; mh-calrunia-hall makes Calrunia Sprout's world, and Chapter 1 opens in Sprout. Which one is the daily front door is your preference, and it decides the registry's root and the first screen after the demo.",
+   "not_before": "The places were separate strands until your steer on ba-worlds-stored at 01:31 UTC on 2026-10-21.",
+   "options": [
+    {
+     "v": "ship",
+     "label": "A. The ship (recommended)",
+     "c": "Each session opens aboard your ship, with your spirits in the barn; Sprout's settlement, the cave, Root and any Between are reached from it. Chapter 1 still opens in Sprout once, as the pull, and ends with you aboard."
+    },
+    {
+     "v": "sprout",
+     "label": "B. Sprout's settlement",
+     "c": "Each session opens on Sprout's map; the ship is docked there and the cave, Root and the Between are entered from the settlement. Sprout's 2D map becomes the world map."
+    },
+    {
+     "v": "last",
+     "label": "C. Wherever you last were",
+     "c": "Each session resumes in the last place you left, and the ship is how you move between places. Needs the passport to store your last place; no fixed home screen."
     }
    ]
   }
@@ -30011,6 +30226,95 @@
      "regent"
     ],
     "pass": "jev asset"
+   },
+   "ba-round4-comfort": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:28:21.012Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-formation-card": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:28:53.855Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "We are dancers and she was curious if the figures could dance together in addition to doing push hands Nan dance studio",
+    "faces": [
+     "architect",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-spells-plain": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:29:46.022Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "Some spells need both people there. Individual spells can be cast by one’s self but dual cultivation spells need both people there. There should probably be asynchronous dual cultivation spells as well",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-barn-in-ship": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:30:04.241Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-likeness-choices": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:30:09.726Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-qi-is-light": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:30:52.983Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "I think it should be a meter and should be a currency like the scales one I’ll eights cradle. I see this as how we can integrate vibeulons into the game world",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-worlds-stored": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:31:56.983Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "We can start building a structure that holds all of them. The between is a subfeature of an emergent calrunian world along with root and the sprout game  game",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "between-ari1"
    }
   },
   "questions": {
@@ -32732,6 +33036,18 @@
      "diplomat"
     ],
     "pass": "jev asset"
+   },
+   "ba-ari-look": {
+    "decision": "yes",
+    "label": "Yes, Ari's play counts",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:28:16.193Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "between-ari1"
    }
   },
   "causes": {

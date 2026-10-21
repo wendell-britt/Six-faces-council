@@ -1,0 +1,101 @@
+{
+ "date": "2026-10-21",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "One Calrunian world",
+ "record": "council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's overrule of ba-worlds-stored in board pull council/ledger/2026-10-21-pull-013156.json; thread started by the project coordinator",
+ "pulled_first": "council/ledger/2026-10-21-pull-013156.json",
+ "casts": [
+  {
+   "agent": "shaman",
+   "method": "three coins",
+   "tosses": null,
+   "values": null,
+   "changing_lines": [
+    4
+   ],
+   "n": 39,
+   "name": "Impasse",
+   "becomes": 31
+  },
+  {
+   "agent": "architect",
+   "method": "three coins",
+   "tosses": null,
+   "values": null,
+   "changing_lines": [
+    4,
+    6
+   ],
+   "n": 55,
+   "name": "Fullness",
+   "becomes": 22
+  },
+  {
+   "agent": "challenger",
+   "method": "three coins",
+   "tosses": null,
+   "values": null,
+   "changing_lines": [
+    1,
+    5
+   ],
+   "n": 30,
+   "name": "Burning",
+   "becomes": 33
+  },
+  {
+   "agent": "regent",
+   "method": "three coins",
+   "tosses": null,
+   "values": null,
+   "changing_lines": [],
+   "n": 59,
+   "name": "Dispersal",
+   "becomes": null
+  },
+  {
+   "agent": "diplomat",
+   "method": "three coins",
+   "tosses": null,
+   "values": null,
+   "changing_lines": [
+    2
+   ],
+   "n": 56,
+   "name": "Passing Through",
+   "becomes": 50
+  },
+  {
+   "agent": "sage",
+   "method": "three coins",
+   "tosses": null,
+   "values": null,
+   "changing_lines": [
+    5
+   ],
+   "n": 46,
+   "name": "Ascent",
+   "becomes": 48
+  }
+ ],
+ "rows": "council/callsheets/rows/calrunia-world-2026-10-21.json",
+ "registry": "calrunia/world.yaml",
+ "positions": [
+  "cw-one-world",
+  "cw-passport",
+  "cw-qi-meter-scales",
+  "cw-between-two-ships",
+  "cw-root-training-ground",
+  "cw-cave-inner-land",
+  "cw-emergent-map",
+  "cw-chapter1-first"
+ ],
+ "questions": [
+  "cw-front-door"
+ ],
+ "note": "Line values were not kept; numbers, names and changing lines are as cast.py printed them."
+}
