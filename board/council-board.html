@@ -331,6 +331,16 @@ body.has-send{padding-bottom:120px}
 .oc-notes{font-size:.88rem;margin:4px 0 0;white-space:pre-line}
 .oc-meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-family:var(--mono);font-size:.76rem;color:var(--muted);margin-top:8px}
 .oc-flag{color:var(--warn);font-weight:600;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;display:inline-block}
+/* An outreach email draft on its contact (outreach-drafts, 2026-10-21). Send records the exact text he saw and its
+   hash; a session sends only that text (board/email_pipeline.py ready). */
+.df{margin-top:10px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel);display:grid;gap:6px}
+.df-head{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:.82rem;color:var(--muted)}
+.df-head b{color:var(--fg);font-size:.76rem;letter-spacing:.06em;text-transform:uppercase}
+.df-addr{font-family:var(--mono);font-size:.8rem;color:var(--muted);margin:0;overflow-wrap:anywhere}
+.df textarea{min-height:180px}
+.df-body{white-space:pre-wrap;font-size:.92rem;margin:0}
+.df-lint{margin:0;padding-left:18px;font-size:.8rem;color:var(--warn)}
+.df-acts{display:flex;flex-wrap:wrap;gap:6px}
 .oc-pick{font:inherit;font-size:.82rem;padding:3px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
 .oc-add{border-top:1px solid var(--line);margin-top:18px;padding-top:12px}
 .oc-add summary{cursor:pointer;color:var(--muted);font-weight:500}
@@ -1676,7 +1686,8 @@ stepsView.addEventListener('click', async e => {
 // ---- Outreach and Podcast chases (outreach-on-board, outreach-chases-live, outreach-no-send; 2026-10-08) ----
 /* The contacts and shows came over from the Podcast Outreach page with their ids. A chase is computed from a contact by
    the morning brief's three rules, so nothing is copied and a chase leaves the list when its rule stops firing. Saving
-   a chase writes the contact and nothing else: contacts are not in pendingSaves, so the Send bar stays dark. */
+   a chase writes the contact and nothing else, so the Send bar stays dark. The one contact save that lights it is an
+   email draft he pressed Send on (outreach-drafts; see pendingSaves). */
 let ocContacts = {}, ocShows = {}, ocFilter = 'All';
 const OC_STATUSES = ['Identified', 'Pitched', 'Followed up', 'Booked', 'Recorded', 'Published', 'Shared', 'Declined'];
 const OC_GO = new Set(['Booked', 'Recorded', 'Published', 'Shared']);
@@ -1767,6 +1778,72 @@ function ocShowNames(){
   Object.values(ocContacts).forEach(c => { if (c.show && !names.includes(c.show)) names.push(c.show); });
   return names;
 }
+/* approval-hash:start  (board/email_pipeline.py approval_hash computes the same string and hash; a test runs both) */
+async function approvalHash(to, cc, subject, body){
+  const lower = s => s.replace(/[A-Z]/g, c => c.toLowerCase());
+  const trim = s => s.replace(/^[ \t]+|[ \t]+$/g, '');
+  const addrs = a => [...new Set((a || []).map(x => lower(trim(String(x).normalize('NFC')))))].filter(Boolean).sort();
+  const b = String(body || '').normalize('NFC').replace(/\r\n/g, '\n').replace(/\r/g, '\n').replace(/[ \t]+$/gm, '').replace(/\n+$/, '');
+  const text = JSON.stringify({body: b, cc: addrs(cc), subject: trim(String(subject || '').normalize('NFC')), to: addrs(to)});
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map(x => x.toString(16).padStart(2, '0')).join('');
+}
+/* approval-hash:end */
+// Unsaved edits to a draft, kept across re-renders the way chDraft keeps a chase.
+const dfEdits = {};
+const DF_STATUS = {draft: 'Draft', send: 'Approved to send', revise: 'Sent back for revision', sending: 'Sending', sent: 'Sent', dropped: 'Dropped'};
+function dfCard(id, d){
+  const st = d.status || 'draft', open = st === 'draft' || st === 'revise', e = dfEdits[id] || {};
+  const addr = `<p class="df-addr">To ${esc((d.to || []).join(', ') || 'no one yet')}${(d.cc || []).length ? ` · Cc ${esc(d.cc.join(', '))}` : ''}</p>`;
+  const when = st === 'sent' ? ` ${esc(stFmt(String(d.sentAt || '').slice(0, 10)))}` : st === 'send' && d.approvedAt ? ` ${esc(stFmt(String(d.approvedAt).slice(0, 10)))}` : '';
+  const head = `<div class="df-head"><b>Email</b><span class="st-chip${st === 'sent' ? ' st-safe' : st === 'revise' ? ' st-opt' : ''}">${DF_STATUS[st] || esc(st)}${when}</span>${d.author ? `<span>drafted by ${esc(d.author)}</span>` : ''}</div>`;
+  const lint = (d.lint || []).length ? `<ul class="df-lint" aria-label="Voice lint on the drafted text">${d.lint.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : '';
+  const note = d.note ? `<p class="st-note">${esc(d.note)}</p>` : '';
+  if (!open) return `<div class="df" id="df-${esc(id)}">${head}${addr}<p class="oc-who" style="font-size:.95rem">${esc(d.subject)}</p>
+    ${st === 'dropped' ? '' : `<p class="df-body">${esc(d.body)}</p>`}${note}
+    ${st === 'sending' ? '<p class="st-state">A Claude marked this as sending. If it stays here, someone checks the Sent folder before anything else.</p>' : ''}
+    ${st === 'send' ? `<div class="df-acts"><button type="button" class="st-btn" data-df-back="${esc(id)}">Take back</button></div><div class="st-state" id="dfst-${esc(id)}" aria-live="polite"></div>` : ''}</div>`;
+  return `<div class="df" id="df-${esc(id)}">${head}${addr}
+    <label class="st-sum" for="dfs-${esc(id)}">Subject</label><input type="text" id="dfs-${esc(id)}" value="${esc(e.subject ?? d.subject)}">
+    <label class="st-sum" for="dfb-${esc(id)}">Body</label><textarea id="dfb-${esc(id)}">${esc(e.body ?? d.body)}</textarea>
+    ${lint}${note}
+    <input type="text" id="dfn-${esc(id)}" placeholder="What to change, for Revise" value="${esc(e.note || '')}">
+    <div class="df-acts"><button type="button" class="save" data-df-send="${esc(id)}">Send</button><button type="button" class="st-btn" data-df-save="${esc(id)}">Save edits</button><button type="button" class="st-btn" data-df-revise="${esc(id)}">Revise</button><button type="button" class="st-btn" data-df-drop="${esc(id)}">Drop</button></div>
+    <div class="st-state" id="dfst-${esc(id)}" aria-live="polite"></div></div>`;
+}
+async function dfWrite(id, act){
+  const c = ocContacts[id], d = c && c.draft, st = document.getElementById('dfst-' + id); if (!d) return;
+  if (act === 'back'){  // before a Claude marks it sending, he can take the approval back
+    if (d.status !== 'send' || !db){ if (st) st.textContent = 'Not saved in this view.'; return; }
+    const next = {...d, status: 'draft', approvedHash: null, approvedAt: null, updated: new Date().toISOString()};
+    try { await db.doc('contacts/' + id).update({draft: next}); ocContacts[id] = {...c, draft: next}; renderOutreach(); renderSend(); }
+    catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+    return;
+  }
+  if (!['draft', 'revise'].includes(d.status || 'draft')){ if (st) st.textContent = 'This draft can no longer change here.'; return; }
+  if (!db){ st.textContent = 'Not saved in this view.'; return; }
+  const subject = document.getElementById('dfs-' + id).value, body = document.getElementById('dfb-' + id).value;
+  const note = (document.getElementById('dfn-' + id).value || '').trim(), at = new Date().toISOString();
+  let next = {...d, subject, body, updated: at, approvedHash: null, approvedAt: null};
+  if (act === 'send'){
+    if (!subject.trim() || !body.trim()){ st.textContent = 'A subject and a body come first.'; return; }
+    if (!(d.to || []).length){ st.textContent = 'This draft has no address to send to.'; return; }
+    if (!(window.crypto && crypto.subtle)){ st.textContent = 'This view cannot sign the approval, so nothing was saved.'; return; }
+    // The hash covers exactly the saved addresses, subject and body; a session sends only text that still matches it.
+    next = {...next, status: 'send', note: '', approvedHash: await approvalHash(d.to, d.cc, subject, body), approvedAt: at};
+  } else if (act === 'revise'){
+    if (!note){ st.textContent = 'Say what to change first.'; return; }
+    next = {...next, status: 'revise', note};
+  } else if (act === 'drop') next = {...next, status: 'dropped'};
+  else next = {...next, status: 'draft'};
+  st.textContent = 'Saving…';
+  try {
+    await db.doc('contacts/' + id).update({draft: next});
+    delete dfEdits[id]; ocContacts[id] = {...c, draft: next}; renderOutreach(); renderSend();
+    const s2 = document.getElementById('dfst-' + id);
+    if (s2) s2.textContent = 'Saved.';
+  } catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+}
 function renderOutreach(){
   const all = Object.entries(ocContacts), names = ocShowNames();
   const tabs = ['All', ...names, ...(all.some(([, c]) => !c.show) ? ['Unsorted'] : [])];
@@ -1790,12 +1867,25 @@ function renderOutreach(){
       <select class="oc-pick" data-oc-status="${esc(id)}" aria-label="Status for ${esc(c.name)}">${OC_STATUSES.map(s => `<option${s === c.status ? ' selected' : ''}>${s}</option>`).join('')}</select></div>
       ${c.why ? `<p class="oc-why">${esc(c.why)}</p>` : ''}${c.notes ? `<p class="oc-notes">${esc(c.notes)}</p>` : ''}
       <div class="oc-meta"><span>Last touch ${c.lastTouch ? esc(stFmt(c.lastTouch)) : 'none'}</span><span>Next touch ${c.nextTouch ? esc(stFmt(c.nextTouch)) : 'none'}</span>${c.contact && !ocHttp(c.contact) ? `<span>${esc(c.contact)}</span>` : ''}</div>
-      ${need ? `<span class="oc-flag">Follow up now</span>` : ''}</div>`;
+      ${need ? `<span class="oc-flag">Follow up now</span>` : ''}${c.draft ? dfCard(id, c.draft) : ''}</div>`;
   }).join('');
 }
 const ocView = document.getElementById('view-outreach');
 document.getElementById('oa-status').innerHTML = OC_STATUSES.map(s => `<option>${s}</option>`).join('');
 ocView.addEventListener('click', e => { const t = e.target.closest('[data-oc-show]'); if (t){ ocFilter = t.dataset.ocShow; renderOutreach(); } });
+ocView.addEventListener('click', e => {
+  const t = e.target.closest('button'); if (!t) return;
+  if (t.dataset.dfSend) dfWrite(t.dataset.dfSend, 'send');
+  else if (t.dataset.dfSave) dfWrite(t.dataset.dfSave, 'save');
+  else if (t.dataset.dfRevise) dfWrite(t.dataset.dfRevise, 'revise');
+  else if (t.dataset.dfDrop) dfWrite(t.dataset.dfDrop, 'drop');
+  else if (t.dataset.dfBack) dfWrite(t.dataset.dfBack, 'back');
+});
+ocView.addEventListener('input', e => {
+  const m = /^df([sbn])-(.+)$/.exec(e.target.id || ''); if (!m) return;
+  const d = dfEdits[m[2]] = dfEdits[m[2]] || {};
+  d[{s: 'subject', b: 'body', n: 'note'}[m[1]]] = e.target.value;
+});
 ocView.addEventListener('change', async e => {
   const id = e.target.dataset && e.target.dataset.ocStatus; if (!id) return;
   const c = ocContacts[id], v = e.target.value; if (!c) return;
@@ -1844,6 +1934,12 @@ function pendingSaves(){
   for (const id of Object.keys(stSteps)){
     const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at), ...Object.values(s.fileNotes || {}).map(n => n && n.at)].filter(Boolean).sort().pop();
     if (t && t > PICKUP_SINCE && t > (DATA.steps_recorded_through || '') && after(t)) out.push('steps/' + id);
+  }
+  // A draft he pressed Send on lights the bar: a deliberate exception to outreach-no-send (2026-10-08), because only a
+  // session holding the Gmail connector can send it. Chase saves and contact edits still leave the bar dark.
+  for (const id of Object.keys(ocContacts)){
+    const d = ocContacts[id].draft;
+    if (d && d.status === 'send' && !d.messageId && after(d.approvedAt)) out.push('contacts/' + id);
   }
   // A run of the blocker panel counts once it is saved, finished or not, so a run left half way still reaches Claude.
   for (const id of Object.keys(bkRecs)) if (bkRecs[id].savedAt && after(bkRecs[id].savedAt)) out.push('blockers/' + id);
@@ -2284,7 +2380,7 @@ render();
   }
   db.doc('steer/general').onSnapshot(d => { liveSteer = d.exists ? d.data() : null; render(); }, () => {});
   db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; stStore = snap.docs.length ? 'ok' : 'empty'; renderSteps(); }, () => { stStore = 'failed'; renderSteps(); });
-  db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; ocStore = snap.docs.length ? 'ok' : 'empty'; renderOutreach(); renderSteps(); }, () => { ocStore = 'failed'; renderOutreach(); });
+  db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; ocStore = snap.docs.length ? 'ok' : 'empty'; renderOutreach(); renderSteps(); renderSend(); }, () => { ocStore = 'failed'; renderOutreach(); });
   db.collection('shows').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocShows = next; renderOutreach(); }, () => {});
   db.collection('blockers').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); bkRecs = next; if (!bk) renderSteps(); else renderSend(); }, () => {});
   db.collection('steps').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stSteps = next; renderSteps(); }, () => {});
