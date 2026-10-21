@@ -30315,6 +30315,102 @@
      "challenger"
     ],
     "pass": "between-ari1"
+   },
+   "cw-one-world": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:46:31.719Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "calrunia-world1"
+   },
+   "cw-passport": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:46:33.155Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "calrunia-world1"
+   },
+   "cw-qi-meter-scales": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:47:00.683Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "steer": "Vibeulons are the gold of friendcraft too",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "calrunia-world1"
+   },
+   "cw-between-two-ships": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:47:07.956Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "calrunia-world1"
+   },
+   "cw-root-training-ground": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:47:21.240Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "calrunia-world1"
+   },
+   "cw-cave-inner-land": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:47:25.258Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "faces": [
+     "shaman"
+    ],
+    "pass": "calrunia-world1"
+   },
+   "cw-emergent-map": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:47:34.244Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "calrunia-world1"
+   },
+   "cw-chapter1-first": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:48:37.567Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "steer": "How can we more tightly integrate chapter 1 and this work? It feels as though leaning into what has most of the mechanical elements of the book (which is now the game) can give peopel a taste of the practice as they are learning the content through play",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "calrunia-world1"
    }
   },
   "questions": {
@@ -33048,6 +33144,18 @@
      "challenger"
     ],
     "pass": "between-ari1"
+   },
+   "cw-front-door": {
+    "decision": "ship",
+    "label": "The ship",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:46:27.702Z",
+    "record": "council/ledger/2026-10-21-pull-014837.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "calrunia-world1"
    }
   },
   "causes": {
