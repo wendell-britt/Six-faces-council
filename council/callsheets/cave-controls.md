@@ -59,4 +59,8 @@ see the problem. The player should face in the direction of the stick".
    (`wk.dir` flips when `along` goes negative), so the ring needs its own handling. Make the hall check pass without loosening it.
 2. Run `controls-probe.mjs`, then the full `cave-test.mjs` in the background (about 30 minutes under swiftshader; deps:
    typescript@5, playwright, three@0.128.0 symlinked as node_modules), and compare with main's 502/3.
-3. Reply with the `?go=` preview link, mark #411 ready, and say what was not checked (real phone feel).
+3. First fix a regression the branch's full run found (496 pass, 9 fail; main 502/3): home base's pinch. The test's first
+   finger lands on the left half, so the floating stick takes it and the two fingers never pinch; the creature close-up
+   checks after it fail with it. A second finger while the stick is floating should start a pinch (or the stick should
+   float only once the finger moves). The camera-inside-while-walking failure on main now passes.
+4. Reply with the `?go=` preview link, mark #411 ready, and say what was not checked (real phone feel).
