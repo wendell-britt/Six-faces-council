@@ -92,10 +92,41 @@ jobs:
         run: |
           set -o pipefail
           python3 board/staleness.py --hours 6 | tee stale.log
+      # Council pass (2026-10-21): the Council Board on bars-engine (/board/council) keeps its own saves in Postgres
+      # (board=council). This workflow used to pull only the Nonprofit Board, so those saves waited and the board's
+      # banner said "main has not recorded a pull from this board yet". Same four lines, BOARD=council.
+      - name: Council Board, fetch the store
+        if: always()
+        env:
+          BOARD: council
+        run: python3 board/fetch_store.py fetch store-council
+      - name: Council Board, record with pull.py
+        env:
+          BOARD: council
+        run: |
+          set -o pipefail
+          git pull -q --no-rebase origin main
+          python3 board/pull.py store-council --push --no-room | tee pull-council.log
+      - name: Council Board, acknowledge what main records
+        env:
+          BOARD: council
+        run: |
+          set -o pipefail
+          python3 board/fetch_store.py ack store-council --record "six-faces-council@$(git rev-parse --short HEAD)" | tee ack-council.log
+      - name: Council Board, staleness check (6 hours)
+        if: always()
+        env:
+          BOARD: council
+        run: |
+          set -o pipefail
+          python3 board/staleness.py --hours 6 | tee stale-council.log
       - name: Summary
         if: always()
         run: |
           { echo "### Board pull"; echo '```'; cat pull.log 2>/dev/null; echo '```';
             echo "### Saves accounted"; echo '```'; cat ack.log 2>/dev/null; echo '```';
             echo "### Staleness"; echo '```'; cat stale.log 2>/dev/null; echo '```';
+            echo "### Council Board pull"; echo '```'; cat pull-council.log 2>/dev/null; echo '```';
+            echo "### Council Board saves accounted"; echo '```'; cat ack-council.log 2>/dev/null; echo '```';
+            echo "### Council Board staleness"; echo '```'; cat stale-council.log 2>/dev/null; echo '```';
             echo "### Needs work"; echo '```'; python3 board/needs_work.py; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
