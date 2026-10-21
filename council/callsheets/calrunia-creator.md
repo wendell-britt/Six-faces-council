@@ -142,3 +142,18 @@ under 3 MB each, plus poster stills and the screen rectangle as JSON); the creat
 `slice/creator.html`/`creator.js`, playing the shots. Proof the cheap way first: a still of the corridor before the
 video. Preview: the sprout preview deploy opened on the scene. Then the ship's looking-glass (CharacterStudio refit)
 as round 2.
+
+## Arcade arrival, built (2026-10-21, thread "Arcade arrival cutscene")
+
+bars-engine #416 (`tools/blender-cloud/content/arcade/arrival.py`, `encode.sh`) renders the two shots (Cycles on CPU,
+46 min; shot1.mp4 430 KB, shot2.mp4 165 KB). sprout #70 replaces `slice/creator.*` with the scene, adds a dye option
+to `runtime/traveler.js` and a look reader in `ch1-arcade.html`. Preview (Vercel login):
+https://sprout-git-claude-project-thr-1570af-wendells-projects-9c1b16dc.vercel.app/creator.html (built slice serves the
+scene at `/creator.html`, Chapter 1 at `/ch1/`; `?beat=reflection` jumps). Stills: /mnt/project-files/arcade-arrival/.
+Checked in Playwright at phone and desktop sizes. Not checked: a real phone, Safari MP4, three halfway skin blends
+(fawn, chestnut, umber) by eye; the Chapter 1 cabinet does not stand out enough at the start of shot one.
+
+TRIGGER: his look at the preview. Notes -> fresh Opus thread owning #416 and #70 on branch
+`claude/project-thread-u7hkk7`. Next after that (position, stands from the look contract above and
+`c1w-link-handoff`): bars-engine writes the look from the Chapter 1 link into the guest passport (`look` in
+`schema/passport.schema.json`, fixtures, contract tests).
