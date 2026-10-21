@@ -26,10 +26,10 @@
    "pos": "Every beat opens with \"choose for me\", and the whole scene can be skipped to a ready traveler. The test is time to the gate: under three minutes for a first player, under thirty seconds for a skip. This stands unless you flip it.",
    "why": "Mii Maker puts random first; presets and skips keep the quality floor (ontology quickstart). Source: council/callsheets/calrunia-creator.md, survey of 2026-10-21"},
   {"id": "cr2-reuse", "faces": ["challenger", "architect"], "pass": "calrunia-creator2", "auto": true,
-   "pos": "We refit, not build from scratch. 2D: Sprout's own traveler parts, with the LPC generator's recipe file and credits export as the pattern (its code is GPL, so we copy the idea, not the code). 3D: CharacterStudio (MIT, three.js) for trait swapping and merging the figure into one mesh, fed our own parts. Blender exports follow the Mozilla avatar maker's rule, where a part's filename names its slot on the one rig. Quaternius kits stay reference only, since only our own work and CC0 ship. This replaces cr-build-own and stands unless you flip it.",
+   "pos": "We refit, not build from scratch. 2D: Sprout's own traveler parts, with the LPC generator's recipe file and credits export as the pattern (its code is GPL, so we copy the idea, not the code). 3D: CharacterStudio (MIT, three.js) for trait swapping and merging the figure into one mesh, fed our own meshes. Blender exports follow the Mozilla avatar maker's rule, where each filename names its slot on the one rig. Quaternius kits stay reference only, since only our own work and CC0 ship. This replaces cr-build-own and stands unless you flip it.",
    "why": "Your overrule of cr-build-own asked for a survey of open-source creators. One worker survey on 2026-10-21 (github.com/M3-org/CharacterStudio, github.com/mozilla/hackweek-avatar-maker, github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator, quaternius.com/license.html). Ready Player Me shut down 31 January 2026. Source: council/callsheets/calrunia-creator.md"},
   {"id": "cr2-first-build", "faces": ["architect", "regent"], "pass": "calrunia-creator2", "auto": true,
-   "pos": "First build: the well scene in Sprout, in place of today's step-by-step creator, opening the Chapter 1 page, with a preview link that opens on the scene. It uses the parts Sprout already draws, so no art round. Second: the looking-glass aboard the ship in 3D, a CharacterStudio refit reading the same choices. The look field in the passport is written once the ship reads it. This replaces cr-first-build and stands unless you flip it.",
+   "pos": "First build: the well scene in Sprout, in place of today's step-by-step creator, opening the Chapter 1 page, with a preview link that opens on the scene. It uses the traveler sprites Sprout already draws, so no art round. Second: the looking-glass aboard the ship in 3D, a CharacterStudio refit reading the same choices. The look field in the passport is written once the ship reads it. This replaces cr-first-build and stands unless you flip it.",
    "why": "c1w-first-route (Chapter 1 opens in Sprout), hx-looks-gate (no new art round), the Kickstarter gate (chapter1-demo.md). Source: council/callsheets/calrunia-creator.md"}
  ],
  "questions": [
@@ -39,7 +39,7 @@
    "not_before": "Until today the creator was a form before the story. Making it a scene is the first time the story needs an arrival.",
    "options": [
     {"v": "well", "label": "A. The well at the south gate (recommended)", "c": "You come in off the road as mist; Ede meets you at the well, and later opens this same gate to Pip."},
-    {"v": "barn", "label": "B. Tam's barn at dawn", "c": "You wake in Tam's barn and dress by a water trough; Tam's farm is the first thing you see."},
+    {"v": "barn", "label": "B. Tam's barn at dawn", "c": "You wake in Tam's barn and dress by a water trough; Tam's farm is what you see first."},
     {"v": "arcade", "label": "C. A cabinet in the Infinite Arcade", "c": "Chapter 1's title frames it: you pick your player at an arcade cabinet, then step through the screen into the settlement."}
    ]}
  ]
