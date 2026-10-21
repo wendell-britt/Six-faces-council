@@ -31625,6 +31625,55 @@
      "regent"
     ],
     "pass": "fcp-launch"
+   },
+   "em-send-is-permission": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T18:16:23.293Z",
+    "record": "council/ledger/2026-10-21-pull-181722.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "email-pipeline1"
+   },
+   "em-any-client-drafts": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T18:16:30.469Z",
+    "record": "council/ledger/2026-10-21-pull-181722.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "email-pipeline1"
+   },
+   "em-voice-pass": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T18:17:19.603Z",
+    "record": "council/ledger/2026-10-21-pull-181722.json (six-faces-council)",
+    "steer": "I think we can pull in a version of the editorial pipeline we used for MTGOA but specifically for developing an email voice. I think we also need to create that email voice so that it doesn't trigger anti AI folk and sounds and friendly and playful as I am in real life.",
+    "faces": [
+     "sage",
+     "diplomat"
+    ],
+    "pass": "email-pipeline1"
+   },
+   "em-self-test-first": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T18:17:22.254Z",
+    "record": "council/ledger/2026-10-21-pull-181722.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "email-pipeline1"
    }
   },
   "questions": {
@@ -35856,7 +35905,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-21T17:52:59.273Z",
+ "steps_recorded_through": "2026-10-21T17:54:37.170Z",
  "morning": {
   "date": "2026-10-21",
   "gathered_at": "2026-10-21T17:04:52Z",
