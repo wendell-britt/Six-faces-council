@@ -11461,6 +11461,82 @@
    "auto": true,
    "pos": "Summoning has no vibeulon or qi price; its cost is care, and the summon choice says how many spirits you already tend. Harvesting never harms a wild spirit. This stands unless you flip it.",
    "why": "sc-ruling-mortal (every spirit needs tending), sc-offer-release (vibeulons are for letting a spirit go), and daemons are never fought. Source: council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md"
+  },
+  {
+   "id": "uc-keep-unchosen",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "unchosen1",
+   "auto": true,
+   "pos": "Every brainstorm line you name in Tap the Vein and don't choose is kept in bars-engine with its morning and what happened to it: left raw, composted, or marked play and not picked (lines past the day's cap or the menu's seven count here too). Nothing is deleted. A morning is not judged until the next one. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"we need something to do with the ideas that aren't taken during the intake so we can see emergent patterns around what's NOT been chosen\". bars-engine already saves these lines and nothing reads them again (menu.ts skips them). Your steer on ttv-raw-bars: \"this is the power of having a private server like in bars engine\". Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
+  },
+  {
+   "id": "uc-not-chosen-view",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "unchosen1",
+   "auto": true,
+   "pos": "Tap the Vein gets a \"Not chosen\" section under the seed library, and on the opening and sealed screens. It opens only when you open it and shows no count while closed. It lists past mornings' unchosen lines in your words, newest first. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"we need something to do with the ideas that aren't taken during the intake so we can see emergent patterns around what's NOT been chosen\". sl-no-pressure: the seed library opens only when you open it and shows no count. Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
+  },
+  {
+   "id": "uc-pattern-returns",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "unchosen1",
+   "auto": true,
+   "pos": "A pattern is a word that comes back on two or more mornings, counted by mornings, at most five shown. Tap one to see every line it came from, with dates. It reads \"keeps coming back\", never avoidance. This stands unless you flip it.",
+   "why": "ttv-lens-emerge: something is pitched only when it returns, quoting your words from at least two mornings. tb-loss-not-avoidance: a line that keeps losing is missing conditions, not avoidance. Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
+  },
+  {
+   "id": "uc-no-duty",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "unchosen1",
+   "auto": true,
+   "pos": "An unchosen line owes nothing: no reminders, no resurfacing, never a task unless you make it one. Composted lines show muted, as residue in a pattern, and are not offered back. This stands unless you flip it.",
+   "why": "sl-no-pressure; ttv-fruit-is-his (letting go needs no reason); the ontology's Composting rule: \"Compost may nourish future growth, but it does not owe the garden a harvest.\" Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
+  },
+  {
+   "id": "uc-council-misses",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "unchosen1",
+   "auto": true,
+   "pos": "The faces' suggestions you decline on the menu and the face-off cards you don't pick are the council's misses, not your unchosen energy. A later build keeps them in their own store, so the council can measure its own aim. This stands unless you flip it.",
+   "why": "Today \"Leave unaligned\" stores only that the line has no goal (tap-the-vein-menu.ts:124) and the board writes only picks. Mixing them with your lines would read the council's aim as your energy. Dissent: the Architect wanted them on the same page. Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
+  },
+  {
+   "id": "uc-links-by-hand",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "unchosen1",
+   "auto": true,
+   "pos": "Nothing unchosen is turned into qi, vibeulons or spirits. A pattern becomes a spirit only the way any charge does, when you take it through the W.A.V.E. The daily compost pass keeps to board steps. This stands unless you flip it.",
+   "why": "sg-charge-disc: a spirit is born from a charge worked through the whole W.A.V.E. cw-qi-meter-scales: qi is filled by practice. docs/compost-pass.md sorts open board steps. Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
+  },
+  {
+   "id": "uc-first-build",
+   "faces": [
+    "architect"
+   ],
+   "pass": "unchosen1",
+   "auto": true,
+   "pos": "First build: the read-only \"Not chosen\" view in bars-engine, from lines already saved, with a test. Next: \"Draw into today\" on a raw or unpicked line, then the council's misses store. Test UC1 on 2026-11-04. This stands unless you flip it.",
+   "why": "Tool ladder rung 2: the data exists, so the build only reads it; no schema change. bars-engine pull request from the pass thread. Source: council/passes/6FACE_PASS_unchosen1_2026-10-21.md"
   }
  ],
  "questions": [
@@ -18200,6 +18276,34 @@
      "v": "every-move",
      "label": "C. One card from every move",
      "c": "The hand deals one card each of Wake, Open, Clean, Grow and Show Up at fitting beats. Changes the card map and needs the guessing test rerun; the Challenger dissents until a second player has settled A6 and A8."
+    }
+   ]
+  },
+  {
+   "id": "uc-who-reads",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "unchosen1",
+   "q": "May the council read your unchosen Tap the Vein lines to find patterns? The council recommends once a week, in place.",
+   "why_you": "Who reads your private writing is your consent, which faces.yaml reserves for you, and your mm-raw ruling (2026-10-09) keeps lines you did not keep away from the council. The \"Not chosen\" view works with no model either way; this decides whether the council adds its own reading.",
+   "not_before": "Until today the unchosen lines had no use. mm-raw was asked about the free write reaching the council, before the brainstorm kept lines nobody read.",
+   "options": [
+    {
+     "v": "you-only",
+     "label": "A. Only you, in bars-engine",
+     "c": "The view counts returning words with no model. The council never sees the unchosen lines."
+    },
+    {
+     "v": "weekly",
+     "label": "B. Once a week, in place (recommended)",
+     "c": "A board read reads the pile inside bars-engine, keeps no copy, and writes back at most five patterns, each quoting your lines from two or more mornings with dates."
+    },
+    {
+     "v": "marked",
+     "label": "C. Only lines you mark",
+     "c": "Each unchosen line gets a \"show the council\" tick, and only ticked lines are read."
     }
    ]
   }
