@@ -34411,11 +34411,12 @@
     "pass": "calrunia-creator2"
    },
    "fcp-cover-pick": {
-    "decision": "a-teal-hex",
-    "label": "A, Teal hex",
+    "decision": "b-two-friends",
+    "label": "B, Two friends",
     "recorded": "2026-10-21",
-    "saved_at": "2026-10-21T17:51:49.596Z",
-    "record": "council/ledger/2026-10-21-pull-175259.json (six-faces-council)",
+    "saved_at": "2026-10-21T17:56:49.000Z",
+    "record": "council/ledger/2026-10-21-pull-175649.json (six-faces-council)",
+    "steer": "well now that I look at them I really likek the teal and purple one",
     "faces": [
      "shaman",
      "architect"
