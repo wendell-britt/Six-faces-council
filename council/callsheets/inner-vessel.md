@@ -65,3 +65,5 @@ ontology: default; touches: BAR, MovementFinding, CompostingDisposition
    the living ship's voice (the C part of his answer), Kenney Space Kit art for parts, a third-person view of the hull.
 2. Tests due 2026-10-25 (destination count; paper card test only if he offers an evening), 2026-11-01 (G1 probe),
    2026-11-08 (five newcomers). Details at the end of the pass.
+
+- 2026-10-21, from Ari's playtest of the Between (pass `between-ari1`, `council/passes/6FACE_PASS_between-ari1_2026-10-21.md`): Ari asked for a private space for spirits "like the barn in Stardew valley", loved "the gummy ship with a farm inside of it", and resonated with worlds rendered procedurally only as far as the player can see or travel. Stored here (`ba-barn-in-ship`, `ba-worlds-stored`): the barn lives inside each person's ship; the farm grows what spirits leave, with no yields or counts; procedural worlds belong to the ship's world after Chapter 1 and the engine question. Nothing built before his look at the dock.

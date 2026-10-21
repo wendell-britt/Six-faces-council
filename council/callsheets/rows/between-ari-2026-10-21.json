@@ -1,0 +1,107 @@
+{
+ "positions": [
+  {
+   "id": "ba-round4-comfort",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "The next round of the Between builds three changes from Ari's notes: caption mode (text appears line by line at a pace each player sets, a tap shows it all, a still mode shows everything), moving your own items (a shared item moves only on the other's yes), and spirits that pause, sniff at nearby items and turn toward whoever arrives. Designing the hollow, spells and avatars wait for later rounds. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-formation-card",
+   "faces": [
+    "architect",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Spells and formations start as one formation card sent to Ari: two moves cast together, its name, its gesture and what it does in the hollow. Nothing is built until Ari reads it (cc-no-joint-before-ari). The card also asks Ari what the dance was, since the record holds no dance. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-spells-plain",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Shared acts in the hollow are called spells and named in plain words ('Light the lantern together'). Formation, sphere and qi sit in an optional 'what this is' line. A spell never asks for a stronger feeling and never needs both people present for its first part. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-barn-in-ship",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "The spirits' own space, Ari's Stardew barn, lives inside each person's ship, not in the shared Between, because spirits stay their owner's (rc-spirits-visit) and the ship is a home that moves (iv-q-what-ship). This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-likeness-choices",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Looking 'just like them' means choices (build, skin, hair, clothes, how they move) from the J4 character creator, never a photo or face scan, which would be personal data with its own permissions. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-qi-is-light",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Five-element practice in the Between raises qi as the hollow's light and weather, never as a meter or a currency; gold stays minted only by grounding (ff-gold-minted-by-grounding). The practice is our own breathing on the WAVE and the wuxing moves, credited in paraphrase, never copied. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "ba-worlds-stored",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "between-ari1",
+   "auto": true,
+   "pos": "Procedural worlds (rendered only as far as you travel) go to the ship's world on the inner-vessel callsheet, and partner dance on Root goes to the Root callsheet. Neither is built from the Between now. This stands unless you flip it.",
+   "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ba-ari-look",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "between-ari1",
+   "q": "Does Ari's play count as your look, so the Between's next round may start?",
+   "why_you": "hx-looks-gate names your look, and the Between has three builds you have not ticked (#366, #367, the lanterns #380). The record holds no ruling on whether the other player's play counts. Your answer decides whether a build thread starts now or waits for you.",
+   "not_before": "Ari had not played until your message of 2026-10-21.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "A. Yes, Ari's play counts (recommended)",
+     "c": "Round 4 starts now: captions at reading speed, moving your own items, spirits that move naturally. Your own look is owed before round 5. Shaman, Architect and Diplomat back this."
+    },
+    {
+     "v": "no",
+     "label": "B. No, I look first",
+     "c": "Round 4 waits until you tick the hollow and lantern steps on your phone. The formation card still goes to Ari now. Regent and Challenger back this."
+    }
+   ]
+  }
+ ]
+}
