@@ -118,3 +118,14 @@ No answer owed. Ruled 18:21: `mm-where` = Tap the Vein, `mm-raw` = only kept lin
 
 ## Archive
 HANDOFF.md: "Open on 2026-10-09, morning menu (Tap the Vein and Lenses)"
+
+## Unchosen lines, 2026-10-21 (pass unchosen1)
+
+Wendell asked for something to do with the ideas the intake does not take, to see patterns in what is not chosen.
+Pass `council/passes/6FACE_PASS_unchosen1_2026-10-21.md` mapped six drop points and set seven `uc-*` positions and one
+question, `uc-who-reads` (may the council read the unchosen lines; recommended weekly, in place, no copy kept).
+First build: bars-engine #414, a read-only "Not chosen" section in Tap the Vein (`?view=unchosen`), no schema change.
+
+Next, in order: (1) when #414 merges, his look at /tap-the-vein?view=unchosen; (2) "Draw into today" on a raw or
+unpicked line; (3) a store for the council's misses (declined menu suggestions, unpicked face-off cards,
+`uc-council-misses`); (4) if he answers `uc-who-reads` B or C, a weekly read in `council/bar_read.py`'s style. Test UC1 on 2026-11-04.
