@@ -1,0 +1,57 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T18:17:22.254Z",
+ "answers": {
+  "em-send-is-permission": {
+   "kind": "position",
+   "savedAt": "2026-10-21T18:16:23.293Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "em-any-client-drafts": {
+   "kind": "position",
+   "savedAt": "2026-10-21T18:16:30.469Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "em-voice-pass": {
+   "kind": "position",
+   "savedAt": "2026-10-21T18:17:19.603Z",
+   "status": "overrule",
+   "steer": "I think we can pull in a version of the editorial pipeline we used for MTGOA but specifically for developing an email voice. I think we also need to create that email voice so that it doesn't trigger anti AI folk and sounds and friendly and playful as I am in real life. "
+  },
+  "em-self-test-first": {
+   "kind": "position",
+   "savedAt": "2026-10-21T18:17:22.254Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "flirtcraft-socials-02",
+   "at": "2026-10-21T17:53:51.324Z",
+   "what": "back to AI",
+   "note": "Let's have this be a part of the Podcast Production Pipeline we've made. I beleive we have a flow for Claude on Desktop to conteol my Meta Business Suite to create and post this content",
+   "automate": true,
+   "do": "Post the podcast announcement on your Facebook profile with the podcast cover attached. It mentions the podcast only; the app gets its own post in step 6."
+  },
+  {
+   "id": "podcast-ep2-clips-01",
+   "at": "2026-10-21T17:54:37.170Z",
+   "what": "back to AI",
+   "note": "This should also be folded into the Podcast Production pipeline. This should be able to be posted via Meta Business suite that we've set up",
+   "automate": false,
+   "do": "Post that episode 2 is out, if you have not yet: the YouTube thumbnail on Instagram with the day 0 caption, and the same caption with the link on Facebook and X."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "positions/em-voice-pass: Overruled (steer: \"I think we can pull in a version of the editorial pipeline we used for MTGOA but specifically for developing an email voice. I think we also need to create that email voice so that it doesn't trigger anti AI folk and sounds and friendly and playful as I am in real life.\")",
+  "steps/flirtcraft-socials-02: back to AI (automate): \"Let's have this be a part of the Podcast Production Pipeline we've made. I beleive we have a flow for Claude on Desktop to conteol my Meta Business Suite to create and post this content\"",
+  "steps/podcast-ep2-clips-01: back to AI: \"This should also be folded into the Podcast Production pipeline. This should be able to be posted via Meta Business suite that we've set up\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
