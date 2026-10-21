@@ -87,3 +87,11 @@ Brief, in order, once the passport schema lands (thread "Calrunian world passpor
    arrival link; A3 records one vibeulon; the hollow's line names the ship.
 3. The video (step 6) records the whole route once tests C1 and C2 pass, still on his go.
 The answer to `c1w-taste-depth` adds to brief 1 or 2 and blocks neither.
+
+Status (2026-10-21): brief 1 is built on bars-engine #399 (branch claude/inner-vessel-build-vqaqgw, draft).
+`/calrunia/arrive` shows a 3D ship (Kenney Pirate Kit, CC0) at a dock with the spirit, the hand, the vibeulons and the
+blank card. The passport rides in the fragment as `#p=<base64url passport>`; the Chapter 1 fixture is 877 characters as
+a full URL. Preview: https://bars-engine-git-claude-inner-073f7a-wendells-projects-9c1b16dc.vercel.app/calrunia/arrive?demo=1
+The blank card is position `c1w-blank-card` (the page adds it on arrival until a second place needs to read it).
+TRIGGER: his look at the arrival, which is also his look at the dock. If he is content, merge #399; otherwise start a
+fresh Opus thread on his note. Brief 2 (sprout Step through) builds the link with `public/passport/arrive.js`'s encoding.
