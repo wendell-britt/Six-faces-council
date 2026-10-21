@@ -187,6 +187,21 @@ def find_steps(data, store):
     return sorted(out, key=lambda e: e["at"])
 
 
+def find_unrouted(store):
+    """Needs-work lines for cards handed to Claude that no read has routed (with-claude-status, 2026-10-21). State, not
+    a recorded-through marker: a line shows while a step has `aiBack` and no `aiBack.status`, and leaves when a read
+    writes `aiBack.status` ({state: queued|working|review|new-thread, owner, link, note, at}), which the card's
+    With Claude list shows him."""
+    out = []
+    for f in sorted((store / "steps").glob("*.json")) if (store / "steps").is_dir() else []:
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        back = doc.get("aiBack")
+        if isinstance(back, dict) and not doc.get("done") and not isinstance(back.get("status"), dict):
+            out.append(f'steps/{f.stem}: with Claude since {back.get("at", "?")[:16]}, no owner yet: route it to its thread '
+                       f'or ask the coordinator for a new one, then write aiBack.status (docs/pickup.md, "With Claude cards")')
+    return out
+
+
 def find_drafts(store):
     """Needs-work lines for outreach email drafts on contacts (outreach-drafts, 2026-10-21). They follow the drafts'
     state, not a recorded-through marker: a line shows while the draft is in that state and leaves when a session
@@ -352,6 +367,9 @@ def main():
     if any(n["id"].startswith("ttv-2") for n in new if n["kind"] == "questions"):  # pitches he answered
         print("needs work:\n  ttv pitches answered: after recording, python3 council/ttv_bars.py accepted --write, then open a "
               "pull request in game-masters-guide")
+    unrouted = find_unrouted(store)
+    if unrouted:
+        print("needs work:\n  " + "\n  ".join(unrouted))
     drafts = find_drafts(store)
     if drafts:  # outreach-drafts: state on the contacts, printed every run while it holds
         print("needs work:\n  " + "\n  ".join(drafts))
