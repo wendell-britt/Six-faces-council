@@ -1,0 +1,54 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T19:25:02.633Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "wmhca-proposal-01",
+   "at": "2026-10-21T19:22:34.688Z",
+   "what": "back to AI",
+   "note": "I’ve been studying big mind and parts work since 2018 working with big mind with groups and individuals since 2021\n\nMastering the game of allyship book is done and is based on this work as well as some game demos have been made based on the work.\n\nGo ahead and have Claude take a stab at filling the blanks with this context",
+   "automate": true,
+   "do": "Fill the brackets in the presenter bio and the qualifications line with your real facts: how many years you have facilitated the voices process, any degree, any coaching or facilitation training, and the book's status. Leave out anything you do not hold."
+  },
+  {
+   "id": "spirit-fight-ama-rell-02",
+   "at": "2026-10-21T19:22:49.309Z",
+   "what": "ticked",
+   "do": "Play build 4 of Ama Rell's Fixer, rebuilt after your note that build 3 was too abstract. It now plays like a monster battle: the Fixer's sprite faces your spirit on a field, each side has an HP box, a text box reads out every move, and you pick Fight, Spirits, Listen or Leave. You bring up to three spirits. Each has four moves with a type and uses left, and each move is tagged hard or soft on Earth. Wood breaks Earth. The Fixer raises its metal pruning hook a turn before it strikes, so you can swap your Wood spirit out of its way (the Chart button shows the five). Listen opens once its HP is in the red, and the line you missed is how the fight ends. Then write in this step's note whether this is the playstyle you meant, and what to change."
+  },
+  {
+   "id": "j5-look-09",
+   "at": "2026-10-21T19:24:08.141Z",
+   "what": "note",
+   "note": "I need to be able to see this in Claude as the files don’t show up at the GitHub link. If a task requires me to look at something it needs to be able to show the files from the board OR from one of the coding environments",
+   "do": "Look at round 9 of the clothing (J5): the hem shaking where it brushes the shins. The shake did not come from the shins touching the cloth. It came from the band that eases the robe from the waist toward the body: when a leg carried the hem far out through a slit, the band let go near the leg and grabbed the hem again as the leg passed, a hard yank on and off every step. The band is now a gentle pull that stays on, and the leg shapes taper toward the ankle so the hem no longer catches on air beside the shin. The hem's shake fell by about 40% at a normal walk (29 to 17 mm in the game test) and by about two thirds at a fast stride. Open j5r9-hem-motion-slow.mp4 first: round 8 on the left, round 9 on the right, the same two seconds of walking at a third of the speed (j5r9-hem-motion.mp4 is full speed). j5r9-hem-shins-close.jpg puts round 8 over round 9 for the same moments of a step. One trade to look for: at a fast stride the back hem now flies a little higher behind the trailing leg; say if it should be heavier. Under this step, note 'yes' or what still looks wrong."
+  },
+  {
+   "id": "j5-look-09",
+   "at": "2026-10-21T19:24:41.990Z",
+   "what": "back to AI",
+   "note": "This step isn’t useful because I can’t see the files it’s wanting me to look at. They need to be in the task or link to something I can see (GitHub ain’t it)",
+   "automate": false,
+   "do": "Look at round 9 of the clothing (J5): the hem shaking where it brushes the shins. The shake did not come from the shins touching the cloth. It came from the band that eases the robe from the waist toward the body: when a leg carried the hem far out through a slit, the band let go near the leg and grabbed the hem again as the leg passed, a hard yank on and off every step. The band is now a gentle pull that stays on, and the leg shapes taper toward the ankle so the hem no longer catches on air beside the shin. The hem's shake fell by about 40% at a normal walk (29 to 17 mm in the game test) and by about two thirds at a fast stride. Open j5r9-hem-motion-slow.mp4 first: round 8 on the left, round 9 on the right, the same two seconds of walking at a third of the speed (j5r9-hem-motion.mp4 is full speed). j5r9-hem-shins-close.jpg puts round 8 over round 9 for the same moments of a step. One trade to look for: at a fast stride the back hem now flies a little higher behind the trailing leg; say if it should be heavier. Under this step, note 'yes' or what still looks wrong."
+  },
+  {
+   "id": "flirtcraft-ep1-clips-03",
+   "at": "2026-10-21T19:25:02.633Z",
+   "what": "back to AI",
+   "note": "This should also be part of the podcast pipeline work",
+   "automate": true,
+   "do": "Post the next three clips the same way, one every three or four days: Hot Girl Summer, then what a crush is, then QC's flirt even more."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/wmhca-proposal-01: back to AI (automate): \"I’ve been studying big mind and parts work since 2018 working with big mind with groups and individuals since 2021\n\nMastering the game of allyship book is done and is based on this work as well as some game demos have been made based on the work.\n\nGo ahead and have Claude take a stab at filling the blanks with this context\"",
+  "steps/j5-look-09: note \"I need to be able to see this in Claude as the files don’t show up at the GitHub link. If a task requires me to look at something it needs to be able to show the files from the board OR from one of the coding environments\"",
+  "steps/j5-look-09: back to AI: \"This step isn’t useful because I can’t see the files it’s wanting me to look at. They need to be in the task or link to something I can see (GitHub ain’t it)\"",
+  "steps/flirtcraft-ep1-clips-03: back to AI (automate): \"This should also be part of the podcast pipeline work\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
