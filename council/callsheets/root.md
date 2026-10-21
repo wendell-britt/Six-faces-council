@@ -41,3 +41,5 @@ Yun, Session two: hold to three beads, strike to break Yun's answer twice, answe
 lights with the commit circle; before the circle or to a shift is a miss). Pass: root-game `council/6FACE_PASS5_2026-10-12.md`; no question
 passed the reach test. Three positions wait to go on the board: `council/callsheets/rows/root-pass5-2026-10-12.json`. Headless check:
 root-game `tests/yun2_session.py`. Waiting on: Wendell's phone play of session two; then pass 4's tests in an Easy fight.
+
+- 2026-10-21, from Ari's playtest of the Between (pass `between-ari1`, `council/passes/6FACE_PASS_between-ari1_2026-10-21.md`): Ari loved dancing and "wants to see how partners could use the root engine to play with each other and cultivate spirit energy". Stored here (`ba-worlds-stored`); the formation card asks Ari what the dance was before any two-player Root design.
