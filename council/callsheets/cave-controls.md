@@ -54,7 +54,7 @@ see the problem. The player should face in the direction of the stick".
 ## Brief, 2026-10-21 02:30 UTC: controls round 1b (fresh Opus bars-engine thread, owns #411, branch claude/project-thread-43i8fm)
 
 1. Build the ruling on #411: the figure faces the way the stick points (as the camera saw it when the thumb went down), not the
-   way it slid along a wall; in the hall and the centre the camera comes round behind that facing. Read the room's
+   way it slid along a wall; in the hall and the centre the camera comes round behind that facing. Read home base's
    `R.stickFrame` (19 October) first; a frozen frame in the hall tried in round 1 flipped the camera half round on the ring
    (`wk.dir` flips when `along` goes negative), so the ring needs its own handling. Make the hall check pass without loosening it.
 2. Run `controls-probe.mjs`, then the full `cave-test.mjs` in the background (about 30 minutes under swiftshader; deps:
