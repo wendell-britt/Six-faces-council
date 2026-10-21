@@ -11384,6 +11384,17 @@
    "auto": true,
    "pos": "The Kickstarter video records the whole route, Sprout through the hollow to the ship, once it plays end to end, rather than the current page. The video still waits on your go. This stands unless you flip it.",
    "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
+  },
+  {
+   "id": "c1w-blank-card",
+   "faces": [
+    "challenger",
+    "architect"
+   ],
+   "pass": "chapter1-calrunia1",
+   "auto": true,
+   "pos": "The Chapter 1 arrival aboard the ship always shows one blank card, and the spirit asks about it. The passport has no field for a blank card yet, so the page adds it on arrival. It becomes a passport field (a hand item with no title) when a second place needs to read it. Source: bars-engine PR #399, /calrunia/arrive. This stands unless you flip it.",
+   "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
   }
  ],
  "questions": [
