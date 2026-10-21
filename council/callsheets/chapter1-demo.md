@@ -68,3 +68,22 @@ skills and character and NPC generation based on player blockages."
 ## Next thread brief
 Step 6, the Kickstarter video, waits on Wendell's go. Step 5 is done (above). A6 and A8 card fit needs a second player
 before any card changes. Sprout #52 to #55 are stacked and open; merge them in order when he says.
+
+## Chapter 1 inside Calrunia (2026-10-21)
+
+Wendell overruled `cw-chapter1-first`: "How can we more tightly integrate chapter 1 and this work? It feels as though
+leaning into what has most of the mechanical elements of the book (which is now the game) can give peopel a taste of
+the practice as they are learning the content through play". Pass `chapter1-calrunia1`
+(council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md) makes Chapter 1 the world's first route: it opens in
+Sprout and ends aboard the ship. Positions `c1w-first-route`, `c1w-link-handoff`, `c1w-renewable-vibeulon`,
+`c1w-beats-are-places`, `c1w-arrival-page`, `c1w-video-after-route`; question `c1w-taste-depth` on the board.
+
+Brief, in order, once the passport schema lands (thread "Calrunian world passport"):
+1. bars-engine, Opus, no art: `/calrunia/arrive` reads passport-shaped JSON from the URL fragment, validates it
+   against `schema/passport.schema.json`, writes the guest passport, and shows spirit, hand, vibeulon and blank card in
+   the chapter's look; a Chapter 1 fixture in the passport contract test; probe the fragment's length on a phone;
+   Vercel preview opened with a sample fragment.
+2. sprout, Sonnet, after #52 to #55 merge: Step through on the end screen of `prototype/ch1-arcade.html` builds the
+   arrival link; A3 records one vibeulon; the hollow's line names the ship.
+3. The video (step 6) records the whole route once tests C1 and C2 pass, still on his go.
+The answer to `c1w-taste-depth` adds to brief 1 or 2 and blocks neither.
