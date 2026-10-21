@@ -6,6 +6,7 @@ profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
 - [move-nature](move-nature.md), 2026-10-19: audit of what a move is across bars-engine, sprout and the council; pass `move-nature1` (six `mn-*` positions, three questions); move table built (council #310, bars-engine #401, sprout #62, merge together); next land the four `mt-*` positions, then daemon move lists.
+- [calrunia-world](calrunia-world.md), 2026-10-21: pass `calrunia-world1` done (one world, many places, one passport; eight `cw-*` positions, `cw-front-door` on the board; registry `calrunia/world.yaml`); next a bars-engine Opus thread builds the passport contract.
 - [inner-vessel](inner-vessel.md), 2026-10-18: pass inner-vessel1 done (twelve `iv-*` positions; `iv-q-what-ship`, `iv-q-between-only`, `iv-q-demo-order` on the board); answered 10-19 (dock in the demo); dock built in bars-engine `cave/vessel.js`; next waits on his look at the dock.
 - [spirits-in-caves](spirits-in-caves.md), 2026-10-19: slices 1 to 5 built (4e bars-engine #394 draft, 5 the elder spirit #398); waits on his look at the elder.
 - [walkthrough](walkthrough.md), 2026-10-18: golden-path build sprout #58 plays title to saved quest; the road's battle is now the Super NES face-off (sprout #59 on #58); the 3D Moonlit Meridian plays the same rules beside it (sprout #61 on #59, `battle-road-opens-face-off` overruled 10-19); next his phone play.
