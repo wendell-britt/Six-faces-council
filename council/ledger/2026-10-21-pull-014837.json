@@ -1,0 +1,70 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T01:48:37.567Z",
+ "answers": {
+  "cw-front-door": {
+   "kind": "question",
+   "choice": "ship",
+   "savedAt": "2026-10-21T01:46:27.702Z",
+   "steer": ""
+  },
+  "cw-one-world": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:46:31.719Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cw-passport": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:46:33.155Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cw-qi-meter-scales": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:47:00.683Z",
+   "status": "stands",
+   "steer": "Vibeulons are the gold of friendcraft too"
+  },
+  "cw-between-two-ships": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:47:07.956Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cw-root-training-ground": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:47:21.240Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cw-cave-inner-land": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:47:25.258Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cw-emergent-map": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:47:34.244Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "cw-chapter1-first": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:48:37.567Z",
+   "status": "overrule",
+   "steer": "How can we more tightly integrate chapter 1 and this work? It feels as though leaning into what has most of the mechanical elements of the book (which is now the game) can give peopel a taste of the practice as they are learning the content through play "
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/cw-front-door: The ship",
+  "positions/cw-qi-meter-scales: Stands (steer: \"Vibeulons are the gold of friendcraft too\")",
+  "positions/cw-chapter1-first: Overruled (steer: \"How can we more tightly integrate chapter 1 and this work? It feels as though leaning into what has most of the mechanical elements of the book (which is now the game) can give peopel a taste of the practice as they are learning the content through play\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
