@@ -47,3 +47,15 @@ currency:  # cw-qi-meter-scales
   qi: a meter practice fills, shown as the light and weather of where you are
   vibeulon: condensed qi, spent like Cradle's scales; the only currency that crosses places
   gold: stays friendcraft's, minted only by grounding (ff-gold-minted-by-grounding)
+
+routes:  # pass chapter1-calrunia1
+  - id: chapter1
+    is: the first route through Calrunia; opens once in Sprout, ends aboard the ship (c1w-first-route, cw-front-door A)
+    code: wendell-britt/sprout prototype/ch1-arcade.html, handing off in the link to a bars-engine arrival page (c1w-link-handoff)
+    writes: [player, spirits, hand, vibeulons]  # guest passport; BAR text is the player's own and no place scores it
+    beats:  # c1w-beats-are-places: each beat previews the practice of one place; no new engine
+      - {beats: A1-A2, who: Tam, practice: carry one; two counters, place: sprout}
+      - {beats: A3-A5, who: Yun, practice: burn a feeling through (first vibeulon, c1w-renewable-vibeulon); stance on empty, place: root}
+      - {beats: A6, who: Pip's warden, practice: small moves open small doors, place: between}
+      - {beats: A7, who: the oath, practice: seven lines said aloud, place: sprout}
+      - {beats: A8, who: the hollow, practice: a spirit from your charge; push hands; first sight of qi, place: vessel}
