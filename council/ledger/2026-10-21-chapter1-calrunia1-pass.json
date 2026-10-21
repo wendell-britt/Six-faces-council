@@ -1,0 +1,318 @@
+{
+ "date": "2026-10-21",
+ "repo": "wendell-britt/six-faces-council",
+ "kind": "pass",
+ "cause": "council-design",
+ "project": "Chapter 1 inside Calrunia",
+ "record": "council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md",
+ "called_by": "Wendell",
+ "invoked_from": "Wendell's overrule of cw-chapter1-first in board pull council/ledger/2026-10-21-pull-014837.json; thread started by the project coordinator",
+ "pulled_first": "council/ledger/2026-10-21-pull-014837.json",
+ "casts": [
+  {
+   "agent": "shaman",
+   "values": [
+    8,
+    9,
+    6,
+    8,
+    7,
+    6
+   ],
+   "changing_lines": [
+    2,
+    3,
+    6
+   ],
+   "n": 29,
+   "name": "Depths",
+   "becomes": {
+    "n": 53,
+    "name": "Emergence",
+    "cn": "漸",
+    "pinyin": "jiàn",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     1,
+     1
+    ],
+    "shows": "This has stages, and you are trying to skip one.",
+    "image": "☶ mountain beneath ☴ wind. A tree taking hold on a mountainside, advancing at the rate roots allow.",
+    "situation": "Gradual progress, by stages that cannot be skipped. The old text tracks wild geese across six landings — the shore, the rock, the plateau, the tree, the summit — and each is a place the bird stands on before the next. Speed here is set by the ground.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    }
+   }
+  },
+  {
+   "agent": "architect",
+   "values": [
+    8,
+    7,
+    7,
+    7,
+    6,
+    7
+   ],
+   "changing_lines": [
+    5
+   ],
+   "n": 50,
+   "name": "The Cauldron",
+   "becomes": {
+    "n": 44,
+    "name": "Serendipity",
+    "cn": "姤",
+    "pinyin": "gòu",
+    "lines": [
+     0,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "shows": "You are building on one piece of evidence.",
+    "image": "☴ wind beneath ☰ heaven. One soft line has entered beneath five hard ones.",
+    "situation": "Wind under heaven touches everything without choosing what it touches. The smallest possible arrival at the base of something large and already settled. It does not feel small. That is what makes it worth watching rather than seizing.",
+    "lower": {
+     "trigram": "wind",
+     "symbol": "☴",
+     "name": "The Gentle",
+     "quality": "penetrating"
+    },
+    "upper": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    }
+   }
+  },
+  {
+   "agent": "challenger",
+   "values": [
+    8,
+    8,
+    6,
+    8,
+    6,
+    9
+   ],
+   "changing_lines": [
+    3,
+    5,
+    6
+   ],
+   "n": 23,
+   "name": "Erosion",
+   "becomes": {
+    "n": 39,
+    "name": "Impasse",
+    "cn": "蹇",
+    "pinyin": "jiǎn",
+    "lines": [
+     0,
+     0,
+     1,
+     0,
+     1,
+     0
+    ],
+    "shows": "The direct route is closed and you have asked nobody.",
+    "image": "☶ mountain beneath ☵ water. A mountain in front of you and deep water on the far side of it.",
+    "situation": "The character is a limp. Going forward is hard here, and the old counsel names the southwest as the favourable direction and sends you to find the great person. The instruction repeated through nearly every line is to turn back and come again with others.",
+    "lower": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "regent",
+   "values": [
+    8,
+    7,
+    8,
+    8,
+    7,
+    9
+   ],
+   "changing_lines": [
+    6
+   ],
+   "n": 59,
+   "name": "Dispersal",
+   "becomes": {
+    "n": 29,
+    "name": "Depths",
+    "cn": "坎",
+    "pinyin": "kǎn",
+    "lines": [
+     0,
+     1,
+     0,
+     0,
+     1,
+     0
+    ],
+    "shows": "The bottom of this has another bottom under it.",
+    "image": "☵ water beneath ☵ water. One firm line trapped between two yielding ones, and then the same again above it.",
+    "situation": "Repeated danger: the pit, and past it another pit. The old counsel is about consistency, because water goes into every hollow, fills it, and moves on, being water the whole way through. What carries you across a run of these is doing the same thing each time.",
+    "lower": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    },
+    "upper": {
+     "trigram": "water",
+     "symbol": "☵",
+     "name": "The Abysmal",
+     "quality": "danger"
+    }
+   }
+  },
+  {
+   "agent": "diplomat",
+   "values": [
+    8,
+    9,
+    8,
+    8,
+    9,
+    9
+   ],
+   "changing_lines": [
+    2,
+    5,
+    6
+   ],
+   "n": 59,
+   "name": "Dispersal",
+   "becomes": {
+    "n": 2,
+    "name": "Bearing",
+    "cn": "坤",
+    "pinyin": "kūn",
+    "lines": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "shows": "The whole weight of this is yours, unasked.",
+    "image": "☷ earth beneath ☷ earth. Six broken lines. Every one of them has a gap at the centre.",
+    "situation": "Pure capacity to hold. The figure carries whatever is set on it and supplies no direction of its own. Its instruction is to follow, and that is how ground carries what is set on it. The image is a mare: strength that goes where it is pointed, for a very long way.",
+    "lower": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    },
+    "upper": {
+     "trigram": "earth",
+     "symbol": "☷",
+     "name": "The Receptive",
+     "quality": "yielding"
+    }
+   }
+  },
+  {
+   "agent": "sage",
+   "values": [
+    7,
+    7,
+    7,
+    9,
+    9,
+    7
+   ],
+   "changing_lines": [
+    4,
+    5
+   ],
+   "n": 1,
+   "name": "Unbroken",
+   "becomes": {
+    "n": 26,
+    "name": "Reserves",
+    "cn": "大畜",
+    "pinyin": "dà chù",
+    "lines": [
+     1,
+     1,
+     1,
+     0,
+     0,
+     1
+    ],
+    "shows": "You have been storing this and never named the day.",
+    "image": "☰ heaven beneath ☶ mountain. The whole creative force held under a mountain and kept there.",
+    "situation": "Great accumulation. A large power restrained by something larger, so the holding builds it instead of souring it. The old counsel says to eat away from home and that crossing the great water is favourable, which reads as an instruction: the store was built for elsewhere, and now is when to spend it.",
+    "lower": {
+     "trigram": "heaven",
+     "symbol": "☰",
+     "name": "The Creative",
+     "quality": "strong"
+    },
+    "upper": {
+     "trigram": "mountain",
+     "symbol": "☶",
+     "name": "Keeping Still",
+     "quality": "rest"
+    }
+   }
+  }
+ ],
+ "rows": "council/callsheets/rows/chapter1-calrunia1-2026-10-21.json",
+ "positions": [
+  "c1w-first-route",
+  "c1w-link-handoff",
+  "c1w-renewable-vibeulon",
+  "c1w-beats-are-places",
+  "c1w-arrival-page",
+  "c1w-video-after-route"
+ ],
+ "questions": [
+  "c1w-taste-depth"
+ ],
+ "supersedes": {
+  "cw-chapter1-first": "overruled 2026-10-21 01:48 UTC"
+ },
+ "lessons_pending": [
+  {
+   "face": "regent",
+   "words": "How can we more tightly integrate chapter 1 and this work? It feels as though leaning into what has most of the mechanical elements of the book (which is now the game) can give peopel a taste of the practice as they are learning the content through play",
+   "lesson": "Do not hold the world behind the demo; the demo is the world's first route, and the book's mechanics are how a player tastes the practice.",
+   "date": "2026-10-21",
+   "source": "overrule of cw-chapter1-first, council/ledger/2026-10-21-pull-014837.json"
+  }
+ ],
+ "needs_work_done": [
+  "positions/cw-chapter1-first"
+ ],
+ "note": "Worker digest only (one Sonnet worker, ~148k subagent tokens). Found: calrunia/world.yaml's vessel pointer (vessel.js, oag.vessel.v1) exists only on bars-engine branch claude/inner-vessel-build-vqaqgw (#399)."
+}

@@ -7,7 +7,7 @@ Wendell, 2026-10-21 01:31 UTC, overruling `ba-worlds-stored`: "We can start buil
 - Pass `calrunia-world1` (council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md): one world, many places, one passport. Eight `cw-*` positions; `cw-front-door` on the board.
 - Registry: `calrunia/world.yaml` lists every place, its engine and repo, and the passport and currency.
 - Qi is a meter and the vibeulon its currency (`cw-qi-meter-scales`, replacing part of `ba-qi-is-light`).
-- Chapter 1 comes first; until it ships, world work is the registry and the passport only (`cw-chapter1-first`).
+- `cw-chapter1-first` overruled 2026-10-21 01:48: Chapter 1 is the world's first route, not a gate in front of it. Pass `chapter1-calrunia1` (council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md): six `c1w-*` positions, question `c1w-taste-depth`, and the `chapter1` route in `calrunia/world.yaml`.
 
 ## Brief for the next thread (bars-engine, Opus)
 
@@ -18,3 +18,4 @@ The passport contract, no art round, so `hx-looks-gate` is untouched. Read this 
 - `cw-front-door`: ship, Sprout's settlement, or wherever you last were.
 - Tests W1 (a spirit survives the guest-to-sign-in and cave-to-Between trip) and W2 (no place writes a field another owns).
 - Not read: sprout `docs/decisions/calrunia-and-domains.md`, bars-engine branch `codex/wip-inner-garden-calrunia`, the hd-wallet vibeulon plan.
+- `world.yaml`'s vessel pointer (`content/ontology-game/cave/vessel.js`, `oag.vessel.v1`) exists only on bars-engine branch `claude/inner-vessel-build-vqaqgw` (#399), not on main; the passport thread should read it there or fold the cave's `oag.spirits.v1` alone until #399 merges (found 2026-10-21, pass chapter1-calrunia1).
