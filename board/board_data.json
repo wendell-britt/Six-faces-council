@@ -31164,6 +31164,41 @@
      "architect"
     ],
     "pass": "chapter1-calrunia1"
+   },
+   "fcp-pipeline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:17:34.230Z",
+    "record": "council/ledger/2026-10-21-pull-171750.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "fcp-launch"
+   },
+   "fcp-host": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:17:43.029Z",
+    "record": "council/ledger/2026-10-21-pull-171750.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "fcp-launch"
+   },
+   "fcp-cover-drafts": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:17:50.431Z",
+    "record": "council/ledger/2026-10-21-pull-171750.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "fcp-launch"
    }
   },
   "questions": {

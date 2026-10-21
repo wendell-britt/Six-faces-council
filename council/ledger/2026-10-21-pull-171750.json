@@ -1,0 +1,33 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T17:17:50.431Z",
+ "answers": {
+  "fcp-pipeline": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:17:34.230Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-friendcraft-podcast"
+  },
+  "fcp-host": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:17:43.029Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-friendcraft-podcast"
+  },
+  "fcp-cover-drafts": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:17:50.431Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-friendcraft-podcast"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
