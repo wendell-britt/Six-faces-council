@@ -58,4 +58,4 @@ profile its threads load (docs/ontology-in-flows.md).
 - 2026-10-06, from the board pickup thread: fresh-session routine closed 2026-10-07; rest is in board-plumbing.
 - Repeated headings in HANDOFF.md (outreach-on-board, 3D build options pass 2): read once, in podcast and cave-of-lessons.
 - spirit-care.md: Finch folded into spirits; mortal spirits, shadow, spirit-made quest BARs (2026-10-20)
-- calrunia-creator.md: the creator as the arrival scene of Chapter 1 (pass calrunia-creator2, cr2-* rows); next: land rows + page (Sonnet), then the Sprout well scene (Opus) (2026-10-21)
+- calrunia-creator.md: the creator as the arrival scene of Chapter 1; round 2 built (sprite or 3D fork, arcade gaps and heights: sprout #71, bars-engine #420), waiting on his look; next: NPC guide models from the grey gate (2026-10-21)
