@@ -18,7 +18,7 @@ DOC = ROOT / "docs" / "blender-here.md"
 sys.path.insert(0, str(DRIVER.parent))
 import blender_here  # noqa: E402
 
-STEPS = ["version", "scene", "cycles_480p_32spp", "gltf_export", "rigify", "cloth_sim"]
+STEPS = ["version", "scene", "cycles_480p_32spp", "gltf_export", "rigify", "cloth_sim", "garment_job"]
 
 
 def test_the_pin_matches_what_the_doc_promises():
@@ -29,7 +29,8 @@ def test_the_pin_matches_what_the_doc_promises():
 def test_every_probe_step_has_a_line_in_the_report():
     doc = DOC.read_text(encoding="utf-8")
     assert re.findall(r'@step\("(\w+)"\)', PROBE.read_text(encoding="utf-8")) == STEPS
-    for row in ("Cycles still, 480x270", "Rigify", "Auto-skin", "Cloth bake", "Asset QA", "glTF export"):
+    for row in ("Cycles still, 480x270", "Rigify", "Auto-skin", "Cloth bake", "Asset QA", "glTF export",
+                "Composed garment job"):
         assert row in doc, row
     assert "EEVEE" in doc and "does not work" in doc
 
