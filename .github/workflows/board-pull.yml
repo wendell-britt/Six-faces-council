@@ -92,10 +92,64 @@ jobs:
         run: |
           set -o pipefail
           python3 board/staleness.py --hours 6 | tee stale.log
+      # Council pass (2026-10-21): the Council Board on bars-engine (/board/council) keeps its own saves in Postgres
+      # (board=council). This workflow used to pull only the Nonprofit Board, so those saves waited and the board's
+      # banner said "main has not recorded a pull from this board yet". Same four lines, BOARD=council.
+      - name: Council Board, fetch the store
+        if: always()
+        env:
+          BOARD: council
+        run: python3 board/fetch_store.py fetch store-council
+      - name: Council Board, record with pull.py
+        env:
+          BOARD: council
+        run: |
+          set -o pipefail
+          git pull -q --no-rebase origin main
+          python3 board/pull.py store-council --push --no-room | tee pull-council.log
+      - name: Council Board, gather the Tap the Vein menus he sealed
+        env:
+          BOARD: council
+        run: |
+          # A ttv/<date> save with status bars-engine is a menu sealed in bars-engine; pull.py leaves it for a session
+          # (docs/morning.md). Fetch each one oldest first, so the newest ends up as morning.sealed, and push.
+          test -d store-council/ttv || exit 0
+          dates=$(python3 - <<'PY'
+          import json, pathlib
+          for f in sorted(pathlib.Path("store-council/ttv").glob("*.json")):
+              if json.loads(f.read_text(encoding="utf-8")).get("status") == "bars-engine":
+                  print(f.stem)
+          PY
+          )
+          [ -n "$dates" ] || exit 0
+          test -n "$COUNCIL_MENU_TOKEN" || { echo "::warning::COUNCIL_MENU_TOKEN is not set; the sealed menus stay unfetched"; exit 0; }
+          git pull -q --no-rebase origin main
+          for d in $dates; do
+            python3 council/morning.py --fetch "$d" --out "store-council/fetched-$d.json" --write
+            git add board && git commit -q -m "Morning: gather the menu sealed on $d" || true
+          done
+          for i in 1 2 3; do git push -q origin HEAD:main && break; git pull -q --no-rebase origin main; done
+          git fetch -q origin main && test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
+      - name: Council Board, acknowledge what main records
+        env:
+          BOARD: council
+        run: |
+          set -o pipefail
+          python3 board/fetch_store.py ack store-council --record "six-faces-council@$(git rev-parse --short HEAD)" | tee ack-council.log
+      - name: Council Board, staleness check (6 hours)
+        if: always()
+        env:
+          BOARD: council
+        run: |
+          set -o pipefail
+          python3 board/staleness.py --hours 6 | tee stale-council.log
       - name: Summary
         if: always()
         run: |
           { echo "### Board pull"; echo '```'; cat pull.log 2>/dev/null; echo '```';
             echo "### Saves accounted"; echo '```'; cat ack.log 2>/dev/null; echo '```';
             echo "### Staleness"; echo '```'; cat stale.log 2>/dev/null; echo '```';
+            echo "### Council Board pull"; echo '```'; cat pull-council.log 2>/dev/null; echo '```';
+            echo "### Council Board saves accounted"; echo '```'; cat ack-council.log 2>/dev/null; echo '```';
+            echo "### Council Board staleness"; echo '```'; cat stale-council.log 2>/dev/null; echo '```';
             echo "### Needs work"; echo '```'; python3 board/needs_work.py; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
