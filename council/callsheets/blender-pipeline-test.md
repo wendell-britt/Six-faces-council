@@ -181,3 +181,18 @@ Report: https://claude.ai/artifact/7AMbgzk3HMk8Gq8seTzSg6. Runner: `council/tool
   The cleaner file needs the header's "delete fragments until floating is empty": the two runs before that line shipped
   119 and 274 fragments, the run after it 0; controls shipped 121 and 301.
 - Next: fix rig_check, add a vertex-colour QA profile, set budgets for kit/room/spirits, resolve meshopt (absent in this bpy build).
+
+## Blender in the no-root cloud VM (Freebuff, 2026-10-21)
+
+The bar this sheet has carried is that Blender runs in the cloud container; this VM is a different container, so it
+got measured rather than assumed. Blender 5.2.2 LTS installs into `~/blender-here` with no root (six Ubuntu libraries
+unpacked into a local sysroot for `LD_LIBRARY_PATH`), in 45 seconds from an empty folder, and
+`python3 council/tools/blender_here.py probe` reproduces the numbers: Cycles 480p/32 spp in 7 s and 720p/48 spp in
+41 s at 1.13 GB peak, glTF web export with meshopt in 1.1 s, Rigify 159 bones to a 706-bone rig in 5 s, auto-skin of
+14.7k verts in 3.3 s with nothing unweighted, cloth at 0.1 s for 30 frames, and the vendored skills at 47 passed,
+3 skipped for a GPU in 19 s. Asset QA ran and failed the probe body on z-fighting and UV overlap, which is QA doing
+its job.
+
+EEVEE is the loss: with no GPU, Mesa's software EGL answers `EGL_BAD_PARAMETER` and the process segfaults, so Cycles is
+the only engine here. Animation stays out of reach at 41 s a frame, and Blenderkit's key belongs to Wendell, so the library stays elsewhere.
+docs/blender-here.md is the report; the probe is the check to rerun after any restore.

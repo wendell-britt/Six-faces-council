@@ -1,0 +1,74 @@
+# A fixture pack, not canon: the shape a real pack takes (council/story/PIPELINE.md). Its words are placeholders
+# and its BAR ids are stand-ins, so nothing here claims to be Calrunia's story.
+pack: fixture-carry
+world: calrunia
+source:
+  repo: wendell-britt/mtgoa-manuscript
+  locator: manuscript/ch1.md, a stand-in section
+entry: a2-carry
+
+beats:
+  - id: a2-carry
+    kind: quest
+    place: sprout
+    face: shaman
+    move: water_wood
+    cites: [BAR-0001]
+    scene: Tam asks the player to carry one crate to the counter.
+    quote: One crate, then we eat.
+    next: [a3-fire]
+    needs:
+      - id: set-arcade-counter
+        kind: set
+        brief: A wooden counter a crate can sit on, read from the camera the beat uses.
+        tool: kenney
+        status: brief
+      - id: prop-crate
+        kind: prop
+        brief: One carryable crate, low-poly, with a handle a hand can close on.
+        tool: brief
+        status: brief
+    choices:
+      - line: Carry it.
+        outcome: right
+      - line: Say it can wait until after the talk.
+        outcome: partial
+      - line: Hand it back and walk on.
+        outcome: wrong
+
+  - id: a3-fire
+    kind: encounter
+    place: root
+    face: challenger
+    move: fire_transcend
+    cites: [BAR-0002, manuscript/ch1.md#a3]
+    scene: The player spars with Yun and has to burn a feeling through instead of holding it.
+    next: [a4-hollow]
+    needs:
+      - id: anim-shoulder-turn
+        kind: animation
+        brief: A shoulder turn that lands the strike, retargeted to the J4 rig.
+        tool: cmu-mocap
+        status: brief
+    choices:
+      - line: Say the feeling out loud and strike on it.
+        outcome: right
+      - line: Name what the feeling is not.
+        outcome: partial
+      - line: Swallow it and keep guard.
+        outcome: wrong
+
+  - id: a4-hollow
+    kind: scene
+    place: between
+    face: diplomat
+    move: water_transcend
+    cites: [BAR-0003]
+    scene: Pip asks what the carry was for, and the player answers in their own words.
+    next: []
+    needs:
+      - id: sfx-counter-thunk
+        kind: audio
+        brief: A crate set down on wood, close and dry, no reverb.
+        tool: brief
+        status: missing
