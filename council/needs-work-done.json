@@ -272,6 +272,11 @@
    "ref": "council/podcast/PIPELINE.md (canonical podcast pipeline for all three shows)",
    "at": "2026-10-21T18:05:00Z"
   },
+  "2026-10-21-pull-175259#steps/ttv-cmvicm0aj000dfikxn526y6xx": {
+   "by": "Freebuff (Buffy)",
+   "ref": "council/story/PIPELINE.md (the study, the six stages, the beat fields) and council/story/check.py with tests/test_story_pack.py; callsheet council/callsheets/story-pipeline.md",
+   "at": "2026-10-21T19:12:00Z"
+  },
   "2026-10-21-pull-181722#steps/flirtcraft-socials-02": {
    "by": "Claude",
    "ref": "folded into the pipeline as the Desktop route: council/podcast/desktop-posting.md, PIPELINE.md stage 4. The posts themselves are not made; they wait on his Mac and his go.",

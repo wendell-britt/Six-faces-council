@@ -71,6 +71,9 @@ This file is for any coding agent (Codex, Claude, or another) and for people. It
 - The game-design ontology: `ontology/manifest.yaml`. Which flow loads what: `docs/ontology-in-flows.md`.
 - Board data, ledger records and lessons are written on main only, through `board/pull.py` (saves) and
   `board/sync_board.py` (rows; `docs/merging.md`). `council/faces.yaml` changes only by his ruling.
+- A session with no Claude tools (Codex, Freebuff, a plain clone) reads the board off main with `python3 board/read.py
+  --main-only` and lands rows with `python3 board/sync_board.py --rows <file> --push`, which needs no live page. The
+  map, and what stays with a Claude session, is `docs/pickup-here.md`.
 - Deferred items: `python3 council/due.py --ahead 7`.
 - Run `python3 council/tools/voice_lint.py` on anything he reads. Never alter his quoted words.
 - Tests: `python3 -m pytest -q tests`.

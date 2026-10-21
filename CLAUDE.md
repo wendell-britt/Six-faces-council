@@ -103,5 +103,8 @@ projects more effectively between that and Jev we can save a lot of tokens"
 - Board data, ledger records and lessons are written on main only. Rows reach main through `board/sync_board.py`
   (see docs/merging.md), which also brings over anything the live page has that main lacks; a board-only pull request
   merges without the label (Wendell, 2026-10-04). `council/faces.yaml` changes only by his ruling.
+- A session with no Claude tools (Codex, Freebuff, a plain clone) reads the board off main with `python3 board/read.py
+  --main-only` and lands rows with `python3 board/sync_board.py --rows <file> --push`, which needs no live page. The
+  map, and what stays with a Claude session, is `docs/pickup-here.md`.
 - Deferred items: run `python3 council/due.py --ahead 7` at the start of every board read.
 - Run `python3 council/tools/voice_lint.py` on anything he reads. Never alter his quoted words.

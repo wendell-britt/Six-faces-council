@@ -133,3 +133,23 @@ scout: rung 2, we have it (bars-engine board save, applyWrite and importDocs).
 Left: (a) once the token answers 200, export lists/steps/contacts/shows with ArtifactData and run `diff` to see drift
 since the 10-20 import, then `--push-missing`; (b) his saves on /board/council never reach the artifact, so the
 board-pull Action's council pass (callsheet above) is still needed before he ticks steps there; (c) step 6.
+
+## Picked up 2026-10-21: a session with no Claude tools (Freebuff)
+
+Board access for an agent with no Claude tools is main itself. The board-pull Action records both boards every 15
+minutes (`BOARD=nonprofit`, then `BOARD=council`), so `git fetch origin main` is a board read and `board_data.json` is
+the record: 74 needs-work items open, last pull 17:56 UTC on 10-21. Three routes were closed to a session
+like this one, and all three are open now:
+
+- `python3 board/read.py --main-only` (`docs/pickup-here.md`) reports branch and how far behind origin/main, main's
+  last pull, the open needs-work count, what is due, and the closing line on the page. No store folder, no
+  ArtifactData.
+- `board/sync_board.py --rows <file>` lands rows with `--live` left out, which it required until today, so no
+  non-Claude session could put a question on the board; `root.md` has carried that open test since 10-11. Checked on
+  a copy of the repo: the row reached `board_data.json`, the rebuilt page carried it, the commit landed on main, tree
+  clean; a changed row under an existing id still stops the run. Test: `tests/test_sync_board_rows_only.py`.
+- A commit needs an author, and this VM sets none; `docs/pickup-here.md` carries the environment lines.
+
+Left, unchanged: the artifact import (`bi-import-key`), board-home step 5 (`COUNCIL_MENU_TOKEN`), and step 6. A
+session holding `BOARD_PULL_TOKEN` reads a save without waiting for the Action; `/board/council` answered 307 to
+`/login` without his cookie, so his steps and contacts stay out of reach from here.
