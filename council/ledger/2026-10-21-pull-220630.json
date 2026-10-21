@@ -1,0 +1,109 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T22:06:30.507Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "book-shipping-1",
+   "at": "2026-10-21T21:58:06.139Z",
+   "what": "ticked",
+   "do": "Download a fresh Kickstarter backer report."
+  },
+  {
+   "id": "virtual-launch-restart-04",
+   "at": "2026-10-21T21:59:04.288Z",
+   "what": "note",
+   "note": "I want to create a bunch of people excited to support me in the next stage of the Mastering the Game of Allyship Journey. I want to create a way for people to learn about the work and how they can support me next and get involved.",
+   "do": "Question 1 of 6: What do you want to create with the virtual launch? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-04",
+   "at": "2026-10-21T21:59:08.754Z",
+   "what": "ticked",
+   "do": "Question 1 of 6: What do you want to create with the virtual launch? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "book-shipping-2",
+   "at": "2026-10-21T22:02:12.977Z",
+   "what": "back to AI",
+   "note": "Ok I need to compost this and make 2 additional smaller steps. I need to go to claude design and make sure we're creating a highres version of the book jacket and that the updated manuscript PDF is in KDP. I also need a fallback step to have this automated by Claude",
+   "automate": true,
+   "do": "Publish the paperback on KDP."
+  },
+  {
+   "id": "virtual-launch-restart-05",
+   "at": "2026-10-21T22:02:46.880Z",
+   "what": "note",
+   "note": "I will get Triumph and Peace. Externally I'll get more people on my email list. I'll get more money. I'll get a recording of the event that I could sell to people as part of a funnel.",
+   "do": "Question 2 of 6: What will that get you? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-05",
+   "at": "2026-10-21T22:02:50.962Z",
+   "what": "ticked",
+   "do": "Question 2 of 6: What will that get you? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-06",
+   "at": "2026-10-21T22:03:27.527Z",
+   "what": "ticked",
+   "do": "Question 3 of 6: What is life like now, for you and for the people you want there? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-07",
+   "at": "2026-10-21T22:03:42.328Z",
+   "what": "note",
+   "note": "It feels blissful, and poignant, and frustration and boring",
+   "do": "Question 4 of 6: How does that feel? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-07",
+   "at": "2026-10-21T22:03:43.393Z",
+   "what": "ticked",
+   "do": "Question 4 of 6: How does that feel? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-08",
+   "at": "2026-10-21T22:05:04.647Z",
+   "what": "note",
+   "note": "I'd have to enjoy the work I'm doing instead of launching the virutal event. I'd have to think that making an event about Allyship isn't sparking joy. I'm spending a lot of mental energy to not have a virtual event made and having invited people into. I'd have to feel connected to my meaning and purpose with how life is going right now that feels threatened by moving in this direction",
+   "do": "Question 5 of 6: What would have to be true for someone to feel that way? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-08",
+   "at": "2026-10-21T22:05:05.874Z",
+   "what": "ticked",
+   "do": "Question 5 of 6: What would have to be true for someone to feel that way? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "j5-look-09",
+   "at": "2026-10-21T22:06:17.373Z",
+   "what": "file note",
+   "file": "hem-page",
+   "title": "Round 8 against round 9, hem at the shins",
+   "note": "Looks much better. i'd like the arm sleeve hems to have the same kind of flow that the hem at the shins have",
+   "do": "Look at round 9 of the clothing (J5): the hem shaking where it brushes the shins. The shake did not come from the shins touching the cloth. It came from the band that eases the robe from the waist toward the body: when a leg carried the hem far out through a slit, the band let go near the leg and grabbed the hem again as the leg passed, a hard yank on and off every step. The band is now a gentle pull that stays on, and the leg shapes taper toward the ankle so the hem no longer catches on air beside the shin. The hem's shake fell by about 40% at a normal walk (29 to 17 mm in the game test) and by about two thirds at a fast stride. Open the page in this step's files below and start with the slow-motion clip: round 8 on the left, round 9 on the right, the same two seconds of walking at a third of the speed. The page also has the full-speed clip and a still of round 8 over round 9 for the same moments of a step. One trade to look for: at a fast stride the back hem now flies a little higher behind the trailing leg; say if it should be heavier. Under this step, note 'yes' or what still looks wrong."
+  },
+  {
+   "id": "j5-look-09",
+   "at": "2026-10-21T22:06:30.507Z",
+   "what": "ticked",
+   "do": "Look at round 9 of the clothing (J5): the hem shaking where it brushes the shins. The shake did not come from the shins touching the cloth. It came from the band that eases the robe from the waist toward the body: when a leg carried the hem far out through a slit, the band let go near the leg and grabbed the hem again as the leg passed, a hard yank on and off every step. The band is now a gentle pull that stays on, and the leg shapes taper toward the ankle so the hem no longer catches on air beside the shin. The hem's shake fell by about 40% at a normal walk (29 to 17 mm in the game test) and by about two thirds at a fast stride. Open the page in this step's files below and start with the slow-motion clip: round 8 on the left, round 9 on the right, the same two seconds of walking at a third of the speed. The page also has the full-speed clip and a still of round 8 over round 9 for the same moments of a step. One trade to look for: at a fast stride the back hem now flies a little higher behind the trailing leg; say if it should be heavier. Under this step, note 'yes' or what still looks wrong."
+  }
+ ],
+ "blockers": [
+  "council/blockers/book-shipping-2--mvinn70h.json"
+ ],
+ "needs_work": [
+  "steps/virtual-launch-restart-04: note \"I want to create a bunch of people excited to support me in the next stage of the Mastering the Game of Allyship Journey. I want to create a way for people to learn about the work and how they can support me next and get involved.\"",
+  "steps/book-shipping-2: back to AI (automate): \"Ok I need to compost this and make 2 additional smaller steps. I need to go to claude design and make sure we're creating a highres version of the book jacket and that the updated manuscript PDF is in KDP. I also need a fallback step to have this automated by Claude\"",
+  "steps/virtual-launch-restart-05: note \"I will get Triumph and Peace. Externally I'll get more people on my email list. I'll get more money. I'll get a recording of the event that I could sell to people as part of a funnel.\"",
+  "steps/virtual-launch-restart-07: note \"It feels blissful, and poignant, and frustration and boring\"",
+  "steps/virtual-launch-restart-08: note \"I'd have to enjoy the work I'm doing instead of launching the virutal event. I'd have to think that making an event about Allyship isn't sparking joy. I'm spending a lot of mental energy to not have a virtual event made and having invited people into. I'd have to feel connected to my meaning and purpose with how life is going right now that feels threatened by moving in this direction\"",
+  "steps/j5-look-09: notes on \"Round 8 against round 9, hem at the shins\": \"Looks much better. i'd like the arm sleeve hems to have the same kind of flow that the hem at the shins have\"",
+  "blockers/book-shipping-2--mvinn70h: Publish the paperback on KDP. (Perfectionsim; do it now: \"The smallest first move is to make sure that the updated Cover and PDF are in KDP\", charge 5 to 4)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

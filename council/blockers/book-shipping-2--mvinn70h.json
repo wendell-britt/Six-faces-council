@@ -1,0 +1,44 @@
+{
+ "charge": {
+  "after": 4,
+  "before": 5
+ },
+ "due": "2026-10-13",
+ "engine": "board-wave",
+ "finishedAt": "2026-10-21T22:00:49.567Z",
+ "list": "book-shipping",
+ "overdueDays": 8,
+ "resolution": {
+  "at": "2026-10-21T22:00:49.567Z",
+  "kind": "now",
+  "text": "The smallest first move is to make sure that the updated Cover and PDF are in KDP"
+ },
+ "rounds": [
+  {
+   "aligned": false,
+   "body": [
+    "Numb",
+    "Hollow"
+   ],
+   "element": "metal",
+   "felt": "",
+   "from": "the step",
+   "kind": "unclear",
+   "name": "Perfectionsim",
+   "partStayed": false,
+   "purpose": "It protects me from doing work that doesn't feel as charged or as fun, but is also protecting me from getting the book in front of people",
+   "validated": true
+  }
+ ],
+ "savedAt": "2026-10-21T22:00:49.567Z",
+ "stage": "done",
+ "startedAt": "2026-10-21T21:59:27.041Z",
+ "status": "resolved",
+ "step": "book-shipping-2",
+ "task": "Publish the paperback on KDP.",
+ "version": 1,
+ "vibeulon": {
+  "at": "2026-10-21T22:00:49.567Z",
+  "by": "inner work"
+ }
+}
