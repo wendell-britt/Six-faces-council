@@ -18640,6 +18640,39 @@
      "c": "Chapter 1's title frames it: you pick your player at an arcade cabinet, then step through the screen into the settlement."
     }
    ]
+  },
+  {
+   "id": "fcp-cover-pick",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "fcp-launch",
+   "q": "Which cover should the Friendcraft podcast use? The council recommends A, Teal hex.",
+   "why_you": "The cover is the show's face on Spotify and under your name, and choosing between looks is a matter of taste only you hold.",
+   "not_before": "Drawn today, 2026-10-21, under fcp-cover-drafts: the three Flirtcraft layouts in Mastering Allyship's look, with flirt red changed to friendcraft.app's teal (#5fc2ba). The night background, the light streaks and the gold stay. The three covers are attached in the Friendcraft podcast covers thread and saved in this project's files under podcast/covers, with a sheet showing each one at full size and at phone size.",
+   "options": [
+    {
+     "v": "a-teal-hex",
+     "label": "A, Teal hex (recommended)",
+     "c": "The Mastering Allyship book cover's layout: light streaks, 'Mastering the game of' above, FRIEND in white and CRAFT in gold inside one glowing teal hexagon. It is the closest kin to the book and the other two shows, and it still reads at phone size. The council makes it the cover in the Thumbnail Studio and in your Spotify steps."
+    },
+    {
+     "v": "b-two-friends",
+     "label": "B, Two friends",
+     "c": "A teal and a violet hexagon overlapping, the overlap lit gold, with FRIENDCRAFT across both: two people meeting, the same shape as Flirtcraft's cover. It is the closest to the cover you picked for Flirtcraft, so the two shows look most alike."
+    },
+    {
+     "v": "c-level-select",
+     "label": "C, Level select",
+     "c": "Type first: FRIEND in white and CRAFT in a teal gradient, a small gold FC hexagon badge, and light streaks rising from the bottom. It has the boldest title of the three and no hexagon in the middle."
+    },
+    {
+     "v": "steer",
+     "label": "None yet, I will steer in the box",
+     "c": "Say what to change, or which parts of each to combine, and the council redraws."
+    }
+   ]
   }
  ],
  "causes": [
@@ -35676,6 +35709,13 @@
      "positions": [
       "fcp-consent-on-record"
      ]
+    },
+    {
+     "n": 3,
+     "questions": [
+      "fcp-cover-pick"
+     ],
+     "positions": []
     }
    ]
   }
