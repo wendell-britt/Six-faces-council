@@ -1798,6 +1798,7 @@ function dfCard(id, d){
   const when = st === 'sent' ? ` ${esc(stFmt(String(d.sentAt || '').slice(0, 10)))}` : st === 'send' && d.approvedAt ? ` ${esc(stFmt(String(d.approvedAt).slice(0, 10)))}` : '';
   const head = `<div class="df-head"><b>Email</b><span class="st-chip${st === 'sent' ? ' st-safe' : st === 'revise' ? ' st-opt' : ''}">${DF_STATUS[st] || esc(st)}${when}</span>${d.author ? `<span>drafted by ${esc(d.author)}</span>` : ''}</div>`;
   const lint = (d.lint || []).length ? `<ul class="df-lint" aria-label="Voice lint on the drafted text">${d.lint.map(l => `<li>${esc(l)}</li>`).join('')}</ul>` : '';
+  const voice = (d.voice || []).length ? `<ul class="df-lint" aria-label="Email voice pass on the drafted text">${d.voice.map(v => `<li>${esc(v.class === 'tell' ? 'Reads as AI' : 'Off his voice')} · ${esc(v.rule)} L${esc(v.line)}: ${esc(v.text)}${v.accepted ? ` (kept: ${esc(v.accepted)})` : ''}</li>`).join('')}</ul>` : '';
   const note = d.note ? `<p class="st-note">${esc(d.note)}</p>` : '';
   if (!open) return `<div class="df" id="df-${esc(id)}">${head}${addr}<p class="oc-who" style="font-size:.95rem">${esc(d.subject)}</p>
     ${st === 'dropped' ? '' : `<p class="df-body">${esc(d.body)}</p>`}${note}
@@ -1806,7 +1807,7 @@ function dfCard(id, d){
   return `<div class="df" id="df-${esc(id)}">${head}${addr}
     <label class="st-sum" for="dfs-${esc(id)}">Subject</label><input type="text" id="dfs-${esc(id)}" value="${esc(e.subject ?? d.subject)}">
     <label class="st-sum" for="dfb-${esc(id)}">Body</label><textarea id="dfb-${esc(id)}">${esc(e.body ?? d.body)}</textarea>
-    ${lint}${note}
+    ${lint}${voice}${note}
     <input type="text" id="dfn-${esc(id)}" placeholder="What to change, for Revise" value="${esc(e.note || '')}">
     <div class="df-acts"><button type="button" class="save" data-df-send="${esc(id)}">Send</button><button type="button" class="st-btn" data-df-save="${esc(id)}">Save edits</button><button type="button" class="st-btn" data-df-revise="${esc(id)}">Revise</button><button type="button" class="st-btn" data-df-drop="${esc(id)}">Drop</button></div>
     <div class="st-state" id="dfst-${esc(id)}" aria-live="polite"></div></div>`;

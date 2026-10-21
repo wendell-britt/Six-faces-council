@@ -1,0 +1,150 @@
+# email-voice.yaml: the profile for the email voice pass (board/email_voice.py, docs/email-voice.md).
+#
+# The analogue of the MTGOA editorial pipeline's editorial.yaml: the one file that says what is true of THIS voice.
+# The scanner is generic and reads everything it checks from here.
+#
+# Wendell, 2026-10-21, overruling em-voice-pass: "I think we can pull in a version of the editorial pipeline we used
+# for MTGOA but specifically for developing an email voice. I think we also need to create that email voice so that
+# it doesn't trigger anti AI folk and sounds and friendly and playful as I am in real life."
+#
+# The traits were measured from his own sent mail (about 45 hand-written emails, 2020-2026). The notes behind them stay
+# private and out of this repo: no names of the people he wrote to, no email bodies. The phrases quoted here are his
+# generic ones.
+#
+# Two classes of rule:
+#   tell  reads as AI to a wary reader. Every hit ends in one of two terminal states: rewritten, or accepted with a
+#         written reason (--accept RULE:"reason"). A draft with an unaccepted tell is not placed on the board.
+#   fit   off his voice but not a tell. Shown as a note; never blocks.
+
+reader:
+  who: >-
+    The recipient: a community member, collaborator or organizer, often in Portland, and many of them wary of AI.
+    They know Wendell or know of him. They read on a phone, between other messages.
+  stops_trusting_when:
+    - the email opens with a stock pleasantry instead of their name or the point
+    - the sentences are evenly polished, all about the same length, with no slip or joke in them
+    - it uses words nobody says out loud (delighted, delve, seamless, leverage)
+    - it has em-dashes, semicolons, bold text or headers, which hand-typed mail almost never has
+    - it lists things in threes for rhythm, or says "not X, but Y"
+    - it ends by summarizing itself or asking the same thing twice
+    - it signs off "Best regards" or "Warm regards" from someone who writes "See ya then!"
+  wants: >-
+    To hear from Wendell, the person: warm, quick, a little goofy, clear about what he is asking.
+
+traits:
+  greeting:
+    usual: "Hey <Name>!"
+    also: ["Heyo <Name>.", "Hey all!", "Hello <Name>!"]
+    formal_only: "Hi <Name>,"
+    reply: "Often no greeting at all. He dives straight in: \"Works for me! See ya then!\""
+  words:            # per email, quoted text and signature excluded
+    reply: [3, 90]
+    outreach: [20, 180]
+  sentence_words:
+    max_mean: 16    # his sentences run short
+    evenness: 0.30  # with 4+ sentences, a spread (stdev / mean) under this reads as machine-even
+  paragraph_sentences_max: 3
+  exclamations_min: 1          # nearly every email has one, often 2 to 4
+  contraction_rate_min: 0.6    # contractions / (contractions + the same words spelled out)
+  closers:
+    - "Looking forward to it!"
+    - "Talk to you tomorrow!"
+    - "See ya then!"
+    - "Catch you tomorrow!"
+    - "Can't wait to get started."
+  short_lines:                 # his one-liners; voice_lint's fragment rule does not apply to these or to the closers
+    - "Copy that!"
+    - "Works for me!"
+    - "Thanks so much!"
+    - "Talk soon!"
+    - "Sounds like a PLAN!"
+  formal_closer: "Best, Wendell"
+  asks:
+    - "Feel free to throw some time on my calendar"
+    - "Let me know what the next steps are"
+  playful:                     # an email over playful_after words should carry at least one
+    after_words: 40
+    slang: ["oh snap", "coming in hot", "aint no thing", "ain't no thing", "i gotchu", "def ", "y'all", "lol",
+            "how's about", "hella", "keep on keeping on", "sounds like a plan", "copy that", "heyo", "gonna",
+            "see ya", "super dope", "schemes are afoot"]
+    shapes:
+      caps_word: "a whole word in caps for joy (THANKS MAN!, PERFECT., HELL YEAH)"
+      stretched: "a stretched word (soooo, BUUUUUT)"
+      parenthetical: "a self-aware aside in parentheses: (and actually put it in my calendar this time)"
+      emoji: "tripled emoji at the end, casual mail only"
+
+# The tells. `pattern` is a Python regex, case-insensitive, matched line by line on the body (quoted lines starting
+# with > are skipped). `instead` is what his own mail does.
+tells:
+  - id: finds-you-well
+    pattern: "\\bI hope (this|my|the) (e-?mail|message|note) finds you\\b|\\bI hope you('re| are) (doing )?well\\b|\\bI trust (this|you)\\b"
+    instead: "Open with \"Hey <Name>!\" or go straight to the point."
+  - id: reaching-out
+    pattern: "\\b(I|we) (just )?wanted to reach out\\b|\\b(I'm|I am|we're|we are) (just )?reaching out\\b|\\breaching out to\\b"
+    instead: "Say the thing. \"Hey <Name>! Quick one:\" and then the ask."
+  - id: dont-hesitate
+    pattern: "\\b(please )?(do not|don't) hesitate\\b|\\bshould you have any\\b"
+    instead: "\"Feel free to throw some time on my calendar\" or \"Let me know!\""
+  - id: time-and-consideration
+    pattern: "\\bthank you (so much )?for your time( and consideration)?\\b|\\bthank you in advance\\b"
+    instead: "Quick, specific thanks: \"Thanks so much!\""
+  - id: delighted
+    pattern: "\\bI('d| would) be (delighted|thrilled|honou?red|happy to assist)\\b"
+    instead: "\"I'm in!\" or \"Sounds like a PLAN!\""
+  - id: regards
+    pattern: "^\\s*(best|warm|warmest|kind|kindest) regards\\b|^\\s*(sincerely|respectfully|cordially)\\b"
+    instead: "End on a forward-looking exclamation (\"Looking forward to it!\") and no sign-off block. Formal mail: \"Best, Wendell\"."
+  - id: circle-back
+    pattern: "\\bcircle back\\b|\\btouch base\\b|\\bsync up\\b"
+    instead: "\"Talk soon!\" or name the day: \"Catch you tomorrow!\""
+  - id: excited-to-share
+    pattern: "\\b(excited|thrilled|pleased|happy) to (share|announce|let you know|inform)\\b"
+    instead: "Lead with the news itself, then the joy: \"Oh snap! ... is live!\""
+  - id: ai-vocabulary
+    pattern: "\\b(delve|delving|tapestry|seamless(ly)?|leverag(e|ing)|synerg(y|ies)|elevate|robust|embark|game-changer|navigate the|in today's|foster(ing)?|streamline)\\b"
+    instead: "The plain word he would say out loud."
+  - id: throat-clearing
+    pattern: "\\bI was wondering if you (might|would|could)\\b|\\bI just wanted to\\b|\\bI hope it's (ok|okay|alright) (that|if)\\b"
+    instead: "Ask plainly and early: \"Would it be possible to ...?\""
+  - id: dear-opener
+    pattern: "^\\s*dear\\b"
+    instead: "\"Hey <Name>!\" (or \"Hi <Name>,\" for formal mail)."
+  - id: em-dash
+    pattern: "—|–|\\s--\\s"
+    instead: "A period, a comma, or a parenthetical. Hand-typed mail has no dashes."
+  - id: semicolon
+    pattern: ";"
+    instead: "Two sentences, or an exclamation point."
+  - id: markdown
+    pattern: "^\\s*#{1,6}\\s|\\*\\*[^*\\n]+\\*\\*|__[^_\\n]+__|^\\s*[-*]\\s+\\*\\*"
+    instead: "Plain text. Lists only for real content, written 1), 2)."
+  - id: not-x-but-y
+    pattern: "\\bnot (just |only |merely |simply )?[^.,;!?\\n]{1,40}, but\\b|\\bisn't (just )?(about )?[^.!?\\n]{1,40}[,.] it's\\b|\\bit's not (just )?about\\b"
+    instead: "Say what it is. Drop the contrast."
+  - id: rule-of-three
+    pattern: "\\b[\\w']+( [\\w']+)?, [\\w']+( [\\w']+)?,? and [\\w']+( [\\w']+)?[.!]"
+    instead: "Keep the one or two that matter. Three-item rhythm reads written-by-machine."
+  # Whole-email shapes. The scanner checks these structurally; the patterns apply to the closing only
+  # (the last two paragraphs above the sign-off).
+  - id: recap-closer
+    scope: closing
+    pattern: "^\\s*(in summary|to summarize|to sum up|in short|to recap|all in all|overall|in conclusion)\\b"
+    instead: "Stop when the ask is made. End forward-looking: \"See ya then!\""
+  - id: restated-ask
+    scope: closing
+    pattern: "\\b(once again|again, |just to (reiterate|recap|confirm)|as (mentioned|noted|stated) (above|earlier|before))"
+    instead: "Ask once, early. The ending looks forward instead."
+
+# voice_lint (council/tools/voice_lint.py) runs on every draft and its hard findings stay on the draft's `lint` list
+# unchanged. The pass reads them too, with this class per rule. Book rules that email breaks on purpose are fit:
+# his closers ("Looking forward to it!", "Copy that!") are fragments by the book's rule, and "BUUUUUT" opens a sentence.
+voice_lint:
+  emdash: "off"      # covered by the em-dash tell, which also catches spaced dashes
+  prodtag: tell
+  token: tell
+  A0: tell
+  stacks: tell
+  banned: fit
+  andbut: fit
+  fragment: fit
+  empty-head: fit
