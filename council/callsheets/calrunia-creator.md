@@ -72,5 +72,5 @@ shape keys, and a four-direction sprite render of the 3D figure beside the LPC t
 
 ## Open
 
-- Board: question `cr-look-by-place`, positions `cr-*` (rows file above). Deliverable page (HTML artifact of this
-  sheet: menus, gaps, first build) not yet published; the next thread makes it.
+- Board: question `cr-look-by-place`, positions `cr-*` (rows file above). Rows landed on main and the board republished (2026-10-21).
+  Deliverable page: https://claude.ai/artifact/GUcAH9AvymhZdEpLCp932V.
