@@ -1,0 +1,66 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T01:31:56.983Z",
+ "answers": {
+  "ba-ari-look": {
+   "kind": "question",
+   "choice": "yes",
+   "savedAt": "2026-10-21T01:28:16.193Z",
+   "steer": ""
+  },
+  "ba-round4-comfort": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:28:21.012Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ba-formation-card": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:28:53.855Z",
+   "status": "stands",
+   "steer": "We are dancers and she was curious if the figures could dance together in addition to doing push hands Nan dance studio "
+  },
+  "ba-spells-plain": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:29:46.022Z",
+   "status": "stands",
+   "steer": "Some spells need both people there. Individual spells can be cast by one’s self but dual cultivation spells need both people there. There should probably be asynchronous dual cultivation spells as well "
+  },
+  "ba-barn-in-ship": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:30:04.241Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ba-likeness-choices": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:30:09.726Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ba-qi-is-light": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:30:52.983Z",
+   "status": "stands",
+   "steer": "I think it should be a meter and should be a currency like the scales one I’ll eights cradle. I see this as how we can integrate vibeulons into the game world "
+  },
+  "ba-worlds-stored": {
+   "kind": "position",
+   "savedAt": "2026-10-21T01:31:56.983Z",
+   "status": "overrule",
+   "steer": "We can start building a structure that holds all of them. The between is a subfeature of an emergent calrunian world along with root and the sprout game  game "
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/ba-ari-look: Yes, Ari's play counts",
+  "positions/ba-formation-card: Stands (steer: \"We are dancers and she was curious if the figures could dance together in addition to doing push hands Nan dance studio\")",
+  "positions/ba-spells-plain: Stands (steer: \"Some spells need both people there. Individual spells can be cast by one’s self but dual cultivation spells need both people there. There should probably be asynchronous dual cultivation spells as well\")",
+  "positions/ba-qi-is-light: Stands (steer: \"I think it should be a meter and should be a currency like the scales one I’ll eights cradle. I see this as how we can integrate vibeulons into the game world\")",
+  "positions/ba-worlds-stored: Overruled (steer: \"We can start building a structure that holds all of them. The between is a subfeature of an emergent calrunian world along with root and the sprout game  game\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

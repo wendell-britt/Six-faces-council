@@ -30112,6 +30112,95 @@
      "regent"
     ],
     "pass": "jev asset"
+   },
+   "ba-round4-comfort": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:28:21.012Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-formation-card": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:28:53.855Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "We are dancers and she was curious if the figures could dance together in addition to doing push hands Nan dance studio",
+    "faces": [
+     "architect",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-spells-plain": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:29:46.022Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "Some spells need both people there. Individual spells can be cast by one’s self but dual cultivation spells need both people there. There should probably be asynchronous dual cultivation spells as well",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-barn-in-ship": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:30:04.241Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-likeness-choices": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:30:09.726Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-qi-is-light": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:30:52.983Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "I think it should be a meter and should be a currency like the scales one I’ll eights cradle. I see this as how we can integrate vibeulons into the game world",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "between-ari1"
+   },
+   "ba-worlds-stored": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:31:56.983Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "steer": "We can start building a structure that holds all of them. The between is a subfeature of an emergent calrunian world along with root and the sprout game  game",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "between-ari1"
    }
   },
   "questions": {
@@ -32833,6 +32922,18 @@
      "diplomat"
     ],
     "pass": "jev asset"
+   },
+   "ba-ari-look": {
+    "decision": "yes",
+    "label": "Yes, Ari's play counts",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T01:28:16.193Z",
+    "record": "council/ledger/2026-10-21-pull-013156.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "between-ari1"
    }
   },
   "causes": {
