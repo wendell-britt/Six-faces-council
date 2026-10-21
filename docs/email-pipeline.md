@@ -11,7 +11,7 @@ Any client can draft: a Claude thread, Zo, Codex, or a routine. Drafting writes 
 
 ```
 python3 board/email_pipeline.py draft --store <dir> --contact <id> --to someone@example.org \
-  --subject "..." --body-file body.txt --author "<which client>"
+  --subject "..." --body-file body.txt --author "<which client>" [--kind reply] [--accept RULE:"reason"]
 ```
 
 The script reads the contact from a saved store folder, runs `voice_lint` on the body, and keeps the findings on the
@@ -21,8 +21,11 @@ draft never writes over one in status `send` or `sending`.
 
 ## The voice step
 
-The voice step has two parts. `voice_lint` runs on every draft, and its findings sit on the card. Wendell's edit on
-the board is the editorial pass, and the text he saves when he presses Send is the text that goes out.
+Every draft goes through the email voice pass before it reaches the board (docs/email-voice.md). The pass reads the
+profile in `council/voice/email-voice.yaml`, keeps its findings on the draft as `voice` next to `voice_lint`'s `lint`,
+and shows both on the card. A draft that still reads as AI is refused until each tell is rewritten or accepted with a
+written reason (`--kind reply|outreach`, `--accept RULE:"reason"`). Wendell's edit on the board comes after the pass,
+and the text he saves when he presses Send is the text that goes out.
 
 ## Who can send
 
