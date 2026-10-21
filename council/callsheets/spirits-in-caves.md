@@ -156,3 +156,12 @@ player and the spirit can be in shot. It's really hard to see the most important
   head (and once on 5dc68be with logging); in the failing runs the figure sat at the seat (0, 2.4) during the hidden-stick
   thumb test. Find the cause before merge. The two hall camera checks fail on main too.
 - Then a testable preview link to him, and merge #398 once he says it looks right (bars-engine has no auto-merge).
+
+## Done, 2026-10-21 01:55 UTC: the elder's card is small (bars-engine #398 merged)
+- The card is one line and one row of short form buttons, with a fold button (leaves a chip, a tap reopens) and an X; the
+  elder's floating name shrinks while it is open. cave-test checks the size, the chip and the X. Wendell, 2026-10-21: "I've
+  looked at it and it looks good". #398 squash-merged as 1856dfa.
+- The rug "Sit down" check passed in both runs on 4316a9e; the earlier failures did not come back. The hall camera check still
+  fails on main and here (0.45, -0.77 off its back).
+- His next ask, "the controls are pretty clunky still", went to the coordinator as a separate research thread on phone 3D
+  camera and touch controls.
