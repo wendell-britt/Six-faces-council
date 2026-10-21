@@ -48,6 +48,15 @@ A stall message (2026-10-09): read the transcript of the session that sent it be
 routine-fired session that is not the coordinator and is still running. The zombie of 10-07 to 10-09 resumed its
 worker after every restart, and the worker's first call each time was `add_repo` (docs/incidents.md).
 
+## With Claude cards (2026-10-21)
+
+A card he hands to Claude from his hand (`aiBack`) is routed by a board read, never left to wait. `board/pull.py` prints
+`steps/<id>: with Claude ... no owner yet` on every run while a handed step has no `aiBack.status`. The read routes it
+(message the owning thread, or ask the coordinator for a new one), then writes `aiBack.status` on the step with
+ArtifactData: `{state: queued|working|review|new-thread, owner: "<thread or PR title>", link: "<https url>", note, at}`.
+The With Claude list on his Your steps tab shows each card's state and owner. Update `status` when the thread finishes
+(`review`, then tick the step done); a step with no `status` reads "Not picked up yet" to him. Rebuild and republish.
+
 ## The Send to Claude button
 
 `board/template.html` shows a bar at the bottom of the board once anything is saved and not yet sent: a row saved and
