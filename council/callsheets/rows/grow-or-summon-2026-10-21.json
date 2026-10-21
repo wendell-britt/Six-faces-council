@@ -1,0 +1,70 @@
+{
+ "positions": [
+  {
+   "id": "gs-two-acts",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "grow-or-summon1",
+   "auto": true,
+   "pos": "Summoning makes a new spirit; growing feeds one you already have. Summoning takes a charge worked through the whole W.A.V.E. that none of your spirits carries yet, and the new spirit comes out through the door as a gas cloud. Growing takes energy only and never makes a new spirit. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"We need a difference between harvesting energy to grow an existing spirit or summoning a new one altogether\". sg-charge-disc (a spirit is born from a charge) and dp-bm-door-cave (only charges worked through the whole W.A.V.E. go through a door as spirits). Source: council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md"
+  },
+  {
+   "id": "gs-harvest-is-qi",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "grow-or-summon1",
+   "auto": true,
+   "pos": "Harvested energy is qi. You harvest it by sitting, by practice and from the places you go; it fills the qi meter or flows straight into a spirit you choose, adding to that spirit's sittings, which carry it from gas to core to hologram to creature to ally. Until qi reaches the cave, a harvest is a sitting. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"We need a difference between harvesting energy to grow an existing spirit or summoning a new one altogether\". cw-qi-meter-scales, your steer on iv-no-mirror (charge mined from environments) and the cave's sitting count (stageOf). Source: council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md"
+  },
+  {
+   "id": "gs-door-gas",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "grow-or-summon1",
+   "auto": true,
+   "pos": "The blobs that come out of the door are your newly summoned spirits at the gas stage, one for each charge you worked through. Sitting with one grows it, as with any of your spirits. This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"the blobs that emerge from the door need to be the energy gas energy spirits and then sitting gross them into creatures and allies\". sg-holo-stages, dp-bm-door-cave. Source: council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md"
+  },
+  {
+   "id": "gs-same-charge-grows",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "grow-or-summon1",
+   "auto": true,
+   "pos": "A W.A.V.E. on a charge one of your spirits already carries grows that spirit and never makes a second. A new charge in a family you already have offers both at the end of the sitting, \"Feed Fear\" or \"Call a new one\", with the likelier choice lit so one tap changes it. This stands unless you flip it.",
+   "why": "sg-charge-disc (the same charge makes the same spirit), bms-sit-whom and bms-spirits-after (you choose). The Challenger wanted no choice at all; that dissent is in the pass. Source: council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md"
+  },
+  {
+   "id": "gs-show-the-flow",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "grow-or-summon1",
+   "auto": true,
+   "pos": "You can see which one happened. Growing: motes stream from you into the spirit sitting with you, and it swells. Summoning: the motes gather into a new cloud that drifts out through the door. Reduced motion fades instead. This stands unless you flip it.",
+   "why": "The cave's motes already stream from a daemon to its spirit at birth (spirits-in-caves slice 1). Source: council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md"
+  },
+  {
+   "id": "gs-care-is-the-cost",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "grow-or-summon1",
+   "auto": true,
+   "pos": "Summoning has no vibeulon or qi price; its cost is care, and the summon choice says how many spirits you already tend. Harvesting never harms a wild spirit. This stands unless you flip it.",
+   "why": "sc-ruling-mortal (every spirit needs tending), sc-offer-release (vibeulons are for letting a spirit go), and daemons are never fought. Source: council/passes/6FACE_PASS_grow-or-summon1_2026-10-21.md"
+  }
+ ]
+}
