@@ -64,3 +64,24 @@ see the problem. The player should face in the direction of the stick".
    checks after it fail with it. A second finger while the stick is floating should start a pinch (or the stick should
    float only once the finger moves). The camera-inside-while-walking failure on main now passes.
 4. Reply with the `?go=` preview link, mark #411 ready, and say what was not checked (real phone feel).
+
+## 2026-10-21: round 1b built (bars-engine #411, three new commits, CI green on d7a0a44; 59a63d5 pushed)
+
+- The figure faces the stick, not the way it slid. In the hall and the centre the stick's forward is taken from the camera as
+  the thumb goes down and held as a turn off the ring's way; the camera rides round with the ring by the same turn and eases
+  behind the figure's facing. Up held still walks round the ring to the next door; no flip on a held diagonal. Tunnels keep
+  the live view and the turn along the way. A hand look turns the held forward too.
+- Pinch regression from round 1 fixed: a second finger while the stick's finger is still within its tap makes a pinch (home
+  base and cave).
+- Checks: `content/ontology-game/cave/hall-probe.mjs` (new, a few minutes) 6 of 6 on 59a63d5, including the unchanged hall
+  check; controls-probe 11 of 11 on d7a0a44. A full cave-test run on d7a0a44 timed out walking the centre to its ways back
+  (453 pass, no fails before it); 59a63d5 fixes that cause. The full run on 59a63d5 was started but cut by the handoff.
+
+## Brief, 2026-10-21 03:20 UTC: controls round 1c (fresh Sonnet bars-engine thread, owns #411, branch claude/project-thread-43i8fm)
+
+1. Run the full `cave-test.mjs` on #411's head in the background (deps: typescript@5, playwright, three@0.128.0 symlinked as
+   node_modules in the repo root and cave/; build with `node scripts/build-ontology-game.mjs`). Compare with main's 502/3.
+   A new failure on the hall, centre or a round room's walk goes to an Opus thread with the failing line.
+2. If no new failure: reply with the preview link
+   https://bars-engine-git-claude-projec-9d09c6-wendells-projects-9c1b16dc.vercel.app/ontology-game/cave?go=elder and mark #411
+   ready. Not checked: real phone feel.
