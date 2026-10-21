@@ -8,6 +8,7 @@ Started 2026-10-21 from Wendell's step note: "hitting the send button on the cou
 
 - #351 builds the draft card, `board/email_pipeline.py` and `docs/email-pipeline.md`. Preview: https://claude.ai/artifact/Hv5PQwP4fn97tMWmiiJjSc
 - The Gmail connector was checked on 21 October and is signed in as wendell@masteringallyship.com.
+- `em-voice-pass` was overruled on 21 October: the email voice pass is built on `claude/project-thread-caz829`. The profile is `council/voice/email-voice.yaml`, the scanner `board/email_voice.py`, the doc `docs/email-voice.md`. `email_pipeline.py draft` refuses a draft with an unaccepted tell, and the card shows the `voice` list. The test draft's before and after is `docs/examples/email-voice-test-draft.md`. The test draft to `demo-wendell-self` uses the AFTER text.
 
 ## Next round brief
 
