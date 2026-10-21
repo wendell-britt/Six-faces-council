@@ -11742,8 +11742,19 @@
    ],
    "pass": "wave-form1",
    "auto": true,
-   "pos": "A charge comes through the door as an occluded gas: its motes spread wide, grey and faint behind a dark haze. Each step of the W.A.V.E. you do defines it a little more (Not now gives no credit), until at the fork it is a clear gas in its element's colour. The stage still comes from sittings, so one W.A.V.E. never turns it into a creature. A creature or ally walks on the floor with a step, a sway and its face to where it goes. This stands unless you flip it.",
-   "why": "Your words, 2026-10-21: \"they need to start as gas and become defined as a function of what work is done on them ... the spirit should show up in an occluded gas form and as it's worked through should turn into a fully formed spirit\" and \"spirit should be walking on the ground (if and when they turn into a creature)\". gs-door-gas, sic-unfold-by-sitting. Built in bars-engine on the door spirits branch."
+   "pos": "A charge comes through the door as an occluded gas: its motes spread wide, grey and faint behind a dark haze. Each step of the W.A.V.E. you do defines it a little more (Not now gives no credit), until at the fork it is a clear gas in its element's colour. The stage still comes from sittings, so one W.A.V.E. never turns it into a creature. A creature or ally walks on the floor with a step, a sway and its face to where it goes. Every charge enters this way, including one your own spirit carries (a spirit come home): it is an occluded gas, defined step by step by the W.A.V.E., and at the end Feed <name> merges it into the existing spirit, which then unfolds to its stage in front of you. This is built in bars-engine #419 (ded6717). This stands unless you flip it.",
+   "why": "Your words, 2026-10-21: \"they need to start as gas and become defined as a function of what work is done on them ... the spirit should show up in an occluded gas form and as it's worked through should turn into a fully formed spirit\" and \"spirit should be walking on the ground (if and when they turn into a creature)\". gs-door-gas, sic-unfold-by-sitting. Built in bars-engine on the door spirits branch. Amended 2026-10-21 from his look at #419: the spirit came home as a creature, not as gas."
+  },
+  {
+   "id": "gw-shadow-first",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "wave-form1",
+   "auto": true,
+   "pos": "The shadow part appears as its own gas spirit in the shadow colour as soon as the shadow is named. It is a gate: you work it through with the unveil practice and the daemons' asks, then keep it as a spirit or let it become a vibeulon, before the main charge's W.A.V.E. goes on. This is built in bars-engine #419 (ded6717). This stands unless you flip it.",
+   "why": "Your words, 2026-10-21 19:33 UTC: \"The part that was hiding it is still showing up as the blobs instead of its own gas form and that part has to be worked though and turned into a vibeulon/released or accepted as a spirit before moving on to the existing spirit.\" gw-form-by-step, gw-unkept-vibeulon, gw-summon-price."
   },
   {
    "id": "gw-unkept-vibeulon",
