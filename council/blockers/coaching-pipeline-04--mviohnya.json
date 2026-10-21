@@ -1,0 +1,63 @@
+{
+ "charge": {
+  "after": 4,
+  "before": 7
+ },
+ "due": "2026-10-19",
+ "engine": "board-wave",
+ "finishedAt": "2026-10-21T22:28:17.728Z",
+ "list": "coaching-pipeline",
+ "overdueDays": 2,
+ "resolution": {
+  "at": "2026-10-21T22:28:17.728Z",
+  "kind": "now",
+  "text": "The smallest move is approving the drafts of the guest pitches with the added note that we really want to make sure and make clear the alignment between their work and mine. Right now the pitches are involving doing work with people on air and really I want to have cool conversations about aligned topics."
+ },
+ "rounds": [
+  {
+   "aligned": false,
+   "body": [
+    "Heavy",
+    "Tight"
+   ],
+   "element": "metal",
+   "felt": "It feels like a vicegrip",
+   "from": "the step",
+   "kind": "feeling",
+   "name": "protecting people from me being a fraud.",
+   "part321": {
+    "be": "I don't want wendell to make a fool of himself. I'm safe while I'm stuck. I've been stuck so long. I don't know what flow feels like. I see it. Its like a tide and I'm going to get pulled in and drowed. he's amde this stuff that I can't keep his stuck anymore and it makes me sad.",
+    "face": "There is a part of me that feels like a little boy. it wants to stop me from sending outreach emails for my coaching practice because they don't know how it fits into the larger space. They want to be successful but don't like that being successful means reaching out to people",
+    "talk": "Hello\nhello\nI gotta send these to people\nYou need to get more clear on what you're sending and why?\nWhy?\nBecause I don't know what we are going to do\nWe already have a thing in place that I can't send an email until I actually look at it. you can change it if you need to. We can also do research about the people so it seems warmer and more aligned with what they are about\nOk that makes sense\nSo we can move forward knowing that clicking the outreach button doesn't commit us to action yet"
+   },
+   "partStayed": true,
+   "purpose": "It protects me reputation and my ability to procrastinate.",
+   "validated": true
+  },
+  {
+   "aligned": false,
+   "body": [
+    "Hollow"
+   ],
+   "element": "metal",
+   "felt": "",
+   "from": "a part of protecting people from me being a fraud.",
+   "kind": "unclear",
+   "name": "Stuck Stew",
+   "partStayed": false,
+   "purpose": "It's been trying to keep me stuck so someone can save me frmo my problems.",
+   "validated": true
+  }
+ ],
+ "savedAt": "2026-10-21T22:28:17.728Z",
+ "stage": "done",
+ "startedAt": "2026-10-21T22:23:08.674Z",
+ "status": "resolved",
+ "step": "coaching-pipeline-04",
+ "task": "Send the first three guest pitches: Coaches Rising and The Embodiment Podcast this week, and Buddhist Geeks to Vince after his recording on 16 October. Each pitch is in the show's row on the Outreach tab, under Guesting. Fill or delete the bracketed lines, send it, then set the row to Pitched.",
+ "version": 1,
+ "vibeulon": {
+  "at": "2026-10-21T22:28:17.728Z",
+  "by": "inner work"
+ }
+}

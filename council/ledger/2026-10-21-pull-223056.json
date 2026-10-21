@@ -1,0 +1,120 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T22:30:56.440Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "virtual-launch-restart-09",
+   "at": "2026-10-21T22:17:29.780Z",
+   "what": "note",
+   "note": "I don't feel like I'm good enough to do a Virtual Event. I don't feel as though I'm worthy of bringing people in. I feel insignificant and like I wont belong amongst other people doing work like this",
+   "do": "Question 6 of 6: What reservations do you have? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "virtual-launch-restart-09",
+   "at": "2026-10-21T22:17:34.283Z",
+   "what": "ticked",
+   "do": "Question 6 of 6: What reservations do you have? Write the answer in this step's note. A sentence is enough, and you can add to it later."
+  },
+  {
+   "id": "slice-referee-playtest-01",
+   "at": "2026-10-21T22:18:28.317Z",
+   "what": "note",
+   "note": "We need something that I can test with one click without having to run terminal processes",
+   "do": "Play the slice once with the referee on. 1) Paste this one line into Terminal on your Mac: git clone https://github.com/wendell-britt/sprout ~/sprout-playtest 2>/dev/null; cd ~/sprout-playtest && git fetch origin claude/project-thread-abylb1 && git checkout -B playtest FETCH_HEAD && npm install && npm run slice:serve   2) Open http://127.0.0.1:8140/?playtest in your browser. 3) Walk out the gap in the east fence, take the fight, choose Earth at the grounding choice until the spirit calls you, and in the spirit fight do NOT use the Fire stance (Fire feeds the earth spirit). Make the offering in the ring. 4) Walk into the farmhouse door and choose Sleep: the day's page shows what the referee wrote. 5) In the morning Mara stands by the east fence gap. Walk next to her and press Space: Listen first, Bring something, pick a card, read the chances, Roll. 6) Press the Logbook button under the resources line. If you want the comparison, open http://127.0.0.1:8140/?referee=off and do the same: nothing is written and Mara never comes. Press Ctrl+C in Terminal when done."
+  },
+  {
+   "id": "slice-referee-playtest-01",
+   "at": "2026-10-21T22:18:52.615Z",
+   "what": "back to AI",
+   "note": "This needs to be someting we can test without running terminal thing. Create a preview of it for me that I can click through",
+   "automate": false,
+   "do": "Play the slice once with the referee on. 1) Paste this one line into Terminal on your Mac: git clone https://github.com/wendell-britt/sprout ~/sprout-playtest 2>/dev/null; cd ~/sprout-playtest && git fetch origin claude/project-thread-abylb1 && git checkout -B playtest FETCH_HEAD && npm install && npm run slice:serve   2) Open http://127.0.0.1:8140/?playtest in your browser. 3) Walk out the gap in the east fence, take the fight, choose Earth at the grounding choice until the spirit calls you, and in the spirit fight do NOT use the Fire stance (Fire feeds the earth spirit). Make the offering in the ring. 4) Walk into the farmhouse door and choose Sleep: the day's page shows what the referee wrote. 5) In the morning Mara stands by the east fence gap. Walk next to her and press Space: Listen first, Bring something, pick a card, read the chances, Roll. 6) Press the Logbook button under the resources line. If you want the comparison, open http://127.0.0.1:8140/?referee=off and do the same: nothing is written and Mara never comes. Press Ctrl+C in Terminal when done."
+  },
+  {
+   "id": "cloth-postmortem-read",
+   "at": "2026-10-21T22:20:39.539Z",
+   "what": "ticked",
+   "do": "Read the cloth postmortem you asked for on round 8: what nine rounds of the J5 robe taught us about the physics we want (weight first, the legs second, no shake), the five mistakes that cost most of the rounds, eight remediation strategies from games and film compared, and a recommended order. The recommendation: stop tuning the round 9 cloth; after your round 9 look, put the robe in the cave and measure it on your phone, then rebuild cloth.js on XPBD with painted per-point limits (the Unreal Chaos model), and bake the walk for every figure but yours. Nothing waits on this step; the plan stands unless you change it. Under this step, note 'ok' or what to change."
+  },
+  {
+   "id": "j5-panels-look-12",
+   "at": "2026-10-21T22:22:20.392Z",
+   "what": "file note",
+   "file": "sleeve-page",
+   "title": "Springs against cloth panels, sleeves",
+   "note": "still quite bad. we're missing the mark on this really bad and we should take a step back to examine it. the biggest issue is that the sleeves aren't operating as one piece The hand is moving through them and there's werid strings that don't make it look like a sleeve at all",
+   "do": "Look at the sleeves re-cut into panels (your pick on cd-sleeve-open: 'Re-cut into panels'), from your note that the cuffs moved \"like solid objects and not clothes\". Below the forearm each sleeve is now a front and a back panel of real cloth, like the skirt, so the cuff swings and settles on its own. The sleeve now covers the forearm down to the wrist, and the cuff no longer shakes (8 mm, under the 12 mm line; it was 14). Open the page in this step's files below and start with the slow-motion clip: round 11 (springs) on the left, the new panels on the right, walking from the side at a third of the speed, then stopping. The page also has the full-speed clip and six frames side by side. Under this step, note 'yes', or what still looks solid."
+  },
+  {
+   "id": "j5-panels-look-12",
+   "at": "2026-10-21T22:22:24.040Z",
+   "what": "ticked",
+   "do": "Look at the sleeves re-cut into panels (your pick on cd-sleeve-open: 'Re-cut into panels'), from your note that the cuffs moved \"like solid objects and not clothes\". Below the forearm each sleeve is now a front and a back panel of real cloth, like the skirt, so the cuff swings and settles on its own. The sleeve now covers the forearm down to the wrist, and the cuff no longer shakes (8 mm, under the 12 mm line; it was 14). Open the page in this step's files below and start with the slow-motion clip: round 11 (springs) on the left, the new panels on the right, walking from the side at a third of the speed, then stopping. The page also has the full-speed clip and six frames side by side. Under this step, note 'yes', or what still looks solid."
+  },
+  {
+   "id": "book-shipping-2a",
+   "at": "2026-10-21T22:22:54.023Z",
+   "what": "note",
+   "note": "Go ahead and give me prompt to put into Claude Design so I Can oneshot it",
+   "do": "Make a high-resolution book jacket in Claude Design."
+  },
+  {
+   "id": "coaching-pipeline-04",
+   "at": "2026-10-21T22:28:36.872Z",
+   "what": "discarded",
+   "until": "2026-10-24T22:28:36.872Z",
+   "vibeulon": "book-shipping-2--mvinn70h",
+   "do": "Send the first three guest pitches: Coaches Rising and The Embodiment Podcast this week, and Buddhist Geeks to Vince after his recording on 16 October. Each pitch is in the show's row on the Outreach tab, under Guesting. Fill or delete the bracketed lines, send it, then set the row to Pitched."
+  },
+  {
+   "id": "artist-corps-anchor-01",
+   "at": "2026-10-21T22:29:07.895Z",
+   "what": "note",
+   "note": "Honestly it makes the most sense to offer this to Mentor$Chip OR to the Mastering the Game of Allyship Nonprofit",
+   "do": "Name one non-profit from your network for the artist corps' first engagement (your pick on q-ac-first-anchor: 'Warm start in your network'). Pick one that needs creative work in the next six months (design, illustration, video, a mural, event art) and where you know someone who would answer you. In the note below write the org's name, the person you would ask, and the piece of work they might need if you know it. If you can't think of one, write 'shortlist' and Claude will make a list of up to five candidates from the people and orgs already in your work (podcast guests, the Bruised Banana residency, Portland groups named in the repos) for you to choose from."
+  },
+  {
+   "id": "artist-corps-anchor-01",
+   "at": "2026-10-21T22:29:12.444Z",
+   "what": "ticked",
+   "do": "Name one non-profit from your network for the artist corps' first engagement (your pick on q-ac-first-anchor: 'Warm start in your network'). Pick one that needs creative work in the next six months (design, illustration, video, a mural, event art) and where you know someone who would answer you. In the note below write the org's name, the person you would ask, and the piece of work they might need if you know it. If you can't think of one, write 'shortlist' and Claude will make a list of up to five candidates from the people and orgs already in your work (podcast guests, the Bruised Banana residency, Portland groups named in the repos) for you to choose from."
+  },
+  {
+   "id": "meta-publishing-setup-01",
+   "at": "2026-10-21T22:29:28.577Z",
+   "what": "ticked",
+   "do": "Create a Meta developer app for publishing the show's posts."
+  },
+  {
+   "id": "meta-publishing-setup-02",
+   "at": "2026-10-21T22:30:07.194Z",
+   "what": "ticked",
+   "do": "Make a never-expiring token for the app through a system user, and copy it."
+  },
+  {
+   "id": "book-shipping-2a",
+   "at": "2026-10-21T22:30:56.440Z",
+   "what": "back to AI",
+   "note": "we need a prompt to put into Claude design. We already have a book jacket, we just need to make sure it's high resolution version and that we do whatever we have to do to make it that way",
+   "automate": false,
+   "do": "Make a high-resolution book jacket in Claude Design."
+  }
+ ],
+ "blockers": [
+  "council/blockers/coaching-pipeline-04--mviohnya.json"
+ ],
+ "needs_work": [
+  "steps/virtual-launch-restart-09: note \"I don't feel like I'm good enough to do a Virtual Event. I don't feel as though I'm worthy of bringing people in. I feel insignificant and like I wont belong amongst other people doing work like this\"",
+  "steps/slice-referee-playtest-01: note \"We need something that I can test with one click without having to run terminal processes\"",
+  "steps/slice-referee-playtest-01: back to AI: \"This needs to be someting we can test without running terminal thing. Create a preview of it for me that I can click through\"",
+  "steps/j5-panels-look-12: notes on \"Springs against cloth panels, sleeves\": \"still quite bad. we're missing the mark on this really bad and we should take a step back to examine it. the biggest issue is that the sleeves aren't operating as one piece The hand is moving through them and there's werid strings that don't make it look like a sleeve at all\"",
+  "steps/book-shipping-2a: note \"Go ahead and give me prompt to put into Claude Design so I Can oneshot it\"",
+  "steps/artist-corps-anchor-01: note \"Honestly it makes the most sense to offer this to Mentor$Chip OR to the Mastering the Game of Allyship Nonprofit\"",
+  "steps/book-shipping-2a: back to AI: \"we need a prompt to put into Claude design. We already have a book jacket, we just need to make sure it's high resolution version and that we do whatever we have to do to make it that way\"",
+  "blockers/coaching-pipeline-04--mviohnya: Send the first three guest pitches: Coaches Rising and The Embodiment Podcast this week, and Buddhist Geeks to Vince after his recording on 16 October. Each pitch is in the show's row on the Outreach tab, under Guesting. Fill or delete the bracketed lines, send it, then set the row to Pitched. (protecting people from me being a fraud., Stuck Stew; do it now: \"The smallest move is approving the drafts of the guest pitches with the added note that we really want to make sure and make clear the alignment between their work and mine. Right now the pitches are involving doing work with people on air and really I want to have cool conversations about aligned topics.\", charge 7 to 4)"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
