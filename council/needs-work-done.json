@@ -221,6 +221,11 @@
    "by": "Claude",
    "ref": "spirit care round 2: council/spirit-care/sim.py, rows council/callsheets/rows/spirit-care-offers-2026-10-20.json",
    "at": "2026-10-20T22:40:00Z"
+  },
+  "2026-10-21-pull-011653#questions/jev-asset-additions": {
+   "by": "Claude",
+   "ref": "council/callsheets/jev-asset.md",
+   "at": "2026-10-21T01:25:00Z"
   }
  }
 }
