@@ -14,5 +14,17 @@
   way: he would have to enjoy the work and feel connected to meaning, and a virtual event on Allyship does not spark joy
   now. Read it as a signal to keep the online way in small (a recording), not a second event.
 
+- 2026-10-21 22:36: all nine steps ticked. Step 09 (reservations): "I don't feel like I'm good enough to do a Virtual
+  Event. I don't feel as though I'm worthy of bringing people in. I feel insignificant and like I wont belong amongst
+  other people doing work like this." Step 06 (life now) stayed blank and is treated as skipped. All answers are on the
+  `seattle` row. Next move: venue asks for two or three Seattle rooms as Outreach drafts, and one named co-holder for
+  the night, since the reservation is about belonging.
+
+- 2026-10-21 22:55: Wendell asked to fold the Event Pipeline into the board ("steps in there haven't made it to the
+  council"). Pipeline rows with a next move and no board step got lists and steps: `seattle-launch` (co-holder,
+  rooms), `st-johns-dance` (settle the November date), `book-tour-unpack` (question 1 of 6). Rows already carried by
+  board lists: proof-edit (`book-shipping`), ep-02 to ep-05 and podcast (`podcast-*`, `guest-releases`). Portland and
+  Tacoma are queued to the Seattle debrief on 11-13. The daily compost pass step 4 keeps this in step.
+
 ## Waiting on
-Wendell: step 06 (life now) note and step 09 (reservations) note; then the venue asks for Seattle.
+Wendell: his Send on the Seattle venue-ask drafts and the name of a co-holder (not yet drafted).
