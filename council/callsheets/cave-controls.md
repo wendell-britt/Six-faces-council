@@ -39,3 +39,24 @@ input changes clear of their card and caption code, or build on #398 if the elde
 cheapest first: a Playwright touch script that checks tap vs drag, two fingers at once, and the camera distance near a
 wall, before any video. Reply with a one-click preview link that opens in the cave (skip-ahead params to the elder
 spot), on the Vercel preview of the pull request. End with what was not checked (real phone feel).
+
+## 2026-10-21: round 1 built (bars-engine #411, draft, CI green)
+
+Preview at the elder: https://bars-engine-git-claude-projec-9d09c6-wendells-projects-9c1b16dc.vercel.app/ontology-game/cave?go=elder
+(`?go=cave`, `?go=home`, `&at=<place>` also work). All five positions are in `cave.js`; `content/ontology-game/cave/controls-probe.mjs`
+reruns the touch checks in a few minutes (11 of 11 pass). The camera ray marches the tunnel's own `contain()`; camera-controls
+was not probed. cave-test.mjs on main: 502 pass, 3 fail (camera inside while walking, 472 of 488; the hall check "camera comes
+round behind the figure" and its follow-up). The branch's full run was cut short by the handoff.
+
+Ruling, Wendell, 2026-10-21, on the hall check (a held diagonal leaves the figure about 45° off the camera's back): "Ah yes I
+see the problem. The player should face in the direction of the stick".
+
+## Brief, 2026-10-21 02:30 UTC: controls round 1b (fresh Opus bars-engine thread, owns #411, branch claude/project-thread-43i8fm)
+
+1. Build the ruling on #411: the figure faces the way the stick points (as the camera saw it when the thumb went down), not the
+   way it slid along a wall; in the hall and the centre the camera comes round behind that facing. Read home base's
+   `R.stickFrame` (19 October) first; a frozen frame in the hall tried in round 1 flipped the camera half round on the ring
+   (`wk.dir` flips when `along` goes negative), so the ring needs its own handling. Make the hall check pass without loosening it.
+2. Run `controls-probe.mjs`, then the full `cave-test.mjs` in the background (about 30 minutes under swiftshader; deps:
+   typescript@5, playwright, three@0.128.0 symlinked as node_modules), and compare with main's 502/3.
+3. Reply with the `?go=` preview link, mark #411 ready, and say what was not checked (real phone feel).
