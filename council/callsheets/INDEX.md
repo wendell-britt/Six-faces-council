@@ -50,6 +50,7 @@ profile its threads load (docs/ontology-in-flows.md).
 - [board-plumbing](board-plumbing.md), 2026-10-20: /board/council was empty because the artifact store never reached Postgres. Empty-store guard merged (council #321); import route bars-engine #405; the import waits on board question `bi-import-key` (brief at the end of the sheet). Then step 5: point sessions' step and contact writes at bars-engine.
 - [friendcraft](friendcraft.md), 2026-10-06: redesign pass, Part 0 interview, outline, each its own thread.
 - [steps-hand](steps-hand.md), 2026-10-20: Your steps is a five-card hand with a shuffle; inner work mints a vibeulon, a vibeulon pays a discard, the card comes back on the day ladder (hd-* positions). Left: bars-engine wallet (hd-wallet), a look on a real phone.
+- [email-pipeline](email-pipeline.md), 2026-10-21: drafts on a contact, Send on the board is permission to send (em-* positions); #351 builds the card and board/email_pipeline.py. Next: the test email to himself once #351 merges and the board is republished.
 
 ## Closed (no sheet)
 - 2026-10-05, from the standing daily session: daily stopped 2026-10-08 (`daily-stopped`), routine switched off.
