@@ -30655,6 +30655,19 @@
      "architect"
     ],
     "pass": "chapter1-calrunia1"
+   },
+   "gs-care-is-the-cost": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T16:53:03.711Z",
+    "record": "council/ledger/2026-10-21-pull-165303.json (six-faces-council)",
+    "steer": "Summoning has a price",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "grow-or-summon1"
    }
   },
   "questions": {
