@@ -1,0 +1,21 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T17:17:19.327Z",
+ "answers": {
+  "fcp-release": {
+   "kind": "question",
+   "choice": "",
+   "savedAt": "2026-10-21T17:17:19.327Z",
+   "steer": "yeah honestly I think the release forms is a bit much. I don't really care about it and I haven't signed any for the podcasts that I've been a part of. ",
+   "via": "battle:fr-friendcraft-podcast"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/fcp-release: Steer only (steer: \"yeah honestly I think the release forms is a bit much. I don't really care about it and I haven't signed any for the podcasts that I've been a part of.\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

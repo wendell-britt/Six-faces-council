@@ -33968,6 +33968,18 @@
      "diplomat"
     ],
     "pass": "fcp-launch"
+   },
+   "fcp-release": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:17:19.327Z",
+    "record": "council/ledger/2026-10-21-pull-171719.json (six-faces-council)",
+    "steer": "yeah honestly I think the release forms is a bit much. I don't really care about it and I haven't signed any for the podcasts that I've been a part of.",
+    "faces": [
+     "regent"
+    ],
+    "pass": "fcp-launch"
    }
   },
   "causes": {
