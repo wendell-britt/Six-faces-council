@@ -30505,6 +30505,79 @@
      "regent"
     ],
     "pass": "calrunia-world1"
+   },
+   "c1w-link-handoff": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T02:01:16.514Z",
+    "record": "council/ledger/2026-10-21-pull-020216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "chapter1-calrunia1"
+   },
+   "c1w-renewable-vibeulon": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T02:01:25.495Z",
+    "record": "council/ledger/2026-10-21-pull-020216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "chapter1-calrunia1"
+   },
+   "c1w-beats-are-places": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T02:01:40.101Z",
+    "record": "council/ledger/2026-10-21-pull-020216.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "chapter1-calrunia1"
+   },
+   "c1w-arrival-page": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T02:02:00.298Z",
+    "record": "council/ledger/2026-10-21-pull-020216.json (six-faces-council)",
+    "steer": "I’d want a 3d ship as a first pass",
+    "faces": [
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "chapter1-calrunia1"
+   },
+   "c1w-video-after-route": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T02:02:09.832Z",
+    "record": "council/ledger/2026-10-21-pull-020216.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "chapter1-calrunia1"
+   },
+   "c1w-first-route": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T02:02:16.540Z",
+    "record": "council/ledger/2026-10-21-pull-020216.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "chapter1-calrunia1"
    }
   },
   "questions": {
@@ -33250,6 +33323,18 @@
      "shaman"
     ],
     "pass": "calrunia-world1"
+   },
+   "c1w-taste-depth": {
+    "decision": "inside",
+    "label": "Inside the beats",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T02:01:07.082Z",
+    "record": "council/ledger/2026-10-21-pull-020216.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "chapter1-calrunia1"
    }
   },
   "causes": {
