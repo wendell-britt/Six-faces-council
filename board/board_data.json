@@ -11723,6 +11723,16 @@
    "auto": true,
    "pos": "First build: the well scene in Sprout, in place of today's step-by-step creator, opening the Chapter 1 page, with a preview link that opens on the scene. It uses the traveler sprites Sprout already draws, so no art round. Second: the looking-glass aboard the ship in 3D, a CharacterStudio refit reading the same choices. The look field in the passport is written once the ship reads it. This replaces cr-first-build and stands unless you flip it.",
    "why": "c1w-first-route (Chapter 1 opens in Sprout), hx-looks-gate (no new art round), the Kickstarter gate (chapter1-demo.md). Source: council/callsheets/calrunia-creator.md"
+  },
+  {
+   "id": "fcp-consent-on-record",
+   "faces": [
+    "regent"
+   ],
+   "pass": "fcp-launch",
+   "auto": true,
+   "pos": "Friendcraft guests sign no release form, as you ruled. At the end of each episode you ask on the record whether there is anything they want out, and their logged yes is the release on file that the book's interview rule asks for. Before a quote enters the book, the guest sees it in context. This stands unless you flip it.",
+   "why": "Your steer on fcp-release, 2026-10-21: \"I think the release forms is a bit much\". friendcraft-manuacript CLAUDE.md still says interview material is quotable only under the release on file, so this says what counts as that release. Source: podcast/CONSENT_AND_RELEASE.md"
   }
  ],
  "questions": [
@@ -35658,6 +35668,13 @@
       "fcp-pipeline",
       "fcp-host",
       "fcp-cover-drafts"
+     ]
+    },
+    {
+     "n": 2,
+     "questions": [],
+     "positions": [
+      "fcp-consent-on-record"
      ]
     }
    ]
