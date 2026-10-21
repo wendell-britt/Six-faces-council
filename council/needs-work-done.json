@@ -241,6 +241,21 @@
    "by": "Claude",
    "ref": "pass chapter1-calrunia1, rows council/callsheets/rows/chapter1-calrunia1-2026-10-21.json (c1w-* positions, question c1w-taste-depth)",
    "at": "2026-10-21T02:20:00Z"
+  },
+  "2026-10-21-pull-171630#questions/cr-look-by-place": {
+   "by": "Claude",
+   "ref": "pass calrunia-creator2: council/callsheets/calrunia-creator.md, rows council/callsheets/rows/calrunia-creator2-2026-10-21.json",
+   "at": "2026-10-21T17:55:00Z"
+  },
+  "2026-10-21-pull-171630#positions/cr-build-own": {
+   "by": "Claude",
+   "ref": "pass calrunia-creator2: council/callsheets/calrunia-creator.md, rows council/callsheets/rows/calrunia-creator2-2026-10-21.json",
+   "at": "2026-10-21T17:55:00Z"
+  },
+  "2026-10-21-pull-171630#positions/cr-first-build": {
+   "by": "Claude",
+   "ref": "pass calrunia-creator2: council/callsheets/calrunia-creator.md, rows council/callsheets/rows/calrunia-creator2-2026-10-21.json",
+   "at": "2026-10-21T17:55:00Z"
   }
  }
 }
