@@ -129,7 +129,7 @@ def _judge(collection, doc_id, doc, data, store, pull, flagged):
         if doc.get("savedAt", "") <= (data.get("morning") or {}).get("gathered_at", ""):
             return "recorded", f"morning gathered at {(data.get('morning') or {}).get('gathered_at')}"
     elif collection == "ttv":
-        if doc.get("status") != "bars-engine" or (data.get("morning") or {}).get("sealed") == doc_id:
+        if doc.get("status") != "bars-engine" or doc_id <= ((data.get("morning") or {}).get("sealed") or ""):
             return "nothing-to-record", "no Tap the Vein left to fetch for this date"
     return "unaccounted", "pull.py neither recorded it nor passed over it"
 
@@ -153,7 +153,8 @@ def account(pending, store, data, pull, skip=()):
         flagged["morning/freewrite"] = "for a session: read once for BARs (council/ttv_bars.py), then delete"
     for f in sorted((store / "ttv").glob("*.json")) if (store / "ttv").is_dir() else []:
         doc = json.loads(f.read_text(encoding="utf-8"))
-        if doc.get("status") == "bars-engine" and (data.get("morning") or {}).get("sealed") != f.stem:
+        sealed = (data.get("morning") or {}).get("sealed") or ""
+        if doc.get("status") == "bars-engine" and sealed != f.stem and f.stem > sealed:
             flagged[f"ttv/{f.stem}"] = f"for a session: fetch the Tap the Vein menu (council/morning.py --fetch {f.stem})"
     newest = {}
     for s in pending:
