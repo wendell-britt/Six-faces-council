@@ -30958,6 +30958,212 @@
      "challenger"
     ],
     "pass": "grow-or-summon1"
+   },
+   "gs-two-acts": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:10:47.339Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "grow-or-summon1"
+   },
+   "gs-harvest-is-qi": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:10:53.208Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "grow-or-summon1"
+   },
+   "gs-door-gas": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:10:58.874Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "grow-or-summon1"
+   },
+   "gs-same-charge-grows": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:11:02.455Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "grow-or-summon1"
+   },
+   "gs-show-the-flow": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:11:04.220Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "grow-or-summon1"
+   },
+   "uc-keep-unchosen": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:11:11.253Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "unchosen1"
+   },
+   "uc-not-chosen-view": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:11:15.938Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "unchosen1"
+   },
+   "uc-pattern-returns": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:11:54.837Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "steer": "And we should intelligently pitch a new action item based on the fact it's coming back. Then compost the old one. this way these unchosen fragments get better and more aligned over time",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "unchosen1"
+   },
+   "uc-no-duty": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:12:02.423Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "unchosen1"
+   },
+   "uc-council-misses": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:12:10.201Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "unchosen1"
+   },
+   "uc-links-by-hand": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:12:17.369Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "unchosen1"
+   },
+   "uc-first-build": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:12:20.718Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "unchosen1"
+   },
+   "cr-one-look": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:12:32.635Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "calrunia-creator1"
+   },
+   "cr-build-own": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:14:23.250Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "steer": "I'd need to know more about Ready Player Me to weigh in on this. I think it's worth another pass at what kinds of character creators are already out there that are open source and could fit our needs. Even if we don't sue them I'm certain there are aspects of these projects that we can use and refit for our purposes so we aren't building from scratch. We need to be using the design ontology when dealing with this because the UI that have been made on our v1 of the stuff we've been working on including the passport hasn't been very good",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "calrunia-creator1"
+   },
+   "cr-first-menu": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:14:37.636Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "calrunia-creator1"
+   },
+   "cr-first-build": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:15:35.817Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "steer": "I think this look field in the passport is too small a first build. I think we can make something more robust that feels like a gamified experience. You rely too much on building things in tools and dashboards and we need to get better at thinking and designing from the POV of the player",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "calrunia-creator1"
+   },
+   "c1w-blank-card": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:15:46.768Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect"
+    ],
+    "pass": "chapter1-calrunia1"
    }
   },
   "questions": {
@@ -33715,6 +33921,65 @@
      "architect"
     ],
     "pass": "chapter1-calrunia1"
+   },
+   "uc-who-reads": {
+    "decision": "weekly",
+    "label": "Once a week, in place",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:10:18.804Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "unchosen1"
+   },
+   "cr-look-by-place": {
+    "decision": "earned",
+    "label": "Traveler first, robe earned",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:10:43.340Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "calrunia-creator1"
+   },
+   "fcp-episode-shape": {
+    "decision": "two-kinds",
+    "label": "Two kinds of episode, alternating",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:16:06.951Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "fcp-launch"
+   },
+   "fcp-first-guests": {
+    "decision": "crew-first",
+    "label": "Start with the crew in THE_CREW.md",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:16:30.387Z",
+    "record": "council/ledger/2026-10-21-pull-171630.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "fcp-launch"
+   },
+   "fcp-release": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:17:19.327Z",
+    "record": "council/ledger/2026-10-21-pull-171719.json (six-faces-council)",
+    "steer": "yeah honestly I think the release forms is a bit much. I don't really care about it and I haven't signed any for the podcasts that I've been a part of.",
+    "faces": [
+     "regent"
+    ],
+    "pass": "fcp-launch"
    }
   },
   "causes": {
