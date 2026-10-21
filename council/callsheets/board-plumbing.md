@@ -119,3 +119,17 @@ On his answer (fresh Sonnet thread, owns bars-engine #405 if still open):
   JSON file in /mnt/project-files/board-import/ and attach it.
 - Still open after either: board-home step 5, pointing sessions' step and contact writes at bars-engine, or the two
   stores split again.
+
+## Brief, 2026-10-21 00:10 UTC: board-home step 5, sessions write to both stores (thread "Steps write to bars-engine board")
+
+How the two stay in sync until the artifact retires: sessions write to both. ArtifactData as before, plus
+`python3 board/store_write.py push <docs.json>` to bars-engine `POST /api/board/session-writes` (bars-engine PR), which
+takes only lists, steps, contacts and shows, merges an update onto the latest document (so a rewritten step keeps his
+tick from /board/council), skips no-op writes and is born recorded. Auth is COUNCIL_MENU_TOKEN, which the proxy
+already injects, so it starts working the moment the morning-menu token is fixed (thread "Morning menu token steps").
+`store_write.py diff <export dir>` compares hashes only (contents never leave bars-engine) and exits 1 on drift;
+`--push-missing` sends what only the artifact has and never overwrites a document on both sides.
+scout: rung 2, we have it (bars-engine board save, applyWrite and importDocs).
+Left: (a) once the token answers 200, export lists/steps/contacts/shows with ArtifactData and run `diff` to see drift
+since the 10-20 import, then `--push-missing`; (b) his saves on /board/council never reach the artifact, so the
+board-pull Action's council pass (callsheet above) is still needed before he ticks steps there; (c) step 6.
