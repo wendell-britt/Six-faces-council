@@ -11232,6 +11232,92 @@
    "auto": true,
    "pos": "Procedural worlds (rendered only as far as you travel) go to the ship's world on the inner-vessel callsheet, and partner dance on Root goes to the Root callsheet. Neither is built from the Between now. This stands unless you flip it.",
    "why": "Pass between-ari1 on Ari's playtest notes: council/passes/6FACE_PASS_between-ari1_2026-10-21.md"
+  },
+  {
+   "id": "cw-one-world",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Calrunia is the one world, and every game we build is a place in it: the ship, Sprout's settlement, the cave, Root, the Between, and later one land per element. Each place keeps its own engine and repo; what they share is the registry calrunia/world.yaml and the passport (mh-calrunia-hall, council #302). This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-passport",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "One player record, the passport, crosses places and nothing else does: you, your spirits with their care state, your hand of cards and BARs, qi, vibeulons, embers and the places you have reached. It lives in bars-engine Postgres behind sign-in; a guest keeps it in the browser until signing in claims it. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-qi-meter-scales",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Qi is a meter that practice fills, shown as the light and weather of where you are, and condensed qi is the vibeulon, spent like the scales in Cradle. The vibeulon is the one currency every place honours; gold stays friendcraft's, minted by grounding. This replaces \"never a meter or a currency\" in ba-qi-is-light, per your steer on it. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-between-two-ships",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "The Between is a place two ships make: it exists only between two passports, and each person's spirits visit it and stay their owner's (rc-spirits-visit, ba-barn-in-ship). This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-root-training-ground",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Root is Calrunia's training ground for practice with another body: sparring, push hands and partner dance (your steer on ba-formation-card). Practice there raises qi and grants no rank. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-cave-inner-land",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "The cave is the land inside you, where your daemons keep their chambers and the wild spirits of their families are settled (cave-levels, the daemon rulings). This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-emergent-map",
+   "faces": [
+    "architect"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "A place appears on your map once it is built and you have entered it, and a Between appears when two people make one. That is how the world emerges: from play and from what ships. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "cw-chapter1-first",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "calrunia-world1",
+   "auto": true,
+   "pos": "Until Chapter 1 ships, world work is the registry and the passport only. The engine question stays deferred (council #302) and hx-looks-gate applies to each place on its own, so the world is never a way round a look you owe. This stands unless you flip it.",
+   "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
   }
  ],
  "questions": [
@@ -17915,6 +18001,34 @@
      "v": "no",
      "label": "B. No, I look first",
      "c": "Round 4 waits until you tick the hollow and lantern steps on your phone. The formation card still goes to Ari now. Regent and Challenger back this."
+    }
+   ]
+  },
+  {
+   "id": "cw-front-door",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "calrunia-world1",
+   "q": "Where does a player step into Calrunia each time they play?",
+   "why_you": "The record points two ways. Your inner-vessel rulings make the ship the hub that places are reached from; mh-calrunia-hall makes Calrunia Sprout's world, and Chapter 1 opens in Sprout. Which one is the daily front door is your preference, and it decides the registry's root and the first screen after the demo.",
+   "not_before": "The places were separate strands until your steer on ba-worlds-stored at 01:31 UTC on 2026-10-21.",
+   "options": [
+    {
+     "v": "ship",
+     "label": "A. The ship (recommended)",
+     "c": "Each session opens aboard your ship, with your spirits in the barn; Sprout's settlement, the cave, Root and any Between are reached from it. Chapter 1 still opens in Sprout once, as the pull, and ends with you aboard."
+    },
+    {
+     "v": "sprout",
+     "label": "B. Sprout's settlement",
+     "c": "Each session opens on Sprout's map; the ship is docked there and the cave, Root and the Between are entered from the settlement. Sprout's 2D map becomes the world map."
+    },
+    {
+     "v": "last",
+     "label": "C. Wherever you last were",
+     "c": "Each session resumes in the last place you left, and the ship is how you move between places. Needs the passport to store your last place; no fixed home screen."
     }
    ]
   }
