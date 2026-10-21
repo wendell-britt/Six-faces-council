@@ -11318,6 +11318,72 @@
    "auto": true,
    "pos": "Until Chapter 1 ships, world work is the registry and the passport only. The engine question stays deferred (council #302) and hx-looks-gate applies to each place on its own, so the world is never a way round a look you owe. This stands unless you flip it.",
    "why": "Pass calrunia-world1 on one Calrunian world: council/passes/6FACE_PASS_calrunia-world1_2026-10-21.md"
+  },
+  {
+   "id": "c1w-first-route",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "chapter1-calrunia1",
+   "auto": true,
+   "pos": "Chapter 1 is your player's first road into Calrunia. It opens once in Sprout's settlement and ends aboard their own ship, where the spirit they woke in the hollow waits in the barn. Your pick of the ship as the front door (cw-front-door A) already said Chapter 1 ends aboard. This stands unless you flip it.",
+   "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
+  },
+  {
+   "id": "c1w-link-handoff",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "chapter1-calrunia1",
+   "auto": true,
+   "pos": "When Chapter 1 ends, the page passes what the player did (cards played, stance, Pip's line, their spirit, the blank card) to bars-engine inside the link itself, and bars-engine writes it into their guest passport. No sign-in, no server, no AI, and it works from sprout's host. This stands unless you flip it.",
+   "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
+  },
+  {
+   "id": "c1w-renewable-vibeulon",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "chapter1-calrunia1",
+   "auto": true,
+   "pos": "The book's renewable token, the one made by burning a feeling through at Yun's gate (A3), is the vibeulon. A3 gives the player their first vibeulon, and the sky glow on the hollow's far wall is the first time they see the qi meter. The Sprout page keeps the book's words (mana, tokens); the world's words appear aboard. This stands unless you flip it.",
+   "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
+  },
+  {
+   "id": "c1w-beats-are-places",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "chapter1-calrunia1",
+   "auto": true,
+   "pos": "Each Chapter 1 beat previews the practice of one Calrunian place: Tam's farm is Sprout, Yun's dojo is Root's training ground, Pip's warden runs on the trust rules the Between uses, and the hollow is the ship's WAVE room. calrunia/world.yaml gets a chapter1 route that says so. It needs no new engine. This stands unless you flip it.",
+   "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
+  },
+  {
+   "id": "c1w-arrival-page",
+   "faces": [
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "chapter1-calrunia1",
+   "auto": true,
+   "pos": "The ship is not on main yet (bars-engine #399 waits on your note on the dock), so Chapter 1 first lands on a plain 2D arrival page showing the spirit, the hand, the vibeulon and the blank card. The ship takes that page over when #399 merges. This stands unless you flip it.",
+   "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
+  },
+  {
+   "id": "c1w-video-after-route",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "chapter1-calrunia1",
+   "auto": true,
+   "pos": "The Kickstarter video records the whole route, Sprout through the hollow to the ship, once it plays end to end, rather than the current page. The video still waits on your go. This stands unless you flip it.",
+   "why": "Pass chapter1-calrunia1 on Chapter 1 inside Calrunia: council/passes/6FACE_PASS_chapter1-calrunia1_2026-10-21.md"
   }
  ],
  "questions": [
@@ -18029,6 +18095,34 @@
      "v": "last",
      "label": "C. Wherever you last were",
      "c": "Each session resumes in the last place you left, and the ship is how you move between places. Needs the passport to store your last place; no fixed home screen."
+    }
+   ]
+  },
+  {
+   "id": "c1w-taste-depth",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "chapter1-calrunia1",
+   "q": "How much of the practice should a first-time player try before Chapter 1 ends?",
+   "why_you": "Your steer asks to lean into the book's mechanics so players taste the practice; the Kickstarter launches on this demo, so every addition delays it. Where to strike that trade is your preference, and it decides what the next two build threads add. Chapter 1 already uses the deck as a hand, the six faces as stances, the charge, the daemon families, push hands, the trust rules and the oath.",
+   "not_before": "You overruled cw-chapter1-first at 01:48 UTC on 2026-10-21; until then the world waited behind the demo.",
+   "options": [
+    {
+     "v": "inside",
+     "label": "A. Inside the beats (recommended)",
+     "c": "No new beats. Each beat names its place, A3 earns the first vibeulon, and the demo ends aboard with the spirit asking about the player's blank card tomorrow, so the practice is the next visit. Two short build threads; the video follows."
+    },
+    {
+     "v": "epilogue",
+     "label": "B. A short epilogue aboard",
+     "c": "After the hollow, three one-minute tries on the ship: care for your spirit (Clean Up), push hands with Yun at Root, and invite a friend into a Between. Roughly one more build round, and a longer video."
+    },
+    {
+     "v": "every-move",
+     "label": "C. One card from every move",
+     "c": "The hand deals one card each of Wake, Open, Clean, Grow and Show Up at fitting beats. Changes the card map and needs the guessing test rerun; the Challenger dissents until a second player has settled A6 and A8."
     }
    ]
   }
