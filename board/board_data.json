@@ -31534,6 +31534,53 @@
      "regent"
     ],
     "pass": "calrunia-creator2"
+   },
+   "gw-form-by-step": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:50:47.346Z",
+    "record": "council/ledger/2026-10-21-pull-175259.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "wave-form1"
+   },
+   "gw-unkept-vibeulon": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:50:57.079Z",
+    "record": "council/ledger/2026-10-21-pull-175259.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "wave-form1"
+   },
+   "gw-summon-price": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:51:10.962Z",
+    "record": "council/ledger/2026-10-21-pull-175259.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "wave-form1"
+   },
+   "fcp-consent-on-record": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:51:20.620Z",
+    "record": "council/ledger/2026-10-21-pull-175259.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "fcp-launch"
    }
   },
   "questions": {
@@ -34362,6 +34409,18 @@
      "diplomat"
     ],
     "pass": "calrunia-creator2"
+   },
+   "fcp-cover-pick": {
+    "decision": "a-teal-hex",
+    "label": "A, Teal hex",
+    "recorded": "2026-10-21",
+    "saved_at": "2026-10-21T17:51:49.596Z",
+    "record": "council/ledger/2026-10-21-pull-175259.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "fcp-launch"
    }
   },
   "causes": {
@@ -35753,7 +35812,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-20T21:56:00.000Z",
+ "steps_recorded_through": "2026-10-21T17:52:59.273Z",
  "morning": {
   "date": "2026-10-21",
   "gathered_at": "2026-10-21T17:04:52Z",
