@@ -2,6 +2,8 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
+- The cloud VM can now run a job shaped like a J5 round, not only single probes: see the second 2026-10-21 section at
+the end of this sheet for the composed garment job and the checkout it still needs (bars-engine).
 - Dials first (council pass 2026-10-18, "How to learn math for 3D game design without losing your mind", https://claude.ai/code/artifact/ddb0797e-cfe1-4b5e-a178-f3c9459b41ff): the next J5 round exposes Weight (mass and stiffness), Settle (damping) and Reach (how far a panel strays from the leg) as named 0-1 dials on its proof page, saved beside the asset in the `warp_numbers` shape, so Wendell's notes come back as dial moves. One dial, one idea; the model proposes values, his look locks them.
 
 J5 (clothing) is built: bars-engine draft #315. `content/ontology-game/cave/garments.py --all [--sheet]` cuts a robe
@@ -196,3 +198,25 @@ its job.
 EEVEE is the loss: with no GPU, Mesa's software EGL answers `EGL_BAD_PARAMETER` and the process segfaults, so Cycles is
 the only engine here. Animation stays out of reach at 41 s a frame, and Blenderkit's key belongs to Wendell, so the library stays elsewhere.
 docs/blender-here.md is the report; the probe is the check to rerun after any restore.
+
+## Second session, same VM (Freebuff, 2026-10-21): the composed job
+
+A fresh session starts with no Blender, so the first measurement was the reinstall: `setup` took 1m22s and put
+1.2 GB under the home folder, most of it download time (45 s on the morning's faster link). `probe` then reproduced
+every number above in 40 s, including 47 skill tests passing.
+
+The probe now has a seventh step, `garment_job`, which builds the shape of a J5 round from primitives: a figure with
+a two-bone rig, three meshes auto-skinned to it (192 verts, 2 groups), a 625-vert panel pinned along its top edge,
+cloth against the body, 24 keys, then a glTF export. It runs in 0.7 s of sim, exports 95 KB, peaks at 466 MB, and no
+garment point passes through the body. The hem still moves 77 mm between keys 12 and 24, so a real garment needs a
+longer window; the machine can afford it.
+
+The step also caught its own first version lying. Read in local space, a panel rotated 90 degrees measured a clean
+pass: 0 through the body, a 0.05 m hem drop, while the screen showed a garment sliding off a figure. Through
+`matrix_world` the same scene reported 2.02 m of slide on an unpinned panel, and the pin then held it. That trap is
+written into `docs/blender-here.md` so the next session checks it before trusting a Blender number.
+
+Still out of reach: a real J5 or J4 job. It needs a bars-engine checkout, and that clone is private. The unblock is
+bars-engine read access in this account's GitHub integration, or a checkout in the VM; the files a J5 run needs are
+listed in `docs/blender-here.md`. Until then a cheap session can take look-review stills, mesh and rig work,
+cloth bakes and glTF exports from its own scripts, and the J5 rounds keep their home in bars-engine.
