@@ -1,0 +1,107 @@
+{
+ "date": "2026-10-21",
+ "kind": "board-pull",
+ "newest_save": "2026-10-21T17:52:59.273Z",
+ "answers": {
+  "gw-form-by-step": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:50:47.346Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gw-unkept-vibeulon": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:50:57.079Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "gw-summon-price": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:51:10.962Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "fcp-consent-on-record": {
+   "kind": "position",
+   "savedAt": "2026-10-21T17:51:20.620Z",
+   "status": "stands",
+   "steer": "",
+   "via": "battle:fr-friendcraft-podcast"
+  },
+  "fcp-cover-pick": {
+   "kind": "question",
+   "choice": "a-teal-hex",
+   "savedAt": "2026-10-21T17:51:49.596Z",
+   "steer": "",
+   "via": "battle:fr-friendcraft-podcast"
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "anastasia-campaign-live-01",
+   "at": "2026-10-21T17:26:21.011Z",
+   "what": "back to AI",
+   "note": "\"Hi! Hello! All of this text was written about a year ago. Very flexible. Obviously I was feeling strongly with circus analogies. \n\n\nSometimes life can feel a little out of balance\nSometimes, life feels less like a dance and more like a high-wire act. We're all juggling the demands of relationships, career, and personal health—and it's easy to feel dizzy, overwhelmed, and completely out of balance.\nBalancing Act Coaching is here to help you step off that tightrope and onto solid ground. We don't just help you manage the ebb and flow of life's obstacles; we help you master them. It's time to stop surviving the daily juggle and start confidently designing a life of sustainable balance and true fulfillment.\nExplore our services\nOur professional coaching services are here to guide you through the three-ring circus of life. We'll equip you with the skills to confidently walk the tightrope of work-life balance, manage the many juggling acts of modern living, and swing fearlessly from the trapeze of your true potential.\n\n\nConsultation\nCurious about if we’re a good fit? Have questions about what to expect? Want to know if Life Coaching is right for you? Schedule a free consultation to get your questions answered and begin the conversation!\nNo Cost\n15 - 30 minutes\nCoaching\nPersonalized coaching sessions that cater to your personal experiences. We will work as a team to help you meet your goals and find sustainability in maintaining balance in your life.\n$100 (sliding scale options available, reach out!)\n60 minutes\nBody Doubling\nWriting an email? Make a grocery list? Run an errand? Need a pep talk? Body doubling offers support for accomplishing those tasks that might be easier with someone rooting for you.\n$20 - $50\n‍15 - 60 minutes\n\n\nGet to know us\nBalancing Act Coaching began in 2025 from a belief that finding balance shouldn't feel impossible. In a world that often feels unsteady, our mission is to provide concrete strategies to help you navigate and thrive.\nAnnastasia, our founder, is not your average coach. Her philosophy is built on the intersection of skill and expression. She synthesizes professional training in Integrative Wellness Coaching with her background as an educator, and the creative, adaptive skills learned through dance and even clowning. This blend ensures that your coaching experience is not only insightful but also deeply human.\nUltimately, our singular goal is to help you cultivate lasting inner resilience. We focus on increasing your personal agency and self-efficacy, turning daily overwhelm into purposeful action and fulfillment.\n\n\n\"\n\nHere's the text from Annastasia's own website that we can use to to integrate",
+   "automate": true,
+   "do": "Read Anastasia's campaign draft in the box below, write any notes on it, then send it to her with the message in the Enter row. The message asks for six things: her yes to the story (or what to cut), her coaching rate, her booking link, where direct gifts go, the amount she is aiming for if she wants one shown, and how she spells her name in public. Her photo and Facebook post are optional. Nothing goes live until she says yes and you approve."
+  },
+  {
+   "id": "flirtcraft-socials-01",
+   "at": "2026-10-21T17:46:18.444Z",
+   "what": "ticked",
+   "do": "Make the Flirtcraft account on X, with the display name Flirtcraft Podcast. Add the avatar, header, the podcast bio and flirtcraft.app/podcast as the website, then post the first post with the cover, add the reply under it, and pin the first post. Check QC's handle before you tag it."
+  },
+  {
+   "id": "ttv-cmvicm0aj000dfikxn526y6xx",
+   "at": "2026-10-21T17:47:40.862Z",
+   "what": "back to AI",
+   "note": "We need to have the 6 game masters study how current RPG story development works and what tools are being used to this aim. We want to study how Pokemon clone, and Stardew clones are dealing with story content. Specifically we are looking to create a repeatable pipeline that the 6 game masters can use to keep pushing the story forward in alignment with asset creation",
+   "automate": false,
+   "do": "Studying RPG story tools"
+  },
+  {
+   "id": "ttv-cmviclyuf0004fikx8pdbhesx",
+   "at": "2026-10-21T17:48:15.951Z",
+   "what": "back to AI",
+   "note": "This is being worked on with Flirtcraft, but we want to make sure we have a canonical Podcast pipeline that the 6 game masters know how to use and administrate",
+   "automate": false,
+   "do": "FInish Podcast Pipeline"
+  },
+  {
+   "id": "ttv-cmvicm1ed000mfikxanan8wzn",
+   "at": "2026-10-21T17:49:31.255Z",
+   "what": "back to AI",
+   "note": "We need to research how all our various clients can write and send emails from wendell@masteringallyship.com- we need an editorial pipeline that we can use to make sure the emails are in my voice and that this can be managed through the council board and that hitting the send button on the council board gives permission to send the email",
+   "automate": false,
+   "do": "Automated Outreach Emails"
+  },
+  {
+   "id": "ttv-cmvicm2f7000vfikx347d423e",
+   "at": "2026-10-21T17:52:35.391Z",
+   "what": "back to AI",
+   "note": "we're already working on this. She's sent us the copy from her website and we want to integrate that with her campaign page in a CYOA style for people to know how to work and support her",
+   "automate": false,
+   "do": "Annastasia Campaign"
+  },
+  {
+   "id": "ttv-cmvicm46a0014fikx7f01v82r",
+   "at": "2026-10-21T17:52:59.273Z",
+   "what": "back to AI",
+   "note": "This is being worked on in claude threads",
+   "automate": false,
+   "do": "Character Creation for Calrunia"
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "questions/fcp-cover-pick: A, Teal hex",
+  "steps/anastasia-campaign-live-01: back to AI (automate): \"\"Hi! Hello! All of this text was written about a year ago. Very flexible. Obviously I was feeling strongly with circus analogies. \n\n\nSometimes life can feel a little out of balance\nSometimes, life feels less like a dance and more like a high-wire act. We're all juggling the demands of relationships, career, and personal health—and it's easy to feel dizzy, overwhelmed, and completely out of balance.\nBalancing Act Coaching is here to help you step off that tightrope and onto solid ground. We don't just help you manage the ebb and flow of life's obstacles; we help you master them. It's time to stop surviving the daily juggle and start confidently designing a life of sustainable balance and true fulfillment.\nExplore our services\nOur professional coaching services are here to guide you through the three-ring circus of life. We'll equip you with the skills to confidently walk the tightrope of work-life balance, manage the many juggling acts of modern living, and swing fearlessly from the trapeze of your true potential.\n\n\nConsultation\nCurious about if we’re a good fit? Have questions about what to expect? Want to know if Life Coaching is right for you? Schedule a free consultation to get your questions answered and begin the conversation!\nNo Cost\n15 - 30 minutes\nCoaching\nPersonalized coaching sessions that cater to your personal experiences. We will work as a team to help you meet your goals and find sustainability in maintaining balance in your life.\n$100 (sliding scale options available, reach out!)\n60 minutes\nBody Doubling\nWriting an email? Make a grocery list? Run an errand? Need a pep talk? Body doubling offers support for accomplishing those tasks that might be easier with someone rooting for you.\n$20 - $50\n‍15 - 60 minutes\n\n\nGet to know us\nBalancing Act Coaching began in 2025 from a belief that finding balance shouldn't feel impossible. In a world that often feels unsteady, our mission is to provide concrete strategies to help you navigate and thrive.\nAnnastasia, our founder, is not your average coach. Her philosophy is built on the intersection of skill and expression. She synthesizes professional training in Integrative Wellness Coaching with her background as an educator, and the creative, adaptive skills learned through dance and even clowning. This blend ensures that your coaching experience is not only insightful but also deeply human.\nUltimately, our singular goal is to help you cultivate lasting inner resilience. We focus on increasing your personal agency and self-efficacy, turning daily overwhelm into purposeful action and fulfillment.\n\n\n\"\n\nHere's the text from Annastasia's own website that we can use to to integrate\"",
+  "steps/ttv-cmvicm0aj000dfikxn526y6xx: back to AI: \"We need to have the 6 game masters study how current RPG story development works and what tools are being used to this aim. We want to study how Pokemon clone, and Stardew clones are dealing with story content. Specifically we are looking to create a repeatable pipeline that the 6 game masters can use to keep pushing the story forward in alignment with asset creation\"",
+  "steps/ttv-cmviclyuf0004fikx8pdbhesx: back to AI: \"This is being worked on with Flirtcraft, but we want to make sure we have a canonical Podcast pipeline that the 6 game masters know how to use and administrate\"",
+  "steps/ttv-cmvicm1ed000mfikxanan8wzn: back to AI: \"We need to research how all our various clients can write and send emails from wendell@masteringallyship.com- we need an editorial pipeline that we can use to make sure the emails are in my voice and that this can be managed through the council board and that hitting the send button on the council board gives permission to send the email\"",
+  "steps/ttv-cmvicm2f7000vfikx347d423e: back to AI: \"we're already working on this. She's sent us the copy from her website and we want to integrate that with her campaign page in a CYOA style for people to know how to work and support her\"",
+  "steps/ttv-cmvicm46a0014fikx7f01v82r: back to AI: \"This is being worked on in claude threads\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
