@@ -1,0 +1,20 @@
+{
+ "positions": [
+  {
+   "id": "rc-legs-durable",
+   "faces": ["architect", "regent"],
+   "pass": "robe-clipping",
+   "auto": true,
+   "pos": "Legs no longer show through the creator's robe. The body is hidden where each cut covers it, and the robe rides on thigh and shin shapes (sprout #72). You looked at the preview and said \"ok its perfect\" (2026-10-22). This is now rule 8 for every garment round, J5 included: hide what the clothes cover, drive the cloth from the body, and measure with rays. Answer page: https://claude.ai/artifact/AvPdQRkPQwNcXEKfuxewAv. This stands unless you flip it.",
+   "why": "Wendell, 2026-10-22: \"ok its perfect. We still have some work to do on the sleeves, but we're looking good.\" docs/3d-math.md rule 8 (council #375)."
+  },
+  {
+   "id": "rc-sleeve-research",
+   "faces": ["sage", "architect"],
+   "pass": "robe-clipping",
+   "auto": true,
+   "pos": "The next piece of work is a research run on how games and film render wide hanging sleeves like the J5 robe's. That covers hiding the forearm and hand inside the sleeve, sleeve bones or skinning compared with cloth, colliders against the arm, a cuff that keeps its shape, and how studios test it. It produces a short answer page and one cheap probe-first change to the creator. Any environment can pick it up from the brief in council/callsheets/calrunia-creator.md (\"Sleeve research run\"). This stands unless you flip it.",
+   "why": "Wendell, 2026-10-22: \"Let's do a best practice research run on how to render the sleeve style we're looking for... add this to the board so that other environments can pick up from here\"."
+  }
+ ]
+}
