@@ -55,7 +55,7 @@ Their suite, on this box:
 The skips are G4 and G5, which want the dining table the net tier fetches; P4 is their own known gap (7 prisms where
 the picture shows about 10). The two failures are worth their own lines.
 
-**R1, the byte-for-byte rebuild, does not hold here.** It builds `body/figure.glb` and compares its hash with the
+**R1, the byte-for-byte rebuild, does not hold here** (fixed in the patch below, and still red upstream). It builds `body/figure.glb` and compares its hash with the
 committed file. This VM's build is 204,268 bytes against 204,264, with the same 9,613 faces and the same topology, and
 the accessors' min and max apart in the seventh digit: the figure's height reads 1.7382885 here and 1.7380060 in the
 committed file, 0.28 mm over 1.738 m. That is float drift between machines, not a different figure, and it is
@@ -63,11 +63,14 @@ enough to fail a hash. The cave kit (R2) is byte-for-byte identical here, twice,
 and not a property of this box. The consequence for asset rounds: a new asset built here is fine, but regenerating a
 committed GLB here churns the binary even when nothing changed, so that rebuild stays where its hash matches.
 
-**J7, the held movement letting go, is a real asymmetry.** The Controller's Integrate action opens both fists
+**J7, the held movement letting go, is a mismatched check rather than a bad pose** (fixed in the patch below, red upstream). The Controller's Integrate action opens both fists
 (3.08x and 3.33x) and keeps the lower foot 0.02 cm off the ground, and its left forearm ends hanging at 0.86 of its
 length. The right forearm ends at 1.308 m, at shoulder height, pointing 22.6 cm forward and 3 cm up: a ratio of
 -0.13 where the check wants at least 0.5. That is not a tolerance miss on the last digit; the right arm stays out in
-front while the left one drops. It reproduces on a second run and belongs to bars-engine, not to this VM.
+front while the left one drops. It reproduces on a second run. The cause is the check, not the arm: character.py
+replaces the Controller's relaxed finish with its HONORED stance, so the right arm is meant to be offered, and the
+check still demanded both forearms hang. Patch and measurements: `council/patches/bars-engine-j7-r1-2026-10-22.patch`
+and the strand's call sheet. With it applied the bpy tier is 22 pass, 0 fail.
 
 ## What the numbers say
 

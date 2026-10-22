@@ -252,3 +252,29 @@ checked: the net tier (Blenderkit's API, the table for G4 and G5), and `skill_ru
 `council/tools/blender_report_card.py`, which still hardcode `/home/user/bars-engine` and `/home/user/blenv`. Next
 unit is J7 in bars-engine, as its own branch there: find where the right shoulder's integration loses its drop,
 with `tools/blender-cloud/tests/_integrate_check.py` as the check that will go green.
+
+## The two reds, traced and fixed (Freebuff, 2026-10-22)
+
+Neither was a pose or a figure problem. Both were checks that had stopped describing what they checked.
+
+J7 first: the target of the Controller's Integrate is not the `INTEGRATE["controller"]` row's relaxed arms. `character.py`
+overwrites every daemon's row, the Controller's included, with its `HONORED` stance (his 2026-10-17 "we need 'let go'
+stances for all the daemons"), so the right arm is supposed to come out offered forward with the hand open, and the left
+to hang. `_integrate_check.py` still insisted both forearms end hanging, which the honored stance can never satisfy, and
+it failed the right arm for doing what the code asks. The check now reads the stance: the left forearm hangs, the right
+reaches at least half its length forward of its elbow and no more than 5 cm above it. The hands-open, wrist-moves,
+ground, knee, elbow and held-beat rules are untouched. Measured: left drop 0.86 of its length, right 22.6 cm forward of
+23.3 cm and 3.0 cm above the elbow. The hand ends at 1.31 m on a 1.738 m figure, which is worth a look against his word
+"out low" when the strips come up, since chest height is not what that phrase suggests.
+
+R1 next: the figure is deterministic on one machine, two builds giving one hash, but it is not deterministic across
+machines. Vertex order moves and seams split differently where two vertices coincide, so 172,449 bytes differ between
+builds of the same body whose surfaces sit 0.7 mm apart. A hash cannot carry that. R1 now builds twice here and requires
+the two to be identical, which it did not check before, then compares the built figure to the committed one by primitive
+counts and by the farthest any vertex of either sits from the other's surface, at 2 mm. Measured 0.69 mm, worst case,
+with a median of 0.000.
+
+With the patch applied, the bpy tier is 22 pass, 0 fail, 2 skipped for the net tier's dining table, 1 known gap, 336 s.
+The patch is `council/patches/bars-engine-j7-r1-2026-10-22.patch`; it applies clean to bars-engine main and an issue
+carries it there, because this session cannot push to a repo it is not the connected one. Upstream bars-engine stays red
+on both until it lands.
