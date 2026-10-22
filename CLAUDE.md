@@ -106,5 +106,6 @@ projects more effectively between that and Jev we can save a lot of tokens"
 - A session with no Claude tools (Codex, Freebuff, a plain clone) reads the board off main with `python3 board/read.py
   --main-only` and lands rows with `python3 board/sync_board.py --rows <file> --push`, which needs no live page. The
   map, and what stays with a Claude session, is `docs/pickup-here.md`.
+- Rotating `COUNCIL_MENU_TOKEN`: `docs/token-rotation.md`.
 - Deferred items: run `python3 council/due.py --ahead 7` at the start of every board read.
 - Run `python3 council/tools/voice_lint.py` on anything he reads. Never alter his quoted words.
