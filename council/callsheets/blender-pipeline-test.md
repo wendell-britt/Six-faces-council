@@ -230,3 +230,21 @@ J5 export or the figure), and whether the hem can be skinned to the shin. Measur
 `tools/figure-legs-probe.mjs`, not the nearest-point check.
 
 **Round 15 next (Opus, fresh thread, owns bars-engine #421, keep #365 and #364 not ready).** (1) Run `garments.py --build slight --palette dusk` and read its `through at key` lines: find which points are through after the cloth walk (legs at the slits, or the tube's forearm) and fix that cause, since a retry cannot. Then cut `DRAPE_TRIES` to 2 or make each retry change something (the drape's seed or CLEAR). (2) Measure the foot capsule on average dusk with the probes copied in `/home/user/nm` style from `/mnt/project-files/3d-build/j5-sleeve-hem-2026-10-21/probes/` (`heel.mjs` for poke frames, the round 14 base is 6 of 80; J5d for hem and fold jitter, lines 24 and 28 in round 14's ankle-ball try): try `FOOT_CAP` 0.8 to 1.0 with and without `FOOT_BACK`. If no setting clears the toes without shaking the hem, try a front hem cut 1 to 2 cm higher. (3) Then J5 on all nine (`test_bpy.py`, 1800 s), J5d, and CLOTH.md "Round 15". The venv recipe is in `tools/blender-cloud/README.md` (bpy 5.2.2, two minutes to install). Hand off at 150k: this thread opened near 110k and reached 178k after the board work, so send the board writes and bulk reading to an Agent worker.
+
+**Round 15 result (2026-10-22, bars-engine #421 commit 4caeda7; #365 and #364 stay not ready).** Slight dusk's
+through points were 12 at the front of the left knee (z 0.44 to 0.51, keys 2 to 5), 12 to 18 cm from any slit: the
+knee came through sliver faces left by decimation. Fix: edges longer than `MAX_EDGE` 0.14 m are cut in half after
+decimation, `ROBE_VERTS` 1450 to 1100 (robes 129 to 144 KB). `DRAPE_TRIES` 6 to 3, each try its own CLEAR (0.006,
+0.004, 0.005). Foot capsule on average dusk (poke frames of 80; J5d hem/fold mm): round 14 base 6, 19.6/20.1; new
+mesh, cap off 0 to 1, 15.1-16.3/18.6-18.9; 0.8 gives 2; 0.9 gives 15; 1.0 gives 3; 1.0 with `FOOT_BACK` gives 0 but
+fold 21.0. Chosen: `FOOT_CAP` off; the heel pokes were the slivers too. Rule 8 check: toes poke below the 0.15 m hem
+and the knee points are below the slit tops (0.54 m), so a mask would leave a hole, and skinning the hem to the shin
+would stop the swing the sleeves match. J5: run 1 failed on slight dusk only, run 2 passed 9 of 9 (427 s), so not
+stable. J5d pass (hem 17.7, fold 18.3, cuff 3.7 mm; 3.23 ms a figure). CLOTH.md "Round 15". Not checked: J5 past two
+runs, slight/broad probes, a clip for his look, phone frame rate.
+
+**Round 16 next (Opus, fresh thread, owns bars-engine #421, keep #365 and #364 not ready).** (1) Find why the
+tube-forearm fit stalls and why slight dusk still fails some drapes; fix that cause, not the retry count. (2) Run J5
+three times in a row (`test_bpy.py`, 1800 s, background); all three must pass. (3) Render one before/after clip
+(round 14 vs round 16, close on sleeve and hem) into `/mnt/project-files/3d-build/` and add it to look step
+j5-sleeve-hem-look-14 or a new look step, so he can look from the board. Send bulk reading and runs to an Agent worker.
