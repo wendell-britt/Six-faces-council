@@ -1,11 +1,12 @@
-# Blender on this cloud VM, measured (2026-10-21)
+# Blender on this cloud VM, measured (2026-10-21; bars-engine's own suite 2026-10-22)
 
 The question: when Claude tokens run out, can the Blender work carry on here? Answer: the asset half of it can, on
 stills and mesh work; the GPU half cannot, and nothing in between is worth pretending.
 
 This VM is 2 vCPU, 3 GB of RAM, no GPU, Ubuntu 24.04 with glibc 2.39 and about 10 GB of disk, with no root. The
-bars-engine pipeline (`tools/blender-cloud`) ran in a container with a GPU, so its timings say nothing about this
-machine. Every number below was measured here, on 2026-10-21.
+bars-engine pipeline (`tools/blender-cloud`) ran in a container with a GPU, so its timings said nothing about this
+machine, and its scripts expect a `bpy` venv rather than the binary. Both routes were set up here and its own test
+suite was run against them on 2026-10-22.
 
 ## Setup, in one command
 
@@ -26,6 +27,47 @@ Each session starts from an empty home folder, so this is the first minute of ev
 `probe` runs `council/tools/blender_probe.py` inside Blender plus the upstream skill test suite, prints the numbers
 below as JSON, writes them to `~/blender-here/measure.json` and exits non-zero on a failed step. Run it again after a
 restore: this VM's home folder is not promised to survive, and 45 seconds buys it back.
+
+## bars-engine's own pipeline (2026-10-22)
+
+That is the tarball route. bars-engine runs Blender as the `bpy` wheel instead, and for its work that route is cheaper
+and closer to what its scripts expect:
+
+```
+python3 council/tools/blender_here.py bars       # bars-engine's checkout and the bpy venv, four seconds on a warm image
+python3 council/tools/blender_here.py bars-test  # bars-engine's own pipeline tests: offline, then bpy
+```
+
+The repo is public at `johnair01/bars-engine`, under an account the connected session is not logged in as but has push
+access to. That is why the previous session called it private: the owner is not the login, so the repo never appeared
+in its own list. A sparse clone of the pipeline, the cave and the body is 16 MB in 1.5 s; the whole repo is 274 MB.
+The wheel is 961 MB and installs in 9 s on the Python 3.13 that `uv` fetches, against 1.2 GB and 1m22s for the
+tarball. Both routes link the same six Ubuntu libraries, so `bars` reuses the `setup` sysroot. bars-engine's runner
+reads `$BLENV` for the venv's Python; its own docstring calls that variable `BLENTV`, which nothing reads.
+
+Their suite, on this box:
+
+| Tier | Result | What it means |
+|---|---|---|
+| offline (plain Python, the tier their CI runs) | 7 of 7 pass, 1 s | The pipeline's licensing, budget and layout checks are CPU-only and cost nothing here. |
+| bpy | 20 pass, 2 fail, 2 skipped, 1 known gap, 337 to 353 s over two runs | The Blender half runs. The cave props (J2, 12 pieces) take 14 to 27 s, nine figures and their walks (J4) 42 s, the frame with seven daemons and the Player (J6) 43 s, and the whole suite is six minutes of one core. |
+
+The skips are G4 and G5, which want the dining table the net tier fetches; P4 is their own known gap (7 prisms where
+the picture shows about 10). The two failures are worth their own lines.
+
+**R1, the byte-for-byte rebuild, does not hold here.** It builds `body/figure.glb` and compares its hash with the
+committed file. This VM's build is 204,268 bytes against 204,264, with the same 9,613 faces and the same topology, and
+the accessors' min and max apart in the seventh digit: the figure's height reads 1.7382885 here and 1.7380060 in the
+committed file, 0.28 mm over 1.738 m. That is float drift between machines, not a different figure, and it is
+enough to fail a hash. The cave kit (R2) is byte-for-byte identical here, twice, so the sensitivity is per builder
+and not a property of this box. The consequence for asset rounds: a new asset built here is fine, but regenerating a
+committed GLB here churns the binary even when nothing changed, so that rebuild stays where its hash matches.
+
+**J7, the held movement letting go, is a real asymmetry.** The Controller's Integrate action opens both fists
+(3.08x and 3.33x) and keeps the lower foot 0.02 cm off the ground, and its left forearm ends hanging at 0.86 of its
+length. The right forearm ends at 1.308 m, at shoulder height, pointing 22.6 cm forward and 3 cm up: a ratio of
+-0.13 where the check wants at least 0.5. That is not a tolerance miss on the last digit; the right arm stays out in
+front while the left one drops. It reproduces on a second run and belongs to bars-engine, not to this VM.
 
 ## What the numbers say
 
@@ -55,7 +97,7 @@ figure. Reading through `matrix_world` turned the same scene into 2.02 m of slid
 through, and the pin then held it. A probe that reports a pass on the wrong coordinate space is worse than no probe:
 it certifies work nobody did. Check any Blender number against `matrix_world` before trusting it.
 
-## What does not work here
+## What still does not work here
 
 - **EEVEE.** It needs a GPU context. Mesa's software EGL failed with `EGL_BAD_PARAMETER` and then a segfault, so the
   fast engine for stylised looks is out and Cycles is the only renderer.
@@ -65,15 +107,11 @@ it certifies work nobody did. Check any Blender number against `matrix_world` be
   session-wide `blenderkit` add-on wiring lives in bars-engine. Polyhaven's API answers (CC0) and is the fallback
   that needs no key.
 - **Image-to-3D.** AssetFurnace rents a GPU elsewhere; that channel does not move here.
-- **The game's own assets.** This clone has no `.blend`, `.glb` or `.fbx`, and bars-engine and sprout are not checked
-  out. The rigs, the garments and the cave live there, so a J5 round cannot run here yet. Unblock: bars-engine
-  connected to this account's GitHub integration (read access is enough for the source) or a checkout in the VM. A J5
-  run needs `content/ontology-game/cave/character.py`, `garments.py` and `cloth.js`, the body and stance data they
-  read, and `tools/blender-cloud/tests` for the J4/J5 checks. The composed step above is the same shape built from
-  primitives, and it runs in under a second, so the missing piece is the checkout.
-- **bars-engine's `tools/blender-cloud`** itself: `skill_run.py` and `council/tools/blender_report_card.py` point at
-  `/home/user/bars-engine` and a `blenv` Python that this VM does not have. The skills run directly here instead,
-  which is how the numbers above were taken.
+- **Byte-identical rebuilds.** R1 above: a figure rebuilt here drifts 0.28 mm from the committed file, so any asset
+  round whose output must match an existing hash runs where that hash was made. Building something new is unaffected.
+- **`skill_run.py` and `council/tools/blender_report_card.py`** still point at `/home/user/bars-engine` and
+  `/home/user/blenv`. The checkout and the venv are real now, one symlink away from those paths or a `BLENV`
+  override; the report card has not been run against them.
 
 ## What it is good for
 

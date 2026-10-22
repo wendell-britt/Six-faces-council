@@ -7,9 +7,14 @@ so it needs its own measure before asset work is planned on it. docs/blender-her
   python3 council/tools/blender_here.py setup    # Blender, the system libs it needs, and the skill scripts
   python3 council/tools/blender_here.py env      # the environment lines to export in a later shell
   python3 council/tools/blender_here.py probe    # run the probe and the upstream skill tests, print the numbers
+  python3 council/tools/blender_here.py bars     # bars-engine's checkout and the bpy wheel its pipeline runs on
+  python3 council/tools/blender_here.py bars-test # bars-engine's own pipeline tests, offline and bpy tiers
 
 setup needs no root: Ubuntu's missing libraries are downloaded and unpacked into ROOT/sysroot and reached through
 LD_LIBRARY_PATH. Everything lives under ROOT (BLENDER_HERE_ROOT, default ~/blender-here), never in the repo.
+
+`bars` is the second route to the same Blender: bars-engine runs it as the `bpy` wheel rather than as the binary, so
+it needs no tarball, and the wheel links the same six X libraries, so it reaches for the same sysroot.
 """
 import argparse
 import gzip
@@ -67,6 +72,14 @@ BLENDER = ROOT / f"blender-{BLENDER_VERSION}-linux-x64" / "blender"
 SYSROOT = ROOT / "sysroot"
 SKILLS = ROOT / "skills"
 SKILLS_TESTS = SKILLS / "tests" / "run_all.py"
+# bars-engine is public under johnair01, not under the account that connects here (johnair01/bars-engine, 2026-10-22).
+BARS_REPO = "https://github.com/johnair01/bars-engine"
+BARS = ROOT / "bars-engine"
+BARS_CONTENT = ("tools/blender-cloud", "content/ontology-game/cave", "content/ontology-game/body")
+BARS_TESTS = BARS / "tools" / "blender-cloud" / "tests" / "run.py"
+BLENV = ROOT / "blenv"
+# what the wheel asks for at import: the first six here, in ldd's order for the binary
+WHEEL_LIBS = ("libXrender.so.1", "libXfixes.so.3", "libXi.so.6", "libxkbcommon.so.0", "libSM.so.6", "libICE.so.6")
 
 
 def say(msg):
@@ -164,11 +177,7 @@ def package_index():
     return index
 
 
-def ensure_libs():
-    missing = missing_libs()
-    if not missing:
-        say("libs: nothing missing")
-        return
+def install_libs(missing):
     say(f"libs: {len(missing)} missing ({', '.join(missing)})")
     index = package_index()
     unknown = [lib for lib in missing if lib not in LIBS]
@@ -183,7 +192,29 @@ def ensure_libs():
         fetch(f"{MIRROR}/{path}", deb, label=package)
         subprocess.run(["dpkg-deb", "-x", str(deb), str(SYSROOT)], check=True)
         deb.unlink()
+
+
+def ensure_libs():
+    missing = missing_libs()
+    if not missing:
+        say("libs: nothing missing")
+        return
+    install_libs(missing)
     still = missing_libs()
+    if still:
+        raise SystemExit(f"still missing after unpacking: {still}")
+    say("libs: all found")
+
+
+def ensure_wheel_libs():
+    """The bpy wheel links the same X libraries as the binary, and with no binary unpacked there is no ldd to ask."""
+    libdir = SYSROOT / "usr" / "lib" / "x86_64-linux-gnu"
+    missing = [lib for lib in WHEEL_LIBS if not (libdir / lib).exists()]
+    if not missing:
+        say("libs: nothing missing")
+        return
+    install_libs(missing)
+    still = [lib for lib in missing if not (libdir / lib).exists()]
     if still:
         raise SystemExit(f"still missing after unpacking: {still}")
     say("libs: all found")
@@ -196,6 +227,67 @@ def ensure_skills():
     say("skills: cloning blender-skills")
     subprocess.run(["git", "clone", "-q", "--depth", "1", SKILLS_REPO, str(SKILLS)], check=True)
     say(f"skills: {sum(1 for _ in (SKILLS / 'skills').iterdir())} skills")
+
+
+def ensure_bars():
+    """The pipeline and the content it builds, sparse-cloned: 16 MB and a second, against 274 MB for the whole repo."""
+    if BARS_TESTS.exists():
+        say(f"bars-engine: {BARS} already cloned")
+        return
+    say("bars-engine: sparse clone")
+    subprocess.run(["git", "clone", "-q", "--depth", "1", "--filter=blob:none", "--sparse",
+                    BARS_REPO, str(BARS)], check=True)
+    subprocess.run(["git", "-C", str(BARS), "sparse-checkout", "set", *BARS_CONTENT], check=True)
+    if not BARS_TESTS.exists():
+        raise SystemExit(f"cloned, but {BARS_TESTS} is not there")
+    say(f"bars-engine: {BARS}")
+
+
+def ensure_blenv():
+    """The bpy wheel: 961 MB and about ten seconds, where the tarball is 1.2 GB and over a minute."""
+    python = BLENV / "bin" / "python"
+    if python.exists():
+        say(f"bpy: {python} already there")
+        return
+    if not shutil.which("uv"):
+        raise SystemExit("uv is needed to fetch the Python 3.13 the bpy wheel wants")
+    say("bpy: making a Python 3.13 venv")
+    subprocess.run(["uv", "venv", "--python", "3.13", str(BLENV)], check=True)
+    say(f"bpy: installing {BLENDER_VERSION} as the wheel")
+    subprocess.run(["uv", "pip", "install", "--python", str(python), f"bpy=={BLENDER_VERSION}"], check=True)
+
+
+def bars_env():
+    """bars-engine's runner reads $BLENV (its docstring says BLENTV, which nothing reads) and writes under $W."""
+    env = dict(os.environ)
+    env.update(env_lines())
+    env.update({"BLENV": str(BLENV / "bin" / "python"), "W": str(ROOT / "bars-work")})
+    return env
+
+
+def setup_bars():
+    ensure_wheel_libs()
+    ensure_bars()
+    ensure_blenv()
+    say("")
+    say("ready. In this shell, the bpy route:")
+    for key, value in bars_env().items():
+        if key in ("BLENV", "W", "LD_LIBRARY_PATH"):
+            say(f"  export {key}={value}")
+    say(f"  {BLENV / 'bin' / 'python'} {BARS / 'tools' / 'blender-cloud' / 'scene.py'} --help")
+
+
+def run_bars_tests(tiers):
+    if not BARS_TESTS.exists():
+        say(json.dumps({"ok": False, "why": f"{BARS_TESTS} is not there; run bars"}))
+        return 2
+    if not (BLENV / "bin" / "python").exists():
+        say(json.dumps({"ok": False, "why": f"{BLENV / 'bin' / 'python'} is not there; run bars"}))
+        return 2
+    env = bars_env()
+    Path(env["W"]).mkdir(parents=True, exist_ok=True)
+    result = subprocess.run([sys.executable, str(BARS_TESTS), "--tier", tiers], env=env)
+    return 0 if result.returncode == 0 else 1
 
 
 def setup():
@@ -249,11 +341,17 @@ def run_probe():
 
 def main():
     ap = argparse.ArgumentParser(description="Blender in a rootless cloud VM: setup, env, probe.")
-    ap.add_argument("command", choices=("setup", "env", "probe"))
+    ap.add_argument("command", choices=("setup", "env", "probe", "bars", "bars-test"))
+    ap.add_argument("--tier", default="offline,bpy", help="bars-test tiers: offline, bpy, net")
     args = ap.parse_args()
     if args.command == "setup":
         setup()
         return 0
+    if args.command == "bars":
+        setup_bars()
+        return 0
+    if args.command == "bars-test":
+        return run_bars_tests(args.tier)
     if args.command == "env":
         for key, value in env_lines().items():
             say(f"export {key}={value}")

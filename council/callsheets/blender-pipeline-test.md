@@ -220,3 +220,35 @@ Still out of reach: a real J5 or J4 job. It needs a bars-engine checkout, and th
 bars-engine read access in this account's GitHub integration, or a checkout in the VM; the files a J5 run needs are
 listed in `docs/blender-here.md`. Until then a cheap session can take look-review stills, mesh and rig work,
 cloth bakes and glTF exports from its own scripts, and the J5 rounds keep their home in bars-engine.
+
+## Third session (Freebuff, 2026-10-22): bars-engine runs here
+
+Correction to the paragraph above: that clone was never private. bars-engine is public at `johnair01/bars-engine`, under
+an account this session is not logged in as but has push access to, so it never appeared in the account's own repo
+list and was read as closed. Wendell said where to look. A sparse clone of `tools/blender-cloud`, the cave and the body
+is 16 MB in 1.5 s.
+
+The pipeline runs Blender as the `bpy` wheel, not as the binary, and on this image that route is also the lighter one:
+the wheel is 961 MB and installs in 9 s on the Python 3.13 `uv` fetches, against 1.2 GB and 1m22s for the tarball, and
+both want the same six X libraries, so `bars` reuses the `setup` sysroot. `council/tools/blender_here.py` now has
+`bars` (checkout plus venv) and `bars-test` (their runner), so a session that starts empty stands the pipeline up in
+one command. Their runner reads `$BLENV`; its docstring says `BLENTV`, which nothing reads.
+
+Their own suite, run here. Offline tier, the one their CI runs: 7 of 7 in 1 s. bpy tier: 20 pass, 2 fail, 2 skipped,
+1 known gap, 353 s. Cave props (J2) 27 s for twelve pieces, nine figures and their walks (J4) 43 s, the frame with
+seven daemons and the Player (J6) 43 s. G4 and G5 skip for the dining table the net tier fetches; P4 is their own
+known gap.
+
+The two reds are real information. R1, the byte-for-byte rebuild, fails on float drift: the figure built here is
+204,268 bytes against 204,264 committed, same 9,613 faces, and its height reads 1.7382885 here against 1.7380060
+there, 0.28 mm over 1.738 m. The cave kit is byte-identical here twice, so the sensitivity belongs to that builder.
+For asset rounds that means a new asset is fine from here and a rebuild of a committed GLB must stay where its hash
+matches. J7, the Controller's Integrate action, is a bars-engine bug rather than a difference of machine: both fists
+open and the left forearm ends hanging at 0.86 of its length, while the right forearm ends at shoulder height
+pointing 22.6 cm forward and 3 cm up, a ratio of -0.13 where the check wants 0.5. It reproduces.
+
+What this buys: a J4 or J6 shaped round is under a minute of this VM's CPU and none of Claude's tokens. What was not
+checked: the net tier (Blenderkit's API, the table for G4 and G5), and `skill_run.py` and
+`council/tools/blender_report_card.py`, which still hardcode `/home/user/bars-engine` and `/home/user/blenv`. Next
+unit is J7 in bars-engine, as its own branch there: find where the right shoulder's integration loses its drop,
+with `tools/blender-cloud/tests/_integrate_check.py` as the check that will go green.

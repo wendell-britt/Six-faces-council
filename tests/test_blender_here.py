@@ -50,6 +50,37 @@ def test_probe_says_what_is_missing_instead_of_crashing(tmp_path):
     assert "run setup" in report["why"]
 
 
+def test_the_bars_route_pins_the_public_repo_and_the_suite_it_runs():
+    assert blender_here.BARS_REPO == "https://github.com/johnair01/bars-engine"
+    assert blender_here.BARS.parent == blender_here.ROOT and blender_here.BLENV.parent == blender_here.ROOT
+    assert set(blender_here.BARS_CONTENT) == {"tools/blender-cloud", "content/ontology-game/cave",
+                                              "content/ontology-game/body"}
+    assert blender_here.BARS_TESTS == blender_here.BARS / "tools" / "blender-cloud" / "tests" / "run.py"
+    assert set(blender_here.WHEEL_LIBS) <= set(blender_here.LIBS)  # the wheel's six are packages setup already knows
+
+
+def test_bars_env_is_what_their_runner_reads():
+    env = blender_here.bars_env()
+    assert env["BLENV"].endswith("blenv/bin/python")
+    assert env["LD_LIBRARY_PATH"].endswith("sysroot/usr/lib/x86_64-linux-gnu")
+    assert env["W"].endswith("bars-work")
+
+
+def test_bars_says_what_is_missing_instead_of_crashing(tmp_path):
+    env = dict(os.environ, BLENDER_HERE_ROOT=str(tmp_path / "nowhere"))
+    run = subprocess.run([sys.executable, str(DRIVER), "bars-test"], capture_output=True, text=True, env=env)
+    assert run.returncode == 2
+    report = json.loads(run.stdout.strip())
+    assert report["ok"] is False
+    assert "run bars" in report["why"]
+
+
+def test_the_doc_records_the_two_reds_and_where_the_repo_lives():
+    doc = DOC.read_text(encoding="utf-8")
+    for line in ("johnair01/bars-engine", "R1", "J7", "0.28 mm", "BLENV", "bars-engine's own pipeline"):
+        assert line in doc, line
+
+
 def test_env_command_prints_exports():
     run = subprocess.run([sys.executable, str(DRIVER), "env"], capture_output=True, text=True)
     assert run.returncode == 0
