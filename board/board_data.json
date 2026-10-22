@@ -31744,6 +31744,30 @@
      "sage"
     ],
     "pass": "J5 round 14-15, sleeve hem band"
+   },
+   "rc-legs-durable": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-22",
+    "saved_at": "2026-10-22T03:03:43.096Z",
+    "record": "council/ledger/2026-10-22-pull-030346.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "robe-clipping"
+   },
+   "rc-sleeve-research": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-22",
+    "saved_at": "2026-10-22T03:03:46.311Z",
+    "record": "council/ledger/2026-10-22-pull-030346.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect"
+    ],
+    "pass": "robe-clipping"
    }
   },
   "questions": {
@@ -35975,7 +35999,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-22T02:54:53.301Z",
+ "steps_recorded_through": "2026-10-22T03:01:34.510Z",
  "morning": {
   "date": "2026-10-21",
   "gathered_at": "2026-10-22T01:53:54Z",
