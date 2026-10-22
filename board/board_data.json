@@ -11833,6 +11833,28 @@
    "auto": true,
    "pos": "The sleeve stays one piece with the hand inside it, and only its last 12 cm moves as cloth. Where flowing like the skirt's hem and staying one piece pull against each other, one piece wins, so the sleeve end sways about 5 cm where the skirt's hem sways 26. This stands unless you flip it.",
    "why": "Your note on round 13 named one piece first: \"the biggest issue is that the sleeves aren't operating as one piece The hand is moving through them and there's werid strings\". Your note on round 10 asked for cloth that moves, not solid objects. Both can't be had in full: a hem can only trail a limb when there is a gap between them, and the skirt has one while the cuff hugs the hand. Every cut that gave the sleeve the skirt's motion (springs in round 11, panels in rounds 12 and 13) got it by letting the hand out. So the record answers the order, and how much sway is enough is your eye's call on look step j5-sleeve-hem-look-14. If you say there it is too stiff, the next round widens the gap at the cuff (a fuller bell, a longer band) and measures how often the hand still shows."
+  },
+  {
+   "id": "rc-legs-durable",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "robe-clipping",
+   "auto": true,
+   "pos": "Legs no longer show through the creator's robe. The body is hidden where each cut covers it, and the robe rides on thigh and shin shapes (sprout #72). You looked at the preview and said \"ok its perfect\" (2026-10-22). This is now rule 8 for every garment round, J5 included: hide what the clothes cover, drive the cloth from the body, and measure with rays. Answer page: https://claude.ai/artifact/AvPdQRkPQwNcXEKfuxewAv. This stands unless you flip it.",
+   "why": "Wendell, 2026-10-22: \"ok its perfect. We still have some work to do on the sleeves, but we're looking good.\" docs/3d-math.md rule 8 (council #375)."
+  },
+  {
+   "id": "rc-sleeve-research",
+   "faces": [
+    "sage",
+    "architect"
+   ],
+   "pass": "robe-clipping",
+   "auto": true,
+   "pos": "The next piece of work is a research run on how games and film render wide hanging sleeves like the J5 robe's. That covers hiding the forearm and hand inside the sleeve, sleeve bones or skinning compared with cloth, colliders against the arm, a cuff that keeps its shape, and how studios test it. It produces a short answer page and one cheap probe-first change to the creator. Any environment can pick it up from the brief in council/callsheets/calrunia-creator.md (\"Sleeve research run\"). This stands unless you flip it.",
+   "why": "Wendell, 2026-10-22: \"Let's do a best practice research run on how to render the sleeve style we're looking for... add this to the board so that other environments can pick up from here\"."
   }
  ],
  "questions": [
