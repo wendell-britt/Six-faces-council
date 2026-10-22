@@ -31,6 +31,22 @@ comes from and where our code stands.
 7. **Apply scale before export.** Skinning normals assume no non-uniform scale on bones; apply scale on rigs before GLB
    export. (Ch. 6.3.3, 10.8.)
 
+8. **Hide what clothes cover; drive the cloth from the body.** This is the standing rule for every garment round, J5
+   included (Wendell, 2026-10-22: "legs are moving through the robe... what would a professional in the field say").
+   Games do not try to make cloth never touch the body. They make poke-through impossible to see:
+   - **Hidden-surface removal.** Body triangles under a garment are not drawn (a per-garment body mask, or a body mesh
+     cut per outfit). Keep a band of about 12 cm above a hem drawn, because a leg swinging out under the hem must not
+     show a hole.
+   - **Skin long garments to the legs.** A skirt or robe below the waist follows the thighs and shins, through blended
+     leg weights, a few skirt bones, or capsule pushes off thigh and shin (rule 5's push, with a soft margin of a few cm).
+     Free cloth near the legs is the last resort, not the default.
+   - **Any sim that stays** gets leg capsule colliders sized to the outermost layer (skin plus pants), not the bare body.
+   - **Measure with rays, not nearest points.** A probe that skips body points more than a few cm from the cloth never
+     sees a leg that is well through. Cast a ray out from each body point and count the ones with no cloth in front.
+   (Industry practice: UE and Unity outfit systems hide the body under clothing, and game skirts are skinned or bone
+   driven.) Today: Sprout's creator figure does both (sprout #72, `tools/figure-legs-probe.mjs`). Round-5 coat legs
+   showing: 197 point-frames before, 0 after, on four body builds and all three cuts.
+
 ## Not checked
 
 The cloth and backstop code itself, how the cuff is weighted, rendered output, and Sprout.
