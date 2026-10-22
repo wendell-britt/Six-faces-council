@@ -116,6 +116,25 @@ it certifies work nobody did. Check any Blender number against `matrix_world` be
   `/home/user/blenv`. The checkout and the venv are real now, one symlink away from those paths or a `BLENV`
   override; the report card has not been run against them.
 
+## Pushing to bars-engine
+
+The connected GitHub app reads bars-engine and commits to it through the API: this session made branch
+`agent/j7-r1-checks` there and opened issue #425 with it. What the app cannot do is hand this VM a credential, so
+`git push` answers "could not read Username for 'https://github.com'", and every file that moves has to pass
+through an agent's context: fine for one small file, wasteful for a 664-line test.
+
+`council/tools/bars_git.py` closes that with a project secret. Add `BARS_ENGINE_TOKEN` in this project's
+Settings → Secrets as a fine-grained token for `johnair01/bars-engine` with Contents: read and write. Every shell in
+the project reads that file, so no session is told the value. Then:
+
+```
+python3 council/tools/bars_git.py check        # 0 when a push from here would work now
+python3 council/tools/bars_git.py push BRANCH   # HEAD to BRANCH, creating it
+```
+
+The helper it writes into `.git/config` names the variable and nothing else; the value never lands in the checkout, the
+repo or a log. Until the secret exists, `check` exits 1 and says which piece is missing.
+
 ## What it is good for
 
 Stills and contact sheets for look review; building and fixing meshes from script; rigging with Rigify and skinning;

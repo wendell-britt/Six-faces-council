@@ -278,3 +278,9 @@ With the patch applied, the bpy tier is 22 pass, 0 fail, 2 skipped for the net t
 The patch is `council/patches/bars-engine-j7-r1-2026-10-22.patch`; it applies clean to bars-engine main and an issue
 carries it there, because this session cannot push to a repo it is not the connected one. Upstream bars-engine stays red
 on both until it lands.
+
+Pushing was the other half of that blocker: the app commits through the API, but `git push` had no credential, so a
+664-line file had to pass through an agent's context. `council/tools/bars_git.py` now does check, setup and push off a
+project secret, `BARS_ENGINE_TOKEN` (fine-grained, `johnair01/bars-engine`, Contents: read and write), which the shell
+already sources for every command. Nothing is written to disk but the variable's name. Once the secret exists,
+`python3 council/tools/bars_git.py push agent/j7-r1-checks` lands the patch from bars-engine issue #425 as a branch.
