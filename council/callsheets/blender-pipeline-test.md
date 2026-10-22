@@ -282,5 +282,7 @@ on both until it lands.
 Pushing was the other half of that blocker: the app commits through the API, but `git push` had no credential, so a
 664-line file had to pass through an agent's context. `council/tools/bars_git.py` now does check, setup and push off a
 project secret, `BARS_ENGINE_TOKEN` (fine-grained, `johnair01/bars-engine`, Contents: read and write), which the shell
-already sources for every command. Nothing is written to disk but the variable's name. Once the secret exists,
-`python3 council/tools/bars_git.py push agent/j7-r1-checks` lands the patch from bars-engine issue #425 as a branch.
+already sources for every command. Nothing is written to disk but the variable's name. Once the secret exists, the
+patch from bars-engine issue #425 goes in as a commit on a branch in that checkout and
+`python3 council/tools/bars_git.py push agent/j7-r1-checks` lands it there, which is the first time this environment
+can put a change into bars-engine without an agent carrying the file.
