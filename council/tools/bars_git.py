@@ -25,11 +25,11 @@ TOKEN_VAR = "BARS_ENGINE_TOKEN"
 REMOTE = "https://github.com/johnair01/bars-engine"
 ROOT = Path(os.environ.get("BLENDER_HERE_ROOT", Path.home() / "blender-here"))
 CHECKOUT = Path(os.environ.get("BARS_CHECKOUT", ROOT / "bars-engine"))
-HELPER = ('!f() { if [ "$1" = get ]; then echo username=x-access-token; '
-          'echo "password=${%s}"; fi; }; f' % TOKEN_VAR)
-
 # a file, because this client has no secrets panel to write the environment from: mode 600, outside the repo
 TOKEN_FILE = Path(os.environ.get("BARS_TOKEN_FILE", Path.home() / ".cache" / "freebuff-project" / "bars-engine-token"))
+# read from the variable if a shell has it, else from the file, at the moment git asks for it
+HELPER = ('!f() { if [ "$1" = get ]; then echo username=x-access-token; '
+          'echo "password=${' + TOKEN_VAR + ":-$(cat '" + str(TOKEN_FILE) + "' 2>/dev/null)}\"; fi; }; f")
 
 MISSING = (f"no {TOKEN_VAR} in the environment and no token file at {TOKEN_FILE}. Put a classic token with the "
            f"public_repo scope in that file (chmod 600) and run this again.")

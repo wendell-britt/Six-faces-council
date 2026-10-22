@@ -17,14 +17,16 @@ import bars_git  # noqa: E402
 
 def test_the_helper_names_the_variable_and_holds_no_secret():
     assert bars_git.TOKEN_VAR == "BARS_ENGINE_TOKEN"
-    assert f"${{{bars_git.TOKEN_VAR}}}" in bars_git.HELPER
+    assert f"${{{bars_git.TOKEN_VAR}:-" in bars_git.HELPER  # the variable first, then the file
+    assert str(bars_git.TOKEN_FILE) in bars_git.HELPER
     assert "password=" in bars_git.HELPER and bars_git.HELPER.count("username=") == 1
     # nothing that looks like a token value: no long hex or ghp_/github_pat_ literals
     assert "ghp_" not in bars_git.HELPER and "github_pat_" not in bars_git.HELPER
 
 
 def test_without_the_token_it_says_where_to_put_it(tmp_path):
-    env = dict(os.environ, BLENDER_HERE_ROOT=str(tmp_path), BARS_CHECKOUT=str(tmp_path / "bars-engine"))
+    env = dict(os.environ, BLENDER_HERE_ROOT=str(tmp_path), BARS_CHECKOUT=str(tmp_path / "bars-engine"),
+               BARS_TOKEN_FILE=str(tmp_path / "no-such-token"))
     env.pop(bars_git.TOKEN_VAR, None)
     run = subprocess.run([sys.executable, str(DRIVER), "check"], capture_output=True, text=True, env=env)
     assert run.returncode == 1  # zero would mean a push from here would work now
@@ -34,21 +36,23 @@ def test_without_the_token_it_says_where_to_put_it(tmp_path):
 def test_a_checkout_without_the_token_names_the_secret(tmp_path):
     checkout = tmp_path / "bars-engine"
     subprocess.run(["git", "init", "-q", str(checkout)], check=True)
-    env = dict(os.environ, BARS_CHECKOUT=str(checkout), BLENDER_HERE_ROOT=str(tmp_path))
+    env = dict(os.environ, BARS_CHECKOUT=str(checkout), BLENDER_HERE_ROOT=str(tmp_path),
+               BARS_TOKEN_FILE=str(tmp_path / "no-such-token"))
     env.pop(bars_git.TOKEN_VAR, None)
     run = subprocess.run([sys.executable, str(DRIVER), "check"], capture_output=True, text=True, env=env)
     assert run.returncode == 1
-    assert str(bars_git.TOKEN_FILE) in run.stdout and "public_repo" in run.stdout
+    assert "no-such-token" in run.stdout and "public_repo" in run.stdout
 
 
 def test_setup_refuses_without_a_token_and_writes_nothing(tmp_path):
     checkout = tmp_path / "bars-engine"
     (checkout / ".git").mkdir(parents=True)
-    env = dict(os.environ, BARS_CHECKOUT=str(checkout), BLENDER_HERE_ROOT=str(tmp_path))
+    env = dict(os.environ, BARS_CHECKOUT=str(checkout), BLENDER_HERE_ROOT=str(tmp_path),
+               BARS_TOKEN_FILE=str(tmp_path / "no-such-token"))
     env.pop(bars_git.TOKEN_VAR, None)
     run = subprocess.run([sys.executable, str(DRIVER), "setup"], capture_output=True, text=True, env=env)
     assert run.returncode != 0
-    assert "bars-engine-token" in run.stderr and "public_repo" in run.stderr
+    assert "no-such-token" in run.stderr and "public_repo" in run.stderr
 
 
 def test_setup_points_the_checkout_at_the_variable(tmp_path):
