@@ -245,3 +245,24 @@ Send bulk reading to Agent workers; hand off at 150k.
 - Screen framing: done in round 3 (77cf427), which landed after his screenshot.
 - Left: robe jitter. The robe is still the 10-13 skinned J5 GLB; thread "J5 sleeve hem flow" owns the cloth and will send its
   robe GLB and bake against this walk (it has the walk's path). Not checked: jitter on a phone, the dress cut's sash at speed.
+
+## Arcade arrival, round 5 result (2026-10-22, sprout #71 commit d1104da)
+
+- scout: rung 2, we had it. The robe is the J5 thread's bake over the creator's own Walk
+  (`robe-average-dusk-walk-baked.glb`, 27 shapes, one per clip frame) as sprout `slice/figure/robe-baked.glb.bin`, played on
+  the CPU in step with the Walk (`slice/figure-robe.js`). The walk runs along +Z as the bake assumed: frame k of the robe
+  matches clip time k/24, and a one-frame shift either way doubles the poke count.
+- Body shapes: the bake is on the average body, so the robe widens to the hips below the waist and the chest above (never
+  narrows), sleeves move out with the shoulders, and every point is pushed off arm capsules (docs/3d-math.md rule 5).
+  Unwidened, round and broad bodies poked through on 39 % and 6 % of checked points; widened, 4.8 % and 5.1 %, against
+  3.9 % on the average body, most of it the open neckline (the skinned robe scores 4.2 %).
+- Cuts: jacket and dress hems are drawn in the shader against each point's hanging height, so they are clean lines, not
+  the jagged teeth dropping cloth triangles gave. The sash stands 25 mm off the robe, which hangs looser than the skinned one.
+- Clips (1/4 speed, side, front, back): `/mnt/project-files/3d-build/arcade-robe-r5-2026-10-22/`. Probe:
+  sprout `tools/figure-robe-probe.mjs`. Slice tests pass.
+- Not checked: a real phone or Safari; the road walk through the gate at 1.6 m/s (the robe's cloth was baked at 1.30 m/s, so
+  it may swing a little slow there); the upper sleeve is open under the arm (about 13 % of rays from the upper arm miss, the
+  J5 cut). Toe poke-through at the skirt front stays with thread "J5 sleeve round 15" (bars-engine #421).
+
+TRIGGER: his look at the round 5 preview. Notes -> fresh Opus thread owning sprout #71 and bars-engine #420. Next after the
+fork settles: NPC guide models from the grey gate.
