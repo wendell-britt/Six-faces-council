@@ -11821,6 +11821,18 @@
    "auto": true,
    "pos": "The first real send is a test email to your own address, drafted onto the live board once council #351 merges; you press Send, a session sends it and records the Gmail ids. Outreach to anyone else waits for that round trip to work. This stands unless you flip it.",
    "why": "A send cannot be taken back, so the round trip is proven on your own address before any contact sees it."
+  },
+  {
+   "id": "cd-sleeve-one-piece",
+   "faces": [
+    "challenger",
+    "architect",
+    "sage"
+   ],
+   "pass": "J5 round 14-15, sleeve hem band",
+   "auto": true,
+   "pos": "The sleeve stays one piece with the hand inside it, and only its last 12 cm moves as cloth. Where flowing like the skirt's hem and staying one piece pull against each other, one piece wins, so the sleeve end sways about 5 cm where the skirt's hem sways 26. This stands unless you flip it.",
+   "why": "Your note on round 13 named one piece first: \"the biggest issue is that the sleeves aren't operating as one piece The hand is moving through them and there's werid strings\". Your note on round 10 asked for cloth that moves, not solid objects. Both can't be had in full: a hem can only trail a limb when there is a gap between them, and the skirt has one while the cuff hugs the hand. Every cut that gave the sleeve the skirt's motion (springs in round 11, panels in rounds 12 and 13) got it by letting the hand out. So the record answers the order, and how much sway is enough is your eye's call on look step j5-sleeve-hem-look-14. If you say there it is too stiff, the next round widens the gap at the cuff (a fuller bell, a longer band) and measures how often the hand still shows."
   }
  ],
  "questions": [
@@ -35931,7 +35943,7 @@
  "steps_recorded_through": "2026-10-21T22:30:56.440Z",
  "morning": {
   "date": "2026-10-21",
-  "gathered_at": "2026-10-21T20:28:55Z",
+  "gathered_at": "2026-10-21T23:34:26Z",
   "sealed": "2026-10-21",
   "pick_limit": 7,
   "goals": [],
@@ -36036,19 +36048,7 @@
     "key": "board",
     "title": "Waiting on you on the board",
     "blurb": "Questions with no answer yet, and new positions that stand unless you flip them.",
-    "items": [
-     {
-      "id": "board-gw-shadow-first",
-      "text": "The shadow part appears as its own gas spirit in the shadow colour as soon as the shadow is named. It is a gate: you work it through with the unveil practice and the daemons' asks, then keep it as a spirit or let it become a vibeulon,…",
-      "ref": "gw-shadow-first",
-      "link": "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho#open",
-      "note": "position, stands unless you flip it, wave-form1",
-      "bridge": {
-       "kind": "unaligned",
-       "why": "no Lens goals were read this morning"
-      }
-     }
-    ]
+    "items": []
    },
    {
     "key": "steps",
