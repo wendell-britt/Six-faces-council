@@ -123,11 +123,11 @@ The connected GitHub app reads bars-engine and commits to it through the API: th
 `git push` answers "could not read Username for 'https://github.com'", and every file that moves has to pass
 through an agent's context: fine for one small file, wasteful for a 664-line test.
 
-`council/tools/bars_git.py` closes that with a project secret. Add `BARS_ENGINE_TOKEN` in this project's
-Settings → Secrets as a **classic** token with the `public_repo` scope. A fine-grained token cannot be scoped to a
-repository under another user's account, which is where bars-engine lives, so its repository picker comes up empty;
-bars-engine is public, so `public_repo` is the narrow classic scope that reaches it. Every shell in the project reads
-the secret file, so no session is told the value. Then:
+`council/tools/bars_git.py` closes that with a file. Put a **classic** token with the `public_repo` scope at
+`~/.cache/freebuff-project/bars-engine-token`, mode 600, or set `BARS_ENGINE_TOKEN` in a shell that has it. A
+fine-grained token cannot be scoped to a repository under another user's account, which is where bars-engine lives, so
+its repository picker comes up empty; bars-engine is public, so `public_repo` is the narrow classic scope that reaches
+it. Nothing prints the value, and `check` reports whether it came from the environment or the file. Then:
 
 ```
 python3 council/tools/bars_git.py check        # 0 when a push from here would work now

@@ -1,2 +1,5 @@
 council/dist/
 __pycache__/
+
+# a token handed to a session, moved out of the tree by hand
+bars-token.txt

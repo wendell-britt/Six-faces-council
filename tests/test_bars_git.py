@@ -38,7 +38,7 @@ def test_a_checkout_without_the_token_names_the_secret(tmp_path):
     env.pop(bars_git.TOKEN_VAR, None)
     run = subprocess.run([sys.executable, str(DRIVER), "check"], capture_output=True, text=True, env=env)
     assert run.returncode == 1
-    assert "BARS_ENGINE_TOKEN" in run.stdout and "Settings" in run.stdout
+    assert str(bars_git.TOKEN_FILE) in run.stdout and "public_repo" in run.stdout
 
 
 def test_setup_refuses_without_a_token_and_writes_nothing(tmp_path):
@@ -48,7 +48,7 @@ def test_setup_refuses_without_a_token_and_writes_nothing(tmp_path):
     env.pop(bars_git.TOKEN_VAR, None)
     run = subprocess.run([sys.executable, str(DRIVER), "setup"], capture_output=True, text=True, env=env)
     assert run.returncode != 0
-    assert "Settings" in run.stderr and "BARS_ENGINE_TOKEN" in run.stderr
+    assert "bars-engine-token" in run.stderr and "public_repo" in run.stderr
 
 
 def test_setup_points_the_checkout_at_the_variable(tmp_path):
@@ -89,3 +89,29 @@ def test_push_puts_head_on_the_named_branch(tmp_path):
     assert run.returncode == 0, run.stdout + run.stderr
     refs = subprocess.run(["git", "-C", str(bare), "branch", "--list"], capture_output=True, text=True).stdout
     assert "agent/test-branch" in refs
+
+
+def test_a_token_file_is_read_and_never_printed(tmp_path):
+    token_file = tmp_path / "bars-engine-token"
+    token_file.write_text("a-fake-token-value\n", encoding="utf-8")
+    checkout = tmp_path / "bars-engine"
+    subprocess.run(["git", "init", "-q", str(checkout)], check=True)
+    env = {k: v for k, v in os.environ.items() if k != "BARS_ENGINE_TOKEN"}
+    env.update(BARS_CHECKOUT=str(checkout), BLENDER_HERE_ROOT=str(tmp_path), BARS_TOKEN_FILE=str(token_file))
+    run = subprocess.run([sys.executable, str(DRIVER), "check"], capture_output=True, text=True, env=env)
+    assert '"token_present": true' in run.stdout and '"token_from": "file"' in run.stdout
+    assert "a-fake-token-value" not in run.stdout + run.stderr
+    assert "a-fake-token-value" not in (checkout / ".git" / "config").read_text()
+
+
+def test_install_moves_the_token_out_of_the_tree(tmp_path):
+    dropped = tmp_path / "bars-token.txt"
+    dropped.write_text("a-fake-token-value\n", encoding="utf-8")
+    installed = tmp_path / "secrets" / "bars-engine-token"
+    env = dict(os.environ, BARS_TOKEN_FILE=str(installed), BARS_CHECKOUT=str(tmp_path), BLENDER_HERE_ROOT=str(tmp_path))
+    run = subprocess.run([sys.executable, str(DRIVER), "install", str(dropped)], capture_output=True, text=True, env=env)
+    assert run.returncode == 0, run.stderr
+    assert installed.read_text().strip() == "a-fake-token-value"
+    assert oct(installed.stat().st_mode)[-3:] == "600"
+    assert not dropped.exists()  # out of the tree, so a stray git add cannot reach it
+    assert "a-fake-token-value" not in run.stdout + run.stderr

@@ -2,11 +2,10 @@
 
 The connected GitHub app can read bars-engine and commit through the API, but a `git push` needs a credential inside
 this VM and the app's is not handed to it: git answers "could not read Username for 'https://github.com'". So the
-credential is a project secret. Add `BARS_ENGINE_TOKEN` in this project's Settings -> Secrets: a classic token with the
-`public_repo` scope (bars-engine is public, and a fine-grained token cannot be scoped to a repository owned by another
-user's account, so its repository picker comes up empty). Every shell in the project reads that file, so no session
-needs to be told the value, and nothing here writes it anywhere: the helper below reads the variable when git asks for
-it.
+credential is a file the session reads. Put a classic token with the `public_repo` scope in TOKEN_FILE, or set
+`BARS_ENGINE_TOKEN` where a shell already has it: a fine-grained token cannot be scoped to a repository under another
+user's account, which is where bars-engine lives. Nothing here prints or copies the value; the helper asks for it when
+git does.
 
   python3 council/tools/bars_git.py check          # is there a token, and does the remote answer
   python3 council/tools/bars_git.py setup          # point this checkout's credential helper at the variable
@@ -29,8 +28,11 @@ CHECKOUT = Path(os.environ.get("BARS_CHECKOUT", ROOT / "bars-engine"))
 HELPER = ('!f() { if [ "$1" = get ]; then echo username=x-access-token; '
           'echo "password=${%s}"; fi; }; f' % TOKEN_VAR)
 
-MISSING = (f"no {TOKEN_VAR} in this session's environment. Add it in Settings -> Secrets as a classic token with the "
-           f"public_repo scope, then run this again in a new shell.")
+# a file, because this client has no secrets panel to write the environment from: mode 600, outside the repo
+TOKEN_FILE = Path(os.environ.get("BARS_TOKEN_FILE", Path.home() / ".cache" / "freebuff-project" / "bars-engine-token"))
+
+MISSING = (f"no {TOKEN_VAR} in the environment and no token file at {TOKEN_FILE}. Put a classic token with the "
+           f"public_repo scope in that file (chmod 600) and run this again.")
 
 
 def say(msg):
@@ -38,7 +40,20 @@ def say(msg):
 
 
 def token():
-    return os.environ.get(TOKEN_VAR, "").strip()
+    """The token, from the environment if a shell has it, else from the file. Never printed: callers report its source."""
+    value = os.environ.get(TOKEN_VAR, "").strip()
+    if value:
+        return value
+    try:
+        return TOKEN_FILE.read_text(encoding="utf-8").strip()
+    except OSError:
+        return ""
+
+
+def token_source():
+    if os.environ.get(TOKEN_VAR, "").strip():
+        return "env"
+    return "file" if token() else "none"
 
 
 def git(*args, check=False):
@@ -50,7 +65,8 @@ def check():
     """Whether a push could work: the checkout, the token, the helper, and the remote with the token applied."""
     have_token = bool(token())
     report = {"checkout": str(CHECKOUT), "checkout_present": (CHECKOUT / ".git").exists(),
-              "token_var": TOKEN_VAR, "token_present": have_token,
+              "token_var": TOKEN_VAR, "token_file": str(TOKEN_FILE), "token_present": have_token,
+              "token_from": token_source(),
               "remote": git("remote", "get-url", "origin").stdout.strip() or REMOTE}
     ready = False
     if not report["checkout_present"]:
@@ -82,6 +98,22 @@ def setup():
     return 0
 
 
+def install(source):
+    """Move a token the user dropped in the tree to TOKEN_FILE, mode 600, and say only that it is there."""
+    src = Path(source).expanduser()
+    if not src.is_file():
+        raise SystemExit(f"no file at {src}")
+    value = src.read_text(encoding="utf-8").strip()
+    if not value:
+        raise SystemExit(f"{src} is empty")
+    TOKEN_FILE.parent.mkdir(parents=True, exist_ok=True)
+    TOKEN_FILE.write_text(value + "\n", encoding="utf-8")  # written before the source goes, so a failure cannot lose it
+    TOKEN_FILE.chmod(0o600)
+    src.unlink()
+    say(f"token installed at {TOKEN_FILE} (mode 600); {src} removed, and the value was not printed or committed")
+    return 0
+
+
 def push(branch):
     if not token():
         raise SystemExit(MISSING)
@@ -101,13 +133,17 @@ def push(branch):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Push to bars-engine with the project's token.")
-    ap.add_argument("command", choices=("check", "setup", "push"))
-    ap.add_argument("branch", nargs="?", default="")
+    ap.add_argument("command", choices=("check", "setup", "push", "install"))
+    ap.add_argument("branch", nargs="?", default="", help="the branch for push, or the file for install")
     a = ap.parse_args(argv)
     if a.command == "check":
         return check()
     if a.command == "setup":
         return setup()
+    if a.command == "install":
+        if not a.branch:
+            raise SystemExit("install needs the path of the file holding the token")
+        return install(a.branch)
     if not a.branch:
         raise SystemExit("push needs a branch name, e.g. push agent/j7-r1-checks")
     return push(a.branch)
