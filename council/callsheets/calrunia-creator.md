@@ -201,3 +201,8 @@ Re-render runs in the background (about 40 min, bpy==5.2.2 into /home/user/blenv
 sprout `*.glb` is in Git LFS and cloud sessions cannot push LFS: name models `.glb.bin`. Hand off at 150k.
 3D math (2026-10-21, `docs/3d-math.md`): before the next mocap or sleeve round, try the cheap fixes first: quaternion
 BVH import, a per-bone roll check, and half the wrist twist on the lower forearm; frame the figure with `frameSphere`.
+
+Robe clipping fix (2026-10-22, sprout #72, stacked on #71, branch `claude/project-thread-8zq73n`): the legs are hidden
+under each cut's covered band, and the baked robe rides on thigh and shin capsules (docs/3d-math.md rule 8). Probe:
+`tools/figure-legs-probe.mjs`. Left open: the coat's side slits show the robe's inside where the masked leg would be
+(1 to 2 % of masked points), not judged at full size.
