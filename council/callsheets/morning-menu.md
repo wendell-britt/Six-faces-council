@@ -4,6 +4,7 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
+2026-10-22, thread "Morning menu catch-up": key answers 200. bar_read ran on the five 10-21 sealed lines (join 3, work-today 1, defer 1), on main. Annastasia's campaign has no call sheet to be its home; the Between spark was already replanted on bars-engine (carry answered "not needed"). Steps menu-key-match-01..03 ticked. NEXT: the weekly unchosen-read routine (see Unchosen lines below) once bars-engine branch claude/project-thread-klpz41 has merged.
 2026-10-20, thread "Morning lists, first real read": #314 merged. The 10-20 morning is gathered on main (no sealed
 lines: the menu key still answers 401) and the faces read today's slate of 16 list items: work-today 3 (send Annastasia
 the draft, #311, #308), join 2, defer 7, let-go-offered 4. Positions tb-lists-are-bars, tb-slate, tb-pick-carries-read
