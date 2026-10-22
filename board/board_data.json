@@ -11855,6 +11855,125 @@
    "auto": true,
    "pos": "The next piece of work is a research run on how games and film render wide hanging sleeves like the J5 robe's. That covers hiding the forearm and hand inside the sleeve, sleeve bones or skinning compared with cloth, colliders against the arm, a cuff that keeps its shape, and how studios test it. It produces a short answer page and one cheap probe-first change to the creator. Any environment can pick it up from the brief in council/callsheets/calrunia-creator.md (\"Sleeve research run\"). This stands unless you flip it.",
    "why": "Wendell, 2026-10-22: \"Let's do a best practice research run on how to render the sleeve style we're looking for... add this to the board so that other environments can pick up from here\"."
+  },
+  {
+   "id": "tw-ruling-levels",
+   "faces": [
+    "sage",
+    "regent"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "Your message is recorded as a ruling: the six faces correspond to the integral levels, so skilled play can show the level of complexity and development a player works at. Players are not told at the start; it emerges through play. The altitude claim stays bounded to one line or domain, with evidence, a time, an uncertainty and a way to correct it, and it never becomes a statement about the person's worth. This stands unless you flip it.",
+   "why": "Your words, 2026-10-22: \"Not nothing these faces do correspond to the integral levels so they do show what level of complexity and level of development they are working with the players don't need to know this at the beginning but will emerge through skillful play\". It meets the face-namespaces decision (forbidden inferences 2, 3 and 16), which bars an undisclosed altitude judgment. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), section 1A."
+  },
+  {
+   "id": "tw-ruling-streaks",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "Your message is recorded as a ruling: streaks are allowed as assessment data for a coach or teacher, showing where and under what context a run was not maintained. Players see no countdown, no guilt message and no penalty, and declared rest pauses a run. This flips the no-streak position in the inner-vessel and ttv passes. This stands unless you flip it.",
+   "why": "Your words, 2026-10-22: \"We can allow streaks at this will be data for any coach or teacher that's using this as an assessment tool. But it's not coercive just emergent data of where and under what context streaks weren't maintained\". Source: bars-engine docs/the-work-dbt-extension.md (PR #427), C1."
+  },
+  {
+   "id": "tw-ruling-reward",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "Your message is recorded as a ruling: no particular answer is more rewarding than another, and engagement is rewarded. Engagement means taking the step, and an answer, a pass and a not-now all count the same. Rewards never scale with length or intimacy. This stands unless you flip it.",
+   "why": "Your words, 2026-10-22: \"No particular answer can be more rewarding than another but we do want to reward people for engaging\". The pass rule keeps intimate disclosure from becoming progression currency (Quickstart). Source: bars-engine docs/the-work-dbt-extension.md (PR #427), C20."
+  },
+  {
+   "id": "tw-ruling-adapt",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "Your message is recorded as a ruling: The Work and DBT are adapted, cited on a works-cited page, and made your own. Skills carry generic names with a lineage line and a note on what changed. Whether adaptation needs the rights holders' permission is a question for counsel. This stands unless you flip it.",
+   "why": "Your words, 2026-10-22: \"My plan is to adapt the work and DBT. These will be in a work cited page and one of the main goals is to make these implementations my own\". Source: bars-engine docs/the-work-dbt-extension.md (PR #427), section 8 and C10."
+  },
+  {
+   "id": "tw-shadow-kinds",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "Player-facing and council text says shadow kinds (forgetting, distracting, dissociating, numbness) and never faces, because face belongs to the Six Faces namespace. This stands unless you flip it.",
+   "why": "Settled by the face-namespaces decision and the 2026-10-17 perceptual-shadow note. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), C3."
+  },
+  {
+   "id": "tw-pause-not-skip",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "A pause is not a skip. The daemon still holds the way, and Step back, Calm, Take it home and the room's rest by the door are the exits on every page. This holds in every tier. This stands unless you flip it.",
+   "why": "Your ruling of 2026-10-10 (no skip at a daemon) and the research note's visible, chosen, exitable test. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), C4."
+  },
+  {
+   "id": "tw-skill-branch",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "The Work is one skill branch built on the registry's T04 Belief Inquiry, and DBT skills are registry entries with the same fields. Each face's tunnel teaches first the part its lens fits, and any block forks to the branch from any tunnel. Inquiry starts after the daemon is heard, with its permission. This stands unless you flip it.",
+   "why": "LEVELS.md rules that branches belong to skills and tunnels dress them; the tool-scout rule says to start from what exists. The face table is the input to each tunnel's pass. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), 3.2 to 3.4."
+  },
+  {
+   "id": "tw-lines-local",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "A thought is a line the player writes, attached to a creature or a daemon's voice. Lines stay on the device with Forget and Delete on each, as Big Mind's kept cards do. Syncing needs its own permission grant. This stands unless you flip it.",
+   "why": "Words stay on the page (a standing choice), and the privacy rules bind audience, purpose and duration. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), 3.1 and C6."
+  },
+  {
+   "id": "tw-coach-grant",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "A coach or teacher sees streak or assessment data only through a grant the player can see and stop. The player sees what is shared and with whom. For children a guardian is a further authority. This stands unless you flip it.",
+   "why": "The permission envelope binds audience, purpose, duration and revocation (Quickstart). Source: bars-engine docs/the-work-dbt-extension.md (PR #427), C19."
+  },
+  {
+   "id": "tw-wise-mind",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "Wise Mind is the centre of the self; emotion mind is the Emotional Body daemon and reasonable mind is the Architect's tunnel. Big Mind keeps its name for its own cave. DBT's words are cited and never renamed. This stands unless you flip it.",
+   "why": "The Regent's term test: a source's word is cited, not renamed. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), 3.3 and C13."
+  },
+  {
+   "id": "tw-no-ai",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "Every prompt in the Work and DBT branches has a template, so the whole loop plays with no model. Any AI reading of a player's lines is an optional proposal. This stands unless you flip it.",
+   "why": "The Portland community's allergy to AI and the ontology's rule that AI inference is a proposal only. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), C17."
   }
  ],
  "questions": [
@@ -18793,6 +18912,141 @@
      "v": "steer",
      "label": "None yet, I will steer in the box",
      "c": "Say what to change, or which parts of each to combine, and the council redraws."
+    }
+   ]
+  },
+  {
+   "id": "tw-audience",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "work-dbt 1",
+   "q": "Which tiers are in scope for the Work and DBT extension, and in what order? The council recommends A.",
+   "why_you": "Audience, consent and release are yours. The 2026-10-17 perceptual-shadow note says no children's version is in scope, while the inner-creatures strand plans for children, and your brief has three tiers.",
+   "not_before": "Raised by work-dbt pass 1, 2026-10-22. The record's no-kids position is narrower than the inner-creatures direction.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Adult and middle/high school first, children later (recommended)",
+     "c": "Keeps to the research note's floor and puts the clinician read ahead of the children's tier."
+    },
+    {
+     "v": "B",
+     "label": "B. All three tiers together",
+     "c": "Adds child data, adult presence and mortal spirits for children to the first build."
+    },
+    {
+     "v": "C",
+     "label": "C. Children first",
+     "c": "Puts the whole safety burden on the least-evidenced tier."
+    }
+   ]
+  },
+  {
+   "id": "tw-gate-input",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "work-dbt 1",
+   "q": "How does the harm gate know that something happened? The council recommends A.",
+   "why_you": "A reporting path touches money, consent and release, and needs a legal read on child data and mandated reporting. The record reads no free text and keeps nothing.",
+   "not_before": "Raised by work-dbt pass 1, 2026-10-22. No children's tier existed in the record before.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. The player's own button or choice only (recommended)",
+     "c": "Keeps the non-AI route and the privacy rules, and cannot catch what a player does not choose to say."
+    },
+    {
+     "v": "B",
+     "label": "B. The same, plus a trusted adult chosen in advance who is told when the button is used",
+     "c": "Adds a guardian model and a data path."
+    },
+    {
+     "v": "C",
+     "label": "C. The system reads free text",
+     "c": "Breaks the non-AI route and the permission envelope, and needs counsel."
+    }
+   ]
+  },
+  {
+   "id": "tw-clinician",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "work-dbt 1",
+   "q": "Is a clinician lined up to read the Work and DBT branches, the harm gate and the child tier before any child or trauma-tier player sees a build? The council recommends A.",
+   "why_you": "Only you know who is available. The inner-creatures sheet lists a clinician read as pending and nobody has asked.",
+   "not_before": "Raised by work-dbt pass 1, 2026-10-22.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Yes, a named clinician reads them first (recommended)",
+     "c": "Unblocks the child and trauma tiers."
+    },
+    {
+     "v": "B",
+     "label": "B. Not yet, so those tiers wait",
+     "c": "Scope stays on the adult skills-practice tier."
+    }
+   ]
+  },
+  {
+   "id": "tw-permission",
+   "faces": [
+    "regent"
+   ],
+   "pass": "work-dbt 1",
+   "q": "Do you want counsel to read the adaptation of The Work and DBT before anything ships? The council recommends A.",
+   "why_you": "Money and anything that names a person are reserved, and whether adaptation needs the rights holders' permission is a legal question.",
+   "not_before": "Raised by work-dbt pass 1, 2026-10-22, after your ruling that the practices are adapted and cited.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Yes, before the first public build (recommended)",
+     "c": "Costs a legal read and settles whether permission is needed."
+    },
+    {
+     "v": "B",
+     "label": "B. Only if a rights holder objects",
+     "c": "Ships sooner and carries the risk of a takedown or a rework."
+    },
+    {
+     "v": "C",
+     "label": "C. Seek permission up front",
+     "c": "Carries a licence cost and may allow the original names."
+    }
+   ]
+  },
+  {
+   "id": "tw-level-disclosure",
+   "faces": [
+    "sage",
+    "diplomat",
+    "regent"
+   ],
+   "pass": "work-dbt 1",
+   "q": "How does a player learn that play can show their level, and can they correct it? The council recommends A.",
+   "why_you": "You ruled that levels emerge through play and players need not know at the start. The face-namespaces decision bars an undisclosed, uncorrectable altitude judgment, and the choice between telling at the start, at first use or at the coach view is yours.",
+   "not_before": "Raised by work-dbt pass 1, 2026-10-22, from your ruling that day.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Told once at first use, with a way to contest the reading and to play without it (recommended)",
+     "c": "Keeps the reveal emergent and meets the namespace decision's disclosure and contest duties."
+    },
+    {
+     "v": "B",
+     "label": "B. Told only when a coach or teacher view is switched on",
+     "c": "Fewer players are told and the reading is invisible to a solo player."
+    },
+    {
+     "v": "C",
+     "label": "C. Never shown to the player",
+     "c": "Needs the namespace decision amended, and a child's tier would carry it without their knowledge."
     }
    ]
   }
