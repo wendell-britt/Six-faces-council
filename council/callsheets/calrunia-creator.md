@@ -206,3 +206,19 @@ Robe clipping fix (2026-10-22, sprout #72, stacked on #71, branch `claude/projec
 under each cut's covered band, and the baked robe rides on thigh and shin capsules (docs/3d-math.md rule 8). Probe:
 `tools/figure-legs-probe.mjs`. Left open: the coat's side slits show the robe's inside where the masked leg would be
 (1 to 2 % of masked points), not judged at full size.
+
+### Sleeve research run (next, any environment; board row `rc-sleeve-research`)
+
+Wendell, 2026-10-22, after the leg fix: "ok its perfect. We still have some work to do on the sleeves... Let's do a best
+practice research run on how to render the sleeve style we're looking for."
+
+1. Research, through one worker search, how games and film render wide hanging (hanfu-style) sleeves. Cover hiding the
+   forearm and hand inside the sleeve (masking, as rule 8 does for the legs), sleeve bones or arm-driven skinning compared
+   with cloth, arm capsules sized to the sleeve's outer layer, cuffs that keep their shape, the wrist twist split
+   (docs/3d-math.md rule 3), and how studios test for poke-through.
+2. Write a short plain answer page (HTML Artifact): what the pros do, what we have now in the creator (the baked robe,
+   arm capsules in `slice/figure-robe.js`, `armShare`), and what is missing.
+3. Make the cheapest change the research points to in sprout (`slice/figure.js`, `slice/figure-robe.js`, branch off
+   `claude/project-thread-8zq73n` / #72). Prove it with a probe like `tools/figure-legs-probe.mjs`, cast from the arm
+   points, and give a one-click preview at `?beat=satchel&form=figure`.
+4. Tell the "J5 sleeve round 15b" thread the approach, and add any garment rule to docs/3d-math.md.
