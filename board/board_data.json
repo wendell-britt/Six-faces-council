@@ -38294,5 +38294,317 @@
    "rung": 0,
    "next": "2026-10-23"
   }
+ },
+ "intake": {
+  "date": "2026-10-21",
+  "items": [
+   {
+    "id": "menu-task:cmviclyuf0004fikx8pdbhesx",
+    "text": "FInish Podcast Pipeline",
+    "bridge": {
+     "kind": "strand",
+     "strand": "podcast",
+     "strandTitle": "Podcasts and outreach (MTGOA, Flirtcraft)",
+     "why": "The podcast strand holds the canonical pipeline and the posting flow."
+    },
+    "read": {
+     "face": "architect",
+     "kernel": "You want the podcast to run as one repeatable sitting instead of rebuilt by hand each episode.",
+     "taskId": "cmviclyuf0004fikx8pdbhesx",
+     "missing": [
+      "next step"
+     ],
+     "gathered": [
+      {
+       "piece": "next step",
+       "found": "The call sheet records the pipeline as canonical (PIPELINE.md) and names the Flirtcraft clip posts via the Mac as the open step.",
+       "source": "callsheet:podcast"
+      }
+     ],
+     "workable": true,
+     "opponent": {
+      "kind": "callsheet",
+      "ref": "podcast",
+      "what": "Flirtcraft clip posts scheduled from his Mac",
+      "title": "podcast",
+      "entry": "- 2026-10-21 (brief for the next thread, Flirtcraft posts): device access works from threads (ask with connect_device, then device_request_folder_access for Downloads and The Library). On his Mac, in "
+     },
+     "factors": {
+      "signal": {
+       "wroteToday": true,
+       "date": "2026-10-21",
+       "carryCount": 0,
+       "chargeLevel": null,
+       "firstDay": "2026-10-21",
+       "note": "On the 10-21 menu, no charge recorded."
+      },
+      "ready": {
+       "lineMissing": [],
+       "councilMissing": [],
+       "notes": 0,
+       "note": "The pipeline file exists; the clips are already scheduled."
+      },
+      "unlocks": {
+       "line": 0,
+       "council": 1,
+       "note": "Opens the next episode's posting sitting."
+      },
+      "waiting": {
+       "days": 1,
+       "note": "The pipeline step was marked done 10-21; the line carries the remainder."
+      }
+     },
+     "call": "join",
+     "decidedBy": "ready",
+     "why": "Fold it into the Flirtcraft posting thread; the pipeline is built and only the next episode's run is left."
+    }
+   },
+   {
+    "id": "menu-task:cmvicm0aj000dfikxn526y6xx",
+    "text": "Studying RPG story tools",
+    "bridge": {
+     "kind": "strand",
+     "strand": "chapter1-demo",
+     "strandTitle": "Chapter 1 demo (the Kickstarter gate)",
+     "why": "The Chapter 1 beat table's next step is an ink dialogue tool on each beat's lines."
+    },
+    "read": {
+     "face": "sage",
+     "kernel": "You want to learn how other RPG makers structure story so Chapter 1 can use it.",
+     "taskId": "cmvicm0aj000dfikxn526y6xx",
+     "missing": [
+      "next step"
+     ],
+     "gathered": [],
+     "workable": [
+      "next step"
+     ],
+     "opponent": {
+      "kind": "callsheet",
+      "ref": "chapter1-demo",
+      "what": "ink dialogue tool on each beat's lines",
+      "title": "chapter1-demo",
+      "entry": "Step 6, the Kickstarter video, waits on Wendell's go. Step 5 is done (above). A6 and A8 card fit needs a second player before any card changes. Sprout #52 to #55 are stacked and open; merge them in or"
+     },
+     "factors": {
+      "signal": {
+       "wroteToday": true,
+       "date": "2026-10-21",
+       "carryCount": 0,
+       "chargeLevel": null,
+       "firstDay": "2026-10-21",
+       "note": "On the 10-21 menu, no charge recorded."
+      },
+      "ready": {
+       "lineMissing": [
+        "next step"
+       ],
+       "councilMissing": [],
+       "notes": 0,
+       "note": "No study target named yet."
+      },
+      "unlocks": {
+       "line": 0,
+       "council": 1,
+       "note": "Feeds the ink dialogue step."
+      },
+      "waiting": {
+       "days": 1,
+       "note": "Nothing has sat."
+      }
+     },
+     "call": "join",
+     "decidedBy": "unlocks",
+     "why": "Let the ink dialogue step be the study: one tool read per beat, so the learning ships with Chapter 1."
+    }
+   },
+   {
+    "id": "menu-task:cmvicm1ed000mfikxanan8wzn",
+    "text": "Automated Outreach Emails",
+    "bridge": {
+     "kind": "strand",
+     "strand": "email-pipeline",
+     "strandTitle": "Email pipeline (drafts on the board, Send as permission)",
+     "why": "The board email pipeline drafts on the Outreach tab and his Send is the permission."
+    },
+    "read": {
+     "face": "regent",
+     "kernel": "You want outreach to go out on its own so it stops waiting on your hands.",
+     "taskId": "cmvicm1ed000mfikxanan8wzn",
+     "missing": [
+      "next step"
+     ],
+     "gathered": [
+      {
+       "piece": "next step",
+       "found": "Drafts wait on the Outreach tab; the Mark Walsh draft waits on his Send.",
+       "source": "callsheet:email-pipeline"
+      }
+     ],
+     "workable": true,
+     "opponent": {
+      "kind": "callsheet",
+      "ref": "email-pipeline",
+      "what": "Mark Walsh draft waiting on his Send",
+      "title": "email-pipeline",
+      "entry": "After #351 merges and the board is republished: export the contacts collection with ArtifactData, run python3 board/email_pipeline.py draft --store <dir> --contact demo-wendell-self ... to place a tes"
+     },
+     "factors": {
+      "signal": {
+       "wroteToday": true,
+       "date": "2026-10-21",
+       "carryCount": 0,
+       "chargeLevel": null,
+       "firstDay": "2026-10-21",
+       "note": "On the 10-21 menu, no charge recorded."
+      },
+      "ready": {
+       "lineMissing": [],
+       "councilMissing": [],
+       "notes": 0,
+       "note": "Built; one draft waits on his Send."
+      },
+      "unlocks": {
+       "line": 0,
+       "council": 1,
+       "note": "Each Send clears one guest pitch."
+      },
+      "waiting": {
+       "days": 1,
+       "note": "The Mark Walsh draft."
+      }
+     },
+     "call": "work-today",
+     "decidedBy": "ready",
+     "why": "Press Send on the Mark Walsh draft; the pipeline is built and that is the only step left."
+    }
+   },
+   {
+    "id": "menu-task:cmvicm2f7000vfikx347d423e",
+    "text": "Annastasia Campaign",
+    "bridge": {
+     "kind": "none",
+     "shadow": "What does her campaign open for the council's own work?",
+     "why": "No call sheet or board row owns it; the work lives in bars-engine pull requests."
+    },
+    "read": {
+     "face": "diplomat",
+     "kernel": "You want her campaign live so her people can find and back it.",
+     "taskId": "cmvicm2f7000vfikx347d423e",
+     "missing": [
+      "home",
+      "blocker"
+     ],
+     "gathered": [
+      {
+       "piece": "blocker",
+       "found": "A real STUCK email needs Resend on the deployment; #417 and #418 are stacked.",
+       "source": "pr:johnair01/bars-engine#418"
+      }
+     ],
+     "workable": [
+      "home"
+     ],
+     "opponent": {
+      "kind": "needs-work",
+      "ref": "2026-10-15-pull-195357#questions/np-age-band",
+      "what": "nonprofit board age band answer",
+      "title": "High school, about 14 to 18"
+     },
+     "factors": {
+      "signal": {
+       "wroteToday": true,
+       "date": "2026-10-21",
+       "carryCount": 0,
+       "chargeLevel": null,
+       "firstDay": "2026-10-21",
+       "note": "On the 10-21 menu, no charge recorded."
+      },
+      "ready": {
+       "lineMissing": [
+        "home"
+       ],
+       "councilMissing": [],
+       "notes": 0,
+       "note": "Campaign page #402 exists; email waits on Resend."
+      },
+      "unlocks": {
+       "line": 1,
+       "council": 0,
+       "note": "Opens her Patreon and GoFundMe intake."
+      },
+      "waiting": {
+       "days": 1,
+       "note": "Stacked pull requests."
+      }
+     },
+     "call": "defer",
+     "decidedBy": "ready",
+     "why": "Give it a home first (a call sheet for her campaign), then add Resend so the stacked pull requests can merge."
+    }
+   },
+   {
+    "id": "menu-task:cmvicm46a0014fikx7f01v82r",
+    "text": "Character Creation for Calrunia",
+    "bridge": {
+     "kind": "strand",
+     "strand": "chapter1-demo",
+     "strandTitle": "Chapter 1 demo (the Kickstarter gate)",
+     "why": "The creator is the Infinite Arcade opening of Chapter 1."
+    },
+    "read": {
+     "face": "shaman",
+     "kernel": "You want players to step into the world by becoming someone in it.",
+     "taskId": "cmvicm46a0014fikx7f01v82r",
+     "missing": [
+      "next step"
+     ],
+     "gathered": [
+      {
+       "piece": "next step",
+       "found": "Chapter 1's open step is his go on the Kickstarter video and a second player for the A6 and A8 cards.",
+       "source": "callsheet:chapter1-demo"
+      }
+     ],
+     "workable": true,
+     "opponent": {
+      "kind": "callsheet",
+      "ref": "chapter1-demo",
+      "what": "second player for the A6 and A8 cards",
+      "title": "chapter1-demo",
+      "entry": "Step 6, the Kickstarter video, waits on Wendell's go. Step 5 is done (above). A6 and A8 card fit needs a second player before any card changes. Sprout #52 to #55 are stacked and open; merge them in or"
+     },
+     "factors": {
+      "signal": {
+       "wroteToday": true,
+       "date": "2026-10-21",
+       "carryCount": 0,
+       "chargeLevel": null,
+       "firstDay": "2026-10-21",
+       "note": "On the 10-21 menu, no charge recorded."
+      },
+      "ready": {
+       "lineMissing": [],
+       "councilMissing": [],
+       "notes": 0,
+       "note": "Round 5 is already in a thread."
+      },
+      "unlocks": {
+       "line": 0,
+       "council": 1,
+       "note": "Gate to NPC guide models."
+      },
+      "waiting": {
+       "days": 1,
+       "note": "Nothing has sat."
+      }
+     },
+     "call": "join",
+     "decidedBy": "ready",
+     "why": "Round 5 already carries it; look at the preview and name what the creator still lacks."
+    }
+   }
+  ],
+  "read_at": "2026-10-22T02:01:09Z"
  }
 }
