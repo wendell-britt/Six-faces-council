@@ -1,0 +1,98 @@
+{
+ "date": "2026-10-22",
+ "kind": "board-pull",
+ "newest_save": "2026-10-22T03:03:46.311Z",
+ "answers": {
+  "rc-legs-durable": {
+   "kind": "position",
+   "savedAt": "2026-10-22T03:03:43.096Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rc-sleeve-research": {
+   "kind": "position",
+   "savedAt": "2026-10-22T03:03:46.311Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "j5-sleeve-hem-look-14",
+   "at": "2026-10-22T02:56:48.377Z",
+   "what": "file note",
+   "file": "sleeve-page",
+   "title": "Panels against the one-piece sleeve",
+   "note": "significantly better. The main issue now is that the hem doesn't follow the outside of the cloth. There are spots where it's not and it should be on the inside and outside of the cloth not just painted on",
+   "do": "Look at the sleeves rebuilt from your note on the panels (\"the biggest issue is that the sleeves aren't operating as one piece The hand is moving through them\"). Each sleeve is one piece again, with the hand inside it and no strings, and only its last 12 cm moves as cloth, the way the skirt's hem hangs from the skirt. That band sways about 5 cm where the skirt's hem sways 26, because a cuff that hugs the hand has no room to trail it. Open the page in this step's files and start with the slow-motion clip: round 13's panels on the left, the one-piece sleeve on the right. Under this step, note 'yes', or 'too stiff' if the sleeve end should swing more (the next round then widens the cuff and lengthens the band, and checks how often the hand shows), or what else reads wrong."
+  },
+  {
+   "id": "j5-sleeve-hem-look-14",
+   "at": "2026-10-22T02:56:51.269Z",
+   "what": "ticked",
+   "do": "Look at the sleeves rebuilt from your note on the panels (\"the biggest issue is that the sleeves aren't operating as one piece The hand is moving through them\"). Each sleeve is one piece again, with the hand inside it and no strings, and only its last 12 cm moves as cloth, the way the skirt's hem hangs from the skirt. That band sways about 5 cm where the skirt's hem sways 26, because a cuff that hugs the hand has no room to trail it. Open the page in this step's files and start with the slow-motion clip: round 13's panels on the left, the one-piece sleeve on the right. Under this step, note 'yes', or 'too stiff' if the sleeve end should swing more (the next round then widens the cuff and lengthens the band, and checks how often the hand shows), or what else reads wrong."
+  },
+  {
+   "id": "between-ari-formation-01",
+   "at": "2026-10-22T02:59:00.503Z",
+   "what": "note",
+   "note": "This isn't obviously enough a spell for them. They want to have a spellbook they can choose their spells from. Collaborative spells require both people to be in the room and it sends ain invitation/notification to the other person that the spell is about to begin. She does like spell work starting from the cushions. \n\nLoving to dance is something that she loves in our relationship and wants to see reflected in the app somehow. Pushhands is too martial, but she'd love if the two characters could do a dance together as a kind of minigame.",
+   "do": "Send Ari this, as it is or in your own words:\n\n\"Here is a spell idea for the Between, to see if it's the right kind of thing. SHARE THE LANTERN: you both sit on the cushions, then one of you waves. The lantern over the hollow brightens for both of you and the Between opens its eyes and turns toward the two of you. Two moves, sit and wave, cast together into one act. Would you cast it, or does it miss? And one question: when you said you loved to dance, what were you doing? Which screen, and what moved?\""
+  },
+  {
+   "id": "between-ari-formation-01",
+   "at": "2026-10-22T02:59:01.798Z",
+   "what": "ticked",
+   "do": "Send Ari this, as it is or in your own words:\n\n\"Here is a spell idea for the Between, to see if it's the right kind of thing. SHARE THE LANTERN: you both sit on the cushions, then one of you waves. The lantern over the hollow brightens for both of you and the Between opens its eyes and turns toward the two of you. Two moves, sit and wave, cast together into one act. Would you cast it, or does it miss? And one question: when you said you loved to dance, what were you doing? Which screen, and what moved?\""
+  },
+  {
+   "id": "seattle-launch-01",
+   "at": "2026-10-22T03:00:29.395Z",
+   "what": "note",
+   "note": "Here are a list of people I could reach out to: \n\nThe Hollow- a dancer House\nWombat House (A dancer house my partner Valkrie lives at) \nPickle Popcorn Palace\n\nThese are places we could choose from. I believe either of my partners would be willing to co-hold this with me (Ari or Valkyrie)",
+   "do": "Name one person who will co-hold the Seattle night with you. It can be a friend, a dancer from your community, or someone who has already said they want to support the next stage. Write their name in this step's note. If nobody comes to mind, write 'none yet' and Claude will suggest three from your email replies and recent threads."
+  },
+  {
+   "id": "seattle-launch-01",
+   "at": "2026-10-22T03:00:33.928Z",
+   "what": "ticked",
+   "do": "Name one person who will co-hold the Seattle night with you. It can be a friend, a dancer from your community, or someone who has already said they want to support the next stage. Write their name in this step's note. If nobody comes to mind, write 'none yet' and Claude will suggest three from your email replies and recent threads."
+  },
+  {
+   "id": "seattle-launch-02",
+   "at": "2026-10-22T03:01:08.762Z",
+   "what": "note",
+   "note": "Pickle Popcorn Palace, Wombat House, The Hollow, The WTF dance venue (WTF dancing seattle)",
+   "do": "Tell Claude which two or three Seattle rooms to ask for November 6. Write the names in this step's note, or write 'you choose' and Claude will research rooms that fit a book launch with a recording, then draft the venue asks for your Outreach tab. Nothing is sent until you press Send on a draft."
+  },
+  {
+   "id": "seattle-launch-02",
+   "at": "2026-10-22T03:01:09.493Z",
+   "what": "ticked",
+   "do": "Tell Claude which two or three Seattle rooms to ask for November 6. Write the names in this step's note, or write 'you choose' and Claude will research rooms that fit a book launch with a recording, then draft the venue asks for your Outreach tab. Nothing is sent until you press Send on a draft."
+  },
+  {
+   "id": "pushhands-footage-01",
+   "at": "2026-10-22T03:01:33.544Z",
+   "what": "note",
+   "note": "I need a link for this video for me to see.",
+   "do": "Watch the push hands video at about 2.0 seconds and say whether A's right hand touches B's left hand."
+  },
+  {
+   "id": "pushhands-footage-01",
+   "at": "2026-10-22T03:01:34.510Z",
+   "what": "ticked",
+   "do": "Watch the push hands video at about 2.0 seconds and say whether A's right hand touches B's left hand."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/j5-sleeve-hem-look-14: notes on \"Panels against the one-piece sleeve\": \"significantly better. The main issue now is that the hem doesn't follow the outside of the cloth. There are spots where it's not and it should be on the inside and outside of the cloth not just painted on\"",
+  "steps/between-ari-formation-01: note \"This isn't obviously enough a spell for them. They want to have a spellbook they can choose their spells from. Collaborative spells require both people to be in the room and it sends ain invitation/notification to the other person that the spell is about to begin. She does like spell work starting from the cushions. \n\nLoving to dance is something that she loves in our relationship and wants to see reflected in the app somehow. Pushhands is too martial, but she'd love if the two characters could do a dance together as a kind of minigame.\"",
+  "steps/seattle-launch-01: note \"Here are a list of people I could reach out to: \n\nThe Hollow- a dancer House\nWombat House (A dancer house my partner Valkrie lives at) \nPickle Popcorn Palace\n\nThese are places we could choose from. I believe either of my partners would be willing to co-hold this with me (Ari or Valkyrie)\"",
+  "steps/seattle-launch-02: note \"Pickle Popcorn Palace, Wombat House, The Hollow, The WTF dance venue (WTF dancing seattle)\"",
+  "steps/pushhands-footage-01: note \"I need a link for this video for me to see.\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
