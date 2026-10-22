@@ -124,8 +124,10 @@ The connected GitHub app reads bars-engine and commits to it through the API: th
 through an agent's context: fine for one small file, wasteful for a 664-line test.
 
 `council/tools/bars_git.py` closes that with a project secret. Add `BARS_ENGINE_TOKEN` in this project's
-Settings → Secrets as a fine-grained token for `johnair01/bars-engine` with Contents: read and write. Every shell in
-the project reads that file, so no session is told the value. Then:
+Settings → Secrets as a **classic** token with the `public_repo` scope. A fine-grained token cannot be scoped to a
+repository under another user's account, which is where bars-engine lives, so its repository picker comes up empty;
+bars-engine is public, so `public_repo` is the narrow classic scope that reaches it. Every shell in the project reads
+the secret file, so no session is told the value. Then:
 
 ```
 python3 council/tools/bars_git.py check        # 0 when a push from here would work now

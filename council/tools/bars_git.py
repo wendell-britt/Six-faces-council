@@ -2,9 +2,11 @@
 
 The connected GitHub app can read bars-engine and commit through the API, but a `git push` needs a credential inside
 this VM and the app's is not handed to it: git answers "could not read Username for 'https://github.com'". So the
-credential is a project secret. Add `BARS_ENGINE_TOKEN` in this project's Settings -> Secrets: a fine-grained token for
-`johnair01/bars-engine` with Contents: read and write. Every shell in the project reads that file, so no session needs
-to be told the value, and nothing here writes it anywhere: the helper below reads the variable when git asks for it.
+credential is a project secret. Add `BARS_ENGINE_TOKEN` in this project's Settings -> Secrets: a classic token with the
+`public_repo` scope (bars-engine is public, and a fine-grained token cannot be scoped to a repository owned by another
+user's account, so its repository picker comes up empty). Every shell in the project reads that file, so no session
+needs to be told the value, and nothing here writes it anywhere: the helper below reads the variable when git asks for
+it.
 
   python3 council/tools/bars_git.py check          # is there a token, and does the remote answer
   python3 council/tools/bars_git.py setup          # point this checkout's credential helper at the variable
@@ -27,8 +29,8 @@ CHECKOUT = Path(os.environ.get("BARS_CHECKOUT", ROOT / "bars-engine"))
 HELPER = ('!f() { if [ "$1" = get ]; then echo username=x-access-token; '
           'echo "password=${%s}"; fi; }; f' % TOKEN_VAR)
 
-MISSING = (f"no {TOKEN_VAR} in this session's environment. Add it in Settings -> Secrets as a fine-grained token for "
-           f"johnair01/bars-engine with Contents: read and write, then run this again in a new shell.")
+MISSING = (f"no {TOKEN_VAR} in this session's environment. Add it in Settings -> Secrets as a classic token with the "
+           f"public_repo scope, then run this again in a new shell.")
 
 
 def say(msg):
