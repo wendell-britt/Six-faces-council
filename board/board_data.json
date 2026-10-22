@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "positions": [
   {
    "id": "build",
@@ -31709,6 +31709,19 @@
      "architect"
     ],
     "pass": "wave-form1"
+   },
+   "cd-sleeve-one-piece": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-22",
+    "saved_at": "2026-10-22T00:51:46.667Z",
+    "record": "council/ledger/2026-10-22-pull-005146.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "architect",
+     "sage"
+    ],
+    "pass": "J5 round 14-15, sleeve hem band"
    }
   },
   "questions": {
