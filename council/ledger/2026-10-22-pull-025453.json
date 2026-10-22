@@ -1,0 +1,36 @@
+{
+ "date": "2026-10-22",
+ "kind": "board-pull",
+ "newest_save": "2026-10-22T02:54:53.301Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "menu-key-match-01",
+   "at": "2026-10-22T02:10:00.000Z",
+   "what": "ticked",
+   "do": "Make a new key, save it in your Passwords app first, then put it in Vercel."
+  },
+  {
+   "id": "menu-key-match-02",
+   "at": "2026-10-22T02:10:00.000Z",
+   "what": "ticked",
+   "do": "Put the key from your Passwords app in this project's cloud environment. If there is no edit button, delete the old entry and add it again."
+  },
+  {
+   "id": "menu-key-match-03",
+   "at": "2026-10-22T02:10:00.000Z",
+   "what": "ticked",
+   "do": "Put the same key in the GitHub secret the board-pull Action uses to recover a sealed menu."
+  },
+  {
+   "id": "meta-publishing-setup-03",
+   "at": "2026-10-22T02:54:53.301Z",
+   "what": "ticked",
+   "do": "Paste the token into the council repo's GitHub secrets."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
