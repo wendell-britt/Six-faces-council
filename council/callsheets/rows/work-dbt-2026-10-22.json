@@ -118,74 +118,81 @@
    "auto": true,
    "pos": "Every prompt in the Work and DBT branches has a template, so the whole loop plays with no model. Any AI reading of a player's lines is an optional proposal. This stands unless you flip it.",
    "why": "The Portland community's allergy to AI and the ontology's rule that AI inference is a proposal only. Source: bars-engine docs/the-work-dbt-extension.md (PR #427), C17."
-  }
- ],
- "questions": [
+  },
   {
    "id": "tw-audience",
    "faces": [
     "regent",
-    "diplomat"
+    "diplomat",
+    "architect"
    ],
    "pass": "work-dbt 1",
-   "q": "Which tiers are in scope for the Work and DBT extension, and in what order? The council recommends A.",
-   "why_you": "Audience, consent and release are yours. The 2026-10-17 perceptual-shadow note says no children's version is in scope, while the inner-creatures strand plans for children, and your brief has three tiers.",
-   "not_before": "Raised by work-dbt pass 1, 2026-10-22. The record's no-kids position is narrower than the inner-creatures direction.",
-   "options": [
-    {
-     "v": "A",
-     "label": "A. Adult and middle/high school first, children later (recommended)",
-     "c": "Keeps to the research note's floor and puts the clinician read ahead of the children's tier."
-    },
-    {
-     "v": "B",
-     "label": "B. All three tiers together",
-     "c": "Adds child data, adult presence and mortal spirits for children to the first build."
-    },
-    {
-     "v": "C",
-     "label": "C. Children first",
-     "c": "Puts the whole safety burden on the least-evidenced tier."
-    }
-   ]
+   "auto": true,
+   "pos": "Adults and middle/high school come first. Children are a declared non-target for the first build, which ships with the child code paths absent, until a named clinician has read the child tier (tw-tier-gate). Mortal spirits and streak repair do not reach children before that. This stands unless you flip it.",
+   "why": "Five faces recommended A. Citations: the 2026-10-17 perceptual-shadow note (no children's version in scope), C2 and C14 of the design doc. Audience is reserved, so this is a stand-still position the owner can ratify or flip. Source: council/passes/6FACE_PASS_work-dbt1_2026-10-22.md"
   },
   {
    "id": "tw-gate-input",
    "faces": [
     "regent",
-    "challenger"
+    "challenger",
+    "diplomat"
    ],
    "pass": "work-dbt 1",
-   "q": "How does the harm gate know that something happened? The council recommends A.",
-   "why_you": "A reporting path touches money, consent and release, and needs a legal read on child data and mandated reporting. The record reads no free text and keeps nothing.",
-   "not_before": "Raised by work-dbt pass 1, 2026-10-22. No children's tier existed in the record before.",
-   "options": [
-    {
-     "v": "A",
-     "label": "A. The player's own button or choice only (recommended)",
-     "c": "Keeps the non-AI route and the privacy rules, and cannot catch what a player does not choose to say."
-    },
-    {
-     "v": "B",
-     "label": "B. The same, plus a trusted adult chosen in advance who is told when the button is used",
-     "c": "Adds a guardian model and a data path."
-    },
-    {
-     "v": "C",
-     "label": "C. The system reads free text",
-     "c": "Breaks the non-AI route and the permission envelope, and needs counsel."
-    }
-   ]
+   "auto": true,
+   "pos": "The harm gate fires on the player's own button or choice only. Nothing the player writes is read for them. The trusted-adult field exists empty and off until a guardian model and counsel have read it, and the cave never claims it catches harm. This stands unless you flip it.",
+   "why": "Five faces recommended A. Citations: standing rules 5, 12 and 15 (no free-text reading, a non-AI route, words stay on the page), C5 and C16 of the design doc. B and C are closed by the record. Source: council/passes/6FACE_PASS_work-dbt1_2026-10-22.md"
   },
   {
-   "id": "tw-clinician",
+   "id": "tw-level-disclosure",
    "faces": [
+    "sage",
+    "regent",
+    "architect"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "A reading of a player's level is told once at first use, as a bounded claim (domain, evidence, time, uncertainty, correction path), with a way to contest it and to play without it. No reading goes to a coach before the player has been told. Every reward is the same whether the player accepts the reading or not. This stands unless you flip it.",
+   "why": "Five faces recommended A. Citations: the face-namespaces decision (forbidden inferences 2, 3 and 16), C18, and your ruling tw-ruling-levels that players need not know at the start. Source: council/passes/6FACE_PASS_work-dbt1_2026-10-22.md"
+  },
+  {
+   "id": "tw-tier-gate",
+   "faces": [
+    "regent",
     "shaman",
+    "architect"
+   ],
+   "pass": "work-dbt 1",
+   "auto": true,
+   "pos": "No child or trauma-tier build ships without a named reader's written read of the Work and DBT branches, the harm gate and the tier wording. Until tw-clinician is answered, those tiers wait and the adult skills tier makes no treatment claim. This stands unless you flip it.",
+   "why": "Regent and Architect set the gate and the Diplomat, Shaman and Challenger agreed; the only open fact is whether a clinician exists (tw-clinician). Citations: C11, the inner-creatures sheet, standing rule 11. Source: council/passes/6FACE_PASS_work-dbt1_2026-10-22.md"
+  },
+  {
+   "id": "tw-coach-test",
+   "faces": [
+    "challenger",
     "regent"
    ],
    "pass": "work-dbt 1",
-   "q": "Is a clinician lined up to read the Work and DBT branches, the harm gate and the child tier before any child or trauma-tier player sees a build? The council recommends A.",
-   "why_you": "Only you know who is available. The inner-creatures sheet lists a clinician read as pending and nobody has asked.",
+   "auto": true,
+   "pos": "A coach or teacher view passes one test before it ships: a player in a classroom can decline it without losing baseline reward or standing. Engagement reward and streak data are kept apart in what a coach sees, and consent is asked again at use. This stands unless you flip it.",
+   "why": "Challenger named streak data plus engagement rewards as a coercion path; Regent added that a consent record is not present willingness. Citations: tw-ruling-streaks, tw-ruling-reward, C19 and C20. Source: council/passes/6FACE_PASS_work-dbt1_2026-10-22.md"
+  }
+ ],
+ "questions": [
+  {
+   "id": "tw-clinician",
+   "faces": [
+    "regent",
+    "shaman",
+    "architect",
+    "challenger",
+    "diplomat",
+    "sage"
+   ],
+   "pass": "work-dbt 1",
+   "q": "Is there a named clinician who will read the Work and DBT branches, the harm gate and the child tier before any child or trauma-tier player sees a build? If not, those tiers wait. The council recommends A.",
+   "why_you": "Only you know who is available. The inner-creatures sheet lists a clinician read as pending and nobody has asked. All six faces weighed in (pass work-dbt 1). They agree the child and trauma tiers wait without a named reader (tw-tier-gate); only whether one exists, and who, is yours, and naming a person is reserved.",
    "not_before": "Raised by work-dbt pass 1, 2026-10-22.",
    "options": [
     {
@@ -203,11 +210,16 @@
   {
    "id": "tw-permission",
    "faces": [
-    "regent"
+    "regent",
+    "shaman",
+    "architect",
+    "challenger",
+    "diplomat",
+    "sage"
    ],
    "pass": "work-dbt 1",
-   "q": "Do you want counsel to read the adaptation of The Work and DBT before anything ships? The council recommends A.",
-   "why_you": "Money and anything that names a person are reserved, and whether adaptation needs the rights holders' permission is a legal question.",
+   "q": "Do you authorise paying counsel to read the adaptation of The Work and DBT before the first public build? The council recommends A.",
+   "why_you": "Money and anything that names a person are reserved, and whether adaptation needs the rights holders' permission is a legal question. All six faces weighed in (pass work-dbt 1): four said A, and the Architect said A as a read and not as permission. Generic names with a lineage line apply either way. Only the spend is yours, and money is reserved.",
    "not_before": "Raised by work-dbt pass 1, 2026-10-22, after your ruling that the practices are adapted and cited.",
    "options": [
     {
@@ -224,35 +236,6 @@
      "v": "C",
      "label": "C. Seek permission up front",
      "c": "Carries a licence cost and may allow the original names."
-    }
-   ]
-  },
-  {
-   "id": "tw-level-disclosure",
-   "faces": [
-    "sage",
-    "diplomat",
-    "regent"
-   ],
-   "pass": "work-dbt 1",
-   "q": "How does a player learn that play can show their level, and can they correct it? The council recommends A.",
-   "why_you": "You ruled that levels emerge through play and players need not know at the start. The face-namespaces decision bars an undisclosed, uncorrectable altitude judgment, and the choice between telling at the start, at first use or at the coach view is yours.",
-   "not_before": "Raised by work-dbt pass 1, 2026-10-22, from your ruling that day.",
-   "options": [
-    {
-     "v": "A",
-     "label": "A. Told once at first use, with a way to contest the reading and to play without it (recommended)",
-     "c": "Keeps the reveal emergent and meets the namespace decision's disclosure and contest duties."
-    },
-    {
-     "v": "B",
-     "label": "B. Told only when a coach or teacher view is switched on",
-     "c": "Fewer players are told and the reading is invisible to a solo player."
-    },
-    {
-     "v": "C",
-     "label": "C. Never shown to the player",
-     "c": "Needs the namespace decision amended, and a child's tier would carry it without their knowledge."
     }
    ]
   }
