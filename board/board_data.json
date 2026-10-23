@@ -12033,6 +12033,59 @@
    "auto": true,
    "pos": "A coach or teacher view passes one test before it ships: a player in a classroom can decline it without losing baseline reward or standing. Engagement reward and streak data are kept apart in what a coach sees, and consent is asked again at use. This stands unless you flip it.",
    "why": "Challenger named streak data plus engagement rewards as a coercion path; Regent added that a consent record is not present willingness. Citations: tw-ruling-streaks, tw-ruling-reward, C19 and C20. Source: council/passes/6FACE_PASS_work-dbt1_2026-10-22.md"
+  },
+  {
+   "id": "ty-lens",
+   "faces": [
+    "sage",
+    "diplomat"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "The studio game is a second way into the same board. The board stays, and both read and write one store.",
+   "why": "Playing has to be the same as developing, so the game cannot keep its own copy of the work. It also keeps a path without the game for anyone who wants the plain board."
+  },
+  {
+   "id": "ty-real-data",
+   "faces": [
+    "architect",
+    "challenger"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "Every number and every move in the game comes from real board data: board_data.json, the saves, council/loops, the callsheets and the cost ledger. A move that writes nothing real does not ship.",
+   "why": "A fake economy would turn it into a toy beside the work instead of the work."
+  },
+  {
+   "id": "ty-host",
+   "faces": [
+    "regent"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "The game lives on bars-engine at /board/studio behind Wendell's sign-in, beside /board/council.",
+   "why": "Playable spaces are hosted on bars-engine, not on Artifact pages (hosting rule, 2026-10-17), and the board API is already there."
+  },
+  {
+   "id": "ty-engine",
+   "faces": [
+    "architect"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "Version 0 is a 2D isometric canvas: Phaser 3 with Kenney's free isometric packs. No three.js and no Blender for it.",
+   "why": "Tool scout found no tycoon tool in the toolbox; Phaser and Kenney are known, free and cheap. The Godot or three.js question stays deferred (council #302)."
+  },
+  {
+   "id": "ty-order",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "Build in this order: a lot that only shows the real strands as rides, then one move (Send a brief to start a thread), then the brief bench once the brief skill from the prompt thread lands. Each step is one thread with a hosted preview.",
+   "why": "Proves it the cheapest way first and keeps it from pulling time from the Chapter 1 demo."
   }
  ],
  "questions": [
