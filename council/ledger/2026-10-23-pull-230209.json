@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-23",
+ "kind": "board-pull",
+ "newest_save": "2026-10-23T23:02:09.792Z",
+ "answers": {
+  "tw-permission": {
+   "kind": "question",
+   "steer": "",
+   "choice": "B",
+   "savedAt": "2026-10-23T23:01:29.362Z"
+  },
+  "ty-genre": {
+   "kind": "question",
+   "steer": "I’m thinking a mix of boat and studio sim. ",
+   "choice": "",
+   "savedAt": "2026-10-23T23:02:09.792Z"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/tw-permission: Only if a rights holder objects",
+  "questions/ty-genre: Steer only (steer: \"I’m thinking a mix of boat and studio sim.\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

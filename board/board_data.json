@@ -35081,6 +35081,36 @@
      "sage"
     ],
     "pass": "work-dbt 1"
+   },
+   "tw-permission": {
+    "decision": "B",
+    "label": "Only if a rights holder objects",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:01:29.362Z",
+    "record": "council/ledger/2026-10-23-pull-230209.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman",
+     "architect",
+     "challenger",
+     "diplomat",
+     "sage"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "ty-genre": {
+    "decision": "steer",
+    "label": "Steer only",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:02:09.792Z",
+    "record": "council/ledger/2026-10-23-pull-230209.json (six-faces-council)",
+    "steer": "I’m thinking a mix of boat and studio sim.",
+    "faces": [
+     "shaman",
+     "architect",
+     "sage"
+    ],
+    "pass": "studio-tycoon-2026-10-23"
    }
   },
   "causes": {
