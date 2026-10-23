@@ -7,10 +7,21 @@ stern resting, Everdoor done; fading toward 21 days untouched), loop strands sho
 of the Claude-Code-Game-Studios roster with Opus/Sonnet wages, and the Chapter 1 gate bar (advice: Pre-Production, no
 gate passed). Preview deployments open without the bars-engine sign-in; production stays owner-only.
 
-Brief: One move (next, per `ty-order`). Waits on his look at the deck (`hx-looks-gate`). One Opus thread adds the first
-move: drag a staff card onto a waiting spirit to Send its brief, which starts a thread through the same path as a board
-Send (real write, `ty-real-data`). That is where Phaser 3 and Kenney art come in (`ty-engine`). Also: compute the gate
-verdict from a file instead of the hand-written note in `src/lib/studio/deck.ts`.
+Rejected 2026-10-23 23:40 by Wendell: "Visually it doesn't feel like a game. The boat doesn't feel like a space and
+it's all check lists and dashboard ... It's meant to be immersive." What missed: the brief listed data surfaces (a deck
+of passengers, a crew row, a gate bar), and the thread built them as UI. There was no art direction, no reference
+board and no player-POV spec, and the tool-scout "cheapest rung" was used to justify plain shapes when the cheapest
+proof of a game is a mood still. The check was "does the data render", never "does a player call this a game".
+Asset list: `/mnt/project-files/studio-tycoon/boat-world-assets.md`.
+
+Brief: Boat art direction (next). One Opus thread, before any code: (1) a reference board from Spiritfarer, A Short
+Hike, Unpacking, Cultist Simulator and Animal Crossing, as an Artifact page of stills with what we take from each;
+(2) a player-POV spec of the first 60 seconds (where you stand, what you see, the first thing you do), with no
+lists on screen and data shown only as world state; (3) one or two mood stills of the deck as a place, built from
+Kenney/Quaternius shapes plus our spirit-generator spirits and Average Dusk, for his look. Code waits on his yes to a
+still. Then the rebuild goes on #429 in Phaser 3 (`ty-engine`), and the move (a staff card onto a waiting spirit sends
+its brief) after that. Rule for every game brief from here: art direction, a POV spec and a look at a still come
+before the build.
 
 ## Waiting on
 Nothing from Wendell. Positions `ty-lens`, `ty-real-data`, `ty-host`, `ty-engine`, `ty-roster`, `ty-gates`, `ty-rigor`,
