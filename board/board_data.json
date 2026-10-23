@@ -12086,6 +12086,38 @@
    "auto": true,
    "pos": "Build in this order: a lot that only shows the real strands as rides, then one move (Send a brief to start a thread), then the brief bench once the brief skill from the prompt thread lands. Each step is one thread with a hosted preview.",
    "why": "Proves it the cheapest way first and keeps it from pulling time from the Chapter 1 demo."
+  },
+  {
+   "id": "ty-roster",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "The staff are the agents from Claude-Code-Game-Studios (MIT): directors, leads and specialists become staff cards you hire onto rides, with Opus staff costing more than Sonnet staff. We take the roster and the stages, not the chain of command.",
+   "why": "Its 49 roles are a ready-made cast. Its rule that conflicts climb to a director, and its habit of asking in chat, would override the six faces and the board rule."
+  },
+  {
+   "id": "ty-gates",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "The lot's big goal uses that repo's seven stages with a gate check at each: Concept, Systems Design, Technical Setup, Pre-Production, Production, Polish, Release, applied to the Chapter 1 demo. A gate verdict is advice; Wendell passes the gate.",
+   "why": "It gives the park a progress bar that is the real state of Chapter 1, and keeps the decision with him."
+  },
+  {
+   "id": "ty-rigor",
+   "faces": [
+    "regent"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "The rigor knob (minimal, standard, full) is a real dial in the game, set to minimal by default.",
+   "why": "That repo measured that more process docs did not make a better game, and lower rigor means fewer tokens."
   }
  ],
  "questions": [
