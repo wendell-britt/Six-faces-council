@@ -1,8 +1,82 @@
-2026-10-17 (updated 2026-10-21)
+2026-10-17 (updated 2026-10-23)
 ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 # Relationship creature, the Between (battle fr-between)
 
 ## Next
+**2026-10-23, Wendell asks for the next phase (thread "Build Between rooms and homeroom", his message of 22:45 UTC):**
+> 1) create new rooms for different people 2) the ability to choose room styles 3) the ability to send invitations to a room
+> 4) a "homeroom" for players to start in and customize their character along with their relationship goals
+> [...] we want one able to port whatever we create in here into those games [Cave of Lessons, Big Mind]. [...] The current
+> state of the Between should be able to suggest next actions so people are checking in with themselves with the between
+> and with their partner as part of the game loop
+
+The first thread read the code and wrote the brief below, then handed off at the context line before building.
+
+### Build brief: rooms, styles, invitations, homeroom, next moves (fresh Opus thread, bars-engine)
+Branch `claude/project-thread-yspmw4` in bars-engine, already cut from round 4 (`claude/project-thread-r1hsuf`, PR #409,
+ready), so the PR stacks on #409. Scout: rung 2 (we have it): a room is the existing garden; the look is sprout's creator
+contract; nothing new to find. Not 3D modelling work, so the 3D rules (docs/3d-math.md, garment rule council #375) only
+bind if a figure's mesh changes; tinting the existing `public/between/m/player.glb` does not change its mesh.
+
+What exists (no need to reread): a room is a `BetweenGarden` row; `plant()` already makes one per relationship and
+`gardensOf()` lists them, but boot (`garden.js` near "finding your garden") silently opens the newest one. The join is
+`?g=&invite=` then `joinRequest` then the starter's welcome (`rules.ts mayWrite`). Garden updates by a member are open
+except `startedBy`, `v`, `members`. Private docs are `data/users/<id>/garden|spark|pouch` (`PRIVATE_KEYS`).
+
+**Positions (stand unless he flips them; the build thread lands them on the board as `br-*` rows via sync_board.py):**
+- `br-room-is-garden`: a room is one garden, one per relationship. No new table, so the Vercel preview (which skips
+  `migrate deploy`) still has a working store.
+- `br-home-is-a-room`: the homeroom is a garden with `kind: "home"`, one member, `phase: "home"`, no creature, no join.
+  `plantedHome()` beside `plantedGarden()`; `GET /api/between` makes it on first call if missing; boot with no `?g=` opens the
+  home, never the newest room.
+- `br-style-is-the-place`: a room style changes the place, not the Between, so either member may change it with no yes;
+  the change shows in "While you were away". Stored as `garden.style`.
+- `br-look-is-sprouts`: the look is sprout's creator text `shape.build.skin.style.colour.outfit.dye` (sprout
+  `slice/creator.js` KEYS and option ids), so a look made in the homeroom opens Chapter 1 with `?look=` and the reverse.
+  Kept in the home's private doc; copied into each room as `garden.looks[<me>]` (rule: a member writes only their own key)
+  so the other person sees you as you made yourself. Never a photo (`ba-likeness`).
+- `br-goals-private`: relationship goals live in the home's private doc, each optionally tied to a room; the room's
+  `setup.hopes` stays as it is.
+- `br-invite-two-kinds`: an invitation is either "join this room" (the existing token link, now with a note, the phone's
+  share sheet and copy) or "come sit with me" for a member (a time and a note, `garden.invitations.<id> = {by, kind:"sit",
+  when, note, at, answer}`; the other answers yes, another time, or no). A sit invitation answered yes is what opens dual
+  spells (Ari, `between-ari-formation-01`).
+- `br-next-moves-three-lanes`: suggestions come in three lanes, yourself, the Between, your partner, at most one each,
+  plain words, never a count or a score. No AI. Examples: yourself: no check-in today; the Between: stale, or a lantern
+  waits; partner: an offer or agreement waits for your yes, an agreement is up for revisit, an invitation waits, they
+  are here now, you have not sat together this week.
+
+**Portable modules (plain ES modules in `public/calrunia/`, no three.js import, node tests through tsx in
+`src/lib/between/__tests__/`), so the Cave of Lessons and Big Mind take them as they are:**
+1. `look.js`: the creator contract (KEYS, option ids, `parseLook`, `lookText`, `colorsOf(look)` giving skin, hair and cloth
+   hex from sprout's swatches and DYED table). Test that a sprout look text round-trips.
+2. `room-styles.js`: three to four styles as data (Dusk hollow, today's look and the default; Moonlit, night blue and
+   silver with stars; Spring morning, bright and green; Ember rain, warm hearth with rain past the opening). Each style is
+   sky colours, fog, hemi/dusk/rim/fire light colours and strengths, lantern hue. `applyStyle(handles, style)` takes the
+   lights and sky that `hollow.js buildHollow` returns (add them to its return value) and only sets values.
+3. `next-moves.js`: `suggest(state)` is pure; state is `{ home: {lastCheckin, goals}, rooms: [summary] }` from the home, or
+   one room's view inside a room. Each move has `{lane, id, title, line, act}`; `act` names a sheet or `room:<id>`.
+4. `spellbook.js`: spells as data with `kind: solo|dual|async-dual` and `castable(spell, {sitting, otherSitting,
+   sitAccepted})`: solo needs you on a cushion, dual needs both on cushions and an accepted sit invitation, async-dual
+   starts on your cushion and the other completes it later. Three starter spells only; the dance minigame (Ari: instead
+   of push hands) is the next round, not this one.
+
+**Server:** `rules.ts`: `kind:"home"` refuses join and items from anyone else; `looks` own-key rule; `invitations` rule
+(you write your own invitation; the other writes only `answer`); add `home` to `PRIVATE_KEYS`. `store.ts gardensOf`
+returns a summary per room for the next-moves lanes (waiting on my yes, up for revisit, invitations for me, stale,
+join request waiting for my welcome). Tests in `rules.test.ts` for each new rule.
+
+**Page (`garden.js`, keep the room code; add sheets):** the home opens in its style with your figure tinted by the look,
+a mirror spot that opens the Look sheet (the creator's beats as option rows, "Choose for me"), a Rooms sheet (each room
+with its person, style and its one next move; "Make a new room" runs today's setup sheet), Goals sheet, a Check-in sheet
+(feeling from the five, one line, private), and an Invitations sheet. Inside a room: a Style sheet, an Invite sheet, a
+small "Next" card from `suggest()` above the tools, a door back home, and a Spellbook on the cushions.
+
+**Done:** `npm run test:between` plus the new tests, `npm run check`, build; an iPhone-size WebKit run with no errors;
+screenshots in `/mnt/project-files/between/rooms-home/`; one-click Vercel preview links in the reply opened at the state
+to test (add `?sheet=rooms|look|style|invite` jumps to boot); voice_lint on copy; record the `br-*` positions; end with
+the next move (the dance minigame round, Ari's look).
+
 **2026-10-21, Ari's playtest (Wendell's message of 01:08 UTC, relayed in chat, word for word):**
 > I sent Ari’s link and the feedback was they wanted
 >
