@@ -21,16 +21,20 @@ past the inner blocks), `tw-wise-mind-past` (replaces tw-wise-mind: Wise Mind an
 the Player, the vulnerable child; how the Emotional Body daemon and emotion mind connect is open, downstream of the
 Player self). Design doc bars-engine #427 not yet updated to these.
 
+**2026-10-23, pass work-dbt 3 done (all six faces, Regent, Diplomat and Shaman weighted):**
+`council/passes/6FACE_PASS_work-dbt3_2026-10-23.md`. Six positions in `rows/work-dbt-pass3-2026-10-23.json`, no new
+question: `tw-emotion-mind-place` (emotion mind is the state when the Emotional Body daemon leads, downstream of the
+Player; Wise Mind and Big Mind past it), `tw-streak-kept` (streaks visible as runs kept, never a reset counter; Challenger
+dissent folded in), `tw-completion-content-blind`, `tw-safety-exits-outside`, `tw-face-table-3` (all DEAR MAN to the
+Diplomat; inquiry aimed at a daemon's line, never the Player), `tw-tipp-trim`. Doc updated on bars-engine #427 (commit
+5cb5879): 1B, 3.3, 3.4, 3.7, 3.8, C1, C10, C11, C13, C20.
+
 Open, in order:
-1. **Pass work-dbt 3 (next thread, Opus):** a six-face pass on the face table (doc 3.4) and the harm gate (3.7),
-   Regent, Diplomat and Shaman weighted, carrying the five new positions. Work out where emotion mind and the
-   Emotional Body daemon sit downstream of the Player (his "I need to think more"), using daemons/questions.yaml and
-   the Big Mind cave sheet; anything the record cannot settle goes through the reach test onto the board. Test
-   `tw-streaks-visible` against the no-guilt line and `tw-coach-test`, and `tw-reward-completion` against the rule
-   that intimate disclosure is not progression currency. Then update bars-engine `docs/the-work-dbt-extension.md`
-   on PR #427 (3.3, 3.4, 3.7, C1, C10, C11, C13, C20) and land the pass rows with `board/sync_board.py`.
-2. His name for the clinician (step `work-dbt-clinician-01`); on "find me some", a Sonnet thread does the search the
+1. His name for the clinician (step `work-dbt-clinician-01`); on "find me some", a Sonnet thread does the search the
    step names.
-3. Ratify or flip on `tw-audience` (still standing).
-4. Scout T04, T06, T07 in bars-engine `registry.ts` and add DBT entries (no UI).
+2. Ratify or flip on `tw-audience` (still standing), and his look at `tw-emotion-mind-place` (he said he needs to think more).
+3. Scout T04, T06, T07 in bars-engine `registry.ts` and add DBT entries (no UI), with `tw-tipp-trim` and lineage names.
+   This is the recommended next thread (Sonnet can do the scout; the entries are a small build).
+4. A term pass on player-facing names for the DBT skills, and on Validate and Accept (C10, C13).
 5. Clinician read before any child or trauma-tier play; counsel only on an objection.
+6. PR #427 stays draft until the owner reads it; it is docs only.
