@@ -32238,6 +32238,66 @@
      "regent"
     ],
     "pass": "work-dbt 1"
+   },
+   "tw-ruling-reward": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:23.963Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "steer": "Pass and not now don’t count the same. Rewards come from completing things and doing the work to overcome the inner blocks that get in the way",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-ruling-adapt": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:33.965Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-shadow-kinds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:41.450Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-pause-not-skip": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:49.884Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-skill-branch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:05:00.070Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "work-dbt 1"
    }
   },
   "questions": {
