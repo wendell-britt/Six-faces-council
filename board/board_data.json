@@ -12118,6 +12118,84 @@
    "auto": true,
    "pos": "The rigor knob (minimal, standard, full) is a real dial in the game, set to minimal by default.",
    "why": "That repo measured that more process docs did not make a better game, and lower rigor means fewer tokens."
+  },
+  {
+   "id": "br-room-is-garden",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "between-rooms1",
+   "auto": true,
+   "pos": "A room is one Between garden, one per relationship. Making a new room for someone plants a new garden. No new table, so a preview deploy still has a working store. This stands unless you flip it.",
+   "why": "Your words, 2026-10-23: \"create new rooms for different people\". bars-engine already makes one garden per relationship; it only opened the newest one. Built in bars-engine branch claude/project-thread-yspmw4."
+  },
+  {
+   "id": "br-home-is-a-room",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "between-rooms1",
+   "auto": true,
+   "pos": "Your homeroom is a garden of its own kind: only you, no creature, nobody can ask to join and nobody else can set anything down in it. It is made the first time you open the Between, and a link with no room in it opens your homeroom, never your newest room. This stands unless you flip it.",
+   "why": "Your words, 2026-10-23: \"a homeroom for players to start in and customize their character along with their relationship goals\". The server rule is built and tested (rules.ts, plantedHome)."
+  },
+  {
+   "id": "br-style-is-the-place",
+   "faces": [
+    "diplomat",
+    "architect"
+   ],
+   "pass": "between-rooms1",
+   "auto": true,
+   "pos": "A room style changes the place, not the Between, so either of you can change it without asking the other. The change shows in While you were away. Four styles to start: Dusk hollow (today's look), Moonlit, Spring morning, Ember rain. This stands unless you flip it.",
+   "why": "Your words, 2026-10-23: \"the ability to choose room styles\". Ari asked to design the room (2026-10-21). The styles are data in public/calrunia/room-styles.js so the Cave of Lessons and Big Mind can use them as they are."
+  },
+  {
+   "id": "br-look-is-sprouts",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "between-rooms1",
+   "auto": true,
+   "pos": "Your look in the Between is the same look the Chapter 1 character creator makes: shape, build, skin, hair, hair colour, clothes and dye. A look made in the homeroom opens Chapter 1, and the other way round. In each room the other person sees you as you made yourself, and only you can set your own look. Never a photo. This stands unless you flip it.",
+   "why": "Your words, 2026-10-23: \"we want one able to port whatever we create in here into those games\". Ari asked for a character that looks and feels like her (2026-10-21); ba-likeness-choices. public/calrunia/look.js."
+  },
+  {
+   "id": "br-goals-private",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "between-rooms1",
+   "auto": true,
+   "pos": "Your relationship goals and your check-ins live in your homeroom, and only you see them. A goal can be tied to one room. What you wrote as your hopes when you started a room stays as it is. This stands unless you flip it.",
+   "why": "Your words, 2026-10-23: \"customize their character along with their relationship goals\" and \"checking in with themselves\". rc-pictures-private keeps what is inner private until shown."
+  },
+  {
+   "id": "br-invite-two-kinds",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "between-rooms1",
+   "auto": true,
+   "pos": "There are two kinds of invitation. Join this room: the link you have today, now with a note and your phone's share button. Come sit with me: for the person already in the room, with a time and a note, and they answer yes, another time, or no. Only you write your invitation and only they write the answer. A sit invitation answered yes is what opens the spells you cast together. This stands unless you flip it.",
+   "why": "Your words, 2026-10-23: \"the ability to send invitations to a room\". Your steer of 2026-10-21 on ba-spells-plain and Ari's note: collaborative spells need both in the room and send an invitation first."
+  },
+  {
+   "id": "br-next-moves-three-lanes",
+   "faces": [
+    "shaman",
+    "challenger",
+    "diplomat"
+   ],
+   "pass": "between-rooms1",
+   "auto": true,
+   "pos": "The Between suggests what to do next in three lanes: yourself (you have not checked in today), the Between (it has dimmed, or a lantern waits), and your partner (something waits for your yes, an agreement is up for revisit, they invited you, they are here now, you have not sat together this week). At most one suggestion in each lane, in plain words, never a number or a score, and no AI. This stands unless you flip it.",
+   "why": "Your words, 2026-10-23: \"The current state of the Between should be able to suggest next actions so peopel are checking in with themselves with the between and with their partner as part of the game loop\". public/calrunia/next-moves.js, tested."
   }
  ],
  "questions": [
