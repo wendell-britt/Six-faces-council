@@ -12084,7 +12084,7 @@
    ],
    "pass": "studio-tycoon-2026-10-23",
    "auto": true,
-   "pos": "Build in this order: a lot that only shows the real strands as rides, then one move (Send a brief to start a thread), then the brief bench once the brief skill from the prompt thread lands. Each step is one thread with a hosted preview.",
+   "pos": "Build in this order: a paper prototype of the chosen game over the real hand and strands, then one move (Send a brief to start a thread), then the full build. Each step is one thread with a hosted preview.",
    "why": "Proves it the cheapest way first and keeps it from pulling time from the Chapter 1 demo."
   },
   {
@@ -19117,6 +19117,51 @@
      "c": "Carries a licence cost and may allow the original names."
     }
    ]
+  },
+  {
+   "id": "ty-genre",
+   "faces": [
+    "shaman",
+    "architect",
+    "sage"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "q": "Which game should the studio game be?",
+   "why_you": "It is your taste and your game. The research is in the doc Studio game: genre, clones and prior art, https://claude.ai/artifact/Jn1C9NzB7CQnN7PB2sr1yL.",
+   "not_before": "Raised by the studio-tycoon pass, 2026-10-23, after your ruling that rides were only a first pass.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Boat and table (recommended)",
+     "c": "A Spiritfarer-style boat of spirit strands, with a Cultist Simulator-style card table where your hand is played onto the six faces."
+    },
+    {
+     "v": "B",
+     "label": "B. Card table only",
+     "c": "Like Cultist Simulator."
+    },
+    {
+     "v": "C",
+     "label": "C. A studio sim",
+     "c": "Like Game Dev Tycoon or Software Inc."
+    },
+    {
+     "v": "D",
+     "label": "D. A colony sim",
+     "c": "Like RimWorld, where threads are agents you set priorities for."
+    }
+   ],
+   "research": {
+    "title": "Studio game: genre, clones and prior art",
+    "lead": "The research for this question is in a separate doc.",
+    "sections": [],
+    "sources": [
+     {
+      "text": "Studio game: genre, clones and prior art",
+      "url": "https://claude.ai/artifact/Jn1C9NzB7CQnN7PB2sr1yL"
+     }
+    ]
+   }
   }
  ],
  "causes": [
@@ -32090,6 +32135,18 @@
      "architect"
     ],
     "pass": "robe-clipping"
+   },
+   "ty-order": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "steer": "we don't want them to be rides like rollercoaster tycoon that's just the first iteration",
+    "recorded": "2026-10-23",
+    "record": "chat ruling 2026-10-23 (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "studio-tycoon-2026-10-23"
    }
   },
   "questions": {
