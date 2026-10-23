@@ -39,6 +39,23 @@ Not checked: WebKit (not installed here), a real two-phone session, the Vercel p
 a 3D mark for a left light. voice_lint: only "room" (his named feature) and old copy.
 **Next:** his look at the preview (`?sheet=` links in the thread reply); then the dance minigame round with Ari's look.
 
+### Build brief, part 3: his 23:25 rulings (fresh Opus thread, bars-engine, same branch and PR #428)
+Board read 23:25 (2026-10-23): `br-home-is-a-room` OVERRULED: players always spawn in their homeroom; an invite link opens
+a portal to the invited room only after orientation and the rules. `br-style-is-the-place` STANDS with his note: both
+players must consent to a style change. Other `br-*` rows stand. Part 2 (c8523b7) built the old readings, so:
+1. Boot always lands in the homeroom. `?g=` (and `?g=&invite=`) no longer opens the room directly: the home shows a portal
+   (a doorway mesh by the mirror) to that room. With an invite, the portal stays shut until an orientation sheet (what the
+   Between is, the rules: yes before anything changes, the silent exit, nothing scored) is read and ticked; then it opens
+   and leads in. Rooms sheet "Go in" also walks through the portal, not a page jump. Keep a test skip (`?skipHome=1`) for
+   previews only if he wants it; otherwise ask the board.
+2. Style in a shared room becomes an ask: `garden.styleAsk = {by, style, at}`, the other says yes (sets `style`, clears the
+   ask) or not now; it shows on the Next card partner lane and in While you were away. In a spark (one member) and the
+   homeroom it changes at once. Server rule in `rules.ts`: with two members, `style` may be written only by the person
+   answering someone else's `styleAsk` for that style; tests in rules.test.ts.
+3. Re-run the mock harness (scratchpad is gone: rebuild it from rules.ts, about 80 lines: in-memory gardens, `/as/<pid>`
+   cookie, the real mayWrite/merge/roomSummary), phone-size run, screenshots to /mnt/project-files/between/rooms-home/,
+   preview links per sheet.
+
 ### Build brief, part 2: the page (fresh Opus thread, bars-engine, same branch and PR)
 Owns the bars-engine PR on `claude/project-thread-yspmw4` and this council PR #378. Read part 1 above, not the code
 history. In `public/between/garden.js` (keep the room code; add sheets):
