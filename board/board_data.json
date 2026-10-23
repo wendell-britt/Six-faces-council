@@ -32322,6 +32322,68 @@
      "regent"
     ],
     "pass": "work-dbt 1"
+   },
+   "tw-ruling-levels": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:06:07.982Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-wise-mind": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:11.139Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "steer": "Wise mind and big mind are the same or are on the same trajectory but are PAST the player which is the vulnerable child \n\nI need to think more about how the emotional body and the emotional mind connect. I think it’s also down stream of the player self",
+    "faces": [
+     "sage",
+     "shaman"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-no-ai": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:17.298Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-audience": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:24.266Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "architect"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-gate-input": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:29.359Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
    }
   },
   "questions": {
