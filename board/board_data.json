@@ -32225,6 +32225,19 @@
      "challenger"
     ],
     "pass": "studio-tycoon-2026-10-23"
+   },
+   "tw-ruling-streaks": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:03:37.548Z",
+    "record": "council/ledger/2026-10-23-pull-230337.json (six-faces-council)",
+    "steer": "Players can see streaks",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
    }
   },
   "questions": {
