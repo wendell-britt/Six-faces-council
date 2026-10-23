@@ -1,6 +1,18 @@
 # Studio lot (the studio game)
 
 ## Next
+Art direction done 2026-10-23 (thread "Set the studio boat art direction"): page https://claude.ai/artifact/85chXzRvLpPj7dumm6hi5z
+(reference board, first 60 seconds, data-to-world map, two stills). Files `/mnt/project-files/studio-tycoon/mood-stills/`
+(still-a.png side view on canvas, still-b.png three.js 0.160 pixelated, sprites/ from bars-engine public/between/m GLBs,
+art-director-review.md). Per his 23:52 ask, the CCGS art-director role (fetched from the CCGS repo) reviewed and fixed
+the stills; it recommends A (Spiritfarer side view). Board question `ty-still-pick` (A recommended). Render scripts were
+in a scratch dir and are lost with the container; rebuild from the review if needed.
+
+Brief: Boat rebuild (waits on ty-still-pick yes). One Opus thread on bars-engine #429: Phaser 3 side-view deck from the
+chosen still, every strand a house with its four looks, player walks the deck, data only as world state, first 60 seconds
+as on the page. Use the CCGS roles for the work (game-designer for the loop, art-director checks each still against the
+page, gameplay-programmer builds). Prove with a still from the running build before any feature. Hosted preview link.
+
 Built 2026-10-23: the read-only boat deck at bars-engine `/board/studio` (bars-engine #429, draft, branch
 `claude/project-thread-227mft`). Open strands from INDEX.md ride as spirits (bow waiting on Wendell, midship moving,
 stern resting, Everdoor done; fading toward 21 days untouched), loop strands show rounds past his last look, a crew row
@@ -24,6 +36,7 @@ its brief) after that. Rule for every game brief from here: art direction, a POV
 before the build.
 
 ## Waiting on
+- `ty-still-pick` (his look at the two stills).
 Nothing from Wendell. Positions `ty-lens`, `ty-real-data`, `ty-host`, `ty-engine`, `ty-roster`, `ty-gates`, `ty-rigor`,
 `ty-order`, `ty-genre-mix` stand unless he flips them. `ty-genre` is answered with a steer ("I'm thinking a mix of boat
 and studio sim."), recorded in `council/ledger/2026-10-23-pull-230209.json`.
