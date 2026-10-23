@@ -19505,6 +19505,45 @@
      "c": "A second still from your note before any code."
     }
    ]
+  },
+  {
+   "id": "ty-still-pick",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "q": "Which still should the studio boat be built from?",
+   "why_you": "It is your eye, and no code starts until one still is a yes. Both stills, the first 60 seconds and the reference board are on the page Studio Boat Art Direction, https://claude.ai/artifact/85chXzRvLpPj7dumm6hi5z.",
+   "not_before": "Raised by the boat art direction round, 2026-10-23, after you rejected the boat deck as a dashboard.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Lantern deck (recommended)",
+     "c": "Side view, illustrated, like Spiritfarer. The studio's art director picked it: all four house states read in one row, and it is the cheapest base for the room customizer."
+    },
+    {
+     "v": "B",
+     "label": "B. Little boat, big sea",
+     "c": "Low-poly 3D drawn pixelated, like A Short Hike. More room to roam, more to build, states harder to read."
+    },
+    {
+     "v": "C",
+     "label": "C. Neither yet",
+     "c": "Say what is off and the next round redraws before any code."
+    }
+   ],
+   "research": {
+    "title": "Studio Boat Art Direction",
+    "lead": "The stills and the first 60 seconds are on a separate page.",
+    "sections": [],
+    "sources": [
+     {
+      "text": "Studio Boat Art Direction",
+      "url": "https://claude.ai/artifact/85chXzRvLpPj7dumm6hi5z"
+     }
+    ]
+   }
   }
  ],
  "causes": [

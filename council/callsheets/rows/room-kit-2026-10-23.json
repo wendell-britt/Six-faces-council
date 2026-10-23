@@ -1,0 +1,39 @@
+{
+  "positions": [
+    {"id": "rk-spots-not-grid", "faces": ["architect", "shaman"], "pass": "room-kit-2026-10-23", "auto": true,
+     "pos": "Items go on glowing spots that fit them (hang, shelf, floor), not a free grid, to start. Tap an item in your satchel, then a spot; tap it again to put it back. This stands unless you flip it.",
+     "why": "Your words, 2026-10-23: \"a lightweight room customizer\". Spots keep it one tap on a phone and let the Cave of Lessons and Big Mind list their own spots. Still A on https://claude.ai/artifact/HwUN8nLCjbjpyBLv173yww."},
+    {"id": "rk-earned-only", "faces": ["shaman", "regent"], "pass": "room-kit-2026-10-23", "auto": true,
+     "pos": "The starter nook has a hearth, a window and five spots. Everything past that is earned through play (a lantern from your first kept agreement, a seed from a spirit you let go, a cushion when someone first sits with you, the mirror from orientation); nothing is bought. The four room styles become the light through the window. This stands unless you flip it.",
+     "why": "Your words, 2026-10-23: \"an even more basic room people can use to update things and add items and assets they earn through play\"."},
+    {"id": "rk-place-is-shared", "faces": ["diplomat", "architect"], "pass": "room-kit-2026-10-23", "auto": true,
+     "pos": "In a shared room either person may set an item down without asking, the way a room style works. Lifting the other person's item sends it back to their satchel, never away, and both show in While you were away. This stands unless you flip it.",
+     "why": "Follows br-style-is-the-place (the place, not the Between). Things stay their owner's, like rc-spirits-visit."},
+    {"id": "rk-one-kit", "faces": ["architect", "sage"], "pass": "room-kit-2026-10-23", "auto": true,
+     "pos": "One room kit for the Between, the Cave of Lessons and Big Mind: a room is a shell (its spots), a style and what sits on each spot, in a plain module beside room-styles.js. Today's Dusk hollow becomes the hollow shell with its pieces already placed, so nothing that works now changes. The kit is built after the part 3 build on bars-engine #428 lands. This stands unless you flip it.",
+     "why": "The coordinator's brief, 2026-10-23: make the customizer portable to Cave of Lessons and Big Mind."}
+  ],
+  "questions": [
+    {"id": "rk-still-nook", "faces": ["shaman", "architect"], "pass": "room-kit-2026-10-23",
+     "q": "Is Still A, the bare nook you fill with what you earn, the look to build?",
+     "why_you": "Your standing rule: code waits on your yes to a still. Still A is touchable on https://claude.ai/artifact/HwUN8nLCjbjpyBLv173yww#nook.",
+     "not_before": "Raised by the room-kit art direction, 2026-10-23.",
+     "options": [{"v": "A", "label": "A. Yes, build this (recommended)", "c": "The nook and the satchel-to-spot placing are built as drawn, in the hollow's 3D look."},
+                 {"v": "B", "label": "B. Yes, with a note", "c": "Built after the change you write in the note."},
+                 {"v": "C", "label": "C. Not yet", "c": "A second still from your note before any code."}]},
+    {"id": "rk-still-scroll", "faces": ["diplomat", "shaman"], "pass": "room-kit-2026-10-23",
+     "q": "Is Still B, the invitation as a scroll you seal, the look to build?",
+     "why_you": "Your words, 2026-10-23: \"a stylized card that's like a scroll\". Still B on https://claude.ai/artifact/HwUN8nLCjbjpyBLv173yww#scroll.",
+     "not_before": "Raised by the room-kit art direction, 2026-10-23.",
+     "options": [{"v": "A", "label": "A. Yes, build this (recommended)", "c": "The scroll replaces today's invite form: chips for when, one handwritten line, a seal, three ribbons to answer."},
+                 {"v": "B", "label": "B. Yes, with a note", "c": "Built after the change you write in the note."},
+                 {"v": "C", "label": "C. Not yet", "c": "A second still from your note before any code."}]},
+    {"id": "rk-still-minute", "faces": ["sage", "shaman"], "pass": "room-kit-2026-10-23",
+     "q": "Is Still C, a first minute where each rule pulls a vine off the doorway, the orientation to build?",
+     "why_you": "Your words, 2026-10-23: \"start thinking about how the orientation of the game should be\". Still C on https://claude.ai/artifact/HwUN8nLCjbjpyBLv173yww#orientation.",
+     "not_before": "Raised by the room-kit art direction, 2026-10-23.",
+     "options": [{"v": "A", "label": "A. Yes, build this (recommended)", "c": "Orientation becomes tend the hearth, place the mirror, write a hope, learn the yes rule; the doorway opens after."},
+                 {"v": "B", "label": "B. Yes, with a note", "c": "Built after the change you write in the note."},
+                 {"v": "C", "label": "C. Not yet", "c": "A second still from your note before any code."}]}
+  ]
+}
