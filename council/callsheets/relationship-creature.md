@@ -390,3 +390,35 @@ Open, in order:
 - 2026-10-19 board: putting a charge into the shared lantern makes its element public (his steer on `cc-element-hidden`, which stands for the pouch).
 - 2026-10-20 (Wendell, build thread, bars-engine #380): he could not open the Between from a link. Fix in #380: `/games` page (sign in, open The Between, Admin at the bottom) and eslint ignores `public/game`, `public/understood-app`, `public/ontology-game` (gitignored `npm run build` outputs that failed the pre-commit lint). Lanterns reach production only when #380 merges.
 - Done, admin refresh (his ask, 2026-10-20): bars-engine #406 merged; `/admin` opens on what he uses most and `/admin/games` is the development dashboard for the games on bars-engine.
+
+## Room kit, scroll invitation, first minute (art direction, 2026-10-23)
+His ask, 2026-10-23: a scroll-like invitation card, an orientation, and "a lightweight room customizer and ... an even
+more basic room people can use to update things and add items and assets they earn through play". Art direction first
+(game-briefs-art-first). Page with three touchable stills, reference board, first-minute script and the kit's shape:
+https://claude.ai/artifact/HwUN8nLCjbjpyBLv173yww (source `/mnt/project-files/between/room-kit/homeroom-kit.html`).
+Board rows (`rows/room-kit-2026-10-23.json`): positions `rk-spots-not-grid`, `rk-earned-only`, `rk-place-is-shared`,
+`rk-one-kit`; questions `rk-still-nook`, `rk-still-scroll`, `rk-still-minute`. Nothing built.
+
+Coordination: the part 3 thread ("Build Between rooms, part 3", bars-engine #428) keeps building as briefed. Its
+orientation sheet, invite form and style sheet are what these stills replace, so it should not polish those three
+screens further; the kit lands as a new pull request stacked on #428 once his yes arrives.
+
+### Brief: room kit build (Opus, bars-engine, starts on his yes to any still)
+- Read the page above first; build only the stills he said yes to, with his notes. Match them in the hollow's real 3D
+  look (paint.js), not the sketch.
+- `public/calrunia/room-kit.js` beside `room-styles.js`, no three.js inside: `SHELLS` (spots with `takes`: hang, small,
+  floor), `ITEMS` (glb, takes, earned-by), `applyRoom(handles, room)` with `room = { shell, style, placed: {spot: item} }`.
+  The Dusk hollow becomes shell `hollow` with today's pieces pre-placed; shell `nook` is the starter (hearth, window,
+  five spots). Styles become the window's light.
+- Placing: tap item in the satchel, glowing spots that take it pulse, tap a spot; tap a placed item to send it back.
+  Shared rooms per `rk-place-is-shared`; both show in While you were away. Save `placed` with the garden row (no new
+  table if it fits the existing JSON), so previews keep a working store.
+- Earned items come from events that already exist: first kept agreement (lantern), let-go spirit (seed pot,
+  spirit-store.js), first sit together (cushion), orientation (mirror, first blank scroll).
+- Scroll: replaces the invite form. When as chips, one handwritten line, seal press sends; arrives sealed on the
+  shelf; three ribbons (Yes, Another time, No with no reason). Yes opens the doorway between rooms.
+- First minute: wake, tend the hearth, place the mirror, write a hope (private, br-goals-private), the yes rule; a vine
+  falls per step and the doorway opens; skipped steps stay as a glow. Captions at reading speed (Ari's note 3).
+- Portability check: the Cave of Lessons or Big Mind lists its own spots and calls `applyRoom` with no kit changes.
+- Done: Vercel preview link opened at the nook (skip-ahead param past orientation, his testable-preview rule), screenshots
+  beside each still in `/mnt/project-files/between/room-kit/build/`, two-player test of placing in a shared room.
