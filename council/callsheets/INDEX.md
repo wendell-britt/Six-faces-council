@@ -5,7 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
-- [studio-lot](studio-lot.md), 2026-10-23: studio game concept page and research done; steer on `ty-genre` is a boat run as a studio sim (`ty-genre-mix`); nine `ty-*` positions stand; next a fresh Opus bars-engine thread builds the read-only boat prototype at /board/studio with a preview link.
+- [studio-lot](studio-lot.md), 2026-10-23: read-only boat deck built at bars-engine /board/studio (#429, draft): strands as spirit passengers, crew row, Chapter 1 gate bar; waits on his look, then one thread adds the first move (Send a brief from the deck).
 - [work-dbt](work-dbt.md), 2026-10-23: his five answers recorded (work-dbt 2); clinician step on the board; next pass work-dbt 3 on the face table and harm gate with the wise-mind steer, then update bars-engine #427.
 - [story-pipeline](story-pipeline.md), 2026-10-21: the study behind `ttv-cmvicm0aj` is written (`council/story/PIPELINE.md`, twelve findings with sources) and the pipeline has a check (`council/story/check.py`, `tests/test_story_pack.py`); five tools added to the toolbox, inkjs still the only runtime; the first pack is written (`council/story/packs/calrunia/chapter1/beats.yaml`, 8 beats, 25 assets, check passes) and cites sprout's own beat table (PR #66) for its gates; next the Challenger's reading, then the Regent's asset pass.
 - [cave-controls](cave-controls.md), 2026-10-21: phone camera and touch research done (https://claude.ai/artifact/BwBweZR865zrKckj9tCVMY); five `ctl-*` positions (split thumbs, tap rule, generous taps, gentle camera, still mode); next a fresh Opus bars-engine thread builds controls round 1 with a preview link.
