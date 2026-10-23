@@ -25,6 +25,20 @@ their dusk colours under every style (Spring morning reads odd); rain is only a 
 not call any of this yet. The `br-*` positions are on the board (council main 4d14db0). voice_lint bans "room"; it is
 his named feature, so page copy keeps it.
 
+**2026-10-23, part 2 built** (thread "Build Between rooms, part 2"; bars-engine c8523b7 on `claude/project-thread-yspmw4`, PR #428).
+No `?g=` opens the homeroom: a mirror where the Between stands, sheets Look (BEATS rows, Choose for me, kept in the home doc
+and copied into each open room's `looks`, link to the sprout creator branch preview with `?look=`), Rooms (person, kind,
+style, one move; Make a new room plants via POST and goes in), Goals, Check-in, Invitations (answer yes/later/no from home),
+Style. In a room: Style (history line in While you were away via `garden.history`), Invite (join link + note, share or
+copy; sit invitation with time and note, answers listed), a Next card (all three lanes, home's check-in included), Home
+door, Spellbook on the cushions (leave-a-light waits in `garden.spells`). The figure takes the look's skin and dyed cloth by
+vertex colour (player.glb has six colours, no hair mesh). Styles tint mountains, valley, river, pines; Ember rain rains.
+Checked: test:between, a phone-size Chromium run on a mock store using the real rules.ts (no page errors; look, check-in,
+goal, invitation yes, new room, style, sit and cast all wrote), screenshots /mnt/project-files/between/rooms-home/part2-*.
+Not checked: WebKit (not installed here), a real two-phone session, the Vercel preview's store, hair colour on the figure,
+a 3D mark for a left light. voice_lint: only "room" (his named feature) and old copy.
+**Next:** his look at the preview (`?sheet=` links in the thread reply); then the dance minigame round with Ari's look.
+
 ### Build brief, part 2: the page (fresh Opus thread, bars-engine, same branch and PR)
 Owns the bars-engine PR on `claude/project-thread-yspmw4` and this council PR #378. Read part 1 above, not the code
 history. In `public/between/garden.js` (keep the room code; add sheets):
