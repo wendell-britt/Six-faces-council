@@ -12084,7 +12084,7 @@
    ],
    "pass": "studio-tycoon-2026-10-23",
    "auto": true,
-   "pos": "Build in this order: a lot that only shows the real strands as rides, then one move (Send a brief to start a thread), then the brief bench once the brief skill from the prompt thread lands. Each step is one thread with a hosted preview.",
+   "pos": "Build in this order: a paper prototype of the chosen game over the real hand and strands, then one move (Send a brief to start a thread), then the full build. Each step is one thread with a hosted preview.",
    "why": "Proves it the cheapest way first and keeps it from pulling time from the Chapter 1 demo."
   },
   {
