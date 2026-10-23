@@ -12,6 +12,37 @@ ontology: default; touches: Relationship, PermissionEnvelope, TrustState
 
 The first thread read the code and wrote the brief below, then handed off at the context line before building.
 
+**2026-10-23, part 1 built** (thread "Build Between rooms, part 1"; bars-engine branch `claude/project-thread-yspmw4`, draft PR
+on #409). Server rules (home kind, `looks` own key, `invitations` sender/answer rule, `home` private doc, `style`, a planted
+garden is always `kind: "room"`), `GET /api/between` now returns `{ home, gardens }` and makes the home on first call;
+each garden is a `roomSummary` (waiting, revisit, invitations, stale, joinWaiting, hereNow, lastSatTogether, person,
+personName, style; ids and kinds only, never item words). The four modules are in `public/calrunia/` (look, room-styles,
+next-moves, spellbook) with `src/lib/between/__tests__/calrunia.test.ts`; `npm run test:between` runs both files.
+`hollow.js buildHollow` now returns `handles` (sky uniforms uTop/uMid/uLow/uHor, sun, stars, lights, lanterns, base
+strengths the flicker reads). Probe: all four styles render with no WebGL errors
+(`/mnt/project-files/between/rooms-home/room-styles-probe.jpg`). Not checked: the mountains, valley floor and pines keep
+their dusk colours under every style (Spring morning reads odd); rain is only a `weather: "rain"` flag; the page does
+not call any of this yet. The `br-*` positions are on the board (council main 4d14db0). voice_lint bans "room"; it is
+his named feature, so page copy keeps it.
+
+### Build brief, part 2: the page (fresh Opus thread, bars-engine, same branch and PR)
+Owns the bars-engine PR on `claude/project-thread-yspmw4` and this council PR #378. Read part 1 above, not the code
+history. In `public/between/garden.js` (keep the room code; add sheets):
+1. Boot: no `?g=` opens `list.home.id` (today it opens the newest garden). Poll and write work on the home like any garden.
+2. Style: `applyStyle({ ...hollow.handles, scene }, garden.style)` on load and on change; a Style sheet writes
+   `garden/main {style}` and a history line for While you were away. Tint mountains/valley/pines per style (add their
+   materials to `handles`), and draw rain for `weather: "rain"`.
+3. Home sheets: Look (`look.js` BEATS as option rows, "Choose for me" = `randomLook`, saves `data/users/<me>/home {look}`
+   and copies `looks[<me>]` into each room; your figure tinted with `colorsOf`; a link to Chapter 1 with `?look=`), Rooms
+   (each summary with person, style and its one move from `suggest`; "Make a new room" runs today's setup sheet), Goals,
+   Check-in (a feeling from the five and one line, writes `checkins` and `lastCheckin`), Invitations.
+4. In a room: Style, Invite (the join link with a note, `navigator.share` and copy; and "come sit with me" writing
+   `invitations.<id>`), a small Next card from `suggest({ rooms:[summary], here:id })`, a door home, a Spellbook on the
+   cushions using `castable` (sitAccepted from a yes-answered invitation).
+5. `?sheet=rooms|look|style|invite|checkin` jumps at boot. Done: `npm run test:between`, `npm run check`, build, iPhone-size
+   WebKit run with no errors, screenshots in `/mnt/project-files/between/rooms-home/`, a one-click Vercel preview link per
+   sheet in the reply, voice_lint on copy. Next after: the dance minigame round and Ari's look.
+
 ### Build brief: rooms, styles, invitations, homeroom, next moves (fresh Opus thread, bars-engine)
 Branch `claude/project-thread-yspmw4` in bars-engine, already cut from round 4 (`claude/project-thread-r1hsuf`, PR #409,
 ready), so the PR stacks on #409. Scout: rung 2 (we have it): a room is the existing garden; the look is sprout's creator
