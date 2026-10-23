@@ -1,0 +1,117 @@
+{
+ "date": "2026-10-23",
+ "kind": "board-pull",
+ "newest_save": "2026-10-23T23:25:04.470Z",
+ "answers": {
+  "ty-engine": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:22:01.266Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "br-room-is-garden": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:22:12.819Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "br-home-is-a-room": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:23:10.917Z",
+   "status": "overrule",
+   "steer": "You should always spawn into your home room and the link invitation gives you a portal to the room they’ve been invited to after they get oriented in the home open and learn the rules of the game "
+  },
+  "br-style-is-the-place": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:23:34.388Z",
+   "status": "stands",
+   "steer": "I do think both players have to consent to change the rooms style "
+  },
+  "br-look-is-sprouts": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:23:49.807Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "br-goals-private": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:23:58.262Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ty-rigor": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:00.801Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "br-next-moves-three-lanes": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:11.957Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ty-genre-mix": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:20.121Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-clinician-named": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:22.675Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-permission-on-objection": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:25.393Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-streaks-visible": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:29.877Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-reward-completion": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:38.259Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-wise-mind-past": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:49.826Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "br-invite-two-kinds": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:24:57.899Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ty-gates": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:25:02.762Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ty-roster": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:25:04.470Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/br-home-is-a-room: Overruled (steer: \"You should always spawn into your home room and the link invitation gives you a portal to the room they’ve been invited to after they get oriented in the home open and learn the rules of the game\")",
+  "positions/br-style-is-the-place: Stands (steer: \"I do think both players have to consent to change the rooms style\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
