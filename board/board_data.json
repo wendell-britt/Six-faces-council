@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "positions": [
   {
    "id": "build",
@@ -34987,6 +34987,22 @@
      "architect"
     ],
     "pass": "fcp-launch"
+   },
+   "tw-clinician": {
+    "decision": "A",
+    "label": "Yes, a named clinician reads them first",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:01:02.195Z",
+    "record": "council/ledger/2026-10-23-pull-230102.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman",
+     "architect",
+     "challenger",
+     "diplomat",
+     "sage"
+    ],
+    "pass": "work-dbt 1"
    }
   },
   "causes": {
