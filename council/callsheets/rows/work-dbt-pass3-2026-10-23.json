@@ -1,0 +1,75 @@
+{
+ "updated": "2026-10-23",
+ "positions": [
+  {
+   "id": "tw-emotion-mind-place",
+   "faces": [
+    "shaman",
+    "sage",
+    "architect"
+   ],
+   "pass": "work-dbt 3",
+   "auto": true,
+   "pos": "Following your answer that emotion sits downstream of the Player: feeling arises in the Player, the vulnerable child. The Emotional Body daemon is the daemon that took over handling that feeling to protect the child. DBT's emotion mind is the state when the Emotional Body has the joystick. Reasonable mind is a state when another daemon leads, left unmapped for now. Wise Mind and Big Mind are the way past the Player, where the daemons stand around the child as spirits. Validating a feeling before any inquiry is the Emotional Body's honoured form, \"release in its time\". DBT's words stay cited and do not become cave names. This stands unless you flip it.",
+   "why": "Your words on tw-wise-mind-past, 2026-10-23: \"I think it's also down stream of the player self\". The record: the Player is the vulnerable child, \"the centre the others work for or against\" (council/daemons/questions.yaml); the daemons \"emerge as a way to protect the vulnerable child\" (your words, council/daemons/GESTURES.md); the Emotional Body is \"where charge lives\" and its aim is to \"Hand the feeling off before it has finished arriving\" (council/daemons/daemons.yaml). You said you need to think more, so flip it if it doesn't fit. Source: council/passes/6FACE_PASS_work-dbt3_2026-10-23.md and bars-engine docs/the-work-dbt-extension.md (PR #427)."
+  },
+  {
+   "id": "tw-streak-kept",
+   "faces": [
+    "challenger",
+    "shaman",
+    "regent"
+   ],
+   "pass": "work-dbt 3",
+   "auto": true,
+   "pos": "Players see their streaks as runs kept. When a run ends, it stays on the page as a finished run. There is no counter that drops to zero, no reset and no red. Declared rest, and any sitting ended by Calm, Step back or a safety route, pauses a run and never breaks it. This stands unless you flip it.",
+   "why": "Tests tw-streaks-visible against the no-guilt line. The Challenger dissented: a counter that resets is loss aversion (doc 3.5, drive D8) even with no guilt message. The Shaman's standing test asks whether it says something is wrong with the player. tw-coach-test still holds, because streaks are not a reward input. Source: council/passes/6FACE_PASS_work-dbt3_2026-10-23.md and bars-engine docs/the-work-dbt-extension.md (PR #427)."
+  },
+  {
+   "id": "tw-completion-content-blind",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "work-dbt 3",
+   "auto": true,
+   "pos": "Completing a step counts the same whether the player typed a line, picked a preset line, drew a picture or kept the line private. The game counts steps finished, never what was written or how much. A classroom player or a child can finish the whole loop with preset lines. This stands unless you flip it.",
+   "why": "Tests tw-reward-completion against the rule that intimate disclosure is not progression currency (rule 5; doc C20). The system reads no free text (rule 15), so completion can only be content-blind. Source: council/passes/6FACE_PASS_work-dbt3_2026-10-23.md and bars-engine docs/the-work-dbt-extension.md (PR #427)."
+  },
+  {
+   "id": "tw-safety-exits-outside",
+   "faces": [
+    "regent",
+    "challenger"
+   ],
+   "pass": "work-dbt 3",
+   "auto": true,
+   "pos": "Calm, Step back, the flooding practices and the danger hard stop sit outside reward accounting. Using one never costs a reward and never breaks a run. Finishing a distress practice counts as completing a step, because it is the work that gets past an inner block. A pass or a not-now at an ordinary step still does not earn the reward, as you ruled. This stands unless you flip it.",
+   "why": "Your steer on tw-reward-completion: rewards come from \"doing the work to overcome the inner blocks\". The harm gate's hard stops (doc 3.7) cannot carry a cost, or the gate becomes a pressure to keep going. Source: council/passes/6FACE_PASS_work-dbt3_2026-10-23.md and bars-engine docs/the-work-dbt-extension.md (PR #427)."
+  },
+  {
+   "id": "tw-face-table-3",
+   "faces": [
+    "regent",
+    "diplomat",
+    "shaman",
+    "sage"
+   ],
+   "pass": "work-dbt 3",
+   "auto": true,
+   "pos": "The face table changes in four ways. First, all of DEAR MAN moves to the Diplomat, and the Challenger keeps the body-first skills and opposite action. Second, the Sage holds Wise Mind as the way past the Player toward Big Mind, no longer as the centre of the self. Third, every inquiry and turnaround is aimed at a daemon's thought line, never at the Player. Fourth, DBT's names stay in a lineage column. Player-facing names come later from a term pass. This stands unless you flip it.",
+   "why": "Your answers tw-wise-mind-past and tw-permission-on-objection (generic names with a lineage line). The Diplomat named the split DEAR MAN. The Shaman's point is that the Player is the vulnerable child, so a question aimed at the Player lands on the child. Source: council/passes/6FACE_PASS_work-dbt3_2026-10-23.md and bars-engine docs/the-work-dbt-extension.md (PR #427)."
+  },
+  {
+   "id": "tw-tipp-trim",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "work-dbt 3",
+   "auto": true,
+   "pos": "From DBT's TIPP the game offers only paced breathing and paired muscle relaxation. The cold-water and intense-exercise steps are left out of every tier, and the named clinician checks this at the clinician read. This stands unless you flip it.",
+   "why": "The Challenger's finding: those two steps carry medical cautions in DBT's own teaching. This comes from memory and was not checked against the source text. The game cannot screen a player's health, so it leaves them out. Source: council/passes/6FACE_PASS_work-dbt3_2026-10-23.md and bars-engine docs/the-work-dbt-extension.md (PR #427)."
+  }
+ ]
+}
