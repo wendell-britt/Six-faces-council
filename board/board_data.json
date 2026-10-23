@@ -12196,6 +12196,18 @@
    "auto": true,
    "pos": "The Between suggests what to do next in three lanes: yourself (you have not checked in today), the Between (it has dimmed, or a lantern waits), and your partner (something waits for your yes, an agreement is up for revisit, they invited you, they are here now, you have not sat together this week). At most one suggestion in each lane, in plain words, never a number or a score, and no AI. This stands unless you flip it.",
    "why": "Your words, 2026-10-23: \"The current state of the Between should be able to suggest next actions so peopel are checking in with themselves with the between and with their partner as part of the game loop\". public/calrunia/next-moves.js, tested."
+  },
+  {
+   "id": "ty-genre-mix",
+   "faces": [
+    "shaman",
+    "architect",
+    "sage"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "The game is a Spiritfarer-style boat run as a studio sim. The boat is the studio, crewed by staff cards. Strands come aboard as spirit passengers and leave through the Everdoor when done. The project is the Chapter 1 demo moving through the seven gates, with a review reveal after each round.",
+   "why": "Wendell's steer on ty-genre, 2026-10-23. Research: https://claude.ai/artifact/Jn1C9NzB7CQnN7PB2sr1yL"
   }
  ],
  "questions": [
