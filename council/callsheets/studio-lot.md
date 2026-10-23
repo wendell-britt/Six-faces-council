@@ -1,14 +1,16 @@
 # Studio lot (the studio game)
 
 ## Next
-Brief: Boat prototype (next). One Opus thread builds a paper prototype on bars-engine at `/board/studio` (behind his
-sign-in, per `ty-host`): a boat deck drawn on a 2D canvas (Kenney CC0 art or plain shapes) where each real strand from
-`council/loops/*.json` and `council/callsheets/INDEX.md` is a spirit passenger showing its true state, a crew row of
-staff cards (Claude-Code-Game-Studios roles, Opus vs Sonnet wage), and the Chapter 1 gate bar. Read-only, no moves yet.
-- Tool scout first (docs/tool-scout.md); candidate fork bases IsoCity (github.com/amilich/isometric-city, MIT) and
-  Cimulity (MIT).
-- Deliver a hosted Vercel preview link opened at the deck. This is a feature: it opens a PR on bars-engine.
-- Questions go to the board, never chat. Hand off before 150,000 tokens. End with what was not checked.
+Built 2026-10-23: the read-only boat deck at bars-engine `/board/studio` (bars-engine #429, draft, branch
+`claude/project-thread-227mft`). Open strands from INDEX.md ride as spirits (bow waiting on Wendell, midship moving,
+stern resting, Everdoor done; fading toward 21 days untouched), loop strands show rounds past his last look, a crew row
+of the Claude-Code-Game-Studios roster with Opus/Sonnet wages, and the Chapter 1 gate bar (advice: Pre-Production, no
+gate passed). Preview deployments open without the bars-engine sign-in; production stays owner-only.
+
+Brief: One move (next, per `ty-order`). Waits on his look at the deck (`hx-looks-gate`). One Opus thread adds the first
+move: drag a staff card onto a waiting spirit to Send its brief, which starts a thread through the same path as a board
+Send (real write, `ty-real-data`). That is where Phaser 3 and Kenney art come in (`ty-engine`). Also: compute the gate
+verdict from a file instead of the hand-written note in `src/lib/studio/deck.ts`.
 
 ## Waiting on
 Nothing from Wendell. Positions `ty-lens`, `ty-real-data`, `ty-host`, `ty-engine`, `ty-roster`, `ty-gates`, `ty-rigor`,
