@@ -12196,6 +12196,18 @@
    "auto": true,
    "pos": "The Between suggests what to do next in three lanes: yourself (you have not checked in today), the Between (it has dimmed, or a lantern waits), and your partner (something waits for your yes, an agreement is up for revisit, they invited you, they are here now, you have not sat together this week). At most one suggestion in each lane, in plain words, never a number or a score, and no AI. This stands unless you flip it.",
    "why": "Your words, 2026-10-23: \"The current state of the Between should be able to suggest next actions so peopel are checking in with themselves with the between and with their partner as part of the game loop\". public/calrunia/next-moves.js, tested."
+  },
+  {
+   "id": "ty-genre-mix",
+   "faces": [
+    "shaman",
+    "architect",
+    "sage"
+   ],
+   "pass": "studio-tycoon-2026-10-23",
+   "auto": true,
+   "pos": "The game is a Spiritfarer-style boat run as a studio sim. The boat is the studio, crewed by staff cards. Strands come aboard as spirit passengers and leave through the Everdoor when done. The project is the Chapter 1 demo moving through the seven gates, with a review reveal after each round.",
+   "why": "Wendell's steer on ty-genre, 2026-10-23. Research: https://claude.ai/artifact/Jn1C9NzB7CQnN7PB2sr1yL"
   }
  ],
  "questions": [
@@ -32223,6 +32235,238 @@
     "faces": [
      "regent",
      "challenger"
+    ],
+    "pass": "studio-tycoon-2026-10-23"
+   },
+   "tw-ruling-streaks": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:03:37.548Z",
+    "record": "council/ledger/2026-10-23-pull-230337.json (six-faces-council)",
+    "steer": "Players can see streaks",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-ruling-reward": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:23.963Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "steer": "Pass and not now don’t count the same. Rewards come from completing things and doing the work to overcome the inner blocks that get in the way",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-ruling-adapt": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:33.965Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-shadow-kinds": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:41.450Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-pause-not-skip": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:04:49.884Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-skill-branch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:05:00.070Z",
+    "record": "council/ledger/2026-10-23-pull-230500.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-lines-local": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:05:09.388Z",
+    "record": "council/ledger/2026-10-23-pull-230516.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-coach-grant": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:05:16.090Z",
+    "record": "council/ledger/2026-10-23-pull-230516.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-ruling-levels": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:06:07.982Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-wise-mind": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:11.139Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "steer": "Wise mind and big mind are the same or are on the same trajectory but are PAST the player which is the vulnerable child \n\nI need to think more about how the emotional body and the emotional mind connect. I think it’s also down stream of the player self",
+    "faces": [
+     "sage",
+     "shaman"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-no-ai": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:17.298Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-audience": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:24.266Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "architect"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-gate-input": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:29.359Z",
+    "record": "council/ledger/2026-10-23-pull-230729.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger",
+     "diplomat"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-level-disclosure": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:37.260Z",
+    "record": "council/ledger/2026-10-23-pull-230817.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "regent",
+     "architect"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-tier-gate": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:42.128Z",
+    "record": "council/ledger/2026-10-23-pull-230817.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman",
+     "architect"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-coach-test": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:07:50.821Z",
+    "record": "council/ledger/2026-10-23-pull-230817.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "ty-lens": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:08:03.949Z",
+    "record": "council/ledger/2026-10-23-pull-230817.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat"
+    ],
+    "pass": "studio-tycoon-2026-10-23"
+   },
+   "ty-real-data": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:08:10.833Z",
+    "record": "council/ledger/2026-10-23-pull-230817.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "challenger"
+    ],
+    "pass": "studio-tycoon-2026-10-23"
+   },
+   "ty-host": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:08:17.183Z",
+    "record": "council/ledger/2026-10-23-pull-230817.json (six-faces-council)",
+    "faces": [
+     "regent"
     ],
     "pass": "studio-tycoon-2026-10-23"
    }
