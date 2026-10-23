@@ -1,0 +1,48 @@
+{
+ "date": "2026-10-23",
+ "kind": "board-pull",
+ "newest_save": "2026-10-23T23:27:59.372Z",
+ "answers": {
+  "tw-emotion-mind-place": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:27:18.100Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-streak-kept": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:27:25.852Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-completion-content-blind": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:27:33.330Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-safety-exits-outside": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:27:44.231Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-face-table-3": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:27:52.671Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-tipp-trim": {
+   "kind": "position",
+   "savedAt": "2026-10-23T23:27:59.372Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
