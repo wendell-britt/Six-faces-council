@@ -12208,6 +12208,61 @@
    "auto": true,
    "pos": "The game is a Spiritfarer-style boat run as a studio sim. The boat is the studio, crewed by staff cards. Strands come aboard as spirit passengers and leave through the Everdoor when done. The project is the Chapter 1 demo moving through the seven gates, with a review reveal after each round.",
    "why": "Wendell's steer on ty-genre, 2026-10-23. Research: https://claude.ai/artifact/Jn1C9NzB7CQnN7PB2sr1yL"
+  },
+  {
+   "id": "tw-clinician-named",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "work-dbt 2",
+   "auto": true,
+   "pos": "Your answer is recorded: a named clinician reads the Work and DBT branches, the harm gate and the child tier before any child or trauma-tier player sees a build. Nobody is named yet, so a step on the board asks you for the name, or for Claude to find candidates. Until a name is in, those tiers stay closed (tw-tier-gate) and the adult skills build goes ahead. This stands unless you flip it.",
+   "why": "Your board answer to tw-clinician, 2026-10-23: \"Yes, a named clinician reads them first\". The board step is work-dbt-clinician-01. Source: council/callsheets/work-dbt.md."
+  },
+  {
+   "id": "tw-permission-on-objection",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "work-dbt 2",
+   "auto": true,
+   "pos": "Your answer is recorded: no counsel is paid now. The Work and DBT are adapted under generic names with a lineage line and a works-cited page, and counsel is brought in only if a rights holder objects. This stands unless you flip it.",
+   "why": "Your board answer to tw-permission, 2026-10-23: \"Only if a rights holder objects\". It keeps tw-ruling-adapt. Source: council/callsheets/work-dbt.md."
+  },
+  {
+   "id": "tw-streaks-visible",
+   "faces": [
+    "challenger",
+    "regent"
+   ],
+   "pass": "work-dbt 2",
+   "auto": true,
+   "pos": "Your ruling is recorded: players can see their streaks. Streaks stay assessment data a coach sees only through the player's grant (tw-coach-grant). Still no guilt message and no penalty, and declared rest pauses a run. This replaces tw-ruling-streaks. This stands unless you flip it.",
+   "why": "Your board answer, 2026-10-23, overruling tw-ruling-streaks: \"Players can see streaks\". The no-guilt and rest lines carry over from tw-ruling-streaks and tw-pause-not-skip; the pass on the face table may test them."
+  },
+  {
+   "id": "tw-reward-completion",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "work-dbt 2",
+   "auto": true,
+   "pos": "Your ruling is recorded: no answer is worth more than another, and rewards come from finishing what you start and doing the work that gets past the inner blocks. A pass and a not-now do not count the same as doing the work. They cost nothing and never punish, but they do not earn the reward. Rewards still never scale with length or intimacy. This replaces the wording of tw-ruling-reward. This stands unless you flip it.",
+   "why": "Your board answer, 2026-10-23: tw-ruling-reward stands, with the steer \"Pass and not now don't count the same. Rewards come from completing things and doing the work to overcome the inner blocks that get in the way\". C20 of bars-engine docs/the-work-dbt-extension.md (PR #427)."
+  },
+  {
+   "id": "tw-wise-mind-past",
+   "faces": [
+    "sage",
+    "shaman"
+   ],
+   "pass": "work-dbt 2",
+   "auto": true,
+   "pos": "Your ruling is recorded: Wise Mind and Big Mind are the same, or on the same trajectory, and both are past the Player, who is the vulnerable child. Wise Mind is no longer the centre of the self. How the Emotional Body daemon and DBT's emotion mind connect is open, and you place it downstream of the Player self; the next pass works it out and brings back only what the record can't settle. DBT's words stay cited, not renamed. This replaces tw-wise-mind. This stands unless you flip it.",
+   "why": "Your board answer, 2026-10-23, overruling tw-wise-mind: \"Wise mind and big mind are the same or are on the same trajectory but are PAST the player which is the vulnerable child. I need to think more about how the emotional body and the emotional mind connect. I think it's also down stream of the player self\"."
   }
  ],
  "questions": [
