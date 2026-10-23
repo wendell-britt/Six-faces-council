@@ -1,0 +1,44 @@
+{
+ "date": "2026-10-23",
+ "kind": "board-pull",
+ "newest_save": "2026-10-23T23:07:29.359Z",
+ "answers": {
+  "tw-ruling-levels": {
+   "kind": "position",
+   "steer": "",
+   "status": "stands",
+   "savedAt": "2026-10-23T23:06:07.982Z"
+  },
+  "tw-wise-mind": {
+   "kind": "position",
+   "steer": "Wise mind and big mind are the same or are on the same trajectory but are PAST the player which is the vulnerable child \n\nI need to think more about how the emotional body and the emotional mind connect. I think it’s also down stream of the player self ",
+   "status": "overrule",
+   "savedAt": "2026-10-23T23:07:11.139Z"
+  },
+  "tw-no-ai": {
+   "kind": "position",
+   "steer": "",
+   "status": "stands",
+   "savedAt": "2026-10-23T23:07:17.298Z"
+  },
+  "tw-audience": {
+   "kind": "position",
+   "steer": "",
+   "status": "stands",
+   "savedAt": "2026-10-23T23:07:24.266Z"
+  },
+  "tw-gate-input": {
+   "kind": "position",
+   "steer": "",
+   "status": "stands",
+   "savedAt": "2026-10-23T23:07:29.359Z"
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/tw-wise-mind: Overruled (steer: \"Wise mind and big mind are the same or are on the same trajectory but are PAST the player which is the vulnerable child \n\nI need to think more about how the emotional body and the emotional mind connect. I think it’s also down stream of the player self\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
