@@ -32298,6 +32298,30 @@
      "sage"
     ],
     "pass": "work-dbt 1"
+   },
+   "tw-lines-local": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:05:09.388Z",
+    "record": "council/ledger/2026-10-23-pull-230516.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
+   },
+   "tw-coach-grant": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:05:16.090Z",
+    "record": "council/ledger/2026-10-23-pull-230516.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "work-dbt 1"
    }
   },
   "questions": {
