@@ -32800,6 +32800,82 @@
      "diplomat"
     ],
     "pass": "studio-tycoon-2026-10-23"
+   },
+   "tw-emotion-mind-place": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:27:18.100Z",
+    "record": "council/ledger/2026-10-23-pull-232759.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "sage",
+     "architect"
+    ],
+    "pass": "work-dbt 3"
+   },
+   "tw-streak-kept": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:27:25.852Z",
+    "record": "council/ledger/2026-10-23-pull-232759.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman",
+     "regent"
+    ],
+    "pass": "work-dbt 3"
+   },
+   "tw-completion-content-blind": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:27:33.330Z",
+    "record": "council/ledger/2026-10-23-pull-232759.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "work-dbt 3"
+   },
+   "tw-safety-exits-outside": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:27:44.231Z",
+    "record": "council/ledger/2026-10-23-pull-232759.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "challenger"
+    ],
+    "pass": "work-dbt 3"
+   },
+   "tw-face-table-3": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:27:52.671Z",
+    "record": "council/ledger/2026-10-23-pull-232759.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat",
+     "shaman",
+     "sage"
+    ],
+    "pass": "work-dbt 3"
+   },
+   "tw-tipp-trim": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-23",
+    "saved_at": "2026-10-23T23:27:59.372Z",
+    "record": "council/ledger/2026-10-23-pull-232759.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "regent"
+    ],
+    "pass": "work-dbt 3"
    }
   },
   "questions": {
