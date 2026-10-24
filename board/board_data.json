@@ -12411,6 +12411,72 @@
    "auto": true,
    "pos": "Following your note on the boat: far fewer houses. The strands are grouped into about six department halls of the studio boat, each a big building with rooms inside, and some rooms sit in a wing inside a hall. From outside, a hall's windows show each room's state and it hangs one bell when any room waits. Tap a hall and its front wall opens to show the rooms; tap a room to knock. The halls follow the Claude-Code-Game-Studios departments: Art Studio, Design Room, Map Room, Story Room, Post Office and Engine Room, with a cargo hold for strands not yet sorted. This stands unless you flip it.",
    "why": "Your words on ty-boat-look-1, 2026-10-24: \"Yes I definitely agree we need fewer houses. We should be able to group them into hierarchies and some are rooms inside of larger rooms like departments in the game design studio that is the boat\". The hall map is in council/callsheets/studio-lot.md, brief \"Boat round 3: departments\"."
+  },
+  {
+   "id": "bw-spirit-is-strand",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "auto": true,
+   "pos": "On the studio boat a spirit is one strand of work, with its own creature. Its letters are the asks it carries for you: questions, positions, look steps and steps. The foxes at the bell are spirits whose strand waits on you, not a different kind of being. This stands unless you flip it.",
+   "why": "ty-genre-mix puts strands aboard as spirit passengers, and round 2 (bars-engine #429, 10fd9e3) already gives each strand one stable creature. Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
+  },
+  {
+   "id": "bw-crew-are-hands",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "auto": true,
+   "pos": "Crew are the hands: Claude-Code-Game-Studios roles, each one a Claude thread doing the work, paid wages by model. Crew do not wait on you and do not fade; a tired crew member swaps out at the 150,000-token line. You talk to spirits about what and why, and to crew about how. This stands unless you flip it.",
+   "why": "ty-roster and the crew swap in the concept page. Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
+  },
+  {
+   "id": "bw-talk-is-save",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "auto": true,
+   "pos": "Every conversation on the boat that ends in a choice writes exactly the save the board would write, through POST /api/board/saves. Every reply menu ends with \"say something else\", which lands as steer. A spirit's words go to its strand's row, a crew member's to the step they are working, the wheel's to general steer. The character says back what it heard before it leaves, and your words are saved as typed. This stands unless you flip it.",
+   "why": "ty-lens and ty-real-data: one store, and a move that writes nothing real does not ship. Today the boat's red seal saves only to the phone (public/studio/boat.js tend). Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
+  },
+  {
+   "id": "bw-lines-from-record",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "auto": true,
+   "pos": "Characters speak from the record: a spirit's lines are its row's question, options and why, rewritten into plain speech when the boat is built. No live model talks on the boat in the first version, so nothing a character makes up can become your decision, and the boat works with no AI involved. This stands unless you flip it.",
+   "why": "The dual-track rule and the Portland community's allergy to AI (bars-engine CLAUDE.md). Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
+  },
+  {
+   "id": "bw-answer-is-care",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "auto": true,
+   "pos": "A knock lets a spirit say where it stands, but only an answer, a tick or a note counts as care that keeps it from fading. A visit with no reply does not reset its clock. This stands unless you flip it.",
+   "why": "Spirit care's ladder counts acts of care (council/spirit-care/README.md); on a work strand the act is the reply. Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
+  },
+  {
+   "id": "bw-board-keeps-the-rest",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "auto": true,
+   "pos": "Terms, causes, the morning menu, Tap the Vein, set aside and picks stay on the board in the boat's first version; they have no strand to live in. The board stays the record either way. On the boat, the bell writes the pickup save and the next Board Send run picks it up, since bars-engine hides Send's trigger. This stands unless you flip it.",
+   "why": "ty-lens; bars-engine src/lib/board/council-page.ts hides Send and blanks PICKUP_TRIGGER. Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
   }
  ],
  "questions": [
@@ -19575,6 +19641,84 @@
      {
       "text": "Studio Boat Art Direction",
       "url": "https://claude.ai/artifact/85chXzRvLpPj7dumm6hi5z"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bw-first-move",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "q": "Which move should the studio boat learn first?",
+   "why_you": "ty-order says the first move is a crew member sent to a spirit to start its brief. Your ask on 2026-10-24 was to steer by talking to the characters, which points at letters first. Only you can say which you want to use first. Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr",
+   "not_before": "Raised 2026-10-24 when you asked how far the boat is from replacing the board.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Answer letters (recommended)",
+     "c": "Round 4 brings questions and positions to their spirits, with seals and your own words writing real saves. It is your most frequent board move and carries the steer."
+    },
+    {
+     "v": "B",
+     "label": "B. Send crew to a spirit",
+     "c": "Round 4 builds the drag of a crew member onto a spirit to start its brief, as ty-order says. Letters come a round later."
+    },
+    {
+     "v": "C",
+     "label": "C. Both in one round",
+     "c": "One bigger round with both moves. Slower to your next look, and more to check at once."
+    }
+   ],
+   "research": {
+    "title": "Steering the Spirit Boat",
+    "lead": "The move map and the round plan are on a separate page.",
+    "sections": [],
+    "sources": [
+     {
+      "text": "Steering the Spirit Boat",
+      "url": "https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
+     }
+    ]
+   }
+  },
+  {
+   "id": "bw-strand-fade",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "boat-moves-2026-10-24",
+   "q": "What happens to a strand whose spirit you haven't visited in 21 days?",
+   "why_you": "You ruled that spirits can die from neglect (sc-undying A), but a strand is work, and letting it go composts it. Only you can say whether work spirits follow the same rule.",
+   "not_before": "Raised 2026-10-24 with the boat move map; the boat already dims spirits toward 21 days untouched.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Fades and leaves a seed (recommended)",
+     "c": "The spirit leaves through the Everdoor, the compost pass files its callsheet and keeps its next line as a seed you can replant."
+    },
+    {
+     "v": "B",
+     "label": "B. Only dims",
+     "c": "The spirit grows faint but stays aboard until you or a thread close the strand."
+    },
+    {
+     "v": "C",
+     "label": "C. Work spirits never fade",
+     "c": "Neglect shows nowhere on the boat; only your own pets follow spirit care."
+    }
+   ],
+   "research": {
+    "title": "Steering the Spirit Boat",
+    "lead": "The page explains spirits and crew.",
+    "sections": [],
+    "sources": [
+     {
+      "text": "Steering the Spirit Boat",
+      "url": "https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
      }
     ]
    }
