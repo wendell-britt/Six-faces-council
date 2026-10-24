@@ -1,7 +1,27 @@
 # Studio lot (the studio game)
 
 ## Next
-Face ships round 4, flow ships, done 2026-10-24 (thread "Taoist ships, art round 4"). His board answers (ledger
+Face ships round 5, nested ships, done 2026-10-24 (thread "Face ships, art round 5"). His note on boat-grid-look-4
+(ledger `2026-10-24-pull-161956`): inner segmentation needs work; balance inner and outer symmetry with crew moving
+coherently; keep compartments as transcend and include. His look-3 note is answered by position boat-grid-look-3-retired;
+his look-1 note (deprecate and compost rounds) belongs to the board read, not this strand. Made in
+`/mnt/project-files/studio-tycoon/nested-ships/`: `nested-ships.js` (round 4's renderer plus `FlowShips.rings`,
+`.septa`, `.growth`), `still.html?view=rings|septa|growth`, stills `still-rings-v3.png` (A, recommended),
+`still-septa-v1.png` (B), `still-growth-v3.png`, page source `nested-ships-r5.html`. Rule: outside flows, inside nests;
+every wall is an older skin, rooms mirror round the Hearth, one level walk through a gate in every wall, a stair only
+down to the stores, older walls worn. The Shaman seed is the heart of every face ship. Art director check (Sonnet,
+CCGS role) first pass fix first; fixes applied (wall thickness and age, stair route, loom need, Orrery pod gates).
+Refs `flow-ships/refs-r5/` (worker run; may be missing). Page https://claude.ai/artifact/Pj8GSnHsg9L4DN653AUtfV.
+Positions on main (rows `rows/nested-ships-2026-10-24.json`): `boat-grid-nested-skins`, `boat-grid-seed-heart`. Look
+step `boat-grid-look-5` (list `studio-lot-boat`, n 10) on both stores. Not checked: motion, phone size, a playable build.
+#429 untouched (head c315bb5).
+
+Brief: on his yes to `boat-grid-look-5`, "Face ships build" (below) ports `nested-ships/nested-ships.js` (rings layout,
+or septa if he picks B): chambers are ring bands round the Hearth, crew path the one level walk with gates, the stair to
+the stores, qi currents for lanterns, breathing idle. On a note: round 6 from his note. The living ship's next art round
+(inner-vessel.md) takes boat-grid-nested-skins.
+
+Earlier, Face ships round 4, flow ships, done 2026-10-24 (thread "Taoist ships, art round 4"). His board answers (ledger
 `2026-10-24-pull-072734`): boat-grid-tao-space stands with the steer "no symbology, Daoist vibes, curves and flow";
 boat-grid-five-elements overruled (every element at every face); boat-grid-grows-both-ways overruled (no boat);
 boat-grid-carry-tao B (living ship only, not Calrunia); boat-grid-star-names and lt-idle-robe-cloth stand. Made in

@@ -12956,6 +12956,32 @@
    "auto": true,
    "pos": "A look can be marked deprecated, and a deprecated idea gets a compost round: the six faces read what worked and what did not and write it down for the next round. The board needs a Deprecated mark on a step, and a compost round runs the daily compost pass on that strand. Built by a Sonnet thread; stands unless you flip it.",
    "why": "Your note on boat-grid-look-1: 'We need the ability to make a note that an idea is deprecated and needs a compost round... so they can learn for new rounds.'"
+  },
+  {
+   "id": "boat-grid-nested-skins",
+   "faces": [
+    "shaman",
+    "architect",
+    "regent",
+    "sage"
+   ],
+   "pass": "nested-ships-2026-10-24",
+   "auto": true,
+   "pos": "Outside flows, inside nests. Every wall inside a ship is an older skin it grew past and kept, so walls follow the skin's curve and the chambers mirror around a heart chamber the way the skin mirrors around its axis. Every floor sits at one height and one walk passes a gate in every wall; stairs only go down to the stores. Older walls look worn, the newest skin fresh. Option A on round 5's page (nested rings) is the recommended layout for the living ship.",
+   "why": "Your note on boat-grid-look-4 (2026-10-24): compartments, balance inner and outer symmetry with crew moving coherently, keep the transcend and include. The art director check preferred nested rings over a growth line because only the rings answer all four."
+  },
+  {
+   "id": "boat-grid-seed-heart",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect"
+   ],
+   "pass": "nested-ships-2026-10-24",
+   "auto": true,
+   "pos": "The Shaman's seed chamber is the heart of every face's ship. The Challenger wraps one chamber round it, the Regent mirrors chambers either side, and the Architect holds a heart pod on its spine with pods in orbit joined by lit paths. Face still sets the form and element the skin (boat-grid-face-form-element-skin).",
+   "why": "Transcend and include across the faces, from your boat-grid-look-4 note; keeps chamber count by face from round 4."
   }
  ],
  "questions": [
