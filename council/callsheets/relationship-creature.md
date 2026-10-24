@@ -390,3 +390,9 @@ sprout draft #74 (branch claude/project-thread-byiz0w, head 25b7128, stacked on 
 Not checked: road walk, mirror beat, pixel bake, frame cost, the wider sleeves against the thighs, bodies b and c in the probe. Possible fault to check in #435: sprout's port keeps the hair placed against Walk frame 0 because rest-pose placement put the afro over the face; #435 dropped that frame-0 posing, so the mirror figure may have the same fault.
 
 TRIGGER: his yes on look-01 -> Sonnet thread merges #433, #435 (then #72, #74 in sprout after #71). A note on look-01 (likely the sit poke) -> Opus round 2 on #435, then carry to #74. A note on look-02 -> round on #74 only.
+
+### Creator robe round 2, his note on look-02 (2026-10-24)
+
+His note: "The long coat also needs a belt and the hem across the chest should extend to the length of the fabric". sprout draft #74 (branch claude/project-thread-byiz0w, head 6fa82da): the coat cut ties the sash (`CUT.coat.sash`), and the collar band's overlap edge runs straight down from where it ends under the arm (rest height 1.10, angle -59 deg round the body) to each cut's hem, drawn per pixel in the robe shader (`EDGE` in slice/figure-robe.js). Legs probe 0 through / 0 void on every build and cut. Sheet: /mnt/project-files/3d-build/robe-layers-r2-sprout-2026-10-24/sheet.jpg. Look step `robe-layers-look-03` on both boards, preview https://sprout-pks743v9s-wendells-projects-9c1b16dc.vercel.app/slice/creator.html?form=figure&beat=satchel&look=a.average.light.afro.black.coat.violet
+
+TRIGGER: his yes on look-03 -> #74 joins the merge chain (#71, #72, #74 after look-01's merges). A note -> round 3 on #74 only, Sonnet if it is a colour or cut tweak.
