@@ -5,7 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
-- [studio-lot](studio-lot.md), 2026-10-24: boat round 2 on bars-engine #429 (own spirits, walking crew, islands, ship's log); waiting on his look ty-boat-look-1; next round 3 after his note.
+- [studio-lot](studio-lot.md), 2026-10-24: his note on the boat (fewer houses, rooms in department halls) is position ty-boat-departments; next the round 3 departments build on bars-engine #429 (brief in the sheet).
 - [work-dbt](work-dbt.md), 2026-10-23: his five answers recorded (work-dbt 2); clinician step on the board; next pass work-dbt 3 on the face table and harm gate with the wise-mind steer, then update bars-engine #427.
 - [story-pipeline](story-pipeline.md), 2026-10-21: the study behind `ttv-cmvicm0aj` is written (`council/story/PIPELINE.md`, twelve findings with sources) and the pipeline has a check (`council/story/check.py`, `tests/test_story_pack.py`); five tools added to the toolbox, inkjs still the only runtime; the first pack is written (`council/story/packs/calrunia/chapter1/beats.yaml`, 8 beats, 25 assets, check passes) and cites sprout's own beat table (PR #66) for its gates; next the Challenger's reading, then the Regent's asset pass.
 - [cave-controls](cave-controls.md), 2026-10-21: phone camera and touch research done (https://claude.ai/artifact/BwBweZR865zrKckj9tCVMY); five `ctl-*` positions (split thumbs, tap rule, generous taps, gentle camera, still mode); next a fresh Opus bars-engine thread builds controls round 1 with a preview link.
