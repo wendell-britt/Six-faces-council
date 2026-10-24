@@ -1,7 +1,27 @@
 # Studio lot (the studio game)
 
 ## Next
-Face ships round 2 done 2026-10-24 (thread "Face ships, round 2"). Renderer v2 `ships.js` (v1 kept as
+Face ships round 3, Taoist cultivation in space, done 2026-10-24 (thread "Pivot ships to Taoist space style"). His
+pivot (03:26): "I do think the FTL ship design and the spacecraft should be where we send this. The aesthetic polarity
+is Taoist cultivation in space Star Wars meets Avatar the last airbender but with 5 elements". His 04:02 steers overruled
+boat-grid-spiritfarer (space, no buoyancy), boat-grid-axes (grows below as well as above) and boat-grid-deck-unlock
+(starship names). Made in `/mnt/project-files/studio-tycoon/taoist-ships/`: `art-direction.md` (keep list, face to
+element table), `refs/` (28 images + README + contact sheet: Luofu, Star Wars interiors, ATLA airships, Su Song clock
+tower, Wu Xing), `ships-tao.js` (round 2 API and mechanics kept), stills `still-{1..4,hangar}-v3.png`, `compare-*.png`,
+`art-director-review-v3.md` (fixes applied: no sails or raised ends, a deck below the vein on every ship, 118px+ open
+span with a glowing crate). Page https://claude.ai/artifact/3nMqrD3GVb1UpUMiexuY9W (source `face-ships-tao.html`).
+Ships: Gourd Star (wood), Ember Comet (fire), Jade Palace (earth), Clockwork Orrery (metal); Tide Lotus and Taiji Star
+locked at the Air Temple moorings. Rows `council/callsheets/rows/tao-ships-2026-10-24.json` on main: positions
+`boat-grid-tao-space`, `-five-elements`, `-grows-both-ways`, `-star-names`; question `boat-grid-carry-tao` (carry the
+look to the living ship and Calrunia?). Look step `boat-grid-look-3` (list `studio-lot-boat`, n 8) on both stores;
+`boat-grid-look-2` ticked as answered by his pivot. Open art notes: Jade Palace lacks symmetric tiers; Gourd Star is
+small in the hangar. #429 untouched (head c315bb5).
+
+Brief: Face ships build now ports `taoist-ships/ships-tao.js`, not `ftl-ship/ships.js`; otherwise as below, starts
+after his yes on `boat-grid-look-3` (a note starts round 4 from his note plus the open art notes). Lanterns are qi pearls
+by element; names per boat-grid-star-names.
+
+Earlier, Face ships round 2 done 2026-10-24 (thread "Face ships, round 2"). Renderer v2 `ships.js` (v1 kept as
 `ships-v1.js`) applies `art-director-review-v1.md`: cottages with open deck between them and ladders in the gaps,
 per-face outlines (Shaman arched reed, Challenger raked and jagged with ram, spars and ring, Regent gables mirrored
 about a bell tower, Architect truss roof, pipes, stacks, crane, galleon hull), energy as lanterns along the vein in
