@@ -1,7 +1,30 @@
 # Studio lot (the studio game)
 
 ## Next
-Face ships round 3, Taoist cultivation in space, done 2026-10-24 (thread "Pivot ships to Taoist space style"). His
+Face ships round 4, flow ships, done 2026-10-24 (thread "Taoist ships, art round 4"). His board answers (ledger
+`2026-10-24-pull-072734`): boat-grid-tao-space stands with the steer "no symbology, Daoist vibes, curves and flow";
+boat-grid-five-elements overruled (every element at every face); boat-grid-grows-both-ways overruled (no boat);
+boat-grid-carry-tao B (living ship only, not Calrunia); boat-grid-star-names and lt-idle-robe-cloth stand. Made in
+`/mnt/project-files/studio-tycoon/flow-ships/`: `art-direction.md`, `flow-ships.js` (canvas 2D, `FlowShips.matrix`,
+`FlowShips.living`; v1 kept as `flow-ships-v1.js`), `still.html?view=matrix|living`, stills `still-{matrix,living}-v2.png`,
+`art-director-review-r4.md` (first pass "fix first": goldfish, rockets, saucers, portholes; fixes 1-5 applied in v2).
+Fresh refs `taoist-ships/refs-r4/` (MAD, Hadid, Naboo N-1, nautilus, Guo Xi, Huangshan, samara, Alsomitra seed).
+Page https://claude.ai/artifact/AJ13wyGbd31nYoYrS3F2Pt (source `flow-ships-r4.html`). Rule: face = form and chamber
+count (Gourd Star gourd 1, Ember Comet S-curve 2, Jade Palace mirrored 3, Clockwork Orrery 4+ pods on a spine);
+element = skin, light, motion, no emblem. Positions on main (rows `rows/flow-ships-2026-10-24.json`):
+`boat-grid-flow-not-symbols`, `boat-grid-face-form-element-skin`, `boat-grid-living-flow`. Look step
+`boat-grid-look-4` (list `studio-lot-boat`, n 9) on both stores; it supersedes `boat-grid-look-3`. Open art notes:
+Regent's mirrored ribbons can read as a saucer rim; water ships' ribbons run straight; Still 2 has empty sky above;
+Still A's cloud sails were dropped for one trailing stream (he may miss them); the sleeping spirit in the belly is
+hidden by the cut. #429 untouched (head c315bb5).
+
+Brief: on his yes to `boat-grid-look-4`, "Face ships build" (below) ports `flow-ships/flow-ships.js` forms and skins
+instead of `taoist-ships/ships-tao.js`: rooms become chambers glowing inside the skin, crew still cross open spans on
+stepping lights, qi currents replace lanterns on the vein, standing crew play a breathing and sway idle
+(lt-idle-default). On a note: round 5 from his note plus the open art notes above. The living ship's next art round
+(inner-vessel.md, after sd-ship-look-1) takes boat-grid-living-flow.
+
+Earlier, Face ships round 3, Taoist cultivation in space, done 2026-10-24 (thread "Pivot ships to Taoist space style"). His
 pivot (03:26): "I do think the FTL ship design and the spacecraft should be where we send this. The aesthetic polarity
 is Taoist cultivation in space Star Wars meets Avatar the last airbender but with 5 elements". His 04:02 steers overruled
 boat-grid-spiritfarer (space, no buoyancy), boat-grid-axes (grows below as well as above) and boat-grid-deck-unlock

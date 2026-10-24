@@ -12863,6 +12863,45 @@
    "auto": true,
    "pos": "Tap the Vein's day rolls over at 4 in the morning, local time, not at midnight. A seal, skip or skip run made between midnight and 4am counts for the day before, on the board and in bars-engine, unless you flip it or name another hour.",
    "why": "Your note on the Tap the Vein blocker of 2026-10-24: \"Make a note to have the tap the vein timer not reset at midnight\". The record does not name an hour, so 4am stands as the one that keeps a late night inside its own day. It is a build across two repos (the board's ttvToday in board/template.html, and the date bars-engine's /api/tap-the-vein/status takes), so it is not a one-line fix. Source: council/blockers/tap-the-vein--mvm206os.json"
+  },
+  {
+   "id": "boat-grid-flow-not-symbols",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect"
+   ],
+   "pass": "flow-ships-2026-10-24",
+   "auto": true,
+   "pos": "The ships carry Daoist feeling only through flow: long curved outlines, gourd swells, wakes as ribbons that curl into cloud, mist in front of and behind, soft light from several sides, karst peaks only as far ink wash. No pagodas, tiled roofs, moon gates, taiji, characters, lanterns, dragons or towers, and nothing written or carved on a ship. No hull, keel, sails or deck line: chambers sit inside a skin and glow through it. This amends boat-grid-tao-space and stands unless you flip it.",
+   "why": "Your steer on boat-grid-tao-space (2026-10-24): no symbology, borrow Daoist vibes, curves and flow. Your answer on boat-grid-grows-both-ways: the boat metaphor is gone."
+  },
+  {
+   "id": "boat-grid-face-form-element-skin",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect",
+    "diplomat",
+    "sage"
+   ],
+   "pass": "flow-ships-2026-10-24",
+   "auto": true,
+   "pos": "The face sets a ship's form and how many chambers it carries: Gourd Star (Shaman) a gourd with one chamber, Ember Comet (Challenger) an S-curve with two, Jade Palace (Regent) three swells mirrored, Clockwork Orrery (Architect) four or more pods on one spine. The element sets the skin, light and motion, with no emblem: wood grain and vines, fire's heat and embers, earth's strata and floating stones, metal's polished band and rings of light, water's glass, ripples and ribbons. Any face can wear any element. This replaces boat-grid-five-elements and stands unless you flip it.",
+   "why": "Your answer on boat-grid-five-elements (2026-10-24): no single element per face; every element can show at each face, so each face gets an elemental ship design."
+  },
+  {
+   "id": "boat-grid-living-flow",
+   "faces": [
+    "shaman",
+    "sage"
+   ],
+   "pass": "flow-ships-2026-10-24",
+   "auto": true,
+   "pos": "The living ship takes the same flow look at its next art round: its shell, roots and round door stay; it opens along a flowing edge, one floor rises and falls through its chambers, the five currents of qi braid along its skin and trail from the whorl, and new chambers bud at the rim. Calrunia's places keep their own looks. This stands unless you flip it.",
+   "why": "Your answer B on boat-grid-carry-tao (2026-10-24): carry the look to the living ship only."
   }
  ],
  "questions": [
