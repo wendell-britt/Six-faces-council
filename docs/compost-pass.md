@@ -48,6 +48,26 @@ Sonnet. The pass is one session and ends when its reply is posted (short session
 7. One reply in the thread: what was dropped, taken over and rewritten, with counts and a line each. No question.
    A question that comes up goes through the reach test and onto the board. Then resolve the thread.
 
+## Deprecated steps get a compost round
+
+Wendell, 2026-10-24 (`deprecate-then-compost`): "We need the ability to make a note that an idea is deprecated and
+needs a compost round... so they can learn for new rounds." Every step has a Mark deprecated button (the Your steps
+card, and Something feels off on a Your eyes card). It writes `deprecated: {at, note}` on the step, which closes it
+on the board, and `board/pull.py` lists it as needs-work. `compost.py` prints these first, under DEPRECATED.
+
+For each one the pass runs the compost round before it does anything else:
+
+1. Read the strand's callsheet, the step's list `why` and `source`, and his words in `deprecated.note`.
+2. Write what worked and what did not in plain sentences: one block under "Compost" in the strand's
+   `council/callsheets/<strand>.md`, headed with the step id and the date, ending with what the next round starts from
+   (a keep list, per the art-direction rule). The faces speak only through `council/faces.yaml`; a round that
+   needs the full six runs as a council pass instead and the block points to its ledger file.
+3. Retire the step: set `retired` to "Composted on <date> by the compost round: <one line of what carries forward>.
+   Bringing it back takes a new step citing this id", and set `deprecated` to null. Same `batch` as the other changes.
+4. If the lesson changes a build brief, change the brief in the same pull request.
+
+A deprecated step is never revived silently; "Bring it back" on the board clears the mark before the round runs.
+
 ## Standing checks the pass carries
 
 - `coaching-pipeline-03`: ask Vercel's analytics API (Vercel connector, `count_pageviews`, project bars-engine,
