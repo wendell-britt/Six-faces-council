@@ -82,6 +82,12 @@ textarea:focus,input:focus,button:focus-visible{outline:2px solid var(--accent);
 .qpost .qnet{font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
 @media (max-width:480px){.qpost{grid-template-columns:1fr}.qpost img{width:160px}}
 .research a{color:var(--accent);overflow-wrap:anywhere}
+.exs{display:flex;gap:10px;overflow-x:auto;margin:6px 0 10px;padding-bottom:4px}
+.ex{flex:0 0 auto;width:150px;margin:0;font-size:.82rem;color:var(--muted)}
+.ex img{width:150px;height:auto;display:block;border-radius:4px;border:1px solid var(--line,#8884)}
+.ex figcaption{margin-top:3px;line-height:1.25}
+.ex a{color:inherit}
+.exl{margin:0 0 10px;font-size:.92rem}
 .opts{display:grid;gap:8px;margin-top:4px}
 .opt{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);cursor:pointer;max-width:72ch}
 .opt:has(input:checked){border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
@@ -675,6 +681,22 @@ let sendClosed = (() => { try { return localStorage.getItem('board-send-closed')
 const local = {positions:{}, questions:{}, terms:{}, causes:{}};
 
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+/* A question that asks him to judge something shows the thing: q.examples is a list of {title, src, href, note}. An
+   example with a src is a picture (https or data:image, opening full size in a tab); one with only an href is a link.
+   (Wendell, lt-mirror-look-03, 2026-10-24: "for a question like this we need the examples where the question is for
+   me to assess"). */
+function exampleBox(q){
+  const ex = Array.isArray(q.examples) ? q.examples : [];
+  const pics = ex.filter(e => stImg(e.src)), links = ex.filter(e => !stImg(e.src) && stHref(e.href));
+  const cap = e => `${esc(e.title || '')}${e.note ? ' · ' + esc(e.note) : ''}`;
+  const pic = e => {
+    const im = `<img src="${esc(e.src)}" alt="${esc(e.title || 'Example')}" loading="lazy">`;
+    return `<figure class="ex">${stHref(e.href) ? `<a href="${esc(e.href)}" target="_blank" rel="noopener">${im}</a>` : im}<figcaption>${cap(e)}</figcaption></figure>`;
+  };
+  const link = e => `<a href="${esc(e.href)}" target="_blank" rel="noopener">${cap(e)}</a>`;
+  return (pics.length ? `<div class="exs">${pics.map(pic).join('')}</div>` : '')
+    + (links.length ? `<p class="exl">${links.map(link).join(' · ')}</p>` : '');
+}
 const chips = fs => (fs||[]).map(f => `<span class="chip ${esc(f)}">${esc(f)}</span>`).join('');
 const LABEL = {stands:'Stands', overrule:'Overruled', adopt:'Adopted', retire:'Retired', not_yet:'Not yet', not_a_term:'Not a term', kept:'Kept'};
 
@@ -773,6 +795,7 @@ function qRow(q){
     ${reviewBox('questions', q)}
     ${researchBox(q)}
     ${queueBox(q)}
+    ${exampleBox(q)}
     <p class="why"><span>why only you</span> ${esc(q.why_you)}</p>
     <p class="why"><span>why not before</span> ${esc(q.not_before)}</p>
     ${q.max > 1 ? `<p class="why"><span>pick</span> up to ${q.max}</p>` : ''}
