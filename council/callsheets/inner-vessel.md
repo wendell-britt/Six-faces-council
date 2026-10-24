@@ -58,9 +58,31 @@ ontology: default; touches: BAR, MovementFinding, CompostingDisposition
 - scout: 5 fuel gauge, a counter and a cap in vessel.js; no library fits a single number.
 - Not checked yet: the dock on his iPhone (G3); the Kenney Space Kit art (parts are labelled cells for now).
 
+## 2026-10-24: art direction round 1 done
+
+- Page: https://claude.ai/artifact/HqbQ5Y1qfX2HxyrHCmeRub (source and files in /mnt/project-files/ship-art-direction/:
+  ship-art-direction.html, stills/ with scripts and art-director-review.md, refs/ with credits.json, first-60-seconds.md).
+- Still A (2D, SVG in Playwright): the fox spirit leads you across the clouds to a grown shell ship. Still B (3D, three.js
+  0.160 + average-dusk.glb): through the hull's round door, a garden island, the spirit barn and a world ring. The CCGS art
+  director recommends both in order. Known gaps: A's fox is the washed house sprite; B's ring reads as a quilt, bud small.
+- Board: question `sd-still-pick`; positions `sd-dock-scrapped`, `sd-depth-rule` (rows/ship-art-2026-10-24.json).
+- scout: rung 2, house tools reused (spirit boat sprites, Average Dusk, three.js, Playwright); no Cradle cloudship art
+  exists online.
+
+## Brief: Living ship build (TRIGGER: his yes on sd-still-pick)
+
+One fresh Opus thread. Start from his pick and note. If A (both): build Still B first in three.js on bars-engine, as the
+new /calrunia/arrive (the passport fold in guest.js and the arrive page's plumbing stay; drop the Kenney pirate ship,
+the dock and vessel.js's grid panel as views). The island's size and light are inner energy (embers and fuel), spirits
+aboard live on the island, new chambers bud from inner work; nothing is counted on screen (sd-depth-rule). Then Still A
+as the 2D reveal at the end of Chapter 1 in sprout. Use the CCGS roles (art director, UX, systems designer) as a fixed
+step: a still or render check before each push. Hosted preview link at the exact state in every reply. Also: write
+sd-depth-rule into the design ontology (ontology/ change in the same round, via a council pull request).
+bars-engine #399 stays a draft until this lands; then close it in favor of the new pull request.
+
 ## Next
 
-1. His look at the dock on his iPhone (preview link in the bars-engine pull request). A note naming a change: a fresh Opus thread on bars-engine
+1. SUPERSEDED 2026-10-24 (dock scrapped, see Brief: Living ship build). Was: his look at the dock on his iPhone (preview link in the bars-engine pull request). A note naming a change: a fresh Opus thread on bars-engine
    branch `claude/inner-vessel-build-vqaqgw`. Next build items, in order: fuel mined in the cave itself (crystal veins),
    the living ship's voice (the C part of his answer), Kenney Space Kit art for parts, a third-person view of the hull.
 2. Tests due 2026-10-25 (destination count; paper card test only if he offers an evening), 2026-11-01 (G1 probe),
