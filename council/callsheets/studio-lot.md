@@ -1,7 +1,115 @@
 # Studio lot (the studio game)
 
 ## Next
-Brief: on his yes to `boat-grid-look-6`, "Face ships build" (below) ports `flow-blockers/flow-ships-r6.js` (Still A, compartments
+
+Waiting on his look at `boat-grid-look-8` (list `studio-lot-boat`, n 13; page https://claude.ai/artifact/2CeShQvWRkCicpXWtxeqHL).
+On his yes: "Altitude motion" (fresh Opus thread): a moving mock of one room deepening by one row after a clean minigame
+(crew walk in, the lintel colour turns), ported from `altitude-r8/altitude-r8.js`, then the hull filling in. On a note:
+round 9 from his note, keep list from his looks first.
+
+Face ships round 8, rooms grow upward, done 2026-10-24 (thread "Face ships round 8, rooms grow upward"). Made in
+`/mnt/project-files/studio-tycoon/altitude-r8/`: `refs-r8/` (13 Steam frames: Monument Valley 1-3, Two Point Hospital, Game
+Dev Story, Overcooked 2, Spiritfarer, Townscaper, Unpacking, Fallout Shelter; `refs.md`, contact sheet; our walkable ship
+and round 7 in `ourrounds/`), `gameplay-loop-r8.md` (rungs, six of eight, first 60 seconds), `altitude-r8.js`,
+`still.html?view=ship|room`, `render-stills.js`, stills `still-{ship,room}-v4.png` (+ `-phone`, `still-ship-v4-board.jpg`),
+`art-director-review-r8.md` (fix first; six fixes applied in v4). Page source `altitude-r8.html`. Positions
+`boat-grid-altitude-rooms`, `boat-grid-hull-six-of-eight` on main (rows `rows/altitude-r8-2026-10-24.json`). Look step
+`boat-grid-look-8` on both stores. Open notes: phone ship still leaves sky and teal void, crew about 20 px on a phone,
+the next hull's lit slots read as pale patches, rungs 3, 5, 6 not drawn, skill measure per minigame only sketched; the
+artifact board page was not republished (bars-engine shows the rows). #429 untouched.
+
+
+Brief: Face ships round 8, rooms grow upward (thread "Face ships round 8, rooms grow upward"; starts 2026-10-24 per his
+note on `boat-grid-look-7`, ledger `2026-10-24-pull-182659`). His note, verbatim: "We’re doing well now. The zoomed out
+rooms I think we can move back to the monument valley style pseudo 3d space. The rooms also develop through altitude
+internally and sepearately from other rooms as a function of gameplay skill development of their respective minigame.
+Enough skill development collectively at an altitude unlocks the larger ship type The issues with the current room
+visually is that is tall and not using much of the altitudinal real estate and most of the work is being done
+horizontally. There’s a sense of top down understanding of how the work is being done in the various room and some sense
+of it being done at a higher level. This could be that the players in the room are leveled up (which means we want a 3d
+space to cover more ground instead of liners horizontal) OR that there are literal floors within a room. Now I say this
+aloud I’m leaning toward leveled up actors and roles". Do NOT read the board step (base64 stills); the note is complete.
+Keep list from his looks: round 7 "doing well" (fleet as pipeline, rooms named by machine, minigame per room, blocker as
+fuel, the tide and the harbour, Flatland); round 6's beads, jams as things, amber only for alarm, nested skins; the
+walkable ship's Monument Valley axonometric (`walkable-ship/scene.js`, his 10-24 steer "3 dimensional but represented in
+2d (monument valley style)").
+Working reading (the thread may amend it, and says so): (1) The ship view (rooms zoomed out) returns to one fixed
+axonometric, Monument Valley style: flat colour planes, stairs and walkways as lit ribbons, tiny crew. (2) Altitude is
+per room: each room levels separately from skill in its own minigame. (3) His lean wins: altitude shows as leveled-up
+actors and roles, not floors. A low room is one apprentice at one station on a line; a high room is a 3D floor that
+covers more ground in depth, more stations, a master who sees the whole room from above (the "top down understanding")
+with apprentices in reach. (4) Altitude reads on the room's trim and the crew's robes (UI covenant: altitude = border),
+never a number panel. (5) Enough rooms at one altitude unlock the next, larger ship type for that face; the unlock shows
+as the next hull's silhouette waiting, not a progress bar.
+Steps: refs by a Sonnet worker (Monument Valley, our walkable ship, games where leveled staff widen a room: Two Point
+Hospital, Kairosoft, Spiritfarer upgrades, Hades' house contractor, Overcooked), `gameplay-loop-r8.md` with the altitude
+model and the first 60 seconds, 1-2 stills (A: one ship zoomed out in the axonometric with rooms at different
+altitudes and the next hull waiting; B: one room at a low and a high altitude side by side), art director check
+(Sonnet, CCGS role), look page, look step `boat-grid-look-8` (list `studio-lot-boat`, n 13) on both stores, rows file,
+callsheet. No build; bars-engine #429 untouched. Output folder `/mnt/project-files/studio-tycoon/altitude-r8/`.
+
+Earlier (round 7 done, superseded by the round 8 note):
+Waiting on his look at `boat-grid-look-7` (list `studio-lot-boat`, n 12; page https://claude.ai/artifact/EMRM5oFyFqwCbHZkuogRpe).
+On his yes: "Fleet zoom build" (fresh Opus thread, art settled first per hx-looks-gate): a playable zoom from fleet to ship
+to the loom room, ported from `flow-blockers-r7/fleet-r7.js` and `loom-r7.js`, hosted on bars-engine `/board/studio`
+(#429 or a new PR, decide from its state), with a one-click preview at the loom (`?zoom=loom`). Real data: stages from
+`council/pipeline.yaml`, loose threads from open board questions, the covered bench from unlooked look steps. On a note:
+round 8 from his note, starting from a keep list of what he praised.
+
+Face ships round 7, the fleet as the pipeline, done 2026-10-24 (thread "Face ships round 7, the fleet as pipeline"). Made in
+`/mnt/project-files/studio-tycoon/flow-blockers-r7/`: `refs-r7/` (15 frames: FTL, Lovers in a Dangerous Spacetime,
+Spiritfarer, Among Us, Cosmoteer, Outer Wilds; `refs.md`, contact sheet, our rounds 4-6 in `ourrounds/`),
+`gameplay-loop-r7.md` (three zoom levels, stage keepers, FTL stretched, eight room minigames, first 60 seconds),
+`fleet-r7.js` + `loom-r7.js` (load round 5's nested-ships.js; adds Diplomat and Sage forms), `still.html`,
+`render-stills.js`, stills `still-{fleet,loom}-v3.png` (+ `-phone`), `art-director-review-r7.md` (fix first; hulls,
+label size, jam focus, amber, loom weave applied in v2/v3; 120px skin pods and harbour moorings not done). Page source
+`fleet-r7.html` (template `page-template.html`). Positions `boat-grid-fleet-pipeline`, `boat-grid-ftl-stretch` on main
+(f5eacd9; rows `rows/fleet-pipeline-2026-10-24.json`). Reading taken: "roomed" = zoomed; amendment: eight stages on six
+ships, so the Architect keeps spec, plan and build and the current loops out to the Challenger's forge. Open notes: ship
+names and dates are small at phone width; only the loom minigame is drawn; no motion; the artifact board page was not
+republished (bars-engine shows the rows); voice lint flags the literal game word "room" throughout. #429 untouched.
+
+Earlier brief (done):
+Brief: Face ships round 7, the fleet as the pipeline (fresh Opus thread; starts now, per his note on boat-grid-look-6, saved
+2026-10-24 17:50). His note, verbatim: "Very close. We need the parts of the ship readable and we need to think about how
+the ship expands as the pipeline adapts?  What is the outcome of a pipeline run at each level? If we stretch the FTL
+mechanics, what does en enemy ship mean and where is the ship racing to? How do we metabolize the blocker's that show up
+on a ship? It seems Each of the ships would have to be able to be roomed into its own pipeline minigame tat metabolizes
+charge into overcoming the emergent blockers indigenous to that part of the pipeline". Do NOT read the board step for it
+(its stills are base64 and cost 90k tokens); the note above is complete. Keep round 6's flow-and-blockers frame
+(`flow-blockers/gameplay-loop.md`, page https://claude.ai/artifact/UX83dDGbVvtA6FxwKVMzhJ): beads of qi, jams as things
+in the world (letter, eye, knot), amber only for alarm, nested skins, no panels.
+Working reading (the thread may amend it, and says so in its report): "roomed" = zoomed. The fleet is the pipeline
+(`council/pipeline.yaml` stages intake, spec, falsify, plan, build, verify, ship, close). Each face ship holds the part of
+the pipeline its face owns there (owners field), and you zoom three levels: fleet -> ship -> room minigame.
+(1) Parts readable: every room is named by its machine, not a label (intake a listening bell, spec a loom, falsify a
+forge, plan a star chart, build a foundry, verify a mirror pool, ship a launch cradle, close the stores). Check each one
+reads at phone size.
+(2) Growth as the pipeline adapts: each rule the pipeline gained grows a compartment in a newer outer skin, older stages
+stay inside (boat-grid-nested-skins). Use the real ones with dates: tool scout (10-18), testable preview (10-20), art
+direction first (10-23), depth rule (10-24).
+(3) Outcome at each level: room = the stage's `produces` artifact; ship = that face's named contribution (close stage);
+fleet = a shipped feature, which is one FTL jump.
+(4) FTL stretched: the destination is the north star, the gamified Chapter 1 demo and the Kickstarter launch (the
+Federation base). The pursuing front is neglect: the compost tide (spirits die after 21 days, compost pass, deprecations)
+that swallows sectors left unlooked. Enemy ships are the faces' shadow ships (the Diplomat's is Flatland, the dashboard
+drift); per the daemon ruling they are never destroyed, you spar them and their crew joins (transcend and include).
+(5) Metabolism: a blocker is fuel. A room's minigame spends charge (qi) on its native blocker, and the cleared blocker
+condenses into qi or a vibeulon for the next room (emotional energy is fuel, compost not necromancy).
+(6) One minigame per room, each against that stage's native blocker: intake fog (an unquoted ask), spec loose threads
+(a decision with no owner), falsify a hidden crack (an untested assumption), plan dark stars (a step missing input), build
+heat and jams (a failing check, a merge conflict), verify the covered bench (an unlooked build), ship the sealed letter
+(his word), close the unfiled lesson.
+Steps: reference research by a Sonnet worker first (real images, saved to `/mnt/project-files/studio-tycoon/flow-blockers-r7/refs-r7/`:
+FTL sector map, rebel fleet and encounters; Lovers in a Dangerous Spacetime stations; Spiritfarer building minigames;
+Among Us room tasks; Cosmoteer ship growth; Outer Wilds destination loop; our own rounds 4-6 stills as references), then
+`gameplay-loop-r7.md` with the first 60 seconds from the player's side, then 1-2 stills (A: the fleet in convoy with a
+jam, a shadow ship and the tide; B: zoomed into one room's minigame), art director check (Sonnet, CCGS role), look page,
+look step `boat-grid-look-7` (list `studio-lot-boat`, n 12) on both stores with look/lookTitle/still/href, rows file,
+callsheet. No build; bars-engine #429 untouched (head c315bb5). Base files: `flow-blockers/` (flow-ships-r6.js,
+render-stills.js), `nested-ships/`. Output folder `/mnt/project-files/studio-tycoon/flow-blockers-r7/`.
+
+Earlier brief (superseded by his note on look-6): on his yes to `boat-grid-look-6`, "Face ships build" (below) ports `flow-blockers/flow-ships-r6.js` (Still A, compartments
 in a row inside the skins): strands as compartments with doors, qi beads on the current and door rails, jams from the board
 (letter = open board step, eye = unlooked build, knot = stalled thread), drag beads between rooms, Qi view toggle. On a note:
 round 7 from his note plus the open notes below.
