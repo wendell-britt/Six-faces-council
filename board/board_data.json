@@ -34967,6 +34967,33 @@
      "shaman"
     ],
     "pass": "flow-blockers-2026-10-24"
+   },
+   "boat-grid-fleet-pipeline": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T18:35:50.874Z",
+    "record": "council/ledger/2026-10-24-pull-183608.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent",
+     "challenger",
+     "sage"
+    ],
+    "pass": "fleet-pipeline-2026-10-24"
+   },
+   "boat-grid-ftl-stretch": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T18:36:08.865Z",
+    "record": "council/ledger/2026-10-24-pull-183608.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "fleet-pipeline-2026-10-24"
    }
   },
   "questions": {

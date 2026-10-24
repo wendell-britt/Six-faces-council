@@ -1,0 +1,24 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T18:36:08.865Z",
+ "answers": {
+  "boat-grid-fleet-pipeline": {
+   "kind": "position",
+   "savedAt": "2026-10-24T18:35:50.874Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-ftl-stretch": {
+   "kind": "position",
+   "savedAt": "2026-10-24T18:36:08.865Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
