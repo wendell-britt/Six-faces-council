@@ -1,8 +1,20 @@
 {
   "permissions": {
-    "allow": ["mcp__Gmail__send_message"]
+    "allow": [
+      "mcp__Gmail__send_message"
+    ]
   },
   "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/council/hooks/council-sync.sh\""
+          }
+        ]
+      }
+    ],
     "PostToolUse": [
       {
         "matcher": "*",
