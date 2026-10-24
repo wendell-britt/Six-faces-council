@@ -1,0 +1,65 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T00:32:15.569Z",
+ "answers": {
+  "rk-still-nook": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-24T00:28:16.957Z",
+   "steer": ""
+  },
+  "rk-still-scroll": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-24T00:28:24.107Z",
+   "steer": ""
+  },
+  "rk-still-minute": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-24T00:28:31.964Z",
+   "steer": ""
+  },
+  "ty-still-pick": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-24T00:31:45.463Z",
+   "steer": ""
+  },
+  "rk-earned-only": {
+   "kind": "position",
+   "savedAt": "2026-10-24T00:31:52.099Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rk-place-is-shared": {
+   "kind": "position",
+   "savedAt": "2026-10-24T00:32:00.250Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rk-one-kit": {
+   "kind": "position",
+   "savedAt": "2026-10-24T00:32:06.917Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rk-spots-not-grid": {
+   "kind": "position",
+   "savedAt": "2026-10-24T00:32:15.569Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/rk-still-nook: Yes, build this",
+  "questions/rk-still-scroll: Yes, build this",
+  "questions/rk-still-minute: Yes, build this",
+  "questions/ty-still-pick: Lantern deck"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
