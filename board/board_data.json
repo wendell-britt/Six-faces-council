@@ -33713,6 +33713,30 @@
      "architect"
     ],
     "pass": "living-boat-2026-10-24"
+   },
+   "sd-dock-scrapped": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:35:30.995Z",
+    "record": "council/ledger/2026-10-24-pull-023536.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "ship-art-2026-10-24"
+   },
+   "sd-depth-rule": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:35:36.733Z",
+    "record": "council/ledger/2026-10-24-pull-023536.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "ship-art-2026-10-24"
    }
   },
   "questions": {
@@ -36671,6 +36695,18 @@
      "shaman"
     ],
     "pass": "boat-moves-2026-10-24"
+   },
+   "sd-still-pick": {
+    "decision": "A",
+    "label": "Yes, both in order",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:35:13.695Z",
+    "record": "council/ledger/2026-10-24-pull-023536.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "ship-art-2026-10-24"
    }
   },
   "causes": {
