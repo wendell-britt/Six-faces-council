@@ -12554,6 +12554,28 @@
    "auto": true,
    "pos": "The boat guesses phone or computer from the screen and shows it as a badge you can tap to correct. On the phone: read, open cards, answer, steer, defer. On a computer signed in to Claude: also send a crew member to a spirit, which starts a cloud thread. Work that needs your Mac's own apps or files queues for a thread that drives your Mac and shows as waiting for your Mac. Nothing is greyed out. This stands unless you flip it.",
    "why": "Your note of 2026-10-24 on ty-boat-look-2: \"Some environments are remote and can only be accesssed from desktop and so the boat should know whether you are ok the phone or a computer that can access the council from the cloud\". Still and plan: https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
+  },
+  {
+   "id": "rk-blank-scroll-on-shelf",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "room kit build",
+   "auto": true,
+   "pos": "The blank scroll lives on the nook's shelf plank, never in the satchel, so it does not compete with the seed pot for the one small spot. There is always one blank scroll once the first minute has given it. The scroll's one line holds 120 characters. This stands unless you flip it.",
+   "why": "Build choice in room kit part 2 (bars-engine #431, /mnt/project-files/between/room-kit/build/part2-summary.md). The still did not say where a blank scroll sits or how long the line runs; the rules allow 280."
+  },
+  {
+   "id": "rk-minute-rules-two-unsaid",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "room kit build",
+   "auto": true,
+   "pos": "The first minute says two rules aloud: nobody comes through without a yes from both of you, and this room is yours. 'Leave any time' and 'nothing is scored' are no longer stated up front, because the old orientation sheet that held them is gone (br-orient-each-invite). They can come back as a later caption or the hearth's first hint. This stands unless you flip it.",
+   "why": "Your yes to rk-still-minute and br-orient-each-invite (2026-10-24). The minute in the still taught the yes rule and the private room; the sheet's other two rules had no beat. Noted in part2-summary.md, 'The old orientation sheet's rules are gone'."
   }
  ],
  "questions": [
@@ -33371,6 +33393,178 @@
      "shaman"
     ],
     "pass": "between-rooms3"
+   },
+   "ty-boat-departments": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T01:58:14.535Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent",
+     "shaman"
+    ],
+    "pass": "studio-boat-3"
+   },
+   "bw-crew-are-hands": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:31.010Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "steer": "Crew should be about what and how. Spirits are about why. The goal of the game is to leverage emotional charge into effective leveraged action. The goal for players is to make more deft decisions with the most effective use of resources and the purpose is to integrate the inner and outworks motivations toward making jaw droppingly excellent work with AI",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-talk-is-save": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:39.111Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-lines-from-record": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:45.563Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-answer-is-care": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:52.331Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-board-keeps-the-rest": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:01:44.741Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "steer": "Tap the vein needs to be a move one can do on the boat. This is how the boat mines emotional energy. This is where vibeluons come in in a big way",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "ts-stage-rooms": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:01:52.265Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-walk-bow-ward": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:03.980Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-depts-below": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:10.581Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-tap-opens-card": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:15.983Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-steer-is-save": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:18.916Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-fanout": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:22.633Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-device-tiers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:37.132Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "bw-spirit-is-strand": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:58.352Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "steer": "Spirit is the emotional energy and magic fueling the work",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "boat-moves-2026-10-24"
    }
   },
   "questions": {
@@ -36305,6 +36499,30 @@
      "architect"
     ],
     "pass": "studio-tycoon-2026-10-23"
+   },
+   "bw-strand-fade": {
+    "decision": "A",
+    "label": "Fades and leaves a seed",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T01:58:06.438Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-first-move": {
+    "decision": "A",
+    "label": "Answer letters",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T01:59:08.615Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "boat-moves-2026-10-24"
    }
   },
   "causes": {

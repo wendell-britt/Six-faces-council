@@ -1,0 +1,114 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T02:02:58.352Z",
+ "answers": {
+  "bw-strand-fade": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-24T01:58:06.438Z",
+   "steer": ""
+  },
+  "ty-boat-departments": {
+   "kind": "position",
+   "savedAt": "2026-10-24T01:58:14.535Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bw-first-move": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-24T01:59:08.615Z",
+   "steer": ""
+  },
+  "bw-crew-are-hands": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:00:31.010Z",
+   "status": "stands",
+   "steer": "Crew should be about what and how. Spirits are about why. The goal of the game is to leverage emotional charge into effective leveraged action. The goal for players is to make more deft decisions with the most effective use of resources and the purpose is to integrate the inner and outworks motivations toward making jaw droppingly excellent work with AI"
+  },
+  "bw-talk-is-save": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:00:39.111Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bw-lines-from-record": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:00:45.563Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bw-answer-is-care": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:00:52.331Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bw-board-keeps-the-rest": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:01:44.741Z",
+   "status": "overrule",
+   "steer": "Tap the vein needs to be a move one can do on the boat. This is how the boat mines emotional energy. This is where vibeluons come in in a big way "
+  },
+  "ts-stage-rooms": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:01:52.265Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ts-walk-bow-ward": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:02:03.980Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ts-depts-below": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:02:10.581Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ts-tap-opens-card": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:02:15.983Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ts-steer-is-save": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:02:18.916Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ts-fanout": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:02:22.633Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ts-device-tiers": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:02:37.132Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "bw-spirit-is-strand": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:02:58.352Z",
+   "status": "overrule",
+   "steer": "Spirit is the emotional energy and magic fueling the work "
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/bw-strand-fade: Fades and leaves a seed",
+  "questions/bw-first-move: Answer letters",
+  "positions/bw-crew-are-hands: Stands (steer: \"Crew should be about what and how. Spirits are about why. The goal of the game is to leverage emotional charge into effective leveraged action. The goal for players is to make more deft decisions with the most effective use of resources and the purpose is to integrate the inner and outworks motivations toward making jaw droppingly excellent work with AI\")",
+  "positions/bw-board-keeps-the-rest: Overruled (steer: \"Tap the vein needs to be a move one can do on the boat. This is how the boat mines emotional energy. This is where vibeluons come in in a big way\")",
+  "positions/bw-spirit-is-strand: Overruled (steer: \"Spirit is the emotional energy and magic fueling the work\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
