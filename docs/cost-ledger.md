@@ -17,9 +17,14 @@ The ledger keeps those rows and shows them in one place.
 
 Fires beside the compost pass and starts one Sonnet thread, which does these steps and stops:
 
-1. `list_sessions` (limit 100, pages back until a session older than the newest `created_at` in the ledger, minus two days).
-2. `get_session` on each session that is not working, in one message per ten ids, writing each reply as one JSON line to a new
-   file. A session still working is skipped; it is taken on a later day.
+1. `list_threads` (the hearthbot tool, `since` the newest `created_at` in the ledger minus two days, `limit` 100, following
+   `next_cursor` until a page adds nothing in range; the pages are not in date order). `list_sessions` does not show project
+   threads (2026-10-24: it listed nothing after 20 October), so it is not used. A thread's `session_id` is `cse_<x>`; its
+   `get_session` id is `session_<x>`. Keep threads whose `last_activity_at` is later than the newest `updated_at` in the ledger.
+2. `get_session` on each such thread that is not working, ten per message, in one Sonnet worker that writes each reply as one
+   JSON line (keys as in the ledger; `usage` is `external_metadata.usage`, `used_tokens` and `max_tokens` are
+   `external_metadata.context_usage`) to a new file. Copy ids from the listing by script, not by hand; a mistyped id returns
+   "not found". A session still working is skipped; it is taken on a later day.
 3. Run the script above with `--flat`.
 4. Upload `kinds.json`, `days.json`, `targets.json` to the dashboard (Artifact `asset: true`, one call per file), then `update`
    each of `datasets/ledger_kinds`, `ledger_days`, `ledger_targets` with the new `url` and `updated.at`. Delete the old assets.
