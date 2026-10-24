@@ -90,6 +90,7 @@ bars-engine #399 stays a draft until this lands; then close it in favor of the n
 
 - 2026-10-21, from Ari's playtest of the Between (pass `between-ari1`, `council/passes/6FACE_PASS_between-ari1_2026-10-21.md`): Ari asked for a private space for spirits "like the barn in Stardew valley", loved "the gummy ship with a farm inside of it", and resonated with worlds rendered procedurally only as far as the player can see or travel. Stored here (`ba-barn-in-ship`, `ba-worlds-stored`): the barn lives inside each person's ship; the farm grows what spirits leave, with no yields or counts; procedural worlds belong to the ship's world after Chapter 1 and the engine question. Nothing built before his look at the dock.
 
+<<<<<<< ours
 ## 2026-10-24: the dock is scrapped; art direction round (thread "Redo the ship dock art direction")
 
 - His interview, round 1 (2026-10-24 01:56 UTC), recorded as rulings:
@@ -123,3 +124,26 @@ bars-engine #399 stays a draft until this lands; then close it in favor of the n
   - References: "Will wights cradle cloud ships. The tardis, the south meditation ship from Star Wars expanded universe.
     Zonoma Sekot and the ship relationships between characters in Karen Lords best of all possible worlds" (plus No
     Man's Sky and the Kingdom Hearts gummy ship from round 1).
+=======
+## 2026-10-24: living ship build, part 1 (Still B) done
+
+- bars-engine #432 (draft, branch `claude/project-thread-qi3hnv`): Still B as the new `/calrunia/arrive`, three.js 0.160.
+  World from the record in `content/calrunia/arrive/ship-world.js` (energy -> island size and light, spirits live on the
+  island, embers -> chambers at the rim, vibeulons -> gold motes, cards on a board by the den). Tap to walk, the spirit
+  greets you at the door and leads. Kenney ship, dock and the grid panel removed; cave's ship button walks here.
+  Skip-ahead `?demo=1`, `?demo=grown`, `?at=island|den|bud`. #399 to be closed in favour of #432 once #432 lands.
+- Council #381 (draft): sd-depth-rule written into the ontology as binding decision `depth_over_flatland`.
+- Not checked: a real iPhone's frame rate; a real passport from Sprout's last link.
+
+## Brief: Still A reveal in sprout (next, fresh Opus thread)
+
+Build Still A (https://claude.ai/artifact/HqbQ5Y1qfX2HxyrHCmeRub; source and SVG script in
+/mnt/project-files/ship-art-direction/stills/still-a.js) as the 2D reveal at the end of Chapter 1 in wendell-britt/sprout
+(add_repo it; no CI). The player stands on the floating stone; the fox spirit walks out on air leaving lights; the grown shell
+ship hangs in the clouds; the player taps to step after the fox across the lights to the round door, which opens to
+Sprout's existing last link to bars-engine `/calrunia/arrive#p=...` (passport fragment). Fix the art director's gaps first:
+the fox painted as a spirit (not the washed house sprite), the player standing still in wonder, a less regular whorl.
+Nothing counted on screen (sd-depth-rule). CCGS art-director still check before each push. Hosted preview link with
+`?beat=` skip-ahead to the reveal. Read docs/3d-math.md only if 3D is touched. After it lands, the owning thread also
+watches bars-engine #432 to merge (it merges by itself when checks pass) and then closes #399.
+>>>>>>> theirs
