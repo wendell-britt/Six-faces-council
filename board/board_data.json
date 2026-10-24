@@ -12399,6 +12399,18 @@
    "auto": true,
    "pos": "The orientation before an invited room is read each time someone opens an invitation link, and is not remembered: once they are in the room, its doorway opens at once from then on. This stands unless you flip it.",
    "why": "Your ruling 2026-10-23: an invite link opens a portal to the room only after orientation and the rules. A link is used once to join, so there is nothing to remember. Built in bars-engine #428."
+  },
+  {
+   "id": "ty-boat-departments",
+   "faces": [
+    "architect",
+    "regent",
+    "shaman"
+   ],
+   "pass": "studio-boat-3",
+   "auto": true,
+   "pos": "Following your note on the boat: far fewer houses. The strands are grouped into about six department halls of the studio boat, each a big building with rooms inside, and some rooms sit in a wing inside a hall. From outside, a hall's windows show each room's state and it hangs one bell when any room waits. Tap a hall and its front wall opens to show the rooms; tap a room to knock. The halls follow the Claude-Code-Game-Studios departments: Art Studio, Design Room, Map Room, Story Room, Post Office and Engine Room, with a cargo hold for strands not yet sorted. This stands unless you flip it.",
+   "why": "Your words on ty-boat-look-1, 2026-10-24: \"Yes I definitely agree we need fewer houses. We should be able to group them into hierarchies and some are rooms inside of larger rooms like departments in the game design studio that is the boat\". The hall map is in council/callsheets/studio-lot.md, brief \"Boat round 3: departments\"."
   }
  ],
  "questions": [
