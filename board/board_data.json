@@ -12477,6 +12477,83 @@
    "auto": true,
    "pos": "Terms, causes, the morning menu, Tap the Vein, set aside and picks stay on the board in the boat's first version; they have no strand to live in. The board stays the record either way. On the boat, the bell writes the pickup save and the next Board Send run picks it up, since bars-engine hides Send's trigger. This stands unless you flip it.",
    "why": "ty-lens; bars-engine src/lib/board/council-page.ts hides Send and blanks PICKUP_TRIGGER. Page: https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr"
+  },
+  {
+   "id": "ts-stage-rooms",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "tall-ship-b-2026-10-24",
+   "auto": true,
+   "pos": "The studio boat becomes a cross-section of a big tall ship, and its rooms are the pipeline. Stern to bow are the seven studio stages: Concept in the captain's cabin under the wheel where you steer, Systems Design in the chart room, Technical Setup in the carpenter's shop, Pre-Production in the model shop, Production in the workshop, Polish in the sail loft, and Release in the forecastle facing the live site. This stands unless you flip it.",
+   "why": "Your note of 2026-10-24 on ty-boat-look-2: \"doing a cross section of a larger tall ship would fit ... make it so that these rooms actually correspond to the pipeline. It might even make sense to orient the boat in the direction of the pipeline\". Still and plan: https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
+  },
+  {
+   "id": "ts-walk-bow-ward",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "tall-ship-b-2026-10-24",
+   "auto": true,
+   "pos": "A strand's spirit lives in the room of its current stage and walks one room bow-ward when that stage passes. A finished strand steps out the forecastle door to the live-site island. This stands unless you flip it.",
+   "why": "ty-genre-mix and bw-spirit-is-strand: the spirit is the strand, so its place on the ship is its stage. https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
+  },
+  {
+   "id": "ts-depts-below",
+   "faces": [
+    "architect",
+    "diplomat"
+   ],
+   "pass": "tall-ship-b-2026-10-24",
+   "auto": true,
+   "pos": "The departments (Story Room, Map Room, Engine Room, Art Studio, Design Room, Post Office) are workshops on the lower deck, and their crew climb up to whichever room needs them. The hold keeps the corpus and unsorted strands. This replaces the halls of ty-boat-departments as the way strands are grouped on deck. This stands unless you flip it.",
+   "why": "ty-boat-departments kept as crew homes; the stage is the room now. Seven stages over six departments has no drawn mapping yet. https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
+  },
+  {
+   "id": "ts-tap-opens-card",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "tall-ship-b-2026-10-24",
+   "auto": true,
+   "pos": "Tapping a spirit's bubble, a spirit, or your own line opens that strand's card: what it asks, where it stands, who is working on it and its last move, with the wax-seal answers, Not tonight, and say something else. This stands unless you flip it.",
+   "why": "Your note of 2026-10-24 on ty-boat-look-2: \"you should be able to click the message from one of the spirits or player in there to see it's card and make adjustments and steer\". Still and plan: https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
+  },
+  {
+   "id": "ts-steer-is-save",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "tall-ship-b-2026-10-24",
+   "auto": true,
+   "pos": "A steer from the boat is the board's own save, sent to the same address (POST /api/board/saves), with no new save shape. That save already starts the board pull at once, which writes it to main. This stands unless you flip it.",
+   "why": "bw-talk-is-save; bars-engine src/app/api/board/saves/route.ts calls dispatchBoardPull() for record kinds, so a steer reaches the repo today. https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
+  },
+  {
+   "id": "ts-fanout",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "tall-ship-b-2026-10-24",
+   "auto": true,
+   "pos": "Once a steer lands on main, every surface updates from main: the boat and the bars-engine board read main on load (works now); the board pull starts the Board Send routine so the board read routes the steer to the thread that owns the strand and republishes the artifact board until it retires (to build: the pull does not fire the routine yet); and coding sessions on a computer pull main at start and list the steers since their last session (to build, a start-up hook). This stands unless you flip it.",
+   "why": "Your note of 2026-10-24 on ty-boat-look-2: \"When one does a steer action it should update the repo and send a hook to update all the surfaces that can access the game including different coding environments\". Still and plan: https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
+  },
+  {
+   "id": "ts-device-tiers",
+   "faces": [
+    "diplomat",
+    "regent"
+   ],
+   "pass": "tall-ship-b-2026-10-24",
+   "auto": true,
+   "pos": "The boat guesses phone or computer from the screen and shows it as a badge you can tap to correct. On the phone: read, open cards, answer, steer, defer. On a computer signed in to Claude: also send a crew member to a spirit, which starts a cloud thread. Work that needs your Mac's own apps or files queues for a thread that drives your Mac and shows as waiting for your Mac. Nothing is greyed out. This stands unless you flip it.",
+   "why": "Your note of 2026-10-24 on ty-boat-look-2: \"Some environments are remote and can only be accesssed from desktop and so the boat should know whether you are ok the phone or a computer that can access the council from the cloud\". Still and plan: https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb"
   }
  ],
  "questions": [
