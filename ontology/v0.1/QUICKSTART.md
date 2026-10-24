@@ -33,6 +33,10 @@ Treat the psychograph as a revisable design hypothesis, not a diagnosis:
 - is naturally rewarded by generation and integration more than reduction and closure;
 - therefore needs playable composting, good-enough completion, embodied encounter, and the smallest meaningful loop as counterweights.
 
+## Depth over flatland
+
+Binding since 2026-10-24 (`binding_decisions.depth_over_flatland`): every play surface is an inviting image or an explorable space, never a grid, gauge or panel. Data shows as world state (size, light, places grown, creatures living there), never as a number on the play surface. Haze, scale and light lead inward; the world grows as inner work is done; every scene plays in 2D and 3D; every named inspiration gets real reference images before a mood still. The Diplomat's shadow is flatland: "Our job is to bring depth back into green" (Wendell).
+
 ## Required order of inquiry
 
 Reconstruct **what exists, where it operates, and when it changes** before deciding how it should work. Do not return questions to Wendell when sources, evidence, or bounded council deliberation can answer them. Escalate only irreducible personal meaning, values, consent, money, canonical prose, or owner authority.
