@@ -72,6 +72,7 @@ shape keys, and a four-direction sprite render of the 3D figure beside the LPC t
 
 ## Open
 
+<<<<<<< HEAD
 - Board: question `cr-look-by-place`, positions `cr-*` (rows file above). Rows landed on main and the board republished (2026-10-21).
   Deliverable page: https://claude.ai/artifact/GUcAH9AvymhZdEpLCp932V.
 
@@ -222,3 +223,7 @@ practice research run on how to render the sleeve style we're looking for."
    `claude/project-thread-8zq73n` / #72). Prove it with a probe like `tools/figure-legs-probe.mjs`, cast from the arm
    points, and give a one-click preview at `?beat=satchel&form=figure`.
 4. Tell the "J5 sleeve round 15b" thread the approach, and add any garment rule to docs/3d-math.md.
+=======
+- Board: question `cr-look-by-place`, positions `cr-*` (rows file above). Deliverable page (HTML artifact of this
+  sheet: menus, gaps, first build) not yet published; the next thread makes it.
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))

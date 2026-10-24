@@ -153,8 +153,12 @@ do not run it; `scope` in the file says which is which.
    shape: do, where, enter, check, device, and whether it is safe to stop after. Publish the feature's steps
    as one list with `ArtifactData` to the board's store, named as `steps_page` in `pipeline.yaml`: a `lists/<feature>` document
    (title, repo, why, source, order, created) and `steps/<feature>-<nn>` documents (list, n, do, where, href,
+<<<<<<< HEAD
    enter, generate, check, device, stopSafe, optional, blocking, due, done, files). `blocking: true` holds his whole board on
    those steps until each is done or sent to Claude (docs/pickup.md, "Blocking steps"); use it only when he asks for it. A step that asks him to look at, try or play something built is a look: give it `look: true`, a short `lookTitle`, a `still` (an https image URL, or a data:image JPEG of about 640px, under 50 KB) and the hosted preview as `href`, and the Your eyes tab shows it as a card with Open it and a yes or note (Wendell, 2026-10-24). Write the same documents to bars-engine's Council
+=======
+   enter, generate, check, device, stopSafe, optional, due, done, files). Write the same documents to bars-engine's Council
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
    Board too, `python3 board/store_write.py push <docs.json>`, and the same for any contact or show (board-home step 5:
    both boards are live until the artifact retires; `store_write.py diff <export dir>` shows any drift). A step that asks him to review a draft, image or
    link carries it in `files` (`[{id, title, kind: text|image|link, text, src, href, caption}]`), so the card shows it in

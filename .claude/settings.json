@@ -1,7 +1,10 @@
 {
+<<<<<<< HEAD
   "permissions": {
     "allow": ["mcp__Gmail__send_message"]
   },
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   "hooks": {
     "PostToolUse": [
       {
@@ -15,4 +18,8 @@
       }
     ]
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))

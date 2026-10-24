@@ -10,8 +10,12 @@ overrule, a question's pick) stays with the session, which reads the list this p
 
 Save the store first with the ArtifactData tool, once per collection, into one folder:
   action list, url https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho, collection positions (then questions, terms,
+<<<<<<< HEAD
   causes, steer, steps, blockers, picks, morning, ttv, and contacts for outreach email drafts), query {"limit": 1000},
   out_dir <dir>
+=======
+  causes, steer, steps, blockers, picks, morning, ttv), query {"limit": 1000}, out_dir <dir>
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 Then, from the repo root on main:
   python3 board/pull.py <dir>            # report what would be recorded, write nothing
   python3 board/pull.py <dir> --push     # record, rebuild, commit and push to main
@@ -187,6 +191,7 @@ def find_steps(data, store):
     return sorted(out, key=lambda e: e["at"])
 
 
+<<<<<<< HEAD
 def find_unrouted(store):
     """Needs-work lines for cards handed to Claude that no read has routed (with-claude-status, 2026-10-21). State, not
     a recorded-through marker: a line shows while a step has `aiBack` and no `aiBack.status`, and leaves when a read
@@ -228,6 +233,8 @@ def find_drafts(store):
     return out
 
 
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 def find_blockers(store):
     """Blocker panel runs (blockers/ in the store) that main lacks or holds an older save of. Wendell, 2026-10-12: the
     overdue card has to "save the data about the specific task that was blocked and what came up for the player and how
@@ -367,12 +374,15 @@ def main():
     if any(n["id"].startswith("ttv-2") for n in new if n["kind"] == "questions"):  # pitches he answered
         print("needs work:\n  ttv pitches answered: after recording, python3 council/ttv_bars.py accepted --write, then open a "
               "pull request in game-masters-guide")
+<<<<<<< HEAD
     unrouted = find_unrouted(store)
     if unrouted:
         print("needs work:\n  " + "\n  ".join(unrouted))
     drafts = find_drafts(store)
     if drafts:  # outreach-drafts: state on the contacts, printed every run while it holds
         print("needs work:\n  " + "\n  ".join(drafts))
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     if not new and not general and not steps and not blockers:
         print("every saved answer is recorded")
         return

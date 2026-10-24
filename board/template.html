@@ -159,7 +159,10 @@ ol.st-steps{list-style:none;margin:0;padding:0}
 .hd-mini{background:var(--card);color:var(--card-ink);font-size:.58rem;line-height:1.2;padding:6px 5px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.45);text-align:left}
 .hd-mini:nth-child(1){transform:rotate(-7deg)}.hd-mini:nth-child(2){transform:rotate(5deg)}.hd-mini:nth-child(3){transform:rotate(-2deg)}
 .hd-claude .hd-mini{background:#e9e4f5}
+<<<<<<< HEAD
 .hd-wc{padding:4px 10px;font-size:13px}.hd-wc summary{cursor:pointer}.hd-wc ul{margin:6px 0 0;padding-left:18px}.hd-wc li{margin:4px 0}.hd-wc small{display:block;opacity:.75}
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 .hd-chase .hd-idx b{color:#2d5d3a}
 .hd-coins{display:grid;justify-items:center;gap:6px}
 @media (min-width:700px){.hd-coins{margin-left:auto}}
@@ -332,6 +335,7 @@ body.has-send{padding-bottom:120px}
 .oc-notes{font-size:.88rem;margin:4px 0 0;white-space:pre-line}
 .oc-meta{display:flex;flex-wrap:wrap;gap:4px 18px;font-family:var(--mono);font-size:.76rem;color:var(--muted);margin-top:8px}
 .oc-flag{color:var(--warn);font-weight:600;font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;margin-top:6px;display:inline-block}
+<<<<<<< HEAD
 /* An outreach email draft on its contact (outreach-drafts, 2026-10-21). Send records the exact text he saw and its
    hash; a session sends only that text (board/email_pipeline.py ready). */
 .df{margin-top:10px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel);display:grid;gap:6px}
@@ -342,6 +346,8 @@ body.has-send{padding-bottom:120px}
 .df-body{white-space:pre-wrap;font-size:.92rem;margin:0}
 .df-lint{margin:0;padding-left:18px;font-size:.8rem;color:var(--warn)}
 .df-acts{display:flex;flex-wrap:wrap;gap:6px}
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 .oc-pick{font:inherit;font-size:.82rem;padding:3px 6px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg)}
 .oc-add{border-top:1px solid var(--line);margin-top:18px;padding-top:12px}
 .oc-add summary{cursor:pointer;color:var(--muted);font-weight:500}
@@ -447,6 +453,7 @@ body.has-send{padding-bottom:120px}
 /* Tap the Vein first (ttv-first, Wendell 2026-10-14): until today's is sealed, done in bars-engine or skipped, the board
    opens on the Morning tab and holds the other tabs. */
 .ttv-gate{display:none;border:1px solid var(--accent);border-radius:8px;padding:12px 14px;margin:12px 0}
+<<<<<<< HEAD
 body.ttv-held:not(.blk-held) .ttv-gate{display:block}
 body.ttv-held:not(.blk-held) .tab:not(#tab-morning){opacity:.4;pointer-events:none}
 /* Blocking steps (blk-, Wendell 2026-10-21): a step with blocking: true holds the whole board on Your steps, ahead of
@@ -486,6 +493,12 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
 .ey-older ul{margin:6px 0 0;padding-left:18px}
 .ey-said{background:var(--accent-soft);border-radius:4px;padding:6px 8px;font-size:.88rem;margin:0}
 .ey-seen .ey-card{opacity:.8}
+=======
+body.ttv-held .ttv-gate{display:block}
+body.ttv-held .tab:not(#tab-morning){opacity:.4;pointer-events:none}
+.ttv-gate .ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.empty.store-fault{color:#b3261e;border:1px solid #b3261e;border-radius:6px;padding:10px 12px}
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 </style>
 
 <h1>Council Board</h1>
@@ -496,7 +509,10 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
   <button class="tab" role="tab" id="tab-open" aria-selected="true" aria-controls="view-open">Open<b id="n-open">0</b></button>
   <button class="tab" role="tab" id="tab-morning" aria-selected="false" aria-controls="view-morning">Morning<b id="n-morning">0</b></button>
   <button class="tab" role="tab" id="tab-steps" aria-selected="false" aria-controls="view-steps">Your steps<b id="n-steps">0</b></button>
+<<<<<<< HEAD
   <button class="tab" role="tab" id="tab-looks" aria-selected="false" aria-controls="view-looks">Your eyes<b id="n-looks">0</b></button>
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   <button class="tab" role="tab" id="tab-outreach" aria-selected="false" aria-controls="view-outreach">Outreach<b id="n-outreach">0</b></button>
   <button class="tab" role="tab" id="tab-resolved" aria-selected="false" aria-controls="view-resolved">Resolved<b id="n-resolved">0</b></button>
 </div>
@@ -553,11 +569,14 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
 </section>
 
 <section id="view-steps" role="tabpanel" aria-labelledby="tab-steps" hidden>
+<<<<<<< HEAD
   <div class="blk-gate" id="blk-gate" role="region" aria-label="Blocking steps first">
     <h2 id="blk-head">This comes before anything else on the board</h2>
     <p class="lede" style="margin:0">The rest of the board opens when each step below is ticked done or sent to Claude with more instructions.</p>
     <ol class="st-steps" id="blk-list"></ol>
   </div>
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   <p class="lede" style="margin-top:14px">Only the steps nobody else can take, because they need your accounts, your money or your eyes. Each one says where to go, what to enter, how you will know it worked, and when it is due.</p>
   <div class="st-where" id="st-where">
     <span class="st-sum">I'm on my</span>
@@ -570,7 +589,11 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
   <div id="steps-empty" class="empty">Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.</div>
   <div class="hd" id="hd" hidden>
     <h2 class="sr-only">Your hand</h2>
+<<<<<<< HEAD
     <div class="hd-table"><div class="hd-piles" id="hd-piles"></div><details class="hd-wc" id="hd-wc" hidden></details><ol class="hd-fan" id="hd-fan" aria-label="Your hand"></ol><p class="hd-say" id="hd-state" role="status"></p></div>
+=======
+    <div class="hd-table"><div class="hd-piles" id="hd-piles"></div><ol class="hd-fan" id="hd-fan" aria-label="Your hand"></ol><p class="hd-say" id="hd-state" role="status"></p></div>
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     <div class="hd-lift" id="hd-lift" hidden></div>
   </div>
   <details class="hd-deck" id="hd-deck"><summary id="hd-deck-sum">The deck</summary>
@@ -580,12 +603,15 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
   <div id="steps-done"></div>
 </section>
 
+<<<<<<< HEAD
 <section id="view-looks" role="tabpanel" aria-labelledby="tab-looks" hidden>
   <p class="lede" style="margin-top:14px">Everything built and waiting for you to see it, newest first. Tap a picture or Open it to see the real thing; say yes, or say what feels off, and the strand's next round starts from your words.</p>
   <div id="looks-empty" class="empty">Nothing is waiting for your eyes. When a round is built, its still and its link appear here.</div>
   <div class="ey-grid" id="looks-open"></div>
   <div id="looks-seen"></div>
 </section>
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 <section id="view-outreach" role="tabpanel" aria-labelledby="tab-outreach" hidden>
   <p class="lede" style="margin-top:14px">Everyone you are asking onto a show, and where each ask stands. Anyone due a chase is also on Your steps under Podcast chases, and saving a chase there updates the row here.</p>
   <div class="oc-shows" id="oc-shows" role="group" aria-label="Show"></div>
@@ -875,7 +901,11 @@ function render(){
 }
 
 function show(which){
+<<<<<<< HEAD
   for (const v of ['open','morning','steps','looks','outreach','resolved']){
+=======
+  for (const v of ['open','morning','steps','outreach','resolved']){
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     document.getElementById('tab-'+v).setAttribute('aria-selected', String(v === which));
     document.getElementById('view-'+v).hidden = v !== which;
   }
@@ -883,10 +913,16 @@ function show(which){
 document.getElementById('tab-open').addEventListener('click', () => { show('open'); try { history.replaceState(null, '', '#open'); } catch (e) {} });
 document.getElementById('tab-resolved').addEventListener('click', () => { show('resolved'); try { history.replaceState(null, '', '#resolved'); } catch (e) {} });
 document.getElementById('tab-steps').addEventListener('click', () => { show('steps'); try { history.replaceState(null, '', '#steps'); } catch (e) {} });
+<<<<<<< HEAD
 document.getElementById('tab-looks').addEventListener('click', () => { show('looks'); try { history.replaceState(null, '', '#looks'); } catch (e) {} });
 document.getElementById('tab-outreach').addEventListener('click', () => { show('outreach'); try { history.replaceState(null, '', '#outreach'); } catch (e) {} });
 document.getElementById('tab-morning').addEventListener('click', () => { show('morning'); try { history.replaceState(null, '', '#morning'); } catch (e) {} });
 show(['#resolved','#steps','#looks','#outreach','#morning'].includes(location.hash) ? location.hash.slice(1) : 'open');
+=======
+document.getElementById('tab-outreach').addEventListener('click', () => { show('outreach'); try { history.replaceState(null, '', '#outreach'); } catch (e) {} });
+document.getElementById('tab-morning').addEventListener('click', () => { show('morning'); try { history.replaceState(null, '', '#morning'); } catch (e) {} });
+show(['#resolved','#steps','#outreach','#morning'].includes(location.hash) ? location.hash.slice(1) : 'open');
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 
 // The Open tab's rows, and deferred rows opened on the Resolved tab, share these handlers.
 const openView = {addEventListener: (t, f) => ['view-open', 'view-resolved'].forEach(v => document.getElementById(v).addEventListener(t, f))};
@@ -1274,6 +1310,7 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeBlocker(); });
 
+<<<<<<< HEAD
 // ---- Your eyes ----
 const eyDrafts = {};
 document.addEventListener('input', e => { const m = /^eyn-(.+)$/.exec(e.target.id || ''); if (m) eyDrafts[m[1]] = e.target.value; });
@@ -1336,6 +1373,8 @@ document.addEventListener('click', async e => {
   try { await db.doc('steps/' + id).update(patch); }
   catch (err){ stSteps[id] = s; renderSteps(); const st2 = document.getElementById('eys-' + id); if (st2) st2.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
 });
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
 /* The Council Board always has step lists and contacts, so an empty or failed snapshot of either is a broken store,
@@ -1368,6 +1407,7 @@ const stOverdue = s => !s.done && !s.retired && !s.optional && (stDaysLeft(s.due
    A step is closed when it is done or withdrawn (retired). A list is finished when it has steps and none of its required ones
    is still open, so a list whose steps were all withdrawn leaves the open list too. Closed steps sit in a collapsed group. */
 const stClosed = s => !!(s.done || s.retired);
+<<<<<<< HEAD
 /* Blocking steps (blk-). Wendell, 2026-10-21: "give me step by step instructions on the board for this as a highest
    blocking priority. I think things with this priority not unlike the daily tap the vein block access to the rest of
    the board until resolved or sent to Claude with more instructions". A session writes blocking: true on a step in the
@@ -1394,6 +1434,8 @@ function blkGate(){
   // Tap the Vein's gate takes over again, opening on Morning as if the board had just loaded.
   if (!held && was){ document.body.classList.remove('ttv-held'); ttvGate(); }
 }
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 const stFinished = id => { const all = stOf(id); return all.length > 0 && stReq(all).every(([,s]) => s.done); };
 const stOpenGroups = new Set();
 /* Wendell, 2026-10-12: "we also need the ability to collapse steps so I can see all the open items and open them up when I
@@ -1434,7 +1476,11 @@ function stFile(id, s, f){
   </details>`;
 }
 function stStep(id, s){
+<<<<<<< HEAD
   if (stLater(s) && !blkIs(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
+=======
+  if (stLater(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
   const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}${stHref(s.href2) ? `<br><a href="${esc(s.href2)}" target="_blank" rel="noopener">${esc(s.where2 || 'Then open this')}</a>` : ''}</div></div>` : '';
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
@@ -1487,7 +1533,10 @@ function stList(id, l, skip = new Set()){
 }
 function renderSteps(){
   renderSend();
+<<<<<<< HEAD
   renderLooks();
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   const active = document.activeElement && document.activeElement.id;
   // Lists with the soonest open due date come first; lists without one keep their order after them.
   const nextDue = id => stReq(stOf(id)).filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0] || '9999';
@@ -1497,9 +1546,12 @@ function renderSteps(){
   const live = ids.filter(id => stOf(id).length > 0);
   const todo = live.filter(id => !stFinished(id)), done = live.filter(id => stFinished(id));
   const chases = ocChases(), hand = hdHand(), deck = hdDeck(todo), inHand = new Set(hand.map(c => c.id));
+<<<<<<< HEAD
   blkGate();
   // A blocking step is drawn in the gate only, never again in its list.
   for (const [sid] of blkOpen()) inHand.add(sid);
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   hdRender(hand, deck, chases);
   document.getElementById('steps-todo').innerHTML = todo.map(id => stList(id, stLists[id], inHand)).join('');
   document.getElementById('steps-done').innerHTML = done.length ? `<details class="st-finished" data-group="finished"${stOpenGroups.has('finished') ? ' open' : ''}><summary>Completed (${done.length})</summary>${done.map(id => stList(id, stLists[id])).join('')}</details>` : '';
@@ -1509,7 +1561,11 @@ function renderSteps(){
   stEmpty.classList.toggle('store-fault', stFault);
   stEmpty.textContent = stFault ? storeFault('step lists', stStore)
     : 'Nothing waiting on you. When a feature needs something only you can do, a numbered list appears here.';
+<<<<<<< HEAD
   document.getElementById('n-steps').textContent = hand.length + blkOpen().length;
+=======
+  document.getElementById('n-steps').textContent = hand.length;
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   const open = todo.flatMap(id => stReq(stOf(id))).filter(([,s]) => !s.done);
   const waiting = open.filter(([sid]) => !inHand.has(sid)).length;
   document.getElementById('hd-deck').hidden = todo.length === 0 && !chases.length;
@@ -1548,7 +1604,11 @@ let hdShown = null, hdPrev = new Set(), hdFresh = new Set(), hdRiffle = false, h
 const hdAiDrafts = {};
 const hdAway = s => !!(s && s.discardedUntil && s.discardedUntil > new Date().toISOString());
 const hdBack = s => !!(s && s.aiBack && !stClosed(s));
+<<<<<<< HEAD
 const hdHeld = s => !!(s && s.inHand && !stClosed(s) && !hdAway(s) && !s.aiBack && !blkIs(s));
+=======
+const hdHeld = s => !!(s && s.inHand && !stClosed(s) && !hdAway(s) && !s.aiBack);
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 const hdDays = s => HD_LADDER[Math.min(((s && s.discards) || []).length, HD_LADDER.length - 1)];
 const hdTtvId = it => 'ttv-' + String(it.taskId || it.id || '').replace(/[^A-Za-z0-9_-]/g, '').slice(0, 80);
 // Today's sealed Tap the Vein lines: the Morning tab's free-write category.
@@ -1571,7 +1631,11 @@ function hdHand(){
 }
 // The deck, top card first (position hd-draw).
 function hdDeck(todo){
+<<<<<<< HEAD
   const cards = [], seen = new Set(), out = s => stClosed(s) || hdAway(s) || hdHeld(s) || !!s.aiBack || blkIs(s);
+=======
+  const cards = [], seen = new Set(), out = s => stClosed(s) || hdAway(s) || hdHeld(s) || !!s.aiBack;
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   for (const x of hdTtv()){
     const s = stSteps[x.id]; seen.add(x.id);
     if (s && out(s)) continue;
@@ -1675,6 +1739,7 @@ function hdRender(hand, deck, chases){
     <div class="hd-pile" aria-label="${away.length} discarded until their day"><span class="hd-stack${away.length ? '' : ' hd-none'}">${minis(topAway)}</span><span class="hd-pl">Discards · ${away.length}</span></div>
     ${backs.length ? `<div class="hd-pile hd-claude" aria-label="${backs.length} with Claude"><span class="hd-stack">${minis(backs.slice(-3))}</span><span class="hd-pl">With Claude · ${backs.length}</span></div>` : ''}
     <div class="hd-coins" aria-label="${coins} vibeulon${coins === 1 ? '' : 's'}"><span class="hd-coinstack">${Array.from({length: Math.min(coins, 7)}, (_, j) => `<i style="--j:${j}"></i>`).join('')}</span><span class="hd-pl" id="hd-wallet">${coins} vibeulon${coins === 1 ? '' : 's'}</span></div>`;
+<<<<<<< HEAD
   // With Claude list: each handed card with the status a board read wrote (aiBack.status), or "not picked up yet".
   const wc = document.getElementById('hd-wc'), wcState = {queued: 'Queued', working: 'Being built', review: 'Waiting for your look', 'new-thread': 'Needs a new thread'};
   wc.hidden = !backs.length;
@@ -1682,6 +1747,8 @@ function hdRender(hand, deck, chases){
     const st = s.aiBack.status || {}, who = st.owner ? (/^https:/.test(st.link || '') ? `<a href="${esc(st.link)}" target="_blank" rel="noopener">${esc(st.owner)}</a>` : esc(st.owner)) : '';
     return `<li>${esc(String(s.do).slice(0, 80))}<small>${st.state ? esc(wcState[st.state] || st.state) : 'Not picked up yet'}${who ? ' · ' + who : ''}${st.note ? ' · ' + esc(st.note) : ''}</small></li>`;
   }).join('')}</ul>` : '';
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   const say = document.getElementById('hd-state');
   if (!(Number(say.dataset.keep) > Date.now())) say.textContent = !free ? 'Your hand is full. Finish a card, or do inner work on one and pay the vibeulon to discard it.'
     : deck.length ? `${free} free slot${free === 1 ? '' : 's'}. Tap the deck to draw.` : 'The deck is empty.';
@@ -1773,12 +1840,16 @@ stepsView.addEventListener('toggle', e => {
 stepsView.addEventListener('input', e => {
   if (e.target.id && e.target.id.startsWith('sn-')) stDrafts[e.target.id.slice(3)] = e.target.value;
   if (e.target.id && e.target.id.startsWith('hda-')) hdAiDrafts[e.target.id.slice(4)] = e.target.value;
+<<<<<<< HEAD
   if (e.target.id && e.target.id.startsWith('bka-')) blkDrafts[e.target.id.slice(4)] = e.target.value;
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   if (e.target.id && e.target.id.startsWith('sfn-')) stFileDrafts[e.target.id.slice(4)] = e.target.value;
 });
 stepsView.addEventListener('click', async e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.hd) return hdClick(t);
+<<<<<<< HEAD
   if (t.dataset.blkAi){
     const id = t.dataset.blkAi, text = (document.getElementById('bka-' + id).value || '').trim();
     if (!text){ document.getElementById('bks-' + id).textContent = 'Say what Claude should know first.'; return; }
@@ -1786,6 +1857,8 @@ stepsView.addEventListener('click', async e => {
     delete blkDrafts[id];
     return hdWrite(id, {aiBack: {text, automate: false, at: now(), from: 'blocking'}, inHand: null}, 'Sent to Claude. It is on the With Claude list.');
   }
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   if (t.dataset.bk && hdLifted){ hdLifted = ''; document.getElementById('hd-lift').hidden = true; }
   if (t.dataset.where){
     stWhere = t.dataset.where; try { localStorage.setItem('st-where', stWhere); } catch {}
@@ -1842,8 +1915,12 @@ stepsView.addEventListener('click', async e => {
 // ---- Outreach and Podcast chases (outreach-on-board, outreach-chases-live, outreach-no-send; 2026-10-08) ----
 /* The contacts and shows came over from the Podcast Outreach page with their ids. A chase is computed from a contact by
    the morning brief's three rules, so nothing is copied and a chase leaves the list when its rule stops firing. Saving
+<<<<<<< HEAD
    a chase writes the contact and nothing else, so the Send bar stays dark. The one contact save that lights it is an
    email draft he pressed Send on (outreach-drafts; see pendingSaves). */
+=======
+   a chase writes the contact and nothing else: contacts are not in pendingSaves, so the Send bar stays dark. */
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 let ocContacts = {}, ocShows = {}, ocFilter = 'All';
 const OC_STATUSES = ['Identified', 'Pitched', 'Followed up', 'Booked', 'Recorded', 'Published', 'Shared', 'Declined'];
 const OC_GO = new Set(['Booked', 'Recorded', 'Published', 'Shared']);
@@ -1934,6 +2011,7 @@ function ocShowNames(){
   Object.values(ocContacts).forEach(c => { if (c.show && !names.includes(c.show)) names.push(c.show); });
   return names;
 }
+<<<<<<< HEAD
 /* approval-hash:start  (board/email_pipeline.py approval_hash computes the same string and hash; a test runs both) */
 async function approvalHash(to, cc, subject, body){
   const lower = s => s.replace(/[A-Z]/g, c => c.toLowerCase());
@@ -2001,6 +2079,8 @@ async function dfWrite(id, act){
     if (s2) s2.textContent = 'Saved.';
   } catch (err){ st.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
 }
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 function renderOutreach(){
   const all = Object.entries(ocContacts), names = ocShowNames();
   const tabs = ['All', ...names, ...(all.some(([, c]) => !c.show) ? ['Unsorted'] : [])];
@@ -2024,12 +2104,17 @@ function renderOutreach(){
       <select class="oc-pick" data-oc-status="${esc(id)}" aria-label="Status for ${esc(c.name)}">${OC_STATUSES.map(s => `<option${s === c.status ? ' selected' : ''}>${s}</option>`).join('')}</select></div>
       ${c.why ? `<p class="oc-why">${esc(c.why)}</p>` : ''}${c.notes ? `<p class="oc-notes">${esc(c.notes)}</p>` : ''}
       <div class="oc-meta"><span>Last touch ${c.lastTouch ? esc(stFmt(c.lastTouch)) : 'none'}</span><span>Next touch ${c.nextTouch ? esc(stFmt(c.nextTouch)) : 'none'}</span>${c.contact && !ocHttp(c.contact) ? `<span>${esc(c.contact)}</span>` : ''}</div>
+<<<<<<< HEAD
       ${need ? `<span class="oc-flag">Follow up now</span>` : ''}${c.draft ? dfCard(id, c.draft) : ''}</div>`;
+=======
+      ${need ? `<span class="oc-flag">Follow up now</span>` : ''}</div>`;
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   }).join('');
 }
 const ocView = document.getElementById('view-outreach');
 document.getElementById('oa-status').innerHTML = OC_STATUSES.map(s => `<option>${s}</option>`).join('');
 ocView.addEventListener('click', e => { const t = e.target.closest('[data-oc-show]'); if (t){ ocFilter = t.dataset.ocShow; renderOutreach(); } });
+<<<<<<< HEAD
 ocView.addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return;
   if (t.dataset.dfSend) dfWrite(t.dataset.dfSend, 'send');
@@ -2043,6 +2128,8 @@ ocView.addEventListener('input', e => {
   const d = dfEdits[m[2]] = dfEdits[m[2]] || {};
   d[{s: 'subject', b: 'body', n: 'note'}[m[1]]] = e.target.value;
 });
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 ocView.addEventListener('change', async e => {
   const id = e.target.dataset && e.target.dataset.ocStatus; if (!id) return;
   const c = ocContacts[id], v = e.target.value; if (!c) return;
@@ -2092,12 +2179,15 @@ function pendingSaves(){
     const s = stSteps[id], t = [s.doneAt, s.noteAt, ...(s.moved || []).map(m => m.at), ...Object.values(s.fileNotes || {}).map(n => n && n.at)].filter(Boolean).sort().pop();
     if (t && t > PICKUP_SINCE && t > (DATA.steps_recorded_through || '') && after(t)) out.push('steps/' + id);
   }
+<<<<<<< HEAD
   // A draft he pressed Send on lights the bar: a deliberate exception to outreach-no-send (2026-10-08), because only a
   // session holding the Gmail connector can send it. Chase saves and contact edits still leave the bar dark.
   for (const id of Object.keys(ocContacts)){
     const d = ocContacts[id].draft;
     if (d && d.status === 'send' && !d.messageId && after(d.approvedAt)) out.push('contacts/' + id);
   }
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   // A run of the blocker panel counts once it is saved, finished or not, so a run left half way still reaches Claude.
   for (const id of Object.keys(bkRecs)) if (bkRecs[id].savedAt && after(bkRecs[id].savedAt)) out.push('blockers/' + id);
   return out;
@@ -2417,7 +2507,10 @@ function ttvSkipRun(){
 function ttvGate(){
   const held = !!db && ttvDays !== null && !ttvHandled(), was = document.body.classList.contains('ttv-held');
   document.body.classList.toggle('ttv-held', held);
+<<<<<<< HEAD
   if (held && document.body.classList.contains('blk-held')) return;
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   if (held && !was){ show('morning'); document.getElementById('mo-ttv').open = true; }
   if (held && mcp && ttvCheck !== ttvToday()) ttvAsk();
 }
@@ -2538,7 +2631,11 @@ render();
   }
   db.doc('steer/general').onSnapshot(d => { liveSteer = d.exists ? d.data() : null; render(); }, () => {});
   db.collection('lists').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stLists = next; stStore = snap.docs.length ? 'ok' : 'empty'; renderSteps(); }, () => { stStore = 'failed'; renderSteps(); });
+<<<<<<< HEAD
   db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; ocStore = snap.docs.length ? 'ok' : 'empty'; renderOutreach(); renderSteps(); renderSend(); }, () => { ocStore = 'failed'; renderOutreach(); });
+=======
+  db.collection('contacts').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocContacts = next; ocStore = snap.docs.length ? 'ok' : 'empty'; renderOutreach(); renderSteps(); }, () => { ocStore = 'failed'; renderOutreach(); });
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   db.collection('shows').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); ocShows = next; renderOutreach(); }, () => {});
   db.collection('blockers').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); bkRecs = next; if (!bk) renderSteps(); else renderSend(); }, () => {});
   db.collection('steps').onSnapshot(snap => { const next = {}; snap.docs.forEach(d => { if (d.exists) next[d.id] = d.data(); }); stSteps = next; renderSteps(); }, () => {});

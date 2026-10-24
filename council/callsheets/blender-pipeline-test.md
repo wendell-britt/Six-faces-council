@@ -2,8 +2,11 @@
 # Blender pipeline test plan (strand blender-pipeline-test)
 
 ## Next
+<<<<<<< HEAD
 - The cloud VM can now run a job shaped like a J5 round, not only single probes: see the second 2026-10-21 section at
 the end of this sheet for the composed garment job and the checkout it still needs (bars-engine).
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 - Dials first (council pass 2026-10-18, "How to learn math for 3D game design without losing your mind", https://claude.ai/code/artifact/ddb0797e-cfe1-4b5e-a178-f3c9459b41ff): the next J5 round exposes Weight (mass and stiffness), Settle (damping) and Reach (how far a panel strays from the leg) as named 0-1 dials on its proof page, saved beside the asset in the `warp_numbers` shape, so Wendell's notes come back as dial moves. One dial, one idea; the model proposes values, his look locks them.
 
 J5 (clothing) is built: bars-engine draft #315. `content/ontology-game/cave/garments.py --all [--sheet]` cuts a robe
@@ -183,6 +186,7 @@ Report: https://claude.ai/artifact/7AMbgzk3HMk8Gq8seTzSg6. Runner: `council/tool
   The cleaner file needs the header's "delete fragments until floating is empty": the two runs before that line shipped
   119 and 274 fragments, the run after it 0; controls shipped 121 and 301.
 - Next: fix rig_check, add a vertex-colour QA profile, set budgets for kit/room/spirits, resolve meshopt (absent in this bpy build).
+<<<<<<< HEAD
 
 ## Blender in the no-root cloud VM (Freebuff, 2026-10-21)
 
@@ -248,3 +252,5 @@ tube-forearm fit stalls and why slight dusk still fails some drapes; fix that ca
 three times in a row (`test_bpy.py`, 1800 s, background); all three must pass. (3) Render one before/after clip
 (round 14 vs round 16, close on sleeve and hem) into `/mnt/project-files/3d-build/` and add it to look step
 j5-sleeve-hem-look-14 or a new look step, so he can look from the board. Send bulk reading and runs to an Agent worker.
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))

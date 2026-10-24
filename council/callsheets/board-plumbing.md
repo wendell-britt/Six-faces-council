@@ -133,6 +133,7 @@ scout: rung 2, we have it (bars-engine board save, applyWrite and importDocs).
 Left: (a) once the token answers 200, export lists/steps/contacts/shows with ArtifactData and run `diff` to see drift
 since the 10-20 import, then `--push-missing`; (b) his saves on /board/council never reach the artifact, so the
 board-pull Action's council pass (callsheet above) is still needed before he ticks steps there; (c) step 6.
+<<<<<<< HEAD
 
 ## Picked up 2026-10-21: a session with no Claude tools (Freebuff)
 
@@ -153,3 +154,5 @@ like this one, and all three are open now:
 Left, unchanged: the artifact import (`bi-import-key`), board-home step 5 (`COUNCIL_MENU_TOKEN`), and step 6. A
 session holding `BOARD_PULL_TOKEN` reads a save without waiting for the Action; `/board/council` answered 307 to
 `/login` without his cookie, so his steps and contacts stay out of reach from here.
+=======
+>>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
