@@ -1,6 +1,31 @@
 # Studio lot (the studio game)
 
 ## Next
+Tall ship, round A 2026-10-24 (thread "Rework boat as a tall ship", from his note on `ty-boat-look-2`: click a spirit's
+or player's message to open its card and steer; the skiff is overdone and too long, use a cross-section of a larger
+tall ship, keep the vibe, rooms correspond to the pipeline, maybe oriented along it; a steer updates the repo and sends
+a hook to every surface, including coding environments; the boat knows phone vs a computer that can reach the council).
+Made: still v1 `/mnt/project-files/studio-tycoon/tall-ship/still-tall-ship-v1.png` (scene source `still-scene.html`
+beside it, rendered by Playwright from the round 2 sprites). Layout idea: stern to bow = the seven CCGS stages
+(Concept in the captain's cabin under the wheel where he steers, Systems Design chart room, Technical Setup carpenter's
+shop, Pre-Production model shop lit as "here", Production workshop deck, Polish sail loft, Release forecastle facing
+the live-site island); a strand's spirit walks bow-ward as its stage passes; departments are workshops below; hold =
+corpus/compost. The art-director review (`art-director-review-v1.md` beside it) says fix first. Not shown to him yet.
+Found: the save path already fires board-pull at once (bars-engine `src/app/api/board/saves/route.ts` calls
+`dispatchBoardPull()` for record kinds), so "steer writes the repo" exists; missing is the fan-out after main changes.
+
+Brief: Tall ship, round B (fresh Opus thread; owns bars-engine #429, branch `claude/project-thread-227mft`, head c315bb5).
+(1) Fix the still per the review (one vessel with depth, one label per room, big tailed bubbles, one distinct spirit
+per room at one scale), recheck with the CCGS art-director role, then put it up as a look step with board positions
+`ts-stage-rooms` (stern-to-bow = stages), `ts-walk-bow-ward`, `ts-depts-below`. (2) Write the steer design as one
+page: tap a bubble opens the strand/letter card (round 4 letters brief above is the card's content); a steer is the
+board's own save (no schema change); fan-out plan after board-pull lands on main: bars-engine reads main (live
+already), artifact board republish step, Board Send routine trig_01L138vKTaN9MSJoFKRmaBNx so the owning cloud thread
+picks it up, desktop sessions pull main at SessionStart; device tiers (phone: read, open, steer, defer; signed-in
+computer: also hand to crew; his Mac: actions that need local tools queue for a thread with Remote Control). Position
+rows for each; questions only what the record cannot answer. (3) Layout rebuild in Phaser on #429 waits on his yes to
+the fixed still.
+
 Boat moves, design answer 2026-10-24 (thread "Map board moves onto the spirit boat"): page
 https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr (source `/mnt/project-files/studio-tycoon/boat-moves/boat-moves.html`),
 rows `council/callsheets/rows/boat-moves-2026-10-24.json` on both boards. The boat writes nothing today (only
