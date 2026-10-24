@@ -12841,6 +12841,17 @@
    "auto": true,
    "pos": "The ships take starship names: 1 Gourd Star (Shaman, Chapter 1), 2 Ember Comet (+ Challenger), 3 Jade Palace (+ Regent), 4 Clockwork Orrery (+ Architect), then Tide Lotus (Diplomat) and Taiji Star (Sage), locked. The hangar is the moorings at a floating Air Temple. The unlock lines of boat-grid-deck-unlock carry over. This stands unless you flip it.",
    "why": "Your steer on boat-grid-deck-unlock (04:02): \"We'll need different names for star ships as we're long away from literal boats\"."
+  },
+  {
+   "id": "lt-idle-robe-cloth",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "between-lighting",
+   "auto": true,
+   "pos": "The idle robe is skinned over the idle clip, not cloth-baked. A cloth bake needs the J5 robe from garments.py, so it waits for that robe; the skinned robe stands until then unless you flip it.",
+   "why": "Built in bars-engine #433 (stance.js). The skinned robe holds at the idle's pace on phone; the cloth bake would add a file per idle and needs the J5 robe, which the Between figure does not use yet. Source: council/callsheets/relationship-creature.md"
   }
  ],
  "questions": [
@@ -20202,7 +20213,7 @@
    ],
    "pass": "between-lighting",
    "q": "Which mirror light: 3a, 3b or 3c?",
-   "why_you": "Your note on round 2: \"Split the difference the lighting is now too harsh and uniform\". Round 3 keeps round 2's soft light and brings back a lit side and a shaded side, in three steps: 3a closest to round 2, 3c closest to round 1. 3b stands unless you pick another: it is the one with about a fifth of you in shadow and both sides readable, but its edges are about as sharp as round 1's. Look at the page at https://claude.ai/artifact/K1fhE43L4or9JStRveUUgg (rounds 1 and 2 beside the three), then pick. The standing idle is being built alongside and does not wait on this.",
+   "why_you": "Your note on round 2: \"Split the difference the lighting is now too harsh and uniform\". Round 3 keeps round 2's soft light and brings back a lit side and a shaded side, in three steps: 3a closest to round 2, 3c closest to round 1. 3b stands unless you pick another: it is the one with about a fifth of you in shadow and both sides readable, but its edges are about as sharp as round 1's. Look at the page at https://claude.ai/artifact/K1fhE43L4or9JStRveUUgg (rounds 1 and 2 beside the three), then pick. Try it on a hosted preview, on your phone if you can: https://bars-engine-kxzjuklx1-wendells-projects-9c1b16dc.vercel.app/ontology-game/between?mirror=1 (opens at the mirror, bars-engine #433). The build already has 3b's light and the standing idle in it. Please check phone lag: in software the mirror frame time went from 267 to 333 ms with the extra light, and a real phone is the test that matters. If it lags, say so in your note.",
    "not_before": "The round 3 stills are on the page.",
    "options": [
     {
