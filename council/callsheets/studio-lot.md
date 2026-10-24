@@ -1,7 +1,46 @@
 # Studio lot (the studio game)
 
 ## Next
-Brief: on his yes to `boat-grid-look-6`, "Face ships build" (below) ports `flow-blockers/flow-ships-r6.js` (Still A, compartments
+Brief: Face ships round 7, the fleet as the pipeline (fresh Opus thread; starts now, per his note on boat-grid-look-6, saved
+2026-10-24 17:50). His note, verbatim: "Very close. We need the parts of the ship readable and we need to think about how
+the ship expands as the pipeline adapts?  What is the outcome of a pipeline run at each level? If we stretch the FTL
+mechanics, what does en enemy ship mean and where is the ship racing to? How do we metabolize the blocker's that show up
+on a ship? It seems Each of the ships would have to be able to be roomed into its own pipeline minigame tat metabolizes
+charge into overcoming the emergent blockers indigenous to that part of the pipeline". Do NOT read the board step for it
+(its stills are base64 and cost 90k tokens); the note above is complete. Keep round 6's flow-and-blockers frame
+(`flow-blockers/gameplay-loop.md`, page https://claude.ai/artifact/UX83dDGbVvtA6FxwKVMzhJ): beads of qi, jams as things
+in the world (letter, eye, knot), amber only for alarm, nested skins, no panels.
+Working reading (the thread may amend it, and says so in its report): "roomed" = zoomed. The fleet is the pipeline
+(`council/pipeline.yaml` stages intake, spec, falsify, plan, build, verify, ship, close). Each face ship holds the part of
+the pipeline its face owns there (owners field), and you zoom three levels: fleet -> ship -> room minigame.
+(1) Parts readable: every room is named by its machine, not a label (intake a listening bell, spec a loom, falsify a
+forge, plan a star chart, build a foundry, verify a mirror pool, ship a launch cradle, close the stores). Check each one
+reads at phone size.
+(2) Growth as the pipeline adapts: each rule the pipeline gained grows a compartment in a newer outer skin, older stages
+stay inside (boat-grid-nested-skins). Use the real ones with dates: tool scout (10-18), testable preview (10-20), art
+direction first (10-23), depth rule (10-24).
+(3) Outcome at each level: room = the stage's `produces` artifact; ship = that face's named contribution (close stage);
+fleet = a shipped feature, which is one FTL jump.
+(4) FTL stretched: the destination is the north star, the gamified Chapter 1 demo and the Kickstarter launch (the
+Federation base). The pursuing front is neglect: the compost tide (spirits die after 21 days, compost pass, deprecations)
+that swallows sectors left unlooked. Enemy ships are the faces' shadow ships (the Diplomat's is Flatland, the dashboard
+drift); per the daemon ruling they are never destroyed, you spar them and their crew joins (transcend and include).
+(5) Metabolism: a blocker is fuel. A room's minigame spends charge (qi) on its native blocker, and the cleared blocker
+condenses into qi or a vibeulon for the next room (emotional energy is fuel, compost not necromancy).
+(6) One minigame per room, each against that stage's native blocker: intake fog (an unquoted ask), spec loose threads
+(a decision with no owner), falsify a hidden crack (an untested assumption), plan dark stars (a step missing input), build
+heat and jams (a failing check, a merge conflict), verify the covered bench (an unlooked build), ship the sealed letter
+(his word), close the unfiled lesson.
+Steps: reference research by a Sonnet worker first (real images, saved to `/mnt/project-files/studio-tycoon/flow-blockers-r7/refs-r7/`:
+FTL sector map, rebel fleet and encounters; Lovers in a Dangerous Spacetime stations; Spiritfarer building minigames;
+Among Us room tasks; Cosmoteer ship growth; Outer Wilds destination loop; our own rounds 4-6 stills as references), then
+`gameplay-loop-r7.md` with the first 60 seconds from the player's side, then 1-2 stills (A: the fleet in convoy with a
+jam, a shadow ship and the tide; B: zoomed into one room's minigame), art director check (Sonnet, CCGS role), look page,
+look step `boat-grid-look-7` (list `studio-lot-boat`, n 12) on both stores with look/lookTitle/still/href, rows file,
+callsheet. No build; bars-engine #429 untouched (head c315bb5). Base files: `flow-blockers/` (flow-ships-r6.js,
+render-stills.js), `nested-ships/`. Output folder `/mnt/project-files/studio-tycoon/flow-blockers-r7/`.
+
+Earlier brief (superseded by his note on look-6): on his yes to `boat-grid-look-6`, "Face ships build" (below) ports `flow-blockers/flow-ships-r6.js` (Still A, compartments
 in a row inside the skins): strands as compartments with doors, qi beads on the current and door rails, jams from the board
 (letter = open board step, eye = unlooked build, knot = stalled thread), drag beads between rooms, Qi view toggle. On a note:
 round 7 from his note plus the open notes below.
