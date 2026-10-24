@@ -109,3 +109,17 @@ cave branch. The board has no open rows for the room.
 - `council/passes/6FACE_PASS_wave-room1_2026-10-11.md`, ledger `2026-10-11-wave-room1-pass.json`
 - `council/daemons/reports/2026-10-11-wave-room1-*`
 - See cave-of-lessons.md (the cave it belongs to) and wave-battle.md (the same WAVE as Sprout's fight).
+
+## 2026-10-24: gas spirits landed (bars-engine #436)
+
+Wendell's screenshot showed the live WAVE room at Witness with a plain grey blob. Cause: the gas-spirit stack (#412 the
+worn figure sits, #413 the door's charge is a gas spirit, #419 every charge comes in as a gas and takes form by the work)
+was never merged. #436 is #419's head with main merged in (passport purse, ship ember and the `?go=` skip-ahead kept on
+both sides) and a `&tour=0` preview key that skips the walkthrough. Merging #436 marks #412, #413 and #419 merged.
+
+- Look step `wave-gas-look-01` (list `wave-gas`) on both boards, preview `/ontology-game/cave?go=home&tour=0`.
+- TRIGGER his yes -> mark #436 ready; it merges itself once green. A note -> new round on #436's branch
+  (`claude/project-thread-5zrl9b`).
+- #434 (one seat for the caves and the WAVE room) touches the same sitting code as #412; whichever lands second merges.
+- Not checked: a real phone. The cave test's two failures (walk swing range, a breath-timed button) are being compared
+  against main in the same thread.
