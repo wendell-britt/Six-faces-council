@@ -1,7 +1,26 @@
 # Studio lot (the studio game)
 
 ## Next
-Art direction done 2026-10-23 (thread "Set the studio boat art direction"): page https://claude.ai/artifact/85chXzRvLpPj7dumm6hi5z
+Rebuilt 2026-10-24 (thread "Rebuild the studio boat", bars-engine #429 commit 4a0e14f): `/board/studio` is now the
+Lantern deck in Phaser 3 from still A. Code: `src/lib/studio/world.ts` (strand to house look and place, tested in
+`world.test.ts`), `src/lib/studio/page.ts` (shell, Phaser 3.80.1 from jsDelivr), `public/studio/boat.js` (the game),
+`public/studio/sprites/` (from mood-stills/sprites). 46 strands as houses on two rows (deck and gallery, ladders):
+resting under vines with a sleeping tortoise at the stern, wheelhouse and hammock midship, scaffold/lit-and-smoking
+houses with crew carrying crates, bell houses with a fox and a letter at the bow; the done strand walks through the
+Everdoor; seven stages as islands and a sea chart in the wheelhouse. First 60 seconds as on the page (hammock, bell,
+tap to wake, walk to the bow, letter with two wax seals, pull-back). The red seal is local to his phone for the day;
+the board stays the record. Params `?skip=1`, `?intro=1`, `?strand=<name>`, `?sky=dawn|day|dusk|night`.
+Stills from the running build: `/mnt/project-files/studio-tycoon/rebuild-1/` (deck-dusk, letter-night, pull-back).
+
+Brief: Boat round 2 (next, fresh Opus thread, owns #429 on `claude/project-thread-227mft`). (1) Get the Vercel
+preview URL for 4a0e14f from the PR and put a look step on the board (`ty-boat-look-1`) opening
+`<preview>/board/studio?intro=1`. (2) CCGS art-director check of the three stills against
+https://claude.ai/artifact/85chXzRvLpPj7dumm6hi5z, as an Agent worker. Known gaps: crew all share one pose and run in
+place (need a walk cycle), every waiting spirit is the same fox (use the spirit-generator spirits, tinted by element),
+islands barely show behind the houses, no ship's log yet, the hammock pose is the side sprite turned 84 degrees, 17
+bells crowd the bow. (3) After his look, the move (a staff card onto a waiting spirit sends its brief).
+
+Earlier: Art direction done 2026-10-23 (thread "Set the studio boat art direction"): page https://claude.ai/artifact/85chXzRvLpPj7dumm6hi5z
 (reference board, first 60 seconds, data-to-world map, two stills). Files `/mnt/project-files/studio-tycoon/mood-stills/`
 (still-a.png side view on canvas, still-b.png three.js 0.160 pixelated, sprites/ from bars-engine public/between/m GLBs,
 art-director-review.md). Per his 23:52 ask, the CCGS art-director role (fetched from the CCGS repo) reviewed and fixed
@@ -36,7 +55,7 @@ its brief) after that. Rule for every game brief from here: art direction, a POV
 before the build.
 
 ## Waiting on
-- `ty-still-pick` (his look at the two stills).
+- His look at the rebuilt deck (step `ty-boat-look-1`, put up by the round 2 thread). `ty-still-pick` answered A.
 Nothing from Wendell. Positions `ty-lens`, `ty-real-data`, `ty-host`, `ty-engine`, `ty-roster`, `ty-gates`, `ty-rigor`,
 `ty-order`, `ty-genre-mix` stand unless he flips them. `ty-genre` is answered with a steer ("I'm thinking a mix of boat
 and studio sim."), recorded in `council/ledger/2026-10-23-pull-230209.json`.
