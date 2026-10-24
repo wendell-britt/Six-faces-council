@@ -53,7 +53,27 @@ Rules to name: docs/3d-math.md rule 8 and garment page https://claude.ai/artifac
   image generation, the walk clip only (sit posed by hand), the thread passed 150k by reading its own renders.
   Lesson: send every render look to a worker, not only the AD checks.
 
-## Next: Round 1, the core kit (fresh Opus thread, on his yes to clothing-kit-look-01)
+### Round 0b done (2026-10-24), from his "Not yet" on clothing-kit-look-01
+His note: shoulders don't feel natural, seams will make boxy intersections, pieces show old artifacts.
+- Page: https://claude.ai/artifact/U8VF9Jx5nmPvGFpCkp9V2B (source /mnt/project-files/clothing-kit/round0b/look.html).
+  Generator round0b/source/ (README.txt; `node checks.cjs` = coverage, camera-ray skin/holes, thin/long triangles).
+- Worker notes in round0b/: research-seams-shoulders.md (ranked: copy body skin weights, cut-on sleeve cap inside the
+  shell, matched ring counts, averaged seam normals, clavicle + twist bone), skeleton-check.md (verdict PARTLY: no
+  clavicle, max 2 influences, steep A-pose; base Walk clip flips a leg), past-fixes.md (25 past fixes, 9 missing in r0).
+- Built: clavicles (28% share), shoulder weights blended to 3-4 bones, fit pose arms 45 deg out, garment copies body
+  weights, cut-on sleeve cap, 48 matched divisions, body mask per outfit, cuff = sleeve edge, layer offsets.
+- Independent AD (Sonnet, 3 passes, art-director-review-0b-independent.md): novice + practitioner ready; elder not
+  (hairline seams back shoulders, waist step, padded shoulders, seated cuff loop). All: seated skirt slab, seated cuff
+  hoops, knee into skirt mid-walk, trouser peek at practitioner front hem.
+- Board: question clothing-kit-look-02 (examples inline), positions ck-cut-on-shoulder, ck-collarbone-rig,
+  ck-mocap-walk. Rows council/callsheets/rows/clothing-kit-r0b-2026-10-24.json.
+- Pipeline-test log, round 0b: one thread, 5 workers; rung 2 (own generator). The independent reviewer caught cuff
+  rings, back lump and collar notch that the builder's self-review passed: always use a separate reviewer worker.
+
+## Next: Round 1, the core kit (fresh Opus thread, on his yes to clothing-kit-look-02)
+Carry round 0b's rig (clavicles, weights, fit pose) and the elder/seated gaps above. On a note: round 0c from
+round0b/source/ with the same independent reviewer loop.
+
 Per the plan doc's round 1: Shell, Tube, Bell, Band, Lip as one plain JS module in bars-engine (start from #435's
 figure-robe.js / wardrobe.js), garment-contract.md, ray probe across walk, idle, sit, turn x 3 bodies, novice in the
 Between mirror with a one-click preview. Fold in his note, ck-open-at-belt, and the round 0 gaps above. On a note
