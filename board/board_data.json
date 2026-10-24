@@ -13066,6 +13066,31 @@
    "auto": true,
    "pos": "The ship is the Council Board you can play. Each strand is a separate compartment with its own door, in a row mirrored round the Hearth, and the walls between them are older skins (amends boat-grid-nested-skins: rooms in a row inside the skins). Qi is countable beads on one current from the Hearth, five on a rail over each door. A jam is a thing in the room and the only amber on the ship: a sealed letter for a waiting question, an eye lantern by a covered bench for an unlooked build, a knot over a seated crew member for a stalled thread, each with a ring that fills as it waits. One overlay, Qi view, darkens the hull. Steering is dragging beads between rooms and tapping the jam; the cure shows at once.",
    "why": "Your note on boat-grid-look-5 (2026-10-24): balance B's legibility with A's design language, see where energy goes and where the blockers are, and learn how games solve it. Research on FTL, Factorio, Oxygen Not Included, Spiritfarer and Overcooked (studio-tycoon/flow-blockers/research.md) found the same grammar: countable pips, an icon pinned on the stuck station, a visible pile, one overlay, colour kept for alarm."
+  },
+  {
+   "id": "boat-grid-fleet-pipeline",
+   "faces": [
+    "architect",
+    "regent",
+    "challenger",
+    "sage"
+   ],
+   "pass": "fleet-pipeline-2026-10-24",
+   "auto": true,
+   "pos": "The six face ships fly as one fleet, and the fleet is the pipeline (council/pipeline.yaml). Each stage has one keeper from its owners: intake the Shaman's listening bell; spec, plan and build the Architect's loom, star chart and foundry round the Hearth; falsify the Challenger's forge; verify the Diplomat's mirror pool; ship the Regent's launch cradle; close the Sage's stores. Each room is named by its machine. Qi flows ship to ship in stage order, out to the forge and back between spec and plan. You zoom fleet to ship to room. A run's outcome is the stage's produces artifact in a room, the face's named contribution on a ship, and a shipped feature (one jump) for the fleet. Each new pipeline rule grows a dated compartment in a newer outer skin round the stage it changed (tool scout 10-18, preview 10-20, art table 10-23, depth lens 10-24). Amends boat-grid-flow-blockers: rooms are stages, not strands. Two new forms: Twin Lantern (Diplomat) and Seed Archive (Sage).",
+   "why": "Your note on boat-grid-look-6 (2026-10-24): parts readable, how the ship expands as the pipeline adapts, the outcome of a run at each level, each ship zoomed into its own pipeline minigame. Read \"roomed\" as \"zoomed\". Page https://claude.ai/artifact/EMRM5oFyFqwCbHZkuogRpe."
+  },
+  {
+   "id": "boat-grid-ftl-stretch",
+   "faces": [
+    "challenger",
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "fleet-pipeline-2026-10-24",
+   "auto": true,
+   "pos": "The fleet races to the Chapter 1 harbour (the demo and the Kickstarter launch). The compost tide chases it: whatever waits 21 days unlooked, which it composts and leaves a seed for. An enemy is a face's shadow ship. The Diplomat's is Flatland, the dashboard drift. It is never destroyed: you spar it from the depth lens and its crew joins. Each room has one minigame against its stage's native blocker (fog, loose threads, a hidden crack, dark stars, heat and jams, the covered bench, the sealed letter, the unfiled lesson): one gesture of about five seconds that spends qi and condenses the cleared blocker into qi for the next room. The loom's gesture is the reach test: drag a loose thread to a face's spool, or out as a letter. How a spar plays waits on the move ontology.",
+   "why": "Your note on boat-grid-look-6: what an enemy ship means, where the ship is racing to, how blockers get metabolized. The north star (Chapter 1 demo, then Kickstarter), spirit care's 21 days, the daemon ruling (spar, never fight) and emotional energy as fuel answer it from the record."
   }
  ],
  "questions": [
