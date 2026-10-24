@@ -380,3 +380,13 @@ Next thread (Sonnet for 1-2, Opus for 3):
 2. Own and watch #435 (CI, review).
 3. Carry the same fix to the creator robe in sprout #72 (add_repo wendell-britt/sprout): figure.js gets the same changes as bars-engine public/between/wardrobe.js + figure-robe.js + look.js lining.
 Sit poke is the one gap left (round 2 if he notes it).
+
+### Robe layers looks posted, sprout carried (2026-10-24)
+
+Look steps on both boards, list `robe-layers`: `robe-layers-look-01` (Between mirror on #435's preview at `?mirror=1`; sheet, seated still naming the sit gap, three standing positions) and `robe-layers-look-02` (creator robe on sprout draft #74). Positions landed on main: rl-sit-pool, rl-violet-lining, rl-hip-room. bars-engine #435: preview ready, CI green, draft, waits on his look.
+
+sprout draft #74 (branch claude/project-thread-byiz0w, head 25b7128, stacked on #72) carries #435: slice/figure-dress.js (sprout's wardrobe.js), figure-robe.js, figure.js, creator.js lining per dye, tools/figure-rig.mjs + figure-cover.mjs -> slice/figure/robe-cover.json, rays probe as `npm run test:figure-legs` (sprout has no CI); robe-baked.glb.bin and the old robe probe deleted. Probe: walk and standing 0 through / 0 void, 4 builds x 3 cuts. Stills: /mnt/project-files/3d-build/robe-layers-sprout-2026-10-24/. Preview: https://sprout-git-claude-project-thr-d17ace-wendells-projects-9c1b16dc.vercel.app/slice/creator.html?form=figure&beat=satchel
+
+Not checked: road walk, mirror beat, pixel bake, frame cost, the wider sleeves against the thighs, bodies b and c in the probe. Possible fault to check in #435: sprout's port keeps the hair placed against Walk frame 0 because rest-pose placement put the afro over the face; #435 dropped that frame-0 posing, so the mirror figure may have the same fault.
+
+TRIGGER: his yes on look-01 -> Sonnet thread merges #433, #435 (then #72, #74 in sprout after #71). A note on look-01 (likely the sit poke) -> Opus round 2 on #435, then carry to #74. A note on look-02 -> round on #74 only.
