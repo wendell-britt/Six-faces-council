@@ -20063,6 +20063,34 @@
      "c": "Leave a note and a third lighting round runs before any build."
     }
    ]
+  },
+  {
+   "id": "sd-ship-look-1",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "ship-reveal-2026-10-24",
+   "q": "Does the living ship feel right, from the fox leading you out of Chapter 1 to the world inside?",
+   "why_you": "Both builds follow your yes on sd-still-pick, and only your look can say they land. Play the reveal on your phone first. It opens at the end of Chapter 1, so tap three times to follow the fox. The door takes you straight into the ship: https://sprout-6rbb4w7wy-wendells-projects-9c1b16dc.vercel.app/ch1/?beat=ch1.a9.the-ship&arrive=https://bars-engine-git-claude-projec-dae56e-wendells-projects-9c1b16dc.vercel.app . To open the world inside on its own: https://bars-engine-git-claude-projec-dae56e-wendells-projects-9c1b16dc.vercel.app/calrunia/arrive?demo=1 (add ?demo=grown to see it grown).",
+   "not_before": "Raised by the ship reveal build, 2026-10-24 (sprout #73, bars-engine #432).",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Yes, ship it (recommended)",
+     "c": "sprout #73 and bars-engine #432 merge, old #399 closes, and the next round is the inside's art gaps (real terrain on the ring, the floor light, the bud)."
+    },
+    {
+     "v": "B",
+     "label": "B. Yes, with a note",
+     "c": "Both merge and your note becomes the next round's keep and fix list."
+    },
+    {
+     "v": "C",
+     "label": "C. Not yet",
+     "c": "Nothing merges. Your note starts a second round on whichever part missed."
+    }
+   ]
   }
  ],
  "causes": [
