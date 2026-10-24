@@ -125,3 +125,25 @@ both sides) and a `&tour=0` preview key that skips the walkthrough. Merging #436
 - Cave test (not in CI) in this container: #436 434 pass, main 432 pass; both fail the same three checks (walk swing
   range, a breath-timed button, "walking onto the rug offers Sit down") and stop at the same timeout before the
   door-spirit block, so those failures are main's, not #436's.
+
+## Brief 6, handoff 1 (2026-10-24, thread "Rig the spirits, Shellback first")
+Stopped at the 150k line after reading, before any code (the thread opened at ~100k). No commits in bars-engine; branch
+`claude/project-thread-9uem3k` is cut from main d462d7e (#436 merged) and is empty. The brief itself is in
+/mnt/project-files/door-spirits/handoff-2.md, "Brief 6". What the reading found, so the next thread need not reread it:
+- scout: rung 2 is really rung 1. bars-engine `tools/blender-cloud/content/spirits/rig.py` (663 lines, #325) already rigs
+  the Shellback tortoise creature and ascended from shellback.py's GLB: joint table, weights, Walk (24 keys, one cycle a
+  second) and Idle (48 keys), baked to 1 unit = 1 m. Usage line at its top; an earlier run's output is in
+  /mnt/project-files/3d-build/spirit-rig-2026-10-14/ (glb/, poses/, report.json). Source GLBs: .../spirit-shellback-2026-10-14/glb.
+  Rigify is not needed for the Shellback; keep it for families rig.py lacks.
+- The cave today: spirit-forms.js `parseStage` reads bake_spirits.py's unskinned files (16-bit positions, one primitive per
+  material with its look in extras, z-up converted, Y0 0.35). cave.js `parseBody`/`bodyRig` (line ~1312) already read
+  bake_daemons.py's skinned format: `_SKIN` attribute (two joints, first weight, band byte), joints [name, parent, pos, quat]
+  in node extras, clips as {fps, length, travel, channels} via `keysOf`; `keyAt` (~1560) samples a channel; the walker
+  (`wearWalker`) plays walk/run by speed with `travel`.
+- Plan: (1) `blender_here.py setup`, run rig.py on shellback creature (and ascended), export. (2) Extend bake_spirits.py with
+  the creature/ally rig: keep the per-material primitives and their looks, add `_SKIN` and the joints plus "walk" and "idle"
+  keys in node extras the way bake_daemons.py writes them (stay under LATE_BUDGET_BYTES 160 KB). (3) spirit-forms.js
+  `buildStage`: when the file has joints, build one THREE.Skeleton and a SkinnedMesh per part. (4) cave.js `walkForm`
+  (~5388): replace the coded bob/roll/squash with the walk clip, phase by distance over `travel`, idle when stopped; keep the
+  lowest-point-on-floor offset and the turn. (5) Probe first: creature mesh lowest world y within 0.03 of 0 across a walk
+  (cave-test.mjs door-spirit block), then a still, then a sheet. Preview `/ontology-game/cave#go=home&grown=7&tour=0`.
