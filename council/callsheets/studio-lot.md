@@ -26,6 +26,20 @@ a hold move. (3) Art-director open notes: tie each walker to its strand's colour
 camera prefers a walker mid-stair. (4) Forty-six strands must fit seven cabins: stack or queue spirits, check on a
 phone. (5) Preview link at `?strand=<one with a letter>` as look step `tw-ship-look-2`.
 
+Brief: Looks aboard the boat (waits on the boat build above; brief only, no code before it). Wendell, 2026-10-24: "we
+also need a place on the council board and in th spirit game design game where we can preview and test any assets that
+are waiting for my eyes". The board half is built: the Your eyes tab on the Council Board (council PR from thread
+"Gather looks waiting for Wendell"), which reads every open look step (`look: true`, or an id with look, try, play or
+squint), one card per strand, newest first, with a still (`still`), a title (`lookTitle`), one Open it link and a yes
+or note that ticks the step and saves his words as its note. The boat half: a look is a spirit at the rail holding up
+what it made. (1) Each open look step becomes a lantern or a crate on the waiting cabin's table, carrying its still as a
+painted card; its spirit (the strand) waits beside it, so how many looks wait is seen as how full the cabin is, never as
+a count. (2) Tapping the card opens the step's `href` (the hosted preview) in a new tab; coming back, the spirit asks
+"yes, or what feels off?" in the steer card, and the answer writes the same `done` + `note` patch the board tab writes,
+through src/lib/board/shim.ts, so both views close the same step. (3) Older looks on the same strand sit face down
+under the newest. (4) Art direction first, per the keep list: a still of the cabin with three waiting looks, for his
+look, before code. Data source is the steps store only; no new collection.
+
 Retired 2026-10-24 by his steers above: Living boat 2026-10-24 (thread "Bring back the living boat"). His note on `ts-ship-look-1` rejected the tall ship: "the
 tall ship is not an improvement from the platform style ... Fully the wrong direction" and "The biggest thing is that
 agents can be seen traveling between rooms anymore that was the most compelling part of the first design. Being able
