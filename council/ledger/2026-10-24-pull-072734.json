@@ -1,0 +1,70 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T07:27:34.424Z",
+ "answers": {
+  "lt-mirror-look-03": {
+   "kind": "question",
+   "choice": "not-yet",
+   "savedAt": "2026-10-24T07:23:35.693Z",
+   "steer": "For a question like this we need the examples where the question is for me to assess. This is a feature for council board "
+  },
+  "robe-slit-look-01": {
+   "kind": "question",
+   "choice": "yes",
+   "savedAt": "2026-10-24T07:24:29.423Z",
+   "steer": ""
+  },
+  "boat-grid-tao-space": {
+   "kind": "position",
+   "savedAt": "2026-10-24T07:25:24.117Z",
+   "status": "stands",
+   "steer": "This is close but I don’t want symbology but borrow Daoist vibes, curves and flow not pagodas and Chinese symbology "
+  },
+  "boat-grid-five-elements": {
+   "kind": "position",
+   "savedAt": "2026-10-24T07:26:10.319Z",
+   "status": "overrule",
+   "steer": "There shouldn’t be an element for each face. All elements can be expressed at each face. This could mean that each face has an elemental ship design "
+  },
+  "boat-grid-star-names": {
+   "kind": "position",
+   "savedAt": "2026-10-24T07:26:17.599Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lt-idle-robe-cloth": {
+   "kind": "position",
+   "savedAt": "2026-10-24T07:26:24.750Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-grows-both-ways": {
+   "kind": "position",
+   "savedAt": "2026-10-24T07:27:14.939Z",
+   "status": "overrule",
+   "steer": "Since we aren’t doing the boat metaphor anymore this is moot"
+  },
+  "boat-grid-carry-tao": {
+   "kind": "question",
+   "choice": "B",
+   "savedAt": "2026-10-24T07:27:34.424Z",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [
+  "council/blockers/tap-the-vein--mvm206os.json"
+ ],
+ "needs_work": [
+  "questions/lt-mirror-look-03: None yet (note) (steer: \"For a question like this we need the examples where the question is for me to assess. This is a feature for council board\")",
+  "questions/robe-slit-look-01: Yes, build it",
+  "positions/boat-grid-tao-space: Stands (steer: \"This is close but I don’t want symbology but borrow Daoist vibes, curves and flow not pagodas and Chinese symbology\")",
+  "positions/boat-grid-five-elements: Overruled (steer: \"There shouldn’t be an element for each face. All elements can be expressed at each face. This could mean that each face has an elemental ship design\")",
+  "positions/boat-grid-grows-both-ways: Overruled (steer: \"Since we aren’t doing the boat metaphor anymore this is moot\")",
+  "questions/boat-grid-carry-tao: Living ship only",
+  "blockers/tap-the-vein--mvm206os: Tap the Vein, skipped 2 days running (Dealing with the fact this W.A.V.E. environment hasn’t matched the current version; do it now: \"Make a note to have the tap the vein timer not reset at midnight\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
