@@ -90,7 +90,6 @@ bars-engine #399 stays a draft until this lands; then close it in favor of the n
 
 - 2026-10-21, from Ari's playtest of the Between (pass `between-ari1`, `council/passes/6FACE_PASS_between-ari1_2026-10-21.md`): Ari asked for a private space for spirits "like the barn in Stardew valley", loved "the gummy ship with a farm inside of it", and resonated with worlds rendered procedurally only as far as the player can see or travel. Stored here (`ba-barn-in-ship`, `ba-worlds-stored`): the barn lives inside each person's ship; the farm grows what spirits leave, with no yields or counts; procedural worlds belong to the ship's world after Chapter 1 and the engine question. Nothing built before his look at the dock.
 
-<<<<<<< ours
 ## 2026-10-24: the dock is scrapped; art direction round (thread "Redo the ship dock art direction")
 
 - His interview, round 1 (2026-10-24 01:56 UTC), recorded as rulings:
@@ -124,7 +123,7 @@ bars-engine #399 stays a draft until this lands; then close it in favor of the n
   - References: "Will wights cradle cloud ships. The tardis, the south meditation ship from Star Wars expanded universe.
     Zonoma Sekot and the ship relationships between characters in Karen Lords best of all possible worlds" (plus No
     Man's Sky and the Kingdom Hearts gummy ship from round 1).
-=======
+
 ## 2026-10-24: living ship build, part 1 (Still B) done
 
 - bars-engine #432 (draft, branch `claude/project-thread-qi3hnv`): Still B as the new `/calrunia/arrive`, three.js 0.160.
@@ -146,4 +145,3 @@ the fox painted as a spirit (not the washed house sprite), the player standing s
 Nothing counted on screen (sd-depth-rule). CCGS art-director still check before each push. Hosted preview link with
 `?beat=` skip-ahead to the reveal. Read docs/3d-math.md only if 3D is touched. After it lands, the owning thread also
 watches bars-engine #432 to merge (it merges by itself when checks pass) and then closes #399.
->>>>>>> theirs
