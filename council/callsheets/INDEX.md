@@ -5,7 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
-- [studio-lot](studio-lot.md), 2026-10-24: tall ship round B done (still v2 + steer design https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb, ts-* positions); look step ts-ship-look-1 waits on him, then brief "Tall ship, round C" on bars-engine #429.
+- [studio-lot](studio-lot.md), 2026-10-24: tall ship rejected; living boat still https://claude.ai/artifact/UAcTBNbgfFT7XYNXRQCPM7 (keep the flat deck, crew traffic, stage pennants, steer card), lb-* positions; look step lb-boat-look-1 waits on him, then brief "Living boat build" on bars-engine #429.
 - [work-dbt](work-dbt.md), 2026-10-23: his five answers recorded (work-dbt 2); clinician step on the board; next pass work-dbt 3 on the face table and harm gate with the wise-mind steer, then update bars-engine #427.
 - [story-pipeline](story-pipeline.md), 2026-10-21: the study behind `ttv-cmvicm0aj` is written (`council/story/PIPELINE.md`, twelve findings with sources) and the pipeline has a check (`council/story/check.py`, `tests/test_story_pack.py`); five tools added to the toolbox, inkjs still the only runtime; the first pack is written (`council/story/packs/calrunia/chapter1/beats.yaml`, 8 beats, 25 assets, check passes) and cites sprout's own beat table (PR #66) for its gates; next the Challenger's reading, then the Regent's asset pass.
 - [cave-controls](cave-controls.md), 2026-10-21: phone camera and touch research done (https://claude.ai/artifact/BwBweZR865zrKckj9tCVMY); five `ctl-*` positions (split thumbs, tap rule, generous taps, gentle camera, still mode); next a fresh Opus bars-engine thread builds controls round 1 with a preview link.
