@@ -11,7 +11,7 @@ his look-1 note (deprecate and compost rounds) belongs to the board read, not th
 every wall is an older skin, rooms mirror round the Hearth, one level walk through a gate in every wall, a stair only
 down to the stores, older walls worn. The Shaman seed is the heart of every face ship. Art director check (Sonnet,
 CCGS role) first pass fix first; fixes applied (wall thickness and age, stair route, loom need, Orrery pod gates).
-Refs `flow-ships/refs-r5/` (worker run; may be missing). Page https://claude.ai/artifact/Pj8GSnHsg9L4DN653AUtfV.
+Refs `flow-ships/refs-r5/` (6 of 10: nautilus, ammonite, cell, pomegranate, Guggenheim ramp, matryoshka; Commons rate-limited the rest, README lists next queries). Page https://claude.ai/artifact/Pj8GSnHsg9L4DN653AUtfV.
 Positions on main (rows `rows/nested-ships-2026-10-24.json`): `boat-grid-nested-skins`, `boat-grid-seed-heart`. Look
 step `boat-grid-look-5` (list `studio-lot-boat`, n 10) on both stores. Not checked: motion, phone size, a playable build.
 #429 untouched (head c315bb5).
