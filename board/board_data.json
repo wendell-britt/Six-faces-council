@@ -34371,6 +34371,13 @@
      "sage"
     ],
     "pass": "tao-ships-2026-10-24"
+   },
+   "ttv-day-rolls-late": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:38:18.412Z",
+    "record": "council/ledger/2026-10-24-pull-073818.json (six-faces-council)"
    }
   },
   "questions": {
@@ -37415,6 +37422,13 @@
      "sage"
     ],
     "pass": "tao-ships-2026-10-24"
+   },
+   "lt-mirror-look-03b": {
+    "decision": "3c",
+    "label": "3c",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:38:11.027Z",
+    "record": "council/ledger/2026-10-24-pull-073818.json (six-faces-council)"
    }
   },
   "causes": {
