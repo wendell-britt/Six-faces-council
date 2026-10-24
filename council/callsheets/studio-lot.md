@@ -1,7 +1,23 @@
 # Studio lot (the studio game)
 
 ## Next
-Rebuilt 2026-10-24 (thread "Rebuild the studio boat", bars-engine #429 commit 4a0e14f): `/board/studio` is now the
+Round 2 done 2026-10-24 (thread "Polish the studio boat, round 2", bars-engine #429 commit 10fd9e3). Look step
+`ty-boat-look-1` (list `studio-lot-boat`) is on both boards, opening the branch preview
+https://bars-engine-git-claude-projec-a0a10d-wendells-projects-9c1b16dc.vercel.app/board/studio?intro=1 . Built: waiting
+spirits from the spirit generator's pixel renders (`public/studio/sprites/spirits.png`, 18 bases x 5 elements, one stable
+creature per strand), crew coats recoloured from the walk frames and walking only while they move (hammer at scaffolds),
+tall islands with a lighthouse, the ship's log on a lectern by the wheelhouse (`worldOf().log`, tested), a quilted sleeper
+in a wider hammock (MAST_W 300), three bells instead of 17, hull sunk in the water, additive glows, letters over a dim
+scrim. CCGS art-director review of round 1: `/mnt/project-files/studio-tycoon/rebuild-1/art-director-review.md`; stills of
+round 2: `/mnt/project-files/studio-tycoon/rebuild-2/`. Not checked: a real phone; fonts (stills were taken without
+Google Fonts); the crew still stand in one row in front of the working houses when idle.
+
+Brief: Boat round 3 (fresh Opus thread, owns #429, waits on his note on `ty-boat-look-1` per hx-looks-gate). Take his
+note first. Then the review's open items: break the two storeys of wall-to-wall houses into fewer, gapped houses
+(review fix 1, a layout change in `world.ts`), a night multiply layer, letter text in plain words instead of the
+callsheet line, and spread idle crew. Then the move: a crew card dragged onto a waiting spirit sends its brief.
+
+Earlier: Rebuilt 2026-10-24 (thread "Rebuild the studio boat", bars-engine #429 commit 4a0e14f): `/board/studio` is now the
 Lantern deck in Phaser 3 from still A. Code: `src/lib/studio/world.ts` (strand to house look and place, tested in
 `world.test.ts`), `src/lib/studio/page.ts` (shell, Phaser 3.80.1 from jsDelivr), `public/studio/boat.js` (the game),
 `public/studio/sprites/` (from mood-stills/sprites). 46 strands as houses on two rows (deck and gallery, ladders):
