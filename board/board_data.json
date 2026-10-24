@@ -20213,7 +20213,7 @@
    ],
    "pass": "between-lighting",
    "q": "Which mirror light: 3a, 3b or 3c?",
-   "why_you": "Your note on round 2: \"Split the difference the lighting is now too harsh and uniform\". Round 3 keeps round 2's soft light and brings back a lit side and a shaded side, in three steps: 3a closest to round 2, 3c closest to round 1. 3b stands unless you pick another: it is the one with about a fifth of you in shadow and both sides readable, but its edges are about as sharp as round 1's. Look at the page at https://claude.ai/artifact/K1fhE43L4or9JStRveUUgg (rounds 1 and 2 beside the three), then pick. The standing idle is being built alongside and does not wait on this.",
+   "why_you": "Your note on round 2: \"Split the difference the lighting is now too harsh and uniform\". Round 3 keeps round 2's soft light and brings back a lit side and a shaded side, in three steps: 3a closest to round 2, 3c closest to round 1. 3b stands unless you pick another: it is the one with about a fifth of you in shadow and both sides readable, but its edges are about as sharp as round 1's. Look at the page at https://claude.ai/artifact/K1fhE43L4or9JStRveUUgg (rounds 1 and 2 beside the three), then pick. Try it on a hosted preview, on your phone if you can: https://bars-engine-kxzjuklx1-wendells-projects-9c1b16dc.vercel.app/ontology-game/between?mirror=1 (opens at the mirror, bars-engine #433). The build already has 3b's light and the standing idle in it. Please check phone lag: in software the mirror frame time went from 267 to 333 ms with the extra light, and a real phone is the test that matters. If it lags, say so in your note.",
    "not_before": "The round 3 stills are on the page.",
    "options": [
     {
