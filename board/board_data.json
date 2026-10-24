@@ -20250,6 +20250,63 @@
    ]
   },
   {
+   "id": "boat-grid-carry-tao",
+   "faces": [
+    "shaman",
+    "regent",
+    "sage"
+   ],
+   "pass": "tao-ships-2026-10-24",
+   "q": "Should the Taoist-in-space look carry over to the living ship and Calrunia, or stay with the studio's face ships?",
+   "why_you": "The studio's face ships now pivot to Taoist cultivation in space with five elements. The living ship (the Chapter 1 reveal and the world inside at /calrunia/arrive, waiting on your look at sd-ship-look-1) and Calrunia were drawn before this pivot, in their own style. The record does not say whether one aesthetic should run through all of them, and a change there reaches the Chapter 1 demo, so it is your call. Nothing there changes until you answer.",
+   "not_before": "Raised by face ships round 3, 2026-10-24.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Carry it to both (recommended)",
+     "c": "After your look at sd-ship-look-1, the next art round on the living ship and Calrunia restyles them as Taoist space, one design language from Chapter 1 to the studio, with each element setting as a place."
+    },
+    {
+     "v": "B",
+     "label": "B. Living ship only",
+     "c": "The living ship takes the new look at its next art round; Calrunia's places keep their own styles."
+    },
+    {
+     "v": "C",
+     "label": "C. Keep it to the studio ships",
+     "c": "The living ship and Calrunia stay as they are; only the studio's face ships use the Taoist space look."
+    }
+   ]
+  },
+  {
+   "id": "robe-slit-look-01",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "robe-slits-2026-10-24",
+   "q": "Is this the way to dress the robe: trousers under it, a lining inside it, and a hem that follows the legs?",
+   "why_you": "Your note: legs pop through the robe and the slit shows empty space. Both come from one cheat (the robe recorded over the walk only, legs hidden by height). The page shows a before/after still on our own robe and how Genshin, FFXIV, Ghost of Tsushima and Zelda dress robes with slits: https://claude.ai/artifact/5PQum4RD9zK2rsmQZJ3EKe . Your yes starts the build in the Between mirror; the same fix then carries to the character creator's robe.",
+   "not_before": "Raised by the robe slits art direction round, 2026-10-24.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "A. Yes, build it (recommended)",
+     "c": "A technical-artist build in the Between mirror (stacked on the room kit): inner trousers, lined robe, leg-driven panels and a probe that fails on any leg through. Then the same fix on the creator robe."
+    },
+    {
+     "v": "note",
+     "label": "B. Yes, with a note",
+     "c": "The build starts and your note (colours, trouser cut, slit height) goes into its keep and fix list."
+    },
+    {
+     "v": "not-yet",
+     "label": "C. Not yet",
+     "c": "Nothing is built. Your note starts a second still round first."
+    }
+   ]
+  },
+  {
    "id": "lt-mirror-look-03b",
    "faces": [
     "regent",
@@ -20314,63 +20371,6 @@
     {
      "title": "Try the build on your phone, opens at the mirror",
      "href": "https://bars-engine-kxzjuklx1-wendells-projects-9c1b16dc.vercel.app/ontology-game/between?mirror=1"
-    }
-   ]
-  },
-  {
-   "id": "boat-grid-carry-tao",
-   "faces": [
-    "shaman",
-    "regent",
-    "sage"
-   ],
-   "pass": "tao-ships-2026-10-24",
-   "q": "Should the Taoist-in-space look carry over to the living ship and Calrunia, or stay with the studio's face ships?",
-   "why_you": "The studio's face ships now pivot to Taoist cultivation in space with five elements. The living ship (the Chapter 1 reveal and the world inside at /calrunia/arrive, waiting on your look at sd-ship-look-1) and Calrunia were drawn before this pivot, in their own style. The record does not say whether one aesthetic should run through all of them, and a change there reaches the Chapter 1 demo, so it is your call. Nothing there changes until you answer.",
-   "not_before": "Raised by face ships round 3, 2026-10-24.",
-   "options": [
-    {
-     "v": "A",
-     "label": "A. Carry it to both (recommended)",
-     "c": "After your look at sd-ship-look-1, the next art round on the living ship and Calrunia restyles them as Taoist space, one design language from Chapter 1 to the studio, with each element setting as a place."
-    },
-    {
-     "v": "B",
-     "label": "B. Living ship only",
-     "c": "The living ship takes the new look at its next art round; Calrunia's places keep their own styles."
-    },
-    {
-     "v": "C",
-     "label": "C. Keep it to the studio ships",
-     "c": "The living ship and Calrunia stay as they are; only the studio's face ships use the Taoist space look."
-    }
-   ]
-  },
-  {
-   "id": "robe-slit-look-01",
-   "faces": [
-    "architect",
-    "shaman"
-   ],
-   "pass": "robe-slits-2026-10-24",
-   "q": "Is this the way to dress the robe: trousers under it, a lining inside it, and a hem that follows the legs?",
-   "why_you": "Your note: legs pop through the robe and the slit shows empty space. Both come from one cheat (the robe recorded over the walk only, legs hidden by height). The page shows a before/after still on our own robe and how Genshin, FFXIV, Ghost of Tsushima and Zelda dress robes with slits: https://claude.ai/artifact/5PQum4RD9zK2rsmQZJ3EKe . Your yes starts the build in the Between mirror; the same fix then carries to the character creator's robe.",
-   "not_before": "Raised by the robe slits art direction round, 2026-10-24.",
-   "options": [
-    {
-     "v": "yes",
-     "label": "A. Yes, build it (recommended)",
-     "c": "A technical-artist build in the Between mirror (stacked on the room kit): inner trousers, lined robe, leg-driven panels and a probe that fails on any leg through. Then the same fix on the creator robe."
-    },
-    {
-     "v": "note",
-     "label": "B. Yes, with a note",
-     "c": "The build starts and your note (colours, trouser cut, slit height) goes into its keep and fix list."
-    },
-    {
-     "v": "not-yet",
-     "label": "C. Not yet",
-     "c": "Nothing is built. Your note starts a second still round first."
     }
    ]
   }
@@ -34450,6 +34450,13 @@
      "sage"
     ],
     "pass": "tao-ships-2026-10-24"
+   },
+   "ttv-day-rolls-late": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:38:18.412Z",
+    "record": "council/ledger/2026-10-24-pull-073818.json (six-faces-council)"
    }
   },
   "questions": {
@@ -37494,6 +37501,13 @@
      "sage"
     ],
     "pass": "tao-ships-2026-10-24"
+   },
+   "lt-mirror-look-03b": {
+    "decision": "3c",
+    "label": "3c",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:38:11.027Z",
+    "record": "council/ledger/2026-10-24-pull-073818.json (six-faces-council)"
    }
   },
   "causes": {
