@@ -20139,6 +20139,39 @@
      "c": "Nothing merges. Your note starts a second round on whichever part missed."
     }
    ]
+  },
+  {
+   "id": "lt-mirror-look-03",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "between-lighting",
+   "q": "Which mirror light: 3a, 3b or 3c?",
+   "why_you": "Your note on round 2: \"Split the difference the lighting is now too harsh and uniform\". Round 3 keeps round 2's soft light and brings back a lit side and a shaded side, in three steps: 3a closest to round 2, 3c closest to round 1. 3b stands unless you pick another: it is the one with about a fifth of you in shadow and both sides readable, but its edges are about as sharp as round 1's. Look at the page at https://claude.ai/artifact/K1fhE43L4or9JStRveUUgg (rounds 1 and 2 beside the three), then pick. The standing idle is being built alongside and does not wait on this.",
+   "not_before": "The round 3 stills are on the page.",
+   "options": [
+    {
+     "v": "3a",
+     "label": "A. 3a, a step softer",
+     "c": "Builds the mirror light at 3a, with the standing idle, in bars-engine."
+    },
+    {
+     "v": "3b",
+     "label": "B. 3b, the middle",
+     "c": "Builds the mirror light at 3b, with the standing idle, in bars-engine."
+    },
+    {
+     "v": "3c",
+     "label": "C. 3c, more direction",
+     "c": "Builds the mirror light at 3c, with the standing idle, in bars-engine."
+    },
+    {
+     "v": "not-yet",
+     "label": "D. None yet (note)",
+     "c": "Leave a note and a fourth lighting round runs before the light is built."
+    }
+   ]
   }
  ],
  "causes": [
