@@ -32,6 +32,10 @@ def option_problems(data):
                 out.append(f"{q['id']}: option {o.get('label')!r} needs a `v` and a `c`")
         if len({o.get("v") for o in opts}) != len(opts):
             out.append(f"{q['id']}: option `v` values repeat")
+        for e in q.get("examples", []):
+            src, href = e.get("src", ""), e.get("href", "")
+            if not (src.startswith("https://") or src.startswith("data:image/") or href.startswith("https://")):
+                out.append(f"{q['id']}: example {e.get('title')!r} needs an https or data:image `src`, or an https `href`")
     return out
 
 

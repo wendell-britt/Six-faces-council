@@ -138,3 +138,11 @@ steer on `uc-pattern-returns`, a returning word gets a new pitch and the old one
 `COUNCIL_MENU_TOKEN` (401 on 10-21). TRIGGER: the token answers 200 and the bars-engine pull request has merged ->
 create a weekly routine (Mondays, one Sonnet thread per docs/unchosen-read.md, no chat line beyond the count), and run
 the first read. His look at the sample preview may steer the pitch card.
+
+## Tap the Vein day rolls at 4am (note, 2026-10-24)
+
+His note on the Tap the Vein blocker (blockers/tap-the-vein--mvm206os): "Make a note to have the tap the vein timer not reset at midnight." Position `ttv-day-rolls-late` stands: the day rolls at 4am local. Not built: `ttvToday` in board/template.html (a local `toLocaleDateString('en-CA')`) and the `date` bars-engine's `/api/tap-the-vein/status` and the seal use must both take a "day" that is the local date minus 4 hours, and the skip run (`ttvSkipRun`) follows from it. Do it as one pair of pull requests with a test in each repo; a Sonnet thread can take it.
+
+## Board look examples (2026-10-24)
+
+A question's `examples` list ({title, src, href, note}; src is https or data:image) shows as pictures and links on its row; `build_board.py` warns on a bad one. `lt-mirror-look-03` was answered "None yet" for lack of pictures, so it is asked again as `lt-mirror-look-03b` with the five mirror stills and both links. TRIGGER: his pick on `lt-mirror-look-03b` (callsheet relationship-creature.md, line "Next. TRIGGER" now reads 03b). Rule for any look question from now on: put the thing to judge in `examples`.
