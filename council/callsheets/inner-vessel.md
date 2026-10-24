@@ -67,3 +67,27 @@ ontology: default; touches: BAR, MovementFinding, CompostingDisposition
    2026-11-08 (five newcomers). Details at the end of the pass.
 
 - 2026-10-21, from Ari's playtest of the Between (pass `between-ari1`, `council/passes/6FACE_PASS_between-ari1_2026-10-21.md`): Ari asked for a private space for spirits "like the barn in Stardew valley", loved "the gummy ship with a farm inside of it", and resonated with worlds rendered procedurally only as far as the player can see or travel. Stored here (`ba-barn-in-ship`, `ba-worlds-stored`): the barn lives inside each person's ship; the farm grows what spirits leave, with no yields or counts; procedural worlds belong to the ship's world after Chapter 1 and the engine question. Nothing built before his look at the dock.
+
+## 2026-10-24: the dock is scrapped; art direction round (thread "Redo the ship dock art direction")
+
+- His interview, round 1 (2026-10-24 01:56 UTC), recorded as rulings:
+  - Look: "Toy pirate ship didn't match the vibes of the cave of lessons or the Between." The Kenney Pirate Kit dock goes.
+  - Cabin: "The grid and gauge panel I didn't enjoy ... It was quite sophomoric and not particularly context aware."
+    "We need a design language that consistently creates immersive experiences."
+  - Stepping aboard: "either needs to be an inviting image like the current art direction for the council board as spirit
+    boat OR it needs to be an explorable space like the cave of lessons. It need to bring people deeply and emotionally
+    into the world and we keep making flat dashboard surfaces."
+  - Principle he named: depth mechanics as part of our UI and game design principles. "The shadow of the diplomat is
+    flatland ... it's also boomeritis and it's the shadow of integral green. Our job is to bring depth back into green.
+    Depth and altitude as a way to pull them out of their flattened world via play."
+  - Ship: a sky ship or a space ship. The references were No Man's Sky and the Kingdom Hearts gummy ship; "we landed on
+    pirate ship which told me we didn't pull any reference images from this game inspirations".
+  - View: walking around it in third person matters for learning 3D, and the story must play in both 2D and 3D, the way
+    the asset pipeline works now.
+- Next in this thread: interview round 2 (arrival from Chapter 1, the spirit barn, spirits aboard), then reference board
+  with real images from No Man's Sky and the gummy ship, first 60 seconds, 1-2 mood stills. Code waits on his yes.
+- Ontology check (2026-10-24): no rule for immersion, explorable space or depth; faces.yaml has no shadow fields. Nearest
+  hooks: QUICKSTART principle 9 ("Mystery rewards inquiry") and the unpromoted source line where he chose "their imagery
+  becoming explorable world material" (aesthetic-source-research-round-1.md:511-515). The dock pass loaded the default
+  ontology and used neither for immersion. Verdict: not in the ontology. Proposed with the stills: a depth principle
+  (every surface is an inviting image or an explorable space; depth and altitude as play against flatland).
