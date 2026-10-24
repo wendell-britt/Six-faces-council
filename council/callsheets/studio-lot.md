@@ -1,6 +1,36 @@
 # Studio lot (the studio game)
 
 ## Next
+Living boat 2026-10-24 (thread "Bring back the living boat"). His note on `ts-ship-look-1` rejected the tall ship: "the
+tall ship is not an improvement from the platform style ... Fully the wrong direction" and "The biggest thing is that
+agents can be seen traveling between rooms anymore that was the most compelling part of the first design. Being able
+to see the work happening seemingly in real time and zooming into what was pulling attention based on its movement and
+needs". The brief "Tall ship, round C" below is retired. Made: page https://claude.ai/artifact/UAcTBNbgfFT7XYNXRQCPM7
+(source and still in `/mnt/project-files/studio-tycoon/living-boat/`: a mock drawn over a screenshot of the c315bb5
+preview, `still-scene.html` rebuilds it). Positions `lb-keep-the-deck` (replaces `ts-stage-rooms`, `ts-walk-bow-ward`,
+`ts-depts-below`), `lb-stage-pennants`, `lb-depth-in-place` (rows `council/callsheets/rows/living-boat-2026-10-24.json`).
+Look step `lb-boat-look-1` (list `studio-lot-boat`, n 4). The `bw-*` rulings and `ts-tap-opens-card`, `ts-steer-is-save`,
+`ts-fanout`, `ts-device-tiers` still stand.
+
+Lesson (rule for every rework of something he has looked at): before changing a layout, write a keep list from his
+looks (what he called good, in his words) into the brief, and the art-director check lays the new still beside the old
+one and asks "does the keep list survive?", not only "is it readable?". The tall ship rounds skipped references
+(no cutaway or crowd-sim images were pulled), never ran the brief through brief-master, and judged the still on labels
+and sizes. The cross-section walled seven rooms apart, so crew could not travel; motion, the thing that told him work
+was happening, disappeared. Depth is fine where movement stays visible (a hall opening in place), not as sealed rooms.
+
+Brief: Living boat build (fresh Opus thread after his yes on `lb-boat-look-1`; owns bars-engine #429, branch
+`claude/project-thread-227mft`, head c315bb5). Keep list: one deck, crew walking hall to hall, eye pulled by motion and
+need. (1) Crew traffic: each running strand (callsheet touched in the last day or a loop round open) gets a crew member
+who walks between its hall and the next with a crate showing its stage number; idle crew rest at doors. (2) Seven stage
+pennants on the light string, stern to bow, current stage lit (a `STAGES` table in `world.ts`, stage from loop or
+callsheet, fallback none). (3) Camera drifts toward the nearest bell or moving crate when the player is idle. (4) Tap a
+bubble or spirit: the steer card (round 4 letters content: wax seals, Not tonight, Say something else, Tap the vein)
+POSTs the board's own save via src/lib/board/shim.ts; Tap the vein is a boat move per his bw overrule. (5) Open hall
+fades its front wall in place; traffic keeps passing. Prove with a still from the running build beside the mock, then
+a preview link at `?strand=<one with a letter>` as look step `lb-boat-look-2`.
+
+Tall ship (retired 2026-10-24 by his note above):
 Tall ship, round B done 2026-10-24 (thread "Tall ship, round B"). Still v2 fixed per the review (one hull with depth,
 one label per room, big tailed bubbles, one spirit-generator spirit per room at 108px, departments as lower-deck
 portholes): `/mnt/project-files/studio-tycoon/tall-ship/still-tall-ship-v2.png`, source `still-scene-v2.html` (reads
