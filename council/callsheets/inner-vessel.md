@@ -145,3 +145,21 @@ the fox painted as a spirit (not the washed house sprite), the player standing s
 Nothing counted on screen (sd-depth-rule). CCGS art-director still check before each push. Hosted preview link with
 `?beat=` skip-ahead to the reveal. Read docs/3d-math.md only if 3D is touched. After it lands, the owning thread also
 watches bars-engine #432 to merge (it merges by itself when checks pass) and then closes #399.
+
+## 2026-10-24: Still A reveal built (sprout #73)
+
+- sprout #73 (draft, branch `claude/project-thread-xkvw0j`): Chapter 1 now ends on beat A9 `ch1.a9.the-ship`. Still A
+  is a painted 2D cutscene: the player stands still on the stone, looking up; a fox made of light walks out onto the air
+  leaving lights; three taps follow it to the round door, and the door opens onto `/calrunia/arrive#p=...` with the
+  passport. The backdrop is painted by `tools/build-ship-reveal.mjs` (wide, plus a tall version for a phone) from
+  `REVEAL_LAYOUT` in the page. The art director's gaps are fixed: the fox is painted as a spirit, the player stands
+  still, the whorl is an uneven nautilus. A8's "ship at a dock" line is gone. `test-ch1-page` taps through to the
+  arrival with a passport.
+- Previews: reveal https://sprout-6rbb4w7wy-wendells-projects-9c1b16dc.vercel.app/ch1/?beat=ch1.a9.the-ship&arrive=https://bars-engine-git-claude-projec-dae56e-wendells-projects-9c1b16dc.vercel.app
+  and inside https://bars-engine-git-claude-projec-dae56e-wendells-projects-9c1b16dc.vercel.app/calrunia/arrive?demo=1.
+- bars-engine #432 checks are green. Council #381 has no checks. Both are still drafts and wait on his look.
+- Board: question sd-ship-look-1 (rows file council/callsheets/rows/ship-reveal-2026-10-24.json).
+- Not checked: frame rate on a real iPhone.
+- TRIGGER: his answer on sd-ship-look-1. A or B: a Sonnet thread marks sprout #73, bars-engine #432 and council #381
+  ready, lets them merge, then closes bars-engine #399 as replaced by #432. C: a fresh Opus thread starts the second
+  round from his note. After the merges, the next art round is Still B's gaps (ring terrain, the floor light, the bud).
