@@ -13103,6 +13103,29 @@
    "auto": false,
    "pos": "A verb in the copy is a promise about the body: if a button says sit, walk, light or give, the figure does it in the world first, and any choice comes after, in the scene. Every pass or brief names the embodied verb for each interaction it specifies, and a build that carries an old interaction into a new space puts it through the depth test and art direction like a new one.",
    "why": "Your note of 2026-10-24: Sit at the hearth opened a card while the figure stood. Pass crafting-charge1 specified the hearth as data with no verb, #380 filled the gap with the default card and sheet, and the room kit carried it over unexamined. Trace: council/callsheets/relationship-creature.md, 'Sit at the hearth'."
+  },
+  {
+   "id": "boat-grid-altitude-rooms",
+   "faces": [
+    "architect",
+    "sage",
+    "shaman"
+   ],
+   "pass": "altitude-r8-2026-10-24",
+   "auto": true,
+   "pos": "The ship view returns to one fixed Monument Valley style axonometric: the ship cut open, rooms with no front wall side by side on lit walkways, tiny crew. Each room has its own altitude, earned only by skill in its own minigame, so rooms level apart. The rungs are the faces' six altitudes in order (magenta, red, amber, orange, green, teal). A room never gains a floor: it gains ground, more floor running back into depth, more stations and leveled crew (apprentice, second hand, journeyman, master with a lantern lighting the whole floor, then crew who help next door, then a teacher). Altitude reads on the room's lintel, wall tops and the crew's sashes, never a number or bar. Amber shows only as a dyed sash and lintel, never a ring, and rung 4 orange is #f08a3c, away from alarm amber.",
+   "why": "Your note on boat-grid-look-7 (2026-10-24): back to the Monument Valley pseudo-3D space, rooms develop through altitude separately by minigame skill, and your lean toward leveled-up actors and roles covering more ground over literal floors. Page https://claude.ai/artifact/2CeShQvWRkCicpXWtxeqHL."
+  },
+  {
+   "id": "boat-grid-hull-six-of-eight",
+   "faces": [
+    "regent",
+    "diplomat"
+   ],
+   "pass": "altitude-r8-2026-10-24",
+   "auto": true,
+   "pos": "\"Collectively\" is read as across the fleet's eight rooms: when six of the eight stand at a rung, the next hull class opens for every face ship and the fleet grows together. The larger hull waits as a faint skin one out (nested skins), fills in as rooms rise, and the old hull stays inside as walls. Flip it to per ship if that is what you meant.",
+   "why": "Your note on boat-grid-look-7: enough skill development collectively at an altitude unlocks the larger ship type. Round 7 put the pipeline's eight rooms on six ships, so five ships hold one room and a per-ship count would be trivial for them."
   }
  ],
  "questions": [
