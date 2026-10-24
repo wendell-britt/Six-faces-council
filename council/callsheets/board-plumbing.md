@@ -153,3 +153,16 @@ like this one, and all three are open now:
 Left, unchanged: the artifact import (`bi-import-key`), board-home step 5 (`COUNCIL_MENU_TOKEN`), and step 6. A
 session holding `BOARD_PULL_TOKEN` reads a save without waiting for the Action; `/board/council` answered 307 to
 `/login` without his cookie, so his steps and contacts stay out of reach from here.
+
+Steer fan-out (ts-fanout), 2026-10-24, thread "Send steers to every surface", branch claude/project-thread-mv4fwh:
+`board/fire_send.py` + a board-pull step fire the Board Send routine after a recorded save; `council/tools/steers.py`
++ `council/hooks/council-sync.sh` list new steers at every session start (bars-engine gets it through the hook's own
+sync; game-masters-guide has no hook). Tests `tests/test_fanout.py`; docs/pickup.md "Fan-out".
+Brief: Fan-out, finish (Sonnet thread, owns that PR). Three pieces wait on his "go ahead" in the thread:
+(1) `.claude/settings.json` hooks gain `"SessionStart": [{"hooks": [{"type": "command", "command": "bash
+\"$CLAUDE_PROJECT_DIR/council/hooks/council-sync.sh\""}]}]` (auto mode blocked the settings edit);
+(2) the Board Send routine prompt gains: "A routine-fire-payload that starts 'Board Send at ... (board-pull, no
+button)' names saves already on main: brief the board read to act on those rows (route each steer to the thread that
+owns its strand, republish the board) even if pull.py records nothing.";
+(3) a board step for him: claude.ai/code/routines, open the Board Send task, Edit, Trigger +, API, Generate token; add
+it as repo secret SEND_ROUTINE_TOKEN in Six-faces-council. Then run board-pull by hand and read "Board Send fired".

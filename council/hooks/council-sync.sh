@@ -36,6 +36,20 @@ pipeline_rule="Standing rule: a new feature starts as a spec kit in .specify/spe
 # changes ride in the same commit as their ledger record, so a rebase resolves a ruling atomically.
 discipline_rule="Standing rule: git fetch before you record; push immediately after; on rejection, fetch, rebase, row-union, rebuild. Rulings are append-only ledger files and board_data.json changes ride in the same commit as their ledger record."
 lessons() { grep -c '^      - date:' council/faces.yaml 2>/dev/null || echo 0; }
+# Steers recorded on main since this machine last looked (ts-fanout, Wendell 2026-10-24): a steer given on the board or
+# the tall ship from any device reaches the next coding session here. $1 is where main's board_data.json is read from.
+steers() {
+  [ -f council/tools/steers.py ] || return 0
+  local data; data="$(mktemp)"
+  if [ "$1" = home ]; then
+    timeout 8 git fetch -q origin main 2>/dev/null
+    git show origin/main:board/board_data.json > "$data" 2>/dev/null || cp board/board_data.json "$data" 2>/dev/null
+  else
+    curl -fsS --max-time 8 "$1/board/board_data.json" -o "$data" 2>/dev/null
+  fi
+  [ -s "$data" ] && python3 council/tools/steers.py --data "$data" 2>/dev/null
+  rm -f "$data"
+}
 
 # Merge drivers named in .gitattributes: the board's rows merge by id, and the built page is rebuilt.
 if [ -f council/tools/board_merge.py ]; then
@@ -49,12 +63,13 @@ if [ "${origin,,}" = "${home_repo,,}" ] && [ -z "${COUNCIL_SOURCE_BASE:-}" ]; th
   echo "$pipeline_rule"
   echo "$discipline_rule"
 echo "$pull_rule"
+  steers home
   exit 0
 fi
 
 base="${COUNCIL_SOURCE_BASE:-https://raw.githubusercontent.com/$home_repo/$ref}"
 label="$home_repo@$ref"; [ -n "${COUNCIL_SOURCE_BASE:-}" ] && label="$COUNCIL_SOURCE_BASE"
-files="council/faces.yaml council/pipeline.yaml council/spec-kit/spec.md council/spec-kit/plan.md council/spec-kit/tasks.md .claude/skills/six-faces/SKILL.md council/portable/six-faces/SKILL.md council/tools/voice_lint.py council/hooks/council-sync.sh council/daemons/daemons.yaml council/daemons/questions.yaml council/daemons/check_report.py council/daemons/save_report.py council/iching/hexagrams.yaml council/iching/cast.py council/strands.py council/census.py .claude/agents/daemon-protector.md .claude/agents/daemon-controller.md .claude/agents/daemon-skeptic.md .claude/agents/daemon-fixer.md .claude/agents/daemon-victim.md .claude/agents/daemon-damaged-self.md .claude/agents/daemon-emotional-body.md .claude/agents/daemon-player.md"
+files="council/faces.yaml council/pipeline.yaml council/spec-kit/spec.md council/spec-kit/plan.md council/spec-kit/tasks.md .claude/skills/six-faces/SKILL.md council/portable/six-faces/SKILL.md council/tools/voice_lint.py council/hooks/council-sync.sh council/daemons/daemons.yaml council/daemons/questions.yaml council/daemons/check_report.py council/daemons/save_report.py council/iching/hexagrams.yaml council/iching/cast.py council/strands.py council/census.py council/tools/steers.py .claude/agents/daemon-protector.md .claude/agents/daemon-controller.md .claude/agents/daemon-skeptic.md .claude/agents/daemon-fixer.md .claude/agents/daemon-victim.md .claude/agents/daemon-damaged-self.md .claude/agents/daemon-emotional-body.md .claude/agents/daemon-player.md"
 changed=""; failed=""
 tmp="$(mktemp -d)"; trap 'rm -rf "$tmp"' EXIT
 for f in $files; do
@@ -83,4 +98,5 @@ echo "$rule"
 echo "$pipeline_rule"
 echo "$discipline_rule"
 echo "$pull_rule"
+steers "$base"
 exit 0

@@ -135,3 +135,16 @@ The routine prompt that carries this, set by the coordinator (only the conversat
     any repo or board tool. Call mcp__hearthbot__post_message once with one line: "Board Send at <time UTC>:
     <the rows named in the second message, or 'rows in pickup/last'>. Starting a board read." Then end your turn
     with no other message. Nothing is lost if this fails: the next council session's pull records the saves.
+
+## Fan-out: a save from any surface starts the board read (ts-fanout, 2026-10-24)
+
+A save from the artifact board, bars-engine `/board/council` or the tall ship reaches main through board-pull. The
+board-pull run then fires this routine itself (`board/fire_send.py`, through the routine's API trigger, repo secret
+`SEND_ROUTINE_TOKEN`), with a payload that starts "Board Send at <time> UTC (board-pull, no button)" and names the rows
+recorded. The coordinator starts one board read as for any Send. Those saves are already on main, so that board read
+acts on the rows the payload names (routes each steer, republishes the artifact board) even when its own pull.py run
+records nothing. Without the secret, board-pull warns and the board read waits for his Send, as before.
+
+Coding sessions see the steers too: `council/hooks/council-sync.sh` runs `council/tools/steers.py` at every session
+start in every repo that carries the council, and lists the steers recorded on main since that machine last looked (a
+cloud container shows the last three days). The home repo runs the hook from `.claude/settings.json` (SessionStart).
