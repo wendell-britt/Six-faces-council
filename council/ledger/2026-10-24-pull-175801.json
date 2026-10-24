@@ -1,0 +1,123 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T17:58:01.000Z",
+ "answers": {
+  "clothing-kit-look-01": {
+   "kind": "question",
+   "choice": "not-yet",
+   "savedAt": "2026-10-24T17:56:33.065Z",
+   "steer": "The pieces are correct but now we need to study how people make the seams not look so bad. This may be an issue with the skeleton but the shoulders just don’t feel natural to me and I can see pretty clearly where the seams\nAre going to make weird and boxy intersections. Also the pieces are already showing artifacts that we’ve been trying to remove from other steps "
+  },
+  "boat-grid-nested-skins": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:56:46.733Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-seed-heart": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:06.136Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ck-open-at-belt": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:13.238Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ga-method": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:20.977Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ga-index-not-copy": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:24.794Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ga-codex-brief": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:29.360Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ga-reshape-table": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:44.364Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ga-first-chapter1": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:50.415Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "ga-spar-waits-moves": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:57:55.382Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-flow-blockers": {
+   "kind": "position",
+   "savedAt": "2026-10-24T17:58:01.000Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "boat-grid-look-6",
+   "at": "2026-10-24T17:50:29.472Z",
+   "what": "ticked",
+   "do": "Look at round 6 of the ship art. Your note on round 5 asked to balance B's legibility with A's design language and to see where energy goes, where it is stuck, and how you steer it. This round started with research on FTL, Factorio, Oxygen Not Included, Spiritfarer and Overcooked, then a gameplay loop, then three stills: compartments behind doors with qi you can count, the Qi view overlay, and a jam cleared."
+  },
+  {
+   "id": "boat-grid-look-6",
+   "at": "2026-10-24T17:50:29.472Z",
+   "what": "note",
+   "note": "Very close. We need the parts of the ship readable and we need to think about how the ship expands as the pipeline adapts?  \n\nWhat is the outcome of a pipeline run at each level? If we stretch the FTL mechanics, what does en enemy ship mean and where is the ship racing to? How do we metabolize the blocker's that show up on a ship?\n\nIt seems\nEach of the ships would have to be able to be roomed into its own pipeline minigame tat metabolizes charge into overcoming the emergent blockers indigenous to that part of the pipeline",
+   "do": "Look at round 6 of the ship art. Your note on round 5 asked to balance B's legibility with A's design language and to see where energy goes, where it is stuck, and how you steer it. This round started with research on FTL, Factorio, Oxygen Not Included, Spiritfarer and Overcooked, then a gameplay loop, then three stills: compartments behind doors with qi you can count, the Qi view overlay, and a jam cleared."
+  },
+  {
+   "id": "wave-gas-look-01",
+   "at": "2026-10-24T17:53:33.549Z",
+   "what": "ticked",
+   "do": "Tap Welcome. When the door opens, watch what comes in, then work it a few steps. Then say yes, or what feels off."
+  },
+  {
+   "id": "wave-gas-look-01",
+   "at": "2026-10-24T17:53:33.549Z",
+   "what": "note",
+   "note": "Yes",
+   "do": "Tap Welcome. When the door opens, watch what comes in, then work it a few steps. Then say yes, or what feels off."
+  },
+  {
+   "id": "between-dais-freeze-look-02",
+   "at": "2026-10-24T17:55:02.721Z",
+   "what": "ticked",
+   "do": "Walk up onto the raised dais from the flagstones, from a couple of sides, and tap the cushions and the Between. If anything looks wrong, open More, tap Send a screenshot, add a few words and send it; that sends the picture, where you stood and any error the page caught. Then say yes, or what feels off."
+  },
+  {
+   "id": "between-dais-freeze-look-02",
+   "at": "2026-10-24T17:55:02.721Z",
+   "what": "note",
+   "note": "Yes",
+   "do": "Walk up onto the raised dais from the flagstones, from a couple of sides, and tap the cushions and the Between. If anything looks wrong, open More, tap Send a screenshot, add a few words and send it; that sends the picture, where you stood and any error the page caught. Then say yes, or what feels off."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "questions/clothing-kit-look-01: Not yet (note) (steer: \"The pieces are correct but now we need to study how people make the seams not look so bad. This may be an issue with the skeleton but the shoulders just don’t feel natural to me and I can see pretty clearly where the seams\nAre going to make weird and boxy intersections. Also the pieces are already showing artifacts that we’ve been trying to remove from other steps\")",
+  "steps/boat-grid-look-6: note \"Very close. We need the parts of the ship readable and we need to think about how the ship expands as the pipeline adapts?  \n\nWhat is the outcome of a pipeline run at each level? If we stretch the FTL mechanics, what does en enemy ship mean and where is the ship racing to? How do we metabolize the blocker's that show up on a ship?\n\nIt seems\nEach of the ships would have to be able to be roomed into its own pipeline minigame tat metabolizes charge into overcoming the emergent blockers indigenous to that part of the pipeline\"",
+  "steps/wave-gas-look-01: note \"Yes\"",
+  "steps/between-dais-freeze-look-02: note \"Yes\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
