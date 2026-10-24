@@ -2,6 +2,22 @@
 
 ## Next
 
+Waiting on his look at `boat-grid-look-8` (list `studio-lot-boat`, n 13; page https://claude.ai/artifact/2CeShQvWRkCicpXWtxeqHL).
+On his yes: "Altitude motion" (fresh Opus thread): a moving mock of one room deepening by one row after a clean minigame
+(crew walk in, the lintel colour turns), ported from `altitude-r8/altitude-r8.js`, then the hull filling in. On a note:
+round 9 from his note, keep list from his looks first.
+
+Face ships round 8, rooms grow upward, done 2026-10-24 (thread "Face ships round 8, rooms grow upward"). Made in
+`/mnt/project-files/studio-tycoon/altitude-r8/`: `refs-r8/` (13 Steam frames: Monument Valley 1-3, Two Point Hospital, Game
+Dev Story, Overcooked 2, Spiritfarer, Townscaper, Unpacking, Fallout Shelter; `refs.md`, contact sheet; our walkable ship
+and round 7 in `ourrounds/`), `gameplay-loop-r8.md` (rungs, six of eight, first 60 seconds), `altitude-r8.js`,
+`still.html?view=ship|room`, `render-stills.js`, stills `still-{ship,room}-v4.png` (+ `-phone`, `still-ship-v4-board.jpg`),
+`art-director-review-r8.md` (fix first; six fixes applied in v4). Page source `altitude-r8.html`. Positions
+`boat-grid-altitude-rooms`, `boat-grid-hull-six-of-eight` on main (rows `rows/altitude-r8-2026-10-24.json`). Look step
+`boat-grid-look-8` on both stores. Open notes: phone ship still leaves sky and teal void, crew about 20 px on a phone,
+the next hull's lit slots read as pale patches, rungs 3, 5, 6 not drawn, skill measure per minigame only sketched; the
+artifact board page was not republished (bars-engine shows the rows). #429 untouched.
+
 
 Brief: Face ships round 8, rooms grow upward (thread "Face ships round 8, rooms grow upward"; starts 2026-10-24 per his
 note on `boat-grid-look-7`, ledger `2026-10-24-pull-182659`). His note, verbatim: "We’re doing well now. The zoomed out
