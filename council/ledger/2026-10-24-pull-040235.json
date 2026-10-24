@@ -1,0 +1,97 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T04:02:35.931Z",
+ "answers": {
+  "lt-mirror-look-01": {
+   "kind": "question",
+   "choice": "yes",
+   "savedAt": "2026-10-24T03:58:37.921Z",
+   "steer": ""
+  },
+  "lt-mirror-look-02": {
+   "kind": "question",
+   "choice": "yes",
+   "savedAt": "2026-10-24T03:58:48.458Z",
+   "steer": ""
+  },
+  "sd-ship-look-1": {
+   "kind": "question",
+   "choice": "A",
+   "savedAt": "2026-10-24T03:58:57.363Z",
+   "steer": ""
+  },
+  "lt-idle-default": {
+   "kind": "position",
+   "savedAt": "2026-10-24T03:59:06.015Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-axes": {
+   "kind": "position",
+   "savedAt": "2026-10-24T03:59:53.622Z",
+   "status": "overrule",
+   "steer": "Taller the boat the heavier it is the more it since and so even as it grows higher there is depth below the water level "
+  },
+  "boat-grid-unlock": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:00:17.808Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-spiritfarer": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:01:14.982Z",
+   "status": "overrule",
+   "steer": "I think we’re moving away from a ship on the ocean and thinking more of an FTL style living ship in space so we don’t have to account for buoyancy "
+  },
+  "boat-grid-face-ships": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:01:21.148Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-deck-unlock": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:01:56.448Z",
+   "status": "overrule",
+   "steer": "We’ll need different names for star ships as we’re long away from literal boats "
+  },
+  "boat-grid-axes-faces": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:02:11.371Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "boat-grid-energy-is-power": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:02:18.329Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lt-soft-light": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:02:29.281Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lt-true-colours": {
+   "kind": "position",
+   "savedAt": "2026-10-24T04:02:35.931Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/lt-mirror-look-01: Yes, build it",
+  "questions/lt-mirror-look-02: Yes, build it",
+  "questions/sd-ship-look-1: Yes, ship it",
+  "positions/boat-grid-axes: Overruled (steer: \"Taller the boat the heavier it is the more it since and so even as it grows higher there is depth below the water level\")",
+  "positions/boat-grid-spiritfarer: Overruled (steer: \"I think we’re moving away from a ship on the ocean and thinking more of an FTL style living ship in space so we don’t have to account for buoyancy\")",
+  "positions/boat-grid-deck-unlock: Overruled (steer: \"We’ll need different names for star ships as we’re long away from literal boats\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}

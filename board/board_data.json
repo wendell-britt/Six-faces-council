@@ -34016,6 +34016,133 @@
      "challenger"
     ],
     "pass": "walkable-ship-2026-10-24"
+   },
+   "lt-idle-default": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T03:59:06.015Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "between-lighting"
+   },
+   "boat-grid-axes": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T03:59:53.622Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "steer": "Taller the boat the heavier it is the more it since and so even as it grows higher there is depth below the water level",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "boat-grid-2026-10-24"
+   },
+   "boat-grid-unlock": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:00:17.808Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "shaman"
+    ],
+    "pass": "boat-grid-2026-10-24"
+   },
+   "boat-grid-spiritfarer": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:01:14.982Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "steer": "I think we’re moving away from a ship on the ocean and thinking more of an FTL style living ship in space so we don’t have to account for buoyancy",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "boat-grid-2026-10-24"
+   },
+   "boat-grid-face-ships": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:01:21.148Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "regent",
+     "architect"
+    ],
+    "pass": "boat-face-2026-10-24"
+   },
+   "boat-grid-deck-unlock": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:01:56.448Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "steer": "We’ll need different names for star ships as we’re long away from literal boats",
+    "faces": [
+     "shaman",
+     "challenger",
+     "regent",
+     "architect"
+    ],
+    "pass": "boat-face-2026-10-24"
+   },
+   "boat-grid-axes-faces": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:02:11.371Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "boat-face-2026-10-24"
+   },
+   "boat-grid-energy-is-power": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:02:18.329Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "boat-face-2026-10-24"
+   },
+   "lt-soft-light": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:02:29.281Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "between-lighting"
+   },
+   "lt-true-colours": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T04:02:35.931Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "between-lighting"
    }
   },
   "questions": {
@@ -36986,6 +37113,42 @@
      "architect"
     ],
     "pass": "ship-art-2026-10-24"
+   },
+   "lt-mirror-look-01": {
+    "decision": "yes",
+    "label": "Yes, build it",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T03:58:37.921Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "between-lighting"
+   },
+   "lt-mirror-look-02": {
+    "decision": "yes",
+    "label": "Yes, build it",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T03:58:48.458Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "between-lighting"
+   },
+   "sd-ship-look-1": {
+    "decision": "A",
+    "label": "Yes, ship it",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T03:58:57.363Z",
+    "record": "council/ledger/2026-10-24-pull-040235.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "ship-reveal-2026-10-24"
    }
   },
   "causes": {
