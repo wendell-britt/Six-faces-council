@@ -48,9 +48,19 @@ def main():
     if not steps:
         raise SystemExit(f"no steps in {a.store}/steps: list the steps and lists collections first")
     total = 0
+    # Deprecated on the board (2026-10-24): each owes a compost round before it is retired (docs/compost-pass.md).
+    owed = sorted(((k, s) for k, s in steps.items() if s.get("deprecated") and not s.get("retired")),
+                  key=lambda kv: kv[1]["deprecated"].get("at", "") if isinstance(kv[1]["deprecated"], dict) else "")
+    if owed:
+        print("\n## DEPRECATED: each owes a compost round")
+        for k, s in owed:
+            d = s["deprecated"] if isinstance(s["deprecated"], dict) else {}
+            print(f"  - {k} (list {s.get('list')}; deprecated {d.get('at', '')[:10]}): {s.get('do')}")
+            if d.get("note"):
+                print(f"      his words: {d['note']}")
     for lid, l in sorted(lists.items()):
         mine = sorted(((k, s) for k, s in steps.items() if s.get("list") == lid), key=lambda kv: kv[1].get("n", 0))
-        live = [(k, s) for k, s in mine if not s.get("done") and not s.get("retired")]
+        live = [(k, s) for k, s in mine if not s.get("done") and not s.get("retired") and not s.get("deprecated")]
         if not live:
             continue
         print(f"\n## {lid} [{l.get('repo', '')}] {l.get('title', '')}")
@@ -65,7 +75,7 @@ def main():
             for f in FIELDS:
                 if s.get(f):
                     print(f"      {f}: {s[f]}")
-    orphans = [k for k, s in steps.items() if s.get("list") not in lists and not s.get("done") and not s.get("retired")]
+    orphans = [k for k, s in steps.items() if s.get("list") not in lists and not s.get("done") and not s.get("retired") and not s.get("deprecated")]
     if orphans:
         print(f"\nOpen steps whose list is missing: {', '.join(sorted(orphans))}")
     data = json.loads((ROOT / "board" / "board_data.json").read_text())
