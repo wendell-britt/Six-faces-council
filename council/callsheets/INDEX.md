@@ -55,6 +55,7 @@ profile its threads load (docs/ontology-in-flows.md).
 - [friendcraft](friendcraft.md), 2026-10-06: redesign pass, Part 0 interview, outline, each its own thread.
 - [steps-hand](steps-hand.md), 2026-10-20: Your steps is a five-card hand with a shuffle; inner work mints a vibeulon, a vibeulon pays a discard, the card comes back on the day ladder (hd-* positions). Left: bars-engine wallet (hd-wallet), a look on a real phone.
 - [email-pipeline](email-pipeline.md), 2026-10-21: drafts on a contact, Send on the board is permission to send (em-* positions); #351 builds the card and board/email_pipeline.py. Next: the test email to himself once #351 merges and the board is republished.
+- [play-to-make](play-to-make.md), 2026-10-24: onboarding where a newcomer follows a crew member through a hatch on the living ship and learns to make the game below deck; concept page https://claude.ai/artifact/KjBp8CUMPrA3AQwRjf47MG; waits on his look `pm-hatch-look-01`.
 
 ## Closed (no sheet)
 - 2026-10-05, from the standing daily session: daily stopped 2026-10-08 (`daily-stopped`), routine switched off.
