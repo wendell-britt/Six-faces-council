@@ -299,7 +299,7 @@ br-orient-each-invite steer (00:35): anyone who did the first minute skips per-i
 ### Brief: room kit, finish round 1 (Sonnet is fine unless part 2 is missing)
 - Read `part1-summary.md` and `part2-summary.md` in `/mnt/project-files/between/room-kit/build/`. If part 2's summary
   or commit on claude/project-thread-q2xj75 is missing, build part 2 from "Brief: room kit build" above (Opus).
-- Own bars-engine #431: subscribe, get the Vercel preview green, update the PR body with part 2.
+- Own bars-engine #431: subscribe, merge #428's head (642b972 or later, robes on every figure) into the branch, confirm the #428 preview for 642b972 is green, get #431's Vercel preview green, update the PR body with part 2.
 - Give Wendell the one-click preview opened at the nook (`/ontology-game/between?satchel=all&nook=1` on the #431
   preview), plus `?minute=1` and the scroll param from part 2, and the side-by-side renders beside each still, as a
   board step (his look), not chat questions. Choices the workers made that he may want to flip go on the board as
