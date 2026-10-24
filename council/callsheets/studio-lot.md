@@ -1,7 +1,59 @@
 # Studio lot (the studio game)
 
 ## Next
-Grid ship 2026-10-24 (thread "Build the walkable ship"). His note on `tw-ship-look-1` (02:51): right direction, lean more
+Face ships round 2 done 2026-10-24 (thread "Face ships, round 2"). Renderer v2 `ships.js` (v1 kept as
+`ships-v1.js`) applies `art-director-review-v1.md`: cottages with open deck between them and ladders in the gaps,
+per-face outlines (Shaman arched reed, Challenger raked and jagged with ram, spars and ring, Regent gables mirrored
+about a bell tower, Architect truss roof, pipes, stacks, crane, galleon hull), energy as lanterns along the vein in
+the hold with light threads to rooms and an "asks / holds" tag (no panel), Everdoor, signs with vines, portholes,
+role hats and sashes on crew (64px x scale, min 56), spirits min 50px, needy room pulses and speaks above its roof,
+hangar on a dusk pier with rimmed ink silhouettes, tap a cottage to move a lantern (`FaceShips.tap`). Six real
+Spiritfarer frames added to `refs/` (`spiritfarer-sheet.jpg`). Stills `still-{1,2,3,4,hangar}-v2.png`; recheck
+`art-director-review-v2.md`: show it to him, open notes for round 3 (vary room widths and offset decks, a 100-140px
+open span for the mid-trip walker, more portholes and lit windows on Regent and Architect). Page with the four ships
+moving, the hangar, refs beside our earlier boats and a table per face: https://claude.ai/artifact/PP8w2152LsMZ4Yz9ZE4GJk
+(source `face-ships.html` in `/mnt/project-files/studio-tycoon/ftl-ship/`). Positions on main (rows
+`council/callsheets/rows/boat-face-2026-10-24.json`): `boat-grid-face-ships` (replaces `tw-walkable-decks`),
+`boat-grid-energy-is-power`, `boat-grid-deck-unlock`, `boat-grid-axes-faces` (amends `boat-grid-axes`). Look step
+`boat-grid-look-2` (list `studio-lot-boat`, n 7) on both stores. #429 untouched.
+
+Brief: Face ships build (fresh Opus thread after his yes on `boat-grid-look-2`, per hx-looks-gate not before; a note
+instead starts round 3 from his note plus the v2 open notes; owns bars-engine #429, branch
+`claude/project-thread-227mft`, head c315bb5). Keep list, checked by the art director before his look: a crew member
+mid-trip across open deck in every frame, work seen live, eye pulled by movement and need, the Lantern deck's style.
+(1) Port `ships.js` (plain canvas 2D) as the boat's renderer in `public/studio/`; `world.ts` stays the data side.
+(2) Ship = faces earned: Chapter 1 is the Hearth Canoe; a deck appears when its unlock line (boat-grid-deck-unlock)
+is met, read from loops and callsheets. (3) Spirits from INDEX strands sit in the room of their face and step
+(boat-grid-axes-faces), crew errands from strands touched in the last day, the needy room from open board letters.
+(4) Lanterns: each running strand spends lanterns from the vein; tapping a cottage moves one (boat-grid-energy-is-power);
+store the choice through the board's own save via src/lib/board/shim.ts. (5) Tap a bubble or spirit: the steer card
+(round 4 letters content); Tap the vein is a hold move. (6) Forty-six strands: queue spirits on the open deck in front
+of a full cottage; check on a phone. (7) Leave the needy cottage's table for brief "Looks aboard the boat". (8) Preview
+link at `?strand=<one with a letter>` as look step `boat-grid-look-3`.
+
+Face ships (FTL) round 1, 2026-10-24 (thread "Mock the face-driven ships"). His steer on `tw-walkable-decks` (02:57,
+overruled): split the difference between the current render and Spiritfarer, toward FTL: "Different ship design as a
+function of which of the game master faces is running the game"; Chapter 1 ship designed from shamanic feel and
+emotional alchemy; unlock a two-deck ship (Shaman + Challenger), then Regent, then Architect, "Each reflecting the style
+and concern of that level of development as well as the complicity afforded and the emotional energy cost" (read as
+complexity afforded). His note at 03:01 on the grid ship: "more accurate from a mechanics POV but has lost the style.
+Did we use art direction when changing to the grid style?" It did not; this round runs art direction first (reply
+posted in the thread). Made so far, all in `/mnt/project-files/studio-tycoon/ftl-ship/`: `refs/` (8 real FTL images +
+README), `ships.js` (canvas renderer, Lantern-deck dusk style, FTL tile rooms + doors + emotional-energy power bar),
+`still.html` (`?view=1|2|3|4|hangar`), stills `still-1-v1.png`, `still-2-v1.png`, `still-4-v1.png`,
+`still-hangar-v1.png`, and the CCGS art-director review `art-director-review-v1.md` (a worker was writing it at
+handoff; if missing, rerun that review first). Design in v1: one deck per face, stacked by altitude (Shaman at the keel),
+decks taper upward, rooms stern to bow in pipeline order. Shaman deck = the five Basic Moves (Wake, Hearth = Open Up and
+the reactor where the vein rises, Cauldron = Clean Up, Garden = Grow Up, Porch = Show Up), 1 pip each. Challenger
+(Lookout, Ring, Forge, Breach bay with live fires), 2 pips each. Regent (Ledger, Bell, Charter, Stores), 2 each.
+Architect (Drafting, Engine = second reactor, Drone bay, Pipeworks), 2-3 each. Reactor 6/9/12/16: Chapter 1 has 2 spare
+pips (room to rest); every later ship asks more than it holds, so the player chooses where feeling goes. Hull silhouette
+per face (woven spiral canoe, angular ram, symmetric cupola, truss + crane). Hangar is FTL's ship select, ships 2-4
+locked with unlock lines. No board rows or look step yet; #429 untouched.
+
+Brief "Face ships, round 2" done 2026-10-24, recorded above.
+
+Superseded by the face ships above: Grid ship 2026-10-24 (thread "Build the walkable ship"). His note on `tw-ship-look-1` (02:51): right direction, lean more
 on Spiritfarer, and "If the boat is a coordinate grid the x axis is the step in the pipeline and the y axis is almost
 like depth within that step of the pipeline (perhaps even unlockable depths as a function of the game master face at
 play in the design ontology and game design space)". The grid changed the look a lot, so a moving mock went up first
@@ -14,7 +66,7 @@ crew carrying crates down, along the deck and up. Positions `boat-grid-axes` (re
 ids also exist on the Work/DBT strand. #429 untouched (head c315bb5). The brief "Walkable ship build" below is replaced
 by this one.
 
-Brief: Grid ship build (fresh Opus thread after his yes on `boat-grid-look-1`; per hx-looks-gate not before; owns
+Superseded by brief "Face ships build" above: Grid ship build (fresh Opus thread after his yes on `boat-grid-look-1`; per hx-looks-gate not before; owns
 bars-engine #429, branch `claude/project-thread-227mft`, head c315bb5). Keep list, checked by the art director before his
 look: a crew member visible mid-trip (on a ladder) in every frame, work seen live, eye pulled by movement and need.
 (1) Port `grid-scene.js` (plain canvas 2D) as the boat's renderer in `public/studio/`; keep `world.ts` as the data side
