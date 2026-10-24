@@ -427,3 +427,15 @@ card is manifesting has it breaking our game design ontology. I need to know why
 targets for the hollow and the nook, the seated pose fixed on a cushion (sunk hips, missing head) and on the WAVE
 room seat (legs through the seat). Part B (art first): the seated moment itself, two stills on
 `/mnt/project-files/between/homeroom-sit/art/hearth-moment.html`; code only after his yes.
+
+### Sit at the hearth, after the build (2026-10-24)
+- bars-engine #439 (draft, stacked on #435, branch claude/project-thread-acf15w): one seat list `seatsNow` (hollow.js),
+  walk to a cushion and sit before the hearth opens, seated and wake pose fixed. Seated-moment UI hook: garden.js
+  `renderSheet` "SEATED MOMENT HOOK" + `.sheet.seated`, fired by `meState.onSeated`. Robe still opens at the lap seated.
+- bars-engine #440 (main, branch claude/project-thread-acf15w-wave-seat): WAVE seat, legs no longer through it.
+- Board: look steps homeroom-sit-look-01 (homeroom, wake, placed cushion) and -02 (WAVE seat); question hs-still-pick
+  (page https://claude.ai/artifact/Cg6QHafafzzLEVLdj8NFy4, recommended A then B); position hs-verb-is-body.
+- TRIGGER his pick on hs-still-pick -> fresh Opus thread "Seated hearth moment build": replace the hook's strip with
+  the picked still's in-world moment on #439's branch, and close the robe at the lap. #428/#431/#433/#435/#439 merge
+  in order on his yes to homeroom-sit-look-01 (his room-kit-look-01 note "the character spawns looks very weird" is
+  answered by the wake fix there).
