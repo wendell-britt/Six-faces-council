@@ -1,0 +1,26 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T00:35:38.978Z",
+ "answers": {
+  "br-skip-home-preview": {
+   "kind": "position",
+   "savedAt": "2026-10-24T00:35:04.508Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "br-orient-each-invite": {
+   "kind": "position",
+   "savedAt": "2026-10-24T00:35:38.978Z",
+   "status": "stands",
+   "steer": "If they’ve already done the introduction they don’t need this. This is for people who are being invited to rooms who already have their own "
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/br-orient-each-invite: Stands (steer: \"If they’ve already done the introduction they don’t need this. This is for people who are being invited to rooms who already have their own\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
