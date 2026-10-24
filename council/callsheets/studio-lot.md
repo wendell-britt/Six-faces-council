@@ -1,6 +1,28 @@
 # Studio lot (the studio game)
 
 ## Next
+
+Waiting on his look at `boat-grid-look-7` (list `studio-lot-boat`, n 12; page https://claude.ai/artifact/EMRM5oFyFqwCbHZkuogRpe).
+On his yes: "Fleet zoom build" (fresh Opus thread, art settled first per hx-looks-gate): a playable zoom from fleet to ship
+to the loom room, ported from `flow-blockers-r7/fleet-r7.js` and `loom-r7.js`, hosted on bars-engine `/board/studio`
+(#429 or a new PR, decide from its state), with a one-click preview at the loom (`?zoom=loom`). Real data: stages from
+`council/pipeline.yaml`, loose threads from open board questions, the covered bench from unlooked look steps. On a note:
+round 8 from his note, starting from a keep list of what he praised.
+
+Face ships round 7, the fleet as the pipeline, done 2026-10-24 (thread "Face ships round 7, the fleet as pipeline"). Made in
+`/mnt/project-files/studio-tycoon/flow-blockers-r7/`: `refs-r7/` (15 frames: FTL, Lovers in a Dangerous Spacetime,
+Spiritfarer, Among Us, Cosmoteer, Outer Wilds; `refs.md`, contact sheet, our rounds 4-6 in `ourrounds/`),
+`gameplay-loop-r7.md` (three zoom levels, stage keepers, FTL stretched, eight room minigames, first 60 seconds),
+`fleet-r7.js` + `loom-r7.js` (load round 5's nested-ships.js; adds Diplomat and Sage forms), `still.html`,
+`render-stills.js`, stills `still-{fleet,loom}-v3.png` (+ `-phone`), `art-director-review-r7.md` (fix first; hulls,
+label size, jam focus, amber, loom weave applied in v2/v3; 120px skin pods and harbour moorings not done). Page source
+`fleet-r7.html` (template `page-template.html`). Positions `boat-grid-fleet-pipeline`, `boat-grid-ftl-stretch` on main
+(f5eacd9; rows `rows/fleet-pipeline-2026-10-24.json`). Reading taken: "roomed" = zoomed; amendment: eight stages on six
+ships, so the Architect keeps spec, plan and build and the current loops out to the Challenger's forge. Open notes: ship
+names and dates are small at phone width; only the loom minigame is drawn; no motion; the artifact board page was not
+republished (bars-engine shows the rows); voice lint flags the literal game word "room" throughout. #429 untouched.
+
+Earlier brief (done):
 Brief: Face ships round 7, the fleet as the pipeline (fresh Opus thread; starts now, per his note on boat-grid-look-6, saved
 2026-10-24 17:50). His note, verbatim: "Very close. We need the parts of the ship readable and we need to think about how
 the ship expands as the pipeline adapts?  What is the outcome of a pipeline run at each level? If we stretch the FTL
