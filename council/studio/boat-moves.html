@@ -1,0 +1,136 @@
+<title>Steering the Spirit Boat</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<style>
+/* Layout: one narrow column, like a ship's logbook; each section a page of the log, the move map a ledger table. */
+:root{
+  --sea:#eef1f4; --paper:#fbfaf6; --ink:#1d2733; --dim:#5a6675; --lantern:#b5641a; --kelp:#2f6b5a; --rule:#d5dbe2;
+  --display:"Young Serif",Georgia,serif; --body:"Atkinson Hyperlegible",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--sea:#0f1620;--paper:#16202c;--ink:#e6e9ee;--dim:#9aa6b4;--lantern:#f0a24e;--kelp:#6fc0a6;--rule:#2a3645;color-scheme:dark}}
+:root[data-theme="dark"]{--sea:#0f1620;--paper:#16202c;--ink:#e6e9ee;--dim:#9aa6b4;--lantern:#f0a24e;--kelp:#6fc0a6;--rule:#2a3645;color-scheme:dark}
+body{background:var(--sea);color:var(--ink);font:16px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px}
+main{max-width:760px;margin:0 auto;display:grid;gap:28px}
+h1,h2{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:2.1rem;line-height:1.15}
+h2{font-size:1.35rem;margin-bottom:8px}
+p{margin:0 0 10px;max-width:65ch}
+.lead{font-size:1.1rem}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lantern);font-weight:700}
+section{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:20px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pair>div{min-width:0}
+.pair h3{font-family:var(--display);font-weight:400;font-size:1.1rem;margin:0 0 4px;color:var(--kelp)}
+ul{margin:0;padding-left:20px}
+li{margin-bottom:6px;max-width:65ch}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--rule)}
+th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+code{font-size:.85em;color:var(--dim)}
+.chip{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.now{color:var(--kelp)} .gap{color:var(--lantern)} .later{color:var(--dim)}
+.ask{border-left:3px solid var(--lantern);padding-left:12px;margin-top:12px}
+@media (max-width:560px){.pair{grid-template-columns:1fr}h1{font-size:1.7rem}}
+</style>
+<main>
+<header>
+  <div class="eyebrow">Studio boat · design answer · 24 Oct 2026</div>
+  <h1>Steering the Spirit Boat</h1>
+  <p class="lead">You can walk the boat today, but nothing you do there reaches the record. The red seal stays on your phone for the day. Closing that gap is about three build rounds after round 3, and the steer survives if every conversation on the boat ends in the same save the board would write.</p>
+</header>
+
+<section>
+  <h2>How far from using the boat instead of the board</h2>
+  <p>What the boat does now (round 2, bars-engine #429): you wake in the hammock, walk the deck, knock on a house, read a letter at the bow, tap the log and the sea chart. It reads the open strands from the callsheet index and the loop rounds. It does not read a single question, position or step, and it sends nothing. The red seal saves to this phone only.</p>
+  <p>What it needs: the boat has to read the board's rows, and its talk has to write through the same door the board uses (<code>POST /api/board/saves</code>, which /board/council already uses). That door is built, so this is wiring work, not new plumbing.</p>
+  <ul>
+    <li><b>Round 3</b> (queued, waits on your look at <code>ty-boat-look-1</code>): art fixes, fewer houses, a night layer.</li>
+    <li><b>Round 4</b>: letters. A spirit hands you its question, you answer it or say something else, and it lands as a save. Positions come in the same round.</li>
+    <li><b>Round 5</b>: steps and looks, the wheel for general steer, and the bell for Send.</li>
+    <li><b>Round 6</b>: crew take work (With Claude), and the post box sends email drafts.</li>
+  </ul>
+  <p>After round 5 you could do a normal board read on the boat. The board stays the record either way (<code>ty-lens</code>). This estimate assumes each round is one thread, as rounds 1 and 2 were. It is a guess, not a measurement.</p>
+</section>
+
+<section>
+  <h2>Spirits and crew are different kinds of beings</h2>
+  <div class="pair">
+    <div>
+      <h3>A spirit is a strand of work</h3>
+      <ul>
+        <li>Each strand is one spirit with its own creature. It came aboard with something it wants, and it leaves through the Everdoor when that is done.</li>
+        <li>It waits, grows and fades. Left alone it follows the spirit-care ladder (thriving, dimming, stale, shadowed, fading) toward 21 days.</li>
+        <li>You never give a spirit orders. You visit it, listen, and answer what it carries.</li>
+        <li>The <b>foxes</b> in the demo are spirits at the bell: strands that are blocked on you. In round 1 every waiting spirit was drawn as the same fox. Round 2 gives each strand its own creature, so "fox" was a placeholder, not a kind.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Crew are the hands</h3>
+      <ul>
+        <li>Each crew member is a role from Claude-Code-Game-Studios (art director, game designer, programmer and so on). On the boat, a crew member at work is a Claude thread doing that work.</li>
+        <li>Crew do not wait on you. They work, and their wages are what the work costs (Opus crew cost more than Sonnet crew).</li>
+        <li>Crew do not fade. They get tired: a crew member near the 150,000-token line swaps out for a fresh one.</li>
+        <li>You talk to a spirit about what and why. You talk to crew about how, and you hand them work.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>What it means to interact with a spirit</h2>
+  <ul>
+    <li><b>Knock.</b> You walk to its house. It tells you in one plain line where it stands, said from the work's point of view ("The hem still looks painted on. I want it to sit inside and out.").</li>
+    <li><b>Listen.</b> If it carries something for you, it hands it over: a letter (a question), the rule painted over its door (a position), something to look at (a look step), or something it needs from you (a step).</li>
+    <li><b>Answer.</b> You pick a wax seal, or you say something else in your own words. The spirit says back what it heard before it goes ("So: inside and out, like a real hem. I'll tell the crew."). That repeat-back is your confirm.</li>
+    <li><b>Care.</b> Your answer is the care that keeps it from fading. The spirit's house changes to show it: lit, scaffolded, crew arriving.</li>
+  </ul>
+  <p>So interacting with a spirit is the board read itself, done one creature at a time instead of one list at a time.</p>
+</section>
+
+<section>
+  <h2>Every board move, and where it lives on the boat</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Board move</th><th>On the boat</th><th>Save it writes</th><th>Today</th></tr></thead>
+    <tbody>
+      <tr><td>Answer a question</td><td>The spirit's letter at the bell: one wax seal per option, or write in the margin</td><td><code>questions</code> choice, steer</td><td><span class="chip gap">red seal stays on the phone</span></td></tr>
+      <tr><td>Defer</td><td>"Not tonight": the spirit tucks the letter in its hat and comes back on the date</td><td><code>questions</code>/<code>positions</code> deferred, until</td><td><span class="chip gap">blue seal says nothing</span></td></tr>
+      <tr><td>Stand, flip or retire a position</td><td>The rule painted over the spirit's door. A nod leaves it standing, "change it" plus your words overrules it, "take it down" retires it</td><td><code>positions</code> status, steer</td><td><span class="chip gap">missing</span></td></tr>
+      <tr><td>Steer note (general)</td><td>Talk at the wheel. The helmsman writes it in the ship's log</td><td><code>steer/general</code> text</td><td><span class="chip gap">log is read-only</span></td></tr>
+      <tr><td>Tick a step</td><td>Hand the spirit what it asked for</td><td><code>steps</code> done</td><td><span class="chip gap">missing</span></td></tr>
+      <tr><td>Step note, move a date</td><td>Tell the spirit, or "come back Thursday" (a lantern on the sea chart)</td><td><code>steps</code> note, due</td><td><span class="chip gap">missing</span></td></tr>
+      <tr><td>Look step</td><td>The spirit holds up a spyglass that opens the preview. When you come back it asks what you saw</td><td><code>steps</code> note + done (the board has no separate look save)</td><td><span class="chip gap">missing</span></td></tr>
+      <tr><td>Blocker</td><td>Fog or a crate in front of the house. Say what is in the way</td><td><code>blockers</code>, then a <code>steps</code> patch</td><td><span class="chip gap">missing</span></td></tr>
+      <tr><td>With Claude</td><td>Drag a crew member onto the spirit, or say "can the crew take this?"</td><td><code>steps</code> aiBack</td><td><span class="chip gap">missing</span></td></tr>
+      <tr><td>Send</td><td>Ring the ship's bell at the wheelhouse when your rounds are done, and the crew go below</td><td><code>pickup/last</code> + the routine</td><td><span class="chip gap">hidden on bars-engine too</span></td></tr>
+      <tr><td>Email Send</td><td>The post box on the rail. Read the letter, stamp it to send, or hand it back for a rewrite</td><td><code>contacts</code> draft status, approvedHash</td><td><span class="chip gap">missing</span></td></tr>
+      <tr><td>Terms, causes, morning menu, Tap the Vein, set aside, picks</td><td>No home on the boat in v1. The galley could hold the morning menu later</td><td>their own collections</td><td><span class="chip later">stays on the board</span></td></tr>
+    </tbody>
+  </table></div>
+  <p style="margin-top:10px">Send has a catch. bars-engine's copy of the board hides Send and blanks its trigger, because ringing for a pickup needs the claude.ai routine. The 15-minute pull already brings every save to main without it, so on the boat the bell can be the <code>pickup</code> save alone, and the next Board Send routine run picks it up.</p>
+</section>
+
+<section>
+  <h2>Keeping the steer by talking to characters</h2>
+  <ul>
+    <li><b>One conversation, one save.</b> Every talk that ends in a choice writes exactly the save the board would write, with the same collection and fields. The 15-minute pull, the ledger and the needs-work list do not change.</li>
+    <li><b>Who you talk to decides where your words go.</b> A spirit's words go to that strand's row. A crew member's words go to the step they are working, as a note to the thread doing it. The wheel takes general steer.</li>
+    <li><b>Your own words are always open.</b> Every reply menu ends with "say something else", which lands as <code>steer</code>. That keeps the steer function the Claude project has now.</li>
+    <li><b>Characters speak from the record.</b> A spirit's lines are the row's own question, options and why, rewritten into plain speech when the boat is built. No live model talks on the boat in v1. Nothing a character makes up can become your decision, and the boat works with no AI involved, which the Portland community needs.</li>
+    <li><b>It says it back before it leaves.</b> The repeat-back is the confirm. Your words are saved as you typed them and never paraphrased.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>On the Council Board</h2>
+  <p>Two questions only you can answer:</p>
+  <div class="ask"><b><code>bw-first-move</code></b>: Which move should the boat learn first? Answering letters (recommended), sending a crew member to a spirit as <code>ty-order</code> says now, or both in one round.</div>
+  <div class="ask"><b><code>bw-strand-fade</code></b>: What happens to a strand whose spirit you have not visited in 21 days? It fades and leaves a seed, and the compost pass files its callsheet (recommended). Or it only dims and never leaves. Or work spirits never fade.</div>
+  <p style="margin-top:12px">Positions that stand unless you flip them: <code>bw-spirit-is-strand</code>, <code>bw-crew-are-hands</code>, <code>bw-talk-is-save</code>, <code>bw-lines-from-record</code>, <code>bw-answer-is-care</code>, <code>bw-board-keeps-the-rest</code>.</p>
+</section>
+
+<section>
+  <h2>Recommended next move</h2>
+  <p>Let round 3 take your look note as planned. Then make round 4 the letter round: the boat reads the open questions and positions, each one goes to its strand's spirit, and the seals and "say something else" write real saves through the board's door. It is the move you make most on the board, and it carries the steer with it. The brief is written into the studio-lot callsheet for the thread after round 3.</p>
+</section>
+</main>
