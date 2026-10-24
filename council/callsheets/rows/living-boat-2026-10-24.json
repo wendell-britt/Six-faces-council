@@ -1,0 +1,29 @@
+{
+ "updated": "2026-10-24",
+ "positions": [
+  {
+   "id": "lb-keep-the-deck",
+   "faces": ["shaman", "diplomat"],
+   "pass": "living-boat-2026-10-24",
+   "auto": true,
+   "pos": "The studio boat stays the flat department boat of round 3: one continuous deck where crew walk between halls carrying the work, so you see it happening live and your eye goes to whatever moves or rings. The tall ship cross-section is dropped. This replaces ts-stage-rooms, ts-walk-bow-ward and ts-depts-below, and stands unless you flip it.",
+   "why": "Your note of 2026-10-24 on ts-ship-look-1: \"The biggest thing is that agents can be seen traveling between rooms anymore that was the most compelling part of the first design. Being able to see the work happening seemingly in real time and zooming into what was pulling attention based on its movement and needs\". Still: https://claude.ai/artifact/UAcTBNbgfFT7XYNXRQCPM7"
+  },
+  {
+   "id": "lb-stage-pennants",
+   "faces": ["architect"],
+   "pass": "living-boat-2026-10-24",
+   "auto": true,
+   "pos": "The pipeline order rides on top of the deck instead of replacing it: seven pennants on the light string from Concept at the stern to Release at the bow, the current stage lit, and each crate a crew member carries shows its stage number. Halls stay departments. This stands unless you flip it.",
+   "why": "Keeps your 10-24 ask that the boat follow the pipeline without walling the crew into stage rooms. Still: https://claude.ai/artifact/UAcTBNbgfFT7XYNXRQCPM7"
+  },
+  {
+   "id": "lb-depth-in-place",
+   "faces": ["sage", "challenger"],
+   "pass": "living-boat-2026-10-24",
+   "auto": true,
+   "pos": "Depth is used only where movement stays visible: a hall opens in place with its front wall fading while deck traffic keeps passing in front, and the camera drifts toward bells and moving crew. No sealed rooms and no second floor of boxes. This stands unless you flip it.",
+   "why": "The tall ship's cutaway turned seven rooms into still portraits and stopped all travel (your note, ts-ship-look-1). Still: https://claude.ai/artifact/UAcTBNbgfFT7XYNXRQCPM7"
+  }
+ ]
+}
