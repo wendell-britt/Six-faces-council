@@ -1,0 +1,38 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T02:58:08.004Z",
+ "answers": {
+  "tw-walkable-decks": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:57:46.373Z",
+   "status": "overrule",
+   "steer": "We’re close but we want to split the difference a bit in between what’s currently rendered and the spiritfayer style.\n\nWhat’s emerging for me is an FTL style\nDifferent ship design as a function of which of the game master faces is running the game. \n\nThe first chapter of the game should be designing based on shamanic feel and emotional alchemy as made manifest through the game design ontology and the game design roles skill\n\nThen as the pipeline is worked through the player can unlock a ship that has 2 decks the shaman deck and the challenger deck \n\nAnd then another and then another (regent and architect) \nEach reflecting the style and concern of that level of development as well as the complicity afforded and the emotional energy cost "
+  },
+  "tw-deck-map": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:57:56.248Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-no-pennants": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:58:02.770Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "tw-follow-camera": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:58:08.004Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "positions/tw-walkable-decks: Overruled (steer: \"We’re close but we want to split the difference a bit in between what’s currently rendered and the spiritfayer style.\n\nWhat’s emerging for me is an FTL style\nDifferent ship design as a function of which of the game master faces is running the game. \n\nThe first chapter of the game should be designing based on shamanic feel and emotional alchemy as made manifest through the game design ontology and the game design roles skill\n\nThen as the pipeline is worked through the player can unlock a ship that has 2 decks the shaman deck and the challenger deck \n\nAnd then another and then another (regent and architect) \nEach reflecting the style and concern of that level of development as well as the complicity afforded and the emotional energy cost\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
