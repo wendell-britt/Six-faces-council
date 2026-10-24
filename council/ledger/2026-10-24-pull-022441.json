@@ -1,0 +1,64 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T02:24:41.948Z",
+ "answers": {
+  "rk-blank-scroll-on-shelf": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:22:25.096Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "rk-minute-rules-two-unsaid": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:22:32.578Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lb-keep-the-deck": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:23:52.686Z",
+   "status": "overrule",
+   "steer": "I want a tall ship crosssectikn where agents walk between rooms in the cross section. Perhaps the tall ship is 3 dimensional but represented in 2d (monument valley style)"
+  },
+  "lb-depth-in-place": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:24:27.508Z",
+   "status": "stands",
+   "steer": ""
+  },
+  "lb-stage-pennants": {
+   "kind": "position",
+   "savedAt": "2026-10-24T02:24:41.948Z",
+   "status": "overrule",
+   "steer": "I don’t understand the pennants "
+  }
+ },
+ "steer": null,
+ "steps": [
+  {
+   "id": "podcast-ep2-clips-01",
+   "at": "2026-10-24T02:21:41.412Z",
+   "what": "ticked",
+   "do": "Post that episode 2 is out, if you have not yet: the YouTube thumbnail on Instagram with the day 0 caption, and the same caption with the link on Facebook and X."
+  },
+  {
+   "id": "podcast-ep1-clips-05",
+   "at": "2026-10-24T02:21:59.818Z",
+   "what": "ticked",
+   "do": "Nine days after clip 1, note each clip's views, saves and shares from the platforms' insights, and paste them in the podcast thread."
+  },
+  {
+   "id": "flirtcraft-ep1-clips-03",
+   "at": "2026-10-24T02:22:06.262Z",
+   "what": "ticked",
+   "do": "Clips 3, 6 and 7 are handled by Claude through the Meta API; you only give the go. Clip 3, Hot Girl Summer, is scheduled for Saturday 24 October at 9am Pacific on Facebook and Instagram; post it to X by hand that day. Clips 6 (what a crush is) and 7 (QC's flirt even more) go out 27 and 30 October when you say 'go' in the Flirtcraft posts thread."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "positions/lb-keep-the-deck: Overruled (steer: \"I want a tall ship crosssectikn where agents walk between rooms in the cross section. Perhaps the tall ship is 3 dimensional but represented in 2d (monument valley style)\")",
+  "positions/lb-stage-pennants: Overruled (steer: \"I don’t understand the pennants\")"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
