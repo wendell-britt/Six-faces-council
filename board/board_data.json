@@ -12377,6 +12377,28 @@
    "auto": true,
    "pos": "One room kit for the Between, the Cave of Lessons and Big Mind: a room is a shell (its spots), a style and what sits on each spot, in a plain module beside room-styles.js. Today's Dusk hollow becomes the hollow shell with its pieces already placed, so nothing that works now changes. The kit is built after the part 3 build on bars-engine #428 lands. This stands unless you flip it.",
    "why": "The coordinator's brief, 2026-10-23: make the customizer portable to Cave of Lessons and Big Mind."
+  },
+  {
+   "id": "br-skip-home-preview",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "between-rooms3",
+   "auto": true,
+   "pos": "Everyone spawns in their homeroom. For testing only, a preview link may add ?skipHome=1 to start straight in a room; the real site ignores it. This stands unless you flip it.",
+   "why": "Your ruling 2026-10-23 that players always spawn in the homeroom, and your standing rule that a test link opens at the exact state to test. Built in bars-engine #428."
+  },
+  {
+   "id": "br-orient-each-invite",
+   "faces": [
+    "diplomat",
+    "shaman"
+   ],
+   "pass": "between-rooms3",
+   "auto": true,
+   "pos": "The orientation before an invited room is read each time someone opens an invitation link, and is not remembered: once they are in the room, its doorway opens at once from then on. This stands unless you flip it.",
+   "why": "Your ruling 2026-10-23: an invite link opens a portal to the room only after orientation and the rules. A link is used once to join, so there is nothing to remember. Built in bars-engine #428."
   }
  ],
  "questions": [
