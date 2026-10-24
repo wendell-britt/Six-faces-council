@@ -180,6 +180,11 @@ def find_steps(data, store):
         if isinstance(back, dict) and back.get("at", "") > since:
             out.append({"id": f.stem, "at": back["at"], "what": "back to AI", "note": (back.get("text") or "").strip(),
                         "automate": bool(back.get("automate")), "do": doc.get("do", "")})
+        # Deprecated from the board (2026-10-24, deprecate-then-compost): the idea goes to a compost round.
+        dep = doc.get("deprecated")
+        if isinstance(dep, dict) and dep.get("at", "") > since:
+            out.append({"id": f.stem, "at": dep["at"], "what": "deprecated", "note": (dep.get("note") or "").strip(),
+                        "do": doc.get("do", "")})
         for m in doc.get("moved") or []:
             if m.get("at", "") > since:
                 out.append({"id": f.stem, "at": m["at"], "what": "moved", "from": m.get("from"), "to": m.get("to"),
@@ -308,6 +313,8 @@ def apply(data, new, general, steps, ledger_rel, blockers=()):
             work.append(f'steps/{e["id"]}: notes on "{e["title"]}": "{e["note"]}"')
         elif e["what"] == "moved":
             work.append(f'steps/{e["id"]}: moved from {e["from"]} to {e["to"]}')
+        elif e["what"] == "deprecated":
+            work.append(f'steps/{e["id"]}: deprecated, owes a compost round' + (f': "{e["note"]}"' if e["note"] else ""))
         elif e["what"] == "back to AI":
             work.append(f'steps/{e["id"]}: back to AI{" (automate)" if e["automate"] else ""}: "{e["note"]}"')
     if steps:
