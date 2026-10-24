@@ -34,3 +34,27 @@ Goal: look step `clothing-kit-look-01` on the board with stills inline (`example
 scout: rung 3 for round 1 (three-vrm springbone math for Bell/Drape/Tassel chains); rung 2 for stills (#435 code, j4 GLB).
 Rules to name: docs/3d-math.md rule 8 and garment page https://claude.ai/artifact/AvPdQRkPQwNcXEKfuxewAv; idle rule
 (lt-idle-default); art direction before code; previews one click.
+
+### Round 0 done (2026-10-24)
+- Page: https://claude.ai/artifact/RhFdNzCGp6NUE5SPbhHdEt (source /mnt/project-files/clothing-kit/round0/look.html).
+  Stills /mnt/project-files/clothing-kit/round0/stills-v2/ (kit, novice, practitioner, elder: front, mid-step, seated).
+  Reference board /mnt/project-files/clothing-kit/round0/reference-board.md (8 Commons refs in refs/, our past robes kept/failed).
+  Still generator /mnt/project-files/clothing-kit/round0/source/ (kit.js: the nine primitives fitted to the posed body,
+  stage.js: outfits, sheet.html + shot.cjs: Playwright render; three r169 from npm). It solves drapes per pose for stills;
+  it is NOT the round 1 rig, but its dials and the Bell chain-in-its-own-plane idea carry over.
+- Board: question `clothing-kit-look-01` (stills inline), position `ck-open-at-belt` (his robe-layers-look-03 note:
+  a long robe opens at the belt, front and back hang free; short robes keep hip slits). Rows
+  `council/callsheets/rows/clothing-kit-r0-2026-10-24.json`.
+- Art director: v1 fix first (6), v2 fix first small; reviews in round0/art-director-review-v1.md, -v2.md.
+  Open gaps for round 1/2: hip junction under the belt on the walk; cuff Lip must be the sleeve edge, not a ring;
+  Drape sleeves on a seated lap; kit tiles show grey shoulders; back views and motion unchecked.
+- Pipeline-test log, round 0: one thread; ladder rung 2 (j4 GLB, own three.js), rung 3 not needed for stills; the art
+  director caught shoulders, elbow crease, painted hem, outer/inner punch-through and seated slab before him; walls: no
+  image generation, the walk clip only (sit posed by hand), the thread passed 150k by reading its own renders.
+  Lesson: send every render look to a worker, not only the AD checks.
+
+## Next: Round 1, the core kit (fresh Opus thread, on his yes to clothing-kit-look-01)
+Per the plan doc's round 1: Shell, Tube, Bell, Band, Lip as one plain JS module in bars-engine (start from #435's
+figure-robe.js / wardrobe.js), garment-contract.md, ray probe across walk, idle, sit, turn x 3 bodies, novice in the
+Between mirror with a one-click preview. Fold in his note, ck-open-at-belt, and the round 0 gaps above. On a note
+instead: round 0b from his note with the generator in round0/source/.

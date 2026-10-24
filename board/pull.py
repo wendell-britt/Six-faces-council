@@ -189,6 +189,13 @@ def find_steps(data, store):
             if m.get("at", "") > since:
                 out.append({"id": f.stem, "at": m["at"], "what": "moved", "from": m.get("from"), "to": m.get("to"),
                             "do": doc.get("do", "")})
+    # A whole strand deprecated from the board (2026-10-24): one compost round covers every step in the list.
+    for f in sorted((store / "lists").glob("*.json")) if (store / "lists").is_dir() else []:
+        doc = json.loads(f.read_text(encoding="utf-8"))
+        dep = doc.get("deprecated")
+        if isinstance(dep, dict) and dep.get("at", "") > since:
+            out.append({"id": f.stem, "at": dep["at"], "what": "strand deprecated", "note": (dep.get("note") or "").strip(),
+                        "do": doc.get("title", "")})
     return sorted(out, key=lambda e: e["at"])
 
 
@@ -315,6 +322,8 @@ def apply(data, new, general, steps, ledger_rel, blockers=()):
             work.append(f'steps/{e["id"]}: moved from {e["from"]} to {e["to"]}')
         elif e["what"] == "deprecated":
             work.append(f'steps/{e["id"]}: deprecated, owes a compost round' + (f': "{e["note"]}"' if e["note"] else ""))
+        elif e["what"] == "strand deprecated":
+            work.append(f'lists/{e["id"]}: strand deprecated, owes one compost round' + (f': "{e["note"]}"' if e["note"] else ""))
         elif e["what"] == "back to AI":
             work.append(f'steps/{e["id"]}: back to AI{" (automate)" if e["automate"] else ""}: "{e["note"]}"')
     if steps:
