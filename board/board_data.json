@@ -34816,6 +34816,132 @@
      "architect"
     ],
     "pass": "board-read-2026-10-24-1620"
+   },
+   "boat-grid-nested-skins": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:56:46.733Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect",
+     "regent",
+     "sage"
+    ],
+    "pass": "nested-ships-2026-10-24"
+   },
+   "boat-grid-seed-heart": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:06.136Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "regent",
+     "architect"
+    ],
+    "pass": "nested-ships-2026-10-24"
+   },
+   "ck-open-at-belt": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:13.238Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "clothing-kit-r0-2026-10-24"
+   },
+   "ga-method": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:20.977Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "architect",
+     "challenger"
+    ],
+    "pass": "gameplay-atlas-2026-10-24"
+   },
+   "ga-index-not-copy": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:24.794Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "regent"
+    ],
+    "pass": "gameplay-atlas-2026-10-24"
+   },
+   "ga-codex-brief": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:29.360Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "gameplay-atlas-2026-10-24"
+   },
+   "ga-reshape-table": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:44.364Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "challenger",
+     "shaman"
+    ],
+    "pass": "gameplay-atlas-2026-10-24"
+   },
+   "ga-first-chapter1": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:50.415Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "diplomat",
+     "regent"
+    ],
+    "pass": "gameplay-atlas-2026-10-24"
+   },
+   "ga-spar-waits-moves": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:57:55.382Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "architect"
+    ],
+    "pass": "gameplay-atlas-2026-10-24"
+   },
+   "boat-grid-flow-blockers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:58:01.000Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent",
+     "challenger",
+     "shaman"
+    ],
+    "pass": "flow-blockers-2026-10-24"
    }
   },
   "questions": {
@@ -37867,6 +37993,20 @@
     "recorded": "2026-10-24",
     "saved_at": "2026-10-24T07:38:11.027Z",
     "record": "council/ledger/2026-10-24-pull-073818.json (six-faces-council)"
+   },
+   "clothing-kit-look-01": {
+    "decision": "not-yet",
+    "label": "Not yet (note)",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T17:56:33.065Z",
+    "record": "council/ledger/2026-10-24-pull-175801.json (six-faces-council)",
+    "steer": "The pieces are correct but now we need to study how people make the seams not look so bad. This may be an issue with the skeleton but the shoulders just don’t feel natural to me and I can see pretty clearly where the seams\nAre going to make weird and boxy intersections. Also the pieces are already showing artifacts that we’ve been trying to remove from other steps",
+    "faces": [
+     "regent",
+     "architect",
+     "shaman"
+    ],
+    "pass": "clothing-kit-r0-2026-10-24"
    }
   },
   "causes": {
@@ -39258,7 +39398,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-24T16:45:13.796Z",
+ "steps_recorded_through": "2026-10-24T17:55:02.721Z",
  "morning": {
   "date": "2026-10-21",
   "gathered_at": "2026-10-22T01:53:54Z",
