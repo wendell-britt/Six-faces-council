@@ -12841,6 +12841,17 @@
    "auto": true,
    "pos": "The ships take starship names: 1 Gourd Star (Shaman, Chapter 1), 2 Ember Comet (+ Challenger), 3 Jade Palace (+ Regent), 4 Clockwork Orrery (+ Architect), then Tide Lotus (Diplomat) and Taiji Star (Sage), locked. The hangar is the moorings at a floating Air Temple. The unlock lines of boat-grid-deck-unlock carry over. This stands unless you flip it.",
    "why": "Your steer on boat-grid-deck-unlock (04:02): \"We'll need different names for star ships as we're long away from literal boats\"."
+  },
+  {
+   "id": "lt-idle-robe-cloth",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "between-lighting",
+   "auto": true,
+   "pos": "The idle robe is skinned over the idle clip, not cloth-baked. A cloth bake needs the J5 robe from garments.py, so it waits for that robe; the skinned robe stands until then unless you flip it.",
+   "why": "Built in bars-engine #433 (stance.js). The skinned robe holds at the idle's pace on phone; the cloth bake would add a file per idle and needs the J5 robe, which the Between figure does not use yet. Source: council/callsheets/relationship-creature.md"
   }
  ],
  "questions": [
