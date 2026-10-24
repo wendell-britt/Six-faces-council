@@ -121,5 +121,7 @@ both sides) and a `&tour=0` preview key that skips the walkthrough. Merging #436
 - TRIGGER his yes -> mark #436 ready; it merges itself once green. A note -> new round on #436's branch
   (`claude/project-thread-5zrl9b`).
 - #434 (one seat for the caves and the WAVE room) touches the same sitting code as #412; whichever lands second merges.
-- Not checked: a real phone. The cave test's two failures (walk swing range, a breath-timed button) are being compared
-  against main in the same thread.
+- Checked on the preview: the charge at Witness is `stage gas, 150 motes`, no blob. Not checked: a real phone.
+- Cave test (not in CI) in this container: #436 434 pass, main 432 pass; both fail the same three checks (walk swing
+  range, a breath-timed button, "walking onto the rug offers Sit down") and stop at the same timeout before the
+  door-spirit block, so those failures are main's, not #436's.
