@@ -12933,6 +12933,29 @@
    "auto": true,
    "pos": "The robe carries 2 cm of extra room over the hips and thighs, so the legs never press through it when they move. This stands unless you flip it.",
    "why": "The robe layers build (bars-engine #435): the probe showed legs through the cloth without it."
+  },
+  {
+   "id": "boat-grid-look-3-retired",
+   "faces": [
+    "regent",
+    "sage"
+   ],
+   "pass": "board-read-2026-10-24-1620",
+   "auto": true,
+   "pos": "Round 3 (the Taoist spacecraft look, boat-grid-look-3) is retired. Round 4's flow ships (boat-grid-look-4) replaced it before your note, so nothing moves forward from round 3; it goes to a compost round so the faces can say what worked and what did not. This stands unless you flip it.",
+   "why": "Your note on boat-grid-look-3: 'I think we've abandoned this approach. Confirm before moving forward. We are diverging.' The record already shows look-4 superseding look-3 (studio-lot.md)."
+  },
+  {
+   "id": "deprecate-then-compost",
+   "faces": [
+    "regent",
+    "sage",
+    "architect"
+   ],
+   "pass": "board-read-2026-10-24-1620",
+   "auto": true,
+   "pos": "A look can be marked deprecated, and a deprecated idea gets a compost round: the six faces read what worked and what did not and write it down for the next round. The board needs a Deprecated mark on a step, and a compost round runs the daily compost pass on that strand. Built by a Sonnet thread; stands unless you flip it.",
+   "why": "Your note on boat-grid-look-1: 'We need the ability to make a note that an idea is deprecated and needs a compost round... so they can learn for new rounds.'"
   }
  ],
  "questions": [
@@ -39045,7 +39068,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-24T02:22:06.262Z",
+ "steps_recorded_through": "2026-10-24T16:19:56.498Z",
  "morning": {
   "date": "2026-10-21",
   "gathered_at": "2026-10-22T01:53:54Z",

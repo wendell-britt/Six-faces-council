@@ -1,0 +1,125 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T16:19:56.498Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "boat-grid-look-4",
+   "at": "2026-10-24T16:06:14.595Z",
+   "what": "ticked",
+   "do": "Look at round 4 of the ship art: the four face forms in all five elements, and the living ship in the same flowing look (no symbols, no boat). Then say yes, or what feels off."
+  },
+  {
+   "id": "boat-grid-look-4",
+   "at": "2026-10-24T16:06:14.595Z",
+   "what": "note",
+   "note": "The inner segmentation needs work but we’re in the right direction. The big polarity we’re running into is how to we balance the internal and external symmetry and the ability to have characters move coherently within the ship.\n\nWe do still need compartments and a way to separate the internals of the ship so it maintains the transcend and include aspect of the visual design I’m looking for.",
+   "do": "Look at round 4 of the ship art: the four face forms in all five elements, and the living ship in the same flowing look (no symbols, no boat). Then say yes, or what feels off."
+  },
+  {
+   "id": "robe-layers-look-02",
+   "at": "2026-10-24T16:11:02.902Z",
+   "what": "ticked",
+   "do": "Open the character creator at the robe and walk the figure in each cut (coat, dress, jacket). Check that the same fix you saw in the mirror is here: trousers under the robe, a plum lining, and a hem that follows the legs. Then answer: A yes; B yes with a note; C another round."
+  },
+  {
+   "id": "robe-layers-look-02",
+   "at": "2026-10-24T16:11:02.902Z",
+   "what": "note",
+   "note": "The long coat also needs a belt and the hem across the chest should extend to the length of the fabric",
+   "do": "Open the character creator at the robe and walk the figure in each cut (coat, dress, jacket). Check that the same fix you saw in the mirror is here: trousers under the robe, a plum lining, and a hem that follows the legs. Then answer: A yes; B yes with a note; C another round."
+  },
+  {
+   "id": "sit-pose-look-01",
+   "at": "2026-10-24T16:11:27.265Z",
+   "what": "ticked",
+   "do": "Open the Big Mind cave at the seated state and watch the figure sit. Check the legs, the hands and how the body settles on the seat. Then say yes, or what feels off."
+  },
+  {
+   "id": "sit-pose-look-01",
+   "at": "2026-10-24T16:11:27.265Z",
+   "what": "note",
+   "note": "Yes",
+   "do": "Open the Big Mind cave at the seated state and watch the figure sit. Check the legs, the hands and how the body settles on the seat. Then say yes, or what feels off."
+  },
+  {
+   "id": "spirit-states-squint-01",
+   "at": "2026-10-24T16:13:45.788Z",
+   "what": "ticked",
+   "do": "Sort the fifteen numbered spirit sprites into dissatisfied, neutral and satisfied, then type your three lists into this step's note. About two minutes."
+  },
+  {
+   "id": "spirit-states-squint-01",
+   "at": "2026-10-24T16:13:45.788Z",
+   "what": "note",
+   "note": "Yes",
+   "do": "Sort the fifteen numbered spirit sprites into dissatisfied, neutral and satisfied, then type your three lists into this step's note. About two minutes."
+  },
+  {
+   "id": "between-round3-try-01",
+   "at": "2026-10-24T16:15:44.253Z",
+   "what": "ticked",
+   "do": "Open the link on your iPhone, sign in if asked, and look around the hollow. This is round 3 of the Between: the same place as round 2, now painted by our code so the light, shadows and colours lean toward your four concept views (warm brown shadows, amber firelight, soft bands, a thin warm edge light). Then open the same link with ?paint=0 added at the end to see round 2 plain, and tell me which you prefer. Write one line in the note: does it feel closer to your pictures, and what is still most missing (the moss and stone textures, the creature's glow, the figures)? Your note decides whether round 3 goes on to textures or to the acts and verbs (gaps 6 to 10)."
+  },
+  {
+   "id": "between-round3-try-01",
+   "at": "2026-10-24T16:15:44.253Z",
+   "what": "note",
+   "note": "Game freezes when the player tries to walk into the elevated portion.\n\nAlso we need a way to upload screenshots from this environment",
+   "do": "Open the link on your iPhone, sign in if asked, and look around the hollow. This is round 3 of the Between: the same place as round 2, now painted by our code so the light, shadows and colours lean toward your four concept views (warm brown shadows, amber firelight, soft bands, a thin warm edge light). Then open the same link with ?paint=0 added at the end to see round 2 plain, and tell me which you prefer. Write one line in the note: does it feel closer to your pictures, and what is still most missing (the moss and stone textures, the creature's glow, the figures)? Your note decides whether round 3 goes on to textures or to the acts and verbs (gaps 6 to 10)."
+  },
+  {
+   "id": "robe-layers-look-01",
+   "at": "2026-10-24T16:17:09.230Z",
+   "what": "ticked",
+   "do": "Open the Between mirror and turn the figure. Walk it, let it stand, and sit it. Check that the trousers show in the slits, the robe has a lining, and the hem follows the legs with no leg through the cloth. Then answer: A yes; B yes with a note; C another round."
+  },
+  {
+   "id": "robe-layers-look-01",
+   "at": "2026-10-24T16:17:09.230Z",
+   "what": "note",
+   "note": "Yes",
+   "do": "Open the Between mirror and turn the figure. Walk it, let it stand, and sit it. Check that the trousers show in the slits, the robe has a lining, and the hem follows the legs with no leg through the cloth. Then answer: A yes; B yes with a note; C another round."
+  },
+  {
+   "id": "boat-grid-look-3",
+   "at": "2026-10-24T16:18:55.649Z",
+   "what": "ticked",
+   "do": "Look at the Taoist face ships: tap each ship, watch the crew cross the open deck, tap rooms to move qi pearls from the vein, and compare with round 2 on the page. Then say yes, or what feels off."
+  },
+  {
+   "id": "boat-grid-look-3",
+   "at": "2026-10-24T16:18:55.649Z",
+   "what": "note",
+   "note": "I think we’ve abandoned this approach. Confirm before moving forward. We are diverging",
+   "do": "Look at the Taoist face ships: tap each ship, watch the crew cross the open deck, tap rooms to move qi pearls from the vein, and compare with round 2 on the page. Then say yes, or what feels off."
+  },
+  {
+   "id": "boat-grid-look-1",
+   "at": "2026-10-24T16:19:56.498Z",
+   "what": "ticked",
+   "do": "Look at the grid ship. Your note made the boat a coordinate grid: along the deck, stern to bow, the seven pipeline steps; up each step, its depth, one story per Game Master face in altitude order (Shaman lowest, Sage on top). Stories not yet earned show as blueprint outlines, Spiritfarer build-mode style. Crew still carry crates down one ladder, along the deck and up another. Tap the ship to follow a climber. Note 'yes, build it', or what reads wrong."
+  },
+  {
+   "id": "boat-grid-look-1",
+   "at": "2026-10-24T16:19:56.498Z",
+   "what": "note",
+   "note": "We need the ability to make a note that an idea is deprecated and needs a compost round. A compost round allows the 6 faces to find out what worked and what didn’t so they can learn for new rounds",
+   "do": "Look at the grid ship. Your note made the boat a coordinate grid: along the deck, stern to bow, the seven pipeline steps; up each step, its depth, one story per Game Master face in altitude order (Shaman lowest, Sage on top). Stories not yet earned show as blueprint outlines, Spiritfarer build-mode style. Crew still carry crates down one ladder, along the deck and up another. Tap the ship to follow a climber. Note 'yes, build it', or what reads wrong."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/boat-grid-look-4: note \"The inner segmentation needs work but we’re in the right direction. The big polarity we’re running into is how to we balance the internal and external symmetry and the ability to have characters move coherently within the ship.\n\nWe do still need compartments and a way to separate the internals of the ship so it maintains the transcend and include aspect of the visual design I’m looking for.\"",
+  "steps/robe-layers-look-02: note \"The long coat also needs a belt and the hem across the chest should extend to the length of the fabric\"",
+  "steps/sit-pose-look-01: note \"Yes\"",
+  "steps/spirit-states-squint-01: note \"Yes\"",
+  "steps/between-round3-try-01: note \"Game freezes when the player tries to walk into the elevated portion.\n\nAlso we need a way to upload screenshots from this environment\"",
+  "steps/robe-layers-look-01: note \"Yes\"",
+  "steps/boat-grid-look-3: note \"I think we’ve abandoned this approach. Confirm before moving forward. We are diverging\"",
+  "steps/boat-grid-look-1: note \"We need the ability to make a note that an idea is deprecated and needs a compost round. A compost round allows the 6 faces to find out what worked and what didn’t so they can learn for new rounds\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
