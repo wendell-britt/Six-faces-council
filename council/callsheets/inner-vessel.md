@@ -91,3 +91,13 @@ ontology: default; touches: BAR, MovementFinding, CompostingDisposition
   becoming explorable world material" (aesthetic-source-research-round-1.md:511-515). The dock pass loaded the default
   ontology and used neither for immersion. Verdict: not in the ontology. Proposed with the stills: a depth principle
   (every surface is an inviting image or an explorable space; depth and altitude as play against flatland).
+- His interview, round 2 (2026-10-24 02:06 UTC), recorded as rulings:
+  - Arrival: "spirit leads you to it and you see it from the outside".
+  - Barn: "it's a world inside the ship that could potentially end up bigger than this ships this is not unlike the
+    world ring in sprout. It represents the internal energy available for Taking action in friendcraft or flirtcraft of
+    allyship".
+  - Alive: "It grows new rooms as you do inner work. The spirits and people inside the world and the emergent story is
+    what makes it feel alive".
+  - References: "Will wights cradle cloud ships. The tardis, the south meditation ship from Star Wars expanded universe.
+    Zonoma Sekot and the ship relationships between characters in Karen Lords best of all possible worlds" (plus No
+    Man's Sky and the Kingdom Hearts gummy ship from round 1).
