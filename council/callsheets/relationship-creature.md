@@ -396,3 +396,34 @@ TRIGGER: his yes on look-01 -> Sonnet thread merges #433, #435 (then #72, #74 in
 His note: "The long coat also needs a belt and the hem across the chest should extend to the length of the fabric". sprout draft #74 (branch claude/project-thread-byiz0w, head 6fa82da): the coat cut ties the sash (`CUT.coat.sash`), and the collar band's overlap edge runs straight down from where it ends under the arm (rest height 1.10, angle -59 deg round the body) to each cut's hem, drawn per pixel in the robe shader (`EDGE` in slice/figure-robe.js). Legs probe 0 through / 0 void on every build and cut. Sheet: /mnt/project-files/3d-build/robe-layers-r2-sprout-2026-10-24/sheet.jpg. Look step `robe-layers-look-03` on both boards, preview https://sprout-pks743v9s-wendells-projects-9c1b16dc.vercel.app/slice/creator.html?form=figure&beat=satchel&look=a.average.light.afro.black.coat.violet
 
 TRIGGER: his yes on look-03 -> #74 joins the merge chain (#71, #72, #74 after look-01's merges). A note -> no new robe round here: it folds into the clothing kit strand (council/callsheets/clothing-kit.md), coordinator 2026-10-24.
+
+## Sit at the hearth: why it became a card, and the fix (2026-10-24, thread "Make homeroom sitting immersive")
+
+His note (18:17): "When asked to sit down the player should walk to a cushion and actually sit instead of having a card
+modal open up. Once they are seated the modal can open up but it also needs to be an immersive experience. The way the
+card is manifesting has it breaking our game design ontology. I need to know why this decision happened."
+
+**How it happened.**
+- Pass `crafting-charge1` (2026-10-18) specified the hearth as rules and data: one ember into one lantern, private
+  pouch, no counts, server tests T1 to T9. It said "tap only" and never said what the body does. No art direction ran;
+  the art-first rule came on 10-23 and the depth rule (`sd-depth-rule`, council #381) on 10-24.
+- The build (bars-engine #380, 2026-10-20) filled the missing verb with garden.js's default: tap a thing, get a
+  "what" card, its button opens a sheet. The copy said "sit with it", the button said "Sit at the hearth", and the
+  figure never moved.
+- The room kit (#431, 10-23/24) ran art direction on what was new (nook, scroll, first minute) and carried the hearth
+  over as it was. The nook also dropped the hollow's cushions (`SEATS = []`, a cushion is earned later), so the word
+  "sit" had nowhere to sit. Neither later rule was applied to the inherited interaction.
+
+**Lesson (position `hs-verb-is-body`).**
+1. A verb in the copy is a promise about the body. If a button says sit, walk, light or give, the figure does it in the
+   world first; any choice comes after, in the scene.
+2. A pass or brief names the embodied verb and a player-POV beat for every interaction it specifies, not only its data
+   and rules. A missing verb gets filled by the codebase's default, and our default is a panel.
+3. When a build carries an existing interaction into a new space, its brief lists the inherited interactions and puts
+   each one through the depth test and art direction, the same as new ones. A rule adopted later applies to old surfaces
+   the next time they are touched.
+
+**Fix.** Part A (no new look): walk to a cushion and sit before the hearth moment opens, one shared list of seat
+targets for the hollow and the nook, the seated pose fixed on a cushion (sunk hips, missing head) and on the WAVE
+room seat (legs through the seat). Part B (art first): the seated moment itself, two stills on
+`/mnt/project-files/between/homeroom-sit/art/hearth-moment.html`; code only after his yes.
