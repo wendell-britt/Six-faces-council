@@ -1,0 +1,13 @@
+{
+ "updated": "2026-10-24",
+ "positions": [
+  {
+   "id": "boat-grid-flow-blockers",
+   "faces": ["architect", "regent", "challenger", "shaman"],
+   "pass": "flow-blockers-2026-10-24",
+   "auto": true,
+   "pos": "The ship is the Council Board you can play. Each strand is a separate compartment with its own door, in a row mirrored round the Hearth, and the walls between them are older skins (amends boat-grid-nested-skins: rooms in a row inside the skins). Qi is countable beads on one current from the Hearth, five on a rail over each door. A jam is a thing in the room and the only amber on the ship: a sealed letter for a waiting question, an eye lantern by a covered bench for an unlooked build, a knot over a seated crew member for a stalled thread, each with a ring that fills as it waits. One overlay, Qi view, darkens the hull. Steering is dragging beads between rooms and tapping the jam; the cure shows at once.",
+   "why": "Your note on boat-grid-look-5 (2026-10-24): balance B's legibility with A's design language, see where energy goes and where the blockers are, and learn how games solve it. Research on FTL, Factorio, Oxygen Not Included, Spiritfarer and Overcooked (studio-tycoon/flow-blockers/research.md) found the same grammar: countable pips, an icon pinned on the stuck station, a visible pile, one overlay, colour kept for alarm."
+  }
+ ]
+}
