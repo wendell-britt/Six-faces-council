@@ -20266,6 +20266,34 @@
      "c": "The living ship and Calrunia stay as they are; only the studio's face ships use the Taoist space look."
     }
    ]
+  },
+  {
+   "id": "robe-slit-look-01",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "robe-slits-2026-10-24",
+   "q": "Is this the way to dress the robe: trousers under it, a lining inside it, and a hem that follows the legs?",
+   "why_you": "Your note: legs pop through the robe and the slit shows empty space. Both come from one cheat (the robe recorded over the walk only, legs hidden by height). The page shows a before/after still on our own robe and how Genshin, FFXIV, Ghost of Tsushima and Zelda dress robes with slits: https://claude.ai/artifact/5PQum4RD9zK2rsmQZJ3EKe . Your yes starts the build in the Between mirror; the same fix then carries to the character creator's robe.",
+   "not_before": "Raised by the robe slits art direction round, 2026-10-24.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "A. Yes, build it (recommended)",
+     "c": "A technical-artist build in the Between mirror (stacked on the room kit): inner trousers, lined robe, leg-driven panels and a probe that fails on any leg through. Then the same fix on the creator robe."
+    },
+    {
+     "v": "note",
+     "label": "B. Yes, with a note",
+     "c": "The build starts and your note (colours, trouser cut, slit height) goes into its keep and fix list."
+    },
+    {
+     "v": "not-yet",
+     "label": "C. Not yet",
+     "c": "Nothing is built. Your note starts a second still round first."
+    }
+   ]
   }
  ],
  "causes": [
