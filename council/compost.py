@@ -49,6 +49,12 @@ def main():
         raise SystemExit(f"no steps in {a.store}/steps: list the steps and lists collections first")
     total = 0
     # Deprecated on the board (2026-10-24): each owes a compost round before it is retired (docs/compost-pass.md).
+    for lid, l in sorted(lists.items()):
+        if l.get("deprecated"):
+            d = l["deprecated"] if isinstance(l["deprecated"], dict) else {}
+            n = sum(1 for s in steps.values() if s.get("list") == lid and not s.get("retired"))
+            print(f"\n## DEPRECATED STRAND: {lid} ({l.get('title', '')}); one compost round for all {n} steps")
+            print(f"   deprecated {d.get('at', '')[:10]}" + (f"; his words: {d['note']}" if d.get("note") else ""))
     owed = sorted(((k, s) for k, s in steps.items() if s.get("deprecated") and not s.get("retired")),
                   key=lambda kv: kv[1]["deprecated"].get("at", "") if isinstance(kv[1]["deprecated"], dict) else "")
     if owed:
@@ -59,6 +65,8 @@ def main():
             if d.get("note"):
                 print(f"      his words: {d['note']}")
     for lid, l in sorted(lists.items()):
+        if l.get("deprecated"):
+            continue
         mine = sorted(((k, s) for k, s in steps.items() if s.get("list") == lid), key=lambda kv: kv[1].get("n", 0))
         live = [(k, s) for k, s in mine if not s.get("done") and not s.get("retired") and not s.get("deprecated")]
         if not live:
