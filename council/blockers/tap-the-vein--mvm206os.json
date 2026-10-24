@@ -1,0 +1,44 @@
+{
+ "due": "2026-10-24",
+ "ref": "tap-the-vein--mvm206os",
+ "list": "morning",
+ "step": "tap-the-vein",
+ "task": "Tap the Vein, skipped 2 days running",
+ "stage": "end",
+ "charge": {
+  "after": null,
+  "before": 4
+ },
+ "engine": "wave-room",
+ "rested": false,
+ "rounds": [
+  {
+   "from": "the board",
+   "goal": "I want to make progress on my game and not get caught up with technicalities",
+   "kept": true,
+   "move": "Make a note to have the tap the vein timer not reset at midnight",
+   "name": "Dealing with the fact this W.A.V.E. environment hasn’t matched the current version",
+   "push": "toward",
+   "where": "my left ribs",
+   "worked": true,
+   "aligned": true,
+   "element": "Anger",
+   "reading": {
+    "after": 3,
+    "before": 6
+   },
+   "texture": "strength"
+  }
+ ],
+ "status": "resolved",
+ "savedAt": "2026-10-24T07:09:37.143Z",
+ "version": 1,
+ "startedAt": "2026-10-24T07:04:59.259Z",
+ "resolution": {
+  "at": "2026-10-24T07:09:37.143Z",
+  "kind": "now",
+  "text": "Make a note to have the tap the vein timer not reset at midnight"
+ },
+ "skipStreak": 2,
+ "sittingRounds": 1
+}

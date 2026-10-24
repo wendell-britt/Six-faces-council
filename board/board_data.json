@@ -34298,6 +34298,79 @@
      "shaman"
     ],
     "pass": "between-lighting"
+   },
+   "boat-grid-tao-space": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:25:24.117Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "steer": "This is close but I don’t want symbology but borrow Daoist vibes, curves and flow not pagodas and Chinese symbology",
+    "faces": [
+     "shaman",
+     "challenger",
+     "regent",
+     "architect"
+    ],
+    "pass": "tao-ships-2026-10-24"
+   },
+   "boat-grid-five-elements": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:26:10.319Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "steer": "There shouldn’t be an element for each face. All elements can be expressed at each face. This could mean that each face has an elemental ship design",
+    "faces": [
+     "shaman",
+     "challenger",
+     "regent",
+     "architect",
+     "diplomat",
+     "sage"
+    ],
+    "pass": "tao-ships-2026-10-24"
+   },
+   "boat-grid-star-names": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:26:17.599Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger",
+     "regent",
+     "architect",
+     "diplomat",
+     "sage"
+    ],
+    "pass": "tao-ships-2026-10-24"
+   },
+   "lt-idle-robe-cloth": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:26:24.750Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "between-lighting"
+   },
+   "boat-grid-grows-both-ways": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:27:14.939Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "steer": "Since we aren’t doing the boat metaphor anymore this is moot",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "tao-ships-2026-10-24"
    }
   },
   "questions": {
@@ -37304,6 +37377,44 @@
      "architect"
     ],
     "pass": "ship-reveal-2026-10-24"
+   },
+   "lt-mirror-look-03": {
+    "decision": "not-yet",
+    "label": "None yet (note)",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:23:35.693Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "steer": "For a question like this we need the examples where the question is for me to assess. This is a feature for council board",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "between-lighting"
+   },
+   "robe-slit-look-01": {
+    "decision": "yes",
+    "label": "Yes, build it",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:24:29.423Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "robe-slits-2026-10-24"
+   },
+   "boat-grid-carry-tao": {
+    "decision": "B",
+    "label": "Living ship only",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T07:27:34.424Z",
+    "record": "council/ledger/2026-10-24-pull-072734.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent",
+     "sage"
+    ],
+    "pass": "tao-ships-2026-10-24"
    }
   },
   "causes": {
