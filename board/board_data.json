@@ -12608,6 +12608,28 @@
    "auto": true,
    "pos": "Depth is used only where movement stays visible: a hall opens in place with its front wall fading while deck traffic keeps passing in front, and the camera drifts toward bells and moving crew. No sealed rooms and no second floor of boxes. This stands unless you flip it.",
    "why": "The tall ship's cutaway turned seven rooms into still portraits and stopped all travel (your note, ts-ship-look-1). Still: https://claude.ai/artifact/UAcTBNbgfFT7XYNXRQCPM7"
+  },
+  {
+   "id": "sd-dock-scrapped",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "ship-art-2026-10-24",
+   "auto": true,
+   "pos": "The pirate-ship dock and its grid-and-gauge cabin (bars-engine #399) are dropped as a look. The ship becomes a grown sky ship your spirit leads you to, with a world inside it. The passport arrival, spirits aboard, embers and fuel carry over as world state on the island. This stands unless you flip it.",
+   "why": "Your words, 2026-10-24: \"Toy pirate ship didn't match the vibes of the cave of lessons or the Between\" and \"The grid and gauge panel I didn't enjoy\". Page https://claude.ai/artifact/HqbQ5Y1qfX2HxyrHCmeRub."
+  },
+  {
+   "id": "sd-depth-rule",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "pass": "ship-art-2026-10-24",
+   "auto": true,
+   "pos": "A depth rule goes into the design ontology: every surface is an inviting image or a space you can explore, never a grid, gauge or panel; data shows as world state; haze, scale and light lead inward; the world grows as inner work is done; every scene plays in 2D and 3D; every named inspiration gets real images before a still. This stands unless you flip it.",
+   "why": "Your words, 2026-10-24: \"The shadow of the diplomat is flatland ... Our job is to bring depth back into green.\" The ontology had no rule for immersion or depth, and the dock pass never asked for it."
   }
  ],
  "questions": [
@@ -19853,6 +19875,39 @@
      }
     ]
    }
+  },
+  {
+   "id": "sd-still-pick",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "ship-art-2026-10-24",
+   "q": "Are the living ship stills the look to build: A as the arrival, B as the world inside?",
+   "why_you": "Your standing rule: code waits on your yes to a still. Both stills and the first 60 seconds are on https://claude.ai/artifact/HqbQ5Y1qfX2HxyrHCmeRub.",
+   "not_before": "Raised by the ship art direction, 2026-10-24.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Yes, both in order (recommended)",
+     "c": "A becomes the end of Chapter 1 (the spirit leads you to the ship), B the world inside; the build starts with B in 3D on the passport arrival."
+    },
+    {
+     "v": "B",
+     "label": "B. Yes to A only",
+     "c": "The arrival is built in 2D; the inside gets a second still first."
+    },
+    {
+     "v": "C",
+     "label": "C. Yes to B only",
+     "c": "The world inside is built; the outside reveal gets a second still first."
+    },
+    {
+     "v": "D",
+     "label": "D. Not yet",
+     "c": "A second round of stills from your note before any code."
+    }
+   ]
   }
  ],
  "causes": [
