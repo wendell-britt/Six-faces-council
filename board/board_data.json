@@ -12993,6 +12993,66 @@
    "auto": true,
    "pos": "In the clothing kit, a long robe's side opening is where the robe hangs from the belt: front and back panels hang free below the Band, and trousers always fill the gap. Short robes keep hip slits.",
    "why": "Your note on robe-layers-look-03: \"The slit isn't a slit, it's the place where the robe is attached by the belt and hangs freely from the back part.\""
+  },
+  {
+   "id": "ga-method",
+   "faces": [
+    "sage",
+    "architect",
+    "challenger"
+   ],
+   "pass": "gameplay-atlas-2026-10-24",
+   "pos": "The Gameplay Atlas comes into the ontology in three steps: a factual index of its 280 mechanics, a crosswalk reading each one by what it tracks, rewards, gates, remembers, permits and changes (145 already covered, 61 partial, 43 gaps, 31 that break an invariant), then the six faces on the gaps and conflicts only.",
+   "why": "Your ask of 2026-10-24. Six faces over all 280 would cost about 1,700 readings and add little the crosswalk lacks (docs/ontology-in-flows.md on load cost)."
+  },
+  {
+   "id": "ga-index-not-copy",
+   "faces": [
+    "regent"
+   ],
+   "pass": "gameplay-atlas-2026-10-24",
+   "pos": "We keep the atlas as names, systems, tags, example games and links, write every description in our own words, and cite the atlas id when we adopt a mechanic.",
+   "why": "The site states no licence and calls its design levers editorial analysis."
+  },
+  {
+   "id": "ga-codex-brief",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "gameplay-atlas-2026-10-24",
+   "pos": "Twelve mechanic types (Meter, Timing Window, Trigger Chain, Loadout, Flow Network, Combination, Turns and Shared Pool, Delegation, Knowledge State, Tended Life, Delayed Return, Release Residue) go into the ontology through a Codex brief, marked council's word until locked.",
+   "why": "Ontology text is written with Codex (docs/ontology-in-flows.md). Brief: docs/codex/mechanic-vocabulary-brief.md."
+  },
+  {
+   "id": "ga-reshape-table",
+   "faces": [
+    "challenger",
+    "shaman"
+   ],
+   "pass": "gameplay-atlas-2026-10-24",
+   "pos": "The 31 atlas mechanics that break our rules as usually built (streak resets, loss on death, rank ladders, secrets as leverage, timed disclosure) enter the ontology as anti-patterns, each with a version that keeps the fun without the shame clock.",
+   "why": "Hard invariants and the composting stop list in the ontology."
+  },
+  {
+   "id": "ga-first-chapter1",
+   "faces": [
+    "sage",
+    "diplomat",
+    "regent"
+   ],
+   "pass": "gameplay-atlas-2026-10-24",
+   "pos": "Chapter 1's second player is the first place the atlas gets used: turn order and a shared pool for the A6 and A8 cards, from the Chapter 1 shortlist.",
+   "why": "Chapter 1 is the Kickstarter gate and the second player is its open item."
+  },
+  {
+   "id": "ga-spar-waits-moves",
+   "faces": [
+    "architect"
+   ],
+   "pass": "gameplay-atlas-2026-10-24",
+   "pos": "The spar's meters, loadouts and timing windows from the atlas wait for the move ontology to settle element power and move bonuses.",
+   "why": "Your ruling of 2026-10-21: move learning waits on the move ontology (spirit-generator callsheet)."
   }
  ],
  "questions": [
