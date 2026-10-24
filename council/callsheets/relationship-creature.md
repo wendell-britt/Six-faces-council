@@ -37,7 +37,42 @@ Checked: test:between, a phone-size Chromium run on a mock store using the real 
 goal, invitation yes, new room, style, sit and cast all wrote), screenshots /mnt/project-files/between/rooms-home/part2-*.
 Not checked: WebKit (not installed here), a real two-phone session, the Vercel preview's store, hair colour on the figure,
 a 3D mark for a left light. voice_lint: only "room" (his named feature) and old copy.
-**Next:** his look at the preview (`?sheet=` links in the thread reply); then the dance minigame round with Ari's look.
+**Next:** part 3 below is built; part 4 (his 23:33 steers) is next; the dance minigame round with Ari's look after.
+
+**2026-10-24, part 3 built** (thread "Build Between rooms, part 3"; bars-engine on `claude/project-thread-yspmw4`, PR #428).
+Everyone spawns in the homeroom; `?g=` is a doorway beside the mirror (open at once for a room you share; shut for an
+invitation until the orientation sheet is ticked); Rooms "Go in" and the Next card walk you through it; a reload spawns
+home again (a one-time sessionStorage token carries the walk). `?skipHome=1` works on previews only (position
+`br-skip-home-preview`). Style in a two-person room is `garden.styleAsk`; `rules.ts styleWrite` lets only the other person
+set `style`, to the asked style, clearing the ask; Next card partner lane and While you were away show it. Checked:
+test:between, npm run check, a phone-size Chromium run on a mock store built from the real rules.ts (no page errors;
+home spawn, orientation gate, walk-through, reload-home, ask, a direct write refused 403, the other's yes), screenshots
+/mnt/project-files/between/rooms-home/part3-*. Not checked: WebKit, a real two-phone session, local `npm run build`
+(no DATABASE_URL here; the Vercel preview is the build check). Art direction (room kit page
+https://claude.ai/artifact/HwUN8nLCjbjpyBLv173yww): the orientation, invite and style sheets are not polished further;
+the mood stills replace them.
+
+### Build brief, part 4: his 23:33 steers (fresh Opus thread, bars-engine, same branch and PR #428)
+Wendell, 2026-10-23 23:33 UTC:
+> Ok the Look in the Between should open a screen that instead of having a check list should have an interactive
+> character generator. It opens a mirror where they can change the options and it changes the image in the mirror in
+> real time. When they are satisfied they can save the look.
+>
+> We also need check-in to be more robust. Right now it's just saving data but a check-in is basically a wave. This
+> check in energy can be used to feed spirits that are developed in the room. They can choose to bring spirits from
+> their homeroom into the between.
+1. Look = a live mirror. Scout rung 2: sprout's creator (`slice/creator.js`, KEYS and swatches, the same contract as
+   `public/calrunia/look.js`). Walking to the mirror swaps the Look sheet's option rows for a mirror view: a second camera
+   (or a render target on the mirror glass) on your figure, option pickers beside it, each pick re-tints the figure at
+   once (`colorsOf`), Save keeps it (`keepLook`), Leave drops the draft. No new mesh, so the 3D rules bind only if one is added.
+2. Check-in = a WAVE. Reuse, do not rebuild: the WAVE room and gas spirits (bars-engine #412/#413/#419), spirit care
+   (`council/callsheets/spirit-care.md`), and the spirit store `cave/spirit-store.js` (`oag.spirits.v1`, on main). A
+   finished check-in gives an ember the player offers to a spirit, raising its satisfaction per spirit-care.md.
+3. Bring spirits from the homeroom into the Between: add a home / brought-along flag to the spirit store entry; the
+   room's existing "Bring a spirit" lists your homeroom spirits. The barn is not this round (ruling `ba-barn-in-ship`:
+   the barn lives in each person's ship and waits on his dock look at #399).
+Done as part 3: tests, check, the mock harness (rebuild from rules.ts, about 80 lines), phone-size screenshots, one-click
+preview links per state (`?skipHome=1&sheet=`).
 
 ### Build brief, part 3: his 23:25 rulings (fresh Opus thread, bars-engine, same branch and PR #428)
 Board read 23:25 (2026-10-23): `br-home-is-a-room` OVERRULED: players always spawn in their homeroom; an invite link opens
