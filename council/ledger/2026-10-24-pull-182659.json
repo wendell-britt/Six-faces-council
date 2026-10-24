@@ -1,0 +1,41 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T18:26:59.322Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "boat-grid-look-7",
+   "at": "2026-10-24T18:26:31.368Z",
+   "what": "ticked",
+   "do": "Look at round 7 of the face ships. The six ships now fly as one fleet: each holds the pipeline rooms its face owns, named by a machine (bell, loom, forge, star chart, foundry, mirror pool, launch cradle, stores). The fleet races the compost tide to the Chapter 1 harbour, Flatland is the Diplomat's shadow ship, and Still B zooms into the loom's minigame. Say yes, or leave a note."
+  },
+  {
+   "id": "boat-grid-look-7",
+   "at": "2026-10-24T18:26:31.368Z",
+   "what": "note",
+   "note": "We’re doing well now. The zoomed out rooms I think we can move back to the monument valley style pseudo 3d space. \n\nThe rooms also develop through altitude internally and sepearately from other rooms as a function of gameplay skill development of their respective minigame. \n\nEnough skill development collectively at an altitude unlocks the larger ship type \n\nThe issues with the current room visually is that is tall and not using much of the altitudinal real estate and most of the work is being done horizontally. There’s a sense of top down understanding of how the work is being done in the various room and some sense of it being done at a higher level. This could be that the players in the room are leveled up (which means we want a 3d space to cover more ground instead of liners horizontal) OR that there are literal floors within a room. Now I say this aloud I’m leaning toward leveled up actors and roles",
+   "do": "Look at round 7 of the face ships. The six ships now fly as one fleet: each holds the pipeline rooms its face owns, named by a machine (bell, loom, forge, star chart, foundry, mirror pool, launch cradle, stores). The fleet races the compost tide to the Chapter 1 harbour, Flatland is the Diplomat's shadow ship, and Still B zooms into the loom's minigame. Say yes, or leave a note."
+  },
+  {
+   "id": "room-kit-look-01",
+   "at": "2026-10-24T18:26:59.322Z",
+   "what": "ticked",
+   "do": "Look at the Between room kit, round 1. Tap the first link to open your nook with every item in the satchel: tap an item, tap a glowing spot, tap a placed item to send it back. Then open the first minute (second link) and the scroll invitation (third link, a sealed scroll from Ari waiting on your shelf). Write down what feels wrong or flat. The renders next to your three stills are in the room-kit build folder. Nothing here writes to your account except the first link's placing."
+  },
+  {
+   "id": "room-kit-look-01",
+   "at": "2026-10-24T18:26:59.322Z",
+   "what": "note",
+   "note": "The character spawns looks very weird.",
+   "do": "Look at the Between room kit, round 1. Tap the first link to open your nook with every item in the satchel: tap an item, tap a glowing spot, tap a placed item to send it back. Then open the first minute (second link) and the scroll invitation (third link, a sealed scroll from Ari waiting on your shelf). Write down what feels wrong or flat. The renders next to your three stills are in the room-kit build folder. Nothing here writes to your account except the first link's placing."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/boat-grid-look-7: note \"We’re doing well now. The zoomed out rooms I think we can move back to the monument valley style pseudo 3d space. \n\nThe rooms also develop through altitude internally and sepearately from other rooms as a function of gameplay skill development of their respective minigame. \n\nEnough skill development collectively at an altitude unlocks the larger ship type \n\nThe issues with the current room visually is that is tall and not using much of the altitudinal real estate and most of the work is being done horizontally. There’s a sense of top down understanding of how the work is being done in the various room and some sense of it being done at a higher level. This could be that the players in the room are leveled up (which means we want a 3d space to cover more ground instead of liners horizontal) OR that there are literal floors within a room. Now I say this aloud I’m leaning toward leveled up actors and roles\"",
+  "steps/room-kit-look-01: note \"The character spawns looks very weird.\""
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
