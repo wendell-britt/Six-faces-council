@@ -1,7 +1,23 @@
 # Studio lot (the studio game)
 
 ## Next
-Brief: Face ships round 6, flow and blockers (fresh Opus thread; starts now, per his note on boat-grid-look-5, ledger
+Brief: on his yes to `boat-grid-look-6`, "Face ships build" (below) ports `flow-blockers/flow-ships-r6.js` (Still A, compartments
+in a row inside the skins): strands as compartments with doors, qi beads on the current and door rails, jams from the board
+(letter = open board step, eye = unlooked build, knot = stalled thread), drag beads between rooms, Qi view toggle. On a note:
+round 7 from his note plus the open notes below.
+
+Face ships round 6, flow and blockers, done 2026-10-24 (thread "Face ships round 6, flow and blockers"). Made in
+`/mnt/project-files/studio-tycoon/flow-blockers/`: `research.md` + `refs-r6/` (18 Steam frames: FTL, Factorio, ONI,
+Spiritfarer, Overcooked, Mini Metro, RimWorld; alert icons not pictured), `gameplay-loop.md` (mapping, steering, first 60
+seconds), `flow-ships-r6.js` (loads round 5's nested-ships.js), `still.html`, `render-stills.js`, stills
+`still-{hybrid,qiview,cleared}-v2.png` (+ `-phone`), `art-director-review-r6.md` (first pass fix first, six fixes applied
+in v2; bow lantern rail dropped). Page https://claude.ai/artifact/UX83dDGbVvtA6FxwKVMzhJ (source `flow-ships-r6.html`).
+Position `boat-grid-flow-blockers` (rows `rows/flow-blockers-2026-10-24.json`). Look step `boat-grid-look-6` (list
+`studio-lot-boat`, n 11) on both stores. Open notes: bead counts, the lantern's eye and subtitles read weakly on a phone;
+motion and a playable build not checked; the artifact board page was not republished after the row landed (bars-engine
+shows it). #429 untouched (head c315bb5).
+
+Earlier brief (done): Face ships round 6, flow and blockers (fresh Opus thread; starts now, per his note on boat-grid-look-5, ledger
 `2026-10-24-pull-164513`): "I think B reads better but A is a little closer to the ontological vibe. I'm trying to figure
 out how to balance legibility and the design language. We've drifted from the FTL separate rooms and compartments so
 potentially think about the actually gameplay loops could inform the design. This is a gamified version of the council
