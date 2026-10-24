@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "positions": [
   {
    "id": "build",
@@ -33065,6 +33065,54 @@
      "regent"
     ],
     "pass": "work-dbt 3"
+   },
+   "rk-earned-only": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:31:52.099Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "room-kit-2026-10-23"
+   },
+   "rk-place-is-shared": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:32:00.250Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "architect"
+    ],
+    "pass": "room-kit-2026-10-23"
+   },
+   "rk-one-kit": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:32:06.917Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "sage"
+    ],
+    "pass": "room-kit-2026-10-23"
+   },
+   "rk-spots-not-grid": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:32:15.569Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "room-kit-2026-10-23"
    }
   },
   "questions": {
@@ -35949,6 +35997,54 @@
      "shaman",
      "architect",
      "sage"
+    ],
+    "pass": "studio-tycoon-2026-10-23"
+   },
+   "rk-still-nook": {
+    "decision": "A",
+    "label": "Yes, build this",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:28:16.957Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "room-kit-2026-10-23"
+   },
+   "rk-still-scroll": {
+    "decision": "A",
+    "label": "Yes, build this",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:28:24.107Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "room-kit-2026-10-23"
+   },
+   "rk-still-minute": {
+    "decision": "A",
+    "label": "Yes, build this",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:28:31.964Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "shaman"
+    ],
+    "pass": "room-kit-2026-10-23"
+   },
+   "ty-still-pick": {
+    "decision": "A",
+    "label": "Lantern deck",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:31:45.463Z",
+    "record": "council/ledger/2026-10-24-pull-003215.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
     ],
     "pass": "studio-tycoon-2026-10-23"
    }
