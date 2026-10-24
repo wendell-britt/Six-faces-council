@@ -1,7 +1,27 @@
 # Studio lot (the studio game)
 
 ## Next
-Face ships round 5, nested ships, done 2026-10-24 (thread "Face ships, art round 5"). His note on boat-grid-look-4
+Brief: Face ships round 6, flow and blockers (fresh Opus thread; starts now, per his note on boat-grid-look-5, ledger
+`2026-10-24-pull-164513`): "I think B reads better but A is a little closer to the ontological vibe. I'm trying to figure
+out how to balance legibility and the design language. We've drifted from the FTL separate rooms and compartments so
+potentially think about the actually gameplay loops could inform the design. This is a gamified version of the council
+board so we want to able to at a glance see where energy is going and where the blockers are and steer the ships internal
+energy to overcome that. We need to know how games solve for this type of problem solving visually"
+(1) Research first, no new look until it is done: how games show resource flow and blockers at a glance and let the
+player steer around them. FTL (power bars per room, separate rooms, doors, crew), Factorio (belts, backed-up lines,
+alerts), Oxygen Not Included (overlays: pipes, power, gas), Spiritfarer (rooms on the boat, crew errands), Overcooked
+(stations, queues, the jam you can see). Pull real images (Sonnet worker; Commons rate-limits, try press kits and
+store pages), and write what each does for "where energy goes, where it is stuck, how you steer it".
+(2) Gameplay loop: map the Council Board onto the ship: strands as rooms or systems, qi as the power the player routes,
+blockers as visible jams (a waiting letter, an unlooked build, a stalled thread), steering = moving qi or crew to clear
+them. Write the first 60 seconds from the player's side.
+(3) Then stills that balance B's legibility (rooms in a row, FTL-like separate compartments) with A's design language
+(walls as older skins, the Hearth heart, flowing outside). Keep boat-grid-nested-skins only as the visual language;
+it may need amending. Art director check, look page, look step `boat-grid-look-6` (list `studio-lot-boat`, n 11) on
+both stores, rows file, callsheet. Base files: `/mnt/project-files/studio-tycoon/nested-ships/` (nested-ships.js with
+`rings`, `septa`, `growth`; build page source nested-ships-r5.html).
+
+Earlier, Face ships round 5, nested ships, done 2026-10-24 (thread "Face ships, art round 5"). His note on boat-grid-look-4
 (ledger `2026-10-24-pull-161956`): inner segmentation needs work; balance inner and outer symmetry with crew moving
 coherently; keep compartments as transcend and include. His look-3 note is answered by position boat-grid-look-3-retired;
 his look-1 note (deprecate and compost rounds) belongs to the board read, not this strand. Made in
