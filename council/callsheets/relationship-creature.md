@@ -354,3 +354,19 @@ His note on round 2 (thread "Soften the Between lighting", 2026-10-24 04:10 UTC)
 - Standing idle: CMU 77_02, retargeted with quaternions (tools/mocap/retarget_idle.py; roll residual under 3 degrees, feet within 2 cm). The idle robe is the walk bake's mesh skinned over the Idle, not a cloth sim (the J5 cloth robe is not in bars-engine). The rule is in public/between/stance.js, with a test.
 - Not checked: a real phone, the walk-to-idle crossfade in motion, other looks and bodies, moonlit live.
 - Next. TRIGGER: his pick on `lt-mirror-look-03`. 3b, or no answer: a Sonnet thread marks #433 ready once #428 and #431 merge. 3a or 3c: a Sonnet thread changes the one `FIGURE_LIGHT` row (values in r3/probe.json's queries: 3a wrap .35, kMirror .65, warm 5.5, cool 1.8, rim 9, edge .28; 3c wrap .1, kMirror .3, warm 8, cool 1, rim 12, edge .22) and pushes. A note: an Opus thread runs round 4 with still2.html.
+
+## Robe slits: layers, lining and a leg-driven hem (brief, 2026-10-24)
+
+His note (2026-10-24, two mirror screenshots): legs still pop through the robe, and the side slit now shows the empty space where the masked legs were. Diagnosis and studio pattern: /mnt/project-files/3d-build/robe-slits-2026-10-24/brief.md. Art direction round done: look page https://claude.ai/artifact/5PQum4RD9zK2rsmQZJ3EKe (source look.html beside the brief; before/after still mood-side-by-side.jpg; rerunnable still in still/, `node render.js`; 11 game refs and techniques.md in refs/).
+
+TRIGGER: his answer on board step `robe-slit-look-01`. A or B: an Opus technical-artist thread builds (B's note goes in its keep and fix list). C: a second still round from his note, same still/ tool.
+
+- Branch: stack on #433 (branch claude/project-thread-tkay27), not straight on #431, because #433 already skins the walk bake over the standing idle and touches the same robe code; a branch off #431 would conflict with it.
+- Build, in order, each proved cheapest first (probe number, then still, then preview):
+  1. Inner layer: indigo hanfu trousers drawn on the legs always (wardrobe.js); the mask hides only skin under them.
+  2. Lined robe: back faces take a lining colour via gl_FrontFacing in onBeforeCompile; a lining slot in the Look's Dye (default plum #6a2238 on ochre).
+  3. Skinned lower robe: split at the slits; front panel follows the leading thigh, back panel the trailing one (the still sets the lead by hand with flags `zs`/`flip`; live picks it every frame from thigh angles), hard split below the slit top (~0.5 m), blended above; 2-4 skirt bones with clamped rotation (drivers from both thighs add up). Bake or springs only as secondary sway.
+  4. Mask from the garment per cut (vertex group by rays from body through robe in rest pose, slits excluded), replacing maskBand.
+  5. tools/figure-legs-probe.mjs across walk, idle, sit x 4 builds x 3 cuts: zero legs through, zero void pixels through slits; in CI.
+- Then the same fix carries to the creator robe in sprout #72 (garment rule, docs/3d-math.md rule 8).
+- Reply with a hosted preview opened at the mirror (`?mirror=1` on preview hosts).
