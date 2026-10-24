@@ -304,3 +304,26 @@ br-orient-each-invite steer (00:35): anyone who did the first minute skips per-i
   preview), plus `?minute=1` and the scroll param from part 2, and the side-by-side renders beside each still, as a
   board step (his look), not chat questions. Choices the workers made that he may want to flip go on the board as
   positions. Then hand off and resolve.
+
+### Mirror clothes fix (2026-10-24, thread "Fix clothes in the Between mirror")
+His look at part 4: "The mirror looks great but the clothes and robes aren't rendering". Cause: the Between drew
+player.glb, a body with a short tunic painted on; the Clothes choice only recoloured it. Fix on bars-engine #428
+(commit 642b972, branch claude/project-thread-yspmw4): `public/between/wardrobe.js` dresses every player figure as
+sprout's creator does (Average Dusk + mocap Walk, baked J5 robe cut to jacket / wrap dress / long coat, sash on the
+dress, travel pants, hair, legs masked under the cut, leg and arm capsules; `figure-robe.js` copied from sprout #72,
+models in `public/between/m/dusk/`). A standing figure holds the Walk's first frame (where the robe was baked).
+Checked: local render of the mirror with stubbed /api/between, all three cuts. Not checked: walking in the room,
+sitting on a cushion (the robe does not follow the sit pose; legs are masked so it hangs), two players at once (cost),
+a real phone. #431 (room kit) is stacked on #428 and needs a rebase onto 642b972.
+
+### Brief: real body types (his note 2026-10-24, next round, art first, Opus)
+His words: "the round body type isn't actually round we've just been widening the character rather actually creating a
+different body type. Some of the changes can be subtle transformation but others need to be more complex and interact
+with the clothing differently". Today shape and build are bone scales (wardrobe.js SHAPE/BUILD, sprout figure.js).
+1. Tool ladder first (docs/tool-scout.md): MPFB2/MakeHuman targets as shape keys on Average Dusk (calrunia-creator.md
+   option 2), CharacterStudio, VRoid-style body sliders. Record the rung.
+2. Art first: a reference board of four bodies (slender, average, broad, round) plus the three shapes, and one mood
+   still per build in the long coat, before code. His yes on a still opens the build.
+3. Build: shape keys on the body and matching corrective shape keys on the robe/sash/pants (robe-baked needs a bake
+   per key or a delta set), mask bands per body; keep subtle ones (slender, shoulders) as bone scales.
+4. Probe as tools/figure-legs-probe.mjs does, at each body. Preview at ?sheet=look on the Between.
