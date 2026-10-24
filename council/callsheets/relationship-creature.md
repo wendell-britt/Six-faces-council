@@ -52,6 +52,17 @@ home spawn, orientation gate, walk-through, reload-home, ask, a direct write ref
 https://claude.ai/artifact/HwUN8nLCjbjpyBLv173yww): the orientation, invite and style sheets are not polished further;
 the mood stills replace them.
 
+**2026-10-24, part 4 built** (thread "Build Between rooms, part 4"; bars-engine 4a8c89e on `claude/project-thread-yspmw4`, PR #428).
+Look is the mirror: the camera stands where the glass is and the canvas flips, a short strip of part tabs and round swatches
+re-dresses the figure live (build scales width, shape moves shoulder/hip bones, no new mesh), Save / Choose for me / Leave.
+Check-in is a W.A.V.E. walk (seven steps, `public/calrunia/spirit-care.js`), saved with `wave:7`, leaving an ember
+(home doc `embers`, rules.ts validates) offered to a spirit, kept, or left on a stone in a room. Homeroom Spirits sheet
+(care word, Give an ember, Call one from the caves via `oag.spirits.v1` + new `place()`); rooms' Bring a spirit lists
+homeroom spirits first (`homeSpirit`, home `away`). Checked: test:between, npm run check, mock harness at 390x844,
+screenshots /mnt/project-files/between/rooms-home/part4-*. Not checked: Vercel preview build at hand-off time, two
+phones, a real cave hand-off, decay over real days, iOS Safari. Barn still waits on `ba-barn-in-ship` (#399 dock look).
+**Next:** his look at the part 4 preview; then the dance minigame round with Ari's look.
+
 ### Build brief, part 4: his 23:33 steers (fresh Opus thread, bars-engine, same branch and PR #428)
 Wendell, 2026-10-23 23:33 UTC:
 > Ok the Look in the Between should open a screen that instead of having a check list should have an interactive
