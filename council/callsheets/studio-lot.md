@@ -1,7 +1,39 @@
 # Studio lot (the studio game)
 
 ## Next
-Round 2 done 2026-10-24 (thread "Polish the studio boat, round 2", bars-engine #429 commit 10fd9e3). Look step
+Round 3 split 2026-10-24 (thread "Group the boat into departments"): #429 `check` is green on 10fd9e3 (step 1 done). His
+note on `ty-boat-look-1` is recorded as position `ty-boat-departments`. The thread passed the context line before
+building, so the build is the brief below.
+
+Brief: Boat round 3: departments (fresh Opus thread, owns bars-engine #429, branch `claude/project-thread-227mft`).
+Replace 46 houses with six department halls (rooms inside halls, wings inside some halls). Plan, already decided:
+- `world.ts`: a `DEPARTMENTS` table (hall, CCGS lead, wings) and `hallOf(strand)` with fallback `hold` (the cargo
+  hold, so a new strand still shows). World gains `halls: {id, name, x, w, bells, look, wings: {name, x0, x1}[]}`;
+  rooms keep the House fields plus `hall`, `wing?`, x absolute, tier 0/1 for the hall's two storeys. ROOM_W about 118,
+  hall pad 24, gap 40. Halls with no bell and no scaffold go stern of the wheelhouse; the rest bow-ward, fewest bells
+  first, so bells are at the bow. Tests: every current INDEX strand has a hall; bells at the bow; wings contiguous.
+- Map (49 names, 46 in INDEX today): Art Studio (art-director): spirit-generator, cave-studio, calrunia-creator; wing
+  Blender workshop: blender-frame-flesh-warp, blender-pipeline-test, jev-asset, game-demo. Design Room (game-designer):
+  chapter1-demo, walkthrough, engine-slice, skilled-helper, steps-hand, move-nature, root, studio-lot, studio; wing
+  Spirit nursery: inner-creatures, spirit-dissolve, perceptual-shadow, spirit-care, wave-battle. Map Room
+  (level-designer): calrunia-world, inner-vessel, relationship-creature; wing Caves: cave-of-lessons, cave-levels,
+  cave-controls, big-mind-cave, spirits-in-caves, wave-room, element-settings. Story Room (narrative-director):
+  story-pipeline, corpus, friendcraft, somatic-ontology, ontology-flows; wing Healing practice: shame-coaching,
+  work-dbt. Post Office (community-manager): podcast, flirtcraft, email-pipeline, virtual-launch, artist-corps; wing
+  Coaching business: coaching-pipeline, coaching-site. Engine Room (producer): board-plumbing, session-cost,
+  process-retro, morning-menu.
+- `boat.js`: drop the gallery and ladders (the player stays on deck). `drawHall` = one two-storey building with the
+  hall's name on a painted sign, one window per room showing its state (lit, dim with vines, letter glow), wings as
+  a gabled annex in their own wall colour; one bell on the hall when any room waits. `drawRoom` = a small cutaway room
+  (strand hue, lamp, boards for scaffold, vines, letter on the table) with the spirit or tortoise inside. Tapping a
+  hall walks to its door and fades the front wall (one hall open at a time, closes when you walk away); tapping a room
+  knocks as before. Intro: ring the first bell hall, then on waking open it and knock its first waiting room.
+  `?strand=` opens the hall first. Crew stand at their hall's door, spread by index.
+- Also from the art-director review: a night multiply layer (glows on a separate layer above it), letter text in
+  plain words (strip parentheticals, URLs, PR numbers, code spans), then the move (crew card onto a waiting spirit).
+- Look step `ty-boat-look-2` opening `<preview>/board/studio?intro=1`, plus a still of a closed and an open hall.
+
+Earlier: Round 2 done 2026-10-24 (thread "Polish the studio boat, round 2", bars-engine #429 commit 10fd9e3). Look step
 `ty-boat-look-1` (list `studio-lot-boat`) is on both boards, opening the branch preview
 https://bars-engine-git-claude-projec-a0a10d-wendells-projects-9c1b16dc.vercel.app/board/studio?intro=1 . Built: waiting
 spirits from the spirit generator's pixel renders (`public/studio/sprites/spirits.png`, 18 bases x 5 elements, one stable
