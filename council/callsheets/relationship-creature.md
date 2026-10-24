@@ -370,3 +370,13 @@ TRIGGER: his answer on board step `robe-slit-look-01`. A or B: an Opus technical
   5. tools/figure-legs-probe.mjs across walk, idle, sit x 4 builds x 3 cuts: zero legs through, zero void pixels through slits; in CI.
 - Then the same fix carries to the creator robe in sprout #72 (garment rule, docs/3d-math.md rule 8).
 - Reply with a hosted preview opened at the mirror (`?mirror=1` on preview hosts).
+
+### Robe layers build, after the build (2026-10-24)
+
+Built on bars-engine draft #435 (branch claude/project-thread-ll9mft, head eff52d4, stacked on #433): indigo trousers always drawn, lined robe (`colorsOf().lining`: saffron plum #6a2238, violet dark ochre #8e6224), robe.glb skinned with hemF/hemB driven by lead/trail thigh plus two knee fold bones (bakes deleted), mask from `tools/figure-cover.mjs` -> `robe-cover.json`, `tools/figure-legs-probe.mjs` in CI. Probe: walk and idle 0 through / 0 void (slender idle 10); sit 25-80 through per build and cut (516 total, threshold set there). Stills: /mnt/project-files/3d-build/robe-layers-2026-10-24/ (sheet.jpg, live-mirror.jpg).
+
+Next thread (Sonnet for 1-2, Opus for 3):
+1. Find #435's Vercel preview, open it at `?mirror=1`, and post look step `robe-layers-look-01` on the board with that link and sheet.jpg: A yes, B yes with a note, C another round. Fold in the three positions that stand unless he flips them: the seated robe pools on the floor with the back spread behind it; violet's lining is dark ochre; the robe has 2 cm of extra room over the hips and thighs.
+2. Own and watch #435 (CI, review).
+3. Carry the same fix to the creator robe in sprout #72 (add_repo wendell-britt/sprout): figure.js gets the same changes as bars-engine public/between/wardrobe.js + figure-robe.js + look.js lining.
+Sit poke is the one gap left (round 2 if he notes it).
