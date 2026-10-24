@@ -12,8 +12,9 @@ scrim. CCGS art-director review of round 1: `/mnt/project-files/studio-tycoon/re
 round 2: `/mnt/project-files/studio-tycoon/rebuild-2/`. Not checked: a real phone; fonts (stills were taken without
 Google Fonts); the crew still stand in one row in front of the working houses when idle.
 
-Brief: Boat round 3 (fresh Opus thread, owns #429, waits on his note on `ty-boat-look-1` per hx-looks-gate). Take his
-note first. Then the review's open items: break the two storeys of wall-to-wall houses into fewer, gapped houses
+Brief: Boat round 3 (fresh Opus thread, owns #429, waits on his note on `ty-boat-look-1` per hx-looks-gate). (1) Confirm the
+#429 `check` job is green on 10fd9e3 (4a0e14f failed on one lint error, likely the `const S = this` that 10fd9e3
+removes); if not, fix the lint and push. (2) Take his note. Then the review's open items: break the two storeys of wall-to-wall houses into fewer, gapped houses
 (review fix 1, a layout change in `world.ts`), a night multiply layer, letter text in plain words instead of the
 callsheet line, and spread idle crew. Then the move: a crew card dragged onto a waiting spirit sends its brief.
 
