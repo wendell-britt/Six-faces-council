@@ -509,3 +509,12 @@ with the clothing differently". Today shape and build are bone scales (wardrobe.
 3. Build: shape keys on the body and matching corrective shape keys on the robe/sash/pants (robe-baked needs a bake
    per key or a delta set), mask bands per body; keep subtle ones (slender, shoulders) as bone scales.
 4. Probe as tools/figure-legs-probe.mjs does, at each body. Preview at ?sheet=look on the Between.
+
+## Mirror light and standing idle build (brief, 2026-10-24)
+
+TRIGGER: his yes on board step `lt-mirror-look-01`. A note instead starts a second lighting round from it. Opus thread, bars-engine, stacked on room kit #431 (branch claude/project-thread-q2xj75).
+
+- Design page: https://claude.ai/artifact/GVQ24jwUAMUEMGDC2JMRtW (source /mnt/project-files/between/lighting/mirror-light.html). Positions `lt-true-colours`, `lt-idle-default`.
+- Still-maker and probe: /mnt/project-files/between/lighting/still.html + shoot.cjs render the real nook with hollow.js and wardrobe.js headless and print figure vs room L*. Proposed: mirror figure 30 vs room 4 (now 18 vs 4); walking past the hearth figure 21 vs room 20 (now 1 vs 20). Target: figure at least 15 L* above the room around it.
+- Build: (1) mirror mode (garden.js setMirror) adds a warm key SpotLight (~6) and a cool low fill (~3.5) from the mirror frame aimed at chest and face, and two narrow back SpotLights (cool 14, warm 8) aimed only at the figure; on only while mirroring. (2) waveLight stays on low and warm as a travelling key aimed at the player; no new light. (3) player figure materials get userData.noPaint (wardrobe.js) so dye and skin swatches match what shows. (4) Mid-stride pose: setWalking holds acts.Walk at time 0 for dressed figures because the robe is baked on the Walk. Fix: a CMU mocap idle retargeted with 3d-build/autorig-mocap-2026-10-18/scripts/retarget.py (quaternions, docs/3d-math.md), the robe baked over it (blender-cloth-bake), an Idle action whenever stationary and not sitting, and a test for that rule. (5) Per-style strengths in calrunia/room-styles.js. (6) Phone frame time measured.
+- Garment rule (council #375) and docs/3d-math.md apply. Reply with a hosted preview opened in mirror mode.
