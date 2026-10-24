@@ -163,3 +163,12 @@ watches bars-engine #432 to merge (it merges by itself when checks pass) and the
 - TRIGGER: his answer on sd-ship-look-1. A or B: a Sonnet thread marks sprout #73, bars-engine #432 and council #381
   ready, lets them merge, then closes bars-engine #399 as replaced by #432. C: a fresh Opus thread starts the second
   round from his note. After the merges, the next art round is Still B's gaps (ring terrain, the floor light, the bud).
+
+## 2026-10-24: the look carries over (boat-grid-carry-tao B)
+
+- His answer: the studio ships' look carries to the living ship only, not Calrunia. Position `boat-grid-living-flow`.
+  Still 2 of https://claude.ai/artifact/AJ13wyGbd31nYoYrS3F2Pt shows it (source
+  `/mnt/project-files/studio-tycoon/flow-ships/flow-ships.js`, `FlowShips.living`): no symbols, the shell cut open
+  along a flowing edge, one floor through Hearth, Garden, Den and Door, five qi currents braided on the skin and
+  trailing from the whorl, a chamber budding at the rim. The next living ship art round (after sd-ship-look-1) starts
+  from it.
