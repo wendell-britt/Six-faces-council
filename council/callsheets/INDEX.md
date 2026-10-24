@@ -5,7 +5,7 @@ Read this file, then the one sheet for your strand. At the end update that sheet
 profile its threads load (docs/ontology-in-flows.md).
 
 ## Open strands
-- [studio-lot](studio-lot.md), 2026-10-23: first boat deck (bars-engine #429) rejected as a dashboard, not a world; next an art-direction thread (reference board, player-POV spec, mood stills for his look) before any rebuild.
+- [studio-lot](studio-lot.md), 2026-10-24: he picked still A; the Lantern deck rebuilt in Phaser 3 on bars-engine #429 (houses as strands, letter and seals, pull-back); next round 2: preview look step, art-director check, crew walk cycle and real spirits.
 - [work-dbt](work-dbt.md), 2026-10-23: his five answers recorded (work-dbt 2); clinician step on the board; next pass work-dbt 3 on the face table and harm gate with the wise-mind steer, then update bars-engine #427.
 - [story-pipeline](story-pipeline.md), 2026-10-21: the study behind `ttv-cmvicm0aj` is written (`council/story/PIPELINE.md`, twelve findings with sources) and the pipeline has a check (`council/story/check.py`, `tests/test_story_pack.py`); five tools added to the toolbox, inkjs still the only runtime; the first pack is written (`council/story/packs/calrunia/chapter1/beats.yaml`, 8 beats, 25 assets, check passes) and cites sprout's own beat table (PR #66) for its gates; next the Challenger's reading, then the Regent's asset pass.
 - [cave-controls](cave-controls.md), 2026-10-21: phone camera and touch research done (https://claude.ai/artifact/BwBweZR865zrKckj9tCVMY); five `ctl-*` positions (split thumbs, tap rule, generous taps, gentle camera, still mode); next a fresh Opus bars-engine thread builds controls round 1 with a preview link.
