@@ -33113,6 +33113,31 @@
      "shaman"
     ],
     "pass": "room-kit-2026-10-23"
+   },
+   "br-skip-home-preview": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:35:04.508Z",
+    "record": "council/ledger/2026-10-24-pull-003538.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "between-rooms3"
+   },
+   "br-orient-each-invite": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T00:35:38.978Z",
+    "record": "council/ledger/2026-10-24-pull-003538.json (six-faces-council)",
+    "steer": "If they’ve already done the introduction they don’t need this. This is for people who are being invited to rooms who already have their own",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "between-rooms3"
    }
   },
   "questions": {
