@@ -12673,6 +12673,28 @@
    "auto": true,
    "pos": "The ship opens on the whole cutaway. Follow the work (tap the ship) zooms the camera to about twice the size and turns every six seconds between the cabin that waits on you (pulsing lamp, letter, bubble, crew gathering, the bell ringing) and a crew member carrying a crate. This stands unless you flip it.",
    "why": "Your keep list on ts-ship-look-1: \"zooming into what was pulling attention based on its movement and needs\". Mock: https://claude.ai/artifact/9W13HHYCqpNQcKyDqbDMb3"
+  },
+  {
+   "id": "lt-true-colours",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "between-lighting",
+   "auto": true,
+   "pos": "Your figure keeps its true colours: the painterly shader's warm ramp is not applied to player figures, so the dye and skin you pick are what you see. Stands unless you flip it.",
+   "why": "The dye swatches must match what the player sees in the mirror. Source: council/callsheets/relationship-creature.md"
+  },
+  {
+   "id": "lt-idle-default",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "between-lighting",
+   "auto": true,
+   "pos": "Characters stand when they are not moving or sitting: a stationary figure plays a real idle clip (CMU mocap, retargeted with our script, robe baked over it), never a frozen walk frame, and a test holds the rule. From Wendell's note of 24 October.",
+   "why": "A frozen walk frame shows a mid-stride pose. Source: Wendell's note, 2026-10-24; council/callsheets/relationship-creature.md"
   }
  ],
  "questions": [
@@ -19949,6 +19971,29 @@
      "v": "D",
      "label": "D. Not yet",
      "c": "A second round of stills from your note before any code."
+    }
+   ]
+  },
+  {
+   "id": "lt-mirror-look-01",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "between-lighting",
+   "q": "Does the lit mirror read?",
+   "why_you": "The Between's mirror showed a dark figure on a dark wall. The design page proposes candle sconces on the mirror aimed at you, back lights that set the robe off from the wall, a soft light that travels with you when you walk, your figure in its true colours (the painterly ramp left off your body), and a real standing idle in place of the frozen walk frame. Look at the stills at https://claude.ai/artifact/GVQ24jwUAMUEMGDC2JMRtW, then say yes to start the build, or leave a note for a second lighting round.",
+   "not_before": "The lighting stills are on the design page.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "A. Yes, build it",
+     "c": "Starts the mirror light and standing idle build in bars-engine, stacked on the hollow kit."
+    },
+    {
+     "v": "not-yet",
+     "label": "B. Not yet (note)",
+     "c": "Leave a note and a second lighting round runs before any build."
     }
    ]
   }
