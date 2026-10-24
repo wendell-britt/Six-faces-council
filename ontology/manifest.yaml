@@ -101,6 +101,8 @@ binding_decisions:
     path: ontology/v0.1/source/council-phase-a/creative-reuse-meaning/reconstruction-and-decision.md
   privacy_consent_authority:
     path: ontology/v0.1/source/council-phase-a/privacy-consent-authority/reconstruction-and-decision.md
+  depth_over_flatland:
+    path: ontology/v0.1/source/council-phase-a/depth-over-flatland/owner-decision.md
 
 historical_material:
   root: ontology/v0.1/source/council-phase-a
