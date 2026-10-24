@@ -34652,6 +34652,31 @@
      "architect"
     ],
     "pass": "robe-layers-2026-10-24"
+   },
+   "boat-grid-look-3-retired": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T16:31:49.180Z",
+    "record": "council/ledger/2026-10-24-pull-163156.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "board-read-2026-10-24-1620"
+   },
+   "deprecate-then-compost": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T16:31:56.298Z",
+    "record": "council/ledger/2026-10-24-pull-163156.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage",
+     "architect"
+    ],
+    "pass": "board-read-2026-10-24-1620"
    }
   },
   "questions": {
