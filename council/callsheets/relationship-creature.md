@@ -468,3 +468,21 @@ screens further; the kit lands as a new pull request stacked on #428 once his ye
 - Portability check: the Cave of Lessons or Big Mind lists its own spots and calls `applyRoom` with no kit changes.
 - Done: Vercel preview link opened at the nook (skip-ahead param past orientation, his testable-preview rule), screenshots
   beside each still in `/mnt/project-files/between/room-kit/build/`, two-player test of placing in a shared room.
+
+### Room kit build, round 1 (2026-10-24, thread "Build the Between room kit")
+His yes to rk-still-nook, rk-still-scroll, rk-still-minute (board read 00:32, no notes). bars-engine draft #431
+(branch claude/project-thread-q2xj75, stacked on #428). Part 1 cd8987a: `public/calrunia/room-kit.js` (SHELLS, ITEMS,
+applyRoom, place/lift helpers, room-kit.test.ts), homeroom = shell `nook`, satchel placing, shared-room owner rule,
+`placed` in the garden JSON. Preview params `?satchel=all&nook=1`. Summary and renders:
+`/mnt/project-files/between/room-kit/build/part1-summary.md`. Part 2 (scroll, first minute, two-player test) was
+running in a worker when the thread hit the 150k line; its report is `part2-summary.md` in the same folder.
+br-orient-each-invite steer (00:35): anyone who did the first minute skips per-invite orientation.
+
+### Brief: room kit, finish round 1 (Sonnet is fine unless part 2 is missing)
+- Read `part1-summary.md` and `part2-summary.md` in `/mnt/project-files/between/room-kit/build/`. If part 2's summary
+  or commit on claude/project-thread-q2xj75 is missing, build part 2 from "Brief: room kit build" above (Opus).
+- Own bars-engine #431: subscribe, get the Vercel preview green, update the PR body with part 2.
+- Give Wendell the one-click preview opened at the nook (`/ontology-game/between?satchel=all&nook=1` on the #431
+  preview), plus `?minute=1` and the scroll param from part 2, and the side-by-side renders beside each still, as a
+  board step (his look), not chat questions. Choices the workers made that he may want to flip go on the board as
+  positions. Then hand off and resolve.
