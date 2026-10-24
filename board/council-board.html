@@ -1300,7 +1300,8 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeB
 // ---- Your eyes ----
 const eyDrafts = {};
 document.addEventListener('input', e => { const m = /^eyn-(.+)$/.exec(e.target.id || ''); if (m) eyDrafts[m[1]] = e.target.value; });
-const stDep = s => !!(s && s.deprecated && !s.retired);
+// A step is deprecated by its own mark or by its strand's (the list's), so one tap closes everything downstream.
+const stDep = s => !!(s && !s.retired && (s.deprecated || (stLists[s.list] || {}).deprecated));
 const eyIs = (id, s) => s.look === true || (s.look !== false && /(^|-)(look|try|play|squint)(-|\d|$)/.test(id));
 const eyStill = s => [s.still, ...stFiles(s).filter(f => (f.kind || (f.src ? 'image' : '')) === 'image').map(f => f.src)].find(stImg) || '';
 const eyTitle = s => s.lookTitle || (stFiles(s)[0] || {}).title || (stLists[s.list] || {}).title || 'A look';
@@ -1373,6 +1374,19 @@ document.addEventListener('click', async e => {
   stSteps[id] = {...s, ...patch}; renderSteps();
   try { await db.doc('steps/' + id).update(patch); }
   catch (err){ stSteps[id] = s; renderSteps(); const s2 = document.getElementById('sdp-' + id) || document.getElementById('eys-' + id) || document.getElementById('sns-' + id); if (s2) s2.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
+// A strand is a list. Deprecating it marks the list, and every step in it reads as deprecated (stDep), so he does not
+// deprecate each downstream step (Wendell, 2026-10-24, on ts-ship-look-1). One compost round covers the strand.
+document.addEventListener('click', async e => {
+  const t = e.target.closest('[data-ldep],[data-ldepundo]'); if (!t) return;
+  const undo = !!t.dataset.ldepundo, id = t.dataset.ldep || t.dataset.ldepundo, l = stLists[id];
+  const box = document.getElementById('ld-' + id), st = document.getElementById('sld-' + id);
+  if (!l) return;
+  if (!db){ document.getElementById('banner').classList.add('on'); return; }
+  const patch = undo ? {deprecated: null} : {deprecated: {at: new Date().toISOString(), note: ((box && box.value) || '').trim()}};
+  stLists[id] = {...l, ...patch}; renderSteps();
+  try { await db.doc('lists/' + id).update(patch); }
+  catch (err){ stLists[id] = l; renderSteps(); const s2 = document.getElementById('sld-' + id); if (s2) s2.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
 });
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
@@ -1473,7 +1487,7 @@ function stFile(id, s, f){
 }
 function stStep(id, s){
   if (stLater(s) && !blkIs(s)) return `<li class="st-step st-later" id="s-${id}"><span class="st-tick" aria-hidden="true">${esc(s.n)}</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-later-note">Needs a computer${s.due ? ` · due ${esc(stFmt(s.due))}` : ''}. Switch to Computer above to see the whole step.</p></div></li>`;
-  if (stDep(s)) return `<li class="st-step st-done st-dep" id="s-${id}"><span class="st-tick" aria-hidden="true">⌛</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src"><strong>Deprecated</strong> ${esc(stFmt(String(s.deprecated.at || '').slice(0, 10)))}. It waits for a compost round: the six faces read what worked and what did not, and write it down for the next round.${s.deprecated.note ? ' You said: ' + esc(s.deprecated.note) : ''}</p><button type="button" class="st-btn" data-undep="${id}">Bring it back</button> <span class="st-state" id="sdp-${id}"></span></div></li>`;
+  if (stDep(s)) return `<li class="st-step st-done st-dep" id="s-${id}"><span class="st-tick" aria-hidden="true">⌛</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src"><strong>Deprecated</strong>${s.deprecated ? ' ' + esc(stFmt(String(s.deprecated.at || '').slice(0, 10))) + '. It waits for a compost round: the six faces read what worked and what did not, and write it down for the next round.' + (s.deprecated.note ? ' You said: ' + esc(s.deprecated.note) : '') : ' with its strand. The strand waits for a compost round.'}</p>${s.deprecated ? `<button type="button" class="st-btn" data-undep="${id}">Bring it back</button> <span class="st-state" id="sdp-${id}"></span>` : ''}</div></li>`;
   if (s.retired) return `<li class="st-step st-done" id="s-${id}"><span class="st-tick" aria-hidden="true">–</span><div class="st-body"><p class="st-do">${esc(s.do)}</p><p class="st-src">${esc(s.retired)}</p></div></li>`;
   const where = s.where ? `<div class="st-row"><span>Where</span><div class="st-val">${stHref(s.href) ? `<a href="${esc(s.href)}" target="_blank" rel="noopener">${esc(s.where)}</a>` : esc(s.where)}${stHref(s.href2) ? `<br><a href="${esc(s.href2)}" target="_blank" rel="noopener">${esc(s.where2 || 'Then open this')}</a>` : ''}</div></div>` : '';
   const enter = s.enter ? `<div class="st-row"><span>Enter</span><div class="st-val"><code id="sv-${id}">${esc(s.enter)}</code><button type="button" class="st-btn" data-copy="sv-${id}">Copy</button></div></div>` : '';
@@ -1521,7 +1535,9 @@ function stList(id, l, skip = new Set()){
     <div class="st-meta"><span class="st-repo">${esc(l.repo||'')}</span><span class="st-count">${count}${withdrawn ? `, ${withdrawn} withdrawn` : ''}</span>${nextTxt}${(() => { const pc = req.filter(([,s]) => !s.done && s.device === 'computer').length; return pc ? `<span class="st-chip st-pc">${pc} need${pc === 1 ? 's' : ''} a computer</span>` : ''; })()}</div>
     <h2 style="margin:0">${esc(l.title)}</h2>
     ${l.why ? `<p class="st-why">${esc(l.why)}</p>` : ''}${l.source ? `<p class="st-src">From ${esc(l.source)}</p>` : ''}
-    <div class="st-bar" aria-hidden="true"><i style="width:${pct}%"></i></div></header>
+    <div class="st-bar" aria-hidden="true"><i style="width:${pct}%"></i></div>
+    ${l.deprecated ? `<p class="st-src"><strong>Strand deprecated</strong> ${esc(stFmt(String(l.deprecated.at || '').slice(0, 10)))}. Every step below waits for one compost round: the six faces read what worked and what did not, and write it down for the next round.${l.deprecated.note ? ' You said: ' + esc(l.deprecated.note) : ''}</p><button type="button" class="st-btn" data-ldepundo="${id}">Bring the strand back</button> <span class="st-state" id="sld-${id}"></span>`
+      : `<details class="st-ldep"><summary>Deprecate this whole strand</summary><textarea id="ld-${id}" placeholder="Why we are leaving this behind. The compost round starts from it."></textarea><button type="button" class="st-btn" data-ldep="${id}">Deprecate the strand</button> <span class="st-state" id="sld-${id}"></span></details>`}</header>
     ${open.length ? `<ol class="st-steps">${open.map(([sid, s]) => stStep(sid, s)).join('')}</ol>` : ''}${closedHtml}</article>`;
 }
 function renderSteps(){
