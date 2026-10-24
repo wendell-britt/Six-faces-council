@@ -23,6 +23,13 @@ localStorage). (5) Preview link opened at `?strand=<one with a letter>` as look 
 (`ts-fanout`: board-pull firing the Board Send routine, a SessionStart hook listing new steers) are a separate
 board-plumbing thread, not this one.
 
+Rulings from his 2026-10-24 02:03 saves, to build from (round C brief, add-on):
+- `bw-strand-fade` = A: a strand fades and leaves a seed. `bw-first-move` = "Answer letters".
+- `bw-crew-are-hands` stands, his steer: "Crew should be about what and how. Spirits are about why. The goal of the game is to leverage emotional charge into effective leveraged action. The goal for players is to make more deft decisions with the most effective use of resources and the purpose is to integrate the inner and outworks motivations toward making jaw droppingly excellent work with AI"
+- `bw-board-keeps-the-rest` OVERRULED, his steer: "Tap the vein needs to be a move one can do on the boat. This is how the boat mines emotional energy. This is where vibeluons come in in a big way"
+- `bw-spirit-is-strand` OVERRULED, his steer: "Spirit is the emotional energy and magic fueling the work"
+- Also stand: `ty-boat-departments`, `bw-talk-is-save`, `bw-lines-from-record`, `bw-answer-is-care`, and the seven `ts-*` rows.
+
 Tall ship, round A 2026-10-24 (thread "Rework boat as a tall ship", from his note on `ty-boat-look-2`: click a spirit's
 or player's message to open its card and steer; the skiff is overdone and too long, use a cross-section of a larger
 tall ship, keep the vibe, rooms correspond to the pipeline, maybe oriented along it; a steer updates the repo and sends
