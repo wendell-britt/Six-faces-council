@@ -166,3 +166,5 @@ button)' names saves already on main: brief the board read to act on those rows 
 owns its strand, republish the board) even if pull.py records nothing.";
 (3) a board step for him: claude.ai/code/routines, open the Board Send task, Edit, Trigger +, API, Generate token; add
 it as repo secret SEND_ROUTINE_TOKEN in Six-faces-council. Then run board-pull by hand and read "Board Send fired".
+
+2026-10-24 (Fan-out, finish): hook and routine line landed (hook on #379, routine prompt by the coordinator). Board list `send-routine-token`, steps 01 (generate the routine's API token) and 02 (`read -rs` into repo secret SEND_ROUTINE_TOKEN) written to both boards. Open: his two steps, then run board-pull by hand and read "Board Send fired".
