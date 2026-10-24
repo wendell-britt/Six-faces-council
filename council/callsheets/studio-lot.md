@@ -1,6 +1,23 @@
 # Studio lot (the studio game)
 
 ## Next
+Boat moves, design answer 2026-10-24 (thread "Map board moves onto the spirit boat"): page
+https://claude.ai/artifact/Q9BL7o2wJMAPSoQU6cyyAr (source `/mnt/project-files/studio-tycoon/boat-moves/boat-moves.html`),
+rows `council/callsheets/rows/boat-moves-2026-10-24.json` on both boards. The boat writes nothing today (only
+localStorage `studioBoat.*`; it reads INDEX.md and loops, no questions, positions or steps). Positions `bw-spirit-is-strand`,
+`bw-crew-are-hands`, `bw-talk-is-save`, `bw-lines-from-record`, `bw-answer-is-care`, `bw-board-keeps-the-rest`.
+Questions `bw-first-move` (A letters first, recommended; B crew onto spirit per ty-order) and `bw-strand-fade`.
+
+Brief: Boat round 4, letters (fresh Opus thread after round 3; owns #429 or its successor; read `bw-first-move` first and
+build the crew move instead if he picks B). (1) deck.ts also loads open questions and positions from board_data.json on
+main, each tied to its strand (by `pass` or callsheet name; unmatched rows go to the wheelhouse). (2) A spirit with a
+letter shows it at the bell; one wax seal per option, "Not tonight" (defer), and "say something else" (steer, saved as
+typed). Positions are the rule over the door: nod (stands), change it plus words (overrule), take it down (retire).
+(3) The spirit says back what it heard, then the page POSTs the board's own save shape to /api/board/saves (reuse the
+board shim, src/lib/board/shim.ts; no schema change). Lines come from the row text, no live model. (4) Test: a save
+from the boat matches tests/fixtures/board-saves. Preview link opened at `?strand=<one with a letter>` on the board as a
+look step.
+
 Round 3 split 2026-10-24 (thread "Group the boat into departments"): #429 `check` is green on 10fd9e3 (step 1 done). His
 note on `ty-boat-look-1` is recorded as position `ty-boat-departments`. The thread passed the context line before
 building, so the build is the brief below.
