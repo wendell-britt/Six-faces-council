@@ -12728,6 +12728,17 @@
    "auto": true,
    "pos": "The look leans on Spiritfarer: a flat barge carrying stacked cabins with their own roofs and roof gardens, ladders between every pair of stacks, daylight pastels, side view with a little depth. Kept from your looks: crew visibly walking and climbing between cabins with one always mid-trip, a lamp and desk in each built cabin, the waiting cabin glowing, follow camera preferring a climber. The hold keeps the vein and the crew berths. This stands unless you flip it.",
    "why": "Your note: \"I do think we can lean on spirit farer a little bit more\", and the keep list in council/callsheets/studio-lot.md. Reference: Spiritfarer build mode (studio-tycoon/walkable-ship/img/8-spiritfarer-boat-stack.jpg)."
+  },
+  {
+   "id": "lt-soft-light",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "between-lighting",
+   "auto": true,
+   "pos": "Figures are lit softly from many sides at phone cost: a one-time snapshot of each room lights the player figure from the directions its colours come from, light wraps softly past the body's edge, and every added light fades with no hard edge. From Wendell's note of 24 October on round 1.",
+   "why": "His note: light edges too harsh, light directions too singular. Source: council/callsheets/relationship-creature.md"
   }
  ],
  "questions": [
@@ -20027,6 +20038,29 @@
      "v": "not-yet",
      "label": "B. Not yet (note)",
      "c": "Leave a note and a second lighting round runs before any build."
+    }
+   ]
+  },
+  {
+   "id": "lt-mirror-look-02",
+   "faces": [
+    "regent",
+    "architect"
+   ],
+   "pass": "between-lighting",
+   "q": "Is the softer mirror light right?",
+   "why_you": "Your note on round 1: better, but the light edges were harsh and each light came from one side. Round 2 wraps your figure in the room's own light from every side, lets light bend softly round your body, and uses lights with no hard edges, at one fewer light than round 1. Look at the stills at https://claude.ai/artifact/2TC2ewz3tG63hVwaPUeaGo, then say yes to start the build (with the standing idle), or leave a note for a third round.",
+   "not_before": "The round 2 stills are on the page.",
+   "options": [
+    {
+     "v": "yes",
+     "label": "A. Yes, build it",
+     "c": "Starts the mirror light and standing idle build in bars-engine, stacked on the hollow kit."
+    },
+    {
+     "v": "not-yet",
+     "label": "B. Not yet (note)",
+     "c": "Leave a note and a third lighting round runs before any build."
     }
    ]
   }
