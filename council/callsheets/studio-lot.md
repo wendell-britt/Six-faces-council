@@ -2,6 +2,37 @@
 
 ## Next
 
+
+Brief: Face ships round 8, rooms grow upward (thread "Face ships round 8, rooms grow upward"; starts 2026-10-24 per his
+note on `boat-grid-look-7`, ledger `2026-10-24-pull-182659`). His note, verbatim: "We’re doing well now. The zoomed out
+rooms I think we can move back to the monument valley style pseudo 3d space. The rooms also develop through altitude
+internally and sepearately from other rooms as a function of gameplay skill development of their respective minigame.
+Enough skill development collectively at an altitude unlocks the larger ship type The issues with the current room
+visually is that is tall and not using much of the altitudinal real estate and most of the work is being done
+horizontally. There’s a sense of top down understanding of how the work is being done in the various room and some sense
+of it being done at a higher level. This could be that the players in the room are leveled up (which means we want a 3d
+space to cover more ground instead of liners horizontal) OR that there are literal floors within a room. Now I say this
+aloud I’m leaning toward leveled up actors and roles". Do NOT read the board step (base64 stills); the note is complete.
+Keep list from his looks: round 7 "doing well" (fleet as pipeline, rooms named by machine, minigame per room, blocker as
+fuel, the tide and the harbour, Flatland); round 6's beads, jams as things, amber only for alarm, nested skins; the
+walkable ship's Monument Valley axonometric (`walkable-ship/scene.js`, his 10-24 steer "3 dimensional but represented in
+2d (monument valley style)").
+Working reading (the thread may amend it, and says so): (1) The ship view (rooms zoomed out) returns to one fixed
+axonometric, Monument Valley style: flat colour planes, stairs and walkways as lit ribbons, tiny crew. (2) Altitude is
+per room: each room levels separately from skill in its own minigame. (3) His lean wins: altitude shows as leveled-up
+actors and roles, not floors. A low room is one apprentice at one station on a line; a high room is a 3D floor that
+covers more ground in depth, more stations, a master who sees the whole room from above (the "top down understanding")
+with apprentices in reach. (4) Altitude reads on the room's trim and the crew's robes (UI covenant: altitude = border),
+never a number panel. (5) Enough rooms at one altitude unlock the next, larger ship type for that face; the unlock shows
+as the next hull's silhouette waiting, not a progress bar.
+Steps: refs by a Sonnet worker (Monument Valley, our walkable ship, games where leveled staff widen a room: Two Point
+Hospital, Kairosoft, Spiritfarer upgrades, Hades' house contractor, Overcooked), `gameplay-loop-r8.md` with the altitude
+model and the first 60 seconds, 1-2 stills (A: one ship zoomed out in the axonometric with rooms at different
+altitudes and the next hull waiting; B: one room at a low and a high altitude side by side), art director check
+(Sonnet, CCGS role), look page, look step `boat-grid-look-8` (list `studio-lot-boat`, n 13) on both stores, rows file,
+callsheet. No build; bars-engine #429 untouched. Output folder `/mnt/project-files/studio-tycoon/altitude-r8/`.
+
+Earlier (round 7 done, superseded by the round 8 note):
 Waiting on his look at `boat-grid-look-7` (list `studio-lot-boat`, n 12; page https://claude.ai/artifact/EMRM5oFyFqwCbHZkuogRpe).
 On his yes: "Fleet zoom build" (fresh Opus thread, art settled first per hx-looks-gate): a playable zoom from fleet to ship
 to the loom room, ported from `flow-blockers-r7/fleet-r7.js` and `loom-r7.js`, hosted on bars-engine `/board/studio`
