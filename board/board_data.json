@@ -12902,6 +12902,37 @@
    "auto": true,
    "pos": "The living ship takes the same flow look at its next art round: its shell, roots and round door stay; it opens along a flowing edge, one floor rises and falls through its chambers, the five currents of qi braid along its skin and trail from the whorl, and new chambers bud at the rim. Calrunia's places keep their own looks. This stands unless you flip it.",
    "why": "Your answer B on boat-grid-carry-tao (2026-10-24): carry the look to the living ship only."
+  },
+  {
+   "id": "rl-sit-pool",
+   "faces": [
+    "architect",
+    "shaman"
+   ],
+   "pass": "robe-layers-2026-10-24",
+   "auto": true,
+   "pos": "When the figure sits, the robe pools on the floor around it with the back spread out behind, the way a robe falls on a cushion. This stands unless you flip it.",
+   "why": "The robe layers build (bars-engine #435), from the garment rule: the cloth follows the body, it does not hide it."
+  },
+  {
+   "id": "rl-violet-lining",
+   "faces": [
+    "shaman"
+   ],
+   "pass": "robe-layers-2026-10-24",
+   "auto": true,
+   "pos": "Violet's robe is lined in dark ochre, and saffron's in plum. This stands unless you flip it.",
+   "why": "The robe layers build (bars-engine #435): each robe gets a darker lining that reads in the slits."
+  },
+  {
+   "id": "rl-hip-room",
+   "faces": [
+    "architect"
+   ],
+   "pass": "robe-layers-2026-10-24",
+   "auto": true,
+   "pos": "The robe carries 2 cm of extra room over the hips and thighs, so the legs never press through it when they move. This stands unless you flip it.",
+   "why": "The robe layers build (bars-engine #435): the probe showed legs through the cloth without it."
   }
  ],
  "questions": [
