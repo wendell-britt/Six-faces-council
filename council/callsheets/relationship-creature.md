@@ -353,7 +353,7 @@ His note on round 2 (thread "Soften the Between lighting", 2026-10-24 04:10 UTC)
 - Frame time: headless Chromium with software GL, CPU 4x, 390x844, median ms per frame. Mirror 266.7 before, 333.4 after; walking 300 and 300. Software GL is not a phone.
 - Standing idle: CMU 77_02, retargeted with quaternions (tools/mocap/retarget_idle.py; roll residual under 3 degrees, feet within 2 cm). The idle robe is the walk bake's mesh skinned over the Idle, not a cloth sim (the J5 cloth robe is not in bars-engine). The rule is in public/between/stance.js, with a test.
 - Not checked: a real phone, the walk-to-idle crossfade in motion, other looks and bodies, moonlit live.
-- Next. TRIGGER: his pick on `lt-mirror-look-03b` (03 was answered "None yet" for lack of examples; 03b carries them). 3b, or no answer: a Sonnet thread marks #433 ready once #428 and #431 merge. 3a or 3c: a Sonnet thread changes the one `FIGURE_LIGHT` row (values in r3/probe.json's queries: 3a wrap .35, kMirror .65, warm 5.5, cool 1.8, rim 9, edge .28; 3c wrap .1, kMirror .3, warm 8, cool 1, rim 12, edge .22) and pushes. A note: an Opus thread runs round 4 with still2.html.
+- Next. He picked 3c on `lt-mirror-look-03b` (2026-10-24, no note; 03 had been answered "None yet" for lack of examples). The thread "Land mirror light and idle" switches #433's `FIGURE_LIGHT` row to 3c (values in r3/probe.json's queries: 3c wrap .1, kMirror .3, warm 8, cool 1, rim 12, edge .22), pushes, and marks #433 ready once #428 and #431 merge. A phone-lag note would start round 4 with still2.html.
 
 ## Robe slits: layers, lining and a leg-driven hem (brief, 2026-10-24)
 
