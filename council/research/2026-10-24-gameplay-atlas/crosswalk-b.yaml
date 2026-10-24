@@ -1,0 +1,960 @@
+# crosswalk part b: Combine & allocate, Control & respond
+- id: combat-stamina-budget
+  gist: One pool of effort pays for both striking and guarding, so every action trades against safety.
+  claim: {tracks: effort pool, rewards: spending wisely, gates: acts when pool empty, remembers: '-', permits: attack or defend within the pool, changes: 'pool level, openness to harm'}
+  ontology: [MoveDefinition, Rule, State]
+  fit: gap
+  note: needs a named spendable meter with refill rule (ResourceMeter); a rest option maps to rest and recovery as valid play
+  strands: [spar, calrunia]
+- id: combat-timed-parry
+  gist: A guard pressed at the exact instant of an incoming blow turns it aside and opens the foe.
+  claim: {tracks: blow timing, rewards: precise timing, gates: parry only inside window, remembers: '-', permits: deflect, changes: foe openness}
+  ontology: [MoveDefinition, Performance, MoveResolutionRecord]
+  fit: gap
+  note: needs TimingWindow; performance is evidence of the move, not of inner state (practice_performance invariant)
+  strands: [spar]
+- id: combat-invulnerable-dodge
+  gist: A short dodge makes you untouchable for a few frames, so bold stepping through danger is the skill.
+  claim: {tracks: dodge window, rewards: safe passage, gates: dodge needs window and cooldown, remembers: '-', permits: pass through danger, changes: 'position, exposure'}
+  ontology: [MoveDefinition, Performance]
+  fit: gap
+  note: TimingWindow again; the safety is a rule of the move not a claim about the player
+  strands: [spar]
+- id: combat-posture-break
+  gist: Hits fill a foe stagger meter and a full meter gives you a free punish moment.
+  claim: {tracks: foe stagger meter, rewards: punish opening, gates: punish only when full, remembers: meter during fight, permits: heavy strike, changes: foe stance}
+  ontology: [Mechanic, State, MoveDefinition]
+  fit: partial
+  note: needs ResourceMeter on a WorldAgent; for spar, a daemon spirit staggered is a state of the spirit, not harm to the daemon
+  strands: [spar]
+- id: combat-weakpoint-aim
+  gist: Aiming at a marked vulnerable spot does more than hitting anywhere.
+  claim: {tracks: target region, rewards: bonus for precision, gates: bonus only on region, remembers: '-', permits: pick where to strike, changes: damage dealt}
+  ontology: [MoveDefinition, Rule]
+  fit: covered
+  note: a MoveDefinition with target parameter; element-controlling moves in spar are the same shape
+  strands: [spar]
+- id: combat-part-destruction
+  gist: Breaking a part of the foe removes one of its abilities for the rest of the fight.
+  claim: {tracks: foe parts, rewards: lost ability for foe, gates: part must be broken first, remembers: broken parts this fight, permits: target a part, changes: foe move set}
+  ontology: [Mechanic, WorldElement, State]
+  fit: partial
+  note: needs encounter-scoped State on a WorldAgent part; resets at EncounterEndRecord, no lasting harm
+  strands: [spar]
+- id: combat-cover-flanking
+  gist: Standing behind cover protects you; reaching the foe side exposes them.
+  claim: {tracks: 'positions, cover', rewards: safe angle, gates: exposure by facing, remembers: position, permits: move to flank, changes: who is exposed}
+  ontology: [Mechanic, WorldElement, Rule]
+  fit: covered
+  note: spatial Rule on WorldElement; no object needed
+  strands: []
+- id: combat-surface-reactions
+  gist: Elements laid on the ground react with each other, making fire, steam or shock out of terrain.
+  claim: {tracks: 'ground element, elements', rewards: clever combos, gates: reaction by pairing, remembers: ground state, permits: combine elements, changes: 'terrain state, effects'}
+  ontology: [Mechanic, WorldElement, Rule]
+  fit: gap
+  note: needs TriggerRule (condition-effect pairs on elements); fits element-as-base-power cleanly
+  strands: [spar, calrunia]
+- id: combat-combo-variation
+  gist: Varied chains of moves score more than repeating one, so the fighter must mix.
+  claim: {tracks: recent move chain, rewards: style bonus, gates: bonus drops on repeat, remembers: last few moves, permits: chain moves, changes: 'style score, momentum'}
+  ontology: [MoveDefinition, MotivationMechanism, State]
+  fit: partial
+  note: needs recent-history State; as a score it risks engagement-as-proof, keep it a bonus not a rating
+  strands: [spar]
+- id: combat-combat-deck-cycle
+  gist: A fighter draws from a personal stack, plays, discards, and reshuffles when it runs out.
+  claim: {tracks: 'draw pile, discard', rewards: fresh options each hand, gates: hand limit, remembers: 'deck order, discard', permits: choose from hand, changes: available moves}
+  ontology: [Mechanic, MoveDefinition, State]
+  fit: gap
+  note: needs Loadout (a chosen, cycling set of moves); the player authors it
+  strands: [spar]
+- id: exploration-ability-gates
+  gist: Places stay shut until you gain the move that opens them, so you return later.
+  claim: {tracks: 'abilities owned, gates seen', rewards: return reward, gates: gate needs capability, remembers: which gates were met, permits: re-enter, changes: reachable map}
+  ontology: [Capability, Affordance, Permission, WorldElement]
+  fit: covered
+  note: Capability opens Affordance; keep it per-place and per-line, never a rank (no_global_developmental_rank)
+  strands: [living-ship, cave, calrunia]
+- id: exploration-wall-jump
+  gist: Pushing off walls lets you climb narrow shafts and chain jumps.
+  claim: {tracks: contact with wall, rewards: mastery feel, gates: wall must be present, remembers: '-', permits: climb, changes: route options}
+  ontology: [MoveDefinition, Performance]
+  fit: covered
+  note: a plain MoveDefinition
+  strands: []
+- id: exploration-air-action-refill
+  gist: Mid-air actions are spent once and refilled by touching special nodes, so routes become puzzles.
+  claim: {tracks: air charges, rewards: route cleverness, gates: action only while charged, remembers: charges, permits: extra air moves, changes: route shape}
+  ontology: [MoveDefinition, Mechanic, Affordance]
+  fit: gap
+  note: ResourceMeter with refill nodes
+  strands: []
+- id: exploration-climbing-rest-route
+  gist: Climbing drains stamina, so you plan ledges where you can rest.
+  claim: {tracks: grip stamina, rewards: safe resting spots, gates: climb stops at zero, remembers: rest spots found, permits: rest mid-climb, changes: route plan}
+  ontology: [Mechanic, WorldElement, Rule]
+  fit: gap
+  note: ResourceMeter; the rest spot honours rest as a valid choice, a good fit for cave and living-ship
+  strands: [cave, living-ship, calrunia]
+- id: exploration-grapple-swing
+  gist: Swing on a hook and let go at the right instant to fling yourself onward.
+  claim: {tracks: 'swing arc, release time', rewards: momentum thrill, gates: release timing, remembers: '-', permits: swing, changes: trajectory}
+  ontology: [MoveDefinition, Performance]
+  fit: covered
+  note: MoveDefinition with timing; light TimingWindow use
+  strands: []
+- id: exploration-gliding-descent
+  gist: Gliding lets you choose where to land, so a leap is a decision, not a fall.
+  claim: {tracks: 'altitude, drift', rewards: chosen landing, gates: glide while airborne, remembers: '-', permits: steer descent, changes: landing spot}
+  ontology: [MoveDefinition, Affordance]
+  fit: covered
+  note: MoveDefinition plus Affordance
+  strands: [calrunia, living-ship]
+- id: exploration-earned-map
+  gist: The map shows only what you have walked or paid for, so knowing is a reward.
+  claim: {tracks: places seen, rewards: map fills in, gates: map shows what is visited, remembers: discovered places, permits: read own map, changes: known world}
+  ontology: [WorldElement, Interface, Artifact, ProvenanceRecord]
+  fit: gap
+  note: needs a KnowledgeState of a place (known, glimpsed, unknown); matches depth_over_flatland if drawn as haze lifting, never a percent
+  strands: [cave, living-ship, calrunia]
+- id: exploration-fast-travel-network
+  gist: Visited waypoints unlock instant travel between them, cutting repeat journeys.
+  claim: {tracks: waypoints found, rewards: less backtracking, gates: travel only to unlocked points, remembers: which waypoints, permits: jump to a place, changes: access between places}
+  ontology: [WorldElement, Affordance, Permission]
+  fit: covered
+  note: Affordance per place; ties well to one passport
+  strands: [calrunia, living-ship, cave]
+- id: exploration-stealth-awareness
+  gist: Guards grow more alert as you are noticed, so you route around rising suspicion.
+  claim: {tracks: guard alert level, rewards: unseen passage, gates: alert threshold, remembers: last seen spot, permits: sneak, changes: guard behaviour}
+  ontology: [WorldAgent, State, Rule]
+  fit: partial
+  note: needs AttentionState on a WorldAgent; keep to NPCs, never score a real person being watched
+  strands: []
+- id: exploration-procedural-route-reading
+  gist: Randomised terrain obliges you to read hazards and plan a path each run.
+  claim: {tracks: local terrain cues, rewards: insight into patterns, gates: '-', remembers: '-', permits: improvise a route, changes: run path}
+  ontology: [Observation, Hypothesis, Action]
+  fit: covered
+  note: Observation and RouteHypothesis; runs are fresh by design
+  strands: [cave, calrunia]
+- id: deckbuilding-reward-choice
+  gist: After a win you pick one of a few rewards or none, shaping what the deck becomes.
+  claim: {tracks: 'offered rewards, picks', rewards: meaningful choice, gates: pick limit, remembers: chosen set, permits: add or skip, changes: set contents}
+  ontology: [Claim, Mechanic, State]
+  fit: gap
+  note: skipping must be a first-class choice; needs Loadout and an offer record
+  strands: [spar, daily-menu]
+- id: deckbuilding-card-upgrade
+  gist: Spending a visit to make one existing card stronger rewards depth over breadth.
+  claim: {tracks: card level, rewards: deeper power, gates: one upgrade per stop, remembers: upgraded state, permits: improve a card, changes: card power}
+  ontology: [Capability, MoveDefinition, Revision]
+  fit: covered
+  note: Revision of a MoveDefinition; development is per move, not per person
+  strands: [spar]
+- id: deckbuilding-exhaust-for-burst
+  gist: Some strong cards vanish for the rest of the fight once used.
+  claim: {tracks: used-up cards, rewards: big moment, gates: once per fight, remembers: what is spent, permits: burn a card, changes: available set}
+  ontology: [MoveDefinition, State]
+  fit: covered
+  note: encounter-scoped State, restored at encounter end
+  strands: [spar]
+- id: deckbuilding-opening-hand-control
+  gist: Choosing certain cards to start with trades flexibility for reliability.
+  claim: {tracks: chosen starters, rewards: predictable start, gates: limited slots, remembers: chosen starters, permits: pre-pick, changes: first hand}
+  ontology: [Commitment, Mechanic, Rule]
+  fit: gap
+  note: Loadout again
+  strands: [spar]
+- id: deckbuilding-discard-redraw
+  gist: Throw away unwanted cards for fresh ones, at a cost.
+  claim: {tracks: discards used, rewards: improved odds, gates: limited discards, remembers: discard pile, permits: reroll hand, changes: hand quality}
+  ontology: [MoveDefinition, Rule]
+  fit: covered
+  note: a MoveDefinition with a limit
+  strands: []
+- id: deckbuilding-duplicate-investment
+  gist: Copying a card you already improved doubles down on one plan.
+  claim: {tracks: 'copies, upgrades', rewards: focused build, gates: copy rules, remembers: copy lineage, permits: duplicate, changes: set composition}
+  ontology: [Revision, ProvenanceRecord]
+  fit: covered
+  note: Revision plus lineage fits preserve_lineage
+  strands: [spar]
+- id: deckbuilding-temporary-generation
+  gist: The fight itself hands you short-lived cards that vanish afterward.
+  claim: {tracks: temporary cards, rewards: fresh tools, gates: encounter only, remembers: '-', permits: use summoned options, changes: hand}
+  ontology: [MoveDefinition, State]
+  fit: covered
+  note: encounter-scoped MoveDefinition; leaves nothing behind
+  strands: [spar]
+- id: deckbuilding-trigger-order
+  gist: The order you play effects changes the result, like a small machine you sequence.
+  claim: {tracks: effect order, rewards: clever sequencing, gates: order dependent, remembers: trigger log, permits: arrange, changes: outcome}
+  ontology: [Mechanic, Rule, Action]
+  fit: gap
+  note: needs TriggerRule/EffectChain ordering
+  strands: [spar]
+- id: deckbuilding-dual-use-cards
+  gist: Each card can serve two purposes, so using one forgoes the other.
+  claim: {tracks: 'card, mode', rewards: tradeoff tension, gates: one use per card, remembers: '-', permits: choose a mode, changes: what happens}
+  ontology: [MoveDefinition, Rule]
+  fit: covered
+  note: two MoveDefinitions sharing one source
+  strands: [spar]
+- id: deckbuilding-dice-allocation
+  gist: Rolled numbers are assigned to slots, turning luck into planning.
+  claim: {tracks: dice values, rewards: good fit of luck, gates: slot conditions, remembers: '-', permits: assign, changes: results}
+  ontology: [Mechanic, Rule, Action]
+  fit: partial
+  note: needs a random-source object and an assignment record (Allocation)
+  strands: [daily-menu, spar]
+- id: deckbuilding-poker-hand-requirements
+  gist: Actions need card patterns like pairs or runs, so hand shape is the key.
+  claim: {tracks: hand shape, rewards: pattern payoff, gates: needs pattern, remembers: '-', permits: play a pattern, changes: action available}
+  ontology: [Rule, MoveDefinition]
+  fit: covered
+  note: a Rule as condition of a move
+  strands: []
+- id: deckbuilding-rule-changing-passives
+  gist: Passive items rewrite the rules, so the whole build reorganises around them.
+  claim: {tracks: held passives, rewards: new strategies, gates: item must be held, remembers: held items, permits: rewrite rule, changes: rules in force}
+  ontology: [Rule, Revision, Mechanic]
+  fit: gap
+  note: needs scoped RuleModifier with revert; keep modifiers visible to the player
+  strands: [spar, living-ship]
+- id: defense-maze-routing
+  gist: Placing blockers lengthens the foes path rather than stopping them.
+  claim: {tracks: path length, rewards: exposure time, gates: path must stay open, remembers: layout, permits: shape the route, changes: foe path}
+  ontology: [WorldElement, Rule, Mechanic]
+  fit: covered
+  note: spatial Rule with the must-stay-open invariant
+  strands: [living-ship]
+- id: defense-target-priority
+  gist: You set standing orders for which foe each defender hits first.
+  claim: {tracks: priority rules, rewards: less micro, gates: '-', remembers: standing orders, permits: delegate, changes: defender behaviour}
+  ontology: [Commitment, Rule, AdaptiveSystem]
+  fit: partial
+  note: a standing instruction (Delegation) needs scope and revocation; AI-set targets must stay visible
+  strands: []
+- id: defense-early-wave-call
+  gist: Choosing to start the next wave sooner earns a bonus at higher risk.
+  claim: {tracks: wave timer, rewards: bonus for boldness, gates: early call allowed, remembers: timer, permits: trigger sooner, changes: pressure}
+  ontology: [MotivationMechanism, Action]
+  fit: conflict
+  note: time-pressure bonus can become engagement-over-meaning; keep it optional, no penalty for waiting (progress_penalties stop)
+  strands: []
+- id: defense-day-night-investment
+  gist: Daytime is for building and saving, night for defending what you built.
+  claim: {tracks: 'phase, savings', rewards: payoff of planning, gates: phase gates actions, remembers: built things, permits: invest now, changes: coming defence}
+  ontology: [Ritual, Mechanic, State]
+  fit: covered
+  note: phased Session; maps neatly to a day that rolls at a set hour
+  strands: [daily-menu, living-ship]
+- id: defense-mobile-defender
+  gist: A single hero runs to wherever the line is breaking.
+  claim: {tracks: weak points, rewards: rescue, gates: one hero at a time, remembers: '-', permits: relocate, changes: coverage}
+  ontology: [Action, Player, MoveDefinition]
+  fit: covered
+  note: plain move
+  strands: []
+- id: defense-trap-sequence
+  gist: Traps are chained so one triggers the next.
+  claim: {tracks: 'trap layout, chain', rewards: clever chain, gates: trap order, remembers: layout, permits: arrange, changes: foe path}
+  ontology: [Mechanic, Rule]
+  fit: gap
+  note: TriggerRule/EffectChain
+  strands: []
+- id: defense-resistance-counters
+  gist: Foes resist certain damage kinds, so you must prepare the right answers.
+  claim: {tracks: resistance table, rewards: answered threats, gates: needs matching kind, remembers: known resistances, permits: prepare, changes: effect per kind}
+  ontology: [Rule, EvidenceItem, Hypothesis]
+  fit: covered
+  note: element table; fits spar element as base power
+  strands: [spar]
+- id: defense-tower-upgrade-budget
+  gist: You must pick between deepening a few defenders or widening to many.
+  claim: {tracks: 'budget, levels', rewards: chosen strategy, gates: budget limit, remembers: investments, permits: allocate, changes: power shape}
+  ontology: [Commitment, Mechanic, Rule]
+  fit: partial
+  note: ResourceMeter plus allocation record
+  strands: [living-ship]
+- id: defense-ammunition-supply
+  gist: Defences fail if their ammunition lines run dry, so logistics is the defence.
+  claim: {tracks: supply flow, rewards: steady defence, gates: empty means silent, remembers: supply state, permits: route supply, changes: which guns work}
+  ontology: [Mechanic, WorldElement, State]
+  fit: partial
+  note: ResourceMeter across a chain; maintenance duty must not become hidden active debt
+  strands: [living-ship]
+- id: stealth-disguise-access
+  gist: Wearing the right clothes lets you enter places where that role belongs.
+  claim: {tracks: current role, rewards: entry, gates: role-bound zones, remembers: who has seen you in role, permits: enter, changes: accessible areas}
+  ontology: [CharacterRole, Affordance, Permission]
+  fit: conflict
+  note: access by costume treats a performed role as a permission; ok in fiction if access is not command and no real person is deceived without consent
+  strands: []
+- id: stealth-sound-lures
+  gist: Making a noise draws a guard away from where you want to go.
+  claim: {tracks: 'noise, guard attention', rewards: clean diversion, gates: noise range, remembers: last noise heard, permits: distract, changes: guard position}
+  ontology: [WorldAgent, Action, Consequence]
+  fit: covered
+  note: Action with consequence on a WorldAgent
+  strands: []
+- id: stealth-body-concealment
+  gist: Hiding defeated guards avoids raising the alarm.
+  claim: {tracks: hidden bodies, rewards: undetected play, gates: discovery chance, remembers: body locations, permits: conceal, changes: alert risk}
+  ontology: [Action, Consequence, State]
+  fit: conflict
+  note: harm-as-puzzle; keep it knocked-out or fantasy-scale, never a real person; NPCs only
+  strands: []
+- id: stealth-synchronized-actions
+  gist: You queue actions for several characters that happen at the same instant.
+  claim: {tracks: queued actions, rewards: coordinated feat, gates: all must be ready, remembers: queue, permits: coordinate, changes: simultaneous result}
+  ontology: [CoordinationPattern, Action, Commitment]
+  fit: partial
+  note: needs a joint Plan that all participants consent to (CoordinationPattern); fits relationship creates capability
+  strands: [between, chapter1]
+- id: stealth-light-shadow
+  gist: Dark areas hide you and lit areas expose you.
+  claim: {tracks: light level, rewards: unseen movement, gates: visibility by light, remembers: '-', permits: sneak in dark, changes: detection}
+  ontology: [WorldElement, Affordance, Rule]
+  fit: covered
+  note: light as WorldElement; resonates with haze and light
+  strands: [cave, living-ship]
+- id: stealth-peeking
+  gist: You can look around a corner without committing to step out.
+  claim: {tracks: what peeked, rewards: informed choice, gates: peek has cost or risk, remembers: knowledge, permits: look first, changes: plan}
+  ontology: [Observation, Action, Affordance]
+  fit: gap
+  note: Foreknowledge object (look before commitment); consent-before-commit is core to our design
+  strands: [cave, between, room-kit]
+- id: stealth-security-network
+  gist: Cameras and sensors feed a central system you can disable or hack.
+  claim: {tracks: 'sensors, status', rewards: blind spots, gates: access to control, remembers: which are off, permits: disable, changes: guard knowledge}
+  ontology: [WorldAgent, Interface, Rule]
+  fit: conflict
+  note: surveillance mechanics become consent-violating if applied to players or real people; NPC-only, never collect data from play
+  strands: []
+- id: stealth-hiding-spots
+  gist: Hidden places let you wait out a search and choose when to emerge.
+  claim: {tracks: hiding state, rewards: safe retreat, gates: space available, remembers: spot used, permits: 'hide, leave', changes: search outcome}
+  ontology: [Affordance, State, WorldElement]
+  fit: covered
+  note: retreat and rest are valid; a good refuge model
+  strands: [cave, room-kit, wave-room]
+- id: stealth-knockout-window
+  gist: A held foe falls asleep after a timer, so you must hold them quietly.
+  claim: {tracks: 'timer, hold', rewards: quiet takedown, gates: must stay unseen, remembers: timer, permits: pin, changes: foe state}
+  ontology: [MoveDefinition, Performance, State]
+  fit: gap
+  note: TimingWindow and State; tone must stay playful
+  strands: []
+- id: stealth-staged-accidents
+  gist: You rig the environment so a target dies by apparent chance.
+  claim: {tracks: 'trap setup, target', rewards: clever kill, gates: setup precondition, remembers: setup, permits: arrange, changes: target fate}
+  ontology: [Action, Consequence, Commitment]
+  fit: conflict
+  note: rewards deniable harm and deception; keep fictional and non-player; no real-person target (integrity of trust)
+  strands: []
+- id: combat-intent-preview
+  gist: Foes show their next move in advance, so combat becomes a puzzle of answering it.
+  claim: {tracks: telegraphed intent, rewards: solvable fights, gates: '-', remembers: intent shown, permits: plan response, changes: your choices}
+  ontology: [Observation, Interface, Hypothesis]
+  fit: gap
+  note: Foreknowledge object (telegraph); mystery rewards inquiry needs the option to hide it
+  strands: [spar]
+- id: combat-forced-movement
+  gist: Pushing, pulling or knocking pieces reshapes positions.
+  claim: {tracks: positions, rewards: clever placement, gates: force rules, remembers: '-', permits: shove, changes: layout}
+  ontology: [MoveDefinition, Rule, Action]
+  fit: covered
+  note: MoveDefinition on layout; consent for a physical-safe version in between mode
+  strands: []
+- id: combat-action-points
+  gist: Each turn gives a fixed number of points to spend on actions.
+  claim: {tracks: points, rewards: best allocation, gates: spend limit, remembers: '-', permits: budget, changes: turn actions}
+  ontology: [Rule, Mechanic, State]
+  fit: gap
+  note: ResourceMeter, per-turn refill
+  strands: [spar]
+- id: combat-overwatch
+  gist: A unit holds its action to react when a foe enters its view.
+  claim: {tracks: held trigger, rewards: reactive hits, gates: reaction only on trigger, remembers: held orders, permits: wait, changes: foe approach}
+  ontology: [Commitment, Rule, MoveDefinition]
+  fit: gap
+  note: 'TriggerRule: a conditional commitment'
+  strands: [spar]
+- id: combat-simultaneous-orders
+  gist: Both sides write orders in secret and they resolve together.
+  claim: {tracks: secret orders, rewards: mind games, gates: '-', remembers: plans, permits: commit, changes: outcome}
+  ontology: [Commitment, Action, Performance]
+  fit: covered
+  note: simultaneous commitments; works for two-player play
+  strands: [between, chapter1, spar]
+- id: combat-pause-orders
+  gist: Real time can be paused to give commands calmly.
+  claim: {tracks: paused time, rewards: considered action, gates: pause allowed, remembers: queue, permits: stop and plan, changes: pacing}
+  ontology: [Affordance, Rule, ContinuationRecord]
+  fit: covered
+  note: Pause matches interruption and continuation, plus pacing the player controls
+  strands: []
+- id: combat-friendly-fire
+  gist: Area attacks hit allies as well as foes.
+  claim: {tracks: 'area, allies', rewards: care in aiming, gates: '-', remembers: who got hit, permits: aim wide, changes: allies hurt}
+  ontology: [Action, Consequence, Relationship]
+  fit: conflict
+  note: harm to an ally by misplay; ok in fiction if repair is available and no real-person blame, hard to keep in between
+  strands: []
+- id: combat-destructible-cover
+  gist: Cover can be destroyed, changing the battlefield during the fight.
+  claim: {tracks: cover health, rewards: changing map, gates: cover alive, remembers: map state, permits: blast, changes: terrain}
+  ontology: [WorldElement, Consequence, State]
+  fit: covered
+  note: state change of WorldElement
+  strands: []
+- id: allocation-public-pick
+  gist: Players take turns taking one thing from a shared pool, shrinking choices for the next.
+  claim: {tracks: pool contents, rewards: good picks, gates: pool depletion, remembers: what was taken, permits: pick, changes: options for others}
+  ontology: [Commitment, Rule, Group]
+  fit: gap
+  note: needs shared pool, turn rule (TurnStructure); relevant to second-player fairness
+  strands: [chapter1, between]
+- id: allocation-worker-placement
+  gist: You place a worker on a spot and block others from using it.
+  claim: {tracks: spots taken, rewards: access to actions, gates: one worker per spot, remembers: placement, permits: block, changes: others options}
+  ontology: [Commitment, Rule, Group]
+  fit: gap
+  note: access blocks need negotiated consent in cooperative play (access is not command)
+  strands: [chapter1]
+- id: allocation-area-majority
+  gist: Whoever has the most presence in an area controls it.
+  claim: {tracks: presence counts, rewards: area control, gates: majority threshold, remembers: counts, permits: compete, changes: who controls}
+  ontology: [Rule, Group, Mechanic]
+  fit: partial
+  note: Contest object; risks making control proof of worth, keep it local to a game
+  strands: []
+- id: allocation-route-denial
+  gist: Claiming a path blocks others from using it.
+  claim: {tracks: claimed routes, rewards: blocking, gates: one owner per route, remembers: owners, permits: claim, changes: others paths}
+  ontology: [Commitment, Rule, WorldElement]
+  fit: partial
+  note: Contest again; denial against real persons conflicts with relational care so keep competitive-only
+  strands: []
+- id: allocation-public-goal-race
+  gist: Players race to claim a public goal, with the first getting the reward.
+  claim: {tracks: goal status, rewards: first-prize, gates: one claimant, remembers: claimant, permits: race, changes: who wins}
+  ontology: [Commitment, MotivationMechanism, Rule]
+  fit: conflict
+  note: speed-race as proof of worth; keep it optional and shared, no loss for not racing
+  strands: []
+- id: allocation-shared-stock
+  gist: Everyone recruits from the same common stock.
+  claim: {tracks: stock, rewards: shared pool, gates: stock limits, remembers: stock, permits: draw, changes: what remains}
+  ontology: [Rule, Group, Mechanic]
+  fit: gap
+  note: shared pool object
+  strands: []
+- id: allocation-snake-order
+  gist: Pick order reverses each round so late picks get compensation.
+  claim: {tracks: pick order, rewards: fairness, gates: order rule, remembers: order, permits: fair turns, changes: who goes next}
+  ontology: [Rule, Group, Commitment]
+  fit: gap
+  note: TurnStructure with fairness repair; a good second-player balance
+  strands: [chapter1, between]
+- id: allocation-follow-phase
+  gist: You choose a phase and others may follow it, earning a smaller benefit.
+  claim: {tracks: phase chosen, rewards: piggyback gain, gates: phase available, remembers: phase history, permits: follow, changes: shared outcomes}
+  ontology: [CoordinationPattern, Rule, Group]
+  fit: gap
+  note: relationship-creates-capability in miniature; needs a Followable offer
+  strands: [chapter1, between]
+- id: driving-drift-boost
+  gist: Holding a turn builds charge, released as a speed burst.
+  claim: {tracks: drift charge, rewards: boost, gates: charge threshold, remembers: charge, permits: drift, changes: speed}
+  ontology: [MoveDefinition, State, Performance]
+  fit: gap
+  note: ResourceMeter plus release
+  strands: []
+- id: driving-slipstream
+  gist: Following another vehicle closely gives you speed.
+  claim: {tracks: gap, rewards: catch-up, gates: close enough, remembers: '-', permits: follow, changes: speed}
+  ontology: [Relationship, CoordinationPattern]
+  fit: partial
+  note: 'being behind someone helps: a Followable relation between players'
+  strands: [between]
+- id: driving-start-charge
+  gist: Pressing the throttle at the right moment of the countdown gives a launch boost.
+  claim: {tracks: countdown, rewards: good start, gates: window, remembers: '-', permits: timed start, changes: start speed}
+  ontology: [MoveDefinition, Performance]
+  fit: gap
+  note: TimingWindow
+  strands: []
+- id: driving-air-stunt
+  gist: Tricks performed in the air convert into a boost on landing.
+  claim: {tracks: trick done, rewards: style boost, gates: must be airborne, remembers: '-', permits: trick, changes: boost}
+  ontology: [MoveDefinition, Performance, Consequence]
+  fit: covered
+  note: move with consequence
+  strands: []
+- id: driving-air-balance
+  gist: Tilting the vehicle in the air before landing avoids crashes.
+  claim: {tracks: pitch, rewards: clean landing, gates: airborne, remembers: '-', permits: adjust, changes: landing}
+  ontology: [MoveDefinition, Performance]
+  fit: covered
+  note: a move
+  strands: []
+- id: matching-swap-to-align
+  gist: Swapping neighbours to line up three or more clears them.
+  claim: {tracks: grid, rewards: clears, gates: swap makes a match, remembers: board, permits: swap, changes: board}
+  ontology: [Mechanic, Rule, Action]
+  fit: covered
+  note: a Mechanic with no ontology gap; it is a UI game
+  strands: [daily-menu]
+- id: matching-trace-color-chain
+  gist: Drawing a path through like pieces clears the chain.
+  claim: {tracks: chain length, rewards: clears, gates: same colour, remembers: chain, permits: trace, changes: board}
+  ontology: [Mechanic, Action]
+  fit: covered
+  note: a Mechanic
+  strands: []
+- id: matching-tap-connected-group
+  gist: One tap clears an entire group of connected like pieces.
+  claim: {tracks: group size, rewards: clear, gates: group min size, remembers: board, permits: tap, changes: board}
+  ontology: [Mechanic, Action]
+  fit: covered
+  note: a Mechanic
+  strands: []
+- id: matching-complete-lines
+  gist: Filling a full line removes it and frees room.
+  claim: {tracks: filled lines, rewards: space, gates: line full, remembers: board, permits: place, changes: board}
+  ontology: [Mechanic, Rule]
+  fit: covered
+  note: a Mechanic; clears are release rather than failure, nicely compost-like
+  strands: []
+- id: matching-merge-three-upgrade
+  gist: Three like items merge into one of the next tier.
+  claim: {tracks: tiers, rewards: growth, gates: three needed, remembers: board, permits: merge, changes: items}
+  ontology: [Mechanic, Transformation, Rule]
+  fit: gap
+  note: a combine rule that tracks tier; resonates with spirits combining but needs Combination (recipe) object
+  strands: [spirit-care, living-ship]
+- id: matching-slide-board-merge
+  gist: Sliding the whole board merges equal tiles.
+  claim: {tracks: tile values, rewards: higher tiles, gates: equal adjacent, remembers: board, permits: slide, changes: board}
+  ontology: [Mechanic, Rule]
+  fit: covered
+  note: a Mechanic
+  strands: []
+- id: matching-gravity-cascade
+  gist: Cleared pieces make others fall, triggering chain reactions.
+  claim: {tracks: cascades, rewards: free chain, gates: '-', remembers: board, permits: set up, changes: board}
+  ontology: [Mechanic, Rule]
+  fit: gap
+  note: TriggerRule/EffectChain
+  strands: []
+- id: matching-pattern-creates-power
+  gist: Making a special pattern creates a stronger piece.
+  claim: {tracks: pattern, rewards: power piece, gates: pattern shape, remembers: board, permits: craft, changes: pieces}
+  ontology: [Mechanic, Rule]
+  fit: covered
+  note: a Mechanic with pattern rule
+  strands: []
+- id: matching-combine-power-pieces
+  gist: Two special pieces swapped together produce a bigger effect.
+  claim: {tracks: pieces, rewards: big effect, gates: both special, remembers: board, permits: combine, changes: board}
+  ontology: [Mechanic, Rule]
+  fit: gap
+  note: Combination recipe
+  strands: []
+- id: matching-clear-under-cargo
+  gist: Clear the pieces holding up a cargo item so it falls out the exit.
+  claim: {tracks: cargo position, rewards: goal reach, gates: support removal, remembers: board, permits: clear support, changes: cargo}
+  ontology: [Mechanic, QuestInstance, Rule]
+  fit: covered
+  note: a Mechanic with an objective
+  strands: []
+- id: movement-variable-jump
+  gist: How long you hold the button sets how high you jump.
+  claim: {tracks: hold time, rewards: control, gates: '-', remembers: '-', permits: jump, changes: height}
+  ontology: [MoveDefinition, Performance]
+  fit: covered
+  note: a plain move
+  strands: []
+- id: movement-run-walk-control
+  gist: Switching between run and walk controls how far and where you land.
+  claim: {tracks: speed mode, rewards: control, gates: '-', remembers: '-', permits: move, changes: distance}
+  ontology: [MoveDefinition, Affordance]
+  fit: covered
+  note: a plain move
+  strands: []
+- id: movement-target-bounce
+  gist: Bouncing off an enemy or object launches you into the next jump.
+  claim: {tracks: bounce, rewards: flow, gates: must hit target, remembers: '-', permits: bounce, changes: trajectory}
+  ontology: [MoveDefinition, Performance]
+  fit: covered
+  note: a plain move
+  strands: []
+- id: movement-moving-platform
+  gist: Timing when you step on or off a moving platform.
+  claim: {tracks: platform phase, rewards: cleared gap, gates: timing, remembers: '-', permits: board, changes: position}
+  ontology: [MoveDefinition, Performance]
+  fit: covered
+  note: a plain move
+  strands: [living-ship]
+- id: movement-auto-forward
+  gist: The character runs forward on its own and you only choose when to act.
+  claim: {tracks: timing choices, rewards: flow, gates: '-', remembers: '-', permits: 'jump, slide', changes: survival}
+  ontology: [MoveDefinition, Performance]
+  fit: covered
+  note: a plain move; fits a walk that moves at its own pace
+  strands: [cave, calrunia]
+- id: movement-short-retry
+  gist: Failing returns you to a tiny segment instantly so retry is cheap.
+  claim: {tracks: attempt count, rewards: learning, gates: '-', remembers: attempts, permits: retry, changes: position}
+  ontology: [RecoverabilityPath, Test, Checkpoint]
+  fit: covered
+  note: 'RecoverabilityPath: no path has to be wasted; strongest direct match'
+  strands: [spar, cave, wave-room]
+- id: movement-ledge-catch
+  gist: You can grab a ledge, then decide to climb or drop.
+  claim: {tracks: grab state, rewards: second chance, gates: near ledge, remembers: '-', permits: 'hang, climb or let go', changes: position}
+  ontology: [MoveDefinition, Affordance]
+  fit: covered
+  note: letting go is a valid choice
+  strands: [cave]
+- id: movement-low-slide
+  gist: Ducking and sliding through low gaps.
+  claim: {tracks: posture, rewards: speed through gaps, gates: gap size, remembers: '-', permits: slide, changes: position}
+  ontology: [MoveDefinition, Affordance]
+  fit: covered
+  note: a plain move
+  strands: []
+- id: movement-downward-slam
+  gist: Committing to a fast drop that cannot be steered once started.
+  claim: {tracks: slam, rewards: impact, gates: airborne, remembers: '-', permits: commit, changes: position}
+  ontology: [MoveDefinition, Action, Commitment]
+  fit: covered
+  note: commitment with no cancel is a visible Rule
+  strands: [spar]
+- id: movement-carry-object
+  gist: Moving yourself and a held item through obstacles together.
+  claim: {tracks: carried item, rewards: delivery, gates: item constraints, remembers: item, permits: carry, changes: route}
+  ontology: [Action, Artifact, Commitment]
+  fit: covered
+  note: carrying is an Action; may extend to carrying something for another person
+  strands: [between, room-kit]
+- id: projectiles-independent-aim
+  gist: Move in one direction while aiming in another.
+  claim: {tracks: aim and move, rewards: control, gates: '-', remembers: '-', permits: dual control, changes: shots}
+  ontology: [MoveDefinition, Interface]
+  fit: covered
+  note: Interface point; two-input accessibility need (AccessibilityNeed) must be offered
+  strands: []
+- id: projectiles-spread-recovery
+  gist: Pausing fire tightens the aim again, so rhythm becomes skill.
+  claim: {tracks: spread level, rewards: accuracy, gates: '-', remembers: '-', permits: pause, changes: accuracy}
+  ontology: [MoveDefinition, State]
+  fit: gap
+  note: ResourceMeter with recovery rule
+  strands: []
+- id: projectiles-active-reload
+  gist: Pressing again at the right moment of a reload skips the delay.
+  claim: {tracks: reload progress, rewards: bonus, gates: window, remembers: '-', permits: timed press, changes: reload}
+  ontology: [MoveDefinition, Performance]
+  fit: gap
+  note: TimingWindow
+  strands: []
+- id: projectiles-charged-release
+  gist: Hold to charge and choose when to let go, trading power for time.
+  claim: {tracks: charge level, rewards: stronger shot, gates: release any time, remembers: '-', permits: release, changes: shot power}
+  ontology: [MoveDefinition, Charge, Performance]
+  fit: partial
+  note: 'a held Charge is our word for something else (emotional Charge); name collision: needs a distinct word like "windup"'
+  strands: [spar]
+- id: projectiles-ballistic-arc
+  gist: Shots fall along an arc, so you aim above the target.
+  claim: {tracks: trajectory, rewards: hit, gates: distance, remembers: '-', permits: lead, changes: shot path}
+  ontology: [MoveDefinition, Rule]
+  fit: covered
+  note: a plain move
+  strands: []
+- id: projectiles-wall-ricochet
+  gist: Shots bounce off walls to reach hidden targets.
+  claim: {tracks: bounce count, rewards: trick shot, gates: bounce rule, remembers: '-', permits: bank, changes: shot path}
+  ontology: [MoveDefinition, Rule, WorldElement]
+  fit: covered
+  note: a plain move
+  strands: []
+- id: projectiles-piercing-line
+  gist: Shots that pass through several targets reward lining them up.
+  claim: {tracks: line-up, rewards: multi-hit, gates: pierce rule, remembers: '-', permits: align, changes: hits}
+  ontology: [MoveDefinition, Rule]
+  fit: covered
+  note: a plain move
+  strands: []
+- id: projectiles-maintain-lock
+  gist: Aim must stay on target for a while for a lock to hold.
+  claim: {tracks: lock progress, rewards: guaranteed hit, gates: must hold, remembers: '-', permits: track, changes: lock state}
+  ontology: [MoveDefinition, Performance, State]
+  fit: partial
+  note: held Attention with a progress State; reminiscent of sit-with-it practice, needs "sustained attention" Practice linking
+  strands: [cave, wave-room]
+- id: projectiles-heat-pacing
+  gist: Weapons overheat if fired continuously, forcing pauses.
+  claim: {tracks: heat, rewards: sustained output, gates: cooldown, remembers: '-', permits: pace, changes: availability}
+  ontology: [Mechanic, State, Rule]
+  fit: gap
+  note: ResourceMeter with decay; pacing fits breath rhythm
+  strands: [wave-room]
+- id: projectiles-graze-reward
+  gist: Skimming close to danger without being hit earns a resource.
+  claim: {tracks: near-misses, rewards: resource, gates: close pass, remembers: '-', permits: risk, changes: resource}
+  ontology: [MotivationMechanism, Performance, State]
+  fit: conflict
+  note: rewards risk-taking, so can make danger the currency; keep it a cosmetic delight, not progression (engagement_is_not_sufficient_evidence_of_meaning)
+  strands: []
+- id: rhythm-onbeat-actions
+  gist: Moves count for more when made on the beat.
+  claim: {tracks: beat accuracy, rewards: flow, gates: on-beat bonus, remembers: '-', permits: act on beat, changes: effect strength}
+  ontology: [MoveDefinition, Performance, PracticeInstance]
+  fit: gap
+  note: TimingWindow grounded in a shared pulse; a nice link to breathing rhythm
+  strands: [wave-room, daily-menu, cave]
+- id: rhythm-sustain-notes
+  gist: Holding a note through its length is the challenge.
+  claim: {tracks: hold, rewards: stay with it, gates: duration, remembers: '-', permits: hold, changes: score}
+  ontology: [PracticeInstance, Performance]
+  fit: covered
+  note: a practice held for a duration; no score of inner state
+  strands: [wave-room, cave]
+- id: rhythm-cue-response
+  gist: Answering a cue exactly on its target beat.
+  claim: {tracks: 'cue, response', rewards: call-and-response, gates: timing, remembers: '-', permits: answer, changes: accuracy}
+  ontology: [MoveDefinition, Performance, Prompt]
+  fit: covered
+  note: Prompt and response; call-and-response is the core of welcome-acknowledge-validate
+  strands: [wave-room, between]
+- id: rhythm-hidden-beats
+  gist: The cues disappear and you carry the tempo internally.
+  claim: {tracks: internal tempo, rewards: self-held rhythm, gates: '-', remembers: '-', permits: hold the beat, changes: accuracy}
+  ontology: [PracticeInstance, SomaticReport, Performance]
+  fit: partial
+  note: somatic evidence with no visible check; SomaticReport self-reported, never scored by the system
+  strands: [wave-room, cave]
+- id: rhythm-streak-multiplier
+  gist: Unbroken accuracy builds a multiplier that resets on a miss.
+  claim: {tracks: streak, rewards: multiplier, gates: '-', remembers: streak count, permits: sustain, changes: score}
+  ontology: [MotivationMechanism, State, Consequence]
+  fit: conflict
+  note: streak pressure turns a lapse into a loss (progress_penalties, engagement is not meaning); a daily menu must never punish a missed day; keep any streak reset-free
+  strands: []
+- id: command-initiative-order
+  gist: Stats set who acts first, so tuning speed arranges the turn order.
+  claim: {tracks: 'speed, order', rewards: ordering mastery, gates: order rule, remembers: '-', permits: tune, changes: who acts}
+  ontology: [Rule, CoordinationPattern, Mechanic]
+  fit: gap
+  note: TurnStructure
+  strands: [spar]
+- id: command-interrupt-action
+  gist: Hitting an enemy during its wind-up cancels it.
+  claim: {tracks: wind-up, rewards: denied foe move, gates: window, remembers: '-', permits: interrupt, changes: foe action}
+  ontology: [MoveDefinition, InterruptionRecord, Performance]
+  fit: gap
+  note: TimingWindow; an in-fiction InterruptionRecord of the move
+  strands: [spar]
+- id: command-threat-redirection
+  gist: Pulling enemy attention onto a sturdy unit protects weaker ones.
+  claim: {tracks: threat, rewards: protection, gates: taunt rules, remembers: who is targeted, permits: taunt, changes: target}
+  ontology: [CoordinationPattern, Relationship, Commitment]
+  fit: covered
+  note: one agent takes load for another with consent; helper must remain inside field of care
+  strands: [between, chapter1]
+- id: command-frontline-shielding
+  gist: A front rank guards back-line damage dealers.
+  claim: {tracks: formation, rewards: safe dps, gates: row position, remembers: formation, permits: position, changes: who is hit}
+  ontology: [CoordinationPattern, Commitment, Relationship]
+  fit: covered
+  note: coordination with roles; no member is made to self-erase
+  strands: [chapter1, between]
+- id: command-prebattle-formation
+  gist: Arrange your team first, then watch it fight on its own.
+  claim: {tracks: formation, rewards: planning payoff, gates: before-fight only, remembers: arrangement, permits: arrange, changes: outcome}
+  ontology: [Commitment, Rule, Observation]
+  fit: gap
+  note: 'plan then witness: needs Loadout and a witness mode (observation without control)'
+  strands: [spar, living-ship]
+- id: command-trait-thresholds
+  gist: Having enough members sharing a trait unlocks team bonuses.
+  claim: {tracks: trait counts, rewards: synergy, gates: threshold, remembers: counts, permits: compose, changes: team bonus}
+  ontology: [Capability, CoordinationPattern, Rule]
+  fit: gap
+  note: Loadout thresholds; careful that traits like type are never levels (type_is_not_level)
+  strands: [spar, calrunia]
+- id: command-scout-current-vision
+  gist: Send a unit to see what is there now, since old information goes stale.
+  claim: {tracks: current vision, rewards: fresh information, gates: unit alive, remembers: last seen, permits: scout, changes: knowledge}
+  ontology: [Observation, Affordance, Uncertainty]
+  fit: gap
+  note: KnowledgeState with staleness; uncertainty preserved
+  strands: [cave, calrunia]
+- id: command-split-objectives
+  gist: Your forces must be divided between simultaneous goals.
+  claim: {tracks: objectives, rewards: tradeoff, gates: forces finite, remembers: allocation, permits: divide, changes: results}
+  ontology: [Commitment, Rule, QuestInstance]
+  fit: covered
+  note: child quests, parent not complete from one child (invariant respects)
+  strands: []
+- id: command-focus-fire
+  gist: Concentrating all attacks on one target removes it quickly.
+  claim: {tracks: target, rewards: kill, gates: '-', remembers: '-', permits: focus, changes: foe removed}
+  ontology: [CoordinationPattern, Action]
+  fit: covered
+  note: coordination
+  strands: []
+- id: command-workers-or-soldiers
+  gist: Population is split between making and fighting.
+  claim: {tracks: pop split, rewards: balance, gates: pop finite, remembers: split, permits: allocate, changes: economy vs defence}
+  ontology: [Commitment, Mechanic, Rule]
+  fit: partial
+  note: Allocation record; people are NPCs not players
+  strands: [living-ship]
+- id: inventory-shape-packing
+  gist: Items of different shapes fit into a limited grid like a puzzle.
+  claim: {tracks: grid fill, rewards: tidy fit, gates: space, remembers: layout, permits: pack, changes: what you carry}
+  ontology: [Mechanic, Artifact, Interface]
+  fit: covered
+  note: a spatial Mechanic
+  strands: [room-kit]
+- id: inventory-adjacency
+  gist: Items placed next to one another give bonuses.
+  claim: {tracks: neighbours, rewards: synergy, gates: position, remembers: layout, permits: arrange, changes: bonus}
+  ontology: [Mechanic, Rule]
+  fit: covered
+  note: a spatial Rule; arrangement of objects in a nook is the same shape
+  strands: [room-kit]
+- id: inventory-weight-budget
+  gist: Carry capacity limits what you can bring.
+  claim: {tracks: weight, rewards: choosing, gates: cap, remembers: load, permits: pack, changes: mobility}
+  ontology: [Mechanic, Rule, State]
+  fit: gap
+  note: ResourceMeter (load); carrying a limited kit is a nice nook limit
+  strands: [cave, room-kit]
+- id: inventory-stack-limits
+  gist: Slots and stack sizes cap how much of each thing you hold.
+  claim: {tracks: slots, rewards: organised, gates: cap, remembers: contents, permits: sort, changes: capacity}
+  ontology: [Mechanic, Rule]
+  fit: covered
+  note: a Mechanic
+  strands: []
+- id: inventory-durability
+  gist: Tools wear with use and need repair.
+  claim: {tracks: wear, rewards: mastery of upkeep, gates: repair, remembers: wear, permits: maintain, changes: tool state}
+  ontology: [Mechanic, State, Repair]
+  fit: conflict
+  note: wear that nags can become hidden active debt; fine if repair is optional and letting a tool go is compost (silence_not_compost, no overdue)
+  strands: [spirit-care, living-ship]
+- id: inventory-light-reserve
+  gist: A light source runs out and darkness brings danger.
+  claim: {tracks: fuel, rewards: tension, gates: fuel needed, remembers: fuel, permits: ration, changes: sight}
+  ontology: [Mechanic, State, WorldElement]
+  fit: gap
+  note: ResourceMeter plus light; depth_over_flatland suits light as the display, not a number
+  strands: [cave, living-ship]
+- id: inventory-identification
+  gist: Unknown items stay unnamed until tested or learned.
+  claim: {tracks: known items, rewards: discovery, gates: knowledge, remembers: what is known, permits: test, changes: item identity}
+  ontology: [Hypothesis, Observation, Uncertainty, Test]
+  fit: covered
+  note: Hypothesis and Test; mystery rewards inquiry maps directly
+  strands: [cave, calrunia]
+- id: inventory-deck-thinning
+  gist: Removing weak cards makes good ones come up more often.
+  claim: {tracks: deck composition, rewards: purity, gates: removal cost, remembers: deck, permits: remove, changes: draw odds}
+  ontology: [Revision, Commitment, Mechanic]
+  fit: covered
+  note: letting go is a revision and fits composting if the removed piece is released not lost
+  strands: [spirit-care, spar]
+- id: inventory-equipment-budget
+  gist: A limited number of ability slots forces you to choose a loadout.
+  claim: {tracks: slot budget, rewards: identity of build, gates: budget, remembers: loadout, permits: equip, changes: abilities}
+  ontology: [Commitment, Capability, Mechanic]
+  fit: gap
+  note: Loadout object; the player authors identity, system just allows
+  strands: [spar, calrunia]
+- id: inventory-death-retrieval
+  gist: After defeat you can recover what you dropped at the place you fell, or lose it.
+  claim: {tracks: drop site, rewards: recovery, gates: return trip, remembers: drop site, permits: return, changes: items back}
+  ontology: [RecoverabilityPath, CompostRecord, Consequence]
+  fit: conflict
+  note: if lost items are gone on timer this is a hidden active debt; our version leaves a Seed and no timer pressure (composting is valid completion)
+  strands: [spirit-care, cave]
+- id: puzzles-box-pushing
+  gist: Pushing boxes around in a grid where mistakes trap you.
+  claim: {tracks: box positions, rewards: solutions, gates: grid rules, remembers: state, permits: push, changes: layout}
+  ontology: [Mechanic, Test, RecoverabilityPath]
+  fit: covered
+  note: puzzle Mechanic; undo is RecoverabilityPath
+  strands: []
+- id: puzzles-gravity
+  gist: Flipping gravity direction rewrites which surfaces you can walk on.
+  claim: {tracks: gravity dir, rewards: insight, gates: '-', remembers: '-', permits: flip, changes: traversal}
+  ontology: [Mechanic, Rule, WorldElement]
+  fit: covered
+  note: a Mechanic
+  strands: [living-ship]
+- id: puzzles-linked-portals
+  gist: Two linked doorways connect distant spaces.
+  claim: {tracks: portals, rewards: insight, gates: '-', remembers: portal pair, permits: place, changes: route}
+  ontology: [Mechanic, WorldElement, Rule]
+  fit: covered
+  note: a Mechanic; one world, many places has the same shape
+  strands: [calrunia, living-ship]
+- id: puzzles-time-scrubbing
+  gist: You can wind time back to alter earlier events.
+  claim: {tracks: timeline, rewards: solution, gates: '-', remembers: history, permits: scrub, changes: state}
+  ontology: [Mechanic, RecoverabilityPath, Revision]
+  fit: covered
+  note: Revision and lineage; fits no path has to be wasted
+  strands: [spar, cave]
+- id: puzzles-beam-routing
+  gist: Aim beams through mirrors to reach receivers.
+  claim: {tracks: beams, rewards: solution, gates: '-', remembers: '-', permits: rotate, changes: state}
+  ontology: [Mechanic, Rule]
+  fit: covered
+  note: a Mechanic
+  strands: []
+- id: puzzles-visual-rule-learning
+  gist: The rules are never told; you infer them from the picture.
+  claim: {tracks: inferred rules, rewards: aha, gates: '-', remembers: '-', permits: try, changes: progress}
+  ontology: [Hypothesis, Uncertainty, Test]
+  fit: covered
+  note: mystery rewards inquiry; inferability preserved
+  strands: [cave, calrunia]
+- id: puzzles-perspective-reality
+  gist: Objects change size by how you view them, making seeing into making.
+  claim: {tracks: view, rewards: insight, gates: '-', remembers: '-', permits: look, changes: scene}
+  ontology: [Mechanic, Interface, Observation]
+  fit: covered
+  note: a Mechanic; perception and reality overlap, nice with depth
+  strands: [cave, living-ship]
+- id: puzzles-paper-folding
+  gist: Folding the world joins distant paths.
+  claim: {tracks: fold, rewards: insight, gates: '-', remembers: '-', permits: fold, changes: route}
+  ontology: [Mechanic, WorldElement, Rule]
+  fit: covered
+  note: a Mechanic
+  strands: []
+- id: puzzles-language-decoding
+  gist: You work out an unknown language from context.
+  claim: {tracks: glossary, rewards: insight, gates: '-', remembers: glossary, permits: guess, changes: understanding}
+  ontology: [Hypothesis, Observation, Uncertainty, EvidenceItem]
+  fit: covered
+  note: Hypothesis with uncertainty; fits a unknown spirit language
+  strands: [cave, calrunia, between]
+- id: puzzles-scene-deduction
+  gist: Reconstruct what happened from clues and name the culprits.
+  claim: {tracks: claims, rewards: insight, gates: correct deduction, remembers: claims, permits: assert, changes: case solved}
+  ontology: [Claim, EvidenceItem, Hypothesis, Disagreement]
+  fit: partial
+  note: Hypothesis checks need per-claim confidence (partial credit); a player-causal-hypothesis stays hypothesis
+  strands: [chapter1, between]
