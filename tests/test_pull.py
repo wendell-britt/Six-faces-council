@@ -155,6 +155,14 @@ class PullTest(unittest.TestCase):
         self.assertEqual(self.data["steps_recorded_through"], "2026-10-12T16:53:00Z")
         self.assertIsNone(self.pull())
 
+    def test_deprecated_step_owes_a_compost_round_once(self):
+        self.save("steps", "boat-grid-look-3", {"do": "Look at round 3", "deprecated": {
+            "at": "2026-10-24T16:30:00Z", "note": "we are diverging"}})
+        led = self.pull()
+        self.assertEqual([e["what"] for e in led["steps"]], ["deprecated"])
+        self.assertIn('steps/boat-grid-look-3: deprecated, owes a compost round: "we are diverging"', led["needs_work"])
+        self.assertIsNone(self.pull())
+
     def test_hand_discard_recorded_once_without_work(self):
         # Wendell, 2026-10-20: a card discarded from the hand, paid with a vibeulon, comes back on the ladder.
         self.save("steps", "gs-2", {"do": "Do it", "discardedUntil": "2026-10-23T03:00:00Z", "discards": [
