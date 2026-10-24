@@ -1,0 +1,27 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T07:38:18.412Z",
+ "answers": {
+  "lt-mirror-look-03b": {
+   "kind": "question",
+   "choice": "3c",
+   "savedAt": "2026-10-24T07:38:11.027Z",
+   "steer": ""
+  },
+  "ttv-day-rolls-late": {
+   "kind": "position",
+   "savedAt": "2026-10-24T07:38:18.412Z",
+   "status": "stands",
+   "steer": ""
+  }
+ },
+ "steer": null,
+ "steps": [],
+ "blockers": [],
+ "needs_work": [
+  "questions/lt-mirror-look-03b: 3c [no row on main; it came from another board version]",
+  "positions/ttv-day-rolls-late: Stands [no row on main; it came from another board version]"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
