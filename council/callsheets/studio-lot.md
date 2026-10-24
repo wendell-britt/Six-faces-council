@@ -1,6 +1,28 @@
 # Studio lot (the studio game)
 
 ## Next
+Tall ship, round B done 2026-10-24 (thread "Tall ship, round B"). Still v2 fixed per the review (one hull with depth,
+one label per room, big tailed bubbles, one spirit-generator spirit per room at 108px, departments as lower-deck
+portholes): `/mnt/project-files/studio-tycoon/tall-ship/still-tall-ship-v2.png`, source `still-scene-v2.html` (reads
+`spirits.png` beside it). CCGS art-director recheck `art-director-review-v2.md`: ship it for his look; open notes are
+pixel spirits on a vector ship (pick one style), Production/Release spirits only stand, sizes vary ~1.5x, no drawn
+mapping of seven stages over six departments. Hosted page with the still and the steer design:
+https://claude.ai/artifact/GM4aktqN5uvuu3bfhbmgzb (source `tall-ship.html` there). Look step `ts-ship-look-1` (list
+`studio-lot-boat`, n 3) on both boards. Positions (rows `council/callsheets/rows/tall-ship-b-2026-10-24.json`, on both
+boards): `ts-stage-rooms`, `ts-walk-bow-ward`, `ts-depts-below`, `ts-tap-opens-card`, `ts-steer-is-save`, `ts-fanout`,
+`ts-device-tiers`. No questions: the reach test left none the record could not answer. #429 untouched (head c315bb5).
+
+Brief: Tall ship, round C (fresh Opus thread; waits on his note on `ts-ship-look-1` per hx-looks-gate; owns bars-engine
+#429, branch `claude/project-thread-227mft`). (1) Take his note. (2) Rebuild `world.ts` and `public/studio/boat.js` on
+the tall-ship layout: seven stage rooms stern to bow (a `STAGES` table; each strand's room from its loop/callsheet
+stage, fallback the hold), department workshops on the lower deck as crew homes (keep the hall map of round 3 as
+`deptOf`), the wheel on the stern where the player stands. Pick one art style for spirits and ship (art-director note 1).
+(3) Tap a bubble, spirit or the player's line opens the strand card (round 4 letters content); a steer POSTs the board's
+own save via src/lib/board/shim.ts. (4) Device badge per `ts-device-tiers` (pointer/width guess, tap to correct,
+localStorage). (5) Preview link opened at `?strand=<one with a letter>` as look step `ts-ship-look-2`. Fan-out builds
+(`ts-fanout`: board-pull firing the Board Send routine, a SessionStart hook listing new steers) are a separate
+board-plumbing thread, not this one.
+
 Tall ship, round A 2026-10-24 (thread "Rework boat as a tall ship", from his note on `ty-boat-look-2`: click a spirit's
 or player's message to open its card and steer; the skiff is overdone and too long, use a cross-section of a larger
 tall ship, keep the vibe, rooms correspond to the pipeline, maybe oriented along it; a steer updates the repo and sends
