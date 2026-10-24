@@ -2,7 +2,8 @@
 # bars-engine holds the saves in Postgres; this pulls them from its token-protected route, runs board/pull.py
 # unchanged, gathers a pasted morning menu with council/morning.py, rebuilds the Nonprofit Board, acknowledges what
 # main now records, and fails the run if any save has waited more than six hours.
-# Secrets: BOARD_PULL_TOKEN (same value as bars-engine's env var), COUNCIL_MENU_TOKEN (Lens goals for morning.py).
+# Secrets: BOARD_PULL_TOKEN (same value as bars-engine's env var), COUNCIL_MENU_TOKEN (Lens goals for morning.py),
+# SEND_ROUTINE_TOKEN (the Board Send routine's API token, for board/fire_send.py).
 # Variable (optional): BARS_ENGINE_URL.
 name: board-pull
 on:
@@ -143,6 +144,14 @@ jobs:
         run: |
           set -o pipefail
           python3 board/staleness.py --hours 6 | tee stale-council.log
+      # ts-fanout (2026-10-24): a save recorded on main fires the Board Send routine through its API trigger, so a steer
+      # from any surface starts one board read (routing to the owning thread, republishing the artifact board) with no
+      # button. Without SEND_ROUTINE_TOKEN it warns and the board read waits for his Send, as before.
+      - name: Fire Board Send for what was recorded
+        if: always()
+        env:
+          SEND_ROUTINE_TOKEN: ${{ secrets.SEND_ROUTINE_TOKEN }}
+        run: python3 board/fire_send.py pull.log pull-council.log | tee fire.log
       - name: Summary
         if: always()
         run: |
@@ -152,4 +161,5 @@ jobs:
             echo "### Council Board pull"; echo '```'; cat pull-council.log 2>/dev/null; echo '```';
             echo "### Council Board saves accounted"; echo '```'; cat ack-council.log 2>/dev/null; echo '```';
             echo "### Council Board staleness"; echo '```'; cat stale-council.log 2>/dev/null; echo '```';
+            echo "### Board Send fired"; echo '```'; cat fire.log 2>/dev/null; echo '```';
             echo "### Needs work"; echo '```'; python3 board/needs_work.py; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
