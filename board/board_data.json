@@ -33597,6 +33597,67 @@
      "architect"
     ],
     "pass": "boat-moves-2026-10-24"
+   },
+   "rk-blank-scroll-on-shelf": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:22:25.096Z",
+    "record": "council/ledger/2026-10-24-pull-022441.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "room kit build"
+   },
+   "rk-minute-rules-two-unsaid": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:22:32.578Z",
+    "record": "council/ledger/2026-10-24-pull-022441.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "sage"
+    ],
+    "pass": "room kit build"
+   },
+   "lb-keep-the-deck": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:23:52.686Z",
+    "record": "council/ledger/2026-10-24-pull-022441.json (six-faces-council)",
+    "steer": "I want a tall ship crosssectikn where agents walk between rooms in the cross section. Perhaps the tall ship is 3 dimensional but represented in 2d (monument valley style)",
+    "faces": [
+     "shaman",
+     "diplomat"
+    ],
+    "pass": "living-boat-2026-10-24"
+   },
+   "lb-depth-in-place": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:24:27.508Z",
+    "record": "council/ledger/2026-10-24-pull-022441.json (six-faces-council)",
+    "faces": [
+     "sage",
+     "challenger"
+    ],
+    "pass": "living-boat-2026-10-24"
+   },
+   "lb-stage-pennants": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:24:41.948Z",
+    "record": "council/ledger/2026-10-24-pull-022441.json (six-faces-council)",
+    "steer": "I don’t understand the pennants",
+    "faces": [
+     "architect"
+    ],
+    "pass": "living-boat-2026-10-24"
    }
   },
   "questions": {
@@ -37946,7 +38007,7 @@
    ]
   }
  ],
- "steps_recorded_through": "2026-10-22T03:01:34.510Z",
+ "steps_recorded_through": "2026-10-24T02:22:06.262Z",
  "morning": {
   "date": "2026-10-21",
   "gathered_at": "2026-10-22T01:53:54Z",
