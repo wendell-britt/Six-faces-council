@@ -1,0 +1,2017 @@
+source: https://gameplayatlas.loopyhop.com/
+fetched: 2026-10-24
+taxonomy: |
+  Gameplay Atlas ("A field guide to game mechanics", by loopyhop) is a JS app that loads one catalog.json
+  (/assets/<hash>/catalog.json, 280 entries, bilingual en/zh) and also lists every mechanic in /sitemap.xml.
+  Structure: 5 families > 28 systems > 280 mechanics (8-18 per system). Each mechanic also carries cross-cutting
+  tags from a 16-tag axis (planning, risk, spatial, optimization, information, timing, economy, progression, time,
+  precision, discovery, dexterity, narrative, creativity, cooperation, randomness), a prototype scope
+  (small/medium/large) and interaction (solo/cooperative/competitive), related-mechanic links, combinesWith systems,
+  and cross-system combination ideas. Each entry has rules, a loop, design decisions, tunable parameters, real-game
+  cases (with source and screenshot credits), a walkthrough, and a first-prototype step. No outside framework named
+  (the site says categories describe mechanisms). Author: no named person; brand loopyhop.
+  Licence: no content licence stated. Footer: game screenshots and trademarks belong to their owners and inclusion
+  grants no licence to reuse images; cases describe game rules; design levers and combinations are editorial analysis.
+  Treat as all-rights-reserved; this inventory is a factual index with paraphrased/short summaries only.
+  Fields in this file: names, systems, tags, example games and links only. The site's blurbs are left out (no licence); our own gists are in crosswalk-a.yaml and crosswalk-b.yaml.
+families:
+  - name: "Care & sustain"
+    systems: [farming, fishing, cooking, gathering, survival, ecology]
+  - name: "Produce & manage"
+    systems: [automation, building, commerce, incremental]
+  - name: "Combine & allocate"
+    systems: [inventory, puzzles, deckbuilding, matching, command, allocation]
+  - name: "Control & respond"
+    systems: [combat, exploration, movement, projectiles, stealth, defense, rhythm, driving]
+  - name: "Develop & interact"
+    systems: [progression, relationships, cooperation, narrative]
+systems:
+  - {id: farming, name: "Farming & growth", count: 10}
+  - {id: fishing, name: "Fishing & catching", count: 10}
+  - {id: cooking, name: "Cooking & food", count: 10}
+  - {id: gathering, name: "Gathering & mining", count: 10}
+  - {id: automation, name: "Crafting & automation", count: 10}
+  - {id: building, name: "Building & space", count: 10}
+  - {id: inventory, name: "Inventory & resources", count: 10}
+  - {id: puzzles, name: "Puzzles & deduction", count: 10}
+  - {id: combat, name: "Combat & tactics", count: 18}
+  - {id: exploration, name: "Exploration & routes", count: 4}
+  - {id: relationships, name: "Social & relationships", count: 10}
+  - {id: commerce, name: "Business & trade", count: 11}
+  - {id: deckbuilding, name: "Decks & synergies", count: 12}
+  - {id: progression, name: "Progression & legacy", count: 12}
+  - {id: survival, name: "Survival & needs", count: 12}
+  - {id: stealth, name: "Stealth & identity", count: 11}
+  - {id: defense, name: "Defense & waves", count: 9}
+  - {id: cooperation, name: "Cooperation & social play", count: 9}
+  - {id: ecology, name: "Breeding & ecology", count: 8}
+  - {id: matching, name: "Matching & merging", count: 10}
+  - {id: projectiles, name: "Aiming & projectiles", count: 10}
+  - {id: movement, name: "Movement & traversal", count: 15}
+  - {id: command, name: "Unit coordination", count: 10}
+  - {id: allocation, name: "Drafting & allocation", count: 8}
+  - {id: narrative, name: "Dialogue & event choices", count: 10}
+  - {id: incremental, name: "Income & accumulation", count: 11}
+  - {id: rhythm, name: "Beats & timing", count: 5}
+  - {id: driving, name: "Vehicle handling", count: 5}
+mechanics:
+  - id: automation-belt-routing
+    name: "Conveyor routing"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [spatial, optimization, planning]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-belt-routing/
+  - id: automation-flow-splitting
+    name: "Flow splitting and ratios"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [optimization, planning, spatial]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-flow-splitting/
+  - id: automation-item-filtering
+    name: "Item-filtered transport"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [information, optimization, planning]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-item-filtering/
+  - id: automation-production-chain
+    name: "Multi-stage production chains"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [planning, progression, optimization]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-production-chain/
+  - id: automation-fluid-routing
+    name: "Fluid routing"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [spatial, optimization, information]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-fluid-routing/
+  - id: automation-power-budget
+    name: "Power supply balancing"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [planning, risk, optimization]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-power-budget/
+  - id: automation-conditional-control
+    name: "Sensor-driven control"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [information, optimization, creativity]
+    example_games: ["Factorio", "Oxygen Not Included"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-conditional-control/
+  - id: automation-aerial-logistics
+    name: "Autonomous aerial logistics"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [planning, spatial, optimization]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-aerial-logistics/
+  - id: automation-blueprint-reuse
+    name: "Reusable factory blueprints"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [creativity, planning, optimization]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-blueprint-reuse/
+  - id: automation-byproduct-loop
+    name: "Byproduct consumption and recirculation"
+    category: "commerce (automation)"
+    family: "Produce & manage"
+    tags: [optimization, planning, risk]
+    example_games: ["Factorio", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/automation-byproduct-loop/
+  - id: building-structural-support
+    name: "Structural support and collapse"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, risk, planning]
+    example_games: ["Valheim", "RimWorld"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-structural-support/
+  - id: building-room-requirements
+    name: "Room qualification rules"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, planning, information]
+    example_games: ["Terraria", "RimWorld"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-room-requirements/
+  - id: building-terrain-shaping
+    name: "Terrain shaping"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, creativity, planning]
+    example_games: ["Valheim", "Timberborn"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-terrain-shaping/
+  - id: building-service-coverage
+    name: "Service coverage placement"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, planning, optimization]
+    example_games: ["Valheim", "Cities: Skylines"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-service-coverage/
+  - id: building-access-network
+    name: "Road and entrance connectivity"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, planning, optimization]
+    example_games: ["Timberborn", "Cities: Skylines"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-access-network/
+  - id: building-vertical-stacking
+    name: "Vertical stacking"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, creativity, optimization]
+    example_games: ["Timberborn", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-vertical-stacking/
+  - id: building-modular-snapping
+    name: "Modular snap construction"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, creativity, precision]
+    example_games: ["Valheim", "Satisfactory"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-modular-snapping/
+  - id: building-construction-sequencing
+    name: "Construction sequencing"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [planning, time, optimization]
+    example_games: ["RimWorld", "Oxygen Not Included"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-construction-sequencing/
+  - id: building-water-engineering
+    name: "Water retention and level management"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, risk, planning]
+    example_games: ["Timberborn", "Oxygen Not Included"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-water-engineering/
+  - id: building-thermal-zoning
+    name: "Thermal zoning and control"
+    category: "Building & space (building)"
+    family: "Produce & manage"
+    tags: [spatial, optimization, risk]
+    example_games: ["RimWorld", "Oxygen Not Included"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/building-thermal-zoning/
+  - id: combat-stamina-budget
+    name: "Shared attack–defense stamina"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [timing, risk, planning]
+    example_games: ["Dark Souls III", "Elden Ring"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-stamina-budget/
+  - id: combat-timed-parry
+    name: "Timed parries"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [timing, precision, risk]
+    example_games: ["Sekiro: Shadows Die Twice", "Dead Cells"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-timed-parry/
+  - id: combat-invulnerable-dodge
+    name: "Invulnerability-window dodging"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [timing, dexterity, spatial]
+    example_games: ["Hades", "Dead Cells"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-invulnerable-dodge/
+  - id: combat-posture-break
+    name: "Stagger buildup and punish windows"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [timing, risk, progression]
+    example_games: ["Sekiro: Shadows Die Twice", "Elden Ring"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-posture-break/
+  - id: combat-weakpoint-aim
+    name: "Weak-point targeting"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [precision, information, risk]
+    example_games: ["Horizon Zero Dawn", "Monster Hunter: World"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-weakpoint-aim/
+  - id: combat-part-destruction
+    name: "Part destruction changes the fight"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [planning, precision, progression]
+    example_games: ["Horizon Zero Dawn", "Monster Hunter: World"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-part-destruction/
+  - id: combat-cover-flanking
+    name: "Cover and flanking"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [spatial, planning, risk]
+    example_games: ["XCOM 2", "Gears Tactics"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-cover-flanking/
+  - id: combat-surface-reactions
+    name: "Reactive combat surfaces"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [planning, creativity, spatial]
+    example_games: ["Divinity: Original Sin 2", "Baldur’s Gate 3"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-surface-reactions/
+  - id: combat-combo-variation
+    name: "Combo variety rewards"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [dexterity, creativity, timing]
+    example_games: ["Devil May Cry 5", "Bayonetta"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-combo-variation/
+  - id: combat-combat-deck-cycle
+    name: "Combat draw–discard cycles"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [planning, randomness, optimization]
+    example_games: ["Slay the Spire", "Monster Train"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-combat-deck-cycle/
+  - id: exploration-ability-gates
+    name: "Ability-gated backtracking"
+    category: "Exploration & routes (exploration)"
+    family: "Control & respond"
+    tags: [discovery, progression, information]
+    example_games: ["Hollow Knight", "Ori and the Blind Forest"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-ability-gates/
+  - id: exploration-wall-jump
+    name: "Wall-jump traversal"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [dexterity, spatial, timing]
+    example_games: ["Super Meat Boy", "Hollow Knight"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-wall-jump/
+  - id: exploration-air-action-refill
+    name: "Air movement and refill nodes"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [dexterity, planning, spatial]
+    example_games: ["Celeste", "Neon White"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-air-action-refill/
+  - id: exploration-climbing-rest-route
+    name: "Climbing stamina and rest routes"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [planning, risk, spatial]
+    example_games: ["Jusant", "Sable"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-climbing-rest-route/
+  - id: exploration-grapple-swing
+    name: "Grapple swings and release timing"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [dexterity, spatial, timing]
+    example_games: ["Titanfall 2", "Dying Light 2 Stay Human"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-grapple-swing/
+  - id: exploration-gliding-descent
+    name: "Gliding and landing choice"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [spatial, planning, discovery]
+    example_games: ["Sable", "Dying Light 2 Stay Human"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-gliding-descent/
+  - id: exploration-earned-map
+    name: "Earned map information"
+    category: "Exploration & routes (exploration)"
+    family: "Control & respond"
+    tags: [information, discovery, planning]
+    example_games: ["Hollow Knight", "Elden Ring"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-earned-map/
+  - id: exploration-fast-travel-network
+    name: "Unlockable fast-travel networks"
+    category: "Exploration & routes (exploration)"
+    family: "Control & respond"
+    tags: [progression, planning, discovery]
+    example_games: ["Elden Ring", "Hollow Knight"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-fast-travel-network/
+  - id: exploration-stealth-awareness
+    name: "Escalating awareness and stealth routing"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [information, timing, spatial]
+    example_games: ["Dishonored", "HITMAN World of Assassination"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-stealth-awareness/
+  - id: exploration-procedural-route-reading
+    name: "Route reading in procedural terrain"
+    category: "Exploration & routes (exploration)"
+    family: "Control & respond"
+    tags: [randomness, discovery, risk]
+    example_games: ["Spelunky 2", "Noita"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/exploration-procedural-route-reading/
+  - id: cooking-recipe-learning
+    name: "Recipe knowledge unlocks"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [discovery, progression, information]
+    example_games: ["Stardew Valley", "The Long Dark"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-recipe-learning/
+  - id: cooking-ingredient-substitution
+    name: "Ingredient substitution"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [economy, planning, optimization]
+    example_games: ["Don't Starve Together", "Stardew Valley"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-ingredient-substitution/
+  - id: cooking-heat-window
+    name: "Cooking completion windows"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [timing, risk, time]
+    example_games: ["Valheim", "Overcooked! 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-heat-window/
+  - id: cooking-preparation-chain
+    name: "Staged preparation and assembly"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [planning, optimization, cooperation]
+    example_games: ["Overcooked! 2", "PlateUp!"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-preparation-chain/
+  - id: cooking-order-triage
+    name: "Timed order triage"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [time, planning, risk]
+    example_games: ["Overcooked! 2", "PlateUp!"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-order-triage/
+  - id: cooking-station-handoff
+    name: "Kitchen station handoffs"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [cooperation, spatial, optimization]
+    example_games: ["Overcooked! 2", "PlateUp!"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-station-handoff/
+  - id: cooking-meal-loadout
+    name: "Meal buff loadouts"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [planning, progression, optimization]
+    example_games: ["Valheim", "Stardew Valley"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-meal-loadout/
+  - id: cooking-food-preservation
+    name: "Preservation through processing"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [time, economy, planning]
+    example_games: ["Don't Starve Together", "The Long Dark"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-food-preservation/
+  - id: cooking-measurement-precision
+    name: "Measured ingredient dosing"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [precision, dexterity, information]
+    example_games: ["Cooking Simulator", "Brewmaster: Beer Brewing Simulator"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-measurement-precision/
+  - id: cooking-judged-flavor
+    name: "Targeted flavor scoring"
+    category: "Cooking & food (cooking)"
+    family: "Care & sustain"
+    tags: [optimization, information, creativity]
+    example_games: ["Battle Chef Brigade Deluxe", "Cooking Simulator"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooking-judged-flavor/
+  - id: gathering-tool-hardness
+    name: "Harvesting tool gates"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [progression, planning, discovery]
+    example_games: ["Terraria", "Valheim"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-tool-hardness/
+  - id: gathering-resource-detection
+    name: "Resource detection overlays"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [information, discovery, optimization]
+    example_games: ["Terraria", "Subnautica"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-resource-detection/
+  - id: gathering-volumetric-excavation
+    name: "Volumetric excavation"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [spatial, creativity, precision]
+    example_games: ["No Man's Sky", "ASTRONEER"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-volumetric-excavation/
+  - id: gathering-oxygen-gathering
+    name: "Oxygen-budgeted gathering"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [risk, time, planning]
+    example_games: ["Subnautica", "DAVE THE DIVER"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-oxygen-gathering/
+  - id: gathering-gathering-quota
+    name: "Gathering quotas and stopping decisions"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [risk, planning, optimization]
+    example_games: ["Deep Rock Galactic", "Stardew Valley"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-gathering-quota/
+  - id: gathering-supply-mining
+    name: "Gathering to sustain gathering"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [economy, risk, optimization]
+    example_games: ["Deep Rock Galactic", "No Man's Sky"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-supply-mining/
+  - id: gathering-hidden-deposit-clues
+    name: "Clues to buried deposits"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [information, discovery, spatial]
+    example_games: ["Deep Rock Galactic", "Stardew Valley"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-hidden-deposit-clues/
+  - id: gathering-salvage-dismantling
+    name: "Dismantling for salvage"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [economy, risk, planning]
+    example_games: ["The Long Dark", "Don't Starve Together"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-salvage-dismantling/
+  - id: gathering-renewable-forage-route
+    name: "Revisiting renewable forage"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [time, planning, discovery]
+    example_games: ["Don't Starve Together", "Stardew Valley"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-renewable-forage-route/
+  - id: gathering-depth-targeting
+    name: "Depth-targeted mining"
+    category: "Gathering & mining (gathering)"
+    family: "Care & sustain"
+    tags: [planning, risk, discovery]
+    example_games: ["Stardew Valley", "Terraria"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/gathering-depth-targeting/
+  - id: deckbuilding-reward-choice
+    name: "Drafting rewards and skipping"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [planning, randomness, optimization]
+    example_games: ["Slay the Spire", "Monster Train"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-reward-choice/
+  - id: deckbuilding-card-upgrade
+    name: "Investing in existing cards"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [progression, economy, optimization]
+    example_games: ["Slay the Spire", "Monster Train"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-card-upgrade/
+  - id: deckbuilding-exhaust-for-burst
+    name: "Powerful cards spent for the fight"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [risk, timing, planning]
+    example_games: ["Slay the Spire", "Monster Train"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-exhaust-for-burst/
+  - id: deckbuilding-opening-hand-control
+    name: "Choosing guaranteed opening cards"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [planning, optimization]
+    example_games: ["Slay the Spire", "Wildfrost"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-opening-hand-control/
+  - id: deckbuilding-discard-redraw
+    name: "Selective discarding and redrawing"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [randomness, risk, planning]
+    example_games: ["Balatro", "Slay the Spire"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-discard-redraw/
+  - id: deckbuilding-duplicate-investment
+    name: "Copying an invested card"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [planning, progression, optimization]
+    example_games: ["Slay the Spire", "Monster Train"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-duplicate-investment/
+  - id: deckbuilding-temporary-generation
+    name: "Generating cards during combat"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [planning, optimization]
+    example_games: ["Slay the Spire", "Monster Train"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-temporary-generation/
+  - id: deckbuilding-trigger-order
+    name: "Ordering effects to change the result"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [planning, optimization]
+    example_games: ["Balatro", "Slay the Spire"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-trigger-order/
+  - id: deckbuilding-dual-use-cards
+    name: "Two competing uses for one card"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [spatial, planning, risk]
+    example_games: ["Neon White", "Gloomhaven"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-dual-use-cards/
+  - id: deckbuilding-dice-allocation
+    name: "Allocating rolled outcomes"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [randomness, planning, optimization]
+    example_games: ["Dicey Dungeons", "Astrea: Six-Sided Oracles"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-dice-allocation/
+  - id: deckbuilding-poker-hand-requirements
+    name: "Using card patterns as action requirements"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [planning, randomness]
+    example_games: ["Balatro", "Poker Quest"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-poker-hand-requirements/
+  - id: deckbuilding-rule-changing-passives
+    name: "Rebuilding around rule-changing passives"
+    category: "Decks & synergies (deckbuilding)"
+    family: "Combine & allocate"
+    tags: [discovery, planning, creativity]
+    example_games: ["Balatro", "Slay the Spire"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/deckbuilding-rule-changing-passives/
+  - id: cooperation-split-information
+    name: "Communicating split information"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [information, cooperation, timing]
+    example_games: ["Keep Talking and Nobody Explodes", "We Were Here"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-split-information/
+  - id: cooperation-hidden-role
+    name: "Hidden roles and convincing behavior"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [information, risk, cooperation]
+    example_games: ["Among Us", "Goose Goose Duck"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-hidden-role/
+  - id: cooperation-discussion-vote
+    name: "Discussion, evidence and voting"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [information, cooperation, narrative]
+    example_games: ["Among Us", "Goose Goose Duck"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-discussion-vote/
+  - id: cooperation-downed-revival
+    name: "Reviving a downed teammate"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [cooperation, risk, timing]
+    example_games: ["Deep Rock Galactic", "Sea of Thieves"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-downed-revival/
+  - id: cooperation-shared-vehicle
+    name: "Crew a shared vehicle"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [cooperation, planning, timing]
+    example_games: ["Lovers in a Dangerous Spacetime", "Sea of Thieves"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-shared-vehicle/
+  - id: cooperation-physical-tether
+    name: "Move while physically tethered"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [cooperation, spatial, dexterity]
+    example_games: ["Bread & Fred", "Chained Together"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-physical-tether/
+  - id: cooperation-synchronized-triggers
+    name: "Reach separate controls and synchronize"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [cooperation, timing, spatial]
+    example_games: ["Portal 2", "Among Us"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-synchronized-triggers/
+  - id: cooperation-complementary-abilities
+    name: "Combine different character abilities"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [cooperation, planning, creativity]
+    example_games: ["Deep Rock Galactic", "Trine 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-complementary-abilities/
+  - id: cooperation-temporary-alliance
+    name: "Temporary alliances and betrayal"
+    category: "Cooperation & social play (cooperation)"
+    family: "Develop & interact"
+    tags: [cooperation, risk, economy]
+    example_games: ["Armello", "Journey of Greed"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/cooperation-temporary-alliance/
+  - id: defense-maze-routing
+    name: "Build a longer enemy route"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [spatial, planning, optimization]
+    example_games: ["Defense Grid: The Awakening", "Sanctum 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-maze-routing/
+  - id: defense-target-priority
+    name: "Set automatic target priorities"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [information, planning, optimization]
+    example_games: ["Bloons TD 6", "GemCraft - Chasing Shadows"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-target-priority/
+  - id: defense-early-wave-call
+    name: "Call the next wave early"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [risk, timing, economy]
+    example_games: ["Kingdom Rush", "GemCraft - Chasing Shadows"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-early-wave-call/
+  - id: defense-day-night-investment
+    name: "Invest by day, defend by night"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [economy, planning, risk]
+    example_games: ["Thronefall", "Kingdom Two Crowns"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-day-night-investment/
+  - id: defense-mobile-defender
+    name: "Move a defender to the breach"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [dexterity, planning, risk]
+    example_games: ["Thronefall", "Sanctum 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-mobile-defender/
+  - id: defense-trap-sequence
+    name: "Chain traps into a sequence"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [spatial, planning, timing]
+    example_games: ["Orcs Must Die! 3", "Dungeon Warfare"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-trap-sequence/
+  - id: defense-resistance-counters
+    name: "Prepare answers to enemy resistances"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [information, planning, risk]
+    example_games: ["Bloons TD 6", "Kingdom Rush"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-resistance-counters/
+  - id: defense-tower-upgrade-budget
+    name: "Upgrade deeply or build wider"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [economy, spatial, optimization]
+    example_games: ["Kingdom Rush", "Defense Grid: The Awakening"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-tower-upgrade-budget/
+  - id: defense-ammunition-supply
+    name: "Keep defensive guns supplied"
+    category: "Defense & waves (defense)"
+    family: "Control & respond"
+    tags: [planning, economy, optimization]
+    example_games: ["Factorio", "Mindustry"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/defense-ammunition-supply/
+  - id: progression-specialization-branches
+    name: "Exclusive specialization branches"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [planning, progression, optimization]
+    example_games: ["Stardew Valley", "Grim Dawn"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-specialization-branches/
+  - id: progression-practice-based-growth
+    name: "Practice-based skill growth"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [progression, planning, time]
+    example_games: ["Stardew Valley", "The Elder Scrolls V: Skyrim Special Edition"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-practice-based-growth/
+  - id: progression-respec-investment
+    name: "Refund and reassign upgrades"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [planning, economy, progression]
+    example_games: ["Baldur’s Gate 3", "Grim Dawn"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-respec-investment/
+  - id: progression-permanent-run-currency
+    name: "Persistent currency between attempts"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [progression, economy, risk]
+    example_games: ["Hades", "Rogue Legacy 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-permanent-run-currency/
+  - id: progression-successor-selection
+    name: "Choose the next heir"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [randomness, progression, planning]
+    example_games: ["Rogue Legacy", "Rogue Legacy 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-successor-selection/
+  - id: progression-prestige-reset
+    name: "Reset progress for lasting acceleration"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [progression, economy, time, optimization]
+    example_games: ["Cookie Clicker", "Clicker Heroes"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-prestige-reset/
+  - id: progression-challenge-tiers
+    name: "Escalating challenge conditions"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [progression, risk, planning]
+    example_games: ["Slay the Spire", "Hades"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-challenge-tiers/
+  - id: progression-random-level-choices
+    name: "Random choices at level-up"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [randomness, progression, planning]
+    example_games: ["Vampire Survivors", "Brotato"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-random-level-choices/
+  - id: progression-evolution-recipes
+    name: "Complete a weapon evolution recipe"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [planning, progression, discovery]
+    example_games: ["Vampire Survivors", "HoloCure - Save the Fans!"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-evolution-recipes/
+  - id: progression-research-prerequisites
+    name: "Research prerequisite chains"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [planning, progression, economy]
+    example_games: ["Factorio", "RimWorld"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-research-prerequisites/
+  - id: progression-death-loses-training
+    name: "Death costs trained abilities"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [risk, progression, planning]
+    example_games: ["Valheim", "Project Zomboid"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-death-loses-training/
+  - id: progression-knowledge-gates
+    name: "Progress through learned knowledge"
+    category: "cooperation (progression)"
+    family: "Develop & interact"
+    tags: [information, discovery, progression]
+    example_games: ["Outer Wilds", "TUNIC"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/progression-knowledge-gates/
+  - id: stealth-disguise-access
+    name: "Disguise permissions"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [information, planning, risk]
+    example_games: ["HITMAN World of Assassination", "Shadow Tactics: Blades of the Shogun"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-disguise-access/
+  - id: stealth-sound-lures
+    name: "Sound lures"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [spatial, timing, information]
+    example_games: ["HITMAN World of Assassination", "Desperados III"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-sound-lures/
+  - id: stealth-body-concealment
+    name: "Moving and hiding bodies"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [planning, spatial, risk]
+    example_games: ["HITMAN World of Assassination", "Desperados III"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-body-concealment/
+  - id: stealth-synchronized-actions
+    name: "Queued synchronized actions"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [planning, timing, spatial]
+    example_games: ["Desperados III", "Shadow Tactics: Blades of the Shogun"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-synchronized-actions/
+  - id: stealth-light-shadow
+    name: "Moving through light and shadow"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [spatial, timing, information]
+    example_games: ["Thief", "Mark of the Ninja"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-light-shadow/
+  - id: stealth-peeking
+    name: "Peeking before committing"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [information, risk, planning]
+    example_games: ["Thief", "Invisible, Inc."]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-peeking/
+  - id: stealth-security-network
+    name: "Surveillance control"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [information, planning, economy]
+    example_games: ["HITMAN World of Assassination", "Invisible, Inc."]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-security-network/
+  - id: stealth-hiding-spots
+    name: "Hiding spots and exit timing"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [timing, risk, information]
+    example_games: ["HITMAN World of Assassination", "Thief"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-hiding-spots/
+  - id: stealth-knockout-window
+    name: "Knockout timers and pinning"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [time, planning, risk]
+    example_games: ["Invisible, Inc.", "Desperados III"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-knockout-window/
+  - id: stealth-staged-accidents
+    name: "Staging environmental accidents"
+    category: "Stealth & identity (stealth)"
+    family: "Control & respond"
+    tags: [planning, timing, creativity]
+    example_games: ["HITMAN World of Assassination", "Desperados III"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/stealth-staged-accidents/
+  - id: survival-competing-needs
+    name: "Competing survival needs"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, risk]
+    example_games: ["The Long Dark", "Don't Starve"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-competing-needs/
+  - id: survival-safe-water
+    name: "Collecting and purifying water"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, risk]
+    example_games: ["The Long Dark", "Green Hell"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-safe-water/
+  - id: survival-fatigue-rest
+    name: "Fatigue and sleep planning"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, risk]
+    example_games: ["The Long Dark", "Project Zomboid"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-fatigue-rest/
+  - id: survival-bleeding-triage
+    name: "Bleeding and urgent bandaging"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, risk]
+    example_games: ["Project Zomboid", "RimWorld"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-bleeding-triage/
+  - id: survival-wound-cleanliness
+    name: "Wound hygiene and infection prevention"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, risk]
+    example_games: ["Project Zomboid", "Green Hell"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-wound-cleanliness/
+  - id: survival-body-inspection
+    name: "Inspecting the body to find problems"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [information, discovery]
+    example_games: ["Green Hell", "Project Zomboid"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-body-inspection/
+  - id: survival-balanced-nutrition
+    name: "Food balance and nutrition"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, economy]
+    example_games: ["Green Hell", "Project Zomboid"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-balanced-nutrition/
+  - id: survival-stress-crisis
+    name: "Stress buildup and crisis"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [risk, planning]
+    example_games: ["RimWorld", "Darkest Dungeon"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-stress-crisis/
+  - id: survival-weather-exposure
+    name: "Wetness, cold and warming up"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, spatial]
+    example_games: ["The Long Dark", "Valheim"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-weather-exposure/
+  - id: survival-limb-impairment
+    name: "Injured limbs change capabilities"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [planning, risk]
+    example_games: ["Kenshi", "RimWorld"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-limb-impairment/
+  - id: survival-temporary-relief
+    name: "Temporary symptom relief"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [timing, risk]
+    example_games: ["Project Zomboid", "The Long Dark"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-temporary-relief/
+  - id: survival-contagion-control
+    name: "Interrupt disease transmission"
+    category: "Survival & needs (survival)"
+    family: "Care & sustain"
+    tags: [information, planning]
+    example_games: ["Oxygen Not Included", "Niche - a genetics survival game"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/survival-contagion-control/
+  - id: ecology-plant-crossbreeding
+    name: "Arrange neighbors to breed plants"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [planning, discovery, spatial]
+    example_games: ["Rust", "APICO"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-plant-crossbreeding/
+  - id: ecology-parent-trait-selection
+    name: "Select parents for offspring traits"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [planning, randomness, progression]
+    example_games: ["Niche - a genetics survival game", "Planet Zoo"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-parent-trait-selection/
+  - id: ecology-genetic-diversity
+    name: "Preserve genetic diversity"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [planning, information, progression]
+    example_games: ["Niche - a genetics survival game", "Planet Zoo"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-genetic-diversity/
+  - id: ecology-animal-taming
+    name: "Gradually tame wild animals"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [timing, planning]
+    example_games: ["RimWorld", "Valheim"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-animal-taming/
+  - id: ecology-population-limits
+    name: "Control breeding and population size"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [planning, economy, optimization]
+    example_games: ["RimWorld", "Planet Zoo"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-population-limits/
+  - id: ecology-habitat-capacity
+    name: "Check habitat capacity before adding animals"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [planning, economy, spatial]
+    example_games: ["Planet Zoo", "Megaquarium"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-habitat-capacity/
+  - id: ecology-species-compatibility
+    name: "Plan which species can share a home"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [planning, spatial, optimization]
+    example_games: ["Megaquarium", "Planet Zoo"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-species-compatibility/
+  - id: ecology-breeding-conditions
+    name: "Prepare conditions that enable breeding"
+    category: "Breeding & ecology (ecology)"
+    family: "Care & sustain"
+    tags: [information, discovery, planning]
+    example_games: ["APICO", "Megaquarium"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/ecology-breeding-conditions/
+  - id: combat-intent-preview
+    name: "Previewing enemy intent"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [information, planning, risk]
+    example_games: ["Into the Breach", "Slay the Spire"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-intent-preview/
+  - id: combat-forced-movement
+    name: "Forced movement"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [spatial, planning, risk]
+    example_games: ["Into the Breach", "Baldur’s Gate 3"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-forced-movement/
+  - id: combat-action-points
+    name: "Shared action points"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [planning, economy, spatial]
+    example_games: ["XCOM 2", "Gears Tactics"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-action-points/
+  - id: combat-overwatch
+    name: "Overwatch and reaction fire"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [planning, spatial, risk]
+    example_games: ["XCOM 2", "Gears Tactics"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-overwatch/
+  - id: combat-simultaneous-orders
+    name: "Simultaneous planned orders"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [planning, time, information]
+    example_games: ["Frozen Synapse", "Phantom Brigade"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-simultaneous-orders/
+  - id: combat-pause-orders
+    name: "Pausing to issue orders"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [planning, information, time]
+    example_games: ["FTL: Faster Than Light", "Dragon Age: Origins"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-pause-orders/
+  - id: combat-friendly-fire
+    name: "Area attacks with friendly fire"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [spatial, risk, planning]
+    example_games: ["Baldur’s Gate 3", "Dragon Age: Origins"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-friendly-fire/
+  - id: combat-destructible-cover
+    name: "Destroying cover to reshape a fight"
+    category: "movement (combat)"
+    family: "Control & respond"
+    tags: [spatial, planning, risk]
+    example_games: ["XCOM 2", "Frozen Synapse"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/combat-destructible-cover/
+  - id: allocation-public-pick
+    name: "Take one option from a shared pool"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [planning, information]
+    example_games: ["Sagrada", "Teamfight Tactics"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-public-pick/
+  - id: allocation-worker-placement
+    name: "Commit a worker to occupy an action"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [planning, economy]
+    example_games: ["Dune: Imperium", "D&D Lords of Waterdeep"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-worker-placement/
+  - id: allocation-area-majority
+    name: "Control an area by having more presence"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [spatial, planning]
+    example_games: ["Root", "Carcassonne - Tiles & Tactics"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-area-majority/
+  - id: allocation-route-denial
+    name: "Claim routes to alter an opponent’s path"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [spatial, risk]
+    example_games: ["Ticket to Ride: Classic Edition", "Catan Universe"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-route-denial/
+  - id: allocation-public-goal-race
+    name: "Race for a public objective reward"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [planning, timing]
+    example_games: ["Terraforming Mars", "Dune: Imperium"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-public-goal-race/
+  - id: allocation-savings-interest
+    name: "Keep savings to earn next-round interest"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [economy, risk]
+    example_games: ["Teamfight Tactics", "Dota Underlords"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-savings-interest/
+  - id: allocation-shared-stock
+    name: "Recruit from a shared stock"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [information, economy]
+    example_games: ["Teamfight Tactics", "Dota Underlords"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-shared-stock/
+  - id: allocation-shop-reservation
+    name: "Reserve a shop item for a later purchase"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [planning, economy]
+    example_games: ["Backpack Battles", "Super Auto Pets"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-shop-reservation/
+  - id: allocation-snake-order
+    name: "Reverse the next pass to compensate late picks"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [planning, optimization]
+    example_games: ["Sagrada", "Catan Universe"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-snake-order/
+  - id: allocation-follow-phase
+    name: "Choose a phase that others can also use"
+    category: "Drafting & allocation (allocation)"
+    family: "Combine & allocate"
+    tags: [information, planning]
+    example_games: ["Race for the Galaxy", "Roll for the Galaxy"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/allocation-follow-phase/
+  - id: driving-drift-boost
+    name: "Drift to charge a release boost"
+    category: "Vehicle handling (driving)"
+    family: "Control & respond"
+    tags: [timing, precision, risk]
+    example_games: ["Mario Kart 8 Deluxe", "Sonic & All-Stars Racing Transformed Collection"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/driving-drift-boost/
+  - id: driving-slipstream
+    name: "Follow a lead vehicle to gain speed"
+    category: "Vehicle handling (driving)"
+    family: "Control & respond"
+    tags: [spatial, timing, risk]
+    example_games: ["Mario Kart 8 Deluxe", "Gran Turismo 7"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/driving-slipstream/
+  - id: driving-start-charge
+    name: "Time the throttle during the countdown"
+    category: "Vehicle handling (driving)"
+    family: "Control & respond"
+    tags: [timing, precision, dexterity]
+    example_games: ["Mario Kart 8 Deluxe", "Sonic & All-Stars Racing Transformed Collection"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/driving-start-charge/
+  - id: driving-air-stunt
+    name: "Perform an airborne trick for a boost"
+    category: "Vehicle handling (driving)"
+    family: "Control & respond"
+    tags: [timing, risk, dexterity]
+    example_games: ["Mario Kart 8 Deluxe", "Sonic & All-Stars Racing Transformed Collection"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/driving-air-stunt/
+  - id: driving-air-balance
+    name: "Adjust vehicle pitch before landing"
+    category: "Vehicle handling (driving)"
+    family: "Control & respond"
+    tags: [precision, dexterity, risk]
+    example_games: ["Trials Rising", "Hill Climb Racing 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/driving-air-balance/
+  - id: incremental-manual-to-passive
+    name: "Earn by hand, then buy passive output"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [economy, progression, time]
+    example_games: ["Cookie Clicker", "Clicker Heroes"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-manual-to-passive/
+  - id: incremental-offline-window
+    name: "Set up earnings before leaving"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [time, planning, economy]
+    example_games: ["Melvor Idle", "Cookie Clicker"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-offline-window/
+  - id: incremental-allocate-progress-capacity
+    name: "Allocate capacity across ongoing projects"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [planning, optimization, time]
+    example_games: ["NGU IDLE", "Idling to Rule the Gods"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-allocate-progress-capacity/
+  - id: incremental-spend-held-bonus
+    name: "Spend a resource that also grants a held bonus"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [economy, planning, optimization]
+    example_games: ["Clicker Heroes", "AdVenture Capitalist"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-spend-held-bonus/
+  - id: incremental-quantity-milestones
+    name: "Reach a quantity threshold for a production jump"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [progression, economy, planning]
+    example_games: ["Clicker Heroes", "AdVenture Capitalist"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-quantity-milestones/
+  - id: incremental-escalating-copy-price
+    name: "Each additional copy costs more"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [economy, optimization, planning]
+    example_games: ["Cookie Clicker", "AdVenture Capitalist"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-escalating-copy-price/
+  - id: incremental-overlap-income-bursts
+    name: "Overlap temporary income boosts"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [timing, economy, planning]
+    example_games: ["Cookie Clicker", "Realm Grinder"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-overlap-income-bursts/
+  - id: incremental-spend-time-advance
+    name: "Spend an item to bring future earnings forward"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [time, economy, planning]
+    example_games: ["AdVenture Capitalist", "Clicker Heroes"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-spend-time-advance/
+  - id: incremental-limited-team-dispatch
+    name: "Dispatch limited teams for delayed rewards"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [planning, time, risk]
+    example_games: ["Clicker Heroes", "No Man's Sky"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-limited-team-dispatch/
+  - id: incremental-farm-or-push
+    name: "Farm reliably or push ahead"
+    category: "Income & accumulation (incremental)"
+    family: "Produce & manage"
+    tags: [economy, risk, progression]
+    example_games: ["Clicker Heroes", "Melvor Idle"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/incremental-farm-or-push/
+  - id: matching-swap-to-align
+    name: "Swap neighbors to complete a match"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, optimization]
+    example_games: ["Candy Crush Saga", "Bejeweled 3"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-swap-to-align/
+  - id: matching-trace-color-chain
+    name: "Trace a path through matching pieces"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, precision]
+    example_games: ["Two Dots", "Grindstone"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-trace-color-chain/
+  - id: matching-tap-connected-group
+    name: "Clear a connected group with one tap"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, optimization]
+    example_games: ["Toon Blast", "Pet Rescue Saga"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-tap-connected-group/
+  - id: matching-complete-lines
+    name: "Complete a line to reclaim space"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, optimization]
+    example_games: ["Tetris Effect: Connected", "Blockudoku"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-complete-lines/
+  - id: matching-merge-three-upgrade
+    name: "Merge matching items into the next tier"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, optimization]
+    example_games: ["Triple Town", "Merge Dragons!"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-merge-three-upgrade/
+  - id: matching-slide-board-merge
+    name: "Slide the whole board to merge numbers"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, risk]
+    example_games: ["2048", "Threes!"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-slide-board-merge/
+  - id: matching-gravity-cascade
+    name: "Set up gravity-driven cascades"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, randomness]
+    example_games: ["Bejeweled 3", "Candy Crush Saga"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-gravity-cascade/
+  - id: matching-pattern-creates-power
+    name: "Create a power piece with a match pattern"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, optimization]
+    example_games: ["Candy Crush Saga", "Bejeweled 3"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-pattern-creates-power/
+  - id: matching-combine-power-pieces
+    name: "Combine two power pieces into one effect"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, risk, optimization]
+    example_games: ["Candy Crush Saga", "Toon Blast"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-combine-power-pieces/
+  - id: matching-clear-under-cargo
+    name: "Clear support beneath cargo to reach an exit"
+    category: "Matching & merging (matching)"
+    family: "Combine & allocate"
+    tags: [planning, spatial, time]
+    example_games: ["Candy Crush Saga", "Homescapes"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/matching-clear-under-cargo/
+  - id: movement-variable-jump
+    name: "Hold duration sets jump height"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [timing, precision, dexterity]
+    example_games: ["Celeste", "Canabalt"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-variable-jump/
+  - id: movement-run-walk-control
+    name: "Switch speed to control reach and landing"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [precision, timing, risk]
+    example_games: ["Super Meat Boy", "Spelunky 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-run-walk-control/
+  - id: movement-target-bounce
+    name: "Bounce from a target into the next jump"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [timing, precision, spatial]
+    example_games: ["Hollow Knight", "Spelunky 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-target-bounce/
+  - id: movement-moving-platform
+    name: "Time boarding and leaving a moving platform"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [timing, spatial, planning]
+    example_games: ["Celeste", "Portal 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-moving-platform/
+  - id: movement-auto-forward
+    name: "Choose action timing while moving automatically"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [timing, dexterity, precision]
+    example_games: ["Canabalt", "BIT.TRIP RUNNER"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-auto-forward/
+  - id: movement-short-retry
+    name: "Retry the same short segment immediately"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [precision, timing, information]
+    example_games: ["Celeste", "Super Meat Boy"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-short-retry/
+  - id: movement-ledge-catch
+    name: "Catch a ledge, then climb up or let go"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [spatial, precision, risk]
+    example_games: ["Spelunky 2", "Dying Light 2 Stay Human"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-ledge-catch/
+  - id: movement-low-slide
+    name: "Lower the body and slide through a gap"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [timing, spatial, dexterity]
+    example_games: ["Titanfall 2", "Dying Light 2 Stay Human"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-low-slide/
+  - id: movement-downward-slam
+    name: "Commit to a downward slam"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [spatial, timing, risk]
+    example_games: ["Dead Cells", "Ori and the Blind Forest"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-downward-slam/
+  - id: movement-carry-object
+    name: "Move yourself and a carried object through obstacles"
+    category: "Movement & traversal (movement)"
+    family: "Control & respond"
+    tags: [spatial, planning, precision]
+    example_games: ["Portal 2", "Celeste"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/movement-carry-object/
+  - id: narrative-timed-response
+    name: "Answer before the response window closes"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [timing, narrative, risk]
+    example_games: ["The Walking Dead: Season Two", "Oxenfree"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-timed-response/
+  - id: narrative-deliberate-silence
+    name: "Choose silence and let the other person continue"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [information, narrative, risk]
+    example_games: ["The Walking Dead: Season Two", "Oxenfree"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-deliberate-silence/
+  - id: narrative-evidence-rebuttal
+    name: "Use evidence to challenge a specific statement"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [information, narrative, discovery]
+    example_games: ["Phoenix Wright: Ace Attorney Trilogy", "Danganronpa: Trigger Happy Havoc"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-evidence-rebuttal/
+  - id: narrative-delayed-choice-consequences
+    name: "Let an earlier choice change a later event"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [narrative, planning, time]
+    example_games: ["The Walking Dead: Season Two", "Pentiment"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-delayed-choice-consequences/
+  - id: narrative-investigation-time-slots
+    name: "Allocate limited time among leads"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [planning, time, information]
+    example_games: ["Pentiment", "Disco Elysium"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-investigation-time-slots/
+  - id: narrative-background-dialogue-access
+    name: "Open extra dialogue through identity and experience"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [narrative, information, planning]
+    example_games: ["Pentiment", "Baldur’s Gate 3"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-background-dialogue-access/
+  - id: narrative-service-as-response
+    name: "Respond through what you make and serve"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [narrative, information, creativity]
+    example_games: ["VA-11 Hall-A: Cyberpunk Bartender Action", "Coffee Talk"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-service-as-response/
+  - id: narrative-perspective-handoff
+    name: "Continue earlier consequences through another character"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [narrative, information, planning]
+    example_games: ["428: Shibuya Scramble", "Detroit: Become Human"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-perspective-handoff/
+  - id: narrative-loop-event-schedule
+    name: "Repeat a time window with a different event plan"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [time, information, discovery]
+    example_games: ["Twelve Minutes", "Outer Wilds"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-loop-event-schedule/
+  - id: narrative-conversation-intervention
+    name: "Intervene before the other person finishes"
+    category: "Dialogue & event choices (narrative)"
+    family: "Develop & interact"
+    tags: [timing, narrative, information]
+    example_games: ["Mass Effect 2 (2010 Edition)", "Oxenfree"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/narrative-conversation-intervention/
+  - id: projectiles-independent-aim
+    name: "Move one way, aim another"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [dexterity, spatial, precision]
+    example_games: ["Enter the Gungeon", "Noita"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-independent-aim/
+  - id: projectiles-spread-recovery
+    name: "Pause fire to tighten the spread"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [precision, timing, risk]
+    example_games: ["Deep Rock Galactic", "SYNTHETIK: Legion Rising"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-spread-recovery/
+  - id: projectiles-active-reload
+    name: "Press again inside the reload window"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [timing, dexterity, risk]
+    example_games: ["Enter the Gungeon", "SYNTHETIK: Legion Rising"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-active-reload/
+  - id: projectiles-charged-release
+    name: "Charge, then choose when to release"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [timing, risk, precision]
+    example_games: ["Hades", "Deep Rock Galactic"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-charged-release/
+  - id: projectiles-ballistic-arc
+    name: "Aim higher to correct a falling trajectory"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [precision, spatial, information]
+    example_games: ["Sea of Thieves", "Valheim"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-ballistic-arc/
+  - id: projectiles-wall-ricochet
+    name: "Bounce a shot around a corner"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [spatial, precision, creativity]
+    example_games: ["Enter the Gungeon", "Noita"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-wall-ricochet/
+  - id: projectiles-piercing-line
+    name: "Line up targets for a piercing shot"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [spatial, planning, optimization]
+    example_games: ["Terraria", "Deep Rock Galactic"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-piercing-line/
+  - id: projectiles-maintain-lock
+    name: "Keep a target inside the lock zone"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [precision, time, risk]
+    example_games: ["Deep Rock Galactic", "Titanfall 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-maintain-lock/
+  - id: projectiles-heat-pacing
+    name: "Stop firing before overheating"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [timing, risk, optimization]
+    example_games: ["Deep Rock Galactic", "Titanfall 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-heat-pacing/
+  - id: projectiles-graze-reward
+    name: "Graze danger to earn a resource"
+    category: "Aiming & projectiles (projectiles)"
+    family: "Control & respond"
+    tags: [dexterity, risk, precision]
+    example_games: ["Graze Counter GM", "Touhou Luna Nights"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/projectiles-graze-reward/
+  - id: rhythm-onbeat-actions
+    name: "Move or attack on the beat"
+    category: "Beats & timing (rhythm)"
+    family: "Control & respond"
+    tags: [timing, planning, dexterity]
+    example_games: ["Crypt of the NecroDancer", "Metal: Hellsinger"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/rhythm-onbeat-actions/
+  - id: rhythm-sustain-notes
+    name: "Hold through a sustained note"
+    category: "Beats & timing (rhythm)"
+    family: "Control & respond"
+    tags: [timing, precision, dexterity]
+    example_games: ["Spin Rhythm XD", "Muse Dash"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/rhythm-sustain-notes/
+  - id: rhythm-cue-response
+    name: "Answer a cue on its target beat"
+    category: "Beats & timing (rhythm)"
+    family: "Control & respond"
+    tags: [timing, information, precision]
+    example_games: ["Rhythm Doctor", "Rhythm Heaven Megamix"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/rhythm-cue-response/
+  - id: rhythm-hidden-beats
+    name: "Keep time when the cues disappear"
+    category: "Beats & timing (rhythm)"
+    family: "Control & respond"
+    tags: [timing, information, precision]
+    example_games: ["Rhythm Doctor", "Rhythm Heaven Megamix"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/rhythm-hidden-beats/
+  - id: rhythm-streak-multiplier
+    name: "Keep a multiplier through accurate streaks"
+    category: "Beats & timing (rhythm)"
+    family: "Control & respond"
+    tags: [timing, risk, progression]
+    example_games: ["Metal: Hellsinger", "Crypt of the NecroDancer"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/rhythm-streak-multiplier/
+  - id: command-initiative-order
+    name: "Tune speed to arrange turn order"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [planning, timing]
+    example_games: ["Darkest Dungeon", "Divinity: Original Sin 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-initiative-order/
+  - id: command-interrupt-action
+    name: "Interrupt an action during preparation"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [timing, information]
+    example_games: ["Dragon Age: Origins", "Tyranny"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-interrupt-action/
+  - id: command-threat-redirection
+    name: "Redirect enemy attention"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [cooperation, planning]
+    example_games: ["Dragon Age: Origins", "Grim Dawn"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-threat-redirection/
+  - id: command-frontline-shielding
+    name: "Protect damage dealers with a front line"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [spatial, planning]
+    example_games: ["Monster Train", "Wildfrost"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-frontline-shielding/
+  - id: command-prebattle-formation
+    name: "Arrange before combat, then observe"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [planning, spatial]
+    example_games: ["Teamfight Tactics", "Dota Underlords"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-prebattle-formation/
+  - id: command-trait-thresholds
+    name: "Reach team bonuses with distinct members"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [planning, optimization]
+    example_games: ["Teamfight Tactics", "Dota Underlords"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-trait-thresholds/
+  - id: command-scout-current-vision
+    name: "Send scouts to reveal current information"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [information, risk]
+    example_games: ["Northgard", "XCOM 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-scout-current-vision/
+  - id: command-split-objectives
+    name: "Split forces between simultaneous objectives"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [planning, spatial]
+    example_games: ["Total War: THREE KINGDOMS", "RimWorld"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-split-objectives/
+  - id: command-focus-fire
+    name: "Focus fire to remove one threat"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [planning, optimization]
+    example_games: ["Age of Empires II: Definitive Edition", "XCOM 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-focus-fire/
+  - id: command-workers-or-soldiers
+    name: "Allocate people between work and combat"
+    category: "Unit coordination (command)"
+    family: "Combine & allocate"
+    tags: [economy, planning]
+    example_games: ["Age of Empires II: Definitive Edition", "Northgard"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/command-workers-or-soldiers/
+  - id: farming-growth-care
+    name: "Planting and crop care"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [planning, time]
+    example_games: ["Stardew Valley", "Core Keeper"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-growth-care/
+  - id: farming-season-window
+    name: "Seasonal planting windows"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [planning, time, economy]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-season-window/
+  - id: farming-irrigation-layout
+    name: "Irrigation coverage"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [spatial, optimization, planning]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-irrigation-layout/
+  - id: farming-fertilizer-tradeoff
+    name: "Fertilizer investment"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [economy, optimization]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-fertilizer-tradeoff/
+  - id: farming-seed-reinvestment
+    name: "Seed reinvestment"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [economy, progression, planning]
+    example_games: ["Stardew Valley", "Core Keeper"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-seed-reinvestment/
+  - id: farming-regrowth-crops
+    name: "Regrowing crops"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [planning, economy, time]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-regrowth-crops/
+  - id: farming-substrate-match
+    name: "Crop–substrate matching"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [spatial, discovery, planning]
+    example_games: ["Core Keeper", "Terraria"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-substrate-match/
+  - id: farming-crop-protection
+    name: "Crop protection"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [risk, spatial, planning]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-crop-protection/
+  - id: farming-orchard-investment
+    name: "Long-term orchards"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [planning, economy, time]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-orchard-investment/
+  - id: farming-livestock-care
+    name: "Livestock care"
+    category: "cooking (farming)"
+    family: "Care & sustain"
+    tags: [planning, progression, economy]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/farming-livestock-care/
+  - id: fishing-bite-window
+    name: "Bite timing"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [timing, information, precision]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-bite-window/
+  - id: fishing-line-tension
+    name: "Line tension control"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [risk, timing, precision]
+    example_games: ["Dinkum", "Core Keeper"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-line-tension/
+  - id: fishing-target-tracking
+    name: "Tracking a moving fish"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [dexterity, precision, timing]
+    example_games: ["Stardew Valley", "Graveyard Keeper"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-target-tracking/
+  - id: fishing-habitat-search
+    name: "Finding fish habitats"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [discovery, information, planning]
+    example_games: ["Stardew Valley", "Graveyard Keeper"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-habitat-search/
+  - id: fishing-bait-loadout
+    name: "Bait loadouts"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [economy, planning, randomness]
+    example_games: ["Stardew Valley", "Graveyard Keeper"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-bait-loadout/
+  - id: fishing-cast-placement
+    name: "Choosing a cast location"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [spatial, precision, planning]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-cast-placement/
+  - id: fishing-passive-traps
+    name: "Passive fishing traps"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [planning, time, optimization]
+    example_games: ["Stardew Valley", "DREDGE"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-passive-traps/
+  - id: fishing-pond-production
+    name: "Fish-pond production"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [economy, progression, planning]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-pond-production/
+  - id: fishing-timed-contest
+    name: "Timed fishing contests"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [time, optimization, planning]
+    example_games: ["Stardew Valley", "Dinkum"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-timed-contest/
+  - id: fishing-equipment-access
+    name: "Equipment-gated catches"
+    category: "Fishing & catching (fishing)"
+    family: "Care & sustain"
+    tags: [progression, planning, spatial]
+    example_games: ["DREDGE", "Graveyard Keeper"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/fishing-equipment-access/
+  - id: inventory-shape-packing
+    name: "Shape-based packing"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [spatial, planning, optimization]
+    example_games: ["Backpack Hero", "Save Room - Organization Puzzle"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-shape-packing/
+  - id: inventory-adjacency
+    name: "Item adjacency bonuses"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [spatial, optimization, planning]
+    example_games: ["Backpack Hero", "Backpack Battles"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-adjacency/
+  - id: inventory-weight-budget
+    name: "Carry-weight budgets"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [planning, risk, economy]
+    example_games: ["The Elder Scrolls V: Skyrim Special Edition", "Valheim"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-weight-budget/
+  - id: inventory-stack-limits
+    name: "Slots and stack limits"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [planning, optimization, economy]
+    example_games: ["Stardew Valley", "Terraria"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-stack-limits/
+  - id: inventory-durability
+    name: "Tool durability and maintenance"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [planning, risk, time]
+    example_games: ["Valheim", "Don't Starve"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-durability/
+  - id: inventory-light-reserve
+    name: "Consumable light reserves"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [risk, time, planning]
+    example_games: ["Darkest Dungeon", "Don't Starve"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-light-reserve/
+  - id: inventory-identification
+    name: "Unknown-item identification"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [information, risk, discovery]
+    example_games: ["Shattered Pixel Dungeon", "Caves of Qud"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-identification/
+  - id: inventory-deck-thinning
+    name: "Card removal and draw density"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [optimization, planning, randomness]
+    example_games: ["Slay the Spire", "Monster Train"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-deck-thinning/
+  - id: inventory-equipment-budget
+    name: "Budgeted ability loadouts"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [planning, optimization, progression]
+    example_games: ["Hollow Knight", "Transistor"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-equipment-budget/
+  - id: inventory-death-retrieval
+    name: "Recovering resources after death"
+    category: "deckbuilding (inventory)"
+    family: "Combine & allocate"
+    tags: [risk, planning, economy]
+    example_games: ["Valheim", "Hollow Knight"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/inventory-death-retrieval/
+  - id: puzzles-box-pushing
+    name: "Box pushing and positional traps"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [spatial, planning, information]
+    example_games: ["Patrick’s Parabox", "Baba Is You"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-box-pushing/
+  - id: puzzles-gravity
+    name: "Changing gravity direction"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [spatial, dexterity, planning]
+    example_games: ["VVVVVV", "The Bridge"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-gravity/
+  - id: puzzles-linked-portals
+    name: "Paired portal connections"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [spatial, planning, cooperation]
+    example_games: ["Portal", "Portal 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-linked-portals/
+  - id: puzzles-time-scrubbing
+    name: "Rewinding time to change outcomes"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [information, timing, planning]
+    example_games: ["Braid, Anniversary Edition", "The Gardens Between"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-time-scrubbing/
+  - id: puzzles-beam-routing
+    name: "Routing beams to receivers"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [spatial, optimization, planning]
+    example_games: ["The Talos Principle", "Portal 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-beam-routing/
+  - id: puzzles-visual-rule-learning
+    name: "Inferring visual puzzle rules"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [information, discovery, planning]
+    example_games: ["The Witness", "Taiji"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-visual-rule-learning/
+  - id: puzzles-perspective-reality
+    name: "Turning visual relationships into geometry"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [spatial, creativity, discovery]
+    example_games: ["Superliminal", "Viewfinder"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-perspective-reality/
+  - id: puzzles-paper-folding
+    name: "Folding terrain to connect routes"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [spatial, planning, creativity]
+    example_games: ["Paper Trail", "Tengami"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-paper-folding/
+  - id: puzzles-language-decoding
+    name: "Decoding language from context"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [information, discovery, narrative]
+    example_games: ["Chants of Sennaar", "Heaven’s Vault"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-language-decoding/
+  - id: puzzles-scene-deduction
+    name: "Reconstructing events from evidence"
+    category: "Puzzles & deduction (puzzles)"
+    family: "Combine & allocate"
+    tags: [information, narrative, discovery]
+    example_games: ["Return of the Obra Dinn", "The Case of the Golden Idol"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/puzzles-scene-deduction/
+  - id: relationships-gift-allocation
+    name: "Gift preferences and allocation"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [planning, progression, information]
+    example_games: ["Stardew Valley", "Hades"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-gift-allocation/
+  - id: relationships-daily-contact
+    name: "Daily contact rhythm"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [time, planning, narrative]
+    example_games: ["Stardew Valley", "My Time at Portia"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-daily-contact/
+  - id: relationships-bond-scenes
+    name: "Relationship-gated scenes"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [narrative, progression, time]
+    example_games: ["Stardew Valley", "Persona 4 Golden"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-bond-scenes/
+  - id: relationships-companion-approval
+    name: "Companion approval"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [narrative, risk, cooperation]
+    example_games: ["Baldur’s Gate 3", "Dragon Age: Origins"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-companion-approval/
+  - id: relationships-persuasion-checks
+    name: "Dialogue persuasion checks"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [information, risk, narrative]
+    example_games: ["Baldur’s Gate 3", "Disco Elysium"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-persuasion-checks/
+  - id: relationships-date-itinerary
+    name: "Shared-activity itineraries"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [planning, time, narrative]
+    example_games: ["My Time at Portia", "Stardew Valley"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-date-itinerary/
+  - id: relationships-faction-reputation
+    name: "Faction reputation"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [narrative, economy, risk]
+    example_games: ["Fallout: New Vegas", "Tyranny"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-faction-reputation/
+  - id: relationships-secrets-leverage
+    name: "Secrets as leverage"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [information, risk, narrative]
+    example_games: ["Crusader Kings III", "Beholder"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-secrets-leverage/
+  - id: relationships-dynastic-marriage
+    name: "Dynastic marriage"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [planning, narrative, progression]
+    example_games: ["Crusader Kings III", "Total War: THREE KINGDOMS"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-dynastic-marriage/
+  - id: relationships-relationship-commitment
+    name: "Relationship commitment"
+    category: "Social & relationships (relationships)"
+    family: "Develop & interact"
+    tags: [narrative, progression, risk]
+    example_games: ["Stardew Valley", "My Time at Portia"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/relationships-relationship-commitment/
+  - id: commerce-price-discovery
+    name: "Price discovery"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [economy, information, risk]
+    example_games: ["Moonlighter", "Recettear: An Item Shop’s Tale"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-price-discovery/
+  - id: commerce-haggling
+    name: "Haggling"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [economy, timing, risk]
+    example_games: ["Potion Craft: Alchemist Simulator", "Dealer’s Life 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-haggling/
+  - id: commerce-dynamic-market
+    name: "Supply-driven market prices"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [economy, optimization, risk]
+    example_games: ["Offworld Trading Company", "Patrician IV"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-dynamic-market/
+  - id: commerce-regional-arbitrage
+    name: "Regional arbitrage"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [economy, planning, risk]
+    example_games: ["Sunless Sea", "Patrician IV"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-regional-arbitrage/
+  - id: commerce-shop-display
+    name: "Shop display allocation"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [spatial, economy, planning]
+    example_games: ["Moonlighter", "Recettear: An Item Shop’s Tale"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-shop-display/
+  - id: commerce-interpret-orders
+    name: "Interpreting customer requests"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [information, creativity, narrative]
+    example_games: ["Potion Craft: Alchemist Simulator", "VA-11 Hall-A: Cyberpunk Bartender Action"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-interpret-orders/
+  - id: commerce-timed-contracts
+    name: "Timed delivery contracts"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [planning, time, economy]
+    example_games: ["My Time at Portia", "Stardew Valley"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-timed-contracts/
+  - id: commerce-debt-pressure
+    name: "Debt and cash-flow pressure"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [economy, risk, progression]
+    example_games: ["Recettear: An Item Shop’s Tale", "Hardspace: Shipbreaker"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-debt-pressure/
+  - id: commerce-auction-bidding
+    name: "Auction bidding limits"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [economy, information, risk]
+    example_games: ["Offworld Trading Company", "Dealer’s Life 2"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-auction-bidding/
+  - id: commerce-trade-route-programming
+    name: "Programmed trade routes"
+    category: "Business & trade (commerce)"
+    family: "Produce & manage"
+    tags: [planning, optimization, economy]
+    example_games: ["Anno 1800", "Patrician IV"]
+    url: https://gameplayatlas.loopyhop.com/mechanic/commerce-trade-route-programming/

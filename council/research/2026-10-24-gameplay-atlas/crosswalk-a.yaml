@@ -1,0 +1,2372 @@
+- id: automation-belt-routing
+  gist: Laying paths so goods travel from makers to users without jamming
+  claim:
+    tracks: item flow, throughput
+    rewards: working line
+    gates: belt capacity, layout space
+    remembers: layout
+    permits: placing and rerouting lines
+    changes: where goods go
+  ontology:
+  - Mechanic
+  - Rule
+  - WorldElement
+  fit: gap
+  note: no object for a flow graph of conserved quantities between producers and consumers (Resource/Flow Network)
+  strands:
+  - calrunia
+  - living-ship
+- id: automation-flow-splitting
+  gist: Dividing one stream into shares by ratio so each consumer gets its due
+  claim:
+    tracks: stream shares
+    rewards: balanced supply
+    gates: ratio settings
+    remembers: splitter config
+    permits: choosing shares
+    changes: who is fed
+  ontology:
+  - Mechanic
+  - Rule
+  fit: gap
+  note: ratio allocation of a conserved flow needs the flow-network object
+  strands:
+  - calrunia
+- id: automation-item-filtering
+  gist: Letting only chosen kinds of goods pass down a given path
+  claim:
+    tracks: item kinds
+    rewards: clean lines
+    gates: filter setting
+    remembers: filters
+    permits: sorting by kind
+    changes: what reaches where
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: needs a kind-typed channel on a flow; otherwise a Rule
+  strands:
+  - calrunia
+- id: automation-production-chain
+  gist: Turning raw input through staged makers into a finished good
+  claim:
+    tracks: stage outputs
+    rewards: finished goods
+    gates: upstream inputs
+    remembers: recipes
+    permits: building more stages
+    changes: raw becomes refined
+  ontology:
+  - Mechanic
+  - Rule
+  - PipelineStage
+  fit: partial
+  note: PipelineStage exists for design pipelines, not in-world conversion; Conversion Chain would name it (vibeulon as condensed qi is one)
+  strands:
+  - calrunia
+  - living-ship
+- id: automation-fluid-routing
+  gist: Piping a continuous liquid-like stream with pressure and leaks to where it is needed
+  claim:
+    tracks: fluid level, pressure
+    rewards: steady supply
+    gates: pipe connectivity
+    remembers: pipe layout
+    permits: laying pipes
+    changes: fluid location
+  ontology:
+  - Mechanic
+  - Rule
+  fit: gap
+  note: continuous variant of the flow network
+  strands:
+  - calrunia
+- id: automation-power-budget
+  gist: Keeping generation and demand level so machines do not brown out
+  claim:
+    tracks: supply vs demand
+    rewards: stable power
+    gates: generator capacity
+    remembers: load
+    permits: adding load or supply
+    changes: machine speed
+  ontology:
+  - Mechanic
+  - State
+  fit: partial
+  note: a bounded capacity with demand; fits a Capacity Budget (qi meter)
+  strands:
+  - calrunia
+  - living-ship
+- id: automation-conditional-control
+  gist: Machines that react to sensed conditions and switch behaviour
+  claim:
+    tracks: sensor readings
+    rewards: self-running systems
+    gates: trigger conditions
+    remembers: rule set
+    permits: writing conditions
+    changes: machine behaviour
+  ontology:
+  - Mechanic
+  - Rule
+  - AdaptiveSystem
+  fit: covered
+  note: AdaptiveSystem plus Rule express it; adaptation must stay visible and reversible
+  strands:
+  - living-ship
+- id: automation-aerial-logistics
+  gist: Autonomous carriers that ferry goods between points without the player steering
+  claim:
+    tracks: carrier routes, cargo
+    rewards: hands-free delivery
+    gates: carrier count, range
+    remembers: routes
+    permits: assigning routes
+    changes: goods location
+  ontology:
+  - Mechanic
+  - WorldAgent
+  fit: partial
+  note: WorldAgent exists but no delegated errand with delayed return (Delayed Return)
+  strands:
+  - living-ship
+  - calrunia
+- id: automation-blueprint-reuse
+  gist: Saving a built arrangement as a template to stamp out again
+  claim:
+    tracks: saved layouts
+    rewards: fast rebuilding
+    gates: having a saved blueprint
+    remembers: blueprint library
+    permits: copying a layout
+    changes: repeatable structure
+  ontology:
+  - ArtifactTemplate
+  - Mechanic
+  fit: covered
+  note: ArtifactTemplate, and BAR if captured as a reusable kernel with provenance
+  strands:
+  - room-kit
+  - living-ship
+- id: automation-byproduct-loop
+  gist: Waste from one process feeding another so nothing is thrown away
+  claim:
+    tracks: byproduct stock
+    rewards: closed loop
+    gates: a consumer for the waste
+    remembers: loops
+    permits: connecting waste to use
+    changes: waste becomes input
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: composting residue is optional and not owed; a loop that makes waste mandatory-input conflicts mildly, so keep it as an option (Conversion Chain)
+  strands:
+  - spirit-care
+  - living-ship
+- id: building-structural-support
+  gist: Structures that stand only if loads are carried, and fall when not
+  claim:
+    tracks: load, support
+    rewards: stable build
+    gates: support presence
+    remembers: structure
+    permits: placing supports
+    changes: whether it stands
+  ontology:
+  - Mechanic
+  - Rule
+  - WorldElement
+  fit: partial
+  note: physical rule in a world; no object for physical constraint in a space (Space Rule)
+  strands:
+  - living-ship
+- id: building-room-requirements
+  gist: A space counts as a given kind of room only if it holds the right contents
+  claim:
+    tracks: room contents
+    rewards: qualified rooms
+    gates: required items, size
+    remembers: room type
+    permits: furnishing
+    changes: what a room is for
+  ontology:
+  - Mechanic
+  - Rule
+  - WorldElement
+  fit: partial
+  note: inner rooms that grow with inner work need qualification by player practice, not by item count; Inner Room names it
+  strands:
+  - living-ship
+  - room-kit
+- id: building-terrain-shaping
+  gist: Reshaping the ground to make usable land
+  claim:
+    tracks: terrain heights
+    rewards: usable land
+    gates: terrain tool
+    remembers: terrain
+    permits: digging and filling
+    changes: the land
+  ontology:
+  - Mechanic
+  - WorldElement
+  fit: covered
+  note: a world-state change; shows as land, never a gauge
+  strands:
+  - calrunia
+  - living-ship
+- id: building-service-coverage
+  gist: Placing services so their reach covers homes and buildings
+  claim:
+    tracks: coverage area
+    rewards: satisfied occupants
+    gates: range, placement
+    remembers: coverage map
+    permits: positioning
+    changes: who is served
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: occupant satisfaction as a tracked number risks flatland; show it as world state
+  strands:
+  - calrunia
+- id: building-access-network
+  gist: Linking buildings by routes so people and goods can reach them
+  claim:
+    tracks: connectivity
+    rewards: reachable places
+    gates: a connected path
+    remembers: network
+    permits: laying routes
+    changes: what is reachable
+  ontology:
+  - Mechanic
+  - WorldElement
+  fit: covered
+  note: paths gating access are Affordance and Rule
+  strands:
+  - calrunia
+  - cave
+- id: building-vertical-stacking
+  gist: Building upward in layers with floors depending on the ones below
+  claim:
+    tracks: floors
+    rewards: taller structure
+    gates: floor beneath
+    remembers: stack
+    permits: adding a level
+    changes: vertical space
+  ontology:
+  - Mechanic
+  - WorldElement
+  fit: covered
+  note: a depth axis; fits the depth-over-flatland rule
+  strands:
+  - living-ship
+  - cave
+- id: building-modular-snapping
+  gist: Joining prefabricated pieces at fixed connection points
+  claim:
+    tracks: piece connections
+    rewards: fast assembly
+    gates: matching sockets
+    remembers: assembly
+    permits: snapping pieces
+    changes: built shape
+  ontology:
+  - Mechanic
+  - Interface
+  fit: covered
+  note: simple Mechanic
+  strands:
+  - room-kit
+  - living-ship
+- id: building-construction-sequencing
+  gist: Building in an order where some steps must wait on others
+  claim:
+    tracks: step order
+    rewards: finished build
+    gates: prerequisite steps
+    remembers: progress
+    permits: ordering work
+    changes: built state
+  ontology:
+  - Mechanic
+  - QuestDefinition
+  fit: covered
+  note: a QuestDefinition with ordered gates; no completion by sequence alone
+  strands:
+  - room-kit
+- id: building-water-engineering
+  gist: Managing where water collects and flows across a build
+  claim:
+    tracks: water level
+    rewards: controlled water
+    gates: barriers, channels
+    remembers: water map
+    permits: channeling water
+    changes: water location
+  ontology:
+  - Mechanic
+  - WorldElement
+  fit: covered
+  note: environmental rule
+  strands:
+  - cave
+  - living-ship
+- id: building-thermal-zoning
+  gist: Keeping different areas at different temperatures
+  claim:
+    tracks: zone temperature
+    rewards: comfortable zones
+    gates: insulation, heat source
+    remembers: temperature
+    permits: heating and sealing
+    changes: zone climate
+  ontology:
+  - Mechanic
+  - State
+  - WorldElement
+  fit: covered
+  note: ambient state; mood-through-light fits depth rule
+  strands:
+  - wave-room
+  - living-ship
+- id: cooking-recipe-learning
+  gist: New dishes become possible once the player discovers how
+  claim:
+    tracks: known recipes
+    rewards: new dishes
+    gates: discovery of a recipe
+    remembers: recipe book
+    permits: trying and learning
+    changes: what can be made
+  ontology:
+  - Mechanic
+  - Capability
+  - Affordance
+  fit: covered
+  note: knowledge as Capability; discovery must be inferable not explained away
+  strands:
+  - chapter1
+  - calrunia
+- id: cooking-ingredient-substitution
+  gist: Replacing a missing ingredient with a near one at a cost in result
+  claim:
+    tracks: substitutes
+    rewards: a dish despite shortage
+    gates: a workable alternative
+    remembers: substitution rules
+    permits: swapping ingredients
+    changes: dish quality
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - daily-menu
+- id: cooking-heat-window
+  gist: A dish is right only if taken off heat within a narrow period
+  claim:
+    tracks: timing
+    rewards: a well made dish
+    gates: being in the window
+    remembers: result
+    permits: acting in time
+    changes: dish state
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: a Timed Window; must not punish a missed window beyond the dish
+  strands:
+  - wave-room
+  - daily-menu
+- id: cooking-preparation-chain
+  gist: Making a meal through ordered prep steps that join at the end
+  claim:
+    tracks: step progress
+    rewards: assembled dish
+    gates: prior steps done
+    remembers: progress
+    permits: doing steps in order
+    changes: dish state
+  ontology:
+  - Mechanic
+  - Technique
+  fit: covered
+  note: ordered steps within one Practice
+  strands:
+  - daily-menu
+- id: cooking-order-triage
+  gist: Choosing which of several timed orders to serve first
+  claim:
+    tracks: open orders, clock
+    rewards: served orders
+    gates: time left
+    remembers: orders
+    permits: prioritising
+    changes: order queue
+  ontology:
+  - Mechanic
+  - Rule
+  fit: conflict
+  note: timed pressure with shame on lapse breaks the no overdue or failure messaging norm unless the clock only ends a round
+  strands: []
+- id: cooking-station-handoff
+  gist: Passing a half-made dish between stations or helpers
+  claim:
+    tracks: who holds what
+    rewards: shared dishes
+    gates: a helper at the next station
+    remembers: handoffs
+    permits: passing work along
+    changes: dish location
+  ontology:
+  - Mechanic
+  - CoordinationPattern
+  fit: covered
+  note: CoordinationPattern
+  strands:
+  - between
+  - chapter1
+- id: cooking-meal-loadout
+  gist: Eating a chosen meal before a venture to carry its bonus
+  claim:
+    tracks: chosen meal
+    rewards: stronger run
+    gates: having cooked
+    remembers: active buff
+    permits: picking a meal
+    changes: next venture strength
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: prepared state; a daily-menu meal as a loadout
+  strands:
+  - daily-menu
+  - spar
+- id: cooking-food-preservation
+  gist: Processing food so it keeps, trading time for shelf life
+  claim:
+    tracks: spoil time
+    rewards: food kept
+    gates: a preserve process
+    remembers: shelf life
+    permits: processing
+    changes: how long it lasts
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - spirit-care
+- id: cooking-measurement-precision
+  gist: Success depends on adding exact amounts
+  claim:
+    tracks: amounts
+    rewards: exact dish
+    gates: accurate dose
+    remembers: result
+    permits: measuring
+    changes: outcome
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: precision Rule
+  strands:
+  - daily-menu
+- id: cooking-judged-flavor
+  gist: A judge scores a dish against a target taste
+  claim:
+    tracks: flavor profile
+    rewards: a score
+    gates: matching target
+    remembers: score
+    permits: tuning flavour
+    changes: judgement
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: judged quality is a score; player satisfaction governs self-directed validity, so a judge may rate only the dish
+  strands:
+  - daily-menu
+- id: gathering-tool-hardness
+  gist: A tool must be strong enough to take a given material
+  claim:
+    tracks: tool tier
+    rewards: new materials
+    gates: sufficient tool
+    remembers: tool
+    permits: upgrading tools
+    changes: what can be taken
+  ontology:
+  - Mechanic
+  - Affordance
+  - Capability
+  fit: covered
+  note: Affordance gate by Capability; fine if tools not people rank
+  strands:
+  - calrunia
+- id: gathering-resource-detection
+  gist: An overlay or sense that reveals where resources lie
+  claim:
+    tracks: detected spots
+    rewards: found resources
+    gates: the sense or tool
+    remembers: revealed map
+    permits: scanning
+    changes: what is visible
+  ontology:
+  - Mechanic
+  - Affordance
+  fit: covered
+  note: Affordance revealing; fits discovery
+  strands:
+  - cave
+  - calrunia
+- id: gathering-volumetric-excavation
+  gist: Digging out volume of ground in three dimensions
+  claim:
+    tracks: dug volume
+    rewards: material and passage
+    gates: digging tool
+    remembers: terrain
+    permits: removing ground
+    changes: world shape
+  ontology:
+  - Mechanic
+  - WorldElement
+  fit: covered
+  note: 3D world change
+  strands:
+  - cave
+- id: gathering-oxygen-gathering
+  gist: Working under a limited air supply so every trip has a clock
+  claim:
+    tracks: oxygen
+    rewards: deeper trips
+    gates: air left
+    remembers: air level
+    permits: deciding when to go back
+    changes: trip length
+  ontology:
+  - Mechanic
+  - State
+  fit: partial
+  note: Capacity Budget; the clock should end a trip not punish a person
+  strands:
+  - cave
+  - wave-room
+- id: gathering-gathering-quota
+  gist: Deciding when enough has been gathered to stop
+  claim:
+    tracks: amount gathered
+    rewards: a met quota
+    gates: quota number
+    remembers: quota
+    permits: stopping or continuing
+    changes: when to stop
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: quota is Good-enough completion; fits playable composting
+  strands:
+  - spirit-care
+  - daily-menu
+- id: gathering-supply-mining
+  gist: Gathering things whose purpose is to let you gather more
+  claim:
+    tracks: supplies
+    rewards: sustained work
+    gates: supplies in hand
+    remembers: supplies
+    permits: spending on tools
+    changes: future gathering
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple loop
+  strands:
+  - calrunia
+- id: gathering-hidden-deposit-clues
+  gist: Surface signs that hint at what lies below
+  claim:
+    tracks: clue sightings
+    rewards: found deposits
+    gates: noticing clues
+    remembers: clue locations
+    permits: reading signs
+    changes: what is found
+  ontology:
+  - Mechanic
+  - Prompt
+  fit: covered
+  note: inference clues fit Mystery rewards inquiry
+  strands:
+  - cave
+  - calrunia
+- id: gathering-salvage-dismantling
+  gist: Taking things apart to recover parts
+  claim:
+    tracks: salvaged parts
+    rewards: reusable parts
+    gates: an item to dismantle
+    remembers: parts stock
+    permits: dismantling
+    changes: item becomes parts
+  ontology:
+  - Mechanic
+  - CompostRecord
+  fit: partial
+  note: close to composting with optional residue; the original must not remain active debt (Release Residue)
+  strands:
+  - spirit-care
+  - living-ship
+- id: gathering-renewable-forage-route
+  gist: Returning to spots that regrow on a cycle
+  claim:
+    tracks: regrowth times
+    rewards: steady supply
+    gates: waiting for regrowth
+    remembers: route
+    permits: revisiting
+    changes: spot state
+  ontology:
+  - Mechanic
+  - State
+  fit: partial
+  note: a return rhythm; must not turn a lapse into penalty (Tended Living Thing)
+  strands:
+  - calrunia
+  - daily-menu
+- id: gathering-depth-targeting
+  gist: Choosing how deep to dig because material varies by depth
+  claim:
+    tracks: depth
+    rewards: target material
+    gates: reaching depth
+    remembers: depth map
+    permits: choosing depth
+    changes: find
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: depth axis
+  strands:
+  - cave
+- id: cooperation-split-information
+  gist: Each player holds a piece and must tell it without showing it
+  claim:
+    tracks: who knows what
+    rewards: solved task
+    gates: speaking the piece
+    remembers: information per player
+    permits: explaining
+    changes: shared understanding
+  ontology:
+  - Mechanic
+  - CoordinationPattern
+  - SharedMeaning
+  fit: covered
+  note: SharedMeaning builds from split Observations
+  strands:
+  - between
+  - chapter1
+- id: cooperation-hidden-role
+  gist: Players secretly hold roles and try to pass as another
+  claim:
+    tracks: secret roles
+    rewards: winning side
+    gates: concealment
+    remembers: roles
+    permits: deceiving
+    changes: suspicion
+  ontology:
+  - Mechanic
+  - CharacterRole
+  - Performance
+  fit: partial
+  note: a Performance among consenting players; consent to deception must be explicit and revocable, not inferred from play
+  strands:
+  - chapter1
+- id: cooperation-discussion-vote
+  gist: Players weigh evidence together and vote on a decision
+  claim:
+    tracks: evidence, votes
+    rewards: group decision
+    gates: majority
+    remembers: votes
+    permits: voting
+    changes: group outcome
+  ontology:
+  - Mechanic
+  - Rule
+  - Disagreement
+  fit: partial
+  note: a vote counts group decisions; vote does not prove truth, and must keep dissent (contradictory evidence is preserved)
+  strands:
+  - chapter1
+  - between
+- id: cooperation-downed-revival
+  gist: A fallen teammate can be raised by another within a time
+  claim:
+    tracks: downed state
+    rewards: recovered ally
+    gates: a nearby helper
+    remembers: downed timer
+    permits: helping
+    changes: ally returns
+  ontology:
+  - Mechanic
+  - Repair
+  - Relationship
+  fit: partial
+  note: helper stays in field of care; revival must not require self-erasure
+  strands:
+  - between
+  - spar
+- id: cooperation-shared-vehicle
+  gist: Several players run different parts of one craft
+  claim:
+    tracks: roles on craft
+    rewards: movement of craft
+    gates: each seat filled
+    remembers: crew roles
+    permits: operating stations
+    changes: craft motion
+  ontology:
+  - Mechanic
+  - CoordinationPattern
+  fit: covered
+  note: CoordinationPattern, roles with consent
+  strands:
+  - living-ship
+- id: cooperation-physical-tether
+  gist: Players linked so each move drags the other
+  claim:
+    tracks: tether state
+    rewards: joint travel
+    gates: staying within range
+    remembers: tether
+    permits: moving together
+    changes: movement together
+  ontology:
+  - Mechanic
+  - Rule
+  - Boundary
+  fit: partial
+  note: a tether is a bond of body; needs consent and release (Boundary)
+  strands:
+  - between
+- id: cooperation-synchronized-triggers
+  gist: Players reach separate switches and act at the same moment
+  claim:
+    tracks: switch states
+    rewards: opened path
+    gates: both acting together
+    remembers: switches
+    permits: timing together
+    changes: door state
+  ontology:
+  - Mechanic
+  - CoordinationPattern
+  fit: covered
+  note: relationship creates capability
+  strands:
+  - chapter1
+  - between
+- id: cooperation-complementary-abilities
+  gist: Different characters offer abilities that only work in combination
+  claim:
+    tracks: ability pairs
+    rewards: combined feats
+    gates: a partner with the other ability
+    remembers: pairings
+    permits: pairing up
+    changes: what is possible
+  ontology:
+  - Mechanic
+  - Capability
+  - CoordinationPattern
+  fit: covered
+  note: rule 7, relationship can create capability
+  strands:
+  - between
+  - chapter1
+  - spar
+- id: cooperation-temporary-alliance
+  gist: Players team up for a stretch and may break it
+  claim:
+    tracks: alliances
+    rewards: shared gains
+    gates: agreement
+    remembers: alliance
+    permits: allying and breaking
+    changes: standing
+  ontology:
+  - Mechanic
+  - Commitment
+  - Relationship
+  fit: partial
+  note: kept commitments matter to trust, so betrayal inside a game must be performed and marked as play, not tracked as trust
+  strands:
+  - chapter1
+- id: progression-specialization-branches
+  gist: Choosing one path closes others
+  claim:
+    tracks: chosen branch
+    rewards: a focused build
+    gates: the choice
+    remembers: build
+    permits: choosing
+    changes: possible abilities
+  ontology:
+  - Mechanic
+  - DevelopmentLine
+  - Capability
+  fit: partial
+  note: choice must not become identity; sect choice does not establish altitude, and respec path should exist
+  strands:
+  - spar
+- id: progression-practice-based-growth
+  gist: Skills improve by use of that skill
+  claim:
+    tracks: skill use counts
+    rewards: skill gains
+    gates: doing the practice
+    remembers: skill levels
+    permits: repeating
+    changes: skill strength
+  ontology:
+  - Mechanic
+  - DevelopmentLine
+  - PracticeInstance
+  fit: partial
+  note: fine inside a named line; practice does not prove inner transformation, so keep line scoped
+  strands:
+  - spar
+  - cave
+- id: progression-respec-investment
+  gist: Upgrades can be refunded and reassigned
+  claim:
+    tracks: spent points
+    rewards: freedom to retry
+    gates: a refund
+    remembers: allocation
+    permits: undoing
+    changes: build
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: fits No path has to be wasted
+  strands:
+  - spar
+- id: progression-permanent-run-currency
+  gist: Something earned in each attempt persists into the next
+  claim:
+    tracks: saved currency
+    rewards: stronger later runs
+    gates: earning during runs
+    remembers: currency
+    permits: spending between runs
+    changes: baseline
+  ontology:
+  - Mechanic
+  - MotivationMechanism
+  - Consequence
+  fit: covered
+  note: vibeulon persists; motivation serves meaning does not prove it
+  strands:
+  - calrunia
+  - spirit-care
+- id: progression-successor-selection
+  gist: On a character's end, the player picks who continues
+  claim:
+    tracks: heirs
+    rewards: continuity
+    gates: an end
+    remembers: lineage
+    permits: choosing
+    changes: who plays next
+  ontology:
+  - Mechanic
+  - Seed
+  - ContinuationRecord
+  fit: covered
+  note: Seed plus lineage, what a faded spirit leaves
+  strands:
+  - spirit-care
+  - living-ship
+- id: progression-prestige-reset
+  gist: Giving up progress to restart with a permanent boost
+  claim:
+    tracks: reset count
+    rewards: faster restart
+    gates: choosing to reset
+    remembers: multiplier
+    permits: resetting
+    changes: baseline
+  ontology:
+  - Mechanic
+  - MotivationMechanism
+  fit: partial
+  note: a reset cycle ritual could be a playable release; must not read as rank (Release Residue)
+  strands:
+  - spirit-care
+- id: progression-challenge-tiers
+  gist: Optional harder conditions with better rewards
+  claim:
+    tracks: chosen tier
+    rewards: bigger rewards
+    gates: earlier tier cleared
+    remembers: tiers
+    permits: picking difficulty
+    changes: reward level
+  ontology:
+  - Mechanic
+  - Rule
+  fit: conflict
+  note: a tier ladder can read as whole-person rank (no_global_developmental_rank); keep it per line, per activity, player chosen
+  strands:
+  - spar
+- id: progression-random-level-choices
+  gist: At level-up the player picks from a random few
+  claim:
+    tracks: offered choices
+    rewards: varied builds
+    gates: level reached
+    remembers: build
+    permits: choosing
+    changes: options
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: classic RPG leveling
+  strands:
+  - spar
+- id: progression-evolution-recipes
+  gist: An item or creature transforms when its recipe is met
+  claim:
+    tracks: recipe parts
+    rewards: evolved form
+    gates: all parts present
+    remembers: form
+    permits: meeting conditions
+    changes: form changes
+  ontology:
+  - Mechanic
+  - Rule
+  - Transformation
+  fit: partial
+  note: evolution is an Outcome; a spirit grows by Alchemy moves, and form should not prove inner change
+  strands:
+  - spar
+  - spirit-care
+- id: progression-research-prerequisites
+  gist: Unlocks come in order through research
+  claim:
+    tracks: tech tree
+    rewards: new options
+    gates: prior research
+    remembers: unlocked set
+    permits: researching
+    changes: what exists
+  ontology:
+  - Mechanic
+  - Capability
+  - Rule
+  fit: covered
+  note: gated Affordance chain
+  strands:
+  - living-ship
+  - calrunia
+- id: progression-death-loses-training
+  gist: Failure removes skills the character trained
+  claim:
+    tracks: lost skills
+    rewards: risk
+    gates: death
+    remembers: skills
+    permits: losing training
+    changes: ability
+  ontology:
+  - Mechanic
+  - Consequence
+  fit: conflict
+  note: a permanent progress penalty on failure breaks no path has to be wasted and recoverability; keep losses temporary or turned to residue
+  strands:
+  - spar
+- id: progression-knowledge-gates
+  gist: Progress depends on what the player has come to know, not on stats
+  claim:
+    tracks: player knowledge
+    rewards: progress by learning
+    gates: understanding
+    remembers: discoveries
+    permits: learning
+    changes: what is possible
+  ontology:
+  - Mechanic
+  - Affordance
+  fit: partial
+  note: 'play precedes understanding and mystery rewards inquiry: a knowledge gate must be inferable and optional to explain'
+  strands:
+  - cave
+  - chapter1
+- id: survival-competing-needs
+  gist: Several needs rise at once and cannot all be met
+  claim:
+    tracks: need levels
+    rewards: staying alive
+    gates: attention spent
+    remembers: needs
+    permits: choosing
+    changes: state
+  ontology:
+  - Mechanic
+  - State
+  fit: conflict
+  note: a needs meter that punishes neglect is a hidden active backlog; show as world state and allow rest
+  strands:
+  - spirit-care
+  - wave-room
+- id: survival-safe-water
+  gist: Finding water and making it drinkable
+  claim:
+    tracks: water stock
+    rewards: safe water
+    gates: purifying
+    remembers: water
+    permits: purifying
+    changes: health
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - cave
+- id: survival-fatigue-rest
+  gist: Tiredness builds and sleep must be planned
+  claim:
+    tracks: fatigue
+    rewards: recovery
+    gates: rest done
+    remembers: fatigue
+    permits: sleeping
+    changes: capacity
+  ontology:
+  - Mechanic
+  - State
+  - Ritual
+  fit: partial
+  note: rest is valid and permitted; rest must never be a failed state; the 4am day roll is a natural rest boundary (Tended Living Thing)
+  strands:
+  - wave-room
+  - daily-menu
+- id: survival-bleeding-triage
+  gist: Stopping urgent bleeding before anything else
+  claim:
+    tracks: wound severity
+    rewards: survival
+    gates: quick action
+    remembers: wound
+    permits: bandaging
+    changes: health
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: action pressure inside a play
+  strands: []
+- id: survival-wound-cleanliness
+  gist: Keeping wounds clean to prevent infection
+  claim:
+    tracks: wound state
+    rewards: healing
+    gates: cleaning
+    remembers: infection
+    permits: cleaning
+    changes: health
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: survival-body-inspection
+  gist: Checking the body to discover what is wrong
+  claim:
+    tracks: body findings
+    rewards: found problems
+    gates: looking
+    remembers: findings
+    permits: inspecting
+    changes: what is known
+  ontology:
+  - Mechanic
+  - SomaticReport
+  - Observation
+  fit: covered
+  note: body gets a vote; player-reported somatic evidence, not AI inference
+  strands:
+  - wave-room
+  - cave
+- id: survival-balanced-nutrition
+  gist: Eating a spread of foods to keep nutrients level
+  claim:
+    tracks: nutrient mix
+    rewards: health
+    gates: varied food
+    remembers: nutrients
+    permits: choosing food
+    changes: health
+  ontology:
+  - Mechanic
+  - State
+  fit: covered
+  note: fits daily-menu
+  strands:
+  - daily-menu
+- id: survival-stress-crisis
+  gist: Stress builds until the character breaks down
+  claim:
+    tracks: stress level
+    rewards: avoiding crisis
+    gates: stress relief
+    remembers: stress
+    permits: managing
+    changes: behaviour
+  ontology:
+  - Mechanic
+  - State
+  fit: conflict
+  note: a game inferring mental state of a character; if it maps to the player it breaks player authors inner meaning; keep to the character
+  strands:
+  - wave-room
+- id: survival-weather-exposure
+  gist: Wet and cold wear the body until warmed
+  claim:
+    tracks: wetness, cold
+    rewards: staying well
+    gates: shelter, warmth
+    remembers: exposure
+    permits: warming
+    changes: health
+  ontology:
+  - Mechanic
+  - State
+  fit: covered
+  note: ambient state
+  strands:
+  - cave
+- id: survival-limb-impairment
+  gist: Injury to a limb removes some abilities
+  claim:
+    tracks: limb state
+    rewards: adapted play
+    gates: injury
+    remembers: impairments
+    permits: accommodating
+    changes: what is possible
+  ontology:
+  - Mechanic
+  - State
+  - Affordance
+  fit: partial
+  note: accommodation is a valid response; ensure impairment is a game fiction not a player label (AccessibilityNeed)
+  strands:
+  - spar
+- id: survival-temporary-relief
+  gist: A quick fix hides a symptom while the cause remains
+  claim:
+    tracks: symptom, relief timer
+    rewards: short term function
+    gates: taking relief
+    remembers: masking
+    permits: using relief
+    changes: apparent state
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: 'nice fit for emotional alchemy: relief is not transformation; Control move'
+  strands:
+  - wave-room
+- id: survival-contagion-control
+  gist: Stopping disease from passing between characters
+  claim:
+    tracks: infection spread
+    rewards: contained outbreak
+    gates: isolation
+    remembers: spread map
+    permits: isolating
+    changes: who is ill
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: ecology-plant-crossbreeding
+  gist: Arranging neighbouring plants so they produce a new kind
+  claim:
+    tracks: adjacent plants
+    rewards: new variants
+    gates: the right neighbours
+    remembers: varieties
+    permits: positioning
+    changes: new plants
+  ontology:
+  - Mechanic
+  - Rule
+  - WorldElement
+  fit: covered
+  note: seed and lineage
+  strands:
+  - living-ship
+  - calrunia
+- id: ecology-parent-trait-selection
+  gist: Picking which two parents pass on what trait
+  claim:
+    tracks: parent traits
+    rewards: chosen traits
+    gates: two parents
+    remembers: lineage
+    permits: selecting
+    changes: offspring
+  ontology:
+  - Mechanic
+  - Seed
+  - ProvenanceRecord
+  fit: partial
+  note: lineage kept per Seed; trait selection of a spirit's offspring (Lineage Heritage)
+  strands:
+  - spirit-care
+  - spar
+- id: ecology-genetic-diversity
+  gist: Keeping variety so a population stays healthy
+  claim:
+    tracks: diversity
+    rewards: resilient population
+    gates: variety of stock
+    remembers: gene pool
+    permits: mixing
+    changes: population health
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - spirit-care
+- id: ecology-animal-taming
+  gist: A wild animal slowly comes to trust the player
+  claim:
+    tracks: trust level
+    rewards: a tamed animal
+    gates: patience, offering
+    remembers: trust
+    permits: approaching
+    changes: bond
+  ontology:
+  - Mechanic
+  - Relationship
+  - TrustState
+  fit: partial
+  note: trust must come from agency and the creature may refuse; access is not command; counts as relationship
+  strands:
+  - between
+  - spirit-care
+  - spar
+- id: ecology-population-limits
+  gist: Keeping creature numbers in check
+  claim:
+    tracks: population
+    rewards: stability
+    gates: breeding choices
+    remembers: count
+    permits: culling or holding
+    changes: numbers
+  ontology:
+  - Mechanic
+  - Rule
+  fit: conflict
+  note: culling to manage population risks harm to a creature that is a relationship; keep release as letting go
+  strands:
+  - spirit-care
+- id: ecology-habitat-capacity
+  gist: A home holds only so many creatures
+  claim:
+    tracks: capacity, occupants
+    rewards: comfortable creatures
+    gates: room available
+    remembers: capacity
+    permits: adding or not
+    changes: who lives there
+  ontology:
+  - Mechanic
+  - Rule
+  - WorldElement
+  fit: partial
+  note: a spirit barn has a capacity; Capacity Budget
+  strands:
+  - living-ship
+  - spirit-care
+- id: ecology-species-compatibility
+  gist: Some creatures can live together and others cannot
+  claim:
+    tracks: compatibility
+    rewards: peaceful homes
+    gates: compatible species
+    remembers: pairings
+    permits: placing
+    changes: harmony
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: Rule
+  strands:
+  - living-ship
+  - spirit-care
+- id: ecology-breeding-conditions
+  gist: Setting up the right conditions so creatures will breed
+  claim:
+    tracks: conditions
+    rewards: offspring
+    gates: conditions met
+    remembers: offspring
+    permits: preparing
+    changes: new creatures
+  ontology:
+  - Mechanic
+  - Rule
+  - Seed
+  fit: covered
+  note: Seed after fade; conditions as Rule
+  strands:
+  - spirit-care
+- id: allocation-savings-interest
+  gist: Holding back resources to earn more next round
+  claim:
+    tracks: savings
+    rewards: interest
+    gates: not spending
+    remembers: balance
+    permits: saving
+    changes: growth
+  ontology:
+  - Mechanic
+  - MotivationMechanism
+  fit: partial
+  note: compound reward can become hoarding pressure; keep optional
+  strands:
+  - calrunia
+- id: allocation-shop-reservation
+  gist: Putting aside a shop item to buy next round
+  claim:
+    tracks: reserved item
+    rewards: secured purchase
+    gates: a hold
+    remembers: reservation
+    permits: reserving
+    changes: availability
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - calrunia
+- id: incremental-manual-to-passive
+  gist: First earning by effort, then buying output that runs itself
+  claim:
+    tracks: income rates
+    rewards: rising output
+    gates: buying generators
+    remembers: rate
+    permits: purchasing
+    changes: income
+  ontology:
+  - Mechanic
+  - MotivationMechanism
+  fit: partial
+  note: engagement is not meaning; passive loops must not become obligation
+  strands:
+  - calrunia
+- id: incremental-offline-window
+  gist: Setting up earnings that accrue while away
+  claim:
+    tracks: away time
+    rewards: rewards on return
+    gates: time away
+    remembers: accrued
+    permits: leaving
+    changes: wealth
+  ontology:
+  - Mechanic
+  - MotivationMechanism
+  - Rule
+  fit: conflict
+  note: rewarding presence or absence builds return pressure; keep it a no-penalty gift on return
+  strands:
+  - daily-menu
+  - spirit-care
+- id: incremental-allocate-progress-capacity
+  gist: Splitting limited effort across several slow projects
+  claim:
+    tracks: project progress
+    rewards: finished projects
+    gates: capacity share
+    remembers: allocations
+    permits: assigning
+    changes: progress
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: Capacity Budget plus parallel quests with no backlog debt
+  strands:
+  - living-ship
+- id: incremental-spend-held-bonus
+  gist: Spending something that also gives a bonus while you hold it
+  claim:
+    tracks: stock, bonus
+    rewards: trade-off
+    gates: holding
+    remembers: stock
+    permits: spend or hold
+    changes: bonus
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: vibeulon held versus spent
+  strands:
+  - calrunia
+- id: incremental-quantity-milestones
+  gist: Hitting a count unlocks a production jump
+  claim:
+    tracks: count
+    rewards: step up
+    gates: reaching threshold
+    remembers: milestones
+    permits: accumulating
+    changes: rate jump
+  ontology:
+  - Mechanic
+  - MotivationMechanism
+  fit: covered
+  note: MotivationMechanism
+  strands:
+  - calrunia
+- id: incremental-escalating-copy-price
+  gist: Each additional unit costs more than the last
+  claim:
+    tracks: unit count
+    rewards: diminishing buys
+    gates: price rise
+    remembers: price
+    permits: buying
+    changes: cost
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - calrunia
+- id: incremental-overlap-income-bursts
+  gist: Stacking short boosts so they coincide
+  claim:
+    tracks: active boosts
+    rewards: burst gains
+    gates: timing
+    remembers: boosts
+    permits: timing
+    changes: income
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: incremental-spend-time-advance
+  gist: Paying to bring forward future earnings
+  claim:
+    tracks: future earnings
+    rewards: faster gain
+    gates: paying
+    remembers: timeline
+    permits: skipping
+    changes: earn time
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: incremental-limited-team-dispatch
+  gist: Sending a few units on timed errands that pay later
+  claim:
+    tracks: teams out
+    rewards: delayed rewards
+    gates: free team
+    remembers: dispatch
+    permits: sending
+    changes: rewards later
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: 'Delayed Return: an errand with a time to return'
+  strands:
+  - living-ship
+  - spirit-care
+- id: incremental-farm-or-push
+  gist: Choosing between steady safe gain and advancing at risk
+  claim:
+    tracks: choice
+    rewards: risk balance
+    gates: choice made
+    remembers: position
+    permits: deciding
+    changes: progress
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: choice inside a Practice
+  strands:
+  - spar
+- id: narrative-timed-response
+  gist: A reply must be given before time runs out
+  claim:
+    tracks: response clock
+    rewards: reaction
+    gates: being in time
+    remembers: reply
+    permits: answering
+    changes: scene
+  ontology:
+  - Mechanic
+  - Prompt
+  fit: conflict
+  note: a clock on a reply pressures disclosure and speed to yield consent; silence and refusal must stay valid
+  strands:
+  - wave-room
+- id: narrative-deliberate-silence
+  gist: Choosing not to speak so the other person continues
+  claim:
+    tracks: silence choice
+    rewards: fuller scene
+    gates: choosing silence
+    remembers: scene branch
+    permits: being quiet
+    changes: what is said
+  ontology:
+  - Mechanic
+  - Performance
+  fit: covered
+  note: witnessing and no-shift as valid ending; Welcome Acknowledge Validate Exhale
+  strands:
+  - wave-room
+  - between
+- id: narrative-evidence-rebuttal
+  gist: Pointing to a collected fact to challenge a claim
+  claim:
+    tracks: evidence, claims
+    rewards: exposed contradiction
+    gates: having the right evidence
+    remembers: evidence
+    permits: presenting
+    changes: argument
+  ontology:
+  - Mechanic
+  - EvidenceItem
+  - Claim
+  fit: covered
+  note: Claim and EvidenceItem with contradiction preserved
+  strands:
+  - chapter1
+- id: narrative-delayed-choice-consequences
+  gist: An earlier choice changes a later event
+  claim:
+    tracks: choice history
+    rewards: consequences
+    gates: past choice
+    remembers: choices
+    permits: choosing
+    changes: later scene
+  ontology:
+  - Mechanic
+  - Consequence
+  - ActionRecord
+  fit: covered
+  note: ConsequenceRecord; lineage
+  strands:
+  - chapter1
+  - calrunia
+- id: narrative-investigation-time-slots
+  gist: Limited time must be divided among leads
+  claim:
+    tracks: slots
+    rewards: partial coverage
+    gates: slots free
+    remembers: lead set
+    permits: choosing leads
+    changes: what is learned
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: choice under limit
+  strands:
+  - chapter1
+- id: narrative-background-dialogue-access
+  gist: Dialogue options open by the character's background
+  claim:
+    tracks: background
+    rewards: extra options
+    gates: background tag
+    remembers: options
+    permits: choosing
+    changes: conversation
+  ontology:
+  - Mechanic
+  - Affordance
+  - Capability
+  fit: conflict
+  note: if background maps to the player's type it breaks type_is_not_level and sect choice does not establish altitude; make it a chosen character background
+  strands:
+  - chapter1
+  - between
+- id: narrative-service-as-response
+  gist: Answering a situation by making something or serving instead of speaking
+  claim:
+    tracks: made things
+    rewards: answers by deed
+    gates: making or serving
+    remembers: the made thing
+    permits: serving
+    changes: scene outcome
+  ontology:
+  - Mechanic
+  - Action
+  - Artifact
+  fit: covered
+  note: Show Up; allyship with consequence
+  strands:
+  - calrunia
+  - chapter1
+- id: narrative-perspective-handoff
+  gist: Playing on through a different character who inherits earlier results
+  claim:
+    tracks: handoff
+    rewards: continued story
+    gates: a switch
+    remembers: lineage
+    permits: switching
+    changes: whose story
+  ontology:
+  - Mechanic
+  - ContinuationRecord
+  fit: covered
+  note: second player in chapter1; ContinuationRecord
+  strands:
+  - chapter1
+  - between
+- id: narrative-loop-event-schedule
+  gist: The same time window repeats with a changed plan
+  claim:
+    tracks: loop state
+    rewards: mastery of events
+    gates: re-entering
+    remembers: schedule
+    permits: replanning
+    changes: what happens
+  ontology:
+  - Mechanic
+  - Rule
+  - Checkpoint
+  fit: covered
+  note: Checkpoint; fits cave revisits
+  strands:
+  - cave
+  - chapter1
+- id: narrative-conversation-intervention
+  gist: Cutting in before the other finishes
+  claim:
+    tracks: timing
+    rewards: gains by interrupt
+    gates: moment
+    remembers: scene
+    permits: interrupting
+    changes: talk
+  ontology:
+  - Mechanic
+  - Prompt
+  fit: conflict
+  note: interrupting pressures turn-taking; keep as a choice with silence valid
+  strands:
+  - chapter1
+- id: farming-growth-care
+  gist: Tending a planted thing so it grows
+  claim:
+    tracks: growth stage, care
+    rewards: a grown plant
+    gates: planting and tending
+    remembers: growth
+    permits: watering
+    changes: plant stage
+  ontology:
+  - Mechanic
+  - State
+  - WorldElement
+  fit: partial
+  note: 'Tended Living Thing: care cadence that releases rather than punishes neglect'
+  strands:
+  - spirit-care
+  - living-ship
+- id: farming-season-window
+  gist: Crops grow only in certain seasons
+  claim:
+    tracks: calendar
+    rewards: timely harvest
+    gates: in season
+    remembers: season
+    permits: planting
+    changes: crop
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - calrunia
+- id: farming-irrigation-layout
+  gist: Arranging water so all plots are watered
+  claim:
+    tracks: coverage
+    rewards: grown plots
+    gates: water reach
+    remembers: layout
+    permits: placing
+    changes: growth
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - living-ship
+- id: farming-fertilizer-tradeoff
+  gist: Spending resources on soil to improve yield
+  claim:
+    tracks: soil state
+    rewards: yield
+    gates: spending
+    remembers: soil
+    permits: feeding
+    changes: growth
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: farming-seed-reinvestment
+  gist: Putting part of the harvest back as seed
+  claim:
+    tracks: seed stock
+    rewards: continued growth
+    gates: saving seed
+    remembers: seeds
+    permits: choosing
+    changes: next crop
+  ontology:
+  - Mechanic
+  - Seed
+  fit: covered
+  note: Seed object
+  strands:
+  - spirit-care
+- id: farming-regrowth-crops
+  gist: Crops that bear again without replanting
+  claim:
+    tracks: regrowth
+    rewards: steady yield
+    gates: care
+    remembers: crop
+    permits: harvesting
+    changes: yield
+  ontology:
+  - Mechanic
+  - State
+  fit: covered
+  note: state
+  strands:
+  - living-ship
+- id: farming-substrate-match
+  gist: Matching each crop to the soil it likes
+  claim:
+    tracks: soil type
+    rewards: good yield
+    gates: match
+    remembers: plot
+    permits: choosing
+    changes: growth
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: farming-crop-protection
+  gist: Protecting growth from pests and weather
+  claim:
+    tracks: threats
+    rewards: surviving crops
+    gates: protection
+    remembers: crop
+    permits: guarding
+    changes: survival
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: farming-orchard-investment
+  gist: Paying now for trees that give later
+  claim:
+    tracks: tree age
+    rewards: future yield
+    gates: patience
+    remembers: trees
+    permits: planting
+    changes: long return
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: Delayed Return; long arc without backlog pressure
+  strands:
+  - living-ship
+- id: farming-livestock-care
+  gist: Feeding and tending animals daily so they thrive
+  claim:
+    tracks: animal wellbeing
+    rewards: product and bond
+    gates: daily care
+    remembers: wellbeing
+    permits: caring
+    changes: animal state
+  ontology:
+  - Mechanic
+  - State
+  - Relationship
+  fit: conflict
+  note: daily care where neglect harms is a hidden active backlog; spirit-care keeps it by fading at 21 days to a seed with release as completion
+  strands:
+  - spirit-care
+- id: fishing-bite-window
+  gist: A catch is made only if the pull comes in the moment
+  claim:
+    tracks: bite timing
+    rewards: a caught fish
+    gates: timing
+    remembers: catch
+    permits: pulling
+    changes: catch
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: Timed Window
+  strands: []
+- id: fishing-line-tension
+  gist: Keeping line pull in a safe band during a fight
+  claim:
+    tracks: tension
+    rewards: landing the fish
+    gates: control
+    remembers: fish state
+    permits: easing
+    changes: catch
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: control skill
+  strands: []
+- id: fishing-target-tracking
+  gist: Following a moving fish with the aim
+  claim:
+    tracks: aim
+    rewards: caught
+    gates: tracking
+    remembers: fish
+    permits: aiming
+    changes: catch
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: fishing-habitat-search
+  gist: Finding where each fish lives
+  claim:
+    tracks: habitat map
+    rewards: right fish
+    gates: exploring
+    remembers: known habitats
+    permits: searching
+    changes: find
+  ontology:
+  - Mechanic
+  - Observation
+  fit: covered
+  note: discovery
+  strands:
+  - cave
+  - calrunia
+- id: fishing-bait-loadout
+  gist: Picking bait to draw a chosen fish
+  claim:
+    tracks: bait
+    rewards: targeted catch
+    gates: bait owned
+    remembers: loadout
+    permits: choosing
+    changes: catch odds
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: fishing-cast-placement
+  gist: Choosing where to cast
+  claim:
+    tracks: location
+    rewards: better catch
+    gates: choice
+    remembers: spot
+    permits: casting
+    changes: catch
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: fishing-passive-traps
+  gist: Setting traps that catch while you are away
+  claim:
+    tracks: traps
+    rewards: delayed catch
+    gates: setting
+    remembers: trap contents
+    permits: placing
+    changes: catch
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: Delayed Return
+  strands: []
+- id: fishing-pond-production
+  gist: Keeping fish in a pond that produces over time
+  claim:
+    tracks: pond stock
+    rewards: steady yield
+    gates: pond upkeep
+    remembers: pond
+    permits: stocking
+    changes: yield
+  ontology:
+  - Mechanic
+  - State
+  fit: partial
+  note: Tended Living Thing and Capacity Budget
+  strands:
+  - living-ship
+- id: fishing-timed-contest
+  gist: A competition with a limited clock to catch most
+  claim:
+    tracks: score, clock
+    rewards: contest win
+    gates: in time
+    remembers: score
+    permits: competing
+    changes: ranking
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: encounter ends without proving worth
+  strands: []
+- id: fishing-equipment-access
+  gist: Better gear lets you catch what lesser gear cannot
+  claim:
+    tracks: gear tier
+    rewards: rarer fish
+    gates: gear
+    remembers: gear
+    permits: upgrading
+    changes: catches
+  ontology:
+  - Mechanic
+  - Affordance
+  fit: covered
+  note: Affordance
+  strands: []
+- id: relationships-gift-allocation
+  gist: Giving favoured gifts to raise affection
+  claim:
+    tracks: preferences, affection
+    rewards: closer bond
+    gates: gifts
+    remembers: affection
+    permits: gifting
+    changes: relationship
+  ontology:
+  - Mechanic
+  - Relationship
+  fit: conflict
+  note: acquisition buying affection breaks consent is not inferred from acquisition; make gifts expression not payment
+  strands:
+  - between
+  - spirit-care
+- id: relationships-daily-contact
+  gist: Seeing someone each day keeps a bond warm
+  claim:
+    tracks: contact days
+    rewards: bond kept
+    gates: daily presence
+    remembers: streak
+    permits: showing up
+    changes: bond
+  ontology:
+  - Mechanic
+  - MotivationMechanism
+  - Relationship
+  fit: conflict
+  note: streak pressure is a hidden active backlog and engagement is not meaning; make it a gift not a debt
+  strands:
+  - between
+  - daily-menu
+- id: relationships-bond-scenes
+  gist: Scenes unlock at bond levels
+  claim:
+    tracks: bond level
+    rewards: scenes
+    gates: level reached
+    remembers: scenes seen
+    permits: spending time
+    changes: story
+  ontology:
+  - Mechanic
+  - Relationship
+  - TrustState
+  fit: conflict
+  note: a single bond number gating access conflicts with trust = capability and integrity in a domain and access is not command; use domain scoped trust and consent
+  strands:
+  - between
+  - chapter1
+- id: relationships-companion-approval
+  gist: Companion approval shifts by player choices
+  claim:
+    tracks: approval
+    rewards: companion loyalty
+    gates: choices they like
+    remembers: approval
+    permits: choosing
+    changes: companion stance
+  ontology:
+  - Mechanic
+  - Relationship
+  fit: conflict
+  note: external approval does not prove inner transformation, and it trains pleasing; make it the companion's stated view
+  strands:
+  - spar
+  - between
+- id: relationships-persuasion-checks
+  gist: Dialogue success depends on a roll or stat
+  claim:
+    tracks: stats
+    rewards: persuasion success
+    gates: stat and luck
+    remembers: checks
+    permits: persuading
+    changes: outcome
+  ontology:
+  - Mechanic
+  - Rule
+  fit: conflict
+  note: stat or roll deciding a person's consent infers consent from compliance; fine for NPCs only
+  strands:
+  - chapter1
+- id: relationships-date-itinerary
+  gist: Choosing shared activities for a meeting
+  claim:
+    tracks: itinerary
+    rewards: a good time
+    gates: fit of choices
+    remembers: date
+    permits: choosing
+    changes: bond
+  ontology:
+  - Mechanic
+  - Relationship
+  - Ritual
+  fit: partial
+  note: shared play is real material; satisfaction does not prove helpfulness
+  strands:
+  - between
+  - room-kit
+- id: relationships-faction-reputation
+  gist: Groups hold a standing for the player
+  claim:
+    tracks: faction standing
+    rewards: faction rewards
+    gates: standing
+    remembers: reputation
+    permits: acting
+    changes: access
+  ontology:
+  - Mechanic
+  - Relationship
+  - Credential
+  fit: conflict
+  note: a standing label can read as whole-person rank; keep it a credential per capability within a group
+  strands:
+  - calrunia
+- id: relationships-secrets-leverage
+  gist: Holding another's secret as power over them
+  claim:
+    tracks: secrets
+    rewards: influence
+    gates: knowing
+    remembers: secrets
+    permits: using
+    changes: power
+  ontology:
+  - Mechanic
+  - Claim
+  fit: conflict
+  note: intimate disclosure becomes progression currency and breaks consent; only fiction about NPCs
+  strands:
+  - chapter1
+- id: relationships-dynastic-marriage
+  gist: Marrying to join families and pass on a line
+  claim:
+    tracks: houses
+    rewards: alliances
+    gates: marriage
+    remembers: lineage
+    permits: marrying
+    changes: family
+  ontology:
+  - Mechanic
+  - Relationship
+  - Commitment
+  fit: partial
+  note: commitment as a bilateral kept promise; needs lineage
+  strands:
+  - calrunia
+- id: relationships-relationship-commitment
+  gist: Choosing to commit to one bond with consequences
+  claim:
+    tracks: commitment
+    rewards: deeper bond
+    gates: commitment
+    remembers: commitment
+    permits: committing
+    changes: bond
+  ontology:
+  - Mechanic
+  - Commitment
+  - Relationship
+  fit: partial
+  note: kept commitments matter to trust; must allow refusal and release without penalty
+  strands:
+  - between
+- id: commerce-price-discovery
+  gist: Learning what things are worth by trial
+  claim:
+    tracks: prices seen
+    rewards: informed trades
+    gates: exploring
+    remembers: price memory
+    permits: probing
+    changes: knowledge
+  ontology:
+  - Mechanic
+  - Observation
+  fit: covered
+  note: simple Observation
+  strands:
+  - calrunia
+- id: commerce-haggling
+  gist: Negotiating price with a seller
+  claim:
+    tracks: offers
+    rewards: a better deal
+    gates: bargaining
+    remembers: price
+    permits: bargaining
+    changes: price
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: bounded negotiation
+  strands:
+  - calrunia
+- id: commerce-dynamic-market
+  gist: Prices move with supply and demand
+  claim:
+    tracks: market
+    rewards: profit
+    gates: timing
+    remembers: price history
+    permits: buying and selling
+    changes: prices
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: a living economy of vibeulon needs a conservation rule (Flow Network)
+  strands:
+  - calrunia
+- id: commerce-regional-arbitrage
+  gist: Buying where cheap and selling where dear
+  claim:
+    tracks: price gaps
+    rewards: profit
+    gates: travel
+    remembers: routes
+    permits: traveling
+    changes: wealth
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: one world many places
+  strands:
+  - calrunia
+- id: commerce-shop-display
+  gist: Arranging stock to attract buyers
+  claim:
+    tracks: display
+    rewards: sales
+    gates: placement
+    remembers: stock
+    permits: arranging
+    changes: sales
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands:
+  - room-kit
+- id: commerce-interpret-orders
+  gist: Reading what a customer vaguely asks for
+  claim:
+    tracks: request
+    rewards: fitting offer
+    gates: interpretation
+    remembers: orders
+    permits: guessing
+    changes: satisfaction
+  ontology:
+  - Mechanic
+  - Interpretation
+  - Prompt
+  fit: partial
+  note: an AI interpretation must not silently become user belief; ask and correct
+  strands:
+  - daily-menu
+- id: commerce-timed-contracts
+  gist: Delivering by a deadline for pay
+  claim:
+    tracks: deadline
+    rewards: payment
+    gates: on time
+    remembers: contracts
+    permits: delivering
+    changes: reward
+  ontology:
+  - Mechanic
+  - Commitment
+  fit: conflict
+  note: deadline with penalty is overdue pressure; missed deadlines should be composted or renegotiated
+  strands: []
+- id: commerce-debt-pressure
+  gist: Owing money forces choices
+  claim:
+    tracks: debt
+    rewards: relief
+    gates: repaying
+    remembers: debt
+    permits: repaying
+    changes: options
+  ontology:
+  - Mechanic
+  - Rule
+  fit: conflict
+  note: debt that compounds is delayed production debt and shame messaging; offer set-down
+  strands: []
+- id: commerce-auction-bidding
+  gist: Bidding against others with a ceiling
+  claim:
+    tracks: bids
+    rewards: the item
+    gates: ceiling
+    remembers: bid
+    permits: bidding
+    changes: ownership
+  ontology:
+  - Mechanic
+  - Rule
+  fit: covered
+  note: simple Rule
+  strands: []
+- id: commerce-trade-route-programming
+  gist: Programming standing trade routes for goods to follow
+  claim:
+    tracks: routes
+    rewards: steady trade
+    gates: route set
+    remembers: routes
+    permits: programming
+    changes: goods flow
+  ontology:
+  - Mechanic
+  - Rule
+  fit: partial
+  note: standing instruction with a flow
+  strands:
+  - calrunia
+  - living-ship
