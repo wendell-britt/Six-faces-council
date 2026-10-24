@@ -147,3 +147,15 @@ Stopped at the 150k line after reading, before any code (the thread opened at ~1
   (~5388): replace the coded bob/roll/squash with the walk clip, phase by distance over `travel`, idle when stopped; keep the
   lowest-point-on-floor offset and the turn. (5) Probe first: creature mesh lowest world y within 0.03 of 0 across a walk
   (cave-test.mjs door-spirit block), then a still, then a sheet. Preview `/ontology-game/cave#go=home&grown=7&tour=0`.
+
+## Brief 6, done (2026-10-24, thread "Wire Shellback's rig into the cave")
+bars-engine draft #438 (branch `claude/project-thread-9uem3k`): the Shellback creature and ally are baked from rig.py's
+rigged GLBs (bake_spirits.py third argument; rig outputs in /mnt/project-files/3d-build/spirit-rig-2026-10-24/rig),
+skinned in spirit-forms.js (Idle plays by default, so the elder breathes; `poseRig`, a lowest-point table per key), and
+walkForm plays the Walk by ground covered (capped 2.2 cycles/s) with the clip's lowest point on the floor. Probe and still
+sheet in .../spirit-rig-2026-10-24/probe. Rigged late forms have their own 208 KB budget (creature 198 KB, ally 175 KB).
+- Look step `spirit-rig-look-01` (list `spirit-rig`), preview `?go=home&grown=7&tour=0`. TRIGGER: his yes -> mark #438
+  ready (steward merges). A note -> next round in a fresh thread.
+- Known: rig.py's tortoise Walk covers 9 cm a cycle, so a spirit hurried across the room slides its feet past the cap. If he
+  notes it, lengthen the creature's stride in rig.py `walk_pose` or slow the room's moves for creatures.
+- Not checked: the full cave-test.mjs run (~25 min). The other families still have no rig (Rigify waits for them).
