@@ -1,7 +1,32 @@
 # Studio lot (the studio game)
 
 ## Next
-Living boat 2026-10-24 (thread "Bring back the living boat"). His note on `ts-ship-look-1` rejected the tall ship: "the
+Walkable tall ship 2026-10-24 (thread "Art direct the walkable tall ship"). His steers at 02:24 overruled `lb-keep-the-deck`
+("I want a tall ship crosssectikn where agents walk between rooms in the cross section. Perhaps the tall ship is 3
+dimensional but represented in 2d (monument valley style)") and `lb-stage-pennants` ("I don't understand the pennants").
+Made: moving mock page https://claude.ai/artifact/9W13HHYCqpNQcKyDqbDMb3 (source, `scene.js` renderer, stills, refs and
+`art-director-review.md` in `/mnt/project-files/studio-tycoon/walkable-ship/`): the ship cut open lengthwise in one fixed
+axonometric view, four decks (top: wheel, bell, Everdoor; stage deck: seven stages stern to bow; workshop deck: six
+departments; hold: the vein), an open corridor per deck, five open stairways, cabins with no front wall, 11 crew carrying
+stage-tinted crates with dashed route lines, follow camera turning between the waiting cabin and a moving crate.
+Reference board of 8 images, side by side with the flat boat and the sealed ship, and the brief-master prompt that should
+have run. Positions `tw-walkable-decks` (replaces `lb-keep-the-deck`), `tw-deck-map`, `tw-no-pennants`, `tw-follow-camera`
+(rows `council/callsheets/rows/walkable-ship-2026-10-24.json`, on main; the artifact board shows them at its next
+republish). Look step `tw-ship-look-1` (list `studio-lot-boat`, n 5) on both stores. `lb-boat-look-1` is answered by his
+steers. The brief "Living boat build" below is retired.
+
+Brief: Walkable ship build (fresh Opus thread after his yes on `tw-ship-look-1`; owns bars-engine #429, branch
+`claude/project-thread-227mft`, head c315bb5). Keep list, checked by the art director before his look: a crew member
+visible mid-trip in every frame, work seen live, eye pulled by movement and need. (1) Port `scene.js` as the boat's
+renderer in `public/studio/` (it is plain canvas 2D, no Phaser needed; keep `world.ts` as the data side): spirits from
+INDEX strands placed in the cabin of their stage (a `STAGES` table, stage from loop or callsheet, fallback the hold),
+crew errands from strands touched in the last day, the waiting cabin from open board letters. (2) Tap a bubble or
+spirit: the steer card (round 4 letters content) POSTs the board's own save via src/lib/board/shim.ts; Tap the vein is
+a hold move. (3) Art-director open notes: tie each walker to its strand's colour, a work prop per busy cabin, the follow
+camera prefers a walker mid-stair. (4) Forty-six strands must fit seven cabins: stack or queue spirits, check on a
+phone. (5) Preview link at `?strand=<one with a letter>` as look step `tw-ship-look-2`.
+
+Retired 2026-10-24 by his steers above: Living boat 2026-10-24 (thread "Bring back the living boat"). His note on `ts-ship-look-1` rejected the tall ship: "the
 tall ship is not an improvement from the platform style ... Fully the wrong direction" and "The biggest thing is that
 agents can be seen traveling between rooms anymore that was the most compelling part of the first design. Being able
 to see the work happening seemingly in real time and zooming into what was pulling attention based on its movement and
