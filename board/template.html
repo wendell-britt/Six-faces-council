@@ -461,6 +461,31 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
 .blk-ask textarea{width:100%;min-height:64px;box-sizing:border-box}
 .ttv-gate .ctl{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .empty.store-fault{color:#b3261e;border:1px solid #b3261e;border-radius:6px;padding:10px 12px}
+/* Your eyes (ey-). Wendell, 2026-10-24: "we also need a place on the council board ... where we can preview and test any
+   assets that are waiting for my eyes. It's hard to find that in our current set up". Every look step from every strand,
+   newest first, each a postcard: its still, one button that opens the hosted preview, and a yes or a note that saves to
+   the step itself (done + note), so pull.py records it like any tick. A step is a look when it says look: true, or its id
+   carries look, try, play or squint. Older open looks on the same list fold under the newest, since a new round replaces
+   the last one. A step's still is s.still (an https or data:image URL), else its first image file. */
+.ey-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));margin:16px 0}
+.ey-card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.ey-still{position:relative;aspect-ratio:16/10;background:linear-gradient(160deg,var(--accent-soft),var(--bg));display:block;color:inherit;text-decoration:none}
+.ey-still img{width:100%;height:100%;object-fit:cover;display:block}
+.ey-still .ey-strand{position:absolute;left:10px;bottom:10px;background:rgba(10,14,14,.72);color:#fff;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:3px}
+.ey-still .ey-blank{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:italic 1.15rem var(--display);color:var(--muted);padding:20px;text-align:center}
+.ey-body{padding:14px 16px 16px;display:grid;gap:10px}
+.ey-body h3{margin:0;font:600 1.12rem/1.3 var(--display)}
+.ey-ask{margin:0;font-size:.93rem}
+.ey-meta{font-size:.78rem;color:var(--muted);margin:0}
+.ey-go{display:block;text-align:center;background:var(--accent);color:var(--accent-ink);border-radius:6px;padding:12px;font-weight:600;text-decoration:none}
+.ey-links{display:flex;flex-wrap:wrap;gap:6px}
+.ey-acts{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ey-card textarea{width:100%;min-height:70px;font:inherit;box-sizing:border-box}
+.ey-card details>summary{cursor:pointer;color:var(--muted);font-size:.86rem}
+.ey-older{border:1px dashed var(--line);border-radius:6px;padding:6px 10px;font-size:.86rem}
+.ey-older ul{margin:6px 0 0;padding-left:18px}
+.ey-said{background:var(--accent-soft);border-radius:4px;padding:6px 8px;font-size:.88rem;margin:0}
+.ey-seen .ey-card{opacity:.8}
 </style>
 
 <h1>Council Board</h1>
@@ -471,6 +496,7 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
   <button class="tab" role="tab" id="tab-open" aria-selected="true" aria-controls="view-open">Open<b id="n-open">0</b></button>
   <button class="tab" role="tab" id="tab-morning" aria-selected="false" aria-controls="view-morning">Morning<b id="n-morning">0</b></button>
   <button class="tab" role="tab" id="tab-steps" aria-selected="false" aria-controls="view-steps">Your steps<b id="n-steps">0</b></button>
+  <button class="tab" role="tab" id="tab-looks" aria-selected="false" aria-controls="view-looks">Your eyes<b id="n-looks">0</b></button>
   <button class="tab" role="tab" id="tab-outreach" aria-selected="false" aria-controls="view-outreach">Outreach<b id="n-outreach">0</b></button>
   <button class="tab" role="tab" id="tab-resolved" aria-selected="false" aria-controls="view-resolved">Resolved<b id="n-resolved">0</b></button>
 </div>
@@ -554,6 +580,12 @@ body.blk-held #view-steps > :not(.blk-gate){display:none}
   <div id="steps-done"></div>
 </section>
 
+<section id="view-looks" role="tabpanel" aria-labelledby="tab-looks" hidden>
+  <p class="lede" style="margin-top:14px">Everything built and waiting for you to see it, newest first. Tap a picture or Open it to see the real thing; say yes, or say what feels off, and the strand's next round starts from your words.</p>
+  <div id="looks-empty" class="empty">Nothing is waiting for your eyes. When a round is built, its still and its link appear here.</div>
+  <div class="ey-grid" id="looks-open"></div>
+  <div id="looks-seen"></div>
+</section>
 <section id="view-outreach" role="tabpanel" aria-labelledby="tab-outreach" hidden>
   <p class="lede" style="margin-top:14px">Everyone you are asking onto a show, and where each ask stands. Anyone due a chase is also on Your steps under Podcast chases, and saving a chase there updates the row here.</p>
   <div class="oc-shows" id="oc-shows" role="group" aria-label="Show"></div>
@@ -843,7 +875,7 @@ function render(){
 }
 
 function show(which){
-  for (const v of ['open','morning','steps','outreach','resolved']){
+  for (const v of ['open','morning','steps','looks','outreach','resolved']){
     document.getElementById('tab-'+v).setAttribute('aria-selected', String(v === which));
     document.getElementById('view-'+v).hidden = v !== which;
   }
@@ -851,9 +883,10 @@ function show(which){
 document.getElementById('tab-open').addEventListener('click', () => { show('open'); try { history.replaceState(null, '', '#open'); } catch (e) {} });
 document.getElementById('tab-resolved').addEventListener('click', () => { show('resolved'); try { history.replaceState(null, '', '#resolved'); } catch (e) {} });
 document.getElementById('tab-steps').addEventListener('click', () => { show('steps'); try { history.replaceState(null, '', '#steps'); } catch (e) {} });
+document.getElementById('tab-looks').addEventListener('click', () => { show('looks'); try { history.replaceState(null, '', '#looks'); } catch (e) {} });
 document.getElementById('tab-outreach').addEventListener('click', () => { show('outreach'); try { history.replaceState(null, '', '#outreach'); } catch (e) {} });
 document.getElementById('tab-morning').addEventListener('click', () => { show('morning'); try { history.replaceState(null, '', '#morning'); } catch (e) {} });
-show(['#resolved','#steps','#outreach','#morning'].includes(location.hash) ? location.hash.slice(1) : 'open');
+show(['#resolved','#steps','#looks','#outreach','#morning'].includes(location.hash) ? location.hash.slice(1) : 'open');
 
 // The Open tab's rows, and deferred rows opened on the Resolved tab, share these handlers.
 const openView = {addEventListener: (t, f) => ['view-open', 'view-resolved'].forEach(v => document.getElementById(v).addEventListener(t, f))};
@@ -1241,6 +1274,68 @@ document.addEventListener('click', e => {
 });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && bk) closeBlocker(); });
 
+// ---- Your eyes ----
+const eyDrafts = {};
+document.addEventListener('input', e => { const m = /^eyn-(.+)$/.exec(e.target.id || ''); if (m) eyDrafts[m[1]] = e.target.value; });
+const eyIs = (id, s) => s.look === true || (s.look !== false && /(^|-)(look|try|play|squint)(-|\d|$)/.test(id));
+const eyStill = s => [s.still, ...stFiles(s).filter(f => (f.kind || (f.src ? 'image' : '')) === 'image').map(f => f.src)].find(stImg) || '';
+const eyTitle = s => s.lookTitle || (stFiles(s)[0] || {}).title || (stLists[s.list] || {}).title || 'A look';
+const eyFirst = v => { const m = /^(.+?[.!?])(\s|$)/.exec(String(v || '')); return m ? m[1] : String(v || ''); };
+// Every https link the step names: its href, href2, its link files, and labelled links in `where` ("nook https://...").
+function eyLinks(s){
+  const out = [], seen = new Set();
+  const add = (href, label) => { if (stHref(href) && !seen.has(href)){ seen.add(href); out.push([href, label]); } };
+  add(s.href, 'Open it');
+  for (const f of stFiles(s)) if (f.href) add(f.href, f.title || 'Open');
+  add(s.href2, s.where2 || 'Then open this');
+  for (const bit of String(s.where || '').split(/\s+·\s+|;\s+/)){
+    const m = /^(.*?)(https:\/\/\S+?)[.,)]?$/.exec(bit.trim().replace(/^Links?:\s*/i, ''));
+    if (m) add(m[2], m[1].trim().replace(/[:\-–]\s*$/, '') || 'Link');
+  }
+  return out;
+}
+const eyNewest = (a, b) => (b[1].n || 0) - (a[1].n || 0) || String(b[1].created || b[1].due || '').localeCompare(String(a[1].created || a[1].due || ''));
+function eyCard(id, s, older){
+  const still = eyStill(s), links = eyLinks(s), go = links[0], strand = (stLists[s.list] || {}).title || s.list || '';
+  const pic = still ? `<img src="${esc(still)}" alt="${esc(eyTitle(s))}" loading="lazy">` : `<span class="ey-blank">${esc(eyTitle(s))}</span>`;
+  const frame = go ? `<a class="ey-still" href="${esc(go[0])}" target="_blank" rel="noopener">${pic}<span class="ey-strand">${esc(strand)}</span></a>` : `<div class="ey-still">${pic}<span class="ey-strand">${esc(strand)}</span></div>`;
+  const more = links.slice(1).map(([h, l]) => `<a class="st-btn" href="${esc(h)}" target="_blank" rel="noopener">${esc(l)}</a>`).join('');
+  const meta = [s.device === 'computer' ? 'Needs a computer' : 'Works on a phone', s.due && !s.done ? (stOverdue(s) ? 'Overdue' : 'Due ' + stFmt(s.due)) : ''].filter(Boolean).join(' · ');
+  const said = s.note ? `<p class="ey-said">You said: ${esc(s.note)}</p>` : '';
+  const acts = s.done ? said : `${said}<div class="ey-acts"><button type="button" class="st-btn st-solid" data-eyes="yes" data-step="${id}">Yes, this is it</button><span class="st-state" id="eys-${id}"></span></div>
+      <details><summary>Something feels off</summary><textarea id="eyn-${id}" placeholder="What feels wrong, flat or missing. The next round starts from it.">${esc(eyDrafts[id] ?? '')}</textarea><button type="button" class="st-btn" data-eyes="note" data-step="${id}">Send my note</button></details>`;
+  const olderHtml = older && older.length ? `<details class="ey-older"><summary>${older.length} earlier look${older.length === 1 ? '' : 's'} on this strand, likely replaced by this one</summary><ul>${older.map(([oid, o]) => `<li>${stHref(o.href) ? `<a href="${esc(o.href)}" target="_blank" rel="noopener">${esc(eyTitle(o))}</a>` : esc(eyTitle(o))} <button type="button" class="st-btn" data-eyes="yes" data-step="${oid}">Yes</button> <span class="st-state" id="eys-${oid}"></span></li>`).join('')}</ul></details>` : '';
+  return `<article class="ey-card" id="ey-${id}">${frame}<div class="ey-body">
+    <h3>${esc(eyTitle(s))}</h3><p class="ey-ask">${esc(eyFirst(s.do))}</p>
+    ${go ? `<a class="ey-go" href="${esc(go[0])}" target="_blank" rel="noopener">Open it</a>` : ''}${more ? `<div class="ey-links">${more}</div>` : ''}
+    <details><summary>The whole ask</summary><p class="ey-ask">${esc(s.do || '')}</p>${s.where ? `<p class="ey-meta">${esc(s.where)}</p>` : ''}${s.check ? `<p class="ey-meta">${esc(s.check)}</p>` : ''}</details>
+    <p class="ey-meta">${esc(meta)}</p>${acts}${olderHtml}</div></article>`;
+}
+function renderLooks(){
+  const all = Object.entries(stSteps).filter(([id, s]) => eyIs(id, s) && !s.retired);
+  const open = all.filter(([,s]) => !s.done), seen = all.filter(([,s]) => s.done && s.note).sort((a, b) => String(b[1].doneAt || '').localeCompare(String(a[1].doneAt || ''))).slice(0, 6);
+  const byList = {};
+  for (const e of open) (byList[e[1].list || e[0]] = byList[e[1].list || e[0]] || []).push(e);
+  const heads = Object.values(byList).map(g => g.sort(eyNewest)).sort((a, b) => String(b[0][1].due || '').localeCompare(String(a[0][1].due || '')));
+  document.getElementById('looks-open').innerHTML = heads.map(g => eyCard(g[0][0], g[0][1], g.slice(1))).join('');
+  document.getElementById('looks-seen').innerHTML = seen.length ? `<details class="st-finished ey-seen" data-group="ey-seen"${stOpenGroups.has('ey-seen') ? ' open' : ''}><summary>Already looked at (last ${seen.length})</summary><div class="ey-grid">${seen.map(([id, s]) => eyCard(id, s)).join('')}</div></details>` : '';
+  document.getElementById('looks-empty').hidden = heads.length > 0;
+  document.getElementById('n-looks').textContent = heads.length;
+  // A board with no look steps at all (the Nonprofit Board) shows no tab for them.
+  document.getElementById('tab-looks').hidden = all.length === 0;
+}
+// A yes or a note is the look itself, so either one ticks the step and saves his words as its note.
+document.addEventListener('click', async e => {
+  const t = e.target.closest('[data-eyes]'); if (!t) return;
+  const id = t.dataset.step, s = stSteps[id], st = document.getElementById('eys-' + id);
+  const text = t.dataset.eyes === 'yes' ? 'Yes' : (document.getElementById('eyn-' + id).value || '').trim();
+  if (!s || !text){ if (st) st.textContent = 'Write what feels off first.'; return; }
+  if (!db){ document.getElementById('banner').classList.add('on'); return; }
+  const at = new Date().toISOString(), patch = {done: true, doneAt: at, note: text, noteAt: at};
+  stSteps[id] = {...s, ...patch}; delete eyDrafts[id]; renderSteps();
+  try { await db.doc('steps/' + id).update(patch); }
+  catch (err){ stSteps[id] = s; renderSteps(); const st2 = document.getElementById('eys-' + id); if (st2) st2.textContent = 'Could not save (' + (err && err.code || 'error') + ').'; }
+});
 // ---- Your steps ----
 let stLists = {}, stSteps = {};
 /* The Council Board always has step lists and contacts, so an empty or failed snapshot of either is a broken store,
@@ -1392,6 +1487,7 @@ function stList(id, l, skip = new Set()){
 }
 function renderSteps(){
   renderSend();
+  renderLooks();
   const active = document.activeElement && document.activeElement.id;
   // Lists with the soonest open due date come first; lists without one keep their order after them.
   const nextDue = id => stReq(stOf(id)).filter(([,s]) => !s.done && s.due).map(([,s]) => s.due).sort()[0] || '9999';
