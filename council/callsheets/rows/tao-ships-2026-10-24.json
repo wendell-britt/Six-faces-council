@@ -1,0 +1,90 @@
+{
+ "updated": "2026-10-24",
+ "positions": [
+  {
+   "id": "boat-grid-tao-space",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect"
+   ],
+   "pass": "tao-ships-2026-10-24",
+   "auto": true,
+   "pos": "The face ships are FTL-style living starships in open space, styled as Taoist cultivation in space: Star Wars engineering (thrusters, plated hulls, a working hold) wearing Avatar: The Last Airbender and xianxia architecture (curved tiled eaves, moon doors, paper lanterns, talisman streamers) under an ink-wash nebula. No ocean, no cloud sea under the hull. The crew still walk the open deck between rooms, and the vein still carries the ship's power. This replaces boat-grid-spiritfarer and stands unless you flip it.",
+   "why": "Your note in the thread (2026-10-24 03:26): \"I do think the FTL ship design and the spacecraft should be where we send this. The aesthetic polarity is Taoist cultivation in space Star Wars meets Avatar the last airbender but with 5 elements\", and your steer on boat-grid-spiritfarer (04:02): \"thinking more of an FTL style living ship in space so we don't have to account for buoyancy\"."
+  },
+  {
+   "id": "boat-grid-five-elements",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect",
+    "diplomat",
+    "sage"
+   ],
+   "pass": "tao-ships-2026-10-24",
+   "auto": true,
+   "pos": "Each face's deck is built from one element, and the generating cycle runs up the altitudes: Shaman wood (bamboo, rattan, a root garden), Challenger fire (red lacquer, solar fins, a forge), Regent earth (stone, glazed tile, jade, a bell tower), Architect metal (bronze, Su Song's clock tower, an armillary sphere), Diplomat water, Sage all five in balance. The vein's lanterns become qi pearls in the five element colours, and the element is the emotional charge the game already uses (wood joy, fire anger, earth neutrality, metal fear, water sadness). The Hearth is a three-legged furnace with a taiji lid where the vein rises. This stands unless you flip it.",
+   "why": "Your 'but with 5 elements'; bars-engine's move engine already pairs each element with a charge; the generating order wood, fire, earth, metal, water matches the altitude order of the faces."
+  },
+  {
+   "id": "boat-grid-grows-both-ways",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "tao-ships-2026-10-24",
+   "auto": true,
+   "pos": "Amends boat-grid-axes-faces. The vein and its furnace are the ship's centre line. Decks grow above it and below it, so a bigger ship is taller and deeper: lighter decks above (fire), heavier rooted decks below (earth, then metal). x stays pipeline order within each deck. This replaces boat-grid-axes and stands unless you flip it.",
+   "why": "Your steer on boat-grid-axes (04:02): \"Taller the boat the heavier it is ... even as it grows higher there is depth below the water level\". In space there is no water line, so the vein takes its place."
+  },
+  {
+   "id": "boat-grid-star-names",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect",
+    "diplomat",
+    "sage"
+   ],
+   "pass": "tao-ships-2026-10-24",
+   "auto": true,
+   "pos": "The ships take starship names: 1 Gourd Star (Shaman, Chapter 1), 2 Ember Comet (+ Challenger), 3 Jade Palace (+ Regent), 4 Clockwork Orrery (+ Architect), then Tide Lotus (Diplomat) and Taiji Star (Sage), locked. The hangar is the moorings at a floating Air Temple. The unlock lines of boat-grid-deck-unlock carry over. This stands unless you flip it.",
+   "why": "Your steer on boat-grid-deck-unlock (04:02): \"We'll need different names for star ships as we're long away from literal boats\"."
+  }
+ ],
+ "questions": [
+  {
+   "id": "boat-grid-carry-tao",
+   "faces": [
+    "shaman",
+    "regent",
+    "sage"
+   ],
+   "pass": "tao-ships-2026-10-24",
+   "q": "Should the Taoist-in-space look carry over to the living ship and Calrunia, or stay with the studio's face ships?",
+   "why_you": "The studio's face ships now pivot to Taoist cultivation in space with five elements. The living ship (the Chapter 1 reveal and the world inside at /calrunia/arrive, waiting on your look at sd-ship-look-1) and Calrunia were drawn before this pivot, in their own style. The record does not say whether one aesthetic should run through all of them, and a change there reaches the Chapter 1 demo, so it is your call. Nothing there changes until you answer.",
+   "not_before": "Raised by face ships round 3, 2026-10-24.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Carry it to both (recommended)",
+     "c": "After your look at sd-ship-look-1, the next art round on the living ship and Calrunia restyles them as Taoist space, one design language from Chapter 1 to the studio, with each element setting as a place."
+    },
+    {
+     "v": "B",
+     "label": "B. Living ship only",
+     "c": "The living ship takes the new look at its next art round; Calrunia's places keep their own styles."
+    },
+    {
+     "v": "C",
+     "label": "C. Keep it to the studio ships",
+     "c": "The living ship and Calrunia stay as they are; only the studio's face ships use the Taoist space look."
+    }
+   ]
+  }
+ ]
+}
