@@ -1,0 +1,103 @@
+{
+ "date": "2026-10-24",
+ "kind": "board-pull",
+ "newest_save": "2026-10-24T16:45:13.796Z",
+ "answers": {},
+ "steer": null,
+ "steps": [
+  {
+   "id": "robe-layers-look-03",
+   "at": "2026-10-24T16:39:56.300Z",
+   "what": "ticked",
+   "do": "Open the character creator at the long coat and look at the front. Your note: a belt on the long coat, and the band across the chest running the length of the fabric. Both are in. Switch the dye and the cut (the dress and jacket get the same front edge). Then answer: A yes; B yes with a note; C another round."
+  },
+  {
+   "id": "robe-layers-look-03",
+   "at": "2026-10-24T16:39:56.300Z",
+   "what": "note",
+   "note": "Ok this was one of the problems we were running into with the slit. The slit isn’t a slit it’s the place there the robe is attacked by the belt and hangs freely from the back part",
+   "do": "Open the character creator at the long coat and look at the front. Your note: a belt on the long coat, and the band across the chest running the length of the fabric. Both are in. Switch the dye and the cut (the dress and jacket get the same front edge). Then answer: A yes; B yes with a note; C another round."
+  },
+  {
+   "id": "boat-grid-look-3",
+   "at": "2026-10-24T16:40:00.000Z",
+   "what": "deprecated",
+   "note": "Round 3 abandoned; round 4 flow ships replaced it (position boat-grid-look-3-retired).",
+   "do": "Look at the Taoist face ships: tap each ship, watch the crew cross the open deck, tap rooms to move qi pearls from the vein, and compare with round 2 on the page. Then say yes, or what feels off."
+  },
+  {
+   "id": "boat-grid-look-5",
+   "at": "2026-10-24T16:42:21.161Z",
+   "what": "ticked",
+   "do": "Look at round 5 of the ship art. Your note asked for compartments, inner and outer symmetry, and crew moving coherently, as transcend and include. Option A nests the rooms as older skins around a heart chamber with one level walk through a gate in every wall; option B puts chambers in a row like a nautilus; a third still shows every face keeping the ship before it. Then say yes to A (or B), or what feels off."
+  },
+  {
+   "id": "boat-grid-look-5",
+   "at": "2026-10-24T16:42:21.161Z",
+   "what": "note",
+   "note": "I think B reads better but A is a little closer to the ontological vibe. I’m trying to figure out how to balance legibility and the design language.  We’ve drifted from the FTL separate rooms and compartments so potentially think about the actually gameplay loops could inform the design. This is a gamified version of the council board so we want to able to at a glance see where energy is going and where the blockers are and steer the ships internal energy to overcome that. We need to know how games solve for this type of problem solving visually",
+   "do": "Look at round 5 of the ship art. Your note asked for compartments, inner and outer symmetry, and crew moving coherently, as transcend and include. Option A nests the rooms as older skins around a heart chamber with one level walk through a gate in every wall; option B puts chambers in a row like a nautilus; a third still shows every face keeping the ship before it. Then say yes to A (or B), or what feels off."
+  },
+  {
+   "id": "tw-ship-look-1",
+   "at": "2026-10-24T16:42:28.320Z",
+   "what": "deprecated",
+   "note": "",
+   "do": "Look at the walkable tall ship. It is the tall ship cut open lengthwise in a Monument Valley-style 3D view: four decks, an open corridor on each, open stairs between them, and crew walking the work from cabin to cabin. Tap the ship to let the camera follow the work. The page also has the references, a side by side with the flat boat, why the sealed ship failed, and the prompt that should have run. Note 'yes, build it', or what reads wrong."
+  },
+  {
+   "id": "lb-boat-look-1",
+   "at": "2026-10-24T16:42:33.046Z",
+   "what": "deprecated",
+   "note": "",
+   "do": "Look at the living boat still. It keeps the flat department boat you liked, with crew walking between halls carrying the work, adds seven stage pennants from stern to bow, lets the camera drift to whatever rings or moves, and raises a steer card (with Tap the vein) when you tap a bubble. The page also answers what went wrong with the tall ship. Note 'yes, build it', or what reads wrong."
+  },
+  {
+   "id": "ts-ship-look-1",
+   "at": "2026-10-24T16:43:07.051Z",
+   "what": "deprecated",
+   "note": "We need the ability to deprecate a whole strand so I don’t have to make deprecated everything downstream of a choice that’s already diverged",
+   "do": "Look at the tall ship still. Per your note, the skiff is now a cross-section of a big tall ship whose seven rooms are the pipeline stages, stern to bow, with one spirit per room and tap bubbles. Under it is the plan for opening a spirit's card, steering, sending a steer everywhere, and knowing phone from computer. Note 'yes, build it', or what reads wrong."
+  },
+  {
+   "id": "between-dais-freeze-look-01",
+   "at": "2026-10-24T16:45:02.578Z",
+   "what": "ticked",
+   "do": "Walk up onto the raised dais from the flagstones, from a couple of sides, and tap the cushions and the Between. If anything looks wrong, open More, tap Send a screenshot, add a few words and send it; that sends the picture, where you stood and any error the page caught. Then say yes, or what feels off."
+  },
+  {
+   "id": "between-dais-freeze-look-01",
+   "at": "2026-10-24T16:45:02.578Z",
+   "what": "note",
+   "note": "Not able to make it into the room from the link. Keeps me in my homeroom instead of the between",
+   "do": "Walk up onto the raised dais from the flagstones, from a couple of sides, and tap the cushions and the Between. If anything looks wrong, open More, tap Send a screenshot, add a few words and send it; that sends the picture, where you stood and any error the page caught. Then say yes, or what feels off."
+  },
+  {
+   "id": "ty-boat-look-2",
+   "at": "2026-10-24T16:45:08.695Z",
+   "what": "deprecated",
+   "note": "",
+   "do": "Open the boat. The 46 houses are now six department halls: Art Studio, Design Room, Map Room, Story Room, Post Office and Engine Room, plus a cargo hold. Tap a hall and its front wall opens to show the rooms inside (some rooms sit in a wing); tap a room to knock. A hall hangs one bell when any room waits. Walk the deck, open two halls, and read a letter. Under this step, note 'yes, it reads like a studio on a boat', or what still reads wrong. The two stills show a closed and an open hall first if you want a glance before you tap."
+  },
+  {
+   "id": "ty-boat-look-1",
+   "at": "2026-10-24T16:45:13.796Z",
+   "what": "deprecated",
+   "note": "",
+   "do": "Open the boat and let the first minute play: you wake in the hammock, a bell rings at the bow, tap to wake, and you walk to a house whose spirit has a letter for you. Then walk around. Tap a house to knock, tap the book on the stand by the wheelhouse for the ship's log, and tap the wheelhouse for the sea chart. Every house is one strand of our work: a bell and a letter when it waits on you, scaffolding when a thread is building it, a lit window when it moves, vines when it rests. Under this step, note 'yes, it feels like a place', or what still reads like a dashboard."
+  }
+ ],
+ "blockers": [],
+ "needs_work": [
+  "steps/robe-layers-look-03: note \"Ok this was one of the problems we were running into with the slit. The slit isn’t a slit it’s the place there the robe is attacked by the belt and hangs freely from the back part\"",
+  "steps/boat-grid-look-3: deprecated, owes a compost round: \"Round 3 abandoned; round 4 flow ships replaced it (position boat-grid-look-3-retired).\"",
+  "steps/boat-grid-look-5: note \"I think B reads better but A is a little closer to the ontological vibe. I’m trying to figure out how to balance legibility and the design language.  We’ve drifted from the FTL separate rooms and compartments so potentially think about the actually gameplay loops could inform the design. This is a gamified version of the council board so we want to able to at a glance see where energy is going and where the blockers are and steer the ships internal energy to overcome that. We need to know how games solve for this type of problem solving visually\"",
+  "steps/tw-ship-look-1: deprecated, owes a compost round",
+  "steps/lb-boat-look-1: deprecated, owes a compost round",
+  "steps/ts-ship-look-1: deprecated, owes a compost round: \"We need the ability to deprecate a whole strand so I don’t have to make deprecated everything downstream of a choice that’s already diverged\"",
+  "steps/between-dais-freeze-look-01: note \"Not able to make it into the room from the link. Keeps me in my homeroom instead of the between\"",
+  "steps/ty-boat-look-2: deprecated, owes a compost round",
+  "steps/ty-boat-look-1: deprecated, owes a compost round"
+ ],
+ "note": "Recorded by board/pull.py. needs_work lists what a session still has to act on."
+}
