@@ -254,7 +254,6 @@ Open, in order:
 - 2026-10-19 board: putting a charge into the shared lantern makes its element public (his steer on `cc-element-hidden`, which stands for the pouch).
 - 2026-10-20 (Wendell, build thread, bars-engine #380): he could not open the Between from a link. Fix in #380: `/games` page (sign in, open The Between, Admin at the bottom) and eslint ignores `public/game`, `public/understood-app`, `public/ontology-game` (gitignored `npm run build` outputs that failed the pre-commit lint). Lanterns reach production only when #380 merges.
 - Done, admin refresh (his ask, 2026-10-20): bars-engine #406 merged; `/admin` opens on what he uses most and `/admin/games` is the development dashboard for the games on bars-engine.
-<<<<<<< HEAD
 
 ## Room kit, scroll invitation, first minute (art direction, 2026-10-23)
 His ask, 2026-10-23: a scroll-like invitation card, an orientation, and "a lightweight room customizer and ... an even
@@ -328,5 +327,3 @@ with the clothing differently". Today shape and build are bone scales (wardrobe.
 3. Build: shape keys on the body and matching corrective shape keys on the robe/sash/pants (robe-baked needs a bake
    per key or a delta set), mask bands per body; keep subtle ones (slender, shoulders) as bone scales.
 4. Probe as tools/figure-legs-probe.mjs does, at each body. Preview at ?sheet=look on the Between.
-=======
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))

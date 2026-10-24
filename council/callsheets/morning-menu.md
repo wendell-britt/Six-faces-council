@@ -4,10 +4,7 @@
 ontology: default; touches: BAR, CompostingDisposition, PermissionGrant
 
 ## Next
-<<<<<<< HEAD
 2026-10-22, thread "Morning menu catch-up": key answers 200. bar_read ran on the five 10-21 sealed lines (join 3, work-today 1, defer 1), on main. Annastasia's campaign has no call sheet to be its home; the Between spark was already replanted on bars-engine (carry answered "not needed"). Steps menu-key-match-01..03 ticked. NEXT: the weekly unchosen-read routine (see Unchosen lines below) once bars-engine branch claude/project-thread-klpz41 has merged.
-=======
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 2026-10-20, thread "Morning lists, first real read": #314 merged. The 10-20 morning is gathered on main (no sealed
 lines: the menu key still answers 401) and the faces read today's slate of 16 list items: work-today 3 (send Annastasia
 the draft, #311, #308), join 2, defer 7, let-go-offered 4. Positions tb-lists-are-bars, tb-slate, tb-pick-carries-read
@@ -133,7 +130,6 @@ First build: bars-engine #414, a read-only "Not chosen" section in Tap the Vein 
 Next, in order: (1) when #414 merges, his look at /tap-the-vein?view=unchosen; (2) "Draw into today" on a raw or
 unpicked line; (3) a store for the council's misses (declined menu suggestions, unpicked face-off cards,
 `uc-council-misses`); (4) if he answers `uc-who-reads` B or C, a weekly read in `council/bar_read.py`'s style. Test UC1 on 2026-11-04.
-<<<<<<< HEAD
 
 **Weekly read built, 2026-10-21.** He answered `uc-who-reads` B (pull 17:16 UTC). bars-engine branch
 `claude/project-thread-klpz41`: table `ttv_unchosen_pitches`, GET/POST `/api/tap-the-vein/unchosen`, pitches in the Not
@@ -142,5 +138,3 @@ steer on `uc-pattern-returns`, a returning word gets a new pitch and the old one
 `COUNCIL_MENU_TOKEN` (401 on 10-21). TRIGGER: the token answers 200 and the bars-engine pull request has merged ->
 create a weekly routine (Mondays, one Sonnet thread per docs/unchosen-read.md, no chat line beyond the count), and run
 the first read. His look at the sample preview may steer the pitch card.
-=======
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))

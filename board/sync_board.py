@@ -17,7 +17,6 @@ What it does, from the home repo root, on main:
 4. Rebuilds council-board.html, commits, and with --push pushes to main, merging again if main moved.
 Then publish board/council-board.html to the board URL.
 
-<<<<<<< HEAD
 No live page (2026-10-21): a session with no Claude tools, such as Codex or Freebuff, cannot save the live page, and
 main is the record anyway (the board-pull Action records every save there, docs/pickup-here.md). With --rows alone
 it skips step 2: the rows are added onto main, the page is rebuilt, and that is all a row needs to show on
@@ -26,10 +25,6 @@ bars-engine's /board/council. A run whose rows would remove a row already on mai
 Usage: python3 board/sync_board.py [--live <saved live page>] [--rows rows.json] [--take-live-template] [--push] [-m message]
        python3 board/sync_board.py --check --live <saved live page>   (report only, writes nothing)
        python3 board/sync_board.py --rows rows.json --push            (no live page: rows onto main only)
-=======
-Usage: python3 board/sync_board.py --live <saved live page> [--rows rows.json] [--take-live-template] [--push] [-m message]
-       python3 board/sync_board.py --check --live <saved live page>   (report only, writes nothing)
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 """
 import argparse
 import json
@@ -42,10 +37,7 @@ ROOT = HERE.parent
 DATA = HERE / "board_data.json"
 TEMPLATE = HERE / "template.html"
 TAG = '<script id="board-data" type="application/json">'
-<<<<<<< HEAD
 BOARD_URL = "https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho"
-=======
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 LISTS = ("positions", "questions", "terms", "causes", "battles")
 LATER = ("updated", "steer_recorded_through", "steps_recorded_through")
 SNAPSHOTS = ("morning",)
@@ -183,16 +175,11 @@ def ids(d):
 
 def main():
     ap = argparse.ArgumentParser()
-<<<<<<< HEAD
     ap.add_argument("--live", help="saved copy of the live board page; leave it out to add rows onto main only")
-=======
-    ap.add_argument("--live", required=True, help="saved copy of the live board page")
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     ap.add_argument("--rows", help="JSON file of rows to add")
     ap.add_argument("--take-live-template", action="store_true")
     ap.add_argument("--check", action="store_true", help="report only")
     ap.add_argument("--push", action="store_true")
-<<<<<<< HEAD
     ap.add_argument("-m", "--message", default=None, help="commit message (default names what was synced)")
     a = ap.parse_args()
     if not a.live and not a.rows:
@@ -201,10 +188,6 @@ def main():
         ap.error("--take-live-template needs the live page; pass --live")
     if not a.message:
         a.message = ("Board: sync the live page" if a.live else "Board: add rows") + (" and add rows" if a.rows and a.live else "")
-=======
-    ap.add_argument("-m", "--message", default="Board: sync the live page and add rows")
-    a = ap.parse_args()
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 
     if not a.check:
         if git("status", "--porcelain", "--", "board", "council/ledger").stdout.strip():
@@ -215,7 +198,6 @@ def main():
         git("merge", "-q", "--ff-only", "origin/main")
 
     main_data = json.loads(DATA.read_text(encoding="utf-8"))
-<<<<<<< HEAD
     report = []
     if a.live:
         live_data, live_template = read_live(a.live)
@@ -228,26 +210,13 @@ def main():
         data = main_data
         same_template = True
         template_line = "template: no live page read; main's kept"
-=======
-    live_data, live_template = read_live(a.live)
-    report = []
-    data = union(main_data, live_data, report)
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     if a.rows:
         add_rows(data, json.loads(Path(a.rows).read_text(encoding="utf-8")), report)
     lost = ids(main_data) - ids(data)
     if lost:
         sys.exit(f"refusing: rows would be lost: {sorted(lost)}")
-<<<<<<< HEAD
     print("\n".join(report) or "nothing to bring over")
     print(template_line)
-=======
-    same_template = live_template.rstrip() == TEMPLATE.read_text(encoding="utf-8").rstrip()
-    print("\n".join(report) or "nothing to bring over")
-    print("template: " + ("the same as main's" if same_template else
-                          "the live page's differs from main's" + (" (taking the live one)" if a.take_live_template else
-                                                                  "; pass --take-live-template to take it, after checking which branch it came from")))
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     if a.check:
         return
     DATA.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -263,12 +232,8 @@ def main():
     if a.push:
         for _ in range(3):
             if git("push", "-q", "origin", "main", check=False).returncode == 0:
-<<<<<<< HEAD
                 print("pushed to main; bars-engine's /board/council serves the new page within five minutes. "
                       "A session with the Artifact tool also publishes board/council-board.html to " + BOARD_URL)
-=======
-                print("pushed to main; now publish board/council-board.html to https://claude.ai/artifact/DxyShVS8tmvJym4HAsgnho")
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
                 return
             git("pull", "-q", "--no-rebase", "origin", "main")   # the board merge driver merges rows by id
             subprocess.run([sys.executable, str(HERE / "build_board.py")], cwd=ROOT, check=True)

@@ -18,7 +18,6 @@ plumbing. This script does the plumbing, so a read is about five steps:
   5. One reply: what changed, new board rows with the link, no question.
 
 Run it from the repo root. It prints a short report, never the store. Output stays under about forty lines.
-<<<<<<< HEAD
 
 No Claude tools (2026-10-21): every save reaches main through the board-pull Action every 15 minutes, so a session
 with no ArtifactData (Codex, Freebuff, a plain clone) reads the board off main instead:
@@ -30,9 +29,6 @@ due, and says whether the page needs anything from this session (it does not: ba
 board/council-board.html from main). docs/pickup-here.md is the map.
 """
 import json
-=======
-"""
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
 import subprocess
 import sys
 from pathlib import Path
@@ -48,7 +44,6 @@ def run(*cmd):
     return r.returncode, (r.stdout + r.stderr).strip()
 
 
-<<<<<<< HEAD
 def git_out(*cmd):
     r = subprocess.run(["git", *cmd], cwd=ROOT, capture_output=True, text=True)
     return r.stdout.strip() if r.returncode == 0 else ""
@@ -100,9 +95,6 @@ def main():
     if sys.argv[1:] == ["--main-only"]:
         main_only()
         return
-=======
-def main():
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     args = [a for a in sys.argv[1:] if a != "--dry"]
     dry = len(args) != len(sys.argv) - 1
     if len(args) != 1:

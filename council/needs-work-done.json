@@ -241,7 +241,6 @@
    "by": "Claude",
    "ref": "pass chapter1-calrunia1, rows council/callsheets/rows/chapter1-calrunia1-2026-10-21.json (c1w-* positions, question c1w-taste-depth)",
    "at": "2026-10-21T02:20:00Z"
-<<<<<<< HEAD
   },
   "2026-10-21-pull-171630#questions/cr-look-by-place": {
    "by": "Claude",
@@ -322,8 +321,6 @@
    "by": "Claude",
    "ref": "work-dbt 2: rows council/callsheets/rows/work-dbt-answers-2026-10-23.json; step work-dbt-clinician-01; callsheet work-dbt.md",
    "at": "2026-10-23T23:45:00Z"
-=======
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
   }
  }
 }

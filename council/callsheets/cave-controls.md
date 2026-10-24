@@ -60,8 +60,5 @@ see the problem. The player should face in the direction of the stick".
 2. Run `controls-probe.mjs`, then the full `cave-test.mjs` in the background (about 30 minutes under swiftshader; deps:
    typescript@5, playwright, three@0.128.0 symlinked as node_modules), and compare with main's 502/3.
 3. Reply with the `?go=` preview link, mark #411 ready, and say what was not checked (real phone feel).
-<<<<<<< HEAD
 3D math (2026-10-21, `docs/3d-math.md`): camera and easing changes use frame-rate-independent `damp(k, dt)`, never
 `Math.min(1, k*dt)`, and framing fits the narrower of the two view angles.
-=======
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))

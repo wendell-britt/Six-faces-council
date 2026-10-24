@@ -134,7 +134,6 @@ class PullTest(unittest.TestCase):
         self.assertIn('steps/gs-2: back to AI (automate): "same caption every week"', led["needs_work"])
         self.assertIsNone(self.pull())
 
-<<<<<<< HEAD
     def test_unrouted_with_claude_card_listed_until_status(self):
         self.save("steps", "gs-9", {"do": "Post", "aiBack": {"text": "x", "at": "2026-10-20T19:30:00Z"}})
         self.save("steps", "gs-8", {"do": "Post", "aiBack": {"text": "x", "at": "2026-10-20T19:30:00Z",
@@ -143,8 +142,6 @@ class PullTest(unittest.TestCase):
         self.assertEqual(len(out), 1)
         self.assertIn("steps/gs-9:", out[0])
 
-=======
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
     def test_step_note_and_move_need_work_once(self):
         # The 18:40 Send of 2026-10-12 carried only step notes, and pull.py never read the steps collection.
         self.save("steps", "gs-1", {"do": "Do it", "note": "need step by step", "noteAt": "2026-10-12T16:52:00Z",

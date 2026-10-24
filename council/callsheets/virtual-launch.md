@@ -7,7 +7,6 @@
 - The six unpacking questions are asked once, for Seattle (`seattle` row). Steps 2 and 4 to 9 of the
   `virtual-launch-restart` list on the board are left for Wendell to tick or drop; no step note arrived.
 
-<<<<<<< HEAD
 - 2026-10-21: Wendell answered unpacking questions 1, 2, 4 and 5 in the notes of steps 04, 05, 07, 08 (ledger
   `council/ledger/2026-10-21-pull-220630.json`). They are written on the `seattle` row of the Event Pipeline
   (`unpacking` field), and its next action now asks for the recorded stream of the Seattle night as the online way in.
@@ -29,7 +28,3 @@
 
 ## Waiting on
 Wendell: his Send on the Seattle venue-ask drafts and the name of a co-holder (not yet drafted).
-=======
-## Waiting on
-Wendell: the Seattle unpacking session (six answers).
->>>>>>> 8503a0a (Merge main into claude/project-thread-231s0p (steward))
