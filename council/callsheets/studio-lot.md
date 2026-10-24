@@ -1,7 +1,34 @@
 # Studio lot (the studio game)
 
 ## Next
-Walkable tall ship 2026-10-24 (thread "Art direct the walkable tall ship"). His steers at 02:24 overruled `lb-keep-the-deck`
+Grid ship 2026-10-24 (thread "Build the walkable ship"). His note on `tw-ship-look-1` (02:51): right direction, lean more
+on Spiritfarer, and "If the boat is a coordinate grid the x axis is the step in the pipeline and the y axis is almost
+like depth within that step of the pipeline (perhaps even unlockable depths as a function of the game master face at
+play in the design ontology and game design space)". The grid changed the look a lot, so a moving mock went up first
+instead of the build: https://claude.ai/artifact/KU5qyuYmdmCPWHZD2uRuag (source `grid-scene.js`, `grid-ship.html`,
+stills in `/mnt/project-files/studio-tycoon/grid-ship/`). Seven stacks along a Spiritfarer barge, one story per face in
+altitude order (Shaman lowest, Sage top), unearned stories as blueprint cells, ladders between every pair of stacks,
+crew carrying crates down, along the deck and up. Positions `boat-grid-axes` (replaces `tw-deck-map`),
+`boat-grid-unlock`, `boat-grid-spiritfarer` (rows `council/callsheets/rows/boat-grid-2026-10-24.json`). Look step
+`boat-grid-look-1` (list `studio-lot-boat`, n 6) on both stores. Boat rows now use the `boat-grid-` prefix, since `tw-`
+ids also exist on the Work/DBT strand. #429 untouched (head c315bb5). The brief "Walkable ship build" below is replaced
+by this one.
+
+Brief: Grid ship build (fresh Opus thread after his yes on `boat-grid-look-1`; per hx-looks-gate not before; owns
+bars-engine #429, branch `claude/project-thread-227mft`, head c315bb5). Keep list, checked by the art director before his
+look: a crew member visible mid-trip (on a ladder) in every frame, work seen live, eye pulled by movement and need.
+(1) Port `grid-scene.js` (plain canvas 2D) as the boat's renderer in `public/studio/`; keep `world.ts` as the data side
+with a `STAGES` table (stage from loop or callsheet, fallback the hold) and a `FACES` table from `council/faces.yaml`
+altitudes. (2) Stack height per stage = the faces at play on that stage's strands: a face counts once a board row on a
+strand in that stage lists it in `faces` (boat-grid-unlock); unearned stories stay blueprint. (3) Spirits from INDEX
+strands sit in the cabin of their stage at the highest story earned; crew errands from strands touched in the last day,
+routes cell to ladder to deck to ladder to cell; the waiting cabin from open board letters. (4) Tap a bubble or spirit:
+the steer card (round 4 letters content) POSTs the board's own save via src/lib/board/shim.ts; Tap the vein is a hold
+move. (5) Forty-six strands over seven stacks: queue spirits on the deck in front of a full cabin; check on a phone.
+(6) Leave the waiting cabin's table for brief "Looks aboard the boat". (7) Preview link at `?strand=<one with a
+letter>` as look step `boat-grid-look-2`.
+
+Superseded 2026-10-24 by the grid ship above: Walkable tall ship 2026-10-24 (thread "Art direct the walkable tall ship"). His steers at 02:24 overruled `lb-keep-the-deck`
 ("I want a tall ship crosssectikn where agents walk between rooms in the cross section. Perhaps the tall ship is 3
 dimensional but represented in 2d (monument valley style)") and `lb-stage-pennants` ("I don't understand the pennants").
 Made: moving mock page https://claude.ai/artifact/9W13HHYCqpNQcKyDqbDMb3 (source, `scene.js` renderer, stills, refs and

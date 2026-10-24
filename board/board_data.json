@@ -12695,6 +12695,39 @@
    "auto": true,
    "pos": "Characters stand when they are not moving or sitting: a stationary figure plays a real idle clip (CMU mocap, retargeted with our script, robe baked over it), never a frozen walk frame, and a test holds the rule. From Wendell's note of 24 October.",
    "why": "A frozen walk frame shows a mid-stride pose. Source: Wendell's note, 2026-10-24; council/callsheets/relationship-creature.md"
+  },
+  {
+   "id": "boat-grid-axes",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "boat-grid-2026-10-24",
+   "auto": true,
+   "pos": "The studio boat is a coordinate grid. x runs along the deck, stern to bow: the seven pipeline steps, Concept by your wheel to Release by the Everdoor. y runs up each step's stack: its depth, one story per Game Master face in altitude order (Shaman, Challenger, Regent, Architect, Diplomat, Sage). Depth rises rather than sinks because altitude is the depth we bring back into play (sd-depth-rule). This replaces tw-deck-map's four themed decks and stands unless you flip it.",
+   "why": "Your note on tw-ship-look-1 (2026-10-24 02:51): \"If the boat is a coordinate grid the x axis is the step in the pipeline and the y axis is almost like depth within that step of the pipeline (perhaps even unlockable depths as a function of the game master face at play in the design ontology and game design space)\". Mock: https://claude.ai/artifact/KU5qyuYmdmCPWHZD2uRuag"
+  },
+  {
+   "id": "boat-grid-unlock",
+   "faces": [
+    "regent",
+    "shaman"
+   ],
+   "pass": "boat-grid-2026-10-24",
+   "auto": true,
+   "pos": "A story on a step is built when its face has been at play on that step: a council pass, a face's lens in a review, or his ruling naming that face. Until then the cell shows as a blueprint outline with the face's initial, the way Spiritfarer shows its build grid. A taller stack means the step has been seen from more faces; nothing is ever torn down. This stands unless you flip it.",
+   "why": "Your 'unlockable depths as a function of the game master face at play'. Faces from council/faces.yaml; the record of which face weighed in is the board's faces field on each row."
+  },
+  {
+   "id": "boat-grid-spiritfarer",
+   "faces": [
+    "shaman",
+    "diplomat"
+   ],
+   "pass": "boat-grid-2026-10-24",
+   "auto": true,
+   "pos": "The look leans on Spiritfarer: a flat barge carrying stacked cabins with their own roofs and roof gardens, ladders between every pair of stacks, daylight pastels, side view with a little depth. Kept from your looks: crew visibly walking and climbing between cabins with one always mid-trip, a lamp and desk in each built cabin, the waiting cabin glowing, follow camera preferring a climber. The hold keeps the vein and the crew berths. This stands unless you flip it.",
+   "why": "Your note: \"I do think we can lean on spirit farer a little bit more\", and the keep list in council/callsheets/studio-lot.md. Reference: Spiritfarer build mode (studio-tycoon/walkable-ship/img/8-spiritfarer-boat-stack.jpg)."
   }
  ],
  "questions": [
