@@ -12608,6 +12608,71 @@
    "auto": true,
    "pos": "Depth is used only where movement stays visible: a hall opens in place with its front wall fading while deck traffic keeps passing in front, and the camera drifts toward bells and moving crew. No sealed rooms and no second floor of boxes. This stands unless you flip it.",
    "why": "The tall ship's cutaway turned seven rooms into still portraits and stopped all travel (your note, ts-ship-look-1). Still: https://claude.ai/artifact/UAcTBNbgfFT7XYNXRQCPM7"
+  },
+  {
+   "id": "sd-dock-scrapped",
+   "faces": [
+    "shaman",
+    "regent"
+   ],
+   "pass": "ship-art-2026-10-24",
+   "auto": true,
+   "pos": "The pirate-ship dock and its grid-and-gauge cabin (bars-engine #399) are dropped as a look. The ship becomes a grown sky ship your spirit leads you to, with a world inside it. The passport arrival, spirits aboard, embers and fuel carry over as world state on the island. This stands unless you flip it.",
+   "why": "Your words, 2026-10-24: \"Toy pirate ship didn't match the vibes of the cave of lessons or the Between\" and \"The grid and gauge panel I didn't enjoy\". Page https://claude.ai/artifact/HqbQ5Y1qfX2HxyrHCmeRub."
+  },
+  {
+   "id": "sd-depth-rule",
+   "faces": [
+    "diplomat",
+    "sage"
+   ],
+   "pass": "ship-art-2026-10-24",
+   "auto": true,
+   "pos": "A depth rule goes into the design ontology: every surface is an inviting image or a space you can explore, never a grid, gauge or panel; data shows as world state; haze, scale and light lead inward; the world grows as inner work is done; every scene plays in 2D and 3D; every named inspiration gets real images before a still. This stands unless you flip it.",
+   "why": "Your words, 2026-10-24: \"The shadow of the diplomat is flatland ... Our job is to bring depth back into green.\" The ontology had no rule for immersion or depth, and the dock pass never asked for it."
+  },
+  {
+   "id": "tw-walkable-decks",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "walkable-ship-2026-10-24",
+   "auto": true,
+   "pos": "The studio boat is a tall ship cut open lengthwise and drawn as a 3D object in one fixed 2D view, Monument Valley style. Every deck keeps the flat boat's rule: one open corridor along the cut where crew are always in view, and five open stairways join the decks. Cabins have no front wall and their side walls reach only halfway forward, so a crew member stays visible for the whole trip, mid-climb included. This replaces lb-keep-the-deck and stands unless you flip it.",
+   "why": "Your steer on lb-keep-the-deck (2026-10-24 02:24): \"I want a tall ship crosssectikn where agents walk between rooms in the cross section. Perhaps the tall ship is 3 dimensional but represented in 2d (monument valley style)\", with your keep list from ts-ship-look-1. Moving mock: https://claude.ai/artifact/9W13HHYCqpNQcKyDqbDMb3"
+  },
+  {
+   "id": "tw-deck-map",
+   "faces": [
+    "architect",
+    "regent"
+   ],
+   "pass": "walkable-ship-2026-10-24",
+   "auto": true,
+   "pos": "Four decks, top to keel. Top deck: you at the wheel on the stern castle, the bell on the main mast, the Everdoor in the forecastle for finished strands. Stage deck: the seven stages from Concept at the stern to Release at the bow, each strand's spirit in the cabin of its stage. Workshop deck: the six departments of round 3, where crew live. Hold: the vein of qi, where Tap the vein happens and crew carry qi up. A crate is tinted with the stage it is going to. This stands unless you flip it.",
+   "why": "Keeps ts-stage-rooms' pipeline order and ty-boat-departments' halls, and puts your bw-crew-are-hands, bw-spirit-is-strand and bw-board-keeps-the-rest steers in places on the ship. Mock: https://claude.ai/artifact/9W13HHYCqpNQcKyDqbDMb3"
+  },
+  {
+   "id": "tw-no-pennants",
+   "faces": [
+    "diplomat"
+   ],
+   "pass": "walkable-ship-2026-10-24",
+   "auto": true,
+   "pos": "The pennants are dropped. They were a string of seven flags meant to show the pipeline stages over the flat deck. The stage deck now shows the stages itself, because each crate goes to the cabin of its stage. This answers lb-stage-pennants and stands unless you flip it.",
+   "why": "Your steer on lb-stage-pennants (2026-10-24 02:24): \"I don't understand the pennants\". Explained on the page, then dropped because nothing is left for them to show."
+  },
+  {
+   "id": "tw-follow-camera",
+   "faces": [
+    "shaman",
+    "challenger"
+   ],
+   "pass": "walkable-ship-2026-10-24",
+   "auto": true,
+   "pos": "The ship opens on the whole cutaway. Follow the work (tap the ship) zooms the camera to about twice the size and turns every six seconds between the cabin that waits on you (pulsing lamp, letter, bubble, crew gathering, the bell ringing) and a crew member carrying a crate. This stands unless you flip it.",
+   "why": "Your keep list on ts-ship-look-1: \"zooming into what was pulling attention based on its movement and needs\". Mock: https://claude.ai/artifact/9W13HHYCqpNQcKyDqbDMb3"
   }
  ],
  "questions": [
@@ -19853,6 +19918,39 @@
      }
     ]
    }
+  },
+  {
+   "id": "sd-still-pick",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "ship-art-2026-10-24",
+   "q": "Are the living ship stills the look to build: A as the arrival, B as the world inside?",
+   "why_you": "Your standing rule: code waits on your yes to a still. Both stills and the first 60 seconds are on https://claude.ai/artifact/HqbQ5Y1qfX2HxyrHCmeRub.",
+   "not_before": "Raised by the ship art direction, 2026-10-24.",
+   "options": [
+    {
+     "v": "A",
+     "label": "A. Yes, both in order (recommended)",
+     "c": "A becomes the end of Chapter 1 (the spirit leads you to the ship), B the world inside; the build starts with B in 3D on the passport arrival."
+    },
+    {
+     "v": "B",
+     "label": "B. Yes to A only",
+     "c": "The arrival is built in 2D; the inside gets a second still first."
+    },
+    {
+     "v": "C",
+     "label": "C. Yes to B only",
+     "c": "The world inside is built; the outside reveal gets a second still first."
+    },
+    {
+     "v": "D",
+     "label": "D. Not yet",
+     "c": "A second round of stills from your note before any code."
+    }
+   ]
   }
  ],
  "causes": [
@@ -33658,6 +33756,30 @@
      "architect"
     ],
     "pass": "living-boat-2026-10-24"
+   },
+   "sd-dock-scrapped": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:35:30.995Z",
+    "record": "council/ledger/2026-10-24-pull-023536.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "ship-art-2026-10-24"
+   },
+   "sd-depth-rule": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:35:36.733Z",
+    "record": "council/ledger/2026-10-24-pull-023536.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "ship-art-2026-10-24"
    }
   },
   "questions": {
@@ -36616,6 +36738,18 @@
      "shaman"
     ],
     "pass": "boat-moves-2026-10-24"
+   },
+   "sd-still-pick": {
+    "decision": "A",
+    "label": "Yes, both in order",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:35:13.695Z",
+    "record": "council/ledger/2026-10-24-pull-023536.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "ship-art-2026-10-24"
    }
   },
   "causes": {
