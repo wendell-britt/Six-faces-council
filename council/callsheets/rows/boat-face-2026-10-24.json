@@ -1,0 +1,53 @@
+{
+ "updated": "2026-10-24",
+ "positions": [
+  {
+   "id": "boat-grid-face-ships",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect"
+   ],
+   "pass": "boat-face-2026-10-24",
+   "auto": true,
+   "pos": "The studio boat is a different ship for each Game Master face running the game. One deck per face, stacked by altitude with Shaman at the keel. Each deck is a row of cottages in its face's own outline (Shaman arched reed, Challenger raked and jagged, Regent gabled about a bell tower, Architect steel truss with pipes and a crane), with open deck between cottages so crew cross open air on every trip, and ladders between decks. The look stays the Lantern deck's dusk (ink outlines, signs with vines, lit windows, string lights, Everdoor, the vein). This replaces tw-walkable-decks and stands unless you flip it.",
+   "why": "Your steer on tw-walkable-decks (2026-10-24 02:57): \"Different ship design as a function of which of the game master faces is running the game\", Chapter 1 from shamanic feel and emotional alchemy, unlocking a two-deck ship (Shaman + Challenger), then Regent, then Architect, \"Each reflecting the style and concern of that level of development as well as the complicity afforded and the emotional energy cost\". Moving mock: https://claude.ai/artifact/PP8w2152LsMZ4Yz9ZE4GJk"
+  },
+  {
+   "id": "boat-grid-energy-is-power",
+   "faces": [
+    "shaman",
+    "architect"
+   ],
+   "pass": "boat-face-2026-10-24",
+   "auto": true,
+   "pos": "Emotional energy is the ship's power, FTL style. The vein in the hold carries a row of lanterns, one per unit the ship holds. Giving a room a lantern lights it in its face's colour and sends a thread of light up to that room; the room's lamps over its opening show how much it has. A tag in the hold says what the decks ask and what the vein holds. Chapter 1 asks 4 and holds 6 (room to rest); every later ship asks more than it holds (12/9, 20/12, 28/16), so the play is choosing where feeling goes. No energy panel on screen. This stands unless you flip it.",
+   "why": "Your 'emotional energy cost' in the steer on tw-walkable-decks, FTL's reactor bar (refs on the page), and the art director's round 1 note that the bottom-left panel broke the depth rule (sd-depth-rule)."
+  },
+  {
+   "id": "boat-grid-deck-unlock",
+   "faces": [
+    "shaman",
+    "challenger",
+    "regent",
+    "architect"
+   ],
+   "pass": "boat-face-2026-10-24",
+   "auto": true,
+   "pos": "Ships unlock in altitude order, shown in a hangar on a dusk pier with locked ships as ink silhouettes rimmed in their face's colour. 1 The Hearth Canoe (Shaman, Chapter 1). 2 The Sparring Ketch (Shaman + Challenger): ship a Chapter 1 strand through Release. 3 The Charter Barque (+ Regent): keep three strands running for a week. 4 The Engine Galleon (+ Architect): hand off a strand that runs itself. The unlock lines are first drafts the build may tune. This stands unless you flip it.",
+   "why": "Your 'unlock a two-deck ship (Shaman + Challenger), then Regent, then Architect' and FTL's hangar (refs on the page)."
+  },
+  {
+   "id": "boat-grid-axes-faces",
+   "faces": [
+    "architect",
+    "sage"
+   ],
+   "pass": "boat-face-2026-10-24",
+   "auto": true,
+   "pos": "Amends boat-grid-axes. x is still pipeline order, stern to bow, but within each deck: each face's rooms run from where its work starts to where it ships (Shaman: Wake, Hearth, Cauldron, Garden, Porch). y is now the face decks themselves, by altitude, instead of one story per face on each pipeline step. The rest of boat-grid-axes and boat-grid-unlock stands.",
+   "why": "The face ships steer (boat-grid-face-ships) moved depth from per-step stories to whole decks; this keeps your x-is-the-pipeline note on tw-ship-look-1."
+  }
+ ]
+}
