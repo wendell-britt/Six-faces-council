@@ -66,6 +66,11 @@ For each one the pass runs the compost round before it does anything else:
    Bringing it back takes a new step citing this id", and set `deprecated` to null. Same `batch` as the other changes.
 4. If the lesson changes a build brief, change the brief in the same pull request.
 
+A whole strand can be deprecated at once (Wendell, 2026-10-24, on `ts-ship-look-1`: not each downstream step). The
+button on a list's header writes `deprecated: {at, note}` on the list, and every step in it reads as deprecated.
+`compost.py` prints it as DEPRECATED STRAND. Run one compost round for the strand, retire each open step in the
+same `batch` with a `retired` line, and set the list's `deprecated` to null once they are retired.
+
 A deprecated step is never revived silently; "Bring it back" on the board clears the mark before the round runs.
 
 ## Standing checks the pass carries
