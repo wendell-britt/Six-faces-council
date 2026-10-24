@@ -33371,6 +33371,178 @@
      "shaman"
     ],
     "pass": "between-rooms3"
+   },
+   "ty-boat-departments": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T01:58:14.535Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent",
+     "shaman"
+    ],
+    "pass": "studio-boat-3"
+   },
+   "bw-crew-are-hands": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:31.010Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "steer": "Crew should be about what and how. Spirits are about why. The goal of the game is to leverage emotional charge into effective leveraged action. The goal for players is to make more deft decisions with the most effective use of resources and the purpose is to integrate the inner and outworks motivations toward making jaw droppingly excellent work with AI",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-talk-is-save": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:39.111Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "diplomat"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-lines-from-record": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:45.563Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "sage"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-answer-is-care": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:00:52.331Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "challenger"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-board-keeps-the-rest": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:01:44.741Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "steer": "Tap the vein needs to be a move one can do on the boat. This is how the boat mines emotional energy. This is where vibeluons come in in a big way",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "ts-stage-rooms": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:01:52.265Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-walk-bow-ward": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:03.980Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "regent"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-depts-below": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:10.581Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "diplomat"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-tap-opens-card": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:15.983Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "shaman"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-steer-is-save": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:18.916Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-fanout": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:22.633Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "regent",
+     "architect"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "ts-device-tiers": {
+    "decision": "stands",
+    "label": "Stands",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:37.132Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "diplomat",
+     "regent"
+    ],
+    "pass": "tall-ship-b-2026-10-24"
+   },
+   "bw-spirit-is-strand": {
+    "decision": "overrule",
+    "label": "Overruled",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T02:02:58.352Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "steer": "Spirit is the emotional energy and magic fueling the work",
+    "faces": [
+     "shaman",
+     "architect"
+    ],
+    "pass": "boat-moves-2026-10-24"
    }
   },
   "questions": {
@@ -36305,6 +36477,30 @@
      "architect"
     ],
     "pass": "studio-tycoon-2026-10-23"
+   },
+   "bw-strand-fade": {
+    "decision": "A",
+    "label": "Fades and leaves a seed",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T01:58:06.438Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "shaman",
+     "regent"
+    ],
+    "pass": "boat-moves-2026-10-24"
+   },
+   "bw-first-move": {
+    "decision": "A",
+    "label": "Answer letters",
+    "recorded": "2026-10-24",
+    "saved_at": "2026-10-24T01:59:08.615Z",
+    "record": "council/ledger/2026-10-24-pull-020258.json (six-faces-council)",
+    "faces": [
+     "architect",
+     "shaman"
+    ],
+    "pass": "boat-moves-2026-10-24"
    }
   },
   "causes": {
