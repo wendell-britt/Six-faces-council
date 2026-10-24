@@ -113,6 +113,14 @@ play, not about the book, so every later run starts from them:
   quite expensive"; Part III's three rounds cost about 653,000 tokens in nine general-purpose runs): one run of a
   Read-only player agent plays all three players (sprout `.claude/agents/guess-player.md`), and a rerun tests only
   the moments that changed.
+  The test has two checks (guessing bar pass 1, sprout `campaigns/skilled-helper/6FACE_PASS1_guess-bar_2026-10-13.md`,
+  `gb-two-checks`). The **wording check** is the three fresh players: fewer than half right, because above that the
+  wording teaches by tone (`gb-ceiling-stays`), and any player more than ten points below chance is reported with its
+  moments, which are read for traps before step 4 (`gb-trap-report`). The **rule check** is a fourth player, `taught`,
+  shown the section's rule once (`make_items.py --taught`, which puts `tests/taught-rule.txt` above the items) and
+  played in a run of its own so the other three never see it. Its target is about 85% right (Wendell, board,
+  2026-10-13, `gb-taught-target`). Under 60% means the moments' key does not follow the rule a player can be shown,
+  and the moments are rewritten before step 4. Fun is judged in his step 4 play, not by either check (`gb-step4-gate`).
 - **The when may be later in the book.** An introduction names skills; the rules for when to use them are often
   taught later. Step 1 flags this, and step 2 fills the gap from general practice, labelled as such, until that
   section runs.
