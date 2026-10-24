@@ -86,3 +86,8 @@ ontology: default; touches: BAR, MovementFinding, CompostingDisposition
     the asset pipeline works now.
 - Next in this thread: interview round 2 (arrival from Chapter 1, the spirit barn, spirits aboard), then reference board
   with real images from No Man's Sky and the gummy ship, first 60 seconds, 1-2 mood stills. Code waits on his yes.
+- Ontology check (2026-10-24): no rule for immersion, explorable space or depth; faces.yaml has no shadow fields. Nearest
+  hooks: QUICKSTART principle 9 ("Mystery rewards inquiry") and the unpromoted source line where he chose "their imagery
+  becoming explorable world material" (aesthetic-source-research-round-1.md:511-515). The dock pass loaded the default
+  ontology and used neither for immersion. Verdict: not in the ontology. Proposed with the stills: a depth principle
+  (every surface is an inviting image or an explorable space; depth and altitude as play against flatland).
